@@ -8,7 +8,7 @@ proof: formalized
 
 # The field strength
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.FieldStrength`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean): 11 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.FieldStrength`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean): 11 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization
 
 > * None.
 
-**`GaugeAlgebraRealization.fieldStrength`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L76).
+**`GaugeAlgebraRealization.fieldStrength`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L76).
 
 > The field strength `F_μν = ∂_μ A_ν − ∂_ν A_μ + ⁅A_μ, A_ν⁆` of a family of
 > gauge-field symbols, as a family of derivative symbols: the `s`-th derivative has
@@ -62,7 +62,7 @@ noncomputable def fieldStrength
     Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.fieldStrength_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L83).
+**`GaugeAlgebraRealization.fieldStrength_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L83).
 
 ```lean
 lemma fieldStrength_apply
@@ -71,7 +71,7 @@ lemma fieldStrength_apply
     fieldStrength A μ ν s φ = A (μ ::ₘ s) ν φ - A (ν ::ₘ s) μ φ + commutatorFam A μ ν s φ
 ```
 
-**`GaugeAlgebraRealization.fieldStrength_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L91).
+**`GaugeAlgebraRealization.fieldStrength_zero`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L91).
 
 > The underived field strength: derivative symbols on singletons, plus the plain
 > commutator.
@@ -83,7 +83,7 @@ lemma fieldStrength_zero
     fieldStrength A μ ν 0 = A {μ} ν - A {ν} μ + commutator A μ ν
 ```
 
-**`GaugeAlgebraRealization.pair_eq_fieldStrength_sub_commutatorFam`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L100).
+**`GaugeAlgebraRealization.pair_eq_fieldStrength_sub_commutatorFam`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L100).
 
 > The antisymmetrized pair of derivative symbols is the field strength minus its
 > commutator term.
@@ -102,7 +102,7 @@ lemma pair_eq_fieldStrength_sub_commutatorFam
 > swap outright, and the commutator term swaps by the antisymmetry of the gauge-algebra
 > bracket, once the two factors of each product may be exchanged.
 
-**`GaugeAlgebraRealization.bracketFam_swap_of_commute`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L120).
+**`GaugeAlgebraRealization.bracketFam_swap_of_commute`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L120).
 
 > The bracket of two component families with commuting values is antisymmetric: in
 > the basis expansion the structure constants are antisymmetric in the two gauge
@@ -114,7 +114,7 @@ lemma bracketFam_swap_of_commute {f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B}
     bracketFam g f = - bracketFam f g
 ```
 
-**`GaugeAlgebraRealization.commutatorFam_swap`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L138).
+**`GaugeAlgebraRealization.commutatorFam_swap`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L138).
 
 > The derived commutator term is antisymmetric in its two directions when the symbols
 > of the gauge field commute: swapping the two parts of the antidiagonal matches the
@@ -129,7 +129,7 @@ lemma commutatorFam_swap
     commutatorFam A ν μ s = - commutatorFam A μ ν s
 ```
 
-**`GaugeAlgebraRealization.fieldStrength_swap`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L153).
+**`GaugeAlgebraRealization.fieldStrength_swap`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L153).
 
 > The field strength is antisymmetric in its two covector indices when the symbols of
 > the gauge field commute: the two derivative terms swap outright, the commutator term
@@ -144,7 +144,7 @@ lemma fieldStrength_swap
     fieldStrength A ν μ s = - fieldStrength A μ ν s
 ```
 
-**`GaugeAlgebraRealization.fieldStrength_map`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L164).
+**`GaugeAlgebraRealization.fieldStrength_map`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L164).
 
 > The field strength is natural in the algebra: a multiplicative linear map carries the
 > field strength of a family to the field strength of its image.
@@ -157,7 +157,7 @@ lemma fieldStrength_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCommClass ℝ
     fieldStrength (fun p ρ => Φ ∘ₗ A p ρ) μ ν s = Φ ∘ₗ fieldStrength A μ ν s
 ```
 
-**`GaugeAlgebraRealization.repGauge_fieldStrength`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L190).
+**`GaugeAlgebraRealization.repGauge_fieldStrength`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L190).
 
 > **The field strength transforms in the adjoint, at every derivative order**: under
 > a gauge jet `U` every derivative symbol of `F_μν` transforms by the pure Leibniz
@@ -178,7 +178,7 @@ lemma repGauge_fieldStrength
         fieldStrength h.A μ ν p.2 (jets.adjointDualCoeff U⁻¹ p.1 φ)).sum
 ```
 
-**`GaugeAlgebraRealization.transformsInAdjoint_fieldStrength`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L268).
+**`GaugeAlgebraRealization.transformsInAdjoint_fieldStrength`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L268).
 
 > **The field strength is an adjoint gauge tensor**: the packaging of
 > `repGauge_fieldStrength` as `TransformsInAdjoint` — the base case of the
@@ -189,7 +189,7 @@ lemma transformsInAdjoint_fieldStrength
     (μ ν : Fin 1 ⊕ Fin 3) : TransformsInAdjoint jets repGauge (fieldStrength h.A μ ν)
 ```
 
-**`GaugeAlgebraRealization.repGauge_fieldStrength_zero`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L275).
+**`GaugeAlgebraRealization.repGauge_fieldStrength_zero`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean#L275).
 
 > The underived transformation law: at `s = 0` the Leibniz convolution collapses to
 > the homogeneous law — the field strength transforms by the base-point dual adjoint
@@ -212,4 +212,4 @@ lemma repGauge_fieldStrength_zero
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean)

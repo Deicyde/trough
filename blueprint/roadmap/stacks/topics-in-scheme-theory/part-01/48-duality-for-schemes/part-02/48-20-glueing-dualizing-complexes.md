@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.20 Glueing dualizing complexes
 
-Section 48.20 of the Stacks Project, [Tag 0AU5](https://stacks.math.columbia.edu/tag/0AU5). 14 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.20 of the Stacks Project, [Tag 0AU5](https://stacks.math.columbia.edu/tag/0AU5). 14 tags here are carried by 39 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AU4, a situation
 
 [Tag 0AU4](https://stacks.math.columbia.edu/tag/0AU4) in the Stacks Project.
 
-**`Stacks.Duality.DualizingBase`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L141). The attribute's comment: “the Situation: a Noetherian scheme with a chosen dualizing complex”.
+**`Stacks.Duality.DualizingBase`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L141). The attribute's comment: “the Situation: a Noetherian scheme with a chosen dualizing complex”.
 
 > **Stacks Project, Tag 0AU4.** The standing situation of the section on glueing dualizing
 > complexes: a Noetherian scheme `S` together with a dualizing complex `ω_S^•` on it, in the
@@ -28,7 +28,7 @@ structure DualizingBase
 
 [Tag 0AU6](https://stacks.math.columbia.edu/tag/0AU6) in the Stacks Project.
 
-**`Stacks.Duality.UpperShriek.overlapCompareRestrict_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingCocycle.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingCocycle.lean#L249). The attribute's comment: “item (3) of the discussion before Definition 0AUA: the cocycle condition phi\_ik = phi\_jk after phi\_ij for the canonical comparisons of the local models, restricted to the triple overlap U\_i cap U\_j cap U\_k. RESTRICTED only in that the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, as in 0AUB and 0AUC; the coherence 0ATY, which the source cites for item (3), is its factorIso\_assoc field”.
+**`Stacks.Duality.UpperShriek.overlapCompareRestrict_cocycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingCocycle.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingCocycle.lean#L249). The attribute's comment: “item (3) of the discussion before Definition 0AUA: the cocycle condition phi\_ik = phi\_jk after phi\_ij for the canonical comparisons of the local models, restricted to the triple overlap U\_i cap U\_j cap U\_k. RESTRICTED only in that the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, as in 0AUB and 0AUC; the coherence 0ATY, which the source cites for item (3), is its factorIso\_assoc field”.
 
 > **Stacks Project, Tag 0AU6.** In Situation [Stacks, Tag 0AU4] let `X` be of finite type over
 > `S` and let `𝒰 : X = ⋃ U_i` be a finite covering of `X` by opens separated and of finite type
@@ -61,7 +61,7 @@ theorem overlapCompareRestrict_cocycle (𝒰 : SeparatedCovering p ι) (i j k : 
 
 [Tag 0AU7](https://stacks.math.columbia.edu/tag/0AU7) in the Stacks Project.
 
-**`Stacks.Duality.Normalized.existsUnique_iso_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L55).
+**`Stacks.Duality.Normalized.existsUnique_iso_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L55).
 
 > **[Stacks, Tag 0AU7]** In Situation 0AU4, let `X` be of finite type over `S` and `𝒰` a finite
 > open covering of `X` by schemes separated over `S`. A dualizing complex normalized relative to
@@ -81,7 +81,7 @@ theorem existsUnique_iso_nagata
 
 [Tag 0AU8](https://stacks.math.columbia.edu/tag/0AU8) in the Stacks Project.
 
-**`Stacks.Duality.Normalized.exists_existsUnique_iso_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L69).
+**`Stacks.Duality.Normalized.exists_existsUnique_iso_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L69).
 
 > **[Stacks, Tag 0AU8]** In Situation 0AU4, let `X` be of finite type over `S` and `𝒰`, `𝒱` two
 > finite open coverings of `X` by schemes separated over `S`. If `(K, α_i)` is a dualizing complex
@@ -108,7 +108,7 @@ theorem exists_existsUnique_iso_nagata
 
 [Tag 0AU9](https://stacks.math.columbia.edu/tag/0AU9) in the Stacks Project.
 
-**`Stacks.Duality.Normalized.exists_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L87).
+**`Stacks.Duality.Normalized.exists_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L87).
 
 > **[Stacks, Tag 0AU9]** In Situation 0AU4, let `X` be of finite type over `S` and `𝒰` a finite
 > open covering of `X` by schemes separated over `S`. Then there exists a dualizing complex
@@ -126,7 +126,7 @@ theorem exists_nagata
 
 [Tag 0AUA](https://stacks.math.columbia.edu/tag/0AUA) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingComplex_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L55). The attribute's comment: “ω\_X^• is a dualizing complex on X”.
+**`Stacks.Duality.isDualizingComplex_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L55). The attribute's comment: “ω\_X^• is a dualizing complex on X”.
 
 > **[Stacks, Tag 0AUA], `ω_X^•` is a dualizing complex.** Let `S` be Noetherian with a
 > dualizing complex `ω_S^•` and `X` of finite type over `S`. The dualizing complex `ω_X^•`
@@ -138,7 +138,7 @@ theorem isDualizingComplex_normalizedDualizingComplex :
     IsDualizingComplex (normalizedDualizingComplex hp ωS hωS).complex.obj.obj
 ```
 
-**`Stacks.Duality.existsUnique_iso_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L66). The attribute's comment: “the pair (ω\_X^•, α\_U) is unique up to unique isomorphism”.
+**`Stacks.Duality.existsUnique_iso_normalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L66). The attribute's comment: “the pair (ω\_X^•, α\_U) is unique up to unique isomorphism”.
 
 > **[Stacks, Tag 0AUA], uniqueness up to unique isomorphism.** Let `S` be Noetherian with a
 > dualizing complex `ω_S^•` and `X` of finite type over `S`. For any complex `K` on `X` with
@@ -155,7 +155,7 @@ theorem existsUnique_iso_normalizedDualizingComplex
           (normalizedDualizingComplex hp ωS hωS).localIso W hW = 𝒦.localIso W hW
 ```
 
-**`Stacks.Duality.existsUnique_iso_normalizedDualizingComplex_toNormalized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L82). The attribute's comment: “(ω\_X^•, α\_\{U\_i}) is normalized relative to ω\_S^• and every finite covering by opens separated over S”.
+**`Stacks.Duality.existsUnique_iso_normalizedDualizingComplex_toNormalized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingComplexNagata.lean#L82). The attribute's comment: “(ω\_X^•, α\_\{U\_i}) is normalized relative to ω\_S^• and every finite covering by opens separated over S”.
 
 > **[Stacks, Tag 0AUA], normalized relative to every covering.** Let `S` be Noetherian with a
 > dualizing complex `ω_S^•`, `X` of finite type over `S` and `𝒰 : X = ⋃ U_i` a finite open
@@ -172,7 +172,7 @@ theorem existsUnique_iso_normalizedDualizingComplex_toNormalized {ι : Type w}
           ((normalizedDualizingComplex hp ωS hωS).toNormalized 𝒰).localIso i = 𝒩.localIso i
 ```
 
-**`Stacks.Duality.normalizedDualizingComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L104).
+**`Stacks.Duality.normalizedDualizingComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedExistenceNagata.lean#L104).
 
 > **[Stacks, Tag 0AUA]** Let `S` be Noetherian with a dualizing complex `ω_S^•` and `X` of finite
 > type over `S`. The dualizing complex `ω_X^•` normalized relative to `ω_S^•`: a complex on `X` with
@@ -193,7 +193,7 @@ def normalizedDualizingComplex {X S : Scheme.{u}} {p : X ⟶ S}
 
 [Tag 0AUB](https://stacks.math.columbia.edu/tag/0AUB) in the Stacks Project.
 
-**`Stacks.Duality.exists_normalized_of_normalized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingTransitivity.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingTransitivity.lean#L592). The attribute's comment: “assuming the upper-shriek formalism of Stacks 0A9E/0ATX/0ATY as the parameter UpperShriek, pending its landing”.
+**`Stacks.Duality.exists_normalized_of_normalized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingTransitivity.lean, line 592](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedDualizingTransitivity.lean#L592). The attribute's comment: “assuming the upper-shriek formalism of Stacks 0A9E/0ATX/0ATY as the parameter UpperShriek, pending its landing”.
 
 > **[Stacks, Tag 0AUB]** Let `S` be a Noetherian scheme carrying `ω_S^•`, let `q : Y ⟶ S`
 > and `p = f ≫ q : X ⟶ S` be of finite type, and let `𝒱` and `𝒰` be coverings of `Y` and of
@@ -219,7 +219,7 @@ theorem exists_normalized_of_normalized {𝒟 : Scheme.{u} → Type v}
       𝒩.complex = 𝒩X.complex
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.exists_relative_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L59).
+**`Stacks.Duality.NormalizedOnOpens.exists_relative_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L59).
 
 > **[Stacks, Tag 0AUB]** In Situation 0AU4, let `f : X ⟶ Y` be a morphism of schemes of finite
 > type over `S` and `ω_X^•`, `ω_Y^•` dualizing complexes normalized relative to `ω_S^•`. Then
@@ -242,7 +242,7 @@ theorem exists_relative_nagata
 
 [Tag 0AUC](https://stacks.math.columbia.edu/tag/0AUC) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.existsUnique_iso_shriekOfIsOpenImmersion_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L172). The attribute's comment: “S Noetherian with dualizing complex ω\_S, X → Y an open immersion of schemes of finite type over S; the unique isomorphism ω\_X^• ≅ j^! ω\_Y^• compatible with the normalizations”.
+**`Stacks.Duality.NormalizedOnOpens.existsUnique_iso_shriekOfIsOpenImmersion_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L172). The attribute's comment: “S Noetherian with dualizing complex ω\_S, X → Y an open immersion of schemes of finite type over S; the unique isomorphism ω\_X^• ≅ j^! ω\_Y^• compatible with the normalizations”.
 
 > **[Stacks, Tag 0AUC], canonicity.** In Situation 0AU4, let `j : X ⟶ Y` be an open immersion
 > of schemes of finite type over `S` and `ω_X^•`, `ω_Y^•` dualizing complexes normalized relative to
@@ -261,7 +261,7 @@ theorem existsUnique_iso_shriekOfIsOpenImmersion_nagata
           (𝒦Y.shriekOfIsOpenImmersion hpe hp).localIso W hW = 𝒦X.localIso W hW
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.isoDerivedRestrictNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L191). The attribute's comment: “the resulting canonical isomorphism ω\_X^• ≅ ω\_Y^•|\_X in D(O\_X)”.
+**`Stacks.Duality.NormalizedOnOpens.isoDerivedRestrictNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L191). The attribute's comment: “the resulting canonical isomorphism ω\_X^• ≅ ω\_Y^•|\_X in D(O\_X)”.
 
 > **[Stacks, Tag 0AUC]** In Situation 0AU4, let `j : X ⟶ Y` be an open immersion of schemes of
 > finite type over `S` and `ω_X^•`, `ω_Y^•` dualizing complexes normalized relative to `ω_S^•`.
@@ -279,7 +279,7 @@ def isoDerivedRestrictNagata
       (Scheme.Modules.restrictFunctor j).mapDerivedCategory.obj 𝒦Y.complex.obj.obj
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.isoDerivedRestrictNagata_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L206). The attribute's comment: “the canonical isomorphism ω\_X^• ≅ ω\_Y^•|\_X is characterized through j^! = j^*”.
+**`Stacks.Duality.NormalizedOnOpens.isoDerivedRestrictNagata_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedOnOpensOpenImmersion.lean#L206). The attribute's comment: “the canonical isomorphism ω\_X^• ≅ ω\_Y^•|\_X is characterized through j^! = j^*”.
 
 > **[Stacks, Tag 0AUC], the canonical isomorphism is characterised by the normalizations**:
 > for any isomorphism `e : ω_X^• ≅ j^! ω_Y^•` compatible with the normalizations on every open of
@@ -305,7 +305,7 @@ theorem isoDerivedRestrictNagata_eq
 
 [Tag 0AUD](https://stacks.math.columbia.edu/tag/0AUD) in the Stacks Project.
 
-**`Stacks.Duality.dualizingIsoRightAdjointObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L404). The attribute's comment: “RESTRICTED: the upper shriek formalism is a parameter, normalization is taken in the separated form omega\_X = p^! omega\_S, and the identification of f^! with the right adjoint, which is the only place properness is used, is a hypothesis”.
+**`Stacks.Duality.dualizingIsoRightAdjointObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L404). The attribute's comment: “RESTRICTED: the upper shriek formalism is a parameter, normalization is taken in the separated form omega\_X = p^! omega\_S, and the identification of f^! with the right adjoint, which is the only place properness is used, is a hypothesis”.
 
 > **Stacks Project, Tag 0AUD.** Let `f : X ⟶ Y` be a morphism of schemes of finite type over
 > the base of [Stacks, Tag 0AU4], with structure morphisms `q : Y ⟶ S` and `p : X ⟶ S` and
@@ -328,7 +328,7 @@ def dualizingIsoRightAdjointObj (A : UpperShriek 𝒟) {X Y S : Scheme.{u}}
     a.obj ωY ≅ ωX
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.twistedInverseImageObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L92).
+**`Stacks.Duality.NormalizedOnOpens.twistedInverseImageObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L92).
 
 > **[Stacks, Tag 0AUD]** In Situation 0AU4, let `f : X ⟶ Y` be a proper morphism of schemes of
 > finite type over `S`, `ω_X^•`, `ω_Y^•` the dualizing complexes normalized relative to `ω_S^•`,
@@ -350,7 +350,7 @@ def twistedInverseImageObjIsoNagata
 
 [Tag 0AUE](https://stacks.math.columbia.edu/tag/0AUE) in the Stacks Project.
 
-**`Stacks.Duality.normalizedUpperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L167). The attribute's comment: “the closing remark, first half only: for X separated over the base the complex p^! omega\_S^bullet is normalized relative to omega\_S^bullet. The second half of the remark, f\_new^! K = f^! K, is NOT carried, and neither are parts (1), (3), (5), (6); parts (2) and (4) are elsewhere. RESTRICTED: the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, pending its landing”.
+**`Stacks.Duality.normalizedUpperShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L167). The attribute's comment: “the closing remark, first half only: for X separated over the base the complex p^! omega\_S^bullet is normalized relative to omega\_S^bullet. The second half of the remark, f\_new^! K = f^! K, is NOT carried, and neither are parts (1), (3), (5), (6); parts (2) and (4) are elsewhere. RESTRICTED: the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, pending its landing”.
 
 > **[Stacks, Tag 0AUE], the closing remark on the separated case.** Let `X` be separated and
 > of finite type over a Noetherian scheme `S` with structure morphism `p`, and let `ω_S^•` be a
@@ -362,7 +362,7 @@ def twistedInverseImageObjIsoNagata
 def normalizedUpperShriek {ι : Type w} (𝒰 : SeparatedCovering p ι) : Normalized A hp ωS 𝒰
 ```
 
-**`Stacks.Duality.fNewShriekObjIsoDualizing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean#L131). The attribute's comment: “part (4): omega\_X is f\_new^! of omega\_Y for a finite-type morphism over the base. RESTRICTED: the closed monoidal structure on the derived categories is an instance argument, and the two inputs the source names are hypotheses -- the identification R Hom(omega\_Y, omega\_Y) = O\_Y coming from omega\_Y being dualizing, and the unit half Lf^* O\_Y = O\_X of the monoidality of the derived pullback”.
+**`Stacks.Duality.fNewShriekObjIsoDualizing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean#L131). The attribute's comment: “part (4): omega\_X is f\_new^! of omega\_Y for a finite-type morphism over the base. RESTRICTED: the closed monoidal structure on the derived categories is an instance argument, and the two inputs the source names are hypotheses -- the identification R Hom(omega\_Y, omega\_Y) = O\_Y coming from omega\_Y being dualizing, and the unit half Lf^* O\_Y = O\_X of the monoidality of the derived pullback”.
 
 > **Stacks Project, Tag 0AUE, part (4).** Let `f : X ⟶ Y` be a morphism of schemes of finite
 > type over the base of [Stacks, Tag 0AU4] and let `ω_X^•` and `ω_Y^•` be the complexes
@@ -385,7 +385,7 @@ def fNewShriekObjIsoDualizing (f : X ⟶ Y) (ωX : DerivedCategory X.Modules)
     (fNewShriek f ωX ωY).obj ωY ≅ ωX
 ```
 
-**`Stacks.Duality.fNewShriekStructureObjIsoDualizing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean#L163). The attribute's comment: “part (2): omega\_X is the new twisted inverse image of omega\_S along the structure morphism. RESTRICTED: the closed monoidal structure on the derived categories is an instance argument, and the identification R Hom(omega\_S, omega\_S) = O\_S implied by B.isDualizing together with the unit half Lpi^* O\_S = O\_X of the monoidality of the derived pullback are hypotheses”.
+**`Stacks.Duality.fNewShriekStructureObjIsoDualizing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NewShriekNormalizedComplex.lean#L163). The attribute's comment: “part (2): omega\_X is the new twisted inverse image of omega\_S along the structure morphism. RESTRICTED: the closed monoidal structure on the derived categories is an instance argument, and the identification R Hom(omega\_S, omega\_S) = O\_S implied by B.isDualizing together with the unit half Lpi^* O\_S = O\_X of the monoidality of the derived pullback are hypotheses”.
 
 > **Stacks Project, Tag 0AUE, part (2).** For a scheme `X` of finite type over the base of
 > [Stacks, Tag 0AU4], with structure morphism `π : X ⟶ S`, the complex normalized relative to
@@ -406,7 +406,7 @@ def fNewShriekStructureObjIsoDualizing
     (fNewShriek Xb.str Xb.dualizing B.dualizing).obj B.dualizing ≅ Xb.dualizing
 ```
 
-**`Stacks.Duality.existsUnique_iso_upperShriekPlus_of_isSeparated_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L135). The attribute's comment: “the closing remark, first half: omega\_X = (X -> S)^! omega\_S for X separated over S”.
+**`Stacks.Duality.existsUnique_iso_upperShriekPlus_of_isSeparated_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L135). The attribute's comment: “the closing remark, first half: omega\_X = (X -> S)^! omega\_S for X separated over S”.
 
 > **[Stacks, Tag 0AUE], the closing remark, first half.** In Situation 0AU4, if `X` is
 > separated over `S`, with structure morphism `p`, the dualizing complex `ω_X^•` normalized
@@ -436,7 +436,7 @@ theorem existsUnique_iso_upperShriekPlus_of_isSeparated_nagata {X S : Scheme.{u}
         𝒦.localIso W hW
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L167). The attribute's comment: “part (4)”.
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L167). The attribute's comment: “part (4)”.
 
 > **[Stacks, Tag 0AUE] part (4).** In Situation 0AU4, let `f : X ⟶ Y` be a morphism of schemes
 > of finite type over `S` and `ω_X^•`, `ω_Y^•` the dualizing complexes normalized relative to
@@ -453,7 +453,7 @@ def fNewShriekObjIsoNagata (f : X ⟶ Y)
         (stdComplex nagataCompactification 𝒦Y)).obj (stdComplex nagataCompactification 𝒦Y)
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekStructureObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L187). The attribute's comment: “part (2)”.
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekStructureObjIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L187). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0AUE] part (2).** In Situation 0AU4, for `X` of finite type over `S` with
 > structure morphism `p : X ⟶ S` and `ω_X^•` the dualizing complex normalized relative to `ω_S^•`,
@@ -469,7 +469,7 @@ def fNewShriekStructureObjIsoNagata
         (baseStdComplex ωS)
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.coherentDuality_spec_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L203). The attribute's comment: “part (3)”.
+**`Stacks.Duality.NormalizedOnOpens.coherentDuality_spec_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L203). The attribute's comment: “part (3)”.
 
 > **[Stacks, Tag 0AUE] part (3).** In Situation 0AU4, for `X` of finite type over `S` and
 > `ω_X^•` normalized relative to `ω_S^•`, the duality `D_X = R𝓗om(-, ω_X^•)` is an involution of
@@ -498,7 +498,7 @@ theorem coherentDuality_spec_nagata
       (isDualizing_stdComplex nagataCompactification hωS 𝒦)).IsEquivalence
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekPlusCohNagata_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L245). The attribute's comment: “part (5)”.
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekPlusCohNagata_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L245). The attribute's comment: “part (5)”.
 
 > **[Stacks, Tag 0AUE] part (5).** In Situation 0AU4, for a morphism `f : X ⟶ Y` of schemes of
 > finite type over `S`, `f_new^!` is a functor `D^+_Coh(𝒪_Y) ⥤ D^+_Coh(𝒪_X)` and
@@ -517,7 +517,7 @@ theorem fNewShriekPlusCohNagata_obj (f : X ⟶ Y)
           ((dualInto (stdComplex nagataCompactification 𝒦Y)).obj (op M.obj))))
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekIsoRightAdjointNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L263). The attribute's comment: “part (6), first assertion”.
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekIsoRightAdjointNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L263). The attribute's comment: “part (6), first assertion”.
 
 > **[Stacks, Tag 0AUE] part (6), first assertion.** In Situation 0AU4, for a proper morphism
 > `f : X ⟶ Y` of schemes of finite type over `S` and the dualizing complexes `ω_X^•`, `ω_Y^•`
@@ -536,7 +536,7 @@ def fNewShriekIsoRightAdjointNagata
       ObjectProperty.ιOfLE plusCoh_le_qcoh ⋙ rightAdjointStd f
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekSheafHomIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L279). The attribute's comment: “part (6), the isomorphism Rf\_* RHom(K, f\_new^! M) = RHom(Rf\_* K, M)”.
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekSheafHomIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L279). The attribute's comment: “part (6), the isomorphism Rf\_* RHom(K, f\_new^! M) = RHom(Rf\_* K, M)”.
 
 > **[Stacks, Tag 0AUE] part (6), the duality isomorphism.** In Situation 0AU4, for a proper
 > morphism `f : X ⟶ Y` of schemes of finite type over `S`, `K ∈ D^-_Coh(𝒪_X)` and
@@ -556,7 +556,7 @@ def fNewShriekSheafHomIsoNagata
       ((sheafHom Y).obj (op ((push f).obj K))).obj M.obj
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.sheafHomDualizingIsoOfMinusCohNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L295). The attribute's comment: “part (6), the isomorphism Rf\_* RHom(K, omega\_X) = RHom(Rf\_* K, omega\_Y)”.
+**`Stacks.Duality.NormalizedOnOpens.sheafHomDualizingIsoOfMinusCohNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L295). The attribute's comment: “part (6), the isomorphism Rf\_* RHom(K, omega\_X) = RHom(Rf\_* K, omega\_Y)”.
 
 > **[Stacks, Tag 0AUE] part (6), the duality for the dualizing complexes.** In Situation 0AU4,
 > for a proper morphism `f : X ⟶ Y` of schemes of finite type over `S` and `K ∈ D^-_Coh(𝒪_X)`,
@@ -572,7 +572,7 @@ def sheafHomDualizingIsoOfMinusCohNagata
       ((sheafHom Y).obj (op ((push f).obj K))).obj (stdComplex nagataCompactification 𝒦Y)
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.upperShriekStdIsoFNewShriekNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L310). The attribute's comment: “the closing remark, second half: f\_new^! K = f^! K for K in D^+\_Coh”.
+**`Stacks.Duality.NormalizedOnOpens.upperShriekStdIsoFNewShriekNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean, line 310](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekNormalizedNagata.lean#L310). The attribute's comment: “the closing remark, second half: f\_new^! K = f^! K for K in D^+\_Coh”.
 
 > **[Stacks, Tag 0AUE], the closing remark, `f_new^! = f^!`.** In Situation 0AU4, let
 > `f : X ⟶ Y` be a separated morphism of schemes of finite type over `S` (for instance a morphism
@@ -592,7 +592,7 @@ def upperShriekStdIsoFNewShriekNagata
         (stdComplex nagataCompactification 𝒦Y)
 ```
 
-**`Stacks.Duality.newShriekPseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekPseudofunctorNagata.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekPseudofunctorNagata.lean#L365). The attribute's comment: “part (1)”.
+**`Stacks.Duality.newShriekPseudofunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekPseudofunctorNagata.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekPseudofunctorNagata.lean#L365). The attribute's comment: “part (1)”.
 
 > In Situation [Stacks, Tag 0AU4], let `ω_X^•` be the dualizing complex
 > normalized relative to `ω_S^•` of each scheme `X` of finite type over `S`. The functors
@@ -615,7 +615,7 @@ def newShriekPseudofunctor {S : Scheme.{u}} [IsNoetherian S]
 
 [Tag 0BV3](https://stacks.math.columbia.edu/tag/0BV3) in the Stacks Project.
 
-**`Stacks.Duality.fNewShriekTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L304). The attribute's comment: “RESTRICTED: the closed symmetric monoidal structure on the derived categories is an instance argument; the invertible twist with a chosen two-sided inverse, the identification of the twisted normalized complexes, and the compatibility of the derived pullback with the twist are hypotheses”.
+**`Stacks.Duality.fNewShriekTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean, line 304](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/GlueingDualizingComplexes.lean#L304). The attribute's comment: “RESTRICTED: the closed symmetric monoidal structure on the derived categories is an instance argument; the invertible twist with a chosen two-sided inverse, the identification of the twisted normalized complexes, and the compatibility of the derived pullback with the twist are hypotheses”.
 
 > **Stacks Project, Tag 0BV3.** `f_new^!` does not depend on the choice of the dualizing
 > complex on the base.
@@ -644,7 +644,7 @@ def fNewShriekTwistIso (f : X ⟶ Y)
     fNewShriek f ωX' ωY' ≅ fNewShriek f ωX ωY
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.fNewShriekIndependenceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedTwist.lean, line 916](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedTwist.lean#L916).
+**`Stacks.Duality.NormalizedOnOpens.fNewShriekIndependenceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedTwist.lean, line 916](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedTwist.lean#L916).
 
 > **Stacks Project, Tag 0BV3.** Let `S` be a Noetherian scheme with a dualizing complex `ω_S^•`
 > and let `f : X ⟶ Y` be a morphism of schemes of finite type over `S`. Then the functor
@@ -676,7 +676,7 @@ def fNewShriekIndependenceIso (hpe : f ≫ q = p)
 
 [Tag 0B6X](https://stacks.math.columbia.edu/tag/0B6X) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.sheafHomDualizingIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekProperQCohNagata.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekProperQCohNagata.lean#L51).
+**`Stacks.Duality.NormalizedOnOpens.sheafHomDualizingIsoNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekProperQCohNagata.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NewShriekProperQCohNagata.lean#L51).
 
 > **[Stacks, Tag 0B6X], the second isomorphism.** In Situation 0AU4, for a proper `f : X ⟶ Y` of
 > schemes of finite type over `S`, the dualizing complexes `ω_X^•`, `ω_Y^•` normalized relative to
@@ -693,7 +693,7 @@ def sheafHomDualizingIsoNagata
       ((sheafHom Y).obj (op ((push f).obj L))).obj (stdComplex nagataCompactification 𝒦Y)
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.traceNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L107).
+**`Stacks.Duality.NormalizedOnOpens.traceNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L107).
 
 > **[Stacks, Tag 0B6X], the trace map.** In Situation 0AU4, for a proper `f : X ⟶ Y` of schemes
 > of finite type over `S` and the dualizing complexes `ω_X^•`, `ω_Y^•` normalized relative to
@@ -711,7 +711,7 @@ def traceNagata
         𝒦X.complex.obj ⟶ 𝒦Y.complex.obj
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.homEquivNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L122).
+**`Stacks.Duality.NormalizedOnOpens.homEquivNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L122).
 
 > **[Stacks, Tag 0B6X], the first isomorphism.** In Situation 0AU4, for a proper `f : X ⟶ Y` of
 > schemes of finite type over `S`, the dualizing complexes `ω_X^•`, `ω_Y^•` normalized relative to
@@ -731,7 +731,7 @@ def homEquivNagata
         (isQuasicoherent_homology_derivedPushforward_of_qcqs f)).obj L ⟶ 𝒦Y.complex.obj)
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.homEquivNagata_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L137).
+**`Stacks.Duality.NormalizedOnOpens.homEquivNagata_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedProperNagata.lean#L137).
 
 > **[Stacks, Tag 0B6X], the first isomorphism is produced by the trace map**:
 > `homEquivNagata` sends `u : L ⟶ ω_X^•` to `Tr_f ∘ Rf_* u`.
@@ -754,7 +754,7 @@ theorem homEquivNagata_apply
 
 [Tag 0AX4](https://stacks.math.columbia.edu/tag/0AX4) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.exists_finitePushforwardIso_trace_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteDualizingComplexNagata.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteDualizingComplexNagata.lean#L54).
+**`Stacks.Duality.NormalizedOnOpens.exists_finitePushforwardIso_trace_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteDualizingComplexNagata.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/FiniteDualizingComplexNagata.lean#L54).
 
 > **[Stacks, Tag 0AX4]** Let `S` be Noetherian with a dualizing complex `ω_S^•`, `f : X ⟶ Y` a
 > finite morphism of schemes of finite type over `S`, and `ω_X^•`, `ω_Y^•` the dualizing complexes
@@ -789,7 +789,7 @@ theorem exists_finitePushforwardIso_trace_nagata
 
 [Tag 0B6W](https://stacks.math.columbia.edu/tag/0B6W) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.twistedInverseImageObjIsoPullbackTensorOfFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean#L63). The attribute's comment: “the second canonical isomorphism a(ω\_Y^•) = Lf^* ω\_Y^• ⊗ ω\_\{X/Y}^•”.
+**`Stacks.Duality.NormalizedOnOpens.twistedInverseImageObjIsoPullbackTensorOfFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean#L63). The attribute's comment: “the second canonical isomorphism a(ω\_Y^•) = Lf^* ω\_Y^• ⊗ ω\_\{X/Y}^•”.
 
 > **[Stacks, Remark 0B6W], the second canonical isomorphism.** For a flat proper morphism
 > `f : X ⟶ Y` of schemes of finite type over a Noetherian `S`, with `a` the right adjoint of
@@ -808,7 +808,7 @@ def twistedInverseImageObjIsoPullbackTensorOfFlat [IsProper f] [Flat f]
           (DerivedPushforward.derivedStructureSheaf Y))
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.isoPullbackTensorOfFlatNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean#L99). The attribute's comment: “ω\_X^• = a(ω\_Y^•) = Lf^* ω\_Y^• ⊗ ω\_\{X/Y}^• in D(O\_X)”.
+**`Stacks.Duality.NormalizedOnOpens.isoPullbackTensorOfFlatNagata`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/NormalizedFlatProperPullbackTensor.lean#L99). The attribute's comment: “ω\_X^• = a(ω\_Y^•) = Lf^* ω\_Y^• ⊗ ω\_\{X/Y}^• in D(O\_X)”.
 
 > **[Stacks, Remark 0B6W].** Let `f : X ⟶ Y` be a flat proper morphism of schemes of finite type
 > over `S`, where `S` is Noetherian with a dualizing complex `ω_S^•`, and `ω_X^•`, `ω_Y^•` the
@@ -831,7 +831,7 @@ def isoPullbackTensorOfFlatNagata
             (DerivedPushforward.derivedStructureSheaf Y))
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_of_flat_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayNagata.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayNagata.lean#L51).
+**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_of_flat_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayNagata.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayNagata.lean#L51).
 
 > **[Stacks, Tag 0B6W]** Let `f : X ⟶ Y` be a flat proper morphism of schemes of finite type over
 > `S`, where `S` is Noetherian with a dualizing complex `ω_S^•`, and `ω_X^•`, `ω_Y^•` the dualizing
@@ -859,4 +859,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.20, Tag 0AU5](https://stacks.math.columbia.edu/tag/0AU5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

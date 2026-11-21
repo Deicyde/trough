@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.46 Application to morphisms with connected fibres
 
-Section 37.46 of the Stacks Project, [Tag 057H](https://stacks.math.columbia.edu/tag/057H). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.46 of the Stacks Project, [Tag 057H](https://stacks.math.columbia.edu/tag/057H). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 057I, a lemma
 
 [Tag 057I](https://stacks.math.columbia.edu/tag/057I) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_compactOpen_geometricallyConnected_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L123).
+**`AlgebraicGeometry.exists_compactOpen_geometricallyConnected_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L123).
 
 > **Stacks Project, Tag 057I.** A geometrically connected fibre in a flat, finitely presented
 > family with geometrically reduced fibres and a nonempty finite locally free multisection has a
@@ -29,7 +29,7 @@ theorem exists_compactOpen_geometricallyConnected_fibers : Statement057I.{u}
 
 [Tag 055W](https://stacks.math.columbia.edu/tag/055W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_geometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L131).
+**`AlgebraicGeometry.exists_etaleNeighborhood_geometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L131).
 
 > **Stacks Project, Tag 055W.** A geometrically connected open in a fibre of a flat, finitely
 > presented morphism with geometrically reduced fibres spreads, after an affine elementary étale
@@ -43,7 +43,7 @@ theorem exists_etaleNeighborhood_geometricallyConnected : Statement055W.{u}
 
 [Tag 0EY5](https://stacks.math.columbia.edu/tag/0EY5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleCover_factors_geometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedFibreCover.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedFibreCover.lean#L625).
+**`AlgebraicGeometry.exists_etaleCover_factors_geometricallyConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedFibreCover.lean, line 625](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedFibreCover.lean#L625).
 
 > **Stacks Project, Tag 0EY5.** A flat morphism locally of finite presentation with
 > geometrically reduced fibres admits an étale covering of its source each member of which
@@ -65,7 +65,7 @@ theorem exists_etaleCover_factors_geometricallyConnected
 
 [Tag 057J](https://stacks.math.columbia.edu/tag/057J) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L139).
+**`AlgebraicGeometry.exists_etaleNeighborhood_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L139).
 
 > **Stacks Project, Tag 057J.** A geometrically irreducible open in a fibre of a normal,
 > finitely presented morphism spreads, after an affine elementary étale base change, to a
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.46, Tag 057H](https://stacks.math.columbia.edu/tag/057H)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

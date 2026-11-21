@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.PureState.finite_setOf_isPure, ProbabilisticTheory.PureState.affineIndependent_of_isSimplex, ProbabilisticTheory.PureState.affineCombination_measureReal, ProbabilisticTheory.PureState.eq_of_isSimplex, ProbabilisticTheory.PureState.isSimplexStateSpace_of_isSimplex, ProbabilisticTheory.sum_weighted_eq_of_sum_smul_eq, ProbabilisticTheory.EnsemblesRefine.affineIndependent_extremePoints, ProbabilisticTheory.IsSimplexStateSpace.isSimplex
+lean: PhyslibAlpha.ProbabilisticTheory.PureState.finite_setOf_isPure, PhyslibAlpha.ProbabilisticTheory.PureState.affineIndependent_of_isSimplex, PhyslibAlpha.ProbabilisticTheory.PureState.affineCombination_measureReal, PhyslibAlpha.ProbabilisticTheory.PureState.eq_of_isSimplex, PhyslibAlpha.ProbabilisticTheory.PureState.isSimplexStateSpace_of_isSimplex, PhyslibAlpha.ProbabilisticTheory.sum_weighted_eq_of_sum_smul_eq, PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.affineIndependent_extremePoints, PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.isSimplex
 statement: formalized
 proof: formalized
 ---
 
 # Finite classical systems (FiniteDimensional)
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteDimensional`, [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean): 10 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteDimensional`, [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean): 10 declarations, 10 with a docstring.
 
 > A finite-dimensional system is classical exactly when its state space is a geometric simplex.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteDimensional`, [Phys
 
 ## A. Geometric simplices decompose uniquely
 
-**`ProbabilisticTheory.PureState.finite_setOf_isPure`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.finite_setOf_isPure`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L71).
 
 > If the state space is a geometric simplex, there are finitely many pure states.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteDimensional`, [Phys
 lemma finite_setOf_isPure : {φ : stateSpace E | (toState φ).IsPure}.Finite
 ```
 
-**`ProbabilisticTheory.PureState.affineIndependent_of_isSimplex`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.affineIndependent_of_isSimplex`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L76).
 
 > If the state space is a geometric simplex, its pure states are affinely independent.
 
@@ -56,7 +56,7 @@ lemma affineIndependent_of_isSimplex :
     AffineIndependent ℝ fun k : PureState E => (k.1 : WeakDual ℝ E)
 ```
 
-**`ProbabilisticTheory.PureState.affineCombination_measureReal`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.affineCombination_measureReal`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L86).
 
 > A probability measure on finitely many pure states writes its barycenter as the mixture of the
 > pure states weighted by their masses.
@@ -69,7 +69,7 @@ lemma affineCombination_measureReal [Fintype (PureState E)] {μ : Measure (PureS
       ((StateSpace.ofState ω) : WeakDual ℝ E)
 ```
 
-**`ProbabilisticTheory.PureState.eq_of_isSimplex`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.eq_of_isSimplex`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L99).
 
 > On a geometric simplex, a state has at most one decomposition into pure states.
 
@@ -79,7 +79,7 @@ lemma eq_of_isSimplex [Fintype (PureState E)] {μ ν : Measure (PureState E)}
     (hμ : ∀ f, ∫ k, toState k.1 f ∂μ = ω f) (hν : ∀ f, ∫ k, toState k.1 f ∂ν = ω f) : μ = ν
 ```
 
-**`ProbabilisticTheory.PureState.isSimplexStateSpace_of_isSimplex`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.isSimplexStateSpace_of_isSimplex`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L112).
 
 > **A geometric simplex of states is a simplex**: every state decomposes uniquely into pure
 > states.
@@ -90,7 +90,7 @@ lemma isSimplexStateSpace_of_isSimplex : IsSimplexStateSpace E
 
 ## B. Simplices are geometric simplices
 
-**`ProbabilisticTheory.sum_weighted_eq_of_sum_smul_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L129).
+**`PhyslibAlpha.ProbabilisticTheory.sum_weighted_eq_of_sum_smul_eq`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L129).
 
 > Equal mixtures of states in the weak dual are equal mixtures of weighted states.
 
@@ -102,7 +102,7 @@ lemma sum_weighted_eq_of_sum_smul_eq {ι : Type*} {s : Finset ι} {φ : ι → s
       ∑ i : s, (toState (φ i)).weighted ⟨w₂ i, h₂ i i.2⟩
 ```
 
-**`ProbabilisticTheory.EnsemblesRefine.affineIndependent_extremePoints`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.EnsemblesRefine.affineIndependent_extremePoints`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L146).
 
 > When ensembles refine, the pure states are affinely independent.
 
@@ -112,7 +112,7 @@ lemma EnsemblesRefine.affineIndependent_extremePoints (hE : EnsemblesRefine E) :
       (Subtype.val : (stateSpace E).extremePoints ℝ → WeakDual ℝ E)
 ```
 
-**`ProbabilisticTheory.IsSimplexStateSpace.isSimplex`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L160).
+**`PhyslibAlpha.ProbabilisticTheory.IsSimplexStateSpace.isSimplex`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L160).
 
 > On a simplex with finitely many independent observables, the state space is a geometric
 > simplex.
@@ -122,7 +122,7 @@ lemma IsSimplexStateSpace.isSimplex [FiniteDimensional ℝ E] (h : IsSimplexStat
     IsSimplex (stateSpace E)
 ```
 
-**`ProbabilisticTheory.isSimplexStateSpace_iff_isSimplex`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L176).
+**`PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_iff_isSimplex`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L176).
 
 > **Finite simplices**: for finitely many independent observables, the state space is a simplex
 > exactly when it is the convex hull of finitely many affinely independent pure states.
@@ -132,7 +132,7 @@ lemma isSimplexStateSpace_iff_isSimplex [FiniteDimensional ℝ E] :
     IsSimplexStateSpace E ↔ IsSimplex (stateSpace E)
 ```
 
-**`ProbabilisticTheory.isSimplexStateSpace_of_affineEquiv_stdSimplexSet`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L181).
+**`PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_of_affineEquiv_stdSimplexSet`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean#L181).
 
 > A state space affinely equivalent to a standard simplex is a simplex.
 
@@ -153,4 +153,4 @@ lemma isSimplexStateSpace_of_affineEquiv_stdSimplexSet {ι : Type*} [Fintype ι]
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean)

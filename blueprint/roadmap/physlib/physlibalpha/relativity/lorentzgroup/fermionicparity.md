@@ -8,7 +8,7 @@ proof: formalized
 
 # Fermionic parity
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.FermionicParity`, [PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean): 7 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.FermionicParity`, [PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean): 7 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.FermionicParity`, [PhyslibAlpha
 
 ## A. Fermionic parity
 
-**`LorentzGroup.fermionicParity`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L63).
+**`LorentzGroup.fermionicParity`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L63).
 
 > Fermionic parity: the nontrivial element `-1` of the kernel of the two-to-one homomorphism
 > `SL(2, ℂ) → LorentzGroup 3`, that is the rotation by `2π`. It acts trivially on tensors and by
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.FermionicParity`, [PhyslibAlpha
 def fermionicParity : SL(2, ℂ)
 ```
 
-**`LorentzGroup.toSelfAdjointMap_fermionicParity`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L67).
+**`LorentzGroup.toSelfAdjointMap_fermionicParity`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L67).
 
 > Fermionic parity acts trivially on self-adjoint matrices: conjugation by `-1` is the
 > identity.
@@ -58,7 +58,7 @@ lemma toSelfAdjointMap_fermionicParity :
     Lorentz.SL2C.toSelfAdjointMap fermionicParity = LinearMap.id
 ```
 
-**`LorentzGroup.toLorentzGroup_fermionicParity`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L75).
+**`LorentzGroup.toLorentzGroup_fermionicParity`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L75).
 
 > Fermionic parity projects to the identity Lorentz transformation: it is invisible on
 > tensors.
@@ -68,13 +68,13 @@ lemma toLorentzGroup_fermionicParity :
     Lorentz.SL2C.toLorentzGroup fermionicParity = 1
 ```
 
-**`LorentzGroup.fermionicParity_sq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L84).
+**`LorentzGroup.fermionicParity_sq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L84).
 
 ```lean
 lemma fermionicParity_sq : fermionicParity ^ 2 = 1
 ```
 
-**`LorentzGroup.fermionicParity_ne_one`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L90).
+**`LorentzGroup.fermionicParity_ne_one`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L90).
 
 > Fermionic parity is not the identity of `SL(2, ℂ)`: the covering is genuinely
 > two-to-one.
@@ -88,7 +88,7 @@ lemma fermionicParity_ne_one : fermionicParity ≠ 1
 > Fermionic parity is invisible on Lorentz vectors and acts by `-1` on Weyl spinors: this is what
 > makes it measure the parity of the number of spinor indices.
 
-**`LorentzGroup.complexCoVector_SL2CRep_fermionicParity`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L109).
+**`LorentzGroup.complexCoVector_SL2CRep_fermionicParity`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L109).
 
 > Fermionic parity acts trivially on complex covariant Lorentz vectors, since it projects to
 > the identity Lorentz transformation.
@@ -98,7 +98,7 @@ lemma complexCoVector_SL2CRep_fermionicParity :
     Lorentz.ComplexCoVector.SL2CRep fermionicParity = LinearMap.id
 ```
 
-**`LorentzGroup.rightHandedWeyl_rep_fermionicParity`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L118).
+**`LorentzGroup.rightHandedWeyl_rep_fermionicParity`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean#L118).
 
 > Fermionic parity acts by `-1` on right-handed Weyl spinors.
 
@@ -118,4 +118,4 @@ lemma rightHandedWeyl_rep_fermionicParity :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean)

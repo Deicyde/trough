@@ -7,7 +7,7 @@ proof: formalized
 
 # Native Montgomery arithmetic over eight 32-bit limbs
 
-`CompPoly.Fields.Montgomery.Native64x8`, in [CompPoly/Fields/Montgomery/Native64x8.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean), by Gregor Mitscha-Baude.
+`CompPoly.Fields.Montgomery.Native64x8`, in [CompPoly/Fields/Montgomery/Native64x8.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean), by Gregor Mitscha-Baude.
 
 > Raw word operations for prime moduli below `2 ^ 256`, represented as eight 32-bit limbs
 > carried in the low halves of `UInt64` words (`Limbs8`).  This is the multi-limb sibling of
@@ -34,7 +34,7 @@ proof: formalized
 
 > ## Word-level specifications
 
-`Montgomery.Native64x8.adc_spec` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L55))
+`Montgomery.Native64x8.adc_spec` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L55))
 
 > Add-with-carry, existential form: the low limb and the carry-out are named as fresh
 > naturals together with their defining equations, so that a chain of them is a linear system
@@ -47,7 +47,7 @@ theorem adc_spec (x y c : UInt64) (hx : x.toNat < 2 ^ 32) (hy : y.toNat < 2 ^ 32
       s + 2 ^ 32 * co = x.toNat + y.toNat + c.toNat ∧ co ≤ 1 ∧ s < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.adc_spec_wide` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L65))
+`Montgomery.Native64x8.adc_spec_wide` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L65))
 
 > Add-with-carry when the first summand is one bit wider than a limb.
 
@@ -58,7 +58,7 @@ theorem adc_spec_wide (x y c : UInt64) (hx : x.toNat < 2 ^ 33) (hy : y.toNat < 2
       s + 2 ^ 32 * co = x.toNat + y.toNat + c.toNat ∧ co ≤ 2 ∧ s < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.sbb_spec` (theorem, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L75))
+`Montgomery.Native64x8.sbb_spec` (theorem, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L75))
 
 > Subtract-with-borrow, existential form.
 
@@ -69,7 +69,7 @@ theorem sbb_spec (x y b : UInt64) (hx : x.toNat < 2 ^ 32) (hy : y.toNat < 2 ^ 32
       m + y.toNat + b.toNat = x.toNat + 2 ^ 32 * bo ∧ bo ≤ 1 ∧ m < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.mac_spec` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L86))
+`Montgomery.Native64x8.mac_spec` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L86))
 
 > Multiply-accumulate, existential form.  The accumulator, both factors and the carry-in
 > all fit in 32 bits, so `t + x * y + c` cannot overflow a 64-bit word.
@@ -82,7 +82,7 @@ theorem mac_spec (t x y c : UInt64) (ht : t.toNat < 2 ^ 32) (hx : x.toNat < 2 ^ 
       lo < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.montM_toNat` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L100))
+`Montgomery.Native64x8.montM_toNat` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L100))
 
 > The Montgomery multiplier agrees with its natural-number specification.
 
@@ -91,25 +91,25 @@ theorem montM_toNat (s negInv : UInt64) (hs : s.toNat < 2 ^ 32) (hn : negInv.toN
     (montM s negInv).toNat = s.toNat * negInv.toNat % 2 ^ 32
 ```
 
-`Montgomery.Native64x8.adcLo_lt` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L110))
+`Montgomery.Native64x8.adcLo_lt` (theorem, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L110))
 
 ```lean
 theorem adcLo_lt (x y c : UInt64) : (adcLo x y c).toNat < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.sbbLo_lt` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L115))
+`Montgomery.Native64x8.sbbLo_lt` (theorem, [line 115](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L115))
 
 ```lean
 theorem sbbLo_lt (x y b : UInt64) : (sbbLo x y b).toNat < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.macLo_lt` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L120))
+`Montgomery.Native64x8.macLo_lt` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L120))
 
 ```lean
 theorem macLo_lt (t x y c : UInt64) : (macLo t x y c).toNat < 2 ^ 32
 ```
 
-`Montgomery.Native64x8.montM_lt` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L125))
+`Montgomery.Native64x8.montM_lt` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L125))
 
 ```lean
 theorem montM_lt (s negInv : UInt64) : (montM s negInv).toNat < 2 ^ 32
@@ -117,43 +117,43 @@ theorem montM_lt (s negInv : UInt64) : (montM s negInv).toNat < 2 ^ 32
 
 > ## Eight-limb values
 
-`Montgomery.Native64x8.Limbs8.zero_bounded` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L134))
+`Montgomery.Native64x8.Limbs8.zero_bounded` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L134))
 
 ```lean
 theorem zero_bounded : zero.Bounded
 ```
 
-`Montgomery.Native64x8.Limbs8.zero_toNat` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L138))
+`Montgomery.Native64x8.Limbs8.zero_toNat` (theorem, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L138))
 
 ```lean
 theorem zero_toNat : zero.toNat = 0
 ```
 
-`Montgomery.Native64x8.Limbs8.one_bounded` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L141))
+`Montgomery.Native64x8.Limbs8.one_bounded` (theorem, [line 141](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L141))
 
 ```lean
 theorem one_bounded : one.Bounded
 ```
 
-`Montgomery.Native64x8.Limbs8.one_toNat` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L143))
+`Montgomery.Native64x8.Limbs8.one_toNat` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L143))
 
 ```lean
 theorem one_toNat : one.toNat = 1
 ```
 
-`Montgomery.Native64x8.Limbs8.ofNat_bounded` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L145))
+`Montgomery.Native64x8.Limbs8.ofNat_bounded` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L145))
 
 ```lean
 theorem ofNat_bounded (n : ℕ) : (ofNat n).Bounded
 ```
 
-`Montgomery.Native64x8.Limbs8.ofNat_toNat` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L149))
+`Montgomery.Native64x8.Limbs8.ofNat_toNat` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L149))
 
 ```lean
 theorem ofNat_toNat (n : ℕ) : (ofNat n).toNat = n % 2 ^ 256
 ```
 
-`Montgomery.Native64x8.sum8_lt` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L156))
+`Montgomery.Native64x8.sum8_lt` (theorem, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L156))
 
 > A recomposed value with 32-bit limbs stays below `2 ^ 256`.
 
@@ -165,7 +165,7 @@ theorem sum8_lt {a0 a1 a2 a3 a4 a5 a6 a7 : ℕ} (h0 : a0 < 2 ^ 32) (h1 : a1 < 2 
       2 ^ 224 * a7 < 2 ^ 256
 ```
 
-`Montgomery.Native64x8.Limbs8.ext_of_toNat` (theorem, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L164))
+`Montgomery.Native64x8.Limbs8.ext_of_toNat` (theorem, [line 164](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L164))
 
 > Bounded limb vectors are determined by their value.
 
@@ -174,7 +174,7 @@ theorem Limbs8.ext_of_toNat {x y : Limbs8} (hx : x.Bounded) (hy : y.Bounded)
     (h : x.toNat = y.toNat) : x = y
 ```
 
-`Montgomery.Native64x8.Limbs8.toNat_lt` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L185))
+`Montgomery.Native64x8.Limbs8.toNat_lt` (theorem, [line 185](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L185))
 
 > A bounded eight-limb value is below `2 ^ 256`.
 
@@ -189,7 +189,7 @@ theorem Limbs8.toNat_lt {x : Limbs8} (hx : x.Bounded) : x.toNat < 2 ^ 256
 > add-with-carry chains and the multiply-accumulate chains of CIOS, where `yᵢ` is a limb
 > product.
 
-`Montgomery.Native64x8.carry_chain_sum` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L197))
+`Montgomery.Native64x8.carry_chain_sum` (theorem, [line 197](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L197))
 
 > Weighted telescoping of an eight-step carry chain.
 
@@ -212,7 +212,7 @@ theorem carry_chain_sum {x0 x1 x2 x3 x4 x5 x6 x7 y0 y1 y2 y3 y4 y5 y6 y7 : ℕ}
       2 ^ 192 * y6 + 2 ^ 224 * y7) + cin
 ```
 
-`Montgomery.Native64x8.borrow_chain_sum` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L216))
+`Montgomery.Native64x8.borrow_chain_sum` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L216))
 
 > Weighted telescoping of an eight-step borrow chain.
 
@@ -242,13 +242,13 @@ theorem borrow_chain_sum {x0 x1 x2 x3 x4 x5 x6 x7 y0 y1 y2 y3 y4 y5 y6 y7 : ℕ}
 
 > ## Limbwise addition and subtraction
 
-`Montgomery.Native64x8.addLimbs_bounded` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L280))
+`Montgomery.Native64x8.addLimbs_bounded` (theorem, [line 280](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L280))
 
 ```lean
 theorem addLimbs_bounded (a b : Limbs8) : (addLimbs a b).Bounded
 ```
 
-`Montgomery.Native64x8.addLimbs_spec` (theorem, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L286))
+`Montgomery.Native64x8.addLimbs_spec` (theorem, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L286))
 
 > The limbwise sum and the top carry recompose the sum of the inputs.
 
@@ -258,7 +258,7 @@ theorem addLimbs_spec (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :
       (addLimbs a b).toNat + 2 ^ 256 * (addCarry a b).toNat = a.toNat + b.toNat
 ```
 
-`Montgomery.Native64x8.addLimbs_toNat` (theorem, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L318))
+`Montgomery.Native64x8.addLimbs_toNat` (theorem, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L318))
 
 > The limbwise sum and some top carry recompose the sum of the inputs.
 
@@ -267,13 +267,13 @@ theorem addLimbs_toNat (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :
     ∃ c : ℕ, c ≤ 1 ∧ (addLimbs a b).toNat + 2 ^ 256 * c = a.toNat + b.toNat
 ```
 
-`Montgomery.Native64x8.subLimbs_bounded` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L322))
+`Montgomery.Native64x8.subLimbs_bounded` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L322))
 
 ```lean
 theorem subLimbs_bounded (a b : Limbs8) : (subLimbs a b).Bounded
 ```
 
-`Montgomery.Native64x8.subLimbs_spec` (theorem, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L328))
+`Montgomery.Native64x8.subLimbs_spec` (theorem, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L328))
 
 > The limbwise difference and the final borrow recompose the difference of the inputs.
 
@@ -285,13 +285,13 @@ theorem subLimbs_spec (a b : Limbs8) (ha : a.Bounded) (hb : b.Bounded) :
 
 > ## Conditional subtraction
 
-`Montgomery.Native64x8.condSub_bounded` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L361))
+`Montgomery.Native64x8.condSub_bounded` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L361))
 
 ```lean
 theorem condSub_bounded (q t : Limbs8) (ht : t.Bounded) : (condSub q t).Bounded
 ```
 
-`Montgomery.Native64x8.condSub_toNat` (theorem, [line 368](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L368))
+`Montgomery.Native64x8.condSub_toNat` (theorem, [line 368](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L368))
 
 > `condSub` subtracts the modulus exactly when the input is at least the modulus.
 
@@ -300,7 +300,7 @@ theorem condSub_toNat (q t : Limbs8) (hq : q.Bounded) (ht : t.Bounded) :
     (condSub q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat
 ```
 
-`Montgomery.Native64x8.condSub_lt` (theorem, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L382))
+`Montgomery.Native64x8.condSub_lt` (theorem, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L382))
 
 > `condSub` returns a canonical representative for inputs below `2 * q`.
 
@@ -309,14 +309,14 @@ theorem condSub_lt (q t : Limbs8) (hq : q.Bounded) (ht : t.Bounded)
     (h : t.toNat < 2 * q.toNat) : (condSub q t).toNat < q.toNat
 ```
 
-`Montgomery.Native64x8.condSubWide_bounded` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L387))
+`Montgomery.Native64x8.condSubWide_bounded` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L387))
 
 ```lean
 theorem condSubWide_bounded (q : Limbs8) (t : State9) (ht : t.Bounded) :
     (condSubWide q t).Bounded
 ```
 
-`Montgomery.Native64x8.condSubWide_toNat` (theorem, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L396))
+`Montgomery.Native64x8.condSubWide_toNat` (theorem, [line 396](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L396))
 
 > `condSubWide` subtracts the modulus exactly when an accumulator below `2 * q` is at least
 > the modulus.
@@ -327,7 +327,7 @@ theorem condSubWide_toNat (q : Limbs8) (t : State9) (hq : q.Bounded) (ht : t.Bou
     (condSubWide q t).toNat = if t.toNat < q.toNat then t.toNat else t.toNat - q.toNat
 ```
 
-`Montgomery.Native64x8.condSubWide_lt` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L410))
+`Montgomery.Native64x8.condSubWide_lt` (theorem, [line 410](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L410))
 
 > `condSubWide` returns a canonical representative for accumulators below `2 * q`.
 
@@ -338,25 +338,25 @@ theorem condSubWide_lt (q : Limbs8) (t : State9) (hq : q.Bounded) (ht : t.Bounde
 
 > ## Field operations
 
-`Montgomery.Native64x8.add_bounded` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L417))
+`Montgomery.Native64x8.add_bounded` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L417))
 
 ```lean
 theorem add_bounded (q a b : Limbs8) : (add q a b).Bounded
 ```
 
-`Montgomery.Native64x8.sub_bounded` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L423))
+`Montgomery.Native64x8.sub_bounded` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L423))
 
 ```lean
 theorem sub_bounded (q a b : Limbs8) : (sub q a b).Bounded
 ```
 
-`Montgomery.Native64x8.neg_bounded` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L429))
+`Montgomery.Native64x8.neg_bounded` (theorem, [line 429](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L429))
 
 ```lean
 theorem neg_bounded (q a : Limbs8) : (neg q a).Bounded
 ```
 
-`Montgomery.Native64x8.add_toNat` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L432))
+`Montgomery.Native64x8.add_toNat` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L432))
 
 > Modular addition is correct for canonical inputs of any bounded modulus.
 
@@ -366,7 +366,7 @@ theorem add_toNat (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bou
     (add q a b).toNat = (a.toNat + b.toNat) % q.toNat
 ```
 
-`Montgomery.Native64x8.add_lt` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L448))
+`Montgomery.Native64x8.add_lt` (theorem, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L448))
 
 ```lean
 theorem add_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)
@@ -374,7 +374,7 @@ theorem add_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounde
     (add q a b).toNat < q.toNat
 ```
 
-`Montgomery.Native64x8.sub_toNat` (theorem, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L455))
+`Montgomery.Native64x8.sub_toNat` (theorem, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L455))
 
 > Modular subtraction is correct for canonical inputs of any bounded modulus.
 
@@ -384,7 +384,7 @@ theorem sub_toNat (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bou
     (sub q a b).toNat = (a.toNat + (q.toNat - b.toNat)) % q.toNat
 ```
 
-`Montgomery.Native64x8.sub_lt` (theorem, [line 471](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L471))
+`Montgomery.Native64x8.sub_lt` (theorem, [line 471](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L471))
 
 ```lean
 theorem sub_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounded)
@@ -392,7 +392,7 @@ theorem sub_lt (q a b : Limbs8) (hq : q.Bounded) (ha : a.Bounded) (hb : b.Bounde
     (sub q a b).toNat < q.toNat
 ```
 
-`Montgomery.Native64x8.neg_toNat` (theorem, [line 478](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L478))
+`Montgomery.Native64x8.neg_toNat` (theorem, [line 478](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L478))
 
 > Modular negation is correct for canonical inputs of any bounded modulus.
 
@@ -402,7 +402,7 @@ theorem neg_toNat (q a : Limbs8) (hq : q.Bounded) (ha : a.Bounded)
     (neg q a).toNat = (q.toNat - a.toNat) % q.toNat
 ```
 
-`Montgomery.Native64x8.neg_lt` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean#L485))
+`Montgomery.Native64x8.neg_lt` (theorem, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean#L485))
 
 ```lean
 theorem neg_lt (q a : Limbs8) (hq : q.Bounded) (ha : a.Bounded)
@@ -415,5 +415,5 @@ theorem neg_lt (q a : Limbs8) (hq : q.Bounded) (ha : a.Bounded)
 
 ## Sources
 
-- [CompPoly/Fields/Montgomery/Native64x8.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8.lean)
+- [CompPoly/Fields/Montgomery/Native64x8.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Montgomery.Native64x8.json)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.127 Colimits and maps of finite presentation
 
-Section 10.127 of the Stacks Project, [Tag 00QL](https://stacks.math.columbia.edu/tag/00QL). 17 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.127 of the Stacks Project, [Tag 00QL](https://stacks.math.columbia.edu/tag/00QL). 17 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BUF, a lemma
 
 [Tag 0BUF](https://stacks.math.columbia.edu/tag/0BUF) in the Stacks Project.
 
-**`CommRingCat.isFiltered_costructuredArrow_and_isDenseAt_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/Canonical.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ColimitPresentation/Canonical.lean#L407). The attribute's comment: “The category `𝓘` is `CostructuredArrow P.ι A` for `P` the property of being of finite presentation over `R`, and "the colimit of the `A'` is `A`" is `P.ι.isDenseAt A`, which pins the colimit cocone to the tautological one. No smallness device is needed. See the module docstring.”. References: EGA IV (1.9.3.1), “more general”.
+**`CommRingCat.isFiltered_costructuredArrow_and_isDenseAt_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/Canonical.lean, line 407](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/ColimitPresentation/Canonical.lean#L407). The attribute's comment: “The category `𝓘` is `CostructuredArrow P.ι A` for `P` the property of being of finite presentation over `R`, and "the colimit of the `A'` is `A`" is `P.ι.isDenseAt A`, which pins the colimit cocone to the tautological one. No smallness device is needed. See the module docstring.”. References: EGA IV (1.9.3.1), “more general”.
 
 > Let `R → A` be a ring map and let `𝓘 = CostructuredArrow P.ι A` be the category of
 > `R`-algebra maps `A' → A` with `A'` of finite presentation over `R`. Then `𝓘` is filtered,
@@ -33,7 +33,7 @@ public theorem isFiltered_costructuredArrow_and_isDenseAt_finitePresentation
 
 [Tag 00QN](https://stacks.math.columbia.edu/tag/00QN) in the Stacks Project.
 
-**`Algebra.exists_directedSystem_finitePresentation_lift_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/FinitePresentation.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/FinitePresentation.lean#L406). The attribute's comment: “Both sentences. The second is the implication `Algebra.FiniteType R A → ∀ i j h, Function.Surjective (f i j h)` inside the same existential, which is equivalent to stating it separately; `A = colim G l` is bijectivity of `DirectLimit.Algebra.lift`, which pins the comparison map. See the module docstring.”.
+**`Algebra.exists_directedSystem_finitePresentation_lift_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/FinitePresentation.lean, line 406](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Algebra/DirectLimit/FinitePresentation.lean#L406). The attribute's comment: “Both sentences. The second is the implication `Algebra.FiniteType R A → ∀ i j h, Function.Surjective (f i j h)` inside the same existential, which is equivalent to stating it separately; `A = colim G l` is bijectivity of `DirectLimit.Algebra.lift`, which pins the comparison map. See the module docstring.”.
 
 > **Every algebra is a direct limit of algebras of finite presentation.** For a ring map
 > `R → A` there is a directed system `G` of `R`-algebras of finite presentation, indexed by a
@@ -57,7 +57,7 @@ public theorem Algebra.exists_directedSystem_finitePresentation_lift_bijective
 
 [Tag 00QO](https://stacks.math.columbia.edu/tag/00QO) in the Stacks Project.
 
-**`CommRingCat.finitePresentation_tfae_colimit_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean#L313). The attribute's comment: “A directed system of `R`-algebras is a functor `Λ ⥤ Under R` out of a nonempty directed preordered set, `colim_λ A_λ` is the vertex of any colimit cocone `c`, and the map `colim_λ Homᵣ(S, A_λ) → Homᵣ(S, colim_λ A_λ)` is `colimit.desc` of `coyoneda.obj (op S)` applied to `c`.”.
+**`CommRingCat.finitePresentation_tfae_colimit_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean, line 313](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean#L313). The attribute's comment: “A directed system of `R`-algebras is a functor `Λ ⥤ Under R` out of a nonempty directed preordered set, `colim_λ A_λ` is the vertex of any colimit cocone `c`, and the map `colim_λ Homᵣ(S, A_λ) → Homᵣ(S, colim_λ A_λ)` is `colimit.desc` of `coyoneda.obj (op S)` applied to `c`.”.
 
 > **Algebras of finite presentation are the compact algebras.** For an `R`-algebra `S`, the
 > following are equivalent: the ring map `R → S` is of finite presentation; for every directed
@@ -88,7 +88,7 @@ public theorem finitePresentation_tfae_colimit_hom {R : CommRingCat.{u}} (S : Un
 
 [Tag 07C3](https://stacks.math.columbia.edu/tag/07C3) in the Stacks Project.
 
-**`CommRingCat.ind_under_iff_exists_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean#L562). The attribute's comment: “The family `𝓔` is an `E : ObjectProperty (Under R)` on the category `Under R` of `R`-algebras, and "`Λ` is a filtered colimit of members of `𝓔`" is Mathlib's `ObjectProperty.ind.{u} E Λ`. `E` is not assumed small; the source's set-theoretic hypothesis is only a smallness device. See the module docstring.”.
+**`CommRingCat.ind_under_iff_exists_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean, line 562](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/Ring/FinitePresentation.lean#L562). The attribute's comment: “The family `𝓔` is an `E : ObjectProperty (Under R)` on the category `Under R` of `R`-algebras, and "`Λ` is a filtered colimit of members of `𝓔`" is Mathlib's `ObjectProperty.ind.{u} E Λ`. `E` is not assumed small; the source's set-theoretic hypothesis is only a smallness device. See the module docstring.”.
 
 > **Criterion for being a filtered colimit of algebras of a given family.** Let `R → Λ` be a
 > ring map and let `E` be a family of `R`-algebras of finite presentation over `R`. Then `Λ` is a
@@ -107,7 +107,7 @@ public theorem ind_under_iff_exists_factorization {R : CommRingCat.{u}} (Λ : Un
 
 [Tag 05LI](https://stacks.math.columbia.edu/tag/05LI) in the Stacks Project.
 
-**`Stacks.FinitePresentation.ColimitDescent.statement_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ColimitRing.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ColimitRing.lean#L590). The attribute's comment: “(2)”.
+**`Stacks.FinitePresentation.ColimitDescent.statement_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ColimitRing.lean, line 590](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ColimitRing.lean#L590). The attribute's comment: “(2)”.
 
 > **Statement (2).** If `N` is a finite `A`-module and `u : M → N` has
 > surjective base change to `R`, then its base change to some `R_i` is surjective.
@@ -122,7 +122,7 @@ theorem statement_two
     ∃ i : ι, Function.Surjective (LinearMap.baseChange (R i) u)
 ```
 
-**`Stacks.FinitePresentation.ColimitDescent.statement_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean#L113). The attribute's comment: “(3)”.
+**`Stacks.FinitePresentation.ColimitDescent.statement_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean#L113). The attribute's comment: “(3)”.
 
 > **Statement (3).** If `N` is a finitely presented `A`-module and
 > `v : N ⊗_A R → M ⊗_A R` is an `R`-module map, then there is some `i` and an
@@ -142,7 +142,7 @@ theorem statement_three
         = (canonMod ψ M i) ∘ₗ (vi.restrictScalars A)
 ```
 
-**`Stacks.FinitePresentation.ColimitDescent.statement_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean#L300). The attribute's comment: “(4)”.
+**`Stacks.FinitePresentation.ColimitDescent.statement_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/LinearMapDescent.lean#L300). The attribute's comment: “(4)”.
 
 > **Statement (4).** If `M` is finite, `N` is finitely presented, and
 > `u : M → N` has base change to `R` an isomorphism, then its base change to some
@@ -158,7 +158,7 @@ theorem statement_four
     ∃ i : ι, Function.Bijective (LinearMap.baseChange (R i) u)
 ```
 
-**`Stacks.FinitePresentation.ColimitDescent.statement_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ModuleColimit.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ModuleColimit.lean#L231). The attribute's comment: “(1)”.
+**`Stacks.FinitePresentation.ColimitDescent.statement_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ModuleColimit.lean, line 231](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/ModuleColimit.lean#L231). The attribute's comment: “(1)”.
 
 > **Statement (1).** If `M` is a finite `A`-module and `u, u' : M → N` are
 > `A`-module maps whose base changes to `R` agree, then their base changes to some
@@ -177,7 +177,7 @@ theorem statement_one
 
 [Tag 05N7](https://stacks.math.columbia.edu/tag/05N7) in the Stacks Project.
 
-**`Module.exists_finitePresentation_and_baseChange_eq_of_lift_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/DirectLimit/FinitePresentation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/DirectLimit/FinitePresentation.lean#L295). The attribute's comment: “The colimit is a `DirectedSystem` of `A`-algebras whose comparison map `colim_j S j → R` is bijective, as in 00QN; items (2) and (3) are stated over an arbitrary base ring `A` and with the finiteness hypotheses of 05LI (3) and (1), of which they are instances, the source's form being `A = R_λ` and the system restricted to `μ ≥ λ`; `φ = φ_μ ⊗ 1_R` is the commuting square with the canonical maps `LinearMap.rTensor M (algebraMap (S j) R)`. See the module docstring.”. References: EGA IV (8.5.3), “affine case”.
+**`Module.exists_finitePresentation_and_baseChange_eq_of_lift_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/DirectLimit/FinitePresentation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Module/DirectLimit/FinitePresentation.lean#L295). The attribute's comment: “The colimit is a `DirectedSystem` of `A`-algebras whose comparison map `colim_j S j → R` is bijective, as in 00QN; items (2) and (3) are stated over an arbitrary base ring `A` and with the finiteness hypotheses of 05LI (3) and (1), of which they are instances, the source's form being `A = R_λ` and the system restricted to `μ ≥ λ`; `φ = φ_μ ⊗ 1_R` is the commuting square with the canonical maps `LinearMap.rTensor M (algebraMap (S j) R)`. See the module docstring.”. References: EGA IV (8.5.3), “affine case”.
 
 > Let `A` be a ring, let `S` be a directed system of `A`-algebras over a nonempty directed
 > preorder `J` with transition maps `f i j : S i →ₐ[A] S j`, and let `R` be an `A`-algebra
@@ -222,7 +222,7 @@ public theorem exists_finitePresentation_and_baseChange_eq_of_lift_bijective
 
 [Tag 05N8](https://stacks.math.columbia.edu/tag/05N8) in the Stacks Project.
 
-**`Algebra.TensorProduct.exists_of_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Hom.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Algebra/DirectLimit/Hom.lean#L758). The attribute's comment: “The four items are the four conjuncts, each carrying only its own finiteness hypothesis. `B ⊗_A R` is `R ⊗[A] B` and `u ⊗ 1` is `Algebra.TensorProduct.lTensor`; `R = colim_i R_i` is bijectivity of `DirectLimit.Algebra.lift`, as in `00QN`; item (3)'s `v = v_i ⊗ 1` is the commuting square with the comparison maps `rTensor _ (g i)`. See the module docstring.”.
+**`Algebra.TensorProduct.exists_of_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Algebra/DirectLimit/Hom.lean, line 758](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Algebra/DirectLimit/Hom.lean#L758). The attribute's comment: “The four items are the four conjuncts, each carrying only its own finiteness hypothesis. `B ⊗_A R` is `R ⊗[A] B` and `u ⊗ 1` is `Algebra.TensorProduct.lTensor`; `R = colim_i R_i` is bijectivity of `DirectLimit.Algebra.lift`, as in `00QN`; item (3)'s `v = v_i ⊗ 1` is the commuting square with the comparison maps `rTensor _ (g i)`. See the module docstring.”.
 
 > **Stacks 05N8.** Let `A` be a ring, let `B`, `C` be `A`-algebras, and let `R` be the colimit
 > of a directed system `G` of `A`-algebras with transition maps `f` and structure maps
@@ -266,7 +266,7 @@ public theorem exists_of_directLimit {A : Type u} [CommRing A]
 
 [Tag 05N9](https://stacks.math.columbia.edu/tag/05N9) in the Stacks Project.
 
-**`CommRingCat.exists_isPushout_and_exists_eq_comp_and_exists_comp_eq_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/FinitePresentation.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ColimitPresentation/FinitePresentation.lean#L863). The attribute's comment: “The colimit is a colimit cocone in `CommRingCat` over a filtered category, an algebra is a ring map, and `A ≅ A_λ ⊗_{R_λ} R` is `IsPushout`, so no tensor product is constructed. Items (2) and (3) are transposed along that pushout, which is Mathlib's spelling and drops the source's finite presentation of `B_λ`; item (3) needs `A_λ` of finite type only. See the module docstring.”.
+**`CommRingCat.exists_isPushout_and_exists_eq_comp_and_exists_comp_eq_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/FinitePresentation.lean, line 863](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/ColimitPresentation/FinitePresentation.lean#L863). The attribute's comment: “The colimit is a colimit cocone in `CommRingCat` over a filtered category, an algebra is a ring map, and `A ≅ A_λ ⊗_{R_λ} R` is `IsPushout`, so no tensor product is constructed. Items (2) and (3) are transposed along that pushout, which is Mathlib's spelling and drops the source's finite presentation of `B_λ`; item (3) needs `A_λ` of finite type only. See the module docstring.”.
 
 > **Stacks 05N9.** Let `R = colim_λ R_λ` be a filtered colimit of rings, given by a filtered
 > diagram `F` with colimit cocone `c`.
@@ -308,7 +308,7 @@ public theorem exists_isPushout_and_exists_eq_comp_and_exists_comp_eq_of_isColim
 
 [Tag 00QT](https://stacks.math.columbia.edu/tag/00QT) in the Stacks Project.
 
-**`exists_essFiniteType_directedSystem_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean#L450).
+**`exists_essFiniteType_directedSystem_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean#L450).
 
 > A local homomorphism `φ : R → S` of local rings is the colimit, over a directed
 > set `Λ`, of a system of local homomorphisms `ψ_λ : R_λ → S_λ` of local rings
@@ -361,7 +361,7 @@ theorem exists_essFiniteType_directedSystem_colimit
 
 [Tag 00QU](https://stacks.math.columbia.edu/tag/00QU) in the Stacks Project.
 
-**`exists_colimit_presentation_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean, line 1374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean#L1374).
+**`exists_colimit_presentation_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean, line 1374](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/EssentialFiniteness/Colimit.lean#L1374).
 
 > Let `φ : R → S` be a local homomorphism of local rings
 > which is essentially of finite type.  Then `φ` is a filtered colimit of a system
@@ -401,7 +401,7 @@ theorem exists_colimit_presentation_of_essFiniteType
 
 [Tag 00QV](https://stacks.math.columbia.edu/tag/00QV) in the Stacks Project.
 
-**`Stacks.EssentialFiniteness.ColimitPresentation.main_theorem_00qv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/ColimitFinitePresentation/BaseChangeLocalization.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/EssentialFiniteness/ColimitFinitePresentation/BaseChangeLocalization.lean#L599).
+**`Stacks.EssentialFiniteness.ColimitPresentation.main_theorem_00qv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/EssentialFiniteness/ColimitFinitePresentation/BaseChangeLocalization.lean, line 599](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/EssentialFiniteness/ColimitFinitePresentation/BaseChangeLocalization.lean#L599).
 
 > **Stacks Project, Tag 00QV (Lemma 10.127.11).**
 >
@@ -449,7 +449,7 @@ theorem main_theorem_00qv
 
 [Tag 00QX](https://stacks.math.columbia.edu/tag/00QX) in the Stacks Project.
 
-**`RingHom.EssentiallyOfFinitePresentation.exists_isColimit_essFiniteType_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/ColimitSystem.lean, line 1365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/SpreadingOut/ColimitSystem.lean#L1365). The attribute's comment: “The system is a pair of functors `A B : Λ ⥤ CommRingCat` with a natural transformation `φ : A ⟶ B`, and a functor `N : Λ ⥤ AddCommGrpCat` with `B.obj i`-module structures compatible with the transition maps; `S_λ ⊗_{R_λ} R_μ` is the pushout in `CommRingCat` and (6) is `IsBaseChange`. Hypothesis (1) is `RingHom.EssentiallyOfFinitePresentation` (Definition 00QM (2)), Mathlib having no such predicate; (2) and (3) are Mathlib's `EssFiniteType` (Definition 00QM (1)). The conclusion also asserts that each structure map `ρ_λ : A.obj i → R` is local, which is the source's "system of local homomorphisms of local rings" read as a system in the category of local rings; it is realized by the construction of 00QU and is not implied by (1)–(6). See the module docstring.”.
+**`RingHom.EssentiallyOfFinitePresentation.exists_isColimit_essFiniteType_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/SpreadingOut/ColimitSystem.lean, line 1365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/SpreadingOut/ColimitSystem.lean#L1365). The attribute's comment: “The system is a pair of functors `A B : Λ ⥤ CommRingCat` with a natural transformation `φ : A ⟶ B`, and a functor `N : Λ ⥤ AddCommGrpCat` with `B.obj i`-module structures compatible with the transition maps; `S_λ ⊗_{R_λ} R_μ` is the pushout in `CommRingCat` and (6) is `IsBaseChange`. Hypothesis (1) is `RingHom.EssentiallyOfFinitePresentation` (Definition 00QM (2)), Mathlib having no such predicate; (2) and (3) are Mathlib's `EssFiniteType` (Definition 00QM (1)). The conclusion also asserts that each structure map `ρ_λ : A.obj i → R` is local, which is the source's "system of local homomorphisms of local rings" read as a system in the category of local rings; it is realized by the construction of 00QU and is not implied by (1)–(6). See the module docstring.”.
 
 > **Stacks 00QX.** Let `R → S` be a local homomorphism of local rings which is
 > essentially of finite presentation and let `M` be a finitely presented `S`-module. Then
@@ -509,7 +509,7 @@ public theorem RingHom.EssentiallyOfFinitePresentation.exists_isColimit_essFinit
 
 [Tag 00QY](https://stacks.math.columbia.edu/tag/00QY) in the Stacks Project.
 
-**`CommRingCat.exists_colimitPresentation_arrow_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/FiniteType.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ColimitPresentation/FiniteType.lean#L406). The attribute's comment: “A ring map is an object of `Arrow CommRingCat`, and the source's item (1) is the bundled `Limits.ColimitPresentation Λ X` (diagram, cocone, colimiting), colimits in an arrow category being computed entrywise. The index is the source's nonempty directed poset; Mathlib's `ObjectProperty.ind` form follows from this one. See the module docstring.”.
+**`CommRingCat.exists_colimitPresentation_arrow_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ColimitPresentation/FiniteType.lean, line 406](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/ColimitPresentation/FiniteType.lean#L406). The attribute's comment: “A ring map is an object of `Arrow CommRingCat`, and the source's item (1) is the bundled `Limits.ColimitPresentation Λ X` (diagram, cocone, colimiting), colimits in an arrow category being computed entrywise. The index is the source's nonempty directed poset; Mathlib's `ObjectProperty.ind` form follows from this one. See the module docstring.”.
 
 > **A ring map is a directed colimit of finite type ring maps between `ℤ`-algebras of finite
 > type.** Given a ring map `X : R ⟶ S`, there are a nonempty directed poset `Λ` and a diagram of
@@ -528,7 +528,7 @@ public theorem exists_colimitPresentation_arrow_finiteType (X : Arrow CommRingCa
 
 [Tag 0BTG](https://stacks.math.columbia.edu/tag/0BTG) in the Stacks Project.
 
-**`integral_isColimit_directed_finite_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Colimit.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/IntegralClosure/Colimit.lean#L641).
+**`integral_isColimit_directed_finite_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/IntegralClosure/Colimit.lean, line 641](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/IntegralClosure/Colimit.lean#L641).
 
 > If `S` is integral over `R`, then the algebra map `R → S` is a filtered colimit of a
 > directed system of module-finite ring maps `f_λ : R_λ → S_λ` whose bases `R_λ` are of
@@ -550,7 +550,7 @@ theorem integral_isColimit_directed_finite_of_finiteType
 
 [Tag 00QZ](https://stacks.math.columbia.edu/tag/00QZ) in the Stacks Project.
 
-**`exists_ringHomDirectedSystem_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteType/Colimit.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FiniteType/Colimit.lean#L430).
+**`exists_ringHomDirectedSystem_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FiniteType/Colimit.lean, line 430](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FiniteType/Colimit.lean#L430).
 
 > Let `φ : R → S` be a ring map with `S` of finite
 > type over `R`.  Then there exist a directed set `(Λ, ≤)` and a system of ring maps
@@ -584,7 +584,7 @@ theorem exists_ringHomDirectedSystem_of_finiteType
 
 [Tag 00R0](https://stacks.math.columbia.edu/tag/00R0) in the Stacks Project.
 
-**`exists_ringMapSystem_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Colimit.lean, line 961](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/Colimit.lean#L961).
+**`exists_ringMapSystem_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/Colimit.lean, line 961](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/Colimit.lean#L961).
 
 > Let `f : R →+* S` be a ring map with `S` of finite presentation over `R`. Then
 > there is a directed index set `Λ` and a system of ring maps `R_λ → S_λ`
@@ -619,7 +619,7 @@ theorem exists_ringMapSystem_of_finitePresentation {R S : Type u} [CommRing R] [
 
 [Tag 00R1](https://stacks.math.columbia.edu/tag/00R1) in the Stacks Project.
 
-**`Algebra.exists_subring_finiteType_int_isPushout_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/SubringDescent.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/SubringDescent.lean#L390). The attribute's comment: “Stated as a descent along a single subring `R₀ ⊆ R` of finite type over `ℤ` rather than as a directed system: the six clauses of the source are recovered by taking for `Λ` the subrings of `R` of finite type over `ℤ` containing `R₀` and base changing `S₀` and `M₀` along `R₀ → R_λ`, and conversely the source's system gives such an `R₀` as the image of any `R_λ` in `R`. See the module docstring.”.
+**`Algebra.exists_subring_finiteType_int_isPushout_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/SubringDescent.lean, line 390](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/FinitePresentation/ModuleDescent/SubringDescent.lean#L390). The attribute's comment: “Stated as a descent along a single subring `R₀ ⊆ R` of finite type over `ℤ` rather than as a directed system: the six clauses of the source are recovered by taking for `Λ` the subrings of `R` of finite type over `ℤ` containing `R₀` and base changing `S₀` and `M₀` along `R₀ → R_λ`, and conversely the source's system gives such an `R₀` as the image of any `R_λ` in `R`. See the module docstring.”.
 
 > **A finitely presented algebra with a finitely presented module descends to a subring of
 > finite type over `ℤ`.** Let `R → S` be of finite presentation and let `M` be a finitely
@@ -645,4 +645,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.127, Tag 00QL](https://stacks.math.columbia.edu/tag/00QL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

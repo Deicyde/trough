@@ -8,7 +8,7 @@ proof: formalized
 
 # Translation of test functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.Translation`, [PhyslibAlpha/Mathematics/Distribution/Translation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/Translation.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.Translation`, [PhyslibAlpha/Mathematics/Distribution/Translation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/Translation.lean): 3 declarations, 3 with a docstring.
 
 > Translation is continuous on the space of test functions.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.Translation`, [PhyslibAlpha/Ma
 > - `TestFunction.precompTranslationSupportedCLM` : the pullback between fixed-support spaces.
 > - `TestFunction.precompTranslationCLM` : the pullback is continuous on test functions.
 
-**`TestFunction.precompTranslationSupportedCLM`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L55).
+**`TestFunction.precompTranslationSupportedCLM`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L55).
 
 > The pullback along a translation between fixed-support smooth test spaces.
 
@@ -43,7 +43,7 @@ def precompTranslationSupportedCLM (b : A) (K : Compacts A) :
       ContDiffMapSupportedIn A F ⊤ (K.map (fun x => x - b) (continuous_id.sub continuous_const))
 ```
 
-**`TestFunction.precompTranslationCLM`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L84).
+**`TestFunction.precompTranslationCLM`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L84).
 
 > The pullback along a translation is continuous on test functions.
 
@@ -51,7 +51,7 @@ def precompTranslationSupportedCLM (b : A) (K : Compacts A) :
 def precompTranslationCLM (b : A) : 𝓓((⊤ : Opens A), F) →L[ℝ] 𝓓((⊤ : Opens A), F)
 ```
 
-**`TestFunction.precompTranslationCLM_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L97).
+**`TestFunction.precompTranslationCLM_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/Translation.lean#L97).
 
 > The pullback along a translation evaluates the function at the translated point.
 
@@ -66,4 +66,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/Translation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/Translation.lean)
+- [PhyslibAlpha/Mathematics/Distribution/Translation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/Translation.lean)

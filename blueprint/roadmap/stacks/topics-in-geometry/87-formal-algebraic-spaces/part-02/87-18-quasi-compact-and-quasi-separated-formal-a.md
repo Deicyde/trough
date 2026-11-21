@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.18 Quasi-compact and quasi-separated formal algebraic spaces
 
-Section 87.18 of the Stacks Project, [Tag 0AJD](https://stacks.math.columbia.edu/tag/0AJD). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.18 of the Stacks Project, [Tag 0AJD](https://stacks.math.columbia.edu/tag/0AJD). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AJE, a lemma
 
 [Tag 0AJE](https://stacks.math.columbia.edu/tag/0AJE) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_colimit_presentation_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean#L114). The attribute's comment: “the conclusion for an AFFINE formal algebraic space only; the general quasi-compact quasi-separated case is not proved here, see the implementation notes”.
+**`AlgebraicGeometry.FormalSpace.exists_colimit_presentation_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean#L114). The attribute's comment: “the conclusion for an AFFINE formal algebraic space only; the general quasi-compact quasi-separated case is not proved here, see the implementation notes”.
 
 > An affine formal algebraic space over `S` is a directed colimit of algebraic spaces over `S`
 > along thickenings.
@@ -31,7 +31,7 @@ public theorem exists_colimit_presentation_of_isAffineFormalAlgebraicSpace
           Nonempty (X ≅ colimit (D ⋙ liftSheafFunctor B S hS))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_colimit_presentation_of_quasiCompact_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean#L205).
+**`AlgebraicGeometry.FormalSpace.exists_colimit_presentation_of_quasiCompact_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactQuasiSeparatedPresentation.lean#L205).
 
 > Let `S` be a scheme contained in a big fppf site `B` and let `X` be a formal algebraic space
 > over `S` which is quasi-compact and quasi-separated. Then `X` is a directed colimit of algebraic
@@ -54,7 +54,7 @@ theorem exists_colimit_presentation_of_quasiCompact_quasiSeparated
 
 [Tag 0AJF](https://stacks.math.columbia.edu/tag/0AJF) in the Stacks Project.
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_subfamily_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinition.lean#L147). The attribute's comment: “the shrinking of a fundamental system of WEAK ideals of definition to one of ideals of definition; the weak system is a hypothesis, see the implementation notes”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_subfamily_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinition.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinition.lean#L147). The attribute's comment: “the shrinking of a fundamental system of WEAK ideals of definition to one of ideals of definition; the weak system is a hypothesis, see the implementation notes”.
 
 > **Stacks 0AJF.** A quasi-compact formal scheme à la EGA carrying a fundamental system of weak
 > ideals of definition carries a fundamental system of genuine ideals of definition, over a finite
@@ -81,7 +81,7 @@ public theorem exists_subfamily_isFundamentalSystemOfIdealsOfDefinitionOn_of_isF
         IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮' (· ∈ 𝒰)
 ```
 
-**`AlgebraicGeometry.exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinitionExistence.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinitionExistence.lean#L568).
+**`AlgebraicGeometry.exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinitionExistence.lean, line 568](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/FundamentalSystemOfIdealsOfDefinitionExistence.lean#L568).
 
 > **Stacks 0AJF.** Every quasi-compact and quasi-separated formal scheme à la EGA has a
 > fundamental system of ideals of definition: a nonempty family of ideal sheaves, sectionwise
@@ -107,7 +107,7 @@ theorem exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme
 
 [Tag 0DE8](https://stacks.math.columbia.edu/tag/0DE8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff_isAffine_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean#L396). The attribute's comment: “affineness of the reduction rendered as its being the sheaf of an object of the site with affine underlying scheme, the shape Stacks 0AIN delivers in the affine case; stated for an arbitrary reduction i : X\_red -> X, which generalizes the source's canonical one”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff_isAffine_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean#L396). The attribute's comment: “affineness of the reduction rendered as its being the sheaf of an object of the site with affine underlying scheme, the shape Stacks 0AIN delivers in the affine case; stated for an arbitrary reduction i : X\_red -> X, which generalizes the source's canonical one”.
 
 > **Stacks 0DE8.** Let `S` be a scheme contained in a big fppf site `B` and let `X` be a formal
 > algebraic space over `S` with reduction `i : X_red ⟶ X` as in Stacks 0AIN. Then `X` is an affine
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.18, Tag 0AJD](https://stacks.math.columbia.edu/tag/0AJD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

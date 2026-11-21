@@ -7,14 +7,14 @@ proof: formalized
 
 # Exhaustive Finite-Field Root Enumeration
 
-`CompPoly.Univariate.Roots.Enumeration`, in [CompPoly/Univariate/Roots/Enumeration.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Enumeration`, in [CompPoly/Univariate/Roots/Enumeration.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean), by Valerii Huhnin.
 
 > Reusable lazy field-enumeration contexts for finite-field root search. The
 > context stores an indexing function rather than an array of all elements; array
 > inputs are adapted through `fieldEnumerationOfArray` for tests and small
 > callers.
 
-`CompPoly.CPolynomial.Roots.FiniteField.FieldEnumeration` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L30))
+`CompPoly.CPolynomial.Roots.FiniteField.FieldEnumeration` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L30))
 
 > A lazy complete enumeration of a finite field.
 
@@ -25,7 +25,7 @@ structure FieldEnumeration (F : Type*) where
   complete : ∀ a : F, ∃ i : Fin size, elem i = a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.ContainsAllFieldElements` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L36))
+`CompPoly.CPolynomial.Roots.FiniteField.ContainsAllFieldElements` (definition, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L36))
 
 > An array contains every field element. Duplicate entries are allowed.
 
@@ -33,7 +33,7 @@ structure FieldEnumeration (F : Type*) where
 def ContainsAllFieldElements {F : Type*} (elements : Array F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.fieldEnumerationOfArray` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L40))
+`CompPoly.CPolynomial.Roots.FiniteField.fieldEnumerationOfArray` (definition, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L40))
 
 > Adapt an explicit element array to a lazy enumeration context.
 
@@ -43,7 +43,7 @@ def fieldEnumerationOfArray {F : Type*} (elements : Array F)
     FieldEnumeration F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L52))
+`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L52))
 
 > Roots by exhaustive evaluation over a lazy field enumeration.
 
@@ -52,7 +52,7 @@ def rootsInFieldByEnumeration {F : Type*} [Semiring F] [BEq F]
     (enumeration : FieldEnumeration F) (p : CPolynomial F) : Array F
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration_sound` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L57))
+`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration_sound` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L57))
 
 > Exhaustive enumeration only returns actual roots.
 
@@ -64,7 +64,7 @@ theorem rootsInFieldByEnumeration_sound {F : Type*}
     CPolynomial.eval a p = 0
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration_complete` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L67))
+`CompPoly.CPolynomial.Roots.FiniteField.rootsInFieldByEnumeration_complete` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L67))
 
 > Complete enumeration finds every root.
 
@@ -76,7 +76,7 @@ theorem rootsInFieldByEnumeration_complete {F : Type*}
     a ∈ (rootsInFieldByEnumeration enumeration p).toList
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L77))
+`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L77))
 
 > Linear factors for every enumerated root of `p`.
 
@@ -86,7 +86,7 @@ def enumeratedLinearFactors {F : Type*} [Field F] [BEq F] [LawfulBEq F]
     Array (CPolynomial F)
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors_sound` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L83))
+`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors_sound` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L83))
 
 > Every factor emitted by exhaustive enumeration is represented linear.
 
@@ -98,7 +98,7 @@ theorem enumeratedLinearFactors_sound {F : Type*}
     IsLinearFactor factor
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors_complete` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L94))
+`CompPoly.CPolynomial.Roots.FiniteField.enumeratedLinearFactors_complete` (theorem, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L94))
 
 > Exhaustive enumeration emits the linear factor for every root.
 
@@ -112,7 +112,7 @@ theorem enumeratedLinearFactors_complete {F : Type*}
         IsLinearRootFactorCandidate factor a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.enumeratingLinearFactorProductSplitter` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean#L108))
+`CompPoly.CPolynomial.Roots.FiniteField.enumeratingLinearFactorProductSplitter` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean#L108))
 
 > Exhaustive enumeration packaged as a linear-factor product splitter.
 
@@ -133,5 +133,5 @@ def enumeratingLinearFactorProductSplitter {F : Type*}
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Enumeration.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Enumeration.lean)
+- [CompPoly/Univariate/Roots/Enumeration.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Enumeration.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Roots.Enumeration.json)

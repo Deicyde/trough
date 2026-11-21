@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.28 Affine and quasi-affine schemes
 
-Section 28.28 of the Stacks Project, [Tag 01QD](https://stacks.math.columbia.edu/tag/01QD). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 28.28 of the Stacks Project, [Tag 01QD](https://stacks.math.columbia.edu/tag/01QD). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01QE, a lemma
 
 [Tag 01QE](https://stacks.math.columbia.edu/tag/01QE) in the Stacks Project.
 
-**`Stacks.Ample.isQuasiAffine_iff_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleWire/Basic.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleWire/Basic.lean#L352). References: EGA II (5.1.2), “more general”; EGA II (6.6.13).
+**`Stacks.Ample.isQuasiAffine_iff_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleWire/Basic.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/AmpleWire/Basic.lean#L352). References: EGA II (5.1.2), “more general”; EGA II (6.6.13).
 
 > **Stacks Tag 01QE, unconditionally.** A scheme is quasi-affine if and only if its structure
 > sheaf is ample. The hypothesis `∀ n, NonvanishingBasis (pow n)` of
@@ -35,4 +35,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.28, Tag 01QD](https://stacks.math.columbia.edu/tag/01QD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Equivalent Lagrangians under Total Derivatives
 
-The module `Physlib.ClassicalMechanics.Lagrangian.TotalDerivativeEquivalence`, [Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean): 9 declarations, 8 with a docstring.
+The module `Physlib.ClassicalMechanics.Lagrangian.TotalDerivativeEquivalence`, [Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean): 9 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -53,7 +53,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.TotalDerivativeEquivalence`, [
 
 ## A. General Total Time Derivative
 
-**`ClassicalMechanics.Lagrangian.IsTotalTimeDerivative`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L78).
+**`ClassicalMechanics.Lagrangian.IsTotalTimeDerivative`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L78).
 
 > A function δL(t, q, dₜ q) is a total time derivative if it can be written as d/dt F(r, t)
 >     for some function F that depends on position and time but not velocity,
@@ -68,7 +68,7 @@ def IsTotalTimeDerivative
     (δL : Time → X → X → ℝ) : Prop
 ```
 
-**`ClassicalMechanics.Lagrangian.isTotalTimeDerivative_explicit`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L91).
+**`ClassicalMechanics.Lagrangian.isTotalTimeDerivative_explicit`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L91).
 
 > Explicit reformulation (by the chain rule):
 > δL(t, q, dₜ q) = ∂F/∂t(t, q) + ⟨∇ᵣF(t, q), dₜ q⟩
@@ -83,7 +83,7 @@ lemma isTotalTimeDerivative_explicit {δL : Time → X → X → ℝ} :
     ∀ t q v, δL t q v = fderiv ℝ ↿F (t, q) ((1 : Time), v))
 ```
 
-**`ClassicalMechanics.Lagrangian.isTotalTimeDerivative_neg`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L191).
+**`ClassicalMechanics.Lagrangian.isTotalTimeDerivative_neg`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L191).
 
 > Elementary fact: if δL is a time derivative, then so is -δL.
 
@@ -92,7 +92,7 @@ lemma isTotalTimeDerivative_neg {δL : Time → X → X → ℝ} (h :  IsTotalTi
     IsTotalTimeDerivative (- δL)
 ```
 
-**`ClassicalMechanics.Lagrangian.totalTimeDerivative_contDiff`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L209).
+**`ClassicalMechanics.Lagrangian.totalTimeDerivative_contDiff`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L209).
 
 > If δL is a total time derivative (of a smooth function), then it is smooth
 
@@ -108,7 +108,7 @@ lemma totalTimeDerivative_contDiff {δL : Time → X → X → ℝ} (h : IsTotal
 >   ∫d/dt F(t, q)= F(t₁,q₁) - F(t₀,q₀)
 >   is fixed by the boundary conditions.
 
-**`ClassicalMechanics.Lagrangian.totalTimeDerivative_hasZeroVarGradient`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L240).
+**`ClassicalMechanics.Lagrangian.totalTimeDerivative_hasZeroVarGradient`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L240).
 
 > Total time derivative has a variational derivative, which is zero
 
@@ -118,7 +118,7 @@ lemma totalTimeDerivative_hasZeroVarGradient [CompleteSpace X] {δL : Time → X
      HasVarGradientAt (fun q' t => δL t (q' t) (∂ₜ q' t)) (fun _ => 0) q
 ```
 
-**`ClassicalMechanics.Lagrangian.totalTimeDerivative_hasVarGradientAt_equivalence`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L272).
+**`ClassicalMechanics.Lagrangian.totalTimeDerivative_hasVarGradientAt_equivalence`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L272).
 
 > If two lagrangians, L and L', differ by a total time derivative, and L has a variational derivative
 > grad, then so does L'.
@@ -131,7 +131,7 @@ lemma totalTimeDerivative_hasVarGradientAt_equivalence [CompleteSpace X] (L δL 
     HasVarGradientAt (fun q' t => (L + δL) t (q' t) (fderiv ℝ q' t 1)) grad q
 ```
 
-**`ClassicalMechanics.Lagrangian.totalTimeDerivative_varGradient_equivalenvce`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L291).
+**`ClassicalMechanics.Lagrangian.totalTimeDerivative_varGradient_equivalenvce`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L291).
 
 ```lean
 lemma totalTimeDerivative_varGradient_equivalenvce [CompleteSpace X] (L L' : Time → X → X → ℝ)
@@ -141,7 +141,7 @@ lemma totalTimeDerivative_varGradient_equivalenvce [CompleteSpace X] (L L' : Tim
        (δ (q':=q), ∫ t, L t (q' t) (fderiv ℝ q' t 1))
 ```
 
-**`ClassicalMechanics.Lagrangian.totalTimeDerivative_eulerLagrange_equivalenvce`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L326).
+**`ClassicalMechanics.Lagrangian.totalTimeDerivative_eulerLagrange_equivalenvce`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L326).
 
 > Corollary: If L and L' differ by a total time derivative, then the corresponding Euler-Lagrange
 > operators coincide
@@ -156,7 +156,7 @@ lemma totalTimeDerivative_eulerLagrange_equivalenvce [CompleteSpace X] (L L' : T
 
 > When δL depends only on velocity (the free particle case), the condition simplifies.
 
-**`ClassicalMechanics.Lagrangian.isTotalTimeDerivativeVelocity`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L383).
+**`ClassicalMechanics.Lagrangian.isTotalTimeDerivativeVelocity`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean#L383).
 
 > A velocity-only function that is a total time derivative must be linear in velocity.
 >
@@ -185,4 +185,4 @@ lemma isTotalTimeDerivativeVelocity  [CompleteSpace X]
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean)
+- [Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean)

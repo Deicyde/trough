@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "Physlib/CondensedMatter/BandTheory/Basic.lean",
@@ -661,6 +661,468 @@
      "line": 211,
      "doc": "The automorphism group of the underlying graph, without requiring crystal symmetry.",
      "statement": "def graphAutomorphisms (g : PeriodicGraph C) : Subgroup (Equiv.Perm C.Site)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Symmetry/Basic.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Symmetry.Basic",
+   "title": "Symmetries of a crystal",
+   "doc": "The operations that leave a crystal unchanged form its symmetry group.\n\n## i. Overview\n\nA crystal looks the same after certain operations, its symmetries. The simplest are\ntranslations by lattice vectors. Other symmetries rotate or reflect the lattice, or exchange\nsites within a unit cell. In graphene, inversion through the centre of a bond exchanges the\ntwo carbon atoms of a unit cell.\n\nA symmetry permutes the sites and transforms the lattice vectors by an automorphism `A` of the\ntranslation group, so that\n\n`φ (a +ᵥ x) = A a +ᵥ φ x`.\n\nThe same `A` applies everywhere in the crystal. For example, a quarter turn of a square lattice\nsends a step to the right to a step upwards.\n\nWith one site per cell the symmetries are the affine equivalences of the sites. With several\nsites per cell a symmetry may also exchange the sites within a cell. The definition captures the\nperiodic structure alone. It does not require symmetries to preserve distances, bonds or atomic\nspecies.\n\nLattice translations form a normal subgroup of the symmetry group.\n\n## ii. Key results\n\n- `Crystal.Symmetry` : a permutation of sites compatible with lattice translations.\n- `Crystal.Symmetry.latticeAut` : the induced automorphism of the translation group.\n- `Crystal.Symmetry.conj_translation` : conjugation transforms a translation by `a` into one\n  by `latticeAut a`.\n- `Crystal.Symmetry.translations` : the normal subgroup of lattice translations.\n\n## iii. Table of contents\n\n- A. Crystal symmetries\n- B. The symmetry group\n  - B.1. Composition and inverses\n  - B.2. Actions on sites and lattice vectors\n- C. Lattice translations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 66,
+     "text": "## A. Crystal symmetries"
+    },
+    {
+     "line": 114,
+     "text": "## B. The symmetry group"
+    },
+    {
+     "line": 116,
+     "text": "### B.1. Composition and inverses"
+    },
+    {
+     "line": 141,
+     "text": "### B.2. Actions on sites and lattice vectors"
+    },
+    {
+     "line": 168,
+     "text": "## C. Lattice translations"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry",
+     "kind": "structure",
+     "line": 72,
+     "doc": "A permutation of crystal sites compatible with lattice translations.\n\nThe site permutation `φ` and the automorphism `A = latticeAut` satisfy\n`φ (a +ᵥ x) = A a +ᵥ φ x` for every lattice vector `a` and site `x`.",
+     "statement": "structure Symmetry (C : Crystal G) extends C.Site ≃ C.Site where\n  /-- The automorphism induced on the translation group by the site permutation. -/\n  latticeAut : G ≃+ G\n  /-- Translating a site by `a` translates its image by `latticeAut a`. -/\n  map_vadd' : ∀ (a : G) (x : C.Site), toEquiv (a +ᵥ x) = latticeAut a +ᵥ toEquiv x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_eq_of_toEquiv_eq",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "The action on sites uniquely determines the action on lattice vectors.",
+     "statement": "lemma latticeAut_eq_of_toEquiv_eq {φ ψ : Symmetry C} (h : φ.toEquiv = ψ.toEquiv) :\n    φ.latticeAut = ψ.latticeAut",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 91,
+     "doc": "A crystal symmetry is an equivalence of its sites.",
+     "statement": "instance : EquivLike (Symmetry C) C.Site C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ext",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "Two symmetries are equal if they agree on every site.",
+     "statement": "lemma ext {φ ψ : Symmetry C} (h : ∀ x, φ x = ψ x) : φ = ψ",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.coe_toEquiv",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma coe_toEquiv (φ : Symmetry C) : ⇑φ.toEquiv = φ",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.map_vadd",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "A symmetry maps the translation of a site by `a` to the translation of its image\nby `latticeAut a`.",
+     "statement": "lemma map_vadd (φ : Symmetry C) (a : G) (x : C.Site) : φ (a +ᵥ x) = φ.latticeAut a +ᵥ φ x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 119,
+     "doc": "Crystal symmetries form a group under composition of their site permutations.",
+     "statement": "instance : Group (Symmetry C)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.mul_apply",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "",
+     "statement": "lemma mul_apply (φ ψ : Symmetry C) (x : C.Site) : (φ * ψ) x = φ (ψ x)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.one_apply",
+     "kind": "lemma",
+     "line": 133,
+     "doc": "",
+     "statement": "lemma one_apply (x : C.Site) : (1 : Symmetry C) x = x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.inv_apply_apply",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma inv_apply_apply (φ : Symmetry C) (x : C.Site) : φ⁻¹ (φ x) = x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.apply_inv_apply",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma apply_inv_apply (φ : Symmetry C) (x : C.Site) : φ (φ⁻¹ x) = x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_mul",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma latticeAut_mul (φ ψ : Symmetry C) :\n    (φ * ψ).latticeAut = ψ.latticeAut.trans φ.latticeAut",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_one",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "",
+     "statement": "lemma latticeAut_one : (1 : Symmetry C).latticeAut = AddEquiv.refl G",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_inv",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "",
+     "statement": "lemma latticeAut_inv (φ : Symmetry C) : φ⁻¹.latticeAut = φ.latticeAut.symm",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 151,
+     "doc": "The symmetry group acts on crystal sites by permutations.",
+     "statement": "instance : MulAction (Symmetry C) C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.smul_site",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "",
+     "statement": "lemma smul_site (φ : Symmetry C) (x : C.Site) : φ • x = φ x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 159,
+     "doc": "The symmetry group acts on lattice vectors by automorphisms of the translation group.",
+     "statement": "instance : DistribMulAction (Symmetry C) G",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.smul_vector",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma smul_vector (φ : Symmetry C) (a : G) : φ • a = φ.latticeAut a",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.translationHom",
+     "kind": "def",
+     "line": 171,
+     "doc": "The group homomorphism sending each lattice vector to its translation symmetry.",
+     "statement": "def translationHom (C : Crystal G) : Multiplicative G →* Symmetry C",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.translation",
+     "kind": "def",
+     "line": 178,
+     "doc": "The symmetry that translates every site by the lattice vector `a`.",
+     "statement": "def translation (C : Crystal G) (a : G) : Symmetry C",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.translation_apply",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma translation_apply (a : G) (x : C.Site) : translation C a x = a +ᵥ x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_translation",
+     "kind": "lemma",
+     "line": 183,
+     "doc": "",
+     "statement": "lemma latticeAut_translation (a : G) :\n    (translation C a).latticeAut = AddEquiv.refl G",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.conj_translation",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "Conjugation by `φ` maps the translation by `a` to the translation by `φ.latticeAut a`.",
+     "statement": "lemma conj_translation (φ : Symmetry C) (a : G) :\n    φ * translation C a * φ⁻¹ = translation C (φ.latticeAut a)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.translations",
+     "kind": "def",
+     "line": 193,
+     "doc": "The subgroup consisting of all lattice translations.",
+     "statement": "def translations (C : Crystal G) : Subgroup (Symmetry C)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 195,
+     "doc": "",
+     "statement": "instance : (translations C).Normal",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Symmetry/Decomposition.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Symmetry.Decomposition",
+   "title": "Decomposition of crystal symmetries",
+   "doc": "Every crystal symmetry is a lattice automorphism, a permutation of labels and a shift.\n\n## i. Overview\n\nA symmetry sends all sites with the same label to sites with one common label, so it permutes\nthe labels of the unit cell by a permutation `σ`. It maps the lattice vectors by an automorphism\n`A` and moves the sites with label `j` by a lattice vector `s j`. These three pieces describe its\naction on every site:\n\n`⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩`.\n\nConversely every choice of `A`, `σ` and `s` defines a symmetry. In graphene, shifting only the\ncarbon atoms of one sublattice by a lattice vector is a symmetry with `A = 1` and `σ = 1`. It is\nnot a translation.\n\nComposing two symmetries composes their automorphisms and permutations. The shifts of the second\nsymmetry are transformed by `A` and relabelled by `σ` before they are added. The symmetry group is\ntherefore the semidirect product of the shifts by the lattice automorphisms and label\npermutations.\n\n## ii. Key results\n\n- `Crystal.Symmetry.labelPerm` : the permutation `σ` of the labels of a symmetry.\n- `Crystal.Symmetry.shift` : the shifts `s` of a symmetry.\n- `Crystal.Symmetry.apply_eq` : a symmetry acts as `⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩`.\n- `Crystal.Symmetry.ofParts` : the symmetry built from `A`, `σ` and `s`.\n- `Crystal.Symmetry.semidirectEquiv` : the symmetry group is the semidirect product of the shifts\n  by the lattice automorphisms and label permutations.\n\n## iii. Table of contents\n\n- A. The permutation of labels\n- B. The shifts of a symmetry\n- C. Symmetries from their parts\n- D. The semidirect product\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 66,
+     "text": "## A. The permutation of labels"
+    },
+    {
+     "line": 86,
+     "text": "## B. The shifts of a symmetry"
+    },
+    {
+     "line": 99,
+     "text": "## C. Symmetries from their parts"
+    },
+    {
+     "line": 141,
+     "text": "## D. The semidirect product"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.label_apply",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "The label of an image site depends only on the label of the site.",
+     "statement": "lemma label_apply (φ : Symmetry C) (x : C.Site) :\n    (φ x).label = (φ (Site.ref x.label)).label",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 76,
+     "doc": "Symmetries permute the labels of the unit cell.",
+     "statement": "instance : MulAction (Symmetry C) C.UnitCell",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.labelPerm",
+     "kind": "def",
+     "line": 82,
+     "doc": "The permutation of labels of a symmetry.",
+     "statement": "def labelPerm (φ : Symmetry C) : Equiv.Perm C.UnitCell",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_apply",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma labelPerm_apply (φ : Symmetry C) (i : C.UnitCell) : φ.labelPerm i = φ • i",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.shift",
+     "kind": "def",
+     "line": 90,
+     "doc": "The shift of a symmetry at the label `j`: the cell of the image of the reference site that\nthe symmetry sends to label `j`.",
+     "statement": "def shift (φ : Symmetry C) (j : C.UnitCell) : G",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.apply_eq",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "A symmetry acts as `⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩`.",
+     "statement": "lemma apply_eq (φ : Symmetry C) (x : C.Site) :\n    φ x = ⟨φ.latticeAut x.cell + φ.shift (φ.labelPerm x.label), φ.labelPerm x.label⟩",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ofParts",
+     "kind": "def",
+     "line": 103,
+     "doc": "The symmetry `⟨n, i⟩ ↦ ⟨A n + s (σ i), σ i⟩` with lattice automorphism `A`, label\npermutation `σ` and shifts `s`.",
+     "statement": "def ofParts (C : Crystal G) (A : G ≃+ G) (σ : Equiv.Perm C.UnitCell) (s : C.UnitCell → G) :\n    Symmetry C",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ofParts_apply",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma ofParts_apply (x : C.Site) :\n    ofParts C A σ s x = ⟨A x.cell + s (σ x.label), σ x.label⟩",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.latticeAut_ofParts",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma latticeAut_ofParts : (ofParts C A σ s).latticeAut = A",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.labelPerm_ofParts",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "lemma labelPerm_ofParts : (ofParts C A σ s).labelPerm = σ",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.shift_ofParts",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "",
+     "statement": "lemma shift_ofParts : (ofParts C A σ s).shift = s",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ofParts_eq",
+     "kind": "lemma",
+     "line": 127,
+     "doc": "Every symmetry is built from its lattice automorphism, label permutation and shifts.",
+     "statement": "lemma ofParts_eq (φ : Symmetry C) :\n    ofParts C φ.latticeAut φ.labelPerm φ.shift = φ",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ofParts_mul",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "Composition composes the automorphisms and permutations. The shifts of the second symmetry\nare transformed by `A` and relabelled by `σ`.",
+     "statement": "lemma ofParts_mul :\n    ofParts C A σ s * ofParts C B τ t = ofParts C (B.trans A) (σ * τ) (s + A ∘ t ∘ σ.symm)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.shiftAction",
+     "kind": "def",
+     "line": 144,
+     "doc": "Lattice automorphisms and label permutations act on shifts by `s ↦ A ∘ s ∘ σ⁻¹`.",
+     "statement": "def shiftAction (C : Crystal G) :\n    Multiplicative (AddAut G) × Equiv.Perm C.UnitCell →*\n      MulAut (Multiplicative (C.UnitCell → G))",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.semidirectEquiv",
+     "kind": "def",
+     "line": 153,
+     "doc": "The symmetry group is the semidirect product of the shifts by the lattice automorphisms and\nlabel permutations.",
+     "statement": "def semidirectEquiv (C : Crystal G) :\n    Multiplicative (C.UnitCell → G) ⋊[shiftAction C]\n      (Multiplicative (AddAut G) × Equiv.Perm C.UnitCell) ≃* Symmetry C",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Symmetry/Species.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Symmetry.Species",
+   "title": "Species-preserving crystal symmetries",
+   "doc": "The symmetries of a crystal that keep every atom on a site of its own species.\n\n## i. Overview\n\nA species assignment gives each label of the unit cell a species, for example a chemical\nelement. Graphene and hexagonal boron nitride share the honeycomb lattice with two sites per\ncell. In graphene both sites carry carbon and the inversion through the centre of a bond\nexchanges them. In boron nitride one site carries boron and the other nitrogen. The same\ninversion would put boron where nitrogen was, so it is no longer a symmetry.\n\nA symmetry acts on species assignments by relabelling. The symmetries preserving an assignment\n`q` form its stabilizer. Only the permutation `σ` of the labels matters: a symmetry preserves `q`\nexactly when `q ∘ σ = q`. Lattice automorphisms and shifts are unrestricted. A single species\nallows every symmetry. Distinct species on all labels allow exactly the symmetries that fix\nevery label.\n\n## ii. Key results\n\n- `Crystal.Symmetry.speciesGroup` : the symmetries preserving a species assignment.\n- `Crystal.Symmetry.mem_speciesGroup_iff` : a symmetry preserves `q` exactly when `q ∘ σ = q`.\n- `Crystal.Symmetry.speciesGroup_eq_ker_of_injective` : distinct species allow exactly the\n  symmetries that fix every label.\n\n## iii. Table of contents\n\n- A. The species group\n- B. Uniform and distinct species\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## A. The species group"
+    },
+    {
+     "line": 83,
+     "text": "## B. Uniform and distinct species"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 60,
+     "doc": "A symmetry carries the species of each label to the image label: `(φ • q) (σ i) = q i`.",
+     "statement": "local instance : MulAction (Symmetry C) (Species C Q)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.speciesGroup",
+     "kind": "def",
+     "line": 63,
+     "doc": "The symmetries preserving the species assignment `q`.",
+     "statement": "def speciesGroup (q : Species C Q) : Subgroup (Symmetry C)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.mem_speciesGroup_iff",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "A symmetry preserves `q` exactly when its label permutation `σ` satisfies `q ∘ σ = q`.",
+     "statement": "lemma mem_speciesGroup_iff {q : Species C Q} : φ ∈ speciesGroup q ↔ q ∘ φ.labelPerm = q",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.ofParts_mem_speciesGroup_iff",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "A symmetry built from `A`, `σ` and `s` preserves `q` exactly when `q ∘ σ = q`.",
+     "statement": "lemma ofParts_mem_speciesGroup_iff {q : Species C Q} (A : G ≃+ G) (σ : Equiv.Perm C.UnitCell)\n    (s : C.UnitCell → G) : ofParts C A σ s ∈ speciesGroup q ↔ q ∘ σ = q",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.translations_le_speciesGroup",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Every lattice translation preserves every species assignment.",
+     "statement": "lemma translations_le_speciesGroup (q : Species C Q) : translations C ≤ speciesGroup q",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.speciesGroup_const",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "A single species allows every symmetry.",
+     "statement": "lemma speciesGroup_const (c : Q) : speciesGroup (C := C) (Function.const _ c) = ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Symmetry.speciesGroup_eq_ker_of_injective",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "Distinct species on all labels allow exactly the symmetries that fix every label.",
+     "statement": "lemma speciesGroup_eq_ker_of_injective {q : Species C Q} (hq : Function.Injective q) :\n    speciesGroup q = (MulAction.toPermHom (Symmetry C) C.UnitCell).ker",
      "sorry": false
     }
    ],

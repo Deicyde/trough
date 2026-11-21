@@ -1,6 +1,6 @@
 # Number theory
 
-The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 68 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 71 articles, one per card.
 
 ## [A 4AP-free permutation of the… to Every Pisot number is a…](part-01/README.md)
 
@@ -48,7 +48,7 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Markoff mod p](part-02/markoff-modp.md)
 - [Minimum modulus for the unique multiset-sum problem](part-02/min-modulus-unique-multiset-sum.md)
 
-## [Modular forms and the… to Simple zeros of the Riemann…](part-03/README.md)
+## [Modular forms and the… to Sharp Five-Distance and…](part-03/README.md)
 
 - [Modular forms and the generalized residue theorem](part-03/leanmodularforms.md)
 - [Nair–Tenenbaum short sums of arithmetic functions](part-03/nair-tenenbaum-short-sums.md)
@@ -65,14 +65,16 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Primitive Sets Above x (Erdos Problem 1196)](part-03/erdos1196.md)
 - [Quadratic-order prime classification](part-03/singular-moduli.md)
 - [The Ramanujan-Nagell theorem](part-03/ramanujan-nagell.md)
+- [Roy's strong six exponentials theorem](part-03/roy-strong-six.md)
 - [Selberg Sieve](part-03/selberg-sieve4.md)
 - [Serre's mass formula for totally ramified local-field extensions](part-03/serre-mass-formula.md)
 - [Sharp asymptotic bounds for runs of multiples in finite sets](part-03/runs-of-multiples.md)
 - [Sharp Five-Distance and Sup-Norm Gap Theorems](part-03/five-distance-sharp.md)
-- [Simple zeros of the Riemann zeta function](part-03/zeta-zeros.md)
 
-## [Square-difference-free… to Weierstrass models and singular…](part-04/README.md)
+## [Siegel's lower bound for real… to Weierstrass models and singular…](part-04/README.md)
 
+- [Siegel's lower bound for real Dirichlet L-functions](part-04/siegel.md)
+- [Simple zeros of the Riemann zeta function](part-04/zeta-zeros.md)
 - [Square-difference-free polynomials beyond Naslund's conjectured bound](part-04/naslund-counterexample.md)
 - [Sum of sets in several dimensions](part-04/sum-of-sets-in-several-dimensions.md)
 - [Sums of Distinct Factorials That Are Powers of Two (Erdos Problem 403)](part-04/erdos403.md)
@@ -80,4 +82,5 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Thakur's hypotheses on power sums of F_q\[t\]](part-04/zeta-h123.md)
 - [The Three-Gap (Steinhaus) Theorem](part-04/three-gap-theorem.md)
 - [The transcendence of π](part-04/istranscendentalpi.md)
+- [Verified bounded-height rational-point search on hyperelliptic curves](part-04/ratpoints.md)
 - [Weierstrass models and singular points for Tate's algorithm](part-04/ec-tate-lean.md)

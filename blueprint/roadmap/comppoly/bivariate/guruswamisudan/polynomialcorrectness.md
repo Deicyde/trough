@@ -7,12 +7,12 @@ proof: formalized
 
 # Guruswami-Sudan Polynomial Correctness Lemmas
 
-`CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness`, in [CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean), by Valerii Huhnin.
 
 > Correctness lemmas for dense bivariate coefficient assembly, weighted-degree
 > enumeration, and executable Hasse derivatives.
 
-`CompPoly.CPolynomial.natDegree_mem_support_of_nonzero` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L29))
+`CompPoly.CPolynomial.natDegree_mem_support_of_nonzero` (theorem, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L29))
 
 > The natural degree of a nonzero computable polynomial lies in its support.
 
@@ -21,7 +21,7 @@ theorem natDegree_mem_support_of_nonzero {R : Type*} [Zero R] [BEq R] [LawfulBEq
     {p : CPolynomial R} (hp : p ≠ 0) : p.natDegree ∈ p.support
 ```
 
-`CompPoly.DenseMatrix.get_ofFn` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L42))
+`CompPoly.DenseMatrix.get_ofFn` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L42))
 
 > Reading an in-bounds entry from a matrix constructed by `ofFn` returns that entry.
 
@@ -31,7 +31,7 @@ theorem get_ofFn [Zero F] (rows cols : Nat) (f : Nat → Nat → F)
     (ofFn rows cols f).get row col = f row col
 ```
 
-`CompPoly.DenseMatrix.foldl_range_one_special` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L62))
+`CompPoly.DenseMatrix.foldl_range_one_special` (theorem, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L62))
 
 > Fold over a range with one distinguished nonzero entry.
 
@@ -42,7 +42,7 @@ theorem foldl_range_one_special {F : Type*} [AddCommMonoid F] {pivot : Nat} (x :
       init + if start ≤ pivot ∧ pivot < start + len then x else 0
 ```
 
-`CompPoly.DenseMatrix.foldl_range_single_index` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L92))
+`CompPoly.DenseMatrix.foldl_range_single_index` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L92))
 
 > A range fold with a single distinguished index.
 
@@ -52,7 +52,7 @@ theorem foldl_range_single_index {F : Type*} [AddCommMonoid F] {n k : Nat}
     (List.range' 0 n).foldl (fun acc j ↦ acc + if j = k then x else 0) 0 = x
 ```
 
-`CompPoly.DenseMatrix.foldl_range_eq_zero_of_zero` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L100))
+`CompPoly.DenseMatrix.foldl_range_eq_zero_of_zero` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L100))
 
 > A range fold with identically zero contributions is zero.
 
@@ -62,7 +62,7 @@ theorem foldl_range_eq_zero_of_zero {F : Type*} [AddMonoid F] {n : Nat} {f : Nat
     (List.range' 0 n).foldl (fun acc c ↦ acc + f c) 0 = 0
 ```
 
-`CompPoly.CBivariate.coeff_zero` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L128))
+`CompPoly.CBivariate.coeff_zero` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L128))
 
 > All bivariate coefficients of zero are zero.
 
@@ -72,7 +72,7 @@ theorem coeff_zero {R : Type*}
     coeff (0 : CBivariate R) i j = 0
 ```
 
-`CompPoly.CBivariate.coeff_eq_zero_of_y_size_le` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L137))
+`CompPoly.CBivariate.coeff_eq_zero_of_y_size_le` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L137))
 
 > Bivariate coefficients past the stored outer array are zero.
 
@@ -81,7 +81,7 @@ theorem coeff_eq_zero_of_y_size_le {R : Type*} [Zero R] (Q : CBivariate R)
     {i j : Nat} (hj : Q.val.size ≤ j) : coeff Q i j = 0
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs_coeff` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L145))
+`CompPoly.CBivariate.ofMonomialCoeffs_coeff` (theorem, [line 145](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L145))
 
 > Coefficients of a polynomial assembled from a monomial array are the folded
 > sum of matching monomial coefficients.
@@ -99,7 +99,7 @@ theorem ofMonomialCoeffs_coeff {R : Type*}
         0
 ```
 
-`CompPoly.CBivariate.monomialGrid_nodup` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L183))
+`CompPoly.CBivariate.monomialGrid_nodup` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L183))
 
 > The executable monomial grid has no duplicate exponent pairs.
 
@@ -107,7 +107,7 @@ theorem ofMonomialCoeffs_coeff {R : Type*}
 theorem monomialGrid_nodup (bound : Nat) : (monomialGrid bound).Nodup
 ```
 
-`CompPoly.CBivariate.monomialsWeightedDegreeLE_nodup` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L201))
+`CompPoly.CBivariate.monomialsWeightedDegreeLE_nodup` (theorem, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L201))
 
 > Weighted-degree monomial enumeration has no duplicate exponent pairs.
 
@@ -116,7 +116,7 @@ theorem monomialsWeightedDegreeLE_nodup (xWeight yWeight bound : Nat) :
     (monomialsWeightedDegreeLE xWeight yWeight bound).toList.Nodup
 ```
 
-`CompPoly.CBivariate.monomialsWeightedDegreeLE_sound` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L208))
+`CompPoly.CBivariate.monomialsWeightedDegreeLE_sound` (theorem, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L208))
 
 > All returned weighted-degree monomials satisfy the requested bound.
 
@@ -127,7 +127,7 @@ theorem monomialsWeightedDegreeLE_sound
     xWeight * m.xDegree + yWeight * m.yDegree ≤ bound
 ```
 
-`CompPoly.CBivariate.array_getD_inj_of_nodup` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L216))
+`CompPoly.CBivariate.array_getD_inj_of_nodup` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L216))
 
 > In a nodup array, equal in-bounds `getD` entries have equal indices.
 
@@ -138,7 +138,7 @@ theorem array_getD_inj_of_nodup {α : Type*} [DecidableEq α] {xs : Array α}
     (h : xs.getD i default = xs.getD j default) : i = j
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs_coeff_getD` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L232))
+`CompPoly.CBivariate.ofMonomialCoeffs_coeff_getD` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L232))
 
 > For a nodup monomial array, the assembled polynomial recovers the matching
 > coefficient at each listed monomial.
@@ -153,7 +153,7 @@ theorem ofMonomialCoeffs_coeff_getD {R : Type*}
       coeffs.getD k 0
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs_ne_zero_of_coeff_getD_ne_zero` (theorem, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L302))
+`CompPoly.CBivariate.ofMonomialCoeffs_ne_zero_of_coeff_getD_ne_zero` (theorem, [line 302](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L302))
 
 > A nonzero coefficient at a listed monomial makes the assembled bivariate
 > polynomial nonzero.
@@ -167,7 +167,7 @@ theorem ofMonomialCoeffs_ne_zero_of_coeff_getD_ne_zero {R : Type*}
     ofMonomialCoeffs monomials coeffs ≠ 0
 ```
 
-`CompPoly.CBivariate.natWeightedDegree_le_of_coeff_zero` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L322))
+`CompPoly.CBivariate.natWeightedDegree_le_of_coeff_zero` (theorem, [line 322](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L322))
 
 > If all coefficients above a weighted-degree bound are zero, the executable
 > weighted degree is below that bound.
@@ -179,7 +179,7 @@ theorem natWeightedDegree_le_of_coeff_zero {R : Type*} [Zero R] [BEq R] [LawfulB
     natWeightedDegree f u v ≤ bound
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs_coeff_eq_zero_of_weight_gt` (theorem, [line 344](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L344))
+`CompPoly.CBivariate.ofMonomialCoeffs_coeff_eq_zero_of_weight_gt` (theorem, [line 344](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L344))
 
 > Coefficients above a bound are zero for a polynomial assembled from monomials
 > all below that bound.
@@ -194,7 +194,7 @@ theorem ofMonomialCoeffs_coeff_eq_zero_of_weight_gt {R : Type*}
     coeff (ofMonomialCoeffs monomials coeffs) i j = 0
 ```
 
-`CompPoly.CBivariate.ofMonomialCoeffs_natWeightedDegree_le` (theorem, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L371))
+`CompPoly.CBivariate.ofMonomialCoeffs_natWeightedDegree_le` (theorem, [line 371](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L371))
 
 > A polynomial assembled from bounded monomials has weighted degree below the
 > same bound.
@@ -208,7 +208,7 @@ theorem ofMonomialCoeffs_natWeightedDegree_le {R : Type*}
     natWeightedDegree (ofMonomialCoeffs monomials coeffs) u v ≤ bound
 ```
 
-`CompPoly.CBivariate.hasseDerivativeFromTerms_coeff` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L383))
+`CompPoly.CBivariate.hasseDerivativeFromTerms_coeff` (theorem, [line 383](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L383))
 
 > Coefficients of a polynomial materialized from Hasse terms are the folded
 > sum of matching term coefficients.
@@ -223,7 +223,7 @@ theorem hasseDerivativeFromTerms_coeff {R : Type*}
         0
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEvalFromTerms_append_single` (theorem, [line 411](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L411))
+`CompPoly.CBivariate.hasseDerivativeEvalFromTerms_append_single` (theorem, [line 411](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L411))
 
 > Evaluating after appending one Hasse term adds that term's contribution.
 
@@ -235,7 +235,7 @@ theorem hasseDerivativeEvalFromTerms_append_single {R : Type*} [Semiring R]
         term.coeff * x ^ term.xDegree * y ^ term.yDegree
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTermList_coeff_fold` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L421))
+`CompPoly.CBivariate.hasseDerivativeTermList_coeff_fold` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L421))
 
 > The fixed coefficient of the executable Hasse term list is the matching
 > coefficient fold over the same degree ranges.
@@ -263,7 +263,7 @@ theorem hasseDerivativeTermList_coeff_fold {R : Type*} [Semiring R]
         0
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTermList_coeff_inner_fold` (theorem, [line 534](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L534))
+`CompPoly.CBivariate.hasseDerivativeTermList_coeff_inner_fold` (theorem, [line 534](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L534))
 
 > Collapse the inner `x`-fold in a fixed Hasse coefficient calculation.
 
@@ -285,7 +285,7 @@ theorem hasseDerivativeTermList_coeff_inner_fold {R : Type*} [Semiring R]
         else 0
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTermList_coeff_value` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L627))
+`CompPoly.CBivariate.hasseDerivativeTermList_coeff_value` (theorem, [line 627](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L627))
 
 > The fixed coefficient of the executable Hasse term list has the closed
 > coefficient-shift formula.
@@ -300,7 +300,7 @@ theorem hasseDerivativeTermList_coeff_value {R : Type*} [Semiring R]
         coeff Q (i + a) (j + b)
 ```
 
-`CompPoly.CBivariate.hasseDerivative_coeff` (theorem, [line 698](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L698))
+`CompPoly.CBivariate.hasseDerivative_coeff` (theorem, [line 698](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L698))
 
 > Coefficients of the executable Hasse derivative are shifted source
 > coefficients scaled by the corresponding binomial factors.
@@ -314,7 +314,7 @@ theorem hasseDerivative_coeff {R : Type*}
         coeff Q (i + a) (j + b)
 ```
 
-`CompPoly.CBivariate.hasseDerivative_add` (theorem, [line 709](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L709))
+`CompPoly.CBivariate.hasseDerivative_add` (theorem, [line 709](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L709))
 
 > Hasse derivatives are additive.
 
@@ -325,7 +325,7 @@ theorem hasseDerivative_add {R : Type*}
     hasseDerivative a b (P + Q) = hasseDerivative a b P + hasseDerivative a b Q
 ```
 
-`CompPoly.CBivariate.hasseDerivative_zero` (theorem, [line 722](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L722))
+`CompPoly.CBivariate.hasseDerivative_zero` (theorem, [line 722](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L722))
 
 > The Hasse derivative of zero is zero.
 
@@ -336,7 +336,7 @@ theorem hasseDerivative_zero {R : Type*}
     hasseDerivative a b (0 : CBivariate R) = 0
 ```
 
-`CompPoly.CBivariate.hasseDerivative_monomialXY` (theorem, [line 732](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L732))
+`CompPoly.CBivariate.hasseDerivative_monomialXY` (theorem, [line 732](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L732))
 
 > Hasse derivative of a single bivariate monomial.
 
@@ -351,7 +351,7 @@ theorem hasseDerivative_monomialXY {R : Type*}
       else 0
 ```
 
-`CompPoly.CBivariate.evalEval_add` (theorem, [line 768](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L768))
+`CompPoly.CBivariate.evalEval_add` (theorem, [line 768](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L768))
 
 > Full evaluation is additive.
 
@@ -362,7 +362,7 @@ theorem evalEval_add {R : Type*}
     evalEval x y (P + Q) = evalEval x y P + evalEval x y Q
 ```
 
-`CompPoly.CBivariate.evalEval_zero` (theorem, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L776))
+`CompPoly.CBivariate.evalEval_zero` (theorem, [line 776](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L776))
 
 > Full evaluation of zero is zero.
 
@@ -372,7 +372,7 @@ theorem evalEval_zero {R : Type*}
     (x y : R) : evalEval x y (0 : CBivariate R) = 0
 ```
 
-`CompPoly.CBivariate.evalEval_monomialXY` (theorem, [line 783](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L783))
+`CompPoly.CBivariate.evalEval_monomialXY` (theorem, [line 783](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L783))
 
 > Full evaluation of a bivariate monomial has the expected closed form.
 
@@ -383,7 +383,7 @@ theorem evalEval_monomialXY {R : Type*}
     evalEval x y (monomialXY n m c) = c * x ^ n * y ^ m
 ```
 
-`CompPoly.CBivariate.hasseDerivativeTerms_eval_aux` (theorem, [line 791](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L791))
+`CompPoly.CBivariate.hasseDerivativeTerms_eval_aux` (theorem, [line 791](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L791))
 
 > Evaluating the materialized derivative-term fold matches the direct scalar fold.
 
@@ -398,7 +398,7 @@ theorem hasseDerivativeTerms_eval_aux {R : Type*}
       (evalEval x y acc)
 ```
 
-`CompPoly.CBivariate.hasseDerivativeFromTerms_eval` (theorem, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L808))
+`CompPoly.CBivariate.hasseDerivativeFromTerms_eval` (theorem, [line 808](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L808))
 
 > Evaluating a materialized derivative-term polynomial matches direct term evaluation.
 
@@ -410,7 +410,7 @@ theorem hasseDerivativeFromTerms_eval {R : Type*}
       hasseDerivativeEvalFromTerms terms x y
 ```
 
-`CompPoly.CBivariate.hasseDerivative_eval_eq_eval` (theorem, [line 818](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L818))
+`CompPoly.CBivariate.hasseDerivative_eval_eq_eval` (theorem, [line 818](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L818))
 
 > Correctness of executable Hasse derivative evaluation.
 
@@ -421,7 +421,7 @@ theorem hasseDerivative_eval_eq_eval {R : Type*}
     evalEval x y (hasseDerivative a b Q) = hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.eval_hasseDeriv_eval_hasseDeriv_toPoly` (theorem, [line 936](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L936))
+`CompPoly.CBivariate.eval_hasseDeriv_eval_hasseDeriv_toPoly` (theorem, [line 936](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L936))
 
 > Evaluating the univariate `X`-Hasse derivative of the evaluated `Y`-Hasse
 > derivative matches the executable bivariate Hasse derivative.
@@ -435,7 +435,7 @@ theorem eval_hasseDeriv_eval_hasseDeriv_toPoly {F : Type*}
       CBivariate.hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.coeff_shiftC_eq_hasseDerivativeEval` (theorem, [line 950](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L950))
+`CompPoly.CBivariate.coeff_shiftC_eq_hasseDerivativeEval` (theorem, [line 950](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L950))
 
 > The coefficient of the generic Taylor shift is the direct Hasse derivative
 > evaluation at the shift point.
@@ -448,7 +448,7 @@ theorem coeff_shiftC_eq_hasseDerivativeEval {F : Type*}
       CBivariate.hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.hasMultiplicity_iff_hasMultiplicityAtLeast` (theorem, [line 968](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L968))
+`CompPoly.CBivariate.hasMultiplicity_iff_hasMultiplicityAtLeast` (theorem, [line 968](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L968))
 
 > The generic multiplicity predicate agrees with the direct GS Hasse
 > multiplicity predicate.
@@ -461,7 +461,7 @@ theorem hasMultiplicity_iff_hasMultiplicityAtLeast {F : Type*}
       CBivariate.HasMultiplicityAtLeast Q x y r
 ```
 
-`CompPoly.CBivariate.satisfiesMultiplicityConstraints_iff_hasMultiplicity` (theorem, [line 984](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L984))
+`CompPoly.CBivariate.satisfiesMultiplicityConstraints_iff_hasMultiplicity` (theorem, [line 984](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L984))
 
 > The GS batch Hasse predicate agrees with the generic multiplicity
 > predicate over every packed point.
@@ -475,7 +475,7 @@ theorem satisfiesMultiplicityConstraints_iff_hasMultiplicity {F : Type*}
         CBivariate.hasMultiplicity Q r point.1 point.2
 ```
 
-`CompPoly.CBivariate.multiplicityAtLeastBool_iff_hasMultiplicity` (theorem, [line 1001](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1001))
+`CompPoly.CBivariate.multiplicityAtLeastBool_iff_hasMultiplicity` (theorem, [line 1001](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1001))
 
 > The executable GS point checker agrees with the generic multiplicity
 > predicate.
@@ -488,7 +488,7 @@ theorem multiplicityAtLeastBool_iff_hasMultiplicity {F : Type*}
       CBivariate.hasMultiplicity Q r x y
 ```
 
-`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool_iff_hasMultiplicity` (theorem, [line 1030](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1030))
+`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool_iff_hasMultiplicity` (theorem, [line 1030](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1030))
 
 > The executable GS batch checker agrees with the generic multiplicity
 > predicate over every packed point.
@@ -502,7 +502,7 @@ theorem satisfiesMultiplicityConstraintsBool_iff_hasMultiplicity {F : Type*}
         CBivariate.hasMultiplicity Q r point.1 point.2
 ```
 
-`CompPoly.CBivariate.multiplicityAtLeastBool_iff_checkMultiplicity` (theorem, [line 1054](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1054))
+`CompPoly.CBivariate.multiplicityAtLeastBool_iff_checkMultiplicity` (theorem, [line 1054](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1054))
 
 > The executable GS point checker agrees with the generic boolean
 > checker.
@@ -515,7 +515,7 @@ theorem multiplicityAtLeastBool_iff_checkMultiplicity {F : Type*}
       CBivariate.checkMultiplicity Q r x y = true
 ```
 
-`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool_iff_checkMultiplicity` (theorem, [line 1063](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1063))
+`CompPoly.CBivariate.satisfiesMultiplicityConstraintsBool_iff_checkMultiplicity` (theorem, [line 1063](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1063))
 
 > The executable GS batch checker agrees pointwise with the generic
 > boolean checker over the packed point array.
@@ -529,7 +529,7 @@ theorem satisfiesMultiplicityConstraintsBool_iff_checkMultiplicity {F : Type*}
         CBivariate.checkMultiplicity Q r point.1 point.2 = true
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_add` (theorem, [line 1077](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1077))
+`CompPoly.CBivariate.hasseDerivativeEval_add` (theorem, [line 1077](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1077))
 
 > Direct Hasse evaluation is additive in the input polynomial.
 
@@ -541,7 +541,7 @@ theorem hasseDerivativeEval_add {R : Type*}
       hasseDerivativeEval a b x y P + hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_zero` (theorem, [line 1088](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1088))
+`CompPoly.CBivariate.hasseDerivativeEval_zero` (theorem, [line 1088](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean#L1088))
 
 > Direct Hasse evaluation of zero is zero.
 
@@ -560,5 +560,5 @@ theorem hasseDerivativeEval_zero {R : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/PolynomialCorrectness.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.PolynomialCorrectness.json)

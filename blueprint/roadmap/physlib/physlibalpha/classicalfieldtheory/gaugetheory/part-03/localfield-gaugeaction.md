@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet gauge action on the local field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean): 20 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean): 20 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeAction
 
 ## A. The gauge assignment of a jet
 
-**`GaugeFieldData.gaugeConnection`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L62).
+**`GaugeFieldData.gaugeConnection`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L62).
 
 > The connection generators after the action of a jet: the gauge-only action on the
 > degree-one element, included into the local field algebra.
@@ -45,7 +45,7 @@ noncomputable def gaugeConnection (U : GJ) :
     GaugeBoson.JetComponentSpace 𝔤 →ₗ[ℝ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.gaugeAssignment`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L74).
+**`GaugeFieldData.gaugeAssignment`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L74).
 
 > The assignment of the generators defining the action of a jet: each matter species
 > acts on its own component functions, the connection generators through the gauge-only
@@ -58,7 +58,7 @@ noncomputable def gaugeAssignment (U : GJ) : T.Assignment T.LocalFieldAlgebra
 
 ## B. The action of a jet
 
-**`GaugeFieldData.repJetAlgHom`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L94).
+**`GaugeFieldData.repJetAlgHom`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L94).
 
 > The action of a jet on the local field algebra, as an algebra endomorphism: the lift
 > of its gauge assignment.
@@ -67,7 +67,7 @@ noncomputable def gaugeAssignment (U : GJ) : T.Assignment T.LocalFieldAlgebra
 noncomputable def repJetAlgHom (U : GJ) : T.LocalFieldAlgebra →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repJetAlgHom_ιFermion`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L100).
+**`GaugeFieldData.repJetAlgHom_ιFermion`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L100).
 
 ```lean
 lemma repJetAlgHom_ιFermion (U : GJ) (i : T.FermionSpecies)
@@ -76,14 +76,14 @@ lemma repJetAlgHom_ιFermion (U : GJ) (i : T.FermionSpecies)
       = T.ιFermion i (JetComponentSpace.repJet (T.fermion i) U x)
 ```
 
-**`GaugeFieldData.repJetAlgHom_ιBoson`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L107).
+**`GaugeFieldData.repJetAlgHom_ιBoson`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L107).
 
 ```lean
 lemma repJetAlgHom_ιBoson (U : GJ) (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
     T.repJetAlgHom U (T.ιBoson j y) = T.ιBoson j (JetComponentSpace.repJet (T.boson j) U y)
 ```
 
-**`GaugeFieldData.repJetAlgHom_ιConnection`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L112).
+**`GaugeFieldData.repJetAlgHom_ιConnection`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L112).
 
 ```lean
 lemma repJetAlgHom_ιConnection (U : GJ) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -94,7 +94,7 @@ lemma repJetAlgHom_ιConnection (U : GJ) (v : GaugeBoson.JetComponentSpace 𝔤)
 
 ## C. The action on the connection factor
 
-**`GaugeFieldData.repJetAlgHom_comp_includeConnection`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L128).
+**`GaugeFieldData.repJetAlgHom_comp_includeConnection`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L128).
 
 > The action of a jet restricts to the complexified gauge-only action on the connection
 > factor, as an equation of algebra maps out of the complexified gauge-only algebra: it is
@@ -107,7 +107,7 @@ lemma repJetAlgHom_comp_includeConnection (U : GJ) :
       = T.includeConnection.comp (LocalGaugeFieldAlgebra.complexRepJetAlgHom jets U)
 ```
 
-**`GaugeFieldData.repJetAlgHom_includeConnection`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L138).
+**`GaugeFieldData.repJetAlgHom_includeConnection`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L138).
 
 > The action of a jet restricts to the complexified gauge-only action on the connection
 > factor.
@@ -118,7 +118,7 @@ lemma repJetAlgHom_includeConnection (U : GJ) (y : ℂ ⊗[ℝ] LocalGaugeFieldA
       = T.includeConnection (LocalGaugeFieldAlgebra.complexRepJet jets U y)
 ```
 
-**`GaugeFieldData.repJetAlgHom_includeConnection_one_tmul`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L145).
+**`GaugeFieldData.repJetAlgHom_includeConnection_one_tmul`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L145).
 
 > On the real gauge-only algebra, included, a jet acts through the gauge-only action.
 
@@ -130,7 +130,7 @@ lemma repJetAlgHom_includeConnection_one_tmul (U : GJ) (x : LocalGaugeFieldAlgeb
 
 ## D. The representation
 
-**`GaugeFieldData.repJetAlgHom_one`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L157).
+**`GaugeFieldData.repJetAlgHom_one`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L157).
 
 > The identity jet acts as the identity.
 
@@ -138,7 +138,7 @@ lemma repJetAlgHom_includeConnection_one_tmul (U : GJ) (x : LocalGaugeFieldAlgeb
 lemma repJetAlgHom_one : T.repJetAlgHom 1 = AlgHom.id ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repJetAlgHom_mul`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L165).
+**`GaugeFieldData.repJetAlgHom_mul`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L165).
 
 > The action of a product of jets is the composite of the actions.
 
@@ -147,7 +147,7 @@ lemma repJetAlgHom_mul (U V : GJ) :
     T.repJetAlgHom (U * V) = (T.repJetAlgHom U).comp (T.repJetAlgHom V)
 ```
 
-**`GaugeFieldData.repJet`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L181).
+**`GaugeFieldData.repJet`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L181).
 
 > The action of the jet gauge group on the local field algebra.
 
@@ -155,41 +155,41 @@ lemma repJetAlgHom_mul (U V : GJ) :
 noncomputable def repJet : Representation ℂ GJ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.repJet_apply`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L188).
+**`GaugeFieldData.repJet_apply`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L188).
 
 ```lean
 lemma repJet_apply (U : GJ) (x : T.LocalFieldAlgebra) :
     T.repJet U x = T.repJetAlgHom U x
 ```
 
-**`GaugeFieldData.repJet_apply_mul`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L191).
+**`GaugeFieldData.repJet_apply_mul`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L191).
 
 ```lean
 lemma repJet_apply_mul (U : GJ) (x y : T.LocalFieldAlgebra) :
     T.repJet U (x * y) = T.repJet U x * T.repJet U y
 ```
 
-**`GaugeFieldData.repJet_apply_one`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L195).
+**`GaugeFieldData.repJet_apply_one`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L195).
 
 ```lean
 lemma repJet_apply_one (U : GJ) : T.repJet U (1 : T.LocalFieldAlgebra) = 1
 ```
 
-**`GaugeFieldData.repJet_ιFermion`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L199).
+**`GaugeFieldData.repJet_ιFermion`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L199).
 
 ```lean
 lemma repJet_ιFermion (U : GJ) (i : T.FermionSpecies) (x : JetComponentSpace (T.fermion i)) :
     T.repJet U (T.ιFermion i x) = T.ιFermion i (JetComponentSpace.repJet (T.fermion i) U x)
 ```
 
-**`GaugeFieldData.repJet_ιBoson`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L204).
+**`GaugeFieldData.repJet_ιBoson`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L204).
 
 ```lean
 lemma repJet_ιBoson (U : GJ) (j : T.BosonSpecies) (y : JetComponentSpace (T.boson j)) :
     T.repJet U (T.ιBoson j y) = T.ιBoson j (JetComponentSpace.repJet (T.boson j) U y)
 ```
 
-**`GaugeFieldData.repJet_ιConnection`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L209).
+**`GaugeFieldData.repJet_ιConnection`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L209).
 
 ```lean
 lemma repJet_ιConnection (U : GJ) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -198,7 +198,7 @@ lemma repJet_ιConnection (U : GJ) (v : GaugeBoson.JetComponentSpace 𝔤) :
           LocalGaugeFieldAlgebra.repJet jets U (SymmetricAlgebra.ι ℝ _ v))
 ```
 
-**`GaugeFieldData.repJet_includeConnection`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L217).
+**`GaugeFieldData.repJet_includeConnection`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L217).
 
 > The jet gauge action restricts to the complexified gauge-only action on the connection
 > factor.
@@ -209,7 +209,7 @@ lemma repJet_includeConnection (U : GJ) (y : ℂ ⊗[ℝ] LocalGaugeFieldAlgebra
       = T.includeConnection (LocalGaugeFieldAlgebra.complexRepJet jets U y)
 ```
 
-**`GaugeFieldData.repJet_ιConnection_affine`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L226).
+**`GaugeFieldData.repJet_ιConnection_affine`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean#L226).
 
 > The affine gauge law of the connection generators: a jet carries a connection
 > generator to the transported generator of its inverse plus the Maurer–Cartan shift, the
@@ -229,4 +229,4 @@ lemma repJet_ιConnection_affine (U : GJ) (v : GaugeBoson.JetComponentSpace 𝔤
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean)

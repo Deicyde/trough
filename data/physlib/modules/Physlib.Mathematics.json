@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "Physlib/Mathematics/Calculus/AdjFDeriv.lean",
@@ -1923,6 +1923,32 @@
    "informal": 0
   },
   {
+   "file": "Physlib/Mathematics/ForMathlib/Analytic.lean",
+   "module": "Physlib.Mathematics.ForMathlib.Analytic",
+   "title": "Analyticity and dense non-vanishing sets",
+   "doc": "Density of the non-vanishing set of an analytic function.\n\n## i. Overview\n\nBy the identity principle, an analytic function on a connected normed space which vanishes on a\nnon-empty open set vanishes everywhere. Hence an analytic function which is non-zero at one point\nis non-zero on a dense set.\n\nApplications include domains in phase space used in proofs of Liouville integrability.\n\n## ii. Key results\n\n- `AnalyticOnNhd.dense_setOf_ne_zero` : a function analytic on a connected space and non-zero at\n  some point is non-zero on a dense set.\n\n## iii. Table of contents\n\n- A. Density of the non-vanishing set\n\n## iv. References\n\nThe density proof uses the identity principle in `Mathlib.Analysis.Analytic.Uniqueness`.",
+   "copyright": "2026 Rithwik Ranganathan",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Density of the non-vanishing set"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "AnalyticOnNhd.dense_setOf_ne_zero",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "A function analytic on a connected space, and non-zero at some point, is non-zero on a dense\nset.",
+     "statement": "lemma AnalyticOnNhd.dense_setOf_ne_zero {𝕜 E F : Type*} [NontriviallyNormedField 𝕜]\n    [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NormedAddCommGroup F] [NormedSpace 𝕜 F]\n    [PreconnectedSpace E] {f : E → F} (hf : AnalyticOnNhd 𝕜 f Set.univ) {x₀ : E}\n    (hx₀ : f x₀ ≠ 0) : Dense {x | f x ≠ 0}",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/Mathematics/ForMathlib/ComplexLinear.lean",
    "module": "Physlib.Mathematics.ForMathlib.ComplexLinear",
    "title": "Upgrading a real-linear map to a complex-linear one",
@@ -2059,6 +2085,40 @@
      "line": 124,
      "doc": "The coordinate pairing is invariant when an invariant pairing `p` makes the bases dual, since\nthen `p` is the coordinate pairing.",
      "statement": "lemma coordPairing_invariant {G : Type*} [Monoid G] {ρ : Representation R G M}\n    {ρ' : Representation R G N} {b : Module.Basis ι R M} {b' : Module.Basis ι R N}\n    (p : (ρ.tprod ρ').IntertwiningMap (Representation.trivial R G R))\n    (h : ∀ I J, p (b I ⊗ₜ b' J) = if I = J then 1 else 0) (g : G) (x : M) (y : N) :\n    b.coordPairing b' (ρ g x ⊗ₜ ρ' g y) = b.coordPairing b' (x ⊗ₜ y)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Mathematics/ForMathlib/Cutoff.lean",
+   "module": "Physlib.Mathematics.ForMathlib.Cutoff",
+   "title": "Cutoff functions",
+   "doc": "Smooth cutoffs around a compact set.\n\n## i. Overview\n\nA compact subset of an open set in a finite-dimensional space has a smooth cutoff, `1` on a\nneighbourhood of the subset and `0` near every point outside the open set.\n\n## ii. Key results\n\n- `IsCompact.exists_cutoff`\n- `contDiff_smul_of_cutoff`\n\n## iii. Table of contents\n\n- A. Cutoff functions\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Michal Mogielnicki",
+   "sections": [
+    {
+     "line": 39,
+     "text": "## A. Cutoff functions"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "IsCompact.exists_cutoff",
+     "kind": "lemma",
+     "line": 45,
+     "doc": "A smooth cutoff which is `1` on a neighbourhood `N` of a compact set `K` inside an open set `U`\nand has topological support inside `U`.",
+     "statement": "lemma IsCompact.exists_cutoff {X : Type*} [NormedAddCommGroup X] [NormedSpace ℝ X]\n    [FiniteDimensional ℝ X]\n    {K U : Set X} (hK : IsCompact K) (hU : IsOpen U) (hKU : K ⊆ U) :\n    ∃ (χ : X → ℝ) (N : Set X), ContDiff ℝ ∞ χ ∧ IsOpen N ∧ K ⊆ N ∧ N ⊆ U ∧\n      (∀ y ∈ N, χ y = 1) ∧ tsupport χ ⊆ U",
+     "sorry": false
+    },
+    {
+     "name": "contDiff_smul_of_cutoff",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "`ρ • f` is smooth if `tsupport ρ ⊆ W` and `f` is smooth on `W`.",
+     "statement": "lemma contDiff_smul_of_cutoff {Y F : Type*} [NormedAddCommGroup Y] [NormedSpace ℝ Y]\n    [NormedAddCommGroup F] [NormedSpace ℝ F] {ρ : Y → ℝ} (hρ : ContDiff ℝ ∞ ρ) {W : Set Y}\n    (hρ0 : tsupport ρ ⊆ W) {f : Y → F} (hf : ∀ y ∈ W, ContDiffAt ℝ ∞ f y) :\n    ContDiff ℝ ∞ fun y ↦ ρ y • f y",
      "sorry": false
     }
    ],
@@ -2237,6 +2297,32 @@
      "line": 262,
      "doc": "Lie's trace formula over ℝ: det(exp(A)) = exp(tr(A)) for any real matrix A.\nThis is proved by transferring the result from ℂ using the naturality of polynomial identities.",
      "statement": "theorem det_exp_real {n : Type*} [Fintype n] [LinearOrder n]\n    (A : Matrix n n ℝ) : (NormedSpace.exp A).det = Real.exp A.trace",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Mathematics/ForMathlib/Distribution.lean",
+   "module": "Physlib.Mathematics.ForMathlib.Distribution",
+   "title": "Distribution",
+   "doc": "## i. Overview\n\nIn this module, we define continuous linear maps between spaces of distributions `𝓓'(Ω, F)`\nand `𝓓'(Ω', F)`, using `TestFunction.compCLMofContinuousLinearEquiv`.\n\n## ii. Key results\n\n- `compContinuousLinearEquiv` : A continuous linear map between spaces of distributions `𝓓'(Ω, F)`\n  and `𝓓'(Ω', F)`.\n\n## iii. Table of contents\n\n- A. Continuous linear maps\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Cameron Lee",
+   "sections": [
+    {
+     "line": 34,
+     "text": "## A. Continuous linear maps"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Distribution.compContinuousLinearEquiv",
+     "kind": "def",
+     "line": 45,
+     "doc": "Having defined a CLM between test functions, we now define a continuous linear map between spaces\nof distributions `𝓓'(Ω, F)` and `𝓓'(Ω', F)`.",
+     "statement": "noncomputable def compContinuousLinearEquiv {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) :\n    Distribution Ω F ⊤ →L[ℝ] Distribution Ω' F ⊤",
      "sorry": false
     }
    ],
@@ -5094,6 +5180,32 @@
      "line": 110,
      "doc": "A sesquilinear form is positive-definite exactly when its matrix in a basis is.",
      "statement": "lemma isPosDef_iff_posDef_toMatrix (b : Basis n R M) : B.IsPosDef ↔ (toMatrix₂ b b B).PosDef",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Mathematics/ForMathlib/TestFunction.lean",
+   "module": "Physlib.Mathematics.ForMathlib.TestFunction",
+   "title": "TestFunction",
+   "doc": "## i. Overview\n\nIn this module, we define a continuous linear map between spaces of test functions via the pullback\nof a test function `TestFunction Ω' F ⊤` along a linear equivalence`g : E ≃L[ℝ] E'`.\n\n## ii. Key results\n\n- `compCLMofContinuousLinearEquiv` : A continuous linear map between spaces of test functions\n `𝓓(Ω', F)` and `𝓓(Ω, F)`.\n\n## iii. Table of contents\n\n- A. Continuous linear maps\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Cameron Lee",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Continuous linear maps"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "TestFunction.compCLMofContinuousLinearEquiv",
+     "kind": "def",
+     "line": 45,
+     "doc": "Given normed spaces `E` and `E'` and open subsets `Ω ⊆ E` and `Ω' ⊆ E'` and a map between\nthem `g : E → E'`, define a continuous linear map between the spaces of test functions\n`𝓓(Ω', F)` and `𝓓(Ω, F)`.",
+     "statement": "noncomputable def compCLMofContinuousLinearEquiv {E E'} [NormedAddCommGroup E]\n    [NormedAddCommGroup E'] [NormedSpace ℝ E] [NormedSpace ℝ E']\n    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    {Ω : Opens E} {Ω' : Opens E'} (g : E ≃L[ℝ] E')\n    (h : g.invFun '' Ω' ⊆ ↑Ω) :\n    TestFunction Ω' F ⊤ →L[ℝ] TestFunction Ω F ⊤",
      "sorry": false
     }
    ],

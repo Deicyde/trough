@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.25 Flat morphisms
 
-Section 101.25 of the Stacks Project, [Tag 06PV](https://stacks.math.columbia.edu/tag/06PV). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.25 of the Stacks Project, [Tag 06PV](https://stacks.math.columbia.edu/tag/06PV). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06PW, a definition
 
 [Tag 06PW](https://stacks.math.columbia.edu/tag/06PW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAlgebraicStack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatAlgebraicStack.lean#L84).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAlgebraicStack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatAlgebraicStack.lean#L84).
 
 > **Stacks 06PW.** A 1-morphism of algebraic stacks over `S` is *flat* when it passes the
 > existential smooth-diagram test of Stacks 06FM at flatness of morphisms of algebraic spaces:
@@ -31,7 +31,7 @@ abbrev IsFlat {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ �
 
 [Tag 06PX](https://stacks.math.columbia.edu/tag/06PX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean#L181).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean#L181).
 
 > **Stacks 06PX.** The composite of two flat 1-morphisms of algebraic stacks over `S` is flat.
 >
@@ -51,7 +51,7 @@ theorem isFlat_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
 
 [Tag 06PY](https://stacks.math.columbia.edu/tag/06PY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatBaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatBaseChange.lean#L77).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatBaseChange.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatBaseChange.lean#L77).
 
 > A base change of a flat 1-morphism of algebraic stacks over `S` is flat: if `P` is a 2-fibre
 > product of the cospan `(g, f)` and `f` is flat, then the projection `P.fst` is flat.
@@ -69,7 +69,7 @@ theorem isFlat_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w} B S hS
 
 [Tag 06PZ](https://stacks.math.columbia.edu/tag/06PZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_twoFibreProduct_fst_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean#L346).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_twoFibreProduct_fst_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean, line 346](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean#L346).
 
 > **Stacks 06PZ.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒵 ⟶ 𝒴` be 1-morphisms of algebraic stacks over
 > `S` with `g` surjective and flat, and let `P` exhibit `𝒵 ×_𝒴 𝒳`. If the base change
@@ -92,7 +92,7 @@ theorem isFlat_twoFibreProduct_fst_descent
 
 [Tag 06Q0](https://stacks.math.columbia.edu/tag/06Q0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_of_isSurjective_of_isFlat_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean#L328).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_of_isSurjective_of_isFlat_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatDescentAlgebraicStack.lean#L328).
 
 > **Stacks 06Q0.** Let `𝒳 ⟶ 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over `S`. If
 > `𝒳 ⟶ 𝒵` is flat and `𝒳 ⟶ 𝒴` is surjective and flat, then `𝒴 ⟶ 𝒵` is flat.
@@ -113,7 +113,7 @@ theorem isFlat_of_isSurjective_of_isFlat_comp
 
 [Tag 0DN5](https://stacks.math.columbia.edu/tag/0DN5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_valuationRing_extension_lift_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatValuativeLifting.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatValuativeLifting.lean#L126).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_valuationRing_extension_lift_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatValuativeLifting.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatValuativeLifting.lean#L126).
 
 > **Stacks 0DN5.** Let `f : 𝒳 ⟶ 𝒴` be a flat 1-morphism of algebraic stacks over `S` and let
 > `g : Spec A ⟶ 𝒴` be a 1-morphism out of the spectrum of a valuation ring `A`, presented as an
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.25, Tag 06PV](https://stacks.math.columbia.edu/tag/06PV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

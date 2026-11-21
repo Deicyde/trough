@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.5 First cohomology and extensions
 
-Section 21.5 of the Stacks Project, [Tag 03F0](https://stacks.math.columbia.edu/tag/03F0). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.5 of the Stacks Project, [Tag 03F0](https://stacks.math.columbia.edu/tag/03F0). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03F1, a lemma
 
 [Tag 03F1](https://stacks.math.columbia.edu/tag/03F1) in the Stacks Project.
 
-**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L410). The attribute's comment: “canonical bijection”.
+**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L410). The attribute's comment: “canonical bijection”.
 
 > **Stacks 03F1.** For a ringed site `(C, O)` and a sheaf of `O`-modules `M`, first
 > extensions of the structure sheaf by `M` are canonically first cohomology.
@@ -24,7 +24,7 @@ def extOneEquivFirstCohomology (R : Sheaf J RingCat.{u}) (M : SheafOfModules.{u}
     Ext (SheafOfModules.unit R) M 1 ≃+ (cohomologyFunctor R 1).obj M
 ```
 
-**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_extClass_eq_coboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L534). The attribute's comment: “image of an extension is the coboundary of 1”.
+**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_extClass_eq_coboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 534](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L534). The attribute's comment: “image of an extension is the coboundary of 1”.
 
 > **Stacks 03F1.** The class of the extension `0 → M → E → O → 0` goes to the image of
 > `1 ∈ Γ(C, O)` under the coboundary `Γ(C, O) → H^1(C, M)` of the long exact cohomology sequence
@@ -44,7 +44,7 @@ theorem extOneEquivFirstCohomology_extClass_eq_coboundary (R : Sheaf J RingCat.{
           (SheafOfModules.unitHomEquiv (SheafOfModules.unit R) (𝟙 _)))
 ```
 
-**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_unique_coboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L551). The attribute's comment: “uniqueness”.
+**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_unique_coboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 551](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L551). The attribute's comment: “uniqueness”.
 
 > **Stacks 03F1.** The canonical bijection is the only additive bijection
 > `Ext^1(O, M) ≃+ H^1(C, M)` sending every extension to the image of `1 ∈ Γ(C, O)` under the
@@ -65,7 +65,7 @@ theorem extOneEquivFirstCohomology_unique_coboundary (R : Sheaf J RingCat.{u})
     e = extOneEquivFirstCohomology R M
 ```
 
-**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L573). The attribute's comment: “naturality”.
+**`Stacks.Cohomology.SiteModules.extOneEquivFirstCohomology_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean, line 573](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FirstCohomologyAndExtensions.lean#L573). The attribute's comment: “naturality”.
 
 > **Stacks 03F1.** The identification is natural in the coefficient module sheaf.
 
@@ -81,7 +81,7 @@ theorem extOneEquivFirstCohomology_naturality (R : Sheaf J RingCat.{u})
 
 [Tag 03F2](https://stacks.math.columbia.edu/tag/03F2) in the Stacks Project.
 
-**`ModuleSheafCohomology.moduleSheafCohomologyIsoUnderlying`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/ModuleCohomologyComparison.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/GlobalSections/ModuleCohomologyComparison.lean#L1089). The attribute's comment: “the degree one case”. References: SGA 4 V (3.5).
+**`ModuleSheafCohomology.moduleSheafCohomologyIsoUnderlying`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/GlobalSections/ModuleCohomologyComparison.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/GlobalSections/ModuleCohomologyComparison.lean#L1089). The attribute's comment: “the degree one case”. References: SGA 4 V (3.5).
 
 > **Stacks 03FD.** For a sheaf of rings `R` on a site, deriving sections in the category of
 > `R`-module sheaves and then forgetting to abelian groups gives the same cohomology as first
@@ -118,4 +118,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.5, Tag 03F0](https://stacks.math.columbia.edu/tag/03F0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

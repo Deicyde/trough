@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.CommutingStarFamily, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isStarNormal_of_mem, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_adjoin, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.algebra, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.carrier_subset_algebra, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isClosed_algebra, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_algebra, ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commCStarAlgebraAlgebra
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isStarNormal_of_mem, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_adjoin, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.algebra, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.carrier_subset_algebra, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isClosed_algebra, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_algebra, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commCStarAlgebraAlgebra
 statement: formalized
 proof: formalized
 ---
 
 # The joint spectral measure of a commuting family
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.JointSpectral.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean): 17 declarations (2 instances with no name), 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.JointSpectral.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean): 17 declarations (2 instances with no name), 7 with a docstring.
 
 > A commuting family of bounded operators closed under adjoints has a joint spectral measure on the
 > Gelfand spectrum of the C⋆-algebra it generates.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.JointSpectral.Basic`, 
 
 > * None.
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily`**, a structure, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L62).
 
 > A commuting family of bounded operators closed under adjoints.
 
@@ -52,19 +52,19 @@ structure CommutingStarFamily where
 
 ## A. The commutative C⋆-algebra of a family
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isStarNormal_of_mem`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isStarNormal_of_mem`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L77).
 
 ```lean
 lemma isStarNormal_of_mem {a : H →L[ℂ] H} (ha : a ∈ F.carrier) : IsStarNormal a
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_adjoin`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L80).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_adjoin`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L80).
 
 ```lean
 instance isMulCommutative_adjoin : IsMulCommutative (StarAlgebra.adjoin ℂ F.carrier)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.algebra`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.algebra`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L86).
 
 > The closed ⋆-subalgebra of the bounded operators generated by a commuting ⋆-family.
 
@@ -72,25 +72,25 @@ instance isMulCommutative_adjoin : IsMulCommutative (StarAlgebra.adjoin ℂ F.ca
 def algebra : StarSubalgebra ℂ (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.carrier_subset_algebra`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.carrier_subset_algebra`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L88).
 
 ```lean
 lemma carrier_subset_algebra : F.carrier ⊆ F.algebra
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isClosed_algebra`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L91).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isClosed_algebra`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L91).
 
 ```lean
 instance isClosed_algebra : IsClosed (F.algebra : Set (H →L[ℂ] H))
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_algebra`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.isMulCommutative_algebra`**, an instance, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L94).
 
 ```lean
 instance isMulCommutative_algebra : IsMulCommutative F.algebra
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commCStarAlgebraAlgebra`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commCStarAlgebraAlgebra`**, an instance, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L99).
 
 > The algebra generated by a commuting ⋆-family is a commutative C⋆-algebra.
 
@@ -98,7 +98,7 @@ instance isMulCommutative_algebra : IsMulCommutative F.algebra
 instance commCStarAlgebraAlgebra : CommCStarAlgebra F.algebra
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commute_of_forall_mem_carrier`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.commute_of_forall_mem_carrier`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L101).
 
 ```lean
 lemma commute_of_forall_mem_carrier {T : H →L[ℂ] H} (hT : ∀ a ∈ F.carrier, Commute a T)
@@ -107,19 +107,19 @@ lemma commute_of_forall_mem_carrier {T : H →L[ℂ] H} (hT : ∀ a ∈ F.carrie
 
 ## B. The joint spectral measure
 
-**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L129).
+**An instance with no name**, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L129).
 
 ```lean
 instance : MeasurableSpace (characterSpace ℂ F.algebra)
 ```
 
-**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L131).
+**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L131).
 
 ```lean
 instance : BorelSpace (characterSpace ℂ F.algebra)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L135).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L135).
 
 > The inclusion of the algebra as a representation of the continuous functions on its character
 > space, by Gelfand duality.
@@ -128,20 +128,20 @@ instance : BorelSpace (characterSpace ℂ F.algebra)
 def starHom : C(characterSpace ℂ F.algebra, ℂ) →⋆ₐ[ℂ] (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom_gelfandStarTransform`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L139).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom_gelfandStarTransform`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L139).
 
 ```lean
 lemma starHom_gelfandStarTransform (a : F.algebra) :
     F.starHom (gelfandStarTransform F.algebra a) = a
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom_mem_algebra`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L143).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.starHom_mem_algebra`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L143).
 
 ```lean
 lemma starHom_mem_algebra (f : C(characterSpace ℂ F.algebra, ℂ)) : F.starHom f ∈ F.algebra
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.spectralMeasure`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L148).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.spectralMeasure`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L148).
 
 > The joint spectral measure of a commuting ⋆-family, on the character space of the
 > C⋆-algebra it generates.
@@ -150,7 +150,7 @@ lemma starHom_mem_algebra (f : C(characterSpace ℂ F.algebra, ℂ)) : F.starHom
 def spectralMeasure : WOTSpectralMeasure (characterSpace ℂ F.algebra) H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.boundedIntegral_gelfandStarTransform`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.boundedIntegral_gelfandStarTransform`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L153).
 
 > Every operator of the algebra generated by the family is the integral of its Gelfand
 > transform against the joint spectral measure.
@@ -164,7 +164,7 @@ lemma boundedIntegral_gelfandStarTransform [Nonempty (characterSpace ℂ F.algeb
         (boundedIntegral_bound_of_continuous _)) = a
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.spectralMeasure_commute`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L164).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.CommutingStarFamily.spectralMeasure_commute`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean#L164).
 
 > The joint spectral measure commutes with every bounded operator commuting with the family.
 
@@ -184,4 +184,4 @@ lemma spectralMeasure_commute {T : H →L[ℂ] H} (hT : ∀ a ∈ F.carrier, Com
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean)

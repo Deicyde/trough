@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Primes of the form $3^n \pm 3^k… to Primes $p < n$ with $n^2 - n +…
+# Number of primes of the form… to Partitions $2n + 1 = x + y$…
 
+- [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)
 - [Primes of the form $3^n \pm 3^k \pm 1$](primes-of-the-form-3-n-pm-3-k-pm-1.md)
 - [Lerch quotients of odd primes](lerch-quotients-of-odd-primes.md)
 - [Position of $n$-th partial sum of the harmonic series when jointly ranked with $\{\log(k+1)\}$](position-of-n-th-partial-sum-of-the-harmonic-ser.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \dots + n s^{n-1}$ is prime](smallest-integer-s-n-such-that-1-2s-3s-2-dots-n.md)
 - [Partitions $n = x + y$ with $x^2 + xy + y^2$ prime](partitions-n-x-y-with-x-2-xy-y-2-prime.md)
 - [Partitions $2n + 1 = x + y$ with $x^4 + y^4$ prime](partitions-2n-1-x-y-with-x-4-y-4-prime.md)
-- [Primes $p < n$ with $n^2 - n + p$ and $n^2 + n - p$ prime](primes-p-n-with-n-2-n-p-and-n-2-n-p-prime.md)

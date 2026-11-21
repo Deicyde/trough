@@ -7,18 +7,18 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Matrix Row Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean), by Valerii Huhnin.
 
 > Replacement-row, matrix-shape, and row-span transport lemmas.
 
-`CompPoly.PolynomialMatrix.replaceRow_size` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L25))
+`CompPoly.PolynomialMatrix.replaceRow_size` (theorem, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L25))
 
 ```lean
 theorem replaceRow_size (M : PolynomialMatrix F) (idx : Nat) (row : PolynomialRow F) :
     (replaceRow M idx row).size = M.size
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_matrixWidth` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L30))
+`CompPoly.PolynomialMatrix.replaceRow_matrixWidth` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L30))
 
 ```lean
 theorem replaceRow_matrixWidth
@@ -27,7 +27,7 @@ theorem replaceRow_matrixWidth
     MatrixWidth (replaceRow M idx row) = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_shape` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L45))
+`CompPoly.PolynomialMatrix.replaceRow_shape` (theorem, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L45))
 
 ```lean
 theorem replaceRow_shape
@@ -36,7 +36,7 @@ theorem replaceRow_shape
     MatrixShape (replaceRow M idx row) = MatrixShape M
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_wellFormed` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L52))
+`CompPoly.PolynomialMatrix.replaceRow_wellFormed` (theorem, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L52))
 
 ```lean
 theorem replaceRow_wellFormed
@@ -45,7 +45,7 @@ theorem replaceRow_wellFormed
     WellFormed (replaceRow M idx row)
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_rows_mem_rowSpan` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L77))
+`CompPoly.PolynomialMatrix.replaceRow_rows_mem_rowSpan` (theorem, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L77))
 
 ```lean
 theorem replaceRow_rows_mem_rowSpan
@@ -55,7 +55,7 @@ theorem replaceRow_rows_mem_rowSpan
     row ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_newRow_mem` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L100))
+`CompPoly.PolynomialMatrix.replaceRow_newRow_mem` (theorem, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L100))
 
 ```lean
 theorem replaceRow_newRow_mem
@@ -64,7 +64,7 @@ theorem replaceRow_newRow_mem
     newRow ∈ MatrixRows (replaceRow M idx newRow)
 ```
 
-`CompPoly.PolynomialMatrix.replaceRow_oldRow_mem` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L113))
+`CompPoly.PolynomialMatrix.replaceRow_oldRow_mem` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L113))
 
 ```lean
 theorem replaceRow_oldRow_mem
@@ -73,7 +73,7 @@ theorem replaceRow_oldRow_mem
     M[k] ∈ MatrixRows (replaceRow M idx newRow)
 ```
 
-`CompPoly.PolynomialMatrix.matrix_getD_size_of_wellFormed` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L125))
+`CompPoly.PolynomialMatrix.matrix_getD_size_of_wellFormed` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L125))
 
 ```lean
 theorem matrix_getD_size_of_wellFormed
@@ -81,7 +81,7 @@ theorem matrix_getD_size_of_wellFormed
     (M.getD i #[]).size = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.matrix_getElem?_getD_size_of_wellFormed` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L134))
+`CompPoly.PolynomialMatrix.matrix_getElem?_getD_size_of_wellFormed` (theorem, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L134))
 
 ```lean
 theorem matrix_getElem?_getD_size_of_wellFormed
@@ -89,7 +89,7 @@ theorem matrix_getElem?_getD_size_of_wellFormed
     (M[i]?.getD #[]).size = MatrixWidth M
 ```
 
-`CompPoly.PolynomialMatrix.matrix_getD_mem_rowSpan` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L139))
+`CompPoly.PolynomialMatrix.matrix_getD_mem_rowSpan` (theorem, [line 139](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L139))
 
 ```lean
 theorem matrix_getD_mem_rowSpan
@@ -97,7 +97,7 @@ theorem matrix_getD_mem_rowSpan
     M.getD i #[] ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.zeroRow_mem_rowSpan` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L149))
+`CompPoly.PolynomialMatrix.zeroRow_mem_rowSpan` (theorem, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L149))
 
 ```lean
 theorem zeroRow_mem_rowSpan
@@ -105,7 +105,7 @@ theorem zeroRow_mem_rowSpan
     zeroRow (F := F) (MatrixWidth M) ∈ RowSpan M
 ```
 
-`CompPoly.PolynomialMatrix.rowLinearCombination_mem_rowSpan_of_rows_mem` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L181))
+`CompPoly.PolynomialMatrix.rowLinearCombination_mem_rowSpan_of_rows_mem` (theorem, [line 181](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L181))
 
 ```lean
 theorem rowLinearCombination_mem_rowSpan_of_rows_mem
@@ -116,7 +116,7 @@ theorem rowLinearCombination_mem_rowSpan_of_rows_mem
     rowLinearCombination coeffs A ∈ RowSpan B
 ```
 
-`CompPoly.PolynomialMatrix.rowSpan_subset_of_rows_mem` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L216))
+`CompPoly.PolynomialMatrix.rowSpan_subset_of_rows_mem` (theorem, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L216))
 
 ```lean
 theorem rowSpan_subset_of_rows_mem
@@ -126,7 +126,7 @@ theorem rowSpan_subset_of_rows_mem
     RowSpan A ⊆ RowSpan B
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_size_of_wellFormed` (theorem, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L225))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_size_of_wellFormed` (theorem, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean#L225))
 
 ```lean
 theorem cancelShiftedLeadingTerm_size_of_wellFormed
@@ -147,5 +147,5 @@ theorem cancelShiftedLeadingTerm_size_of_wellFormed
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/MatrixRows.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.MatrixRows.json)

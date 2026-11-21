@@ -7,12 +7,12 @@ proof: formalized
 
 # Approximant-Basis Correctness Surface
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean), by Valerii Huhnin.
 
 > Named theorem surface for X-adic approximant bases and diagonal modular
 > solution bases.  The executable contexts carry the current proof obligations.
 
-`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_sound` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean#L30))
+`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_sound` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean#L30))
 
 > Rows returned by a modular solution-basis context satisfy the modular
 > equation.
@@ -26,7 +26,7 @@ theorem modularSolutionBasis_sound
       equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_complete_minimal` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean#L42))
+`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasis_complete_minimal` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean#L42))
 
 > Solution-basis completeness/minimality contract, relative to the
 > caller-supplied degree bound: a solution row within the bound (vacuous for
@@ -63,5 +63,5 @@ theorem modularSolutionBasis_complete_minimal
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/Correctness.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.Correctness.json)

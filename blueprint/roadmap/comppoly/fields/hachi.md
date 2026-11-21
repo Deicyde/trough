@@ -7,7 +7,7 @@ proof: formalized
 
 # Hachi prime field `2^32 - 99`
 
-`CompPoly.Fields.Hachi`, in [CompPoly/Fields/Hachi.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean), by Derek Sorensen.
+`CompPoly.Fields.Hachi`, in [CompPoly/Fields/Hachi.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean), by Derek Sorensen.
 
 > A 32-bit prime field. The name is provisional.
 >
@@ -29,7 +29,7 @@ proof: formalized
 > `CompPoly/Fields/Extension/` is generic over the base-field carrier and would pick it up
 > unchanged.
 
-`Hachi.fieldSize` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L42))
+`Hachi.fieldSize` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L42))
 
 > The Hachi field modulus, `2^32 - 99`.
 
@@ -37,7 +37,7 @@ proof: formalized
 def fieldSize : Nat
 ```
 
-`Hachi.Field` (abbreviation, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L45))
+`Hachi.Field` (abbreviation, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L45))
 
 > The Hachi prime field as a `ZMod`.
 
@@ -45,7 +45,7 @@ def fieldSize : Nat
 abbrev Field
 ```
 
-`Hachi.is_prime` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L48))
+`Hachi.is_prime` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L48))
 
 > The Hachi modulus is prime.
 
@@ -53,7 +53,7 @@ abbrev Field
 theorem is_prime : Nat.Prime fieldSize
 ```
 
-`Hachi.pBits` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L60))
+`Hachi.pBits` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L60))
 
 > Bit width of the Hachi modulus.
 
@@ -61,7 +61,7 @@ theorem is_prime : Nat.Prime fieldSize
 def pBits : Nat
 ```
 
-`Hachi.twoAdicity` (definition, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L65))
+`Hachi.twoAdicity` (definition, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L65))
 
 > The two-adicity of `fieldSize - 1`, i.e. `2` — deliberately small; see the module
 > docstring.
@@ -70,7 +70,7 @@ def pBits : Nat
 def twoAdicity : Nat
 ```
 
-`Hachi.fieldSize_sub_one_factorization` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean#L67))
+`Hachi.fieldSize_sub_one_factorization` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean#L67))
 
 ```lean
 theorem fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 1073741799
@@ -86,5 +86,5 @@ theorem fieldSize_sub_one_factorization : fieldSize - 1 = 2 ^ twoAdicity * 10737
 
 ## Sources
 
-- [CompPoly/Fields/Hachi.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi.lean)
+- [CompPoly/Fields/Hachi.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Fields.Hachi.json)

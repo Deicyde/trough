@@ -8,7 +8,7 @@ proof: formalized
 
 # The current coupling of quantum electrodynamics
 
-The module `PhyslibAlpha.Particles.QED.CurrentCoupling`, [PhyslibAlpha/Particles/QED/CurrentCoupling.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Particles.QED.CurrentCoupling`, [PhyslibAlpha/Particles/QED/CurrentCoupling.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean): 4 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.QED.CurrentCoupling`, [PhyslibAlpha/Particles
 > (`PhyslibAlpha.Particles.QED.FermionStatistics`), so the interaction inside the kinetic term
 > reorganises into the potential times the Dirac current.
 
-**`QED.JetAlgebra.A_mul_diracCurrent`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L76).
+**`QED.JetAlgebra.A_mul_diracCurrent`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L76).
 
 > The photon potential times the Dirac current, written through the fermion
 > bilinears.
@@ -61,7 +61,7 @@ lemma A_mul_diracCurrent (μ : Fin 1 ⊕ Fin 3) :
       ∑ α, ∑ β, kineticGamma μ α β • (A 0 μ * (barψ 0 α * ψ 0 β))
 ```
 
-**`QED.JetAlgebra.diracKineticTerm_eq_free_add_current`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L90).
+**`QED.JetAlgebra.diracKineticTerm_eq_free_add_current`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L90).
 
 > **Minimal coupling**: the Dirac kinetic term with coupling `e` is the free
 > Dirac kinetic term plus the current coupling `- e J^μ A_μ`.  All of the
@@ -77,7 +77,7 @@ lemma diracKineticTerm_eq_free_add_current (e : ℝ) :
 
 ## B. Gauge invariance of the Dirac current
 
-**`QED.JetAlgebra.gaugeAction_diracCurrent`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L128).
+**`QED.JetAlgebra.gaugeAction_diracCurrent`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L128).
 
 > **The Dirac current is gauge invariant**: the electron and its conjugate
 > carry opposite charges, so the phases cancel by unitarity.  This is what
@@ -90,7 +90,7 @@ lemma gaugeAction_diracCurrent {e : ℝ} (g : GaugeJet e) (μ : Fin 1 ⊕ Fin 3)
 
 ## C. Noether: conservation of the Dirac current on-shell
 
-**`QED.JetAlgebra.current_conservation`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L151).
+**`QED.JetAlgebra.current_conservation`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean#L151).
 
 > **Noether's identity for the Dirac current**: the divergence of the
 > current is a combination of the Dirac-equation elements,
@@ -118,4 +118,4 @@ lemma current_conservation (e m : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/CurrentCoupling.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/CurrentCoupling.lean)
+- [PhyslibAlpha/Particles/QED/CurrentCoupling.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/CurrentCoupling.lean)

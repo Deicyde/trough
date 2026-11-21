@@ -8,7 +8,7 @@ proof: formalized
 
 # The quantum and classical nets of a system with finite site spaces
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Instances`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Instances`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean): 6 declarations, 6 with a docstring.
 
 > The two nets of algebras over a set of sites with finite configuration spaces: operators and
 > functions.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Instances`, [PhyslibAlpha/Co
 
 ## A. The quantum net
 
-**`CondensedMatter.QuasiLocal.quantumNet`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L67).
+**`CondensedMatter.QuasiLocal.quantumNet`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L67).
 
 > **The quantum net**: the matrices on the configurations of each region, with `M ↦ M ⊗ 1` as
 > inclusion.
@@ -49,7 +49,7 @@ def quantumNet : AlgebraNet S
 
 ## B. The classical net
 
-**`CondensedMatter.QuasiLocal.CAlg`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L76).
+**`CondensedMatter.QuasiLocal.CAlg`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L76).
 
 > The classical algebra of a region: the complex functions on its configurations.
 
@@ -57,7 +57,7 @@ def quantumNet : AlgebraNet S
 abbrev CAlg (X : Finset S) : Type _
 ```
 
-**`CondensedMatter.QuasiLocal.classicalIncl`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L79).
+**`CondensedMatter.QuasiLocal.classicalIncl`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L79).
 
 > A function of the values in `X` is a function of the values in a larger region `Y`.
 
@@ -65,7 +65,7 @@ abbrev CAlg (X : Finset S) : Type _
 def classicalIncl {X Y : Finset S} (h : X ≤ Y) : CAlg Ω X →⋆ₐ[ℂ] CAlg Ω Y
 ```
 
-**`CondensedMatter.QuasiLocal.classicalNet`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L89).
+**`CondensedMatter.QuasiLocal.classicalNet`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L89).
 
 > **The classical net**: the functions on the configurations of each region.
 
@@ -73,7 +73,7 @@ def classicalIncl {X Y : Finset S} (h : X ≤ Y) : CAlg Ω X →⋆ₐ[ℂ] CAlg
 def classicalNet : AlgebraNet S
 ```
 
-**`CondensedMatter.QuasiLocal.diagonalInclusion`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L96).
+**`CondensedMatter.QuasiLocal.diagonalInclusion`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L96).
 
 > The classical algebra of a region as the diagonal operators.
 
@@ -81,7 +81,7 @@ def classicalNet : AlgebraNet S
 def diagonalInclusion (X : Finset S) : CAlg Ω X →⋆ₐ[ℂ] Alg Ω X
 ```
 
-**`CondensedMatter.QuasiLocal.diagonalInclusion_incl`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L114).
+**`CondensedMatter.QuasiLocal.diagonalInclusion_incl`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean#L114).
 
 > **The classical net is a subnet of the quantum net**: the diagonal inclusion commutes with the
 > inclusions of regions.
@@ -98,4 +98,4 @@ lemma diagonalInclusion_incl {X Y : Finset S} (h : X ≤ Y) (f : CAlg Ω X) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean)

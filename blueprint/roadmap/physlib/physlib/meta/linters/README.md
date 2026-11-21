@@ -1,6 +1,6 @@
 # Linters
 
-The folder [Physlib/Meta/Linters/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Linters): 2 modules, an article each, in path order.
+The folder [Physlib/Meta/Linters/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Linters): 2 modules, an article each, in path order.
 
 - [Physlib exemptions for the `defsWithUnderscore` linter](defswithunderscore.md)
 - [The `pseudo` attribute](pseudo.md)

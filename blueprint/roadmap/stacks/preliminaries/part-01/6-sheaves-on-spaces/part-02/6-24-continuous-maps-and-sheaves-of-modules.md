@@ -8,7 +8,7 @@ proof: formalized
 
 # 6.24 Continuous maps and sheaves of modules
 
-Section 6.24 of the Stacks Project, [Tag 008R](https://stacks.math.columbia.edu/tag/008R). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 6.24 of the Stacks Project, [Tag 008R](https://stacks.math.columbia.edu/tag/008R). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 008S, a lemma
 
@@ -16,15 +16,15 @@ Section 6.24 of the Stacks Project, [Tag 008R](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`PresheafOfModules.pushforward₀Obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.pushforward₀Obj#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L30) (StacksFrontier): “the pushforward `f_*ℱ` as a presheaf of `f_*𝒪`-modules”.
-- [`PresheafOfModules.pushforward₀`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.pushforward₀#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L32) (StacksFrontier): “pushforward as a functor `PMod(𝒪) ⥤ PMod(f_*𝒪)`”.
-- [`PresheafOfModules.map_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.map_smul#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L34) (StacksFrontier): “the scalar action is compatible with restriction, which is the naturality of the map `f_*𝒪 × f_*ℱ ⟶ f_*ℱ`”. References: SGA 3 I (6.4), “more general”.
+- [`PresheafOfModules.pushforward₀Obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.pushforward₀Obj#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L30) (StacksFrontier): “the pushforward `f_*ℱ` as a presheaf of `f_*𝒪`-modules”.
+- [`PresheafOfModules.pushforward₀`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.pushforward₀#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 32](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L32) (StacksFrontier): “pushforward as a functor `PMod(𝒪) ⥤ PMod(f_*𝒪)`”.
+- [`PresheafOfModules.map_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.map_smul#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean, line 34](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardPresheaf.lean#L34) (StacksFrontier): “the scalar action is compatible with restriction, which is the naturality of the map `f_*𝒪 × f_*ℱ ⟶ f_*ℱ`”. References: SGA 3 I (6.4), “more general”.
 
 ## Tag 008T, a lemma
 
 [Tag 008T](https://stacks.math.columbia.edu/tag/008T) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.Pullback.pullback_presheaf_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L629). The attribute's comment: “(1), (2)”.
+**`Stacks.PresheafOfModules.Pullback.pullback_presheaf_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 629](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L629). The attribute's comment: “(1), (2)”.
 
 > **Stacks 008T (1), (2).**
 >
@@ -45,7 +45,7 @@ theorem pullback_presheaf_module (O : TopCat.Presheaf RingCat.{u} Y) (G : Preshe
         pullbackAb f (underlyingAb O G)
 ```
 
-**`Stacks.PresheafOfModules.Pullback.pullbackModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L658). The attribute's comment: “(3)”.
+**`Stacks.PresheafOfModules.Pullback.pullbackModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 658](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L658). The attribute's comment: “(3)”.
 
 > **Stacks 008T (3): the functor lifting `f_p` to presheaves of modules.**
 >
@@ -67,7 +67,7 @@ noncomputable def pullbackModuleFunctor (O : TopCat.Presheaf RingCat.{u} Y) :
     PresheafOfModules.{u} O ⥤ PresheafOfModules.{u} (pullbackRing f O)
 ```
 
-**`Stacks.PresheafOfModules.Pullback.pullbackModuleFunctorCompToPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L699). The attribute's comment: “(3)”.
+**`Stacks.PresheafOfModules.Pullback.pullbackModuleFunctorCompToPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean, line 699](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheaf.lean#L699). The attribute's comment: “(3)”.
 
 > **Stacks 008T (3): the comparison isomorphism expressing that `pullbackModuleFunctor`
 > lies over `f_p`:** `Φ ⋙ toPresheaf (f_p O) ≅ toPresheaf O ⋙ (pullback Ab f)`.
@@ -93,7 +93,7 @@ noncomputable def pullbackModuleFunctorCompToPresheaf (O : TopCat.Presheaf RingC
 
 [Tag 008U](https://stacks.math.columbia.edu/tag/008U) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.Pullback.pullbackModuleAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean#L397).
+**`Stacks.PresheafOfModules.Pullback.pullbackModuleAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean#L397).
 
 > **Stacks 008U.**  Let `f : X ⟶ Y` be continuous and `O` a presheaf of rings on `Y`.  The
 > explicit pullback `f_p` of presheaves of modules (with the `f_p O`-module structure of
@@ -108,7 +108,7 @@ noncomputable def pullbackModuleAdjunction :
     pullbackModuleFunctor f O ⊣ PresheafOfModules.pushforward (pullbackRingUnitHom f O)
 ```
 
-**`Stacks.PresheafOfModules.Pullback.toPresheaf_map_pullbackModuleAdjunction_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean#L434). The attribute's comment: “the bijection is the restriction of the one on presheaves of abelian groups”.
+**`Stacks.PresheafOfModules.Pullback.toPresheaf_map_pullbackModuleAdjunction_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean, line 434](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PullbackPresheafAdjunction.lean#L434). The attribute's comment: “the bijection is the restriction of the one on presheaves of abelian groups”.
 
 > **Stacks 008U, compatibility with abelian presheaves.**  The bijection of
 > `pullbackModuleAdjunction` is the restriction to module maps of the bijection
@@ -128,7 +128,7 @@ theorem toPresheaf_map_pullbackModuleAdjunction_homEquiv {M : PresheafOfModules.
 
 [Tag 008V](https://stacks.math.columbia.edu/tag/008V) in the Stacks Project.
 
-**`Stacks.PresheafOfModules.TensorPullback.tensorPullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/TensorPullbackAdjunction.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/TensorPullbackAdjunction.lean#L672). The attribute's comment: “the explicit `O ⊗_{p, f_p f_*O} f_p (-)` is left adjoint to `f_*`”.
+**`Stacks.PresheafOfModules.TensorPullback.tensorPullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/TensorPullbackAdjunction.lean, line 663](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/TensorPullbackAdjunction.lean#L663). The attribute's comment: “the explicit `O ⊗_{p, f_p f_*O} f_p (-)` is left adjoint to `f_*`”.
 
 > **Stacks 008V.** Let `f : X ⟶ Y` be a continuous map of topological spaces and `O` a
 > presheaf of rings on `X`. The functor `G ↦ O ⊗_{p, f_p f_*O} f_p G` (`tensorPullback`), the
@@ -149,14 +149,14 @@ noncomputable def tensorPullbackAdjunction :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean#L26) (StacksFrontier): “the pushforward `f_*𝒪` of the sheaf of rings, along the continuous functor `Opens.map f`”. References: SGA 4 IV (4.9.1).
-- [`SheafOfModules.pushforward`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.pushforward#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean#L28) (StacksFrontier): “pushforward of sheaves of modules: `f_*ℱ` is a sheaf of `f_*𝒪`-modules, functorially in `ℱ`”. References: EGA 0 (4.2.1), “more general”; EGA 0 (5.3.12); EGA II (1.1.1), “more general”; EGA II (1.1.2), “partial”; EGA IV (21.13.3); SGA 4 IV (11.2.2), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 Vbis (1.3.6), “special case”.
+- [`CategoryTheory.Functor.sheafPushforwardContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean#L26) (StacksFrontier): “the pushforward `f_*𝒪` of the sheaf of rings, along the continuous functor `Opens.map f`”. References: SGA 4 IV (4.9.1).
+- [`SheafOfModules.pushforward`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.pushforward#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean, line 28](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/PushforwardSheaf.lean#L28) (StacksFrontier): “pushforward of sheaves of modules: `f_*ℱ` is a sheaf of `f_*𝒪`-modules, functorially in `ℱ`”. References: EGA 0 (4.2.1), “more general”; EGA 0 (5.3.12); EGA II (1.1.1), “more general”; EGA II (1.1.2), “partial”; EGA IV (21.13.3); SGA 4 IV (11.2.2), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 Vbis (1.3.6), “special case”.
 
 ## Tag 008X, a lemma
 
 [Tag 008X](https://stacks.math.columbia.edu/tag/008X) in the Stacks Project.
 
-**`InverseImageModules.exists_moduleStructure_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/InverseImage.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/InverseImage.lean#L135).
+**`InverseImageModules.exists_moduleStructure_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/InverseImage.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/InverseImage.lean#L135).
 
 > **Stacks Tag 008X.**
 >
@@ -183,7 +183,7 @@ theorem exists_moduleStructure_inverseImage :
 
 [Tag 008Y](https://stacks.math.columbia.edu/tag/008Y) in the Stacks Project.
 
-**`InverseImageModules.inverseImageModulesHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/InverseImageAdjunction.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/InverseImageAdjunction.lean#L108). The attribute's comment: “hom-set bijection of `inverseImageModulesAdjunction`, inverse image of 008X”.
+**`InverseImageModules.inverseImageModulesHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/InverseImageAdjunction.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/InverseImageAdjunction.lean#L108). The attribute's comment: “hom-set bijection of `inverseImageModulesAdjunction`, inverse image of 008X”.
 
 > **Stacks Tag 008Y.**
 >
@@ -206,7 +206,7 @@ noncomputable def inverseImageModulesHomEquiv (G : SheafOfModules.{u} O)
 
 [Tag 008Z](https://stacks.math.columbia.edu/tag/008Z) in the Stacks Project.
 
-**`TensorInverseImagePushforward.adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/TensorInverseImagePushforward.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/TensorInverseImagePushforward.lean#L362).
+**`TensorInverseImagePushforward.adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/TensorInverseImagePushforward.lean, line 362](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Functors/Module/TensorInverseImagePushforward.lean#L362).
 
 > **Stacks 008Z.** Let `f : X ⟶ Y` be a continuous map, `𝒪` a sheaf of (commutative) rings on
 > `X`, `ℱ` a sheaf of `𝒪`-modules and `𝒢` a sheaf of `f_*𝒪`-modules. Then
@@ -227,4 +227,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.24, Tag 008R](https://stacks.math.columbia.edu/tag/008R)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

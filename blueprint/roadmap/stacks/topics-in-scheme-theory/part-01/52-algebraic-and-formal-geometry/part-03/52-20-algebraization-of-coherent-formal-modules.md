@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.20 Algebraization of coherent formal modules, IV
 
-Section 52.20 of the Stacks Project, [Tag 0EHJ](https://stacks.math.columbia.edu/tag/0EHJ). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.20 of the Stacks Project, [Tag 0EHJ](https://stacks.math.columbia.edu/tag/0EHJ). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DXU, a lemma
 
 [Tag 0DXU](https://stacks.math.columbia.edu/tag/0DXU) in the Stacks Project.
 
-**`Stacks.Algebraization.canonicallyExtends_and_isCompletion_of_depthDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalDepthDimensionWhole.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalDepthDimensionWhole.lean#L151).
+**`Stacks.Algebraization.canonicallyExtends_and_isCompletion_of_depthDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalDepthDimensionWhole.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalDepthDimensionWhole.lean#L151).
 
 > **[Stacks, Tag 0DXU].**  In the situation of [Stacks, Tag 0EHC] let `(ℱₙ)` be an object of
 > `Coh(U, I𝒪_U)`.  Assume
@@ -55,7 +55,7 @@ theorem canonicallyExtends_and_isCompletion_of_depthDim
           (kerComapSystem S F))
 ```
 
-**`Stacks.RingTheory.AssociatedPrimes.associatedPrimes_quotient_span_singleton_pow_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AssociatedPrime/NonZeroDivisorPowers.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AssociatedPrime/NonZeroDivisorPowers.lean#L138). The attribute's comment: “the step of the proof asserting that the associated primes of A/fⁿA agree with those of A/fA, for f a nonzerodivisor”.
+**`Stacks.RingTheory.AssociatedPrimes.associatedPrimes_quotient_span_singleton_pow_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AssociatedPrime/NonZeroDivisorPowers.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/AssociatedPrime/NonZeroDivisorPowers.lean#L138). The attribute's comment: “the step of the proof asserting that the associated primes of A/fⁿA agree with those of A/fA, for f a nonzerodivisor”.
 
 > **Stacks Project, Tag 0DXU (the associated-primes step).** For a nonzerodivisor `f` of a
 > commutative ring `A`, the associated primes of `A ⧸ fⁿ⁺¹A` are those of `A ⧸ fA`.
@@ -66,7 +66,7 @@ theorem associatedPrimes_quotient_span_singleton_pow_succ (hf : f ∈ nonZeroDiv
       associatedPrimes A (A ⧸ Ideal.span {f})
 ```
 
-**`Stacks.RingTheory.PrincipalDivisorDepth.mem_of_depth_add_ringKrullDim_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L265). The attribute's comment: “the step of the proof deducing from hypothesis (6) that a prime below a point of V(f) other than the closed point, whose depth plus dimension is at most 3, contains f — the source's 'condition (6) tells us these primes are contained in V(f)'”.
+**`Stacks.RingTheory.PrincipalDivisorDepth.mem_of_depth_add_ringKrullDim_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 265](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L265). The attribute's comment: “the step of the proof deducing from hypothesis (6) that a prime below a point of V(f) other than the closed point, whose depth plus dimension is at most 3, contains f — the source's 'condition (6) tells us these primes are contained in V(f)'”.
 
 > **Stacks Project, Tag 0DXU (hypothesis (6) confines the support to `V(f)`).** Let `f` be an
 > element of a local ring `A` satisfying hypothesis (6), and let `𝔮` be a prime containing `f` and
@@ -90,7 +90,7 @@ theorem mem_of_depth_add_ringKrullDim_le_three [IsLocalRing A] {f : A}
     f ∈ p.asIdeal
 ```
 
-**`Stacks.RingTheory.PrincipalDivisorDepth.exists_mulPowQuotSMulTop_eq_zero_of_depthDimOffDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L337). The attribute's comment: “the step of the proof concluding, for a finite module whose support hypothesis (6) places in V(f), that multiplication by fⁿ from N/fN to N/f^(n+1)N vanishes for all large n — the source's 'thus the desired vanishing for n large enough', in both the dim(A/q) = 2 and the dim(A/q) = 1 case”.
+**`Stacks.RingTheory.PrincipalDivisorDepth.exists_mulPowQuotSMulTop_eq_zero_of_depthDimOffDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L337). The attribute's comment: “the step of the proof concluding, for a finite module whose support hypothesis (6) places in V(f), that multiplication by fⁿ from N/fN to N/f^(n+1)N vanishes for all large n — the source's 'thus the desired vanishing for n large enough', in both the dim(A/q) = 2 and the dim(A/q) = 1 case”.
 
 > **Stacks Project, Tag 0DXU (the vanishing for `n` large enough).** Let `f` be an element of
 > a local ring `A` satisfying hypothesis (6), let `𝔮` be a prime containing `f` and different from
@@ -115,7 +115,7 @@ theorem exists_mulPowQuotSMulTop_eq_zero_of_depthDimOffDivisor [IsLocalRing A] {
     ∃ c : ℕ, ∀ n, c ≤ n → mulPowQuotSMulTop f N n = 0
 ```
 
-**`Stacks.RingTheory.PrincipalDivisorDepth.one_le_depth_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L417). The attribute's comment: “the step of the proof asserting that A\_q has depth at least 1 for a prime q containing the nonzerodivisor f, which is what makes H^0 of the dualizing complex of A\_q vanish in the case dim(A/q) = 2”.
+**`Stacks.RingTheory.PrincipalDivisorDepth.one_le_depth_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 417](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L417). The attribute's comment: “the step of the proof asserting that A\_q has depth at least 1 for a prime q containing the nonzerodivisor f, which is what makes H^0 of the dualizing complex of A\_q vanish in the case dim(A/q) = 2”.
 
 > **Stacks Project, Tag 0DXU (`depth(A_𝔮) ≥ 1` because `f` is a nonzerodivisor).** For `f` a
 > nonzerodivisor of a Noetherian ring `A` and `𝔮` a prime containing `f`, the local ring `A_𝔮` has
@@ -132,7 +132,7 @@ theorem one_le_depth_localization [IsNoetherianRing A] {f : A} (hf : f ∈ nonZe
     1 ≤ Module.depth A[q] (maximalIdeal A[q]) A[q]
 ```
 
-**`Stacks.RingTheory.PrincipalDivisorDepth.two_le_depth_localization_of_depthDimOnDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L444). The attribute's comment: “the step of the proof asserting that A\_q has depth at least 2 when dim(A/q) = 1, deduced from hypothesis (5) at q together with f being a nonzerodivisor”.
+**`Stacks.RingTheory.PrincipalDivisorDepth.two_le_depth_localization_of_depthDimOnDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean, line 444](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Depth/PrincipalDivisorDepthDimension.lean#L444). The attribute's comment: “the step of the proof asserting that A\_q has depth at least 2 when dim(A/q) = 1, deduced from hypothesis (5) at q together with f being a nonzerodivisor”.
 
 > **Stacks Project, Tag 0DXU (`depth(A_𝔮) ≥ 2` when `dim(A/𝔮) = 1`).** Let `f` be a
 > nonzerodivisor of a Noetherian local ring `A` satisfying hypothesis (5), and let `𝔮` be a prime
@@ -157,7 +157,7 @@ theorem two_le_depth_localization_of_depthDimOnDivisor [IsNoetherianRing A] [IsL
 
 [Tag 0DXV](https://stacks.math.columbia.edu/tag/0DXV) in the Stacks Project.
 
-**`Stacks.Algebraization.CompleteNormalDomain.satisfiesAssumptions_and_isCompletion_of_isFiniteLocallyFreeAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompleteNormalDomainAlgebraization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CompleteNormalDomainAlgebraization.lean#L166). The attribute's comment: “assumptions (1), (2), (3), (5) and (6) of Lemma 0DXU hold, and every object of Coh(U, f O\_U) with finite locally free terms (a vector bundle on the formal completion of U along U ∩ V(f)) extends to X and is the completion of a coherent O\_U-module, by Lemma 0EJ9”.
+**`Stacks.Algebraization.CompleteNormalDomain.satisfiesAssumptions_and_isCompletion_of_isFiniteLocallyFreeAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompleteNormalDomainAlgebraization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CompleteNormalDomainAlgebraization.lean#L166). The attribute's comment: “assumptions (1), (2), (3), (5) and (6) of Lemma 0DXU hold, and every object of Coh(U, f O\_U) with finite locally free terms (a vector bundle on the formal completion of U along U ∩ V(f)) extends to X and is the completion of a coherent O\_U-module, by Lemma 0EJ9”.
 
 > **Stacks Project, Tag 0DXV.** Let `(A, 𝔪)` be a complete Noetherian normal local domain of
 > dimension at least four and let `f ∈ 𝔪` be nonzero. Then the algebraization situation with
@@ -206,7 +206,7 @@ theorem satisfiesAssumptions_and_isCompletion_of_isFiniteLocallyFreeAdic (A : Ty
 
 [Tag 0EHK](https://stacks.math.columbia.edu/tag/0EHK) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_matlisDual_approximation_localCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximation.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximation.lean#L455). The attribute's comment: “the dualization; the essentially constant Matlis dual model of the local cohomology system, which local duality 0AAK and Matlis duality 08Z9 supply in the source, is an explicit hypothesis”.
+**`Stacks.Algebraization.exists_matlisDual_approximation_localCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximation.lean, line 455](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximation.lean#L455). The attribute's comment: “the dualization; the essentially constant Matlis dual model of the local cohomology system, which local duality 0AAK and Matlis duality 08Z9 supply in the source, is an explicit hypothesis”.
 
 > **Stacks Project, Tag 0EHK.** In the situation of Stacks 0EHC, let `(M_n)` be an inverse
 > system of `A`-modules as in Stacks 0DXT and let `(ℱ_n)` be the corresponding object of
@@ -261,7 +261,7 @@ public theorem exists_matlisDual_approximation_localCohomologySystem
               (homOfLE (Nat.add_le_add_left hmn n₀)).op).hom (LinearMap.ker (φ n))))
 ```
 
-**`Stacks.Algebraization.exists_matlisDual_approximation_localCohomologySystem_of_inequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximationOfInequalities.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximationOfInequalities.lean#L52).
+**`Stacks.Algebraization.exists_matlisDual_approximation_localCohomologySystem_of_inequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximationOfInequalities.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LocalCohomologyMatlisApproximationOfInequalities.lean#L52).
 
 > **Stacks Project, Tag 0EHK.** In the situation of Stacks 0EHC, let `(M_n)` be an inverse
 > system of `A`-modules as in Stacks 0DXT and let `(ℱ_n)` be the corresponding object of
@@ -307,7 +307,7 @@ public theorem exists_matlisDual_approximation_localCohomologySystem_of_inequali
 
 [Tag 0EJ9](https://stacks.math.columbia.edu/tag/0EJ9) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_of_isLocalRing_of_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean#L89). The attribute's comment: “first assertion: (ℱₙ) extends to X”.
+**`Stacks.Algebraization.extendsToX_of_isLocalRing_of_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean#L89). The attribute's comment: “first assertion: (ℱₙ) extends to X”.
 
 > **Stacks Project, Tag 0EJ9.** In Situation 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`.
 > Assume (1) `A` is local and `𝔞 = 𝔪` is the maximal ideal, (2) `A` has a dualizing complex,
@@ -325,7 +325,7 @@ public theorem extendsToX_of_isLocalRing_of_eq_span_singleton
     ExtendsToX S (toKerSystem S F)
 ```
 
-**`Stacks.Algebraization.essImage_completionFunctor_of_isLocalRing_of_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean#L117). The attribute's comment: “in-particular clause: over an I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪\_U-module”.
+**`Stacks.Algebraization.essImage_completionFunctor_of_isLocalRing_of_eq_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ExtensionPrincipalLocalTheorem.lean#L117). The attribute's comment: “in-particular clause: over an I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks Project, Tag 0EJ9, in-particular clause.** In the situation of
 > `Stacks.Algebraization.extendsToX_of_isLocalRing_of_eq_span_singleton`, if moreover `A` is
@@ -350,7 +350,7 @@ public theorem essImage_completionFunctor_of_isLocalRing_of_eq_span_singleton
 
 [Tag 0EJA](https://stacks.math.columbia.edu/tag/0EJA) in the Stacks Project.
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_two_three_imp_and_iff_of_isCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesUnwindingCorrected.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesUnwindingCorrected.lean#L69). The attribute's comment: “corrected form: the necessity direction at hypotheses (1) and (2), and the equivalence with (3) A/I catenary and (4) the completed local rings of U at the points of U ∩ Y of dimension one universally catenary with Cohen-Macaulay formal fibres added; (3) and (4) hold when A has a dualizing complex. The published sufficiency direction at (1) and (2) is false, by Stacks.NonCatenaryExample.not\_stacks0EJA, an example in which A/I is not catenary”.
+**`Stacks.Algebraization.satisfiesDepthInequalities_two_three_imp_and_iff_of_isCatenary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesUnwindingCorrected.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesUnwindingCorrected.lean#L69). The attribute's comment: “corrected form: the necessity direction at hypotheses (1) and (2), and the equivalence with (3) A/I catenary and (4) the completed local rings of U at the points of U ∩ Y of dimension one universally catenary with Cohen-Macaulay formal fibres added; (3) and (4) hold when A has a dualizing complex. The published sufficiency direction at (1) and (2) is false, by Stacks.NonCatenaryExample.not\_stacks0EJA, an example in which A/I is not catenary”.
 
 > **Stacks 0EJA, corrected.** In Situation 0EHC let `(ℱ_n)` be an object of `Coh(U, I𝒪_U)`.
 > Assume (1) `A` is local with `𝔞 = 𝔪` and (2) `cd(A, I) = 1`. Then:
@@ -398,7 +398,7 @@ public theorem satisfiesDepthInequalities_two_three_imp_and_iff_of_isCatenary
                   (ringKrullDim (completedLocalRing (idealOnOpen S) y ⧸ p.asIdeal))))
 ```
 
-**`Stacks.NonCatenaryExample.not_stacks0EJA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/NonCatenaryCounterexample/Final.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/NonCatenaryCounterexample/Final.lean#L40). The attribute's comment: “refutation of the published 'if' direction: at hypotheses (1) and (2) alone, the depth inequality at the points of U ∩ Y of dimension one does not imply the (2, 3)-inequalities; in the example A/I is not catenary”.
+**`Stacks.NonCatenaryExample.not_stacks0EJA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/NonCatenaryCounterexample/Final.lean, line 40](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/NonCatenaryCounterexample/Final.lean#L40). The attribute's comment: “refutation of the published 'if' direction: at hypotheses (1) and (2) alone, the depth inequality at the points of U ∩ Y of dimension one does not imply the (2, 3)-inequalities; in the example A/I is not catenary”.
 
 > **Stacks 0EJA is false as published.** There is an algebraization situation (Situation 0EHC)
 > with `A` Noetherian local, `𝔞 = 𝔪`, `cd(A, I) = 1`, and an object `(ℱₙ)` of `Coh(U, I𝒪_U)` such
@@ -425,7 +425,7 @@ theorem not_stacks0EJA :
 
 [Tag 0EJB](https://stacks.math.columbia.edu/tag/0EJB) in the Stacks Project.
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_of_finiteLocallyFreeOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesLocallyFreeOutside.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesLocallyFreeOutside.lean#L669).
+**`Stacks.Algebraization.satisfiesDepthInequalities_of_finiteLocallyFreeOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesLocallyFreeOutside.lean, line 669](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesLocallyFreeOutside.lean#L669).
 
 > In Situation 0EHC let `(ℱ_n)` be an object of `Coh(U, I𝒪_U)`. Assume (1) `A` is local with
 > `𝔞 = 𝔪`, (2) `A` has a dualizing complex, (3) `cd(A, I) = 1`, (4) for `y ∈ U ∩ Y` the module
@@ -469,7 +469,7 @@ public theorem satisfiesDepthInequalities_of_finiteLocallyFreeOutside
 
 [Tag 0EJC](https://stacks.math.columbia.edu/tag/0EJC) in the Stacks Project.
 
-**`Stacks.Algebraization.essImage_completionFunctor_of_hasSerreCompletedStalkConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/PuncturedSpectrumSerreAlgebraizationTheorem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/PuncturedSpectrumSerreAlgebraizationTheorem.lean#L77).
+**`Stacks.Algebraization.essImage_completionFunctor_of_hasSerreCompletedStalkConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/PuncturedSpectrumSerreAlgebraizationTheorem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/PuncturedSpectrumSerreAlgebraizationTheorem.lean#L77).
 
 > **Stacks Project, Tag 0EJC.** Let `(A, 𝔪)` be a Noetherian local ring which has a dualizing
 > complex and is complete with respect to `f ∈ 𝔪`, let `(ℱₙ)` be an object of `Coh(U, f𝒪_U)` where
@@ -500,4 +500,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.20, Tag 0EHJ](https://stacks.math.columbia.edu/tag/0EHJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

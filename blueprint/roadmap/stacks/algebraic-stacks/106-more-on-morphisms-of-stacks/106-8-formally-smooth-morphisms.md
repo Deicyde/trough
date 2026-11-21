@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.8 Formally smooth morphisms
 
-Section 106.8 of the Stacks Project, [Tag 0DNV](https://stacks.math.columbia.edu/tag/0DNV). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.8 of the Stacks Project, [Tag 0DNV](https://stacks.math.columbia.edu/tag/0DNV). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DNW, a definition
 
 [Tag 0DNW](https://stacks.math.columbia.edu/tag/0DNW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsFormallySmoothOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean#L53). The attribute's comment: “formal smoothness of a morphism of algebraic stacks is formal smoothness on”.
+**`AlgebraicGeometry.Stack.IsFormallySmoothOnObjects`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothOnObjects.lean#L53). The attribute's comment: “formal smoothness of a morphism of algebraic stacks is formal smoothness on”.
 
 > The first-order lifting condition for a 1-morphism of categories fibred in groupoids, with
 > the comparison square required to commute: the restriction along a first-order thickening of
@@ -31,7 +31,7 @@ def IsFormallySmoothOnObjects
 
 [Tag 0DNX](https://stacks.math.columbia.edu/tag/0DNX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.InfinitesimalLiftingDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InfinitesimalLifting.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InfinitesimalLifting.lean#L52).
+**`AlgebraicGeometry.Stack.InfinitesimalLiftingDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InfinitesimalLifting.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/InfinitesimalLifting.lean#L52).
 
 > The solid part of a 2-commutative infinitesimal lifting diagram for a
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`: a first-order thickening of affine
@@ -49,7 +49,7 @@ structure InfinitesimalLiftingDiagram
 
 [Tag 0DNY](https://stacks.math.columbia.edu/tag/0DNY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFormallySmoothOnObjects_iff_nonempty_dottedArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothDottedArrows.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothDottedArrows.lean#L638).
+**`AlgebraicGeometry.Stack.isFormallySmoothOnObjects_iff_nonempty_dottedArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothDottedArrows.lean, line 638](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FormallySmoothDottedArrows.lean#L638).
 
 > **Stacks 0DNY.** A 1-morphism of algebraic stacks over `S` is formally smooth exactly when
 > every infinitesimal lifting diagram for it — the solid diagram 0DNX, i.e. a first-order
@@ -70,7 +70,7 @@ theorem isFormallySmoothOnObjects_iff_nonempty_dottedArrow
 
 [Tag 0H1I](https://stacks.math.columbia.edu/tag/0H1I) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L199). The attribute's comment: “base change of a formally smooth morphism of algebraic stacks is formally smooth”.
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L199). The attribute's comment: “base change of a formally smooth morphism of algebraic stacks is formally smooth”.
 
 > **Stacks 06D1.** Formal smoothness on objects is stable under base change.
 
@@ -90,7 +90,7 @@ theorem isFormallySmoothOnObjects_baseChange
 
 [Tag 0H1J](https://stacks.math.columbia.edu/tag/0H1J) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L413). The attribute's comment: “the case of algebraic stacks, formally smooth being formally smooth on objects”.
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean, line 413](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothOnObjects.lean#L413). The attribute's comment: “the case of algebraic stacks, formally smooth being formally smooth on objects”.
 
 > **Stacks 06D2.** A composite of morphisms formally smooth on objects is formally smooth on
 > objects.
@@ -109,7 +109,7 @@ theorem isFormallySmoothOnObjects_comp
 
 [Tag 0H1K](https://stacks.math.columbia.edu/tag/0H1K) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_iff_formallySmooth_terminalFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothBaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothBaseChange.lean#L224).
+**`AlgebraicGeometry.BigFppfOver.isFormallySmoothOnObjects_iff_formallySmooth_terminalFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothBaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/FormallySmoothBaseChange.lean#L224).
 
 > **Stacks 0H1K.** A 1-morphism of categories fibred in groupoids over the big fppf category
 > of `S` which is representable by algebraic spaces is formally smooth on objects exactly when,
@@ -141,7 +141,7 @@ theorem isFormallySmoothOnObjects_iff_formallySmooth_terminalFrom (p : 𝒳 ⟶ 
 
 [Tag 0DNZ](https://stacks.math.columbia.edu/tag/0DNZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_dottedArrow_of_isSmooth_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackLift.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackLift.lean#L204).
+**`AlgebraicGeometry.Stack.exists_dottedArrow_of_isSmooth_of_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackLift.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackLift.lean#L204).
 
 > **Stacks 0DNZ.** Let `T ⟶ T'` be a first-order thickening of affine schemes, `𝒳` an algebraic
 > stack whose structure morphism `f : 𝒳 ⟶ T'` is smooth, and `x : T ⟶ 𝒳` a morphism over `T'`
@@ -173,7 +173,7 @@ theorem exists_dottedArrow_of_isSmooth_of_isFirstOrderThickening
 
 [Tag 0DP0](https://stacks.math.columbia.edu/tag/0DP0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_iff_isLocallyOfFinitePresentation_and_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothFormallySmooth.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothFormallySmooth.lean#L343). References: EGA 0 (19.0.1), “more general”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_iff_isLocallyOfFinitePresentation_and_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothFormallySmooth.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothFormallySmooth.lean#L343). References: EGA 0 (19.0.1), “more general”.
 
 > **Stacks 0DP0 (infinitesimal lifting criterion).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks over `S` is smooth if and only if it is locally of finite presentation and formally
@@ -195,4 +195,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.8, Tag 0DNV](https://stacks.math.columbia.edu/tag/0DNV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

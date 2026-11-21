@@ -8,7 +8,7 @@ proof: formalized
 
 # Interactions on a local net
 
-The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Basic`, [Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Basic`, [Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean): 6 declarations, 6 with a docstring.
 
 > An interaction is a family of local observables, each associated with a region of the net.
 
@@ -31,21 +31,22 @@ The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Basic`, [Physlib/Pr
 
 ## A. Interactions
 
-**`ProbabilisticTheory.Interaction`**, a structure, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L49).
+**`ProbabilisticTheory.Interaction`**, a structure, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L46).
 
 > A family of local observables on `N`, indexed by `ι`, with specified supports.
 
 ```lean
-structure Interaction (N : LocalNet R A) (ι : Type*) where
+structure ProbabilisticTheory.Interaction {R : Type*} [Preorder R]
+    {A : R → ProbabilisticTheory} (N : LocalNet R A) (ι : Type*) where
   /-- The supporting region of each term. -/
   supp : ι → R
   /-- The observable associated with each term. -/
-  term : ∀ i, A (supp i)
+  term : ∀ i, (A (supp i)).Observables
 ```
 
 ## B. Interaction terms in a region
 
-**`ProbabilisticTheory.Interaction.labelsIn`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L62).
+**`ProbabilisticTheory.Interaction.labelsIn`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L61).
 
 > The labels of terms supported in `Λ`.
 
@@ -53,15 +54,15 @@ structure Interaction (N : LocalNet R A) (ι : Type*) where
 def labelsIn (Λ : R) : Set ι
 ```
 
-**`ProbabilisticTheory.Interaction.termIn`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L66).
+**`ProbabilisticTheory.Interaction.termIn`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L65).
 
 > The term `i` expressed in `Λ`, or zero if its support is not contained in `Λ`.
 
 ```lean
-noncomputable def termIn (Λ : R) (i : ι) : A Λ
+noncomputable def termIn (Λ : R) (i : ι) : (A Λ).Observables
 ```
 
-**`ProbabilisticTheory.Interaction.incl_termIn`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L71).
+**`ProbabilisticTheory.Interaction.incl_termIn`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L70).
 
 > Including a term from `Λ` into `Λ'` agrees with evaluating it in `Λ'` whenever
 > its support is contained in `Λ`, and gives zero otherwise.
@@ -71,23 +72,23 @@ lemma incl_termIn {Λ Λ' : R} (h : Λ ≤ Λ') (i : ι) :
     N.incl h (Φ.termIn Λ i) = (Φ.labelsIn Λ).indicator (Φ.termIn Λ') i
 ```
 
-**`ProbabilisticTheory.Interaction.termIn_add`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L78).
+**`ProbabilisticTheory.Interaction.termIn_add`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L77).
 
 > Evaluating interaction terms in a region preserves addition.
 
 ```lean
-lemma termIn_add (s : ι → R) (t t' : ∀ i, A (s i)) (Λ : R) (i : ι) :
+lemma termIn_add (s : ι → R) (t t' : ∀ i, (A (s i)).Observables) (Λ : R) (i : ι) :
     (⟨s, t + t'⟩ : Interaction N ι).termIn Λ i =
       (⟨s, t⟩ : Interaction N ι).termIn Λ i +
         (⟨s, t'⟩ : Interaction N ι).termIn Λ i
 ```
 
-**`ProbabilisticTheory.Interaction.termIn_smul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L85).
+**`ProbabilisticTheory.Interaction.termIn_smul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean#L84).
 
 > Evaluating interaction terms in a region preserves scalar multiplication.
 
 ```lean
-lemma termIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, A (s i)) (Λ : R) (i : ι) :
+lemma termIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, (A (s i)).Observables) (Λ : R) (i : ι) :
     (⟨s, c • t⟩ : Interaction N ι).termIn Λ i =
       c • (⟨s, t⟩ : Interaction N ι).termIn Λ i
 ```
@@ -98,4 +99,4 @@ lemma termIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, A (s i)) (Λ : R) (i : ι
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean)
+- [Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean)

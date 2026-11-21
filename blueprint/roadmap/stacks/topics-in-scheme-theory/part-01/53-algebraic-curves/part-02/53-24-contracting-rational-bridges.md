@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.24 Contracting rational bridges
 
-Section 53.24 of the Stacks Project, [Tag 0E7M](https://stacks.math.columbia.edu/tag/0E7M). 6 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 53.24 of the Stacks Project, [Tag 0E7M](https://stacks.math.columbia.edu/tag/0E7M). 6 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E3M, an example
 
 [Tag 0E3M](https://stacks.math.columbia.edu/tag/0E3M) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRationalBridge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Basic.lean#L48). The attribute's comment: “rational\_bridge”.
+**`AlgebraicGeometry.IsRationalBridge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Basic.lean#L48). The attribute's comment: “rational\_bridge”.
 
 > An integral irreducible component is a rational bridge if the closure of its complement is
 > nonempty, the intersection has degree two over its global functions, and its genus is zero.
@@ -24,7 +24,7 @@ def IsRationalBridge (k : Type u) [Field k] (X : Scheme.{u}) [X.Over (Spec (.of 
     [IsProper (X ↘ Spec (.of k))] (C : X.IdealSheafData) : Prop
 ```
 
-**`Stacks.Curves.exists_isProper_structureMorphism_and_genus_eq_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionGenus.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionGenus.lean#L112). The attribute's comment: “Y is proper over k of dimension one with H⁰(Y, 𝒪\_Y) = k and the genus of X”.
+**`Stacks.Curves.exists_isProper_structureMorphism_and_genus_eq_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionGenus.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionGenus.lean#L112). The attribute's comment: “Y is proper over k of dimension one with H⁰(Y, 𝒪\_Y) = k and the genus of X”.
 
 > **The target of a contraction of a rational bridge is a proper scheme over `k` of dimension
 > one with `H⁰(Y, 𝒪_Y) = k` and the genus of `X`.** That is, there is a morphism
@@ -44,7 +44,7 @@ theorem exists_isProper_structureMorphism_and_genus_eq_contraction_bridge
       genus g = genus (X ↘ Spec (.of k))
 ```
 
-**`Stacks.Curves.hasAtWorstNodalSingularities_pushoutScheme_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionNodal.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionNodal.lean#L382). The attribute's comment: “the singularities of Y are at-worst-nodal”.
+**`Stacks.Curves.hasAtWorstNodalSingularities_pushoutScheme_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionNodal.lean, line 382](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/ContractionNodal.lean#L382). The attribute's comment: “the singularities of Y are at-worst-nodal”.
 
 > The singularities of the contraction `Y` of a rational bridge, the pushout
 > `AlgebraicGeometry.pushoutScheme` of `Stacks.Curves.bridgePushoutSituation` over `k` by
@@ -60,7 +60,7 @@ theorem hasAtWorstNodalSingularities_pushoutScheme_bridge
     HasAtWorstNodalSingularities k (pushoutScheme (bridgePushoutSituation hdim hnodal hC))
 ```
 
-**`Stacks.Curves.isField_globalSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean#L76). The attribute's comment: “k' = H⁰(C, 𝒪\_C) is a field”.
+**`Stacks.Curves.isField_globalSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean#L76). The attribute's comment: “k' = H⁰(C, 𝒪\_C) is a field”.
 
 > **The ring of global functions on a rational bridge is a field**: the bridge is an integral
 > scheme proper over `k`, so its global functions form a field ([Stacks, Tag 0BUG]).
@@ -75,7 +75,7 @@ theorem isField_globalSections_bridge (k : Type u) [Field k] (X : Scheme.{u})
     IsField Γ(C.subscheme, ⊤)
 ```
 
-**`Stacks.Curves.isNode_of_mem_intersection_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean#L106). The attribute's comment: “the points of C ∩ X' are nodes of X”.
+**`Stacks.Curves.isNode_of_mem_intersection_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Intersection.lean#L106). The attribute's comment: “the points of C ∩ X' are nodes of X”.
 
 > **Every point of the intersection of a rational bridge with the closure of its complement is
 > a node of the ambient curve.**  At least two irreducible components of `X` pass through each
@@ -92,7 +92,7 @@ theorem isNode_of_mem_intersection_bridge (k : Type u) [Field k] (X : Scheme.{u}
     IsNode k X ((intersectionWithComplementaryCurveIdeal C).subschemeι.base w)
 ```
 
-**`Stacks.Curves.moduleFinite_and_isSeparable_globalSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean#L415). The attribute's comment: “k'/k is a finite separable extension of fields”.
+**`Stacks.Curves.moduleFinite_and_isSeparable_globalSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean, line 415](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean#L415). The attribute's comment: “k'/k is a finite separable extension of fields”.
 
 > **The field of global functions on a rational bridge is a finite separable extension of the
 > base field.**  This is the assertion "`k'/k` is a finite separable extension of fields" of
@@ -128,7 +128,7 @@ theorem moduleFinite_and_isSeparable_globalSections_bridge
     Module.Finite k Γ(C.subscheme, ⊤) ∧ Algebra.IsSeparable k Γ(C.subscheme, ⊤)
 ```
 
-**`Stacks.Curves.isField_and_isSeparable_or_algEquiv_prod_intersectionSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean#L476). The attribute's comment: “k''/k' is either a degree two separable extension of fields or k'' = k' × k'”.
+**`Stacks.Curves.isField_and_isSeparable_or_algEquiv_prod_intersectionSections_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/IntersectionSections.lean#L476). The attribute's comment: “k''/k' is either a degree two separable extension of fields or k'' = k' × k'”.
 
 > **The degree two extension `k''/k'` of [Stacks, Tag 0E3M] is either a separable field
 > extension or the square of `k'`.**  Here `C ⊆ X` is a rational bridge of a proper one-dimensional
@@ -162,7 +162,7 @@ theorem isField_and_isSeparable_or_algEquiv_prod_intersectionSections_bridge
           (Γ(C.subscheme, ⊤) × Γ(C.subscheme, ⊤)))
 ```
 
-**`Stacks.Curves.exists_ringEquiv_completedLocalRing_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutCompletionShape.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutCompletionShape.lean#L145). The attribute's comment: “𝒪^∧\_\{Y,y} ≅ \{f ∈ k''[[s]] : f(0) ∈ k'}, and ≅ k'[[s,t]]/(st) when k'' = k' × k'”.
+**`Stacks.Curves.exists_ringEquiv_completedLocalRing_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutCompletionShape.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutCompletionShape.lean#L145). The attribute's comment: “𝒪^∧\_\{Y,y} ≅ \{f ∈ k''[[s]] : f(0) ∈ k'}, and ≅ k'[[s,t]]/(st) when k'' = k' × k'”.
 
 > **The completed local ring of the contraction of a rational bridge at the image of
 > `Spec k'`.**  Let `k` be a field, `X` a proper scheme over `k` of dimension one with
@@ -206,7 +206,7 @@ theorem exists_ringEquiv_completedLocalRing_contraction_bridge
                             MvPowerSeries.X 1})))
 ```
 
-**`Stacks.Curves.exists_pushout_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutContraction.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutContraction.lean#L326). The attribute's comment: “the pushout Y along C ∩ X' ⟶ Spec k' exists and receives the contraction c : X ⟶ Y”.
+**`Stacks.Curves.exists_pushout_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutContraction.lean, line 326](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/PushoutContraction.lean#L326). The attribute's comment: “the pushout Y along C ∩ X' ⟶ Spec k' exists and receives the contraction c : X ⟶ Y”.
 
 > **The pushout of a rational bridge exists and carries a contraction of the bridge.**  The
 > pushout square
@@ -226,7 +226,7 @@ theorem exists_pushout_contraction_bridge
     ∃ (Y : Scheme.{u}) (c : X ⟶ Y), IsContractionOfRationalBridge hC c
 ```
 
-**`Stacks.Curves.smoothAt_bridge_and_complementaryCurve_of_mem_intersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/SmoothIntersection.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/SmoothIntersection.lean#L275). The attribute's comment: “the points of C ∩ X' are smooth points of C and of X'”.
+**`Stacks.Curves.smoothAt_bridge_and_complementaryCurve_of_mem_intersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/SmoothIntersection.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/SmoothIntersection.lean#L275). The attribute's comment: “the points of C ∩ X' are smooth points of C and of X'”.
 
 > **The points of `C ∩ X'` are smooth points on both `C` and `X'`.** This is the clause of
 > [Stacks, Tag 0E3M] which the source draws from [Stacks, Tag 0E38] after observing that the
@@ -251,7 +251,7 @@ theorem smoothAt_bridge_and_complementaryCurve_of_mem_intersection
             intersectionWithComplementaryCurveIdeal C)).base w)
 ```
 
-**`Stacks.Curves.isIso_structureSheafToPushforward_and_isZero_rightDerived_one_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/StructurePushforward.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/StructurePushforward.lean#L249). The attribute's comment: “c\_*𝒪\_X = 𝒪\_Y and R¹c\_*𝒪\_X = 0”.
+**`Stacks.Curves.isIso_structureSheafToPushforward_and_isZero_rightDerived_one_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/StructurePushforward.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/StructurePushforward.lean#L249). The attribute's comment: “c\_*𝒪\_X = 𝒪\_Y and R¹c\_*𝒪\_X = 0”.
 
 > **The direct images of `𝒪_X` along a contraction of a rational bridge**: the canonical map
 > `𝒪_Y ⟶ c_* 𝒪_X` is an isomorphism and `R ¹ c_* 𝒪_X = 0`. This is the clause of
@@ -274,7 +274,7 @@ theorem isIso_structureSheafToPushforward_and_isZero_rightDerived_one_contractio
 
 [Tag 0E64](https://stacks.math.columbia.edu/tag/0E64) in the Stacks Project.
 
-**`AlgebraicGeometry.invertibleCurveDegree_pullback_dualizingSheafOverField_eq_zero_of_isRationalBridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafDegree.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafDegree.lean#L39).
+**`AlgebraicGeometry.invertibleCurveDegree_pullback_dualizingSheafOverField_eq_zero_of_isRationalBridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafDegree.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafDegree.lean#L39).
 
 > Let `X` be a proper scheme of dimension one over a field `k` with `H⁰(X, 𝒪_X) = k` and
 > at-worst-nodal singularities, and let `C ⊆ X` be a rational bridge. Then `deg(ω_X|_C) = 0`, where
@@ -301,7 +301,7 @@ theorem invertibleCurveDegree_pullback_dualizingSheafOverField_eq_zero_of_isRati
 
 [Tag 0E65](https://stacks.math.columbia.edu/tag/0E65) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finset_isRationalBridge_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/BaseChangeUnion.lean, line 841](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/BaseChangeUnion.lean#L841). The attribute's comment: “Corrected statement. Stacks asserts that C\_K is a finite DISJOINT union of rational bridges; that is false as printed: for the rational bridge C = V(T₀² + T₁²) of X = V(T₂(T₀² + T₁²)) ⊂ P²\_ℝ, the base change C\_ℂ is two lines meeting in a point, connected and reducible (`Stacks.Curves.DegenerateConic.not_exists_iso_sigma_isRationalBridge_degenerateConic`). Proved here at the tag's own hypotheses, for every field extension K/k, with disjoint union replaced by union: C\_K is the scheme-theoretic union of finitely many rational bridges of X\_K, the reduced irreducible components of X\_K over C.”.
+**`AlgebraicGeometry.exists_finset_isRationalBridge_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/BaseChangeUnion.lean, line 841](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/BaseChangeUnion.lean#L841). The attribute's comment: “Corrected statement. Stacks asserts that C\_K is a finite DISJOINT union of rational bridges; that is false as printed: for the rational bridge C = V(T₀² + T₁²) of X = V(T₂(T₀² + T₁²)) ⊂ P²\_ℝ, the base change C\_ℂ is two lines meeting in a point, connected and reducible (`Stacks.Curves.DegenerateConic.not_exists_iso_sigma_isRationalBridge_degenerateConic`). Proved here at the tag's own hypotheses, for every field extension K/k, with disjoint union replaced by union: C\_K is the scheme-theoretic union of finitely many rational bridges of X\_K, the reduced irreducible components of X\_K over C.”.
 
 > **[Stacks, Tag 0E65] in the union form.** Let `X` be a proper one-dimensional scheme over a
 > field `k` with `H⁰(X, 𝒪_X) = k` and at worst nodal singularities, and let `C ⊆ X` be a rational
@@ -365,7 +365,7 @@ theorem exists_finset_isRationalBridge_baseChange
 
 [Tag 0E3N](https://stacks.math.columbia.edu/tag/0E3N) in the Stacks Project.
 
-**`Stacks.Curves.nonempty_pullback_dualizingSheafOverField_iso_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafPullback.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafPullback.lean#L145).
+**`Stacks.Curves.nonempty_pullback_dualizingSheafOverField_iso_contraction_bridge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafPullback.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingSheafPullback.lean#L145).
 
 > Let `k` be a field, let `X` be a proper scheme over `k` of dimension one with
 > `H⁰(X, 𝒪_X) = k` and at-worst-nodal singularities, let `C ⊆ X` be a rational bridge and let
@@ -387,7 +387,7 @@ theorem nonempty_pullback_dualizingSheafOverField_iso_contraction_bridge
 
 [Tag 0E3P](https://stacks.math.columbia.edu/tag/0E3P) in the Stacks Project.
 
-**`AlgebraicGeometry.isAmple_dualizingSheafOverField_of_hasAtWorstNodalSingularities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingAmple.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingAmple.lean#L41).
+**`AlgebraicGeometry.isAmple_dualizingSheafOverField_of_hasAtWorstNodalSingularities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingAmple.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/DualizingAmple.lean#L41).
 
 > Let `k` be a field and let `X` be a proper scheme over `k` of dimension one with
 > `H⁰(X, 𝒪_X) = k`. If the singularities of `X` are at worst nodal, `X` has no rational tail and no
@@ -413,7 +413,7 @@ theorem isAmple_dualizingSheafOverField_of_hasAtWorstNodalSingularities
 
 [Tag 0E3Q](https://stacks.math.columbia.edu/tag/0E3Q) in the Stacks Project.
 
-**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.isStableContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean#L270). The attribute's comment: “ω\_\{X'} is ample”.
+**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.isStableContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean#L270). The attribute's comment: “ω\_\{X'} is ample”.
 
 > **Stacks Project, Tag 0E3Q: `ω_{X'}` is ample.** Let `X` be a proper scheme over a field `k`
 > of dimension one with `H⁰(X, 𝒪_X) = k`, genus `g ≥ 2`, at-worst-nodal singularities and no
@@ -437,7 +437,7 @@ theorem isStableContraction
     Stacks.Curves.StableModel.IsStableContraction fX fY c
 ```
 
-**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean#L309). The attribute's comment: “the morphism X ⟶ X' is independent of choices”.
+**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/Terminal.lean#L309). The attribute's comment: “the morphism X ⟶ X' is independent of choices”.
 
 > **Stacks Project, Tag 0E3Q: the morphism `X ⟶ X'` is independent of choices.** Under the
 > hypotheses of `AlgebraicGeometry.IsIteratedContractionOfRationalBridges.isStableContraction`, if
@@ -463,7 +463,7 @@ theorem existsUnique_iso
     ∃! e : Y ≅ Y₂, c ≫ e.hom = c₂
 ```
 
-**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.existsUnique_iso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/TerminalBaseChange.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/TerminalBaseChange.lean#L239). The attribute's comment: “formation of the morphism X ⟶ X' commutes with base field extensions”.
+**`AlgebraicGeometry.IsIteratedContractionOfRationalBridges.existsUnique_iso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/TerminalBaseChange.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalBridges/TerminalBaseChange.lean#L239). The attribute's comment: “formation of the morphism X ⟶ X' commutes with base field extensions”.
 
 > Formation of the contraction `c : X ⟶ Y` commutes with base field extensions: under the
 > hypotheses of `AlgebraicGeometry.IsIteratedContractionOfRationalBridges.isStableContraction`, let
@@ -501,4 +501,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.24, Tag 0E7M](https://stacks.math.columbia.edu/tag/0E7M)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

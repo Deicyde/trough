@@ -8,7 +8,7 @@ proof: formalized
 
 # The Maurer–Cartan form of a local gauge data package
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MaurerCartan`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean): 12 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MaurerCartan`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean): 12 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MaurerC
 
 ## A. The structural equation at the base point
 
-**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_structure`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L82).
+**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_structure`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L82).
 
 > The all-orders structural equation of the Maurer–Cartan form, at the base point:
 > the `s`-th derivative of `∂_μ ω_ν − ∂_ν ω_μ + ⁅ω_μ, ω_ν⁆ = 0`, with the bracket
@@ -74,7 +74,7 @@ lemma evalLie_iteratedDeriv_maurerCartan_structure
 
 ## B. The symmetrized Maurer–Cartan form
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L107).
+**`LocalGaugeData.symmetrizedMaurerCartanForm`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L107).
 
 > The symmetrized Maurer–Cartan form `ω̄_r(U) = (1/|r|) ∑_{μ ∈ r} ∂_{r − {μ}} ω_μ(U)`:
 > the average, over the directions of `r`, of the Maurer–Cartan form in one direction
@@ -84,34 +84,34 @@ lemma evalLie_iteratedDeriv_maurerCartan_structure
 noncomputable def symmetrizedMaurerCartanForm (U : GJ) (r : Multiset (Fin 1 ⊕ Fin 3)) : 𝔤J
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm_apply_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L112).
+**`LocalGaugeData.symmetrizedMaurerCartanForm_apply_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L112).
 
 ```lean
 lemma symmetrizedMaurerCartanForm_apply_zero (U : GJ) :
     jets.symmetrizedMaurerCartanForm U 0 = 0
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm_one`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L117).
+**`LocalGaugeData.symmetrizedMaurerCartanForm_one`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L117).
 
 ```lean
 lemma symmetrizedMaurerCartanForm_one : jets.symmetrizedMaurerCartanForm 1 = 0
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm_ofConstant`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L122).
+**`LocalGaugeData.symmetrizedMaurerCartanForm_ofConstant`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L122).
 
 ```lean
 lemma symmetrizedMaurerCartanForm_ofConstant (g : G₀) :
     jets.symmetrizedMaurerCartanForm (jets.ofConstant g) = 0
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm_singleton`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L128).
+**`LocalGaugeData.symmetrizedMaurerCartanForm_singleton`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L128).
 
 ```lean
 lemma symmetrizedMaurerCartanForm_singleton (U : GJ) (μ : Fin 1 ⊕ Fin 3) :
     jets.symmetrizedMaurerCartanForm U {μ} = jets.maurerCartan U μ
 ```
 
-**`LocalGaugeData.symmetrizedMaurerCartanForm_cons`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L134).
+**`LocalGaugeData.symmetrizedMaurerCartanForm_cons`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L134).
 
 > The recursion for the symmetrized Maurer–Cartan form: peeling one direction off the
 > multiset.
@@ -126,7 +126,7 @@ lemma symmetrizedMaurerCartanForm_cons (U : GJ) (μ : Fin 1 ⊕ Fin 3)
 
 ## C. Determination of the Maurer–Cartan form by its symmetrized coefficients
 
-**`LocalGaugeData.iteratedDeriv_maurerCartan_eq_symmetrized_add`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L170).
+**`LocalGaugeData.iteratedDeriv_maurerCartan_eq_symmetrized_add`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L170).
 
 > The symmetrization defect of the Maurer–Cartan form: an iterated derivative of
 > `ω` is the corresponding symmetrized form plus an average of iterated derivatives
@@ -143,7 +143,7 @@ lemma iteratedDeriv_maurerCartan_eq_symmetrized_add (U : GJ)
           ⁅jets.maurerCartan U μ, jets.maurerCartan U ν⁆).sum
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_zero_of_symmetrized_eq_zero`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L211).
+**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_zero_of_symmetrized_eq_zero`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L211).
 
 > Maurer–Cartan triangularity, base-point half: if the base-point symmetrized
 > Maurer–Cartan data of `U` vanish in every nonempty multiset of at most `n` directions,
@@ -162,7 +162,7 @@ lemma evalLie_iteratedDeriv_maurerCartan_eq_zero_of_symmetrized_eq_zero (U : GJ)
     jets.evalLie (jets.iteratedDeriv s (jets.maurerCartan U μ)) = 0
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L252).
+**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L252).
 
 > Determination step: if the base-point symmetrized Maurer–Cartan data of `U` and
 > `V` agree, and their Maurer–Cartan Taylor data agree in fewer than `n` directions,
@@ -180,7 +180,7 @@ lemma evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq (U V : GJ) (n : �
       jets.evalLie (jets.iteratedDeriv s (jets.maurerCartan V μ))
 ```
 
-**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq_all`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L280).
+**`LocalGaugeData.evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq_all`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L280).
 
 > **The symmetrized data determine the Maurer–Cartan Taylor data**: if the base-point
 > symmetrized Maurer–Cartan data of `U` and `V` agree, so do all base-point Taylor
@@ -198,7 +198,7 @@ lemma evalLie_iteratedDeriv_maurerCartan_eq_of_symmetrized_eq_all (U V : GJ)
 
 ## D. Faithful packages and the Maurer–Cartan form
 
-**`LocalGaugeData.maurerCartan_eq_zero_iff`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L304).
+**`LocalGaugeData.maurerCartan_eq_zero_iff`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean#L304).
 
 > In a faithful package, the Maurer–Cartan form vanishes exactly on the constant jets.
 
@@ -213,4 +213,4 @@ lemma maurerCartan_eq_zero_iff [jets.Faithful] (U : GJ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean)

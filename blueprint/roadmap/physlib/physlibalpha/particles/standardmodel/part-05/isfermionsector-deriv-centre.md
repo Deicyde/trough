@@ -8,7 +8,7 @@ proof: formalized
 
 # The centre of `SL(2,ℂ)` on the fermion sector
 
-The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.Centre`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean): 11 declarations, 11 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.Centre`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.Centre`, 
 > of its value space. The five unbarred species are Weyl-valued and the five barred ones are
 > conjugate Weyl-valued; conjugation does not move a real sign, so all ten carry `-1`.
 
-**`StandardModel.IsFermionSector.range_d_le_centreEigenspace`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L100).
+**`StandardModel.IsFermionSector.range_d_le_centreEigenspace`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L100).
 
 > The `d` symbols carry the sign `-1`.
 
@@ -54,7 +54,7 @@ lemma range_d_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕
     LinearMap.range (d f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_bard_le_centreEigenspace`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L107).
+**`StandardModel.IsFermionSector.range_bard_le_centreEigenspace`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L107).
 
 > The `bard` symbols carry the sign `-1`.
 
@@ -63,7 +63,7 @@ lemma range_bard_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
     LinearMap.range (bard f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_u_le_centreEigenspace`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L114).
+**`StandardModel.IsFermionSector.range_u_le_centreEigenspace`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L114).
 
 > The `u` symbols carry the sign `-1`.
 
@@ -72,7 +72,7 @@ lemma range_u_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕
     LinearMap.range (u f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_baru_le_centreEigenspace`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L121).
+**`StandardModel.IsFermionSector.range_baru_le_centreEigenspace`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L121).
 
 > The `baru` symbols carry the sign `-1`.
 
@@ -81,7 +81,7 @@ lemma range_baru_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
     LinearMap.range (baru f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_Q_le_centreEigenspace`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L128).
+**`StandardModel.IsFermionSector.range_Q_le_centreEigenspace`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L128).
 
 > The `Q` symbols carry the sign `-1`.
 
@@ -90,7 +90,7 @@ lemma range_Q_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕
     LinearMap.range (Q f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_barQ_le_centreEigenspace`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L135).
+**`StandardModel.IsFermionSector.range_barQ_le_centreEigenspace`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L135).
 
 > The `barQ` symbols carry the sign `-1`.
 
@@ -99,7 +99,7 @@ lemma range_barQ_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
     LinearMap.range (barQ f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_L_le_centreEigenspace`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L142).
+**`StandardModel.IsFermionSector.range_L_le_centreEigenspace`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L142).
 
 > The `L` symbols carry the sign `-1`.
 
@@ -108,7 +108,7 @@ lemma range_L_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕
     LinearMap.range (L f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_barL_le_centreEigenspace`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L149).
+**`StandardModel.IsFermionSector.range_barL_le_centreEigenspace`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L149).
 
 > The `barL` symbols carry the sign `-1`.
 
@@ -117,7 +117,7 @@ lemma range_barL_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
     LinearMap.range (barL f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_e_le_centreEigenspace`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L156).
+**`StandardModel.IsFermionSector.range_e_le_centreEigenspace`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L156).
 
 > The `e` symbols carry the sign `-1`.
 
@@ -126,7 +126,7 @@ lemma range_e_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕
     LinearMap.range (e f l) ≤ centreEigenspace repLorentz (-1)
 ```
 
-**`StandardModel.IsFermionSector.range_bare_le_centreEigenspace`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L163).
+**`StandardModel.IsFermionSector.range_bare_le_centreEigenspace`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L163).
 
 > The `bare` symbols carry the sign `-1`.
 
@@ -140,7 +140,7 @@ lemma range_bare_le_centreEigenspace (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
 > The derivative submodule is the join over the three families, the derivative slots and the ten
 > species of the ranges of section A, and an eigenspace is closed under joins.
 
-**`StandardModel.IsFermionSector.derivSubmodule_le_centreEigenspace`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L181).
+**`StandardModel.IsFermionSector.derivSubmodule_le_centreEigenspace`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean#L181).
 
 > **The centre of `SL(2,ℂ)` acts on the fermion derivative submodules by `-1`**, for any
 > number of covariant derivatives: every fermion symbol carries one Weyl-spinor value index,
@@ -165,4 +165,4 @@ lemma derivSubmodule_le_centreEigenspace (n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The formal total derivative on the bosonic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean): 21 declarations, 15 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.JetDeriv`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean): 21 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.JetDeriv`, [Phys
 
 ## A. The formal total derivative on the bosonic algebra
 
-**`StandardModel.BosonicAlgebra.jetDeriv`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L69).
+**`StandardModel.BosonicAlgebra.jetDeriv`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L69).
 
 > The formal total spacetime derivative on the bosonic algebra of a `V`-valued matter
 > field in the direction `μ`: the derivation extending the shift
@@ -50,7 +50,7 @@ noncomputable def jetDeriv (μ : Fin 1 ⊕ Fin 3) :
     BosonicAlgebra M →ₗ[ℂ] BosonicAlgebra M
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_ι`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L75).
+**`StandardModel.BosonicAlgebra.jetDeriv_ι`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L75).
 
 > On a component function the total derivative is the shift of the derivative label.
 
@@ -60,20 +60,20 @@ lemma jetDeriv_ι (μ : Fin 1 ⊕ Fin 3) (x : JetComponentSpace M) :
       SymmetricAlgebra.ι ℂ _ (JetComponentSpace.jetDeriv μ x)
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L81).
+**`StandardModel.BosonicAlgebra.jetDeriv_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L81).
 
 ```lean
 lemma jetDeriv_one (μ : Fin 1 ⊕ Fin 3) : jetDeriv (M := M) μ (1 : BosonicAlgebra M) = 0
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_algebraMap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L85).
+**`StandardModel.BosonicAlgebra.jetDeriv_algebraMap`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L85).
 
 ```lean
 lemma jetDeriv_algebraMap (μ : Fin 1 ⊕ Fin 3) (r : ℂ) :
     jetDeriv (M := M) μ (algebraMap ℂ (BosonicAlgebra M) r) = 0
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_mul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L91).
+**`StandardModel.BosonicAlgebra.jetDeriv_mul`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L91).
 
 > The total derivative is a derivation: the Leibniz rule holds on the bosonic
 > algebra.
@@ -83,7 +83,7 @@ lemma jetDeriv_mul (μ : Fin 1 ⊕ Fin 3) (x y : BosonicAlgebra M) :
     jetDeriv μ (x * y) = jetDeriv μ x * y + x * jetDeriv μ y
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_comm_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L97).
+**`StandardModel.BosonicAlgebra.jetDeriv_comm_apply`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L97).
 
 > **Mixed partials agree.** The derivative labels live in a *symmetric* algebra, so the
 > total derivatives in different directions commute.
@@ -93,7 +93,7 @@ lemma jetDeriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : BosonicAlgebra M) :
     jetDeriv μ (jetDeriv ν x) = jetDeriv ν (jetDeriv μ x)
 ```
 
-**`StandardModel.BosonicAlgebra.jetDeriv_comm`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L102).
+**`StandardModel.BosonicAlgebra.jetDeriv_comm`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L102).
 
 ```lean
 lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
@@ -102,7 +102,7 @@ lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## B. The iterated total derivative
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L115).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L115).
 
 > The iterated total derivative `∂_s = ∂_{ν₁} ⋯ ∂_{νₙ}` along a multiset `s` of
 > directions. It is well defined on a multiset — i.e. independent of the order in which the
@@ -113,7 +113,7 @@ noncomputable def iteratedJetDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) :
     BosonicAlgebra M →ₗ[ℂ] BosonicAlgebra M
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L120).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L120).
 
 ```lean
 lemma iteratedJetDeriv_zero :
@@ -121,14 +121,14 @@ lemma iteratedJetDeriv_zero :
       = LinearMap.id (R := ℂ) (M := BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L125).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L125).
 
 ```lean
 lemma iteratedJetDeriv_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     iteratedJetDeriv (M := M) (μ ::ₘ s) = (jetDeriv μ).comp (iteratedJetDeriv s)
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L130).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L130).
 
 > The companion of `iteratedJetDeriv_cons`, peeling the extra derivative on the inside.
 
@@ -137,14 +137,14 @@ lemma iteratedJetDeriv_cons' (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     iteratedJetDeriv (M := M) (μ ::ₘ s) = (iteratedJetDeriv s).comp (jetDeriv μ)
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L135).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L135).
 
 ```lean
 lemma iteratedJetDeriv_singleton (μ : Fin 1 ⊕ Fin 3) :
     iteratedJetDeriv (M := M) {μ} = jetDeriv μ
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_add`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L141).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_add`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L141).
 
 > The iterated derivative is additive in the multiset of directions: differentiating
 > along `s + t` is differentiating along `t` and then along `s`.
@@ -155,7 +155,7 @@ lemma iteratedJetDeriv_add (s t : Multiset (Fin 1 ⊕ Fin 3)) :
       = (iteratedJetDeriv s).comp (iteratedJetDeriv t)
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_mul`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L149).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_mul`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L149).
 
 > **The all-orders Leibniz rule.** The iterated derivative of a product distributes over
 > the antidiagonal of the multiset of directions: each way of splitting the derivatives
@@ -168,7 +168,7 @@ lemma iteratedJetDeriv_mul (s : Multiset (Fin 1 ⊕ Fin 3)) (x y : BosonicAlgebr
         iteratedJetDeriv p.1 x * iteratedJetDeriv p.2 y).sum
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_one_of_ne_zero`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L156).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_one_of_ne_zero`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L156).
 
 > A nonempty iterated derivative kills the constants.
 
@@ -177,7 +177,7 @@ lemma iteratedJetDeriv_one_of_ne_zero {s : Multiset (Fin 1 ⊕ Fin 3)} (hs : s �
     iteratedJetDeriv (M := M) s (1 : BosonicAlgebra M) = 0
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L166).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L166).
 
 > **On a component function the iterated derivative is the derivative symbol `∂_s`.**
 > Both halves of the component space — the field and its conjugate — are multiplied by the
@@ -196,7 +196,7 @@ lemma iteratedJetDeriv_ι (s : Multiset (Fin 1 ⊕ Fin 3)) (x : JetComponentSpac
 
 ## C. Generation by the field and its derivatives
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ofField`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L208).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ofField`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L208).
 
 > The iterated derivative of the field is the generator carrying the derivative symbol
 > `∂_s`: applying `∂_s` to `ψ_φ` writes the label `s` into the derivative factor.
@@ -208,7 +208,7 @@ lemma iteratedJetDeriv_ofField (s : Multiset (Fin 1 ⊕ Fin 3)) (φ : Module.Dua
         ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace M)
 ```
 
-**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ofConjField`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L221).
+**`StandardModel.BosonicAlgebra.iteratedJetDeriv_ofConjField`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L221).
 
 > The iterated derivative of the conjugate field is the conjugate generator carrying the
 > derivative symbol `∂_s`.
@@ -221,7 +221,7 @@ lemma iteratedJetDeriv_ofConjField (s : Multiset (Fin 1 ⊕ Fin 3))
         ((0, SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ) : JetComponentSpace M)
 ```
 
-**`StandardModel.BosonicAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L238).
+**`StandardModel.BosonicAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L238).
 
 > **The bosonic algebra is generated by the field, its conjugate, and their
 > derivatives.** As a `ℂ`-algebra, `BosonicAlgebra M` is the algebra adjoined by the
@@ -242,7 +242,7 @@ lemma adjoin_iteratedJetDeriv_eq_top :
 
 ## D. Compatibility with the inclusion of a species
 
-**`StandardModel.BosonicAlgebra.comap_jetDeriv`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L311).
+**`StandardModel.BosonicAlgebra.comap_jetDeriv`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L311).
 
 > **The inclusion of a species is a map of differential algebras.** Pulling back along a
 > map of target spaces commutes with the total derivative: the two act on different labels
@@ -253,7 +253,7 @@ lemma comap_jetDeriv (f : M.V →ₗ[ℂ] N.V) (μ : Fin 1 ⊕ Fin 3) (x : Boson
     comap f (jetDeriv μ x) = jetDeriv μ (comap f x)
 ```
 
-**`StandardModel.BosonicAlgebra.comap_iteratedJetDeriv`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L324).
+**`StandardModel.BosonicAlgebra.comap_iteratedJetDeriv`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean#L324).
 
 > The inclusion of a species commutes with the iterated total derivative.
 
@@ -269,4 +269,4 @@ lemma comap_iteratedJetDeriv (f : M.V →ₗ[ℂ] N.V) (s : Multiset (Fin 1 ⊕ 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean)

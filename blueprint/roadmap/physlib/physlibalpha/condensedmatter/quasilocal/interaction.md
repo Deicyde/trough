@@ -8,7 +8,7 @@ proof: formalized
 
 # Interactions, finite-volume Hamiltonians and ensembles of a lattice system
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Interaction`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean): 12 declarations, 10 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Interaction`, [PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean): 12 declarations, 10 with a docstring.
 
 > An interaction assigns an operator to each finite region of a lattice, and the finite-volume
 > Hamiltonian is the sum of the lifts to a box of the terms it contains.
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.Interaction`, [PhyslibAlpha/
 
 ## A. Interactions and the Hamiltonian of a box
 
-**`CondensedMatter.QuasiLocal.Interaction`**, a structure, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L72).
+**`CondensedMatter.QuasiLocal.Interaction`**, a structure, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L72).
 
 > **An interaction**: a Hermitian operator of each finite region.
 
@@ -55,7 +55,7 @@ structure Interaction where
   isHermitian : ∀ X, (Φ X).IsHermitian
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.hamiltonian`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L82).
+**`CondensedMatter.QuasiLocal.Interaction.hamiltonian`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L82).
 
 > **The Hamiltonian of a finite box**: the sum of the lifts to the box of the terms of the
 > interaction supported inside it.
@@ -64,7 +64,7 @@ structure Interaction where
 def Interaction.hamiltonian (I : Interaction Ω) (Λ : Finset S) : Alg Ω Λ
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.hamiltonian_isHermitian`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L86).
+**`CondensedMatter.QuasiLocal.Interaction.hamiltonian_isHermitian`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L86).
 
 ```lean
 lemma Interaction.hamiltonian_isHermitian (I : Interaction Ω) (Λ : Finset S) :
@@ -73,7 +73,7 @@ lemma Interaction.hamiltonian_isHermitian (I : Interaction Ω) (Λ : Finset S) :
 
 ## B. Lifts and the exponential
 
-**`CondensedMatter.QuasiLocal.inclMat_exp`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L96).
+**`CondensedMatter.QuasiLocal.inclMat_exp`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L96).
 
 > The lift `M ↦ M ⊗ 1` commutes with the exponential.
 
@@ -82,7 +82,7 @@ lemma inclMat_exp {X Y : Finset S} (h : X ≤ Y) (a : Alg Ω X) :
     inclMat h (NormedSpace.exp a) = NormedSpace.exp (inclMat h a)
 ```
 
-**`CondensedMatter.QuasiLocal.inclMat_gibbsWeight`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L102).
+**`CondensedMatter.QuasiLocal.inclMat_gibbsWeight`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L102).
 
 > **The lift of a Gibbs weight is the Gibbs weight of the lift.**
 
@@ -93,7 +93,7 @@ lemma inclMat_gibbsWeight {X Y : Finset S} (h : X ≤ Y) (a : Alg Ω X) :
 
 ## C. Charges and the ensembles of a box
 
-**`CondensedMatter.QuasiLocal.Charge`**, an abbrev, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L112).
+**`CondensedMatter.QuasiLocal.Charge`**, an abbrev, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L112).
 
 > A charge: a real number attached to each value of the configuration space of each site, such
 > as the occupation number of a mode.
@@ -102,7 +102,7 @@ lemma inclMat_gibbsWeight {X Y : Finset S} (h : X ≤ Y) (a : Alg Ω X) :
 abbrev Charge (Ω : S → Type*)
 ```
 
-**`CondensedMatter.QuasiLocal.chargeOp`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L116).
+**`CondensedMatter.QuasiLocal.chargeOp`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L116).
 
 > **The total charge of a box**: the diagonal operator with the value `∑_{x ∈ Λ} q_x(c_x)` on
 > the configuration `c`.
@@ -111,13 +111,13 @@ abbrev Charge (Ω : S → Type*)
 def chargeOp (q : Charge Ω) (Λ : Finset S) : Alg Ω Λ
 ```
 
-**`CondensedMatter.QuasiLocal.chargeOp_isHermitian`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L120).
+**`CondensedMatter.QuasiLocal.chargeOp_isHermitian`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L120).
 
 ```lean
 lemma chargeOp_isHermitian (q : Charge Ω) (Λ : Finset S) : (chargeOp q Λ).IsHermitian
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.canonicalState`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L129).
+**`CondensedMatter.QuasiLocal.Interaction.canonicalState`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L129).
 
 > **The canonical ensemble of a box** at inverse temperature `β`.
 
@@ -126,7 +126,7 @@ def Interaction.canonicalState (I : Interaction Ω) (β : ℝ) (Λ : Finset S) :
     AlgState (Alg Ω Λ)
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalState`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L135).
+**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalState`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L135).
 
 > **The grand canonical ensemble of a box** at inverse temperature `β` and chemical potential
 > `μ` for the charge `q`.
@@ -136,7 +136,7 @@ def Interaction.grandCanonicalState (I : Interaction Ω) (q : Charge Ω) (β μ 
     (Λ : Finset S) : AlgState (Alg Ω Λ)
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.Conserves`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L142).
+**`CondensedMatter.QuasiLocal.Interaction.Conserves`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L142).
 
 > The interaction conserves the charge: the Hamiltonian of every box commutes with its
 > total charge.
@@ -145,7 +145,7 @@ def Interaction.grandCanonicalState (I : Interaction Ω) (q : Charge Ω) (β μ 
 def Interaction.Conserves (I : Interaction Ω) (q : Charge Ω) : Prop
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalWeight_of_conserves`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L148).
+**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalWeight_of_conserves`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean#L148).
 
 > **For a conserved charge the grand canonical weight of a box is its canonical weight times a
 > fugacity.**
@@ -165,4 +165,4 @@ lemma Interaction.grandCanonicalWeight_of_conserves (I : Interaction Ω) {q : Ch
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean)

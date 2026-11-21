@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.13 Local complete intersection curves
 
-Section 109.13 of the Stacks Project, [Tag 0E0J](https://stacks.math.columbia.edu/tag/0E0J). 1 tag here is carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 109.13 of the Stacks Project, [Tag 0E0J](https://stacks.math.columbia.edu/tag/0E0J). 1 tag here is carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DZV, a lemma
 
 [Tag 0DZV](https://stacks.math.columbia.edu/tag/0DZV) in the Stacks Project.
 
-**`AlgebraicGeometry.isLciFamily_iff_isSyntomicFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L135). The attribute's comment: “part (1), the equivalence of (b) and (c) for a family of curves: its structure morphism is a local complete intersection morphism if and only if it is syntomic”.
+**`AlgebraicGeometry.isLciFamily_iff_isSyntomicFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L136). The attribute's comment: “part (1), the equivalence of (b) and (c) for a family of curves: its structure morphism is a local complete intersection morphism if and only if it is syntomic”.
 
 > **Stacks 0DZV, part (1).** The equivalence of conditions (b) and (c): a family of curves has
 > a local complete intersection structure morphism exactly when its structure morphism is syntomic.
@@ -28,7 +28,7 @@ theorem isLciFamily_iff_isSyntomicFamily (X : CurveFamily B hZ) :
     IsLciFamily B hZ X ↔ Space.IsSyntomic B integerBase hZ X.toBase.hom
 ```
 
-**`AlgebraicGeometry.curvesLci_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L173). The attribute's comment: “strict fullness of the local complete intersection subcategory of the category of families of curves, which is the first of the three conditions of Tag 04YM making it an open substack”.
+**`AlgebraicGeometry.curvesLci_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L174). The attribute's comment: “strict fullness of the local complete intersection subcategory of the category of families of curves, which is the first of the three conditions of Tag 04YM making it an open substack”.
 
 > **Stacks 0DZV.** The condition that a family of curves have a local complete intersection
 > structure morphism is invariant under isomorphism, so `Curves^{lci}` is a strictly full
@@ -44,7 +44,7 @@ theorem curvesLci_isStrictlyFull :
       IsLciFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.isLciFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L208). The attribute's comment: “part (2), condition (b): for the family of curves attached to a proper flat morphism of schemes of finite presentation whose source has dimension at most one, the structure morphism of the family is a local complete intersection morphism if and only if that morphism of schemes is one, i.e. — over the spectrum of a field — if and only if the proper scheme is a local complete intersection over the field”.
+**`AlgebraicGeometry.isLciFamily_curveFamilyOfSchemeMorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersection.lean#L209). The attribute's comment: “part (2), condition (b): for the family of curves attached to a proper flat morphism of schemes of finite presentation whose source has dimension at most one, the structure morphism of the family is a local complete intersection morphism if and only if that morphism of schemes is one, i.e. — over the spectrum of a field — if and only if the proper scheme is a local complete intersection over the field”.
 
 > **Stacks 0DZV, part (2).** Condition (b) read on the family of curves attached to a proper
 > flat morphism of schemes of finite presentation whose source has dimension at most one: that
@@ -79,7 +79,7 @@ theorem isLciFamily_curveFamilyOfSchemeMorphism_iff
         ((BigFppfOver.toScheme B integerBase hZ).map g)
 ```
 
-**`AlgebraicGeometry.curvesLci`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L90). The attribute's comment: “the open substack Curves^\{lci} of the algebraic stack of curves”.
+**`AlgebraicGeometry.curvesLci`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L90). The attribute's comment: “the open substack Curves^\{lci} of the algebraic stack of curves”.
 
 > **Stacks 0DZV, the open substack `Curves^{lci}`.** The open substack of the algebraic stack of
 > curves (Stacks 0D5A) of the families of curves whose structure morphism is a local complete
@@ -91,7 +91,7 @@ abbrev curvesLci :
       (curvesAlgebraicStack B hZ (curvesFiberedCategory_isAlgebraicStack.{u, w} B hZ))
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesLci_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L144). The attribute's comment: “part (1), on the open substack Curves^\{lci} of the algebraic stack of curves”.
+**`AlgebraicGeometry.factorsThrough_curvesLci_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L144). The attribute's comment: “part (1), on the open substack Curves^\{lci} of the algebraic stack of curves”.
 
 > **Stacks 0DZV, part (1).** Let `X → S` be a family of curves and `z : (Sch/S) → Curves` a
 > classifying morphism for it, a scheme-valued point of the algebraic stack of curves together with
@@ -122,7 +122,7 @@ theorem factorsThrough_curvesLci_tfae (S : BigFppfOver B integerBase hZ)
         Space.IsSyntomic B integerBase hZ X.toBase.hom]
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesLci_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L172). The attribute's comment: “part (2), on the open substack Curves^\{lci} of the algebraic stack of curves”.
+**`AlgebraicGeometry.factorsThrough_curvesLci_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L172). The attribute's comment: “part (2), on the open substack Curves^\{lci} of the algebraic stack of curves”.
 
 > **Stacks 0DZV, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
@@ -157,7 +157,7 @@ theorem factorsThrough_curvesLci_over_field_iff
       IsLocalCompleteIntersectionMorphism ((BigFppfOver.toScheme B integerBase hZ).map g)
 ```
 
-**`AlgebraicGeometry.exists_openSubstack_curvesLci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L210).
+**`AlgebraicGeometry.exists_openSubstack_curvesLci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionOpenSubstack.lean#L210).
 
 > **Stacks 0DZV.** There is an open substack `Curves^{lci}` of the algebraic stack of curves
 > such that
@@ -216,7 +216,7 @@ theorem exists_openSubstack_curvesLci :
           IsLocalCompleteIntersectionMorphism ((BigFppfOver.toScheme B integerBase hZ).map g)
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L101). The attribute's comment: “the inclusion of Curves^\{lci} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L101). The attribute's comment: “the inclusion of Curves^\{lci} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0DZV, `Curves^{lci}` is open in `Curves`.** The inclusion into the category fibred
 > in groupoids of families of curves of the full subcategory `Curves^{lci}` of the families whose
@@ -233,7 +233,7 @@ theorem isOpenImmersion_curvesSubstackInclusion_lci :
           (isOpenCurvesLocus_isLciFamily B hZ).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_lci_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L118). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_lci_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L118). The attribute's comment: “part (1)”.
 
 > **Stacks 0DZV, part (1).** Let `X → S` be a family of curves and `z : (Sch/S) → Curves` a
 > classifying morphism for it, a scheme-valued point together with an isomorphism `z(S) ≅ X`.
@@ -258,7 +258,7 @@ theorem factorsThrough_curvesSubstack_lci_tfae (S : BigFppfOver B integerBase hZ
         Space.IsSyntomic B integerBase hZ X.toBase.hom]
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_lci_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L142). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_lci_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/CurvesLocalCompleteIntersectionSubstack.lean#L142). The attribute's comment: “part (2)”.
 
 > **Stacks 0DZV, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
@@ -297,4 +297,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.13, Tag 0E0J](https://stacks.math.columbia.edu/tag/0E0J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

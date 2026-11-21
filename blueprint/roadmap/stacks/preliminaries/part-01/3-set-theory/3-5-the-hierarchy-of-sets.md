@@ -8,7 +8,7 @@ proof: formalized
 
 # 3.5 The hierarchy of sets
 
-Section 3.5 of the Stacks Project, [Tag 000B](https://stacks.math.columbia.edu/tag/000B). 1 tag here is carried by 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 3.5 of the Stacks Project, [Tag 000B](https://stacks.math.columbia.edu/tag/000B). 1 tag here is carried by 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 000C, a lemma
 
@@ -16,7 +16,7 @@ Section 3.5 of the Stacks Project, [Tag 000B](https://stacks.math.columbia.edu/t
 
 Declarations registered for the tag:
 
-- [`ZFSet.exists_mem_vonNeumann`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZFSet.exists_mem_vonNeumann#doc) registered with `add_to_stacks` in [StacksCore/SetTheory/ZFC/VonNeumann.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/SetTheory/ZFC/VonNeumann.lean#L10) (StacksCore).
+- [`ZFSet.exists_mem_vonNeumann`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZFSet.exists_mem_vonNeumann#doc) registered with `add_to_stacks` in [StacksCore/SetTheory/ZFC/VonNeumann.lean, line 10](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/SetTheory/ZFC/VonNeumann.lean#L10) (StacksCore).
 
 ## Depends on
 
@@ -25,4 +25,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 3.5, Tag 000B](https://stacks.math.columbia.edu/tag/000B)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

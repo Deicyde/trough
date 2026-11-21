@@ -8,7 +8,7 @@ proof: formalized
 
 # Newtonian point-particle systems
 
-The module `Physlib.ClassicalMechanics.PointParticle.NewtonianSystem.Basic`, [Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean): 30 declarations (4 instances with no name), 27 with a docstring.
+The module `Physlib.ClassicalMechanics.PointParticle.NewtonianSystem.Basic`, [Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean): 30 declarations (4 instances with no name), 27 with a docstring.
 
 > This module defines `NewtonianSystem`, consisting of an inertial reference frame, a finite
 > collection of point particles, and the internal and external forces acting on
@@ -36,7 +36,7 @@ The module `Physlib.ClassicalMechanics.PointParticle.NewtonianSystem.Basic`, [Ph
 
 ## A. Systems
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem`**, a structure, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L53).
+**`ClassicalMechanics.PointParticle.NewtonianSystem`**, a structure, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L53).
 
 > A finite system of point particles satisfying Newton's laws.
 
@@ -58,7 +58,7 @@ structure NewtonianSystem (d : ℕ) where
   newton_third_law : internalForces.map .reverse = internalForces
 ```
 
-**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L73).
+**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L73).
 
 ```lean
 instance : Fact system.frame.IsInertial
@@ -66,7 +66,7 @@ instance : Fact system.frame.IsInertial
 
 ## B. System particles
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Vector`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L81).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Vector`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L81).
 
 > Vectors in the system's frame.
 
@@ -74,7 +74,7 @@ instance : Fact system.frame.IsInertial
 abbrev Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L84).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L84).
 
 > A particle in `system`.
 
@@ -82,7 +82,7 @@ abbrev Vector
 abbrev Particle : Type
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.mass`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L91).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.mass`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L91).
 
 > The particle's mass.
 
@@ -90,7 +90,7 @@ abbrev Particle : Type
 def mass : ℝ+
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.pos`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L94).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.pos`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L94).
 
 > The particle's position at `t`.
 
@@ -98,7 +98,7 @@ def mass : ℝ+
 def pos : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.velocity`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L97).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.velocity`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L97).
 
 > The particle's velocity at `t`.
 
@@ -106,7 +106,7 @@ def pos : system.Vector
 def velocity : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.acceleration`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L100).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.acceleration`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L100).
 
 > The particle's acceleration at `t`.
 
@@ -114,7 +114,7 @@ def velocity : system.Vector
 def acceleration : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.momentum`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L103).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.momentum`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L103).
 
 > The particle's momentum at `t`.
 
@@ -122,7 +122,7 @@ def acceleration : system.Vector
 def momentum : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.kineticEnergy`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L106).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Particle.kineticEnergy`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L106).
 
 > The particle's kinetic energy at `t`.
 
@@ -132,7 +132,7 @@ def kineticEnergy : ℝ
 
 ## C. System forces
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L115).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L115).
 
 > A force in `system`.
 
@@ -140,7 +140,7 @@ def kineticEnergy : ℝ
 abbrev Force : Type
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.inner`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L123).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.inner`**, a def, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L123).
 
 > The underlying force.
 
@@ -148,13 +148,13 @@ abbrev Force : Type
 def inner : system.frame.Force system.Particle
 ```
 
-**An instance with no name**, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L126).
+**An instance with no name**, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L126).
 
 ```lean
 instance : Coe system.Force (system.frame.Force system.Particle)
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.value`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L129).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.value`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L129).
 
 > The force at `t`.
 
@@ -162,13 +162,13 @@ instance : Coe system.Force (system.frame.Force system.Particle)
 def value (t : ℝ) : system.Vector
 ```
 
-**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L131).
+**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L131).
 
 ```lean
 instance : CoeFun system.Force (fun _ => ℝ → system.Vector)
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.target`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L135).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.target`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L135).
 
 > The force's target.
 
@@ -176,7 +176,7 @@ instance : CoeFun system.Force (fun _ => ℝ → system.Vector)
 def target : system.Particle
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.Internal`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L138).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.Internal`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L138).
 
 > Whether `force` is internal.
 
@@ -184,7 +184,7 @@ def target : system.Particle
 def Internal : Prop
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.External`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L141).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.Force.External`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L141).
 
 > Whether `force` is external.
 
@@ -192,7 +192,7 @@ def Internal : Prop
 def External : Prop
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce`**, an abbrev, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L146).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce`**, an abbrev, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L146).
 
 > An internal force in `system`.
 
@@ -200,7 +200,7 @@ def External : Prop
 abbrev InternalForce : Type
 ```
 
-**An instance with no name**, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L153).
+**An instance with no name**, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L153).
 
 > View an internal force as a system force.
 
@@ -208,7 +208,7 @@ abbrev InternalForce : Type
 instance : Coe system.InternalForce system.Force
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.value`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L156).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.value`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L156).
 
 > The force at `t`.
 
@@ -216,7 +216,7 @@ instance : Coe system.InternalForce system.Force
 def value (t : ℝ) : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.target`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L159).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.target`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L159).
 
 > The force's target.
 
@@ -224,7 +224,7 @@ def value (t : ℝ) : system.Vector
 def target : system.Particle
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.source`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L162).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.source`**, a def, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L162).
 
 > The force's source.
 
@@ -232,7 +232,7 @@ def target : system.Particle
 def source : system.Particle
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse_count_eq`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L165).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse_count_eq`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L165).
 
 > A force and its reverse have the same multiplicity.
 
@@ -241,7 +241,7 @@ lemma reverse_count_eq :
     system.internalForces.count force.1.reverse = system.internalForces.count force.1
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L174).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.reverse`**, a def, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L174).
 
 > The reverse force.
 
@@ -249,7 +249,7 @@ lemma reverse_count_eq :
 def reverse : system.InternalForce
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.Central`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L178).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.InternalForce.Central`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L178).
 
 > Whether the force lies along the line joining its source and target.
 
@@ -259,7 +259,7 @@ def Central : Prop
 
 ## D. Aggregate quantities
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.mass`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L190).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.mass`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L190).
 
 > Total mass.
 
@@ -267,7 +267,7 @@ def Central : Prop
 def mass : ℝ
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.momentum`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L194).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.momentum`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L194).
 
 > Total momentum at `t`.
 
@@ -275,7 +275,7 @@ def mass : ℝ
 def momentum : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.netExternalForce`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L198).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.netExternalForce`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L198).
 
 > Net external force at `t`.
 
@@ -283,7 +283,7 @@ def momentum : system.Vector
 def netExternalForce : system.Vector
 ```
 
-**`ClassicalMechanics.PointParticle.NewtonianSystem.kineticEnergy`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L202).
+**`ClassicalMechanics.PointParticle.NewtonianSystem.kineticEnergy`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean#L202).
 
 > Total kinetic energy at `t`.
 
@@ -298,4 +298,4 @@ def kineticEnergy : ℝ
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean)
+- [Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean)

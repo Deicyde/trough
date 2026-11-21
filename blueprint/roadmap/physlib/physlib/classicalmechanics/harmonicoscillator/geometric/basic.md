@@ -8,7 +8,7 @@ proof: formalized
 
 # Configuration space of the harmonic oscillator
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Basic`, [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean): 18 declarations (6 instances with no name), 18 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Basic`, [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean): 18 declarations (6 instances with no name), 18 with a docstring.
 
 ## i. Overview
 
@@ -55,7 +55,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Basic`, [Phy
 > `EuclideanSpace ℝ (Fin 1)`. We record extensionality in this coordinate together with a
 > function-like coordinate access mirroring that of `EuclideanSpace ℝ (Fin 1)`.
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L86).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace`**, a structure, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L86).
 
 > The one-dimensional configuration space `Q` of the harmonic oscillator: the space of
 > possible positions of the oscillator, equipped with a single chosen global coordinate
@@ -68,7 +68,7 @@ structure ConfigurationSpace where
   val : EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.ext`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L95).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.ext`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L95).
 
 > Two configurations are equal when their chosen global coordinates are equal.
 
@@ -76,7 +76,7 @@ structure ConfigurationSpace where
 lemma ext {x y : ConfigurationSpace} (h : x.val = y.val) : x = y
 ```
 
-**An instance with no name**, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L103).
+**An instance with no name**, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L103).
 
 > A configuration may be applied like a function `Fin 1 → ℝ`, evaluating its
 > underlying coordinate. This mirrors the function-like use of `EuclideanSpace ℝ (Fin 1)`.
@@ -85,7 +85,7 @@ lemma ext {x y : ConfigurationSpace} (h : x.val = y.val) : x = y
 instance : CoeFun ConfigurationSpace (fun _ => Fin 1 → ℝ)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.coe_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L108).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.coe_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L108).
 
 > Applying a configuration as a function reads the corresponding component of its global
 > coordinate.
@@ -104,7 +104,7 @@ lemma coe_apply (x : ConfigurationSpace) (i : Fin 1) : x i = x.val i
 > and second countability across it from the model space, so `Q` is a well-behaved topological
 > manifold.
 
-**An instance with no name**, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L124).
+**An instance with no name**, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L124).
 
 > The topology on configuration space, induced by the chosen coordinate
 > `ConfigurationSpace.val` into `EuclideanSpace ℝ (Fin 1)`.
@@ -113,7 +113,7 @@ lemma coe_apply (x : ConfigurationSpace) (i : Fin 1) : x i = x.val i
 instance : TopologicalSpace ConfigurationSpace
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valEquiv`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L129).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valEquiv`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L129).
 
 > The coordinate equivalence between configuration space and its `EuclideanSpace ℝ (Fin 1)`
 > model, given by `ConfigurationSpace.val` with its wrapper inverse.
@@ -122,7 +122,7 @@ instance : TopologicalSpace ConfigurationSpace
 def valEquiv : ConfigurationSpace ≃ EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valHomeomorphism`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L139).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valHomeomorphism`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L139).
 
 > The global coordinate homeomorphism between configuration space and its
 > `EuclideanSpace ℝ (Fin 1)` model. Continuity in both directions is exactly the universal
@@ -133,7 +133,7 @@ def valEquiv : ConfigurationSpace ≃ EuclideanSpace ℝ (Fin 1)
 def valHomeomorphism : ConfigurationSpace ≃ₜ EuclideanSpace ℝ (Fin 1)
 ```
 
-**An instance with no name**, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L148).
+**An instance with no name**, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L148).
 
 > Configuration space is Hausdorff, transported from `EuclideanSpace ℝ (Fin 1)` across the
 > coordinate homeomorphism.
@@ -142,7 +142,7 @@ def valHomeomorphism : ConfigurationSpace ≃ₜ EuclideanSpace ℝ (Fin 1)
 instance : T2Space ConfigurationSpace
 ```
 
-**An instance with no name**, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L152).
+**An instance with no name**, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L152).
 
 > Configuration space is second countable, transported from `EuclideanSpace ℝ (Fin 1)`
 > across the coordinate homeomorphism.
@@ -157,7 +157,7 @@ instance : SecondCountableTopology ConfigurationSpace
 > single global chart `valHomeomorphism`. With one chart the only coordinate change is the
 > chart's self-transition, which is analytic, so chart compatibility is immediate.
 
-**An instance with no name**, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L165).
+**An instance with no name**, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L165).
 
 > The structure of a charted space on `ConfigurationSpace`, modeled on its
 > `EuclideanSpace ℝ (Fin 1)` coordinate via the single global chart `valHomeomorphism`.
@@ -166,7 +166,7 @@ instance : SecondCountableTopology ConfigurationSpace
 instance : ChartedSpace (EuclideanSpace ℝ (Fin 1)) ConfigurationSpace
 ```
 
-**An instance with no name**, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L179).
+**An instance with no name**, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L179).
 
 > The structure of a smooth (indeed analytic) manifold on `ConfigurationSpace`. With a
 > single global chart, the only coordinate change is the chart's self-transition, which is
@@ -184,7 +184,7 @@ instance : IsManifold 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) ω ConfigurationSpac
 > manifold structure. This smooth identification is what lets smoothness of maps to or from `Q`
 > be tested in the chosen global coordinate, the device used for trajectories and their velocities.
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valDiffeomorph`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L198).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.valDiffeomorph`**, a def, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L198).
 
 > The global coordinate chart as an analytic diffeomorphism between `ConfigurationSpace` and
 > its `EuclideanSpace ℝ (Fin 1)` model, upgrading `valHomeomorphism` to a smooth identification.
@@ -201,7 +201,7 @@ def valDiffeomorph :
 > vectors. The tangent spaces inherit their normed real vector-space structure from the Euclidean
 > coordinate model, and `tangentCoord q` records the resulting continuous linear equivalence.
 
-**`ClassicalMechanics.HarmonicOscillator.instNormedAddCommGroupTangent`**, an instance, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L231).
+**`ClassicalMechanics.HarmonicOscillator.instNormedAddCommGroupTangent`**, an instance, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L231).
 
 > The model-space normed additive group structure on tangent spaces.
 
@@ -210,7 +210,7 @@ instance instNormedAddCommGroupTangent (q : ConfigurationSpace) :
     NormedAddCommGroup (TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.instNormedSpaceTangent`**, an instance, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L236).
+**`ClassicalMechanics.HarmonicOscillator.instNormedSpaceTangent`**, an instance, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L236).
 
 > The model-space real normed vector space structure on tangent spaces.
 
@@ -219,7 +219,7 @@ instance instNormedSpaceTangent (q : ConfigurationSpace) :
     NormedSpace ℝ (TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.tangentCoord`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L242).
+**`ClassicalMechanics.HarmonicOscillator.tangentCoord`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L242).
 
 > The chart-induced continuous linear equivalence from the tangent space at `q` to the
 > Euclidean coordinate model `EuclideanSpace ℝ (Fin 1)`.
@@ -229,7 +229,7 @@ def tangentCoord (q : ConfigurationSpace) :
     TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q ≃L[ℝ] EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.instFiniteDimensionalTangent`**, an instance, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L251).
+**`ClassicalMechanics.HarmonicOscillator.instFiniteDimensionalTangent`**, an instance, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L251).
 
 > Each tangent space is finite-dimensional because it is linearly equivalent to
 > `EuclideanSpace ℝ (Fin 1)` through `tangentCoord`.
@@ -245,7 +245,7 @@ instance instFiniteDimensionalTangent (q : ConfigurationSpace) :
 > reading off the underlying coordinate. This links the abstract configuration manifold to the
 > concrete coordinate model.
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.toSpace`**, a def, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L268).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.toSpace`**, a def, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L268).
 
 > The position in one-dimensional space associated to the configuration.
 
@@ -253,7 +253,7 @@ instance instFiniteDimensionalTangent (q : ConfigurationSpace) :
 def toSpace (q : ConfigurationSpace) : Space 1
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.toSpace_apply`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L272).
+**`ClassicalMechanics.HarmonicOscillator.ConfigurationSpace.toSpace_apply`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean#L272).
 
 > The physical-space coordinate associated to a configuration is its chosen global
 > coordinate.
@@ -268,4 +268,4 @@ lemma toSpace_apply (q : ConfigurationSpace) (i : Fin 1) : q.toSpace i = q.val i
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 85.33 Fppf hypercoverings of algebraic spaces
 
-Section 85.33 of the Stacks Project, [Tag 0DH4](https://stacks.math.columbia.edu/tag/0DH4). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.33 of the Stacks Project, [Tag 0DH4](https://stacks.math.columbia.edu/tag/0DH4). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DH5, a lemma
 
@@ -16,13 +16,13 @@ Section 85.33 of the Stacks Project, [Tag 0DH4](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.bigFppfAugmentationSquareIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSmallEtaleBigFppfSquare.lean#L289), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L44) (StacksFrontier).
+- [`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.bigFppfAugmentationSquareIso`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSmallEtaleBigFppfSquare.lean#L289), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDescentTags.lean#L44) (StacksFrontier).
 
 ## Tag 0DH6, a lemma
 
 [Tag 0DH6](https://stacks.math.columbia.edu/tag/0DH6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.EtaleComponent.smallEtale_inverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean#L422). The attribute's comment: “sheaves of sets”.
+**`AlgebraicGeometry.Space.EtaleComponent.smallEtale_inverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean#L422). The attribute's comment: “sheaves of sets”.
 
 > **Stacks 0DH6, sheaves of sets.** Let `S` be a scheme, `X` an algebraic space over `S`, and
 > `a : U → X` an augmentation of a simplicial algebraic space over `S` which is an fppf
@@ -65,7 +65,7 @@ theorem smallEtale_inverseImage_fullyFaithful (hyp : IsFppfHypercovering A) :
           (etaleAugmentationMorphism A).adj).counit.app G))
 ```
 
-**`AlgebraicGeometry.Space.EtaleComponent.smallEtale_abelianInverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean#L463). The attribute's comment: “sheaves of abelian groups”.
+**`AlgebraicGeometry.Space.EtaleComponent.smallEtale_abelianInverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean, line 463](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringInverseImage.lean#L463). The attribute's comment: “sheaves of abelian groups”.
 
 > **Stacks 0DH6, sheaves of abelian groups.** Let `S` be a scheme, `X` an algebraic space over
 > `S`, and `a : U → X` an augmentation of a simplicial algebraic space over `S` which is an fppf
@@ -115,7 +115,7 @@ theorem smallEtale_abelianInverseImage_fullyFaithful (hyp : IsFppfHypercovering 
 
 [Tag 0DH7](https://stacks.math.columbia.edu/tag/0DH7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFppfHypercovering.isIso_smallEtaleDerivedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean#L125).
+**`AlgebraicGeometry.Space.IsFppfHypercovering.isIso_smallEtaleDerivedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean#L125).
 
 > **Stacks 0DH7.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a simplicial
 > algebraic space over `S` and `a : U → X` an augmentation which is an fppf hypercovering of `X`.
@@ -141,7 +141,7 @@ theorem IsFppfHypercovering.isIso_smallEtaleDerivedUnit (hA : IsFppfHypercoverin
 
 [Tag 0DH8](https://stacks.math.columbia.edu/tag/0DH8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFppfHypercovering.smallEtaleDerivedGlobalSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean#L194).
+**`AlgebraicGeometry.Space.IsFppfHypercovering.smallEtaleDerivedGlobalSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringSmallEtaleDerived.lean#L194).
 
 > **Stacks 0DH8.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a simplicial
 > algebraic space over `S` and `a : U → X` an augmentation which is an fppf hypercovering of `X`.
@@ -167,7 +167,7 @@ def IsFppfHypercovering.smallEtaleDerivedGlobalSectionsIso (hA : IsFppfHypercove
 
 [Tag 0DH9](https://stacks.math.columbia.edu/tag/0DH9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L93).
+**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L93).
 
 > **Stacks Project, Tag 0DH9.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a
 > simplicial algebraic space over `S` and `a : U → X` an augmentation, and let
@@ -193,7 +193,7 @@ def derivedPlusEquivalenceOfIsFppfHypercovering (hA : IsFppfHypercovering A) :
       (cartesianDerivedPlus (etaleSituation A)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L104). The attribute's comment: “the equivalence is `a⁻¹`”.
+**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L104). The attribute's comment: “the equivalence is `a⁻¹`”.
 
 > **The equivalence of Tag 0DH9 is `a⁻¹`**: its forward functor, followed by the inclusion of
 > `D⁺_𝒜(U_étale)` into `D⁺(U_étale)`, is `a⁻¹ : D⁺(X_étale) ⥤ D⁺(U_étale)`, the right derived
@@ -206,7 +206,7 @@ theorem derivedPlusEquivalenceOfIsFppfHypercovering_functor (hA : IsFppfHypercov
       (totalInverseImageAb (etaleSituation A) _ _ (etaleAugmentation A)).rightDerivedFunctorPlus
 ```
 
-**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L113). The attribute's comment: “the quasi-inverse is `Ra_*`”.
+**`AlgebraicGeometry.Space.derivedPlusEquivalenceOfIsFppfHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringDerivedEquivalence.lean#L113). The attribute's comment: “the quasi-inverse is `Ra_*`”.
 
 > **The quasi-inverse of the equivalence of Tag 0DH9 is `Ra_*`**: its inverse functor is the
 > inclusion of `D⁺_𝒜(U_étale)` into `D⁺(U_étale)` followed by `Ra_* : D⁺(U_étale) ⥤ D⁺(X_étale)`.
@@ -223,7 +223,7 @@ theorem derivedPlusEquivalenceOfIsFppfHypercovering_inverse (hA : IsFppfHypercov
 
 [Tag 0DHA](https://stacks.math.columbia.edu/tag/0DHA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFppfHypercovering.etaleSpectralSequence_pageOne_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringEtaleSpectralSequence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringEtaleSpectralSequence.lean#L125).
+**`AlgebraicGeometry.Space.IsFppfHypercovering.etaleSpectralSequence_pageOne_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringEtaleSpectralSequence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/FppfHypercoveringEtaleSpectralSequence.lean#L125).
 
 > **Stacks Project, Tag 0DHA.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a
 > simplicial algebraic space over `S` and `a : U → X` an augmentation. Let `𝓕` be an abelian sheaf
@@ -261,4 +261,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.33, Tag 0DH4](https://stacks.math.columbia.edu/tag/0DH4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

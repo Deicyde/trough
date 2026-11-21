@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.13 The Keel-Mori theorem
 
-Section 106.13 of the Stacks Project, [Tag 0DUK](https://stacks.math.columbia.edu/tag/0DUK). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.13 of the Stacks Project, [Tag 0DUK](https://stacks.math.columbia.edu/tag/0DUK). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DUL, a definition
 
 [Tag 0DUL](https://stacks.math.columbia.edu/tag/0DUL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsWellNighAffine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffine.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffine.lean#L135).
+**`AlgebraicGeometry.Stack.IsWellNighAffine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffine.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffine.lean#L135).
 
 > **Stacks 0DUL.** An algebraic stack over `S` is *well-nigh affine* when there is an object `U`
 > of the big fppf site of `S` with affine underlying scheme and a 1-morphism from the algebraic
@@ -29,7 +29,7 @@ abbrev IsWellNighAffine (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains 
 
 [Tag 0DUM](https://stacks.math.columbia.edu/tag/0DUM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactStack_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L161). The attribute's comment: “a well-nigh affine algebraic stack is quasi-compact”.
+**`AlgebraicGeometry.Stack.isQuasiCompactStack_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L161). The attribute's comment: “a well-nigh affine algebraic stack is quasi-compact”.
 
 > **Stacks 0DUM, the quasi-compactness assertion.** A well-nigh affine algebraic stack is
 > quasi-compact: the algebraic stack of the affine scheme that Stacks 0DUL provides is
@@ -41,7 +41,7 @@ theorem isQuasiCompactStack_of_isWellNighAffine
     IsQuasiCompactStack.{u, w} B S hS 𝒳.val 𝒳.property
 ```
 
-**`AlgebraicGeometry.Stack.HasAffineFiniteLocallyFreeGroupoidPresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L191). The attribute's comment: “condition (2): a presentation by an affine groupoid scheme with finite locally free source and target”.
+**`AlgebraicGeometry.Stack.HasAffineFiniteLocallyFreeGroupoidPresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L191). The attribute's comment: “condition (2): a presentation by an affine groupoid scheme with finite locally free source and target”.
 
 > **Stacks 0DUM, condition (2).** An algebraic stack over `S` has an *affine finite locally
 > free groupoid presentation* when it is equivalent over the site to the quotient stack of a
@@ -53,7 +53,7 @@ abbrev HasAffineFiniteLocallyFreeGroupoidPresentation
     (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.isAbsolutelyQuasiDM_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L292). The attribute's comment: “a well-nigh affine algebraic stack is quasi-DM, read off condition (2)”.
+**`AlgebraicGeometry.Stack.isAbsolutelyQuasiDM_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L292). The attribute's comment: “a well-nigh affine algebraic stack is quasi-DM, read off condition (2)”.
 
 > **Stacks 0DUM, the quasi-DM assertion.** An algebraic stack equivalent over the site to the
 > quotient stack of a groupoid scheme of the site with finite locally free source and target is
@@ -74,7 +74,7 @@ theorem isAbsolutelyQuasiDM_of_representedGroupoid_isFiniteLocallyFree
     AlgebraicStacks.IsAbsolutelyQuasiDM.{u, w} B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedOver_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L318). The attribute's comment: “a well-nigh affine algebraic stack is separated over the base scheme of the site, read off condition (2)”.
+**`AlgebraicGeometry.Stack.isSeparatedOver_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L318). The attribute's comment: “a well-nigh affine algebraic stack is separated over the base scheme of the site, read off condition (2)”.
 
 > **Stacks 0DUM, the separatedness assertion over the base scheme of the site.** An algebraic
 > stack equivalent over the site to the quotient stack of a groupoid scheme of the site with affine
@@ -95,7 +95,7 @@ theorem isSeparatedOver_of_representedGroupoid_isFiniteLocallyFree
     IsSeparatedOver.{u, w} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isAbsolutelySeparated_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L344). The attribute's comment: “a well-nigh affine algebraic stack is separated in the source's unqualified (absolute) sense, read off condition (2)”.
+**`AlgebraicGeometry.Stack.isAbsolutelySeparated_of_representedGroupoid_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 344](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L344). The attribute's comment: “a well-nigh affine algebraic stack is separated in the source's unqualified (absolute) sense, read off condition (2)”.
 
 > **Stacks 0DUM, the separatedness assertion.** An algebraic stack equivalent over the site to
 > the quotient stack of a groupoid scheme of the site with affine object scheme and finite locally
@@ -118,7 +118,7 @@ theorem isAbsolutelySeparated_of_representedGroupoid_isFiniteLocallyFree
     AlgebraicStacks.IsAbsolutelySeparated.{u, w} B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isWellNighAffine_iff_and_isQuasiCompact_isQuasiDM_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoidPresentation.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoidPresentation.lean#L441).
+**`AlgebraicGeometry.Stack.isWellNighAffine_iff_and_isQuasiCompact_isQuasiDM_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoidPresentation.lean, line 441](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoidPresentation.lean#L441).
 
 > **Stacks 0DUM.** Let `𝒳` be an algebraic stack over `S`. The following are equivalent:
 >
@@ -149,7 +149,7 @@ theorem isWellNighAffine_iff_and_isQuasiCompact_isQuasiDM_isSeparated
 
 [Tag 0DUN](https://stacks.math.columbia.edu/tag/0DUN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isWellNighAffine_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L379). The attribute's comment: “clause (2): the source of an affine 1-morphism of algebraic stacks whose target is well-nigh affine is well-nigh affine”.
+**`AlgebraicGeometry.Stack.isWellNighAffine_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 379](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L379). The attribute's comment: “clause (2): the source of an affine 1-morphism of algebraic stacks whose target is well-nigh affine is well-nigh affine”.
 
 > **Stacks 0DUN, clause (2).** If `𝒳` is a well-nigh affine algebraic stack over `S` and
 > `f : 𝒳' ⟶ 𝒳` is an affine 1-morphism of algebraic stacks over `S`, then `𝒳'` is well-nigh
@@ -168,7 +168,7 @@ theorem isWellNighAffine_of_isAffineHom {𝒳 𝒳' : AlgebraicStacks.{u, w} B S
     IsWellNighAffine.{u, w} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isAffineSpace_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L619). The attribute's comment: “clause (1): a well-nigh affine algebraic stack which is an algebraic space is affine”.
+**`AlgebraicGeometry.Stack.isAffineSpace_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean, line 619](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineGroupoid.lean#L619). The attribute's comment: “clause (1): a well-nigh affine algebraic stack which is an algebraic space is affine”.
 
 > **Stacks 0DUN, clause (1).** A well-nigh affine algebraic stack over `S` which is an
 > algebraic space is affine: every algebraic space `F` representing it over the site is affine.
@@ -194,7 +194,7 @@ theorem isAffineSpace_of_isWellNighAffine (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 0DUP](https://stacks.math.columbia.edu/tag/0DUP) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.existsUnique_comp_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L129). The attribute's comment: “the construction of the moduli space and its universal property, at the groupoid presentation and for the quotient map of the object scheme: the invariant-ring quotient U -> M = Spec C is a categorical quotient in the category of affine schemes. The 1-morphism f : X -> M out of the quotient stack is NOT constructed, and none of the four assertions about f is proved: the passage from U -> M to f along Stacks 0DUH and Stacks 0DUI, and the implication (1) => (2) of Stacks 0DUM, are not available in the library”. References: SGA 1 V (1.1), “(iv), special case”.
+**`AlgebraicGeometry.GroupoidScheme.existsUnique_comp_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L129). The attribute's comment: “the construction of the moduli space and its universal property, at the groupoid presentation and for the quotient map of the object scheme: the invariant-ring quotient U -> M = Spec C is a categorical quotient in the category of affine schemes. The 1-morphism f : X -> M out of the quotient stack is NOT constructed, and none of the four assertions about f is proved: the passage from U -> M to f along Stacks 0DUH and Stacks 0DUI, and the implication (1) => (2) of Stacks 0DUM, are not available in the library”. References: SGA 1 V (1.1), “(iv), special case”.
 
 > Let `G = (U, R, s, t, c)` be a groupoid scheme and let `C` be the ring of `R`-invariant
 > global functions on `U`. Every morphism `ψ : U ⟶ Spec C'` to an affine scheme which coequalizes
@@ -210,7 +210,7 @@ theorem existsUnique_comp_objectsToInvariantSpectrum (C' : Type u) [CommRing C']
       objectsToInvariantSpectrum G ≫ χ = ψ
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.existsUnique_comp_objects_hom_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L186). The attribute's comment: “the word *uniform*, at the groupoid presentation and for the quotient map of the object scheme: after a flat base change C -> C' the structure morphism U' -> Spec C' of the base-changed groupoid is again a categorical quotient in the category of affine schemes, so the flat base change of M is again the moduli space. Stated for U' -> Spec C' and NOT for the base change of a 1-morphism f : X -> M, which is not constructed here”. References: SGA 1 V (1.9), “affine case with Z = Y”.
+**`AlgebraicGeometry.GroupoidScheme.existsUnique_comp_objects_hom_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L186). The attribute's comment: “the word *uniform*, at the groupoid presentation and for the quotient map of the object scheme: after a flat base change C -> C' the structure morphism U' -> Spec C' of the base-changed groupoid is again a categorical quotient in the category of affine schemes, so the flat base change of M is again the moduli space. Stated for U' -> Spec C' and NOT for the base change of a 1-morphism f : X -> M, which is not constructed here”. References: SGA 1 V (1.9), “affine case with Z = Y”.
 
 > Let `C ⟶ C'` be a flat ring map and let `G'` be the base change of the groupoid along it.
 > Then the structure morphism `U' ⟶ Spec C'` of the object scheme of `G'` has the universal property
@@ -225,7 +225,7 @@ theorem existsUnique_comp_objects_hom_of_flat [Module.Flat (invariantRing G) C']
     ∃! χ : Spec (.of C') ⟶ Spec (.of C''), G'.groupoid.objects.hom ≫ χ = ψ
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.universallyClosed_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L229). The attribute's comment: “part of assertion (d), at the groupoid presentation and for the quotient map of the object scheme: U -> M = Spec C is integral (Stacks 03BJ) and therefore universally closed (Stacks 01WM). That f : X -> M is a universal homeomorphism is NOT proved: neither the transport of universal closedness along the surjection U -> X (Stacks 0CQK), nor universal injectivity of f (Stacks 0DTN), nor surjectivity of |f| is covered here”. References: SGA 3 V (6.1), “special case”.
+**`AlgebraicGeometry.GroupoidScheme.universallyClosed_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantModuliSpace.lean#L229). The attribute's comment: “part of assertion (d), at the groupoid presentation and for the quotient map of the object scheme: U -> M = Spec C is integral (Stacks 03BJ) and therefore universally closed (Stacks 01WM). That f : X -> M is a universal homeomorphism is NOT proved: neither the transport of universal closedness along the surjection U -> X (Stacks 0CQK), nor universal injectivity of f (Stacks 0DTN), nor surjectivity of |f| is covered here”. References: SGA 3 V (6.1), “special case”.
 
 > The invariant quotient map `U ⟶ M = Spec C` is universally closed.
 
@@ -234,7 +234,7 @@ theorem universallyClosed_objectsToInvariantSpectrum :
     UniversallyClosed (objectsToInvariantSpectrum G)
 ```
 
-**`AlgebraicGeometry.Stack.exists_isUniformCategoricalModuliSpaceIn_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineModuliSpace.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineModuliSpace.lean#L58).
+**`AlgebraicGeometry.Stack.exists_isUniformCategoricalModuliSpaceIn_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineModuliSpace.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineModuliSpace.lean#L58).
 
 > **Stacks 0DUP.** Let the algebraic stack `𝒳` be well-nigh affine. There exists a uniform
 > categorical moduli space `f : 𝒳 ⟶ M` in the category of affine schemes. Moreover `f` is
@@ -255,7 +255,7 @@ theorem exists_isUniformCategoricalModuliSpaceIn_of_isWellNighAffine
 
 [Tag 0DUQ](https://stacks.math.columbia.edu/tag/0DUQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleModuliSquare.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleModuliSquare.lean#L244).
+**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_inducesIsomorphismAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleModuliSquare.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleModuliSquare.lean#L244).
 
 > **Stacks 0DUQ.** Let `h : 𝒳' ⟶ 𝒳` be a morphism of algebraic stacks. Assume `𝒳'` and `𝒳` are
 > well-nigh affine, `h` is étale, and `h` induces isomorphisms on automorphism groups (Stacks 0DTW).
@@ -298,7 +298,7 @@ theorem exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_inducesIsomorphismAt
 
 [Tag 0DUR](https://stacks.math.columbia.edu/tag/0DUR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUniformCategoricalModuliSpace_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineUniformModuliSpace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineUniformModuliSpace.lean#L104).
+**`AlgebraicGeometry.Stack.isUniformCategoricalModuliSpace_of_isWellNighAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineUniformModuliSpace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineUniformModuliSpace.lean#L104).
 
 > **Stacks 0DUR.** Let `𝒳` be a well-nigh affine algebraic stack. The morphism `f : 𝒳 ⟶ M` of
 > Stacks 0DUP is a uniform categorical moduli space.
@@ -326,7 +326,7 @@ theorem isUniformCategoricalModuliSpace_of_isWellNighAffine (𝒳 : AlgebraicSta
 
 [Tag 0DUS](https://stacks.math.columbia.edu/tag/0DUS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSeparatedModuliSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSeparatedModuliSquare.lean#L176).
+**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/EtaleSeparatedModuliSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/EtaleSeparatedModuliSquare.lean#L176).
 
 > **Stacks 0DUS.** Let `h : 𝒳' ⟶ 𝒳` be a morphism of algebraic stacks. Assume `𝒳` is well-nigh
 > affine, `h` is étale, `h` is separated, and `h` induces isomorphisms on automorphism groups
@@ -366,7 +366,7 @@ theorem exists_isTwoFibreProduct_moduliSpace_of_isEtale_of_isSeparated
 
 [Tag 0DUE](https://stacks.math.columbia.edu/tag/0DUE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isWellNighAffine_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleCover.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleCover.lean#L96).
+**`AlgebraicGeometry.Stack.exists_isWellNighAffine_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleCover.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/WellNighAffineEtaleCover.lean#L96).
 
 > **Stacks 0DUE.** Let `𝒳` be an algebraic stack over `S` whose inertia projection
 > `I_𝒳 ⟶ 𝒳` is finite. Then there are a set `I` and, for `i ∈ I`, 1-morphisms of algebraic stacks
@@ -396,7 +396,7 @@ theorem exists_isWellNighAffine_etale_cover (𝒳 : AlgebraicStacks.{u, w} B S h
 
 [Tag 0DUT](https://stacks.math.columbia.edu/tag/0DUT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isUniformCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/KeelMoriTheorem.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/KeelMoriTheorem.lean#L66).
+**`AlgebraicGeometry.Stack.exists_isUniformCategoricalModuliSpace_of_isFinite_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/KeelMoriTheorem.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/KeelMori/KeelMoriTheorem.lean#L66).
 
 > **Stacks 0DUT (Keel–Mori).** Let `𝒳` be an algebraic stack whose inertia `I_𝒳 ⟶ 𝒳` is
 > finite. Then there exists a uniform categorical moduli space `f : 𝒳 ⟶ M`, and `f` is separated,
@@ -415,7 +415,7 @@ theorem exists_isUniformCategoricalModuliSpace_of_isFinite_inertia
 
 [Tag 0DUV](https://stacks.math.columbia.edu/tag/0DUV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_keelMoriModuliSpace_of_isEtale_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMoriEtaleLocal/EtaleMorphismModuliSquare.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/KeelMoriEtaleLocal/EtaleMorphismModuliSquare.lean#L62).
+**`AlgebraicGeometry.Stack.exists_isTwoFibreProduct_keelMoriModuliSpace_of_isEtale_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/KeelMoriEtaleLocal/EtaleMorphismModuliSquare.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/KeelMoriEtaleLocal/EtaleMorphismModuliSquare.lean#L62).
 
 > **Stacks 0DUV.** Let `h : 𝒳' ⟶ 𝒳` be a 1-morphism of algebraic stacks. Assume that the
 > inertia `I_𝒳 ⟶ 𝒳` is finite, and that `h` is étale, separated, and induces isomorphisms between
@@ -453,4 +453,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.13, Tag 0DUK](https://stacks.math.columbia.edu/tag/0DUK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

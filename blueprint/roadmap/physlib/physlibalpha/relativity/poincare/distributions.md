@@ -8,7 +8,7 @@ proof: formalized
 
 # The Poincaré action on test functions and distributions
 
-The module `PhyslibAlpha.Relativity.Poincare.Distributions`, [PhyslibAlpha/Relativity/Poincare/Distributions.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean): 14 declarations, 14 with a docstring.
+The module `PhyslibAlpha.Relativity.Poincare.Distributions`, [PhyslibAlpha/Relativity/Poincare/Distributions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean): 14 declarations, 14 with a docstring.
 
 > The Poincaré group acts on test functions by pullback and on distributions by transposition.
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.Relativity.Poincare.Distributions`, [PhyslibAlpha/Relat
 
 > - `PoincareGroup.actDist` : the action on distributions.
 
-**`PoincareGroup.lorentzCLE`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L63).
+**`PoincareGroup.lorentzCLE`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L63).
 
 > A Lorentz transformation as a continuous linear equivalence of spacetime.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Relativity.Poincare.Distributions`, [PhyslibAlpha/Relat
 def lorentzCLE (Λ : LorentzGroup d) : SpaceTime d ≃L[ℝ] SpaceTime d
 ```
 
-**`PoincareGroup.abs_det_lorentzCLE`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L69).
+**`PoincareGroup.abs_det_lorentzCLE`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L69).
 
 > The determinant of a Lorentz transformation has absolute value one.
 
@@ -56,7 +56,7 @@ lemma abs_det_lorentzCLE (Λ : LorentzGroup d) :
     |LinearMap.det (lorentzCLE Λ : SpaceTime d →ₗ[ℝ] SpaceTime d)| = 1
 ```
 
-**`PoincareGroup.actTestFunction`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L86).
+**`PoincareGroup.actTestFunction`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L86).
 
 > The action of the Poincaré group on test functions.
 
@@ -65,7 +65,7 @@ def actTestFunction (g : PoincareGroup d) :
     𝓓((⊤ : Opens (SpaceTime d)), F) →L[ℝ] 𝓓((⊤ : Opens (SpaceTime d)), F)
 ```
 
-**`PoincareGroup.actTestFunction_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L93).
+**`PoincareGroup.actTestFunction_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L93).
 
 > The value of a transformed test function.
 
@@ -74,7 +74,7 @@ lemma actTestFunction_apply (g : PoincareGroup d) (φ : 𝓓((⊤ : Opens (Space
     (x : SpaceTime d) : actTestFunction g φ x = φ (g⁻¹ • x)
 ```
 
-**`PoincareGroup.actTestFunction_translation_inv`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L97).
+**`PoincareGroup.actTestFunction_translation_inv`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L97).
 
 > The inverse of a pure translation acts on test functions as the translate `x ↦ φ (x + p)`.
 
@@ -83,7 +83,7 @@ lemma actTestFunction_translation_inv (p : SpaceTime d) (φ : 𝓓((⊤ : Opens 
     actTestFunction (⟨p, 1⟩ : PoincareGroup d)⁻¹ φ = TestFunction.precompTranslationCLM p φ
 ```
 
-**`PoincareGroup.actTestFunction_one`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L105).
+**`PoincareGroup.actTestFunction_one`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L105).
 
 > The identity acts trivially on test functions.
 
@@ -92,7 +92,7 @@ lemma actTestFunction_one (φ : 𝓓((⊤ : Opens (SpaceTime d)), F)) :
     actTestFunction (1 : PoincareGroup d) φ = φ
 ```
 
-**`PoincareGroup.actTestFunction_mul`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L111).
+**`PoincareGroup.actTestFunction_mul`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L111).
 
 > The action on test functions is a left action.
 
@@ -101,7 +101,7 @@ lemma actTestFunction_mul (g h : PoincareGroup d) (φ : 𝓓((⊤ : Opens (Space
     actTestFunction (g * h) φ = actTestFunction g (actTestFunction h φ)
 ```
 
-**`PoincareGroup.tsupport_actTestFunction`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L117).
+**`PoincareGroup.tsupport_actTestFunction`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L117).
 
 > The support of a transformed test function is the image of the support.
 
@@ -110,7 +110,7 @@ lemma tsupport_actTestFunction (g : PoincareGroup d) (φ : 𝓓((⊤ : Opens (Sp
     tsupport (actTestFunction g φ) = g • tsupport φ
 ```
 
-**`PoincareGroup.actDist`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L128).
+**`PoincareGroup.actDist`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L128).
 
 > The action of the Poincaré group on distributions: `(g • T) φ = T (g⁻¹ • φ)`.
 
@@ -118,7 +118,7 @@ lemma tsupport_actTestFunction (g : PoincareGroup d) (φ : 𝓓((⊤ : Opens (Sp
 def actDist (g : PoincareGroup d) : DistributionField d V →L[ℝ] DistributionField d V
 ```
 
-**`PoincareGroup.actDist_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L132).
+**`PoincareGroup.actDist_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L132).
 
 > The value of a transformed distribution.
 
@@ -127,7 +127,7 @@ lemma actDist_apply (g : PoincareGroup d) (T : DistributionField d V)
     (φ : 𝓓((⊤ : Opens (SpaceTime d)), ℝ)) : actDist g T φ = T (actTestFunction g⁻¹ φ)
 ```
 
-**`PoincareGroup.actDist_one`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L136).
+**`PoincareGroup.actDist_one`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L136).
 
 > The identity acts trivially on distributions.
 
@@ -135,7 +135,7 @@ lemma actDist_apply (g : PoincareGroup d) (T : DistributionField d V)
 lemma actDist_one (T : DistributionField d V) : actDist (1 : PoincareGroup d) T = T
 ```
 
-**`PoincareGroup.actDist_mul`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L141).
+**`PoincareGroup.actDist_mul`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L141).
 
 > The action on distributions is a left action.
 
@@ -144,7 +144,7 @@ lemma actDist_mul (g h : PoincareGroup d) (T : DistributionField d V) :
     actDist (g * h) T = actDist g (actDist h T)
 ```
 
-**`PoincareGroup.isVanishingOn_actDist`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L147).
+**`PoincareGroup.isVanishingOn_actDist`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L147).
 
 > A transformed distribution vanishes outside the image of the set.
 
@@ -154,7 +154,7 @@ lemma isVanishingOn_actDist (g : PoincareGroup d) {T : DistributionField d V}
     Distribution.IsVanishingOn (actDist g T) (g • U)
 ```
 
-**`PoincareGroup.actDist_delta`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L157).
+**`PoincareGroup.actDist_delta`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean#L157).
 
 > The action sends a delta distribution to a delta distribution.
 
@@ -172,4 +172,4 @@ lemma actDist_delta (g : PoincareGroup d) (p : SpaceTime d) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Poincare/Distributions.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Poincare/Distributions.lean)
+- [PhyslibAlpha/Relativity/Poincare/Distributions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Poincare/Distributions.lean)

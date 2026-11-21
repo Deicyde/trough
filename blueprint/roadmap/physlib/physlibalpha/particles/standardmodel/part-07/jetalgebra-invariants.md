@@ -8,7 +8,7 @@ proof: formalized
 
 # Gauge invariants of the jet algebra of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Invariants`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean): 7 declarations, 5 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Invariants`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean): 7 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Invariants`, [Physli
 
 ### A.1. The gauge-field generators
 
-**`StandardModel.JetAlgebra.gaugeField`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L84).
+**`StandardModel.JetAlgebra.gaugeField`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L84).
 
 > The gauge-field derivative symbols of the jet algebra of the Standard Model: the
 > gauge sector's symbols, included into the full algebra. It is written as a composite of
@@ -57,7 +57,7 @@ noncomputable def gaugeField (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fi
     Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.gaugeField_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L90).
+**`StandardModel.JetAlgebra.gaugeField_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L90).
 
 ```lean
 lemma gaugeField_apply (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
@@ -65,7 +65,7 @@ lemma gaugeField_apply (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
     gaugeField s μ φ = includeGauge ((LocalGaugeFieldAlgebra.gaugeField GaugeAlgebra) s μ φ)
 ```
 
-**`StandardModel.JetAlgebra.gaugeField_eq_ιConnection`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L97).
+**`StandardModel.JetAlgebra.gaugeField_eq_ιConnection`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L97).
 
 > The gauge-field symbols `∂_s A_μ^φ` are the connection generators of the field datum:
 > the derivative label, the spacetime index and the adjoint covector are unchanged, and the
@@ -82,7 +82,7 @@ lemma gaugeField_eq_ιConnection (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 �
 
 ### A.2. Centrality
 
-**`StandardModel.JetAlgebra.includeGauge_mem_center`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L125).
+**`StandardModel.JetAlgebra.includeGauge_mem_center`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L125).
 
 > The gauge sector lands in the centre of the jet algebra.
 
@@ -93,7 +93,7 @@ lemma includeGauge_mem_center (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlg
 
 ## B. The gauge realization
 
-**`StandardModel.JetAlgebra.gaugeRealization`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L138).
+**`StandardModel.JetAlgebra.gaugeRealization`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L138).
 
 > The jet algebra of the Standard Model realizes the gauge-boson jet algebra through the
 > central inclusion of the gauge sector, equivariantly for the jet gauge group and the
@@ -104,7 +104,7 @@ noncomputable def gaugeRealization :
     GaugeAlgebraRealization localGaugeData JetAlgebra repJetGaugeGroupI repLorentzGroup
 ```
 
-**`StandardModel.JetAlgebra.gaugeRealization_A`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L148).
+**`StandardModel.JetAlgebra.gaugeRealization_A`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L148).
 
 ```lean
 lemma gaugeRealization_A : gaugeRealization.A = gaugeField
@@ -112,7 +112,7 @@ lemma gaugeRealization_A : gaugeRealization.A = gaugeField
 
 ## C. The classification of gauge invariants
 
-**`StandardModel.JetAlgebra.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L165).
+**`StandardModel.JetAlgebra.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean#L165).
 
 > **The classification of gauge invariants of the jet algebra of the Standard Model**:
 > a gauge-invariant element of the subalgebra generated by the gauge-field symbols
@@ -148,4 +148,4 @@ lemma invariant_mem_adjoin_fieldStrength (S : Set JetAlgebra)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean)

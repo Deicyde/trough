@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.31 Applications
 
-Section 38.31 of the Stacks Project, [Tag 081Q](https://stacks.math.columbia.edu/tag/081Q). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 38.31 of the Stacks Project, [Tag 081Q](https://stacks.math.columbia.edu/tag/081Q). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 081R, a lemma
 
 [Tag 081R](https://stacks.math.columbia.edu/tag/081R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_flat_finitePresentation_strictTransform_of_affineCase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformFinitePresentationFromFlat.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformFinitePresentationFromFlat.lean#L410). The attribute's comment: “the conclusion in full -- the strict transform flat AND of finite presentation -- under exactly the source's hypotheses (1) and (2). The affine case of the flatness assertion of [Stacks, Tag 0815] is proved inside, from hypothesis (2), by `AlgebraicGeometry.AffineChartFlatteningCentre.of_affineCase` (through the immersion into affine space of [Stacks, Tag 04II] and `AlgebraicGeometry.AffineChartFlatteningCentreUnderSourceHypotheses.of_compactSpace`, proved from [Stacks, Tag 0811]); the finite-presentation clause comes from the flatness clause by [Stacks, Tag 081N]”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_flat_finitePresentation_strictTransform_of_affineCase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformFinitePresentationFromFlat.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformFinitePresentationFromFlat.lean#L410). The attribute's comment: “the conclusion in full -- the strict transform flat AND of finite presentation -- under exactly the source's hypotheses (1) and (2). The affine case of the flatness assertion of [Stacks, Tag 0815] is proved inside, from hypothesis (2), by `AlgebraicGeometry.AffineChartFlatteningCentre.of_affineCase` (through the immersion into affine space of [Stacks, Tag 04II] and `AlgebraicGeometry.AffineChartFlatteningCentreUnderSourceHypotheses.of_compactSpace`, proved from [Stacks, Tag 0811]); the finite-presentation clause comes from the flatness clause by [Stacks, Tag 081N]”.
 
 > **Stacks Project, Tag 081R.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be of finite type and quasi-separated and let `U ⊆ S` be a quasi-compact open such
@@ -52,7 +52,7 @@ theorem exists_isAdmissibleBlowup_flat_finitePresentation_strictTransform_of_aff
 
 [Tag 0B49](https://stacks.math.columbia.edu/tag/0B49) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFiniteLocallyFree_strictTransform_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Applications/FiniteLocallyFreeStrictTransformOfProper.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Applications/FiniteLocallyFreeStrictTransformOfProper.lean#L46). The attribute's comment: “the conclusion in full, under exactly the source's hypotheses (1) and (2)”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFiniteLocallyFree_strictTransform_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Applications/FiniteLocallyFreeStrictTransformOfProper.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Applications/FiniteLocallyFreeStrictTransformOfProper.lean#L46). The attribute's comment: “the conclusion in full, under exactly the source's hypotheses (1) and (2)”.
 
 > **Stacks Project, Tag 0B49.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be proper and let `U ⊆ S` be a quasi-compact open over which `X` is finite locally
@@ -73,7 +73,7 @@ theorem exists_isAdmissibleBlowup_isFiniteLocallyFree_strictTransform_of_isPrope
 
 [Tag 081S](https://stacks.math.columbia.edu/tag/081S) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isOpenImmersion_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean#L55).
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isOpenImmersion_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean#L55).
 
 > Let `f : X ⟶ S` be a separated morphism of finite type with `S` quasi-compact and
 > quasi-separated, and let `U ⊆ S` be a quasi-compact open such that `f` is an isomorphism over
@@ -92,7 +92,7 @@ theorem exists_isAdmissibleBlowup_isOpenImmersion_strictTransform {X S : Scheme.
           IsOpenImmersion (strictTransformToBlowUp f M)
 ```
 
-**`AlgebraicGeometry.strictTransformOpenImmersion_of_isIso_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean#L142).
+**`AlgebraicGeometry.strictTransformOpenImmersion_of_isIso_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/StrictTransformOpenSubscheme.lean#L142).
 
 > A separated morphism of finite type which is an isomorphism over a quasi-compact open `U` of
 > a quasi-compact quasi-separated base satisfies `AlgebraicGeometry.StrictTransformOpenImmersion`:
@@ -110,7 +110,7 @@ theorem strictTransformOpenImmersion_of_isIso_morphismRestrict {X S : Scheme.{u}
 
 [Tag 081T](https://stacks.math.columbia.edu/tag/081T) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_dominating_of_affineCase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DominatingBlowupFromFlattening.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/DominatingBlowupFromFlattening.lean#L87). The attribute's comment: “complete, under exactly the source's hypotheses”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_dominating_of_affineCase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DominatingBlowupFromFlattening.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Blowup/DominatingBlowupFromFlattening.lean#L87). The attribute's comment: “complete, under exactly the source's hypotheses”.
 
 > **Stacks Project, Tag 081T.** Let `f : X ⟶ S` be a proper morphism with `S` quasi-compact and
 > quasi-separated, and let `U ⊆ S` be a quasi-compact open such that `f` is an isomorphism over
@@ -134,7 +134,7 @@ theorem exists_isAdmissibleBlowup_dominating_of_affineCase (f : X ⟶ S) [IsProp
 
 [Tag 0CP1](https://stacks.math.columbia.edu/tag/0CP1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_extending_section_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/SectionExtensionOfQcqs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/SectionExtensionOfQcqs.lean#L50). The attribute's comment: “the full statement, under the source's hypotheses (1)-(3)”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_extending_section_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/SectionExtensionOfQcqs.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Blowup/SectionExtensionOfQcqs.lean#L50). The attribute's comment: “the full statement, under the source's hypotheses (1)-(3)”.
 
 > **Stacks Project, Tag 0CP1.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `W ⊆ S` be a quasi-compact open subscheme and let `U ⊆ W` be a quasi-compact open subscheme.
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.31, Tag 081Q](https://stacks.math.columbia.edu/tag/081Q)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

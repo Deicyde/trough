@@ -8,7 +8,7 @@ proof: formalized
 
 # Down-type singlets (PhyslibAlpha)
 
-The module `PhyslibAlpha.Particles.StandardModel.Fermions.DownSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean): 24 declarations (2 instances with no name), 22 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Fermions.DownSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean): 24 declarations (2 instances with no name), 22 with a docstring.
 
 ## i. Overview
 
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.DownSinglet.Basic`, [P
 
 ## C. The basis of the down-singlet space
 
-**`StandardModel.DownSinglet.basis`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L95).
+**`StandardModel.DownSinglet.basis`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L95).
 
 > A basis on the down singlets.
 
@@ -62,13 +62,13 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.DownSinglet.Basic`, [P
 noncomputable def basis : Module.Basis (Fin 2 × Fin 3) ℂ DownSinglet
 ```
 
-**An instance with no name**, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L99).
+**An instance with no name**, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L99).
 
 ```lean
 instance : Module.Finite ℂ DownSinglet
 ```
 
-**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L101).
+**An instance with no name**, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L101).
 
 ```lean
 instance : Module.Free ℂ DownSinglet
@@ -100,7 +100,7 @@ instance : Module.Free ℂ DownSinglet
 
 ## H. The representation of the jet gauge group
 
-**`StandardModel.DownSinglet.jetValLinEquiv`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L154).
+**`StandardModel.DownSinglet.jetValLinEquiv`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L154).
 
 > Absorbs the jet ring into the colour index: a jet of a down-type singlet is the
 > same thing as a right-handed Weyl spinor tensored with a `SpaceTimeAlgebra`-valued colour
@@ -115,7 +115,7 @@ noncomputable def jetValLinEquiv :
       Fermion.RightHandedWeyl ⊗[ℂ] EuclideanSpace SpaceTimeAlgebra (Fin 3)
 ```
 
-**`StandardModel.DownSinglet.repJetGaugeGroupI`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L178).
+**`StandardModel.DownSinglet.repJetGaugeGroupI`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L178).
 
 > The `(3, 1)_{-2}` action of the jet gauge group on the jet space of the down-type
 > singlet. Through `jetValLinEquiv` the colour matrix of the gauge jet, carrying the
@@ -134,7 +134,7 @@ noncomputable def repJetGaugeGroupI :
     Representation ℂ JetGaugeGroupI (SpaceTimeAlgebra ⊗[ℂ] DownSinglet)
 ```
 
-**`StandardModel.DownSinglet.jetValLinEquiv_smul`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L231).
+**`StandardModel.DownSinglet.jetValLinEquiv_smul`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L231).
 
 > The identification of the jets of the down-type singlet intertwines multiplication by
 > a scalar jet with the `SpaceTimeAlgebra`-scalar action on the colour coordinates.
@@ -149,7 +149,7 @@ lemma jetValLinEquiv_smul (χ : SpaceTimeAlgebra) (z : SpaceTimeAlgebra ⊗[ℂ]
           (jetValLinEquiv z)
 ```
 
-**`StandardModel.DownSinglet.repJetGaugeGroupI_smul`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L267).
+**`StandardModel.DownSinglet.repJetGaugeGroupI_smul`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L267).
 
 > **The jet gauge action on the jets of the down-type singlet is fibrewise**: it
 > commutes with multiplication by scalar jets, acting on the values of the field over the
@@ -161,7 +161,7 @@ lemma repJetGaugeGroupI_smul (U : JetGaugeGroupI) (χ : SpaceTimeAlgebra)
     repJetGaugeGroupI U (χ • z) = χ • repJetGaugeGroupI U z
 ```
 
-**`StandardModel.DownSinglet.repJetGaugeGroupI_ofConstant`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L297).
+**`StandardModel.DownSinglet.repJetGaugeGroupI_ofConstant`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L297).
 
 > On jets of constant gauge transformations the jet action reduces to the global
 > gauge action on the fibre: the `(3, 1)_{-2}` action on the down-singlet factor, and the
@@ -181,7 +181,7 @@ lemma repJetGaugeGroupI_ofConstant (g : GaugeGroupI) :
 > inverts and transposes the coefficient matrix, and conjugating stars it; the four
 > combinations below are what a component of a down-singlet symbol needs.
 
-**`StandardModel.DownSinglet.basis_eq_mk`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L353).
+**`StandardModel.DownSinglet.basis_eq_mk`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L353).
 
 > The down-singlet basis vector as an explicit spinor–colour tensor.
 
@@ -190,7 +190,7 @@ lemma basis_eq_mk (k : Fin 2) (c : Fin 3) : basis (k, c) =
     ⟨Fermion.RightHandedWeyl.basis k ⊗ₜ[ℂ] EuclideanSpace.basisFun (Fin 3) ℂ c⟩
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_apply_basis`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L361).
+**`StandardModel.DownSinglet.repLorentzGroup_apply_basis`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L361).
 
 > The Lorentz action on the down-singlet basis: the colour index is inert and the
 > spinor index transforms by the entrywise conjugate matrix.
@@ -200,7 +200,7 @@ lemma repLorentzGroup_apply_basis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 3) :
     repLorentzGroup Λ (basis j) = ∑ β, star (Λ.1 β j.1) • basis (β, j.2)
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_dual_dualBasis`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L375).
+**`StandardModel.DownSinglet.repLorentzGroup_dual_dualBasis`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L375).
 
 > The down-singlet coordinate functionals transform contragrediently, by the entrywise
 > conjugate of the inverse matrix.
@@ -211,7 +211,7 @@ lemma repLorentzGroup_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 3) :
       ∑ β, star ((Λ⁻¹).1 j.1 β) • basis.dualBasis (β, j.2)
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_conj_apply_basis`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L388).
+**`StandardModel.DownSinglet.repLorentzGroup_conj_apply_basis`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L388).
 
 > The Lorentz action on the conjugate down-singlet basis: the coefficients are the
 > conjugates of those of the down-singlet action, that is, the matrix itself.
@@ -222,7 +222,7 @@ lemma repLorentzGroup_conj_apply_basis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 3) :
       = ∑ β, Λ.1 β j.1 • (Basis.conj basis) (β, j.2)
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L397).
+**`StandardModel.DownSinglet.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L397).
 
 > The conjugate down-singlet coordinate functionals transform by the inverse matrix.
 
@@ -232,7 +232,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 3) 
       ∑ β, (Λ⁻¹).1 j.1 β • (Basis.conj basis).dualBasis (β, j.2)
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_neg_one`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L410).
+**`StandardModel.DownSinglet.repLorentzGroup_neg_one`**, a lemma, [line 410](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L410).
 
 > **The centre of `SL(2,ℂ)` acts on the down-singlet space by `-1`**: the value space carries a
 > single Weyl-spinor index, and `-1` is not the identity on a half-integer spin.
@@ -241,7 +241,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 3) 
 lemma repLorentzGroup_neg_one : repLorentzGroup (-1) = -LinearMap.id
 ```
 
-**`StandardModel.DownSinglet.repLorentzGroup_conj_neg_one`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L420).
+**`StandardModel.DownSinglet.repLorentzGroup_conj_neg_one`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L420).
 
 > The centre acts on the conjugate down-singlet space by `-1` as well: conjugation does not
 > move a real sign.
@@ -250,7 +250,7 @@ lemma repLorentzGroup_neg_one : repLorentzGroup (-1) = -LinearMap.id
 lemma repLorentzGroup_conj_neg_one : repLorentzGroup.conj (-1) = -LinearMap.id
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_apply_basis`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L430).
+**`StandardModel.DownSinglet.repGaugeGroupI_apply_basis`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L430).
 
 > The gauge action on the down-singlet basis: the spinor index is inert and the colour
 > index transforms by the `SU(3)` matrix, scaled by the hypercharge factor.
@@ -261,7 +261,7 @@ lemma repGaugeGroupI_apply_basis (g : GaugeGroupI) (j : Fin 2 × Fin 3) :
       ∑ c, (star g.toU1.1 ^ 2 * g.toSU3.1 c j.2) • basis (j.1, c)
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L439).
+**`StandardModel.DownSinglet.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L439).
 
 > The down-singlet coordinate functionals carry the contragredient gauge action: the
 > hypercharge and `SU(3)` factors of the inverse group element, transposed.
@@ -272,7 +272,7 @@ lemma repGaugeGroupI_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 3) :
       ∑ c, (star (g⁻¹).toU1.1 ^ 2 * (g⁻¹).toSU3.1 j.2 c) • basis.dualBasis (j.1, c)
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L453).
+**`StandardModel.DownSinglet.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L453).
 
 > The gauge action on the conjugate down-singlet basis: the coefficients of the
 > down-singlet action, conjugated.
@@ -283,7 +283,7 @@ lemma repGaugeGroupI_conj_apply_basis (g : GaugeGroupI) (j : Fin 2 × Fin 3) :
       ∑ c, star (star g.toU1.1 ^ 2 * g.toSU3.1 c j.2) • (Basis.conj basis) (j.1, c)
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L463).
+**`StandardModel.DownSinglet.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L463).
 
 > The conjugate down-singlet coordinate functionals carry the conjugate of the
 > contragredient gauge action.
@@ -301,7 +301,7 @@ lemma repGaugeGroupI_conj_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 3) 
 > `DownSinglet.valueGaugeWeight`, and pass to the dual and conjugate-dual coordinate
 > functionals with the expected signs.
 
-**`StandardModel.DownSinglet.valueGaugeWeight`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L490).
+**`StandardModel.DownSinglet.valueGaugeWeight`**, a def, [line 490](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L490).
 
 > The gauge weight of the down-singlet basis: the colour weights and hypercharge
 > `-2`.
@@ -310,7 +310,7 @@ lemma repGaugeGroupI_conj_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 3) 
 def DownSinglet.valueGaugeWeight (j : Fin 2 × Fin 3) : GaugeWeight
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 495](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L495).
+**`StandardModel.DownSinglet.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 495](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L495).
 
 > The gauge torus acts diagonally on the basis of `DownSinglet`, with the weights
 > `DownSinglet.valueGaugeWeight`.
@@ -322,7 +322,7 @@ lemma DownSinglet.repGaugeGroupI_gaugeTorusGen_basis (i : Fin 4) (j : Fin 2 × F
         DownSinglet.basis j
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 515](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L515).
+**`StandardModel.DownSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 515](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L515).
 
 > The dual action of the gauge torus on the coordinate functionals of
 > `DownSinglet`: the weights are negated.
@@ -334,7 +334,7 @@ lemma DownSinglet.repGaugeGroupI_dual_gaugeTorusGen_coord (i : Fin 4) (j : Fin 2
         DownSinglet.basis.coord j
 ```
 
-**`StandardModel.DownSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L525).
+**`StandardModel.DownSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L525).
 
 > The dual of the conjugate action of the gauge torus on the coordinate functionals
 > of the conjugate of `DownSinglet`: the two negations cancel and the weights are those of
@@ -350,7 +350,7 @@ lemma DownSinglet.repGaugeGroupI_conj_dual_gaugeTorusGen_coord (i : Fin 4) (j : 
 
 ## K. The boost weight of the DownSinglet components
 
-**`StandardModel.downSinglet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L546).
+**`StandardModel.downSinglet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 546](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean#L546).
 
 > The down-singlet basis diagonalises the `z`-boost: the colour index is inert, so the
 > weight is the Weyl weight of the spinor index.
@@ -375,4 +375,4 @@ lemma downSinglet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean)

@@ -234,7 +234,13 @@ TODO_ASIDE = re.compile(r"[ \t]*\([^()]*?\bTODOs?\b(?:[^()]|\([^()]*\))*\)")
 # A list item, bulleted or numbered.
 ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+\.)[ \t]+")
 # A text that is only a note that it is still to be written.
-TO_DO = re.compile(r"\s*(?:TODO|To do)\.?\s*")
+# A text that only holds the place of a proof: punctuation and cut marks, around at most a note that it is still
+# to be written, such as "To do.", "Omitted for now." or "Test.".
+PLACEHOLDER = re.compile(r"[\W_]*(?:(?:TODO|To do|Omitted for now|Test)[\W_]*)?")
+# What a README's opening shows before its text: a heading, a quote or note, HTML, an image or a badge.
+README_SKIP = re.compile(r"\s*(?:#|>|<|!\[|\[!\[|[-*+] |\d+\. |\||```)")
+LINK_ONLY = re.compile(r"\s*\[[^\]]*\]\([^)]*\)\W*")
+RELATIVE_LINK = re.compile(r"(\]\()(?![a-zA-Z][a-zA-Z0-9+.-]*:|#)<?\.?/?([^)\s>]+)>?\)")
 NO_PLANS = re.compile(r"(?!)")
 # The bytes of article Markdown a page folds in before its next node starts a part, as in the other chapters.
 PAGE_BUDGET = 300_000
@@ -270,6 +276,23 @@ def without_notes(markdown: str, plans: bool = False) -> str:
         blocks.append(block)
     text = "".join(blocks)
     return re.sub(r"…(?:\n[ \t]*\n…)+", "…", text).strip()
+
+
+def readme_sentence(text: str, project: Project) -> str:
+    """The first sentence of a README's opening text, which says what the project is: past its title, badges, images,
+    notes and lists, and a paragraph that is one link. A relative link points at the file at the pinned commit; a
+    sentence about plans gives nothing."""
+    from trough import library  # it imports this module
+
+    for block in re.split(r"\n[ \t]*\n", text):
+        lines = [line.strip() for line in block.strip().split("\n") if not line.lstrip().startswith("#")]
+        paragraph = " ".join(lines).strip()
+        if not paragraph or README_SKIP.match(paragraph) or LINK_ONLY.fullmatch(paragraph):
+            continue
+        sentence = library.sentences(paragraph)[0].strip()
+        sentence = RELATIVE_LINK.sub(lambda match: f"{match[1]}{project.url}/blob/{project.rev}/{match[2]})", sentence)
+        return "" if library.PLANS.search(sentence) or library.TODOS.search(sentence) else sentence
+    return ""
 
 
 def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Leaf]) -> Built:
@@ -482,7 +505,8 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     stats["unresolved"] = sum(1 for node in nodes for label in node.uses + node.proof_uses if label not in blueprint.labels)
 
     # Pages, filled in the blueprint's order.
-    root = Container(project.name, project.id, prose=intro(project, blueprint, stats))
+    authors = [escape(writer.plain(name)) for name in blueprint.authors] if project.text else []
+    root = Container(project.name, project.id, prose=intro(project, blueprint, stats, authors))
     targets: dict[str, Leaf | Container] = {"#root": root}
     pages: dict[int, Container] = {}
     pending: dict[int, list[str]] = {}  # text waiting for the next line of a page's listing
@@ -658,7 +682,7 @@ def leaf(project: Project, node: Node, caption: str, title: str, writer: Writer,
         if node.proof is not None:
             # A proof the blueprint does not mark formalized may say what is planned; one that is only notes is none.
             proof = without_notes(writer.statement(node.proof.body), plans=not proof_ok)
-            if proof.strip("… ") and not TO_DO.fullmatch(proof):
+            if not PLACEHOLDER.fullmatch(proof):
                 notes.insert(0, ("Proof", run_in(proof_head(node.proof, writer), proof) if node.proof.title else proof))
     else:
         body = (f"The blueprint of {project.name} states this {caption.lower()} at [{place}]({source}). The "
@@ -710,16 +734,28 @@ def break_cycles(leaves: list[Leaf]) -> int:
     return moved
 
 
-def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
+def intro(project: Project, blueprint: Blueprint, stats: Counter, authors: list[str] = ()) -> str:
+    """The front page's prose: what the README says the project is, quoted, then whose blueprint it is, at which
+    commit, and what the chapter shows of it."""
+    from trough import library  # it imports this module
+
     rev = f"[{project.rev[:8]}]({project.url}/tree/{project.rev})"
     date = f" ({project.date[:10]})" if project.date else ""
     nodes = stats["nodes"]
-    lines = [
-        f"The project's blueprint, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
+    readme = project.directory / "README.md"
+    said = readme_sentence(readme.read_text(encoding="utf-8"), project) if project.text and readme.is_file() else ""
+    lines = [f"[{project.repo}]({project.url}) says in its README:", f"> {said}"] if said else []
+    names = list(authors)
+    if names and names[0].startswith("The "):  # a collective name, as "The MIP* = RE formalization project"
+        names[0] = "the " + names[0][4:]
+    subject = ("Its blueprint" if said else "The project's blueprint") + (f", by {library.listing(names)}" if names else "")
+    lines += [
+        f"{subject}, read at commit {rev}{date}: one article for each of its {nodes:,} nodes "
         "whose Lean declarations it names and marks formalized, or in Mathlib"
         + (f"; for {stats['mathlib_shared']:,} of them in Mathlib, the article is the Mathlib chapter's"
            if stats["mathlib_shared"] else "")
-        + (f". Its other {stats['left_out']:,} nodes have no article, and a section of only those is left out: "
+        + (f". Its other {library.plural(stats['left_out'], 'node')} {'has' if stats['left_out'] == 1 else 'have'} no "
+           "article, and a section of only those is left out: "
            "the map records what the project contains, not what it plans" if stats["left_out"] else "")
         + ". A statement for which the blueprint marks no proof `\\leanok` says so. Dependencies are the "
         "blueprint's `\\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.",

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.121 Perfect complexes and K-groups
 
-Section 15.121 of the Stacks Project, [Tag 0FJG](https://stacks.math.columbia.edu/tag/0FJG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.121 of the Stacks Project, [Tag 0FJG](https://stacks.math.columbia.edu/tag/0FJG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AFY, a lemma
 
 [Tag 0AFY](https://stacks.math.columbia.edu/tag/0AFY) in the Stacks Project.
 
-**`K0.exists_eulerChar_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PerfectComplex.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/PerfectComplex.lean#L674). References: SGA 6 0 (3.1), “special case”.
+**`K0.exists_eulerChar_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PerfectComplex.lean, line 674](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/PerfectComplex.lean#L674). References: SGA 6 0 (3.1), “special case”.
 
 > **Stacks 0AFY.** Perfect complexes over `R` have an Euler characteristic in `K₀(R)` which
 > changes by `(-1)ⁿ` under a shift by `n`, is additive in distinguished triangles, and is the
@@ -47,7 +47,7 @@ public theorem K0.exists_eulerChar_perfect (R : Type u) [CommRing R]
 
 [Tag 0FCU](https://stacks.math.columbia.edu/tag/0FCU) in the Stacks Project.
 
-**`K0.exists_k0_perfectDerivedCategory_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PerfectDerivedCategory.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/KTheory/Grothendieck/PerfectDerivedCategory.lean#L505).
+**`K0.exists_k0_perfectDerivedCategory_addEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/PerfectDerivedCategory.lean, line 505](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/KTheory/Grothendieck/PerfectDerivedCategory.lean#L505).
 
 > **Stacks 0FCU.** Euler characteristic induces an additive equivalence from the zeroth
 > K-group of the perfect derived category of `R` to the zeroth K-group of finite projective
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.121, Tag 0FJG](https://stacks.math.columbia.edu/tag/0FJG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

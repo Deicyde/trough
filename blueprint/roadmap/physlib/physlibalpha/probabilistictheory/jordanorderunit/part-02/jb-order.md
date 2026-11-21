@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.JBAlgebra.nonneg_iff_exists_mul_self
+lean: PhyslibAlpha.ProbabilisticTheory.JBAlgebra.nonneg_iff_exists_mul_self
 statement: formalized
 proof: formalized
 ---
 
 # The positive cone of a JB-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Order`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Order`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean): 1 declaration, 1 with a docstring.
 
 > In an ordered JB-algebra the nonnegative observables are exactly the squares.
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Order`, [Physlib
 
 ## A. Nonnegative observables are squares
 
-**`ProbabilisticTheory.JBAlgebra.nonneg_iff_exists_mul_self`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean#L46).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.nonneg_iff_exists_mul_self`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean#L46).
 
 > **The nonnegative observables of an ordered JB-algebra are the squares.**
 
@@ -46,4 +46,4 @@ lemma nonneg_iff_exists_mul_self (a : E) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Contracting the Levi-Civita symbol against a matrix
 
-The module `PhyslibAlpha.Mathematics.LeviCivita.Basic`, [PhyslibAlpha/Mathematics/LeviCivita/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean): 2 declarations, 2 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Mathematics.LeviCivita.Basic`, [PhyslibAlpha/Mathematics/LeviCivita/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean): 2 declarations, 2 with a docstring; 1 private, not shown.
 
 > The symbol is a tensor density of weight one.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Mathematics.LeviCivita.Basic`, [PhyslibAlpha/Mathematic
 > expanding it along the Leibniz formula, on the right by the product rule, the row selection
 > being the matrix of Kronecker deltas of `a`.
 
-**`cast_leviCivitaSymbol`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean#L63).
+**`cast_leviCivitaSymbol`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean#L63).
 
 > The symbol as a determinant over any commutative ring, the integer determinant carried
 > along the ring map from `ℤ`.
@@ -52,7 +52,7 @@ lemma cast_leviCivitaSymbol (g : ι → ι) :
       = (Matrix.of fun i j : ι => if g i = j then (1 : R) else 0).det
 ```
 
-**`sum_leviCivitaSymbol_mul_prod`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean#L85).
+**`sum_leviCivitaSymbol_mul_prod`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean#L85).
 
 > Contracted against the rows of `M` selected by `a`, the symbol gives `det M` times the
 > symbol of `a`.
@@ -69,4 +69,4 @@ lemma sum_leviCivitaSymbol_mul_prod (M : Matrix ι ι R) (a : ι → ι) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/LeviCivita/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean)
+- [PhyslibAlpha/Mathematics/LeviCivita/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/LeviCivita/Basic.lean)

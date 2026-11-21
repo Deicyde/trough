@@ -8,7 +8,7 @@ proof: formalized
 
 # Thermoelectric figure of merit
 
-The module `Physlib.CondensedMatter.Thermoelectric.Basic`, [Physlib/CondensedMatter/Thermoelectric/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.CondensedMatter.Thermoelectric.Basic`, [Physlib/CondensedMatter/Thermoelectric/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -74,7 +74,7 @@ The module `Physlib.CondensedMatter.Thermoelectric.Basic`, [Physlib/CondensedMat
 > type (negative for electrons, positive for holes), and it vanishes at
 > compensation points.
 
-**`CondensedMatter.ThermoelectricMaterial`**, a structure, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L102).
+**`CondensedMatter.ThermoelectricMaterial`**, a structure, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L102).
 
 > A thermoelectric material in the linear-response regime, characterized by
 > its four transport coefficients.
@@ -97,7 +97,7 @@ structure ThermoelectricMaterial where
 
 ## B. The power factor
 
-**`CondensedMatter.ThermoelectricMaterial.powerFactor`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L125).
+**`CondensedMatter.ThermoelectricMaterial.powerFactor`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L125).
 
 > The thermoelectric power factor `PF = σ S²` of a material.
 
@@ -105,7 +105,7 @@ structure ThermoelectricMaterial where
 def powerFactor (M : ThermoelectricMaterial) : ℝ
 ```
 
-**`CondensedMatter.ThermoelectricMaterial.powerFactor_pos`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L128).
+**`CondensedMatter.ThermoelectricMaterial.powerFactor_pos`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L128).
 
 > The power factor is positive when the Seebeck coefficient is nonzero.
 
@@ -116,7 +116,7 @@ lemma powerFactor_pos {M : ThermoelectricMaterial} (hS : M.S ≠ 0) :
 
 ## C. The total thermal conductivity
 
-**`CondensedMatter.ThermoelectricMaterial.totalThermalConductivity`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L143).
+**`CondensedMatter.ThermoelectricMaterial.totalThermalConductivity`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L143).
 
 > The total thermal conductivity `κl + κe` of a material, the sum of the
 > lattice (phonon) and electronic contributions.
@@ -125,7 +125,7 @@ lemma powerFactor_pos {M : ThermoelectricMaterial} (hS : M.S ≠ 0) :
 def totalThermalConductivity (M : ThermoelectricMaterial) : ℝ
 ```
 
-**`CondensedMatter.ThermoelectricMaterial.totalThermalConductivity_pos`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L146).
+**`CondensedMatter.ThermoelectricMaterial.totalThermalConductivity_pos`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L146).
 
 > The total thermal conductivity is positive.
 
@@ -136,7 +136,7 @@ lemma totalThermalConductivity_pos (M : ThermoelectricMaterial) :
 
 ## D. The figure of merit
 
-**`CondensedMatter.ThermoelectricMaterial.figureOfMerit`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L158).
+**`CondensedMatter.ThermoelectricMaterial.figureOfMerit`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L158).
 
 > The dimensionless thermoelectric figure of merit
 > `zT = PF · T / (κl + κe)` of a material at absolute temperature `T`.
@@ -147,7 +147,7 @@ def figureOfMerit (M : ThermoelectricMaterial) (T : ℝ) : ℝ
 
 ### D.1. Equalities for the figure of merit
 
-**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_eq`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L169).
+**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_eq`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L169).
 
 > The figure of merit in its standard flat form
 > `zT = σ S² T / (κl + κe)`.
@@ -159,7 +159,7 @@ lemma figureOfMerit_eq (M : ThermoelectricMaterial) (T : ℝ) :
 
 ### D.2. Positivity of the figure of merit
 
-**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_pos`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L182).
+**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_pos`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L182).
 
 > The figure of merit is positive at positive temperature when the Seebeck
 > coefficient is nonzero.
@@ -172,7 +172,7 @@ lemma figureOfMerit_pos {M : ThermoelectricMaterial} {T : ℝ}
 
 ### D.3. Monotonicity in the lattice thermal conductivity
 
-**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_le_of_le`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L200).
+**`CondensedMatter.ThermoelectricMaterial.figureOfMerit_le_of_le`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean#L200).
 
 > Lowering the lattice thermal conductivity raises the figure of merit: if
 > `M.κl ≤ κl'` then the material with lattice conductivity `κl'` (all other
@@ -194,4 +194,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/CondensedMatter/Thermoelectric/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Thermoelectric/Basic.lean)
+- [Physlib/CondensedMatter/Thermoelectric/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Thermoelectric/Basic.lean)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Representations of $n$ using… to Partitions $n = p + q$ with…
+# Primes $p < n$ with $n^2 - n +… to Ways to write $n = x + y + z$…
 
+- [Primes $p < n$ with $n^2 - n + p$ and $n^2 + n - p$ prime](primes-p-n-with-n-2-n-p-and-n-2-n-p-prime.md)
 - [Representations of $n$ using prime pairs with prime gaps of $6$](representations-of-n-using-prime-pairs-with-prim.md)
 - [Partitions of $n$ into $x + y$ with $(xy)^2 + 1$ prime](partitions-of-n-into-x-y-with-xy-2-1-prime.md)
 - [Partitions of $n$ into $x + y$ with $(xy)^2 + xy + 1$ prime](partitions-of-n-into-x-y-with-xy-2-xy-1-prime.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Numbers $n$ such that $n^2 + \pi(n)$ is prime](numbers-n-such-that-n-2-pi-n-is-prime.md)
 - [Undirected circular permutations with adjacent products minus one all prime](undirected-circular-permutations-with-adjacent-p.md)
 - [Ways to write $n = x + y + z$ with six linear and quadratic forms prime](ways-to-write-n-x-y-z-with-six-linear-and-quadra.md)
-- [Partitions $n = p + q$ with $p$, $3p - 10$, and $(p - 1)q - 1$ prime](partitions-n-p-q-with-p-3p-10-and-p-1-q-1-prime.md)

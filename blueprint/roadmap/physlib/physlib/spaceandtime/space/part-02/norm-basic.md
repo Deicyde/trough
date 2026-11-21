@@ -8,7 +8,7 @@ proof: formalized
 
 # The norm on space
 
-The module `Physlib.SpaceAndTime.Space.Norm.Basic`, [Physlib/SpaceAndTime/Space/Norm/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean): 47 declarations, 6 with a docstring; 3 private, not shown.
+The module `Physlib.SpaceAndTime.Space.Norm.Basic`, [Physlib/SpaceAndTime/Space/Norm/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean): 47 declarations, 6 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `Physlib.SpaceAndTime.Space.Norm.Basic`, [Physlib/SpaceAndTime/Space/
 
 ## A. The norm as a limit of smooth functions
 
-**`Space.normPowerSeries`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L92).
+**`Space.normPowerSeries`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L92).
 
 > A sequence of functions which are differentiable everywhere, and in the limit
 > as `n → ∞` tends to `‖x‖`.
@@ -53,14 +53,14 @@ The module `Physlib.SpaceAndTime.Space.Norm.Basic`, [Physlib/SpaceAndTime/Space/
 def normPowerSeries {d} : ℕ → Space d → ℝ
 ```
 
-**`Space.normPowerSeries_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L95).
+**`Space.normPowerSeries_eq`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L95).
 
 ```lean
 lemma normPowerSeries_eq (n : ℕ) :
     normPowerSeries (d := d) n = fun x => √(‖x‖ ^ 2 + 1/(n + 1))
 ```
 
-**`Space.normPowerSeries_eq_rpow`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L98).
+**`Space.normPowerSeries_eq_rpow`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L98).
 
 ```lean
 lemma normPowerSeries_eq_rpow {d} (n : ℕ) :
@@ -69,7 +69,7 @@ lemma normPowerSeries_eq_rpow {d} (n : ℕ) :
 
 ### A.1. Differentiability of the smooth approximation of the norm
 
-**`Space.normPowerSeries_differentiable`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L109).
+**`Space.normPowerSeries_differentiable`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L109).
 
 ```lean
 lemma normPowerSeries_differentiable {d} (n : ℕ) :
@@ -78,14 +78,14 @@ lemma normPowerSeries_differentiable {d} (n : ℕ) :
 
 ### A.2. The limit of the smooth approximation of the norm
 
-**`Space.normPowerSeries_tendsto`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L124).
+**`Space.normPowerSeries_tendsto`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L124).
 
 ```lean
 lemma normPowerSeries_tendsto {d} (x : Space d) :
     Filter.Tendsto (fun n => normPowerSeries n x) Filter.atTop (𝓝 (‖x‖))
 ```
 
-**`Space.normPowerSeries_inv_tendsto`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L131).
+**`Space.normPowerSeries_inv_tendsto`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L131).
 
 ```lean
 lemma normPowerSeries_inv_tendsto {d} (x : Space d) (hx : x ≠ 0) :
@@ -94,14 +94,14 @@ lemma normPowerSeries_inv_tendsto {d} (x : Space d) (hx : x ≠ 0) :
 
 ### A.3. The derivative of the smooth approximation of the norm
 
-**`Space.deriv_normPowerSeries`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L142).
+**`Space.deriv_normPowerSeries`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L142).
 
 ```lean
 lemma deriv_normPowerSeries {d} (n : ℕ) (x : Space d) (i : Fin d) :
     ∂[i] (normPowerSeries n) x = x i * (normPowerSeries n x)⁻¹
 ```
 
-**`Space.fderiv_normPowerSeries`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L152).
+**`Space.fderiv_normPowerSeries`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L152).
 
 ```lean
 lemma fderiv_normPowerSeries {d} (n : ℕ) (x y : Space d) :
@@ -111,7 +111,7 @@ lemma fderiv_normPowerSeries {d} (n : ℕ) (x y : Space d) :
 
 ### A.4. Limits of the derivative of the smooth approximation
 
-**`Space.deriv_normPowerSeries_tendsto`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L165).
+**`Space.deriv_normPowerSeries_tendsto`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L165).
 
 > The coordinate derivatives of `normPowerSeries` converge pointwise, including at zero.
 
@@ -120,7 +120,7 @@ lemma deriv_normPowerSeries_tendsto {d} (x : Space d) (i : Fin d) :
     Filter.Tendsto (fun n => ∂[i] (normPowerSeries n) x) Filter.atTop (𝓝 (x i * (‖x‖)⁻¹))
 ```
 
-**`Space.fderiv_normPowerSeries_tendsto`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L174).
+**`Space.fderiv_normPowerSeries_tendsto`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L174).
 
 > For every fixed direction, the derivatives of `normPowerSeries` converge pointwise,
 > including at zero.
@@ -133,7 +133,7 @@ lemma fderiv_normPowerSeries_tendsto {d} (x y : Space d) :
 
 ### A.5. The smooth approximation is AEStronglyMeasurable
 
-**`Space.normPowerSeries_aestronglyMeasurable`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L189).
+**`Space.normPowerSeries_aestronglyMeasurable`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L189).
 
 ```lean
 lemma normPowerSeries_aestronglyMeasurable {d} (n : ℕ) :
@@ -142,49 +142,49 @@ lemma normPowerSeries_aestronglyMeasurable {d} (n : ℕ) :
 
 ### A.6. Bounds on the smooth approximation of the norm
 
-**`Space.normPowerSeries_nonneg`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L200).
+**`Space.normPowerSeries_nonneg`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L200).
 
 ```lean
 lemma normPowerSeries_nonneg {d} (n : ℕ) (x : Space d) :
     0 ≤ normPowerSeries n x
 ```
 
-**`Space.normPowerSeries_pos`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L205).
+**`Space.normPowerSeries_pos`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L205).
 
 ```lean
 lemma normPowerSeries_pos {d} (n : ℕ) (x : Space d) :
     0 < normPowerSeries n x
 ```
 
-**`Space.normPowerSeries_ne_zero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L210).
+**`Space.normPowerSeries_ne_zero`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L210).
 
 ```lean
 lemma normPowerSeries_ne_zero {d} (n : ℕ) (x : Space d) :
     normPowerSeries n x ≠ 0
 ```
 
-**`Space.normPowerSeries_le_norm_sq_add_one`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L214).
+**`Space.normPowerSeries_le_norm_sq_add_one`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L214).
 
 ```lean
 lemma normPowerSeries_le_norm_sq_add_one {d} (n : ℕ) (x : Space d) :
     normPowerSeries n x ≤ ‖x‖ + 1
 ```
 
-**`Space.norm_lt_normPowerSeries`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L222).
+**`Space.norm_lt_normPowerSeries`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L222).
 
 ```lean
 lemma norm_lt_normPowerSeries {d} (n : ℕ) (x : Space d) :
     ‖x‖ < normPowerSeries n x
 ```
 
-**`Space.norm_le_normPowerSeries`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L226).
+**`Space.norm_le_normPowerSeries`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L226).
 
 ```lean
 lemma norm_le_normPowerSeries {d} (n : ℕ) (x : Space d) :
     ‖x‖ ≤ normPowerSeries n x
 ```
 
-**`Space.normPowerSeries_zpow_le_norm_sq_add_one`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L230).
+**`Space.normPowerSeries_zpow_le_norm_sq_add_one`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L230).
 
 ```lean
 lemma normPowerSeries_zpow_le_norm_sq_add_one {d} (n : ℕ) (m : ℤ) (x : Space d)
@@ -192,21 +192,21 @@ lemma normPowerSeries_zpow_le_norm_sq_add_one {d} (n : ℕ) (m : ℤ) (x : Space
     (normPowerSeries n x) ^ m ≤ (‖x‖ + 1) ^ m + ‖x‖ ^ m
 ```
 
-**`Space.normPowerSeries_inv_le`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L242).
+**`Space.normPowerSeries_inv_le`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L242).
 
 ```lean
 lemma normPowerSeries_inv_le {d} (n : ℕ) (x : Space d) (hx : x ≠ 0) :
     (normPowerSeries n x)⁻¹ ≤ ‖x‖⁻¹
 ```
 
-**`Space.normPowerSeries_log_le_normPowerSeries`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L246).
+**`Space.normPowerSeries_log_le_normPowerSeries`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L246).
 
 ```lean
 lemma normPowerSeries_log_le_normPowerSeries {d} (n : ℕ) (x : Space d) :
     |Real.log (normPowerSeries n x)| ≤ (normPowerSeries n x)⁻¹ + (normPowerSeries n x)
 ```
 
-**`Space.normPowerSeries_log_le`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L252).
+**`Space.normPowerSeries_log_le`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L252).
 
 ```lean
 lemma normPowerSeries_log_le {d} (n : ℕ) (x : Space d) (hx : x ≠ 0) :
@@ -215,42 +215,42 @@ lemma normPowerSeries_log_le {d} (n : ℕ) (x : Space d) (hx : x ≠ 0) :
 
 ### A.7. The `IsDistBounded` property of the smooth approximation of the norm
 
-**`Space.IsDistBounded.normPowerSeries_zpow`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L264).
+**`Space.IsDistBounded.normPowerSeries_zpow`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L264).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) :
     IsDistBounded (d := d) (fun x => (normPowerSeries n x) ^ m)
 ```
 
-**`Space.IsDistBounded.normPowerSeries_single`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L290).
+**`Space.IsDistBounded.normPowerSeries_single`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L290).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_single {d : ℕ} {n : ℕ} :
     IsDistBounded (d := d) (fun x => (normPowerSeries n x))
 ```
 
-**`Space.IsDistBounded.normPowerSeries_inv`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L295).
+**`Space.IsDistBounded.normPowerSeries_inv`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L295).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_inv {d : ℕ} {n : ℕ} :
     IsDistBounded (d := d) (fun x => (normPowerSeries n x)⁻¹)
 ```
 
-**`Space.IsDistBounded.normPowerSeries_deriv`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L300).
+**`Space.IsDistBounded.normPowerSeries_deriv`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L300).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_deriv {d : ℕ} (n : ℕ) (i : Fin d) :
     IsDistBounded (d := d) (fun x => ∂[i] (normPowerSeries n) x)
 ```
 
-**`Space.IsDistBounded.normPowerSeries_fderiv`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L306).
+**`Space.IsDistBounded.normPowerSeries_fderiv`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L306).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_fderiv {d : ℕ} (n : ℕ) (y : Space d) :
     IsDistBounded (d := d) (fun x => fderiv ℝ (fun (x : Space d) => normPowerSeries n x) x y)
 ```
 
-**`Space.IsDistBounded.normPowerSeries_log`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L312).
+**`Space.IsDistBounded.normPowerSeries_log`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L312).
 
 ```lean
 lemma IsDistBounded.normPowerSeries_log {d : ℕ} (n : ℕ) :
@@ -259,21 +259,21 @@ lemma IsDistBounded.normPowerSeries_log {d : ℕ} (n : ℕ) :
 
 ### A.8. Differentiability of functions
 
-**`Space.differentiable_normPowerSeries_zpow`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L327).
+**`Space.differentiable_normPowerSeries_zpow`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L327).
 
 ```lean
 lemma differentiable_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) :
     Differentiable ℝ (fun x : Space d => (normPowerSeries n x) ^ m)
 ```
 
-**`Space.differentiable_normPowerSeries_inv`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L332).
+**`Space.differentiable_normPowerSeries_inv`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L332).
 
 ```lean
 lemma differentiable_normPowerSeries_inv {d : ℕ} {n : ℕ} :
     Differentiable ℝ (fun x : Space d => (normPowerSeries n x)⁻¹)
 ```
 
-**`Space.differentiable_log_normPowerSeries`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L337).
+**`Space.differentiable_log_normPowerSeries`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L337).
 
 ```lean
 lemma differentiable_log_normPowerSeries {d : ℕ} {n : ℕ} :
@@ -282,7 +282,7 @@ lemma differentiable_log_normPowerSeries {d : ℕ} {n : ℕ} :
 
 ### A.9. Derivatives of functions
 
-**`Space.deriv_normPowerSeries_zpow`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L346).
+**`Space.deriv_normPowerSeries_zpow`**, a lemma, [line 346](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L346).
 
 ```lean
 lemma deriv_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) (x : Space d) (i : Fin d) :
@@ -290,7 +290,7 @@ lemma deriv_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) (x : Space d) (i 
       m * x i * (normPowerSeries n x) ^ (m - 2)
 ```
 
-**`Space.fderiv_normPowerSeries_zpow`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L359).
+**`Space.fderiv_normPowerSeries_zpow`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L359).
 
 ```lean
 lemma fderiv_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) (x y : Space d) :
@@ -298,7 +298,7 @@ lemma fderiv_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) (x y : Space d) 
       m * ⟪y, x⟫_ℝ * (normPowerSeries n x) ^ (m - 2)
 ```
 
-**`Space.deriv_log_normPowerSeries`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L366).
+**`Space.deriv_log_normPowerSeries`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L366).
 
 ```lean
 lemma deriv_log_normPowerSeries {d : ℕ} {n : ℕ} (x : Space d) (i : Fin d) :
@@ -306,7 +306,7 @@ lemma deriv_log_normPowerSeries {d : ℕ} {n : ℕ} (x : Space d) (i : Fin d) :
       x i * (normPowerSeries n x) ^ (-2 : ℤ)
 ```
 
-**`Space.fderiv_log_normPowerSeries`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L379).
+**`Space.fderiv_log_normPowerSeries`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L379).
 
 ```lean
 lemma fderiv_log_normPowerSeries {d : ℕ} {n : ℕ} (x y : Space d) :
@@ -316,7 +316,7 @@ lemma fderiv_log_normPowerSeries {d : ℕ} {n : ℕ} (x y : Space d) :
 
 ### A.10. Gradients of distributions based on powers
 
-**`Space.gradient_dist_normPowerSeries_zpow`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L391).
+**`Space.gradient_dist_normPowerSeries_zpow`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L391).
 
 ```lean
 lemma gradient_dist_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) :
@@ -327,7 +327,7 @@ lemma gradient_dist_normPowerSeries_zpow {d : ℕ} {n : ℕ} (m : ℤ) :
 
 #### A.10.1. The limits of gradients of distributions based on powers
 
-**`Space.gradient_dist_normPowerSeries_zpow_tendsTo_distGrad_norm`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L427).
+**`Space.gradient_dist_normPowerSeries_zpow_tendsTo_distGrad_norm`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L427).
 
 ```lean
 lemma gradient_dist_normPowerSeries_zpow_tendsTo_distGrad_norm {d : ℕ} [NeZero d] (m : ℤ)
@@ -341,7 +341,7 @@ lemma gradient_dist_normPowerSeries_zpow_tendsTo_distGrad_norm {d : ℕ} [NeZero
     (IsDistBounded.pow m hm)) η, y⟫_ℝ))
 ```
 
-**`Space.gradient_dist_normPowerSeries_zpow_tendsTo`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L462).
+**`Space.gradient_dist_normPowerSeries_zpow_tendsTo`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L462).
 
 ```lean
 lemma gradient_dist_normPowerSeries_zpow_tendsTo {d : ℕ} [NeZero d] (m : ℤ)
@@ -360,7 +360,7 @@ lemma gradient_dist_normPowerSeries_zpow_tendsTo {d : ℕ} [NeZero d] (m : ℤ)
 
 ### A.11. Gradients of distributions based on logs
 
-**`Space.gradient_dist_normPowerSeries_log`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L541).
+**`Space.gradient_dist_normPowerSeries_log`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L541).
 
 ```lean
 lemma gradient_dist_normPowerSeries_log {d : ℕ} {n : ℕ} :
@@ -371,7 +371,7 @@ lemma gradient_dist_normPowerSeries_log {d : ℕ} {n : ℕ} :
 
 #### A.11.1. The limits of gradients of distributions based on logs
 
-**`Space.gradient_dist_normPowerSeries_log_tendsTo_distGrad_norm`**, a lemma, [line 577](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L577).
+**`Space.gradient_dist_normPowerSeries_log_tendsTo_distGrad_norm`**, a lemma, [line 577](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L577).
 
 ```lean
 lemma gradient_dist_normPowerSeries_log_tendsTo_distGrad_norm {d : ℕ} (hd : 2 ≤ d)
@@ -384,7 +384,7 @@ lemma gradient_dist_normPowerSeries_log_tendsTo_distGrad_norm {d : ℕ} (hd : 2 
     (IsDistBounded.log_norm)) η, y⟫_ℝ))
 ```
 
-**`Space.gradient_dist_normPowerSeries_log_tendsTo`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L611).
+**`Space.gradient_dist_normPowerSeries_log_tendsTo`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L611).
 
 ```lean
 lemma gradient_dist_normPowerSeries_log_tendsTo {d : ℕ} (hd : 2 ≤ d)
@@ -402,7 +402,7 @@ lemma gradient_dist_normPowerSeries_log_tendsTo {d : ℕ} (hd : 2 ≤ d)
 
 ### B.1. The gradient of distributions based on powers
 
-**`Space.distGrad_distOfFunction_norm_zpow`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L675).
+**`Space.distGrad_distOfFunction_norm_zpow`**, a lemma, [line 675](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L675).
 
 ```lean
 lemma distGrad_distOfFunction_norm_zpow {d : ℕ} [NeZero d]
@@ -418,7 +418,7 @@ lemma distGrad_distOfFunction_norm_zpow {d : ℕ} [NeZero d]
 
 ### B.2. The gradient of distributions based on logs
 
-**`Space.distGrad_distOfFunction_log_norm`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L695).
+**`Space.distGrad_distOfFunction_log_norm`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L695).
 
 ```lean
 lemma distGrad_distOfFunction_log_norm {d : ℕ} (hd : 2 ≤ d := by omega) :
@@ -431,7 +431,7 @@ lemma distGrad_distOfFunction_log_norm {d : ℕ} (hd : 2 ≤ d := by omega) :
 
 ### B.3. Divergence of radial norm-power distributions
 
-**`Space.distDiv_norm_zpow_smul_repr_self_eq_smul`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L877).
+**`Space.distDiv_norm_zpow_smul_repr_self_eq_smul`**, a lemma, [line 877](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L877).
 
 ```lean
 lemma distDiv_norm_zpow_smul_repr_self_eq_smul
@@ -445,7 +445,7 @@ lemma distDiv_norm_zpow_smul_repr_self_eq_smul
 
 ### B.4. The Laplacian of distributions based on powers
 
-**`Space.distLaplacian_distOfFunction_norm_zpow`**, a lemma, [line 925](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L925).
+**`Space.distLaplacian_distOfFunction_norm_zpow`**, a lemma, [line 925](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L925).
 
 ```lean
 lemma distLaplacian_distOfFunction_norm_zpow {d : ℕ} [NeZero d] (m : ℤ)
@@ -462,7 +462,7 @@ lemma distLaplacian_distOfFunction_norm_zpow {d : ℕ} [NeZero d] (m : ℤ)
 > We show that the divergence of `x ↦ ‖x‖ ^ (- d) • x` is equal to a multiple of the Dirac delta
 > at `0`.
 
-**`Space.distDiv_inv_pow_eq_dim`**, a lemma, [line 964](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L964).
+**`Space.distDiv_inv_pow_eq_dim`**, a lemma, [line 964](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L964).
 
 > The distributional divergence of the radial field `x ↦ ‖x‖ ^ (-d) • x` (i.e. `x / ‖x‖ ^ d`)
 > equals `d * volume (Metric.ball 0 1)` — the surface area of the unit sphere `S^{d-1}` — times the
@@ -479,7 +479,7 @@ lemma distDiv_inv_pow_eq_dim {d : ℕ} [NeZero d] :
 
 ### B.6. The Laplacian of the fundamental solution
 
-**`Space.distLaplacian_fundamentalSolution_norm_zpow`**, a lemma, [line 1094](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L1094).
+**`Space.distLaplacian_fundamentalSolution_norm_zpow`**, a lemma, [line 1094](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L1094).
 
 > The distributional Laplacian of `‖x‖ ^ (2 - d)` is `(2 - d) * d * volume (Metric.ball 0 1)`
 > times the Dirac delta at the origin. For `d ≥ 3` this `‖x‖ ^ (2 - d)` is the (singular)
@@ -496,7 +496,7 @@ lemma distLaplacian_fundamentalSolution_norm_zpow {d : ℕ} :
         (volume (α := Space d)).real (Metric.ball 0 1)) • diracDelta ℝ 0
 ```
 
-**`Space.distLaplacian_fundamentalSolution_log_norm`**, a lemma, [line 1146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L1146).
+**`Space.distLaplacian_fundamentalSolution_log_norm`**, a lemma, [line 1146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean#L1146).
 
 > In dimension two the fundamental solution of the Laplacian is the logarithm: the
 > distributional Laplacian of `Real.log ‖x‖` is `2 * volume (Metric.ball 0 1)` times the Dirac
@@ -519,4 +519,4 @@ lemma distLaplacian_fundamentalSolution_log_norm :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Norm/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Norm/Basic.lean)
+- [Physlib/SpaceAndTime/Space/Norm/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Norm/Basic.lean)

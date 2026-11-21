@@ -8,7 +8,7 @@ proof: formalized
 
 # Point particles
 
-The module `Physlib.ClassicalMechanics.PointParticle.Basic`, [Physlib/ClassicalMechanics/PointParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean): 6 declarations (2 instances with no name), 6 with a docstring.
+The module `Physlib.ClassicalMechanics.PointParticle.Basic`, [Physlib/ClassicalMechanics/PointParticle/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean): 6 declarations (2 instances with no name), 6 with a docstring.
 
 > This module defines point particles together with their motion relative to a
 > reference frame. A `Particle` has a constant positive mass and a position over
@@ -32,7 +32,7 @@ The module `Physlib.ClassicalMechanics.PointParticle.Basic`, [Physlib/ClassicalM
 > Newtonian systems are genuine derivatives. The trajectories in this definition
 > are defined for all real-valued time coordinates relative to the frame's time origin.
 
-**`ClassicalMechanics.ReferenceFrame.Particle`**, a structure, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L47).
+**`ClassicalMechanics.ReferenceFrame.Particle`**, a structure, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L47).
 
 > A point particle in `frame`.
 
@@ -46,7 +46,7 @@ structure Particle (frame : ReferenceFrame d) where
     frame.IsInertial → Differentiable ℝ pos ∧ Differentiable ℝ (deriv pos)
 ```
 
-**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L60).
+**An instance with no name**, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L60).
 
 > Position is differentiable in an inertial frame.
 
@@ -54,7 +54,7 @@ structure Particle (frame : ReferenceFrame d) where
 instance [h : Fact frame.IsInertial] : Fact (Differentiable ℝ particle.pos)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Particle.velocity`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L64).
+**`ClassicalMechanics.ReferenceFrame.Particle.velocity`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L64).
 
 > The particle's velocity.
 
@@ -62,7 +62,7 @@ instance [h : Fact frame.IsInertial] : Fact (Differentiable ℝ particle.pos)
 def velocity [_h : Fact (Differentiable ℝ particle.pos)] : ℝ → frame.Vector
 ```
 
-**An instance with no name**, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L68).
+**An instance with no name**, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L68).
 
 > Velocity is differentiable in an inertial frame.
 
@@ -70,7 +70,7 @@ def velocity [_h : Fact (Differentiable ℝ particle.pos)] : ℝ → frame.Vecto
 instance [h : Fact frame.IsInertial] : Fact (Differentiable ℝ particle.velocity)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Particle.acceleration`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L72).
+**`ClassicalMechanics.ReferenceFrame.Particle.acceleration`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L72).
 
 > The particle's acceleration.
 
@@ -79,7 +79,7 @@ def acceleration [Fact (Differentiable ℝ particle.pos)]
     [_h : Fact (Differentiable ℝ particle.velocity)] : ℝ → frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Particle.pointInSpace`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L77).
+**`ClassicalMechanics.ReferenceFrame.Particle.pointInSpace`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean#L77).
 
 > The particle's position in affine space at frame time coordinate `t`.
 
@@ -93,4 +93,4 @@ def pointInSpace (t : ℝ) : Space d
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/PointParticle/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/PointParticle/Basic.lean)
+- [Physlib/ClassicalMechanics/PointParticle/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/PointParticle/Basic.lean)

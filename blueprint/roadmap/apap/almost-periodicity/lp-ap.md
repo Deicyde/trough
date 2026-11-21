@@ -30,10 +30,6 @@ Its statement uses no other node of the blueprint.
 - [lots_of_diagonals](lots-of-diagonals.md)
 - [aps_in_translates](aps-in-translates.md)
 
-## Proof
-
-Test.
-
 ## Lean
 
 Formalized as [`AlmostPeriodicity.almost_periodicity`](https://yaeldillies.github.io/apap/docs/find/#doc/AlmostPeriodicity.almost_periodicity).

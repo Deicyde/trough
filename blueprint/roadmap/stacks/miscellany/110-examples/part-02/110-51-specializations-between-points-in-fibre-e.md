@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.51 Specializations between points in fibre étale morphism
 
-Section 110.51 of the Stacks Project, [Tag 06UJ](https://stacks.math.columbia.edu/tag/06UJ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.51 of the Stacks Project, [Tag 06UJ](https://stacks.math.columbia.edu/tag/06UJ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06UK, a lemma
 
 [Tag 06UK](https://stacks.math.columbia.edu/tag/06UK) in the Stacks Project.
 
-**`Stacks.Examples.EtaleSpecialization.exists_isEtale_specializes_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EtaleSpecializationInFibre.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/EtaleSpecializationInFibre.lean#L149). The attribute's comment: “a specialization inside a fibre of an étale morphism of algebraic spaces”.
+**`Stacks.Examples.EtaleSpecialization.exists_isEtale_specializes_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/EtaleSpecializationInFibre.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Spaces/EtaleSpecializationInFibre.lean#L149). The attribute's comment: “a specialization inside a fibre of an étale morphism of algebraic spaces”.
 
 > **Stacks 06UK.** There is an étale morphism of algebraic spaces `f : X ⟶ Y` and a
 > nontrivial specialization of points `x ⤳ x'` in `|X|` with `f x = f x'` in `|Y|`.
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.51, Tag 06UJ](https://stacks.math.columbia.edu/tag/06UJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation of the action
 
-The module `Physlib.ClassicalMechanics.Lagrangian.FirstVariation`, [Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean): 5 declarations, 5 with a docstring.
+The module `Physlib.ClassicalMechanics.Lagrangian.FirstVariation`, [Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean): 5 declarations, 5 with a docstring.
 
 > The first variation of `∫ L (τ, H, ∂τ H) dτ`.
 
@@ -34,7 +34,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.FirstVariation`, [Physlib/Clas
 
 ## A. First variation
 
-**`ClassicalMechanics.LagrangianSystem.fderiv_action_integrand_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L60).
+**`ClassicalMechanics.LagrangianSystem.fderiv_action_integrand_apply`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L60).
 
 > The `s`-derivative of the integrand of the action splits into the Euler-Lagrange term and
 > a total `τ`-derivative.
@@ -50,7 +50,7 @@ lemma fderiv_action_integrand_apply (S : LagrangianSystem 𝓘(ℝ, E) ⟨E⟩) 
             (deriv (fun σ ↦ fderiv ℝ H (0, σ) (1, 0)) τ))
 ```
 
-**`ClassicalMechanics.LagrangianSystem.contDiff_action_integrand`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L83).
+**`ClassicalMechanics.LagrangianSystem.contDiff_action_integrand`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L83).
 
 > The integrand `L(τ, H, ∂τ H)` of the action is smooth.
 
@@ -60,7 +60,7 @@ lemma contDiff_action_integrand (S : LagrangianSystem 𝓘(ℝ, E) ⟨E⟩) (t�
     ContDiff ℝ ∞ fun p : ℝ × ℝ ↦ S.coord t₀ (p.2, H p, fderiv ℝ H p (0, 1))
 ```
 
-**`ClassicalMechanics.LagrangianSystem.hasDerivAt_integral_variation`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L90).
+**`ClassicalMechanics.LagrangianSystem.hasDerivAt_integral_variation`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L90).
 
 > First variation of `∫ L(τ, H, ∂τ H) dτ` along a variation fixing the endpoints.
 
@@ -76,7 +76,7 @@ lemma hasDerivAt_integral_variation (S : LagrangianSystem 𝓘(ℝ, E) ⟨E⟩) 
 
 ## B. The action along a variation
 
-**`ClassicalMechanics.LagrangianSystem.action_variation_eq_integral`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L132).
+**`ClassicalMechanics.LagrangianSystem.action_variation_eq_integral`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L132).
 
 > The action of `t ↦ h (s, t)` is the integral over `[0, t₁ -ᵥ t₀]` of
 > `S.coord t₀ (τ, q τ, q' τ)`, where `q τ = h (s, τ +ᵥ t₀)` and `q' = deriv q`.
@@ -89,7 +89,7 @@ lemma action_variation_eq_integral (S : LagrangianSystem 𝓘(ℝ, E) ⟨E⟩) {
         fderiv ℝ (fun p : ℝ × ℝ ↦ h.toFun (p.1, p.2 +ᵥ t₀)) (s, τ) (0, 1))
 ```
 
-**`ClassicalMechanics.LagrangianSystem.hasDerivAt_action_variation`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L146).
+**`ClassicalMechanics.LagrangianSystem.hasDerivAt_action_variation`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean#L146).
 
 > The `s`-derivative at `0` of the action of `t ↦ h (s, t)` is the integral over
 > `[0, t₁ -ᵥ t₀]` of `eulerLagrange S t₀ q τ` applied to the derivative of `s ↦ h (s, τ +ᵥ t₀)` at
@@ -116,4 +116,4 @@ lemma hasDerivAt_action_variation (S : LagrangianSystem 𝓘(ℝ, E) ⟨E⟩) {�
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean)
+- [Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean)

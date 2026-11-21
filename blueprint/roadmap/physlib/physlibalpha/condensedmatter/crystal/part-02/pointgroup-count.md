@@ -8,7 +8,7 @@ proof: formalized
 
 # Counting the point group of a Bravais lattice
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Count`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean): 13 declarations, 10 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Count`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean): 13 declarations, 10 with a docstring.
 
 > The point group of an `n`-dimensional lattice with a finite set `N` of neighbour displacements
 > is counted by the possible images of the `n` basis vectors.
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Count`, [PhyslibAlph
 
 ## A. Linear maps determined by the images of the basis
 
-**`CondensedMatter.Crystal.PeriodicGraph.act`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L59).
+**`CondensedMatter.Crystal.PeriodicGraph.act`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L59).
 
 > The linear map of `ℤⁿ` taking the basis vectors to the given vectors.
 
@@ -43,19 +43,19 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Count`, [PhyslibAlph
 def act (v : Fin n → Fin n → ℤ) : (Fin n → ℤ) →ₗ[ℤ] (Fin n → ℤ)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.act_apply`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L62).
+**`CondensedMatter.Crystal.PeriodicGraph.act_apply`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L62).
 
 ```lean
 lemma act_apply (v : Fin n → Fin n → ℤ) (d : Fin n → ℤ) : act v d = ∑ j, d j • v j
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.act_single`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L65).
+**`CondensedMatter.Crystal.PeriodicGraph.act_single`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L65).
 
 ```lean
 lemma act_single (v : Fin n → Fin n → ℤ) (j : Fin n) : act v (Pi.single j 1) = v j
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.apply_eq_act`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L69).
+**`CondensedMatter.Crystal.PeriodicGraph.apply_eq_act`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L69).
 
 > A lattice automorphism is determined by the images of the basis vectors.
 
@@ -66,7 +66,7 @@ lemma apply_eq_act (A : AddAut (Fin n → ℤ)) (d : Fin n → ℤ) :
 
 ## B. Admissible tuples
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible`**, a structure, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L84).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible`**, a structure, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L84).
 
 > A tuple of neighbour displacements is admissible when its linear map takes the set of
 > neighbour displacements into itself, injectively.
@@ -78,7 +78,7 @@ structure Admissible (N : Finset (Fin n → ℤ)) (v : Fin n → Fin n → ℤ) 
   injOn : Set.InjOn (act v) N
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.image_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L94).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.image_eq`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L94).
 
 > An admissible tuple maps the set of neighbour displacements onto itself.
 
@@ -87,7 +87,7 @@ lemma Admissible.image_eq {v : Fin n → Fin n → ℤ} (hv : Admissible N v) :
     N.image (act v) = N
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.surjective`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L104).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.surjective`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L104).
 
 > An admissible tuple gives a surjective linear map.
 
@@ -96,7 +96,7 @@ lemma Admissible.surjective {v : Fin n → Fin n → ℤ} (hv : Admissible N v) 
     Function.Surjective (act v)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.injective`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L122).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.injective`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L122).
 
 > An admissible tuple gives an injective linear map.
 
@@ -105,7 +105,7 @@ lemma Admissible.injective {v : Fin n → Fin n → ℤ} (hv : Admissible N v) :
     Function.Injective (act v)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.act_mem_iff`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L128).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.act_mem_iff`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L128).
 
 > A displacement is a neighbour exactly when its image under an admissible tuple is.
 
@@ -114,7 +114,7 @@ lemma Admissible.act_mem_iff {v : Fin n → Fin n → ℤ} (hv : Admissible N v)
     act v d ∈ N ↔ d ∈ N
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.equiv`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L138).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.equiv`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L138).
 
 > The lattice automorphism of an admissible tuple.
 
@@ -123,7 +123,7 @@ noncomputable def Admissible.equiv {v : Fin n → Fin n → ℤ} (hv : Admissibl
     AddAut (Fin n → ℤ)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.Admissible.equiv_apply`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L142).
+**`CondensedMatter.Crystal.PeriodicGraph.Admissible.equiv_apply`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L142).
 
 ```lean
 lemma Admissible.equiv_apply {v : Fin n → Fin n → ℤ} (hv : Admissible N v) (d : Fin n → ℤ) :
@@ -132,7 +132,7 @@ lemma Admissible.equiv_apply {v : Fin n → Fin n → ℤ} (hv : Admissible N v)
 
 ## C. The count
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointStabilizerEquiv`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L153).
+**`CondensedMatter.Crystal.PeriodicGraph.pointStabilizerEquiv`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L153).
 
 > **The point group of a Bravais lattice is in bijection with the admissible tuples of
 > neighbour displacements.**
@@ -141,7 +141,7 @@ lemma Admissible.equiv_apply {v : Fin n → Fin n → ℤ} (hv : Admissible N v)
 noncomputable def pointStabilizerEquiv : g.pointStabilizer ≃ {v // Admissible N v}
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.card_pointGroup`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L175).
+**`CondensedMatter.Crystal.PeriodicGraph.card_pointGroup`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean#L175).
 
 > **The order of the point group** is the number of admissible tuples of neighbour
 > displacements.
@@ -156,4 +156,4 @@ lemma card_pointGroup : Nat.card g.pointGroup = Nat.card {v // Admissible N v}
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean)

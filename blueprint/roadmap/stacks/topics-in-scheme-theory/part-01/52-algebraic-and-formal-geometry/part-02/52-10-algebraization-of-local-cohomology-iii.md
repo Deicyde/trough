@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.10 Algebraization of local cohomology, III
 
-Section 52.10 of the Stacks Project, [Tag 0EFT](https://stacks.math.columbia.edu/tag/0EFT). 9 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.10 of the Stacks Project, [Tag 0EFT](https://stacks.math.columbia.edu/tag/0EFT). 9 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EFU, a situation
 
 [Tag 0EFU](https://stacks.math.columbia.edu/tag/0EFU) in the Stacks Project.
 
-**`Stacks.Algebraization.BootstrapSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapSituation.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapSituation.lean#L61).
+**`Stacks.Algebraization.BootstrapSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapSituation.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapSituation.lean#L61).
 
 > The standing bootstrap situation for algebraization: a Noetherian ring with a dualizing
 > complex, an ideal, a finite module, a specialization-stable subset of the adic locus, and the two
@@ -28,7 +28,7 @@ public structure BootstrapSituation
 
 [Tag 0EID](https://stacks.math.columbia.edu/tag/0EID) in the Stacks Project.
 
-**`Stacks.Algebraization.depth_localized_gt_of_no_intermediate_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapDepth.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapDepth.lean#L93).
+**`Stacks.Algebraization.depth_localized_gt_of_no_intermediate_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapDepth.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapDepth.lean#L93).
 
 > **Stacks Project, Tag 0EID.** In the bootstrap situation the depth at `p` exceeds `s` when
 > no prime of `V(I) \ T` lies between `p` and a prime `q` of `T`.
@@ -53,7 +53,7 @@ public theorem depth_localized_gt_of_no_intermediate_prime
 
 [Tag 0EFV](https://stacks.math.columbia.edu/tag/0EFV) in the Stacks Project.
 
-**`Stacks.Algebraization.finite_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L318). The attribute's comment: “completion”.
+**`Stacks.Algebraization.finite_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L318). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** The completed module of a bootstrap situation is
 > finite over the completed ring.
@@ -63,7 +63,7 @@ public theorem finite_adicCompletion (S : BootstrapSituation.{u, v, w}) :
     Module.Finite (AdicCompletion S.I S.A) (AdicCompletion S.I S.M)
 ```
 
-**`Stacks.Algebraization.subset_adicLocus_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L332). The attribute's comment: “completion”.
+**`Stacks.Algebraization.subset_adicLocus_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L332). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** The completed locus is contained in the adic
 > locus of the extended ideal.
@@ -75,7 +75,7 @@ public theorem subset_adicLocus_adicCompletion (S : BootstrapSituation.{u, v, w}
         Set (AdicCompletion S.I S.A))
 ```
 
-**`Stacks.Algebraization.stableUnderSpecialization_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L341). The attribute's comment: “completion”.
+**`Stacks.Algebraization.stableUnderSpecialization_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 341](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L341). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** The completed locus is stable under
 > specialization.
@@ -85,7 +85,7 @@ public theorem stableUnderSpecialization_adicCompletion (S : BootstrapSituation.
     StableUnderSpecialization (adicCompletionLocus S)
 ```
 
-**`Stacks.Algebraization.dualizing_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L348). The attribute's comment: “completion”.
+**`Stacks.Algebraization.dualizing_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L348). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** Assumption (1) completes: the adic completion of
 > a ring with a dualizing complex has one.
@@ -96,7 +96,7 @@ public theorem dualizing_adicCompletion (S : BootstrapSituation.{u, v, w}) :
       Dualizing.IsDualizingComplex K
 ```
 
-**`Stacks.Algebraization.cohomologicalDimension_le_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L357). The attribute's comment: “completion”.
+**`Stacks.Algebraization.cohomologicalDimension_le_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L357). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** Assumption (3) completes: cohomological dimension
 > does not increase.
@@ -108,7 +108,7 @@ public theorem cohomologicalDimension_le_adicCompletion (S : BootstrapSituation.
       (Ideal.fg_of_isNoetherianRing _) ≤ S.d
 ```
 
-**`Stacks.Algebraization.completedLocalDepth_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L368). The attribute's comment: “completion”.
+**`Stacks.Algebraization.completedLocalDepth_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean, line 368](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletion.lean#L368). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (completion).** Assumption (6) completes: the strict depth bound
 > on completed localizations persists after adic completion.
@@ -133,7 +133,7 @@ public theorem completedLocalDepth_adicCompletion (S : BootstrapSituation.{u, v,
           (S.s : EInt)
 ```
 
-**`Stacks.Algebraization.exists_localAlgebraizationHypotheses_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionLocal.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionLocal.lean#L194). The attribute's comment: “parts (G) and (D) for T = \{𝔪}: the hypotheses of Stacks 0DXP hold for the I-adic completion A', I', M' of A, I, M, whose locus is the closed point of A'”.
+**`Stacks.Algebraization.exists_localAlgebraizationHypotheses_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionLocal.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionLocal.lean#L194). The attribute's comment: “parts (G) and (D) for T = \{𝔪}: the hypotheses of Stacks 0DXP hold for the I-adic completion A', I', M' of A, I, M, whose locus is the closed point of A'”.
 
 > In a bootstrap situation with `A` local and `T = {𝔪}`, there is an object `omega` of the
 > derived category of `A'`-modules for which the `I`-adic completions `A'`, `I'`, `M'` satisfy the
@@ -151,7 +151,7 @@ public theorem exists_localAlgebraizationHypotheses_adicCompletion [IsLocalRing 
         (S.I.map (algebraMap S.A (AdicCompletion S.I S.A))) S.s S.d omega
 ```
 
-**`Stacks.Algebraization.depth_or_depth_add_dimension_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean#L52). The attribute's comment: “completion”.
+**`Stacks.Algebraization.depth_or_depth_add_dimension_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean#L52). The attribute's comment: “completion”.
 
 > **Stacks Project, Tag 0EFV (G), assumption (4).** The chain-of-primes depth estimate of a
 > bootstrap situation persists after `I`-adic completion, for the completed locus.
@@ -180,7 +180,7 @@ public theorem depth_or_depth_add_dimension_adicCompletion (S : BootstrapSituati
         ((S.d + S.s : ℤ) : EInt))
 ```
 
-**`Stacks.Algebraization.BootstrapSituation.adicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean#L103). The attribute's comment: “part (G): the completed quadruple is again a situation as in Stacks 0EFU”.
+**`Stacks.Algebraization.BootstrapSituation.adicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapCompletionSituation.lean#L103). The attribute's comment: “part (G): the completed quadruple is again a situation as in Stacks 0EFU”.
 
 > **Stacks Project, Tag 0EFV (G).** The `I`-adic completion of a bootstrap situation: the
 > completed ring `A^∧`, the extended ideal `I A^∧`, the completed module `M^∧` and the preimage of
@@ -190,7 +190,7 @@ public theorem depth_or_depth_add_dimension_adicCompletion (S : BootstrapSituati
 public def adicCompletion (S : BootstrapSituation.{u, v, w}) : BootstrapSituation.{u, v, w}
 ```
 
-**`Stacks.Algebraization.depthGtOnAssociatedSubset_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L115). The attribute's comment: “part (A), hypothesis (6) of Stacks 0EFK for A, I, 𝔞, M”.
+**`Stacks.Algebraization.depthGtOnAssociatedSubset_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L115). The attribute's comment: “part (A), hypothesis (6) of Stacks 0EFK for A, I, 𝔞, M”.
 
 > **Stacks Project, Tag 0EFV, hypothesis (6) of Stacks 0EFK.** In a bootstrap situation whose
 > ideal `I` lies in the Jacobson radical, a prime `𝔭 ∉ V(I)` all of whose specializations on
@@ -208,7 +208,7 @@ public theorem depthGtOnAssociatedSubset_of_le_jacobson
     DepthGtOnAssociatedSubset (M := S.M) S.I a S.s
 ```
 
-**`Stacks.Algebraization.exists_mem_zeroLocus_dimension_le_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L137). The attribute's comment: “part (A), hypothesis (3) of Stacks 0EFI for A, I, 𝔞, M”.
+**`Stacks.Algebraization.exists_mem_zeroLocus_dimension_le_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L137). The attribute's comment: “part (A), hypothesis (3) of Stacks 0EFI for A, I, 𝔞, M”.
 
 > **Stacks Project, Tag 0EFV, hypothesis (3) of Stacks 0EFI.** In a bootstrap situation whose
 > ideal `I` lies in the Jacobson radical, a prime `𝔭 ∉ V(I)` all of whose specializations on
@@ -233,7 +233,7 @@ public theorem exists_mem_zeroLocus_dimension_le_of_le_jacobson
         (S.d : EInt)
 ```
 
-**`Stacks.Algebraization.stabilizationHypotheses_and_depthGtOnAssociatedSubset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L164). The attribute's comment: “part (A): all hypotheses of Stacks 0EFI and Stacks 0EFK for A, I, 𝔞, M”.
+**`Stacks.Algebraization.stabilizationHypotheses_and_depthGtOnAssociatedSubset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L164). The attribute's comment: “part (A): all hypotheses of Stacks 0EFI and Stacks 0EFK for A, I, 𝔞, M”.
 
 > **Stacks Project, Tag 0EFV, part (A).** Let `S` be a bootstrap situation whose ideal `I` is
 > contained in the Jacobson radical of `A`, and let `I ⊆ 𝔞` be an ideal with `V(𝔞) ⊆ T`. Then all
@@ -255,7 +255,7 @@ public theorem stabilizationHypotheses_and_depthGtOnAssociatedSubset
       DepthGtOnAssociatedSubset (M := S.M) S.I a S.s
 ```
 
-**`Stacks.Algebraization.algebraizationHypotheses_of_supplementaryBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L190). The attribute's comment: “part (B): all hypotheses of Stacks 0EFL except possibly (5) for A, I, 𝔞, M”.
+**`Stacks.Algebraization.algebraizationHypotheses_of_supplementaryBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L190). The attribute's comment: “part (B): all hypotheses of Stacks 0EFL except possibly (5) for A, I, 𝔞, M”.
 
 > **Stacks Project, Tag 0EFV, part (B).** Let `S` be a bootstrap situation whose ring is
 > `I`-adically complete, and let `I ⊆ 𝔞` be an ideal with `V(𝔞) ⊆ T`. Then all hypotheses of
@@ -307,7 +307,7 @@ public theorem algebraizationHypotheses_of_supplementaryBound
       AlgebraizationHypotheses (M := S.M) S.I a S.s S.d omega δ δmax δmin
 ```
 
-**`Stacks.Algebraization.localStabilizationHypotheses_and_depthGtAtMaximalIdeal_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L260). The attribute's comment: “part (C): all hypotheses of Stacks 0DXM and Stacks 0EFQ for A, 𝔪, I, M”.
+**`Stacks.Algebraization.localStabilizationHypotheses_and_depthGtAtMaximalIdeal_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L260). The attribute's comment: “part (C): all hypotheses of Stacks 0DXM and Stacks 0EFQ for A, 𝔪, I, M”.
 
 > **Stacks Project, Tag 0EFV, part (C).** Let `S` be a bootstrap situation whose ring is local
 > with maximal ideal `𝔪`, and suppose `𝔪 ∈ T`, which is the standing hypothesis `V(𝔞) ⊆ T` at
@@ -327,7 +327,7 @@ public theorem localStabilizationHypotheses_and_depthGtAtMaximalIdeal_of_mem
       DepthGtAtMaximalIdeal (M := S.M) S.I S.s
 ```
 
-**`Stacks.Algebraization.localAlgebraizationHypotheses_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L281). The attribute's comment: “part (D): all hypotheses of Stacks 0DXP for A, 𝔪, I, M”.
+**`Stacks.Algebraization.localAlgebraizationHypotheses_of_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean, line 281](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapHypotheses.lean#L281). The attribute's comment: “part (D): all hypotheses of Stacks 0DXP for A, 𝔪, I, M”.
 
 > **Stacks Project, Tag 0EFV, part (D).** Let `S` be a bootstrap situation whose ring is local
 > with maximal ideal `𝔪` and `I`-adically complete, and suppose `𝔪 ∈ T`, which is the standing
@@ -344,7 +344,7 @@ public theorem localAlgebraizationHypotheses_of_mem
       LocalAlgebraizationHypotheses (M := S.M) S.I S.s S.d omega
 ```
 
-**`Stacks.Algebraization.localStabilizationHypotheses_and_depthGtAtMaximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L167). The attribute's comment: “part (C) for T = \{𝔪}: the hypotheses of Stacks 0DXM and hypothesis (6) of Stacks 0EFQ, with the dualizing complex of Situation 0EFU supplied as the witness omega”.
+**`Stacks.Algebraization.localStabilizationHypotheses_and_depthGtAtMaximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L167). The attribute's comment: “part (C) for T = \{𝔪}: the hypotheses of Stacks 0DXM and hypothesis (6) of Stacks 0EFQ, with the dualizing complex of Situation 0EFU supplied as the witness omega”.
 
 > In the bootstrap situation of Stacks 0EFU with `A` local and `T = {𝔪}`, the hypotheses
 > (1)–(4) of Stacks 0DXM and hypothesis (6) of Stacks 0EFQ hold for `A, I, 𝔪, M`, for every
@@ -358,7 +358,7 @@ public theorem localStabilizationHypotheses_and_depthGtAtMaximalIdeal [IsLocalRi
       DepthGtAtMaximalIdeal (M := S.M) S.I S.s
 ```
 
-**`Stacks.Algebraization.subset_adicLocus_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L453). The attribute's comment: “localization”.
+**`Stacks.Algebraization.subset_adicLocus_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 453](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L453). The attribute's comment: “localization”.
 
 > The localized locus is contained in the adic locus of the extended ideal.
 
@@ -369,7 +369,7 @@ public theorem subset_adicLocus_localization
       ((X.I.map (algebraMap X.A (Localization S))) : Set (Localization S))
 ```
 
-**`Stacks.Algebraization.stableUnderSpecialization_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L461). The attribute's comment: “localization”.
+**`Stacks.Algebraization.stableUnderSpecialization_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 461](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L461). The attribute's comment: “localization”.
 
 > The localized locus is stable under specialization.
 
@@ -379,7 +379,7 @@ public theorem stableUnderSpecialization_localization
   StableUnderSpecialization (locus X S)
 ```
 
-**`Stacks.Algebraization.dualizing_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L468). The attribute's comment: “localization”.
+**`Stacks.Algebraization.dualizing_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 468](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L468). The attribute's comment: “localization”.
 
 > Assumption (1) localizes: a localization of a ring with a dualizing complex has one.
 
@@ -390,7 +390,7 @@ public theorem dualizing_localization
       Dualizing.IsDualizingComplex K
 ```
 
-**`Stacks.Algebraization.cohomologicalDimension_le_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L477). The attribute's comment: “localization”.
+**`Stacks.Algebraization.cohomologicalDimension_le_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 477](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L477). The attribute's comment: “localization”.
 
 > Assumption (3) localizes: cohomological dimension does not increase.
 
@@ -402,7 +402,7 @@ public theorem cohomologicalDimension_le_localization
       (Ideal.fg_of_isNoetherianRing _) ≤ X.d
 ```
 
-**`Stacks.Algebraization.depth_or_depth_add_dimension_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L488). The attribute's comment: “localization”.
+**`Stacks.Algebraization.depth_or_depth_add_dimension_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 488](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L488). The attribute's comment: “localization”.
 
 > Assumption (4) localizes: the chain-of-primes depth estimate holds for the localized data.
 
@@ -432,7 +432,7 @@ public theorem depth_or_depth_add_dimension_localization
         ((X.d + X.s : ℤ) : EInt))
 ```
 
-**`Stacks.Algebraization.completedLocalDepth_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L531). The attribute's comment: “localization”.
+**`Stacks.Algebraization.completedLocalDepth_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 531](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L531). The attribute's comment: “localization”.
 
 > Assumption (6) localizes: the strict depth bound on completed localizations persists.
 
@@ -457,7 +457,7 @@ public theorem completedLocalDepth_localization
           (X.s : EInt)
 ```
 
-**`Stacks.Algebraization.BootstrapSituation.localize`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L726). The attribute's comment: “part (F): for a multiplicative subset S ⊆ A the quadruple S⁻¹A, S⁻¹I, T', S⁻¹M, with T' the inverse image of T, is again a situation as in Stacks 0EFU”.
+**`Stacks.Algebraization.BootstrapSituation.localize`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean, line 726](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalization.lean#L726). The attribute's comment: “part (F): for a multiplicative subset S ⊆ A the quadruple S⁻¹A, S⁻¹I, T', S⁻¹M, with T' the inverse image of T, is again a situation as in Stacks 0EFU”.
 
 > **Stacks Project, Tag 0EFV, part (F).** The localization of a bootstrap situation at a
 > multiplicative subset `S ⊆ A`: the quadruple `S⁻¹A, S⁻¹I, T', S⁻¹M`, with `T'` the inverse image
@@ -470,7 +470,7 @@ public def localize
     BootstrapSituation.{u, max u v, w}
 ```
 
-**`Stacks.Algebraization.depth_or_depth_add_dimension_of_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean#L42). The attribute's comment: “shrinking\_t”.
+**`Stacks.Algebraization.depth_or_depth_add_dimension_of_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean#L42). The attribute's comment: “shrinking\_t”.
 
 > **Stacks Project, Tag 0EFV (shrinking `T`).** The chain-of-primes depth estimate of a
 > bootstrap situation persists after restricting its locus to any subset.
@@ -497,7 +497,7 @@ public theorem depth_or_depth_add_dimension_of_subset
         ((S.d + S.s : ℤ) : EInt))
 ```
 
-**`Stacks.Algebraization.BootstrapSituation.shrink`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean#L74). The attribute's comment: “part (E): for a smaller specialization-stable T' ⊆ T the quadruple A, I, T', M is again a situation as in Stacks 0EFU”.
+**`Stacks.Algebraization.BootstrapSituation.shrink`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapShrink.lean#L74). The attribute's comment: “part (E): for a smaller specialization-stable T' ⊆ T the quadruple A, I, T', M is again a situation as in Stacks 0EFU”.
 
 > **Stacks Project, Tag 0EFV, part (E).** The bootstrap situation obtained by restricting the
 > locus of `S` to a smaller specialization-stable subset: `A, I, T', M` with `T' ⊆ T` again
@@ -515,7 +515,7 @@ public def BootstrapSituation.shrink
 
 [Tag 0EFR](https://stacks.math.columbia.edu/tag/0EFR) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_of_eq_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L207). The attribute's comment: “the annihilation assertion: Hⁱ\_𝔪(M) is annihilated by a power of I for i ≤ s”.
+**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_of_eq_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L207). The attribute's comment: “the annihilation assertion: Hⁱ\_𝔪(M) is annihilated by a power of I for i ≤ s”.
 
 > In the bootstrap situation of Stacks 0EFU with `A` local and `T = {𝔪}`, a single power of
 > `I` annihilates `Hⁱ_𝔪(M)` in every degree `i ≤ s`.
@@ -529,7 +529,7 @@ public theorem exists_pow_le_annihilator_localCohomologyModule_of_eq_closedPoint
           (Ideal.fg_of_isNoetherianRing _) (ModuleCat.of S.A S.M) i)
 ```
 
-**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L338). The attribute's comment: “both assertions, with no carried hypothesis, for I-adically complete A”.
+**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L338). The attribute's comment: “both assertions, with no carried hypothesis, for I-adically complete A”.
 
 > In the bootstrap situation of Stacks 0EFU with `A` local, `I`-adically complete and
 > `T = {𝔪}`, the map `Hⁱ_𝔪(M) ⟶ lim Hⁱ_𝔪(M/IⁿM)` is an isomorphism for `i ≤ s` and a single
@@ -547,7 +547,7 @@ public theorem isIso_localCohomologyToAdicQuotientLimit_of_isAdicComplete
             (Ideal.fg_of_isNoetherianRing _) (ModuleCat.of S.A S.M) i)
 ```
 
-**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L384). The attribute's comment: “both assertions read over the I-adic completion A', I', M' of the situation, for an arbitrary A: Hⁱ\_\{𝔪'}(M') → lim Hⁱ\_\{𝔪'}(M'/(I')ⁿM') is an isomorphism for i ≤ s and a power of I' annihilates these modules. No completeness assumption on A; this is the statement the source's proof establishes over the completion”.
+**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L384). The attribute's comment: “both assertions read over the I-adic completion A', I', M' of the situation, for an arbitrary A: Hⁱ\_\{𝔪'}(M') → lim Hⁱ\_\{𝔪'}(M'/(I')ⁿM') is an isomorphism for i ≤ s and a power of I' annihilates these modules. No completeness assumption on A; this is the statement the source's proof establishes over the completion”.
 
 > In the bootstrap situation with `A` local and `T = {𝔪}`, over the `I`-adic completion
 > `A', I', M'`: the map `Hⁱ_{𝔪'}(M') ⟶ lim Hⁱ_{𝔪'}(M'/(I')ⁿM')` is an isomorphism for `i ≤ s`,
@@ -570,7 +570,7 @@ public theorem isIso_localCohomologyToAdicQuotientLimit_adicCompletion
             (ModuleCat.of S.adicCompletion.A S.adicCompletion.M) i)
 ```
 
-**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompletionUnitDescent.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CompletionUnitDescent.lean#L621). The attribute's comment: “both assertions over A itself for every Noetherian local ring: in Situation 0EFU with A local and T = \{𝔪}, the map Hⁱ\_𝔪(M) → lim Hⁱ\_𝔪(M/IⁿM) is an isomorphism for i ≤ s and a single power of I annihilates these modules”.
+**`Stacks.Algebraization.isIso_localCohomologyToAdicQuotientLimit_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CompletionUnitDescent.lean, line 621](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CompletionUnitDescent.lean#L621). The attribute's comment: “both assertions over A itself for every Noetherian local ring: in Situation 0EFU with A local and T = \{𝔪}, the map Hⁱ\_𝔪(M) → lim Hⁱ\_𝔪(M/IⁿM) is an isomorphism for i ≤ s and a single power of I annihilates these modules”.
 
 > **Stacks 0EFR.** In the bootstrap situation of Stacks 0EFU with `A` local and
 > `T = {𝔪}`, the map `Hⁱ_𝔪(M) ⟶ lim Hⁱ_𝔪(M/IⁿM)` is an isomorphism for `i ≤ s`, and a single power
@@ -601,7 +601,7 @@ public theorem isIso_localCohomologyToAdicQuotientLimit_closedPoint
 
 [Tag 0EFW](https://stacks.math.columbia.edu/tag/0EFW) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_bootstrapSituation_of_depth_gt_or_depth_add_dim_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AlgebraizationLocalCohomologyIIIBootstrapCriterion.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/AlgebraizationLocalCohomologyIIIBootstrapCriterion.lean#L160).
+**`Stacks.Algebraization.exists_bootstrapSituation_of_depth_gt_or_depth_add_dim_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AlgebraizationLocalCohomologyIIIBootstrapCriterion.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/AlgebraizationLocalCohomologyIIIBootstrapCriterion.lean#L160).
 
 > **Stacks Project, Tag 0EFW.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` admitting a
 > dualizing complex, let `M` be a finite `A`-module and let `s`, `d` be integers with
@@ -650,7 +650,7 @@ public theorem exists_bootstrapSituation_of_depth_gt_or_depth_add_dim_gt
 
 [Tag 0EFX](https://stacks.math.columbia.edu/tag/0EFX) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_map_idealPowerTower_eq_zero_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean#L526). The attribute's comment: “the pro-zero assertion for i ≤ s at T = \{𝔪} over a Noetherian local ring in Situation 0EFU”.
+**`Stacks.Algebraization.exists_map_idealPowerTower_eq_zero_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean, line 526](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean#L526). The attribute's comment: “the pro-zero assertion for i ≤ s at T = \{𝔪} over a Noetherian local ring in Situation 0EFU”.
 
 > **Stacks Project, Tag 0EFX, the pro-zero assertion, at `T = {𝔪}`.** In Situation
 > [Stacks, Tag 0EFU] with `A` local and `T = {𝔪}`, the inverse system `{H^i_𝔪(IⁿM)}` is pro-zero
@@ -682,7 +682,7 @@ theorem exists_map_idealPowerTower_eq_zero_closedPoint [IsLocalRing S.A]
         ((idealPowerTower.{u, u} S.I (ModuleCat.of S.A S.M)).map (homOfLE h).op) = 0
 ```
 
-**`Stacks.Algebraization.hasStableImageIdealPowerCohomology_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean#L558). The attribute's comment: “the stable-image assertion in degree s + 1 at T = \{𝔪} over a Noetherian local ring in Situation 0EFU”.
+**`Stacks.Algebraization.hasStableImageIdealPowerCohomology_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean, line 558](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapClosedPointProZero.lean#L558). The attribute's comment: “the stable-image assertion in degree s + 1 at T = \{𝔪} over a Noetherian local ring in Situation 0EFU”.
 
 > **Stacks Project, Tag 0EFX, the stable-image assertion, at `T = {𝔪}`.** In Situation
 > [Stacks, Tag 0EFU] with `A` local and `T = {𝔪}`, the stable-image assertion of the tag holds in
@@ -706,7 +706,7 @@ theorem hasStableImageIdealPowerCohomology_closedPoint [IsLocalRing S.A]
     HasStableImageIdealPowerCohomology.{u, u} S.T S.I (ModuleCat.of S.A S.M) (S.s + 1) 0
 ```
 
-**`Stacks.Algebraization.exists_map_idealPowerTower_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean#L280). The attribute's comment: “the pro-zero assertion in degrees 0 ≤ i ≤ s at a general specialization-stable T in Situation 0EFU”.
+**`Stacks.Algebraization.exists_map_idealPowerTower_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean, line 280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean#L280). The attribute's comment: “the pro-zero assertion in degrees 0 ≤ i ≤ s at a general specialization-stable T in Situation 0EFU”.
 
 > **Stacks Project, Tag 0EFX**, the pro-zero assertion, at a general specialization-stable `T`.
 > In Situation [Stacks, Tag 0EFU] the inverse system `{H^i_T(IⁿM)}` is pro-zero for every `i ≤ s`:
@@ -728,7 +728,7 @@ theorem exists_map_idealPowerTower_eq_zero (S : BootstrapSituation.{u, u, u}) (i
         ((idealPowerTower.{u, u} S.I (ModuleCat.of S.A S.M)).map (homOfLE h).op) = 0
 ```
 
-**`Stacks.Algebraization.isProZeroIdealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean#L301). The attribute's comment: “the pro-zero assertion in every degree i ≤ s at a general specialization-stable T in Situation 0EFU”.
+**`Stacks.Algebraization.isProZeroIdealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean, line 301](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformProZero.lean#L301). The attribute's comment: “the pro-zero assertion in every degree i ≤ s at a general specialization-stable T in Situation 0EFU”.
 
 > **Stacks Project, Tag 0EFX**, the pro-zero assertion, in **every** degree `i ≤ s` and at a
 > general specialization-stable `T`. In Situation [Stacks, Tag 0EFU] the inverse system
@@ -747,7 +747,7 @@ theorem isProZeroIdealPowerCohomology (S : BootstrapSituation.{u, u, u}) (i : �
     IsProZeroIdealPowerCohomology.{u, u} S.T S.I (ModuleCat.of S.A S.M) i
 ```
 
-**`Stacks.Algebraization.exists_hasStableImageIdealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean#L274). The attribute's comment: “the stable-image assertion in degree s + 1 at a general specialization-stable T in Situation 0EFU”.
+**`Stacks.Algebraization.exists_hasStableImageIdealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean#L274). The attribute's comment: “the stable-image assertion in degree s + 1 at a general specialization-stable T in Situation 0EFU”.
 
 > **Stacks Project, Tag 0EFX**, the stable-image assertion, at a general specialization-stable
 > `T`. In Situation [Stacks, Tag 0EFU] there is an `m₀` such that for every `m ≥ m₀` there is an
@@ -768,7 +768,7 @@ theorem exists_hasStableImageIdealPowerCohomology (S : BootstrapSituation.{u, u,
       (S.s + 1) m₀
 ```
 
-**`Stacks.Algebraization.isProZero_and_hasStableImage_idealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean#L307).
+**`Stacks.Algebraization.isProZero_and_hasStableImage_idealPowerCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapUniformStableImage.lean#L307).
 
 > **Stacks Project, Tag 0EFX** at a general specialization-stable `T`: both assertions. In
 > Situation [Stacks, Tag 0EFU] the inverse systems `{H^i_T(IⁿM)}` are pro-zero for `i ≤ s`, and
@@ -787,7 +787,7 @@ theorem isProZero_and_hasStableImage_idealPowerCohomology (S : BootstrapSituatio
         (S.s + 1) m₀
 ```
 
-**`Stacks.LocalCohomology.exists_map_idealPowerTower_eq_zero_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZero.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZero.lean#L277). The attribute's comment: “the pro-zero assertion in negative degrees, unconditionally”.
+**`Stacks.LocalCohomology.exists_map_idealPowerTower_eq_zero_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZero.lean, line 277](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZero.lean#L277). The attribute's comment: “the pro-zero assertion in negative degrees, unconditionally”.
 
 > **Stacks Project, Tag 0EFX** in negative degrees, with no hypothesis. For `i < 0` every term
 > of `{H^i_T(IⁿM)}` vanishes, so every transition map is zero and the system is pro-zero.
@@ -800,7 +800,7 @@ theorem exists_map_idealPowerTower_eq_zero_of_neg (T : Set (PrimeSpectrum A)) (I
         ((idealPowerTower.{u, v} I M).map (homOfLE h).op) = 0
 ```
 
-**`Stacks.LocalCohomology.exists_eventually_injective_image_idealPowerTower_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L188). The attribute's comment: “the stable-image assertion in negative degrees, unconditionally”.
+**`Stacks.LocalCohomology.exists_eventually_injective_image_idealPowerTower_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L188). The attribute's comment: “the stable-image assertion in negative degrees, unconditionally”.
 
 > **Stacks Project, Tag 0EFX**, the stable-image assertion, in negative degrees and with no
 > hypothesis. The assertion is that there is an `m₀` such that for every `m ≥ m₀` there is a
@@ -831,7 +831,7 @@ theorem exists_eventually_injective_image_idealPowerTower_of_neg (T : Set (Prime
             (homOfLE (hmc.trans hck)).op).hom x = 0
 ```
 
-**`Stacks.LocalCohomology.exists_map_idealPowerTower_eq_zero_of_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L296). The attribute's comment: “the pro-zero assertion in degrees i ≤ 0, for A Noetherian, M finite and T ⊆ V(I)”.
+**`Stacks.LocalCohomology.exists_map_idealPowerTower_eq_zero_of_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L296). The attribute's comment: “the pro-zero assertion in degrees i ≤ 0, for A Noetherian, M finite and T ⊆ V(I)”.
 
 > **Stacks Project, Tag 0EFX**, the pro-zero assertion in degrees `i ≤ 0`, with no hypothesis
 > beyond the data of Situation [Stacks, Tag 0EFU]: `A` Noetherian, `M` finite and `T ⊆ V(I)`. For
@@ -854,7 +854,7 @@ theorem exists_map_idealPowerTower_eq_zero_of_le_zero [IsNoetherianRing A]
         ((idealPowerTower.{u, v} I M).map (homOfLE h).op) = 0
 ```
 
-**`Stacks.LocalCohomology.exists_eventually_injective_image_idealPowerTower_of_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L323). The attribute's comment: “the stable-image assertion in degrees i ≤ 0, for A Noetherian, M finite and T ⊆ V(I)”.
+**`Stacks.LocalCohomology.exists_eventually_injective_image_idealPowerTower_of_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/IdealPowerProZeroLowDegree.lean#L323). The attribute's comment: “the stable-image assertion in degrees i ≤ 0, for A Noetherian, M finite and T ⊆ V(I)”.
 
 > **Stacks Project, Tag 0EFX**, the stable-image assertion in degrees `i ≤ 0`, with no
 > hypothesis beyond the data of Situation [Stacks, Tag 0EFU]: `A` Noetherian, `M` finite and
@@ -892,7 +892,7 @@ theorem exists_eventually_injective_image_idealPowerTower_of_le_zero [IsNoetheri
 
 [Tag 0EFY](https://stacks.math.columbia.edu/tag/0EFY) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_bound_adicLocalCohomologyComparisons`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapFirstDerivedLimitAnnihilation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapFirstDerivedLimitAnnihilation.lean#L170).
+**`Stacks.Algebraization.exists_bound_adicLocalCohomologyComparisons`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapFirstDerivedLimitAnnihilation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapFirstDerivedLimitAnnihilation.lean#L170).
 
 > At a general specialization-stable `T`, in Situation [Stacks, Tag 0EFU] there is an integer
 > `m₀ ≥ 0` such that
@@ -944,7 +944,7 @@ theorem exists_bound_adicLocalCohomologyComparisons (S : BootstrapSituation.{u, 
 
 [Tag 0EIE](https://stacks.math.columbia.edu/tag/0EIE) in the Stacks Project.
 
-**`Stacks.LocalCohomology.Bootstrap.essentiallyConstant_and_consequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantBootstrap.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantBootstrap.lean#L66).
+**`Stacks.LocalCohomology.Bootstrap.essentiallyConstant_and_consequences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantBootstrap.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantBootstrap.lean#L66).
 
 > **Stacks Project, Tag 0EIE.** In Situation 0EFU, for `i ≤ s` the inverse system
 > `{H^i_T(M/IⁿM)}_{n ≥ 0}` is essentially constant with value `H^i_T(M)` (with respect to the cone
@@ -965,7 +965,7 @@ theorem essentiallyConstant_and_consequences (S : BootstrapSituation.{u, u, w}) 
       Nonempty (IsLimit (cone.{u, u} S i))
 ```
 
-**`Stacks.LocalCohomology.isEssentiallyConstantWith_localCohomologyAdicCone_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L439). The attribute's comment: “the negative-degree range, unconditionally: for i < 0 the system is essentially constant with value H^i\_T(M) = 0”.
+**`Stacks.LocalCohomology.isEssentiallyConstantWith_localCohomologyAdicCone_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L440). The attribute's comment: “the negative-degree range, unconditionally: for i < 0 the system is essentially constant with value H^i\_T(M) = 0”.
 
 > **Stacks Project, Tag 0EIE** in negative degrees, with no hypothesis.
 > For `i < 0` the system `{H^i_T(M/IⁿM)}` is essentially constant with value `H^i_T(M)`: local
@@ -982,7 +982,7 @@ theorem isEssentiallyConstantWith_localCohomologyAdicCone_of_neg (I : Ideal A) (
       (op 0) 0
 ```
 
-**`Stacks.LocalCohomology.exists_isEssentiallyConstantWith_localCohomologyAdicCone_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L465). The attribute's comment: “the range where I acts nilpotently on M: if I^N M = 0 then in every degree the system is essentially constant with value H^i\_T(M), for an arbitrary ring, subset of the spectrum and module”.
+**`Stacks.LocalCohomology.exists_isEssentiallyConstantWith_localCohomologyAdicCone_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L466). The attribute's comment: “the range where I acts nilpotently on M: if I^N M = 0 then in every degree the system is essentially constant with value H^i\_T(M), for an arbitrary ring, subset of the spectrum and module”.
 
 > **Stacks Project, Tag 0EIE** when `I` acts nilpotently on `M`, with no hypothesis and in
 > every degree. If `IᴺM = 0` then the quotient maps `M → M/IᵐM` are isomorphisms for every
@@ -1005,7 +1005,7 @@ theorem exists_isEssentiallyConstantWith_localCohomologyAdicCone_of_pow_smul_top
         j σ
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.isEssentiallyConstantWith_of_depthBound_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L648). The attribute's comment: “the essential-constancy assertion, and with it the four consequences, for a bootstrap situation whose depth bound s is negative”.
+**`Stacks.LocalCohomology.Bootstrap.isEssentiallyConstantWith_of_depthBound_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 649](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L649). The attribute's comment: “the essential-constancy assertion, and with it the four consequences, for a bootstrap situation whose depth bound s is negative”.
 
 > **Stacks Project, Tag 0EIE** for a bootstrap situation whose depth bound is negative. Every
 > degree `i ≤ s < 0` is negative, so each term of `{H^i_T(M/IⁿM)}` and the value `H^i_T(M)`
@@ -1018,7 +1018,7 @@ theorem isEssentiallyConstantWith_of_depthBound_neg (hs : S.s < 0) (hi : i ≤ S
       (tower.{u, v} S i) (cone.{u, v} S i) (op 0) 0
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.exists_isEssentiallyConstantWith_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L660). The attribute's comment: “the essential-constancy assertion for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
+**`Stacks.LocalCohomology.Bootstrap.exists_isEssentiallyConstantWith_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 661](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L661). The attribute's comment: “the essential-constancy assertion for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
 
 > **Stacks Project, Tag 0EIE** for a bootstrap situation in which `I` acts nilpotently on `M`,
 > with no hypothesis and in every degree. The quotient maps `M → M/IᵐM` are isomorphisms from the
@@ -1033,7 +1033,7 @@ theorem exists_isEssentiallyConstantWith_of_pow_smul_top_eq_bot {N : ℕ}
         (tower.{u, v} S i) (cone.{u, v} S i) j σ
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L672). The attribute's comment: “the Mittag-Leffler consequence for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
+**`Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 673](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L673). The attribute's comment: “the Mittag-Leffler consequence for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
 
 > **Stacks Project, Tag 0EIE**, the Mittag-Leffler consequence for a bootstrap situation in
 > which `I` acts nilpotently on `M`, with no hypothesis and in every degree.
@@ -1044,7 +1044,7 @@ theorem isMittagLeffler_of_pow_smul_top_eq_bot {N : ℕ}
     IsMittagLefflerCategorical (tower.{u, v} S i)
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.exists_pow_smul_eq_zero_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L682). The attribute's comment: “the annihilation consequence for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
+**`Stacks.LocalCohomology.Bootstrap.exists_pow_smul_eq_zero_of_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 683](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L683). The attribute's comment: “the annihilation consequence for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
 
 > **Stacks Project, Tag 0EIE**, the annihilation consequence for a bootstrap situation in which
 > `I` acts nilpotently on `M`, with no hypothesis and in every degree.
@@ -1057,7 +1057,7 @@ theorem exists_pow_smul_eq_zero_of_pow_smul_top_eq_bot {N : ℕ}
         (ModuleCat.of S.A S.M), a • x = 0
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.isLimit_of_pow_smul_top_eq_bot`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L695). The attribute's comment: “the limit consequence H^i\_T(M) = lim H^i\_T(M/I^nM) for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
+**`Stacks.LocalCohomology.Bootstrap.isLimit_of_pow_smul_top_eq_bot`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 696](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L696). The attribute's comment: “the limit consequence H^i\_T(M) = lim H^i\_T(M/I^nM) for a bootstrap situation in which I acts nilpotently on M, with no hypothesis and in every degree”.
 
 > **Stacks Project, Tag 0EIE**, the limit consequence for a bootstrap situation in which `I`
 > acts nilpotently on `M`, with no hypothesis and in every degree: the quotient maps exhibit
@@ -1069,7 +1069,7 @@ def isLimit_of_pow_smul_top_eq_bot {N : ℕ}
     IsLimit (cone.{u, v} S i)
 ```
 
-**`Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_eq_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L723). The attribute's comment: “the Mittag-Leffler consequence for a bootstrap situation whose ring is local and whose locus T is the closed point, with no hypothesis and in every degree”.
+**`Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_eq_closedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean, line 724](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean#L724). The attribute's comment: “the Mittag-Leffler consequence for a bootstrap situation whose ring is local and whose locus T is the closed point, with no hypothesis and in every degree”.
 
 > **Stacks Project, Tag 0EIE**, the Mittag-Leffler consequence for a bootstrap situation whose
 > ring is local and whose locus is the closed point, with no hypothesis. The terms
@@ -1087,7 +1087,7 @@ theorem isMittagLeffler_of_eq_closedPoint [IsLocalRing S.A]
 
 [Tag 0EG0](https://stacks.math.columbia.edu/tag/0EG0) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_ideal_isIso_localCohomologyToAdicQuotientLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L440). The attribute's comment: “for the maximal ideal of a Noetherian local ring: the tag's conclusion in full at 𝔞 = 𝔪 -- the same ideal J₀ ≤ 𝔪, the same locus condition V(J₀) ∩ V(I) = V(𝔪), the same ∀ J ≤ J₀ with V(J) ∩ V(I) = V(𝔪), the same degree s+1, IsIso -- with the source's condition (2) in full as H. The statement has no support-ideal parameter: 𝔪 is substituted throughout. The source's condition (1) is used only to obtain Mittag-Leffler-ness of \{H^s\_𝔞(M/IⁿM)} from 0EIE, which at the maximal ideal follows from the finiteness of the M/IⁿM and the Artinianness of local cohomology there, via Stacks.LocalCohomology.isMittagLefflerCategorical\_homologyAdicQuotientLocalCohomology, so (1) is not needed. The general support ideal is not covered; it needs 0EIE, which the library has only as consequences of its own essential-constancy assertion (RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean). The specialisation is not vacuous: V(𝔪) is the closed point, and J ranges over the ideals with V(J) ∩ V(I) = \{𝔪}, which include ideals strictly inside 𝔪”.
+**`Stacks.Algebraization.exists_ideal_isIso_localCohomologyToAdicQuotientLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean, line 440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologyLimit.lean#L440). The attribute's comment: “for the maximal ideal of a Noetherian local ring: the tag's conclusion in full at 𝔞 = 𝔪 -- the same ideal J₀ ≤ 𝔪, the same locus condition V(J₀) ∩ V(I) = V(𝔪), the same ∀ J ≤ J₀ with V(J) ∩ V(I) = V(𝔪), the same degree s+1, IsIso -- with the source's condition (2) in full as H. The statement has no support-ideal parameter: 𝔪 is substituted throughout. The source's condition (1) is used only to obtain Mittag-Leffler-ness of \{H^s\_𝔞(M/IⁿM)} from 0EIE, which at the maximal ideal follows from the finiteness of the M/IⁿM and the Artinianness of local cohomology there, via Stacks.LocalCohomology.isMittagLefflerCategorical\_homologyAdicQuotientLocalCohomology, so (1) is not needed. The general support ideal is not covered; it needs 0EIE, which the library has only as consequences of its own essential-constancy assertion (RingTheory/LocalCohomology/EssentiallyConstantConsequences.lean). The specialisation is not vacuous: V(𝔪) is the closed point, and J ranges over the ideals with V(J) ∩ V(I) = \{𝔪}, which include ideals strictly inside 𝔪”.
 
 > Let `A` be a Noetherian local ring with maximal ideal `𝔪`, let `I ⊆ 𝔪` be an ideal, let `M`
 > be a finite `A`-module and let `s` and `d` be integers. Assume that `A, I, 𝔪, M` satisfy the
@@ -1113,7 +1113,7 @@ public theorem exists_ideal_isIso_localCohomologyToAdicQuotientLimit [IsLocalRin
             (hJ.trans (zeroLocus_inter_eq_self_of_le hIa).symm) (s + 1))
 ```
 
-**`Stacks.Algebraization.BootstrapSituation.exists_ideal_isIso_localCohomologyToAdicQuotientLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologySupportLimit.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologySupportLimit.lean#L117).
+**`Stacks.Algebraization.BootstrapSituation.exists_ideal_isIso_localCohomologyToAdicQuotientLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologySupportLimit.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/BootstrapLocalCohomologySupportLimit.lean#L117).
 
 > **Stacks Project, Tag 0EG0.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A`, let `M` be a
 > finite `A`-module and let `s` and `d` be integers. Assume
@@ -1165,4 +1165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.10, Tag 0EFT](https://stacks.math.columbia.edu/tag/0EFT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

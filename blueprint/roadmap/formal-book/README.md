@@ -1,6 +1,10 @@
 # Formal Book
 
-The project's blueprint, read at commit [7df264a4](https://github.com/mo271/FormalBook/tree/7df264a4d5e57f9036acdf85f7a2702b3ad82a06) (2026-10-27): one article for each of its 62 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 130 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[mo271/FormalBook](https://github.com/mo271/FormalBook) says in its README:
+
+> A collaborative, work-in-progress attempt to formalize [Proofs from THE BOOK](https://link.springer.com/book/10.1007/978-3-662-57265-8) using [Lean4](https://leanprover.github.io/lean4/doc/whatIsLean.html).
+
+Its blueprint, read at commit [7df264a4](https://github.com/mo271/FormalBook/tree/7df264a4d5e57f9036acdf85f7a2702b3ad82a06) (2026-10-27): one article for each of its 62 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 130 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

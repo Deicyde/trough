@@ -4,7 +4,7 @@ navigation: transparent
 
 # Erdős Problem 655 to Erdős Problem 957
 
-- [Erdős Problem 655](../../../../erdos-problems/600-699/part-02/erdos-problem-655.md)
+- [Erdős Problem 655](../../../../erdos-problems/600-699/part-03/erdos-problem-655.md)
 - [Erdős Problem 657](../../../../erdos-problems/600-699/part-03/erdos-problem-657.md)
 - [Erdős Problem 659](../../../../erdos-problems/600-699/part-03/erdos-problem-659.md)
 - [Erdős Problem 660](../../../../erdos-problems/600-699/part-03/erdos-problem-660.md)

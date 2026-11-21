@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic API for fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Basic`, [Physlib/FluidDynamics/FluidFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Basic`, [Physlib/FluidDynamics/FluidFlow/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Basic.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Basic`, [Physlib/FluidDynamics/Fluid
 
 ## A. Fluid-flow structure
 
-**`FluidDynamics.FluidFlow`**, a structure, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Basic.lean#L54).
+**`FluidDynamics.FluidFlow`**, a structure, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Basic.lean#L54).
 
 > The density and velocity fields of a fluid on `d`-dimensional space.
 >
@@ -55,4 +55,4 @@ structure FluidFlow (d : ℕ) where
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Basic.lean)
+- [Physlib/FluidDynamics/FluidFlow/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Basic.lean)

@@ -8,25 +8,25 @@ proof: formalized
 
 # Physlib.Relativity.Causality.LightLike
 
-The module `Physlib.Relativity.Causality.LightLike`, [Physlib/Relativity/Causality/LightLike.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean): 5 declarations, 3 with a docstring.
+The module `Physlib.Relativity.Causality.LightLike`, [Physlib/Relativity/Causality/LightLike.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean): 5 declarations, 3 with a docstring.
 
 ## Properties of light like vectors
 
-**`Lorentz.Vector.lightLike_iff_norm_sq_zero`**, a lemma, [line 25](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean#L25).
+**`Lorentz.Vector.lightLike_iff_norm_sq_zero`**, a lemma, [line 25](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean#L25).
 
 ```lean
 lemma lightLike_iff_norm_sq_zero {d : ℕ} (p : Vector d) :
     causalCharacter p = CausalCharacter.lightLike ↔ ⟪p, p⟫ₘ = 0
 ```
 
-**`Lorentz.Vector.causalCharacter_zero`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean#L32).
+**`Lorentz.Vector.causalCharacter_zero`**, a lemma, [line 32](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean#L32).
 
 ```lean
 lemma causalCharacter_zero {d : ℕ} : causalCharacter (0 : Vector d) =
     CausalCharacter.lightLike
 ```
 
-**`Lorentz.Vector.causallyPrecedes_refl`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean#L38).
+**`Lorentz.Vector.causallyPrecedes_refl`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean#L38).
 
 > Causally preceding is reflexive
 
@@ -34,7 +34,7 @@ lemma causalCharacter_zero {d : ℕ} : causalCharacter (0 : Vector d) =
 lemma causallyPrecedes_refl {d : ℕ} (p : Vector d) : causallyPrecedes p p
 ```
 
-**`Lorentz.Vector.lightlike_eq_spatial_norm_of_eq_time`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean#L43).
+**`Lorentz.Vector.lightlike_eq_spatial_norm_of_eq_time`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean#L43).
 
 > For two lightlike vectors with equal time components, their spatial parts
 > have equal Euclidean norms
@@ -46,7 +46,7 @@ lemma lightlike_eq_spatial_norm_of_eq_time {d : ℕ} {v w : Vector d}
     ⟪spatialPart v, spatialPart v⟫_ℝ = ⟪spatialPart w, spatialPart w⟫_ℝ
 ```
 
-**`Lorentz.Vector.lightlike_spatial_parallel_implies_proportional`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean#L58).
+**`Lorentz.Vector.lightlike_spatial_parallel_implies_proportional`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean#L58).
 
 > If two lightlike vectors have parallel spatial components, their temporal components
 > must also be proportional, which implies the entire vectors are proportional
@@ -64,4 +64,4 @@ lemma lightlike_spatial_parallel_implies_proportional {d : ℕ} {v w : Vector d}
 
 ## Sources
 
-- [Physlib/Relativity/Causality/LightLike.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/LightLike.lean)
+- [Physlib/Relativity/Causality/LightLike.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Causality/LightLike.lean)

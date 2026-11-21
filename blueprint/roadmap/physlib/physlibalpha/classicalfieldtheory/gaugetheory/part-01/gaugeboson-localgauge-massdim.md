@@ -8,7 +8,7 @@ proof: formalized
 
 # Mass dimension on the gauge-boson jet algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.MassDim`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean): 8 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.MassDim`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean): 8 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The mass-weight scaling on the component space
 
-**`GaugeBoson.JetComponentSpace.massWeightScale`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L64).
+**`GaugeBoson.JetComponentSpace.massWeightScale`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L64).
 
 > The mass-weight scaling on the jet component space of the gauge bosons: the generator
 > `∂_s A_μ^φ` is scaled by `c ^ (2 + 2 |s|)`, through the derivative-degree scaling
@@ -45,7 +45,7 @@ noncomputable def JetComponentSpace.massWeightScale (c : ℝ) :
     (JetComponentSpace 𝔤) →ₗ[ℝ] (JetComponentSpace 𝔤)
 ```
 
-**`GaugeBoson.JetComponentSpace.massWeightScale_tmul`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L69).
+**`GaugeBoson.JetComponentSpace.massWeightScale_tmul`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L69).
 
 ```lean
 lemma JetComponentSpace.massWeightScale_tmul (c : ℝ) (a : SpaceTimeDerivAlgebraℝ)
@@ -54,7 +54,7 @@ lemma JetComponentSpace.massWeightScale_tmul (c : ℝ) (a : SpaceTimeDerivAlgebr
       = c ^ 2 • (SpaceTimeDerivAlgebraℝ.gradeScale (c ^ 2) a ⊗ₜ[ℝ] φ)
 ```
 
-**`GaugeBoson.JetComponentSpace.massWeightScale_jetDeriv`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L76).
+**`GaugeBoson.JetComponentSpace.massWeightScale_jetDeriv`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L76).
 
 > **The derivative shift carries mass weight two** on the component space.
 
@@ -67,7 +67,7 @@ lemma JetComponentSpace.massWeightScale_jetDeriv (c : ℝ) (μ : Fin 1 ⊕ Fin 3
 
 ## B. The mass-weight scaling on the jet algebra
 
-**`LocalGaugeFieldAlgebra.massWeightScale`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L104).
+**`LocalGaugeFieldAlgebra.massWeightScale`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L104).
 
 > **The mass-weight scaling on the gauge-boson jet algebra**: the algebra endomorphism
 > scaling the generator `∂_s A_μ^φ` by `c ^ (2 + 2 |s|)`, the functorial lift of the
@@ -78,7 +78,7 @@ noncomputable def massWeightScale (c : ℝ) :
     (LocalGaugeFieldAlgebra 𝔤) →ₐ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.massWeightScale_ι`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L110).
+**`LocalGaugeFieldAlgebra.massWeightScale_ι`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L110).
 
 ```lean
 lemma massWeightScale_ι (c : ℝ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
@@ -88,7 +88,7 @@ lemma massWeightScale_ι (c : ℝ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
 
 ## C. The mass weight of the gauge field and its derivatives
 
-**`LocalGaugeFieldAlgebra.massWeightScale_ofA`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L124).
+**`LocalGaugeFieldAlgebra.massWeightScale_ofA`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L124).
 
 > **The gauge field carries mass weight two** — mass dimension one.
 
@@ -97,7 +97,7 @@ lemma massWeightScale_ofA (c : ℝ) (μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ
     (massWeightScale 𝔤) c ((ofA 𝔤) μ φ) = c ^ 2 • (ofA 𝔤) μ φ
 ```
 
-**`LocalGaugeFieldAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L131).
+**`LocalGaugeFieldAlgebra.massWeightScale_jetDeriv`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L131).
 
 > **A total derivative adds mass weight two.**
 
@@ -107,7 +107,7 @@ lemma massWeightScale_jetDeriv (c : ℝ) (μ : Fin 1 ⊕ Fin 3) (x : (LocalGauge
       ((massWeightScale 𝔤) c x)
 ```
 
-**`LocalGaugeFieldAlgebra.massWeightScale_iteratedJetDeriv`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L148).
+**`LocalGaugeFieldAlgebra.massWeightScale_iteratedJetDeriv`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean#L148).
 
 > **The iterated derivative `∂_s` adds mass weight `2 |s|`.**
 
@@ -124,4 +124,4 @@ lemma massWeightScale_iteratedJetDeriv (c : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean)

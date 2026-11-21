@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.6 Properties of groupoids
 
-Section 79.6 of the Stacks Project, [Tag 044Y](https://stacks.math.columbia.edu/tag/044Y). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 79.6 of the Stacks Project, [Tag 044Y](https://stacks.math.columbia.edu/tag/044Y). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 044Z, a lemma
 
 [Tag 044Z](https://stacks.math.columbia.edu/tag/044Z) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isInvariantOpen_largestOpenSubspace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantSourceLocus.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantSourceLocus.lean#L108).
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isInvariantOpen_largestOpenSubspace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantSourceLocus.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantSourceLocus.lean#L108).
 
 > **Stacks 044Z.** Let `G` be a groupoid in algebraic spaces whose source and target
 > morphisms are both coverings for a topology `τ` other than the fpqc topology, and let `P` be a
@@ -35,7 +35,7 @@ theorem isInvariantOpen_largestOpenSubspace_source (G : GroupoidInAlgebraicSpace
 
 [Tag 06R4](https://stacks.math.columbia.edu/tag/06R4) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.stabilizerProjectionOverOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean#L692). The attribute's comment: “the stabilizer restricted over an open subspace of the object space”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.stabilizerProjectionOverOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean, line 692](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean#L692). The attribute's comment: “the stabilizer restricted over an open subspace of the object space”.
 
 > **Stacks 06R4.** The restriction of the stabilizer of a groupoid in algebraic spaces over
 > an open subspace of the object space.
@@ -47,7 +47,7 @@ noncomputable def stabilizerProjectionOverOpen
         (Space.openInclusion C S hS W) ⟶ Space.openObject C S hS W
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isInvariantOpen_of_isGreatest_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean#L722). The attribute's comment: “invariance of the maximal open stabilizer-property locus”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isInvariantOpen_of_isGreatest_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean, line 722](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/InvariantStabilizerLocus.lean#L722). The attribute's comment: “invariance of the maximal open stabilizer-property locus”.
 
 > **Stacks 06R4.** Let `G` be a groupoid in algebraic spaces whose source and target
 > morphisms are both coverings for a topology `τ` other than the fpqc topology, and let `P` be a
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.6, Tag 044Y](https://stacks.math.columbia.edu/tag/044Y)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The colours of complex Lorentz tensors are closed under adjoints
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.AdjointClosed`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean): 14 declarations, 14 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.AdjointClosed`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean): 14 declarations, 14 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.AdjointClosed`, [Phy
 
 ## A. The matrices of the colours
 
-**`Lorentz.toMatrix_rep_upL`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L56).
+**`Lorentz.toMatrix_rep_upL`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L56).
 
 > The matrix of `g` on the left-handed Weyl colour is `g`.
 
@@ -44,7 +44,7 @@ lemma toMatrix_rep_upL (g : SL(2,ℂ)) :
       (complexLorentzTensor.rep .upL g) = g.1
 ```
 
-**`Lorentz.toMatrix_rep_downL`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L62).
+**`Lorentz.toMatrix_rep_downL`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L62).
 
 > The matrix of `g` on the dual left-handed Weyl colour is `(g⁻¹)ᵀ`.
 
@@ -54,7 +54,7 @@ lemma toMatrix_rep_downL (g : SL(2,ℂ)) :
       (complexLorentzTensor.rep .downL g) = (g.1⁻¹)ᵀ
 ```
 
-**`Lorentz.toMatrix_rep_upR`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L68).
+**`Lorentz.toMatrix_rep_upR`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L68).
 
 > The matrix of `g` on the right-handed Weyl colour is the entrywise conjugate of `g`.
 
@@ -64,7 +64,7 @@ lemma toMatrix_rep_upR (g : SL(2,ℂ)) :
       (complexLorentzTensor.rep .upR g) = g.1.map star
 ```
 
-**`Lorentz.toMatrix_rep_downR`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L74).
+**`Lorentz.toMatrix_rep_downR`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L74).
 
 > The matrix of `g` on the dual right-handed Weyl colour is `(g⁻¹)ᴴ`.
 
@@ -74,7 +74,7 @@ lemma toMatrix_rep_downR (g : SL(2,ℂ)) :
       (complexLorentzTensor.rep .downR g) = (g.1⁻¹)ᴴ
 ```
 
-**`Lorentz.toMatrix_rep_up_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L80).
+**`Lorentz.toMatrix_rep_up_apply`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L80).
 
 > The matrix of `g` on the contravariant vector colour is the Lorentz matrix of `g`.
 
@@ -85,7 +85,7 @@ lemma toMatrix_rep_up_apply (g : SL(2,ℂ)) (μ ν : Fin 1 ⊕ Fin 3) :
       = (((SL2C.toLorentzGroup g).1 μ ν : ℝ) : ℂ)
 ```
 
-**`Lorentz.toMatrix_rep_down_apply`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L91).
+**`Lorentz.toMatrix_rep_down_apply`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L91).
 
 > The matrix of `g` on the covariant vector colour is the transpose of the inverse of the
 > Lorentz matrix of `g`.
@@ -97,7 +97,7 @@ lemma toMatrix_rep_down_apply (g : SL(2,ℂ)) (μ ν : Fin 1 ⊕ Fin 3) :
       = (((SL2C.toLorentzGroup g)⁻¹.1 ν μ : ℝ) : ℂ)
 ```
 
-**`Lorentz.inv_dagger`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L101).
+**`Lorentz.inv_dagger`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L101).
 
 > The inverse of `g†` is the dagger of the inverse of `g`.
 
@@ -107,7 +107,7 @@ lemma inv_dagger (g : SL(2,ℂ)) : (dagger g)⁻¹ = dagger g⁻¹
 
 ## B. Dagger-compatible colours
 
-**`Lorentz.IsDaggerCompatible`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L114).
+**`Lorentz.IsDaggerCompatible`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L114).
 
 > A colour is dagger compatible when, in its basis, the matrix of `g†` is the conjugate
 > transpose of the matrix of `g`.
@@ -116,7 +116,7 @@ lemma inv_dagger (g : SL(2,ℂ)) : (dagger g)⁻¹ = dagger g⁻¹
 def IsDaggerCompatible (k : complexLorentzTensor.Color) : Prop
 ```
 
-**`Lorentz.isDaggerCompatible_of_weyl`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L122).
+**`Lorentz.isDaggerCompatible_of_weyl`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L122).
 
 > The four Weyl colours are dagger compatible.
 
@@ -125,7 +125,7 @@ lemma isDaggerCompatible_of_weyl {k : complexLorentzTensor.Color}
     (hk : k = .upL ∨ k = .downL ∨ k = .upR ∨ k = .downR) : IsDaggerCompatible k
 ```
 
-**`Lorentz.isDaggerCompatible_up`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L140).
+**`Lorentz.isDaggerCompatible_up`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L140).
 
 > The contravariant vector colour is dagger compatible: the Lorentz matrix of `g†` is the
 > transpose of that of `g`, and it is real.
@@ -134,7 +134,7 @@ lemma isDaggerCompatible_of_weyl {k : complexLorentzTensor.Color}
 lemma isDaggerCompatible_up : IsDaggerCompatible .up
 ```
 
-**`Lorentz.isDaggerCompatible_down`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L148).
+**`Lorentz.isDaggerCompatible_down`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L148).
 
 > The covariant vector colour is dagger compatible: the inverse Lorentz matrix of `g†` is the
 > transpose of that of `g`, and it is real.
@@ -143,7 +143,7 @@ lemma isDaggerCompatible_up : IsDaggerCompatible .up
 lemma isDaggerCompatible_down : IsDaggerCompatible .down
 ```
 
-**`Lorentz.isDaggerCompatible`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L156).
+**`Lorentz.isDaggerCompatible`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L156).
 
 > Every colour of complex Lorentz tensors is dagger compatible.
 
@@ -151,7 +151,7 @@ lemma isDaggerCompatible_down : IsDaggerCompatible .down
 lemma isDaggerCompatible (k : complexLorentzTensor.Color) : IsDaggerCompatible k
 ```
 
-**`Lorentz.isAdjointClosed_of_isDaggerCompatible`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L166).
+**`Lorentz.isAdjointClosed_of_isDaggerCompatible`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L166).
 
 > Colours that are all dagger compatible are closed under adjoints, with `g' = g†`.
 
@@ -160,7 +160,7 @@ lemma isAdjointClosed_of_isDaggerCompatible {n : ℕ} {c : Fin n → complexLore
     (hc : ∀ i, IsDaggerCompatible (c i)) : complexLorentzTensor.IsAdjointClosed c
 ```
 
-**`complexLorentzTensor.isAdjointClosed`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L174).
+**`complexLorentzTensor.isAdjointClosed`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean#L174).
 
 > Every list of colours of complex Lorentz tensors is closed under adjoints, with
 > `g' = g†`.
@@ -178,4 +178,4 @@ lemma complexLorentzTensor.isAdjointClosed {n : ℕ} (c : Fin n → complexLoren
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean)

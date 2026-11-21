@@ -8,7 +8,7 @@ proof: formalized
 
 # The bilinear map and the product of rank-two tensors
 
-The module `Physlib.Relativity.Tensors.Contraction.RankTwo`, [Physlib/Relativity/Tensors/Contraction/RankTwo.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.RankTwo`, [Physlib/Relativity/Tensors/Contraction/RankTwo.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean): 9 declarations, 9 with a docstring.
 
 > The bilinear map of a rank-two tensor and the product of two rank-two tensors.
 
@@ -47,7 +47,7 @@ The module `Physlib.Relativity.Tensors.Contraction.RankTwo`, [Physlib/Relativity
 > itself; a species with conjugation composes it with conjugation of one argument to get a
 > sesquilinear form (`ConjTensorSpecies.toSesqForm`).
 
-**`TensorSpecies.Tensor.toLinearMap₂`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L77).
+**`TensorSpecies.Tensor.toLinearMap₂`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L77).
 
 > The bilinear map `t, s ↦ M_{μν} tᵘ sᵛ` of a rank-two tensor: `t` fills the first index of `M`,
 > `s` the second. For the Minkowski metric this is the inner product `η_{μν} tᵘ sᵛ`.
@@ -58,7 +58,7 @@ noncomputable def toLinearMap₂ (x y : C) {cM : Fin 2 → C} (M : Tensor S cM)
     Tensor S ![x] →ₗ[k] Tensor S ![y] →ₗ[k] k
 ```
 
-**`TensorSpecies.Tensor.toLinearMap₂_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L85).
+**`TensorSpecies.Tensor.toLinearMap₂_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L85).
 
 > In components, the bilinear map is `∑_{μ,ν} M_{μν} tᵘ sᵛ`.
 
@@ -72,7 +72,7 @@ lemma toLinearMap₂_apply [HasContrDualBases S] {x y : C} {cM : Fin 2 → C} (h
           (basis ![y]).repr s (ComponentIdx.single.symm w)
 ```
 
-**`TensorSpecies.Tensor.toMatrix₂_toLinearMap₂`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L109).
+**`TensorSpecies.Tensor.toMatrix₂_toLinearMap₂`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L109).
 
 > On basis vectors, the bilinear map gives `M(e_μ, e_ν) = M_{μν}`, so its matrix is the component
 > matrix `(M_{μν})`.
@@ -88,7 +88,7 @@ lemma toMatrix₂_toLinearMap₂ [HasContrDualBases S] {x y : C} {cM : Fin 2 →
 
 ## B. Contracting two rank-two tensors
 
-**`TensorSpecies.Tensor.contractInnerT`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L127).
+**`TensorSpecies.Tensor.contractInnerT`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L127).
 
 > The contraction `A_{μν} B^{νρ}` of the second index of `A` with the first index of `B`, whose
 > colours are dual by `h`. The result has the indices `μ` and `ρ`, in that order.
@@ -98,7 +98,7 @@ noncomputable def contractInnerT {cs ds : Fin 2 → C} (h : S.τ (cs 1) = ds 0) 
     Tensor S cs →ₗ[k] Tensor S ds →ₗ[k] Tensor S ![cs 0, ds 1]
 ```
 
-**`TensorSpecies.Tensor.contractInnerT_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L134).
+**`TensorSpecies.Tensor.contractInnerT_apply`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L134).
 
 > `contractInnerT` is `crossToEnd` of the last index of `A` with the first index of `B`, with the
 > colours of the result renamed to `![cs 0, ds 1]`.
@@ -110,7 +110,7 @@ lemma contractInnerT_apply {cs ds : Fin 2 → C} (h : S.τ (cs 1) = ds 0) (a : T
       (crossToEnd (Fin.last 1) (0 : Fin 2) h a b)
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_eq_permT_contractInnerT`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L142).
+**`TensorSpecies.Tensor.crossToEnd_eq_permT_contractInnerT`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L142).
 
 > `crossToEnd` of the last index of `A` with the first index of `B` is `contractInnerT` with its
 > colours renamed. This is `contractInnerT_apply` read from right to left.
@@ -122,7 +122,7 @@ lemma crossToEnd_eq_permT_contractInnerT {cs ds : Fin 2 → C} (h : S.τ (cs 1) 
       permT id (IsReindexing.on_id.mpr fun j => by fin_cases j <;> rfl) (contractInnerT h a b)
 ```
 
-**`TensorSpecies.Tensor.toMatrix_contractInnerT`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L152).
+**`TensorSpecies.Tensor.toMatrix_contractInnerT`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L152).
 
 > The matrix of `A_{μν} B^{νρ}` is the matrix product of `(A_{μν})` and `(B^{νρ})`, with the
 > labels of `ν` in `B` matched to those in `A` by `dualIdxEquiv`. This is `toMatrix_crossToEnd_pair`
@@ -135,7 +135,7 @@ lemma toMatrix_contractInnerT [HasContrDualBases S] {cs ds : Fin 2 → C} (h : S
       toMatrix a * (toMatrix b).submatrix (HasContrDualBases.dualIdxEquiv h) id
 ```
 
-**`TensorSpecies.Tensor.contractInnerT_right_injective`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L166).
+**`TensorSpecies.Tensor.contractInnerT_right_injective`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L166).
 
 > If the matrix `(M_{μν})`, made square by the label bijection `e`, is invertible, then
 > `t ↦ M_{μν} t^{νρ}` is injective.
@@ -147,7 +147,7 @@ lemma contractInnerT_right_injective [HasContrDualBases S] {cs ds : Fin 2 → C}
     Function.Injective (contractInnerT h M)
 ```
 
-**`TensorSpecies.Tensor.contractInnerT_equivariant`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L184).
+**`TensorSpecies.Tensor.contractInnerT_equivariant`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean#L184).
 
 > `contractInnerT` commutes with the action of `G`. For a Lorentz transformation `Λ`,
 > `(Λ A)_{μν} (Λ B)^{νρ} = Λ (A_{μν} B^{νρ})`.
@@ -165,4 +165,4 @@ lemma contractInnerT_equivariant {cs ds : Fin 2 → C} (h : S.τ (cs 1) = ds 0) 
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/RankTwo.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/RankTwo.lean)
+- [Physlib/Relativity/Tensors/Contraction/RankTwo.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/RankTwo.lean)

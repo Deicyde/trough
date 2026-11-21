@@ -8,7 +8,7 @@ proof: formalized
 
 # Completeness of the field strength for gauge invariance
 
-The module `PhyslibAlpha.Particles.QED.JetCompleteness`, [PhyslibAlpha/Particles/QED/JetCompleteness.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean): 8 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Particles.QED.JetCompleteness`, [PhyslibAlpha/Particles/QED/JetCompleteness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean): 8 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -48,20 +48,20 @@ The module `PhyslibAlpha.Particles.QED.JetCompleteness`, [PhyslibAlpha/Particles
 
 ## A. The symmetrized-index class projection
 
-**`QED.Photon.JetGenerators.indexClass_dA`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L76).
+**`QED.Photon.JetGenerators.indexClass_dA`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L76).
 
 ```lean
 lemma indexClass_dA (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) :
     (JetGenerators.dA s μ).indexClass = s + {μ}
 ```
 
-**`QED.Photon.JetGenerators.indexClass_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L79).
+**`QED.Photon.JetGenerators.indexClass_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L79).
 
 ```lean
 lemma indexClass_ne_zero (j : JetGenerators) : j.indexClass ≠ 0
 ```
 
-**`QED.Photon.JetGenerators.indexClass_classProj`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L88).
+**`QED.Photon.JetGenerators.indexClass_classProj`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L88).
 
 > Erasing the class representative and putting it back as the Lorentz index
 > preserves the class.
@@ -71,7 +71,7 @@ lemma indexClass_classProj (j : JetGenerators) :
     j.classProj.indexClass = j.indexClass
 ```
 
-**`QED.Photon.JetGenerators.classProj_idem`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L94).
+**`QED.Photon.JetGenerators.classProj_idem`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L94).
 
 > The class projection is idempotent.
 
@@ -79,7 +79,7 @@ lemma indexClass_classProj (j : JetGenerators) :
 lemma classProj_idem (j : JetGenerators) : j.classProj.classProj = j.classProj
 ```
 
-**`QED.Photon.JetGenerators.classProj_eq_classProj_iff`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L101).
+**`QED.Photon.JetGenerators.classProj_eq_classProj_iff`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L101).
 
 > Two jet coordinates have the same class projection exactly when they lie
 > in the same symmetrized-index class.
@@ -91,7 +91,7 @@ lemma classProj_eq_classProj_iff (j j' : JetGenerators) :
 
 ## B. Differences of same-class coordinates are field strengths
 
-**`QED.Photon.JetAlgebra.coord_sub_classProj`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L121).
+**`QED.Photon.JetAlgebra.coord_sub_classProj`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L121).
 
 > A jet coordinate minus the canonical coordinate of its class is a
 > derivative of the field strength.
@@ -103,7 +103,7 @@ lemma coord_sub_classProj (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3
       fieldStrength (s.erase (classRep (s + {μ}))) (classRep (s + {μ})) μ
 ```
 
-**`QED.Photon.JetAlgebra.fieldStrength_mem_range`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L145).
+**`QED.Photon.JetAlgebra.fieldStrength_mem_range`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L145).
 
 > Every field-strength jet lies in the range of the field-strength family.
 
@@ -116,7 +116,7 @@ lemma fieldStrength_mem_range (t : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 �
 
 ## C. The completeness theorem
 
-**`QED.Photon.JetAlgebra.gaugeInvariant_iff_mem_adjoin_fieldStrength`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L163).
+**`QED.Photon.JetAlgebra.gaugeInvariant_iff_mem_adjoin_fieldStrength`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean#L163).
 
 > **Completeness of the field strength for gauge invariance**: an element of
 > the photon jet algebra is invariant under every gauge transformation if and
@@ -143,4 +143,4 @@ lemma gaugeInvariant_iff_mem_adjoin_fieldStrength (x : JetAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/JetCompleteness.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/JetCompleteness.lean)
+- [PhyslibAlpha/Particles/QED/JetCompleteness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/JetCompleteness.lean)

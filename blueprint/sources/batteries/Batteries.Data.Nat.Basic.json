@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "Batteries",
  "repo": "leanprover-community/batteries",
- "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
  "module": "Batteries.Data.Nat.Basic",
  "file": "Batteries/Data/Nat/Basic.lean",
  "public": [
@@ -13,7 +13,8 @@
   {"name": "Nat.recDiag", "kind": "def", "line": 52},
   {"name": "Nat.recDiagOn", "kind": "def", "line": 72},
   {"name": "Nat.casesDiagOn", "kind": "def", "line": 83},
-  {"name": "Nat.ofBits", "kind": "def", "line": 95}
+  {"name": "Nat.ofBits", "kind": "def", "line": 95},
+  {"name": "Nat.mkDivMod", "kind": "def", "line": 103}
  ],
  "private": [],
  "missing": [],

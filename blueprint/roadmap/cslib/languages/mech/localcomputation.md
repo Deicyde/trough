@@ -7,7 +7,7 @@ proof: formalized
 
 # Local expressions, stores, and evaluation
 
-`Cslib.Languages.Mech.LocalComputation`, in [Cslib/Languages/Mech/LocalComputation.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean), by Fabrizio Montesi.
+`Cslib.Languages.Mech.LocalComputation`, in [Cslib/Languages/Mech/LocalComputation.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean), by Fabrizio Montesi.
 
 > Choreographic programming and associated languages (like process calculi for modelling distributed
 > protocol implementations) are typically defined abstracting from how processes locally compute and
@@ -22,7 +22,7 @@ proof: formalized
 >
 > * [F. Montesi, *Introduction to Choreographies*][Montesi2023]
 
-`Cslib.Mech.Expr` (inductive type, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L34))
+`Cslib.Mech.Expr` (inductive type, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L34))
 
 > Expressions for local computation.
 
@@ -36,7 +36,7 @@ inductive Expr (Var Val FunId : Type*) where
   | call (f : FunId) (args : List (Expr Var Val FunId))
 ```
 
-`Cslib.Mech.LocalStore` (abbreviation, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L51))
+`Cslib.Mech.LocalStore` (abbreviation, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L51))
 
 > A local store represents the memory state of a process, mapping variables to values.
 
@@ -44,7 +44,7 @@ inductive Expr (Var Val FunId : Type*) where
 abbrev LocalStore Var Val
 ```
 
-`Cslib.Mech.FunCallEval` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L55))
+`Cslib.Mech.FunCallEval` (abbreviation, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L55))
 
 > Type of (potentially nondeterministic) evaluation relations for local function calls at
 > processes.
@@ -53,7 +53,7 @@ abbrev LocalStore Var Val
 abbrev FunCallEval FunId Val
 ```
 
-`Cslib.Mech.FunCallEval.EvalExpr` (inductive type, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L58))
+`Cslib.Mech.FunCallEval.EvalExpr` (inductive type, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L58))
 
 > Evaluation relation for expressions.
 
@@ -72,7 +72,7 @@ inductive FunCallEval.EvalExpr (eval : FunCallEval FunId Val) :
     eval.EvalExpr σ (.call f args) v
 ```
 
-`Cslib.Mech.GlobalStore` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L73))
+`Cslib.Mech.GlobalStore` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L73))
 
 > A global store represents the memory state of an entire system, mapping each process to its
 > local store.
@@ -81,7 +81,7 @@ inductive FunCallEval.EvalExpr (eval : FunCallEval FunId Val) :
 abbrev GlobalStore Pid Var Val
 ```
 
-`Cslib.Mech.AtPid` (abbreviation, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L76))
+`Cslib.Mech.AtPid` (abbreviation, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L76))
 
 > Type of an element of type `α` located at a process.
 
@@ -89,7 +89,7 @@ abbrev GlobalStore Pid Var Val
 abbrev AtPid Pid α
 ```
 
-`Cslib.Mech.AtPid.pid` (abbreviation, [line 79](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L79))
+`Cslib.Mech.AtPid.pid` (abbreviation, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L79))
 
 > The process name of a located element.
 
@@ -97,7 +97,7 @@ abbrev AtPid Pid α
 abbrev AtPid.pid (a : AtPid Pid α)
 ```
 
-`Cslib.Mech.AtPid.elem` (abbreviation, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean#L82))
+`Cslib.Mech.AtPid.elem` (abbreviation, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean#L82))
 
 > The element of a located element.
 
@@ -111,5 +111,5 @@ abbrev AtPid.elem (a : AtPid Pid α)
 
 ## Sources
 
-- [Cslib/Languages/Mech/LocalComputation.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/LocalComputation.lean)
+- [Cslib/Languages/Mech/LocalComputation.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/LocalComputation.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.Mech.LocalComputation.json)

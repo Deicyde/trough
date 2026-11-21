@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.11 Noetherian valuative criterion
 
-Section 106.11 of the Stacks Project, [Tag 0CQL](https://stacks.math.columbia.edu/tag/0CQL). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.11 of the Stacks Project, [Tag 0CQL](https://stacks.math.columbia.edu/tag/0CQL). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0H2B, a lemma
 
 [Tag 0H2B](https://stacks.math.columbia.edu/tag/0H2B) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_discreteValuationRing_of_mem_closure_range_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageDiscreteValuationPoint.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageDiscreteValuationPoint.lean#L227).
+**`AlgebraicGeometry.Stack.exists_discreteValuationRing_of_mem_closure_range_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageDiscreteValuationPoint.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageDiscreteValuationPoint.lean#L227).
 
 > **Stacks 0H2B.** A point in the closure of the image of a finite-type 1-morphism of algebraic
 > stacks whose target is locally Noetherian is reached by the closed point of a valuative square
@@ -51,7 +51,7 @@ theorem exists_discreteValuationRing_of_mem_closure_range_pointsMap
 
 [Tag 0E80](https://stacks.math.columbia.edu/tag/0E80) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_discreteUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionSeparated.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionSeparated.lean#L324). The attribute's comment: “a quasi-separated 1-morphism of algebraic stacks, locally of finite type over a locally Noetherian target, is separated as soon as the uniqueness part of the valuative criterion holds at every discrete valuation ring”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_discreteUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionSeparated.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionSeparated.lean#L324). The attribute's comment: “a quasi-separated 1-morphism of algebraic stacks, locally of finite type over a locally Noetherian target, is separated as soon as the uniqueness part of the valuative criterion holds at every discrete valuation ring”.
 
 > **Stacks 0E80, the Noetherian valuative criterion for separatedness.** Let `f : 𝒳 ⟶ 𝒴` be a
 > 1-morphism of algebraic stacks over `S` with `𝒴` locally Noetherian and `f` locally of finite type
@@ -91,7 +91,7 @@ theorem isSeparated_of_discreteUniqueness (f : 𝒳 ⟶ 𝒴)
 
 [Tag 0CQM](https://stacks.math.columbia.edu/tag/0CQM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_discreteExistenceAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionProper.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionProper.lean#L405).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_of_discreteExistenceAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionProper.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionProper.lean#L405).
 
 > **Stacks 0CQM.** Let `f : 𝒳 ⟶ 𝒴` and `h : 𝒰 ⟶ 𝒳` be 1-morphisms of algebraic stacks over
 > `S`. Assume that `𝒴` is locally Noetherian, that `f` and `h` are of finite type, that `f` is
@@ -128,7 +128,7 @@ theorem isProper_of_discreteExistenceAlong
 
 [Tag 0E95](https://stacks.math.columbia.edu/tag/0E95) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_denseTestUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DenseTestValuativeSeparated.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DenseTestValuativeSeparated.lean#L288).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_denseTestUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DenseTestValuativeSeparated.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/DenseTestValuativeSeparated.lean#L288).
 
 > **Stacks 0E95.** Let
 > `f : 𝒳 ⟶ 𝒴` and `h : 𝒰 ⟶ 𝒳` be 1-morphisms of algebraic stacks over `S`, with `𝒴` locally
@@ -157,7 +157,7 @@ theorem isSeparated_of_denseTestUniqueness
     IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_discreteUniquenessAlong_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionSeparationUnconditional.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionSeparationUnconditional.lean#L540).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_discreteUniquenessAlong_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionSeparationUnconditional.lean, line 540](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RefinedValuativeCriterionSeparationUnconditional.lean#L540).
 
 > **Stacks 0E95.** Let `f : 𝒳 ⟶ 𝒴` and `h : 𝒰 ⟶ 𝒳` be 1-morphisms of algebraic stacks over
 > `S`. Assume that `𝒴` is locally Noetherian, that `f` is locally of finite type and
@@ -190,7 +190,7 @@ theorem isSeparated_of_discreteUniquenessAlong_of_dense
 
 [Tag 0H2C](https://stacks.math.columbia.edu/tag/0H2C) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ValuativeCriterion.DiscreteExistence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L107). The attribute's comment: “the hypothesis of the lemma: the existence part of the valuative criterion, restricted to discrete valuation rings”.
+**`AlgebraicGeometry.Stack.ValuativeCriterion.DiscreteExistence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L107). The attribute's comment: “the hypothesis of the lemma: the existence part of the valuative criterion, restricted to discrete valuation rings”.
 
 > **The hypothesis of Stacks 0H2C.** A 1-morphism of algebraic stacks over `S` satisfies the
 > *discrete* existence part of the valuative criterion when every valuative square for it whose
@@ -205,7 +205,7 @@ theorem isSeparated_of_discreteUniquenessAlong_of_dense
 abbrev DiscreteExistence (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.discreteExistence_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L122). The attribute's comment: “step 1 of the proof: the hypothesis is stable under base change, via Tag 0CLE”.
+**`AlgebraicGeometry.Stack.discreteExistence_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L122). The attribute's comment: “step 1 of the proof: the hypothesis is stable under base change, via Tag 0CLE”.
 
 > **The hypothesis of Stacks 0H2C is stable under base change.** A base change of a
 > 1-morphism of algebraic stacks satisfying the discrete existence part of the valuative criterion
@@ -223,7 +223,7 @@ theorem discreteExistence_baseChange
     ValuativeCriterion.DiscreteExistence B S hS P.fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L180). The attribute's comment: “steps 3 and 4 of the proof: closedness on points”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L180). The attribute's comment: “steps 3 and 4 of the proof: closedness on points”.
 
 > **Closedness on points from the hypothesis of Stacks 0H2C.** Let `f : 𝒳 ⟶ 𝒴` be a
 > finite-type 1-morphism of algebraic stacks over `S` with `𝒴` locally Noetherian which satisfies
@@ -245,7 +245,7 @@ theorem isClosed_of_discreteExistence (f : 𝒳 ⟶ 𝒴)
     IsClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L257). The attribute's comment: “clause (2) of Tag 0H2A for `f`”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 257](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L257). The attribute's comment: “clause (2) of Tag 0H2A for `f`”.
 
 > **Stacks 0H2A, item (2), from the hypothesis of Stacks 0H2C.** Let `f : 𝒳 ⟶ 𝒴` be a
 > finite-type 1-morphism of algebraic stacks over `S` with `𝒴` locally Noetherian which satisfies
@@ -269,7 +269,7 @@ theorem isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExis
           IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g f).fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L285). The attribute's comment: “the lemma”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_discreteExistence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean, line 285](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosed.lean#L285). The attribute's comment: “the lemma”.
 
 > **Stacks 0H2C.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` with `𝒴`
 > locally Noetherian and `f` of finite type. If every valuative square for `f` whose valuation ring
@@ -290,7 +290,7 @@ theorem universallyClosed_of_discreteExistence
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L50). The attribute's comment: “steps 3 and 4 of the proof: closedness on points”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L50). The attribute's comment: “steps 3 and 4 of the proof: closedness on points”.
 
 > **Stacks 0H2C, steps 3 and 4: closedness on points, with nothing assumed.** Let `f : 𝒳 ⟶ 𝒴`
 > be a finite-type 1-morphism of algebraic stacks over `S` with `𝒴` locally Noetherian which
@@ -302,7 +302,7 @@ theorem universallyClosed_of_discreteExistence
 alias isClosed_of_discreteExistence'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L60). The attribute's comment: “clause (2) of Tag 0H2A for `f`”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L60). The attribute's comment: “clause (2) of Tag 0H2A for `f`”.
 
 > **Stacks 0H2A, item (2), from the hypothesis of Stacks 0H2C, with nothing assumed.** For
 > every object `Z` of the site whose scheme is affine and every 1-morphism
@@ -316,7 +316,7 @@ alias isClosed_of_discreteExistence'
 alias isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_discreteExistence'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L70). The attribute's comment: “the lemma”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_discreteExistence'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NoetherianValuativeCriterionUniversallyClosedUnconditional.lean#L70). The attribute's comment: “the lemma”.
 
 > **Stacks 0H2C.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` with `𝒴`
 > locally Noetherian and `f` of finite type. If every valuative square for `f` whose valuation ring
@@ -336,4 +336,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.11, Tag 0CQL](https://stacks.math.columbia.edu/tag/0CQL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

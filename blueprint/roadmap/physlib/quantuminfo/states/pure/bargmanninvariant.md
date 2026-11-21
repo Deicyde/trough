@@ -8,7 +8,7 @@ proof: formalized
 
 # Bargmann Invariant and Geometric Phase
 
-The module `QuantumInfo.States.Pure.BargmannInvariant`, [QuantumInfo/States/Pure/BargmannInvariant.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean): 9 declarations, 9 with a docstring.
+The module `QuantumInfo.States.Pure.BargmannInvariant`, [QuantumInfo/States/Pure/BargmannInvariant.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean): 9 declarations, 9 with a docstring.
 
 > The Bargmann invariant for three quantum states is the cyclic product
 > of inner products `⟨ψ₁|ψ₂⟩ · ⟨ψ₂|ψ₃⟩ · ⟨ψ₃|ψ₁⟩`. Its argument is
@@ -37,7 +37,7 @@ The module `QuantumInfo.States.Pure.BargmannInvariant`, [QuantumInfo/States/Pure
 > * S. Pancharatnam, Generalized theory of interference, and its applications, Proc. Indian Acad.
 >   Sci. A 44, 247–262 (1956). [ref: pancharatnam1956]
 
-**`bargmannInvariantThree`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L50).
+**`bargmannInvariantThree`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L50).
 
 > The three-vertex Bargmann invariant: `⟨ψ₁|ψ₂⟩ · ⟨ψ₂|ψ₃⟩ · ⟨ψ₃|ψ₁⟩`.
 > This is a gauge-invariant complex number whose argument is the
@@ -47,7 +47,7 @@ The module `QuantumInfo.States.Pure.BargmannInvariant`, [QuantumInfo/States/Pure
 def bargmannInvariantThree (ψ₁ ψ₂ ψ₃ : Ket d) : ℂ
 ```
 
-**`bargmannPhaseThree`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L54).
+**`bargmannPhaseThree`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L54).
 
 > The geometric (Pancharatnam-Berry) phase of three states.
 
@@ -57,7 +57,7 @@ def bargmannPhaseThree (ψ₁ ψ₂ ψ₃ : Ket d) : ℝ
 
 ## Degenerate triangles
 
-**`bargmannInvariantThree_degenerate`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L62).
+**`bargmannInvariantThree_degenerate`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L62).
 
 > The Bargmann invariant of three identical states is 1.
 
@@ -66,7 +66,7 @@ lemma bargmannInvariantThree_degenerate (ψ : Ket d) :
     bargmannInvariantThree ψ ψ ψ = 1
 ```
 
-**`bargmannPhaseThree_degenerate`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L69).
+**`bargmannPhaseThree_degenerate`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L69).
 
 > The geometric phase of three identical states is 0.
 
@@ -77,7 +77,7 @@ lemma bargmannPhaseThree_degenerate (ψ : Ket d) :
 
 ## Conjugacy
 
-**`bargmannInvariantThree_reverse`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L77).
+**`bargmannInvariantThree_reverse`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L77).
 
 > Reversing the cyclic order conjugates the invariant.
 
@@ -86,7 +86,7 @@ lemma bargmannInvariantThree_reverse (ψ₁ ψ₂ ψ₃ : Ket d) :
     bargmannInvariantThree ψ₃ ψ₂ ψ₁ = starRingEnd ℂ (bargmannInvariantThree ψ₁ ψ₂ ψ₃)
 ```
 
-**`bargmannPhaseThree_reverse`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L87).
+**`bargmannPhaseThree_reverse`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L87).
 
 > Reversing the cyclic order negates the geometric phase (mod 2π).
 
@@ -98,7 +98,7 @@ lemma bargmannPhaseThree_reverse (ψ₁ ψ₂ ψ₃ : Ket d) :
 
 ## Cyclic symmetry
 
-**`bargmannInvariantThree_cyclic`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L97).
+**`bargmannInvariantThree_cyclic`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L97).
 
 > Cyclic permutation of the three states preserves the Bargmann invariant.
 
@@ -107,7 +107,7 @@ lemma bargmannInvariantThree_cyclic (ψ₁ ψ₂ ψ₃ : Ket d) :
     bargmannInvariantThree ψ₂ ψ₃ ψ₁ = bargmannInvariantThree ψ₁ ψ₂ ψ₃
 ```
 
-**`bargmannPhaseThree_cyclic`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L103).
+**`bargmannPhaseThree_cyclic`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L103).
 
 > Cyclic permutation preserves the geometric phase.
 
@@ -118,7 +118,7 @@ lemma bargmannPhaseThree_cyclic (ψ₁ ψ₂ ψ₃ : Ket d) :
 
 ## Norm bounds
 
-**`norm_bargmannInvariantThree_le_one`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean#L112).
+**`norm_bargmannInvariantThree_le_one`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean#L112).
 
 > The Bargmann invariant has norm at most 1: each inner product factor
 > is bounded by Cauchy-Schwarz on unit vectors.
@@ -134,4 +134,4 @@ lemma norm_bargmannInvariantThree_le_one (ψ₁ ψ₂ ψ₃ : Ket d) :
 
 ## Sources
 
-- [QuantumInfo/States/Pure/BargmannInvariant.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/BargmannInvariant.lean)
+- [QuantumInfo/States/Pure/BargmannInvariant.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/States/Pure/BargmannInvariant.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet gauge group
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean): 21 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean): 21 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -95,7 +95,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Basic`
 > symbols `SpaceTimeDerivAlgebraℂ` and the action `SpaceTimeDerivAlgebraℂ.jetRingAction`
 > of the jet ring on it.
 
-**`StandardModel.JetGaugeGroupI`**, an abbrev, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L128).
+**`StandardModel.JetGaugeGroupI`**, an abbrev, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L128).
 
 > The group of formal infinite-order jets, at a spacetime point, of local gauge
 > transformations of the Standard Model: the `R`-points of the gauge group for `R`
@@ -111,7 +111,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Basic`
 abbrev JetGaugeGroupI : Type
 ```
 
-**`StandardModel.JetGaugeGroupI.toVal`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L136).
+**`StandardModel.JetGaugeGroupI.toVal`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L136).
 
 > The underlying matrix value of an element of `JetGaugeGroupI`.
 
@@ -126,7 +126,7 @@ def toVal (U : JetGaugeGroupI) : Matrix (Fin 3) (Fin 3) SpaceTimeAlgebra × Matr
 > jet. Applied entrywise it sends jets of gauge transformations to their zeroth-order
 > parts, giving a group homomorphism `JetGaugeGroupI →* GaugeGroupI`.
 
-**`StandardModel.JetGaugeGroupI.mapMatrix_constantCoeff_star`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L151).
+**`StandardModel.JetGaugeGroupI.mapMatrix_constantCoeff_star`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L151).
 
 > Entrywise evaluation at the base point commutes with the conjugate transpose.
 
@@ -137,7 +137,7 @@ lemma mapMatrix_constantCoeff_star {n : Type} [Fintype n] [DecidableEq n]
       star ((constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A)
 ```
 
-**`StandardModel.JetGaugeGroupI.evalSU`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L160).
+**`StandardModel.JetGaugeGroupI.evalSU`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L160).
 
 > Evaluation of a jet of a special-unitary gauge transformation at the base point:
 > the entrywise constant coefficient.
@@ -147,7 +147,7 @@ noncomputable def evalSU (n : Type) [Fintype n] [DecidableEq n] :
     specialUnitaryGroup n SpaceTimeAlgebra →* specialUnitaryGroup n ℂ
 ```
 
-**`StandardModel.JetGaugeGroupI.evalU1`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L176).
+**`StandardModel.JetGaugeGroupI.evalU1`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L176).
 
 > Evaluation of a jet of a `U(1)` gauge transformation at the base point: the
 > constant coefficient.
@@ -156,7 +156,7 @@ noncomputable def evalSU (n : Type) [Fintype n] [DecidableEq n] :
 noncomputable def evalU1 : unitary SpaceTimeAlgebra →* unitary ℂ
 ```
 
-**`StandardModel.JetGaugeGroupI.eval`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L188).
+**`StandardModel.JetGaugeGroupI.eval`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L188).
 
 > Evaluation of a jet of a gauge transformation at the base point, projecting the
 > jet gauge group onto the gauge group `GaugeGroupI` by taking zeroth-order parts on
@@ -171,7 +171,7 @@ noncomputable def eval : JetGaugeGroupI →* GaugeGroupI
 > We define the derivative of an element of `JetGaugeGroupI` as a product of matrices,
 > and give some properties of it related to the Maurer–Cartan form.
 
-**`StandardModel.JetGaugeGroupI.deriv`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L203).
+**`StandardModel.JetGaugeGroupI.deriv`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L203).
 
 > The derivative of an element of `JetGaugeGroupI` returning
 > a product of matrices.
@@ -182,41 +182,41 @@ noncomputable def deriv (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
         (Fin 2) SpaceTimeAlgebra × SpaceTimeAlgebra
 ```
 
-**`StandardModel.JetGaugeGroupI.deriv_mul`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L209).
+**`StandardModel.JetGaugeGroupI.deriv_mul`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L209).
 
 ```lean
 lemma deriv_mul (μ : Fin 1 ⊕ Fin 3) (U V : JetGaugeGroupI) :
     deriv μ (U * V) = deriv μ U * V.toVal + U.toVal * deriv μ V
 ```
 
-**`StandardModel.JetGaugeGroupI.deriv_one`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L231).
+**`StandardModel.JetGaugeGroupI.deriv_one`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L231).
 
 ```lean
 lemma deriv_one (μ : Fin 1 ⊕ Fin 3) : deriv μ (1 : JetGaugeGroupI) = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.star_deriv`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L242).
+**`StandardModel.JetGaugeGroupI.star_deriv`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L242).
 
 ```lean
 lemma star_deriv (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
     star (deriv μ U) = deriv μ (star U)
 ```
 
-**`StandardModel.JetGaugeGroupI.deriv_mul_inv_toVal_SU3_traceless`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L256).
+**`StandardModel.JetGaugeGroupI.deriv_mul_inv_toVal_SU3_traceless`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L256).
 
 ```lean
 lemma deriv_mul_inv_toVal_SU3_traceless (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
     (Complex.I • (deriv μ U * (U⁻¹).toVal)).1.trace = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.deriv_mul_inv_toVal_SU2_traceless`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L281).
+**`StandardModel.JetGaugeGroupI.deriv_mul_inv_toVal_SU2_traceless`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L281).
 
 ```lean
 lemma deriv_mul_inv_toVal_SU2_traceless (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
     (Complex.I • (deriv μ U * (U⁻¹).toVal)).2.1.trace = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_SU3`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L304).
+**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_SU3`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L304).
 
 ```lean
 lemma star_deriv_mul_inv_toVal_SU3 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
@@ -224,7 +224,7 @@ lemma star_deriv_mul_inv_toVal_SU3 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
     (Complex.I • (deriv μ U * (U⁻¹).toVal)).1
 ```
 
-**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_SU2`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L328).
+**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_SU2`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L328).
 
 ```lean
 lemma star_deriv_mul_inv_toVal_SU2 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
@@ -232,7 +232,7 @@ lemma star_deriv_mul_inv_toVal_SU2 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
     (Complex.I • (deriv μ U * (U⁻¹).toVal)).2.1
 ```
 
-**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_U1`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L352).
+**`StandardModel.JetGaugeGroupI.star_deriv_mul_inv_toVal_U1`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L352).
 
 ```lean
 lemma star_deriv_mul_inv_toVal_U1 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
@@ -246,7 +246,7 @@ lemma star_deriv_mul_inv_toVal_U1 (μ : Fin 1 ⊕ Fin 3) (U : JetGaugeGroupI) :
 > group, as the jets of constant (global) gauge transformations. This is a section of
 > the evaluation `eval`.
 
-**`StandardModel.JetGaugeGroupI.mapMatrix_C_star`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L385).
+**`StandardModel.JetGaugeGroupI.mapMatrix_C_star`**, a lemma, [line 385](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L385).
 
 > Entrywise inclusion of constants commutes with the conjugate transpose.
 
@@ -256,7 +256,7 @@ lemma mapMatrix_C_star {n : Type} [Fintype n] [DecidableEq n] (A : Matrix n n �
         ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A)
 ```
 
-**`StandardModel.JetGaugeGroupI.ofConstantSU`**, a def, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L393).
+**`StandardModel.JetGaugeGroupI.ofConstantSU`**, a def, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L393).
 
 > The jet of a constant special-unitary gauge transformation: the entrywise
 > inclusion of constants.
@@ -266,7 +266,7 @@ noncomputable def ofConstantSU (n : Type) [Fintype n] [DecidableEq n] :
     specialUnitaryGroup n ℂ →* specialUnitaryGroup n SpaceTimeAlgebra
 ```
 
-**`StandardModel.JetGaugeGroupI.ofConstantU1`**, a def, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L408).
+**`StandardModel.JetGaugeGroupI.ofConstantU1`**, a def, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L408).
 
 > The jet of a constant `U(1)` gauge transformation: the inclusion of constants.
 
@@ -274,7 +274,7 @@ noncomputable def ofConstantSU (n : Type) [Fintype n] [DecidableEq n] :
 noncomputable def ofConstantU1 : unitary ℂ →* unitary SpaceTimeAlgebra
 ```
 
-**`StandardModel.JetGaugeGroupI.ofConstant`**, a def, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L419).
+**`StandardModel.JetGaugeGroupI.ofConstant`**, a def, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L419).
 
 > The embedding of the gauge group into the jet gauge group as the jets of
 > constant (global) gauge transformations.
@@ -283,7 +283,7 @@ noncomputable def ofConstantU1 : unitary ℂ →* unitary SpaceTimeAlgebra
 noncomputable def ofConstant : GaugeGroupI →* JetGaugeGroupI
 ```
 
-**`StandardModel.JetGaugeGroupI.eval_ofConstant`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L425).
+**`StandardModel.JetGaugeGroupI.eval_ofConstant`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L425).
 
 > Evaluating the jet of a constant gauge transformation at the base point recovers
 > the gauge transformation: `ofConstant` is a section of `eval`.
@@ -292,7 +292,7 @@ noncomputable def ofConstant : GaugeGroupI →* JetGaugeGroupI
 lemma eval_ofConstant (g : GaugeGroupI) : eval (ofConstant g) = g
 ```
 
-**`StandardModel.JetGaugeGroupI.deriv_ofConstant`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L436).
+**`StandardModel.JetGaugeGroupI.deriv_ofConstant`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean#L436).
 
 ```lean
 lemma deriv_ofConstant (μ : Fin 1 ⊕ Fin 3) (U₀ : GaugeGroupI) :
@@ -306,4 +306,4 @@ lemma deriv_ofConstant (μ : Fin 1 ⊕ Fin 3) (U₀ : GaugeGroupI) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean)

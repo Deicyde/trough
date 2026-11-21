@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.15 Improving coherent modules
 
-Section 51.15 of the Stacks Project, [Tag 0DX2](https://stacks.math.columbia.edu/tag/0DX2). 5 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 51.15 of the Stacks Project, [Tag 0DX2](https://stacks.math.columbia.edu/tag/0DX2). 5 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DX3, a lemma
 
 [Tag 0DX3](https://stacks.math.columbia.edu/tag/0DX3) in the Stacks Project.
 
-**`AlgebraicGeometry.depthOneQuotient_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L950). The attribute's comment: “depth\_one\_quotient”.
+**`AlgebraicGeometry.depthOneQuotient_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 950](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L950). The attribute's comment: “depth\_one\_quotient”.
 
 > The canonical quotient is coherent, surjective, unchanged away from `T`,
 > and of depth at least one along `T`.
@@ -26,7 +26,7 @@ public theorem depthOneQuotient_spec (X : Scheme.{u}) [IsNoetherian X]
     IsDepthOneQuotient T (toDepthOneQuotient X T hT F)
 ```
 
-**`AlgebraicGeometry.depthOneQuotient_unique_of_epi_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L1018). The attribute's comment: “depth\_one\_quotient”.
+**`AlgebraicGeometry.depthOneQuotient_unique_of_epi_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 1018](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L1018). The attribute's comment: “depth\_one\_quotient”.
 
 > **Stacks Project, Tag 0DX3**, uniqueness. Let `X` be a Noetherian scheme, `T ⊆ X` stable under
 > specialization and `F` a coherent `𝒪_X`-module. If `g : F ⟶ G` is a surjection onto a coherent
@@ -53,7 +53,7 @@ public theorem depthOneQuotient_unique_of_epi_of_depth (X : Scheme.{u}) [IsNoeth
       toDepthOneQuotient X T hT F ≫ e.hom = g
 ```
 
-**`AlgebraicGeometry.isDepthOneQuotient_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L186). The attribute's comment: “flat\_pullback”. References: EGA IV (5.9.4), “Noetherian, coherent F”.
+**`AlgebraicGeometry.isDepthOneQuotient_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L186). The attribute's comment: “flat\_pullback”. References: EGA IV (5.9.4), “Noetherian, coherent F”.
 
 > For a flat morphism `f : Y ⟶ X` of Noetherian schemes, the pullback of the canonical
 > depth-one quotient of a coherent module along a specialization-closed set `T` is a depth-one
@@ -70,7 +70,7 @@ public theorem isDepthOneQuotient_pullback
         (toDepthOneQuotient X T hT F))
 ```
 
-**`AlgebraicGeometry.depthOneQuotient_pullback_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L261). The attribute's comment: “flat\_pullback”.
+**`AlgebraicGeometry.depthOneQuotient_pullback_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L261). The attribute's comment: “flat\_pullback”.
 
 > **Stacks Project, Tag 0DX3**, flat pullback. For a flat morphism `f : Y ⟶ X` of Noetherian
 > schemes, `f^*F ⟶ f^*F'` is the depth-one quotient of `f^*F` along `f ⁻¹' T`: the canonical
@@ -96,7 +96,7 @@ public theorem depthOneQuotient_pullback_unique
 
 [Tag 0DX4](https://stacks.math.columbia.edu/tag/0DX4) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_iso_pullback_pushforward_restrict_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean#L172). The attribute's comment: “flat pullback compatibility: the pullback of the canonical map is the canonical map for the inverse image of U”.
+**`AlgebraicGeometry.existsUnique_iso_pullback_pushforward_restrict_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean#L172). The attribute's comment: “flat pullback compatibility: the pullback of the canonical map is the canonical map for the inverse image of U”.
 
 > For a flat morphism `f : Y ⟶ X` of Noetherian schemes, `f^*F → f^*j_*(F|_U)` is the
 > canonical extension map for the open subscheme `f^{-1}(U) ⊆ Y`: there is a unique isomorphism
@@ -122,7 +122,7 @@ public theorem existsUnique_iso_pullback_pushforward_restrict_flat
           ((Scheme.Modules.pullback f).obj F)
 ```
 
-**`AlgebraicGeometry.isCoherent_pushforward_restrict_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean#L197). The attribute's comment: “flat pullback compatibility: the coherence hypothesis of the source holds again for the inverse image of U, so the lemma applies verbatim downstairs”.
+**`AlgebraicGeometry.isCoherent_pushforward_restrict_pullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/FlatPullbackDepth.lean#L197). The attribute's comment: “flat pullback compatibility: the coherence hypothesis of the source holds again for the inverse image of U, so the lemma applies verbatim downstairs”.
 
 > For a flat morphism `f : Y ⟶ X` of Noetherian schemes, the coherence hypothesis of
 > [Stacks, Tag 0DX4] holds again downstairs: `j'_*((f^*F)|_{f^{-1}(U)})` is a coherent
@@ -141,7 +141,7 @@ public theorem isCoherent_pushforward_restrict_pullback_of_flat
         ((Scheme.Modules.pullback f).obj F))).IsCoherent
 ```
 
-**`AlgebraicGeometry.isIso_pullback_map_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L130). The attribute's comment: “clause (1) for the canonical map: it restricts to an isomorphism over U”.
+**`AlgebraicGeometry.isIso_pullback_map_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L130). The attribute's comment: “clause (1) for the canonical map: it restricts to an isomorphism over U”.
 
 > The canonical map `F → j_*(F|_U)` becomes an isomorphism after restriction to the open
 > subscheme `U`.
@@ -155,7 +155,7 @@ public theorem isIso_pullback_map_unit {X : Scheme.{u}} (F : X.Modules) (U : X.O
       ((Scheme.Modules.pullbackPushforwardAdjunction U.ι).unit.app F))
 ```
 
-**`AlgebraicGeometry.two_le_depth_stalk_pushforward_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L145). The attribute's comment: “clause (2) for the canonical map: the extension has depth at least two outside U”.
+**`AlgebraicGeometry.two_le_depth_stalk_pushforward_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L145). The attribute's comment: “clause (2) for the canonical map: the extension has depth at least two outside U”.
 
 > The stalks of the extension `F' = j_*(F|_U)` of a module along an open subscheme have depth
 > at least two at every point outside `U`.
@@ -182,7 +182,7 @@ public theorem two_le_depth_stalk_pushforward_restrict
         (TopCat.Presheaf.stalk (C := Ab.{u}) F'.val.presheaf x)
 ```
 
-**`AlgebraicGeometry.unique_iso_pushforward_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L169). The attribute's comment: “uniqueness under the original module”.
+**`AlgebraicGeometry.unique_iso_pushforward_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L169). The attribute's comment: “uniqueness under the original module”.
 
 > A coherent module carrying a map from `F` which becomes an isomorphism over the open
 > subscheme `U` and whose stalks have depth at least two outside `U` is uniquely isomorphic,
@@ -208,7 +208,7 @@ public theorem unique_iso_pushforward_restrict
       φ ≫ e.hom = (Scheme.Modules.pullbackPushforwardAdjunction U.ι).unit.app F
 ```
 
-**`AlgebraicGeometry.flat_pullback_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L195). The attribute's comment: “flat pullback coherence”.
+**`AlgebraicGeometry.flat_pullback_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/OpenExtension.lean#L195). The attribute's comment: “flat pullback coherence”.
 
 > The pullback of the extension `j_*(F|_U)` along a flat morphism is coherent.
 >
@@ -231,7 +231,7 @@ public theorem flat_pullback_coherent
 
 [Tag 0DX5](https://stacks.math.columbia.edu/tag/0DX5) in the Stacks Project.
 
-**`AlgebraicGeometry.correctedImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L466). The attribute's comment: “corrected form (conditions corrected so that existence holds; the source's existence clause is false, Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): the pullback of the corrected map along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and the corrected surjectivity-and-depth-one condition along f^\{-1}(Z), and the depth-two condition on the inverse image of the points of Z generalizing no point as in (2)”.
+**`AlgebraicGeometry.correctedImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L466). The attribute's comment: “corrected form (conditions corrected so that existence holds; the source's existence clause is false, Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): the pullback of the corrected map along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and the corrected surjectivity-and-depth-one condition along f^\{-1}(Z), and the depth-two condition on the inverse image of the points of Z generalizing no point as in (2)”.
 
 > **The Cohen–Macaulay pullback under the corrected conditions.**  Let `φ : F ⟶ G` satisfy the
 > corrected conditions along `Z` and let `f : Y ⟶ X` be a Cohen–Macaulay morphism of Noetherian
@@ -297,7 +297,7 @@ public theorem correctedImprovement_pullback {X Y : Scheme.{u}} [IsNoetherian X]
             ((Scheme.Modules.pullback f).obj G).val.presheaf y))
 ```
 
-**`AlgebraicGeometry.existsUnique_isCorrectedImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L561). The attribute's comment: “corrected form (conditions corrected so that existence holds): the source's existence clause is false, refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf; with condition (3) at the points of Z which generalize a point as in (2) without being one replaced by surjectivity on stalks and depth at least one, a map F -> F'' exists and is unique up to a unique isomorphism under F, at exactly the source's hypotheses”.
+**`AlgebraicGeometry.existsUnique_isCorrectedImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 561](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L561). The attribute's comment: “corrected form (conditions corrected so that existence holds): the source's existence clause is false, refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf; with condition (3) at the points of Z which generalize a point as in (2) without being one replaced by surjectivity on stalks and depth at least one, a map F -> F'' exists and is unique up to a unique isomorphism under F, at exactly the source's hypotheses”.
 
 > **Stacks Project, Tag 0DX5, corrected form: the conditions corrected so that existence
 > holds.**  The existence clause of the source is false
@@ -327,7 +327,7 @@ public theorem existsUnique_isCorrectedImprovement (X : Scheme.{u}) [IsNoetheria
         ∃! e : G ≅ H, φ ≫ e.hom = ψ
 ```
 
-**`AlgebraicGeometry.exists_isImprovement_iff_two_le_depth_depthOneQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L601). The attribute's comment: “corrected form of the existence clause, which is false as stated (refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): at exactly the source's hypotheses, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness and the Cohen-Macaulay pullback hold as stated”.
+**`AlgebraicGeometry.exists_isImprovement_iff_two_le_depth_depthOneQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 601](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L601). The attribute's comment: “corrected form of the existence clause, which is false as stated (refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): at exactly the source's hypotheses, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness and the Cohen-Macaulay pullback hold as stated”.
 
 > **Stacks Project, Tag 0DX5, corrected form of the existence clause.**  The existence clause
 > of the source is false: `Stacks.ImprovementCounterexample.not_exists_isImprovement_cexSheaf` of
@@ -374,7 +374,7 @@ public theorem exists_isImprovement_iff_two_le_depth_depthOneQuotient (X : Schem
             (depthOneQuotient X Z hZ.stableUnderSpecialization F).val.presheaf x)
 ```
 
-**`AlgebraicGeometry.exists_isImprovement_iff_and_unique_and_isImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L659). The attribute's comment: “corrected form of the whole lemma, at exactly the source's hypotheses: the existence clause is false as stated (refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf) and is corrected to a criterion, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness up to a unique isomorphism under F, and the assertion that the pullback along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and (3) with respect to the inverse image of Z, as printed”.
+**`AlgebraicGeometry.exists_isImprovement_iff_and_unique_and_isImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 659](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L659). The attribute's comment: “corrected form of the whole lemma, at exactly the source's hypotheses: the existence clause is false as stated (refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf) and is corrected to a criterion, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness up to a unique isomorphism under F, and the assertion that the pullback along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and (3) with respect to the inverse image of Z, as printed”.
 
 > **Stacks Project, Tag 0DX5, the whole lemma in corrected form.**  Let `X` be a Noetherian,
 > universally catenary scheme whose local rings have `(S₁)` formal fibres, `Z ⊆ X` closed and `F` a
@@ -421,7 +421,7 @@ public theorem exists_isImprovement_iff_and_unique_and_isImprovement_pullback (X
         IsImprovement (f.base ⁻¹' Z) ((Scheme.Modules.pullback f).map φ))
 ```
 
-**`AlgebraicGeometry.isCoherent_pullback_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean#L167). The attribute's comment: “coherence of the target of the pullback, in the assertion about the pullback along a Cohen-Macaulay morphism”.
+**`AlgebraicGeometry.isCoherent_pullback_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean#L167). The attribute's comment: “coherence of the target of the pullback, in the assertion about the pullback along a Cohen-Macaulay morphism”.
 
 > The target of the pullback of an improvement along a morphism with locally Noetherian
 > source is again coherent.
@@ -432,7 +432,7 @@ public theorem isCoherent_pullback_of_isImprovement {X Y : Scheme.{u}} [IsLocall
     ((Scheme.Modules.pullback f).obj G).IsCoherent
 ```
 
-**`AlgebraicGeometry.isIso_stalk_pullback_map_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean#L177). The attribute's comment: “the isomorphism away from the inverse image of the closed subscheme, in the assertion about the pullback along a Cohen-Macaulay morphism”.
+**`AlgebraicGeometry.isIso_stalk_pullback_map_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/Improvement.lean#L177). The attribute's comment: “the isomorphism away from the inverse image of the closed subscheme, in the assertion about the pullback along a Cohen-Macaulay morphism”.
 
 > The pullback of an improvement along any morphism of schemes is an isomorphism on stalks at
 > every point outside the inverse image of the closed subset.
@@ -445,7 +445,7 @@ public theorem isIso_stalk_pullback_map_of_isImprovement {X Y : Scheme.{u}} (f :
       ((Scheme.Modules.pullback f).map φ).mapPresheaf)
 ```
 
-**`AlgebraicGeometry.two_le_depth_stalk_pullback_of_notReachedFromOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L269). The attribute's comment: “condition (3) for the pullback along a Cohen-Macaulay morphism: depth at least two at a point of the inverse image of Z which is not itself reached from outside that inverse image”.
+**`AlgebraicGeometry.two_le_depth_stalk_pullback_of_notReachedFromOutside`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L269). The attribute's comment: “condition (3) for the pullback along a Cohen-Macaulay morphism: depth at least two at a point of the inverse image of Z which is not itself reached from outside that inverse image”.
 
 > **The depth bound at a point not reached upstairs.** Let `F → F''` be an improvement of a
 > coherent `𝒪_X`-module `F` along `Z` and let `f : Y ⟶ X` be a Cohen–Macaulay morphism of Noetherian
@@ -476,7 +476,7 @@ public theorem two_le_depth_stalk_pullback_of_notReachedFromOutside {X Y : Schem
         ((Scheme.Modules.pullback f).obj G).val.presheaf y)
 ```
 
-**`AlgebraicGeometry.isImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L320). The attribute's comment: “the final assertion: the pullback of the map along a Cohen-Macaulay morphism with Noetherian source satisfies conditions (1), (2) and (3) with respect to the inverse image of the closed subscheme”.
+**`AlgebraicGeometry.isImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L320). The attribute's comment: “the final assertion: the pullback of the map along a Cohen-Macaulay morphism with Noetherian source satisfies conditions (1), (2) and (3) with respect to the inverse image of the closed subscheme”.
 
 > **Stacks Project, Tag 0DX5, the assertion about the pullback.** The pullback of an improvement
 > of a coherent module along a Cohen–Macaulay morphism of Noetherian schemes is an improvement along
@@ -499,7 +499,7 @@ public theorem isImprovement_pullback {X Y : Scheme.{u}} [IsNoetherian X] [IsNoe
     IsImprovement (f.base ⁻¹' Z) ((Scheme.Modules.pullback f).map φ)
 ```
 
-**`AlgebraicGeometry.epi_stalk_pullback_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L338). The attribute's comment: “the surjectivity in condition (2) for the pullback along a Cohen-Macaulay morphism”.
+**`AlgebraicGeometry.epi_stalk_pullback_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L338). The attribute's comment: “the surjectivity in condition (2) for the pullback along a Cohen-Macaulay morphism”.
 
 > The pullback of an improvement along a Cohen–Macaulay morphism of Noetherian schemes is
 > surjective on the stalk at every point of the inverse image of the closed subset which is reached
@@ -516,7 +516,7 @@ public theorem epi_stalk_pullback_of_isImprovement {X Y : Scheme.{u}} [IsNoether
       ((Scheme.Modules.pullback f).map φ).mapPresheaf)
 ```
 
-**`AlgebraicGeometry.depth_stalk_pullback_eq_one_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L353). The attribute's comment: “the depth equality in condition (2) for the pullback along a Cohen-Macaulay morphism: the depth is exactly one, not merely at least one”.
+**`AlgebraicGeometry.depth_stalk_pullback_eq_one_of_isImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean, line 353](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementPullback.lean#L353). The attribute's comment: “the depth equality in condition (2) for the pullback along a Cohen-Macaulay morphism: the depth is exactly one, not merely at least one”.
 
 > The target of the pullback of an improvement along a Cohen–Macaulay morphism of Noetherian
 > schemes has stalk of depth exactly one at every point of the inverse image of the closed subset
@@ -539,7 +539,7 @@ public theorem depth_stalk_pullback_eq_one_of_isImprovement {X Y : Scheme.{u}} [
         ((Scheme.Modules.pullback f).obj G).val.presheaf y) = (1 : ℕ∞)
 ```
 
-**`AlgebraicGeometry.improvement_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementUniqueness.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementUniqueness.lean#L171). The attribute's comment: “uniqueness of the map F → F'': two maps satisfying conditions (1), (2) and (3) are isomorphic by a unique isomorphism under F”.
+**`AlgebraicGeometry.improvement_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementUniqueness.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ImprovementUniqueness.lean#L171). The attribute's comment: “uniqueness of the map F → F'': two maps satisfying conditions (1), (2) and (3) are isomorphic by a unique isomorphism under F”.
 
 > **Stacks Project, Tag 0DX5, uniqueness.** Two improvements of a coherent module along the same
 > closed subset are isomorphic by a unique isomorphism compatible with the two maps.
@@ -560,7 +560,7 @@ public theorem improvement_unique (X : Scheme.{u}) [IsNoetherian X] (Z : Set X) 
 
 [Tag 0EI3](https://stacks.math.columbia.edu/tag/0EI3) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_isDepthTwoExtension_and_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionUniquePullback.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionUniquePullback.lean#L44). The attribute's comment: “existence, uniqueness and the Cohen-Macaulay pullback clause, at the source's hypotheses”.
+**`AlgebraicGeometry.existsUnique_isDepthTwoExtension_and_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionUniquePullback.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionUniquePullback.lean#L44). The attribute's comment: “existence, uniqueness and the Cohen-Macaulay pullback clause, at the source's hypotheses”.
 
 > **Stacks Project, Tag 0EI3.**  Let `X` be a Noetherian scheme which locally has a dualizing
 > complex, let `T ⊆ X` be stable under specialization and let `F` be a coherent `𝒪_X`-module with
@@ -593,7 +593,7 @@ public theorem existsUnique_isDepthTwoExtension_and_pullback
 
 [Tag 0EI4](https://stacks.math.columbia.edu/tag/0EI4) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_isNestedImprovement_and_pullback_of_hasDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/NestedImprovementCohenMacaulay.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/NestedImprovementCohenMacaulay.lean#L55). The attribute's comment: “existence and uniqueness, up to a unique isomorphism under F, of the map F to F'' with conditions (1), (2), (3), together with the assertion that its pullback along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2), (3) with respect to the inverse images of T' and T; at the hypotheses of the source”.
+**`AlgebraicGeometry.existsUnique_isNestedImprovement_and_pullback_of_hasDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/NestedImprovementCohenMacaulay.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/NestedImprovementCohenMacaulay.lean#L55). The attribute's comment: “existence and uniqueness, up to a unique isomorphism under F, of the map F to F'' with conditions (1), (2), (3), together with the assertion that its pullback along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2), (3) with respect to the inverse images of T' and T; at the hypotheses of the source”.
 
 > **Stacks Project, Tag 0EI4.** Let `X` be a Noetherian scheme which locally has a dualizing
 > complex, let `T' ⊆ T ⊆ X` be stable under specialization and such that every immediate
@@ -636,4 +636,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.15, Tag 0DX2](https://stacks.math.columbia.edu/tag/0DX2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

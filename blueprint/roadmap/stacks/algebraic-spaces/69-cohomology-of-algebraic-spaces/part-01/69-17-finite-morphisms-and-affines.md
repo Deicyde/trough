@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.17 Finite morphisms and affines
 
-Section 69.17 of the Stacks Project, [Tag 07VN](https://stacks.math.columbia.edu/tag/07VN). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.17 of the Stacks Project, [Tag 07VN](https://stacks.math.columbia.edu/tag/07VN). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GF7, a lemma
 
 [Tag 0GF7](https://stacks.math.columbia.edu/tag/0GF7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_and_supportOfSheaf_eq_univ_modulePushforward_structureSheaf_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean#L261). The attribute's comment: “the whole statement: for f finite and surjective with X locally Noetherian and i : Z -> X a closed immersion, the direct image f'\_* O\_\{Z'} along the induced morphism of the inverse image is a coherent O\_Z-module, and its support is all of Z”.
+**`AlgebraicGeometry.Space.isCoherent_and_supportOfSheaf_eq_univ_modulePushforward_structureSheaf_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean#L261). The attribute's comment: “the whole statement: for f finite and surjective with X locally Noetherian and i : Z -> X a closed immersion, the direct image f'\_* O\_\{Z'} along the induced morphism of the inverse image is a coherent O\_Z-module, and its support is all of Z”.
 
 > **Stacks 0GF7.**  Let `S` be a scheme and let `f : Y ⟶ X` be a morphism of algebraic spaces
 > over `S` which is finite and surjective, with `X` locally Noetherian.  Let `i : Z ⟶ X` be a
@@ -39,7 +39,7 @@ theorem isCoherent_and_supportOfSheaf_eq_univ_modulePushforward_structureSheaf_p
           (SheafOfModules.unit (structureRingSheaf B S hS Z')))) = Set.univ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_modulePushforward_structureSheaf_preimage_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheaf.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheaf.lean#L283). The attribute's comment: “the support of the direct image is all of Z”.
+**`AlgebraicGeometry.Space.supportOfSheaf_modulePushforward_structureSheaf_preimage_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheaf.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheaf.lean#L283). The attribute's comment: “the support of the direct image is all of Z”.
 
 > **The support assertion of Stacks 0GF7.**  Let `f : Y ⟶ X` be a surjective morphism of
 > algebraic spaces over `S`, let `i : Z ⟶ X` be any morphism and let `f' : Z' ⟶ Z` be the base
@@ -59,7 +59,7 @@ theorem supportOfSheaf_modulePushforward_structureSheaf_preimage_eq_univ (f : Y 
           (SheafOfModules.unit (structureRingSheaf B S hS Z')))) = Set.univ
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_modulePushforward_structureSheaf_preimage_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheafCoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheafCoherent.lean#L53). The attribute's comment: “coherence of the direct image”.
+**`AlgebraicGeometry.Space.isCoherent_modulePushforward_structureSheaf_preimage_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheafCoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FinitePreimageStructureSheafCoherent.lean#L53). The attribute's comment: “coherence of the direct image”.
 
 > **The coherence assertion of Stacks 0GF7.**  Let `f : Y ⟶ X` be a finite morphism of
 > algebraic spaces over `S` with `X` locally Noetherian, let `i : Z ⟶ X` be a closed immersion,
@@ -86,7 +86,7 @@ theorem isCoherent_modulePushforward_structureSheaf_preimage_of_isLocallyNoether
 
 [Tag 0GF8](https://stacks.math.columbia.edu/tag/0GF8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.idealSmul_pushforward_eq_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealPushforwardAffineComparison.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IdealPushforwardAffineComparison.lean#L255).
+**`AlgebraicGeometry.Space.idealSmul_pushforward_eq_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IdealPushforwardAffineComparison.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/IdealPushforwardAffineComparison.lean#L255).
 
 > **Stacks 0GF8.**  Let `S` be a scheme, let `f : Y ⟶ X` be a morphism of algebraic spaces
 > over `S`, let `F` be a quasi-coherent sheaf on `Y` and let `I` be a quasi-coherent sheaf of
@@ -118,7 +118,7 @@ theorem idealSmul_pushforward_eq_of_isQuasicoherentOnSite
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isAffineSpace_of_isFinite_of_isSurjective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteSurjectiveAffineSource.lean#L721), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L55) (StacksFrontier).
+- [`AlgebraicGeometry.Space.isAffineSpace_of_isFinite_of_isSurjective`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteSurjectiveAffineSource.lean#L721), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffinenessCriteria.lean#L55) (StacksFrontier).
 
 ## Depends on
 
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.17, Tag 07VN](https://stacks.math.columbia.edu/tag/07VN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Reducing invariants modulo a stable submodule
 
-The module `PhyslibAlpha.Mathematics.InvariantReduction`, [PhyslibAlpha/Mathematics/InvariantReduction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean): 41 declarations, 41 with a docstring.
+The module `PhyslibAlpha.Mathematics.InvariantReduction`, [PhyslibAlpha/Mathematics/InvariantReduction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean): 41 declarations, 41 with a docstring.
 
 ## i. Overview
 
@@ -67,7 +67,7 @@ The module `PhyslibAlpha.Mathematics.InvariantReduction`, [PhyslibAlpha/Mathemat
 
 ## A. Stable and fixed submodules
 
-**`IsStableUnder`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L90).
+**`IsStableUnder`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L90).
 
 > A submodule carried into itself by every map of the family `σ`.
 
@@ -75,7 +75,7 @@ The module `PhyslibAlpha.Mathematics.InvariantReduction`, [PhyslibAlpha/Mathemat
 def IsStableUnder (σ : G → B →ₗ[R] B) (V : Submodule R B) : Prop
 ```
 
-**`IsFixedBy`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L94).
+**`IsFixedBy`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L94).
 
 > A submodule fixed pointwise by every map of the family `σ`.
 
@@ -83,7 +83,7 @@ def IsStableUnder (σ : G → B →ₗ[R] B) (V : Submodule R B) : Prop
 def IsFixedBy (σ : G → B →ₗ[R] B) (V : Submodule R B) : Prop
 ```
 
-**`isStableUnder_iff_map`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L100).
+**`isStableUnder_iff_map`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L100).
 
 > Stability as an inclusion of images.
 
@@ -92,7 +92,7 @@ lemma isStableUnder_iff_map {V : Submodule R B} :
     IsStableUnder σ V ↔ ∀ g, Submodule.map (σ g) V ≤ V
 ```
 
-**`IsFixedBy.isStableUnder`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L108).
+**`IsFixedBy.isStableUnder`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L108).
 
 > A pointwise-fixed submodule is stable.
 
@@ -100,7 +100,7 @@ lemma isStableUnder_iff_map {V : Submodule R B} :
 lemma IsFixedBy.isStableUnder {V : Submodule R B} (hV : IsFixedBy σ V) : IsStableUnder σ V
 ```
 
-**`IsFixedBy.sup`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L112).
+**`IsFixedBy.sup`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L112).
 
 > A join of two pointwise-fixed submodules is pointwise fixed.
 
@@ -109,7 +109,7 @@ lemma IsFixedBy.sup {V V' : Submodule R B} (hV : IsFixedBy σ V) (hV' : IsFixedB
     IsFixedBy σ (V ⊔ V')
 ```
 
-**`isStableUnder_bot`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L119).
+**`isStableUnder_bot`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L119).
 
 > The zero submodule is stable.
 
@@ -117,7 +117,7 @@ lemma IsFixedBy.sup {V V' : Submodule R B} (hV : IsFixedBy σ V) (hV' : IsFixedB
 lemma isStableUnder_bot : IsStableUnder σ (⊥ : Submodule R B)
 ```
 
-**`IsStableUnder.sup`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L125).
+**`IsStableUnder.sup`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L125).
 
 > A join of two stable submodules is stable.
 
@@ -126,7 +126,7 @@ lemma IsStableUnder.sup {V V' : Submodule R B} (hV : IsStableUnder σ V)
     (hV' : IsStableUnder σ V') : IsStableUnder σ (V ⊔ V')
 ```
 
-**`isStableUnder_iSup`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L133).
+**`isStableUnder_iSup`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L133).
 
 > An indexed join of stable submodules is stable. The index is a `Sort`, so this covers
 > the bounded join `⨆ i ∈ s, V i`.
@@ -136,7 +136,7 @@ lemma isStableUnder_iSup {ι : Sort*} {V : ι → Submodule R B}
     (hV : ∀ i, IsStableUnder σ (V i)) : IsStableUnder σ (⨆ i, V i)
 ```
 
-**`isFixedBy_span_singleton`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L140).
+**`isFixedBy_span_singleton`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L140).
 
 > The span of a fixed vector is pointwise fixed.
 
@@ -144,7 +144,7 @@ lemma isStableUnder_iSup {ι : Sort*} {V : ι → Submodule R B}
 lemma isFixedBy_span_singleton {b : B} (hb : ∀ g, σ g b = b) : IsFixedBy σ (R ∙ b)
 ```
 
-**`isFixedBy_iSup`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L146).
+**`isFixedBy_iSup`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L146).
 
 > An indexed join of pointwise-fixed submodules is pointwise fixed.
 
@@ -153,7 +153,7 @@ lemma isFixedBy_iSup {ι : Sort*} {V : ι → Submodule R B} (hV : ∀ i, IsFixe
     IsFixedBy σ (⨆ i, V i)
 ```
 
-**`isFixedBy_span_range`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L153).
+**`isFixedBy_span_range`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L153).
 
 > The span of a family of fixed vectors is pointwise fixed.
 
@@ -162,7 +162,7 @@ lemma isFixedBy_span_range {ι : Sort*} {T : ι → B} (hT : ∀ i g, σ g (T i)
     IsFixedBy σ (Submodule.span R (Set.range T))
 ```
 
-**`isStableUnder_span_range`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L159).
+**`isStableUnder_span_range`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L159).
 
 > The span of a family is stable when each map sends each member into the span.
 
@@ -172,7 +172,7 @@ lemma isStableUnder_span_range {ι : Sort*} {T : ι → B}
     IsStableUnder σ (Submodule.span R (Set.range T))
 ```
 
-**`isStableUnder_span_range_of_sum`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L168).
+**`isStableUnder_span_range_of_sum`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L168).
 
 > The span of a finite family is stable when each map sends each member to a combination
 > of the family.
@@ -183,7 +183,7 @@ lemma isStableUnder_span_range_of_sum {ι : Type*} [Fintype ι] {T : ι → B}
     IsStableUnder σ (Submodule.span R (Set.range T))
 ```
 
-**`IsStableUnder.mul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L177).
+**`IsStableUnder.mul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L177).
 
 > A product of two stable submodules of an algebra is stable under maps respecting
 > multiplication.
@@ -200,7 +200,7 @@ lemma IsStableUnder.mul {R A : Type*} [CommSemiring R] [Semiring A] [Algebra R A
 > To reduce `V₁ ⊔ V₂` to `W`, the summand `V₂` is first moved into the remainder, which needs `V₂`
 > stable; the result lies in `W ⊔ (V₂ ⊔ S)`, and reducing `V₂` from there needs `W` stable.
 
-**`ReducesInvariantsTo`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L204).
+**`ReducesInvariantsTo`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L204).
 
 > Every invariant of `V ⊔ S`, for `S` a `σ`-stable submodule, lies in `W ⊔ S`.
 
@@ -208,7 +208,7 @@ lemma IsStableUnder.mul {R A : Type*} [CommSemiring R] [Semiring A] [Algebra R A
 def ReducesInvariantsTo (σ : G → B →ₗ[R] B) (V W : Submodule R B) : Prop
 ```
 
-**`reducesInvariantsTo_of_le`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L208).
+**`reducesInvariantsTo_of_le`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L208).
 
 > A submodule reduces to any submodule containing it.
 
@@ -217,7 +217,7 @@ lemma reducesInvariantsTo_of_le {V W : Submodule R B} (hVW : V ≤ W) :
     ReducesInvariantsTo σ V W
 ```
 
-**`ReducesInvariantsTo.mono_left`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L213).
+**`ReducesInvariantsTo.mono_left`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L213).
 
 > A reduction restricts to a smaller source.
 
@@ -226,7 +226,7 @@ lemma ReducesInvariantsTo.mono_left {V V' W : Submodule R B} (hP : ReducesInvari
     (hV : V ≤ V') : ReducesInvariantsTo σ V W
 ```
 
-**`ReducesInvariantsTo.mono_right`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L218).
+**`ReducesInvariantsTo.mono_right`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L218).
 
 > A reduction extends to a larger target.
 
@@ -235,7 +235,7 @@ lemma ReducesInvariantsTo.mono_right {V W W' : Submodule R B}
     (hP : ReducesInvariantsTo σ V W') (hW : W' ≤ W) : ReducesInvariantsTo σ V W
 ```
 
-**`ReducesInvariantsTo.trans`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L223).
+**`ReducesInvariantsTo.trans`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L223).
 
 > Successive reductions compose.
 
@@ -244,7 +244,7 @@ lemma ReducesInvariantsTo.trans {V W W' : Submodule R B} (hP : ReducesInvariants
     (hQ : ReducesInvariantsTo σ W W') : ReducesInvariantsTo σ V W'
 ```
 
-**`ReducesInvariantsTo.sup`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L229).
+**`ReducesInvariantsTo.sup`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L229).
 
 > Reductions of `V` and of a stable `V'` to a common stable target combine to a reduction of
 > `V ⊔ V'`.
@@ -255,7 +255,7 @@ lemma ReducesInvariantsTo.sup {V V' W : Submodule R B} (hP : ReducesInvariantsTo
     ReducesInvariantsTo σ (V ⊔ V') W
 ```
 
-**`ReducesInvariantsTo.biSup`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L239).
+**`ReducesInvariantsTo.biSup`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L239).
 
 > Reductions of stable submodules to a common stable target combine over a finite set.
 
@@ -266,7 +266,7 @@ lemma ReducesInvariantsTo.biSup {ι : Type*} [DecidableEq ι] {V : ι → Submod
     ReducesInvariantsTo σ (⨆ i ∈ s, V i) W
 ```
 
-**`ReducesInvariantsTo.iSup_of_biSup`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L253).
+**`ReducesInvariantsTo.iSup_of_biSup`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L253).
 
 > A reduction of every join over a finite set of indices is a reduction of the join over the
 > whole index type, which may be infinite: an element of the join lies in the join over finitely
@@ -279,7 +279,7 @@ lemma ReducesInvariantsTo.iSup_of_biSup {ι : Type*} {V : ι → Submodule R B} 
     ReducesInvariantsTo σ (⨆ i, V i) W
 ```
 
-**`ReducesInvariantsTo.iSup`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L264).
+**`ReducesInvariantsTo.iSup`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L264).
 
 > Reductions of stable submodules to a common stable target combine over any index type,
 > finite or not: `biSup` combines them over every finite set of indices, and
@@ -291,7 +291,7 @@ lemma ReducesInvariantsTo.iSup {ι : Type*} {V : ι → Submodule R B} {W : Subm
     (hW : IsStableUnder σ W) : ReducesInvariantsTo σ (⨆ i, V i) W
 ```
 
-**`ReducesInvariantsTo.comp`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L272).
+**`ReducesInvariantsTo.comp`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L272).
 
 > A reduction for the subfamily `σ ∘ ι` is a reduction for `σ`: an invariant of `σ` is an
 > invariant of the subfamily, and a `σ`-stable submodule is stable under the subfamily.
@@ -301,7 +301,7 @@ lemma ReducesInvariantsTo.comp {G' : Type*} (ι : G' → G) {V W : Submodule R B
     (hP : ReducesInvariantsTo (fun g' => σ (ι g')) V W) : ReducesInvariantsTo σ V W
 ```
 
-**`reducesInvariantsTo_bot_of_apply_eq_smul`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L285).
+**`reducesInvariantsTo_bot_of_apply_eq_smul`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L285).
 
 > A submodule on which one map of the family acts by a scalar `μ ≠ 1` reduces to `⊥`. An
 > invariant `v + s` of `V ⊔ S` has `(μ - 1) • v = s - σ g s`, which lies in `S`, and so does
@@ -318,7 +318,7 @@ lemma reducesInvariantsTo_bot_of_apply_eq_smul (g : G) {μ : K} (hμ : μ ≠ 1)
 > invariants of that action on the image of the source, which is where a classification valid in
 > every module is applied.
 
-**`IsStableUnder.mem_sup_of_quotient`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L317).
+**`IsStableUnder.mem_sup_of_quotient`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L317).
 
 > An invariant of `V ⊔ S` lies in `W ⊔ S` when every invariant of the image of `V` in
 > `B ⧸ S` lies in the image of `W`.
@@ -329,7 +329,7 @@ lemma IsStableUnder.mem_sup_of_quotient (hS : IsStableUnder σ S)
     {x : B} (hx : x ∈ V ⊔ S) (hinv : ∀ g, σ g x = x) : x ∈ W ⊔ S
 ```
 
-**`reducesInvariantsTo_of_quotient`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L325).
+**`reducesInvariantsTo_of_quotient`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L325).
 
 > `V` reduces to `W` when, for every stable `S`, every invariant of the image of `V` in
 > `B ⧸ S` lies in the image of `W`.
@@ -341,7 +341,7 @@ lemma reducesInvariantsTo_of_quotient
     ReducesInvariantsTo σ V W
 ```
 
-**`IsFixedBy.exists_add_of_mem_sup`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L333).
+**`IsFixedBy.exists_add_of_mem_sup`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L333).
 
 > An invariant of `W ⊔ S`, for `W` pointwise fixed, is an element of `W` plus an invariant
 > element of `S`.
@@ -351,7 +351,7 @@ lemma IsFixedBy.exists_add_of_mem_sup (hW : IsFixedBy σ W) {x : B} (hx : x ∈ 
     (hinv : ∀ g, σ g x = x) : ∃ w ∈ W, ∃ y ∈ S, x = w + y ∧ ∀ g, σ g y = y
 ```
 
-**`ReducesInvariantsTo.mem_sup_and_forall_eq_self_iff`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L343).
+**`ReducesInvariantsTo.mem_sup_and_forall_eq_self_iff`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L343).
 
 > A reduction of `V` to a pointwise-fixed `W ≤ V` describes the invariants of `V ⊔ S`, for
 > `S` stable, exactly: they are the elements of `W` plus an invariant element of `S`. This is
@@ -363,7 +363,7 @@ lemma ReducesInvariantsTo.mem_sup_and_forall_eq_self_iff (hP : ReducesInvariants
     (x ∈ V ⊔ S ∧ ∀ g, σ g x = x) ↔ ∃ y ∈ S, (∀ g, σ g y = y) ∧ x - y ∈ W
 ```
 
-**`IsStableUnder.exists_add_of_quotient`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L357).
+**`IsStableUnder.exists_add_of_quotient`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L357).
 
 > Quotient to remainder: when every invariant of the image of `V` in `B ⧸ S` lies in the
 > image of a pointwise-fixed `W`, an invariant of `V ⊔ S` is an element of `W` plus an
@@ -376,7 +376,7 @@ lemma IsStableUnder.exists_add_of_quotient (hS : IsStableUnder σ S) (hW : IsFix
     ∃ w ∈ W, ∃ y ∈ S, x = w + y ∧ ∀ g, σ g y = y
 ```
 
-**`IsStableUnder.exists_smul_add_of_quotient`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L366).
+**`IsStableUnder.exists_smul_add_of_quotient`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L366).
 
 > Quotient to remainder for a single fixed vector `v`: when every invariant of the image of
 > `V` in `B ⧸ S` is a multiple of the class of `v`, an invariant of `V ⊔ S` is a multiple of
@@ -392,7 +392,7 @@ lemma IsStableUnder.exists_smul_add_of_quotient (hS : IsStableUnder σ S) {v : B
 
 ## D. Reduction to the span of one vector
 
-**`InvariantReductionToSpan`**, a structure, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L394).
+**`InvariantReductionToSpan`**, a structure, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L394).
 
 > A stable submodule `V` together with a fixed vector such that, for every stable `S`, every
 > invariant of `V ⊔ S` is a multiple of that vector plus an element of `S`. The vector need not
@@ -412,7 +412,7 @@ structure InvariantReductionToSpan (σ : G → B →ₗ[R] B) (V : Submodule R B
     ∃ c : R, ∃ y ∈ S, x = c • spanningVector + y
 ```
 
-**`InvariantReductionToSpan.reducesInvariantsTo`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L411).
+**`InvariantReductionToSpan.reducesInvariantsTo`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L411).
 
 > The submodule reduces to the span of the spanning vector.
 
@@ -421,7 +421,7 @@ lemma reducesInvariantsTo (r : InvariantReductionToSpan σ V) :
     ReducesInvariantsTo σ V (R ∙ r.spanningVector)
 ```
 
-**`InvariantReductionToSpan.reducesInvariantsTo_iSup`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L419).
+**`InvariantReductionToSpan.reducesInvariantsTo_iSup`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L419).
 
 > A family of reductions to spans, over any index type, reduces the join of the submodules to
 > the span of the spanning vectors.
@@ -433,7 +433,7 @@ lemma reducesInvariantsTo_iSup {κ : Type*} {V : κ → Submodule R B}
       (Submodule.span R (Set.range fun k => (r k).spanningVector))
 ```
 
-**`InvariantReductionToSpan.ofReducesInvariantsTo`**, a def, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L430).
+**`InvariantReductionToSpan.ofReducesInvariantsTo`**, a def, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L430).
 
 > The reduction of a stable submodule to the span of a fixed vector.
 
@@ -442,7 +442,7 @@ def ofReducesInvariantsTo (hV : IsStableUnder σ V) (v : B) (hv : ∀ g, σ g v 
     (h : ReducesInvariantsTo σ V (R ∙ v)) : InvariantReductionToSpan σ V
 ```
 
-**`InvariantReductionToSpan.ofFixed`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L441).
+**`InvariantReductionToSpan.ofFixed`**, a def, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L441).
 
 > The span of a fixed vector reduces to itself.
 
@@ -451,7 +451,7 @@ def ofFixed (b : B) (hb : ∀ g, σ g b = b) :
     InvariantReductionToSpan σ (R ∙ b)
 ```
 
-**`InvariantReductionToSpan.ofFixedFamily`**, a def, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L453).
+**`InvariantReductionToSpan.ofFixedFamily`**, a def, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L453).
 
 > The span of a nonempty family whose members all equal one fixed vector reduces to the
 > span of that vector.
@@ -473,7 +473,7 @@ def ofFixedFamily {ι : Type*} [Nonempty ι] {T : ι → B} (b : B)
 > the combinations of `E`. What is classified is coefficient vectors, which do not depend on `S`;
 > no classification of invariants of `B` is assumed to descend to `B ⧸ S`.
 
-**`Submodule.mapQ_mkQ_eq_sum_smul`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L488).
+**`Submodule.mapQ_mkQ_eq_sum_smul`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L488).
 
 > A map moving each member of a family by a matrix moves their classes modulo a submodule
 > that it preserves by the same matrix.
@@ -485,7 +485,7 @@ lemma Submodule.mapQ_mkQ_eq_sum_smul {R B ι : Type*} [Ring R] [AddCommGroup B] 
     S.mapQ S f hS (S.mkQ (T l)) = ∑ a, M a l • S.mkQ (T a)
 ```
 
-**`reducesInvariantsTo_of_mulVec_eq`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L500).
+**`reducesInvariantsTo_of_mulVec_eq`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L500).
 
 > A family moved by matrices whose conjugate transposes are among them reduces to the
 > combinations of any submodule `E` of coefficient vectors containing every vector fixed by
@@ -499,7 +499,7 @@ lemma reducesInvariantsTo_of_mulVec_eq (T : ι → B) (M : G → Matrix ι ι �
       (E.map (Fintype.linearCombination ℂ T))
 ```
 
-**`reducesInvariantsTo_bot_of_mulVec_eq`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L517).
+**`reducesInvariantsTo_bot_of_mulVec_eq`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L517).
 
 > The form of `reducesInvariantsTo_of_mulVec_eq` when no nonzero coefficient vector is
 > fixed: the span reduces to `⊥`.
@@ -511,7 +511,7 @@ lemma reducesInvariantsTo_bot_of_mulVec_eq (T : ι → B) (M : G → Matrix ι �
     ReducesInvariantsTo σ (Submodule.span ℂ (Set.range T)) ⊥
 ```
 
-**`reducesInvariantsTo_span_singleton_of_mulVec_eq`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean#L526).
+**`reducesInvariantsTo_span_singleton_of_mulVec_eq`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean#L526).
 
 > The form of `reducesInvariantsTo_of_mulVec_eq` when every fixed coefficient vector is a
 > multiple of `e`: the span reduces to the span of the combination with coefficients `e`.
@@ -533,4 +533,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/InvariantReduction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/InvariantReduction.lean)
+- [PhyslibAlpha/Mathematics/InvariantReduction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/InvariantReduction.lean)

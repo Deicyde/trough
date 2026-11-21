@@ -7,7 +7,7 @@ proof: formalized
 
 # Once-per-file cache for tactics
 
-`Batteries.Util.Cache`, in [Batteries/Util/Cache.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean), by Gabriel Ebner.
+`Batteries.Util.Cache`, in [Batteries/Util/Cache.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean), by Gabriel Ebner.
 
 > This file defines cache data structures for tactics
 > that are initialized the first time they are accessed.
@@ -31,7 +31,7 @@ proof: formalized
 > while for constants defined in the same file `f` is evaluated again every time.
 > This kind of cache can be used e.g. to populate discrimination trees.
 
-`Batteries.Tactic.Cache` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L44))
+`Batteries.Tactic.Cache` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L44))
 
 > Once-per-file cache.
 
@@ -39,7 +39,7 @@ proof: formalized
 def Cache (α : Type)
 ```
 
-`Batteries.Tactic.Cache.mk` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L52))
+`Batteries.Tactic.Cache.mk` (definition, [line 52](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L52))
 
 > Creates a cache with an initialization function.
 
@@ -47,14 +47,14 @@ def Cache (α : Type)
 def Cache.mk (init : MetaM α) : IO (Cache α)
 ```
 
-`Lean.Meta.wrapAsync` (definition, [line 55](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L55))
+`Lean.Meta.wrapAsync` (definition, [line 55](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L55))
 
 ```lean
 def _root_.Lean.Meta.wrapAsync {α : Type} (act : α → MetaM β)  (cancelTk? : Option IO.CancelToken) :
     MetaM (α → EIO Exception β)
 ```
 
-`Batteries.Tactic.Cache.get` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L65))
+`Batteries.Tactic.Cache.get` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L65))
 
 > Access the cache. Calling this function for the first time will initialize the cache
 > with the function provided in the constructor.
@@ -63,7 +63,7 @@ def _root_.Lean.Meta.wrapAsync {α : Type} (act : α → MetaM β)  (cancelTk? :
 def Cache.get (cache : Cache α) : MetaM α
 ```
 
-`Batteries.Tactic.DeclCache` (structure, [line 80](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L80))
+`Batteries.Tactic.DeclCache` (structure, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L80))
 
 > Cached fold over the environment's declarations,
 > where a given function is applied to `α` for every constant.
@@ -80,7 +80,7 @@ structure DeclCache (α : Type) where mk' ::
   deriving Nonempty
 ```
 
-`Batteries.Tactic.DeclCache.mk` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L104))
+`Batteries.Tactic.DeclCache.mk` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L104))
 
 > Creates a `DeclCache`.
 >
@@ -102,7 +102,7 @@ def DeclCache.mk (profilingName : String) (pre : MetaM α := failure) (empty : �
     (post : α → MetaM α := fun a => pure a) : IO (DeclCache α)
 ```
 
-`Batteries.Tactic.DeclCache.get` (definition, [line 125](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L125))
+`Batteries.Tactic.DeclCache.get` (definition, [line 125](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L125))
 
 > Access the cache. Calling this function for the first time will initialize the cache
 > with the function provided in the constructor.
@@ -111,7 +111,7 @@ def DeclCache.mk (profilingName : String) (pre : MetaM α := failure) (empty : �
 def DeclCache.get (cache : DeclCache α) : MetaM α
 ```
 
-`Batteries.Tactic.DiscrTreeCache` (definition, [line 134](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L134))
+`Batteries.Tactic.DiscrTreeCache` (definition, [line 134](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L134))
 
 > A type synonym for a `DeclCache` containing a pair of discrimination trees.
 > The first will store declarations in the current file,
@@ -121,7 +121,7 @@ def DeclCache.get (cache : DeclCache α) : MetaM α
 def DiscrTreeCache (α : Type) : Type
 ```
 
-`Batteries.Tactic.DiscrTreeCache.mk` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L140))
+`Batteries.Tactic.DiscrTreeCache.mk` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L140))
 
 > Build a `DiscrTreeCache`,
 > from a function that returns a collection of keys and values for each declaration.
@@ -134,7 +134,7 @@ def DiscrTreeCache.mk [BEq α] (profilingName : String)
     IO (DiscrTreeCache α)
 ```
 
-`Batteries.Tactic.DiscrTreeCache.getMatch` (definition, [line 167](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean#L167))
+`Batteries.Tactic.DiscrTreeCache.getMatch` (definition, [line 167](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean#L167))
 
 > Get matches from both the discrimination tree for declarations in the current file,
 > and for the imports.
@@ -154,5 +154,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Util/Cache.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Cache.lean)
+- [Batteries/Util/Cache.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Cache.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Util.Cache.json)

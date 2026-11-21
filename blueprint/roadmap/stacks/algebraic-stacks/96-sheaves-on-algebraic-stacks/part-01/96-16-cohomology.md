@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.16 Cohomology
 
-Section 96.16 of the Stacks Project, [Tag 075E](https://stacks.math.columbia.edu/tag/075E). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 96.16 of the Stacks Project, [Tag 075E](https://stacks.math.columbia.edu/tag/075E). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 075F, a lemma
 
 [Tag 075F](https://stacks.math.columbia.edu/tag/075F) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.cohomologyOverObjectComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ObjectCohomologyLocalizationEtale.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ObjectCohomologyLocalizationEtale.lean#L597). References: SGA 4 VII (4.1), “more general”.
+**`AlgebraicGeometry.Stack.cohomologyOverObjectComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ObjectCohomologyLocalizationEtale.lean, line 597](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ObjectCohomologyLocalizationEtale.lean#L597). References: SGA 4 VII (4.1), “more general”.
 
 > **Stacks 075F.** Let `S` be a scheme, `p : 𝒳 ⥤ (Sch/S)_{fppf}` a category fibred in groupoids,
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`, and `x` an object of `𝒳` lying over the scheme
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.16, Tag 075E](https://stacks.math.columbia.edu/tag/075E)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

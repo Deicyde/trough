@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.17 Derived categories as module categories
 
-Section 75.17 of the Stacks Project, [Tag 09M9](https://stacks.math.columbia.edu/tag/09M9). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.17 of the Stacks Project, [Tag 09M9](https://stacks.math.columbia.edu/tag/09M9). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09M9, the section
 
 [Tag 09M9](https://stacks.math.columbia.edu/tag/09M9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean#L266). The attribute's comment: “Theorem 09MC of the section”.
+**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean#L266). The attribute's comment: “Theorem 09MC of the section”.
 
 > **Stacks 09MC.** *Let `X` be a quasi-compact and quasi-separated algebraic space over `S`.
 > Then there exists a differential graded algebra `(E, d)` with only a finite number of nonzero
@@ -28,7 +28,7 @@ theorem exists_differentialGradedAlgebra_equivalence (hqc : IsQuasiCompactSpace 
         DifferentialGradedModule.derivedCategory.{0, u, u} E)
 ```
 
-**`AlgebraicGeometry.Space.exists_window_subsingleton_hom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L95). The attribute's comment: “Lemma 09MB of the section, part (1)”.
+**`AlgebraicGeometry.Space.exists_window_subsingleton_hom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L95). The attribute's comment: “Lemma 09MB of the section, part (1)”.
 
 > **Stacks 09MB, part (1).**  Let `S` be a scheme, let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S` and let `K` be a perfect object of `D(𝒪_X)`.  Then there
@@ -54,7 +54,7 @@ theorem exists_window_subsingleton_hom_of_isPerfect
       Subsingleton (K ⟶ L)
 ```
 
-**`AlgebraicGeometry.Space.finite_setOf_not_subsingleton_hom_shift_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L135). The attribute's comment: “Lemma 09MB of the section, part (2)”.
+**`AlgebraicGeometry.Space.finite_setOf_not_subsingleton_hom_shift_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L135). The attribute's comment: “Lemma 09MB of the section, part (2)”.
 
 > **Stacks 09MB, part (2).**  Let `S` be a scheme, let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S`, let `K` be a perfect object of `D(𝒪_X)` and let `L` be a
@@ -77,7 +77,7 @@ theorem finite_setOf_not_subsingleton_hom_shift_of_isPerfect
     {n : ℤ | ¬ Subsingleton (K ⟶ L⟦n⟧)}.Finite
 ```
 
-**`AlgebraicGeometry.Space.derivedCategoryB_tensorWithComplexDerived_obj_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean#L98). The attribute's comment: “Lemma 09MA of the section”.
+**`AlgebraicGeometry.Space.derivedCategoryB_tensorWithComplexDerived_obj_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean#L98). The attribute's comment: “Lemma 09MA of the section”.
 
 > **Stacks 09MA.**  Let `S` be a scheme, let `F` be an algebraic space over `S`, let `K` be a
 > complex of `𝒪_F`-modules whose cohomology sheaves are quasi-coherent and let `(E, d) = Hom(K, K)`
@@ -114,7 +114,7 @@ public theorem derivedCategoryB_tensorWithComplexDerived_obj_smallEtale
 
 [Tag 09MA](https://stacks.math.columbia.edu/tag/09MA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedCategoryB_tensorWithComplexDerived_obj_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean#L98).
+**`AlgebraicGeometry.Space.derivedCategoryB_tensorWithComplexDerived_obj_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/TensorWithComplexQuasicoherentSmallEtale.lean#L98).
 
 > **Stacks 09MA.**  Let `S` be a scheme, let `F` be an algebraic space over `S`, let `K` be a
 > complex of `𝒪_F`-modules whose cohomology sheaves are quasi-coherent and let `(E, d) = Hom(K, K)`
@@ -151,7 +151,7 @@ public theorem derivedCategoryB_tensorWithComplexDerived_obj_smallEtale
 
 [Tag 09MB](https://stacks.math.columbia.edu/tag/09MB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_window_subsingleton_hom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L95). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.exists_window_subsingleton_hom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L95). The attribute's comment: “part (1)”.
 
 > **Stacks 09MB, part (1).**  Let `S` be a scheme, let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S` and let `K` be a perfect object of `D(𝒪_X)`.  Then there
@@ -177,7 +177,7 @@ theorem exists_window_subsingleton_hom_of_isPerfect
       Subsingleton (K ⟶ L)
 ```
 
-**`AlgebraicGeometry.Space.finite_setOf_not_subsingleton_hom_shift_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L135). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.finite_setOf_not_subsingleton_hom_shift_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectHomVanishingWindow.lean#L135). The attribute's comment: “part (2)”.
 
 > **Stacks 09MB, part (2).**  Let `S` be a scheme, let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S`, let `K` be a perfect object of `D(𝒪_X)` and let `L` be a
@@ -204,7 +204,7 @@ theorem finite_setOf_not_subsingleton_hom_shift_of_isPerfect
 
 [Tag 09MC](https://stacks.math.columbia.edu/tag/09MC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean#L266).
+**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategory.lean#L266).
 
 > **Stacks 09MC.** *Let `X` be a quasi-compact and quasi-separated algebraic space over `S`.
 > Then there exists a differential graded algebra `(E, d)` with only a finite number of nonzero
@@ -222,7 +222,7 @@ theorem exists_differentialGradedAlgebra_equivalence (hqc : IsQuasiCompactSpace 
 
 [Tag 0DK8](https://stacks.math.columbia.edu/tag/0DK8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategorySupported.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategorySupported.lean#L199).
+**`AlgebraicGeometry.Space.exists_differentialGradedAlgebra_equivalence_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategorySupported.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedModuleCategorySupported.lean#L199).
 
 > **Stacks 0DK8.** *Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S` and let `T ⊆ |X|` be a closed subset such that `|X| ∖ T` is
@@ -250,7 +250,7 @@ theorem exists_differentialGradedAlgebra_equivalence_of_supported
 
 [Tag 0DK9](https://stacks.math.columbia.edu/tag/0DK9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_equivalence_derivedTensor_complexHomBimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DifferentialGradedAlgebraUniqueness.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DifferentialGradedAlgebraUniqueness.lean#L196).
+**`AlgebraicGeometry.Space.exists_equivalence_derivedTensor_complexHomBimodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DifferentialGradedAlgebraUniqueness.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DifferentialGradedAlgebraUniqueness.lean#L196).
 
 > **Stacks 0DK9.** *Let `X` be a quasi-compact and quasi-separated algebraic space over a ring
 > `R`, and let `K` and `L` be K-injective complexes of `𝒪_X`-modules corresponding to perfect
@@ -325,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.17, Tag 09M9](https://stacks.math.columbia.edu/tag/09M9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

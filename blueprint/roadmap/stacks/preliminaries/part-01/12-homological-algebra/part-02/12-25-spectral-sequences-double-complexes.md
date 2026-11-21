@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.25 Spectral sequences: double complexes
 
-Section 12.25 of the Stacks Project, [Tag 012X](https://stacks.math.columbia.edu/tag/012X). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.25 of the Stacks Project, [Tag 012X](https://stacks.math.columbia.edu/tag/012X). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0130, a lemma
 
 [Tag 0130](https://stacks.math.columbia.edu/tag/0130) in the Stacks Project.
 
-**`HomologicalComplex₂.isLeast_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L288). The attribute's comment: “the first filtration is ⨁\_\{i ≥ p} K^\{i,j}”.
+**`HomologicalComplex₂.isLeast_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L288). The attribute's comment: “the first filtration is ⨁\_\{i ≥ p} K^\{i,j}”.
 
 > **Stacks 0130, the first filtration is the one intended.** The degreewise steps `F p n` of the
 > filtration of `Tot(K^{•,•})` by the first coordinate are `F\_I^p Tot^n = ⨁\_\{i + j = n, i ≥ p}
@@ -37,7 +37,7 @@ public theorem isLeast_totalFiltration₁
     (∀ p p' n : ℤ, p ≤ p' → F p' n ≤ F p n)
 ```
 
-**`HomologicalComplex₂.isLeast_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L308). The attribute's comment: “the second filtration is ⨁\_\{j ≥ p} K^\{i,j}”.
+**`HomologicalComplex₂.isLeast_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L308). The attribute's comment: “the second filtration is ⨁\_\{j ≥ p} K^\{i,j}”.
 
 > **Stacks 0130, the second filtration is the one intended.** The degreewise steps `F p n` of the
 > filtration of `Tot(K^{•,•})` by the second coordinate are `F\_\{II}^p Tot^n =
@@ -60,7 +60,7 @@ public theorem isLeast_totalFiltration₂
     (∀ p p' n : ℤ, p ≤ p' → F p' n ≤ F p n)
 ```
 
-**`HomologicalComplex₂.exists_iso_pages_totalFiltration₁_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean, line 813](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean#L813). The attribute's comment: “(1), (3) and (5), with the canonical identifications”.
+**`HomologicalComplex₂.exists_iso_pages_totalFiltration₁_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean, line 813](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean#L813). The attribute's comment: “(1), (3) and (5), with the canonical identifications”.
 
 > **Stacks 0130, the first filtration.** Let `('E_r, 'd_r)` be the spectral sequence of the total
 > complex of a double complex `K^{•,•}` filtered by the first coordinate,
@@ -134,7 +134,7 @@ public theorem exists_iso_pages_totalFiltration₁_canonical
                 (ComplexShape.up ℤ)).obj K).homologyπ p
 ```
 
-**`HomologicalComplex₂.exists_iso_pages_totalFiltration₂_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean#L1199). The attribute's comment: “(2), (4) and (6), with the canonical identifications”.
+**`HomologicalComplex₂.exists_iso_pages_totalFiltration₂_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Pages.lean#L1199). The attribute's comment: “(2), (4) and (6), with the canonical identifications”.
 
 > **Stacks 0130, the second filtration.** Let `(''E_r, ''d_r)` be the spectral sequence of the
 > total complex of a double complex `K^{•,•}` filtered by the second coordinate,
@@ -209,7 +209,7 @@ public theorem exists_iso_pages_totalFiltration₂_canonical
 
 [Tag 0131](https://stacks.math.columbia.edu/tag/0131) in the Stacks Project.
 
-**`HomologicalComplex₂.WeaklyConvergesToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L345). The attribute's comment: “`('E_r, 'd_r)` weakly converges”.
+**`HomologicalComplex₂.WeaklyConvergesToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L345). The attribute's comment: “`('E_r, 'd_r)` weakly converges”.
 
 > **Stacks 0131, the first spectral sequence, weak convergence.** The spectral sequence
 > `('E_r, 'd_r)` of `Tot(K^{•,•})` filtered by the first coordinate weakly converges to
@@ -219,7 +219,7 @@ public theorem exists_iso_pages_totalFiltration₂_canonical
 abbrev WeaklyConvergesToTotalHomology₁ : Prop
 ```
 
-**`HomologicalComplex₂.AbutsToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L352). The attribute's comment: “`('E_r, 'd_r)` abuts”.
+**`HomologicalComplex₂.AbutsToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L352). The attribute's comment: “`('E_r, 'd_r)` abuts”.
 
 > **Stacks 0131, the first spectral sequence, abutment.** The spectral sequence
 > `('E_r, 'd_r)` of `Tot(K^{•,•})` filtered by the first coordinate abuts to
@@ -229,7 +229,7 @@ abbrev WeaklyConvergesToTotalHomology₁ : Prop
 abbrev AbutsToTotalHomology₁ : Prop
 ```
 
-**`HomologicalComplex₂.ConvergesToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L359). The attribute's comment: “`('E_r, 'd_r)` converges”.
+**`HomologicalComplex₂.ConvergesToTotalHomology₁`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 359](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L359). The attribute's comment: “`('E_r, 'd_r)` converges”.
 
 > **Stacks 0131, the first spectral sequence, convergence.** The spectral sequence
 > `('E_r, 'd_r)` of `Tot(K^{•,•})` filtered by the first coordinate converges to
@@ -239,7 +239,7 @@ abbrev AbutsToTotalHomology₁ : Prop
 abbrev ConvergesToTotalHomology₁ : Prop
 ```
 
-**`HomologicalComplex₂.WeaklyConvergesToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L366). The attribute's comment: “`(''E_r, ''d_r)` weakly converges”.
+**`HomologicalComplex₂.WeaklyConvergesToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L366). The attribute's comment: “`(''E_r, ''d_r)` weakly converges”.
 
 > **Stacks 0131, the second spectral sequence, weak convergence.** The spectral sequence
 > `(''E_r, ''d_r)` of `Tot(K^{•,•})` filtered by the second coordinate weakly converges to
@@ -249,7 +249,7 @@ abbrev ConvergesToTotalHomology₁ : Prop
 abbrev WeaklyConvergesToTotalHomology₂ : Prop
 ```
 
-**`HomologicalComplex₂.AbutsToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L373). The attribute's comment: “`(''E_r, ''d_r)` abuts”.
+**`HomologicalComplex₂.AbutsToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L373). The attribute's comment: “`(''E_r, ''d_r)` abuts”.
 
 > **Stacks 0131, the second spectral sequence, abutment.** The spectral sequence
 > `(''E_r, ''d_r)` of `Tot(K^{•,•})` filtered by the second coordinate abuts to
@@ -259,7 +259,7 @@ abbrev WeaklyConvergesToTotalHomology₂ : Prop
 abbrev AbutsToTotalHomology₂ : Prop
 ```
 
-**`HomologicalComplex₂.ConvergesToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L380). The attribute's comment: “`(''E_r, ''d_r)` converges”.
+**`HomologicalComplex₂.ConvergesToTotalHomology₂`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean, line 380](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/FilteredComplex.lean#L380). The attribute's comment: “`(''E_r, ''d_r)` converges”.
 
 > **Stacks 0131, the second spectral sequence, convergence.** The spectral sequence
 > `(''E_r, ''d_r)` of `Tot(K^{•,•})` filtered by the second coordinate converges to
@@ -273,7 +273,7 @@ abbrev ConvergesToTotalHomology₂ : Prop
 
 [Tag 0132](https://stacks.math.columbia.edu/tag/0132) in the Stacks Project.
 
-**`CategoryTheory.SpectralSequence.AbutsTo.prop_of_prop_page_firstQuadrant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsToWeakSerreFirstQuadrant.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsToWeakSerreFirstQuadrant.lean#L66). The attribute's comment: “part (4), for a first-quadrant `CohomologicalSpectralSequence` presented by `SpectralSequence.AbutsTo`, with the page hypothesis split into vanishing outside the first quadrant and membership at the nonnegative bidegrees”.
+**`CategoryTheory.SpectralSequence.AbutsTo.prop_of_prop_page_firstQuadrant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/AbutsToWeakSerreFirstQuadrant.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/AbutsToWeakSerreFirstQuadrant.lean#L66). The attribute's comment: “part (4), for a first-quadrant `CohomologicalSpectralSequence` presented by `SpectralSequence.AbutsTo`, with the page hypothesis split into vanishing outside the first quadrant and membership at the nonnegative bidegrees”.
 
 > **Stacks 0132 part (4) for a first quadrant spectral sequence.**  Let `E` be a cohomological
 > spectral sequence of an abelian category which abuts to a graded object `H`, let `P` be a weak
@@ -293,7 +293,7 @@ theorem AbutsTo.prop_of_prop_page_firstQuadrant {r₀ : ℤ}
     (hP : ∀ p q : ℕ, P ((E.page r hr).X ((p : ℤ), (q : ℤ)))) (n : ℤ) : P (H n)
 ```
 
-**`HomologicalComplex₂.isBounded_and_converges_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean#L209).
+**`HomologicalComplex₂.isBounded_and_converges_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean#L209).
 
 > **Stacks 0132, the first filtration.** If every diagonal of the double complex `K^{•,•}` has
 > only finitely many nonzero terms, then the spectral sequence `E` of `Tot(K^{•,•})` filtered by the
@@ -337,7 +337,7 @@ public theorem isBounded_and_converges_totalFiltration₁
       (∀ p q : ℤ, P ((E.page r hr).X (p, q))) → ∀ n : ℤ, P (K.totalFiltration₁.X.homology n))
 ```
 
-**`HomologicalComplex₂.isBounded_and_converges_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean#L251).
+**`HomologicalComplex₂.isBounded_and_converges_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Convergence.lean#L251).
 
 > **Stacks 0132, the second filtration.** If every diagonal of the double complex `K^{•,•}` has
 > only finitely many nonzero terms, then the spectral sequence `E` of `Tot(K^{•,•})` filtered by the
@@ -385,7 +385,7 @@ public theorem isBounded_and_converges_totalFiltration₂
 
 [Tag 0133](https://stacks.math.columbia.edu/tag/0133) in the Stacks Project.
 
-**`quasiIso_total_of_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1431). The attribute's comment: “p”.
+**`quasiIso_total_of_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1431](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1431). The attribute's comment: “p”.
 
 > Under the hypotheses, the total complex of `DA` exists and the induced
 > map `K^• → Tot(A^{•,•})` is a quasi-isomorphism (variant in the first
@@ -404,7 +404,7 @@ theorem quasiIso_total_of_resolution
           QuasiIso f
 ```
 
-**`quasiIso_total_of_resolution_flip`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1446). The attribute's comment: “q”.
+**`quasiIso_total_of_resolution_flip`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1446](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1446). The attribute's comment: “q”.
 
 > Under the hypotheses for `DA.flip`, the total complex of `DA` exists and the induced
 > map `K^• → Tot(A^{•,•})` is a quasi-isomorphism (variant in the second variable `q`).
@@ -426,7 +426,7 @@ theorem quasiIso_total_of_resolution_flip
 
 [Tag 0FKH](https://stacks.math.columbia.edu/tag/0FKH) in the Stacks Project.
 
-**`isHomotopyEquiv_total_of_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1737).
+**`isHomotopyEquiv_total_of_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean, line 1737](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/TotalComplexQuasiIso.lean#L1737).
 
 > Let `M^•` be a complex of an abelian category and `A^{•,•}` a complex of
 > complexes. If `a : M^•[0] ⟶ A^{•,•}` is part of a homotopy equivalence in the
@@ -451,4 +451,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.25, Tag 012X](https://stacks.math.columbia.edu/tag/012X)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

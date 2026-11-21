@@ -7,7 +7,7 @@ proof: formalized
 
 # Towers of algebras and their equivalences
 
-`CompPoly.Data.RingTheory.AlgebraTower`, in [CompPoly/Data/RingTheory/AlgebraTower.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Data.RingTheory.AlgebraTower`, in [CompPoly/Data/RingTheory/AlgebraTower.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean), by Chung Thai Nguyen, Quang Dao.
 
 > An `AlgebraTower` is a preorder-indexed family of commutative semirings with ring
 > homomorphisms between comparable levels. Self-maps are identities, and the maps compose
@@ -20,7 +20,7 @@ proof: formalized
 > An `AlgebraTowerEquiv` consists of ring equivalences at each level that commute with
 > the tower maps.
 
-`AlgebraTower` (class, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L32))
+`AlgebraTower` (class, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L32))
 
 > A preorder-indexed family of commutative semirings with compatible ring homomorphisms.
 >
@@ -43,7 +43,7 @@ class AlgebraTower {ι : Type*} [Preorder ι] (AT : ι → Type*)
       (algebraMap j k h2).comp (algebraMap i j h1)
 ```
 
-`AlgebraTower.ofNatStep` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L57))
+`AlgebraTower.ofNatStep` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L57))
 
 > Construct a tower by composing chosen ring homomorphisms between adjacent levels.
 >
@@ -54,7 +54,7 @@ class AlgebraTower {ι : Type*} [Preorder ι] (AT : ι → Type*)
 def ofNatStep (step : ∀ k, A k →+* A (k + 1)) : AlgebraTower A
 ```
 
-`AlgebraTower.ofNatStep_algebraMap_succ_right` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L70))
+`AlgebraTower.ofNatStep_algebraMap_succ_right` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L70))
 
 > Extending a constructed tower map by one level composes it with the chosen next map.
 
@@ -65,7 +65,7 @@ theorem ofNatStep_algebraMap_succ_right (step : ∀ k, A k →+* A (k + 1))
       (step j).comp ((ofNatStep step).algebraMap i j h)
 ```
 
-`AlgebraTower.ofNatStep_algebraMap_succ` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L78))
+`AlgebraTower.ofNatStep_algebraMap_succ` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L78))
 
 > The map between adjacent levels is the homomorphism supplied to the constructor.
 
@@ -75,7 +75,7 @@ theorem ofNatStep_algebraMap_succ (step : ∀ k, A k →+* A (k + 1))
     (ofNatStep step).algebraMap i (i + 1) h = step i
 ```
 
-`AlgebraTower.algebraMap_self` (lemma, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L95))
+`AlgebraTower.algebraMap_self` (lemma, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L95))
 
 > The tower map from level `i` to itself is the identity for every proof of `i ≤ i`.
 
@@ -84,7 +84,7 @@ lemma AlgebraTower.algebraMap_self (i : ι) (h : i ≤ i) :
     AlgebraTower.algebraMap (AT := A) i i h = RingHom.id (A i)
 ```
 
-`AlgebraTower.algebraMap_self_apply` (lemma, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L100))
+`AlgebraTower.algebraMap_self_apply` (lemma, [line 100](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L100))
 
 > The tower map from level `i` to itself fixes every element of that level.
 
@@ -93,13 +93,13 @@ lemma AlgebraTower.algebraMap_self_apply (i : ι) (h : i ≤ i) (x : A i) :
     AlgebraTower.algebraMap (AT := A) i i h x = x
 ```
 
-`AlgebraTower.toAlgebra` (abbreviation, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L105))
+`AlgebraTower.toAlgebra` (abbreviation, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L105))
 
 ```lean
 abbrev AlgebraTower.toAlgebra {i j : ι} (h : i ≤ j) : Algebra (A i) (A j)
 ```
 
-`AlgebraTower.toIsScalarTower` (instance, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L109))
+`AlgebraTower.toIsScalarTower` (instance, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L109))
 
 ```lean
 instance AlgebraTower.toIsScalarTower (a : AlgebraTower C) {i j k : ι}
@@ -110,7 +110,7 @@ instance AlgebraTower.toIsScalarTower (a : AlgebraTower C) {i j k : ι}
     IsScalarTower (C i) (C j) (C k)
 ```
 
-`AlgebraTowerEquiv` (structure, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L130))
+`AlgebraTowerEquiv` (structure, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L130))
 
 ```lean
 structure AlgebraTowerEquiv (A : ι → Type*) [∀ i, CommSemiring (A i)] [a : AlgebraTower A]
@@ -122,7 +122,7 @@ structure AlgebraTowerEquiv (A : ι → Type*) [∀ i, CommSemiring (A i)] [a : 
       (toRingEquiv j) (a.algebraMap (i:=i) (j:=j) (h:=h) r)
 ```
 
-`AlgebraTowerEquiv.commutesRight'` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L138))
+`AlgebraTowerEquiv.commutesRight'` (lemma, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L138))
 
 ```lean
 lemma AlgebraTowerEquiv.commutesRight' (e : AlgebraTowerEquiv A B)
@@ -131,41 +131,41 @@ lemma AlgebraTowerEquiv.commutesRight' (e : AlgebraTowerEquiv A B)
   (e.toRingEquiv j).symm (AlgebraTower.algebraMap (AT:=B) (i:=i) (j:=j) (h:=h) r)
 ```
 
-`AlgebraTowerEquiv.symm` (definition, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L149))
+`AlgebraTowerEquiv.symm` (definition, [line 149](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L149))
 
 ```lean
 def AlgebraTowerEquiv.symm (e : AlgebraTowerEquiv A B) : AlgebraTowerEquiv B A
 ```
 
-`AlgebraTowerEquiv.algebraMapRightUp` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L153))
+`AlgebraTowerEquiv.algebraMapRightUp` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L153))
 
 ```lean
 def AlgebraTowerEquiv.algebraMapRightUp (e : AlgebraTowerEquiv A B) (i j : ι)
     (h : i ≤ j) : (A i) →+* (B j)
 ```
 
-`AlgebraTowerEquiv.algebraMapLeftUp` (definition, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L159))
+`AlgebraTowerEquiv.algebraMapLeftUp` (definition, [line 159](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L159))
 
 ```lean
 def AlgebraTowerEquiv.algebraMapLeftUp (e : AlgebraTowerEquiv A B) (i j : ι)
     (h : i ≤ j) : (B i) →+* (A j)
 ```
 
-`AlgebraTowerEquiv.toAlgebraOverLeft` (abbreviation, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L165))
+`AlgebraTowerEquiv.toAlgebraOverLeft` (abbreviation, [line 165](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L165))
 
 ```lean
 abbrev AlgebraTowerEquiv.toAlgebraOverLeft (e : AlgebraTowerEquiv A B) (i j : ι)
     (h : i ≤ j) : Algebra (A i) (B j)
 ```
 
-`AlgebraTowerEquiv.toAlgebraOverRight` (abbreviation, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L169))
+`AlgebraTowerEquiv.toAlgebraOverRight` (abbreviation, [line 169](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L169))
 
 ```lean
 abbrev AlgebraTowerEquiv.toAlgebraOverRight (e : AlgebraTowerEquiv A B) (i j : ι)
     (h : i ≤ j) : Algebra (B i) (A j)
 ```
 
-`AlgebraTowerEquiv.toAlgEquivOverLeft` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L173))
+`AlgebraTowerEquiv.toAlgEquivOverLeft` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L173))
 
 ```lean
 def AlgebraTowerEquiv.toAlgEquivOverLeft (e : AlgebraTowerEquiv A B) (i j : ι) (h : i ≤ j) :
@@ -174,7 +174,7 @@ def AlgebraTowerEquiv.toAlgEquivOverLeft (e : AlgebraTowerEquiv A B) (i j : ι) 
     AlgEquiv (A i) (A j) (B j)
 ```
 
-`AlgebraTowerEquiv.toAlgEquivOverRight` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean#L196))
+`AlgebraTowerEquiv.toAlgEquivOverRight` (definition, [line 196](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean#L196))
 
 ```lean
 def AlgebraTowerEquiv.toAlgEquivOverRight (e : AlgebraTowerEquiv A B) (i j : ι) (h : i ≤ j) :
@@ -189,5 +189,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/RingTheory/AlgebraTower.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/RingTheory/AlgebraTower.lean)
+- [CompPoly/Data/RingTheory/AlgebraTower.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/RingTheory/AlgebraTower.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.RingTheory.AlgebraTower.json)

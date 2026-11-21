@@ -7,7 +7,7 @@ proof: formalized
 
 # One-Time Pad
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad`, in [Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad`, in [Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean), by Samuel Schlesinger.
 
 > The one-time pad (Vernam cipher) over `BitVec l`
 > ([KatzLindell2020], Construction 2.9).
@@ -25,7 +25,7 @@ proof: formalized
 >
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.otp` (definition, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L41))
+`Cslib.Crypto.Protocols.PerfectSecrecy.otp` (definition, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L41))
 
 > The one-time pad over `l`-bit strings. Encryption and decryption
 > are XOR ([KatzLindell2020], Construction 2.9).
@@ -35,7 +35,7 @@ noncomputable def otp (l : ℕ) :
     EncScheme (BitVec l) (BitVec l) (BitVec l)
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.otp_ciphertextDist_eq_uniform` (theorem, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L49))
+`Cslib.Crypto.Protocols.PerfectSecrecy.otp_ciphertextDist_eq_uniform` (theorem, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L49))
 
 > The ciphertext distribution of the OTP is uniform, regardless of the
 > message: masking with a uniform key is the permutation `Equiv.xor` of the
@@ -46,7 +46,7 @@ theorem otp_ciphertextDist_eq_uniform (l : ℕ) (m : BitVec l) :
     (otp l).ciphertextDist m = uniformOfFintype (BitVec l)
 ```
 
-`Cslib.Crypto.Protocols.PerfectSecrecy.otp_perfectlySecret` (theorem, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L57))
+`Cslib.Crypto.Protocols.PerfectSecrecy.otp_perfectlySecret` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean#L57))
 
 > The one-time pad is perfectly secret ([KatzLindell2020], Theorem 2.10).
 
@@ -64,5 +64,5 @@ theorem otp_perfectlySecret (l : ℕ) : (otp l).PerfectlySecret
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean)
+- [Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/PerfectSecrecy/OneTimePad.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.PerfectSecrecy.OneTimePad.json)

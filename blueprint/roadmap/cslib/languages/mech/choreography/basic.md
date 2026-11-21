@@ -7,7 +7,7 @@ proof: formalized
 
 # Choreography
 
-`Cslib.Languages.Mech.Choreography.Basic`, in [Cslib/Languages/Mech/Choreography/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean), by Fabrizio Montesi.
+`Cslib.Languages.Mech.Choreography.Basic`, in [Cslib/Languages/Mech/Choreography/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean), by Fabrizio Montesi.
 
 > A choreography defines the collective behaviour of a system of communicating participants
 > (processes) [Montesi2023].
@@ -26,7 +26,7 @@ proof: formalized
 
 > ## Syntax of choreographies
 
-`Cslib.Languages.Mech.Expr` (inductive type, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean#L40))
+`Cslib.Languages.Mech.Expr` (inductive type, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean#L40))
 
 > Expressions for local computation.
 
@@ -40,7 +40,7 @@ inductive Expr (Var Val FunId : Type*) where
   | call (f : FunId) (args : List (Expr Var Val FunId))
 ```
 
-`Cslib.Languages.Mech.Prefix` (inductive type, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean#L57))
+`Cslib.Languages.Mech.Prefix` (inductive type, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean#L57))
 
 > Choreographic prefix.
 
@@ -54,7 +54,7 @@ inductive Prefix (Pid Var Val FunId SelLabel : Type*) where
   | sel (p : Pid) (q : Pid) (l : SelLabel)
 ```
 
-`Cslib.Languages.Mech.Choreography` (inductive type, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean#L66))
+`Cslib.Languages.Mech.Choreography` (inductive type, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean#L66))
 
 > Choreographies.
 
@@ -72,7 +72,7 @@ inductive Choreography (Pid Var Val FunId SelLabel ProcName : Type*) where
   | call (proc : ProcName) (ps : List Pid)
 ```
 
-`Cslib.Languages.Mech.Prefix.pn` (definition, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean#L124))
+`Cslib.Languages.Mech.Prefix.pn` (definition, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean#L124))
 
 > Process names in a prefix.
 
@@ -80,7 +80,7 @@ inductive Choreography (Pid Var Val FunId SelLabel ProcName : Type*) where
 def Prefix.pn : Prefix Pid Var Val FunId SelLabel → Finset Pid
 ```
 
-`Cslib.Languages.Mech.Choreography.pn` (definition, [line 129](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean#L129))
+`Cslib.Languages.Mech.Choreography.pn` (definition, [line 129](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean#L129))
 
 > Process names in a choreography.
 
@@ -94,5 +94,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Languages/Mech/Choreography/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/Mech/Choreography/Basic.lean)
+- [Cslib/Languages/Mech/Choreography/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/Mech/Choreography/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Languages.Mech.Choreography.Basic.json)

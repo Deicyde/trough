@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.19 Higher direct images of coherent sheaves
 
-Section 30.19 of the Stacks Project, [Tag 02O3](https://stacks.math.columbia.edu/tag/02O3). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 30.19 of the Stacks Project, [Tag 02O3](https://stacks.math.columbia.edu/tag/02O3). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02O5, a proposition
 
 [Tag 02O5](https://stacks.math.columbia.edu/tag/02O5) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperCoherenceWitness.higherDirectImageIsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L202).
+**`AlgebraicGeometry.ProperCoherenceWitness.higherDirectImageIsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L202).
 
 > **Coherence of higher direct images.** Let `S` be a locally Noetherian scheme, let
 > `f : X ⟶ S` be proper and let `F` be a coherent `𝒪_X`-module. Then `R ⁱ f_* F` is a coherent
@@ -24,7 +24,7 @@ Section 30.19 of the Stacks Project, [Tag 02O3](https://stacks.math.columbia.edu
 theorem higherDirectImageIsCoherent : HigherDirectImageIsCoherent.{u}
 ```
 
-**`AlgebraicGeometry.ProperCoherenceWitness.isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L213). References: EGA III (2.2.5), “partial”.
+**`AlgebraicGeometry.ProperCoherenceWitness.isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L213). References: EGA III (2.2.5), “partial”.
 
 > **Coherence of the direct image.** For `f : X ⟶ S` proper onto a locally Noetherian base and
 > `F` coherent, `f_* F` is coherent.
@@ -39,7 +39,7 @@ theorem isCoherent_pushforward {X S : Scheme.{u}} (f : X ⟶ S) [IsLocallyNoethe
 
 [Tag 02O6](https://stacks.math.columbia.edu/tag/02O6) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperCoherenceWitness.moduleFinite_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L223). References: EGA III (3.2.3).
+**`AlgebraicGeometry.ProperCoherenceWitness.moduleFinite_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProperCoherenceWitness/ChowStalk.lean#L223). References: EGA III (3.2.3).
 
 > **Finiteness of cohomology.** Let `S = Spec A` with `A` Noetherian, let `f : X ⟶ S` be proper
 > and let `F` be a coherent `𝒪_X`-module. Then `Hⁱ(X, F)` is a finite `A`-module for every `i ≥ 0`.
@@ -56,7 +56,7 @@ theorem moduleFinite_cohomology {X S : Scheme.{u}} (f : X ⟶ S) [IsProper f] [I
 
 [Tag 0897](https://stacks.math.columbia.edu/tag/0897) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.GradedProperCohomology.moduleFinite_gradedCohomologySum_and_exists_isZero_pieceTwistCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GradedProperCohomology/FiniteGradedCohomology.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GradedProperCohomology/FiniteGradedCohomology.lean#L229). The attribute's comment: “both parts, at the hypotheses of the source: A Noetherian, B a finitely generated graded A-algebra, f : X → Spec A proper, F a quasi-coherent graded f^* B-tilde-module of finite type, and L ample invertible in part (2); (1) is finiteness of ⨁\_n H^p(X, F\_n) over B for the degreewise B-action, (2) is H^p(X, F\_n ⊗ L^d) = 0 for p > 0, d ≥ d\_0 and every degree n, which is H^p(X, F ⊗ L^d) = 0 since cohomology on X commutes with direct sums”. References: SGA 2 XII (5.8), “(i), special case”.
+**`Stacks.AlgebraicGeometry.GradedProperCohomology.moduleFinite_gradedCohomologySum_and_exists_isZero_pieceTwistCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GradedProperCohomology/FiniteGradedCohomology.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/GradedProperCohomology/FiniteGradedCohomology.lean#L229). The attribute's comment: “both parts, at the hypotheses of the source: A Noetherian, B a finitely generated graded A-algebra, f : X → Spec A proper, F a quasi-coherent graded f^* B-tilde-module of finite type, and L ample invertible in part (2); (1) is finiteness of ⨁\_n H^p(X, F\_n) over B for the degreewise B-action, (2) is H^p(X, F\_n ⊗ L^d) = 0 for p > 0, d ≥ d\_0 and every degree n, which is H^p(X, F ⊗ L^d) = 0 since cohomology on X commutes with direct sums”. References: SGA 2 XII (5.8), “(i), special case”.
 
 > **[Stacks, Tag 0897].** Let `A` be a Noetherian ring, `B` a finitely generated graded
 > `A`-algebra, `f : X ⟶ Spec A` a proper morphism and `𝓑 = f^* B̃`. Let `F` be a quasi-coherent
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.19, Tag 02O3](https://stacks.math.columbia.edu/tag/02O3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

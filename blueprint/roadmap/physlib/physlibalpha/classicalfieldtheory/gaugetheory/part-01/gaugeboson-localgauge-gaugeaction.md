@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge action on the gauge-boson jet algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean): 36 declarations, 23 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.GaugeAction`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean): 36 declarations, 23 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The transport on the component space
 
-**`GaugeBoson.adjointTransport`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L79).
+**`GaugeBoson.adjointTransport`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L79).
 
 > The adjoint transport on the gauge-boson target space at `p` derivatives: the adjoint
 > Taylor coefficient on the gauge-algebra factor, the identity on the spacetime index.
@@ -51,7 +51,7 @@ noncomputable def adjointTransport (U : GJ) (p : Multiset (Fin 1 ⊕ Fin 3)) :
     (GaugeBoson 𝔤) →ₗ[ℝ] (GaugeBoson 𝔤)
 ```
 
-**`GaugeBoson.adjointTransport_mk_tmul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L86).
+**`GaugeBoson.adjointTransport_mk_tmul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L86).
 
 ```lean
 lemma adjointTransport_mk_tmul (U : GJ) (p : Multiset (Fin 1 ⊕ Fin 3))
@@ -59,7 +59,7 @@ lemma adjointTransport_mk_tmul (U : GJ) (p : Multiset (Fin 1 ⊕ Fin 3))
     adjointTransport jets U p ⟨v ⊗ₜ[ℝ] a⟩ = ⟨v ⊗ₜ[ℝ] jets.adjointCoeff U p a⟩
 ```
 
-**`GaugeBoson.adjointTransport_one`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L92).
+**`GaugeBoson.adjointTransport_one`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L92).
 
 > The adjoint transport at the identity: only the base point survives.
 
@@ -68,7 +68,7 @@ lemma adjointTransport_one (p : Multiset (Fin 1 ⊕ Fin 3)) :
     adjointTransport jets 1 p = if p = 0 then LinearMap.id else 0
 ```
 
-**`GaugeBoson.adjointTransport_mul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L110).
+**`GaugeBoson.adjointTransport_mul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L110).
 
 > The adjoint transport of a product: the antidiagonal convolution of transports.
 
@@ -79,7 +79,7 @@ lemma adjointTransport_mul (U V : GJ) (p : Multiset (Fin 1 ⊕ Fin 3)) :
           adjointTransport jets U r.1 ∘ₗ adjointTransport jets V r.2).sum
 ```
 
-**`GaugeBoson.dualMap_adjointTransport_componentDual`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L138).
+**`GaugeBoson.dualMap_adjointTransport_componentDual`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L138).
 
 > The dual transport carries a component covector to the component covector of the
 > transported adjoint index: the spacetime slot is untouched.
@@ -92,7 +92,7 @@ lemma dualMap_adjointTransport_componentDual (U : GJ)
       = (componentDual 𝔤) ω (φ ∘ₗ jets.adjointCoeff U p)
 ```
 
-**`LocalGaugeFieldAlgebra.transportFun`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L161).
+**`LocalGaugeFieldAlgebra.transportFun`**, a def, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L161).
 
 > The value of the transport on the derivative symbol at `s`: the all-orders Leibniz
 > convolution of the dual adjoint transports against lower derivative symbols.
@@ -102,7 +102,7 @@ noncomputable def transportFun (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℝ (GaugeBoson 𝔤) →ₗ[ℝ] (GaugeBoson.JetComponentSpace 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.transport`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L172).
+**`LocalGaugeFieldAlgebra.transport`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L172).
 
 > The linear part of the gauge action on the jet component space: on a component
 > function `∂_s A^ψ` it is the all-orders Leibniz convolution of the Taylor coefficients
@@ -113,7 +113,7 @@ noncomputable def transport (U : GJ) :
     (GaugeBoson.JetComponentSpace 𝔤) →ₗ[ℝ] (GaugeBoson.JetComponentSpace 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.transport_basis_tmul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L177).
+**`LocalGaugeFieldAlgebra.transport_basis_tmul`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L177).
 
 ```lean
 lemma transport_basis_tmul (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -124,7 +124,7 @@ lemma transport_basis_tmul (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3))
             (GaugeBoson.adjointTransport jets U p.1).dualMap ψ).sum
 ```
 
-**`GaugeBoson.JetComponentSpace.ext_of_basis`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L190).
+**`GaugeBoson.JetComponentSpace.ext_of_basis`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L190).
 
 > Two maps out of the jet component space agree if they agree on the components
 > `∂_s A^ψ` with `s` a derivative multiset and `ψ` an arbitrary covector.
@@ -138,7 +138,7 @@ lemma _root_.GaugeBoson.JetComponentSpace.ext_of_basis
         = G (SpaceTimeDerivAlgebraℝ.basisMultiset s ⊗ₜ[ℝ] ψ)) : F = G
 ```
 
-**`LocalGaugeFieldAlgebra.transport_one`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L211).
+**`LocalGaugeFieldAlgebra.transport_one`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L211).
 
 > The transport of the identity is the identity.
 
@@ -146,7 +146,7 @@ lemma _root_.GaugeBoson.JetComponentSpace.ext_of_basis
 lemma transport_one : transport jets (1 : GJ) = LinearMap.id
 ```
 
-**`LocalGaugeFieldAlgebra.transport_mul`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L230).
+**`LocalGaugeFieldAlgebra.transport_mul`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L230).
 
 > The transport is an anti-homomorphism: the transport of a product is the reverse
 > composite. Composed with the inverse, it becomes the linear part of the gauge
@@ -159,7 +159,7 @@ lemma transport_mul (U V : GJ) :
 
 ## B. The Maurer–Cartan shift
 
-**`LocalGaugeFieldAlgebra.mcBosonCoeff`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L285).
+**`LocalGaugeFieldAlgebra.mcBosonCoeff`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L285).
 
 > The Taylor coefficient of the Maurer–Cartan form of `U` at the derivative multiset
 > `s`, packaged as a gauge boson: the spacetime index runs over the coordinate
@@ -171,13 +171,13 @@ noncomputable def mcBosonCoeff (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     (GaugeBoson 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.mcBosonCoeff_one`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L292).
+**`LocalGaugeFieldAlgebra.mcBosonCoeff_one`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L292).
 
 ```lean
 lemma mcBosonCoeff_one (s : Multiset (Fin 1 ⊕ Fin 3)) : mcBosonCoeff jets 1 s = 0
 ```
 
-**`LocalGaugeFieldAlgebra.mcBosonCoeff_mul`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L302).
+**`LocalGaugeFieldAlgebra.mcBosonCoeff_mul`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L302).
 
 > The Maurer–Cartan Taylor coefficients of a product: the cocycle identity, with the
 > adjoint transport convoluted in by the Taylor–Leibniz theorem.
@@ -190,7 +190,7 @@ lemma mcBosonCoeff_mul (U V : GJ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
             GaugeBoson.adjointTransport jets U p.1 (mcBosonCoeff jets V p.2)).sum
 ```
 
-**`LocalGaugeFieldAlgebra.mcShift`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L356).
+**`LocalGaugeFieldAlgebra.mcShift`**, a def, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L356).
 
 > The Maurer–Cartan shift: the linear functional on the component space pairing a
 > component `∂_s A^ψ` with the Taylor coefficient of the Maurer–Cartan form of `U`. It is
@@ -200,7 +200,7 @@ lemma mcBosonCoeff_mul (U V : GJ) (s : Multiset (Fin 1 ⊕ Fin 3)) :
 noncomputable def mcShift (U : GJ) : (GaugeBoson.JetComponentSpace 𝔤) →ₗ[ℝ] ℝ
 ```
 
-**`LocalGaugeFieldAlgebra.mcShift_basis_tmul`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L361).
+**`LocalGaugeFieldAlgebra.mcShift_basis_tmul`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L361).
 
 ```lean
 lemma mcShift_basis_tmul (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -209,13 +209,13 @@ lemma mcShift_basis_tmul (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3))
       = ψ (mcBosonCoeff jets U s)
 ```
 
-**`LocalGaugeFieldAlgebra.mcShift_one`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L370).
+**`LocalGaugeFieldAlgebra.mcShift_one`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L370).
 
 ```lean
 lemma mcShift_one : mcShift jets (1 : GJ) = 0
 ```
 
-**`LocalGaugeFieldAlgebra.mcShift_mul`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L376).
+**`LocalGaugeFieldAlgebra.mcShift_mul`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L376).
 
 > The cocycle identity for the Maurer–Cartan shift.
 
@@ -226,7 +226,7 @@ lemma mcShift_mul (U V : GJ) :
 
 ## C. The action of the jet gauge group
 
-**`LocalGaugeFieldAlgebra.gaugeGen`**, a def, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L399).
+**`LocalGaugeFieldAlgebra.gaugeGen`**, a def, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L399).
 
 > The affine action of a jet of gauge transformations on the generators of the jet
 > algebra: the transported component plus the Maurer–Cartan shift, both of `U⁻¹` — the
@@ -237,7 +237,7 @@ noncomputable def gaugeGen (U : GJ) :
     (GaugeBoson.JetComponentSpace 𝔤) →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.gaugeGen_apply`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L405).
+**`LocalGaugeFieldAlgebra.gaugeGen_apply`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L405).
 
 ```lean
 lemma gaugeGen_apply (U : GJ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
@@ -245,7 +245,7 @@ lemma gaugeGen_apply (U : GJ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
       + algebraMap ℝ (LocalGaugeFieldAlgebra 𝔤) (mcShift jets U⁻¹ x)
 ```
 
-**`LocalGaugeFieldAlgebra.repJet`**, a def, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L413).
+**`LocalGaugeFieldAlgebra.repJet`**, a def, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L413).
 
 > The action of the jet gauge group on the gauge-boson jet algebra: the substitution
 > homomorphism determined by the affine action on the generators, `∂_s A^ψ` going to its
@@ -255,7 +255,7 @@ lemma gaugeGen_apply (U : GJ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
 noncomputable def repJet : Representation ℝ GJ (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.repJetAlgHom`**, a def, [line 442](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L442).
+**`LocalGaugeFieldAlgebra.repJetAlgHom`**, a def, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L442).
 
 > The action of `U` as an algebra homomorphism: a jet of gauge transformations acts on
 > a Lagrangian term factor by factor.
@@ -265,7 +265,7 @@ noncomputable def repJetAlgHom (U : GJ) :
     (LocalGaugeFieldAlgebra 𝔤) →ₐ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_ι`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L448).
+**`LocalGaugeFieldAlgebra.repJet_ι`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L448).
 
 ```lean
 lemma repJet_ι (U : GJ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
@@ -274,21 +274,21 @@ lemma repJet_ι (U : GJ) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
         + algebraMap ℝ (LocalGaugeFieldAlgebra 𝔤) (mcShift jets U⁻¹ x)
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_apply_one`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L458).
+**`LocalGaugeFieldAlgebra.repJet_apply_one`**, a lemma, [line 458](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L458).
 
 ```lean
 lemma repJet_apply_one (U : GJ) :
     repJet jets U (1 : (LocalGaugeFieldAlgebra 𝔤)) = 1
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_apply_mul`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L464).
+**`LocalGaugeFieldAlgebra.repJet_apply_mul`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L464).
 
 ```lean
 lemma repJet_apply_mul (U : GJ) (x y : (LocalGaugeFieldAlgebra 𝔤)) :
     repJet jets U (x * y) = repJet jets U x * repJet jets U y
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_algebraMap`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L472).
+**`LocalGaugeFieldAlgebra.repJet_algebraMap`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L472).
 
 ```lean
 lemma repJet_algebraMap (U : GJ) (r : ℝ) :
@@ -298,7 +298,7 @@ lemma repJet_algebraMap (U : GJ) (r : ℝ) :
 
 ### C.1. The transformation law of the generators
 
-**`LocalGaugeFieldAlgebra.componentDual_dualBasis_mcBosonCoeff`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L488).
+**`LocalGaugeFieldAlgebra.componentDual_dualBasis_mcBosonCoeff`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L488).
 
 > The component covector at `μ` picks the `μ`-th Maurer–Cartan Taylor coefficient out
 > of the shift.
@@ -311,7 +311,7 @@ lemma componentDual_dualBasis_mcBosonCoeff (W : GJ)
           (jets.maurerCartan W μ)))
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_iteratedJetDeriv_ofA`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L513).
+**`LocalGaugeFieldAlgebra.repJet_iteratedJetDeriv_ofA`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L513).
 
 > The transformation law of the derivative generators, in the form used by
 > `GaugeAlgebraRealization`: a jet of gauge transformations acts on `∂_s A_μ^φ` by the all-orders
@@ -331,7 +331,7 @@ lemma repJet_iteratedJetDeriv_ofA (U : GJ)
 
 ### C.2. The complexified action
 
-**`LocalGaugeFieldAlgebra.complexRepJet`**, a def, [line 538](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L538).
+**`LocalGaugeFieldAlgebra.complexRepJet`**, a def, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L538).
 
 > The action of the jet gauge group on the complexified gauge-boson jet algebra, by
 > base change.
@@ -341,14 +341,14 @@ noncomputable def complexRepJet :
     Representation ℂ GJ (ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤))
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepJet_tmul`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L548).
+**`LocalGaugeFieldAlgebra.complexRepJet_tmul`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L548).
 
 ```lean
 lemma complexRepJet_tmul (U : GJ) (z : ℂ) (x : (LocalGaugeFieldAlgebra 𝔤)) :
     complexRepJet jets U (z ⊗ₜ[ℝ] x) = z ⊗ₜ[ℝ] repJet jets U x
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepJetAlgHom`**, a def, [line 554](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L554).
+**`LocalGaugeFieldAlgebra.complexRepJetAlgHom`**, a def, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L554).
 
 > The action of a jet on the complexified gauge-boson jet algebra, as an algebra
 > endomorphism: the base change of `repJetAlgHom`.
@@ -358,14 +358,14 @@ noncomputable def complexRepJetAlgHom (U : GJ) :
     ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤) →ₐ[ℂ] ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepJet_apply`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L559).
+**`LocalGaugeFieldAlgebra.complexRepJet_apply`**, a lemma, [line 559](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L559).
 
 ```lean
 lemma complexRepJet_apply (U : GJ) (x : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)) :
     complexRepJet jets U x = complexRepJetAlgHom jets U x
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepJet_apply_mul`**, a lemma, [line 566](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L566).
+**`LocalGaugeFieldAlgebra.complexRepJet_apply_mul`**, a lemma, [line 566](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L566).
 
 ```lean
 lemma complexRepJet_apply_mul (U : GJ)
@@ -374,7 +374,7 @@ lemma complexRepJet_apply_mul (U : GJ)
       = complexRepJet jets U x * complexRepJet jets U y
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedD_complexJetDeriv_one_tmul`**, a lemma, [line 583](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L583).
+**`LocalGaugeFieldAlgebra.iteratedD_complexJetDeriv_one_tmul`**, a lemma, [line 583](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L583).
 
 > The iterated complexified derivative of a real element is the complexification of the
 > iterated real derivative.
@@ -386,7 +386,7 @@ lemma iteratedD_complexJetDeriv_one_tmul (s : Multiset (Fin 1 ⊕ Fin 3))
       = (1 : ℂ) ⊗ₜ[ℝ] (iteratedJetDeriv 𝔤) s x
 ```
 
-**`LocalGaugeFieldAlgebra.one_tmul_algebraMap`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L595).
+**`LocalGaugeFieldAlgebra.one_tmul_algebraMap`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L595).
 
 > A real scalar in the complexified jet algebra is the corresponding complex scalar.
 
@@ -396,7 +396,7 @@ lemma one_tmul_algebraMap (r : ℝ) :
       = algebraMap ℂ (ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)) ((r : ℝ) : ℂ)
 ```
 
-**`LocalGaugeFieldAlgebra.complexRepJet_iteratedD_one_tmul_ofA`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L607).
+**`LocalGaugeFieldAlgebra.complexRepJet_iteratedD_one_tmul_ofA`**, a lemma, [line 607](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean#L607).
 
 > The transformation law of the derivative generators on the complexification: the
 > form consumed by the laws of a `GaugeAlgebraRealization`.
@@ -422,4 +422,4 @@ lemma complexRepJet_iteratedD_one_tmul_ofA (U : GJ)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean)

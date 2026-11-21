@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.7 Implied properties
 
-Section 89.7 of the Stacks Project, [Tag 0BHS](https://stacks.math.columbia.edu/tag/0BHS). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 89.7 of the Stacks Project, [Tag 0BHS](https://stacks.math.columbia.edu/tag/0BHS). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BHT, a lemma
 
 [Tag 0BHT](https://stacks.math.columbia.edu/tag/0BHT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_normalization_and_exists_isDenseOpenSubspace_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianRegularAlteration.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianRegularAlteration.lean#L67). The attribute's comment: “both assertions: finiteness of the normalization and the existence of a regular dense open. The source's Step 1, etale localization to a Noetherian domain, does not apply to algebraic spaces (etale charts of an integral space need not be irreducible); finiteness is proved instead through Chow's lemma for spaces over an affine chart”.
+**`AlgebraicGeometry.Space.isFinite_normalization_and_exists_isDenseOpenSubspace_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianRegularAlteration.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianRegularAlteration.lean#L67). The attribute's comment: “both assertions: finiteness of the normalization and the existence of a regular dense open. The source's Step 1, etale localization to a Noetherian domain, does not apply to algebraic spaces (etale charts of an integral space need not be irreducible); finiteness is proved instead through Chow's lemma for spaces over an affine chart”.
 
 > **Stacks 0BHT.** Let `Y` be a Noetherian integral algebraic space over `S`, and suppose there
 > is an alteration `f : X ⟶ Y` with `X` regular. Then the normalization `Y^ν ⟶ Y` of `Y` is a
@@ -51,7 +51,7 @@ theorem isFinite_normalization_and_exists_isDenseOpenSubspace_isRegular
 
 [Tag 0BHU](https://stacks.math.columbia.edu/tag/0BHU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isRegularRing_localizationAway_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L164). The attribute's comment: “clause (1), regular after inverting one element”.
+**`AlgebraicGeometry.Space.exists_isRegularRing_localizationAway_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L164). The attribute's comment: “clause (1), regular after inverting one element”.
 
 > **A Noetherian local domain admitting an alteration by a regular algebraic space is regular
 > after inverting one nonzero element.** The dense regular open of [Stacks, Tag 0BHT] at the
@@ -62,7 +62,7 @@ theorem isFinite_normalization_and_exists_isDenseOpenSubspace_isRegular
 public alias exists_isRegularRing_localizationAway_of_regular_spaceAlteration
 ```
 
-**`AlgebraicGeometry.Space.module_finite_integralClosure_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L172). The attribute's comment: “clause (2), finite integral closure”.
+**`AlgebraicGeometry.Space.module_finite_integralClosure_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L172). The attribute's comment: “clause (2), finite integral closure”.
 
 > **The integral closure of a Noetherian local domain admitting an alteration by a regular
 > algebraic space is a finite module over it.** The normalization of `Spec A` is finite by
@@ -73,7 +73,7 @@ public alias exists_isRegularRing_localizationAway_of_regular_spaceAlteration
 public alias module_finite_integralClosure_of_regular_spaceAlteration
 ```
 
-**`AlgebraicGeometry.Space.isNormalRing_adicCompletion_integralClosure_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L182). The attribute's comment: “clause (3), normal completion of the integral closure”.
+**`AlgebraicGeometry.Space.isNormalRing_adicCompletion_integralClosure_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L182). The attribute's comment: “clause (3), normal completion of the integral closure”.
 
 > **The completion of the integral closure is normal.** With `C = Γ(X, 𝒪_X)` and `B` the
 > integral closure of `A` in `Frac(A)`, the inclusion `B ⊆ C` is a map of finite `A`-algebras and
@@ -86,7 +86,7 @@ public alias module_finite_integralClosure_of_regular_spaceAlteration
 public alias isNormalRing_adicCompletion_integralClosure_of_regular_spaceAlteration
 ```
 
-**`AlgebraicGeometry.Space.isRegularRing_genericFormalFibre_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L191). The attribute's comment: “clause (4), regular generic formal fibre”.
+**`AlgebraicGeometry.Space.isRegularRing_genericFormalFibre_of_regular_spaceAlteration`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomainSpaceAlteration.lean#L191). The attribute's comment: “clause (4), regular generic formal fibre”.
 
 > **The generic formal fibre of a Noetherian local domain admitting an alteration by a regular
 > algebraic space is regular.** For an affine étale chart `V` of `X` through the generic point the
@@ -98,7 +98,7 @@ public alias isNormalRing_adicCompletion_integralClosure_of_regular_spaceAlterat
 public alias isRegularRing_genericFormalFibre_of_regular_spaceAlteration
 ```
 
-**`AlgebraicGeometry.Space.exists_isRegularRing_localizationAway_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L473). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.exists_isRegularRing_localizationAway_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L473). The attribute's comment: “part (1)”.
 
 > **A Noetherian local domain admitting an alteration by a regular algebraic space is regular
 > after inverting one nonzero element.** The dense regular open of [Stacks, Tag 0BHT], read at the
@@ -117,7 +117,7 @@ public theorem exists_isRegularRing_localizationAway_of_isAlteration_of_isRegula
     ∃ a : A, a ≠ 0 ∧ IsRegularRing (Localization.Away a)
 ```
 
-**`AlgebraicGeometry.Space.module_finite_integralClosure_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L505). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.module_finite_integralClosure_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 505](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L505). The attribute's comment: “part (2)”.
 
 > **The integral closure of a Noetherian local domain admitting an alteration by a regular
 > algebraic space is a finite module over it.** This is clause (2) of [Stacks, Tag 0BHU]: `A` is
@@ -149,7 +149,7 @@ public theorem module_finite_integralClosure_of_isAlteration_of_isRegular
     Module.Finite A ↥(integralClosure A (FractionRing A))
 ```
 
-**`AlgebraicGeometry.Space.isNormalRing_adicCompletion_integralClosure_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L647). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isNormalRing_adicCompletion_integralClosure_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 647](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L647). The attribute's comment: “part (3)”.
 
 > **The completion of the integral closure of a Noetherian local domain admitting an
 > alteration by a regular algebraic space is normal.** This is part (3) of [Stacks, Tag 0BHU]. Let
@@ -175,7 +175,7 @@ public theorem isNormalRing_adicCompletion_integralClosure_of_isAlteration_of_is
         ↥(integralClosure A (FractionRing A)))
 ```
 
-**`AlgebraicGeometry.Space.isRegularRing_genericFormalFibre_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L694). The attribute's comment: “part (4)”. References: EGA IV (7.9.3), “special case”.
+**`AlgebraicGeometry.Space.isRegularRing_genericFormalFibre_of_isAlteration_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean, line 694](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/RegularSpaceAlterationLocalDomain.lean#L694). The attribute's comment: “part (4)”. References: EGA IV (7.9.3), “special case”.
 
 > **The generic formal fibre of a Noetherian local domain admitting an alteration by a regular
 > algebraic space is regular.** For an affine étale chart `V` of `X` through the generic point the
@@ -203,4 +203,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.7, Tag 0BHS](https://stacks.math.columbia.edu/tag/0BHS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

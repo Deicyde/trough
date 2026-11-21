@@ -38,7 +38,7 @@ statement: formalized
 >   arXiv:2603.08365 (2026). Assuming Schanuel's conjecture, gives an axiomatisation of the
 >   theory of $\mathbb{R}_{\exp}$ and recovers the Macintyre–Wilkie decidability result.
 
-*Quoted from [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 API statement, counted here but not shown.
 
@@ -54,7 +54,7 @@ theorem isDecidable_completeTheory_real_orderedField :
     ((Language.ring.sum Language.order).completeTheory ℝ).IsDecidable
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L66).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L66).
 
 ## `TarskiExponentialFunctionProblem.tarski_exponential_function_problem`
 
@@ -68,7 +68,7 @@ theorem tarski_exponential_function_problem :
     (Language.orderedExpField.completeTheory ℝ).IsDecidable
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L75).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L75).
 
 ## `TarskiExponentialFunctionProblem.isDecidable_completeTheory_realExp_of_realSchanuelConjecture`
 
@@ -83,7 +83,7 @@ theorem isDecidable_completeTheory_realExp_of_realSchanuelConjecture
     (Language.orderedExpField.completeTheory ℝ).IsDecidable
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L112).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean, line 112](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean#L112).
 
 ## Depends on
 
@@ -91,5 +91,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean)
+- [FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/TarskiExponentialFunctionProblem.lean)
 - [Wikipedia, *Tarski's exponential function problem*](https://en.wikipedia.org/wiki/Tarski%27s_exponential_function_problem)

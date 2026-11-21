@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.145 Étale local structure of quasi-finite ring maps
 
-Section 10.145 of the Stacks Project, [Tag 0G1B](https://stacks.math.columbia.edu/tag/0G1B). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.145 of the Stacks Project, [Tag 0G1B](https://stacks.math.columbia.edu/tag/0G1B). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00UJ, a lemma
 
 [Tag 00UJ](https://stacks.math.columbia.edu/tag/00UJ) in the Stacks Project.
 
-**`Algebra.exists_etale_isIdempotentElem_quasiFiniteAt_five_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/QuasiFiniteProductDecomposition.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/QuasiFiniteProductDecomposition.lean#L154). The attribute's comment: “The decomposition `R' ⊗_R S = A × B` is given by an idempotent `e`, with `A = (R' ⊗[R] S)[1/e]` and `B = (R' ⊗[R] S)[1/(1 - e)]`; the primes of `A` in (3) and (4) are the primes of `R' ⊗[R] S` not containing `e`. Properties (1)–(4) are Mathlib's `Algebra.exists_etale_isIdempotentElem_forall_liesOver_eq`; (5) is the last conjunct.”.
+**`Algebra.exists_etale_isIdempotentElem_quasiFiniteAt_five_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/QuasiFiniteProductDecomposition.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Etale/QuasiFiniteProductDecomposition.lean#L154). The attribute's comment: “The decomposition `R' ⊗_R S = A × B` is given by an idempotent `e`, with `A = (R' ⊗[R] S)[1/e]` and `B = (R' ⊗[R] S)[1/(1 - e)]`; the primes of `A` in (3) and (4) are the primes of `R' ⊗[R] S` not containing `e`. Properties (1)–(4) are Mathlib's `Algebra.exists_etale_isIdempotentElem_forall_liesOver_eq`; (5) is the last conjunct.”.
 
 > **Stacks 00UJ.** Let `S` be a finite type `R`-algebra and `q` a prime of `S` lying over the
 > prime `p` of `R` such that `S` is quasi-finite at `q`. There are an étale `R`-algebra `R'`, a prime
@@ -48,7 +48,7 @@ theorem Algebra.exists_etale_isIdempotentElem_quasiFiniteAt_five_properties
 
 [Tag 00UK](https://stacks.math.columbia.edu/tag/00UK) in the Stacks Project.
 
-**`Algebra.exists_etale_completeOrthogonalIdempotents_finite_not_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalStructure.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalStructure.lean#L561). The attribute's comment: “The product decomposition is given by complete orthogonal idempotents `e : Fin (n + 1) → R' ⊗[R] S`, the factors being `(R' ⊗[R] S)[1/e i]`, and the primes of a factor are named by the primes of `R' ⊗[R] S` avoiding the corresponding idempotent. See the module docstring.”.
+**`Algebra.exists_etale_completeOrthogonalIdempotents_finite_not_quasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalStructure.lean, line 561](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Etale/LocalStructure.lean#L561). The attribute's comment: “The product decomposition is given by complete orthogonal idempotents `e : Fin (n + 1) → R' ⊗[R] S`, the factors being `(R' ⊗[R] S)[1/e i]`, and the primes of a factor are named by the primes of `R' ⊗[R] S` avoiding the corresponding idempotent. See the module docstring.”.
 
 > **Étale local structure of a finite type algebra along a fibre** (Stacks 00UK). Let `S` be a
 > finite type `R`-algebra and `p` a prime of `R`. There are an étale `R`-algebra `R'`, a prime `p'`
@@ -79,7 +79,7 @@ public theorem Algebra.exists_etale_completeOrthogonalIdempotents_finite_not_qua
 
 [Tag 00UL](https://stacks.math.columbia.edu/tag/00UL) in the Stacks Project.
 
-**`Algebra.exists_etale_completeOrthogonalIdempotents_finite_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalStructure.lean, line 1115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalStructure.lean#L1115). The attribute's comment: “The product decomposition is given by complete orthogonal idempotents `e : Fin (n + 1) → R' ⊗[R] S`, the factors being `(R' ⊗[R] S)[1/e i]`, and the primes of a factor are named by the primes of `R' ⊗[R] S` avoiding the corresponding idempotent. Unlike Tag 00UK this does not assert `κ(p) = κ(p')`, which the source's proof gives up in order to control the residue fields. See the module docstring.”.
+**`Algebra.exists_etale_completeOrthogonalIdempotents_finite_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalStructure.lean, line 1115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Etale/LocalStructure.lean#L1115). The attribute's comment: “The product decomposition is given by complete orthogonal idempotents `e : Fin (n + 1) → R' ⊗[R] S`, the factors being `(R' ⊗[R] S)[1/e i]`, and the primes of a factor are named by the primes of `R' ⊗[R] S` avoiding the corresponding idempotent. Unlike Tag 00UK this does not assert `κ(p) = κ(p')`, which the source's proof gives up in order to control the residue fields. See the module docstring.”.
 
 > **Étale local structure of a finite type algebra along a fibre** (Stacks 00UL). Let `S` be a
 > finite type `R`-algebra and `p` a prime of `R`. There are an étale `R`-algebra `R'`, a prime `p'`
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.145, Tag 0G1B](https://stacks.math.columbia.edu/tag/0G1B)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

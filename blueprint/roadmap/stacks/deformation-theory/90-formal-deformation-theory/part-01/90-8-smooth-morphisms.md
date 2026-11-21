@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.8 Smooth morphisms
 
-Section 90.8 of the Stacks Project, [Tag 06HF](https://stacks.math.columbia.edu/tag/06HF). 11 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 90.8 of the Stacks Project, [Tag 06HF](https://stacks.math.columbia.edu/tag/06HF). 11 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06HG, a definition
 
 [Tag 06HG](https://stacks.math.columbia.edu/tag/06HG) in the Stacks Project.
 
-**`Deformation.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Basic.lean#L102). References: SGA 7 VI (2.1), “smooth”.
+**`Deformation.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Basic.lean#L102). References: SGA 7 VI (2.1), “smooth”.
 
 > A morphism of categories over `\mathcal C_\Lambda` is smooth if every
 > lifting problem over a surjective map `B \to A` has a compatible solution over
@@ -29,7 +29,7 @@ public abbrev IsSmooth {𝓕 : BasedCategory.{v₁, u₁} (ArtinianLocalAlgCat.{
 
 [Tag 06HH](https://stacks.math.columbia.edu/tag/06HH) in the Stacks Project.
 
-**`Deformation.isSmooth_of_lifts_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean#L173). References: SGA 7 VI (2.2(a)), “(iii) => (i)”.
+**`Deformation.isSmooth_of_lifts_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean#L173). References: SGA 7 VI (2.2(a)), “(iii) => (i)”.
 
 > For a morphism of categories cofibered in groupoids, the lifting property
 > for small extensions implies the lifting property for every surjective morphism,
@@ -56,7 +56,7 @@ theorem isSmooth_of_lifts_smallExtensions
 
 [Tag 06HI](https://stacks.math.columbia.edu/tag/06HI) in the Stacks Project.
 
-**`Deformation.pushforwardFunctorsFormTwoCommutativeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Pushforward.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Pushforward.lean#L493). The attribute's comment: “pushforward\_square”.
+**`Deformation.pushforwardFunctorsFormTwoCommutativeSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Pushforward.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Pushforward.lean#L493). The attribute's comment: “pushforward\_square”.
 
 > Chosen pushforwards along an arrow in the base give functors between the
 > fibres, and a morphism of categories cofibered in groupoids intertwines these
@@ -74,7 +74,7 @@ public theorem pushforwardFunctorsFormTwoCommutativeSquare
     Nonempty (PushforwardSquare φ hφ PF PG)
 ```
 
-**`Deformation.inducedFunctorToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Pushforward.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Pushforward.lean#L527). The attribute's comment: “induced\_functor”. References: SGA 7 VI (2.6(b)), “induced functor to 2-fp”.
+**`Deformation.inducedFunctorToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Pushforward.lean, line 527](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Pushforward.lean#L527). The attribute's comment: “induced\_functor”. References: SGA 7 VI (2.6(b)), “induced functor to 2-fp”.
 
 > The functor from the source fibre to the categorical pullback induced by a
 > chosen two-commutative pushforward square.
@@ -97,7 +97,7 @@ public def inducedFunctorToPullback
         Q.target.toFunctor
 ```
 
-**`Deformation.essSurj_inducedFunctorToPullback_of_isSmooth`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L94). The attribute's comment: “smooth\_iff\_essSurj”.
+**`Deformation.essSurj_inducedFunctorToPullback_of_isSmooth`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L94). The attribute's comment: “smooth\_iff\_essSurj”.
 
 > **Stacks Project, Tag 06HI.** For a smooth morphism of categories cofibered in groupoids,
 > the functor to the 2-fibre product determined by any choice of pushforwards along a surjection
@@ -114,7 +114,7 @@ public lemma essSurj_inducedFunctorToPullback_of_isSmooth
       (pushforwardSquareOfChoices 𝓕.p 𝓖.p h𝓖 φ.toFunctor φ.w PF PG)).EssSurj
 ```
 
-**`Deformation.exists_lift_of_inducedFunctorToPullback_essSurj_of_choice`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L162). The attribute's comment: “smooth\_iff\_essSurj: the 'if' direction, fixed choice of pushforwards”. References: SGA 7 VI (2.6(b)), “The 'if' direction”.
+**`Deformation.exists_lift_of_inducedFunctorToPullback_essSurj_of_choice`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L162). The attribute's comment: “smooth\_iff\_essSurj: the 'if' direction, fixed choice of pushforwards”. References: SGA 7 VI (2.6(b)), “The 'if' direction”.
 
 > **Stacks Project, Tag 06HI.** If the functor to the 2-fibre product determined by one
 > fixed choice `PF`, `PG` of pushforwards along an arrow `f` of the base is essentially
@@ -133,7 +133,7 @@ public lemma exists_lift_of_inducedFunctorToPullback_essSurj_of_choice
       𝓕.p.IsHomLift f lift ∧ 𝓖.p.IsHomLift (𝟙 B) a ∧ φ.map lift = a ≫ g
 ```
 
-**`Deformation.isSmooth_iff_inducedFunctorToPullback_essSurj_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L233). The attribute's comment: “smooth\_iff\_essSurj: fixed choice of pushforwards, on surjections”.
+**`Deformation.isSmooth_iff_inducedFunctorToPullback_essSurj_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L233). The attribute's comment: “smooth\_iff\_essSurj: fixed choice of pushforwards, on surjections”.
 
 > **Stacks Project, Tag 06HI.** Fix, for every arrow `f : B ⟶ A` of the base, choices
 > `PF f`, `PG f` of pushforwards along `f` in `𝓕` and in `𝓖`.  A morphism `φ` of categories
@@ -154,7 +154,7 @@ public theorem isSmooth_iff_inducedFunctorToPullback_essSurj_of_choices
             (pushforwardSquareOfChoices 𝓕.p 𝓖.p h𝓖 φ.toFunctor φ.w (PF f) (PG f))).EssSurj
 ```
 
-**`Deformation.isSmooth_iff_inducedFunctorToPullback_essSurj_smallExtension_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L255). The attribute's comment: “smooth\_iff\_essSurj: fixed choice of pushforwards, on small extensions”.
+**`Deformation.isSmooth_iff_inducedFunctorToPullback_essSurj_smallExtension_of_choices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/PushforwardSmooth.lean#L255). The attribute's comment: “smooth\_iff\_essSurj: fixed choice of pushforwards, on small extensions”.
 
 > **Stacks Project, Tag 06HI.** Fix, for every arrow `f : B ⟶ A` of the base, choices
 > `PF f`, `PG f` of pushforwards along `f` in `𝓕` and in `𝓖`.  A morphism `φ` of categories
@@ -179,7 +179,7 @@ public theorem isSmooth_iff_inducedFunctorToPullback_essSurj_smallExtension_of_c
 
 [Tag 06HJ](https://stacks.math.columbia.edu/tag/06HJ) in the Stacks Project.
 
-**`Deformation.isSmooth_elementsBasedFunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean#L239).
+**`Deformation.isSmooth_elementsBasedFunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/SchlessingerConditions/SmoothMorphisms.lean#L239).
 
 > Smoothness of a morphism between categories of elements is equivalent to
 > surjectivity of the usual map to the fibre product for every surjection in
@@ -200,7 +200,7 @@ theorem isSmooth_elementsBasedFunctor_iff
 
 [Tag 06HK](https://stacks.math.columbia.edu/tag/06HK) in the Stacks Project.
 
-**`Deformation.isSmooth_toIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/IsomorphismClasses.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/IsomorphismClasses.lean#L425).
+**`Deformation.isSmooth_toIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/IsomorphismClasses.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/IsomorphismClasses.lean#L425).
 
 > The canonical morphism from a category cofibered in groupoids to its associated functor of
 > isomorphism classes is smooth.
@@ -217,7 +217,7 @@ public theorem isSmooth_toIsomorphismClasses
 
 [Tag 06HL](https://stacks.math.columbia.edu/tag/06HL) in the Stacks Project.
 
-**`Deformation.restrictedRepresentableMap_isSmooth_iff_isPowerSeriesOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PowerSeries.lean, line 1001](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/PowerSeries.lean#L1001). The attribute's comment: “smooth if and only if a power series ring”. References: SGA 7 VI (2.2(c)); SGA 1 III (1.5), “complete local case”.
+**`Deformation.restrictedRepresentableMap_isSmooth_iff_isPowerSeriesOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/PowerSeries.lean, line 1001](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/PowerSeries.lean#L1001). The attribute's comment: “smooth if and only if a power series ring”. References: SGA 7 VI (2.2(c)); SGA 1 III (1.5), “complete local case”.
 
 > The morphism between restricted representable categories induced by `f : R ⟶ S` is smooth
 > if and only if `f` exhibits `S` as a formal power series ring in finitely many variables over
@@ -233,7 +233,7 @@ public theorem restrictedRepresentableMap_isSmooth_iff_isPowerSeriesOver
 
 [Tag 06HM](https://stacks.math.columbia.edu/tag/06HM) in the Stacks Project.
 
-**`Deformation.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Basic.lean#L122). The attribute's comment: “smooth\_comp”. References: SGA 7 VI (2.3), “(a)”.
+**`Deformation.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Basic.lean#L122). The attribute's comment: “smooth\_comp”. References: SGA 7 VI (2.3), “(a)”.
 
 > The composite of two smooth morphisms of categories over
 > `\mathcal C_\Lambda` is smooth.
@@ -248,7 +248,7 @@ public theorem isSmooth_comp
     IsSmooth (BasedFunctor.comp φ ψ)
 ```
 
-**`Deformation.isSmooth_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Basic.lean#L184). The attribute's comment: “smooth\_base\_change”.
+**`Deformation.isSmooth_twoFibreProductSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Basic.lean#L184). The attribute's comment: “smooth\_base\_change”.
 
 > A base change of a smooth morphism of categories cofibered in groupoids is smooth.
 
@@ -262,7 +262,7 @@ public theorem isSmooth_twoFibreProductSnd
     (hφ : IsSmooth φ) : IsSmooth (twoFibreProductSnd φ θ)
 ```
 
-**`Deformation.isSmooth_of_essSurj_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Basic.lean#L249). The attribute's comment: “smooth\_of\_essentially\_surjective\_smooth\_comp”. References: SGA 7 VI (2.3), “(b)”.
+**`Deformation.isSmooth_of_essSurj_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Basic.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Basic.lean#L249). The attribute's comment: “smooth\_of\_essentially\_surjective\_smooth\_comp”. References: SGA 7 VI (2.3), “(b)”.
 
 > If the first of two morphisms of categories cofibered in groupoids is
 > essentially surjective and their composite is smooth, then the second morphism
@@ -281,7 +281,7 @@ public theorem isSmooth_of_essSurj_comp
 
 [Tag 06HN](https://stacks.math.columbia.edu/tag/06HN) in the Stacks Project.
 
-**`Deformation.essSurj_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean#L63). The attribute's comment: “essentially\_surjective”.
+**`Deformation.essSurj_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean#L63). The attribute's comment: “essentially\_surjective”.
 
 > A smooth morphism of categories over `\mathcal C_\Lambda` with cofibered
 > target is essentially surjective whenever its special-fibre functor is.
@@ -297,7 +297,7 @@ public theorem essSurj_of_isSmooth_of_fiber_essSurj
     φ.toFunctor.EssSurj
 ```
 
-**`Deformation.completionMap_essSurj_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean#L278). The attribute's comment: “completion\_essentially\_surjective”.
+**`Deformation.completionMap_essSurj_of_isSmooth_of_fiber_essSurj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/EssentiallySurjective.lean#L278). The attribute's comment: “completion\_essentially\_surjective”.
 
 > A smooth morphism, essentially surjective over the residue field, is
 > essentially surjective after completion.
@@ -318,7 +318,7 @@ public theorem completionMap_essSurj_of_isSmooth_of_fiber_essSurj
 
 [Tag 06HR](https://stacks.math.columbia.edu/tag/06HR) in the Stacks Project.
 
-**`Deformation.IsVersal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Versal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Smooth/Versal.lean#L94). References: SGA 7 VI (1.19), “(1)”; SGA 7 VI (1.9), “versal formal object”.
+**`Deformation.IsVersal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Smooth/Versal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Smooth/Versal.lean#L94). References: SGA 7 VI (1.19), “(1)”; SGA 7 VI (1.9), “versal formal object”.
 
 > A formal object is versal when its associated morphism from the represented
 > functor is smooth, independently of the auxiliary pushforward choices.
@@ -332,7 +332,7 @@ public abbrev IsVersal (hp : IsCofiberedInGroupoids p)
 
 [Tag 06HS](https://stacks.math.columbia.edu/tag/06HS) in the Stacks Project.
 
-**`Deformation.isVersal_iff_lifts_artinian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 716](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L716). The attribute's comment: “lifting criterion”. References: SGA 7 VI (2.2(d)), “lifting criterion”; SGA 7 VI (1.9), “versal formal object”; SGA 7 VI (1.19), “(1)”.
+**`Deformation.isVersal_iff_lifts_artinian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 716](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L716). The attribute's comment: “lifting criterion”. References: SGA 7 VI (2.2(d)), “lifting criterion”; SGA 7 VI (1.9), “versal formal object”; SGA 7 VI (1.19), “(1)”.
 
 > Versality is equivalent to solving every lifting triangle in the completion
 > whose lower arrow is a surjective map of Artinian local algebras.
@@ -349,7 +349,7 @@ public theorem isVersal_iff_lifts_artinian
               ∀ (a : ξ ⟶ x), ∃ b : ξ ⟶ y, b ≫ g = a
 ```
 
-**`Deformation.isVersal_iff_lifts_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L745). The attribute's comment: “small-extension criterion”.
+**`Deformation.isVersal_iff_lifts_smallExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 745](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L745). The attribute's comment: “small-extension criterion”.
 
 > In the intrinsic lifting criterion, it suffices to test small extensions
 > of Artinian local algebras.
@@ -367,7 +367,7 @@ public theorem isVersal_iff_lifts_smallExtensions
               ∀ (a : ξ ⟶ x), ∃ b : ξ ⟶ y, b ≫ g = a
 ```
 
-**`Deformation.isSmooth_associatedMorphism_iff_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 812](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L812). The attribute's comment: “independence of pushforwards”. References: SGA 7 VI (2.2(d)), “smooth ⟺ versal”.
+**`Deformation.isSmooth_associatedMorphism_iff_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/VersalLifting.lean, line 812](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/VersalLifting.lean#L812). The attribute's comment: “independence of pushforwards”. References: SGA 7 VI (2.2(d)), “smooth ⟺ versal”.
 
 > Smoothness of the morphism associated to a formal object is independent of
 > the choices of pushforwards used to construct that morphism.
@@ -384,7 +384,7 @@ public theorem isSmooth_associatedMorphism_iff_isVersal
 
 [Tag 06HT](https://stacks.math.columbia.edu/tag/06HT) in the Stacks Project.
 
-**`Deformation.nonempty_hom_of_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MapsToFormalObject.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/MapsToFormalObject.lean#L306).
+**`Deformation.nonempty_hom_of_isVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MapsToFormalObject.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/MapsToFormalObject.lean#L306).
 
 > A versal formal object admits a morphism to every formal object.
 
@@ -401,4 +401,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.8, Tag 06HF](https://stacks.math.columbia.edu/tag/06HF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

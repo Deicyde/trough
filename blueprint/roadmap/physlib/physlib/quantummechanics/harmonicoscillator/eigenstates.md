@@ -8,7 +8,7 @@ proof: formalized
 
 # Energy eigenstates of the quantum harmonic oscillator
 
-The module `Physlib.QuantumMechanics.HarmonicOscillator.Eigenstates`, [Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean): 27 declarations, 21 with a docstring.
+The module `Physlib.QuantumMechanics.HarmonicOscillator.Eigenstates`, [Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean): 27 declarations, 21 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.Eigenstates`, [Physlib/Q
 
 ## A.1. Energy eigenvalues
 
-**`QuantumMechanics.HarmonicOscillator.eigenEnergy`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L83).
+**`QuantumMechanics.HarmonicOscillator.eigenEnergy`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L83).
 
 > The energy eigenvalues, `∑ i, ℏ ωᵢ (nᵢ + ½)`.
 
@@ -51,13 +51,13 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.Eigenstates`, [Physlib/Q
 def eigenEnergy : ℝ
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenEnergy_eq`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L85).
+**`QuantumMechanics.HarmonicOscillator.eigenEnergy_eq`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L85).
 
 ```lean
 lemma eigenEnergy_eq : Q.eigenEnergy n = ∑ i, ℏ * Q.ω i * (n i + 1 / 2)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenEnergy_strictMono`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L87).
+**`QuantumMechanics.HarmonicOscillator.eigenEnergy_strictMono`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L87).
 
 ```lean
 lemma eigenEnergy_strictMono : StrictMono Q.eigenEnergy
@@ -65,7 +65,7 @@ lemma eigenEnergy_strictMono : StrictMono Q.eigenEnergy
 
 ### A.2. Eigenfunctions
 
-**`QuantumMechanics.HarmonicOscillator.eigenCoeff`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L97).
+**`QuantumMechanics.HarmonicOscillator.eigenCoeff`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L97).
 
 > The `i`th normalization constant for `Q.eigenfunction n`, `1 / √(2 ^ nᵢ * nᵢ! * √π * ξᵢ)`.
 
@@ -73,13 +73,13 @@ lemma eigenEnergy_strictMono : StrictMono Q.eigenEnergy
 def eigenCoeff (i : Fin d) : ℝ
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenCoeff_eq`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L99).
+**`QuantumMechanics.HarmonicOscillator.eigenCoeff_eq`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L99).
 
 ```lean
 lemma eigenCoeff_eq (i : Fin d) : Q.eigenCoeff n i = 1 / √(2 ^ n i * (n i)! * √π * Q.ξ i)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenCoeff_update_succ`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L102).
+**`QuantumMechanics.HarmonicOscillator.eigenCoeff_update_succ`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L102).
 
 > `√(nᵢ + 1) c(n + eᵢ)ᵢ = c(n)ᵢ / √2`.
 
@@ -89,7 +89,7 @@ lemma eigenCoeff_update_succ (i : Fin d) (n : Fin d → ℕ) :
       = (√2)⁻¹ * Q.eigenCoeff n i
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenCoeff_update_pred`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L120).
+**`QuantumMechanics.HarmonicOscillator.eigenCoeff_update_pred`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L120).
 
 > `√nᵢ c(n - eᵢ)ᵢ = 2 nᵢ c(n)ᵢ / √2` (both sides vanish when `nᵢ = 0`).
 
@@ -99,7 +99,7 @@ lemma eigenCoeff_update_pred (i : Fin d) (n : Fin d → ℕ) :
       = (√2)⁻¹ * (2 * n i) * Q.eigenCoeff n i
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenfunction`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L145).
+**`QuantumMechanics.HarmonicOscillator.eigenfunction`**, a def, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L145).
 
 > The eigenfunction labelled by the integer quantum numbers `n : Fin d → ℕ`, defined as a product
 > of (physicist's) Hermite polynomials multiplying a Gaussian with covariance controlled
@@ -109,7 +109,7 @@ lemma eigenCoeff_update_pred (i : Fin d) (n : Fin d → ℕ) :
 def eigenfunction : 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenfunction_eq`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L149).
+**`QuantumMechanics.HarmonicOscillator.eigenfunction_eq`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L149).
 
 ```lean
 lemma eigenfunction_eq :
@@ -117,7 +117,7 @@ lemma eigenfunction_eq :
       (fun x ↦ ∏ i, Q.eigenCoeff n i * physHermite (n i) (x i)) (stdGaussian (Space d) ℂ))
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenfunction_apply`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L153).
+**`QuantumMechanics.HarmonicOscillator.eigenfunction_apply`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L153).
 
 ```lean
 lemma eigenfunction_apply :
@@ -126,7 +126,7 @@ lemma eigenfunction_apply :
         physHermite (n i) (x i / Q.ξ i) * cexp (-2⁻¹ * (x i / Q.ξ i) ^ 2)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.oneDim`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L164).
+**`QuantumMechanics.HarmonicOscillator.oneDim`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L164).
 
 > The one-dimensional harmonic oscillator of mass `m` and angular frequency `ωⱼ`, along the
 > `j`th axis. `Q.eigenfunction n` is the product over `j` of the `nⱼ`th eigenfunctions of these
@@ -136,7 +136,7 @@ lemma eigenfunction_apply :
 def oneDim (j : Fin d) : OneDimension.HarmonicOscillator
 ```
 
-**`QuantumMechanics.HarmonicOscillator.oneDim_ξ`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L171).
+**`QuantumMechanics.HarmonicOscillator.oneDim_ξ`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L171).
 
 > The length scale of `Q.oneDim j` is `ξⱼ`.
 
@@ -144,7 +144,7 @@ def oneDim (j : Fin d) : OneDimension.HarmonicOscillator
 lemma oneDim_ξ (j : Fin d) : (Q.oneDim j).ξ = Q.ξ j
 ```
 
-**`QuantumMechanics.HarmonicOscillator.oneDim_eigenfunction_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L177).
+**`QuantumMechanics.HarmonicOscillator.oneDim_eigenfunction_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L177).
 
 > The `nⱼ`th eigenfunction of `Q.oneDim j` is `y ↦ c(n)ⱼ Hₙⱼ(y / ξⱼ) exp(-½ (y / ξⱼ)²)`.
 
@@ -155,7 +155,7 @@ lemma oneDim_eigenfunction_apply (j : Fin d) (y : ℝ) :
         cexp (-2⁻¹ * ((y : ℂ) / (Q.ξ j : ℂ)) ^ 2)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenfunction_eq_prod_oneDim`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L188).
+**`QuantumMechanics.HarmonicOscillator.eigenfunction_eq_prod_oneDim`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L188).
 
 > The eigenfunction is the product of the eigenfunctions of the one-dimensional oscillators.
 
@@ -164,7 +164,7 @@ lemma eigenfunction_eq_prod_oneDim :
     Q.eigenfunction n x = ∏ j, (Q.oneDim j).eigenfunction (n j) (x j)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.deriv_oneDim_eigenfunction`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L195).
+**`QuantumMechanics.HarmonicOscillator.deriv_oneDim_eigenfunction`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L195).
 
 > The derivative of the `nⱼ`th eigenfunction of `Q.oneDim j`,
 > `c(n)ⱼ ((2 nⱼ/ξⱼ) Hₙⱼ₋₁(y/ξⱼ) - (y/ξⱼ²) Hₙⱼ(y/ξⱼ)) exp(-½ (y/ξⱼ)²)`.
@@ -178,7 +178,7 @@ lemma deriv_oneDim_eigenfunction (j : Fin d) (y : ℝ) :
         cexp (-2⁻¹ * ((y : ℂ) / (Q.ξ j : ℂ)) ^ 2)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenfunction_update_apply`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L232).
+**`QuantumMechanics.HarmonicOscillator.eigenfunction_update_apply`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L232).
 
 > The eigenfunction with the `i`th quantum number changed to `k`, factor `i` set apart.
 
@@ -189,7 +189,7 @@ lemma eigenfunction_update_apply (i : Fin d) (k : ℕ) :
         ∏ j ∈ univ.erase i, (Q.oneDim j).eigenfunction (n j) (x j)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.deriv_eigenfunction_apply`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L242).
+**`QuantumMechanics.HarmonicOscillator.deriv_eigenfunction_apply`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L242).
 
 > The `i`th spatial derivative of the eigenfunction, factor `i` differentiated.
 
@@ -202,7 +202,7 @@ lemma deriv_eigenfunction_apply (i : Fin d) :
 
 ### A.3. Eigenstates
 
-**`QuantumMechanics.HarmonicOscillator.eigenstate`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L257).
+**`QuantumMechanics.HarmonicOscillator.eigenstate`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L257).
 
 > `Q.eigenfunction n` as an element of the Schwartz submodule of the Hilbert space.
 
@@ -210,13 +210,13 @@ lemma deriv_eigenfunction_apply (i : Fin d) :
 def eigenstate : SchwartzSubmodule d
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenstate_eq`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L259).
+**`QuantumMechanics.HarmonicOscillator.eigenstate_eq`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L259).
 
 ```lean
 lemma eigenstate_eq : Q.eigenstate n = schwartzEquiv _ (Q.eigenfunction n)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenstates_orthonormal`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L263).
+**`QuantumMechanics.HarmonicOscillator.eigenstates_orthonormal`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L263).
 
 > The energy eigenstates are orthonormal.
 
@@ -226,7 +226,7 @@ lemma eigenstates_orthonormal : ⟪(Q.eigenstate n : Q.HS), Q.eigenstate n'⟫_�
 
 ## B. The ladder operators on the eigenfunctions
 
-**`QuantumMechanics.HarmonicOscillator.raising_eigenfunction`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L286).
+**`QuantumMechanics.HarmonicOscillator.raising_eigenfunction`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L286).
 
 > `aᵢ† ψₙ = √(nᵢ + 1) ψₙ₊ₑᵢ`: the raising operator raises the `i`th quantum number by one.
 
@@ -236,7 +236,7 @@ lemma raising_eigenfunction (i : Fin d) (n : Fin d → ℕ) :
       ((Real.sqrt (n i + 1) : ℝ) : ℂ) • Q.eigenfunction (Function.update n i (n i + 1))
 ```
 
-**`QuantumMechanics.HarmonicOscillator.lowering_eigenfunction`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L320).
+**`QuantumMechanics.HarmonicOscillator.lowering_eigenfunction`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L320).
 
 > `aᵢ ψₙ = √nᵢ ψₙ₋ₑᵢ`: the lowering operator lowers the `i`th quantum number by one (and
 > annihilates the eigenfunction when `nᵢ = 0`, since `√0 = 0`).
@@ -247,7 +247,7 @@ lemma lowering_eigenfunction (i : Fin d) (n : Fin d → ℕ) :
       ((Real.sqrt (n i) : ℝ) : ℂ) • Q.eigenfunction (Function.update n i (n i - 1))
 ```
 
-**`QuantumMechanics.HarmonicOscillator.lowering_eigenfunction_zero`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L351).
+**`QuantumMechanics.HarmonicOscillator.lowering_eigenfunction_zero`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L351).
 
 > The ground state is annihilated by every lowering operator.
 
@@ -255,7 +255,7 @@ lemma lowering_eigenfunction (i : Fin d) (n : Fin d → ℕ) :
 lemma lowering_eigenfunction_zero (i : Fin d) : Q.loweringCLM i (Q.eigenfunction 0) = 0
 ```
 
-**`QuantumMechanics.HarmonicOscillator.number_eigenfunction`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L356).
+**`QuantumMechanics.HarmonicOscillator.number_eigenfunction`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L356).
 
 > `Nᵢ ψₙ = nᵢ ψₙ`: the eigenfunctions are eigenfunctions of the number operators.
 
@@ -266,7 +266,7 @@ lemma number_eigenfunction (i : Fin d) (n : Fin d → ℕ) :
 
 ## C. The eigenvalue equation
 
-**`QuantumMechanics.HarmonicOscillator.sum_number_eigenfunction`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L376).
+**`QuantumMechanics.HarmonicOscillator.sum_number_eigenfunction`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L376).
 
 > `∑ᵢ ℏ ωᵢ (Nᵢ + ½) ψₙ = Eₙ ψₙ`: the eigenvalue equation for the Hamiltonian written with the
 > number operators.
@@ -278,7 +278,7 @@ lemma sum_number_eigenfunction :
       (Q.eigenEnergy n : ℂ) • Q.eigenfunction n
 ```
 
-**`QuantumMechanics.HarmonicOscillator.eigenstate_mem_hamiltonian_domain`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L389).
+**`QuantumMechanics.HarmonicOscillator.eigenstate_mem_hamiltonian_domain`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L389).
 
 > The eigenstates lie in the domain of the Hamiltonian.
 
@@ -286,7 +286,7 @@ lemma sum_number_eigenfunction :
 lemma eigenstate_mem_hamiltonian_domain : (Q.eigenstate n : Q.HS) ∈ Q.hamiltonian.domain
 ```
 
-**`QuantumMechanics.HarmonicOscillator.hamiltonian_eigenstate`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L394).
+**`QuantumMechanics.HarmonicOscillator.hamiltonian_eigenstate`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean#L394).
 
 > `H ψₙ = Eₙ ψₙ`: the time-independent Schrodinger equation for the eigenstates, with the
 > Hamiltonian `kineticOperator + potentialOperator` of `Basic.lean`.
@@ -304,8 +304,8 @@ lemma hamiltonian_eigenstate (h : (Q.eigenstate n : Q.HS) ∈ Q.hamiltonian.doma
 
 ## Proof depends on
 
-- [Functions of temperate growth](../../mathematics/formathlib/hastemperategrowth.md)
+- [Functions of temperate growth](../../mathematics/formathlib/part-01/hastemperategrowth.md)
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean)
+- [Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean)

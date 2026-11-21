@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.31 Automorphic forms and sheaves
 
-Section 64.31 of the Stacks Project, [Tag 03VR](https://stacks.math.columbia.edu/tag/03VR). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 64.31 of the Stacks Project, [Tag 03VR](https://stacks.math.columbia.edu/tag/03VR). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03VS, a definition
 
 [Tag 03VS](https://stacks.math.columbia.edu/tag/03VS) in the Stacks Project.
 
-**`Stacks.Adeles.IsUnramifiedCuspForm`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/UnramifiedCuspForm.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/Adeles/UnramifiedCuspForm.lean#L139).
+**`Stacks.Adeles.IsUnramifiedCuspForm`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/UnramifiedCuspForm.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/Adeles/UnramifiedCuspForm.lean#L139).
 
 > An unramified cusp form on `GL₂(A)` with values in `Λ`: a function on `GL₂(A)` invariant
 > under right multiplication by `GL₂(K)` and under left multiplication by `GL₂(O)`, whose
@@ -31,7 +31,7 @@ public structure IsUnramifiedCuspForm {Λ : Type w} [AddCommMonoid Λ]
 
 [Tag 03VW](https://stacks.math.columbia.edu/tag/03VW) in the Stacks Project.
 
-**`Stacks.Adeles.GlobalFunctionField.cuspFormsWithChar_fg_and_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/CuspFormsStructure.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/CuspFormsStructure.lean#L121). The attribute's comment: “C(Λ) is defined for an arbitrary system of units φ\_v (the source leaves φ\_v unspecified), in units of the prime field for the second clause; the first clause is proved without the standing hypothesis that p is invertible in Λ”.
+**`Stacks.Adeles.GlobalFunctionField.cuspFormsWithChar_fg_and_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/CuspFormsStructure.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/CuspFormsStructure.lean#L121). The attribute's comment: “C(Λ) is defined for an arbitrary system of units φ\_v (the source leaves φ\_v unspecified), in units of the prime field for the second clause; the first clause is proved without the standing hypothesis that p is invertible in Λ”.
 
 > **Stacks 03VW.** Let `k` be a finite field of characteristic `p` and `K` a function field
 > over `k` (a finite extension of `k(x)`; this includes `K = k(X)` for every geometrically
@@ -87,7 +87,7 @@ public theorem cuspFormsWithChar_fg_and_baseChange :
 
 [Tag 03VX](https://stacks.math.columbia.edu/tag/03VX) in the Stacks Project.
 
-**`Stacks.Adeles.GlobalFunctionField.isAlgebraic_eigenvalues_of_isEigenform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/AlgebraicEigenvalues.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/AlgebraicEigenvalues.lean#L169). The attribute's comment: “the eigenvalues of an eigenform in the space of cusp forms with central character, over a field in which p is invertible, are algebraic over the prime field”.
+**`Stacks.Adeles.GlobalFunctionField.isAlgebraic_eigenvalues_of_isEigenform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/AlgebraicEigenvalues.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/Adeles/GlobalFunctionField/AlgebraicEigenvalues.lean#L170). The attribute's comment: “the eigenvalues of an eigenform in the space of cusp forms with central character, over a field in which p is invertible, are algebraic over the prime field”.
 
 > **Stacks Project, Tag 03VX.** Algebraicity of eigenvalues. Let `k` be a finite field of
 > characteristic `p`, `K` a function field over `k` (for instance `K = k(X)` for a geometrically
@@ -111,7 +111,7 @@ public theorem isAlgebraic_eigenvalues_of_isEigenform (hp : IsUnit (ringChar k :
 
 [Tag 03W0](https://stacks.math.columbia.edu/tag/03W0) in the Stacks Project.
 
-**`Stacks.TraceFormula.geometricMonodromyConjecture_of_gaitsgoryInput`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/GaitsgoryAutomorphic.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/GaitsgoryAutomorphic.lean#L285). The attribute's comment: “Gaitsgory's theorem: for l > 2n, the input the source leaves unproven (GaitsgoryInput: every rho has an attached automorphic form, cuspidal Hecke eigenforms on GL\_\{n\_j} whose Hecke polynomials multiply to the characteristic polynomials of Frobenius) implies the Conjecture (GeometricMonodromyConjecture)”.
+**`Stacks.TraceFormula.geometricMonodromyConjecture_of_gaitsgoryInput`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/GaitsgoryAutomorphic.lean, line 285](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/NumberTheory/TraceFormula/GaitsgoryAutomorphic.lean#L285). The attribute's comment: “Gaitsgory's theorem: for l > 2n, the input the source leaves unproven (GaitsgoryInput: every rho has an attached automorphic form, cuspidal Hecke eigenforms on GL\_\{n\_j} whose Hecke polynomials multiply to the characteristic polynomials of Frobenius) implies the Conjecture (GeometricMonodromyConjecture)”.
 
 > **Stacks Project, Tag 03W0 (Gaitsgory).** *The Conjecture holds if `ℓ > 2n`, modulo some
 > unproven things.* Let `k` be a finite field of characteristic `p`, `X` a smooth, geometrically
@@ -133,7 +133,7 @@ public theorem geometricMonodromyConjecture_of_gaitsgoryInput [Finite k] [IsAlgC
 
 [Tag 03W1](https://stacks.math.columbia.edu/tag/03W1) in the Stacks Project.
 
-**`AlgebraicGeometry.finite_flat_of_isUniversalFixedDeterminantDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/DeJongConjectureFiniteFlat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/DeJongConjectureFiniteFlat.lean#L71). The attribute's comment: “the theorem in full, with the determinant fixed to delta: the universal deformation ring is finite and flat over Z\_l”.
+**`AlgebraicGeometry.finite_flat_of_isUniversalFixedDeterminantDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/DeJongConjectureFiniteFlat.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/DeJongConjectureFiniteFlat.lean#L71). The attribute's comment: “the theorem in full, with the determinant fixed to delta: the universal deformation ring is finite and flat over Z\_l”.
 
 > **Stacks Project, Tag 03W1.** Let `X` be a smooth, geometrically irreducible, proper curve
 > over a finite field `k` of characteristic `p`, `k̄` an algebraic closure of `k`, `x` a geometric
@@ -188,4 +188,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.31, Tag 03VR](https://stacks.math.columbia.edu/tag/03VR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

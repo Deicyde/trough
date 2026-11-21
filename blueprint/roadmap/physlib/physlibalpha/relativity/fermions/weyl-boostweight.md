@@ -8,7 +8,7 @@ proof: formalized
 
 # The boost weights of a Weyl spinor
 
-The module `PhyslibAlpha.Relativity.Fermions.Weyl.BoostWeight`, [PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Relativity.Fermions.Weyl.BoostWeight`, [PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Relativity.Fermions.Weyl.BoostWeight`, [PhyslibAlpha/Re
 
 ## A. The boost weight along the `z`-axis
 
-**`Lorentz.weylWeight`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L53).
+**`Lorentz.weylWeight`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L53).
 
 > The boost weight of a Weyl-spinor index. Along the `z`-axis the `SL(2,ℂ)` boost is
 > the diagonal matrix `diag (t, t⁻¹)`, so the first spinor component carries weight `+1` and
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Relativity.Fermions.Weyl.BoostWeight`, [PhyslibAlpha/Re
 def weylWeight (k : Fin 2) : ℤ
 ```
 
-**`Lorentz.rightHandedWeyl_rep_boostAxis_two_basis`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L56).
+**`Lorentz.rightHandedWeyl_rep_boostAxis_two_basis`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L56).
 
 > The right-handed Weyl basis diagonalises the `z`-boost, with weights `±1`.
 
@@ -50,7 +50,7 @@ lemma rightHandedWeyl_rep_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0) (k : Fin 
       = ((t : ℝ) : ℂ) ^ (weylWeight k) • Fermion.RightHandedWeyl.basis k
 ```
 
-**`Lorentz.leftHandedWeyl_rep_boostAxis_two_basis`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L64).
+**`Lorentz.leftHandedWeyl_rep_boostAxis_two_basis`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean#L64).
 
 > The left-handed Weyl basis diagonalises the `z`-boost, with weights `±1`.
 
@@ -68,4 +68,4 @@ lemma leftHandedWeyl_rep_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0) (k : Fin 2
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean)
+- [PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean)

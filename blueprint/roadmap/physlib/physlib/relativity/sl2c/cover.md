@@ -8,7 +8,7 @@ proof: formalized
 
 # `SL(2, ℂ)` is a double cover of the restricted Lorentz group
 
-The module `Physlib.Relativity.SL2C.Cover`, [Physlib/Relativity/SL2C/Cover.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/SL2C/Cover.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.Relativity.SL2C.Cover`, [Physlib/Relativity/SL2C/Cover.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/Cover.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Relativity.SL2C.Cover`, [Physlib/Relativity/SL2C/Cover.lean]
 
 ## A. Rotations
 
-**`Lorentz.SL2C.exists_unitary_toLorentzGroup_eq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/SL2C/Cover.lean#L58).
+**`Lorentz.SL2C.exists_unitary_toLorentzGroup_eq`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/Cover.lean#L58).
 
 > Every rotation is the image of a unitary element of `SL(2, ℂ)`.
 
@@ -43,7 +43,7 @@ lemma exists_unitary_toLorentzGroup_eq (Λ : LorentzGroup.Rotations 3) :
 
 ## B. Boosts and surjectivity
 
-**`Lorentz.SL2C.exists_toVector_toLorentzGroup_eq`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/SL2C/Cover.lean#L119).
+**`Lorentz.SL2C.exists_toVector_toLorentzGroup_eq`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/Cover.lean#L119).
 
 > Every velocity is the image of the time axis under some element of `SL(2, ℂ)`.
 
@@ -52,7 +52,7 @@ lemma exists_toVector_toLorentzGroup_eq (u : Velocity 3) :
     ∃ M : SL(2, ℂ), LorentzGroup.toVector (toLorentzGroup M) = u.1
 ```
 
-**`Lorentz.SL2C.toRestrictedLorentzGroup_surjective`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/SL2C/Cover.lean#L139).
+**`Lorentz.SL2C.toRestrictedLorentzGroup_surjective`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/Cover.lean#L139).
 
 > The homomorphism from `SL(2, ℂ)` to the restricted Lorentz group is surjective.
 
@@ -73,4 +73,4 @@ lemma toRestrictedLorentzGroup_surjective : Function.Surjective toRestrictedLore
 
 ## Sources
 
-- [Physlib/Relativity/SL2C/Cover.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/SL2C/Cover.lean)
+- [Physlib/Relativity/SL2C/Cover.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/SL2C/Cover.lean)

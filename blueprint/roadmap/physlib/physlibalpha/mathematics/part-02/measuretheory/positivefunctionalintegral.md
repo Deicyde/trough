@@ -8,7 +8,7 @@ proof: formalized
 
 # Positive functionals are integrals
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.PositiveFunctionalIntegral`, [PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean): 6 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.PositiveFunctionalIntegral`, [PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean): 6 declarations, 3 with a docstring.
 
 > A positive functional given on part of `C(X, ℝ)` is integration against a probability measure.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.PositiveFunctionalIntegral`, 
 
 ## A. Scaling continuous functions preserves their order
 
-**`ContinuousMap.instPosSMulMono`**, an instance, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L56).
+**`ContinuousMap.instPosSMulMono`**, an instance, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L56).
 
 ```lean
 instance ContinuousMap.instPosSMulMono {X : Type*} [TopologicalSpace X] :
@@ -45,13 +45,13 @@ instance ContinuousMap.instPosSMulMono {X : Type*} [TopologicalSpace X] :
 
 ## B. Positive functionals are integrals
 
-**`ker_le_ker_of_nonneg`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L72).
+**`ker_le_ker_of_nonneg`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L72).
 
 ```lean
 lemma ker_le_ker_of_nonneg : LinearMap.ker T ≤ LinearMap.ker φ
 ```
 
-**`rangeFunctional`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L80).
+**`rangeFunctional`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L80).
 
 > The functional `φ` on the range of `T`.
 
@@ -59,13 +59,13 @@ lemma ker_le_ker_of_nonneg : LinearMap.ker T ≤ LinearMap.ker φ
 noncomputable def rangeFunctional : C(X, ℝ) →ₗ.[ℝ] ℝ
 ```
 
-**`rangeFunctional_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L85).
+**`rangeFunctional_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L85).
 
 ```lean
 lemma rangeFunctional_apply (v : V) : rangeFunctional T φ hpos ⟨T v, v, rfl⟩ = φ v
 ```
 
-**`exists_positive_extension`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L97).
+**`exists_positive_extension`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L97).
 
 > **M. Riesz extension**: `φ` extends to a positive functional on all continuous functions.
 
@@ -74,7 +74,7 @@ lemma exists_positive_extension : ∃ Λ : C(X, ℝ) →ₗ[ℝ] ℝ,
     (∀ v, Λ (T v) = φ v) ∧ ∀ g, 0 ≤ g → 0 ≤ Λ g
 ```
 
-**`exists_regular_probabilityMeasure_integral_eq`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L108).
+**`exists_regular_probabilityMeasure_integral_eq`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean#L108).
 
 > **Positive functionals are integrals**: a positive linear functional through `T`, equal to `1`
 > on a preimage of `1`, is integration against a regular probability measure.
@@ -90,4 +90,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/PositiveFunctionalIntegral.lean)

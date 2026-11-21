@@ -8,7 +8,7 @@ proof: formalized
 
 # 111.22 Finite locally free modules
 
-Section 111.22 of the Stacks Project, [Tag 027Q](https://stacks.math.columbia.edu/tag/027Q). 1 tag here is carried by 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 111.22 of the Stacks Project, [Tag 027Q](https://stacks.math.columbia.edu/tag/027Q). 1 tag here is carried by 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 027R, a definition
 
@@ -16,8 +16,8 @@ Section 111.22 of the Stacks Project, [Tag 027Q](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`Module.IsFiniteLocallyFree`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L132), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FiniteLocallyFreeModule.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FiniteLocallyFreeModule.lean#L25) (StacksFrontier): “finite locally free modules”.
-- [`Module.Invertible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Invertible#doc) registered with `add_to_stacks` in [StacksFrontier/Exercises/FiniteLocallyFreeModule.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FiniteLocallyFreeModule.lean#L26) (StacksFrontier): “invertible modules”.
+- [`Module.IsFiniteLocallyFree`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Module/LocallyFree/SheafBridge.lean#L132), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FiniteLocallyFreeModule.lean, line 25](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FiniteLocallyFreeModule.lean#L25) (StacksFrontier): “finite locally free modules”.
+- [`Module.Invertible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Invertible#doc) registered with `add_to_stacks` in [StacksFrontier/Exercises/FiniteLocallyFreeModule.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FiniteLocallyFreeModule.lean#L26) (StacksFrontier): “invertible modules”.
 
 ## Depends on
 
@@ -26,4 +26,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 111.22, Tag 027Q](https://stacks.math.columbia.edu/tag/027Q)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

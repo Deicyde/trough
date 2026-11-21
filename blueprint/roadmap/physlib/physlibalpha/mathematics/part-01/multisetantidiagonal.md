@@ -8,7 +8,7 @@ proof: formalized
 
 # Sums over the antidiagonal of a multiset
 
-The module `PhyslibAlpha.Mathematics.MultisetAntidiagonal`, [PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean): 12 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Mathematics.MultisetAntidiagonal`, [PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean): 12 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Mathematics.MultisetAntidiagonal`, [PhyslibAlpha/Mathem
 
 ## A. Sums over the antidiagonal
 
-**`Multiset.sum_antidiagonal_assoc`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L50).
+**`Multiset.sum_antidiagonal_assoc`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L50).
 
 > Coassociativity of antidiagonal sums: summing over `s = u + v` and then `u = x + y`
 > is summing over `s = x + t` and then `t = y + v`.
@@ -45,7 +45,7 @@ lemma sum_antidiagonal_assoc {ι M : Type*} [AddCommMonoid M]
       (p.2.antidiagonal.map fun q => h p.1 q.1 q.2).sum).sum
 ```
 
-**`Multiset.sum_antidiagonal_exchange`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L69).
+**`Multiset.sum_antidiagonal_exchange`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L69).
 
 > The exchange law of doubly-split antidiagonal sums: splitting `s = u + v` and then
 > `u = x + y`, `v = z + w` is, with the middle parts exchanged, splitting `s = u' + v'`
@@ -62,7 +62,7 @@ lemma sum_antidiagonal_exchange {ι M : Type*} [AddCommMonoid M]
         (p.2.antidiagonal.map fun r => h q.1 r.1 q.2 r.2).sum).sum).sum
 ```
 
-**`Multiset.sum_linearMap_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L88).
+**`Multiset.sum_linearMap_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L88).
 
 > A multiset sum of linear maps, applied: the sum of the applications.
 
@@ -72,7 +72,7 @@ lemma sum_linearMap_apply {R M N : Type*} [Semiring R] [AddCommMonoid M]
     S.sum x = (S.map fun f => f x).sum
 ```
 
-**`Multiset.tmul_sum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L96).
+**`Multiset.tmul_sum`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L96).
 
 > A pure tensor against a multiset sum distributes over the sum.
 
@@ -82,7 +82,7 @@ lemma tmul_sum {R M N : Type*} [CommSemiring R] [AddCommMonoid M]
     m ⊗ₜ[R] S.sum = (S.map fun n => m ⊗ₜ[R] n).sum
 ```
 
-**`Multiset.sum_antidiagonal_swap`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L104).
+**`Multiset.sum_antidiagonal_swap`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L104).
 
 > Antidiagonal sums are symmetric under swapping the two parts.
 
@@ -93,7 +93,7 @@ lemma sum_antidiagonal_swap {ι M : Type*} [AddCommMonoid M]
     (s.antidiagonal.map fun p => h p.2 p.1).sum
 ```
 
-**`Multiset.sum_map_neg''`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L117).
+**`Multiset.sum_map_neg''`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L117).
 
 > A multiset sum of negations is the negation of the sum.
 
@@ -103,7 +103,7 @@ lemma sum_map_neg'' {ι M : Type*} [AddCommGroup M]
     (s.map fun i => -f i).sum = -(s.map f).sum
 ```
 
-**`Multiset.sum_map_finsetSum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L127).
+**`Multiset.sum_map_finsetSum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L127).
 
 > The exchange of a finite sum with a multiset sum.
 
@@ -113,7 +113,7 @@ lemma sum_map_finsetSum {α β M : Type*} [AddCommMonoid M]
     (m.map fun a => ∑ b ∈ t, f b a).sum = ∑ b ∈ t, (m.map (f b)).sum
 ```
 
-**`Multiset.fst_le_of_mem_antidiagonal`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L137).
+**`Multiset.fst_le_of_mem_antidiagonal`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L137).
 
 > The first part of a splitting of `s` is a sub-multiset of `s`.
 
@@ -122,7 +122,7 @@ lemma fst_le_of_mem_antidiagonal {ι : Type*} {s : Multiset ι} {p : Multiset ι
     (hp : p ∈ s.antidiagonal) : p.1 ≤ s
 ```
 
-**`Multiset.snd_le_of_mem_antidiagonal`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L142).
+**`Multiset.snd_le_of_mem_antidiagonal`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L142).
 
 > The second part of a splitting of `s` is a sub-multiset of `s`.
 
@@ -131,7 +131,7 @@ lemma snd_le_of_mem_antidiagonal {ι : Type*} {s : Multiset ι} {p : Multiset ι
     (hp : p ∈ s.antidiagonal) : p.2 ≤ s
 ```
 
-**`Multiset.sum_antidiagonal_eq_of_fst_ne_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L149).
+**`Multiset.sum_antidiagonal_eq_of_fst_ne_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L149).
 
 > A sum over the antidiagonal of a family vanishing off `p.1 = 0` collapses to the
 > single term at `(0, s)`.
@@ -143,7 +143,7 @@ lemma sum_antidiagonal_eq_of_fst_ne_zero {ι M : Type*} [AddCommMonoid M]
     (s.antidiagonal.map F).sum = F (0, s)
 ```
 
-**`Multiset.sum_antidiagonal_eq_of_snd_ne_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L171).
+**`Multiset.sum_antidiagonal_eq_of_snd_ne_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L171).
 
 > A sum over the antidiagonal of a family vanishing off `p.2 = 0` collapses to the
 > single term at `(s, 0)`.
@@ -155,7 +155,7 @@ lemma sum_antidiagonal_eq_of_snd_ne_zero {ι M : Type*} [AddCommMonoid M]
     (s.antidiagonal.map F).sum = F (s, 0)
 ```
 
-**`Multiset.sum_antidiagonal_middle_exchange`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L185).
+**`Multiset.sum_antidiagonal_middle_exchange`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean#L185).
 
 > The exchange of the second and third slot in a nested antidiagonal sum.
 
@@ -174,4 +174,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean)
+- [PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MultisetAntidiagonal.lean)

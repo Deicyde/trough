@@ -8,7 +8,7 @@ proof: formalized
 
 # The Standard Model gauge group as local gauge data
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.LocalGaugeData`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean): 17 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.LocalGaugeData`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean): 17 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.LocalGaugeData`, [Ph
 > group over the same gauge group would be a second, equally canonical package — so nothing
 > is registered globally.
 
-**`StandardModel.localGaugeData`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L80).
+**`StandardModel.localGaugeData`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L80).
 
 > The Standard Model gauge group as local gauge data, for the jet gauge group
 > `JetGaugeGroupI` and its Lie algebra `JetGaugeAlgebra` over the global group
@@ -67,7 +67,7 @@ noncomputable def localGaugeData :
     LocalGaugeData GaugeGroupI GaugeAlgebra JetGaugeGroupI JetGaugeAlgebra
 ```
 
-**`StandardModel.instFreeLocalGaugeData`**, an instance, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L88).
+**`StandardModel.instFreeLocalGaugeData`**, an instance, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L88).
 
 > The Standard Model package is free. It is the local gauge data of the factors
 > `SU(3)`, `SU(2)` and `U(1)`, each free, and freeness passes to products:
@@ -83,45 +83,45 @@ instance instFreeLocalGaugeData : localGaugeData.Free
 > These rules point from the generic interface to the Standard Model definitions, which is
 > the direction in which the existing Standard Model lemmas become applicable.
 
-**`StandardModel.localGaugeData_eval`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L133).
+**`StandardModel.localGaugeData_eval`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L133).
 
 ```lean
 lemma localGaugeData_eval : localGaugeData.eval = JetGaugeGroupI.eval
 ```
 
-**`StandardModel.localGaugeData_ofConstant`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L136).
+**`StandardModel.localGaugeData_ofConstant`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L136).
 
 ```lean
 lemma localGaugeData_ofConstant : localGaugeData.ofConstant = JetGaugeGroupI.ofConstant
 ```
 
-**`StandardModel.localGaugeData_evalLie`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L139).
+**`StandardModel.localGaugeData_evalLie`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L139).
 
 ```lean
 lemma localGaugeData_evalLie : localGaugeData.evalLie = JetGaugeAlgebra.eval
 ```
 
-**`StandardModel.localGaugeData_ofConstantLie`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L142).
+**`StandardModel.localGaugeData_ofConstantLie`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L142).
 
 ```lean
 lemma localGaugeData_ofConstantLie :
     localGaugeData.ofConstantLie = JetGaugeAlgebra.ofConstant
 ```
 
-**`StandardModel.localGaugeData_adjoint`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L146).
+**`StandardModel.localGaugeData_adjoint`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L146).
 
 ```lean
 lemma localGaugeData_adjoint : localGaugeData.adjoint = GaugeAlgebra.adjoint
 ```
 
-**`StandardModel.localGaugeData_deriv`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L149).
+**`StandardModel.localGaugeData_deriv`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L149).
 
 ```lean
 lemma localGaugeData_deriv (μ : Fin 1 ⊕ Fin 3) :
     localGaugeData.deriv μ = JetGaugeAlgebra.deriv μ
 ```
 
-**`StandardModel.localGaugeData_iteratedDeriv`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L155).
+**`StandardModel.localGaugeData_iteratedDeriv`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L155).
 
 > The generic iterated derivative is the Standard Model iterated derivative, both being
 > the same fold of `JetGaugeAlgebra.deriv` over the multiset of directions.
@@ -131,26 +131,26 @@ lemma localGaugeData_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) :
     localGaugeData.iteratedDeriv s = JetGaugeAlgebra.iteratedDeriv s
 ```
 
-**`StandardModel.localGaugeData_mulCoord`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L159).
+**`StandardModel.localGaugeData_mulCoord`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L159).
 
 ```lean
 lemma localGaugeData_mulCoord (μ : Fin 1 ⊕ Fin 3) :
     localGaugeData.mulCoord μ = JetGaugeAlgebra.coord μ
 ```
 
-**`StandardModel.localGaugeData_adjointJ`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L163).
+**`StandardModel.localGaugeData_adjointJ`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L163).
 
 ```lean
 lemma localGaugeData_adjointJ : localGaugeData.adjointJ = JetGaugeAlgebra.adjoint
 ```
 
-**`StandardModel.localGaugeData_maurerCartan`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L166).
+**`StandardModel.localGaugeData_maurerCartan`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L166).
 
 ```lean
 lemma localGaugeData_maurerCartan : localGaugeData.maurerCartan = maurerCartanForm
 ```
 
-**`StandardModel.localGaugeData_adjointCoeff_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L170).
+**`StandardModel.localGaugeData_adjointCoeff_apply`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L170).
 
 > The adjoint Taylor coefficients of the package, written out in Standard Model terms.
 
@@ -162,7 +162,7 @@ lemma localGaugeData_adjointCoeff_apply (U : JetGaugeGroupI) (x : Multiset (Fin 
         (JetGaugeAlgebra.adjointMap U (JetGaugeAlgebra.ofConstant a)))
 ```
 
-**`StandardModel.localGaugeData_adjointCoeff_toSU3Matrix`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L177).
+**`StandardModel.localGaugeData_adjointCoeff_toSU3Matrix`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L177).
 
 > The `su(3)` component of the adjoint Taylor coefficients.
 
@@ -175,7 +175,7 @@ lemma localGaugeData_adjointCoeff_toSU3Matrix (U : JetGaugeGroupI)
           MvPowerSeries.constantCoeff (SpaceTimeAlgebra.iteratedPDeriv p f))
 ```
 
-**`StandardModel.localGaugeData_adjointCoeff_toSU2Matrix`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L187).
+**`StandardModel.localGaugeData_adjointCoeff_toSU2Matrix`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L187).
 
 > The `su(2)` component of the adjoint Taylor coefficients.
 
@@ -187,7 +187,7 @@ lemma localGaugeData_adjointCoeff_toSU2Matrix (U : JetGaugeGroupI)
           fun f => MvPowerSeries.constantCoeff (SpaceTimeAlgebra.iteratedPDeriv p f))
 ```
 
-**`StandardModel.localGaugeData_adjointCoeff_toU1Value`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L196).
+**`StandardModel.localGaugeData_adjointCoeff_toU1Value`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L196).
 
 > The `u(1)` component of the adjoint Taylor coefficients.
 
@@ -201,7 +201,7 @@ lemma localGaugeData_adjointCoeff_toU1Value (U : JetGaugeGroupI)
 
 ## C. Faithfulness
 
-**`StandardModel.instFaithfulLocalGaugeData`**, an instance, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L217).
+**`StandardModel.instFaithfulLocalGaugeData`**, an instance, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean#L217).
 
 > The Standard Model package is faithful: an element of the jet gauge algebra is
 > determined by the base-point values of its iterated derivatives, and a jet whose
@@ -222,4 +222,4 @@ instance instFaithfulLocalGaugeData : localGaugeData.Faithful
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Mersenne31 Circle Domains
 
-`CompPoly.Fields.Mersenne31.Circle`, in [CompPoly/Fields/Mersenne31/Circle.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean), by Adrien Lacombe.
+`CompPoly.Fields.Mersenne31.Circle`, in [CompPoly/Fields/Mersenne31/Circle.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean), by Adrien Lacombe.
 
 > This module mirrors the structural circle-domain layer used by STWO over the
 > Mersenne31 field. It records the circle equation, the STWO M31 circle generator,
@@ -23,7 +23,7 @@ proof: formalized
 > range cardinality. Circle domains still need a validity condition requiring disjoint
 > halves before their declared size can be identified with set cardinality.
 
-`Mersenne31.Circle.OnCircle` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L38))
+`Mersenne31.Circle.OnCircle` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L38))
 
 > Predicate for points on the circle `x^2 + y^2 = 1`.
 
@@ -31,7 +31,7 @@ proof: formalized
 def OnCircle (x y : Field) : Prop
 ```
 
-`Mersenne31.Circle.Point` (structure, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L46))
+`Mersenne31.Circle.Point` (structure, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L46))
 
 > A point on the Mersenne31 circle.
 
@@ -42,7 +42,7 @@ structure Point where
   onCircle : OnCircle x y
 ```
 
-`Mersenne31.Circle.Point.ext` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L55))
+`Mersenne31.Circle.Point.ext` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L55))
 
 > Two circle points are equal when both coordinates are equal.
 
@@ -50,7 +50,7 @@ structure Point where
 theorem ext {p q : Point} (hx : p.x = q.x) (hy : p.y = q.y) : p = q
 ```
 
-`Mersenne31.Circle.Point.zero` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L61))
+`Mersenne31.Circle.Point.zero` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L61))
 
 > The identity point of the circle group.
 
@@ -58,7 +58,7 @@ theorem ext {p q : Point} (hx : p.x = q.x) (hy : p.y = q.y) : p = q
 def zero : Point
 ```
 
-`Mersenne31.Circle.Point.conjugate` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L68))
+`Mersenne31.Circle.Point.conjugate` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L68))
 
 > The circle-group inverse, equal to complex conjugation.
 
@@ -66,7 +66,7 @@ def zero : Point
 def conjugate (p : Point) : Point
 ```
 
-`Mersenne31.Circle.Point.antipode` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L75))
+`Mersenne31.Circle.Point.antipode` (definition, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L75))
 
 > The antipodal point, obtained by negating both coordinates.
 
@@ -74,7 +74,7 @@ def conjugate (p : Point) : Point
 def antipode (p : Point) : Point
 ```
 
-`Mersenne31.Circle.Point.add` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L82))
+`Mersenne31.Circle.Point.add` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L82))
 
 > Circle-group addition, written as multiplication of complex coordinates.
 
@@ -82,7 +82,7 @@ def antipode (p : Point) : Point
 def add (p q : Point) : Point
 ```
 
-`Mersenne31.Circle.Point.zero_x` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L112))
+`Mersenne31.Circle.Point.zero_x` (theorem, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L112))
 
 > The identity point has x-coordinate one.
 
@@ -90,7 +90,7 @@ def add (p q : Point) : Point
 theorem zero_x : (0 : Point).x = 1
 ```
 
-`Mersenne31.Circle.Point.zero_y` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L116))
+`Mersenne31.Circle.Point.zero_y` (theorem, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L116))
 
 > The identity point has y-coordinate zero.
 
@@ -98,7 +98,7 @@ theorem zero_x : (0 : Point).x = 1
 theorem zero_y : (0 : Point).y = 0
 ```
 
-`Mersenne31.Circle.Point.conjugate_x` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L120))
+`Mersenne31.Circle.Point.conjugate_x` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L120))
 
 > Conjugation preserves the x-coordinate.
 
@@ -106,7 +106,7 @@ theorem zero_y : (0 : Point).y = 0
 theorem conjugate_x (p : Point) : (-p).x = p.x
 ```
 
-`Mersenne31.Circle.Point.conjugate_y` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L124))
+`Mersenne31.Circle.Point.conjugate_y` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L124))
 
 > Conjugation negates the y-coordinate.
 
@@ -114,7 +114,7 @@ theorem conjugate_x (p : Point) : (-p).x = p.x
 theorem conjugate_y (p : Point) : (-p).y = -p.y
 ```
 
-`Mersenne31.Circle.Point.antipode_x` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L128))
+`Mersenne31.Circle.Point.antipode_x` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L128))
 
 > The antipode negates the x-coordinate.
 
@@ -122,7 +122,7 @@ theorem conjugate_y (p : Point) : (-p).y = -p.y
 theorem antipode_x (p : Point) : p.antipode.x = -p.x
 ```
 
-`Mersenne31.Circle.Point.antipode_y` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L132))
+`Mersenne31.Circle.Point.antipode_y` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L132))
 
 > The antipode negates the y-coordinate.
 
@@ -130,7 +130,7 @@ theorem antipode_x (p : Point) : p.antipode.x = -p.x
 theorem antipode_y (p : Point) : p.antipode.y = -p.y
 ```
 
-`Mersenne31.Circle.Point.add_x` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L136))
+`Mersenne31.Circle.Point.add_x` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L136))
 
 > The x-coordinate of circle addition.
 
@@ -138,7 +138,7 @@ theorem antipode_y (p : Point) : p.antipode.y = -p.y
 theorem add_x (p q : Point) : (p + q).x = p.x * q.x - p.y * q.y
 ```
 
-`Mersenne31.Circle.Point.add_y` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L140))
+`Mersenne31.Circle.Point.add_y` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L140))
 
 > The y-coordinate of circle addition.
 
@@ -146,7 +146,7 @@ theorem add_x (p q : Point) : (p + q).x = p.x * q.x - p.y * q.y
 theorem add_y (p q : Point) : (p + q).y = p.x * q.y + p.y * q.x
 ```
 
-`Mersenne31.Circle.generatorX` (definition, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L179))
+`Mersenne31.Circle.generatorX` (definition, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L179))
 
 > STWO's Mersenne31 circle generator x-coordinate.
 
@@ -154,7 +154,7 @@ theorem add_y (p q : Point) : (p + q).y = p.x * q.y + p.y * q.x
 def generatorX : Field
 ```
 
-`Mersenne31.Circle.generatorY` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L182))
+`Mersenne31.Circle.generatorY` (definition, [line 182](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L182))
 
 > STWO's Mersenne31 circle generator y-coordinate.
 
@@ -162,7 +162,7 @@ def generatorX : Field
 def generatorY : Field
 ```
 
-`Mersenne31.Circle.generatorX_eq` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L186))
+`Mersenne31.Circle.generatorX_eq` (theorem, [line 186](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L186))
 
 > The STWO generator's x-coordinate constant is two.
 
@@ -170,7 +170,7 @@ def generatorY : Field
 theorem generatorX_eq : generatorX = 2
 ```
 
-`Mersenne31.Circle.generatorY_eq` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L190))
+`Mersenne31.Circle.generatorY_eq` (theorem, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L190))
 
 > The value of the STWO generator's y-coordinate constant.
 
@@ -178,7 +178,7 @@ theorem generatorX_eq : generatorX = 2
 theorem generatorY_eq : generatorY = 1268011823
 ```
 
-`Mersenne31.Circle.generator_onCircle` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L193))
+`Mersenne31.Circle.generator_onCircle` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L193))
 
 > STWO's Mersenne31 circle generator lies on `x^2 + y^2 = 1`.
 
@@ -186,7 +186,7 @@ theorem generatorY_eq : generatorY = 1268011823
 theorem generator_onCircle : OnCircle generatorX generatorY
 ```
 
-`Mersenne31.Circle.generator` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L198))
+`Mersenne31.Circle.generator` (definition, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L198))
 
 > STWO's generator for the Mersenne31 circle group.
 
@@ -194,7 +194,7 @@ theorem generator_onCircle : OnCircle generatorX generatorY
 def generator : Point
 ```
 
-`Mersenne31.Circle.generator_x` (theorem, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L205))
+`Mersenne31.Circle.generator_x` (theorem, [line 205](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L205))
 
 > The STWO generator has x-coordinate two.
 
@@ -202,7 +202,7 @@ def generator : Point
 theorem generator_x : generator.x = 2
 ```
 
-`Mersenne31.Circle.generator_y` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L209))
+`Mersenne31.Circle.generator_y` (theorem, [line 209](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L209))
 
 > The STWO generator's y-coordinate.
 
@@ -210,7 +210,7 @@ theorem generator_x : generator.x = 2
 theorem generator_y : generator.y = 1268011823
 ```
 
-`Mersenne31.Circle.generator_half_order` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L252))
+`Mersenne31.Circle.generator_half_order` (theorem, [line 252](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L252))
 
 > The half-order multiple of the STWO generator is the antipode of the identity.
 
@@ -218,7 +218,7 @@ theorem generator_y : generator.y = 1268011823
 theorem generator_half_order : (2 ^ 30 : Nat) • generator = Point.antipode 0
 ```
 
-`Mersenne31.Circle.logOrder` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L261))
+`Mersenne31.Circle.logOrder` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L261))
 
 > The log order of STWO's Mersenne31 circle group.
 
@@ -226,7 +226,7 @@ theorem generator_half_order : (2 ^ 30 : Nat) • generator = Point.antipode 0
 def logOrder : Nat
 ```
 
-`Mersenne31.Circle.order` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L265))
+`Mersenne31.Circle.order` (definition, [line 265](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L265))
 
 > The order of the Mersenne31 circle-index group, `2^31`.
 
@@ -234,7 +234,7 @@ def logOrder : Nat
 def order : Nat
 ```
 
-`Mersenne31.Circle.order_nsmul_generator` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L268))
+`Mersenne31.Circle.order_nsmul_generator` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L268))
 
 > The circle-index modulus annihilates the STWO generator.
 
@@ -242,7 +242,7 @@ def order : Nat
 theorem order_nsmul_generator : order • generator = 0
 ```
 
-`Mersenne31.Circle.addOrderOf_generator` (theorem, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L281))
+`Mersenne31.Circle.addOrderOf_generator` (theorem, [line 281](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L281))
 
 > The STWO Mersenne31 circle generator has exact additive order `2^31`.
 
@@ -250,7 +250,7 @@ theorem order_nsmul_generator : order • generator = 0
 theorem addOrderOf_generator : addOrderOf generator = 2 ^ 31
 ```
 
-`Mersenne31.Circle.CirclePointIndex` (abbreviation, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L290))
+`Mersenne31.Circle.CirclePointIndex` (abbreviation, [line 290](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L290))
 
 > Integer index for multiples of the Mersenne31 circle generator.
 
@@ -258,7 +258,7 @@ theorem addOrderOf_generator : addOrderOf generator = 2 ^ 31
 abbrev CirclePointIndex
 ```
 
-`Mersenne31.Circle.CirclePointIndex.generator` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L295))
+`Mersenne31.Circle.CirclePointIndex.generator` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L295))
 
 > The distinguished generator index.
 
@@ -266,7 +266,7 @@ abbrev CirclePointIndex
 def generator : CirclePointIndex
 ```
 
-`Mersenne31.Circle.CirclePointIndex.generator_eq` (theorem, [line 299](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L299))
+`Mersenne31.Circle.CirclePointIndex.generator_eq` (theorem, [line 299](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L299))
 
 > The distinguished generator index is one.
 
@@ -274,7 +274,7 @@ def generator : CirclePointIndex
 theorem generator_eq : generator = 1
 ```
 
-`Mersenne31.Circle.CirclePointIndex.subgroupGen` (definition, [line 303](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L303))
+`Mersenne31.Circle.CirclePointIndex.subgroupGen` (definition, [line 303](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L303))
 
 > Subgroup generator index for the subgroup of order `2^logSize`.
 > The explicit bound rules out truncated subtraction for out-of-range inputs.
@@ -283,7 +283,7 @@ theorem generator_eq : generator = 1
 def subgroupGen (logSize : Nat) (_hlogSize : logSize ≤ logOrder) : CirclePointIndex
 ```
 
-`Mersenne31.Circle.CirclePointIndex.subgroupGen_eq` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L307))
+`Mersenne31.Circle.CirclePointIndex.subgroupGen_eq` (theorem, [line 307](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L307))
 
 > The subgroup step is the corresponding power of two modulo the circle order.
 
@@ -292,7 +292,7 @@ theorem subgroupGen_eq (logSize : Nat) (h : logSize ≤ logOrder) :
     subgroupGen logSize h = ((2 ^ (logOrder - logSize) : Nat) : CirclePointIndex)
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint` (definition, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L311))
+`Mersenne31.Circle.CirclePointIndex.toPoint` (definition, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L311))
 
 > Interpret the canonical representative of an index as a multiple of the STWO generator.
 
@@ -300,7 +300,7 @@ theorem subgroupGen_eq (logSize : Nat) (h : logSize ≤ logOrder) :
 def toPoint (i : CirclePointIndex) : Point
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_def` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L315))
+`Mersenne31.Circle.CirclePointIndex.toPoint_def` (theorem, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L315))
 
 > Index interpretation uses the canonical natural representative.
 
@@ -309,7 +309,7 @@ theorem toPoint_def (i : CirclePointIndex) :
     toPoint i = i.val • Circle.generator
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_zero` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L320))
+`Mersenne31.Circle.CirclePointIndex.toPoint_zero` (theorem, [line 320](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L320))
 
 > Index zero maps to the circle identity.
 
@@ -317,7 +317,7 @@ theorem toPoint_def (i : CirclePointIndex) :
 theorem toPoint_zero : toPoint 0 = 0
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_generator` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L326))
+`Mersenne31.Circle.CirclePointIndex.toPoint_generator` (theorem, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L326))
 
 > The distinguished index maps to the STWO circle generator.
 
@@ -325,7 +325,7 @@ theorem toPoint_zero : toPoint 0 = 0
 theorem toPoint_generator : toPoint CirclePointIndex.generator = Circle.generator
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_one` (theorem, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L332))
+`Mersenne31.Circle.CirclePointIndex.toPoint_one` (theorem, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L332))
 
 > Index one maps to the STWO circle generator.
 
@@ -333,7 +333,7 @@ theorem toPoint_generator : toPoint CirclePointIndex.generator = Circle.generato
 theorem toPoint_one : toPoint 1 = Circle.generator
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_add` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L337))
+`Mersenne31.Circle.CirclePointIndex.toPoint_add` (theorem, [line 337](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L337))
 
 > Index addition agrees with circle addition, including wraparound at the circle order.
 
@@ -341,7 +341,7 @@ theorem toPoint_one : toPoint 1 = Circle.generator
 theorem toPoint_add (i j : CirclePointIndex) : toPoint (i + j) = toPoint i + toPoint j
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPointHom` (definition, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L343))
+`Mersenne31.Circle.CirclePointIndex.toPointHom` (definition, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L343))
 
 > The additive homomorphism interpreting circle indices as points.
 
@@ -349,7 +349,7 @@ theorem toPoint_add (i j : CirclePointIndex) : toPoint (i + j) = toPoint i + toP
 def toPointHom : CirclePointIndex →+ Point
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPointHom_apply` (theorem, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L350))
+`Mersenne31.Circle.CirclePointIndex.toPointHom_apply` (theorem, [line 350](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L350))
 
 > The homomorphism uses the executable index interpretation.
 
@@ -357,7 +357,7 @@ def toPointHom : CirclePointIndex →+ Point
 theorem toPointHom_apply (i : CirclePointIndex) : toPointHom i = toPoint i
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_injective` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L353))
+`Mersenne31.Circle.CirclePointIndex.toPoint_injective` (theorem, [line 353](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L353))
 
 > Different circle indices represent different points.
 
@@ -365,7 +365,7 @@ theorem toPointHom_apply (i : CirclePointIndex) : toPointHom i = toPoint i
 theorem toPoint_injective : Function.Injective toPoint
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_inj` (theorem, [line 363](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L363))
+`Mersenne31.Circle.CirclePointIndex.toPoint_inj` (theorem, [line 363](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L363))
 
 > Equality of interpreted points is exactly equality of their indices.
 
@@ -373,7 +373,7 @@ theorem toPoint_injective : Function.Injective toPoint
 theorem toPoint_inj {i j : CirclePointIndex} : toPoint i = toPoint j ↔ i = j
 ```
 
-`Mersenne31.Circle.CirclePointIndex.addOrderOf_toPoint` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L367))
+`Mersenne31.Circle.CirclePointIndex.addOrderOf_toPoint` (theorem, [line 367](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L367))
 
 > Interpreting an index preserves its additive order.
 
@@ -382,7 +382,7 @@ theorem addOrderOf_toPoint (i : CirclePointIndex) :
     addOrderOf (toPoint i) = addOrderOf i
 ```
 
-`Mersenne31.Circle.CirclePointIndex.addOrderOf_subgroupGen` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L372))
+`Mersenne31.Circle.CirclePointIndex.addOrderOf_subgroupGen` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L372))
 
 > The subgroup step has the requested exact order, including log sizes zero and 31.
 
@@ -391,7 +391,7 @@ theorem addOrderOf_subgroupGen (n : Nat) (h : n ≤ logOrder) :
     addOrderOf (subgroupGen n h) = 2 ^ n
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_neg` (theorem, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L384))
+`Mersenne31.Circle.CirclePointIndex.toPoint_neg` (theorem, [line 384](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L384))
 
 > Negating an index conjugates its circle point.
 
@@ -399,7 +399,7 @@ theorem addOrderOf_subgroupGen (n : Nat) (h : n ≤ logOrder) :
 theorem toPoint_neg (i : CirclePointIndex) : toPoint (-i) = -toPoint i
 ```
 
-`Mersenne31.Circle.CirclePointIndex.toPoint_sub` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L389))
+`Mersenne31.Circle.CirclePointIndex.toPoint_sub` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L389))
 
 > Subtracting indices agrees with subtracting their circle points.
 
@@ -407,7 +407,7 @@ theorem toPoint_neg (i : CirclePointIndex) : toPoint (-i) = -toPoint i
 theorem toPoint_sub (i j : CirclePointIndex) : toPoint (i - j) = toPoint i - toPoint j
 ```
 
-`Mersenne31.Circle.CirclePointIndex.subgroupGen_zero` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L394))
+`Mersenne31.Circle.CirclePointIndex.subgroupGen_zero` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L394))
 
 > The subgroup generator for the trivial subgroup is zero modulo the circle order.
 
@@ -415,7 +415,7 @@ theorem toPoint_sub (i j : CirclePointIndex) : toPoint (i - j) = toPoint i - toP
 theorem subgroupGen_zero (h : 0 ≤ logOrder) : subgroupGen 0 h = 0
 ```
 
-`Mersenne31.Circle.CirclePointIndex.subgroupGen_logOrder` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L400))
+`Mersenne31.Circle.CirclePointIndex.subgroupGen_logOrder` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L400))
 
 > The full-order subgroup generator is the distinguished generator index.
 
@@ -424,7 +424,7 @@ theorem subgroupGen_logOrder (h : logOrder ≤ logOrder) :
     subgroupGen logOrder h = generator
 ```
 
-`Mersenne31.Circle.Coset` (structure, [line 409](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L409))
+`Mersenne31.Circle.Coset` (structure, [line 409](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L409))
 
 > An indexing shape with a fixed additive step.
 > No relation between `stepSize` and `logSize` is required; a zero step is allowed.
@@ -438,7 +438,7 @@ structure Coset where
   logSize_le_logOrder : logSize ≤ logOrder
 ```
 
-`Mersenne31.Circle.Coset.new` (definition, [line 418](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L418))
+`Mersenne31.Circle.Coset.new` (definition, [line 418](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L418))
 
 > Create a coset with STWO's subgroup step for `logSize`.
 
@@ -447,7 +447,7 @@ def new (initialIndex : CirclePointIndex) (logSize : Nat) (hlogSize : logSize �
     Coset
 ```
 
-`Mersenne31.Circle.Coset.new_initialIndex` (theorem, [line 427](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L427))
+`Mersenne31.Circle.Coset.new_initialIndex` (theorem, [line 427](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L427))
 
 > The coset constructor preserves the initial index.
 
@@ -456,7 +456,7 @@ theorem new_initialIndex (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
     (new i n h).initialIndex = i
 ```
 
-`Mersenne31.Circle.Coset.new_stepSize` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L432))
+`Mersenne31.Circle.Coset.new_stepSize` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L432))
 
 > The coset constructor uses the subgroup generator as its step.
 
@@ -465,7 +465,7 @@ theorem new_stepSize (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
     (new i n h).stepSize = CirclePointIndex.subgroupGen n h
 ```
 
-`Mersenne31.Circle.Coset.new_logSize` (theorem, [line 437](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L437))
+`Mersenne31.Circle.Coset.new_logSize` (theorem, [line 437](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L437))
 
 > The coset constructor preserves the log size.
 
@@ -474,7 +474,7 @@ theorem new_logSize (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
     (new i n h).logSize = n
 ```
 
-`Mersenne31.Circle.Coset.subgroup` (definition, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L441))
+`Mersenne31.Circle.Coset.subgroup` (definition, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L441))
 
 > The additive subgroup of size `2^logSize`.
 
@@ -482,7 +482,7 @@ theorem new_logSize (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
 def subgroup (logSize : Nat) (hlogSize : logSize ≤ logOrder) : Coset
 ```
 
-`Mersenne31.Circle.Coset.subgroup_eq` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L445))
+`Mersenne31.Circle.Coset.subgroup_eq` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L445))
 
 > A subgroup is the coset starting at zero.
 
@@ -490,7 +490,7 @@ def subgroup (logSize : Nat) (hlogSize : logSize ≤ logOrder) : Coset
 theorem subgroup_eq (n : Nat) (h : n ≤ logOrder) : subgroup n h = new 0 n h
 ```
 
-`Mersenne31.Circle.Coset.odds` (definition, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L448))
+`Mersenne31.Circle.Coset.odds` (definition, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L448))
 
 > The STWO coset `G_{2n} + <G_n>`.
 
@@ -498,7 +498,7 @@ theorem subgroup_eq (n : Nat) (h : n ≤ logOrder) : subgroup n h = new 0 n h
 def odds (logSize : Nat) (hlogSize : logSize + 1 ≤ logOrder) : Coset
 ```
 
-`Mersenne31.Circle.Coset.odds_eq` (theorem, [line 453](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L453))
+`Mersenne31.Circle.Coset.odds_eq` (theorem, [line 453](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L453))
 
 > The odds coset starts at the next larger subgroup's generator.
 
@@ -508,7 +508,7 @@ theorem odds_eq (n : Nat) (h : n + 1 ≤ logOrder) :
       (Nat.le_trans (Nat.le_succ n) h)
 ```
 
-`Mersenne31.Circle.Coset.halfOdds` (definition, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L458))
+`Mersenne31.Circle.Coset.halfOdds` (definition, [line 458](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L458))
 
 > The STWO coset `G_{4n} + <G_n>`, whose conjugate completes `odds (logSize + 1)`.
 
@@ -516,7 +516,7 @@ theorem odds_eq (n : Nat) (h : n + 1 ≤ logOrder) :
 def halfOdds (logSize : Nat) (hlogSize : logSize + 2 ≤ logOrder) : Coset
 ```
 
-`Mersenne31.Circle.Coset.halfOdds_eq` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L463))
+`Mersenne31.Circle.Coset.halfOdds_eq` (theorem, [line 463](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L463))
 
 > The half-odds coset starts two subgroup levels above its step.
 
@@ -526,7 +526,7 @@ theorem halfOdds_eq (n : Nat) (h : n + 2 ≤ logOrder) :
       (Nat.le_trans (Nat.le_add_right n 2) h)
 ```
 
-`Mersenne31.Circle.Coset.size` (definition, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L468))
+`Mersenne31.Circle.Coset.size` (definition, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L468))
 
 > Declared number of index positions, not necessarily the number of distinct points.
 
@@ -534,7 +534,7 @@ theorem halfOdds_eq (n : Nat) (h : n + 2 ≤ logOrder) :
 def size (c : Coset) : Nat
 ```
 
-`Mersenne31.Circle.Coset.size_eq` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L473))
+`Mersenne31.Circle.Coset.size_eq` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L473))
 
 > A coset's size is two to its log size.
 
@@ -542,7 +542,7 @@ def size (c : Coset) : Nat
 theorem size_eq (c : Coset) : c.size = 2 ^ c.logSize
 ```
 
-`Mersenne31.Circle.Coset.indexAt` (definition, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L476))
+`Mersenne31.Circle.Coset.indexAt` (definition, [line 476](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L476))
 
 > The `i`th index in the coset order.
 
@@ -550,7 +550,7 @@ theorem size_eq (c : Coset) : c.size = 2 ^ c.logSize
 def indexAt (c : Coset) (i : Nat) : CirclePointIndex
 ```
 
-`Mersenne31.Circle.Coset.indexAt_eq` (theorem, [line 482](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L482))
+`Mersenne31.Circle.Coset.indexAt_eq` (theorem, [line 482](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L482))
 
 > Closed-form coset indexing, without recursive expansion of literal indices.
 > Lower priority lets the zero and conjugation lemmas simplify first.
@@ -560,7 +560,7 @@ theorem indexAt_eq (c : Coset) (i : Nat) :
     c.indexAt i = c.initialIndex + c.stepSize * (i : CirclePointIndex)
 ```
 
-`Mersenne31.Circle.Coset.pointAt` (definition, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L486))
+`Mersenne31.Circle.Coset.pointAt` (definition, [line 486](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L486))
 
 > The circle point at the `i`th coset index.
 
@@ -568,7 +568,7 @@ theorem indexAt_eq (c : Coset) (i : Nat) :
 def pointAt (c : Coset) (i : Nat) : Point
 ```
 
-`Mersenne31.Circle.Coset.pointAt_def` (theorem, [line 490](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L490))
+`Mersenne31.Circle.Coset.pointAt_def` (theorem, [line 490](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L490))
 
 > A coset point is the interpretation of its index.
 
@@ -577,7 +577,7 @@ theorem pointAt_def (c : Coset) (i : Nat) :
     c.pointAt i = CirclePointIndex.toPoint (c.indexAt i)
 ```
 
-`Mersenne31.Circle.Coset.Valid` (definition, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L494))
+`Mersenne31.Circle.Coset.Valid` (definition, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L494))
 
 > The step has exactly as many distinct multiples as the declared coset size.
 
@@ -585,7 +585,7 @@ theorem pointAt_def (c : Coset) (i : Nat) :
 def Valid (c : Coset) : Prop
 ```
 
-`Mersenne31.Circle.Coset.valid_iff` (theorem, [line 497](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L497))
+`Mersenne31.Circle.Coset.valid_iff` (theorem, [line 497](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L497))
 
 > Validity is an exact-order condition on the step, independent of the initial index.
 
@@ -593,7 +593,7 @@ def Valid (c : Coset) : Prop
 theorem valid_iff (c : Coset) : c.Valid ↔ addOrderOf c.stepSize = c.size
 ```
 
-`Mersenne31.Circle.Coset.new_valid` (theorem, [line 500](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L500))
+`Mersenne31.Circle.Coset.new_valid` (theorem, [line 500](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L500))
 
 > The standard constructor uses a step of the requested order.
 
@@ -602,7 +602,7 @@ theorem new_valid (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
     (new i n h).Valid
 ```
 
-`Mersenne31.Circle.Coset.subgroup_valid` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L506))
+`Mersenne31.Circle.Coset.subgroup_valid` (theorem, [line 506](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L506))
 
 > The subgroup constructor has a step of the declared order.
 
@@ -610,7 +610,7 @@ theorem new_valid (i : CirclePointIndex) (n : Nat) (h : n ≤ logOrder) :
 theorem subgroup_valid (n : Nat) (h : n ≤ logOrder) : (subgroup n h).Valid
 ```
 
-`Mersenne31.Circle.Coset.odds_valid` (theorem, [line 511](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L511))
+`Mersenne31.Circle.Coset.odds_valid` (theorem, [line 511](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L511))
 
 > The odds constructor has a step of the declared order.
 
@@ -618,7 +618,7 @@ theorem subgroup_valid (n : Nat) (h : n ≤ logOrder) : (subgroup n h).Valid
 theorem odds_valid (n : Nat) (h : n + 1 ≤ logOrder) : (odds n h).Valid
 ```
 
-`Mersenne31.Circle.Coset.halfOdds_valid` (theorem, [line 516](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L516))
+`Mersenne31.Circle.Coset.halfOdds_valid` (theorem, [line 516](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L516))
 
 > The half-odds constructor has a step of the declared order.
 
@@ -626,7 +626,7 @@ theorem odds_valid (n : Nat) (h : n + 1 ≤ logOrder) : (odds n h).Valid
 theorem halfOdds_valid (n : Nat) (h : n + 2 ≤ logOrder) : (halfOdds n h).Valid
 ```
 
-`Mersenne31.Circle.Coset.indexAt_injective` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L521))
+`Mersenne31.Circle.Coset.indexAt_injective` (theorem, [line 521](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L521))
 
 > Valid cosets enumerate distinct indices within their declared size.
 
@@ -635,7 +635,7 @@ theorem indexAt_injective (c : Coset) (hc : c.Valid) :
     Function.Injective (fun i : Fin c.size => c.indexAt i.val)
 ```
 
-`Mersenne31.Circle.Coset.pointAt_injective` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L532))
+`Mersenne31.Circle.Coset.pointAt_injective` (theorem, [line 532](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L532))
 
 > Valid cosets enumerate distinct circle points within their declared size.
 
@@ -644,7 +644,7 @@ theorem pointAt_injective (c : Coset) (hc : c.Valid) :
     Function.Injective (fun i : Fin c.size => c.pointAt i.val)
 ```
 
-`Mersenne31.Circle.Coset.card_range_indexAt` (theorem, [line 540](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L540))
+`Mersenne31.Circle.Coset.card_range_indexAt` (theorem, [line 540](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L540))
 
 > The bounded index range of a valid coset has its declared cardinality.
 
@@ -653,7 +653,7 @@ theorem card_range_indexAt (c : Coset) (hc : c.Valid) :
     Nat.card (Set.range (fun i : Fin c.size => c.indexAt i.val)) = c.size
 ```
 
-`Mersenne31.Circle.Coset.card_range_pointAt` (theorem, [line 545](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L545))
+`Mersenne31.Circle.Coset.card_range_pointAt` (theorem, [line 545](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L545))
 
 > The bounded point range of a valid coset has its declared cardinality.
 
@@ -662,7 +662,7 @@ theorem card_range_pointAt (c : Coset) (hc : c.Valid) :
     Nat.card (Set.range (fun i : Fin c.size => c.pointAt i.val)) = c.size
 ```
 
-`Mersenne31.Circle.Coset.conjugate` (definition, [line 550](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L550))
+`Mersenne31.Circle.Coset.conjugate` (definition, [line 550](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L550))
 
 > The conjugate coset `-initial - <step>`.
 
@@ -670,7 +670,7 @@ theorem card_range_pointAt (c : Coset) (hc : c.Valid) :
 def conjugate (c : Coset) : Coset
 ```
 
-`Mersenne31.Circle.Coset.indexAt_zero` (theorem, [line 558](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L558))
+`Mersenne31.Circle.Coset.indexAt_zero` (theorem, [line 558](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L558))
 
 > The first coset index is its initial index.
 
@@ -678,7 +678,7 @@ def conjugate (c : Coset) : Coset
 theorem indexAt_zero (c : Coset) : c.indexAt 0 = c.initialIndex
 ```
 
-`Mersenne31.Circle.Coset.indexAt_succ` (theorem, [line 562](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L562))
+`Mersenne31.Circle.Coset.indexAt_succ` (theorem, [line 562](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L562))
 
 > Successive coset indices differ by the fixed step size.
 
@@ -687,7 +687,7 @@ theorem indexAt_succ (c : Coset) (i : Nat) :
     c.indexAt (i + 1) = c.indexAt i + c.stepSize
 ```
 
-`Mersenne31.Circle.Coset.conjugate_logSize` (theorem, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L569))
+`Mersenne31.Circle.Coset.conjugate_logSize` (theorem, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L569))
 
 > Conjugation preserves the coset log size.
 
@@ -695,7 +695,7 @@ theorem indexAt_succ (c : Coset) (i : Nat) :
 theorem conjugate_logSize (c : Coset) : c.conjugate.logSize = c.logSize
 ```
 
-`Mersenne31.Circle.Coset.conjugate_initialIndex` (theorem, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L573))
+`Mersenne31.Circle.Coset.conjugate_initialIndex` (theorem, [line 573](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L573))
 
 > The conjugate coset starts at the negated initial index.
 
@@ -704,7 +704,7 @@ theorem conjugate_initialIndex (c : Coset) :
     c.conjugate.initialIndex = -c.initialIndex
 ```
 
-`Mersenne31.Circle.Coset.conjugate_stepSize` (theorem, [line 578](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L578))
+`Mersenne31.Circle.Coset.conjugate_stepSize` (theorem, [line 578](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L578))
 
 > The conjugate coset uses the negated step size.
 
@@ -712,7 +712,7 @@ theorem conjugate_initialIndex (c : Coset) :
 theorem conjugate_stepSize (c : Coset) : c.conjugate.stepSize = -c.stepSize
 ```
 
-`Mersenne31.Circle.Coset.conjugate_valid_iff` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L582))
+`Mersenne31.Circle.Coset.conjugate_valid_iff` (theorem, [line 582](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L582))
 
 > Conjugation preserves the exact-order condition.
 
@@ -720,7 +720,7 @@ theorem conjugate_stepSize (c : Coset) : c.conjugate.stepSize = -c.stepSize
 theorem conjugate_valid_iff (c : Coset) : c.conjugate.Valid ↔ c.Valid
 ```
 
-`Mersenne31.Circle.Coset.conjugate_indexAt` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L587))
+`Mersenne31.Circle.Coset.conjugate_indexAt` (theorem, [line 587](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L587))
 
 > Each conjugate-coset index is the negation of the corresponding original index.
 
@@ -729,7 +729,7 @@ theorem conjugate_indexAt (c : Coset) (i : Nat) :
     c.conjugate.indexAt i = -c.indexAt i
 ```
 
-`Mersenne31.Circle.CircleDomain` (structure, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L597))
+`Mersenne31.Circle.CircleDomain` (structure, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L597))
 
 > A domain indexing shape: a half coset followed by its conjugate.
 > The halves need not be disjoint, and either half may contain repeated points.
@@ -740,7 +740,7 @@ structure CircleDomain where
   halfCoset : Coset
 ```
 
-`Mersenne31.Circle.CircleDomain.new` (definition, [line 603](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L603))
+`Mersenne31.Circle.CircleDomain.new` (definition, [line 603](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L603))
 
 > Construct a circle domain from the half coset.
 
@@ -748,7 +748,7 @@ structure CircleDomain where
 def new (halfCoset : Coset) : CircleDomain
 ```
 
-`Mersenne31.Circle.CircleDomain.new_halfCoset` (theorem, [line 608](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L608))
+`Mersenne31.Circle.CircleDomain.new_halfCoset` (theorem, [line 608](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L608))
 
 > The domain constructor preserves its half coset.
 
@@ -756,7 +756,7 @@ def new (halfCoset : Coset) : CircleDomain
 theorem new_halfCoset (c : Coset) : (new c).halfCoset = c
 ```
 
-`Mersenne31.Circle.CircleDomain.logSize` (definition, [line 611](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L611))
+`Mersenne31.Circle.CircleDomain.logSize` (definition, [line 611](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L611))
 
 > Domain log size. A domain contains a half coset and its conjugate.
 
@@ -764,7 +764,7 @@ theorem new_halfCoset (c : Coset) : (new c).halfCoset = c
 def logSize (D : CircleDomain) : Nat
 ```
 
-`Mersenne31.Circle.CircleDomain.logSize_eq` (theorem, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L616))
+`Mersenne31.Circle.CircleDomain.logSize_eq` (theorem, [line 616](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L616))
 
 > A domain's log size is one more than its half coset's log size.
 
@@ -772,7 +772,7 @@ def logSize (D : CircleDomain) : Nat
 theorem logSize_eq (D : CircleDomain) : D.logSize = D.halfCoset.logSize + 1
 ```
 
-`Mersenne31.Circle.CircleDomain.size` (definition, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L619))
+`Mersenne31.Circle.CircleDomain.size` (definition, [line 619](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L619))
 
 > Declared number of index positions, not necessarily the number of distinct points.
 
@@ -780,7 +780,7 @@ theorem logSize_eq (D : CircleDomain) : D.logSize = D.halfCoset.logSize + 1
 def size (D : CircleDomain) : Nat
 ```
 
-`Mersenne31.Circle.CircleDomain.size_eq` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L623))
+`Mersenne31.Circle.CircleDomain.size_eq` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L623))
 
 > A domain's size is two to its log size.
 
@@ -788,7 +788,7 @@ def size (D : CircleDomain) : Nat
 theorem size_eq (D : CircleDomain) : D.size = 2 ^ D.logSize
 ```
 
-`Mersenne31.Circle.CircleDomain.indexAt` (definition, [line 626](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L626))
+`Mersenne31.Circle.CircleDomain.indexAt` (definition, [line 626](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L626))
 
 > The `i`th domain index: first the half coset, then the conjugate coset.
 
@@ -796,7 +796,7 @@ theorem size_eq (D : CircleDomain) : D.size = 2 ^ D.logSize
 def indexAt (D : CircleDomain) (i : Nat) : CirclePointIndex
 ```
 
-`Mersenne31.Circle.CircleDomain.indexAt_def` (theorem, [line 633](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L633))
+`Mersenne31.Circle.CircleDomain.indexAt_def` (theorem, [line 633](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L633))
 
 > Domain indexing splits at the half-coset size.
 
@@ -806,7 +806,7 @@ theorem indexAt_def (D : CircleDomain) (i : Nat) :
       else D.halfCoset.conjugate.indexAt (i - D.halfCoset.size)
 ```
 
-`Mersenne31.Circle.CircleDomain.pointAt` (definition, [line 638](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L638))
+`Mersenne31.Circle.CircleDomain.pointAt` (definition, [line 638](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L638))
 
 > The circle point at the `i`th domain index.
 
@@ -814,7 +814,7 @@ theorem indexAt_def (D : CircleDomain) (i : Nat) :
 def pointAt (D : CircleDomain) (i : Nat) : Point
 ```
 
-`Mersenne31.Circle.CircleDomain.pointAt_def` (theorem, [line 642](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L642))
+`Mersenne31.Circle.CircleDomain.pointAt_def` (theorem, [line 642](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L642))
 
 > A domain point is the interpretation of its index.
 
@@ -823,7 +823,7 @@ theorem pointAt_def (D : CircleDomain) (i : Nat) :
     D.pointAt i = CirclePointIndex.toPoint (D.indexAt i)
 ```
 
-`Mersenne31.Circle.CircleDomain.size_eq_two_mul_halfSize` (theorem, [line 647](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L647))
+`Mersenne31.Circle.CircleDomain.size_eq_two_mul_halfSize` (theorem, [line 647](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L647))
 
 > A circle domain has twice as many indices as its half coset.
 
@@ -832,7 +832,7 @@ theorem size_eq_two_mul_halfSize (D : CircleDomain) :
     D.size = 2 * D.halfCoset.size
 ```
 
-`Mersenne31.Circle.CircleDomain.indexAt_left` (theorem, [line 653](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L653))
+`Mersenne31.Circle.CircleDomain.indexAt_left` (theorem, [line 653](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L653))
 
 > Indices in the first half of a circle domain come from its half coset.
 
@@ -841,7 +841,7 @@ theorem indexAt_left (D : CircleDomain) (i : Nat) (hi : i < D.halfCoset.size) :
     D.indexAt i = D.halfCoset.indexAt i
 ```
 
-`Mersenne31.Circle.CircleDomain.indexAt_of_le` (theorem, [line 659](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L659))
+`Mersenne31.Circle.CircleDomain.indexAt_of_le` (theorem, [line 659](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L659))
 
 > Indices at or beyond the half-coset size come from the conjugate half.
 
@@ -850,7 +850,7 @@ theorem indexAt_of_le (D : CircleDomain) (i : Nat) (hi : D.halfCoset.size ≤ i)
     D.indexAt i = -D.halfCoset.indexAt (i - D.halfCoset.size)
 ```
 
-`Mersenne31.Circle.CircleDomain.indexAt_right` (theorem, [line 665](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L665))
+`Mersenne31.Circle.CircleDomain.indexAt_right` (theorem, [line 665](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L665))
 
 > Indices in the second half come from the negated half coset.
 
@@ -859,7 +859,7 @@ theorem indexAt_right (D : CircleDomain) (i : Nat) :
     D.indexAt (D.halfCoset.size + i) = -D.halfCoset.indexAt i
 ```
 
-`Mersenne31.Circle.CanonicCoset` (structure, [line 672](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L672))
+`Mersenne31.Circle.CanonicCoset` (structure, [line 672](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L672))
 
 > A canonical STWO coset `G_{2n} + <G_n>` for `1 ≤ logSize < logOrder`.
 
@@ -870,7 +870,7 @@ structure CanonicCoset where
   logSize_succ_le_logOrder : logSize + 1 ≤ logOrder
 ```
 
-`Mersenne31.Circle.CanonicCoset.coset` (definition, [line 680](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L680))
+`Mersenne31.Circle.CanonicCoset.coset` (definition, [line 680](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L680))
 
 > The full canonical coset `G_{2n} + <G_n>`.
 
@@ -878,7 +878,7 @@ structure CanonicCoset where
 def coset (c : CanonicCoset) : Coset
 ```
 
-`Mersenne31.Circle.CanonicCoset.coset_eq` (theorem, [line 684](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L684))
+`Mersenne31.Circle.CanonicCoset.coset_eq` (theorem, [line 684](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L684))
 
 > A canonical coset is the odds coset at its log size.
 
@@ -887,7 +887,7 @@ theorem coset_eq (c : CanonicCoset) :
     c.coset = Coset.odds c.logSize c.logSize_succ_le_logOrder
 ```
 
-`Mersenne31.Circle.CanonicCoset.halfCoset` (definition, [line 688](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L688))
+`Mersenne31.Circle.CanonicCoset.halfCoset` (definition, [line 688](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L688))
 
 > The half coset used to form the canonical circle domain.
 
@@ -895,7 +895,7 @@ theorem coset_eq (c : CanonicCoset) :
 def halfCoset (c : CanonicCoset) : Coset
 ```
 
-`Mersenne31.Circle.CanonicCoset.halfCoset_eq` (theorem, [line 697](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L697))
+`Mersenne31.Circle.CanonicCoset.halfCoset_eq` (theorem, [line 697](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L697))
 
 > The canonical half coset is the half-odds coset one log size below.
 
@@ -907,7 +907,7 @@ theorem halfCoset_eq (c : CanonicCoset) :
       omega)
 ```
 
-`Mersenne31.Circle.CanonicCoset.coset_valid` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L704))
+`Mersenne31.Circle.CanonicCoset.coset_valid` (theorem, [line 704](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L704))
 
 > The full canonical coset has a step of the declared order.
 
@@ -915,7 +915,7 @@ theorem halfCoset_eq (c : CanonicCoset) :
 theorem coset_valid (c : CanonicCoset) : c.coset.Valid
 ```
 
-`Mersenne31.Circle.CanonicCoset.halfCoset_valid` (theorem, [line 709](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L709))
+`Mersenne31.Circle.CanonicCoset.halfCoset_valid` (theorem, [line 709](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L709))
 
 > The canonical half coset has a step of the declared order.
 
@@ -923,7 +923,7 @@ theorem coset_valid (c : CanonicCoset) : c.coset.Valid
 theorem halfCoset_valid (c : CanonicCoset) : c.halfCoset.Valid
 ```
 
-`Mersenne31.Circle.CanonicCoset.circleDomain` (definition, [line 714](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L714))
+`Mersenne31.Circle.CanonicCoset.circleDomain` (definition, [line 714](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L714))
 
 > The canonical circle domain with the same log size.
 
@@ -931,7 +931,7 @@ theorem halfCoset_valid (c : CanonicCoset) : c.halfCoset.Valid
 def circleDomain (c : CanonicCoset) : CircleDomain
 ```
 
-`Mersenne31.Circle.CanonicCoset.circleDomain_eq` (theorem, [line 718](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L718))
+`Mersenne31.Circle.CanonicCoset.circleDomain_eq` (theorem, [line 718](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L718))
 
 > The canonical domain is built from the canonical half coset.
 
@@ -940,7 +940,7 @@ theorem circleDomain_eq (c : CanonicCoset) :
     c.circleDomain = CircleDomain.new c.halfCoset
 ```
 
-`Mersenne31.Circle.CanonicCoset.circleDomain_logSize` (theorem, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L723))
+`Mersenne31.Circle.CanonicCoset.circleDomain_logSize` (theorem, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L723))
 
 > The canonical circle domain preserves the canonical coset log size.
 
@@ -948,7 +948,7 @@ theorem circleDomain_eq (c : CanonicCoset) :
 theorem circleDomain_logSize (c : CanonicCoset) : c.circleDomain.logSize = c.logSize
 ```
 
-`Mersenne31.Circle.CanonicCoset.circleDomain_size` (theorem, [line 731](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean#L731))
+`Mersenne31.Circle.CanonicCoset.circleDomain_size` (theorem, [line 731](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean#L731))
 
 > The canonical circle domain has `2^logSize` indices.
 
@@ -962,5 +962,5 @@ theorem circleDomain_size (c : CanonicCoset) : c.circleDomain.size = 2 ^ c.logSi
 
 ## Sources
 
-- [CompPoly/Fields/Mersenne31/Circle.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Mersenne31/Circle.lean)
+- [CompPoly/Fields/Mersenne31/Circle.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Mersenne31/Circle.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Mersenne31.Circle.json)

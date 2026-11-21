@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.27 Morphisms of finite presentation
 
-Section 101.27 of the Stacks Project, [Tag 06Q1](https://stacks.math.columbia.edu/tag/06Q1). 17 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.27 of the Stacks Project, [Tag 06Q1](https://stacks.math.columbia.edu/tag/06Q1). 17 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06Q2, a definition
 
 [Tag 06Q2](https://stacks.math.columbia.edu/tag/06Q2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyOfFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean#L96). The attribute's comment: “part (1): locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyOfFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean#L96). The attribute's comment: “part (1): locally of finite presentation”.
 
 > **Stacks 06Q2, part (1).** A 1-morphism of algebraic stacks over `S` is *locally of finite
 > presentation* when it passes the universal smooth-diagram test of Stacks 06FM at local finite
@@ -27,7 +27,7 @@ abbrev IsLocallyOfFinitePresentation {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B
     (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean#L104). The attribute's comment: “part (2): finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFinitePresentation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationAlgebraicStack.lean#L104). The attribute's comment: “part (2): finite presentation”.
 
 > **Stacks 06Q2, part (2).** A 1-morphism of algebraic stacks over `S` is *of finite
 > presentation* when it is locally of finite presentation, quasi-compact and quasi-separated.
@@ -40,7 +40,7 @@ abbrev IsFinitePresentation {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f
 
 [Tag 06Q3](https://stacks.math.columbia.edu/tag/06Q3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L144). The attribute's comment: “locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L144). The attribute's comment: “locally of finite presentation”.
 
 > **Stacks 06Q3**, the local assertion. The composite of two 1-morphisms of algebraic stacks
 > over `S` which are locally of finite presentation is locally of finite presentation.
@@ -58,7 +58,7 @@ theorem isLocallyOfFinitePresentation_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStac
     IsLocallyOfFinitePresentation B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L162). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessComposition.lean#L162). The attribute's comment: “finite presentation”.
 
 > **Stacks 06Q3**, the global assertion. The composite of two 1-morphisms of algebraic stacks
 > over `S` of finite presentation is of finite presentation.
@@ -78,7 +78,7 @@ theorem isFinitePresentation_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w}
 
 [Tag 06Q4](https://stacks.math.columbia.edu/tag/06Q4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean#L101). The attribute's comment: “locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean#L101). The attribute's comment: “locally of finite presentation”.
 
 > **Stacks 06Q4**, the local assertion. A base change of a 1-morphism of algebraic stacks over
 > `S` which is locally of finite presentation is locally of finite presentation: if `P` is a 2-fibre
@@ -101,7 +101,7 @@ theorem isLocallyOfFinitePresentation_baseChange
     IsLocallyOfFinitePresentation B S hS P.fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean#L127). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationBaseChangeAlgebraicStack.lean#L127). The attribute's comment: “finite presentation”.
 
 > **Stacks 06Q4**, the global assertion. A base change of a 1-morphism of algebraic stacks over
 > `S` of finite presentation is of finite presentation.
@@ -123,7 +123,7 @@ theorem isFinitePresentation_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks
 
 [Tag 06Q5](https://stacks.math.columbia.edu/tag/06Q5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessPresentationToType.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessPresentationToType.lean#L38). The attribute's comment: “finite presentation implies finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitenessPresentationToType.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitenessPresentationToType.lean#L38). The attribute's comment: “finite presentation implies finite type”.
 
 > A 1-morphism of algebraic stacks over `S` of finite presentation is of finite type.
 
@@ -134,7 +134,7 @@ theorem isFiniteType_of_isFinitePresentation
     IsFiniteType B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L69). The attribute's comment: “first assertion”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFiniteType_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypeAlgebraicStack.lean#L69). The attribute's comment: “first assertion”.
 
 > A 1-morphism of algebraic stacks over `S` which is locally of finite presentation is locally
 > of finite type.
@@ -150,7 +150,7 @@ theorem isLocallyOfFiniteType_of_isLocallyOfFinitePresentation
 
 [Tag 0DQJ](https://stacks.math.columbia.edu/tag/0DQJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean#L120). The attribute's comment: “part (1)”. References: SGA 3 VIA (2.5.4), “more general”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean#L120). The attribute's comment: “part (1)”. References: SGA 3 VIA (2.5.4), “more general”.
 
 > **Stacks 0DQJ, part (1).** A 1-morphism of algebraic stacks over `S` which is locally of
 > finite type and whose target is locally Noetherian is locally of finite presentation. Local
@@ -174,7 +174,7 @@ theorem isLocallyOfFinitePresentation_of_isLocallyOfFiniteType
     IsLocallyOfFinitePresentation B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean#L166). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationNoetherian.lean#L166). The attribute's comment: “part (2)”.
 
 > **Stacks 0DQJ, part (2).** A 1-morphism of algebraic stacks over `S` which is of finite type
 > and quasi-separated and whose target is locally Noetherian is of finite presentation.
@@ -198,7 +198,7 @@ theorem isFinitePresentation_of_isFiniteType
 
 [Tag 06Q6](https://stacks.math.columbia.edu/tag/06Q6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean#L269).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCancellation.lean#L269).
 
 > Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over `S`. If `f ≫ g` is
 > locally of finite presentation and `g` is locally of finite type, then `f` is locally of finite
@@ -216,7 +216,7 @@ theorem isLocallyOfFinitePresentation_of_comp
 
 [Tag 0CMG](https://stacks.math.columbia.edu/tag/0CMG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean#L138). The attribute's comment: “locally of finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean#L138). The attribute's comment: “locally of finite presentation”.
 
 > **Stacks 0CMG, first assertion.** The relative diagonal of a 1-morphism of algebraic stacks
 > over `S` which is locally of finite type is locally of finite presentation.
@@ -232,7 +232,7 @@ theorem isLocallyOfFinitePresentation_relativeDiagonal
     IsLocallyOfFinitePresentation B S hS (relativeDiagonal B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean#L159). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinitePresentation_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/DiagonalFinitePresentation.lean#L159). The attribute's comment: “finite presentation”.
 
 > **Stacks 0CMG, second assertion.** The relative diagonal of a quasi-separated 1-morphism of
 > algebraic stacks over `S` which is locally of finite type is of finite presentation.
@@ -254,7 +254,7 @@ theorem isFinitePresentation_relativeDiagonal
 
 [Tag 06Q7](https://stacks.math.columbia.edu/tag/06Q7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean#L128).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFiniteness.lean#L128).
 
 > **Stacks 06Q7.** An open immersion of algebraic stacks over `S` is locally of finite
 > presentation.
@@ -276,7 +276,7 @@ theorem isLocallyOfFinitePresentation_of_isOpenImmersion
 
 [Tag 0CPP](https://stacks.math.columbia.edu/tag/0CPP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_fppfCoverStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCoverGeneral.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCoverGeneral.lean#L134).
+**`AlgebraicGeometry.Stack.hasRelativeProperty_iff_of_fppfCoverStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCoverGeneral.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyFppfCoverGeneral.lean#L134).
 
 > **Stacks 0CPP.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under base change and local on the target for the fppf precoverage, let `f : 𝒳 ⟶ 𝒴` be a
@@ -309,7 +309,7 @@ theorem hasRelativeProperty_iff_of_fppfCoverStack
 
 [Tag 0DN6](https://stacks.math.columbia.edu/tag/0DN6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasProperty_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FppfDescentProperty.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FppfDescentProperty.lean#L248).
+**`AlgebraicGeometry.Stack.hasProperty_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FppfDescentProperty.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FppfDescentProperty.lean#L248).
 
 > Let `P` be smooth local on the source-and-target, with fppf local restriction to algebraic
 > spaces, and let `g : 𝒵 ⟶ 𝒴` be surjective, flat and locally of finite presentation. If the base
@@ -335,7 +335,7 @@ theorem hasProperty_of_baseChange
 
 [Tag 06Q8](https://stacks.math.columbia.edu/tag/06Q8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationFppfDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationFppfDescent.lean#L64).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationFppfDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationFppfDescent.lean#L64).
 
 > **Stacks 06Q8.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : 𝒵 ⟶ 𝒴` be surjective, flat and locally of finite presentation. If the base change
@@ -356,7 +356,7 @@ theorem isLocallyOfFinitePresentation_of_baseChange
 
 [Tag 06Q9](https://stacks.math.columbia.edu/tag/06Q9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationDescentComposition.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationDescentComposition.lean#L294).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyOfFinitePresentation_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationDescentComposition.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FinitePresentationDescentComposition.lean#L294).
 
 > **Stacks 06Q9.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of algebraic stacks over
 > `S`. If `f ≫ g` is locally of finite presentation and `f` is surjective, flat and locally of
@@ -376,7 +376,7 @@ theorem isLocallyOfFinitePresentation_of_comp_of_fppf
 
 [Tag 06QA](https://stacks.math.columbia.edu/tag/06QA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fppfCovering_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveFlatFppfLocalSections.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveFlatFppfLocalSections.lean#L332).
+**`AlgebraicGeometry.Stack.exists_fppfCovering_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveFlatFppfLocalSections.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveFlatFppfLocalSections.lean#L332).
 
 > **Stacks 06QA.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > surjective, flat and locally of finite presentation. Then for every object `U` of the big fppf
@@ -406,7 +406,7 @@ theorem exists_fppfCovering_fibre_lift
 
 [Tag 07AN](https://stacks.math.columbia.edu/tag/07AN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fppfCovering_family_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean#L275). The attribute's comment: “the covering family and the index map”.
+**`AlgebraicGeometry.Stack.exists_fppfCovering_family_fibre_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean#L275). The attribute's comment: “the covering family and the index map”.
 
 > **Stacks 07AN.** Let `f j : 𝒳 j ⟶ 𝒴`, `j ∈ J`, be a family of 1-morphisms of algebraic stacks
 > over `S` which are each flat and locally of finite presentation and which are jointly surjective,
@@ -441,7 +441,7 @@ theorem exists_fppfCovering_family_fibre_lift {J : Type v}
                   (Over.mk (m i ≫ U.hom) : BigFppfOver B S hS) ⟶ U) α
 ```
 
-**`AlgebraicGeometry.Stack.exists_fppfCovering_fibre_lift_of_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean#L327). The attribute's comment: “the covering sieve form”.
+**`AlgebraicGeometry.Stack.exists_fppfCovering_fibre_lift_of_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean, line 327](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/JointlySurjectiveFlatFppfLocalSections.lean#L327). The attribute's comment: “the covering sieve form”.
 
 > **Stacks 07AN, with the covering as a covering sieve.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.exists_fppfCovering_family_fibre_lift` there is a covering sieve of `U`
@@ -472,7 +472,7 @@ theorem exists_fppfCovering_fibre_lift_of_family {J : Type v}
 
 [Tag 06R7](https://stacks.math.columbia.edu/tag/06R7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenMap_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatOpenPointsAlgebraicStack.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatOpenPointsAlgebraicStack.lean#L100).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenMap_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatOpenPointsAlgebraicStack.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatOpenPointsAlgebraicStack.lean#L100).
 
 > **Stacks 06R7.** A flat 1-morphism of algebraic stacks over `S` which is locally of finite
 > presentation induces an open map on the topological spaces of points of Stacks 04XG and
@@ -489,7 +489,7 @@ theorem isOpenMap_pointsMap {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f
 
 [Tag 0DQK](https://stacks.math.columbia.edu/tag/0DQK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactMorphism_fst_of_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean#L107).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactMorphism_fst_of_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean#L107).
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : 𝒵 ⟶ 𝒴` be a surjective, flat, locally finitely presented 1-morphism of algebraic stacks.
@@ -511,7 +511,7 @@ theorem isQuasiCompactMorphism_of_isQuasiCompactMorphism_fst_of_stack
 
 [Tag 0CPQ](https://stacks.math.columbia.edu/tag/0CPQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isSeparated_comp_of_universallyInjective_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationUniversallyInjectiveCoverCorrected.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationUniversallyInjectiveCoverCorrected.lean#L196). The attribute's comment: “corrected form; the statement as written is false, see Stacks.Examples.not\_forall\_isSeparated\_of\_isSeparated\_comp\_of\_universallyInjective. The added assumption is that the relative diagonal of g is separated, which is strictly weaker than g separated and holds whenever g is representable by algebraic spaces; the counterexample violates exactly it”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isSeparated_comp_of_universallyInjective_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationUniversallyInjectiveCoverCorrected.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SeparationUniversallyInjectiveCoverCorrected.lean#L196). The attribute's comment: “corrected form; the statement as written is false, see Stacks.Examples.not\_forall\_isSeparated\_of\_isSeparated\_comp\_of\_universallyInjective. The added assumption is that the relative diagonal of g is separated, which is strictly weaker than g separated and holds whenever g is representable by algebraic spaces; the counterexample violates exactly it”.
 
 > **Stacks 0CPQ, corrected: `g` with separated diagonal.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be
 > 1-morphisms of algebraic stacks over `S`. If `f` is surjective, flat, locally of finite
@@ -554,4 +554,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.27, Tag 06Q1](https://stacks.math.columbia.edu/tag/06Q1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

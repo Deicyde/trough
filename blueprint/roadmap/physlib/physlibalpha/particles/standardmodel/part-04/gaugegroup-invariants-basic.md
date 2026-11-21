@@ -8,7 +8,7 @@ proof: formalized
 
 # Families of colour and isospin components and their invariants
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean): 48 declarations, 42 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean): 48 declarations, 42 with a docstring.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.Basic`, [
 
 ## A. The factors of the gauge group
 
-**`StandardModel.GaugeGroupI.ofSU3`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L73).
+**`StandardModel.GaugeGroupI.ofSU3`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L73).
 
 > The colour factor `SU(3)` of the gauge group.
 
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Invariants.Basic`, [
 def GaugeGroupI.ofSU3 : SU 3 →* GaugeGroupI
 ```
 
-**`StandardModel.GaugeGroupI.ofSU2`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L76).
+**`StandardModel.GaugeGroupI.ofSU2`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L76).
 
 > The isospin factor `SU(2)` of the gauge group.
 
@@ -65,19 +65,19 @@ def GaugeGroupI.ofSU3 : SU 3 →* GaugeGroupI
 def GaugeGroupI.ofSU2 : SU 2 →* GaugeGroupI
 ```
 
-**`StandardModel.GaugeGroupI.ofSU3_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L79).
+**`StandardModel.GaugeGroupI.ofSU3_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L79).
 
 ```lean
 lemma GaugeGroupI.ofSU3_apply (U : SU 3) : GaugeGroupI.ofSU3 U = (U, 1, 1)
 ```
 
-**`StandardModel.GaugeGroupI.ofSU2_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L82).
+**`StandardModel.GaugeGroupI.ofSU2_apply`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L82).
 
 ```lean
 lemma GaugeGroupI.ofSU2_apply (V : SU 2) : GaugeGroupI.ofSU2 V = (1, V, 1)
 ```
 
-**`StandardModel.Family.sum_pi_two`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L87).
+**`StandardModel.Family.sum_pi_two`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L87).
 
 > A sum over pairs of indices is a double sum.
 
@@ -88,7 +88,7 @@ lemma sum_pi_two {n : ℕ} {M : Type*} [AddCommMonoid M] (F : (Fin 2 → Fin n) 
 
 ## B. One fundamental and one anti-fundamental index
 
-**`StandardModel.IsSU3FundamentalAntiFundamentalMat`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L104).
+**`StandardModel.IsSU3FundamentalAntiFundamentalMat`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L104).
 
 > The linear map `f` moves the components of `T` as `U ∈ SU(3)` moves a tensor with one
 > fundamental and one anti-fundamental index: a factor of `U` for the first index and a factor of
@@ -99,7 +99,7 @@ def IsSU3FundamentalAntiFundamentalMat (U : SU 3) (f : B →ₗ[ℂ] B) (T : (Fi
     Prop
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental`**, an abbrev, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L111).
+**`StandardModel.IsSU3FundamentalAntiFundamental`**, an abbrev, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L111).
 
 > A family `T^a{}_b` with one fundamental and one anti-fundamental colour index: its map out of
 > the tensors of `SU(3)` is equivariant for the colour factor of the gauge group.
@@ -109,7 +109,7 @@ abbrev IsSU3FundamentalAntiFundamental (B : Type*) [AddCommGroup B] [Module ℂ 
     (repGauge : Representation ℂ GaugeGroupI B) (T : (Fin 2 → Fin 3) → B) : Prop
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamentalMat`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L118).
+**`StandardModel.IsSU2FundamentalAntiFundamentalMat`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L118).
 
 > The linear map `f` moves the components of `T` as `V ∈ SU(2)` moves a tensor with one
 > fundamental and one anti-fundamental index.
@@ -119,7 +119,7 @@ def IsSU2FundamentalAntiFundamentalMat (V : SU 2) (f : B →ₗ[ℂ] B) (T : (Fi
     Prop
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental`**, an abbrev, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L125).
+**`StandardModel.IsSU2FundamentalAntiFundamental`**, an abbrev, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L125).
 
 > A family `T^a{}_b` with one fundamental and one anti-fundamental isospin index: its map out
 > of the tensors of `SU(2)` is equivariant for the isospin factor of the gauge group.
@@ -129,7 +129,7 @@ abbrev IsSU2FundamentalAntiFundamental (B : Type*) [AddCommGroup B] [Module ℂ 
     (repGauge : Representation ℂ GaugeGroupI B) (T : (Fin 2 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.of_law`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L135).
+**`StandardModel.IsSU3FundamentalAntiFundamental.of_law`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L135).
 
 > A family obeying the law for every colour rotation is such a family.
 
@@ -138,7 +138,7 @@ lemma of_law (hT : ∀ U : SU 3, IsSU3FundamentalAntiFundamentalMat U (repGauge 
     IsSU3FundamentalAntiFundamental B repGauge T
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.sum`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L140).
+**`StandardModel.IsSU3FundamentalAntiFundamental.sum`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L140).
 
 > A finite sum of such families is such a family.
 
@@ -148,7 +148,7 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 3) → B}
     IsSU3FundamentalAntiFundamental B repGauge (fun l => ∑ i, T i l)
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.deltaContraction`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L147).
+**`StandardModel.IsSU3FundamentalAntiFundamental.deltaContraction`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L147).
 
 > The delta contraction `∑ a, T ![a, a]`.
 
@@ -156,14 +156,14 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 3) → B}
 def deltaContraction (T : (Fin 2 → Fin 3) → B) : B
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.deltaContraction_mem_span`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L149).
+**`StandardModel.IsSU3FundamentalAntiFundamental.deltaContraction_mem_span`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L149).
 
 ```lean
 lemma deltaContraction_mem_span (T : (Fin 2 → Fin 3) → B) :
     deltaContraction T ∈ Submodule.span ℂ (Set.range T)
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.map_deltaContraction`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L154).
+**`StandardModel.IsSU3FundamentalAntiFundamental.map_deltaContraction`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L154).
 
 > Any map moving the components by an element of `SU(3)` fixes the delta contraction.
 
@@ -173,7 +173,7 @@ lemma map_deltaContraction {U : SU 3} {f : B →ₗ[ℂ] B}
     f (deltaContraction T) = deltaContraction T
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.repGauge_deltaContraction`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L161).
+**`StandardModel.IsSU3FundamentalAntiFundamental.repGauge_deltaContraction`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L161).
 
 > The delta contraction is colour invariant.
 
@@ -182,7 +182,7 @@ lemma repGauge_deltaContraction (hT : IsSU3FundamentalAntiFundamental B repGauge
     (U : SU 3) : repGauge (U, 1, 1) (deltaContraction T) = deltaContraction T
 ```
 
-**`StandardModel.IsSU3FundamentalAntiFundamental.invariantReductionToSpan`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L168).
+**`StandardModel.IsSU3FundamentalAntiFundamental.invariantReductionToSpan`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L168).
 
 > The colour invariants of the component span reduce to the span of the delta
 > contraction.
@@ -193,7 +193,7 @@ noncomputable def invariantReductionToSpan (hT : IsSU3FundamentalAntiFundamental
       (Submodule.span ℂ (Set.range T))
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.of_law`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L180).
+**`StandardModel.IsSU2FundamentalAntiFundamental.of_law`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L180).
 
 > A family obeying the law for every isospin rotation is such a family.
 
@@ -202,7 +202,7 @@ lemma of_law (hT : ∀ V : SU 2, IsSU2FundamentalAntiFundamentalMat V (repGauge 
     IsSU2FundamentalAntiFundamental B repGauge T
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.sum`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L185).
+**`StandardModel.IsSU2FundamentalAntiFundamental.sum`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L185).
 
 > A finite sum of such families is such a family.
 
@@ -212,7 +212,7 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 2) → B}
     IsSU2FundamentalAntiFundamental B repGauge (fun l => ∑ i, T i l)
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L192).
+**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction`**, a def, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L192).
 
 > The delta contraction `T ![0, 0] + T ![1, 1]`.
 
@@ -220,21 +220,21 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 2) → B}
 def deltaContraction (T : (Fin 2 → Fin 2) → B) : B
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction_eq_sum`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L195).
+**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction_eq_sum`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L195).
 
 ```lean
 lemma deltaContraction_eq_sum (T : (Fin 2 → Fin 2) → B) :
     deltaContraction T = ∑ a : Fin 2, T ![a, a]
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction_mem_span`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L199).
+**`StandardModel.IsSU2FundamentalAntiFundamental.deltaContraction_mem_span`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L199).
 
 ```lean
 lemma deltaContraction_mem_span (T : (Fin 2 → Fin 2) → B) :
     deltaContraction T ∈ Submodule.span ℂ (Set.range T)
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.map_deltaContraction`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L204).
+**`StandardModel.IsSU2FundamentalAntiFundamental.map_deltaContraction`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L204).
 
 > Any map moving the components by an element of `SU(2)` fixes the delta contraction.
 
@@ -244,7 +244,7 @@ lemma map_deltaContraction {V : SU 2} {f : B →ₗ[ℂ] B}
     f (deltaContraction T) = deltaContraction T
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.repGauge_deltaContraction`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L211).
+**`StandardModel.IsSU2FundamentalAntiFundamental.repGauge_deltaContraction`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L211).
 
 > The delta contraction is isospin invariant.
 
@@ -253,7 +253,7 @@ lemma repGauge_deltaContraction (hT : IsSU2FundamentalAntiFundamental B repGauge
     (V : SU 2) : repGauge (1, V, 1) (deltaContraction T) = deltaContraction T
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.invariantReductionToSpan`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L218).
+**`StandardModel.IsSU2FundamentalAntiFundamental.invariantReductionToSpan`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L218).
 
 > The isospin invariants of the component span reduce to the span of the delta
 > contraction.
@@ -264,7 +264,7 @@ noncomputable def invariantReductionToSpan (hT : IsSU2FundamentalAntiFundamental
       (Submodule.span ℂ (Set.range T))
 ```
 
-**`StandardModel.IsSU2FundamentalAntiFundamental.reducesInvariantsTo_span_deltaContraction`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L227).
+**`StandardModel.IsSU2FundamentalAntiFundamental.reducesInvariantsTo_span_deltaContraction`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L227).
 
 > The isospin invariants of the component span reduce to the line through the delta
 > contraction.
@@ -278,7 +278,7 @@ lemma reducesInvariantsTo_span_deltaContraction
 
 ## C. Two isospin indices of the same kind
 
-**`StandardModel.IsSU2BiFundamentalMat`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L243).
+**`StandardModel.IsSU2BiFundamentalMat`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L243).
 
 > The linear map `f` moves the components of `T` as `V ∈ SU(2)` moves a tensor with two
 > fundamental indices: one factor of `V` per index.
@@ -287,7 +287,7 @@ lemma reducesInvariantsTo_span_deltaContraction
 def IsSU2BiFundamentalMat (V : SU 2) (f : B →ₗ[ℂ] B) (T : (Fin 2 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2BiAntiFundamentalMat`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L248).
+**`StandardModel.IsSU2BiAntiFundamentalMat`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L248).
 
 > The linear map `f` moves the components of `T` as `V ∈ SU(2)` moves a tensor with two
 > anti-fundamental indices: one factor of `conj V` per index.
@@ -296,7 +296,7 @@ def IsSU2BiFundamentalMat (V : SU 2) (f : B →ₗ[ℂ] B) (T : (Fin 2 → Fin 2
 def IsSU2BiAntiFundamentalMat (V : SU 2) (f : B →ₗ[ℂ] B) (T : (Fin 2 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2BiFundamental`**, an abbrev, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L254).
+**`StandardModel.IsSU2BiFundamental`**, an abbrev, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L254).
 
 > A family `T^{ab}` with two fundamental isospin indices: its map out of the tensors of `SU(2)`
 > is equivariant for the isospin factor of the gauge group.
@@ -306,7 +306,7 @@ abbrev IsSU2BiFundamental (B : Type*) [AddCommGroup B] [Module ℂ B]
     (repGauge : Representation ℂ GaugeGroupI B) (T : (Fin 2 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental`**, an abbrev, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L260).
+**`StandardModel.IsSU2BiAntiFundamental`**, an abbrev, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L260).
 
 > A family `T_{ab}` with two anti-fundamental isospin indices: its map out of the tensors of
 > `SU(2)` is equivariant for the isospin factor of the gauge group.
@@ -316,7 +316,7 @@ abbrev IsSU2BiAntiFundamental (B : Type*) [AddCommGroup B] [Module ℂ B]
     (repGauge : Representation ℂ GaugeGroupI B) (T : (Fin 2 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2BiFundamental.of_law`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L270).
+**`StandardModel.IsSU2BiFundamental.of_law`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L270).
 
 > A family obeying the law for every isospin rotation is such a family.
 
@@ -325,7 +325,7 @@ lemma of_law (hT : ∀ V : SU 2, IsSU2BiFundamentalMat V (repGauge (1, V, 1)) T)
     IsSU2BiFundamental B repGauge T
 ```
 
-**`StandardModel.IsSU2BiFundamental.sum`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L275).
+**`StandardModel.IsSU2BiFundamental.sum`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L275).
 
 > A finite sum of such families is such a family.
 
@@ -335,7 +335,7 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 2) → B}
     IsSU2BiFundamental B repGauge (fun l => ∑ i, T i l)
 ```
 
-**`StandardModel.IsSU2BiFundamental.epsilonContraction`**, a def, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L282).
+**`StandardModel.IsSU2BiFundamental.epsilonContraction`**, a def, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L282).
 
 > The epsilon contraction `T ![0, 1] - T ![1, 0]`.
 
@@ -343,14 +343,14 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 2) → B}
 def epsilonContraction (T : (Fin 2 → Fin 2) → B) : B
 ```
 
-**`StandardModel.IsSU2BiFundamental.epsilonContraction_mem_span`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L284).
+**`StandardModel.IsSU2BiFundamental.epsilonContraction_mem_span`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L284).
 
 ```lean
 lemma epsilonContraction_mem_span (T : (Fin 2 → Fin 2) → B) :
     epsilonContraction T ∈ Submodule.span ℂ (Set.range T)
 ```
 
-**`StandardModel.IsSU2BiFundamental.map_epsilonContraction`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L289).
+**`StandardModel.IsSU2BiFundamental.map_epsilonContraction`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L289).
 
 > Any map moving the components by an element of `SU(2)` fixes the epsilon contraction.
 
@@ -359,7 +359,7 @@ lemma map_epsilonContraction {V : SU 2} {f : B →ₗ[ℂ] B} (hf : IsSU2BiFunda
     f (epsilonContraction T) = epsilonContraction T
 ```
 
-**`StandardModel.IsSU2BiFundamental.repGauge_epsilonContraction`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L295).
+**`StandardModel.IsSU2BiFundamental.repGauge_epsilonContraction`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L295).
 
 > The epsilon contraction is isospin invariant.
 
@@ -368,7 +368,7 @@ lemma repGauge_epsilonContraction (hT : IsSU2BiFundamental B repGauge T) (V : SU
     repGauge (1, V, 1) (epsilonContraction T) = epsilonContraction T
 ```
 
-**`StandardModel.IsSU2BiFundamental.invariantReductionToSpan`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L302).
+**`StandardModel.IsSU2BiFundamental.invariantReductionToSpan`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L302).
 
 > The isospin invariants of the component span reduce to the span of the epsilon
 > contraction.
@@ -379,7 +379,7 @@ noncomputable def invariantReductionToSpan (hT : IsSU2BiFundamental B repGauge T
       (Submodule.span ℂ (Set.range T))
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental.of_law`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L314).
+**`StandardModel.IsSU2BiAntiFundamental.of_law`**, a lemma, [line 314](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L314).
 
 > A family obeying the law for every isospin rotation is such a family.
 
@@ -388,7 +388,7 @@ lemma of_law (hT : ∀ V : SU 2, IsSU2BiAntiFundamentalMat V (repGauge (1, V, 1)
     IsSU2BiAntiFundamental B repGauge T
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental.sum`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L320).
+**`StandardModel.IsSU2BiAntiFundamental.sum`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L320).
 
 > A finite sum of such families is such a family.
 
@@ -398,7 +398,7 @@ lemma sum {ι : Type} [Fintype ι] {T : ι → (Fin 2 → Fin 2) → B}
     IsSU2BiAntiFundamental B repGauge (fun l => ∑ i, T i l)
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental.map_epsilonContraction`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L328).
+**`StandardModel.IsSU2BiAntiFundamental.map_epsilonContraction`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L328).
 
 > Any map moving the components by an element of `SU(2)` in the anti-fundamental fixes the
 > epsilon contraction.
@@ -408,7 +408,7 @@ lemma map_epsilonContraction {V : SU 2} {f : B →ₗ[ℂ] B} (hf : IsSU2BiAntiF
     f (IsSU2BiFundamental.epsilonContraction T) = IsSU2BiFundamental.epsilonContraction T
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental.repGauge_epsilonContraction`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L335).
+**`StandardModel.IsSU2BiAntiFundamental.repGauge_epsilonContraction`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L335).
 
 > The epsilon contraction is isospin invariant.
 
@@ -418,7 +418,7 @@ lemma repGauge_epsilonContraction (hT : IsSU2BiAntiFundamental B repGauge T) (V 
       = IsSU2BiFundamental.epsilonContraction T
 ```
 
-**`StandardModel.IsSU2BiAntiFundamental.invariantReductionToSpan`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L343).
+**`StandardModel.IsSU2BiAntiFundamental.invariantReductionToSpan`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L343).
 
 > The isospin invariants of the component span reduce to the span of the epsilon
 > contraction.
@@ -431,7 +431,7 @@ noncomputable def invariantReductionToSpan (hT : IsSU2BiAntiFundamental B repGau
 
 ## D. Four fundamental isospin indices
 
-**`StandardModel.IsSU2QuadFundamentalMat`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L358).
+**`StandardModel.IsSU2QuadFundamentalMat`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L358).
 
 > The linear map `f` moves the components of `T` as `V ∈ SU(2)` moves a tensor with four
 > fundamental indices: one factor of `V` per index.
@@ -440,7 +440,7 @@ noncomputable def invariantReductionToSpan (hT : IsSU2BiAntiFundamental B repGau
 def IsSU2QuadFundamentalMat (V : SU 2) (f : B →ₗ[ℂ] B) (T : (Fin 4 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2QuadFundamental`**, an abbrev, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L363).
+**`StandardModel.IsSU2QuadFundamental`**, an abbrev, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L363).
 
 > A family `T^{abcd}` with four fundamental isospin indices: its map out of the tensors of
 > `SU(2)` is equivariant for the isospin factor of the gauge group.
@@ -450,7 +450,7 @@ abbrev IsSU2QuadFundamental (B : Type*) [AddCommGroup B] [Module ℂ B]
     (repGauge : Representation ℂ GaugeGroupI B) (T : (Fin 4 → Fin 2) → B) : Prop
 ```
 
-**`StandardModel.IsSU2QuadFundamental.of_law`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L372).
+**`StandardModel.IsSU2QuadFundamental.of_law`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L372).
 
 > A family obeying the law for every isospin rotation is such a family.
 
@@ -459,7 +459,7 @@ lemma of_law (hT : ∀ V : SU 2, IsSU2QuadFundamentalMat V (repGauge (1, V, 1)) 
     IsSU2QuadFundamental B repGauge T
 ```
 
-**`StandardModel.IsSU2QuadFundamental.sum_pi_four`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L377).
+**`StandardModel.IsSU2QuadFundamental.sum_pi_four`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L377).
 
 > A sum over families of four fundamental indices is a fourfold sum.
 
@@ -469,7 +469,7 @@ lemma sum_pi_four {M : Type*} [AddCommMonoid M] (F : (Fin 4 → Fin 2) → M) :
       = ∑ x : Fin 2, ∑ y : Fin 2, ∑ z : Fin 2, ∑ w : Fin 2, F ![x, y, z, w]
 ```
 
-**`StandardModel.IsSU2QuadFundamental.epsilonContraction₁₂`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L384).
+**`StandardModel.IsSU2QuadFundamental.epsilonContraction₁₂`**, a def, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L384).
 
 > The contraction pairing the first index with the second and the third with the
 > fourth.
@@ -478,7 +478,7 @@ lemma sum_pi_four {M : Type*} [AddCommMonoid M] (F : (Fin 4 → Fin 2) → M) :
 def epsilonContraction₁₂ (T : (Fin 4 → Fin 2) → B) : B
 ```
 
-**`StandardModel.IsSU2QuadFundamental.epsilonContraction₁₃`**, a def, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L389).
+**`StandardModel.IsSU2QuadFundamental.epsilonContraction₁₃`**, a def, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L389).
 
 > The contraction pairing the first index with the third and the second with the
 > fourth.
@@ -487,7 +487,7 @@ def epsilonContraction₁₂ (T : (Fin 4 → Fin 2) → B) : B
 def epsilonContraction₁₃ (T : (Fin 4 → Fin 2) → B) : B
 ```
 
-**`StandardModel.IsSU2QuadFundamental.reducesInvariantsTo_span_epsilonContractions`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L394).
+**`StandardModel.IsSU2QuadFundamental.reducesInvariantsTo_span_epsilonContractions`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean#L394).
 
 > The isospin invariants of the component span reduce to the span of the two epsilon
 > contractions.
@@ -511,4 +511,4 @@ lemma reducesInvariantsTo_span_epsilonContractions (hT : IsSU2QuadFundamental B 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean)

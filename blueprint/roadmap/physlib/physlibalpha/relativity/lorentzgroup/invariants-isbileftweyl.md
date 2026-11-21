@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of two Weyl indices of the same kind
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsBiLeftWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean): 20 declarations, 20 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsBiLeftWeyl`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean): 20 declarations, 20 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsBiLeftWeyl`, [Phys
 
 ## A. Families with two Weyl indices of the same kind
 
-**`Lorentz.IsBiLeftWeyl`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L75).
+**`Lorentz.IsBiLeftWeyl`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L75).
 
 > A family with two left-handed Weyl indices `T^{α₁ α₂}`: an equivariant linear map out of
 > `ℂT[.upL, .upL]`.
@@ -62,7 +62,7 @@ abbrev IsBiLeftWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
     (repLorentz : Representation ℂ SL(2,ℂ) B) (f : ℂT[.upL, .upL] →ₗ[ℂ] B) : Prop
 ```
 
-**`Lorentz.IsBiRightWeyl`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L81).
+**`Lorentz.IsBiRightWeyl`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L81).
 
 > A family with two right-handed Weyl indices `T^{α̇₁ α̇₂}`: an equivariant linear map out of
 > `ℂT[.upR, .upR]`.
@@ -72,7 +72,7 @@ abbrev IsBiRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
     (repLorentz : Representation ℂ SL(2,ℂ) B) (f : ℂT[.upR, .upR] →ₗ[ℂ] B) : Prop
 ```
 
-**`Lorentz.IsBiDualLeftWeyl`**, an abbrev, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L87).
+**`Lorentz.IsBiDualLeftWeyl`**, an abbrev, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L87).
 
 > A family with two dual left-handed Weyl indices `T_{α₁ α₂}`: an equivariant linear map out
 > of `ℂT[.downL, .downL]`.
@@ -82,7 +82,7 @@ abbrev IsBiDualLeftWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
     (repLorentz : Representation ℂ SL(2,ℂ) B) (f : ℂT[.downL, .downL] →ₗ[ℂ] B) : Prop
 ```
 
-**`Lorentz.IsBiDualRightWeyl`**, an abbrev, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L93).
+**`Lorentz.IsBiDualRightWeyl`**, an abbrev, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L93).
 
 > A family with two dual right-handed Weyl indices `T_{α̇₁ α̇₂}`: an equivariant linear map
 > out of `ℂT[.downR, .downR]`.
@@ -94,7 +94,7 @@ abbrev IsBiDualRightWeyl (B : Type*) [AddCommMonoid B] [Module ℂ B]
 
 ## B. The invariant tensors with two Weyl indices of the same kind
 
-**`Lorentz.basis_repr_smul_pair`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L109).
+**`Lorentz.basis_repr_smul_pair`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L109).
 
 > The components of `g • t` for a tensor with two indices: the matrix of `g` in the colour of
 > each index acts on that index.
@@ -112,7 +112,7 @@ lemma basis_repr_smul_pair (g : SL(2,ℂ)) (t : ℂT[k, k']) (a : basisIdx k)
           ((piFinTwoEquiv fun j : Fin 2 => basisIdx (![k, k'] j)).symm (x, y))
 ```
 
-**`Lorentz.basis_repr_pair_eq_neg_swap_of_invariant`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L129).
+**`Lorentz.basis_repr_pair_eq_neg_swap_of_invariant`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L129).
 
 > The components of an invariant tensor with two Weyl indices of the same colour are
 > antisymmetric. The inverse boost along `z` scales the two diagonal components by `4` and `4⁻¹`,
@@ -129,7 +129,7 @@ lemma basis_repr_pair_eq_neg_swap_of_invariant
         ((piFinTwoEquiv fun j : Fin 2 => basisIdx (![k, k] j)).symm (b, a))
 ```
 
-**`Lorentz.exists_eq_smul_metricTensor_of_invariant`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L162).
+**`Lorentz.exists_eq_smul_metricTensor_of_invariant`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L162).
 
 > The invariant tensors with two Weyl indices of the same colour are the multiples of the
 > metric of that colour: both have antisymmetric components, and the `(0, 1)` component of the
@@ -143,7 +143,7 @@ lemma exists_eq_smul_metricTensor_of_invariant
 
 ## C. The classification of the invariants
 
-**`Lorentz.invariantReductionToMetricTensor`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L217).
+**`Lorentz.invariantReductionToMetricTensor`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L217).
 
 > For a Weyl colour `k` and an equivariant map `f` out of `ℂT[k, k]`, the Lorentz invariants
 > of the range of `f` reduce to the span of the image `f (metricTensor k)` of the metric.
@@ -155,7 +155,7 @@ noncomputable def invariantReductionToMetricTensor
     InvariantReductionToSpan (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f)
 ```
 
-**`Lorentz.exists_smul_map_metricTensor_add_of_invariant`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L228).
+**`Lorentz.exists_smul_map_metricTensor_add_of_invariant`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L228).
 
 > For a Weyl colour `k` and an equivariant map `f` out of `ℂT[k, k]`, every Lorentz invariant
 > of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, is a multiple of the image
@@ -170,7 +170,7 @@ lemma exists_smul_map_metricTensor_add_of_invariant
     ∃ a : ℂ, ∃ y ∈ S, x = a • f (metricTensor k) + y
 ```
 
-**`Lorentz.IsBiLeftWeyl.invariantReductionToSpan`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L240).
+**`Lorentz.IsBiLeftWeyl.invariantReductionToSpan`**, a def, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L240).
 
 > The Lorentz invariants of the range of a family with two left-handed Weyl indices reduce to
 > the span of the image of `εL`.
@@ -182,7 +182,7 @@ noncomputable def IsBiLeftWeyl.invariantReductionToSpan {B : Type*} [AddCommGrou
     InvariantReductionToSpan (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f)
 ```
 
-**`Lorentz.IsBiRightWeyl.invariantReductionToSpan`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L248).
+**`Lorentz.IsBiRightWeyl.invariantReductionToSpan`**, a def, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L248).
 
 > The Lorentz invariants of the range of a family with two right-handed Weyl indices reduce to
 > the span of the image of `εR`.
@@ -194,7 +194,7 @@ noncomputable def IsBiRightWeyl.invariantReductionToSpan {B : Type*} [AddCommGro
     InvariantReductionToSpan (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f)
 ```
 
-**`Lorentz.IsBiDualLeftWeyl.invariantReductionToSpan`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L256).
+**`Lorentz.IsBiDualLeftWeyl.invariantReductionToSpan`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L256).
 
 > The Lorentz invariants of the range of a family with two dual left-handed Weyl indices
 > reduce to the span of the image of `εL'`.
@@ -206,7 +206,7 @@ noncomputable def IsBiDualLeftWeyl.invariantReductionToSpan {B : Type*} [AddComm
     InvariantReductionToSpan (fun g : SL(2,ℂ) => repLorentz g) (LinearMap.range f)
 ```
 
-**`Lorentz.IsBiDualRightWeyl.invariantReductionToSpan`**, a def, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L264).
+**`Lorentz.IsBiDualRightWeyl.invariantReductionToSpan`**, a def, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L264).
 
 > The Lorentz invariants of the range of a family with two dual right-handed Weyl indices
 > reduce to the span of the image of `εR'`.
@@ -224,7 +224,7 @@ noncomputable def IsBiDualRightWeyl.invariantReductionToSpan {B : Type*} [AddCom
 > `ofPairComponents T` sending `e_a ⊗ e_b` to `T a b`, and it is equivariant when the vectors are
 > moved as the basis tensors are.
 
-**`Lorentz.ofPairComponents`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L285).
+**`Lorentz.ofPairComponents`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L285).
 
 > The linear map out of `ℂT[k, k']` sending the basis tensor `e_a ⊗ e_b` to `T a b`.
 
@@ -233,7 +233,7 @@ noncomputable def ofPairComponents (T : basisIdx k → basisIdx k' → B) :
     ℂT[k, k'] →ₗ[ℂ] B
 ```
 
-**`Lorentz.range_ofPairComponents`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L290).
+**`Lorentz.range_ofPairComponents`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L290).
 
 > The range of `ofPairComponents T` is the span of the vectors `T a b`.
 
@@ -243,7 +243,7 @@ lemma range_ofPairComponents (T : basisIdx k → basisIdx k' → B) :
       = Submodule.span ℂ (Set.range fun m : basisIdx k × basisIdx k' => T m.1 m.2)
 ```
 
-**`Lorentz.ofPairComponents_mem`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L299).
+**`Lorentz.ofPairComponents_mem`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L299).
 
 > The image of `ofPairComponents T` lies in every submodule containing the vectors
 > `T a b`.
@@ -253,7 +253,7 @@ lemma ofPairComponents_mem (T : basisIdx k → basisIdx k' → B) {M : Submodule
     (hT : ∀ a b, T a b ∈ M) (t : ℂT[k, k']) : ofPairComponents T t ∈ M
 ```
 
-**`Lorentz.map_ofPairComponents`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L309).
+**`Lorentz.map_ofPairComponents`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L309).
 
 > A linear map applied after `ofPairComponents T` is `ofPairComponents` of its values on the
 > components.
@@ -264,7 +264,7 @@ lemma map_ofPairComponents {B' : Type*} [AddCommGroup B'] [Module ℂ B'] (σ : 
     σ (ofPairComponents T t) = ofPairComponents (fun a b => σ (T a b)) t
 ```
 
-**`Lorentz.ofPairComponents_sum`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L317).
+**`Lorentz.ofPairComponents_sum`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L317).
 
 > `ofPairComponents` of a sum of families is the sum of the maps.
 
@@ -274,7 +274,7 @@ lemma ofPairComponents_sum {ι : Type*} (s : Finset ι)
     ofPairComponents (fun a b => ∑ i ∈ s, T i a b) = ∑ i ∈ s, ofPairComponents (T i)
 ```
 
-**`Lorentz.ofPairComponents_sub`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L324).
+**`Lorentz.ofPairComponents_sub`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L324).
 
 > `ofPairComponents` of a difference of families is the difference of the maps.
 
@@ -283,7 +283,7 @@ lemma ofPairComponents_sub (T T' : basisIdx k → basisIdx k' → B) :
     ofPairComponents (fun a b => T a b - T' a b) = ofPairComponents T - ofPairComponents T'
 ```
 
-**`Lorentz.isEquivariant_ofPairComponents`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L330).
+**`Lorentz.isEquivariant_ofPairComponents`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean#L330).
 
 > `ofPairComponents T` is equivariant when each index of `T a b` is moved by the matrix of `g`
 > in its colour, the summed index first in each factor.
@@ -311,4 +311,4 @@ lemma isEquivariant_ofPairComponents {repLorentz : Representation ℂ SL(2,ℂ) 
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean)

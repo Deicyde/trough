@@ -8,7 +8,7 @@ proof: formalized
 
 # Symmetries of a crystal acting on its Brillouin zone
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Brillouin`, [PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean): 20 declarations (2 instances with no name), 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Brillouin`, [PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean): 20 declarations (2 instances with no name), 11 with a docstring.
 
 > The symmetries of a crystal act on the crystal momenta, the translations trivially.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Brillouin`, [PhyslibAlpha/Conde
 
 ## A. The action of the symmetries
 
-**`CondensedMatter.Crystal.BrillouinZone`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L62).
+**`CondensedMatter.Crystal.BrillouinZone`**, an abbrev, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L62).
 
 > The Brillouin zone of a crystal with translation group `G`: the crystal momenta, which are the
 > characters of `G`.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Brillouin`, [PhyslibAlpha/Conde
 abbrev BrillouinZone (G : Type*) [AddCommGroup G] [TopologicalSpace G]
 ```
 
-**`CondensedMatter.Crystal.dualMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L66).
+**`CondensedMatter.Crystal.dualMap`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L66).
 
 > A lattice automorphism acts on a character by precomposition.
 
@@ -58,27 +58,27 @@ abbrev BrillouinZone (G : Type*) [AddCommGroup G] [TopologicalSpace G]
 noncomputable def dualMap (A : G ≃+ G) (χ : BrillouinZone G) : BrillouinZone G
 ```
 
-**`CondensedMatter.Crystal.dualMap_apply`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L76).
+**`CondensedMatter.Crystal.dualMap_apply`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L76).
 
 ```lean
 lemma dualMap_apply (A : G ≃+ G) (χ : BrillouinZone G) (a : G) :
     dualMap A χ (Multiplicative.ofAdd a) = χ (Multiplicative.ofAdd (A a))
 ```
 
-**`CondensedMatter.Crystal.dualMap_refl`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L79).
+**`CondensedMatter.Crystal.dualMap_refl`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L79).
 
 ```lean
 lemma dualMap_refl (χ : BrillouinZone G) : dualMap (AddEquiv.refl G) χ = χ
 ```
 
-**`CondensedMatter.Crystal.dualMap_trans`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L81).
+**`CondensedMatter.Crystal.dualMap_trans`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L81).
 
 ```lean
 lemma dualMap_trans (A B : G ≃+ G) (χ : BrillouinZone G) :
     dualMap B (dualMap A χ) = dualMap (B.trans A) χ
 ```
 
-**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L86).
+**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L86).
 
 > The symmetries of a crystal act on the crystal momenta: a symmetry with linear part `A` sends
 > `χ` to `χ ∘ A⁻¹`.
@@ -87,14 +87,14 @@ lemma dualMap_trans (A B : G ≃+ G) (χ : BrillouinZone G) :
 noncomputable instance : MulAction (CellSymmetry G F) (BrillouinZone G)
 ```
 
-**`CondensedMatter.Crystal.smul_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L94).
+**`CondensedMatter.Crystal.smul_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L94).
 
 ```lean
 lemma smul_apply (s : CellSymmetry G F) (χ : BrillouinZone G) (a : G) :
     (s • χ) (Multiplicative.ofAdd a) = χ (Multiplicative.ofAdd (s.linear.symm a))
 ```
 
-**`CondensedMatter.Crystal.translation_smul_brillouin`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L98).
+**`CondensedMatter.Crystal.translation_smul_brillouin`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L98).
 
 > Translations act trivially on crystal momenta.
 
@@ -105,7 +105,7 @@ lemma translation_smul_brillouin (a : G) (χ : BrillouinZone G) :
 
 ## B. The point group and the little groups
 
-**`CondensedMatter.Crystal.PeriodicGraph.symmetryAction`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L107).
+**`CondensedMatter.Crystal.PeriodicGraph.symmetryAction`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L107).
 
 > The bond-preserving symmetries act on the Brillouin zone by permutations.
 
@@ -113,14 +113,14 @@ lemma translation_smul_brillouin (a : G) (χ : BrillouinZone G) :
 noncomputable def symmetryAction : g.symmetries →* Equiv.Perm (BrillouinZone G)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.translations_le_ker_symmetryAction`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L110).
+**`CondensedMatter.Crystal.PeriodicGraph.translations_le_ker_symmetryAction`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L110).
 
 ```lean
 lemma translations_le_ker_symmetryAction :
     (CellSymmetry.translations G F).subgroupOf g.symmetries ≤ (symmetryAction g).ker
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.pointAction`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L118).
+**`CondensedMatter.Crystal.PeriodicGraph.pointAction`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L118).
 
 > **The point group acts on the Brillouin zone.**
 
@@ -128,20 +128,20 @@ lemma translations_le_ker_symmetryAction :
 noncomputable def pointAction : g.pointGroup →* Equiv.Perm (BrillouinZone G)
 ```
 
-**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L121).
+**An instance with no name**, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L121).
 
 ```lean
 noncomputable instance : MulAction g.pointGroup (BrillouinZone G)
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mk_smul`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L124).
+**`CondensedMatter.Crystal.PeriodicGraph.mk_smul`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L124).
 
 ```lean
 lemma mk_smul (s : g.symmetries) (χ : BrillouinZone G) :
     (QuotientGroup.mk s : g.pointGroup) • χ = s • χ
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.littleGroup`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L129).
+**`CondensedMatter.Crystal.PeriodicGraph.littleGroup`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L129).
 
 > The little group of a momentum: the bond-preserving symmetries that fix it. It contains all
 > translations.
@@ -150,7 +150,7 @@ lemma mk_smul (s : g.symmetries) (χ : BrillouinZone G) :
 noncomputable def littleGroup (χ : BrillouinZone G) : Subgroup g.symmetries
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.littleCoGroup`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L133).
+**`CondensedMatter.Crystal.PeriodicGraph.littleCoGroup`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L133).
 
 > The little co-group of a momentum: the elements of the point group that fix it.
 
@@ -158,14 +158,14 @@ noncomputable def littleGroup (χ : BrillouinZone G) : Subgroup g.symmetries
 noncomputable def littleCoGroup (χ : BrillouinZone G) : Subgroup g.pointGroup
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.mem_littleGroup`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L136).
+**`CondensedMatter.Crystal.PeriodicGraph.mem_littleGroup`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L136).
 
 ```lean
 lemma mem_littleGroup (χ : BrillouinZone G) (s : g.symmetries) :
     s ∈ g.littleGroup χ ↔ s • χ = χ
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.translation_mem_littleGroup`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L139).
+**`CondensedMatter.Crystal.PeriodicGraph.translation_mem_littleGroup`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L139).
 
 ```lean
 lemma translation_mem_littleGroup (χ : BrillouinZone G) (a : G) :
@@ -173,7 +173,7 @@ lemma translation_mem_littleGroup (χ : BrillouinZone G) (a : G) :
       g.littleGroup χ
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.littleGroup_eq_comap`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L145).
+**`CondensedMatter.Crystal.PeriodicGraph.littleGroup_eq_comap`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L145).
 
 > The little group is the preimage of the little co-group.
 
@@ -184,7 +184,7 @@ lemma littleGroup_eq_comap (χ : BrillouinZone G) :
 
 ## C. The irreducible zone
 
-**`CondensedMatter.Crystal.PeriodicGraph.IrreducibleZone`**, an abbrev, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L155).
+**`CondensedMatter.Crystal.PeriodicGraph.IrreducibleZone`**, an abbrev, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L155).
 
 > The irreducible Brillouin zone: the momenta modulo the point group.
 
@@ -192,7 +192,7 @@ lemma littleGroup_eq_comap (χ : BrillouinZone G) :
 abbrev IrreducibleZone
 ```
 
-**`CondensedMatter.Crystal.PeriodicGraph.irreducibleZone_mk_eq_iff`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L158).
+**`CondensedMatter.Crystal.PeriodicGraph.irreducibleZone_mk_eq_iff`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean#L158).
 
 > Momenta in the same orbit of the point group are identified in the irreducible zone.
 
@@ -208,4 +208,4 @@ lemma irreducibleZone_mk_eq_iff (χ ψ : BrillouinZone G) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean)

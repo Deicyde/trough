@@ -8,7 +8,7 @@ proof: formalized
 
 # The direct sum of a finite family of matter fields
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Pi`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean): 19 declarations, 11 with a docstring; 4 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Pi`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean): 19 declarations, 11 with a docstring; 4 private, not shown.
 
 ## i. Overview
 
@@ -61,7 +61,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.Pi`, [Phys
 
 ## B. The direct sum of a finite family of matter fields
 
-**`MatterField.repPi`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L127).
+**`MatterField.repPi`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L127).
 
 > The product of a family of representations, acting index by index. This is the
 > indexed analogue of `Representation.prod`, which Mathlib provides only in the binary
@@ -73,7 +73,7 @@ noncomputable def repPi {W : ι → Type} [∀ i, AddCommGroup (W i)]
     Representation ℂ GJ (∀ i, W i)
 ```
 
-**`MatterField.repJetPi`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L143).
+**`MatterField.repJetPi`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L143).
 
 > **The jet gauge action of an indexed direct sum**: the family of actions, read
 > through the identification of the jets of `∀ i, (M i).V` with the family of jets.
@@ -82,7 +82,7 @@ noncomputable def repPi {W : ι → Type} [∀ i, AddCommGroup (W i)]
 noncomputable def repJetPi : Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ] (∀ i, (M i).V))
 ```
 
-**`MatterField.repJetPi_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L149).
+**`MatterField.repJetPi_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L149).
 
 ```lean
 lemma repJetPi_apply (U : GJ) (z : SpaceTimeAlgebra ⊗[ℂ] (∀ i, (M i).V)) :
@@ -90,7 +90,7 @@ lemma repJetPi_apply (U : GJ) (z : SpaceTimeAlgebra ⊗[ℂ] (∀ i, (M i).V)) :
       (fun i => (M i).repJet U (jetPiEquiv (fun i => (M i).V) z i))
 ```
 
-**`MatterField.repJetPi_smul`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L157).
+**`MatterField.repJetPi_smul`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L157).
 
 > The jet gauge action of an indexed direct sum is fibrewise. It acts index by
 > index, and each summand is fibrewise, so multiplication by a scalar jet passes through
@@ -102,7 +102,7 @@ lemma repJetPi_smul (U : GJ) (χ : SpaceTimeAlgebra) (z : SpaceTimeAlgebra ⊗[�
     repJetPi M U (χ • z) = χ • repJetPi M U z
 ```
 
-**`MatterField.lTensor_proj_repJetPi`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L169).
+**`MatterField.lTensor_proj_repJetPi`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L169).
 
 > A summand is a subrepresentation of the jet gauge action of the direct sum. The
 > projection onto the value space of one summand, applied to the jets, intertwines the
@@ -115,7 +115,7 @@ lemma lTensor_proj_repJetPi (i : ι) (U : GJ) :
       = ((M i).repJet U).comp (LinearMap.lTensor SpaceTimeAlgebra (LinearMap.proj i))
 ```
 
-**`MatterField.repAlgebraPi`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L178).
+**`MatterField.repAlgebraPi`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L178).
 
 > **The infinitesimal action of an indexed direct sum**: the family of actions, one on
 > each summand.
@@ -124,14 +124,14 @@ lemma lTensor_proj_repJetPi (i : ι) (U : GJ) :
 noncomputable def repAlgebraPi : 𝔤 →ₗ[ℝ] (∀ i, (M i).V) →ₗ[ℂ] (∀ i, (M i).V)
 ```
 
-**`MatterField.repAlgebraPi_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L191).
+**`MatterField.repAlgebraPi_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L191).
 
 ```lean
 lemma repAlgebraPi_apply (c : 𝔤) :
     repAlgebraPi M c = LinearMap.piMap fun i => (M i).repAlgebra c
 ```
 
-**`MatterField.repCoeff_repJetPi`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L197).
+**`MatterField.repCoeff_repJetPi`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L197).
 
 > The base-point Taylor coefficients of the summed jet action are the family of the
 > coefficients of the summands: `jetOfConstant`, `jetIteratedDeriv` and `jetEval` all act
@@ -143,7 +143,7 @@ lemma repCoeff_repJetPi (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) :
       LinearMap.piMap fun i => GaugeAlgebraRealization.repCoeff (M i).repJet U x
 ```
 
-**`MatterField.isInfinitesimalActionOf_repAlgebraPi`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L213).
+**`MatterField.isInfinitesimalActionOf_repAlgebraPi`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L213).
 
 > **The index-by-index algebra action generates the index-by-index jet action**: both
 > laws of `IsInfinitesimalActionOf` are the corresponding laws of the summands, read
@@ -155,7 +155,7 @@ lemma isInfinitesimalActionOf_repAlgebraPi :
     jets.IsInfinitesimalActionOf (repAlgebraPi M) (repJetPi M)
 ```
 
-**`MatterField.pi`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L242).
+**`MatterField.pi`**, a def, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L242).
 
 > **The direct sum of a finite family of matter fields** with common mass weight `w` and
 > common statistics `σ`, given with proofs that every summand has them. It is one field
@@ -167,37 +167,37 @@ noncomputable def pi (w : ℕ) (_h : ∀ i, (M i).massWeight = w) (σ : FieldSta
     (_hσ : ∀ i, (M i).statistic = σ) : MatterField jets
 ```
 
-**`MatterField.pi_V`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L256).
+**`MatterField.pi_V`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L256).
 
 ```lean
 lemma pi_V : (pi M w h σ hσ).V = ∀ i, (M i).V
 ```
 
-**`MatterField.pi_repJet`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L259).
+**`MatterField.pi_repJet`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L259).
 
 ```lean
 lemma pi_repJet : (pi M w h σ hσ).repJet = repJetPi M
 ```
 
-**`MatterField.pi_repAlgebra`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L262).
+**`MatterField.pi_repAlgebra`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L262).
 
 ```lean
 lemma pi_repAlgebra : (pi M w h σ hσ).repAlgebra = repAlgebraPi M
 ```
 
-**`MatterField.pi_massWeight`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L265).
+**`MatterField.pi_massWeight`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L265).
 
 ```lean
 lemma pi_massWeight : (pi M w h σ hσ).massWeight = w
 ```
 
-**`MatterField.pi_statistic`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L268).
+**`MatterField.pi_statistic`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L268).
 
 ```lean
 lemma pi_statistic : (pi M w h σ hσ).statistic = σ
 ```
 
-**`MatterField.pi_repLorentz_apply`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L272).
+**`MatterField.pi_repLorentz_apply`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L272).
 
 > The Lorentz action of the direct sum is the family of Lorentz actions, acting index by
 > index.
@@ -216,7 +216,7 @@ lemma pi_repLorentz_apply (Λ : SL(2,ℂ)) (v : ∀ i, (M i).V) (i : ι) :
 > identification `jetPiEquiv` that defines the summed jet action, and it is the finite
 > direct sum case of `JetComponentSpace.piEquiv`.
 
-**`MatterField.jetComponentSpacePiEquiv`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L292).
+**`MatterField.jetComponentSpacePiEquiv`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L292).
 
 > **The component space of a direct sum of matter fields splits.** A component function
 > of `MatterField.pi M w h σ hσ` is exactly a family, one component function per summand. Both
@@ -228,7 +228,7 @@ noncomputable def jetComponentSpacePiEquiv :
     JetComponentSpace (pi M w h σ hσ) ≃ₗ[ℂ] ∀ i, JetComponentSpace (M i)
 ```
 
-**`MatterField.jetComponentSpacePiEquiv_apply`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L297).
+**`MatterField.jetComponentSpacePiEquiv_apply`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L297).
 
 ```lean
 lemma jetComponentSpacePiEquiv_apply (x : JetComponentSpace (pi M w h σ hσ)) (i : ι) :
@@ -237,7 +237,7 @@ lemma jetComponentSpacePiEquiv_apply (x : JetComponentSpace (pi M w h σ hσ)) (
         JetComponentSpace.sndPiEquiv (fun i => (M i).V) x.2 i)
 ```
 
-**`MatterField.jetComponentSpacePiEquiv_symm_single`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L307).
+**`MatterField.jetComponentSpacePiEquiv_symm_single`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean#L307).
 
 > **The summand of one species is the pullback along the projection onto it.** A
 > component function of the summand `i`, placed in the family and read back as a component
@@ -254,8 +254,8 @@ lemma jetComponentSpacePiEquiv_symm_single (i : ι) (x : JetComponentSpace (M i)
 
 ## Depends on
 
-- [The jet component space of a matter field](matterfield-jetcomponent-basic.md)
+- [The jet component space of a matter field](../part-06/matterfield-jetcomponent-basic.md)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.22 A bit of uniformity, III
 
-Section 51.22 of the Stacks Project, [Tag 0GA6](https://stacks.math.columbia.edu/tag/0GA6). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 51.22 of the Stacks Project, [Tag 0GA6](https://stacks.math.columbia.edu/tag/0GA6). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GA6, the section
 
 [Tag 0GA6](https://stacks.math.columbia.edu/tag/0GA6) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityIII.dInvariant_qInvariant_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/UniformityInvariants.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/UniformityInvariants.lean#L117). The attribute's comment: “the integers d = d(Gr\_I(A)) and q = q(Gr\_I(A)) of the section for a Noetherian ring A and an ideal I: d is the maximal fibre dimension of Proj(Gr\_I(A)) → Spec(A/I), a natural number equal to the maximum of the fibre dimensions of the blowup X → Spec(A) (0 if X is empty), at most t - 1 when I has t generators, and above which the cohomology of every quasi-coherent module on X and on Y = Proj(Gr\_I(A)) vanishes; q is the least q₀ ≥ 0 such that for all q ≥ q₀, Hⁱ(Y, 𝒪\_Y(q)) = 0 for 1 ≤ i ≤ d and H⁰(Y, 𝒪\_Y(q)) = I^q/I^\{q+1}, and such a q₀ exists; both are 0 when I = A”.
+**`Stacks.LocalCohomology.UniformityIII.dInvariant_qInvariant_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/UniformityInvariants.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/UniformityInvariants.lean#L117). The attribute's comment: “the integers d = d(Gr\_I(A)) and q = q(Gr\_I(A)) of the section for a Noetherian ring A and an ideal I: d is the maximal fibre dimension of Proj(Gr\_I(A)) → Spec(A/I), a natural number equal to the maximum of the fibre dimensions of the blowup X → Spec(A) (0 if X is empty), at most t - 1 when I has t generators, and above which the cohomology of every quasi-coherent module on X and on Y = Proj(Gr\_I(A)) vanishes; q is the least q₀ ≥ 0 such that for all q ≥ q₀, Hⁱ(Y, 𝒪\_Y(q)) = 0 for 1 ≤ i ≤ d and H⁰(Y, 𝒪\_Y(q)) = I^q/I^\{q+1}, and such a q₀ exists; both are 0 when I = A”.
 
 > **The invariants `d(S)` and `q(S)` of [Stacks, Tag 0GA6].** Let `A` be a Noetherian ring,
 > `I ⊆ A` an ideal, `p : X → Spec(A)` the blowing up in `I`, and `Y = Proj(S)`,
@@ -55,7 +55,7 @@ theorem dInvariant_qInvariant_spec [IsNoetherianRing A] :
 
 [Tag 0GA7](https://stacks.math.columbia.edu/tag/0GA7) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityIII.blowupHmod_of_qS_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/BlowupSituation.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/BlowupSituation.lean#L705).
+**`Stacks.LocalCohomology.UniformityIII.blowupHmod_of_qS_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/BlowupSituation.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/BlowupSituation.lean#L703).
 
 > **[Stacks, Tag 0GA7]**: with `q₀ = q(S)` (`qS I`, the least integer such that for all
 > `q ≥ q₀` one has `Hⁱ(Y, 𝒪_Y(q)) = 0` for `i ≥ 1` and `H⁰(Y, 𝒪_Y(q)) = Iᑫ/I^{q+1}`), for a
@@ -86,7 +86,7 @@ theorem blowupHmod_of_qS_le [IsNoetherianRing A] :
 
 [Tag 0GA8](https://stacks.math.columbia.edu/tag/0GA8) in the Stacks Project.
 
-**`AlgebraicGeometry.exceptionalIdeal_pow_le_annihilator_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AlmostExactness.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AlmostExactness.lean#L421).
+**`AlgebraicGeometry.exceptionalIdeal_pow_le_annihilator_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AlmostExactness.lean, line 421](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Blowup/AlmostExactness.lean#L421).
 
 > In a short exact sequence over `A ⧸ I ^ n` whose quotient is finite and
 > `I ^ c / I ^ n`-projective, the kernel of the pulled-back first map is
@@ -115,7 +115,7 @@ public theorem exceptionalIdeal_pow_le_annihilator_kernel
 
 [Tag 0GA9](https://stacks.math.columbia.edu/tag/0GA9) in the Stacks Project.
 
-**`AlgebraicGeometry.schemeTheoreticSupport_iff_blowUpTwistContraction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistExceptionalIdealPow.lean, line 813](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/TwistExceptionalIdealPow.lean#L813). The attribute's comment: “corrected: the canonical map runs 𝓕(c) ⟶ 𝓕, since 𝒪(1) is the ideal sheaf of Y”.
+**`AlgebraicGeometry.schemeTheoreticSupport_iff_blowUpTwistContraction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/TwistExceptionalIdealPow.lean, line 813](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Blowup/TwistExceptionalIdealPow.lean#L813). The attribute's comment: “corrected: the canonical map runs 𝓕(c) ⟶ 𝓕, since 𝒪(1) is the ideal sheaf of Y”.
 
 > **Stacks Project, Tag 0GA9.** Let `X'` be the blowup of a scheme `X` in a quasi-coherent sheaf
 > of ideals `ℐ`, with exceptional divisor `Y` cut out by `ℐ𝒪_{X'}`, and let `Y_c = cY` be its
@@ -140,7 +140,7 @@ theorem schemeTheoreticSupport_iff_blowUpTwistContraction_eq_zero
 
 [Tag 0GAA](https://stacks.math.columbia.edu/tag/0GAA) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L590). The attribute's comment: “clause (1), H^d(X, p^*M(q)) = 0 for i = d ≥ 1 and q ≥ q₀”.
+**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 590](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L590). The attribute's comment: “clause (1), H^d(X, p^*M(q)) = 0 for i = d ≥ 1 and q ≥ q₀”.
 
 > **Stacks Project, Tag 0GAA, clause (1).** For an `(A, n, c)`-module `M`, in the case
 > `i = d ≥ 1` and `q ≥ q₀` we have `H^d(X, p^*M(q)) = 0`.
@@ -154,7 +154,7 @@ theorem subsingleton_H_top (M : ANCModule I n c) {q : ℤ}
     (hd : 1 ≤ S.d) (hq : (S.q₀ : ℤ) ≤ q) : Subsingleton (S.H M S.d q)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_next`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L615). The attribute's comment: “clause (2), H^\{d-1}(X, p^*M(q)) = 0 for i = d - 1 ≥ 1 and q ≥ q₀”.
+**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_next`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 615](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L615). The attribute's comment: “clause (2), H^\{d-1}(X, p^*M(q)) = 0 for i = d - 1 ≥ 1 and q ≥ q₀”.
 
 > **Stacks Project, Tag 0GAA, clause (2).** For an `(A, n, c)`-module `M`, in the case
 > `i = d - 1 ≥ 1` and `q ≥ q₀` we have `H^{d-1}(X, p^*M(q)) = 0`.
@@ -170,7 +170,7 @@ theorem subsingleton_H_next (M : ANCModule I n c) {i : ℕ} {q : ℤ}
     (hi : 1 ≤ i) (hid : i + 1 = S.d) (hq : (S.q₀ : ℤ) ≤ q) : Subsingleton (S.H M i q)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.Htr_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 862](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L862). The attribute's comment: “clause (3), Hⁱ(X, p^*M(q)) → Hⁱ(X, p^*M(q-(d-1-i)c)) is zero for d-1 > i > 0”.
+**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.Htr_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 862](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L862). The attribute's comment: “clause (3), Hⁱ(X, p^*M(q)) → Hⁱ(X, p^*M(q-(d-1-i)c)) is zero for d-1 > i > 0”.
 
 > **Stacks Project, Tag 0GAA, clause (3).** For an `(A, n, c)`-module `M`, in the case
 > `d - 1 > i > 0` and `q ≥ q₀ + (d - 1 - i)c` the map
@@ -186,7 +186,7 @@ theorem Htr_eq_zero (M : ANCModule I n c) {i k : ℕ} {q r : ℤ} (h : r ≤ q)
     (hq : (S.q₀ : ℤ) + k * c ≤ q) : S.Htr M i q r h = 0
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.surjective_secM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 898](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L898). The attribute's comment: “clause (4), surjectivity onto H⁰(X, p^*M(q)) for i = 0, d ≤ 1, q ≥ q₀; corrected: the source is I^q ⊗\_A M, not the submodule I^qM, for which this is false”.
+**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.surjective_secM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 898](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L898). The attribute's comment: “clause (4), surjectivity onto H⁰(X, p^*M(q)) for i = 0, d ≤ 1, q ≥ q₀; corrected: the source is I^q ⊗\_A M, not the submodule I^qM, for which this is false”.
 
 > **Stacks Project, Tag 0GAA, clause (4).** For an `(A, n, c)`-module `M`, in the case
 > `i = 0`, `d ∈ {0, 1}` and `q ≥ q₀` the canonical map `I^q ⊗_A M → H⁰(X, p^*M(q))` is
@@ -211,7 +211,7 @@ theorem surjective_secM (M : ANCModule I n c) {q : ℕ} (hd : S.d ≤ 1) (hq : S
     Function.Surjective (S.secM M q)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.range_Htr_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 929](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L929). The attribute's comment: “clause (5), H⁰(p^*M(q)) → H⁰(p^*M(q-(d-1)c)) lands in the image of the canonical map out of I^\{q-(d-1)c} ⊗\_A M; corrected as in clause (4)”.
+**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.range_Htr_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 929](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L929). The attribute's comment: “clause (5), H⁰(p^*M(q)) → H⁰(p^*M(q-(d-1)c)) lands in the image of the canonical map out of I^\{q-(d-1)c} ⊗\_A M; corrected as in clause (4)”.
 
 > **Stacks Project, Tag 0GAA, clause (5).** For an `(A, n, c)`-module `M`, in the case
 > `i = 0`, `d > 1` and `q ≥ q₀ + (d - 1)c` the image of
@@ -237,7 +237,7 @@ theorem range_Htr_le (M : ANCModule I n c) {k r : ℕ} {q : ℤ} (h : (r : ℤ) 
 
 [Tag 0GAB](https://stacks.math.columbia.edu/tag/0GAB) in the Stacks Project.
 
-**`Stacks.SheafOfModules.PullbackDual.dualModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/PullbackOfDualSheaf.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/PullbackOfDualSheaf.lean#L119). The attribute's comment: “the dual F^∨ = SheafHom(F, O), for a sheaf of modules on a ringed site”. References: EGA 0 (4.1.5); SGA 3 I (4.6.5.1), “more general”; SGA 3 III (0.6); SGA 3 VIIA (4.3.3), “more general”.
+**`Stacks.SheafOfModules.PullbackDual.dualModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/PullbackOfDualSheaf.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/PullbackOfDualSheaf.lean#L119). The attribute's comment: “the dual F^∨ = SheafHom(F, O), for a sheaf of modules on a ringed site”. References: EGA 0 (4.1.5); SGA 3 I (4.6.5.1), “more general”; SGA 3 III (0.6); SGA 3 VIIA (4.3.3), “more general”.
 
 > The dual `F^∨ = SheafHom_O(F, O)` of a sheaf of modules on a ringed site: the internal Hom
 > of Tag 03EM out of `F` into the structure sheaf, the structure sheaf being read as a module
@@ -249,7 +249,7 @@ noncomputable def dualModuleSheaf (Z : RingedSite.{u, u, u})
     _root_.SheafOfModules.{u} (Tensor.ringSheaf Z.O)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.moduleDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L130). The attribute's comment: “the dual M^∨ = Hom\_\{A/Iⁿ}(M, A/Iⁿ) of a module over A/Iⁿ, and its functoriality”. References: SGA 3 VIIA (3.1.1), “affine dual object”; SGA 3 VIIA (4.3.3), “special case”; SGA 3 VIIB (1.3.5.C), “more general”; SGA 3 VIII (6.8).
+**`Stacks.LocalCohomology.UniformityIII.moduleDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L130). The attribute's comment: “the dual M^∨ = Hom\_\{A/Iⁿ}(M, A/Iⁿ) of a module over A/Iⁿ, and its functoriality”. References: SGA 3 VIIA (3.1.1), “affine dual object”; SGA 3 VIIA (4.3.3), “special case”; SGA 3 VIIB (1.3.5.C), “more general”; SGA 3 VIII (6.8).
 
 > The dual `M^∨ = Hom_R(M, R)` of an `R`-module, as a functor contravariant in `M`: on
 > morphisms it is `LinearMap.dualMap`, that is, precomposition. For `R = A/Iⁿ` this is the `M^∨`
@@ -259,7 +259,7 @@ noncomputable def dualModuleSheaf (Z : RingedSite.{u, u, u})
 noncomputable def moduleDual : (ModuleCat.{u} R)ᵒᵖ ⥤ ModuleCat.{u} R
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.IsANCModule.exists_finFree_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L259). The attribute's comment: “for a ∈ I^c the map a : M → M factors through a finite free A/Iⁿ-module”.
+**`Stacks.LocalCohomology.UniformityIII.IsANCModule.exists_finFree_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L259). The attribute's comment: “for a ∈ I^c the map a : M → M factors through a finite free A/Iⁿ-module”.
 
 > **Stacks Project, Tag 0GAB.** For an `(A, n, c)`-module `M` and `a ∈ I^c` the
 > multiplication-by-`a` endomorphism of `M` factors through a *finite free* `A/Iⁿ`-module.
@@ -276,7 +276,7 @@ theorem IsANCModule.exists_finFree_factorization {A : Type u} [CommRing A] {I : 
       (β : finFreeModule (A ⧸ I ^ n) r ⟶ M), α ≫ β = a • 𝟙 M
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.pullbackModuleDualMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L314). The attribute's comment: “the canonical map can : p^*(M^∨) ⟶ (p^*M)^∨”.
+**`Stacks.LocalCohomology.UniformityIII.pullbackModuleDualMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L314). The attribute's comment: “the canonical map can : p^*(M^∨) ⟶ (p^*M)^∨”.
 
 > **Tag 0GAB, the canonical map `can : p^*(M^∨) ⟶ (p^*M)^∨`.**  For a morphism of ringed sites
 > `f : X ⟶ Spec R` and an `R`-module `M`, with `p^*N = f^*(N~)`: the pullback of the comparison
@@ -289,7 +289,7 @@ noncomputable def pullbackModuleDualMap (M : ModuleCat.{u} R) :
       dualModuleSheaf X ((ringedSitePullback f).obj ((specTilde R).obj M))
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.pullbackModuleDualMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L322). The attribute's comment: “the construction of can is functorial in M”.
+**`Stacks.LocalCohomology.UniformityIII.pullbackModuleDualMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 322](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L322). The attribute's comment: “the construction of can is functorial in M”.
 
 > **Tag 0GAB, the construction of `can` is functorial in `M`.**  For `g : M ⟶ N` the square
 > formed by `can` at `M` and at `N`, by `p^*(g^∨)` and by `(p^*g)^∨` commutes.
@@ -302,7 +302,7 @@ theorem pullbackModuleDualMap_naturality {M N : ModuleCat.{u} R} (g : M ⟶ N) :
         dualModuleSheafMap X ((ringedSitePullback f).map ((specTilde R).map g))
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.isIso_pullbackModuleDualMap_finFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L347). The attribute's comment: “can is an isomorphism at a finite free A/Iⁿ-module”.
+**`Stacks.LocalCohomology.UniformityIII.isIso_pullbackModuleDualMap_finFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 347](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L347). The attribute's comment: “can is an isomorphism at a finite free A/Iⁿ-module”.
 
 > **Tag 0GAB: `can` is an isomorphism at a finite free module `R^{⊕r}`.**  The comparison is
 > invertible there, `R^{⊕r}` being of finite presentation, and so is the sheaf-level `can` at
@@ -313,7 +313,7 @@ theorem isIso_pullbackModuleDualMap_finFree (r : ℕ) :
     IsIso (pullbackModuleDualMap f (finFreeModule R r))
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.IsANCModule.kernel_map_pullbackModuleDualMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L528). The attribute's comment: “for an (A,n,c)-module M, every a ∈ I^c annihilates the kernel of can”.
+**`Stacks.LocalCohomology.UniformityIII.IsANCModule.kernel_map_pullbackModuleDualMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 528](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L528). The attribute's comment: “for an (A,n,c)-module M, every a ∈ I^c annihilates the kernel of can”.
 
 > **Tag 0GAB, the kernel of `can`.**  Let `M` be an `(A, n, c)`-module, `a ∈ I^c` and
 > `f : X ⟶ Spec(A/Iⁿ)` any morphism of ringed sites.  Then `a` annihilates the kernel of
@@ -336,7 +336,7 @@ theorem IsANCModule.kernel_map_pullbackModuleDualMap_eq_zero {X : RingedSite.{u,
         (pullbackModuleDualMap_smul_naturality f M a) = 0
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.IsANCModule.cokernel_map_pullbackModuleDualMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L545). The attribute's comment: “for an (A,n,c)-module M, every a ∈ I^c annihilates the cokernel of can”.
+**`Stacks.LocalCohomology.UniformityIII.IsANCModule.cokernel_map_pullbackModuleDualMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean, line 545](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullbackSource.lean#L545). The attribute's comment: “for an (A,n,c)-module M, every a ∈ I^c annihilates the cokernel of can”.
 
 > **Tag 0GAB, the cokernel of `can`.**  For an `(A, n, c)`-module `M`, `a ∈ I^c` and any
 > morphism of ringed sites `f : X ⟶ Spec(A/Iⁿ)`, `a` annihilates the cokernel of
@@ -360,7 +360,7 @@ theorem IsANCModule.cokernel_map_pullbackModuleDualMap_eq_zero {X : RingedSite.{
 
 [Tag 0GAC](https://stacks.math.columbia.edu/tag/0GAC) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityIII.DualSituation.exists_sum_powQuotSmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMaps.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMaps.lean#L355). The attribute's comment: “with max(d, 1) in place of d, since at d = 0 the source's own argument reaches only level n - 2c while the source states n - c; its one open input is the level-(n-2c) section σ' of p^*(M^∨) produced by factoring through can, hypothesis `hσ`”.
+**`Stacks.LocalCohomology.UniformityIII.DualSituation.exists_sum_powQuotSmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMaps.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMaps.lean#L355). The attribute's comment: “with max(d, 1) in place of d, since at d = 0 the source's own argument reaches only level n - 2c while the source states n - c; its one open input is the level-(n-2c) section σ' of p^*(M^∨) produced by factoring through can, hypothesis `hσ`”.
 
 > **Stacks Project, Tag 0GAC.** With `q₀ = q(S)` and `d = d(S)`, let `M` be an
 > `(A, n, c)`-module and `φ : M → Iⁿ/I^{2n}` an `A`-linear map. Write `D = max(d, 1)` and assume
@@ -411,7 +411,7 @@ theorem exists_sum_powQuotSmul (M : ANCModule I n c)
         ∑ i, (powQuotSmul I (ha i) hgf).comp (ψ i)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.exists_sum_powQuotSmul_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMapsBlowup.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMapsBlowup.lean#L66).
+**`Stacks.LocalCohomology.UniformityIII.exists_sum_powQuotSmul_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMapsBlowup.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DivisibleMapsBlowup.lean#L66).
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal, `q₀ = q(S)` and `d = d(S)` the integers
 > attached to the blowing up of `Spec(A)` in `I` (`qS I` and `fibreDim I`), `M` an
@@ -436,7 +436,7 @@ theorem exists_sum_powQuotSmul_blowup {n c : ℕ} (M : ANCModule I n c)
 
 [Tag 0GAD](https://stacks.math.columbia.edu/tag/0GAD) in the Stacks Project.
 
-**`Stacks.LocalCohomology.UniformityIII.ext_one_powQuot_map_eq_zero_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/TwoTermExtBoundBlowup.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/TwoTermExtBoundBlowup.lean#L84).
+**`Stacks.LocalCohomology.UniformityIII.ext_one_powQuot_map_eq_zero_blowup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/TwoTermExtBoundBlowup.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/TwoTermExtBoundBlowup.lean#L84).
 
 > Let `A` be a Noetherian ring, `I ⊆ A` an ideal, and `q₀ = q(S)`, `d = d(S)` the integers
 > attached to the blowing up of `Spec(A)` in `I` (`qS I` and `fibreDim I`). Let `c ≥ 0` and
@@ -480,4 +480,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.22, Tag 0GA6](https://stacks.math.columbia.edu/tag/0GA6)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

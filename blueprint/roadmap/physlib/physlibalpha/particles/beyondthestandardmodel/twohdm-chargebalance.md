@@ -8,7 +8,7 @@ proof: formalized
 
 # Charge balancing for polynomials
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.ChargeBalance`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.ChargeBalance`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean): 2 declarations, 2 with a docstring.
 
 > A polynomial invariant under a phase rotation of charged variables has only charge-balanced terms.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.ChargeBalance`,
 
 ## A. Rescaling the variables
 
-**`MvPolynomial.coeff_aeval_diag`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean#L54).
+**`MvPolynomial.coeff_aeval_diag`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean#L54).
 
 > Rescaling each variable `Xᵢ` by a constant `d i` multiplies the coefficient of the monomial `m`
 > by `∏ᵢ (d i) ^ (m i)`.
@@ -46,7 +46,7 @@ lemma coeff_aeval_diag {σ R : Type*} [CommRing R] (d : σ → R) (f : MvPolynom
 
 ## B. Charge balancing
 
-**`MvPolynomial.coeff_eq_zero_of_charge_ne_zero`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean#L96).
+**`MvPolynomial.coeff_eq_zero_of_charge_ne_zero`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean#L96).
 
 > **Charge balancing.** If each variable `Xᵢ` carries an integer charge `w i`, `c` is a phase of
 > infinite order, and the polynomial `f` is invariant under the charge rotation
@@ -66,4 +66,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean)
+- [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/ChargeBalance.lean)

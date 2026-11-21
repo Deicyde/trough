@@ -8,7 +8,7 @@ proof: formalized
 
 # Dimensional invariance of fderiv
 
-The module `Physlib.Units.FDeriv`, [Physlib/Units/FDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/FDeriv.lean): 3 declarations, 2 with a docstring.
+The module `Physlib.Units.FDeriv`, [Physlib/Units/FDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/FDeriv.lean): 3 declarations, 2 with a docstring.
 
 > In this module we prove that the derivative is dimensionally correct.
 > That is to say for a function `f : M1 → M2` where `M1` carries dimensions `d1` and `M2` carries
@@ -21,7 +21,7 @@ The module `Physlib.Units.FDeriv`, [Physlib/Units/FDeriv.lean](https://github.co
 > `x dx ↦ dx • (2 * x)` which is still dimensionally correct. Here `dx` is the direction
 > in which the derivative is taken.
 
-**`fderiv_apply_scaleUnit`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/FDeriv.lean#L38).
+**`fderiv_apply_scaleUnit`**, a lemma, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/FDeriv.lean#L38).
 
 ```lean
 lemma fderiv_apply_scaleUnit (u1 u2 : LTMCTUnitChoices) (x dm : M1)
@@ -30,7 +30,7 @@ lemma fderiv_apply_scaleUnit (u1 u2 : LTMCTUnitChoices) (x dm : M1)
     u2.dimScale u1 (dim M2) • u1.dimScale u2 (dim M1) • fderiv ℝ f x dm
 ```
 
-**`fderiv_isDimensionallyCorrect`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/FDeriv.lean#L51).
+**`fderiv_isDimensionallyCorrect`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/FDeriv.lean#L51).
 
 > If a function is dimensionally valid then so is it's derivative.
 
@@ -40,7 +40,7 @@ lemma fderiv_isDimensionallyCorrect (f : M1 → M2) (hf : IsDimensionallyCorrect
     IsDimensionallyCorrect (fderiv ℝ f)
 ```
 
-**`fderiv_dimension_const_direction`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/FDeriv.lean#L67).
+**`fderiv_dimension_const_direction`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/FDeriv.lean#L67).
 
 > The expression `fderiv ℝ f x dm = v.1` for a fixed `dm` and for
 > `v` with dimension `d M2 * (d M1)⁻¹` is dimensionally correct. This is the
@@ -62,4 +62,4 @@ lemma fderiv_dimension_const_direction (dm : M1) (f : M1 → M2) (hf : IsDimensi
 
 ## Sources
 
-- [Physlib/Units/FDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/FDeriv.lean)
+- [Physlib/Units/FDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Units/FDeriv.lean)

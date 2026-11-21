@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.40 Detecting Boundedness
 
-Section 36.40 of the Stacks Project, [Tag 0GEI](https://stacks.math.columbia.edu/tag/0GEI). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.40 of the Stacks Project, [Tag 0GEI](https://stacks.math.columbia.edu/tag/0GEI). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GEJ, a lemma
 
 [Tag 0GEJ](https://stacks.math.columbia.edu/tag/0GEJ) in the Stacks Project.
 
-**`Stacks.Koszul.Truncation.truncGE_restriction_of_hom_koszul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean#L462). The attribute's comment: “(2) implies (1)”.
+**`Stacks.Koszul.Truncation.truncGE_restriction_of_hom_koszul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean, line 462](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean#L462). The attribute's comment: “(2) implies (1)”.
 
 > **[Stacks, Tag 0GEJ], the implication "Koszul orthogonality implies truncated
 > restriction".** Let `f₁, …, f_r ∈ A`, let `U = ⋃ᵢ D(f_i) ⊆ Spec A`, let `j : U ⟶ Spec A` be the
@@ -47,7 +47,7 @@ theorem truncGE_restriction_of_hom_koszul_eq_zero
       ((derivedRestrictPushforwardAdjunction (openComplement f).ι).unit.app E))
 ```
 
-**`Stacks.Koszul.Truncation.hom_koszul_eq_zero_of_truncGE_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean#L495). The attribute's comment: “(1) implies (2) with a replaced by a + r, not the published a + 1, which is false for r ≥ 2 — see the module docstring for the counterexample over k[x,y]”.
+**`Stacks.Koszul.Truncation.hom_koszul_eq_zero_of_truncGE_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/KoszulHighDegreeOrthogonality.lean#L495). The attribute's comment: “(1) implies (2) with a replaced by a + r, not the published a + 1, which is false for r ≥ 2 — see the module docstring for the counterexample over k[x,y]”.
 
 > **[Stacks, Tag 0GEJ], the implication "truncated restriction implies Koszul orthogonality
 > `r` degrees up".** In the situation above, if the canonical map `E ⟶ Rj_*(E|_U)` is invertible
@@ -77,7 +77,7 @@ theorem hom_koszul_eq_zero_of_truncGE_restriction
 
 [Tag 0GEK](https://stacks.math.columbia.edu/tag/0GEK) in the Stacks Project.
 
-**`Stacks.Koszul.Truncation.truncLE_restriction_koszul_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L335). The attribute's comment: “Corrected per errata.md (0GEK, wrong index): for E in D\_QCoh, (1) at a implies (2) at a, and (2) at a+1 implies (1) at a. The printed '(2) implies (1)' at the same a is false (Stacks.Koszul.Errata.erratum\_0GEK: A = k[x], f = (x), E = 𝒪\_X, a = 0); the printed '(1) implies (2) with a replaced by a-1' follows from the first conjunct”.
+**`Stacks.Koszul.Truncation.truncLE_restriction_koszul_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L335). The attribute's comment: “Corrected per errata.md (0GEK, wrong index): for E in D\_QCoh, (1) at a implies (2) at a, and (2) at a+1 implies (1) at a. The printed '(2) implies (1)' at the same a is false (Stacks.Koszul.Errata.erratum\_0GEK: A = k[x], f = (x), E = 𝒪\_X, a = 0); the printed '(1) implies (2) with a replaced by a-1' follows from the first conjunct”.
 
 > Let `f₁, …, f_r ∈ A`, let `U = ⋃ᵢ D(f_i) ⊆ X = Spec A`, let `j : U ⟶ X` be the inclusion, let
 > `K` be the sheafified Koszul complex of the sequence, let `E` be an object of `D_QCoh(𝒪_X)` and let
@@ -109,7 +109,7 @@ theorem truncLE_restriction_koszul_criterion
 
 [Tag 0GEL](https://stacks.math.columbia.edu/tag/0GEL) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.eventually_subsingleton_hom_iff_truncGE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L222).
+**`Stacks.DerivedQCoh.eventually_subsingleton_hom_iff_truncGE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundednessOfAPerfectComplex.lean#L222).
 
 > **[Stacks, Tag 0GEL].** Let `X` be a quasi-compact and quasi-separated scheme, let `P` be a
 > perfect object of `D(𝒪_X)`, let `E` be an object of `D_QCoh(𝒪_X)` and let `a` be an integer. Then
@@ -148,7 +148,7 @@ theorem eventually_subsingleton_hom_iff_truncGE_of_isPerfect
 
 [Tag 0GEM](https://stacks.math.columbia.edu/tag/0GEM) in the Stacks Project.
 
-**`Stacks.Perfect.eventually_subsingleton_hom_iff_truncLE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundedness.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundedness.lean#L258).
+**`Stacks.Perfect.eventually_subsingleton_hom_iff_truncLE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundedness.lean, line 258](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DetectingBoundedness.lean#L258).
 
 > **[Stacks, Tag 0GEM].** Let `X` be a scheme, let `P` and `E` be objects of `D(𝒪_X)` with `P`
 > bounded above by `nP`, and let `a` be an integer. Then `Hom(P⟦-i⟧, E) = 0` for `i ≪ 0` if and only
@@ -173,7 +173,7 @@ theorem eventually_subsingleton_hom_iff_truncLE_of_isLE
 
 [Tag 0GEN](https://stacks.math.columbia.edu/tag/0GEN) in the Stacks Project.
 
-**`Stacks.SheafOfModules.tfae_minus_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean#L331).
+**`Stacks.SheafOfModules.tfae_minus_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean#L331).
 
 > Let `X` be a quasi-compact and quasi-separated scheme, let `G` be a perfect
 > object of `D(𝒪_X)` which generates `D_QCoh(𝒪_X)`, and let `E ∈ D_QCoh(𝒪_X)`. The following are
@@ -237,7 +237,7 @@ theorem tfae_minus_of_isPerfect_generator
 
 [Tag 0GEP](https://stacks.math.columbia.edu/tag/0GEP) in the Stacks Project.
 
-**`Stacks.Cohomology.ExtensionByZeroClosedSupport.isPerfect_jShriek_of_closedSupport_and_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ExtensionByZeroClosedSupport.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ExtensionByZeroClosedSupport.lean#L121).
+**`Stacks.Cohomology.ExtensionByZeroClosedSupport.isPerfect_jShriek_of_closedSupport_and_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ExtensionByZeroClosedSupport.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ExtensionByZeroClosedSupport.lean#L121).
 
 > **Stacks 0GEP.** Let `j : U → X` be an open subspace of a ringed space and let `T ⊆ U` be
 > closed in `X`. For a perfect object `E` of the derived category of `𝒪_U`-modules whose cohomology
@@ -279,7 +279,7 @@ theorem isPerfect_jShriek_of_closedSupport_and_restrict
 
 [Tag 0GEQ](https://stacks.math.columbia.edu/tag/0GEQ) in the Stacks Project.
 
-**`Stacks.SheafOfModules.eventually_subsingleton_shiftedHom_iff_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean#L94). The attribute's comment: “conditions (2) and (3): eventual vanishing of Hom(G[-i], E) and of Ext^i(G, E)”.
+**`Stacks.SheafOfModules.eventually_subsingleton_shiftedHom_iff_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean#L94). The attribute's comment: “conditions (2) and (3): eventual vanishing of Hom(G[-i], E) and of Ext^i(G, E)”.
 
 > **Stacks 0GEQ, conditions (2) and (3).** For a perfect generator `G` of `D_QCoh(𝒪_X)` on a
 > quasi-compact, quasi-separated scheme and an object `E` of `D_QCoh(𝒪_X)`, the groups
@@ -302,7 +302,7 @@ theorem eventually_subsingleton_shiftedHom_iff_ext
       ∃ N : ℤ, ∀ i ≤ N, Subsingleton (DerivedCategory.Ext G E i)
 ```
 
-**`Stacks.SheafOfModules.plus_derivedGlobalSections_derivedTensor_derivedDual_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean#L127). The attribute's comment: “conditions (5) and (6): eventual vanishing of H^i(X, G^vee ⊗ E) and membership of RGamma(X, G^vee ⊗ E) in D^+(Z)”.
+**`Stacks.SheafOfModules.plus_derivedGlobalSections_derivedTensor_derivedDual_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundedBelowGenerator.lean#L127). The attribute's comment: “conditions (5) and (6): eventual vanishing of H^i(X, G^vee ⊗ E) and membership of RGamma(X, G^vee ⊗ E) in D^+(Z)”.
 
 > **Stacks 0GEQ, conditions (5) and (6).** For a perfect generator `G` of `D_QCoh(𝒪_X)` on a
 > quasi-compact, quasi-separated scheme and an object `E` of `D_QCoh(𝒪_X)`, the cohomology groups
@@ -331,7 +331,7 @@ theorem plus_derivedGlobalSections_derivedTensor_derivedDual_iff
           (((derivedTensor X.sheaf).obj E).obj (derivedDual X.sheaf G))))
 ```
 
-**`Stacks.SheafOfModules.tfae_plus_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean#L409). The attribute's comment: “the full statement: the equivalence of conditions (1) to (7), with (7) split into (a), (b) and (c), for every perfect P”.
+**`Stacks.SheafOfModules.tfae_plus_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean, line 409](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/DetectingBoundednessGenerator.lean#L409). The attribute's comment: “the full statement: the equivalence of conditions (1) to (7), with (7) split into (a), (b) and (c), for every perfect P”.
 
 > Let `X` be a quasi-compact and quasi-separated scheme, let `G` be a perfect
 > object of `D(𝒪_X)` which generates `D_QCoh(𝒪_X)`, and let `E ∈ D_QCoh(𝒪_X)`. The following are
@@ -401,4 +401,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.40, Tag 0GEI](https://stacks.math.columbia.edu/tag/0GEI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

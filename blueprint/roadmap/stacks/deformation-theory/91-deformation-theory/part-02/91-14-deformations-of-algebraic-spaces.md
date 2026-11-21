@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.14 Deformations of algebraic spaces
 
-Section 91.14 of the Stacks Project, [Tag 0D15](https://stacks.math.columbia.edu/tag/0D15). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 91.14 of the Stacks Project, [Tag 0D15](https://stacks.math.columbia.edu/tag/0D15). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0D16, a lemma
 
 [Tag 0D16](https://stacks.math.columbia.edu/tag/0D16) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isThickeningHom_iff_isThickening_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleRingedToposThickeningIff.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleRingedToposThickeningIff.lean#L143).
+**`AlgebraicGeometry.Space.isThickeningHom_iff_isThickening_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleRingedToposThickeningIff.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SmallEtaleRingedToposThickeningIff.lean#L143).
 
 > **Stacks 0D16.**  Let `S` be a scheme and `i : Z ⟶ Z'` a morphism of algebraic spaces over
 > `S`.  Then `i` is a thickening of algebraic spaces (Stacks 05ZJ, Definition 05ZK: a closed
@@ -36,7 +36,7 @@ theorem isThickeningHom_iff_isThickening_smallEtaleRingedToposHom
 
 [Tag 0D17](https://stacks.math.columbia.edu/tag/0D17) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatThickeningDeformation.classes_naturalAddTorsor_and_autMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatThickeningDeformation/NaturalClassification.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatThickeningDeformation/NaturalClassification.lean#L128). The attribute's comment: “both parts, with the action on isomorphism classes characterised by the obstruction class of 08UG as in 08UK, and the isomorphism Aut = Ext^0 given explicitly through the automorphism (phi^#)^(-1) of the solution and 08UG”.
+**`AlgebraicGeometry.Space.FlatThickeningDeformation.classes_naturalAddTorsor_and_autMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatThickeningDeformation/NaturalClassification.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FlatThickeningDeformation/NaturalClassification.lean#L128). The attribute's comment: “both parts, with the action on isomorphism classes characterised by the obstruction class of 08UG as in 08UK, and the isomorphism Aut = Ext^0 given explicitly through the automorphism (phi^#)^(-1) of the solution and 08UG”.
 
 > **[Stacks Project, Tag 0D17]**, with its natural structures. Let `S` be a scheme, `Y ⊂ Y'` a
 > first order thickening of algebraic spaces over `S` (`hZ`) and `f : X ⟶ Y` a flat morphism of
@@ -80,7 +80,7 @@ theorem classes_naturalAddTorsor_and_autMulEquiv (hf : IsFlat B S hS f.hom)
 
 [Tag 0D3P](https://stacks.math.columbia.edu/tag/0D3P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_of_isPushoutFunctor_of_isIso_coherator_map_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraExtensionPushoutQcqs.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraExtensionPushoutQcqs.lean#L296).
+**`AlgebraicGeometry.Space.isEquivalence_of_isPushoutFunctor_of_isIso_coherator_map_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraExtensionPushoutQcqs.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraExtensionPushoutQcqs.lean#L296).
 
 > **[Stacks Project, Tag 0D3P].** Let `f : X ⟶ Y` be a morphism of algebraic spaces with `X`
 > quasi-compact and quasi-separated, let `φ : ℱ ⟶ 𝒢` be a morphism of `𝒪_X`-modules such that
@@ -114,7 +114,7 @@ theorem isEquivalence_of_isPushoutFunctor_of_isIso_coherator_map_of_qcqs
 
 [Tag 0D3Q](https://stacks.math.columbia.edu/tag/0D3Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_of_isKernelPushoutFunctor_of_isIso_coherator_map_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickenedBasePushoutEquivalence.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ThickenedBasePushoutEquivalence.lean#L66).
+**`AlgebraicGeometry.Space.isEquivalence_of_isKernelPushoutFunctor_of_isIso_coherator_map_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ThickenedBasePushoutEquivalence.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ThickenedBasePushoutEquivalence.lean#L66).
 
 > **[Stacks Project, Tag 0D3Q].** Let `f : X ⟶ D` be a morphism of algebraic spaces with `X`
 > quasi-compact and quasi-separated, and `i : D ⟶ D'` a closed immersion (for instance a first order
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.14, Tag 0D15](https://stacks.math.columbia.edu/tag/0D15)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Fourier transform of the sphere measure
 
-The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Fourier`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean): 3 declarations, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Fourier`, [PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean): 3 declarations, 1 with a docstring.
 
 > Archimedes' formula computes the exact sine multiplier of the sphere measure.
 
@@ -29,14 +29,14 @@ The module `PhyslibAlpha.Mathematics.Geometry.Sphere.Fourier`, [PhyslibAlpha/Mat
 
 ## A. Fourier transform of the sphere measure
 
-**`Sphere3.integral_exp_symm`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L46).
+**`Sphere3.integral_exp_symm`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L46).
 
 ```lean
 lemma integral_exp_symm (a R : ℝ) (ha : a ≠ 0) :
     ∫ z in (-R)..R, Complex.exp (Complex.I * (a * z)) = 2 * Real.sin (a * R) / a
 ```
 
-**`Sphere3.sphere_fourier_axis`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L73).
+**`Sphere3.sphere_fourier_axis`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L73).
 
 > The Fourier transform of the sphere measure along an axis.
 
@@ -46,7 +46,7 @@ lemma sphere_fourier_axis (i : Fin 3) {a R : ℝ} (ha : a ≠ 0) (hR : 0 < R) :
       (4 * Real.pi * Real.sin (a * R) / (a * R) : ℝ)
 ```
 
-**`Sphere3.sphere_fourier`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L91).
+**`Sphere3.sphere_fourier`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean#L91).
 
 ```lean
 lemma sphere_fourier (k : Space 3) (hk : k ≠ 0) {R : ℝ} (hR : 0 < R) :
@@ -64,4 +64,4 @@ lemma sphere_fourier (k : Space 3) (hk : k ≠ 0) {R : ℝ} (hR : 0 < R) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean)
+- [PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Geometry/Sphere/Fourier.lean)

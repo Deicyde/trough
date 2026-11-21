@@ -8,7 +8,7 @@ proof: formalized
 
 # Free space
 
-The module `Physlib.Electromagnetism.Dynamics.Basic`, [Physlib/Electromagnetism/Dynamics/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean): 9 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.Dynamics.Basic`, [Physlib/Electromagnetism/Dynamics/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean): 9 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.Electromagnetism.Dynamics.Basic`, [Physlib/Electromagnetism/
 
 ## A. The definition of the free space type
 
-**`Electromagnetism.FreeSpace`**, a structure, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L51).
+**`Electromagnetism.FreeSpace`**, a structure, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L51).
 
 > Free space consists of the specification of the
 > electric permittivity and the magnetic permeability.
@@ -48,25 +48,25 @@ structure FreeSpace where
 
 ## B. Positivity properties
 
-**`Electromagnetism.FreeSpace.ε₀_nonneg`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L70).
+**`Electromagnetism.FreeSpace.ε₀_nonneg`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L70).
 
 ```lean
 lemma ε₀_nonneg : 0 ≤ 𝓕.ε₀
 ```
 
-**`Electromagnetism.FreeSpace.μ₀_nonneg`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L73).
+**`Electromagnetism.FreeSpace.μ₀_nonneg`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L73).
 
 ```lean
 lemma μ₀_nonneg : 0 ≤ 𝓕.μ₀
 ```
 
-**`Electromagnetism.FreeSpace.ε₀_ne_zero`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L76).
+**`Electromagnetism.FreeSpace.ε₀_ne_zero`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L76).
 
 ```lean
 lemma ε₀_ne_zero : 𝓕.ε₀ ≠ 0
 ```
 
-**`Electromagnetism.FreeSpace.μ₀_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L79).
+**`Electromagnetism.FreeSpace.μ₀_ne_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L79).
 
 ```lean
 lemma μ₀_ne_zero : 𝓕.μ₀ ≠ 0
@@ -74,7 +74,7 @@ lemma μ₀_ne_zero : 𝓕.μ₀ ≠ 0
 
 ## C. The speed of light
 
-**`Electromagnetism.FreeSpace.c`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L88).
+**`Electromagnetism.FreeSpace.c`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L88).
 
 > The speed of light in free space.
 
@@ -82,19 +82,19 @@ lemma μ₀_ne_zero : 𝓕.μ₀ ≠ 0
 noncomputable def c : SpeedOfLight
 ```
 
-**`Electromagnetism.FreeSpace.c_val`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L95).
+**`Electromagnetism.FreeSpace.c_val`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L95).
 
 ```lean
 lemma c_val : (𝓕.c : ℝ) = 1 / √(𝓕.ε₀ * 𝓕.μ₀)
 ```
 
-**`Electromagnetism.FreeSpace.c_sq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L97).
+**`Electromagnetism.FreeSpace.c_sq`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L97).
 
 ```lean
 lemma c_sq : (𝓕.c : ℝ) ^ 2 = 1 / (𝓕.ε₀ * 𝓕.μ₀)
 ```
 
-**`Electromagnetism.FreeSpace.c_abs`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean#L105).
+**`Electromagnetism.FreeSpace.c_abs`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean#L105).
 
 ```lean
 lemma c_abs : abs (𝓕.c : ℝ) = 𝓕.c
@@ -106,4 +106,4 @@ lemma c_abs : abs (𝓕.c : ℝ) = 𝓕.c
 
 ## Sources
 
-- [Physlib/Electromagnetism/Dynamics/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Basic.lean)
+- [Physlib/Electromagnetism/Dynamics/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/Basic.lean)

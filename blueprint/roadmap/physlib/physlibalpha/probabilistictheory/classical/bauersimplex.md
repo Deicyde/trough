@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.PureState.hasPureDecomposition, ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine_of_isClosed, ProbabilisticTheory.isBauerSimplexStateSpace_iff
+lean: PhyslibAlpha.ProbabilisticTheory.PureState.hasPureDecomposition, PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine_of_isClosed, PhyslibAlpha.ProbabilisticTheory.isBauerSimplexStateSpace_iff
 statement: formalized
 proof: formalized
 ---
 
 # Bauer simplices
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.BauerSimplex`, [PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.BauerSimplex`, [PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean): 3 declarations, 3 with a docstring.
 
 > The state space is a Bauer simplex exactly when ensembles refine and pure states are closed.
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.BauerSimplex`, [PhyslibAl
 
 ## A. Pure decompositions
 
-**`ProbabilisticTheory.PureState.hasPureDecomposition`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.PureState.hasPureDecomposition`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L64).
 
 > With closed pure states, every state decomposes into pure states.
 
@@ -49,7 +49,7 @@ lemma PureState.hasPureDecomposition [CompactSpace (PureState E)] (ω : 𝓢[ℝ
 
 ## B. Bauer simplices
 
-**`ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine_of_isClosed`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L76).
+**`PhyslibAlpha.ProbabilisticTheory.isSimplexStateSpace_iff_ensemblesRefine_of_isClosed`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L76).
 
 > With closed pure states, the state space is a simplex exactly when ensembles refine.
 
@@ -59,7 +59,7 @@ lemma isSimplexStateSpace_iff_ensemblesRefine_of_isClosed
     IsSimplexStateSpace E ↔ EnsemblesRefine E
 ```
 
-**`ProbabilisticTheory.isBauerSimplexStateSpace_iff`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.isBauerSimplexStateSpace_iff`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean#L85).
 
 > **Bauer simplices**: the state space is a Bauer simplex exactly when ensembles refine and the
 > pure states are closed.
@@ -80,4 +80,4 @@ lemma isBauerSimplexStateSpace_iff : IsBauerSimplexStateSpace E ↔
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean)

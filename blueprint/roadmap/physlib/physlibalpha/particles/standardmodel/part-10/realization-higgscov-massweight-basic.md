@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight grading of the Higgs sector, in derivative submodules
 
-The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.Basic`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight.Basic`, [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.HiggsCov.MassWeight
 
 ## A. The mass-weight grading in derivative submodules
 
-**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_le_massWeightSubmodule`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L66).
+**`StandardModel.HiggsAlgebraCovRealization.derivSubmodule_le_massWeightSubmodule`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L66).
 
 > The derivative submodule sits in the mass-weight submodule of weight `2 * (1 + n)`.
 
@@ -46,7 +46,7 @@ lemma derivSubmodule_le_massWeightSubmodule (n : ℕ) :
     h.derivSubmodule n ≤ h.massWeightSubmodule (2 * (1 + n))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eq_derivSubmodule`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L73).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eq_derivSubmodule`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L73).
 
 > The weight recursion, with the single-symbol part written as a derivative
 > submodule.
@@ -60,7 +60,7 @@ lemma massWeightSubmodule_eq_derivSubmodule (i : ℕ) (hi : 0 < i) :
             h.massWeightSubmodule (p.1 : ℕ) * h.massWeightSubmodule (p.2 : ℕ))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eq_iSup_derivSubmodule_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L84).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eq_iSup_derivSubmodule_mul`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L84).
 
 > Removing the leftmost Higgs tower, written with the derivative submodules: a term of
 > positive weight `w` is a sum of products of a tower `derivSubmodule n`, of weight
@@ -73,7 +73,7 @@ lemma massWeightSubmodule_eq_iSup_derivSubmodule_mul (w : ℕ) (hw : 0 < w) :
           h.derivSubmodule n * h.massWeightSubmodule (w - 2 * (1 + n))
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_two_eq_deriv`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L91).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_two_eq_deriv`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L91).
 
 > Weight two is the underived Higgs symbols.
 
@@ -82,7 +82,7 @@ lemma massWeightSubmodule_two_eq_deriv :
     h.massWeightSubmodule 2 = h.derivSubmodule 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_four_eq_deriv`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L97).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_four_eq_deriv`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L97).
 
 > Weight four: the leftmost tower is underived, leaving weight two, which is an underived
 > tower, or once-derived, leaving weight zero.
@@ -93,7 +93,7 @@ lemma massWeightSubmodule_four_eq_deriv :
       = h.derivSubmodule 1 ⊔ h.derivSubmodule 0 * h.derivSubmodule 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_six_eq_deriv`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L108).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_six_eq_deriv`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L108).
 
 > Weight six: the leftmost tower leaves weight four, two or zero. The product of an
 > underived tower with a once-derived one occurs in both orders, which agree by
@@ -106,7 +106,7 @@ lemma massWeightSubmodule_six_eq_deriv :
         ⊔ h.derivSubmodule 0 * h.derivSubmodule 0 * h.derivSubmodule 0
 ```
 
-**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eight_eq_deriv`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L122).
+**`StandardModel.HiggsAlgebraCovRealization.massWeightSubmodule_eight_eq_deriv`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean#L122).
 
 > Weight eight: the leftmost tower leaves weight six, four, two or zero. Products that
 > differ only in the order of commuting towers agree by `derivSubmodule_mul_comm`.
@@ -127,4 +127,4 @@ lemma massWeightSubmodule_eight_eq_deriv :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean)

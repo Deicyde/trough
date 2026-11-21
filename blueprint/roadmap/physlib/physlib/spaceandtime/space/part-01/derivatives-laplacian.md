@@ -8,7 +8,7 @@ proof: formalized
 
 # The Laplacian operator on `Space d`
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.Laplacian`, [Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean): 7 declarations, 5 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Derivatives.Laplacian`, [Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean): 7 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.Laplacian`, [Physlib/SpaceAnd
 
 ## A. Laplacian on functions to ℝ
 
-**`Space.laplacian`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L53).
+**`Space.laplacian`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L53).
 
 > The scalar `laplacian` operator.
 
@@ -41,7 +41,7 @@ noncomputable def laplacian {d} (f : Space d → ℝ) : Space d → ℝ
 
 ### A.1. Relation between laplacian and divergence of gradient
 
-**`Space.laplacian_eq_sum_snd_deriv`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L65).
+**`Space.laplacian_eq_sum_snd_deriv`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L65).
 
 ```lean
 lemma laplacian_eq_sum_snd_deriv {d} (f : Space d → ℝ) :
@@ -50,7 +50,7 @@ lemma laplacian_eq_sum_snd_deriv {d} (f : Space d → ℝ) :
 
 ## B. Laplacian on vector valued functions
 
-**`Space.laplacianVec`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L77).
+**`Space.laplacianVec`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L77).
 
 > The vector `laplacianVec` operator.
 
@@ -61,7 +61,7 @@ noncomputable def laplacianVec {d} (f : Space d → EuclideanSpace ℝ (Fin d)) 
 
 ## C. Laplacian of distributions
 
-**`Space.distLaplacian`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L94).
+**`Space.distLaplacian`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L94).
 
 > The distributional `distLaplacian` operator.
 
@@ -72,7 +72,7 @@ noncomputable def distLaplacian {d} :
 
 ### C.1. Laplacian of constant distributions
 
-**`Space.distLaplacian_const`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L108).
+**`Space.distLaplacian_const`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L108).
 
 ```lean
 lemma distLaplacian_const {d : ℕ} (c : ℝ) :
@@ -81,7 +81,7 @@ lemma distLaplacian_const {d : ℕ} (c : ℝ) :
 
 ## D. Composition with a linear isometry
 
-**`Space.laplacian_comp_linearIsometryEquiv`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L120).
+**`Space.laplacian_comp_linearIsometryEquiv`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L120).
 
 > The Laplacian of `f ∘ R` at `x` is the Laplacian of `f` at `R x`, for a linear isometry `R`
 > of space.
@@ -92,7 +92,7 @@ lemma laplacian_comp_linearIsometryEquiv {d : ℕ} (f : Space d → ℝ) (R : Sp
     Δ (fun y => f (R y)) x = Δ f (R x)
 ```
 
-**`Space.laplacianVec_comp_linearIsometryEquiv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L158).
+**`Space.laplacianVec_comp_linearIsometryEquiv`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean#L158).
 
 > The vector Laplacian of `f ∘ R` at `x` is the vector Laplacian of `f` at `R x`, for a linear
 > isometry `R` of space.
@@ -110,4 +110,4 @@ lemma laplacianVec_comp_linearIsometryEquiv {d : ℕ} (f : Space d → Euclidean
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean)

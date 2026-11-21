@@ -8,7 +8,7 @@ proof: formalized
 
 # Cross contraction at named slots
 
-The module `Physlib.Relativity.Tensors.Contraction.CrossToEnd`, [Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.CrossToEnd`, [Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -57,7 +57,7 @@ The module `Physlib.Relativity.Tensors.Contraction.CrossToEnd`, [Physlib/Relativ
 
 ## A. Slot-addressed cross contraction
 
-**`TensorSpecies.Tensor.crossToEnd`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L91).
+**`TensorSpecies.Tensor.crossToEnd`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L91).
 
 > Slot-addressed cross contraction: contract slot `i` of `t1` against slot `j` of `t2`. The
 > survivors are `t1`'s slots except `i` followed by `t2`'s slots except `j`, so the output color is
@@ -70,7 +70,7 @@ noncomputable def crossToEnd {nA nB : ℕ} {cA : Fin (nA + 1) → C} {cB : Fin (
       Tensor S (Fin.append (cA ∘ i.succAbove) (cB ∘ j.succAbove))
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_two`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L121).
+**`TensorSpecies.Tensor.crossToEnd_two`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L121).
 
 > Cross-contracting the last slot of a rank-2 tensor `A` with the `0`-slot of a rank-2 tensor `B`
 > is a plain `contrT` of their product on the middle slots `1, 2`, up to a color recast. Discharging
@@ -97,7 +97,7 @@ lemma crossToEnd_two {cA cB : Fin 2 → C} (h : S.τ (cA (Fin.last 1)) = cB 0)
 > linear `permT`/`contrT` factors, so additivity, scalar multiplication, and finite sums in either
 > argument are already the generic `map_add`/`map_smul`/`map_sum` and need no lemmas of their own.
 
-**`TensorSpecies.Tensor.crossToEnd_basis`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L153).
+**`TensorSpecies.Tensor.crossToEnd_basis`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L153).
 
 > Cross contraction of two basis tensors: the contraction of the two contracted basis vectors
 > times the basis tensor of the surviving labels. These values determine `crossToEnd i j hc`, a
@@ -113,7 +113,7 @@ lemma crossToEnd_basis {nA nB : ℕ} {cA : Fin (nA + 1) → C} {cB : Fin (nB + 1
           (ComponentIdx.prod.symm (fun m => φA (i.succAbove m), fun m => φB (j.succAbove m)))
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_fin`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L189).
+**`TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_fin`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L189).
 
 > The component formula for a cross contraction at arbitrary slots and ranks, for any species:
 > each contracted label is summed over its own slot, with the contraction of the two basis vectors as
@@ -133,7 +133,7 @@ lemma crossToEnd_basis_repr_eq_sum_fin {nA nB : ℕ} {cA : Fin (nA + 1) → C}
           b (S.τ (cA i)) (basisIdxCongr (by rw [hc]) x₂))
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_dual`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L222).
+**`TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_dual`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L222).
 
 > The component formula for a cross contraction at arbitrary slots and ranks, for a species with
 > contraction-dual bases: the contraction coefficient is `δ` and one sum remains, the contracted label
@@ -153,7 +153,7 @@ lemma crossToEnd_basis_repr_eq_sum_dual [HasContrDualBases S] {nA nB : ℕ} {cA 
             φ.prod.2))
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_pair_basis_repr`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L240).
+**`TensorSpecies.Tensor.crossToEnd_pair_basis_repr`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L240).
 
 > The component formula for cross-contracting the last slot of a rank-two tensor with the first
 > slot of another. The surviving labels are supplied as a dependent pair, so the formula applies when
@@ -174,7 +174,7 @@ lemma crossToEnd_pair_basis_repr [HasContrDualBases S] {c0 c1 c2 c3 : C} (h : S.
             (basisIdxCongr h ((HasContrDualBases.contrDualIdxEquiv S c1).symm x), y3))
 ```
 
-**`TensorSpecies.Tensor.toMatrix_crossToEnd_pair`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L259).
+**`TensorSpecies.Tensor.toMatrix_crossToEnd_pair`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L259).
 
 > Cross contraction of two rank-two tensors is the product of their component matrices, the
 > middle labels matched by `HasContrDualBases.dualIdxEquiv`.
@@ -187,7 +187,7 @@ lemma toMatrix_crossToEnd_pair [HasContrDualBases S] {c0 c1 c2 c3 : C} (h : S.τ
         (fun x : basisIdx (![c0, c1] 1) => HasContrDualBases.dualIdxEquiv h x) id
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_equivariant`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L269).
+**`TensorSpecies.Tensor.crossToEnd_equivariant`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L269).
 
 > Cross contraction is `G`-equivariant, each of `prodT`, `contrT` and `permT` being so.
 
@@ -204,7 +204,7 @@ lemma crossToEnd_equivariant {nA nB : ℕ} {cA : Fin (nA + 1) → C} {cB : Fin (
 > the pure-tensor level, so the seam permutation never crosses a contraction under `whnf`;
 > `Pure.permP_dropPair_dropPair_congr` closes the step.
 
-**`TensorSpecies.Tensor.crossToEnd_assoc_rankTwo`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L296).
+**`TensorSpecies.Tensor.crossToEnd_assoc_rankTwo`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L296).
 
 > Rebracket the chain `A —(iA·0)— B —(last·0)— C` for rank-two `B` and `C`: contracting `A·B`
 > first and then `·C` equals contracting `B·C` first and then `A·`, up to the color recast
@@ -256,7 +256,7 @@ lemma crossToEnd_assoc_rankTwo {nA : ℕ}
 > `σ'` as an argument rather than deriving it lets a caller supply the survivor map it wants (`id`, a
 > swap-induced map) instead of an opaque composite.
 
-**`TensorSpecies.Tensor.crossToEnd_permT_left`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L441).
+**`TensorSpecies.Tensor.crossToEnd_permT_left`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L441).
 
 > Left commutator: contracting slot `i` of `permT σ t1` equals contracting slot `σ i` of `t1`,
 > then relabelling the survivors by `σ'`. The square `hσ'` records how `σ'` carries the complement
@@ -278,7 +278,7 @@ lemma crossToEnd_permT_left {nA nB : ℕ} {cA cA' : Fin (nA + 1) → C}
         (crossToEnd (σ i) j (by rw [hσ.2 i]; exact hc) t1 t2)
 ```
 
-**`TensorSpecies.Tensor.crossToEnd_permT_right`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L480).
+**`TensorSpecies.Tensor.crossToEnd_permT_right`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean#L480).
 
 > Right commutator, the mirror of `crossToEnd_permT_left`: contracting slot `j` of `permT σ t2`
 > equals contracting slot `σ j` of `t2`, then relabelling the survivors by `σ'`.
@@ -311,4 +311,4 @@ lemma crossToEnd_permT_right {nA nB : ℕ} {cA : Fin (nA + 1) → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean)
+- [Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean)

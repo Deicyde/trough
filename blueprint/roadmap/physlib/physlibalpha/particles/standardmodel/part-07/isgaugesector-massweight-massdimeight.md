@@ -8,7 +8,7 @@ proof: formalized
 
 # Products of two field strengths as bi-adjoint gauge tensors
 
-The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDimEight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean): 124 declarations, 124 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDimEight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean): 124 declarations, 124 with a docstring.
 
 ## i. Overview
 
@@ -81,7 +81,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDi
 > each adjoint family's span to `⊥`; `ReducesInvariantsTo.iSup` joins the families of one
 > kind, and `ReducesInvariantsTo.sup` joins the kinds.
 
-**`StandardModel.IsGaugeSector.iSup_span_singleton_le`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L129).
+**`StandardModel.IsGaugeSector.iSup_span_singleton_le`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L129).
 
 > A span lies in a submodule as soon as its generators do.
 
@@ -90,7 +90,7 @@ lemma iSup_span_singleton_le {ι : Sort*} (T : ι → B) {V : Submodule ℂ B}
     (hV : ∀ i, T i ∈ V) : (⨆ i, ℂ ∙ T i) ≤ V
 ```
 
-**`StandardModel.IsGaugeSector.mem_iSup_span₃`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L134).
+**`StandardModel.IsGaugeSector.mem_iSup_span₃`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L134).
 
 > A generator of a family with three indices lies in its span.
 
@@ -99,7 +99,7 @@ lemma mem_iSup_span₃ {α β γ : Sort*} (T : α → β → γ → B) (a : α) 
     T a b c ∈ ⨆ (a) (b) (c), ℂ ∙ T a b c
 ```
 
-**`StandardModel.IsGaugeSector.span_stable_of_map_eq_sum`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L141).
+**`StandardModel.IsGaugeSector.span_stable_of_map_eq_sum`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L141).
 
 > A linear map moving each generator to a combination of the generators carries the span
 > into itself; the transformation laws of this file all have this shape.
@@ -110,7 +110,7 @@ lemma span_stable_of_map_eq_sum {ι : Type} [Fintype ι] (T : ι → B) (f : B �
     ∀ y ∈ Submodule.span ℂ (Set.range T), f y ∈ Submodule.span ℂ (Set.range T)
 ```
 
-**`StandardModel.IsGaugeSector.map_eq_self_of_mem_iSup_span`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L147).
+**`StandardModel.IsGaugeSector.map_eq_self_of_mem_iSup_span`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L147).
 
 > A linear map fixing each generator fixes the span pointwise.
 
@@ -119,7 +119,7 @@ lemma map_eq_self_of_mem_iSup_span {ι : Sort*} (T : ι → B) (f : B →ₗ[ℂ
     (hf : ∀ i, f (T i) = T i) : ∀ y ∈ ⨆ i, ℂ ∙ T i, f y = y
 ```
 
-**`StandardModel.IsGaugeSector.span_singleton_mul_span_singleton_le`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L154).
+**`StandardModel.IsGaugeSector.span_singleton_mul_span_singleton_le`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L154).
 
 > The product of two lines lies in a submodule as soon as the product of the two
 > generators does.
@@ -129,7 +129,7 @@ lemma span_singleton_mul_span_singleton_le {a b : B} {V : Submodule ℂ B} (hab 
     (ℂ ∙ a) * (ℂ ∙ b) ≤ V
 ```
 
-**`StandardModel.IsGaugeSector.iSup_span_mul_iSup_span_le`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L161).
+**`StandardModel.IsGaugeSector.iSup_span_mul_iSup_span_le`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L161).
 
 > The product of two spans lies in a submodule as soon as the products of their
 > generators do.
@@ -140,7 +140,7 @@ lemma iSup_span_mul_iSup_span_le {α β γ α' β' γ' : Sort*} (T : α → β �
     (⨆ (a) (b) (c), ℂ ∙ T a b c) * (⨆ (a) (b) (c), ℂ ∙ T' a b c) ≤ V
 ```
 
-**`StandardModel.IsGaugeSector.sum_mul_sum_eq_sum_pi_two`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L170).
+**`StandardModel.IsGaugeSector.sum_mul_sum_eq_sum_pi_two`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L170).
 
 > A product of two combinations is a combination indexed by pairs.
 
@@ -150,7 +150,7 @@ lemma sum_mul_sum_eq_sum_pi_two {k : ℕ} (c₀ c₁ : Fin k → ℂ) (X Y : Fin
       = ∑ d : Fin 2 → Fin k, (c₀ (d 0) * c₁ (d 1)) • (X (d 0) * Y (d 1))
 ```
 
-**`StandardModel.IsGaugeSector.map_mul_fixed_eq_sum`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L180).
+**`StandardModel.IsGaugeSector.map_mul_fixed_eq_sum`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L180).
 
 > A multiplicative map moving a family by a matrix and fixing a vector moves the
 > products of the family with that vector by the same matrix.
@@ -161,7 +161,7 @@ lemma map_mul_fixed_eq_sum {k : ℕ} {f : B →ₗ[ℂ] B} (hf : ∀ x y, f (x *
     (hv : f v = v) (l : Fin k) : f (T l * v) = ∑ a, c a l • (T a * v)
 ```
 
-**`StandardModel.IsGaugeSector.map_fixed_mul_eq_sum`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L187).
+**`StandardModel.IsGaugeSector.map_fixed_mul_eq_sum`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L187).
 
 > The mirror of `map_mul_fixed_eq_sum` with the fixed vector on the left.
 
@@ -180,7 +180,7 @@ lemma map_fixed_mul_eq_sum {k : ℕ} {f : B →ₗ[ℂ] B} (hf : ∀ x y, f (x *
 > strengths by the `su(2)` adjoint matrix of the isospin factor, and the hypercharge field
 > strength is fixed. The colour factor alone fixes the `W`-boson field strengths as well.
 
-**`StandardModel.IsGaugeSector.repGauge_F_coord`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L209).
+**`StandardModel.IsGaugeSector.repGauge_F_coord`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L209).
 
 > The field-strength symbol evaluated on a standard-basis coordinate transforms under
 > the gauge group through the column of `adjointMatrix` indexed by that coordinate.
@@ -193,7 +193,7 @@ lemma repGauge_F_coord (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
           F l μ ν (GaugeAlgebra.stdBasis.coord b)
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_gluonField`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L223).
+**`StandardModel.IsGaugeSector.repGauge_gluonField`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L223).
 
 > The gluon field strength transforms in the adjoint representation of the `su(3)`
 > factor of the gauge group.
@@ -206,7 +206,7 @@ lemma repGauge_gluonField (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
           h.gluonField l μ ν a
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_wField`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L234).
+**`StandardModel.IsGaugeSector.repGauge_wField`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L234).
 
 > The `W`-boson field strength transforms in the adjoint representation of the `su(2)`
 > factor of the gauge group.
@@ -219,7 +219,7 @@ lemma repGauge_wField (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3
           h.wField l μ ν i
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_hyperchargeField`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L245).
+**`StandardModel.IsGaugeSector.repGauge_hyperchargeField`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L245).
 
 > The hypercharge field strength is gauge invariant: the adjoint action of the gauge
 > group on the `u(1)` factor of the gauge algebra is trivial.
@@ -230,7 +230,7 @@ lemma repGauge_hyperchargeField (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1
     repGauge g (h.hyperchargeField l μ ν) = h.hyperchargeField l μ ν
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_su3_wField`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L254).
+**`StandardModel.IsGaugeSector.repGauge_su3_wField`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L254).
 
 > The `W`-boson field strengths are fixed by the colour factor of the gauge group: the
 > `su(2)` block of the adjoint matrix reads the isospin factor alone.
@@ -241,7 +241,7 @@ lemma repGauge_su3_wField (U : specialUnitaryGroup (Fin 3) ℂ) {n : ℕ}
     repGauge (U, 1, 1) (h.wField l μ ν i) = h.wField l μ ν i
 ```
 
-**`StandardModel.IsGaugeSector.isSU3Adjoint_gluonField`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L270).
+**`StandardModel.IsGaugeSector.isSU3Adjoint_gluonField`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L270).
 
 > The gluon field strengths at fixed derivative slots and covector indices form a family
 > of one `su(3)` adjoint index.
@@ -251,7 +251,7 @@ lemma isSU3Adjoint_gluonField {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν :
     IsSU3Adjoint B repGauge (h.gluonField l μ ν)
 ```
 
-**`StandardModel.IsGaugeSector.isSU2Adjoint_wField`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L276).
+**`StandardModel.IsGaugeSector.isSU2Adjoint_wField`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L276).
 
 > The `W`-boson field strengths at fixed derivative slots and covector indices form a
 > family of one `su(2)` adjoint index.
@@ -272,7 +272,7 @@ lemma isSU2Adjoint_wField {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
 > gauge group and has mass weight eight, the sum of the mass weights of its two factors; so
 > is the twice-derived hypercharge field strength, the other shape of mass weight eight.
 
-**`StandardModel.IsGaugeSector.EightIdx`**, an abbrev, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L298).
+**`StandardModel.IsGaugeSector.EightIdx`**, an abbrev, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L298).
 
 > The index of a product of two underived field strengths: the two covector indices of
 > the first factor followed by the two of the second, read as one family of four
@@ -282,7 +282,7 @@ lemma isSU2Adjoint_wField {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
 abbrev EightIdx : Type
 ```
 
-**`StandardModel.IsGaugeSector.gluonPair`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L302).
+**`StandardModel.IsGaugeSector.gluonPair`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L302).
 
 > The product of two underived gluon field strengths at the covector indices `p`, indexed
 > by the two `su(3)` adjoint indices it carries.
@@ -291,7 +291,7 @@ abbrev EightIdx : Type
 noncomputable def gluonPair (p : EightIdx) (a : Fin 2 → Fin 8) : B
 ```
 
-**`StandardModel.IsGaugeSector.wPair`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L307).
+**`StandardModel.IsGaugeSector.wPair`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L307).
 
 > The product of two underived `W`-boson field strengths at the covector indices `p`,
 > indexed by the two `su(2)` adjoint indices it carries.
@@ -300,7 +300,7 @@ noncomputable def gluonPair (p : EightIdx) (a : Fin 2 → Fin 8) : B
 noncomputable def wPair (p : EightIdx) (a : Fin 2 → Fin 3) : B
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargePair`**, a def, [line 312](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L312).
+**`StandardModel.IsGaugeSector.hyperchargePair`**, a def, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L312).
 
 > The product of two underived hypercharge field strengths at the covector indices `p`,
 > indexed by the two `u(1)` adjoint indices it carries.
@@ -309,7 +309,7 @@ noncomputable def wPair (p : EightIdx) (a : Fin 2 → Fin 3) : B
 noncomputable def hyperchargePair (p : EightIdx) (_ : Fin 2 → Fin 1) : B
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeDeriv`**, a def, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L317).
+**`StandardModel.IsGaugeSector.hyperchargeDeriv`**, a def, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L317).
 
 > The twice-derived hypercharge field strength at the derivative slots `d 0`, `d 1` and
 > the covector indices `d 2`, `d 3`.
@@ -318,7 +318,7 @@ noncomputable def hyperchargePair (p : EightIdx) (_ : Fin 2 → Fin 1) : B
 noncomputable def hyperchargeDeriv (d : EightIdx) : B
 ```
 
-**`StandardModel.IsGaugeSector.isSU3BiAdjointMat_gluonPair`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L322).
+**`StandardModel.IsGaugeSector.isSU3BiAdjointMat_gluonPair`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L322).
 
 > A gauge transformation moves a gluon pair as the `SU(3)` factor of that gauge group
 > element moves a tensor with two `su(3)` adjoint indices.
@@ -328,7 +328,7 @@ lemma isSU3BiAdjointMat_gluonPair (p : EightIdx) (g : GaugeGroupI) :
     IsSU3BiAdjointMat (GaugeGroupI.toSU3 g) (repGauge g) (h.gluonPair p)
 ```
 
-**`StandardModel.IsGaugeSector.isSU3BiAdjoint_gluonPair`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L328).
+**`StandardModel.IsGaugeSector.isSU3BiAdjoint_gluonPair`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L328).
 
 > A gluon pair is a bi-adjoint `su(3)` tensor.
 
@@ -336,7 +336,7 @@ lemma isSU3BiAdjointMat_gluonPair (p : EightIdx) (g : GaugeGroupI) :
 lemma isSU3BiAdjoint_gluonPair (p : EightIdx) : IsSU3BiAdjoint B repGauge (h.gluonPair p)
 ```
 
-**`StandardModel.IsGaugeSector.isSU2BiAdjointMat_wPair`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L333).
+**`StandardModel.IsGaugeSector.isSU2BiAdjointMat_wPair`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L333).
 
 > A gauge transformation moves a `W`-boson pair as the `SU(2)` factor of that gauge group
 > element moves a tensor with two `su(2)` adjoint indices.
@@ -346,7 +346,7 @@ lemma isSU2BiAdjointMat_wPair (p : EightIdx) (g : GaugeGroupI) :
     IsSU2BiAdjointMat (GaugeGroupI.toSU2 g) (repGauge g) (h.wPair p)
 ```
 
-**`StandardModel.IsGaugeSector.isSU2BiAdjoint_wPair`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L339).
+**`StandardModel.IsGaugeSector.isSU2BiAdjoint_wPair`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L339).
 
 > A `W`-boson pair is a bi-adjoint `su(2)` tensor.
 
@@ -354,7 +354,7 @@ lemma isSU2BiAdjointMat_wPair (p : EightIdx) (g : GaugeGroupI) :
 lemma isSU2BiAdjoint_wPair (p : EightIdx) : IsSU2BiAdjoint B repGauge (h.wPair p)
 ```
 
-**`StandardModel.IsGaugeSector.isU1BiAdjointMat_hyperchargePair`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L343).
+**`StandardModel.IsGaugeSector.isU1BiAdjointMat_hyperchargePair`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L343).
 
 > A gauge transformation fixes a hypercharge pair, which is the `u(1)` bi-adjoint law.
 
@@ -363,7 +363,7 @@ lemma isU1BiAdjointMat_hyperchargePair (p : EightIdx) (g : GaugeGroupI) :
     IsU1BiAdjointMat (GaugeGroupI.toU1 g) (repGauge g) (h.hyperchargePair p)
 ```
 
-**`StandardModel.IsGaugeSector.isU1BiAdjoint_hyperchargePair`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L349).
+**`StandardModel.IsGaugeSector.isU1BiAdjoint_hyperchargePair`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L349).
 
 > A hypercharge pair is a bi-adjoint `u(1)` tensor.
 
@@ -372,7 +372,7 @@ lemma isU1BiAdjoint_hyperchargePair (p : EightIdx) :
     IsU1BiAdjoint B repGauge (h.hyperchargePair p)
 ```
 
-**`StandardModel.IsGaugeSector.gluonTrace`**, a def, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L355).
+**`StandardModel.IsGaugeSector.gluonTrace`**, a def, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L355).
 
 > The gluon trace contraction at the covector indices `p`: the Kronecker contraction of
 > the two colour indices of the gluon pair.
@@ -381,7 +381,7 @@ lemma isU1BiAdjoint_hyperchargePair (p : EightIdx) :
 noncomputable def gluonTrace (p : EightIdx) : B
 ```
 
-**`StandardModel.IsGaugeSector.wTrace`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L358).
+**`StandardModel.IsGaugeSector.wTrace`**, a def, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L358).
 
 > The `W`-boson trace contraction at the covector indices `p`.
 
@@ -389,7 +389,7 @@ noncomputable def gluonTrace (p : EightIdx) : B
 noncomputable def wTrace (p : EightIdx) : B
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeTrace`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L361).
+**`StandardModel.IsGaugeSector.hyperchargeTrace`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L361).
 
 > The hypercharge trace contraction at the covector indices `p`.
 
@@ -397,7 +397,7 @@ noncomputable def wTrace (p : EightIdx) : B
 noncomputable def hyperchargeTrace (p : EightIdx) : B
 ```
 
-**`StandardModel.IsGaugeSector.gluonTrace_eq`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L365).
+**`StandardModel.IsGaugeSector.gluonTrace_eq`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L365).
 
 > The gluon trace contraction is the kinetic pairing of two gluon field strengths.
 
@@ -407,7 +407,7 @@ lemma gluonTrace_eq (p : EightIdx) :
       = ∑ a : Fin 8, h.gluonField ![] (p 0) (p 1) a * h.gluonField ![] (p 2) (p 3) a
 ```
 
-**`StandardModel.IsGaugeSector.wTrace_eq`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L372).
+**`StandardModel.IsGaugeSector.wTrace_eq`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L372).
 
 > The `W`-boson trace contraction is the kinetic pairing of two `W`-boson field
 > strengths.
@@ -417,7 +417,7 @@ lemma wTrace_eq (p : EightIdx) :
     h.wTrace p = ∑ i : Fin 3, h.wField ![] (p 0) (p 1) i * h.wField ![] (p 2) (p 3) i
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeTrace_eq`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L378).
+**`StandardModel.IsGaugeSector.hyperchargeTrace_eq`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L378).
 
 > The hypercharge trace contraction is the product of the two hypercharge field
 > strengths, the `u(1)` factor being one dimensional.
@@ -428,7 +428,7 @@ lemma hyperchargeTrace_eq (p : EightIdx) :
       = h.hyperchargeField ![] (p 0) (p 1) * h.hyperchargeField ![] (p 2) (p 3)
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_gluonTrace`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L384).
+**`StandardModel.IsGaugeSector.repGauge_gluonTrace`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L384).
 
 > The gluon trace contraction is fixed by the whole gauge group.
 
@@ -437,7 +437,7 @@ lemma repGauge_gluonTrace (g : GaugeGroupI) (p : EightIdx) :
     repGauge g (h.gluonTrace p) = h.gluonTrace p
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_wTrace`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L389).
+**`StandardModel.IsGaugeSector.repGauge_wTrace`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L389).
 
 > The `W`-boson trace contraction is fixed by the whole gauge group.
 
@@ -446,7 +446,7 @@ lemma repGauge_wTrace (g : GaugeGroupI) (p : EightIdx) :
     repGauge g (h.wTrace p) = h.wTrace p
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_hyperchargeTrace`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L394).
+**`StandardModel.IsGaugeSector.repGauge_hyperchargeTrace`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L394).
 
 > The hypercharge trace contraction is fixed by the whole gauge group.
 
@@ -455,7 +455,7 @@ lemma repGauge_hyperchargeTrace (g : GaugeGroupI) (p : EightIdx) :
     repGauge g (h.hyperchargeTrace p) = h.hyperchargeTrace p
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_hyperchargeDeriv`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L399).
+**`StandardModel.IsGaugeSector.repGauge_hyperchargeDeriv`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L399).
 
 > The twice-derived hypercharge field strength is fixed by the whole gauge group.
 
@@ -464,7 +464,7 @@ lemma repGauge_hyperchargeDeriv (g : GaugeGroupI) (d : EightIdx) :
     repGauge g (h.hyperchargeDeriv d) = h.hyperchargeDeriv d
 ```
 
-**`StandardModel.IsGaugeSector.F_mem_derivSubmodule`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L405).
+**`StandardModel.IsGaugeSector.F_mem_derivSubmodule`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L405).
 
 > Every field-strength symbol lies in the derivative submodule of its own number of
 > covariant derivatives.
@@ -474,7 +474,7 @@ lemma F_mem_derivSubmodule {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fi
     (φ : Module.Dual ℝ GaugeAlgebra) : F l μ ν φ ∈ h.derivSubmodule n
 ```
 
-**`StandardModel.IsGaugeSector.F_mem_massWeightSubmodule`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L412).
+**`StandardModel.IsGaugeSector.F_mem_massWeightSubmodule`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L412).
 
 > A field-strength symbol with `n` covariant derivatives has mass weight `2 * (2 + n)`.
 
@@ -483,7 +483,7 @@ lemma F_mem_massWeightSubmodule {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν
     (φ : Module.Dual ℝ GaugeAlgebra) : F l μ ν φ ∈ h.massWeightSubmodule (2 * (2 + n))
 ```
 
-**`StandardModel.IsGaugeSector.F_mul_F_mem_massWeightSubmodule_eight`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L417).
+**`StandardModel.IsGaugeSector.F_mul_F_mem_massWeightSubmodule_eight`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L417).
 
 > A product of two underived field-strength symbols has mass weight eight.
 
@@ -493,7 +493,7 @@ lemma F_mul_F_mem_massWeightSubmodule_eight (μ ν μ' ν' : Fin 1 ⊕ Fin 3)
     F ![] μ ν φ * F ![] μ' ν' φ' ∈ h.massWeightSubmodule 8
 ```
 
-**`StandardModel.IsGaugeSector.gluonTrace_mem_massWeightSubmodule`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L424).
+**`StandardModel.IsGaugeSector.gluonTrace_mem_massWeightSubmodule`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L424).
 
 > The gluon trace contraction has mass weight eight.
 
@@ -502,7 +502,7 @@ lemma gluonTrace_mem_massWeightSubmodule (p : EightIdx) :
     h.gluonTrace p ∈ h.massWeightSubmodule 8
 ```
 
-**`StandardModel.IsGaugeSector.wTrace_mem_massWeightSubmodule`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L430).
+**`StandardModel.IsGaugeSector.wTrace_mem_massWeightSubmodule`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L430).
 
 > The `W`-boson trace contraction has mass weight eight.
 
@@ -510,7 +510,7 @@ lemma gluonTrace_mem_massWeightSubmodule (p : EightIdx) :
 lemma wTrace_mem_massWeightSubmodule (p : EightIdx) : h.wTrace p ∈ h.massWeightSubmodule 8
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeTrace_mem_massWeightSubmodule`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L435).
+**`StandardModel.IsGaugeSector.hyperchargeTrace_mem_massWeightSubmodule`**, a lemma, [line 435](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L435).
 
 > The hypercharge trace contraction has mass weight eight.
 
@@ -519,7 +519,7 @@ lemma hyperchargeTrace_mem_massWeightSubmodule (p : EightIdx) :
     h.hyperchargeTrace p ∈ h.massWeightSubmodule 8
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeDeriv_mem_massWeightSubmodule`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L441).
+**`StandardModel.IsGaugeSector.hyperchargeDeriv_mem_massWeightSubmodule`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L441).
 
 > The twice-derived hypercharge field strength has mass weight `2 * (2 + 2)`, eight.
 
@@ -540,7 +540,7 @@ lemma hyperchargeDeriv_mem_massWeightSubmodule (d : EightIdx) :
 > eight this covers the gluon root part and the isospin root part of the zero-weight piece
 > computed by `massWeightSubmoduleGaugeWeightEight_piece_zero`.
 
-**`StandardModel.IsGaugeSector.su3AdjIdx`**, a def, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L464).
+**`StandardModel.IsGaugeSector.su3AdjIdx`**, a def, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L464).
 
 > The `su(3)` adjoint weight indices read as weight indices of the whole gauge
 > algebra: the three colour roots and the two colour Cartan directions.
@@ -549,7 +549,7 @@ lemma hyperchargeDeriv_mem_massWeightSubmodule (d : EightIdx) :
 def su3AdjIdx : GaugeAlgebra.su3WeightIdx → Fin 4 ⊕ Fin 4 ⊕ Fin 4
 ```
 
-**`StandardModel.IsGaugeSector.su2AdjIdx`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L471).
+**`StandardModel.IsGaugeSector.su2AdjIdx`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L471).
 
 > The `su(2)` adjoint weight indices read as weight indices of the whole gauge
 > algebra: the isospin root and the isospin Cartan direction.
@@ -558,7 +558,7 @@ def su3AdjIdx : GaugeAlgebra.su3WeightIdx → Fin 4 ⊕ Fin 4 ⊕ Fin 4
 def su2AdjIdx : GaugeAlgebra.su2WeightIdx → Fin 4 ⊕ Fin 4 ⊕ Fin 4
 ```
 
-**`StandardModel.IsGaugeSector.sum_su3WeightCoeff_smul_gluonField`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L478).
+**`StandardModel.IsGaugeSector.sum_su3WeightCoeff_smul_gluonField`**, a lemma, [line 478](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L478).
 
 > A weight vector of the colour part of the adjoint is the matching combination of
 > gluon field strengths.
@@ -570,7 +570,7 @@ lemma sum_su3WeightCoeff_smul_gluonField {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = h.adjVec l μ ν (su3AdjIdx k)
 ```
 
-**`StandardModel.IsGaugeSector.sum_su2WeightCoeff_smul_wField`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L489).
+**`StandardModel.IsGaugeSector.sum_su2WeightCoeff_smul_wField`**, a lemma, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L489).
 
 > A weight vector of the isospin part of the adjoint is the matching combination of
 > `W`-boson field strengths.
@@ -582,7 +582,7 @@ lemma sum_su2WeightCoeff_smul_wField {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
       = h.adjVec l μ ν (su2AdjIdx k)
 ```
 
-**`StandardModel.IsGaugeSector.adjVec_mul_adjVec_mem_gluonPair_span`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L500).
+**`StandardModel.IsGaugeSector.adjVec_mul_adjVec_mem_gluonPair_span`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L500).
 
 > A product of two colour weight vectors of the adjoint lies in the span of the matching
 > gluon pair family.
@@ -594,7 +594,7 @@ lemma adjVec_mul_adjVec_mem_gluonPair_span (p : EightIdx)
       ∈ Submodule.span ℂ (Set.range (h.gluonPair p))
 ```
 
-**`StandardModel.IsGaugeSector.adjVec_mul_adjVec_mem_wPair_span`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L510).
+**`StandardModel.IsGaugeSector.adjVec_mul_adjVec_mem_wPair_span`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L510).
 
 > A product of two isospin weight vectors of the adjoint lies in the span of the matching
 > `W`-boson pair family.
@@ -605,7 +605,7 @@ lemma adjVec_mul_adjVec_mem_wPair_span (p : EightIdx) (k₀ k₁ : GaugeAlgebra.
       ∈ Submodule.span ℂ (Set.range (h.wPair p))
 ```
 
-**`StandardModel.IsGaugeSector.gluonPairSpan`**, a def, [line 518](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L518).
+**`StandardModel.IsGaugeSector.gluonPairSpan`**, a def, [line 518](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L518).
 
 > The join, over all covector indices, of the spans of the gluon pair families.
 
@@ -613,7 +613,7 @@ lemma adjVec_mul_adjVec_mem_wPair_span (p : EightIdx) (k₀ k₁ : GaugeAlgebra.
 noncomputable def gluonPairSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.wPairSpan`**, a def, [line 521](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L521).
+**`StandardModel.IsGaugeSector.wPairSpan`**, a def, [line 521](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L521).
 
 > The join, over all covector indices, of the spans of the `W`-boson pair families.
 
@@ -621,7 +621,7 @@ noncomputable def gluonPairSpan : Submodule ℂ B
 noncomputable def wPairSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.gluonRootPart_le_gluonPairSpan`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L525).
+**`StandardModel.IsGaugeSector.gluonRootPart_le_gluonPairSpan`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L525).
 
 > The gluon root part of the zero-weight piece, the three products of a colour raising
 > vector against the matching lowering vector, lies in the gluon pair spans.
@@ -630,7 +630,7 @@ noncomputable def wPairSpan : Submodule ℂ B
 lemma gluonRootPart_le_gluonPairSpan : h.gluonRootPart ≤ h.gluonPairSpan
 ```
 
-**`StandardModel.IsGaugeSector.isospinRootPart_le_wPairSpan`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L536).
+**`StandardModel.IsGaugeSector.isospinRootPart_le_wPairSpan`**, a lemma, [line 536](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L536).
 
 > The isospin root part of the zero-weight piece, the product of the isospin raising
 > vector against the lowering vector, lies in the `W`-boson pair spans.
@@ -658,7 +658,7 @@ lemma isospinRootPart_le_wPairSpan : h.isospinRootPart ≤ h.wPairSpan
 > the gluon index of a mixed product and fixes the neutral factor. The piece is then bounded
 > by the joins of these families together with the four spans of gauge invariants.
 
-**`StandardModel.IsGaugeSector.hyperchargeTraceSpan`**, a def, [line 566](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L566).
+**`StandardModel.IsGaugeSector.hyperchargeTraceSpan`**, a def, [line 566](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L566).
 
 > The span of the hypercharge trace contractions.
 
@@ -666,7 +666,7 @@ lemma isospinRootPart_le_wPairSpan : h.isospinRootPart ≤ h.wPairSpan
 noncomputable def hyperchargeTraceSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeDerivSpan`**, a def, [line 569](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L569).
+**`StandardModel.IsGaugeSector.hyperchargeDerivSpan`**, a def, [line 569](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L569).
 
 > The span of the twice-derived hypercharge field strengths.
 
@@ -674,7 +674,7 @@ noncomputable def hyperchargeTraceSpan : Submodule ℂ B
 noncomputable def hyperchargeDerivSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.neutralVec`**, a def, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L573).
+**`StandardModel.IsGaugeSector.neutralVec`**, a def, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L573).
 
 > The two neutral underived directions that pair with a colour index in the mixed
 > neutral products: the isospin Cartan direction and hypercharge.
@@ -683,7 +683,7 @@ noncomputable def hyperchargeDerivSpan : Submodule ℂ B
 noncomputable def neutralVec (μ ν : Fin 1 ⊕ Fin 3) : Fin 2 → B
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_su3_neutralVec`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L578).
+**`StandardModel.IsGaugeSector.repGauge_su3_neutralVec`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L578).
 
 > The neutral directions are fixed by the colour factor of the gauge group.
 
@@ -692,7 +692,7 @@ lemma repGauge_su3_neutralVec (U : specialUnitaryGroup (Fin 3) ℂ) (μ ν : Fin
     (j : Fin 2) : repGauge (U, 1, 1) (h.neutralVec μ ν j) = h.neutralVec μ ν j
 ```
 
-**`StandardModel.IsGaugeSector.DerivIdx`**, an abbrev, [line 586](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L586).
+**`StandardModel.IsGaugeSector.DerivIdx`**, an abbrev, [line 586](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L586).
 
 > The index of a twice-derived symbol: the two derivative slots and the two covector
 > indices.
@@ -701,7 +701,7 @@ lemma repGauge_su3_neutralVec (U : specialUnitaryGroup (Fin 3) ℂ) (μ ν : Fin
 abbrev DerivIdx : Type
 ```
 
-**`StandardModel.IsGaugeSector.MixIdx`**, an abbrev, [line 591](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L591).
+**`StandardModel.IsGaugeSector.MixIdx`**, an abbrev, [line 591](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L591).
 
 > The index of a mixed neutral product: the two covector indices of the colour factor,
 > the two of the neutral factor, and which of the two neutral directions it is.
@@ -710,7 +710,7 @@ abbrev DerivIdx : Type
 abbrev MixIdx : Type
 ```
 
-**`StandardModel.IsGaugeSector.ColourIdx`**, an abbrev, [line 597](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L597).
+**`StandardModel.IsGaugeSector.ColourIdx`**, an abbrev, [line 597](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L597).
 
 > The index of a family carrying one unpaired `su(3)` adjoint index at mass weight
 > eight: a twice-derived gluon tower, or an underived gluon field strength against a
@@ -720,7 +720,7 @@ abbrev MixIdx : Type
 abbrev ColourIdx : Type
 ```
 
-**`StandardModel.IsGaugeSector.colourFamily`**, a def, [line 600](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L600).
+**`StandardModel.IsGaugeSector.colourFamily`**, a def, [line 600](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L600).
 
 > The families carrying one unpaired `su(3)` adjoint index.
 
@@ -728,7 +728,7 @@ abbrev ColourIdx : Type
 noncomputable def colourFamily : ColourIdx → Fin 8 → B
 ```
 
-**`StandardModel.IsGaugeSector.isSU3Adjoint_colourFamily`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L609).
+**`StandardModel.IsGaugeSector.isSU3Adjoint_colourFamily`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L609).
 
 > Each colour family is an `su(3)` adjoint family: the colour factor moves the gluon
 > index and fixes the neutral factor.
@@ -737,7 +737,7 @@ noncomputable def colourFamily : ColourIdx → Fin 8 → B
 lemma isSU3Adjoint_colourFamily : ∀ i : ColourIdx, IsSU3Adjoint B repGauge (h.colourFamily i)
 ```
 
-**`StandardModel.IsGaugeSector.IsospinIdx`**, an abbrev, [line 619](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L619).
+**`StandardModel.IsGaugeSector.IsospinIdx`**, an abbrev, [line 619](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L619).
 
 > The index of a family carrying one unpaired `su(2)` adjoint index at mass weight
 > eight: a twice-derived `W`-boson tower, or an underived `W`-boson field strength against
@@ -747,7 +747,7 @@ lemma isSU3Adjoint_colourFamily : ∀ i : ColourIdx, IsSU3Adjoint B repGauge (h.
 abbrev IsospinIdx : Type
 ```
 
-**`StandardModel.IsGaugeSector.isospinFamily`**, a def, [line 622](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L622).
+**`StandardModel.IsGaugeSector.isospinFamily`**, a def, [line 622](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L622).
 
 > The families carrying one unpaired `su(2)` adjoint index.
 
@@ -755,7 +755,7 @@ abbrev IsospinIdx : Type
 noncomputable def isospinFamily : IsospinIdx → Fin 3 → B
 ```
 
-**`StandardModel.IsGaugeSector.isSU2Adjoint_isospinFamily`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L629).
+**`StandardModel.IsGaugeSector.isSU2Adjoint_isospinFamily`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L629).
 
 > Each isospin family is an `su(2)` adjoint family: the isospin factor moves the
 > `W`-boson index and fixes hypercharge.
@@ -764,7 +764,7 @@ noncomputable def isospinFamily : IsospinIdx → Fin 3 → B
 lemma isSU2Adjoint_isospinFamily : ∀ i : IsospinIdx, IsSU2Adjoint B repGauge (h.isospinFamily i)
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_su3_isospinFamily`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L638).
+**`StandardModel.IsGaugeSector.repGauge_su3_isospinFamily`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L638).
 
 > The isospin families are fixed by the colour factor, every one of their factors
 > being.
@@ -775,7 +775,7 @@ lemma repGauge_su3_isospinFamily (U : specialUnitaryGroup (Fin 3) ℂ) :
       repGauge (U, 1, 1) (h.isospinFamily i a) = h.isospinFamily i a
 ```
 
-**`StandardModel.IsGaugeSector.unpairedColourSpan`**, a def, [line 648](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L648).
+**`StandardModel.IsGaugeSector.unpairedColourSpan`**, a def, [line 648](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L648).
 
 > The join of the spans of the colour families.
 
@@ -783,7 +783,7 @@ lemma repGauge_su3_isospinFamily (U : specialUnitaryGroup (Fin 3) ℂ) :
 noncomputable def unpairedColourSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.unpairedIsospinSpan`**, a def, [line 652](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L652).
+**`StandardModel.IsGaugeSector.unpairedIsospinSpan`**, a def, [line 652](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L652).
 
 > The join of the spans of the isospin families.
 
@@ -791,7 +791,7 @@ noncomputable def unpairedColourSpan : Submodule ℂ B
 noncomputable def unpairedIsospinSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.colourFamily_mem`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L656).
+**`StandardModel.IsGaugeSector.colourFamily_mem`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L656).
 
 > A component of a colour family lies in the join of the colour spans.
 
@@ -799,7 +799,7 @@ noncomputable def unpairedIsospinSpan : Submodule ℂ B
 lemma colourFamily_mem (i : ColourIdx) (a : Fin 8) : h.colourFamily i a ∈ h.unpairedColourSpan
 ```
 
-**`StandardModel.IsGaugeSector.isospinFamily_mem`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L660).
+**`StandardModel.IsGaugeSector.isospinFamily_mem`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L660).
 
 > A component of an isospin family lies in the join of the isospin spans.
 
@@ -808,7 +808,7 @@ lemma isospinFamily_mem (i : IsospinIdx) (a : Fin 3) :
     h.isospinFamily i a ∈ h.unpairedIsospinSpan
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_su3_of_mem_unpairedIsospinSpan`**, a lemma, [line 665](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L665).
+**`StandardModel.IsGaugeSector.repGauge_su3_of_mem_unpairedIsospinSpan`**, a lemma, [line 665](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L665).
 
 > The join of the isospin families is fixed pointwise by the colour factor.
 
@@ -817,7 +817,7 @@ lemma repGauge_su3_of_mem_unpairedIsospinSpan (U : specialUnitaryGroup (Fin 3) �
     ∀ y ∈ h.unpairedIsospinSpan, repGauge (U, 1, 1) y = y
 ```
 
-**`StandardModel.IsGaugeSector.colourCartanSpan`**, a def, [line 672](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L672).
+**`StandardModel.IsGaugeSector.colourCartanSpan`**, a def, [line 672](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L672).
 
 > The colour Cartan directions of the underived tower: the two weight-zero directions of
 > the `su(3)` factor.
@@ -826,7 +826,7 @@ lemma repGauge_su3_of_mem_unpairedIsospinSpan (U : specialUnitaryGroup (Fin 3) �
 noncomputable def colourCartanSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.neutralSpan`**, a def, [line 678](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L678).
+**`StandardModel.IsGaugeSector.neutralSpan`**, a def, [line 678](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L678).
 
 > The neutral directions of the underived tower: the isospin Cartan direction and
 > hypercharge.
@@ -835,7 +835,7 @@ noncomputable def colourCartanSpan : Submodule ℂ B
 noncomputable def neutralSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.adjVec_colourCartan`**, a lemma, [line 683](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L683).
+**`StandardModel.IsGaugeSector.adjVec_colourCartan`**, a lemma, [line 683](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L683).
 
 > A colour Cartan weight vector is the gluon field strength on the matching Cartan
 > direction of `su(3)`.
@@ -847,7 +847,7 @@ lemma adjVec_colourCartan {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
       = h.gluonField l μ ν (GaugeAlgebra.su3CartanId c)
 ```
 
-**`StandardModel.IsGaugeSector.cartanSpan_le`**, a lemma, [line 692](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L692).
+**`StandardModel.IsGaugeSector.cartanSpan_le`**, a lemma, [line 692](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L692).
 
 > The weight-zero directions of the adjoint are the colour Cartan directions and the
 > neutral directions.
@@ -856,7 +856,7 @@ lemma adjVec_colourCartan {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
 lemma cartanSpan_le : h.cartanSpan ≤ h.colourCartanSpan ⊔ h.neutralSpan
 ```
 
-**`StandardModel.IsGaugeSector.colourCartanSpan_mul_colourCartanSpan_le`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L702).
+**`StandardModel.IsGaugeSector.colourCartanSpan_mul_colourCartanSpan_le`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L702).
 
 > A product of two colour Cartan directions is a component of a gluon pair family.
 
@@ -865,7 +865,7 @@ lemma colourCartanSpan_mul_colourCartanSpan_le :
     h.colourCartanSpan * h.colourCartanSpan ≤ h.gluonPairSpan
 ```
 
-**`StandardModel.IsGaugeSector.colourCartanSpan_mul_neutralSpan_le`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L710).
+**`StandardModel.IsGaugeSector.colourCartanSpan_mul_neutralSpan_le`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L710).
 
 > A colour Cartan direction against a neutral direction is a component of a colour
 > family.
@@ -875,7 +875,7 @@ lemma colourCartanSpan_mul_neutralSpan_le :
     h.colourCartanSpan * h.neutralSpan ≤ h.unpairedColourSpan
 ```
 
-**`StandardModel.IsGaugeSector.neutralSpan_mul_colourCartanSpan_le`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L718).
+**`StandardModel.IsGaugeSector.neutralSpan_mul_colourCartanSpan_le`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L718).
 
 > A neutral direction against a colour Cartan direction is a component of a colour
 > family.
@@ -885,7 +885,7 @@ lemma neutralSpan_mul_colourCartanSpan_le :
     h.neutralSpan * h.colourCartanSpan ≤ h.unpairedColourSpan
 ```
 
-**`StandardModel.IsGaugeSector.neutralSpan_mul_neutralSpan_le`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L727).
+**`StandardModel.IsGaugeSector.neutralSpan_mul_neutralSpan_le`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L727).
 
 > A product of two neutral directions: isospin against isospin is a component of a
 > `W`-boson pair family, hypercharge against hypercharge is a hypercharge trace
@@ -897,7 +897,7 @@ lemma neutralSpan_mul_neutralSpan_le :
       ≤ h.unpairedIsospinSpan ⊔ (h.wPairSpan ⊔ h.hyperchargeTraceSpan)
 ```
 
-**`StandardModel.IsGaugeSector.neutralCartanPart_le`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L746).
+**`StandardModel.IsGaugeSector.neutralCartanPart_le`**, a lemma, [line 746](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L746).
 
 > The neutral part of the zero-weight piece: the products pairing a factor with itself
 > are components of the pair families or hypercharge trace contractions, and the mixed
@@ -909,7 +909,7 @@ lemma neutralCartanPart_le :
       ⊔ (h.gluonPairSpan ⊔ (h.wPairSpan ⊔ h.hyperchargeTraceSpan))
 ```
 
-**`StandardModel.IsGaugeSector.derivCartanSpan_le`**, a lemma, [line 762](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L762).
+**`StandardModel.IsGaugeSector.derivCartanSpan_le`**, a lemma, [line 762](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L762).
 
 > The twice-derived symbols on the weight-zero directions: on a colour or isospin Cartan
 > direction a component of an adjoint family, on hypercharge a twice-derived hypercharge
@@ -922,7 +922,7 @@ lemma derivCartanSpan_le :
       ≤ (h.unpairedColourSpan ⊔ h.unpairedIsospinSpan) ⊔ h.hyperchargeDerivSpan
 ```
 
-**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight_piece_zero_le`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L782).
+**`StandardModel.IsGaugeSector.massWeightSubmoduleGaugeWeightEight_piece_zero_le`**, a lemma, [line 782](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L782).
 
 > The zero-weight piece of mass weight eight is bounded by the joins of the unpaired
 > families together with the pair spans, the hypercharge trace contractions and the
@@ -945,7 +945,7 @@ lemma massWeightSubmoduleGaugeWeightEight_piece_zero_le :
 > in the target, since the colour factor fixes every isospin family; the isospin families
 > are reduced after that.
 
-**`StandardModel.IsGaugeSector.reducesInvariantsTo_unpaired`**, a lemma, [line 813](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L813).
+**`StandardModel.IsGaugeSector.reducesInvariantsTo_unpaired`**, a lemma, [line 813](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L813).
 
 > The joins of the unpaired families reduce to `⊥` for the gauge group: the colour
 > families for the colour factor, with the colour-fixed isospin join kept in the target, and
@@ -972,7 +972,7 @@ lemma reducesInvariantsTo_unpaired :
 > The section closes with the converse: the gauge span is made of gauge invariants of mass
 > weight eight already.
 
-**`StandardModel.IsGaugeSector.gluonTraceSpan`**, a def, [line 856](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L856).
+**`StandardModel.IsGaugeSector.gluonTraceSpan`**, a def, [line 856](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L856).
 
 > The span of the gluon trace contractions.
 
@@ -980,7 +980,7 @@ lemma reducesInvariantsTo_unpaired :
 noncomputable def gluonTraceSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.wTraceSpan`**, a def, [line 859](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L859).
+**`StandardModel.IsGaugeSector.wTraceSpan`**, a def, [line 859](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L859).
 
 > The span of the `W`-boson trace contractions.
 
@@ -988,7 +988,7 @@ noncomputable def gluonTraceSpan : Submodule ℂ B
 noncomputable def wTraceSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.traceContractionEightSpan`**, a def, [line 863](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L863).
+**`StandardModel.IsGaugeSector.traceContractionEightSpan`**, a def, [line 863](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L863).
 
 > The span of the three underived trace contractions, over all covector indices: the
 > gauge invariants of mass weight eight that the bi-adjoint classification produces.
@@ -997,7 +997,7 @@ noncomputable def wTraceSpan : Submodule ℂ B
 noncomputable def traceContractionEightSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.isStableUnder_gluonPairSpan`**, a lemma, [line 867](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L867).
+**`StandardModel.IsGaugeSector.isStableUnder_gluonPairSpan`**, a lemma, [line 867](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L867).
 
 > The gluon pair spans are stable under the gauge group.
 
@@ -1006,7 +1006,7 @@ lemma isStableUnder_gluonPairSpan :
     IsStableUnder (fun g : GaugeGroupI => repGauge g) h.gluonPairSpan
 ```
 
-**`StandardModel.IsGaugeSector.isStableUnder_wPairSpan`**, a lemma, [line 873](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L873).
+**`StandardModel.IsGaugeSector.isStableUnder_wPairSpan`**, a lemma, [line 873](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L873).
 
 > The `W`-boson pair spans are stable under the gauge group.
 
@@ -1015,7 +1015,7 @@ lemma isStableUnder_wPairSpan :
     IsStableUnder (fun g : GaugeGroupI => repGauge g) h.wPairSpan
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_of_mem_hyperchargeTraceSpan`**, a lemma, [line 879](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L879).
+**`StandardModel.IsGaugeSector.repGauge_of_mem_hyperchargeTraceSpan`**, a lemma, [line 879](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L879).
 
 > The hypercharge trace contractions are fixed pointwise by the gauge group.
 
@@ -1024,7 +1024,7 @@ lemma repGauge_of_mem_hyperchargeTraceSpan (g : GaugeGroupI) :
     ∀ y ∈ h.hyperchargeTraceSpan, repGauge g y = y
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_of_mem_hyperchargeDerivSpan`**, a lemma, [line 885](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L885).
+**`StandardModel.IsGaugeSector.repGauge_of_mem_hyperchargeDerivSpan`**, a lemma, [line 885](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L885).
 
 > The twice-derived hypercharge field strengths are fixed pointwise by the gauge
 > group.
@@ -1034,7 +1034,7 @@ lemma repGauge_of_mem_hyperchargeDerivSpan (g : GaugeGroupI) :
     ∀ y ∈ h.hyperchargeDerivSpan, repGauge g y = y
 ```
 
-**`StandardModel.IsGaugeSector.traceContractionEightSpan_sup_hyperchargeDerivSpan_le`**, a lemma, [line 892](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L892).
+**`StandardModel.IsGaugeSector.traceContractionEightSpan_sup_hyperchargeDerivSpan_le`**, a lemma, [line 892](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L892).
 
 > The gauge span is a space of gauge invariants of mass weight eight: each generator is
 > fixed by the gauge group and has mass weight eight by section C. This is the converse of
@@ -1046,7 +1046,7 @@ lemma traceContractionEightSpan_sup_hyperchargeDerivSpan_le :
       ≤ h.massWeightSubmodule 8 ⊓ repGauge.invariants
 ```
 
-**`StandardModel.IsGaugeSector.isFixedBy_traceContractionEightSpan_sup`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L909).
+**`StandardModel.IsGaugeSector.isFixedBy_traceContractionEightSpan_sup`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L909).
 
 > The gauge span is fixed pointwise by the gauge group.
 
@@ -1056,7 +1056,7 @@ lemma isFixedBy_traceContractionEightSpan_sup :
       (h.traceContractionEightSpan ⊔ h.hyperchargeDerivSpan)
 ```
 
-**`StandardModel.IsGaugeSector.reducesInvariantsTo_gluonPairSpan`**, a lemma, [line 917](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L917).
+**`StandardModel.IsGaugeSector.reducesInvariantsTo_gluonPairSpan`**, a lemma, [line 917](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L917).
 
 > The gluon pair spans reduce, for the gauge group, to the gluon trace contractions: each
 > gluon pair family is bi-adjoint for the colour factor.
@@ -1066,7 +1066,7 @@ lemma reducesInvariantsTo_gluonPairSpan :
     ReducesInvariantsTo (fun g : GaugeGroupI => repGauge g) h.gluonPairSpan h.gluonTraceSpan
 ```
 
-**`StandardModel.IsGaugeSector.reducesInvariantsTo_wPairSpan`**, a lemma, [line 929](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L929).
+**`StandardModel.IsGaugeSector.reducesInvariantsTo_wPairSpan`**, a lemma, [line 929](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L929).
 
 > The `W`-boson pair spans reduce, for the gauge group, to the `W`-boson trace
 > contractions: each `W`-boson pair family is bi-adjoint for the isospin factor.
@@ -1076,7 +1076,7 @@ lemma reducesInvariantsTo_wPairSpan :
     ReducesInvariantsTo (fun g : GaugeGroupI => repGauge g) h.wPairSpan h.wTraceSpan
 ```
 
-**`StandardModel.IsGaugeSector.reducesInvariantsTo_traceContractionEightSpan_sup`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L944).
+**`StandardModel.IsGaugeSector.reducesInvariantsTo_traceContractionEightSpan_sup`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L944).
 
 > Mass weight eight reduces, for the gauge group, to the three underived trace
 > contractions and the twice-derived hypercharge field strengths. The torus puts a gauge
@@ -1137,7 +1137,7 @@ lemma reducesInvariantsTo_traceContractionEightSpan_sup :
 > form a spanning family, not a basis: none is shown to be nonzero, and no independence among them
 > is claimed.
 
-**`StandardModel.IsGaugeSector.repLorentz_F_underived`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1020).
+**`StandardModel.IsGaugeSector.repLorentz_F_underived`**, a lemma, [line 1020](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1020).
 
 > The Lorentz transformation of an underived field-strength symbol: the general law of
 > `IsGaugeSector` at no covariant derivatives, where the sum over the derivative slots is
@@ -1152,7 +1152,7 @@ lemma repLorentz_F_underived (Λ : SL(2,ℂ)) (μ ν : Fin 1 ⊕ Fin 3)
           (((SL2C.toLorentzGroup Λ).1 b ν : ℝ) : ℂ)) • F ![] a b φ
 ```
 
-**`StandardModel.IsGaugeSector.sum_mul_sum_eq_sum_pi_four`**, a lemma, [line 1035](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1035).
+**`StandardModel.IsGaugeSector.sum_mul_sum_eq_sum_pi_four`**, a lemma, [line 1035](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1035).
 
 > A product of two double combinations is a combination indexed by quadruples.
 
@@ -1164,7 +1164,7 @@ lemma sum_mul_sum_eq_sum_pi_four (c c' : (Fin 1 ⊕ Fin 3) → (Fin 1 ⊕ Fin 3)
         (c (d 0) (d 1) * c' (d 2) (d 3)) • (X (d 0) (d 1) * Y (d 2) (d 3))
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_F_mul`**, a lemma, [line 1049](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1049).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_F_mul`**, a lemma, [line 1049](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1049).
 
 > A product of two underived field-strength symbols, viewed as a family indexed by the
 > four covector indices it carries, is a quadruple Lorentz tensor.
@@ -1175,7 +1175,7 @@ lemma isLorentzCovariant_F_mul (φ ψ : Module.Dual ℝ GaugeAlgebra) :
       fun d : Fin 4 → Fin 1 ⊕ Fin 3 => F ![] (d 0) (d 1) φ * F ![] (d 2) (d 3) ψ)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_sum`**, a lemma, [line 1060](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1060).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_sum`**, a lemma, [line 1060](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1060).
 
 > A finite sum of quadruple Lorentz tensors is a quadruple Lorentz tensor: the
 > transformation law is linear in the family.
@@ -1186,7 +1186,7 @@ lemma isLorentzCovariant_sum {ι : Type} [Fintype ι] {T : ι → (Fin 4 → Fin
     IsLorentzCovariant 4 B repLorentz (ofComponents fun d => ∑ i, T i d)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_of_eq_sum`**, a lemma, [line 1069](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1069).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_of_eq_sum`**, a lemma, [line 1069](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1069).
 
 > A family of four four-vector indices whose members are sums of products of two
 > underived field-strength symbols is a quadruple Lorentz tensor.
@@ -1198,7 +1198,7 @@ lemma isLorentzCovariant_of_eq_sum {ι : Type} [Fintype ι] {T : EightIdx → B}
     IsLorentzCovariant 4 B repLorentz (ofComponents T)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_gluonTrace`**, a lemma, [line 1079](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1079).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_gluonTrace`**, a lemma, [line 1079](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1079).
 
 > The gluon trace contractions, read as a family of four four-vector indices, form a
 > quadruple Lorentz tensor: a sum over the colour index of products of two underived
@@ -1209,7 +1209,7 @@ lemma isLorentzCovariant_gluonTrace :
     IsLorentzCovariant 4 B repLorentz (ofComponents h.gluonTrace)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_wTrace`**, a lemma, [line 1085](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1085).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_wTrace`**, a lemma, [line 1085](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1085).
 
 > The `W`-boson trace contractions form a quadruple Lorentz tensor.
 
@@ -1217,7 +1217,7 @@ lemma isLorentzCovariant_gluonTrace :
 lemma isLorentzCovariant_wTrace : IsLorentzCovariant 4 B repLorentz (ofComponents h.wTrace)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_hyperchargeTrace`**, a lemma, [line 1090](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1090).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_hyperchargeTrace`**, a lemma, [line 1090](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1090).
 
 > The hypercharge trace contractions form a quadruple Lorentz tensor.
 
@@ -1226,7 +1226,7 @@ lemma isLorentzCovariant_hyperchargeTrace :
     IsLorentzCovariant 4 B repLorentz (ofComponents h.hyperchargeTrace)
 ```
 
-**`StandardModel.IsGaugeSector.isLorentzCovariant_hyperchargeDeriv`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1101).
+**`StandardModel.IsGaugeSector.isLorentzCovariant_hyperchargeDeriv`**, a lemma, [line 1101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1101).
 
 > The twice-derived hypercharge field strengths, read as a family of four four-vector
 > indices, form a quadruple Lorentz tensor: the two derivative slots and the two covector
@@ -1237,7 +1237,7 @@ lemma isLorentzCovariant_hyperchargeDeriv :
     IsLorentzCovariant 4 B repLorentz (ofComponents h.hyperchargeDeriv)
 ```
 
-**`StandardModel.IsGaugeSector.gluonTrace_comp_swap_two_three`**, a lemma, [line 1112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1112).
+**`StandardModel.IsGaugeSector.gluonTrace_comp_swap_two_three`**, a lemma, [line 1112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1112).
 
 > The gluon trace contractions are antisymmetric in the last two covector indices, by
 > `F_antisymm` in the second factor.
@@ -1247,7 +1247,7 @@ lemma gluonTrace_comp_swap_two_three (d : EightIdx) :
     h.gluonTrace (d ∘ Equiv.swap 2 3) = -h.gluonTrace d
 ```
 
-**`StandardModel.IsGaugeSector.wTrace_comp_swap_two_three`**, a lemma, [line 1117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1117).
+**`StandardModel.IsGaugeSector.wTrace_comp_swap_two_three`**, a lemma, [line 1117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1117).
 
 > The `W`-boson trace contractions are antisymmetric in the last two covector indices.
 
@@ -1256,7 +1256,7 @@ lemma wTrace_comp_swap_two_three (d : EightIdx) :
     h.wTrace (d ∘ Equiv.swap 2 3) = -h.wTrace d
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeTrace_comp_swap_two_three`**, a lemma, [line 1122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1122).
+**`StandardModel.IsGaugeSector.hyperchargeTrace_comp_swap_two_three`**, a lemma, [line 1122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1122).
 
 > The hypercharge trace contractions are antisymmetric in the last two covector indices.
 
@@ -1265,7 +1265,7 @@ lemma hyperchargeTrace_comp_swap_two_three (d : EightIdx) :
     h.hyperchargeTrace (d ∘ Equiv.swap 2 3) = -h.hyperchargeTrace d
 ```
 
-**`StandardModel.IsGaugeSector.hyperchargeDeriv_comp_swap_two_three`**, a lemma, [line 1130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1130).
+**`StandardModel.IsGaugeSector.hyperchargeDeriv_comp_swap_two_three`**, a lemma, [line 1130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1130).
 
 > The twice-derived hypercharge field strengths are antisymmetric in their two covector
 > indices, the last two slots, by `F_antisymm` at two covariant derivatives. Nothing is
@@ -1276,7 +1276,7 @@ lemma hyperchargeDeriv_comp_swap_two_three (d : EightIdx) :
     h.hyperchargeDeriv (d ∘ Equiv.swap 2 3) = -h.hyperchargeDeriv d
 ```
 
-**`StandardModel.IsGaugeSector.quadContractionSpan`**, a def, [line 1137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1137).
+**`StandardModel.IsGaugeSector.quadContractionSpan`**, a def, [line 1137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1137).
 
 > The span of the four Lorentz contractions of a quadruple Lorentz tensor: the images of
 > the three metric pairings and of the Levi-Civita symbol.
@@ -1285,7 +1285,7 @@ lemma hyperchargeDeriv_comp_swap_two_three (d : EightIdx) :
 noncomputable def quadContractionSpan (T : (Fin 4 → Fin 1 ⊕ Fin 3) → B) : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.quadContractionSpan_le_span`**, a lemma, [line 1143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1143).
+**`StandardModel.IsGaugeSector.quadContractionSpan_le_span`**, a lemma, [line 1143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1143).
 
 > The span of the four Lorentz contractions of a quadruple Lorentz family lies in the
 > span of its components: each contraction is a combination of components with constant
@@ -1296,7 +1296,7 @@ lemma quadContractionSpan_le_span {T : (Fin 4 → Fin 1 ⊕ Fin 3) → B} :
     quadContractionSpan T ≤ Submodule.span ℂ (Set.range T)
 ```
 
-**`StandardModel.IsGaugeSector.quadContractionSpan_le_lorentzInvariants`**, a lemma, [line 1151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1151).
+**`StandardModel.IsGaugeSector.quadContractionSpan_le_lorentzInvariants`**, a lemma, [line 1151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1151).
 
 > The span of the four Lorentz contractions of a quadruple Lorentz family is a space of
 > Lorentz invariants, the four contractions being invariant by `RankFour`.
@@ -1307,7 +1307,7 @@ lemma quadContractionSpan_le_lorentzInvariants {T : (Fin 4 → Fin 1 ⊕ Fin 3) 
     quadContractionSpan T ≤ repLorentz.invariants
 ```
 
-**`StandardModel.IsGaugeSector.quadContractionSpan_eq_of_antisymm`**, a lemma, [line 1162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1162).
+**`StandardModel.IsGaugeSector.quadContractionSpan_eq_of_antisymm`**, a lemma, [line 1162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1162).
 
 > For a quadruple family antisymmetric in its last two slots the four Lorentz contractions
 > reduce to two, the `(0,2)(1,3)` metric contraction and the Levi-Civita one: the
@@ -1321,7 +1321,7 @@ lemma quadContractionSpan_eq_of_antisymm {T : (Fin 4 → Fin 1 ⊕ Fin 3) → B}
       ofComponents T (RankFour.contractionTensor 3)}
 ```
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan`**, a def, [line 1171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1171).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan`**, a def, [line 1171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1171).
 
 > The span of the four Lorentz contractions of each of the three underived
 > trace-contraction families and of the twice-derived hypercharge family: the gauge and
@@ -1331,7 +1331,7 @@ lemma quadContractionSpan_eq_of_antisymm {T : (Fin 4 → Fin 1 ⊕ Fin 3) → B}
 noncomputable def lorentzContractionEightSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_traceContractionEightSpan_sup`**, a lemma, [line 1179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1179).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_traceContractionEightSpan_sup`**, a lemma, [line 1179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1179).
 
 > The Lorentz contraction span sits inside the gauge span: each of its four blocks is
 > spanned by the four contractions of a quadruple Lorentz family whose components generate
@@ -1342,7 +1342,7 @@ lemma lorentzContractionEightSpan_le_traceContractionEightSpan_sup :
     h.lorentzContractionEightSpan ≤ h.traceContractionEightSpan ⊔ h.hyperchargeDerivSpan
 ```
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_invariants`**, a lemma, [line 1194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1194).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_invariants`**, a lemma, [line 1194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1194).
 
 > The Lorentz contraction span is a space of gauge invariants: it lies in the gauge
 > span, whose generators the gauge group fixes.
@@ -1352,7 +1352,7 @@ lemma lorentzContractionEightSpan_le_invariants :
     h.lorentzContractionEightSpan ≤ repGauge.invariants
 ```
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_eq`**, a lemma, [line 1204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1204).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_eq`**, a lemma, [line 1204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1204).
 
 > The Lorentz contraction span is spanned by eight of its sixteen generators: for each
 > family the `(0,2)(1,3)` metric contraction and the Levi-Civita contraction. All four families
@@ -1379,7 +1379,7 @@ lemma lorentzContractionEightSpan_eq :
 > to it from the gauge span, which contains it; Lorentz invariance comes from `RankFour`
 > directly, each block being spanned by the four contractions of a quadruple Lorentz family.
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_massWeightSubmodule`**, a lemma, [line 1232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1232).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_massWeightSubmodule`**, a lemma, [line 1232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1232).
 
 > The Lorentz contraction span lies in the mass-weight eight submodule.
 
@@ -1388,7 +1388,7 @@ lemma lorentzContractionEightSpan_le_massWeightSubmodule :
     h.lorentzContractionEightSpan ≤ h.massWeightSubmodule 8
 ```
 
-**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_lorentzInvariants`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1238).
+**`StandardModel.IsGaugeSector.lorentzContractionEightSpan_le_lorentzInvariants`**, a lemma, [line 1238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1238).
 
 > The Lorentz contraction span is a space of Lorentz invariants.
 
@@ -1397,7 +1397,7 @@ lemma lorentzContractionEightSpan_le_lorentzInvariants :
     h.lorentzContractionEightSpan ≤ repLorentz.invariants
 ```
 
-**`StandardModel.IsGaugeSector.isFixedBy_lorentzContractionEightSpan`**, a lemma, [line 1246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1246).
+**`StandardModel.IsGaugeSector.isFixedBy_lorentzContractionEightSpan`**, a lemma, [line 1246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1246).
 
 > The Lorentz contraction span is fixed pointwise by both groups.
 
@@ -1413,7 +1413,7 @@ lemma isFixedBy_lorentzContractionEightSpan :
 > converse, sections G and I, turns each reduction into an equivalence through
 > `ReducesInvariantsTo.mem_sup_and_forall_eq_self_iff`.
 
-**`StandardModel.IsGaugeSector.reducesInvariantsTo_lorentzContractionEightSpan`**, a lemma, [line 1271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1271).
+**`StandardModel.IsGaugeSector.reducesInvariantsTo_lorentzContractionEightSpan`**, a lemma, [line 1271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1271).
 
 > The gauge sector at mass weight eight reduces, for the gauge and Lorentz groups
 > together, to the four Lorentz contractions of each of the four families. The gauge group
@@ -1428,7 +1428,7 @@ lemma reducesInvariantsTo_lorentzContractionEightSpan :
       h.lorentzContractionEightSpan
 ```
 
-**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_invariant_iff`**, a lemma, [line 1321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1321).
+**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_invariant_iff`**, a lemma, [line 1321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1321).
 
 > The gauge classification of mass weight eight as an equivalence: an element of
 > `massWeightSubmodule 8 ⊔ S` is gauge invariant exactly when it is a combination of the
@@ -1443,7 +1443,7 @@ lemma mem_massWeightSubmodule_eight_sup_and_invariant_iff (S : Submodule ℂ B)
           ∧ x - y ∈ h.traceContractionEightSpan ⊔ h.hyperchargeDerivSpan
 ```
 
-**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 1335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1335).
+**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 1335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1335).
 
 > The gauge and Lorentz classification of mass weight eight as an equivalence: an
 > element of `massWeightSubmodule 8 ⊔ S` is fixed by both groups exactly when it is a
@@ -1462,7 +1462,7 @@ lemma mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff
           ∧ x - y ∈ h.lorentzContractionEightSpan
 ```
 
-**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_reduced`**, a lemma, [line 1355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1355).
+**`StandardModel.IsGaugeSector.mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_reduced`**, a lemma, [line 1355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean#L1355).
 
 > The same equivalence with the eight generators of `lorentzContractionEightSpan_eq`: for
 > each of the three underived trace families its `(0,2)(1,3)` metric contraction, of the shape
@@ -1499,4 +1499,4 @@ lemma mem_massWeightSubmodule_eight_sup_and_gauge_lorentz_invariant_iff_reduced
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean)

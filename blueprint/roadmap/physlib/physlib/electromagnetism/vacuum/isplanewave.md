@@ -8,7 +8,7 @@ proof: formalized
 
 # Electromagnetic wave equation
 
-The module `Physlib.Electromagnetism.Vacuum.IsPlaneWave`, [Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean): 23 declarations, 3 with a docstring.
+The module `Physlib.Electromagnetism.Vacuum.IsPlaneWave`, [Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean): 23 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.Electromagnetism.Vacuum.IsPlaneWave`, [Physlib/Electromagnet
 
 ## A. The property of being a plane wave
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L75).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L75).
 
 > The proposition on a electromagnetic potential which is true if
 > it corresponds to a plane wave.
@@ -46,7 +46,7 @@ def IsPlaneWave {d : ℕ} (𝓕 : FreeSpace)
 
 ### A.1. The electric and magnetic functions from a plane wave
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L88).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L88).
 
 > The corresponding electric field function from `ℝ` to `EuclideanSpace ℝ (Fin d)`
 > of a plane wave.
@@ -57,7 +57,7 @@ noncomputable def electricFunction {d : ℕ} {𝓕 : FreeSpace}
     (hA : IsPlaneWave 𝓕 A s) : ℝ → EuclideanSpace ℝ (Fin d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_eq_electricFunction`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L93).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_eq_electricFunction`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L93).
 
 ```lean
 lemma electricField_eq_electricFunction {d : ℕ} {𝓕 : FreeSpace}
@@ -67,7 +67,7 @@ lemma electricField_eq_electricFunction {d : ℕ} {𝓕 : FreeSpace}
     P.electricFunction (⟪x, s.unit⟫_ℝ - 𝓕.c * t)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L102).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L102).
 
 > The corresponding magnetic field function from `ℝ` to
 > `Fin d × Fin d → ℝ` of a plane wave.
@@ -78,7 +78,7 @@ noncomputable def magneticFunction {d : ℕ} {𝓕 : FreeSpace}
     (hA : IsPlaneWave 𝓕 A s) : ℝ → Fin d × Fin d → ℝ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_eq_magneticFunction`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L107).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_eq_magneticFunction`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L107).
 
 ```lean
 lemma magneticFieldMatrix_eq_magneticFunction {d : ℕ}
@@ -90,7 +90,7 @@ lemma magneticFieldMatrix_eq_magneticFunction {d : ℕ}
 
 #### A.1.1. Electric function and magnetic function in terms of E and B fields
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_eq_electricField`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L120).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_eq_electricField`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L120).
 
 ```lean
 lemma electricFunction_eq_electricField {d : ℕ}
@@ -100,7 +100,7 @@ lemma electricFunction_eq_electricField {d : ℕ}
     A.electricField 𝓕.c ⟨(- u)/𝓕.c.1⟩ (0 : Space d)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_eq_magneticFieldMatrix`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L130).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_eq_magneticFieldMatrix`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L130).
 
 ```lean
 lemma magneticFunction_eq_magneticFieldMatrix {d : ℕ}
@@ -112,7 +112,7 @@ lemma magneticFunction_eq_magneticFieldMatrix {d : ℕ}
 
 #### A.1.2. Uniqueness of the electric function
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_unique`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L146).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_unique`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L146).
 
 ```lean
 lemma electricFunction_unique {d : ℕ} {𝓕 : FreeSpace}
@@ -124,7 +124,7 @@ lemma electricFunction_unique {d : ℕ} {𝓕 : FreeSpace}
 
 #### A.1.3. Uniqueness of the magnetic function
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_unique`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L162).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_unique`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L162).
 
 ```lean
 lemma magneticFunction_unique {d : ℕ} {𝓕 : FreeSpace}
@@ -138,7 +138,7 @@ lemma magneticFunction_unique {d : ℕ} {𝓕 : FreeSpace}
 
 ### A.2. Differentiability conditions
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_differentiable`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L179).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricFunction_differentiable`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L179).
 
 ```lean
 lemma electricFunction_differentiable {d : ℕ}
@@ -147,7 +147,7 @@ lemma electricFunction_differentiable {d : ℕ}
     Differentiable ℝ P.electricFunction
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_differentiable`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L191).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFunction_differentiable`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L191).
 
 ```lean
 lemma magneticFunction_differentiable {d : ℕ}
@@ -159,7 +159,7 @@ lemma magneticFunction_differentiable {d : ℕ}
 
 ### A.3. Time derivative of electric and magnetic fields of a plane wave
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_time_deriv`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L212).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_time_deriv`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L212).
 
 ```lean
 lemma electricField_time_deriv {d : ℕ}
@@ -170,7 +170,7 @@ lemma electricField_time_deriv {d : ℕ}
     fderiv ℝ P.electricFunction (⟪x, s.unit⟫_ℝ - 𝓕.c.val * t.val) 1
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_time_deriv`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L223).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_time_deriv`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L223).
 
 ```lean
 lemma magneticFieldMatrix_time_deriv {d : ℕ}
@@ -183,7 +183,7 @@ lemma magneticFieldMatrix_time_deriv {d : ℕ}
 
 ### A.4. Space derivative of electric and magnetic fields of a plane wave
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_space_deriv`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L245).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_space_deriv`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L245).
 
 ```lean
 lemma electricField_space_deriv {d : ℕ}
@@ -194,7 +194,7 @@ lemma electricField_space_deriv {d : ℕ}
     fderiv ℝ P.electricFunction (⟪x, s.unit⟫_ℝ - 𝓕.c.val * t.val) 1
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_space_deriv`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L257).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_space_deriv`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L257).
 
 ```lean
 lemma magneticFieldMatrix_space_deriv {d : ℕ}
@@ -208,7 +208,7 @@ lemma magneticFieldMatrix_space_deriv {d : ℕ}
 
 ### A.5. Space derivative in terms of time derivative
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_space_deriv_eq_time_deriv`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L282).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_space_deriv_eq_time_deriv`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L282).
 
 ```lean
 lemma electricField_space_deriv_eq_time_deriv {d : ℕ} {𝓕 : FreeSpace}
@@ -219,7 +219,7 @@ lemma electricField_space_deriv_eq_time_deriv {d : ℕ} {𝓕 : FreeSpace}
     ∂ₜ (A.electricField 𝓕.c · x i) t
 ```
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_space_deriv_eq_time_deriv`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L295).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_space_deriv_eq_time_deriv`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L295).
 
 ```lean
 lemma magneticFieldMatrix_space_deriv_eq_time_deriv {d : ℕ}
@@ -234,7 +234,7 @@ lemma magneticFieldMatrix_space_deriv_eq_time_deriv {d : ℕ}
 
 ### B.1. Time derivative of the magnetic field in terms of electric field
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.time_deriv_magneticFieldMatrix_eq_electricField_mul_propogator`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L319).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.time_deriv_magneticFieldMatrix_eq_electricField_mul_propogator`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L319).
 
 ```lean
 lemma time_deriv_magneticFieldMatrix_eq_electricField_mul_propogator {d : ℕ}
@@ -248,7 +248,7 @@ lemma time_deriv_magneticFieldMatrix_eq_electricField_mul_propogator {d : ℕ}
 
 ### B.2. Space derivative of the magnetic field in terms of electric field
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.space_deriv_magneticFieldMatrix_eq_electricField_mul_propogator`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L343).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.space_deriv_magneticFieldMatrix_eq_electricField_mul_propogator`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L343).
 
 ```lean
 lemma space_deriv_magneticFieldMatrix_eq_electricField_mul_propogator {d : ℕ}
@@ -262,7 +262,7 @@ lemma space_deriv_magneticFieldMatrix_eq_electricField_mul_propogator {d : ℕ}
 
 ### B.3. Magnetic field equal propogator cross electric field up to constant
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_eq_propogator_cross_electricField`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L370).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.magneticFieldMatrix_eq_propogator_cross_electricField`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L370).
 
 ```lean
 lemma magneticFieldMatrix_eq_propogator_cross_electricField {d : ℕ}
@@ -277,7 +277,7 @@ lemma magneticFieldMatrix_eq_propogator_cross_electricField {d : ℕ}
 
 ### C.1. The time derivative of the electric field in terms of magnetic field
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.time_deriv_electricField_eq_magneticFieldMatrix`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L401).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.time_deriv_electricField_eq_magneticFieldMatrix`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L401).
 
 ```lean
 lemma time_deriv_electricField_eq_magneticFieldMatrix {d : ℕ}
@@ -291,7 +291,7 @@ lemma time_deriv_electricField_eq_magneticFieldMatrix {d : ℕ}
 
 ### C.2. The space derivative of the electric field in terms of magnetic field
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.space_deriv_electricField_eq_magneticFieldMatrix`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L461).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.space_deriv_electricField_eq_magneticFieldMatrix`**, a lemma, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L461).
 
 ```lean
 lemma space_deriv_electricField_eq_magneticFieldMatrix {d : ℕ}
@@ -305,7 +305,7 @@ lemma space_deriv_electricField_eq_magneticFieldMatrix {d : ℕ}
 
 ### C.3. Electric field equal propogator cross magnetic field up to constant
 
-**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_eq_propogator_cross_magneticFieldMatrix`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L507).
+**`Electromagnetism.ElectromagneticPotential.IsPlaneWave.electricField_eq_propogator_cross_magneticFieldMatrix`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean#L507).
 
 ```lean
 lemma electricField_eq_propogator_cross_magneticFieldMatrix {d : ℕ}
@@ -323,4 +323,4 @@ lemma electricField_eq_propogator_cross_magneticFieldMatrix {d : ℕ}
 
 ## Sources
 
-- [Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean)
+- [Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean)

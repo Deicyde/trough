@@ -8,7 +8,7 @@ proof: formalized
 
 # Complex conjugation in the spacetime algebra
 
-The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Star`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean): 10 declarations (4 instances with no name), 6 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Star`, [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean): 10 declarations (4 instances with no name), 6 with a docstring.
 
 > The spacetime algebra is a star ring under complex conjugation of the Taylor coefficients.
 
@@ -39,7 +39,7 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Star`, [Physlib/Spac
 > The star is the coefficient map `map (starRingEnd ℂ)`. Since `SpaceTimeAlgebra` is an
 > abbreviation, these are instances on `MvPowerSeries (Fin 1 ⊕ Fin 3) ℂ`.
 
-**An instance with no name**, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L64).
+**An instance with no name**, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L64).
 
 > The star of a series in the spacetime algebra conjugates each of its coefficients.
 
@@ -47,14 +47,14 @@ The module `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Star`, [Physlib/Spac
 instance : Star SpaceTimeAlgebra
 ```
 
-**`SpaceTimeAlgebra.coeff_star`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L68).
+**`SpaceTimeAlgebra.coeff_star`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L68).
 
 ```lean
 lemma coeff_star (n : (Fin 1 ⊕ Fin 3) →₀ ℕ) (f : SpaceTimeAlgebra) :
     coeff n (star f) = star (coeff n f)
 ```
 
-**`SpaceTimeAlgebra.constantCoeff_star`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L72).
+**`SpaceTimeAlgebra.constantCoeff_star`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L72).
 
 ```lean
 lemma constantCoeff_star (f : SpaceTimeAlgebra) :
@@ -66,7 +66,7 @@ lemma constantCoeff_star (f : SpaceTimeAlgebra) :
 > Since the spacetime algebra is commutative, a ring homomorphism that is an involution makes it a
 > star ring.
 
-**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L85).
+**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L85).
 
 > The spacetime algebra is a star ring under coefficientwise conjugation.
 
@@ -76,13 +76,13 @@ instance : StarRing SpaceTimeAlgebra
 
 ### A.2. Constants and coordinates
 
-**`SpaceTimeAlgebra.star_C`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L97).
+**`SpaceTimeAlgebra.star_C`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L97).
 
 ```lean
 lemma star_C (a : ℂ) : star (C a : SpaceTimeAlgebra) = C (star a)
 ```
 
-**`SpaceTimeAlgebra.star_X`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L100).
+**`SpaceTimeAlgebra.star_X`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L100).
 
 ```lean
 lemma star_X (μ : Fin 1 ⊕ Fin 3) : star (X μ : SpaceTimeAlgebra) = X μ
@@ -90,7 +90,7 @@ lemma star_X (μ : Fin 1 ⊕ Fin 3) : star (X μ : SpaceTimeAlgebra) = X μ
 
 ### A.3. Real and complex scalars
 
-**An instance with no name**, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L109).
+**An instance with no name**, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L109).
 
 > Conjugation fixes real scalars, `star (r • f) = r • star f`.
 
@@ -98,7 +98,7 @@ lemma star_X (μ : Fin 1 ⊕ Fin 3) : star (X μ : SpaceTimeAlgebra) = X μ
 instance : StarModule ℝ SpaceTimeAlgebra
 ```
 
-**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L113).
+**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L113).
 
 > Conjugation conjugates complex scalars, `star (c • f) = star c • star f`.
 
@@ -111,7 +111,7 @@ instance : StarModule ℂ SpaceTimeAlgebra
 > The coefficient of `x^n` in `pderiv μ f` is the coefficient of `x^(n + single μ 1)` in `f` times
 > the natural number `n μ + 1`, which conjugation fixes.
 
-**`SpaceTimeAlgebra.pderiv_star`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L126).
+**`SpaceTimeAlgebra.pderiv_star`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L126).
 
 > Conjugation commutes with formal partial derivatives.
 
@@ -120,7 +120,7 @@ lemma pderiv_star (μ : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) :
     pderiv μ (star f) = star (pderiv μ f)
 ```
 
-**`SpaceTimeAlgebra.iteratedPDeriv_star`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L132).
+**`SpaceTimeAlgebra.iteratedPDeriv_star`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean#L132).
 
 > Conjugation commutes with iterated formal partial derivatives.
 
@@ -135,4 +135,4 @@ lemma iteratedPDeriv_star (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTimeAlgebra
 
 ## Sources
 
-- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean)
+- [Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean)

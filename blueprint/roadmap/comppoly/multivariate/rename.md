@@ -7,7 +7,7 @@ proof: formalized
 
 # Properties of variable renaming for `CMvPolynomial`
 
-`CompPoly.Multivariate.Rename`, in [CompPoly/Multivariate/Rename.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean), by Dimitris Mitsios.
+`CompPoly.Multivariate.Rename`, in [CompPoly/Multivariate/Rename.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean), by Dimitris Mitsios.
 
 > This file proves properties of the `rename` function defined in `CMvPolynomial.lean`,
 > by transferring results from Mathlib's `MvPolynomial.rename` through the
@@ -23,7 +23,7 @@ proof: formalized
 
 > ### Helper lemmas for `fromCMvPolynomial_rename`
 
-`CPoly.list_foldl_add_comm` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L40))
+`CPoly.list_foldl_add_comm` (lemma, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L40))
 
 > In a commutative additive monoid, the order of addition in a list fold
 > does not matter.
@@ -35,7 +35,7 @@ lemma list_foldl_add_comm {β K V : Type*} [AddCommMonoid β]
     List.foldl (fun acc pair => g pair.1 pair.2 + acc) init l
 ```
 
-`CPoly.foldl_add_comm'` (lemma, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L52))
+`CPoly.foldl_add_comm'` (lemma, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L52))
 
 > Swapping addition order in `ExtTreeMap.foldl` does not change the result.
 
@@ -47,7 +47,7 @@ lemma foldl_add_comm' {β : Type*} [AddCommMonoid β] {k : ℕ}
     Std.ExtTreeMap.foldl (fun acc m c => g m c + acc) (0 : β) t
 ```
 
-`CPoly.toFinsupp_apply` (lemma, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L61))
+`CPoly.toFinsupp_apply` (lemma, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L61))
 
 > Applying `CMvMonomial.toFinsupp` at index `i` equals `Vector.get`.
 
@@ -56,7 +56,7 @@ lemma toFinsupp_apply (mono : CMvMonomial n) (i : Fin n) :
     (CMvMonomial.toFinsupp mono) i = mono.get i
 ```
 
-`CPoly.renameMonomial_eq` (lemma, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L66))
+`CPoly.renameMonomial_eq` (lemma, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L66))
 
 > Monomial renaming via `Vector.ofFn` corresponds to `Finsupp.mapDomain`
 > on the `Finsupp` side.
@@ -69,7 +69,7 @@ lemma renameMonomial_eq (f : Fin n → Fin m) (mono : CMvMonomial n) :
       (Finsupp.mapDomain f (CMvMonomial.toFinsupp mono))
 ```
 
-`CPoly.fromCMvPolynomial_monomial` (lemma, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L85))
+`CPoly.fromCMvPolynomial_monomial` (lemma, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L85))
 
 > `fromCMvPolynomial` maps `CMvPolynomial.monomial` to
 > `MvPolynomial.monomial`.
@@ -80,7 +80,7 @@ lemma fromCMvPolynomial_monomial {k : ℕ} (mono : CMvMonomial k) (c : R) :
     MvPolynomial.monomial (CMvMonomial.toFinsupp mono) c
 ```
 
-`CPoly.fromCMvPolynomial_finsupp_sum` (lemma, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L112))
+`CPoly.fromCMvPolynomial_finsupp_sum` (lemma, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L112))
 
 > `fromCMvPolynomial` distributes over `Finsupp.sum`.
 
@@ -95,7 +95,7 @@ lemma fromCMvPolynomial_finsupp_sum {k : ℕ}
 
 > ### Main correspondence lemma
 
-`CPoly.fromCMvPolynomial_rename` (lemma, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L125))
+`CPoly.fromCMvPolynomial_rename` (lemma, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L125))
 
 > `CMvPolynomial.rename` agrees with `MvPolynomial.rename` under the
 > `fromCMvPolynomial` equivalence.
@@ -109,7 +109,7 @@ lemma fromCMvPolynomial_rename (f : Fin n → Fin m)
 
 > ### Bridging lemmas for `C` and `X`
 
-`CPoly.C_eq_monomial` (lemma, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L162))
+`CPoly.C_eq_monomial` (lemma, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L162))
 
 > `CMvPolynomial.C c` equals `CMvPolynomial.monomial 0 c`.
 
@@ -118,7 +118,7 @@ lemma C_eq_monomial {k : ℕ} (c : R) :
     CMvPolynomial.C (n := k) c = CMvPolynomial.monomial 0 c
 ```
 
-`CPoly.toFinsupp_zero` (lemma, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L183))
+`CPoly.toFinsupp_zero` (lemma, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L183))
 
 > The `Finsupp` of the zero monomial is zero.
 
@@ -127,7 +127,7 @@ lemma toFinsupp_zero {k : ℕ} :
     CMvMonomial.toFinsupp (0 : CMvMonomial k) = 0
 ```
 
-`CPoly.fromCMvPolynomial_C` (lemma, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L190))
+`CPoly.fromCMvPolynomial_C` (lemma, [line 190](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L190))
 
 > `fromCMvPolynomial` maps `CMvPolynomial.C` to `MvPolynomial.C`.
 
@@ -139,7 +139,7 @@ lemma fromCMvPolynomial_C {k : ℕ} (c : R) :
 
 > ### Algebraic properties of rename
 
-`CPoly.rename_C` (lemma, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L200))
+`CPoly.rename_C` (lemma, [line 200](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L200))
 
 > Constants are unchanged under renaming.
 
@@ -149,7 +149,7 @@ lemma rename_C (f : Fin n → Fin m) (c : R) :
     CMvPolynomial.C (n := m) c
 ```
 
-`CPoly.X_eq_monomial` (lemma, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L210))
+`CPoly.X_eq_monomial` (lemma, [line 210](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L210))
 
 > `CMvPolynomial.X i` equals `CMvPolynomial.monomial eᵢ 1`
 > where `eᵢ` is the `i`-th standard basis vector.
@@ -161,7 +161,7 @@ lemma X_eq_monomial {k : ℕ} (i : Fin k) :
       (1 : R)
 ```
 
-`CPoly.toFinsupp_unitMono` (lemma, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L223))
+`CPoly.toFinsupp_unitMono` (lemma, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L223))
 
 > The `Finsupp` of the `i`-th standard basis monomial is
 > `Finsupp.single i 1`.
@@ -174,7 +174,7 @@ lemma toFinsupp_unitMono {k : ℕ} (i : Fin k) :
     Finsupp.single i 1
 ```
 
-`CPoly.fromCMvPolynomial_X` (lemma, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L235))
+`CPoly.fromCMvPolynomial_X` (lemma, [line 235](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L235))
 
 > `fromCMvPolynomial` maps `CMvPolynomial.X i` to
 > `MvPolynomial.X i`.
@@ -185,7 +185,7 @@ lemma fromCMvPolynomial_X {k : ℕ} (i : Fin k) :
     MvPolynomial.X i
 ```
 
-`CPoly.rename_X` (lemma, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L244))
+`CPoly.rename_X` (lemma, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L244))
 
 > Renaming maps variable `X i` to `X (f i)`.
 
@@ -195,7 +195,7 @@ lemma rename_X (f : Fin n → Fin m) (i : Fin n) :
     CMvPolynomial.X (f i)
 ```
 
-`CPoly.rename_add` (lemma, [line 254](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L254))
+`CPoly.rename_add` (lemma, [line 254](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L254))
 
 > Renaming preserves addition.
 
@@ -207,7 +207,7 @@ lemma rename_add (f : Fin n → Fin m)
     CMvPolynomial.rename f q
 ```
 
-`CPoly.rename_mul` (lemma, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L266))
+`CPoly.rename_mul` (lemma, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L266))
 
 > Renaming preserves multiplication.
 
@@ -219,7 +219,7 @@ lemma rename_mul (f : Fin n → Fin m)
     CMvPolynomial.rename f q
 ```
 
-`CPoly.rename_id` (lemma, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L278))
+`CPoly.rename_id` (lemma, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L278))
 
 > Renaming by the identity function is the identity.
 
@@ -228,7 +228,7 @@ lemma rename_id (p : CMvPolynomial n R) :
     CMvPolynomial.rename id p = p
 ```
 
-`CPoly.rename_rename` (lemma, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L286))
+`CPoly.rename_rename` (lemma, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L286))
 
 > Composing two renamings equals renaming by the composition.
 
@@ -239,7 +239,7 @@ lemma rename_rename {k : ℕ} (f : Fin n → Fin m)
     CMvPolynomial.rename (g ∘ f) p
 ```
 
-`CMvPolynomial.renameEquiv` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean#L305))
+`CMvPolynomial.renameEquiv` (definition, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean#L305))
 
 > Ring equivalence for variable renaming when the function is
 > a bijection.
@@ -256,5 +256,5 @@ noncomputable def renameEquiv
 
 ## Sources
 
-- [CompPoly/Multivariate/Rename.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/Rename.lean)
+- [CompPoly/Multivariate/Rename.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/Rename.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.Rename.json)

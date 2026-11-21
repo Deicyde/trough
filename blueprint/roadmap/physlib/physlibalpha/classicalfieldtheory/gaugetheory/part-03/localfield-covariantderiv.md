@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant derivatives in the local field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.CovariantDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean): 36 declarations, 23 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.CovariantDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean): 36 declarations, 23 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.CovariantDe
 
 ## A. The covariant matter towers
 
-**`GaugeFieldData.covDerivFermion`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L80).
+**`GaugeFieldData.covDerivFermion`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L80).
 
 > The iterated covariant derivative `∇_{l 0} ⋯ ∇_{l (n-1)} ψ` of a fermionic species along
 > an ordered tuple of directions, as a family over the covectors of its value space.
@@ -58,7 +58,7 @@ noncomputable def covDerivFermion (i : T.FermionSpecies) {n : ℕ} (l : Fin n �
     Module.Dual ℂ (T.FermionValue i) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.covDerivConjFermion`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L86).
+**`GaugeFieldData.covDerivConjFermion`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L86).
 
 > The iterated covariant derivative of the conjugate components of a fermionic species,
 > through the conjugate infinitesimal action.
@@ -69,7 +69,7 @@ noncomputable def covDerivConjFermion (i : T.FermionSpecies) {n : ℕ}
     Module.Dual ℂ (ConjModule (T.FermionValue i)) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.covDerivBoson`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L93).
+**`GaugeFieldData.covDerivBoson`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L93).
 
 > The iterated covariant derivative of a bosonic species.
 
@@ -78,7 +78,7 @@ noncomputable def covDerivBoson (j : T.BosonSpecies) {n : ℕ} (l : Fin n → (F
     Module.Dual ℂ (T.BosonValue j) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.covDerivConjBoson`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L98).
+**`GaugeFieldData.covDerivConjBoson`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L98).
 
 > The iterated covariant derivative of the conjugate components of a bosonic species.
 
@@ -88,7 +88,7 @@ noncomputable def covDerivConjBoson (j : T.BosonSpecies) {n : ℕ}
     Module.Dual ℂ (ConjModule (T.BosonValue j)) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.covDerivFermion_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L107).
+**`GaugeFieldData.covDerivFermion_zero`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L107).
 
 > Zero covariant derivatives: the undifferentiated symbol.
 
@@ -97,28 +97,28 @@ lemma covDerivFermion_zero (i : T.FermionSpecies) (l : Fin 0 → (Fin 1 ⊕ Fin 
     T.covDerivFermion i l = T.fermionSymbol i 0
 ```
 
-**`GaugeFieldData.covDerivConjFermion_zero`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L110).
+**`GaugeFieldData.covDerivConjFermion_zero`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L110).
 
 ```lean
 lemma covDerivConjFermion_zero (i : T.FermionSpecies) (l : Fin 0 → (Fin 1 ⊕ Fin 3)) :
     T.covDerivConjFermion i l = T.conjFermionSymbol i 0
 ```
 
-**`GaugeFieldData.covDerivBoson_zero`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L113).
+**`GaugeFieldData.covDerivBoson_zero`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L113).
 
 ```lean
 lemma covDerivBoson_zero (j : T.BosonSpecies) (l : Fin 0 → (Fin 1 ⊕ Fin 3)) :
     T.covDerivBoson j l = T.bosonSymbol j 0
 ```
 
-**`GaugeFieldData.covDerivConjBoson_zero`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L116).
+**`GaugeFieldData.covDerivConjBoson_zero`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L116).
 
 ```lean
 lemma covDerivConjBoson_zero (j : T.BosonSpecies) (l : Fin 0 → (Fin 1 ⊕ Fin 3)) :
     T.covDerivConjBoson j l = T.conjBosonSymbol j 0
 ```
 
-**`GaugeFieldData.covDerivFermion_succ`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L122).
+**`GaugeFieldData.covDerivFermion_succ`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L122).
 
 > One more covariant derivative, peeled off the front of the tuple: the derivative symbol
 > `[∂_{l 0} ∇_{l'} ψ]` of the lower tower plus the derived action `A_{l 0} · ∇_{l'} ψ` of the
@@ -134,7 +134,7 @@ lemma covDerivFermion_succ (i : T.FermionSpecies) {n : ℕ} (l : Fin (n + 1) →
             fun k => l k.succ) 0
 ```
 
-**`GaugeFieldData.covDerivConjFermion_succ`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L130).
+**`GaugeFieldData.covDerivConjFermion_succ`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L130).
 
 ```lean
 lemma covDerivConjFermion_succ (i : T.FermionSpecies) {n : ℕ}
@@ -148,7 +148,7 @@ lemma covDerivConjFermion_succ (i : T.FermionSpecies) {n : ℕ}
             fun k => l k.succ) 0
 ```
 
-**`GaugeFieldData.covDerivBoson_succ`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L140).
+**`GaugeFieldData.covDerivBoson_succ`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L140).
 
 ```lean
 lemma covDerivBoson_succ (j : T.BosonSpecies) {n : ℕ} (l : Fin (n + 1) → (Fin 1 ⊕ Fin 3)) :
@@ -160,7 +160,7 @@ lemma covDerivBoson_succ (j : T.BosonSpecies) {n : ℕ} (l : Fin (n + 1) → (Fi
             fun k => l k.succ) 0
 ```
 
-**`GaugeFieldData.covDerivConjBoson_succ`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L148).
+**`GaugeFieldData.covDerivConjBoson_succ`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L148).
 
 ```lean
 lemma covDerivConjBoson_succ (j : T.BosonSpecies) {n : ℕ}
@@ -176,7 +176,7 @@ lemma covDerivConjBoson_succ (j : T.BosonSpecies) {n : ℕ}
 
 ## B. The included field-strength tower
 
-**`GaugeFieldData.covDerivFieldStrength`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L168).
+**`GaugeFieldData.covDerivFieldStrength`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L168).
 
 > The field strength and its ordered covariant derivatives `∇_l F_μν^φ`, included from
 > the real gauge-only algebra through the connection factor.
@@ -186,7 +186,7 @@ noncomputable def covDerivFieldStrength (l : List (Fin 1 ⊕ Fin 3)) (μ ν : Fi
     Module.Dual ℝ 𝔤 →ₗ[ℝ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.covDerivFieldStrength_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L177).
+**`GaugeFieldData.covDerivFieldStrength_apply`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L177).
 
 ```lean
 lemma covDerivFieldStrength_apply (l : List (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3)
@@ -196,7 +196,7 @@ lemma covDerivFieldStrength_apply (l : List (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 �
           LocalGaugeFieldAlgebra.covDerivFieldStrength 𝔤 l μ ν φ)
 ```
 
-**`GaugeFieldData.covDerivFieldStrength_nil`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L184).
+**`GaugeFieldData.covDerivFieldStrength_nil`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L184).
 
 > Zero covariant derivatives: the included field strength.
 
@@ -206,7 +206,7 @@ lemma covDerivFieldStrength_nil (μ ν : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 
       = T.includeConnection ((1 : ℂ) ⊗ₜ[ℝ] LocalGaugeFieldAlgebra.fieldStrength 𝔤 μ ν φ)
 ```
 
-**`GaugeFieldData.covDerivFieldStrength_eq_iteratedCovDerivAdjoint`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L191).
+**`GaugeFieldData.covDerivFieldStrength_eq_iteratedCovDerivAdjoint`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L191).
 
 > The included tower is the covariant tower of the gauge-field symbols of `J(T)` computed
 > by the realization theory, the tower being natural along the inclusion of the connection
@@ -222,7 +222,7 @@ lemma covDerivFieldStrength_eq_iteratedCovDerivAdjoint (l : List (Fin 1 ⊕ Fin 
 
 ## C. The gauge laws
 
-**`GaugeFieldData.repJet_covDerivFermion`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L232).
+**`GaugeFieldData.repJet_covDerivFermion`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L232).
 
 > The gauge law of the covariant tower of a fermionic species: a jet acts through the
 > zeroth dual Taylor coefficient of its inverse on the value index alone.
@@ -234,7 +234,7 @@ lemma repJet_covDerivFermion (i : T.FermionSpecies) {n : ℕ} (l : Fin n → (Fi
       = T.covDerivFermion i l (repDualCoeff (T.fermion i).repJet U⁻¹ 0 φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivConjFermion`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L241).
+**`GaugeFieldData.repJet_covDerivConjFermion`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L241).
 
 > The gauge law of the conjugate covariant tower of a fermionic species, through the
 > conjugate representation.
@@ -247,7 +247,7 @@ lemma repJet_covDerivConjFermion (i : T.FermionSpecies) {n : ℕ}
           (repDualCoeff (JetComponentSpace.repConj (T.fermion i).repJet) U⁻¹ 0 φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivBoson`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L251).
+**`GaugeFieldData.repJet_covDerivBoson`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L251).
 
 > The gauge law of the covariant tower of a bosonic species.
 
@@ -258,7 +258,7 @@ lemma repJet_covDerivBoson (j : T.BosonSpecies) {n : ℕ} (l : Fin n → (Fin 1 
       = T.covDerivBoson j l (repDualCoeff (T.boson j).repJet U⁻¹ 0 φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivConjBoson`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L259).
+**`GaugeFieldData.repJet_covDerivConjBoson`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L259).
 
 > The gauge law of the conjugate covariant tower of a bosonic species.
 
@@ -270,7 +270,7 @@ lemma repJet_covDerivConjBoson (j : T.BosonSpecies) {n : ℕ} (l : Fin n → (Fi
           (repDualCoeff (JetComponentSpace.repConj (T.boson j).repJet) U⁻¹ 0 φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivFieldStrength`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L269).
+**`GaugeFieldData.repJet_covDerivFieldStrength`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L269).
 
 > The gauge law of the included field-strength tower: a jet acts through the dual
 > adjoint action of the value of its inverse, from the gauge-only law.
@@ -282,7 +282,7 @@ lemma repJet_covDerivFieldStrength (l : List (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 �
       = T.covDerivFieldStrength l μ ν ((jets.adjoint (jets.eval U⁻¹)).dualMap φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivFermion_ofConstant_eval`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L280).
+**`GaugeFieldData.repJet_covDerivFermion_ofConstant_eval`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L280).
 
 > Under `MatterField.PureJetsActTrivially` for the species, the jet action on its
 > covariant tower factors through evaluation: a jet acts as the constant jet of its
@@ -296,7 +296,7 @@ lemma repJet_covDerivFermion_ofConstant_eval (i : T.FermionSpecies)
       = T.repJet (jets.ofConstant (jets.eval U)) (T.covDerivFermion i l φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivConjFermion_ofConstant_eval`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L289).
+**`GaugeFieldData.repJet_covDerivConjFermion_ofConstant_eval`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L289).
 
 ```lean
 lemma repJet_covDerivConjFermion_ofConstant_eval (i : T.FermionSpecies)
@@ -306,7 +306,7 @@ lemma repJet_covDerivConjFermion_ofConstant_eval (i : T.FermionSpecies)
       = T.repJet (jets.ofConstant (jets.eval U)) (T.covDerivConjFermion i l φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivBoson_ofConstant_eval`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L300).
+**`GaugeFieldData.repJet_covDerivBoson_ofConstant_eval`**, a lemma, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L300).
 
 ```lean
 lemma repJet_covDerivBoson_ofConstant_eval (j : T.BosonSpecies)
@@ -316,7 +316,7 @@ lemma repJet_covDerivBoson_ofConstant_eval (j : T.BosonSpecies)
       = T.repJet (jets.ofConstant (jets.eval U)) (T.covDerivBoson j l φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivConjBoson_ofConstant_eval`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L309).
+**`GaugeFieldData.repJet_covDerivConjBoson_ofConstant_eval`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L309).
 
 ```lean
 lemma repJet_covDerivConjBoson_ofConstant_eval (j : T.BosonSpecies)
@@ -326,7 +326,7 @@ lemma repJet_covDerivConjBoson_ofConstant_eval (j : T.BosonSpecies)
       = T.repJet (jets.ofConstant (jets.eval U)) (T.covDerivConjBoson j l φ)
 ```
 
-**`GaugeFieldData.repJet_covDerivFieldStrength_ofConstant_eval`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L321).
+**`GaugeFieldData.repJet_covDerivFieldStrength_ofConstant_eval`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L321).
 
 > The jet action on the field-strength tower factors through evaluation, with no
 > condition.
@@ -340,7 +340,7 @@ lemma repJet_covDerivFieldStrength_ofConstant_eval (l : List (Fin 1 ⊕ Fin 3))
 
 ## D. The Lorentz laws
 
-**`GaugeFieldData.repLorentzGroup_covDerivFermion`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L347).
+**`GaugeFieldData.repLorentzGroup_covDerivFermion`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L347).
 
 > The Lorentz law of the covariant tower of a fermionic species, under
 > `MatterField.GaugeLorentzCompatible` for the species: every covariant slot mixes by the
@@ -355,7 +355,7 @@ lemma repLorentzGroup_covDerivFermion (i : T.FermionSpecies)
           T.covDerivFermion i p ((T.fermion i).repLorentz.dual Λ φ)
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivConjFermion`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L357).
+**`GaugeFieldData.repLorentzGroup_covDerivConjFermion`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L357).
 
 > The Lorentz law of the conjugate covariant tower of a fermionic species.
 
@@ -368,7 +368,7 @@ lemma repLorentzGroup_covDerivConjFermion (i : T.FermionSpecies)
           T.covDerivConjFermion i p ((T.fermion i).repLorentz.conj.dual Λ φ)
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivBoson`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L367).
+**`GaugeFieldData.repLorentzGroup_covDerivBoson`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L367).
 
 > The Lorentz law of the covariant tower of a bosonic species.
 
@@ -381,7 +381,7 @@ lemma repLorentzGroup_covDerivBoson (j : T.BosonSpecies)
           T.covDerivBoson j p ((T.boson j).repLorentz.dual Λ φ)
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivConjBoson`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L377).
+**`GaugeFieldData.repLorentzGroup_covDerivConjBoson`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L377).
 
 > The Lorentz law of the conjugate covariant tower of a bosonic species.
 
@@ -394,7 +394,7 @@ lemma repLorentzGroup_covDerivConjBoson (j : T.BosonSpecies)
           T.covDerivConjBoson j p ((T.boson j).repLorentz.conj.dual Λ φ)
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivFieldStrength`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L396).
+**`GaugeFieldData.repLorentzGroup_covDerivFieldStrength`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L396).
 
 > The Lorentz law of the field-strength tower, with no condition: every covariant slot
 > and both covector indices mix by the columns of the Lorentz matrix.
@@ -414,7 +414,7 @@ lemma repLorentzGroup_covDerivFieldStrength {n : ℕ} (l : Fin n → (Fin 1 ⊕ 
 > nothing about the other elements of such a subalgebra; the covariant field algebra and its
 > sector subalgebras obtain their stability from it by generation.
 
-**`GaugeFieldData.repLorentzGroup_covDerivFermion_mem`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L429).
+**`GaugeFieldData.repLorentzGroup_covDerivFermion_mem`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L429).
 
 > Under `MatterField.GaugeLorentzCompatible` for the species, a Lorentz transformation
 > carries an element of the covariant tower of a fermionic species into any subalgebra
@@ -429,7 +429,7 @@ lemma repLorentzGroup_covDerivFermion_mem (i : T.FermionSpecies)
     T.repLorentzGroup Λ (T.covDerivFermion i l φ) ∈ S
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivConjFermion_mem`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L438).
+**`GaugeFieldData.repLorentzGroup_covDerivConjFermion_mem`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L438).
 
 ```lean
 lemma repLorentzGroup_covDerivConjFermion_mem (i : T.FermionSpecies)
@@ -440,7 +440,7 @@ lemma repLorentzGroup_covDerivConjFermion_mem (i : T.FermionSpecies)
     T.repLorentzGroup Λ (T.covDerivConjFermion i l φ) ∈ S
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivBoson_mem`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L447).
+**`GaugeFieldData.repLorentzGroup_covDerivBoson_mem`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L447).
 
 ```lean
 lemma repLorentzGroup_covDerivBoson_mem (j : T.BosonSpecies)
@@ -451,7 +451,7 @@ lemma repLorentzGroup_covDerivBoson_mem (j : T.BosonSpecies)
     T.repLorentzGroup Λ (T.covDerivBoson j l φ) ∈ S
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivConjBoson_mem`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L456).
+**`GaugeFieldData.repLorentzGroup_covDerivConjBoson_mem`**, a lemma, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L456).
 
 ```lean
 lemma repLorentzGroup_covDerivConjBoson_mem (j : T.BosonSpecies)
@@ -462,7 +462,7 @@ lemma repLorentzGroup_covDerivConjBoson_mem (j : T.BosonSpecies)
     T.repLorentzGroup Λ (T.covDerivConjBoson j l φ) ∈ S
 ```
 
-**`GaugeFieldData.repLorentzGroup_covDerivFieldStrength_mem`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L467).
+**`GaugeFieldData.repLorentzGroup_covDerivFieldStrength_mem`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean#L467).
 
 > A Lorentz transformation carries an element of the field-strength tower into any
 > subalgebra containing the whole tower of its adjoint covector, with no condition.
@@ -486,4 +486,4 @@ lemma repLorentzGroup_covDerivFieldStrength_mem (l : List (Fin 1 ⊕ Fin 3))
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean)

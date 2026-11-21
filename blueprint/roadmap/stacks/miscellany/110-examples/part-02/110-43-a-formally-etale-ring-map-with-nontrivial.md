@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.43 A formally étale ring map with nontrivial cotangent complex
 
-Section 110.43 of the Stacks Project, [Tag 06E5](https://stacks.math.columbia.edu/tag/06E5). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.43 of the Stacks Project, [Tag 06E5](https://stacks.math.columbia.edu/tag/06E5). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06E6, a lemma
 
 [Tag 06E6](https://stacks.math.columbia.edu/tag/06E6) in the Stacks Project.
 
-**`Stacks.Examples.exists_formallyEtale_surjective_cotangentComplex_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FormallyEtaleCotangentComplexNonzero.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/FormallyEtaleCotangentComplexNonzero.lean#L156).
+**`Stacks.Examples.exists_formallyEtale_surjective_cotangentComplex_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FormallyEtaleCotangentComplexNonzero.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Algebra/FormallyEtaleCotangentComplexNonzero.lean#L156).
 
 > **Stacks 06E6.** There exists a formally étale surjective ring map `A → B` with
 > `L_{B/A} ≠ 0`: the cotangent complex `CommAlgCat.cotangentComplex A B` of Tag 08PN is not zero in
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.43, Tag 06E5](https://stacks.math.columbia.edu/tag/06E5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

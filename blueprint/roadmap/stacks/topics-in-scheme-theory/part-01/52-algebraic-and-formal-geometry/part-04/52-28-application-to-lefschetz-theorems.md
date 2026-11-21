@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.28 Application to Lefschetz theorems
 
-Section 52.28 of the Stacks Project, [Tag 0EL0](https://stacks.math.columbia.edu/tag/0EL0). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.28 of the Stacks Project, [Tag 0EL0](https://stacks.math.columbia.edu/tag/0EL0). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EL1, a proposition
 
 [Tag 0EL1](https://stacks.math.columbia.edu/tag/0EL1) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzZeroSchemeComparison.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzZeroSchemeComparison.lean#L73). The attribute's comment: “The tower Qₙ is indexed from n = 0 and Qₙ is cut out by the n-th power of the ideal sheaf of Q = Z(s), which is the ideal sheaf of Z(sⁿ); the zeroth term is empty and does not change the limit. Depth and dimension are compared in the extended integers.”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzZeroSchemeComparison.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzZeroSchemeComparison.lean#L73). The attribute's comment: “The tower Qₙ is indexed from n = 0 and Qₙ is cut out by the n-th power of the ideal sheaf of Q = Z(s), which is the ideal sheaf of Z(sⁿ); the zeroth term is empty and does not change the limit. Depth and dimension are compared in the extended integers.”.
 
 > **Stacks Tag 0EL1.** Let `k` be a field, `P` a proper scheme over `k`, `𝓛` an ample invertible
 > `𝒪_P`-module, `s ∈ Γ(P, 𝓛)` with zero scheme `Q` and `𝓕` a coherent `𝒪_P`-module. If
@@ -38,7 +38,7 @@ theorem isIso_zeroSchemeComparison_of_isProper (k : Type u) [Field k] {X : Schem
 
 [Tag 0EL2](https://stacks.math.columbia.edu/tag/0EL2) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_openComparison_of_depthAddDim_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ZeroSchemeOpenNeighbourhood.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ZeroSchemeOpenNeighbourhood.lean#L378). The attribute's comment: “Gamma(V,F) -> lim Gamma(Y\_n,F\_n) is an isomorphism for every open V containing Y = Z(s), for F coherent on X proper over a field with depth(F\_x) + dim(closure\{x}) > 1 off Y; Gamma is degree-zero cohomology and Y\_n is cut out by the n-th power of the ideal of Y”.
+**`Stacks.Algebraization.isIso_openComparison_of_depthAddDim_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ZeroSchemeOpenNeighbourhood.lean, line 378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ZeroSchemeOpenNeighbourhood.lean#L378). The attribute's comment: “Gamma(V,F) -> lim Gamma(Y\_n,F\_n) is an isomorphism for every open V containing Y = Z(s), for F coherent on X proper over a field with depth(F\_x) + dim(closure\{x}) > 1 off Y; Gamma is degree-zero cohomology and Y\_n is cut out by the n-th power of the ideal of Y”.
 
 > **Stacks Project, Tag 0EL2 (Lemma 52.28.2).** Let `k` be a field, `X` a scheme proper over
 > `k`, `L` an ample invertible `𝒪_X`-module, `s` a global section of `L`, `Y = Z(s)` its zero
@@ -71,7 +71,7 @@ theorem isIso_openComparison_of_depthAddDim_gt (k : Type u) [Field k] {X : Schem
 
 [Tag 0EL3](https://stacks.math.columbia.edu/tag/0EL3) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_isCohenMacaulay_surface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L193). The attribute's comment: “clause (2): on a Cohen-Macaulay proper surface over k, H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism, for E finite locally free and Y the zero scheme of a section of an ample invertible module”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_isCohenMacaulay_surface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L193). The attribute's comment: “clause (2): on a Cohen-Macaulay proper surface over k, H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism, for E finite locally free and Y the zero scheme of a section of an ample invertible module”.
 
 > **Stacks Project, Tag 0EL3 (Example 52.28.3), clause (2).** Let `k` be a field, `X` a proper
 > variety over `k`, `L` an ample invertible `𝒪_X`-module (the source's `𝒪_X(Y)`), `s` a global
@@ -93,7 +93,7 @@ theorem isIso_zeroSchemeComparison_zero_of_isCohenMacaulay_surface
     IsIso (zeroSchemeComparison X L s E 0)
 ```
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_isCohenMacaulay_threefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L214). The attribute's comment: “clause (3): on a Cohen-Macaulay proper threefold over k, H^0(X,E) -> lim H^0(Y\_n,E\_n) and H^1(X,E) -> lim H^1(Y\_n,E\_n) are isomorphisms, for E finite locally free and Y the zero scheme of a section of an ample invertible module”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_isCohenMacaulay_threefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L214). The attribute's comment: “clause (3): on a Cohen-Macaulay proper threefold over k, H^0(X,E) -> lim H^0(Y\_n,E\_n) and H^1(X,E) -> lim H^1(Y\_n,E\_n) are isomorphisms, for E finite locally free and Y the zero scheme of a section of an ample invertible module”.
 
 > **Stacks Project, Tag 0EL3 (Example 52.28.3), clause (3).** In the situation of clause (2),
 > if `X` is a Cohen–Macaulay threefold then both
@@ -113,7 +113,7 @@ theorem isIso_zeroSchemeComparison_of_isCohenMacaulay_threefold
     IsIso (zeroSchemeComparison X L s E 0) ∧ IsIso (zeroSchemeComparison X L s E 1)
 ```
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L239). The attribute's comment: “the normal case: on a normal proper variety over k of dimension at least two (the normal surface of clause (2), the normal threefold of the closing remark), H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/LefschetzCohenMacaulayVariety.lean#L239). The attribute's comment: “the normal case: on a normal proper variety over k of dimension at least two (the normal surface of clause (2), the normal threefold of the closing remark), H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism”.
 
 > **Stacks Project, Tag 0EL3 (Example 52.28.3), the normal case.** In the situation of
 > clause (2), if `X` is normal of dimension at least two, then
@@ -136,7 +136,7 @@ theorem isIso_zeroSchemeComparison_zero_of_isNormal
     IsIso (zeroSchemeComparison X L s E 0)
 ```
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_cohenMacaulaySurface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean#L332). The attribute's comment: “clause (2): on a Cohen-Macaulay (for example normal) surface, H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism; the depth-dimension bound is proved from the Cohen-Macaulay condition and the dimension formula, hin bundles the three inputs of 0EL1”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_zero_of_cohenMacaulaySurface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean#L332). The attribute's comment: “clause (2): on a Cohen-Macaulay (for example normal) surface, H^0(X,E) -> lim H^0(Y\_n,E\_n) is an isomorphism; the depth-dimension bound is proved from the Cohen-Macaulay condition and the dimension formula, hin bundles the three inputs of 0EL1”.
 
 > **Stacks Project, Tag 0EL3 (Example 52.28.3), clause (2).** Let `k` be a field, `X` a proper
 > variety over `k`, `L` an ample invertible `𝒪_X`-module — the source's `𝒪_X(Y)` — `s` a global
@@ -168,7 +168,7 @@ theorem isIso_zeroSchemeComparison_zero_of_cohenMacaulaySurface
     IsIso (zeroSchemeComparison X L s E 0)
 ```
 
-**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_cohenMacaulayThreefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean#L362). The attribute's comment: “clause (3): on a Cohen-Macaulay threefold, H^i(X,E) -> lim H^i(Y\_n,E\_n) is an isomorphism for i = 0 and i = 1; the depth-dimension bound is proved from the Cohen-Macaulay condition and the dimension formula, hin bundles the three inputs of 0EL1”.
+**`Stacks.Algebraization.isIso_zeroSchemeComparison_of_cohenMacaulayThreefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean, line 362](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/SectionPowerAlgebraizationApplications.lean#L362). The attribute's comment: “clause (3): on a Cohen-Macaulay threefold, H^i(X,E) -> lim H^i(Y\_n,E\_n) is an isomorphism for i = 0 and i = 1; the depth-dimension bound is proved from the Cohen-Macaulay condition and the dimension formula, hin bundles the three inputs of 0EL1”.
 
 > **Stacks Project, Tag 0EL3 (Example 52.28.3), clause (3).** In the situation of clause (2),
 > if `X` is a Cohen–Macaulay threefold then both
@@ -203,7 +203,7 @@ theorem isIso_zeroSchemeComparison_of_cohenMacaulayThreefold
 
 [Tag 0EL4](https://stacks.math.columbia.edu/tag/0EL4) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_finite_graded_proIso_completion_of_canonicallyExtends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/GradedAlgebraization.lean, line 746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/GradedAlgebraization.lean#L746).
+**`Stacks.Algebraization.exists_finite_graded_proIso_completion_of_canonicallyExtends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/GradedAlgebraization.lean, line 746](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/GradedAlgebraization.lean#L746).
 
 > **Stacks Project, Tag 0EL4.** In the algebraization situation (Situation 0EHC) let `A` be
 > graded with irrelevant ideal `𝔞 = A₊` and `I` homogeneous, let `(ℱₙ)` be an object of
@@ -252,7 +252,7 @@ public theorem exists_finite_graded_proIso_completion_of_canonicallyExtends
             (tildeCoherentModule S (ModuleCat.of S.A N.carrier) hN)) ≅ F)
 ```
 
-**`Stacks.Algebraization.exists_finite_graded_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzGradedAlgebraization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzGradedAlgebraization.lean#L161). The attribute's comment: “(a) and (b); graded Gm-descent (0EKL) and the 0BK0 comparison hypothesised”.
+**`Stacks.Algebraization.exists_finite_graded_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzGradedAlgebraization.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzGradedAlgebraization.lean#L161). The attribute's comment: “(a) and (b); graded Gm-descent (0EKL) and the 0BK0 comparison hypothesised”.
 
 > In the algebraization situation of a graded ring `A` whose irrelevant ideal is `𝔞` and whose
 > ideal `I` is homogeneous, let `(Mₙ)` be the inverse system of graded modules presenting a coherent
@@ -305,7 +305,7 @@ public theorem exists_finite_graded_algebraization (S : AlgebraizationSituation.
 
 [Tag 0EL5](https://stacks.math.columbia.edu/tag/0EL5) in the Stacks Project.
 
-**`Stacks.Algebraization.satisfiesDepthInequalities_one_two_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean#L464). The attribute's comment: “only the opening step, as an equivalence: the depth hypothesis is the (1, 2)-inequalities, this library's encoding of conditions (b), (c), (d) of 0EJF at d = 1; in the affine Situation 0EHC, with the distance function for dim(closure q) and with cd(A, I) = 1 hypothesised; the conclusion that the system is a completion is not proved”.
+**`Stacks.Algebraization.satisfiesDepthInequalities_one_two_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/DepthInequalitiesCohomologicalDimensionOne.lean#L464). The attribute's comment: “only the opening step, as an equivalence: the depth hypothesis is the (1, 2)-inequalities, this library's encoding of conditions (b), (c), (d) of 0EJF at d = 1; in the affine Situation 0EHC, with the distance function for dim(closure q) and with cd(A, I) = 1 hypothesised; the conclusion that the system is a completion is not proved”.
 
 > In Situation 0EHC let `(ℱ_n)` be an object of `Coh(U, I𝒪_U)` and assume `cd(A, I) = 1`.
 > Then `(ℱ_n)` satisfies the `(1, 2)`-inequalities if and only if
@@ -326,7 +326,7 @@ public theorem satisfiesDepthInequalities_one_two_iff (S : AlgebraizationSituati
           depthAddDimAddDistance S F y z p > ((2 : ℤ) : EInt)
 ```
 
-**`Stacks.Algebraization.isCompletionOfCoherent_of_two_lt_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFormalModuleAlgebraization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFormalModuleAlgebraization.lean#L68).
+**`Stacks.Algebraization.isCompletionOfCoherent_of_two_lt_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFormalModuleAlgebraization.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFormalModuleAlgebraization.lean#L68).
 
 > Let `k` be a field, `P` a proper scheme over `k`, `𝓛` an ample invertible `𝒪_P`-module,
 > `s ∈ Γ(P, 𝓛)` and `𝓘` the ideal of the zero scheme `Q = Z(s)`. Let `(𝓕ₙ)` be an object of
@@ -351,7 +351,7 @@ theorem isCompletionOfCoherent_of_two_lt_depth_add_dim
 
 [Tag 0EL6](https://stacks.math.columbia.edu/tag/0EL6) in the Stacks Project.
 
-**`Stacks.Algebraization.not_two_lt_completedStalkDepth_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L139). The attribute's comment: “clause (1): for a curve or a surface the inequality of 0EL5 fails at every point of Y with nonzero completed stalk and every prime off the completed ideal”.
+**`Stacks.Algebraization.not_two_lt_completedStalkDepth_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L139). The attribute's comment: “clause (1): for a curve or a surface the inequality of 0EL5 fails at every point of Y with nonzero completed stalk and every prime off the completed ideal”.
 
 > Let `X` be a proper variety over a field with an effective Cartier divisor `Y` whose sheaf
 > `𝒪_X(Y)` is ample, and let `(𝓔ₙ)` be an object of `Coh(X, 𝓘)` whose terms are finite locally free
@@ -376,7 +376,7 @@ theorem not_two_lt_completedStalkDepth_of_dim_le_two (f : X ⟶ Spec (.of k))
       krullDimToEInt (dimClosureAt X q)
 ```
 
-**`Stacks.Algebraization.exists_completion_iso_of_hasPropertySk_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L201). The attribute's comment: “clause (3) with the closing remark: dim X >= 3 and X is (S\_3); the freeness of E\_n is read over the infinitesimal neighbourhoods Y\_n”. References: SGA 2 X (2.2), “(ii)”; SGA 2 XII (3.1), “special case”; SGA 2 XII (3.4), “Clause b), special case”.
+**`Stacks.Algebraization.exists_completion_iso_of_hasPropertySk_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L201). The attribute's comment: “clause (3) with the closing remark: dim X >= 3 and X is (S\_3); the freeness of E\_n is read over the infinitesimal neighbourhoods Y\_n”. References: SGA 2 X (2.2), “(ii)”; SGA 2 XII (3.1), “special case”; SGA 2 XII (3.4), “Clause b), special case”.
 
 > Let `X` be a proper variety over a field `k`, `Y ⊂ X` an effective Cartier divisor such that
 > `𝒪_X(Y)` is ample, with ideal sheaf `𝓘`, and `(𝓔ₙ)` an object of `Coh(X, 𝓘)` whose terms are
@@ -399,7 +399,7 @@ theorem exists_completion_iso_of_hasPropertySk_three (f : X ⟶ Spec (.of k))
               (Scheme.Modules.restrict (show X.Modules from G.obj) V.ι)
 ```
 
-**`Stacks.Algebraization.exists_completion_iso_of_isCohenMacaulay_of_dim_eq_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L239). The attribute's comment: “clause (2) with the closing remark: X a Cohen-Macaulay threefold; the freeness of E\_n is read over the infinitesimal neighbourhoods Y\_n”.
+**`Stacks.Algebraization.exists_completion_iso_of_isCohenMacaulay_of_dim_eq_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionAlgebraization.lean#L239). The attribute's comment: “clause (2) with the closing remark: X a Cohen-Macaulay threefold; the freeness of E\_n is read over the infinitesimal neighbourhoods Y\_n”.
 
 > In the situation of `exists_completion_iso_of_hasPropertySk_three`, if `X` is a Cohen–Macaulay
 > threefold then `(𝓔ₙ)` is the completion of a coherent `𝒪_X`-module `𝓔`, finite locally free on an
@@ -420,7 +420,7 @@ theorem exists_completion_iso_of_isCohenMacaulay_of_dim_eq_three (f : X ⟶ Spec
             (Scheme.Modules.restrict (show X.Modules from G.obj) V.ι)
 ```
 
-**`Stacks.Algebraization.isCompletionOfCoherent_of_hasPropertySk_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L213). The attribute's comment: “clause (3): dim X >= 3 and (S\_3); the freeness of E\_n is corrected to be read over Y\_n, since over O\_X it would force E\_n = 0; 0EL5's conclusion and 0A21 hypothesised”.
+**`Stacks.Algebraization.isCompletionOfCoherent_of_hasPropertySk_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L213). The attribute's comment: “clause (3): dim X >= 3 and (S\_3); the freeness of E\_n is corrected to be read over Y\_n, since over O\_X it would force E\_n = 0; 0EL5's conclusion and 0A21 hypothesised”.
 
 > **Stacks Project, Tag 0EL6, clause (3).** Let `X` be a proper variety over a field with an
 > effective Cartier divisor `Y` whose sheaf `𝒪_X(Y)` is ample, and let `(𝓔ₙ)` be an object of
@@ -443,7 +443,7 @@ public theorem isCompletionOfCoherent_of_hasPropertySk_three (f : X ⟶ Spec (.o
     IsCompletionOfCoherent Y E
 ```
 
-**`Stacks.Algebraization.isCompletionOfCoherent_of_isCohenMacaulay_threefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L232). The attribute's comment: “clause (2): a Cohen-Macaulay threefold; the freeness of E\_n is corrected to be read over Y\_n, since over O\_X it would force E\_n = 0; 0EL5 and 0A21 hypothesised”.
+**`Stacks.Algebraization.isCompletionOfCoherent_of_isCohenMacaulay_threefold`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L232). The attribute's comment: “clause (2): a Cohen-Macaulay threefold; the freeness of E\_n is corrected to be read over Y\_n, since over O\_X it would force E\_n = 0; 0EL5 and 0A21 hypothesised”.
 
 > **Stacks Project, Tag 0EL6, clause (2).** In the situation of clause (3), a Cohen–Macaulay
 > threefold satisfies `(S₃)` and has dimension `3`, so `(𝓔ₙ)` is again the completion of a coherent
@@ -465,7 +465,7 @@ public theorem isCompletionOfCoherent_of_isCohenMacaulay_threefold (f : X ⟶ Sp
     IsCompletionOfCoherent Y E
 ```
 
-**`Stacks.Algebraization.exists_isFiniteLocallyFree_neighbourhood_of_isCompletionOfCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L280). The attribute's comment: “closing remark: such an E is finite locally free near Y”.
+**`Stacks.Algebraization.exists_isFiniteLocallyFree_neighbourhood_of_isCompletionOfCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean, line 280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzSerreConditionSpecialCases.lean#L280). The attribute's comment: “closing remark: such an E is finite locally free near Y”.
 
 > **Stacks Project, Tag 0EL6, the closing remark.** If the object `(𝓔ₙ)` is the completion of a
 > coherent `𝒪_X`-module `𝓔`, then `𝓔` is finite locally free on an open neighbourhood of `Y`.
@@ -497,7 +497,7 @@ public theorem exists_isFiniteLocallyFree_neighbourhood_of_isCompletionOfCoheren
 
 [Tag 0EL7](https://stacks.math.columbia.edu/tag/0EL7) in the Stacks Project.
 
-**`Stacks.Algebraization.completionEquivalence_finiteLocallyFree_of_two_lt_depth_add_dimClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFiniteLocallyFreeEquivalence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFiniteLocallyFreeEquivalence.lean#L79). The attribute's comment: “full faithfulness as colim\_W Hom = lim\_n Hom for each V in 𝒱 (0EK2 (4)); the preimage is given on X and is finite locally free on V”.
+**`Stacks.Algebraization.completionEquivalence_finiteLocallyFree_of_two_lt_depth_add_dimClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFiniteLocallyFreeEquivalence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LefschetzFiniteLocallyFreeEquivalence.lean#L79). The attribute's comment: “full faithfulness as colim\_W Hom = lim\_n Hom for each V in 𝒱 (0EK2 (4)); the preimage is given on X and is finite locally free on V”.
 
 > Let `k` be a field, `X` a proper scheme over `k`, `𝓛` an ample invertible `𝒪_X`-module,
 > `s ∈ Γ(X, 𝓛)`, `Y = Z(s)` its zero scheme with sheaf of ideals `𝓘`, and `𝒱` the open subschemes
@@ -541,4 +541,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.28, Tag 0EL0](https://stacks.math.columbia.edu/tag/0EL0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

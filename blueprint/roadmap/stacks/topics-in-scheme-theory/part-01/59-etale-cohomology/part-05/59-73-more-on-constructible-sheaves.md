@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.73 More on constructible sheaves
 
-Section 59.73 of the Stacks Project, [Tag 095M](https://stacks.math.columbia.edu/tag/095M). 14 tags here are carried by 59 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.73 of the Stacks Project, [Tag 095M](https://stacks.math.columbia.edu/tag/095M). 14 tags here are carried by 59 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03S8, a lemma
 
 [Tag 03S8](https://stacks.math.columbia.edu/tag/03S8) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_abelianShriekConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean#L412). The attribute's comment: “part (2), abelian sheaves: an extension by zero of the constant sheaf at a finite abelian group at a quasi-compact quasi-separated etale object is a constructible abelian sheaf”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_abelianShriekConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean#L412). The attribute's comment: “part (2), abelian sheaves: an extension by zero of the constant sheaf at a finite abelian group at a quasi-compact quasi-separated etale object is a constructible abelian sheaf”.
 
 > **Stacks 03S8, part (2).** For an étale morphism `j : U ⟶ X` of quasi-compact and
 > quasi-separated schemes, presented as an object `U` of the small étale site of `X`, and `M` a
@@ -36,7 +36,7 @@ public theorem isConstructibleAbelianSheaf_abelianShriekConstant [Finite M]
           AddCommGrpCat.{u + 1}).obj M))
 ```
 
-**`AlgebraicGeometry.abelianShriekZModIsConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean#L437). The attribute's comment: “part (2) at the finite groups Z/nZ, the form AbelianShriekZModIsConstructible”.
+**`AlgebraicGeometry.abelianShriekZModIsConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean, line 437](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekConstructible.lean#L437). The attribute's comment: “part (2) at the finite groups Z/nZ, the form AbelianShriekZModIsConstructible”.
 
 > **Stacks 03S8, part (2), at the finite abelian groups `Z/nZ`.** The predicate
 > `AlgebraicGeometry.AbelianShriekZModIsConstructible` holds: for every scheme `Y` of `B` that is
@@ -51,7 +51,7 @@ public theorem isConstructibleAbelianSheaf_abelianShriekConstant [Finite M]
 public theorem abelianShriekZModIsConstructible : AbelianShriekZModIsConstructible B
 ```
 
-**`AlgebraicGeometry.isConstructible_sheafifiedYoneda_and_abelianShriekConstant_and_moduleShriek_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekAndRepresentableConstructible.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekAndRepresentableConstructible.lean#L90). The attribute's comment: “the whole tag: part (1) the sheaf of sets represented by a quasi-compact quasi-separated etale object is constructible, part (2) an extension by zero of the constant sheaf at a finite abelian group is a constructible abelian sheaf, part (3) an extension by zero of the constant sheaf at a finite module over a Noetherian commutative ring is a constructible sheaf of modules. Assumed, as in the source: quasi-compactness and quasi-separatedness of X and of U, and for part (3) a Noetherian commutative ring. No IsRightAdjoint or HasWeakSheafify assumption is carried, those instances being inferred here. The single-part registrations of the tag are kept beside it.”.
+**`AlgebraicGeometry.isConstructible_sheafifiedYoneda_and_abelianShriekConstant_and_moduleShriek_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekAndRepresentableConstructible.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekAndRepresentableConstructible.lean#L90). The attribute's comment: “the whole tag: part (1) the sheaf of sets represented by a quasi-compact quasi-separated etale object is constructible, part (2) an extension by zero of the constant sheaf at a finite abelian group is a constructible abelian sheaf, part (3) an extension by zero of the constant sheaf at a finite module over a Noetherian commutative ring is a constructible sheaf of modules. Assumed, as in the source: quasi-compactness and quasi-separatedness of X and of U, and for part (3) a Noetherian commutative ring. No IsRightAdjoint or HasWeakSheafify assumption is carried, those instances being inferred here. The single-part registrations of the tag are kept beside it.”.
 
 > **Stacks 03S8.** Let `X` be a quasi-compact and quasi-separated scheme of a big étale site,
 > `R` a Noetherian commutative ring and `U` a quasi-compact quasi-separated object of the small
@@ -95,7 +95,7 @@ public theorem isConstructible_sheafifiedYoneda_and_abelianShriekConstant_and_mo
         IsConstructibleModuleSheaf B X R (moduleShriek.{u, u + 1, u + 1} B X R U M))
 ```
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_moduleShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekFiniteModuleConstructible.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekFiniteModuleConstructible.lean#L234). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_moduleShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekFiniteModuleConstructible.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekFiniteModuleConstructible.lean#L234). The attribute's comment: “part (3)”.
 
 > **Stacks 03S8, part (3).** Let `X` be a quasi-compact and quasi-separated scheme, `Λ` a
 > Noetherian ring and `M` a finite `Λ`-module. For `U` a quasi-compact and quasi-separated object of
@@ -115,7 +115,7 @@ public theorem isConstructibleModuleSheaf_moduleShriek
     IsConstructibleModuleSheaf B X R (moduleShriek.{u, u + 1, u + 1} B X R U M)
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_sheafifiedYoneda_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean#L137). The attribute's comment: “part (1), sheaves of sets”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_sheafifiedYoneda_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean#L137). The attribute's comment: “part (1), sheaves of sets”.
 
 > **Stacks 03S8, part (1).** For an étale morphism `j : U ⟶ X` of quasi-compact and
 > quasi-separated schemes, presented as an object `U` of the small étale site of `X`, the sheaf
@@ -132,7 +132,7 @@ public theorem isConstructibleSetSheaf_sheafifiedYoneda_of_qcqs
       ((Sheaf.sheafifiedYoneda (SmallEtale.topology B X.obj X.property)).obj U)
 ```
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_moduleShriekConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean#L201). The attribute's comment: “sheaves of modules over a Noetherian commutative ring in an arbitrary universe: an extension by zero of a constant free rank-one module sheaf at a quasi-compact quasi-separated etale object is constructible”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_moduleShriekConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ShriekGeneratorConstructible.lean#L201). The attribute's comment: “sheaves of modules over a Noetherian commutative ring in an arbitrary universe: an extension by zero of a constant free rank-one module sheaf at a quasi-compact quasi-separated etale object is constructible”.
 
 > **Stacks 03S8 for sheaves of modules.** For `U` a quasi-compact quasi-separated object of the
 > small étale site of a quasi-compact quasi-separated scheme `X` and `Λ` a Noetherian commutative
@@ -158,7 +158,7 @@ public theorem isConstructibleModuleSheaf_moduleShriekConstant
 
 [Tag 03SA](https://stacks.math.columbia.edu/tag/03SA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleAbelianSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LocalTorsionColimitOfConstructibles.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LocalTorsionColimitOfConstructibles.lean#L452). The attribute's comment: “part (2), torsion abelian sheaves, torsion in the local sense of Stacks 0DD7”. References: SGA 4½ Arcata (4.3.3), “more general”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleAbelianSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LocalTorsionColimitOfConstructibles.lean, line 452](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LocalTorsionColimitOfConstructibles.lean#L452). The attribute's comment: “part (2), torsion abelian sheaves, torsion in the local sense of Stacks 0DD7”. References: SGA 4½ Arcata (4.3.3), “more general”.
 
 > **Stacks 03SA (2).** Let `X` be a quasi-compact and quasi-separated scheme and let `F` be a
 > torsion abelian sheaf on `X_étale`. Then `F` is a filtered colimit of constructible abelian
@@ -181,7 +181,7 @@ public theorem exists_isFilteredColimit_isConstructibleAbelianSheaf_of_qcqs
         ∀ i, IsConstructibleAbelianSheaf B X (D.obj i)
 ```
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleSetSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L100). The attribute's comment: “part (1), sheaves of sets, with 093C (1) and 03S0 discharged”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleSetSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L101). The attribute's comment: “part (1), sheaves of sets, with 093C (1) and 03S0 discharged”.
 
 > **Stacks 03SA, part (1).** Let `X` be a quasi-compact and quasi-separated scheme and `F` a
 > sheaf of sets on `X_étale`. Then `F` is a filtered colimit of constructible sheaves of sets.
@@ -200,7 +200,7 @@ public theorem exists_isFilteredColimit_isConstructibleSetSheaf_of_qcqs
         ∀ i, IsConstructibleSetSheaf B X (D.obj i)
 ```
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L120). The attribute's comment: “part (3), sheaves of modules, with 093C (2) and 03S8 discharged”. References: SGA 4 XVII (5.5.25.4), “more general”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L121). The attribute's comment: “part (3), sheaves of modules, with 093C (2) and 03S8 discharged”. References: SGA 4 XVII (5.5.25.4), “more general”.
 
 > **Stacks 03SA, part (3).** Let `X` be a quasi-compact and quasi-separated scheme, `Λ` a
 > Noetherian ring and `F` a sheaf of `Λ`-modules on `X_étale`. Then `F` is a filtered colimit of
@@ -220,7 +220,7 @@ public theorem exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs
         ∀ i, IsConstructibleModuleSheaf B X Λ (D.obj i)
 ```
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L214). The attribute's comment: “part (3), sheaves of modules over a Noetherian ring in any universe”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleColimitOfConstructibles.lean#L215). The attribute's comment: “part (3), sheaves of modules over a Noetherian ring in any universe”.
 
 > **Stacks 03SA, part (3), for a coefficient ring in any universe.** Let `X` be a quasi-compact
 > and quasi-separated scheme, `R` a Noetherian ring and `F` a sheaf of `R`-modules on `X_étale`.
@@ -250,7 +250,7 @@ public theorem exists_isFilteredColimit_isConstructibleModuleSheaf_of_small
 
 [Tag 095Q](https://stacks.math.columbia.edu/tag/095Q) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_pullback_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescent.lean#L616). The attribute's comment: “part (2), abelian sheaves”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_pullback_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescent.lean, line 616](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescent.lean#L616). The attribute's comment: “part (2), abelian sheaves”.
 
 > **Stacks 095Q, part (2).** Let `f : X ⟶ Y` be a surjective morphism of quasi-compact and
 > quasi-separated schemes and let `ℱ` be an abelian sheaf on `Y_étale` — arbitrary, with no torsion
@@ -282,7 +282,7 @@ public theorem isConstructibleAbelianSheaf_pullback_iff_of_surjective
       IsConstructibleAbelianSheaf B X ((smallEtaleAbelianPullbackFunctor B f).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_pullback_iff_of_surjective_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescentUnconditional.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescentUnconditional.lean#L178). The attribute's comment: “part (2), abelian sheaves”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_pullback_iff_of_surjective_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescentUnconditional.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianSurjectiveDescentUnconditional.lean#L178). The attribute's comment: “part (2), abelian sheaves”.
 
 > Let `f : X ⟶ Y` be a surjective morphism of quasi-compact and quasi-separated schemes and let
 > `ℱ` be an abelian sheaf on `Y_étale`, with no torsion assumption. Then `ℱ` is constructible if and
@@ -296,7 +296,7 @@ public theorem isConstructibleAbelianSheaf_pullback_iff_of_surjective_general
       IsConstructibleAbelianSheaf B X ((smallEtaleAbelianPullbackFunctor B f).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_pullback_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleSurjectiveDescent.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleSurjectiveDescent.lean#L269). The attribute's comment: “sheaves of modules”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_pullback_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleSurjectiveDescent.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleSurjectiveDescent.lean#L269). The attribute's comment: “sheaves of modules”.
 
 > **Stacks 095Q for sheaves of modules.** Let `f : X ⟶ Y` be a surjective morphism of
 > quasi-compact and quasi-separated schemes, `Λ` a Noetherian ring and `ℱ` a sheaf of `Λ`-modules on
@@ -321,7 +321,7 @@ public theorem isConstructibleModuleSheaf_pullback_iff_of_surjective
       IsConstructibleModuleSheaf B X Λ ((smallEtaleModulePullbackFunctor B Λ f).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_pullback_iff_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/SurjectiveDescent.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/SurjectiveDescent.lean#L352). The attribute's comment: “part (1), sheaves of sets”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_pullback_iff_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/SurjectiveDescent.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/SurjectiveDescent.lean#L352). The attribute's comment: “part (1), sheaves of sets”.
 
 > **Stacks 095Q, part (1).** Let `f : X ⟶ Y` be a surjective morphism of quasi-compact and
 > quasi-separated schemes and let `ℱ` be a sheaf of sets on `Y_étale`. Then `ℱ` is constructible
@@ -352,7 +352,7 @@ public theorem isConstructibleSetSheaf_pullback_iff_unconditional
 
 [Tag 095H](https://stacks.math.columbia.edu/tag/095H) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructible.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructible.lean#L476). The attribute's comment: “sheaves of modules over a Noetherian ring; no hypothesis on S or T”. References: SGA 4 IX (2.14), “(i), special case”; SGA 5 I (1.14), “b)”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructible.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructible.lean#L476). The attribute's comment: “sheaves of modules over a Noetherian ring; no hypothesis on S or T”. References: SGA 4 IX (2.14), “(i), special case”; SGA 5 I (1.14), “b)”.
 
 > **Stacks 095H for sheaves of modules over a Noetherian ring.** Let `p : T ⟶ S` be a finite
 > étale morphism of a big étale site, let `Λ` be a Noetherian ring and let `ℱ` be a constructible
@@ -376,7 +376,7 @@ public theorem isConstructibleModuleSheaf_pushforward
       ((B.smallPushforward p (ModuleCat.{u + 1} Λ)).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean#L149). The attribute's comment: “sheaves of sets; no hypothesis on S or T”. References: SGA 4 IX (2.14), “(i), special case”; SGA 4 XIV (1.1), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XIV (1.5), “special case”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean#L149). The attribute's comment: “sheaves of sets; no hypothesis on S or T”. References: SGA 4 IX (2.14), “(i), special case”; SGA 4 XIV (1.1), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XIV (1.5), “special case”.
 
 > Let `p : T ⟶ S` be a finite étale morphism of a big étale site and let `ℱ` be a
 > constructible sheaf of sets on `T_étale`. Then `p_*ℱ` is a constructible sheaf of sets on
@@ -390,7 +390,7 @@ public theorem isConstructibleSetSheaf_pushforward_unconditional
     IsConstructibleSetSheaf B S ((B.smallPushforward p (Type (u + 1))).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean#L226). The attribute's comment: “sheaves of abelian groups; no hypothesis on S or T, no torsion hypothesis”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_pushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteEtalePushforwardConstructibleUnconditional.lean#L226). The attribute's comment: “sheaves of abelian groups; no hypothesis on S or T, no torsion hypothesis”.
 
 > Let `p : T ⟶ S` be a finite étale morphism of a big étale site and let `ℱ` be a
 > constructible abelian sheaf on `T_étale`. Then `p_*ℱ` is a constructible abelian sheaf on
@@ -409,7 +409,7 @@ public theorem isConstructibleAbelianSheaf_pushforward_unconditional
 
 [Tag 09Y9](https://stacks.math.columbia.edu/tag/09Y9) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_of_hasFiniteQCSRepresentableCoequalizerPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/CoequalizerPresentationConstructible.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/CoequalizerPresentationConstructible.lean#L88). The attribute's comment: “the implication from a finite coequalizer presentation by representables of quasi-compact quasi-separated etale objects to constructibility, for sheaves of sets; the reverse implication, from constructibility to the existence of such a presentation, is not part of this statement”. References: SGA 4 IX (2.7), “Sheaves of sets”; SGA 4 IX (2.7.1), “Sufficiency”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_of_hasFiniteQCSRepresentableCoequalizerPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/CoequalizerPresentationConstructible.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/CoequalizerPresentationConstructible.lean#L88). The attribute's comment: “the implication from a finite coequalizer presentation by representables of quasi-compact quasi-separated etale objects to constructibility, for sheaves of sets; the reverse implication, from constructibility to the existence of such a presentation, is not part of this statement”. References: SGA 4 IX (2.7), “Sheaves of sets”; SGA 4 IX (2.7.1), “Sufficiency”.
 
 > **Stacks 09Y9, the implication from a presentation to constructibility.** Let `X` be a
 > quasi-compact and quasi-separated scheme of a big étale site and let `F` be a sheaf of sets on
@@ -425,7 +425,7 @@ public theorem isConstructibleSetSheaf_of_hasFiniteQCSRepresentableCoequalizerPr
     IsConstructibleSetSheaf B X F
 ```
 
-**`AlgebraicGeometry.exists_finite_representable_epi_of_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean#L328). The attribute's comment: “the surjection half: a constructible sheaf of sets on a quasi-compact quasi-separated scheme is the target of an epimorphism from a finite coproduct of sheaves represented by quasi-compact quasi-separated objects”.
+**`AlgebraicGeometry.exists_finite_representable_epi_of_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean#L328). The attribute's comment: “the surjection half: a constructible sheaf of sets on a quasi-compact quasi-separated scheme is the target of an epimorphism from a finite coproduct of sheaves represented by quasi-compact quasi-separated objects”.
 
 > **Stacks 09Y9, the surjection half.** A constructible sheaf of sets on the small étale site
 > of a quasi-compact and quasi-separated scheme receives an epimorphism from a finite coproduct of
@@ -448,7 +448,7 @@ public theorem exists_finite_representable_epi_of_isConstructibleSetSheaf
         (SmallEtale.topology B X.obj X.property)).obj (U i)) ⟶ F, Epi p
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_iff_hasFiniteQCSRepresentableCoequalizerPresentation_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean#L353). The attribute's comment: “both directions”. References: SGA 4 IX (2.7); SGA 4 IX (2.7.1), “Sufficiency”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_iff_hasFiniteQCSRepresentableCoequalizerPresentation_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean, line 353](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ConstructibleQuasiCompact.lean#L353). The attribute's comment: “both directions”. References: SGA 4 IX (2.7); SGA 4 IX (2.7.1), “Sufficiency”.
 
 > **Stacks Project, Tag 09Y9.** On a quasi-compact and quasi-separated scheme the
 > constructible sheaves of sets on the small étale site are exactly the sheaves admitting a
@@ -475,7 +475,7 @@ public theorem
 
 [Tag 095N](https://stacks.math.columbia.edu/tag/095N) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_iff_qcqsShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean#L674). The attribute's comment: “quasi-compact quasi-separated presentation”. References: SGA 4 IX (2.7), “special case”; SGA 4 IX (2.9), “(ii)”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_iff_qcqsShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean, line 674](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean#L674). The attribute's comment: “quasi-compact quasi-separated presentation”. References: SGA 4 IX (2.7), “special case”; SGA 4 IX (2.9), “(ii)”.
 
 > **Stacks 095N, the quasi-compact quasi-separated presentation.** Let `X` be a quasi-compact and
 > quasi-separated scheme and `Λ` a Noetherian ring. A sheaf of `Λ`-modules on `X_étale` is
@@ -501,7 +501,7 @@ public theorem isConstructibleModuleSheaf_iff_qcqsShriekPresentation
           QuasiSeparatedSpace ((SmallEtale.toScheme B X.1 X.property).obj W)) F
 ```
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_iff_hasFiniteAffineShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean#L693). The attribute's comment: “affine presentation”. References: SGA 4 IX (2.7), “Module sheaves”; SGA 4 IX (2.9), “(ii)”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_iff_hasFiniteAffineShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean, line 693](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ModuleShriekFiniteGeneration.lean#L693). The attribute's comment: “affine presentation”. References: SGA 4 IX (2.7), “Module sheaves”; SGA 4 IX (2.9), “(ii)”.
 
 > **Stacks 095N, the affine presentation.** Let `X` be a quasi-compact and quasi-separated
 > scheme and `Λ` a Noetherian ring. A sheaf of `Λ`-modules on `X_étale` is constructible exactly
@@ -524,7 +524,7 @@ public theorem isConstructibleModuleSheaf_iff_hasFiniteAffineShriekPresentation
 
 [Tag 09YT](https://stacks.math.columbia.edu/tag/09YT) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_hasFiniteZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L674). The attribute's comment: “a constructible abelian sheaf on a quasi-compact quasi-separated scheme is exactly a cokernel of a map between finite direct sums of the sheaves j\_\{U!}(Z/nZ) at quasi-compact quasi-separated etale objects and positive integers n”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_hasFiniteZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 674](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L674). The attribute's comment: “a constructible abelian sheaf on a quasi-compact quasi-separated scheme is exactly a cokernel of a map between finite direct sums of the sheaves j\_\{U!}(Z/nZ) at quasi-compact quasi-separated etale objects and positive integers n”.
 
 > **Stacks 09YT.** Let `X` be a quasi-compact and quasi-separated scheme. An abelian sheaf on the
 > small étale site of `X` is constructible exactly when it is of the form
@@ -547,7 +547,7 @@ public theorem isConstructibleAbelianSheaf_iff_hasFiniteZModShriekPresentation
       HasFiniteZModShriekPresentation B X (IsQCQSEtaleObject B X) F
 ```
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_affineZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L689). The attribute's comment: “the same characterization with the etale objects of the presentation affine, which is the tag's concluding sentence”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_affineZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 689](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L689). The attribute's comment: “the same characterization with the etale objects of the presentation affine, which is the tag's concluding sentence”.
 
 > **Stacks 09YT, the affine form.** "In fact, we can even assume `U_i` and `V_j` affine": the
 > étale objects of the presentation of a constructible abelian sheaf may be taken affine, and a
@@ -565,7 +565,7 @@ public theorem isConstructibleAbelianSheaf_iff_affineZModShriekPresentation
 
 [Tag 09Z4](https://stacks.math.columbia.edu/tag/09Z4) in the Stacks Project.
 
-**`AlgebraicGeometry.IsConstructibleAbelianSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleAbelianViaShriekPresentation.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleAbelianViaShriekPresentation.lean#L67). The attribute's comment: “sheaves of abelian groups”.
+**`AlgebraicGeometry.IsConstructibleAbelianSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleAbelianViaShriekPresentation.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleAbelianViaShriekPresentation.lean#L67). The attribute's comment: “sheaves of abelian groups”.
 
 > **The sheaves-of-abelian-groups case of Stacks 09Z4.** Let `X` be a quasi-compact and
 > quasi-separated scheme and let `F` be a constructible abelian sheaf on `X_étale`. Then morphisms
@@ -586,7 +586,7 @@ public theorem IsConstructibleAbelianSheaf.isFinitelyPresentable
     IsFinitelyPresentable.{u + 1} F
 ```
 
-**`AlgebraicGeometry.IsConstructibleModuleSheaf.isFinitelyPresentable_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesUnconditional.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesUnconditional.lean#L78). The attribute's comment: “sheaves of Λ-modules over an arbitrary Noetherian ring, with the inverse image along small étale base change and the sheafification on the slices proved rather than assumed”.
+**`AlgebraicGeometry.IsConstructibleModuleSheaf.isFinitelyPresentable_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesUnconditional.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesUnconditional.lean#L78). The attribute's comment: “sheaves of Λ-modules over an arbitrary Noetherian ring, with the inverse image along small étale base change and the sheafification on the slices proved rather than assumed”.
 
 > **The sheaves-of-`Λ`-modules case of Stacks 09Z4, with nothing assumed.** Let `X` be a
 > quasi-compact and quasi-separated scheme, let `Λ` be a Noetherian ring and let `F` be a
@@ -606,7 +606,7 @@ public theorem IsConstructibleModuleSheaf.isFinitelyPresentable_unconditional
     IsFinitelyPresentable.{u + 1} F
 ```
 
-**`AlgebraicGeometry.IsConstructibleModuleSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesViaShriekPresentation.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesViaShriekPresentation.lean#L71). The attribute's comment: “sheaves of Λ-modules”.
+**`AlgebraicGeometry.IsConstructibleModuleSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesViaShriekPresentation.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleModulesViaShriekPresentation.lean#L71). The attribute's comment: “sheaves of Λ-modules”.
 
 > **The sheaves-of-`Λ`-modules case of Stacks 09Z4.** Let `X` be a quasi-compact and
 > quasi-separated scheme, let `Λ` be a Noetherian ring and let `F` be a constructible sheaf of
@@ -633,7 +633,7 @@ public theorem IsConstructibleModuleSheaf.isFinitelyPresentable
     IsFinitelyPresentable.{u + 1} F
 ```
 
-**`AlgebraicGeometry.IsConstructibleSetSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleSetsViaPresentation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleSetsViaPresentation.lean#L59). The attribute's comment: “sheaves of sets”.
+**`AlgebraicGeometry.IsConstructibleSetSheaf.isFinitelyPresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleSetsViaPresentation.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Restriction/CompactConstructibleSetsViaPresentation.lean#L59). The attribute's comment: “sheaves of sets”.
 
 > Let `X` be a quasi-compact and quasi-separated scheme and let `F` be a constructible sheaf of
 > sets on `X_étale`. Then morphisms out of `F` commute with filtered colimits of sheaves of sets:
@@ -651,7 +651,7 @@ public theorem IsConstructibleSetSheaf.isFinitelyPresentable
 
 [Tag 095R](https://stacks.math.columbia.edu/tag/095R) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforward.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforward.lean#L153). The attribute's comment: “sheaves of sets”. References: SGA 4 IX (2.14), “(i), sets variant”; SGA 4 XIV (1.1), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XIV (1.5), “special case”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforward.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforward.lean#L153). The attribute's comment: “sheaves of sets”. References: SGA 4 IX (2.14), “(i), sets variant”; SGA 4 XIV (1.1), “special case”; SGA 4 XIV (1.11), “partial”; SGA 4 XIV (1.5), “special case”.
 
 > **Stacks 095R for sheaves of sets.** Let `p : T ⟶ S` be a finite morphism of finite
 > presentation of a big étale site and let `ℱ` be a constructible sheaf of sets on `T_étale`. Then
@@ -676,7 +676,7 @@ public theorem isConstructibleSetSheaf_pushforward_of_isFinite {T S : B.Scheme} 
     IsConstructibleSetSheaf B S ((B.smallPushforward p (Type (u + 1))).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_pushforward_of_isFinite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean#L432). The attribute's comment: “abelian groups”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_pushforward_of_isFinite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean, line 432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean#L432). The attribute's comment: “abelian groups”.
 
 > **[Stacks, Tag 095R], abelian sheaves.** Let `f : T ⟶ S` be a finite and finitely presented
 > morphism of a big étale site. If `ℱ` is a constructible abelian sheaf on `T_étale`, then `f_*ℱ`
@@ -690,7 +690,7 @@ theorem isConstructibleAbelianSheaf_pushforward_of_isFinite_of_finitePresentatio
     IsConstructibleAbelianSheaf B S ((B.smallPushforward f AddCommGrpCat.{u + 1}).obj F)
 ```
 
-**`AlgebraicGeometry.isConstructibleModuleSheaf_pushforward_of_isFinite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean#L509). The attribute's comment: “sheaves of Λ-modules, Λ Noetherian”. References: SGA 4 IX (2.14), “(i), A-module variant”; SGA 5 I (1.14), “b)”.
+**`AlgebraicGeometry.isConstructibleModuleSheaf_pushforward_of_isFinite_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean, line 509](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FinitePresentationPushforwardModules.lean#L509). The attribute's comment: “sheaves of Λ-modules, Λ Noetherian”. References: SGA 4 IX (2.14), “(i), A-module variant”; SGA 5 I (1.14), “b)”.
 
 > **[Stacks, Tag 095R], sheaves of modules.** Let `f : T ⟶ S` be a finite and finitely
 > presented morphism of a big étale site and let `Λ` be a Noetherian ring. If `ℱ` is a
@@ -705,7 +705,7 @@ theorem isConstructibleModuleSheaf_pushforward_of_isFinite_of_finitePresentation
     IsConstructibleModuleSheaf B S Λ ((B.smallPushforward f (ModuleCat.{u + 1} Λ)).obj F)
 ```
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/FiniteDirectImage.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/FiniteDirectImage.lean#L241). The attribute's comment: “sheaves of Λ-modules, Λ a Noetherian ring in Type, on Mathlib's small étale site (IsBigSiteConstructibleEtaleModule); f finite and of finite presentation, no hypothesis on X or Y”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/FiniteDirectImage.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleSheaves/FiniteDirectImage.lean#L241). The attribute's comment: “sheaves of Λ-modules, Λ a Noetherian ring in Type, on Mathlib's small étale site (IsBigSiteConstructibleEtaleModule); f finite and of finite presentation, no hypothesis on X or Y”.
 
 > **Finite direct image preserves constructibility.** Let `Λ : Type` be a Noetherian ring and
 > `f : X ⟶ Y` a finite morphism of finite presentation of `B`. If `ℱ` is a constructible sheaf of
@@ -719,7 +719,7 @@ theorem isConstructibleEtaleModule_directImage_of_isFinite {X Y : B.Scheme} (f :
       ((etaleModuleDirectImage.{u, 0} Λ (B.inclusion.map f)).obj F)
 ```
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_etaleModuleDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LowerShriekAffineLine/ConstructibleDescent.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LowerShriekAffineLine/ConstructibleDescent.lean#L275). The attribute's comment: “sheaves of modules over a Noetherian ring”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_etaleModuleDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LowerShriekAffineLine/ConstructibleDescent.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LowerShriekAffineLine/ConstructibleDescent.lean#L275). The attribute's comment: “sheaves of modules over a Noetherian ring”.
 
 > **Stacks 095R for sheaves of modules, in the model `EtaleModules`.** Let `f : X ⟶ Y` be a
 > finite morphism of finite presentation, `Λ` a Noetherian ring and `ℱ` a constructible sheaf of
@@ -742,7 +742,7 @@ theorem isConstructibleEtaleModule_etaleModuleDirectImage_of_isFinite {X Y : Sch
     IsConstructibleEtaleModule Λ ((etaleModuleDirectImage.{u, u + 1} Λ f).obj F)
 ```
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleAbelianSheaf_etaleAbelianDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianConstructibleImages.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianConstructibleImages.lean#L119). The attribute's comment: “sheaves of abelian groups”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleAbelianSheaf_etaleAbelianDirectImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianConstructibleImages.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/AbelianConstructibleImages.lean#L119). The attribute's comment: “sheaves of abelian groups”.
 
 > **[Stacks, Tag 095R], for sheaves of abelian groups.** Let `f : X ⟶ Y` be a finite morphism
 > of finite presentation and `F` a constructible abelian sheaf on `X_étale`. Then `f_* F` is
@@ -771,7 +771,7 @@ theorem isConstructibleEtaleAbelianSheaf_etaleAbelianDirectImage_of_isFinite {X 
 
 [Tag 09YU](https://stacks.math.columbia.edu/tag/09YU) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleStagesFull_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L62). The attribute's comment: “clause (2), the fullness assertion”.
+**`AlgebraicGeometry.smallEtaleStagesFull_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L62). The attribute's comment: “clause (2), the fullness assertion”.
 
 > **Stacks 09YU, clause (2), the fullness assertion.**
 
@@ -784,7 +784,7 @@ theorem smallEtaleStagesFull_isConstructibleAbelianSheaf_unconditional (hc : IsL
       (fun Y => IsConstructibleAbelianSheaf B Y)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L77). The attribute's comment: “clause (2), the essential surjectivity assertion”.
+**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L77). The attribute's comment: “clause (2), the essential surjectivity assertion”.
 
 > **Stacks 09YU, clause (2), the essential surjectivity assertion.** Every constructible abelian
 > sheaf on `X_étale` is isomorphic to the inverse image of a constructible abelian sheaf on some
@@ -799,7 +799,7 @@ theorem smallEtaleStagesEssSurj_isConstructibleAbelianSheaf_unconditional (hc : 
       (fun Y => IsConstructibleAbelianSheaf B Y)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L126). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleAbelianSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/AbelianLimit.lean#L126). The attribute's comment: “clause (2)”.
 
 > **Stacks 09YU, clause (2).** Let `X = lim X_i` be the limit of a directed inverse system of
 > schemes with affine transition morphisms, each `X_i` quasi-compact and quasi-separated. The
@@ -816,7 +816,7 @@ theorem smallEtaleStagesColimit_isConstructibleAbelianSheaf_unconditional (hc : 
       (fun Y => IsConstructibleAbelianSheaf B Y)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean#L77). The attribute's comment: “clause (3), the essential surjectivity assertion”. References: SGA 4 IX (2.7.4), “partial, special case”.
+**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean#L77). The attribute's comment: “clause (3), the essential surjectivity assertion”. References: SGA 4 IX (2.7.4), “partial, special case”.
 
 > **Stacks 09YU, clause (3), the essential surjectivity assertion.** Let `X = lim X_i` be the
 > limit of a directed inverse system of quasi-compact and quasi-separated schemes with affine
@@ -839,7 +839,7 @@ theorem smallEtaleStagesEssSurj_isConstructibleModuleSheaf [IsNoetherianRing Λ]
       (fun Y => IsConstructibleModuleSheaf B Y Λ)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean#L173). The attribute's comment: “clause (3)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleEssSurj.lean#L173). The attribute's comment: “clause (3)”.
 
 > **Stacks 09YU, clause (3).** Let `X = lim X_i` be the limit of a directed inverse system of
 > schemes with affine transition morphisms, each `X_i` quasi-compact and quasi-separated, and let `Λ`
@@ -862,7 +862,7 @@ theorem smallEtaleStagesColimit_isConstructibleModuleSheaf [IsNoetherianRing Λ]
       (fun Y => IsConstructibleModuleSheaf B Y Λ)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesFull_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleFullness.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleFullness.lean#L217). The attribute's comment: “clause (3), the fullness assertion”. References: SGA 4 IX (2.7.4), “partial”.
+**`AlgebraicGeometry.smallEtaleStagesFull_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleFullness.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/LimitCategory/ModuleFullness.lean#L217). The attribute's comment: “clause (3), the fullness assertion”. References: SGA 4 IX (2.7.4), “partial”.
 
 > **Stacks 09YU, clause (3), the fullness assertion.** Let `X = lim X_i` be the limit of a
 > directed inverse system of quasi-compact and quasi-separated schemes with affine transition
@@ -884,7 +884,7 @@ theorem smallEtaleStagesFull_isConstructibleModuleSheaf [IsNoetherianRing Λ] (h
       (fun Y => IsConstructibleModuleSheaf B Y Λ)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageColimitCompletion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageColimitCompletion.lean#L166). The attribute's comment: “clause (2), the faithfulness assertion”.
+**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageColimitCompletion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageColimitCompletion.lean#L166). The attribute's comment: “clause (2), the faithfulness assertion”.
 
 > **Stacks 09YU, clause (2), the faithfulness assertion.** Let `X = lim X_i` be the limit of a
 > directed inverse system of quasi-compact and quasi-separated schemes with affine transition
@@ -906,7 +906,7 @@ public theorem smallEtaleStagesFaithful_isConstructibleAbelianSheaf (hc : IsLimi
       (fun Y => IsConstructibleAbelianSheaf B Y)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageConstructibleSetSheafDescent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageConstructibleSetSheafDescent.lean#L454). The attribute's comment: “clause (1), the essential surjectivity assertion”. References: SGA 4 IX (2.7.4), “partial, special case”.
+**`AlgebraicGeometry.smallEtaleStagesEssSurj_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageConstructibleSetSheafDescent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageConstructibleSetSheafDescent.lean#L454). The attribute's comment: “clause (1), the essential surjectivity assertion”. References: SGA 4 IX (2.7.4), “partial, special case”.
 
 > **Stacks 09YU, clause (1), the essential surjectivity assertion.** Let `X = lim X_i` be the
 > limit of a directed inverse system of quasi-compact and quasi-separated schemes with affine
@@ -931,7 +931,7 @@ public theorem smallEtaleStagesEssSurj_isConstructibleSetSheaf (hc : IsLimit c)
       (fun X => IsConstructibleSetSheaf B X)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulness.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulness.lean#L218). The attribute's comment: “clause (1), the faithfulness assertion”.
+**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulness.lean, line 218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulness.lean#L218). The attribute's comment: “clause (1), the faithfulness assertion”.
 
 > **Stacks 09YU, clause (1), the faithfulness assertion.** Let `X = lim X_i` be the limit of a
 > directed inverse system of quasi-compact and quasi-separated schemes with affine transition
@@ -953,7 +953,7 @@ public theorem smallEtaleStagesFaithful_isConstructibleSetSheaf (hc : IsLimit c)
       (fun Y => IsConstructibleSetSheaf B Y)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulnessModules.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulnessModules.lean#L172). The attribute's comment: “clause (3), the faithfulness assertion”.
+**`AlgebraicGeometry.smallEtaleStagesFaithful_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulnessModules.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFaithfulnessModules.lean#L172). The attribute's comment: “clause (3), the faithfulness assertion”.
 
 > **Stacks 09YU, clause (3), the faithfulness assertion.** Let `X = lim X_i` be the limit of a
 > directed inverse system of quasi-compact and quasi-separated schemes with affine transition
@@ -975,7 +975,7 @@ public theorem smallEtaleStagesFaithful_isConstructibleModuleSheaf (hc : IsLimit
       (fun Y => IsConstructibleModuleSheaf B Y Λ)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullness.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullness.lean#L1073). The attribute's comment: “clause (1)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleSetSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullness.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullness.lean#L1073). The attribute's comment: “clause (1)”.
 
 > **Stacks 09YU, clause (1).** Let `X = lim X_i` be the limit of a directed inverse system of
 > quasi-compact and quasi-separated schemes with affine transition morphisms inside a big étale
@@ -995,7 +995,7 @@ public theorem smallEtaleStagesColimit_isConstructibleSetSheaf (hc : IsLimit c)
     SmallEtaleStagesColimit B (Type (u + 1)) Dg c hX (fun X => IsConstructibleSetSheaf B X)
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullnessAbelian.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullnessAbelian.lean#L1049). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isConstructibleAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullnessAbelian.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageFullnessAbelian.lean#L1049). The attribute's comment: “clause (2)”.
 
 > **Stacks 09YU, clause (2).** Let `X = lim X_i` be the limit of a directed inverse system of
 > quasi-compact and quasi-separated schemes with affine transition morphisms inside a big étale
@@ -1017,7 +1017,7 @@ public theorem smallEtaleStagesColimit_isConstructibleAbelianSheaf [Nonempty I]
       (fun Y => IsConstructibleAbelianSheaf B Y)
 ```
 
-**`AlgebraicGeometry.exists_stage_isConstructibleSetSheaf_iso_sheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageRepresentableEssSurj.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageRepresentableEssSurj.lean#L152). The attribute's comment: “clause (1), the essential surjectivity assertion for the sheaves represented by a quasi-compact and quasi-separated object of the small etale site, which is the case the source's proof reduces that assertion to”.
+**`AlgebraicGeometry.exists_stage_isConstructibleSetSheaf_iso_sheafifiedYoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageRepresentableEssSurj.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/StageRepresentableEssSurj.lean#L152). The attribute's comment: “clause (1), the essential surjectivity assertion for the sheaves represented by a quasi-compact and quasi-separated object of the small etale site, which is the case the source's proof reduces that assertion to”.
 
 > **Stacks 09YU, clause (1), the essential surjectivity assertion for a representable sheaf.**
 > Let `X = lim X_i` be the limit of a directed inverse system of quasi-compact and quasi-separated
@@ -1051,7 +1051,7 @@ public theorem exists_stage_isConstructibleSetSheaf_iso_sheafifiedYoneda (hc : I
 
 [Tag 0GL2](https://stacks.math.columbia.edu/tag/0GL2) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteLocallyConstant_type`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L68). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteLocallyConstant_type`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L68). The attribute's comment: “part (1)”.
 
 > **Stacks Tag 0GL2, clause (1).** Let `X = lim X_i` be the limit of a directed inverse system
 > of quasi-compact, quasi-separated schemes with affine transition morphisms. The category of
@@ -1068,7 +1068,7 @@ public theorem smallEtaleStagesColimit_isFiniteLocallyConstant_type (hc : IsLimi
       (isFiniteLocallyConstantSmallEtaleSheaf B (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteLocallyConstant_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L83). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteLocallyConstant_addCommGrpCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L83). The attribute's comment: “part (2)”.
 
 > **Stacks Tag 0GL2, clause (2).** Let `X = lim X_i` be the limit of a directed inverse system
 > of quasi-compact, quasi-separated schemes with affine transition morphisms. The category of
@@ -1084,7 +1084,7 @@ public theorem smallEtaleStagesColimit_isFiniteLocallyConstant_addCommGrpCat (hc
       (isFiniteLocallyConstantSmallEtaleSheaf B AddCommGrpCat.{u + 1})
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteTypeLocallyConstant_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L101). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.smallEtaleStagesColimit_isFiniteTypeLocallyConstant_moduleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLocallyConstantLimitColimit.lean#L101). The attribute's comment: “part (3)”.
 
 > **Stacks Tag 0GL2, clause (3).** Let `X = lim X_i` be the limit of a directed inverse system
 > of quasi-compact, quasi-separated schemes with affine transition morphisms and let `Λ` be a
@@ -1106,7 +1106,7 @@ public theorem smallEtaleStagesColimit_isFiniteTypeLocallyConstant_moduleCat
 
 [Tag 09BG](https://stacks.math.columbia.edu/tag/09BG) in the Stacks Project.
 
-**`AlgebraicGeometry.constantSetSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L161). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.constantSetSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L161). The attribute's comment: “part (1)”.
 
 > **Stacks 09BG (1).** A subsheaf of a constant sheaf of sets on an irreducible scheme which
 > contains the constant subsheaf on its geometric generic stalk is that constant subsheaf.
@@ -1124,7 +1124,7 @@ public theorem constantSetSubsheaf_eq_of_genericStalk
     IsIso i
 ```
 
-**`AlgebraicGeometry.constantAbelianSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L180). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.constantAbelianSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L180). The attribute's comment: “part (2)”.
 
 > **Stacks 09BG (2).** A subsheaf of a constant sheaf of abelian groups on an irreducible
 > scheme which contains the constant subsheaf on its geometric generic stalk is that constant
@@ -1143,7 +1143,7 @@ public theorem constantAbelianSubsheaf_eq_of_genericStalk
     IsIso i
 ```
 
-**`AlgebraicGeometry.constantModuleSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L198). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.constantModuleSubsheaf_eq_of_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean, line 198](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSubsheafGenericStalk.lean#L198). The attribute's comment: “part (3)”.
 
 > **Stacks 09BG (3).** A subsheaf of a constant sheaf of modules on an irreducible scheme which
 > contains the constant subsheaf on its geometric generic stalk is that constant subsheaf.
@@ -1165,7 +1165,7 @@ public theorem constantModuleSubsheaf_eq_of_genericStalk (Λ : Type (u + 1)) [Ri
 
 [Tag 09Z5](https://stacks.math.columbia.edu/tag/09Z5) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_constantSheafPushforwardComparison_genericPointInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L419). The attribute's comment: “part (1)”. References: SGA 4 IX (2.14.1), “special case”; SGA 7 VIII (5.1), “special case”.
+**`Stacks.EtaleCohomology.isIso_constantSheafPushforwardComparison_genericPointInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L419). The attribute's comment: “part (1)”. References: SGA 4 IX (2.14.1), “special case”; SGA 7 VIII (5.1), “special case”.
 
 > On an integral normal scheme the direct image of a constant sheaf
 > of sets along the inclusion of the generic point is the constant sheaf: the canonical comparison
@@ -1177,7 +1177,7 @@ theorem isIso_constantSheafPushforwardComparison_genericPointInclusion (X : Sche
     IsIso (constantSheafPushforwardComparison.{u, v} (genericPointInclusion X) E)
 ```
 
-**`Stacks.EtaleCohomology.constantSheafGenericPointPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L435). The attribute's comment: “part (1)”. References: SGA 4 IX (2.14.1), “special case”; SGA 7 VIII (5.1), “special case”.
+**`Stacks.EtaleCohomology.constantSheafGenericPointPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L435). The attribute's comment: “part (1)”. References: SGA 4 IX (2.14.1), “special case”; SGA 7 VIII (5.1), “special case”.
 
 > The identification `g_* E̲ = E̲` of the direct image of a constant
 > sheaf of sets along the inclusion `g : Spec K ⟶ X` of the generic point of an integral normal
@@ -1192,7 +1192,7 @@ def constantSheafGenericPointPushforwardIso (X : Scheme.{u})
           (Type (max (u + 1) v))).obj E)
 ```
 
-**`Stacks.EtaleCohomology.isIso_constantSheafPushforwardComparison_opensIota`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L448). The attribute's comment: “part (2)”.
+**`Stacks.EtaleCohomology.isIso_constantSheafPushforwardComparison_opensIota`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L448). The attribute's comment: “part (2)”.
 
 > On an integral normal scheme the direct image of a constant sheaf
 > of sets along the inclusion of a nonempty open subscheme is the constant sheaf: the canonical
@@ -1205,7 +1205,7 @@ theorem isIso_constantSheafPushforwardComparison_opensIota {X : Scheme.{u}}
     IsIso (constantSheafPushforwardComparison.{u, v} U.ι E)
 ```
 
-**`Stacks.EtaleCohomology.constantSheafOpensPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L463). The attribute's comment: “part (2)”.
+**`Stacks.EtaleCohomology.constantSheafOpensPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean, line 463](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstantSheafPushforwardNormal.lean#L463). The attribute's comment: “part (2)”.
 
 > The identification `j_* E̲ = E̲` of the direct image of a constant
 > sheaf of sets along the inclusion `j : U ⟶ X` of a nonempty open subscheme of an integral normal
@@ -1223,7 +1223,7 @@ def constantSheafOpensPushforwardIso {X : Scheme.{u}} [AlgebraicGeometry.IsInteg
 
 [Tag 0F0M](https://stacks.math.columbia.edu/tag/0F0M) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleAbelianSheaf_support_notMem_of_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean#L195). The attribute's comment: “part (1), torsion abelian sheaves: every local section is locally annihilated by a positive integer”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleAbelianSheaf_support_notMem_of_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean#L195). The attribute's comment: “part (1), torsion abelian sheaves: every local section is locally annihilated by a positive integer”.
 
 > **Stacks 0F0M (1).** Let `X` be a quasi-compact and quasi-separated scheme and let `η` be a
 > generic point of an irreducible component of `X`. Let `ℱ` be a torsion abelian sheaf on `X_étale`
@@ -1258,7 +1258,7 @@ public theorem exists_isFilteredColimit_isConstructibleAbelianSheaf_support_notM
             supportSheaf.{u, u + 1} B X.obj X.property (G.obj j) ⊆ Z
 ```
 
-**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_support_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean#L301). The attribute's comment: “part (2), sheaves of modules over a Noetherian ring”.
+**`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_support_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean, line 301](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/ZeroStalkAtGenericPointColimit.lean#L301). The attribute's comment: “part (2), sheaves of modules over a Noetherian ring”.
 
 > **Stacks 0F0M (2).** Let `X` be a quasi-compact and quasi-separated scheme, let `η` be a
 > generic point of an irreducible component of `X` and let `Λ` be a Noetherian ring. Let `ℱ` be a
@@ -1298,4 +1298,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.73, Tag 095M](https://stacks.math.columbia.edu/tag/095M)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -7,11 +7,11 @@ proof: formalized
 
 # Stlc/StrongNorm
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean), by David Wegmann.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean), by David Wegmann.
 
 > Strong normalization (termination) for full beta-reduction of simply typed lambda calculus.
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.Saturated` (structure, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L39))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.Saturated` (structure, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L39))
 
 > A set of terms is called saturated if it
 >
@@ -28,7 +28,7 @@ structure Saturated (S : Set (Term Var)) : Prop where
   multiApp : ∀ M N P, LC N → SN FullBeta N → multiApp (M ^ N) P ∈ S → multiApp (M.abs.app N) P ∈ S
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L53))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L53))
 
 > The semantic map maps each type to a corresponding saturated set of terms.
 > For the strong normalization proof to work, we must ensure that
@@ -41,7 +41,7 @@ structure Saturated (S : Set (Term Var)) : Prop where
 def semanticMap : Ty Base → Set (Term Var)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap_saturated` (lemma, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L58))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.semanticMap_saturated` (lemma, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L58))
 
 > The sets constructed by semanticMap are saturated
 
@@ -49,7 +49,7 @@ def semanticMap : Ty Base → Set (Term Var)
 lemma semanticMap_saturated (τ : Ty Base) : @Saturated Var (semanticMap τ)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L73))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext` (abbreviation, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L73))
 
 > The `entailsContext` predicate ensures that each variable in the context
 > is mapped to a term in the corresponding semantic map.
@@ -58,7 +58,7 @@ lemma semanticMap_saturated (τ : Ty Base) : @Saturated Var (semanticMap τ)
 abbrev entailsContext (E : Term.Env Var) (Γ : Context Var (Ty Base))
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_empty` (lemma, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L77))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_empty` (lemma, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L77))
 
 > The empty context is entailed by any environment.
 
@@ -66,7 +66,7 @@ abbrev entailsContext (E : Term.Env Var) (Γ : Context Var (Ty Base))
 lemma entailsContext_empty {Γ : Context Var (Ty Base)} : entailsContext [] Γ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_cons` (lemma, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L86))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.entailsContext_cons` (lemma, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L86))
 
 > The `entailsContext` predicate is preserved when extending the context
 > with a new variable, provided the new variable is fresh and its
@@ -80,7 +80,7 @@ lemma entailsContext_cons (E : Term.Env Var) (Γ : Context Var (Ty Base))
     entailsContext E Γ → entailsContext (⟨ x, sub ⟩ :: E) (⟨ x, τ ⟩ :: Γ)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.entails` (abbreviation, [line 95](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L95))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.entails` (abbreviation, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L95))
 
 > The `entails` predicate states that a term `t` is
 > semantically valid with respect to a context `Γ` and a type `τ`
@@ -89,7 +89,7 @@ lemma entailsContext_cons (E : Term.Env Var) (Γ : Context Var (Ty Base))
 abbrev entails (Γ : Context Var (Ty Base)) (t : Term Var) (τ : Ty Base)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.soundness` (lemma, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L100))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.soundness` (lemma, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L100))
 
 > The `soundness` lemma states that if a term `t` has type `τ` in context `Γ`,
 > then `t` is semantically valid with respect to `Γ` and `τ`
@@ -98,7 +98,7 @@ abbrev entails (Γ : Context Var (Ty Base)) (t : Term Var) (τ : Ty Base)
 lemma soundness {Γ : Context Var (Ty Base)} (derivation_t : Γ ⊢ t ∶ τ) : entails Γ t τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Stlc.strong_norm` (theorem, [line 117](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L117))
+`Cslib.LambdaCalculus.LocallyNameless.Stlc.strong_norm` (theorem, [line 117](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean#L117))
 
 > Using soundness and the fact that the empty context
 > is entailed by any environment, we can conclude that
@@ -116,5 +116,5 @@ theorem strong_norm {t : Term Var} {τ : Ty Base} (der : Γ ⊢ t ∶ τ) : SN F
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm.json)

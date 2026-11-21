@@ -30,7 +30,7 @@ statement: formalized
 > - [KS00] J. P. Keating, N. C. Snaith, *Random matrix theory and $\zeta(1/2+it)$*, Commun. Math.
 >   Phys. 214 (2000), no. 1, 57–89.
 
-*Quoted from [FormalConjectures/Paper/RiemannZetaMoments.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/RiemannZetaMoments.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 4 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -52,7 +52,7 @@ theorem moment_isEquiv (k : ℕ) : ∃ c > (0 : ℝ),
     moment k ~[atTop] fun T ↦ c * T.log ^ (k ^ 2)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L70).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L70).
 
 ## `RiemannZetaMoments.moment_isEquiv₁`
 
@@ -65,7 +65,7 @@ Solved: stated here without proof.
 theorem moment_isEquiv₁ : moment 1 ~[atTop] fun T ↦ T.log
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L77).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L77).
 
 ## `RiemannZetaMoments.moment_isEquiv₂`
 
@@ -78,7 +78,7 @@ Solved: stated here without proof.
 theorem moment_isEquiv₂ : moment 2 ~[atTop] fun T ↦ (1 / (2 * π ^ 2)) * T.log ^ 4
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L83).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L83).
 
 ## `RiemannZetaMoments.moment_isEquiv₃`
 
@@ -91,7 +91,7 @@ Open: stated without proof.
 theorem moment_isEquiv₃ : moment 3 ~[atTop] fun T ↦ 42 * arithmeticFactor 3 / 9 ! * T.log ^ 9
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L109).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L109).
 
 ## `RiemannZetaMoments.moment_isEquiv₄`
 
@@ -105,7 +105,7 @@ theorem moment_isEquiv₄ :
     moment 4 ~[atTop] fun T ↦ 24024 * arithmeticFactor 4 / 16 ! * T.log ^ 16
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L115).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 115](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L115).
 
 ## `RiemannZetaMoments.moment_isEquivₖ`
 
@@ -120,7 +120,7 @@ theorem moment_isEquivₖ (k : ℕ) : moment k ~[atTop]
       T.log ^ (k ^ 2)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean#L122).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannZetaMoments.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean#L122).
 
 ## Depends on
 
@@ -128,5 +128,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/RiemannZetaMoments.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannZetaMoments.lean)
+- [FormalConjectures/Paper/RiemannZetaMoments.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannZetaMoments.lean)
 - [arXiv:2602.04022](https://arxiv.org/abs/2602.04022)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.centered_ofVec_apply, ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered_ofVec, ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofVec, ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_ofVec, ProbabilisticTheory.UnitalPositiveLinearMap.fluctuation, ProbabilisticTheory.UnitalPositiveLinearMap.gram_fluctuation, ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_fluctuation, ProbabilisticTheory.UnitalPositiveLinearMap.gram_mulVec_eq_zero_iff
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_ofVec_apply, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered_ofVec, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofVec, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_ofVec, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.fluctuation, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_fluctuation, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_fluctuation, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_mulVec_eq_zero_iff
 statement: formalized
 proof: formalized
 ---
 
 # Uncertainty in vector states
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.VectorUncertainty`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.VectorUncertainty`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean): 9 declarations, 9 with a docstring.
 
 > Variance and uncertainty defect in a vector state via fluctuation vectors `a ψ - ⟨a⟩ ψ`.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.VectorUncertaint
 
 ## A. Fluctuation vectors in vector states
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.centered_ofVec_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centered_ofVec_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L72).
 
 > The fluctuation vector `a ψ - ⟨a⟩ ψ` is the centered observable applied to `ψ`.
 
@@ -52,7 +52,7 @@ lemma centered_ofVec_apply (h : ‖ψ‖ = 1) (a : Observable (H →L[ℂ] H)) :
     (centered (ofVec h) a : H →L[ℂ] H) ψ = (a : H →L[ℂ] H) ψ - (ofVec h)⟨a⟩ • ψ
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered_ofVec`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.apply_centered_mul_centered_ofVec`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L79).
 
 > The state of a product of centered observables is the inner product of the two fluctuation
 > vectors.
@@ -63,7 +63,7 @@ lemma apply_centered_mul_centered_ofVec (h : ‖ψ‖ = 1) (a b : Observable (H 
       ⟪(a : H →L[ℂ] H) ψ - (ofVec h)⟨a⟩ • ψ, (b : H →L[ℂ] H) ψ - (ofVec h)⟨b⟩ • ψ⟫_ℂ
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofVec`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L87).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofVec`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L87).
 
 > The variance in a vector state is the squared norm of the fluctuation vector.
 
@@ -72,7 +72,7 @@ lemma variance_ofVec (h : ‖ψ‖ = 1) (a : Observable (H →L[ℂ] H)) :
     variance (ofVec h) a = ‖(a : H →L[ℂ] H) ψ - (ofVec h)⟨a⟩ • ψ‖ ^ 2
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_ofVec`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L94).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.centeredGramDefect_ofVec`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L94).
 
 > The centered Gram defect of a vector state is the Cauchy–Schwarz defect of the two
 > fluctuation vectors.
@@ -86,7 +86,7 @@ lemma centeredGramDefect_ofVec (h : ‖ψ‖ = 1) (a b : Observable (H →L[ℂ]
 
 ## B. Equality in Robertson's relation for several observables
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.fluctuation`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L112).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.fluctuation`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L112).
 
 > The fluctuation vector `a ψ - ⟨a⟩ ψ` of an observable in a vector state.
 
@@ -94,7 +94,7 @@ lemma centeredGramDefect_ofVec (h : ‖ψ‖ = 1) (a b : Observable (H →L[ℂ]
 noncomputable def fluctuation (h : ‖ψ‖ = 1) (a : Observable (H →L[ℂ] H)) : H
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.gram_fluctuation`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L116).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_fluctuation`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L116).
 
 > In a vector state, `Σ + iΩ` is the Gram matrix of the fluctuation vectors.
 
@@ -105,7 +105,7 @@ lemma gram_fluctuation (h : ‖ψ‖ = 1) (a : ι → Observable (H →L[ℂ] H)
         Complex.I • (bracketMatrix (ofVec h) a).map ((↑) : ℝ → ℂ)
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_fluctuation`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.transpose_gram_fluctuation`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L126).
 
 > In a vector state, `Σ − iΩ` is the transpose of the Gram matrix of the fluctuation vectors.
 
@@ -116,7 +116,7 @@ lemma transpose_gram_fluctuation (h : ‖ψ‖ = 1) (a : ι → Observable (H �
         Complex.I • (bracketMatrix (ofVec h) a).map ((↑) : ℝ → ℂ)
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.gram_mulVec_eq_zero_iff`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L137).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.gram_mulVec_eq_zero_iff`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L137).
 
 > The kernel of a Gram matrix is the space of linear relations among the vectors.
 
@@ -125,7 +125,7 @@ lemma gram_mulVec_eq_zero_iff [Fintype ι] (v : ι → H) (c : ι → ℂ) :
     gram ℂ v *ᵥ c = 0 ↔ ∑ j, c j • v j = 0
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.card_le_two_mul_finrank_ker_gram_fluctuation`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L153).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.card_le_two_mul_finrank_ker_gram_fluctuation`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean#L153).
 
 > **Equality in Robertson's relation for several observables.** In a vector state with
 > `|det Ω| = det Σ ≠ 0`, the fluctuation vectors of the family satisfy linear relations
@@ -146,4 +146,4 @@ lemma card_le_two_mul_finrank_ker_gram_fluctuation [Fintype ι] [DecidableEq ι]
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean)

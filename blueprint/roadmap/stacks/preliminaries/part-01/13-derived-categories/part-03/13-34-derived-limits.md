@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.34 Derived limits
 
-Section 13.34 of the Stacks Project, [Tag 08TB](https://stacks.math.columbia.edu/tag/08TB). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.34 of the Stacks Project, [Tag 08TB](https://stacks.math.columbia.edu/tag/08TB). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08TC, a definition
 
 [Tag 08TC](https://stacks.math.columbia.edu/tag/08TC) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.IsDerivedLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyLimit.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/HomotopyLimit.lean#L72).
+**`CategoryTheory.Pretriangulated.IsDerivedLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/HomotopyLimit.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/HomotopyLimit.lean#L72).
 
 > An object `K` of a pre-triangulated category `D` is a **derived limit**, or **homotopy
 > limit**, of an inverse system `F : ℕᵒᵖ ⥤ D` of objects of `D` whose objects have a product —
@@ -32,7 +32,7 @@ public def IsDerivedLimit (F : ℕᵒᵖ ⥤ D) [HasProduct fun n : ℕ => F.obj
 
 [Tag 07KC](https://stacks.math.columbia.edu/tag/07KC) in the Stacks Project.
 
-**`Stacks.DerivedProducts.hasProductsOfShape_derivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1170). The attribute's comment: “(1)”.
+**`Stacks.DerivedProducts.hasProductsOfShape_derivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1170). The attribute's comment: “(1)”.
 
 > **Statement 1 (Existence of products).**
 > The derived category `D(A)` has countable products (Definition 5).
@@ -60,7 +60,7 @@ theorem hasProductsOfShape_derivedCategory :
     HasProductsOfShape I (DerivedCategory A)
 ```
 
-**`Stacks.DerivedProducts.isLimit_productFanInDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1204). The attribute's comment: “(2)”.
+**`Stacks.DerivedProducts.isLimit_productFanInDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1204). The attribute's comment: “(2)”.
 
 > **Statement 2 (Computation via termwise products).**
 > For any countable family `K : I → CochainComplex A ℤ` of complexes (representing
@@ -75,7 +75,7 @@ theorem isLimit_productFanInDerivedCategory (K : I → CochainComplex A ℤ) :
     Nonempty (IsLimit (productFanInDerivedCategory K))
 ```
 
-**`Stacks.DerivedProducts.isIso_piComparison_homologyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1236). The attribute's comment: “(3)”.
+**`Stacks.DerivedProducts.isIso_piComparison_homologyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Products.lean#L1236). The attribute's comment: “(3)”.
 
 > **Statement 3 (Cohomology of the product).**
 > For every `p ∈ ℤ` and every countable family `X : I → D(A)`, the canonical
@@ -95,7 +95,7 @@ theorem isIso_piComparison_homologyFunctor
 
 [Tag 0BK7](https://stacks.math.columbia.edu/tag/0BK7) in the Stacks Project.
 
-**`DerivedCategory.exists_isDerivedLimit_of_forall_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L273).
+**`DerivedCategory.exists_isDerivedLimit_of_forall_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L273).
 
 > Let `𝒜` be an abelian category with countable products and enough injectives. Then any
 > inverse system `F : ℕᵒᵖ ⥤ D(𝒜)` of objects of `D⁺(𝒜)`, i.e. whose values `Kₙ = F.obj ⟨n⟩` are
@@ -113,7 +113,7 @@ public theorem exists_isDerivedLimit_of_forall_isGE (F : ℕᵒᵖ ⥤ DerivedCa
 
 [Tag 070M](https://stacks.math.columbia.edu/tag/070M) in the Stacks Project.
 
-**`CochainComplex.isKInjective_limit_and_isDerivedLimit_of_isSplitEpi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 738](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L738).
+**`CochainComplex.isKInjective_limit_and_isDerivedLimit_of_isSplitEpi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 738](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L738).
 
 > Let `A` be an abelian category with countable products and let
 > `𝓘 : ℕᵒᵖ ⥤ CochainComplex A ℤ` be an inverse system of K-injective complexes whose transition maps
@@ -153,7 +153,7 @@ public theorem isKInjective_limit_and_isDerivedLimit_of_isSplitEpi
 
 [Tag 090Y](https://stacks.math.columbia.edu/tag/090Y) in the Stacks Project.
 
-**`CochainComplex.exists_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L1064).
+**`CochainComplex.exists_quasiIso_isKInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean, line 1064](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedLimits.lean#L1064).
 
 > Let `𝒜` be an abelian category having enough injectives and exact countable
 > products. Then every cochain complex `K` of objects of `𝒜` admits a quasi-isomorphism `f : K ⟶ I`
@@ -173,4 +173,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.34, Tag 08TB](https://stacks.math.columbia.edu/tag/08TB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

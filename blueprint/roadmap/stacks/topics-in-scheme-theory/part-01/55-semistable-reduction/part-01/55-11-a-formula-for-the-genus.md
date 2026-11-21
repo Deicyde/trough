@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.11 A formula for the genus
 
-Section 55.11 of the Stacks Project, [Tag 0CA1](https://stacks.math.columbia.edu/tag/0CA1). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 55.11 of the Stacks Project, [Tag 0CA1](https://stacks.math.columbia.edu/tag/0CA1). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CA2, a lemma
 
 [Tag 0CA2](https://stacks.math.columbia.edu/tag/0CA2) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.eulerCharacteristic_addComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean#L335). The attribute's comment: “χ(X\_k, O\_D') - χ(X\_k, O\_D) = χ(X\_k, O\_X(-D)|\_Cᵢ) = -(D · Cᵢ) + χ(Cᵢ, O\_Cᵢ)”.
+**`Stacks.Models.RegularProperModelSituation.eulerCharacteristic_addComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean#L335). The attribute's comment: “χ(X\_k, O\_D') - χ(X\_k, O\_D) = χ(X\_k, O\_X(-D)|\_Cᵢ) = -(D · Cᵢ) + χ(Cᵢ, O\_Cᵢ)”.
 
 > **Stacks Project, Tag 0CA2.** In the situation of [Stacks, Tag 0C61] let `Cᵢ` be an
 > irreducible component of the special fibre `X_k` and let `D, D' ⊂ X` be effective Cartier
@@ -70,7 +70,7 @@ public theorem eulerCharacteristic_addComponent
 
 [Tag 0CA3](https://stacks.math.columbia.edu/tag/0CA3) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.cast_genus_eq_one_add_sum_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean#L335). The attribute's comment: “g\_C = 1 + Σ mᵢ([κᵢ : k\](gᵢ - 1) - (Cᵢ · Cᵢ)/2) at the canonical data of the model”.
+**`Stacks.Models.RegularProperModelSituation.cast_genus_eq_one_add_sum_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean#L335). The attribute's comment: “g\_C = 1 + Σ mᵢ([κᵢ : k\](gᵢ - 1) - (Cᵢ · Cᵢ)/2) at the canonical data of the model”.
 
 > **Stacks Project, Tag 0CA3.** In the situation of [Stacks, Tag 0C61] — `R` a discrete
 > valuation ring with fraction field `K` and residue field `k`, `C` a smooth projective curve over
@@ -98,7 +98,7 @@ public theorem cast_genus_eq_one_add_sum_specialFiberComponent :
 
 [Tag 0CA4](https://stacks.math.columbia.edu/tag/0CA4) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.associatedNumericalType_spec_and_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean#L60). The attribute's comment: “the data n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i form a numerical type of genus the genus of C”.
+**`Stacks.Models.RegularProperModelSituation.associatedNumericalType_spec_and_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean#L60). The attribute's comment: “the data n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i form a numerical type of genus the genus of C”.
 
 > **Stacks Project, Tag 0CA4.** In the situation of [Stacks, Tag 0C61], with `C₁, …, Cₙ` the
 > irreducible components of the special fibre enumerated by `e`, `κᵢ = H⁰(Cᵢ, 𝒪_{Cᵢ})` and `gᵢ`
@@ -125,7 +125,7 @@ public theorem associatedNumericalType_spec_and_genus (n : ℕ)
 
 [Tag 0CA5](https://stacks.math.columbia.edu/tag/0CA5) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.associatedNumericalType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean#L88). The attribute's comment: “the numerical type associated to X: n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i of the components of the special fibre”.
+**`Stacks.Models.RegularProperModelSituation.associatedNumericalType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean#L88). The attribute's comment: “the numerical type associated to X: n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i of the components of the special fibre”.
 
 > **Stacks Project, Tag 0CA5: the numerical type associated to `X`**, in the situation of
 > [Stacks, Tag 0C61]: the numerical type described in [Stacks, Tag 0CA4], whose data are the number
@@ -147,7 +147,7 @@ public def associatedNumericalType (n : ℕ) (e : Fin n ≃ irreducibleComponent
 
 [Tag 0CA6](https://stacks.math.columbia.edu/tag/0CA6) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.isMinimalModel_iff_isMinimal_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean#L164).
+**`Stacks.Models.RegularProperModelSituation.isMinimalModel_iff_isMinimal_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean#L164).
 
 > **Stacks Project, Tag 0CA6.** In the situation of [Stacks, Tag 0C61], let `C₁, …, Cₙ` be the
 > irreducible components of the special fibre, enumerated by `e`. Then `X` is a minimal model if and
@@ -165,7 +165,7 @@ theorem isMinimalModel_iff_isMinimal_associatedNumericalType
 
 [Tag 0CA7](https://stacks.math.columbia.edu/tag/0CA7) in the Stacks Project.
 
-**`AlgebraicGeometry.NumericalType.exists_genus_neg_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L476). The attribute's comment: “not every numerical type is the numerical type associated to a model, as there are numerical types of negative genus”.
+**`AlgebraicGeometry.NumericalType.exists_genus_neg_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L476). The attribute's comment: “not every numerical type is the numerical type associated to a model, as there are numerical types of negative genus”.
 
 > **Not every numerical type comes from a model**: there is a numerical type of negative genus,
 > and it is equivalent to no numerical type associated to a regular proper model of a smooth
@@ -179,7 +179,7 @@ public theorem exists_genus_neg_not_equivalent_associatedNumericalType :
         ¬ (S.associatedNumericalType n e).Equivalent T
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_one_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L493). The attribute's comment: “n = 1, m₁ = 1, a₁₁ = 0, w₁ = 6, g₁ = 1 is a minimal numerical type of genus one which is not the numerical type associated to a model”.
+**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_one_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L493). The attribute's comment: “n = 1, m₁ = 1, a₁₁ = 0, w₁ = 6, g₁ = 1 is a minimal numerical type of genus one which is not the numerical type associated to a model”.
 
 > **A minimal numerical type of positive genus not coming from a model**: the data `n = 1`,
 > `m₁ = 1`, `a₁₁ = 0`, `w₁ = 6`, `g₁ = 1` form a minimal numerical type of genus one which is
@@ -202,7 +202,7 @@ public theorem exists_isMinimal_genus_one_not_equivalent_associatedNumericalType
         ¬ (S.associatedNumericalType n e).Equivalent T
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_seven_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L517). The attribute's comment: “n = 2, m₁ = m₂ = 1, -a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6, w₁ = w₂ = 6, g₁ = g₂ = 1 is a minimal numerical type of genus seven which is not the numerical type associated to a model”.
+**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_seven_not_equivalent_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean, line 517](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotAssociated.lean#L517). The attribute's comment: “n = 2, m₁ = m₂ = 1, -a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6, w₁ = w₂ = 6, g₁ = g₂ = 1 is a minimal numerical type of genus seven which is not the numerical type associated to a model”.
 
 > **A second minimal numerical type of positive genus not coming from a model**: the data
 > `n = 2`, `m₁ = m₂ = 1`, `-a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6`, `w₁ = w₂ = 6`, `g₁ = g₂ = 1` form a minimal
@@ -227,7 +227,7 @@ public theorem exists_isMinimal_genus_seven_not_equivalent_associatedNumericalTy
         ¬ (S.associatedNumericalType n e).Equivalent T
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_genus_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L63). The attribute's comment: “there exist numerical types whose genus is negative”.
+**`AlgebraicGeometry.NumericalType.exists_genus_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L63). The attribute's comment: “there exist numerical types whose genus is negative”.
 
 > There is a numerical type whose genus is negative. The numerical type of a model has the
 > genus of the generic curve, which is nonnegative, so no such type comes from a model.
@@ -236,7 +236,7 @@ public theorem exists_isMinimal_genus_seven_not_equivalent_associatedNumericalTy
 public theorem exists_genus_neg : ∃ T : NumericalType, genus T < 0
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_one_weight_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L83). The attribute's comment: “n = 1, m₁ = 1, a₁₁ = 0, w₁ = 6, g₁ = 1 is a minimal numerical type of genus one”.
+**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_one_weight_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L83). The attribute's comment: “n = 1, m₁ = 1, a₁₁ = 0, w₁ = 6, g₁ = 1 is a minimal numerical type of genus one”.
 
 > The data `n = 1`, `m₁ = 1`, `a₁₁ = 0`, `w₁ = 6`, `g₁ = 1` is a minimal numerical type of
 > genus one.
@@ -251,7 +251,7 @@ public theorem exists_isMinimal_genus_one_weight_six :
       IsMinimal T ∧ genus T = 1
 ```
 
-**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_seven_weight_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L146). The attribute's comment: “n = 2, m₁ = m₂ = 1, -a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6, w₁ = w₂ = 6, g₁ = g₂ = 1 is a minimal numerical type of genus seven”.
+**`AlgebraicGeometry.NumericalType.exists_isMinimal_genus_seven_weight_six`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/NotFromModel.lean#L146). The attribute's comment: “n = 2, m₁ = m₂ = 1, -a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6, w₁ = w₂ = 6, g₁ = g₂ = 1 is a minimal numerical type of genus seven”.
 
 > The data `n = 2`, `m₁ = m₂ = 1`, `-a₁₁ = -a₂₂ = a₁₂ = a₂₁ = 6`, `w₁ = w₂ = 6`,
 > `g₁ = g₂ = 1` is a minimal numerical type of genus seven.
@@ -271,7 +271,7 @@ public theorem exists_isMinimal_genus_seven_weight_six :
 
 [Tag 0CE8](https://stacks.math.columbia.edu/tag/0CE8) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.exists_isRationalPoint_smoothAt_specialFiber_and_genus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean, line 656](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean#L656). The attribute's comment: “the k-rational smooth point x of X\_k, H⁰(Cᵢ) = k and mᵢ = 1 for the components through x, H⁰(X\_k) = k and g(X\_k) = g(C)”.
+**`Stacks.Models.RegularProperModelSituation.exists_isRationalPoint_smoothAt_specialFiber_and_genus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean, line 656](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean#L656). The attribute's comment: “the k-rational smooth point x of X\_k, H⁰(Cᵢ) = k and mᵢ = 1 for the components through x, H⁰(X\_k) = k and g(X\_k) = g(C)”.
 
 > **Stacks Project, Tag 0CE8.** In Situation [Stacks, Tag 0C61] assume that the curve `C` has a
 > `K`-rational point. Then
@@ -300,7 +300,7 @@ theorem exists_isRationalPoint_smoothAt_specialFiber_and_genus_eq (p : Spec (.of
 
 [Tag 0CE9](https://stacks.math.columbia.edu/tag/0CE9) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.surjective_and_not_injective_of_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean#L187).
+**`Stacks.Models.RegularProperModelSituation.surjective_and_not_injective_of_isMinimalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/MinimalModelNumericalTypeIff.lean#L187).
 
 > **Stacks Project, Tag 0CE9.** In the situation of [Stacks, Tag 0C61] assume `X` is a minimal
 > model, `gcd(m₁, …, mₙ) = 1` and `H⁰((X_k)_red, 𝒪) = k`. Then the map
@@ -326,7 +326,7 @@ theorem surjective_and_not_injective_of_isMinimalModel
 
 [Tag 0CEA](https://stacks.math.columbia.edu/tag/0CEA) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.topologicalGenus_add_geometricGenus_le_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean#L534). The attribute's comment: “dim\_k H^1((X\_k)\_red, O) >= g\_top + g\_geom(X\_k/k) when X\_k has a k-rational smooth point, g\_top the topological genus of the numerical type associated to X”.
+**`Stacks.Models.RegularProperModelSituation.topologicalGenus_add_geometricGenus_le_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean, line 534](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean#L534). The attribute's comment: “dim\_k H^1((X\_k)\_red, O) >= g\_top + g\_geom(X\_k/k) when X\_k has a k-rational smooth point, g\_top the topological genus of the numerical type associated to X”.
 
 > **Stacks Project, Tag 0CEA.** In the situation of [Stacks, Tag 0C61] suppose the special
 > fibre `X_k` has a `k`-rational point `x` which is a smooth point of `X_k ⟶ Spec(k)`. Then
@@ -356,7 +356,7 @@ theorem topologicalGenus_add_geometricGenus_le_finrank_reduction
 
 [Tag 0CEE](https://stacks.math.columbia.edu/tag/0CEE) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.smooth_and_not_forall_isSeparable_of_genus_equality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusEqualityComponents.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusEqualityComponents.lean#L72). The attribute's comment: “Corrected form, with a counterexample to the statement as printed: (1) in full; (2) with kappa/k separable whenever H^1(C, O\_C) is nonzero; the last conjunct shows that separability fails in general (a model over F\_2(t)[[pi]] with a component P^1\_kappa, kappa = k(sqrt t)).”.
+**`Stacks.Models.RegularProperModelSituation.smooth_and_not_forall_isSeparable_of_genus_equality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusEqualityComponents.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusEqualityComponents.lean#L72). The attribute's comment: “Corrected form, with a counterexample to the statement as printed: (1) in full; (2) with kappa/k separable whenever H^1(C, O\_C) is nonzero; the last conjunct shows that separability fails in general (a model over F\_2(t)[[pi]] with a component P^1\_kappa, kappa = k(sqrt t)).”.
 
 > **The corrected form of [Stacks, Tag 0CEE], together with the refutation of its separability
 > clause.** In the situation of [Stacks, Tag 0C61] let `x` be a `k`-rational point of `X_k` at which
@@ -436,4 +436,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.11, Tag 0CA1](https://stacks.math.columbia.edu/tag/0CA1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

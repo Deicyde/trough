@@ -22,5 +22,5 @@ navigation: transparent
 - [16. `Mandelbrot.MLC` (research open), in Conjectures about the Mandelbrot and Multibrot sets](../../../wikipedia/part-06/conjectures-about-the-mandelbrot-and-multibrot-s.md)
 - [17. `LittlewoodConjecture.littlewood_conjecture` (research open), in Littlewood conjectures](../../../wikipedia/part-05/littlewood-conjectures.md)
 - [18. `HasseWeil.exists_hasAnalyticContinuation` (research open), in The Hasse--Weil conjecture for elliptic curves](../../../wikipedia/part-04/the-hasse-weil-conjecture-for-elliptic-curves.md)
-- [19. `Schanuel.schanuel_conjecture` (research open), in Schanuel's Conjecture](../../../wikipedia/part-07/schanuels-conjecture.md)
+- [19. `Schanuel.schanuel_conjecture` (research open), in Schanuel's Conjecture](../../../wikipedia/part-08/schanuels-conjecture.md)
 - [20. `Dickson.dickson_conjecture` (research open), in Dickson's conjecture](../../../wikipedia/part-02/dicksons-conjecture.md)

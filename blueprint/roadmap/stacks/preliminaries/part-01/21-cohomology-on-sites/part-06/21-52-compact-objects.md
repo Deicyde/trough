@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.52 Compact objects
 
-Section 21.52 of the Stacks Project, [Tag 0948](https://stacks.math.columbia.edu/tag/0948). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.52 of the Stacks Project, [Tag 0948](https://stacks.math.columbia.edu/tag/0948). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 094B, a lemma
 
 [Tag 094B](https://stacks.math.columbia.edu/tag/094B) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean, line 650](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean#L650).
+**`Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean, line 650](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean#L650).
 
 > A compact derived object is a summand of a finite complex of finite sums
 > of compact generators of the abelian category.
@@ -39,7 +39,7 @@ public theorem exists_retract_finiteComplex_of_isCompactObject
 
 [Tag 094C](https://stacks.math.columbia.edu/tag/094C) in the Stacks Project.
 
-**`Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean#L207).
+**`Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean#L207).
 
 > **Stacks 094C.** On a ringed site every object of which is covered by quasi-compact objects,
 > a compact object of the derived category of sheaves of modules is a direct summand of a bounded
@@ -68,7 +68,7 @@ public theorem exists_retract_finiteComplex_extensionByZero_of_isCompactObject
 
 [Tag 0G21](https://stacks.math.columbia.edu/tag/0G21) in the Stacks Project.
 
-**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean#L676).
+**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean, line 676](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean#L676).
 
 > Extension by zero of the unit module on `U` is compact with respect to
 > bounded-below direct sums, provided cohomology on `U` commutes with direct sums.
@@ -107,7 +107,7 @@ public theorem extensionByZero_unit_hom_coproduct_bijective
 
 [Tag 0G22](https://stacks.math.columbia.edu/tag/0G22) in the Stacks Project.
 
-**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean#L370).
+**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean#L370).
 
 > On a ringed site with a cofinal collection of finite coverings closed under finite
 > intersections, extension by zero of the unit module over `U` is compact with respect to
@@ -141,7 +141,7 @@ public theorem extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsI
 
 [Tag 094D](https://stacks.math.columbia.edu/tag/094D) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean#L768).
+**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean, line 768](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean#L768).
 
 > Let `(C, O)` be a ringed site and `U` an object of `C`. If cohomology over
 > `U` has finite cohomological dimension and `H^p(U, -)` commutes with direct sums for every `p`,
@@ -170,7 +170,7 @@ theorem isCompactObject_singleFunctor_extensionByZeroUnit
 
 [Tag 094E](https://stacks.math.columbia.edu/tag/094E) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean#L174).
+**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean#L174).
 
 > **Stacks 094E.** Let `(C, O)` be a ringed site and let `U` be an object of `C` which is
 > quasi-compact and weakly contractible. Then `j_{U!} O_U`, placed in degree zero, is a compact
@@ -196,7 +196,7 @@ theorem isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractibl
 
 [Tag 09JC](https://stacks.math.columbia.edu/tag/09JC) in the Stacks Project.
 
-**`Stacks.Cohomology.QuasiCompactSite.hom_coproduct_bijective_and_isCompactObject_of_isPerfect_of_isQuasiCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean#L302). The attribute's comment: “both clauses, under hypotheses (1)-(3) of the tag; the 08JJ reduction, the Tor amplitude of the dual and the 0739 sums are all proved, none assumed”.
+**`Stacks.Cohomology.QuasiCompactSite.hom_coproduct_bijective_and_isCompactObject_of_isPerfect_of_isQuasiCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean#L302). The attribute's comment: “both clauses, under hypotheses (1)-(3) of the tag; the 08JJ reduction, the Tor amplitude of the dual and the 0739 sums are all proved, none assumed”.
 
 > **Stacks 09JC.** Let `(C, O)` be a ringed site such that
 >
@@ -259,4 +259,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.52, Tag 0948](https://stacks.math.columbia.edu/tag/0948)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

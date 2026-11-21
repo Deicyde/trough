@@ -8,11 +8,11 @@ proof: formalized
 
 # Norm-time Ordering in the FieldOpFreeAlgebra
 
-The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormTimeOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean): 2 declarations, 1 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormTimeOrder`, [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean): 2 declarations, 1 with a docstring.
 
 ## Norm-time order
 
-**`FieldSpecification.FieldOpFreeAlgebra.normTimeOrder`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean#L34).
+**`FieldSpecification.FieldOpFreeAlgebra.normTimeOrder`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean#L34).
 
 > The normal-time ordering on `FieldOpFreeAlgebra`.
 
@@ -20,7 +20,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormTimeOrder`, [P
 def normTimeOrder : FieldOpFreeAlgebra 𝓕 →ₗ[ℂ] FieldOpFreeAlgebra 𝓕
 ```
 
-**`FieldSpecification.FieldOpFreeAlgebra.normTimeOrder_ofCrAnListF`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean#L41).
+**`FieldSpecification.FieldOpFreeAlgebra.normTimeOrder_ofCrAnListF`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean#L41).
 
 ```lean
 lemma normTimeOrder_ofCrAnListF (φs : List 𝓕.CrAnFieldOp) :
@@ -34,4 +34,4 @@ lemma normTimeOrder_ofCrAnListF (φs : List 𝓕.CrAnFieldOp) :
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean)
+- [Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean)

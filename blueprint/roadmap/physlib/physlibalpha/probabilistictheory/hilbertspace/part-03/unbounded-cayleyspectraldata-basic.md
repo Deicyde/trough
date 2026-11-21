@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.spectrumRealPart, ProbabilisticTheory.QuantumMechanics.spectrumImagPart, ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_spectrum_coe, ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_integral_spectrum_coe, ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator, ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_apply, ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_isStarNormal, ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_mem_unitary
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.spectrumRealPart, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.spectrumImagPart, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_spectrum_coe, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_integral_spectrum_coe, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_apply, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_isStarNormal, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_mem_unitary
 statement: formalized
 proof: formalized
 ---
 
 # The spectral measure of the Cayley transform
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.CayleySpectralData.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean): 31 declarations, 9 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.CayleySpectralData.Basic`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean): 31 declarations, 9 with a docstring.
 
 > The spectral measure of the Cayley transform, pulled back to a spectral measure on ℝ.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.CayleySpectr
 
 > * None.
 
-**`ProbabilisticTheory.QuantumMechanics.spectrumRealPart`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.spectrumRealPart`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L59).
 
 > The real part of a spectral point of `U`, as a compactly supported continuous function on
 > `spectrum ℂ U`.
@@ -40,7 +40,7 @@ def spectrumRealPart (U : H →L[ℂ] H) :
     CompactlySupportedContinuousMap (spectrum ℂ U) ℝ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.spectrumImagPart`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L67).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.spectrumImagPart`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L67).
 
 > The imaginary part of a spectral point of `U`, as a compactly supported continuous function
 > on `spectrum ℂ U`.
@@ -50,7 +50,7 @@ def spectrumImagPart (U : H →L[ℂ] H) :
     CompactlySupportedContinuousMap (spectrum ℂ U) ℝ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_spectrum_coe`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcScalarMeasure_integral_spectrum_coe`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L73).
 
 ```lean
 lemma cfcScalarMeasure_integral_spectrum_coe
@@ -60,7 +60,7 @@ lemma cfcScalarMeasure_integral_spectrum_coe
         Complex.I * ∫ z, spectrumImagPart U z ∂cfcScalarMeasure U hU v
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_integral_spectrum_coe`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.polarizedCfcScalarMeasure_integral_spectrum_coe`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L98).
 
 ```lean
 lemma polarizedCfcScalarMeasure_integral_spectrum_coe
@@ -70,7 +70,7 @@ lemma polarizedCfcScalarMeasure_integral_spectrum_coe
       ⟪y, U x⟫_ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L185).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L185).
 
 > The Cayley unitary of `T`, as a bounded continuous linear map.
 
@@ -78,28 +78,28 @@ lemma polarizedCfcScalarMeasure_integral_spectrum_coe
 def cayleyBoundedOperator (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) : H →L[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_apply`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L188).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_apply`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L188).
 
 ```lean
 lemma cayleyBoundedOperator_apply (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) (x : H) :
     cayleyBoundedOperator T hT x = cayleyContinuousLinearMap T hT x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_isStarNormal`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L192).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_isStarNormal`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L192).
 
 ```lean
 lemma cayleyBoundedOperator_isStarNormal (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) :
     IsStarNormal (cayleyBoundedOperator T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_mem_unitary`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L204).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_mem_unitary`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L204).
 
 ```lean
 lemma cayleyBoundedOperator_mem_unitary (T : H →ₗ.[ℂ] H) (hT : IsSelfAdjoint T) :
     cayleyBoundedOperator T hT ∈ unitary (H →L[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L226).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L226).
 
 > The pushforward of the Cayley unitary's continuous functional calculus spectral measure
 > along `spectrum ℂ U ↪ ℂ`.
@@ -109,7 +109,7 @@ noncomputable def cayleyBoundedSpectralMeasure (T : H →ₗ.[ℂ] H) (hT : IsSe
     QuantumMechanics.WOTSpectralMeasure ℂ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cfcSpectralMeasure_reconstruction_coe`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L232).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSpectralMeasure_reconstruction_coe`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L232).
 
 ```lean
 lemma cfcSpectralMeasure_reconstruction_coe
@@ -125,7 +125,7 @@ lemma cfcSpectralMeasure_reconstruction_coe
 > functional-calculus and Cayley APIs consume.  This wrapper performs exactly that harmless subtype
 > pushforward and does not impose any unitary or Cayley support hypothesis.
 
-**`ProbabilisticTheory.QuantumMechanics.cfcSpectralMeasure_ambient_reconstruction`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L248).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcSpectralMeasure_ambient_reconstruction`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L248).
 
 ```lean
 lemma cfcSpectralMeasure_ambient_reconstruction
@@ -135,7 +135,7 @@ lemma cfcSpectralMeasure_ambient_reconstruction
         id x y = ⟪y, U x⟫_ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cfcBoundedNormalSpectralData`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L263).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcBoundedNormalSpectralData`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L263).
 
 > The generic bounded normal spectral certificate for `U`, from its continuous functional
 > calculus.
@@ -150,7 +150,7 @@ noncomputable def cfcBoundedNormalSpectralData
 > The only extra work is the support calculation: the normal PVM is pushed forward from the compact
 > spectrum, and the spectrum of a unitary lies on the unit circle.
 
-**`ProbabilisticTheory.QuantumMechanics.cfcBoundedUnitarySpectralData`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L275).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cfcBoundedUnitarySpectralData`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L275).
 
 > The bounded unitary spectral certificate for a unitary with no spectral mass at `1`.
 
@@ -161,7 +161,7 @@ noncomputable def cfcBoundedUnitarySpectralData
     QuantumMechanics.WOTSpectralMeasure.BoundedUnitarySpectralData u
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_reconstruction`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L330).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_reconstruction`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L330).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_reconstruction
@@ -170,7 +170,7 @@ lemma cayleyBoundedSpectralMeasure_reconstruction
       ⟪y, cayleyBoundedOperator T hT x⟫_ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_scalarMeasure_isFinite`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L347).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_scalarMeasure_isFinite`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L347).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_scalarMeasure_isFinite
@@ -179,7 +179,7 @@ lemma cayleyBoundedSpectralMeasure_scalarMeasure_isFinite
       ((cayleyBoundedSpectralMeasure T hT).scalarMeasure x y).variation
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.atom_eigenvector_of_reconstruction`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L365).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.atom_eigenvector_of_reconstruction`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L365).
 
 ```lean
 lemma atom_eigenvector_of_reconstruction
@@ -190,7 +190,7 @@ lemma atom_eigenvector_of_reconstruction
     V (E {a} x) = a • E {a} x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_support_unit_circle`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L408).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_support_unit_circle`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L408).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_support_unit_circle
@@ -199,7 +199,7 @@ lemma cayleyBoundedSpectralMeasure_support_unit_circle
       cayleyBoundedSpectralMeasure T hT (S ∩ {z | ‖z‖ = 1})
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_one_eigenspace_eq_bot`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L438).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedOperator_one_eigenspace_eq_bot`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L438).
 
 ```lean
 lemma cayleyBoundedOperator_one_eigenspace_eq_bot
@@ -207,7 +207,7 @@ lemma cayleyBoundedOperator_one_eigenspace_eq_bot
     (hx : cayleyBoundedOperator T hT x = x) : x = 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_id_integrable`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L510).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_id_integrable`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L510).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_id_integrable
@@ -215,7 +215,7 @@ lemma cayleyBoundedSpectralMeasure_id_integrable
     ((cayleyBoundedSpectralMeasure T hT).scalarMeasure x y).Integrable id
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_singleton_one`**, a lemma, [line 537](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L537).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_singleton_one`**, a lemma, [line 537](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L537).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_singleton_one
@@ -223,7 +223,7 @@ lemma cayleyBoundedSpectralMeasure_singleton_one
     cayleyBoundedSpectralMeasure T hT {1} = 0
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_support_away_one`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L604).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedSpectralMeasure_support_away_one`**, a lemma, [line 604](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L604).
 
 ```lean
 lemma cayleyBoundedSpectralMeasure_support_away_one
@@ -232,7 +232,7 @@ lemma cayleyBoundedSpectralMeasure_support_away_one
       cayleyBoundedSpectralMeasure T hT (S ∩ {z | ‖z‖ = 1 ∧ z ≠ 1})
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyInverse_mul_one_sub_of_unit_circle`**, a lemma, [line 655](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L655).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyInverse_mul_one_sub_of_unit_circle`**, a lemma, [line 655](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L655).
 
 ```lean
 lemma cayleyInverse_mul_one_sub_of_unit_circle
@@ -240,7 +240,7 @@ lemma cayleyInverse_mul_one_sub_of_unit_circle
     (cayleyInverse z : ℂ) * (1 - z) = Complex.I * (1 + z)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayley_domain_factorization`**, a lemma, [line 671](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L671).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayley_domain_factorization`**, a lemma, [line 671](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L671).
 
 ```lean
 lemma cayley_domain_factorization
@@ -255,7 +255,7 @@ lemma cayley_domain_factorization
 > The function `1 - z` is bounded on the unit circle, where the spectral measure lives, but not on
 > `ℂ`. It is extended by zero outside the closed unit disk.
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier`**, a def, [line 724](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L724).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier`**, a def, [line 724](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L724).
 
 > `z ↦ 1 - z` on the unit circle, extended by zero elsewhere so it is globally bounded.
 
@@ -263,28 +263,28 @@ lemma cayley_domain_factorization
 def cayleyDifferenceMultiplier (z : ℂ) : ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_measurable`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L727).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_measurable`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L727).
 
 ```lean
 lemma cayleyDifferenceMultiplier_measurable :
     Measurable cayleyDifferenceMultiplier
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_bounded`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L733).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_bounded`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L733).
 
 ```lean
 lemma cayleyDifferenceMultiplier_bounded :
     ∃ C : ℝ, ∀ z : ℂ, ‖cayleyDifferenceMultiplier z‖ ≤ C
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_eq_one_sub_of_unit_circle`**, a lemma, [line 741](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L741).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyDifferenceMultiplier_eq_one_sub_of_unit_circle`**, a lemma, [line 741](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L741).
 
 ```lean
 lemma cayleyDifferenceMultiplier_eq_one_sub_of_unit_circle {z : ℂ} (hz : ‖z‖ = 1) :
     cayleyDifferenceMultiplier z = 1 - z
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.boundedIntegral_cayleyDifferenceMultiplier_eq_sub`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L745).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.boundedIntegral_cayleyDifferenceMultiplier_eq_sub`**, a lemma, [line 745](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L745).
 
 ```lean
 lemma boundedIntegral_cayleyDifferenceMultiplier_eq_sub
@@ -296,7 +296,7 @@ lemma boundedIntegral_cayleyDifferenceMultiplier_eq_sub
         ContinuousLinearMapWOT.ofCLM (cayleyBoundedOperator T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyBoundedUnitarySpectralData`**, a def, [line 822](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L822).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyBoundedUnitarySpectralData`**, a def, [line 822](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L822).
 
 > The bounded unitary spectral certificate for `T`'s Cayley unitary.
 
@@ -307,7 +307,7 @@ noncomputable def cayleyBoundedUnitarySpectralData
       (cayleyUnitary T hT)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyRealSpectralMeasure`**, a def, [line 835](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L835).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyRealSpectralMeasure`**, a def, [line 835](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L835).
 
 > The real spectral measure of `T`, transported from its Cayley unitary's bounded unitary
 > spectral data.
@@ -318,7 +318,7 @@ noncomputable def cayleyRealSpectralMeasure
     QuantumMechanics.WOTSpectralMeasure ℝ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.cayleyMap_cayleyRealSpectralMeasure`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L840).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.cayleyMap_cayleyRealSpectralMeasure`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean#L840).
 
 ```lean
 lemma cayleyMap_cayleyRealSpectralMeasure
@@ -338,4 +338,4 @@ lemma cayleyMap_cayleyRealSpectralMeasure
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean)

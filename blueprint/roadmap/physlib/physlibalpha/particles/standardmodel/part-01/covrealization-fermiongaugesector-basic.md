@@ -8,7 +8,7 @@ proof: formalized
 
 # The mixed gauge-fermion sector
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSector.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSector.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.FermionGaugeSect
 
 ## A. The gauge and fermion algebras commute
 
-**`StandardModel.CovAlgebraRealization.commute_of_mem_gaugeAlgebra_of_mem_fermionAlgebra`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L84).
+**`StandardModel.CovAlgebraRealization.commute_of_mem_gaugeAlgebra_of_mem_fermionAlgebra`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L84).
 
 > The gauge algebra and the fermion algebra commute element-wise: every generator of
 > the gauge algebra commutes with every generator of the fermion algebra by the
@@ -65,7 +65,7 @@ lemma commute_of_mem_gaugeAlgebra_of_mem_fermionAlgebra {x y : B}
     Commute x y
 ```
 
-**`StandardModel.CovAlgebraRealization.fermionMassWeight_mul_gaugeMassWeight_le`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L120).
+**`StandardModel.CovAlgebraRealization.fermionMassWeight_mul_gaugeMassWeight_le`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L120).
 
 > The fermion sector's mass-weight submodules and the gauge sector's mass-weight
 > submodules commute past each other, in the order needed by
@@ -79,7 +79,7 @@ lemma fermionMassWeight_mul_gaugeMassWeight_le (a b : ℕ) :
 
 ## B. The mixed gauge-fermion sector
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_le`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L139).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_le`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L139).
 
 > **The mixed gauge-fermion sector decomposition.** The weight-`w` piece of the
 > `{gauge, fermion}` sector lies in the join, over the splittings of `w` into two
@@ -93,7 +93,7 @@ lemma sectorMassWeight_gauge_fermion_le (w : ℕ) :
         h.isGaugeSector.massWeightSubmodule p.1 * h.isFermionSector.massWeightSubmodule p.2
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_eq_bot_of_lt_seven`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L156).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_eq_bot_of_lt_seven`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L156).
 
 > **The mixed gauge-fermion sector vanishes below weight `7`.** A non-zero gauge
 > weight is at least `4` and a non-zero fermion weight is at least `3`, so no
@@ -104,7 +104,7 @@ lemma sectorMassWeight_gauge_fermion_eq_bot_of_lt_seven {w : ℕ} (hw : w < 7) :
     h.sectorMassWeight {GeneratorClass.gauge, GeneratorClass.fermion} w = ⊥
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_eight`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L179).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_eight`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L179).
 
 > **The mixed gauge-fermion sector vanishes at weight `8`.** The only splittings of
 > `8` into two non-zero parts with a non-zero gauge weight and a non-zero fermion
@@ -116,7 +116,7 @@ lemma sectorMassWeight_gauge_fermion_eight :
     h.sectorMassWeight {GeneratorClass.gauge, GeneratorClass.fermion} 8 = ⊥
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_seven`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L203).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_fermion_seven`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean#L203).
 
 > **The mixed gauge-fermion sector at weight `7`** is exactly the product of the
 > underived field-strength submodule with the underived fermion submodule: the only
@@ -135,4 +135,4 @@ lemma sectorMassWeight_gauge_fermion_seven :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.26 Rank and determinant
 
-Section 17.26 of the Stacks Project, [Tag 0B37](https://stacks.math.columbia.edu/tag/0B37). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 17.26 of the Stacks Project, [Tag 0B37](https://stacks.math.columbia.edu/tag/0B37). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0B37, the section
 
 [Tag 0B37](https://stacks.math.columbia.edu/tag/0B37) in the Stacks Project.
 
-**`Stacks.SheafOfModules.rank_and_determinant_of_vect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RankDeterminant.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RankDeterminant.lean#L413). The attribute's comment: “Vect(X) is an exact category with the conflations, admissible epimorphisms and admissible monomorphisms stated; it has a set of isomorphism classes and K\_0(Vect(X)) is given by the stated generators and relations; the rank is the stalk rank, locally constant, additive and defines K\_0(Vect(X)) → Map\_cont(X, Z); the clopen decomposition X = X\_0 ⊔ X\_1 ⊔ … with E of rank i on X\_i and det(E) = ⋀^i(E|\_\{X\_i}) there; det(E) is invertible and locally free of rank 1 and defines det : K\_0(Vect(X)) → Pic(X). The admissible epimorphisms are the surjections whose kernel is finite locally free, which on a ringed space is not every surjection of Vect(X)”.
+**`Stacks.SheafOfModules.rank_and_determinant_of_vect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RankDeterminant.lean, line 413](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RankDeterminant.lean#L413). The attribute's comment: “Vect(X) is an exact category with the conflations, admissible epimorphisms and admissible monomorphisms stated; it has a set of isomorphism classes and K\_0(Vect(X)) is given by the stated generators and relations; the rank is the stalk rank, locally constant, additive and defines K\_0(Vect(X)) → Map\_cont(X, Z); the clopen decomposition X = X\_0 ⊔ X\_1 ⊔ … with E of rank i on X\_i and det(E) = ⋀^i(E|\_\{X\_i}) there; det(E) is invertible and locally free of rank 1 and defines det : K\_0(Vect(X)) → Pic(X). The admissible epimorphisms are the surjections whose kernel is finite locally free, which on a ringed space is not every surjection of Vect(X)”.
 
 > **Stacks Project, Tag 0B37: rank and determinant of finite locally free modules.** Let
 > `(X, O_X)` be a ringed space and `Vect(X)` the category of finite locally free `O_X`-modules.
@@ -97,7 +97,7 @@ theorem rank_and_determinant_of_vect :
 
 [Tag 0B38](https://stacks.math.columbia.edu/tag/0B38) in the Stacks Project.
 
-**`Stacks.SheafOfModules.TopWedge.detSummandComparison_ι_unit_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 591](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L591). The attribute's comment: “the WEDGE-AND-LIFT FORMULA in the GENERAL case, with no constant-rank hypothesis”.
+**`Stacks.SheafOfModules.TopWedge.detSummandComparison_ι_unit_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 591](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L591). The attribute's comment: “the WEDGE-AND-LIFT FORMULA in the GENERAL case, with no constant-rank hypothesis”.
 
 > **The wedge-and-lift formula for the comparison between determinant summands**, in every
 > pair of degrees, read inside `⋀ⁿ⁺ᵐ E` through the inclusion of the degree-`n+m` summand of
@@ -132,7 +132,7 @@ theorem detSummandComparison_ι_unit_wedge
       wedgeSec A V (n + m) (Fin.append (fun i => f.val.app V (s i)) l)
 ```
 
-**`Stacks.SheafOfModules.TopWedge.isIso_determinantTensorDeterminantHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 990](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L990). The attribute's comment: “the ISOMORPHISM clause in the GENERAL case: the canonical map det(E')⊗det(E'')⟶det(E) of `Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantHom` is an isomorphism, for a short exact sequence of finite locally free sheaves with NO constant-rank hypothesis. Here det is the det of 0FJN. The isomorphism itself is `determinantTensorDeterminantIsoOfFiniteLocallyFree`”.
+**`Stacks.SheafOfModules.TopWedge.isIso_determinantTensorDeterminantHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 990](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L990). The attribute's comment: “the ISOMORPHISM clause in the GENERAL case: the canonical map det(E')⊗det(E'')⟶det(E) of `Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantHom` is an isomorphism, for a short exact sequence of finite locally free sheaves with NO constant-rank hypothesis. Here det is the det of 0FJN. The isomorphism itself is `determinantTensorDeterminantIsoOfFiniteLocallyFree`”.
 
 > **Stacks 0B38: the canonical map `det(E') ⊗ det(E'') ⟶ det(E)` is an isomorphism**, for a
 > short exact sequence `0 → E' → E → E'' → 0` of sheaves of modules on a ringed space whose outer
@@ -146,7 +146,7 @@ theorem isIso_determinantTensorDeterminantHom
     IsIso (determinantTensorDeterminantHom A' A A'' f g hfg hS)
 ```
 
-**`Stacks.SheafOfModules.TopWedge.eq_determinantTensorDeterminantHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L1035). The attribute's comment: “uniqueness of the canonical map det(E')⊗det(E'')⟶det(E) in the GENERAL case — a short exact sequence of finite locally free sheaves of modules with no constant-rank hypothesis. Together with `eq_detTensorAnnComparison` and the wedge-and-lift formula `detSummandComparison_ι_unit_wedge` this says the map is determined by the formula the source gives for it”.
+**`Stacks.SheafOfModules.TopWedge.eq_determinantTensorDeterminantHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L1035). The attribute's comment: “uniqueness of the canonical map det(E')⊗det(E'')⟶det(E) in the GENERAL case — a short exact sequence of finite locally free sheaves of modules with no constant-rank hypothesis. Together with `eq_detTensorAnnComparison` and the wedge-and-lift formula `detSummandComparison_ι_unit_wedge` this says the map is determined by the formula the source gives for it”.
 
 > **The canonical map is the only morphism restricting to
 > `Stacks.SheafOfModules.TopWedge.detTensorAnnComparison` on every degree-`m` summand of
@@ -168,7 +168,7 @@ theorem eq_determinantTensorDeterminantHom
     ψ = determinantTensorDeterminantHom A' A A'' f g hfg hS
 ```
 
-**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantIsoOfFiniteLocallyFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L1072). The attribute's comment: “the canonical isomorphism det(E')⊗det(E'')≅det(E) in the GENERAL case, with NO constant-rank hypothesis”. References: SGA 6 X (5.1), “special case”.
+**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantIsoOfFiniteLocallyFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactIso.lean#L1072). The attribute's comment: “the canonical isomorphism det(E')⊗det(E'')≅det(E) in the GENERAL case, with NO constant-rank hypothesis”. References: SGA 6 X (5.1), “special case”.
 
 > **Stacks 0B38, the general case.** For a short exact sequence `0 → E' → E → E'' → 0` of
 > sheaves of `O_X`-modules on a ringed space with `E'` and `E''` **finite locally free of no
@@ -200,7 +200,7 @@ noncomputable def determinantTensorDeterminantIsoOfFiniteLocallyFree
         A.determinant
 ```
 
-**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactSummand.lean, line 713](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactSummand.lean#L713). The attribute's comment: “the canonical MAP det(E')⊗det(E'')⟶det(E) in the GENERAL case, with NO constant-rank hypothesis”.
+**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactSummand.lean, line 713](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAnnihilatorShortExactSummand.lean#L713). The attribute's comment: “the canonical MAP det(E')⊗det(E'')⟶det(E) in the GENERAL case, with NO constant-rank hypothesis”.
 
 > **The canonical map `det(E') ⊗ det(E'') ⟶ det(E)` of [Stacks, Tag 0B38], for a short exact
 > sequence `0 → E' → E → E'' → 0` of sheaves of modules on a ringed space with `E'` and `E''`
@@ -228,7 +228,7 @@ noncomputable def determinantTensorDeterminantHom [Mono f] [Epi g]
         A.determinant
 ```
 
-**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantShortExactIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantShortExactIso.lean#L93). The attribute's comment: “the canonical isomorphism det(E')⊗det(E'')≅det(E) in DETERMINANT form, for a short exact sequence of finite locally free sheaves of CONSTANT rank”. References: SGA 6 X (5.1), “special case”; SGA 6 X (6.2.7), “special case”.
+**`Stacks.SheafOfModules.TopWedge.determinantTensorDeterminantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantShortExactIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorDeterminantShortExactIso.lean#L93). The attribute's comment: “the canonical isomorphism det(E')⊗det(E'')≅det(E) in DETERMINANT form, for a short exact sequence of finite locally free sheaves of CONSTANT rank”. References: SGA 6 X (5.1), “special case”; SGA 6 X (6.2.7), “special case”.
 
 > **Stacks 0B38 in determinant form, at constant rank.** For a short exact sequence
 > `0 → E' → E → E'' → 0` of sheaves of modules on a ringed space, with `E'`, `E''` and `E` finite
@@ -266,7 +266,7 @@ noncomputable def determinantTensorDeterminantIso
         A.determinant
 ```
 
-**`Stacks.SheafOfModules.TopWedge.detComparison_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean, line 780](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean#L780). The attribute's comment: “the CONSTANT-RANK form of the canonical map det(E')⊗det(E'')⟶det(E) and of its wedge-and-lift formula”.
+**`Stacks.SheafOfModules.TopWedge.detComparison_wedge`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean, line 780](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean#L780). The attribute's comment: “the CONSTANT-RANK form of the canonical map det(E')⊗det(E'')⟶det(E) and of its wedge-and-lift formula”.
 
 > **Stacks 0B38, the wedge-and-lift formula.** The canonical comparison carries the image of
 > `(s₁ ∧ ⋯ ∧ s_{r'}) ⊗ (g(l₁) ∧ ⋯ ∧ g(l_{k+1}))` to
@@ -298,7 +298,7 @@ theorem detComparison_wedge [Epi g]
       wedgeSec A V (r' + (k + 1)) (Fin.append (fun i => f.val.app V (s i)) l)
 ```
 
-**`Stacks.SheafOfModules.TopWedge.eq_detComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean, line 807](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean#L807). The attribute's comment: “uniqueness of the map satisfying the wedge-and-lift formula, which is the precise sense of CANONICAL here — again in the constant-rank form, with the same carried hypotheses as `detComparison_wedge`; the isomorphism clause is carried by `Stacks.SheafOfModules.TopWedge.isIso_detComparison`, and the general case by `Stacks.SheafOfModules.TopWedge.eq_determinantTensorDeterminantHom`”.
+**`Stacks.SheafOfModules.TopWedge.eq_detComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean, line 807](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExact.lean#L807). The attribute's comment: “uniqueness of the map satisfying the wedge-and-lift formula, which is the precise sense of CANONICAL here — again in the constant-rank form, with the same carried hypotheses as `detComparison_wedge`; the isomorphism clause is carried by `Stacks.SheafOfModules.TopWedge.isIso_detComparison`, and the general case by `Stacks.SheafOfModules.TopWedge.eq_determinantTensorDeterminantHom`”.
 
 > **The canonical comparison is the only morphism satisfying its defining equation.** The
 > morphism `⋀ʳ' E' ⊗ ⋀ᵏ⁺¹(g)` is an epimorphism, so a morphism out of `⋀ʳ' E' ⊗ ⋀ᵏ⁺¹ E''` is
@@ -317,7 +317,7 @@ theorem eq_detComparison [Epi g]
     ψ = detComparison A' A A'' f g hfg hS r' k
 ```
 
-**`Stacks.SheafOfModules.TopWedge.isIso_detComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExactIso.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExactIso.lean#L432). The attribute's comment: “the ISOMORPHISM clause, in the constant-rank form”. References: SGA 6 X (5.1), “special case”; SGA 6 X (6.2.7), “(6.2.9), special case”.
+**`Stacks.SheafOfModules.TopWedge.isIso_detComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExactIso.lean, line 432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerShortExactIso.lean#L432). The attribute's comment: “the ISOMORPHISM clause, in the constant-rank form”. References: SGA 6 X (5.1), “special case”; SGA 6 X (6.2.7), “(6.2.9), special case”.
 
 > **Stacks 0B38, the isomorphism clause in the constant-rank form.** For a short exact
 > sequence `0 → E' → E → E'' → 0` of sheaves of modules on a ringed space with `E'` finite
@@ -355,7 +355,7 @@ theorem isIso_detComparison
 
 [Tag 0FJN](https://stacks.math.columbia.edu/tag/0FJN) in the Stacks Project.
 
-**`SheafOfModules.TensorExteriorSymmetricAlgebras.determinant_isInvertible_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DeterminantFinitePresentationFlat.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DeterminantFinitePresentationFlat.lean#L329). The attribute's comment: “flatness and finite presentation of F are its only hypotheses on F, which is what the source assumes, and it carries no hypothesis about det(F)”. References: SGA 3 XV (5.7), “partial”.
+**`SheafOfModules.TensorExteriorSymmetricAlgebras.determinant_isInvertible_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DeterminantFinitePresentationFlat.lean, line 329](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DeterminantFinitePresentationFlat.lean#L329). The attribute's comment: “flatness and finite presentation of F are its only hypotheses on F, which is what the source assumes, and it carries no hypothesis about det(F)”. References: SGA 3 XV (5.7), “partial”.
 
 > **[Stacks, Tag 0FJN].** The determinant of a flat sheaf of modules of finite presentation on
 > a ringed space is an invertible module.
@@ -405,4 +405,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.26, Tag 0B37](https://stacks.math.columbia.edu/tag/0B37)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

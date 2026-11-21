@@ -7,11 +7,11 @@ proof: formalized
 
 # Common Guruswami-Sudan Root Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.Common`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.Common`, in [CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean), by Valerii Huhnin.
 
 > Executable helpers shared by bounded bivariate root backends.
 
-`CompPoly.GuruswamiSudan.initialCoefficientPolynomial` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L24))
+`CompPoly.GuruswamiSudan.initialCoefficientPolynomial` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L24))
 
 > The coefficient of `Y^j` in `Q(0, Y)`, as a polynomial in the next root
 > coefficient.
@@ -22,7 +22,7 @@ def initialCoefficientPolynomial {F : Type*}
     (Q : CBivariate F) : CPolynomial F
 ```
 
-`CompPoly.GuruswamiSudan.isRootYDegreeLtBool` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L32))
+`CompPoly.GuruswamiSudan.isRootYDegreeLtBool` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L32))
 
 > Executable final check for the GS root condition.
 
@@ -32,7 +32,7 @@ def isRootYDegreeLtBool {F : Type*}
     (Q : CBivariate F) (k : Nat) (p : CPolynomial F) : Bool
 ```
 
-`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L38))
+`CompPoly.GuruswamiSudan.rootsYDegreeLtFromCandidates` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L38))
 
 > Filter a candidate family to exact bounded-degree roots.
 
@@ -43,7 +43,7 @@ def rootsYDegreeLtFromCandidates {F : Type*}
     Array (CPolynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.extendPrefix` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L45))
+`CompPoly.GuruswamiSudan.extendPrefix` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L45))
 
 > Extend one candidate prefix by one coefficient at `X^depth`.
 
@@ -53,7 +53,7 @@ def extendPrefix {F : Type*}
     (pref : CPolynomial F) (depth : Nat) (coeff : F) : CPolynomial F
 ```
 
-`CompPoly.GuruswamiSudan.polynomialPrefix` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L51))
+`CompPoly.GuruswamiSudan.polynomialPrefix` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L51))
 
 > Truncate a polynomial to its first `n` coefficients.
 
@@ -62,7 +62,7 @@ def polynomialPrefix {R : Type*} [Zero R] [BEq R] [LawfulBEq R]
     (p : CPolynomial R) (n : Nat) : CPolynomial R
 ```
 
-`CompPoly.GuruswamiSudan.rootsInFieldForNonzeroEquation` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L61))
+`CompPoly.GuruswamiSudan.rootsInFieldForNonzeroEquation` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean#L61))
 
 > Query a field-root backend only for nonzero equations.
 >
@@ -81,5 +81,5 @@ def rootsInFieldForNonzeroEquation {F : Type*} [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/Common.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.Common.json)

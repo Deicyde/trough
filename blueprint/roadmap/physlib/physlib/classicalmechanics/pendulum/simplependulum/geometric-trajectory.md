@@ -8,7 +8,7 @@ proof: formalized
 
 # Geometric trajectories of the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Trajectory`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean): 11 declarations, 11 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Trajectory`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean): 11 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Traject
 > trajectory exactly when at each time they differ by some whole number of turns (possibly a
 > different number at different times).
 
-**`ClassicalMechanics.SimplePendulum.Trajectory`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L76).
+**`ClassicalMechanics.SimplePendulum.Trajectory`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L76).
 
 > A trajectory of the pendulum: a curve in the configuration space.
 
@@ -60,7 +60,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Traject
 abbrev Trajectory
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L81).
+**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L81).
 
 > The trajectory on the circle described by a lift `θ` of the angle.
 
@@ -68,7 +68,7 @@ abbrev Trajectory
 def ofLift (θ : Time → EuclideanSpace ℝ (Fin 1)) : Trajectory
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_apply`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L86).
+**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_apply`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L86).
 
 > At time `t` the trajectory described by a lift `θ` of the angle is the configuration at
 > angle `θ t 0`.
@@ -78,7 +78,7 @@ lemma ofLift_apply (θ : Time → EuclideanSpace ℝ (Fin 1)) (t : Time) :
     ofLift θ t = ConfigurationSpace.ofAngle (θ t 0)
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_eq_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L91).
+**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_eq_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L91).
 
 > Two lifts of the angle describe the same trajectory exactly when at each time they differ by
 > a whole number of turns.
@@ -88,7 +88,7 @@ lemma ofLift_eq_iff (θ₁ θ₂ : Time → EuclideanSpace ℝ (Fin 1)) :
     ofLift θ₁ = ofLift θ₂ ↔ ∀ t, ∃ n : ℤ, θ₂ t 0 = θ₁ t 0 + n * (2 * Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_add_int_mul_two_pi`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L97).
+**`ClassicalMechanics.SimplePendulum.Trajectory.ofLift_add_int_mul_two_pi`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L97).
 
 > Shifting a lift of the angle by a whole number of turns leaves the described trajectory
 > unchanged.
@@ -106,7 +106,7 @@ lemma ofLift_add_int_mul_two_pi (θ : Time → EuclideanSpace ℝ (Fin 1)) (n : 
 > smoothness of the lift is ordinary `ContDiff` smoothness, while smoothness of the trajectory is
 > manifold smoothness into the circle.
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.continuous_ofLift`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L116).
+**`ClassicalMechanics.SimplePendulum.Trajectory.continuous_ofLift`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L116).
 
 > The trajectory described by a continuous lift of the angle is continuous.
 
@@ -115,7 +115,7 @@ lemma continuous_ofLift {θ : Time → EuclideanSpace ℝ (Fin 1)} (hθ : Contin
     Continuous (ofLift θ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.contMDiff_ofLift`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L123).
+**`ClassicalMechanics.SimplePendulum.Trajectory.contMDiff_ofLift`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L123).
 
 > The trajectory described by a `C^n` lift of the angle is a `C^n` curve in the configuration
 > circle.
@@ -131,7 +131,7 @@ lemma contMDiff_ofLift {n : WithTop ℕ∞} {θ : Time → EuclideanSpace ℝ (F
 > Along the trajectory described by a lift the bob is at `(ℓ sin θ, -ℓ cos θ)`, and the rod-length
 > constraint holds at all times: the bob stays on the circle of radius `|ℓ|` about the pivot.
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.toSpace`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L139).
+**`ClassicalMechanics.SimplePendulum.Trajectory.toSpace`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L139).
 
 > The physical position of the bob along a trajectory, over time, for a rod of length `ℓ`.
 
@@ -139,7 +139,7 @@ lemma contMDiff_ofLift {n : WithTop ℕ∞} {θ : Time → EuclideanSpace ℝ (F
 def toSpace (ℓ : ℝ) (γ : Trajectory) (t : Time) : Space 2
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.toSpace_ofLift`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L143).
+**`ClassicalMechanics.SimplePendulum.Trajectory.toSpace_ofLift`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L143).
 
 > Along the trajectory described by a lift `θ` of the angle the bob is at
 > `(ℓ sin (θ t 0), -ℓ cos (θ t 0))`.
@@ -149,7 +149,7 @@ lemma toSpace_ofLift (ℓ : ℝ) (θ : Time → EuclideanSpace ℝ (Fin 1)) (t :
     toSpace ℓ (ofLift θ) t = ⟨![ℓ * Real.sin (θ t 0), -ℓ * Real.cos (θ t 0)]⟩
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.norm_toSpace`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L149).
+**`ClassicalMechanics.SimplePendulum.Trajectory.norm_toSpace`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L149).
 
 > The rod-length constraint along a trajectory: the bob stays at distance `|ℓ|` from the
 > pivot.
@@ -158,7 +158,7 @@ lemma toSpace_ofLift (ℓ : ℝ) (θ : Time → EuclideanSpace ℝ (Fin 1)) (t :
 lemma norm_toSpace (ℓ : ℝ) (γ : Trajectory) (t : Time) : ‖toSpace ℓ γ t‖ = |ℓ|
 ```
 
-**`ClassicalMechanics.SimplePendulum.Trajectory.continuous_toSpace`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L154).
+**`ClassicalMechanics.SimplePendulum.Trajectory.continuous_toSpace`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean#L154).
 
 > The physical position of the bob along a continuous trajectory depends continuously on the
 > time.
@@ -175,4 +175,4 @@ lemma continuous_toSpace (ℓ : ℝ) {γ : Trajectory} (hγ : Continuous γ) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean)

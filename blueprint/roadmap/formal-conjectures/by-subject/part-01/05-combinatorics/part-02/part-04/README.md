@@ -2,8 +2,12 @@
 navigation: transparent
 ---
 
-# The total colouring conjecture… to Green's Open Problem 25
+# Snake in the box to Ben Green's Open Problem 21
 
+- [Snake in the box](../../../../../wikipedia/part-08/snake-in-the-box.md)
+- [Sparse Ruler](../../../../../wikipedia/part-08/sparse-ruler.md)
+- [Steiner Systems](../../../../../wikipedia/part-08/steiner-systems.md)
+- [Sumner's universal tournament conjecture (1971)](../../../../../wikipedia/part-08/sumners-universal-tournament-conjecture-1971.md)
 - [The total colouring conjecture (Behzad 1965, Vizing 1968)](../../../../../wikipedia/part-09/the-total-colouring-conjecture-behzad-1965-vizin.md)
 - [Tuza's conjecture](../../../../../wikipedia/part-09/tuzas-conjecture.md)
 - [Union-closed sets conjecture](../../../../../wikipedia/part-09/union-closed-sets-conjecture.md)
@@ -20,7 +24,3 @@ navigation: transparent
 - [Ben Green's Open Problem 18](../../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 19](../../../../../greens-open-problems/part-01/ben-greens-open-problem-19.md)
 - [Ben Green's Open Problem 21](../../../../../greens-open-problems/part-01/ben-greens-open-problem-21.md)
-- [Green's Open Problem 22](../../../../../greens-open-problems/part-01/greens-open-problem-22.md)
-- [Green's Open Problem 23](../../../../../greens-open-problems/part-01/greens-open-problem-23.md)
-- [Green's Open Problem 24](../../../../../greens-open-problems/part-01/greens-open-problem-24.md)
-- [Green's Open Problem 25](../../../../../greens-open-problems/part-01/greens-open-problem-25.md)

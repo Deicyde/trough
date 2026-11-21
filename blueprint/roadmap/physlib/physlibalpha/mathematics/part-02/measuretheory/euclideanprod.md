@@ -8,7 +8,7 @@ proof: formalized
 
 # Integration over the Euclidean product
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.EuclideanProd`, [PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.EuclideanProd`, [PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean): 4 declarations, 4 with a docstring.
 
 > The Euclidean product `WithLp 2 (E × F)` carries the product of the Lebesgue measures.
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.EuclideanProd`, [PhyslibAlpha
 > - `EuclideanProd.norm_le_norm_toLp_right` : the second coordinate is dominated by the norm.
 > - `EuclideanProd.norm_toLp_zero` : the norm of a point with vanishing second coordinate.
 
-**`EuclideanProd.integral_withLp_prod`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L61).
+**`EuclideanProd.integral_withLp_prod`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L61).
 
 > Integration over the Euclidean product is iterated integration.
 
@@ -47,7 +47,7 @@ lemma integral_withLp_prod {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G
     ∫ z, φ z = ∫ p : E × F, φ (WithLp.toLp 2 p)
 ```
 
-**`EuclideanProd.integrable_withLp_prod`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L69).
+**`EuclideanProd.integrable_withLp_prod`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L69).
 
 > Integrability over the Euclidean product is integrability over the product.
 
@@ -56,7 +56,7 @@ lemma integrable_withLp_prod {G : Type*} [NormedAddCommGroup G] {φ : WithLp 2 (
     (hφ : Integrable φ) : Integrable (fun p : E × F => φ (WithLp.toLp 2 p))
 ```
 
-**`EuclideanProd.norm_le_norm_toLp_right`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L77).
+**`EuclideanProd.norm_le_norm_toLp_right`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L77).
 
 > The second coordinate is dominated by the norm of the point.
 
@@ -64,7 +64,7 @@ lemma integrable_withLp_prod {G : Type*} [NormedAddCommGroup G] {φ : WithLp 2 (
 lemma norm_le_norm_toLp_right (x : E) (y : F) : ‖y‖ ≤ ‖WithLp.toLp 2 (x, y)‖
 ```
 
-**`EuclideanProd.norm_toLp_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L84).
+**`EuclideanProd.norm_toLp_zero`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean#L84).
 
 > The norm of a point with vanishing second coordinate.
 
@@ -78,4 +78,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/EuclideanProd.lean)

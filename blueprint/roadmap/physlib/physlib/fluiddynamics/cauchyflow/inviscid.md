@@ -8,7 +8,7 @@ proof: formalized
 
 # Inviscid stress laws for Cauchy flows
 
-The module `Physlib.FluidDynamics.CauchyFlow.Inviscid`, [Physlib/FluidDynamics/CauchyFlow/Inviscid.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
+The module `Physlib.FluidDynamics.CauchyFlow.Inviscid`, [Physlib/FluidDynamics/CauchyFlow/Inviscid.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Inviscid`, [Physlib/FluidDynamics/C
 
 ## A. Inviscid stress law
 
-**`FluidDynamics.CauchyFlow.IsInviscid`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L54).
+**`FluidDynamics.CauchyFlow.IsInviscid`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L54).
 
 > A Cauchy flow is inviscid with pressure `p` when its stress is the isotropic pressure stress
 > `-p I`.
@@ -39,7 +39,7 @@ The module `Physlib.FluidDynamics.CauchyFlow.Inviscid`, [Physlib/FluidDynamics/C
 def IsInviscid (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) : Prop
 ```
 
-**`FluidDynamics.CauchyFlow.matrixDiv_inviscid_pressure_stress`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L58).
+**`FluidDynamics.CauchyFlow.matrixDiv_inviscid_pressure_stress`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L58).
 
 > The matrix divergence of the inviscid pressure stress `-p I` is `-grad p`.
 
@@ -49,7 +49,7 @@ lemma matrixDiv_inviscid_pressure_stress (d : ℕ) (pressureAtTime : Space d →
       -∇ pressureAtTime
 ```
 
-**`FluidDynamics.CauchyFlow.matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid`**, a theorem, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L73). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`FluidDynamics.CauchyFlow.matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid`**, a theorem, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean#L73). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > In an inviscid Cauchy flow, the stress-divergence force is the usual
 > negative pressure-gradient term.
@@ -68,4 +68,4 @@ theorem matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid
 
 ## Sources
 
-- [Physlib/FluidDynamics/CauchyFlow/Inviscid.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean)
+- [Physlib/FluidDynamics/CauchyFlow/Inviscid.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/CauchyFlow/Inviscid.lean)

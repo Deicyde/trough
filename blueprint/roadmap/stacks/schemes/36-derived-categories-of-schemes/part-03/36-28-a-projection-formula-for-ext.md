@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.28 A projection formula for Ext
 
-Section 36.28 of the Stacks Project, [Tag 08IC](https://stacks.math.columbia.edu/tag/08IC). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.28 of the Stacks Project, [Tag 08IC](https://stacks.math.columbia.edu/tag/08IC). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A1F, a lemma
 
 [Tag 0A1F](https://stacks.math.columbia.edu/tag/0A1F) in the Stacks Project.
 
-**`Stacks.Cohomology.ExtProjectionFormula.extCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormula.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormula.lean#L292). The attribute's comment: “the functorial isomorphisms for every i, as a natural isomorphism in ℱ ranging over all 𝒪\_S-modules rather than only the quasi-coherent ones, and Γ(S, 𝒪\_S)-linear; two steps of the source's proof are carried as explicit named hypotheses, the fields projectionFormula and mixedFlatTensor of ExtProjectionInput — invertibility of the projection-formula map of Tag 0B53 at ℱ, which is Tag 08EU and which this library proves only at ℱ = 𝒪\_S, and the identification of 𝒢 ⊗ᴸ Lf^*ℱ with 𝒢 ⊗ f^*ℱ, which is Tag 08DE together with flatness of the terms of 𝒢 over S; the remaining two steps, associativity of the derived tensor product and Leray, are proved, the latter in the unbounded form of Tag 0D5W; the compatibility with boundary maps is NOT carried”.
+**`Stacks.Cohomology.ExtProjectionFormula.extCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormula.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormula.lean#L292). The attribute's comment: “the functorial isomorphisms for every i, as a natural isomorphism in ℱ ranging over all 𝒪\_S-modules rather than only the quasi-coherent ones, and Γ(S, 𝒪\_S)-linear; two steps of the source's proof are carried as explicit named hypotheses, the fields projectionFormula and mixedFlatTensor of ExtProjectionInput — invertibility of the projection-formula map of Tag 0B53 at ℱ, which is Tag 08EU and which this library proves only at ℱ = 𝒪\_S, and the identification of 𝒢 ⊗ᴸ Lf^*ℱ with 𝒢 ⊗ f^*ℱ, which is Tag 08DE together with flatness of the terms of 𝒢 over S; the remaining two steps, associativity of the derived tensor product and Leray, are proved, the latter in the unbounded form of Tag 0D5W; the compatibility with boundary maps is NOT carried”.
 
 > In the situation of [Stacks, Tag 0DJQ] there are isomorphisms
 >
@@ -41,7 +41,7 @@ def extCohomologyIso (h : ExtProjectionInput f E G) (i : ℤ) :
       pullbackTensorFunctor f E G ⋙ cohomologyOnSource f i
 ```
 
-**`Stacks.Cohomology.ExtProjectionFormulaBoundary.extCohomologyIso_qcoh_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormulaBoundary.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormulaBoundary.lean#L183). The attribute's comment: “the functorial isomorphisms on quasi-coherent F for every i, and their compatibility with the boundary maps of every short exact sequence of quasi-coherent modules; H^i(S, -) = H^i of unbounded RΓ(S, -), H^i(X, -) as a Γ(S, O\_S)-module along f^♯, boundary maps the connecting morphisms of H^0 at the image under RΓ(S, -) of K ⊗^L (triangle of the sequence) and at the image under RΓ(X, E ⊗^L -) of the triangle of 0 → G ⊗ f^*F₁ → G ⊗ f^*F₂ → G ⊗ f^*F₃ → 0; no hypothesis beyond those of Tag 0DJQ”.
+**`Stacks.Cohomology.ExtProjectionFormulaBoundary.extCohomologyIso_qcoh_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormulaBoundary.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ExtProjectionFormulaBoundary.lean#L183). The attribute's comment: “the functorial isomorphisms on quasi-coherent F for every i, and their compatibility with the boundary maps of every short exact sequence of quasi-coherent modules; H^i(S, -) = H^i of unbounded RΓ(S, -), H^i(X, -) as a Γ(S, O\_S)-module along f^♯, boundary maps the connecting morphisms of H^0 at the image under RΓ(S, -) of K ⊗^L (triangle of the sequence) and at the image under RΓ(X, E ⊗^L -) of the triangle of 0 → G ⊗ f^*F₁ → G ⊗ f^*F₂ → G ⊗ f^*F₃ → 0; no hypothesis beyond those of Tag 0DJQ”.
 
 > **[Stacks, Tag 0A1F].**  Let `S` be a Noetherian scheme, `f : X ⟶ S` a morphism locally of
 > finite type, `E ∈ D(𝒪_X)` perfect and `𝒢` a bounded complex of coherent `𝒪_X`-modules, flat over
@@ -102,7 +102,7 @@ theorem extCohomologyIso_qcoh_boundary [IsNoetherian S] [LocallyOfFiniteType f]
 
 [Tag 08ID](https://stacks.math.columbia.edu/tag/08ID) in the Stacks Project.
 
-**`Stacks.Cohomology.ExtPerfectProjection.extIso_qcoh_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtPerfectProjectionBoundary.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ExtPerfectProjectionBoundary.lean#L206). The attribute's comment: “the functorial isomorphisms for every i, Ext^i read as Hom\_\{D(O\_X)}(E, -[i]), and their compatibility with the boundary maps of every short exact sequence of quasi-coherent modules (with ℱ₂ an arbitrary O\_S-module): the class of a boundary is the Yoneda composite with the connecting morphism of the triangle of 0 → G ⊗ f^*F₁ → G ⊗ f^*F₂ → G ⊗ f^*F₃ → 0; H^i(S, -) is H^i of unbounded RΓ(S, -) with its Γ(S, O\_S)-module structure forgotten”.
+**`Stacks.Cohomology.ExtPerfectProjection.extIso_qcoh_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ExtPerfectProjectionBoundary.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ExtPerfectProjectionBoundary.lean#L206). The attribute's comment: “the functorial isomorphisms for every i, Ext^i read as Hom\_\{D(O\_X)}(E, -[i]), and their compatibility with the boundary maps of every short exact sequence of quasi-coherent modules (with ℱ₂ an arbitrary O\_S-module): the class of a boundary is the Yoneda composite with the connecting morphism of the triangle of 0 → G ⊗ f^*F₁ → G ⊗ f^*F₂ → G ⊗ f^*F₃ → 0; H^i(S, -) is H^i of unbounded RΓ(S, -) with its Γ(S, O\_S)-module structure forgotten”.
 
 > **[Stacks, Tag 08ID].**  Let `S` be a Noetherian scheme, `f : X ⟶ S` locally of finite type,
 > `E` a perfect object of `D(𝒪_X)` and `𝒢` a bounded complex of coherent `𝒪_X`-modules, flat over
@@ -157,7 +157,7 @@ theorem extIso_qcoh_boundary [IsNoetherian S] [LocallyOfFiniteType f]
 
 [Tag 08IF](https://stacks.math.columbia.edu/tag/08IF) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeExt.exists_perfect_relativeExt_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartA.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartA.lean#L51). The attribute's comment: “(A)”.
+**`Stacks.Cohomology.RelativeExt.exists_perfect_relativeExt_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartA.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartA.lean#L51). The attribute's comment: “(A)”.
 
 > Let `S` be a Noetherian scheme, `f : X ⟶ S` a morphism locally of finite type,
 > `E ∈ D^-_{Coh}(𝒪_X)` and `𝒢` a bounded complex of coherent `𝒪_X`-modules, flat over `S`, with
@@ -193,7 +193,7 @@ theorem exists_perfect_relativeExt_comparison (E : DStd X) (hE : IsBoundedAboveC
             (hF : F.IsQuasicoherent), Function.Bijective (α i F hF))
 ```
 
-**`Stacks.Cohomology.RelativeExt.exists_pseudoCoherent_relativeExt_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartB.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartB.lean#L369). The attribute's comment: “(B)”.
+**`Stacks.Cohomology.RelativeExt.exists_pseudoCoherent_relativeExt_representative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartB.lean, line 369](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExt/PartB.lean#L369). The attribute's comment: “(B)”.
 
 > **[Stacks, Tag 08IF] (B).** Let `S` be a Noetherian scheme, `f : X ⟶ S` a morphism locally of
 > finite type, `E ∈ D^-_{Coh}(𝒪_X)` and `𝒢` a bounded complex of coherent `𝒪_X`-modules, flat over
@@ -230,7 +230,7 @@ theorem exists_pseudoCoherent_relativeExt_representative (E : DStd X)
 
 [Tag 0DJS](https://stacks.math.columbia.edu/tag/0DJS) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeExtCanonical.exists_baseChange_relativeExt_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/BaseChangeExt.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/BaseChangeExt.lean#L102). The attribute's comment: “base change”.
+**`Stacks.Cohomology.RelativeExtCanonical.exists_baseChange_relativeExt_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/BaseChangeExt.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/BaseChangeExt.lean#L102). The attribute's comment: “base change”.
 
 > **[Stacks, Tag 0DJS]: formation of the complex `L` of [Stacks, Tag 08IF] (B) is compatible
 > with base change.** Let `S` be Noetherian, `f : X ⟶ S` locally of finite type,
@@ -277,7 +277,7 @@ theorem exists_baseChange_relativeExt_iso :
             (θ.toIdentification (plusQCohDerived_biprod S')) i F' hF'
 ```
 
-**`Stacks.Cohomology.RelativeExtCanonical.exists_iso_pseudoCoherentRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/Canonicity.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/Canonicity.lean#L63). The attribute's comment: “canonical”.
+**`Stacks.Cohomology.RelativeExtCanonical.exists_iso_pseudoCoherentRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/Canonicity.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/RelativeExtCanonical/Canonicity.lean#L63). The attribute's comment: “canonical”.
 
 > **The pseudo-coherent complex `L` representing relative `Ext` is canonical.**
 > Let `S` be Noetherian, `f : X ⟶ S` locally of finite type, `E ∈ D^-_{Coh}(𝒪_X)` and `𝒢` a bounded
@@ -345,4 +345,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.28, Tag 08IC](https://stacks.math.columbia.edu/tag/08IC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

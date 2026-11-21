@@ -7,7 +7,7 @@ proof: formalized
 
 # Correctness of eight-limb CIOS Montgomery multiplication
 
-`CompPoly.Fields.Montgomery.Native64x8Mul`, in [CompPoly/Fields/Montgomery/Native64x8Mul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean), by Gregor Mitscha-Baude.
+`CompPoly.Fields.Montgomery.Native64x8Mul`, in [CompPoly/Fields/Montgomery/Native64x8Mul.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean), by Gregor Mitscha-Baude.
 
 > A CIOS round is the composition of an accumulation and a reduction step:
 >
@@ -28,7 +28,7 @@ proof: formalized
 
 > ### Arithmetic helpers
 
-`Montgomery.Native64x8.sum8_mul` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L40))
+`Montgomery.Native64x8.sum8_mul` (theorem, [line 40](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L40))
 
 > Scalar multiplication distributes over a limb recomposition.
 
@@ -40,7 +40,7 @@ theorem sum8_mul (a0 a1 a2 a3 a4 a5 a6 a7 b : ℕ) :
         2 ^ 128 * (a4 * b) + 2 ^ 160 * (a5 * b) + 2 ^ 192 * (a6 * b) + 2 ^ 224 * (a7 * b)
 ```
 
-`Montgomery.Native64x8.mul_sum8` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L48))
+`Montgomery.Native64x8.mul_sum8` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L48))
 
 > Scalar multiplication distributes over a limb recomposition, from the left.
 
@@ -52,7 +52,7 @@ theorem mul_sum8 (b a0 a1 a2 a3 a4 a5 a6 a7 : ℕ) :
         2 ^ 128 * (b * a4) + 2 ^ 160 * (b * a5) + 2 ^ 192 * (b * a6) + 2 ^ 224 * (b * a7)
 ```
 
-`Montgomery.Native64x8.Limbs8.toNat_mod` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L56))
+`Montgomery.Native64x8.Limbs8.toNat_mod` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L56))
 
 > The low limb of a bounded value is its residue modulo `2 ^ 32`.
 
@@ -63,19 +63,19 @@ theorem Limbs8.toNat_mod (x : Limbs8) (h : x.l0.toNat < 2 ^ 32) :
 
 > ### The accumulator
 
-`Montgomery.Native64x8.State9.zero_bounded` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L95))
+`Montgomery.Native64x8.State9.zero_bounded` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L95))
 
 ```lean
 theorem State9.zero_bounded : State9.zero.Bounded
 ```
 
-`Montgomery.Native64x8.State9.zero_toNat` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L99))
+`Montgomery.Native64x8.State9.zero_toNat` (theorem, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L99))
 
 ```lean
 theorem State9.zero_toNat : State9.zero.toNat = 0
 ```
 
-`Montgomery.Native64x8.State9.toNat_eq` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L103))
+`Montgomery.Native64x8.State9.toNat_eq` (theorem, [line 103](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L103))
 
 > The value of an accumulator in terms of its limbs.
 
@@ -88,7 +88,7 @@ theorem State9.toNat_eq (t : State9) :
 
 > ### The accumulation step
 
-`Montgomery.Native64x8.mulAccum_spec` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L113))
+`Montgomery.Native64x8.mulAccum_spec` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L113))
 
 > `mulAccum` adds `a * bi` to the accumulator exactly: the carry out of the top limb is
 > retained in the head limb.
@@ -102,7 +102,7 @@ theorem mulAccum_spec (a : Limbs8) (bi : UInt64) (t : State9) (ha : a.Bounded)
 
 > ### The reduction step
 
-`Montgomery.Native64x8.mulReduce_spec` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L162))
+`Montgomery.Native64x8.mulReduce_spec` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L162))
 
 > `mulReduce` adds the multiple of the modulus that cancels the low limb, and the division
 > by `2 ^ 32` performed by dropping that limb is exact.
@@ -118,7 +118,7 @@ theorem mulReduce_spec (q : Limbs8) (negInv : UInt64) (s : State9) (hq : q.Bound
 
 > ### The round invariant
 
-`Montgomery.Native64x8.mulRound_spec` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L218))
+`Montgomery.Native64x8.mulRound_spec` (theorem, [line 218](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L218))
 
 > The CIOS round invariant: one round accumulates `a * bi` and cancels the low limb against
 > a multiple `m` of the modulus; the accumulator stays limbwise bounded and below `2 * q`.
@@ -136,7 +136,7 @@ theorem mulRound_spec (q a : Limbs8) (negInv bi : UInt64) (t : State9)
 
 > ### The eight-round fold
 
-`Montgomery.Native64x8.mul_spec` (theorem, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L273))
+`Montgomery.Native64x8.mul_spec` (theorem, [line 273](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean#L273))
 
 > Montgomery multiplication is canonical and computes `a * b * (2 ^ 256)⁻¹ mod q`.
 
@@ -160,5 +160,5 @@ theorem mul_spec (q : Limbs8) (negInv : UInt64) (a b : Limbs8)
 
 ## Sources
 
-- [CompPoly/Fields/Montgomery/Native64x8Mul.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Montgomery/Native64x8Mul.lean)
+- [CompPoly/Fields/Montgomery/Native64x8Mul.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Montgomery/Native64x8Mul.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Montgomery.Native64x8Mul.json)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.18 Pushouts and fundamental groups
 
-Section 58.18 of the Stacks Project, [Tag 0EK3](https://stacks.math.columbia.edu/tag/0EK3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.18 of the Stacks Project, [Tag 0EK3](https://stacks.math.columbia.edu/tag/0EK3). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EK4, a lemma
 
 [Tag 0EK4](https://stacks.math.columbia.edu/tag/0EK4) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteEtalePushoutRestriction_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 878](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L878). The attribute's comment: “the restriction functor is an equivalence”.
+**`AlgebraicGeometry.finiteEtalePushoutRestriction_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 878](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L878). The attribute's comment: “the restriction functor is an equivalence”.
 
 > **Stacks Project, Tag 0EK4.**  The restriction functor
 > `FÉt_{Y ⨿_Z X} ⟶ FÉt_Y ×_{FÉt_Z} FÉt_X` is an equivalence of categories.  Composed with the
@@ -28,7 +28,7 @@ instance finiteEtalePushoutRestriction_isEquivalence
     (finiteEtalePushoutRestriction s).IsEquivalence
 ```
 
-**`AlgebraicGeometry.finiteEtalePushoutEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 894](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L894).
+**`AlgebraicGeometry.finiteEtalePushoutEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 894](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L894).
 
 > **Stacks Project, Tag 0EK4.**  In the pushout situation of [Stacks Project, Tag 0ECI] — for
 > example when `Z ⟶ Y` and `Z ⟶ X` are closed immersions of schemes — there is an equivalence of
@@ -45,7 +45,7 @@ noncomputable def finiteEtalePushoutEquivalence
       CategoricalPullback (finiteEtaleBaseChange s.j) (finiteEtaleBaseChange s.i)
 ```
 
-**`AlgebraicGeometry.finiteEtalePushoutEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 902](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L902). The attribute's comment: “the comparison functor”.
+**`AlgebraicGeometry.finiteEtalePushoutEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean, line 902](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtalePushout.lean#L902). The attribute's comment: “the comparison functor”.
 
 > The equivalence of [Stacks Project, Tag 0EK4] is the restriction functor.
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.18, Tag 0EK3](https://stacks.math.columbia.edu/tag/0EK3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

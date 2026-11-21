@@ -8,7 +8,7 @@ proof: formalized
 
 # The generator identifications respect the transformation data
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Structure`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean): 24 declarations, 24 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Structure`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean): 24 declarations, 24 with a docstring.
 
 ## i. Overview
 
@@ -79,7 +79,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Structur
 
 ### A.1. The Lorentz action
 
-**`StandardModel.fermionProj_comp_repLorentzGroup`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L112).
+**`StandardModel.fermionProj_comp_repLorentzGroup`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L112).
 
 > The projection onto a species intertwines the total Lorentz action on the fermionic
 > target space with that species' own.
@@ -90,7 +90,7 @@ lemma fermionProj_comp_repLorentzGroup (t : fieldData.FermionSpecies) (Λ : SL(2
       = ((fieldData.fermion t).repLorentz Λ).comp (fermionProj t)
 ```
 
-**`StandardModel.fermionSpaceEquiv_comp_repLorentzGroup`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L124).
+**`StandardModel.fermionSpaceEquiv_comp_repLorentzGroup`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L124).
 
 > The relabelling of the fermionic target space is Lorentz-equivariant. Both actions
 > are species-diagonal, so this is the previous lemma read one species at a time.
@@ -101,7 +101,7 @@ lemma fermionSpaceEquiv_comp_repLorentzGroup (Λ : SL(2,ℂ)) :
       = (fieldData.repLorentzFermionModule Λ).comp fermionSpaceEquiv.toLinearMap
 ```
 
-**`StandardModel.higgsModuleEquiv_comp_repLorentzGroup`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L133).
+**`StandardModel.higgsModuleEquiv_comp_repLorentzGroup`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L133).
 
 > The relabelling of the Higgs is Lorentz-equivariant. The Higgs is a Lorentz scalar,
 > so both sides are the identity; the content is that the one bosonic species of the datum
@@ -120,7 +120,7 @@ lemma higgsModuleEquiv_comp_repLorentzGroup (Λ : SL(2,ℂ)) :
 > The relabelling is the assembly of the fifteen projections, and a jet of the fermionic
 > module is determined by its species components, so the relabelling too is equivariant.
 
-**`StandardModel.lTensor_fermionProj_repJetGaugeGroupI`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L151).
+**`StandardModel.lTensor_fermionProj_repJetGaugeGroupI`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L151).
 
 > The projection onto a species intertwines the total jet gauge action on the jets of
 > the fermionic target space with that species' own.
@@ -133,7 +133,7 @@ lemma lTensor_fermionProj_repJetGaugeGroupI (t : fieldData.FermionSpecies)
         (LinearMap.lTensor SpaceTimeAlgebra (fermionProj t))
 ```
 
-**`StandardModel.lTensor_fermionSpaceEquiv_repJetGaugeGroupI`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L167).
+**`StandardModel.lTensor_fermionSpaceEquiv_repJetGaugeGroupI`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L167).
 
 > The relabelling of the fermionic target space is equivariant for the jet gauge
 > action. Both actions are species-diagonal, so this is the previous lemma read one
@@ -148,7 +148,7 @@ lemma lTensor_fermionSpaceEquiv_repJetGaugeGroupI (U : JetGaugeGroupI) :
         (LinearMap.lTensor SpaceTimeAlgebra fermionSpaceEquiv.toLinearMap)
 ```
 
-**`StandardModel.lTensor_higgsModuleEquiv_repJetGaugeGroupI`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L202).
+**`StandardModel.lTensor_higgsModuleEquiv_repJetGaugeGroupI`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L202).
 
 > The relabelling of the Higgs is equivariant for the jet gauge action. There is one
 > bosonic species, and reading it off undoes the relabelling, so both sides are the Higgs
@@ -172,7 +172,7 @@ lemma lTensor_higgsModuleEquiv_repJetGaugeGroupI (U : JetGaugeGroupI) :
 
 ### B.1. The Lorentz action
 
-**`StandardModel.fermionGeneratorsEquiv_repLorentzFermion`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L250).
+**`StandardModel.fermionGeneratorsEquiv_repLorentzFermion`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L250).
 
 > The fermionic generator identification intertwines the Lorentz actions: the
 > species-diagonal action of the datum with the Standard Model action on the component
@@ -186,7 +186,7 @@ lemma fermionGeneratorsEquiv_repLorentzFermion (Λ : SL(2,ℂ))
         (fermionGeneratorsEquiv v)
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_comp_repLorentzFermion`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L263).
+**`StandardModel.fermionGeneratorsEquiv_comp_repLorentzFermion`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L263).
 
 > The composed form of `fermionGeneratorsEquiv_repLorentzFermion`.
 
@@ -197,7 +197,7 @@ lemma fermionGeneratorsEquiv_comp_repLorentzFermion (Λ : SL(2,ℂ)) :
         fermionGeneratorsEquiv.toLinearMap
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_repLorentzBoson`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L273).
+**`StandardModel.bosonGeneratorsEquiv_repLorentzBoson`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L273).
 
 > The bosonic generator identification intertwines the Lorentz actions. The Higgs is
 > a Lorentz scalar, so both sides act only on the derivative labels; the content is that
@@ -212,7 +212,7 @@ lemma bosonGeneratorsEquiv_repLorentzBoson (Λ : SL(2,ℂ))
         (bosonGeneratorsEquiv w)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_comp_repLorentzBoson`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L286).
+**`StandardModel.bosonGeneratorsEquiv_comp_repLorentzBoson`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L286).
 
 > The composed form of `bosonGeneratorsEquiv_repLorentzBoson`.
 
@@ -223,7 +223,7 @@ lemma bosonGeneratorsEquiv_comp_repLorentzBoson (Λ : SL(2,ℂ)) :
           Λ).comp bosonGeneratorsEquiv.toLinearMap
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_repLorentzGroup`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L293).
+**`StandardModel.fermionGeneratorsEquiv_symm_repLorentzGroup`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L293).
 
 > The inverse form of `fermionGeneratorsEquiv_repLorentzFermion`.
 
@@ -235,7 +235,7 @@ lemma fermionGeneratorsEquiv_symm_repLorentzGroup (Λ : SL(2,ℂ))
       = fieldData.repLorentzFermion Λ (fermionGeneratorsEquiv.symm w)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_symm_repLorentzGroup`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L305).
+**`StandardModel.bosonGeneratorsEquiv_symm_repLorentzGroup`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L305).
 
 > The inverse form of `bosonGeneratorsEquiv_repLorentzBoson`.
 
@@ -255,7 +255,7 @@ lemma bosonGeneratorsEquiv_symm_repLorentzGroup (Λ : SL(2,ℂ))
 > separately. The inverse forms below are what the sector algebra equivalences of section C
 > consume.
 
-**`StandardModel.fermionGeneratorsEquiv_repJetFermion`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L331).
+**`StandardModel.fermionGeneratorsEquiv_repJetFermion`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L331).
 
 > The fermionic generator identification intertwines the jet gauge actions: the
 > species-diagonal action of the datum with the Standard Model action on the component
@@ -268,7 +268,7 @@ lemma fermionGeneratorsEquiv_repJetFermion (U : JetGaugeGroupI)
       = JetComponentSpace.repJet fermionMatterField U (fermionGeneratorsEquiv v)
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_repJet`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L342).
+**`StandardModel.fermionGeneratorsEquiv_symm_repJet`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L342).
 
 > The inverse form of `fermionGeneratorsEquiv_repJetFermion`.
 
@@ -279,7 +279,7 @@ lemma fermionGeneratorsEquiv_symm_repJet (U : JetGaugeGroupI)
       = fieldData.repJetFermion U (fermionGeneratorsEquiv.symm w)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_repJetBoson`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L354).
+**`StandardModel.bosonGeneratorsEquiv_repJetBoson`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L354).
 
 > The bosonic generator identification intertwines the jet gauge actions, at the one
 > Higgs species.
@@ -291,7 +291,7 @@ lemma bosonGeneratorsEquiv_repJetBoson (U : JetGaugeGroupI)
       = JetComponentSpace.repJet HiggsVec.matterField U (bosonGeneratorsEquiv v)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_symm_repJet`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L365).
+**`StandardModel.bosonGeneratorsEquiv_symm_repJet`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L365).
 
 > The inverse form of `bosonGeneratorsEquiv_repJetBoson`.
 
@@ -304,7 +304,7 @@ lemma bosonGeneratorsEquiv_symm_repJet (U : JetGaugeGroupI)
 
 ### B.3. The mass weights
 
-**`StandardModel.fermionGeneratorsEquiv_massWeightScaleFermion`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L387).
+**`StandardModel.fermionGeneratorsEquiv_massWeightScaleFermion`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L387).
 
 > The fermionic generator identification intertwines the mass-weight scalings: the
 > per-species scaling of the datum, which carries the weight three of every Standard Model
@@ -320,7 +320,7 @@ lemma fermionGeneratorsEquiv_massWeightScaleFermion (c : ℂ)
       = JetComponentSpace.massWeightScale 3 c (fermionGeneratorsEquiv v)
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_comp_massWeightScaleFermion`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L399).
+**`StandardModel.fermionGeneratorsEquiv_comp_massWeightScaleFermion`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L399).
 
 > The composed form of `fermionGeneratorsEquiv_massWeightScaleFermion`.
 
@@ -331,7 +331,7 @@ lemma fermionGeneratorsEquiv_comp_massWeightScaleFermion (c : ℂ) :
         fermionGeneratorsEquiv.toLinearMap
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_massWeightScaleBoson`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L407).
+**`StandardModel.bosonGeneratorsEquiv_massWeightScaleBoson`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L407).
 
 > The bosonic generator identification intertwines the mass-weight scalings, at the
 > Higgs weight two.
@@ -343,7 +343,7 @@ lemma bosonGeneratorsEquiv_massWeightScaleBoson (c : ℂ)
       = JetComponentSpace.massWeightScale 2 c (bosonGeneratorsEquiv w)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_comp_massWeightScaleBoson`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L419).
+**`StandardModel.bosonGeneratorsEquiv_comp_massWeightScaleBoson`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L419).
 
 > The composed form of `bosonGeneratorsEquiv_massWeightScaleBoson`.
 
@@ -363,7 +363,7 @@ lemma bosonGeneratorsEquiv_comp_massWeightScaleBoson (c : ℂ) :
 > maps on the free algebra — not by induction, unlike the derivative, since a group element
 > here acts by an algebra homomorphism.
 
-**`StandardModel.fermionAlgebraEquiv_repJetGaugeGroupI`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L439).
+**`StandardModel.fermionAlgebraEquiv_repJetGaugeGroupI`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L439).
 
 > The fermionic sector equivalence intertwines the jet gauge actions.
 
@@ -373,7 +373,7 @@ lemma fermionAlgebraEquiv_repJetGaugeGroupI (U : JetGaugeGroupI) (f : FermionJet
       = fieldData.repJetFermion.exteriorAlgebra U (fermionAlgebraEquiv f)
 ```
 
-**`StandardModel.higgsAlgebraEquiv_repJetGaugeGroupI`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L447).
+**`StandardModel.higgsAlgebraEquiv_repJetGaugeGroupI`**, a lemma, [line 447](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L447).
 
 > The Higgs sector equivalence intertwines the jet gauge actions.
 
@@ -383,7 +383,7 @@ lemma higgsAlgebraEquiv_repJetGaugeGroupI (U : JetGaugeGroupI) (h : HiggsJetAlge
       = fieldData.repJetBoson.symmetricAlgebra U (higgsAlgebraEquiv h)
 ```
 
-**`StandardModel.fermionAlgebraEquiv_repLorentzGroup`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L455).
+**`StandardModel.fermionAlgebraEquiv_repLorentzGroup`**, a lemma, [line 455](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L455).
 
 > The fermionic sector equivalence intertwines the Lorentz actions.
 
@@ -393,7 +393,7 @@ lemma fermionAlgebraEquiv_repLorentzGroup (Λ : SL(2,ℂ)) (f : FermionJetAlgebr
       = fieldData.repLorentzFermion.exteriorAlgebra Λ (fermionAlgebraEquiv f)
 ```
 
-**`StandardModel.higgsAlgebraEquiv_repLorentzGroup`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L463).
+**`StandardModel.higgsAlgebraEquiv_repLorentzGroup`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean#L463).
 
 > The Higgs sector equivalence intertwines the Lorentz actions.
 
@@ -413,4 +413,4 @@ lemma higgsAlgebraEquiv_repLorentzGroup (Λ : SL(2,ℂ)) (h : HiggsJetAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean)

@@ -17,7 +17,7 @@ navigation: transparent
 - [Smooth real-valued functions on space](smoothfunctions.md)
 - [Translations on space](translations.md)
 
-Modules in [Derivatives/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives):
+Modules in [Derivatives/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives):
 
 - [Derivatives on Space](derivatives-basic.md)
 - [Curl on Space](derivatives-curl.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.12 Special functors
 
-Section 57.12 of the Stacks Project, [Tag 0FZY](https://stacks.math.columbia.edu/tag/0FZY). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.12 of the Stacks Project, [Tag 0FZY](https://stacks.math.columbia.edu/tag/0FZY). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FZZ, a definition
 
 [Tag 0FZZ](https://stacks.math.columbia.edu/tag/0FZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.AreSiblingsPerfectRegularSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/AutoequivalenceSiblings.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/AutoequivalenceSiblings.lean#L105). The attribute's comment: “the case of a regular source: siblings of exact functors `D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` for `X` quasi-compact regular and `Y` Noetherian”.
+**`AlgebraicGeometry.AreSiblingsPerfectRegularSource`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/AutoequivalenceSiblings.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/AutoequivalenceSiblings.lean#L105). The attribute's comment: “the case of a regular source: siblings of exact functors `D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` for `X` quasi-compact regular and `Y` Noetherian”.
 
 > **Stacks Project, Tag 0FZZ, for a regular source.** If `X` is regular then
 > `D_perf(𝒪_X) = D^b_Coh(𝒪_X)` by [Stacks, Tag 0FDC], and the source uses the same terminology for
@@ -30,7 +30,7 @@ Section 57.12 of the Stacks Project, [Tag 0FZY](https://stacks.math.columbia.edu
 def _root_.AlgebraicGeometry.AreSiblingsPerfectRegularSource : Prop
 ```
 
-**`AlgebraicGeometry.AreSiblingsCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean#L195). The attribute's comment: “siblings of exact functors between the bounded coherent derived categories”.
+**`AlgebraicGeometry.AreSiblingsCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean#L195). The attribute's comment: “siblings of exact functors between the bounded coherent derived categories”.
 
 > **Stacks Project, Tag 0FZZ.** Two exact functors `D^b_Coh(𝒪_X) ⥤ D^b_Coh(𝒪_Y)` are
 > **siblings**, or `F'` is a **sibling** of `F`, if they are siblings in the sense of
@@ -43,7 +43,7 @@ def _root_.AlgebraicGeometry.AreSiblingsPerfectRegularSource : Prop
 def AreSiblingsCoherent : Prop
 ```
 
-**`AlgebraicGeometry.AreSiblingsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean#L282). The attribute's comment: “the regular case: siblings of exact functors between the perfect derived categories of quasi-compact regular schemes”.
+**`AlgebraicGeometry.AreSiblingsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/BoundedCoherent.lean#L282). The attribute's comment: “the regular case: siblings of exact functors between the perfect derived categories of quasi-compact regular schemes”.
 
 > **Stacks Project, Tag 0FZZ, the regular case.** On quasi-compact regular schemes
 > `D_perf(𝒪_X) = D^b_Coh(𝒪_X)` by [Stacks, Tag 0FDC], and the same terminology is used for exact
@@ -59,7 +59,7 @@ def AreSiblingsPerfect : Prop
 
 [Tag 0G00](https://stacks.math.columbia.edu/tag/0G00) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fourierMukai_areSiblingsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean#L269). The attribute's comment: “a k-linear exact functor of D^b\_Coh sending Coh into Coh has a sibling which is the Fourier-Mukai functor of a coherent kernel flat over X with support finite over Y”.
+**`AlgebraicGeometry.exists_fourierMukai_areSiblingsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean#L269). The attribute's comment: “a k-linear exact functor of D^b\_Coh sending Coh into Coh has a sibling which is the Fourier-Mukai functor of a coherent kernel flat over X with support finite over Y”.
 
 > Let `k` be a field, let `X` and `Y` be schemes of finite type over `k` with `X` separated, and
 > let `F : D^b_Coh(𝒪_X) ⥤ D^b_Coh(𝒪_Y)` be a `k`-linear exact functor sending
@@ -95,7 +95,7 @@ theorem exists_fourierMukai_areSiblingsCoherent [IsSeparated X.hom]
 
 [Tag 0G01](https://stacks.math.columbia.edu/tag/0G01) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_iso_of_areSiblings_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L739). The attribute's comment: “first sentence: siblings out of D^b\_Coh of a reduced projective scheme over a field, the first fully faithful, are isomorphic; the remaining sentences are commentary”.
+**`AlgebraicGeometry.nonempty_iso_of_areSiblings_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L739). The attribute's comment: “first sentence: siblings out of D^b\_Coh of a reduced projective scheme over a field, the first fully faithful, are isomorphic; the remaining sentences are commentary”.
 
 > **Stacks Project, Tag 0G01**, its first sentence. Let `k` be a field and `X` a reduced scheme
 > which is projective over `k` (`AlgebraicGeometry.IsProjective` of `f : X ⟶ Spec k`, the first
@@ -129,7 +129,7 @@ theorem _root_.AlgebraicGeometry.nonempty_iso_of_areSiblings_of_isProjective
 
 [Tag 0GX0](https://stacks.math.columbia.edu/tag/0GX0) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.essImage_of_agree_on_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/EssentialImage.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/EssentialImage.lean#L121).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.essImage_of_agree_on_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/EssentialImage.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/EssentialImage.lean#L121).
 
 > Let `k` be a field and let `X`, `Y` be proper schemes over `k` with
 > `X` regular. Let `F, G : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` be `k`-linear exact functors such that
@@ -159,7 +159,7 @@ theorem essImage_of_agree_on_zeroDimensional (hX : IsRegular X.left)
 
 [Tag 0G27](https://stacks.math.columbia.edu/tag/0G27) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_areSiblingsPerfect_of_fixes_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L145).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_areSiblingsPerfect_of_fixes_zeroDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L145).
 
 > **[Stacks, Tag 0G27].** Let `k` be a field, let `X` be a proper scheme over `k` which is
 > regular, and let `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_X)` be a `k`-linear exact functor. Assume that for
@@ -201,7 +201,7 @@ theorem exists_areSiblingsPerfect_of_fixes_zeroDimensional (hX : IsRegular X.lef
 
 [Tag 0G06](https://stacks.math.columbia.edu/tag/0G06) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_areSiblingsPerfectRegularSource_perfectFourierMukaiOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L392).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_areSiblingsPerfectRegularSource_perfectFourierMukaiOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L392).
 
 > **[Stacks, Tag 0G06].** Let `k` be a field, let `X`, `Y` be proper schemes over `k` with `X`
 > regular, and let `F, G : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` be `k`-linear exact functors such that
@@ -264,4 +264,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.12, Tag 0FZY](https://stacks.math.columbia.edu/tag/0FZY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

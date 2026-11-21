@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: UnitalPositiveLinearMap.mix, UnitalPositiveLinearMap.mix_apply, UnitalPositiveLinearMap.toLinearMap_mix, UnitalPositiveLinearMap.mix_symm, UnitalPositiveLinearMap.stateSpace, UnitalPositiveLinearMap.stateSpace_convex, UnitalPositiveLinearMap.IsPure, UnitalPositiveLinearMap.IsMixed
+lean: ProbabilisticTheory.State.mix, ProbabilisticTheory.State.mix_apply, ProbabilisticTheory.State.toLinearMap_mix, ProbabilisticTheory.State.mix_symm, ProbabilisticTheory.State.stateSpace, ProbabilisticTheory.State.stateSpace_convex, ProbabilisticTheory.State.IsPure, ProbabilisticTheory.State.IsMixed
 statement: formalized
 proof: formalized
 ---
 
 # Convex state spaces (Physlib)
 
-The module `Physlib.ProbabilisticTheory.State.Convex`, [Physlib/ProbabilisticTheory/State/Convex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean): 12 declarations, 12 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Convex`, [Physlib/ProbabilisticTheory/State/Convex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean): 12 declarations, 12 with a docstring.
 
 > Convexity of the state space and its pure and mixed states.
 
@@ -20,133 +20,133 @@ The module `Physlib.ProbabilisticTheory.State.Convex`, [Physlib/ProbabilisticThe
 
 ## ii. Key results
 
-> - `UnitalPositiveLinearMap.mix` : randomize between two states with a given probability.
-> - `UnitalPositiveLinearMap.stateSpace_convex` : the state space is convex in the algebraic dual.
-> - `UnitalPositiveLinearMap.IsPure` : pure states are extreme points of the state space.
-> - `UnitalPositiveLinearMap.isPure_iff_forall_mix_eq` : a pure state admits only trivial
+> - `ProbabilisticTheory.State.mix` : randomize between two states with a given probability.
+> - `ProbabilisticTheory.State.stateSpace_convex` : the state space is convex in the algebraic dual.
+> - `ProbabilisticTheory.State.IsPure` : pure states are extreme points of the state space.
+> - `ProbabilisticTheory.State.isPure_iff_forall_mix_eq` : a pure state admits only trivial
 >   genuine mixtures.
-> - `UnitalPositiveLinearMap.isMixed_iff_exists_mem_openSegment` : mixed states lie between
+> - `ProbabilisticTheory.State.isMixed_iff_exists_mem_openSegment` : mixed states lie between
 >   two other states.
 
 ## iv. References
 
 ## A. Mixing states
 
-**`UnitalPositiveLinearMap.mix`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L59).
+**`ProbabilisticTheory.State.mix`**, an abbrev, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L58).
 
 > Randomize between two states with probability `t` of choosing the first, so
 > `t • ω + σ t • φ` with `σ t = 1 - t`.
 
 ```lean
-def mix (ω φ : 𝓢[ℝ, E]) (t : unitInterval) : 𝓢[ℝ, E]
+abbrev mix (ω φ : P.State) (t : unitInterval) : P.State
 ```
 
-**`UnitalPositiveLinearMap.mix_apply`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L65).
+**`ProbabilisticTheory.State.mix_apply`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L62).
 
 > Evaluation of a mixture is the pointwise convex combination.
 
 ```lean
-lemma mix_apply (ω φ : 𝓢[ℝ, E]) (t : unitInterval) (A : E) :
+lemma mix_apply (ω φ : P.State) (t : unitInterval) (A : P.Observables) :
     mix ω φ t A = (t : ℝ) * ω A + (1 - (t : ℝ)) * φ A
 ```
 
-**`UnitalPositiveLinearMap.toLinearMap_mix`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L70).
+**`ProbabilisticTheory.State.toLinearMap_mix`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L66).
 
 > The underlying linear map of a mixture is the corresponding combination of linear maps.
 
 ```lean
-lemma toLinearMap_mix (ω φ : 𝓢[ℝ, E]) (t : unitInterval) :
+lemma toLinearMap_mix (ω φ : P.State) (t : unitInterval) :
     (mix ω φ t).toLinearMap = (t : ℝ) • ω.toLinearMap + (1 - (t : ℝ)) • φ.toLinearMap
 ```
 
-**`UnitalPositiveLinearMap.mix_symm`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L76).
+**`ProbabilisticTheory.State.mix_symm`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L71).
 
 > Swapping the two states swaps the weights: `σ` is the symmetry of the interval.
 
 ```lean
-lemma mix_symm (ω φ : 𝓢[ℝ, E]) (t : unitInterval) : mix ω φ t = mix φ ω (σ t)
+lemma mix_symm (ω φ : P.State) (t : unitInterval) : mix ω φ t = mix φ ω (σ t)
 ```
 
 ## B. The state space
 
-**`UnitalPositiveLinearMap.stateSpace`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L87).
+**`ProbabilisticTheory.State.stateSpace`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L81).
 
 > States embedded into the algebraic dual.
 
 ```lean
-def stateSpace : Set (E →ₗ[ℝ] ℝ)
+abbrev stateSpace : Set (P.Observables →ₗ[ℝ] ℝ)
 ```
 
-**`UnitalPositiveLinearMap.stateSpace_convex`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L91).
+**`ProbabilisticTheory.State.stateSpace_convex`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L85).
 
 > The state space is convex in the algebraic dual.
 
 ```lean
-lemma stateSpace_convex : Convex ℝ (stateSpace (E := E))
+lemma stateSpace_convex : Convex ℝ (stateSpace (P := P))
 ```
 
 ## C. Pure and mixed states
 
-**`UnitalPositiveLinearMap.IsPure`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L104).
+**`ProbabilisticTheory.State.IsPure`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L95).
 
 > A state is pure when it is an extreme point of the state space.
 
 ```lean
-def IsPure (ω : 𝓢[ℝ, E]) : Prop
+def IsPure (ω : P.State) : Prop
 ```
 
-**`UnitalPositiveLinearMap.IsMixed`**, a def, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L107).
+**`ProbabilisticTheory.State.IsMixed`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L98).
 
 > A state is mixed when it isn't pure.
 
 ```lean
-def IsMixed (ω : 𝓢[ℝ, E]) : Prop
+def IsMixed (ω : P.State) : Prop
 ```
 
-**`UnitalPositiveLinearMap.isPure_iff_forall_mem_openSegment`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L110).
+**`ProbabilisticTheory.State.isPure_iff_forall_mem_openSegment`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L101).
 
 > A state is pure exactly when any open segment containing it has both endpoints equal to it.
 
 ```lean
-lemma isPure_iff_forall_mem_openSegment {ω : 𝓢[ℝ, E]} :
-    ω.IsPure ↔ ∀ φ ψ : 𝓢[ℝ, E],
+lemma isPure_iff_forall_mem_openSegment {ω : P.State} :
+    ω.IsPure ↔ ∀ φ ψ : P.State,
       ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap → φ = ω ∧ ψ = ω
 ```
 
-**`UnitalPositiveLinearMap.isMixed_iff_exists_mem_openSegment`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L117).
+**`ProbabilisticTheory.State.isMixed_iff_exists_mem_openSegment`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L109).
 
 > A state is mixed exactly when it lies in an open segment with a different endpoint.
 
 ```lean
-lemma isMixed_iff_exists_mem_openSegment {ω : 𝓢[ℝ, E]} :
-    ω.IsMixed ↔ ∃ φ ψ : 𝓢[ℝ, E],
+lemma isMixed_iff_exists_mem_openSegment {ω : P.State} :
+    ω.IsMixed ↔ ∃ φ ψ : P.State,
       ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap ∧ (φ ≠ ω ∨ ψ ≠ ω)
 ```
 
-**`UnitalPositiveLinearMap.mem_openSegment_iff_exists_mix`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L123).
+**`ProbabilisticTheory.State.mem_openSegment_iff_exists_mix`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L115).
 
 > Open segments between states consist exactly of their genuine mixtures.
 
 ```lean
-lemma mem_openSegment_iff_exists_mix (ω φ ψ : 𝓢[ℝ, E]) :
+lemma mem_openSegment_iff_exists_mix (ω φ ψ : P.State) :
     ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap ↔
       ∃ t : unitInterval, 0 < t ∧ t < 1 ∧ mix φ ψ t = ω
 ```
 
-**`UnitalPositiveLinearMap.isPure_iff_forall_mix_eq`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean#L132).
+**`ProbabilisticTheory.State.isPure_iff_forall_mix_eq`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean#L121).
 
 > A state is pure exactly when every genuine binary mixture producing it is trivial.
 
 ```lean
-lemma isPure_iff_forall_mix_eq {ω : 𝓢[ℝ, E]} :
+lemma isPure_iff_forall_mix_eq {ω : P.State} :
     ω.IsPure ↔ ∀ φ ψ t, 0 < t → t < 1 → mix φ ψ t = ω → φ = ω ∧ ψ = ω
 ```
 
 ## Depends on
 
-- [Positive unital maps](../channel/basic.md)
-- [Ordered vector spaces and order units](../orderunit/basic.md)
+- [Convex spaces of channels](../channel/convex.md)
+- [States](basic.md)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Convex.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Convex.lean)
+- [Physlib/ProbabilisticTheory/State/Convex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Convex.lean)

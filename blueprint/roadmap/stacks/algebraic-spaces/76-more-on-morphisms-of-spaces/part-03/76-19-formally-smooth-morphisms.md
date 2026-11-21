@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.19 Formally smooth morphisms
 
-Section 76.19 of the Stacks Project, [Tag 049R](https://stacks.math.columbia.edu/tag/049R). 14 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.19 of the Stacks Project, [Tag 049R](https://stacks.math.columbia.edu/tag/049R). 14 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 060G, a definition
 
 [Tag 060G](https://stacks.math.columbia.edu/tag/060G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallySmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L68). The attribute's comment: “formal smoothness of a morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally smooth”.
+**`AlgebraicGeometry.Space.FormallySmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Defs.lean#L68). The attribute's comment: “formal smoothness of a morphism of algebraic spaces”. References: SGA 3 XI (1.6), “formally smooth”.
 
 > **Stacks 049S, part (1).** Every commutative affine square against a
 > square-zero closed immersion admits a lift.
@@ -29,7 +29,7 @@ public abbrev FormallySmooth {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type v} (a : 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.FormallySmooth.comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L68) (StacksFrontier).
+- [`AlgebraicGeometry.Space.FormallySmooth.comp`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L68) (StacksFrontier).
 
 ## Tag 061F, a lemma
 
@@ -37,7 +37,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.FormallySmooth.baseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L227), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L72) (StacksFrontier).
+- [`AlgebraicGeometry.Space.FormallySmooth.baseChange`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L227), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Spaces.lean#L72) (StacksFrontier).
 
 ## Tag 061G, a lemma
 
@@ -45,13 +45,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.formallyEtale_iff_formallySmooth_and_formallyUnramified`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean#L46), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L121) (StacksFrontier): “the same equivalence for a morphism of schemes”.
+- [`AlgebraicGeometry.formallyEtale_iff_formallySmooth_and_formallyUnramified`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Etale/FormallyEtaleSmoothUnramified.lean#L46), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallyEtale/Basic.lean#L121) (StacksFrontier): “the same equivalence for a morphism of schemes”.
 
 ## Tag 061H, a lemma
 
 [Tag 061H](https://stacks.math.columbia.edu/tag/061H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallySmooth_of_isEtale_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleSquare.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleSquare.lean#L56).
+**`AlgebraicGeometry.Space.formallySmooth_of_isEtale_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleSquare.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleSquare.lean#L56).
 
 > **Stacks 061H.** Let `ψ : U ⟶ V`, `u : U ⟶ X`, `v : V ⟶ Y` and `f : X ⟶ Y` be morphisms of
 > algebraic spaces over `S` forming a commuting square. If the two vertical arrows `u` and `v`
@@ -74,7 +74,7 @@ theorem formallySmooth_of_isEtale_square
 
 [Tag 04AM](https://stacks.math.columbia.edu/tag/04AM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_iff_isLocallyOfFinitePresentation_and_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/OfIsSmooth.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/OfIsSmooth.lean#L417).
+**`AlgebraicGeometry.Space.isSmooth_iff_isLocallyOfFinitePresentation_and_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/OfIsSmooth.lean, line 417](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/OfIsSmooth.lean#L417).
 
 > **Stacks 04AM.** A morphism of algebraic spaces over `S` is smooth exactly when it is locally
 > of finite presentation and formally smooth.
@@ -85,7 +85,7 @@ theorem isSmooth_iff_isLocallyOfFinitePresentation_and_formallySmooth
     IsSmooth B S hS f ↔ IsLocallyOfFinitePresentation B S hS f ∧ FormallySmooth f
 ```
 
-**`AlgebraicGeometry.Space.isSmooth_of_isLocallyOfFinitePresentation_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean, line 736](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean#L736). The attribute's comment: “condition (2) implies condition (1)”.
+**`AlgebraicGeometry.Space.isSmooth_of_isLocallyOfFinitePresentation_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean, line 736](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean#L736). The attribute's comment: “condition (2) implies condition (1)”.
 
 > **Stacks 04AM, the implication towards smoothness.** A morphism of algebraic spaces over
 > `S` which is locally of finite presentation and formally smooth is smooth.
@@ -105,7 +105,7 @@ theorem isSmooth_of_isLocallyOfFinitePresentation_of_formallySmooth
     IsSmooth B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_and_formallySmooth_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean#L759). The attribute's comment: “condition (1) implies condition (2), for a representable morphism”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_and_formallySmooth_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean, line 759](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFormallySmooth.lean#L759). The attribute's comment: “condition (1) implies condition (2), for a representable morphism”.
 
 > **Stacks 04AM, the implication from smoothness, for a representable morphism.** A smooth
 > representable morphism of algebraic spaces over `S` is locally of finite presentation and
@@ -130,7 +130,7 @@ theorem isLocallyOfFinitePresentation_and_formallySmooth_of_isSmooth
 
 [Tag 0CHJ](https://stacks.math.columbia.edu/tag/0CHJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isEtaleCovering_lift_of_isSmooth_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothStrongLift.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothStrongLift.lean#L195).
+**`AlgebraicGeometry.Space.exists_isEtaleCovering_lift_of_isSmooth_of_isThickeningHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothStrongLift.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmoothStrongLift.lean#L195).
 
 > **Stacks 0CHJ.** Let `S` be a scheme and consider a commutative square of algebraic spaces
 > over `S`
@@ -183,7 +183,7 @@ theorem exists_isEtaleCovering_lift_of_isSmooth_of_isThickeningHom
 
 [Tag 061I](https://stacks.math.columbia.edu/tag/061I) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyProjective_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean#L78). The attribute's comment: “for morphisms of schemes”. References: EGA IV (17.2.3), “(i) locally projective”.
+**`AlgebraicGeometry.isLocallyProjective_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FormallySmooth/Differentials.lean#L78). The attribute's comment: “for morphisms of schemes”. References: EGA IV (17.2.3), “(i) locally projective”.
 
 > **Stacks 06B5.** The sheaf of relative differentials of a formally smooth morphism of
 > schemes is locally projective on its source. This is **Stacks 061I** for a morphism of
@@ -195,7 +195,7 @@ theorem isLocallyProjective_relativeDifferentials {X S : Scheme.{u}} {f : X ⟶ 
     Scheme.Modules.IsLocallyProjective (Scheme.Hom.relativeDifferentials f)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyProjective_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsLocallyProjective.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsLocallyProjective.lean#L206).
+**`AlgebraicGeometry.Space.isLocallyProjective_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsLocallyProjective.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsLocallyProjective.lean#L206).
 
 > **Stacks 061I.**  The sheaf of relative differentials `Ω_{X/Y}` of a formally smooth
 > morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S` is locally projective on `X`.
@@ -211,7 +211,7 @@ theorem isLocallyProjective_sheafOfDifferentials {X Y : AlgebraicSpaces B S hS} 
 
 [Tag 061J](https://stacks.math.columbia.edu/tag/061J) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.subsingleton_sheafH_one_sheafHom_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean#L343).
+**`AlgebraicGeometry.SmallEtale.subsingleton_sheafH_one_sheafHom_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean#L343).
 
 > **Stacks 061J for an associated module.**  Let `T` be an affine scheme and let `M` be a
 > locally projective quasi-coherent `𝒪_T`-module.  The first cohomology of the internal hom from
@@ -227,7 +227,7 @@ public theorem subsingleton_sheafH_one_sheafHom_associatedModule
         (sheafHom B T hT ((associatedModule B T hT).obj M) G)) 1)
 ```
 
-**`AlgebraicGeometry.SmallEtale.subsingleton_sheafH_one_sheafHom_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean#L359).
+**`AlgebraicGeometry.SmallEtale.subsingleton_sheafH_one_sheafHom_of_isLocallyProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean, line 359](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/InternalHomAffineVanishing.lean#L359).
 
 > **Stacks 061J.**  Let `T` be an affine scheme and let `𝓕` and `𝓖` be quasi-coherent
 > `𝒪`-modules on the small étale site of `T`.  If `𝓕` is locally projective — that is, if its
@@ -249,7 +249,7 @@ public theorem subsingleton_sheafH_one_sheafHom_of_isLocallyProjective
 
 [Tag 061K](https://stacks.math.columbia.edu/tag/061K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallySmooth_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/ChartGlue/Main061K.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/ChartGlue/Main061K.lean#L317).
+**`AlgebraicGeometry.Space.formallySmooth_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/ChartGlue/Main061K.lean, line 317](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/ChartGlue/Main061K.lean#L317).
 
 > **Stacks 061K.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S`, the following are
 > equivalent:
@@ -281,7 +281,7 @@ theorem formallySmooth_tfae_etaleCharts (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 06CS](https://stacks.math.columbia.edu/tag/06CS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallySmooth_isLocalAtTarget_fpqc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/FpqcLocalAtTarget.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/FpqcLocalAtTarget.lean#L57). The attribute's comment: “formal smoothness of morphisms of algebraic spaces is fpqc local on the base”.
+**`AlgebraicGeometry.Space.formallySmooth_isLocalAtTarget_fpqc'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/FpqcLocalAtTarget.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/FpqcLocalAtTarget.lean#L57). The attribute's comment: “formal smoothness of morphisms of algebraic spaces is fpqc local on the base”.
 
 > **[Stacks Project, Tag 06CS].** Formal smoothness of morphisms of algebraic spaces over `S`
 > is local on the base for the fpqc topology of Stacks 03YH: for every fpqc covering `{Yᵢ ⟶ Y}` of
@@ -300,7 +300,7 @@ theorem formallySmooth_isLocalAtTarget_fpqc' (B : BigFppfSite.{u}) (S : Scheme.{
 
 [Tag 06BI](https://stacks.math.columbia.edu/tag/06BI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.triangleDifferentials_shortExact_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeComparisonMapSquare.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeComparisonMapSquare.lean#L571). The attribute's comment: “for f formally smooth, 0 → f^*Ω\_\{Y/Z} → Ω\_\{X/Z} → Ω\_\{X/Y} → 0 is short exact; unconditional”.
+**`AlgebraicGeometry.Space.triangleDifferentials_shortExact_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeComparisonMapSquare.lean, line 571](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeComparisonMapSquare.lean#L571). The attribute's comment: “for f formally smooth, 0 → f^*Ω\_\{Y/Z} → Ω\_\{X/Z} → Ω\_\{X/Y} → 0 is short exact; unconditional”.
 
 > **Stacks 06BI.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of algebraic spaces over `S`
 > with `f` formally smooth.  Then the sequence `0 ⟶ f^*Ω_{Y/Z} ⟶ Ω_{X/Z} ⟶ Ω_{X/Y} ⟶ 0` of
@@ -323,7 +323,7 @@ theorem triangleDifferentials_shortExact_of_formallySmooth (f : X ⟶ Y) (g : Y 
 
 [Tag 06BJ](https://stacks.math.columbia.edu/tag/06BJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.conormalSequence_shortExact_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallySmoothShortExact.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallySmoothShortExact.lean#L190).
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.conormalSequence_shortExact_of_formallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallySmoothShortExact.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallySmoothShortExact.lean#L190).
 
 > **Stacks 06BJ.**  Let `h = ι ≫ h' : Z ⟶ X` be a formally unramified morphism of algebraic
 > spaces over `Y`, with universal first order thickening `Z ⊂ Z'` over `X` given by `hZ`, and
@@ -350,7 +350,7 @@ theorem conormalSequence_shortExact_of_formallySmooth
 
 [Tag 06BK](https://stacks.math.columbia.edu/tag/06BK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_retraction_modulePullback_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L307). The attribute's comment: “the first arrow of the conormal sequence is split over an affine étale chart”.
+**`AlgebraicGeometry.Space.exists_retraction_modulePullback_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L307). The attribute's comment: “the first arrow of the conormal sequence is split over an affine étale chart”.
 
 > **Stacks 06BK: the first arrow of the conormal sequence is étale-locally split.**  Let
 > `i : Z ⟶ X` and `j : Z ⟶ Y` sit in a commutative triangle `i ≫ g = j` with `g` formally
@@ -378,7 +378,7 @@ theorem exists_retraction_modulePullback_conormalMap_universalThickening (g : X 
           (universalThickeningComparison_square B S hS g hij ti tj)) ≫ r = 𝟙 _
 ```
 
-**`AlgebraicGeometry.Space.exists_retraction_cover_modulePullback_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L405). The attribute's comment: “the first arrow of the conormal sequence is split over a covering by affine étale charts”.
+**`AlgebraicGeometry.Space.exists_retraction_cover_modulePullback_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L405). The attribute's comment: “the first arrow of the conormal sequence is split over a covering by affine étale charts”.
 
 > **Stacks 06BK, in a covering form.**  Under the hypotheses of
 > `AlgebraicGeometry.Space.exists_retraction_modulePullback_conormalMap_universalThickening`, an
@@ -401,7 +401,7 @@ theorem exists_retraction_cover_modulePullback_conormalMap_universalThickening (
               (universalThickeningComparison_square B S hS g hij ti tj)) ≫ r = 𝟙 _
 ```
 
-**`AlgebraicGeometry.Space.mono_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L438). The attribute's comment: “the conormal sequence is exact on the left”.
+**`AlgebraicGeometry.Space.mono_conormalMap_universalThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean, line 438](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairSplitting.lean#L438). The attribute's comment: “the conormal sequence is exact on the left”.
 
 > **Stacks 06BK: the conormal sequence is exact on the left.**  Let `i : Z ⟶ X` and
 > `j : Z ⟶ Y` sit in a commutative triangle `i ≫ g = j` with `g` formally smooth, and let
@@ -434,4 +434,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.19, Tag 049R](https://stacks.math.columbia.edu/tag/049R)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

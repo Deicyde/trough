@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.3 Properties of diagonals
 
-Section 101.3 of the Stacks Project, [Tag 04XQ](https://stacks.math.columbia.edu/tag/04XQ). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.3 of the Stacks Project, [Tag 04XQ](https://stacks.math.columbia.edu/tag/04XQ). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04XR, a lemma
 
 [Tag 04XR](https://stacks.math.columbia.edu/tag/04XR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_isomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomPresheafFiniteType.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomPresheafFiniteType.lean#L318).
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_isomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomPresheafFiniteType.lean, line 318](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomPresheafFiniteType.lean#L318).
 
 > Let `𝒳` be an algebraic stack over `S`, let `T` be an object of the big fppf site of `S` and
 > let `x`, `y` be two objects of the fibre of `𝒳` over `T`. Then the structural morphism of the
@@ -36,7 +36,7 @@ theorem isLocallyOfFiniteType_isomPresheaf
 
 [Tag 04YP](https://stacks.math.columbia.edu/tag/04YP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isomSpaceOver_isGroupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupAlgebraicSpace.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupAlgebraicSpace.lean#L49). The attribute's comment: “part (1): Isom(y, y) is a group algebraic space over T”.
+**`AlgebraicGeometry.Stack.isomSpaceOver_isGroupAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupAlgebraicSpace.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupAlgebraicSpace.lean#L49). The attribute's comment: “part (1): Isom(y, y) is a group algebraic space over T”.
 
 > **Stacks 04YP, part (1).** For an object `y` of the fibre category of an algebraic stack `𝒳`
 > over a scheme `T` of the big fppf site of `S`, `Isom_𝒳(y, y)` is a group algebraic space over
@@ -64,7 +64,7 @@ theorem isomSpaceOver_isGroupAlgebraicSpace (B : BigFppfSite.{u})
           isomSpaceComp B S hS 𝒳 U y V ((a.left.app V) t) ((b.left.app V) t)
 ```
 
-**`AlgebraicGeometry.Stack.isomSpaceOverGrpObj_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L692). The attribute's comment: “part (1): the group law is composition of automorphisms”.
+**`AlgebraicGeometry.Stack.isomSpaceOverGrpObj_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 692](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L692). The attribute's comment: “part (1): the group law is composition of automorphisms”.
 
 > **The group law of `Isom_𝒳(y, y)` is composition of local automorphisms.** On a pair of
 > sections of `Isom_𝒳(y, y)` over a test object `Q`, the multiplication of
@@ -90,7 +90,7 @@ theorem isomSpaceOverGrpObj_mul (B : BigFppfSite.{u})
         ((b.left.app V) t))
 ```
 
-**`AlgebraicGeometry.Stack.isomSpaceOverModObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L719). The attribute's comment: “part (2): the action by postcomposition”.
+**`AlgebraicGeometry.Stack.isomSpaceOverModObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 719](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L719). The attribute's comment: “part (2): the action by postcomposition”.
 
 > **Stacks 04YP, part (2): the action.** `Isom_𝒳(y, y)` acts on `Isom_𝒳(x, y)` over
 > `AlgebraicGeometry.Stack.siteTerminalSpace`, by postcomposition.
@@ -108,7 +108,7 @@ noncomputable def isomSpaceOverModObj
     ModObj G P
 ```
 
-**`AlgebraicGeometry.Stack.isomSpaceOverModObj_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 752](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L752). The attribute's comment: “part (2): the action is postcomposition”.
+**`AlgebraicGeometry.Stack.isomSpaceOverModObj_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 752](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L752). The attribute's comment: “part (2): the action is postcomposition”.
 
 > **The action of `Isom_𝒳(y, y)` on `Isom_𝒳(x, y)` is postcomposition.** On a section of
 > `Isom_𝒳(y, y)` and a section of `Isom_𝒳(x, y)` over a test object `Q`, the action of
@@ -137,7 +137,7 @@ theorem isomSpaceOverModObj_smul
       isomSpaceSmul B S hS 𝒳 U x y V ((p.left.app V) t) ((g.left.app V) t)
 ```
 
-**`AlgebraicGeometry.Stack.isomSpaceOver_isPseudoTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L810). The attribute's comment: “part (2): isomorphism pseudo-torsor”.
+**`AlgebraicGeometry.Stack.isomSpaceOver_isPseudoTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 810](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L810). The attribute's comment: “part (2): isomorphism pseudo-torsor”.
 
 > **Stacks 04YP, part (2).** `Isom_𝒳(x, y)` is a pseudo-torsor under `Isom_𝒳(y, y)` over `U`:
 > the shear map `(g, p) ↦ (p ≫ g, p)` is an isomorphism, because for two local isomorphisms
@@ -156,7 +156,7 @@ theorem isomSpaceOver_isPseudoTorsor
     IsPseudoTorsor G P
 ```
 
-**`AlgebraicGeometry.Stack.automorphismGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L868). The attribute's comment: “part (1): automorphism group algebraic space”.
+**`AlgebraicGeometry.Stack.automorphismGroupSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean, line 868](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/IsomGroupSpace.lean#L868). The attribute's comment: “part (1): automorphism group algebraic space”.
 
 > **Stacks 04YP, part (1).** For an object `y` of the fibre category of an algebraic stack `𝒳`
 > over a scheme `T` of the big fppf site of `S`, the automorphisms of `y` form a group algebraic
@@ -180,7 +180,7 @@ def automorphismGroupSpace (B : BigFppfSite.{u})
 
 [Tag 04XS](https://stacks.math.columbia.edu/tag/04XS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean#L266). The attribute's comment: “diagonal\_locally\_finite\_type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean#L266). The attribute's comment: “diagonal\_locally\_finite\_type”.
 
 > **Stacks 04XS, part (2).** The relative diagonal of a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks over the big fppf site of `S` is locally of finite type: it is representable by algebraic
@@ -212,7 +212,7 @@ theorem isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean#L103). The attribute's comment: “diagonal\_representable”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean#L103). The attribute's comment: “diagonal\_representable”.
 
 > **Stacks 04XS, part (1).** The relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` of a
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over the big fppf site of `S` is representable by
@@ -237,7 +237,7 @@ theorem isRepresentableByAlgebraicSpaces_relativeDiagonal_of_isAlgebraicStack
 
 [Tag 04YQ](https://stacks.math.columbia.edu/tag/04YQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.mono_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L261). The attribute's comment: “part (3): monomorphism”.
+**`AlgebraicGeometry.Stack.mono_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L261). The attribute's comment: “part (3): monomorphism”.
 
 > **Stacks 04YQ, part (3).** The relative diagonal of a 1-morphism of algebraic stacks over
 > the big fppf site of `S` which is representable by algebraic spaces is a monomorphism: it is
@@ -266,7 +266,7 @@ theorem mono_relativeDiagonal_of_isRepresentableByAlgebraicSpaces
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩))
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L293). The attribute's comment: “part (4): separated”.
+**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 293](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L293). The attribute's comment: “part (4): separated”.
 
 > **Stacks 04YQ, part (4).** The relative diagonal of a 1-morphism of algebraic stacks over
 > the big fppf site of `S` which is representable by algebraic spaces is separated: it is
@@ -298,7 +298,7 @@ theorem isSeparated_relativeDiagonal_of_isRepresentableByAlgebraicSpaces
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean#L195). The attribute's comment: “part (5): locally quasi-finite”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean#L195). The attribute's comment: “part (5): locally quasi-finite”.
 
 > **Stacks 04YQ, part (5).** The relative diagonal of a 1-morphism of algebraic stacks over
 > the big fppf site of `S` which is representable by algebraic spaces is locally quasi-finite: it
@@ -331,7 +331,7 @@ theorem isLocallyQuasiFinite_relativeDiagonal_of_isRepresentableByAlgebraicSpace
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean#L236). The attribute's comment: “part (2): locally of finite type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean, line 236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalQuasiFinite.lean#L236). The attribute's comment: “part (2): locally of finite type”.
 
 > **Stacks 04YQ, part (2).** The relative diagonal of a 1-morphism of algebraic stacks over
 > the big fppf site of `S` which is representable by algebraic spaces is locally of finite type:
@@ -368,7 +368,7 @@ theorem isLocallyOfFiniteType_relativeDiagonal_of_isRepresentableByAlgebraicSpac
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableMorphism_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentableBySchemes.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentableBySchemes.lean#L316). The attribute's comment: “part (1): representable by schemes”.
+**`AlgebraicGeometry.Stack.isRepresentableMorphism_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentableBySchemes.lean, line 316](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentableBySchemes.lean#L316). The attribute's comment: “part (1): representable by schemes”.
 
 > The relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` of a 1-morphism `f` of algebraic stacks
 > over the big fppf site of `S` which is representable by algebraic spaces is a *representable*
@@ -388,7 +388,7 @@ theorem isRepresentableMorphism_relativeDiagonal_of_isRepresentableByAlgebraicSp
 
 [Tag 04YS](https://stacks.math.columbia.edu/tag/04YS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedDiagonalTFAE.lean, line 690](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedDiagonalTFAE.lean#L690).
+**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedDiagonalTFAE.lean, line 690](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedDiagonalTFAE.lean#L690).
 
 > **Stacks 04YS.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces and write `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` for its relative
@@ -416,7 +416,7 @@ theorem isSeparated_relativeDiagonal_tfae :
 
 [Tag 04YT](https://stacks.math.columbia.edu/tag/04YT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompact_relativeDiagonal_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean#L136). The attribute's comment: “the implication (3) => (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompact_relativeDiagonal_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean#L136). The attribute's comment: “the implication (3) => (2)”.
 
 > If the relative diagonal `Δ_f` of a 1-morphism of algebraic stacks over `S` is of finite
 > type, then it is quasi-compact.
@@ -429,7 +429,7 @@ theorem isQuasiCompact_relativeDiagonal_of_isFiniteType (f : 𝒵 ⟶ 𝒯)
       (Stack.relativeDiagonal.{u, u, u + 1} B S hS 𝒵.val 𝒯.val f.hom)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_relativeDiagonal_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean#L146). The attribute's comment: “the implication (2) => (3)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiniteType_relativeDiagonal_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonal.lean#L146). The attribute's comment: “the implication (2) => (3)”.
 
 > If the relative diagonal `Δ_f` of a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces is quasi-compact, then it is of finite type.
@@ -443,7 +443,7 @@ theorem isFiniteType_relativeDiagonal_of_isQuasiCompact (f : 𝒵 ⟶ 𝒯)
       (Stack.relativeDiagonal.{u, u, u + 1} B S hS 𝒵.val 𝒯.val f.hom)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_relativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonalTFAE.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonalTFAE.lean#L66).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_relativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonalTFAE.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDiagonalTFAE.lean#L66).
 
 > **Stacks 04YT.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces and write `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` for its relative
@@ -471,7 +471,7 @@ theorem isQuasiSeparated_relativeDiagonal_tfae (f : 𝒵 ⟶ 𝒯)
 
 [Tag 04YU](https://stacks.math.columbia.edu/tag/04YU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallySeparated_iff_isImmersion_relativeDiagonalAlgebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallySeparatedDiagonal.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallySeparatedDiagonal.lean#L233).
+**`AlgebraicGeometry.Stack.isLocallySeparated_iff_isImmersion_relativeDiagonalAlgebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallySeparatedDiagonal.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallySeparatedDiagonal.lean#L233).
 
 > **Stacks 04YU.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces. Then `f` is locally separated, in the relative sense of
@@ -497,4 +497,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.3, Tag 04XQ](https://stacks.math.columbia.edu/tag/04XQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

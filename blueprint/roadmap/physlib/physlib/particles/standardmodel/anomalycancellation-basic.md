@@ -8,11 +8,11 @@ proof: formalized
 
 # Anomaly cancellation conditions for the n-family SM.
 
-The module `Physlib.Particles.StandardModel.AnomalyCancellation.Basic`, [Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean): 27 declarations, 23 with a docstring.
+The module `Physlib.Particles.StandardModel.AnomalyCancellation.Basic`, [Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean): 27 declarations, 23 with a docstring.
 
 > We define the ACC system for the Standard Model with`n`-families and no RHN.
 
-**`SMCharges`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L24).
+**`SMCharges`**, a def, [line 24](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L24).
 
 > Associate to each (including RHN) SM fermion a set of charges
 
@@ -20,7 +20,7 @@ The module `Physlib.Particles.StandardModel.AnomalyCancellation.Basic`, [Physlib
 def SMCharges (n : ℕ) : ACCSystemCharges
 ```
 
-**`SMSpecies`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L28).
+**`SMSpecies`**, a def, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L28).
 
 > The vector space associated with a single species of fermions.
 
@@ -28,7 +28,7 @@ def SMCharges (n : ℕ) : ACCSystemCharges
 def SMSpecies (n : ℕ) : ACCSystemCharges
 ```
 
-**`SMCharges.sum_SMSpecies_numberCharges_one`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L35).
+**`SMCharges.sum_SMSpecies_numberCharges_one`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L35).
 
 ```lean
 lemma sum_SMSpecies_numberCharges_one {M} [AddCommMonoid M]
@@ -36,7 +36,7 @@ lemma sum_SMSpecies_numberCharges_one {M} [AddCommMonoid M]
     ∑ i, f i = f ⟨0, by simp⟩
 ```
 
-**`SMCharges.toSpeciesEquiv`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L45).
+**`SMCharges.toSpeciesEquiv`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L45).
 
 > An equivalence between the set `(SMCharges n).charges` and the set
 > `(Fin 5 → Fin n → ℚ)`.
@@ -45,7 +45,7 @@ lemma sum_SMSpecies_numberCharges_one {M} [AddCommMonoid M]
 def toSpeciesEquiv : (SMCharges n).Charges ≃ (Fin 5 → Fin (SMSpecies n).numberCharges → ℚ)
 ```
 
-**`SMCharges.toSpecies`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L51).
+**`SMCharges.toSpecies`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L51).
 
 > For a given `i ∈ Fin 5`, the projection of a charge onto that species.
 
@@ -53,28 +53,28 @@ def toSpeciesEquiv : (SMCharges n).Charges ≃ (Fin 5 → Fin (SMSpecies n).numb
 def toSpecies (i : Fin 5) : (SMCharges n).Charges →ₗ[ℚ] (SMSpecies n).Charges
 ```
 
-**`SMCharges.toSpecies_apply_eq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L56).
+**`SMCharges.toSpecies_apply_eq`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L56).
 
 ```lean
 lemma toSpecies_apply_eq (i : Fin 5) (S : (SMCharges n).Charges) :
     toSpecies i S = fun j => toSpeciesEquiv S i j
 ```
 
-**`SMCharges.charges_eq_toSpecies_eq`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L59).
+**`SMCharges.charges_eq_toSpecies_eq`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L59).
 
 ```lean
 lemma charges_eq_toSpecies_eq (S T : (SMCharges n).Charges) :
     S = T ↔ ∀ i, toSpecies i S = toSpecies i T
 ```
 
-**`SMCharges.toSMSpecies_toSpecies_inv`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L66).
+**`SMCharges.toSMSpecies_toSpecies_inv`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L66).
 
 ```lean
 lemma toSMSpecies_toSpecies_inv (i : Fin 5) (f : Fin 5 → Fin n → ℚ) :
     (toSpecies i) (toSpeciesEquiv.symm f) = f i
 ```
 
-**`SMCharges.Q`**, an abbrev, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L72).
+**`SMCharges.Q`**, an abbrev, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L72).
 
 > The `Q` charges as a map `Fin n → ℚ`.
 
@@ -82,7 +82,7 @@ lemma toSMSpecies_toSpecies_inv (i : Fin 5) (f : Fin 5 → Fin n → ℚ) :
 abbrev Q
 ```
 
-**`SMCharges.U`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L75).
+**`SMCharges.U`**, an abbrev, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L75).
 
 > The `U` charges as a map `Fin n → ℚ`.
 
@@ -90,7 +90,7 @@ abbrev Q
 abbrev U
 ```
 
-**`SMCharges.D`**, an abbrev, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L78).
+**`SMCharges.D`**, an abbrev, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L78).
 
 > The `D` charges as a map `Fin n → ℚ`.
 
@@ -98,7 +98,7 @@ abbrev U
 abbrev D
 ```
 
-**`SMCharges.L`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L81).
+**`SMCharges.L`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L81).
 
 > The `L` charges as a map `Fin n → ℚ`.
 
@@ -106,7 +106,7 @@ abbrev D
 abbrev L
 ```
 
-**`SMCharges.E`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L84).
+**`SMCharges.E`**, an abbrev, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L84).
 
 > The `E` charges as a map `Fin n → ℚ`.
 
@@ -114,7 +114,7 @@ abbrev L
 abbrev E
 ```
 
-**`SMACCs.accGrav`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L96).
+**`SMACCs.accGrav`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L96).
 
 > The gravitational anomaly equation.
 
@@ -122,7 +122,7 @@ abbrev E
 def accGrav : (SMCharges n).Charges →ₗ[ℚ] ℚ
 ```
 
-**`SMACCs.accGrav_ext`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L115).
+**`SMACCs.accGrav_ext`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L115).
 
 > Extensionality lemma for `accGrav`.
 
@@ -132,7 +132,7 @@ lemma accGrav_ext {S T : (SMCharges n).Charges}
     accGrav S = accGrav T
 ```
 
-**`SMACCs.accSU2`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L126).
+**`SMACCs.accSU2`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L126).
 
 > The `SU(2)` anomaly equation.
 
@@ -140,7 +140,7 @@ lemma accGrav_ext {S T : (SMCharges n).Charges}
 def accSU2 : (SMCharges n).Charges →ₗ[ℚ] ℚ
 ```
 
-**`SMACCs.accSU2_ext`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L145).
+**`SMACCs.accSU2_ext`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L145).
 
 > Extensionality lemma for `accSU2`.
 
@@ -150,7 +150,7 @@ lemma accSU2_ext {S T : (SMCharges n).Charges}
     accSU2 S = accSU2 T
 ```
 
-**`SMACCs.accSU3`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L156).
+**`SMACCs.accSU3`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L156).
 
 > The `SU(3)` anomaly equations.
 
@@ -158,7 +158,7 @@ lemma accSU2_ext {S T : (SMCharges n).Charges}
 def accSU3 : (SMCharges n).Charges →ₗ[ℚ] ℚ
 ```
 
-**`SMACCs.accSU3_ext`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L175).
+**`SMACCs.accSU3_ext`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L175).
 
 > Extensionality lemma for `accSU3`.
 
@@ -168,7 +168,7 @@ lemma accSU3_ext {S T : (SMCharges n).Charges}
     accSU3 S = accSU3 T
 ```
 
-**`SMACCs.accYY`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L186).
+**`SMACCs.accYY`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L186).
 
 > The `Y²` anomaly equation.
 
@@ -176,7 +176,7 @@ lemma accSU3_ext {S T : (SMCharges n).Charges}
 def accYY : (SMCharges n).Charges →ₗ[ℚ] ℚ
 ```
 
-**`SMACCs.accYY_ext`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L205).
+**`SMACCs.accYY_ext`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L205).
 
 > Extensionality lemma for `accYY`.
 
@@ -186,7 +186,7 @@ lemma accYY_ext {S T : (SMCharges n).Charges}
     accYY S = accYY T
 ```
 
-**`SMACCs.quadBiLin`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L217).
+**`SMACCs.quadBiLin`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L217).
 
 > The quadratic bilinear map.
 
@@ -194,7 +194,7 @@ lemma accYY_ext {S T : (SMCharges n).Charges}
 def quadBiLin : BiLinearSymm (SMCharges n).Charges
 ```
 
-**`SMACCs.accQuad`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L251).
+**`SMACCs.accQuad`**, a def, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L251).
 
 > The quadratic anomaly cancellation condition.
 
@@ -202,7 +202,7 @@ def quadBiLin : BiLinearSymm (SMCharges n).Charges
 def accQuad : HomogeneousQuadratic (SMCharges n).Charges
 ```
 
-**`SMACCs.accQuad_ext`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L256).
+**`SMACCs.accQuad_ext`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L256).
 
 > Extensionality lemma for `accQuad`.
 
@@ -213,7 +213,7 @@ lemma accQuad_ext {S T : (SMCharges n).Charges}
     accQuad S = accQuad T
 ```
 
-**`SMACCs.cubeTriLin`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L270).
+**`SMACCs.cubeTriLin`**, a def, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L270).
 
 > The trilinear function defining the cubic.
 
@@ -221,7 +221,7 @@ lemma accQuad_ext {S T : (SMCharges n).Charges}
 def cubeTriLin : TriLinearSymm (SMCharges n).Charges
 ```
 
-**`SMACCs.accCube`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L309).
+**`SMACCs.accCube`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L309).
 
 > The cubic acc.
 
@@ -229,7 +229,7 @@ def cubeTriLin : TriLinearSymm (SMCharges n).Charges
 def accCube : HomogeneousCubic (SMCharges n).Charges
 ```
 
-**`SMACCs.accCube_ext`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L313).
+**`SMACCs.accCube_ext`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean#L313).
 
 > Extensionality lemma for `accCube`.
 
@@ -246,4 +246,4 @@ lemma accCube_ext {S T : (SMCharges n).Charges}
 
 ## Sources
 
-- [Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean)
+- [Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean)

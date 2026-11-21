@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.3 Higher direct images
 
-Section 69.3 of the Stacks Project, [Tag 071Y](https://stacks.math.columbia.edu/tag/071Y). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.3 of the Stacks Project, [Tag 071Y](https://stacks.math.columbia.edu/tag/071Y). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 071Z, an equation
 
 [Tag 071Z](https://stacks.math.columbia.edu/tag/071Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_moduleHigherPushforwardEtaleBaseChangeComparison_etaleSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean, line 782](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean#L782). The attribute's comment: “for the CANONICAL comparison map and for an ÉTALE square: g étale, not merely flat, so this is a special case of Stacks 073K part (1) and not that tag. The existing 071Z attribute carries an isomorphism with the right endpoints that is not identified with the canonical map”.
+**`AlgebraicGeometry.Space.isIso_moduleHigherPushforwardEtaleBaseChangeComparison_etaleSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean, line 782](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean#L782). The attribute's comment: “for the CANONICAL comparison map and for an ÉTALE square: g étale, not merely flat, so this is a special case of Stacks 073K part (1) and not that tag. The existing 071Z attribute carries an isomorphism with the right endpoints that is not identified with the canonical map”.
 
 > **Stacks 071Z read as a statement about the canonical maps, in the étale case.**  For a
 > cartesian square of algebraic spaces whose bottom arrow `g` is étale, the canonical base-change
@@ -44,7 +44,7 @@ theorem isIso_moduleHigherPushforwardEtaleBaseChangeComparison_etaleSquare
         (isEtale_of_isPullback B S hS f' i g f sq.flip hg)) n)
 ```
 
-**`AlgebraicGeometry.Space.moduleHigherPushforwardChartBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean#L187).
+**`AlgebraicGeometry.Space.moduleHigherPushforwardChartBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean#L187).
 
 > For a representable morphism `f : X ⟶ Y` of algebraic
 > spaces and an étale scheme chart `V` of `Y`, the higher direct images of `𝒪_X`-modules commute
@@ -76,7 +76,7 @@ noncomputable def moduleHigherPushforwardChartBaseChangeIso (f : X ⟶ Y)
 
 [Tag 0720](https://stacks.math.columbia.edu/tag/0720) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_rightDerived_modulePushforward'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherPushforwardQuasicoherentUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HigherPushforwardQuasicoherentUnconditional.lean#L77).
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_rightDerived_modulePushforward'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherPushforwardQuasicoherentUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/HigherPushforwardQuasicoherentUnconditional.lean#L77).
 
 > **Stacks 0720.** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces over a scheme `S`, and let `F` be a quasi-coherent `𝒪_X`-module on the small
@@ -94,7 +94,7 @@ theorem isQuasicoherentOnSite_rightDerived_modulePushforward' {X Y : AlgebraicSp
 
 [Tag 08EX](https://stacks.math.columbia.edu/tag/08EX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cohomologyAffineChartIsoSectionsHigherDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageSectionsOverAffineChart.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageSectionsOverAffineChart.lean#L96). The attribute's comment: “the complete statement at the source's own data, with no extra hypothesis: f quasi-compact and quasi-separated, F quasi-coherent, V an affine object of Y\_etale. The three inputs of the source's proof (03F3(1) for the etale inclusion, 072Z via 0731(3), and 0720 with 01XB on the small etale site) are theorems of the library, applied here. The cohomology over V times\_Y X is read as the right derived functor of the composite Gamma(V, f'\_* -), as in the library's form of Stacks 0D2U. The degree q ranges over the natural numbers, which loses nothing: in the right-derived-functor convention both sides vanish in negative degrees. This is the sole registration of 08EX”.
+**`AlgebraicGeometry.Space.cohomologyAffineChartIsoSectionsHigherDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageSectionsOverAffineChart.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageSectionsOverAffineChart.lean#L96). The attribute's comment: “the complete statement at the source's own data, with no extra hypothesis: f quasi-compact and quasi-separated, F quasi-coherent, V an affine object of Y\_etale. The three inputs of the source's proof (03F3(1) for the etale inclusion, 072Z via 0731(3), and 0720 with 01XB on the small etale site) are theorems of the library, applied here. The cohomology over V times\_Y X is read as the right derived functor of the composite Gamma(V, f'\_* -), as in the library's form of Stacks 0D2U. The degree q ranges over the natural numbers, which loses nothing: in the right-derived-functor convention both sides vanish in negative degrees. This is the sole registration of 08EX”.
 
 > **Stacks 08EX.** Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces over `S`, let `F` be a quasi-coherent `𝒪_X`-module and let `V` be an affine
@@ -135,4 +135,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.3, Tag 071Y](https://stacks.math.columbia.edu/tag/071Y)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

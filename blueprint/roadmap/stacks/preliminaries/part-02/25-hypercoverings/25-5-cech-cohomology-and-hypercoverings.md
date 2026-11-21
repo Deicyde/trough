@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.5 Čech cohomology and hypercoverings
 
-Section 25.5 of the Stacks Project, [Tag 01GU](https://stacks.math.columbia.edu/tag/01GU). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 25.5 of the Stacks Project, [Tag 01GU](https://stacks.math.columbia.edu/tag/01GU). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01GV, a lemma
 
 [Tag 01GV](https://stacks.math.columbia.edu/tag/01GV) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.nonempty_zerothCechCohomologyIsoSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean#L153). The attribute's comment: “some isomorphism Ȟ⁰(K, 𝓕) ≅ 𝓕(X) exists”.
+**`Stacks.CategoryTheory.Hypercovering.nonempty_zerothCechCohomologyIsoSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean#L153). The attribute's comment: “some isomorphism Ȟ⁰(K, 𝓕) ≅ 𝓕(X) exists”.
 
 > **Stacks Project, Tag 01GV**, the existence half. Degree-zero Čech cohomology of a
 > hypercovering is isomorphic to the group of sections of the coefficient sheaf on the covered
@@ -33,7 +33,7 @@ theorem nonempty_zerothCechCohomologyIsoSections (J : Pretopology C) {X : C}
       F.obj.obj (op X))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.zerothCechCohomologyFunctorIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L126). The attribute's comment: “the identification Ȟ⁰(K, 𝓕) = 𝓕(X), as functors on Ab(C)”.
+**`Stacks.CategoryTheory.Hypercovering.zerothCechCohomologyFunctorIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L126). The attribute's comment: “the identification Ȟ⁰(K, 𝓕) = 𝓕(X), as functors on Ab(C)”.
 
 > For a hypercovering `K` of `X` the degree-zero Čech cohomology `Ȟ⁰(K, -)` is the functor of
 > sections on `X`, as an isomorphism of functors on the abelian sheaves, inverse to the canonical map
@@ -47,7 +47,7 @@ noncomputable def zerothCechCohomologyFunctorIsoSections (hK : IsHypercovering J
         (evaluation Cᵒᵖ AddCommGrpCat.{max u v w}).obj (op X)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.zerothCechCohomologyIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L145). The attribute's comment: “the identification Ȟ⁰(K, 𝓕) = 𝓕(X)”.
+**`Stacks.CategoryTheory.Hypercovering.zerothCechCohomologyIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L145). The attribute's comment: “the identification Ȟ⁰(K, 𝓕) = 𝓕(X)”.
 
 > For a hypercovering `K` of `X` and an abelian sheaf `F`, the degree-zero Čech cohomology
 > `Ȟ⁰(K, F)` is the group `F(X)` of sections on `X`: the component at `F` of
@@ -59,7 +59,7 @@ noncomputable def zerothCechCohomologyIsoSections (hK : IsHypercovering J K)
     (SectionsOver.sectionsComplex J.toGrothendieck K F).homology 0 ≅ F.obj.obj (op X)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isIso_kernelLift_terminalAugZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/TerminalAugmentationCohomologyZero.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/TerminalAugmentationCohomologyZero.lean#L393). The attribute's comment: “degree zero, as a kernel of the first differential of the Čech complex”.
+**`Stacks.CategoryTheory.Hypercovering.isIso_kernelLift_terminalAugZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/TerminalAugmentationCohomologyZero.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/TerminalAugmentationCohomologyZero.lean#L393). The attribute's comment: “degree zero, as a kernel of the first differential of the Čech complex”.
 
 > **[Stacks, Tag 01GV] in degree zero, in canonical-map form.**  For a hypercovering `K` of an
 > object `X` of a site and an **arbitrary** abelian sheaf `F`, the canonical augmentation
@@ -94,7 +94,7 @@ theorem isIso_kernelLift_terminalAugZero (J : Pretopology C) {X : C}
 
 [Tag 01GW](https://stacks.math.columbia.edu/tag/01GW) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.cechCohomologyOver_isZero_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean#L197). The attribute's comment: “positive degrees”.
+**`Stacks.CategoryTheory.Hypercovering.cechCohomologyOver_isZero_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomology.lean#L197). The attribute's comment: “positive degrees”.
 
 > **Stacks Project, Tag 01GW (positive degrees).** The positive-degree Čech cohomology of an
 > injective abelian sheaf on a hypercovering vanishes.
@@ -111,7 +111,7 @@ theorem cechCohomologyOver_isZero_of_injective (J : Pretopology C) {X : C}
     IsZero ((SectionsOver.sectionsComplex J.toGrothendieck K I).homology p)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.cechCohomologyOverIsoOfInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L154).
+**`Stacks.CategoryTheory.Hypercovering.cechCohomologyOverIsoOfInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/ObjectCohomologyZeroNatural.lean#L154).
 
 > For a hypercovering `K` of `X` and an injective abelian sheaf `I`, the Čech cohomology
 > `Ȟᵖ(K, I)` is the group `I(X)` of sections on `X` when `p = 0` and is zero when `p > 0`.
@@ -127,7 +127,7 @@ noncomputable def cechCohomologyOverIsoOfInjective (hK : IsHypercovering J K)
 
 [Tag 01GX](https://stacks.math.columbia.edu/tag/01GX) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.SemiRepresentable.sectionsComplexIsoHomFreeAbelianSheafComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplex.lean, line 670](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplex.lean#L670). The attribute's comment: “arbitrary semi-representable simplicial object”.
+**`Stacks.CategoryTheory.Hypercovering.SemiRepresentable.sectionsComplexIsoHomFreeAbelianSheafComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplex.lean, line 670](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplex.lean#L670). The attribute's comment: “arbitrary semi-representable simplicial object”.
 
 > **Stacks Project, Tag 01GX.** The cochain complex of sections on any simplicial
 > semi-representable presheaf is canonically the Hom complex from its complex of free abelian
@@ -143,7 +143,7 @@ noncomputable def sectionsComplexIsoHomFreeAbelianSheafComplex
       homFreeAbelianSheafComplex.{q, w, v, u} J K F
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.SectionsOver.sectionsComplexIsoHomFreeAbelianSheafComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplexOver.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplexOver.lean#L551). The attribute's comment: “formal coproducts over an object”.
+**`Stacks.CategoryTheory.Hypercovering.SectionsOver.sectionsComplexIsoHomFreeAbelianSheafComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplexOver.lean, line 551](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/SectionsComplexOver.lean#L551). The attribute's comment: “formal coproducts over an object”.
 
 > The complex obtained by evaluating an abelian sheaf `F` on a simplicial semi-representable
 > object `K` is isomorphic to the complex of morphisms from the associated complex of free abelian
@@ -161,7 +161,7 @@ noncomputable def sectionsComplexIsoHomFreeAbelianSheafComplex {X : C}
 
 [Tag 01GY](https://stacks.math.columbia.edu/tag/01GY) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoverToDerivedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L134). The attribute's comment: “the comparison map s(F(K)) ⟶ RΓ(X, F) in D⁺(Ab), functorial in F”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoverToDerivedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L134). The attribute's comment: “the comparison map s(F(K)) ⟶ RΓ(X, F) in D⁺(Ab), functorial in F”.
 
 > **Stacks Project, Tag 01GY: the comparison map `s(F(K)) ⟶ RΓ(X, F)` in `D⁺(Ab)`,
 > functorial in `F`**, for a hypercovering `K` of an object `X` of a site with fibre products.
@@ -181,7 +181,7 @@ def hypercoverToDerivedSections (hK : IsHypercovering J K) :
     hypercoverDerivedFunctor.{w} J U K ⟶ derivedSectionsFunctor.{w} J U
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.cechCohomologyToSheafCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L165). The attribute's comment: “the induced natural transformations Ȟ^i(K, -) ⟶ H^i(X, -)”.
+**`Stacks.CategoryTheory.Hypercovering.cechCohomologyToSheafCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L165). The attribute's comment: “the induced natural transformations Ȟ^i(K, -) ⟶ H^i(X, -)”.
 
 > **Stacks Project, Tag 01GY: the natural transformations `Ȟ ⁱ(K, -) ⟶ H ⁱ(X, -)` of functors
 > `Ab(C) ⥤ Ab` induced by the comparison map**: the degree-`i` cohomology of
@@ -195,7 +195,7 @@ def cechCohomologyToSheafCohomology (hK : IsHypercovering J K) (i : ℕ) :
       (sheafSectionsFunctor.{w} J U).rightDerived i
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoverCechSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L182). The attribute's comment: “the spectral sequence E₂^\{p,q} = Ȟ^p(K, H^q(F)) ⇒ H^\{p+q}(X, F), functorial in F”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoverCechSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L182). The attribute's comment: “the spectral sequence E₂^\{p,q} = Ȟ^p(K, H^q(F)) ⇒ H^\{p+q}(X, F), functorial in F”.
 
 > **Stacks Project, Tag 01GY: the spectral sequence**
 > `E₂^{p,q} = Ȟ^p(K, H̲^q(F)) ⇒ H^{p+q}(X, F)`, functorial in the abelian sheaf `F`: a
@@ -209,7 +209,7 @@ def hypercoverCechSpectralSequence (hK : IsHypercovering J K) :
     HypercoveringSpectralSequenceData.{w} J U K hK
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoverCechSpectralSequenceHypercoveringFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L192). The attribute's comment: “the spectral sequence is functorial in the hypercovering K”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoverCechSpectralSequenceHypercoveringFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Hypercovering/CohomologyComparisonDegreewise.lean#L192). The attribute's comment: “the spectral sequence is functorial in the hypercovering K”.
 
 > **Stacks Project, Tag 01GY: the spectral sequence is functorial in the hypercovering.** The
 > assignment `K ↦` the spectral sequence of `hypercoverCechSpectralSequence`, as a functor of the
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.5, Tag 01GU](https://stacks.math.columbia.edu/tag/01GU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_uniform_approx, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_same_target, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le_of_bound, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq_eq_integral, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_add, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_neg
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_uniform_approx, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_same_target, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le_of_bound, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq_eq_integral, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_add, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_neg
 statement: formalized
 proof: formalized
 ---
 
 # The bounded functional calculus of a spectral measure
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedIntegralAlgebra`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean): 20 declarations, 1 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedIntegralAlgebra`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean): 20 declarations, 1 with a docstring.
 
 > The bounded integral against a spectral measure is a unital ⋆-homomorphism.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.BoundedInteg
 
 ## A. Independence from the approximating sequence
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_uniform_approx`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_uniform_approx`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L62).
 
 ```lean
 lemma boundedIntegral_eq_of_uniform_approx [Nonempty α]
@@ -42,7 +42,7 @@ lemma boundedIntegral_eq_of_uniform_approx [Nonempty α]
     boundedIntegral μS f hf hbdd = boundedIntegralOfUniformApprox μS f s hs
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_same_target`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_eq_of_same_target`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L75).
 
 ```lean
 lemma boundedIntegral_eq_of_same_target [Nonempty α]
@@ -53,7 +53,7 @@ lemma boundedIntegral_eq_of_same_target [Nonempty α]
     boundedIntegralOfUniformApprox μS f s hs = boundedIntegral μS f hf hbdd
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L85).
 
 ```lean
 lemma boundedIntegral_norm_le [Nonempty α]
@@ -61,7 +61,7 @@ lemma boundedIntegral_norm_le [Nonempty α]
     ∃ C : ℝ, ‖ContinuousLinearMapWOT.toCLM (boundedIntegral μS f hf hbdd)‖ ≤ C
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L93).
 
 ```lean
 lemma boundedIntegral_norm_sq [Nonempty α]
@@ -70,7 +70,7 @@ lemma boundedIntegral_norm_sq [Nonempty α]
       ∫⁻ z, ENNReal.ofReal (‖f z‖ ^ 2) ∂μS.diagonalMeasure x
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le_of_bound`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L163).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_le_of_bound`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L163).
 
 ```lean
 lemma boundedIntegral_norm_le_of_bound [Nonempty α]
@@ -80,7 +80,7 @@ lemma boundedIntegral_norm_le_of_bound [Nonempty α]
       (boundedIntegral μS f hf (⟨C, hCf⟩ : ∃ C : ℝ, ∀ x, ‖f x‖ ≤ C))‖ ≤ C
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq_eq_integral`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L201).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_norm_sq_eq_integral`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L201).
 
 ```lean
 lemma boundedIntegral_norm_sq_eq_integral [Nonempty α]
@@ -91,7 +91,7 @@ lemma boundedIntegral_norm_sq_eq_integral [Nonempty α]
 
 ## B. The algebra of the integral
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_add`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L225).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_add`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L225).
 
 ```lean
 lemma boundedIntegralOfUniformApprox_add [Nonempty α]
@@ -105,7 +105,7 @@ lemma boundedIntegralOfUniformApprox_add [Nonempty α]
         boundedIntegralOfUniformApprox μS g t ht
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L268).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_neg`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L268).
 
 ```lean
 lemma boundedIntegralOfUniformApprox_neg [Nonempty α]
@@ -117,7 +117,7 @@ lemma boundedIntegralOfUniformApprox_neg [Nonempty α]
       -boundedIntegralOfUniformApprox μS f s hs
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_neg`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L295).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_neg`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L295).
 
 ```lean
 lemma boundedIntegral_neg [Nonempty α]
@@ -129,7 +129,7 @@ lemma boundedIntegral_neg [Nonempty α]
       -boundedIntegral μS f hf hbf
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_add`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L323).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_add`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L323).
 
 ```lean
 lemma boundedIntegral_add [Nonempty α]
@@ -144,7 +144,7 @@ lemma boundedIntegral_add [Nonempty α]
       boundedIntegral μS f hf hbf + boundedIntegral μS g hg hbg
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_const`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L356).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_const`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L356).
 
 ```lean
 lemma boundedIntegral_const [Nonempty α] (c : ℂ) :
@@ -152,7 +152,7 @@ lemma boundedIntegral_const [Nonempty α] (c : ℂ) :
         (⟨‖c‖, fun _ => le_rfl⟩) = c • (1 : H →WOT[ℂ] H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_congr`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L380).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_congr`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L380).
 
 ```lean
 lemma boundedIntegral_congr [Nonempty α]
@@ -162,7 +162,7 @@ lemma boundedIntegral_congr [Nonempty α]
     boundedIntegral μS f hf hbf = boundedIntegral μS g hg hbg
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_indicator`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L395).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_indicator`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L395).
 
 ```lean
 lemma boundedIntegral_indicator [Nonempty α] {S : Set α} (hS : MeasurableSet S) :
@@ -173,7 +173,7 @@ lemma boundedIntegral_indicator [Nonempty α] {S : Set α} (hS : MeasurableSet S
 
 ## C. Extensionality by the integral
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.ext_of_boundedIntegral_eq`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L432).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.ext_of_boundedIntegral_eq`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L432).
 
 > A bounded spectral integral determines a weak spectral measure. In particular, this gives a
 > usable uniqueness principle for any construction which agrees with the canonical integral on
@@ -187,7 +187,7 @@ lemma ext_of_boundedIntegral_eq [Nonempty α]
     μS = νS
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_sub`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L449).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_sub`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L449).
 
 ```lean
 lemma boundedIntegral_sub [Nonempty α]
@@ -202,7 +202,7 @@ lemma boundedIntegral_sub [Nonempty α]
       boundedIntegral μS f hf hbf - boundedIntegral μS g hg hbg
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_mul`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L491).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_mul`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L491).
 
 ```lean
 lemma boundedIntegralOfUniformApprox_mul [Nonempty α]
@@ -216,7 +216,7 @@ lemma boundedIntegralOfUniformApprox_mul [Nonempty α]
         boundedIntegralOfUniformApprox μS g t ht
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_mul`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L539).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_mul`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L539).
 
 ```lean
 lemma boundedIntegral_mul [Nonempty α]
@@ -234,7 +234,7 @@ lemma boundedIntegral_mul [Nonempty α]
       boundedIntegral μS f hf hbf * boundedIntegral μS g hg hbg
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_smul`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L602).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_smul`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L602).
 
 ```lean
 lemma boundedIntegral_smul [Nonempty α] (c : ℂ) {f : α → ℂ} (hf : Measurable f)
@@ -249,7 +249,7 @@ lemma boundedIntegral_smul [Nonempty α] (c : ℂ) {f : α → ℂ} (hf : Measur
       c • boundedIntegral μS f hf hbf
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_star`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L623).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegralOfUniformApprox_star`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L623).
 
 ```lean
 lemma boundedIntegralOfUniformApprox_star [Nonempty α]
@@ -261,7 +261,7 @@ lemma boundedIntegralOfUniformApprox_star [Nonempty α]
       star (boundedIntegralOfUniformApprox μS f s hs)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_star`**, a lemma, [line 662](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L662).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.boundedIntegral_star`**, a lemma, [line 662](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean#L662).
 
 ```lean
 lemma boundedIntegral_star [Nonempty α]
@@ -279,4 +279,4 @@ lemma boundedIntegral_star [Nonempty α]
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean)

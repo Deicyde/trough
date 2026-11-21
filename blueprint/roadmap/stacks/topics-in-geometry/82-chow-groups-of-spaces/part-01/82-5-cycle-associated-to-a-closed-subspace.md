@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.5 Cycle associated to a closed subspace
 
-Section 82.5 of the Stacks Project, [Tag 0EE7](https://stacks.math.columbia.edu/tag/0EE7). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 82.5 of the Stacks Project, [Tag 0EE7](https://stacks.math.columbia.edu/tag/0EE7). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EE8, a remark
 
 [Tag 0EE8](https://stacks.math.columbia.edu/tag/0EE8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsIrreducibleComponent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean#L67). The attribute's comment: “the terminology: an irreducible component of Y”.
+**`AlgebraicGeometry.Space.IsIrreducibleComponent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean#L67). The attribute's comment: “the terminology: an irreducible component of Y”.
 
 > **Stacks 0EE8.** An *irreducible component* of an algebraic space `Y` over `S` is a closed
 > subspace which is an integral algebraic space and whose set of points is an irreducible
@@ -26,7 +26,7 @@ abbrev IsIrreducibleComponent (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Con
     (Z : Subfunctor Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGenericPointOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean#L76). The attribute's comment: “the terminology: the generic point of an irreducible component”.
+**`AlgebraicGeometry.Space.IsGenericPointOf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CycleOfClosedSubspace.lean#L76). The attribute's comment: “the terminology: the generic point of an irreducible component”.
 
 > **Stacks 0EE8.** A point of an algebraic space `Y` over `S` is the *generic point* of a
 > subspace `Z` when it is the generic point of the set of points of `Z`.
@@ -37,7 +37,7 @@ abbrev IsGenericPointOf (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains 
     (Z : Subfunctor Y) (ξ : points B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.bijective_closure_genericPoint_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L73). The attribute's comment: “(1) and (2) correspond, by the closure of a point”.
+**`AlgebraicGeometry.Space.bijective_closure_genericPoint_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L73). The attribute's comment: “(1) and (2) correspond, by the closure of a point”.
 
 > **Stacks 0EE8, (2) to (1).** For a closed subspace `Y` of a good algebraic space, taking the
 > closure of a point is a bijection from the generic points of irreducible components of `|Y|`
@@ -53,7 +53,7 @@ theorem bijective_closure_genericPoint_irreducibleComponents (hf : D.IsGood f)
           irreducibleComponents (points D.site D.base D.base_mem Y.toFunctor)))
 ```
 
-**`AlgebraicGeometry.Space.bijective_range_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L134). The attribute's comment: “(3) and (1) correspond, by the set of points”.
+**`AlgebraicGeometry.Space.bijective_range_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L134). The attribute's comment: “(3) and (1) correspond, by the set of points”.
 
 > **Stacks 0EE8, (3) to (1).** For a closed subspace `Y` of a good algebraic space, taking the
 > set of points is a bijection from the irreducible components of `Y` (integral closed subspaces
@@ -70,7 +70,7 @@ theorem bijective_range_irreducibleComponent (hf : D.IsGood f)
           irreducibleComponents (points D.site D.base D.base_mem Y.toFunctor)))
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_isGenericPointOf_of_isIrreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L150). The attribute's comment: “(3) and (2) correspond: an irreducible component has a unique generic point”.
+**`AlgebraicGeometry.Space.existsUnique_isGenericPointOf_of_isIrreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L150). The attribute's comment: “(3) and (2) correspond: an irreducible component has a unique generic point”.
 
 > **Stacks 0EE8, (3) to (2).** An irreducible component of a closed subspace `Y` of a good
 > algebraic space has exactly one generic point.
@@ -83,7 +83,7 @@ theorem existsUnique_isGenericPointOf_of_isIrreducibleComponent (hf : D.IsGood f
       IsGenericPointOf D.site D.base D.base_mem hY.1 Z ξ
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_isIrreducibleComponent_isGenericPointOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L168). The attribute's comment: “(2) and (3) correspond: a generic point belongs to a unique irreducible component”.
+**`AlgebraicGeometry.Space.existsUnique_isIrreducibleComponent_isGenericPointOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IrreducibleComponentCorrespondence.lean#L168). The attribute's comment: “(2) and (3) correspond: a generic point belongs to a unique irreducible component”.
 
 > **Stacks 0EE8, (2) to (3).** A generic point of an irreducible component of `|Y|`, for `Y` a
 > closed subspace of a good algebraic space, is the generic point of exactly one irreducible
@@ -102,7 +102,7 @@ theorem existsUnique_isIrreducibleComponent_isGenericPointOf (hf : D.IsGood f)
 
 [Tag 0EE9](https://stacks.math.columbia.edu/tag/0EE9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedSubspaceCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycle.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycle.lean#L183). The attribute's comment: “part (2): the k-cycle [Y]\_k of a closed subspace; the multiplicity at each point is independent of the choice of geometric representative by Lemma 0EE1 (closedSubspaceMultiplicity\_eq\_toNat\_geometricLength) and positive by Lemma 0EE4 (closedSubspaceMultiplicity\_pos)”.
+**`AlgebraicGeometry.Space.closedSubspaceCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycle.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycle.lean#L183). The attribute's comment: “part (2): the k-cycle [Y]\_k of a closed subspace; the multiplicity at each point is independent of the choice of geometric representative by Lemma 0EE1 (closedSubspaceMultiplicity\_eq\_toNat\_geometricLength) and positive by Lemma 0EE4 (closedSubspaceMultiplicity\_pos)”.
 
 > In Situation 0EDT let `X/B` be good, let `Y ⊆ X` be a closed subspace and assume
 > `dim_δ(Y) ≤ k`. The *`k`-cycle associated to `Y`* is `[Y]_k = ∑ m_{Z, Y} [Z]`, the sum over the
@@ -116,7 +116,7 @@ def closedSubspaceCycle (sX : X ⟶ D.space) (hX : D.IsGood sX) (Y : Subfunctor 
     (hdim : deltaDimensionSubspace D sX hX Y hY ≤ (k : EInt)) : CycleGroup D sX k
 ```
 
-**`AlgebraicGeometry.Space.closedSubspaceMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycleComponents.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycleComponents.lean#L151). The attribute's comment: “part (1): the multiplicity m\_\{Z,Y}, together with its positivity (closedSubspaceMultiplicity\_pos, Lemma 0EE4)”.
+**`AlgebraicGeometry.Space.closedSubspaceMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycleComponents.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClosedSubspaceCycleComponents.lean#L151). The attribute's comment: “part (1): the multiplicity m\_\{Z,Y}, together with its positivity (closedSubspaceMultiplicity\_pos, Lemma 0EE4)”.
 
 > **Stacks 0EE9, part (1).** The multiplicity `m_{W, Y}` of an integral closed subspace
 > `W ⊆ Y` in a closed subspace `Y ⊆ X`: the length of `𝒪_Y` at the generic point of `W`, read
@@ -141,4 +141,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.5, Tag 0EE7](https://stacks.math.columbia.edu/tag/0EE7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

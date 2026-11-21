@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of a half-integer spin
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Centre`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Centre`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Centre`, [PhyslibAlp
 > involution and the only signs on offer are `±1`. A tensor of four-vector indices carries `1`,
 > a Weyl index carries `-1`, and nothing else is needed of the pattern.
 
-**`Lorentz.Invariants.centreEigenspace`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L81).
+**`Lorentz.Invariants.centreEigenspace`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L81).
 
 > The subspace on which the centre of `SL(2,ℂ)` acts by the scalar `ε`: an integer spin
 > sits at `ε = 1` and a half-integer spin at `ε = -1`.
@@ -62,7 +62,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.Centre`, [PhyslibAlp
 def centreEigenspace (repLorentz : Representation ℂ SL(2,ℂ) V) (ε : ℂ) : Submodule ℂ V
 ```
 
-**`Lorentz.Invariants.mem_centreEigenspace`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L85).
+**`Lorentz.Invariants.mem_centreEigenspace`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L85).
 
 > Membership of `centreEigenspace` unfolded: the centre scales the vector by `ε`.
 
@@ -71,7 +71,7 @@ lemma mem_centreEigenspace {repLorentz : Representation ℂ SL(2,ℂ) V} {ε : �
     x ∈ centreEigenspace repLorentz ε ↔ repLorentz (-1) x = ε • x
 ```
 
-**`Lorentz.Invariants.dual_neg_one_eq_smul_id`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L91).
+**`Lorentz.Invariants.dual_neg_one_eq_smul_id`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L91).
 
 > Dualising a representation preserves the sign at the centre: `-1` is its own inverse, so
 > the contragredient action of the centre is the transpose of a scalar.
@@ -89,7 +89,7 @@ lemma dual_neg_one_eq_smul_id {rep : Representation ℂ SL(2,ℂ) V} {ε : ℂ}
 > which carries the sign of `rep` by section A. Both signs that occur are recorded, `ε = 1` for
 > the Lorentz-scalar value spaces and `ε = -1` for the Weyl ones.
 
-**`Lorentz.Invariants.range_le_centreEigenspace`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L112).
+**`Lorentz.Invariants.range_le_centreEigenspace`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L112).
 
 > **The span of one symbol family carries the sign of its value space.**
 
@@ -102,7 +102,7 @@ lemma range_le_centreEigenspace {repLorentz : Representation ℂ SL(2,ℂ) A}
     LinearMap.range (F l) ≤ centreEigenspace repLorentz ε
 ```
 
-**`Lorentz.Invariants.range_le_centreEigenspace_neg_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L124).
+**`Lorentz.Invariants.range_le_centreEigenspace_neg_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L124).
 
 > The half-integer case of `range_le_centreEigenspace`, in the form the Weyl value spaces
 > state their sign.
@@ -122,7 +122,7 @@ lemma range_le_centreEigenspace_neg_one {repLorentz : Representation ℂ SL(2,�
 > the product of the signs of its factors. This is the whole of the bookkeeping: two Weyl
 > indices cancel and an odd number does not.
 
-**`Lorentz.Invariants.mul_le_centreEigenspace`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L143).
+**`Lorentz.Invariants.mul_le_centreEigenspace`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L143).
 
 > The sign of a product is the product of the signs.
 
@@ -141,7 +141,7 @@ lemma mul_le_centreEigenspace {repLorentz : Representation ℂ SL(2,ℂ) A}
 > `reducesInvariantsTo_bot_of_apply_eq_smul`: the invariance leaves `-2` times the vector inside
 > `S`, and dividing by `-2` is allowed over `ℂ`; no quotient representation is needed.
 
-**`Lorentz.Invariants.mem_of_invariant_of_mem_sup_centreEigenspace_neg_one`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L166).
+**`Lorentz.Invariants.mem_of_invariant_of_mem_sup_centreEigenspace_neg_one`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean#L166).
 
 > A subspace of half-integer spin carries no Lorentz invariant beyond a Lorentz-stable
 > submodule `S`: an invariant of the join with `S` already lies in `S`. The centre acts on the
@@ -165,4 +165,4 @@ lemma mem_of_invariant_of_mem_sup_centreEigenspace_neg_one
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean)

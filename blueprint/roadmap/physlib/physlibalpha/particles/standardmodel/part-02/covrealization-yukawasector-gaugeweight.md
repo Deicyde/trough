@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the Yukawa sector at mass weight eight
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean): 10 declarations, 10 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean): 10 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Gau
 
 ## A. The sector at mass weight eight, decomposed
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L98).
+**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L98).
 
 > The gauge weight decomposition of the Yukawa sector at mass weight eight, transported
 > along `sectorMassWeight_higgs_fermion_eight` from the product of the Higgs derivative
@@ -79,7 +79,7 @@ noncomputable def sectorMassWeightEightGaugeWeight :
 > handled by `IsFermionSector.piece_sup_mul`; the two lemmas here reach the inner factors of
 > a triple product, which that lemma cannot see.
 
-**`StandardModel.CovAlgebraRealization.piece_mul_sup_mul`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L121).
+**`StandardModel.CovAlgebraRealization.piece_mul_sup_mul`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L121).
 
 > If the first fermion factor of a triple product is a join `VA ⊔ VB`, its weight-`w`
 > piece splits along the join.
@@ -98,7 +98,7 @@ lemma piece_mul_sup_mul {VX VA VB VZ : Submodule ℂ B}
             (d' := GaugeWeightDecomposition.mul (d := dB) (d' := dZ))).piece w
 ```
 
-**`StandardModel.CovAlgebraRealization.piece_mul_mul_sup`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L145).
+**`StandardModel.CovAlgebraRealization.piece_mul_mul_sup`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L145).
 
 > If the second fermion factor of a triple product is a join `VA ⊔ VB`, its weight-`w`
 > piece splits along the join.
@@ -124,7 +124,7 @@ lemma piece_mul_mul_sup {VX VY VA VB : Submodule ℂ B}
 > the two fermion factors have to be read as a single decomposition, and the only thing
 > needed about them is that their hypercharges add.
 
-**`StandardModel.CovAlgebraRealization.mul_supp_hypercharge`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L181).
+**`StandardModel.CovAlgebraRealization.mul_supp_hypercharge`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L181).
 
 > Two decompositions with constant hypercharge have a product of constant hypercharge,
 > the sum of the two: the support of a product is the pointwise sum of the supports, and
@@ -139,7 +139,7 @@ lemma mul_supp_hypercharge {V V' : Submodule ℂ B}
 
 ## D. The two Higgs hypercharges
 
-**`StandardModel.CovAlgebraRealization.higgsSubmoduleGaugeWeight_hc`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L199).
+**`StandardModel.CovAlgebraRealization.higgsSubmoduleGaugeWeight_hc`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L199).
 
 > The Higgs symbols carry hypercharge `-3`, independent of isospin and of the number of
 > derivatives: the two weights in the support are `(0, 0, ∓1, -3)`.
@@ -149,7 +149,7 @@ lemma higgsSubmoduleGaugeWeight_hc (n : ℕ) :
     ∀ w ∈ (h.isHiggsSector.higgsSubmoduleGaugeWeight n).supp, w.2.2.2 = -3
 ```
 
-**`StandardModel.CovAlgebraRealization.barHiggsSubmoduleGaugeWeight_hc`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L207).
+**`StandardModel.CovAlgebraRealization.barHiggsSubmoduleGaugeWeight_hc`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L207).
 
 > The conjugate-Higgs symbols carry hypercharge `3`, independent of isospin and of the
 > number of derivatives: the two weights in the support are `(0, 0, ±1, 3)`.
@@ -172,7 +172,7 @@ lemma barHiggsSubmoduleGaugeWeight_hc (n : ℕ) :
 > Higgs and conjugate-Higgs cases are then two applications.  No species pairs with itself:
 > `2f = ±3` has no integer solution.
 
-**`StandardModel.CovAlgebraRealization.mul_speciesGaugeWeight_mul_piece_zero_neg_three`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L236).
+**`StandardModel.CovAlgebraRealization.mul_speciesGaugeWeight_mul_piece_zero_neg_three`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L236).
 
 > The hypercharge sieve against a Higgs symbol. If `dV` has constant hypercharge `-3`,
 > as the Higgs symbols do, then of the hundred species pairings in a product of two fermion
@@ -215,7 +215,7 @@ lemma mul_speciesGaugeWeight_mul_piece_zero_neg_three {V : Submodule ℂ B}
               (d' := h.isFermionSector.rangeGaugeWeightBarL f' l'))).piece 0
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_speciesGaugeWeight_mul_piece_zero_pos_three`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L391).
+**`StandardModel.CovAlgebraRealization.mul_speciesGaugeWeight_mul_piece_zero_pos_three`**, a lemma, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L391).
 
 > The hypercharge sieve against a conjugate-Higgs symbol. If `dV` has constant
 > hypercharge `3`, as the conjugate-Higgs symbols do, then of the hundred species pairings
@@ -270,7 +270,7 @@ lemma mul_speciesGaugeWeight_mul_piece_zero_pos_three {V : Submodule ℂ B}
 > Nothing here constrains the families: all nine pairs `(f, f')` occur, which is where the
 > Yukawa matrices come from.
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight_piece_zero`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L564).
+**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight_piece_zero`**, a lemma, [line 564](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L564).
 
 > The weight-zero piece of the Yukawa sector at mass weight eight: the join, over pairs
 > of families, of the twelve blocks that hypercharge allows.  Of the two hundred ways of
@@ -359,7 +359,7 @@ lemma sectorMassWeightEightGaugeWeight_piece_zero :
 > isospin — `H d bard` is one — so, unlike the fermion sector, no single generator sees every
 > weight.
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeightEight_piece_zero_sup_of_invariant`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L703).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeightEight_piece_zero_sup_of_invariant`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean#L703).
 
 > A gauge-invariant element of the Yukawa sector at mass weight eight joined with a
 > torus-stable `S` lies in the weight-zero piece joined with `S`, so the twelve blocks of
@@ -382,4 +382,4 @@ lemma mem_sectorMassWeightEight_piece_zero_sup_of_invariant {S : Submodule ℂ B
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean)

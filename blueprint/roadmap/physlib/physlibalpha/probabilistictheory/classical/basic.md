@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.IsClassical, ProbabilisticTheory.OrderUnitLattice.isClassical
+lean: PhyslibAlpha.ProbabilisticTheory.IsClassical, PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isClassical
 statement: formalized
 proof: formalized
 ---
 
 # Classical systems
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.Basic`, [PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.Basic`, [PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean): 2 declarations, 2 with a docstring.
 
 > Classical systems: those whose positive functionals have least upper bounds.
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Basic`, [PhyslibAlpha/Pro
 
 ## A. Classical systems
 
-**`ProbabilisticTheory.IsClassical`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean#L49).
+**`PhyslibAlpha.ProbabilisticTheory.IsClassical`**, an abbrev, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean#L49).
 
 > A system is **classical** when every state decomposes uniquely into pure states: its state
 > space is a Choquet simplex, i.e. any two positive functionals have a least upper bound.
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.Basic`, [PhyslibAlpha/Pro
 abbrev IsClassical (E : Type*) [OrderUnitSpace E] : Prop
 ```
 
-**`ProbabilisticTheory.OrderUnitLattice.isClassical`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean#L52).
+**`PhyslibAlpha.ProbabilisticTheory.OrderUnitLattice.isClassical`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean#L52).
 
 > A system whose observables form a lattice is classical.
 
@@ -59,4 +59,4 @@ lemma OrderUnitLattice.isClassical (E : Type*) [OrderUnitLattice E] : IsClassica
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean)

@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Reduction)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean), by Chris Henson.
 
 > The λ-calculus with polymorphism and subtyping, with a locally nameless representation of syntax.
 > This file defines a call-by-value reduction.
@@ -18,7 +18,7 @@ proof: formalized
 > * See also <https://www.cis.upenn.edu/~plclub/popl08-tutorial/code/>, from which
 >   this is adapted
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body` (definition, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L39))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body` (definition, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L39))
 
 > Existential predicate for being a locally closed body of an abstraction.
 
@@ -26,7 +26,7 @@ proof: formalized
 def body (t : Term Var)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_let` (lemma, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L49))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_let` (lemma, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L49))
 
 > Locally closed let bindings have a locally closed body.
 
@@ -34,7 +34,7 @@ def body (t : Term Var)
 lemma body_let : (let' t₁ t₂).LC ↔ t₁.LC ∧ t₂.body
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_case` (lemma, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L58))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.body_case` (lemma, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L58))
 
 > Locally closed case bindings have a locally closed bodies.
 
@@ -42,7 +42,7 @@ lemma body_let : (let' t₁ t₂).LC ↔ t₁.LC ∧ t₂.body
 lemma body_case : (case t₁ t₂ t₃).LC ↔ t₁.LC ∧ t₂.body ∧ t₃.body
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_body` (lemma, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L69))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.open_tm_body` (lemma, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L69))
 
 > Opening a body preserves local closure.
 
@@ -50,7 +50,7 @@ lemma body_case : (case t₁ t₂ t₃).LC ↔ t₁.LC ∧ t₂.body ∧ t₃.bo
 lemma open_tm_body (body : t₁.body) (lc : t₂.LC) : (t₁ ^ᵗᵗ t₂).LC
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value` (inductive type, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L77))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value` (inductive type, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L77))
 
 > Values are irreducible terms.
 
@@ -62,13 +62,13 @@ inductive Value : Term Var → Prop
   | inr : Value t₁ → Value (inr t₁)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value.lc` (lemma, [line 84](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L84))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Value.lc` (lemma, [line 84](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L84))
 
 ```lean
 lemma Value.lc {t : Term Var} (val : t.Value) : t.LC
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red` (inductive type, [line 89](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L89))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red` (inductive type, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L89))
 
 > The call-by-value reduction relation.
 
@@ -88,7 +88,7 @@ inductive Red : Term Var → Term Var → Prop
   | case_inr : Value t₁ → t₂.body → t₃.body → Red (case (inr t₁) t₂ t₃) (t₃ ^ᵗᵗ t₁)
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red.lc` (lemma, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L105))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Term.Red.lc` (lemma, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean#L105))
 
 > Terms of a reduction are locally closed.
 
@@ -102,5 +102,5 @@ lemma Red.lc {t t' : Term Var} (red : t ⭢βᵛ t') : t.LC ∧ t'.LC
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Reduction.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Reduction.json)

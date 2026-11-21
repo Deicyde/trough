@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.2 Relative glueing
 
-Section 27.2 of the Stacks Project, [Tag 01LG](https://stacks.math.columbia.edu/tag/01LG). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 27.2 of the Stacks Project, [Tag 01LG](https://stacks.math.columbia.edu/tag/01LG). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01LH, a lemma
 
 [Tag 01LH](https://stacks.math.columbia.edu/tag/01LH) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.BasisGluingData.exists_isPullback_res_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean#L359). The attribute's comment: “existence of the glued scheme, with the charts identifying each piece with the part of it lying over the corresponding member of the basis”.
+**`AlgebraicGeometry.Scheme.BasisGluingData.exists_isPullback_res_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean, line 359](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean#L359). The attribute's comment: “existence of the glued scheme, with the charts identifying each piece with the part of it lying over the corresponding member of the basis”.
 
 > Let `S` be a scheme and `B` a basis for its topology. Given a scheme `D.obj U` over `U` for
 > every `U ∈ B`, together with morphisms `D.res : D.obj V ⟶ D.obj U` for `V ⊆ U` in `B`
@@ -29,7 +29,7 @@ theorem exists_isPullback_res_comp (hB : Opens.IsBasis B) (D : BasisGluingData S
         ∀ {V U : B} (h : V.1 ≤ U.1), D.res h ≫ i U = i V
 ```
 
-**`AlgebraicGeometry.Scheme.BasisGluingData.existsUnique_isoOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean#L370). The attribute's comment: “the glued scheme is unique up to unique isomorphism over the base”.
+**`AlgebraicGeometry.Scheme.BasisGluingData.existsUnique_isoOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Descent/RelativeGluingOverBasis.lean#L370). The attribute's comment: “the glued scheme is unique up to unique isomorphism over the base”.
 
 > The glued scheme of a gluing datum over a basis of the topology of `S` is unique up to unique
 > isomorphism over `S`: between any two solutions of the gluing problem there is exactly one
@@ -50,7 +50,7 @@ theorem existsUnique_isoOver (hB : Opens.IsBasis B) (D : BasisGluingData S B)
 
 [Tag 01LI](https://stacks.math.columbia.edu/tag/01LI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeSheafGluing.RelativeSheafGluingData.exists_glued_and_existsUnique_pairIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean#L471). The attribute's comment: “both assertions of the tag as one statement: existence of the glued package — the morphism f, the charts i\_U, the quasi-coherent module F, the identifications θ\_U and their two compatibilities — and uniqueness of the pair (X, F) up to unique isomorphism over S”.
+**`Stacks.AlgebraicGeometry.RelativeSheafGluing.RelativeSheafGluingData.exists_glued_and_existsUnique_pairIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean, line 471](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean#L471). The attribute's comment: “both assertions of the tag as one statement: existence of the glued package — the morphism f, the charts i\_U, the quasi-coherent module F, the identifications θ\_U and their two compatibilities — and uniqueness of the pair (X, F) up to unique isomorphism over S”.
 
 > **Stacks Project, Tag 01LI, both of its assertions as one statement.**  Let `𝒰` be a locally
 > directed open cover of a scheme `S`, let `d` be a relative gluing datum over it, and let `D` be a
@@ -89,7 +89,7 @@ theorem exists_glued_and_existsUnique_pairIso :
 
 [Tag 01LK](https://stacks.math.columbia.edu/tag/01LK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeSheafGluing.existsUnique_glueHom_and_pullbackHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L659). The attribute's comment: “both functoriality assertions of the remark: the induced morphism of glued schemes over S restricting to the h\_U (and unique as such), and the unique induced morphism h^*G -> F restricting to the tau\_U, for arbitrary pairs obtained from the data of Tag 01LI”.
+**`Stacks.AlgebraicGeometry.RelativeSheafGluing.existsUnique_glueHom_and_pullbackHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 659](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L659). The attribute's comment: “both functoriality assertions of the remark: the induced morphism of glued schemes over S restricting to the h\_U (and unique as such), and the unique induced morphism h^*G -> F restricting to the tau\_U, for arbitrary pairs obtained from the data of Tag 01LI”.
 
 > **Stacks Project, Tag 01LK.** *Functoriality of relative gluing, for schemes and for
 > quasi-coherent sheaves.* Let `𝒰` be a locally directed open cover of a scheme `S` (for instance the
@@ -121,7 +121,7 @@ theorem existsUnique_glueHom_and_pullbackHom (hover : hom ≫ dY.natTrans = dX.n
         (Scheme.Modules.pullback (G.chart i)).map ψ = pullbackChartHomOn hom R R' τ i
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeSheafGluing.existsUnique_glueHom_and_pullbackHom_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 718](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L718). The attribute's comment: “both functoriality assertions of the remark, for data indexed by a basis of the topology as in Tags 01LH and 01LI”.
+**`Stacks.AlgebraicGeometry.RelativeSheafGluing.existsUnique_glueHom_and_pullbackHom_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 718](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L718). The attribute's comment: “both functoriality assertions of the remark, for data indexed by a basis of the topology as in Tags 01LH and 01LI”.
 
 > **Stacks Project, Tag 01LK, over a basis of the topology.** Let `S` be a scheme and `B` a
 > basis for its topology. Let `D`, `D'` be gluing data over `B` as in Tag 01LH (local schemes
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.2, Tag 01LG](https://stacks.math.columbia.edu/tag/01LG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

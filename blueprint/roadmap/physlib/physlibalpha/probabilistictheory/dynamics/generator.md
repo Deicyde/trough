@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.IsGenerator, ProbabilisticTheory.IsGenerator.unique
+lean: PhyslibAlpha.ProbabilisticTheory.IsGenerator, PhyslibAlpha.ProbabilisticTheory.IsGenerator.unique
 statement: formalized
 proof: formalized
 ---
 
 # Generators of one-parameter groups
 
-The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.Generator`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.Generator`, [PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean): 2 declarations, 2 with a docstring.
 
 > The generator of a one-parameter family on a normed space, and its uniqueness.
 
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.Generator`, [PhyslibAlpha/
 
 ## A. The generator
 
-**`ProbabilisticTheory.IsGenerator`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean#L49).
+**`PhyslibAlpha.ProbabilisticTheory.IsGenerator`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean#L49).
 
 > `D` is the infinitesimal generator, at `t = 0`, of the one-parameter family `α`: for every `a`,
 > `t ↦ α t a` is differentiable at `0` with derivative `D a`. No algebraic structure on `E` (product,
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Dynamics.Generator`, [PhyslibAlpha/
 def IsGenerator (α : ℝ → E → E) (D : E → E) : Prop
 ```
 
-**`ProbabilisticTheory.IsGenerator.unique`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean#L54).
+**`PhyslibAlpha.ProbabilisticTheory.IsGenerator.unique`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean#L54).
 
 > The generator of a one-parameter family, if it exists, is unique — immediate from uniqueness of
 > derivatives (`HasDerivAt.unique`).
@@ -55,4 +55,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean)

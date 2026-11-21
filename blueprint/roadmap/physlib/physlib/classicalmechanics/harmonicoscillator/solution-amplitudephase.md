@@ -8,7 +8,7 @@ proof: formalized
 
 # Amplitude–phase parametrization
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.AmplitudePhase`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.AmplitudePhase`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean): 6 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.AmplitudePhas
 > an amplitude and an angle, these are stored as scalars, rather than as vectors as for the other
 > initial-condition types.
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase`**, a structure, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L79).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase`**, a structure, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L79).
 
 > Initial conditions for the harmonic oscillator specified by an amplitude `A` and a phase
 > offset `φ`, describing the solution `x(t) = A cos (ω t - φ)`.
@@ -73,7 +73,7 @@ structure AmplitudePhase where
 > Using `x₀ = A cos φ` and `v₀ = A ω sin φ`, we convert amplitude–phase data to the standard initial
 > position and velocity at `t = 0`.
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L101).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L101).
 
 > Convert amplitude–phase initial conditions to standard initial conditions at `t = 0`, via
 > `x₀ = A cos φ` and `v₀ = A ω sin φ`.
@@ -92,7 +92,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator) (IC : AmplitudePh
 > `x(t) = A cos (ω t - φ)`, with velocity `v(t) = -A ω sin (ω t - φ)`. In the position identity the
 > factor `1 / ω` of the standard solution cancels the `ω` in `v₀ = A ω sin φ`, which uses `ω ≠ 0`.
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_trajectory_eq_cos`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L118).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_trajectory_eq_cos`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L118).
 
 > The trajectory of amplitude–phase initial conditions is the cosine normal form
 > `x(t) = A cos (ω t - φ)`.
@@ -104,7 +104,7 @@ lemma toInitialConditions_trajectory_eq_cos (S : HarmonicOscillator) (IC : Ampli
       = EuclideanSpace.single 0 (IC.A * cos (S.ω * t - IC.φ))
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_velocity_eq_sin`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L129).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_velocity_eq_sin`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L129).
 
 > The velocity of the amplitude–phase trajectory is `v(t) = -A ω sin (ω t - φ)`.
 
@@ -126,7 +126,7 @@ lemma toInitialConditions_velocity_eq_sin (S : HarmonicOscillator) (IC : Amplitu
 > We prove that converting initial conditions to amplitude–phase form and back returns the original
 > initial conditions.
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.fromInitialConditions`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L159).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.fromInitialConditions`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L159).
 
 > Recover amplitude–phase data from standard initial conditions, as the polar coordinates of the
 > phase vector `(x₀, v₀ / ω)` embedded as `z = x₀ + (v₀ / ω) i`: the amplitude is `‖z‖` and the
@@ -139,7 +139,7 @@ noncomputable def fromInitialConditions (S : HarmonicOscillator) (IC : InitialCo
     AmplitudePhase
 ```
 
-**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_fromInitialConditions`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L166).
+**`ClassicalMechanics.HarmonicOscillator.AmplitudePhase.toInitialConditions_fromInitialConditions`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean#L166).
 
 > `fromInitialConditions` is a right inverse of `toInitialConditions`: converting initial
 > conditions to amplitude–phase form and back recovers them exactly.
@@ -156,4 +156,4 @@ lemma toInitialConditions_fromInitialConditions (S : HarmonicOscillator)
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean)

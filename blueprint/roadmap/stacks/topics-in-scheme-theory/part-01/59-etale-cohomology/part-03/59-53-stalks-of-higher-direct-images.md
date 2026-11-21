@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.53 Stalks of higher direct images
 
-Section 59.53 of the Stacks Project, [Tag 03Q7](https://stacks.math.columbia.edu/tag/03Q7). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.53 of the Stacks Project, [Tag 03Q7](https://stacks.math.columbia.edu/tag/03Q7). 2 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03Q9, a theorem
 
 [Tag 03Q9](https://stacks.math.columbia.edu/tag/03Q9) in the Stacks Project.
 
-**`AlgebraicGeometry.higherBaseChangeStalkHom_comp_higherDirectImageStalkIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/StrictHenselizationCriterionCommSq.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/StrictHenselizationCriterionCommSq.lean#L565). The attribute's comment: “compatibility of the isomorphisms with the base change map of a commutative square”.
+**`AlgebraicGeometry.higherBaseChangeStalkHom_comp_higherDirectImageStalkIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/StrictHenselizationCriterionCommSq.lean, line 565](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/StrictHenselizationCriterionCommSq.lean#L565). The attribute's comment: “compatibility of the isomorphisms with the base change map of a commutative square”.
 
 > **Stacks 03Q9, compatibility with base change along a commutative square.** Write
 > `θ = AlgebraicGeometry.higherDirectImageStalkIso` for the isomorphisms
@@ -37,7 +37,7 @@ theorem higherBaseChangeStalkHom_comp_higherDirectImageStalkIso_hom (q : ℕ)
           ((strictHenselizationBaseChangeSquarePullbackHom B₁ B₂ hX hS w x m hm).app F) q)
 ```
 
-**`AlgebraicGeometry.stalkDerivedPushforwardHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L295). The attribute's comment: “second assertion, for `K` in `D^+(X_étale)` and `n` in `ℤ`: `(R^n f_* K)_s = H^n_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}K)`, the cohomology objects of the right derived functors on the bounded below derived categories”.
+**`AlgebraicGeometry.stalkDerivedPushforwardHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L295). The attribute's comment: “second assertion, for `K` in `D^+(X_étale)` and `n` in `ℤ`: `(R^n f_* K)_s = H^n_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}K)`, the cohomology objects of the right derived functors on the bounded below derived categories”.
 
 > For `f : X ⟶ S` quasi-compact and quasi-separated, `K` in `D⁺(X_étale)` and `n : ℤ`,
 > `(R^n f_* K)_s ≅ H^n(X ×_S Spec(𝒪^{sh}_{S,s}), p⁻¹K)`.
@@ -54,7 +54,7 @@ def stalkDerivedPushforwardHomologyIso
             (strictHenselizationBaseChangeToSource B hS f s)).mapDerivedCategoryPlus.obj K))
 ```
 
-**`AlgebraicGeometry.stalkDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L312). The attribute's comment: “third assertion: `(Rf_* K)_s = RΓ_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}K)` in `D^+(Ab)`, as an isomorphism of functors on `D^+(X_étale)`, the stalk and `p^{-1}` acting degreewise”.
+**`AlgebraicGeometry.stalkDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L312). The attribute's comment: “third assertion: `(Rf_* K)_s = RΓ_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}K)` in `D^+(Ab)`, as an isomorphism of functors on `D^+(X_étale)`, the stalk and `p^{-1}` acting degreewise”.
 
 > For `f : X ⟶ S` quasi-compact and quasi-separated,
 > `(Rf_* K)_s ≅ RΓ(X ×_S Spec(𝒪^{sh}_{S,s}), p⁻¹K)` in `D⁺(Ab)`, naturally in `K ∈ D⁺(X_étale)`.
@@ -69,7 +69,7 @@ def stalkDerivedPushforwardIso :
         (smallEtaleStalkAb s.hom).mapDerivedCategoryPlus
 ```
 
-**`AlgebraicGeometry.higherDirectImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfHigherDirectImage.lean, line 808](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfHigherDirectImage.lean#L808). The attribute's comment: “the first assertion: abelian sheaves”. References: SGA 4 IX (4.1.1), “more general”.
+**`AlgebraicGeometry.higherDirectImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfHigherDirectImage.lean, line 808](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfHigherDirectImage.lean#L808). The attribute's comment: “the first assertion: abelian sheaves”. References: SGA 4 IX (4.1.1), “more general”.
 
 > **Stacks 03Q9: the stalks of the higher direct images.** Let `g : T ⟶ S` be a
 > quasi-compact and quasi-separated morphism of schemes, `F` an abelian sheaf on `T_étale` and `s`
@@ -88,13 +88,13 @@ def higherDirectImageStalkIso (n : ℕ) (F : Sheaf (smallEtaleTopology T) Ab.{u 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.stalkHigherDirectImageIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L282), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianDirectImageStalk.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianDirectImageStalk.lean#L136) (StacksFrontier): “first assertion, for an abelian sheaf `F` on `X_étale`, `f : X → S` quasi-compact and quasi-separated over an arbitrary scheme `S` and an arbitrary geometric point `s` of `S`: `(R^n f_* F)_s = H^n_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}F)`, with `R^n` Mathlib's right derived functors of direct image and of global sections on the small étale sites; the strict henselization is taken inside a big étale site `B` containing `S`”.
+- [`AlgebraicGeometry.stalkHigherDirectImageIso`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkHigherDirectImageStrictHenselization.lean#L282), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianDirectImageStalk.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StrictlyHenselianDirectImageStalk.lean#L136) (StacksFrontier): “first assertion, for an abelian sheaf `F` on `X_étale`, `f : X → S` quasi-compact and quasi-separated over an arbitrary scheme `S` and an arbitrary geometric point `s` of `S`: `(R^n f_* F)_s = H^n_ét(X ×_S Spec(𝒪^{sh}_{S,s}), p^{-1}F)`, with `R^n` Mathlib's right derived functors of direct image and of global sections on the small étale sites; the strict henselization is taken inside a big étale site `B` containing `S`”.
 
 ## Tag 0GIX, a remark
 
 [Tag 0GIX](https://stacks.math.columbia.edu/tag/0GIX) in the Stacks Project.
 
-**`AlgebraicGeometry.strictHenselizationSectionsToFibreSectionsViaBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L448). The attribute's comment: “the second map: global sections of the base change map for the left square”.
+**`AlgebraicGeometry.strictHenselizationSectionsToFibreSectionsViaBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L448). The attribute's comment: “the second map: global sections of the base change map for the left square”.
 
 > **Stacks 0GIX, the second map.** The canonical map
 > `RΓ(X ×_S Spec(𝒪^{sh}_{S,s}), p⁻¹K) ⟶ RΓ(X_s, K|_{X_s})`, natural in `K ∈ D(X_étale)`, defined as
@@ -128,7 +128,7 @@ def strictHenselizationSectionsToFibreSectionsViaBaseChange :
         smallEtaleDerivedGlobalSections (geometricFibre f s)
 ```
 
-**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L709). The attribute's comment: “the first map: global sections of the base change map for the right square”.
+**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 709](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L709). The attribute's comment: “the first map: global sections of the base change map for the right square”.
 
 > **Stacks 0GIX, the first map.** The canonical map
 > `(Rf_*K)_s ⟶ RΓ(X ×_S Spec(𝒪^{sh}_{S,s}), p⁻¹K)`, natural in `K ∈ D(X_étale)`, defined as the
@@ -162,7 +162,7 @@ def derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange :
         smallEtaleDerivedGlobalSections (strictHenselizationBaseChange B hS f s)
 ```
 
-**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 771](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L771). The attribute's comment: “the composition is the base change map”.
+**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean, line 771](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedStalkFibreBaseChangeMaps.lean#L771). The attribute's comment: “the composition is the base change map”.
 
 > **Stacks 0GIX, the composition clause.** For a morphism of schemes `f : X ⟶ S` and a
 > geometric point `s` of `S`, the composite of the two canonical maps
@@ -200,7 +200,7 @@ theorem derivedPushforwardStalkToStrictHenselizationSectionsViaBaseChange_comp :
           (smallEtaleDerivedGlobalSectionsPushforwardIsoAb (geometricFibreToPoint f s)).hom
 ```
 
-**`AlgebraicGeometry.strictHenselizationSectionsToFibreSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean#L446). The attribute's comment: “the map to the fibre”.
+**`AlgebraicGeometry.strictHenselizationSectionsToFibreSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean, line 446](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean#L446). The attribute's comment: “the map to the fibre”.
 
 > **Stacks 0GIX, the map to the fibre.** The canonical map
 >
@@ -221,7 +221,7 @@ def strictHenselizationSectionsToFibreSections :
         smallEtaleDerivedGlobalSections (geometricFibre f s)
 ```
 
-**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean#L552). The attribute's comment: “the map from the stalk”.
+**`AlgebraicGeometry.derivedPushforwardStalkToStrictHenselizationSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean, line 552](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkOfDerivedPushforward.lean#L552). The attribute's comment: “the map from the stalk”.
 
 > **Stacks 0GIX, the map from the stalk.** The canonical map
 >
@@ -249,4 +249,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.53, Tag 03Q7](https://stacks.math.columbia.edu/tag/03Q7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.14 Invertible sheaves and morphisms into Proj
 
-Section 27.14 of the Stacks Project, [Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 27.14 of the Stacks Project, [Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01NK, a lemma
 
 [Tag 01NK](https://stacks.math.columbia.edu/tag/01NK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean#L95). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj A and the unital map of Z-graded algebras theta : r^*(sum\_d O\_X(d)) -> sum\_d L^\{tensor d}|\_\{U(psi)}; properties (1) and (2); every triple (U', r', theta') with (1) and (2) equals (U(psi), r, theta); and for d >= 1 and an open V on which psi(A\_d) generates L^\{tensor d}, the pair (phi, alpha) attached to the Veronese restriction of psi to V exists uniquely, r|\_V = phi, and theta|\_V in degree d equals alpha”.
+**`Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean#L95). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj A and the unital map of Z-graded algebras theta : r^*(sum\_d O\_X(d)) -> sum\_d L^\{tensor d}|\_\{U(psi)}; properties (1) and (2); every triple (U', r', theta') with (1) and (2) equals (U(psi), r, theta); and for d >= 1 and an open V on which psi(A\_d) generates L^\{tensor d}, the pair (phi, alpha) attached to the Veronese restriction of psi to V exists uniquely, r|\_V = phi, and theta|\_V in degree d equals alpha”.
 
 > Let `A` be a graded ring, `X = Proj A`, `T` a scheme, `L` an invertible `𝒪_T`-module and
 > `ψ : A → Γ_*(T, L)` a homomorphism of graded rings. Put
@@ -95,7 +95,7 @@ theorem tag01NK :
 
 [Tag 01NL](https://stacks.math.columbia.edu/tag/01NL) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.mapHom_coverHom_surjective_and_not_range_subset_twistInvertibleLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean#L350). The attribute's comment: “the remark as one theorem: for S = k[A, B, C] with weights 1, 2, 3 and ψ : S → Γ\_*(P²\_k, O(1)) given by A ↦ X₀, B ↦ X₁², C ↦ X₂³, the morphism r\_\{L,ψ} : P²\_k → Proj S is defined everywhere, satisfies property (1) of Tag 01NK, is surjective, O\_X(1) is not invertible everywhere on X = Proj S, and the image of r\_\{L,ψ} is not contained in the locus where the single sheaf O\_X(1) is invertible”.
+**`Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.mapHom_coverHom_surjective_and_not_range_subset_twistInvertibleLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean, line 350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean#L350). The attribute's comment: “the remark as one theorem: for S = k[A, B, C] with weights 1, 2, 3 and ψ : S → Γ\_*(P²\_k, O(1)) given by A ↦ X₀, B ↦ X₁², C ↦ X₂³, the morphism r\_\{L,ψ} : P²\_k → Proj S is defined everywhere, satisfies property (1) of Tag 01NK, is surjective, O\_X(1) is not invertible everywhere on X = Proj S, and the image of r\_\{L,ψ} is not contained in the locus where the single sheaf O\_X(1) is invertible”.
 
 > **Stacks Tag 01NL.** Let `k` be a field, `S = k[A, B, C]` graded by `deg A = 1`,
 > `deg B = 2`, `deg C = 3`, and `X = Proj S`; let `T = 𝐏²_k` with `𝓛 = 𝒪_T(1)`, and let
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.14, Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

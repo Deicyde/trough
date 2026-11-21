@@ -7,9 +7,9 @@ proof: formalized
 
 # UnionFind/Basic
 
-`Batteries.Data.UnionFind.Basic`, in [Batteries/Data/UnionFind/Basic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean), by Mario Carneiro.
+`Batteries.Data.UnionFind.Basic`, in [Batteries/Data/UnionFind/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean), by Mario Carneiro.
 
-`Batteries.UFNode` (structure, [line 17](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L17))
+`Batteries.UFNode` (structure, [line 17](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L17))
 
 > Union-find node type
 
@@ -21,7 +21,7 @@ structure UFNode where
   rank : Nat
 ```
 
-`Batteries.UnionFind.parentD` (definition, [line 26](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L26))
+`Batteries.UnionFind.parentD` (definition, [line 26](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L26))
 
 > Parent of a union-find node, defaults to self when the node is a root
 
@@ -29,7 +29,7 @@ structure UFNode where
 def parentD (arr : Array UFNode) (i : Nat) : Nat
 ```
 
-`Batteries.UnionFind.rankD` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L30))
+`Batteries.UnionFind.rankD` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L30))
 
 > Rank of a union-find node, defaults to 0 when the node is a root
 
@@ -37,46 +37,46 @@ def parentD (arr : Array UFNode) (i : Nat) : Nat
 def rankD (arr : Array UFNode) (i : Nat) : Nat
 ```
 
-`Batteries.UnionFind.parentD_eq` (theorem, [line 33](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L33))
+`Batteries.UnionFind.parentD_eq` (theorem, [line 33](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L33))
 
 ```lean
 theorem parentD_eq {arr : Array UFNode} {i} (h) :
     parentD arr i = arr[i].parent
 ```
 
-`Batteries.UnionFind.rankD_eq` (theorem, [line 36](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L36))
+`Batteries.UnionFind.rankD_eq` (theorem, [line 36](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L36))
 
 ```lean
 theorem rankD_eq {arr : Array UFNode} {i} (h) : rankD arr i = arr[i].rank
 ```
 
-`Batteries.UnionFind.parentD_of_not_lt` (theorem, [line 38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L38))
+`Batteries.UnionFind.parentD_of_not_lt` (theorem, [line 38](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L38))
 
 ```lean
 theorem parentD_of_not_lt : ¬i < arr.size → parentD arr i = i
 ```
 
-`Batteries.UnionFind.lt_of_parentD` (theorem, [line 40](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L40))
+`Batteries.UnionFind.lt_of_parentD` (theorem, [line 40](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L40))
 
 ```lean
 theorem lt_of_parentD : parentD arr i ≠ i → i < arr.size
 ```
 
-`Batteries.UnionFind.parentD_set` (theorem, [line 43](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L43))
+`Batteries.UnionFind.parentD_set` (theorem, [line 43](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L43))
 
 ```lean
 theorem parentD_set {arr : Array UFNode} {x v i h} :
     parentD (arr.set x v h) i = if x = i then v.parent else parentD arr i
 ```
 
-`Batteries.UnionFind.rankD_set` (theorem, [line 50](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L50))
+`Batteries.UnionFind.rankD_set` (theorem, [line 50](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L50))
 
 ```lean
 theorem rankD_set {arr : Array UFNode} {x v i h} :
     rankD (arr.set x v h) i = if x = i then v.rank else rankD arr i
 ```
 
-`Batteries.UnionFind` (structure, [line 97](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L97))
+`Batteries.UnionFind` (structure, [line 97](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L97))
 
 > ### Union-find data structure
 >
@@ -124,7 +124,7 @@ structure UnionFind where
   rankD_lt : ∀ {i}, parentD arr i ≠ i → rankD arr i < rankD arr (parentD arr i)
 ```
 
-`Batteries.UnionFind.size` (abbreviation, [line 108](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L108))
+`Batteries.UnionFind.size` (abbreviation, [line 108](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L108))
 
 > Size of union-find structure.
 
@@ -132,7 +132,7 @@ structure UnionFind where
 abbrev size (self : UnionFind)
 ```
 
-`Batteries.UnionFind.mkEmpty` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L111))
+`Batteries.UnionFind.mkEmpty` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L111))
 
 > Create an empty union-find structure with specific capacity
 
@@ -140,7 +140,7 @@ abbrev size (self : UnionFind)
 def mkEmpty (c : Nat) : UnionFind
 ```
 
-`Batteries.UnionFind.empty` (definition, [line 117](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L117))
+`Batteries.UnionFind.empty` (definition, [line 117](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L117))
 
 > Empty union-find structure
 
@@ -148,7 +148,7 @@ def mkEmpty (c : Nat) : UnionFind
 def empty
 ```
 
-`Batteries.UnionFind.parent` (abbreviation, [line 122](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L122))
+`Batteries.UnionFind.parent` (abbreviation, [line 122](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L122))
 
 > Parent of union-find node
 
@@ -156,19 +156,19 @@ def empty
 abbrev parent (self : UnionFind) (i : Nat) : Nat
 ```
 
-`Batteries.UnionFind.parent'_lt` (theorem, [line 124](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L124))
+`Batteries.UnionFind.parent'_lt` (theorem, [line 124](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L124))
 
 ```lean
 theorem parent'_lt (self : UnionFind) (i : Nat) (h) : self.arr[i].parent < self.size
 ```
 
-`Batteries.UnionFind.parent_lt` (theorem, [line 127](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L127))
+`Batteries.UnionFind.parent_lt` (theorem, [line 127](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L127))
 
 ```lean
 theorem parent_lt (self : UnionFind) (i : Nat) : self.parent i < self.size ↔ i < self.size
 ```
 
-`Batteries.UnionFind.rank` (abbreviation, [line 131](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L131))
+`Batteries.UnionFind.rank` (abbreviation, [line 131](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L131))
 
 > Rank of union-find node
 
@@ -176,21 +176,21 @@ theorem parent_lt (self : UnionFind) (i : Nat) : self.parent i < self.size ↔ i
 abbrev rank (self : UnionFind) (i : Nat) : Nat
 ```
 
-`Batteries.UnionFind.rank_lt` (theorem, [line 133](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L133))
+`Batteries.UnionFind.rank_lt` (theorem, [line 133](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L133))
 
 ```lean
 theorem rank_lt {self : UnionFind} {i : Nat} : self.parent i ≠ i →
     self.rank i < self.rank (self.parent i)
 ```
 
-`Batteries.UnionFind.rank'_lt` (theorem, [line 136](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L136))
+`Batteries.UnionFind.rank'_lt` (theorem, [line 136](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L136))
 
 ```lean
 theorem rank'_lt (self : UnionFind) (i h) : self.arr[i].parent ≠ i →
     self.rank i < self.rank (self.arr[i]).parent
 ```
 
-`Batteries.UnionFind.rankMax` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L141))
+`Batteries.UnionFind.rankMax` (definition, [line 141](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L141))
 
 > Maximum rank of nodes in a union-find structure
 
@@ -198,38 +198,38 @@ theorem rank'_lt (self : UnionFind) (i h) : self.arr[i].parent ≠ i →
 noncomputable def rankMax (self : UnionFind)
 ```
 
-`Batteries.UnionFind.rank'_lt_rankMax` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L143))
+`Batteries.UnionFind.rank'_lt_rankMax` (theorem, [line 143](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L143))
 
 ```lean
 theorem rank'_lt_rankMax (self : UnionFind) (i : Nat) (h) : (self.arr[i]).rank < self.rankMax
 ```
 
-`Batteries.UnionFind.rankD_lt_rankMax` (theorem, [line 150](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L150))
+`Batteries.UnionFind.rankD_lt_rankMax` (theorem, [line 150](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L150))
 
 ```lean
 theorem rankD_lt_rankMax (self : UnionFind) (i : Nat) :
     rankD self.arr i < self.rankMax
 ```
 
-`Batteries.UnionFind.lt_rankMax` (theorem, [line 154](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L154))
+`Batteries.UnionFind.lt_rankMax` (theorem, [line 154](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L154))
 
 ```lean
 theorem lt_rankMax (self : UnionFind) (i : Nat) : self.rank i < self.rankMax
 ```
 
-`Batteries.UnionFind.push_rankD` (theorem, [line 156](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L156))
+`Batteries.UnionFind.push_rankD` (theorem, [line 156](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L156))
 
 ```lean
 theorem push_rankD (arr : Array UFNode) : rankD (arr.push ⟨arr.size, 0⟩) i = rankD arr i
 ```
 
-`Batteries.UnionFind.push_parentD` (theorem, [line 160](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L160))
+`Batteries.UnionFind.push_parentD` (theorem, [line 160](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L160))
 
 ```lean
 theorem push_parentD (arr : Array UFNode) : parentD (arr.push ⟨arr.size, 0⟩) i = parentD arr i
 ```
 
-`Batteries.UnionFind.push` (definition, [line 167](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L167))
+`Batteries.UnionFind.push` (definition, [line 167](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L167))
 
 > Add a new node to a union-find structure, unlinked with any other nodes
 
@@ -237,7 +237,7 @@ theorem push_parentD (arr : Array UFNode) : parentD (arr.push ⟨arr.size, 0⟩)
 def push (self : UnionFind) : UnionFind
 ```
 
-`Batteries.UnionFind.root` (definition, [line 175](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L175))
+`Batteries.UnionFind.root` (definition, [line 175](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L175))
 
 > Root of a union-find node.
 
@@ -245,13 +245,13 @@ def push (self : UnionFind) : UnionFind
 def root (self : UnionFind) (x : Fin self.size) : Fin self.size
 ```
 
-`Batteries.UnionFind.rootN` (definition, [line 185](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L185))
+`Batteries.UnionFind.rootN` (definition, [line 185](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L185))
 
 ```lean
 def rootN (self : UnionFind) (x : Fin n) (h : n = self.size) : Fin n
 ```
 
-`Batteries.UnionFind.root!` (definition, [line 189](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L189))
+`Batteries.UnionFind.root!` (definition, [line 189](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L189))
 
 > Root of a union-find node. Panics if index is out of bounds.
 
@@ -259,7 +259,7 @@ def rootN (self : UnionFind) (x : Fin n) (h : n = self.size) : Fin n
 def root! (self : UnionFind) (x : Nat) : Nat
 ```
 
-`Batteries.UnionFind.rootD` (definition, [line 193](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L193))
+`Batteries.UnionFind.rootD` (definition, [line 193](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L193))
 
 > Root of a union-find node. Returns input if index is out of bounds.
 
@@ -267,65 +267,65 @@ def root! (self : UnionFind) (x : Nat) : Nat
 def rootD (self : UnionFind) (x : Nat) : Nat
 ```
 
-`Batteries.UnionFind.parent_root` (theorem, [line 198](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L198))
+`Batteries.UnionFind.parent_root` (theorem, [line 198](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L198))
 
 ```lean
 theorem parent_root (self : UnionFind) (x : Fin self.size) :
     (self.arr[(self.root x).1]).parent = self.root x
 ```
 
-`Batteries.UnionFind.parent_rootD` (theorem, [line 205](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L205))
+`Batteries.UnionFind.parent_rootD` (theorem, [line 205](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L205))
 
 ```lean
 theorem parent_rootD (self : UnionFind) (x : Nat) :
     self.parent (self.rootD x) = self.rootD x
 ```
 
-`Batteries.UnionFind.rootD_parent` (theorem, [line 213](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L213))
+`Batteries.UnionFind.rootD_parent` (theorem, [line 213](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L213))
 
 ```lean
 theorem rootD_parent (self : UnionFind) (x : Nat) : self.rootD (self.parent x) = self.rootD x
 ```
 
-`Batteries.UnionFind.rootD_lt` (theorem, [line 222](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L222))
+`Batteries.UnionFind.rootD_lt` (theorem, [line 222](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L222))
 
 ```lean
 theorem rootD_lt {self : UnionFind} {x : Nat} : self.rootD x < self.size ↔ x < self.size
 ```
 
-`Batteries.UnionFind.rootD_eq_self` (theorem, [line 226](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L226))
+`Batteries.UnionFind.rootD_eq_self` (theorem, [line 226](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L226))
 
 ```lean
 theorem rootD_eq_self {self : UnionFind} {x : Nat} : self.rootD x = x ↔ self.parent x = x
 ```
 
-`Batteries.UnionFind.rootD_rootD` (theorem, [line 230](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L230))
+`Batteries.UnionFind.rootD_rootD` (theorem, [line 230](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L230))
 
 ```lean
 theorem rootD_rootD {self : UnionFind} {x : Nat} : self.rootD (self.rootD x) = self.rootD x
 ```
 
-`Batteries.UnionFind.rootD_ext` (theorem, [line 233](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L233))
+`Batteries.UnionFind.rootD_ext` (theorem, [line 233](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L233))
 
 ```lean
 theorem rootD_ext {m1 m2 : UnionFind}
     (H : ∀ x, m1.parent x = m2.parent x) {x} : m1.rootD x = m2.rootD x
 ```
 
-`Batteries.UnionFind.le_rank_root` (theorem, [line 242](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L242))
+`Batteries.UnionFind.le_rank_root` (theorem, [line 242](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L242))
 
 ```lean
 theorem le_rank_root {self : UnionFind} {x : Nat} : self.rank x ≤ self.rank (self.rootD x)
 ```
 
-`Batteries.UnionFind.lt_rank_root` (theorem, [line 251](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L251))
+`Batteries.UnionFind.lt_rank_root` (theorem, [line 251](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L251))
 
 ```lean
 theorem lt_rank_root {self : UnionFind} {x : Nat} :
     self.rank x < self.rank (self.rootD x) ↔ self.parent x ≠ x
 ```
 
-`Batteries.UnionFind.FindAux` (structure, [line 258](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L258))
+`Batteries.UnionFind.FindAux` (structure, [line 258](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L258))
 
 > Auxiliary data structure for find operation
 
@@ -339,7 +339,7 @@ structure FindAux (n : Nat) where
   size_eq : s.size = n
 ```
 
-`Batteries.UnionFind.findAux` (definition, [line 267](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L267))
+`Batteries.UnionFind.findAux` (definition, [line 267](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L267))
 
 > Auxiliary function for find operation
 
@@ -347,14 +347,14 @@ structure FindAux (n : Nat) where
 def findAux (self : UnionFind) (x : Fin self.size) : FindAux self.size
 ```
 
-`Batteries.UnionFind.findAux_root` (theorem, [line 278](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L278))
+`Batteries.UnionFind.findAux_root` (theorem, [line 278](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L278))
 
 ```lean
 theorem findAux_root {self : UnionFind} {x : Fin self.size} :
     (findAux self x).root = self.root x
 ```
 
-`Batteries.UnionFind.findAux_s` (theorem, [line 288](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L288))
+`Batteries.UnionFind.findAux_s` (theorem, [line 288](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L288))
 
 ```lean
 theorem findAux_s {self : UnionFind} {x : Fin self.size} :
@@ -363,14 +363,14 @@ theorem findAux_s {self : UnionFind} {x : Fin self.size} :
         { s with parent := self.rootD x }
 ```
 
-`Batteries.UnionFind.rankD_findAux` (theorem, [line 298](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L298))
+`Batteries.UnionFind.rankD_findAux` (theorem, [line 298](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L298))
 
 ```lean
 theorem rankD_findAux {self : UnionFind} {x : Fin self.size} :
     rankD (findAux self x).s i = self.rank i
 ```
 
-`Batteries.UnionFind.parentD_findAux` (theorem, [line 312](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L312))
+`Batteries.UnionFind.parentD_findAux` (theorem, [line 312](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L312))
 
 ```lean
 theorem parentD_findAux {self : UnionFind} {x : Fin self.size} :
@@ -378,21 +378,21 @@ theorem parentD_findAux {self : UnionFind} {x : Fin self.size} :
     if i = x then self.rootD x else parentD (self.findAux ⟨_, self.parent'_lt _ x.2⟩).s i
 ```
 
-`Batteries.UnionFind.parentD_findAux_rootD` (theorem, [line 326](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L326))
+`Batteries.UnionFind.parentD_findAux_rootD` (theorem, [line 326](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L326))
 
 ```lean
 theorem parentD_findAux_rootD {self : UnionFind} {x : Fin self.size} :
     parentD (findAux self x).s (self.rootD x) = self.rootD x
 ```
 
-`Batteries.UnionFind.parentD_findAux_lt` (theorem, [line 335](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L335))
+`Batteries.UnionFind.parentD_findAux_lt` (theorem, [line 335](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L335))
 
 ```lean
 theorem parentD_findAux_lt {self : UnionFind} {x : Fin self.size} (h : i < self.size) :
     parentD (findAux self x).s i < self.size
 ```
 
-`Batteries.UnionFind.parentD_findAux_or` (theorem, [line 347](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L347))
+`Batteries.UnionFind.parentD_findAux_or` (theorem, [line 347](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L347))
 
 ```lean
 theorem parentD_findAux_or (self : UnionFind) (x : Fin self.size) (i) :
@@ -400,7 +400,7 @@ theorem parentD_findAux_or (self : UnionFind) (x : Fin self.size) (i) :
     parentD (findAux self x).s i = self.parent i
 ```
 
-`Batteries.UnionFind.lt_rankD_findAux` (theorem, [line 362](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L362))
+`Batteries.UnionFind.lt_rankD_findAux` (theorem, [line 362](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L362))
 
 ```lean
 theorem lt_rankD_findAux {self : UnionFind} {x : Fin self.size} :
@@ -408,7 +408,7 @@ theorem lt_rankD_findAux {self : UnionFind} {x : Fin self.size} :
     self.rank i < self.rank (parentD (findAux self x).s i)
 ```
 
-`Batteries.UnionFind.find` (definition, [line 375](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L375))
+`Batteries.UnionFind.find` (definition, [line 375](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L375))
 
 > Find root of a union-find node, updating the structure using path compression.
 
@@ -417,13 +417,13 @@ def find (self : UnionFind) (x : Fin self.size) :
     (s : UnionFind) × {_root : Fin s.size // s.size = self.size}
 ```
 
-`Batteries.UnionFind.findN` (definition, [line 388](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L388))
+`Batteries.UnionFind.findN` (definition, [line 388](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L388))
 
 ```lean
 def findN (self : UnionFind) (x : Fin n) (h : n = self.size) : UnionFind × Fin n
 ```
 
-`Batteries.UnionFind.find!` (definition, [line 393](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L393))
+`Batteries.UnionFind.find!` (definition, [line 393](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L393))
 
 > Find root of a union-find node, updating the structure using path compression.
 > Panics if index is out of bounds.
@@ -432,7 +432,7 @@ def findN (self : UnionFind) (x : Fin n) (h : n = self.size) : UnionFind × Fin 
 def find! (self : UnionFind) (x : Nat) : UnionFind × Nat
 ```
 
-`Batteries.UnionFind.findD` (definition, [line 401](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L401))
+`Batteries.UnionFind.findD` (definition, [line 401](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L401))
 
 > Find root of a union-find node, updating the structure using path compression.
 > Returns inputs unchanged when index is out of bounds.
@@ -441,28 +441,28 @@ def find! (self : UnionFind) (x : Nat) : UnionFind × Nat
 def findD (self : UnionFind) (x : Nat) : UnionFind × Nat
 ```
 
-`Batteries.UnionFind.find_size` (theorem, [line 407](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L407))
+`Batteries.UnionFind.find_size` (theorem, [line 407](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L407))
 
 ```lean
 theorem find_size (self : UnionFind) (x : Fin self.size) :
     (self.find x).1.size = self.size
 ```
 
-`Batteries.UnionFind.find_root_2` (theorem, [line 410](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L410))
+`Batteries.UnionFind.find_root_2` (theorem, [line 410](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L410))
 
 ```lean
 theorem find_root_2 (self : UnionFind) (x : Fin self.size) :
     (self.find x).2.1.1 = self.rootD x
 ```
 
-`Batteries.UnionFind.find_parent_1` (theorem, [line 413](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L413))
+`Batteries.UnionFind.find_parent_1` (theorem, [line 413](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L413))
 
 ```lean
 theorem find_parent_1 (self : UnionFind) (x : Fin self.size) :
     (self.find x).1.parent x = self.rootD x
 ```
 
-`Batteries.UnionFind.find_parent_or` (theorem, [line 418](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L418))
+`Batteries.UnionFind.find_parent_or` (theorem, [line 418](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L418))
 
 ```lean
 theorem find_parent_or (self : UnionFind) (x : Fin self.size) (i) :
@@ -470,14 +470,14 @@ theorem find_parent_or (self : UnionFind) (x : Fin self.size) (i) :
     (self.find x).1.parent i = self.parent i
 ```
 
-`Batteries.UnionFind.find_root_1` (theorem, [line 422](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L422))
+`Batteries.UnionFind.find_root_1` (theorem, [line 422](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L422))
 
 ```lean
 theorem find_root_1 (self : UnionFind) (x : Fin self.size) (i : Nat) :
     (self.find x).1.rootD i = self.rootD i
 ```
 
-`Batteries.UnionFind.linkAux` (definition, [line 439](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L439))
+`Batteries.UnionFind.linkAux` (definition, [line 439](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L439))
 
 > Link two union-find nodes
 
@@ -485,7 +485,7 @@ theorem find_root_1 (self : UnionFind) (x : Fin self.size) (i : Nat) :
 def linkAux (self : Array UFNode) (x y : Fin self.size) : Array UFNode
 ```
 
-`Batteries.UnionFind.setParentBump_rankD_lt` (theorem, [line 454](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L454))
+`Batteries.UnionFind.setParentBump_rankD_lt` (theorem, [line 454](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L454))
 
 ```lean
 theorem setParentBump_rankD_lt {arr : Array UFNode} {x y : Fin arr.size}
@@ -500,7 +500,7 @@ theorem setParentBump_rankD_lt {arr : Array UFNode} {x y : Fin arr.size}
     ¬parentD arr' i = i → rankD arr' i < rankD arr' (parentD arr' i)
 ```
 
-`Batteries.UnionFind.setParent_rankD_lt` (theorem, [line 479](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L479))
+`Batteries.UnionFind.setParent_rankD_lt` (theorem, [line 479](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L479))
 
 ```lean
 theorem setParent_rankD_lt {arr : Array UFNode} {x y : Fin arr.size}
@@ -510,13 +510,13 @@ theorem setParent_rankD_lt {arr : Array UFNode} {x y : Fin arr.size}
     parentD arr' i ≠ i → rankD arr' i < rankD arr' (parentD arr' i)
 ```
 
-`Batteries.UnionFind.linkAux_size` (theorem, [line 487](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L487))
+`Batteries.UnionFind.linkAux_size` (theorem, [line 487](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L487))
 
 ```lean
 theorem linkAux_size : (linkAux self x y).size = self.size
 ```
 
-`Batteries.UnionFind.link` (definition, [line 493](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L493))
+`Batteries.UnionFind.link` (definition, [line 493](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L493))
 
 > Link a union-find node to a root node.
 
@@ -524,14 +524,14 @@ theorem linkAux_size : (linkAux self x y).size = self.size
 def link (self : UnionFind) (x y : Fin self.size) (yroot : self.parent y = y) : UnionFind
 ```
 
-`Batteries.UnionFind.linkN` (definition, [line 525](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L525))
+`Batteries.UnionFind.linkN` (definition, [line 525](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L525))
 
 ```lean
 def linkN (self : UnionFind) (x y : Fin n) (yroot : self.parent y = y) (h : n = self.size) :
     UnionFind
 ```
 
-`Batteries.UnionFind.link!` (definition, [line 529](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L529))
+`Batteries.UnionFind.link!` (definition, [line 529](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L529))
 
 > Link a union-find node to a root node. Panics if either index is out of bounds.
 
@@ -539,7 +539,7 @@ def linkN (self : UnionFind) (x y : Fin n) (yroot : self.parent y = y) (h : n = 
 def link! (self : UnionFind) (x y : Nat) (yroot : self.parent y = y) : UnionFind
 ```
 
-`Batteries.UnionFind.union` (definition, [line 536](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L536))
+`Batteries.UnionFind.union` (definition, [line 536](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L536))
 
 > Link two union-find nodes, uniting their respective classes.
 
@@ -547,13 +547,13 @@ def link! (self : UnionFind) (x y : Nat) (yroot : self.parent y = y) : UnionFind
 def union (self : UnionFind) (x y : Fin self.size) : UnionFind
 ```
 
-`Batteries.UnionFind.unionN` (definition, [line 547](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L547))
+`Batteries.UnionFind.unionN` (definition, [line 547](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L547))
 
 ```lean
 def unionN (self : UnionFind) (x y : Fin n) (h : n = self.size) : UnionFind
 ```
 
-`Batteries.UnionFind.union!` (definition, [line 552](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L552))
+`Batteries.UnionFind.union!` (definition, [line 552](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L552))
 
 > Link two union-find nodes, uniting their respective classes.
 > Panics if either index is out of bounds.
@@ -562,7 +562,7 @@ def unionN (self : UnionFind) (x y : Fin n) (h : n = self.size) : UnionFind
 def union! (self : UnionFind) (x y : Nat) : UnionFind
 ```
 
-`Batteries.UnionFind.checkEquiv` (definition, [line 559](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L559))
+`Batteries.UnionFind.checkEquiv` (definition, [line 559](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L559))
 
 > Check whether two union-find nodes are equivalent, updating structure using path compression.
 
@@ -570,13 +570,13 @@ def union! (self : UnionFind) (x y : Nat) : UnionFind
 def checkEquiv (self : UnionFind) (x y : Fin self.size) : UnionFind × Bool
 ```
 
-`Batteries.UnionFind.checkEquivN` (definition, [line 565](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L565))
+`Batteries.UnionFind.checkEquivN` (definition, [line 565](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L565))
 
 ```lean
 def checkEquivN (self : UnionFind) (x y : Fin n) (h : n = self.size) : UnionFind × Bool
 ```
 
-`Batteries.UnionFind.checkEquiv!` (definition, [line 570](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L570))
+`Batteries.UnionFind.checkEquiv!` (definition, [line 570](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L570))
 
 > Check whether two union-find nodes are equivalent, updating structure using path compression.
 > Panics if either index is out of bounds.
@@ -585,7 +585,7 @@ def checkEquivN (self : UnionFind) (x y : Fin n) (h : n = self.size) : UnionFind
 def checkEquiv! (self : UnionFind) (x y : Nat) : UnionFind × Bool
 ```
 
-`Batteries.UnionFind.checkEquivD` (definition, [line 578](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L578))
+`Batteries.UnionFind.checkEquivD` (definition, [line 578](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L578))
 
 > Check whether two union-find nodes are equivalent with path compression,
 > returns `x == y` if either index is out of bounds
@@ -594,7 +594,7 @@ def checkEquiv! (self : UnionFind) (x y : Nat) : UnionFind × Bool
 def checkEquivD (self : UnionFind) (x y : Nat) : UnionFind × Bool
 ```
 
-`Batteries.UnionFind.Equiv` (definition, [line 584](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean#L584))
+`Batteries.UnionFind.Equiv` (definition, [line 584](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean#L584))
 
 > Equivalence relation from a `UnionFind` structure
 
@@ -608,5 +608,5 @@ def Equiv (self : UnionFind) (a b : Nat) : Prop
 
 ## Sources
 
-- [Batteries/Data/UnionFind/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/UnionFind/Basic.lean)
+- [Batteries/Data/UnionFind/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/UnionFind/Basic.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.UnionFind.Basic.json)

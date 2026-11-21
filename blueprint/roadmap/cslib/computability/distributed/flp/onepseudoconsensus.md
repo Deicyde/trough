@@ -7,12 +7,12 @@ proof: formalized
 
 # 1-tolerant pseudo-consensus
 
-`Cslib.Computability.Distributed.FLP.OnePseudoConsensus`, in [Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Distributed.FLP.OnePseudoConsensus`, in [Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean), by Ching-Tsun Chou.
 
 > This file develops the theory of pseudo-consensus algorithms that can tolerate up to 1 fault.
 > It formalizes section 3 of [Volzer2004] except Theorem 1.
 
-`Cslib.FLP.Algorithm.CanDecideWithout` (definition, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L28))
+`Cslib.FLP.Algorithm.CanDecideWithout` (definition, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L28))
 
 > `a.CanDecideWithout s p b` means that the boolean value `b` is decided on in a state that
 > is reachable from `s` without the participation of `p`. In the notation of [Volzer2004], this
@@ -23,7 +23,7 @@ def Algorithm.CanDecideWithout (a : Algorithm P M S)
     (s : State P M S) (p : P) (b : Bool) : Prop
 ```
 
-`Cslib.FLP.Algorithm.Uniform` (definition, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L34))
+`Cslib.FLP.Algorithm.Uniform` (definition, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L34))
 
 > `a.Uniform s b` means that for every process `p`, `a.CanDecideWithout s p b` but
 > not `a.CanDecideWithout s p !b`.
@@ -32,7 +32,7 @@ def Algorithm.CanDecideWithout (a : Algorithm P M S)
 def Algorithm.Uniform (a : Algorithm P M S) (s : State P M S) (b : Bool) : Prop
 ```
 
-`Cslib.FLP.Algorithm.NonUniform` (definition, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L39))
+`Cslib.FLP.Algorithm.NonUniform` (definition, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L39))
 
 > `a.NonUniform s` means that for each boolean value `b`, there is a process `p`
 > such that `a.CanDecideWithout s p b`.
@@ -41,7 +41,7 @@ def Algorithm.Uniform (a : Algorithm P M S) (s : State P M S) (b : Bool) : Prop
 def Algorithm.NonUniform (a : Algorithm P M S) (s : State P M S) : Prop
 ```
 
-`Cslib.FLP.OnePseudoConsensus.pseudoTermination` (theorem, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L47))
+`Cslib.FLP.OnePseudoConsensus.pseudoTermination` (theorem, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L47))
 
 > Draw a consequence of `a.PseudoConsensus 1`.
 
@@ -51,7 +51,7 @@ theorem pseudoTermination [Fintype P] (hpc1 : a.PseudoConsensus 1)
     ∃ s' b, a.CanReachVia {p}ᶜ s s' ∧ s'.Decided b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.canDecideWithout_exists` (theorem, [line 56](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L56))
+`Cslib.FLP.OnePseudoConsensus.canDecideWithout_exists` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L56))
 
 > Assuming `a.PseudoConsensus 1`, for any reachable state of `a` and for any process `p`,
 > there is a boolean value `b` such that `a.CanDecideWithout s p b`. This theorem formalizes
@@ -63,7 +63,7 @@ theorem canDecideWithout_exists [Fintype P] (hpc1 : a.PseudoConsensus 1)
     ∃ b, a.CanDecideWithout s p b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.not_uniform_and_nonUniform` (theorem, [line 64](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L64))
+`Cslib.FLP.OnePseudoConsensus.not_uniform_and_nonUniform` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L64))
 
 > A state cannot be both uniform and non-uniform.
 
@@ -72,7 +72,7 @@ theorem not_uniform_and_nonUniform {s : State P M S} (b : Bool) :
     ¬ (a.Uniform s b ∧ a.NonUniform s)
 ```
 
-`Cslib.FLP.OnePseudoConsensus.uniform_or_nonUniform` (theorem, [line 71](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L71))
+`Cslib.FLP.OnePseudoConsensus.uniform_or_nonUniform` (theorem, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L71))
 
 > Assuming `a.PseudoConsensus 1`, any reachable state of `a` is either uniform or non-uniform.
 
@@ -82,7 +82,7 @@ theorem uniform_or_nonUniform [Fintype P] (hpc1 : a.PseudoConsensus 1)
     a.Uniform s false ∨ a.Uniform s true ∨ a.NonUniform s
 ```
 
-`Cslib.FLP.OnePseudoConsensus.decided_eq_canDecideWithout` (theorem, [line 90](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L90))
+`Cslib.FLP.OnePseudoConsensus.decided_eq_canDecideWithout` (theorem, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L90))
 
 > Assuming `a.PseudoConsensus 1`, if a reachable state of `a` has decided on a boolean value `b`
 > and `a.CanDecideWithout s p b'` for any process `p`, then `b = b'`.
@@ -93,7 +93,7 @@ theorem decided_eq_canDecideWithout [Fintype P] (hpc1 : a.PseudoConsensus 1)
     (hd : s.Decided b) (hd' : a.CanDecideWithout s p b') : b = b'
 ```
 
-`Cslib.FLP.OnePseudoConsensus.decided_imp_uniform` (theorem, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L100))
+`Cslib.FLP.OnePseudoConsensus.decided_imp_uniform` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L100))
 
 > Assuming `a.PseudoConsensus 1`, if a reachable state of `a` has decided on a boolean value `b`,
 > then `s` is uniform for `b`. This theorem formalizes Proposition 2(b) of [Volzer2004].
@@ -104,7 +104,7 @@ theorem decided_imp_uniform [Fintype P] (hpc1 : a.PseudoConsensus 1)
     a.Uniform s b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.canDecideWithout_dest` (theorem, [line 110](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L110))
+`Cslib.FLP.OnePseudoConsensus.canDecideWithout_dest` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L110))
 
 > For any message `m`, if state `s'` is reached from state `s` by receiving `m`, then
 > `a.CanDecideWithout s m.dest b` implies `a.CanDecideWithout s' m.dest b` for any `b`.
@@ -116,7 +116,7 @@ theorem canDecideWithout_dest {s s' : State P M S} {m : Message P M} {b : Bool}
     (hd : a.CanDecideWithout s m.dest b) : a.CanDecideWithout s' m.dest b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.canDecideWithout_nondest` (theorem, [line 123](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L123))
+`Cslib.FLP.OnePseudoConsensus.canDecideWithout_nondest` (theorem, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L123))
 
 > For any message `m`, if state `s'` is reached from state `s` by receiving `m`, then
 > `a.CanDecideWithout s' p b` implies `a.CanDecideWithout s p b` for any `b` and any `p ≠ m.dest`.
@@ -128,7 +128,7 @@ theorem canDecideWithout_nondest {s s' : State P M S} {m : Message P M} {b : Boo
     (hd' : a.CanDecideWithout s' p b) : a.CanDecideWithout s p b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.canDecideWithout_uniform` (theorem, [line 134](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L134))
+`Cslib.FLP.OnePseudoConsensus.canDecideWithout_uniform` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L134))
 
 > Assuming `a.PseudoConsensus 1`, if any reachable state `s` of `a` is uniform for `b` and
 > state `s'` is reached from `s` by receiving a message `m`, then `a.CanDecideWithout s' p b`.
@@ -142,7 +142,7 @@ theorem canDecideWithout_uniform [Fintype P] (hpc1 : a.PseudoConsensus 1)
     a.CanDecideWithout s' p b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.nonUniform_step` (theorem, [line 154](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L154))
+`Cslib.FLP.OnePseudoConsensus.nonUniform_step` (theorem, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L154))
 
 > Assuming `a.PseudoConsensus 1`, if any reachable state `s` of `a` that is non-uniform,
 > then for any process `p`, there exists a state `s'` reachable from `s` such that
@@ -154,7 +154,7 @@ theorem nonUniform_step [Fintype P] (hpc1 : a.PseudoConsensus 1)
     ∃ s', a.lts.CanReach s s' ∧ ∀ b, a.CanDecideWithout s' p b
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN` (definition, [line 186](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L186))
+`Cslib.FLP.OnePseudoConsensus.inpN` (definition, [line 186](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L186))
 
 > Given a numbering `pn` of processes and `n : ℕ`, `inpN pn n` assigns `true` to the processes
 > numbered `0, ..., (n - 1)` and `false` to the rest.
@@ -163,7 +163,7 @@ theorem nonUniform_step [Fintype P] (hpc1 : a.PseudoConsensus 1)
 def inpN (pn : P ≃ Fin (card P)) (n : ℕ) : P → Bool
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN_eqOn_except_singleton` (theorem, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L192))
+`Cslib.FLP.OnePseudoConsensus.inpN_eqOn_except_singleton` (theorem, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L192))
 
 > Assuming `0 < n ≤ card P`, the inputs `inpN pn (n - 1)` and `inpN pn n` agree on all processes
 > except the one that is numbered `(n - 1)`.
@@ -174,14 +174,14 @@ theorem inpN_eqOn_except_singleton (pn : P ≃ Fin (card P))
     EqOn (inpN pn (n - 1)) (inpN pn n) {pn.symm ⟨n - 1, by grind⟩}ᶜ
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN_zero_no_true` (lemma, [line 201](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L201))
+`Cslib.FLP.OnePseudoConsensus.inpN_zero_no_true` (lemma, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L201))
 
 ```lean
 lemma inpN_zero_no_true (pn : P ≃ Fin (card P)) (hpc1 : a.PseudoConsensus 1) (p : P) :
     ¬ a.CanDecideWithout (a.start (inpN pn 0)) p true
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN_zero_uniform` (theorem, [line 212](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L212))
+`Cslib.FLP.OnePseudoConsensus.inpN_zero_uniform` (theorem, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L212))
 
 > Assuming `a.PseudoConsensus 1`, the initial state determined by the all-`false` input
 > is uniform for `false`.
@@ -191,14 +191,14 @@ theorem inpN_zero_uniform (pn : P ≃ Fin (card P)) (hpc1 : a.PseudoConsensus 1)
     a.Uniform (a.start (inpN pn 0)) false
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN_card_not_false` (lemma, [line 220](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L220))
+`Cslib.FLP.OnePseudoConsensus.inpN_card_not_false` (lemma, [line 220](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L220))
 
 ```lean
 lemma inpN_card_not_false (pn : P ≃ Fin (card P)) (hpc1 : a.PseudoConsensus 1) (p : P) :
     ¬ a.CanDecideWithout (a.start (inpN pn (card P))) p false
 ```
 
-`Cslib.FLP.OnePseudoConsensus.inpN_card_uniform` (theorem, [line 231](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L231))
+`Cslib.FLP.OnePseudoConsensus.inpN_card_uniform` (theorem, [line 231](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L231))
 
 > Assuming `a.PseudoConsensus 1`, the initial state determined by the all-`true` input
 > is uniform for `true`.
@@ -208,7 +208,7 @@ theorem inpN_card_uniform (pn : P ≃ Fin (card P)) (hpc1 : a.PseudoConsensus 1)
     a.Uniform (a.start (inpN pn (card P))) true
 ```
 
-`Cslib.FLP.OnePseudoConsensus.nonUniform_inp` (theorem, [line 241](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L241))
+`Cslib.FLP.OnePseudoConsensus.nonUniform_inp` (theorem, [line 241](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean#L241))
 
 > Assuming `a.PseudoConsensus 1` and there are at least 2 processes, there must exist an input
 > that gives rise to a non-uniform initial state. This theorem formalizes Lemma 1 of [Volzer2004].
@@ -224,5 +224,5 @@ theorem nonUniform_inp (hpc1 : a.PseudoConsensus 1) (hc : 2 ≤ card P) :
 
 ## Sources
 
-- [Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean)
+- [Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Distributed/FLP/OnePseudoConsensus.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Distributed.FLP.OnePseudoConsensus.json)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Partial Wirtinger derivatives `∂_I`, `∂̄_I` in a complex coordinate basis on `ℂ^n`
 
-The module `Physlib.Mathematics.Calculus.Wirtinger.Coordinate`, [Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean): 42 declarations, 42 with a docstring, 2 listed as significant; 6 private, not shown.
+The module `Physlib.Mathematics.Calculus.Wirtinger.Coordinate`, [Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean): 42 declarations, 42 with a docstring, 2 listed as significant; 6 private, not shown.
 
 ## Notation
 
@@ -138,7 +138,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Coordinate`, [Physlib/Mathema
 > direction. The coordinates decouple (`∂_I z^J = δ_IJ`, §B) because the coordinate functionals
 > `z^J` are the dual basis to the standard basis: `z^J (Pi.single I 1) = δ_IJ`.
 
-**`Physlib.Wirtinger.dWirtingerCoord`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L168).
+**`Physlib.Wirtinger.dWirtingerCoord`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L168).
 
 > Holomorphic Wirtinger derivative along the I-th coordinate of `ι → ℂ`.
 
@@ -146,7 +146,7 @@ The module `Physlib.Mathematics.Calculus.Wirtinger.Coordinate`, [Physlib/Mathema
 def dWirtingerCoord (f : (ι → ℂ) → ℂ) (I : ι) : (ι → ℂ) → ℂ
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L172).
+**`Physlib.Wirtinger.dWirtingerAntiCoord`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L172).
 
 > Anti-holomorphic Wirtinger derivative along the I-th coordinate of `ι → ℂ`.
 
@@ -154,7 +154,7 @@ def dWirtingerCoord (f : (ι → ℂ) → ℂ) (I : ι) : (ι → ℂ) → ℂ
 def dWirtingerAntiCoord (f : (ι → ℂ) → ℂ) (I : ι) : (ι → ℂ) → ℂ
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_apply`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L181).
+**`Physlib.Wirtinger.dWirtingerCoord_apply`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L181).
 
 > Real-Fréchet form of `dWirtingerCoord`:
 > `dWirtingerCoord f I u = (1/2)(∂_x − i · ∂_y) f`,
@@ -170,7 +170,7 @@ lemma dWirtingerCoord_apply {f : (ι → ℂ) → ℂ}
       - Complex.I * fderiv ℝ f u (Pi.single I Complex.I))
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L191).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L191).
 
 > Real-Fréchet form of `dWirtingerAntiCoord`:
 > `∂̄_I f = (1/2)(∂_x + i · ∂_y) f`,
@@ -204,7 +204,7 @@ lemma dWirtingerAntiCoord_apply {f : (ι → ℂ) → ℂ}
 > `ContinuousLinearMap.coe_restrictScalars'`; `DifferentiableAt.restrictScalars` supplies the
 > `ℝ`-differentiability.
 
-**`Physlib.Wirtinger.dWirtingerCoord_congr_of_eventuallyEq_apply`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L240).
+**`Physlib.Wirtinger.dWirtingerCoord_congr_of_eventuallyEq_apply`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L240).
 
 > `dWirtingerCoord` is local: functions agreeing on a neighbourhood of `u` have equal
 > holomorphic Wirtinger derivative at `u` (`f₁ =ᶠ[nhds u] f₂ ⟹ ∂_I f₁ u = ∂_I f₂ u`).
@@ -215,7 +215,7 @@ lemma dWirtingerCoord_congr_of_eventuallyEq_apply {f₁ f₂ : (ι → ℂ) → 
     dWirtingerCoord f₁ I u = dWirtingerCoord f₂ I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_const`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L246).
+**`Physlib.Wirtinger.dWirtingerCoord_const`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L246).
 
 > Constants have zero coordinate derivative: `∂_I c = 0`.
 
@@ -224,7 +224,7 @@ lemma dWirtingerCoord_const (c : ℂ) (I : ι) :
     dWirtingerCoord (fun _ : (ι → ℂ) => c) I = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_neg_apply`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L253).
+**`Physlib.Wirtinger.dWirtingerCoord_neg_apply`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L253).
 
 > Pointwise negation rule for the holomorphic coordinate derivative at `u`:
 > `∂_I (−f) = −∂_I f`. Used with `dWirtingerCoord_add_apply` to assemble the
@@ -235,7 +235,7 @@ lemma dWirtingerCoord_neg_apply {u : (ι → ℂ)} (I : ι) :
     dWirtingerCoord (fun v => -(f v)) I u = -(dWirtingerCoord f I u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_coordProj`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L268).
+**`Physlib.Wirtinger.dWirtingerCoord_coordProj`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L268).
 
 > `∂_I z^J = δ_IJ`. The holomorphic coordinate-independence value; also feeds the
 > coordinate-difference rule `dWirtingerCoord_coordDiff` and the conjugate-coordinate value
@@ -247,7 +247,7 @@ lemma dWirtingerCoord_coordProj (I J : ι) :
       fun _ => if I = J then 1 else 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_add_apply`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L280).
+**`Physlib.Wirtinger.dWirtingerCoord_add_apply`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L280).
 
 > Pointwise additivity of the holomorphic coordinate derivative at `u`:
 > `∂_I (f + g) = ∂_I f + ∂_I g`. Used to assemble the coordinate-difference rule
@@ -259,7 +259,7 @@ lemma dWirtingerCoord_add_apply {u : (ι → ℂ)}
     dWirtingerCoord (f + g) I u = dWirtingerCoord f I u + dWirtingerCoord g I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_smul_apply`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L287).
+**`Physlib.Wirtinger.dWirtingerCoord_smul_apply`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L287).
 
 > Pointwise compatibility with complex scalar multiplication at `u`:
 > `∂_I (c • f) = c • ∂_I f`.
@@ -270,7 +270,7 @@ lemma dWirtingerCoord_smul_apply {u : (ι → ℂ)}
     dWirtingerCoord (c • f) I u = c • dWirtingerCoord f I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_mul_apply`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L294).
+**`Physlib.Wirtinger.dWirtingerCoord_mul_apply`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L294).
 
 > Pointwise Leibniz rule for the holomorphic coordinate derivative at `u`:
 > `∂_I (f · g) = ∂_I f · g + f · ∂_I g`.
@@ -282,7 +282,7 @@ lemma dWirtingerCoord_mul_apply {u : (ι → ℂ)}
       dWirtingerCoord f I u * g u + f u * dWirtingerCoord g I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_fun_sum_apply`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L302).
+**`Physlib.Wirtinger.dWirtingerCoord_fun_sum_apply`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L302).
 
 > Pointwise finite-sum rule for holomorphic coordinate derivatives at `u`:
 > `∂_I (∑ a ∈ s, F a) = ∑ a ∈ s, ∂_I (F a)`.
@@ -295,7 +295,7 @@ lemma dWirtingerCoord_fun_sum_apply {α : Type*} {s : Finset α}
       ∑ a ∈ s, dWirtingerCoord (F a) I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_eq_complex_fderiv_apply`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L311).
+**`Physlib.Wirtinger.dWirtingerCoord_eq_complex_fderiv_apply`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L311).
 
 > For a holomorphic function, `dWirtingerCoord` is the complex Fréchet derivative in
 > the corresponding coordinate direction: `∂_I f = fderiv ℂ f u (Pi.single I 1)`.
@@ -306,7 +306,7 @@ lemma dWirtingerCoord_eq_complex_fderiv_apply {u : (ι → ℂ)}
     dWirtingerCoord f I u = fderiv ℂ f u (Pi.single I 1)
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_eq_zero_of_antiHolomorphic_apply`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L345).
+**`Physlib.Wirtinger.dWirtingerCoord_eq_zero_of_antiHolomorphic_apply`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L345).
 
 > An *anti-holomorphic* function `v ↦ g (star v)` (a holomorphic `g` precomposed
 > with conjugation) depends on the coordinates only through their conjugates `z̄`. Its
@@ -333,7 +333,7 @@ lemma dWirtingerCoord_eq_zero_of_antiHolomorphic_apply {u : (ι → ℂ)}
 > conjugation lemmas `dWirtingerDir_star_comp` / `dWirtingerAntiDir_star_comp` rather than
 > recomputed.
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_congr_of_eventuallyEq_apply`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L377).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_congr_of_eventuallyEq_apply`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L377).
 
 > `dWirtingerAntiCoord` is local (`f₁ =ᶠ[nhds u] f₂ ⟹ ∂̄_I f₁ u = ∂̄_I f₂ u`).
 
@@ -343,7 +343,7 @@ lemma dWirtingerAntiCoord_congr_of_eventuallyEq_apply {f₁ f₂ : (ι → ℂ) 
     dWirtingerAntiCoord f₁ I u = dWirtingerAntiCoord f₂ I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_const`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L383).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_const`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L383).
 
 > Constants have zero anti-holomorphic coordinate derivative: `∂̄_I c = 0`.
 
@@ -352,7 +352,7 @@ lemma dWirtingerAntiCoord_const (c : ℂ) (I : ι) :
     dWirtingerAntiCoord (fun _ : (ι → ℂ) => c) I = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_neg_apply`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L390).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_neg_apply`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L390).
 
 > Pointwise negation rule for the anti-holomorphic coordinate derivative at `u`:
 > `∂̄_I (−f) = −∂̄_I f`. Used with `dWirtingerAntiCoord_add_apply` to assemble the
@@ -363,7 +363,7 @@ lemma dWirtingerAntiCoord_neg_apply {u : (ι → ℂ)} (I : ι) :
     dWirtingerAntiCoord (fun v => -(f v)) I u = -(dWirtingerAntiCoord f I u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_coordProj`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L397).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_coordProj`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L397).
 
 > `∂̄_I z^J = 0`. The anti-holomorphic coordinate-independence value; also feeds the
 > coordinate-difference rule `dWirtingerAntiCoord_coordDiff` and the conjugate-coordinate
@@ -374,7 +374,7 @@ lemma dWirtingerAntiCoord_coordProj (I J : ι) :
     dWirtingerAntiCoord (fun u : (ι → ℂ) => u J) I = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_conjCoord`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L406).
+**`Physlib.Wirtinger.dWirtingerCoord_conjCoord`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L406).
 
 > `∂_I z̄^J = 0`. The conjugate of `dWirtingerAntiCoord_coordProj` (`z̄^J = star z^J`),
 > read off through `dWirtingerDir_star_comp` rather than recomputed. Used to assemble the
@@ -385,7 +385,7 @@ lemma dWirtingerCoord_conjCoord (I J : ι) :
     dWirtingerCoord (fun u : (ι → ℂ) => star (u J)) I = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_conjCoord`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L415).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_conjCoord`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L415).
 
 > `∂̄_I z̄^J = δ_IJ`. The conjugate of `dWirtingerCoord_coordProj`, read off through
 > `dWirtingerAntiDir_star_comp` rather than recomputed. Used to assemble the
@@ -397,7 +397,7 @@ lemma dWirtingerAntiCoord_conjCoord (I J : ι) :
       fun _ => if I = J then 1 else 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_add_apply`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L429).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_add_apply`**, a lemma, [line 429](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L429).
 
 > Pointwise additivity of the anti-holomorphic coordinate derivative at `u`:
 > `∂̄_I (f + g) = ∂̄_I f + ∂̄_I g`. Used to assemble the coordinate-difference rule
@@ -409,7 +409,7 @@ lemma dWirtingerAntiCoord_add_apply {u : (ι → ℂ)}
     dWirtingerAntiCoord (f + g) I u = dWirtingerAntiCoord f I u + dWirtingerAntiCoord g I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_smul_apply`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L436).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_smul_apply`**, a lemma, [line 436](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L436).
 
 > Pointwise compatibility with complex scalar multiplication at `u`:
 > `∂̄_I (c • f) = c • ∂̄_I f`.
@@ -420,7 +420,7 @@ lemma dWirtingerAntiCoord_smul_apply {u : (ι → ℂ)}
     dWirtingerAntiCoord (c • f) I u = c • dWirtingerAntiCoord f I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_mul_apply`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L443).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_mul_apply`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L443).
 
 > Pointwise Leibniz rule for the anti-holomorphic coordinate derivative at `u`:
 > `∂̄_I (f · g) = ∂̄_I f · g + f · ∂̄_I g`.
@@ -432,7 +432,7 @@ lemma dWirtingerAntiCoord_mul_apply {u : (ι → ℂ)}
       dWirtingerAntiCoord f I u * g u + f u * dWirtingerAntiCoord g I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_fun_sum_apply`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L451).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_fun_sum_apply`**, a lemma, [line 451](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L451).
 
 > Pointwise finite-sum rule for anti-holomorphic coordinate derivatives at `u`:
 > `∂̄_I (∑ a ∈ s, F a) = ∑ a ∈ s, ∂̄_I (F a)`.
@@ -445,7 +445,7 @@ lemma dWirtingerAntiCoord_fun_sum_apply {α : Type*} {s : Finset α}
       ∑ a ∈ s, dWirtingerAntiCoord (F a) I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_eq_complex_fderiv_apply`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L462).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_eq_complex_fderiv_apply`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L462).
 
 > For an anti-holomorphic function the anti-holomorphic Wirtinger derivative equals
 > the complex Fréchet derivative of `g` at `star u` along the slot-I real
@@ -459,7 +459,7 @@ lemma dWirtingerAntiCoord_eq_complex_fderiv_apply {u : (ι → ℂ)}
       fderiv ℂ g (star u) (Pi.single I 1)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_eq_zero_of_holomorphic_apply`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L475).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_eq_zero_of_holomorphic_apply`**, a lemma, [line 475](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L475).
 
 > Holomorphic functions have zero anti-holomorphic coordinate derivative: `∂̄_I f = 0`.
 
@@ -469,7 +469,7 @@ lemma dWirtingerAntiCoord_eq_zero_of_holomorphic_apply {u : (ι → ℂ)}
     dWirtingerAntiCoord f I u = 0
 ```
 
-**`Physlib.Wirtinger.differentiableAt_complex_iff_dWirtingerAntiCoord_eq_zero`**, a theorem, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L482). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Physlib.Wirtinger.differentiableAt_complex_iff_dWirtingerAntiCoord_eq_zero`**, a theorem, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L482). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **Cauchy–Riemann in coordinates**, the form `∂̄_Ī W = 0` used in physics. Coordinate
 > directions suffice by `LinearMap.commutesI_of_basis`.
@@ -487,7 +487,7 @@ theorem differentiableAt_complex_iff_dWirtingerAntiCoord_eq_zero
 > combination any function of the coordinates' imaginary parts differentiates against.
 > Collected here for reuse: `∂_I (z^J − z̄^J) = δ_IJ` and `∂̄_I (z^J − z̄^J) = −δ_IJ`.
 
-**`Physlib.Wirtinger.dWirtingerCoord_coordDiff`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L513).
+**`Physlib.Wirtinger.dWirtingerCoord_coordDiff`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L513).
 
 > `∂_I (z^J − z̄^J) = δ_IJ`, from `∂_I z^J = δ_IJ` and
 > `∂_I z̄^J = 0`.
@@ -498,7 +498,7 @@ lemma dWirtingerCoord_coordDiff (I J : ι) :
       = fun _ => if I = J then 1 else 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_coordDiff`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L523).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_coordDiff`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L523).
 
 > `∂̄_I (z^J − z̄^J) = −δ_IJ`, from `∂̄_I z^J = 0` and
 > `∂̄_I z̄^J = δ_IJ`.
@@ -532,7 +532,7 @@ lemma dWirtingerAntiCoord_coordDiff (I J : ι) :
 > `∂̄_I` dual). Both collapses are the same `restrictScalars` step as §B — the real derivative
 > of a holomorphic `g : ℂ → ℂ` is `ℂ`-linear (`clinear_of_holomorphic` at `E = ℂ`).
 
-**`Physlib.Wirtinger.dWirtingerCoord_comp_apply`**, a lemma, [line 569](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L569).
+**`Physlib.Wirtinger.dWirtingerCoord_comp_apply`**, a lemma, [line 569](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L569).
 
 > The two-term coordinate chain rule for a real-differentiable outer `g`, pointwise at `u`:
 > `∂_I (g ∘ f) = (∂g/∂f) · ∂_I f + (∂g/∂f̄) · ∂_I f̄`,
@@ -549,7 +549,7 @@ lemma dWirtingerCoord_comp_apply {u : (ι → ℂ)}
           dWirtingerCoord (fun v : (ι → ℂ) => star (f v)) I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_comp_holomorphic_apply`**, a lemma, [line 582](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L582).
+**`Physlib.Wirtinger.dWirtingerCoord_comp_holomorphic_apply`**, a lemma, [line 582](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L582).
 
 > The single-term coordinate chain rule for a holomorphic outer `g`, pointwise at `u`:
 > `∂_I (g ∘ f) = deriv g (f u) · ∂_I f`. From the two-term `dWirtingerCoord_comp_apply`: for
@@ -564,7 +564,7 @@ lemma dWirtingerCoord_comp_holomorphic_apply {u : (ι → ℂ)}
       deriv g (f u) * dWirtingerCoord f I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_star_comp_apply`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L594).
+**`Physlib.Wirtinger.dWirtingerCoord_star_comp_apply`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L594).
 
 > Conjugating the inner field swaps the two operators: `∂_I f̄ = conj (∂̄_I f)`. The
 > `d = Pi.single I 1` case of the foundation `dWirtingerDir_star_comp`.
@@ -576,7 +576,7 @@ lemma dWirtingerCoord_star_comp_apply {u : (ι → ℂ)}
       star (dWirtingerAntiCoord f I u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_apply`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L606).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_apply`**, a lemma, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L606).
 
 > The two-term coordinate chain rule for a real-differentiable outer `g`, anti-holomorphic
 > version, pointwise at `u`: `∂̄_I (g ∘ f) = (∂g/∂f) · ∂̄_I f + (∂g/∂f̄) · ∂̄_I f̄`. Same outer
@@ -594,7 +594,7 @@ lemma dWirtingerAntiCoord_comp_apply {u : (ι → ℂ)}
           dWirtingerAntiCoord (fun v : (ι → ℂ) => star (f v)) I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_holomorphic_apply`**, a lemma, [line 618](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L618).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_holomorphic_apply`**, a lemma, [line 618](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L618).
 
 > The single-term coordinate chain rule for a holomorphic outer `g`, anti-holomorphic
 > version, pointwise at `u`: `∂̄_I (g ∘ f) = deriv g (f u) · ∂̄_I f`. As in
@@ -608,7 +608,7 @@ lemma dWirtingerAntiCoord_comp_holomorphic_apply {u : (ι → ℂ)}
       deriv g (f u) * dWirtingerAntiCoord f I u
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_star_comp_apply`**, a lemma, [line 631](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L631).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_star_comp_apply`**, a lemma, [line 631](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L631).
 
 > Conjugating the inner field swaps the two operators: `∂̄_I f̄ = conj (∂_I f)`. Dual of
 > `dWirtingerCoord_star_comp_apply`, the `d = Pi.single I 1` case of the foundation
@@ -632,7 +632,7 @@ lemma dWirtingerAntiCoord_star_comp_apply {u : (ι → ℂ)}
 > This commutation is Kähler-metric hermiticity: with `K` real, `g_{IJ̄} = ∂_I ∂̄_J K` and
 > `star (g_{JĪ}) = ∂̄_J ∂_I K`.
 
-**`Physlib.Wirtinger.differentiableAt_dWirtingerCoord`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L661).
+**`Physlib.Wirtinger.differentiableAt_dWirtingerCoord`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L661).
 
 > On a `C²` function the holomorphic coordinate Wirtinger derivative is itself
 > real-differentiable (`DifferentiableAt ℝ (∂_I f) u`) — the `d = Pi.single I 1` case of
@@ -643,7 +643,7 @@ lemma differentiableAt_dWirtingerCoord (hf2 : ContDiffAt ℝ 2 f u) (I : ι) :
     DifferentiableAt ℝ (fun v => dWirtingerCoord f I v) u
 ```
 
-**`Physlib.Wirtinger.differentiableAt_dWirtingerAntiCoord`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L668).
+**`Physlib.Wirtinger.differentiableAt_dWirtingerAntiCoord`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L668).
 
 > On a `C²` function the anti-holomorphic coordinate Wirtinger derivative is itself
 > real-differentiable (`DifferentiableAt ℝ (∂̄_J f) u`) — the `d = Pi.single J 1` case of
@@ -654,7 +654,7 @@ lemma differentiableAt_dWirtingerAntiCoord (hf2 : ContDiffAt ℝ 2 f u) (J : ι)
     DifferentiableAt ℝ (fun v => dWirtingerAntiCoord f J v) u
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_dWirtingerAntiCoord_comm`**, a theorem, [line 676](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L676). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Physlib.Wirtinger.dWirtingerCoord_dWirtingerAntiCoord_comm`**, a theorem, [line 676](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L676). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **Schwarz's theorem** for the coordinate Wirtinger operators: on a `C²` function the
 > holomorphic and anti-holomorphic derivatives commute, `∂_I ∂̄_J f = ∂̄_J ∂_I f`. The
@@ -673,7 +673,7 @@ theorem dWirtingerCoord_dWirtingerAntiCoord_comm (hf2 : ContDiffAt ℝ 2 f u) (I
 > coordinate space, over an arbitrary domain `D`. The directional vanishing/routing is controlled
 > entirely by `P`'s action on the coordinate columns `Pi.single c 1` and `Pi.single c Complex.I`.
 
-**`Physlib.Wirtinger.dWirtingerCoord_comp_clm_zero`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L697).
+**`Physlib.Wirtinger.dWirtingerCoord_comp_clm_zero`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L697).
 
 > If the inner continuous ℝ-linear map `P` kills the coordinate column `c`, the holomorphic
 > coordinate Wirtinger derivative of `h ∘ P` along `c` vanishes.
@@ -686,7 +686,7 @@ lemma dWirtingerCoord_comp_clm_zero {C_s : Type} [Fintype C_s]
     dWirtingerCoord (fun v => h (P v)) c u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerCoord_comp_clm_col`**, a lemma, [line 708](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L708).
+**`Physlib.Wirtinger.dWirtingerCoord_comp_clm_col`**, a lemma, [line 708](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L708).
 
 > If the inner continuous ℝ-linear map `P` reads the coordinate column `c` as the sector
 > coordinate `a₀`, the holomorphic coordinate Wirtinger derivative of `h ∘ P` along `c` is that
@@ -701,7 +701,7 @@ lemma dWirtingerCoord_comp_clm_col {C_s : Type} [Fintype C_s] [DecidableEq C_s]
     dWirtingerCoord (fun v => h (P v)) c u = dWirtingerCoord h a₀ (P u)
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_clm_zero`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L718).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_clm_zero`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L718).
 
 > Anti-holomorphic mirror of `dWirtingerCoord_comp_clm_zero`.
 
@@ -713,7 +713,7 @@ lemma dWirtingerAntiCoord_comp_clm_zero {C_s : Type} [Fintype C_s]
     dWirtingerAntiCoord (fun v => h (P v)) c u = 0
 ```
 
-**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_clm_col`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L727).
+**`Physlib.Wirtinger.dWirtingerAntiCoord_comp_clm_col`**, a lemma, [line 727](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean#L727).
 
 > Anti-holomorphic mirror of `dWirtingerCoord_comp_clm_col`.
 
@@ -732,4 +732,4 @@ lemma dWirtingerAntiCoord_comp_clm_col {C_s : Type} [Fintype C_s] [DecidableEq C
 
 ## Sources
 
-- [Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean)
+- [Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean)

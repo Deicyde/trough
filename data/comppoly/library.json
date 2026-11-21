@@ -1,6 +1,6 @@
 {
  "schema": "trough-comppoly/v1",
- "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "rev": "c72a765272497b4c52201be11be47af5718c7488",
  "readme": [
   "A formally verified library for computable polynomial operations over finite fields and general rings, supporting univariate, multivariate, multilinear, and bivariate polynomials."
  ],
@@ -6836,6 +6836,14 @@
      "doc": "",
      "statement": "lemma popWhile_nil_or_last_false (p : α → Bool) (as : Array α)\n    (h : (as.popWhile p).size > 0) : ¬ (p <| (as.popWhile p).getLast h)",
      "sorry": false
+    },
+    {
+     "name": "Nat.fold_push_eq_append_ofFn",
+     "kind": "theorem",
+     "line": 276,
+     "doc": "A `Nat.fold` that pushes `e k h` at step `k` appends `e 0 _, …, e (n - 1) _` to its initial\narray. The pushed element can depend on the proof `h : k < n`.",
+     "statement": "theorem fold_push_eq_append_ofFn {α : Type*} {n : ℕ} (e : (k : ℕ) → k < n → α)\n    (init : Array α) :\n    n.fold (fun k h acc ↦ acc.push (e k h)) init = init ++ Array.ofFn fun k : Fin n ↦ e k k.2",
+     "sorry": false
     }
    ]
   },
@@ -9987,12 +9995,12 @@
     },
     {
      "line": 88,
-     "note": "### The shape of these statements\n\nEach test below takes the field size as a numeral `q` together with `hcard : Fintype.card F = q`,\nrather than reading it off as `Fintype.card F`, and substitutes it away internally. Both kinds of\ncaller are served: a concrete field supplies `hcard` as `ZMod.card _` (or its own cardinality\nlemma) and states its conditions at the numeral its certificates were generated for; a caller with\nno numeral in hand passes `rfl` and gets the `Fintype.card F` statement back verbatim.\n\nThe alternative — stating the conditions at `Fintype.card F` and having concrete callers cast each\none with `rw [hcard]` — is what this shape exists to rule out. Such a cast leaves an `Eq.mpr`\ntransport around a certificate argument whose type carries a huge exponent (`X ^ (q ^ d)`), and a\nkernel replay from an empty environment need not follow the same normalization path the elaborator\ntook: one such transport has been observed to send the kernel into\n`Polynomial.pow → npowRec → Nat.rec`, unfolding the power one exponent step at a time until the\ndeep-recursion guard fired. Since there is only one form of each statement, that cast has no\noccasion to appear. `docs/wiki/field-extensions.md` records the history, and\n`CompPoly/Data/Polynomial/RabinCertificate.lean` packages these tests at concrete degrees."
+     "note": "### The shape of these statements\n\nEach test below takes the field size as a numeral `q` together with `hcard : Fintype.card F = q`,\nrather than reading it off as `Fintype.card F`, and substitutes it away internally. Both kinds of\ncaller are served: a concrete field supplies `hcard` as `ZMod.card _` (or its own cardinality\nlemma) and states its conditions at the numeral its certificates were generated for; a caller with\nno numeral in hand passes `rfl` and gets the `Fintype.card F` statement back verbatim.\n\nStating the conditions at `Fintype.card F` would make a concrete caller cast each condition\nwith `rw [hcard]`. Such a cast leaves an `Eq.mpr` transport around a certificate argument whose\ntype carries a large exponent, such as `X ^ (q ^ d)`. In an earlier kernel replay, such a\ntransport caused `npowRec` to unfold one exponent step at a time until the kernel hit its\nrecursion limit. The numeral parameter lets concrete callers pass their certificates directly.\n`docs/wiki/field-extensions.md` records the history, and\n`CompPoly/Data/Polynomial/RabinCertificate.lean` packages these tests at concrete degrees."
     },
     {
      "name": "Polynomial.irreducible_of_rabin",
      "kind": "theorem",
-     "line": 113,
+     "line": 111,
      "doc": "**Rabin's irreducibility test (soundness).**\n\nIf a degree-`d` polynomial `f` over a finite field with `q` elements divides `X^(q^d) - X` and is\ncoprime to `X^(q^(d/ℓ)) - X` for every prime `ℓ ∣ d`, then `f` is irreducible.",
      "statement": "theorem irreducible_of_rabin {f : F[X]} {d q : ℕ} (hcard : Fintype.card F = q)\n    (h_deg : f.natDegree = d) (h_pos : 0 < d)\n    (h_trace : f ∣ X ^ (q ^ d) - X)\n    (h_coprime : ∀ ℓ ∈ d.primeFactors, IsCoprime f (X ^ (q ^ (d / ℓ)) - X)) :\n    Irreducible f",
      "sorry": false
@@ -10000,7 +10008,7 @@
     {
      "name": "Polynomial.rabin_of_irreducible",
      "kind": "theorem",
-     "line": 141,
+     "line": 139,
      "doc": "**Rabin's irreducibility test (completeness).**\n\nAn irreducible polynomial of degree `d` satisfies both Rabin conditions.",
      "statement": "theorem rabin_of_irreducible {f : F[X]} {d q : ℕ} (hcard : Fintype.card F = q)\n    (h_deg : f.natDegree = d) (h_pos : 0 < d) (h_irr : Irreducible f) :\n    f ∣ X ^ (q ^ d) - X ∧\n      ∀ ℓ ∈ d.primeFactors, IsCoprime f (X ^ (q ^ (d / ℓ)) - X)",
      "sorry": false
@@ -10008,7 +10016,7 @@
     {
      "name": "Polynomial.irreducible_iff_rabin",
      "kind": "theorem",
-     "line": 162,
+     "line": 160,
      "doc": "**Rabin's irreducibility test.** For a polynomial of positive degree `d` over a finite field\nwith `q` elements, irreducibility is equivalent to the two Rabin conditions.",
      "statement": "theorem irreducible_iff_rabin {f : F[X]} {d q : ℕ} (hcard : Fintype.card F = q)\n    (h_deg : f.natDegree = d) (h_pos : 0 < d) :\n    Irreducible f ↔\n      (f ∣ X ^ (q ^ d) - X ∧\n        ∀ ℓ ∈ d.primeFactors, IsCoprime f (X ^ (q ^ (d / ℓ)) - X))",
      "sorry": false
@@ -33797,8 +33805,8 @@
     {
      "name": "KoalaBear.quinticPoly_irreducible",
      "kind": "theorem",
-     "line": 111,
-     "doc": "**`X^5 + X^2 - 1` is irreducible over KoalaBear**, by Rabin's test at prime degree with\nkernel-checked certificates for both conditions.",
+     "line": 114,
+     "doc": "**`X^5 + X^2 - 1` is irreducible over KoalaBear**, by Rabin's test at prime degree with\nkernel-checked certificates for both conditions.\n\nThe application supplies the carrier and instances used by the certificate lemmas.\nSee `docs/wiki/field-extensions.md` for the KoalaBear replay history.",
      "statement": "theorem quinticPoly_irreducible : Irreducible quinticPoly",
      "sorry": false
     }
@@ -34185,8 +34193,8 @@
     {
      "name": "KoalaBear.sexticPoly_irreducible",
      "kind": "theorem",
-     "line": 139,
-     "doc": "**`X^6 + X^3 + 1` is irreducible over KoalaBear**, by Rabin's test at a degree with two prime\nfactors, with kernel-checked certificates for all three conditions.",
+     "line": 144,
+     "doc": "**`X^6 + X^3 + 1` is irreducible over KoalaBear**, by Rabin's test at a degree with two prime\nfactors, with kernel-checked certificates for all three conditions.\n\nThe application uses the same carrier and instances as the certificate lemmas.\nWith Lean and Mathlib 4.34, replaying the earlier proof and its dependencies in an empty kernel\nenvironment hit the kernel's recursion limit. With Lean and Mathlib 4.36, both proof forms\npassed that check. See `docs/wiki/field-extensions.md` for the KoalaBear replay history.",
      "statement": "theorem sexticPoly_irreducible : Irreducible sexticPoly",
      "sorry": false
     }
@@ -52383,29 +52391,13 @@
      "sorry": false
     },
     {
-     "name": "CompPoly.CPolynomial.ofFn_mem_degreeLT",
-     "kind": "theorem",
-     "line": 43,
-     "doc": "`ofFn` on `n` coefficients has degree below `n`.",
-     "statement": "theorem ofFn_mem_degreeLT {n : ℕ} (f : Fin n → R) : ofFn f ∈ degreeLT (R := R) n",
-     "sorry": false
-    },
-    {
-     "name": "CompPoly.CPolynomial.ofFn_coeff_of_mem_degreeLT",
-     "kind": "theorem",
-     "line": 49,
-     "doc": "A polynomial of degree below `n` is `ofFn` of its first `n` coefficients.",
-     "statement": "theorem ofFn_coeff_of_mem_degreeLT {n : ℕ} {p : CPolynomial R} (hp : p ∈ degreeLT (R := R) n) :\n    ofFn (fun i : Fin n => coeff p i) = p",
-     "sorry": false
-    },
-    {
-     "line": 60,
+     "line": 42,
      "note": "## Fixed width: `degreeLT n`"
     },
     {
      "name": "CompPoly.CPolynomial.coeffVector",
      "kind": "def",
-     "line": 63,
+     "line": 45,
      "doc": "The coefficient vector of a polynomial of degree below `n`, zero-padded.",
      "statement": "def coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) : Vector R n",
      "sorry": false
@@ -52413,23 +52405,31 @@
     {
      "name": "CompPoly.CPolynomial.ofCoeffVector",
      "kind": "def",
-     "line": 67,
+     "line": 49,
      "doc": "The polynomial with the given `n` coefficients, as an element of `degreeLT n`.",
      "statement": "def ofCoeffVector (n : ℕ) (v : Vector R n) : ↥(degreeLT (R := R) n)",
      "sorry": false
     },
     {
+     "name": "CompPoly.CPolynomial.ofCoeffVector_eq_ofFnEquiv",
+     "kind": "theorem",
+     "line": 53,
+     "doc": "Rebuilding from a vector agrees with applying `ofFnEquiv` to its entries.",
+     "statement": "theorem ofCoeffVector_eq_ofFnEquiv (n : ℕ) (v : Vector R n) :\n    ofCoeffVector n v = ofFnEquiv n (fun i => v[i])",
+     "sorry": false
+    },
+    {
      "name": "CompPoly.CPolynomial.ofCoeffVector_coeffVector",
      "kind": "theorem",
-     "line": 71,
-     "doc": "",
+     "line": 59,
+     "doc": "Reading the coefficients into a vector and rebuilding the polynomial recovers `p`.",
      "statement": "theorem ofCoeffVector_coeffVector (n : ℕ) (p : ↥(degreeLT (R := R) n)) :\n    ofCoeffVector n (coeffVector n p) = p",
      "sorry": false
     },
     {
      "name": "CompPoly.CPolynomial.instByteCodecDegreeLT",
      "kind": "instance",
-     "line": 79,
+     "line": 67,
      "doc": "Degree below `n`: the `n` coefficients, `n * width R` bytes.",
      "statement": "instance instByteCodecDegreeLT [ByteCodec R] (n : ℕ) : ByteCodec ↥(degreeLT (R := R) n)",
      "sorry": false
@@ -52437,7 +52437,7 @@
     {
      "name": "CompPoly.CPolynomial.width_degreeLT",
      "kind": "theorem",
-     "line": 86,
+     "line": 74,
      "doc": "",
      "statement": "theorem width_degreeLT [ByteCodec R] (n : ℕ) :\n    ByteCodec.width ↥(degreeLT (R := R) n) = n * ByteCodec.width R",
      "sorry": false
@@ -52445,19 +52445,19 @@
     {
      "name": "CompPoly.CPolynomial.toBytes_degreeLT",
      "kind": "theorem",
-     "line": 89,
+     "line": 77,
      "doc": "",
      "statement": "theorem toBytes_degreeLT [ByteCodec R] {n : ℕ} (p : ↥(degreeLT (R := R) n)) :\n    ByteCodec.toBytes p = ByteCodec.toBytes (coeffVector n p)",
      "sorry": false
     },
     {
-     "line": 92,
+     "line": 80,
      "note": "## Self-delimiting: `CPolynomial R`"
     },
     {
      "name": "CompPoly.CPolynomial.instDelimitedCodec",
      "kind": "instance",
-     "line": 96,
+     "line": 84,
      "doc": "A `u64` coefficient count, then the coefficients.",
      "statement": "instance instDelimitedCodec [DelimitedCodec R] : DelimitedCodec (CPolynomial R)",
      "sorry": false
@@ -52465,7 +52465,7 @@
     {
      "name": "CompPoly.CPolynomial.valid_iff",
      "kind": "theorem",
-     "line": 103,
+     "line": 91,
      "doc": "",
      "statement": "theorem valid_iff [DelimitedCodec R] (p : CPolynomial R) :\n    DelimitedCodec.Valid p ↔ p.val.size < 2 ^ 64 ∧ ∀ c ∈ p.val.toList, DelimitedCodec.Valid c",
      "sorry": false
@@ -52473,7 +52473,7 @@
     {
      "name": "CompPoly.CPolynomial.valid_iff_size_lt",
      "kind": "theorem",
-     "line": 109,
+     "line": 97,
      "doc": "Over a fixed-width coefficient type, a polynomial is valid exactly when its size fits.",
      "statement": "theorem valid_iff_size_lt [ByteCodec R] (p : CPolynomial R) :\n    DelimitedCodec.Valid p ↔ p.val.size < 2 ^ 64",
      "sorry": false
@@ -52481,7 +52481,7 @@
     {
      "name": "CompPoly.CPolynomial.encode_eq",
      "kind": "theorem",
-     "line": 114,
+     "line": 102,
      "doc": "",
      "statement": "theorem encode_eq [DelimitedCodec R] (p : CPolynomial R) :\n    DelimitedCodec.encode p\n      = DelimitedCodec.encodeU64 p.val.size ++ DelimitedCodec.encodeList p.val.toList",
      "sorry": false
@@ -52489,7 +52489,7 @@
     {
      "name": "CompPoly.CPolynomial.toList_val_eq_ofFn",
      "kind": "theorem",
-     "line": 122,
+     "line": 110,
      "doc": "The coefficient list of a polynomial is its coefficient function on `Fin p.val.size`.",
      "statement": "theorem toList_val_eq_ofFn (p : CPolynomial R) :\n    p.val.toList = List.ofFn fun i : Fin p.val.size => coeff p i",
      "sorry": false
@@ -52497,7 +52497,7 @@
     {
      "name": "CompPoly.CPolynomial.encode_eq_encodeU64_append_toBytes",
      "kind": "theorem",
-     "line": 134,
+     "line": 122,
      "doc": "The self-delimiting encoding is the count followed by the fixed-width encoding at\n`n = size`: the two formats agree on their common part.",
      "statement": "theorem encode_eq_encodeU64_append_toBytes [ByteCodec R] (p : CPolynomial R) :\n    DelimitedCodec.encode p\n      = DelimitedCodec.encodeU64 p.val.size\n        ++ (ByteCodec.toBytes (⟨p, mem_degreeLT_iff_size_le.mpr le_rfl⟩ :\n            ↥(degreeLT (R := R) p.val.size))).toList",
      "sorry": false
@@ -53324,14 +53324,14 @@
    "module": "CompPoly.Univariate.Linear",
    "file": "CompPoly/Univariate/Linear.lean",
    "copyright": "CompPoly",
-   "authors": "Desmond Coles, Derek Sorensen",
+   "authors": "Desmond Coles, Derek Sorensen, Alexander Hicks",
    "title": "Linear Algebra API for Computable Univariate Polynomials",
-   "doc": "This file contains linear maps and instance-stable bounded-degree predicates for `CPolynomial`.",
+   "doc": "This file defines coefficient linear maps and bounded-degree subtypes for `CPolynomial`.\nThe subtypes depend only on `Zero R`.\n\n`ofFnEquiv n` identifies the coefficient vectors `Fin n → R` with the polynomials of degree below\n`n`. Over a finite coefficient type, it gives the executable enumeration `instFintypeDegreeLT`.",
    "items": [
     {
      "name": "CompPoly.CPolynomial.lcoeff",
      "kind": "def",
-     "line": 30,
+     "line": 34,
      "doc": "This is an R-linear function that returns the coefficient of X^n.",
      "statement": "def lcoeff (n : ℕ) : (CPolynomial R) →ₗ[R] R",
      "sorry": false
@@ -53339,7 +53339,7 @@
     {
      "name": "CompPoly.CPolynomial.lcoeff_apply",
      "kind": "theorem",
-     "line": 37,
+     "line": 41,
      "doc": "Applying `lcoeff n` returns the coefficient of degree `n`.",
      "statement": "theorem lcoeff_apply (n : ℕ) (p : CPolynomial R) : lcoeff n p = coeff p n",
      "sorry": false
@@ -53347,7 +53347,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLE",
      "kind": "def",
-     "line": 47,
+     "line": 51,
      "doc": "The set of `CPolynomial R` consisting of polynomials of degree ≤ `n`.",
      "statement": "def degreeLE (n : WithBot ℕ) : Set (CPolynomial R)",
      "sorry": false
@@ -53355,7 +53355,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLT",
      "kind": "def",
-     "line": 51,
+     "line": 55,
      "doc": "The set of `CPolynomial R` consisting of polynomials of degree < `n`.",
      "statement": "def degreeLT (n : ℕ) : Set (CPolynomial R)",
      "sorry": false
@@ -53363,7 +53363,7 @@
     {
      "name": "CompPoly.CPolynomial.mem_degreeLE",
      "kind": "theorem",
-     "line": 55,
+     "line": 59,
      "doc": "Membership in `degreeLE` is the corresponding degree bound.",
      "statement": "theorem mem_degreeLE {n : WithBot ℕ} {p : CPolynomial R} :\n    p ∈ degreeLE (R := R) n ↔ p.degree ≤ n",
      "sorry": false
@@ -53371,7 +53371,7 @@
     {
      "name": "CompPoly.CPolynomial.mem_degreeLT",
      "kind": "theorem",
-     "line": 60,
+     "line": 64,
      "doc": "Membership in `degreeLT` is the corresponding strict degree bound.",
      "statement": "theorem mem_degreeLT {n : ℕ} {p : CPolynomial R} :\n    p ∈ degreeLT (R := R) n ↔ p.degree < n",
      "sorry": false
@@ -53379,7 +53379,7 @@
     {
      "name": "CompPoly.CPolynomial.mem_degreeLT_iff_size_le",
      "kind": "theorem",
-     "line": 65,
+     "line": 69,
      "doc": "`degreeLT n` is exactly the bounded-size carrier storing at most `n` coefficients.",
      "statement": "theorem mem_degreeLT_iff_size_le {n : ℕ} {p : CPolynomial R} :\n    p ∈ degreeLT (R := R) n ↔ p.val.size ≤ n",
      "sorry": false
@@ -53387,15 +53387,71 @@
     {
      "name": "CompPoly.CPolynomial.zero_mem_degreeLT",
      "kind": "theorem",
-     "line": 74,
+     "line": 78,
      "doc": "The zero polynomial has bounded degree for every cutoff.",
      "statement": "theorem zero_mem_degreeLT (n : ℕ) : (0 : CPolynomial R) ∈ degreeLT (R := R) n",
      "sorry": false
     },
     {
+     "name": "CompPoly.CPolynomial.ofFn_mem_degreeLT",
+     "kind": "theorem",
+     "line": 89,
+     "doc": "`ofFn` on `n` coefficients has degree below `n`.",
+     "statement": "theorem ofFn_mem_degreeLT {n : ℕ} (f : Fin n → R) : ofFn f ∈ degreeLT (R := R) n",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.ofFn_coeff_of_mem_degreeLT",
+     "kind": "theorem",
+     "line": 95,
+     "doc": "A polynomial of degree below `n` is `ofFn` of its first `n` coefficients.",
+     "statement": "theorem ofFn_coeff_of_mem_degreeLT {n : ℕ} {p : CPolynomial R} (hp : p ∈ degreeLT (R := R) n) :\n    ofFn (fun i : Fin n => coeff p i) = p",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.ofFnEquiv",
+     "kind": "def",
+     "line": 109,
+     "doc": "`ofFnEquiv n` is the equivalence, through `ofFn`, from the coefficient vectors `Fin n → R` to\nthe polynomials of degree below `n`. Its inverse reads the first `n` coefficients. Both directions\nare executable.",
+     "statement": "def ofFnEquiv (n : ℕ) : (Fin n → R) ≃ ↥(degreeLT (R := R) n)",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.ofFnEquiv_apply_val",
+     "kind": "theorem",
+     "line": 117,
+     "doc": "The polynomial that `ofFnEquiv n` assigns to `f` is `ofFn f`.",
+     "statement": "theorem ofFnEquiv_apply_val (n : ℕ) (f : Fin n → R) : (ofFnEquiv n f).val = ofFn f",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.ofFnEquiv_symm_apply",
+     "kind": "theorem",
+     "line": 122,
+     "doc": "The inverse of `ofFnEquiv n` reads the first `n` coefficients.",
+     "statement": "theorem ofFnEquiv_symm_apply (n : ℕ) (p : ↥(degreeLT (R := R) n)) (i : Fin n) :\n    (ofFnEquiv n).symm p i = p.val.coeff i",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.instFintypeDegreeLT",
+     "kind": "instance",
+     "line": 138,
+     "doc": "Over a finite coefficient type, the polynomials of degree below `n` form a finite type.\n\nThe enumeration converts each coefficient function `Fin n → R` to a polynomial with `ofFn`.\nAt `n = 0` it lists only the zero polynomial.\n\nDownstream `by decide` can count small concrete enumerations. Use compiled evaluation such as\n`#guard` to test predicates that inspect the polynomials. For proofs about such searches, use the\nquantifier lemmas in `CompPoly.Univariate.ToPoly.Degree`.\n\nThe enumeration uses `BEq R` to trim trailing zeros. When the `BEq R` instance changes,\nthe subtype stays definitionally equal, but its enumerations may require a proof of equality.\n`card_degreeLT` applies to any enumeration.",
+     "statement": "instance instFintypeDegreeLT [Fintype R] (n : ℕ) : Fintype ↥(degreeLT (R := R) n)",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.card_degreeLT",
+     "kind": "theorem",
+     "line": 145,
+     "doc": "Over a finite coefficient type, there are `card R ^ n` polynomials of degree below `n`.\nThe statement holds for every `Fintype` instance on `↥(degreeLT n)`.",
+     "statement": "theorem card_degreeLT [Zero R] [Fintype R] (n : ℕ) [Fintype ↥(degreeLT (R := R) n)] :\n    Fintype.card ↥(degreeLT (R := R) n) = Fintype.card R ^ n",
+     "sorry": false
+    },
+    {
      "name": "CompPoly.CPolynomial.add_mem_degreeLT",
      "kind": "theorem",
-     "line": 85,
+     "line": 155,
      "doc": "`degreeLT n` is closed under addition.",
      "statement": "theorem add_mem_degreeLT {n : ℕ} {p q : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) (hq : q ∈ degreeLT (R := R) n) :\n    p + q ∈ degreeLT (R := R) n",
      "sorry": false
@@ -53403,7 +53459,7 @@
     {
      "name": "CompPoly.CPolynomial.nsmul_mem_degreeLT",
      "kind": "theorem",
-     "line": 96,
+     "line": 166,
      "doc": "`degreeLT n` is closed under additive scalar multiplication.",
      "statement": "theorem nsmul_mem_degreeLT {n m : ℕ} {p : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) :\n    m • p ∈ degreeLT (R := R) n",
      "sorry": false
@@ -53411,7 +53467,7 @@
     {
      "name": "CompPoly.CPolynomial.smul_mem_degreeLT",
      "kind": "theorem",
-     "line": 107,
+     "line": 177,
      "doc": "`degreeLT n` is closed under semiring scalar multiplication.",
      "statement": "theorem smul_mem_degreeLT {n : ℕ} (r : R) {p : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) :\n    r • p ∈ degreeLT (R := R) n",
      "sorry": false
@@ -53419,7 +53475,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTCoeffs",
      "kind": "def",
-     "line": 189,
+     "line": 259,
      "doc": "The first `n` coefficients on `degreeLT n` form a computable linear map to `Fin n → R`.",
      "statement": "def degreeLTCoeffs (n : ℕ) : ↥(degreeLT (R := R) n) →ₗ[R] (Fin n → R)",
      "sorry": false
@@ -53427,9 +53483,17 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTCoeffs_apply",
      "kind": "theorem",
-     "line": 202,
+     "line": 272,
      "doc": "Applying `degreeLTCoeffs` returns the corresponding bounded coefficient.",
      "statement": "theorem degreeLTCoeffs_apply (n : ℕ) (p : ↥(degreeLT (R := R) n)) (i : Fin n) :\n    degreeLTCoeffs n p i = coeff p.1 i",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.ofFnEquiv_symm_eq_degreeLTCoeffs",
+     "kind": "theorem",
+     "line": 277,
+     "doc": "The inverse of `ofFnEquiv` is the coefficient linear map.",
+     "statement": "theorem ofFnEquiv_symm_eq_degreeLTCoeffs (n : ℕ) :\n    ((ofFnEquiv (R := R) n).symm : ↥(degreeLT (R := R) n) → (Fin n → R)) =\n      degreeLTCoeffs n",
      "sorry": false
     }
    ]
@@ -57364,15 +57428,15 @@
   {
    "module": "CompPoly.Univariate.Raw.Ops",
    "file": "CompPoly/Univariate/Raw/Ops.lean",
-   "copyright": "CompPoly",
-   "authors": "Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Desmond Coles, Natalie Klaus, Dimitris Mitsios",
+   "copyright": "CompPoly, 2026 ArkLib Contributors",
+   "authors": "Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Desmond Coles, Natalie Klaus, Dimitris Mitsios, Alexander Hicks",
    "title": "Raw Univariate Polynomial Operations",
-   "doc": "Operations and evaluation lemmas for raw computable univariate polynomials.",
+   "doc": "Operations and evaluation lemmas for raw computable univariate polynomials. The file also states\nthe sizes of `smul`, `mulPowX`, `addRaw` and `mulRaw`, and the coefficients of `addRaw`, of a\nshifted `smul` and of `mulRaw`. It defines `mulRawFast`, a loop for `mulRaw` that computes each\nentry of the result as one sum. The `@[csimp]` lemma `mulRaw_eq_mulRawFast` makes compiled code\ncompute `mulRaw` with `mulRawFast`.\n\n`size_smul`, `size_mulPowX`, `size_addRaw` and `size_mulRaw` were ported from ArkLib's raw-size\nadapter under Apache 2.0. The file header records their copyright.",
    "items": [
     {
      "name": "CompPoly.CPolynomial.Raw.eval₂",
      "kind": "def",
-     "line": 36,
+     "line": 43,
      "doc": "Evaluates a `CPolynomial.Raw` at `x : S` using a ring homomorphism `f : R →+* S`.\n\nComputes `f(a₀) + f(a₁) * x + f(a₂) * x² + ...` where `aᵢ` are the coefficients.",
      "statement": "def eval₂ [Semiring R] [Semiring S] (f : R →+* S) (x : S) (p : CPolynomial.Raw R) : S",
      "sorry": false
@@ -57380,7 +57444,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.eval₂Horner",
      "kind": "def",
-     "line": 43,
+     "line": 50,
      "doc": "Evaluates a `CPolynomial.Raw` at `x : S` using Horner's method.\n\nComputes `f(aₙ) + x * (f(aₙ₋₁) + x * (... + x * f(a₀)))` via a right fold.",
      "statement": "def eval₂Horner [Semiring R] [Semiring S] (f : R →+* S) (x : S) (p : CPolynomial.Raw R) : S",
      "sorry": false
@@ -57388,7 +57452,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.eval",
      "kind": "def",
-     "line": 48,
+     "line": 55,
      "doc": "Evaluates a `CPolynomial.Raw` at a given value",
      "statement": "def eval [Semiring R] (x : R) (p : CPolynomial.Raw R) : R",
      "sorry": false
@@ -57396,7 +57460,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.evalHorner",
      "kind": "def",
-     "line": 53,
+     "line": 60,
      "doc": "Evaluates a `CPolynomial.Raw` at a given value using Horner's method.",
      "statement": "def evalHorner [Semiring R] (x : R) (p : CPolynomial.Raw R) : R",
      "sorry": false
@@ -57404,7 +57468,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.addRaw",
      "kind": "def",
-     "line": 60,
+     "line": 67,
      "doc": "Raw addition: pointwise sum of coefficient arrays (padded to equal length).\n\nThe result may have trailing zeros and should be trimmed for canonical form.",
      "statement": "def addRaw [Zero R] [Add R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57412,7 +57476,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add",
      "kind": "def",
-     "line": 66,
+     "line": 73,
      "doc": "Addition of two `CPolynomial.Raw`s, with result trimmed.",
      "statement": "def add [Zero R] [Add R] [BEq R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57420,7 +57484,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul",
      "kind": "def",
-     "line": 73,
+     "line": 80,
      "doc": "Scalar multiplication: multiplies each coefficient by `r`.",
      "statement": "def smul [Mul R] (r : R) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57428,7 +57492,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smulRight",
      "kind": "def",
-     "line": 81,
+     "line": 88,
      "doc": "Right scalar multiplication: multiplies each coefficient by `r` on the right.\n\nCorresponds to `p.toPoly * Polynomial.C r`, in contrast to `smul` which corresponds\nto `Polynomial.C r * p.toPoly`. The distinction matters in non-commutative semirings.",
      "statement": "def smulRight [Mul R] (r : R) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57436,7 +57500,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmulRaw",
      "kind": "def",
-     "line": 86,
+     "line": 93,
      "doc": "Raw scalar multiplication by a natural number (may have trailing zeros).",
      "statement": "def nsmulRaw [Semiring R] (n : ℕ) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57444,7 +57508,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmul",
      "kind": "def",
-     "line": 91,
+     "line": 98,
      "doc": "Scalar multiplication of `CPolynomial.Raw` by a natural number, with result trimmed.",
      "statement": "def nsmul [Semiring R] [BEq R] (n : ℕ) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57452,7 +57516,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulPowX",
      "kind": "def",
-     "line": 100,
+     "line": 107,
      "doc": "Multiplication by `X^i`: shifts coefficients right by `i` positions (prepends `i` zeros).",
      "statement": "def mulPowX [Zero R] (i : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57460,7 +57524,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulX",
      "kind": "def",
-     "line": 105,
+     "line": 112,
      "doc": "Multiplication of a `CPolynomial.Raw` by `X`, reduces to `mulPowX 1`.",
      "statement": "def mulX [Zero R] (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57468,23 +57532,119 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulRaw",
      "kind": "def",
-     "line": 115,
-     "doc": "Multiplication accumulator using the naive `O(n²)` algorithm: `Σᵢ (aᵢ * q) * X^i`.\n\nThe partial sums are combined with the untrimmed `addRaw`, so the result may carry\ntrailing zeros and should be trimmed for canonical form. Deferring the trim to the\nend (see `mul`) avoids an `O(size)` scan after every partial sum.",
+     "line": 124,
+     "doc": "Multiplication accumulator using the naive `O(n²)` algorithm: `Σᵢ (aᵢ * q) * X^i`.\n\nThe partial sums are combined with the untrimmed `addRaw`, so the result may carry\ntrailing zeros and should be trimmed for canonical form. Deferring the trim to the\nend (see `mul`) avoids an `O(size)` scan after every partial sum.\n\nCompiled code computes `mulRaw` with `mulRawFast` (see `mulRaw_eq_mulRawFast`).",
      "statement": "def mulRaw [Semiring R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
+     "sorry": false
+    },
+    {
+     "line": 129,
+     "note": "### Sizes and coefficients of the operations in `mulRaw`\n\nThe sizes count the stored coefficients, including trailing zeros."
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.size_smul",
+     "kind": "theorem",
+     "line": 135,
+     "doc": "Scalar multiplication preserves the stored coefficient count.",
+     "statement": "theorem size_smul [Mul R] (x : R) (p : CPolynomial.Raw R) :\n    (smul x p).size = p.size",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.size_mulPowX",
+     "kind": "theorem",
+     "line": 141,
+     "doc": "Multiplication by `X^i` retains all of the prepended zero coefficients.",
+     "statement": "theorem size_mulPowX [Zero R] (i : Nat) (p : CPolynomial.Raw R) :\n    (mulPowX i p).size = i + p.size",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.size_addRaw",
+     "kind": "theorem",
+     "line": 147,
+     "doc": "Padded raw addition stores the larger input size.",
+     "statement": "theorem size_addRaw [Zero Q] [Add Q] {p q : CPolynomial.Raw Q} :\n    (addRaw p q).size = max p.size q.size",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.add_coeff?",
+     "kind": "theorem",
+     "line": 153,
+     "doc": "Coefficient `i` of `addRaw p q` is the sum of coefficient `i` of `p` and of `q`.",
+     "statement": "theorem add_coeff? [AddZeroClass Q] (p q : CPolynomial.Raw Q) (i : ℕ) :\n    (addRaw p q).coeff i = p.coeff i + q.coeff i",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.smul_mulPowX_coeff",
+     "kind": "theorem",
+     "line": 163,
+     "doc": "Coefficient `k` of `smul a q` shifted by `i` places: `0` below `i`, and `a * q.coeff (k - i)`\nfrom `i` on.",
+     "statement": "theorem smul_mulPowX_coeff [MulZeroClass R] (a : R) (q : CPolynomial.Raw R) (i k : ℕ) :\n    ((smul a q).mulPowX i).coeff k = if k < i then 0 else a * q.coeff (k - i)",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.size_mulRaw",
+     "kind": "theorem",
+     "line": 172,
+     "doc": "Raw multiplication retains every shifted row, including padding from an empty right array.",
+     "statement": "theorem size_mulRaw [Semiring R] (p q : CPolynomial.Raw R) :\n    (mulRaw p q).size = if p.size = 0 then 0 else q.size + p.size - 1",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.coeff_mulRaw",
+     "kind": "theorem",
+     "line": 193,
+     "doc": "Coefficient `k` of `mulRaw p q` is the convolution sum of the coefficients of `p` and `q`.",
+     "statement": "theorem coeff_mulRaw [Semiring R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (mulRaw p q).coeff k =\n      ∑ i ∈ Finset.range p.size, if k < i then 0 else p.coeff i * q.coeff (k - i)",
+     "sorry": false
+    },
+    {
+     "line": 213,
+     "note": "### Compiled raw multiplication\n\n`mulRawFast` computes the same array as `mulRaw`. The `@[csimp]` lemma `mulRaw_eq_mulRawFast`\nmakes compiled code use it. The lemma comes before `mul` and the other definitions in this file\nthat use `mulRaw`. When the compiler compiles such a definition, it inlines or specializes `mulRaw`\ninto the code. A `@[csimp]` lemma later in the file would not change that code."
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.mulRawFast",
+     "kind": "def",
+     "line": 228,
+     "doc": "Raw multiplication that computes each entry of the result as one sum.\n\nThe result is empty when `p` is empty. Otherwise it has `q.size + p.size - 1` entries, as in\n`mulRaw`. Entry `k` is the sum of the products `p[i] * q[k - i]` over the indices `i` with\n`k + 1 - q.size ≤ i < min (k + 1) p.size`, added to `0` in increasing order of `i`. Each pair\n`(i, j)` with `i < p.size` and `j < q.size` occurs in exactly one entry, so the loop makes\n`p.size * q.size` multiplications and the same number of additions.",
+     "statement": "def mulRawFast [inst : Semiring R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.size_mulRawFast",
+     "kind": "theorem",
+     "line": 284,
+     "doc": "`mulRawFast p q` is empty when `p` is empty. Otherwise it has `q.size + p.size - 1` entries.",
+     "statement": "theorem size_mulRawFast [Semiring R] (p q : CPolynomial.Raw R) :\n    (mulRawFast p q).size = if p.size = 0 then 0 else q.size + p.size - 1",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.getElem_mulRawFast",
+     "kind": "theorem",
+     "line": 292,
+     "doc": "Entry `k` of `mulRawFast p q` is the convolution sum of the coefficients of `p` and `q`.",
+     "statement": "theorem getElem_mulRawFast [Semiring R] (p q : CPolynomial.Raw R) (k : ℕ)\n    (hk : k < (mulRawFast p q).size) :\n    (mulRawFast p q)[k] =\n      ∑ i ∈ Finset.range p.size, if k < i then 0 else p.coeff i * q.coeff (k - i)",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.Raw.mulRaw_eq_mulRawFast",
+     "kind": "theorem",
+     "line": 303,
+     "doc": "`mulRaw` equals `mulRawFast`. As a `@[csimp]` lemma, it makes compiled code use\n`mulRawFast`.",
+     "statement": "theorem mulRaw_eq_mulRawFast : @mulRaw = @mulRawFast",
      "sorry": false
     },
     {
      "name": "CompPoly.CPolynomial.Raw.mul",
      "kind": "def",
-     "line": 123,
-     "doc": "Multiplication using the naive `O(n²)` algorithm: `Σᵢ (aᵢ * q) * X^i`.\n\nTrims only once, at the end of the convolution fold, rather than after every\npartial sum (`mulRaw` does the untrimmed accumulation).",
+     "line": 316,
+     "doc": "Multiplication using the naive `O(n²)` algorithm: `Σᵢ (aᵢ * q) * X^i`.\n\nTrims only once, at the end of the convolution fold, rather than after every\npartial sum (`mulRaw` does the untrimmed accumulation). Compiled code computes the product with\n`mulRawFast` (see `mulRaw_eq_mulRawFast`).",
      "statement": "def mul [Semiring R] [BEq R] (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
     },
     {
      "name": "CompPoly.CPolynomial.Raw.pow",
      "kind": "def",
-     "line": 129,
+     "line": 322,
      "doc": "Exponentiation of a `CPolynomial.Raw` by a natural number `n` via repeated multiplication.\nThis is the specification; `powBySq` is the efficient O(log n) implementation.",
      "statement": "def pow [Semiring R] [BEq R] (p : CPolynomial.Raw R) (n : Nat) : CPolynomial.Raw R",
      "sorry": false
@@ -57492,15 +57652,15 @@
     {
      "name": "CompPoly.CPolynomial.Raw.powBySqUntrimmed",
      "kind": "def",
-     "line": 141,
-     "doc": "Repeated-squaring core that accumulates with the untrimmed `mulRaw`, deferring\nthe canonicalization trim to the outer `powBySq` wrapper. The output may carry\ntrailing zeros and is not in canonical form.\n\nFor $ n > 0 $, computes $ p ^ n $ by recursing on $ n / 2 $:\n* If $ n $ is even: $ (p ^ {n/2})^2 $\n* If $ n $ is odd:  $ p \\cdot (p ^ {n/2})^2 $",
+     "line": 335,
+     "doc": "Repeated-squaring core that accumulates with the untrimmed `mulRaw`, deferring\nthe canonicalization trim to the outer `powBySq` wrapper. The output may carry\ntrailing zeros and is not in canonical form. Compiled code computes each product with\n`mulRawFast`.\n\nFor $ n > 0 $, computes $ p ^ n $ by recursing on $ n / 2 $:\n* If $ n $ is even: $ (p ^ {n/2})^2 $\n* If $ n $ is odd:  $ p \\cdot (p ^ {n/2})^2 $",
      "statement": "def powBySqUntrimmed [Semiring R] (p : CPolynomial.Raw R) : Nat → CPolynomial.Raw R",
      "sorry": false
     },
     {
      "name": "CompPoly.CPolynomial.Raw.powBySq",
      "kind": "def",
-     "line": 154,
+     "line": 348,
      "doc": "Exponentiation via repeated squaring: $ O(\\log n) $ multiplications\ninstead of $ O(n) $. Delegates to `powBySqUntrimmed` and trims only once\nat the end, rather than after every squaring step.",
      "statement": "def powBySq [Semiring R] [BEq R] (p : CPolynomial.Raw R) (n : Nat) : CPolynomial.Raw R",
      "sorry": false
@@ -57508,7 +57668,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.truncate",
      "kind": "def",
-     "line": 168,
+     "line": 362,
      "doc": "Keep only the stored coefficients with index `< k`.",
      "statement": "def truncate [Zero R] (k : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57516,7 +57676,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.takeLow",
      "kind": "def",
-     "line": 173,
+     "line": 367,
      "doc": "Return exactly the first `k` coefficients, padding missing coefficients with zero.",
      "statement": "def takeLow [Zero R] (k : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57524,7 +57684,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.reverse",
      "kind": "def",
-     "line": 178,
+     "line": 372,
      "doc": "Reverse the first `n` coefficients, padding missing coefficients with zero.",
      "statement": "def reverse [Zero R] (n : Nat) (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57532,7 +57692,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulLowConvolution",
      "kind": "def",
-     "line": 183,
+     "line": 377,
      "doc": "Low product computed by the coefficient convolution formula.",
      "statement": "def mulLowConvolution [Semiring R] (k : Nat) (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57540,7 +57700,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.MulLowContext",
      "kind": "structure",
-     "line": 188,
+     "line": 382,
      "doc": "Backend for computing the low `k` coefficients of a raw product.",
      "statement": "structure MulLowContext (R : Type*) [Semiring R] [BEq R] [LawfulBEq R] where\n  /-- Return the low `k` coefficients of `p * q`. -/\n  mulLow : Nat → CPolynomial.Raw R → CPolynomial.Raw R → CPolynomial.Raw R\n  /-- The backend does not return coefficients at degree `>= k`. -/\n  size_le : ∀ k p q, (mulLow k p q).size ≤ k\n  /-- Low coefficients agree with ordinary raw multiplication. -/\n  coeff_of_lt : ∀ k p q i, i < k → (mulLow k p q).coeff i = (p * q).coeff i",
      "sorry": false
@@ -57548,7 +57708,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.degreeBound",
      "kind": "def",
-     "line": 197,
+     "line": 391,
      "doc": "Upper bound on degree: `size - 1` if non-empty, `⊥` if empty.",
      "statement": "def degreeBound (p : CPolynomial.Raw R) : WithBot Nat",
      "sorry": false
@@ -57556,7 +57716,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.natDegreeBound",
      "kind": "def",
-     "line": 203,
+     "line": 397,
      "doc": "Convert `degreeBound` to a natural number by sending `⊥` to `0`.",
      "statement": "def natDegreeBound (p : CPolynomial.Raw R) : Nat",
      "sorry": false
@@ -57564,7 +57724,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.monic",
      "kind": "def",
-     "line": 207,
+     "line": 401,
      "doc": "Check if a `CPolynomial.Raw` is monic, i.e. its leading coefficient is 1.",
      "statement": "def monic [Zero R] [One R] [BEq R] (p : CPolynomial.Raw R) : Bool",
      "sorry": false
@@ -57572,7 +57732,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.divX",
      "kind": "def",
-     "line": 210,
+     "line": 404,
      "doc": "Pseudo-division by `X`: removes the constant term and shifts remaining coefficients left.",
      "statement": "def divX (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57580,7 +57740,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.neg",
      "kind": "def",
-     "line": 218,
+     "line": 412,
      "doc": "Negation of a `CPolynomial.Raw`.",
      "statement": "def neg [Neg R] (p : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57588,7 +57748,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sub",
      "kind": "def",
-     "line": 222,
+     "line": 416,
      "doc": "Subtraction of two `CPolynomial.Raw`s.",
      "statement": "def sub [Zero R] [Add R] [Neg R] [BEq R]\n    (p q : CPolynomial.Raw R) : CPolynomial.Raw R",
      "sorry": false
@@ -57668,17 +57828,9 @@
      "sorry": false
     },
     {
-     "name": "CompPoly.CPolynomial.Raw.add_coeff?",
-     "kind": "theorem",
-     "line": 81,
-     "doc": "",
-     "statement": "theorem add_coeff? (p q : CPolynomial.Raw Q) (i : ℕ) :\n    (addRaw p q).coeff i = p.coeff i + q.coeff i",
-     "sorry": false
-    },
-    {
      "name": "CompPoly.CPolynomial.Raw.add_coeff_trimmed",
      "kind": "lemma",
-     "line": 91,
+     "line": 81,
      "doc": "",
      "statement": "lemma add_coeff_trimmed [LawfulBEq R] (p q : CPolynomial.Raw R) (i : ℕ) :\n    (p + q).coeff i = p.coeff i + q.coeff i",
      "sorry": false
@@ -57686,7 +57838,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_equiv_raw",
      "kind": "lemma",
-     "line": 100,
+     "line": 90,
      "doc": "",
      "statement": "lemma add_equiv_raw [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    Trim.equiv (p.add q) (p.addRaw q)",
      "sorry": false
@@ -57694,7 +57846,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_equiv",
      "kind": "lemma",
-     "line": 106,
+     "line": 96,
      "doc": "",
      "statement": "lemma smul_equiv : ∀ (i : ℕ) (r : R),\n    (smul r p).coeff i = r * (p.coeff i)",
      "sorry": false
@@ -57702,7 +57854,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmulRaw_equiv",
      "kind": "lemma",
-     "line": 112,
+     "line": 102,
      "doc": "",
      "statement": "lemma nsmulRaw_equiv [LawfulBEq R] : ∀ (n i : ℕ),\n    (nsmulRaw n p).trim.coeff i = n * p.trim.coeff i",
      "sorry": false
@@ -57710,7 +57862,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_pow_assoc",
      "kind": "lemma",
-     "line": 120,
+     "line": 110,
      "doc": "",
      "statement": "lemma mul_pow_assoc : ∀ (p : CPolynomial.Raw R) (n : ℕ),\n    ∀ (q : CPolynomial.Raw R) (m l : ℕ),\n  l + m = n →\n  p.mul^[n] q = p.mul^[m] (p.mul^[l] q)",
      "sorry": false
@@ -57718,7 +57870,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_pow_succ",
      "kind": "lemma",
-     "line": 144,
+     "line": 134,
      "doc": "",
      "statement": "lemma mul_pow_succ (p q : CPolynomial.Raw R) (n : ℕ):\n    p.mul^[n + 1] q = p.mul (p.mul^[n] q)",
      "sorry": false
@@ -57726,7 +57878,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.trim_add_trim",
      "kind": "lemma",
-     "line": 148,
+     "line": 138,
      "doc": "",
      "statement": "lemma trim_add_trim [LawfulBEq R] (p q : CPolynomial.Raw R) : p.trim + q = p + q",
      "sorry": false
@@ -57734,7 +57886,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.zero_def",
      "kind": "theorem",
-     "line": 158,
+     "line": 148,
      "doc": "",
      "statement": "theorem zero_def : (0 : CPolynomial.Raw Q) = #[]",
      "sorry": false
@@ -57742,7 +57894,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_comm",
      "kind": "theorem",
-     "line": 160,
+     "line": 150,
      "doc": "",
      "statement": "theorem add_comm : p + q = q + p",
      "sorry": false
@@ -57750,7 +57902,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.zero_canonical",
      "kind": "theorem",
-     "line": 167,
+     "line": 157,
      "doc": "",
      "statement": "theorem zero_canonical : (0 : CPolynomial.Raw R).trim = 0",
      "sorry": false
@@ -57758,7 +57910,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.leadingCoeff_zero",
      "kind": "theorem",
-     "line": 170,
+     "line": 160,
      "doc": "",
      "statement": "theorem leadingCoeff_zero : leadingCoeff (0 : CPolynomial.Raw R) = (0 : R)",
      "sorry": false
@@ -57766,7 +57918,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.monomial_canonical",
      "kind": "theorem",
-     "line": 173,
+     "line": 163,
      "doc": "",
      "statement": "theorem monomial_canonical [LawfulBEq R] [DecidableEq R] (n : ℕ) (c : R) :\n    (monomial n c).trim = monomial n c",
      "sorry": false
@@ -57774,7 +57926,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.X_canonical",
      "kind": "theorem",
-     "line": 180,
+     "line": 170,
      "doc": "",
      "statement": "theorem X_canonical [Nontrivial R] [LawfulBEq R] : X.trim = (X : CPolynomial.Raw R)",
      "sorry": false
@@ -57782,7 +57934,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_monomial",
      "kind": "lemma",
-     "line": 187,
+     "line": 177,
      "doc": "",
      "statement": "lemma coeff_monomial [DecidableEq R] {n i : ℕ} {c : R} :\n    ((monomial n) c).coeff i = if n = i then c else 0",
      "sorry": false
@@ -57790,7 +57942,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_C",
      "kind": "lemma",
-     "line": 223,
+     "line": 213,
      "doc": "",
      "statement": "lemma coeff_C (r : R) (i : ℕ) : (C r).coeff i = if i = 0 then r else 0",
      "sorry": false
@@ -57798,7 +57950,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_X",
      "kind": "lemma",
-     "line": 227,
+     "line": 217,
      "doc": "",
      "statement": "lemma coeff_X (i : ℕ) : (X : CPolynomial.Raw R).coeff i = if i = 1 then 1 else 0",
      "sorry": false
@@ -57806,7 +57958,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_zero",
      "kind": "lemma",
-     "line": 233,
+     "line": 223,
      "doc": "",
      "statement": "lemma coeff_zero (i : ℕ) : (0 : CPolynomial.Raw R).coeff i = 0",
      "sorry": false
@@ -57814,7 +57966,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_one",
      "kind": "lemma",
-     "line": 237,
+     "line": 227,
      "doc": "",
      "statement": "lemma coeff_one (i : ℕ) :\n    coeff (1 : CPolynomial.Raw R) i = if i = 0 then 1 else 0",
      "sorry": false
@@ -57822,7 +57974,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.zero_add",
      "kind": "theorem",
-     "line": 247,
+     "line": 237,
      "doc": "",
      "statement": "theorem zero_add (hp : p.canonical) : 0 + p = p",
      "sorry": false
@@ -57830,7 +57982,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_zero",
      "kind": "theorem",
-     "line": 252,
+     "line": 242,
      "doc": "",
      "statement": "theorem add_zero (hp : p.canonical) : p + 0 = p",
      "sorry": false
@@ -57838,7 +57990,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.zero_add_trim",
      "kind": "theorem",
-     "line": 255,
+     "line": 245,
      "doc": "",
      "statement": "theorem zero_add_trim [LawfulBEq R] (p : CPolynomial.Raw R) : 0 + p = p.trim",
      "sorry": false
@@ -57846,7 +57998,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_zero_trim",
      "kind": "theorem",
-     "line": 259,
+     "line": 249,
      "doc": "",
      "statement": "theorem add_zero_trim [LawfulBEq R] (p : CPolynomial.Raw R) : p + 0 = p.trim",
      "sorry": false
@@ -57854,7 +58006,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_assoc",
      "kind": "theorem",
-     "line": 263,
+     "line": 253,
      "doc": "",
      "statement": "theorem add_assoc [LawfulBEq R] : p + q + r = p + (q + r)",
      "sorry": false
@@ -57862,7 +58014,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.foldl_preserves_canonical",
      "kind": "lemma",
-     "line": 278,
+     "line": 268,
      "doc": "",
      "statement": "lemma foldl_preserves_canonical {α : Type*}\n    (f : CPolynomial.Raw R → α → CPolynomial.Raw R)\n    (z : CPolynomial.Raw R) (as : Array α)\n    (hz : z.trim = z)\n    (hf : ∀ acc x, (f acc x).trim = f acc x) :\n    (as.foldl f z).trim = as.foldl f z",
      "sorry": false
@@ -57870,7 +58022,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_foldl_add",
      "kind": "lemma",
-     "line": 287,
+     "line": 277,
      "doc": "",
      "statement": "lemma coeff_foldl_add {α : Type*} [LawfulBEq R]\n    (l : List α)\n    (f : α → CPolynomial.Raw R)\n    (z : CPolynomial.Raw R) (k : ℕ) :\n    (l.foldl (fun acc x => acc + f x) z).coeff k\n      = z.coeff k + (l.map (fun x => (f x).coeff k)).sum",
      "sorry": false
@@ -57878,7 +58030,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_foldl_addRaw",
      "kind": "lemma",
-     "line": 314,
+     "line": 304,
      "doc": "Coefficient of an untrimmed `addRaw` accumulator fold: the same statement as\n`coeff_foldl_add`, but the partial sums are combined with `addRaw` (no per-step\ntrim). This is what `mulRaw` folds with.",
      "statement": "lemma coeff_foldl_addRaw {α : Type*} [LawfulBEq R]\n    (l : List α)\n    (f : α → CPolynomial.Raw R)\n    (z : CPolynomial.Raw R) (k : ℕ) :\n    (l.foldl (fun acc x => acc.addRaw (f x)) z).coeff k\n      = z.coeff k + (l.map (fun x => (f x).coeff k)).sum",
      "sorry": false
@@ -57886,7 +58038,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_eq_foldl",
      "kind": "lemma",
-     "line": 341,
+     "line": 331,
      "doc": "`mul` agrees with the trimmed-add convolution fold (the previous definition of\n`mul`). `mul` now folds with the untrimmed `addRaw` and trims once at the end;\nthis lemma is the bridge that lets the existing coefficient and equivalence\nproofs go through unchanged.",
      "statement": "lemma mul_eq_foldl [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    p * q = p.zipIdx.foldl (fun acc ⟨a, i⟩ => acc + (smul a q).mulPowX i) (mk #[])",
      "sorry": false
@@ -57894,7 +58046,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sum_zipIdx_eq_sum_range",
      "kind": "lemma",
-     "line": 356,
+     "line": 346,
      "doc": "",
      "statement": "lemma sum_zipIdx_eq_sum_range {α : Type*} [AddCommMonoid α] (p : CPolynomial.Raw R)\n    (f : R → ℕ → α) : (p.zipIdx.toList.map (fun ⟨a, i⟩ => f a i)).sum =\n    (Finset.range p.size).sum (fun i => f (p.coeff i) i)",
      "sorry": false
@@ -57902,7 +58054,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.double_sum_eq",
      "kind": "theorem",
-     "line": 361,
+     "line": 351,
      "doc": "",
      "statement": "theorem double_sum_eq [LawfulBEq R] (p q r : CPolynomial.Raw R) (n : ℕ) :\n    (Finset.range (n + 1)).sum (fun j =>\n      (Finset.range (j + 1)).sum (fun i =>\n        p.coeff i * q.coeff (j - i) * r.coeff (n - j)))\n    =\n    (Finset.range (n + 1)).sum (fun i =>\n      (Finset.range (n - i + 1)).sum (fun k =>\n        p.coeff i * q.coeff k * r.coeff (n - i - k)))",
      "sorry": false
@@ -57910,7 +58062,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sum_range_extend",
      "kind": "lemma",
-     "line": 382,
+     "line": 372,
      "doc": "",
      "statement": "lemma sum_range_extend  (p q : CPolynomial.Raw R) (k : ℕ) :\n    (Finset.range p.size).sum (fun i => if k < i then 0 else p.coeff i * q.coeff (k - i)) =\n    (Finset.range (k + 1)).sum (fun i => p.coeff i * q.coeff (k - i))",
      "sorry": false
@@ -57918,7 +58070,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sum_range_reverse",
      "kind": "lemma",
-     "line": 396,
+     "line": 386,
      "doc": "",
      "statement": "lemma sum_range_reverse [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (Finset.range (k + 1)).sum (fun i => p.coeff i * q.coeff (k - i)) =\n    (Finset.range (k + 1)).sum (fun j => p.coeff (k - j) * q.coeff j)",
      "sorry": false
@@ -57926,7 +58078,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmul_zero",
      "kind": "theorem",
-     "line": 412,
+     "line": 402,
      "doc": "",
      "statement": "theorem nsmul_zero [LawfulBEq R] (p : CPolynomial.Raw R) : nsmul 0 p = 0",
      "sorry": false
@@ -57934,7 +58086,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmulRawSucc",
      "kind": "theorem",
-     "line": 418,
+     "line": 408,
      "doc": "",
      "statement": "theorem nsmulRawSucc (n : ℕ) (p : CPolynomial.Raw Q) :\n    nsmulRaw (n + 1) p = addRaw (nsmulRaw n p) p",
      "sorry": false
@@ -57942,7 +58094,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.nsmul_succ",
      "kind": "theorem",
-     "line": 428,
+     "line": 418,
      "doc": "",
      "statement": "theorem nsmul_succ [LawfulBEq R] (n : ℕ) {p : CPolynomial.Raw R} :\n    nsmul (n + 1) p = nsmul n p + p",
      "sorry": false
@@ -57950,7 +58102,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_coeff",
      "kind": "lemma",
-     "line": 435,
+     "line": 425,
      "doc": "",
      "statement": "lemma smul_coeff [LawfulBEq R] (a : R) (p : CPolynomial.Raw R) (k : ℕ) :\n    (smul a p).coeff k = a * p.coeff k",
      "sorry": false
@@ -57958,7 +58110,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_addRaw_distrib",
      "kind": "lemma",
-     "line": 439,
+     "line": 429,
      "doc": "",
      "statement": "lemma smul_addRaw_distrib [LawfulBEq R] :\n    ∀ (a' : R) (q r : CPolynomial.Raw R), smul a' (q.addRaw r)\n        = (smul a' q).addRaw (smul a' r)",
      "sorry": false
@@ -57966,7 +58118,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_distrib_trim",
      "kind": "lemma",
-     "line": 452,
+     "line": 442,
      "doc": "",
      "statement": "lemma smul_distrib_trim [LawfulBEq R] :\n    ∀ (a' : R) (q r : CPolynomial.Raw R), (smul a' (q + r)).trim\n        = smul a' q + smul a' r",
      "sorry": false
@@ -57974,7 +58126,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_smul_add_distrib",
      "kind": "lemma",
-     "line": 475,
+     "line": 465,
      "doc": "",
      "statement": "lemma coeff_smul_add_distrib [LawfulBEq R] (a : R) (q r : CPolynomial.Raw R) (i : ℕ) :\n    (smul a (q + r)).coeff i = (smul a q).coeff i + (smul a r).coeff i",
      "sorry": false
@@ -57982,7 +58134,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_add_smul",
      "kind": "lemma",
-     "line": 489,
+     "line": 479,
      "doc": "",
      "statement": "lemma coeff_add_smul [LawfulBEq R]  (a b : R) (q : CPolynomial.Raw R) (k : ℕ) :\n    (smul (a + b) q).coeff k = (smul a q).coeff k + (smul b q).coeff k",
      "sorry": false
@@ -57990,7 +58142,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_sum",
      "kind": "lemma",
-     "line": 505,
+     "line": 495,
      "doc": "",
      "statement": "lemma coeff_sum : ∀ (p : CPolynomial.Raw R) (k : ℕ),\n    (p.zipIdx.map (fun ⟨a, i⟩ => ((smul a 1).mulPowX i).coeff k)).sum = p.coeff k",
      "sorry": false
@@ -57998,7 +58150,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mul",
      "kind": "lemma",
-     "line": 520,
+     "line": 510,
      "doc": "",
      "statement": "lemma coeff_mul [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (p * q).coeff k = (p.zipIdx.toList.map (fun ⟨a, i⟩ =>\n        ((smul a q).mulPowX i).coeff k)).sum",
      "sorry": false
@@ -58006,7 +58158,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mulPowX",
      "kind": "lemma",
-     "line": 544,
+     "line": 534,
      "doc": "",
      "statement": "lemma coeff_mulPowX [LawfulBEq R] (i : ℕ) (p : CPolynomial.Raw R) (k : ℕ) :\n    (p.mulPowX i).coeff k = if k < i then 0 else p.coeff (k - i)",
      "sorry": false
@@ -58014,7 +58166,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mulPowX'",
      "kind": "lemma",
-     "line": 550,
+     "line": 540,
      "doc": "",
      "statement": "lemma coeff_mulPowX' [LawfulBEq R] (p : CPolynomial.Raw R) (n i : ℕ) :\n    (p.mulPowX n).coeff i = if i < n then 0 else p.coeff (i - n)",
      "sorry": false
@@ -58022,7 +58174,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulPowX_coeff'",
      "kind": "lemma",
-     "line": 561,
+     "line": 551,
      "doc": "",
      "statement": "lemma mulPowX_coeff' [LawfulBEq R] (p : CPolynomial.Raw R) (n k : ℕ) :\n    (p.mulPowX n).coeff k = if k < n then 0 else p.coeff (k - n)",
      "sorry": false
@@ -58030,7 +58182,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mulPowX_smul_add",
      "kind": "lemma",
-     "line": 565,
+     "line": 555,
      "doc": "",
      "statement": "lemma coeff_mulPowX_smul_add [LawfulBEq R] (i : ℕ) (a b : R) (q : CPolynomial.Raw R) (k : ℕ) :\n    ((smul (a + b) q).mulPowX i).coeff k =\n        ((smul a q).mulPowX i).coeff k + ((smul b q).mulPowX i).coeff k",
      "sorry": false
@@ -58038,7 +58190,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulPowX_zero",
      "kind": "lemma",
-     "line": 574,
+     "line": 564,
      "doc": "",
      "statement": "lemma mulPowX_zero (p : CPolynomial.Raw R) :\n    p.mulPowX 0 = p",
      "sorry": false
@@ -58046,7 +58198,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.equiv_mul_one",
      "kind": "lemma",
-     "line": 584,
+     "line": 574,
      "doc": "",
      "statement": "lemma equiv_mul_one [LawfulBEq R] (p : CPolynomial.Raw R) : Trim.equiv (p * 1) p",
      "sorry": false
@@ -58054,7 +58206,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_is_trimmed",
      "kind": "theorem",
-     "line": 604,
+     "line": 594,
      "doc": "",
      "statement": "theorem mul_is_trimmed [LawfulBEq R] (p q : CPolynomial.Raw R) : (p * q).trim = p * q",
      "sorry": false
@@ -58062,7 +58214,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_is_trimmed",
      "kind": "theorem",
-     "line": 609,
+     "line": 599,
      "doc": "`Raw.add` trims at the end of its accumulation, so its output is canonical.",
      "statement": "theorem add_is_trimmed [LawfulBEq R] (p q : CPolynomial.Raw R) : (p + q).trim = p + q",
      "sorry": false
@@ -58070,7 +58222,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mul_eq_sum_range",
      "kind": "lemma",
-     "line": 613,
+     "line": 603,
      "doc": "",
      "statement": "lemma coeff_mul_eq_sum_range [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) (n : ℕ)\n    (h : p.size ≤ n) : (p * q).coeff k =\n        List.sum ((List.range n).map (fun i => ((smul (p.coeff i) q).mulPowX i).coeff k))",
      "sorry": false
@@ -58078,7 +58230,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.C_mul_eq_smul_trim",
      "kind": "lemma",
-     "line": 646,
+     "line": 636,
      "doc": "",
      "statement": "lemma C_mul_eq_smul_trim [LawfulBEq R] (r : R)\n    (q : CPolynomial.Raw R) :\n    C r * q = (smul r q).trim",
      "sorry": false
@@ -58086,7 +58238,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_one_eq_self",
      "kind": "lemma",
-     "line": 656,
+     "line": 646,
      "doc": "",
      "statement": "lemma smul_one_eq_self (p : CPolynomial.Raw R) :\n    smul 1 p = p",
      "sorry": false
@@ -58094,7 +58246,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_zero_eq_replicate_zero",
      "kind": "lemma",
-     "line": 662,
+     "line": 652,
      "doc": "",
      "statement": "lemma smul_zero_eq_replicate_zero (p : CPolynomial.Raw R) :\n    smul 0 p = mk (Array.replicate p.size 0)",
      "sorry": false
@@ -58102,7 +58254,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.trim_replicate_zero",
      "kind": "lemma",
-     "line": 666,
+     "line": 656,
      "doc": "",
      "statement": "lemma trim_replicate_zero [LawfulBEq R] (n : ℕ) :\n    (mk (Array.replicate n (0 : R))).trim = 0",
      "sorry": false
@@ -58110,7 +58262,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_zero_trim",
      "kind": "lemma",
-     "line": 680,
+     "line": 670,
      "doc": "",
      "statement": "lemma smul_zero_trim [LawfulBEq R]\n    (p : CPolynomial.Raw R) : (smul 0 p).trim = 0",
      "sorry": false
@@ -58118,7 +58270,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.X_mul_eq_mulX_trim",
      "kind": "lemma",
-     "line": 685,
+     "line": 675,
      "doc": "",
      "statement": "lemma X_mul_eq_mulX_trim [LawfulBEq R]\n    (p : CPolynomial.Raw R) :\n    X * p = (mulX p).trim",
      "sorry": false
@@ -58126,7 +58278,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulX_monomial_one",
      "kind": "lemma",
-     "line": 699,
+     "line": 689,
      "doc": "",
      "statement": "lemma mulX_monomial_one [DecidableEq R] [LawfulBEq R] [Nontrivial R] (n : ℕ) :\n    mulX (monomial n (1 : R)) =\n    monomial (n + 1) 1",
      "sorry": false
@@ -58134,7 +58286,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.X_pow_eq_monomial_one",
      "kind": "lemma",
-     "line": 709,
+     "line": 699,
      "doc": "",
      "statement": "lemma X_pow_eq_monomial_one [DecidableEq R] [LawfulBEq R] [Nontrivial R] (n : ℕ) :\n    (X : CPolynomial.Raw R) ^ n = monomial n 1",
      "sorry": false
@@ -58142,23 +58294,15 @@
     {
      "name": "CompPoly.CPolynomial.Raw.smul_monomial_one_trim",
      "kind": "lemma",
-     "line": 722,
+     "line": 712,
      "doc": "",
      "statement": "lemma smul_monomial_one_trim [DecidableEq R] [LawfulBEq R]\n    [Nontrivial R] (n : ℕ) (r : R) :\n    (smul r (monomial n 1)).trim =\n    monomial n r",
      "sorry": false
     },
     {
-     "name": "CompPoly.CPolynomial.Raw.smul_mulPowX_coeff",
-     "kind": "lemma",
-     "line": 734,
-     "doc": "",
-     "statement": "lemma smul_mulPowX_coeff [LawfulBEq R] (a : R) (q : CPolynomial.Raw R) (i k : ℕ) :\n    ((smul a q).mulPowX i).coeff k = if k < i then 0 else a * q.coeff (k - i)",
-     "sorry": false
-    },
-    {
      "name": "CompPoly.CPolynomial.Raw.mul_coeff_list",
      "kind": "lemma",
-     "line": 739,
+     "line": 724,
      "doc": "",
      "statement": "lemma mul_coeff_list [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (p * q).coeff k = (p.zipIdx.toList.map\n      (fun ⟨a, i⟩ => if k < i then 0 else a * q.coeff (k - i))).sum",
      "sorry": false
@@ -58166,7 +58310,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_coeff_range_size",
      "kind": "lemma",
-     "line": 749,
+     "line": 734,
      "doc": "",
      "statement": "lemma mul_coeff_range_size [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (p * q).coeff k = (Finset.range p.size).sum\n      (fun i => if k < i then 0 else p.coeff i * q.coeff (k - i))",
      "sorry": false
@@ -58174,7 +58318,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_coeff",
      "kind": "lemma",
-     "line": 758,
+     "line": 743,
      "doc": "",
      "statement": "lemma mul_coeff [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (p * q).coeff k = (Finset.range (k + 1)).sum (fun i => p.coeff i * q.coeff (k - i))",
      "sorry": false
@@ -58182,7 +58326,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.MulLowContext.convolution",
      "kind": "def",
-     "line": 765,
+     "line": 750,
      "doc": "Low-product backend using the coefficient convolution formula.",
      "statement": "def convolution [LawfulBEq R] : MulLowContext R",
      "sorry": false
@@ -58190,7 +58334,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.truncate_coeff",
      "kind": "lemma",
-     "line": 783,
+     "line": 768,
      "doc": "",
      "statement": "lemma truncate_coeff (k : Nat) (p : CPolynomial.Raw R) (i : Nat) :\n    (truncate k p).coeff i = if i < k then p.coeff i else 0",
      "sorry": false
@@ -58198,7 +58342,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.MulLowContext.naive",
      "kind": "def",
-     "line": 796,
+     "line": 781,
      "doc": "Low-product backend using ordinary multiplication followed by truncation.",
      "statement": "def naive [LawfulBEq R] : MulLowContext R",
      "sorry": false
@@ -58206,7 +58350,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.reverse_coeff",
      "kind": "lemma",
-     "line": 809,
+     "line": 794,
      "doc": "",
      "statement": "lemma reverse_coeff (n : Nat) (p : CPolynomial.Raw R) (i : Nat) :\n    (reverse n p).coeff i = if i < n then p.coeff (n - 1 - i) else 0",
      "sorry": false
@@ -58214,7 +58358,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mulLow_coeff",
      "kind": "lemma",
-     "line": 824,
+     "line": 809,
      "doc": "",
      "statement": "lemma mulLow_coeff [LawfulBEq R] (M : MulLowContext R) (k : Nat)\n    (p q : CPolynomial.Raw R) (i : Nat) :\n    (M.mulLow k p q).coeff i = if i < k then (p * q).coeff i else 0",
      "sorry": false
@@ -58222,7 +58366,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_assoc_coeff_rhs",
      "kind": "lemma",
-     "line": 833,
+     "line": 818,
      "doc": "",
      "statement": "lemma mul_assoc_coeff_rhs [LawfulBEq R] (p q r : CPolynomial.Raw R) (n : ℕ) :\n    (p * (q * r)).coeff n =\n      (Finset.range (n + 1)).sum (fun i =>\n        (Finset.range (n - i + 1)).sum (fun j =>\n          p.coeff i * q.coeff j * r.coeff (n - i - j)))",
      "sorry": false
@@ -58230,7 +58374,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_mul_coeff",
      "kind": "lemma",
-     "line": 848,
+     "line": 833,
      "doc": "",
      "statement": "lemma mul_mul_coeff [LawfulBEq R] (p q r : CPolynomial.Raw R) (n : ℕ) :\n    ((p * q) * r).coeff n =\n      (Finset.range (n + 1)).sum (fun j =>\n        (Finset.range (j + 1)).sum (fun i =>\n          p.coeff i * q.coeff (j - i) * r.coeff (n - j)))",
      "sorry": false
@@ -58238,7 +58382,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_assoc_coeff",
      "kind": "lemma",
-     "line": 857,
+     "line": 842,
      "doc": "",
      "statement": "lemma mul_assoc_coeff [LawfulBEq R] (p q r : CPolynomial.Raw R) (n : ℕ) :\n    ((p * q) * r).coeff n = (p * (q * r)).coeff n",
      "sorry": false
@@ -58246,7 +58390,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_assoc_equiv",
      "kind": "lemma",
-     "line": 861,
+     "line": 846,
      "doc": "",
      "statement": "lemma mul_assoc_equiv [LawfulBEq R] (p q r : CPolynomial.Raw R) :\n    Trim.equiv ((p * q) * r) (p * (q * r))",
      "sorry": false
@@ -58254,7 +58398,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_zero",
      "kind": "theorem",
-     "line": 872,
+     "line": 857,
      "doc": "",
      "statement": "protected theorem mul_zero [LawfulBEq R] (p : CPolynomial.Raw R) : p * 0 = 0",
      "sorry": false
@@ -58262,7 +58406,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.zero_mul",
      "kind": "theorem",
-     "line": 882,
+     "line": 867,
      "doc": "",
      "statement": "protected theorem zero_mul [LawfulBEq R] (p : CPolynomial.Raw R) : 0 * p = 0",
      "sorry": false
@@ -58270,7 +58414,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_one_trim",
      "kind": "theorem",
-     "line": 892,
+     "line": 877,
      "doc": "",
      "statement": "theorem mul_one_trim [LawfulBEq R] (p : CPolynomial.Raw R) : p * 1 = p.trim",
      "sorry": false
@@ -58278,7 +58422,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.one_mul_trim",
      "kind": "theorem",
-     "line": 905,
+     "line": 890,
      "doc": "",
      "statement": "theorem one_mul_trim [LawfulBEq R] (p : CPolynomial.Raw R) : 1 * p = p.trim",
      "sorry": false
@@ -58286,7 +58430,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_add",
      "kind": "theorem",
-     "line": 920,
+     "line": 905,
      "doc": "",
      "statement": "protected theorem mul_add [LawfulBEq R] (p q r : CPolynomial.Raw R) :\n    p * (q + r) = p * q + p * r",
      "sorry": false
@@ -58294,7 +58438,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.add_mul",
      "kind": "theorem",
-     "line": 966,
+     "line": 951,
      "doc": "",
      "statement": "protected theorem add_mul [LawfulBEq R] (p q r : CPolynomial.Raw R) :\n    (p + q) * r = p * r + q * r",
      "sorry": false
@@ -58302,7 +58446,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_assoc",
      "kind": "theorem",
-     "line": 1016,
+     "line": 1001,
      "doc": "",
      "statement": "protected theorem mul_assoc [LawfulBEq R] (p q r : CPolynomial.Raw R) :\n    p * q * r = p * (q * r)",
      "sorry": false
@@ -58310,7 +58454,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.eval₂Horner_eq_eval₂",
      "kind": "theorem",
-     "line": 1043,
+     "line": 1028,
      "doc": "Horner evaluation agrees with the sum-of-powers evaluation.",
      "statement": "theorem eval₂Horner_eq_eval₂\n    (f : R →+* S) (x : S) (p : CPolynomial.Raw R) :\n    eval₂Horner f x p = eval₂ f x p",
      "sorry": false
@@ -58318,7 +58462,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.eval₂_eq_eval₂Horner",
      "kind": "theorem",
-     "line": 1053,
+     "line": 1038,
      "doc": "Compiled code evaluates by Horner's method; `eval₂` remains the specification.",
      "statement": "theorem eval₂_eq_eval₂Horner : @eval₂ = @eval₂Horner",
      "sorry": false
@@ -58326,7 +58470,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.evalHorner_eq_eval",
      "kind": "theorem",
-     "line": 1059,
+     "line": 1044,
      "doc": "Horner evaluation agrees with the sum-of-powers evaluation.",
      "statement": "theorem evalHorner_eq_eval (x : R) (p : CPolynomial.Raw R) : evalHorner x p = eval x p",
      "sorry": false
@@ -58334,7 +58478,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.eval_eq_evalHorner",
      "kind": "theorem",
-     "line": 1065,
+     "line": 1050,
      "doc": "Compiled code evaluates by Horner's method; `eval` remains the specification.\n`eval` is `@[inline]`, so without this callers would inline its sum-of-powers body.",
      "statement": "theorem eval_eq_evalHorner : @eval = @evalHorner",
      "sorry": false
@@ -58342,7 +58486,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_coeff_comm",
      "kind": "lemma",
-     "line": 1077,
+     "line": 1062,
      "doc": "",
      "statement": "lemma mul_coeff_comm [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (Finset.range (k + 1)).sum (fun i => p.coeff i * q.coeff (k - i)) =\n    (Finset.range (k + 1)).sum (fun i => q.coeff i * p.coeff (k - i))",
      "sorry": false
@@ -58350,7 +58494,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_comm_coeff",
      "kind": "lemma",
-     "line": 1085,
+     "line": 1070,
      "doc": "",
      "statement": "lemma mul_comm_coeff [LawfulBEq R] (p q : CPolynomial.Raw R) (k : ℕ) :\n    (p * q).coeff k = (q * p).coeff k",
      "sorry": false
@@ -58358,7 +58502,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_comm_equiv",
      "kind": "lemma",
-     "line": 1090,
+     "line": 1075,
      "doc": "",
      "statement": "lemma mul_comm_equiv [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    Trim.equiv (p * q) (q * p)",
      "sorry": false
@@ -58366,7 +58510,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_comm",
      "kind": "theorem",
-     "line": 1095,
+     "line": 1080,
      "doc": "",
      "statement": "protected theorem mul_comm [LawfulBEq R] (p q : CPolynomial.Raw R) : p * q = q * p",
      "sorry": false
@@ -58374,7 +58518,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.neg_coeff",
      "kind": "lemma",
-     "line": 1103,
+     "line": 1088,
      "doc": "",
      "statement": "lemma neg_coeff {R : Type*} [NegZeroClass R] (p : CPolynomial.Raw R) (i : ℕ) :\n    p.neg.coeff i = - p.coeff i",
      "sorry": false
@@ -58382,7 +58526,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.neg_trim",
      "kind": "theorem",
-     "line": 1112,
+     "line": 1097,
      "doc": "",
      "statement": "theorem neg_trim [LawfulBEq R] (p : CPolynomial.Raw R) : p.trim = p → (-p).trim = -p",
      "sorry": false
@@ -58390,7 +58534,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.neg_add_cancel",
      "kind": "theorem",
-     "line": 1116,
+     "line": 1101,
      "doc": "",
      "statement": "theorem neg_add_cancel [LawfulBEq R] (p : CPolynomial.Raw R) : -p + p = 0",
      "sorry": false
@@ -58398,7 +58542,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sub_coeff",
      "kind": "lemma",
-     "line": 1122,
+     "line": 1107,
      "doc": "",
      "statement": "lemma sub_coeff [LawfulBEq R] (p q : CPolynomial.Raw R) (i : ℕ) :\n    (p - q).coeff i = p.coeff i - q.coeff i",
      "sorry": false
@@ -58406,7 +58550,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.sub_is_trimmed",
      "kind": "theorem",
-     "line": 1130,
+     "line": 1115,
      "doc": "`Raw.sub` reduces to `p + -q`, whose final `add` step trims, so the result is canonical.",
      "statement": "theorem sub_is_trimmed [LawfulBEq R] (p q : CPolynomial.Raw R) : (p - q).trim = p - q",
      "sorry": false
@@ -58414,7 +58558,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_mul_X_pow",
      "kind": "lemma",
-     "line": 1143,
+     "line": 1128,
      "doc": "",
      "statement": "lemma coeff_mul_X_pow [LawfulBEq R] (p : CPolynomial.Raw R) (n i : ℕ) :\n    (p * X ^ n).coeff i =\n      if n ≤ i ∧ i - n < p.size then p.coeff (i - n) else 0",
      "sorry": false
@@ -58422,7 +58566,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.coeff_C_mul_X_pow",
      "kind": "lemma",
-     "line": 1186,
+     "line": 1171,
      "doc": "",
      "statement": "lemma coeff_C_mul_X_pow [LawfulBEq R] (scale : R) (p : CPolynomial.Raw R) (n i : ℕ) :\n    (C scale * (p * X ^ n)).coeff i =\n      if n ≤ i ∧ i - n < p.size then scale * p.coeff (i - n) else 0",
      "sorry": false
@@ -58430,7 +58574,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.subScaledShift_eq_sub_C_mul_X_pow",
      "kind": "lemma",
-     "line": 1197,
+     "line": 1182,
      "doc": "",
      "statement": "lemma subScaledShift_eq_sub_C_mul_X_pow [LawfulBEq R]\n    (p q : CPolynomial.Raw R) (scale : R) (shift : ℕ)\n    (hsize : shift + q.size ≤ p.size) :\n    subScaledShift p q scale shift = (p - C scale * (q * X ^ shift)).trim",
      "sorry": false
@@ -58438,7 +58582,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonicRemainderOnly_go_eq_divModByMonicAux_go_snd",
      "kind": "lemma",
-     "line": 1214,
+     "line": 1199,
      "doc": "",
      "statement": "lemma modByMonicRemainderOnly_go_eq_divModByMonicAux_go_snd [LawfulBEq R] :\n    ∀ (n : ℕ) (p q : CPolynomial.Raw R),\n      modByMonicRemainderOnly.go n p q = (divModByMonicAux.go n p q).2",
      "sorry": false
@@ -58446,7 +58590,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonicRemainderOnly_eq_modByMonic",
      "kind": "theorem",
-     "line": 1233,
+     "line": 1218,
      "doc": "The remainder-only raw monic remainder agrees with the canonical raw monic remainder.",
      "statement": "theorem modByMonicRemainderOnly_eq_modByMonic [LawfulBEq R]\n    (p q : CPolynomial.Raw R) :\n    modByMonicRemainderOnly p q = modByMonic p q",
      "sorry": false
@@ -58454,7 +58598,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.divModByMonicAux_go_fst_canonical",
      "kind": "lemma",
-     "line": 1245,
+     "line": 1230,
      "doc": "The quotient produced by the monic long-division recursion is canonical regardless of input:\neach non-base step accumulates via `Raw.add` (which trims), and the base case returns `0`.",
      "statement": "lemma divModByMonicAux_go_fst_canonical [LawfulBEq R] :\n    ∀ (n : ℕ) (p q : CPolynomial.Raw R),\n      (divModByMonicAux.go n p q).1.trim = (divModByMonicAux.go n p q).1",
      "sorry": false
@@ -58462,7 +58606,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.divModByMonicAux_go_snd_canonical",
      "kind": "lemma",
-     "line": 1264,
+     "line": 1249,
      "doc": "The remainder produced by the monic long-division recursion is canonical when the input is.\nEach recursive step feeds the next call a trimmed `(p - q').trim`, and the base case returns the\ninput unchanged.",
      "statement": "lemma divModByMonicAux_go_snd_canonical [LawfulBEq R] :\n    ∀ (n : ℕ) (p q : CPolynomial.Raw R), p.trim = p →\n      (divModByMonicAux.go n p q).2.trim = (divModByMonicAux.go n p q).2",
      "sorry": false
@@ -58470,7 +58614,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.divByMonic_canonical",
      "kind": "theorem",
-     "line": 1281,
+     "line": 1266,
      "doc": "`Raw.divByMonic` returns a canonical polynomial regardless of whether `p` is canonical.",
      "statement": "theorem divByMonic_canonical [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    (divByMonic p q).trim = divByMonic p q",
      "sorry": false
@@ -58478,7 +58622,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonic_canonical",
      "kind": "theorem",
-     "line": 1286,
+     "line": 1271,
      "doc": "`Raw.modByMonic` returns a canonical polynomial when `p` is canonical.",
      "statement": "theorem modByMonic_canonical [LawfulBEq R] {p : CPolynomial.Raw R} (hp : p.trim = p)\n    (q : CPolynomial.Raw R) : (modByMonic p q).trim = modByMonic p q",
      "sorry": false
@@ -58486,7 +58630,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.subScaledShift_is_trimmed",
      "kind": "theorem",
-     "line": 1296,
+     "line": 1281,
      "doc": "`subScaledShift` ends with `.trim`, so its result is canonical.",
      "statement": "theorem subScaledShift_is_trimmed [LawfulBEq R]\n    (p q : CPolynomial.Raw R) (scale : R) (shift : ℕ) :\n    (subScaledShift p q scale shift).trim = subScaledShift p q scale shift",
      "sorry": false
@@ -58494,7 +58638,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonicRemainderOnly_go_canonical",
      "kind": "lemma",
-     "line": 1303,
+     "line": 1288,
      "doc": "The remainder-only long-division recursion preserves canonicality of `p`.",
      "statement": "lemma modByMonicRemainderOnly_go_canonical [LawfulBEq R] :\n    ∀ (n : ℕ) (p q : CPolynomial.Raw R), p.trim = p →\n      (modByMonicRemainderOnly.go n p q).trim = modByMonicRemainderOnly.go n p q",
      "sorry": false
@@ -58502,7 +58646,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonicRemainderOnly_canonical",
      "kind": "theorem",
-     "line": 1320,
+     "line": 1305,
      "doc": "`Raw.modByMonicRemainderOnly` returns a canonical polynomial when `p` is canonical.",
      "statement": "theorem modByMonicRemainderOnly_canonical [LawfulBEq R]\n    {p : CPolynomial.Raw R} (hp : p.trim = p) (q : CPolynomial.Raw R) :\n    (modByMonicRemainderOnly p q).trim = modByMonicRemainderOnly p q",
      "sorry": false
@@ -58510,7 +58654,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.modByMonicByReversal_canonical",
      "kind": "theorem",
-     "line": 1328,
+     "line": 1313,
      "doc": "`Raw.modByMonicByReversal` returns a canonical polynomial when `p` is canonical.\nEither branch ends in a result whose trim is itself: the reversal branch ends with `Raw.sub`\n(which trims), and the fallback uses `modByMonicRemainderOnly`.",
      "statement": "theorem modByMonicByReversal_canonical [LawfulBEq R]\n    (M : MulLowContext R) {p : CPolynomial.Raw R} (hp : p.trim = p) (q : CPolynomial.Raw R) :\n    (modByMonicByReversal M p q).trim = modByMonicByReversal M p q",
      "sorry": false
@@ -58518,7 +58662,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.div_canonical",
      "kind": "theorem",
-     "line": 1338,
+     "line": 1323,
      "doc": "`Raw.div` returns a canonical polynomial (no condition on inputs).",
      "statement": "theorem div_canonical [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    (div p q).trim = div p q",
      "sorry": false
@@ -58526,7 +58670,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mod_canonical",
      "kind": "theorem",
-     "line": 1344,
+     "line": 1329,
      "doc": "`Raw.mod` returns a canonical polynomial (no condition on inputs).\nThe intermediate `C (q.leadingCoeff)⁻¹ • p` is `C _ * p` via `Mul.toSMul`, which trims.",
      "statement": "theorem mod_canonical [LawfulBEq R] (p q : CPolynomial.Raw R) :\n    (mod p q).trim = mod p q",
      "sorry": false
@@ -58534,7 +58678,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.pow_is_trimmed",
      "kind": "lemma",
-     "line": 1371,
+     "line": 1356,
      "doc": "`pow` preserves trimming (Raw-level version).",
      "statement": "lemma pow_is_trimmed (p : CPolynomial.Raw R) (n : ℕ) :\n    (p ^ n).trim = p ^ n",
      "sorry": false
@@ -58542,7 +58686,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.pow_add",
      "kind": "theorem",
-     "line": 1378,
+     "line": 1363,
      "doc": "Additive law for exponentiation: $ p ^ {a + b} = p ^ a \\cdot p ^ b $.",
      "statement": "theorem pow_add (p : CPolynomial.Raw R) (a b : ℕ) :\n    p ^ (a + b) = p ^ a * p ^ b",
      "sorry": false
@@ -58550,7 +58694,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.mul_trim_eq_mul",
      "kind": "lemma",
-     "line": 1394,
+     "line": 1379,
      "doc": "Multiplication depends only on the coefficient sequences of its inputs,\nso trimming either side preserves the product.",
      "statement": "lemma mul_trim_eq_mul (a b : CPolynomial.Raw R) : a.trim * b.trim = a * b",
      "sorry": false
@@ -58558,7 +58702,7 @@
     {
      "name": "CompPoly.CPolynomial.Raw.powBySq_eq_pow",
      "kind": "theorem",
-     "line": 1410,
+     "line": 1395,
      "doc": "`powBySq` agrees with `pow` (repeated squaring = repeated multiplication).\n\n`powBySq` accumulates intermediate squarings with the untrimmed `mulRaw` and trims\nonce at the end, so the proof bridges through `mul_trim_eq_mul` to relate each\n`mulRaw` step back to the spec `pow`.",
      "statement": "theorem powBySq_eq_pow (p : CPolynomial.Raw R) : ∀ n : ℕ, powBySq p n = p ^ n",
      "sorry": false
@@ -58571,60 +58715,28 @@
    "copyright": "ArkLib Contributors",
    "authors": "Alexander Hicks",
    "title": "Sizes of raw polynomial operations",
-   "doc": "These bounds concern stored coefficient arrays, including trailing zero coefficients.\nRaw multiplication retains the padding of its shifted rows even when the right input is empty.\nThe scalar, shift and product facts were ported from ArkLib's raw-size adapter under Apache 2.0;\nits original copyright attribution is retained.",
+   "doc": "These bounds concern stored coefficient arrays, including trailing zero coefficients.\nRaw multiplication retains the padding of its shifted rows even when the right input is empty.\n`CompPoly.Univariate.Raw.Ops` states the size equations of `smul`, `mulPowX`, `addRaw` and\n`mulRaw`, next to the operations. This module imports it publicly. The product bound\n`size_mulRaw_le` was ported from ArkLib's raw-size adapter under Apache 2.0. The file header keeps\nits original copyright attribution.",
    "items": [
     {
      "name": "CompPoly.CPolynomial.Raw.size_C",
      "kind": "theorem",
-     "line": 26,
+     "line": 28,
      "doc": "A raw constant stores one coefficient, including when that coefficient is zero.",
      "statement": "theorem size_C {R : Type*} (x : R) : (C x).size = 1",
      "sorry": false
     },
     {
-     "name": "CompPoly.CPolynomial.Raw.size_smul",
-     "kind": "theorem",
-     "line": 31,
-     "doc": "Scalar multiplication preserves the stored coefficient count.",
-     "statement": "theorem size_smul {R : Type*} [Mul R] (x : R) (p : Raw R) :\n    (smul x p).size = p.size",
-     "sorry": false
-    },
-    {
-     "name": "CompPoly.CPolynomial.Raw.size_mulPowX",
-     "kind": "theorem",
-     "line": 37,
-     "doc": "Multiplication by `X^i` retains all of the prepended zero coefficients.",
-     "statement": "theorem size_mulPowX {R : Type*} [Zero R] (i : Nat) (p : Raw R) :\n    (mulPowX i p).size = i + p.size",
-     "sorry": false
-    },
-    {
-     "name": "CompPoly.CPolynomial.Raw.size_addRaw",
-     "kind": "theorem",
-     "line": 43,
-     "doc": "Padded raw addition stores the larger input size.",
-     "statement": "theorem size_addRaw {Q : Type*} [Zero Q] [Add Q] {p q : Raw Q} :\n    (addRaw p q).size = max p.size q.size",
-     "sorry": false
-    },
-    {
      "name": "CompPoly.CPolynomial.Raw.add_size",
      "kind": "alias",
-     "line": 50,
+     "line": 33,
      "doc": "Compatibility name for the public theorem previously provided by `Raw.Proofs`.",
      "statement": "alias add_size",
      "sorry": false
     },
     {
-     "name": "CompPoly.CPolynomial.Raw.size_mulRaw",
-     "kind": "theorem",
-     "line": 53,
-     "doc": "Raw multiplication retains every shifted row, including padding from an empty right array.",
-     "statement": "theorem size_mulRaw {R : Type*} [Semiring R] (p q : Raw R) :\n    (mulRaw p q).size = if p.size = 0 then 0 else q.size + p.size - 1",
-     "sorry": false
-    },
-    {
      "name": "CompPoly.CPolynomial.Raw.size_mulRaw_le",
      "kind": "theorem",
-     "line": 74,
+     "line": 36,
      "doc": "The raw product's stored size is at most the sum of the input sizes minus one.",
      "statement": "theorem size_mulRaw_le {R : Type*} [Semiring R] (p q : Raw R) :\n    (mulRaw p q).size ≤ p.size + q.size - 1",
      "sorry": false
@@ -62756,14 +62868,14 @@
    "module": "CompPoly.Univariate.ToPoly.Degree",
    "file": "CompPoly/Univariate/ToPoly/Degree.lean",
    "copyright": "CompPoly",
-   "authors": "Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Julian Sutherland",
-   "title": "`toPoly` Degree Lemmas",
-   "doc": "Degree lemmas for the computable-univariate to `Polynomial` conversion.",
+   "authors": "Quang Dao, Gregor Mitscha-Baude, Derek Sorensen, Julian Sutherland, Alexander Hicks",
+   "title": "Degrees and degree bounds under `toPoly`",
+   "doc": "Degree lemmas for the computable-univariate to `Polynomial` conversion.\n\n`degreeLTEquiv` identifies computable polynomials of degree below `n` with their coefficient\nfunctions `Fin n → R` by a linear equivalence.\n\nThe quantifier lemmas transport statements over `↥(degreeLT n)` to Mathlib polynomials.\n\n* `exists_degreeLT_toPoly_iff` transports an existential quantifier with a degree bound.\n* `forall_degreeLT_toPoly_iff` transports a universal quantifier with a degree bound.\n* `forall₂_degreeLT_toPoly_iff` transports two universal quantifiers with separate bounds.\n* `exists_degreeLT_toPoly_iff_of_degree_lt` drops the explicit bound when the predicate implies it.",
    "items": [
     {
      "name": "CompPoly.CPolynomial.toPoly_smul",
      "kind": "lemma",
-     "line": 34,
+     "line": 44,
      "doc": "",
      "statement": "lemma toPoly_smul (r : R) (p : CPolynomial R) :\n    (r • p).toPoly = r • p.toPoly",
      "sorry": false
@@ -62771,7 +62883,7 @@
     {
      "name": "CompPoly.CPolynomial.toPolyLinearEquiv",
      "kind": "def",
-     "line": 39,
+     "line": 49,
      "doc": "",
      "statement": "noncomputable def toPolyLinearEquiv : CPolynomial R ≃ₗ[R] R[X]",
      "sorry": false
@@ -62779,7 +62891,7 @@
     {
      "name": "CompPoly.CPolynomial.toPolyLinearEquiv_apply",
      "kind": "theorem",
-     "line": 49,
+     "line": 59,
      "doc": "The forward map of `toPolyLinearEquiv` is `toPoly`.",
      "statement": "theorem toPolyLinearEquiv_apply (p : CPolynomial R) : toPolyLinearEquiv p = p.toPoly",
      "sorry": false
@@ -62787,7 +62899,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_le_iff_coeff_zero",
      "kind": "theorem",
-     "line": 52,
+     "line": 62,
      "doc": "",
      "statement": "theorem degree_le_iff_coeff_zero (p : CPolynomial R) (n : WithBot ℕ) :\n    p.degree ≤ n ↔ ∀ k : ℕ, n < k → p.coeff k = 0",
      "sorry": false
@@ -62795,7 +62907,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_lt_iff_coeff_zero",
      "kind": "theorem",
-     "line": 57,
+     "line": 67,
      "doc": "",
      "statement": "theorem degree_lt_iff_coeff_zero (p : CPolynomial R) (n : ℕ) :\n    p.degree < n ↔ ∀ k : ℕ, n ≤ k → p.coeff k = 0",
      "sorry": false
@@ -62803,7 +62915,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLE_mono",
      "kind": "theorem",
-     "line": 63,
+     "line": 73,
      "doc": "",
      "statement": "theorem degreeLE_mono (m n : WithBot ℕ) (h_lessThan : m ≤ n) :\n    degreeLE (R := R) m ≤ degreeLE (R := R) n",
      "sorry": false
@@ -62811,7 +62923,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLT_mono",
      "kind": "theorem",
-     "line": 68,
+     "line": 78,
      "doc": "",
      "statement": "theorem degreeLT_mono {m n : ℕ} (h : m ≤ n) :\n    degreeLT (R := R) m ≤ degreeLT (R := R) n",
      "sorry": false
@@ -62819,7 +62931,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLT_succ_eq_degreeLE",
      "kind": "theorem",
-     "line": 73,
+     "line": 83,
      "doc": "",
      "statement": "theorem degreeLT_succ_eq_degreeLE {n : ℕ} :\n    degreeLT (R := R) (n + 1) = degreeLE (R := R) ↑n",
      "sorry": false
@@ -62827,7 +62939,7 @@
     {
      "name": "CompPoly.CPolynomial.monomial_mem_degreeLT",
      "kind": "lemma",
-     "line": 86,
+     "line": 96,
      "doc": "",
      "statement": "lemma monomial_mem_degreeLT [DecidableEq R] {n : ℕ} (i : Fin n) (c : R) :\n    monomial (R := R) (i : ℕ) c ∈ degreeLT (R := R) n",
      "sorry": false
@@ -62835,7 +62947,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv_invFun_mem",
      "kind": "lemma",
-     "line": 93,
+     "line": 103,
      "doc": "",
      "statement": "lemma degreeLTEquiv_invFun_mem [DecidableEq R] (n : ℕ) (f : Fin n → R) :\n    Finset.univ.sum (fun i : Fin n => monomial (R := R) (i : ℕ) (f i)) ∈ degreeLT (R := R) n",
      "sorry": false
@@ -62843,7 +62955,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv_left_inv",
      "kind": "lemma",
-     "line": 101,
+     "line": 111,
      "doc": "",
      "statement": "lemma degreeLTEquiv_left_inv [DecidableEq R] (n : ℕ)\n    (p : ↥(degreeLT (R := R) n)) :\n    (⟨\n      Finset.univ.sum (fun i : Fin n => monomial (R := R) (↑i) (coeff p.1 i)),\n      degreeLTEquiv_invFun_mem (R := R) n (fun i => coeff p.1 i)\n    ⟩ : ↥(degreeLT (R := R) n)) = p",
      "sorry": false
@@ -62851,7 +62963,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv_right_inv",
      "kind": "lemma",
-     "line": 122,
+     "line": 132,
      "doc": "",
      "statement": "lemma degreeLTEquiv_right_inv [DecidableEq R] (n : ℕ)\n    (f : Fin n → R) :\n    (fun i : Fin n => coeff\n      (Finset.univ.sum (fun j : Fin n => monomial (R := R) (↑j) (f j))) i) = f",
      "sorry": false
@@ -62859,7 +62971,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv",
      "kind": "def",
-     "line": 135,
+     "line": 145,
      "doc": "",
      "statement": "def degreeLTEquiv [DecidableEq R] (n : ℕ) :\n    ↥(degreeLT (R := R) n) ≃ₗ[R] (Fin n → R)",
      "sorry": false
@@ -62867,7 +62979,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTLinearEquiv",
      "kind": "abbrev",
-     "line": 155,
+     "line": 165,
      "doc": "",
      "statement": "abbrev degreeLTLinearEquiv [DecidableEq R] (n : ℕ) :\n    ↥(degreeLT (R := R) n) ≃ₗ[R] (Fin n → R)",
      "sorry": false
@@ -62875,7 +62987,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv_toPoly",
      "kind": "theorem",
-     "line": 159,
+     "line": 169,
      "doc": "",
      "statement": "theorem degreeLTEquiv_toPoly [DecidableEq R] {n : ℕ} {p : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) (i : Fin n) :\n      degreeLTEquiv (R := R) n ⟨p, hp⟩ i =\n          Polynomial.degreeLTEquiv R n ⟨p.toPoly, degreeLT_toPoly.mp hp⟩ i",
      "sorry": false
@@ -62883,7 +62995,7 @@
     {
      "name": "CompPoly.CPolynomial.degreeLTEquiv_eq_zero_iff_eq_zero",
      "kind": "theorem",
-     "line": 165,
+     "line": 175,
      "doc": "",
      "statement": "theorem degreeLTEquiv_eq_zero_iff_eq_zero [DecidableEq R] {n : ℕ} {p : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) :\n    degreeLTEquiv (R := R) n ⟨p, hp⟩ = 0 ↔ p = 0",
      "sorry": false
@@ -62891,27 +63003,63 @@
     {
      "name": "CompPoly.CPolynomial.eval_eq_sum_degreeLTEquiv",
      "kind": "theorem",
-     "line": 180,
+     "line": 190,
      "doc": "",
      "statement": "theorem eval_eq_sum_degreeLTEquiv [DecidableEq R] {n : ℕ} {p : CPolynomial R}\n    (hp : p ∈ degreeLT (R := R) n) (x : R) :\n    eval x p =\n      Finset.univ.sum (fun i : Fin n => degreeLTEquiv (R := R) n ⟨p, hp⟩ i * x ^ (i : ℕ))",
      "sorry": false
     },
     {
+     "line": 201,
+     "note": "### Quantifiers over bounded-degree polynomials\n\n`toPoly` maps `degreeLT n` onto the Mathlib polynomials of degree below `n`. The lemmas in this\nsection use this fact to restate a quantifier over `↥(degreeLT n)` as a quantifier over Mathlib\npolynomials. They serve only in proofs, because `toPoly` is noncomputable. A typical use decides\nan executable predicate `P` by a search over the enumeration `instFintypeDegreeLT`. Suppose that\n`P p` holds exactly when `Q p.toPoly` holds. The lemmas then relate the search to the corresponding\nquantifier over Mathlib polynomials of degree below `n`."
+    },
+    {
+     "name": "CompPoly.CPolynomial.exists_degreeLT_toPoly_iff",
+     "kind": "theorem",
+     "line": 212,
+     "doc": "Some polynomial of degree below `n` satisfies `Q` after `toPoly` exactly when some Mathlib\npolynomial of degree below `n` satisfies `Q`.",
+     "statement": "theorem exists_degreeLT_toPoly_iff (n : ℕ) (Q : R[X] → Prop) :\n    (∃ p : ↥(degreeLT (R := R) n), Q p.val.toPoly) ↔ ∃ p : R[X], p.degree < n ∧ Q p",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.forall_degreeLT_toPoly_iff",
+     "kind": "theorem",
+     "line": 224,
+     "doc": "Every polynomial of degree below `n` satisfies `Q` after `toPoly` exactly when every Mathlib\npolynomial of degree below `n` satisfies `Q`.",
+     "statement": "theorem forall_degreeLT_toPoly_iff (n : ℕ) (Q : R[X] → Prop) :\n    (∀ p : ↥(degreeLT (R := R) n), Q p.val.toPoly) ↔ ∀ p : R[X], p.degree < n → Q p",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.forall₂_degreeLT_toPoly_iff",
+     "kind": "theorem",
+     "line": 230,
+     "doc": "Transport two universal quantifiers through `toPoly`. The first polynomial has degree below\n`m`, and the second has degree below `n`.",
+     "statement": "theorem forall₂_degreeLT_toPoly_iff (m n : ℕ) (Q : R[X] → R[X] → Prop) :\n    (∀ f : ↥(degreeLT (R := R) m), ∀ g : ↥(degreeLT (R := R) n),\n      Q f.val.toPoly g.val.toPoly) ↔\n      ∀ f g : R[X], f.degree < m → g.degree < n → Q f g",
+     "sorry": false
+    },
+    {
+     "name": "CompPoly.CPolynomial.exists_degreeLT_toPoly_iff_of_degree_lt",
+     "kind": "theorem",
+     "line": 241,
+     "doc": "Suppose that every Mathlib polynomial that satisfies `Q` has degree below `n`. Then some\npolynomial of degree below `n` satisfies `Q` after `toPoly` exactly when some Mathlib polynomial\nsatisfies `Q`.",
+     "statement": "theorem exists_degreeLT_toPoly_iff_of_degree_lt (n : ℕ) (Q : R[X] → Prop)\n    (hQ : ∀ p, Q p → p.degree < n) :\n    (∃ p : ↥(degreeLT (R := R) n), Q p.val.toPoly) ↔ ∃ p : R[X], Q p",
+     "sorry": false
+    },
+    {
      "name": "CompPoly.CPolynomial.degree_toPoly_ofFinCoeff_lt",
      "kind": "theorem",
-     "line": 198,
+     "line": 254,
      "doc": "The polynomial built from `N` coefficients has `toPoly` of degree below `N`.",
      "statement": "theorem degree_toPoly_ofFinCoeff_lt (N : ℕ) (c : ℕ → R) :\n    (ofFinCoeff N c).toPoly.degree < (N : WithBot ℕ)",
      "sorry": false
     },
     {
-     "line": 207,
+     "line": 263,
      "note": "### Degree arithmetic\n\n`CPolynomial` versions of Mathlib's degree, `natDegree` and `leadingCoeff` lemmas, each\ntransferred through the `toPoly` coercion. The `@[simp]` attributes follow Mathlib's."
     },
     {
      "name": "CompPoly.CPolynomial.degree_C_le",
      "kind": "theorem",
-     "line": 216,
+     "line": 272,
      "doc": "",
      "statement": "theorem degree_C_le (r : R) : (C r).degree ≤ 0",
      "sorry": false
@@ -62919,7 +63067,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_C",
      "kind": "theorem",
-     "line": 219,
+     "line": 275,
      "doc": "",
      "statement": "theorem degree_C {r : R} (hr : r ≠ 0) : (C r).degree = 0",
      "sorry": false
@@ -62927,7 +63075,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_C",
      "kind": "theorem",
-     "line": 223,
+     "line": 279,
      "doc": "",
      "statement": "theorem leadingCoeff_C (r : R) : (C r).leadingCoeff = r",
      "sorry": false
@@ -62935,7 +63083,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_X",
      "kind": "theorem",
-     "line": 227,
+     "line": 283,
      "doc": "",
      "statement": "theorem degree_X [Nontrivial R] : (X : CPolynomial R).degree = 1",
      "sorry": false
@@ -62943,7 +63091,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_X",
      "kind": "theorem",
-     "line": 231,
+     "line": 287,
      "doc": "",
      "statement": "theorem natDegree_X [Nontrivial R] : (X : CPolynomial R).natDegree = 1",
      "sorry": false
@@ -62951,7 +63099,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_X",
      "kind": "theorem",
-     "line": 235,
+     "line": 291,
      "doc": "",
      "statement": "theorem leadingCoeff_X [Nontrivial R] : (X : CPolynomial R).leadingCoeff = 1",
      "sorry": false
@@ -62959,7 +63107,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_one",
      "kind": "theorem",
-     "line": 239,
+     "line": 295,
      "doc": "",
      "statement": "theorem degree_one [Nontrivial R] : (1 : CPolynomial R).degree = 0",
      "sorry": false
@@ -62967,7 +63115,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_one",
      "kind": "theorem",
-     "line": 243,
+     "line": 299,
      "doc": "",
      "statement": "theorem natDegree_one [Nontrivial R] : (1 : CPolynomial R).natDegree = 0",
      "sorry": false
@@ -62975,7 +63123,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_one",
      "kind": "theorem",
-     "line": 247,
+     "line": 303,
      "doc": "",
      "statement": "theorem leadingCoeff_one [Nontrivial R] : (1 : CPolynomial R).leadingCoeff = 1",
      "sorry": false
@@ -62983,7 +63131,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_add_le",
      "kind": "theorem",
-     "line": 250,
+     "line": 306,
      "doc": "",
      "statement": "theorem degree_add_le (p q : CPolynomial R) : (p + q).degree ≤ max p.degree q.degree",
      "sorry": false
@@ -62991,7 +63139,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_add_eq_left_of_degree_lt",
      "kind": "theorem",
-     "line": 253,
+     "line": 309,
      "doc": "",
      "statement": "theorem degree_add_eq_left_of_degree_lt {p q : CPolynomial R} (h : q.degree < p.degree) :\n    (p + q).degree = p.degree",
      "sorry": false
@@ -62999,7 +63147,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_add_eq_right_of_degree_lt",
      "kind": "theorem",
-     "line": 258,
+     "line": 314,
      "doc": "",
      "statement": "theorem degree_add_eq_right_of_degree_lt {p q : CPolynomial R} (h : p.degree < q.degree) :\n    (p + q).degree = q.degree",
      "sorry": false
@@ -63007,7 +63155,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_mul_le",
      "kind": "theorem",
-     "line": 263,
+     "line": 319,
      "doc": "",
      "statement": "theorem degree_mul_le (p q : CPolynomial R) : (p * q).degree ≤ p.degree + q.degree",
      "sorry": false
@@ -63015,7 +63163,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_mul_le",
      "kind": "theorem",
-     "line": 266,
+     "line": 322,
      "doc": "",
      "statement": "theorem natDegree_mul_le (p q : CPolynomial R) :\n    (p * q).natDegree ≤ p.natDegree + q.natDegree",
      "sorry": false
@@ -63023,7 +63171,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_pow_le",
      "kind": "theorem",
-     "line": 270,
+     "line": 326,
      "doc": "",
      "statement": "theorem degree_pow_le [Nontrivial R] (p : CPolynomial R) (n : ℕ) :\n    (p ^ n).degree ≤ n • p.degree",
      "sorry": false
@@ -63031,7 +63179,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_pow_le",
      "kind": "theorem",
-     "line": 274,
+     "line": 330,
      "doc": "",
      "statement": "theorem natDegree_pow_le [Nontrivial R] (p : CPolynomial R) (n : ℕ) :\n    (p ^ n).natDegree ≤ n * p.natDegree",
      "sorry": false
@@ -63039,7 +63187,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_pow_le_of_le",
      "kind": "theorem",
-     "line": 278,
+     "line": 334,
      "doc": "",
      "statement": "theorem natDegree_pow_le_of_le [Nontrivial R] {p : CPolynomial R} {m : ℕ} (n : ℕ)\n    (h : p.natDegree ≤ m) : (p ^ n).natDegree ≤ n * m",
      "sorry": false
@@ -63047,7 +63195,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_neg",
      "kind": "theorem",
-     "line": 289,
+     "line": 345,
      "doc": "",
      "statement": "theorem degree_neg (p : CPolynomial S) : (-p).degree = p.degree",
      "sorry": false
@@ -63055,7 +63203,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_neg",
      "kind": "theorem",
-     "line": 293,
+     "line": 349,
      "doc": "",
      "statement": "theorem natDegree_neg (p : CPolynomial S) : (-p).natDegree = p.natDegree",
      "sorry": false
@@ -63063,7 +63211,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_neg",
      "kind": "theorem",
-     "line": 297,
+     "line": 353,
      "doc": "",
      "statement": "theorem leadingCoeff_neg (p : CPolynomial S) : (-p).leadingCoeff = -p.leadingCoeff",
      "sorry": false
@@ -63071,7 +63219,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_sub_le",
      "kind": "theorem",
-     "line": 300,
+     "line": 356,
      "doc": "",
      "statement": "theorem degree_sub_le (p q : CPolynomial S) : (p - q).degree ≤ max p.degree q.degree",
      "sorry": false
@@ -63079,7 +63227,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_sub_le",
      "kind": "theorem",
-     "line": 303,
+     "line": 359,
      "doc": "",
      "statement": "theorem natDegree_sub_le (p q : CPolynomial S) :\n    (p - q).natDegree ≤ max p.natDegree q.natDegree",
      "sorry": false
@@ -63087,7 +63235,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_X_sub_C",
      "kind": "theorem",
-     "line": 308,
+     "line": 364,
      "doc": "",
      "statement": "theorem degree_X_sub_C [Nontrivial S] (a : S) : (X - C a).degree = 1",
      "sorry": false
@@ -63095,7 +63243,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_X_sub_C",
      "kind": "theorem",
-     "line": 312,
+     "line": 368,
      "doc": "",
      "statement": "theorem natDegree_X_sub_C [Nontrivial S] (a : S) : (X - C a).natDegree = 1",
      "sorry": false
@@ -63103,7 +63251,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_mul",
      "kind": "theorem",
-     "line": 322,
+     "line": 378,
      "doc": "",
      "statement": "theorem degree_mul (p q : CPolynomial R) : (p * q).degree = p.degree + q.degree",
      "sorry": false
@@ -63111,7 +63259,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_mul",
      "kind": "theorem",
-     "line": 325,
+     "line": 381,
      "doc": "",
      "statement": "theorem natDegree_mul {p q : CPolynomial R} (hp : p ≠ 0) (hq : q ≠ 0) :\n    (p * q).natDegree = p.natDegree + q.natDegree",
      "sorry": false
@@ -63119,7 +63267,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_mul",
      "kind": "theorem",
-     "line": 331,
+     "line": 387,
      "doc": "",
      "statement": "theorem leadingCoeff_mul (p q : CPolynomial R) :\n    (p * q).leadingCoeff = p.leadingCoeff * q.leadingCoeff",
      "sorry": false
@@ -63127,7 +63275,7 @@
     {
      "name": "CompPoly.CPolynomial.degree_pow",
      "kind": "theorem",
-     "line": 336,
+     "line": 392,
      "doc": "",
      "statement": "theorem degree_pow [Nontrivial R] (p : CPolynomial R) (n : ℕ) :\n    (p ^ n).degree = n • p.degree",
      "sorry": false
@@ -63135,7 +63283,7 @@
     {
      "name": "CompPoly.CPolynomial.natDegree_pow",
      "kind": "theorem",
-     "line": 341,
+     "line": 397,
      "doc": "",
      "statement": "theorem natDegree_pow [Nontrivial R] (p : CPolynomial R) (n : ℕ) :\n    (p ^ n).natDegree = n * p.natDegree",
      "sorry": false
@@ -63143,7 +63291,7 @@
     {
      "name": "CompPoly.CPolynomial.leadingCoeff_pow",
      "kind": "theorem",
-     "line": 346,
+     "line": 402,
      "doc": "",
      "statement": "theorem leadingCoeff_pow [Nontrivial R] (p : CPolynomial R) (n : ℕ) :\n    (p ^ n).leadingCoeff = p.leadingCoeff ^ n",
      "sorry": false

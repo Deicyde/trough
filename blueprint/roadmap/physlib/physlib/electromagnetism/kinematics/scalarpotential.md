@@ -8,7 +8,7 @@ proof: formalized
 
 # The Scalar Potential (Kinematics/ScalarPotential)
 
-The module `Physlib.Electromagnetism.Kinematics.ScalarPotential`, [Physlib/Electromagnetism/Kinematics/ScalarPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean): 12 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.ScalarPotential`, [Physlib/Electromagnetism/Kinematics/ScalarPotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean): 12 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Electromagnetism.Kinematics.ScalarPotential`, [Physlib/Elect
 
 ## A. Definition of the Scalar Potential
 
-**`Electromagnetism.ElectromagneticPotential.scalarPotential`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L64).
+**`Electromagnetism.ElectromagneticPotential.scalarPotential`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L64).
 
 > The scalar potential from the electromagnetic potential.
 
@@ -43,21 +43,21 @@ noncomputable def scalarPotential {d} (c : SpeedOfLight := 1) (A : Electromagnet
 
 ## B. Relation to constructors
 
-**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_scalarPotential`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L75).
+**`Electromagnetism.ElectromagneticPotential.ofScalarPotential_scalarPotential`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L75).
 
 ```lean
 lemma ofScalarPotential_scalarPotential {d} (c : SpeedOfLight)
     (φ : Time → Space d → ℝ) : (ofScalarPotential c φ).scalarPotential c = φ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticScalarPotential_scalarPotential`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L82).
+**`Electromagnetism.ElectromagneticPotential.ofStaticScalarPotential_scalarPotential`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L82).
 
 ```lean
 lemma ofStaticScalarPotential_scalarPotential {d} (c : SpeedOfLight)
     (φ : Space d → ℝ) : (ofStaticScalarPotential c φ).scalarPotential c = fun _ => φ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofVectorPotential_scalarPotential`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L87).
+**`Electromagnetism.ElectromagneticPotential.ofVectorPotential_scalarPotential`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L87).
 
 ```lean
 lemma ofVectorPotential_scalarPotential {d} (c : SpeedOfLight)
@@ -65,7 +65,7 @@ lemma ofVectorPotential_scalarPotential {d} (c : SpeedOfLight)
     (ofVectorPotential c A).scalarPotential = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticVectorPotential_scalarPotential`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L94).
+**`Electromagnetism.ElectromagneticPotential.ofStaticVectorPotential_scalarPotential`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L94).
 
 ```lean
 lemma ofStaticVectorPotential_scalarPotential {d} (c : SpeedOfLight)
@@ -73,7 +73,7 @@ lemma ofStaticVectorPotential_scalarPotential {d} (c : SpeedOfLight)
     (ofStaticVectorPotential c A).scalarPotential = 0
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofPotentials_scalarPotential`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L100).
+**`Electromagnetism.ElectromagneticPotential.ofPotentials_scalarPotential`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L100).
 
 ```lean
 lemma ofPotentials_scalarPotential {d} (c : SpeedOfLight) (φ : Time → Space d → ℝ)
@@ -81,7 +81,7 @@ lemma ofPotentials_scalarPotential {d} (c : SpeedOfLight) (φ : Time → Space d
     (ofPotentials c φ A).scalarPotential c = φ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials_scalarPotential`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L108).
+**`Electromagnetism.ElectromagneticPotential.ofStaticPotentials_scalarPotential`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L108).
 
 ```lean
 lemma ofStaticPotentials_scalarPotential {d} (c : SpeedOfLight) (φ : Space d → ℝ)
@@ -89,7 +89,7 @@ lemma ofStaticPotentials_scalarPotential {d} (c : SpeedOfLight) (φ : Space d �
     (ofStaticPotentials c φ A).scalarPotential c = fun _ => φ
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_scalarPotential`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L114).
+**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_scalarPotential`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L114).
 
 ```lean
 lemma ofElectromagneticField_scalarPotential (c : SpeedOfLight)
@@ -99,7 +99,7 @@ lemma ofElectromagneticField_scalarPotential (c : SpeedOfLight)
     - ∫ u in (0 : ℝ)..1, ⟪E t (u • x), basis.repr x⟫_ℝ ∂(volume)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_scalarPotential_eq_add_vectorPotential`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L122).
+**`Electromagnetism.ElectromagneticPotential.ofElectromagneticField_scalarPotential_eq_add_vectorPotential`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L122).
 
 ```lean
 lemma ofElectromagneticField_scalarPotential_eq_add_vectorPotential (c : SpeedOfLight)
@@ -115,14 +115,14 @@ lemma ofElectromagneticField_scalarPotential_eq_add_vectorPotential (c : SpeedOf
 
 > We prove various lemmas about the smoothness of the scalar potential.
 
-**`Electromagnetism.ElectromagneticPotential.scalarPotential_contDiff`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L145).
+**`Electromagnetism.ElectromagneticPotential.scalarPotential_contDiff`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L145).
 
 ```lean
 lemma scalarPotential_contDiff {n} {d} (c : SpeedOfLight) (A : ElectromagneticPotential d)
     (hA : ContDiff ℝ n A) : ContDiff ℝ n ↿(A.scalarPotential c)
 ```
 
-**`Electromagnetism.ElectromagneticPotential.scalarPotential_contDiff_space_of_smooth`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L159).
+**`Electromagnetism.ElectromagneticPotential.scalarPotential_contDiff_space_of_smooth`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L159).
 
 ```lean
 lemma scalarPotential_contDiff_space_of_smooth {n : ℕ} {d} (c : SpeedOfLight)
@@ -134,7 +134,7 @@ lemma scalarPotential_contDiff_space_of_smooth {n : ℕ} {d} (c : SpeedOfLight)
 
 > We prove various lemmas about the differentiability of the scalar potential.
 
-**`Electromagnetism.ElectromagneticPotential.scalarPotential_differentiable`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L174).
+**`Electromagnetism.ElectromagneticPotential.scalarPotential_differentiable`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean#L174).
 
 ```lean
 lemma scalarPotential_differentiable {d} (c : SpeedOfLight) (A : ElectromagneticPotential d)
@@ -147,4 +147,4 @@ lemma scalarPotential_differentiable {d} (c : SpeedOfLight) (A : Electromagnetic
 
 ## Sources
 
-- [Physlib/Electromagnetism/Kinematics/ScalarPotential.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean)
+- [Physlib/Electromagnetism/Kinematics/ScalarPotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean)

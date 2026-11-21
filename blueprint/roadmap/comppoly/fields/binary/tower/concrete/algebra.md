@@ -7,17 +7,17 @@ proof: formalized
 
 # Concrete Binary Tower Algebra
 
-`CompPoly.Fields.Binary.Tower.Concrete.Algebra`, in [CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.Tower.Concrete.Algebra`, in [CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Algebra maps and embeddings for the concrete bitvector binary tower.
 
-`ConcreteBinaryTower.canonicalAlgMap` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L27))
+`ConcreteBinaryTower.canonicalAlgMap` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L27))
 
 ```lean
 def canonicalAlgMap (k : ℕ)
 ```
 
-`ConcreteBinaryTower.toNat_canonicalAlgMap` (theorem, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L32))
+`ConcreteBinaryTower.toNat_canonicalAlgMap` (theorem, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L32))
 
 > The embedding into the next level preserves the stored natural word.
 
@@ -26,7 +26,7 @@ theorem toNat_canonicalAlgMap (k : ℕ) (x : ConcreteBTField k) :
     (canonicalAlgMap k x).toNat = x.toNat
 ```
 
-`ConcreteBinaryTower.generator_is_not_lifted_to_succ` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L43))
+`ConcreteBinaryTower.generator_is_not_lifted_to_succ` (theorem, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L43))
 
 > `Z(k+1)` is the adjoined root of `poly k` to `ConcreteBTField (k+1)`, so it is not
 > lifted to `ConcreteBTField (k+1)` by `canonicalAlgMap`
@@ -36,14 +36,14 @@ theorem generator_is_not_lifted_to_succ (k : ℕ) :
     ∀ x : ConcreteBTField k, canonicalAlgMap (k:=k) x ≠ Z (k + 1)
 ```
 
-`ConcreteBinaryTower.ConcreteBTField_add_eq` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L64))
+`ConcreteBinaryTower.ConcreteBTField_add_eq` (lemma, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L64))
 
 ```lean
 lemma ConcreteBTField_add_eq (k n m) :
     ConcreteBTField (k + n + m) = ConcreteBTField (k + (n + m))
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.RingHom_eq_of_dest_eq` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L69))
+`ConcreteBinaryTower.ConcreteBTField.RingHom_eq_of_dest_eq` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L69))
 
 ```lean
 theorem ConcreteBTField.RingHom_eq_of_dest_eq (k m n : ℕ) (h_eq : m = n) :
@@ -51,7 +51,7 @@ theorem ConcreteBTField.RingHom_eq_of_dest_eq (k m n : ℕ) (h_eq : m = n) :
     = (ConcreteBTField k →+* ConcreteBTField n)
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.RingHom_eq_of_source_eq` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L76))
+`ConcreteBinaryTower.ConcreteBTField.RingHom_eq_of_source_eq` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L76))
 
 ```lean
 theorem ConcreteBTField.RingHom_eq_of_source_eq (k n m : ℕ) (h_eq : k = n) :
@@ -59,7 +59,7 @@ theorem ConcreteBTField.RingHom_eq_of_source_eq (k n m : ℕ) (h_eq : k = n) :
     = (ConcreteBTField n →+* ConcreteBTField m)
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.RingHom_cast_dest_apply` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L83))
+`ConcreteBinaryTower.ConcreteBTField.RingHom_cast_dest_apply` (theorem, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L83))
 
 ```lean
 theorem ConcreteBTField.RingHom_cast_dest_apply (k m n : ℕ) (h_eq : m = n)
@@ -68,7 +68,7 @@ theorem ConcreteBTField.RingHom_cast_dest_apply (k m n : ℕ) (h_eq : m = n)
     = cast (by apply cast_ConcreteBTField_eq (h_eq:=h_eq)) (f x)
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.RingHom_cast_source_apply` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L91))
+`ConcreteBinaryTower.ConcreteBTField.RingHom_cast_source_apply` (theorem, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L91))
 
 ```lean
 theorem ConcreteBTField.RingHom_cast_source_apply (k n m : ℕ) (h_eq : k = n)
@@ -77,7 +77,7 @@ theorem ConcreteBTField.RingHom_cast_source_apply (k n m : ℕ) (h_eq : k = n)
     = f (cast (by apply cast_ConcreteBTField_eq (h_eq:=h_eq.symm)) x)
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L102))
+`ConcreteBinaryTower.concreteTowerAlgebraMap` (definition, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L102))
 
 > Auxiliary definition for `concreteTowerAlgebraMap` using structural recursion.
 > This is easier to reason about in proofs than the `Nat.rec` version.
@@ -87,14 +87,14 @@ def concreteTowerAlgebraMap (l r : ℕ) (h_le : l ≤ r) :
     ConcreteBTField l →+* ConcreteBTField r
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_id` (lemma, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L116))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_id` (lemma, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L116))
 
 ```lean
 lemma concreteTowerAlgebraMap_id (k : ℕ) :
     concreteTowerAlgebraMap (h_le:=by omega) = RingHom.id (ConcreteBTField k)
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_succ_1` (lemma, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L121))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_succ_1` (lemma, [line 121](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L121))
 
 ```lean
 lemma concreteTowerAlgebraMap_succ_1 (k : ℕ) :
@@ -103,7 +103,7 @@ lemma concreteTowerAlgebraMap_succ_1 (k : ℕ) :
 
 > Right associativity of the Tower Map
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_succ` (lemma, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L130))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_succ` (lemma, [line 130](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L130))
 
 ```lean
 lemma concreteTowerAlgebraMap_succ (l r : ℕ) (h_le : l ≤ r) :
@@ -114,7 +114,7 @@ lemma concreteTowerAlgebraMap_succ (l r : ℕ) (h_le : l ≤ r) :
 
 > Left associativity of the Tower Map
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_succ_last` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L142))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_succ_last` (theorem, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L142))
 
 ```lean
 theorem concreteTowerAlgebraMap_succ_last (r : ℕ) : ∀ l : ℕ, (h_le : l ≤ r) →
@@ -124,7 +124,7 @@ theorem concreteTowerAlgebraMap_succ_last (r : ℕ) : ∀ l : ℕ, (h_le : l ≤
     (l:=l) (r:=l + 1) (by omega))
 ```
 
-`ConcreteBinaryTower.ConcreteBTField.RingHom_comp_cast` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L170))
+`ConcreteBinaryTower.ConcreteBTField.RingHom_comp_cast` (theorem, [line 170](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L170))
 
 > Cast of composition of ConcreteBTField ring homomorphism is composition of
 > casted ConcreteBTField ring homomorphism.
@@ -139,7 +139,7 @@ theorem ConcreteBTField.RingHom_comp_cast {α β γ δ : ℕ}
     = cast (ConcreteBTField.RingHom_eq_of_dest_eq (k:=α) (m:=γ) (n:=δ) h) (g.comp f)
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_assoc` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L183))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_assoc` (theorem, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L183))
 
 ```lean
 theorem concreteTowerAlgebraMap_assoc :
@@ -149,7 +149,7 @@ theorem concreteTowerAlgebraMap_assoc :
     (concreteTowerAlgebraMap (l:=l) (r:=mid) (h_le:=h_l_le_mid))
 ```
 
-`ConcreteBinaryTower.toNat_concreteTowerAlgebraMap` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L213))
+`ConcreteBinaryTower.toNat_concreteTowerAlgebraMap` (theorem, [line 213](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L213))
 
 > An embedding between any ordered levels preserves the stored natural word.
 
@@ -158,7 +158,7 @@ theorem toNat_concreteTowerAlgebraMap {i j : ℕ} (h : i ≤ j) (x : ConcreteBTF
     (concreteTowerAlgebraMap i j h x).toNat = x.toNat
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_eq_setWidth` (theorem, [line 222](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L222))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_eq_setWidth` (theorem, [line 222](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L222))
 
 > An embedding between ordered levels zero-extends the original bitvector.
 
@@ -168,7 +168,7 @@ theorem concreteTowerAlgebraMap_eq_setWidth {i j : ℕ} (h : i ≤ j)
     (concreteTowerAlgebraMap i j h x).toBitVec = x.toBitVec.setWidth (2 ^ j)
 ```
 
-`ConcreteBinaryTower.concreteTowerAlgebraMap_Z_succ` (theorem, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L231))
+`ConcreteBinaryTower.concreteTowerAlgebraMap_Z_succ` (theorem, [line 231](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L231))
 
 > The image of the level-`k + 1` generator keeps its set bit at position `2 ^ k`.
 
@@ -178,7 +178,7 @@ theorem concreteTowerAlgebraMap_Z_succ {k j : ℕ} (h : k + 1 ≤ j) :
       BitVec.ofNat (2 ^ j) (2 ^ (2 ^ k))
 ```
 
-`ConcreteBinaryTower.instAlgebraTowerConcreteBTF` (instance, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L241))
+`ConcreteBinaryTower.instAlgebraTowerConcreteBTF` (instance, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L241))
 
 > **Formalization of Cross - Level Algebra** : For any `k ≤ τ`, `ConcreteBTField τ` is an
 > algebra over `ConcreteBTField k`.
@@ -187,21 +187,21 @@ theorem concreteTowerAlgebraMap_Z_succ {k j : ℕ} (h : k + 1 ≤ j) :
 instance instAlgebraTowerConcreteBTF : AlgebraTower (ConcreteBTField)
 ```
 
-`ConcreteBinaryTower.ConcreteBTFieldAlgebra` (abbreviation, [line 251](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L251))
+`ConcreteBinaryTower.ConcreteBTFieldAlgebra` (abbreviation, [line 251](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L251))
 
 ```lean
 abbrev ConcreteBTFieldAlgebra {l r : ℕ} (h_le : l ≤ r) :
     Algebra (ConcreteBTField l) (ConcreteBTField r)
 ```
 
-`ConcreteBinaryTower.join_via_add_smul` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L255))
+`ConcreteBinaryTower.join_via_add_smul` (definition, [line 255](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L255))
 
 ```lean
 def join_via_add_smul (k : ℕ) (h_pos : k > 0) (hi_btf lo_btf : ConcreteBTField (k - 1)) :
     ConcreteBTField k
 ```
 
-`ConcreteBinaryTower.split_algebraMap_eq_zero_x` (lemma, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L264))
+`ConcreteBinaryTower.split_algebraMap_eq_zero_x` (lemma, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L264))
 
 > An element `x` lifted from the base field `ConcreteBTField (k-1)` has `(0, x)` as its
 > split representation in `ConcreteBTField k`.
@@ -212,7 +212,7 @@ lemma split_algebraMap_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField 
   split h_pos (algebraMap (ConcreteBTField (k - 1)) (ConcreteBTField k) x) = (0, x)
 ```
 
-`ConcreteBinaryTower.algebraMap_succ_eq_zero_x` (lemma, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L298))
+`ConcreteBinaryTower.algebraMap_succ_eq_zero_x` (lemma, [line 298](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L298))
 
 ```lean
 lemma algebraMap_succ_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (k - 1)) :
@@ -220,7 +220,7 @@ lemma algebraMap_succ_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (
   algebraMap (ConcreteBTField (k - 1)) (ConcreteBTField k) x = 《 0, x 》
 ```
 
-`ConcreteBinaryTower.algebraMap_eq_zero_x` (lemma, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L304))
+`ConcreteBinaryTower.algebraMap_eq_zero_x` (lemma, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L304))
 
 ```lean
 lemma algebraMap_eq_zero_x {i j : ℕ} (h_le : i < j) (x : ConcreteBTField i) :
@@ -230,7 +230,7 @@ lemma algebraMap_eq_zero_x {i j : ℕ} (h_le : i < j) (x : ConcreteBTField i) :
       = 《 0, algebraMap (ConcreteBTField i) (ConcreteBTField (j-1)) x 》
 ```
 
-`ConcreteBinaryTower.split_smul_Z_eq_zero_x` (lemma, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L328))
+`ConcreteBinaryTower.split_smul_Z_eq_zero_x` (lemma, [line 328](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L328))
 
 ```lean
 lemma split_smul_Z_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (k - 1)) :
@@ -238,7 +238,7 @@ lemma split_smul_Z_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (k -
   split h_pos (x • Z k) = (x, 0)
 ```
 
-`ConcreteBinaryTower.smul_Z_eq_zero_x` (lemma, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L352))
+`ConcreteBinaryTower.smul_Z_eq_zero_x` (lemma, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L352))
 
 ```lean
 lemma smul_Z_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (k - 1)) :
@@ -246,7 +246,7 @@ lemma smul_Z_eq_zero_x {k : ℕ} (h_pos : k > 0) (x : ConcreteBTField (k - 1)) :
   x • Z k = 《 x, 0 》
 ```
 
-`ConcreteBinaryTower.join_eq_join_via_add_smul` (theorem, [line 359](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L359))
+`ConcreteBinaryTower.join_eq_join_via_add_smul` (theorem, [line 359](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L359))
 
 ```lean
 theorem join_eq_join_via_add_smul {k : ℕ} (h_pos : k > 0)
@@ -254,7 +254,7 @@ theorem join_eq_join_via_add_smul {k : ℕ} (h_pos : k > 0)
     《 hi_btf, lo_btf 》 = join_via_add_smul k h_pos hi_btf lo_btf
 ```
 
-`ConcreteBinaryTower.split_join_via_add_smul_eq_iff_split` (lemma, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L382))
+`ConcreteBinaryTower.split_join_via_add_smul_eq_iff_split` (lemma, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L382))
 
 ```lean
 lemma split_join_via_add_smul_eq_iff_split {k : ℕ} (h_pos : k > 0)
@@ -263,7 +263,7 @@ lemma split_join_via_add_smul_eq_iff_split {k : ℕ} (h_pos : k > 0)
       (hi_btf, lo_btf)
 ```
 
-`ConcreteBinaryTower.ConcreteBTFieldAlgebra_def` (lemma, [line 390](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L390))
+`ConcreteBinaryTower.ConcreteBTFieldAlgebra_def` (lemma, [line 390](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L390))
 
 ```lean
 lemma ConcreteBTFieldAlgebra_def (l r : ℕ) (h_le : l ≤ r) :
@@ -271,7 +271,7 @@ lemma ConcreteBTFieldAlgebra_def (l r : ℕ) (h_le : l ≤ r) :
     = (concreteTowerAlgebraMap l r h_le).toAlgebra
 ```
 
-`ConcreteBinaryTower.algebraMap_ConcreteBTFieldAlgebra_def` (lemma, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L394))
+`ConcreteBinaryTower.algebraMap_ConcreteBTFieldAlgebra_def` (lemma, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L394))
 
 ```lean
 lemma algebraMap_ConcreteBTFieldAlgebra_def (l r : ℕ) (h_le : l ≤ r) :
@@ -279,7 +279,7 @@ lemma algebraMap_ConcreteBTFieldAlgebra_def (l r : ℕ) (h_le : l ≤ r) :
     = concreteTowerAlgebraMap l r h_le
 ```
 
-`ConcreteBinaryTower.coe_one_succ` (lemma, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L398))
+`ConcreteBinaryTower.coe_one_succ` (lemma, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L398))
 
 ```lean
 lemma coe_one_succ (l : ℕ) :
@@ -287,7 +287,7 @@ lemma coe_one_succ (l : ℕ) :
     (1 : ConcreteBTField l) = (1 : ConcreteBTField (l + 1))
 ```
 
-`ConcreteBinaryTower.unique_linear_decomposition_succ` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L403))
+`ConcreteBinaryTower.unique_linear_decomposition_succ` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L403))
 
 ```lean
 theorem unique_linear_decomposition_succ (k : ℕ) :
@@ -297,7 +297,7 @@ theorem unique_linear_decomposition_succ (k : ℕ) :
     x = join_via_add_smul (k+1) (by omega) p.1 p.2
 ```
 
-`ConcreteBinaryTower.ConcreteBTFieldAlgebra_id` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L431))
+`ConcreteBinaryTower.ConcreteBTFieldAlgebra_id` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L431))
 
 ```lean
 theorem ConcreteBTFieldAlgebra_id {l r : ℕ} (h_eq : l = r) :
@@ -306,7 +306,7 @@ theorem ConcreteBTFieldAlgebra_id {l r : ℕ} (h_eq : l = r) :
       Algebra (ConcreteBTField l) (ConcreteBTField r))
 ```
 
-`ConcreteBinaryTower.ConcreteBTFieldAlgebra_apply_assoc` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L439))
+`ConcreteBinaryTower.ConcreteBTFieldAlgebra_apply_assoc` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L439))
 
 ```lean
 theorem ConcreteBTFieldAlgebra_apply_assoc (l mid r : ℕ)
@@ -318,7 +318,7 @@ theorem ConcreteBTFieldAlgebra_apply_assoc (l mid r : ℕ)
       ((@ConcreteBTFieldAlgebra (l:=l) (r:=mid) (h_le:=h_l_le_mid)).algebraMap x)
 ```
 
-`ConcreteBinaryTower.binaryTowerModule` (abbreviation, [line 453](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L453))
+`ConcreteBinaryTower.binaryTowerModule` (abbreviation, [line 453](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L453))
 
 > This also provides the corresponding Module instance.
 
@@ -327,14 +327,14 @@ abbrev binaryTowerModule {l r : ℕ} (h_le : l ≤ r) :
     Module (ConcreteBTField l) (ConcreteBTField r)
 ```
 
-`ConcreteBinaryTower.algebra_adjacent_tower` (instance, [line 457](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L457))
+`ConcreteBinaryTower.algebra_adjacent_tower` (instance, [line 457](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L457))
 
 ```lean
 instance (priority := 1000) algebra_adjacent_tower (l : ℕ) :
   Algebra (ConcreteBTField l) (ConcreteBTField (l + 1))
 ```
 
-`ConcreteBinaryTower.algebraMap_adjacent_tower_def` (lemma, [line 461](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L461))
+`ConcreteBinaryTower.algebraMap_adjacent_tower_def` (lemma, [line 461](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L461))
 
 ```lean
 lemma algebraMap_adjacent_tower_def (l : ℕ) :
@@ -342,7 +342,7 @@ lemma algebraMap_adjacent_tower_def (l : ℕ) :
     canonicalAlgMap l
 ```
 
-`ConcreteBinaryTower.aeval_definingPoly_at_Z_succ` (lemma, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L468))
+`ConcreteBinaryTower.aeval_definingPoly_at_Z_succ` (lemma, [line 468](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean#L468))
 
 ```lean
 lemma aeval_definingPoly_at_Z_succ (k : ℕ) :
@@ -356,5 +356,5 @@ lemma aeval_definingPoly_at_Z_succ (k : ℕ) :
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean)
+- [CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Concrete/Algebra.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Concrete.Algebra.json)

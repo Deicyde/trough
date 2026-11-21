@@ -8,7 +8,7 @@ proof: formalized
 
 # Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)
 
-The module `Physlib.Electromagnetism.Dynamics.IsExtrema`, [Physlib/Electromagnetism/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean): 9 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.Dynamics.IsExtrema`, [Physlib/Electromagnetism/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean): 9 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Electromagnetism.Dynamics.IsExtrema`, [Physlib/Electromagnet
 
 ## A. The condition for an extrema of the Lagrangian density
 
-**`Electromagnetism.ElectromagneticPotential.IsExtrema`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L75).
+**`Electromagnetism.ElectromagneticPotential.IsExtrema`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L75).
 
 > The condition on an electromagnetic potential to be an extrema of the lagrangian.
 
@@ -44,7 +44,7 @@ def IsExtrema {d} (𝓕 : FreeSpace) (A : ElectromagneticPotential d)
     (J : LorentzCurrentDensity d) : Prop
 ```
 
-**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_gradLagrangian`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L79).
+**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_gradLagrangian`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L79).
 
 ```lean
 lemma isExtrema_iff_gradLagrangian {𝓕 : FreeSpace} (A : ElectromagneticPotential d)
@@ -54,7 +54,7 @@ lemma isExtrema_iff_gradLagrangian {𝓕 : FreeSpace} (A : ElectromagneticPotent
 
 ### A.1. Extrema condition in terms of the field strength tensor
 
-**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_toFieldStrength_eval`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L89).
+**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_toFieldStrength_eval`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L89).
 
 ```lean
 lemma isExtrema_iff_toFieldStrength_eval {𝓕 : FreeSpace}
@@ -71,7 +71,7 @@ lemma isExtrema_iff_toFieldStrength_eval {𝓕 : FreeSpace}
 >
 > $$\frac{1}{\mu_0} \partial_\mu F^{\mu \nu} - J^{\nu} = 0.$$
 
-**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_tensors`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L131).
+**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_tensors`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L131).
 
 ```lean
 lemma isExtrema_iff_tensors {𝓕 : FreeSpace}
@@ -89,7 +89,7 @@ lemma isExtrema_iff_tensors {𝓕 : FreeSpace}
 > Combined with `time_deriv_time_deriv_electricField_of_isExtrema`, this shows that
 > the speed with which an electromagnetic wave propagates is invariant under Lorentz transformations.
 
-**`Electromagnetism.ElectromagneticPotential.isExtrema_lorentzGroup_apply_iff`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L177).
+**`Electromagnetism.ElectromagneticPotential.isExtrema_lorentzGroup_apply_iff`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L177).
 
 ```lean
 lemma isExtrema_lorentzGroup_apply_iff {𝓕 : FreeSpace}
@@ -102,7 +102,7 @@ lemma isExtrema_lorentzGroup_apply_iff {𝓕 : FreeSpace}
 
 ## B. Gauss's law and Ampère's law and the extrema condition
 
-**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_gauss_ampere_magneticFieldMatrix`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L230).
+**`Electromagnetism.ElectromagneticPotential.isExtrema_iff_gauss_ampere_magneticFieldMatrix`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L230).
 
 ```lean
 lemma isExtrema_iff_gauss_ampere_magneticFieldMatrix {d} {𝓕 : FreeSpace}
@@ -116,7 +116,7 @@ lemma isExtrema_iff_gauss_ampere_magneticFieldMatrix {d} {𝓕 : FreeSpace}
 
 ## C. Time derivatives from the extrema condition
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_electricField_of_isExtrema`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L281).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_electricField_of_isExtrema`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L281).
 
 ```lean
 lemma time_deriv_electricField_of_isExtrema {A : ElectromagneticPotential d}
@@ -140,7 +140,7 @@ lemma time_deriv_electricField_of_isExtrema {A : ElectromagneticPotential d}
 >
 > When the free current density is zero, this reduces to the wave equation.
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_magneticFieldMatrix_of_isExtrema`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L311).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_magneticFieldMatrix_of_isExtrema`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L311).
 
 ```lean
 lemma time_deriv_time_deriv_magneticFieldMatrix_of_isExtrema {A : ElectromagneticPotential d}
@@ -163,7 +163,7 @@ lemma time_deriv_time_deriv_magneticFieldMatrix_of_isExtrema {A : Electromagneti
 >
 > When the free current density and charge density are zero, this reduces to the wave equation.
 
-**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_electricField_of_isExtrema`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L377).
+**`Electromagnetism.ElectromagneticPotential.time_deriv_time_deriv_electricField_of_isExtrema`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean#L377).
 
 ```lean
 lemma time_deriv_time_deriv_electricField_of_isExtrema {A : ElectromagneticPotential d}
@@ -183,4 +183,4 @@ lemma time_deriv_time_deriv_electricField_of_isExtrema {A : ElectromagneticPoten
 
 ## Sources
 
-- [Physlib/Electromagnetism/Dynamics/IsExtrema.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean)
+- [Physlib/Electromagnetism/Dynamics/IsExtrema.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics/IsExtrema.lean)

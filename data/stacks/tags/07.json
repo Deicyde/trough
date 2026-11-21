@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0700",
@@ -2870,7 +2870,7 @@
     {
      "name": "AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient",
      "kind": "theorem",
-     "line": 208,
+     "line": 209,
      "private": false,
      "doc": "**The choices (1)–(5) of Stacks 072C.** On a quasi-compact, quasi-separated algebraic space\n`Y` over an arbitrary base scheme `S` one may choose an affine scheme `U`, a surjective étale\nmorphism `f : U ⟶ Y` and a universal bound on the degrees of its fibres — and then, for *every*\n`p`, an affine scheme `V_p`, a surjective étale morphism `V_p ⟶ U_p` onto the quotient\n`U_p = W_p/S_{p+1}` of [Stacks, Tag 0726], and a universal bound on the degrees of *its*\nfibres.\n\nThe separatedness of `f`, under which `W_p` and `U_p` are formed, is produced here rather than\nassumed. The source restricts `p` to `0 ≤ p ≤ d`; the restriction is dropped, which is\nstronger.\n\nChoices (1)–(3) are\n`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers'`, and\n(4)–(5) are that same statement applied to `U_p`, which is quasi-compact by\n`AlgebraicGeometry.Space.SpacesEtale.isQuasiCompactSpace_diagonalComplementQuotient` and\nquasi-separated because it is *separated*, by\n`AlgebraicGeometry.Space.SpacesEtale.isAbsolutelySeparated_diagonalComplementQuotient` and\n[Stacks, Tag 02X3]. Separatedness of `U_p` is what the source itself records — \"since `U` is\nseparated, the schemes `W_p` are separated, hence `U_p` is separated\" — and it needs nothing of\nthe base, which is why the base here is an arbitrary scheme.",
      "statement": "theorem exists_affine_etale_surjective_cover_diagonalComplementQuotient\n    (hqc : IsQuasiCompactSpace B S hS Y)\n    (hqs : IsAbsolutelyQuasiSeparated B S hS hZ Y) :\n    ∃ (U : BigFppfOver B S hS) (g : yoneda.obj U ⟶ Y)\n        (het : IsEtale B S hS g) (hsep : IsSeparated B S hS g),\n      IsAffine ((BigFppfOver.toScheme B S hS).obj U) ∧\n        (MorphismProperty.inverseImage (@Surjective.{u} : MorphismProperty Scheme.{u})\n          (BigFppfOver.toScheme B S hS)).presheaf g ∧\n        HasUniversallyBoundedFibers B S hS U g ∧\n        ∀ p : ℕ, ∃ (V : BigFppfOver B S hS)\n            (f : yoneda.obj V ⟶ (SpacesEtale.diagonalComplementQuotient B S hS\n              ⟨Y, hY⟩ (SpacesEtale.chartObj B S hS ⟨Y, hY⟩ U g het)\n              (p + 1) hsep).obj),\n          IsAffine ((BigFppfOver.toScheme B S hS).obj V) ∧\n            (MorphismProperty.inverseImage (@Surjective.{u} : MorphismProperty Scheme.{u})\n              (BigFppfOver.toScheme B S hS)).presheaf f ∧\n            IsEtale B S hS f ∧\n            HasUniversallyBoundedFibers B S hS V f",
@@ -2884,21 +2884,21 @@
     {
      "name": "AlgebraicGeometry.Space.isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient",
      "kind": "theorem",
-     "line": 303,
+     "line": 307,
      "private": false,
-     "doc": "**[Stacks, Tag 072C]: the vanishing from the choices (1)–(5).**  Let `S` be a scheme and let\n`X` be a quasi-compact and quasi-separated algebraic space over `S`.  Suppose given\n\n1. an affine scheme `U`,\n2. a surjective étale morphism `f : U ⟶ X`,\n3. an integer `d` bounding the degrees of the fibres of `f`,\n4. for every `p = 0, 1, …, d` a surjective étale morphism `V_p ⟶ U_p` from an affine scheme\n   `V_p`, where `U_p = W_{p+1}/S_{p+1}` is the quotient of [Stacks, Tag 0726], and\n5. an integer `d_p` bounding the degrees of the fibres of `V_p ⟶ U_p`.\n\nThen `H^q(X, ℱ) = 0` for every quasi-coherent `𝒪_X`-module `ℱ` and every `q ≥ max (d_p + p)`.\n\nThe bounds `d` and `d_p` are integers, as in the source, and the condition `q ≥ max (d_p + p)` is\nstated as `d_p + p ≤ q` for every `0 ≤ p ≤ d`.  The vanishing is read on the spaces-étale site\nof `X`, as the sheaf cohomology of the underlying abelian sheaf of `ℱ`.\n\nThe quotients `U_p` are formed under the separatedness of `f`, so the choices (4)–(5) in\n`hdata` are stated for every proof `hsep` of it.  This assumes nothing: `f` is separated because\n`U` is affine, and the proof derives `hsep` itself, by\n`AlgebraicGeometry.Space.isSeparated_of_isEtale_of_scheme_isSeparated`, before using `hdata`.\nNo hypothesis is a result of the source; the choices (1)–(5) themselves exist by\n`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient`.\n\nThe proof is the source's: the alternating Čech spectral sequence of [Stacks, Tag 0728] for `f`\nhas its `E₁`-page zero in the columns `p ≥ d`, because `W_{p+1}` is empty there, and its column\n`p < d` zero in the degrees `q ≥ d_p`, by [Stacks, Tag 072B] applied to the separated space\n`U_p` through\n`AlgebraicGeometry.Space.SpacesEtale.isZero_zExt_koszulComplex_X_of_chart_over_quotient`.",
-     "statement": "theorem isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient\n    (X : AlgebraicSpaces B S hS)\n    (hqc : IsQuasiCompactSpace B S hS X.obj)\n    (hqs : IsAbsolutelyQuasiSeparated B S hS hZ X.obj)\n    (U : BigFppfOver B S hS) (hU : IsAffine ((BigFppfOver.toScheme B S hS).obj U))\n    (f : yoneda.obj U ⟶ X.obj) (hf : IsEtale B S hS f) (hfsurj : IsSurjective B S hS f)\n    (d : ℤ) (hd : BoundsFibreDegrees B S hS U f d) (dp : ℕ → ℤ)\n    (hdata : ∀ (hsep : IsSeparated B S hS f) (p : ℕ), (p : ℤ) ≤ d →\n      ∃ (V : BigFppfOver B S hS)\n        (g : yoneda.obj V ⟶ (SpacesEtale.diagonalComplementQuotient B S hS X\n          (SpacesEtale.chartObj B S hS X U f hf) (p + 1) hsep).obj),\n        IsAffine ((BigFppfOver.toScheme B S hS).obj V) ∧\n          IsEtale B S hS g ∧ IsSurjective B S hS g ∧\n          BoundsFibreDegrees B S hS V g (dp p))\n    (M : SheafOfModules.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X))\n    (hM : M.IsQuasicoherentOnSite)\n    (n : ℕ) (hn : ∀ p : ℕ, (p : ℤ) ≤ d → dp p + p ≤ n) :\n    IsZero (AddCommGrpCat.of (Sheaf.H\n      ((SheafOfModules.toSheaf.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)).obj M) n))",
+     "doc": "**[Stacks, Tag 072C]: the vanishing from the choices (1)–(5).**  Let `S` be a scheme and let\n`X` be an algebraic space over `S`.  The source assumes `X` quasi-compact and quasi-separated;\nthe statement holds without either hypothesis, which only guarantee that the choices below\nexist.  Suppose given\n\n1. an affine scheme `U`,\n2. a surjective étale morphism `f : U ⟶ X`,\n3. an integer `d` bounding the degrees of the fibres of `f`,\n4. for every `p = 0, 1, …, d` a surjective étale morphism `V_p ⟶ U_p` from an affine scheme\n   `V_p`, where `U_p = W_{p+1}/S_{p+1}` is the quotient of [Stacks, Tag 0726], and\n5. an integer `d_p` bounding the degrees of the fibres of `V_p ⟶ U_p`.\n\nThen `H^q(X, ℱ) = 0` for every quasi-coherent `𝒪_X`-module `ℱ` and every `q ≥ max (d_p + p)`.\n\nThe bounds `d` and `d_p` are integers, as in the source, and the condition `q ≥ max (d_p + p)` is\nstated as `d_p + p ≤ q` for every `0 ≤ p ≤ d`.  The vanishing is read on the spaces-étale site\nof `X`, as the sheaf cohomology of the underlying abelian sheaf of `ℱ`.\n\nThe quotients `U_p` are formed under the separatedness of `f`, so the choices (4)–(5) in\n`hdata` are stated for every proof `hsep` of it.  This assumes nothing: `f` is separated because\n`U` is affine, and the proof derives `hsep` itself, by\n`AlgebraicGeometry.Space.isSeparated_of_isEtale_of_scheme_isSeparated`, before using `hdata`.\nNo hypothesis is a result of the source; the choices (1)–(5) themselves exist by\n`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient`.\n\nThe proof is the source's: the alternating Čech spectral sequence of [Stacks, Tag 0728] for `f`\nhas its `E₁`-page zero in the columns `p ≥ d`, because `W_{p+1}` is empty there, and its column\n`p < d` zero in the degrees `q ≥ d_p`, by [Stacks, Tag 072B] applied to the separated space\n`U_p` through\n`AlgebraicGeometry.Space.SpacesEtale.isZero_zExt_koszulComplex_X_of_chart_over_quotient`.",
+     "statement": "theorem isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient\n    (X : AlgebraicSpaces B S hS)\n    (U : BigFppfOver B S hS) (hU : IsAffine ((BigFppfOver.toScheme B S hS).obj U))\n    (f : yoneda.obj U ⟶ X.obj) (hf : IsEtale B S hS f) (hfsurj : IsSurjective B S hS f)\n    (d : ℤ) (hd : BoundsFibreDegrees B S hS U f d) (dp : ℕ → ℤ)\n    (hdata : ∀ (hsep : IsSeparated B S hS f) (p : ℕ), (p : ℤ) ≤ d →\n      ∃ (V : BigFppfOver B S hS)\n        (g : yoneda.obj V ⟶ (SpacesEtale.diagonalComplementQuotient B S hS X\n          (SpacesEtale.chartObj B S hS X U f hf) (p + 1) hsep).obj),\n        IsAffine ((BigFppfOver.toScheme B S hS).obj V) ∧\n          IsEtale B S hS g ∧ IsSurjective B S hS g ∧\n          BoundsFibreDegrees B S hS V g (dp p))\n    (M : SheafOfModules.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X))\n    (hM : M.IsQuasicoherentOnSite)\n    (n : ℕ) (hn : ∀ p : ℕ, (p : ℤ) ≤ d → dp p + p ≤ n) :\n    IsZero (AddCommGrpCat.of (Sheaf.H\n      ((SheafOfModules.toSheaf.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)).obj M) n))",
      "sorry": false,
      "ega": [],
      "sga": [],
      "file": "StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean",
      "tier": "StacksFrontier",
-     "comment": "the moreover clause, with the source's explicit bound: for X a quasi-compact and quasi-separated algebraic space over a scheme S and any choices (1)-(5) -- an affine U with a surjective etale U -> X, an integer d bounding its fibre degrees, and for each 0 <= p <= d an affine V_p with a surjective etale V_p -> U_p = W_{p+1}/S_{p+1} and an integer d_p bounding its fibre degrees -- H^q(X, F) = 0 for every quasi-coherent O_X-module F and every q >= max(d_p + p). Cohomology is that of the underlying abelian sheaf of F on the spaces-etale site of X. The existence of the choices (1)-(5) is AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient"
+     "comment": "the moreover clause, with the source's explicit bound, proved here without the qcqs hypotheses: for X an algebraic space over a scheme S and any choices (1)-(5) -- an affine U with a surjective etale U -> X, an integer d bounding its fibre degrees, and for each 0 <= p <= d an affine V_p with a surjective etale V_p -> U_p = W_{p+1}/S_{p+1} and an integer d_p bounding its fibre degrees -- H^q(X, F) = 0 for every quasi-coherent O_X-module F and every q >= max(d_p + p). Cohomology is that of the underlying abelian sheaf of F on the spaces-etale site of X. The existence of the choices (1)-(5) is AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient"
     },
     {
      "name": "AlgebraicGeometry.Space.exists_forall_isZero_sheafH_of_isQuasiCompactSpace_072C",
      "kind": "theorem",
-     "line": 384,
+     "line": 386,
      "private": false,
      "doc": "**[Stacks, Tag 072C], end to end.**  Let `S` be a scheme and let `X` be a quasi-compact and\nquasi-separated algebraic space over `S`.  Then there is a single degree `N` beyond which the\ncohomology of `X` with quasi-coherent coefficients vanishes:\n\n`H^q(X, ℱ) = 0` for every quasi-coherent `𝒪_X`-module `ℱ` and every `q ≥ N`.\n\nThe base is an arbitrary scheme, as in the source.  This is the five choices of the tag,\n`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient`, fed\ninto the vanishing they give,\n`AlgebraicGeometry.Space.isZero_sheafH_of_data_072C`, with `N` the source's `max (d_p + p)`\nover `0 ≤ p ≤ d`; the two fibre bounds are produced as integers by\n`AlgebraicGeometry.Space.HasUniversallyBoundedFibers` and enlarged to natural numbers by\n`AlgebraicGeometry.Space.BoundsFibreDegrees.mono`.  The uniformity in `ℱ` — one degree for all\nquasi-coherent coefficients at once — is what the tag asserts and is what makes the Euler\ncharacteristic of a coherent module a finite alternating sum.",
      "statement": "theorem exists_forall_isZero_sheafH_of_isQuasiCompactSpace_072C\n    (X : AlgebraicSpaces B S hS)\n    (hqc : IsQuasiCompactSpace B S hS X.obj)\n    (hqs : IsAbsolutelyQuasiSeparated B S hS hZ X.obj) :\n    ∃ N : ℕ, ∀ (M : SheafOfModules.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)),\n      M.IsQuasicoherentOnSite → ∀ n : ℕ, N ≤ n →\n        IsZero (AddCommGrpCat.of (Sheaf.H\n          ((SheafOfModules.toSheaf.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)).obj M) n))",
@@ -7960,7 +7960,7 @@
     {
      "name": "AlgebraicGeometry.Stack.hasFlatBaseChangePropertySheaf_tensor",
      "kind": "theorem",
-     "line": 816,
+     "line": 853,
      "private": false,
      "doc": "**Stacks 0764, part (5).** The tensor product, in `Mod(𝒳_étale, 𝒪_𝒳)`, of two étale sheaves of\n`𝒪_𝒳`-modules with the flat base change property of **Stacks 0762** has the flat base change\nproperty.\n\nThe tensor product is the canonical one, `Stacks.SheafOfModules.Tensor.sheafTensor` at the\nstructure sheaf of the associated étale site; it is\n`AlgebraicGeometry.Stack.etaleTensorSheaf` by `AlgebraicGeometry.Stack.etaleTensorSheaf_eq`. The\nsheafification instances it is formed with hold for every `𝒳`, by\n`AlgebraicGeometry.Stack.hasSheafify_etaleAssociatedTopology` and\n`AlgebraicGeometry.Stack.wEqualsLocallyBijective_etaleAssociatedTopology`, and are supplied here.\n\nAt an arrow over a flat morphism of schemes this is\n`AlgebraicGeometry.Stack.isIso_restrictSheafPullbackComparison_etaleTensorSheaf`: the\nrestrictions commute with tensor products, the pullback commutes with tensor products by\n**Stacks 03EL**, and under these identifications the comparison map of the tensor product is the\ntensor product of the comparison maps.",
      "statement": "theorem hasFlatBaseChangePropertySheaf_tensor\n    (F G : SheafOfModules.{u}\n      (ringStructureSheafCore B S hS p hp (etaleTopology B) (etaleTopology_le_topology B)))\n    (hF : HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp F)\n    (hG : HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp G) :\n    letI := hasSheafify_etaleAssociatedTopology B S hS p hp\n    letI := wEqualsLocallyBijective_etaleAssociatedTopology B S hS p hp\n    HasFlatBaseChangePropertySheafUnivLE B E h S hS p hp\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, _, u, u}\n        (structureSheaf B S hS p hp (etaleTopology B)\n          (etaleTopology_le_topology B))).obj F).obj G)",
@@ -9536,7 +9536,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.Crystals.isFiltered_cardinalGeneratedSubcrystal",
      "kind": "instance",
-     "line": 514,
+     "line": 515,
      "private": false,
      "doc": "**Stacks 077Z, the directedness half.**  For the cardinal `cardinalBound D`, which depends\nonly on the system of schemes and not on the crystal, the `cardinalBound D`-generated submodules\nof every crystal on a flat system form a directed system.\n\nThis is one of the two declarations carrying the tag; the other,\n`Stacks.AlgebraicGeometry.Crystals.isColimit_cardinalGeneratedSubcrystalCocone`, says that the\ncrystal is the colimit of that system.  Together they are the whole statement: for this `κ`\nevery object of `CQC(X)` is the directed colimit of its `κ`-generated submodules.",
      "statement": "instance isFiltered_cardinalGeneratedSubcrystal (D : SchemeSystem.{u}) [D.IsFlat]\n    (M : Crystal D) : IsFiltered (CardinalGeneratedSubcrystal M (cardinalBound D))",
@@ -11955,7 +11955,7 @@
     {
      "name": "Stacks.SheafOfModules.kFlat_tensorComplex",
      "kind": "theorem",
-     "line": 513,
+     "line": 500,
      "private": false,
      "doc": "**Stacks 079R.** The total tensor product of two K-flat complexes of sheaves of modules is\nK-flat.",
      "statement": "theorem kFlat_tensorComplex\n    {K L : CochainComplex (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf R)) ℤ}\n    (hK : Stacks.SheafOfModules.IsKFlat R K) (hL : Stacks.SheafOfModules.IsKFlat R L) :\n    Stacks.SheafOfModules.IsKFlat R (((Stacks.SheafOfModules.Tensor.tensorComplex R).obj K).obj L)",
@@ -13982,9 +13982,9 @@
     {
      "name": "AlgebraicGeometry.Stack.FlatFppf.locallyQuasicoherentSheafFlatBaseChange_homology_derivedModuleLowerShriek",
      "kind": "theorem",
-     "line": 90,
+     "line": 91,
      "private": false,
-     "doc": "**Stacks 07B3, part (2).** Let `H` be a quasi-coherent module on the flat-fppf site of an\nalgebraic stack `𝒳`. For every `p`, the cohomology sheaf `H^p(Lg_! H)` of the derived lower shriek of\nStacks 07AS (4) is a locally quasi-coherent module with the flat base change property on `𝒳`, the\nflat base change property of Stacks 0762 being read with the pullback of sheaves.",
+     "doc": "**Stacks 07B3, part (2).** Let `H` be a quasi-coherent module on the flat-fppf site of an\nalgebraic stack `𝒳`. For every `p`, the cohomology sheaf `H^p(Lg_! H)` of the derived lower shriek\nof\nStacks 07AS (4) is a locally quasi-coherent module with the flat base change property on `𝒳`, the\nflat base change property of Stacks 0762 being read with the pullback of sheaves.",
      "statement": "theorem locallyQuasicoherentSheafFlatBaseChange_homology_derivedModuleLowerShriek\n    (H : flatFppfModules B S hS 𝒳) (hH : H.IsQuasicoherentOnSite) (p : ℤ) :\n    letI := (SheafOfModules.instAbelian _ : Abelian (fppfModules B S hS 𝒳))\n    letI := abelianFlatFppfModulesSpelling B S hS 𝒳\n    letI := HasDerivedCategory.standard (flatFppfModules B S hS 𝒳)\n    letI := HasDerivedCategory.standard (fppfModules B S hS 𝒳)\n    lqcohSheafFbcFppfModules.{u, _, u} B E h S hS 𝒳\n      ((DerivedCategory.homologyFunctor _ p).obj\n        ((derivedModuleLowerShriek B S hS 𝒳).obj ((DerivedCategory.singleFunctor _ 0).obj H)))",
      "sorry": false,
      "ega": [],
@@ -13996,9 +13996,9 @@
     {
      "name": "AlgebraicGeometry.Stack.LisseEtale.isLocallyQuasicoherentWithSheafFlatBaseChange_homology_derivedModuleLowerShriek",
      "kind": "theorem",
-     "line": 56,
+     "line": 57,
      "private": false,
-     "doc": "**Stacks 07B3, part (1).** Let `H` be a quasi-coherent module on the lisse-étale site of an\nalgebraic stack `𝒳`. For every `p`, the cohomology sheaf `H^p(Lg_! H)` of the derived lower shriek `Lg_!` is a locally\nquasi-coherent module with the flat base change property on `𝒳`, the flat base change property\nbeing read with the pullback of sheaves.",
+     "doc": "**Stacks 07B3, part (1).** Let `H` be a quasi-coherent module on the lisse-étale site of an\nalgebraic stack `𝒳`. For every `p`, the cohomology sheaf `H^p(Lg_! H)` of the derived lower shriek\n`Lg_!` is a locally\nquasi-coherent module with the flat base change property on `𝒳`, the flat base change property\nbeing read with the pullback of sheaves.",
      "statement": "theorem isLocallyQuasicoherentWithSheafFlatBaseChange_homology_derivedModuleLowerShriek\n    (H : SheafOfModules.{u} (lisseEtaleModuleRing B S hS 𝒳)) (hH : H.IsQuasicoherentOnSite)\n    (p : ℤ) :\n    letI := abelianEtaleModules B S hS 𝒳\n    letI := abelianLisseEtaleModules B S hS 𝒳\n    letI := HasDerivedCategory.standard (SheafOfModules.{u} (lisseEtaleModuleRing B S hS 𝒳))\n    letI := HasDerivedCategory.standard (SheafOfModules.{u}\n      (SmallModel.targetRing (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))\n        (associatedRingedTopos B S hS 𝒳.val.val.p 𝒳.val.isFiberedInGroupoids (etaleTopology B)\n          (etaleTopology_le_topology B)).O))\n    IsLocallyQuasicoherentWithSheafFlatBaseChange.{u, u + 1, u, u} B E h S hS\n      𝒳.val.val.p 𝒳.val.isFiberedInGroupoids\n      ((DerivedCategory.homologyFunctor _ p).obj\n        ((derivedModuleLowerShriek B S hS 𝒳).obj\n          ((DerivedCategory.singleFunctor _ 0).obj H))).val",
      "sorry": false,
      "ega": [],
@@ -15413,7 +15413,7 @@
     {
      "name": "kaehlerDifferential_subsingleton_of_isLocalization",
      "kind": "theorem",
-     "line": 1151,
+     "line": 1149,
      "private": false,
      "doc": "`H₀(NL_{S⁻¹A/A}) = Ω_{S⁻¹A/A} = 0`: the module of Kähler differentials of a\nlocalization `S⁻¹A` over `A` vanishes.",
      "statement": "theorem kaehlerDifferential_subsingleton_of_isLocalization\n    [IsLocalization S B] :\n    Subsingleton (Ω[B⁄A])",
@@ -15427,7 +15427,7 @@
     {
      "name": "h1Cotangent_subsingleton_of_isLocalization",
      "kind": "theorem",
-     "line": 1160,
+     "line": 1158,
      "private": false,
      "doc": "`H₁(NL_{S⁻¹A/A}) = 0`: the first naive cotangent homology of a localization `S⁻¹A`\nover `A` vanishes.",
      "statement": "theorem h1Cotangent_subsingleton_of_isLocalization\n    [IsLocalization S B] :\n    Subsingleton (Algebra.H1Cotangent A B)",
@@ -15447,7 +15447,7 @@
     {
      "name": "naiveCotangentComplex_localization_base_homotopyEquiv",
      "kind": "theorem",
-     "line": 1459,
+     "line": 1457,
      "private": false,
      "doc": "With `Aₘ` a localization of `A` at the multiplicative subset `M` and a ring map `Aₘ → B`, the\ncanonical chain map `φ = (φ₁, φ₀) : NL_{B/A} → NL_{B/Aₘ}`, given by\n`Algebra.Extension.Cotangent.map h` and `Algebra.Extension.CotangentSpace.map h` for the morphism\nof extensions `h` induced by the tower `A → Aₘ → B`, is a homotopy equivalence of the two term\nnaive cotangent complexes of `B`-modules.",
      "statement": "theorem naiveCotangentComplex_localization_base_homotopyEquiv\n    (A : Type*) (Aₘ : Type*) (B : Type*)\n    [CommRing A] [CommRing Aₘ] [CommRing B]\n    [Algebra A Aₘ] [Algebra A B] [Algebra Aₘ B]\n    [IsScalarTower A Aₘ B]\n    (M : Submonoid A) [IsLocalization M Aₘ] :\n    let P := (Generators.self A B).toExtension\n    let Q := (Generators.self Aₘ B).toExtension\n    let h : P.Hom Q :=\n      ((Generators.self A B).defaultHom (Generators.self Aₘ B)).toExtensionHom\n    let φ₁ := Algebra.Extension.Cotangent.map h\n    let φ₀ := Algebra.Extension.CotangentSpace.map h\n    ∃ (ψ₁ : Q.Cotangent →ₗ[B] P.Cotangent)\n      (ψ₀ : Q.CotangentSpace →ₗ[B] P.CotangentSpace)\n      (s : P.CotangentSpace →ₗ[B] P.Cotangent)\n      (t : Q.CotangentSpace →ₗ[B] Q.Cotangent),\n      Q.cotangentComplex ∘ₗ φ₁ = φ₀ ∘ₗ P.cotangentComplex ∧\n      P.cotangentComplex ∘ₗ ψ₁ = ψ₀ ∘ₗ Q.cotangentComplex ∧\n      ψ₁ ∘ₗ φ₁ - LinearMap.id = s ∘ₗ P.cotangentComplex ∧\n      ψ₀ ∘ₗ φ₀ - LinearMap.id = P.cotangentComplex ∘ₗ s ∧\n      φ₁ ∘ₗ ψ₁ - LinearMap.id = t ∘ₗ Q.cotangentComplex ∧\n      φ₀ ∘ₗ ψ₀ - LinearMap.id = Q.cotangentComplex ∘ₗ t",
@@ -16555,7 +16555,7 @@
     {
      "name": "Stacks.Examples.UnboundedDerivedPushforward.exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward",
      "kind": "theorem",
-     "line": 113,
+     "line": 114,
      "private": false,
      "doc": "**Stacks 07DD**, for the source's own example. Let `k` be a field of characteristic `p > 0`,\n`S = Spec k[x]`, and let `𝒞` be any big fppf site containing `S`. The classifying stack\n`𝒳 = [S/(ℤ/pℤ)]` and `S` itself are algebraic stacks over `S`, the structure morphism\n`f : 𝒳 ⟶ S` is quasi-compact and quasi-separated, and for every choice of derived categories\nthe object `E = ⊕_{m ≥ 0} 𝒪_𝒳[m]` lies in `D_{LQCoh^fbc}(𝒪_𝒳)` while `Rf_*E` does not lie in\n`D_{LQCoh^fbc}(𝒪_S)`. So `Rf_*` does not carry `D_{LQCoh^fbc}(𝒪_𝒳)` into `D_{LQCoh^fbc}(𝒪_S)`\nand does not induce a functor `D_QCoh(𝒪_𝒳) ⟶ D_QCoh(𝒪_S)` on the Verdier quotients of\n**Stacks 07B6** (`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentSheaf`, whose subcategory\n`LQCoh^fbc` is `AlgebraicGeometry.Stack.lqcFbcFppf`).\n\n`Rf_*` is the total right derived functor of the direct image of **Stacks 06WE** on the\nunbounded derived categories of fppf modules\n(`AlgebraicGeometry.Stack.fppfModulesDerivedPushforward`).\nThe proof is the discussion of **Stacks 07DC**: see the module documentation.",
      "statement": "theorem exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward (p : ℕ) [Fact p.Prime]\n    {k : Type u} [Field k] [CharP k p] (𝒞 : BigFppfSite.{u})\n    (hS : 𝒞.Contains (Spec (.of (Polynomial k)))) :\n    ∃ (𝒳 𝒴 : AlgebraicStacks.{u, w} 𝒞 (Spec (.of (Polynomial k))) hS) (f : 𝒳 ⟶ 𝒴),\n      IsQuasiCompactMorphism 𝒞 _ hS f ∧ AlgebraicStacks.IsQuasiSeparated 𝒞 _ hS f ∧\n      ∀ [HasDerivedCategory.{t} (fppfModules 𝒞 _ hS 𝒳)]\n        [HasDerivedCategory.{t} (fppfModules 𝒞 _ hS 𝒴)],\n        ∃ E : DerivedCategory (fppfModules 𝒞 _ hS 𝒳),\n          DerivedCategoryB.derivedCategoryB (lqcFbcFppf 𝒞 _ hS 𝒳) E ∧\n            ¬ DerivedCategoryB.derivedCategoryB (lqcFbcFppf 𝒞 _ hS 𝒴)\n              ((fppfModulesDerivedPushforward 𝒞 _ hS f).obj E)",
@@ -16569,7 +16569,7 @@
     {
      "name": "Stacks.Examples.UnboundedDerivedPushforward.exists_isQuasiCompact_isQuasiSeparated_not_derivedCategoryB_derivedPushforward",
      "kind": "theorem",
-     "line": 154,
+     "line": 155,
      "private": false,
      "doc": "**Stacks 07DD.** A quasi-compact and quasi-separated morphism `f : 𝒳 ⟶ 𝒴` of algebraic\nstacks need not induce a functor `Rf_* : D_QCoh(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒴)`: there are a big fppf site\n`𝒞`, a scheme `S` in it, algebraic stacks `𝒳`, `𝒴` over `S` and a quasi-compact and\nquasi-separated `f : 𝒳 ⟶ 𝒴` such that, for every choice of derived categories, some object `E` of\n`D_{LQCoh^fbc}(𝒪_𝒳)` has `Rf_*E` outside `D_{LQCoh^fbc}(𝒪_𝒴)`. The witness is the source's, with\n`p = 2`: `exists_not_derivedCategoryB_lqcFbcFppf_derivedPushforward`.",
      "statement": "theorem exists_isQuasiCompact_isQuasiSeparated_not_derivedCategoryB_derivedPushforward :\n    ∃ (𝒞 : BigFppfSite.{u}) (S : Scheme.{u}) (hS : 𝒞.Contains S)\n      (𝒳 𝒴 : AlgebraicStacks.{u, w} 𝒞 S hS) (f : 𝒳 ⟶ 𝒴),\n      IsQuasiCompactMorphism 𝒞 S hS f ∧ AlgebraicStacks.IsQuasiSeparated 𝒞 S hS f ∧\n      ∀ [HasDerivedCategory.{t} (fppfModules 𝒞 S hS 𝒳)]\n        [HasDerivedCategory.{t} (fppfModules 𝒞 S hS 𝒴)],\n        ∃ E : DerivedCategory (fppfModules 𝒞 S hS 𝒳),\n          DerivedCategoryB.derivedCategoryB (lqcFbcFppf 𝒞 S hS 𝒳) E ∧\n            ¬ DerivedCategoryB.derivedCategoryB (lqcFbcFppf 𝒞 S hS 𝒴)\n              ((fppfModulesDerivedPushforward 𝒞 S hS f).obj E)",
@@ -21040,7 +21040,7 @@
     {
      "name": "Crystalline.GlobalCrystallineSituation.changeBase_isContinuous",
      "kind": "instance",
-     "line": 290,
+     "line": 291,
      "private": false,
      "doc": "**Stacks Project, Tag 07IC.**  Change of divided power base is continuous for the big\ncrystalline Zariski topologies.  It suffices to check the Zariski covering families; such a\nfamily maps to the family of the same thickenings over the image of the base, which is again\nZariski covering because being Cartesian and covering the ambient scheme do not involve the\nstructure maps to the divided power base and to `X`.  The sheaf condition then transfers because\nchange of base turns compatible families into compatible families.",
      "statement": "instance changeBase_isContinuous :\n    (changeBase S S' f g h).IsContinuous (topology S) (topology S')",
@@ -22009,7 +22009,7 @@
     {
      "name": "Crystalline.GlobalCrystallineSituation.structureToposMorphism_isoLowerRoute",
      "kind": "def",
-     "line": 421,
+     "line": 422,
      "private": false,
      "doc": "**Stacks Project, Tag 07IM.**  The structure morphism\n`τ_{X/S} : (X/S)_cris ⟶ Sh(S_Zar)` is the lower route of the diagram: the comparison `u_{X/S}` of\n[Stacks, Tag 07IL], then the small Zariski morphism along `X ⟶ S₀`, then the small Zariski\nmorphism along `S₀ ⟶ S`.  This is the route the remark takes as the definition of `τ_{X/S}`, and\nit does not assume `p` locally nilpotent on `S₀`.",
      "statement": "def structureToposMorphism_isoLowerRoute :\n    ((opensMapMorphismOfTopoi (DividedPowerScheme.closedFiberι S.S).base).comp\n        ((opensMapMorphismOfTopoi S.toClosedFiber.base).comp\n          (zariskiToposMorphism S))).pushforward ≅\n      (structureToposMorphism S).pushforward",
@@ -22018,7 +22018,7 @@
      "sga": [],
      "file": "StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/StructureMorphism.lean",
      "tier": "StacksFrontier",
-     "comment": "the structure morphism τ_{X/S} is the lower route of the diagram, u_{X/S} followed\n  by f_small and then by the trailing arrow, as an invertible 2-morphism of topoi,\n  with no hypothesis on p.  The diagram's upper square u_{S₀/S} ∘ f_cris ≅ f_small ∘ u_{X/S} is a separate\n  clause of the remark and is registered separately, on\n  Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare of SmallSite/UpperSquare.lean"
+     "comment": "the structure morphism τ_{X/S} is the lower route of the diagram, u_{X/S} followed\n  by f_small and then by the trailing arrow, as an invertible 2-morphism of topoi,\n  with no hypothesis on p.  The diagram's upper square u_{S₀/S} ∘ f_cris ≅ f_small ∘ u_{X/S} is a separate clause of the remark and is registered separately, on Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare of SmallSite/UpperSquare.lean"
     },
     {
      "name": "Crystalline.GlobalCrystallineSituation.closedFiberCrisUpperSquare",
@@ -22389,7 +22389,7 @@
     {
      "name": "Crystalline.GlobalCrystallineSituation.IsFiniteLocallyFreeQuasicoherentCrystal",
      "kind": "structure",
-     "line": 389,
+     "line": 390,
      "private": false,
      "doc": "**Stacks Project, Tag 07IU.**  A *crystal in finite locally free modules* on the big\ncrystalline site: a sheaf of `𝒪_{X/S}`-modules on `CRIS(X/S)` which is a crystal in quasi-coherent\nmodules — that is, quasi-coherent, condition (1) of [Stacks, Tag 07IT] — and is finite locally\nfree, every object of the site having a covering on whose members the restricted module is a\nfinite free module over the restricted structure sheaf.\n\nThis is the big-site form of the condition [Stacks, Tag 07N3] builds its F-crystal on, so it is\nstated here, upstream of `Crystalline.FCrystal`; the small-site form of the same condition and\nwhat either form gives through [Stacks, Tag 07IT] are in\n`StacksFrontier.AlgebraicGeometry.Crystalline.CrystalsModules.FiniteLocallyFreeCrystal`.",
      "statement": "structure IsFiniteLocallyFreeQuasicoherentCrystal {S : GlobalCrystallineSituation.{u}}\n    (M : SheafOfModules.{u} (crystallineStructureSheaf S)) : Prop",
@@ -27983,7 +27983,7 @@
     {
      "name": "Stacks.Cech.SheafTensorPairing.cechCupProductSheafTensor",
      "kind": "def",
-     "line": 360,
+     "line": 363,
      "private": false,
      "doc": "**The Čech cup product at sheaf-tensor coefficients**: the signed Alexander--Whitney\ncup-product map\n\n`Tot(Tot(Č(𝒰,𝒦)) ⊗_A Tot(Č(𝒰,ℳ))) ⟶ Tot(Č(𝒰, Tot(𝒦 ⊗_{𝒪_X} ℳ)))`\n\nfor a covering `𝒰` of `V` and `A = 𝒪_X(V)`.  This is the left-hand column of the diagram of\nStacks Tag 0FKV: the source tensors the two total Čech complexes over the *ring* `A` of\nsections on `V`, while in the target the coefficients are tensored over the *structure sheaf*,\nthe coefficient pairing being `sheafTensorComplexPairing`.\n\nIts value on a homogeneous summand is the front/back restriction formula with the\nAlexander--Whitney sign `cupProductSign n p r = (-1)^((p+r)n+rp+r)`: see\n`Stacks.Cech.LinearCupProduct.cechCupProduct_ι`, which applies by\n`Stacks.Cech.ModuleCupProduct.cechCupProductA_eq`.",
      "statement": "noncomputable def cechCupProductSheafTensor :\n    HomologicalComplex.mapBifunctor ((totalCechComplexFunctorA O V U hU).obj K)\n        ((totalCechComplexFunctorA O V U hU).obj L) (tensorModules (CoeffRing O V)) (up ℤ) ⟶\n      (totalCechComplexFunctorA O V U hU).obj\n        (HomologicalComplex.mapBifunctor K L (sheafTensor O) (up ℤ))",
@@ -28167,7 +28167,7 @@
     {
      "name": "Crystalline.GlobalCrystallineSituation.changeBaseRingedMorphism",
      "kind": "def",
-     "line": 107,
+     "line": 108,
      "private": false,
      "doc": "**Stacks Project, Tag 07MG.**  The morphism of crystalline topoi\n`f_CRIS : (X/S)_CRIS ⟶ (Y/S')_CRIS` of [Stacks, Tag 07IC] as a morphism of ringed topoi -- the\ntop arrow of the square.  Its structure map is invertible, being the identification of the two\nroutes to the big Zariski topos of `Y`.",
      "statement": "noncomputable def changeBaseRingedMorphism :\n    RingedToposHom (crystallineZariskiRingedTopos S) (crystallineZariskiRingedTopos S')",
@@ -28181,7 +28181,7 @@
     {
      "name": "Crystalline.GlobalCrystallineSituation.changeBaseStructureSquareRinged",
      "kind": "def",
-     "line": 238,
+     "line": 239,
      "private": false,
      "doc": "**Stacks Project, Tag 07MG.**  The square\n```\n(X/S)_CRIS ──f_CRIS──> (Y/S')_CRIS\n    │                      │\n    ▼                      ▼\nSh((Sch/S)_Zar) ──────> Sh((Sch/S')_Zar)\n```\nwhose vertical arrows are the structure morphisms is a commutative diagram of *ringed* topoi: the\ntwo composites `(X/S)_CRIS ⟶ Sh((Sch/S')_Zar)` are 2-isomorphic as morphisms of ringed topoi.\nIt is pasted out of the ringed square of\n`Crystalline.GlobalCrystallineSituation.changeBaseZariskiSquareRinged` and the ringed big Zariski\ntriangles along `X ⟶ Y ⟶ S'` and `X ⟶ S ⟶ S'`, which have the same composite.",
      "statement": "noncomputable def changeBaseStructureSquareRinged :\n    RingedToposHom.TwoIso.{u, u + 1, u + 1, u, u + 1, u + 1}\n      (RingedToposHom.comp (X := crystallineZariskiRingedTopos S)\n        (Y := zariskiOverRingedTopos S.S.scheme) (Z := zariskiOverRingedTopos S'.S.scheme)\n        (zariskiOverRingedMorphism f.hom) (structureMorphismRinged S))\n      (RingedToposHom.comp (X := crystallineZariskiRingedTopos S)\n        (Y := crystallineZariskiRingedTopos S') (Z := zariskiOverRingedTopos S'.S.scheme)\n        (structureMorphismRinged S') (changeBaseRingedMorphism S S' f g h))",
@@ -30674,7 +30674,7 @@
     {
      "name": "Algebra.FormallyUnramified.directLimit",
      "kind": "theorem",
-     "line": 458,
+     "line": 456,
      "private": false,
      "doc": "**Concrete `Ring.DirectLimit` form.** Equip the direct limit\n`Ring.DirectLimit S φ` of a directed system of `R`-algebras with its canonical\n`R`-algebra structure `directLimitAlgebra φ`. If every `S i` is formally unramified\nover `R`, then so is the direct limit. (No extra compatibility hypothesis is needed:\nthe canonical maps `Ring.DirectLimit.of … i` are automatically `R`-algebra\nhomomorphisms, cf. `Ring.DirectLimit.of_commutes`.)",
      "statement": "theorem Algebra.FormallyUnramified.directLimit\n    [DirectedSystem S (fun i j h => (φ i j h : S i → S j))]\n    (hunram : ∀ i, Algebra.FormallyUnramified R (S i)) :\n    letI := directLimitAlgebra φ\n    Algebra.FormallyUnramified R (Ring.DirectLimit S (fun i j h => (φ i j h : S i → S j)))",
@@ -35138,7 +35138,7 @@
     {
      "name": "AlgebraicGeometry.Space.isCoherent_tensorModule",
      "kind": "theorem",
-     "line": 78,
+     "line": 80,
      "private": false,
      "doc": "The tensor product `AlgebraicGeometry.Space.tensorModule` of two coherent `𝒪_F`-modules on an\nalgebraic space is coherent.",
      "statement": "theorem isCoherent_tensorModule (M N : Modules.{u, u} B S hS F hF)\n    [IsCoherent B S hS F hF M] [IsCoherent B S hS F hF N] :\n    IsCoherent B S hS F hF (tensorModule B S hS F hF M N)",
@@ -40861,7 +40861,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.Tag07ZGTwist.relativeProjMapTriple",
      "kind": "theorem",
-     "line": 239,
+     "line": 235,
      "private": false,
      "doc": "Let `S` be a scheme, let `A` and `B` be quasi-coherent graded `𝒪_S`-algebras, set\n`p : X = Proj_S(A) ⟶ S` and `q : Y = Proj_S(B) ⟶ S`, and let `ψ : A ⟶ B` be a homomorphism of\ngraded `𝒪_S`-algebras. There is a canonical open `U(ψ) ⊆ Y`, a canonical morphism of schemes\n`r_ψ : U(ψ) ⟶ X` over `S`, and a map of `ℤ`-graded `𝒪_{U(ψ)}`-algebras\n\n`θ = θ_ψ : r_ψ^*(⨁_{d ∈ ℤ} 𝒪_X(d)) ⟶ ⨁_{d ∈ ℤ} 𝒪_{U(ψ)}(d)`,\n\nand the triple `(U(ψ), r_ψ, θ)` is characterised by the property that for every affine open\n`W ⊆ S` the triple `(U(ψ) ∩ q⁻¹W, r_ψ|_{U(ψ) ∩ q⁻¹W}, θ|_{U(ψ) ∩ q⁻¹W})` is the triple attached\nto `ψ : A(W) ⟶ B(W)`, via the identifications `p⁻¹W = Proj(A(W))` and `q⁻¹W = Proj(B(W))`.\n\nThe triple is `ψ.relativeMapDomain`, `relativeMapHom ψ` and `relativeTwistAlgebraHom ψ`, and the\nseven conjuncts are, in order:\n\n1. `r_ψ` is a morphism over `S`.\n2. The inverse image of `U(ψ)` under the chart over an affine open `W` of the base is the open\n   `mapDomain` of `ψ_W` in `Proj(B(W))`.\n3. Under the canonical identification of `U(ψ) ∩ q⁻¹W` with `U(ψ_W)`, the restriction of `r_ψ` is\n   the morphism `mapHom` of `ψ_W` followed by the chart of `X` over `W`.\n4. In every degree `n`, the restriction of the `n`-th component of `θ` to the piece over `W` is\n   `relativeTwistChart ψ n W`, the comparison map for `ψ_W` conjugated by the chart\n   identifications.\n5., 6., 7. Each of the three is determined by its affine-local description.",
      "statement": "public theorem relativeProjMapTriple :\n    (relativeMapHom ψ ≫ (relativeProj A).toBase =\n        ψ.relativeMapDomain.ι ≫ (relativeProj B).toBase) ∧\n      (∀ (V : S.Opens) (hV : IsAffineOpen V),\n        (relativeProj B).chart V hV ⁻¹ᵁ ψ.relativeMapDomain =\n          mapDomain (A.grading V) (B.grading V) (ψ.sectionHom V)) ∧\n      (∀ U : AffineOpen S,\n        (chartPieceIso ψ U).hom ≫\n            (relativeProj B).scheme.homOfLE\n                (inf_le_left : ψ.relativeMapDomain ⊓ ((relativeProj B).toBase ⁻¹ᵁ U.1) ≤ _) ≫\n              relativeMapHom ψ =\n          mapHom (A.grading U.1) (B.grading U.1) (ψ.sectionHom U.1) ≫\n            (relativeProj A).chart U.1 U.2) ∧\n      (∀ (n : ℤ) (U : S.affineOpens),\n        (Scheme.Modules.pullback (pieceIncl ψ U)).map ((relativeTwistAlgebraHom ψ).app n) =\n          relativeTwistChart ψ n U) ∧\n      (∀ W : (relativeProj B).scheme.Opens,\n        (∀ (V : S.Opens) (hV : IsAffineOpen V),\n            (relativeProj B).chart V hV ⁻¹ᵁ W =\n              mapDomain (A.grading V) (B.grading V) (ψ.sectionHom V)) →\n          W = ψ.relativeMapDomain) ∧\n      (∀ r : ψ.relativeMapDomain.toScheme ⟶ (relativeProj A).scheme,\n        (∀ U : AffineOpen S,\n            (((relativeProj B).chart U.1 U.2).isoImage\n                  (mapDomain (A.grading U.1) (B.grading U.1) (ψ.sectionHom U.1))).hom ≫\n                (relativeProj B).scheme.homOfLE (chartImage_le ψ U) ≫ r =\n              mapHom (A.grading U.1) (B.grading U.1) (ψ.sectionHom U.1) ≫\n                (relativeProj A).chart U.1 U.2) →\n          r = relativeMapHom ψ) ∧\n      (∀ (n : ℤ)\n          (θ : (Scheme.Modules.pullback (relativeMapHom ψ)).obj (relativeTwist A n) ⟶\n            (Scheme.Modules.pullback ψ.relativeMapDomain.ι).obj (relativeTwist B n)),\n        (∀ U : S.affineOpens,\n            (Scheme.Modules.pullback (pieceIncl ψ U)).map θ = relativeTwistChart ψ n U) →\n          θ = (relativeTwistAlgebraHom ψ).app n)",

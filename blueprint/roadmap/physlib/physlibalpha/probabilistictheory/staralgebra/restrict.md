@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: PositiveLinearMap.restrict, ProbabilisticTheory.UnitalPositiveLinearMap.restrict, PositiveLinearMap.restrictSA, PositiveLinearMap.coe_restrictSA_apply, PositiveLinearMap.restrictSAC, PositiveLinearMap.coe_restrictSAC_apply, ProbabilisticTheory.UnitalPositiveLinearMap.restrictSA, ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSA_apply
+lean: PositiveLinearMap.restrict, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.restrict, PositiveLinearMap.restrictSA, PositiveLinearMap.coe_restrictSA_apply, PositiveLinearMap.restrictSAC, PositiveLinearMap.coe_restrictSAC_apply, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.restrictSA, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSA_apply
 statement: formalized
 proof: formalized
 ---
 
 # Restricting positive maps
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Restrict`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean): 10 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Restrict`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean): 10 declarations, 6 with a docstring.
 
 > Restricting positive linear maps to submodules and to the self-adjoint elements.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.Restrict`, [PhyslibAlph
 
 ## A. Restriction to submodules
 
-**`PositiveLinearMap.restrict`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L56).
+**`PositiveLinearMap.restrict`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L56).
 
 > Restrict a positive linear map to submodules it preserves.
 
@@ -37,7 +37,7 @@ def _root_.PositiveLinearMap.restrict (f : E₁ →ₚ[R] E₂) {F₁ : Submodul
     (h : ∀ ⦃x⦄, x ∈ F₁ → f x ∈ F₂) : F₁ →ₚ[S] F₂
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.restrict`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.restrict`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L64).
 
 > Restrict a unital positive linear map to submodules it preserves.
 
@@ -49,7 +49,7 @@ def UnitalPositiveLinearMap.restrict (f : E₁ →ₚ₁[R] E₂) {F₁ : Submod
 
 ## B. Positive maps on self-adjoint elements
 
-**`PositiveLinearMap.restrictSA`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L98).
+**`PositiveLinearMap.restrictSA`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L98).
 
 > A positive linear map induces a positive real-linear map on self-adjoint elements.
 
@@ -57,14 +57,14 @@ def UnitalPositiveLinearMap.restrict (f : E₁ →ₚ₁[R] E₂) {F₁ : Submod
 noncomputable def restrictSA (f : A₁ →ₚ[ℂ] A₂) : selfAdjoint A₁ →ₚ[ℝ] selfAdjoint A₂
 ```
 
-**`PositiveLinearMap.coe_restrictSA_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L103).
+**`PositiveLinearMap.coe_restrictSA_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L103).
 
 ```lean
 lemma coe_restrictSA_apply (f : A₁ →ₚ[ℂ] A₂) (x : selfAdjoint A₁) :
     ↑(f.restrictSA x) = f ↑x
 ```
 
-**`PositiveLinearMap.restrictSAC`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L113).
+**`PositiveLinearMap.restrictSAC`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L113).
 
 > A positive complex-linear functional induces a positive real-linear functional on
 > self-adjoint elements.
@@ -73,7 +73,7 @@ lemma coe_restrictSA_apply (f : A₁ →ₚ[ℂ] A₂) (x : selfAdjoint A₁) :
 noncomputable def restrictSAC (f : A₁ →ₚ[ℂ] ℂ) : selfAdjoint A₁ →ₚ[ℝ] ℝ
 ```
 
-**`PositiveLinearMap.coe_restrictSAC_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L117).
+**`PositiveLinearMap.coe_restrictSAC_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L117).
 
 ```lean
 lemma coe_restrictSAC_apply (f : A₁ →ₚ[ℂ] ℂ) (x : selfAdjoint A₁) :
@@ -82,7 +82,7 @@ lemma coe_restrictSAC_apply (f : A₁ →ₚ[ℂ] ℂ) (x : selfAdjoint A₁) :
 
 ## C. Unital positive maps on self-adjoint elements
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.restrictSA`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.restrictSA`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L156).
 
 > A unital positive linear map induces a unital positive real-linear map on
 > self-adjoint elements.
@@ -91,14 +91,14 @@ lemma coe_restrictSAC_apply (f : A₁ →ₚ[ℂ] ℂ) (x : selfAdjoint A₁) :
 noncomputable def restrictSA (f : A₁ →ₚ₁[ℂ] A₂) : selfAdjoint A₁ →ₚ₁[ℝ] selfAdjoint A₂
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSA_apply`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L162).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSA_apply`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L162).
 
 ```lean
 lemma coe_restrictSA_apply (f : A₁ →ₚ₁[ℂ] A₂) (x : selfAdjoint A₁) :
     ↑(f.restrictSA x) = f ↑x
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.restrictSAC`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L171).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.restrictSAC`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L171).
 
 > A unital positive complex-linear functional induces a unital positive real-linear functional
 > on self-adjoint elements.
@@ -107,7 +107,7 @@ lemma coe_restrictSA_apply (f : A₁ →ₚ₁[ℂ] A₂) (x : selfAdjoint A₁)
 noncomputable def restrictSAC (f : A₁ →ₚ₁[ℂ] ℂ) : selfAdjoint A₁ →ₚ₁[ℝ] ℝ
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSAC_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L175).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.coe_restrictSAC_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean#L175).
 
 ```lean
 lemma coe_restrictSAC_apply (f : A₁ →ₚ₁[ℂ] ℂ) (x : selfAdjoint A₁) :
@@ -120,4 +120,4 @@ lemma coe_restrictSAC_apply (f : A₁ →ₚ₁[ℂ] ℂ) (x : selfAdjoint A₁)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean)

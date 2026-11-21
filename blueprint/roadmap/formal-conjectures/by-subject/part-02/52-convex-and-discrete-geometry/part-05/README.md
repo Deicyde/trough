@@ -13,7 +13,7 @@ navigation: transparent
 - [Ben Green's Open Problem 70](../../../../greens-open-problems/part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](../../../../greens-open-problems/part-03/ben-greens-open-problem-72.md)
 - [Ben Green's Open Problem 74](../../../../greens-open-problems/part-03/ben-greens-open-problem-74.md)
-- [Ben Green's Open Problem 75](../../../../greens-open-problems/part-03/ben-greens-open-problem-75.md)
+- [Ben Green's Open Problem 75](../../../../greens-open-problems/part-04/ben-greens-open-problem-75.md)
 - [Ben Green's Open Problem 76](../../../../greens-open-problems/part-04/ben-greens-open-problem-76.md)
 - [Ben Green's Open Problem 77](../../../../greens-open-problems/part-04/ben-greens-open-problem-77.md)
 - [Green's Open Problem 85](../../../../greens-open-problems/part-04/greens-open-problem-85.md)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Majorization and weak log-majorization
 
-The module `QuantumInfo.ForMathlib.Majorization`, [QuantumInfo/ForMathlib/Majorization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean): 41 declarations, 34 with a docstring.
+The module `QuantumInfo.ForMathlib.Majorization`, [QuantumInfo/ForMathlib/Majorization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean): 41 declarations, 34 with a docstring.
 
 > This file develops the theory of majorization for finite sequences, leading to
 > the key singular value inequality needed for the Schatten–Hölder inequality.
@@ -22,7 +22,7 @@ The module `QuantumInfo.ForMathlib.Majorization`, [QuantumInfo/ForMathlib/Majori
 
 ## Sorted singular values
 
-**`singularValues`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L41).
+**`singularValues`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L41).
 
 > The singular values of a square complex matrix `A`, defined as the square
 > roots of the eigenvalues of `A†A`. These are indexed by `d` without a
@@ -35,7 +35,7 @@ The module `QuantumInfo.ForMathlib.Majorization`, [QuantumInfo/ForMathlib/Majori
 def singularValues (A : Matrix d d ℂ) : d → ℝ
 ```
 
-**`singularValues_nonneg`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L45).
+**`singularValues_nonneg`**, a lemma, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L45).
 
 > Singular values are nonneg.
 
@@ -44,7 +44,7 @@ lemma singularValues_nonneg (A : Matrix d d ℂ) (i : d) :
     0 ≤ singularValues A i
 ```
 
-**`singularValuesSorted`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L53).
+**`singularValuesSorted`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L53).
 
 > The sorted singular values of a square complex matrix, in decreasing order,
 > indexed by `Fin (Fintype.card d)`.
@@ -56,7 +56,7 @@ noncomputable def singularValuesSorted (A : Matrix d d ℂ) :
     Fin (Fintype.card d) → ℝ
 ```
 
-**`singularValuesSorted_nonneg`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L61).
+**`singularValuesSorted_nonneg`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L61).
 
 > Sorted singular values are nonneg.
 
@@ -65,7 +65,7 @@ lemma singularValuesSorted_nonneg (A : Matrix d d ℂ) (i : Fin (Fintype.card d)
     0 ≤ singularValuesSorted A i
 ```
 
-**`sum_singularValues_rpow_eq_sum_sorted`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L76).
+**`sum_singularValues_rpow_eq_sum_sorted`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L76).
 
 > The sum `∑ singularValues A i ^ p` equals the sum over sorted singular values.
 
@@ -77,7 +77,7 @@ lemma sum_singularValues_rpow_eq_sum_sorted (A : Matrix d d ℂ) (p : ℝ) :
 
 ## Weak log-majorization and its consequences
 
-**`singularValuesSorted_antitone`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L95).
+**`singularValuesSorted_antitone`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L95).
 
 > Sorted singular values are antitone (decreasing).
 
@@ -86,7 +86,7 @@ lemma singularValuesSorted_antitone (A : Matrix d d ℂ) :
     Antitone (singularValuesSorted A)
 ```
 
-**`antitone_mul_of_antitone_nonneg`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L103).
+**`antitone_mul_of_antitone_nonneg`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L103).
 
 > The product of nonneg antitone sequences is antitone.
 
@@ -114,7 +114,7 @@ lemma antitone_mul_of_antitone_nonneg {n : ℕ}
 >   `∏ σ↓(AB) = σ₁(C\_k(AB)) = σ₁(C\_k(A) C\_k(B)) ≤ σ₁(C\_k(A)) σ₁(C\_k(B))
 >             = (∏ σ↓(A))(∏ σ↓(B))`.
 
-**`AllOrdered.fintypeLinearOrderClassical`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L130).
+**`AllOrdered.fintypeLinearOrderClassical`**, an instance, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L130).
 
 > A `LinearOrder` on any `Fintype`, obtained classically via well-ordering.
 
@@ -123,7 +123,7 @@ scoped instance fintypeLinearOrderClassical (α : Type*) [Fintype α] [Decidable
     LinearOrder α
 ```
 
-**`compoundMatrix`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L140).
+**`compoundMatrix`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L140).
 
 > The `k`-th compound (exterior-power) matrix of `M`.
 
@@ -132,7 +132,7 @@ noncomputable def compoundMatrix (M : Matrix d d ℂ) (k : ℕ) :
     Matrix {S : Finset d // S.card = k} {S : Finset d // S.card = k} ℂ
 ```
 
-**`cauchyBinet`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L150).
+**`cauchyBinet`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L150).
 
 > **Cauchy–Binet formula** for rectangular matrices: if `A` is `m × n` and `B` is
 > `n × m`, then `det(A * B) = ∑_S det(A[:,S]) * det(B[S,:])` where the sum is
@@ -147,7 +147,7 @@ lemma cauchyBinet {m : ℕ} {n : Type*} [Fintype n] [DecidableEq n] [LinearOrder
       (B.submatrix (S.1.orderEmbOfFin S.2) id).det
 ```
 
-**`compoundMatrix_mul`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L237).
+**`compoundMatrix_mul`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L237).
 
 > The `compoundMatrix` of a product is the product of the `compoundMatrix`s.
 
@@ -156,7 +156,7 @@ lemma compoundMatrix_mul (M N : Matrix d d ℂ) (k : ℕ) :
     compoundMatrix (M * N) k = compoundMatrix M k * compoundMatrix N k
 ```
 
-**`compoundMatrix_conjTranspose`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L244).
+**`compoundMatrix_conjTranspose`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L244).
 
 > `compoundMatrix` commutes with `conjTranspose`.
 
@@ -165,7 +165,7 @@ lemma compoundMatrix_conjTranspose (M : Matrix d d ℂ) (k : ℕ) :
     compoundMatrix M.conjTranspose k = (compoundMatrix M k).conjTranspose
 ```
 
-**`compoundMatrix_diagonal`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L255).
+**`compoundMatrix_diagonal`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L255).
 
 > The compound matrix of a diagonal matrix is diagonal, with entries being
 > products of eigenvalues over k-subsets.
@@ -177,7 +177,7 @@ lemma compoundMatrix_diagonal (f : d → ℂ) (k : ℕ) :
       ∏ i : Fin k, f (S.1.orderEmbOfFin S.2 i))
 ```
 
-**`compoundMatrix_unitary`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L278).
+**`compoundMatrix_unitary`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L278).
 
 > The compound matrix of a unitary matrix is unitary.
 
@@ -187,7 +187,7 @@ lemma compoundMatrix_unitary (U : Matrix d d ℂ)
     compoundMatrix U k ∈ Matrix.unitaryGroup {S : Finset d // S.card = k} ℂ
 ```
 
-**`compoundUnitary`**, a def, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L287).
+**`compoundUnitary`**, a def, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L287).
 
 > The `k`-th compound matrix bundled as a unitary.
 
@@ -196,7 +196,7 @@ noncomputable def compoundUnitary (U : Matrix.unitaryGroup d ℂ) (k : ℕ) :
     Matrix.unitaryGroup {S : Finset d // S.card = k} ℂ
 ```
 
-**`compound_card_pos`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L293).
+**`compound_card_pos`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L293).
 
 > The index set of the `k`-th compound matrix is nonempty when `k ≤ card d`.
 
@@ -205,7 +205,7 @@ lemma compound_card_pos (k : ℕ) (hk : k ≤ Fintype.card d) :
     0 < Fintype.card {S : Finset d // S.card = k}
 ```
 
-**`compoundZero`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L301).
+**`compoundZero`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L301).
 
 > The canonical zero index in `Fin (Fintype.card {S : Finset d // S.card = k})`,
 > witnessed by `compound_card_pos`.
@@ -215,7 +215,7 @@ def compoundZero (k : ℕ) (hk : k ≤ Fintype.card d) :
     Fin (Fintype.card {S : Finset d // S.card = k})
 ```
 
-**`singularValues_compoundMatrix_eq`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L311).
+**`singularValues_compoundMatrix_eq`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L311).
 
 > The eigenvalues of the compound matrix of a Hermitian matrix are the products
 > of eigenvalues over k-subsets. More precisely, the singular values of
@@ -230,7 +230,7 @@ lemma singularValues_compoundMatrix_eq (M : Matrix d d ℂ) (k : ℕ) :
     ∏ i : Fin k, singularValues M (S.1.orderEmbOfFin S.2 i)
 ```
 
-**`prod_le_prod_sorted`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L344).
+**`prod_le_prod_sorted`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L344).
 
 > The product of nonneg values over a k-subset is at most the product of the
 > k largest values.
@@ -243,7 +243,7 @@ lemma prod_le_prod_sorted {n : ℕ} {f : Fin n → ℝ}
     ∏ i : Fin k, f (g i) ≤ ∏ i : Fin k, f ⟨i.val, by omega⟩
 ```
 
-**`singularValuesSorted_zero_eq_sup`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L383).
+**`singularValuesSorted_zero_eq_sup`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L383).
 
 > The 0th sorted singular value is the maximum of the singular values.
 
@@ -255,7 +255,7 @@ lemma singularValuesSorted_zero_eq_sup {e : Type*} [Fintype e] [DecidableEq e]
       (singularValues A)
 ```
 
-**`singularValues_mem_sorted`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L407).
+**`singularValues_mem_sorted`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L407).
 
 > Each singular value appears in the sorted list.
 
@@ -265,7 +265,7 @@ lemma singularValues_mem_sorted {e : Type*} [Fintype e] [DecidableEq e]
     ∃ j : Fin (Fintype.card e), singularValues A i = singularValuesSorted A j
 ```
 
-**`singularValuesSorted_mem_values`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L416).
+**`singularValuesSorted_mem_values`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L416).
 
 > Each sorted singular value appears among the original singular values.
 
@@ -275,7 +275,7 @@ lemma singularValuesSorted_mem_values {e : Type*} [Fintype e] [DecidableEq e]
     ∃ i : e, singularValuesSorted A j = singularValues A i
 ```
 
-**`singularValues_compoundMatrix_perm`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L427).
+**`singularValues_compoundMatrix_perm`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L427).
 
 > Stronger version of `singularValues_compoundMatrix_eq` that exposes the permutation.
 
@@ -286,7 +286,7 @@ lemma singularValues_compoundMatrix_perm (M : Matrix d d ℂ) (k : ℕ) :
     ∏ i : Fin k, singularValues M (S.1.orderEmbOfFin S.2 i)
 ```
 
-**`singularValues_compoundMatrix_rev`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L459).
+**`singularValues_compoundMatrix_rev`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L459).
 
 > Converse of `singularValues_compoundMatrix_eq`: every singular value of the
 > compound matrix is a product of singular values of M over some k-subset.
@@ -299,7 +299,7 @@ lemma singularValues_compoundMatrix_rev (M : Matrix d d ℂ) (k : ℕ)
     ∏ i : Fin k, singularValues M (S.1.orderEmbOfFin S.2 i)
 ```
 
-**`exists_sorting_equiv`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L470).
+**`exists_sorting_equiv`**, a lemma, [line 470](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L470).
 
 > There exists a bijection `σ : Fin (card d) ≃ d` such that
 > `singularValues M (σ i) = singularValuesSorted M i` for all `i`.
@@ -310,7 +310,7 @@ lemma exists_sorting_equiv (M : Matrix d d ℂ) :
     ∀ i, singularValues M (σ i) = singularValuesSorted M i
 ```
 
-**`prod_singularValues_subset_le_sorted_prod`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L524).
+**`prod_singularValues_subset_le_sorted_prod`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L524).
 
 > For any k-subset S of d, the product of singular values over S is ≤ the
 > product of the top k sorted singular values.
@@ -322,7 +322,7 @@ lemma prod_singularValues_subset_le_sorted_prod (M : Matrix d d ℂ) (k : ℕ)
     ∏ i : Fin k, singularValuesSorted M ⟨i.val, by omega⟩
 ```
 
-**`exists_subset_prod_eq_sorted_prod`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L543).
+**`exists_subset_prod_eq_sorted_prod`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L543).
 
 ```lean
 lemma exists_subset_prod_eq_sorted_prod (M : Matrix d d ℂ) (k : ℕ)
@@ -332,7 +332,7 @@ lemma exists_subset_prod_eq_sorted_prod (M : Matrix d d ℂ) (k : ℕ)
     ∏ i : Fin k, singularValuesSorted M ⟨i.val, by omega⟩
 ```
 
-**`prod_singularValuesSorted_eq_compoundSV`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L629).
+**`prod_singularValuesSorted_eq_compoundSV`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L629).
 
 ```lean
 lemma prod_singularValuesSorted_eq_compoundSV (M : Matrix d d ℂ) (k : ℕ)
@@ -344,7 +344,7 @@ lemma prod_singularValuesSorted_eq_compoundSV (M : Matrix d d ℂ) (k : ℕ)
       rw [this]; exact Nat.choose_pos hk⟩
 ```
 
-**`IsHermitian.inner_le_sup_eigenvalue_mul_inner`**, a lemma, [line 654](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L654).
+**`IsHermitian.inner_le_sup_eigenvalue_mul_inner`**, a lemma, [line 654](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L654).
 
 > The **Rayleigh quotient bound**:
 > For a Hermitian matrix H with eigenvalues λ, we have
@@ -362,7 +362,7 @@ lemma IsHermitian.inner_le_sup_eigenvalue_mul_inner
       hH.eigenvalues * Complex.re (star v ⬝ᵥ v)
 ```
 
-**`eigenvalue_le_singularValuesSorted_sq`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L702).
+**`eigenvalue_le_singularValuesSorted_sq`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L702).
 
 ```lean
 lemma eigenvalue_le_singularValuesSorted_sq {e : Type*} [Fintype e] [DecidableEq e]
@@ -371,7 +371,7 @@ lemma eigenvalue_le_singularValuesSorted_sq {e : Type*} [Fintype e] [DecidableEq
     (singularValuesSorted A ⟨0, h⟩) ^ 2
 ```
 
-**`quadratic_form_le_singularValuesSorted_sq`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L719).
+**`quadratic_form_le_singularValuesSorted_sq`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L719).
 
 > The quadratic form of `A† A` is bounded by (max singular value)² * ‖v‖².
 
@@ -382,7 +382,7 @@ lemma quadratic_form_le_singularValuesSorted_sq {e : Type*} [Fintype e] [Decidab
     (singularValuesSorted A ⟨0, h⟩) ^ 2 * Complex.re (star v ⬝ᵥ v)
 ```
 
-**`singularValuesSorted_mul_le`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L735).
+**`singularValuesSorted_mul_le`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L735).
 
 > The largest singular value of a matrix product is at most the product of the
 > largest singular values: `σ₁(M * N) ≤ σ₁(M) * σ₁(N)`.
@@ -395,7 +395,7 @@ lemma singularValuesSorted_mul_le {e : Type*} [Fintype e] [DecidableEq e]
     singularValuesSorted M ⟨0, h⟩ * singularValuesSorted N ⟨0, h⟩
 ```
 
-**`horn_weak_log_majorization`**, a lemma, [line 776](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L776).
+**`horn_weak_log_majorization`**, a lemma, [line 776](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L776).
 
 > Horn's inequality (weak log-majorization of singular values):
 > For all `k`, `∏_{i<k} σ↓ᵢ(AB) ≤ ∏_{i<k} σ↓ᵢ(A) · σ↓ᵢ(B)`.
@@ -412,7 +412,7 @@ lemma horn_weak_log_majorization (A B : Matrix d d ℂ) (k : ℕ)
 
 ### Weak log-majorization implies sum of powers inequality
 
-**`rpow_antitone_of_nonneg_antitone`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L804).
+**`rpow_antitone_of_nonneg_antitone`**, a lemma, [line 804](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L804).
 
 > Raising nonneg antitone sequences to a positive power preserves antitonicity.
 
@@ -423,7 +423,7 @@ lemma rpow_antitone_of_nonneg_antitone {n : ℕ}
     Antitone (fun i => f i ^ r)
 ```
 
-**`rpow_preserves_weak_log_maj`**, a lemma, [line 811](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L811).
+**`rpow_preserves_weak_log_maj`**, a lemma, [line 811](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L811).
 
 > Weak log-majorization is preserved under positive powers.
 
@@ -440,7 +440,7 @@ lemma rpow_preserves_weak_log_maj {n : ℕ}
       ∏ i : Fin k, (fun j => y j ^ r) ⟨i.val, by omega⟩
 ```
 
-**`sum_mul_log_nonneg_of_weak_log_maj`**, a lemma, [line 849](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L849).
+**`sum_mul_log_nonneg_of_weak_log_maj`**, a lemma, [line 849](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L849).
 
 ```lean
 lemma sum_mul_log_nonneg_of_weak_log_maj {n : ℕ}
@@ -453,14 +453,14 @@ lemma sum_mul_log_nonneg_of_weak_log_maj {n : ℕ}
     0 ≤ ∑ i, x i * Real.log (y i / x i)
 ```
 
-**`sub_ge_mul_log_div`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L909).
+**`sub_ge_mul_log_div`**, a lemma, [line 909](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L909).
 
 ```lean
 lemma sub_ge_mul_log_div {a b : ℝ} (ha : 0 < a) (hb : 0 < b) :
     b - a ≥ a * Real.log (b / a)
 ```
 
-**`weak_log_maj_sum_le`**, a lemma, [line 914](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L914).
+**`weak_log_maj_sum_le`**, a lemma, [line 914](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L914).
 
 ```lean
 lemma weak_log_maj_sum_le {n : ℕ}
@@ -473,7 +473,7 @@ lemma weak_log_maj_sum_le {n : ℕ}
     ∑ i, x i ≤ ∑ i, y i
 ```
 
-**`weak_log_maj_sum_rpow_le`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L944).
+**`weak_log_maj_sum_rpow_le`**, a lemma, [line 944](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L944).
 
 > Weak log-majorization of nonneg antitone sequences implies the sum of
 > powers inequality.
@@ -492,7 +492,7 @@ lemma weak_log_maj_sum_rpow_le {n : ℕ}
 
 ## Key singular value inequality for products
 
-**`sum_rpow_singularValues_mul_le`**, a lemma, [line 962](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L962).
+**`sum_rpow_singularValues_mul_le`**, a lemma, [line 962](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L962).
 
 ```lean
 lemma sum_rpow_singularValues_mul_le (A B : Matrix d d ℂ) {r : ℝ} (hr : 0 < r) :
@@ -503,7 +503,7 @@ lemma sum_rpow_singularValues_mul_le (A B : Matrix d d ℂ) {r : ℝ} (hr : 0 < 
 
 ## Hölder inequality for singular values
 
-**`holder_step_for_singularValues`**, a lemma, [line 995](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean#L995).
+**`holder_step_for_singularValues`**, a lemma, [line 995](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean#L995).
 
 > The finite-sum Hölder inequality applied to sequences of r-th powers of
 > sorted singular values.
@@ -535,4 +535,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/Majorization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Majorization.lean)
+- [QuantumInfo/ForMathlib/Majorization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/Majorization.lean)

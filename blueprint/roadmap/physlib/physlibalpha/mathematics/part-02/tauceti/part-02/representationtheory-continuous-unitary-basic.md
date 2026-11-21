@@ -8,7 +8,7 @@ proof: formalized
 
 # Unitary continuous representations
 
-The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Unitary.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean): 20 declarations, 20 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Unitary.Basic`, [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean): 20 declarations, 20 with a docstring; 1 private, not shown.
 
 > This file defines when a continuous representation preserves a real or complex inner product.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Uni
 
 ## A. Development
 
-**`ContRepresentation.IsUnitary`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L65).
+**`ContRepresentation.IsUnitary`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L65).
 
 > A continuous representation is unitary when every action operator preserves the inner
 > product.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.RepresentationTheory.Continuous.Uni
 def IsUnitary (π : ContRepresentation 𝕜 G V) : Prop
 ```
 
-**`ContRepresentation.isUnitary_iff_norm_map`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L69).
+**`ContRepresentation.isUnitary_iff_norm_map`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L69).
 
 > A representation is unitary exactly when every action map preserves norms.
 
@@ -51,7 +51,7 @@ lemma isUnitary_iff_norm_map (π : ContRepresentation 𝕜 G V) :
     IsUnitary π ↔ ∀ g v, ‖π g v‖ = ‖v‖
 ```
 
-**`ContRepresentation.isUnitary_iff_isometry`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L78).
+**`ContRepresentation.isUnitary_iff_isometry`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L78).
 
 > A representation is unitary exactly when every action map is an isometry.
 
@@ -60,7 +60,7 @@ lemma isUnitary_iff_isometry (π : ContRepresentation 𝕜 G V) :
     IsUnitary π ↔ ∀ g, Isometry (π g)
 ```
 
-**`ContRepresentation.IsUnitary.inner_map_map`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L89).
+**`ContRepresentation.IsUnitary.inner_map_map`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L89).
 
 > A unitary representation preserves the inner product.
 
@@ -69,7 +69,7 @@ lemma inner_map_map (hπ : IsUnitary π) (g : G) (v w : V) :
     ⟪π g v, π g w⟫_𝕜 = ⟪v, w⟫_𝕜
 ```
 
-**`ContRepresentation.IsUnitary.norm_map`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L95).
+**`ContRepresentation.IsUnitary.norm_map`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L95).
 
 > Every action map of a unitary representation preserves norms.
 
@@ -78,7 +78,7 @@ lemma norm_map (hπ : IsUnitary π) (g : G) (v : V) :
     ‖π g v‖ = ‖v‖
 ```
 
-**`ContRepresentation.IsUnitary.norm_le_one`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L100).
+**`ContRepresentation.IsUnitary.norm_le_one`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L100).
 
 > Every action operator of a unitary representation has operator norm at most `1`.
 
@@ -86,7 +86,7 @@ lemma norm_map (hπ : IsUnitary π) (g : G) (v : V) :
 lemma norm_le_one (hπ : IsUnitary π) (g : G) : ‖π g‖ ≤ 1
 ```
 
-**`ContRepresentation.IsUnitary.exists_norm_le`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L105).
+**`ContRepresentation.IsUnitary.exists_norm_le`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L105).
 
 > The action operators of a unitary representation are uniformly bounded, in the form taken
 > by the integrated-form API.
@@ -95,7 +95,7 @@ lemma norm_le_one (hπ : IsUnitary π) (g : G) : ‖π g‖ ≤ 1
 lemma exists_norm_le (hπ : IsUnitary π) : ∃ C, ∀ g, ‖π g‖ ≤ C
 ```
 
-**`ContRepresentation.IsUnitary.isometry`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L109).
+**`ContRepresentation.IsUnitary.isometry`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L109).
 
 > Every action map of a unitary representation is an isometry.
 
@@ -103,7 +103,7 @@ lemma exists_norm_le (hπ : IsUnitary π) : ∃ C, ∀ g, ‖π g‖ ≤ C
 lemma isometry (hπ : IsUnitary π) (g : G) : Isometry (π g)
 ```
 
-**`ContRepresentation.IsUnitary.injective`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L113).
+**`ContRepresentation.IsUnitary.injective`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L113).
 
 > Every action map of a unitary representation is injective.
 
@@ -111,7 +111,7 @@ lemma isometry (hπ : IsUnitary π) (g : G) : Isometry (π g)
 lemma injective (hπ : IsUnitary π) (g : G) : Function.Injective (π g)
 ```
 
-**`ContRepresentation.IsUnitary.restrict`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L117).
+**`ContRepresentation.IsUnitary.restrict`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L117).
 
 > Restriction along a monoid homomorphism preserves unitarity.
 
@@ -120,7 +120,7 @@ lemma restrict {H : Type*} [Monoid H] (hπ : IsUnitary π) (φ : H →* G) :
     IsUnitary (π.restrict φ)
 ```
 
-**`ContRepresentation.IsUnitary.subrepresentation`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L122).
+**`ContRepresentation.IsUnitary.subrepresentation`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L122).
 
 > The restriction of a unitary representation to an invariant submodule is unitary.
 
@@ -129,7 +129,7 @@ lemma subrepresentation (hπ : IsUnitary π) {W : Submodule 𝕜 V}
     (hW : ∀ g, ∀ v ∈ W, π g v ∈ W) : IsUnitary (subrepresentation π W hW)
 ```
 
-**`ContRepresentation.IsUnitary.norm_inner_map_le`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L130).
+**`ContRepresentation.IsUnitary.norm_inner_map_le`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L130).
 
 > A matrix coefficient of a unitary representation is bounded by the product of the vector
 > norms.
@@ -139,7 +139,7 @@ lemma norm_inner_map_le (hπ : IsUnitary π) (g : G) (v w : V) :
     ‖⟪π g v, w⟫_𝕜‖ ≤ ‖v‖ * ‖w‖
 ```
 
-**`ContRepresentation.IsUnitary.adjoint_comp_self`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L141).
+**`ContRepresentation.IsUnitary.adjoint_comp_self`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L141).
 
 > The adjoint of a unitary action operator is a left inverse.
 
@@ -148,7 +148,7 @@ lemma adjoint_comp_self (hπ : IsUnitary π) (g : G) :
     (ContinuousLinearMap.adjoint (π g)).comp (π g) = 1
 ```
 
-**`ContRepresentation.isUnitary_trivial`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L150).
+**`ContRepresentation.isUnitary_trivial`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L150).
 
 > The trivial continuous representation is unitary.
 
@@ -157,7 +157,7 @@ lemma isUnitary_trivial :
     IsUnitary (ContRepresentation.trivial 𝕜 G V)
 ```
 
-**`ContRepresentation.isUnitary_iff_mem_unitary`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L165).
+**`ContRepresentation.isUnitary_iff_mem_unitary`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L165).
 
 > For a group representation, inner-product preservation is equivalent to every action operator
 > belonging to Mathlib's unitary submonoid.
@@ -167,7 +167,7 @@ lemma isUnitary_iff_mem_unitary (π : ContRepresentation 𝕜 G V) :
     IsUnitary π ↔ ∀ g, π g ∈ unitary (V →L[𝕜] V)
 ```
 
-**`ContRepresentation.IsUnitary.mem_unitary`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L179).
+**`ContRepresentation.IsUnitary.mem_unitary`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L179).
 
 > Every action operator of a unitary group representation belongs to Mathlib's `unitary`
 > submonoid.
@@ -177,7 +177,7 @@ lemma mem_unitary (hπ : IsUnitary π) (g : G) :
     π g ∈ unitary (V →L[𝕜] V)
 ```
 
-**`ContRepresentation.IsUnitary.self_comp_adjoint`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L184).
+**`ContRepresentation.IsUnitary.self_comp_adjoint`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L184).
 
 > The adjoint of a unitary action operator is a right inverse.
 
@@ -186,7 +186,7 @@ lemma self_comp_adjoint (hπ : IsUnitary π) (g : G) :
     (π g).comp (ContinuousLinearMap.adjoint (π g)) = 1
 ```
 
-**`ContRepresentation.IsUnitary.inner_map_left`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L193).
+**`ContRepresentation.IsUnitary.inner_map_left`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L193).
 
 > Moving a unitary action from the first inner-product argument to the second replaces the group
 > element by its inverse.
@@ -196,7 +196,7 @@ lemma inner_map_left (hπ : IsUnitary π) (g : G) (v w : V) :
     ⟪π g v, w⟫_𝕜 = ⟪v, π g⁻¹ w⟫_𝕜
 ```
 
-**`ContRepresentation.IsUnitary.inner_map_right`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L200).
+**`ContRepresentation.IsUnitary.inner_map_right`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L200).
 
 > Moving a unitary action from the second inner-product argument to the first replaces the group
 > element by its inverse.
@@ -206,7 +206,7 @@ lemma inner_map_right (hπ : IsUnitary π) (g : G) (v w : V) :
     ⟪v, π g w⟫_𝕜 = ⟪π g⁻¹ v, w⟫_𝕜
 ```
 
-**`ContRepresentation.IsUnitary.adjoint_eq_inv`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L206).
+**`ContRepresentation.IsUnitary.adjoint_eq_inv`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean#L206).
 
 > The adjoint of a unitary action operator is the action of the inverse group element.
 
@@ -221,4 +221,4 @@ lemma adjoint_eq_inv (hπ : IsUnitary π) (g : G) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/RepresentationTheory/Continuous/Unitary/Basic.lean)

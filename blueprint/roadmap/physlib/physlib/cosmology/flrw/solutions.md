@@ -8,7 +8,7 @@ proof: formalized
 
 # Exact solutions of the Friedmann equations
 
-The module `Physlib.Cosmology.FLRW.Solutions`, [Physlib/Cosmology/FLRW/Solutions.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean): 27 declarations, 25 with a docstring.
+The module `Physlib.Cosmology.FLRW.Solutions`, [Physlib/Cosmology/FLRW/Solutions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean): 27 declarations, 25 with a docstring.
 
 ## i. Overview
 
@@ -70,7 +70,7 @@ The module `Physlib.Cosmology.FLRW.Solutions`, [Physlib/Cosmology/FLRW/Solutions
 
 ### A.1. Derivatives of the power-law scale factor
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_powerLaw`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L105).
+**`Cosmology.FLRW.FriedmannEquation.deriv_powerLaw`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L105).
 
 > `∂ₜ (t / t₀) ^ n = n / t₀ (t / t₀) ^ (n - 1)` away from `t.val = 0`.
 
@@ -79,7 +79,7 @@ lemma deriv_powerLaw {t₀ : Time} (ht₀ : t₀.val ≠ 0) (n : ℝ) {t : Time}
     ∂ₜ (fun s : Time => (s.val / t₀.val) ^ n) t = n / t₀.val * (t.val / t₀.val) ^ (n - 1)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_deriv_powerLaw`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L119).
+**`Cosmology.FLRW.FriedmannEquation.deriv_deriv_powerLaw`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L119).
 
 > `∂ₜ ∂ₜ (t / t₀) ^ n = n (n - 1) / t₀² (t / t₀) ^ (n - 2)` for `0 < t.val`. The first
 > derivative is only known away from `t.val = 0`, which is enough since `0 < t.val` is an open
@@ -94,7 +94,7 @@ lemma deriv_deriv_powerLaw {t₀ : Time} (ht₀ : t₀.val ≠ 0) (n : ℝ) {t :
 
 ### A.2. The Hubble and deceleration parameters
 
-**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_powerLaw`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L143).
+**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_powerLaw`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L143).
 
 > The Hubble parameter of the power-law solution is `n / t` for `0 < t.val`.
 
@@ -104,7 +104,7 @@ lemma hubbleConstant_powerLaw {t₀ : Time} (ht₀ : 0 < t₀.val) (n : ℝ) {t 
     hubbleConstant (fun s : Time => (s.val / t₀.val) ^ n) t = n / t.val
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_powerLaw`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L153).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_powerLaw`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L153).
 
 > The deceleration parameter of the power-law solution is `(1 - n) / n` for `0 < t.val`,
 > `n ≠ 0`.
@@ -115,7 +115,7 @@ lemma decelerationParameter_powerLaw {t₀ : Time} {n : ℝ} (ht₀ : 0 < t₀.v
     decelerationParameter (fun s : Time => (s.val / t₀.val) ^ n) t = (1 - n) / n
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.powerLaw_firstOrderFriedmann`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L165).
+**`Cosmology.FLRW.FriedmannEquation.powerLaw_firstOrderFriedmann`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L165).
 
 > The flat power-law solution solves the first-order Friedmann equation with `k = 0`,
 > `Λ = 0` and the density `ρ = 3 n² / (8 π G t²)` that it imposes, for `0 < t.val`.
@@ -127,7 +127,7 @@ lemma powerLaw_firstOrderFriedmann {t₀ : Time} {G : ℝ} {c : SpeedOfLight} (h
       (fun s => 3 * n ^ 2 / (8 * π * G * s.val ^ 2)) 0 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.powerLaw_secondOrderFriedmann`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L179).
+**`Cosmology.FLRW.FriedmannEquation.powerLaw_secondOrderFriedmann`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L179).
 
 > The second-order Friedmann equation for the flat power-law solution with the pressure
 > `p = w ρ c²`, where `1 + 3 w = 2 (1 - n) / n`, for `0 < t.val`.
@@ -143,7 +143,7 @@ lemma powerLaw_secondOrderFriedmann {t₀ : Time} {G : ℝ} {c : SpeedOfLight} {
 
 ### A.3. The radiation-dominated solution
 
-**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L204).
+**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor`**, a def, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L204).
 
 > The radiation-dominated scale factor `a(t) = (t / t₀) ^ (1/2)`, normalised by `a(t₀) = 1`.
 > The Big Bang is at the origin `t.val = 0` of the time chart; the values for `t.val ≤ 0` are
@@ -153,7 +153,7 @@ lemma powerLaw_secondOrderFriedmann {t₀ : Time} {G : ℝ} {c : SpeedOfLight} {
 noncomputable def radiationScaleFactor (t₀ : Time) : Time → ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor_firstOrderFriedmann`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L209).
+**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor_firstOrderFriedmann`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L209).
 
 > The radiation-dominated solution solves the first-order Friedmann equation with `k = 0`,
 > `Λ = 0` and the density `ρ = 3 / (32 π G t²)`, for `0 < t.val`.
@@ -165,7 +165,7 @@ lemma radiationScaleFactor_firstOrderFriedmann {t₀ : Time} {G : ℝ} {c : Spee
       0 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor_secondOrderFriedmann`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L223).
+**`Cosmology.FLRW.FriedmannEquation.radiationScaleFactor_secondOrderFriedmann`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L223).
 
 > The radiation-dominated solution solves the second-order Friedmann equation with the
 > density `ρ = 3 / (32 π G t²)`, the pressure `p = ρ c² / 3` and `Λ = 0`, for `0 < t.val`.
@@ -177,7 +177,7 @@ lemma radiationScaleFactor_secondOrderFriedmann {t₀ : Time} {G : ℝ} {c : Spe
       (fun s => 3 / (32 * π * G * s.val ^ 2) * (c : ℝ) ^ 2 / 3) 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_radiationScaleFactor`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L238).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_radiationScaleFactor`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L238).
 
 > The deceleration parameter of the radiation-dominated solution is `q = 1`.
 
@@ -187,7 +187,7 @@ lemma decelerationParameter_radiationScaleFactor {t₀ : Time} (ht₀ : 0 < t₀
     decelerationParameter (radiationScaleFactor t₀) t = 1
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_radiationScaleFactor_t₀`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L246).
+**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_radiationScaleFactor_t₀`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L246).
 
 > `H(t₀) = 1 / (2 t₀)` for the radiation-dominated solution, that is `t₀ = 1 / (2 H₀)`.
 
@@ -198,7 +198,7 @@ lemma hubbleConstant_radiationScaleFactor_t₀ {t₀ : Time} (ht₀ : 0 < t₀.v
 
 ### A.4. The Einstein-de Sitter solution
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L261).
+**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L261).
 
 > The Einstein-de Sitter (flat, dust) scale factor `a(t) = (t / t₀) ^ (2/3)`, normalised by
 > `a(t₀) = 1`. The Big Bang is at the origin `t.val = 0` of the time chart; the values for
@@ -208,7 +208,7 @@ lemma hubbleConstant_radiationScaleFactor_t₀ {t₀ : Time} (ht₀ : 0 < t₀.v
 noncomputable def einsteinDeSitterScaleFactor (t₀ : Time) : Time → ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor_firstOrderFriedmann`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L266).
+**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor_firstOrderFriedmann`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L266).
 
 > The Einstein-de Sitter solution solves the first-order Friedmann equation with `k = 0`,
 > `Λ = 0` and the dust density `ρ = 1 / (6 π G t²)`, for `0 < t.val`.
@@ -220,7 +220,7 @@ lemma einsteinDeSitterScaleFactor_firstOrderFriedmann {t₀ : Time} {G : ℝ} {c
       0 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor_secondOrderFriedmann`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L280).
+**`Cosmology.FLRW.FriedmannEquation.einsteinDeSitterScaleFactor_secondOrderFriedmann`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L280).
 
 > The Einstein-de Sitter solution solves the second-order Friedmann equation with the dust
 > density `ρ = 1 / (6 π G t²)`, `p = 0` and `Λ = 0`, for `0 < t.val`.
@@ -232,7 +232,7 @@ lemma einsteinDeSitterScaleFactor_secondOrderFriedmann {t₀ : Time} {G : ℝ} {
       (fun _ => 0) 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_einsteinDeSitterScaleFactor`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L295).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_einsteinDeSitterScaleFactor`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L295).
 
 > The deceleration parameter of the Einstein-de Sitter solution is `q = 1 / 2`.
 
@@ -242,7 +242,7 @@ lemma decelerationParameter_einsteinDeSitterScaleFactor {t₀ : Time} (ht₀ : 0
     decelerationParameter (einsteinDeSitterScaleFactor t₀) t = 1 / 2
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_einsteinDeSitterScaleFactor_t₀`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L303).
+**`Cosmology.FLRW.FriedmannEquation.hubbleConstant_einsteinDeSitterScaleFactor_t₀`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L303).
 
 > `H(t₀) = 2 / (3 t₀)` for the Einstein-de Sitter solution, that is `t₀ = 2 / (3 H₀)`.
 
@@ -257,7 +257,7 @@ lemma hubbleConstant_einsteinDeSitterScaleFactor_t₀ {t₀ : Time} (ht₀ : 0 <
 > `a(t) = c t` for `t > 0`. That it is Minkowski space in expanding coordinates (vanishing
 > curvature) is not stated here: the FLRW metric is not yet an object of Physlib.
 
-**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor`**, a def, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L321).
+**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor`**, a def, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L321).
 
 > The Milne scale factor `a(t) = c t`. The Big Bang is at the origin `t.val = 0` of the time
 > chart; the values for `t.val ≤ 0` are not part of the model.
@@ -266,20 +266,20 @@ lemma hubbleConstant_einsteinDeSitterScaleFactor_t₀ {t₀ : Time} (ht₀ : 0 <
 noncomputable def milneScaleFactor (c : SpeedOfLight) : Time → ℝ
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_milneScaleFactor`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L324).
+**`Cosmology.FLRW.FriedmannEquation.deriv_milneScaleFactor`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L324).
 
 ```lean
 lemma deriv_milneScaleFactor (c : SpeedOfLight) : ∂ₜ (milneScaleFactor c) = fun _ => (c : ℝ)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.deriv_deriv_milneScaleFactor`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L329).
+**`Cosmology.FLRW.FriedmannEquation.deriv_deriv_milneScaleFactor`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L329).
 
 ```lean
 lemma deriv_deriv_milneScaleFactor (c : SpeedOfLight) :
     ∂ₜ (∂ₜ (milneScaleFactor c)) = fun _ => 0
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor_firstOrderFriedmann`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L337).
+**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor_firstOrderFriedmann`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L337).
 
 > The Milne solution solves the first-order Friedmann equation with `ρ = 0`, `k = -1` and
 > `Λ = 0`, for `t > 0`.
@@ -289,7 +289,7 @@ lemma milneScaleFactor_firstOrderFriedmann {G : ℝ} {c : SpeedOfLight} {t : Tim
     FirstOrderFriedmann (milneScaleFactor c) (fun _ => 0) (-1) 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor_secondOrderFriedmann`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L348).
+**`Cosmology.FLRW.FriedmannEquation.milneScaleFactor_secondOrderFriedmann`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L348).
 
 > The Milne solution solves the second-order Friedmann equation with `ρ = 0`, `p = 0` and
 > `Λ = 0`.
@@ -299,7 +299,7 @@ lemma milneScaleFactor_secondOrderFriedmann {G : ℝ} {c : SpeedOfLight} (t : Ti
     SecondOrderFriedmann (milneScaleFactor c) (fun _ => 0) (fun _ => 0) 0 G c t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_milneScaleFactor`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L355).
+**`Cosmology.FLRW.FriedmannEquation.decelerationParameter_milneScaleFactor`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L355).
 
 > The deceleration parameter of the Milne solution is `q = 0`.
 
@@ -308,7 +308,7 @@ lemma decelerationParameter_milneScaleFactor (c : SpeedOfLight) (t : Time) :
     decelerationParameter (milneScaleFactor c) t = 0
 ```
 
-**`Cosmology.FLRW.milne`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L364).
+**`Cosmology.FLRW.milne`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L364).
 
 > The Milne model, defined on the interval `I = {t | 0 < t.val}` after the Big Bang at
 > `t.val = 0`: the FLRW model with the scale factor `milneScaleFactor c` and the saddle
@@ -318,7 +318,7 @@ lemma decelerationParameter_milneScaleFactor (c : SpeedOfLight) (t : Time) :
 noncomputable def _root_.Cosmology.FLRW.milne (c : SpeedOfLight) : FLRW
 ```
 
-**`Cosmology.FLRW.friedmannSolution_milne`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L381).
+**`Cosmology.FLRW.friedmannSolution_milne`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L381).
 
 > The Milne model filled with the empty cosmic fluid solves the Friedmann equations with
 > `Λ = 0` on its interval `t > 0`.
@@ -336,7 +336,7 @@ lemma _root_.Cosmology.FLRW.friedmannSolution_milne (G : ℝ) (c : SpeedOfLight)
 > `Physlib.Cosmology.FLRW.MatterContent`) and `k c² / a² = 4 π G ρ`, hence a positive curvature
 > parameter when `ρ > 0`. That this equilibrium is unstable is not stated here.
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_density`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L404).
+**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_density`**, a lemma, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L404).
 
 > In the Einstein static universe the dust density is `ρ = Λ c² / (4 π G)`.
 
@@ -346,7 +346,7 @@ lemma einsteinStatic_density {a ρ : Time → ℝ} {Λ G : ℝ} {c : SpeedOfLigh
     ρ t = Λ * (c : ℝ) ^ 2 / (4 * π * G)
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_curvature`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L415).
+**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_curvature`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L415).
 
 > In the Einstein static universe `k c² / a² = 4 π G ρ`.
 
@@ -357,7 +357,7 @@ lemma einsteinStatic_curvature {a ρ : Time → ℝ} {k Λ G : ℝ} {c : SpeedOf
     k * (c : ℝ) ^ 2 / (a t) ^ 2 = 4 * π * G * ρ t
 ```
 
-**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_curvature_pos`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean#L428).
+**`Cosmology.FLRW.FriedmannEquation.einsteinStatic_curvature_pos`**, a lemma, [line 428](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean#L428).
 
 > In the Einstein static universe with positive density, the curvature parameter is
 > positive.
@@ -378,4 +378,4 @@ lemma einsteinStatic_curvature_pos {a ρ : Time → ℝ} {k Λ G : ℝ} {c : Spe
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/Solutions.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/Solutions.lean)
+- [Physlib/Cosmology/FLRW/Solutions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/Solutions.lean)

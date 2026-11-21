@@ -8,7 +8,7 @@ proof: formalized
 
 # Gauge tensors in a general representation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.CovariantDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean): 39 declarations, 22 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.CovariantDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean): 39 declarations, 22 with a docstring.
 
 ## i. Overview
 
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.MatterField.CovariantD
 
 ## A. The dual representation coefficients and gauge tensors in a representation
 
-**`GaugeAlgebraRealization.repCoeff`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L100).
+**`GaugeAlgebraRealization.repCoeff`**, a def, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L100).
 
 > The base-point Taylor coefficient of the representation: include the constant
 > vector into `V`-valued jets, act by `rep U`, differentiate `x` times, evaluate at
@@ -72,7 +72,7 @@ noncomputable def repCoeff (rep : Representation ℂ GJ (SpaceTimeAlgebra ⊗[�
     (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3)) : V →ₗ[ℂ] V
 ```
 
-**`GaugeAlgebraRealization.repDualCoeff`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L109).
+**`GaugeAlgebraRealization.repDualCoeff`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L109).
 
 > The physicists' `∂_x (rep U)^i_j|₀` acting on the complex dual index of a
 > matter-field symbol: the transpose of `repCoeff`. This is the analogue of
@@ -86,7 +86,7 @@ noncomputable def repDualCoeff (rep : Representation ℂ GJ (SpaceTimeAlgebra �
     Module.Dual ℂ V →ₗ[ℂ] Module.Dual ℂ V
 ```
 
-**`GaugeAlgebraRealization.jetEval_rep_of_smul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L117).
+**`GaugeAlgebraRealization.jetEval_rep_of_smul`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L117).
 
 > For a fibrewise representation, evaluating the transform of a jet at the base point
 > is the zeroth Taylor coefficient of the transform of its base-point value: the jet ring
@@ -100,7 +100,7 @@ lemma jetEval_rep_of_smul (rep : Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ
     jetEval (rep U z) = repCoeff rep U 0 (jetEval z)
 ```
 
-**`GaugeAlgebraRealization.repCoeff_zero_mul`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L132).
+**`GaugeAlgebraRealization.repCoeff_zero_mul`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L132).
 
 > The zeroth Taylor coefficients of a fibrewise representation are multiplicative: they
 > form a representation of the jet gauge group on the value space.
@@ -122,7 +122,7 @@ lemma repCoeff_zero_mul (rep : Representation ℂ GJ (SpaceTimeAlgebra ⊗[ℂ] 
 > gauge algebra is a real Lie algebra) and complex-linear in the value slot, matching
 > the complex duals indexing the matter families.
 
-**`GaugeAlgebraRealization.tensorAction`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L164).
+**`GaugeAlgebraRealization.tensorAction`**, a def, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L164).
 
 > The action of an adjoint-valued field on a matter field at the tensor level:
 > multiplication in `B` on the first factors, the ℂ-linear infinitesimal action `act`
@@ -134,7 +134,7 @@ noncomputable def tensorAction (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) :
     (B ⊗[ℝ] 𝔤) →ₗ[ℝ] (B ⊗[ℂ] V) →ₗ[ℂ] B ⊗[ℂ] V
 ```
 
-**`GaugeAlgebraRealization.tensorAction_tmul`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L180).
+**`GaugeAlgebraRealization.tensorAction_tmul`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L180).
 
 ```lean
 lemma tensorAction_tmul (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (b₁ b₂ : B)
@@ -142,7 +142,7 @@ lemma tensorAction_tmul (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (b₁ b₂ : B)
     tensorAction act (b₁ ⊗ₜ[ℝ] c) (b₂ ⊗ₜ[ℂ] v) = (b₁ * b₂) ⊗ₜ[ℂ] act c v
 ```
 
-**`GaugeAlgebraRealization.tensorAction_map_left`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L185).
+**`GaugeAlgebraRealization.tensorAction_map_left`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L185).
 
 ```lean
 lemma tensorAction_map_left (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (Φ : B →ₗ[ℂ] B)
@@ -153,7 +153,7 @@ lemma tensorAction_map_left (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (Φ : B →
       (TensorProduct.map Φ LinearMap.id) (tensorAction act s t)
 ```
 
-**`GaugeAlgebraRealization.tensorAction_one_left`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L201).
+**`GaugeAlgebraRealization.tensorAction_one_left`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L201).
 
 ```lean
 lemma tensorAction_one_left (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (c : 𝔤)
@@ -162,7 +162,7 @@ lemma tensorAction_one_left (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (c : 𝔤)
       (TensorProduct.map LinearMap.id (act c)) t
 ```
 
-**`GaugeAlgebraRealization.tensorAction_map_right_antidiagonal`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L213).
+**`GaugeAlgebraRealization.tensorAction_map_right_antidiagonal`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L213).
 
 > `tensorAction` under an antidiagonal pair of transport families: if the
 > `V`-transports intertwine `act` with the `𝔤`-transports as an
@@ -181,7 +181,7 @@ lemma tensorAction_map_right_antidiagonal (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] 
       (TensorProduct.map LinearMap.id (Tv x)) (tensorAction act s t)
 ```
 
-**`GaugeAlgebraRealization.dualPairEquivC`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L244).
+**`GaugeAlgebraRealization.dualPairEquivC`**, a def, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L244).
 
 > The canonical equivalence between matter fields `B ⊗[ℂ] V` and their component
 > families `φ ↦ F^φ` over the complex dual — `dualPairEquiv` for a general
@@ -191,14 +191,14 @@ lemma tensorAction_map_right_antidiagonal (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] 
 noncomputable def dualPairEquivC : (B ⊗[ℂ] V) ≃ₗ[ℂ] (Module.Dual ℂ V →ₗ[ℂ] B)
 ```
 
-**`GaugeAlgebraRealization.dualPairEquivC_tmul`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L250).
+**`GaugeAlgebraRealization.dualPairEquivC_tmul`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L250).
 
 ```lean
 lemma dualPairEquivC_tmul (b : B) (v : V) (φ : Module.Dual ℂ V) :
     dualPairEquivC (b ⊗ₜ[ℂ] v) φ = φ v • b
 ```
 
-**`GaugeAlgebraRealization.dualPairEquivC_map_left`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L254).
+**`GaugeAlgebraRealization.dualPairEquivC_map_left`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L254).
 
 ```lean
 lemma dualPairEquivC_map_left (Φ : B →ₗ[ℂ] B) (t : B ⊗[ℂ] V)
@@ -207,7 +207,7 @@ lemma dualPairEquivC_map_left (Φ : B →ₗ[ℂ] B) (t : B ⊗[ℂ] V)
       Φ (dualPairEquivC t φ)
 ```
 
-**`GaugeAlgebraRealization.dualPairEquivC_map_right`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L262).
+**`GaugeAlgebraRealization.dualPairEquivC_map_right`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L262).
 
 ```lean
 lemma dualPairEquivC_map_right (T : V →ₗ[ℂ] V) (t : B ⊗[ℂ] V)
@@ -216,7 +216,7 @@ lemma dualPairEquivC_map_right (T : V →ₗ[ℂ] V) (t : B ⊗[ℂ] V)
       dualPairEquivC t (T.dualMap φ)
 ```
 
-**`GaugeAlgebraRealization.symm_comp_left_C`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L270).
+**`GaugeAlgebraRealization.symm_comp_left_C`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L270).
 
 ```lean
 lemma symm_comp_left_C (Φ : B →ₗ[ℂ] B) (g : Module.Dual ℂ V →ₗ[ℂ] B) :
@@ -224,7 +224,7 @@ lemma symm_comp_left_C (Φ : B →ₗ[ℂ] B) (g : Module.Dual ℂ V →ₗ[ℂ]
       (TensorProduct.map Φ LinearMap.id) (dualPairEquivC.symm g)
 ```
 
-**`GaugeAlgebraRealization.symm_comp_right_C`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L279).
+**`GaugeAlgebraRealization.symm_comp_right_C`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L279).
 
 ```lean
 lemma symm_comp_right_C (T : V →ₗ[ℂ] V) (g : Module.Dual ℂ V →ₗ[ℂ] B) :
@@ -232,7 +232,7 @@ lemma symm_comp_right_C (T : V →ₗ[ℂ] V) (g : Module.Dual ℂ V →ₗ[ℂ]
       (TensorProduct.map LinearMap.id T) (dualPairEquivC.symm g)
 ```
 
-**`GaugeAlgebraRealization.actionFam`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L292).
+**`GaugeAlgebraRealization.actionFam`**, a def, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L292).
 
 > The action of an adjoint-indexed component family on a matter one, through the
 > infinitesimal action `act`: assemble both into fields, act by `tensorAction`, read
@@ -245,7 +245,7 @@ noncomputable def actionFam (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
     Module.Dual ℂ V →ₗ[ℂ] B
 ```
 
-**`GaugeAlgebraRealization.actionFam_add_left`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L297).
+**`GaugeAlgebraRealization.actionFam_add_left`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L297).
 
 ```lean
 lemma actionFam_add_left (f₁ f₂ : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
@@ -253,7 +253,7 @@ lemma actionFam_add_left (f₁ f₂ : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
     actionFam act (f₁ + f₂) g = actionFam act f₁ g + actionFam act f₂ g
 ```
 
-**`GaugeAlgebraRealization.actionFam_add_right`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L302).
+**`GaugeAlgebraRealization.actionFam_add_right`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L302).
 
 ```lean
 lemma actionFam_add_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
@@ -261,21 +261,21 @@ lemma actionFam_add_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
     actionFam act f (g₁ + g₂) = actionFam act f g₁ + actionFam act f g₂
 ```
 
-**`GaugeAlgebraRealization.actionFam_zero_left`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L307).
+**`GaugeAlgebraRealization.actionFam_zero_left`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L307).
 
 ```lean
 lemma actionFam_zero_left (g : Module.Dual ℂ V →ₗ[ℂ] B) :
     actionFam act 0 g = 0
 ```
 
-**`GaugeAlgebraRealization.actionFam_zero_right`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L311).
+**`GaugeAlgebraRealization.actionFam_zero_right`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L311).
 
 ```lean
 lemma actionFam_zero_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     actionFam act f 0 = 0
 ```
 
-**`GaugeAlgebraRealization.actionFam_sum_left`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L315).
+**`GaugeAlgebraRealization.actionFam_sum_left`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L315).
 
 ```lean
 lemma actionFam_sum_left (S : Multiset (Module.Dual ℝ 𝔤 →ₗ[ℝ] B))
@@ -283,7 +283,7 @@ lemma actionFam_sum_left (S : Multiset (Module.Dual ℝ 𝔤 →ₗ[ℝ] B))
     actionFam act S.sum g = (S.map fun f => actionFam act f g).sum
 ```
 
-**`GaugeAlgebraRealization.actionFam_sum_right`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L322).
+**`GaugeAlgebraRealization.actionFam_sum_right`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L322).
 
 ```lean
 lemma actionFam_sum_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
@@ -291,7 +291,7 @@ lemma actionFam_sum_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
     actionFam act f S.sum = (S.map fun g => actionFam act f g).sum
 ```
 
-**`GaugeAlgebraRealization.repGauge_actionFam`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L335).
+**`GaugeAlgebraRealization.repGauge_actionFam`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L335).
 
 > The gauge transformation of the action of an affinely-transforming
 > adjoint-indexed family on a linearly-transforming matter family: the action of the
@@ -310,7 +310,7 @@ lemma repGauge_actionFam
       actionFam act f' g' φ + g' (φ ∘ₗ act cf)
 ```
 
-**`GaugeAlgebraRealization.actionFamConv`**, a def, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L389).
+**`GaugeAlgebraRealization.actionFamConv`**, a def, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L389).
 
 > The derived action family `A_ρ · F`: the `s`-derivative of the action of the
 > gauge field on a matter family, given by the Leibniz convolution of the derivative
@@ -324,7 +324,7 @@ noncomputable def actionFamConv
     (s : Multiset (Fin 1 ⊕ Fin 3)) : Module.Dual ℂ V →ₗ[ℂ] B
 ```
 
-**`GaugeAlgebraRealization.covDerivAction`**, a def, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L401).
+**`GaugeAlgebraRealization.covDerivAction`**, a def, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L401).
 
 > The covariant derivative `∇_ρ F = [∂_ρ F] + A_ρ · F` of a matter family of
 > derivative symbols, in the single direction `ρ`: the extra derivative on the symbol
@@ -340,7 +340,7 @@ noncomputable def covDerivAction
     (ρ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) : Module.Dual ℂ V →ₗ[ℂ] B
 ```
 
-**`GaugeAlgebraRealization.covDerivAction_apply`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L409).
+**`GaugeAlgebraRealization.covDerivAction_apply`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L409).
 
 ```lean
 lemma covDerivAction_apply
@@ -351,7 +351,7 @@ lemma covDerivAction_apply
     covDerivAction A act F ρ s φ = F (ρ ::ₘ s) φ + actionFamConv A act ρ F s φ
 ```
 
-**`GaugeAlgebraRealization.covDerivIter`**, a def, [line 423](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L423).
+**`GaugeAlgebraRealization.covDerivIter`**, a def, [line 423](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L423).
 
 > **The iterated covariant derivative** `∇_{l 0} ⋯ ∇_{l (n-1)} F` of a matter family
 > along an ordered tuple of directions: covariant derivatives do not commute (their
@@ -370,7 +370,7 @@ noncomputable def covDerivIter
       Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℂ V →ₗ[ℂ] B
 ```
 
-**`GaugeAlgebraRealization.covDerivIter_zero`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L433).
+**`GaugeAlgebraRealization.covDerivIter_zero`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L433).
 
 ```lean
 lemma covDerivIter_zero (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
@@ -379,7 +379,7 @@ lemma covDerivIter_zero (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
     covDerivIter A act F 0 l = F
 ```
 
-**`GaugeAlgebraRealization.covDerivIter_succ`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L439).
+**`GaugeAlgebraRealization.covDerivIter_succ`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L439).
 
 ```lean
 lemma covDerivIter_succ (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
@@ -397,7 +397,7 @@ lemma covDerivIter_succ (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
 > *subalgebras*, not linear spans — `∇_ρ F − ∂_ρ F` is a sum of products `A · F`,
 > which lies in the algebra generated by the symbols but not in their linear span.
 
-**`GaugeAlgebraRealization.dualPairEquiv_symm_eq_sum`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L459).
+**`GaugeAlgebraRealization.dualPairEquiv_symm_eq_sum`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L459).
 
 > Decomposition of an assembled adjoint-indexed family along a basis of the gauge
 > algebra: the components against the dual basis, tensored with the basis vectors.
@@ -409,7 +409,7 @@ lemma dualPairEquiv_symm_eq_sum {ι : Type*} [Fintype ι]
     dualPairEquiv.symm g = ∑ i, g (bW.coord i) ⊗ₜ[ℝ] bW i
 ```
 
-**`GaugeAlgebraRealization.dualPairEquivC_symm_eq_sum`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L483).
+**`GaugeAlgebraRealization.dualPairEquivC_symm_eq_sum`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L483).
 
 > Decomposition of an assembled matter family along a basis of the value space.
 
@@ -419,7 +419,7 @@ lemma dualPairEquivC_symm_eq_sum {ι : Type*} [Fintype ι] (bW : Module.Basis ι
     dualPairEquivC.symm g = ∑ i, g (bW.coord i) ⊗ₜ[ℂ] bW i
 ```
 
-**`GaugeAlgebraRealization.actionFam_apply_mem`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L507).
+**`GaugeAlgebraRealization.actionFam_apply_mem`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L507).
 
 > The value of an action of families lies in any subalgebra containing the values
 > of both families: the action is a finite sum of products of components.
@@ -431,7 +431,7 @@ lemma actionFam_apply_mem {act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V} {P : Subalgeb
     actionFam act f g φ ∈ P
 ```
 
-**`GaugeAlgebraRealization.covDerivIter_sub_mem`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L521).
+**`GaugeAlgebraRealization.covDerivIter_sub_mem`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L521).
 
 > **Unitriangularity of the covariant matter tower**: the covariant and plain
 > derivative symbols of a matter family differ by an element of the subalgebra
@@ -451,7 +451,7 @@ lemma covDerivIter_sub_mem (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
             t.card < n + s.card ∧ b = F t χ})
 ```
 
-**`GaugeAlgebraRealization.covDerivIter_mem_adjoin_symbols`**, a lemma, [line 598](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L598).
+**`GaugeAlgebraRealization.covDerivIter_mem_adjoin_symbols`**, a lemma, [line 598](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L598).
 
 > Every derivative symbol of the covariant tower is a polynomial in the gauge-field
 > symbols and the matter symbols.
@@ -468,7 +468,7 @@ lemma covDerivIter_mem_adjoin_symbols (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V)
           b = F s φ})
 ```
 
-**`GaugeAlgebraRealization.adjoin_symbols_eq_adjoin_covDerivIter`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L624).
+**`GaugeAlgebraRealization.adjoin_symbols_eq_adjoin_covDerivIter`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L624).
 
 > **The span lemma**: the algebra of symbols generated by the gauge field together
 > with a matter family's *derivative* symbols equals the one generated by the gauge
@@ -499,7 +499,7 @@ lemma adjoin_symbols_eq_adjoin_covDerivIter (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ
 > action is a finite sum of products of components, so only multiplicativity is needed;
 > no derivative operator on the target is involved.
 
-**`GaugeAlgebraRealization.actionFam_map`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L695).
+**`GaugeAlgebraRealization.actionFam_map`**, a lemma, [line 695](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L695).
 
 > The action of an adjoint-indexed family on a matter family is natural in the
 > algebra.
@@ -510,7 +510,7 @@ lemma actionFam_map (act : 𝔤 →ₗ[ℝ] V →ₗ[ℂ] V) (f : Module.Dual �
     actionFam act (Φ.restrictScalars ℝ ∘ₗ f) (Φ ∘ₗ g) = Φ ∘ₗ actionFam act f g
 ```
 
-**`GaugeAlgebraRealization.actionFamConv_map`**, a lemma, [line 708](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L708).
+**`GaugeAlgebraRealization.actionFamConv_map`**, a lemma, [line 708](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L708).
 
 > The derived action family is natural in the algebra.
 
@@ -524,7 +524,7 @@ lemma actionFamConv_map
       = Φ ∘ₗ actionFamConv A act ρ F s
 ```
 
-**`GaugeAlgebraRealization.covDerivAction_map`**, a lemma, [line 725](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L725).
+**`GaugeAlgebraRealization.covDerivAction_map`**, a lemma, [line 725](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L725).
 
 > The covariant derivative of a matter family is natural in the algebra.
 
@@ -538,7 +538,7 @@ lemma covDerivAction_map
       = Φ ∘ₗ covDerivAction A act F ρ s
 ```
 
-**`GaugeAlgebraRealization.covDerivIter_map`**, a lemma, [line 737](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L737).
+**`GaugeAlgebraRealization.covDerivIter_map`**, a lemma, [line 737](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean#L737).
 
 > The iterated covariant derivative of a matter family is natural in the algebra: the
 > image of the tower is the tower of the image families, at every ordered tuple of
@@ -561,4 +561,4 @@ lemma covDerivIter_map
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Self-adjoint elements
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.SelfAdjoint`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean): 12 declarations (1 instance with no name), 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.SelfAdjoint`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean): 12 declarations (1 instance with no name), 6 with a docstring.
 
 > Relating the predicate, subgroup and submodule descriptions of self-adjoint elements.
 
@@ -28,14 +28,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.SelfAdjoint`, [PhyslibA
 
 ## A. Membership in the self-adjoint part
 
-**`selfAdjoint.mem_selfAdjoint_iff_isSelfAdjoint`**, a lemma, [line 48](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L48).
+**`selfAdjoint.mem_selfAdjoint_iff_isSelfAdjoint`**, a lemma, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L48).
 
 ```lean
 lemma mem_selfAdjoint_iff_isSelfAdjoint {R : Type*} [AddGroup R] [StarAddMonoid R] (x : R) :
     x ∈ selfAdjoint R ↔ IsSelfAdjoint x
 ```
 
-**`selfAdjoint.submodule_mem_iff`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L55).
+**`selfAdjoint.submodule_mem_iff`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L55).
 
 ```lean
 lemma submodule_mem_iff {x : A} : (x ∈ submodule R A) ↔ (x ∈ selfAdjoint A)
@@ -43,7 +43,7 @@ lemma submodule_mem_iff {x : A} : (x ∈ submodule R A) ↔ (x ∈ selfAdjoint A
 
 ## B. Forgetting the submodule structure
 
-**`selfAdjoint.submoduleEquiv`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L62).
+**`selfAdjoint.submoduleEquiv`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L62).
 
 > The linear equivalence that forgets the `Submodule` structure on self-adjoint elements.
 
@@ -51,7 +51,7 @@ lemma submodule_mem_iff {x : A} : (x ∈ submodule R A) ↔ (x ∈ selfAdjoint A
 def submoduleEquiv : selfAdjoint.submodule R A ≃ₗ[R] selfAdjoint A
 ```
 
-**`selfAdjoint.submodulePLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L72).
+**`selfAdjoint.submodulePLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L72).
 
 > Forget the `Submodule` structure as a positive linear map.
 
@@ -59,7 +59,7 @@ def submoduleEquiv : selfAdjoint.submodule R A ≃ₗ[R] selfAdjoint A
 def submodulePLM : submodule R A →ₚ[R] selfAdjoint A
 ```
 
-**`selfAdjoint.submodulePLMSymm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L78).
+**`selfAdjoint.submodulePLMSymm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L78).
 
 > Inverse of `submodulePLM`. (There is no `PositiveLinearEquivalence` type.)
 
@@ -69,31 +69,31 @@ def submodulePLMSymm : selfAdjoint A →ₚ[R] submodule R A
 
 ## C. The unit and unital maps
 
-**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L86).
+**An instance with no name**, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L86).
 
 ```lean
 instance : One (submodule R A)
 ```
 
-**`selfAdjoint.val_one_submodule`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L89).
+**`selfAdjoint.val_one_submodule`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L89).
 
 ```lean
 lemma val_one_submodule : ↑(1 : submodule R A) = (1 : A)
 ```
 
-**`selfAdjoint.submoduleEquiv_one`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L90).
+**`selfAdjoint.submoduleEquiv_one`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L90).
 
 ```lean
 lemma submoduleEquiv_one : ↑(submoduleEquiv (R := R) (A := A) 1) = 1
 ```
 
-**`selfAdjoint.submoduleEquiv_symm_one`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L91).
+**`selfAdjoint.submoduleEquiv_symm_one`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L91).
 
 ```lean
 lemma submoduleEquiv_symm_one : ↑(submoduleEquiv (R := R) (A := A).symm 1) = 1
 ```
 
-**`selfAdjoint.submoduleUPLM`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L96).
+**`selfAdjoint.submoduleUPLM`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L96).
 
 > Forget the `Submodule` structure as a unital positive linear map.
 
@@ -101,7 +101,7 @@ lemma submoduleEquiv_symm_one : ↑(submoduleEquiv (R := R) (A := A).symm 1) = 1
 def submoduleUPLM : submodule R A →ₚ₁[R] selfAdjoint A
 ```
 
-**`selfAdjoint.submoduleUPLMSymm`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L103).
+**`selfAdjoint.submoduleUPLMSymm`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L103).
 
 > Inverse of `submoduleUPLM`. (There is no `UnitalPositiveLinearEquivalence` type.)
 
@@ -111,7 +111,7 @@ def submoduleUPLMSymm : selfAdjoint A →ₚ₁[R] submodule R A
 
 ## D. Self-adjoint complex numbers
 
-**`Complex.selfAdjointUPLM`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L118).
+**`Complex.selfAdjointUPLM`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean#L118).
 
 > The map from self-adjoint complex numbers to real numbers as a unital positive linear map.
 
@@ -125,4 +125,4 @@ noncomputable def _root_.Complex.selfAdjointUPLM : selfAdjoint ℂ →ₚ₁[ℝ
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean)

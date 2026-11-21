@@ -8,7 +8,7 @@ proof: formalized
 
 # The field strength in the local gauge field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.FieldStrength`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean): 27 declarations, 25 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.FieldStrength`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean): 27 declarations, 25 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The derivative symbols of the real algebra
 
-**`LocalGaugeFieldAlgebra.derivA`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L80).
+**`LocalGaugeFieldAlgebra.derivA`**, a def, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L80).
 
 > The derivative symbols `∂_s A_μ^φ` of the local gauge field algebra, as a family over
 > the derivative multiset `s` and the spacetime index `μ`: the iterated total derivative of
@@ -56,20 +56,20 @@ noncomputable def derivA (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
     Module.Dual ℝ 𝔤 →ₗ[ℝ] LocalGaugeFieldAlgebra 𝔤
 ```
 
-**`LocalGaugeFieldAlgebra.derivA_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L85).
+**`LocalGaugeFieldAlgebra.derivA_apply`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L85).
 
 ```lean
 lemma derivA_apply (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℝ 𝔤) : derivA 𝔤 s μ φ = iteratedJetDeriv 𝔤 s (ofA 𝔤 μ φ)
 ```
 
-**`LocalGaugeFieldAlgebra.derivA_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L90).
+**`LocalGaugeFieldAlgebra.derivA_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L90).
 
 ```lean
 lemma derivA_zero (μ : Fin 1 ⊕ Fin 3) : derivA 𝔤 0 μ = ofA 𝔤 μ
 ```
 
-**`LocalGaugeFieldAlgebra.derivA_eq_iteratedJetDeriv`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L94).
+**`LocalGaugeFieldAlgebra.derivA_eq_iteratedJetDeriv`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L94).
 
 > The derivative symbols are the iterated derivatives of the undifferentiated symbol.
 
@@ -78,7 +78,7 @@ lemma derivA_eq_iteratedJetDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 �
     (φ : Module.Dual ℝ 𝔤) : derivA 𝔤 s μ φ = iteratedJetDeriv 𝔤 s (derivA 𝔤 0 μ φ)
 ```
 
-**`LocalGaugeFieldAlgebra.gaugeField_eq_one_tmul_derivA`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L99).
+**`LocalGaugeFieldAlgebra.gaugeField_eq_one_tmul_derivA`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L99).
 
 > The complexified symbols `gaugeField` are the images of the real symbols.
 
@@ -87,7 +87,7 @@ lemma gaugeField_eq_one_tmul_derivA (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1
     (φ : Module.Dual ℝ 𝔤) : gaugeField 𝔤 s μ φ = (1 : ℂ) ⊗ₜ[ℝ] derivA 𝔤 s μ φ
 ```
 
-**`LocalGaugeFieldAlgebra.algHom_ext`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L107).
+**`LocalGaugeFieldAlgebra.algHom_ext`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L107).
 
 > Two algebra maps out of the local gauge field algebra agreeing on the derivative
 > symbols `∂_s A_μ^φ` are equal.
@@ -100,7 +100,7 @@ lemma algHom_ext {B : Type} [Semiring B] [Algebra ℝ B] {f g : LocalGaugeFieldA
 
 ## B. The field strength and its covariant derivatives
 
-**`LocalGaugeFieldAlgebra.fieldStrength`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L125).
+**`LocalGaugeFieldAlgebra.fieldStrength`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L125).
 
 > The field strength `F_μν = ∂_μ A_ν − ∂_ν A_μ + ⁅A_μ, A_ν⁆` of the local gauge field
 > algebra: the underived field strength of the family of derivative symbols, in the
@@ -112,7 +112,7 @@ noncomputable def fieldStrength (μ ν : Fin 1 ⊕ Fin 3) :
     Module.Dual ℝ 𝔤 →ₗ[ℝ] LocalGaugeFieldAlgebra 𝔤
 ```
 
-**`LocalGaugeFieldAlgebra.fieldStrength_apply`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L130).
+**`LocalGaugeFieldAlgebra.fieldStrength_apply`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L130).
 
 > The field strength written in the generators of the algebra.
 
@@ -122,7 +122,7 @@ lemma fieldStrength_apply (μ ν : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 𝔤) 
       + bracketFam (ofA 𝔤 μ) (ofA 𝔤 ν) φ
 ```
 
-**`LocalGaugeFieldAlgebra.fieldStrength_swap`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L139).
+**`LocalGaugeFieldAlgebra.fieldStrength_swap`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L139).
 
 > The field strength is antisymmetric in its two covector indices.
 
@@ -131,7 +131,7 @@ lemma fieldStrength_swap (μ ν : Fin 1 ⊕ Fin 3) :
     fieldStrength 𝔤 ν μ = - fieldStrength 𝔤 μ ν
 ```
 
-**`LocalGaugeFieldAlgebra.covDerivFieldStrength`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L148).
+**`LocalGaugeFieldAlgebra.covDerivFieldStrength`**, a def, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L148).
 
 > The iterated covariant derivative `∇_{l₁} ⋯ ∇_{lₙ} F_μν` of the field strength along an
 > ordered list of directions, with `∇_ρ F = ∂_ρ F + ⁅A_ρ, F⁆` the covariant derivative in
@@ -143,7 +143,7 @@ noncomputable def covDerivFieldStrength (l : List (Fin 1 ⊕ Fin 3)) (μ ν : Fi
     Module.Dual ℝ 𝔤 →ₗ[ℝ] LocalGaugeFieldAlgebra 𝔤
 ```
 
-**`LocalGaugeFieldAlgebra.covDerivFieldStrength_nil`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L154).
+**`LocalGaugeFieldAlgebra.covDerivFieldStrength_nil`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L154).
 
 > Zero covariant derivatives: the field strength itself.
 
@@ -159,7 +159,7 @@ lemma covDerivFieldStrength_nil (μ ν : Fin 1 ⊕ Fin 3) :
 > really are the Leibniz rule of the total derivative, so those symbols are the iterated
 > total derivatives `∂_s` of the value at `0`.
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_bracketFam`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L170).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_bracketFam`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L170).
 
 > The Leibniz rule of the iterated total derivative on a bracket of families: the
 > antidiagonal convolution of the iterated derivatives of the two factors.
@@ -171,7 +171,7 @@ lemma iteratedJetDeriv_bracketFam (s : Multiset (Fin 1 ⊕ Fin 3))
       bracketFam (iteratedJetDeriv 𝔤 p.1 ∘ₗ f) (iteratedJetDeriv 𝔤 p.2 ∘ₗ g) φ).sum
 ```
 
-**`LocalGaugeFieldAlgebra.bracketFamConv_derivA`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L200).
+**`LocalGaugeFieldAlgebra.bracketFamConv_derivA`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L200).
 
 > If a family consists of the iterated derivatives of its base value, so does its derived
 > bracket against the gauge field: the Leibniz convolution is the iterated derivative of the
@@ -187,7 +187,7 @@ lemma bracketFamConv_derivA (F : Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℝ 
       = iteratedJetDeriv 𝔤 s (bracketFam (ofA 𝔤 ρ) (F 0) φ)
 ```
 
-**`LocalGaugeFieldAlgebra.covDerivAdjoint_derivA`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L216).
+**`LocalGaugeFieldAlgebra.covDerivAdjoint_derivA`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L216).
 
 > The covariant derivative of a family of iterated derivatives is again a family of
 > iterated derivatives.
@@ -202,7 +202,7 @@ lemma covDerivAdjoint_derivA (F : Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℝ
       = iteratedJetDeriv 𝔤 s (covDerivAdjoint (derivA 𝔤) F ρ 0 φ)
 ```
 
-**`LocalGaugeFieldAlgebra.fieldStrength_derivA`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L232).
+**`LocalGaugeFieldAlgebra.fieldStrength_derivA`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L232).
 
 > The derivative symbols of the field strength are the iterated derivatives of the field
 > strength.
@@ -214,7 +214,7 @@ lemma fieldStrength_derivA (μ ν : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fi
       = iteratedJetDeriv 𝔤 s (fieldStrength 𝔤 μ ν φ)
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedCovDerivAdjoint_fieldStrength_derivA`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L250).
+**`LocalGaugeFieldAlgebra.iteratedCovDerivAdjoint_fieldStrength_derivA`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L250).
 
 > The derivative symbols of the covariant derivatives of the field strength are the
 > iterated derivatives of their base values.
@@ -227,7 +227,7 @@ lemma iteratedCovDerivAdjoint_fieldStrength_derivA (l : List (Fin 1 ⊕ Fin 3))
       = iteratedJetDeriv 𝔤 s (covDerivFieldStrength 𝔤 l μ ν φ)
 ```
 
-**`LocalGaugeFieldAlgebra.covDerivFieldStrength_cons`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L261).
+**`LocalGaugeFieldAlgebra.covDerivFieldStrength_cons`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L261).
 
 > The covariant derivative `∇_ρ F = ∂_ρ F + ⁅A_ρ, F⁆` peeled off the front of the list:
 > the recursion on elements of the algebra.
@@ -248,7 +248,7 @@ lemma covDerivFieldStrength_cons (ρ : Fin 1 ⊕ Fin 3) (l : List (Fin 1 ⊕ Fin
 > complexification. Injectivity of `x ↦ 1 ⊗ₜ x` reads the real law off the complex one; no
 > reality argument beyond that is involved.
 
-**`LocalGaugeFieldAlgebra.one_tmul_iteratedCovDerivAdjoint_fieldStrength`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L288).
+**`LocalGaugeFieldAlgebra.one_tmul_iteratedCovDerivAdjoint_fieldStrength`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L288).
 
 > The complexified covariant tower of the identity realization is the image of the real
 > one.
@@ -262,7 +262,7 @@ lemma one_tmul_iteratedCovDerivAdjoint_fieldStrength (l : List (Fin 1 ⊕ Fin 3)
         (GaugeAlgebraRealization.fieldStrength (gaugeField 𝔤) μ ν) s φ
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_iteratedCovDerivAdjoint_fieldStrength`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L313).
+**`LocalGaugeFieldAlgebra.repJet_iteratedCovDerivAdjoint_fieldStrength`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L313).
 
 > The gauge law of the covariant derivatives of the field strength at every derivative
 > order: a jet acts by the Leibniz convolution of the dual adjoint Taylor coefficients of
@@ -278,7 +278,7 @@ lemma repJet_iteratedCovDerivAdjoint_fieldStrength (U : GJ) (l : List (Fin 1 ⊕
           (jets.adjointDualCoeff U⁻¹ p.1 φ)).sum
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_covDerivFieldStrength`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L332).
+**`LocalGaugeFieldAlgebra.repJet_covDerivFieldStrength`**, a lemma, [line 332](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L332).
 
 > The gauge law of the covariant derivatives of the field strength: a jet acts through
 > the zeroth dual adjoint Taylor coefficient of `U⁻¹` on the adjoint index alone.
@@ -290,7 +290,7 @@ lemma repJet_covDerivFieldStrength (U : GJ) (l : List (Fin 1 ⊕ Fin 3))
       = covDerivFieldStrength 𝔤 l μ ν (jets.adjointDualCoeff U⁻¹ 0 φ)
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_covDerivFieldStrength_eval`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L344).
+**`LocalGaugeFieldAlgebra.repJet_covDerivFieldStrength_eval`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L344).
 
 > On the covariant derivatives of the field strength the local gauge action factors
 > through evaluation: a jet `U` acts through the dual base-point adjoint action of the
@@ -304,7 +304,7 @@ lemma repJet_covDerivFieldStrength_eval (U : GJ) (l : List (Fin 1 ⊕ Fin 3))
       = covDerivFieldStrength 𝔤 l μ ν ((jets.adjoint (jets.eval U⁻¹)).dualMap φ)
 ```
 
-**`LocalGaugeFieldAlgebra.repJet_fieldStrength`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L351).
+**`LocalGaugeFieldAlgebra.repJet_fieldStrength`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L351).
 
 > The field strength transforms in the adjoint.
 
@@ -316,7 +316,7 @@ lemma repJet_fieldStrength (U : GJ) (μ ν : Fin 1 ⊕ Fin 3) (φ : Module.Dual 
 
 ## E. The Lorentz law
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_comp_ofA`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L368).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_comp_ofA`**, a lemma, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L368).
 
 > The Lorentz action on the gauge-field generator, as a linear map.
 
@@ -325,7 +325,7 @@ lemma repLorentzGroup_comp_ofA (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :
     (repLorentzGroup 𝔤 Λ) ∘ₗ ofA 𝔤 μ = ∑ a, L[Λ] a μ • ofA 𝔤 a
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_derivA`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L376).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_derivA`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L376).
 
 > The Lorentz law of the derivative symbols, read off the complexified law
 > `repLorentz_gaugeField` along the injective `x ↦ 1 ⊗ₜ x`.
@@ -338,7 +338,7 @@ lemma repLorentzGroup_derivA (Λ : SL(2,ℂ)) {n : ℕ} (l : Fin n → (Fin 1 �
           ∑ a, L[Λ] a μ • derivA 𝔤 (List.ofFn p) a φ
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_bracketFam_ofA`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L396).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_bracketFam_ofA`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L396).
 
 > The Lorentz action passes through the bracket of a gauge-field generator against a
 > family, mixing the covector index of the generator.
@@ -350,7 +350,7 @@ lemma repLorentzGroup_bracketFam_ofA (Λ : SL(2,ℂ)) (ρ : Fin 1 ⊕ Fin 3)
       = ∑ a, L[Λ] a ρ • bracketFam (ofA 𝔤 a) ((repLorentzGroup 𝔤 Λ) ∘ₗ F) φ
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_fieldStrength`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L409).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_fieldStrength`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L409).
 
 > The Lorentz law of the field strength: both covector indices mix by the columns of the
 > Lorentz matrix, the adjoint index is untouched.
@@ -362,7 +362,7 @@ lemma repLorentzGroup_fieldStrength (Λ : SL(2,ℂ)) (μ ν : Fin 1 ⊕ Fin 3)
       = ∑ a, L[Λ] a μ • ∑ b, L[Λ] b ν • fieldStrength 𝔤 a b φ
 ```
 
-**`LocalGaugeFieldAlgebra.repLorentzGroup_covDerivFieldStrength`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L439).
+**`LocalGaugeFieldAlgebra.repLorentzGroup_covDerivFieldStrength`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean#L439).
 
 > The Lorentz law of the covariant derivatives of the field strength: every covariant
 > slot and both covector indices of the field strength mix by the columns of the Lorentz
@@ -382,4 +382,4 @@ lemma repLorentzGroup_covDerivFieldStrength (Λ : SL(2,ℂ)) {n : ℕ}
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean)

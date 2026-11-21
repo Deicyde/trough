@@ -8,7 +8,7 @@ proof: formalized
 
 # The kinetic terms of the fermion sector
 
-The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.KineticFamilies`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean): 54 declarations, 54 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.KineticFamilies`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean): 54 declarations, 54 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.Kine
 > `IsVectorDualLeftWeyl` and `IsVectorDualRightWeyl` of `MassDimLTEight`, the derivative
 > slot fundamental and the spinor slot dual.
 
-**`StandardModel.IsFermionSector.sum_deriv_one`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L113).
+**`StandardModel.IsFermionSector.sum_deriv_one`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L113).
 
 > A sum over the assignments of one derivative direction is a single sum.
 
@@ -61,7 +61,7 @@ lemma sum_deriv_one {M : Type*} [AddCommMonoid M] (f : (Fin 1 → Fin 1 ⊕ Fin 
     ∑ p : Fin 1 → Fin 1 ⊕ Fin 3, f p = ∑ x : Fin 1 ⊕ Fin 3, f ![x]
 ```
 
-**`StandardModel.IsFermionSector.repLorentz_symbol_deriv_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L124).
+**`StandardModel.IsFermionSector.repLorentz_symbol_deriv_one`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L124).
 
 > The Lorentz transformation of a symbol with one covariant derivative: the derivative
 > slot moves by the columns of the Lorentz matrix and the value index by the
@@ -77,7 +77,7 @@ lemma repLorentz_symbol_deriv_one {V : Type} [AddCommGroup V] [Module ℂ V]
       = ∑ ν, (((SL2C.toLorentzGroup Λ).1 ν μ : ℝ) : ℂ) • X ![ν] (rep.dual Λ φ)
 ```
 
-**`StandardModel.IsFermionSector.repLorentz_component_deriv_one`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L139).
+**`StandardModel.IsFermionSector.repLorentz_component_deriv_one`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L139).
 
 > The Lorentz transformation of a component of a once-derived symbol, when the
 > coordinate functionals `c` are permuted by the contragredient action with coefficients
@@ -95,7 +95,7 @@ lemma repLorentz_component_deriv_one {V : Type} [AddCommGroup V] [Module ℂ V]
       = ∑ ν, ∑ β, ((((SL2C.toLorentzGroup Λ).1 ν μ : ℝ) : ℂ) * m Λ a β) • X ![ν] (c β)
 ```
 
-**`StandardModel.IsFermionSector.isVectorDualLeftWeyl_leftComp`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L155).
+**`StandardModel.IsFermionSector.isVectorDualLeftWeyl_leftComp`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L155).
 
 > Every undotted component family carries a four-vector index and a dual undotted
 > spinor index, at one covariant derivative.
@@ -105,7 +105,7 @@ lemma isVectorDualLeftWeyl_leftComp (i : LeftIdx) :
     IsVectorDualLeftWeyl repLorentz (fun μ => h.leftComp ![μ] i)
 ```
 
-**`StandardModel.IsFermionSector.isVectorDualRightWeyl_rightComp`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L176).
+**`StandardModel.IsFermionSector.isVectorDualRightWeyl_rightComp`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L176).
 
 > Every dotted component family carries a four-vector index and a dual dotted spinor
 > index, at one covariant derivative.
@@ -138,7 +138,7 @@ lemma isVectorDualRightWeyl_rightComp (i : RightIdx) :
 
 ### B.1. The down singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_d`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L228).
+**`StandardModel.IsFermionSector.repGauge_su3_d`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L228).
 
 > A colour transformation moves the colour index of a down-singlet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -150,7 +150,7 @@ lemma repGauge_su3_d (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.dComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_d`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L238).
+**`StandardModel.IsFermionSector.repGauge_su2_d`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L238).
 
 > An isospin transformation fixes a down-singlet symbol, which carries no isospin.
 
@@ -161,7 +161,7 @@ lemma repGauge_su2_d (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.dComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_d`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L247).
+**`StandardModel.IsFermionSector.repGauge_u1_d`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L247).
 
 > A hypercharge transformation scales a down-singlet symbol by the square of the scalar,
 > the down singlet carrying `6Y = 2`.
@@ -175,7 +175,7 @@ lemma repGauge_u1_d (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.2. The conjugate down singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_bard`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L262).
+**`StandardModel.IsFermionSector.repGauge_su3_bard`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L262).
 
 > A colour transformation moves the colour index of a conjugate down-singlet symbol by
 > the matrix itself, the index being fundamental.
@@ -187,7 +187,7 @@ lemma repGauge_su3_bard (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.bardComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_bard`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L272).
+**`StandardModel.IsFermionSector.repGauge_su2_bard`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L272).
 
 > An isospin transformation fixes a conjugate down-singlet symbol.
 
@@ -198,7 +198,7 @@ lemma repGauge_su2_bard (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.bardComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_bard`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L281).
+**`StandardModel.IsFermionSector.repGauge_u1_bard`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L281).
 
 > A hypercharge transformation scales a conjugate down-singlet symbol by the square of
 > the conjugate scalar, the conjugate down singlet carrying `6Y = -2`.
@@ -212,7 +212,7 @@ lemma repGauge_u1_bard (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.3. The up singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_u`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L296).
+**`StandardModel.IsFermionSector.repGauge_su3_u`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L296).
 
 > A colour transformation moves the colour index of an up-singlet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -224,7 +224,7 @@ lemma repGauge_su3_u (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.uComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_u`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L306).
+**`StandardModel.IsFermionSector.repGauge_su2_u`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L306).
 
 > An isospin transformation fixes an up-singlet symbol.
 
@@ -235,7 +235,7 @@ lemma repGauge_su2_u (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.uComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_u`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L315).
+**`StandardModel.IsFermionSector.repGauge_u1_u`**, a lemma, [line 315](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L315).
 
 > A hypercharge transformation scales an up-singlet symbol by the fourth power of the
 > conjugate scalar, the up singlet carrying `6Y = -4`.
@@ -249,7 +249,7 @@ lemma repGauge_u1_u (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.4. The conjugate up singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_baru`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L330).
+**`StandardModel.IsFermionSector.repGauge_su3_baru`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L330).
 
 > A colour transformation moves the colour index of a conjugate up-singlet symbol by the
 > matrix itself, the index being fundamental.
@@ -261,7 +261,7 @@ lemma repGauge_su3_baru (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.baruComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_baru`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L340).
+**`StandardModel.IsFermionSector.repGauge_su2_baru`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L340).
 
 > An isospin transformation fixes a conjugate up-singlet symbol.
 
@@ -272,7 +272,7 @@ lemma repGauge_su2_baru (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.baruComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_baru`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L349).
+**`StandardModel.IsFermionSector.repGauge_u1_baru`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L349).
 
 > A hypercharge transformation scales a conjugate up-singlet symbol by the fourth power
 > of the scalar, the conjugate up singlet carrying `6Y = 4`.
@@ -286,7 +286,7 @@ lemma repGauge_u1_baru (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.5. The quark doublet
 
-**`StandardModel.IsFermionSector.repGauge_su3_Q`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L364).
+**`StandardModel.IsFermionSector.repGauge_su3_Q`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L364).
 
 > A colour transformation moves the colour index of a quark-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -298,7 +298,7 @@ lemma repGauge_su3_Q (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.QComponent f l (s, a, w)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_Q`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L375).
+**`StandardModel.IsFermionSector.repGauge_su2_Q`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L375).
 
 > An isospin transformation moves the isospin index of a quark-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -310,7 +310,7 @@ lemma repGauge_su2_Q (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (V.1 a w) • h.QComponent f l (s, c, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_Q`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L386).
+**`StandardModel.IsFermionSector.repGauge_u1_Q`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L386).
 
 > A hypercharge transformation scales a quark-doublet symbol by the conjugate scalar,
 > the quark doublet carrying `6Y = -1`.
@@ -324,7 +324,7 @@ lemma repGauge_u1_Q (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.6. The conjugate quark doublet
 
-**`StandardModel.IsFermionSector.repGauge_su3_barQ`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L401).
+**`StandardModel.IsFermionSector.repGauge_su3_barQ`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L401).
 
 > A colour transformation moves the colour index of a conjugate quark-doublet symbol by
 > the matrix itself, the index being fundamental.
@@ -336,7 +336,7 @@ lemma repGauge_su3_barQ (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.barQComponent f l (s, a, w)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_barQ`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L413).
+**`StandardModel.IsFermionSector.repGauge_su2_barQ`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L413).
 
 > An isospin transformation moves the isospin index of a conjugate quark-doublet symbol
 > by the matrix itself, the index being fundamental.
@@ -348,7 +348,7 @@ lemma repGauge_su2_barQ (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = ∑ a, V.1 a w • h.barQComponent f l (s, c, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_barQ`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L424).
+**`StandardModel.IsFermionSector.repGauge_u1_barQ`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L424).
 
 > A hypercharge transformation scales a conjugate quark-doublet symbol by the scalar,
 > the conjugate quark doublet carrying `6Y = 1`.
@@ -362,7 +362,7 @@ lemma repGauge_u1_barQ (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.7. The lepton doublet
 
-**`StandardModel.IsFermionSector.repGauge_su3_L`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L439).
+**`StandardModel.IsFermionSector.repGauge_su3_L`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L439).
 
 > A colour transformation fixes a lepton-doublet symbol, which carries no colour.
 
@@ -373,7 +373,7 @@ lemma repGauge_su3_L (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = h.LComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_L`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L448).
+**`StandardModel.IsFermionSector.repGauge_su2_L`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L448).
 
 > An isospin transformation moves the isospin index of a lepton-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -385,7 +385,7 @@ lemma repGauge_su2_L (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (V.1 a w) • h.LComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_L`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L459).
+**`StandardModel.IsFermionSector.repGauge_u1_L`**, a lemma, [line 459](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L459).
 
 > A hypercharge transformation scales a lepton-doublet symbol by the cube of the scalar,
 > the lepton doublet carrying `6Y = 3`.
@@ -399,7 +399,7 @@ lemma repGauge_u1_L (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.8. The conjugate lepton doublet
 
-**`StandardModel.IsFermionSector.repGauge_su3_barL`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L474).
+**`StandardModel.IsFermionSector.repGauge_su3_barL`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L474).
 
 > A colour transformation fixes a conjugate lepton-doublet symbol, which carries no
 > colour.
@@ -411,7 +411,7 @@ lemma repGauge_su3_barL (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = h.barLComponent f l j
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_barL`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L483).
+**`StandardModel.IsFermionSector.repGauge_su2_barL`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L483).
 
 > An isospin transformation moves the isospin index of a conjugate lepton-doublet symbol
 > by the matrix itself, the index being fundamental.
@@ -423,7 +423,7 @@ lemma repGauge_su2_barL (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = ∑ a, V.1 a w • h.barLComponent f l (s, a)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_barL`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L494).
+**`StandardModel.IsFermionSector.repGauge_u1_barL`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L494).
 
 > A hypercharge transformation scales a conjugate lepton-doublet symbol by the cube of
 > the conjugate scalar, the conjugate lepton doublet carrying `6Y = -3`.
@@ -437,7 +437,7 @@ lemma repGauge_u1_barL (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.9. The lepton singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_e`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L509).
+**`StandardModel.IsFermionSector.repGauge_su3_e`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L509).
 
 > A colour transformation fixes a lepton-singlet symbol.
 
@@ -448,7 +448,7 @@ lemma repGauge_su3_e (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = h.eComponent f l s
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_e`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L517).
+**`StandardModel.IsFermionSector.repGauge_su2_e`**, a lemma, [line 517](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L517).
 
 > An isospin transformation fixes a lepton-singlet symbol.
 
@@ -459,7 +459,7 @@ lemma repGauge_su2_e (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.eComponent f l s
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_e`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L526).
+**`StandardModel.IsFermionSector.repGauge_u1_e`**, a lemma, [line 526](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L526).
 
 > A hypercharge transformation scales a lepton-singlet symbol by the sixth power of the
 > scalar, the lepton singlet carrying `6Y = 6`.
@@ -473,7 +473,7 @@ lemma repGauge_u1_e (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.10. The conjugate lepton singlet
 
-**`StandardModel.IsFermionSector.repGauge_su3_bare`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L540).
+**`StandardModel.IsFermionSector.repGauge_su3_bare`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L540).
 
 > A colour transformation fixes a conjugate lepton-singlet symbol.
 
@@ -484,7 +484,7 @@ lemma repGauge_su3_bare (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = h.bareComponent f l s
 ```
 
-**`StandardModel.IsFermionSector.repGauge_su2_bare`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L548).
+**`StandardModel.IsFermionSector.repGauge_su2_bare`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L548).
 
 > An isospin transformation fixes a conjugate lepton-singlet symbol.
 
@@ -495,7 +495,7 @@ lemma repGauge_su2_bare (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.bareComponent f l s
 ```
 
-**`StandardModel.IsFermionSector.repGauge_u1_bare`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L557).
+**`StandardModel.IsFermionSector.repGauge_u1_bare`**, a lemma, [line 557](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L557).
 
 > A hypercharge transformation scales a conjugate lepton-singlet symbol by the sixth
 > power of the conjugate scalar, the conjugate lepton singlet carrying `6Y = -6`.
@@ -515,7 +515,7 @@ lemma repGauge_u1_bare (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 > occupies is decided by its variance, the fundamental one going first, so each law comes in
 > two arrangements according to which factor is the barred one.
 
-**`StandardModel.IsFermionSector.isSU3FundamentalAntiFundamental_mul`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L578).
+**`StandardModel.IsFermionSector.isSU3FundamentalAntiFundamental_mul`**, a lemma, [line 578](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L578).
 
 > A product of a component with a fundamental colour index and one with an
 > anti-fundamental colour index carries one colour index of each kind.
@@ -532,7 +532,7 @@ lemma isSU3FundamentalAntiFundamental_mul
     IsSU3FundamentalAntiFundamental B repGauge (fun l : Fin 2 → Fin 3 => A (l 0) * C (l 1))
 ```
 
-**`StandardModel.IsFermionSector.isSU3FundamentalAntiFundamental_mul_swap`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L594).
+**`StandardModel.IsFermionSector.isSU3FundamentalAntiFundamental_mul_swap`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L594).
 
 > The same with the two factors exchanged, the anti-fundamental one first.
 
@@ -548,7 +548,7 @@ lemma isSU3FundamentalAntiFundamental_mul_swap
     IsSU3FundamentalAntiFundamental B repGauge (fun l : Fin 2 → Fin 3 => A (l 1) * C (l 0))
 ```
 
-**`StandardModel.IsFermionSector.isSU2FundamentalAntiFundamental_mul`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L611).
+**`StandardModel.IsFermionSector.isSU2FundamentalAntiFundamental_mul`**, a lemma, [line 611](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L611).
 
 > A product of a component with a fundamental isospin index and one with an
 > anti-fundamental isospin index carries one isospin index of each kind.
@@ -565,7 +565,7 @@ lemma isSU2FundamentalAntiFundamental_mul
     IsSU2FundamentalAntiFundamental B repGauge (fun l : Fin 2 → Fin 2 => A (l 0) * C (l 1))
 ```
 
-**`StandardModel.IsFermionSector.isSU2FundamentalAntiFundamental_mul_swap`**, a lemma, [line 627](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L627).
+**`StandardModel.IsFermionSector.isSU2FundamentalAntiFundamental_mul_swap`**, a lemma, [line 627](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L627).
 
 > The same with the two factors exchanged, the anti-fundamental one first.
 
@@ -581,7 +581,7 @@ lemma isSU2FundamentalAntiFundamental_mul_swap
     IsSU2FundamentalAntiFundamental B repGauge (fun l : Fin 2 → Fin 2 => A (l 1) * C (l 0))
 ```
 
-**`StandardModel.IsFermionSector.repGauge_mul_fixed`**, a lemma, [line 645](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L645).
+**`StandardModel.IsFermionSector.repGauge_mul_fixed`**, a lemma, [line 645](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L645).
 
 > A product of two components that a gauge transformation fixes is fixed by it: the
 > form in which a block whose symbols carry no colour, or no isospin, supplies the
@@ -595,7 +595,7 @@ lemma repGauge_mul_fixed
     repGauge g (a * c) = a * c
 ```
 
-**`StandardModel.IsFermionSector.repGauge_mul_smul_fixed`**, a lemma, [line 655](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L655).
+**`StandardModel.IsFermionSector.repGauge_mul_smul_fixed`**, a lemma, [line 655](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L655).
 
 > A product of two components that a gauge transformation scales by reciprocal scalars
 > is fixed by it: the form in which the hypercharges of a species and its conjugate
@@ -610,7 +610,7 @@ lemma repGauge_mul_smul_fixed
     repGauge g (a * c) = a * c
 ```
 
-**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_sum`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L668).
+**`StandardModel.IsFermionSector.isVectorDualLeftRightWeyl_sum`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L668).
 
 > A finite sum of families carrying one four-vector index and a pair of dual
 > opposite-chirality Weyl indices is such a family again: the colour and isospin
@@ -623,7 +623,7 @@ lemma isVectorDualLeftRightWeyl_sum {ι : Type} [Fintype ι]
     IsVectorDualLeftRightWeyl B repLorentz (ofDualVectorComponents fun p => ∑ i, T i p)
 ```
 
-**`StandardModel.IsFermionSector.unitary_mul_star_coe`**, a lemma, [line 677](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L677).
+**`StandardModel.IsFermionSector.unitary_mul_star_coe`**, a lemma, [line 677](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L677).
 
 > A unitary scalar times its conjugate is one, in the order the hypercharge cancellation
 > of a species against its conjugate needs.
@@ -632,7 +632,7 @@ lemma isVectorDualLeftRightWeyl_sum {ι : Type} [Fintype ι]
 lemma unitary_mul_star_coe (t : unitary ℂ) : (t : ℂ) * star (t : ℂ) = 1
 ```
 
-**`StandardModel.IsFermionSector.unitary_star_mul_coe`**, a lemma, [line 680](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L680).
+**`StandardModel.IsFermionSector.unitary_star_mul_coe`**, a lemma, [line 680](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L680).
 
 > The conjugate of a unitary scalar times itself is one.
 
@@ -654,7 +654,7 @@ lemma unitary_star_mul_coe (t : unitary ℂ) : star (t : ℂ) * (t : ℂ) = 1
 > stage. Each step comes with the fact that its contraction lies in the submodule it classifies, which
 > is what carries the invariance of one stage through the stages after it.
 
-**`StandardModel.IsFermionSector.KineticBlock`**, a structure, [line 709](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L709).
+**`StandardModel.IsFermionSector.KineticBlock`**, a structure, [line 709](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L709).
 
 > One kinetic block of the fermion sector, together with the three classifications its
 > indices admit. The block is indexed by the derivative direction, the pair of spinor
@@ -698,7 +698,7 @@ structure KineticBlock where
     repGauge ((1, 1, t) : GaugeGroupI) (blk q l c c' w w') = blk q l c c' w w'
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.kineticTerm`**, a def, [line 750](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L750).
+**`StandardModel.IsFermionSector.KineticBlock.kineticTerm`**, a def, [line 750](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L750).
 
 > The kinetic term of a block: the conjugate Pauli contraction of its doubly contracted
 > form, which is `ψ̄ σ̄^μ ∂_μ ψ` with the colour and isospin indices already joined.
@@ -707,7 +707,7 @@ structure KineticBlock where
 noncomputable def kineticTerm : B
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.blockSpan`**, a def, [line 754](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L754).
+**`StandardModel.IsFermionSector.KineticBlock.blockSpan`**, a def, [line 754](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L754).
 
 > The join, over the derivative, spinor and isospin indices, of the colour spans of the
 > block: what the block submodule is reduced from.
@@ -716,7 +716,7 @@ noncomputable def kineticTerm : B
 noncomputable def blockSpan : Submodule ℂ B
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.reducesInvariantsTo`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L760).
+**`StandardModel.IsFermionSector.KineticBlock.reducesInvariantsTo`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L760).
 
 > The three stages in sequence: the block span reduces to the span of the kinetic term.
 
@@ -725,7 +725,7 @@ lemma reducesInvariantsTo :
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) K.blockSpan (ℂ ∙ K.kineticTerm)
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.kineticTerm_mem`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L785).
+**`StandardModel.IsFermionSector.KineticBlock.kineticTerm_mem`**, a lemma, [line 785](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L785).
 
 > The kinetic term lies in any submodule containing every component of the block: each
 > contraction lies in the span of the objects of the stage before it.
@@ -735,7 +735,7 @@ lemma kineticTerm_mem {V : Submodule ℂ B}
     (hV : ∀ q l c c' w w', K.blk q l c c' w w' ∈ V) : K.kineticTerm ∈ V
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.repGauge_su3_kineticTerm`**, a lemma, [line 800](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L800).
+**`StandardModel.IsFermionSector.KineticBlock.repGauge_su3_kineticTerm`**, a lemma, [line 800](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L800).
 
 > The kinetic term is fixed by the colour factor: the colour contractions are, and every
 > later stage stays inside their span.
@@ -745,7 +745,7 @@ lemma repGauge_su3_kineticTerm (U : specialUnitaryGroup (Fin 3) ℂ) :
     repGauge ((U, 1, 1) : GaugeGroupI) K.kineticTerm = K.kineticTerm
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.repGauge_su2_kineticTerm`**, a lemma, [line 811](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L811).
+**`StandardModel.IsFermionSector.KineticBlock.repGauge_su2_kineticTerm`**, a lemma, [line 811](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L811).
 
 > The kinetic term is fixed by the isospin factor.
 
@@ -754,7 +754,7 @@ lemma repGauge_su2_kineticTerm (V : specialUnitaryGroup (Fin 2) ℂ) :
     repGauge ((1, V, 1) : GaugeGroupI) K.kineticTerm = K.kineticTerm
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.repGauge_u1_kineticTerm`**, a lemma, [line 818](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L818).
+**`StandardModel.IsFermionSector.KineticBlock.repGauge_u1_kineticTerm`**, a lemma, [line 818](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L818).
 
 > The kinetic term is fixed by the hypercharge factor, the hypercharges of a species and
 > its conjugate cancelling on every component of the block.
@@ -764,7 +764,7 @@ lemma repGauge_u1_kineticTerm (t : unitary ℂ) :
     repGauge ((1, 1, t) : GaugeGroupI) K.kineticTerm = K.kineticTerm
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.repGauge_kineticTerm`**, a lemma, [line 834](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L834).
+**`StandardModel.IsFermionSector.KineticBlock.repGauge_kineticTerm`**, a lemma, [line 834](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L834).
 
 > The kinetic term is gauge invariant: a gauge transformation is the product of its
 > colour, isospin and hypercharge parts, and each fixes it.
@@ -773,7 +773,7 @@ lemma repGauge_u1_kineticTerm (t : unitary ℂ) :
 lemma repGauge_kineticTerm (g : GaugeGroupI) : repGauge g K.kineticTerm = K.kineticTerm
 ```
 
-**`StandardModel.IsFermionSector.KineticBlock.repLorentz_kineticTerm`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L840).
+**`StandardModel.IsFermionSector.KineticBlock.repLorentz_kineticTerm`**, a lemma, [line 840](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean#L840).
 
 > The kinetic term is Lorentz invariant, being the conjugate Pauli contraction of a
 > vector dual left-right Weyl family.
@@ -791,4 +791,4 @@ lemma repLorentz_kineticTerm (Λ : SL(2,ℂ)) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean)

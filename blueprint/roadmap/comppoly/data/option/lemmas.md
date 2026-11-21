@@ -7,9 +7,9 @@ proof: formalized
 
 # Auxiliary lemmas for `Option`
 
-`CompPoly.Data.Option.Lemmas`, in [CompPoly/Data/Option/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Option/Lemmas.lean), by Frantisek Silvasi, Julian Sutherland, Andrei Burdușa.
+`CompPoly.Data.Option.Lemmas`, in [CompPoly/Data/Option/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Option/Lemmas.lean), by Frantisek Silvasi, Julian Sutherland, Andrei Burdușa.
 
-`Option.filter_eq_self` (theorem, [line 20](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Option/Lemmas.lean#L20))
+`Option.filter_eq_self` (theorem, [line 20](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Option/Lemmas.lean#L20))
 
 > `Option.filter` leaves its argument alone exactly when the predicate holds of the contained
 > value. The `Option` analogue of `List.filter_eq_self` and `Array.filter_eq_self`.
@@ -25,5 +25,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/Option/Lemmas.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/Option/Lemmas.lean)
+- [CompPoly/Data/Option/Lemmas.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/Option/Lemmas.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.Option.Lemmas.json)

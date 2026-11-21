@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Computability.Machines.Turing.MultiTape.Space",
  "file": "Cslib/Computability/Machines/Turing/MultiTape/Space.lean",
  "public": [
@@ -28,7 +28,8 @@
   {"name": "Turing.MultiTapeNTM.RunsInSpace", "kind": "def", "line": 172},
   {"name": "Turing.MultiTapeNTM.RunsInSpace.mono", "kind": "lemma", "line": 176},
   {"name": "Turing.MultiTapeNTM.RunsInSpace.exists_space_max", "kind": "lemma", "line": 181},
-  {"name": "Turing.MultiTapeNTM.runsInSpace_zero_tapes", "kind": "lemma", "line": 192}
+  {"name": "Turing.MultiTapeNTM.RunsInSpace.numTapes_le", "kind": "lemma", "line": 192},
+  {"name": "Turing.MultiTapeNTM.runsInSpace_zero_tapes", "kind": "lemma", "line": 199}
  ],
  "private": [],
  "missing": [],

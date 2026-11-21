@@ -7,18 +7,18 @@ proof: formalized
 
 # Radix-4 DIF NTTFast correctness
 
-`CompPoly.Univariate.NTTFast.Correctness.Radix4DIF`, in [CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTTFast.Correctness.Radix4DIF`, in [CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean), by Valerii Huhnin.
 
 > Correctness proofs for the mixed radix-4 decimation-in-frequency stage loop used by `NTTFast`.
 
-`CompPoly.CPolynomial.NTTFast.Plan.radix4DIFCell` (definition, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L180))
+`CompPoly.CPolynomial.NTTFast.Plan.radix4DIFCell` (definition, [line 180](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L180))
 
 ```lean
 def radix4DIFCell
     (wHigh0 wHigh1 wLow : R) (i0 i1 i2 i3 : Nat) (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.size_radix4DIFCell` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L193))
+`CompPoly.CPolynomial.NTTFast.Plan.size_radix4DIFCell` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L193))
 
 ```lean
 theorem size_radix4DIFCell
@@ -26,7 +26,7 @@ theorem size_radix4DIFCell
     (radix4DIFCell wHigh0 wHigh1 wLow i0 i1 i2 i3 acc).size = acc.size
 ```
 
-`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4WithTwiddles_correct` (theorem, [line 727](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L727))
+`CompPoly.CPolynomial.NTTFast.Plan.runStagesDIFRadix4WithTwiddles_correct` (theorem, [line 727](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean#L727))
 
 > The mixed radix-4 DIF stage loop computes the bit-reversed forward NTT output.
 
@@ -46,5 +46,5 @@ theorem runStagesDIFRadix4WithTwiddles_correct (D : NTT.Domain R) (a : Array R) 
 
 ## Sources
 
-- [CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean)
+- [CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTTFast/Correctness/Radix4DIF.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Univariate.NTTFast.Correctness.Radix4DIF.json)

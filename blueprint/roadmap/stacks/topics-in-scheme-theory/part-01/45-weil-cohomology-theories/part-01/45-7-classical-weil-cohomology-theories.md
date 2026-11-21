@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.7 Classical Weil cohomology theories
 
-Section 45.7 of the Stacks Project, [Tag 0FGS](https://stacks.math.columbia.edu/tag/0FGS). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 45.7 of the Stacks Project, [Tag 0FGS](https://stacks.math.columbia.edu/tag/0FGS). 11 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FGT, a lemma
 
 [Tag 0FGT](https://stacks.math.columbia.edu/tag/0FGT) in the Stacks Project.
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.mul_pushforward_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/DisjointUnion.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/DisjointUnion.lean#L128). The attribute's comment: “cup product with the pushforward of the unit”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.mul_pushforward_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/DisjointUnion.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/DisjointUnion.lean#L128). The attribute's comment: “cup product with the pushforward of the unit”.
 
 > Cup product with the pushforward `f_*1` of the unit is `f_* ∘ f^*`, for a morphism
 > `f : X ⟶ Z` of smooth projective schemes over `k` of equal dimension:
@@ -39,7 +39,7 @@ theorem mul_pushforward_one (f : X ⟶ Z) (hd : S.dimension X = S.dimension Z) (
             (S.pullback f n a)))
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L79). The attribute's comment: “projection\_formula”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L79). The attribute's comment: “projection\_formula”.
 
 > The projection formula `f_*(f^*b ∪ a) = b ∪ f_*a` for the pushforward determined by Poincaré
 > duality.
@@ -55,7 +55,7 @@ theorem PoincareDualityPushforwardSetup.pushforward_mul_pullback
         ((S.H Y).mul j (2 * (S.dimension Y : ℤ) - (i + j)) b (S.pushforward f (i + j) a))
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L126). The attribute's comment: “pushforward\_functoriality”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L126). The attribute's comment: “pushforward\_functoriality”.
 
 > The pushforward determined by Poincaré duality is covariantly functorial:
 > `g_* ∘ f_* = (g ∘ f)_*`.
@@ -70,7 +70,7 @@ theorem PoincareDualityPushforwardSetup.pushforward_comp
 
 [Tag 0FGU](https://stacks.math.columbia.edu/tag/0FGU) in the Stacks Project.
 
-**`Stacks.WeilCohomology.cycleClass_mul_iff_cycleClass_codimensionExteriorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExteriorProduct.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExteriorProduct.lean#L116). The attribute's comment: “given (C)(a), axiom (C)(c) is equivalent to compatibility of γ with exterior products, γ(α × β) = pr₁^*γ(α) ∪ pr₂^*γ(β) in H^*(X ×\_k X), for the data of a classical Weil cohomology theory with cycle classes on the Chow groups of Chapter 42”.
+**`Stacks.WeilCohomology.cycleClass_mul_iff_cycleClass_codimensionExteriorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExteriorProduct.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExteriorProduct.lean#L116). The attribute's comment: “given (C)(a), axiom (C)(c) is equivalent to compatibility of γ with exterior products, γ(α × β) = pr₁^*γ(α) ∪ pr₂^*γ(β) in H^*(X ×\_k X), for the data of a classical Weil cohomology theory with cycle classes on the Chow groups of Chapter 42”.
 
 > **Remark 0FGU.** Let `H^*` with its trace maps be a Poincaré duality setup on the smooth
 > projective varieties over an algebraically closed field `k`, and let `γ : CH^r(X) ⟶ H^{2r}(X)`
@@ -100,7 +100,7 @@ theorem cycleClass_mul_iff_cycleClass_codimensionExteriorProduct
             (S.pullback (snd X X) (2 * s) (cycleClass X s β))
 ```
 
-**`Stacks.WeilCohomology.diagonalPullback_kunneth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean#L46). The attribute's comment: “diagonal\_pullback\_cup”.
+**`Stacks.WeilCohomology.diagonalPullback_kunneth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean#L46). The attribute's comment: “diagonal\_pullback\_cup”.
 
 > Pulling the Künneth exterior product `pr₁^*a ∪ pr₂^*b` back along the diagonal
 > `Δ : X ⟶ X × X` gives the cup product `a ∪ b`.
@@ -126,15 +126,15 @@ theorem diagonalPullback_kunneth (k : Type u) [Field k] (F : Type v) [Field F]
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.codimensionIntersectionProduct_eq_codimensionGysin_diag`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L65), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L144) (StacksFrontier): “the intersection product is α · β = Δ^!(α × β), for the intersection product of Stacks 0FC0, the exterior product of Stacks 0FBV and the Gysin map of the diagonal”.
-- [`Stacks.Chow.codimensionExteriorProduct_eq_codimensionIntersectionProduct`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ExteriorProductGysin.lean#L165), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L148) (StacksFrontier): “α × β = pr₁^!α · pr₂^!β in CH^*(X × Y), stated without proof in the source”.
-- [`Stacks.WeilCohomology.WeilData.cycleClassMul_iff_cycleClass_codimensionExteriorProduct`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L123), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L151) (StacksFrontier): “given (C)(a), axiom (C)(c) is equivalent to compatibility of γ with exterior products, γ(α × β) = pr₁^*γ(α) ∪ pr₂^*γ(β); (A) and (B) are not used”.
+- [`Stacks.Chow.codimensionIntersectionProduct_eq_codimensionGysin_diag`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L65), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L144) (StacksFrontier): “the intersection product is α · β = Δ^!(α × β), for the intersection product of Stacks 0FC0, the exterior product of Stacks 0FBV and the Gysin map of the diagonal”.
+- [`Stacks.Chow.codimensionExteriorProduct_eq_codimensionIntersectionProduct`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ExteriorProductGysin.lean#L165), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L148) (StacksFrontier): “α × β = pr₁^!α · pr₂^!β in CH^*(X × Y), stated without proof in the source”.
+- [`Stacks.WeilCohomology.WeilData.cycleClassMul_iff_cycleClass_codimensionExteriorProduct`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L123), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CycleClassExteriorProduct.lean#L151) (StacksFrontier): “given (C)(a), axiom (C)(c) is equivalent to compatibility of γ with exterior products, γ(α × β) = pr₁^*γ(α) ∪ pr₂^*γ(β); (A) and (B) are not used”.
 
 ## Tag 0FGV, a definition
 
 [Tag 0FGV](https://stacks.math.columbia.edu/tag/0FGV) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheory.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheory.lean#L158).
+**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheory.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheory.lean#L158).
 
 > A classical Weil cohomology theory over an algebraically closed field `k` with coefficients
 > in a field `F` of characteristic zero, for a given theory of Chow groups: the contravariant
@@ -149,7 +149,7 @@ structure ClassicalWeilCohomologyTheory (k : Type u) [Field k] [IsAlgClosed k]
     extends PoincareDualityPushforwardSetup.{u, v, w} k F
 ```
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomology`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheoryChow.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheoryChow.lean#L351).
+**`Stacks.WeilCohomology.ClassicalWeilCohomology`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheoryChow.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTheoryChow.lean#L351).
 
 > **Stacks Project, Definition 0FGV.** A *classical Weil cohomology theory* over an
 > algebraically closed field `k` with coefficients in a field `F` of characteristic zero: the data
@@ -187,7 +187,7 @@ structure ClassicalWeilCohomology (k : Type u) [Field k] [IsAlgClosed k]
 
 [Tag 0FGW](https://stacks.math.columbia.edu/tag/0FGW) in the Stacks Project.
 
-**`Stacks.WeilCohomology.integration_cycleClass_codimensionClassOfZeroCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTraceDegree.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTraceDegree.lean#L217).
+**`Stacks.WeilCohomology.integration_cycleClass_codimensionClassOfZeroCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTraceDegree.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalTraceDegree.lean#L217).
 
 > **Stacks Project, Tag 0FGW.** Let `X` be a smooth projective variety of dimension `d`. Then
 > `∫_X γ(α) = deg(α)` for every zero cycle class `α ∈ CH_0(X) = CH^d(X)`: the composite
@@ -218,7 +218,7 @@ theorem integration_cycleClass_codimensionClassOfZeroCycle
 
 [Tag 0FGX](https://stacks.math.columbia.edu/tag/0FGX) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean#L415).
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean, line 415](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean#L415).
 
 > **Stacks Project, Tag 0FGX.** Let `H^*` be a classical Weil cohomology theory and let `X` and
 > `Y` be smooth projective varieties. Then `∫_{X × Y} = ∫_X ⊗ ∫_Y`: for `P` a fibre product of `X`
@@ -247,7 +247,7 @@ theorem integration_mul_pullback (hP : IsPullback p.hom.left q.hom.left X.obj.ho
       T.integration X a * T.integration Y b
 ```
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_comp_kunnethMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean#L433). The attribute's comment: “as linear maps on H^*(X) ⊗ H^*(Y), through the Künneth map”.
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_comp_kunnethMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean, line 433](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalKunnethTrace.lean#L433). The attribute's comment: “as linear maps on H^*(X) ⊗ H^*(Y), through the Künneth map”.
 
 > **Stacks Project, Tag 0FGX**, as an identity of linear maps
 > `H^*(X) ⊗_F H^*(Y) → F`. Let `∫_X : H^*(X) → F` be the trace map on the piece of degree
@@ -271,7 +271,7 @@ theorem integration_comp_kunnethMap
 
 [Tag 0FGY](https://stacks.math.columbia.edu/tag/0FGY) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalPushforwardProduct.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalPushforwardProduct.lean#L60).
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalPushforwardProduct.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalPushforwardProduct.lean#L60).
 
 > **Stacks Project, Tag 0FGY.** Let `H^*` be a classical Weil cohomology theory and let `P`,
 > with projections `p : P ⟶ X` and `q : P ⟶ Y`, be the product of smooth projective varieties `X`
@@ -299,7 +299,7 @@ theorem pushforward_mul_pullback (p : P ⟶ X) (q : P ⟶ Y)
 
 [Tag 0FGZ](https://stacks.math.columbia.edu/tag/0FGZ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_mul_diagonalKunnethCoordinate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalBasis.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalBasis.lean#L435).
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.integration_mul_diagonalKunnethCoordinate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalBasis.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalBasis.lean#L435).
 
 > **Stacks Project, Tag 0FGZ.** Let `H^*` be a classical Weil cohomology theory and `X` a smooth
 > projective variety of dimension `d`. Choose a basis `e_{i, j}` of `H^i(X)` over `F` and, using
@@ -342,7 +342,7 @@ theorem integration_mul_diagonalKunnethCoordinate {X P : (SmoothProjective k).Fu
 
 [Tag 0FH0](https://stacks.math.columbia.edu/tag/0FH0) in the Stacks Project.
 
-**`Stacks.WeilCohomology.degree_diagonal_mul_eq_degree_chernCap_tangentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean#L250). The attribute's comment: “the equality on the right: deg([Δ] · [Δ]) = deg(c\_d(T\_X) ∩ [X]), for X × X any fibre product P of X with itself over k and Δ the diagonal section”. References: SGA 6 XIII (5.3), “partial”.
+**`Stacks.WeilCohomology.degree_diagonal_mul_eq_degree_chernCap_tangentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean#L250). The attribute's comment: “the equality on the right: deg([Δ] · [Δ]) = deg(c\_d(T\_X) ∩ [X]), for X × X any fibre product P of X with itself over k and Δ the diagonal section”. References: SGA 6 XIII (5.3), “partial”.
 
 > **Stacks Project, Tag 0FH0**, the equality on the right: for a smooth projective variety `X`
 > of dimension `d` over `k`, `deg([Δ] · [Δ]) = deg(c_d(𝒯_X) ∩ [X])`.
@@ -383,7 +383,7 @@ theorem degree_diagonal_mul_eq_degree_chernCap_tangentSheaf
             (Fin.last d) (fundamentalChowClass (fieldChowSituation k) X.obj.hom d)))
 ```
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.eulerCharacteristic_eq_degree_diagonal_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean#L273). The attribute's comment: “the equality on the left: Σ (-1)^i dim H^i(X) = deg([Δ] · [Δ])”.
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.eulerCharacteristic_eq_degree_diagonal_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean#L273). The attribute's comment: “the equality on the left: Σ (-1)^i dim H^i(X) = deg([Δ] · [Δ])”.
 
 > **Stacks Project, Tag 0FH0**, the equality on the left: for a classical Weil cohomology theory
 > `H^*` and a smooth projective variety `X` of dimension `d`,
@@ -414,7 +414,7 @@ theorem eulerCharacteristic_eq_degree_diagonal_mul :
               (T.dimension X))))
 ```
 
-**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.eulerCharacteristic_eq_degree_diagonal_mul_eq_degree_chernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean#L339).
+**`Stacks.WeilCohomology.ChowClassicalWeilCohomologyTheory.eulerCharacteristic_eq_degree_diagonal_mul_eq_degree_chernCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean, line 339](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalEulerCharacteristic.lean#L339).
 
 > **Stacks Project, Tag 0FH0.** Let `H^*` be a classical Weil cohomology theory (Stacks 0FGV)
 > and `X` a smooth projective variety of dimension `d`. Then
@@ -462,7 +462,7 @@ theorem eulerCharacteristic_eq_degree_diagonal_mul_eq_degree_chernCap :
 
 [Tag 0FH1](https://stacks.math.columbia.edu/tag/0FH1) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilRealization.toPreClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean#L70). The attribute's comment: “a Q-linear functor G : M\_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D1), (D2), (D3) satisfying (A), (B), (C) except possibly (A)(c) and (A)(d)”.
+**`Stacks.WeilCohomology.WeilRealization.toPreClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean#L70). The attribute's comment: “a Q-linear functor G : M\_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D1), (D2), (D3) satisfying (A), (B), (C) except possibly (A)(c) and (A)(d)”.
 
 > **Stacks Project, Lemma 0FH1.** Let `k` be algebraically closed and `F` of characteristic
 > `0`. A `ℚ`-linear functor `G : M_k ⥤ graded F-vector spaces` of symmetric monoidal categories
@@ -479,7 +479,7 @@ def toPreClassical : PreClassicalWeilCohomologyTheory.{u, w, w, u} k F (chowCycl
 
 [Tag 0FH2](https://stacks.math.columbia.edu/tag/0FH2) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean#L66). The attribute's comment: “a classical Weil cohomology theory gives a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
+**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean#L66). The attribute's comment: “a classical Weil cohomology theory gives a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
 
 > **Stacks Project, Tag 0FH2.** Let `k` be an algebraically closed field, `F` a field of
 > characteristic zero and `H^*` a classical Weil cohomology theory. Then there is a `ℚ`-linear
@@ -500,7 +500,7 @@ theorem exists_motiveFunctor :
 
 [Tag 0FH3](https://stacks.math.columbia.edu/tag/0FH3) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalCorrespondence/IsoClassEquiv.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalCorrespondence/IsoClassEquiv.lean#L54). The attribute's comment: “a classical Weil cohomology theory is the same thing as a Q-linear symmetric monoidal G : M\_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1: a bijection of isomorphism classes, through H^*(X) = G(h(X)) with its cup product, pullbacks, cycle classes and traces”.
+**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalCorrespondence/IsoClassEquiv.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalCorrespondence/IsoClassEquiv.lean#L54). The attribute's comment: “a classical Weil cohomology theory is the same thing as a Q-linear symmetric monoidal G : M\_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1: a bijection of isomorphism classes, through H^*(X) = G(h(X)) with its cup product, pullbacks, cycle classes and traces”.
 
 > **Stacks Project, Tag 0FH3.** Let `k` be an algebraically closed field and `F` a field of
 > characteristic `0`. A classical Weil cohomology theory (Stacks 0FGV, over the Chow groups of
@@ -531,4 +531,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.7, Tag 0FGS](https://stacks.math.columbia.edu/tag/0FGS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

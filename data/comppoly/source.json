@@ -1,7 +1,7 @@
 {
  "repo": "Verified-zkEVM/CompPoly",
- "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
- "date": "2026-11-18T14:54:40Z",
+ "rev": "c72a765272497b4c52201be11be47af5718c7488",
+ "date": "2026-11-20T02:12:42Z",
  "toolchain": "v4.36.0",
  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
  "license": "Apache-2.0"

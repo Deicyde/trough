@@ -8,7 +8,7 @@ proof: formalized
 
 # Newtonian stress tensors for fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Newtonian`, [Physlib/FluidDynamics/FluidFlow/Newtonian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Newtonian.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Newtonian`, [Physlib/FluidDynamics/FluidFlow/Newtonian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Newtonian.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Newtonian`, [Physlib/FluidDynamics/F
 
 ## A. Newtonian stress tensor
 
-**`FluidDynamics.FluidFlow.velocityGradient`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Newtonian.lean#L49).
+**`FluidDynamics.FluidFlow.velocityGradient`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Newtonian.lean#L49).
 
 > The spatial velocity-gradient matrix, with entries `partial_j u_i`.
 
@@ -36,7 +36,7 @@ noncomputable def velocityGradient (d : ℕ) (flow : FluidFlow d) :
     Time → Space d → Matrix (Fin d) (Fin d) ℝ
 ```
 
-**`FluidDynamics.FluidFlow.newtonianStressTensor`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Newtonian.lean#L58).
+**`FluidDynamics.FluidFlow.newtonianStressTensor`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Newtonian.lean#L58).
 
 > The Newtonian stress tensor
 > `-p I + mu (grad u + grad u^T) + lambda (div u) I`.
@@ -55,4 +55,4 @@ noncomputable def newtonianStressTensor (d : ℕ) (flow : FluidFlow d)
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Newtonian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Newtonian.lean)
+- [Physlib/FluidDynamics/FluidFlow/Newtonian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Newtonian.lean)

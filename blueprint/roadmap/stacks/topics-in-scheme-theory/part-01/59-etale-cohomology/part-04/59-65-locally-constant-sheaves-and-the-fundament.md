@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.65 Locally constant sheaves and the fundamental group
 
-Section 59.65 of the Stacks Project, [Tag 0DV4](https://stacks.math.columbia.edu/tag/0DV4). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.65 of the Stacks Project, [Tag 0DV4](https://stacks.math.columbia.edu/tag/0DV4). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DV5, a lemma
 
 [Tag 0DV5](https://stacks.math.columbia.edu/tag/0DV5) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteLocallyConstantAbelianSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Abelian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Abelian.lean#L69). The attribute's comment: “(2) finite locally constant sheaves of abelian groups are the finite π₁(X, x)-modules”.
+**`AlgebraicGeometry.finiteLocallyConstantAbelianSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Abelian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Abelian.lean#L69). The attribute's comment: “(2) finite locally constant sheaves of abelian groups are the finite π₁(X, x)-modules”.
 
 > **Stacks Project, Tag 0DV5, part (2).** For a connected scheme `X` with a geometric point
 > `x`, the finite locally constant sheaves of abelian groups on `X_étale` are equivalent to the
@@ -32,7 +32,7 @@ public noncomputable def finiteLocallyConstantAbelianSheafEquivalence :
         (EtaleFundamentalGroup X.1 x)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.finiteTypeLocallyConstantModuleSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Modules.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Modules.lean#L82). The attribute's comment: “(3) finite type locally constant sheaves of Λ-modules, for Λ a finite ring, are the finite π₁(X, x)-modules with commuting Λ-module structure”.
+**`AlgebraicGeometry.finiteTypeLocallyConstantModuleSheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Modules.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Modules.lean#L82). The attribute's comment: “(3) finite type locally constant sheaves of Λ-modules, for Λ a finite ring, are the finite π₁(X, x)-modules with commuting Λ-module structure”.
 
 > For a connected scheme `X` with a geometric point `x` and a finite ring `Λ`, the finite type
 > locally constant sheaves of `Λ`-modules on `X_étale` are equivalent to the finite `Λ`-modules
@@ -46,7 +46,7 @@ public def finiteTypeLocallyConstantModuleSheafEquivalence :
       FiniteTypeContinuousModule.{r, u + 1, u + 1} Λ (EtaleFundamentalGroup X.1 x)
 ```
 
-**`AlgebraicGeometry.finiteLocallyConstantSetsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L82). The attribute's comment: “(1) finite locally constant sheaves of sets are the finite continuous π₁(X, x)-sets”.
+**`AlgebraicGeometry.finiteLocallyConstantSetsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L82). The attribute's comment: “(1) finite locally constant sheaves of sets are the finite continuous π₁(X, x)-sets”.
 
 > For a connected scheme `X` with a geometric point `x`, the equivalence between the finite
 > locally constant sheaves of sets on the small étale site of `X` and the finite sets with a
@@ -65,7 +65,7 @@ public noncomputable def finiteLocallyConstantSetsEquivalence :
 
 [Tag 0GIY](https://stacks.math.columbia.edu/tag/0GIY) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteTypeLocallyConstantEquivContinuousModuleUniv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/UnibranchEquivalence.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/UnibranchEquivalence.lean#L77). The attribute's comment: “the equivalence for an irreducible geometrically unibranch scheme, an arbitrary geometric point and an arbitrary ring Λ, on Mathlib's small étale site with module sheaves valued in the universe max (u + 1) r”.
+**`AlgebraicGeometry.finiteTypeLocallyConstantEquivContinuousModuleUniv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/UnibranchEquivalence.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/UnibranchEquivalence.lean#L77). The attribute's comment: “the equivalence for an irreducible geometrically unibranch scheme, an arbitrary geometric point and an arbitrary ring Λ, on Mathlib's small étale site with module sheaves valued in the universe max (u + 1) r”.
 
 > **Stacks Project, Tag 0GIY.** Let `X` be an irreducible, geometrically unibranch scheme, let
 > `x` be a geometric point of `X` and let `Λ` be a ring. The finite type locally constant sheaves of
@@ -90,7 +90,7 @@ public def finiteTypeLocallyConstantEquivContinuousModuleUniv (X : Scheme.{u}) [
 
 [Tag 0DV6](https://stacks.math.columbia.edu/tag/0DV6) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteSmallEtaleToFiniteLocallyConstantBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L199). The attribute's comment: “the sets case, first leg: the dictionary of Stacks 03RV between the finite objects of the small etale site and the finite locally constant sheaves of sets commutes with pullback. The second leg, Stacks 0BND (3), is proved separately as AlgebraicGeometry.exists\_finiteEtaleEquivalence\_mapIso; the two legs are not composed here, which would need the comparison of AlgebraicGeometry.finiteSmallEtaleBaseChange with AlgebraicGeometry.finiteEtaleBaseChange across AlgebraicGeometry.finiteEtaleSiteEquivalence”.
+**`AlgebraicGeometry.finiteSmallEtaleToFiniteLocallyConstantBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L199). The attribute's comment: “the sets case, first leg: the dictionary of Stacks 03RV between the finite objects of the small etale site and the finite locally constant sheaves of sets commutes with pullback. The second leg, Stacks 0BND (3), is proved separately as AlgebraicGeometry.exists\_finiteEtaleEquivalence\_mapIso; the two legs are not composed here, which would need the comparison of AlgebraicGeometry.finiteSmallEtaleBaseChange with AlgebraicGeometry.finiteEtaleBaseChange across AlgebraicGeometry.finiteEtaleSiteEquivalence”.
 
 > **Stacks Project, Tag 0DV6, the first leg of the sets case.** The inverse image of the
 > finite locally constant sheaf represented by a finite étale cover is the one represented by its
@@ -108,7 +108,7 @@ public def finiteSmallEtaleToFiniteLocallyConstantBaseChangeIso :
       finiteSmallEtaleBaseChange B f ⋙ finiteSmallEtaleToFiniteLocallyConstant B Y
 ```
 
-**`AlgebraicGeometry.nonempty_finiteLocallyConstantSetsEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L281). The attribute's comment: “for sheaves of sets: the equivalence of Stacks 0DV5 (1) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
+**`AlgebraicGeometry.nonempty_finiteLocallyConstantSetsEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 281](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L281). The attribute's comment: “for sheaves of sets: the equivalence of Stacks 0DV5 (1) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
 
 > **Stacks Project, Tag 0DV6 for sheaves of sets.** Let `f : Y ⟶ X` be a morphism of connected
 > schemes and let `y` be a geometric point of `Y`, with image `x = f(y)`. Then the square
@@ -142,7 +142,7 @@ public theorem nonempty_finiteLocallyConstantSetsEquivalence_pullbackIso
         (finiteLocallyConstantSetsEquivalence B Y y).functor)
 ```
 
-**`AlgebraicGeometry.nonempty_finiteLocallyConstantAbelianSheafEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L392). The attribute's comment: “for sheaves of abelian groups: the equivalence of Stacks 0DV5 (2) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
+**`AlgebraicGeometry.nonempty_finiteLocallyConstantAbelianSheafEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L392). The attribute's comment: “for sheaves of abelian groups: the equivalence of Stacks 0DV5 (2) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
 
 > **Stacks Project, Tag 0DV6 for sheaves of abelian groups.** Let `f : Y ⟶ X` be a morphism of
 > connected schemes and let `y` be a geometric point of `Y`, with image `x = f(y)`. Then the square
@@ -180,7 +180,7 @@ public theorem nonempty_finiteLocallyConstantAbelianSheafEquivalence_pullbackIso
         (finiteLocallyConstantAbelianSheafEquivalence B Y y).functor)
 ```
 
-**`AlgebraicGeometry.nonempty_finiteTypeLocallyConstantModuleSheafEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L551). The attribute's comment: “for sheaves of modules over a finite ring: the equivalence of Stacks 0DV5 (3) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
+**`AlgebraicGeometry.nonempty_finiteTypeLocallyConstantModuleSheafEquivalence_pullbackIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean, line 551](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeRepresentable.lean#L551). The attribute's comment: “for sheaves of modules over a finite ring: the equivalence of Stacks 0DV5 (3) commutes with pullback, the action being reindexed along the induced homomorphism of fundamental groups”.
 
 > **Stacks Project, Tag 0DV6 for sheaves of modules.** Let `Λ` be a finite ring, let
 > `f : Y ⟶ X` be a morphism of connected schemes and let `y` be a geometric point of `Y`, with
@@ -216,7 +216,7 @@ public theorem nonempty_finiteTypeLocallyConstantModuleSheafEquivalence_pullback
         (finiteTypeLocallyConstantModuleSheafEquivalence B Y y Λ).functor)
 ```
 
-**`AlgebraicGeometry.finiteTypeLocallyConstantEquivContinuousModuleUnivPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeUnibranch.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeUnibranch.lean#L542). The attribute's comment: “the square for the equivalence of Stacks 0GIY; the squares for the equivalences of Stacks 0DV5 are in BaseChangeRepresentable and BaseChangeEtaleSite”.
+**`AlgebraicGeometry.finiteTypeLocallyConstantEquivContinuousModuleUnivPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeUnibranch.lean, line 542](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeUnibranch.lean#L542). The attribute's comment: “the square for the equivalence of Stacks 0GIY; the squares for the equivalences of Stacks 0DV5 are in BaseChangeRepresentable and BaseChangeEtaleSite”.
 
 > **Stacks Project, Tag 0DV6, for the equivalence of Tag 0GIY.** Let `f : Y ⟶ X` be a morphism
 > of irreducible, geometrically unibranch schemes, let `y` be a geometric point of `Y` and let `Λ`
@@ -254,4 +254,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.65, Tag 0DV4](https://stacks.math.columbia.edu/tag/0DV4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

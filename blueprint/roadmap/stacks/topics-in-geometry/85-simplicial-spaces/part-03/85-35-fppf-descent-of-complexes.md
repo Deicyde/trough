@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.35 Fppf descent of complexes
 
-Section 85.35 of the Stacks Project, [Tag 0DL8](https://stacks.math.columbia.edu/tag/0DL8). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.35 of the Stacks Project, [Tag 0DL8](https://stacks.math.columbia.edu/tag/0DL8). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DL9, a lemma
 
 [Tag 0DL9](https://stacks.math.columbia.edu/tag/0DL9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.negativeExt_eq_zero_and_exact_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedHomDescent.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedHomDescent.lean#L482).
+**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.negativeExt_eq_zero_and_exact_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedHomDescent.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedHomDescent.lean#L482).
 
 > Let `a : U → X` be an fppf hypercovering of an algebraic space and `K, E` objects of
 > `D_{QCoh}(𝒪_X)` with `Ext^i_{U_n}(La_n^*K, La_n^*E) = 0` for `i < 0` and all `n`. Then
@@ -59,7 +59,7 @@ theorem negativeExt_eq_zero_and_exact_derivedPullback
 
 [Tag 0DLA](https://stacks.math.columbia.edu/tag/0DLA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.exists_derivedPullback_degreeZero_iso_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedGluing.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedGluing.lean#L478).
+**`AlgebraicGeometry.Space.SimplicialSpacesEtaleSite.exists_derivedPullback_degreeZero_iso_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedGluing.lean, line 478](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialQuasicoherentDerivedGluing.lean#L478).
 
 > **Stacks 0DLA: gluing quasi-coherent derived descent data along an fppf hypercovering.** Let
 > `a : U → X` be an fppf hypercovering of an algebraic space `X`, `K₀ ∈ D_{QCoh}(𝒪_{U_0})` and
@@ -119,4 +119,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.35, Tag 0DL8](https://stacks.math.columbia.edu/tag/0DL8)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -2,7 +2,7 @@
 
 2 modules under `Cslib/Probability/`, with 26 public declarations.
 
-The docstrings, Lean statements and README text are quoted from [leanprover/cslib](https://github.com/leanprover/cslib) at commit [86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), under its Apache-2.0 license.
+The docstrings, Lean statements and README text are quoted from [leanprover/cslib](https://github.com/leanprover/cslib) at commit [7c95c37f](https://github.com/leanprover/cslib/tree/7c95c37f952458306479b64468cb98d101ee1cf1), under its Apache-2.0 license.
 
 - [PMF Utilities](pmf.md)
 - [Statistical Distance of Finite Probability Mass Functions](statisticaldistance.md)

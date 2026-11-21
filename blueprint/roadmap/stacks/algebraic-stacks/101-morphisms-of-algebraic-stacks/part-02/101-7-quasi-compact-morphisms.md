@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.7 Quasi-compact morphisms
 
-Section 101.7 of the Stacks Project, [Tag 050S](https://stacks.math.columbia.edu/tag/050S). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.7 of the Stacks Project, [Tag 050S](https://stacks.math.columbia.edu/tag/050S). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 050T, a lemma
 
 [Tag 050T](https://stacks.math.columbia.edu/tag/050T) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompact_iff_baseChange_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean, line 800](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean#L800).
+**`AlgebraicGeometry.Stack.isQuasiCompact_iff_baseChange_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean, line 800](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean#L800).
 
 > For a 1-morphism of algebraic stacks over `S` representable by algebraic
 > spaces, quasi-compactness in the sense of Properties of Stacks, Section 04XB — every algebraic
@@ -35,7 +35,7 @@ public theorem isQuasiCompact_iff_baseChange_quasiCompact
 
 [Tag 050U](https://stacks.math.columbia.edu/tag/050U) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsQuasiCompactMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean#L58).
+**`AlgebraicGeometry.Stack.IsQuasiCompactMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphism.lean#L58).
 
 > A 1-morphism of algebraic stacks over `S` is *quasi-compact* when every base change of it by
 > a quasi-compact algebraic stack is again a quasi-compact algebraic stack, the fibre product being
@@ -50,7 +50,7 @@ abbrev IsQuasiCompactMorphism {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : �
 
 [Tag 050V](https://stacks.math.columbia.edu/tag/050V) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L104).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L104).
 
 > **Stacks 050V.** A base change of a quasi-compact 1-morphism of algebraic stacks over `S` is
 > quasi-compact: if `P` is a 2-fibre product of the cospan `(g, f)` and `f` is quasi-compact, then
@@ -71,7 +71,7 @@ theorem isQuasiCompactMorphism_baseChange {𝒳 𝒴 𝒴' : AlgebraicStacks.{u,
 
 [Tag 050W](https://stacks.math.columbia.edu/tag/050W) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L86).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L86).
 
 > **Stacks 050W.** The composite of two quasi-compact 1-morphisms of algebraic stacks over `S`
 > is quasi-compact.
@@ -91,7 +91,7 @@ theorem isQuasiCompactMorphism_comp {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w} B S
 
 [Tag 0CL1](https://stacks.math.columbia.edu/tag/0CL1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactMorphism_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionQuasiCompact.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionQuasiCompact.lean#L71).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactMorphism_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionQuasiCompact.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ClosedImmersionQuasiCompact.lean#L71).
 
 > **Stacks 0CL1.** A closed immersion of algebraic stacks over `S` is quasi-compact.
 >
@@ -112,7 +112,7 @@ theorem isQuasiCompactMorphism_of_isClosedImmersion
 
 [Tag 050X](https://stacks.math.columbia.edu/tag/050X) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_comp_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L139).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_comp_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L139).
 
 > **Stacks 050X.** Let `f : 𝒳 ⟶ 𝒴`, `p : 𝒳 ⟶ 𝒵` and `q : 𝒴 ⟶ 𝒵` be a 2-commutative triangle
 > of 1-morphisms of algebraic stacks over `S`. If `f` is surjective and `p` is quasi-compact, then
@@ -136,7 +136,7 @@ theorem isQuasiCompactMorphism_of_comp_of_isSurjective
 
 [Tag 050Y](https://stacks.math.columbia.edu/tag/050Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_comp_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L186). References: EGA IV (1.2.4).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_comp_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactMorphismPermanence.lean#L186). References: EGA IV (1.2.4).
 
 > **Stacks 050Y.** If a composite of 1-morphisms of algebraic stacks over `S` is quasi-compact
 > and its second factor is quasi-separated, then its first factor is quasi-compact.
@@ -157,7 +157,7 @@ theorem isQuasiCompactMorphism_of_comp_of_isQuasiSeparated (f : 𝒳 ⟶ 𝒴) (
 
 [Tag 075S](https://stacks.math.columbia.edu/tag/075S) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactStack_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L158). The attribute's comment: “part (1)”. References: SGA 4 VI (1.14), “(i), algebraic stacks”.
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactStack_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L158). The attribute's comment: “part (1)”. References: SGA 4 VI (1.14), “(i), algebraic stacks”.
 
 > **Stacks 075S, part (1).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks with `𝒳` quasi-compact
 > and `𝒴` quasi-separated in the absolute sense of Stacks 050D part (8) is quasi-compact. Nothing is
@@ -181,7 +181,7 @@ theorem isQuasiCompactMorphism_of_isQuasiCompactStack_absolute
     IsQuasiCompactMorphism.{u, w} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_and_isQuasiSeparated_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L180). The attribute's comment: “part (2)”. References: SGA 4 VI (1.14), “(i), stacks, X also qs”.
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_and_isQuasiSeparated_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L180). The attribute's comment: “part (2)”. References: SGA 4 VI (1.14), “(i), stacks, X also qs”.
 
 > **Stacks 075S, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks with `𝒳` quasi-compact
 > and quasi-separated and `𝒴` quasi-separated, both in the absolute sense of Stacks 050D part (8),
@@ -200,7 +200,7 @@ theorem isQuasiCompactMorphism_and_isQuasiSeparated_absolute
       AlgebraicStacks.IsQuasiSeparated.{u, w} B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompactStack_and_isAbsolutelyQuasiSeparated_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L206). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.isQuasiCompactStack_and_isAbsolutelyQuasiSeparated_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactQuasiSeparatedStackAbsolute.lean#L206). The attribute's comment: “part (3)”.
 
 > **Stacks 075S, part (3).** A 2-fibre product `𝒳 ×_𝒴 𝒵` of algebraic stacks, with `𝒳`, `𝒵`
 > quasi-compact and quasi-separated and `𝒴` quasi-separated, all in the absolute sense of
@@ -235,7 +235,7 @@ theorem isQuasiCompactStack_and_isAbsolutelyQuasiSeparated_twoFibreProduct
 
 [Tag 0CL2](https://stacks.math.columbia.edu/tag/0CL2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_valuationRing_of_mem_closure_range_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageValuativePoint.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageValuativePoint.lean#L473).
+**`AlgebraicGeometry.Stack.exists_valuationRing_of_mem_closure_range_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageValuativePoint.lean, line 473](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ClosureImageValuativePoint.lean#L473).
 
 > A point in the closure of the image of a quasi-compact 1-morphism of algebraic stacks is
 > reached by the closed point of a valuative square. **Stacks 0CL2.**
@@ -269,7 +269,7 @@ theorem exists_valuationRing_of_mem_closure_range_pointsMap
 
 [Tag 0DTL](https://stacks.math.columbia.edu/tag/0DTL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactMorphism_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean#L199).
+**`AlgebraicGeometry.Stack.isQuasiCompactMorphism_of_isQuasiCompactMorphism_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactFppfDescent.lean#L199).
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : W ⟶ 𝒴` be surjective, flat and locally of finite presentation, where `W` is an algebraic
@@ -296,4 +296,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.7, Tag 050S](https://stacks.math.columbia.edu/tag/050S)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

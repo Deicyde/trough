@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0E00",
@@ -2811,7 +2811,7 @@
     {
      "name": "Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativeDualizingComplex",
      "kind": "theorem",
-     "line": 362,
+     "line": 361,
      "private": false,
      "doc": "**Stacks Project, Tag 0E2E.**  Let `φ : R → A` be a flat homomorphism of finite type of\nNoetherian rings.  Then the relative dualizing complex `ω^•_{A/R} = φ^!(R)` is a relative\ndualizing complex in the sense of [stacks 0E2C]; here `φ^!` is read at `p`, which is an arbitrary\npolynomial presentation of `φ`.\n\nRelative perfection is [stacks 0BZW] (2)(a),\n`Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativelyPerfect`, and the diagonal\ncondition is `Dualizing.PolynomialPresentation.relativeDualizingComplex_diagonalDerivedHom`, from\nflat base change [stacks 0BZN], the composition [stacks 0BZT] and the independence of the\npresentation [stacks 0BZJ].  Finite presentation of `φ`, which [stacks 0E2C] is stated for, is\nnot a hypothesis: a flat map of finite type of Noetherian rings is of finite presentation, and a\npolynomial presentation exists only for a map of finite type.",
      "statement": "theorem relativeDualizingComplex_isRelativeDualizingComplex\n    [IsNoetherianRing R] [IsNoetherianRing A]\n    (p : PolynomialPresentation (algebraMap R A)) (hflat : (algebraMap R A).Flat) :\n    letI : Module.Flat R A := RingHom.flat_algebraMap_iff.mp hflat\n    letI : Algebra.FinitePresentation R A :=\n      Algebra.FinitePresentation.of_finiteType.mp (RingHom.finiteType_algebraMap.mp p.finiteType)\n    IsRelativeDualizingComplex R A\n      (p.upperShriekFunctor.{u, 0}.obj\n        ((DerivedCategory.singleFunctor (ModuleCat.{u} R) 0).obj (ModuleCat.of R R)))",
@@ -7256,9 +7256,9 @@
     {
      "name": "AlgebraicGeometry.CurveFamily.isInvertibleModule_relativeDualizingSheaf_and_baseChangeIso",
      "kind": "theorem",
-     "line": 234,
+     "line": 235,
      "private": false,
-     "doc": "Let `f : X ⟶ S` be a family of curves with Gorenstein fibres equidimensional of dimension\none (`Curves^{Gorenstein, 1}` of Stacks 0E6M), and `(ω^•_{X/S}, τ)` a relative dualizing complex\n(Stacks 0E5X; one exists by Stacks 0E61, `AlgebraicGeometry.Space.RelativeDualizingComplex.nonempty`,\nand any two are uniquely isomorphic by Stacks 0E5Z). Then the relative dualizing sheaf\n`ω_{X/S} = H^{-1}(ω^•_{X/S})` (Stacks 0E6Q) is an invertible `𝒪_X`-module, and its formation\ncommutes with arbitrary base change: for every morphism of families of curves `X' ⟶ X` over\nan arbitrary `S' ⟶ S` (a cartesian square, projection `g'`) and every relative dualizing complex\n`(ω^•_{X'/S'}, τ')`, the canonical base change map\n`AlgebraicGeometry.CurveFamily.relativeDualizingSheafBaseChangeIso : ω_{X'/S'} ≅ (g')^* ω_{X/S}`\nis an isomorphism. That map is `H^{-1}(e)` followed by the canonical identification\n`H^{-1}(L(g')^* ω^•_{X/S}) ≅ (g')^* ω_{X/S}`, where `e` is the unique isomorphism of relative\ndualizing complexes `ω^•_{X'/S'} ≅ L(g')^* ω^•_{X/S}` compatible with the traces, as stated.\n\nAs in Stacks, `X` is an algebraic space, `S` an arbitrary scheme, and the Gorenstein and\ndimension conditions are quantified over the points of `X`, so `f` need not be surjective.",
+     "doc": "Let `f : X ⟶ S` be a family of curves with Gorenstein fibres equidimensional of dimension\none (`Curves^{Gorenstein, 1}` of Stacks 0E6M), and `(ω^•_{X/S}, τ)` a relative dualizing complex\n(Stacks 0E5X; one exists by Stacks 0E61,\n`AlgebraicGeometry.Space.RelativeDualizingComplex.nonempty`,\nand any two are uniquely isomorphic by Stacks 0E5Z). Then the relative dualizing sheaf\n`ω_{X/S} = H^{-1}(ω^•_{X/S})` (Stacks 0E6Q) is an invertible `𝒪_X`-module, and its formation\ncommutes with arbitrary base change: for every morphism of families of curves `X' ⟶ X` over\nan arbitrary `S' ⟶ S` (a cartesian square, projection `g'`) and every relative dualizing complex\n`(ω^•_{X'/S'}, τ')`, the canonical base change map\n`AlgebraicGeometry.CurveFamily.relativeDualizingSheafBaseChangeIso : ω_{X'/S'} ≅ (g')^* ω_{X/S}`\nis an isomorphism. That map is `H^{-1}(e)` followed by the canonical identification\n`H^{-1}(L(g')^* ω^•_{X/S}) ≅ (g')^* ω_{X/S}`, where `e` is the unique isomorphism of relative\ndualizing complexes `ω^•_{X'/S'} ≅ L(g')^* ω^•_{X/S}` compatible with the traces, as stated.\n\nAs in Stacks, `X` is an algebraic space, `S` an arbitrary scheme, and the Gorenstein and\ndimension conditions are quantified over the points of `X`, so `f` need not be surjective.",
      "statement": "theorem CurveFamily.isInvertibleModule_relativeDualizingSheaf_and_baseChangeIso\n    (X : CurveFamily B hZ) (hX : IsGorensteinDimOneFamily B hZ X)\n    (D : RelativeDualizingComplex B.contains_terminal X.toBase X.proper X.flat\n      X.finitePresentation) :\n    Space.IsInvertibleModule X.total (X.relativeDualizingSheaf D) ∧\n      ∀ {X' : CurveFamily B hZ} (φ : X' ⟶ X)\n        (D' : RelativeDualizingComplex B.contains_terminal X'.toBase X'.proper X'.flat\n          X'.finitePresentation),\n        ∃ e : D'.ω ≅ (D.baseChange φ.cartesian).ω,\n          (∀ e' : D'.ω ≅ (D.baseChange φ.cartesian).ω,\n            (derivedModulePushforward B integerBase hZ X'.toBase).map e'.hom ≫\n                (D.baseChange φ.cartesian).τ = D'.τ ↔ e' = e) ∧\n          IsIso (X.relativeDualizingSheafBaseChangeIso\n              (Space.isCohenMacaulay_of_isGorenstein B integerBase hZ hX.1) hX.2 D φ D').hom ∧\n          (X.relativeDualizingSheafBaseChangeIso\n              (Space.isCohenMacaulay_of_isGorenstein B integerBase hZ hX.1) hX.2 D φ D').hom =\n            (DerivedCategory.homologyFunctor _ (-1)).map e.hom ≫\n              (X.relativeDualizingSheafPullbackComparison\n                (Space.isCohenMacaulay_of_isGorenstein B integerBase hZ hX.1) hX.2 D φ).hom",
      "sorry": false,
      "ega": [],
@@ -8686,7 +8686,7 @@
     {
      "name": "Stacks.Sites.ExtensionByZero.OfEssentiallySmall.restrictionTensorIso",
      "kind": "def",
-     "line": 211,
+     "line": 225,
      "private": false,
      "doc": "**Stacks 0E8I over a site with large objects.** For a sheaf of modules `F` on `X`, the\nextension by zero of `G ⊗ F|_U` is the extension by zero of `G`, tensored with `F`, naturally\nin `G`.\n\nThe attribute records the shape at which this holds: the objects of `C` form a type in an\narbitrary universe `c`, but the morphisms, the structure sheaf and the modules all lie in one\nuniverse `u`, and `C` is required to be essentially `u`-small. The tag is carried in full by\n`Stacks.SheafOfModules.ExtensionByZero.extensionByZeroTensorIso`, where objects, morphisms,\nring and modules lie in a single universe — the faithful reading of the tag's ringed site, which\nthis statement specializes to at `c := u`; that registration stands and this one does not\nreplace it.",
      "statement": "noncomputable def restrictionTensorIso\n    (F : SheafOfModules.{u} (ringSheaf X.O)) :\n    extendByZero X U ⋙ (Stacks.SheafOfModules.Tensor.sheafTensor X.O).flip.obj F ≅\n      sliceSheafTensorRight X U (F.over U) ⋙ extendByZero X U",
@@ -8714,7 +8714,7 @@
     {
      "name": "Stacks.SheafOfModules.ExtensionByZero.extensionByZeroTensorIso",
      "kind": "def",
-     "line": 358,
+     "line": 330,
      "private": false,
      "doc": "**Stacks 0E8I.** Extension by zero commutes with tensoring by a module on the original\nsite, naturally in the module on the slice site.",
      "statement": "noncomputable def extensionByZeroTensorIso\n    (F : _root_.SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) :\n    letI := Stacks.Sites.ExtensionByZero.sheafRestrictionIsRightAdjoint X.J\n      (Stacks.SheafOfModules.Tensor.ringSheaf X.O) U\n    let E := _root_.SheafOfModules.pullback.{u}\n      (F := Over.forget U) (𝟙 ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over U))\n    E ⋙ ((sheafTensor.{u, u, u, u, u} X.O).obj F) ≅\n      ((sheafTensor.{u, u, u, u, u} (X.O.over U)).obj (F.over U)) ⋙ E",
@@ -8728,7 +8728,7 @@
     {
      "name": "Stacks.SheafOfModules.ExtensionByZero.extensionTensorBifunctorIso",
      "kind": "def",
-     "line": 523,
+     "line": 499,
      "private": false,
      "doc": "**Stacks 0E8I, bifunctorial form.** Extension by zero commutes with tensoring by a module\non the original site, naturally in the module on the slice site *and* in the module on the\noriginal site.",
      "statement": "noncomputable def extensionTensorBifunctorIso :\n    extensionTensorBifunctor X U ≅ tensorExtensionBifunctor X U",
@@ -9858,7 +9858,7 @@
     {
      "name": "Stacks.Duality.isIso_stalkMap_locallyRingedSpaceDeterminantMap_iff",
      "kind": "theorem",
-     "line": 617,
+     "line": 635,
      "private": false,
      "doc": "**[Stacks, Tag 0E9Y].** Let `X` be a locally ringed space and `E₁ --α--> E₀ --π--> F ⟶ 0` an\nexact sequence of `O_X`-modules with `E₁` and `E₀` finite locally free of ranks `r₁` and `r₀`.\nThe canonical map `⋀^{r₀ - r₁} F ⟶ ⋀^{r₁}(E₁^∨) ⊗ ⋀^{r₀} E₀` is an isomorphism on the stalk at\n`x` if and only if `F` is locally free of rank `r₀ - r₁` on an open neighbourhood of `x`: that\nis, `r₀ - r₁` is a natural number and `F` is free of that rank on some open `U ∋ x`.",
      "statement": "theorem isIso_stalkMap_locallyRingedSpaceDeterminantMap_iff [Epi π]\n    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} E₁ r₁]\n    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} E₀ r₀]\n    (x : ↥Y.toRingedSpace.carrier) :\n    IsIso (AlgebraicGeometry.SheafOfModules.stalkMap\n        (toRingCat (Opens.grothendieckTopology ↥Y.toRingedSpace.carrier) Y.toRingedSpace.sheaf) x\n        (locallyRingedSpaceDeterminantMap Y α π hαπ hS r₁ r₀)) ↔\n      r₁ ≤ r₀ ∧ ∃ U : Opens ↥Y.toRingedSpace.carrier, x ∈ U ∧\n        ∃ t : LocallyFreeRank.Trivialization Y.toRingedSpace.carrier\n          (LocallyFreeRank.toRingSheaf Y.toRingedSpace.carrier Y.toRingedSpace.sheaf) F U,\n          Nonempty (t.ι ≃ Fin (r₀ - r₁))",
@@ -11500,7 +11500,7 @@
     {
      "name": "AlgebraicGeometry.CoherentReflexive.tensorHomEquiv",
      "kind": "def",
-     "line": 187,
+     "line": 183,
      "private": false,
      "doc": "**Stacks Project, Tag 0EBH.**  The internal-Hom adjunction of the category of coherent\nreflexive modules: morphisms out of the hull tensor product `ℱ ⊗_𝒞 𝒢` are morphisms of `ℱ` into\nthe internal Hom `ℋom_{𝒪_X}(𝒢, ℋ)`.",
      "statement": "noncomputable def tensorHomEquiv (F G H : CoherentReflexiveModules X) :\n    (tensorObj F G ⟶ H) ≃ (F ⟶ internalHomObj G H)",
@@ -11514,7 +11514,7 @@
     {
      "name": "AlgebraicGeometry.CoherentReflexive.tensorHomEquiv_apply",
      "kind": "theorem",
-     "line": 198,
+     "line": 194,
      "private": false,
      "doc": "**Stacks Project, Tag 0EBH.**  The adjunction bijection is the currying map of\n[Stacks, Tag 01CN], applied after restricting along the canonical map from the ordinary tensor\nproduct to its double dual.  This pins the bijection down.",
      "statement": "theorem tensorHomEquiv_apply (F G H : CoherentReflexiveModules X)\n    (f : tensorObj F G ⟶ H) :\n    (tensorHomEquiv F G H f).hom.hom =\n      Stacks.SheafOfModules.tensorHomEquiv X.toRingedSpace F.obj.obj G.obj.obj H.obj.obj\n        (toDoubleDual ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n          ⟨((X.toRingedSpace)).presheaf, ((X.toRingedSpace)).IsSheaf⟩).obj (F.obj.obj)).obj\n            (G.obj.obj))) ≫ f.hom.hom)",
@@ -11782,7 +11782,7 @@
     {
      "name": "AlgebraicGeometry.CoherentReflexive.isOpen_sectionIsomorphismLocus_and_nonempty_isColimit",
      "kind": "theorem",
-     "line": 690,
+     "line": 691,
      "private": false,
      "doc": "Let `X` be an integral locally Noetherian normal scheme, `ℱ` a rank one coherent reflexive\n`𝒪_X`-module and `s ∈ Γ(X, ℱ)`.  The set `U = {x ∈ X | s : 𝒪_{X, x} → ℱ_x is an isomorphism}`\nis open, so that `j : U → X` is an open subscheme, and\n\n`j_*𝒪_U = colim (𝒪_X →ˢ ℱ →ˢ ℱ^{[2]} →ˢ ℱ^{[3]} →ˢ ⋯)`,\n\nwhere `ℱ^{[1]} = ℱ` and `ℱ^{[n + 1]} = (ℱ ⊗_{𝒪_X} ℱ^{[n]})^{**}`: the cocone\n`AlgebraicGeometry.CoherentReflexive.sectionIsomorphismOpenCocone` on the directed system\n`AlgebraicGeometry.CoherentReflexive.reflexivePowerModules` of reflexive powers under\nmultiplication by `s`, with vertex `j_*𝒪_U`, is a colimit cocone.",
      "statement": "theorem isOpen_sectionIsomorphismLocus_and_nonempty_isColimit (F : RankOneReflexiveModules X)\n    (s : F.module.sections) :\n    IsOpen (sectionIsomorphismLocus F.module s) ∧\n      Nonempty (IsColimit (sectionIsomorphismOpenCocone F.obj s))",
@@ -19226,7 +19226,7 @@
     {
      "name": "Stacks.LocalCohomology.isEssentiallyConstantWith_localCohomologyAdicCone_of_neg",
      "kind": "theorem",
-     "line": 439,
+     "line": 440,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE** in negative degrees, with no hypothesis.\nFor `i < 0` the system `{H^i_T(M/IⁿM)}` is essentially constant with value `H^i_T(M)`: local\ncohomology with support in `T` of a module vanishes in negative degrees\n(`Stacks.LocalCohomology.isZero_localCohomologyWithSupportIn_single_of_neg`), so every term of\nthe system and the value are zero and the zero morphism is a witness. The three consequences in\nthis range follow by composing with the implications above.",
      "statement": "theorem isEssentiallyConstantWith_localCohomologyAdicCone_of_neg (I : Ideal A) (i : ℤ)\n    (hi : i < 0) (M : ModuleCat.{max u v} A) :\n    EssentiallyConstantPro.IsEssentiallyConstantWith\n      (localCohomologyAdicTower.{u, v} A T I i M) (localCohomologyAdicCone.{u, v} A T I i M)\n      (op 0) 0",
@@ -19240,7 +19240,7 @@
     {
      "name": "Stacks.LocalCohomology.exists_isEssentiallyConstantWith_localCohomologyAdicCone_of_pow_smul_top_eq_bot",
      "kind": "theorem",
-     "line": 465,
+     "line": 466,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE** when `I` acts nilpotently on `M`, with no hypothesis and in\nevery degree. If `IᴺM = 0` then the quotient maps `M → M/IᵐM` are isomorphisms for every\n`m ≥ N`, hence so are their images under `H^i_T`, and a cone whose projections are invertible\nfrom an index on carries essential-constancy data\n(`CategoryTheory.EssentiallyConstantPro.exists_isEssentiallyConstantWith_of_isIso_π`). The three\nconsequences in this range follow by composing with the implications above.\n\nNo Noetherian, finiteness or support hypothesis is used: `A` is an arbitrary commutative ring,\n`T` an arbitrary subset of its spectrum and `M` an arbitrary module.",
      "statement": "theorem exists_isEssentiallyConstantWith_localCohomologyAdicCone_of_pow_smul_top_eq_bot\n    (I : Ideal A) (i : ℤ) (M : ModuleCat.{max u v} A) {N : ℕ}\n    (hN : I ^ N • (⊤ : Submodule A M) = ⊥) :\n    ∃ (j : ℕᵒᵖ) (σ : (localCohomologyAdicTower.{u, v} A T I i M).obj j ⟶\n        (localCohomologyAdicCone.{u, v} A T I i M).pt),\n      EssentiallyConstantPro.IsEssentiallyConstantWith\n        (localCohomologyAdicTower.{u, v} A T I i M) (localCohomologyAdicCone.{u, v} A T I i M)\n        j σ",
@@ -19254,7 +19254,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.isEssentiallyConstantWith_of_depthBound_neg",
      "kind": "theorem",
-     "line": 648,
+     "line": 649,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE** for a bootstrap situation whose depth bound is negative. Every\ndegree `i ≤ s < 0` is negative, so each term of `{H^i_T(M/IⁿM)}` and the value `H^i_T(M)`\nvanish and the zero morphism witnesses essential constancy with value `H^i_T(M)`. The four\nconsequences above apply to this witness, and so hold with no hypothesis in this range.",
      "statement": "theorem isEssentiallyConstantWith_of_depthBound_neg (hs : S.s < 0) (hi : i ≤ S.s) :\n    EssentiallyConstantPro.IsEssentiallyConstantWith\n      (tower.{u, v} S i) (cone.{u, v} S i) (op 0) 0",
@@ -19268,7 +19268,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.exists_isEssentiallyConstantWith_of_pow_smul_top_eq_bot",
      "kind": "theorem",
-     "line": 660,
+     "line": 661,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE** for a bootstrap situation in which `I` acts nilpotently on `M`,\nwith no hypothesis and in every degree. The quotient maps `M → M/IᵐM` are isomorphisms from the\nnilpotency exponent on, so the canonical cone's projections are, and a cone whose projections\nare invertible from an index on carries essential-constancy data.",
      "statement": "theorem exists_isEssentiallyConstantWith_of_pow_smul_top_eq_bot {N : ℕ}\n    (hN : S.I ^ N • (⊤ : Submodule S.A S.M) = ⊥) :\n    ∃ (j : ℕᵒᵖ) (σ : (tower.{u, v} S i).obj j ⟶ (cone.{u, v} S i).pt),\n      EssentiallyConstantPro.IsEssentiallyConstantWith\n        (tower.{u, v} S i) (cone.{u, v} S i) j σ",
@@ -19282,7 +19282,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_pow_smul_top_eq_bot",
      "kind": "theorem",
-     "line": 672,
+     "line": 673,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE**, the Mittag-Leffler consequence for a bootstrap situation in\nwhich `I` acts nilpotently on `M`, with no hypothesis and in every degree.",
      "statement": "theorem isMittagLeffler_of_pow_smul_top_eq_bot {N : ℕ}\n    (hN : S.I ^ N • (⊤ : Submodule S.A S.M) = ⊥) :\n    IsMittagLefflerCategorical (tower.{u, v} S i)",
@@ -19296,7 +19296,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.exists_pow_smul_eq_zero_of_pow_smul_top_eq_bot",
      "kind": "theorem",
-     "line": 682,
+     "line": 683,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE**, the annihilation consequence for a bootstrap situation in which\n`I` acts nilpotently on `M`, with no hypothesis and in every degree.",
      "statement": "theorem exists_pow_smul_eq_zero_of_pow_smul_top_eq_bot {N : ℕ}\n    (hN : S.I ^ N • (⊤ : Submodule S.A S.M) = ⊥) :\n    ∃ n : ℕ, ∀ a ∈ S.I ^ n,\n      ∀ x : (localCohomologyWithSupportInModuleFunctor.{u, v} S.A S.T i).obj\n        (ModuleCat.of S.A S.M), a • x = 0",
@@ -19310,7 +19310,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.isLimit_of_pow_smul_top_eq_bot",
      "kind": "def",
-     "line": 695,
+     "line": 696,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE**, the limit consequence for a bootstrap situation in which `I`\nacts nilpotently on `M`, with no hypothesis and in every degree: the quotient maps exhibit\n`H^i_T(M)` as `lim H^i_T(M/IⁿM)`.",
      "statement": "def isLimit_of_pow_smul_top_eq_bot {N : ℕ}\n    (hN : S.I ^ N • (⊤ : Submodule S.A S.M) = ⊥) :\n    IsLimit (cone.{u, v} S i)",
@@ -19324,7 +19324,7 @@
     {
      "name": "Stacks.LocalCohomology.Bootstrap.isMittagLeffler_of_eq_closedPoint",
      "kind": "theorem",
-     "line": 723,
+     "line": 724,
      "private": false,
      "doc": "**Stacks Project, Tag 0EIE**, the Mittag-Leffler consequence for a bootstrap situation whose\nring is local and whose locus is the closed point, with no hypothesis. The terms\n`H^i_T(M/IⁿM)` are then local cohomology at the maximal ideal of finite modules over a\nNoetherian local ring, hence Artinian, and an inverse system of Artinian modules is\nMittag-Leffler. No degree restriction is needed either.",
      "statement": "theorem isMittagLeffler_of_eq_closedPoint [IsLocalRing S.A]\n    (hT : S.T = {IsLocalRing.closedPoint S.A}) :\n    IsMittagLefflerCategorical (tower.{u, u} S i)",
@@ -24385,7 +24385,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ProjAndSpec.derivedPushforwardPuncturedConeIsoTruncation_hom_naturality",
      "kind": "theorem",
-     "line": 692,
+     "line": 716,
      "private": false,
      "doc": "**The decomposition `RΓ(U, 𝓕_U) = ⨁_m RΓ(P, 𝓕(m))` is functorial in `𝓕`.** For a morphism\n`φ : 𝓕 ⟶ 𝓖` of quasi-coherent `𝒪_P`-modules, the morphism `RΓ(U, φ_U)` induced on derived\nglobal sections of the pullbacks to the punctured cone is carried by\n`derivedPushforwardPuncturedConeIsoTruncation` to the direct sum, over all integers `m`, of the\nmorphisms `RΓ(P, φ ⊗ 1) : RΓ(P, 𝓕(m)) ⟶ RΓ(P, 𝓖(m))`.",
      "statement": "theorem derivedPushforwardPuncturedConeIsoTruncation_hom_naturality\n    [CompactSpace (AlgebraicGeometry.Proj 𝒜)] {F G : (AlgebraicGeometry.Proj 𝒜).Modules}\n    [F.IsQuasicoherent] [G.IsQuasicoherent] (φ : F ⟶ G) :\n    (Stacks.Duality.derivedPushforward\n          (puncturedConeProj (truncationConeData 𝒜) ≫\n            AlgebraicGeometry.Proj.toSpecZero 𝒜)).map\n        ((DerivedCategory.singleFunctor (openUInL (truncationConeData 𝒜)).toScheme.Modules 0).map\n          ((Scheme.Modules.pullback (puncturedConeProj (truncationConeData 𝒜))).map φ)) ≫\n        (derivedPushforwardPuncturedConeIsoTruncation 𝒜 G).hom =\n      (derivedPushforwardPuncturedConeIsoTruncation 𝒜 F).hom ≫\n        Limits.Sigma.map (fun m : ℤ => (Stacks.Duality.derivedPushforward\n          (AlgebraicGeometry.Proj.toSpecZero 𝒜)).map\n          ((DerivedCategory.singleFunctor (AlgebraicGeometry.Proj 𝒜).Modules 0).map\n            (((Stacks.SheafOfModules.Tensor.sheafTensor\n              (J := (Opens.grothendieckTopology (ProjectiveSpectrum.top 𝒜)))\n              (ProjectiveSpectrum.Proj.structureSheaf 𝒜)).map φ).app (twistingSheaf 𝒜 m))))",
@@ -24433,7 +24433,7 @@
     {
      "name": "Stacks.SectionRingProjIso.projAndSpecDiagram_eq_laurentDiagram_of_isProper",
      "kind": "theorem",
-     "line": 364,
+     "line": 366,
      "private": false,
      "doc": "**Stacks Project, Tag 0EKI: for `P` proper over `R` and `𝓛` ample, diagram 0EKG is the\ndiagram of `Spec_P(⨁_{m ∈ ℤ} 𝓛^{⊗ m}) ⟶ Spec_P(⨁_{m ≥ 0} 𝓛^{⊗ m}) ⟶ P`, arrow by arrow.**\n\nLet `A = Γ_*(P, 𝓛)`, `r : P ⟶ Proj A` the canonical morphism, `π : L ⟶ Proj A` the cone of\n[Stacks, Tag 0EKG] with its punctured cone `U ⊆ L`, `σ : L ⟶ X = Spec A`, and `ρ`, `Φ_L`, `Φ_U`\nthe identifications `P ≅ Proj A`, `L ≅ Spec_P(⨁_{m ≥ 0} 𝓛^{⊗ m})`, `U ≅ Spec_P(⨁_{m ∈ ℤ} 𝓛^{⊗ m})`\n(the last two over `P`). Then:\n\n1. `r` is an isomorphism (`P = Proj A`);\n2. **the top arrow**: under `Φ_U` and `Φ_L` the open immersion `U ⟶ L` is the morphism\n   `Spec_P(⨁_{m ∈ ℤ} 𝓛^{⊗ m}) ⟶ Spec_P(⨁_{m ≥ 0} 𝓛^{⊗ m})` induced by the inclusion of algebras\n   `⨁_{m ≥ 0} 𝓛^{⊗ m} ⊆ ⨁_{m ∈ ℤ} 𝓛^{⊗ m}`, as morphisms over `P`;\n3. **the projections**: under `Φ_L` and `ρ` the cone projection `π` is the structure morphism of\n   `Spec_P(⨁_{m ≥ 0} 𝓛^{⊗ m})`, and under `Φ_U` and `ρ` its restriction `π|_U` is that of\n   `Spec_P(⨁_{m ∈ ℤ} 𝓛^{⊗ m})`;\n4. the top arrow is a morphism over `P` and an open immersion;\n5. **the left vertical identification** `Spec_P(⨁_{m ∈ ℤ} 𝓛^{⊗ m}) ≅ U ⊆ X` (the `=` of the\n   diagram) is `Φ_U⁻¹` followed by `σ|_U`, an isomorphism;\n6. **the left square** of the new diagram commutes: the top arrow followed by `σ` (read through\n   `Φ_L`) is the identification with `U` followed by `U ⊆ X`;\n7. **the right square** of the new diagram commutes: the projection to `P` followed by\n   `P = Proj A ⟶ Z = Spec A₀` is `σ` (read through `Φ_L`) followed by `X ⟶ Z`.",
      "statement": "theorem projAndSpecDiagram_eq_laurentDiagram_of_isProper :\n    IsIso (projHomOfIsAmple L hL) ∧\n    (puncturedConeIsoLaurentOfIsProper L hL f).inv ≫ openUInLOverOfIsProper L hL f =\n      laurentToNonnegLaurentRelativeSpec L hL ≫ (coneIsoNonnegLaurentOfIsProper L hL f).inv ∧\n    (coneIsoNonnegLaurentOfIsProper L hL f).hom.left ≫ (nonnegLaurentRelativeSpecOver L hL).hom =\n      pi (grading L) ≫ (projIsoOfIsProper L hL f).inv ∧\n    (puncturedConeIsoLaurentOfIsProper L hL f).hom.left ≫ (laurentRelativeSpecOver L hL).hom =\n      (openUInL (grading L)).ι ≫ pi (grading L) ≫ (projIsoOfIsProper L hL f).inv ∧\n    (laurentToNonnegLaurentRelativeSpec L hL).left ≫ (nonnegLaurentRelativeSpecOver L hL).hom =\n      (laurentRelativeSpecOver L hL).hom ∧\n    IsOpenImmersion (laurentToNonnegLaurentRelativeSpec L hL).left ∧\n    IsIso ((puncturedConeIsoLaurentOfIsProper L hL f).inv.left ≫\n      (toSpecA (grading L) ∣_ Stacks.AlgebraicGeometry.ProjAndSpec.openU (grading L))) ∧\n    (laurentToNonnegLaurentRelativeSpec L hL).left ≫\n        (coneIsoNonnegLaurentOfIsProper L hL f).inv.left ≫ toSpecA (grading L) =\n      ((puncturedConeIsoLaurentOfIsProper L hL f).inv.left ≫\n        (toSpecA (grading L) ∣_ Stacks.AlgebraicGeometry.ProjAndSpec.openU (grading L))) ≫\n        (Stacks.AlgebraicGeometry.ProjAndSpec.openU (grading L)).ι ∧\n    (nonnegLaurentRelativeSpecOver L hL).hom ≫ (projIsoOfIsProper L hL f).hom ≫\n        Proj.toSpecZero (grading L) =\n      (coneIsoNonnegLaurentOfIsProper L hL f).inv.left ≫ toSpecA (grading L) ≫\n        Stacks.AlgebraicGeometry.ProjAndSpec.xToZ (grading L)",
@@ -25297,7 +25297,7 @@
     {
      "name": "Stacks.FundamentalGroup.finiteEtaleBaseChange_isEquivalence_of_completionEquivalence",
      "kind": "theorem",
-     "line": 2984,
+     "line": 3021,
      "private": false,
      "doc": "**[Stacks, Tag 0EL9].** Let `X` be a Noetherian scheme and `Y ⊆ X` a closed subscheme with\nideal sheaf `I`. If the completion functor `Coh(𝒪_X) ⥤ Coh(X, I)`, `ℱ ↦ ℱ^∧`, is an equivalence\non the full subcategories of finite locally free objects, then the restriction functor\n`FÉt_X ⥤ FÉt_Y`, `U ↦ U ×_X Y`, is an equivalence.\n\nThe closed subscheme is given by a closed immersion `i : Y ⟶ X` with ideal sheaf `I = ker i`.\nRestriction factors as restriction to the closed subscheme cut out by `I` followed by base change\nalong the isomorphism from `Y` onto it, and the second is an equivalence because an isomorphism is\na thickening ([Stacks, Tag 0BQB]); the first is\n`Stacks.FundamentalGroup.finiteEtaleBaseChange_isEquivalence_of_completion`.",
      "statement": "public theorem finiteEtaleBaseChange_isEquivalence_of_completionEquivalence\n    {X Y : Scheme.{u}} (i : Y ⟶ X) [IsNoetherian X] [IsClosedImmersion i]\n    [(finiteLocallyFreeCompletion X i.ker).IsEquivalence] :\n    (AlgebraicGeometry.finiteEtaleBaseChange i).IsEquivalence",
@@ -32506,7 +32506,7 @@
     {
      "name": "AlgebraicGeometry.Space.ChowCohomologyClass.comp_chernCohomologyClass",
      "kind": "theorem",
-     "line": 418,
+     "line": 417,
      "private": false,
      "doc": "**Stacks 0ES1.** In Situation 0EDT let `X/B` be good and let `ℰ` be a finite locally free\n`𝒪_X`-module of rank `r`. Then `c_j(ℰ) ∈ A^j(X)` commutes with every `c ∈ A^p(X)`:\n`c ∘ c_j(ℰ) = c_j(ℰ) ∘ c` in `A^{p+j}(X) = A^{j+p}(X)`, the product of Stacks 0ERK being\ncomposition of bivariant classes (`AlgebraicGeometry.Space.ChowCohomologyClass.comp`). Here\n`c_j(ℰ)` is the Chern class of Stacks 0ERY and 0ERZ (`AlgebraicGeometry.Space.chernCohomologyClass`,\nthe class `AlgebraicGeometry.Space.chernClass` read in `A^j(X)`). (The source's `c_j(ℒ)` is a\ntypo for `c_j(ℰ)`.)",
      "statement": "theorem ChowCohomologyClass.comp_chernCohomologyClass {p : ℤ} (c : ChowCohomologyClass D sX hX p)\n    (j : Fin (r + 1)) :\n    (⟨p + ((j : ℕ) : ℤ), c.comp (chernCohomologyClass E r hE j)⟩ :\n        GradedMonoid (ChowCohomologyClass D sX hX)) =\n      ⟨((j : ℕ) : ℤ) + p, (chernCohomologyClass E r hE j).comp c⟩",
@@ -32520,7 +32520,7 @@
     {
      "name": "AlgebraicGeometry.Space.commute_of_chernCohomologyClass",
      "kind": "theorem",
-     "line": 439,
+     "line": 438,
      "private": false,
      "doc": "**Stacks 0ES1**, in the Chow cohomology algebra: `c_j(ℰ)` commutes with every element of\n`A^*(X) = ⊕_p A^p(X)` (`AlgebraicGeometry.Space.ChowCohomologyAlgebra`), so lies in its centre.",
      "statement": "theorem commute_of_chernCohomologyClass (j : Fin (r + 1)) (x : ChowCohomologyAlgebra D sX hX) :\n    Commute (DirectSum.of (ChowCohomologyClass D sX hX) ((j : ℕ) : ℤ)\n      (chernCohomologyClass E r hE j)) x",
@@ -32534,7 +32534,7 @@
     {
      "name": "AlgebraicGeometry.Space.chernCap_apply_chernCap_comm",
      "kind": "theorem",
-     "line": 461,
+     "line": 460,
      "private": false,
      "doc": "**Stacks 0ES1, in particular.** In Situation 0EDT let `X/B` be good and let `ℰ`, `ℱ` be finite\nlocally free `𝒪_X`-modules of ranks `r` and `s`. Then for every good `g : X' ⟶ X` (for instance\n`X' = X`) and every `α ∈ CH_k(X')`,\n\n  `c_i(ℰ) ∩ c_j(ℱ) ∩ α = c_j(ℱ) ∩ c_i(ℰ) ∩ α`  in `CH_{k-i-j}(X')`,\n\nthe Chern classes being those of Stacks 0ERY and 0ERZ (`AlgebraicGeometry.Space.chernCap`), and\n`CH_{k-j-i} = CH_{k-i-j}` the identification of equal degrees.",
      "statement": "theorem chernCap_apply_chernCap_comm (F : Modules.{u, u} D.site D.base D.base_mem X hX.1)\n    (s : ℕ) (hF : RingedSite.IsFiniteLocallyFreeOfRank\n      (smallEtaleRingedSite D.site D.base D.base_mem X hX.1) F s)\n    (i : Fin (r + 1)) (j : Fin (s + 1)) {Y : D.Ambient} (g : Y ⟶ X) (hY : D.IsGood (g ≫ sX))\n    (k : ℤ) (α : chowGroupCanonical.{u + 1} D (g ≫ sX) hY k) :\n    chernCap D sX hX E r hE g hY i (k - ((j : ℕ) : ℤ)) (chernCap D sX hX F s hF g hY j k α) =\n      ProjectiveBundleRelation.degreeCast (fun m => chowGroupCanonical.{u + 1} D (g ≫ sX) hY m)\n        (by ring)\n        (chernCap D sX hX F s hF g hY j (k - ((i : ℕ) : ℤ)) (chernCap D sX hX E r hE g hY i k α))",
@@ -34271,7 +34271,7 @@
     {
      "name": "Profinite.compactSpace_t2Space_totallyDisconnectedSpace_of_isLimit",
      "kind": "theorem",
-     "line": 50,
+     "line": 51,
      "private": false,
      "doc": "**Stacks 0ET8.** A limit of profinite spaces is profinite: for a small diagram `F` of profinite\nspaces, the point of any limit cone of the underlying diagram `F ⋙ Profinite.toTopCat` in `TopCat`\nis compact, Hausdorff and totally disconnected.\n\nThis is the faithful form of the tag, with the limit taken in `TopCat`; the registration of 0ET8 on\n`Profinite.hasLimits` in the reviewed tree is the weaker categorical statement that `Profinite` has\nlimits.",
      "statement": "theorem compactSpace_t2Space_totallyDisconnectedSpace_of_isLimit {J : Type v} [SmallCategory J]\n    {F : J ⥤ Profinite.{max u v}} {c : Cone (F ⋙ Profinite.toTopCat)} (hc : IsLimit c) :\n    CompactSpace c.pt ∧ T2Space c.pt ∧ TotallyDisconnectedSpace c.pt",

@@ -8,7 +8,7 @@ proof: formalized
 
 # The Magnetic Field (TemperedDistributional/MagneticField)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.MagneticField`, [Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean): 6 declarations, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.MagneticField`, [Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean): 6 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.MagneticField`, [Phy
 
 ## A. Magnetic field matrix for distributions
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L60).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L60).
 
 > The magnetic field matrix of an electromagnetic potential which is a distribution.
 
@@ -39,7 +39,7 @@ noncomputable def magneticFieldMatrix {d} (c : SpeedOfLight) :
 
 ### A.1. Magnetic field matrix in terms of vector potentials
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_eq_vectorPotential`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L80).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_eq_vectorPotential`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L80).
 
 ```lean
 lemma magneticFieldMatrix_eq_vectorPotential {c : SpeedOfLight}
@@ -51,7 +51,7 @@ lemma magneticFieldMatrix_eq_vectorPotential {c : SpeedOfLight}
     EuclideanSpace.basisFun (Fin d) ℝ i ⊗ₜ[ℝ] EuclideanSpace.basisFun (Fin d) ℝ j
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_vector_potential`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L97).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_vector_potential`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L97).
 
 ```lean
 lemma magneticFieldMatrix_basis_repr_eq_vector_potential {c : SpeedOfLight}
@@ -63,7 +63,7 @@ lemma magneticFieldMatrix_basis_repr_eq_vector_potential {c : SpeedOfLight}
       Space.distSpaceDeriv i (A.vectorPotential c) ε j
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L106).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L106).
 
 ```lean
 lemma magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential {c : SpeedOfLight}
@@ -77,7 +77,7 @@ lemma magneticFieldMatrix_distSpaceDeriv_basis_repr_eq_vector_potential {c : Spe
 
 ### A.2. The magnetic field matrix in terms of the field strength
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_fieldStrength`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L122).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_basis_repr_eq_fieldStrength`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L122).
 
 ```lean
 lemma magneticFieldMatrix_basis_repr_eq_fieldStrength {c : SpeedOfLight}
@@ -86,12 +86,12 @@ lemma magneticFieldMatrix_basis_repr_eq_fieldStrength {c : SpeedOfLight}
     ((PiLp.basisFun 2 ℝ (Fin d)).tensorProduct (PiLp.basisFun 2 ℝ (Fin d))).repr
         (A.magneticFieldMatrix c ε) (i, j) =
       (Lorentz.Vector.basis.tensorProduct Lorentz.Vector.basis).repr
-        (distTimeSlice c A.fieldStrength ε) (Sum.inr i, Sum.inr j)
+        (tempDistTimeSlice c A.fieldStrength ε) (Sum.inr i, Sum.inr j)
 ```
 
 ### A.3. Magnetic field matrix in 1d
 
-**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_one_dim_eq_zero`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L147).
+**`Electromagnetism.TempDistElectromagneticPotential.magneticFieldMatrix_one_dim_eq_zero`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean#L147).
 
 ```lean
 lemma magneticFieldMatrix_one_dim_eq_zero {c : SpeedOfLight}
@@ -106,4 +106,4 @@ lemma magneticFieldMatrix_one_dim_eq_zero {c : SpeedOfLight}
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean)

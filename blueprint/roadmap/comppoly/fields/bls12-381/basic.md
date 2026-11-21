@@ -7,24 +7,24 @@ proof: formalized
 
 # The BLS12-381 scalar prime field
 
-`CompPoly.Fields.BLS12_381.Basic`, in [CompPoly/Fields/BLS12_381/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/BLS12_381/Basic.lean), by Quang Dao.
+`CompPoly.Fields.BLS12_381.Basic`, in [CompPoly/Fields/BLS12_381/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BLS12_381/Basic.lean), by Quang Dao.
 
 > `r` of the BLS12-381 curve, 255-bit, 2-adicity 32
 > ([IETF pairing-friendly-curves draft](https://datatracker.ietf.org/doc/draft-irtf-cfrg-pairing-friendly-curves/)).
 
-`BLS12_381.scalarFieldSize` (definition, [line 22](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/BLS12_381/Basic.lean#L22))
+`BLS12_381.scalarFieldSize` (definition, [line 22](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BLS12_381/Basic.lean#L22))
 
 ```lean
 def scalarFieldSize : Nat
 ```
 
-`BLS12_381.ScalarField` (abbreviation, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/BLS12_381/Basic.lean#L25))
+`BLS12_381.ScalarField` (abbreviation, [line 25](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BLS12_381/Basic.lean#L25))
 
 ```lean
 abbrev ScalarField
 ```
 
-`BLS12_381.ScalarField_is_prime` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/BLS12_381/Basic.lean#L27))
+`BLS12_381.ScalarField_is_prime` (theorem, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BLS12_381/Basic.lean#L27))
 
 ```lean
 theorem ScalarField_is_prime : Nat.Prime scalarFieldSize
@@ -40,5 +40,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/BLS12_381/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/BLS12_381/Basic.lean)
+- [CompPoly/Fields/BLS12_381/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/BLS12_381/Basic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.BLS12_381.Basic.json)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Number operators
 
-The module `Physlib.QuantumMechanics.HarmonicOscillator.NumberOperator`, [Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean): 17 declarations, 15 with a docstring.
+The module `Physlib.QuantumMechanics.HarmonicOscillator.NumberOperator`, [Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean): 17 declarations, 15 with a docstring.
 
 ## i. Overview
 
@@ -42,7 +42,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.NumberOperator`, [Physli
 
 ### A.1. Definition
 
-**`QuantumMechanics.HarmonicOscillator.numberCLM`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L82).
+**`QuantumMechanics.HarmonicOscillator.numberCLM`**, a def, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L82).
 
 > The number operator `Nᵢ = aᵢ† aᵢ`.
 
@@ -50,7 +50,7 @@ The module `Physlib.QuantumMechanics.HarmonicOscillator.NumberOperator`, [Physli
 def numberCLM : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.numberCLM_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L84).
+**`QuantumMechanics.HarmonicOscillator.numberCLM_eq`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L84).
 
 ```lean
 lemma numberCLM_eq : Q.numberCLM i = Q.raisingCLM i ∘L Q.loweringCLM i
@@ -58,7 +58,7 @@ lemma numberCLM_eq : Q.numberCLM i = Q.raisingCLM i ∘L Q.loweringCLM i
 
 ### A.2. Commutation relations
 
-**`QuantumMechanics.HarmonicOscillator.number_commutation_lowering`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L93).
+**`QuantumMechanics.HarmonicOscillator.number_commutation_lowering`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L93).
 
 > `[Nᵢ, aⱼ] = -δᵢⱼ aⱼ`.
 
@@ -67,7 +67,7 @@ lemma number_commutation_lowering :
     ⁅Q.numberCLM i, Q.loweringCLM j⁆ = -(δ[i,j] • Q.loweringCLM j)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.number_commutation_raising`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L102).
+**`QuantumMechanics.HarmonicOscillator.number_commutation_raising`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L102).
 
 > `[Nᵢ, aⱼ†] = δᵢⱼ aⱼ†`.
 
@@ -76,7 +76,7 @@ lemma number_commutation_raising :
     ⁅Q.numberCLM i, Q.raisingCLM j⁆ = δ[i,j] • Q.raisingCLM j
 ```
 
-**`QuantumMechanics.HarmonicOscillator.number_commutation_number`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L111).
+**`QuantumMechanics.HarmonicOscillator.number_commutation_number`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L111).
 
 > `[Nᵢ, Nⱼ] = 0`.
 
@@ -84,7 +84,7 @@ lemma number_commutation_raising :
 lemma number_commutation_number : ⁅Q.numberCLM i, Q.numberCLM j⁆ = 0
 ```
 
-**`QuantumMechanics.HarmonicOscillator.lowering_comp_raising`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L122).
+**`QuantumMechanics.HarmonicOscillator.lowering_comp_raising`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L122).
 
 > `aᵢ aᵢ† = Nᵢ + 𝟙`.
 
@@ -96,7 +96,7 @@ lemma lowering_comp_raising :
 
 ### A.3. Inner products
 
-**`QuantumMechanics.HarmonicOscillator.numberCLM_inner`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L137).
+**`QuantumMechanics.HarmonicOscillator.numberCLM_inner`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L137).
 
 > `⟪Nᵢ f, g⟫ = ⟪f, Nᵢ g⟫` for Schwartz maps `f`, `g`.
 
@@ -113,7 +113,7 @@ lemma numberCLM_inner (f g : 𝓢(Space d, ℂ)) :
 
 ### B.1. Commutation relations with the ladder and number operators
 
-**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_lowering`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L158).
+**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_lowering`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L158).
 
 > `[∑ⱼ ℏ ωⱼ (Nⱼ + ½), aᵢ] = -ℏ ωᵢ aᵢ`.
 
@@ -124,7 +124,7 @@ lemma sum_number_commutation_lowering :
       Q.loweringCLM i⁆ = -(((ℏ * Q.ω i : ℝ) : ℂ) • Q.loweringCLM i)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_raising`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L168).
+**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_raising`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L168).
 
 > `[∑ⱼ ℏ ωⱼ (Nⱼ + ½), aᵢ†] = ℏ ωᵢ aᵢ†`.
 
@@ -135,7 +135,7 @@ lemma sum_number_commutation_raising :
       Q.raisingCLM i⁆ = ((ℏ * Q.ω i : ℝ) : ℂ) • Q.raisingCLM i
 ```
 
-**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_number`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L178).
+**`QuantumMechanics.HarmonicOscillator.sum_number_commutation_number`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L178).
 
 > `[∑ⱼ ℏ ωⱼ (Nⱼ + ½), Nᵢ] = 0`.
 
@@ -148,7 +148,7 @@ lemma sum_number_commutation_number :
 
 ### B.2. The Hamiltonian on Schwartz maps
 
-**`QuantumMechanics.HarmonicOscillator.sum_number_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L191).
+**`QuantumMechanics.HarmonicOscillator.sum_number_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L191).
 
 > On Schwartz maps, `∑ᵢ ℏ ωᵢ (Nᵢ + ½) ψ = (1/2m) ∑ᵢ pᵢ (pᵢ ψ) + V ψ`.
 
@@ -159,7 +159,7 @@ lemma sum_number_apply (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
       ((2 * Q.m : ℝ) : ℂ)⁻¹ * ∑ i, 𝐩 i (𝐩 i ψ) x + (Q.potentialFunction x : ℂ) * ψ x
 ```
 
-**`QuantumMechanics.HarmonicOscillator.schwartzSubmodule_le_hamiltonian_domain`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L220).
+**`QuantumMechanics.HarmonicOscillator.schwartzSubmodule_le_hamiltonian_domain`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L220).
 
 > The Schwartz submodule is contained in the domain of the Hamiltonian.
 
@@ -167,7 +167,7 @@ lemma sum_number_apply (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
 lemma schwartzSubmodule_le_hamiltonian_domain : SchwartzSubmodule d ≤ Q.hamiltonian.domain
 ```
 
-**`QuantumMechanics.HarmonicOscillator.hamiltonian_apply_schwartz`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L228).
+**`QuantumMechanics.HarmonicOscillator.hamiltonian_apply_schwartz`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L228).
 
 > On a Schwartz map, the Hamiltonian `kineticOperator + potentialOperator` of `Basic.lean` acts as
 > `∑ᵢ ℏ ωᵢ (Nᵢ + ½)`.
@@ -180,7 +180,7 @@ lemma hamiltonian_apply_schwartz (f : 𝓢(Space d, ℂ))
         (Q.numberCLM j + (2⁻¹ : ℂ) • ContinuousLinearMap.id ℂ 𝓢(Space d, ℂ))) f)
 ```
 
-**`QuantumMechanics.HarmonicOscillator.hamiltonian_inner_schwartz`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L257).
+**`QuantumMechanics.HarmonicOscillator.hamiltonian_inner_schwartz`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L257).
 
 > `⟪H f, g⟫ = ⟪f, H g⟫` for Schwartz maps `f`, `g`: the Hamiltonian is symmetric on the Schwartz
 > submodule.
@@ -195,7 +195,7 @@ lemma hamiltonian_inner_schwartz (f g : 𝓢(Space d, ℂ))
 
 ## C. The number operators as unbounded operators
 
-**`QuantumMechanics.HarmonicOscillator.numberOperator`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L275).
+**`QuantumMechanics.HarmonicOscillator.numberOperator`**, a def, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L275).
 
 > The number operator as an unbounded operator with domain the Schwartz submodule.
 
@@ -203,7 +203,7 @@ lemma hamiltonian_inner_schwartz (f g : 𝓢(Space d, ℂ))
 def numberOperator : Q.HS →ₗ.[ℂ] Q.HS
 ```
 
-**`QuantumMechanics.HarmonicOscillator.numberOperator_apply`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L279).
+**`QuantumMechanics.HarmonicOscillator.numberOperator_apply`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L279).
 
 ```lean
 lemma numberOperator_apply (ψ : SchwartzSubmodule d) :
@@ -213,7 +213,7 @@ lemma numberOperator_apply (ψ : SchwartzSubmodule d) :
 
 ## D. Symmetry
 
-**`QuantumMechanics.HarmonicOscillator.numberOperator_isSymmetric`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L291).
+**`QuantumMechanics.HarmonicOscillator.numberOperator_isSymmetric`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean#L291).
 
 > The number operator is symmetric.
 
@@ -227,4 +227,4 @@ lemma numberOperator_isSymmetric : (Q.numberOperator i).IsSymmetric
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean)
+- [Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean)

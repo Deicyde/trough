@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0900",
@@ -2882,7 +2882,7 @@
     {
      "name": "Stacks.ConstantSheaf.constantTensorAction_comp_completedConstantSheafResidueMap",
      "kind": "theorem",
-     "line": 234,
+     "line": 232,
      "private": false,
      "doc": "**Stacks 093M**, the inclusion `I̲ · R̲^∧ ⊂ I̲^∧`: the canonical map `R̲^∧ ⟶ (R/I)̲`, read\nover `Osharp`, kills the multiplication `I̲ ⊗_{Osharp} R̲^∧ ⟶ R̲^∧`. Since `I̲^∧` is the kernel\nof that canonical map, this says that the product of the constant sheaf of ideals with the\ncompleted constant sheaf is contained in the completed constant ideal sheaf.\n\nThe multiplication is killed by any map annihilating every constant multiple, and the residue\nmap is such a map: an element of `I` acts as zero on `(R/I)̲`, hence `a (m)` acts as zero on its\nbridge.",
      "statement": "theorem constantTensorAction_comp_completedConstantSheafResidueMap :\n    constantTensorAction J a (ModuleCat.ofHom I.subtype) (completedConstantSheaf J I) ≫\n        sheafOfModulesOfConstantRingMap J (associatedRingMap J a)\n          (completedConstantSheafResidueMap J I) = 0",
@@ -2896,7 +2896,7 @@
     {
      "name": "Stacks.ConstantSheaf.idealSmulMap_comp_of_constantTensorAction_comp_eq_zero",
      "kind": "theorem",
-     "line": 264,
+     "line": 262,
      "private": false,
      "doc": "**Stacks 093M**, the inclusion `I F ⊂ I̲ · F`: a map out of `F` over `Osharp` which kills the\nmultiplication `I̲ ⊗_{Osharp} F ⟶ F` also kills the map `∐_{f ∈ I} F ⟶ F` of multiplication by\nthe elements of `I`, whose image is `I F`.\n\nMultiplying by a single element of `I` is tested on the images of the sheafification unit, where\nthe multiplication's value is known; the passage from the elements of `I` to the single map out\nof the coproduct is the preservation of coproducts by the bridge, read off its adjunction.",
      "statement": "theorem idealSmulMap_comp_of_constantTensorAction_comp_eq_zero (F : Sheaf J (ModuleCat.{w} R))\n    {Z : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf Osharp)}\n    (g : (sheafOfModulesOfConstantRingFunctor J (associatedRingMap J a)).obj F ⟶ Z)\n    (hg : constantTensorAction J a (ModuleCat.ofHom I.subtype) F ≫ g = 0) :\n    (sheafOfModulesOfConstantRingFunctor J (associatedRingMap J a)).map\n        (idealSmulMap J I F) ≫ g = 0",
@@ -2910,7 +2910,7 @@
     {
      "name": "Stacks.ConstantSheaf.isColimitCokernelCoforkConstantTensorAction",
      "kind": "def",
-     "line": 345,
+     "line": 343,
      "private": false,
      "doc": "**Stacks 093M**, the identification `R̲^∧/I̲ · R̲^∧ = (R/I)̲`: the canonical map\n`R̲^∧ ⟶ (R/I)̲`, read as a map of sheaves of modules over `Osharp`, is a cokernel of the\nmultiplication `I̲ ⊗_{Osharp} R̲^∧ ⟶ R̲^∧` by the constant sheaf of ideals `I̲`.\n\nA map out of the bridge of `R̲^∧` which kills the multiplication kills the multiplications by\nthe elements of `I` as well, so its transpose across the bridge adjunction factors through\n`(R/I)̲` by the identification `R̲^∧/I R̲^∧ = (R/I)̲`; transposing back gives the\nfactorisation, which is unique because the canonical map is an epimorphism.",
      "statement": "noncomputable def isColimitCokernelCoforkConstantTensorAction :\n    IsColimit (CokernelCofork.ofπ\n      ((sheafOfModulesOfConstantRingFunctor J (associatedRingMap J a)).map\n        (completedConstantSheafResidueMap J I))\n      (constantTensorAction_comp_completedConstantSheafResidueMap J a I))",
@@ -2924,7 +2924,7 @@
     {
      "name": "Stacks.ConstantSheaf.completedConstantSheaf_quotientByConstantIdealSmul",
      "kind": "def",
-     "line": 393,
+     "line": 391,
      "private": false,
      "doc": "**Stacks 093M.** The canonical isomorphism `R̲^∧/I̲ · R̲^∧ ≅ (R/I)̲` from the quotient of the\ncompleted constant sheaf by the product of the constant sheaf of ideals with it to the constant\nsheaf of the quotient ring, as sheaves of modules over `Osharp`.",
      "statement": "noncomputable def completedConstantSheaf_quotientByConstantIdealSmul :\n    cokernel (constantTensorAction J a (ModuleCat.ofHom I.subtype)\n        (completedConstantSheaf J I)) ≅\n      (sheafOfModulesOfConstantRingFunctor J (associatedRingMap J a)).obj\n        ((constantSheaf J (ModuleCat.{w} R)).obj (ModuleCat.of R (R ⧸ I)))",
@@ -2938,7 +2938,7 @@
     {
      "name": "Stacks.ConstantSheaf.completedConstantSheaf_quotientByConstantIdealSmul_hom_comp",
      "kind": "theorem",
-     "line": 407,
+     "line": 405,
      "private": false,
      "doc": "**Stacks 093M.** The isomorphism `R̲^∧/I̲ · R̲^∧ ≅ (R/I)̲` intertwines the cokernel\nprojection with the canonical map `R̲^∧ ⟶ (R/I)̲`, so it is the identification of Tag 093M and\nnot a bare existence statement.",
      "statement": "theorem completedConstantSheaf_quotientByConstantIdealSmul_hom_comp :\n    cokernel.π (constantTensorAction J a (ModuleCat.ofHom I.subtype)\n          (completedConstantSheaf J I)) ≫\n        (completedConstantSheaf_quotientByConstantIdealSmul J a I).hom =\n      (sheafOfModulesOfConstantRingFunctor J (associatedRingMap J a)).map\n        (completedConstantSheafResidueMap J I)",
@@ -6488,7 +6488,7 @@
     {
      "name": "Stacks.EtaleCohomology.isConstructible_and_locallyHasFiniteTorDimension_derivedPullback",
      "kind": "theorem",
-     "line": 445,
+     "line": 446,
      "private": false,
      "doc": "**Stacks 0963.** Let `Λ` be a Noetherian ring and `f : X ⟶ Y` a morphism of schemes. Then\n`Lf^*` maps `D_{ctf}(Y_étale, Λ)` into `D_{ctf}(X_étale, Λ)`: if an object `K` of the derived\ncategory of étale sheaves of `Λ`-modules on `Y` has constructible cohomology sheaves and its image\nunder the change of coefficients of Tag 03TR locally has finite Tor dimension against `T`, then\nits derived inverse image `Lf^*K` has constructible cohomology sheaves and its image locally has\nfinite Tor dimension against `T'`.\n\nThe membership condition is that of Tag 03TQ,\n`Stacks.EtaleCohomology.ConstructibleFiniteTorDerivedCategory`. Constructibility of the\ncohomology sheaves of `Lf^*K` is Tag 095Y,\n`Stacks.EtaleCohomology.isConstructible_derivedPullback`; locally finite Tor dimension of its\nimage is\n`Stacks.EtaleCohomology.pullbackPreservesLocallyFiniteTorDimension`.",
      "statement": "public theorem isConstructible_and_locallyHasFiniteTorDimension_derivedPullback\n    (T : ∀ U : (constantCoefficientRingedSite.{u, max (u + 1) w, r} B Y Λ).C,\n      Stacks.SheafOfModules.DerivedTensorProduct.{u + 1, u, max (u + 1) w r, d}\n        ((constantCoefficientRingedSite.{u, max (u + 1) w, r} B Y Λ).over U))\n    (T' : ∀ U : (constantCoefficientRingedSite.{u, max (u + 1) w, r} B X Λ).C,\n      Stacks.SheafOfModules.DerivedTensorProduct.{u + 1, u, max (u + 1) w r, d}\n        ((constantCoefficientRingedSite.{u, max (u + 1) w, r} B X Λ).over U))\n    (K : DerivedCategory (Sheaf (SmallEtale.topology B Y.obj Y.property)\n      (ModuleCat.{max (u + 1) w} Λ)))\n    (hK : IsConstructible B Y Λ K ∧\n      Stacks.SheafOfModules.DerivedTensorProduct.LocallyHasFiniteTorDimension\n        (X := constantCoefficientRingedSite.{u, max (u + 1) w, r} B Y Λ) T\n        ((moduleSheafOverConstantCoefficientsFunctor.{u, max (u + 1) w, r} B Y\n          Λ).mapDerivedCategory.obj K)) :\n    IsConstructible B X Λ\n        (((smallEtaleBaseChange B f).sheafPullback (ModuleCat.{max (u + 1) w} Λ)\n          (SmallEtale.topology B Y.obj Y.property)\n          (SmallEtale.topology B X.obj X.property)).mapDerivedCategory.obj K) ∧\n      Stacks.SheafOfModules.DerivedTensorProduct.LocallyHasFiniteTorDimension\n        (X := constantCoefficientRingedSite.{u, max (u + 1) w, r} B X Λ) T'\n        ((moduleSheafOverConstantCoefficientsFunctor.{u, max (u + 1) w, r} B X\n          Λ).mapDerivedCategory.obj\n          (((smallEtaleBaseChange B f).sheafPullback (ModuleCat.{max (u + 1) w} Λ)\n            (SmallEtale.topology B Y.obj Y.property)\n            (SmallEtale.topology B X.obj X.property)).mapDerivedCategory.obj K))",
@@ -8194,7 +8194,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean",
-      "line": 1321
+      "line": 1320
      }
     }
    ]
@@ -8213,7 +8213,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean",
-      "line": 1358
+      "line": 1357
      }
     }
    ]
@@ -8260,7 +8260,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean",
-      "line": 1346
+      "line": 1345
      }
     }
    ]
@@ -8941,7 +8941,7 @@
     {
      "name": "AlgebraicGeometry.ProEtale.SetBigProetaleSite",
      "kind": "structure",
-     "line": 159,
+     "line": 160,
      "private": false,
      "doc": "**A big pro-étale site** (Stacks 098G): a site `Sch_proétale` in the sense of Stacks 00VH\nconstructed as follows.\n1. Choose a set `S₀` of schemes and a set `Cov₀` of pro-étale coverings among these schemes.\n2. Change the function `Bound` of Stacks 046U into\n   `Bound(κ) = max {κ ^ (2 ^ (2 ^ (2 ^ κ))), κ ^ ℵ₀, κ⁺}`, which is `Cardinal.proetaleBound`.\n3. As underlying category take a category `Sch_α` as in Stacks 000J, starting with `S₀` and\n   this `Bound`: the field `category`.\n4. Choose a set of coverings as in Stacks 000X, starting with `Sch_α`, the class of pro-étale\n   coverings and `Cov₀`: the field `coveringSet`. A member of `Cov₀` is a family in `Sch`; its\n   counterpart in `Sch_α` is any family of `Sch_α` whose image in `Sch` it is, and these\n   counterparts are the initial coverings fed to Stacks 000X.\n\nThe coverings are indexed by types in `Type u`, the universe of the sets underlying the schemes\nin `Scheme.{u}`.",
      "statement": "structure SetBigProetaleSite",
@@ -11242,7 +11242,7 @@
     {
      "name": "Stacks.Sheaves.CechFlatNeighbourhood.quasiIso_complexMap_cechSystemBaseChangeMap",
      "kind": "theorem",
-     "line": 417,
+     "line": 416,
      "private": false,
      "doc": "**Stacks Project, Tag 099H.**  Let `C` be a site, let `φ : O ⟶ O'` be a flat homomorphism\nof sheaves of commutative rings on `C`, and let `f₁, …, f_r` be global sections of `O` such that\nthe canonical map `O/(f₁, …, f_r) ⟶ O'/(f₁, …, f_r)O'` of sheaves of `O`-modules\n(`Stacks.SheafOfModules.DerivedRestrictScalars.quotientMap`) is an isomorphism; here\n`(f₁, …, f_r)` is the ideal sheaf generated by the `f_k`\n(`AlgebraicGeometry.RingedSite.idealOfGlobalSections`) and `(f₁, …, f_r)O'` is the ideal sheaf of\n`O'` it generates (`AlgebraicGeometry.RingedSite.extendIdeal`), which is the ideal sheaf generated\nby the images of the `f_k`\n(`Stacks.Sheaves.CechFlatNeighbourhood.extendedIdeal_idealOfGlobalSections`). Then the map of\nextended alternating Čech complexes\n\n`O → ∏_{i₀} O_{f_{i₀}} → ∏_{i₀ < i₁} O_{f_{i₀}f_{i₁}} → ⋯ → O_{f₁⋯f_r}`\n`  ⟶ O' → ∏_{i₀} O'_{f_{i₀}} → ∏_{i₀ < i₁} O'_{f_{i₀}f_{i₁}} → ⋯ → O'_{f₁⋯f_r}`\n\nis a quasi-isomorphism.  The map is the one induced by the canonical maps\n`O_{f_S} ⟶ O'_{f_S}` of sheaves of `O`-modules, `cechSystemBaseChangeMap`: they are compatible\nwith `O ⟶ O_{f_S}` and `O ⟶ O' ⟶ O'_{f_S}`\n(`unitToAwayModule_comp_cechSystemBaseChangeMap_app`), and they are the only such family\n(`eq_cechSystemBaseChangeMap`).  The lower complex is the extended alternating Čech complex of\nthe system `S ↦ O'_{f_S}` of sheaves of `O`-modules.\n\nThe proof is the source's: `quasiIso_extendedAlternatingCechBaseChangeMap`.",
      "statement": "theorem quasiIso_complexMap_cechSystemBaseChangeMap (hφ : IsFlatMap φ)\n    (hiso : IsIso (Stacks.SheafOfModules.DerivedRestrictScalars.quotientMap φ\n      (idealOfGlobalSections (ringedSite O) f))) :\n    QuasiIso (AlternatingCech.complexMap (cechSystemBaseChangeMap O f φ))",
@@ -13778,7 +13778,7 @@
     {
      "name": "AlgebraicGeometry.exists_etaleCover_constantFiniteProjectiveComplex_of_canonicalCtf",
      "kind": "theorem",
-     "line": 423,
+     "line": 422,
      "private": false,
      "doc": "**Tag 09BI.** Let `X` be a connected scheme in a big étale site and `Λ` a Noetherian ring.\nLet `K` be an object of `D_{ctf}(X_{étale}, Λ)` (Tag 03TQ, with the derived tensor products of\nStacks 06YU on the slices of the constant coefficient ringed site) whose cohomology sheaves are\nlocally constant. Then there are a finite complex `E` of finite projective `Λ`-modules and an\nétale covering `{U i → X}` such that, for every `i`, the restriction of `K` to `U i` is\nisomorphic in `D(U_{i, étale}, Λ)` to the constant complex attached to `E`.",
      "statement": "theorem exists_etaleCover_constantFiniteProjectiveComplex_of_canonicalCtf\n    (K : CanonicalConstructibleFiniteTorDerivedCategory.{u, u + 1, u, d} B X Λ)\n    (hK : ∀ n : ℤ, Stacks.ConstantSheaf.IsLocallyConstant\n      (SmallEtale.topology B X.obj X.property)\n      ((DerivedCategory.homologyFunctor\n        (Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} Λ)) n).obj K.obj.obj)) :\n    ∃ (E : CochainComplex (ModuleCat.{u + 1} Λ) ℤ) (a b : ℤ)\n      (C : CochainComplex\n        (Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} Λ)) ℤ)\n      (_e : K.obj.obj ≅ DerivedCategory.Q.obj C),\n      E.IsStrictlyGE a ∧ E.IsStrictlyLE b ∧\n      (∀ n : ℤ, Module.Finite Λ (E.X n)) ∧ (∀ n : ℤ, Module.Projective Λ (E.X n)) ∧\n      ∃ (I : Type (u + 1)) (U : I → SmallEtale B X.obj X.property)\n        (f : ∀ i, U i ⟶ SmallEtale.final B X.obj X.property),\n        Sieve.ofArrows U f ∈ SmallEtale.topology B X.obj X.property\n          (SmallEtale.final B X.obj X.property) ∧\n        ∀ i, Nonempty (DerivedCategory.Q.obj\n            ((((SmallEtale.topology B X.obj X.property).overPullback\n              (ModuleCat.{u + 1} Λ) (U i)).mapHomologicalComplex (ComplexShape.up ℤ)).obj C) ≅\n          DerivedCategory.Q.obj\n            (((constantSheaf ((SmallEtale.topology B X.obj X.property).over (U i))\n              (ModuleCat.{u + 1} Λ)).mapHomologicalComplex (ComplexShape.up ℤ)).obj E))",
@@ -15940,7 +15940,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.exists_shortExact_principalPartsSequence'",
      "kind": "theorem",
-     "line": 1178,
+     "line": 1179,
      "private": false,
      "doc": "**The sequence of principal parts is a short exact sequence.**",
      "statement": "theorem exists_shortExact_principalPartsSequence' :\n    ∃ h : (principalPartsInclusion.{v, u, w, m} φ).app F ≫\n        (principalPartsProjection.{v, u, w, m}\n          (underlyingRingSheafMapOfSite φ) 1).app F = 0,\n      (ShortComplex.mk ((principalPartsInclusion.{v, u, w, m} φ).app F)\n        ((principalPartsProjection.{v, u, w, m}\n          (underlyingRingSheafMapOfSite φ) 1).app F) h).ShortExact",
@@ -15959,7 +15959,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.principalPartsSequence_nonempty",
      "kind": "theorem",
-     "line": 190,
+     "line": 189,
      "private": false,
      "doc": "The functorial short exact sequence of first principal parts exists.",
      "statement": "theorem principalPartsSequence_nonempty (O₁ O₂ : Sheaf J CommRingCat.{w})\n    (φ : O₁ ⟶ O₂) : Nonempty (PrincipalPartsSequence.{v, u, w, m} O₁ O₂ φ)",
@@ -16054,7 +16054,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.principalPartsSequence_naturality_inclusion",
      "kind": "theorem",
-     "line": 658,
+     "line": 648,
      "private": false,
      "doc": "**Stacks 09CX.** The change-of-rings maps on first principal parts are compatible with the\ninclusions of the short exact sequences of Tag 09CW: the left-hand square of the naturality\ndiagram commutes, with the tensor product of `uF` and the map on differentials on the left.",
      "statement": "theorem principalPartsSequence_naturality_inclusion\n    (φ : O₁ ⟶ O₂) (φ' : O₁' ⟶ O₂') (α : O₁ ⟶ O₁') (β : O₂ ⟶ O₂') (hsq : φ ≫ β = α ≫ φ')\n    (F : _root_.SheafOfModules.{max u v w m} (Stacks.SheafOfModules.Tensor.ringSheaf O₂))\n    (F' : _root_.SheafOfModules.{max u v w m} (Stacks.SheafOfModules.Tensor.ringSheaf O₂'))\n    (uF : F ⟶ (_root_.SheafOfModules.restrictScalars.{max u v w m}\n      (underlyingRingSheafMapOfSite β)).obj F') :\n    (principalPartsInclusion.{v, u, w, m} φ).app F ≫\n        principalPartsSquareMap.{v, u, w, m} φ φ' α β hsq F F' uF =\n      differentialsTensorMap.{v, u, w, m} φ φ' α β hsq F F' uF ≫\n        (_root_.SheafOfModules.restrictScalars.{max u v w m}\n          (underlyingRingSheafMapOfSite β)).map\n          ((principalPartsInclusion.{v, u, w, m} φ').app F')",
@@ -17410,7 +17410,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.exists_shortExact_principalPartsSequence'",
      "kind": "theorem",
-     "line": 1178,
+     "line": 1179,
      "private": false,
      "doc": "**The sequence of principal parts is a short exact sequence.**",
      "statement": "theorem exists_shortExact_principalPartsSequence' :\n    ∃ h : (principalPartsInclusion.{v, u, w, m} φ).app F ≫\n        (principalPartsProjection.{v, u, w, m}\n          (underlyingRingSheafMapOfSite φ) 1).app F = 0,\n      (ShortComplex.mk ((principalPartsInclusion.{v, u, w, m} φ).app F)\n        ((principalPartsProjection.{v, u, w, m}\n          (underlyingRingSheafMapOfSite φ) 1).app F) h).ShortExact",
@@ -17429,7 +17429,7 @@
     {
      "name": "CategoryTheory.Sheaf.resolutionPrincipalPartsShortComplex_shortExact",
      "kind": "theorem",
-     "line": 148,
+     "line": 149,
      "private": false,
      "doc": "**Stacks 09DG.** The extension of principal parts of a term of the standard resolution is\nshort exact: `0 ⟶ Ω_{P_n/A} ⊗_{P_n} F ⟶ P¹_{P_n/A}(F) ⟶ F ⟶ 0`.",
      "statement": "theorem resolutionPrincipalPartsShortComplex_shortExact (n : SimplexCategoryᵒᵖ)\n    (F : targetModules J B) :\n    (resolutionPrincipalPartsShortComplex J f n F).ShortExact",
@@ -17469,7 +17469,7 @@
     {
      "name": "CategoryTheory.Sheaf.atiyahClass",
      "kind": "def",
-     "line": 276,
+     "line": 277,
      "private": false,
      "doc": "**[Stacks, Tag 09DI], Definition 92.19.1: the Atiyah class of a sheaf of modules.** For a\nhomomorphism `f : 𝒜 ⟶ ℬ` of sheaves of commutative rings on a site and a sheaf of `ℬ`-modules `ℱ`,\nthe *Atiyah class* of `ℱ` is the morphism\n\n`ℱ ⟶ (L_{ℬ/𝒜} ⊗^𝐋_ℬ ℱ)[1]`\n\nof `D(ℬ)`, the last arrow of the triangle (92.19.0.2) of [Stacks, Tag 09DH]. It is\n`atiyahClassOfIso` at the library's constructions: the functor `Lπ_!` of Tag 09D3\n(`CategoryTheory.Sheaf.resolutionLowerShriek`), the short exact sequence of first principal parts\nof the standard resolution as simplicial `P_•`-modules\n(`CategoryTheory.Sheaf.simplicialPrincipalPartsShortComplex_shortExact`, Tag 09DG), and the\nidentifications of the outer terms with `L_{ℬ/𝒜} ⊗^𝐋_ℬ ℱ` and `ℱ`\n(`CategoryTheory.Sheaf.atiyahTriangleFirstTermIso` and\n`CategoryTheory.Sheaf.atiyahTriangleThirdTermIso`).",
      "statement": "def atiyahClass (F : SheafOfModules.{u} (targetRing J (B := B))) :\n    DerivedCategory.Q.obj\n        ((HomologicalComplex.single (SheafOfModules.{u} (targetRing J (B := B)))\n          (ComplexShape.up ℤ) 0).obj F) ⟶\n      (((derivedTensorProductFunctor B).obj\n          (DerivedCategory.Q.obj (cotangentComplex.{u, u, u} J f))).obj\n        (DerivedCategory.Q.obj\n          ((HomologicalComplex.single (Stacks.DerivedTensor.RingedSite.Modules B)\n            (ComplexShape.up ℤ) 0).obj F)))⟦(1 : ℤ)⟧",
@@ -18675,7 +18675,7 @@
     {
      "name": "IsDiscreteValuationRing.formallySmooth_localizations_after_finite_fraction_field_extension",
      "kind": "theorem",
-     "line": 359,
+     "line": 360,
      "private": false,
      "doc": "Formal smoothness of an extension of discrete valuation rings persists at every local factor\nafter a finite extension of the fraction field.  The integral closure upstairs is the reduced\ntensor product, and it is the unreduced tensor product whenever `L ⊗_K K₁` is reduced, which is\nexactly when `L₁ = L ⊗_K K₁`.",
      "statement": "theorem formallySmooth_localizations_after_finite_fraction_field_extension\n    (A : Type uA) (B : Type uB) (K : Type uK) (L : Type uL)\n    (K₁ : Type uK₁) (L₁ : Type uL₁) (A₁ : Type uA₁) (B₁ : Type uB₁)\n    [CommRing A] [CommRing B] [Field K] [Field L] [Field K₁]\n    [CommRing L₁] [CommRing A₁] [CommRing B₁]\n    [IsDomain A] [IsDomain B] [IsDiscreteValuationRing A] [IsDiscreteValuationRing B]\n    [Algebra A B] [IsExtension A B]\n    [Algebra A K] [Algebra A L] [Algebra B L] [Algebra K L] [Algebra K K₁]\n    [Algebra A K₁] [Algebra K L₁] [Algebra B L₁] [Algebra L L₁] [Algebra K₁ L₁]\n    [Algebra A A₁] [Algebra B B₁] [Algebra A B₁] [Algebra A₁ B₁] [Algebra B₁ L₁]\n    [IsScalarTower A B L] [IsScalarTower A K L] [IsScalarTower A K K₁]\n    [IsScalarTower K L L₁] [IsScalarTower K K₁ L₁] [IsScalarTower B L L₁]\n    [IsScalarTower A B B₁] [IsScalarTower A A₁ B₁] [IsScalarTower B B₁ L₁]\n    [IsFractionRing A K] [IsFractionRing B L] [Module.Finite K K₁]\n    (eL₁ : L₁ ≃ₐ[K] ((L ⊗[K] K₁) ⧸ nilradical (L ⊗[K] K₁)))\n    (eA₁ : A₁ ≃ₐ[A] integralClosure A K₁)\n    (eB₁ : B₁ ≃ₐ[B] integralClosure B L₁)\n    (eL₁_left : ∀ x : L,\n      eL₁ (algebraMap L L₁ x) = Ideal.Quotient.mk _\n        ((Algebra.TensorProduct.includeLeft : L →ₐ[K] L ⊗[K] K₁) x))\n    (eL₁_right : ∀ x : K₁,\n      eL₁ (algebraMap K₁ L₁ x) = Ideal.Quotient.mk _\n        ((Algebra.TensorProduct.includeRight : K₁ →ₐ[K] L ⊗[K] K₁) x))\n    (eB₁_coe : ∀ x : B₁, ((eB₁ x : integralClosure B L₁) : L₁) = algebraMap B₁ L₁ x)\n    (hfieldSquare : ∀ x : K, algebraMap L L₁ (algebraMap K L x) =\n      algebraMap K₁ L₁ (algebraMap K K₁ x))\n    (hringSquare : ∀ x : A₁, algebraMap B₁ L₁ (algebraMap A₁ B₁ x) =\n      algebraMap K₁ L₁ ((eA₁ x : integralClosure A K₁) : K₁))\n    (hformal : RingHom.FormallySmoothNAdic.{max uA uB} (algebraMap A B)\n      (IsLocalRing.maximalIdeal B)) :\n    (∃ eB : B₁ ≃ₐ[B] ((B ⊗[A] A₁) ⧸ nilradical (B ⊗[A] A₁)),\n        (∀ x : A₁, eB (algebraMap A₁ B₁ x) = Ideal.Quotient.mk _\n          ((Algebra.TensorProduct.includeRight : A₁ →ₐ[A] B ⊗[A] A₁) x))) ∧\n      (IsReduced (L ⊗[K] K₁) →\n        (∃ eL : L₁ ≃ₐ[L] (L ⊗[K] K₁),\n        (∀ x : L₁, Ideal.Quotient.mk _ (eL x) = eL₁ x) ∧\n        (∀ x : K₁, eL (algebraMap K₁ L₁ x) =\n          (Algebra.TensorProduct.includeRight : K₁ →ₐ[K] L ⊗[K] K₁) x)) ∧\n      (∃ eB : B₁ ≃ₐ[B] (B ⊗[A] A₁),\n        (∀ x : A₁, eB (algebraMap A₁ B₁ x) =\n          (Algebra.TensorProduct.includeRight : A₁ →ₐ[A] B ⊗[A] A₁) x))) ∧\n      (∀ q : Ideal B₁, q.IsMaximal →\n        (q.comap (algebraMap A₁ B₁)).IsMaximal ∧\n        ∃ (_ : q.IsPrime) (_ : (q.comap (algebraMap A₁ B₁)).IsPrime),\n          (∃ _ : IsDomain (Localization (q.comap (algebraMap A₁ B₁)).primeCompl),\n            IsDiscreteValuationRing\n              (Localization (q.comap (algebraMap A₁ B₁)).primeCompl)) ∧\n          (∃ _ : IsDomain (Localization q.primeCompl),\n            IsDiscreteValuationRing (Localization q.primeCompl)) ∧\n          ∃ φ : Localization (q.comap (algebraMap A₁ B₁)).primeCompl →+*\n              Localization q.primeCompl,\n            Function.Injective φ ∧ IsLocalHom φ ∧\n              (∀ x : A₁, φ (algebraMap A₁ _ x) =\n                algebraMap B₁ _ (algebraMap A₁ B₁ x)) ∧\n              RingHom.FormallySmoothNAdic.{max uA₁ uB₁} φ\n                (IsLocalRing.maximalIdeal (Localization q.primeCompl)))",
@@ -20614,7 +20614,7 @@
     {
      "name": "IsIntegralClosure.isDedekindDomain_and_comap_surjective_and_quasiFinite",
      "kind": "theorem",
-     "line": 339,
+     "line": 338,
      "private": false,
      "doc": "**Variant of Krull–Akizuki.** Let `A` be a Noetherian domain of Krull dimension at most one\nwith fraction field `K`, let `L/K` be a finite field extension and let `C` be the integral closure\nof `A` in `L`. Then `C` is a Dedekind domain, the map `Spec(C) → Spec(A)` is surjective, and `C`\nis quasi-finite over `A`; the latter says that every fibre `κ(𝔭) ⊗[A] C` is a finite-dimensional\n`κ(𝔭)`-vector space, whence `Spec(C) → Spec(A)` has finite fibres and induces finite residue field\nextensions. Neither `A` integrally closed nor `L/K` separable is assumed, so `C` need not be a\nfinite `A`-algebra.",
      "statement": "public theorem isDedekindDomain_and_comap_surjective_and_quasiFinite\n    (A K L C : Type*) [CommRing A] [IsDomain A] [IsNoetherianRing A] [Ring.DimensionLEOne A]\n    [Field K] [Algebra A K] [IsFractionRing A K]\n    [Field L] [Algebra K L] [FiniteDimensional K L] [Algebra A L] [IsScalarTower A K L]\n    [CommRing C] [Algebra A C] [Algebra C L] [IsScalarTower A C L] [IsIntegralClosure C A L] :\n    IsDedekindDomain C ∧ Function.Surjective (PrimeSpectrum.comap (algebraMap A C)) ∧\n      Algebra.QuasiFinite A C",
@@ -21403,7 +21403,7 @@
     {
      "name": "Stacks.SheafOfModules.Tensor.isStrictlyPerfect_tensorComplex",
      "kind": "theorem",
-     "line": 399,
+     "line": 375,
      "private": false,
      "doc": "**Stacks 09J8.** The total tensor complex `Tot(K ⊗_O L)` of two strictly perfect complexes\nof `O`-modules on a ringed site is strictly perfect.\n\nEach degree of `Tot(K ⊗_O L)` is the coproduct of the `K^t ⊗_O L^r` with `t + r` that degree.\nSuch a summand vanishes unless both `K^t` and `L^r` are nonzero, which happens for finitely\nmany pairs only, so the degree vanishes outside the sum of the two ranges of nonvanishing; and\neach surviving summand is a direct summand of a finite free `O`-module because both of its\nfactors are.",
      "statement": "theorem isStrictlyPerfect_tensorComplex\n    (K L : CochainComplex (SheafOfModules.{w} (ringSheaf R)) ℤ)\n    (hK : IsStrictlyPerfect (ringSheaf R) K) (hL : IsStrictlyPerfect (ringSheaf R) L) :\n    IsStrictlyPerfect (ringSheaf R) (((tensorComplex R).obj K).obj L)",
@@ -24706,7 +24706,7 @@
     {
      "name": "StacksDraft.BalancedTensorProduct",
      "kind": "def",
-     "line": 104,
+     "line": 105,
      "private": false,
      "doc": "The tensor product `M ⊗_A N` of a right `A`-module `M` and a left `A`-module `N`: the quotient\nof `M ⊗_R N` by the balancing relations `x a ⊗ y - x ⊗ a y`.",
      "statement": "def BalancedTensorProduct : Type (max w w')",
@@ -24720,7 +24720,7 @@
     {
      "name": "StacksDraft.BalancedTensorProduct.tmul",
      "kind": "def",
-     "line": 123,
+     "line": 124,
      "private": false,
      "doc": "The universal `A`-balanced bilinear map `(x, y) ↦ x ⊗ y` of `M ⊗_A N`.",
      "statement": "def tmul : M →ₗ[R] N →ₗ[R] BalancedTensorProduct R A M N",
@@ -24734,7 +24734,7 @@
     {
      "name": "StacksDraft.BalancedTensorProduct.tmul_balanced",
      "kind": "theorem",
-     "line": 134,
+     "line": 135,
      "private": false,
      "doc": "The universal map is `A`-balanced: `x a ⊗ y = x ⊗ a y`. This is the balancing relation the\ntensor product is defined by.",
      "statement": "theorem tmul_balanced : IsBalancedBilinear A (tmul R A M N)",
@@ -24748,7 +24748,7 @@
     {
      "name": "StacksDraft.BalancedTensorProduct.span_tmul_eq_top",
      "kind": "theorem",
-     "line": 155,
+     "line": 156,
      "private": false,
      "doc": "As an `R`-module, `M ⊗_A N` is generated by the symbols `x ⊗ y`.",
      "statement": "theorem span_tmul_eq_top :\n    Submodule.span R (Set.range fun p : M × N => tmul R A M N p.1 p.2) = ⊤",
@@ -24762,7 +24762,7 @@
     {
      "name": "StacksDraft.BalancedTensorProduct.liftEquiv",
      "kind": "def",
-     "line": 266,
+     "line": 267,
      "private": false,
      "doc": "The identification `Bilinear_A(M × N, Q) = Hom_R(M ⊗_A N, Q)`: composing with the universal\nmap `(x, y) ↦ x ⊗ y` is an `R`-linear bijection from the `R`-linear maps out of `M ⊗_A N` onto the\n`A`-balanced `R`-bilinear maps `M × N → Q`.",
      "statement": "def liftEquiv (Q : Type t) [AddCommGroup Q] [Module R Q] :\n    balancedBilinearMaps R A M N Q ≃ₗ[R] (BalancedTensorProduct R A M N →ₗ[R] Q)",
@@ -26520,7 +26520,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/RingTheory/IntegralClosure/DedekindDomain.lean",
-      "line": 339
+      "line": 338
      }
     }
    ]
@@ -26869,7 +26869,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_globallyGenerated_affine_nonvanishing",
      "kind": "theorem",
-     "line": 410,
+     "line": 399,
      "private": false,
      "doc": "**Stacks Project, Tag 09NC.** A quasi-compact scheme every point of which lies in an affine\nnonvanishing locus of a global section of some globally generated invertible sheaf carries an\nample invertible sheaf.\n\nThe proof is the Stacks Project's. Quasi-compactness gives finitely many pairs `(L i, t i)` with\n`X = ⋃ X_{t i}` and each `X_{t i}` affine; put `B = L 0 ⊗ ⋯ ⊗ L n`. For a point `x`, pick an\nindex `j` with `x ∈ X_{t j}` and take `σ = s 0 ⊗ ⋯ ⊗ s n` where `s j = t j` and, for `i ≠ j`,\n`s i` is a member of the generating family of `L i` not vanishing at `x`\n(`Stacks.SheafOfModules.exists_generatingSection_nonvanishing`). Then `X_σ = ⋂ X_{s i}` contains\n`x` and is contained in `X_{t j}`, so Tag 01PV applied `n + 1` times makes it affine. Ampleness\nis read at exponent `1` through `Stacks.SheafOfModules.Invertible.tensorPowerOneIso`.\n\n**Two invertibility predicates.** The hypothesis is spelled with\n`Stacks.SheafOfModules.IsInvertible`, which is the one `Stacks.SheafOfModules.nonvanishingOpen`\nis defined for, and the conclusion with `AlgebraicGeometry.SheafOfModules.IsInvertible`, which is\nthe one `AlgebraicGeometry.Scheme.Modules.IsAmple` is defined for. Both are `Prop`s, so the\nchoice of witness does not affect what either statement says, and\n`Stacks.SheafOfModules.isInvertible_iff_algebraicGeometry` crosses between them.",
      "statement": "public theorem exists_isAmple_of_globallyGenerated_affine_nonvanishing (Y : Scheme.{u})\n    (hcpt : CompactSpace Y)\n    (hcover : ∀ y : Y, ∃ (M : Y.Modules)\n      (hM : Stacks.SheafOfModules.IsInvertible Y.toRingedSpace.sheaf.obj\n        (structureSheaf Y.toRingedSpace.sheaf).property M),\n      Nonempty M.GeneratingSections ∧\n        ∃ t : M.sections,\n          y ∈ @Stacks.SheafOfModules.nonvanishingOpen\n              Y.toLocallyRingedSpace.toRingedSpace _ M hM t ∧\n            IsAffineOpen (@Stacks.SheafOfModules.nonvanishingOpen\n              Y.toLocallyRingedSpace.toRingedSpace _ M hM t)) :\n    ∃ (M : Y.Modules)\n      (hM : AlgebraicGeometry.SheafOfModules.IsInvertible Y.toRingedSpace.presheaf\n        (structureSheafRing Y.toRingedSpace).property M),\n      @AlgebraicGeometry.Scheme.Modules.IsAmple Y M hM",
@@ -26889,7 +26889,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.Modules.exists_isAmple_of_topologicalKrullDim_one",
      "kind": "theorem",
-     "line": 520,
+     "line": 509,
      "private": false,
      "doc": "**Stacks Project, Tag 09ND.** A Noetherian integral separated scheme of topological Krull\ndimension one has an ample invertible sheaf.\n\nIt is `Stacks.AlgebraicGeometry.AmpleDimensionOne.exists_ample_invertible_of_09NC` applied to\n`exists_isAmple_of_globallyGenerated_affine_nonvanishing`.",
      "statement": "public theorem exists_isAmple_of_topologicalKrullDim_one (X : Scheme.{u})\n    [IsNoetherian X] [IsIntegral X] [X.IsSeparated]\n    (hdim : topologicalKrullDim X = 1) :\n    ∃ (L : X.Modules)\n      (hL : AlgebraicGeometry.SheafOfModules.IsInvertible X.toRingedSpace.presheaf\n        (structureSheafRing X.toRingedSpace).property L),\n      @AlgebraicGeometry.Scheme.Modules.IsAmple X L hL",
@@ -28632,7 +28632,7 @@
     {
      "name": "DividedPowers.TateResolution.exists_dividedPowerStructure_torDirectSum_forall_resolution",
      "kind": "theorem",
-     "line": 874,
+     "line": 870,
      "private": false,
      "doc": "**The divided power algebra `Tor_*^R(S, T)`, independent of the Tate resolution.** For a\ncommutative ring `R` and commutative `R`-algebras `S` and `T`, the direct sum\n`⨁ n, Tor_n^R(S, T)` carries a ring structure and an `R`-algebra structure, with the direct sum's\nown addition and scalar multiplication, a grading whose degree-`n` piece is the range of the\n`n`-th inclusion, a graded algebra structure for that grading, strict graded commutativity, and a\ndivided power structure, such that for **every** Tate resolution `A` of `S` (a\n`DividedPowers.TateResolution.Resolution` along any surjection `φ` from a polynomial algebra\nonto `S`) the following holds. The base change `T ⊗[R] A` is a strictly graded-commutative\ndifferential graded algebra with divided powers compatible with its differential, and normalized\nby `γₙ(1 ⊗ x) = 1 ⊗ γₙ(x)`; and the class map `κ` of `torDirectSumEquivHomology`, which sends a\ncycle of `T ⊗[R] A` to the element of the direct sum corresponding to its homology class, is onto,\ntakes a cycle of degree `n` into the degree-`n` piece, and is unital, multiplicative and\ncompatible with the divided powers.\n\nSince `κ` is onto, these conditions determine the multiplication, the unit and the divided powers\nof the direct sum from any one Tate resolution: the structure built from two choices of `A` is the\nsame. The proof transports the structure from the Tate resolution of the tautological\npresentation of `S` (`exists_dividedPowerStructure_torDirectSum`), and compares an arbitrary\nTate resolution `A` with it through a map of divided power differential graded algebras over `S`\nsupplied by Tag 09PP (`Resolution.exists_resolutionMap`); its base change commutes with the two\nidentifications of homology with `Tor` (`Resolution.directSumClass_lTensorAlgHom`), and preserves\nproducts and divided powers.",
      "statement": "public theorem exists_dividedPowerStructure_torDirectSum_forall_resolution\n    (R S T : Type u) [CommRing R] [CommRing S] [CommRing T] [Algebra R S] [Algebra R T] :\n    ∃ hRing : Ring (DirectSum ℕ fun n => torGraded R S T n),\n      ∃ hAlgebra : @Algebra R (DirectSum ℕ fun n => torGraded R S T n) _ hRing.toSemiring,\n        hRing.toAddCommGroup =\n          (inferInstance : AddCommGroup (DirectSum ℕ fun n => torGraded R S T n)) ∧\n        @Algebra.toSMul R (DirectSum ℕ fun n => torGraded R S T n) _\n            hRing.toSemiring hAlgebra =\n          (inferInstance : SMul R (DirectSum ℕ fun n => torGraded R S T n)) ∧\n        (letI := hRing\n         letI := hAlgebra\n         letI : AddCommMonoid (DirectSum ℕ fun n => torGraded R S T n) :=\n           hRing.toAddCommMonoid\n         letI : Module R (DirectSum ℕ fun n => torGraded R S T n) := Algebra.toModule\n         ∃ 𝒟 : ℕ → Submodule R (DirectSum ℕ fun n => torGraded R S T n),\n           (∀ n, (𝒟 n : Set (DirectSum ℕ fun m => torGraded R S T m)) =\n             Set.range (DirectSum.lof R ℕ (fun m => torGraded R S T m) n)) ∧\n           ∃ hGraded : GradedAlgebra 𝒟,\n             letI := hGraded\n             ∃ hStrictD : IsStrictlyGradedComm 𝒟,\n               letI := hStrictD\n               ∃ γD : @DividedPowerStructure R\n                   (DirectSum ℕ fun n => torGraded R S T n) _ hRing hAlgebra 𝒟\n                   hGraded hStrictD,\n                 ∀ (σ : Type u) (φ : MvPolynomial σ R →ₐ[R] S) (hφ : Function.Surjective φ)\n                   (Res : Resolution R S σ φ),\n                   let ℬ : ℕ → Submodule R (T ⊗[R] Res.A) :=\n                     restrictGrade R fun i => (Res.grade i).baseChange T\n                   let dB : T ⊗[R] Res.A →ₗ[R] T ⊗[R] Res.A :=\n                     (LinearMap.baseChange T Res.differential).restrictScalars R\n                   ∃ hStrict : IsStrictlyGradedComm ℬ,\n                     letI := hStrict\n                     ∃ γB : DividedPowerStructure ℬ,\n                       IsCompatibleWithDifferential γB dB ∧\n                       (∀ (n : ℕ) (x : Res.A), x ∈ positiveEvenPart Res.grade →\n                         γB.dpow n (1 ⊗ₜ[R] x) = 1 ⊗ₜ[R] Res.gamma.dpow n x) ∧\n                       (let κ := directSumClass (torDirectSumEquivHomology Res T hφ)\n                        Function.Surjective κ ∧\n                        (∀ (n : ℕ) (x : T ⊗[R] Res.A) (h : dB x = 0), x ∈ ℬ n →\n                          κ ⟨x, h⟩ ∈ 𝒟 n) ∧\n                        (∃ h1 : dB (1 : T ⊗[R] Res.A) = 0, κ ⟨1, h1⟩ = 1) ∧\n                        (∀ {x y : T ⊗[R] Res.A} (hx : dB x = 0) (hy : dB y = 0),\n                          ∃ hxy : dB (x * y) = 0,\n                            κ ⟨x * y, hxy⟩ = κ ⟨x, hx⟩ * κ ⟨y, hy⟩) ∧\n                        (∀ {n : ℕ} {x : T ⊗[R] Res.A}, x ∈ positiveEvenPart ℬ →\n                          ∀ hd : dB x = 0,\n                            ∃ hγ : dB (γB.dpow n x) = 0,\n                              γD.dpow n (κ ⟨x, hd⟩) = κ ⟨γB.dpow n x, hγ⟩)))",
@@ -29942,7 +29942,7 @@
     {
      "name": "Stacks.Examples.exists_isCompactObject_not_representable_by_finite_gradedProjective",
      "kind": "theorem",
-     "line": 1080,
+     "line": 1081,
      "private": false,
      "doc": "**[Stacks, Tag 09R5].** *\"There exists a differential graded algebra `(A, d)` and a compact\nobject `E` of `D(A, d)` such that `E` cannot be represented by a finite and graded projective\ndifferential graded `A`-module.\"*\n\nThe algebra is `A = k[x, y]/(y²)` over `k = ZMod 2`, with `x` of degree `0`, `y` of degree `-1`\nand `d y = x² + x`, and `E` is the summand of the regular module cut out by the idempotent given\nby multiplication by `x` (Tag 09R4). The obstruction is\n`Stacks.Examples.not_representable_by_finite_gradedProjective_of_retract_charTwoRegularModule`;\ncompactness of `E` enters only to discharge the first conjunct.",
      "statement": "theorem exists_isCompactObject_not_representable_by_finite_gradedProjective :\n    ∃ (A : DifferentialGradedAlgebra.{0, 0} (ZMod 2)) (E : derivedCategory' A),\n      IsCompactObject.{0} E ∧\n        ¬ ∃ P : DifferentialGradedModule.{0, 0, 0} A, IsFinite P ∧\n            Stacks.DifferentialGraded.DGModule.IsProjectiveAsGradedModule.{0, 0, 0, 0}\n              (Unbundled.module P) ∧\n            Nonempty (E ≅ (toHomotopyCategory A ⋙ (quasiIsomorphisms' A).Q).obj P)",
@@ -32218,7 +32218,7 @@
     {
      "name": "CategoryTheory.Adjunction.exists_derived_of_isRightDerivedValueAt_of_isLeftDerivedValueAt",
      "kind": "theorem",
-     "line": 1270,
+     "line": 1271,
      "private": false,
      "doc": "**Stacks 09T5**: the derived functors of an adjoint pair are adjoint. Let `F : 𝒟 ⥤ 𝒟'` be\nright adjoint to `G : 𝒟' ⥤ 𝒟`, let `S`, `S'` be classes of morphisms of `𝒟`, `𝒟'` admitting\nleft, resp. right fractions, and let `Q : 𝒟 ⥤ S⁻¹𝒟`, `Q' : 𝒟' ⥤ (S')⁻¹𝒟'` be localization\nfunctors. Let `RF : S⁻¹𝒟 ⥤ (S')⁻¹𝒟'` with `β : F ⋙ Q' ⟶ Q ⋙ RF` be the right derived functor\nof `Q' ∘ F`, in the sense that for every object `K` of `𝒟` the ind-object\n`(s : K ⟶ I) ↦ Q'(F(I))` is essentially constant with value `RF(Q(K))` and coprojections\ninduced by `β` (Stacks 05S9), and let `LG : (S')⁻¹𝒟' ⥤ S⁻¹𝒟` with `α : Q' ⋙ LG ⟶ G ⋙ Q` be\nthe left derived functor of `Q ∘ G`, in the dual sense. Then `LG` is left adjoint to `RF`, by an\nadjunction whose unit and counit are compatible with `α`, `β` and the adjunction between `F`\nand `G`.",
      "statement": "theorem exists_derived_of_isRightDerivedValueAt_of_isLeftDerivedValueAt\n    {D : Type u₁} [Category.{v₁} D] {D' : Type u₂} [Category.{v₂} D']\n    {SD : Type u₃} [Category.{v₃} SD] {SD' : Type u₄} [Category.{v₄} SD']\n    {F : D ⥤ D'} {G : D' ⥤ D} (adj : G ⊣ F)\n    (S : MorphismProperty D) (S' : MorphismProperty D')\n    [S.HasLeftCalculusOfFractions] [S'.HasRightCalculusOfFractions]\n    (Q : D ⥤ SD) [Q.IsLocalization S] (Q' : D' ⥤ SD') [Q'.IsLocalization S']\n    (RF : SD ⥤ SD') (β : F ⋙ Q' ⟶ Q ⋙ RF)\n    (LG : SD' ⥤ SD) (α : Q' ⋙ LG ⟶ G ⋙ Q)\n    (hRF : ∀ K : D, ∃ (c : Cocone (MorphismProperty.Under.forget S ⊤ K ⋙\n          Under.forget K ⋙ F ⋙ Q'))\n        (_ : (F ⋙ Q').IsRightDerivedValueAt S K c) (e : c.pt ≅ RF.obj (Q.obj K)),\n        ∀ s : S.Under ⊤ K, c.ι.app s ≫ e.hom ≫ RF.map (Q.map s.hom) = β.app s.right)\n    (hLG : ∀ M : D', ∃ (d : Cone (MorphismProperty.Over.forget S' ⊤ M ⋙\n          Over.forget M ⋙ G ⋙ Q))\n        (_ : (G ⋙ Q).IsLeftDerivedValueAt S' M d) (e : LG.obj (Q'.obj M) ≅ d.pt),\n        ∀ t : S'.Over ⊤ M, LG.map (Q'.map t.hom) ≫ e.hom ≫ d.π.app t = α.app t.left) :\n    ∃ adj' : LG ⊣ RF,\n      (∀ M : D', adj'.unit.app (Q'.obj M) ≫ RF.map (α.app M) =\n          Q'.map (adj.unit.app M) ≫ β.app (G.obj M)) ∧\n        (∀ K : D, LG.map (β.app K) ≫ adj'.counit.app (Q.obj K) =\n          α.app (F.obj K) ≫ Q.map (adj.counit.app K))",

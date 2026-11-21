@@ -8,7 +8,7 @@ proof: formalized
 
 # The Yukawa sector at mass weight eight
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.MassDimEight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean): 54 declarations, 54 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.MassDimEight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean): 54 declarations, 54 with a docstring.
 
 ## i. Overview
 
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Mas
 
 ## A. The symbol ranges as spans of components
 
-**`StandardModel.CovAlgebraRealization.higgsSubmodule_zero_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L85).
+**`StandardModel.CovAlgebraRealization.higgsSubmodule_zero_le`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L85).
 
 > The Higgs submodule without derivatives lies in the span of the Higgs components.
 
@@ -63,7 +63,7 @@ lemma higgsSubmodule_zero_le :
       ≤ Submodule.span ℂ (Set.range (h.isHiggsSector.higgs ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.barHiggsSubmodule_zero_le`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L96).
+**`StandardModel.CovAlgebraRealization.barHiggsSubmodule_zero_le`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L96).
 
 > The conjugate Higgs submodule without derivatives lies in the span of the conjugate
 > Higgs components.
@@ -74,7 +74,7 @@ lemma barHiggsSubmodule_zero_le :
       ≤ Submodule.span ℂ (Set.range (h.isHiggsSector.barHiggs ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_d_eq`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L106).
+**`StandardModel.CovAlgebraRealization.range_d_eq`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L106).
 
 > The range of the down-singlet symbol map is the span of its components.
 
@@ -84,7 +84,7 @@ lemma range_d_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.dComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_bard_eq`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L112).
+**`StandardModel.CovAlgebraRealization.range_bard_eq`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L112).
 
 > The range of the conjugate down-singlet symbol map is the span of its components.
 
@@ -94,7 +94,7 @@ lemma range_bard_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.bardComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_u_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L118).
+**`StandardModel.CovAlgebraRealization.range_u_eq`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L118).
 
 > The range of the up-singlet symbol map is the span of its components.
 
@@ -104,7 +104,7 @@ lemma range_u_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.uComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_baru_eq`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L124).
+**`StandardModel.CovAlgebraRealization.range_baru_eq`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L124).
 
 > The range of the conjugate up-singlet symbol map is the span of its components.
 
@@ -114,7 +114,7 @@ lemma range_baru_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.baruComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_Q_eq`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L130).
+**`StandardModel.CovAlgebraRealization.range_Q_eq`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L130).
 
 > The range of the quark-doublet symbol map is the span of its components.
 
@@ -124,7 +124,7 @@ lemma range_Q_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.QComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_barQ_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L136).
+**`StandardModel.CovAlgebraRealization.range_barQ_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L136).
 
 > The range of the conjugate quark-doublet symbol map is the span of its components.
 
@@ -134,7 +134,7 @@ lemma range_barQ_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.barQComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_L_eq`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L142).
+**`StandardModel.CovAlgebraRealization.range_L_eq`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L142).
 
 > The range of the lepton-doublet symbol map is the span of its components.
 
@@ -144,7 +144,7 @@ lemma range_L_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.LComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_barL_eq`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L148).
+**`StandardModel.CovAlgebraRealization.range_barL_eq`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L148).
 
 > The range of the conjugate lepton-doublet symbol map is the span of its components.
 
@@ -154,7 +154,7 @@ lemma range_barL_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.barLComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_e_eq`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L154).
+**`StandardModel.CovAlgebraRealization.range_e_eq`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L154).
 
 > The range of the lepton-singlet symbol map is the span of its components.
 
@@ -164,7 +164,7 @@ lemma range_e_eq (f : Fin 3) :
       = Submodule.span ℂ (Set.range (h.isFermionSector.eComponent f ![]))
 ```
 
-**`StandardModel.CovAlgebraRealization.range_bare_eq`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L160).
+**`StandardModel.CovAlgebraRealization.range_bare_eq`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L160).
 
 > The range of the conjugate lepton-singlet symbol map is the span of its components.
 
@@ -184,7 +184,7 @@ lemma range_bare_eq (f : Fin 3) :
 > once the family pairs are counted — be reduced one at a time, each in turn joining the
 > error term of the others.
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_higgsSubmodule_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L180).
+**`StandardModel.CovAlgebraRealization.isStableUnder_higgsSubmodule_zero`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L180).
 
 > The Higgs submodule without derivatives is carried into itself by both groups.
 
@@ -194,7 +194,7 @@ lemma isStableUnder_higgsSubmodule_zero :
       (h.isHiggsSector.higgsSubmodule 0)
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_barHiggsSubmodule_zero`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L190).
+**`StandardModel.CovAlgebraRealization.isStableUnder_barHiggsSubmodule_zero`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L190).
 
 > The conjugate Higgs submodule without derivatives is carried into itself by both
 > groups.
@@ -205,7 +205,7 @@ lemma isStableUnder_barHiggsSubmodule_zero :
       (h.isHiggsSector.barHiggsSubmodule 0)
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_d`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L200).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_d`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L200).
 
 > The range of the down-singlet symbol map is carried into itself by both groups.
 
@@ -215,7 +215,7 @@ lemma isStableUnder_range_d (f : Fin 3) :
       (LinearMap.range (h.covD f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_bard`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L210).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_bard`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L210).
 
 > The range of the conjugate down-singlet symbol map is carried into itself by both
 > groups.
@@ -226,7 +226,7 @@ lemma isStableUnder_range_bard (f : Fin 3) :
       (LinearMap.range (h.covBarD f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_u`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L219).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_u`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L219).
 
 > The range of the up-singlet symbol map is carried into itself by both groups.
 
@@ -236,7 +236,7 @@ lemma isStableUnder_range_u (f : Fin 3) :
       (LinearMap.range (h.covU f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_baru`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L229).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_baru`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L229).
 
 > The range of the conjugate up-singlet symbol map is carried into itself by both
 > groups.
@@ -247,7 +247,7 @@ lemma isStableUnder_range_baru (f : Fin 3) :
       (LinearMap.range (h.covBarU f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_Q`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L238).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_Q`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L238).
 
 > The range of the quark-doublet symbol map is carried into itself by both groups.
 
@@ -257,7 +257,7 @@ lemma isStableUnder_range_Q (f : Fin 3) :
       (LinearMap.range (h.covQ f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_barQ`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L248).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_barQ`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L248).
 
 > The range of the conjugate quark-doublet symbol map is carried into itself by both
 > groups.
@@ -268,7 +268,7 @@ lemma isStableUnder_range_barQ (f : Fin 3) :
       (LinearMap.range (h.covBarQ f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_L`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L257).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_L`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L257).
 
 > The range of the lepton-doublet symbol map is carried into itself by both groups.
 
@@ -278,7 +278,7 @@ lemma isStableUnder_range_L (f : Fin 3) :
       (LinearMap.range (h.covL f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_barL`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L267).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_barL`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L267).
 
 > The range of the conjugate lepton-doublet symbol map is carried into itself by both
 > groups.
@@ -289,7 +289,7 @@ lemma isStableUnder_range_barL (f : Fin 3) :
       (LinearMap.range (h.covBarL f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_e`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L276).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_e`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L276).
 
 > The range of the lepton-singlet symbol map is carried into itself by both groups.
 
@@ -299,7 +299,7 @@ lemma isStableUnder_range_e (f : Fin 3) :
       (LinearMap.range (h.covE f (![] : Fin 0 → Fin 1 ⊕ Fin 3)))
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_range_bare`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L286).
+**`StandardModel.CovAlgebraRealization.isStableUnder_range_bare`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L286).
 
 > The range of the conjugate lepton-singlet symbol map is carried into itself by both
 > groups.
@@ -318,7 +318,7 @@ lemma isStableUnder_range_bare (f : Fin 3) :
 > of `(f, f')` is the untransposed block of `(f', f)`, and the weight-zero piece of the sector
 > lands inside the join of the six.
 
-**`StandardModel.CovAlgebraRealization.downBlockSubmodule`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L306).
+**`StandardModel.CovAlgebraRealization.downBlockSubmodule`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L306).
 
 > The submodule of the down-type block `H d barQ` of a family pair.
 
@@ -326,7 +326,7 @@ lemma isStableUnder_range_bare (f : Fin 3) :
 noncomputable def downBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.upBlockSubmodule`**, a def, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L311).
+**`StandardModel.CovAlgebraRealization.upBlockSubmodule`**, a def, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L311).
 
 > The submodule of the up-type block `H baru Q` of a family pair.
 
@@ -334,7 +334,7 @@ noncomputable def downBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 noncomputable def upBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.leptonBlockSubmodule`**, a def, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L316).
+**`StandardModel.CovAlgebraRealization.leptonBlockSubmodule`**, a def, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L316).
 
 > The submodule of the charged-lepton block `H barL e` of a family pair.
 
@@ -342,7 +342,7 @@ noncomputable def upBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 noncomputable def leptonBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlockSubmodule`**, a def, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L321).
+**`StandardModel.CovAlgebraRealization.barDownBlockSubmodule`**, a def, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L321).
 
 > The submodule of the conjugate down-type block `barH bard Q` of a family pair.
 
@@ -350,7 +350,7 @@ noncomputable def leptonBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 noncomputable def barDownBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlockSubmodule`**, a def, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L327).
+**`StandardModel.CovAlgebraRealization.barUpBlockSubmodule`**, a def, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L327).
 
 > The submodule of the conjugate up-type block `barH u barQ` of a family pair.
 
@@ -358,7 +358,7 @@ noncomputable def barDownBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 noncomputable def barUpBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonBlockSubmodule`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L333).
+**`StandardModel.CovAlgebraRealization.barLeptonBlockSubmodule`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L333).
 
 > The submodule of the conjugate charged-lepton block `barH L bare` of a family pair.
 
@@ -366,7 +366,7 @@ noncomputable def barUpBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 noncomputable def barLeptonBlockSubmodule (f f' : Fin 3) : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_downBlockSubmodule`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L339).
+**`StandardModel.CovAlgebraRealization.isStableUnder_downBlockSubmodule`**, a lemma, [line 339](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L339).
 
 > The down-type block submodule is carried into itself by both groups.
 
@@ -375,7 +375,7 @@ lemma isStableUnder_downBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.downBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_upBlockSubmodule`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L347).
+**`StandardModel.CovAlgebraRealization.isStableUnder_upBlockSubmodule`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L347).
 
 > The up-type block submodule is carried into itself by both groups.
 
@@ -384,7 +384,7 @@ lemma isStableUnder_upBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.upBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_leptonBlockSubmodule`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L355).
+**`StandardModel.CovAlgebraRealization.isStableUnder_leptonBlockSubmodule`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L355).
 
 > The charged-lepton block submodule is carried into itself by both groups.
 
@@ -393,7 +393,7 @@ lemma isStableUnder_leptonBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.leptonBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_barDownBlockSubmodule`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L363).
+**`StandardModel.CovAlgebraRealization.isStableUnder_barDownBlockSubmodule`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L363).
 
 > The conjugate down-type block submodule is carried into itself by both groups.
 
@@ -402,7 +402,7 @@ lemma isStableUnder_barDownBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.barDownBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_barUpBlockSubmodule`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L371).
+**`StandardModel.CovAlgebraRealization.isStableUnder_barUpBlockSubmodule`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L371).
 
 > The conjugate up-type block submodule is carried into itself by both groups.
 
@@ -411,7 +411,7 @@ lemma isStableUnder_barUpBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.barUpBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.isStableUnder_barLeptonBlockSubmodule`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L379).
+**`StandardModel.CovAlgebraRealization.isStableUnder_barLeptonBlockSubmodule`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L379).
 
 > The conjugate charged-lepton block submodule is carried into itself by both groups.
 
@@ -420,7 +420,7 @@ lemma isStableUnder_barLeptonBlockSubmodule (f f' : Fin 3) :
     IsStableUnder (gaugeLorentzMaps repGauge repLorentz) (h.barLeptonBlockSubmodule f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.blockSubmodule`**, a def, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L388).
+**`StandardModel.CovAlgebraRealization.blockSubmodule`**, a def, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L388).
 
 > The join of the six block submodules over the nine family pairs: what the weight-zero
 > piece of the Yukawa sector at mass weight eight is contained in.
@@ -429,7 +429,7 @@ lemma isStableUnder_barLeptonBlockSubmodule (f f' : Fin 3) :
 noncomputable def blockSubmodule : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight_piece_zero_le`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L399).
+**`StandardModel.CovAlgebraRealization.sectorMassWeightEightGaugeWeight_piece_zero_le`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L399).
 
 > The weight-zero piece of the Yukawa sector at mass weight eight lies in the join of the
 > six block submodules over the nine family pairs. The twelve blocks of
@@ -456,7 +456,7 @@ lemma sectorMassWeightEightGaugeWeight_piece_zero_le :
 > colour factor and the stage reduces it to itself. That keeps them in the same three-stage shape as
 > the four quark blocks.
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_downYukawa`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L467).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_downYukawa`**, a lemma, [line 467](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L467).
 
 > The down-type block reduces to the down-type Yukawa term.
 
@@ -466,7 +466,7 @@ lemma reducesInvariantsTo_downYukawa (f f' : Fin 3) :
       (ℂ ∙ h.downYukawa f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_upYukawa`**, a lemma, [line 511](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L511).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_upYukawa`**, a lemma, [line 511](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L511).
 
 > The up-type block reduces to the up-type Yukawa term. Isospin is contracted by the
 > antisymmetric symbol here, the Higgs symbol and the quark doublet both carrying the
@@ -478,7 +478,7 @@ lemma reducesInvariantsTo_upYukawa (f f' : Fin 3) :
       (ℂ ∙ h.upYukawa f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_leptonYukawa`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L554).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_leptonYukawa`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L554).
 
 > The charged-lepton block reduces to the charged-lepton Yukawa term. Its colour stage is
 > the trivial one: the three symbols carry no colour index between them, so the block is
@@ -490,7 +490,7 @@ lemma reducesInvariantsTo_leptonYukawa (f f' : Fin 3) :
       (ℂ ∙ h.leptonYukawa f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barDownYukawa`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L594).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barDownYukawa`**, a lemma, [line 594](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L594).
 
 > The conjugate down-type block reduces to the conjugate down-type Yukawa term.
 
@@ -500,7 +500,7 @@ lemma reducesInvariantsTo_barDownYukawa (f f' : Fin 3) :
       (ℂ ∙ h.barDownYukawa f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barUpYukawa`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L636).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barUpYukawa`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L636).
 
 > The conjugate up-type block reduces to the conjugate up-type Yukawa term.
 
@@ -510,7 +510,7 @@ lemma reducesInvariantsTo_barUpYukawa (f f' : Fin 3) :
       (ℂ ∙ h.barUpYukawa f f')
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barLeptonYukawa`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L679).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_barLeptonYukawa`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L679).
 
 > The conjugate charged-lepton block reduces to the conjugate charged-lepton Yukawa term,
 > again with the trivial colour stage.
@@ -529,7 +529,7 @@ lemma reducesInvariantsTo_barLeptonYukawa (f f' : Fin 3) :
 > weight to begin with, which turns the reduction into an equivalence rather than a one-way
 > inclusion.
 
-**`StandardModel.CovAlgebraRealization.isFixedBy_yukawaSpan`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L733).
+**`StandardModel.CovAlgebraRealization.isFixedBy_yukawaSpan`**, a lemma, [line 733](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L733).
 
 > The Yukawa span is fixed pointwise by both groups, `yukawaSpan_le_inf` placing it inside
 > both spaces of invariants.
@@ -538,7 +538,7 @@ lemma reducesInvariantsTo_barLeptonYukawa (f f' : Fin 3) :
 lemma isFixedBy_yukawaSpan : IsFixedBy (gaugeLorentzMaps repGauge repLorentz) h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_downYukawa_le_yukawaSpan`**, a lemma, [line 742](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L742).
+**`StandardModel.CovAlgebraRealization.span_downYukawa_le_yukawaSpan`**, a lemma, [line 742](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L742).
 
 > The line through a down-type Yukawa term lies in the Yukawa span.
 
@@ -547,7 +547,7 @@ lemma span_downYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.downYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_upYukawa_le_yukawaSpan`**, a lemma, [line 750](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L750).
+**`StandardModel.CovAlgebraRealization.span_upYukawa_le_yukawaSpan`**, a lemma, [line 750](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L750).
 
 > The line through an up-type Yukawa term lies in the Yukawa span.
 
@@ -556,7 +556,7 @@ lemma span_upYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.upYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_leptonYukawa_le_yukawaSpan`**, a lemma, [line 758](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L758).
+**`StandardModel.CovAlgebraRealization.span_leptonYukawa_le_yukawaSpan`**, a lemma, [line 758](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L758).
 
 > The line through a charged-lepton Yukawa term lies in the Yukawa span.
 
@@ -565,7 +565,7 @@ lemma span_leptonYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.leptonYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_barDownYukawa_le_yukawaSpan`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L766).
+**`StandardModel.CovAlgebraRealization.span_barDownYukawa_le_yukawaSpan`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L766).
 
 > The line through a conjugate down-type Yukawa term lies in the Yukawa span.
 
@@ -574,7 +574,7 @@ lemma span_barDownYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.barDownYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_barUpYukawa_le_yukawaSpan`**, a lemma, [line 773](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L773).
+**`StandardModel.CovAlgebraRealization.span_barUpYukawa_le_yukawaSpan`**, a lemma, [line 773](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L773).
 
 > The line through a conjugate up-type Yukawa term lies in the Yukawa span.
 
@@ -583,7 +583,7 @@ lemma span_barUpYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.barUpYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.span_barLeptonYukawa_le_yukawaSpan`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L780).
+**`StandardModel.CovAlgebraRealization.span_barLeptonYukawa_le_yukawaSpan`**, a lemma, [line 780](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L780).
 
 > The line through a conjugate charged-lepton Yukawa term lies in the Yukawa span.
 
@@ -592,7 +592,7 @@ lemma span_barLeptonYukawa_le_yukawaSpan (f f' : Fin 3) :
     ℂ ∙ h.barLeptonYukawa f f' ≤ h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_yukawaSpan`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L790).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_yukawaSpan`**, a lemma, [line 790](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L790).
 
 > The join of the six block submodules over the nine family pairs reduces to the Yukawa
 > span: the fifty-four blocks are taken one at a time, each in turn joining the error term
@@ -603,7 +603,7 @@ lemma reducesInvariantsTo_yukawaSpan :
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) h.blockSubmodule h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs_fermion_eight`**, a lemma, [line 833](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L833).
+**`StandardModel.CovAlgebraRealization.reducesInvariantsTo_sectorMassWeight_higgs_fermion_eight`**, a lemma, [line 833](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L833).
 
 > The Yukawa sector at mass weight eight reduces, for the gauge and Lorentz groups
 > together, to the Yukawa span. Hypercharge puts an invariant in the weight-zero piece, the
@@ -616,7 +616,7 @@ lemma reducesInvariantsTo_sectorMassWeight_higgs_fermion_eight :
       (h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8) h.yukawaSpan
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 845](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L845).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 845](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean#L845).
 
 > The classification of the Yukawa sector at mass weight eight as an equivalence: an
 > element of the sector joined with a submodule `S` stable under both groups is fixed by
@@ -643,4 +643,4 @@ lemma mem_sectorMassWeight_higgs_fermion_eight_sup_and_gauge_lorentz_invariant_i
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean)

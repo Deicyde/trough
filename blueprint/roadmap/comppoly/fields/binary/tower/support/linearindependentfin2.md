@@ -7,11 +7,11 @@ proof: formalized
 
 # Binary Tower `Fin 2` Linear Independence
 
-`CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2`, in [CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2`, in [CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Linear-independence lemmas specialized to functions indexed by `Fin 2`.
 
-`linearIndependent_fin2'` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean#L30))
+`linearIndependent_fin2'` (theorem, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean#L30))
 
 ```lean
 theorem linearIndependent_fin2' {f : Fin 2 → V} :
@@ -24,5 +24,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean)
+- [CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Support/LinearIndependentFin2.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Support.LinearIndependentFin2.json)

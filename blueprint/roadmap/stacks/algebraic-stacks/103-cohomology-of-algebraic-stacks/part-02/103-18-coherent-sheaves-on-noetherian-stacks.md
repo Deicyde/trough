@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.18 Coherent sheaves on Noetherian stacks
 
-Section 103.18 of the Stacks Project, [Tag 0GRE](https://stacks.math.columbia.edu/tag/0GRE). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 103.18 of the Stacks Project, [Tag 0GRE](https://stacks.math.columbia.edu/tag/0GRE). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GRF, a lemma
 
 [Tag 0GRF](https://stacks.math.columbia.edu/tag/0GRF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiltered_coherentSubobject_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoherentSubmoduleColimitNoetherian.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/CoherentSubmoduleColimitNoetherian.lean#L300).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFiltered_coherentSubobject_and_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/CoherentSubmoduleColimitNoetherian.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/CoherentSubmoduleColimitNoetherian.lean#L300).
 
 > **Stacks 0GRF.**  Let `𝒳` be a Noetherian algebraic stack.  Every quasi-coherent
 > `𝒪_𝒳`-module `ℱ` is the filtered colimit of its coherent submodules: the coherent subobjects of `ℱ`
@@ -39,4 +39,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.18, Tag 0GRE](https://stacks.math.columbia.edu/tag/0GRE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

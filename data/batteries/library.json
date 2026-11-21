@@ -1,6 +1,6 @@
 {
  "schema": "trough-batteries/v1",
- "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
  "readme": [
   "The \"batteries included\" extended library for Lean 4. This is a collection of data structures and tactics intended for use by both computer-science applications and mathematics applications of Lean 4."
  ],
@@ -7162,13 +7162,13 @@
    "doc": "### rev",
    "items": [
     {
-     "line": 21,
+     "line": 23,
      "note": "### foldl/foldr"
     },
     {
      "name": "Fin.foldl_assoc",
      "kind": "theorem",
-     "line": 23,
+     "line": 25,
      "doc": "",
      "statement": "theorem foldl_assoc {op : α → α → α} [ha : Std.Associative op] {f : Fin n → α} {a₁ a₂} :\n    foldl n (fun x i => op x (f i)) (op a₁ a₂) = op a₁ (foldl n (fun x i => op x (f i)) a₂)",
      "sorry": false
@@ -7176,31 +7176,31 @@
     {
      "name": "Fin.foldr_assoc",
      "kind": "theorem",
-     "line": 29,
+     "line": 31,
      "doc": "",
      "statement": "theorem foldr_assoc {op : α → α → α} [ha : Std.Associative op] {f : Fin n → α} {a₁ a₂} :\n    foldr n (fun i x => op (f i) x) (op a₁ a₂) = op (foldr n (fun i x => op (f i) x) a₁) a₂",
      "sorry": false
     },
     {
-     "line": 35,
+     "line": 37,
      "note": "### clamp"
     },
     {
      "name": "Fin.coe_clamp",
      "kind": "theorem",
-     "line": 37,
+     "line": 39,
      "doc": "",
      "statement": "theorem coe_clamp (n m : Nat) : (clamp n m : Nat) = min n m",
      "sorry": false
     },
     {
-     "line": 39,
+     "line": 41,
      "note": "### sum"
     },
     {
      "name": "Fin.sum_zero",
      "kind": "theorem",
-     "line": 42,
+     "line": 44,
      "doc": "",
      "statement": "theorem sum_zero [Zero α] [Add α] (x : Fin 0 → α) :\n    Fin.sum x = 0",
      "sorry": false
@@ -7208,7 +7208,7 @@
     {
      "name": "Fin.sum_succ",
      "kind": "theorem",
-     "line": 46,
+     "line": 48,
      "doc": "",
      "statement": "theorem sum_succ [Zero α] [Add α] (x : Fin (n + 1) → α) :\n    Fin.sum x = x 0 + Fin.sum (x ·.succ)",
      "sorry": false
@@ -7216,19 +7216,19 @@
     {
      "name": "Fin.sum_eq_sum_map_finRange",
      "kind": "theorem",
-     "line": 51,
+     "line": 53,
      "doc": "",
      "statement": "theorem sum_eq_sum_map_finRange [Zero α] [Add α] (x : Fin n → α) :\n    Fin.sum x = (List.finRange n |>.map x).sum",
      "sorry": false
     },
     {
-     "line": 55,
+     "line": 57,
      "note": "### prod"
     },
     {
      "name": "Fin.prod_zero",
      "kind": "theorem",
-     "line": 58,
+     "line": 60,
      "doc": "",
      "statement": "theorem prod_zero [One α] [Mul α] (x : Fin 0 → α) :\n    Fin.prod x = 1",
      "sorry": false
@@ -7236,7 +7236,7 @@
     {
      "name": "Fin.prod_succ",
      "kind": "theorem",
-     "line": 62,
+     "line": 64,
      "doc": "",
      "statement": "theorem prod_succ [One α] [Mul α] (x : Fin (n + 1) → α) :\n    Fin.prod x = x 0 * Fin.prod (x ·.succ)",
      "sorry": false
@@ -7244,19 +7244,19 @@
     {
      "name": "Fin.prod_eq_prod_map_finRange",
      "kind": "theorem",
-     "line": 67,
+     "line": 69,
      "doc": "",
      "statement": "theorem prod_eq_prod_map_finRange [One α] [Mul α] (x : Fin n → α) :\n    Fin.prod x = (List.finRange n |>.map x).prod",
      "sorry": false
     },
     {
-     "line": 71,
+     "line": 73,
      "note": "### countP"
     },
     {
      "name": "Fin.countP_zero",
      "kind": "theorem",
-     "line": 73,
+     "line": 75,
      "doc": "",
      "statement": "theorem countP_zero (p : Fin 0 → Bool) : Fin.countP p = 0",
      "sorry": false
@@ -7264,7 +7264,7 @@
     {
      "name": "Fin.countP_one",
      "kind": "theorem",
-     "line": 76,
+     "line": 78,
      "doc": "",
      "statement": "theorem countP_one (p : Fin 1 → Bool) : Fin.countP p = (p 0).toNat",
      "sorry": false
@@ -7272,7 +7272,7 @@
     {
      "name": "Fin.countP_succ",
      "kind": "theorem",
-     "line": 79,
+     "line": 81,
      "doc": "",
      "statement": "theorem countP_succ (p : Fin (n + 1) → Bool) :\n    Fin.countP p = (p 0).toNat + Fin.countP (p ·.succ)",
      "sorry": false
@@ -7280,7 +7280,7 @@
     {
      "name": "Fin.countP_eq_countP_map_finRange",
      "kind": "theorem",
-     "line": 84,
+     "line": 86,
      "doc": "",
      "statement": "theorem countP_eq_countP_map_finRange (x : Fin n → Bool) :\n    Fin.countP x = (List.finRange n).countP x",
      "sorry": false
@@ -7288,19 +7288,19 @@
     {
      "name": "Fin.countP_le",
      "kind": "theorem",
-     "line": 92,
+     "line": 94,
      "doc": "",
      "statement": "theorem countP_le (p : Fin n → Bool) : Fin.countP p ≤ n",
      "sorry": false
     },
     {
-     "line": 100,
+     "line": 102,
      "note": "### findSome?"
     },
     {
      "name": "Fin.findSome?_zero",
      "kind": "theorem",
-     "line": 102,
+     "line": 104,
      "doc": "",
      "statement": "theorem findSome?_zero {f : Fin 0 → Option α} : findSome? f = none",
      "sorry": false
@@ -7308,7 +7308,7 @@
     {
      "name": "Fin.findSome?_one",
      "kind": "theorem",
-     "line": 104,
+     "line": 106,
      "doc": "",
      "statement": "theorem findSome?_one {f : Fin 1 → Option α} : findSome? f = f 0",
      "sorry": false
@@ -7316,7 +7316,7 @@
     {
      "name": "Fin.findSome?_succ",
      "kind": "theorem",
-     "line": 107,
+     "line": 109,
      "doc": "",
      "statement": "theorem findSome?_succ {f : Fin (n+1) → Option α} :\n    findSome? f = (f 0).or (findSome? (f ·.succ))",
      "sorry": false
@@ -7324,7 +7324,7 @@
     {
      "name": "Fin.findSome?_succ_of_some",
      "kind": "theorem",
-     "line": 112,
+     "line": 114,
      "doc": "",
      "statement": "theorem findSome?_succ_of_some {f : Fin (n+1) → Option α} (h : f 0 = some x) :\n    findSome? f = some x",
      "sorry": false
@@ -7332,7 +7332,7 @@
     {
      "name": "Fin.findSome?_succ_of_isSome",
      "kind": "theorem",
-     "line": 115,
+     "line": 117,
      "doc": "",
      "statement": "theorem findSome?_succ_of_isSome {f : Fin (n+1) → Option α} (h : (f 0).isSome) :\n    findSome? f = f 0",
      "sorry": false
@@ -7340,7 +7340,7 @@
     {
      "name": "Fin.findSome?_succ_of_none",
      "kind": "theorem",
-     "line": 118,
+     "line": 120,
      "doc": "",
      "statement": "theorem findSome?_succ_of_none {f : Fin (n+1) → Option α} (h : f 0 = none) :\n    findSome? f = findSome? (f ·.succ)",
      "sorry": false
@@ -7348,7 +7348,7 @@
     {
      "name": "Fin.findSome?_succ_of_isNone",
      "kind": "theorem",
-     "line": 121,
+     "line": 123,
      "doc": "",
      "statement": "theorem findSome?_succ_of_isNone {f : Fin (n+1) → Option α} (h : (f 0).isNone) :\n    findSome? f = findSome? (f ·.succ)",
      "sorry": false
@@ -7356,7 +7356,7 @@
     {
      "name": "Fin.findSome?_eq_some_iff",
      "kind": "theorem",
-     "line": 125,
+     "line": 127,
      "doc": "",
      "statement": "theorem findSome?_eq_some_iff {f : Fin n → Option α} :\n    findSome? f = some a ↔ ∃ i, f i = some a ∧ ∀ j < i, f j = none",
      "sorry": false
@@ -7364,7 +7364,7 @@
     {
      "name": "Fin.findSome?_eq_none_iff",
      "kind": "theorem",
-     "line": 135,
+     "line": 137,
      "doc": "",
      "statement": "theorem findSome?_eq_none_iff {f : Fin n → Option α} :\n    findSome? f = none ↔ ∀ i, f i = none",
      "sorry": false
@@ -7372,7 +7372,7 @@
     {
      "name": "Fin.isNone_findSome?_iff",
      "kind": "theorem",
-     "line": 141,
+     "line": 143,
      "doc": "",
      "statement": "theorem isNone_findSome?_iff {f : Fin n → Option α} :\n    (findSome? f).isNone ↔ ∀ i, (f i).isNone",
      "sorry": false
@@ -7380,7 +7380,7 @@
     {
      "name": "Fin.isSome_findSome?_iff",
      "kind": "theorem",
-     "line": 144,
+     "line": 146,
      "doc": "",
      "statement": "theorem isSome_findSome?_iff {f : Fin n → Option α} :\n    (findSome? f).isSome ↔ ∃ i, (f i).isSome",
      "sorry": false
@@ -7388,7 +7388,7 @@
     {
      "name": "Fin.exists_minimal_of_findSome?_eq_some",
      "kind": "theorem",
-     "line": 148,
+     "line": 150,
      "doc": "",
      "statement": "theorem exists_minimal_of_findSome?_eq_some {f : Fin n → Option α}\n    (h : findSome? f = some x) : ∃ i, f i = some x ∧ ∀ j < i, f j = none",
      "sorry": false
@@ -7396,7 +7396,7 @@
     {
      "name": "Fin.exists_eq_some_of_findSome?_eq_some",
      "kind": "theorem",
-     "line": 152,
+     "line": 154,
      "doc": "",
      "statement": "theorem exists_eq_some_of_findSome?_eq_some {f : Fin n → Option α}\n    (h : findSome? f = some x) : ∃ i, f i = some x",
      "sorry": false
@@ -7404,7 +7404,7 @@
     {
      "name": "Fin.eq_none_of_findSome?_eq_none",
      "kind": "theorem",
-     "line": 155,
+     "line": 157,
      "doc": "",
      "statement": "theorem eq_none_of_findSome?_eq_none {f : Fin n → Option α} (h : findSome? f = none) (i) :\n    f i = none",
      "sorry": false
@@ -7412,7 +7412,7 @@
     {
      "name": "Fin.exists_isSome_of_isSome_findSome?",
      "kind": "theorem",
-     "line": 158,
+     "line": 160,
      "doc": "",
      "statement": "theorem exists_isSome_of_isSome_findSome? {f : Fin n → Option α} (h : (findSome? f).isSome) :\n    ∃ i, (f i).isSome",
      "sorry": false
@@ -7420,7 +7420,7 @@
     {
      "name": "Fin.isNone_of_isNone_findSome?",
      "kind": "theorem",
-     "line": 161,
+     "line": 163,
      "doc": "",
      "statement": "theorem isNone_of_isNone_findSome? {f : Fin n → Option α} (h : (findSome? f).isNone) :\n    (f i).isNone",
      "sorry": false
@@ -7428,7 +7428,7 @@
     {
      "name": "Fin.isSome_findSome?_of_isSome",
      "kind": "theorem",
-     "line": 164,
+     "line": 166,
      "doc": "",
      "statement": "theorem isSome_findSome?_of_isSome {f : Fin n → Option α} (h : (f i).isSome) :\n    (findSome? f).isSome",
      "sorry": false
@@ -7436,7 +7436,7 @@
     {
      "name": "Fin.map_findSome?",
      "kind": "theorem",
-     "line": 167,
+     "line": 169,
      "doc": "",
      "statement": "theorem map_findSome? (f : Fin n → Option α) (g : α → β) :\n    (findSome? f).map g = findSome? (Option.map g <| f ·)",
      "sorry": false
@@ -7444,7 +7444,7 @@
     {
      "name": "Fin.findSome?_guard",
      "kind": "theorem",
-     "line": 173,
+     "line": 175,
      "doc": "",
      "statement": "theorem findSome?_guard {p : Fin n → Bool} : findSome? (Option.guard p) = find? p",
      "sorry": false
@@ -7452,7 +7452,7 @@
     {
      "name": "Fin.bind_findSome?_guard_isSome",
      "kind": "theorem",
-     "line": 175,
+     "line": 177,
      "doc": "",
      "statement": "theorem bind_findSome?_guard_isSome {f : Fin n → Option α} :\n    (findSome? (Option.guard fun i => (f i).isSome)).bind f = findSome? f",
      "sorry": false
@@ -7460,19 +7460,19 @@
     {
      "name": "Fin.findSome?_eq_findSome?_finRange",
      "kind": "theorem",
-     "line": 184,
+     "line": 186,
      "doc": "",
      "statement": "theorem findSome?_eq_findSome?_finRange (f : Fin n → Option α) :\n    findSome? f = (List.finRange n).findSome? f",
      "sorry": false
     },
     {
-     "line": 192,
+     "line": 194,
      "note": "### findSomeRev?"
     },
     {
      "name": "Fin.findSome?_rev",
      "kind": "theorem",
-     "line": 195,
+     "line": 197,
      "doc": "",
      "statement": "theorem findSome?_rev {f : Fin n → Option α} : findSome? (f ·.rev) = findSomeRev? f",
      "sorry": false
@@ -7480,7 +7480,7 @@
     {
      "name": "Fin.findSomeRev?_rev",
      "kind": "theorem",
-     "line": 198,
+     "line": 200,
      "doc": "",
      "statement": "theorem findSomeRev?_rev {f : Fin n → Option α} :\n    findSomeRev? (f ·.rev) = findSome? f",
      "sorry": false
@@ -7488,7 +7488,7 @@
     {
      "name": "Fin.findSomeRev?_zero",
      "kind": "theorem",
-     "line": 201,
+     "line": 203,
      "doc": "",
      "statement": "theorem findSomeRev?_zero {f : Fin 0 → Option α} : findSomeRev? f = none",
      "sorry": false
@@ -7496,7 +7496,7 @@
     {
      "name": "Fin.findSomeRev?_one",
      "kind": "theorem",
-     "line": 204,
+     "line": 206,
      "doc": "",
      "statement": "theorem findSomeRev?_one {f : Fin 1 → Option α} : findSomeRev? f = f 0",
      "sorry": false
@@ -7504,7 +7504,7 @@
     {
      "name": "Fin.findSomeRev?_succ",
      "kind": "theorem",
-     "line": 207,
+     "line": 209,
      "doc": "",
      "statement": "theorem findSomeRev?_succ {f : Fin (n+1) → Option α} :\n    findSomeRev? f = (f (last n)).or (findSomeRev? fun i => f i.castSucc)",
      "sorry": false
@@ -7512,7 +7512,7 @@
     {
      "name": "Fin.findSomeRev?_eq_some_iff",
      "kind": "theorem",
-     "line": 213,
+     "line": 215,
      "doc": "",
      "statement": "theorem findSomeRev?_eq_some_iff {f : Fin n → Option α} :\n    findSomeRev? f = some a ↔ ∃ i, f i = some a ∧ ∀ j, i < j → f j = none",
      "sorry": false
@@ -7520,7 +7520,7 @@
     {
      "name": "Fin.findSomeRev?_eq_none_iff",
      "kind": "theorem",
-     "line": 218,
+     "line": 220,
      "doc": "",
      "statement": "theorem findSomeRev?_eq_none_iff {f : Fin n → Option α} :\n    findSomeRev? f = none ↔ ∀ i, f i = none",
      "sorry": false
@@ -7528,7 +7528,7 @@
     {
      "name": "Fin.isNone_findSomeRev?_iff",
      "kind": "theorem",
-     "line": 222,
+     "line": 224,
      "doc": "",
      "statement": "theorem isNone_findSomeRev?_iff {f : Fin n → Option α} :\n    (findSomeRev? f).isNone ↔ ∀ i, (f i).isNone",
      "sorry": false
@@ -7536,7 +7536,7 @@
     {
      "name": "Fin.isSome_findSomeRev?_iff",
      "kind": "theorem",
-     "line": 225,
+     "line": 227,
      "doc": "",
      "statement": "theorem isSome_findSomeRev?_iff {f : Fin n → Option α} :\n    (findSomeRev? f).isSome ↔ ∃ i, (f i).isSome",
      "sorry": false
@@ -7544,7 +7544,7 @@
     {
      "name": "Fin.exists_minimal_of_findSomeRev?_eq_some",
      "kind": "theorem",
-     "line": 229,
+     "line": 231,
      "doc": "",
      "statement": "theorem exists_minimal_of_findSomeRev?_eq_some {f : Fin n → Option α}\n    (h : findSomeRev? f = some x) : ∃ i, f i = some x ∧ ∀ j, i < j → f j = none",
      "sorry": false
@@ -7552,7 +7552,7 @@
     {
      "name": "Fin.exists_eq_some_of_findSomeRev?_eq_some",
      "kind": "theorem",
-     "line": 233,
+     "line": 235,
      "doc": "",
      "statement": "theorem exists_eq_some_of_findSomeRev?_eq_some {f : Fin n → Option α}\n    (h : findSomeRev? f = some x) : ∃ i, f i = some x",
      "sorry": false
@@ -7560,7 +7560,7 @@
     {
      "name": "Fin.eq_none_of_findSomeRev?_eq_none",
      "kind": "theorem",
-     "line": 236,
+     "line": 238,
      "doc": "",
      "statement": "theorem eq_none_of_findSomeRev?_eq_none {f : Fin n → Option α} (h : findSomeRev? f = none) (i) :\n    f i = none",
      "sorry": false
@@ -7568,7 +7568,7 @@
     {
      "name": "Fin.exists_isSome_of_isSome_findSomeRev?",
      "kind": "theorem",
-     "line": 239,
+     "line": 241,
      "doc": "",
      "statement": "theorem exists_isSome_of_isSome_findSomeRev? {f : Fin n → Option α} (h : (findSomeRev? f).isSome) :\n    ∃ i, (f i).isSome",
      "sorry": false
@@ -7576,7 +7576,7 @@
     {
      "name": "Fin.isNone_of_isNone_findSomeRev?",
      "kind": "theorem",
-     "line": 242,
+     "line": 244,
      "doc": "",
      "statement": "theorem isNone_of_isNone_findSomeRev? {f : Fin n → Option α} (h : (findSomeRev? f).isNone) :\n    (f i).isNone",
      "sorry": false
@@ -7584,7 +7584,7 @@
     {
      "name": "Fin.isSome_findSomeRev?_of_isSome",
      "kind": "theorem",
-     "line": 245,
+     "line": 247,
      "doc": "",
      "statement": "theorem isSome_findSomeRev?_of_isSome {f : Fin n → Option α} (h : (f i).isSome) :\n    (findSomeRev? f).isSome",
      "sorry": false
@@ -7592,7 +7592,7 @@
     {
      "name": "Fin.map_findSomeRev?",
      "kind": "theorem",
-     "line": 248,
+     "line": 250,
      "doc": "",
      "statement": "theorem map_findSomeRev? (f : Fin n → Option α) (g : α → β) :\n    (findSomeRev? f).map g = findSomeRev? (Option.map g <| f ·)",
      "sorry": false
@@ -7600,7 +7600,7 @@
     {
      "name": "Fin.findSomeRev?_guard",
      "kind": "theorem",
-     "line": 255,
+     "line": 257,
      "doc": "",
      "statement": "theorem findSomeRev?_guard {p : Fin n → Bool} : findSomeRev? (Option.guard p) = findRev? p",
      "sorry": false
@@ -7608,19 +7608,19 @@
     {
      "name": "Fin.bind_findSomeRev?_guard_isSome",
      "kind": "theorem",
-     "line": 257,
+     "line": 259,
      "doc": "",
      "statement": "theorem bind_findSomeRev?_guard_isSome {f : Fin n → Option α} :\n    (findSomeRev? (Option.guard fun i => (f i).isSome)).bind f = findSomeRev? f",
      "sorry": false
     },
     {
-     "line": 265,
+     "line": 267,
      "note": "### find?"
     },
     {
      "name": "Fin.find?_zero",
      "kind": "theorem",
-     "line": 267,
+     "line": 269,
      "doc": "",
      "statement": "theorem find?_zero {p : Fin 0 → Bool} : find? p = none",
      "sorry": false
@@ -7628,7 +7628,7 @@
     {
      "name": "Fin.find?_one",
      "kind": "theorem",
-     "line": 269,
+     "line": 271,
      "doc": "",
      "statement": "theorem find?_one {p : Fin 1 → Bool} : find? p = if p 0 then some 0 else none",
      "sorry": false
@@ -7636,7 +7636,7 @@
     {
      "name": "Fin.find?_succ",
      "kind": "theorem",
-     "line": 272,
+     "line": 274,
      "doc": "",
      "statement": "theorem find?_succ {p : Fin (n+1) → Bool} :\n    find? p = if p 0 then some 0 else (find? (p ·.succ)).map Fin.succ",
      "sorry": false
@@ -7644,7 +7644,7 @@
     {
      "name": "Fin.find?_eq_some_iff",
      "kind": "theorem",
-     "line": 278,
+     "line": 280,
      "doc": "",
      "statement": "theorem find?_eq_some_iff {p : Fin n → Bool} :\n    find? p = some i ↔ p i ∧ ∀ j, j < i → p j = false",
      "sorry": false
@@ -7652,7 +7652,7 @@
     {
      "name": "Fin.isSome_find?_iff",
      "kind": "theorem",
-     "line": 281,
+     "line": 283,
      "doc": "",
      "statement": "theorem isSome_find?_iff {p : Fin n → Bool} :\n    (find? p).isSome ↔ ∃ i, p i",
      "sorry": false
@@ -7660,7 +7660,7 @@
     {
      "name": "Fin.find?_eq_none_iff",
      "kind": "theorem",
-     "line": 285,
+     "line": 287,
      "doc": "",
      "statement": "theorem find?_eq_none_iff {p : Fin n → Bool} : find? p = none ↔ ∀ i, p i = false",
      "sorry": false
@@ -7668,7 +7668,7 @@
     {
      "name": "Fin.isNone_find?_iff",
      "kind": "theorem",
-     "line": 287,
+     "line": 289,
      "doc": "",
      "statement": "theorem isNone_find?_iff {p : Fin n → Bool} : (find? p).isNone ↔ ∀ i, p i = false",
      "sorry": false
@@ -7676,7 +7676,7 @@
     {
      "name": "Fin.eq_true_of_find?_eq_some",
      "kind": "theorem",
-     "line": 289,
+     "line": 291,
      "doc": "",
      "statement": "theorem eq_true_of_find?_eq_some {p : Fin n → Bool} (h : find? p = some i) : p i",
      "sorry": false
@@ -7684,7 +7684,7 @@
     {
      "name": "Fin.eq_false_of_find?_eq_some_of_lt",
      "kind": "theorem",
-     "line": 292,
+     "line": 294,
      "doc": "",
      "statement": "theorem eq_false_of_find?_eq_some_of_lt {p : Fin n → Bool} (h : find? p = some i) :\n    ∀ j < i, p j = false",
      "sorry": false
@@ -7692,7 +7692,7 @@
     {
      "name": "Fin.eq_false_of_find?_eq_none",
      "kind": "theorem",
-     "line": 295,
+     "line": 297,
      "doc": "",
      "statement": "theorem eq_false_of_find?_eq_none {p : Fin n → Bool} (h : find? p = none) (i) :\n    p i = false",
      "sorry": false
@@ -7700,7 +7700,7 @@
     {
      "name": "Fin.exists_eq_true_of_isSome_find?",
      "kind": "theorem",
-     "line": 298,
+     "line": 300,
      "doc": "",
      "statement": "theorem exists_eq_true_of_isSome_find? {p : Fin n → Bool} (h : (find? p).isSome) :\n    ∃ i, p i",
      "sorry": false
@@ -7708,7 +7708,7 @@
     {
      "name": "Fin.eq_false_of_isNone_find?",
      "kind": "theorem",
-     "line": 301,
+     "line": 303,
      "doc": "",
      "statement": "theorem eq_false_of_isNone_find? {p : Fin n → Bool} (h : (find? p).isNone) : p i = false",
      "sorry": false
@@ -7716,7 +7716,7 @@
     {
      "name": "Fin.isSome_find?_of_eq_true",
      "kind": "theorem",
-     "line": 304,
+     "line": 306,
      "doc": "",
      "statement": "theorem isSome_find?_of_eq_true {p : Fin n → Bool} (h : p i) :\n    (find? p).isSome",
      "sorry": false
@@ -7724,7 +7724,7 @@
     {
      "name": "Fin.get_find?_eq_true",
      "kind": "theorem",
-     "line": 307,
+     "line": 309,
      "doc": "",
      "statement": "theorem get_find?_eq_true {p : Fin n → Bool} (h : (find? p).isSome) : p ((find? p).get h)",
      "sorry": false
@@ -7732,7 +7732,7 @@
     {
      "name": "Fin.get_find?_minimal",
      "kind": "theorem",
-     "line": 310,
+     "line": 312,
      "doc": "",
      "statement": "theorem get_find?_minimal {p : Fin n → Bool} (h : (find? p).isSome) :\n    ∀ j, j < (find? p).get h → p j = false",
      "sorry": false
@@ -7740,7 +7740,7 @@
     {
      "name": "Fin.bind_find?_isSome",
      "kind": "theorem",
-     "line": 314,
+     "line": 316,
      "doc": "",
      "statement": "theorem bind_find?_isSome {f : Fin n → Option α} :\n    (find? (fun i => (f i).isSome)).bind f = findSome? f",
      "sorry": false
@@ -7748,7 +7748,7 @@
     {
      "name": "Fin.find?_eq_find?_finRange",
      "kind": "theorem",
-     "line": 317,
+     "line": 319,
      "doc": "",
      "statement": "theorem find?_eq_find?_finRange {p : Fin n → Bool} : find? p = (List.finRange n).find? p",
      "sorry": false
@@ -7756,7 +7756,7 @@
     {
      "name": "Fin.exists_eq_true_iff_exists_minimal_eq_true",
      "kind": "theorem",
-     "line": 320,
+     "line": 322,
      "doc": "",
      "statement": "theorem exists_eq_true_iff_exists_minimal_eq_true (p : Fin n → Bool):\n    (∃ i, p i) ↔ ∃ i, p i ∧ ∀ j < i, p j = false",
      "sorry": false
@@ -7764,7 +7764,7 @@
     {
      "name": "Fin.exists_iff_exists_minimal",
      "kind": "theorem",
-     "line": 323,
+     "line": 325,
      "doc": "",
      "statement": "theorem exists_iff_exists_minimal (p : Fin n → Prop) [DecidablePred p] :\n    (∃ i, p i) ↔ ∃ i, p i ∧ ∀ j < i, ¬ p j",
      "sorry": false
@@ -7772,7 +7772,7 @@
     {
      "name": "Fin.find?_rev",
      "kind": "theorem",
-     "line": 326,
+     "line": 328,
      "doc": "",
      "statement": "theorem find?_rev {p : Fin n → Bool} : find? (p ·.rev) = (findRev? p).map rev",
      "sorry": false
@@ -7780,19 +7780,19 @@
     {
      "name": "Fin.map_rev_findRev?",
      "kind": "theorem",
-     "line": 329,
+     "line": 331,
      "doc": "",
      "statement": "theorem map_rev_findRev? {p : Fin n → Bool} : (findRev? (p ·.rev)).map rev = find? p",
      "sorry": false
     },
     {
-     "line": 332,
+     "line": 334,
      "note": "### findRev?"
     },
     {
      "name": "Fin.findRev?_zero",
      "kind": "theorem",
-     "line": 334,
+     "line": 336,
      "doc": "",
      "statement": "theorem findRev?_zero {p : Fin 0 → Bool} : findRev? p = none",
      "sorry": false
@@ -7800,7 +7800,7 @@
     {
      "name": "Fin.findRev?_succ",
      "kind": "theorem",
-     "line": 336,
+     "line": 338,
      "doc": "",
      "statement": "theorem findRev?_succ {p : Fin (n+1) → Bool} :\n    findRev? p = if p (last n) then some (last n)\n    else (findRev? fun i => p i.castSucc).map Fin.castSucc",
      "sorry": false
@@ -7808,7 +7808,7 @@
     {
      "name": "Fin.findRev?_one",
      "kind": "theorem",
-     "line": 342,
+     "line": 344,
      "doc": "",
      "statement": "theorem findRev?_one {p : Fin 1 → Bool} : findRev? p = if p 0 then some 0 else none",
      "sorry": false
@@ -7816,7 +7816,7 @@
     {
      "name": "Fin.findRev?_eq_some_iff",
      "kind": "theorem",
-     "line": 346,
+     "line": 348,
      "doc": "",
      "statement": "theorem findRev?_eq_some_iff {p : Fin n → Bool} :\n    findRev? p = some i ↔ p i ∧ ∀ j, i < j → p j = false",
      "sorry": false
@@ -7824,7 +7824,7 @@
     {
      "name": "Fin.findRev?_eq_none_iff",
      "kind": "theorem",
-     "line": 350,
+     "line": 352,
      "doc": "",
      "statement": "theorem findRev?_eq_none_iff {p : Fin n → Bool} : findRev? p = none ↔ ∀ i, p i = false",
      "sorry": false
@@ -7832,7 +7832,7 @@
     {
      "name": "Fin.isSome_findRev?_iff",
      "kind": "theorem",
-     "line": 352,
+     "line": 354,
      "doc": "",
      "statement": "theorem isSome_findRev?_iff {p : Fin n → Bool} :\n    (findRev? p).isSome ↔ ∃ i, p i",
      "sorry": false
@@ -7840,7 +7840,7 @@
     {
      "name": "Fin.isNone_findRev?_iff",
      "kind": "theorem",
-     "line": 355,
+     "line": 357,
      "doc": "",
      "statement": "theorem isNone_findRev?_iff {p : Fin n → Bool} : (findRev? p).isNone ↔ ∀ i, p i = false",
      "sorry": false
@@ -7848,7 +7848,7 @@
     {
      "name": "Fin.eq_true_of_findRev?_eq_some",
      "kind": "theorem",
-     "line": 357,
+     "line": 359,
      "doc": "",
      "statement": "theorem eq_true_of_findRev?_eq_some {p : Fin n → Bool} (h : findRev? p = some i) : p i",
      "sorry": false
@@ -7856,7 +7856,7 @@
     {
      "name": "Fin.eq_false_of_findRev?_eq_some_of_lt",
      "kind": "theorem",
-     "line": 360,
+     "line": 362,
      "doc": "",
      "statement": "theorem eq_false_of_findRev?_eq_some_of_lt {p : Fin n → Bool} (h : findRev? p = some i) :\n    ∀ j, i < j → p j = false",
      "sorry": false
@@ -7864,7 +7864,7 @@
     {
      "name": "Fin.eq_false_of_findRev?_eq_none",
      "kind": "theorem",
-     "line": 363,
+     "line": 365,
      "doc": "",
      "statement": "theorem eq_false_of_findRev?_eq_none {p : Fin n → Bool} (h : findRev? p = none) (i) :\n    p i = false",
      "sorry": false
@@ -7872,7 +7872,7 @@
     {
      "name": "Fin.exists_eq_true_of_isSome_findRev?",
      "kind": "theorem",
-     "line": 366,
+     "line": 368,
      "doc": "",
      "statement": "theorem exists_eq_true_of_isSome_findRev? {p : Fin n → Bool} (h : (findRev? p).isSome) :\n    ∃ i, p i",
      "sorry": false
@@ -7880,7 +7880,7 @@
     {
      "name": "Fin.eq_false_of_isNone_findRev?",
      "kind": "theorem",
-     "line": 369,
+     "line": 371,
      "doc": "",
      "statement": "theorem eq_false_of_isNone_findRev? {p : Fin n → Bool} (h : (findRev? p).isNone) : p i = false",
      "sorry": false
@@ -7888,7 +7888,7 @@
     {
      "name": "Fin.isSome_findRev?_of_eq_true",
      "kind": "theorem",
-     "line": 372,
+     "line": 374,
      "doc": "",
      "statement": "theorem isSome_findRev?_of_eq_true {p : Fin n → Bool} (h : p i) :\n    (findRev? p).isSome",
      "sorry": false
@@ -7896,7 +7896,7 @@
     {
      "name": "Fin.get_findRev?_eq_true",
      "kind": "theorem",
-     "line": 375,
+     "line": 377,
      "doc": "",
      "statement": "theorem get_findRev?_eq_true {p : Fin n → Bool} (h : (findRev? p).isSome) :\n    p ((findRev? p).get h)",
      "sorry": false
@@ -7904,7 +7904,7 @@
     {
      "name": "Fin.get_findRev?_maximal",
      "kind": "theorem",
-     "line": 378,
+     "line": 380,
      "doc": "",
      "statement": "theorem get_findRev?_maximal {p : Fin n → Bool} (h : (findRev? p).isSome) :\n    ∀ j, (findRev? p).get h < j → p j = false",
      "sorry": false
@@ -7912,7 +7912,7 @@
     {
      "name": "Fin.exists_eq_true_iff_exists_maximal_eq_true",
      "kind": "theorem",
-     "line": 382,
+     "line": 384,
      "doc": "",
      "statement": "theorem exists_eq_true_iff_exists_maximal_eq_true (p : Fin n → Bool):\n    (∃ i, p i) ↔ ∃ i, p i ∧ ∀ j , i < j → p j = false",
      "sorry": false
@@ -7920,7 +7920,7 @@
     {
      "name": "Fin.exists_iff_exists_maximal",
      "kind": "theorem",
-     "line": 385,
+     "line": 387,
      "doc": "",
      "statement": "theorem exists_iff_exists_maximal (p : Fin n → Prop) [DecidablePred p] :\n    (∃ i, p i) ↔ ∃ i, p i ∧ ∀ j, i < j → ¬ p j",
      "sorry": false
@@ -7928,7 +7928,7 @@
     {
      "name": "Fin.bind_findRev?_isSome",
      "kind": "theorem",
-     "line": 388,
+     "line": 390,
      "doc": "",
      "statement": "theorem bind_findRev?_isSome {f : Fin n → Option α} :\n    (findRev? (fun i => (f i).isSome)).bind f = findSomeRev? f",
      "sorry": false
@@ -7936,7 +7936,7 @@
     {
      "name": "Fin.findRev?_rev",
      "kind": "theorem",
-     "line": 391,
+     "line": 393,
      "doc": "",
      "statement": "theorem findRev?_rev {p : Fin n → Bool} : findRev? (p ·.rev) = (find? p).map rev",
      "sorry": false
@@ -7944,7 +7944,7 @@
     {
      "name": "Fin.map_rev_find?",
      "kind": "theorem",
-     "line": 394,
+     "line": 396,
      "doc": "",
      "statement": "theorem map_rev_find? {p : Fin n → Bool} : (find? (p ·.rev)).map rev = findRev? p",
      "sorry": false
@@ -7952,7 +7952,7 @@
     {
      "name": "Fin.find?_le_findRev?",
      "kind": "theorem",
-     "line": 397,
+     "line": 399,
      "doc": "",
      "statement": "theorem find?_le_findRev? {p : Fin n → Bool} : find? p ≤ findRev? p",
      "sorry": false
@@ -7960,19 +7960,19 @@
     {
      "name": "Fin.find?_eq_findRev?_iff",
      "kind": "theorem",
-     "line": 400,
+     "line": 402,
      "doc": "",
      "statement": "theorem find?_eq_findRev?_iff {p : Fin n → Bool} : find? p = findRev? p ↔\n    ∀ i j, p i = true → p j = true → i = j",
      "sorry": false
     },
     {
-     "line": 404,
+     "line": 406,
      "note": "### divNat / modNat / mkDivMod"
     },
     {
      "name": "Fin.coe_divNat",
      "kind": "theorem",
-     "line": 406,
+     "line": 408,
      "doc": "",
      "statement": "theorem coe_divNat (i : Fin (m * n)) : (i.divNat : Nat) = i / n",
      "sorry": false
@@ -7980,7 +7980,7 @@
     {
      "name": "Fin.coe_modNat",
      "kind": "theorem",
-     "line": 408,
+     "line": 410,
      "doc": "",
      "statement": "theorem coe_modNat (i : Fin (m * n)) : (i.modNat : Nat) = i % n",
      "sorry": false
@@ -7988,15 +7988,47 @@
     {
      "name": "Fin.coe_mkDivMod",
      "kind": "theorem",
-     "line": 410,
+     "line": 412,
      "doc": "",
-     "statement": "theorem coe_mkDivMod (i : Fin m) (j : Fin n) : (mkDivMod i j : Nat) = n * i + j",
+     "statement": "theorem coe_mkDivMod (i : Fin m) (j : Fin n) :\n    (mkDivMod i j : Nat) = i.val.mkDivMod j",
+     "sorry": false
+    },
+    {
+     "name": "Fin.ext_divNat_modNat",
+     "kind": "theorem",
+     "line": 415,
+     "doc": "",
+     "statement": "theorem ext_divNat_modNat {a b : Fin (m * n)} (h0 : a.divNat = b.divNat)\n    (h1 : a.modNat = b.modNat) : a = b",
+     "sorry": false
+    },
+    {
+     "name": "Fin.ext_divNat_modNat_iff",
+     "kind": "theorem",
+     "line": 419,
+     "doc": "",
+     "statement": "theorem ext_divNat_modNat_iff {a b : Fin (m * n)} :\n    a = b ↔ a.divNat = b.divNat ∧ a.modNat = b.modNat",
+     "sorry": false
+    },
+    {
+     "name": "Fin.lt_divNat_modNat_iff",
+     "kind": "theorem",
+     "line": 423,
+     "doc": "",
+     "statement": "theorem lt_divNat_modNat_iff {a b : Fin (m * n)} :\n    a < b ↔ a.divNat < b.divNat ∨ a.divNat = b.divNat ∧ a.modNat < b.modNat",
+     "sorry": false
+    },
+    {
+     "name": "Fin.le_divNat_modNat_iff",
+     "kind": "theorem",
+     "line": 427,
+     "doc": "",
+     "statement": "theorem le_divNat_modNat_iff {a b : Fin (m * n)} :\n    a ≤ b ↔ a.divNat < b.divNat ∨ a.divNat = b.divNat ∧ a.modNat ≤ b.modNat",
      "sorry": false
     },
     {
      "name": "Fin.divNat_mkDivMod",
      "kind": "theorem",
-     "line": 412,
+     "line": 431,
      "doc": "",
      "statement": "theorem divNat_mkDivMod (i : Fin m) (j : Fin n) : (mkDivMod i j).divNat = i",
      "sorry": false
@@ -8004,17 +8036,49 @@
     {
      "name": "Fin.modNat_mkDivMod",
      "kind": "theorem",
-     "line": 415,
+     "line": 434,
      "doc": "",
      "statement": "theorem modNat_mkDivMod (i : Fin m) (j : Fin n) : (mkDivMod i j).modNat = j",
      "sorry": false
     },
     {
-     "name": "Fin.divNat_mkDivMod_modNat",
+     "name": "Fin.mkDivMod_divNat_modNat",
      "kind": "theorem",
-     "line": 418,
+     "line": 437,
      "doc": "",
-     "statement": "theorem divNat_mkDivMod_modNat (k : Fin (m * n)) :\n    mkDivMod k.divNat k.modNat = k",
+     "statement": "theorem mkDivMod_divNat_modNat (k : Fin (m * n)) :\n    k.divNat.mkDivMod k.modNat = k",
+     "sorry": false
+    },
+    {
+     "name": "Fin.divNat_mkDivMod_modNat",
+     "kind": "alias",
+     "line": 441,
+     "doc": "",
+     "statement": "alias divNat_mkDivMod_modNat",
+     "sorry": false
+    },
+    {
+     "name": "Fin.mkDivMod_inj",
+     "kind": "theorem",
+     "line": 443,
+     "doc": "",
+     "statement": "theorem mkDivMod_inj {i₁ i₂ : Fin m} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ = mkDivMod i₂ j₂ ↔ i₁ = i₂ ∧ j₁ = j₂",
+     "sorry": false
+    },
+    {
+     "name": "Fin.mkDivMod_lt_mkDivMod_iff",
+     "kind": "theorem",
+     "line": 447,
+     "doc": "",
+     "statement": "theorem mkDivMod_lt_mkDivMod_iff {i₁ i₂ : Fin m} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ < mkDivMod i₂ j₂ ↔ i₁ < i₂ ∨ i₁ = i₂ ∧ j₁ < j₂",
+     "sorry": false
+    },
+    {
+     "name": "Fin.mkDivMod_le_mkDivMod_iff",
+     "kind": "theorem",
+     "line": 451,
+     "doc": "",
+     "statement": "theorem mkDivMod_le_mkDivMod_iff {i₁ i₂ : Fin m} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ ≤ mkDivMod i₂ j₂ ↔ i₁ < i₂ ∨ i₁ = i₂ ∧ j₁ ≤ j₂",
      "sorry": false
     }
    ]
@@ -14383,6 +14447,14 @@
      "doc": "Construct a natural number from a sequence of bits using little endian convention.",
      "statement": "def ofBits (f : Fin n → Bool) : Nat",
      "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod",
+     "kind": "def",
+     "line": 103,
+     "doc": "Compute the element of Nat with quotient `i : Nat` and remainder `j : Fin n` when\ndivided by `n`.",
+     "statement": "def mkDivMod (i : Nat) {n : Nat} (j : Fin n) : Nat",
+     "sorry": false
     }
    ]
   },
@@ -15254,13 +15326,185 @@
      "note": "### div/mod"
     },
     {
-     "line": 163,
+     "name": "Nat.div_le_div_of_lt",
+     "kind": "theorem",
+     "line": 161,
+     "doc": "",
+     "statement": "theorem div_le_div_of_lt {a b : Nat} (n : Nat) (h : a < b) : a / n ≤ b / n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.le_of_div_lt_div",
+     "kind": "theorem",
+     "line": 164,
+     "doc": "",
+     "statement": "theorem le_of_div_lt_div {n a b : Nat} (h : a / n < b / n) : a ≤ b",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mod_lt_mod_of_lt_of_div_eq",
+     "kind": "theorem",
+     "line": 167,
+     "doc": "",
+     "statement": "theorem mod_lt_mod_of_lt_of_div_eq {n a b : Nat} (h : a < b) (h0 : a / n = b / n) :\n    a % n < b % n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mod_le_mod_of_le_of_div_eq",
+     "kind": "theorem",
+     "line": 170,
+     "doc": "",
+     "statement": "theorem mod_le_mod_of_le_of_div_eq {n a b : Nat} (h : a ≤ b) (h0 : a / n = b / n) :\n    a % n ≤ b % n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.lt_of_div_eq_of_mod_lt",
+     "kind": "theorem",
+     "line": 173,
+     "doc": "",
+     "statement": "theorem lt_of_div_eq_of_mod_lt {n a b : Nat} (h0 : a / n = b / n) (h1 : a % n < b % n) : a < b",
+     "sorry": false
+    },
+    {
+     "name": "Nat.le_of_div_eq_of_mod_le",
+     "kind": "theorem",
+     "line": 176,
+     "doc": "",
+     "statement": "theorem le_of_div_eq_of_mod_le {n a b : Nat} (h0 : a / n = b / n) (h1 : a % n ≤ b % n) : a ≤ b",
+     "sorry": false
+    },
+    {
+     "name": "Nat.lt_div_mod_iff",
+     "kind": "theorem",
+     "line": 179,
+     "doc": "",
+     "statement": "theorem lt_div_mod_iff (n a b : Nat) :\n    a < b ↔ a / n < b / n ∨ a / n = b / n ∧ a % n < b % n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.le_div_mod_iff",
+     "kind": "theorem",
+     "line": 185,
+     "doc": "",
+     "statement": "theorem le_div_mod_iff (n a b : Nat) :\n    a ≤ b ↔ a / n < b / n ∨ a / n = b / n ∧ a % n ≤ b % n",
+     "sorry": false
+    },
+    {
+     "line": 191,
+     "note": "### mkDivMod"
+    },
+    {
+     "name": "Nat.mkDivMod_def",
+     "kind": "theorem",
+     "line": 193,
+     "doc": "",
+     "statement": "theorem mkDivMod_def (i : Nat) {n} (j : Fin n) : mkDivMod i j = n * i + j",
+     "sorry": false
+    },
+    {
+     "name": "Nat.div_mkDivMod",
+     "kind": "theorem",
+     "line": 195,
+     "doc": "",
+     "statement": "theorem div_mkDivMod (i : Nat) {n} (j : Fin n) :\n    mkDivMod i j / n = i",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mod_mkDivMod",
+     "kind": "theorem",
+     "line": 199,
+     "doc": "",
+     "statement": "theorem mod_mkDivMod (i : Nat) {n} (j : Fin n) :\n    mkDivMod i j % n = j",
+     "sorry": false
+    },
+    {
+     "name": "Nat.cast_mkDivMod",
+     "kind": "theorem",
+     "line": 203,
+     "doc": "",
+     "statement": "theorem cast_mkDivMod (i : Nat) {n : Nat} (j : Fin n) :\n    haveI : NeZero n := ⟨Nat.ne_zero_of_lt j.isLt⟩\n    (mkDivMod i j : Fin n) = j",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_div_add_mod",
+     "kind": "theorem",
+     "line": 207,
+     "doc": "",
+     "statement": "theorem mkDivMod_div_add_mod (k : Nat) {n} (j : Fin n) :\n    mkDivMod (k / n) j + k % n = k + j",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_div",
+     "kind": "theorem",
+     "line": 211,
+     "doc": "",
+     "statement": "theorem mkDivMod_div (k : Nat) {n} (j : Fin n) : mkDivMod (k / n) j = k + j - k % n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_div_cast",
+     "kind": "theorem",
+     "line": 215,
+     "doc": "",
+     "statement": "theorem mkDivMod_div_cast (k : Nat) {n : Nat} [NeZero n] :\n    mkDivMod (k / n) (k : Fin n) = k",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mul_le_mkDivMod",
+     "kind": "theorem",
+     "line": 218,
+     "doc": "",
+     "statement": "theorem mul_le_mkDivMod (i : Nat) {n} (j : Fin n) : n * i ≤ mkDivMod i j",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_lt_mul_succ",
+     "kind": "theorem",
+     "line": 220,
+     "doc": "",
+     "statement": "theorem mkDivMod_lt_mul_succ (i : Nat) {n} (j : Fin n) : mkDivMod i j < n * (i + 1)",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_lt_mul_of_lt",
+     "kind": "theorem",
+     "line": 223,
+     "doc": "",
+     "statement": "theorem mkDivMod_lt_mul_of_lt {i m : Nat} {n} (h : i < m) (j : Fin n) : mkDivMod i j < m * n",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_inj",
+     "kind": "theorem",
+     "line": 226,
+     "doc": "",
+     "statement": "theorem mkDivMod_inj {i₁ i₂ : Nat} {n} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ = mkDivMod i₂ j₂ ↔ i₁ = i₂ ∧ j₁ = j₂",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_lt_mkDivMod_iff",
+     "kind": "theorem",
+     "line": 230,
+     "doc": "",
+     "statement": "theorem mkDivMod_lt_mkDivMod_iff {i₁ i₂ : Nat} {n} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ < mkDivMod i₂ j₂ ↔ i₁ < i₂ ∨ i₁ = i₂ ∧ j₁ < j₂",
+     "sorry": false
+    },
+    {
+     "name": "Nat.mkDivMod_le_mkDivMod_iff",
+     "kind": "theorem",
+     "line": 234,
+     "doc": "",
+     "statement": "theorem mkDivMod_le_mkDivMod_iff {i₁ i₂ : Nat} {n} {j₁ j₂ : Fin n} :\n    mkDivMod i₁ j₁ ≤ mkDivMod i₂ j₂ ↔ i₁ < i₂ ∨ i₁ = i₂ ∧ j₁ ≤ j₂",
+     "sorry": false
+    },
+    {
+     "line": 238,
      "note": "### ofBits"
     },
     {
      "name": "Nat.ofBits_zero",
      "kind": "theorem",
-     "line": 165,
+     "line": 240,
      "doc": "",
      "statement": "theorem ofBits_zero (f : Fin 0 → Bool) : ofBits f = 0",
      "sorry": false
@@ -15268,7 +15512,7 @@
     {
      "name": "Nat.ofBits_succ",
      "kind": "theorem",
-     "line": 167,
+     "line": 242,
      "doc": "",
      "statement": "theorem ofBits_succ (f : Fin (n+1) → Bool) : ofBits f = 2 * ofBits (f ∘ Fin.succ) + (f 0).toNat",
      "sorry": false
@@ -15276,7 +15520,7 @@
     {
      "name": "Nat.ofBits_lt_two_pow",
      "kind": "theorem",
-     "line": 170,
+     "line": 245,
      "doc": "",
      "statement": "theorem ofBits_lt_two_pow (f : Fin n → Bool) : ofBits f < 2 ^ n",
      "sorry": false
@@ -15284,7 +15528,7 @@
     {
      "name": "Nat.testBit_ofBits_lt",
      "kind": "theorem",
-     "line": 180,
+     "line": 255,
      "doc": "",
      "statement": "theorem testBit_ofBits_lt (f : Fin n → Bool) (i : Nat) (h : i < n) :\n    (ofBits f).testBit i = f ⟨i, h⟩",
      "sorry": false
@@ -15292,7 +15536,7 @@
     {
      "name": "Nat.testBit_ofBits_ge",
      "kind": "theorem",
-     "line": 192,
+     "line": 267,
      "doc": "",
      "statement": "theorem testBit_ofBits_ge (f : Fin n → Bool) (i : Nat) (h : n ≤ i) :\n    (ofBits f).testBit i = false",
      "sorry": false
@@ -15300,7 +15544,7 @@
     {
      "name": "Nat.testBit_ofBits",
      "kind": "theorem",
-     "line": 199,
+     "line": 274,
      "doc": "",
      "statement": "theorem testBit_ofBits (f : Fin n → Bool) :\n    (ofBits f).testBit i = if h : i < n then f ⟨i, h⟩ else false",
      "sorry": false
@@ -15308,31 +15552,31 @@
     {
      "name": "Nat.ofBits_testBit",
      "kind": "theorem",
-     "line": 205,
+     "line": 280,
      "doc": "",
      "statement": "theorem ofBits_testBit (x n) : ofBits (fun i : Fin n => x.testBit i) = x % 2 ^ n",
      "sorry": false
     },
     {
-     "line": 208,
+     "line": 283,
      "note": "### toString"
     },
     {
      "name": "Nat.toString_append_toString",
      "kind": "theorem",
-     "line": 226,
+     "line": 301,
      "doc": "",
      "statement": "theorem toString_append_toString (a b : Nat) (ha : a ≠ 0) :\n    toString a ++ toString b = toString (a * 10 ^ (toString b).length + b)",
      "sorry": false
     },
     {
-     "line": 231,
+     "line": 306,
      "note": "### Misc"
     },
     {
      "name": "Nat.mul_add_lt_mul_of_lt_of_lt",
      "kind": "theorem",
-     "line": 233,
+     "line": 308,
      "doc": "",
      "statement": "theorem mul_add_lt_mul_of_lt_of_lt {m n x y : Nat} (hx : x < m) (hy : y < n) :\n    n * x + y < m * n",
      "sorry": false
@@ -15340,7 +15584,7 @@
     {
      "name": "Nat.add_mul_lt_mul_of_lt_of_lt",
      "kind": "theorem",
-     "line": 240,
+     "line": 311,
      "doc": "",
      "statement": "theorem add_mul_lt_mul_of_lt_of_lt {m n x y : Nat} (hx : x < m) (hy : y < n) :\n    x + m * y < m * n",
      "sorry": false
@@ -22792,6 +23036,136 @@
    ]
   },
   {
+   "module": "Batteries.Tactic.DoCommand",
+   "file": "Batteries/Tactic/DoCommand.lean",
+   "copyright": "Robin Arnez",
+   "authors": "Robin Arnez",
+   "title": "The `#do` command",
+   "doc": "The `#do` command is like `run_cmd` but allows using variables from previous uses of `#do`.\nFurthermore, `#do_meta` is like `#do` and shares its variable state while operating in `MetaM`.\nFinally, `#clear_do` can be used to remove all variables from the current do state.",
+   "items": [
+    {
+     "name": "Batteries.Tactic.DoCommand.MonadStateStack",
+     "kind": "structure",
+     "line": 28,
+     "doc": "The part of the `DoCommandExtensionState` used for monad state",
+     "statement": "structure MonadStateStack where\n  /-- The meta state used for `#do_meta` -/\n  metaState : Meta.State := {}\nderiving Inhabited",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.DoCommandExtensionState",
+     "kind": "structure",
+     "line": 34,
+     "doc": "The state for `#do`",
+     "statement": "structure DoCommandExtensionState where\n  /--\n  The current local context for `#do`.\n\n  Invariant: `lctx` does not contain metavariables or level parameters or non-dependent `ldecl`s.\n  -/\n  lctx : LocalContext := {}\n  /-- The local instances for `lctx` -/\n  localInstances : LocalInstances := #[]\n  /--\n  The values associated to free variables in `lctx`.\n\n  Invariant: every free variable in `lctx` has a corresponding value in `values`\n  -/\n  values : FVarIdMap NonScalar := {}\n  /-- See `Lean.Elab.Do.Context.mutVars` -/\n  mutVars : Array MutVar := #[]\n  /-- See `Lean.Elab.Do.Context.mutVarDefs` -/\n  mutVarDefs : Std.HashMap Name MutVar := {}\n  /-- Monad state for use in e.g. `#do_meta` -/\n  monadState : MonadStateStack := {}\nderiving Inhabited",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data",
+     "kind": "abbrev",
+     "line": 62,
+     "doc": "Implementation detail of `#do`",
+     "statement": "abbrev Data",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data.getValue",
+     "kind": "def",
+     "line": 65,
+     "doc": "Implementation detail of `#do`",
+     "statement": "unsafe def Data.getValue.{u} {α : Sort u} (vs : Data) (i : Nat) : α",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data.getValueLetImpl",
+     "kind": "def",
+     "line": 69,
+     "doc": "",
+     "statement": "unsafe def Data.getValueLetImpl.{u} {α : Sort u} (vs : Data) (i : Nat) (_v : α) : α",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data.getValueLet",
+     "kind": "abbrev",
+     "line": 74,
+     "doc": "Implementation detail of `#do`",
+     "statement": "unsafe abbrev Data.getValueLet.{u} {α : Sort u} (_vs : Data) (_i : Nat) (v : α) : α",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data.empty",
+     "kind": "def",
+     "line": 77,
+     "doc": "Implementation detail of `#do`",
+     "statement": "def Data.empty : Data",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.Data.push",
+     "kind": "def",
+     "line": 80,
+     "doc": "Implementation detail of `#do`",
+     "statement": "unsafe nonrec def Data.push.{u} {α : Sort u} (d : Data) (x : α) : Data",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.DoCommandExtensionState.eval",
+     "kind": "def",
+     "line": 86,
+     "doc": "Given `value : type` which may depend on free variables in `state.lctx`, evaluates it to a value\nof type `α` (assuming `type` is equivalent to `α`).",
+     "statement": "unsafe def DoCommandExtensionState.eval (state : DoCommandExtensionState)\n    (α : Type) (type : Expr) (value : Expr) (checkMeta := true)\n    (allowSorry := false) (alternative? : Option String := none) : MetaM α",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.ContinuationResult",
+     "kind": "structure",
+     "line": 160,
+     "doc": "Implementation detail of `#do`",
+     "statement": "structure ContinuationResult where\n  /-- All new free variables in the order they are stored in the resulting array -/\n  newFVars : Array FVarId\n  /-- The new state, with updated local context and mutable variables -/\n  newState : DoCommandExtensionState",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.elabDoCommandCore",
+     "kind": "def",
+     "line": 195,
+     "doc": "Monad-generic version of the `#do` command",
+     "statement": "def elabDoCommandCore (m : Type → Type)\n    (lift : ∀ {α}, m α → MonadStateStack → CommandElabM (α × MonadStateStack))\n    (mExpr : Expr) (doSeq : TSyntax ``Lean.Parser.Term.doSeq)\n    (allowSorry : Bool) (alternative? : Option String := none) :\n    CommandElabM Unit",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.elabDoCommand",
+     "kind": "def",
+     "line": 283,
+     "doc": "",
+     "statement": "def elabDoCommand : CommandElab",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.elabDoBangCommand",
+     "kind": "def",
+     "line": 289,
+     "doc": "",
+     "statement": "def elabDoBangCommand : CommandElab",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.elabDoMetaCommand",
+     "kind": "def",
+     "line": 321,
+     "doc": "",
+     "statement": "def elabDoMetaCommand : CommandElab",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.DoCommand.elabDoMetaBangCommand",
+     "kind": "def",
+     "line": 327,
+     "doc": "",
+     "statement": "def elabDoMetaBangCommand : CommandElab",
+     "sorry": false
+    }
+   ]
+  },
+  {
    "module": "Batteries.Tactic.Exact",
    "file": "Batteries/Tactic/Exact.lean",
    "copyright": "Mario Carneiro",
@@ -23815,6 +24189,24 @@
    ]
   },
   {
+   "module": "Batteries.Util.Eval",
+   "file": "Batteries/Util/Eval.lean",
+   "copyright": "Robin Arnez",
+   "authors": "Robin Arnez",
+   "title": "",
+   "doc": "",
+   "items": [
+    {
+     "name": "Lean.Meta.evalExprWithSorryCheck",
+     "kind": "def",
+     "line": 20,
+     "doc": "An alternative of `evalExpr` that also errors in the presence of `sorry` unless `allowSorry` is\ntrue. If there is an alternative command that does allow `sorry`s, you can specify it in\n`alternative?`.",
+     "statement": "unsafe def Lean.Meta.evalExprWithSorryCheck (α) (type value : Expr)\n    (safety := DefinitionSafety.safe) (checkMeta : Bool := true)\n    (allowSorry : Bool := false) (alternative? : Option String := none) : MetaM α",
+     "sorry": true
+    }
+   ]
+  },
+  {
    "module": "Batteries.Util.ExtendedBinder",
    "file": "Batteries/Util/ExtendedBinder.lean",
    "copyright": "Microsoft Corporation",
@@ -23822,6 +24214,40 @@
    "title": "",
    "doc": "Defines an extended binder syntax supporting `∀ ε > 0, ...` etc.",
    "items": []
+  },
+  {
+   "module": "Batteries.Util.Incremental",
+   "file": "Batteries/Util/Incremental.lean",
+   "copyright": "Robin Arnez",
+   "authors": "Robin Arnez",
+   "title": "A utility for simple incremental commands",
+   "doc": "",
+   "items": [
+    {
+     "name": "Batteries.Tactic.CommandElabResultSnapshot",
+     "kind": "structure",
+     "line": 21,
+     "doc": "A snapshot for the result of command elaboration",
+     "statement": "structure CommandElabResultSnapshot extends Language.Snapshot where\n  /-- The syntax that was being elaborated -/\n  stx : Syntax\n  /-- The state after command elaboration -/\n  state : Command.State\n  /-- The exception thrown during command elaboration, if any -/\n  error? : Option Exception\n  /-- Snapshot tasks produced by `logSnapshotTask` during command elaboration -/\n  moreSnaps : Array (Language.SnapshotTask Language.SnapshotTree)\nderiving Nonempty",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.SimpleIncrementalSnapshot",
+     "kind": "structure",
+     "line": 33,
+     "doc": "The snapshot type for `simpleIncrementalElab`",
+     "statement": "structure SimpleIncrementalSnapshot extends Language.Snapshot where\n  /-- The result for the previous execution of the command -/\n  result : Language.SnapshotTask (Option CommandElabResultSnapshot)\n  /-- The last result that didn't error because of missing syntax -/\n  lastNoSyntaxErrorResult? : Option CommandElabResultSnapshot\nderiving TypeName",
+     "sorry": false
+    },
+    {
+     "name": "Batteries.Tactic.simpleIncrementalElab",
+     "kind": "def",
+     "line": 69,
+     "doc": "Wraps `cmd` with simple incrementality handling that makes the command not re-run if only trailing\nwhitespace was changed or when a syntax error gets introduced and then removed again.\n\nTo make this work, `cmd` doesn't receive the trailing whitespace of the command and doesn't have\naccess to incrementality itself.\n\nTo make use of this, you have to write an explicit elaborator (i.e. a declaration with a\n`@[command_elab]`) and tag it with `@[incremental]` and then wrap the body in\n`simpleIncrementalElab`. Example:\n```\nsyntax (name := expensiveCmd) \"#expensive_command\" : command\n\n@[command_elab expensiveCmd, incremental]\ndef elabExpensiveCmd : CommandElab := simpleIncrementalElab fun stx => do\n  ...\n```",
+     "statement": "def simpleIncrementalElab (cmd : CommandElab) : CommandElab",
+     "sorry": false
+    }
+   ]
   },
   {
    "module": "Batteries.Util.LibraryNote",

@@ -8,7 +8,7 @@ proof: formalized
 
 # 101.39 Valuative criteria
 
-Section 101.39 of the Stacks Project, [Tag 0CL9](https://stacks.math.columbia.edu/tag/0CL9). 14 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.39 of the Stacks Project, [Tag 0CL9](https://stacks.math.columbia.edu/tag/0CL9). 14 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CLA, a definition
 
@@ -16,14 +16,14 @@ Section 101.39 of the Stacks Project, [Tag 0CL9](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.DottedArrow`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L41) (StacksFrontier): “dotted arrows”.
-- [`CategoryTheory.DottedArrow.Hom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L42) (StacksFrontier): “morphisms of dotted arrows”.
+- [`CategoryTheory.DottedArrow`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L74), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L41) (StacksFrontier): “dotted arrows”.
+- [`CategoryTheory.DottedArrow.Hom`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L42) (StacksFrontier): “morphisms of dotted arrows”.
 
 ## Tag 0CLC, a lemma
 
 [Tag 0CLC](https://stacks.math.columbia.edu/tag/0CLC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSetoidCategory_dottedArrow_of_isSeparated_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionDottedGroupoid.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionDottedGroupoid.lean#L319). The attribute's comment: “setoid”.
+**`AlgebraicGeometry.Stack.isSetoidCategory_dottedArrow_of_isSeparated_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionDottedGroupoid.lean, line 319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionDottedGroupoid.lean#L319). The attribute's comment: “setoid”.
 
 > **Stacks 0CLC, the setoid assertion.** If the relative diagonal `Δ_f` of a 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is separated in the sense of Stacks 04XB, then the
@@ -46,13 +46,13 @@ theorem isSetoidCategory_dottedArrow_of_isSeparated_relativeDiagonal (f : 𝒳 �
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.instGroupoidDottedArrow`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L169), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L43) (StacksFrontier): “groupoid”.
+- [`CategoryTheory.instGroupoidDottedArrow`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Defs.lean#L169), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/DottedArrows.lean, line 43](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/NonExercises/DottedArrows.lean#L43) (StacksFrontier): “groupoid”.
 
 ## Tag 0CLD, a lemma
 
 [Tag 0CLD](https://stacks.math.columbia.edu/tag/0CLD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.nonempty_dottedArrow_equivalence_of_forall_exists_whiskerLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L175). The attribute's comment: “1 of 2: independence of the witness”.
+**`AlgebraicGeometry.Stack.nonempty_dottedArrow_equivalence_of_forall_exists_whiskerLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L175). The attribute's comment: “1 of 2: independence of the witness”.
 
 > When the inertia `I_𝒴 ⟶ 𝒴` is proper, the category of
 > dotted arrows of a valuative diagram is independent, up to a noncanonical equivalence, of the
@@ -69,7 +69,7 @@ theorem nonempty_dottedArrow_equivalence_of_forall_exists_whiskerLeft
       CategoryTheory.DottedArrow D.x D.j f.hom D.y γ')
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_dottedArrow_iff_exists_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L191). The attribute's comment: “2 of 2: existence for some and hence every witness”.
+**`AlgebraicGeometry.Stack.nonempty_dottedArrow_iff_exists_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L191). The attribute's comment: “2 of 2: existence for some and hence every witness”.
 
 > When the inertia `I_𝒴 ⟶ 𝒴` is proper, a dotted arrow of a valuative diagram exists — for
 > one and hence for every witnessing 2-morphism — exactly when there is a diagonal 1-morphism
@@ -92,7 +92,7 @@ theorem nonempty_dottedArrow_iff_exists_diagonal
 
 [Tag 0CLE](https://stacks.math.columbia.edu/tag/0CLE) in the Stacks Project.
 
-**`CategoryTheory.DottedArrowBaseChange.dottedArrows_baseChange_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/NonExercises/DottedArrowsBaseChange.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/NonExercises/DottedArrowsBaseChange.lean#L306).
+**`CategoryTheory.DottedArrowBaseChange.dottedArrows_baseChange_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/NonExercises/DottedArrowsBaseChange.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/NonExercises/DottedArrowsBaseChange.lean#L306).
 
 > **Stacks 0CLE.** The category of dotted arrows is invariant under base change along a
 > $2$-cartesian square.
@@ -119,7 +119,7 @@ theorem dottedArrows_baseChange_equivalence
 
 [Tag 0CLF](https://stacks.math.columbia.edu/tag/0CLF) in the Stacks Project.
 
-**`CategoryTheory.DottedArrow.toWithFactorization_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L400).
+**`CategoryTheory.DottedArrow.toWithFactorization_isEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 400](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L400).
 
 > `toWithFactorization` is an equivalence of categories `𝒟 ≌ 𝒟''`.
 
@@ -129,7 +129,7 @@ instance toWithFactorization_isEquivalence {S T X Y Z : B} (x : S ⟶ X) (j : S 
     (toWithFactorization x j f g z γ).IsEquivalence
 ```
 
-**`CategoryTheory.DottedArrow.fiber_categoryIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L624).
+**`CategoryTheory.DottedArrow.fiber_categoryIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 624](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L624).
 
 > The fibre of `compose` over an object `d'` of `𝒟'` is isomorphic, as a category (a
 > `CategoryIso`, not merely an equivalence), to the category of dotted arrows of the upper solid
@@ -144,7 +144,7 @@ theorem fiber_categoryIso {S T X Y Z : B}
       (DottedArrow x j f d'.a d'.α))
 ```
 
-**`CategoryTheory.DottedArrow.compose_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L778).
+**`CategoryTheory.DottedArrow.compose_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DottedArrows/Composition.lean, line 778](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DottedArrows/Composition.lean#L778).
 
 > `compose : 𝒟'' ⥤ 𝒟'` is fibred in groupoids.
 
@@ -158,7 +158,7 @@ theorem compose_isFiberedInGroupoids {S T X Y Z : B} (x : S ⟶ X) (j : S ⟶ T)
 
 [Tag 0CLG](https://stacks.math.columbia.edu/tag/0CLG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ValuativeCriterion.Uniqueness`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L97).
+**`AlgebraicGeometry.Stack.ValuativeCriterion.Uniqueness`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L97).
 
 > A 1-morphism of algebraic stacks satisfies the *uniqueness part of the
 > valuative criterion* when, for every valuative diagram for it, the category of dotted arrows
@@ -174,7 +174,7 @@ abbrev Uniqueness
 
 [Tag 0CLH](https://stacks.math.columbia.edu/tag/0CLH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean#L197).
+**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean#L197).
 
 > **Stacks 0CLH.** A base change of a 1-morphism of algebraic stacks satisfying the uniqueness
 > part of the valuative criterion satisfies it as well.
@@ -194,7 +194,7 @@ theorem valuativeCriterionUniqueness_baseChange
 
 [Tag 0CLI](https://stacks.math.columbia.edu/tag/0CLI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L111).
+**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniqueness.lean#L111).
 
 > The composition of two 1-morphisms of algebraic stacks satisfying the
 > uniqueness part of the valuative criterion satisfies it as well.
@@ -212,7 +212,7 @@ theorem valuativeCriterionUniqueness_comp
 
 [Tag 0CLJ](https://stacks.math.columbia.edu/tag/0CLJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniquenessPoints.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniquenessPoints.lean#L522).
+**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniquenessPoints.lean, line 522](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionUniquenessPoints.lean#L522).
 
 > **Stacks 0CLJ.** For a 1-morphism of algebraic stacks representable by algebraic spaces, the
 > uniqueness part of the valuative criterion holds exactly when it holds for every base change to
@@ -246,7 +246,7 @@ theorem valuativeCriterionUniqueness_iff_baseChange
 
 [Tag 0CLK](https://stacks.math.columbia.edu/tag/0CLK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ValuativeCriterion.Existence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean#L419).
+**`AlgebraicGeometry.Stack.ValuativeCriterion.Existence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean#L419).
 
 > A 1-morphism of algebraic stacks satisfies the *existence part of the valuative criterion* when
 > every valuative square for it admits a dotted arrow after an extension of the fraction field and
@@ -260,7 +260,7 @@ abbrev Existence (f : 𝒳 ⟶ 𝒴) : Prop
 
 [Tag 0CLL](https://stacks.math.columbia.edu/tag/0CLL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionExistence_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean#L243).
+**`AlgebraicGeometry.Stack.valuativeCriterionExistence_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionBaseChange.lean#L243).
 
 > **Stacks 0CLL.** A base change of a 1-morphism of algebraic stacks satisfying the existence
 > part of the valuative criterion satisfies it as well.
@@ -280,7 +280,7 @@ theorem valuativeCriterionExistence_baseChange
 
 [Tag 0CLM](https://stacks.math.columbia.edu/tag/0CLM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean#L496).
+**`AlgebraicGeometry.Stack.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean, line 496](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterion.lean#L496).
 
 > The composition of two 1-morphisms of algebraic stacks satisfying the existence part of the
 > valuative criterion satisfies it as well.
@@ -297,7 +297,7 @@ theorem valuativeCriterionExistence_comp
 
 [Tag 0CLN](https://stacks.math.columbia.edu/tag/0CLN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionExistence_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionExistencePoints.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionExistencePoints.lean#L730).
+**`AlgebraicGeometry.Stack.valuativeCriterionExistence_iff_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionExistencePoints.lean, line 730](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionExistencePoints.lean#L730).
 
 > **Stacks 0CLN.** For a 1-morphism of algebraic stacks representable by algebraic spaces, the
 > existence part of the valuative criterion holds exactly when it holds for every base change to an
@@ -330,7 +330,7 @@ theorem valuativeCriterionExistence_iff_baseChange (B : BigFppfSite.{u}) (S : Sc
 
 [Tag 0CLP](https://stacks.math.columbia.edu/tag/0CLP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean#L135). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.Stack.valuativeCriterionUniqueness_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean#L135). The attribute's comment: “uniqueness”.
 
 > **Stacks 0CLP, the uniqueness part.** A closed immersion of algebraic stacks over `S`
 > satisfies the uniqueness part of the valuative criterion (**Stacks 0CLG**).
@@ -347,7 +347,7 @@ theorem valuativeCriterionUniqueness_of_isClosedImmersion (f : 𝒳 ⟶ 𝒴)
     ValuativeCriterion.Uniqueness B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.valuativeCriterionExistence_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean#L160). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Stack.valuativeCriterionExistence_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionClosedImmersion.lean#L160). The attribute's comment: “existence”.
 
 > **Stacks 0CLP, the existence part.** A closed immersion of algebraic stacks over `S` satisfies
 > the existence part of the valuative criterion (**Stacks 0CLK**).
@@ -373,4 +373,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.39, Tag 0CL9](https://stacks.math.columbia.edu/tag/0CL9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

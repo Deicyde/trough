@@ -7,12 +7,12 @@ proof: formalized
 
 # Univariate Algorithm Contexts
 
-`CompPoly.Univariate.Context`, in [CompPoly/Univariate/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Context`, in [CompPoly/Univariate/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean), by Valerii Huhnin.
 
 > Algorithm dictionaries for reusable univariate polynomial operations, including
 > canonical, NTT, and NTTFast-backed implementations.
 
-`CompPoly.CPolynomial.MulContext` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L30))
+`CompPoly.CPolynomial.MulContext` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L30))
 
 > Explicit multiplication backend for univariate polynomial algorithms.
 
@@ -24,7 +24,7 @@ structure MulContext (R : Type*) [Semiring R] [BEq R] [LawfulBEq R] where
   mul_eq_mul : ∀ p q, mul p q = p * q
 ```
 
-`CompPoly.CPolynomial.ModContext` (structure, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L37))
+`CompPoly.CPolynomial.ModContext` (structure, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L37))
 
 > Explicit remainder backend for algorithms that only need reduction modulo monic divisors.
 
@@ -36,7 +36,7 @@ structure ModContext (R : Type*) [Field R] [BEq R] [LawfulBEq R] where
   modByMonic_eq_modByMonic : ∀ p q, modByMonic p q = CPolynomial.modByMonic p q
 ```
 
-`CompPoly.CPolynomial.MulContext.naive` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L46))
+`CompPoly.CPolynomial.MulContext.naive` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L46))
 
 > The default multiplication context, backed by canonical `CPolynomial` multiplication.
 
@@ -44,7 +44,7 @@ structure ModContext (R : Type*) [Field R] [BEq R] [LawfulBEq R] where
 def naive [Semiring R] [BEq R] [LawfulBEq R] : MulContext R
 ```
 
-`CompPoly.CPolynomial.MulContext.ntt` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L56))
+`CompPoly.CPolynomial.MulContext.ntt` (definition, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L56))
 
 > NTT-backed multiplication context with canonical multiplication for unsupported lengths.
 >
@@ -58,7 +58,7 @@ def ntt [Field R] [BEq R] [LawfulBEq R]
     MulContext R
 ```
 
-`CompPoly.CPolynomial.MulContext.nttFast` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L69))
+`CompPoly.CPolynomial.MulContext.nttFast` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L69))
 
 > NTTFast-backed multiplication context with canonical multiplication for unsupported lengths.
 >
@@ -72,7 +72,7 @@ def nttFast [Field R] [BEq R] [LawfulBEq R]
     MulContext R
 ```
 
-`CompPoly.CPolynomial.ModContext.naive` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L81))
+`CompPoly.CPolynomial.ModContext.naive` (definition, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L81))
 
 > The default monic-remainder context, backed by `CPolynomial.modByMonic`.
 
@@ -80,7 +80,7 @@ def nttFast [Field R] [BEq R] [LawfulBEq R]
 def naive [Field R] [BEq R] [LawfulBEq R] : ModContext R
 ```
 
-`CompPoly.CPolynomial.ModContext.remainderOnly` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L86))
+`CompPoly.CPolynomial.ModContext.remainderOnly` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L86))
 
 > A remainder-only backend for monic remainders.
 
@@ -88,7 +88,7 @@ def naive [Field R] [BEq R] [LawfulBEq R] : ModContext R
 def remainderOnly [Field R] [BEq R] [LawfulBEq R] : ModContext R
 ```
 
-`CompPoly.CPolynomial.ModContext.reversal` (definition, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L91))
+`CompPoly.CPolynomial.ModContext.reversal` (definition, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L91))
 
 > A reversal-based monic-remainder backend parameterized by low-product multiplication.
 
@@ -97,7 +97,7 @@ def reversal [Field R] [BEq R] [LawfulBEq R]
     (M : Raw.MulLowContext R) : ModContext R
 ```
 
-`CompPoly.CPolynomial.ModContext.reversalNtt` (definition, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L97))
+`CompPoly.CPolynomial.ModContext.reversalNtt` (definition, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L97))
 
 > Monic remainders by reversal, using an NTT low-product backend.
 
@@ -108,7 +108,7 @@ def reversalNtt [Field R] [BEq R] [LawfulBEq R]
     ModContext R
 ```
 
-`CompPoly.CPolynomial.ModContext.reversalNttFast` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean#L104))
+`CompPoly.CPolynomial.ModContext.reversalNttFast` (definition, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean#L104))
 
 > Monic remainders by reversal, using an NTTFast low-product backend.
 
@@ -128,5 +128,5 @@ def reversalNttFast [Field R] [BEq R] [LawfulBEq R]
 
 ## Sources
 
-- [CompPoly/Univariate/Context.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Context.lean)
+- [CompPoly/Univariate/Context.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Context.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Univariate.Context.json)

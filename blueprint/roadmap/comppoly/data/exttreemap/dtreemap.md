@@ -7,7 +7,7 @@ proof: formalized
 
 # Auxiliary lemmas for `Std.DTreeMap`
 
-`CompPoly.Data.ExtTreeMap.DTreeMap`, in [CompPoly/Data/ExtTreeMap/DTreeMap.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean), by Markus Himmel.
+`CompPoly.Data.ExtTreeMap.DTreeMap`, in [CompPoly/Data/ExtTreeMap/DTreeMap.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean), by Markus Himmel.
 
 > Lemmas about `mergeWith` and `filter` on `Std.DTreeMap` (and its internal
 > implementation) that are used downstream by the multivariate polynomial
@@ -17,7 +17,7 @@ proof: formalized
 > [`Verified-zkEVM/ExtTreeMapLemmas`](https://github.com/Verified-zkEVM/ExtTreeMapLemmas)
 > (tag `v4.29.1`, commit `3fee686227f18dca03bb7fc42ca5a9275d6cfda6`).
 
-`Std.DTreeMap.Const.get?_foldl_no_touch` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L36))
+`Std.DTreeMap.Const.get?_foldl_no_touch` (theorem, [line 36](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L36))
 
 ```lean
 theorem Const.get?_foldl_no_touch
@@ -32,7 +32,7 @@ theorem Const.get?_foldl_no_touch
     ) t) k = Const.get? t k
 ```
 
-`Std.DTreeMap.Const.get?_mergeWith` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L68))
+`Std.DTreeMap.Const.get?_mergeWith` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L68))
 
 ```lean
 theorem Const.get?_mergeWith [TransCmp cmp] [LawfulEqCmp cmp]
@@ -45,7 +45,7 @@ theorem Const.get?_mergeWith [TransCmp cmp] [LawfulEqCmp cmp]
       | none, none => none
 ```
 
-`Std.DTreeMap.Internal.Impl.Const.get?_filter_with_getKey_pfilter` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L262))
+`Std.DTreeMap.Internal.Impl.Const.get?_filter_with_getKey_pfilter` (theorem, [line 262](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L262))
 
 ```lean
 theorem Internal.Impl.Const.get?_filter_with_getKey_pfilter [Ord α] [TransOrd α]
@@ -56,7 +56,7 @@ theorem Internal.Impl.Const.get?_filter_with_getKey_pfilter [Ord α] [TransOrd �
           (Option.isSome_of_eq_some h'))) v)
 ```
 
-`Std.DTreeMap.get?_filter_with_getKey_pfilter` (theorem, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L274))
+`Std.DTreeMap.get?_filter_with_getKey_pfilter` (theorem, [line 274](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean#L274))
 
 ```lean
 theorem get?_filter_with_getKey_pfilter {cmp : α → α → Ordering} [TransCmp cmp]
@@ -73,5 +73,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Data/ExtTreeMap/DTreeMap.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Data/ExtTreeMap/DTreeMap.lean)
+- [CompPoly/Data/ExtTreeMap/DTreeMap.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Data/ExtTreeMap/DTreeMap.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Data.ExtTreeMap.DTreeMap.json)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Matrices over a C⋆-algebra as a composite system
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.MatrixComposite`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean): 41 declarations, 19 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.MatrixComposite`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean): 41 declarations, 19 with a docstring.
 
 > Matrices over a C⋆-algebra as composite observables with an n-level ancilla, and positivity.
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.MatrixComposite`, [Phy
 
 ## A. The matrix of a composite observable
 
-**`CStarMatrix.kron`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L69).
+**`CStarMatrix.kron`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L69).
 
 > The matrix `(hᵢⱼ a)`: the observable `a` tensored with the scalar matrix `h`.
 
@@ -50,56 +50,56 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.MatrixComposite`, [Phy
 def kron (h : CStarMatrix n n ℂ) (a : A) : CStarMatrix n n A
 ```
 
-**`CStarMatrix.kron_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L73).
+**`CStarMatrix.kron_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L73).
 
 ```lean
 lemma kron_apply (h : CStarMatrix n n ℂ) (a : A) (i j : n) : kron h a i j = h i j • a
 ```
 
-**`CStarMatrix.kron_add_left`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L75).
+**`CStarMatrix.kron_add_left`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L75).
 
 ```lean
 lemma kron_add_left (h h' : CStarMatrix n n ℂ) (a : A) : kron (h + h') a = kron h a + kron h' a
 ```
 
-**`CStarMatrix.kron_add_right`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L78).
+**`CStarMatrix.kron_add_right`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L78).
 
 ```lean
 lemma kron_add_right (h : CStarMatrix n n ℂ) (a a' : A) : kron h (a + a') = kron h a + kron h a'
 ```
 
-**`CStarMatrix.kron_smul_left`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L81).
+**`CStarMatrix.kron_smul_left`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L81).
 
 ```lean
 lemma kron_smul_left (r : ℝ) (h : CStarMatrix n n ℂ) (a : A) : kron (r • h) a = r • kron h a
 ```
 
-**`CStarMatrix.kron_smul_right`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L84).
+**`CStarMatrix.kron_smul_right`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L84).
 
 ```lean
 lemma kron_smul_right (r : ℝ) (h : CStarMatrix n n ℂ) (a : A) : kron h (r • a) = r • kron h a
 ```
 
-**`CStarMatrix.kron_zero_left`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L87).
+**`CStarMatrix.kron_zero_left`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L87).
 
 ```lean
 lemma kron_zero_left (a : A) : kron (0 : CStarMatrix n n ℂ) a = 0
 ```
 
-**`CStarMatrix.kron_zero_right`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L90).
+**`CStarMatrix.kron_zero_right`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L90).
 
 ```lean
 lemma kron_zero_right (h : CStarMatrix n n ℂ) : kron h (0 : A) = 0
 ```
 
-**`CStarMatrix.map_add'`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L93).
+**`CStarMatrix.map_add'`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L93).
 
 ```lean
 lemma map_add' {B : Type*} [AddCommMonoid B] (M N : CStarMatrix n n A) (f : A →+ B) :
     (M + N).map f = M.map f + N.map f
 ```
 
-**`CStarMatrix.star_kron_mul_kron`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L100).
+**`CStarMatrix.star_kron_mul_kron`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L100).
 
 > `kron g b` has adjoint-square `kron (g⋆ g) (b⋆ b)`.
 
@@ -108,14 +108,14 @@ lemma star_kron_mul_kron (g : CStarMatrix n n ℂ) (b : A) :
     star (kron g b) * kron g b = kron (star g * g) (star b * b)
 ```
 
-**`CStarMatrix.sum_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L106).
+**`CStarMatrix.sum_apply`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L106).
 
 ```lean
 lemma sum_apply {ι : Type*} (s : Finset ι) (f : ι → CStarMatrix n n A) (i j : n) :
     (∑ k ∈ s, f k) i j = ∑ k ∈ s, f k i j
 ```
 
-**`CStarMatrix.toMatrix`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L115).
+**`CStarMatrix.toMatrix`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L115).
 
 > The matrix of a composite observable of the self-adjoint part of `A` with the `n × n`
 > Hermitian matrices.
@@ -125,28 +125,28 @@ noncomputable def toMatrix :
     Composite (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ)) →ₗ[ℝ] CStarMatrix n n A
 ```
 
-**`CStarMatrix.toMatrix_tmul`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L126).
+**`CStarMatrix.toMatrix_tmul`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L126).
 
 ```lean
 lemma toMatrix_tmul (a : selfAdjoint A) (h : selfAdjoint (CStarMatrix n n ℂ)) :
     toMatrix n A (Composite.tmul a h) = kron (h : CStarMatrix n n ℂ) (a : A)
 ```
 
-**`CStarMatrix.toMatrix_one_tmul_one`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L129).
+**`CStarMatrix.toMatrix_one_tmul_one`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L129).
 
 ```lean
 lemma toMatrix_one_tmul_one :
     toMatrix n A (Composite.tmul (1 : selfAdjoint A) (1 : selfAdjoint (CStarMatrix n n ℂ))) = 1
 ```
 
-**`CStarMatrix.isSelfAdjoint_kron`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L137).
+**`CStarMatrix.isSelfAdjoint_kron`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L137).
 
 ```lean
 lemma isSelfAdjoint_kron {h : CStarMatrix n n ℂ} {a : A} (hh : IsSelfAdjoint h)
     (ha : IsSelfAdjoint a) : IsSelfAdjoint (kron h a)
 ```
 
-**`CStarMatrix.isSelfAdjoint_toMatrix`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L143).
+**`CStarMatrix.isSelfAdjoint_toMatrix`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L143).
 
 ```lean
 lemma isSelfAdjoint_toMatrix (z : Composite (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ))) :
@@ -155,7 +155,7 @@ lemma isSelfAdjoint_toMatrix (z : Composite (selfAdjoint A) (selfAdjoint (CStarM
 
 ## B. Positive matrices
 
-**`CStarMatrix.kron_nonneg`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L154).
+**`CStarMatrix.kron_nonneg`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L154).
 
 > **Products of positive observables are positive matrices.** Both factors are sums of
 > adjoint-squares, and `kron` of adjoint-squares is an adjoint-square.
@@ -164,7 +164,7 @@ lemma isSelfAdjoint_toMatrix (z : Composite (selfAdjoint A) (selfAdjoint (CStarM
 lemma kron_nonneg {h : CStarMatrix n n ℂ} {a : A} (hh : 0 ≤ h) (ha : 0 ≤ a) : 0 ≤ kron h a
 ```
 
-**`CStarMatrix.matrixCone`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L170).
+**`CStarMatrix.matrixCone`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L170).
 
 > The positive matrices, as a cone of composite observables.
 
@@ -173,14 +173,14 @@ noncomputable def matrixCone :
     PointedCone ℝ (Composite (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ)))
 ```
 
-**`CStarMatrix.mem_matrixCone`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L181).
+**`CStarMatrix.mem_matrixCone`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L181).
 
 ```lean
 lemma mem_matrixCone {z : Composite (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ))} :
     z ∈ matrixCone n A ↔ 0 ≤ toMatrix n A z
 ```
 
-**`CStarMatrix.minTensorCone_le_matrixCone`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L185).
+**`CStarMatrix.minTensorCone_le_matrixCone`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L185).
 
 > The positive matrices contain every product of positive observables.
 
@@ -189,7 +189,7 @@ lemma minTensorCone_le_matrixCone :
     minTensorCone (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ)) ≤ matrixCone n A
 ```
 
-**`CStarMatrix.isArchimedeanTensorCone_matrixCone`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L193).
+**`CStarMatrix.isArchimedeanTensorCone_matrixCone`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L193).
 
 > **The positive matrices form an Archimedean cone.**
 
@@ -201,7 +201,7 @@ lemma isArchimedeanTensorCone_matrixCone :
 
 ## C. Every self-adjoint matrix is a composite observable
 
-**`CStarMatrix.unit`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L208).
+**`CStarMatrix.unit`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L208).
 
 > The matrix unit `eᵢⱼ`.
 
@@ -209,19 +209,19 @@ lemma isArchimedeanTensorCone_matrixCone :
 def unit (i j : n) : CStarMatrix n n ℂ
 ```
 
-**`CStarMatrix.unit_apply`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L211).
+**`CStarMatrix.unit_apply`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L211).
 
 ```lean
 lemma unit_apply (i j p q : n) : unit i j p q = if i = p ∧ j = q then 1 else 0
 ```
 
-**`CStarMatrix.star_unit`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L215).
+**`CStarMatrix.star_unit`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L215).
 
 ```lean
 lemma star_unit (i j : n) : star (unit i j) = unit j i
 ```
 
-**`CStarMatrix.symUnit`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L221).
+**`CStarMatrix.symUnit`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L221).
 
 > The Hermitian matrix `(eᵢⱼ + eⱼᵢ) / 2`.
 
@@ -229,7 +229,7 @@ lemma star_unit (i j : n) : star (unit i j) = unit j i
 noncomputable def symUnit (i j : n) : selfAdjoint (CStarMatrix n n ℂ)
 ```
 
-**`CStarMatrix.asymUnit`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L227).
+**`CStarMatrix.asymUnit`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L227).
 
 > The Hermitian matrix `i (eᵢⱼ - eⱼᵢ) / 2`.
 
@@ -237,7 +237,7 @@ noncomputable def symUnit (i j : n) : selfAdjoint (CStarMatrix n n ℂ)
 noncomputable def asymUnit (i j : n) : selfAdjoint (CStarMatrix n n ℂ)
 ```
 
-**`CStarMatrix.entry`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L234).
+**`CStarMatrix.entry`**, a def, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L234).
 
 > The entry of a matrix, as a function of the matrix.
 
@@ -245,7 +245,7 @@ noncomputable def asymUnit (i j : n) : selfAdjoint (CStarMatrix n n ℂ)
 def entry (M : CStarMatrix n n A) (i j : n) : A
 ```
 
-**`CStarMatrix.ofMatrixSA`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L237).
+**`CStarMatrix.ofMatrixSA`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L237).
 
 > The composite observable whose matrix is `M`.
 
@@ -254,7 +254,7 @@ noncomputable def ofMatrixSA (M : CStarMatrix n n A) :
     Composite (selfAdjoint A) (selfAdjoint (CStarMatrix n n ℂ))
 ```
 
-**`CStarMatrix.kron_symUnit_apply`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L243).
+**`CStarMatrix.kron_symUnit_apply`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L243).
 
 ```lean
 lemma kron_symUnit_apply (i j p q : n) (a : A) :
@@ -262,7 +262,7 @@ lemma kron_symUnit_apply (i j p q : n) (a : A) :
       (2 : ℝ)⁻¹ • ((if i = p ∧ j = q then a else 0) + (if j = p ∧ i = q then a else 0))
 ```
 
-**`CStarMatrix.kron_asymUnit_apply`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L252).
+**`CStarMatrix.kron_asymUnit_apply`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L252).
 
 ```lean
 lemma kron_asymUnit_apply (i j p q : n) (a : A) :
@@ -270,7 +270,7 @@ lemma kron_asymUnit_apply (i j p q : n) (a : A) :
       (Complex.I / 2) • ((if i = p ∧ j = q then a else 0) - (if j = p ∧ i = q then a else 0))
 ```
 
-**`CStarMatrix.toMatrix_ofMatrixSA`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L260).
+**`CStarMatrix.toMatrix_ofMatrixSA`**, a lemma, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L260).
 
 ```lean
 lemma toMatrix_ofMatrixSA (M : CStarMatrix n n A) :
@@ -279,7 +279,7 @@ lemma toMatrix_ofMatrixSA (M : CStarMatrix n n A) :
         kron (asymUnit i j : CStarMatrix n n ℂ) (imaginaryPart (entry M i j) : A))
 ```
 
-**`CStarMatrix.toMatrix_ofMatrixSA_apply`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L270).
+**`CStarMatrix.toMatrix_ofMatrixSA_apply`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L270).
 
 ```lean
 lemma toMatrix_ofMatrixSA_apply (M : CStarMatrix n n A) (p q : n) :
@@ -288,7 +288,7 @@ lemma toMatrix_ofMatrixSA_apply (M : CStarMatrix n n A) (p q : n) :
         (Complex.I / 2) • ((imaginaryPart (entry M p q) : A) - imaginaryPart (entry M q p))
 ```
 
-**`CStarMatrix.exists_toMatrix_eq`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L280).
+**`CStarMatrix.exists_toMatrix_eq`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L280).
 
 > **Every self-adjoint matrix over `A` is a composite observable.**
 
@@ -299,7 +299,7 @@ lemma exists_toMatrix_eq {M : CStarMatrix n n A} (hM : IsSelfAdjoint M) :
 
 ## D. Commutative algebras
 
-**`CStarMatrix.characterFunctional`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L298).
+**`CStarMatrix.characterFunctional`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L298).
 
 > A character of `C`, as a positive functional on its observables.
 
@@ -307,14 +307,14 @@ lemma exists_toMatrix_eq {M : CStarMatrix n n A} (hM : IsSelfAdjoint M) :
 noncomputable def characterFunctional (χ : WeakDual.characterSpace ℂ C) : selfAdjoint C →ₚ[ℝ] ℝ
 ```
 
-**`CStarMatrix.coe_characterFunctional`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L301).
+**`CStarMatrix.coe_characterFunctional`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L301).
 
 ```lean
 lemma coe_characterFunctional (χ : WeakDual.characterSpace ℂ C) (x : selfAdjoint C) :
     (characterFunctional χ x : ℂ) = χ (x : C)
 ```
 
-**`CStarMatrix.coe_lslice_characterFunctional`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L306).
+**`CStarMatrix.coe_lslice_characterFunctional`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L306).
 
 > Measuring the first factor with a character is applying the character entrywise.
 
@@ -325,7 +325,7 @@ lemma coe_lslice_characterFunctional (χ : WeakDual.characterSpace ℂ C)
       CStarMatrix n n ℂ) = (toMatrix n C z).map χ
 ```
 
-**`CStarMatrix.mem_maxTensorCone_of_nonneg`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L324).
+**`CStarMatrix.mem_maxTensorCone_of_nonneg`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L324).
 
 > **For commutative `C`, positive matrices are in the maximal cone.** Measuring the ancilla with a
 > positive functional leaves an observable of `C` on which every character is nonnegative, because
@@ -339,7 +339,7 @@ lemma mem_maxTensorCone_of_nonneg {z : Composite (selfAdjoint C) (selfAdjoint (C
 
 ## E. Applying a map entrywise
 
-**`CStarMatrix.toMatrix_map`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L348).
+**`CStarMatrix.toMatrix_map`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L348).
 
 > Applying a positive unital map to the first factor of a composite observable is applying it
 > entrywise to its matrix.
@@ -354,7 +354,7 @@ lemma toMatrix_map (f : A →ₚ₁[ℂ] B)
 
 ## F. Channels out of commutative algebras
 
-**`ProbabilisticTheory.QuantumChannel.map_nonneg_of_commutative`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L383).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumChannel.map_nonneg_of_commutative`**, a lemma, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L383).
 
 > Entrywise, a positive unital map out of a commutative C⋆-algebra keeps positive matrices
 > positive: the input is classical, so the map is completely positive.
@@ -364,7 +364,7 @@ lemma map_nonneg_of_commutative (f : C →ₚ₁[ℂ] B) {k : ℕ} {M : CStarMat
     (hM : 0 ≤ M) : 0 ≤ M.map f
 ```
 
-**`ProbabilisticTheory.QuantumChannel.ofCommutative`**, a def, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L399).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumChannel.ofCommutative`**, a def, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L399).
 
 > **Stinespring's theorem.** A positive unital map out of a commutative C⋆-algebra is a quantum
 > channel: it is automatically completely positive.
@@ -373,7 +373,7 @@ lemma map_nonneg_of_commutative (f : C →ₚ₁[ℂ] B) {k : ℕ} {M : CStarMat
 noncomputable def ofCommutative (f : C →ₚ₁[ℂ] B) : QuantumChannel C B
 ```
 
-**`ProbabilisticTheory.QuantumChannel.ofCommutative_apply`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L405).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumChannel.ofCommutative_apply`**, a lemma, [line 405](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean#L405).
 
 ```lean
 lemma ofCommutative_apply (f : C →ₚ₁[ℂ] B) (x : C) : ofCommutative f x = f x
@@ -391,4 +391,4 @@ lemma ofCommutative_apply (f : C →ₚ₁[ℂ] B) (x : C) : ofCommutative f x =
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean)

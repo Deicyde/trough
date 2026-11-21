@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.84 Cohomology of torsion modules on curves
 
-Section 59.84 of the Stacks Project, [Tag 0GJB](https://stacks.math.columbia.edu/tag/0GJB). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.84 of the Stacks Project, [Tag 0GJB](https://stacks.math.columbia.edu/tag/0GJB). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GJC, a lemma
 
 [Tag 0GJC](https://stacks.math.columbia.edu/tag/0GJC) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_constantSheaf_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean#L103). The attribute's comment: “part (1): n prime to char(k)”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_constantSheaf_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean#L103). The attribute's comment: “part (1): n prime to char(k)”.
 
 > **Stacks Project, Tag 0GJC, part (1).** Let `Λ` be a Noetherian ring, `M` a finite
 > `Λ`-module annihilated by an integer `n > 0`, `k` an algebraically closed field and `X` a
@@ -40,7 +40,7 @@ theorem module_finite_etaleCohomology_constantSheaf_of_coprime
       ((constantSheaf X.smallEtaleTopology (ModuleCat.{max (u + 1) r} Λ)).obj M))
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_constantSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean#L126). The attribute's comment: “part (2): X proper over k”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_constantSheaf_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveConstantCoefficientsFinite.lean#L126). The attribute's comment: “part (2): X proper over k”.
 
 > **Stacks Project, Tag 0GJC, part (2).** Let `Λ` be a Noetherian ring, `M` a finite
 > `Λ`-module annihilated by an integer `n > 0`, `k` an algebraically closed field and `X` a
@@ -65,7 +65,7 @@ theorem module_finite_etaleCohomology_constantSheaf_of_isProper
       ((constantSheaf X.smallEtaleTopology (ModuleCat.{max (u + 1) r} Λ)).obj M))
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.finite_etaleCohomology_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveTorsionStatementsHold.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveTorsionStatementsHold.lean#L62). The attribute's comment: “both parts: n prime to char(k), or X proper”.
+**`Stacks.EtaleCohomology.TorsionModules.finite_etaleCohomology_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveTorsionStatementsHold.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/CurveTorsionStatementsHold.lean#L62). The attribute's comment: “both parts: n prime to char(k), or X proper”.
 
 > **Stacks Project, Tag 0GJC.** Let `Λ` be a Noetherian ring, `M` a finite `Λ`-module
 > annihilated by an integer `n > 0`, `k` an algebraically closed field and `X` a separated scheme of
@@ -96,7 +96,7 @@ theorem finite_etaleCohomology_constantSheaf
 
 [Tag 0GJD](https://stacks.math.columbia.edu/tag/0GJD) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean#L180). The attribute's comment: “stated for an arbitrary ring Λ and an arbitrary finite morphism f of the big étale site, for sheaves of Λ-modules on the small étale sites of Tag 021B; the source's further hypotheses (Λ Noetherian, k algebraically closed, X and Y separated of finite type over k of dimension at most one) are unused by its proof and dropped”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_pushforward_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FinitePushforwardAcyclic.lean#L180). The attribute's comment: “stated for an arbitrary ring Λ and an arbitrary finite morphism f of the big étale site, for sheaves of Λ-modules on the small étale sites of Tag 021B; the source's further hypotheses (Λ Noetherian, k algebraically closed, X and Y separated of finite type over k of dimension at most one) are unused by its proof and dropped”.
 
 > **Stacks Project, Tag 0GJD.** Let `Λ` be a ring, let `f : X ⟶ Y` be a morphism of a big étale
 > site whose underlying morphism of schemes is finite, and let `ℱ` be a sheaf of `Λ`-modules on the
@@ -125,7 +125,7 @@ theorem module_finite_cohomology_pushforward_of_isFinite [IsFinite (B.inclusion.
 
 [Tag 0GJE](https://stacks.math.columbia.edu/tag/0GJE) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_iff_extensionByZero_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/RestrictToDenseOpenCurve.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/RestrictToDenseOpenCurve.lean#L132).
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_iff_extensionByZero_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/RestrictToDenseOpenCurve.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/RestrictToDenseOpenCurve.lean#L132).
 
 > **Stacks Project, Tag 0GJE.** Let `Λ` be a Noetherian ring, `k` an algebraically closed
 > field, `X` a separated scheme of finite type over `k` of dimension at most one, `ℱ` a
@@ -161,7 +161,7 @@ theorem module_finite_cohomology_iff_extensionByZero_of_dense
 
 [Tag 0GJF](https://stacks.math.columbia.edu/tag/0GJF) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean#L85). The attribute's comment: “part (1): n prime to char(k)”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean#L85). The attribute's comment: “part (1): n prime to char(k)”.
 
 > **Stacks Project, Tag 0GJF, part (1).** Let `Λ` be a Noetherian ring, let `M` be a finite
 > `Λ`-module annihilated by an integer `n > 0`, let `k` be an algebraically closed field, let `X`
@@ -188,7 +188,7 @@ theorem module_finite_cohomology_extensionByZero_of_coprime
         ((constantSheaf U.smallEtaleTopology (ModuleCat.{max (u + 1) r} Λ)).obj M)))
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean#L113). The attribute's comment: “part (2): X proper over k”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/FiniteCohomologyUnconditional.lean#L113). The attribute's comment: “part (2): X proper over k”.
 
 > **Stacks Project, Tag 0GJF, part (2).** Let `Λ` be a Noetherian ring, let `M` be a finite
 > `Λ`-module annihilated by an integer `n > 0`, let `k` be an algebraically closed field, let `X`
@@ -217,7 +217,7 @@ theorem module_finite_cohomology_extensionByZero_of_isProper
 
 [Tag 0GJG](https://stacks.math.columbia.edu/tag/0GJG) in the Stacks Project.
 
-**`Stacks.Cohomology.module_finite_cohomology_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FiniteCohomologyOfShortExact.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FiniteCohomologyOfShortExact.lean#L52).
+**`Stacks.Cohomology.module_finite_cohomology_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FiniteCohomologyOfShortExact.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/FiniteCohomologyOfShortExact.lean#L52).
 
 > **Stacks Project, Tag 0GJG.** In a short exact sequence of coefficient sheaves,
 > the middle sheaf has finite cohomology in degree `q` if both outer sheaves do.
@@ -241,7 +241,7 @@ public theorem module_finite_cohomology_of_shortExact
 
 [Tag 0GJH](https://stacks.math.columbia.edu/tag/0GJH) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean#L300). The attribute's comment: “part (1): ℓ prime to char(k)”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_of_coprime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean#L300). The attribute's comment: “part (1): ℓ prime to char(k)”.
 
 > **Stacks Project, Tag 0GJH, part (1).** Let `Λ` be a Noetherian ring, let `k` be an
 > algebraically closed field, let `X` be a separated scheme of finite type over `k` of dimension at
@@ -271,7 +271,7 @@ theorem module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_
       ((etaleModuleExtensionByZero.{u, r} Λ j).obj G))
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean#L325). The attribute's comment: “part (2): X proper over k”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModulesCurves/LocallyConstantCoefficients/FiniteCohomologyExtensionByZero.lean#L325). The attribute's comment: “part (2): X proper over k”.
 
 > **Stacks Project, Tag 0GJH, part (2).** Let `Λ` be a Noetherian ring, let `k` be an
 > algebraically closed field, let `X` be a proper scheme over `k` of dimension at most one (proper
@@ -301,7 +301,7 @@ theorem module_finite_cohomology_extensionByZero_of_isFiniteTypeLocallyConstant_
 
 [Tag 0GJI](https://stacks.math.columbia.edu/tag/0GJI) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L585). The attribute's comment: “part (1): F torsion prime to char(k)”. References: SGA 5 VI (3.1), “partial”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 585](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L585). The attribute's comment: “part (1): F torsion prime to char(k)”. References: SGA 5 VI (3.1), “partial”.
 
 > **Stacks Project, Tag 0GJI, part (1) (Tag 0GJJ).** Let `Λ` be a Noetherian ring, `k` an
 > algebraically closed field, `X` a separated scheme of finite type over `k` of dimension at most
@@ -323,7 +323,7 @@ theorem module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion
       (((Sheaf.Γ X.obj.smallEtaleTopology (ModuleCat.{max (u + 1) r} Λ)).rightDerived q).obj F)
 ```
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L603). The attribute's comment: “part (2): X proper”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 603](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L603). The attribute's comment: “part (2): X proper”.
 
 > **Stacks Project, Tag 0GJI, part (2) (Tag 0GJK).** Let `Λ` be a Noetherian ring, `k` an
 > algebraically closed field, `X` a proper scheme over `k` of dimension at most one, and `F` a
@@ -345,7 +345,7 @@ theorem module_finite_etaleCohomology_of_isProper [IsProper π]
 
 [Tag 0GJJ](https://stacks.math.columbia.edu/tag/0GJJ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L585). References: SGA 5 VI (3.1), “partial”.
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 585](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L585). References: SGA 5 VI (3.1), “partial”.
 
 > **Stacks Project, Tag 0GJI, part (1) (Tag 0GJJ).** Let `Λ` be a Noetherian ring, `k` an
 > algebraically closed field, `X` a separated scheme of finite type over `k` of dimension at most
@@ -371,7 +371,7 @@ theorem module_finite_etaleCohomology_of_isPrimeToCharacteristicTorsion
 
 [Tag 0GJK](https://stacks.math.columbia.edu/tag/0GJK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L603).
+**`Stacks.EtaleCohomology.TorsionModules.module_finite_etaleCohomology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean, line 603](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionModules/ConstructibleCurveCohomology.lean#L603).
 
 > **Stacks Project, Tag 0GJI, part (2) (Tag 0GJK).** Let `Λ` be a Noetherian ring, `k` an
 > algebraically closed field, `X` a proper scheme over `k` of dimension at most one, and `F` a
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.84, Tag 0GJB](https://stacks.math.columbia.edu/tag/0GJB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

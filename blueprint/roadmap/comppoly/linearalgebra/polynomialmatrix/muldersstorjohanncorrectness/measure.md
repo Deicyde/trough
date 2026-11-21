@@ -7,23 +7,23 @@ proof: formalized
 
 # Mulders-Storjohann Correctness Termination Measure Helpers
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure`, in [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean), by Valerii Huhnin.
 
 > Measure-decrease and fuel-bound lemmas for Mulders-Storjohann reduction.
 
-`CompPoly.PolynomialMatrix.shiftedRowMeasure` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L24))
+`CompPoly.PolynomialMatrix.shiftedRowMeasure` (definition, [line 24](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L24))
 
 ```lean
 def shiftedRowMeasure (row : PolynomialRow F) (shift : Array Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.shiftedMatrixMeasure` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L29))
+`CompPoly.PolynomialMatrix.shiftedMatrixMeasure` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L29))
 
 ```lean
 def shiftedMatrixMeasure (M : PolynomialMatrix F) (shift : Array Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_shiftedRowMeasure_lt` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L34))
+`CompPoly.PolynomialMatrix.cancelShiftedLeadingTerm_shiftedRowMeasure_lt` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L34))
 
 ```lean
 theorem cancelShiftedLeadingTerm_shiftedRowMeasure_lt
@@ -38,7 +38,7 @@ theorem cancelShiftedLeadingTerm_shiftedRowMeasure_lt
       shiftedRowMeasure target shift
 ```
 
-`CompPoly.PolynomialMatrix.foldRange_add_eq_of_pointwise` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L113))
+`CompPoly.PolynomialMatrix.foldRange_add_eq_of_pointwise` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L113))
 
 ```lean
 theorem foldRange_add_eq_of_pointwise
@@ -48,7 +48,7 @@ theorem foldRange_add_eq_of_pointwise
       (List.range n).foldl (fun acc k ↦ acc + g k) 0
 ```
 
-`CompPoly.PolynomialMatrix.foldRange_add_lt_of_pointwise_lt` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L126))
+`CompPoly.PolynomialMatrix.foldRange_add_lt_of_pointwise_lt` (theorem, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L126))
 
 ```lean
 theorem foldRange_add_lt_of_pointwise_lt
@@ -60,7 +60,7 @@ theorem foldRange_add_lt_of_pointwise_lt
       (List.range n).foldl (fun acc k ↦ acc + g k) 0
 ```
 
-`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_replaceRow_lt` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L161))
+`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_replaceRow_lt` (theorem, [line 161](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L161))
 
 ```lean
 theorem shiftedMatrixMeasure_replaceRow_lt
@@ -72,7 +72,7 @@ theorem shiftedMatrixMeasure_replaceRow_lt
       shiftedMatrixMeasure M shift
 ```
 
-`CompPoly.PolynomialMatrix.muldersStorjohannStep_shiftedMatrixMeasure_lt` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L184))
+`CompPoly.PolynomialMatrix.muldersStorjohannStep_shiftedMatrixMeasure_lt` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L184))
 
 ```lean
 theorem muldersStorjohannStep_shiftedMatrixMeasure_lt
@@ -83,7 +83,7 @@ theorem muldersStorjohannStep_shiftedMatrixMeasure_lt
       shiftedMatrixMeasure M shift
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeStep?` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L236))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeStep?` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L236))
 
 ```lean
 def matrixShiftedDegreeStep?
@@ -91,14 +91,14 @@ def matrixShiftedDegreeStep?
     (acc : Option Nat) (i : Nat) : Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpec?` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L243))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpec?` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L243))
 
 ```lean
 def matrixShiftedDegreeSpec? (M : PolynomialMatrix F) (shift : Array Nat) :
     Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeStep?_eq` (theorem, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L250))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeStep?_eq` (theorem, [line 250](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L250))
 
 ```lean
 theorem matrixShiftedDegreeStep?_eq
@@ -110,7 +110,7 @@ theorem matrixShiftedDegreeStep?_eq
       | some d => maxOption acc d)
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegree?_eq_spec` (theorem, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L260))
+`CompPoly.PolynomialMatrix.matrixShiftedDegree?_eq_spec` (theorem, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L260))
 
 ```lean
 theorem matrixShiftedDegree?_eq_spec
@@ -118,7 +118,7 @@ theorem matrixShiftedDegree?_eq_spec
     matrixShiftedDegree? M shift = matrixShiftedDegreeSpec? M shift
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_acc_le` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L268))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_acc_le` (theorem, [line 268](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L268))
 
 ```lean
 theorem matrixShiftedDegreeSpecFold_acc_le
@@ -129,7 +129,7 @@ theorem matrixShiftedDegreeSpecFold_acc_le
     a ≤ D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_row_le` (theorem, [line 303](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L303))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_row_le` (theorem, [line 303](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L303))
 
 ```lean
 theorem matrixShiftedDegreeSpecFold_row_le
@@ -141,7 +141,7 @@ theorem matrixShiftedDegreeSpecFold_row_le
     rowDeg ≤ D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpec?_row_le` (theorem, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L341))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpec?_row_le` (theorem, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L341))
 
 ```lean
 theorem matrixShiftedDegreeSpec?_row_le
@@ -152,7 +152,7 @@ theorem matrixShiftedDegreeSpec?_row_le
     rowDeg ≤ D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegree?_row_le` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L352))
+`CompPoly.PolynomialMatrix.matrixShiftedDegree?_row_le` (theorem, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L352))
 
 ```lean
 theorem matrixShiftedDegree?_row_le
@@ -163,7 +163,7 @@ theorem matrixShiftedDegree?_row_le
     rowDeg ≤ D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_some_of_acc_some` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L362))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_some_of_acc_some` (theorem, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L362))
 
 ```lean
 theorem matrixShiftedDegreeSpecFold_some_of_acc_some
@@ -173,7 +173,7 @@ theorem matrixShiftedDegreeSpecFold_some_of_acc_some
     ∃ D, xs.foldl (matrixShiftedDegreeStep? M shift) acc = some D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_exists_some_of_row` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L392))
+`CompPoly.PolynomialMatrix.matrixShiftedDegreeSpecFold_exists_some_of_row` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L392))
 
 ```lean
 theorem matrixShiftedDegreeSpecFold_exists_some_of_row
@@ -184,7 +184,7 @@ theorem matrixShiftedDegreeSpecFold_exists_some_of_row
     ∃ D, xs.foldl (matrixShiftedDegreeStep? M shift) none = some D
 ```
 
-`CompPoly.PolynomialMatrix.matrixShiftedDegree?_row_le_getD` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L423))
+`CompPoly.PolynomialMatrix.matrixShiftedDegree?_row_le_getD` (theorem, [line 423](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L423))
 
 ```lean
 theorem matrixShiftedDegree?_row_le_getD
@@ -194,7 +194,7 @@ theorem matrixShiftedDegree?_row_le_getD
     rowDeg ≤ (matrixShiftedDegree? M shift).getD 0
 ```
 
-`CompPoly.PolynomialMatrix.shiftedRowMeasure_le_of_degree_bound` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L441))
+`CompPoly.PolynomialMatrix.shiftedRowMeasure_le_of_degree_bound` (theorem, [line 441](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L441))
 
 ```lean
 theorem shiftedRowMeasure_le_of_degree_bound
@@ -203,7 +203,7 @@ theorem shiftedRowMeasure_le_of_degree_bound
     shiftedRowMeasure row shift ≤ (d + 1) * (row.size + 1)
 ```
 
-`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_range_le_of_degree_bound` (theorem, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L460))
+`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_range_le_of_degree_bound` (theorem, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L460))
 
 ```lean
 theorem shiftedMatrixMeasure_range_le_of_degree_bound
@@ -217,7 +217,7 @@ theorem shiftedMatrixMeasure_range_le_of_degree_bound
         0 ≤ n * ((d + 1) * (MatrixWidth M + 1))
 ```
 
-`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_le_of_degree_bound` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L492))
+`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_le_of_degree_bound` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L492))
 
 ```lean
 theorem shiftedMatrixMeasure_le_of_degree_bound
@@ -229,7 +229,7 @@ theorem shiftedMatrixMeasure_le_of_degree_bound
       M.size * ((d + 1) * (MatrixWidth M + 1))
 ```
 
-`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_lt_muldersStorjohannFuel` (theorem, [line 503](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L503))
+`CompPoly.PolynomialMatrix.shiftedMatrixMeasure_lt_muldersStorjohannFuel` (theorem, [line 503](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean#L503))
 
 ```lean
 theorem shiftedMatrixMeasure_lt_muldersStorjohannFuel
@@ -250,5 +250,5 @@ theorem shiftedMatrixMeasure_lt_muldersStorjohannFuel
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/MuldersStorjohannCorrectness/Measure.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.MuldersStorjohannCorrectness.Measure.json)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Statistics of a linear functional on a bilinear algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Statistics`, [PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean): 10 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Statistics`, [PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean): 10 declarations, 7 with a docstring.
 
 > Second moments, covariance, variance and centering for a linear functional on a bilinear algebra.
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Statistics`, [PhyslibAlpha/
 
 ## A. Second moments and covariance
 
-**`LinearMap.secondMomentForm`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L64).
+**`LinearMap.secondMomentForm`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L64).
 
 > The second-moment bilinear form associated to a linear functional:
 > `secondMomentForm omega a b = omega (a * b)`.
@@ -52,14 +52,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.Algebra.Statistics`, [PhyslibAlpha/
 def secondMomentForm (omega : E →ₗ[ℝ] ℝ) : LinearMap.BilinForm ℝ E
 ```
 
-**`LinearMap.secondMomentForm_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L79).
+**`LinearMap.secondMomentForm_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L79).
 
 ```lean
 lemma secondMomentForm_apply (omega : E →ₗ[ℝ] ℝ) (a b : E) :
     secondMomentForm omega a b = omega (a * b)
 ```
 
-**`LinearMap.covarianceForm`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L84).
+**`LinearMap.covarianceForm`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L84).
 
 > The covariance bilinear form associated to a linear functional:
 > `covarianceForm omega a b = omega (a * b) - omega a * omega b`.
@@ -68,14 +68,14 @@ lemma secondMomentForm_apply (omega : E →ₗ[ℝ] ℝ) (a b : E) :
 def covarianceForm (omega : E →ₗ[ℝ] ℝ) : LinearMap.BilinForm ℝ E
 ```
 
-**`LinearMap.covarianceForm_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L108).
+**`LinearMap.covarianceForm_apply`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L108).
 
 ```lean
 lemma covarianceForm_apply (omega : E →ₗ[ℝ] ℝ) (a b : E) :
     covarianceForm omega a b = omega (a * b) - omega a * omega b
 ```
 
-**`LinearMap.covarianceForm_isSymm`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L112).
+**`LinearMap.covarianceForm_isSymm`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L112).
 
 > The covariance form is symmetric when the multiplication is commutative.
 
@@ -84,7 +84,7 @@ lemma covarianceForm_isSymm (omega : E →ₗ[ℝ] ℝ) (hcomm : ∀ a b : E, a 
     (covarianceForm omega).IsSymm
 ```
 
-**`LinearMap.variance`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L118).
+**`LinearMap.variance`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L118).
 
 > The variance associated to a linear functional is the diagonal of its covariance form.
 
@@ -92,7 +92,7 @@ lemma covarianceForm_isSymm (omega : E →ₗ[ℝ] ℝ) (hcomm : ∀ a b : E, a 
 def variance (omega : E →ₗ[ℝ] ℝ) (a : E) : ℝ
 ```
 
-**`LinearMap.covarianceForm_self`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L120).
+**`LinearMap.covarianceForm_self`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L120).
 
 ```lean
 lemma covarianceForm_self (omega : E →ₗ[ℝ] ℝ) (a : E) :
@@ -101,7 +101,7 @@ lemma covarianceForm_self (omega : E →ₗ[ℝ] ℝ) (a : E) :
 
 ## B. Centering a normalized functional
 
-**`LinearMap.centered`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L128).
+**`LinearMap.centered`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L128).
 
 > Center `a` at the value assigned by `omega`: `a - omega(a) • 1`.
 
@@ -109,7 +109,7 @@ lemma covarianceForm_self (omega : E →ₗ[ℝ] ℝ) (a : E) :
 def centered (omega : E →ₗ[ℝ] ℝ) (a : E) : E
 ```
 
-**`LinearMap.apply_centered`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L133).
+**`LinearMap.apply_centered`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L133).
 
 > A normalized linear functional sends every centered element to zero.
 
@@ -118,7 +118,7 @@ lemma apply_centered (omega : E →ₗ[ℝ] ℝ) (homega : omega 1 = 1) (a : E) 
     omega (centered omega a) = 0
 ```
 
-**`LinearMap.apply_centered_mul_centered`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L138).
+**`LinearMap.apply_centered_mul_centered`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean#L138).
 
 > For a normalized functional, covariance is its value on the product of centered elements.
 
@@ -134,4 +134,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean)

@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CompPoly",
  "repo": "Verified-zkEVM/CompPoly",
- "rev": "afb9b1363984a70f10e24bd597f6ff40ebc8afbb",
+ "rev": "c72a765272497b4c52201be11be47af5718c7488",
  "module": "CompPoly.Univariate.Roots.LasVegas.Correctness.Odd",
  "file": "CompPoly/Univariate/Roots/LasVegas/Correctness/Odd.lean",
  "public": [

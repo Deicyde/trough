@@ -1,6 +1,6 @@
 # Mathematics
 
-The folder [Physlib/Mathematics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics): 11 folders below it, a page each, 60 modules in all.
+The folder [Physlib/Mathematics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics): 11 folders below it, a page each, 64 modules in all.
 
 - [Calculus](calculus/README.md)
 - [Distribution](distribution/README.md)

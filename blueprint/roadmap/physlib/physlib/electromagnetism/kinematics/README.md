@@ -1,8 +1,8 @@
 # Kinematics
 
-The folder [Physlib/Electromagnetism/Kinematics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics): 8 modules, an article each, in path order.
+The folder [Physlib/Electromagnetism/Kinematics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics): 8 modules, an article each, in path order.
 
-The repository's API map for this folder, *Electromagnetic Potential* ([Physlib/Electromagnetism/Kinematics/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Electromagnetic Potential* ([Physlib/Electromagnetism/Kinematics/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Kinematics/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 

@@ -8,7 +8,7 @@ proof: formalized
 
 # The QED Lagrangian
 
-The module `PhyslibAlpha.Particles.QED.Lagrangian`, [PhyslibAlpha/Particles/QED/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.QED.Lagrangian`, [PhyslibAlpha/Particles/QED/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Particles.QED.Lagrangian`, [PhyslibAlpha/Particles/QED/
 
 ## A. The Dirac kinetic terms and the mass term
 
-**`QED.JetAlgebra.diracKineticTerm`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L65).
+**`QED.JetAlgebra.diracKineticTerm`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L65).
 
 > The Dirac kinetic term `i ψ̄ γ^μ D_μ ψ = i ψ†_α (γ⁰ γ^μ)_{αβ} (D_μ ψ)_β`
 > of the electron.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.QED.Lagrangian`, [PhyslibAlpha/Particles/QED/
 noncomputable def diracKineticTerm (e : ℝ) : JetAlgebra
 ```
 
-**`QED.JetAlgebra.diracKineticTermBar`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L71).
+**`QED.JetAlgebra.diracKineticTermBar`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L71).
 
 > The conjugate Dirac kinetic term
 > `-i (D_μ ψ̄) γ⁰ γ^μ ψ = -i (D_μ ψ̄)_α (γ⁰ γ^μ)_{αβ} ψ_β`; the hermitian form
@@ -60,7 +60,7 @@ noncomputable def diracKineticTerm (e : ℝ) : JetAlgebra
 noncomputable def diracKineticTermBar (e : ℝ) : JetAlgebra
 ```
 
-**`QED.JetAlgebra.electronMassTerm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L78).
+**`QED.JetAlgebra.electronMassTerm`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L78).
 
 > The Dirac mass term `ψ̄ ψ = ψ†_α (γ⁰)_{αβ} ψ_β` of the electron.  This is
 > the dimension-three term available because the electron is a Dirac fermion:
@@ -71,7 +71,7 @@ noncomputable def diracKineticTermBar (e : ℝ) : JetAlgebra
 noncomputable def electronMassTerm : JetAlgebra
 ```
 
-**`QED.JetAlgebra.diracCurrent`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L86).
+**`QED.JetAlgebra.diracCurrent`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L86).
 
 > The Dirac current `J^μ = ψ̄ γ^μ ψ = ψ†_α (γ⁰ γ^μ)_{αβ} ψ_β` of the
 > electron: the Noether current of the `U(1)_em` phase symmetry.  Its coupling
@@ -94,7 +94,7 @@ noncomputable def diracCurrent (μ : Fin 1 ⊕ Fin 3) : JetAlgebra
 > `PhyslibAlpha.Particles.QED.CurrentCoupling` proves the Noether identity that the
 > divergence of the Dirac current is a combination of them.
 
-**`QED.JetAlgebra.diracEquation`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L110).
+**`QED.JetAlgebra.diracEquation`**, a def, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L110).
 
 > The Dirac-equation element `γ⁰ (i γ^μ D_μ - m) ψ`, row `α`: its vanishing
 > is the interacting Dirac equation.
@@ -103,7 +103,7 @@ noncomputable def diracCurrent (μ : Fin 1 ⊕ Fin 3) : JetAlgebra
 noncomputable def diracEquation (e m : ℝ) (α : Fin 2 ⊕ Fin 2) : JetAlgebra
 ```
 
-**`QED.JetAlgebra.diracAdjEquation`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L116).
+**`QED.JetAlgebra.diracAdjEquation`**, a def, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L116).
 
 > The adjoint Dirac-equation element `i (D_μ ψ̄) γ⁰ γ^μ + m ψ̄ γ⁰`,
 > column `β`: its vanishing is the interacting adjoint Dirac equation.
@@ -114,7 +114,7 @@ noncomputable def diracAdjEquation (e m : ℝ) (β : Fin 2 ⊕ Fin 2) : JetAlgeb
 
 > …
 
-**`QED.JetAlgebra.qedMaxwellEquation`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L131).
+**`QED.JetAlgebra.qedMaxwellEquation`**, a def, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L131).
 
 > The QED Maxwell-equation element `∂_μ F^{μν} - e J^ν`: its vanishing is
 > the inhomogeneous Maxwell equation sourced by the Dirac current.
@@ -123,7 +123,7 @@ noncomputable def diracAdjEquation (e m : ℝ) (β : Fin 2 ⊕ Fin 2) : JetAlgeb
 noncomputable def qedMaxwellEquation (e : ℝ) (ν : Fin 1 ⊕ Fin 3) : JetAlgebra
 ```
 
-**`QED.JetAlgebra.lagrangian`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean#L141).
+**`QED.JetAlgebra.lagrangian`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean#L141).
 
 > The QED Lagrangian
 > `L = - 1/4 F_{μν} F^{μν} + i ψ̄ γ^μ D_μ ψ - m ψ̄ ψ`
@@ -142,4 +142,4 @@ noncomputable def lagrangian (e m : ℝ) : JetAlgebra
 
 ## Sources
 
-- [PhyslibAlpha/Particles/QED/Lagrangian.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED/Lagrangian.lean)
+- [PhyslibAlpha/Particles/QED/Lagrangian.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED/Lagrangian.lean)

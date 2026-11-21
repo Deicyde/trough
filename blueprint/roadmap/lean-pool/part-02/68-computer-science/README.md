@@ -1,8 +1,8 @@
 # Computer science
 
-The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer science: 22 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer science: 25 articles, one per card.
 
-## [2-Coloring Cycles in One Round to Quartic-over-logarithmic lower…](part-01/README.md)
+## [2-Coloring Cycles in One Round to Pumping Lemma for Context-Free…](part-01/README.md)
 
 - [2-Coloring Cycles in One Round](part-01/2-coloring-1-round.md)
 - [The Aaronson–Ambainis influence conjecture](part-01/aaronson-ambainis.md)
@@ -20,12 +20,15 @@ The Lean Pool projects whose card's first MSC2020 code is in class 68, Computer 
 - [The Johnson–Lindenstrauss Lemma and Quantized JL](part-01/johnson-lindenstrauss-lean.md)
 - [Matrix multiplication exponent at most 9/4 over every field](part-01/matrix-multiplication-all-fields.md)
 - [MRiscX](part-01/mriscx.md)
+- [Parikh's theorem and a certified semilinear grammar compiler](part-01/parikh.md)
+- [Polynomial lower bounds for high-dimensional Steiner spanners](part-01/high-dimensional-steiner-spanners.md)
 - [Polynomial-factor hardness of the closest vector problem](part-01/gap-cvp.md)
 - [Pumping Lemma for Context-Free Grammars](part-01/pumping-cfg.md)
-- [Pure Nock semantics, trace certificates, and polynomial fingerprints](part-01/pure-nock.md)
-- [Quartic-over-logarithmic lower bound for rational permanent formulas](part-01/permanent-formula-lower-bound.md)
 
-## [Sharp list-scheduling and… to Sundog certificates](part-02/README.md)
+## [Pure Nock semantics, trace… to Verified worst-case…](part-02/README.md)
 
+- [Pure Nock semantics, trace certificates, and polynomial fingerprints](part-02/pure-nock.md)
+- [Quartic-over-logarithmic lower bound for rational permanent formulas](part-02/permanent-formula-lower-bound.md)
 - [Sharp list-scheduling and longest-processing-time bounds](part-02/graham-lpt.md)
 - [Sundog certificates](part-02/sundogcert.md)
+- [Verified worst-case constant-step order maintenance](part-02/order-maintenance.md)

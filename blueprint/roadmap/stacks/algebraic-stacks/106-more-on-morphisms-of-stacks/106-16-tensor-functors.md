@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.16 Tensor functors
 
-Section 106.16 of the Stacks Project, [Tag 0GRI](https://stacks.math.columbia.edu/tag/0GRI). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.16 of the Stacks Project, [Tag 0GRI](https://stacks.math.columbia.edu/tag/0GRI). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GRJ, a lemma
 
 [Tag 0GRJ](https://stacks.math.columbia.edu/tag/0GRJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.existsUnique_tensorExtension_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctorExtensionNoetherian.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctorExtensionNoetherian.lean#L57).
+**`AlgebraicGeometry.Stack.existsUnique_tensorExtension_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctorExtensionNoetherian.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctorExtensionNoetherian.lean#L57).
 
 > **Stacks 0GRJ.** Let `𝒳` and `𝒴` be Noetherian algebraic stacks.  Any right exact tensor
 > functor `F' : Coh(𝒪_𝒳) ⟶ Coh(𝒪_𝒴)` — additive, preserving finite colimits, and a functor of
@@ -67,7 +67,7 @@ theorem existsUnique_tensorExtension_coherent
 
 [Tag 0GRK](https://stacks.math.columbia.edu/tag/0GRK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_ringHom_tensorFunctor_comp_quasicoherentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/TensorFunctorAffineDiagonal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/TensorFunctorAffineDiagonal.lean#L146).
+**`AlgebraicGeometry.Stack.exists_ringHom_tensorFunctor_comp_quasicoherentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/TensorFunctorAffineDiagonal.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/TensorFunctorAffineDiagonal.lean#L146).
 
 > **Stacks 0GRK.**  Let `𝒳` be an algebraic stack with affine diagonal, `R` a ring and
 > `F : QCoh(𝒪_𝒳) ⥤ Mod_R` a right exact tensor functor (additive, preserving finite colimits, lax
@@ -111,7 +111,7 @@ theorem exists_ringHom_tensorFunctor_comp_quasicoherentPushforward
 
 [Tag 0GRL](https://stacks.math.columbia.edu/tag/0GRL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_affineTensorAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/AffineTensorAlgebraUniversallyInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/AffineTensorAlgebraUniversallyInjective.lean#L60).
+**`AlgebraicGeometry.Stack.universallyInjective_affineTensorAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/AffineTensorAlgebraUniversallyInjective.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/TensorFunctors/AffineTensorAlgebraUniversallyInjective.lean#L60).
 
 > **Stacks 0GRL.**  Let `𝒳` be a Noetherian algebraic stack with affine diagonal, `R` a ring and
 > `F : QCoh(𝒪_𝒳) ⥤ Mod_R` a right exact tensor functor (additive, preserving finite colimits,
@@ -145,7 +145,7 @@ theorem universallyInjective_affineTensorAlgebra
 
 [Tag 0GRM](https://stacks.math.columbia.edu/tag/0GRM) in the Stacks Project.
 
-**`Algebra.faithfullyFlat_of_flat_selfTensor_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/NonExercises/FaithfullyFlatSelfBaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/NonExercises/FaithfullyFlatSelfBaseChange.lean#L41).
+**`Algebra.faithfullyFlat_of_flat_selfTensor_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/NonExercises/FaithfullyFlatSelfBaseChange.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/NonExercises/FaithfullyFlatSelfBaseChange.lean#L41).
 
 > A universally injective ring map whose two self-base-change coprojections are flat is
 > faithfully flat.
@@ -163,7 +163,7 @@ theorem faithfullyFlat_of_flat_selfTensor_of_universallyInjective
 
 [Tag 0GRN](https://stacks.math.columbia.edu/tag/0GRN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_tensorPushforwardMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean, line 1028](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean#L1028). The attribute's comment: “corrected (one leg affine): for a : 𝒴 ⟶ 𝒳 affine, quasi-compact, quasi-separated and flat and b : 𝒵 ⟶ 𝒳 representable, quasi-compact and quasi-separated, the canonical map a\_\{QCoh,*}O\_𝒴 ⊗ b\_\{QCoh,*}O\_𝒵 ⟶ f\_\{QCoh,*}O\_\{𝒴 ×\_𝒳 𝒵} is an isomorphism. Added relative to the source: a affine (as printed the tag is false, not\_forall\_nonempty\_tensorPushforwardUnits\_iso: two disjoint punctured planes, where H¹(V,O) ≠ 0 and Γ(V,O) is not flat over the base, so H⁰ of the derived tensor product is not the tensor product). Affineness makes a\_*O be Γ(V,O) with V affine and flat over the base, so the last step is flat base change of H⁰. Dropped: flatness of b (not needed)”. References: SGA 3 VIB (11.1), “more general”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_tensorPushforwardMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean#L1049). The attribute's comment: “corrected (one leg affine): for a : 𝒴 ⟶ 𝒳 affine, quasi-compact, quasi-separated and flat and b : 𝒵 ⟶ 𝒳 representable, quasi-compact and quasi-separated, the canonical map a\_\{QCoh,*}O\_𝒴 ⊗ b\_\{QCoh,*}O\_𝒵 ⟶ f\_\{QCoh,*}O\_\{𝒴 ×\_𝒳 𝒵} is an isomorphism. Added relative to the source: a affine (as printed the tag is false, not\_forall\_nonempty\_tensorPushforwardUnits\_iso: two disjoint punctured planes, where H¹(V,O) ≠ 0 and Γ(V,O) is not flat over the base, so H⁰ of the derived tensor product is not the tensor product). Affineness makes a\_*O be Γ(V,O) with V affine and flat over the base, so the last step is flat base change of H⁰. Dropped: flatness of b (not needed)”. References: SGA 3 VIB (11.1), “more general”.
 
 > **Stacks 0GRN, corrected: one leg affine.** Let `a : 𝒴 ⟶ 𝒳` be an affine (Stacks 0CHQ),
 > quasi-compact, quasi-separated and flat 1-morphism of algebraic stacks and `b : 𝒵 ⟶ 𝒳` one which
@@ -193,7 +193,7 @@ theorem isIso_tensorPushforwardMap (ha : AlgebraicStacks.IsAffineHom B S hS a)
     IsIso (tensorPushforwardMap a b)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.nonempty_iso_tensorPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean, line 1091](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean#L1091). The attribute's comment: “corrected (one leg affine), the asserted isomorphism a\_\{QCoh,*}O\_𝒴 ⊗ b\_\{QCoh,*}O\_𝒵 ≅ f\_\{QCoh,*}O\_\{𝒴 ×\_𝒳 𝒵}, for a affine, quasi-compact, quasi-separated and flat and b representable, quasi-compact and quasi-separated; see isIso\_tensorPushforwardMap for the added hypothesis (a affine) and why it is needed”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.nonempty_iso_tensorPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean, line 1114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardAffineLeg.lean#L1114). The attribute's comment: “corrected (one leg affine), the asserted isomorphism a\_\{QCoh,*}O\_𝒴 ⊗ b\_\{QCoh,*}O\_𝒵 ≅ f\_\{QCoh,*}O\_\{𝒴 ×\_𝒳 𝒵}, for a affine, quasi-compact, quasi-separated and flat and b representable, quasi-compact and quasi-separated; see isIso\_tensorPushforwardMap for the added hypothesis (a affine) and why it is needed”.
 
 > **Stacks 0GRN, corrected (one leg affine), the asserted isomorphism**
 > `a_{QCoh,*}𝒪_𝒴 ⊗ b_{QCoh,*}𝒪_𝒵 ≅ f_{QCoh,*}𝒪_{𝒴 ×_𝒳 𝒵}`, under the hypotheses of
@@ -212,7 +212,7 @@ theorem nonempty_iso_tensorPushforward (ha : AlgebraicStacks.IsAffineHom B S hS 
         ((twoFibreProductSquareAlgebraicStacks B S hS a b).fst ≫ a)).obj (𝟙_ _))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.not_forall_nonempty_tensorPushforwardUnits_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardStackCounterexample.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardStackCounterexample.lean#L604). The attribute's comment: “as printed it is false: a counterexample at X = Spec A, A = k[x,y,z,w]/(xz,xw,yz,yw), with a, b the open immersions of the two punctured planes D(z) ∪ D(w) and D(x) ∪ D(y); the 2-fibre product is empty so f\_\{QCoh,*}O = 0, while a\_\{QCoh,*}O ⊗ b\_\{QCoh,*}O ≠ 0 since Γ(V,O) ⊗\_A Γ(W,O) = k (H¹(V,O) ≠ 0 and Γ(V,O) is not A-flat)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.not_forall_nonempty_tensorPushforwardUnits_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardStackCounterexample.lean, line 606](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorPushforwardStackCounterexample.lean#L606). The attribute's comment: “as printed it is false: a counterexample at X = Spec A, A = k[x,y,z,w]/(xz,xw,yz,yw), with a, b the open immersions of the two punctured planes D(z) ∪ D(w) and D(x) ∪ D(y); the 2-fibre product is empty so f\_\{QCoh,*}O = 0, while a\_\{QCoh,*}O ⊗ b\_\{QCoh,*}O ≠ 0 since Γ(V,O) ⊗\_A Γ(W,O) = k (H¹(V,O) ≠ 0 and Γ(V,O) is not A-flat)”.
 
 > **Stacks 0GRN, as printed, is false.** It is not true that for all 1-morphisms
 > `a : 𝒴 ⟶ 𝒳`, `b : 𝒵 ⟶ 𝒳` of algebraic stacks which are representable (by schemes),
@@ -254,7 +254,7 @@ theorem not_forall_nonempty_tensorPushforwardUnits_iso :
           ((twoFibreProductSquareAlgebraicStacks B S hS a b).fst ≫ a)).obj (𝟙_ _))
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentTensorPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L358). The attribute's comment: “THE CANONICAL MAP ONLY, NOT THE ASSERTION. This is μ : a\_\{QCoh,*}𝒪\_𝒴 ⊗ b\_\{QCoh,*}𝒪\_𝒵 ⟶ f\_\{QCoh,*}𝒪\_𝒫, built from the two relative pullback maps of Stacks 06UM and the comparison of Remark 0GQR. Its INVERTIBILITY, which is what the tag asserts, is NOT PROVED here: the étale-local step (the content of Cohomology of Stacks Section 103.12, namely Lemma 0GQH plus the scheme-level Künneth of Lemma 0FLQ) does not compose with the stack-level QCoh monoidal product without further infrastructure. The reduction lemmas below that conclude invertibility from invertibility after a reflecting functor are deliberately left UNTAGGED, being instances of CategoryTheory.isIso\_of\_reflects\_iso rather than content of this tag”.
+**`AlgebraicGeometry.Stack.quasicoherentTensorPushforwardMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 358](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L358). The attribute's comment: “THE CANONICAL MAP ONLY, NOT THE ASSERTION. This is μ : a\_\{QCoh,*}𝒪\_𝒴 ⊗ b\_\{QCoh,*}𝒪\_𝒵 ⟶ f\_\{QCoh,*}𝒪\_𝒫, built from the two relative pullback maps of Stacks 06UM and the comparison of Remark 0GQR. Its INVERTIBILITY, which is what the tag asserts, is NOT PROVED here: the étale-local step (the content of Cohomology of Stacks Section 103.12, namely Lemma 0GQH plus the scheme-level Künneth of Lemma 0FLQ) does not compose with the stack-level QCoh monoidal product without further infrastructure. The reduction lemmas below that conclude invertibility from invertibility after a reflecting functor are deliberately left UNTAGGED, being instances of CategoryTheory.isIso\_of\_reflects\_iso rather than content of this tag”.
 
 > **The canonical map `μ`.**  For 1-morphisms `a : 𝒴 ⟶ 𝒳`, `b : 𝒵 ⟶ 𝒳` of
 > algebraic stacks and a 2-fibre product square `sq` over the cospan `(a, b)` with apex
@@ -286,7 +286,7 @@ def quasicoherentTensorPushforwardMap :
             (FibredSite.quasicoherentTensorUnit B S hS sq.pt.val.val.p sq.pt.val.property)))
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentTensorPushforwardMap_eq_coheratorCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L393). The attribute's comment: “the identification of μ with Q of the relative cup product precomposed with the two relative pullback maps on LQCoh^fbc, i.e. that applying the coherator commutes with tensoring the two maps of Stacks 06UM in”.
+**`AlgebraicGeometry.Stack.quasicoherentTensorPushforwardMap_eq_coheratorCupProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L393). The attribute's comment: “the identification of μ with Q of the relative cup product precomposed with the two relative pullback maps on LQCoh^fbc, i.e. that applying the coherator commutes with tensoring the two maps of Stacks 06UM in”.
 
 > **`μ` is the comparison of Remark 0GQR at a single map out of a tensor product.**  Tensoring
 > the two relative pullback maps and then applying the comparison of the coherator is the same as
@@ -310,7 +310,7 @@ theorem quasicoherentTensorPushforwardMap_eq_coheratorCupProduct :
       sq.snd hlqZ prStarZ adjPrZ cmpZ)) ≫ cup)
 ```
 
-**`AlgebraicGeometry.Stack.map_quasicoherentTensorPushforwardMap_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L427). The attribute's comment: “commutativity of the diagram of Remark 0GQR at μ, over the same carried data”.
+**`AlgebraicGeometry.Stack.map_quasicoherentTensorPushforwardMap_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L427). The attribute's comment: “commutativity of the diagram of Remark 0GQR at μ, over the same carried data”.
 
 > **The diagram of Remark 0GQR commutes at `μ`.**  The inclusion of **Lemma 0778** applied to
 > `μ`, followed by the counit of the coherator adjunction, is the comparison `tcmp` of
@@ -358,7 +358,7 @@ theorem map_quasicoherentTensorPushforwardMap_comp_counit :
 
 [Tag 0GRP](https://stacks.math.columbia.edu/tag/0GRP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.eq_and_exists_iso_pointPullbackTransportIso_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean#L631). The attribute's comment: “points over possibly different structure morphisms; they agree”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.eq_and_exists_iso_pointPullbackTransportIso_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean, line 631](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean#L631). The attribute's comment: “points over possibly different structure morphisms; they agree”.
 
 > **Stacks 0GRP.** Let `𝒳` be an algebraic stack with affine diagonal and `B` a ring. Let
 > `f₁, f₂ : Spec B ⟶ 𝒳` be two morphisms, given as points `x₁`, `x₂` of `𝒳` over `Spec B`, with
@@ -401,7 +401,7 @@ theorem eq_and_exists_iso_pointPullbackTransportIso_eq
         a ha = t
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_iso_pointPullbackTransportIso_eq_of_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean#L662). The attribute's comment: “the source's form, with equal structure morphisms”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_iso_pointPullbackTransportIso_eq_of_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean, line 662](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/PointPullbackFullyFaithful.lean#L662). The attribute's comment: “the source's form, with equal structure morphisms”.
 
 > **Stacks 0GRP, with equal structure morphisms** (the source's statement). Let `𝒳` be an
 > algebraic stack with affine diagonal (over `Spec ℤ`), `B` a ring and `f₁, f₂ : Spec B ⟶ 𝒳` two
@@ -428,7 +428,7 @@ theorem exists_iso_pointPullbackTransportIso_eq_of_over
 
 [Tag 0GRQ](https://stacks.math.columbia.edu/tag/0GRQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_pointPullback_iso_of_tensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorFunctorPoint.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorFunctorPoint.lean#L110). The attribute's comment: “the morphism Spec R ⟶ 𝒳 is a point over Spec R in the site; uniqueness is up to the unique 2-arrow inducing the given isomorphism of tensor functors”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_pointPullback_iso_of_tensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorFunctorPoint.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/TensorFunctorPoint.lean#L110). The attribute's comment: “the morphism Spec R ⟶ 𝒳 is a point over Spec R in the site; uniqueness is up to the unique 2-arrow inducing the given isomorphism of tensor functors”.
 
 > **Stacks 0GRQ.** Let `𝒳` be a Noetherian algebraic stack with affine diagonal (over
 > `Spec ℤ`, as in the source), `R` a ring (with `Spec R` in the site) and `F : QCoh(𝒪_𝒳) ⥤ Mod_R` a
@@ -471,7 +471,7 @@ theorem existsUnique_pointPullback_iso_of_tensorFunctor
 
 [Tag 0GRR](https://stacks.math.columbia.edu/tag/0GRR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_coherentPointPullback_iso_of_tensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoherentTensorFunctorPoint.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoherentTensorFunctorPoint.lean#L62). The attribute's comment: “the morphism Spec R ⟶ 𝒳 is a point over Spec R in the site; uniqueness is up to a 2-arrow inducing the given isomorphism of tensor functors”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_coherentPointPullback_iso_of_tensorFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoherentTensorFunctorPoint.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoherentTensorFunctorPoint.lean#L62). The attribute's comment: “the morphism Spec R ⟶ 𝒳 is a point over Spec R in the site; uniqueness is up to a 2-arrow inducing the given isomorphism of tensor functors”.
 
 > **Stacks 0GRR.** Let `𝒳` be a Noetherian algebraic stack with affine diagonal (over `Spec ℤ`,
 > as in the source), `R` a Noetherian ring (with `Spec R` in the site) and
@@ -520,4 +520,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.16, Tag 0GRI](https://stacks.math.columbia.edu/tag/0GRI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

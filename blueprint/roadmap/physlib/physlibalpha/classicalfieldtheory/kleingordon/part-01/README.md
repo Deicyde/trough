@@ -19,7 +19,7 @@ navigation: transparent
 - [Klein–Gordon fields and causal propagation](solution.md)
 - [The solution as a tempered distribution in space](temperedslice.md)
 
-Modules in [ClosedForm/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm):
+Modules in [ClosedForm/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm):
 
 - [The massive sine evolution through the massless one](closedform-massdeformation.md)
 - [The retarded solution of the Klein–Gordon equation on the line](closedform-massiveline.md)

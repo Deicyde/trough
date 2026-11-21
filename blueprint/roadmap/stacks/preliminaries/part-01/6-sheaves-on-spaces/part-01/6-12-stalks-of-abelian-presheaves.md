@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.12 Stalks of abelian presheaves
 
-Section 6.12 of the Stacks Project, [Tag 007E](https://stacks.math.columbia.edu/tag/007E). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 6.12 of the Stacks Project, [Tag 007E](https://stacks.math.columbia.edu/tag/007E). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 007F, a lemma
 
 [Tag 007F](https://stacks.math.columbia.edu/tag/007F) in the Stacks Project.
 
-**`Stacks.AbelianStalk.existsUnique_addCommGroup_forget_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean#L209).
+**`Stacks.AbelianStalk.existsUnique_addCommGroup_forget_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean#L209).
 
 > **Stacks 007F**, first assertion. Let `F` be a presheaf of abelian groups on `X` and `x : X`.
 > There exists a unique structure of an abelian group on the stalk `F_x` — the stalk of the
@@ -31,7 +31,7 @@ theorem existsUnique_addCommGroup_forget_stalk :
             Presheaf.germ (F ⋙ forget AddCommGrpCat) U x hx t
 ```
 
-**`Stacks.AbelianStalk.isColimitGermCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean#L247).
+**`Stacks.AbelianStalk.isColimitGermCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Stalk/Abelian.lean#L247).
 
 > **Stacks 007F**, second assertion: `F_x = colim_{x ∈ U} F(U)` in the category of abelian groups.
 > The set-valued stalk `F_x = Presheaf.stalk (F ⋙ forget AddCommGrpCat) x`, with the group
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.12, Tag 007E](https://stacks.math.columbia.edu/tag/007E)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

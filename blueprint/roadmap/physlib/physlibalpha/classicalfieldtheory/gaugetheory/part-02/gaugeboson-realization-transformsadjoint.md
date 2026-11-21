@@ -8,7 +8,7 @@ proof: formalized
 
 # Adjoint gauge tensors and the covariant derivative
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.TransformsAdjoint`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean): 11 declarations, 10 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.TransformsAdjoint`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean): 11 declarations, 10 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization
 
 > * None.
 
-**`GaugeAlgebraRealization.TransformsInAdjoint`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L67).
+**`GaugeAlgebraRealization.TransformsInAdjoint`**, a def, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L67).
 
 > A family of derivative symbols `F` *transforms in the adjoint* (is an adjoint gauge
 > tensor) for the gauge representation `repGauge` when each symbol `[∂_s F^φ]`
@@ -47,7 +47,7 @@ def TransformsInAdjoint (repGauge : Representation ℂ GJ B)
     (F : Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℝ 𝔤 →ₗ[ℝ] B) : Prop
 ```
 
-**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_zero`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L77).
+**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_zero`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L77).
 
 > An adjoint gauge tensor transforms at the base point through the dual adjoint
 > coefficient of the value of the gauge jet alone: the antidiagonal of the empty multiset
@@ -60,7 +60,7 @@ lemma TransformsInAdjoint.repGauge_zero
     repGauge U (F 0 φ) = F 0 (jets.adjointDualCoeff U⁻¹ 0 φ)
 ```
 
-**`GaugeAlgebraRealization.bracketFamConv`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L93).
+**`GaugeAlgebraRealization.bracketFamConv`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L93).
 
 > **The derived bracket family** `⁅A_ρ, F⁆`: the `s`-derivative of the bracket of the
 > gauge field against a family, given by the Leibniz convolution of the derivative
@@ -74,7 +74,7 @@ noncomputable def bracketFamConv
     (s : Multiset (Fin 1 ⊕ Fin 3)) : Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.covDerivAdjoint`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L106).
+**`GaugeAlgebraRealization.covDerivAdjoint`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L106).
 
 > The covariant derivative `∇_ρ F = [∂_ρ F] + ⁅A_ρ, F⁆` of an adjoint-valued family
 > of derivative symbols: the extra derivative on the symbol plus the derived bracket
@@ -91,7 +91,7 @@ noncomputable def covDerivAdjoint
     Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.covDerivAdjoint_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L114).
+**`GaugeAlgebraRealization.covDerivAdjoint_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L114).
 
 ```lean
 lemma covDerivAdjoint_apply
@@ -101,7 +101,7 @@ lemma covDerivAdjoint_apply
     covDerivAdjoint A F ρ s φ = F (ρ ::ₘ s) φ + bracketFamConv A ρ F s φ
 ```
 
-**`GaugeAlgebraRealization.covDerivAdjoint_apply_of_map_lie`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L122).
+**`GaugeAlgebraRealization.covDerivAdjoint_apply_of_map_lie`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L122).
 
 > At a dual vector vanishing on every bracket the derived bracket term drops out and the
 > covariant derivative is the ordinary one, `(∇_ρ F)^φ = ∂_ρ F^φ`.
@@ -115,7 +115,7 @@ lemma covDerivAdjoint_apply_of_map_lie {φ : Module.Dual ℝ 𝔤}
     covDerivAdjoint A F ρ s φ = F (ρ ::ₘ s) φ
 ```
 
-**`GaugeAlgebraRealization.bracketFamConv_map`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L131).
+**`GaugeAlgebraRealization.bracketFamConv_map`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L131).
 
 > The derived bracket family is natural in the algebra.
 
@@ -129,7 +129,7 @@ lemma bracketFamConv_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCommClass �
       Φ ∘ₗ bracketFamConv A ρ F s
 ```
 
-**`GaugeAlgebraRealization.covDerivAdjoint_map`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L148).
+**`GaugeAlgebraRealization.covDerivAdjoint_map`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L148).
 
 > The covariant derivative is natural in the algebra.
 
@@ -145,7 +145,7 @@ lemma covDerivAdjoint_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCommClass �
 
 ## A. The iterated covariance of the covariant derivative
 
-**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_cons`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L177).
+**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_cons`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L177).
 
 > If `F` transforms in the adjoint, so do its `κ ::ₘ s`-derived symbols with the
 > extra derivative traced through `LocalGaugeData.adjointDualCoeff_cons`: the Leibniz splittings
@@ -169,7 +169,7 @@ lemma TransformsInAdjoint.repGauge_cons
                   (jets.maurerCartan U⁻¹ κ)))))).sum).sum
 ```
 
-**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_bracketFamConv`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L213).
+**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_bracketFamConv`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L213).
 
 > The all-orders gauge transformation of the derived bracket `⁅A_ρ, F⁆` against an
 > adjoint gauge tensor `F`: since `F` transforms homogeneously, only one `ad`
@@ -193,7 +193,7 @@ lemma TransformsInAdjoint.repGauge_bracketFamConv
                   (jets.maurerCartan U⁻¹ ρ)))))).sum).sum
 ```
 
-**`GaugeAlgebraRealization.TransformsInAdjoint.covDerivAdjoint`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L306).
+**`GaugeAlgebraRealization.TransformsInAdjoint.covDerivAdjoint`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean#L306).
 
 > **Adjoint gauge tensors are closed under the covariant derivative**: if `F`
 > transforms in the adjoint, so does `∇_ρ F = [∂_ρ F] + ⁅A_ρ, F⁆`. The single
@@ -217,4 +217,4 @@ lemma TransformsInAdjoint.covDerivAdjoint
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.16 No deformations
 
-Section 57.16 of the Stacks Project, [Tag 0G0M](https://stacks.math.columbia.edu/tag/0G0M). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.16 of the Stacks Project, [Tag 0G0M](https://stacks.math.columbia.edu/tag/0G0M). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G0N, a lemma
 
 [Tag 0G0N](https://stacks.math.columbia.edu/tag/0G0N) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedIso_koszulOfLift`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean#L420). The attribute's comment: “lifted\_koszul”.
+**`AlgebraicGeometry.derivedIso_koszulOfLift`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean, line 420](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean#L420). The attribute's comment: “lifted\_koszul”.
 
 > The chosen finite-free lift of the closed-fibre Koszul complex represents the Koszul
 > complex of its lifted first differential.
@@ -45,7 +45,7 @@ public lemma derivedIso_koszulOfLift
           ((Koszul.seqComplex f).extend ComplexShape.embeddingDownNat))
 ```
 
-**`AlgebraicGeometry.exists_koszulDescription_and_flat_quotient_of_fibrewise_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszulExistence.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszulExistence.lean#L120). The attribute's comment: “The hypotheses are packaged as `FlatLocalKoszulDeformationSituation`. The Koszul complex is Mathlib's exterior-algebra complex `Koszul.seqComplex`, placed in cohomological degrees by `ComplexShape.embeddingDownNat`, and `K` is identified with its image under `DerivedCategory.Q`. The ideal `(f₁, …, f_r)` is `Ideal.span (Set.range f)` and "regular sequence" is Mathlib's `RingTheory.Sequence.IsRegular`, which is Definition 00LF verbatim.”.
+**`AlgebraicGeometry.exists_koszulDescription_and_flat_quotient_of_fibrewise_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszulExistence.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszulExistence.lean#L120). The attribute's comment: “The hypotheses are packaged as `FlatLocalKoszulDeformationSituation`. The Koszul complex is Mathlib's exterior-algebra complex `Koszul.seqComplex`, placed in cohomological degrees by `ComplexShape.embeddingDownNat`, and `K` is identified with its image under `DerivedCategory.Q`. The ideal `(f₁, …, f_r)` is `Ideal.span (Set.range f)` and "regular sequence" is Mathlib's `RingTheory.Sequence.IsRegular`, which is Definition 00LF verbatim.”.
 
 > **The lifted sequence of [Stacks, Tag 0G0N] is regular with flat quotient.** In a flat local
 > deformation situation `R → A` whose closed fibre is Koszul on the regular sequence `f̄`, there is a
@@ -68,13 +68,13 @@ public theorem exists_koszulDescription_and_flat_quotient_of_fibrewise_koszul
 
 Declarations registered for the tag:
 
-- [`Module.Flat.isRegular_and_flat_quotient_ofList_smul_of_isRegular_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/RegularSequenceOverBase.lean#L173), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean#L31) (StacksFrontier): “flat\_quotient”.
+- [`Module.Flat.isRegular_and_flat_quotient_ofList_smul_of_isRegular_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Flat/RegularSequenceOverBase.lean#L173), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean, line 31](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean#L31) (StacksFrontier): “flat\_quotient”.
 
 ## Tag 0G0P, a lemma
 
 [Tag 0G0P](https://stacks.math.columbia.edu/tag/0G0P) in the Stacks Project.
 
-**`StacksDraft.Perfect.exists_away_koszul_description`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/KoszulSpreadingOut.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/KoszulSpreadingOut.lean#L404).
+**`StacksDraft.Perfect.exists_away_koszul_description`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/KoszulSpreadingOut.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/Perfect/KoszulSpreadingOut.lean#L404).
 
 > **Stacks Project, Tag 0G0P.** A local Koszul presentation of a perfect complex, with flat
 > quotient, spreads to some principal neighbourhood of the prime.
@@ -107,7 +107,7 @@ theorem exists_away_koszul_description {R S : Type u} [CommRing R] [CommRing S] 
 
 [Tag 0G0Q](https://stacks.math.columbia.edu/tag/0G0Q) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isIso_baseChange_of_isIso_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/IsomorphismOnFibre.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/IsomorphismOnFibre.lean#L450). References: EGA III (4.6.7), “(ii)”.
+**`AlgebraicGeometry.exists_isIso_baseChange_of_isIso_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Flat/IsomorphismOnFibre.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Flat/IsomorphismOnFibre.lean#L450). References: EGA III (4.6.7), “(ii)”.
 
 > **Stacks Project, Tag 0G0Q.** Let `X` and `Y` be proper over a Noetherian scheme `S`, with
 > `X` flat over `S`. An `S`-morphism `X ⟶ Y` which is an isomorphism on the fibre at `s` is an
@@ -125,7 +125,7 @@ public theorem exists_isIso_baseChange_of_isIso_fiber
 
 [Tag 0G0R](https://stacks.math.columbia.edu/tag/0G0R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_opens_nonempty_iso_constantFamily_of_isRelativeEquivalenceKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/Rigidity.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/Rigidity.lean#L288).
+**`AlgebraicGeometry.exists_opens_nonempty_iso_constantFamily_of_isRelativeEquivalenceKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/Rigidity.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/Rigidity.lean#L288).
 
 > **[Stacks, Tag 0G0R].** Let `k` be a field, `q : S ⟶ Spec k` of finite type, `s` a
 > `k`-rational point of `S` (a section of `q`), and `g : Y ⟶ S` smooth and proper. Let
@@ -152,7 +152,7 @@ theorem exists_opens_nonempty_iso_constantFamily_of_isRelativeEquivalenceKernel
 
 [Tag 0G0S](https://stacks.math.columbia.edu/tag/0G0S) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_opens_iso_constantFamily_of_isRelativeEquivalenceKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LocalTriviality.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LocalTriviality.lean#L242).
+**`AlgebraicGeometry.exists_opens_iso_constantFamily_of_isRelativeEquivalenceKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LocalTriviality.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LocalTriviality.lean#L242).
 
 > **[Stacks, Tag 0G0S].** Let `k` be algebraically closed, `X ⟶ Spec k`
 > smooth and proper, `g : Y ⟶ S` smooth and proper with `S` of finite type over `k`, and `K` the
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.16, Tag 0G0M](https://stacks.math.columbia.edu/tag/0G0M)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

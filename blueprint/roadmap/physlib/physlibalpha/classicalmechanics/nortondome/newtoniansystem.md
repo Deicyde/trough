@@ -8,7 +8,7 @@ proof: formalized
 
 # Conservative Newtonian systems and determinism
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.NewtonianSystem`, [PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean): 30 declarations, 30 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.NewtonianSystem`, [PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean): 30 declarations, 30 with a docstring.
 
 > Conservative Newtonian systems: a locally Lipschitz force gives determinism.
 
@@ -96,7 +96,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.NewtonianSystem`, [Physli
 > with explicit forces in a reference frame. The structure here is a single mass in a potential,
 > which is all the dome needs; the two live in different namespaces and no file opens both.
 
-**`ClassicalMechanics.NewtonianSystem`**, a structure, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L141).
+**`ClassicalMechanics.NewtonianSystem`**, a structure, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L141).
 
 > A conservative Newtonian system on the configuration space `X`: a point mass `m` in a
 > differentiable potential `V`. Its equation of motion is Newton's second law `m r̈ = -∇V(r)`.
@@ -112,7 +112,7 @@ structure NewtonianSystem (X : Type) [NormedAddCommGroup X] [InnerProductSpace �
   potential_differentiable : Differentiable ℝ potential
 ```
 
-**`ClassicalMechanics.NewtonianSystem.m_ne_zero`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L156).
+**`ClassicalMechanics.NewtonianSystem.m_ne_zero`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L156).
 
 > The mass of a Newtonian system is not equal to zero.
 
@@ -122,7 +122,7 @@ lemma m_ne_zero : S.m ≠ 0
 
 ### A.2. The force and the equation of motion
 
-**`ClassicalMechanics.NewtonianSystem.force`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L165).
+**`ClassicalMechanics.NewtonianSystem.force`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L165).
 
 > The force of a Newtonian system, minus the gradient of the potential.
 
@@ -130,7 +130,7 @@ lemma m_ne_zero : S.m ≠ 0
 noncomputable def force (x : X) : X
 ```
 
-**`ClassicalMechanics.NewtonianSystem.EquationOfMotion`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L169).
+**`ClassicalMechanics.NewtonianSystem.EquationOfMotion`**, a def, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L169).
 
 > Newton's second law for a Newtonian system: at every instant `m r̈` equals the force at
 > the position.
@@ -147,7 +147,7 @@ def EquationOfMotion (r : Time → X) : Prop
 > derivatives are zero wherever they do not exist, admits rough accidental solutions. Continuity of
 > the acceleration is not demanded; for a continuous force it is automatic.
 
-**`ClassicalMechanics.NewtonianSystem.IsSolution`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L186).
+**`ClassicalMechanics.NewtonianSystem.IsSolution`**, a def, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L186).
 
 > A solution of a Newtonian system is a twice differentiable curve, its position and velocity
 > both differentiable, satisfying the equation of motion.
@@ -156,7 +156,7 @@ def EquationOfMotion (r : Time → X) : Prop
 def IsSolution (r : Time → X) : Prop
 ```
 
-**`ClassicalMechanics.NewtonianSystem.IsSolution.differentiable`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L190).
+**`ClassicalMechanics.NewtonianSystem.IsSolution.differentiable`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L190).
 
 > The position along a solution is differentiable.
 
@@ -165,7 +165,7 @@ lemma IsSolution.differentiable {S : NewtonianSystem X} {r : Time → X} (h : S.
     Differentiable ℝ r
 ```
 
-**`ClassicalMechanics.NewtonianSystem.IsSolution.deriv_differentiable`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L194).
+**`ClassicalMechanics.NewtonianSystem.IsSolution.deriv_differentiable`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L194).
 
 > The velocity along a solution is differentiable.
 
@@ -174,7 +174,7 @@ lemma IsSolution.deriv_differentiable {S : NewtonianSystem X} {r : Time → X}
     (h : S.IsSolution r) : Differentiable ℝ (∂ₜ r)
 ```
 
-**`ClassicalMechanics.NewtonianSystem.IsSolution.equationOfMotion`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L198).
+**`ClassicalMechanics.NewtonianSystem.IsSolution.equationOfMotion`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L198).
 
 > A solution satisfies the equation of motion.
 
@@ -183,7 +183,7 @@ lemma IsSolution.equationOfMotion {S : NewtonianSystem X} {r : Time → X}
     (h : S.IsSolution r) : S.EquationOfMotion r
 ```
 
-**`ClassicalMechanics.NewtonianSystem.isSolution_const`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L202).
+**`ClassicalMechanics.NewtonianSystem.isSolution_const`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L202).
 
 > The curve at rest at a point where the force vanishes is a solution.
 
@@ -219,7 +219,7 @@ lemma isSolution_const {x : X} (hx : S.force x = 0) : S.IsSolution (fun _ => x)
 >   rest on the apex and stay, so the state there fixes neither past nor future; Earman's
 >   futuristic and historical determinism both fail.
 
-**`ClassicalMechanics.NewtonianSystem.IsDeterministic`**, a def, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L246).
+**`ClassicalMechanics.NewtonianSystem.IsDeterministic`**, a def, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L246).
 
 > A Newtonian system is deterministic if any two solutions with the same position and
 > velocity at some instant coincide. This is uniqueness of twice differentiable solutions
@@ -229,7 +229,7 @@ lemma isSolution_const {x : X} (hx : S.force x = 0) : S.IsSolution (fun _ => x)
 def IsDeterministic : Prop
 ```
 
-**`ClassicalMechanics.NewtonianSystem.SatisfiesFirstLaw`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L252).
+**`ClassicalMechanics.NewtonianSystem.SatisfiesFirstLaw`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L252).
 
 > A Newtonian system satisfies the first law if a solution at rest, at some instant, at a
 > point where the force vanishes stays at that point at all instants.
@@ -243,7 +243,7 @@ def SatisfiesFirstLaw : Prop
 > The curve staying at the equilibrium is a solution with the same position and velocity as the
 > given one at the given instant, so by determinism it is the given one.
 
-**`ClassicalMechanics.NewtonianSystem.IsDeterministic.satisfiesFirstLaw`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L265).
+**`ClassicalMechanics.NewtonianSystem.IsDeterministic.satisfiesFirstLaw`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L265).
 
 > A deterministic Newtonian system satisfies the first law.
 
@@ -261,7 +261,7 @@ lemma IsDeterministic.satisfiesFirstLaw {S : NewtonianSystem X} (h : S.IsDetermi
 > both hold for the dome. The third, `SatisfiesFirstLaw`, is determinism at an equilibrium; it is
 > what the dome violates and what Norton's argument is about, so it is the reading taken here.
 
-**`ClassicalMechanics.NewtonianSystem.IsSolution.deriv_eq_of_force_eq_zero_on`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L288).
+**`ClassicalMechanics.NewtonianSystem.IsSolution.deriv_eq_of_force_eq_zero_on`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L288).
 
 > The first law read on an interval: if the force vanishes along a solution throughout the
 > interval `[a, b]`, the velocity is constant on it. This is a consequence of the second law
@@ -282,7 +282,7 @@ lemma IsSolution.deriv_eq_of_force_eq_zero_on {S : NewtonianSystem X} {r : Time 
 > `x * |x| / 2` has the Lipschitz force `-|x|` but is not `C²`. The structure `NewtonianSystem`
 > of section A assumes none of these conditions; they are separate predicates on it.
 
-**`ClassicalMechanics.NewtonianSystem.HasLocallyLipschitzForce`**, a def, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L325).
+**`ClassicalMechanics.NewtonianSystem.HasLocallyLipschitzForce`**, a def, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L325).
 
 > A Newtonian system has a locally Lipschitz force if its force is Lipschitz on a
 > neighbourhood of every point. This is the hypothesis of the uniqueness theorem for ordinary
@@ -292,7 +292,7 @@ lemma IsSolution.deriv_eq_of_force_eq_zero_on {S : NewtonianSystem X} {r : Time 
 def HasLocallyLipschitzForce : Prop
 ```
 
-**`ClassicalMechanics.NewtonianSystem.HasLipschitzForce`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L328).
+**`ClassicalMechanics.NewtonianSystem.HasLipschitzForce`**, a def, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L328).
 
 > A Newtonian system has a Lipschitz force if its force is globally Lipschitz.
 
@@ -300,7 +300,7 @@ def HasLocallyLipschitzForce : Prop
 def HasLipschitzForce : Prop
 ```
 
-**`ClassicalMechanics.NewtonianSystem.HasC2Potential`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L333).
+**`ClassicalMechanics.NewtonianSystem.HasC2Potential`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L333).
 
 > A Newtonian system has a `C²` potential if its potential is twice continuously
 > differentiable; two derivatives are what the uniqueness theory of ordinary differential
@@ -310,7 +310,7 @@ def HasLipschitzForce : Prop
 def HasC2Potential : Prop
 ```
 
-**`ClassicalMechanics.NewtonianSystem.HasLipschitzForce.hasLocallyLipschitzForce`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L336).
+**`ClassicalMechanics.NewtonianSystem.HasLipschitzForce.hasLocallyLipschitzForce`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L336).
 
 > A Lipschitz force is locally Lipschitz.
 
@@ -319,7 +319,7 @@ lemma HasLipschitzForce.hasLocallyLipschitzForce (h : S.HasLipschitzForce) :
     S.HasLocallyLipschitzForce
 ```
 
-**`ClassicalMechanics.NewtonianSystem.HasC2Potential.contDiff_gradient`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L342).
+**`ClassicalMechanics.NewtonianSystem.HasC2Potential.contDiff_gradient`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L342).
 
 > The gradient of a `C²` potential is `C¹`.
 
@@ -328,7 +328,7 @@ lemma HasC2Potential.contDiff_gradient (h : S.HasC2Potential) :
     ContDiff ℝ 1 (gradient S.potential)
 ```
 
-**`ClassicalMechanics.NewtonianSystem.HasC2Potential.hasLocallyLipschitzForce`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L348).
+**`ClassicalMechanics.NewtonianSystem.HasC2Potential.hasLocallyLipschitzForce`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L348).
 
 > The force of a system with a `C²` potential is locally Lipschitz.
 
@@ -346,7 +346,7 @@ lemma HasC2Potential.hasLocallyLipschitzForce (h : S.HasC2Potential) :
 
 ### D.1. The phase-space vector field
 
-**`ClassicalMechanics.NewtonianSystem.phaseVectorField`**, a def, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L370).
+**`ClassicalMechanics.NewtonianSystem.phaseVectorField`**, a def, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L370).
 
 > The phase-space vector field of a Newtonian system, sending `(r, v)` to `(v, F(r)/m)`.
 
@@ -354,7 +354,7 @@ lemma HasC2Potential.hasLocallyLipschitzForce (h : S.HasC2Potential) :
 noncomputable def phaseVectorField (p : X × X) : X × X
 ```
 
-**`ClassicalMechanics.NewtonianSystem.phaseVectorField_locallyLipschitz`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L375).
+**`ClassicalMechanics.NewtonianSystem.phaseVectorField_locallyLipschitz`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L375).
 
 > If the force of a Newtonian system is locally Lipschitz, so is its phase-space vector
 > field.
@@ -366,7 +366,7 @@ lemma phaseVectorField_locallyLipschitz (h : LocallyLipschitz S.force) :
 
 ### D.2. The phase curve of a solution
 
-**`ClassicalMechanics.NewtonianSystem.phaseCurve_hasDerivAt`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L390).
+**`ClassicalMechanics.NewtonianSystem.phaseCurve_hasDerivAt`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L390).
 
 > The phase curve `τ ↦ (r t, ṙ t)` (with `t = toRealCLE.symm τ`) of a solution is an
 > integral curve of the phase-space vector field.
@@ -394,7 +394,7 @@ lemma phaseCurve_hasDerivAt {r : Time → X} (hr : Differentiable ℝ r)
 > Naming follows Mathlib: `isDeterministic_of_hasC2Potential` is the arrow from
 > `HasC2Potential` to `IsDeterministic`.
 
-**`ClassicalMechanics.NewtonianSystem.ODE_solution_unique_of_locallyLipschitz`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L422).
+**`ClassicalMechanics.NewtonianSystem.ODE_solution_unique_of_locallyLipschitz`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L422).
 
 > Integral curves of a locally Lipschitz vector field, defined at all times, which pass
 > through the same point at the same instant coincide.
@@ -406,7 +406,7 @@ lemma ODE_solution_unique_of_locallyLipschitz {E : Type} [NormedAddCommGroup E]
     {τ₀ : ℝ} (h0 : f τ₀ = g τ₀) : f = g
 ```
 
-**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasLocallyLipschitzForce`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L449).
+**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasLocallyLipschitzForce`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L449).
 
 > The uniqueness theorem for Newtonian systems: a Newtonian system with a locally Lipschitz
 > force is deterministic.
@@ -416,7 +416,7 @@ lemma isDeterministic_of_hasLocallyLipschitzForce (h : S.HasLocallyLipschitzForc
     S.IsDeterministic
 ```
 
-**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasLipschitzForce`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L464).
+**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasLipschitzForce`**, a lemma, [line 464](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L464).
 
 > Picard–Lindelöf for Newtonian systems: a Newtonian system with a Lipschitz force is
 > deterministic.
@@ -425,7 +425,7 @@ lemma isDeterministic_of_hasLocallyLipschitzForce (h : S.HasLocallyLipschitzForc
 lemma isDeterministic_of_hasLipschitzForce (h : S.HasLipschitzForce) : S.IsDeterministic
 ```
 
-**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasC2Potential`**, a lemma, [line 468](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L468).
+**`ClassicalMechanics.NewtonianSystem.isDeterministic_of_hasC2Potential`**, a lemma, [line 468](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L468).
 
 > A Newtonian system with a `C²` potential is deterministic.
 
@@ -433,7 +433,7 @@ lemma isDeterministic_of_hasLipschitzForce (h : S.HasLipschitzForce) : S.IsDeter
 lemma isDeterministic_of_hasC2Potential (h : S.HasC2Potential) : S.IsDeterministic
 ```
 
-**`ClassicalMechanics.NewtonianSystem.satisfiesFirstLaw_of_hasLocallyLipschitzForce`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L472).
+**`ClassicalMechanics.NewtonianSystem.satisfiesFirstLaw_of_hasLocallyLipschitzForce`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L472).
 
 > A Newtonian system with a locally Lipschitz force satisfies the first law.
 
@@ -453,7 +453,7 @@ lemma satisfiesFirstLaw_of_hasLocallyLipschitzForce (h : S.HasLocallyLipschitzFo
 
 ### E.1. Local existence
 
-**`ClassicalMechanics.NewtonianSystem.HasLocalSolutions`**, a def, [line 499](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L499).
+**`ClassicalMechanics.NewtonianSystem.HasLocalSolutions`**, a def, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L499).
 
 > A Newtonian system has local solutions if for every initial position `x₀` and velocity
 > `v₀` there are `ε > 0` and a curve `r` with `r 0 = x₀` and `ṙ 0 = v₀` which, at every time
@@ -470,7 +470,7 @@ def HasLocalSolutions : Prop
 > ball about the initial datum by compactness; a short enough time interval then gives the
 > hypotheses of Peano's theorem.
 
-**`ClassicalMechanics.NewtonianSystem.phaseVectorField_continuous`**, a lemma, [line 516](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L516).
+**`ClassicalMechanics.NewtonianSystem.phaseVectorField_continuous`**, a lemma, [line 516](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L516).
 
 > If the force of a Newtonian system is continuous, so is its phase-space vector field.
 
@@ -479,7 +479,7 @@ lemma phaseVectorField_continuous (hF : Continuous S.force) :
     Continuous S.phaseVectorField
 ```
 
-**`ClassicalMechanics.NewtonianSystem.exists_isPeano_phaseVectorField`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L524).
+**`ClassicalMechanics.NewtonianSystem.exists_isPeano_phaseVectorField`**, a lemma, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean#L524).
 
 > For a continuous force on a finite-dimensional configuration space, the time-independent
 > phase-space vector field satisfies the hypotheses of Peano's theorem about any initial datum,
@@ -506,4 +506,4 @@ lemma exists_isPeano_phaseVectorField [FiniteDimensional ℝ X] (hF : Continuous
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/NewtonianSystem.lean)

@@ -1,8 +1,9 @@
 # Channel
 
-The folder [Physlib/ProbabilisticTheory/Channel/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Channel): 4 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/ProbabilisticTheory/Channel/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Channel): 5 modules, an article each, in path order with Basic.lean first in its folder.
 
-- [Positive unital maps](basic.md)
+- [Channels between observable spaces](basic.md)
+- [Convex spaces of channels](convex.md)
 - [Covariant channels](covariant.md)
 - [Channels are contractions](norm.md)
 - [Reversible transformations of observables](reversible.md)

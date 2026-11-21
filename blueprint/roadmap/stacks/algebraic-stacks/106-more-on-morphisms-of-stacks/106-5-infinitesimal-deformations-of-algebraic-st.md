@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.5 Infinitesimal deformations of algebraic stacks
 
-Section 106.5 of the Stacks Project, [Tag 0CJA](https://stacks.math.columbia.edu/tag/0CJA). 2 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.5 of the Stacks Project, [Tag 0CJA](https://stacks.math.columbia.edu/tag/0CJA). 2 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CJB, a lemma
 
 [Tag 0CJB](https://stacks.math.columbia.edu/tag/0CJB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFlat_ambient_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean, line 972](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean#L972). The attribute's comment: “flatness of the ambient morphism”.
+**`AlgebraicGeometry.Stack.isFlat_ambient_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean, line 972](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean#L972). The attribute's comment: “flatness of the ambient morphism”.
 
 > For a commutative diagram of algebraic stacks over `S` over a thickening `iB : ℬ ⟶ ℬ'` of
 > bases, whose cube commutes (`hcoh`), with `𝒴' ⟶ ℬ'` locally of finite type, `𝒳' ⟶ ℬ'` flat and
@@ -41,7 +41,7 @@ theorem isFlat_ambient_of_flatDeformation
     AlgebraicStacks.IsFlat B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.isFlatAt_target_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean#L1004). The attribute's comment: “flatness of the target over the base at image points”.
+**`AlgebraicGeometry.Stack.isFlatAt_target_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformation.lean#L1004). The attribute's comment: “flatness of the target over the base at image points”.
 
 > Under the hypotheses of `AlgebraicGeometry.Stack.isFlat_ambient_of_flatDeformation`, the
 > structure 1-morphism `𝒴' ⟶ ℬ'` is flat, in the sense of Stacks 0CID, at every point of `|𝒴'|` in
@@ -68,7 +68,7 @@ theorem isFlatAt_target_of_flatDeformation
     AlgebraicStacks.IsFlatAt B S hS pY' (AlgebraicStacks.pointsMap B S hS f' x')
 ```
 
-**`AlgebraicGeometry.Stack.isFlat_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformationCoherence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformationCoherence.lean#L224).
+**`AlgebraicGeometry.Stack.isFlat_of_flatDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformationCoherence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningFlatDeformationCoherence.lean#L224).
 
 > **Stacks 0CJB.** Let `iB : ℬ ⟶ ℬ'` be a thickening of algebraic stacks over `S`, let
 > `pX' : 𝒳' ⟶ ℬ'` and `pY' : 𝒴' ⟶ ℬ'` be structure 1-morphisms, and let `f' : 𝒳' ⟶ 𝒴'` be a
@@ -114,7 +114,7 @@ theorem isFlat_of_flatDeformation
 
 [Tag 0CJC](https://stacks.math.columbia.edu/tag/0CJC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L286). The attribute's comment: “flat”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L286). The attribute's comment: “flat”.
 
 > For a commutative diagram of thickenings of algebraic stacks over `S` over a thickening
 > `iB : ℬ ⟶ ℬ'` of bases, with `𝒴' ⟶ ℬ'` locally of finite type, `𝒳' ⟶ ℬ'` flat and locally of
@@ -140,7 +140,7 @@ theorem isFlat_iff_isFlat_ambient
     IsFlat B S hS f ↔ IsFlat B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_iff_isSmooth_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L309). The attribute's comment: “smooth”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSmooth_iff_isSmooth_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L309). The attribute's comment: “smooth”.
 
 > Under the hypotheses of `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`,
 > the restricted 1-morphism `f` is smooth if and only if the ambient 1-morphism `f'` is smooth.
@@ -164,7 +164,7 @@ theorem isSmooth_iff_isSmooth_ambient
     IsSmooth B S hS f ↔ IsSmooth B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSyntomic_iff_isSyntomic_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L342). The attribute's comment: “syntomic”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSyntomic_iff_isSyntomic_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationProperties.lean#L342). The attribute's comment: “syntomic”.
 
 > Under the hypotheses of `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`,
 > and assuming that syntomicity of morphisms of algebraic spaces is local on the source for the
@@ -200,7 +200,7 @@ theorem isSyntomic_iff_isSyntomic_ambient
         (fun _ _ k => Space.IsSyntomic B S hS k) f'.hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_iff_isLocallyQuasiFinite_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L235). The attribute's comment: “locally quasi-finite”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_iff_isLocallyQuasiFinite_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 235](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L235). The attribute's comment: “locally quasi-finite”.
 
 > **Stacks 0CJC, locally quasi-finite.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`, the restricted 1-morphism
@@ -252,7 +252,7 @@ theorem isLocallyQuasiFinite_iff_isLocallyQuasiFinite_ambient
     IsLocallyQuasiFinite B S hS f ↔ IsLocallyQuasiFinite B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_iff_isMonomorphism_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L409). The attribute's comment: “monomorphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_iff_isMonomorphism_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 409](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L409). The attribute's comment: “monomorphism”.
 
 > **Item (4) of Stacks 0CJC, monomorphism.** Under the
 > hypotheses of `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`, the restricted
@@ -291,7 +291,7 @@ theorem isMonomorphism_iff_isMonomorphism_ambient
     IsMonomorphism B S hS f ↔ IsMonomorphism B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinite_iff_isFinite_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L452). The attribute's comment: “finite”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFinite_iff_isFinite_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean, line 452](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDeformationPropertiesPointTest.lean#L452). The attribute's comment: “finite”.
 
 > **Item (10) of Stacks 0CJC, finite.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`, the restricted 1-morphism `f`
@@ -329,7 +329,7 @@ theorem isFinite_iff_isFinite_ambient
     IsFinite B S hS f ↔ IsFinite B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_iff_isEquivalence_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L170). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_iff_isEquivalence_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L170). The attribute's comment: “isomorphism”.
 
 > **Stacks 0CJC, isomorphism.** For a commutative diagram of thickenings of algebraic stacks over
 > `S` over a thickening `iB : ℬ ⟶ ℬ'` of bases, with `𝒴' ⟶ ℬ'` locally of finite type, `𝒳' ⟶ ℬ'`
@@ -357,7 +357,7 @@ theorem isEquivalence_iff_isEquivalence_ambient
       (CatFiberedInGroupoids.homFunctor f'.hom).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_iff_isOpenImmersion_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L207). The attribute's comment: “open immersion”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_iff_isOpenImmersion_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L207). The attribute's comment: “open immersion”.
 
 > **Stacks 0CJC, open immersion.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_iff_isEquivalence_ambient`, the restricted
@@ -382,7 +382,7 @@ theorem isOpenImmersion_iff_isOpenImmersion_ambient
     IsOpenImmersion B S hS f ↔ IsOpenImmersion B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.hasPropertyOnSomeSmoothDiagram_isSyntomic_iff_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L236). The attribute's comment: “syntomic”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.hasPropertyOnSomeSmoothDiagram_isSyntomic_iff_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean, line 236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningOpenImmersionIsomorphism.lean#L236). The attribute's comment: “syntomic”.
 
 > **Stacks 0CJC, syntomic.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_iff_isEquivalence_ambient`, the restricted
@@ -412,7 +412,7 @@ theorem hasPropertyOnSomeSmoothDiagram_isSyntomic_iff_ambient
         (fun _ _ k => Space.IsSyntomic B S hS k) f'.hom
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_iff_isUnramified_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean#L41). The attribute's comment: “unramified”.
+**`AlgebraicGeometry.Stack.isUnramified_iff_isUnramified_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean#L41). The attribute's comment: “unramified”.
 
 > **Stacks 0CJC, unramified.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`, the restricted 1-morphism
@@ -437,7 +437,7 @@ theorem isUnramified_iff_isUnramified_ambient
     IsUnramified B S hS f ↔ IsUnramified B S hS f'
 ```
 
-**`AlgebraicGeometry.Stack.isEtale_iff_isEtale_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean#L66). The attribute's comment: “etale”.
+**`AlgebraicGeometry.Stack.isEtale_iff_isEtale_ambient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUnramifiedEtaleIff.lean#L66). The attribute's comment: “etale”.
 
 > **Stacks 0CJC, étale.** Under the hypotheses of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isFlat_iff_isFlat_ambient`, the restricted 1-morphism
@@ -469,4 +469,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.5, Tag 0CJA](https://stacks.math.columbia.edu/tag/0CJA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

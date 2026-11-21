@@ -7,7 +7,7 @@ proof: formalized
 
 # Repeating a machine until a tape goes blank
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean), by Christian Reitwiessner.
 
 > `repeatUntilBlank i tm` runs `tm` repeatedly. After each round it reads the cell under the head of
 > work tape `i` and halts if that cell is blank. Each round of a `Turing.MultiTapeTM.TransformsTapes`
@@ -20,7 +20,7 @@ proof: formalized
 >   gives a specification of `repeatUntilBlank i tm`, with time bound `(rounds + 1) * (t + 1)` and
 >   space bound `2 * k * s + k`.
 
-`Turing.MultiTapeTM.RepeatUntilBlank.blankTest` (definition, [line 32](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L32))
+`Turing.MultiTapeTM.RepeatUntilBlank.blankTest` (definition, [line 32](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L32))
 
 > The test of tape `i`: it halts if the cell under the head of tape `i` is blank and otherwise
 > stays in its only state, moving no head.
@@ -29,7 +29,7 @@ proof: formalized
 public def RepeatUntilBlank.blankTest (i : Fin k) : MultiTapeTM k Symbol Unit
 ```
 
-`Turing.MultiTapeTM.repeatUntilBlank` (abbreviation, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L39))
+`Turing.MultiTapeTM.repeatUntilBlank` (abbreviation, [line 39](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L39))
 
 > `tm` combined with the test of tape `i`: halting of `tm` goes to the test, which halts the loop
 > if the cell under the head of tape `i` is blank and otherwise restarts `tm`.
@@ -39,7 +39,7 @@ public noncomputable abbrev repeatUntilBlank (i : Fin k) (tm : MultiTapeTM k Sym
     MultiTapeTM k Symbol (State ⊕ Unit)
 ```
 
-`Turing.MultiTapeTM.transformsTapes_repeatUntilBlank` (theorem, [line 97](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L97))
+`Turing.MultiTapeTM.transformsTapes_repeatUntilBlank` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L97))
 
 > Let `P n` be a loop invariant after `n` rounds, on the words on the tapes and the word emitted
 > so far. If each round `n < rounds` takes `P n` to `P (n + 1)` and leaves tape `i` non-empty, and
@@ -72,5 +72,5 @@ public theorem transformsTapes_repeatUntilBlank (i : Fin k) {tm : MultiTapeTM k 
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank.json)

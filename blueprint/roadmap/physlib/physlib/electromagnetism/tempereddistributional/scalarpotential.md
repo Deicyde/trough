@@ -8,7 +8,7 @@ proof: formalized
 
 # The Scalar Potential (TemperedDistributional/ScalarPotential)
 
-The module `Physlib.Electromagnetism.TemperedDistributional.ScalarPotential`, [Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.Electromagnetism.TemperedDistributional.ScalarPotential`, [Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.ScalarPotential`, [P
 
 ## A. Scalar potential for distributions
 
-**`Electromagnetism.TempDistElectromagneticPotential.scalarPotential`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean#L61).
+**`Electromagnetism.TempDistElectromagneticPotential.scalarPotential`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean#L61).
 
 > The scalar potential of an electromagnetic potential which is a distribution.
 
@@ -48,4 +48,4 @@ noncomputable def scalarPotential {d} (c : SpeedOfLight) :
 
 ## Sources
 
-- [Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean)
+- [Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean)

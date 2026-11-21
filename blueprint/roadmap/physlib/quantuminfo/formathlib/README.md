@@ -1,6 +1,6 @@
 # ForMathlib
 
-The folder [QuantumInfo/ForMathlib/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib): 17 modules, an article each, in path order; then 3 folders below it, a page each, 45 modules in all.
+The folder [QuantumInfo/ForMathlib/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib): 17 modules, an article each, in path order; then 3 folders below it, a page each, 45 modules in all.
 
 - [QuantumInfo.ForMathlib.ComplexLaplaceTransform](complexlaplacetransform.md)
 - [Continuous linear maps](continuouslinearmap.md)

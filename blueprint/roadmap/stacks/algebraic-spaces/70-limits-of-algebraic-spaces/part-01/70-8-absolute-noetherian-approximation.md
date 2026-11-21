@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.8 Absolute Noetherian approximation
 
-Section 70.8 of the Stacks Project, [Tag 07SS](https://stacks.math.columbia.edu/tag/07SS). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.8 of the Stacks Project, [Tag 07SS](https://stacks.math.columbia.edu/tag/07SS). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07SU, a proposition
 
 [Tag 07SU](https://stacks.math.columbia.edu/tag/07SU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasNoetherianApproximation_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AbsoluteNoetherianApproximation/Main.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AbsoluteNoetherianApproximation/Main.lean#L457).
+**`AlgebraicGeometry.Space.hasNoetherianApproximation_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AbsoluteNoetherianApproximation/Main.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AbsoluteNoetherianApproximation/Main.lean#L457).
 
 > Absolute Noetherian approximation. Let `X` be a quasi-compact and quasi-separated algebraic
 > space over `Spec ℤ`, the terminal scheme `⊤_ Scheme`, on the big fppf site `B`. Then there are a
@@ -39,7 +39,7 @@ theorem hasNoetherianApproximation_of_isQuasiCompactSpace
 
 [Tag 07SV](https://stacks.math.columbia.edu/tag/07SV) in the Stacks Project.
 
-**`AlgebraicGeometry.isPullback_gluedRelationSource_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L303). The attribute's comment: “the displayed square is cartesian, for any base-changed fibre square over W”.
+**`AlgebraicGeometry.isPullback_gluedRelationSource_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L303). The attribute's comment: “the displayed square is cartesian, for any base-changed fibre square over W”.
 
 > **Stacks Project, Tag 07SV.** The displayed square of the proof of absolute Noetherian
 > approximation, in the form in which the proof establishes it.
@@ -78,7 +78,7 @@ theorem isPullback_gluedRelationSource_of_isPullback
     IsPullback r s s' v
 ```
 
-**`AlgebraicGeometry.isPullback_gluedRelationSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L378). The attribute's comment: “the displayed square for R\_i glued from V\_i and W\_i x\_\{U\_i} W\_i is cartesian”.
+**`AlgebraicGeometry.isPullback_gluedRelationSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L378). The attribute's comment: “the displayed square for R\_i glued from V\_i and W\_i x\_\{U\_i} W\_i is cartesian”.
 
 > **Stacks Project, Tag 07SV.** The displayed square of the proof of absolute Noetherian
 > approximation, written out for the construction the source performs. Let `w' : W' ⟶ U'` be
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.8, Tag 07SS](https://stacks.math.columbia.edu/tag/07SS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

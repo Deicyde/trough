@@ -7,7 +7,7 @@ proof: formalized
 
 # Kleene's Algorithm
 
-`Cslib.Computability.Languages.KleeneAlgorithm`, in [Cslib/Computability/Languages/KleeneAlgorithm.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean), by Brooke Gill, Chi-Yun Hsu.
+`Cslib.Computability.Languages.KleeneAlgorithm`, in [Cslib/Computability/Languages/KleeneAlgorithm.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean), by Brooke Gill, Chi-Yun Hsu.
 
 > Kleene's algorithm constructs a regular expression by induction on a bound that restricts
 > which interior states an execution may pass through.
@@ -35,7 +35,7 @@ proof: formalized
 > * [J. E. Hopcroft, R. Motwani, J. D. Ullman,
 >   *Introduction to Automata Theory, Languages, and Computation*][Hopcroft2006]
 
-`List.AllButFirstLast` (definition, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L51))
+`List.AllButFirstLast` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L51))
 
 > All but the first and last elements of the list `as` satisfy the predicate `p`.
 
@@ -43,21 +43,21 @@ proof: formalized
 def AllButFirstLast (p : α → Bool) (as : List α) : Prop
 ```
 
-`List.allButFirstLast_iff_getElem` (theorem, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L54))
+`List.allButFirstLast_iff_getElem` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L54))
 
 ```lean
 theorem allButFirstLast_iff_getElem (p : α → Bool) (as : List α) :
     as.AllButFirstLast p ↔ ∀ i (_ : 0 < i ∧ i < as.length - 1), p as[i]
 ```
 
-`List.allButFirstLast_imp` (theorem, [line 65](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L65))
+`List.allButFirstLast_imp` (theorem, [line 65](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L65))
 
 ```lean
 theorem allButFirstLast_imp {p q : α → Bool} {as : List α} (h : ∀ x, p x → q x)
     (hp : as.AllButFirstLast p) : as.AllButFirstLast q
 ```
 
-`List.allButFirstLast_append` (theorem, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L69))
+`List.allButFirstLast_append` (theorem, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L69))
 
 ```lean
 theorem allButFirstLast_append {p : α → Bool} {as bs : List α} (hlen : 0 < as.length)
@@ -65,7 +65,7 @@ theorem allButFirstLast_append {p : α → Bool} {as bs : List α} (hlen : 0 < a
     (as ++ bs.tail).AllButFirstLast p
 ```
 
-`List.findIdxButFirstLast?` (definition, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L85))
+`List.findIdxButFirstLast?` (definition, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L85))
 
 > The index of the first element in a list `as` that satisfies a predicate `p`,
 > excluding the first and last element.
@@ -74,14 +74,14 @@ theorem allButFirstLast_append {p : α → Bool} {as bs : List α} (hlen : 0 < a
 def findIdxButFirstLast? (p : α → Bool) (as : List α) : Option ℕ
 ```
 
-`List.findIdxButFirstLast?_isSome` (theorem, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L88))
+`List.findIdxButFirstLast?_isSome` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L88))
 
 ```lean
 theorem findIdxButFirstLast?_isSome (p : α → Bool) (as : List α) :
     (as.findIdxButFirstLast? p).isSome ↔ (∃ x ∈ as.tail.dropLast, p x)
 ```
 
-`List.findIdxButFirstLast?_eq` (theorem, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L92))
+`List.findIdxButFirstLast?_eq` (theorem, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L92))
 
 ```lean
 theorem findIdxButFirstLast?_eq {p : α → Bool} {as : List α} {i : ℕ} :
@@ -90,7 +90,7 @@ theorem findIdxButFirstLast?_eq {p : α → Bool} {as : List α} {i : ℕ} :
       ∀ j (_ : 0 < j ∧ j < i), p as[j] = false
 ```
 
-`List.findIdxButFirstLastRev?` (definition, [line 113](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L113))
+`List.findIdxButFirstLastRev?` (definition, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L113))
 
 > The index of the last element in a list `as` that satisfies a predicate `p`,
 > excluding the first and last element.
@@ -99,7 +99,7 @@ theorem findIdxButFirstLast?_eq {p : α → Bool} {as : List α} {i : ℕ} :
 def findIdxButFirstLastRev? (p : α → Bool) (as : List α) : Option ℕ
 ```
 
-`List.findIdxButFirstLastRev?_eq` (theorem, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L116))
+`List.findIdxButFirstLastRev?_eq` (theorem, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L116))
 
 ```lean
 theorem findIdxButFirstLastRev?_eq {p : α → Bool} {as : List α} {i : ℕ} :
@@ -108,7 +108,7 @@ theorem findIdxButFirstLastRev?_eq {p : α → Bool} {as : List α} {i : ℕ} :
       ∀ j (_ : i < j ∧ j < as.length - 1), p as[j] = false
 ```
 
-`Cslib.LTS.BddExec` (definition, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L148))
+`Cslib.LTS.BddExec` (definition, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L148))
 
 > An execution of an LTS with state type `Fin n`,
 > where all states of the execution except for the first and last are less than `bound`.
@@ -118,7 +118,7 @@ def BddExec (lts : LTS (Fin n) Symbol) (start : Fin n) (xs : List Symbol) (last 
     (ss : List (Fin n)) (bound : ℕ) : Prop
 ```
 
-`Cslib.LTS.bddLang` (definition, [line 153](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L153))
+`Cslib.LTS.bddLang` (definition, [line 153](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L153))
 
 > The language of finite words that are accepted by a `BddExec`.
 
@@ -126,21 +126,21 @@ def BddExec (lts : LTS (Fin n) Symbol) (start : Fin n) (xs : List Symbol) (last 
 def bddLang (lts : LTS (Fin n) Symbol) (start last : Fin n) (bound : ℕ) : Language Symbol
 ```
 
-`Cslib.LTS.bddLang_bound_zero` (theorem, [line 156](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L156))
+`Cslib.LTS.bddLang_bound_zero` (theorem, [line 156](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L156))
 
 ```lean
 theorem bddLang_bound_zero (lts : LTS (Fin n) Symbol) (s t : Fin n) {xs : List Symbol}
    (hxs : ¬xs = []) : xs ∈ lts.bddLang s t 0 ↔ ∃ a, lts.Tr s a t ∧ xs = [a]
 ```
 
-`Cslib.LTS.bddLang_eq_nfa` (theorem, [line 170](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L170))
+`Cslib.LTS.bddLang_eq_nfa` (theorem, [line 170](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L170))
 
 ```lean
 theorem bddLang_eq_nfa (lts : LTS (Fin n) Symbol) (s t : Fin n) {r : ℕ} (_ : n ≤ r) :
     lts.bddLang s t r = language (NA.FinAcc.mk ⟨lts, {s}⟩ {t})
 ```
 
-`Cslib.LTS.splitFirstTake` (definition, [line 187](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L187))
+`Cslib.LTS.splitFirstTake` (definition, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L187))
 
 > With an execution of the string `xs` through states `ss`,
 > `splitFirstTake xs ss r` returns a prefix of `xs`
@@ -153,7 +153,7 @@ theorem bddLang_eq_nfa (lts : LTS (Fin n) Symbol) (s t : Fin n) {r : ℕ} (_ : n
 def splitFirstTake (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Symbol
 ```
 
-`Cslib.LTS.splitFirstDrop` (definition, [line 198](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L198))
+`Cslib.LTS.splitFirstDrop` (definition, [line 198](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L198))
 
 > With an execution of the string `xs` through states `ss`,
 > `splitFirstDrop xs ss r` returns a suffix of `xs`
@@ -166,7 +166,7 @@ def splitFirstTake (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Sym
 def splitFirstDrop (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Symbol
 ```
 
-`Cslib.LTS.splitFirst_mem` (theorem, [line 203](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L203))
+`Cslib.LTS.splitFirst_mem` (theorem, [line 203](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L203))
 
 ```lean
 theorem splitFirst_mem {lts : LTS (Fin n) Symbol} {s t r : Fin n} {xs : List Symbol}
@@ -176,7 +176,7 @@ theorem splitFirst_mem {lts : LTS (Fin n) Symbol} {s t r : Fin n} {xs : List Sym
     splitFirstDrop xs ss r ∈ lts.bddLang r t (r + 1)
 ```
 
-`Cslib.LTS.bddLang_splitFirst` (theorem, [line 239](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L239))
+`Cslib.LTS.bddLang_splitFirst` (theorem, [line 239](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L239))
 
 > Part of the recursion step of Kleene's algorithm.
 > A run from `s` to `t` whose interior states are `≤ r` either has all interior states `< r`,
@@ -189,7 +189,7 @@ theorem bddLang_splitFirst (lts : LTS (Fin n) Symbol) (s t r : Fin n) :
     lts.bddLang s t (r + 1) = lts.bddLang s t r + lts.bddLang s r r * lts.bddLang r t (r + 1)
 ```
 
-`Cslib.LTS.splitLastTake` (definition, [line 269](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L269))
+`Cslib.LTS.splitLastTake` (definition, [line 269](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L269))
 
 > With an execution of the string `xs` through states `ss`,
 > `splitLastTake xs ss r` returns a prefix of `xs`
@@ -201,11 +201,11 @@ theorem bddLang_splitFirst (lts : LTS (Fin n) Symbol) (s t r : Fin n) :
 def splitLastTake (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Symbol
 ```
 
-`Cslib.LTS.splitLastDrop` (definition, [line 279](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L279))
+`Cslib.LTS.splitLastDrop` (definition, [line 279](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L279))
 
 > With an execution of the string `xs` through states `ss`,
-> `splitLastDrop xs ss r` returns a prefix of `xs`
-> which ends at the LAST occurrence (excluding the first and last state) of state `r` in `ss`.
+> `splitLastDrop xs ss r` returns a suffix of `xs`
+> which starts at the LAST occurrence (excluding the first and last state) of state `r` in `ss`.
 > When no such occurrence of `r` exists, `splitLastDrop` returns the full string.
 > The actual definition does not require an execution, just the string `xs` and the states `ss`.
 
@@ -213,7 +213,7 @@ def splitLastTake (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Symb
 def splitLastDrop (xs : List Symbol) (ss : List (Fin n)) (r : Fin n) : List Symbol
 ```
 
-`Cslib.LTS.splitLast_mem` (theorem, [line 284](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L284))
+`Cslib.LTS.splitLast_mem` (theorem, [line 284](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L284))
 
 ```lean
 theorem splitLast_mem {lts : LTS (Fin n) Symbol} {t r : Fin n} {xs : List Symbol}
@@ -222,7 +222,7 @@ theorem splitLast_mem {lts : LTS (Fin n) Symbol} {t r : Fin n} {xs : List Symbol
     splitLastDrop xs ss r ∈ lts.bddLang r t r
 ```
 
-`Cslib.LTS.splitLastDrop_mem_nonempty` (theorem, [line 318](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L318))
+`Cslib.LTS.splitLastDrop_mem_nonempty` (theorem, [line 318](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L318))
 
 ```lean
 theorem splitLastDrop_mem_nonempty {lts : LTS (Fin n) Symbol} {t r : Fin n} {xs : List Symbol}
@@ -230,7 +230,7 @@ theorem splitLastDrop_mem_nonempty {lts : LTS (Fin n) Symbol} {t r : Fin n} {xs 
     (hbdd : ss.AllButFirstLast (· ≤ r)) : splitLastDrop xs ss r ∈ lts.bddLang r t r - 1
 ```
 
-`Cslib.LTS.bddLang_splitLast` (theorem, [line 335](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L335))
+`Cslib.LTS.bddLang_splitLast` (theorem, [line 335](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L335))
 
 > Part of the recursion step of Kleene's algorithm.
 > An execution from `r` to `t` whose interior states are `≤ r` splits at its last visit to `r` into
@@ -242,18 +242,18 @@ theorem bddLang_splitLast (lts : LTS (Fin n) Symbol) (t r : Fin n) :
     lts.bddLang r t (r + 1) = lts.bddLang r r (r + 1) * lts.bddLang r t r
 ```
 
-`Cslib.LTS.bddLang_kstar` (theorem, [line 361](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L361))
+`Cslib.LTS.bddLang_kstar` (theorem, [line 361](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L361))
 
 > Part of the recursion step of Kleene's algorithm.
 > An execution from `r` to `r` whose interior states are `≤ r` is
-> a concatenation of executions from `r` to `r` whose interior states are all `≤ r`.
+> a concatenation of executions from `r` to `r` whose interior states are all `< r`.
 
 ```lean
 theorem bddLang_kstar (lts : LTS (Fin n) Symbol) (r : Fin n) :
     lts.bddLang r r (r + 1) = (lts.bddLang r r r)∗
 ```
 
-`Cslib.LTS.regex` (definition, [line 400](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L400))
+`Cslib.LTS.regex` (definition, [line 400](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L400))
 
 > `regex s t r` is the regular expression for the path from state `s` to `t`
 > passing through states `< r`.
@@ -266,7 +266,7 @@ theorem bddLang_kstar (lts : LTS (Fin n) Symbol) (r : Fin n) :
 noncomputable def regex (lts : LTS (Fin n) Symbol) (s t : Fin n) : ℕ → RegularExpression Symbol
 ```
 
-`Cslib.LTS.bddLang_eq_regex` (theorem, [line 411](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L411))
+`Cslib.LTS.bddLang_eq_regex` (theorem, [line 411](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L411))
 
 > `LTS.regex s t r` matches the language `LTS.bddLang s t r`.
 
@@ -275,7 +275,7 @@ theorem bddLang_eq_regex {r : ℕ} {lts : LTS (Fin n) Symbol} {s t : Fin n} :
     lts.bddLang s t r = (regex lts s t r).matches'
 ```
 
-`Cslib.LTS.fin_nfa_single_start_accept_eq_regex` (theorem, [line 443](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L443))
+`Cslib.LTS.fin_nfa_single_start_accept_eq_regex` (theorem, [line 443](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L443))
 
 > An NFA with state type `Fin n` and with exactly one start state `s` and
 > exactly one accept state `t` has a matching regular expression given by `LTS.regex s t n`.
@@ -285,7 +285,7 @@ theorem fin_nfa_single_start_accept_eq_regex (lts : LTS (Fin n) Symbol) (s t : F
     language (NA.FinAcc.mk ⟨lts, {s}⟩ {t}) = (lts.regex s t n).matches'
 ```
 
-`Cslib.Automata.NA.FinAcc.nfa_single_start_accept_reindex` (theorem, [line 453](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L453))
+`Cslib.Automata.NA.FinAcc.nfa_single_start_accept_reindex` (theorem, [line 453](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L453))
 
 ```lean
 theorem nfa_single_start_accept_reindex (nfa : NA.FinAcc State Symbol) (e : State ≃ State')
@@ -293,7 +293,7 @@ theorem nfa_single_start_accept_reindex (nfa : NA.FinAcc State Symbol) (e : Stat
     language nfa = language (NA.FinAcc.mk ⟨(nfa.toLTS.reindex e), {e s}⟩ {e t})
 ```
 
-`Cslib.Automata.NA.FinAcc.nfa_single_start_accept_eq_regex` (theorem, [line 466](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L466))
+`Cslib.Automata.NA.FinAcc.nfa_single_start_accept_eq_regex` (theorem, [line 466](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L466))
 
 > An NFA with exactly one start state and exactly one accept state
 > has a matching regular expression.
@@ -305,7 +305,7 @@ theorem nfa_single_start_accept_eq_regex [Finite Symbol] [Finite State]
     ∃ r : RegularExpression Symbol, language nfa = r.matches'
 ```
 
-`Cslib.Automata.NA.FinAcc.nfa_eq_regex` (theorem, [line 475](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean#L475))
+`Cslib.Automata.NA.FinAcc.nfa_eq_regex` (theorem, [line 475](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean#L475))
 
 > Any NFA has a matching regular expression.
 
@@ -325,5 +325,5 @@ theorem nfa_eq_regex [Finite Symbol] [Finite State] (nfa : NA.FinAcc State Symbo
 
 ## Sources
 
-- [Cslib/Computability/Languages/KleeneAlgorithm.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/KleeneAlgorithm.lean)
+- [Cslib/Computability/Languages/KleeneAlgorithm.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/KleeneAlgorithm.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.KleeneAlgorithm.json)

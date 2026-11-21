@@ -8,7 +8,7 @@ proof: formalized
 
 # 76.17 Infinitesimal deformations of maps
 
-Section 76.17 of the Stacks Project, [Tag 0617](https://stacks.math.columbia.edu/tag/0617). 11 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 14 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.17 of the Stacks Project, [Tag 0617](https://stacks.math.columbia.edu/tag/0617). 11 tags here are carried by 47 declarations of the repository (all in StacksFrontier) and 14 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0617, the section
 
@@ -16,26 +16,26 @@ Section 76.17 of the Stacks Project, [Tag 0617](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_derivation_of_conormalMap_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L232), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L90) (StacksFrontier): “Lemma 0618 of the section: two morphisms of first order thickenings over B with a = b and the same map of conormal modules differ by an 𝒪\_B-derivation D”.
-- [`AlgebraicGeometry.Space.derivationDirectImageEquiv`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L94) (StacksFrontier): “Equation 0619 of the section: the bijection θ ↔ D = d\_\{Y/B} ∘ θ between maps a^*Ω\_\{Y/B} ⟶ C and 𝒪\_B-derivations 𝒪\_Y ⟶ a\_*C”.
-- [`AlgebraicGeometry.Space.derivationDirectImageEquiv_apply`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L98) (StacksFrontier): “Equation 0619 of the section: the derivation attached to θ is d\_\{Y/B} followed by the transpose of θ”.
-- [`AlgebraicGeometry.Space.existsUnique_hom_conormalMap_eq_derivation_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L102) (StacksFrontier): “Lemma 04D0 of the section: θ moves (a, a') to a unique morphism of pairs (a, b') with the same map of conormal modules and D = d\_\{Y/B} ∘ θ”.
-- [`AlgebraicGeometry.Space.derivationMove_spec`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L106) (StacksFrontier): “Remark 0CK6 of the section: the action θ · a', whose comorphism differs from that of a' by the derivation related to θ by Equation 0619”.
-- [`AlgebraicGeometry.Space.conormalLiftSubfunctor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L390), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L110) (StacksFrontier): “Equation 061B of the section: the rule U' ↦ \{a' : U' → Y' such that (1), (2), (3) hold} on (X')\_\{spaces, étale}, with restriction a' ↦ a'|\_\{V'}”.
-- [`AlgebraicGeometry.Space.isSheaf_conormalLiftSubfunctor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L465), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L114) (StacksFrontier): “Lemma 061A of the section: the rule of Equation 061B is a sheaf of sets on (X')\_\{spaces, étale}”.
-- [`AlgebraicGeometry.Space.isSheaf_conormalLiftActingPresheaf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L118) (StacksFrontier): “Lemma 061C of the section: the sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}), read on (X')\_\{spaces, étale} through 05ZL, which acts”.
-- [`AlgebraicGeometry.Space.conormalLiftSheafAddAction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L242), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L122) (StacksFrontier): “Lemma 061C of the section: the action on the sections of the sheaf 061B”.
-- [`AlgebraicGeometry.Space.conormalLiftAction_map`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean#L433), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L125) (StacksFrontier): “Lemma 061C of the section: the action commutes with restriction”.
-- [`AlgebraicGeometry.Space.conormalLiftSheafAddAction_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L254), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L128) (StacksFrontier): “Lemma 061C of the section: the action is simply transitive over every U' over which the sheaf 061B has a section”.
-- [`AlgebraicGeometry.Space.liftSubfunctor_remark_of_eq_top`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L132) (StacksFrontier): “Remark 061D of the section: for Y = Y' the map A is zero, the sheaf of 061A is U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) acts on it”.
-- [`AlgebraicGeometry.Space.liftSubfunctor_remark_of_cartesian`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean#L612), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L136) (StacksFrontier): “Remark 0CK7 of the section: for a base thickening Z ⊂ Z' and Y = Z ×\_\{Z'} Y' the map A is determined by a, the sheaf of 061A is U' ↦ \{a' : U' → Y' over Z' with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/Z}, C\_\{X/X'}) acts on it”.
-- [`AlgebraicGeometry.Space.derivationMove_comp_of_etale`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean#L272), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L141) (StacksFrontier): “Lemma 0CK8 of the section: for X₂ → X₁ and B₂ → B₁ étale the action is compatible with étale localization, (θ₂ · a₂') ≫ f' = h' ≫ (θ₁ · a₁')”.
+- [`AlgebraicGeometry.Space.exists_derivation_of_conormalMap_eq`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L232), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L90) (StacksFrontier): “Lemma 0618 of the section: two morphisms of first order thickenings over B with a = b and the same map of conormal modules differ by an 𝒪\_B-derivation D”.
+- [`AlgebraicGeometry.Space.derivationDirectImageEquiv`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L94) (StacksFrontier): “Equation 0619 of the section: the bijection θ ↔ D = d\_\{Y/B} ∘ θ between maps a^*Ω\_\{Y/B} ⟶ C and 𝒪\_B-derivations 𝒪\_Y ⟶ a\_*C”.
+- [`AlgebraicGeometry.Space.derivationDirectImageEquiv_apply`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L98) (StacksFrontier): “Equation 0619 of the section: the derivation attached to θ is d\_\{Y/B} followed by the transpose of θ”.
+- [`AlgebraicGeometry.Space.existsUnique_hom_conormalMap_eq_derivation_eq`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L102) (StacksFrontier): “Lemma 04D0 of the section: θ moves (a, a') to a unique morphism of pairs (a, b') with the same map of conormal modules and D = d\_\{Y/B} ∘ θ”.
+- [`AlgebraicGeometry.Space.derivationMove_spec`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L106) (StacksFrontier): “Remark 0CK6 of the section: the action θ · a', whose comorphism differs from that of a' by the derivation related to θ by Equation 0619”.
+- [`AlgebraicGeometry.Space.conormalLiftSubfunctor`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L390), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L110) (StacksFrontier): “Equation 061B of the section: the rule U' ↦ \{a' : U' → Y' such that (1), (2), (3) hold} on (X')\_\{spaces, étale}, with restriction a' ↦ a'|\_\{V'}”.
+- [`AlgebraicGeometry.Space.isSheaf_conormalLiftSubfunctor`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L465), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L114) (StacksFrontier): “Lemma 061A of the section: the rule of Equation 061B is a sheaf of sets on (X')\_\{spaces, étale}”.
+- [`AlgebraicGeometry.Space.isSheaf_conormalLiftActingPresheaf`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L118) (StacksFrontier): “Lemma 061C of the section: the sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}), read on (X')\_\{spaces, étale} through 05ZL, which acts”.
+- [`AlgebraicGeometry.Space.conormalLiftSheafAddAction`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L242), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L122) (StacksFrontier): “Lemma 061C of the section: the action on the sections of the sheaf 061B”.
+- [`AlgebraicGeometry.Space.conormalLiftAction_map`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean#L433), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L125) (StacksFrontier): “Lemma 061C of the section: the action commutes with restriction”.
+- [`AlgebraicGeometry.Space.conormalLiftSheafAddAction_bijective`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L254), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L128) (StacksFrontier): “Lemma 061C of the section: the action is simply transitive over every U' over which the sheaf 061B has a section”.
+- [`AlgebraicGeometry.Space.liftSubfunctor_remark_of_eq_top`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L132) (StacksFrontier): “Remark 061D of the section: for Y = Y' the map A is zero, the sheaf of 061A is U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) acts on it”.
+- [`AlgebraicGeometry.Space.liftSubfunctor_remark_of_cartesian`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean#L612), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L136) (StacksFrontier): “Remark 0CK7 of the section: for a base thickening Z ⊂ Z' and Y = Z ×\_\{Z'} Y' the map A is determined by a, the sheaf of 061A is U' ↦ \{a' : U' → Y' over Z' with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/Z}, C\_\{X/X'}) acts on it”.
+- [`AlgebraicGeometry.Space.derivationMove_comp_of_etale`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean#L272), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InfinitesimalDeformationsOfMaps.lean#L141) (StacksFrontier): “Lemma 0CK8 of the section: for X₂ → X₁ and B₂ → B₁ étale the action is compatible with étale localization, (θ₂ · a₂') ≫ f' = h' ≫ (θ₁ · a₁')”.
 
 ## Tag 0618, a lemma
 
 [Tag 0618](https://stacks.math.columbia.edu/tag/0618) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_derivation_of_conormalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L232). The attribute's comment: “(a')^♯ − (b')^♯ factors as 𝒪\_\{Y'} → 𝒪\_Y → a\_*𝒞\_\{X/X'} → a\_*𝒪\_\{X'} through an 𝒪\_B-derivation D, read on the small étale site of Y”.
+**`AlgebraicGeometry.Space.exists_derivation_of_conormalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L232). The attribute's comment: “(a')^♯ − (b')^♯ factors as 𝒪\_\{Y'} → 𝒪\_Y → a\_*𝒞\_\{X/X'} → a\_*𝒪\_\{X'} through an 𝒪\_B-derivation D, read on the small étale site of Y”.
 
 > **[Stacks Project, Tag 0618].**  Let `(e₀, c), (e₀, c') : (Z ⊂ X) ⟶ (W₀ ⊂ W)` be two morphisms
 > of first order thickenings over `T` with the same reduction `e₀` (condition (1)) and the same
@@ -62,7 +62,7 @@ theorem exists_derivation_of_conormalMap_eq (c c' : X ⟶ W)
             (restrictedSharpThroughThickening B S hS Z W₀ c' e₀ hc').hom.app V x
 ```
 
-**`AlgebraicGeometry.Space.exists_derivation_restrictedSharpThroughThickening_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceThickeningDerivation.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceThickeningDerivation.lean#L133). The attribute's comment: “the full statement: for two morphisms of first order thickenings over T with equal restriction f and equal maps f^*C ⟶ C of 04CP, c^♯ - c'^♯, read on the small étale site of the reduced target, factors as j^♯ : j^\{-1}O\_W ⟶ O\_\{W₀} followed by an O\_T-derivation D into f\_*C\_\{Z/X} and the inclusion f\_*C\_\{Z/X} ⟶ f\_*(i^\{-1}O\_X)”.
+**`AlgebraicGeometry.Space.exists_derivation_restrictedSharpThroughThickening_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceThickeningDerivation.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceThickeningDerivation.lean#L133). The attribute's comment: “the full statement: for two morphisms of first order thickenings over T with equal restriction f and equal maps f^*C ⟶ C of 04CP, c^♯ - c'^♯, read on the small étale site of the reduced target, factors as j^♯ : j^\{-1}O\_W ⟶ O\_\{W₀} followed by an O\_T-derivation D into f\_*C\_\{Z/X} and the inclusion f\_*C\_\{Z/X} ⟶ f\_*(i^\{-1}O\_X)”.
 
 > **[Stacks Project, Tag 0618].**  Let `Z ⊆ X` and `W₀ ⊆ W` be first-order thickenings of
 > algebraic spaces over an algebraic space `T`, and let `(f, c)` and `(f, c')` be two morphisms of
@@ -101,7 +101,7 @@ theorem exists_derivation_restrictedSharpThroughThickening_sub
 
 [Tag 0619](https://stacks.math.columbia.edu/tag/0619) in the Stacks Project.
 
-**`Stacks.Sheaves.Differentials.universalDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean#L115). The attribute's comment: “the factorization D = d o theta of a derivation through the universal derivation”.
+**`Stacks.Sheaves.Differentials.universalDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsRepresentable.lean#L115). The attribute's comment: “the factorization D = d o theta of a derivation through the universal derivation”.
 
 > Every relative derivation with values in a sheaf of modules factors through the universal
 > derivation by a unique morphism of sheaves of modules.
@@ -114,7 +114,7 @@ theorem universalDerivation_isUniversal
       (universalDerivation O₁ O₂ φ).postcomp f.val = D
 ```
 
-**`AlgebraicGeometry.Space.derivationDirectImageEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L96). The attribute's comment: “the bijection `θ ↔ D = d_{Y/B} ∘ θ`, stated at a general target module”.
+**`AlgebraicGeometry.Space.derivationDirectImageEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L96). The attribute's comment: “the bijection `θ ↔ D = d_{Y/B} ∘ θ`, stated at a general target module”.
 
 > **Stacks 0619.** For `a : X ⟶ Y`, `b : Y ⟶ Z` and an `𝒪_X`-module `C`, the `𝒪_X`-linear
 > maps `θ : a^*Ω_{Y/Z} ⟶ C` correspond bijectively to the `Z`-derivations `D : 𝒪_Y ⟶ a_*C`, by
@@ -128,7 +128,7 @@ def derivationDirectImageEquiv (a : X ⟶ Y) (b : Y ⟶ Z)
         (structureSharpInverseImage B S hS b).hom
 ```
 
-**`AlgebraicGeometry.Space.derivationDirectImageEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L107). The attribute's comment: “the equation `D = d_{Y/B} ∘ θ`”.
+**`AlgebraicGeometry.Space.derivationDirectImageEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DerivationsIntoDirectImage.lean#L107). The attribute's comment: “the equation `D = d_{Y/B} ∘ θ`”.
 
 > **Equation (0619) itself.**  The derivation attached to `θ : a^*Ω_{Y/Z} ⟶ C` is the
 > universal derivation `d_{Y/Z}` followed by the transpose of `θ` along `a^* ⊣ a_*`.
@@ -142,7 +142,7 @@ theorem derivationDirectImageEquiv_apply (a : X ⟶ Y) (b : Y ⟶ Z)
         (((modulePullbackAdjunction B S hS a).homEquiv _ _) θ).val
 ```
 
-**`AlgebraicGeometry.Space.restrictedLiftDifferenceHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferencePairHom.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferencePairHom.lean#L96). The attribute's comment: “the linear map attached to the derivation by which the two comorphisms differ”.
+**`AlgebraicGeometry.Space.restrictedLiftDifferenceHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferencePairHom.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferencePairHom.lean#L96). The attribute's comment: “the linear map attached to the derivation by which the two comorphisms differ”.
 
 > **The linear map `θ : e₀^*Ω_{W₀/Bas} ⟶ 𝒞_{Z/X}` by which two morphisms agreeing on the
 > thickening and over `qb` differ.**  This is
@@ -172,7 +172,7 @@ abbrev restrictedLiftDifferenceHom (c c' : X ⟶ W)
       conormalModule B S hS X Z
 ```
 
-**`AlgebraicGeometry.Space.undeformedLiftDiff`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean#L157). The attribute's comment: “the difference read as a map out of the pulled back differentials, for an undeformed target”.
+**`AlgebraicGeometry.Space.undeformedLiftDiff`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTarget.lean#L157). The attribute's comment: “the difference read as a map out of the pulled back differentials, for an undeformed target”.
 
 > **The `𝒪_Z`-linear map `a^*Ω_{W/V} ⟶ 𝒞_{Z/X}` by which two lifts into an undeformed target
 > differ.**  The sectionwise difference of their two comorphisms, read as a `V`-derivation of
@@ -190,7 +190,7 @@ def undeformedLiftDiff (c c' : X ⟶ W)
 
 [Tag 04D0](https://stacks.math.columbia.edu/tag/04D0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_hom_restrictedSharpThroughThickening_eq_restrictedLiftSolutionOfHom_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationActionChart.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationActionChart.lean#L452). The attribute's comment: “the existence clause at the source's hypotheses: a prescribed O\_X-linear map theta is realized by a morphism over the base agreeing with the given one on the thickening, its comorphism being the modification of the given one by the derivation d o theta of Equation 0619 -- with no appeal to Theorem 04KL. Uniqueness is not claimed here”.
+**`AlgebraicGeometry.Space.exists_hom_restrictedSharpThroughThickening_eq_restrictedLiftSolutionOfHom_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationActionChart.lean, line 452](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationActionChart.lean#L452). The attribute's comment: “the existence clause at the source's hypotheses: a prescribed O\_X-linear map theta is realized by a morphism over the base agreeing with the given one on the thickening, its comorphism being the modification of the given one by the derivation d o theta of Equation 0619 -- with no appeal to Theorem 04KL. Uniqueness is not claimed here”.
 
 > **The existence clause of [Stacks Project, Tag 04D0] at the source's hypotheses, with no
 > appeal to Properties of Spaces, Theorem [Stacks Project, Tag 04KL].**
@@ -226,7 +226,7 @@ theorem exists_hom_restrictedSharpThroughThickening_eq_restrictedLiftSolutionOfH
           restrictedLiftSolutionOfHom B S hS Z hZ c W₀ e₀ hce b θ
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_thickeningLiftOver_sub_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L345). The attribute's comment: “existence and uniqueness of the morphism of pairs (a, b') satisfying (1) and (2) of 0618 whose comorphism differs from that of a' by the derivation d o theta of Equation 0619”.
+**`AlgebraicGeometry.Space.existsUnique_thickeningLiftOver_sub_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L345). The attribute's comment: “existence and uniqueness of the morphism of pairs (a, b') satisfying (1) and (2) of 0618 whose comorphism differs from that of a' by the derivation d o theta of Equation 0619”.
 
 > Let `(e₀, c) : (Z ⊂ X) ⟶ (W₀ ⊂ W)` be a morphism of first order thickenings over `Bas` and
 > let `θ : e₀^*Ω_{W₀/Bas₀} ⟶ 𝒞_{Z/X}` be `𝒪_Z`-linear.  Then
@@ -261,7 +261,7 @@ theorem existsUnique_thickeningLiftOver_sub_eq
           thickeningDerivationValue B S hS Z hZ W₀ e₀ b θ V x
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModificationHomOfMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean#L333). The attribute's comment: “the morphism of pairs (b, b') and its uniqueness, for the modified structure map alpha = (a')^sharp + D BUILT from theta by Equation 0619: alpha is constructed, and its three properties that Stacks 05ZN consumes -- locally ringed, the square, the O\_T-algebra condition -- are proved outright, as is the recovery of morphisms of algebraic spaces from morphisms of their small etale ringed topoi over a base, isRecoveredFromSmallEtale\_holds; the uniqueness alone is also eq\_of\_derivationModificationHomOfMap\_induces”.
+**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModificationHomOfMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean, line 333](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean#L333). The attribute's comment: “the morphism of pairs (b, b') and its uniqueness, for the modified structure map alpha = (a')^sharp + D BUILT from theta by Equation 0619: alpha is constructed, and its three properties that Stacks 05ZN consumes -- locally ringed, the square, the O\_T-algebra condition -- are proved outright, as is the recovery of morphisms of algebraic spaces from morphisms of their small etale ringed topoi over a base, isRecoveredFromSmallEtale\_holds; the uniqueness alone is also eq\_of\_derivationModificationHomOfMap\_induces”.
 
 > **[Stacks Project, Tag 04D0], with the recovery of morphisms over the base as its only
 > argument.**  For a morphism `(a, a')` of first order thickenings over `T` and an `𝒪_X`-linear
@@ -290,7 +290,7 @@ theorem existsUnique_hom_of_derivationModificationHomOfMap
       b' ≫ p = a' ≫ p
 ```
 
-**`AlgebraicGeometry.Space.eq_of_derivationModificationHomOfMap_induces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean#L365). The attribute's comment: “the uniqueness of the morphism of pairs (b, b'), for the modified structure map alpha = (a')^sharp + D built from theta by Equation 0619: no recovery of morphisms over the base (Stacks 04KL) and no property of alpha is used, only Stacks 04M6”.
+**`AlgebraicGeometry.Space.eq_of_derivationModificationHomOfMap_induces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationModificationMorphism.lean#L365). The attribute's comment: “the uniqueness of the morphism of pairs (b, b'), for the modified structure map alpha = (a')^sharp + D built from theta by Equation 0619: no recovery of morphisms over the base (Stacks 04KL) and no property of alpha is used, only Stacks 04M6”.
 
 > **The uniqueness half of [Stacks Project, Tag 04D0], with nothing assumed.**  Two morphisms
 > `b₁', b₂' : X' ⟶ Y'` whose structure maps are both the modification `α = (a')^♯ + D` of the
@@ -316,7 +316,7 @@ theorem eq_of_derivationModificationHomOfMap_induces (b₁' b₂' : X' ⟶ Y')
     b₁' = b₂'
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_hom_conormalMap_eq_derivation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L86). The attribute's comment: “the morphism of pairs (b, b') = (a, b') moved by θ: conditions (1) and (2) of 0618, with the derivation D of 0618 equal to d\_\{Y/B} ∘ θ (Equation 0619)”.
+**`AlgebraicGeometry.Space.existsUnique_hom_conormalMap_eq_derivation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L86). The attribute's comment: “the morphism of pairs (b, b') = (a, b') moved by θ: conditions (1) and (2) of 0618, with the derivation D of 0618 equal to d\_\{Y/B} ∘ θ (Equation 0619)”.
 
 > **[Stacks Project, Tag 04D0].**  Let `(e₀, c) : (Z ⊂ X) ⟶ (W₀ ⊂ W)` be a morphism of first
 > order thickenings over `T` (`i ≫ c = e₀ ≫ j` and `c ≫ q = p`), and let
@@ -349,7 +349,7 @@ theorem existsUnique_hom_conormalMap_eq_derivation_eq
               (restrictedSharpThroughThickening B S hS Z W₀ b' e₀ hb).hom.app V x
 ```
 
-**`AlgebraicGeometry.Space.exists_undeformedLiftDiff_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean#L314). The attribute's comment: “the existence half: every linear map is the difference from a given lift of some lift, for an UNDEFORMED target”.
+**`AlgebraicGeometry.Space.exists_undeformedLiftDiff_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean#L314). The attribute's comment: “the existence half: every linear map is the difference from a given lift of some lift, for an UNDEFORMED target”.
 
 > **The existence half of [Stacks Project, Tag 04D0] for an undeformed target.**  Every
 > `𝒪_Z`-linear map `θ : a^*Ω_{W/V} ⟶ 𝒞_{Z/X}` is the difference from `c` of some lift `c'` of
@@ -374,7 +374,7 @@ theorem exists_undeformedLiftDiff_eq :
       undeformedLiftDiff B S hS Z hZ (subspaceInclusion B S hS X Z ≫ c) b c c' rfl h' hb = θ
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_undeformedLiftDiff_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean#L376). The attribute's comment: “existence and uniqueness of the lift with a prescribed difference from a given lift, for an UNDEFORMED target”.
+**`AlgebraicGeometry.Space.existsUnique_undeformedLiftDiff_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetSurjective.lean#L376). The attribute's comment: “existence and uniqueness of the lift with a prescribed difference from a given lift, for an UNDEFORMED target”.
 
 > **[Stacks Project, Tag 04D0] for an undeformed target.**  For every `𝒪_Z`-linear map
 > `θ : a^*Ω_{W/V} ⟶ 𝒞_{Z/X}` there is exactly one lift of `a = i ≫ c` over `V` whose difference
@@ -394,7 +394,7 @@ theorem existsUnique_undeformedLiftDiff_eq :
         p.2.1 p.2.2 = θ
 ```
 
-**`AlgebraicGeometry.Space.eq_of_undeformedLiftDiff_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetUnique.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetUnique.lean#L99). The attribute's comment: “the uniqueness half: a lift is determined by its difference from a given lift, for an UNDEFORMED target”.
+**`AlgebraicGeometry.Space.eq_of_undeformedLiftDiff_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetUnique.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftDifferenceUndeformedTargetUnique.lean#L99). The attribute's comment: “the uniqueness half: a lift is determined by its difference from a given lift, for an UNDEFORMED target”.
 
 > **The uniqueness half of [Stacks Project, Tag 04D0] for an undeformed target.**  Two lifts
 > of `a` over `V` along the first order thickening `Z ⊂ X` whose difference vanishes are equal.
@@ -407,7 +407,7 @@ theorem eq_of_undeformedLiftDiff_eq_zero (c c' : X ⟶ W)
     c = c'
 ```
 
-**`AlgebraicGeometry.Space.eq_of_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L190). The attribute's comment: “the uniqueness clause: a companion of the given morphism of thickenings is determined by its difference”.
+**`AlgebraicGeometry.Space.eq_of_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L190). The attribute's comment: “the uniqueness clause: a companion of the given morphism of thickenings is determined by its difference”.
 
 > **The difference determines the companion:** two morphisms which restrict on the thickening
 > to the same morphism, agree with `c₀` over `Bas`, induce the same map of conormal modules as
@@ -447,7 +447,7 @@ theorem eq_of_restrictedLiftDifferenceHom_eq (c₀ c c' : X ⟶ W)
     c = c'
 ```
 
-**`AlgebraicGeometry.Space.exists_hom_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L350). The attribute's comment: “the existence clause: every linear map out of the pulled back differentials is the difference of the given morphism of thickenings and a second one”.
+**`AlgebraicGeometry.Space.exists_hom_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L350). The attribute's comment: “the existence clause: every linear map out of the pulled back differentials is the difference of the given morphism of thickenings and a second one”.
 
 > **Every linear map is a difference.**  For an `𝒪_Z`-linear map
 > `θ : e₀^*Ω_{W₀/Bas} ⟶ 𝒞_{Z/X}` there is a morphism `c : X ⟶ W` restricting on the thickening
@@ -479,7 +479,7 @@ theorem exists_hom_restrictedLiftDifferenceHom_eq (c₀ : X ⟶ W)
       restrictedLiftDifferenceHom B S hS Z W₀ hZ e₀ qb c₀ c h₀ h hker hcc = θ
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_hom_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L403). The attribute's comment: “the unique second morphism of thickenings with a prescribed difference, with no stand-in: the existence of the moved solution and the faithfulness of the transported comorphism replace the recovery of a morphism from its comorphism”.
+**`AlgebraicGeometry.Space.existsUnique_hom_restrictedLiftDifferenceHom_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftSimpleTransitivity.lean#L403). The attribute's comment: “the unique second morphism of thickenings with a prescribed difference, with no stand-in: the existence of the moved solution and the faithfulness of the transported comorphism replace the recovery of a morphism from its comorphism”.
 
 > **Stacks 04D0.**  For a morphism `c₀ : X ⟶ W` restricting on the first order thickening
 > `Z ⊂ X` to `e₀` read through the inclusion of the closed subspace `W₀ ⊆ W`, and for an
@@ -514,7 +514,7 @@ theorem existsUnique_hom_restrictedLiftDifferenceHom_eq (c₀ : X ⟶ W)
       restrictedLiftDifferenceHom B S hS Z W₀ hZ e₀ qb c₀ c h₀ h hker hcc = θ
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModification_of_mono_toSpecΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L470). The attribute's comment: “over a base SCHEME whose canonical morphism to the spectrum of its global functions is a monomorphism -- an affine base, a quasi-affine base: the morphism of pairs and its uniqueness, with the modified structure map (a')^sharp + D taken as an argument (`DerivationModification`), which packages that sum as a morphism of ringed topoi together with the two 2-isomorphisms Stacks 05ZN consumes. The recovery of morphisms over the base is NOT taken as an argument any more: it is proved for such a base scheme by `isRecoveredFromSmallEtale_of_mono_toSpecGamma`, which is where the hypothesis on the base enters and the only place it enters”.
+**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModification_of_mono_toSpecΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 470](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L470). The attribute's comment: “over a base SCHEME whose canonical morphism to the spectrum of its global functions is a monomorphism -- an affine base, a quasi-affine base: the morphism of pairs and its uniqueness, with the modified structure map (a')^sharp + D taken as an argument (`DerivationModification`), which packages that sum as a morphism of ringed topoi together with the two 2-isomorphisms Stacks 05ZN consumes. The recovery of morphisms over the base is NOT taken as an argument any more: it is proved for such a base scheme by `isRecoveredFromSmallEtale_of_mono_toSpecGamma`, which is where the hypothesis on the base enters and the only place it enters”.
 
 > **Stacks 04D0**, with the recovery of morphisms over the base and the modification datum
 > taken as arguments.  For a morphism `(a, a')`
@@ -535,7 +535,7 @@ theorem existsUnique_hom_of_derivationModification_of_mono_toSpecΓ (hSmono : Mo
       b' ≫ pY' = pX'
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L489). The attribute's comment: “the morphism of pairs and its uniqueness, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the modified structure map (a')^sharp + D taken as an argument (`DerivationModification`), since forming that sum needs the structure-sheaf half of 05ZM”.
+**`AlgebraicGeometry.Space.existsUnique_hom_of_derivationModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 489](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L489). The attribute's comment: “the morphism of pairs and its uniqueness, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the modified structure map (a')^sharp + D taken as an argument (`DerivationModification`), since forming that sum needs the structure-sheaf half of 05ZM”.
 
 > **Stacks 04D0 with the recovery of morphisms over the base taken as an argument.**
 >
@@ -554,7 +554,7 @@ theorem existsUnique_hom_of_derivationModification (hKL : IsRecoveredFromSmallEt
       b' ≫ pY' = pX'
 ```
 
-**`AlgebraicGeometry.Space.eq_of_derivationModification_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L526). The attribute's comment: “injectivity of the correspondence theta -> b', with the modified structure map taken as an argument (`DerivationModification`)”.
+**`AlgebraicGeometry.Space.eq_of_derivationModification_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 526](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L526). The attribute's comment: “injectivity of the correspondence theta -> b', with the modified structure map taken as an argument (`DerivationModification`)”.
 
 > **The correspondence of [Stacks Project, Tag 04D0] is injective.**  Two `𝒪_X`-linear maps
 > `θ` which modify the structure map of `a'` to the same morphism of thickenings are equal.
@@ -567,7 +567,7 @@ theorem eq_of_derivationModification_eq (M : DerivationModification B S hS hG hH
     θ₁ = θ₂
 ```
 
-**`AlgebraicGeometry.Space.eq_of_derivationModification_base_of_induces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L542). The attribute's comment: “that the zero map returns the given morphism of thickenings, with the modified structure map taken as an argument (`DerivationModification`). The recovery of morphisms over the base is NOT taken as an argument: only the faithfulness half of 04KL is used here, and that is proved, by `eq_of_inducesCommonSmallEtaleRingedToposHom`”.
+**`AlgebraicGeometry.Space.eq_of_derivationModification_base_of_induces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 542](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L542). The attribute's comment: “that the zero map returns the given morphism of thickenings, with the modified structure map taken as an argument (`DerivationModification`). The recovery of morphisms over the base is NOT taken as an argument: only the faithfulness half of 04KL is used here, and that is proved, by `eq_of_inducesCommonSmallEtaleRingedToposHom`”.
 
 > **The zero map of [Stacks Project, Tag 04D0] does not move `a'`.**  The morphism of
 > thickenings whose structure map is the modification of `(a')^♯` by the zero map is `a'`
@@ -580,7 +580,7 @@ theorem eq_of_derivationModification_base_of_induces
     b' = a'
 ```
 
-**`AlgebraicGeometry.Space.eq_of_derivationModification_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L559). The attribute's comment: “that the zero map returns the given morphism of thickenings, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the modified structure map taken as an argument (`DerivationModification`)”.
+**`AlgebraicGeometry.Space.eq_of_derivationModification_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean, line 559](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/MorphismFromStructureMap/DerivationModification.lean#L559). The attribute's comment: “that the zero map returns the given morphism of thickenings, with the recovery of morphisms over the base taken as an argument (`IsRecoveredFromSmallEtale`, which is Stacks 04KL over a base) and with the modified structure map taken as an argument (`DerivationModification`)”.
 
 > **The zero map of [Stacks Project, Tag 04D0] does not move `a'`**, with the recovery of
 > morphisms over the base taken as an argument.
@@ -601,7 +601,7 @@ theorem eq_of_derivationModification_base (hKL : IsRecoveredFromSmallEtale B S h
 
 [Tag 0CK6](https://stacks.math.columbia.edu/tag/0CK6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivationTranslate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L184). The attribute's comment: “the morphism theta . a' of thickenings over the base”.
+**`AlgebraicGeometry.Space.derivationTranslate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L184). The attribute's comment: “the morphism theta . a' of thickenings over the base”.
 
 > **The morphism `θ · c`.**  For a morphism of thickenings `c` extending `e₀` and an
 > `𝒪_Z`-linear map `θ : e₀^*Ω_{W₀/Bas₀} ⟶ 𝒞_{Z/X}`, the morphism of thickenings extending `e₀`
@@ -614,7 +614,7 @@ noncomputable def derivationTranslate
     (c : ThickeningLiftOver B S hS Z W₀ e₀ r p) : ThickeningLiftOver B S hS Z W₀ e₀ r p
 ```
 
-**`AlgebraicGeometry.Space.thickeningLiftSharp_sub_thickeningLiftSharp_derivationTranslate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L214). The attribute's comment: “the comorphisms of a' and theta . a' differ by the derivation D = d o theta of Equation 0619”.
+**`AlgebraicGeometry.Space.thickeningLiftSharp_sub_thickeningLiftSharp_derivationTranslate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L214). The attribute's comment: “the comorphisms of a' and theta . a' differ by the derivation D = d o theta of Equation 0619”.
 
 > **The comorphisms of `c` and of `θ · c` differ by the derivation related to `θ` by
 > Equation (0619).**  On every section `s` of `j^{-1}𝒪_W`,
@@ -638,7 +638,7 @@ theorem thickeningLiftSharp_sub_thickeningLiftSharp_derivationTranslate
       thickeningDerivationValue B S hS Z hZ W₀ e₀ b θ V x
 ```
 
-**`AlgebraicGeometry.Space.eq_derivationTranslate_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L289). The attribute's comment: “that theta . a' is characterised by the comorphisms of a' and theta . a' differing by the derivation D = d o theta of Equation 0619”.
+**`AlgebraicGeometry.Space.eq_derivationTranslate_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L289). The attribute's comment: “that theta . a' is characterised by the comorphisms of a' and theta . a' differing by the derivation D = d o theta of Equation 0619”.
 
 > **The notation `θ · c` means nothing else than that the comorphisms differ by the
 > derivation related to `θ` by Equation (0619).**  A morphism of thickenings `c'` over `Bas`
@@ -659,7 +659,7 @@ theorem eq_derivationTranslate_iff
           thickeningDerivationValue B S hS Z hZ W₀ e₀ b θ V x
 ```
 
-**`AlgebraicGeometry.Space.derivationAddAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L405). The attribute's comment: “the action of theta on a', written theta . a'”.
+**`AlgebraicGeometry.Space.derivationAddAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftDerivationTranslate.lean#L405). The attribute's comment: “the action of theta on a', written theta . a'”.
 
 > **The action `θ · c`.**  The group of `𝒪_Z`-linear maps `θ : e₀^*Ω_{W₀/Bas₀} ⟶ 𝒞_{Z/X}`
 > acts on the morphisms of thickenings over `Bas` extending `e₀` by `θ +ᵥ c = θ · c`.
@@ -670,7 +670,7 @@ noncomputable def derivationAddAction :
       conormalModule B S hS X Z) (ThickeningLiftOver B S hS Z W₀ e₀ r p)
 ```
 
-**`AlgebraicGeometry.Space.derivationMove_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L136). The attribute's comment: “the action θ · a' of a local section θ: (a')^♯ and (θ · a')^♯ differ by the derivation D related to θ by Equation 0619”.
+**`AlgebraicGeometry.Space.derivationMove_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/DerivationMovedLiftConormal.lean#L136). The attribute's comment: “the action θ · a' of a local section θ: (a')^♯ and (θ · a')^♯ differ by the derivation D related to θ by Equation 0619”.
 
 > **[Stacks Project, Tag 0CK6].**  The action `θ · c` of a local section `θ` of
 > `SheafHom(e₀^*Ω_{W₀/T}, 𝒞_{Z/X})` on `c` means nothing else than this: `(e₀, θ · c)` is a
@@ -706,7 +706,7 @@ theorem derivationMove_spec
 
 [Tag 061A](https://stacks.math.columbia.edu/tag/061A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSheaf_conormalLiftSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L465). The attribute's comment: “the sheaf property of the rule 061B with all three conditions”.
+**`AlgebraicGeometry.Space.isSheaf_conormalLiftSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L465). The attribute's comment: “the sheaf property of the rule 061B with all three conditions”.
 
 > The rule of [Stacks, Tag 061B] — `U' ↦ {a' : U' ⟶ Y'}` satisfying (1) `a'` is a morphism
 > over `T`, (2) `a'|_U = a|_U` and (3) the map `a^*𝒞_{Y/Y'}|_U ⟶ 𝒞_{X/X'}|_U` induced by `a'` is
@@ -719,7 +719,7 @@ theorem isSheaf_conormalLiftSubfunctor :
       (conormalLiftSubfunctor C S hS hG hH pX' pY' a A).toFunctor
 ```
 
-**`AlgebraicGeometry.Space.isSheaf_liftSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/LiftSubfunctor.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/LiftSubfunctor.lean#L227). The attribute's comment: “the sheaf property of the rule of lifts, for conditions (1) and (2); the conormal condition (3) is not imposed”.
+**`AlgebraicGeometry.Space.isSheaf_liftSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/LiftSubfunctor.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/LiftSubfunctor.lean#L227). The attribute's comment: “the sheaf property of the rule of lifts, for conditions (1) and (2); the conormal condition (3) is not imposed”.
 
 > **The rule of conditions (1) and (2) is a sheaf.**  The rule sending an algebraic space `U'`
 > étale over `X'` to the set of morphisms `a' : U' ⟶ Y'` over `T` whose restriction to
@@ -738,7 +738,7 @@ theorem isSheaf_liftSubfunctor :
 
 [Tag 061B](https://stacks.math.columbia.edu/tag/061B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalLiftSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L390). The attribute's comment: “the rule U' ↦ \{a' : U' → Y' satisfying (1), (2), (3)}, as a subfunctor of the presheaf of morphisms into Y' on the spaces-étale site of X', for arbitrary thickenings, a and A”.
+**`AlgebraicGeometry.Space.conormalLiftSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 390](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L390). The attribute's comment: “the rule U' ↦ \{a' : U' → Y' satisfying (1), (2), (3)}, as a subfunctor of the presheaf of morphisms into Y' on the spaces-étale site of X', for arbitrary thickenings, a and A”.
 
 > **The rule of lifts satisfying conditions (1), (2) and (3).** Let `X ⊂ X'` and `Y ⊂ Y'` be
 > thickenings of algebraic spaces over a base `T`, let `a : X ⟶ Y` be a morphism and let
@@ -767,7 +767,7 @@ def conormalLiftSubfunctor : Subfunctor (spacesEtaleHomPresheaf C S hS X' Y')
 
 [Tag 061C](https://stacks.math.columbia.edu/tag/061C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalLiftAction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean#L433). The attribute's comment: “the action is an action of sheaves: it commutes with the restriction maps of the sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) and of the sheaf 061B”.
+**`AlgebraicGeometry.Space.conormalLiftAction_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean, line 433](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionNaturality.lean#L433). The attribute's comment: “the action is an action of sheaves: it commutes with the restriction maps of the sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) and of the sheaf 061B”.
 
 > **The action on the sheaf of lifts commutes with restriction.**  For a morphism
 > `k : V' ⟶ U'` of the spaces-étale site of `X'`, a section `θ` of the acting sheaf
@@ -829,7 +829,7 @@ theorem conormalLiftAction_map {U' V' : SpacesEtale C S hS X'} (k : V' ⟶ U')
         ((conormalLiftSubfunctor C S hS hG hH pX' pY' a A).toFunctor.map k.op s)
 ```
 
-**`AlgebraicGeometry.Space.isSheaf_conormalLiftActingPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L153). The attribute's comment: “the acting sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}), read on (X')\_\{spaces, étale} through the identification 05ZL, is a sheaf”.
+**`AlgebraicGeometry.Space.isSheaf_conormalLiftActingPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L153). The attribute's comment: “the acting sheaf SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}), read on (X')\_\{spaces, étale} through the identification 05ZL, is a sheaf”.
 
 > The acting presheaf `SheafHom_{𝒪_X}(a^*Ω_{Y/T}, 𝒞_{X/X'})`, read through
 > `U' ↦ X ×_{X'} U'`, is a sheaf on the spaces-étale site of `X'`.
@@ -840,7 +840,7 @@ theorem isSheaf_conormalLiftActingPresheaf :
       (conormalLiftActingPresheaf C S hS hG hH pY' a)
 ```
 
-**`AlgebraicGeometry.Space.conormalLiftSheafAddAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L242). The attribute's comment: “the action, over every object U' of (X')\_\{spaces, étale}, of the sections of SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) on the sections of the sheaf 061B”.
+**`AlgebraicGeometry.Space.conormalLiftSheafAddAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L242). The attribute's comment: “the action, over every object U' of (X')\_\{spaces, étale}, of the sections of SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) on the sections of the sheaf 061B”.
 
 > **The action on the sheaf of lifts over `U'`.**  A section `θ` of the acting sheaf
 > over `U'` acts on a section `a'` of the sheaf of lifts (061B) by the action `θ · a'` of
@@ -853,7 +853,7 @@ def conormalLiftSheafAddAction (U' : SpacesEtale C S hS X') :
       ((conormalLiftSubfunctor C S hS hG hH pX' pY' a A).obj (op U'))
 ```
 
-**`AlgebraicGeometry.Space.conormalLiftSheafAddAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L254). The attribute's comment: “the action is simply transitive over every object U' of (X')\_\{spaces, étale} over which the sheaf 061B has a section”.
+**`AlgebraicGeometry.Space.conormalLiftSheafAddAction_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftActionSheaf.lean#L254). The attribute's comment: “the action is simply transitive over every object U' of (X')\_\{spaces, étale} over which the sheaf 061B has a section”.
 
 > **Simple transitivity of the action on the sheaf of lifts** over every object `U'`
 > over which the sheaf of lifts (061B) has a section `s`: `θ ↦ θ · s` is a bijection from the
@@ -870,7 +870,7 @@ theorem conormalLiftSheafAddAction_bijective (U' : SpacesEtale C S hS X')
 
 [Tag 061D](https://stacks.math.columbia.edu/tag/061D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalLiftSubfunctor_eq_liftSubfunctor_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L428). The attribute's comment: “for Y = Y' the rule of 061A is the rule U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, condition (3) being vacuous”.
+**`AlgebraicGeometry.Space.conormalLiftSubfunctor_eq_liftSubfunctor_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean, line 428](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftSheaf/ConormalLiftSheaf.lean#L428). The attribute's comment: “for Y = Y' the rule of 061A is the rule U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, condition (3) being vacuous”.
 
 > For `Y = Y'` the rule of [Stacks, Tag 061A] is just the rule
 > `U' ↦ {a' : U' ⟶ Y' over T with a'|_U = a|_U}`: condition (3) is vacuous, the map `A` being always
@@ -881,7 +881,7 @@ theorem conormalLiftSubfunctor_eq_liftSubfunctor_of_eq_top (hHtop : H = ⊤) :
     conormalLiftSubfunctor C S hS hG hH pX' pY' a A = liftSubfunctor C S hS hG hH pX' pY' a
 ```
 
-**`AlgebraicGeometry.Space.liftSubfunctor_remark_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean#L142). The attribute's comment: “the special case Y = Y': A = 0, the sheaf of 061A is the rule U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) acts on it (the action of 061C), simply transitively”.
+**`AlgebraicGeometry.Space.liftSubfunctor_remark_of_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftTrivialTarget.lean#L142). The attribute's comment: “the special case Y = Y': A = 0, the sheaf of 061A is the rule U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/B}, C\_\{X/X'}) acts on it (the action of 061C), simply transitively”.
 
 > **Deformations of maps into a trivial thickening.**  The special case `Y = Y'` of Lemmas
 > 0618, 04D0, 061A and 061C (the target thickening is the trivial one, `H = ⊤`):
@@ -909,7 +909,7 @@ theorem liftSubfunctor_remark_of_eq_top (hHtop : H = ⊤) :
       Function.Bijective (fun θ : conormalLiftActionHom C S hS hG hH pY' a U' => θ +ᵥ s)
 ```
 
-**`AlgebraicGeometry.Space.liftActionAbelianSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftActionSheafOnAmbient.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftActionSheafOnAmbient.lean#L135). The attribute's comment: “the acting sheaf carried to the spaces-etale site of the ambient space of the thickening, which is the site the sheaf of lifts lives on”.
+**`AlgebraicGeometry.Space.liftActionAbelianSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftActionSheafOnAmbient.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftActionSheafOnAmbient.lean#L135). The attribute's comment: “the acting sheaf carried to the spaces-etale site of the ambient space of the thickening, which is the site the sheaf of lifts lives on”.
 
 > **The acting sheaf of [Stacks Project, Tag 061D], read on the spaces-étale site of the
 > ambient space of the thickening.**  This is
@@ -928,7 +928,7 @@ def liftActionAbelianSheaf (hG : IsThickening C S hS X' G) (q : Y ⟶ B)
     Sheaf (SpacesEtale.topology C S hS X') AddCommGrpCat.{u + 1}
 ```
 
-**`AlgebraicGeometry.Space.liftsSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L393). The attribute's comment: “the rule `U' ↦ {a' : U' ⟶ Y over B with a'|_U = a|_U}`”.
+**`AlgebraicGeometry.Space.liftsSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L393). The attribute's comment: “the rule `U' ↦ {a' : U' ⟶ Y over B with a'|_U = a|_U}`”.
 
 > **Stacks 061D.** The sheaf of lifts of `a : X ⟶ Y` along the subspace `X ⊆ X'`, in the case
 > where the target is not deformed: the subfunctor of the restriction of `Y` to the small étale site
@@ -940,7 +940,7 @@ def liftsSubfunctor (p : X' ⟶ B) (q : Y ⟶ B) {X : Subfunctor X'.1} (a : X.to
     Subfunctor ((SmallEtale.toOver C S hS X'.1).op ⋙ Y.1)
 ```
 
-**`AlgebraicGeometry.Space.isSheaf_liftsSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L407). The attribute's comment: “the rule of the remark is a sheaf of sets”.
+**`AlgebraicGeometry.Space.isSheaf_liftsSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 407](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L407). The attribute's comment: “the rule of the remark is a sheaf of sets”.
 
 > **Stacks 061D.** The lifts form a sheaf of sets on the small étale site of `X'`: morphisms
 > into an algebraic space satisfy étale descent, and both clauses of the lifting condition are
@@ -953,7 +953,7 @@ theorem isSheaf_liftsSubfunctor (p : X' ⟶ B) (q : Y ⟶ B) {X : Subfunctor X'.
       (liftsSubfunctor C S hS p q a).toFunctor
 ```
 
-**`AlgebraicGeometry.Space.eq_zero_of_isZero_conormalModule_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L504). The attribute's comment: “the map `A` is always zero”.
+**`AlgebraicGeometry.Space.eq_zero_of_isZero_conormalModule_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 504](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L504). The attribute's comment: “the map `A` is always zero”.
 
 > **Stacks 061D.** In the case where the target is not deformed the map `A` of the general
 > lifting problem is always zero: it is a morphism of `𝒪_X`-modules out of the inverse image of the
@@ -970,7 +970,7 @@ theorem eq_zero_of_isZero_conormalModule_top (Z : ClosedSubspaces C S hS X'.1)
     A = 0
 ```
 
-**`AlgebraicGeometry.Space.liftActionSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L523). The attribute's comment: “the acting sheaf `SheafHom_{𝒪_X}(a^*Ω_{Y/B}, 𝒞_{X/X'})`”.
+**`AlgebraicGeometry.Space.liftActionSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean, line 523](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/LiftingSheaf.lean#L523). The attribute's comment: “the acting sheaf `SheafHom_{𝒪_X}(a^*Ω_{Y/B}, 𝒞_{X/X'})`”.
 
 > **Stacks 061D.** The sheaf acting on the lifts: the internal hom
 > `SheafHom_{𝒪_X}(a^*Ω_{Y/B}, 𝒞_{X/X'})` of `𝒪_X`-modules on the small étale site of the closed
@@ -984,7 +984,7 @@ noncomputable def liftActionSheaf (Z : ClosedSubspaces C S hS X'.1) (q : Y ⟶ B
     Modules.{u, u + 1} C S hS Z.1.toFunctor Z.2.1
 ```
 
-**`AlgebraicGeometry.Space.exists_liftActionSheafChart_addAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UndeformedTargetLiftAction.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UndeformedTargetLiftAction.lean#L386). The attribute's comment: “the action of SheafHom\_\{O\_X}(a^*Omega\_\{Y/B}, C\_\{X/X'}) on the sheaf of lifts U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}: an additive action on the sections over every étale chart, commuting with the restriction maps of both sheaves, under which the comorphisms of θ · a' and a' differ by the derivation d\_\{Y/B} ∘ θ”.
+**`AlgebraicGeometry.Space.exists_liftActionSheafChart_addAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UndeformedTargetLiftAction.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UndeformedTargetLiftAction.lean#L386). The attribute's comment: “the action of SheafHom\_\{O\_X}(a^*Omega\_\{Y/B}, C\_\{X/X'}) on the sheaf of lifts U' ↦ \{a' : U' → Y over B with a'|\_U = a|\_U}: an additive action on the sections over every étale chart, commuting with the restriction maps of both sheaves, under which the comorphisms of θ · a' and a' differ by the derivation d\_\{Y/B} ∘ θ”.
 
 > **[Stacks Project, Tag 061D], the action.** Let `X ⊂ X'` be a first order thickening of
 > algebraic spaces over `S`, let `p : X' ⟶ B` and `q : Y ⟶ B`, and let `a : X ⟶ Y`. The sheaf
@@ -1042,7 +1042,7 @@ theorem exists_liftActionSheafChart_addAction (hG : IsFirstOrderThickening C S h
 
 [Tag 0CK7](https://stacks.math.columbia.edu/tag/0CK7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.epi_modulePullback_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModulePullbackEpi.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModulePullbackEpi.lean#L110). The attribute's comment: “surjectivity of the inverse image along `a` of the conormal surjection of a cartesian thickening”.
+**`AlgebraicGeometry.Space.epi_modulePullback_conormalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModulePullbackEpi.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModulePullbackEpi.lean#L110). The attribute's comment: “surjectivity of the inverse image along `a` of the conormal surjection of a cartesian thickening”.
 
 > **The inverse image of the surjection of Stacks 0CK7 is surjective.**  Let `Z'` be a closed
 > subspace of an algebraic space `X'`, let `g : X ⟶ X'` be a morphism of algebraic spaces, and let
@@ -1067,7 +1067,7 @@ theorem epi_modulePullback_conormalMap {X X' : AlgebraicSpaces B S hS} (g : X �
         (conormalEtaleRestrictionSquare B S hS g Z')))
 ```
 
-**`AlgebraicGeometry.Space.liftSubfunctor_remark_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean#L612). The attribute's comment: “the special case B = Z' a thickening of Z and Y = Z ×\_\{Z'} Y': A is determined by a, the sheaf of 061A is the rule U' ↦ \{a' : U' → Y' over Z' with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/Z}, C\_\{X/X'}) acts on it (the action of 061C), simply transitively”.
+**`AlgebraicGeometry.Space.liftSubfunctor_remark_of_cartesian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean, line 612](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftCartesianTarget.lean#L612). The attribute's comment: “the special case B = Z' a thickening of Z and Y = Z ×\_\{Z'} Y': A is determined by a, the sheaf of 061A is the rule U' ↦ \{a' : U' → Y' over Z' with a'|\_U = a|\_U}, and SheafHom\_\{O\_X}(a^*Ω\_\{Y/Z}, C\_\{X/X'}) acts on it (the action of 061C), simply transitively”.
 
 > The special case of Lemmas 0618, 04D0, 061A and 061C in which the base `T = Z'` is itself a
 > thickening `Z ⊂ Z'` (any closed subspace `K`) and `Y = Z ×_{Z'} Y'` (the thickening `H` of `Y'` is
@@ -1104,7 +1104,7 @@ theorem liftSubfunctor_remark_of_cartesian
 
 [Tag 0CK8](https://stacks.math.columbia.edu/tag/0CK8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivationMove_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean#L272). The attribute's comment: “the action of Remark 0CK6 is compatible with étale localization: (θ₂ · a₂') ≫ f' = h' ≫ (θ₁ · a₁') for θ₂ the composite a₂^*Ω\_\{X₂/B₂} = h^*a₁^*Ω\_\{X₁/B₁} → h^*C\_\{T₁/T₁'} → C\_\{T₂/T₂'}, the equality sign the identification of 04CU”.
+**`AlgebraicGeometry.Space.derivationMove_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleCompatibility.lean#L272). The attribute's comment: “the action of Remark 0CK6 is compatible with étale localization: (θ₂ · a₂') ≫ f' = h' ≫ (θ₁ · a₁') for θ₂ the composite a₂^*Ω\_\{X₂/B₂} = h^*a₁^*Ω\_\{X₁/B₁} → h^*C\_\{T₁/T₁'} → C\_\{T₂/T₂'}, the equality sign the identification of 04CU”.
 
 > **Acting by a derivation commutes with étale localization.**  For a commutative diagram of
 > first order thickenings `(h, h') : (T₂ ⊂ T₂') ⟶ (T₁ ⊂ T₁')`,
@@ -1138,7 +1138,7 @@ theorem derivationMove_comp_of_etale
       h' ≫ derivationMove B S hS Z₁ W₁ a₁ q₁ hT₁ a₁' ha₁ θ₁ (a₁' ≫ q₁) rfl
 ```
 
-**`AlgebraicGeometry.Space.restrictedLiftAction_comp_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleLocalizationAction.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleLocalizationAction.lean#L447).
+**`AlgebraicGeometry.Space.restrictedLiftAction_comp_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleLocalizationAction.lean, line 447](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/DeformationLiftEtaleLocalizationAction.lean#L447).
 
 > **The action of a derivation on lifts is compatible with étale localization.**  Let `S` be
 > a scheme and consider a commutative diagram of first order thickenings of algebraic spaces over
@@ -1200,4 +1200,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.17, Tag 0617](https://stacks.math.columbia.edu/tag/0617)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

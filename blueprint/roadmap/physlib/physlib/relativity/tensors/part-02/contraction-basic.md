@@ -8,7 +8,7 @@ proof: formalized
 
 # Contractions on tensors
 
-The module `Physlib.Relativity.Tensors.Contraction.Basic`, [Physlib/Relativity/Tensors/Contraction/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean): 8 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.Basic`, [Physlib/Relativity/Tensors/Contraction/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean): 8 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -55,7 +55,7 @@ The module `Physlib.Relativity.Tensors.Contraction.Basic`, [Physlib/Relativity/T
 
 ## A. Tensor contraction
 
-**`TensorSpecies.Tensor.contrT_decide`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L83).
+**`TensorSpecies.Tensor.contrT_decide`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L83).
 
 ```lean
 lemma contrT_decide {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)}
@@ -63,7 +63,7 @@ lemma contrT_decide {n : ℕ} {c : Fin (n + 1 + 1) → C} {i j : Fin (n + 1 + 1)
     i ≠ j ∧ S.τ (c i) = c j
 ```
 
-**`TensorSpecies.Tensor.contrT`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L92).
+**`TensorSpecies.Tensor.contrT`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L92).
 
 > For `c : Fin (n + 1 + 1) → C`, `i j : Fin (n + 1 + 1)` with dual color, and a tensor
 > `t : Tensor S c`, `contrT i j _ t` is the tensor
@@ -76,7 +76,7 @@ noncomputable def contrT (n : ℕ) {c : Fin (n + 1 + 1) → C} (i j : Fin (n + 1
     Tensor S c →ₗ[k] Tensor S (c ∘ succSuccAbove i j)
 ```
 
-**`TensorSpecies.Tensor.contrT_congr`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L97).
+**`TensorSpecies.Tensor.contrT_congr`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L97).
 
 ```lean
 lemma contrT_congr {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -88,7 +88,7 @@ lemma contrT_congr {n : ℕ} {c : Fin (n + 1 + 1) → C}
       (contrT n i' j' (by subst hii' hjj'; exact hij) t)
 ```
 
-**`TensorSpecies.Tensor.contrT_pure`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L108).
+**`TensorSpecies.Tensor.contrT_pure`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L108).
 
 ```lean
 lemma contrT_pure {n : ℕ} {c : Fin (n + 1 + 1) → C} (i j : Fin (n + 1 + 1))
@@ -96,7 +96,7 @@ lemma contrT_pure {n : ℕ} {c : Fin (n + 1 + 1) → C} (i j : Fin (n + 1 + 1))
     contrT n i j hij p.toTensor = p.contrP i j hij
 ```
 
-**`TensorSpecies.Tensor.contrT_equivariant`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L116).
+**`TensorSpecies.Tensor.contrT_equivariant`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L116).
 
 ```lean
 lemma contrT_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -105,7 +105,7 @@ lemma contrT_equivariant {n : ℕ} {c : Fin (n + 1 + 1) → C}
     contrT n i j hij (g • t) = g • contrT n i j hij t
 ```
 
-**`TensorSpecies.Tensor.contrT_permT`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L134).
+**`TensorSpecies.Tensor.contrT_permT`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L134).
 
 ```lean
 lemma contrT_permT {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -117,7 +117,7 @@ lemma contrT_permT {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
       (contrT n (σ i) (σ j) (by simp [hσ.2, hij, hσ.1.injective.eq_iff]) t)
 ```
 
-**`TensorSpecies.Tensor.contrT_symm`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L157).
+**`TensorSpecies.Tensor.contrT_symm`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L157).
 
 ```lean
 lemma contrT_symm {n : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -126,7 +126,7 @@ lemma contrT_symm {n : ℕ} {c : Fin (n + 1 + 1) → C}
       (contrT n j i ⟨hij.1.symm, by simp [← hij.2]⟩ t)
 ```
 
-**`TensorSpecies.Tensor.contrT_comm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean#L173).
+**`TensorSpecies.Tensor.contrT_comm`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean#L173).
 
 ```lean
 lemma contrT_comm {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
@@ -151,4 +151,4 @@ lemma contrT_comm {n : ℕ} {c : Fin (n + 1 + 1 + 1 + 1) → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Basic.lean)
+- [Physlib/Relativity/Tensors/Contraction/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Basic.lean)

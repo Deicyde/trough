@@ -8,7 +8,7 @@ proof: formalized
 
 # The field data of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.FieldData`, [PhyslibAlpha/Particles/StandardModel/FieldData.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean): 28 declarations, 21 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.FieldData`, [PhyslibAlpha/Particles/StandardModel/FieldData.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean): 28 declarations, 21 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.FieldData`, [PhyslibAlpha/Parti
 
 ## A. The fermion species
 
-**`StandardModel.FermionType`**, an inductive, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L78).
+**`StandardModel.FermionType`**, an inductive, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L78).
 
 > The fifteen fermion species of the Standard Model: each of the five fermion types in
 > each of the three generations, the generation `i : Fin 3` carried by the constructor.
@@ -74,7 +74,7 @@ inductive FermionType where
 deriving DecidableEq, Fintype
 ```
 
-**`StandardModel.FermionType.matterField`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L96).
+**`StandardModel.FermionType.matterField`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L96).
 
 > The matter field of a fermion species, one of the five existing adapters. It is the
 > same in every generation.
@@ -83,42 +83,42 @@ deriving DecidableEq, Fintype
 noncomputable def matterField : FermionType → MatterField localGaugeData
 ```
 
-**`StandardModel.FermionType.matterField_leptonDoublet`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L104).
+**`StandardModel.FermionType.matterField_leptonDoublet`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L104).
 
 ```lean
 lemma matterField_leptonDoublet (i : Fin 3) :
     matterField (.leptonDoublet i) = LeptonDoubletV.matterField
 ```
 
-**`StandardModel.FermionType.matterField_leptonSinglet`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L108).
+**`StandardModel.FermionType.matterField_leptonSinglet`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L108).
 
 ```lean
 lemma matterField_leptonSinglet (i : Fin 3) :
     matterField (.leptonSinglet i) = LeptonSinglet.matterField
 ```
 
-**`StandardModel.FermionType.matterField_quarkDoublet`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L112).
+**`StandardModel.FermionType.matterField_quarkDoublet`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L112).
 
 ```lean
 lemma matterField_quarkDoublet (i : Fin 3) :
     matterField (.quarkDoublet i) = QuarkDoublet.matterField
 ```
 
-**`StandardModel.FermionType.matterField_upSinglet`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L116).
+**`StandardModel.FermionType.matterField_upSinglet`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L116).
 
 ```lean
 lemma matterField_upSinglet (i : Fin 3) :
     matterField (.upSinglet i) = UpSinglet.matterField
 ```
 
-**`StandardModel.FermionType.matterField_downSinglet`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L120).
+**`StandardModel.FermionType.matterField_downSinglet`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L120).
 
 ```lean
 lemma matterField_downSinglet (i : Fin 3) :
     matterField (.downSinglet i) = DownSinglet.matterField
 ```
 
-**`StandardModel.FermionType.matterField_massWeight`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L125).
+**`StandardModel.FermionType.matterField_massWeight`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L125).
 
 > Every Standard Model fermion carries mass weight three, in every generation.
 
@@ -126,7 +126,7 @@ lemma matterField_downSinglet (i : Fin 3) :
 lemma matterField_massWeight (t : FermionType) : (matterField t).massWeight = 3
 ```
 
-**`StandardModel.FermionType.matterField_statistic`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L130).
+**`StandardModel.FermionType.matterField_statistic`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L130).
 
 > Every Standard Model fermion is declared fermionic, in every generation.
 
@@ -134,7 +134,7 @@ lemma matterField_massWeight (t : FermionType) : (matterField t).massWeight = 3
 lemma matterField_statistic (t : FermionType) : (matterField t).statistic = .fermionic
 ```
 
-**`StandardModel.FermionType.matterField_pureJetsActTrivially`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L134).
+**`StandardModel.FermionType.matterField_pureJetsActTrivially`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L134).
 
 > Pure gauge jets act trivially on every Standard Model fermion at the base point.
 
@@ -143,7 +143,7 @@ lemma matterField_pureJetsActTrivially (t : FermionType) :
     (matterField t).PureJetsActTrivially
 ```
 
-**`StandardModel.FermionType.matterField_gaugeLorentzCompatible`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L144).
+**`StandardModel.FermionType.matterField_gaugeLorentzCompatible`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L144).
 
 > The gauge and Lorentz actions on every Standard Model fermion commute.
 
@@ -154,7 +154,7 @@ lemma matterField_gaugeLorentzCompatible (t : FermionType) :
 
 ## B. The field datum
 
-**`StandardModel.fieldData`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L163).
+**`StandardModel.fieldData`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L163).
 
 > The field data of the Standard Model: three generations of each of the five fermion
 > types and one Higgs multiplet, over the gauge context `StandardModel.localGaugeData`.
@@ -163,13 +163,13 @@ lemma matterField_gaugeLorentzCompatible (t : FermionType) :
 noncomputable def fieldData : GaugeFieldData localGaugeData
 ```
 
-**`StandardModel.fieldData_fermionSpecies`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L172).
+**`StandardModel.fieldData_fermionSpecies`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L172).
 
 ```lean
 lemma fieldData_fermionSpecies : fieldData.FermionSpecies = FermionType
 ```
 
-**`StandardModel.fieldData_fermion`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L176).
+**`StandardModel.fieldData_fermion`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L176).
 
 > A fermionic species is the multiplet of its type, whichever generation it is in.
 
@@ -177,13 +177,13 @@ lemma fieldData_fermionSpecies : fieldData.FermionSpecies = FermionType
 lemma fieldData_fermion (t : FermionType) : fieldData.fermion t = t.matterField
 ```
 
-**`StandardModel.fieldData_bosonSpecies`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L179).
+**`StandardModel.fieldData_bosonSpecies`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L179).
 
 ```lean
 lemma fieldData_bosonSpecies : fieldData.BosonSpecies = Unit
 ```
 
-**`StandardModel.fieldData_boson`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L183).
+**`StandardModel.fieldData_boson`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L183).
 
 > The one bosonic species is the Higgs multiplet.
 
@@ -192,7 +192,7 @@ lemma fieldData_boson (j : fieldData.BosonSpecies) :
     fieldData.boson j = HiggsVec.matterField
 ```
 
-**`StandardModel.card_fieldData_fermionSpecies`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L188).
+**`StandardModel.card_fieldData_fermionSpecies`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L188).
 
 > Fifteen fermionic multiplets: each of the five types in each of the three
 > generations, exactly once.
@@ -201,7 +201,7 @@ lemma fieldData_boson (j : fieldData.BosonSpecies) :
 lemma card_fieldData_fermionSpecies : Nat.card fieldData.FermionSpecies = 15
 ```
 
-**`StandardModel.card_fieldData_bosonSpecies`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L194).
+**`StandardModel.card_fieldData_bosonSpecies`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L194).
 
 > Exactly one bosonic multiplet, the Higgs.
 
@@ -216,7 +216,7 @@ lemma card_fieldData_bosonSpecies : Nat.card fieldData.BosonSpecies = 1
 > species, and the datum therefore satisfies the conjunctions
 > `GaugeFieldData.PureJetsActTrivially` and `GaugeFieldData.GaugeLorentzCompatible`.
 
-**`StandardModel.fieldData_fermion_pureJetsActTrivially`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L210).
+**`StandardModel.fieldData_fermion_pureJetsActTrivially`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L210).
 
 > Pure gauge jets act trivially on every fermionic species of the Standard Model.
 
@@ -225,7 +225,7 @@ lemma fieldData_fermion_pureJetsActTrivially (t : FermionType) :
     (fieldData.fermion t).PureJetsActTrivially
 ```
 
-**`StandardModel.fieldData_boson_pureJetsActTrivially`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L215).
+**`StandardModel.fieldData_boson_pureJetsActTrivially`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L215).
 
 > Pure gauge jets act trivially on the bosonic species of the Standard Model.
 
@@ -234,7 +234,7 @@ lemma fieldData_boson_pureJetsActTrivially (j : fieldData.BosonSpecies) :
     (fieldData.boson j).PureJetsActTrivially
 ```
 
-**`StandardModel.fieldData_fermion_gaugeLorentzCompatible`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L221).
+**`StandardModel.fieldData_fermion_gaugeLorentzCompatible`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L221).
 
 > The gauge and Lorentz actions commute on every fermionic species of the Standard
 > Model.
@@ -244,7 +244,7 @@ lemma fieldData_fermion_gaugeLorentzCompatible (t : FermionType) :
     (fieldData.fermion t).GaugeLorentzCompatible
 ```
 
-**`StandardModel.fieldData_boson_gaugeLorentzCompatible`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L226).
+**`StandardModel.fieldData_boson_gaugeLorentzCompatible`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L226).
 
 > The gauge and Lorentz actions commute on the bosonic species of the Standard Model.
 
@@ -253,7 +253,7 @@ lemma fieldData_boson_gaugeLorentzCompatible (j : fieldData.BosonSpecies) :
     (fieldData.boson j).GaugeLorentzCompatible
 ```
 
-**`StandardModel.fieldData_pureJetsActTrivially`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L231).
+**`StandardModel.fieldData_pureJetsActTrivially`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L231).
 
 > Pure gauge jets act trivially on every species of the Standard Model.
 
@@ -261,7 +261,7 @@ lemma fieldData_boson_gaugeLorentzCompatible (j : fieldData.BosonSpecies) :
 lemma fieldData_pureJetsActTrivially : fieldData.PureJetsActTrivially
 ```
 
-**`StandardModel.fieldData_gaugeLorentzCompatible`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L235).
+**`StandardModel.fieldData_gaugeLorentzCompatible`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L235).
 
 > The gauge and Lorentz actions commute on every species of the Standard Model.
 
@@ -275,7 +275,7 @@ lemma fieldData_gaugeLorentzCompatible : fieldData.GaugeLorentzCompatible
 > in which a derivative has weight two. The first two are read off the matter fields, the
 > third is already built into the generator spaces.
 
-**`StandardModel.fieldData_fermion_massWeight`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L250).
+**`StandardModel.fieldData_fermion_massWeight`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L250).
 
 > Every fermionic species of the datum carries mass weight three.
 
@@ -284,7 +284,7 @@ lemma fieldData_fermion_massWeight (j : fieldData.FermionSpecies) :
     (fieldData.fermion j).massWeight = 3
 ```
 
-**`StandardModel.fieldData_boson_massWeight`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L256).
+**`StandardModel.fieldData_boson_massWeight`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L256).
 
 > The Higgs multiplet carries mass weight two.
 
@@ -293,7 +293,7 @@ lemma fieldData_boson_massWeight (j : fieldData.BosonSpecies) :
     (fieldData.boson j).massWeight = 2
 ```
 
-**`StandardModel.fieldData_massWeightScaleFermion_inclFermion_basis_tmul`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L261).
+**`StandardModel.fieldData_massWeightScaleFermion_inclFermion_basis_tmul`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L261).
 
 > A fermionic component function `∂_s ψ_α` scales by `c ^ (3 + 2 |s|)`, whichever
 > species it belongs to.
@@ -310,7 +310,7 @@ lemma fieldData_massWeightScaleFermion_inclFermion_basis_tmul (c : ℂ)
             JetComponentSpace (fieldData.fermion j))
 ```
 
-**`StandardModel.fieldData_massWeightScaleBoson_inclBoson_basis_tmul`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L275).
+**`StandardModel.fieldData_massWeightScaleBoson_inclBoson_basis_tmul`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L275).
 
 > A Higgs component function `∂_s H_α` scales by `c ^ (2 + 2 |s|)`.
 
@@ -335,4 +335,4 @@ lemma fieldData_massWeightScaleBoson_inclBoson_basis_tmul (c : ℂ)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/FieldData.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean)
+- [PhyslibAlpha/Particles/StandardModel/FieldData.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/FieldData.lean)

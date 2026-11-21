@@ -8,7 +8,7 @@ proof: formalized
 
 # 13.11 Derived categories
 
-Section 13.11 of the Stacks Project, [Tag 05RR](https://stacks.math.columbia.edu/tag/05RR). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.11 of the Stacks Project, [Tag 05RR](https://stacks.math.columbia.edu/tag/05RR). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 7 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05RS, a lemma
 
@@ -16,7 +16,7 @@ Section 13.11 of the Stacks Project, [Tag 05RR](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`HomotopyCategory.instIsHomologicalIntUpHomologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instIsHomologicalIntUpHomologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L168) (StacksFrontier): “Hⁿ : K(A) ⥤ A is homological”.
+- [`HomotopyCategory.instIsHomologicalIntUpHomologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyCategory.instIsHomologicalIntUpHomologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L168) (StacksFrontier): “Hⁿ : K(A) ⥤ A is homological”.
 
 ## Tag 05ST, an equation
 
@@ -24,13 +24,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.homologySequenceComposableArrows₅_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.homologySequenceComposableArrows₅_exact#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch13.lean#L89) (StacksFrontier).
+- [`CategoryTheory.Functor.homologySequenceComposableArrows₅_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.homologySequenceComposableArrows₅_exact#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch13.lean#L89) (StacksFrontier).
 
 ## Tag 05RT, a lemma
 
 [Tag 05RT](https://stacks.math.columbia.edu/tag/05RT) in the Stacks Project.
 
-**`HomotopyCategory.isSaturated_subcategoryAcyclic_and_quasiIso_and_kernel_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L264). References: SGA 4½ Etat 0 (2.4.1), “case D = K(A), H = H^0”; SGA 4½ Etat 0 (3.1.6), “H^i factors via D(A)”; SGA 4½ Etat 0 (1.2.3), “(A)”; SGA 4½ Etat 0 (4.2.3), “partial”.
+**`HomotopyCategory.isSaturated_subcategoryAcyclic_and_quasiIso_and_kernel_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 264](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L264). References: SGA 4½ Etat 0 (2.4.1), “case D = K(A), H = H^0”; SGA 4½ Etat 0 (3.1.6), “H^i factors via D(A)”; SGA 4½ Etat 0 (1.2.3), “(A)”; SGA 4½ Etat 0 (4.2.3), “partial”.
 
 > **Stacks 05RT.** Let `A` be an abelian category, let `K(A)` be the homotopy category of
 > cochain complexes in `A` and let `L : K(A) ⥤ D` be a localization of `K(A)` at the class of
@@ -62,7 +62,7 @@ public theorem isSaturated_subcategoryAcyclic_and_quasiIso_and_kernel_eq
 
 [Tag 05RU](https://stacks.math.columbia.edu/tag/05RU) in the Stacks Project.
 
-**`DerivedCategory.plus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 799](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L799). The attribute's comment: “Ob(D^+(A)) = \{X | H^n(X) = 0 for all n ≪ 0}”. References: SGA 6 I (1.1.5), “D^+ degree condition”.
+**`DerivedCategory.plus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 799](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L799). The attribute's comment: “Ob(D^+(A)) = \{X | H^n(X) = 0 for all n ≪ 0}”. References: SGA 6 I (1.1.5), “D^+ degree condition”.
 
 > **Stacks 05RU.** The objects of the bounded below derived category `D^{+}(A)`, the full
 > subcategory `DerivedCategory.Plus C` of `D(A)` on the object property `plus` of the canonical
@@ -74,7 +74,7 @@ public theorem plus_iff (X : DerivedCategory C) :
       ∃ N : ℤ, ∀ n ≤ N, IsZero ((homologyFunctor C n).obj X)
 ```
 
-**`DerivedCategory.minus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 809](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L809). The attribute's comment: “Ob(D^-(A)) = \{X | H^n(X) = 0 for all n ≫ 0}”. References: SGA 6 I (1.1.5), “D^- degree condition”.
+**`DerivedCategory.minus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 809](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L809). The attribute's comment: “Ob(D^-(A)) = \{X | H^n(X) = 0 for all n ≫ 0}”. References: SGA 6 I (1.1.5), “D^- degree condition”.
 
 > **Stacks 05RU.** The objects of the bounded above derived category `D^{-}(A)`, the full
 > subcategory `DerivedCategory.Minus C` of `D(A)` on the object property `minus` of the canonical
@@ -86,7 +86,7 @@ public theorem minus_iff (X : DerivedCategory C) :
       ∃ N : ℤ, ∀ n, N ≤ n → IsZero ((homologyFunctor C n).obj X)
 ```
 
-**`DerivedCategory.bounded_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 821](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L821). The attribute's comment: “Ob(D^b(A)) = \{X | H^n(X) = 0 for all |n| ≫ 0}”. References: SGA 6 I (1.1.5), “D^b degree condition”.
+**`DerivedCategory.bounded_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 821](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L821). The attribute's comment: “Ob(D^b(A)) = \{X | H^n(X) = 0 for all |n| ≫ 0}”. References: SGA 6 I (1.1.5), “D^b degree condition”.
 
 > **Stacks 05RU.** The objects of the bounded derived category `D^b(A)`, the full subcategory
 > `DerivedCategory.Bounded C` of `D(A)` on the object property `bounded` of the canonical
@@ -101,17 +101,17 @@ public theorem bounded_iff (X : DerivedCategory C) :
 
 Declarations registered for the tag:
 
-- [`DerivedCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 840](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L840) (StacksFrontier): “D(A), the derived category of an abelian category”. References: SGA 4 XVII (2.1.1), “more general”; SGA 4½ Etat 0 (3.1.1); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1); SGA 5 I (App.1.1); SGA 5 III (1.1), “more general”; SGA 5 IIIB (5.1); SGA 5 IIIB (6.1), “more general”; SGA 6 I (1.1.5), “the derived fiber D(C\_X)”; SGA 6 II (2.2.10); SGA 6 II (2.3.2); SGA 6 III (1.1); SGA 6 III (5.1); SGA 6 IV (2.1), “partial”.
-- [`DerivedCategory.homologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.homologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 855](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L855) (StacksFrontier): “H^0 : D(A) ⥤ A, and its shifts H^n”. References: SGA 4½ Etat 0 (3.1.6).
-- [`DerivedCategory.Plus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Plus#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 857](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L857) (StacksFrontier): “D^+(A), the bounded below derived category”. References: SGA 4 Vbis (1.3.8); SGA 4 Vbis (2.4.1); SGA 4½ Etat 0 (3.1.1); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1).
-- [`DerivedCategory.Minus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Minus#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L863) (StacksFrontier): “D^-(A), the bounded above derived category”. References: SGA 4½ Etat 0 (3.1.2); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1); SGA 6 I (1.1.5), “the fiber D⁻(C\_X)”.
-- [`DerivedCategory.Bounded`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Bounded#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 868](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L868) (StacksFrontier): “D^b(A), the bounded derived category”. References: SGA 4½ Etat 0 (3.1.2); SGA 4½ Etat 0 (3.1.3).
+- [`DerivedCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 840](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L840) (StacksFrontier): “D(A), the derived category of an abelian category”. References: SGA 4 XVII (2.1.1), “more general”; SGA 4½ Etat 0 (3.1.1); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1); SGA 5 I (App.1.1); SGA 5 III (1.1), “more general”; SGA 5 IIIB (5.1); SGA 5 IIIB (6.1), “more general”; SGA 6 I (1.1.5), “the derived fiber D(C\_X)”; SGA 6 II (2.2.10); SGA 6 II (2.3.2); SGA 6 III (1.1); SGA 6 III (5.1); SGA 6 IV (2.1), “partial”.
+- [`DerivedCategory.homologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.homologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 855](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L855) (StacksFrontier): “H^0 : D(A) ⥤ A, and its shifts H^n”. References: SGA 4½ Etat 0 (3.1.6).
+- [`DerivedCategory.Plus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Plus#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 857](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L857) (StacksFrontier): “D^+(A), the bounded below derived category”. References: SGA 4 Vbis (1.3.8); SGA 4 Vbis (2.4.1); SGA 4½ Etat 0 (3.1.1); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1).
+- [`DerivedCategory.Minus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Minus#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 863](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L863) (StacksFrontier): “D^-(A), the bounded above derived category”. References: SGA 4½ Etat 0 (3.1.2); SGA 4½ Etat 0 (3.1.3); SGA 4½ Rapport (4.1); SGA 6 I (1.1.5), “the fiber D⁻(C\_X)”.
+- [`DerivedCategory.Bounded`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DerivedCategory.Bounded#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 868](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L868) (StacksFrontier): “D^b(A), the bounded derived category”. References: SGA 4½ Etat 0 (3.1.2); SGA 4½ Etat 0 (3.1.3).
 
 ## Tag 05RV, a lemma
 
 [Tag 05RV](https://stacks.math.columbia.edu/tag/05RV) in the Stacks Project.
 
-**`CochainComplex.exists_quasiIso_isStrictlyGE_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L314). The attribute's comment: “(1)”.
+**`CochainComplex.exists_quasiIso_isStrictlyGE_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L314). The attribute's comment: “(1)”.
 
 > **Stacks 05RV (1).** Let `K` be a cochain complex in an abelian category — or, as stated
 > here, in any category with zero morphisms, a zero object and homology — with `H^n(K) = 0` for all
@@ -124,7 +124,7 @@ public theorem exists_quasiIso_isStrictlyGE_of_isZero_homology (K : CochainCompl
     ∃ (L : CochainComplex C ℤ) (f : K ⟶ L) (_ : QuasiIso f), ∃ a : ℤ, L.IsStrictlyGE a
 ```
 
-**`CochainComplex.exists_quasiIso_isStrictlyLE_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L328). The attribute's comment: “(2)”.
+**`CochainComplex.exists_quasiIso_isStrictlyLE_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L328). The attribute's comment: “(2)”.
 
 > **Stacks 05RV (2).** Let `K` be a cochain complex in an abelian category — or, as stated
 > here, in any category with zero morphisms, a zero object and homology — with `H^n(K) = 0` for all
@@ -138,7 +138,7 @@ public theorem exists_quasiIso_isStrictlyLE_of_isZero_homology (K : CochainCompl
     ∃ (M : CochainComplex C ℤ) (g : M ⟶ K) (_ : QuasiIso g), ∃ b : ℤ, M.IsStrictlyLE b
 ```
 
-**`CochainComplex.exists_quasiIso_square_of_isGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L350). The attribute's comment: “(3)”.
+**`CochainComplex.exists_quasiIso_square_of_isGE_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L350). The attribute's comment: “(3)”.
 
 > **Stacks 05RV (3).** Let `K` be a cochain complex in an abelian category — or, as stated
 > here, in any category with zero morphisms, a zero object and homology — whose cohomology
@@ -167,7 +167,7 @@ public theorem exists_quasiIso_square_of_isGE_of_isLE
 
 [Tag 05RW](https://stacks.math.columbia.edu/tag/05RW) in the Stacks Project.
 
-**`HomotopyCategory.isSaturated_subcategoryAcyclic_inverseImage_and_quasiIso_and_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 743](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L743).
+**`HomotopyCategory.isSaturated_subcategoryAcyclic_inverseImage_and_quasiIso_and_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean, line 743](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Basic.lean#L743).
 
 > **Stacks 05RW.** Let `A` be an abelian category. For every triangulated subcategory `P` of
 > the homotopy category `K(A)` — in particular for `K⁺(A)`, `K⁻(A)` and `Kᵇ(A)` — the acyclic
@@ -223,4 +223,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.11, Tag 05RR](https://stacks.math.columbia.edu/tag/05RR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 28.29 Quasi-coherent sheaves and ample invertible sheaves
 
-Section 28.29 of the Stacks Project, [Tag 01QG](https://stacks.math.columbia.edu/tag/01QG). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 28.29 of the Stacks Project, [Tag 01QG](https://stacks.math.columbia.edu/tag/01QG). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 01QH, a situation
 
 [Tag 01QH](https://stacks.math.columbia.edu/tag/01QH) in the Stacks Project.
 
-**`Stacks.SectionRingProjMorphism.Theta.projThetaUnital`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L173). The attribute's comment: “the Z-graded O\_X-algebra map sum\_n f^*O\_Y(n) -> sum\_n L^\{tensor n} the Situation equips the canonical morphism with: theta of Tag 01NK at psi the identity of Gamma\_*(X, L), along f = r\_\{L,psi}, multiplicative and unital, on the source U(psi) of r\_\{L,psi}; in the Situation U(psi) = X and r\_\{L,psi} is the canonical morphism of Tag 01PZ, which is coveringOpen\_eq\_top\_and\_ι\_comp\_projHomOfIsAmple”.
+**`Stacks.SectionRingProjMorphism.Theta.projThetaUnital`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L173). The attribute's comment: “the Z-graded O\_X-algebra map sum\_n f^*O\_Y(n) -> sum\_n L^\{tensor n} the Situation equips the canonical morphism with: theta of Tag 01NK at psi the identity of Gamma\_*(X, L), along f = r\_\{L,psi}, multiplicative and unital, on the source U(psi) of r\_\{L,psi}; in the Situation U(psi) = X and r\_\{L,psi} is the canonical morphism of Tag 01PZ, which is coveringOpen\_eq\_top\_and\_ι\_comp\_projHomOfIsAmple”.
 
 > **The `ℤ`-graded `𝒪_X`-algebra map `⨁ f^*𝒪_Y(n) ⟶ ⨁ L^{⊗ n}` of Situation
 > [Stacks, Tag 01QH]**: `projTheta`, i.e. `θ` of [Stacks, Tag 01NK] at `ψ` the identity map of
@@ -35,7 +35,7 @@ def projThetaUnital : SheafOfModules.GradedAlgebra.UnitalHom
     (laurentRestrict (grading L) (canonicalSections L))
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.coveringOpen_eq_top_and_ι_comp_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L190). The attribute's comment: “the canonical morphism of the Situation: for L ample, U(psi) = X and r\_\{L,psi} = (U(psi) -> X) followed by the canonical morphism f : X -> Proj S of Tag 01PZ, so projThetaUnital is the graded algebra map along f”.
+**`Stacks.SectionRingProjMorphism.Theta.coveringOpen_eq_top_and_ι_comp_projHomOfIsAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L190). The attribute's comment: “the canonical morphism of the Situation: for L ample, U(psi) = X and r\_\{L,psi} = (U(psi) -> X) followed by the canonical morphism f : X -> Proj S of Tag 01PZ, so projThetaUnital is the graded algebra map along f”.
 
 > **In Situation [Stacks, Tag 01QH] the map `θ` lives on all of `X` and along the canonical
 > morphism**: for `L` ample, the source `U(ψ) = ⋃_a X_a` of `r_{L, ψ}` (at `ψ` the identity of
@@ -54,7 +54,7 @@ theorem coveringOpen_eq_top_and_ι_comp_projHomOfIsAmple (hL : Stacks.Ample.IsAm
 
 [Tag 01QI](https://stacks.math.columbia.edu/tag/01QI) in the Stacks Project.
 
-**`Stacks.SectionRingProjGoodOpen.projHomOfIsAmple_preimage_whereInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjGoodOpen/Basic.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjGoodOpen/Basic.lean#L163). The attribute's comment: “the canonical morphism lands in the good open W₁”.
+**`Stacks.SectionRingProjGoodOpen.projHomOfIsAmple_preimage_whereInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjGoodOpen/Basic.lean, line 163](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjGoodOpen/Basic.lean#L163). The attribute's comment: “the canonical morphism lands in the good open W₁”.
 
 > **Stacks Tag 01QI, first claim: the canonical morphism of Stacks Tag 01PZ maps `X` into the
 > good open `W_1`.** In the situation of Stacks Tag 01QH — `L` ample on `X`, `S = Γ_*(X, L)`,
@@ -78,7 +78,7 @@ public theorem projHomOfIsAmple_preimage_whereInvertible (hL : Stacks.Ample.IsAm
         Stacks.AlgebraicGeometry.ProjInvertibleLocus.whereInvertible (grading L) 1 = ⊤
 ```
 
-**`Stacks.SectionRingProjTwistIso.isIso_projTheta_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTwistIso/Basic.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjTwistIso/Basic.lean#L522). The attribute's comment: “second claim: the maps f^*O\_Y(n) -> L^\{tensor n} of clause (2) of Tag 01PZ are isomorphisms for every n in Z, positive, zero and negative”.
+**`Stacks.SectionRingProjTwistIso.isIso_projTheta_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTwistIso/Basic.lean, line 522](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjTwistIso/Basic.lean#L522). The attribute's comment: “second claim: the maps f^*O\_Y(n) -> L^\{tensor n} of clause (2) of Tag 01PZ are isomorphisms for every n in Z, positive, zero and negative”.
 
 > **The second claim of Stacks Tag 01QI: the maps `f^*𝒪_Y(n) ⟶ L^{⊗ n}` are isomorphisms for
 > every `n : ℤ`.** In Situation Stacks Tag 01QH — `X` a scheme, `L` an ample invertible
@@ -98,7 +98,7 @@ theorem isIso_projTheta_app (hL : Stacks.Ample.IsAmple X L) (n : ℤ) :
     IsIso ((projTheta L).app n)
 ```
 
-**`Stacks.SectionRingVeroneseChart.isIso_twistComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingVeroneseChart/IntegerDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingVeroneseChart/IntegerDegree.lean#L270). The attribute's comment: “the second claim: the maps f^*O\_Y(n) -> L^\{(x)n} are all isomorphisms, in every integer degree. The first claim, that the canonical morphism maps X into W\_1, is Stacks.SectionRingProjGoodOpen.projHomOfIsAmple\_preimage\_whereInvertible”.
+**`Stacks.SectionRingVeroneseChart.isIso_twistComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingVeroneseChart/IntegerDegree.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingVeroneseChart/IntegerDegree.lean#L271). The attribute's comment: “the second claim: the maps f^*O\_Y(n) -> L^\{(x)n} are all isomorphisms, in every integer degree. The first claim, that the canonical morphism maps X into W\_1, is Stacks.SectionRingProjGoodOpen.projHomOfIsAmple\_preimage\_whereInvertible”.
 
 > **The second claim of Stacks Tag 01QI: the maps `f^*𝒪_Y(n) → 𝓛^{⊗ n}` are all
 > isomorphisms.**
@@ -112,7 +112,7 @@ theorem isIso_twistComparison (hL : Stacks.Ample.IsAmple X L) (n : ℤ) :
 
 [Tag 01QJ](https://stacks.math.columbia.edu/tag/01QJ) in the Stacks Project.
 
-**`Stacks.SectionRingProjQuasicoherent.pullbackTildeComparison_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasicoherent/Isomorphism.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasicoherent/Isomorphism.lean#L328). The attribute's comment: “the comparison `f^*M̃ ⟶ ℱ`, `M = Γ_*(X, L, ℱ)`, is natural in `ℱ`, an isomorphism for every quasi-coherent `ℱ`, and the identity on `M_0 ⟶ Γ(Proj S, M̃) ⟶ Γ(X, ℱ)`”.
+**`Stacks.SectionRingProjQuasicoherent.pullbackTildeComparison_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasicoherent/Isomorphism.lean, line 328](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasicoherent/Isomorphism.lean#L328). The attribute's comment: “the comparison `f^*M̃ ⟶ ℱ`, `M = Γ_*(X, L, ℱ)`, is natural in `ℱ`, an isomorphism for every quasi-coherent `ℱ`, and the identity on `M_0 ⟶ Γ(Proj S, M̃) ⟶ Γ(X, ℱ)`”.
 
 > **Stacks Tag 01QJ.** In Situation 01QH — `X` a scheme, `L` an ample invertible `𝒪_X`-module,
 > `S = Γ_*(X, L)` and `f : X ⟶ Proj S` the canonical morphism of Tag 01PZ — the comparison
@@ -141,7 +141,7 @@ theorem pullbackTildeComparison_spec :
 
 [Tag 01QK](https://stacks.math.columbia.edu/tag/01QK) in the Stacks Project.
 
-**`Stacks.SectionRingProjTheta.projTheta_app_eq_twistThetaInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkNormalization.lean, line 760](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkNormalization.lean#L760). The attribute's comment: “assertion (i), with no extra hypothesis: the isomorphism f^*O\_Y(n) -> L^n of Tag 01QI (the degree-n component of clause (2) of Tag 01PZ, defined on U(psi)) equals theta\_\{L^n}, theta being the constructed comparison pullbackTildeComparison of Tag 01QJ read on f^*O\_Y(n) through the obvious identification O\_Y(n) = (Gamma\_*(X, L, L^n))~, for every integer n”.
+**`Stacks.SectionRingProjTheta.projTheta_app_eq_twistThetaInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkNormalization.lean, line 760](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkNormalization.lean#L760). The attribute's comment: “assertion (i), with no extra hypothesis: the isomorphism f^*O\_Y(n) -> L^n of Tag 01QI (the degree-n component of clause (2) of Tag 01PZ, defined on U(psi)) equals theta\_\{L^n}, theta being the constructed comparison pullbackTildeComparison of Tag 01QJ read on f^*O\_Y(n) through the obvious identification O\_Y(n) = (Gamma\_*(X, L, L^n))~, for every integer n”.
 
 > In Situation Stacks Tag 01QH, the map `f^*𝒪_Y(n) ⟶ 𝓛^{⊗ n}` of Stacks Tag 01QI — the
 > degree-`n` component of clause (2) of Stacks Tag 01PZ, `projTheta`, which lives on
@@ -162,7 +162,7 @@ theorem projTheta_app_eq_twistThetaInt (n : ℤ) :
       (tensorPowerModule X L n))
 ```
 
-**`Stacks.SectionRingProjTheta.twistSquareInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkSquareInt.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkSquareInt.lean#L737). The attribute's comment: “assertion (ii), with no extra hypothesis: the square commutes -- theta\_F (x) theta\_\{L^n} is the pullback of the multiplication of Equation 01MQ followed by theta\_\{F (x) L^n}, read through the obvious identification M(n) = Gamma\_*(X, L, F (x) L^n), for every O\_X-module F and every integer n, theta being the constructed comparison pullbackTildeComparison of Tag 01QJ, so no compatibility of a binder family is assumed (contrast pullbackComparison\_tensorHom)”.
+**`Stacks.SectionRingProjTheta.twistSquareInt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkSquareInt.lean, line 737](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/SectionRingProjTheta/TwistRemarkSquareInt.lean#L737). The attribute's comment: “assertion (ii), with no extra hypothesis: the square commutes -- theta\_F (x) theta\_\{L^n} is the pullback of the multiplication of Equation 01MQ followed by theta\_\{F (x) L^n}, read through the obvious identification M(n) = Gamma\_*(X, L, F (x) L^n), for every O\_X-module F and every integer n, theta being the constructed comparison pullbackTildeComparison of Tag 01QJ, so no compatibility of a binder family is assumed (contrast pullbackComparison\_tensorHom)”.
 
 > **The twist square commutes**, for every `𝒪_X`-module `𝓕` and every integer `n`:
 > `θ_𝓕 ⊗ θ_{𝓛^{⊗ n}}` is the pullback of the multiplication `M̃ ⊗ 𝒪_Y(n) ⟶ M(n)~` of Equation 01MQ
@@ -180,7 +180,7 @@ theorem twistSquareInt (F : X.Modules) (n : ℤ) :
 
 [Tag 0AG5](https://stacks.math.columbia.edu/tag/0AG5) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistComparisonCompact.isIso_integerComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean#L412). The attribute's comment: “the comparison `M̃ ⟶ ℱ` of Tag 0B5I is an isomorphism, for `Proj S` quasi-compact and `ℱ` quasi-coherent”. References: EGA II (8.14.8), “special case”.
+**`Stacks.AlgebraicGeometry.ProjTwistComparisonCompact.isIso_integerComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean#L412). The attribute's comment: “the comparison `M̃ ⟶ ℱ` of Tag 0B5I is an isomorphism, for `Proj S` quasi-compact and `ℱ` quasi-coherent”. References: EGA II (8.14.8), “special case”.
 
 > **[Stacks, Tag 0AG5].** Let `S` be a graded ring such that `X = Proj S` is quasi-compact and
 > let `ℱ` be a quasi-coherent `𝒪_X`-module.  Set `M = ⨁_{n ∈ ℤ} Γ(X, ℱ(n))`, the graded
@@ -201,7 +201,7 @@ public theorem isIso_integerComparison
       (ProjTwistedSections.twistedGlobalSectionsModule 𝒮 F))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistComparisonCompact.twistSheafMap_integerComparison_degreeNToTwistedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean#L778). The attribute's comment: “part (2): if `Proj S` is covered by the standard opens `D₊(f)` with `deg f = 1` then the induced maps `M_n → Γ(X, ℱ(n))` are the identity maps”.
+**`Stacks.AlgebraicGeometry.ProjTwistComparisonCompact.twistSheafMap_integerComparison_degreeNToTwistedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean, line 778](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistComparisonCompact.lean#L778). The attribute's comment: “part (2): if `Proj S` is covered by the standard opens `D₊(f)` with `deg f = 1` then the induced maps `M_n → Γ(X, ℱ(n))` are the identity maps”.
 
 > **[Stacks, Tag 0AG5], second assertion**, for the canonical graded module structure of
 > Tag 03GK: if `Proj S` is covered by the standard opens of the degree-one elements then the
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 28.29, Tag 01QG](https://stacks.math.columbia.edu/tag/01QG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

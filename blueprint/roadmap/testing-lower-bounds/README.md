@@ -1,6 +1,10 @@
 # Lower bounds for hypothesis testing
 
-The project's blueprint, read at commit [6c303c98](https://github.com/RemyDegenne/testing-lower-bounds/tree/6c303c98977be5a81e5a659823d83038d48a9a04) (2026-10-29): one article for each of its 180 nodes whose Lean declarations it names and marks formalized, or in Mathlib; for 1 of them in Mathlib, the article is the Mathlib chapter's. Its other 167 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[RemyDegenne/testing-lower-bounds](https://github.com/RemyDegenne/testing-lower-bounds) says in its README:
+
+> The goal of this project is to formalize in Lean the definitions and properties of information divergences between probability measures, as well as results about error bounds for (sequential) hypothesis testing.
+
+Its blueprint, by Rémy Degenne and Lorenzo Luccioli, read at commit [6c303c98](https://github.com/RemyDegenne/testing-lower-bounds/tree/6c303c98977be5a81e5a659823d83038d48a9a04) (2026-10-29): one article for each of its 180 nodes whose Lean declarations it names and marks formalized, or in Mathlib; for 1 of them in Mathlib, the article is the Mathlib chapter's. Its other 167 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

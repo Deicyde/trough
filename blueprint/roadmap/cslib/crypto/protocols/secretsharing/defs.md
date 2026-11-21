@@ -7,7 +7,7 @@ proof: formalized
 
 # Secret Sharing: Definitions
 
-`Cslib.Crypto.Protocols.SecretSharing.Defs`, in [Cslib/Crypto/Protocols/SecretSharing/Defs.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean), by Samuel Schlesinger.
+`Cslib.Crypto.Protocols.SecretSharing.Defs`, in [Cslib/Crypto/Protocols/SecretSharing/Defs.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean), by Samuel Schlesinger.
 
 > Privacy for secret sharing is part of the `Scheme` interface. This file exposes
 > the corresponding view and posterior distributions, plus theorem-friendly
@@ -31,7 +31,7 @@ proof: formalized
 > * [Adi Shamir, *How to Share a Secret*][Shamir1979]
 > * [J. Katz, Y. Lindell, *Introduction to Modern Cryptography*][KatzLindell2020]
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.shareDist` (definition, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L49))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.shareDist` (definition, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L49))
 
 > The distribution of the full share assignment for one secret.
 
@@ -40,7 +40,7 @@ noncomputable def shareDist (scheme : Scheme Secret Randomness Party Share)
     (secret : Secret) : PMF (Party → Share)
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.viewDist` (definition, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L54))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.viewDist` (definition, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L54))
 
 > The view distribution induced on the coalition `s`.
 
@@ -49,7 +49,7 @@ noncomputable def viewDist (scheme : Scheme Secret Randomness Party Share)
     (s : Finset Party) (secret : Secret) : PMF (s → Share)
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.viewDist_eq_of_not_authorized` (theorem, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L59))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.viewDist_eq_of_not_authorized` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L59))
 
 > Unauthorized coalitions receive secret-independent view distributions.
 
@@ -61,7 +61,7 @@ theorem viewDist_eq_of_not_authorized
     scheme.viewDist s secret₀ = scheme.viewDist s secret₁
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.posteriorSecretDist` (definition, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L68))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.posteriorSecretDist` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L68))
 
 > The posterior distribution on secrets after observing the coalition view
 > `v`.
@@ -73,7 +73,7 @@ noncomputable def posteriorSecretDist
     (hv : v ∈ (secretDist.bind (scheme.viewDist s)).support) : PMF Secret
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.posteriorSecretDist_apply` (theorem, [line 75](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L75))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.posteriorSecretDist_apply` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L75))
 
 ```lean
 theorem posteriorSecretDist_apply
@@ -86,7 +86,7 @@ theorem posteriorSecretDist_apply
         (secretDist.bind (scheme.viewDist s)) v
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.PerfectlyPrivate` (definition, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L87))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.PerfectlyPrivate` (definition, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L87))
 
 > Perfect privacy for unauthorized coalitions: conditioning on a view does not
 > change the prior on secrets.
@@ -95,7 +95,7 @@ theorem posteriorSecretDist_apply
 def PerfectlyPrivate (scheme : Scheme Secret Randomness Party Share) : Prop
 ```
 
-`Cslib.Crypto.Protocols.SecretSharing.Scheme.perfectlyPrivate` (theorem, [line 94](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L94))
+`Cslib.Crypto.Protocols.SecretSharing.Scheme.perfectlyPrivate` (theorem, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean#L94))
 
 > Every scheme has posterior privacy by definition of `Scheme`.
 
@@ -112,5 +112,5 @@ theorem perfectlyPrivate
 
 ## Sources
 
-- [Cslib/Crypto/Protocols/SecretSharing/Defs.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/Protocols/SecretSharing/Defs.lean)
+- [Cslib/Crypto/Protocols/SecretSharing/Defs.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Crypto/Protocols/SecretSharing/Defs.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Crypto.Protocols.SecretSharing.Defs.json)

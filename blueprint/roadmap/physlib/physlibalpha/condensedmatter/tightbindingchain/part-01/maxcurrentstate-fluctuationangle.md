@@ -8,7 +8,7 @@ proof: formalized
 
 # The fluctuation angle of the maximal current state
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.FluctuationAngle`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean): 13 declarations, 12 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.FluctuationAngle`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean): 13 declarations, 12 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Fluct
 
 ## A. The fluctuation angle
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L61).
+**`CondensedMatter.TightBindingChain.fluctuationAngle`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L61).
 
 > The fluctuation angle: the angle between the energy and position fluctuations in the maximal
 > current state, `arccos (‖ω(δH δX)‖ / (σ_H σ_X))`.
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Fluct
 noncomputable def fluctuationAngle : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L69).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_eq`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L69).
 
 > The fluctuation angle: `cos θ = 1 / C`.
 
@@ -55,7 +55,7 @@ lemma fluctuationAngle_eq (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
     T.fluctuationAngle = Real.arccos (1 / T.uncertaintyRatio)
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_eq_zero_iff`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L81).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_eq_zero_iff`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L81).
 
 > The fluctuation angle vanishes exactly for `N = 2` and `N = 3`.
 
@@ -64,7 +64,7 @@ lemma fluctuationAngle_eq_zero_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
     T.fluctuationAngle = 0 ↔ T.N = 2 ∨ T.N = 3
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_pos`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L89).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_pos`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L89).
 
 > From four sites on, the fluctuation angle is open.
 
@@ -72,7 +72,7 @@ lemma fluctuationAngle_eq_zero_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 lemma fluctuationAngle_pos (ht : T.t ≠ 0) (hN : 4 ≤ T.N) : 0 < T.fluctuationAngle
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_lt_fluctuationAngle`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L99).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_lt_fluctuationAngle`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L99).
 
 > From four sites on, the fluctuation angle grows strictly with the number of sites.
 
@@ -82,7 +82,7 @@ lemma fluctuationAngle_lt_fluctuationAngle {T T' : TightBindingChain} (ht : T.t 
     T.fluctuationAngle < T'.fluctuationAngle
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_lt`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L107).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_lt`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L107).
 
 > From four sites on, the fluctuation angle stays below `arccos (1 / √(π² / 3 - 2))`.
 
@@ -93,7 +93,7 @@ lemma fluctuationAngle_lt (ht : T.t ≠ 0) (hN : 4 ≤ T.N) :
 
 ## B. The dimensional quantum
 
-**`CondensedMatter.TightBindingChain.dimQuantum`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L120).
+**`CondensedMatter.TightBindingChain.dimQuantum`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L120).
 
 > The dimensional quantum of the chain: the excess `C - 1` over saturation.
 
@@ -101,13 +101,13 @@ lemma fluctuationAngle_lt (ht : T.t ≠ 0) (hN : 4 ≤ T.N) :
 noncomputable def dimQuantum : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.dimQuantum_nonneg`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L122).
+**`CondensedMatter.TightBindingChain.dimQuantum_nonneg`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L122).
 
 ```lean
 lemma dimQuantum_nonneg (ht : T.t ≠ 0) (hN : 2 ≤ T.N) : 0 ≤ T.dimQuantum
 ```
 
-**`CondensedMatter.TightBindingChain.dimQuantum_eq_zero_iff`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L126).
+**`CondensedMatter.TightBindingChain.dimQuantum_eq_zero_iff`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L126).
 
 > The dimensional quantum vanishes exactly for `N = 2` and `N = 3`.
 
@@ -116,7 +116,7 @@ lemma dimQuantum_eq_zero_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
     T.dimQuantum = 0 ↔ T.N = 2 ∨ T.N = 3
 ```
 
-**`CondensedMatter.TightBindingChain.dimQuantum_pos`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L131).
+**`CondensedMatter.TightBindingChain.dimQuantum_pos`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L131).
 
 > From four sites on, the dimensional quantum is positive.
 
@@ -124,7 +124,7 @@ lemma dimQuantum_eq_zero_iff (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 lemma dimQuantum_pos (ht : T.t ≠ 0) (hN : 4 ≤ T.N) : 0 < T.dimQuantum
 ```
 
-**`CondensedMatter.TightBindingChain.dimQuantum_lt_dimQuantum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L135).
+**`CondensedMatter.TightBindingChain.dimQuantum_lt_dimQuantum`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L135).
 
 > From four sites on, the dimensional quantum grows strictly with the number of sites.
 
@@ -133,7 +133,7 @@ lemma dimQuantum_lt_dimQuantum {T T' : TightBindingChain} (ht : T.t ≠ 0) (ht' 
     (hN : 4 ≤ T.N) (hNN' : T.N < T'.N) : T.dimQuantum < T'.dimQuantum
 ```
 
-**`CondensedMatter.TightBindingChain.dimQuantum_lt`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L140).
+**`CondensedMatter.TightBindingChain.dimQuantum_lt`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L140).
 
 > From four sites on, the dimensional quantum stays below `√(π² / 3 - 2) - 1`.
 
@@ -142,7 +142,7 @@ lemma dimQuantum_lt (ht : T.t ≠ 0) (hN : 4 ≤ T.N) :
     T.dimQuantum < √(Real.pi ^ 2 / 3 - 2) - 1
 ```
 
-**`CondensedMatter.TightBindingChain.fluctuationAngle_eq_dimQuantum`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L145).
+**`CondensedMatter.TightBindingChain.fluctuationAngle_eq_dimQuantum`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean#L145).
 
 > The dimensional quantum fixes the fluctuation angle: `θ = arccos (1 / (1 + δ))`.
 
@@ -161,4 +161,4 @@ lemma fluctuationAngle_eq_dimQuantum (ht : T.t ≠ 0) (hN : 2 ≤ T.N) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean)

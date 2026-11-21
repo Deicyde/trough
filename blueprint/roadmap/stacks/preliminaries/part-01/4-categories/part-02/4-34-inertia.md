@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.34 Inertia
 
-Section 4.34 of the Stacks Project, [Tag 04Z2](https://stacks.math.columbia.edu/tag/04Z2). 3 tags here are carried by 6 declarations of the repository (1 in StacksCore and 5 in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 4.34 of the Stacks Project, [Tag 04Z2](https://stacks.math.columbia.edu/tag/04Z2). 3 tags here are carried by 6 declarations of the repository (1 in StacksCore and 5 in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 034H, a lemma
 
 [Tag 034H](https://stacks.math.columbia.edu/tag/034H) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia.isEquivalenceOverToDiagonalFibreProductOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean#L278). The attribute's comment: “(1)”.
+**`CategoryTheory.RelativeInertia.isEquivalenceOverToDiagonalFibreProductOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean#L278). The attribute's comment: “(1)”.
 
 > **Stacks 034H (1), the equivalence over `C`.** For `F : S ⥤ S'` strictly over `C`, the
 > comparison 1-morphism `Φ : I_{S/S'} ⥤ S ×_{Δ, S ×_{S'} S, Δ} S`, `(x, α) ↦ (x, x, (α, id))`, is
@@ -30,7 +30,7 @@ noncomputable def isEquivalenceOverToDiagonalFibreProductOver (hF : F ⋙ p' = p
       (toDiagonalFibreProductOver hF)
 ```
 
-**`CategoryTheory.RelativeInertia.isEquivalenceOver_toDiagonalFibreProductOver_and_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean#L308).
+**`CategoryTheory.RelativeInertia.isEquivalenceOver_toDiagonalFibreProductOver_and_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonalOver.lean#L308).
 
 > **Stacks 034H.** Let `p : S ⥤ C` be a fibred category, let `p' : S' ⥤ C` be a category over
 > `C` and let `F : S ⥤ S'` be a 1-morphism of fibred categories over `C`. Then
@@ -52,13 +52,13 @@ theorem isEquivalenceOver_toDiagonalFibreProductOver_and_isFibered (hp : p.IsFib
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.RelativeInertia.isFibered`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/RelativeInertia.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonal.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonal.lean#L412) (StacksFrontier): “(2)”.
+- [`CategoryTheory.RelativeInertia.isFibered`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/RelativeInertia.lean#L97), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonal.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaDiagonal.lean#L412) (StacksFrontier): “(2)”.
 
 ## Tag 034I, a definition
 
 [Tag 034I](https://stacks.math.columbia.edu/tag/034I) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia`**, a structure in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Inertia.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Inertia.lean#L72).
+**`CategoryTheory.RelativeInertia`**, a structure in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Inertia.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Inertia.lean#L72).
 
 > **Stacks 034I.** An object of the relative inertia category `I_{S/S'}` for a
 > functor `F : S ⥤ S'`: a pair `(x, α)` with `α : Aut x` such that `F(α) = id_{F(x)}`.
@@ -73,7 +73,7 @@ structure RelativeInertia (F : S ⥤ S')
 
 [Tag 04Z6](https://stacks.math.columbia.edu/tag/04Z6) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia.isEquivalenceOver_toFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L450).
+**`CategoryTheory.RelativeInertia.isEquivalenceOver_toFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L450).
 
 > **Stacks 04Z6.** The 2-commutative square
 > ```
@@ -97,7 +97,7 @@ theorem isEquivalenceOver_toFibreProduct :
       (FibreProduct.structureFunctor p p' F hF) (toFibreProduct p p' F hF))
 ```
 
-**`CategoryTheory.RelativeInertia.toFibreProduct_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L466).
+**`CategoryTheory.RelativeInertia.toFibreProduct_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L466).
 
 > Consequence of Stacks 04Z6: the comparison functor `Θ` is an equivalence of the
 > underlying categories.
@@ -107,7 +107,7 @@ theorem toFibreProduct_isEquivalence :
     (toFibreProduct p p' F hF).IsEquivalence
 ```
 
-**`CategoryTheory.RelativeInertia.squareTwoCommutes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L476).
+**`CategoryTheory.RelativeInertia.squareTwoCommutes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/InertiaSquare.lean#L476).
 
 > **Stacks 04Z6, the square.** The 2-commutativity of the square is witnessed by a
 > natural isomorphism over `C`, `I_F ∘ c ≅ e ∘ (F ∘ π)`. On an object `(x, α)` both
@@ -127,4 +127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.34, Tag 04Z2](https://stacks.math.columbia.edu/tag/04Z2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

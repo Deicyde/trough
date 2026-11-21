@@ -8,7 +8,7 @@ proof: formalized
 
 # Three-Dimensional Electromagnetism
 
-The module `Physlib.Electromagnetism.ThreeDimension.Basic`, [Physlib/Electromagnetism/ThreeDimension/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/ThreeDimension/Basic.lean): 2 declarations, 2 with a docstring, 2 listed as significant.
+The module `Physlib.Electromagnetism.ThreeDimension.Basic`, [Physlib/Electromagnetism/ThreeDimension/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/Basic.lean): 2 declarations, 2 with a docstring, 2 listed as significant.
 
 > This directory provides a three-dimensional, vector-calculus-facing layer for
 > electromagnetism.
@@ -24,7 +24,7 @@ The module `Physlib.Electromagnetism.ThreeDimension.Basic`, [Physlib/Electromagn
 > electromagnetic potential in terms of the scalar and vector potentials, using
 > the standard vector-calculus expressions.
 
-**`Electromagnetism.ThreeDimension.electricField_eq_3D`**, a theorem, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/ThreeDimension/Basic.lean#L49). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.electricField_eq_3D`**, a theorem, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/Basic.lean#L49). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The electric field written in terms of the scalar and vector potentials as `- ∇ φ - ∂ₜ A`.
 
@@ -33,7 +33,7 @@ theorem electricField_eq_3D :
     E = fun t x => - ∇ (φ t) x - ∂ₜ (fun t => A t x) t
 ```
 
-**`Electromagnetism.ThreeDimension.magneticField_eq_3D`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/ThreeDimension/Basic.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.ThreeDimension.magneticField_eq_3D`**, a theorem, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/Basic.lean#L55). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The magnetic field written as the curl of the vector potential as `∇ ⨯ A`.
 
@@ -48,4 +48,4 @@ theorem magneticField_eq_3D :
 
 ## Sources
 
-- [Physlib/Electromagnetism/ThreeDimension/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/ThreeDimension/Basic.lean)
+- [Physlib/Electromagnetism/ThreeDimension/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/ThreeDimension/Basic.lean)

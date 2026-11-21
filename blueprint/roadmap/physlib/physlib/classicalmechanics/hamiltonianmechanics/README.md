@@ -1,18 +1,18 @@
 # HamiltonianMechanics
 
-The folder [Physlib/ClassicalMechanics/HamiltonianMechanics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HamiltonianMechanics): 2 modules, an article each, in path order.
+The folder [Physlib/ClassicalMechanics/HamiltonianMechanics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics): 3 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *Hamiltonian mechanics* ([Physlib/ClassicalMechanics/HamiltonianMechanics/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HamiltonianMechanics/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Hamiltonian mechanics* ([Physlib/ClassicalMechanics/HamiltonianMechanics/API-map.md](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HamiltonianMechanics/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 
 > ### Phase space and observables
 >
-> A configuration space Q is a smooth manifold without boundary \{1}. [\[1\]](../configurationspace/basic.md) … In the coordinate formulation on a complete real inner-product space X, states are pairs (p, q) in X × X, and observables are real-valued functions f(p, q), with momentum first. [\[2\]](poissonbracket.md) …
+> A configuration space Q is a smooth manifold without boundary \{1}. [\[1\]](../configurationspace/basic.md) For finite-dimensional Q, its canonical Hamiltonian phase space is the cotangent bundle T*Q: a state consists of a configuration q and a momentum covector at q. [\[16\]](../phasespace/basic.md) … In the coordinate formulation on a complete real inner-product space X, states are pairs (p, q) in X × X, and observables are real-valued functions f(p, q), with momentum first. [\[2\]](poissonbracket.md) Identifying the cotangent phase space of a Euclidean configuration space with this coordinate representation uses the inner product to represent covectors as momentum vectors. [\[17\]](../phasespace/basic.md)
 >
 > ### Hamiltonians and Hamiltonian trajectories
 >
-> … In coordinates, curves p(t) and q(t) satisfy Hamilton's equations q̇ = ∇ₚH and ṗ = −∇qH exactly when the Hamilton equation operator vanishes. \[3\] … For a smooth Hamiltonian and a smooth phase-space curve, the variational gradient of the action ∫ (⟨p, q̇⟩ − H(t, p, q)) dt is that operator. \[4\]
+> A Hamiltonian system consists of a phase space and a smooth real-valued Hamiltonian, possibly time-dependent and defined on an open domain. [\[18\]](basic.md) … In coordinates, curves p(t) and q(t) satisfy Hamilton's equations q̇ = ∇ₚH and ṗ = −∇qH exactly when the Hamilton equation operator vanishes. \[3\] … For a smooth Hamiltonian and a smooth phase-space curve, the variational gradient of the action ∫ (⟨p, q̇⟩ − H(t, p, q)) dt is that operator. \[4\]
 >
 > Taking E = ℝ, positive mass m and spring constant k gives the harmonic-oscillator Hamiltonian H(p, q) = p²/(2m) + k q²/2, which is smooth on the whole phase space. [\[12\]](../harmonicoscillator/basic.md) Taking E = ℝ³, positive mass m and a radial potential V smooth at positive radii gives the central-force Hamiltonian H(p, q) = ‖p‖²/(2m) + V(‖q‖), smooth on the open domain U = \{(p, q) | q ≠ 0}. [\[14\]](../../../physlibalpha/classicalmechanics/centralforce/basic.md) …
 >
@@ -22,7 +22,7 @@ The repository's API map for this folder, *Hamiltonian mechanics* ([Physlib/Clas
 >
 > ### Symmetries and conserved quantities
 >
-> For a time-independent differentiable observable along a differentiable Hamiltonian trajectory, a vanishing Poisson bracket with the Hamiltonian implies zero time derivative. \[6\] A smooth autonomous Hamiltonian Poisson-commutes with itself and has zero time derivative along its Hamiltonian trajectories. \[5\]\[6\] …
+> For a time-independent differentiable observable along a differentiable Hamiltonian trajectory, a vanishing Poisson bracket with the Hamiltonian implies zero time derivative. \[6\] A smooth autonomous Hamiltonian Poisson-commutes with itself and has zero time derivative along its Hamiltonian trajectories. \[5\]\[6\] These quantities are constant on connected time intervals, giving energy conservation in the autonomous case. \[20\]
 >
 > On a finite-dimensional real symplectic vector space, an affine infinitesimally symplectic Lie algebra action has a moment map whose components generate the action's vector fields through their symplectic gradients. [\[7\]](../../../physlibalpha/classicalmechanics/momentmap/basic.md) If an autonomous Hamiltonian is invariant under a generator, the corresponding moment-map component is constant along its Hamiltonian trajectories. \[8\]
 >
@@ -34,7 +34,7 @@ The repository's API map for this folder, *Hamiltonian mechanics* ([Physlib/Clas
 >
 > The harmonic oscillator \{3} and simple pendulum \{4} have explicit canonical momenta and Hamiltonians, with Hamiltonian, Newtonian and variational descriptions agreeing for smooth trajectories. The pendulum is expressed using a real lift of its angle. [\[12\]](../harmonicoscillator/basic.md)[\[13\]](../pendulum/simplependulum/hamiltonian.md)
 >
-> Three-dimensional central-force systems have Hamiltonians smooth away from the centre. [\[14\]](../../../physlibalpha/classicalmechanics/centralforce/basic.md) Their angular-momentum observables L² and Lz Poisson-commute with each other and with the Hamiltonian away from the centre. [\[15\]](../../../physlibalpha/classicalmechanics/centralforce/angularmomentum.md) …
+> Three-dimensional central-force systems have Hamiltonians smooth away from the centre. [\[14\]](../../../physlibalpha/classicalmechanics/centralforce/basic.md) They define Hamiltonian systems on this domain. [\[19\]](../../../physlibalpha/classicalmechanics/centralforce/basic.md) Their angular-momentum observables L² and Lz Poisson-commute with each other and with the Hamiltonian away from the centre. [\[15\]](../../../physlibalpha/classicalmechanics/centralforce/angularmomentum.md) …
 
 Its references:
 
@@ -45,5 +45,6 @@ Its references:
 > - \{5\} Lagrangian mechanics API map — [Physlib/ClassicalMechanics/Lagrangian/API-map.md](../lagrangian/README.md)
 > - \{6\} V. I. Arnold, *Mathematical Methods of Classical Mechanics*.
 
+- [Hamiltonian systems](basic.md)
 - [Hamilton's equations](hamiltonsequations.md)
 - [The Poisson bracket](poissonbracket.md)

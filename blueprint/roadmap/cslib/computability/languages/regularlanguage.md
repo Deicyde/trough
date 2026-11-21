@@ -7,9 +7,9 @@ proof: formalized
 
 # Regular languages
 
-`Cslib.Computability.Languages.RegularLanguage`, in [Cslib/Computability/Languages/RegularLanguage.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.RegularLanguage`, in [Cslib/Computability/Languages/RegularLanguage.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean), by Ching-Tsun Chou.
 
-`Cslib.Language.IsRegular.iff_dfa` (theorem, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L38))
+`Cslib.Language.IsRegular.iff_dfa` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L38))
 
 > A characterization of `Language.IsRegular` in terms of `DA`. This is the only theorem in Cslib
 > in which Mathlib's definition of `Language.IsRegular` is used.
@@ -20,7 +20,7 @@ theorem IsRegular.iff_dfa {l : Language Symbol} :
       ∃ dfa : DA.FinAcc State Symbol, language dfa = l
 ```
 
-`Cslib.Language.IsRegular.iff_nfa` (theorem, [line 52](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L52))
+`Cslib.Language.IsRegular.iff_nfa` (theorem, [line 52](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L52))
 
 > A characterization of Language.IsRegular in terms of NA.
 
@@ -30,7 +30,7 @@ theorem IsRegular.iff_nfa {l : Language Symbol} :
       ∃ nfa : NA.FinAcc State Symbol, language nfa = l
 ```
 
-`Cslib.Language.IsRegular.iff_epsilon_nfa` (theorem, [line 64](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L64))
+`Cslib.Language.IsRegular.iff_epsilon_nfa` (theorem, [line 64](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L64))
 
 > A characterization of `Language.IsRegular` in terms of `εNA`.
 
@@ -40,7 +40,7 @@ theorem IsRegular.iff_epsilon_nfa {l : Language Symbol} :
       ∃ enfa : εNA.FinAcc State Symbol, language enfa = l
 ```
 
-`Cslib.Language.IsRegular.compl` (theorem, [line 75](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L75))
+`Cslib.Language.IsRegular.compl` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L75))
 
 > The complementation of a regular language is regular.
 
@@ -48,7 +48,7 @@ theorem IsRegular.iff_epsilon_nfa {l : Language Symbol} :
 theorem IsRegular.compl {l : Language Symbol} (h : l.IsRegular) : (lᶜ).IsRegular
 ```
 
-`Cslib.Language.IsRegular.iff_twoWayNA` (theorem, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L87))
+`Cslib.Language.IsRegular.iff_twoWayNA` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L87))
 
 > A language is regular if and only if it is accepted by some two-way nondeterministic
 > automaton with finitely many states.
@@ -59,7 +59,7 @@ theorem IsRegular.iff_twoWayNA {l : Language Symbol} :
       ∃ a : TwoWayNA State Symbol, language a = l
 ```
 
-`Cslib.Language.IsRegular.zero` (theorem, [line 104](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L104))
+`Cslib.Language.IsRegular.zero` (theorem, [line 104](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L104))
 
 > The empty language is regular.
 
@@ -67,7 +67,7 @@ theorem IsRegular.iff_twoWayNA {l : Language Symbol} :
 theorem IsRegular.zero : (0 : Language Symbol).IsRegular
 ```
 
-`Cslib.Language.IsRegular.one` (theorem, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L116))
+`Cslib.Language.IsRegular.one` (theorem, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L116))
 
 > The language containing only the empty word is regular.
 
@@ -75,7 +75,7 @@ theorem IsRegular.zero : (0 : Language Symbol).IsRegular
 theorem IsRegular.one : (1 : Language Symbol).IsRegular
 ```
 
-`Cslib.Language.IsRegular.top` (theorem, [line 130](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L130))
+`Cslib.Language.IsRegular.top` (theorem, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L130))
 
 > The language of all finite words is regular.
 
@@ -83,7 +83,7 @@ theorem IsRegular.one : (1 : Language Symbol).IsRegular
 theorem IsRegular.top : (⊤ : Language Symbol).IsRegular
 ```
 
-`Cslib.Language.IsRegular.inf` (theorem, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L136))
+`Cslib.Language.IsRegular.inf` (theorem, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L136))
 
 > The intersection of two regular languages is regular.
 
@@ -92,7 +92,7 @@ theorem IsRegular.inf {l1 l2 : Language Symbol}
     (h1 : l1.IsRegular) (h2 : l2.IsRegular) : (l1 ⊓ l2).IsRegular
 ```
 
-`Cslib.Language.IsRegular.add` (theorem, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L148))
+`Cslib.Language.IsRegular.add` (theorem, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L148))
 
 > The union of two regular languages is regular.
 
@@ -101,7 +101,7 @@ theorem IsRegular.add {l1 l2 : Language Symbol}
     (h1 : l1.IsRegular) (h2 : l2.IsRegular) : (l1 + l2).IsRegular
 ```
 
-`Cslib.Language.IsRegular.iInf` (theorem, [line 160](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L160))
+`Cslib.Language.IsRegular.iInf` (theorem, [line 160](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L160))
 
 > The intersection of any finite number of regular languages is regular.
 
@@ -110,7 +110,7 @@ theorem IsRegular.iInf {I : Type*} [Finite I] {s : Set I} {l : I → Language Sy
     (h : ∀ i ∈ s, (l i).IsRegular) : (⨅ i ∈ s, l i).IsRegular
 ```
 
-`Cslib.Language.IsRegular.iSup` (theorem, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L172))
+`Cslib.Language.IsRegular.iSup` (theorem, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L172))
 
 > The union of any finite number of regular languages is regular.
 
@@ -119,7 +119,7 @@ theorem IsRegular.iSup {I : Type*} [Finite I] {s : Set I} {l : I → Language Sy
     (h : ∀ i ∈ s, (l i).IsRegular) : (⨆ i ∈ s, l i).IsRegular
 ```
 
-`Cslib.Language.IsRegular.mul` (theorem, [line 187](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L187))
+`Cslib.Language.IsRegular.mul` (theorem, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L187))
 
 > The concatenation of two regular languages is regular.
 
@@ -128,7 +128,7 @@ theorem IsRegular.mul {l1 l2 : Language Symbol}
     (h1 : l1.IsRegular) (h2 : l2.IsRegular) : (l1 * l2).IsRegular
 ```
 
-`Cslib.Language.IsRegular.kstar` (theorem, [line 196](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L196))
+`Cslib.Language.IsRegular.kstar` (theorem, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L196))
 
 > The Kleene star of a regular language is regular.
 
@@ -137,7 +137,7 @@ theorem IsRegular.kstar {l : Language Symbol}
     (h : l.IsRegular) : (l∗).IsRegular
 ```
 
-`Cslib.Language.IsRegular.congr_fin_index` (theorem, [line 205](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L205))
+`Cslib.Language.IsRegular.congr_fin_index` (theorem, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L205))
 
 > If a right congruence is of finite index, then each of its equivalence classes is regular.
 
@@ -147,7 +147,7 @@ theorem IsRegular.congr_fin_index {Symbol : Type}
     (a : Quotient c.eq) : (eqvCls a).IsRegular
 ```
 
-`Cslib.Language.IsRegular.reverse` (theorem, [line 214](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L214))
+`Cslib.Language.IsRegular.reverse` (theorem, [line 214](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L214))
 
 > The reversal of a regular language is regular.
 
@@ -155,7 +155,7 @@ theorem IsRegular.congr_fin_index {Symbol : Type}
 theorem IsRegular.reverse {l : Language Symbol} (h : l.IsRegular) : l.reverse.IsRegular
 ```
 
-`Cslib.Language.IsRegular.reverse_iff` (theorem, [line 221](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L221))
+`Cslib.Language.IsRegular.reverse_iff` (theorem, [line 221](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L221))
 
 > A language is regular iff its reversal is regular.
 
@@ -163,7 +163,7 @@ theorem IsRegular.reverse {l : Language Symbol} (h : l.IsRegular) : l.reverse.Is
 theorem IsRegular.reverse_iff {l : Language Symbol} : l.reverse.IsRegular ↔ l.IsRegular
 ```
 
-`Cslib.Language.IsRegular.preimage` (theorem, [line 229](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L229))
+`Cslib.Language.IsRegular.preimage` (theorem, [line 229](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L229))
 
 > The preimage of a regular languge under a language homomorphism is regular.
 
@@ -172,7 +172,7 @@ theorem IsRegular.preimage (f : Hom Symbol' Symbol) {l : Language Symbol} (h : l
     (l.preimage f).IsRegular
 ```
 
-`Cslib.Language.IsRegular.char` (theorem, [line 237](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L237))
+`Cslib.Language.IsRegular.char` (theorem, [line 237](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L237))
 
 > The language containing only the one character string `a` is regular.
 
@@ -180,7 +180,7 @@ theorem IsRegular.preimage (f : Hom Symbol' Symbol) {l : Language Symbol} (h : l
 theorem IsRegular.char (a : Symbol) : ({[a]} : Language Symbol).IsRegular
 ```
 
-`Cslib.Language.IsRegular.regex` (theorem, [line 242](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L242))
+`Cslib.Language.IsRegular.regex` (theorem, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L242))
 
 > Languages matching regular expressions are regular.
 
@@ -188,7 +188,7 @@ theorem IsRegular.char (a : Symbol) : ({[a]} : Language Symbol).IsRegular
 theorem IsRegular.regex (r : RegularExpression Symbol) : r.matches'.IsRegular
 ```
 
-`Cslib.Language.IsRegular.iff_regex` (theorem, [line 247](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean#L247))
+`Cslib.Language.IsRegular.iff_regex` (theorem, [line 247](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean#L247))
 
 > A characterization of `Language.IsRegular` in terms of `RegularExpression`.
 
@@ -222,5 +222,5 @@ theorem IsRegular.iff_regex [Finite Symbol] {l : Language Symbol} :
 
 ## Sources
 
-- [Cslib/Computability/Languages/RegularLanguage.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/RegularLanguage.lean)
+- [Cslib/Computability/Languages/RegularLanguage.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/RegularLanguage.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.RegularLanguage.json)

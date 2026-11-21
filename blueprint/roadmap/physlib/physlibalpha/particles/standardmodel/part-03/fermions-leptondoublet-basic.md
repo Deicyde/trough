@@ -8,7 +8,7 @@ proof: formalized
 
 # Lepton doublets (PhyslibAlpha)
 
-The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonDoublet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean): 35 declarations, 35 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonDoublet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean): 35 declarations, 35 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonDoublet.Basic`, 
 > The Weyl factor carries the left-handed Lorentz index, while the functions on `Fin 2`
 > carry the weak index.
 
-**`StandardModel.LeptonDoubletV`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L77).
+**`StandardModel.LeptonDoubletV`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L77).
 
 > The target vector space of one Standard Model lepton doublet: the target space of the
 > datum `StandardModel.Model.leptonDoublet`, a left-handed Weyl spinor tensored with the
@@ -57,7 +57,7 @@ abbrev LeptonDoubletV : Type
 
 ## B. The basis
 
-**`StandardModel.LeptonDoubletV.basis`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L92).
+**`StandardModel.LeptonDoubletV.basis`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L92).
 
 > A basis on the lepton doublets: the Weyl basis tensored with the coordinate basis of
 > the weak index.
@@ -66,7 +66,7 @@ abbrev LeptonDoubletV : Type
 noncomputable def basis : Module.Basis (Fin 2 × Fin 2) ℂ LeptonDoubletV
 ```
 
-**`StandardModel.LeptonDoubletV.basis_apply`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L96).
+**`StandardModel.LeptonDoubletV.basis_apply`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L96).
 
 > The lepton-doublet basis vector as an explicit spinor–weak tensor.
 
@@ -79,7 +79,7 @@ lemma basis_apply (k j : Fin 2) :
 
 > The Lorentz group acts on the left-handed Weyl factor and leaves the weak index fixed.
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L112).
+**`StandardModel.LeptonDoubletV.repLorentzGroup`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L112).
 
 > The left-handed Lorentz representation on lepton doublets: the Lorentz action the
 > general theory derives from the datum.
@@ -88,7 +88,7 @@ lemma basis_apply (k j : Fin 2) :
 noncomputable def repLorentzGroup : Representation ℂ (SL(2,ℂ)) LeptonDoubletV
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_tmul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L133).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_tmul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L133).
 
 > The Lorentz action on a pure spinor–weak tensor: the left-handed action on the Weyl
 > factor, the weak index untouched.
@@ -106,7 +106,7 @@ lemma repLorentzGroup_tmul (Λ : SL(2,ℂ)) (s : Fermion.LeftHandedWeyl) (v : Fi
 > The tensor and basis formulas below expose the coefficients used to compare actions and
 > compute the kernel.
 
-**`StandardModel.LeptonDoubletV.doubletMatrix`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L151).
+**`StandardModel.LeptonDoubletV.doubletMatrix`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L151).
 
 > The `SpaceTimeAlgebra`-valued weak matrix of the jet gauge action on the lepton doublet: the
 > matrix of jets by which a gauge jet acts on the datum.
@@ -115,7 +115,7 @@ lemma repLorentzGroup_tmul (Λ : SL(2,ℂ)) (s : Fermion.LeftHandedWeyl) (v : Fi
 noncomputable def doubletMatrix (U : JetGaugeGroupI) : Matrix (Fin 2) (Fin 2) SpaceTimeAlgebra
 ```
 
-**`StandardModel.LeptonDoubletV.doubletMatrix_eq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L157).
+**`StandardModel.LeptonDoubletV.doubletMatrix_eq`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L157).
 
 > The weak matrix of a gauge jet is its `SU(2)` matrix carrying the `-3` hypercharge
 > phase `(star u) ^ 3`.
@@ -127,7 +127,7 @@ lemma doubletMatrix_eq (U : JetGaugeGroupI) :
           (Fin 2) SpaceTimeAlgebra)
 ```
 
-**`StandardModel.LeptonDoubletV.doubletMatrix_ofConstant_map_constantCoeff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L166).
+**`StandardModel.LeptonDoubletV.doubletMatrix_ofConstant_map_constantCoeff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L166).
 
 > The constant term of the weak matrix of a constant gauge jet: the `SU(2)` matrix of
 > the gauge transformation carrying its `-3` hypercharge phase.
@@ -138,7 +138,7 @@ lemma doubletMatrix_ofConstant_map_constantCoeff (g : GaugeGroupI) :
       = (star g.toU1.1 ^ 3) • g.toSU2.1
 ```
 
-**`StandardModel.LeptonDoubletV.doubletMatrix_ofConstant`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L179).
+**`StandardModel.LeptonDoubletV.doubletMatrix_ofConstant`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L179).
 
 > The weak matrix of a constant gauge jet is constant.
 
@@ -150,7 +150,7 @@ lemma doubletMatrix_ofConstant (g : GaugeGroupI) :
           (MvPowerSeries.C : ℂ → SpaceTimeAlgebra)
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L195).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L195).
 
 > The `(1, 2)_{-3}` action of the unquotiented Standard Model gauge group: the global
 > action the general theory derives from the datum, the constant term of the jet action.
@@ -159,7 +159,7 @@ lemma doubletMatrix_ofConstant (g : GaugeGroupI) :
 noncomputable def repGaugeGroupI : Representation ℂ GaugeGroupI LeptonDoubletV
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L218).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_tmul`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L218).
 
 > The gauge action on a pure spinor–weak tensor: the `SU(2)` matrix, scaled by the
 > hypercharge factor, acts on the weak index.
@@ -169,7 +169,7 @@ lemma repGaugeGroupI_tmul (g : GaugeGroupI) (v : Fermion.LeftHandedWeyl) (w : Fi
     repGaugeGroupI g (v ⊗ₜ w) = v ⊗ₜ ((star g.toU1.1 ^ 3) • g.toSU2.1).mulVec w
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_apply_basis`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L225).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_apply_basis`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L225).
 
 > The gauge action on the lepton-doublet basis: the spinor index is inert and the weak
 > index transforms by the `SU(2)` matrix, scaled by the hypercharge factor.
@@ -180,7 +180,7 @@ lemma repGaugeGroupI_apply_basis (g : GaugeGroupI) (j : Fin 2 × Fin 2) :
       ∑ w, (star g.toU1.1 ^ 3 * g.toSU2.1 w j.2) • basis (j.1, w)
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L239).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_tmul_basis_eq_sum`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L239).
 
 > Expands the lepton-doublet gauge action on a tensor-product basis vector.
 
@@ -190,7 +190,7 @@ lemma repGaugeGroupI_tmul_basis_eq_sum (g : GaugeGroupI) (k j : Fin 2) :
       ∑ j' : Fin 2, (star g.toU1.1 ^ 3 * g.toSU2.1 j' j) • basis (k, j')
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L246).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_eq_iff_mul_eq`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L246).
 
 > Two gauge elements induce the same action exactly when their weak-basis coefficients
 > agree.
@@ -208,7 +208,7 @@ lemma repGaugeGroupI_eq_iff_mul_eq {g₁ g₂ : GaugeGroupI} :
 > `U(1)` phase. Its colour component is unrestricted because the lepton doublet is an
 > `SU(3)` singlet.
 
-**`StandardModel.LeptonDoubletV.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L271).
+**`StandardModel.LeptonDoubletV.mem_repGaugeGroupI_ker_iff_eq`**, a lemma, [line 271](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L271).
 
 > Characterizes the full-group elements acting trivially on the lepton doublet.
 
@@ -224,7 +224,7 @@ lemma mem_repGaugeGroupI_ker_iff_eq {g : GaugeGroupI} :
 > kernel. For the central `ℤ₆`, the weak central phase and charge `-3` phase combine to a
 > sixth power and therefore act trivially.
 
-**`StandardModel.LeptonDoubletV.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L313).
+**`StandardModel.LeptonDoubletV.gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L313).
 
 > The central `ℤ₆` subgroup acts trivially on `(1, 2)_{-3}`.
 
@@ -233,7 +233,7 @@ lemma gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI :
     GaugeGroupQuot.subgroup .ℤ₆ ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonDoubletV.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L327).
+**`StandardModel.LeptonDoubletV.gaugeGroup_subgroup_le_ker_repGaugeGroupI`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L327).
 
 > Every supported quotient subgroup acts trivially on the lepton doublet.
 
@@ -242,7 +242,7 @@ lemma gaugeGroup_subgroup_le_ker_repGaugeGroupI (Q : GaugeGroupQuot) :
     Q.subgroup ≤ repGaugeGroupI.ker
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroup`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L333).
+**`StandardModel.LeptonDoubletV.repGaugeGroup`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L333).
 
 > The `(1, 2)_{-3}` representation for every supported global form of the
 > Standard Model gauge group.
@@ -259,7 +259,7 @@ noncomputable def repGaugeGroup : (Q : GaugeGroupQuot) →
 > `SpaceTimeAlgebra`-linearly on the weak factor. On jets of constant gauge transformations the
 > action reduces to the global gauge action. Both are the general theory's, for the datum.
 
-**`StandardModel.LeptonDoubletV.repJetGaugeGroupI`**, a def, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L353).
+**`StandardModel.LeptonDoubletV.repJetGaugeGroupI`**, a def, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L353).
 
 > The `(1, 2)_{-3}` action of the jet gauge group on the jet space of the lepton
 > doublet: the jet action the general theory derives from the datum.
@@ -269,7 +269,7 @@ noncomputable def repJetGaugeGroupI :
     Representation ℂ JetGaugeGroupI (SpaceTimeAlgebra ⊗[ℂ] LeptonDoubletV)
 ```
 
-**`StandardModel.LeptonDoubletV.repJetGaugeGroupI_smul`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L389).
+**`StandardModel.LeptonDoubletV.repJetGaugeGroupI_smul`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L389).
 
 > **The jet gauge action on the jets of the lepton doublet is fibrewise**: it commutes
 > with multiplication by scalar jets.
@@ -280,7 +280,7 @@ lemma repJetGaugeGroupI_smul (U : JetGaugeGroupI) (χ : SpaceTimeAlgebra)
     repJetGaugeGroupI U (χ • z) = χ • repJetGaugeGroupI U z
 ```
 
-**`StandardModel.LeptonDoubletV.repJetGaugeGroupI_ofConstant`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L397).
+**`StandardModel.LeptonDoubletV.repJetGaugeGroupI_ofConstant`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L397).
 
 > On jets of constant gauge transformations the jet action reduces to the global
 > gauge action on the fibre: the `(1, 2)_{-3}` action on the lepton-doublet factor, and
@@ -300,7 +300,7 @@ lemma repJetGaugeGroupI_ofConstant (g : GaugeGroupI) :
 > Dualising inverts and transposes the coefficient matrix, and conjugating stars it; the four
 > combinations below are what a component of a lepton-doublet symbol needs.
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_apply_basis`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L417).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_apply_basis`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L417).
 
 > The Lorentz action on the lepton-doublet basis: the weak index is inert and the
 > spinor index transforms by the matrix itself.
@@ -310,7 +310,7 @@ lemma repLorentzGroup_apply_basis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 2) :
     repLorentzGroup Λ (basis j) = ∑ β, Λ.1 β j.1 • basis (β, j.2)
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_dual_dualBasis`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L427).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_dual_dualBasis`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L427).
 
 > The lepton-doublet coordinate functionals transform contragrediently, by the
 > inverse matrix.
@@ -321,7 +321,7 @@ lemma repLorentzGroup_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 2) :
       ∑ β, (Λ⁻¹).1 j.1 β • basis.dualBasis (β, j.2)
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_apply_basis`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L440).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_apply_basis`**, a lemma, [line 440](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L440).
 
 > The Lorentz action on the conjugate lepton-doublet basis: the coefficients are the
 > conjugates of those of the lepton-doublet action.
@@ -332,7 +332,7 @@ lemma repLorentzGroup_conj_apply_basis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 2) :
       = ∑ β, star (Λ.1 β j.1) • (Basis.conj basis) (β, j.2)
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L450).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_dual_dualBasis`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L450).
 
 > The conjugate lepton-doublet coordinate functionals transform by the entrywise
 > conjugate of the inverse matrix.
@@ -343,7 +343,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 2) 
       ∑ β, star ((Λ⁻¹).1 j.1 β) • (Basis.conj basis).dualBasis (β, j.2)
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_neg_one`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L463).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_neg_one`**, a lemma, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L463).
 
 > **The centre of `SL(2,ℂ)` acts on the lepton-doublet space by `-1`**: the value space carries a
 > single Weyl-spinor index, and `-1` is not the identity on a half-integer spin.
@@ -352,7 +352,7 @@ lemma repLorentzGroup_conj_dual_dualBasis (Λ : SL(2,ℂ)) (j : Fin 2 × Fin 2) 
 lemma repLorentzGroup_neg_one : repLorentzGroup (-1) = -LinearMap.id
 ```
 
-**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_neg_one`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L473).
+**`StandardModel.LeptonDoubletV.repLorentzGroup_conj_neg_one`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L473).
 
 > The centre acts on the conjugate lepton-doublet space by `-1` as well: conjugation does not
 > move a real sign.
@@ -361,7 +361,7 @@ lemma repLorentzGroup_neg_one : repLorentzGroup (-1) = -LinearMap.id
 lemma repLorentzGroup_conj_neg_one : repLorentzGroup.conj (-1) = -LinearMap.id
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L483).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_dual_dualBasis`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L483).
 
 > The lepton-doublet coordinate functionals carry the contragredient gauge action: the
 > hypercharge and `SU(2)` factors of the inverse group element, transposed.
@@ -372,7 +372,7 @@ lemma repGaugeGroupI_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 2) :
       ∑ w, (star (g⁻¹).toU1.1 ^ 3 * (g⁻¹).toSU2.1 j.2 w) • basis.dualBasis (j.1, w)
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L497).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_apply_basis`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L497).
 
 > The gauge action on the conjugate lepton-doublet basis: the coefficients of the
 > lepton-doublet action, conjugated.
@@ -383,7 +383,7 @@ lemma repGaugeGroupI_conj_apply_basis (g : GaugeGroupI) (j : Fin 2 × Fin 2) :
       ∑ w, star (star g.toU1.1 ^ 3 * g.toSU2.1 w j.2) • (Basis.conj basis) (j.1, w)
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L507).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_dual_dualBasis`**, a lemma, [line 507](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L507).
 
 > The conjugate lepton-doublet coordinate functionals carry the conjugate of the
 > contragredient gauge action.
@@ -401,7 +401,7 @@ lemma repGaugeGroupI_conj_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 2) 
 > `LeptonDoubletV.valueGaugeWeight`, and pass to the dual and conjugate-dual coordinate
 > functionals with the expected signs.
 
-**`StandardModel.LeptonDoubletV.valueGaugeWeight`**, a def, [line 534](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L534).
+**`StandardModel.LeptonDoubletV.valueGaugeWeight`**, a def, [line 534](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L534).
 
 > The gauge weight of the lepton-doublet basis: the isospin weight and hypercharge
 > `-3`.
@@ -410,7 +410,7 @@ lemma repGaugeGroupI_conj_dual_dualBasis (g : GaugeGroupI) (j : Fin 2 × Fin 2) 
 def LeptonDoubletV.valueGaugeWeight (j : Fin 2 × Fin 2) : GaugeWeight
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L539).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_gaugeTorusGen_basis`**, a lemma, [line 539](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L539).
 
 > The gauge torus acts diagonally on the basis of `LeptonDoubletV`, with the weights
 > `LeptonDoubletV.valueGaugeWeight`.
@@ -422,7 +422,7 @@ lemma LeptonDoubletV.repGaugeGroupI_gaugeTorusGen_basis (i : Fin 4) (j : Fin 2 �
         LeptonDoubletV.basis j
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L553).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_dual_gaugeTorusGen_coord`**, a lemma, [line 553](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L553).
 
 > The dual action of the gauge torus on the coordinate functionals of
 > `LeptonDoubletV`: the weights are negated.
@@ -434,7 +434,7 @@ lemma LeptonDoubletV.repGaugeGroupI_dual_gaugeTorusGen_coord (i : Fin 4) (j : Fi
         LeptonDoubletV.basis.coord j
 ```
 
-**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L563).
+**`StandardModel.LeptonDoubletV.repGaugeGroupI_conj_dual_gaugeTorusGen_coord`**, a lemma, [line 563](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L563).
 
 > The dual of the conjugate action of the gauge torus on the coordinate functionals
 > of the conjugate of `LeptonDoubletV`: the two negations cancel and the weights are those of
@@ -450,7 +450,7 @@ lemma LeptonDoubletV.repGaugeGroupI_conj_dual_gaugeTorusGen_coord (i : Fin 4) (j
 
 ## J. The boost weight of the LeptonDoubletV components
 
-**`StandardModel.leptonDoublet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 583](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L583).
+**`StandardModel.leptonDoublet_repLorentzGroup_boostAxis_two_basis`**, a lemma, [line 583](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean#L583).
 
 > The lepton-doublet basis diagonalises the `z`-boost: the isospin index is inert.
 
@@ -470,4 +470,4 @@ lemma leptonDoublet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean)

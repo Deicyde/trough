@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.50 Projection formula
 
-Section 21.50 of the Stacks Project, [Tag 0943](https://stacks.math.columbia.edu/tag/0943). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.50 of the Stacks Project, [Tag 0943](https://stacks.math.columbia.edu/tag/0943). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0943, the section
 
 [Tag 0943](https://stacks.math.columbia.edu/tag/0943) in the Stacks Project.
 
-**`Stacks.Cohomology.ProjectionFormulaSection.projectionFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean#L144). The attribute's comment: “the canonical map of Section 21.50, natural in the two complexes together”.
+**`Stacks.Cohomology.ProjectionFormulaSection.projectionFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean#L144). The attribute's comment: “the canonical map of Section 21.50, natural in the two complexes together”.
 
 > **The canonical map of Section 21.50 of [Stacks, Tag 0943]**, as a morphism of bifunctors on
 > `D(𝒪_𝒞) × D(𝒪_𝒟)`:
@@ -32,7 +32,7 @@ Section 21.50 of the Stacks Project, [Tag 0943](https://stacks.math.columbia.edu
 def projectionFormula : pushforwardTensor f ⟶ tensorPullbackPushforward f
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaSection.isIso_projectionFormulaNatTransSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean#L205). The attribute's comment: “the lemma of Section 21.50: at a perfect complex the canonical map is invertible, here as an isomorphism of the two functors of the complex on the source”.
+**`Stacks.Cohomology.ProjectionFormulaSection.isIso_projectionFormulaNatTransSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaSection.lean#L205). The attribute's comment: “the lemma of Section 21.50: at a perfect complex the canonical map is invertible, here as an isomorphism of the two functors of the complex on the source”.
 
 > **The lemma of Section 21.50 of [Stacks, Tag 0943]**, as an isomorphism of functors.  Let
 > `f : (Sh(𝒞), 𝒪_𝒞) ⟶ (Sh(𝒟), 𝒪_𝒟)` be a morphism of ringed topoi and let `K ∈ D(𝒪_𝒟)` be
@@ -55,7 +55,7 @@ theorem isIso_projectionFormulaNatTransSource
 
 [Tag 0B56](https://stacks.math.columbia.edu/tag/0B56) in the Stacks Project.
 
-**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L261). The attribute's comment: “the map”.
+**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L261). The attribute's comment: “the map”.
 
 > **Equation 21.50.0.1 of [Stacks, Tag 0B56].**  For a morphism of ringed topoi
 > `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)`, `E ∈ D(O_C)` and `K ∈ D(O_D)`, the canonical map
@@ -76,7 +76,7 @@ def projectionFormulaMap (hmos : f.u.IsMorphismOfSites Y.J X.J)
         (((derivedTensorProductFunctor X.O).obj E).obj ((derivedPullback f).obj K))
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L289). The attribute's comment: “naturality in the source complex”.
+**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L289). The attribute's comment: “naturality in the source complex”.
 
 > **Naturality of Equation 21.50.0.1 in the complex on the source**, `E ∈ D(O_C)`.
 
@@ -92,7 +92,7 @@ theorem projectionFormulaMap_naturality_source
           (((derivedTensorProductFunctor X.O).map φ).app ((derivedPullback f).obj K))
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L302). The attribute's comment: “naturality in the target complex”.
+**`Stacks.Cohomology.ProjectionFormulaOnRingedTopoi.projectionFormulaMap_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormula.lean#L302). The attribute's comment: “naturality in the target complex”.
 
 > **Naturality of Equation 21.50.0.1 in the complex on the target**, `K ∈ D(O_D)`.
 
@@ -108,7 +108,7 @@ theorem projectionFormulaMap_naturality_target
           (((derivedTensorProductFunctor X.O).obj E).map ((derivedPullback f).map k))
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaPerfectOnRingedTopoi.projectionFormulaTransformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaStrictlyPerfect.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaStrictlyPerfect.lean#L155). The attribute's comment: “the map as a natural transformation in the target complex”.
+**`Stacks.Cohomology.ProjectionFormulaPerfectOnRingedTopoi.projectionFormulaTransformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaStrictlyPerfect.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaStrictlyPerfect.lean#L155). The attribute's comment: “the map as a natural transformation in the target complex”.
 
 > **Equation 21.50.0.1 of [Stacks, Tag 0B56] as a natural transformation** of functors of the
 > complex on the base.  Its component at `K` is
@@ -124,7 +124,7 @@ def projectionFormulaTransformation :
 
 [Tag 0944](https://stacks.math.columbia.edu/tag/0944) in the Stacks Project.
 
-**`Stacks.Cohomology.ProjectionFormulaOfToposHom.isIso_projectionFormulaMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaPerfectOfToposHom.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaPerfectOfToposHom.lean#L122).
+**`Stacks.Cohomology.ProjectionFormulaOfToposHom.isIso_projectionFormulaMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaPerfectOfToposHom.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaPerfectOfToposHom.lean#L122).
 
 > **[Stacks, Tag 0944], the projection formula for a perfect complex.** Let
 > `f : (Sh(𝒞), 𝒪_𝒞) ⟶ (Sh(𝒟), 𝒪_𝒟)` be a morphism of ringed topoi, `E ∈ D(𝒪_𝒞)` and
@@ -144,7 +144,7 @@ theorem isIso_projectionFormulaMap_of_isPerfect {X Y : RingedTopos.{u, u, u}}
 
 [Tag 0E48](https://stacks.math.columbia.edu/tag/0E48) in the Stacks Project.
 
-**`Stacks.Cohomology.ProjectionFormulaOfToposHom.projectionFormulaMap_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaBaseChange.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaBaseChange.lean#L108).
+**`Stacks.Cohomology.ProjectionFormulaOfToposHom.projectionFormulaMap_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaBaseChange.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/ProjectionFormulaBaseChange.lean#L108).
 
 > **[Stacks, Tag 0E48].**  For a commutative square of morphisms of ringed topoi
 >
@@ -199,4 +199,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.50, Tag 0943](https://stacks.math.columbia.edu/tag/0943)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

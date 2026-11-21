@@ -8,7 +8,7 @@ proof: formalized
 
 # The field labels
 
-The module `Physlib.Particles.SuperSymmetry.SU5.FieldLabels`, [Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean): 3 declarations (1 instance with no name), 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.FieldLabels`, [Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean): 3 declarations (1 instance with no name), 2 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.FieldLabels`, [Physlib/Particles
 >
 > Note that there is only one `10` representation, as it is self-conjugate.
 
-**`SuperSymmetry.SU5.FieldLabel`**, an inductive, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L56).
+**`SuperSymmetry.SU5.FieldLabel`**, an inductive, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L56).
 
 > The types of field present in an SU(5) GUT.
 
@@ -52,7 +52,7 @@ inductive FieldLabel
 deriving DecidableEq
 ```
 
-**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L66).
+**An instance with no name**, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L66).
 
 ```lean
 instance : Fintype FieldLabel
@@ -63,7 +63,7 @@ instance : Fintype FieldLabel
 > We define the R-parity of a field label, being `1` if it is in the non-trivial
 > representation and `0` otherwise.
 
-**`SuperSymmetry.SU5.FieldLabel.RParity`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L81).
+**`SuperSymmetry.SU5.FieldLabel.RParity`**, a def, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean#L81).
 
 > The R-Parity of a field, landing on `1` if it is in the non-trivial representation
 > and `0` otherwise.
@@ -78,4 +78,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean)

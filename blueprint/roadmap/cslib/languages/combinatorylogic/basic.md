@@ -7,7 +7,7 @@ proof: formalized
 
 # Basic results for the SKI calculus
 
-`Cslib.Languages.CombinatoryLogic.Basic`, in [Cslib/Languages/CombinatoryLogic/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean), by Thomas Waring.
+`Cslib.Languages.CombinatoryLogic.Basic`, in [Cslib/Languages/CombinatoryLogic/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean), by Thomas Waring.
 
 > ## Main definition
 >
@@ -31,7 +31,7 @@ proof: formalized
 
 > ### Polynomials and the bracket astraction algorithm
 
-`Cslib.SKI.Polynomial` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L46))
+`Cslib.SKI.Polynomial` (inductive type, [line 46](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L46))
 
 > A polynomial is an SKI terms with free variables.
 
@@ -42,13 +42,13 @@ protected inductive Polynomial (n : Nat) : Type where
   | app : SKI.Polynomial n → SKI.Polynomial n → SKI.Polynomial n
 ```
 
-`Cslib.SKI.CoeTermPolynomial` (instance, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L57))
+`Cslib.SKI.CoeTermPolynomial` (instance, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L57))
 
 ```lean
 instance CoeTermPolynomial (n : Nat) : Coe SKI (SKI.Polynomial n)
 ```
 
-`Cslib.SKI.Polynomial.eval` (definition, [line 60](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L60))
+`Cslib.SKI.Polynomial.eval` (definition, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L60))
 
 > Substitute terms for the free variables of a polynomial
 
@@ -57,7 +57,7 @@ def Polynomial.eval {n : Nat} (Γ : SKI.Polynomial n) (l : List SKI) (hl : List.
     SKI
 ```
 
-`Cslib.SKI.Polynomial.varFreeToSKI` (definition, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L68))
+`Cslib.SKI.Polynomial.varFreeToSKI` (definition, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L68))
 
 > A polynomial with no free variables is a term
 
@@ -65,7 +65,7 @@ def Polynomial.eval {n : Nat} (Γ : SKI.Polynomial n) (l : List SKI) (hl : List.
 def Polynomial.varFreeToSKI (Γ : SKI.Polynomial 0) : SKI
 ```
 
-`Cslib.SKI.Polynomial.elimVar` (definition, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L72))
+`Cslib.SKI.Polynomial.elimVar` (definition, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L72))
 
 > Inductively define a polynomial `Γ'` so that (up to the fact that we haven't
 > defined reduction on polynomials) `Γ' ⬝ t ↠ Γ[xₙ ← t]`.
@@ -74,7 +74,7 @@ def Polynomial.varFreeToSKI (Γ : SKI.Polynomial 0) : SKI
 def Polynomial.elimVar {n : Nat} : SKI.Polynomial (n+1) → SKI.Polynomial n
 ```
 
-`Cslib.SKI.Polynomial.elimVar_correct` (theorem, [line 91](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L91))
+`Cslib.SKI.Polynomial.elimVar_correct` (theorem, [line 91](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L91))
 
 > Correctness for the elimVar algorithm, which provides the inductive step of the bracket abstraction
 > algorithm. We induct backwards on the list, corresponding to applying the transformation from the
@@ -88,7 +88,7 @@ theorem Polynomial.elimVar_correct {n : Nat} (Γ : SKI.Polynomial (n + 1)) {ys :
       (by rw [List.length_append, hys, List.length_singleton])
 ```
 
-`Cslib.SKI.Polynomial.toSKI` (definition, [line 121](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L121))
+`Cslib.SKI.Polynomial.toSKI` (definition, [line 121](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L121))
 
 > Bracket abstraction, by induction using `SKI.Polynomial.elimVar`
 
@@ -96,7 +96,7 @@ theorem Polynomial.elimVar_correct {n : Nat} (Γ : SKI.Polynomial (n + 1)) {ys :
 def Polynomial.toSKI {n : Nat} (Γ : SKI.Polynomial n) : SKI
 ```
 
-`Cslib.SKI.Polynomial.toSKI_correct` (theorem, [line 127](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L127))
+`Cslib.SKI.Polynomial.toSKI_correct` (theorem, [line 127](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L127))
 
 > Correctness for the toSKI (bracket abstraction) algorithm.
 
@@ -112,7 +112,7 @@ theorem Polynomial.toSKI_correct {n : Nat} (Γ : SKI.Polynomial n) (xs : List SK
 > notation for a given combinator, we use that (given everywhere a capital letter), otherwise we
 > choose a descriptive name.
 
-`Cslib.SKI.RPoly` (definition, [line 162](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L162))
+`Cslib.SKI.RPoly` (definition, [line 162](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L162))
 
 > Reversal: R := λ x y. y x
 
@@ -120,7 +120,7 @@ theorem Polynomial.toSKI_correct {n : Nat} (Γ : SKI.Polynomial n) (xs : List SK
 def RPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.R` (definition, [line 164](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L164))
+`Cslib.SKI.R` (definition, [line 164](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L164))
 
 > A SKI term representing R
 
@@ -128,13 +128,13 @@ def RPoly : SKI.Polynomial 2
 def R : SKI
 ```
 
-`Cslib.SKI.R_def` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L165))
+`Cslib.SKI.R_def` (theorem, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L165))
 
 ```lean
 theorem R_def (x y : SKI) : (R ⬝ x ⬝ y) ↠ y ⬝ x
 ```
 
-`Cslib.SKI.BPoly` (definition, [line 169](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L169))
+`Cslib.SKI.BPoly` (definition, [line 169](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L169))
 
 > Composition: B := λ f g x. f (g x)
 
@@ -142,7 +142,7 @@ theorem R_def (x y : SKI) : (R ⬝ x ⬝ y) ↠ y ⬝ x
 def BPoly : SKI.Polynomial 3
 ```
 
-`Cslib.SKI.B` (definition, [line 171](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L171))
+`Cslib.SKI.B` (definition, [line 171](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L171))
 
 > A SKI term representing B
 
@@ -150,13 +150,13 @@ def BPoly : SKI.Polynomial 3
 def B : SKI
 ```
 
-`Cslib.SKI.B_def` (theorem, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L172))
+`Cslib.SKI.B_def` (theorem, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L172))
 
 ```lean
 theorem B_def (f g x : SKI) : (B ⬝ f ⬝ g ⬝ x) ↠ f ⬝ (g ⬝ x)
 ```
 
-`Cslib.SKI.B_tail_mred` (lemma, [line 176](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L176))
+`Cslib.SKI.B_tail_mred` (lemma, [line 176](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L176))
 
 > B followed by tail reduction
 
@@ -164,7 +164,7 @@ theorem B_def (f g x : SKI) : (B ⬝ f ⬝ g ⬝ x) ↠ f ⬝ (g ⬝ x)
 lemma B_tail_mred (f g x y : SKI) (h : (g ⬝ x) ↠ y) : (B ⬝ f ⬝ g ⬝ x) ↠ f ⬝ y
 ```
 
-`Cslib.SKI.CPoly` (definition, [line 180](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L180))
+`Cslib.SKI.CPoly` (definition, [line 180](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L180))
 
 > C := λ f x y. f y x
 
@@ -172,7 +172,7 @@ lemma B_tail_mred (f g x y : SKI) (h : (g ⬝ x) ↠ y) : (B ⬝ f ⬝ g ⬝ x) 
 def CPoly : SKI.Polynomial 3
 ```
 
-`Cslib.SKI.C` (definition, [line 182](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L182))
+`Cslib.SKI.C` (definition, [line 182](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L182))
 
 > A SKI term representing C
 
@@ -180,13 +180,13 @@ def CPoly : SKI.Polynomial 3
 def C : SKI
 ```
 
-`Cslib.SKI.C_def` (theorem, [line 183](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L183))
+`Cslib.SKI.C_def` (theorem, [line 183](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L183))
 
 ```lean
 theorem C_def (f x y : SKI) : (C ⬝ f ⬝ x ⬝ y) ↠ f ⬝ y ⬝ x
 ```
 
-`Cslib.SKI.C_head_mred` (lemma, [line 187](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L187))
+`Cslib.SKI.C_head_mred` (lemma, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L187))
 
 > C followed by head reduction
 
@@ -194,7 +194,7 @@ theorem C_def (f x y : SKI) : (C ⬝ f ⬝ x ⬝ y) ↠ f ⬝ y ⬝ x
 lemma C_head_mred (f x y z : SKI) (h : (f ⬝ y) ↠ z) : (C ⬝ f ⬝ x ⬝ y) ↠ z ⬝ x
 ```
 
-`Cslib.SKI.RotRPoly` (definition, [line 191](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L191))
+`Cslib.SKI.RotRPoly` (definition, [line 191](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L191))
 
 > Rotate right: RotR := λ x y z. z x y
 
@@ -202,7 +202,7 @@ lemma C_head_mred (f x y z : SKI) (h : (f ⬝ y) ↠ z) : (C ⬝ f ⬝ x ⬝ y) 
 def RotRPoly : SKI.Polynomial 3
 ```
 
-`Cslib.SKI.RotR` (definition, [line 193](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L193))
+`Cslib.SKI.RotR` (definition, [line 193](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L193))
 
 > A SKI term representing RotR
 
@@ -210,13 +210,13 @@ def RotRPoly : SKI.Polynomial 3
 def RotR : SKI
 ```
 
-`Cslib.SKI.rotR_def` (theorem, [line 194](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L194))
+`Cslib.SKI.rotR_def` (theorem, [line 194](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L194))
 
 ```lean
 theorem rotR_def (x y z : SKI) : (RotR ⬝ x ⬝ y ⬝ z) ↠ z ⬝ x ⬝ y
 ```
 
-`Cslib.SKI.RotLPoly` (definition, [line 198](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L198))
+`Cslib.SKI.RotLPoly` (definition, [line 198](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L198))
 
 > Rotate left: RotR := λ x y z. y z x
 
@@ -224,7 +224,7 @@ theorem rotR_def (x y z : SKI) : (RotR ⬝ x ⬝ y ⬝ z) ↠ z ⬝ x ⬝ y
 def RotLPoly : SKI.Polynomial 3
 ```
 
-`Cslib.SKI.RotL` (definition, [line 200](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L200))
+`Cslib.SKI.RotL` (definition, [line 200](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L200))
 
 > A SKI term representing RotL
 
@@ -232,13 +232,13 @@ def RotLPoly : SKI.Polynomial 3
 def RotL : SKI
 ```
 
-`Cslib.SKI.rotL_def` (theorem, [line 201](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L201))
+`Cslib.SKI.rotL_def` (theorem, [line 201](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L201))
 
 ```lean
 theorem rotL_def (x y z : SKI) : (RotL ⬝ x ⬝ y ⬝ z) ↠ y ⬝ z ⬝ x
 ```
 
-`Cslib.SKI.DelPoly` (definition, [line 205](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L205))
+`Cslib.SKI.DelPoly` (definition, [line 205](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L205))
 
 > Self application: δ := λ x. x x
 
@@ -246,7 +246,7 @@ theorem rotL_def (x y z : SKI) : (RotL ⬝ x ⬝ y ⬝ z) ↠ y ⬝ z ⬝ x
 def DelPoly : SKI.Polynomial 1
 ```
 
-`Cslib.SKI.Del` (definition, [line 207](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L207))
+`Cslib.SKI.Del` (definition, [line 207](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L207))
 
 > A SKI term representing δ
 
@@ -254,13 +254,13 @@ def DelPoly : SKI.Polynomial 1
 def Del : SKI
 ```
 
-`Cslib.SKI.del_def` (theorem, [line 208](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L208))
+`Cslib.SKI.del_def` (theorem, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L208))
 
 ```lean
 theorem del_def (x : SKI) : (Del ⬝ x) ↠ x ⬝ x
 ```
 
-`Cslib.SKI.HPoly` (definition, [line 212](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L212))
+`Cslib.SKI.HPoly` (definition, [line 212](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L212))
 
 > H := λ f x. f (x x)
 
@@ -268,7 +268,7 @@ theorem del_def (x : SKI) : (Del ⬝ x) ↠ x ⬝ x
 def HPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.H` (definition, [line 214](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L214))
+`Cslib.SKI.H` (definition, [line 214](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L214))
 
 > A SKI term representing H
 
@@ -276,13 +276,13 @@ def HPoly : SKI.Polynomial 2
 def H : SKI
 ```
 
-`Cslib.SKI.H_def` (theorem, [line 215](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L215))
+`Cslib.SKI.H_def` (theorem, [line 215](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L215))
 
 ```lean
 theorem H_def (f x : SKI) : (H ⬝ f ⬝ x) ↠ f ⬝ (x ⬝ x)
 ```
 
-`Cslib.SKI.YPoly` (definition, [line 219](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L219))
+`Cslib.SKI.YPoly` (definition, [line 219](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L219))
 
 > Curry's fixed-point combinator: Y := λ f. H f (H f)
 
@@ -290,7 +290,7 @@ theorem H_def (f x : SKI) : (H ⬝ f ⬝ x) ↠ f ⬝ (x ⬝ x)
 def YPoly : SKI.Polynomial 1
 ```
 
-`Cslib.SKI.Y` (definition, [line 221](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L221))
+`Cslib.SKI.Y` (definition, [line 221](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L221))
 
 > A SKI term representing Y
 
@@ -298,13 +298,13 @@ def YPoly : SKI.Polynomial 1
 def Y : SKI
 ```
 
-`Cslib.SKI.Y_def` (theorem, [line 222](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L222))
+`Cslib.SKI.Y_def` (theorem, [line 222](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L222))
 
 ```lean
 theorem Y_def (f : SKI) : (Y ⬝ f) ↠ H ⬝ f ⬝ (H ⬝ f)
 ```
 
-`Cslib.SKI.Y_correct` (theorem, [line 226](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L226))
+`Cslib.SKI.Y_correct` (theorem, [line 226](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L226))
 
 > The fixed-point property of the Y-combinator
 
@@ -312,7 +312,7 @@ theorem Y_def (f : SKI) : (Y ⬝ f) ↠ H ⬝ f ⬝ (H ⬝ f)
 theorem Y_correct (f : SKI) : Join (ReflTransGen Red) (Y ⬝ f) (f ⬝ (Y ⬝ f))
 ```
 
-`Cslib.SKI.fixedPoint` (definition, [line 238](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L238))
+`Cslib.SKI.fixedPoint` (definition, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L238))
 
 > It is useful to be able to produce a term such that the fixed point property holds on-the-nose,
 > rather than up to a common reduct. An alternative is to use Turing's fixed-point combinator
@@ -322,13 +322,13 @@ theorem Y_correct (f : SKI) : Join (ReflTransGen Red) (Y ⬝ f) (f ⬝ (Y ⬝ f)
 def fixedPoint (f : SKI) : SKI
 ```
 
-`Cslib.SKI.fixedPoint_correct` (theorem, [line 239](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L239))
+`Cslib.SKI.fixedPoint_correct` (theorem, [line 239](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L239))
 
 ```lean
 theorem fixedPoint_correct (f : SKI) : f.fixedPoint ↠ f ⬝ f.fixedPoint
 ```
 
-`Cslib.SKI.ThAuxPoly` (definition, [line 242](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L242))
+`Cslib.SKI.ThAuxPoly` (definition, [line 242](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L242))
 
 > Auxiliary definition for Turing's fixed-point combinator: ΘAux := λ x y. y (x x y)
 
@@ -336,7 +336,7 @@ theorem fixedPoint_correct (f : SKI) : f.fixedPoint ↠ f ⬝ f.fixedPoint
 def ThAuxPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.ThAux` (definition, [line 244](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L244))
+`Cslib.SKI.ThAux` (definition, [line 244](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L244))
 
 > A term representing ΘAux
 
@@ -344,13 +344,13 @@ def ThAuxPoly : SKI.Polynomial 2
 def ThAux : SKI
 ```
 
-`Cslib.SKI.ThAux_def` (theorem, [line 245](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L245))
+`Cslib.SKI.ThAux_def` (theorem, [line 245](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L245))
 
 ```lean
 theorem ThAux_def (x y : SKI) : (ThAux ⬝ x ⬝ y) ↠ y ⬝ (x ⬝ x ⬝ y)
 ```
 
-`Cslib.SKI.Th` (definition, [line 249](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L249))
+`Cslib.SKI.Th` (definition, [line 249](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L249))
 
 > Turing's fixed-point combinator: Θ := (λ x y. y (x x y)) (λ x y. y (x x y))
 
@@ -358,7 +358,7 @@ theorem ThAux_def (x y : SKI) : (ThAux ⬝ x ⬝ y) ↠ y ⬝ (x ⬝ x ⬝ y)
 def Th : SKI
 ```
 
-`Cslib.SKI.Th_correct` (theorem, [line 251](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L251))
+`Cslib.SKI.Th_correct` (theorem, [line 251](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L251))
 
 > A SKI term representing Θ
 
@@ -368,7 +368,7 @@ theorem Th_correct (f : SKI) : (Th ⬝ f) ↠ f ⬝ (Th ⬝ f)
 
 > ### Church Booleans
 
-`Cslib.SKI.IsBool` (definition, [line 256](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L256))
+`Cslib.SKI.IsBool` (definition, [line 256](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L256))
 
 > A term a represents the boolean value u if it is βη-equivalent to a standard Church boolean.
 
@@ -376,14 +376,14 @@ theorem Th_correct (f : SKI) : (Th ⬝ f) ↠ f ⬝ (Th ⬝ f)
 def IsBool (u : Bool) (a : SKI) : Prop
 ```
 
-`Cslib.SKI.isBool_trans` (theorem, [line 259](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L259))
+`Cslib.SKI.isBool_trans` (theorem, [line 259](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L259))
 
 ```lean
 theorem isBool_trans (u : Bool) (a a' : SKI) (h : a ↠ a') (ha' : IsBool u a') :
     IsBool u a
 ```
 
-`Cslib.SKI.TT` (definition, [line 269](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L269))
+`Cslib.SKI.TT` (definition, [line 269](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L269))
 
 > Standard true: TT := λ x y. x
 
@@ -391,13 +391,13 @@ theorem isBool_trans (u : Bool) (a a' : SKI) (h : a ↠ a') (ha' : IsBool u a') 
 def TT : SKI
 ```
 
-`Cslib.SKI.TT_correct` (theorem, [line 271](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L271))
+`Cslib.SKI.TT_correct` (theorem, [line 271](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L271))
 
 ```lean
 theorem TT_correct : IsBool true TT
 ```
 
-`Cslib.SKI.FF` (definition, [line 274](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L274))
+`Cslib.SKI.FF` (definition, [line 274](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L274))
 
 > Standard false: FF := λ x y. y
 
@@ -405,13 +405,13 @@ theorem TT_correct : IsBool true TT
 def FF : SKI
 ```
 
-`Cslib.SKI.FF_correct` (theorem, [line 276](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L276))
+`Cslib.SKI.FF_correct` (theorem, [line 276](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L276))
 
 ```lean
 theorem FF_correct : IsBool false FF
 ```
 
-`Cslib.SKI.Cond` (definition, [line 282](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L282))
+`Cslib.SKI.Cond` (definition, [line 282](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L282))
 
 > Conditional: Cond x y b := if b then x else y
 
@@ -419,14 +419,14 @@ theorem FF_correct : IsBool false FF
 protected def Cond : SKI
 ```
 
-`Cslib.SKI.cond_correct` (theorem, [line 283](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L283))
+`Cslib.SKI.cond_correct` (theorem, [line 283](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L283))
 
 ```lean
 theorem cond_correct (a x y : SKI) (u : Bool) (h : IsBool u a) :
     (SKI.Cond ⬝ x ⬝ y ⬝ a) ↠ if u then x else y
 ```
 
-`Cslib.SKI.Neg` (definition, [line 290](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L290))
+`Cslib.SKI.Neg` (definition, [line 290](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L290))
 
 > Neg := λ a. Cond FF TT a
 
@@ -434,13 +434,13 @@ theorem cond_correct (a x y : SKI) (u : Bool) (h : IsBool u a) :
 protected def Neg : SKI
 ```
 
-`Cslib.SKI.neg_correct` (theorem, [line 291](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L291))
+`Cslib.SKI.neg_correct` (theorem, [line 291](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L291))
 
 ```lean
 theorem neg_correct (a : SKI) (ua : Bool) (h : IsBool ua a) : IsBool (¬ ua) (SKI.Neg ⬝ a)
 ```
 
-`Cslib.SKI.AndPoly` (definition, [line 299](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L299))
+`Cslib.SKI.AndPoly` (definition, [line 299](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L299))
 
 > And := λ a b. Cond (Cond TT FF b) FF a
 
@@ -448,7 +448,7 @@ theorem neg_correct (a : SKI) (ua : Bool) (h : IsBool ua a) : IsBool (¬ ua) (SK
 def AndPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.And` (definition, [line 301](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L301))
+`Cslib.SKI.And` (definition, [line 301](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L301))
 
 > A SKI term representing And
 
@@ -456,28 +456,28 @@ def AndPoly : SKI.Polynomial 2
 protected def And : SKI
 ```
 
-`Cslib.SKI.and_def` (theorem, [line 302](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L302))
+`Cslib.SKI.and_def` (theorem, [line 302](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L302))
 
 ```lean
 theorem and_def (a b : SKI) : (SKI.And ⬝ a ⬝ b) ↠ SKI.Cond ⬝ (SKI.Cond ⬝ TT ⬝ FF ⬝ b) ⬝ FF ⬝ a
 ```
 
-`Cslib.SKI.and_correct` (theorem, [line 305](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L305))
+`Cslib.SKI.and_correct` (theorem, [line 305](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L305))
 
 ```lean
 theorem and_correct (a b : SKI) (ua ub : Bool) (ha : IsBool ua a) (hb : IsBool ub b) :
     IsBool (ua && ub) (SKI.And ⬝ a ⬝ b)
 ```
 
-`Cslib.SKI.OrPoly` (definition, [line 319](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L319))
+`Cslib.SKI.OrPoly` (definition, [line 319](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L319))
 
-> Or := λ a b. Cond TT (Cond TT FF b) b
+> Or := λ a b. Cond TT (Cond TT FF b) a
 
 ```lean
 def OrPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.Or` (definition, [line 321](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L321))
+`Cslib.SKI.Or` (definition, [line 321](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L321))
 
 > A SKI term representing Or
 
@@ -485,13 +485,13 @@ def OrPoly : SKI.Polynomial 2
 protected def Or : SKI
 ```
 
-`Cslib.SKI.or_def` (theorem, [line 322](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L322))
+`Cslib.SKI.or_def` (theorem, [line 322](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L322))
 
 ```lean
 theorem or_def (a b : SKI) : (SKI.Or ⬝ a ⬝ b) ↠ SKI.Cond ⬝ TT ⬝ (SKI.Cond ⬝ TT ⬝ FF ⬝ b) ⬝ a
 ```
 
-`Cslib.SKI.or_correct` (theorem, [line 325](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L325))
+`Cslib.SKI.or_correct` (theorem, [line 325](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L325))
 
 ```lean
 theorem or_correct (a b : SKI) (ua ub : Bool) (ha : IsBool ua a) (hb : IsBool ub b) :
@@ -500,7 +500,7 @@ theorem or_correct (a b : SKI) (ua ub : Bool) (ha : IsBool ua a) (hb : IsBool ub
 
 > ### Pairs
 
-`Cslib.SKI.MkPair` (definition, [line 343](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L343))
+`Cslib.SKI.MkPair` (definition, [line 343](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L343))
 
 > MkPair := λ a b. ⟨a,b⟩
 
@@ -508,7 +508,7 @@ theorem or_correct (a b : SKI) (ua ub : Bool) (ha : IsBool ua a) (hb : IsBool ub
 def MkPair : SKI
 ```
 
-`Cslib.SKI.Fst` (definition, [line 345](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L345))
+`Cslib.SKI.Fst` (definition, [line 345](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L345))
 
 > First projection
 
@@ -516,7 +516,7 @@ def MkPair : SKI
 def Fst : SKI
 ```
 
-`Cslib.SKI.Snd` (definition, [line 347](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L347))
+`Cslib.SKI.Snd` (definition, [line 347](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L347))
 
 > Second projection
 
@@ -524,19 +524,19 @@ def Fst : SKI
 def Snd : SKI
 ```
 
-`Cslib.SKI.fst_correct` (theorem, [line 350](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L350))
+`Cslib.SKI.fst_correct` (theorem, [line 350](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L350))
 
 ```lean
 theorem fst_correct (a b : SKI) : (Fst ⬝ (MkPair ⬝ a ⬝ b)) ↠ a
 ```
 
-`Cslib.SKI.snd_correct` (theorem, [line 355](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L355))
+`Cslib.SKI.snd_correct` (theorem, [line 355](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L355))
 
 ```lean
 theorem snd_correct (a b : SKI) : (Snd ⬝ (MkPair ⬝ a ⬝ b)) ↠ b
 ```
 
-`Cslib.SKI.UnpairedPoly` (definition, [line 360](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L360))
+`Cslib.SKI.UnpairedPoly` (definition, [line 360](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L360))
 
 > Unpaired f ⟨x, y⟩ := f x y, cf `Nat.unparied`.
 
@@ -544,7 +544,7 @@ theorem snd_correct (a b : SKI) : (Snd ⬝ (MkPair ⬝ a ⬝ b)) ↠ b
 def UnpairedPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.Unpaired` (definition, [line 362](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L362))
+`Cslib.SKI.Unpaired` (definition, [line 362](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L362))
 
 > A term representing Unpaired
 
@@ -552,19 +552,19 @@ def UnpairedPoly : SKI.Polynomial 2
 protected def Unpaired : SKI
 ```
 
-`Cslib.SKI.unpaired_def` (theorem, [line 363](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L363))
+`Cslib.SKI.unpaired_def` (theorem, [line 363](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L363))
 
 ```lean
 theorem unpaired_def (f p : SKI) : (SKI.Unpaired ⬝ f ⬝ p) ↠ f ⬝ (Fst ⬝ p) ⬝ (Snd ⬝ p)
 ```
 
-`Cslib.SKI.unpaired_correct` (theorem, [line 366](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L366))
+`Cslib.SKI.unpaired_correct` (theorem, [line 366](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L366))
 
 ```lean
 theorem unpaired_correct (f x y : SKI) : (SKI.Unpaired ⬝ f ⬝ (MkPair ⬝ x ⬝ y)) ↠ f ⬝ x ⬝ y
 ```
 
-`Cslib.SKI.PairPoly` (definition, [line 375](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L375))
+`Cslib.SKI.PairPoly` (definition, [line 375](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L375))
 
 > Pair f g x := ⟨f x, g x⟩, cf `Primrec.Pair`.
 
@@ -572,7 +572,7 @@ theorem unpaired_correct (f x y : SKI) : (SKI.Unpaired ⬝ f ⬝ (MkPair ⬝ x �
 def PairPoly : SKI.Polynomial 3
 ```
 
-`Cslib.SKI.Pair` (definition, [line 377](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L377))
+`Cslib.SKI.Pair` (definition, [line 377](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L377))
 
 > A SKI term representing Pair
 
@@ -580,7 +580,7 @@ def PairPoly : SKI.Polynomial 3
 protected def Pair : SKI
 ```
 
-`Cslib.SKI.pair_def` (theorem, [line 378](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean#L378))
+`Cslib.SKI.pair_def` (theorem, [line 378](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean#L378))
 
 ```lean
 theorem pair_def (f g x : SKI) : (SKI.Pair ⬝ f ⬝ g ⬝ x) ↠ MkPair ⬝ (f ⬝ x) ⬝ (g ⬝ x)
@@ -592,5 +592,5 @@ theorem pair_def (f g x : SKI) : (SKI.Pair ⬝ f ⬝ g ⬝ x) ↠ MkPair ⬝ (f 
 
 ## Sources
 
-- [Cslib/Languages/CombinatoryLogic/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/Basic.lean)
+- [Cslib/Languages/CombinatoryLogic/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/Basic.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.Basic.json)

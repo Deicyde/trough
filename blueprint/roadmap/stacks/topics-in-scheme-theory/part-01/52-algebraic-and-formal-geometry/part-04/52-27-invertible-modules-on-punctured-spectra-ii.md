@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.27 Invertible modules on punctured spectra, II
 
-Section 52.27 of the Stacks Project, [Tag 0F2C](https://stacks.math.columbia.edu/tag/0F2C). 8 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.27 of the Stacks Project, [Tag 0F2C](https://stacks.math.columbia.edu/tag/0F2C). 8 tags here are carried by 35 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0F2D, a lemma
 
 [Tag 0F2D](https://stacks.math.columbia.edu/tag/0F2D) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.picardColimitSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalPicardAlgebraization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalPicardAlgebraization.lean#L373).
+**`Stacks.PuncturedSpectrumPicard.picardColimitSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalPicardAlgebraization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalPicardAlgebraization.lean#L373).
 
 > **[Stacks, Tag 0F2D].** Let `(A, 𝔪)` be a Noetherian local ring and `f ∈ 𝔪`. Assume
 >
@@ -54,7 +54,7 @@ theorem picardColimitSurjective [IsNoetherianRing A] (hf : f ∈ maximalIdeal A)
     PicardColimitSurjective A f
 ```
 
-**`Stacks.PuncturedSpectrumPicard.exists_isCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalTower.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalTower.lean#L190). The attribute's comment: “the first half of the source's proof, in the generality the argument has: for a tower of first-order thickenings whose ideal sheaves have vanishing H², every Picard class on the bottom stage extends to a compatible family along the whole tower. That is the source's step `Pic(U_{n+1}) → Pic(U_n) → H²(U₀,𝒪_{U₀}) = H³_𝔪(A/fA) = 0, therefore each invertible 𝒪_{U₀}-module is restricted from an invertible object of Coh(U,f𝒪_U)`, and the single-stage lift is Stacks 0C6R, Stacks.Thickenings.exact\_picardRestriction in StacksFrontier.AlgebraicGeometry.Thickenings.PicardSequence. The vanishing of H² is a condition on the tower, not every tower satisfying it; for the same half at the punctured spectrum, with that vanishing derived from the source's own hypotheses (2) f a nonzerodivisor and (4) H³\_𝔪(A/fA) = 0, see Stacks.PuncturedSpectrumPicard.exists\_isCompatiblePullback\_puncturedSpectrum. NOT covered by this declaration: the tag's own conclusion, surjectivity of colim\_\{U₀ ⊆ U' ⊆ U} Pic(U') → Pic(U₀), written as Stacks.PuncturedSpectrumPicard.PicardColimitSurjective, which needs Stacks 0EKZ and through it Stacks 0EIR part (2)”.
+**`Stacks.PuncturedSpectrumPicard.exists_isCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalTower.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/FormalTower.lean#L190). The attribute's comment: “the first half of the source's proof, in the generality the argument has: for a tower of first-order thickenings whose ideal sheaves have vanishing H², every Picard class on the bottom stage extends to a compatible family along the whole tower. That is the source's step `Pic(U_{n+1}) → Pic(U_n) → H²(U₀,𝒪_{U₀}) = H³_𝔪(A/fA) = 0, therefore each invertible 𝒪_{U₀}-module is restricted from an invertible object of Coh(U,f𝒪_U)`, and the single-stage lift is Stacks 0C6R, Stacks.Thickenings.exact\_picardRestriction in StacksFrontier.AlgebraicGeometry.Thickenings.PicardSequence. The vanishing of H² is a condition on the tower, not every tower satisfying it; for the same half at the punctured spectrum, with that vanishing derived from the source's own hypotheses (2) f a nonzerodivisor and (4) H³\_𝔪(A/fA) = 0, see Stacks.PuncturedSpectrumPicard.exists\_isCompatiblePullback\_puncturedSpectrum. NOT covered by this declaration: the tag's own conclusion, surjectivity of colim\_\{U₀ ⊆ U' ⊆ U} Pic(U') → Pic(U₀), written as Stacks.PuncturedSpectrumPicard.PicardColimitSurjective, which needs Stacks 0EKZ and through it Stacks 0EIR part (2)”.
 
 > **The first half of the proof of [Stacks, Tag 0F2D].**  Let `X₀ ⟶ X₁ ⟶ X₂ ⟶ ⋯` be a tower of
 > first-order thickenings in which the ideal sheaf of every stage has vanishing second cohomology.
@@ -79,7 +79,7 @@ theorem exists_isCompatible
     ∃ c : (n : ℕ) → Pic (T.obj n), c 0 = c₀ ∧ IsCompatible T c
 ```
 
-**`Stacks.PuncturedSpectrumPicard.exists_isCompatiblePullback_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PuncturedSpectrumFirstHalf.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PuncturedSpectrumFirstHalf.lean#L212). The attribute's comment: “the first half of the source's proof at the punctured spectrum itself, under the source's own hypotheses (2) f a nonzerodivisor and (4) H³\_𝔪(A/fA) = 0 and nothing else: every Picard class on U₀ extends to a family along the tower of infinitesimal neighbourhoods of U₀ in U, each the pullback of the next. The per-stage vanishing H²(U\_n's ideal sheaf) = 0 is proved here, not assumed: the layers are identified with 𝒪\_\{U₀} by multiplication by f^\{n+1} (Stacks.Thickenings.idealSheafIsoStructureSheafNthOrderBottom, which is where (2) enters) and H²(U₀,𝒪\_\{U₀}) = 0 is derived from (4). NOT covered: the tag's own conclusion, surjectivity of colim\_\{U₀ ⊆ U' ⊆ U} Pic(U') → Pic(U₀), which is the second half and needs Stacks 0EKZ, hence Stacks 0EIR part (2); hypotheses (1) f-adic completeness and (3) finiteness of H¹\_𝔪(A/fA), H²\_𝔪(A/fA) are inputs of that half alone and do not appear here”.
+**`Stacks.PuncturedSpectrumPicard.exists_isCompatiblePullback_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PuncturedSpectrumFirstHalf.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PuncturedSpectrumFirstHalf.lean#L212). The attribute's comment: “the first half of the source's proof at the punctured spectrum itself, under the source's own hypotheses (2) f a nonzerodivisor and (4) H³\_𝔪(A/fA) = 0 and nothing else: every Picard class on U₀ extends to a family along the tower of infinitesimal neighbourhoods of U₀ in U, each the pullback of the next. The per-stage vanishing H²(U\_n's ideal sheaf) = 0 is proved here, not assumed: the layers are identified with 𝒪\_\{U₀} by multiplication by f^\{n+1} (Stacks.Thickenings.idealSheafIsoStructureSheafNthOrderBottom, which is where (2) enters) and H²(U₀,𝒪\_\{U₀}) = 0 is derived from (4). NOT covered: the tag's own conclusion, surjectivity of colim\_\{U₀ ⊆ U' ⊆ U} Pic(U') → Pic(U₀), which is the second half and needs Stacks 0EKZ, hence Stacks 0EIR part (2); hypotheses (1) f-adic completeness and (3) finiteness of H¹\_𝔪(A/fA), H²\_𝔪(A/fA) are inputs of that half alone and do not appear here”.
 
 > **The first half of the proof of [Stacks, Tag 0F2D].** Let `(A, 𝔪)` be a Noetherian local
 > ring and let `f ∈ 𝔪` be a nonzerodivisor with `H³_𝔪(A/fA) = 0`. Then every Picard class on the
@@ -110,7 +110,7 @@ theorem exists_isCompatiblePullback_puncturedSpectrum [IsNoetherianRing A]
 
 [Tag 0F2E](https://stacks.math.columbia.edu/tag/0F2E) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.picardColimitSurjective_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/DualizingPicardAlgebraization.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/DualizingPicardAlgebraization.lean#L85). The attribute's comment: “the whole remark: under (1)-(5) the conclusion of 0F2D holds; points (a) and (b) are commentary with no mathematical claim”.
+**`Stacks.PuncturedSpectrumPicard.picardColimitSurjective_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/DualizingPicardAlgebraization.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/DualizingPicardAlgebraization.lean#L85). The attribute's comment: “the whole remark: under (1)-(5) the conclusion of 0F2D holds; points (a) and (b) are commentary with no mathematical claim”.
 
 > **[Stacks, Tag 0F2E].** Let `(A, 𝔪)` be a Noetherian local ring and `f ∈ 𝔪`. Assume
 >
@@ -174,7 +174,7 @@ theorem picardColimitSurjective_of_isDualizingComplex [IsNoetherianRing A]
 
 [Tag 0F2F](https://stacks.math.columbia.edu/tag/0F2F) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.surjective_schemePullbackClass_puncturedClosedFibre_of_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PicardSurjectivePuncturedSpectrum.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PicardSurjectivePuncturedSpectrum.lean#L124). The attribute's comment: “the full statement: for a Noetherian local ring (A, m) and f in m, under the four conditions of Stacks 0F2D (f-adic completeness, f a nonzerodivisor, finiteness of H^1\_m(A/fA) and H^2\_m(A/fA), vanishing of H^3\_m(A/fA)) and triviality of Pic of the punctured spectrum of (A\_f)\_P for every maximal ideal P of A\_f, restriction Pic(U) -> Pic(U\_0) from the punctured spectrum U of A to the punctured spectrum U\_0 of A/fA is surjective”.
+**`Stacks.PuncturedSpectrumPicard.surjective_schemePullbackClass_puncturedClosedFibre_of_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PicardSurjectivePuncturedSpectrum.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/PicardSurjectivePuncturedSpectrum.lean#L124). The attribute's comment: “the full statement: for a Noetherian local ring (A, m) and f in m, under the four conditions of Stacks 0F2D (f-adic completeness, f a nonzerodivisor, finiteness of H^1\_m(A/fA) and H^2\_m(A/fA), vanishing of H^3\_m(A/fA)) and triviality of Pic of the punctured spectrum of (A\_f)\_P for every maximal ideal P of A\_f, restriction Pic(U) -> Pic(U\_0) from the punctured spectrum U of A to the punctured spectrum U\_0 of A/fA is surjective”.
 
 > **[Stacks, Tag 0F2F].**  Let `(A, 𝔪)` be a Noetherian local ring and `f ∈ 𝔪`.  Assume
 > (1) the conditions of [Stacks, Tag 0F2D]: `A` is `f`-adically complete, `f` is a nonzerodivisor,
@@ -218,7 +218,7 @@ theorem surjective_schemePullbackClass_puncturedClosedFibre_of_localCohomology
 
 [Tag 0F2G](https://stacks.math.columbia.edu/tag/0F2G) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_schemePullbackClass_puncturedSpectrumCompletionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean#L393).
+**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_schemePullbackClass_puncturedSpectrumCompletionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean#L393).
 
 > **Stacks Project, Tag 0F2G.** Let `(A, 𝔪)` be a Noetherian local ring of depth at least two,
 > let `A^` be its completion and let `U`, resp. `U^`, be the punctured spectrum of `A`, resp. `A^`.
@@ -235,7 +235,7 @@ theorem injective_schemePullbackClass_puncturedSpectrumCompletionMap
 
 [Tag 0F2H](https://stacks.math.columbia.edu/tag/0F2H) in the Stacks Project.
 
-**`Stacks.PicardUFD.subsingleton_picardGroup_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/PuncturedSpectrumRegular.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardGroup/PuncturedSpectrumRegular.lean#L57). References: SGA 2 XI (3.13), “XI.3.13(i)”.
+**`Stacks.PicardUFD.subsingleton_picardGroup_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/PuncturedSpectrumRegular.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PicardGroup/PuncturedSpectrumRegular.lean#L57). References: SGA 2 XI (3.13), “XI.3.13(i)”.
 
 > **Stacks Project, Tag 0F2H.** Let `(A, 𝔪)` be a regular local ring. Then the Picard group of
 > the punctured spectrum `Spec A ∖ {𝔪}` of `A` is trivial.
@@ -250,7 +250,7 @@ theorem subsingleton_picardGroup_puncturedSpectrum (A : Type u) [CommRing A]
 
 [Tag 0F2I](https://stacks.math.columbia.edu/tag/0F2I) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.subsingleton_picardGroup_puncturedSpectrum_of_completeIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/CompleteIntersectionPicardTrivial.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/CompleteIntersectionPicardTrivial.lean#L126). The attribute's comment: “proved in full: Stacks 0F2D is supplied by its proof picardColimitSurjective”. References: SGA 2 XI (3.13), “XI.3.13(ii)”; SGA 2 XII (4.9), “4.9 b)”.
+**`Stacks.PuncturedSpectrumPicard.subsingleton_picardGroup_puncturedSpectrum_of_completeIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/CompleteIntersectionPicardTrivial.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/CompleteIntersectionPicardTrivial.lean#L126). The attribute's comment: “proved in full: Stacks 0F2D is supplied by its proof picardColimitSurjective”. References: SGA 2 XI (3.13), “XI.3.13(ii)”; SGA 2 XII (4.9), “4.9 b)”.
 
 > **[Stacks, Tag 0F2I]** (Grothendieck). Let `(A, 𝔪)` be a Noetherian local ring. If `A` is a
 > complete intersection of dimension at least four — its `𝔪`-adic completion is the quotient of a
@@ -278,7 +278,7 @@ theorem subsingleton_picardGroup_puncturedSpectrum_of_completeIntersection
 
 [Tag 0F2J](https://stacks.math.columbia.edu/tag/0F2J) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L120). The attribute's comment: “the hypersurface”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L120). The attribute's comment: “the hypersurface”.
 
 > The complete local hypersurface cut out by the determinant equation.
 
@@ -286,7 +286,7 @@ theorem subsingleton_picardGroup_puncturedSpectrum_of_completeIntersection
 public abbrev hypersurface (k : Type u) [Field k]
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L129). The attribute's comment: “the ideal (x,z)”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L129). The attribute's comment: “the ideal (x,z)”.
 
 > The ideal generated by the first and third coordinates.
 
@@ -294,7 +294,7 @@ public abbrev hypersurface (k : Type u) [Field k]
 public abbrev coordinateIdeal (k : Type u) [Field k] : Ideal (hypersurface k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L217). The attribute's comment: “local ring”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L217). The attribute's comment: “local ring”.
 
 > The ring `k⟦x,y,z,w⟧/(xy - zw)` is a local ring.
 
@@ -303,7 +303,7 @@ public theorem hypersurface_isLocalRing (k : Type u) [Field k] :
     IsLocalRing (hypersurface k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L225). The attribute's comment: “Noetherian ring”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 225](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L225). The attribute's comment: “Noetherian ring”.
 
 > The ring `k⟦x,y,z,w⟧/(xy - zw)` is Noetherian.
 
@@ -312,7 +312,7 @@ public theorem hypersurface_isNoetherianRing (k : Type u) [Field k] :
     IsNoetherianRing (hypersurface k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isCompleteIntersectionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L366). The attribute's comment: “complete intersection”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_isCompleteIntersectionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L366). The attribute's comment: “complete intersection”.
 
 > The ring `k⟦x,y,z,w⟧/(xy - zw)` is a complete intersection ring.
 
@@ -321,7 +321,7 @@ public theorem hypersurface_isCompleteIntersectionRing (k : Type u) [Field k] :
     LocalCompleteIntersection.IsCompleteIntersectionRing (hypersurface k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_krullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L421). The attribute's comment: “dimension three”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.hypersurface_krullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 421](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L421). The attribute's comment: “dimension three”.
 
 > The ring `k⟦x,y,z,w⟧/(xy - zw)` has Krull dimension three.
 
@@ -330,7 +330,7 @@ public theorem hypersurface_krullDim (k : Type u) [Field k] :
     ringKrullDim (hypersurface k) = 3
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal_not_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L537). The attribute's comment: “nonprincipal ideal”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal_not_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 537](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L537). The attribute's comment: “nonprincipal ideal”.
 
 > The ideal `(x,z)` of `k⟦x,y,z,w⟧/(xy - zw)` is not generated by a single element.
 
@@ -339,7 +339,7 @@ public theorem coordinateIdeal_not_principal (k : Type u) [Field k] :
     ¬ ∃ a : hypersurface k, coordinateIdeal k = Ideal.span ({a} : Set (hypersurface k))
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.quotient_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 581](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L581). The attribute's comment: “quotient depth”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.quotient_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 581](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L581). The attribute's comment: “quotient depth”.
 
 > The quotient of `A = k⟦x,y,z,w⟧/(xy - zw)` by the ideal `(x,z)` has depth two as an
 > `A`-module, along the maximal ideal of `A`.
@@ -350,7 +350,7 @@ public theorem quotient_depth (k : Type u) [Field k] :
       (hypersurface k ⧸ coordinateIdeal k) = 2
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L637). The attribute's comment: “ideal depth”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.coordinateIdeal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 637](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L637). The attribute's comment: “ideal depth”.
 
 > The ideal `(x,z)` of `A = k⟦x,y,z,w⟧/(xy - zw)` has depth three as an `A`-module, along
 > the maximal ideal of `A`.
@@ -361,7 +361,7 @@ public theorem coordinateIdeal_depth (k : Type u) [Field k] :
       (coordinateIdeal k) = 3
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.negativeTwist_not_trivial'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1164). The attribute's comment: “nontrivial line bundle”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.negativeTwist_not_trivial'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1164). The attribute's comment: “nontrivial line bundle”.
 
 > The sheaf `𝒪_U(-D) = ℐ_D` on the punctured spectrum `U` of `A = k⟦x,y,z,w⟧/(xy - zw)`, for
 > the divisor `D` cut out by `I = (x,z)`, is not a trivial invertible `𝒪_U`-module.
@@ -374,7 +374,7 @@ public theorem negativeTwist_not_trivial' (k : Type u) [Field k] :
         (Stacks.Divisors.negativeTwist' (cartierDivisor k))
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.picardGroup_not_subsingleton'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1205). The attribute's comment: “the conclusion: Pic(U) is nontrivial, at the same Scheme.picardGroup that Stacks 0F2I is stated at, so this is literally the negation of that proposition's conclusion for this A”.
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.picardGroup_not_subsingleton'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1205). The attribute's comment: “the conclusion: Pic(U) is nontrivial, at the same Scheme.picardGroup that Stacks 0F2I is stated at, so this is literally the negation of that proposition's conclusion for this A”.
 
 > The Picard group `AlgebraicGeometry.Scheme.picardGroup` of the punctured spectrum
 > `U = Spec A ∖ {𝔪}` of `A = k⟦x,y,z,w⟧/(xy - zw)` is nontrivial.
@@ -385,7 +385,7 @@ public theorem picardGroup_not_subsingleton' (k : Type u) [Field k] :
       (Stacks.Divisors.puncturedSpectrum (hypersurface k)).toScheme.picardGroup
 ```
 
-**`Stacks.PuncturedSpectrumPicard.QuadricCone.dimension_bound_isSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1228).
+**`Stacks.PuncturedSpectrumPicard.QuadricCone.dimension_bound_isSharp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/QuadricConeExample.lean#L1228).
 
 > *The dimension bound in [Stacks, Tag 0F2I] is sharp.*  For every
 > field `k` the ring `A = k⟦x,y,z,w⟧/(xy - zw)` is a Noetherian local complete intersection of
@@ -405,7 +405,7 @@ public theorem dimension_bound_isSharp (k : Type u) [Field k] :
 
 [Tag 0F9L](https://stacks.math.columbia.edu/tag/0F9L) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exists_puncturedSpectrum_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean, line 635](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean#L635). The attribute's comment: “the punctured spectra: reduction modulo w is a first-order thickening U₀ ⟶ U over Spec of the reduction, invertible global functions lift along it, and its ideal sheaf pulled back to U₀ is the structure sheaf of U₀”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exists_puncturedSpectrum_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean, line 635](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean#L635). The attribute's comment: “the punctured spectra: reduction modulo w is a first-order thickening U₀ ⟶ U over Spec of the reduction, invertible global functions lift along it, and its ideal sheaf pulled back to U₀ is the structure sheaf of U₀”.
 
 > **[Stacks, Tag 0F9L], the punctured spectra.**  Reduction modulo `w` is a first-order
 > thickening `i : U₀ ⟶ U` of the punctured spectrum of `A₀` inside that of `A`, lying over
@@ -438,7 +438,7 @@ public theorem exists_puncturedSpectrum_firstOrderThickening (k : Type u) [Field
         Stacks.Thickenings.idealAddSheafOnSub i)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_scheme_picardGroup_puncturedSpectrum_not_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean#L773). The attribute's comment: “the conclusion: the Picard group of the punctured spectrum is nontrivial, at the same Scheme.picardGroup that Stacks 0F2I is stated at, so this is literally the negation of that proposition's conclusion for this A”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_scheme_picardGroup_puncturedSpectrum_not_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean, line 773](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/PicardGroup.lean#L773). The attribute's comment: “the conclusion: the Picard group of the punctured spectrum is nontrivial, at the same Scheme.picardGroup that Stacks 0F2I is stated at, so this is literally the negation of that proposition's conclusion for this A”.
 
 > **[Stacks, Tag 0F9L], the conclusion.** The Picard group of the punctured spectrum
 > `U = Spec A ∖ {𝔪}` of
@@ -467,7 +467,7 @@ public theorem exampleRing_scheme_picardGroup_puncturedSpectrum_not_subsingleton
       (Stacks.Divisors.puncturedSpectrum (exampleRing k)).toScheme.picardGroup
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L116). The attribute's comment: “nontrivial five-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L116). The attribute's comment: “nontrivial five-variable quotient”.
 
 > **Stacks 0F9L** (nontrivial five-variable quotient).
 > The ring `A₁ = k⟦a,b,x,y,z⟧/(a³, b³, xa² + yab + zb²)` is nonzero.
@@ -477,7 +477,7 @@ public theorem socleRing_nontrivial (k : Type u) [Field k] :
     Nontrivial (socleRing k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L144). The attribute's comment: “nontrivial seven-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L144). The attribute's comment: “nontrivial seven-variable quotient”.
 
 > **Stacks 0F9L** (nontrivial seven-variable quotient).
 > The ring `A₀ = k⟦a,b,x,y,z,u,v⟧/(a³, b³, xa² + yab + zb²)` is nonzero.
@@ -487,7 +487,7 @@ public theorem intermediateRing_nontrivial (k : Type u) [Field k] :
     Nontrivial (intermediateRing k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L172). The attribute's comment: “nontrivial eight-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L172). The attribute's comment: “nontrivial eight-variable quotient”.
 
 > **Stacks 0F9L** (nontrivial eight-variable quotient).
 > The ring `A = k⟦a,b,x,y,z,u,v,w⟧/(a³, b³, xa² + yab + zb², w²)` is nonzero.
@@ -497,7 +497,7 @@ public theorem exampleRing_nontrivial (k : Type u) [Field k] :
     Nontrivial (exampleRing k)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleElement_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L190). The attribute's comment: “nonzero socle element”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleElement_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L190). The attribute's comment: “nonzero socle element”.
 
 > **Stacks 0F9L** (nonzero socle element).
 > The class of `a²b²` in `A₁ = k⟦a,b,x,y,z⟧/(a³, b³, xa² + yab + zb²)` is nonzero.
@@ -507,7 +507,7 @@ public theorem socleElement_ne_zero (k : Type u) [Field k] :
     socleElement k ≠ 0
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleElement_mul_variable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L288). The attribute's comment: “socle element annihilated by all five variables”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleElement_mul_variable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L288). The attribute's comment: “socle element annihilated by all five variables”.
 
 > **Stacks 0F9L** (socle element annihilated by all five variables).
 > The class of `a²b²` in `A₁ = k⟦a,b,x,y,z⟧/(a³, b³, xa² + yab + zb²)` is killed by each of
@@ -518,7 +518,7 @@ public theorem socleElement_mul_variable (k : Type u) [Field k] (i : Fin 5) :
     socleElement k * Ideal.Quotient.mk (fiveVariableIdeal k) (MvPowerSeries.X i) = 0
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L340). The attribute's comment: “depth of the five-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.socleRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L340). The attribute's comment: “depth of the five-variable quotient”.
 
 > **Stacks 0F9L** (depth of the five-variable quotient).
 > The ring `A₁ = k⟦a,b,x,y,z⟧/(a³, b³, xa² + yab + zb²)` has depth `0` along its maximal
@@ -530,7 +530,7 @@ public theorem socleRing_depth (k : Type u) [Field k] :
       (socleRing k) = 0
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L517). The attribute's comment: “depth of the seven-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 517](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L517). The attribute's comment: “depth of the seven-variable quotient”.
 
 > **Stacks 0F9L** (depth of the seven-variable quotient).
 > The ring `A₀ = k⟦a,b,x,y,z,u,v⟧/(a³, b³, xa² + yab + zb²)` has depth `2` along its maximal
@@ -542,7 +542,7 @@ public theorem intermediateRing_depth (k : Type u) [Field k] :
       (intermediateRing k) = 2
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.powerSeriesRing_isRegularLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L529). The attribute's comment: “regular ambient ring”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.powerSeriesRing_isRegularLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 529](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L529). The attribute's comment: “regular ambient ring”.
 
 > The ambient power-series ring is regular.
 
@@ -551,7 +551,7 @@ public theorem powerSeriesRing_isRegularLocalRing (k : Type u) [Field k] :
     IsRegularLocalRing (powerSeriesRing k 8)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.powerSeriesRing_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L541). The attribute's comment: “dimension of the ambient ring”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.powerSeriesRing_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean, line 541](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/Rings.lean#L541). The attribute's comment: “dimension of the ambient ring”.
 
 > **Stacks 0F9L** (dimension of the ambient ring).
 > The power-series ring `k⟦a,b,x,y,z,u,v,w⟧` has Krull dimension `8`.
@@ -561,7 +561,7 @@ public theorem powerSeriesRing_dimension (k : Type u) [Field k] :
     ringKrullDim (powerSeriesRing k 8) = 8
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_equiv_truncatedPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L666). The attribute's comment: “square-zero extension with its chosen coordinates”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_equiv_truncatedPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 666](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L666). The attribute's comment: “square-zero extension with its chosen coordinates”.
 
 > The square-zero description, with the inclusion of `A₀` identified with constant
 > polynomials and the chosen eighth variable identified with `X`.
@@ -589,7 +589,7 @@ public theorem exampleRing_equiv_truncatedPolynomial (k : Type u) [Field k] :
         q
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L714). The attribute's comment: “depth of the eight-variable quotient”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 714](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L714). The attribute's comment: “depth of the eight-variable quotient”.
 
 > **Stacks 0F9L** (depth of the eight-variable quotient).
 > The ring `A = k⟦a,b,x,y,z,u,v,w⟧/(a³, b³, xa² + yab + zb², w²)` has depth `2` along its
@@ -601,7 +601,7 @@ public theorem exampleRing_depth (k : Type u) [Field k] :
       (exampleRing k) = 2
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_globalSections_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 786](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L786). The attribute's comment: “global functions on the punctured spectrum of A₀”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.intermediateRing_globalSections_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 786](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L786). The attribute's comment: “global functions on the punctured spectrum of A₀”.
 
 > Depth two identifies the global functions on the seven-variable punctured
 > spectrum with the original quotient, via the canonical restriction map.
@@ -613,7 +613,7 @@ public theorem intermediateRing_globalSections_puncturedSpectrum (k : Type u) [F
       (((Scheme.ΓSpecIso (.of (intermediateRing k))).inv ≫ U.ι.appTop).hom)
 ```
 
-**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_globalSections_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 797](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L797). The attribute's comment: “global functions on the punctured spectrum of A”.
+**`Stacks.PuncturedSpectrumPicard.NonRegularSequence.exampleRing_globalSections_puncturedSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean, line 797](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PuncturedSpectrumPicard/NonRegularSequenceExample/SquareZero.lean#L797). The attribute's comment: “global functions on the punctured spectrum of A”.
 
 > The same global-functions identification for the square-zero quotient.
 
@@ -631,4 +631,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.27, Tag 0F2C](https://stacks.math.columbia.edu/tag/0F2C)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

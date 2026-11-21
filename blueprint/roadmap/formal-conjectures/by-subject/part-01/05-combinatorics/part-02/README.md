@@ -2,10 +2,13 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1158 to Open Quantum Problem 35…
+# Erdős Problem 1128 to Open Quantum Problem 35…
 
-## [Erdős Problem 1158 to Erdős Problem 1191](part-01/README.md)
+## [Erdős Problem 1128 to Erdős Problem 1186](part-01/README.md)
 
+- [Erdős Problem 1128](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1128.md)
+- [Erdős Problem 1145](../../../../erdos-problems/1100-1199/part-02/erdos-problem-1145.md)
+- [Erdős Problem 1157](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1157.md)
 - [Erdős Problem 1158](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1158.md)
 - [Erdős Problem 1159](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1159.md)
 - [Erdős Problem 1161](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1161.md)
@@ -23,12 +26,12 @@ navigation: transparent
 - [Erdős Problem 1183](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1183.md)
 - [Erdős Problem 1185](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1185.md)
 - [Erdős Problem 1186](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1186.md)
+
+## [Erdős Problem 1187 to Butson-type Hadamard matrices](part-02/README.md)
+
 - [Erdős Problem 1187](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1187.md)
 - [Erdős Problem 1190](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1190.md)
 - [Erdős Problem 1191](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1191.md)
-
-## [Erdős Problem 1192 to Graceful Tree Conjecture…](part-02/README.md)
-
 - [Erdős Problem 1192](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1192.md)
 - [Erdős Problem 1193](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1193.md)
 - [Erdős Problem 1194](../../../../erdos-problems/1100-1199/part-04/erdos-problem-1194.md)
@@ -40,18 +43,19 @@ navigation: transparent
 - [Number of different products of subsets of $\{1, 2, \dots, n\}$](../../../../oeis/part-03/number-of-different-products-of-subsets-of-1-2-d.md)
 - [$a(n) = \sum_{i=0}^n \binom{2n-i}{n+i}$](../../../../oeis/part-06/a-n-sum-i-0-n-binom-2n-i-n-i.md)
 - [Numerator of $\binom{6n-2}{2n} / \left(2 \binom{4n-1}{2n}\right)$](../../../../oeis/part-07/numerator-of-binom-6n-2-2n-left-2-binom-4n-1-2n.md)
+- [Exponentials of $\sum_{n \ge 1} q^{n^m} x^n / n$](../../../../oeis/part-09/exponentials-of-sum-n-ge-1-q-n-m-x-n-n.md)
 - [The Alon–Saks–Seymour conjecture (disproved)](../../../../wikipedia/part-01/the-alon-saks-seymour-conjecture-disproved.md)
 - [Alspach's conjecture on cycle decompositions of complete graphs (1981; proved 2014)](../../../../wikipedia/part-01/alspachs-conjecture-on-cycle-decompositions-of-c.md)
 - [Beck–Fiala theorem and conjecture](../../../../wikipedia/part-01/beck-fiala-theorem-and-conjecture.md)
 - [The Berge–Fulkerson conjecture](../../../../wikipedia/part-01/the-berge-fulkerson-conjecture.md)
 - [Butson-type Hadamard matrices](../../../../wikipedia/part-02/butson-type-hadamard-matrices.md)
+
+## [Conway's 99-graph problem to Six standard deviations suffice…](part-03/README.md)
+
 - [Conway's 99-graph problem](../../../../wikipedia/part-02/conways-99-graph-problem.md)
 - [Dedekind Numbers](../../../../wikipedia/part-02/dedekind-numbers.md)
 - [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [Graceful Tree Conjecture (Ringel–Kotzig conjecture)](../../../../wikipedia/part-04/graceful-tree-conjecture-ringel-kotzig-conjectur.md)
-
-## [The Gyárfás–Sumner conjecture to Sumner's universal tournament…](part-03/README.md)
-
 - [The Gyárfás–Sumner conjecture](../../../../wikipedia/part-04/the-gyarfas-sumner-conjecture.md)
 - [Hajós' conjecture (1961) — disproved](../../../../wikipedia/part-04/hajos-conjecture-1961-disproved.md)
 - [Hedetniemi's conjecture (1966)](../../../../wikipedia/part-04/hedetniemis-conjecture-1966.md)
@@ -68,13 +72,13 @@ navigation: transparent
 - [The reconstruction conjecture](../../../../wikipedia/part-07/the-reconstruction-conjecture.md)
 - [Sidorenko's conjecture (1993)](../../../../wikipedia/part-08/sidorenkos-conjecture-1993.md)
 - [Six standard deviations suffice (Spencer's theorem)](../../../../wikipedia/part-08/six-standard-deviations-suffice-spencers-theorem.md)
+
+## [Snake in the box to Ben Green's Open Problem 21](part-04/README.md)
+
 - [Snake in the box](../../../../wikipedia/part-08/snake-in-the-box.md)
 - [Sparse Ruler](../../../../wikipedia/part-08/sparse-ruler.md)
 - [Steiner Systems](../../../../wikipedia/part-08/steiner-systems.md)
 - [Sumner's universal tournament conjecture (1971)](../../../../wikipedia/part-08/sumners-universal-tournament-conjecture-1971.md)
-
-## [The total colouring conjecture… to Green's Open Problem 25](part-04/README.md)
-
 - [The total colouring conjecture (Behzad 1965, Vizing 1968)](../../../../wikipedia/part-09/the-total-colouring-conjecture-behzad-1965-vizin.md)
 - [Tuza's conjecture](../../../../wikipedia/part-09/tuzas-conjecture.md)
 - [Union-closed sets conjecture](../../../../wikipedia/part-09/union-closed-sets-conjecture.md)
@@ -91,13 +95,13 @@ navigation: transparent
 - [Ben Green's Open Problem 18](../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 19](../../../../greens-open-problems/part-01/ben-greens-open-problem-19.md)
 - [Ben Green's Open Problem 21](../../../../greens-open-problems/part-01/ben-greens-open-problem-21.md)
+
+## [Green's Open Problem 22 to Green's Open Problem 53](part-05/README.md)
+
 - [Green's Open Problem 22](../../../../greens-open-problems/part-01/greens-open-problem-22.md)
 - [Green's Open Problem 23](../../../../greens-open-problems/part-01/greens-open-problem-23.md)
 - [Green's Open Problem 24](../../../../greens-open-problems/part-01/greens-open-problem-24.md)
 - [Green's Open Problem 25](../../../../greens-open-problems/part-01/greens-open-problem-25.md)
-
-## [Green's Open Problem 26 to Ben Green's Open Problem 68](part-05/README.md)
-
 - [Green's Open Problem 26](../../../../greens-open-problems/part-01/greens-open-problem-26.md)
 - [Green's Open Problem 27](../../../../greens-open-problems/part-02/greens-open-problem-27.md)
 - [Ben Green's Open Problem 31](../../../../greens-open-problems/part-02/ben-greens-open-problem-31.md)
@@ -114,18 +118,19 @@ navigation: transparent
 - [Green's Open Problem 51](../../../../greens-open-problems/part-03/greens-open-problem-51.md)
 - [Green's Open Problem 52](../../../../greens-open-problems/part-03/greens-open-problem-52.md)
 - [Green's Open Problem 53](../../../../greens-open-problems/part-03/greens-open-problem-53.md)
+
+## [Ben Green's Open Problem 55 to Written on the Wall II -…](part-06/README.md)
+
+- [Ben Green's Open Problem 55](../../../../greens-open-problems/part-03/ben-greens-open-problem-55.md)
 - [Ben Green's Open Problem 57](../../../../greens-open-problems/part-03/ben-greens-open-problem-57.md)
 - [Ben Green's Open Problem 58](../../../../greens-open-problems/part-03/ben-greens-open-problem-58.md)
 - [Ben Green's Open Problem 65](../../../../greens-open-problems/part-03/ben-greens-open-problem-65.md)
 - [Ben Green's Open Problem 68](../../../../greens-open-problems/part-03/ben-greens-open-problem-68.md)
-
-## [Ben Green's Open Problem 69 to Written on the Wall II -…](part-06/README.md)
-
 - [Ben Green's Open Problem 69](../../../../greens-open-problems/part-03/ben-greens-open-problem-69.md)
 - [Ben Green's Open Problem 70](../../../../greens-open-problems/part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](../../../../greens-open-problems/part-03/ben-greens-open-problem-72.md)
 - [Ben Green's Open Problem 74](../../../../greens-open-problems/part-03/ben-greens-open-problem-74.md)
-- [Ben Green's Open Problem 75](../../../../greens-open-problems/part-03/ben-greens-open-problem-75.md)
+- [Ben Green's Open Problem 75](../../../../greens-open-problems/part-04/ben-greens-open-problem-75.md)
 - [Ben Green's Open Problem 76](../../../../greens-open-problems/part-04/ben-greens-open-problem-76.md)
 - [Ben Green's Open Problem 77](../../../../greens-open-problems/part-04/ben-greens-open-problem-77.md)
 - [Ben Green's Open Problem 84](../../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)
@@ -136,14 +141,14 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 160](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-160.md)
 - [Written on the Wall II - Conjecture 1](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-1.md)
 - [Written on the Wall II - Conjecture 2](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-2.md)
+
+## [Written on the Wall II -… to Written on the Wall II -…](part-07/README.md)
+
 - [Written on the Wall II - Conjecture 3](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-3.md)
 - [Written on the Wall II - Conjecture 4](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-4.md)
 - [Written on the Wall II - Conjecture 5](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-5.md)
 - [Written on the Wall II - Conjecture 6](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-6.md)
 - [Written on the Wall II - Conjecture 7](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-7.md)
-
-## [Written on the Wall II -… to Written on the Wall II -…](part-07/README.md)
-
 - [Written on the Wall II - Conjecture 13](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-13.md)
 - [Written on the Wall II - Conjecture 16](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-16.md)
 - [Written on the Wall II - Conjecture 17](../../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-17.md)
@@ -159,14 +164,14 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 34](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-34.md)
 - [Written on the Wall II - Conjecture 36](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-36.md)
 - [Written on the Wall II - Conjecture 40](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-40.md)
+
+## [Written on the Wall II -… to Written on the Wall II -…](part-08/README.md)
+
 - [Written on the Wall II - Conjecture 58](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-58.md)
 - [Written on the Wall II - Conjecture 59](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-59.md)
 - [Written on the Wall II - Conjecture 61](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-61.md)
 - [Written on the Wall II - Conjecture 63](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-63.md)
 - [Written on the Wall II - Conjecture 64](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-64.md)
-
-## [Written on the Wall II -… to Written on the Wall II -…](part-08/README.md)
-
 - [Written on the Wall II - Conjecture 65](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-65.md)
 - [Written on the Wall II - Conjecture 72](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-72.md)
 - [Written on the Wall II - Conjecture 84](../../../../written-on-the-wall-ii/part-02/written-on-the-wall-ii-conjecture-84.md)
@@ -182,14 +187,14 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 142](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-142.md)
 - [Written on the Wall II - Conjecture 143](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-143.md)
 - [Written on the Wall II - Conjecture 144](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-144.md)
+
+## [Written on the Wall II -… to Written on the Wall II -…](part-09/README.md)
+
 - [Written on the Wall II - Conjecture 145](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-145.md)
 - [Written on the Wall II - Conjecture 146](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-146.md)
 - [Written on the Wall II - Conjecture 172](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-172.md)
 - [Written on the Wall II - Conjecture 176](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-176.md)
 - [Written on the Wall II - Conjecture 181](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-181.md)
-
-## [Written on the Wall II -… to Claude's Cycles](part-09/README.md)
-
 - [Written on the Wall II - Conjecture 189](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-189.md)
 - [Written on the Wall II - Conjecture 194](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-194.md)
 - [Written on the Wall II - Conjecture 198a](../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-198a.md)
@@ -205,14 +210,14 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 327](../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-327.md)
 - [Written on the Wall II - Conjecture 430a](../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-430a.md)
 - [Written on the Wall II - Conjecture 438b](../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-438b.md)
+
+## [Fanelli–Moscardelli conjecture… to Shelah-Spencer's Zero-One Law…](part-10/README.md)
+
 - [Fanelli–Moscardelli conjecture on approximate roommates stability](../../../../papers/part-01/fanelli-moscardelli-conjecture-on-approximate-ro.md)
 - [The Bollobás–Eldridge–Catlin conjecture on graph packing (1978)](../../../../papers/part-01/the-bollobas-eldridge-catlin-conjecture-on-graph.md)
 - [The burning number conjecture](../../../../papers/part-01/the-burning-number-conjecture.md)
 - [Chvátal's Conjecture](../../../../papers/part-01/chvatals-conjecture.md)
 - [Claude's Cycles](../../../../papers/part-01/claudes-cycles.md)
-
-## [Degree sequences in… to Ringel's Conjecture and…](part-10/README.md)
-
 - [Degree sequences in triangle-free graphs](../../../../papers/part-01/degree-sequences-in-triangle-free-graphs.md)
 - [Euclidean Ramsey configurations on a circle](../../../../papers/part-01/euclidean-ramsey-configurations-on-a-circle.md)
 - [Main conjecture on fusible numbers](../../../../papers/part-01/main-conjecture-on-fusible-numbers.md)
@@ -228,14 +233,14 @@ navigation: transparent
 - [Reed's omega, delta, and chi conjecture](../../../../papers/part-02/reeds-omega-delta-and-chi-conjecture.md)
 - [Ringel's Conjecture](../../../../papers/part-03/ringels-conjecture.md)
 - [Shelah-Spencer's Zero-One Law for Sparse Random Graphs](../../../../papers/part-03/shelah-spencers-zero-one-law-for-sparse-random-g.md)
+
+## [Size, Order, and Connected… to MathOverflow 508539](part-11/README.md)
+
 - [Size, Order, and Connected Domination](../../../../papers/part-03/size-order-and-connected-domination.md)
 - [Tu-Deng Conjecture](../../../../papers/part-03/tu-deng-conjecture.md)
 - [The length of an $s$-increasing sequence of $r$-tuples](../../../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
 - [Pittel's second-moment conjecture for nearly balanced markets](../../../../arxiv/part-01/pittels-second-moment-conjecture-for-nearly-bala.md)
 - [Ringel's Conjecture and Kotzig's Conjecture for large $n$](../../../../arxiv/part-01/ringels-conjecture-and-kotzigs-conjecture-for-la.md)
-
-## [Barker sequences to Tao's Optimization Constant 6a…](part-11/README.md)
-
 - [Barker sequences](../../../../arxiv/part-01/barker-sequences.md)
 - [Independent Domination of Regular Graphs, Conjecture 1.6](../../../../arxiv/part-01/independent-domination-of-regular-graphs-conject.md)
 - [Digit $2$ in base $3$ representation of $2^n$](../../../../arxiv/part-01/digit-2-in-base-3-representation-of-2-n.md)
@@ -251,13 +256,13 @@ navigation: transparent
 - [The Balister–Győri–Schelp conjecture](../../../../arxiv/part-02/the-balister-gyori-schelp-conjecture.md)
 - [Optimal monotone families for the discrete isoperimetric inequality](../../../../mathoverflow/optimal-monotone-families-for-the-discrete-isope.md)
 - [MathOverflow 508539](../../../../mathoverflow/mathoverflow-508539.md)
+
+## [Beaver Math Olympiad (BMO) to Open Quantum Problem 35…](part-12/README.md)
+
 - [Beaver Math Olympiad (BMO)](../../../../other/beaver-math-olympiad-bmo.md)
 - [Suffix-prefix avoidance bound](../../../../other/suffix-prefix-avoidance-bound.md)
 - [VCₙ dimension of convex sets in ℝⁿ, ℝⁿ⁺¹, ℝⁿ⁺²](../../../../other/vcn-dimension-of-convex-sets-in-rn-rn-1-rn-2.md)
 - [Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets](../../../../optimization-constants/taos-optimization-constant-1a-an-autocorrelation.md)
 - [Tao's Optimization Constant 6a / The Union-Closed Sets Conjecture](../../../../optimization-constants/taos-optimization-constant-6a-the-union-closed-s.md)
-
-## [Open Quantum Problem 13… to Open Quantum Problem 35…](part-12/README.md)
-
 - [Open Quantum Problem 13: Mutually unbiased bases](../../../../open-quantum-problems/open-quantum-problem-13-mutually-unbiased-bases.md)
 - [Open Quantum Problem 35: existence of absolutely maximally entangled pure states](../../../../open-quantum-problems/open-quantum-problem-35-existence-of-absolutely.md)

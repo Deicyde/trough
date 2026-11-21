@@ -7,7 +7,7 @@ proof: formalized
 
 # Correctness lemmas for multivariate Horner evaluation
 
-`CompPoly.Multivariate.HornerLemmas`, in [CompPoly/Multivariate/HornerLemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/HornerLemmas.lean), by Frantisek Silvasi, Julian Sutherland, Andrei Burdușa, Derek Sorensen, Dimitris Mitsios.
+`CompPoly.Multivariate.HornerLemmas`, in [CompPoly/Multivariate/HornerLemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/HornerLemmas.lean), by Frantisek Silvasi, Julian Sutherland, Andrei Burdușa, Derek Sorensen, Dimitris Mitsios.
 
 > This file proves that the fixed-order multivariate Horner evaluator in
 > `CompPoly.Multivariate.Basic` agrees with ordinary multivariate
@@ -25,7 +25,7 @@ proof: formalized
 
 > ### Recursive term evaluator correctness
 
-`CPoly.CMvPolynomial.eval₂Horner_eq_eval₂` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/HornerLemmas.lean#L450))
+`CPoly.CMvPolynomial.eval₂Horner_eq_eval₂` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/HornerLemmas.lean#L450))
 
 > Fixed-order multivariate Horner evaluation agrees with ordinary evaluation.
 
@@ -35,7 +35,7 @@ theorem eval₂Horner_eq_eval₂ {R S : Type*} {n : ℕ} [Semiring R] [CommSemir
     eval₂Horner f vs p = eval₂ f vs p
 ```
 
-`CPoly.CMvPolynomial.evalHorner_eq_eval` (theorem, [line 477](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/HornerLemmas.lean#L477))
+`CPoly.CMvPolynomial.evalHorner_eq_eval` (theorem, [line 477](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/HornerLemmas.lean#L477))
 
 > Fixed-order multivariate Horner evaluation agrees with ordinary evaluation.
 
@@ -51,5 +51,5 @@ theorem evalHorner_eq_eval {R : Type*} {n : ℕ} [CommSemiring R]
 
 ## Sources
 
-- [CompPoly/Multivariate/HornerLemmas.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Multivariate/HornerLemmas.lean)
+- [CompPoly/Multivariate/HornerLemmas.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Multivariate/HornerLemmas.lean)
 - [Declaration ledger](../../../sources/comppoly/CompPoly.Multivariate.HornerLemmas.json)

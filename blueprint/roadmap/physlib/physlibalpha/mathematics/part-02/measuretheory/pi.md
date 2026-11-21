@@ -8,7 +8,7 @@ proof: formalized
 
 # Monotonicity of finite product measures
 
-The module `PhyslibAlpha.Mathematics.MeasureTheory.Pi`, [PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.MeasureTheory.Pi`, [PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean): 1 declaration, 1 with a docstring.
 
 > Finite product measures `MeasureTheory.Measure.pi` are monotone in each of their factors.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.Mathematics.MeasureTheory.Pi`, [PhyslibAlpha/Mathematic
 
 ## A. Monotonicity of the product measure
 
-**`MeasureTheory.Measure.pi_mono`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean#L50).
+**`MeasureTheory.Measure.pi_mono`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean#L50).
 
 > The finite product measure `Measure.pi μ` is monotone in the family of measures `μ`:
 > if `μ i ≤ ν i` for every `i`, then `Measure.pi μ ≤ Measure.pi ν`.
@@ -46,4 +46,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean)
+- [PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/MeasureTheory/Pi.lean)

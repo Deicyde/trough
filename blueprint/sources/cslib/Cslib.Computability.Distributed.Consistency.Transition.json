@@ -1,0 +1,21 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "module": "Cslib.Computability.Distributed.Consistency.Transition",
+ "file": "Cslib/Computability/Distributed/Consistency/Transition.lean",
+ "public": [
+  {"name": "Cslib.DistributedConsistency.Transition", "kind": "inductive", "line": 30},
+  {"name": "Cslib.DistributedConsistency.Transition.op", "kind": "def", "line": 57},
+  {"name": "Cslib.DistributedConsistency.Transition.rcv", "kind": "def", "line": 62},
+  {"name": "Cslib.DistributedConsistency.Transition.proc", "kind": "def", "line": 67},
+  {"name": "Cslib.DistributedConsistency.Transition.pre", "kind": "def", "line": 72},
+  {"name": "Cslib.DistributedConsistency.Transition.post", "kind": "def", "line": 79},
+  {"name": "Cslib.DistributedConsistency.Transition.snd", "kind": "def", "line": 86},
+  {"name": "Cslib.DistributedConsistency.Transition.rval", "kind": "def", "line": 93}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

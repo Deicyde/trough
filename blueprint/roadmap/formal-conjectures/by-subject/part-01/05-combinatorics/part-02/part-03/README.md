@@ -2,8 +2,12 @@
 navigation: transparent
 ---
 
-# The Gyárfás–Sumner conjecture to Sumner's universal tournament…
+# Conway's 99-graph problem to Six standard deviations suffice…
 
+- [Conway's 99-graph problem](../../../../../wikipedia/part-02/conways-99-graph-problem.md)
+- [Dedekind Numbers](../../../../../wikipedia/part-02/dedekind-numbers.md)
+- [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
+- [Graceful Tree Conjecture (Ringel–Kotzig conjecture)](../../../../../wikipedia/part-04/graceful-tree-conjecture-ringel-kotzig-conjectur.md)
 - [The Gyárfás–Sumner conjecture](../../../../../wikipedia/part-04/the-gyarfas-sumner-conjecture.md)
 - [Hajós' conjecture (1961) — disproved](../../../../../wikipedia/part-04/hajos-conjecture-1961-disproved.md)
 - [Hedetniemi's conjecture (1966)](../../../../../wikipedia/part-04/hedetniemis-conjecture-1966.md)
@@ -20,7 +24,3 @@ navigation: transparent
 - [The reconstruction conjecture](../../../../../wikipedia/part-07/the-reconstruction-conjecture.md)
 - [Sidorenko's conjecture (1993)](../../../../../wikipedia/part-08/sidorenkos-conjecture-1993.md)
 - [Six standard deviations suffice (Spencer's theorem)](../../../../../wikipedia/part-08/six-standard-deviations-suffice-spencers-theorem.md)
-- [Snake in the box](../../../../../wikipedia/part-08/snake-in-the-box.md)
-- [Sparse Ruler](../../../../../wikipedia/part-08/sparse-ruler.md)
-- [Steiner Systems](../../../../../wikipedia/part-08/steiner-systems.md)
-- [Sumner's universal tournament conjecture (1971)](../../../../../wikipedia/part-08/sumners-universal-tournament-conjecture-1971.md)

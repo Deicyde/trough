@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.27 Grothendieck's existence theorem, III
 
-Section 30.27 of the Stacks Project, [Tag 0CYW](https://stacks.math.columbia.edu/tag/0CYW). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 30.27 of the Stacks Project, [Tag 0CYW](https://stacks.math.columbia.edu/tag/0CYW). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 088D, an equation
 
 [Tag 088D](https://stacks.math.columbia.edu/tag/088D) in the Stacks Project.
 
-**`Stacks.Algebraization.completion_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean#L111). The attribute's comment: “proper support of the completion”.
+**`Stacks.Algebraization.completion_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean#L111). The attribute's comment: “proper support of the completion”.
 
 > **Stacks 088D.** The first term of the completion of a coherent sheaf whose support is
 > proper over the base again has support proper over the base.
@@ -32,7 +32,7 @@ public theorem completion_hasProperSupport
       (((completionFunctor X (baseIdealSheaf A I f)).obj F.obj).obj.obj (op 0))
 ```
 
-**`Stacks.Algebraization.completionFunctorProperOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean#L144). The attribute's comment: “the functor”.
+**`Stacks.Algebraization.completionFunctorProperOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/Basic.lean#L144). The attribute's comment: “the functor”.
 
 > **Stacks 088D.** The completion functor of Stacks 0880, restricted to the coherent sheaves
 > and the coherent adic systems whose support is proper over the affine base.
@@ -48,7 +48,7 @@ public noncomputable def completionFunctorProperOver
 
 [Tag 088E](https://stacks.math.columbia.edu/tag/088E) in the Stacks Project.
 
-**`Stacks.Algebraization.isEquivalence_completionFunctorProperOver_holds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicUnitConditionDescent.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicUnitConditionDescent.lean#L343). The attribute's comment: “Grothendieck's existence theorem: A Noetherian and complete with respect to I, X separated and of finite type over A; the functor of 088D from coherent O\_X-modules with support proper over A to coherent I-adic systems with support proper over A is an equivalence”. References: EGA III (5.2.5), “more general”; EGA III (5.2.6), “more general”.
+**`Stacks.Algebraization.isEquivalence_completionFunctorProperOver_holds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicUnitConditionDescent.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicUnitConditionDescent.lean#L343). The attribute's comment: “Grothendieck's existence theorem: A Noetherian and complete with respect to I, X separated and of finite type over A; the functor of 088D from coherent O\_X-modules with support proper over A to coherent I-adic systems with support proper over A is an equivalence”. References: EGA III (5.2.5), “more general”; EGA III (5.2.6), “more general”.
 
 > **[Stacks, Tag 088E], Grothendieck's existence theorem.** Let `A` be a Noetherian ring
 > complete with respect to an ideal `I` and let `f : Z ⟶ Spec A` be separated and of finite type
@@ -83,7 +83,7 @@ public theorem isEquivalence_completionFunctorProperOver_holds
 
 [Tag 088F](https://stacks.math.columbia.edu/tag/088F) in the Stacks Project.
 
-**`AlgebraicGeometry.AdicCoherentModuleSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicThickeningCoherentSystem.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicThickeningCoherentSystem.lean#L140). The attribute's comment: “the systems (F n, phi n) of clauses (1), (2) and (3)”.
+**`AlgebraicGeometry.AdicCoherentModuleSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicThickeningCoherentSystem.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicThickeningCoherentSystem.lean#L140). The attribute's comment: “the systems (F n, phi n) of clauses (1), (2) and (3)”.
 
 > **The systems `(ℱₙ, φₙ)` of Stacks 088F.** For `f : X ⟶ Spec A` locally of finite type, a
 > coherent `𝒪_{Xₙ}`-module for every `n`, together with an isomorphism `φₙ : iₙ^* ℱₙ₊₁ ≅ ℱₙ`
@@ -98,7 +98,7 @@ public structure AdicCoherentModuleSystem (A : Type u) [CommRing A] (I : Ideal A
     {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) [LocallyOfFiniteType f]
 ```
 
-**`AlgebraicGeometry.isEquivalence_adicThickeningCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningEssSurj.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningEssSurj.lean#L245). The attribute's comment: “the completion functor from the coherent O\_X-modules with support proper over A to the systems (F n, phi n) of clauses (1), (2) and (3) is an equivalence of categories, for A Noetherian and I-adically complete and X -> Spec A separated and of finite type”.
+**`AlgebraicGeometry.isEquivalence_adicThickeningCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningEssSurj.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningEssSurj.lean#L245). The attribute's comment: “the completion functor from the coherent O\_X-modules with support proper over A to the systems (F n, phi n) of clauses (1), (2) and (3) is an equivalence of categories, for A Noetherian and I-adically complete and X -> Spec A separated and of finite type”.
 
 > **The completion functor is an equivalence.** Let `A` be a Noetherian
 > ring complete with respect to an ideal `I`, put `S = Spec A`, `Sₙ = Spec (A / Iⁿ)`, let
@@ -117,7 +117,7 @@ public theorem isEquivalence_adicThickeningCompletionFunctor
     (adicThickeningCompletionFunctor A I f).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isEquivalence_adicThickeningTransitionCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningProperEquivalence.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningProperEquivalence.lean#L190). The attribute's comment: “the remark's last sentence: for X proper over A, with the conditions on the supports omitted, completion from all coherent O\_X-modules to the systems of coherent O\_\{X\_n}-modules F n with isomorphisms phi n is an equivalence of categories”.
+**`AlgebraicGeometry.isEquivalence_adicThickeningTransitionCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningProperEquivalence.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionProper/AdicThickeningProperEquivalence.lean#L190). The attribute's comment: “the remark's last sentence: for X proper over A, with the conditions on the supports omitted, completion from all coherent O\_X-modules to the systems of coherent O\_\{X\_n}-modules F n with isomorphisms phi n is an equivalence of categories”.
 
 > Let `A` be a Noetherian ring complete with respect to an ideal `I`, let `f : X ⟶ Spec A` be
 > proper and `Xₙ = X ×_S Sₙ`. Then completion `ℱ ↦ (ℱ|_{Xₙ})` is an equivalence from the category
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.27, Tag 0CYW](https://stacks.math.columbia.edu/tag/0CYW)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

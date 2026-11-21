@@ -8,7 +8,7 @@ proof: formalized
 
 # Tensorial class
 
-The module `Physlib.Relativity.Tensors.Tensorial`, [Physlib/Relativity/Tensors/Tensorial.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean): 26 declarations (3 instances with no name), 6 with a docstring.
+The module `Physlib.Relativity.Tensors.Tensorial`, [Physlib/Relativity/Tensors/Tensorial.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean): 26 declarations (3 instances with no name), 6 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `Physlib.Relativity.Tensors.Tensorial`, [Physlib/Relativity/Tensors/T
 
 > We first define the `Tensorial` class.
 
-**`TensorSpecies.Tensorial`**, a class, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L77).
+**`TensorSpecies.Tensorial`**, a class, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L77).
 
 > The tensorial class is used to define a tensor structure on a type `M` through a
 > linear equivalence with a module `S.Tensor c` for `S` a tensor species.
@@ -60,14 +60,14 @@ class Tensorial {n : outParam ℕ}
 > The module of tensors of a tensor species carries a canonical tensorial instance,
 > through the equivalence.
 
-**`TensorSpecies.Tensorial.self`**, an instance, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L102).
+**`TensorSpecies.Tensorial.self`**, an instance, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L102).
 
 ```lean
 noncomputable instance self {n : ℕ} (S : TensorSpecies k C G V basisIdx rep b) (c : Fin n → C) :
     Tensorial S c (S.Tensor c)
 ```
 
-**`TensorSpecies.Tensorial.self_toTensor_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L107).
+**`TensorSpecies.Tensorial.self_toTensor_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L107).
 
 ```lean
 lemma self_toTensor_apply {n : ℕ} (S : TensorSpecies k C G V basisIdx rep b)
@@ -77,7 +77,7 @@ lemma self_toTensor_apply {n : ℕ} (S : TensorSpecies k C G V basisIdx rep b)
 
 ### A.2. The number of indices
 
-**`TensorSpecies.Tensorial.numIndices`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L120).
+**`TensorSpecies.Tensorial.numIndices`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L120).
 
 > The number of indices of a elements `t : M` where `M` carries a tensorial instance.
 
@@ -89,13 +89,13 @@ noncomputable def numIndices (t : M) [Tensorial S c M] : ℕ
 
 > We now define the action of the group `G` on a type `M` carrying a tensorial instance.
 
-**`TensorSpecies.Tensorial.smulAction`**, an instance, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L131).
+**`TensorSpecies.Tensorial.smulAction`**, an instance, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L131).
 
 ```lean
 noncomputable instance (priority := high) smulAction [Tensorial S c M] : SMul G M
 ```
 
-**`TensorSpecies.Tensorial.mulAction`**, an instance, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L134).
+**`TensorSpecies.Tensorial.mulAction`**, an instance, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L134).
 
 ```lean
 noncomputable instance mulAction [Tensorial S c M] : MulAction G M
@@ -103,21 +103,21 @@ noncomputable instance mulAction [Tensorial S c M] : MulAction G M
 
 ### B.1. Relation between the action and the equivalence to tensors
 
-**`TensorSpecies.Tensorial.smul_eq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L150).
+**`TensorSpecies.Tensorial.smul_eq`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L150).
 
 ```lean
 lemma smul_eq {g : G} {t : M} [Tensorial S c M] :
     g • t = toTensor.symm (g • toTensor t)
 ```
 
-**`TensorSpecies.Tensorial.toTensor_smul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L155).
+**`TensorSpecies.Tensorial.toTensor_smul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L155).
 
 ```lean
 lemma toTensor_smul {g : G} {t : M} [Tensorial S c M] :
     toTensor (g • t) = g • toTensor t
 ```
 
-**`TensorSpecies.Tensorial.smul_toTensor_symm`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L160).
+**`TensorSpecies.Tensorial.smul_toTensor_symm`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L160).
 
 ```lean
 lemma smul_toTensor_symm {g : G} {t : Tensor S c} [self : Tensorial S c M] :
@@ -126,7 +126,7 @@ lemma smul_toTensor_symm {g : G} {t : Tensor S c} [self : Tensorial S c M] :
 
 ### B.2. Linear properties of the action
 
-**`TensorSpecies.Tensorial.distribMulAction`**, an instance, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L171).
+**`TensorSpecies.Tensorial.distribMulAction`**, an instance, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L171).
 
 ```lean
 noncomputable instance (priority := high) distribMulAction [Tensorial S c M] :
@@ -135,7 +135,7 @@ noncomputable instance (priority := high) distribMulAction [Tensorial S c M] :
 
 ### B.3. The action as a linear map
 
-**`TensorSpecies.Tensorial.smulLinearMap`**, a def, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L187).
+**`TensorSpecies.Tensorial.smulLinearMap`**, a def, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L187).
 
 > The action of the group on a `Tensorial` instance as a linear map.
 
@@ -143,7 +143,7 @@ noncomputable instance (priority := high) distribMulAction [Tensorial S c M] :
 noncomputable def smulLinearMap (g : G) [Tensorial S c M] : M →ₗ[k] M
 ```
 
-**`TensorSpecies.Tensorial.smulLinearMap_apply`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L196).
+**`TensorSpecies.Tensorial.smulLinearMap_apply`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L196).
 
 ```lean
 lemma smulLinearMap_apply {g : G} [Tensorial S c M] (m : M) :
@@ -152,13 +152,13 @@ lemma smulLinearMap_apply {g : G} [Tensorial S c M] (m : M) :
 
 ### B.4. The SMulCommClass property
 
-**An instance with no name**, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L205).
+**An instance with no name**, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L205).
 
 ```lean
 instance [Tensorial S c M] : SMulCommClass k G M
 ```
 
-**An instance with no name**, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L210).
+**An instance with no name**, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L210).
 
 ```lean
 instance [Tensorial S c M] : SMulCommClass G k M
@@ -168,7 +168,7 @@ instance [Tensorial S c M] : SMulCommClass G k M
 
 > We now prove some properties of the basis induced on a `Tensorial` instance.
 
-**`TensorSpecies.Tensorial.basis_toTensor_apply`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L220).
+**`TensorSpecies.Tensorial.basis_toTensor_apply`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L220).
 
 ```lean
 lemma basis_toTensor_apply [Tensorial S c M] (m : M) :
@@ -177,7 +177,7 @@ lemma basis_toTensor_apply [Tensorial S c M] (m : M) :
 
 ## D. Products of tensorial instances
 
-**`TensorSpecies.Tensorial.prod`**, an instance, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L231).
+**`TensorSpecies.Tensorial.prod`**, an instance, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L231).
 
 ```lean
 noncomputable instance (priority := high) prod [Tensorial S c M] {n2 : ℕ} {c2 : Fin n2 → C}
@@ -187,7 +187,7 @@ noncomputable instance (priority := high) prod [Tensorial S c M] {n2 : ℕ} {c2 
 
 ### D.1. The equivalence to tensors on products
 
-**`TensorSpecies.Tensorial.toTensor_tprod`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L243).
+**`TensorSpecies.Tensorial.toTensor_tprod`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L243).
 
 ```lean
 lemma toTensor_tprod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
@@ -198,7 +198,7 @@ lemma toTensor_tprod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
 
 ### D.2. The group action on products
 
-**`TensorSpecies.Tensorial.smul_prod`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L254).
+**`TensorSpecies.Tensorial.smul_prod`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L254).
 
 ```lean
 lemma smul_prod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
@@ -209,7 +209,7 @@ lemma smul_prod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
 
 ### D.3. The basis on products
 
-**`TensorSpecies.Tensorial.basis_map_prod`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L270).
+**`TensorSpecies.Tensorial.basis_map_prod`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L270).
 
 ```lean
 lemma basis_map_prod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
@@ -222,7 +222,7 @@ lemma basis_map_prod {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
     (ComponentIdx.prod.symm)
 ```
 
-**`TensorSpecies.Tensorial.prod_basis_of_map_reindex`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L289).
+**`TensorSpecies.Tensorial.prod_basis_of_map_reindex`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L289).
 
 ```lean
 lemma prod_basis_of_map_reindex {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
@@ -236,7 +236,7 @@ lemma prod_basis_of_map_reindex {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
     (ComponentIdx.prod.trans (e.prodCongr e2))
 ```
 
-**`TensorSpecies.Tensorial.prod_tensor_basis_eq_map_reindex`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L303).
+**`TensorSpecies.Tensorial.prod_tensor_basis_eq_map_reindex`**, a lemma, [line 303](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L303).
 
 ```lean
 lemma prod_tensor_basis_eq_map_reindex {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Type}
@@ -250,7 +250,7 @@ lemma prod_tensor_basis_eq_map_reindex {n2 : ℕ} {c2 : Fin n2 → C} {M₂ : Ty
     (ComponentIdx.prod.trans (e.prodCongr e2)).symm
 ```
 
-**`TensorSpecies.Tensorial.prod_eq_sum_eval`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L326).
+**`TensorSpecies.Tensorial.prod_eq_sum_eval`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L326).
 
 > Double basis expansion of an element of a tensor product `M ⊗[k] M₂` of two `Tensorial`
 > one-index spaces. Given bases `b`, `b2` of `M`, `M₂` coming from the single-index tensor bases,
@@ -273,7 +273,7 @@ lemma prod_eq_sum_eval {c c2 : C} {M₂ : Type}
 
 ### E.1. Finite dimensionality
 
-**An instance with no name**, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L372).
+**An instance with no name**, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L372).
 
 ```lean
 instance [Tensorial S c M] : FiniteDimensional k M
@@ -281,7 +281,7 @@ instance [Tensorial S c M] : FiniteDimensional k M
 
 ### E.2. The map to tensors as a continuous linear equivalence
 
-**`TensorSpecies.Tensorial.toTensorCLM`**, a def, [line 383](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L383).
+**`TensorSpecies.Tensorial.toTensorCLM`**, a def, [line 383](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L383).
 
 > The map from a type carrying an Tensorial instance to tensors, as a
 > continuous linear map.
@@ -293,7 +293,7 @@ def toTensorCLM [IsTopologicalAddGroup M]
 
 ### E.3. The Lorentz action as a continuous linear equivalence
 
-**`TensorSpecies.Tensorial.actionCLM`**, a def, [line 404](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L404).
+**`TensorSpecies.Tensorial.actionCLM`**, a def, [line 404](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L404).
 
 > The Lorentz action on types carrying a tensorial instance as a continuous linear
 > map.
@@ -303,7 +303,7 @@ noncomputable def actionCLM (g : G) [IsTopologicalAddGroup M]
     [ContinuousSMul k M] [Tensorial S c M] [T2Space M] : M →L[k] M
 ```
 
-**`TensorSpecies.Tensorial.actionCLM_apply`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean#L408).
+**`TensorSpecies.Tensorial.actionCLM_apply`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean#L408).
 
 ```lean
 lemma actionCLM_apply {g : G} [IsTopologicalAddGroup M]
@@ -317,4 +317,4 @@ lemma actionCLM_apply {g : G} [IsTopologicalAddGroup M]
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Tensorial.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Tensorial.lean)
+- [Physlib/Relativity/Tensors/Tensorial.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Tensorial.lean)

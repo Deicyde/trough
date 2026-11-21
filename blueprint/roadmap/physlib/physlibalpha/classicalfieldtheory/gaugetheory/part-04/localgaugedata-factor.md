@@ -8,7 +8,7 @@ proof: formalized
 
 # The factors of a gauge group
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Factor`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Factor`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Factor`
 
 ## A. `U(1)` factors
 
-**`LocalGaugeData.U1Factor`**, a structure, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L78).
+**`LocalGaugeData.U1Factor`**, a structure, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L78).
 
 > **A `U(1)` factor** of the local gauge data: a unitary jet `u U` attached to each gauge
 > jet, with the corresponding components `φ c` of the gauge algebra and `φJ a` of its jets,
@@ -77,7 +77,7 @@ structure U1Factor (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) where
 
 ## B. `SU(n)` factors
 
-**`LocalGaugeData.SUFactor`**, a structure, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L105).
+**`LocalGaugeData.SUFactor`**, a structure, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L105).
 
 > **An `SU(n)` factor** of the local gauge data: a unitary matrix of jets `u U` attached
 > to each gauge jet, with the corresponding matrix components `φ c` of the gauge algebra
@@ -107,7 +107,7 @@ structure SUFactor (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) (n : Type) [Fintyp
 
 ## C. A gauge group as a list of factors
 
-**`LocalGaugeData.Factor`**, an inductive, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L132).
+**`LocalGaugeData.Factor`**, an inductive, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L132).
 
 > **A factor of the gauge group**, presented in the local gauge data: a `U(1)` factor or
 > an `SU(n)` factor.
@@ -120,7 +120,7 @@ inductive Factor (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J)
   | SU {n : ℕ} (F : SUFactor jets (Fin n))
 ```
 
-**`LocalGaugeData.Factors`**, an abbrev, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L139).
+**`LocalGaugeData.Factors`**, an abbrev, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L139).
 
 > **A gauge group presented by its factors.**
 
@@ -130,7 +130,7 @@ abbrev Factors (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Type
 
 ## D. Pulling factors back along a morphism
 
-**`LocalGaugeData.U1Factor.comap`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L153).
+**`LocalGaugeData.U1Factor.comap`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L153).
 
 > A `U(1)` factor pulled back along a morphism.
 
@@ -138,7 +138,7 @@ abbrev Factors (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Type
 noncomputable def U1Factor.comap (F : U1Factor jets') (h : Hom jets jets') : U1Factor jets
 ```
 
-**`LocalGaugeData.SUFactor.comap`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L166).
+**`LocalGaugeData.SUFactor.comap`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L166).
 
 > An `SU(n)` factor pulled back along a morphism.
 
@@ -147,7 +147,7 @@ noncomputable def SUFactor.comap {n : Type} [Fintype n] [DecidableEq n] (F : SUF
     (h : Hom jets jets') : SUFactor jets n
 ```
 
-**`LocalGaugeData.Factor.comap`**, an abbrev, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L182).
+**`LocalGaugeData.Factor.comap`**, an abbrev, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L182).
 
 > A factor pulled back along a morphism.
 
@@ -155,7 +155,7 @@ noncomputable def SUFactor.comap {n : Type} [Fintype n] [DecidableEq n] (F : SUF
 noncomputable abbrev Factor.comap (h : Hom jets jets') : Factor jets' → Factor jets
 ```
 
-**`LocalGaugeData.Factors.comap`**, an abbrev, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L189).
+**`LocalGaugeData.Factors.comap`**, an abbrev, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean#L189).
 
 > A list of factors pulled back along a morphism. Written by recursion rather than as
 > `List.map`, so that it unfolds at reducible transparency, as the charge tuples of a table
@@ -172,4 +172,4 @@ noncomputable abbrev Factors.comap (h : Hom jets jets') : Factors jets' → Fact
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean)

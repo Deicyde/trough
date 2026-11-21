@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.5 Stacks in groupoids
 
-Section 8.5 of the Stacks Project, [Tag 02ZH](https://stacks.math.columbia.edu/tag/02ZH). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.5 of the Stacks Project, [Tag 02ZH](https://stacks.math.columbia.edu/tag/02ZH). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02ZI, a definition
 
 [Tag 02ZI](https://stacks.math.columbia.edu/tag/02ZI) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStackInGroupoidsBySieves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean#L67).
+**`CategoryTheory.Functor.IsStackInGroupoidsBySieves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean#L67).
 
 > **Stacks 02ZI.** A category `p : 𝒮 ⥤ 𝒞` over the site `(𝒞, J)` is a *stack in groupoids* if
 > 1. `p` is fibred in groupoids over `𝒞`;
@@ -34,7 +34,7 @@ def IsStackInGroupoidsBySieves (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopology �
 
 [Tag 02ZJ](https://stacks.math.columbia.edu/tag/02ZJ) in the Stacks Project.
 
-**`CategoryTheory.Functor.stackInGroupoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTFAE.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTFAE.lean#L100).
+**`CategoryTheory.Functor.stackInGroupoids_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTFAE.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTFAE.lean#L100).
 
 > **Stacks 02ZJ.** Let `(𝒞, J)` be a site and let `p : 𝒮 ⥤ 𝒞` be a category over `𝒞`. The
 > following are equivalent:
@@ -59,7 +59,7 @@ public theorem stackInGroupoids_tfae (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopolo
 
 [Tag 03YI](https://stacks.math.columbia.edu/tag/03YI) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStack.isStackInGroupoids_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean#L438).
+**`CategoryTheory.Functor.IsStack.isStackInGroupoids_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean, line 438](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean#L438).
 
 > **The category fibred in groupoids associated to a stack is a stack in groupoids.** Let
 > `(𝒞, J)` be a site and let `p : 𝒮 ⥤ 𝒞` be a stack (Stacks 026F). Let `p' : 𝒮' ⥤ 𝒞` be the category
@@ -82,7 +82,7 @@ public theorem IsStack.isStackInGroupoids_stronglyCartesianOver
 
 [Tag 042X](https://stacks.math.columbia.edu/tag/042X) in the Stacks Project.
 
-**`CategoryTheory.BasedCategory.isFiberedInGroupoids_and_isStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTransport.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTransport.lean#L119).
+**`CategoryTheory.BasedCategory.isFiberedInGroupoids_and_isStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTransport.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidTransport.lean#L119).
 
 > **Stacks 042X**. Let `(𝒞, J)` be a site and let `𝒳`, `𝒴` be categories over `𝒞`. If `𝒳` and
 > `𝒴` are equivalent as categories over `𝒞`, then `𝒳` is a stack in groupoids over `𝒞` if and only
@@ -104,7 +104,7 @@ theorem BasedCategory.isFiberedInGroupoids_and_isStack_iff_of_equivalence
 
 [Tag 02ZK](https://stacks.math.columbia.edu/tag/02ZK) in the Stacks Project.
 
-**`CategoryTheory.StackInGroupoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L137). The attribute's comment: “(1)”.
+**`CategoryTheory.StackInGroupoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L137). The attribute's comment: “(1)”.
 
 > **Stacks 02ZK (1)**.
 > An object of the 2-category of stacks in groupoids over the site `(𝒞, J)`: a category over `𝒞`
@@ -114,7 +114,7 @@ theorem BasedCategory.isFiberedInGroupoids_and_isStack_iff_of_equivalence
 structure StackInGroupoids (𝒞 : Type u₁) [Category.{v₁} 𝒞] (J : GrothendieckTopology 𝒞)
 ```
 
-**`CategoryTheory.StackInGroupoids.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L153).
+**`CategoryTheory.StackInGroupoids.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L153).
 
 > **Stacks 02ZK**.
 > The 2-category of stacks in groupoids over the site `(𝒞, J)`: the sub-2-category of the
@@ -129,7 +129,7 @@ instance StackInGroupoids.bicategory :
     Bicategory (StackInGroupoids.{w, v₁, v₂, u₁, u₂} 𝒞 J)
 ```
 
-**`CategoryTheory.StackInGroupoids.homEquivBasedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L167). The attribute's comment: “(2)”.
+**`CategoryTheory.StackInGroupoids.homEquivBasedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L167). The attribute's comment: “(2)”.
 
 > **Stacks 02ZK (2)**.
 > The 1-morphisms of the 2-category of stacks in groupoids are the functors over `𝒞`: a
@@ -140,7 +140,7 @@ instance StackInGroupoids.bicategory :
 def homEquivBasedFunctor : (𝒳 ⟶ 𝒴) ≃ (𝒳.toBasedCategory ⥤ᵇ 𝒴.toBasedCategory)
 ```
 
-**`CategoryTheory.StackInGroupoids.twoHomEquivBasedNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L178). The attribute's comment: “(3)”.
+**`CategoryTheory.StackInGroupoids.twoHomEquivBasedNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Groupoid.lean#L178). The attribute's comment: “(3)”.
 
 > **Stacks 02ZK (3)**.
 > The 2-morphisms of the 2-category of stacks in groupoids are the morphisms of functors whose
@@ -156,7 +156,7 @@ def twoHomEquivBasedNatTrans {𝒳 𝒴 : StackInGroupoids.{w, v₁, v₂, u₁,
 
 [Tag 02ZL](https://stacks.math.columbia.edu/tag/02ZL) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isStack_isFiberedInGroupoids_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean#L126).
+**`CategoryTheory.TwoFibreProductOver.isStack_isFiberedInGroupoids_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean#L126).
 
 > **Stacks 02ZL.** The 2-fibre product of stacks in groupoids over a site `(𝒞, J)` is a stack in
 > groupoids: the construction of Stacks 0040 does not leave the 2-category of stacks in groupoids.
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.5, Tag 02ZH](https://stacks.math.columbia.edu/tag/02ZH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

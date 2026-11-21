@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.38 Completion along a closed subspace
 
-Section 87.38 of the Stacks Project, [Tag 0GXT](https://stacks.math.columbia.edu/tag/0GXT). 6 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.38 of the Stacks Project, [Tag 0GXT](https://stacks.math.columbia.edu/tag/0GXT). 6 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GXU, a definition
 
 [Tag 0GXU](https://stacks.math.columbia.edu/tag/0GXU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.completionSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L189). The attribute's comment: “the completion along a closed subspace”.
+**`AlgebraicGeometry.Space.completionSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L189). The attribute's comment: “the completion along a closed subspace”.
 
 > **Stacks 0GXU.** The completion `X^∧_Z` of an algebraic space `X` over `S` along a closed
 > subspace `Z`: the fppf sheafification of the union of the infinitesimal neighbourhoods of `Z`
@@ -26,7 +26,7 @@ def completionSubspace (X : AlgebraicSpaces B S hS) (Z : Subfunctor X.1) :
     Sheaf (BigFppfOver.topology B S hS) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.mem_nthOrderNeighbourhood_iff_isUniversalNthOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean#L138). The attribute's comment: “identification with colim Z\_n: the level n sections are those of Z\_n”.
+**`AlgebraicGeometry.Space.mem_nthOrderNeighbourhood_iff_isUniversalNthOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean#L138). The attribute's comment: “identification with colim Z\_n: the level n sections are those of Z\_n”.
 
 > **The level `n` condition of the completion subfunctor cuts out `Z_n`.** A section `g` of
 > `X` over an object `U` of the site has inverse image of `Z` a universal `n`th order thickening
@@ -41,7 +41,7 @@ theorem mem_nthOrderNeighbourhood_iff_isUniversalNthOrderThickening (n : ℕ)
         (Z.1.preimage (yonedaEquiv.symm g : yoneda.obj U ⟶ X.1))
 ```
 
-**`AlgebraicGeometry.Space.isColimitCompletionSubspaceCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean#L260). The attribute's comment: “identification with colim Z\_n in fppf sheaves”.
+**`AlgebraicGeometry.Space.isColimitCompletionSubspaceCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceNeighbourhoods.lean#L260). The attribute's comment: “identification with colim Z\_n in fppf sheaves”.
 
 > **Stacks 0GXU.** The completion `X^∧_Z = completionSubspace X Z` of an algebraic space `X`
 > along a closed subspace `Z` is the colimit `colim Z_n` in fppf sheaves of the `n`th order
@@ -57,7 +57,7 @@ def isColimitCompletionSubspaceCocone : IsColimit (completionSubspaceCocone B S 
 
 [Tag 0GXV](https://stacks.math.columbia.edu/tag/0GXV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_completionSubspaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L274). The attribute's comment: “the square is cartesian”.
+**`AlgebraicGeometry.Space.isPullback_completionSubspaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L274). The attribute's comment: “the square is cartesian”.
 
 > **Stacks 0GXV.** Completion along a closed subspace is compatible with base change: for a
 > morphism `f : X' ⟶ X` of algebraic spaces over `S` and a subfunctor `Z` of `X`, in the source a
@@ -75,7 +75,7 @@ theorem isPullback_completionSubspaceMap {X' X : AlgebraicSpaces B S hS} (f : X'
       (completionSubspaceToAmbient B S hS X Z)
 ```
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_completionSubspaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L288). The attribute's comment: “representable by algebraic spaces”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_completionSubspaceMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceBaseChange.lean#L288). The attribute's comment: “representable by algebraic spaces”.
 
 > **Stacks 0GXV.** For a morphism `f : X' ⟶ X` of algebraic spaces over `S` and a subfunctor
 > `Z` of `X`, in the source a closed subspace, the induced morphism of completions
@@ -92,7 +92,7 @@ theorem isRepresentableByAlgebraicSpacesULift_completionSubspaceMap
 
 [Tag 0GXW](https://stacks.math.columbia.edu/tag/0GXW) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isReduction_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubspaceReduction.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubspaceReduction.lean#L638). The attribute's comment: “the whole statement, under the additional hypothesis that the canonical morphism `Z ⟶ X^∧_Z` is a representable thickening; that is Tag 0AI9 for a colimit of algebraic spaces, which is available here only for a colimit of affine objects of the site”.
+**`AlgebraicGeometry.FormalSpace.isReduction_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubspaceReduction.lean, line 638](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubspaceReduction.lean#L638). The attribute's comment: “the whole statement, under the additional hypothesis that the canonical morphism `Z ⟶ X^∧_Z` is a representable thickening; that is Tag 0AI9 for a colimit of algebraic spaces, which is available here only for a colimit of affine objects of the site”.
 
 > **Stacks 0GXW.** Let `X` be an algebraic space over `S` and let `Z ⊆ X` be a closed
 > subspace. The reduction of the completion `X^∧_Z` of `X` along `Z` is `Z_red`: the composite
@@ -115,7 +115,7 @@ theorem isReduction_completionSubspace
         closedSubspaceToCompletionSubspace B S hS hX Z hZ)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isReduction_completionSubspace'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceThickening.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceThickening.lean#L240).
+**`AlgebraicGeometry.FormalSpace.isReduction_completionSubspace'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceThickening.lean, line 240](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceThickening.lean#L240).
 
 > **Stacks 0GXW.** Let `X` be an algebraic space over `S` and let `Z ⊆ X` be a closed
 > subspace. The reduction of the completion `X^∧_Z` of `X` along `Z` is `Z_red`: the composite
@@ -142,7 +142,7 @@ theorem isReduction_completionSubspace' :
 
 [Tag 0GXX](https://stacks.math.columbia.edu/tag/0GXX) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 849](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L849). The attribute's comment: “clause (1): weakly adic”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 849](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L849). The attribute's comment: “clause (1): weakly adic”.
 
 > **Stacks 0GXX (1).** For an affine scheme `X = Spec A` over `S` and the closed subscheme
 > `Z ⊆ X` of an ideal `I ⊆ A`, the completion `X^∧_Z` of `X` along `Z` is a weakly adic affine
@@ -156,7 +156,7 @@ public theorem isWeaklyAdic_completionAlongIdeal (B : BigFppfSite.{u}) (S : Sche
     IsWeaklyAdic B S hS (completionAlongIdeal B S hS f hA I)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdic_and_iso_formalSpectrum_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 930](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L930). The attribute's comment: “clause (2): formal spectrum of the adic completion”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
+**`AlgebraicGeometry.FormalSpace.isAdic_and_iso_formalSpectrum_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 930](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L930). The attribute's comment: “clause (2): formal spectrum of the adic completion”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
 
 > **Stacks 0GXX (2).** If `I` is finitely generated then the completion `X^∧_Z` of
 > `X = Spec A` along the closed subscheme `Z` of `I` is `Spf (A^∧)` for the `I`-adic completion
@@ -172,7 +172,7 @@ public theorem isAdic_and_iso_formalSpectrum_adicCompletion (B : BigFppfSite.{u}
         formalSpectrum (adicCompletionQuotientSystem B S hS f hA I))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 943](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L943). The attribute's comment: “clause (3): adic star”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 943](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L943). The attribute's comment: “clause (3): adic star”.
 
 > **Stacks 0GXX (3).** If `I` is finitely generated — equivalently, if the closed subscheme
 > `Z ⊆ X = Spec A` of `I` is of finite presentation over `X` — then the completion `X^∧_Z` is an
@@ -186,7 +186,7 @@ public theorem isAdicStar_completionAlongIdeal (B : BigFppfSite.{u}) (S : Scheme
     IsAdicStar B S hS (completionAlongIdeal B S hS f hA I)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L411). The attribute's comment: “clause (4): Noetherian”. References: EGA I (10.8.6), “special case”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 411](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L411). The attribute's comment: “clause (4): Noetherian”. References: EGA I (10.8.6), “special case”.
 
 > **Stacks 0GXX (4).** For an affine scheme `X = Spec A` over `S` with `A` Noetherian and the
 > closed subscheme `Z ⊆ X` of an ideal `J ⊆ A`, the completion `X^∧_Z` of `X` along `Z` is a
@@ -205,7 +205,7 @@ theorem isNoetherian_completionAlongIdeal {A : Type u} [CommRing A] [IsNoetheria
 
 [Tag 0GXY](https://stacks.math.columbia.edu/tag/0GXY) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isLocallyWeaklyAdic_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L424). The attribute's comment: “part (1): locally weakly adic”.
+**`AlgebraicGeometry.FormalSpace.isLocallyWeaklyAdic_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L424). The attribute's comment: “part (1): locally weakly adic”.
 
 > **Stacks 0GXY (1).** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z ⊆ X` be a closed subspace. The completion `X^∧_Z` of `X` along `Z` is *locally weakly
@@ -222,7 +222,7 @@ theorem isLocallyWeaklyAdic_completionSubspace_of_isClosedSubspace {X : Algebrai
     IsLocallyWeaklyAdic B S hS (Space.completionSubspace B S hS X Z)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyAdicStar_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L443). The attribute's comment: “part (2): locally adic star”.
+**`AlgebraicGeometry.FormalSpace.isLocallyAdicStar_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 443](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L443). The attribute's comment: “part (2): locally adic star”.
 
 > **Stacks 0GXY (2).** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z ⊆ X` be a closed subspace such that `Z ⟶ X` is of finite presentation. The completion
@@ -239,7 +239,7 @@ theorem isLocallyAdicStar_completionSubspace_of_isClosedSubspace {X : AlgebraicS
     IsLocallyAdicStar B S hS (Space.completionSubspace B S hS X Z)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyNoetherian_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L464). The attribute's comment: “part (3): locally Noetherian”.
+**`AlgebraicGeometry.FormalSpace.isLocallyNoetherian_completionSubspace_of_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceAtlas.lean#L464). The attribute's comment: “part (3): locally Noetherian”.
 
 > **Stacks 0GXY (3).** Let `S` be a scheme, let `X` be a locally Noetherian algebraic space
 > over `S` and let `Z ⊆ X` be a closed subspace. The completion `X^∧_Z` of `X` along `Z` is
@@ -258,7 +258,7 @@ theorem isLocallyNoetherian_completionSubspace_of_isClosedSubspace {X : Algebrai
     IsLocallyNoetherian B S hS (Space.completionSubspace B S hS X Z)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyWeaklyAdic_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L336). The attribute's comment: “part (1): locally weakly adic; charts and 0AIS condition assumed”.
+**`AlgebraicGeometry.FormalSpace.isLocallyWeaklyAdic_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L336). The attribute's comment: “part (1): locally weakly adic; charts and 0AIS condition assumed”.
 
 > **Stacks 0GXY (1).** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z ⊆ X` be a closed subspace. The completion `X^∧_Z` of `X` along `Z` is *locally weakly
@@ -291,7 +291,7 @@ theorem isLocallyWeaklyAdic_completionSubspace
     IsLocallyWeaklyAdic B S hS (Space.completionSubspace B S hS X Z)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyAdicStar_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L373). The attribute's comment: “part (2): locally adic star; charts and 0AIS condition assumed”.
+**`AlgebraicGeometry.FormalSpace.isLocallyAdicStar_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L373). The attribute's comment: “part (2): locally adic star; charts and 0AIS condition assumed”.
 
 > **Stacks 0GXY (2).** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `Z ⊆ X` be a closed subspace with `Z ⟶ X` of finite presentation. The completion `X^∧_Z` of
@@ -325,7 +325,7 @@ theorem isLocallyAdicStar_completionSubspace
     IsLocallyAdicStar B S hS (Space.completionSubspace B S hS X Z)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isLocallyNoetherian_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L436). The attribute's comment: “part (3): locally Noetherian; charts and 0AIS condition assumed”.
+**`AlgebraicGeometry.FormalSpace.isLocallyNoetherian_completionSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceLocalTypes.lean#L436). The attribute's comment: “part (3): locally Noetherian; charts and 0AIS condition assumed”.
 
 > **Stacks 0GXY (3).** Let `S` be a scheme, let `X` be a locally Noetherian algebraic space
 > over `S` and let `Z ⊆ X` be a closed subspace. The completion `X^∧_Z` of `X` along `Z` is
@@ -363,7 +363,7 @@ theorem isLocallyNoetherian_completionSubspace
 
 [Tag 0H8N](https://stacks.math.columbia.edu/tag/0H8N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_completionSubspaceComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceComparison.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceComparison.lean#L480). The attribute's comment: “the comparison is an isomorphism for a closed subspace of finite presentation”.
+**`AlgebraicGeometry.Space.isIso_completionSubspaceComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceComparison.lean, line 480](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceComparison.lean#L480). The attribute's comment: “the comparison is an isomorphism for a closed subspace of finite presentation”.
 
 > **Stacks 0H8N, the positive half.** Let `X` be an algebraic space over `S` and let `Z ⊆ X`
 > be a closed subspace with point set `T = |Z|`. If `Z ⟶ X` is of finite presentation, the
@@ -385,7 +385,7 @@ theorem isIso_completionSubspaceComparison (X : AlgebraicSpaces B S hS) (Z : Sub
     IsIso (completionSubspaceComparison B S hS X Z)
 ```
 
-**`AlgebraicGeometry.Space.not_isIso_completionSubspaceComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceCounterexample.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceCounterexample.lean#L514). The attribute's comment: “the comparison is not an isomorphism in general”.
+**`AlgebraicGeometry.Space.not_isIso_completionSubspaceComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceCounterexample.lean, line 514](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSubspaceCounterexample.lean#L514). The attribute's comment: “the comparison is not an isomorphism in general”.
 
 > **Stacks 0H8N, the negative half.** There are a scheme `S` in a big fppf site `B`, an
 > algebraic space `X` over `S` and a closed subspace `Z ⊆ X` for which the canonical morphism
@@ -414,4 +414,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.38, Tag 0GXT](https://stacks.math.columbia.edu/tag/0GXT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

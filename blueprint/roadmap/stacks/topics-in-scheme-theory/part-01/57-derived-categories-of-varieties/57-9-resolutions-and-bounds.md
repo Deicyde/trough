@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.9 Resolutions and bounds
 
-Section 57.9 of the Stacks Project, [Tag 0FYZ](https://stacks.math.columbia.edu/tag/0FYZ). 10 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.9 of the Stacks Project, [Tag 0FYZ](https://stacks.math.columbia.edu/tag/0FYZ). 10 tags here are carried by 28 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FZ0, a lemma
 
 [Tag 0FZ0](https://stacks.math.columbia.edu/tag/0FZ0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_externalTensorProduct_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorResolution.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorResolution.lean#L204).
+**`AlgebraicGeometry.exists_externalTensorProduct_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorResolution.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorResolution.lean#L204).
 
 > Let `R` be a Noetherian ring and let `X`, `Y` be schemes of finite type over `R` having the
 > resolution property. Every coherent `𝒪_{X ×_R Y}`-module is a quotient of `𝓔 ⊠ 𝓖` with `𝓔` a
@@ -36,7 +36,7 @@ theorem exists_externalTensorProduct_epi (R : Type u) [CommRing R] [IsNoetherian
 
 [Tag 0FZ1](https://stacks.math.columbia.edu/tag/0FZ1) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_externalTensorProduct_epi_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteType.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteType.lean#L75). The attribute's comment: “the case where the product is Noetherian and the two factors are locally Noetherian; the limit argument removing those hypotheses is not covered”.
+**`AlgebraicGeometry.exists_externalTensorProduct_epi_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteType.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteType.lean#L75). The attribute's comment: “the case where the product is Noetherian and the two factors are locally Noetherian; the limit argument removing those hypotheses is not covered”.
 
 > **[Stacks, Tag 0FZ1] when `X ×_R Y` is Noetherian.** Let `R` be a ring and let `X`, `Y` be
 > quasi-compact, quasi-separated, locally Noetherian `R`-schemes with the resolution property,
@@ -61,7 +61,7 @@ theorem exists_externalTensorProduct_epi_of_isFiniteType (R : Type u) [CommRing 
       (q : externalTensorProduct f g E G ⟶ F), Epi q
 ```
 
-**`AlgebraicGeometry.exists_externalTensorProduct_epi_of_isFiniteType_of_quasiSeparatedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteTypeQcqs.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteTypeQcqs.lean#L370).
+**`AlgebraicGeometry.exists_externalTensorProduct_epi_of_isFiniteType_of_quasiSeparatedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteTypeQcqs.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExternalTensorFiniteTypeQcqs.lean#L370).
 
 > Let `R` be a ring and let `X`, `Y` be quasi-compact and quasi-separated schemes over `R`
 > having the resolution property.  For every finite type quasi-coherent `𝒪_{X ×_R Y}`-module `F`
@@ -84,7 +84,7 @@ theorem exists_externalTensorProduct_epi_of_isFiniteType_of_quasiSeparatedSpace
 
 [Tag 0FZ2](https://stacks.math.columbia.edu/tag/0FZ2) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_diagonalResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalResolution.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalResolution.lean#L67).
+**`AlgebraicGeometry.exists_diagonalResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalResolution.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalResolution.lean#L67).
 
 > **Stacks Project, Tag 0FZ2.** Let `R` be a Noetherian ring and let `X` be a separated scheme
 > of finite type over `R` having the resolution property. The structure sheaf `𝒪_Δ = Δ_*𝒪_X` of the
@@ -109,7 +109,7 @@ theorem exists_diagonalResolution [IsSeparated f] :
 
 [Tag 0FZ3](https://stacks.math.columbia.edu/tag/0FZ3) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_zExt_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean#L223). The attribute's comment: “part (1): on a regular Noetherian scheme of dimension d, Ext^n(F, G) = 0 for n > d, F coherent (G arbitrary)”.
+**`AlgebraicGeometry.subsingleton_zExt_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean#L223). The attribute's comment: “part (1): on a regular Noetherian scheme of dimension d, Ext^n(F, G) = 0 for n > d, F coherent (G arbitrary)”.
 
 > **[Stacks, Tag 0FZ3] part (1).** Let `X` be a regular Noetherian scheme of dimension
 > `d < ∞`, let `F` be a coherent `𝒪_X`-module and `G` an arbitrary `𝒪_X`-module. Then
@@ -121,7 +121,7 @@ theorem subsingleton_zExt_of_isRegular (X : Scheme.{u}) [IsNoetherian X] (hX : I
     (hF : F.IsCoherent) (n : ℤ) (hn : (d : ℤ) < n) : Subsingleton (Abelian.zExt F G n)
 ```
 
-**`AlgebraicGeometry.subsingleton_hom_of_homology_separated_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean#L238). The attribute's comment: “part (2): on a regular Noetherian scheme of dimension d, Hom(K, L) = 0 for K, L in D^b\_Coh with H^i(K) = 0 for i < a + d and H^i(L) = 0 for i >= a”.
+**`AlgebraicGeometry.subsingleton_hom_of_homology_separated_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/ExtVanishingRegular.lean#L238). The attribute's comment: “part (2): on a regular Noetherian scheme of dimension d, Hom(K, L) = 0 for K, L in D^b\_Coh with H^i(K) = 0 for i < a + d and H^i(L) = 0 for i >= a”.
 
 > **[Stacks, Tag 0FZ3] part (2).** Let `X` be a regular Noetherian scheme of dimension
 > `d < ∞`. Let `K` and `L` be objects of `D^b_{Coh}(𝒪_X)` and let `a` be an integer. If
@@ -140,7 +140,7 @@ theorem subsingleton_hom_of_homology_separated_of_isRegular (X : Scheme.{u}) [Is
     Subsingleton (K ⟶ L)
 ```
 
-**`Stacks.RegularExtVanishing.subsingleton_zExt_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean#L320). The attribute's comment: “part (1)”.
+**`Stacks.RegularExtVanishing.subsingleton_zExt_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean#L320). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0FZ3, part (1).** Let `X` be a regular Noetherian scheme of dimension
 > `d < ∞`. For coherent `𝒪_X`-modules `F` and `G`, `Ext^n_X(F, G) = 0` for every `n > d`.
@@ -156,7 +156,7 @@ theorem subsingleton_zExt_of_isRegular [HasDerivedCategory.{u + 1} X.Modules]
     Subsingleton (Abelian.zExt F G n)
 ```
 
-**`Stacks.RegularExtVanishing.subsingleton_hom_of_homology_separated_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean#L340). The attribute's comment: “part (2)”.
+**`Stacks.RegularExtVanishing.subsingleton_hom_of_homology_separated_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/RegularExtVanishing/Basic.lean#L340). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0FZ3, part (2).** Let `X` be a regular Noetherian scheme of dimension
 > `d < ∞`, let `K` and `L` be objects of `D^b_{Coh}(𝒪_X)` and let `a` be an integer. If
@@ -184,7 +184,7 @@ theorem subsingleton_hom_of_homology_separated_of_isRegular
 
 [Tag 0FZ4](https://stacks.math.columbia.edu/tag/0FZ4) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iso_biprod_truncations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplitting.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplitting.lean#L213). The attribute's comment: “a bounded coherent complex splits across a cohomology gap of length the dimension”.
+**`AlgebraicGeometry.exists_iso_biprod_truncations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplitting.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplitting.lean#L213). The attribute's comment: “a bounded coherent complex splits across a cohomology gap of length the dimension”.
 
 > **[Stacks, Tag 0FZ4].** Let `X` be a regular Noetherian scheme of finite dimension `d`, with
 > `0 < d`. Let `K` be a bounded complex of `𝒪_X`-modules with coherent cohomology and let `a` be
@@ -210,7 +210,7 @@ public theorem exists_iso_biprod_truncations (X : Scheme.{u}) [IsNoetherian X]
       (DerivedCategory.TStructure.t.truncGE (a + (d : ℤ))).obj K)
 ```
 
-**`AlgebraicGeometry.exists_iso_biprod_truncations_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplittingRegular.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplittingRegular.lean#L185). The attribute's comment: “corrected statement, under exactly the source's hypotheses: the source's form `K = τ^{≤ a} K ⊕ τ^{≥ a + d} K` is false at `d = 0` (`not_forall_nonempty_iso_biprod_truncLE_truncGE_of_dim_zero`), so it is concluded for `0 < d`, together with the form `K = τ^{≤ a + d - 1} K ⊕ τ^{≥ a + d} K`, which holds for every `d` and agrees with the source's for `0 < d`”.
+**`AlgebraicGeometry.exists_iso_biprod_truncations_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplittingRegular.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/CohomologyGapSplittingRegular.lean#L185). The attribute's comment: “corrected statement, under exactly the source's hypotheses: the source's form `K = τ^{≤ a} K ⊕ τ^{≥ a + d} K` is false at `d = 0` (`not_forall_nonempty_iso_biprod_truncLE_truncGE_of_dim_zero`), so it is concluded for `0 < d`, together with the form `K = τ^{≤ a + d - 1} K ⊕ τ^{≥ a + d} K`, which holds for every `d` and agrees with the source's for `0 < d`”.
 
 > Let `X` be a regular Noetherian scheme of dimension `d < ∞`, let `K ∈ D^b_{Coh}(𝒪_X)` and
 > `a ∈ ℤ` with `H^i(K) = 0` for `a < i < a + d`. Then `K ≅ τ^{≤ a + d - 1} K ⊕ τ^{≥ a + d} K`, and
@@ -239,7 +239,7 @@ theorem exists_iso_biprod_truncations_of_isRegular (X : Scheme.{u}) [IsNoetheria
 
 [Tag 0FZ5](https://stacks.math.columbia.edu/tag/0FZ5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_externalTensor_triangEnvelope_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGenerator.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGenerator.lean#L183). The attribute's comment: “with Stacks 0FZ3(2), finite-dimensionality, brutal truncation and the box-sum retraction carried; see the module docstring”.
+**`AlgebraicGeometry.exists_externalTensor_triangEnvelope_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGenerator.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGenerator.lean#L183). The attribute's comment: “with Stacks 0FZ3(2), finite-dimensionality, brutal truncation and the box-sum retraction carried; see the module docstring”.
 
 > **[Stacks, Tag 0FZ5].** Let `k` be a field and let `X` be a quasi-compact separated smooth
 > scheme over `k`. There are finite locally free `𝒪_X`-modules `ℰ` and `𝒢` such that
@@ -266,7 +266,7 @@ public theorem exists_externalTensor_triangEnvelope_diagonal
             (SheafOfModules.unit X.ringCatSheaf)))
 ```
 
-**`AlgebraicGeometry.exists_finiteLocallyFree_triangEnvelope_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGeneratorUnconditional.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGeneratorUnconditional.lean#L268).
+**`AlgebraicGeometry.exists_finiteLocallyFree_triangEnvelope_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGeneratorUnconditional.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/DiagonalBoxGeneratorUnconditional.lean#L268).
 
 > **[Stacks, Tag 0FZ5].** Let `k` be a field and let `X` be a quasi-compact separated smooth
 > scheme over `k`. There are finite locally free `𝒪_X`-modules `ℰ` and `𝒢` such that
@@ -292,7 +292,7 @@ theorem exists_finiteLocallyFree_triangEnvelope_diagonal
 
 [Tag 0FZ6](https://stacks.math.columbia.edu/tag/0FZ6) in the Stacks Project.
 
-**`AlgebraicGeometry.isStrongTriangulatedGenerator_of_diagonalEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmooth.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmooth.lean#L234). The attribute's comment: “the source's proof with its two external inputs carried, and its uniformity argument proved. Carried: (1) `hdiag`, the conclusion of Stacks 0FZ5 — proved as `AlgebraicGeometry.exists_externalTensor_triangEnvelope_diagonal`, itself carrying six hypotheses — with `box` for `ℰ ⊠ 𝒢` and `diag` for `𝒪_Δ`; (2) `Φ`, `hdiagΦ`, `hboxΦ`: the Fourier–Mukai family `R pr_{2,*}(L pr_1^* K ⊗^𝐋 −)` with `Φ_K(𝒪_Δ) ≅ K` and `Φ_K(ℰ ⊠ 𝒢) ∈ ⟨𝒢⟩₀`, neither of which the library has — Stacks 0FYV as formalized (base-only) explicitly does NOT cover `Φ_{𝒪_Δ} = id`, which needs Stacks 0B55 for a projection, proved only for closed embeddings, and Stacks 08EU as formalized (StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaInvertibility.lean:249, base-only) covers only the base case `K = 𝒪_Y[0]`. Claimed: that `𝒢` is a STRONG generator, Stacks 09SJ(2), with the level uniform in `K` because it is read off the single object `𝒪_Δ`; and the functoriality of the stages `⟨−⟩ₙ` along an exact functor, the content of Stacks 0FX5, proved here as `Stacks.TriangulatedGenerators.triangEnvelopeIter_inverseImage_of_le`. Disclaimed: the construction of `ℰ`, `𝒢`, `Φ` and the two identities; accordingly this proof consumes neither properness nor smoothness directly — both enter only through the carried hypotheses”.
+**`AlgebraicGeometry.isStrongTriangulatedGenerator_of_diagonalEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmooth.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmooth.lean#L234). The attribute's comment: “the source's proof with its two external inputs carried, and its uniformity argument proved. Carried: (1) `hdiag`, the conclusion of Stacks 0FZ5 — proved as `AlgebraicGeometry.exists_externalTensor_triangEnvelope_diagonal`, itself carrying six hypotheses — with `box` for `ℰ ⊠ 𝒢` and `diag` for `𝒪_Δ`; (2) `Φ`, `hdiagΦ`, `hboxΦ`: the Fourier–Mukai family `R pr_{2,*}(L pr_1^* K ⊗^𝐋 −)` with `Φ_K(𝒪_Δ) ≅ K` and `Φ_K(ℰ ⊠ 𝒢) ∈ ⟨𝒢⟩₀`, neither of which the library has — Stacks 0FYV as formalized (base-only) explicitly does NOT cover `Φ_{𝒪_Δ} = id`, which needs Stacks 0B55 for a projection, proved only for closed embeddings, and Stacks 08EU as formalized (StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaInvertibility.lean:249, base-only) covers only the base case `K = 𝒪_Y[0]`. Claimed: that `𝒢` is a STRONG generator, Stacks 09SJ(2), with the level uniform in `K` because it is read off the single object `𝒪_Δ`; and the functoriality of the stages `⟨−⟩ₙ` along an exact functor, the content of Stacks 0FX5, proved here as `Stacks.TriangulatedGenerators.triangEnvelopeIter_inverseImage_of_le`. Disclaimed: the construction of `ℰ`, `𝒢`, `Φ` and the two identities; accordingly this proof consumes neither properness nor smoothness directly — both enter only through the carried hypotheses”.
 
 > **[Stacks, Tag 0FZ6].** Let `k` be a field and let `X` be a scheme proper and smooth over
 > `k`. Then `D_perf(𝒪_X)` has a strong generator.
@@ -321,7 +321,7 @@ theorem isStrongTriangulatedGenerator_of_diagonalEnvelope {k : Type u} [Field k]
     (ObjectProperty.singleton G).IsStrongTriangulatedGenerator
 ```
 
-**`AlgebraicGeometry.exists_isStrongTriangulatedGenerator_perfectDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmoothUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmoothUnconditional.lean#L131).
+**`AlgebraicGeometry.exists_isStrongTriangulatedGenerator_perfectDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmoothUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/PerfectProperSmoothUnconditional.lean#L131).
 
 > **[Stacks, Tag 0FZ6].** Let `k` be a field and let `X` be a scheme proper and smooth over
 > `k`. Then `D_perf(𝒪_X)` has a strong generator: there are an object `𝒢` and an integer `n` with
@@ -342,7 +342,7 @@ theorem exists_isStrongTriangulatedGenerator_perfectDerivedCategory {k : Type u}
 
 [Tag 0FZ7](https://stacks.math.columbia.edu/tag/0FZ7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_uniform_generator_isCoherent_of_diagonalEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGenerator.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGenerator.lean#L131). The attribute's comment: “the source's statement, read at the locally small derived-category model `AlgebraicGeometry.Scheme.Modules.hasDerivedCategory` and proved there by transporting `AlgebraicGeometry.exists_uniform_generator_isCoherent` — the same tag at the standard model, in StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean — along the exact equivalence `AlgebraicGeometry.Scheme.Modules.derivedModelEquiv`, with Stacks 0FX5 (`Stacks.TriangulatedGenerators.``retractClosure_extensionProductIter_biSup_shift_inverseImage_of_le`) moving the four closure operations with the window and the level fixed and `StacksDraft.Perfect.GeomReducedFibre.modelEquivSingleIso` identifying the two readings of a module in cohomological degree zero. The name records the route by which the statement was first proved here”.
+**`AlgebraicGeometry.exists_uniform_generator_isCoherent_of_diagonalEnvelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGenerator.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGenerator.lean#L131). The attribute's comment: “the source's statement, read at the locally small derived-category model `AlgebraicGeometry.Scheme.Modules.hasDerivedCategory` and proved there by transporting `AlgebraicGeometry.exists_uniform_generator_isCoherent` — the same tag at the standard model, in StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean — along the exact equivalence `AlgebraicGeometry.Scheme.Modules.derivedModelEquiv`, with Stacks 0FX5 (`Stacks.TriangulatedGenerators.``retractClosure_extensionProductIter_biSup_shift_inverseImage_of_le`) moving the four closure operations with the window and the level fixed and `StacksDraft.Perfect.GeomReducedFibre.modelEquivSingleIso` identifying the two readings of a module in cohomological degree zero. The name records the route by which the statement was first proved here”.
 
 > **[Stacks, Tag 0FZ7].** Let `k` be a field and let `X` be a scheme proper and smooth over
 > `k`. Then there are `m, n ≥ 1` and a finite locally free `𝒪_X`-module `𝒢` such that every
@@ -373,7 +373,7 @@ theorem exists_uniform_generator_isCoherent_of_diagonalEnvelope
             ((DerivedCategory.singleFunctor X.Modules 0).obj F)
 ```
 
-**`AlgebraicGeometry.exists_uniform_generator_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean#L60).
+**`AlgebraicGeometry.exists_uniform_generator_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentUniformGeneratorUnconditional.lean#L60).
 
 > **[Stacks, Tag 0FZ7].** Let `k` be a field and let `X` be a scheme proper and smooth over
 > `k`. There are integers `m, n ≥ 1` and a finite locally free `𝒪_X`-module `𝒢` such that every
@@ -397,7 +397,7 @@ theorem exists_uniform_generator_isCoherent {k : Type u} [Field k] {X : Scheme.{
 
 [Tag 0FZ8](https://stacks.math.columbia.edu/tag/0FZ8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean#L468). The attribute's comment: “the homological case, from Stacks 0FZ7 as it stands. The cohomological case of the final sentence is `AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological`”.
+**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isHomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean, line 468](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean#L468). The attribute's comment: “the homological case, from Stacks 0FZ7 as it stands. The cohomological case of the final sentence is `AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological`”.
 
 > **[Stacks, Tag 0FZ8], the homological case.** Let `k` be a field, let `X` be a scheme proper
 > and smooth over `k`, let `𝒜` be an abelian category and let `H : D_perf(𝒪_X) ⥤ 𝒜` be a
@@ -420,7 +420,7 @@ theorem exists_uniform_bound_isZero_of_isHomological {𝒜 : Type*} [Category �
       i ∉ Set.Icc (-(m : ℤ)) (m : ℤ) → IsZero (H.obj ((coherentPerfect f F)⟦i⟧))
 ```
 
-**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean#L500). The attribute's comment: “the cohomological case of the final sentence, with a cohomological functor read as a homological functor on the opposite category, and from Stacks 0FZ7 as it stands, as in the homological case”.
+**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean, line 500](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorBounds.lean#L500). The attribute's comment: “the cohomological case of the final sentence, with a cohomological functor read as a homological functor on the opposite category, and from Stacks 0FZ7 as it stands, as in the homological case”.
 
 > **[Stacks, Tag 0FZ8], the cohomological case.** Let `k` be a field, let `X` be a scheme
 > proper and smooth over `k`, let `𝒜` be an abelian category and let `H : D_perf(𝒪_X)ᵒᵖ ⥤ 𝒜` be a
@@ -444,7 +444,7 @@ theorem exists_uniform_bound_isZero_of_isCohomological {𝒜 : Type*} [Category 
       i ∉ Set.Icc (-(m : ℤ)) (m : ℤ) → IsZero (H.obj (op ((coherentPerfect f F)⟦i⟧)))
 ```
 
-**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isHomological_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean#L273). The attribute's comment: “the homological case; the cohomological case of the final sentence is `AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological_of_isProper`”.
+**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isHomological_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean#L273). The attribute's comment: “the homological case; the cohomological case of the final sentence is `AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological_of_isProper`”.
 
 > **Uniform bounds for a homological functor on the coherent modules.** Let `k` be a field, let
 > `X` be a scheme proper and smooth over `k`, let `𝒜` be an abelian category and let
@@ -463,7 +463,7 @@ theorem exists_uniform_bound_isZero_of_isHomological_of_isProper [IsProper f]
       i ∉ Set.Icc (-(m : ℤ)) (m : ℤ) → IsZero (H.obj ((coherentPerfect f F)⟦i⟧))
 ```
 
-**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean#L289). The attribute's comment: “the cohomological case of the final sentence, a cohomological functor being a homological functor on the opposite category”.
+**`AlgebraicGeometry.exists_uniform_bound_isZero_of_isCohomological_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/StrongGenerator/CoherentFunctorUniformBounds.lean#L289). The attribute's comment: “the cohomological case of the final sentence, a cohomological functor being a homological functor on the opposite category”.
 
 > **Uniform bounds for a cohomological functor on the coherent modules.** As
 > `AlgebraicGeometry.exists_uniform_bound_isZero_of_isHomological_of_isProper`, for a
@@ -484,7 +484,7 @@ theorem exists_uniform_bound_isZero_of_isCohomological_of_isProper [IsProper f]
 
 [Tag 0FZ9](https://stacks.math.columbia.edu/tag/0FZ9) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_homology_of_notInBands_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L80). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.isZero_homology_of_notInBands_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L80). The attribute's comment: “part (1)”.
 
 > Let `X` and `Y` be locally of finite type over a field `k` and let `K₀, K₁, …` be perfect
 > objects of `D(𝒪_{X ×_k Y})` with cohomology vanishing above `m`. If for every coherent
@@ -506,7 +506,7 @@ public theorem isZero_homology_of_notInBands_of_finiteTypeOverField
     IsZero ((DerivedCategory.homologyFunctor (Limits.pullback f g).Modules i).obj (K n))
 ```
 
-**`AlgebraicGeometry.isIso_homologyMap_of_fibreStable_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L102). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isIso_homologyMap_of_fibreStable_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L102). The attribute's comment: “part (2)”.
 
 > In the situation of `isZero_homology_of_notInBands_of_finiteTypeOverField`, if moreover
 > the transition maps `tₙ : Kₙ ⟶ Kₙ₊₁` are isomorphisms on the cohomology of the integral
@@ -534,7 +534,7 @@ public theorem isIso_homologyMap_of_fibreStable_of_finiteTypeOverField
     IsIso ((DerivedCategory.homologyFunctor (Limits.pullback f g).Modules i).map (t n))
 ```
 
-**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L194). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_finiteTypeOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandsOverField.lean#L194). The attribute's comment: “part (3)”.
 
 > Let `X` and `Y` be smooth and of finite type over a field `k`, and let `K₀ ⟶ K₁ ⟶ ⋯` be a
 > system of perfect objects of `D(𝒪_{X ×_k Y})` with cohomology vanishing above `m` such that, for
@@ -582,7 +582,7 @@ public theorem exists_stable_biprod_of_smooth_of_finiteTypeOverField
             t n ≫ (e (n + 1) (by omega)).hom = (e n hn).hom ≫ biprod.map a.hom c
 ```
 
-**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_fibreBands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandSplitting.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandSplitting.lean#L155). The attribute's comment: “part (3), on the source's hypotheses: parts (1) and (2), the derived-tensor comparisons, Stacks 0FZ3(2) and the non-emptiness of the product are all discharged”.
+**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_fibreBands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandSplitting.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreBandSplitting.lean#L155). The attribute's comment: “part (3), on the source's hypotheses: parts (1) and (2), the derived-tensor comparisons, Stacks 0FZ3(2) and the non-emptiness of the product are all discharged”.
 
 > **Stacks Project, Tag 0FZ9, part (3), on the source's hypotheses.** Let `X` and `Y` be
 > quasi-compact schemes, smooth and locally of finite type over a field `k`, and let
@@ -633,7 +633,7 @@ theorem exists_stable_biprod_of_smooth_of_fibreBands (k : Type u) [Field k]
             t n ≫ (e (n + 1) (by omega)).hom = (e n hn).hom ≫ biprod.map a.hom c
 ```
 
-**`AlgebraicGeometry.isIso_homologyMap_of_fibreStable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreStableTransitions.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreStableTransitions.lean#L204). The attribute's comment: “part (2), the transition map is invertible on the cohomology of the kernels in [-m, m] once n > 2m, with the general derived-tensor comparisons carried as FibreTensorComparisons”.
+**`AlgebraicGeometry.isIso_homologyMap_of_fibreStable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreStableTransitions.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/FibreStableTransitions.lean#L204). The attribute's comment: “part (2), the transition map is invertible on the cohomology of the kernels in [-m, m] once n > 2m, with the general derived-tensor comparisons carried as FibreTensorComparisons”.
 
 > Let `τ : K ⟶ K'` be a morphism of perfect objects of `D(𝒪_{X ×_S Y})` with cohomology
 > vanishing above `m`, let the cohomology of the integral transforms of the coherent modules with
@@ -665,7 +665,7 @@ public theorem isIso_homologyMap_of_fibreStable (cmp : FibreTensorComparisons f 
     IsIso ((DerivedCategory.homologyFunctor (Limits.pullback f g).Modules i).map τ)
 ```
 
-**`AlgebraicGeometry.isZero_homology_of_notInBands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/PerfectFibreBands.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/PerfectFibreBands.lean#L475). The attribute's comment: “part (1), the two bands for the kernels, with the general derived-tensor comparisons carried as FibreTensorComparisons”.
+**`AlgebraicGeometry.isZero_homology_of_notInBands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/PerfectFibreBands.lean, line 475](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/PerfectFibreBands.lean#L475). The attribute's comment: “part (1), the two bands for the kernels, with the general derived-tensor comparisons carried as FibreTensorComparisons”.
 
 > **Stacks Project, Tag 0FZ9, part (1).** Let `S` be affine and Jacobson, let `X` and `Y` be
 > locally of finite type over `S` with `X` and `X ×_S Y` locally Noetherian, and let `K` be a
@@ -687,7 +687,7 @@ public theorem isZero_homology_of_notInBands (cmp : FibreTensorComparisons f g)
     IsZero ((DerivedCategory.homologyFunctor (Limits.pullback f g).Modules i).obj K)
 ```
 
-**`AlgebraicGeometry.exists_stable_biprod_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplitting.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplitting.lean#L499). The attribute's comment: “part (3) in kernel-level form, taking parts (1) and (2) as hband/hstable; those ARE proved, in PerfectFibreBands and FibreStableTransitions, and are discharged in exists\_stable\_biprod\_of\_smooth\_of\_fibreTransforms. Carries 0FZ3(2) as hvan and non-emptiness of the product as hne, neither of which the source has”.
+**`AlgebraicGeometry.exists_stable_biprod_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplitting.lean, line 499](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplitting.lean#L499). The attribute's comment: “part (3) in kernel-level form, taking parts (1) and (2) as hband/hstable; those ARE proved, in PerfectFibreBands and FibreStableTransitions, and are discharged in exists\_stable\_biprod\_of\_smooth\_of\_fibreTransforms. Carries 0FZ3(2) as hvan and non-emptiness of the product as hne, neither of which the source has”.
 
 > **The splitting of a sequence of perfect complexes on a product of smooth schemes.** Let `X`
 > and `Y` be quasi-compact schemes, smooth and locally of finite type over a field `k`, with
@@ -735,7 +735,7 @@ public theorem exists_stable_biprod_of_smooth (k : Type u) [Field k] {X Y : Sche
             t n ≫ (e (n + 1) (by omega)).hom = (e n hn).hom ≫ biprod.map a.hom c
 ```
 
-**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_fibreTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplittingUnconditional.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplittingUnconditional.lean#L140). The attribute's comment: “part (3) with parts (1) and (2) DISCHARGED from the tag's fibrewise hypotheses, carrying only the general derived-tensor comparisons as FibreTensorComparisons together with the two hypotheses the source does not have, 0FZ3(2) as hvan (which the library's 0FZ4 itself carries) and non-emptiness of the product as hne”.
+**`AlgebraicGeometry.exists_stable_biprod_of_smooth_of_fibreTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplittingUnconditional.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/SmoothBandSplittingUnconditional.lean#L140). The attribute's comment: “part (3) with parts (1) and (2) DISCHARGED from the tag's fibrewise hypotheses, carrying only the general derived-tensor comparisons as FibreTensorComparisons together with the two hypotheses the source does not have, 0FZ3(2) as hvan (which the library's 0FZ4 itself carries) and non-emptiness of the product as hne”.
 
 > Let `X` and `Y` be quasi-compact schemes, smooth and locally of finite type over a field `k`,
 > with `X ×_k Y` nonempty, and let `K₀ ⟶ K₁ ⟶ ⋯` be a system of perfect objects of
@@ -790,4 +790,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.9, Tag 0FYZ](https://stacks.math.columbia.edu/tag/0FYZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

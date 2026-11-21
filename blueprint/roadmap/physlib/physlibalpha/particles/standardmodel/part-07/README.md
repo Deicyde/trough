@@ -7,7 +7,7 @@ navigation: transparent
 - [Products of two field strengths as bi-adjoint gauge tensors](isgaugesector-massweight-massdimeight.md)
 - [The invariants below mass weight eight (IsGaugeSector/MassWeight/MassDimLTEight)](isgaugesector-massweight-massdimlteight.md)
 
-Modules in [JetAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra):
+Modules in [JetAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra):
 
 - [The jet algebra of the Standard Model](jetalgebra-basic.md)
 - [The jet algebra of the Standard Model is a Standard Model (AlgebraRealization)](jetalgebra-algebrarealization.md)

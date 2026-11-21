@@ -8,7 +8,7 @@ proof: formalized
 
 # 111.30 Filtered derived category
 
-Section 111.30 of the Stacks Project, [Tag 0287](https://stacks.math.columbia.edu/tag/0287). 4 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 111.30 of the Stacks Project, [Tag 0287](https://stacks.math.columbia.edu/tag/0287). 4 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 028A, a definition
 
@@ -16,7 +16,7 @@ Section 111.30 of the Stacks Project, [Tag 0287](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.FilteredObject.IsFilteredInjective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L244), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FilteredObject.lean#L47) (StacksFrontier).
+- [`CategoryTheory.FilteredObject.IsFilteredInjective`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L244), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 47](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FilteredObject.lean#L47) (StacksFrontier).
 
 ## Tag 028B, a definition
 
@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.FiniteFilteredObject`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L237), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FilteredObject.lean#L48) (StacksFrontier).
+- [`CategoryTheory.FiniteFilteredObject`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L237), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FilteredObject.lean#L48) (StacksFrontier).
 
 ## Tag 028D, a definition
 
@@ -32,13 +32,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CochainComplex.filteredQuasiIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L331), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FilteredObject.lean#L49) (StacksFrontier).
+- [`CochainComplex.filteredQuasiIso`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L331), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/FilteredObject.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FilteredObject.lean#L49) (StacksFrontier).
 
 ## Tag 028E, a definition
 
 [Tag 028E](https://stacks.math.columbia.edu/tag/028E) in the Stacks Project.
 
-**`CategoryTheory.FiniteFilteredObject.filteredAcyclic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/FilteredObject.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Exercises/FilteredObject.lean#L58).
+**`CategoryTheory.FiniteFilteredObject.filteredAcyclic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Exercises/FilteredObject.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Exercises/FilteredObject.lean#L58).
 
 > A complex of finite filtered objects is filtered acyclic when every graded-piece complex
 > is acyclic.
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 111.30, Tag 0287](https://stacks.math.columbia.edu/tag/0287)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

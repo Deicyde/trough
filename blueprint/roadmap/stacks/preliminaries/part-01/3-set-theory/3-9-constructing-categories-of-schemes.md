@@ -8,13 +8,13 @@ proof: formalized
 
 # 3.9 Constructing categories of schemes
 
-Section 3.9 of the Stacks Project, [Tag 000H](https://stacks.math.columbia.edu/tag/000H). 11 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 3.9 of the Stacks Project, [Tag 000H](https://stacks.math.columbia.edu/tag/000H). 11 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 000I, a lemma
 
 [Tag 000I](https://stacks.math.columbia.edu/tag/000I) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_family_iso_of_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/EssentiallySmall.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/EssentiallySmall.lean#L114). The attribute's comment: “The set `A` of schemes is a family indexed by a type in the universe of the schemes, and `X ≅ S` is an isomorphism of schemes.”.
+**`AlgebraicGeometry.exists_family_iso_of_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/EssentiallySmall.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/EssentiallySmall.lean#L114). The attribute's comment: “The set `A` of schemes is a family indexed by a type in the universe of the schemes, and `X ≅ S` is an isomorphism of schemes.”.
 
 > **Stacks 000I** (Lemma 3.9.1). For every cardinal `κ` there is a set of schemes such that
 > every scheme `S` with `size S ≤ κ` is isomorphic to a member of it: here the set is a family
@@ -33,7 +33,7 @@ theorem exists_family_iso_of_size_le (κ : Cardinal.{u}) :
 
 [Tag 046U](https://stacks.math.columbia.edu/tag/046U) in the Stacks Project.
 
-**`Cardinal.stacksBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/SizeBound.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/SetTheory/Cardinal/SizeBound.lean#L42).
+**`Cardinal.stacksBound`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/SizeBound.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/SetTheory/Cardinal/SizeBound.lean#L42).
 
 > **Stacks 046U.** The bound function `Bound(κ) = max {κ ^ ℵ₀, κ⁺}` on cardinals.
 > Here `Order.succ κ` is the cardinal successor `κ⁺`.
@@ -46,7 +46,7 @@ noncomputable def Cardinal.stacksBound (κ : Cardinal) : Cardinal
 
 [Tag 000J](https://stacks.math.columbia.edu/tag/000J) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_size_cutoff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L88). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.exists_size_cutoff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L89). The attribute's comment: “(1)”.
 
 > For every set `S₀` of schemes there is an uncountable strong limit cardinal `κ` of uncountable
 > cofinality such that every member of `S₀` has size below `κ`, that is, the collection
@@ -60,7 +60,7 @@ theorem exists_size_cutoff (S₀ : Set Scheme.{u}) [Small.{u} S₀] :
       ∀ S ∈ S₀, S.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_le_stacksBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L101). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_le_stacksBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L102). The attribute's comment: “(2)”.
 
 > If `S` is an object of `Sch_κ` and `T` is a scheme of size at most `Bound(size S)`, then `T` is
 > an object of `Sch_κ`.
@@ -71,7 +71,7 @@ theorem Scheme.size_lt_of_le_stacksBound {κ : Cardinal.{u}} (hκ : ℵ₀ < κ)
     (hT : T.size ≤ Cardinal.stacksBound S.size) : T.size < κ
 ```
 
-**`AlgebraicGeometry.exists_schemeBelow_countable_limits_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffLimits.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/CutoffLimits.lean#L59).
+**`AlgebraicGeometry.exists_schemeBelow_countable_limits_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffLimits.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/CutoffLimits.lean#L59).
 
 > **Stacks 000J.** Let `S₀` be a set of schemes. There is an uncountable strong limit cardinal
 > `κ` of uncountable cofinality such that the full subcategory `Sch_κ = SchemeBelow κ` of schemes of
@@ -104,7 +104,7 @@ theorem exists_schemeBelow_countable_limits_colimits (S₀ : Set Scheme.{u}) [Sm
 
 [Tag 000P](https://stacks.math.columbia.edu/tag/000P) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Affine.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Affine.lean#L164).
+**`AlgebraicGeometry.Scheme.size_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Affine.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Affine.lean#L164).
 
 > **Stacks 000P.** Let `S` be an affine scheme and `R = Γ(S, 𝒪_S)`. Then
 > `size S = max ℵ₀ #R`.
@@ -118,7 +118,7 @@ theorem Scheme.size_of_isAffine (S : Scheme.{u}) [IsAffine S] :
 
 [Tag 000Q](https://stacks.math.columbia.edu/tag/000Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_le_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/OpenCover.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/OpenCover.lean#L250).
+**`AlgebraicGeometry.Scheme.size_le_of_iSup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/OpenCover.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/OpenCover.lean#L250).
 
 > If `S : I → X.Opens` is an open cover of `X` indexed by a nonempty type `I`, then
 > `size X ≤ max #I (⨆ i, size (S i))`.
@@ -133,7 +133,7 @@ theorem Scheme.size_le_of_iSup_eq_top {X : Scheme.{u}} {I : Type u} [Nonempty I]
 
 [Tag 04T6](https://stacks.math.columbia.edu/tag/04T6) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Pullback.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Pullback.lean#L364).
+**`AlgebraicGeometry.Scheme.size_pullback_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Pullback.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Pullback.lean#L365).
 
 > **Stacks 04T6.** The size of a fibre product of schemes is bounded by the maximum of the
 > sizes of the two factors.
@@ -147,7 +147,7 @@ theorem Scheme.size_pullback_le {X Y S : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S)
 
 [Tag 04T7](https://stacks.math.columbia.edu/tag/04T7) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_le_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/FiniteType.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/FiniteType.lean#L238).
+**`AlgebraicGeometry.Scheme.size_le_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/FiniteType.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/FiniteType.lean#L238).
 
 > If `f : X ⟶ S` is locally of finite type and `X` is quasi-compact, then
 > `Scheme.size X ≤ Scheme.size S`.
@@ -162,7 +162,7 @@ theorem Scheme.size_le_of_locallyOfFiniteType {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 04VA](https://stacks.math.columbia.edu/tag/04VA) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_le_of_mono_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean#L345). The attribute's comment: “(1): f quasi-compact”.
+**`AlgebraicGeometry.Scheme.size_le_of_mono_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean, line 345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean#L345). The attribute's comment: “(1): f quasi-compact”.
 
 > If `f : X ⟶ Y` is a quasi-compact monomorphism of schemes, then `size X ≤ size Y`.
 
@@ -172,7 +172,7 @@ theorem Scheme.size_le_of_mono_quasiCompact
     X.size ≤ Y.size
 ```
 
-**`AlgebraicGeometry.Scheme.size_le_of_mono_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean#L356). The attribute's comment: “(2): f locally of finite presentation”.
+**`AlgebraicGeometry.Scheme.size_le_of_mono_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean, line 356](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Monomorphism.lean#L356). The attribute's comment: “(2): f locally of finite presentation”.
 
 > If `f : X ⟶ Y` is a monomorphism of schemes which is locally of finite presentation, then
 > `size X ≤ size Y`.
@@ -183,7 +183,7 @@ theorem Scheme.size_le_of_mono_locallyOfFinitePresentation
     X.size ≤ Y.size
 ```
 
-**`AlgebraicGeometry.Scheme.exists_mono_locallyOfFiniteType_not_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/MonomorphismLocallyOfFiniteType.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/MonomorphismLocallyOfFiniteType.lean#L134). The attribute's comment: “final statement: the bound fails for monomorphisms locally of finite type”.
+**`AlgebraicGeometry.Scheme.exists_mono_locallyOfFiniteType_not_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/MonomorphismLocallyOfFiniteType.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/MonomorphismLocallyOfFiniteType.lean#L134). The attribute's comment: “final statement: the bound fails for monomorphisms locally of finite type”.
 
 > **Stacks 04VA, the final statement.** The bound `size X ≤ size Y` does not hold for
 > monomorphisms locally of finite type: there is a monomorphism `f : X ⟶ Y` locally of finite type
@@ -206,7 +206,7 @@ theorem Scheme.exists_mono_locallyOfFiniteType_not_size_le :
 
 [Tag 000R](https://stacks.math.columbia.edu/tag/000R) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_pullback_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L131). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Scheme.size_pullback_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L132). The attribute's comment: “(1)”.
 
 > The fibre product of two objects of `Sch_κ` over any base, which need not lie in `Sch_κ`, is
 > again an object of `Sch_κ`.
@@ -216,7 +216,7 @@ theorem Scheme.size_pullback_lt {X Y S : Scheme.{u}} (f : X ⟶ S) (g : Y ⟶ S)
     (hX : X.size < κ) (hY : Y.size < κ) : (pullback f g).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_sigmaObj_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L140). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Scheme.size_sigmaObj_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L141). The attribute's comment: “(2)”.
 
 > If `κ` is uncountable of uncountable cofinality, the coproduct of an at most countable family
 > of objects of `Sch_κ` is again an object of `Sch_κ`.
@@ -226,7 +226,7 @@ theorem Scheme.size_sigmaObj_lt (hκ : ℵ₀ < κ) (hcof : ℵ₀ < κ.ord.cof)
     (hι : #ι ≤ ℵ₀) (Y : ι → Scheme.{u}) (hY : ∀ i, (Y i).size < κ) : (∐ Y).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_mono_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L158). The attribute's comment: “(8)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_mono_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L159). The attribute's comment: “(8)”.
 
 > The source of a quasi-compact monomorphism into an object of `Sch_κ` is an object of
 > `Sch_κ`.
@@ -236,7 +236,7 @@ theorem Scheme.size_lt_of_mono_quasiCompact {X Y : Scheme.{u}} (f : X ⟶ Y) [Mo
     [QuasiCompact f] (hY : Y.size < κ) : X.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_mono_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L165). The attribute's comment: “(8)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_mono_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L166). The attribute's comment: “(8)”.
 
 > The source of a monomorphism locally of finite presentation into an object of `Sch_κ` is an
 > object of `Sch_κ`.
@@ -246,7 +246,7 @@ theorem Scheme.size_lt_of_mono_locallyOfFinitePresentation {X Y : Scheme.{u}} (f
     [Mono f] [LocallyOfFinitePresentation f] (hY : Y.size < κ) : X.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L171). The attribute's comment: “(3)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L172). The attribute's comment: “(3)”.
 
 > The source of an open immersion into an object of `Sch_κ` is an object of `Sch_κ`.
 
@@ -255,7 +255,7 @@ theorem Scheme.size_lt_of_isOpenImmersion {U S : Scheme.{u}} (f : U ⟶ S)
     [IsOpenImmersion f] (hS : S.size < κ) : U.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L177). The attribute's comment: “(4)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L178). The attribute's comment: “(4)”.
 
 > The source of a closed immersion into an object of `Sch_κ` is an object of `Sch_κ`.
 
@@ -264,7 +264,7 @@ theorem Scheme.size_lt_of_isClosedImmersion {T S : Scheme.{u}} (f : T ⟶ S)
     [IsClosedImmersion f] (hS : S.size < κ) : T.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L187). The attribute's comment: “(6)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L188). The attribute's comment: “(6)”.
 
 > Let `S` be a scheme with an open covering `S = ⋃ i, U i` and let `T` be an object of `Sch_κ`
 > such that the index type and every member of the covering are bounded by `size(T) ^ ℵ₀`. Then `S`
@@ -277,7 +277,7 @@ theorem Scheme.size_lt_of_openCover (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStrong
     (hU : ∀ i, (↑(U i) : Scheme.{u}).size ≤ T.size ^ ℵ₀) : S.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L212). The attribute's comment: “(5)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L213). The attribute's comment: “(5)”.
 
 > The source of a finite type morphism (locally of finite type and quasi-compact) into an object
 > of `Sch_κ` is an object of `Sch_κ`.
@@ -287,7 +287,7 @@ theorem Scheme.size_lt_of_locallyOfFiniteType_of_quasiCompact {T S : Scheme.{u}}
     [LocallyOfFiniteType f] [QuasiCompact f] (hS : S.size < κ) : T.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L222). The attribute's comment: “(7)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_locallyOfFiniteType_of_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L223). The attribute's comment: “(7)”.
 
 > Let `f : T ⟶ S` be locally of finite type with `S` an object of `Sch_κ`, and suppose `T` has an
 > affine open covering indexed by a type of cardinality at most `size(S) ^ ℵ₀`. Then `T` is an object
@@ -300,7 +300,7 @@ theorem Scheme.size_lt_of_locallyOfFiniteType_of_affineCover (hκ : ℵ₀ < κ)
     (hcov : ⨆ i, (V i).1 = ⊤) (hI : #I ≤ S.size ^ ℵ₀) (hS : S.size < κ) : T.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_isAffine_of_mk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L236). The attribute's comment: “(9)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_isAffine_of_mk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L237). The attribute's comment: “(9)”.
 
 > An affine scheme `S` whose ring of global sections has cardinality at most
 > `Bound(size T) = size(T) ^ ℵ₀` for some object `T` of `Sch_κ` is itself an object of `Sch_κ`.
@@ -311,7 +311,7 @@ theorem Scheme.size_lt_of_isAffine_of_mk_le (hκ : ℵ₀ < κ)
     (h : Cardinal.mk Γ(S, ⊤) ≤ T.size ^ ℵ₀) : S.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_Spec_lt_of_mk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L249). The attribute's comment: “(9)”.
+**`AlgebraicGeometry.Scheme.size_Spec_lt_of_mk_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L250). The attribute's comment: “(9)”.
 
 > If `#R ≤ Bound(size T) = size(T) ^ ℵ₀` for some object `T` of `Sch_κ`, then `Spec R` is an
 > object of `Sch_κ`.
@@ -322,7 +322,7 @@ theorem Scheme.size_Spec_lt_of_mk_le (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStron
     (h : Cardinal.mk R ≤ T.size ^ ℵ₀) : (Spec R).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_Spec_lt_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L272). The attribute's comment: “(9)(b)”.
+**`AlgebraicGeometry.Scheme.size_Spec_lt_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L273). The attribute's comment: “(9)(b)”.
 
 > For an object `Spec R` of `Sch_κ` and a finite type `R`-algebra `A`, the scheme `Spec A` is an
 > object of `Sch_κ`.
@@ -334,7 +334,7 @@ theorem Scheme.size_Spec_lt_of_finiteType (hκ : ℵ₀ < κ)
     (Spec (CommRingCat.of A)).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_Spec_lt_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L281). The attribute's comment: “(9)(c)”.
+**`AlgebraicGeometry.Scheme.size_Spec_lt_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L282). The attribute's comment: “(9)(c)”.
 
 > For an object `Spec R` of `Sch_κ` and a localization `A` of `R` at a submonoid, the scheme
 > `Spec A` is an object of `Sch_κ`.
@@ -346,7 +346,7 @@ theorem Scheme.size_Spec_lt_of_isLocalization (hκ : ℵ₀ < κ)
     (hR : (Spec (CommRingCat.of R)).size < κ) : (Spec (CommRingCat.of A)).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_Spec_lt_of_subring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L290). The attribute's comment: “(9)(e)”.
+**`AlgebraicGeometry.Scheme.size_Spec_lt_of_subring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Cutoff.lean#L291). The attribute's comment: “(9)(e)”.
 
 > For an object `Spec R` of `Sch_κ` and a subring `R' ⊆ R`, the scheme `Spec R'` is an object of
 > `Sch_κ`.
@@ -357,7 +357,7 @@ theorem Scheme.size_Spec_lt_of_subring (hκ : ℵ₀ < κ) (hsl : Cardinal.IsStr
     (hR : (Spec (CommRingCat.of R)).size < κ) : (Spec (CommRingCat.of R')).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_Spec_adicCompletion_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean#L41). The attribute's comment: “(9)(a)”.
+**`AlgebraicGeometry.Scheme.size_Spec_adicCompletion_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean#L41). The attribute's comment: “(9)(a)”.
 
 > For an object `Spec R` of `Sch_κ` and an ideal `I ⊆ R`, the spectrum of the completion
 > `R^* = lim_n R/I^n` is an object of `Sch_κ`. As a set `R^*` is the image of a map from a subset of
@@ -369,7 +369,7 @@ theorem Scheme.size_Spec_adicCompletion_lt (hκ : ℵ₀ < κ) (hsl : Cardinal.I
     (Spec (CommRingCat.of (AdicCompletion I R))).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_lt_of_finiteType_of_mk_le_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean#L57). The attribute's comment: “(9)(f)”.
+**`AlgebraicGeometry.Scheme.size_lt_of_finiteType_of_mk_le_power`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/CutoffMore.lean#L57). The attribute's comment: “(9)(f)”.
 
 > For an object `Spec R` of `Sch_κ`, any scheme `X` of finite type over a ring `A` with
 > `#A ≤ #R ^ ℵ₀` is an object of `Sch_κ`: `Spec A` lies in `Sch_κ` by (9), and then so does `X`
@@ -383,7 +383,7 @@ theorem Scheme.size_lt_of_finiteType_of_mk_le_power (hκ : ℵ₀ < κ)
     [QuasiCompact f] : X.size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_sigmaObj_lt_of_lt_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean#L65). The attribute's comment: “(2), index type below the cofinality”.
+**`AlgebraicGeometry.Scheme.size_sigmaObj_lt_of_lt_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean#L65). The attribute's comment: “(2), index type below the cofinality”.
 
 > **Stacks 000R (2)** at an arbitrary index type. The coproduct of a family of objects of
 > `Sch_κ` indexed by a type smaller than the cofinality of `κ` is again an object of `Sch_κ`.
@@ -396,7 +396,7 @@ theorem Scheme.size_sigmaObj_lt_of_lt_cof (hκ : ℵ₀ < κ) {ι : Type u} (hι
     (Y : ι → Scheme.{u}) (hY : ∀ i, (Y i).size < κ) : (∐ Y).size < κ
 ```
 
-**`AlgebraicGeometry.Scheme.size_sigmaObj_lt_of_forall_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean#L81). The attribute's comment: “(2), uniformly bounded family at an index type below the cutoff”.
+**`AlgebraicGeometry.Scheme.size_sigmaObj_lt_of_forall_size_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CoproductCutoff.lean#L81). The attribute's comment: “(2), uniformly bounded family at an index type below the cutoff”.
 
 > **Stacks 000R (2) for a family of uniformly bounded size.** The coproduct of a family of
 > objects of `Sch_κ` indexed by a type of cardinality below `κ` is again an object of `Sch_κ` as
@@ -414,7 +414,7 @@ theorem Scheme.size_sigmaObj_lt_of_forall_size_le (hκ : ℵ₀ < κ) {ι : Type
     (∐ Y).size < κ
 ```
 
-**`AlgebraicGeometry.BigFppfSite.contains_spec_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L59). The attribute's comment: “(9), for a tensor product”.
+**`AlgebraicGeometry.BigFppfSite.contains_spec_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L59). The attribute's comment: “(9), for a tensor product”.
 
 > The spectrum of a tensor product of two contained spectra is contained.
 
@@ -425,7 +425,7 @@ theorem contains_spec_tensorProduct (B : BigFppfSite.{u}) {R A C : Type u}
     B.Contains (Spec (.of (A ⊗[R] C)))
 ```
 
-**`AlgebraicGeometry.BigFppfSite.contains_spec_algebraicClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L69). The attribute's comment: “(9), for an algebraic closure”.
+**`AlgebraicGeometry.BigFppfSite.contains_spec_algebraicClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L69). The attribute's comment: “(9), for an algebraic closure”.
 
 > The spectrum of an algebraic closure of a contained field is contained.
 
@@ -435,7 +435,7 @@ theorem contains_spec_algebraicClosure (B : BigFppfSite.{u}) {K : Type u} [Field
     B.Contains (Spec (.of (AlgebraicClosure K)))
 ```
 
-**`AlgebraicGeometry.BigFppfSite.contains_spec_residueField_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L78). The attribute's comment: “(9), for the residue field of a prime”.
+**`AlgebraicGeometry.BigFppfSite.contains_spec_residueField_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L78). The attribute's comment: “(9), for the residue field of a prime”.
 
 > The spectrum of the residue field of a prime of a contained spectrum is contained.
 
@@ -445,7 +445,7 @@ theorem contains_spec_residueField_atPrime (B : BigFppfSite.{u}) {A : Type u} [C
     B.Contains (Spec (.of (IsLocalRing.ResidueField (Localization.AtPrime p))))
 ```
 
-**`AlgebraicGeometry.BigFppfSite.contains_spec_algebraicClosure_residueField_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L93). The attribute's comment: “(9), for the algebraic closure of the residue field of a prime of a tensor product”.
+**`AlgebraicGeometry.BigFppfSite.contains_spec_algebraicClosure_residueField_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/PrimeResidueFieldSite.lean#L93). The attribute's comment: “(9), for the algebraic closure of the residue field of a prime of a tensor product”.
 
 > For algebras `A` and `C` over `R` whose spectra are objects of the site and a prime `𝔰` of
 > `A ⊗_R C`, the spectrum of an algebraic closure of the residue field of `𝔰` is an object of the
@@ -464,7 +464,7 @@ theorem contains_spec_algebraicClosure_residueField_tensorProduct (B : BigFppfSi
 
 [Tag 0AHK](https://stacks.math.columbia.edu/tag/0AHK) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.size_le_of_fpqc_factorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Coverings.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Coverings.lean#L287).
+**`AlgebraicGeometry.Scheme.size_le_of_fpqc_factorsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Coverings.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Coverings.lean#L287).
 
 > **Stacks 0AHK.** Let `f : X ⟶ Y` be a morphism of schemes. If there is an fpqc
 > covering `{g j : Y' j ⟶ Y}` of `Y` such that every `g j` factors through `f`, then
@@ -482,7 +482,7 @@ theorem Scheme.size_le_of_fpqc_factorsThrough {X Y : Scheme} (f : X ⟶ Y)
 
 [Tag 0AHL](https://stacks.math.columbia.edu/tag/0AHL) in the Stacks Project.
 
-**`exists_fppf_refinement_schemeSize_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Coverings.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Size/Coverings.lean#L409).
+**`exists_fppf_refinement_schemeSize_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Size/Coverings.lean, line 409](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Size/Coverings.lean#L409).
 
 > **Stacks 0AHL.** Every fppf covering `𝒞` of a scheme `X` is refined by an fppf covering
 > `𝒲` of `X` indexed in the universe of `X` whose total space is small: the coproduct of the
@@ -501,4 +501,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 3.9, Tag 000H](https://stacks.math.columbia.edu/tag/000H)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

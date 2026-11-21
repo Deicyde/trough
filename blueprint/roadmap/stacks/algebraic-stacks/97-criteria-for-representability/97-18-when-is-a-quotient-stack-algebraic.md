@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.18 When is a quotient stack algebraic?
 
-Section 97.18 of the Stacks Project, [Tag 06PI](https://stacks.math.columbia.edu/tag/06PI). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 97.18 of the Stacks Project, [Tag 06PI](https://stacks.math.columbia.edu/tag/06PI). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06PJ, a lemma
 
 [Tag 06PJ](https://stacks.math.columbia.edu/tag/06PJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_iff_restrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/QuotientStackAlgebraicIffRestriction.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/QuotientStackAlgebraicIffRestriction.lean#L294).
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_iff_restrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/QuotientStackAlgebraicIffRestriction.lean, line 294](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/QuotientStackAlgebraicIffRestriction.lean#L294).
 
 > Let `(U, R, s, t, c)` be a groupoid in algebraic spaces over `B`. The
 > quotient stack `[U/R]` is an algebraic stack if and only if there is a morphism `g : U' ⟶ U` of
@@ -43,7 +43,7 @@ theorem isAlgebraicStack_quotientStack_iff_restrictionAlong
 
 [Tag 06PK](https://stacks.math.columbia.edu/tag/06PK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_action_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean#L67). The attribute's comment: “the full criterion, for any action groupoid construction of Stacks 0444”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_action_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean#L67). The attribute's comment: “the full criterion, for any action groupoid construction of Stacks 0444”.
 
 > **Stacks 06PK.** Let a group algebraic space `G` over an algebraic space `B` act on an
 > algebraic space `X` over `B`. The quotient stack `[X/G]` of the action groupoid of
@@ -76,7 +76,7 @@ theorem isAlgebraicStack_quotientStack_action_iff_exists_cover
           (pullback.snd φ.left a.left ≫ (snd G X').left)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_groupoidOfAction_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean#L95). The attribute's comment: “the full criterion, for the action groupoid of Stacks 0444 that the library builds”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_groupoidOfAction_iff_exists_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ActionQuotientStackAlgebraicIff.lean#L95). The attribute's comment: “the full criterion, for the action groupoid of Stacks 0444 that the library builds”.
 
 > **Stacks 06PK for the action groupoid of Stacks 0444 that the library builds.** The quotient
 > stack `[X/G]` is an algebraic stack exactly when there is a morphism `φ : X' ⟶ X` of algebraic
@@ -110,7 +110,7 @@ theorem isAlgebraicStack_quotientStack_groupoidOfAction_iff_exists_cover
 
 [Tag 06PL](https://stacks.math.columbia.edu/tag/06PL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_trivialAction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/TrivialActionAlgebraicIff.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/TrivialActionAlgebraicIff.lean#L217). The attribute's comment: “both implications; the group algebraic space G over B is a group object of the slice over B, and [B/G] is the quotient stack of the action groupoid of its trivial action on B”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_trivialAction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/TrivialActionAlgebraicIff.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/TrivialActionAlgebraicIff.lean#L217). The attribute's comment: “both implications; the group algebraic space G over B is a group object of the slice over B, and [B/G] is the quotient stack of the action groupoid of its trivial action on B”.
 
 > **Stacks 06PL.** Let `G` be a group algebraic space over an algebraic space `B` over `S` and
 > endow `B` with the trivial action of `G`. The quotient stack `[B/G]` is an algebraic stack if and
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.18, Tag 06PI](https://stacks.math.columbia.edu/tag/06PI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

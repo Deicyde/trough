@@ -7,11 +7,11 @@ proof: formalized
 
 # Nondeterministic finite ε-transducers
 
-`Cslib.Computability.Automata.NA.EpsilonTransducer`, in [Cslib/Computability/Automata/NA/EpsilonTransducer.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean), by Fabrizio Montesi.
+`Cslib.Computability.Automata.NA.EpsilonTransducer`, in [Cslib/Computability/Automata/NA/EpsilonTransducer.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean), by Fabrizio Montesi.
 
 > Transducers based on `NA` with an invisible symbol in their input and output alphabets.
 
-`Cslib.Automata.NA.εTransducer` (structure, [line 24](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L24))
+`Cslib.Automata.NA.εTransducer` (structure, [line 24](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L24))
 
 > A nondeterministic ε-transducer of finite strings where the input and output alphabets include
 > an invisible symbol, modelled as `HasTau.τ` (typically called `ε`).
@@ -23,7 +23,7 @@ structure εTransducer (State InSymbol OutSymbol : Type*)
   accept : Set State
 ```
 
-`List.dropTaus` (definition, [line 31](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L31))
+`List.dropTaus` (definition, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L31))
 
 > Removes all `τ`s from a list.
 
@@ -31,7 +31,7 @@ structure εTransducer (State InSymbol OutSymbol : Type*)
 def _root_.List.dropTaus [HasTau α] [DecidableEqTau α] (l : List α) : List α
 ```
 
-`Cslib.Automata.NA.εTransducer.MTransl` (definition, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L42))
+`Cslib.Automata.NA.εTransducer.MTransl` (definition, [line 42](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L42))
 
 > An `εTransducer` translates `xs` into `ys` from state `s` to state `s'` if there is a
 > multistep transition from `s` to `s'` whose visible projection is `(xs, ys)`.
@@ -43,7 +43,7 @@ def MTransl [DecidableEqTau InSymbol] [DecidableEqTau OutSymbol]
     (xs : List InSymbol) (ys : List OutSymbol) (s' : State) : Prop
 ```
 
-`Cslib.Automata.NA.εTransducer.MTransl.comp` (theorem, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L57))
+`Cslib.Automata.NA.εTransducer.MTransl.comp` (theorem, [line 57](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean#L57))
 
 > Composition of multistep translations.
 
@@ -63,5 +63,5 @@ theorem MTransl.comp [DecidableEqTau InSymbol] [DecidableEqTau OutSymbol]
 
 ## Sources
 
-- [Cslib/Computability/Automata/NA/EpsilonTransducer.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/NA/EpsilonTransducer.lean)
+- [Cslib/Computability/Automata/NA/EpsilonTransducer.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/NA/EpsilonTransducer.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.NA.EpsilonTransducer.json)

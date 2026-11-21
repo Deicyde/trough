@@ -8,7 +8,7 @@ proof: formalized
 
 # Configuration space of the simple pendulum
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Basic`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean): 47 declarations, 47 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Basic`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean): 47 declarations, 47 with a docstring.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Basic`,
 
 > A configuration is the angle of the rod from the downward vertical, taken modulo a full turn.
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace`**, a structure, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L81).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace`**, a structure, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L81).
 
 > The configuration space of the planar simple pendulum: the angle of the rod from the downward
 > vertical, modulo `2π`.
@@ -63,7 +63,7 @@ structure ConfigurationSpace where
   angle : Real.Angle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ext`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L89).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ext`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L89).
 
 > Two configurations are equal precisely when their angles are equal.
 
@@ -78,7 +78,7 @@ lemma ext {p q : ConfigurationSpace} (h : p.angle = q.angle) : p = q
 > `ConfigurationSpace ≃ₜ Circle`, through which the circle's compactness and Hausdorff property
 > transfer.
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.angleEquiv`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L104).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.angleEquiv`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L104).
 
 > The identification of the configuration space with `Real.Angle`.
 
@@ -86,7 +86,7 @@ lemma ext {p q : ConfigurationSpace} (h : p.angle = q.angle) : p = q
 def angleEquiv : ConfigurationSpace ≃ Real.Angle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instTopologicalSpace`**, an instance, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L111).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instTopologicalSpace`**, an instance, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L111).
 
 > The topology of the configuration space, induced from `Real.Angle`.
 
@@ -94,7 +94,7 @@ def angleEquiv : ConfigurationSpace ≃ Real.Angle
 instance instTopologicalSpace : TopologicalSpace ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.angleHomeomorph`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L115).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.angleHomeomorph`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L115).
 
 > The identification with `Real.Angle` as a homeomorphism.
 
@@ -102,7 +102,7 @@ instance instTopologicalSpace : TopologicalSpace ConfigurationSpace
 def angleHomeomorph : ConfigurationSpace ≃ₜ Real.Angle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L121).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L121).
 
 > The point of the unit circle `e^{iθ}` corresponding to a configuration at angle `θ`.
 
@@ -110,7 +110,7 @@ def angleHomeomorph : ConfigurationSpace ≃ₜ Real.Angle
 def toCircle (q : ConfigurationSpace) : Circle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.circleHomeomorph`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L124).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.circleHomeomorph`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L124).
 
 > The identification of the configuration space with the unit circle.
 
@@ -118,7 +118,7 @@ def toCircle (q : ConfigurationSpace) : Circle
 def circleHomeomorph : ConfigurationSpace ≃ₜ Circle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.circleHomeomorph_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L132).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.circleHomeomorph_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L132).
 
 > The identification with the unit circle is given by `ConfigurationSpace.toCircle`.
 
@@ -126,7 +126,7 @@ def circleHomeomorph : ConfigurationSpace ≃ₜ Circle
 lemma circleHomeomorph_apply (q : ConfigurationSpace) : circleHomeomorph q = q.toCircle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L135).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L135).
 
 > The configuration corresponding to a point of the unit circle.
 
@@ -134,7 +134,7 @@ lemma circleHomeomorph_apply (q : ConfigurationSpace) : circleHomeomorph q = q.t
 def ofCircle : Circle → ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle_ofCircle`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L140).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle_ofCircle`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L140).
 
 > The point of the unit circle of the configuration attached to a point of the unit circle is
 > that point.
@@ -143,7 +143,7 @@ def ofCircle : Circle → ConfigurationSpace
 lemma toCircle_ofCircle (z : Circle) : (ofCircle z).toCircle = z
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle_toCircle`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L146).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle_toCircle`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L146).
 
 > The configuration attached to the point of the unit circle of a configuration is that
 > configuration.
@@ -152,7 +152,7 @@ lemma toCircle_ofCircle (z : Circle) : (ofCircle z).toCircle = z
 lemma ofCircle_toCircle (q : ConfigurationSpace) : ofCircle q.toCircle = q
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instT2Space`**, an instance, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L150).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instT2Space`**, an instance, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L150).
 
 > The configuration space is Hausdorff, being homeomorphic to the unit circle.
 
@@ -160,7 +160,7 @@ lemma ofCircle_toCircle (q : ConfigurationSpace) : ofCircle q.toCircle = q
 instance instT2Space : T2Space ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instCompactSpace`**, an instance, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L153).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instCompactSpace`**, an instance, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L153).
 
 > The configuration space is compact, being homeomorphic to the unit circle.
 
@@ -168,7 +168,7 @@ instance instT2Space : T2Space ConfigurationSpace
 instance instCompactSpace : CompactSpace ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instSecondCountableTopology`**, an instance, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L156).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instSecondCountableTopology`**, an instance, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L156).
 
 > The configuration space is second countable, being homeomorphic to the unit circle.
 
@@ -184,7 +184,7 @@ instance instSecondCountableTopology : SecondCountableTopology ConfigurationSpac
 > Since the identification cancels in every change of charts, the changes of charts are exactly those
 > of the circle, hence analytic.
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instChartedSpace`**, an instance, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L173).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instChartedSpace`**, an instance, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L173).
 
 > The charts of the configuration space: the identification with the unit circle followed by a
 > chart of the circle.
@@ -193,7 +193,7 @@ instance instSecondCountableTopology : SecondCountableTopology ConfigurationSpac
 instance instChartedSpace : ChartedSpace (EuclideanSpace ℝ (Fin 1)) ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_eq`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L183).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_eq`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L183).
 
 > The chart at a configuration is the identification with the unit circle followed by the chart
 > of the circle at the corresponding point.
@@ -205,7 +205,7 @@ lemma chartAt_eq (q : ConfigurationSpace) :
         (chartAt (EuclideanSpace ℝ (Fin 1)) q.toCircle)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_source`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L190).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_source`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L190).
 
 > The domain of the chart at a configuration is the preimage under the identification with the
 > unit circle of the domain of the chart of the circle at the corresponding point.
@@ -216,7 +216,7 @@ lemma chartAt_source (q : ConfigurationSpace) :
       circleHomeomorph ⁻¹' (chartAt (EuclideanSpace ℝ (Fin 1)) q.toCircle).source
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_target`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L198).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.chartAt_target`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L198).
 
 > The codomain of the chart at a configuration is the codomain of the chart of the circle at the
 > corresponding point.
@@ -227,7 +227,7 @@ lemma chartAt_target (q : ConfigurationSpace) :
       (chartAt (EuclideanSpace ℝ (Fin 1)) q.toCircle).target
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instIsManifold`**, an instance, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L206).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.instIsManifold`**, an instance, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L206).
 
 > The configuration space is an analytic manifold: every change of charts is a change of charts
 > of the unit circle.
@@ -245,7 +245,7 @@ instance instIsManifold : IsManifold (𝓡 1) ω ConfigurationSpace
 > makes different lifts describe the same configuration. In the charts pulled back from the circle
 > is `Circle.exp`, so it is analytic.
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L237).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L237).
 
 > The configuration at angle `θ` (measured from the downward vertical).
 
@@ -253,7 +253,7 @@ instance instIsManifold : IsManifold (𝓡 1) ω ConfigurationSpace
 def ofAngle (θ : ℝ) : ConfigurationSpace
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_angle`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L241).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_angle`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L241).
 
 > The angle of the configuration at angle `θ` is `θ` modulo `2π`.
 
@@ -261,7 +261,7 @@ def ofAngle (θ : ℝ) : ConfigurationSpace
 lemma ofAngle_angle (θ : ℝ) : (ofAngle θ).angle = θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_add_two_pi`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L244).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_add_two_pi`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L244).
 
 > Adding a full turn to the angle leaves the configuration unchanged.
 
@@ -269,7 +269,7 @@ lemma ofAngle_angle (θ : ℝ) : (ofAngle θ).angle = θ
 lemma ofAngle_add_two_pi (θ : ℝ) : ofAngle (θ + 2 * Real.pi) = ofAngle θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_periodic`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L249).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_periodic`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L249).
 
 > The angular lift is periodic with period `2π`.
 
@@ -277,7 +277,7 @@ lemma ofAngle_add_two_pi (θ : ℝ) : ofAngle (θ + 2 * Real.pi) = ofAngle θ
 lemma ofAngle_periodic : Function.Periodic ofAngle (2 * Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_eq_iff`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L253).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_eq_iff`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L253).
 
 > Two angles describe the same configuration exactly when they differ by a whole number of
 > turns.
@@ -287,7 +287,7 @@ lemma ofAngle_eq_iff (θ₁ θ₂ : ℝ) :
     ofAngle θ₁ = ofAngle θ₂ ↔ ∃ n : ℤ, θ₂ = θ₁ + n * (2 * Real.pi)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_surjective`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L265).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofAngle_surjective`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L265).
 
 > Every configuration is the configuration at some real angle: the lift is surjective.
 
@@ -295,7 +295,7 @@ lemma ofAngle_eq_iff (θ₁ θ₂ : ℝ) :
 lemma ofAngle_surjective : Function.Surjective ofAngle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_ofAngle`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L272).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_ofAngle`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L272).
 
 > The angular lift is continuous.
 
@@ -303,7 +303,7 @@ lemma ofAngle_surjective : Function.Surjective ofAngle
 lemma continuous_ofAngle : Continuous ofAngle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.isCoveringMap_ofAngle`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L276).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.isCoveringMap_ofAngle`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L276).
 
 > The angular lift is a covering map.
 
@@ -311,7 +311,7 @@ lemma continuous_ofAngle : Continuous ofAngle
 lemma isCoveringMap_ofAngle : IsCoveringMap ofAngle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle_ofAngle`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L284).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toCircle_ofAngle`**, a lemma, [line 284](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L284).
 
 > The configuration at angle `θ` corresponds to the point `e^{iθ}` of the unit circle.
 
@@ -319,7 +319,7 @@ lemma isCoveringMap_ofAngle : IsCoveringMap ofAngle
 lemma toCircle_ofAngle (θ : ℝ) : (ofAngle θ).toCircle = Circle.exp θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle_circleExp`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L288).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.ofCircle_circleExp`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L288).
 
 > The configuration of a point `e^{iθ}` of the unit circle is `ofAngle θ`.
 
@@ -327,7 +327,7 @@ lemma toCircle_ofAngle (θ : ℝ) : (ofAngle θ).toCircle = Circle.exp θ
 lemma ofCircle_circleExp (θ : ℝ) : ofCircle (Circle.exp θ) = ofAngle θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.contMDiff_ofAngle`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L293).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.contMDiff_ofAngle`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L293).
 
 > The angular lift is analytic: read in the charts pulled back from the circle it is
 > `Circle.exp`.
@@ -336,7 +336,7 @@ lemma ofCircle_circleExp (θ : ℝ) : ofCircle (Circle.exp θ) = ofAngle θ
 lemma contMDiff_ofAngle : ContMDiff 𝓘(ℝ, ℝ) (𝓡 1) ω ofAngle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L304).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L304).
 
 > The cosine of the angle of a configuration.
 
@@ -344,7 +344,7 @@ lemma contMDiff_ofAngle : ContMDiff 𝓘(ℝ, ℝ) (𝓡 1) ω ofAngle
 def cos (q : ConfigurationSpace) : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L307).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin`**, a def, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L307).
 
 > The sine of the angle of a configuration.
 
@@ -352,7 +352,7 @@ def cos (q : ConfigurationSpace) : ℝ
 def sin (q : ConfigurationSpace) : ℝ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_angle`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L310).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_angle`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L310).
 
 > The cosine of a configuration is the cosine of its angle.
 
@@ -360,7 +360,7 @@ def sin (q : ConfigurationSpace) : ℝ
 lemma cos_angle (q : ConfigurationSpace) : q.cos = Real.Angle.cos q.angle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin_angle`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L313).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin_angle`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L313).
 
 > The sine of a configuration is the sine of its angle.
 
@@ -368,7 +368,7 @@ lemma cos_angle (q : ConfigurationSpace) : q.cos = Real.Angle.cos q.angle
 lemma sin_angle (q : ConfigurationSpace) : q.sin = Real.Angle.sin q.angle
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_ofAngle`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L317).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_ofAngle`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L317).
 
 > The cosine of the configuration at angle `θ` is `cos θ`.
 
@@ -376,7 +376,7 @@ lemma sin_angle (q : ConfigurationSpace) : q.sin = Real.Angle.sin q.angle
 lemma cos_ofAngle (θ : ℝ) : (ofAngle θ).cos = Real.cos θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin_ofAngle`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L321).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.sin_ofAngle`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L321).
 
 > The sine of the configuration at angle `θ` is `sin θ`.
 
@@ -384,7 +384,7 @@ lemma cos_ofAngle (θ : ℝ) : (ofAngle θ).cos = Real.cos θ
 lemma sin_ofAngle (θ : ℝ) : (ofAngle θ).sin = Real.sin θ
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_sq_add_sin_sq`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L324).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.cos_sq_add_sin_sq`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L324).
 
 > The Pythagorean identity for the angle of a configuration.
 
@@ -392,7 +392,7 @@ lemma sin_ofAngle (θ : ℝ) : (ofAngle θ).sin = Real.sin θ
 lemma cos_sq_add_sin_sq (q : ConfigurationSpace) : q.cos ^ 2 + q.sin ^ 2 = 1
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_cos`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L329).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_cos`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L329).
 
 > The cosine of the angle depends continuously on the configuration.
 
@@ -400,7 +400,7 @@ lemma cos_sq_add_sin_sq (q : ConfigurationSpace) : q.cos ^ 2 + q.sin ^ 2 = 1
 lemma continuous_cos : Continuous (cos : ConfigurationSpace → ℝ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_sin`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L334).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_sin`**, a lemma, [line 334](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L334).
 
 > The sine of the angle depends continuously on the configuration.
 
@@ -416,7 +416,7 @@ lemma continuous_sin : Continuous (sin : ConfigurationSpace → ℝ)
 > circle of radius `|ℓ|` about the pivot — the rod-length constraint — and for `ℓ ≠ 0` the map is
 > injective, so the configuration is determined by the position.
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace`**, a def, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L351).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace`**, a def, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L351).
 
 > The position of the bob in the plane, for a rod of length `ℓ`. `ℓ` is not assumed positive; the
 > bob is at distance `|ℓ|` from the pivot.
@@ -425,7 +425,7 @@ lemma continuous_sin : Continuous (sin : ConfigurationSpace → ℝ)
 def toSpace (ℓ : ℝ) (q : ConfigurationSpace) : Space 2
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_apply_zero`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L355).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_apply_zero`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L355).
 
 > The horizontal coordinate of the bob, `ℓ * q.sin`.
 
@@ -434,7 +434,7 @@ lemma toSpace_apply_zero (ℓ : ℝ) (q : ConfigurationSpace) :
     toSpace ℓ q 0 = ℓ * q.sin
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_apply_one`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L360).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_apply_one`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L360).
 
 > The vertical coordinate of the bob, `-(ℓ * q.cos)`.
 
@@ -443,7 +443,7 @@ lemma toSpace_apply_one (ℓ : ℝ) (q : ConfigurationSpace) :
     toSpace ℓ q 1 = -(ℓ * q.cos)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_ofAngle`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L365).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_ofAngle`**, a lemma, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L365).
 
 > The position of the bob for the configuration at angle `θ`.
 
@@ -452,7 +452,7 @@ lemma toSpace_ofAngle (ℓ θ : ℝ) :
     toSpace ℓ (ofAngle θ) = ⟨![ℓ * Real.sin θ, -ℓ * Real.cos θ]⟩
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_norm`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L371).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_norm`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L371).
 
 > The rod-length constraint: the bob is at distance `|ℓ|` from the pivot.
 
@@ -460,7 +460,7 @@ lemma toSpace_ofAngle (ℓ θ : ℝ) :
 lemma toSpace_norm (ℓ : ℝ) (q : ConfigurationSpace) : ‖toSpace ℓ q‖ = |ℓ|
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_toSpace`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L379).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.continuous_toSpace`**, a lemma, [line 379](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L379).
 
 > The position of the bob depends continuously on the configuration.
 
@@ -468,7 +468,7 @@ lemma toSpace_norm (ℓ : ℝ) (q : ConfigurationSpace) : ‖toSpace ℓ q‖ = 
 lemma continuous_toSpace (ℓ : ℝ) : Continuous (toSpace ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_injective`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L384).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_injective`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L384).
 
 > For a rod of nonzero length the configuration is determined by the position of the bob.
 
@@ -476,7 +476,7 @@ lemma continuous_toSpace (ℓ : ℝ) : Continuous (toSpace ℓ)
 lemma toSpace_injective {ℓ : ℝ} (hℓ : ℓ ≠ 0) : Function.Injective (toSpace ℓ)
 ```
 
-**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_isClosedEmbedding`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L398).
+**`ClassicalMechanics.SimplePendulum.ConfigurationSpace.toSpace_isClosedEmbedding`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean#L398).
 
 > For `ℓ ≠ 0` the position map is a closed embedding of the configuration circle.
 
@@ -490,4 +490,4 @@ lemma toSpace_isClosedEmbedding {ℓ : ℝ} (hℓ : ℓ ≠ 0) : Topology.IsClos
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean)

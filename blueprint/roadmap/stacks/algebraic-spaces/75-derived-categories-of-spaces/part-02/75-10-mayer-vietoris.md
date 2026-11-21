@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.10 Mayer-Vietoris
 
-Section 75.10 of the Stacks Project, [Tag 08GS](https://stacks.math.columbia.edu/tag/08GS). 10 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.10 of the Stacks Project, [Tag 08GS](https://stacks.math.columbia.edu/tag/08GS). 10 tags here are carried by 54 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08GT, an equation
 
 [Tag 08GT](https://stacks.math.columbia.edu/tag/08GT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.etaleModulePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L137). The attribute's comment: “the stalks of an étale restriction”.
+**`AlgebraicGeometry.Space.etaleModulePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L137). The attribute's comment: “the stalks of an étale restriction”.
 
 > **Stacks 08GT** in its restriction reading.  The stalk at a geometric point `ū` of `U` of
 > the étale restriction of an `𝒪_X`-module along an étale `j : U ⟶ X` is the stalk of that module
@@ -32,7 +32,7 @@ def etaleModulePullbackStalkIso (j : U ⟶ X) (hj : IsEtale B S hS j.hom)
         stalkSetFunctor (geometricPointMap j.hom y)
 ```
 
-**`AlgebraicGeometry.Space.etaleModulePullbackStalkIso_hom_app_moduleGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L160). The attribute's comment: “the étale restriction comparison on germs”.
+**`AlgebraicGeometry.Space.etaleModulePullbackStalkIso_hom_app_moduleGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L160). The attribute's comment: “the étale restriction comparison on germs”.
 
 > The comparison of Stacks 08GT for étale restriction is the germ map: it carries the germ at
 > `ū` of a section over a chart of `U` to the germ at `x̄` of the same section, read over the
@@ -50,7 +50,7 @@ theorem etaleModulePullbackStalkIso_hom_app_moduleGerm (j : U ⟶ X)
         ((SmallEtaleNeighborhood.postcomp B S hS j hj y).obj W) a
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L181).
+**`AlgebraicGeometry.Space.modulePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L181).
 
 > **Stacks' Equation 08GT.**  Let `j : U ⟶ X` be an étale morphism of algebraic spaces over
 > `S`, let `F` be an `𝒪_X`-module and let `ū` be a geometric point of `U` with image `x̄` in `X`.
@@ -71,7 +71,7 @@ def modulePullbackStalkIso (j : U ⟶ X) (hj : IsEtale B S hS j.hom)
         stalkSetFunctor (geometricPointMap j.hom y)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackStalkIso_hom_app_moduleGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L196). The attribute's comment: “the comparison on germs”.
+**`AlgebraicGeometry.Space.modulePullbackStalkIso_hom_app_moduleGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L196). The attribute's comment: “the comparison on germs”.
 
 > **Stacks 08GT, canonicity.**  The comparison `(F|_U)_ū = F_x̄` sends the germ at `ū` of a
 > section of `j^*F` over a chart of `U` to the germ at `x̄` of its image under the identification
@@ -91,7 +91,7 @@ theorem modulePullbackStalkIso_hom_app_moduleGerm (j : U ⟶ X) (hj : IsEtale B 
           (Opposite.op W.chart) a)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackStalkIso_germ_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L212). The attribute's comment: “additivity on germs”.
+**`AlgebraicGeometry.Space.modulePullbackStalkIso_germ_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L212). The attribute's comment: “additivity on germs”.
 
 > **Stacks 08GT** is an identification of modules and not merely of sets: on germs the
 > comparison respects addition, the sum being taken in the sections of `j^*F` over a chart of `U`
@@ -112,7 +112,7 @@ theorem modulePullbackStalkIso_germ_add (j : U ⟶ X) (hj : IsEtale B S hS j.hom
             (Opposite.op W.chart) b)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackStalkIso_germ_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L232). The attribute's comment: “action on germs”.
+**`AlgebraicGeometry.Space.modulePullbackStalkIso_germ_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictionStalk.lean#L232). The attribute's comment: “action on germs”.
 
 > **Stacks 08GT** is an identification of modules and not merely of abelian groups: on germs
 > the comparison respects the action of the structure sheaf.  The scalar is a section of `𝒪_U`
@@ -135,7 +135,7 @@ theorem modulePullbackStalkIso_germ_smul (j : U ⟶ X) (hj : IsEtale B S hS j.ho
           (Opposite.op W.chart) a)
 ```
 
-**`AlgebraicGeometry.Space.restrictionPresheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L155). The attribute's comment: “the fibre of a restriction at a lift”.
+**`AlgebraicGeometry.Space.restrictionPresheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L155). The attribute's comment: “the fibre of a restriction at a lift”.
 
 > For the fibre functors of points of the small étale site, the fibre at the point attached to
 > a lift `t` of `x̄` of the restriction along `f` of a presheaf on the small étale site of `Y` is
@@ -149,7 +149,7 @@ def restrictionPresheafFiberIso (t : GeometricPointLift B S hS f.hom x) :
       (etaleSitePoint B S hS Y.1 x Y.2).presheafFiber
 ```
 
-**`AlgebraicGeometry.Space.restrictionPresheafFiberIso_toPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L168). The attribute's comment: “the comparison on germs”.
+**`AlgebraicGeometry.Space.restrictionPresheafFiberIso_toPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L168). The attribute's comment: “the comparison on germs”.
 
 > On germs, `AlgebraicGeometry.Space.restrictionPresheafFiberIso` carries the germ at the lift
 > `t` of a section over an étale chart `W` of `X` to the germ at `x̄` of the same section, read over
@@ -166,7 +166,7 @@ theorem restrictionPresheafFiberIso_toPresheafFiber (t : GeometricPointLift B S 
         ((smallEtalePostcomp B S hS f hf).obj W) (pushLift B S hS f hf W t w) P
 ```
 
-**`AlgebraicGeometry.Space.restrictionSheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L186). The attribute's comment: “the fibre of a restriction of abelian sheaves at a lift”.
+**`AlgebraicGeometry.Space.restrictionSheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L186). The attribute's comment: “the fibre of a restriction of abelian sheaves at a lift”.
 
 > For abelian sheaves, the fibre at the point attached to a lift
 > `t` of `x̄` of the restriction along `f` of an abelian sheaf on the small étale site of `Y` is
@@ -178,7 +178,7 @@ def restrictionSheafFiberIso (t : GeometricPointLift B S hS f.hom x) :
       (etaleSitePoint B S hS Y.1 x Y.2).sheafFiber (A := AddCommGrpCat.{u})
 ```
 
-**`AlgebraicGeometry.Space.restrictionSheafFiberIso_toPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L197). The attribute's comment: “the comparison of abelian sheaf fibres on germs”.
+**`AlgebraicGeometry.Space.restrictionSheafFiberIso_toPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionFiber.lean#L197). The attribute's comment: “the comparison of abelian sheaf fibres on germs”.
 
 > On germs, `AlgebraicGeometry.Space.restrictionSheafFiberIso` carries the germ at
 > the lift `t` of a section over an étale chart `W` of `X` to the germ at `x̄` of the same section
@@ -199,7 +199,7 @@ theorem restrictionSheafFiberIso_toPresheafFiber (t : GeometricPointLift B S hS 
 
 [Tag 08GU](https://stacks.math.columbia.edu/tag/08GU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ExtensionByZeroStalk.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L175). References: SGA 4 IV (11.3.5), “special case”.
+**`AlgebraicGeometry.Space.ExtensionByZeroStalk.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L175). References: SGA 4 IV (11.3.5), “special case”.
 
 > **Stacks 08GU.** Equation 75.10.0.2: for an étale morphism `j_U : U ⟶ X` of algebraic
 > spaces, a sheaf of `𝒪_U`-modules `𝒢` and a geometric point `x̄ : Spec(k) ⟶ X`, the stalk of
@@ -213,7 +213,7 @@ def stalkExtensionByZeroIso (V : (spacesEtaleRingedSite B S hS X).C) (x : Geomet
     moduleStalk x ((extensionByZero V).obj G) ≅ ∐ fun v : Lifts V x => liftedStalk v G
 ```
 
-**`AlgebraicGeometry.Space.ExtensionByZeroStalk.isZero_moduleStalk_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L200). The attribute's comment: “vanishing away from the image”.
+**`AlgebraicGeometry.Space.ExtensionByZeroStalk.isZero_moduleStalk_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L200). The attribute's comment: “vanishing away from the image”.
 
 > **Stacks 08GU.** At a geometric point of `X` admitting no lift to `U` the stalk of
 > `j_{U!}𝒢` vanishes.
@@ -227,7 +227,7 @@ theorem isZero_moduleStalk_extensionByZero (V : (spacesEtaleRingedSite B S hS X)
     IsZero (moduleStalk x ((extensionByZero V).obj G))
 ```
 
-**`AlgebraicGeometry.Space.ExtensionByZeroStalk.liftsEquivGeometricPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L234). The attribute's comment: “the index set”.
+**`AlgebraicGeometry.Space.ExtensionByZeroStalk.liftsEquivGeometricPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroStalk.lean#L234). The attribute's comment: “the index set”.
 
 > **Stacks 08GU.** The index set of Equation 08GU is the set of geometric points of `U`
 > lying over the given geometric point of `X`.
@@ -240,7 +240,7 @@ def liftsEquivGeometricPoints (V : (spacesEtaleRingedSite B S hS X).C)
         geometricPointMap ((SpacesEtale.inclusion B S hS X).obj V).hom.hom y = x}
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.liftedStalkι_stalkExtensionByZeroIso_inv_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean#L166). The attribute's comment: “the counit on one summand of the stalk”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.liftedStalkι_stalkExtensionByZeroIso_inv_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean#L166). The attribute's comment: “the counit on one summand of the stalk”.
 
 > Under the decomposition of the stalk of `f_!(G|_X)` as the direct sum over the lifts of `x̄`
 > of the stalks of `G|_X`, the stalk of the counit `f_!(G|_X) ⟶ G` restricts on the summand of a
@@ -257,7 +257,7 @@ theorem liftedStalkι_stalkExtensionByZeroIso_inv_counit
       (restrictionSheafFiberIso B S hS f hf t).hom.app G
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_inv_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean#L182). The attribute's comment: “the counit on stalks”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_inv_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean, line 182](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroCounit.lean#L182). The attribute's comment: “the counit on stalks”.
 
 > The stalk of the counit of extension by zero is the fold map: under the decomposition of the
 > stalk of `f_!(G|_X)` as the direct sum over the lifts `t` of `x̄` of the stalks of `G|_X` at
@@ -275,7 +275,7 @@ theorem stalkExtensionByZeroIso_inv_counit :
         (restrictionSheafFiberIso B S hS f hf t).hom.app G
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.mono_sheafFiber_extensionByZero_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroExact.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroExact.lean#L56). The attribute's comment: “the stalk of an extension by zero of a monomorphism”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.mono_sheafFiber_extensionByZero_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroExact.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroExact.lean#L56). The attribute's comment: “the stalk of an extension by zero of a monomorphism”.
 
 > If a morphism of abelian sheaves on `X` has monomorphic stalks at every lift of a geometric
 > point `x` of `Y`, then the stalk at `x` of its extension by zero is a monomorphism.
@@ -289,7 +289,7 @@ theorem mono_sheafFiber_extensionByZero_map
       ((abelianEtaleExtensionByZero B S hS f hf).map ψ))
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L406). The attribute's comment: “the stalk of an extension by zero of abelian sheaves”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 406](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L406). The attribute's comment: “the stalk of an extension by zero of abelian sheaves”.
 
 > The stalk at a geometric point `x̄` of `Y` of the extension by zero of an abelian étale sheaf
 > on `X` is the direct sum of its stalks at the lifts of `x̄` to `X`.
@@ -303,7 +303,7 @@ def stalkExtensionByZeroIso
         (liftSitePoint B S hS f t).sheafFiber.obj F)
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L418). The attribute's comment: “the germ computation”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 418](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L418). The attribute's comment: “the germ computation”.
 
 > The stalk isomorphism sends the germ of a section over an étale chart `W` of `X`, viewed in
 > the extension by zero through the adjunction unit, to its germ at the induced lift, in the
@@ -322,7 +322,7 @@ theorem stalkExtensionByZeroIso_germ
       liftedGerm B S hS f x F t W w ≫ liftedStalkι B S hS f x F t
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L441). The attribute's comment: “naturality”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.stalkExtensionByZeroIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 441](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L441). The attribute's comment: “naturality”.
 
 > The stalk decomposition `stalkExtensionByZeroIso` is natural in the abelian sheaf.
 
@@ -337,7 +337,7 @@ theorem stalkExtensionByZeroIso_naturality
           Sigma.functor (GeometricPointLift B S hS f.hom x)).map a
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.isZero_stalkExtensionByZero_of_isEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L461). The attribute's comment: “vanishing away from the image”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.isZero_stalkExtensionByZero_of_isEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean, line 461](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalk.lean#L461). The attribute's comment: “vanishing away from the image”.
 
 > The extension by zero has zero stalk at every geometric point of `Y` with no lift to `X`.
 
@@ -349,7 +349,7 @@ theorem isZero_stalkExtensionByZero_of_isEmpty
       ((abelianEtaleExtensionByZero B S hS f hf).obj F))
 ```
 
-**`AlgebraicGeometry.Space.EtaleShriekStalk.isIso_sheafFiber_extensionByZero_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalkMap.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalkMap.lean#L61). The attribute's comment: “the stalk of an extension by zero of a map”.
+**`AlgebraicGeometry.Space.EtaleShriekStalk.isIso_sheafFiber_extensionByZero_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalkMap.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianExtensionByZeroStalkMap.lean#L61). The attribute's comment: “the stalk of an extension by zero of a map”.
 
 > **The stalk of an extension by zero of a map of abelian sheaves is the direct sum of the
 > stalks of that map at the lifts**, hence invertible as soon as all of those are.
@@ -363,7 +363,7 @@ theorem isIso_sheafFiber_extensionByZero_map
       ((abelianEtaleExtensionByZero B S hS f hf).map ψ))
 ```
 
-**`AlgebraicGeometry.Space.isIso_sheafFiber_toSheaf_etaleModuleShriek_map_of_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekStalkMap.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekStalkMap.lean#L39). The attribute's comment: “the stalk of an extension by zero of a map of modules”.
+**`AlgebraicGeometry.Space.isIso_sheafFiber_toSheaf_etaleModuleShriek_map_of_lifts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekStalkMap.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekStalkMap.lean#L39). The attribute's comment: “the stalk of an extension by zero of a map of modules”.
 
 > **The stalk of the extension by zero of a map of modules is invertible as soon as the stalks
 > of that map at all the lifts of the point are.**
@@ -379,7 +379,7 @@ theorem isIso_sheafFiber_toSheaf_etaleModuleShriek_map_of_lifts
         ((etaleModuleLowerShriek B S hS f hf).map α)))
 ```
 
-**`AlgebraicGeometry.Space.cohomologySupportedOn_mapDerivedCategory_etaleModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekSupport.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekSupport.lean#L156). The attribute's comment: “the support of an extension by zero of an object of the derived category”.
+**`AlgebraicGeometry.Space.cohomologySupportedOn_mapDerivedCategory_etaleModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekSupport.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleShriekSupport.lean#L156). The attribute's comment: “the support of an extension by zero of an object of the derived category”.
 
 > If an object `K` of `D(𝒪_X)` is supported on `|f|⁻¹T` in the sense of Stacks 08GF, then its
 > extension by zero along the étale morphism `f` is supported on `T`.
@@ -396,7 +396,7 @@ theorem cohomologySupportedOn_mapDerivedCategory_etaleModuleLowerShriek
 
 [Tag 08GV](https://stacks.math.columbia.edu/tag/08GV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mayerVietoris_shortExact_and_mem_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisTag.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisTag.lean#L195).
+**`AlgebraicGeometry.Space.mayerVietoris_shortExact_and_mem_distTriang`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisTag.lean, line 195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisTag.lean#L195).
 
 > **Stacks 08GV.**  Let `(U ⊆ X, j_V : V ⟶ X)` be an elementary distinguished square of
 > algebraic spaces over a scheme `S` and let `P = U ×_X V`.  Write `(-)|_Y` for restriction of
@@ -478,7 +478,7 @@ theorem mayerVietoris_shortExact_and_mem_distTriang :
 
 [Tag 08GW](https://stacks.math.columbia.edu/tag/08GW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.shortExact_edsRestrictPushMayerVietorisLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean, line 598](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean#L598). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.shortExact_edsRestrictPushMayerVietorisLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean, line 598](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean#L598). The attribute's comment: “part (1)”.
 
 > **Stacks 08GW part (1), with nothing assumed.**  Let `(U ⊆ X, j_V : V ⟶ X)` be an elementary
 > distinguished square of algebraic spaces over a scheme `S`, let `P = U ×_X V`, write `(-)|_Y`
@@ -524,7 +524,7 @@ theorem shortExact_edsRestrictPushMayerVietorisLowerShriek
       (zero_edsRestrictPushMayerVietorisLowerShriek B S hS hsq F)).ShortExact
 ```
 
-**`AlgebraicGeometry.Space.exists_mem_distTriang_edsDerivedRestrictPushMayerVietorisLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean#L704). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_mem_distTriang_edsDerivedRestrictPushMayerVietorisLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean, line 704](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisPushforwardTag.lean#L704). The attribute's comment: “part (2)”.
 
 > **Stacks 08GW part (2), with nothing assumed and with the canonical triangle.**  Let
 > `(U ⊆ X, j_V : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a scheme
@@ -593,7 +593,7 @@ theorem exists_mem_distTriang_edsDerivedRestrictPushMayerVietorisLowerShriek
 
 [Tag 08JK](https://stacks.math.columbia.edu/tag/08JK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_mem_distTriang_edsRelativeMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelative.lean, line 996](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelative.lean#L996). The attribute's comment: “FIRST ASSERTION: for every E of D(O\_X) a distinguished triangle Rf\_*E -> Ra\_*(E|\_U) ⊕ Rb\_*(E|\_V) -> Rc\_*(E|\_\{U x\_X V}) -> (Rf\_*E)[1] in D(O\_Y), with no hypothesis beyond the square, f and the four derived functors. The SECOND ASSERTION, functoriality in E, is exists\_natTrans\_mem\_distTriang\_edsRelativeMayerVietoris\_unconditional in the sibling module. Proof route and provenance are in this theorem's docstring”.
+**`AlgebraicGeometry.Space.exists_mem_distTriang_edsRelativeMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelative.lean, line 996](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelative.lean#L996). The attribute's comment: “FIRST ASSERTION: for every E of D(O\_X) a distinguished triangle Rf\_*E -> Ra\_*(E|\_U) ⊕ Rb\_*(E|\_V) -> Rc\_*(E|\_\{U x\_X V}) -> (Rf\_*E)[1] in D(O\_Y), with no hypothesis beyond the square, f and the four derived functors. The SECOND ASSERTION, functoriality in E, is exists\_natTrans\_mem\_distTriang\_edsRelativeMayerVietoris\_unconditional in the sibling module. Proof route and provenance are in this theorem's docstring”.
 
 > **Stacks 08JK, the distinguished triangle.**  This declaration is the `@[stacks 08JK]`
 > registration of the first of the tag's two assertions, and it takes no hypothesis.
@@ -663,7 +663,7 @@ theorem exists_mem_distTriang_edsRelativeMayerVietoris_unconditional
         distTriang (DerivedCategory (Modules.{u, u} B S hS Z.1 Z.2))
 ```
 
-**`AlgebraicGeometry.Space.exists_natTrans_mem_distTriang_edsRelativeMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelativeFunctorial.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelativeFunctorial.lean#L710). The attribute's comment: “SECOND ASSERTION: the distinguished triangle is FUNCTORIAL IN E. The five morphisms are natural transformations of the four right derived functors D(O\_X) -> D(O\_Y) and the triangle is distinguished at EVERY E, with no hypothesis beyond the square, f and those functors. The FIRST ASSERTION is exists\_mem\_distTriang\_edsRelativeMayerVietoris\_unconditional in the sibling module. Proof route and provenance are in this theorem's docstring”.
+**`AlgebraicGeometry.Space.exists_natTrans_mem_distTriang_edsRelativeMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelativeFunctorial.lean, line 710](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisRelativeFunctorial.lean#L710). The attribute's comment: “SECOND ASSERTION: the distinguished triangle is FUNCTORIAL IN E. The five morphisms are natural transformations of the four right derived functors D(O\_X) -> D(O\_Y) and the triangle is distinguished at EVERY E, with no hypothesis beyond the square, f and those functors. The FIRST ASSERTION is exists\_mem\_distTriang\_edsRelativeMayerVietoris\_unconditional in the sibling module. Proof route and provenance are in this theorem's docstring”.
 
 > **Stacks 08JK, the functoriality in `E`.**
 >
@@ -723,7 +723,7 @@ theorem exists_natTrans_mem_distTriang_edsRelativeMayerVietoris_unconditional
 
 [Tag 08H9](https://stacks.math.columbia.edu/tag/08H9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mayerVietoris_derivedHom_longExactSequence_of_eds_lowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisExtTag.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisExtTag.lean#L303). The attribute's comment: “the whole tag, and its one library registration: the Mayer-Vietoris sequence of an elementary distinguished square is exact at each of its three kinds of spot and in every integer degree, its first map being the pair of the two derived restrictions of a shifted morphism, its second the difference of the two restrictions to the intersection, and its connecting map that of the triangle of 08GV part (2); the square is the only binder”.
+**`AlgebraicGeometry.Space.mayerVietoris_derivedHom_longExactSequence_of_eds_lowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisExtTag.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisExtTag.lean#L303). The attribute's comment: “the whole tag, and its one library registration: the Mayer-Vietoris sequence of an elementary distinguished square is exact at each of its three kinds of spot and in every integer degree, its first map being the pair of the two derived restrictions of a shifted morphism, its second the difference of the two restrictions to the intersection, and its connecting map that of the triangle of 08GV part (2); the square is the only binder”.
 
 > **Stacks 08H9, with nothing assumed and with every map of the sequence named.**  Let
 > `(U ⊆ X, j_V : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a scheme
@@ -874,7 +874,7 @@ theorem mayerVietoris_derivedHom_longExactSequence_of_eds_lowerShriek
 
 [Tag 0CRS](https://stacks.math.columbia.edu/tag/0CRS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1112). The attribute's comment: “THIRD CLAUSE: functoriality in E of the distinguished triangle and of its long exact cohomology sequence. The five maps are components of natural transformations of functors on D(O\_X); no hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional and exists\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1112). The attribute's comment: “THIRD CLAUSE: functoriality in E of the distinguished triangle and of its long exact cohomology sequence. The five maps are components of natural transformations of functors on D(O\_X); no hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional and exists\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, functoriality in `E`, with nothing granted.**
 >
@@ -946,7 +946,7 @@ theorem exists_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditional
             (biprod.desc (bU.app E) (-(bV.app E))) (δ.app E)) n (n + 1) rfl).Exact
 ```
 
-**`AlgebraicGeometry.Space.exists_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1180). The attribute's comment: “FIRST CLAUSE: every E of D(O\_X) sits in a distinguished triangle RGamma(X,E) -> RGamma(U,E) (+) RGamma(V,E) -> RGamma(U x\_X V,E) -> RGamma(X,E)[1]; no hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional and exists\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1180). The attribute's comment: “FIRST CLAUSE: every E of D(O\_X) sits in a distinguished triangle RGamma(X,E) -> RGamma(U,E) (+) RGamma(V,E) -> RGamma(U x\_X V,E) -> RGamma(X,E)[1]; no hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional and exists\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, the distinguished triangle, with nothing granted.**
 >
@@ -997,7 +997,7 @@ theorem exists_mem_distTriang_edsSectionsMayerVietoris_unconditional
             (smallEtaleRingedSite B S hS W.1 W.2).O)).obj)))
 ```
 
-**`AlgebraicGeometry.Space.exists_homologySequence_exact_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1243). The attribute's comment: “SECOND CLAUSE: every E of D(O\_X) sits in a long exact cohomology sequence ... -> H^n(X,E) -> H^n(U,E) (+) H^n(V,E) -> H^n(U x\_X V,E) -> H^\{n+1}(X,E) -> ...; no hypothesis beyond the square and the four derived functors presenting RGamma. It is the homology sequence of the triangle of exists\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional; functoriality is exists\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_homologySequence_exact_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean, line 1243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSections.lean#L1243). The attribute's comment: “SECOND CLAUSE: every E of D(O\_X) sits in a long exact cohomology sequence ... -> H^n(X,E) -> H^n(U,E) (+) H^n(V,E) -> H^n(U x\_X V,E) -> H^\{n+1}(X,E) -> ...; no hypothesis beyond the square and the four derived functors presenting RGamma. It is the homology sequence of the triangle of exists\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional; functoriality is exists\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, the long exact cohomology sequence, with nothing granted.**
 >
@@ -1056,7 +1056,7 @@ theorem exists_homologySequence_exact_edsSectionsMayerVietoris_unconditional
         (Triangle.mk (biprod.lift fU fV) (biprod.desc gU (-gV)) δ) n (n + 1) rfl).Exact
 ```
 
-**`AlgebraicGeometry.Space.exists_delta_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L548). The attribute's comment: “THIRD CLAUSE: functoriality in E of the distinguished triangle and of its long exact cohomology sequence. The four maps are NAMED in the statement -- the right derived transformations of the restriction maps RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-) -> RGamma(U x\_X V,-), RGamma(V,-) -> RGamma(U x\_X V,-) -- and are components of natural transformations of functors on D(O\_X); only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_delta\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional and exists\_delta\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_delta_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 548](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L548). The attribute's comment: “THIRD CLAUSE: functoriality in E of the distinguished triangle and of its long exact cohomology sequence. The four maps are NAMED in the statement -- the right derived transformations of the restriction maps RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-) -> RGamma(U x\_X V,-), RGamma(V,-) -> RGamma(U x\_X V,-) -- and are components of natural transformations of functors on D(O\_X); only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_delta\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional and exists\_delta\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, functoriality in `E`, with nothing granted.**
 >
@@ -1242,7 +1242,7 @@ theorem exists_delta_natTrans_mem_distTriang_edsSectionsMayerVietoris_unconditio
             (δ.app E)) n (n + 1) rfl).Exact
 ```
 
-**`AlgebraicGeometry.Space.exists_delta_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L709). The attribute's comment: “FIRST CLAUSE: every E of D(O\_X) sits in a distinguished triangle RGamma(X,E) -> RGamma(U,E) (+) RGamma(V,E) -> RGamma(U x\_X V,E) -> RGamma(X,E)[1] whose four first maps are NAMED in the statement: the right derived transformations of the restriction maps RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-), RGamma(V,-) -> RGamma(U x\_X V,-). Only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_delta\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional and exists\_delta\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_delta_mem_distTriang_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 709](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L709). The attribute's comment: “FIRST CLAUSE: every E of D(O\_X) sits in a distinguished triangle RGamma(X,E) -> RGamma(U,E) (+) RGamma(V,E) -> RGamma(U x\_X V,E) -> RGamma(X,E)[1] whose four first maps are NAMED in the statement: the right derived transformations of the restriction maps RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-), RGamma(V,-) -> RGamma(U x\_X V,-). Only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. The other two clauses are exists\_delta\_homologySequence\_exact\_edsSectionsMayerVietoris\_unconditional and exists\_delta\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, the distinguished triangle, with nothing granted.**
 >
@@ -1346,7 +1346,7 @@ theorem exists_delta_mem_distTriang_edsSectionsMayerVietoris_unconditional
             (smallEtaleRingedSite B S hS W.1 W.2).O)).obj)))
 ```
 
-**`AlgebraicGeometry.Space.exists_delta_homologySequence_exact_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 823](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L823). The attribute's comment: “SECOND CLAUSE: every E of D(O\_X) sits in a long exact cohomology sequence ... -> H^n(X,E) -> H^n(U,E) (+) H^n(V,E) -> H^n(U x\_X V,E) -> H^\{n+1}(X,E) -> ... whose maps are H^n of the NAMED restriction maps -- the triangle it is the homology sequence of has its four first maps written out, the right derived transformations of RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-), RGamma(V,-) -> RGamma(U x\_X V,-); only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. It is the homology sequence of the triangle of exists\_delta\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional; functoriality is exists\_delta\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
+**`AlgebraicGeometry.Space.exists_delta_homologySequence_exact_edsSectionsMayerVietoris_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean, line 823](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisSectionsNamed.lean#L823). The attribute's comment: “SECOND CLAUSE: every E of D(O\_X) sits in a long exact cohomology sequence ... -> H^n(X,E) -> H^n(U,E) (+) H^n(V,E) -> H^n(U x\_X V,E) -> H^\{n+1}(X,E) -> ... whose maps are H^n of the NAMED restriction maps -- the triangle it is the homology sequence of has its four first maps written out, the right derived transformations of RGamma(X,-) -> RGamma(U,-), RGamma(V,-) and RGamma(U,-), RGamma(V,-) -> RGamma(U x\_X V,-); only the connecting delta is existential, as in the source. No hypothesis beyond the square and the four derived functors presenting RGamma. It is the homology sequence of the triangle of exists\_delta\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional; functoriality is exists\_delta\_natTrans\_mem\_distTriang\_edsSectionsMayerVietoris\_unconditional”.
 
 > **Stacks 0CRS, the long exact cohomology sequence, with nothing granted.**
 >
@@ -1503,7 +1503,7 @@ theorem exists_delta_homologySequence_exact_edsSectionsMayerVietoris_uncondition
 
 [Tag 08HA](https://stacks.math.columbia.edu/tag/08HA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_restrictEtaleModuleLowerShriekMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean#L79). The attribute's comment: “on modules, for the constructed extension by zero”.
+**`AlgebraicGeometry.Space.isIso_restrictEtaleModuleLowerShriekMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean#L79). The attribute's comment: “on modules, for the constructed extension by zero”.
 
 > **Stacks 08HA**, on sheaves of modules. Let `j : U ⟶ X` and `j_V : V ⟶ X` be étale morphisms of
 > algebraic spaces, let `W = V ×_X U` with projections `j_W : W ⟶ V` and `p : W ⟶ U`, and let `F` be
@@ -1519,7 +1519,7 @@ theorem isIso_restrictEtaleModuleLowerShriekMap :
         (isEtale_of_isPullback B S hS p jW j jV sq.flip hj)))
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedRestrictEtaleModuleLowerShriekMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean#L135). The attribute's comment: “for the constructed extension by zero, on any model of the derived categories”.
+**`AlgebraicGeometry.Space.isIso_derivedRestrictEtaleModuleLowerShriekMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictEtaleModuleLowerShriek.lean#L135). The attribute's comment: “for the constructed extension by zero, on any model of the derived categories”.
 
 > **Stacks 08HA.** Let `j : U ⟶ X` and `j_V : V ⟶ X` be étale morphisms of algebraic spaces, let
 > `W = V ×_X U` with projections `j_W : W ⟶ V` and `p : W ⟶ U`, and let `E` be an object of the
@@ -1532,7 +1532,7 @@ theorem isIso_derivedRestrictEtaleModuleLowerShriekMap :
     IsIso (derivedRestrictEtaleModuleLowerShriekMap B S hS sq hj hjV)
 ```
 
-**`AlgebraicGeometry.Space.isIso_restrictExtensionByZeroMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean#L211). The attribute's comment: “on modules”.
+**`AlgebraicGeometry.Space.isIso_restrictExtensionByZeroMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean#L211). The attribute's comment: “on modules”.
 
 > **Stacks 08HA**, on sheaves of modules.  Let `j : U ⟶ X` and `j_V : V ⟶ X` be étale
 > morphisms of algebraic spaces, let `W = V ×_X U` with projections `j_W : W ⟶ V` and `p : W ⟶ U`,
@@ -1544,7 +1544,7 @@ theorem isIso_restrictExtensionByZeroMap :
     IsIso (restrictExtensionByZeroMap B S hS sq hj hjV adj adjW)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedRestrictExtensionByZeroMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean#L250).
+**`AlgebraicGeometry.Space.isIso_derivedRestrictExtensionByZeroMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictExtensionByZero.lean#L250).
 
 > **Stacks 08HA.**  Let `j : U ⟶ X` and `j_V : V ⟶ X` be étale morphisms of algebraic spaces,
 > let `W = V ×_X U` with projections `j_W : W ⟶ V` and `p : W ⟶ U`, and let `E` be an object of
@@ -1560,7 +1560,7 @@ theorem isIso_derivedRestrictExtensionByZeroMap :
 
 [Tag 08GG](https://stacks.math.columbia.edu/tag/08GG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_edsEtaleDerivedAdjunction_unit_app_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroSupported.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroSupported.lean#L517). The attribute's comment: “clause (2)(a): F ⟶ (j\_!F)|\_V is an isomorphism for F supported on j^\{-1}T”.
+**`AlgebraicGeometry.Space.isIso_edsEtaleDerivedAdjunction_unit_app_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroSupported.lean, line 517](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtensionByZeroSupported.lean#L517). The attribute's comment: “clause (2)(a): F ⟶ (j\_!F)|\_V is an isomorphism for F supported on j^\{-1}T”.
 
 > **Stacks 08GG, clause (2)(a).**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished
 > square of algebraic spaces and `T = |X| \ |U|`.  For an object `F` of `D(𝒪_V)` supported on
@@ -1579,7 +1579,7 @@ theorem isIso_edsEtaleDerivedAdjunction_unit_app_of_cohomologySupportedOn
     IsIso ((edsEtaleDerivedAdjunction B S hS hsq).unit.app F)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedCounit_edsEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean#L126). The attribute's comment: “clause (1)(b): the derived counit j\_!(E|\_V) ⟶ E is an isomorphism for E in D(O\_X) supported on T = |X| \ |U|, unconditionally”.
+**`AlgebraicGeometry.Space.isIso_derivedCounit_edsEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean#L126). The attribute's comment: “clause (1)(b): the derived counit j\_!(E|\_V) ⟶ E is an isomorphism for E in D(O\_X) supported on T = |X| \ |U|, unconditionally”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  For `E` in `D(𝒪_X)` supported on `T`, the counit
@@ -1592,7 +1592,7 @@ theorem isIso_derivedCounit_edsEtale_of_cohomologySupportedOn
     IsIso ((NatTrans.mapDerivedCategory (edsEtaleShriekAdjunction B S hS hsq).counit).app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedUnit_edsEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean#L150). The attribute's comment: “clause (2)(a): the unit F ⟶ (j\_!F)|\_V is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally”.
+**`AlgebraicGeometry.Space.isIso_derivedUnit_edsEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedExtensionByZero.lean#L150). The attribute's comment: “clause (2)(a): the unit F ⟶ (j\_!F)|\_V is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  For `F` in `D(𝒪_V)` supported on `j⁻¹T`, the unit
@@ -1606,7 +1606,7 @@ theorem isIso_derivedUnit_edsEtale_of_cohomologySupportedOn
     IsIso ((Adjunction.mapDerivedCategory (edsEtaleShriekAdjunction B S hS hsq)).unit.app F)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedUnit_edsDerivedRestrictPushEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementCanonical.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementCanonical.lean#L130). The attribute's comment: “clause (1)(a): the canonical map E ⟶ Rj\_*(E|\_V) is an isomorphism for E supported on |X| \ |U|, at the chosen total right derived functors”.
+**`AlgebraicGeometry.Space.isIso_derivedUnit_edsDerivedRestrictPushEtale_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementCanonical.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementCanonical.lean#L130). The attribute's comment: “clause (1)(a): the canonical map E ⟶ Rj\_*(E|\_V) is an isomorphism for E supported on |X| \ |U|, at the chosen total right derived functors”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`. For an object `E` of `D(𝒪_X)` supported on `T`, the
@@ -1622,7 +1622,7 @@ theorem isIso_derivedUnit_edsDerivedRestrictPushEtale_of_cohomologySupportedOn
       (edsTotalRightDerivedUnitEtale B S hS hsq)).app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_unit_derivedRestrict_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L282). The attribute's comment: “clause (1)(a): for E in D(O\_X) supported on T = |X| \ |U| the map E ⟶ Rj\_*(E|\_V), the unit of the adjunction between derived restriction and the derived direct image, is an isomorphism. Rj\_* is any right adjoint of derived restriction, which pins it and its unit; a total right derived functor of j\_* is one, by etaleModulePullbackDerivedPushforwardAdjunction”.
+**`AlgebraicGeometry.Space.isIso_unit_derivedRestrict_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L282). The attribute's comment: “clause (1)(a): for E in D(O\_X) supported on T = |X| \ |U| the map E ⟶ Rj\_*(E|\_V), the unit of the adjunction between derived restriction and the derived direct image, is an isomorphism. Rj\_* is any right adjoint of derived restriction, which pins it and its unit; a total right derived functor of j\_* is one, by etaleModulePullbackDerivedPushforwardAdjunction”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  Let `Rj_*` be a right adjoint of derived restriction
@@ -1640,7 +1640,7 @@ theorem isIso_unit_derivedRestrict_of_cohomologySupportedOn
     IsIso (adjPush.unit.app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_counit_derivedRestrict_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L302). The attribute's comment: “clause (1)(b): for E in D(O\_X) supported on T = |X| \ |U| the map j\_!(E|\_V) ⟶ E, the counit of the adjunction between derived extension by zero and derived restriction, is an isomorphism. j\_! is any left adjoint of derived restriction, which pins it and its counit; the derived functor of etaleModuleLowerShriek is one”.
+**`AlgebraicGeometry.Space.isIso_counit_derivedRestrict_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 302](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L302). The attribute's comment: “clause (1)(b): for E in D(O\_X) supported on T = |X| \ |U| the map j\_!(E|\_V) ⟶ E, the counit of the adjunction between derived extension by zero and derived restriction, is an isomorphism. j\_! is any left adjoint of derived restriction, which pins it and its counit; the derived functor of etaleModuleLowerShriek is one”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  Let `j_!` be a left adjoint of derived restriction
@@ -1658,7 +1658,7 @@ theorem isIso_counit_derivedRestrict_of_cohomologySupportedOn
     IsIso (adjShriek.counit.app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_unit_derivedShriek_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L401). The attribute's comment: “clause (2)(a): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the map F ⟶ (j\_!F)|\_V, the unit of the adjunction between derived extension by zero and derived restriction, is an isomorphism. j\_! is any left adjoint of derived restriction, which pins it and its unit; the derived functor of etaleModuleLowerShriek is one”.
+**`AlgebraicGeometry.Space.isIso_unit_derivedShriek_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L401). The attribute's comment: “clause (2)(a): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the map F ⟶ (j\_!F)|\_V, the unit of the adjunction between derived extension by zero and derived restriction, is an isomorphism. j\_! is any left adjoint of derived restriction, which pins it and its unit; the derived functor of etaleModuleLowerShriek is one”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  Let `j_!` be a left adjoint of derived restriction
@@ -1678,7 +1678,7 @@ theorem isIso_unit_derivedShriek_of_cohomologySupportedOn
     IsIso (adjShriek.unit.app F)
 ```
 
-**`AlgebraicGeometry.Space.isIso_counit_derivedPushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L448). The attribute's comment: “clause (2)(b): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the map (Rj\_*F)|\_V ⟶ F, the counit of the adjunction between derived restriction and the derived direct image, is an isomorphism. Rj\_* is any right adjoint of derived restriction, which pins it and its counit; a total right derived functor of j\_* is one, by etaleModulePullbackDerivedPushforwardAdjunction”.
+**`AlgebraicGeometry.Space.isIso_counit_derivedPushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L448). The attribute's comment: “clause (2)(b): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the map (Rj\_*F)|\_V ⟶ F, the counit of the adjunction between derived restriction and the derived direct image, is an isomorphism. Rj\_* is any right adjoint of derived restriction, which pins it and its counit; a total right derived functor of j\_* is one, by etaleModulePullbackDerivedPushforwardAdjunction”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  Let `Rj_*` be a right adjoint of derived restriction
@@ -1698,7 +1698,7 @@ theorem isIso_counit_derivedPushforward_of_cohomologySupportedOn
     IsIso (adjPush.counit.app F)
 ```
 
-**`AlgebraicGeometry.Space.isIso_supportedShriekToPushforward_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L480). The attribute's comment: “clause (2)(c): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the comparison j\_!F ⟶ Rj\_*F is an isomorphism. The comparison is supportedShriekToPushforward, the adjunct under derived restriction ⊣ Rj\_* of the inverse of the unit F ⟶ (j\_!F)|\_V, which is invertible by clause (2)(a), isIso\_unit\_derivedShriek\_of\_cohomologySupportedOn. j\_! and Rj\_* are any left and right adjoints of derived restriction”.
+**`AlgebraicGeometry.Space.isIso_supportedShriekToPushforward_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 480](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L480). The attribute's comment: “clause (2)(c): for F in D(O\_V) supported on the preimage of T = |X| \ |U| the comparison j\_!F ⟶ Rj\_*F is an isomorphism. The comparison is supportedShriekToPushforward, the adjunct under derived restriction ⊣ Rj\_* of the inverse of the unit F ⟶ (j\_!F)|\_V, which is invertible by clause (2)(a), isIso\_unit\_derivedShriek\_of\_cohomologySupportedOn. j\_! and Rj\_* are any left and right adjoints of derived restriction”.
 
 > Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of algebraic spaces over a
 > scheme `S` and set `T = |X| \ |U|`.  Let `j_!` and `Rj_*` be a left and a right adjoint of
@@ -1722,7 +1722,7 @@ theorem isIso_supportedShriekToPushforward_of_supported
       (isIso_unit_derivedShriek_of_cohomologySupportedOn B S hS hsq adjShriek F hF))
 ```
 
-**`AlgebraicGeometry.Space.isIso_of_cohomologySupportedOn_edsEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L517). The attribute's comment: “all five clauses: for E in D(O\_X) supported on T = |X| \ |U| the unit E ⟶ Rj\_*(E|\_V) and the counit j\_!(E|\_V) ⟶ E are isomorphisms, and for F in D(O\_V) supported on the preimage of T the unit F ⟶ (j\_!F)|\_V, the counit (Rj\_*F)|\_V ⟶ F and the comparison j\_!F ⟶ Rj\_*F are isomorphisms. j\_! and Rj\_* are any left and right adjoints of derived restriction, which pins them and their units and counits; the derived functor of etaleModuleLowerShriek and a total right derived functor of j\_* are such adjoints”.
+**`AlgebraicGeometry.Space.isIso_of_cohomologySupportedOn_edsEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean, line 517](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementClauses.lean#L517). The attribute's comment: “all five clauses: for E in D(O\_X) supported on T = |X| \ |U| the unit E ⟶ Rj\_*(E|\_V) and the counit j\_!(E|\_V) ⟶ E are isomorphisms, and for F in D(O\_V) supported on the preimage of T the unit F ⟶ (j\_!F)|\_V, the counit (Rj\_*F)|\_V ⟶ F and the comparison j\_!F ⟶ Rj\_*F are isomorphisms. j\_! and Rj\_* are any left and right adjoints of derived restriction, which pins them and their units and counits; the derived functor of etaleModuleLowerShriek and a total right derived functor of j\_* are such adjoints”.
 
 > Let `S` be a scheme, let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished square of
 > algebraic spaces over `S` and set `T = |X| \ |U|`.  Let `j_!` and `Rj_*` be a left and a right
@@ -1756,7 +1756,7 @@ theorem isIso_of_cohomologySupportedOn_edsEtale
             (isIso_unit_derivedShriek_of_cohomologySupportedOn B S hS hsq adjShriek F hF)))
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedCounit_etaleModuleLowerShriek_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementUnconditional.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementUnconditional.lean#L132). The attribute's comment: “clause (1)(b): the derived counit j\_!(E|\_V) ⟶ E is an isomorphism for E supported on |X| \ |U|”.
+**`AlgebraicGeometry.Space.isIso_derivedCounit_etaleModuleLowerShriek_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementUnconditional.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedOnComplementUnconditional.lean#L132). The attribute's comment: “clause (1)(b): the derived counit j\_!(E|\_V) ⟶ E is an isomorphism for E supported on |X| \ |U|”.
 
 > **Stacks 08GG, clause (1)(b).**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished
 > square of algebraic spaces over a scheme `S` and set `T = |X| \ |U|`.  Let `E` be an object of
@@ -1778,7 +1778,7 @@ theorem isIso_derivedCounit_etaleModuleLowerShriek_of_cohomologySupportedOn
       (edsLowerShriekAdjEtale B S hS hsq).counit).app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_counit_edsEtale_rightAdjoint_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L267). The attribute's comment: “clause (2)(b): the counit (Rj\_*F)|\_V ⟶ F is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally; Rj\_* is a right adjoint of derived restriction, given with its adjunction”.
+**`AlgebraicGeometry.Space.isIso_counit_edsEtale_rightAdjoint_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 267](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L267). The attribute's comment: “clause (2)(b): the counit (Rj\_*F)|\_V ⟶ F is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally; Rj\_* is a right adjoint of derived restriction, given with its adjunction”.
 
 > **Stacks 08GG, clause (2)(b).**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished
 > square of algebraic spaces over a scheme `S` and set `T = |X| \ |U|`.  For `F` in `D(𝒪_V)`
@@ -1798,7 +1798,7 @@ theorem isIso_counit_edsEtale_rightAdjoint_of_cohomologySupportedOn
     IsIso (adjPush.counit.app F)
 ```
 
-**`AlgebraicGeometry.Space.isIso_unit_edsEtale_rightAdjoint_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L315). The attribute's comment: “clause (1)(a): the unit E ⟶ Rj\_*(E|\_V) is an isomorphism for E in D(O\_X) supported on T = |X| \ |U|, unconditionally; Rj\_* is a right adjoint of derived restriction, given with its adjunction”.
+**`AlgebraicGeometry.Space.isIso_unit_edsEtale_rightAdjoint_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L315). The attribute's comment: “clause (1)(a): the unit E ⟶ Rj\_*(E|\_V) is an isomorphism for E in D(O\_X) supported on T = |X| \ |U|, unconditionally; Rj\_* is a right adjoint of derived restriction, given with its adjunction”.
 
 > **Stacks 08GG, clause (1)(a).**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished
 > square of algebraic spaces over a scheme `S` and set `T = |X| \ |U|`.  For `E` in `D(𝒪_X)`
@@ -1815,7 +1815,7 @@ theorem isIso_unit_edsEtale_rightAdjoint_of_cohomologySupportedOn
     IsIso (adjPush.unit.app E)
 ```
 
-**`AlgebraicGeometry.Space.isIso_supportedShriekToPushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L344). The attribute's comment: “clause (2)(c): the comparison j\_!F ⟶ Rj\_*F is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally; j\_! and Rj\_* are the left and right adjoints of derived restriction, given with their adjunctions”.
+**`AlgebraicGeometry.Space.isIso_supportedShriekToPushforward_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean, line 344](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SupportedPushforwardPerfect.lean#L344). The attribute's comment: “clause (2)(c): the comparison j\_!F ⟶ Rj\_*F is an isomorphism for F in D(O\_V) supported on j^\{-1}T, unconditionally; j\_! and Rj\_* are the left and right adjoints of derived restriction, given with their adjunctions”.
 
 > **Stacks 08GG, clause (2)(c).**  Let `(U ⊆ X, j : V ⟶ X)` be an elementary distinguished
 > square of algebraic spaces over a scheme `S` and set `T = |X| \ |U|`.  For `F` in `D(𝒪_V)`
@@ -1840,7 +1840,7 @@ theorem isIso_supportedShriekToPushforward_of_cohomologySupportedOn
 
 [Tag 08HB](https://stacks.math.columbia.edu/tag/08HB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_glued_object_and_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisGlueingTag.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisGlueingTag.lean#L241). The attribute's comment: “both assertions, for an elementary distinguished square (U ⊆ X, j\_V : V ⟶ X) of algebraic spaces over a scheme S with intersection P = U ×\_X V and nothing else bound: for an object A of D(O\_U), an object Bo of D(O\_V) and an isomorphism c : A|\_P ≅ Bo|\_P, an object F of D(O\_X) with isomorphisms f : F|\_U ≅ A and g : F|\_V ≅ Bo satisfying c = g|\_P ∘ f⁻¹|\_P, and, for every object E of D(O\_X) and all morphisms a : A ⟶ E|\_U and b : Bo ⟶ E|\_V with a|\_P = b|\_P ∘ c, a morphism φ : F ⟶ E whose restriction to U is a ∘ f and whose restriction to V is b ∘ g. The compatibility over P is written with the identifications edsDerivedRestrictCompOpen and edsDerivedRestrictCompEtale of the iterated restrictions with the restriction to P”.
+**`AlgebraicGeometry.Space.exists_glued_object_and_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisGlueingTag.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/MayerVietorisGlueingTag.lean#L241). The attribute's comment: “both assertions, for an elementary distinguished square (U ⊆ X, j\_V : V ⟶ X) of algebraic spaces over a scheme S with intersection P = U ×\_X V and nothing else bound: for an object A of D(O\_U), an object Bo of D(O\_V) and an isomorphism c : A|\_P ≅ Bo|\_P, an object F of D(O\_X) with isomorphisms f : F|\_U ≅ A and g : F|\_V ≅ Bo satisfying c = g|\_P ∘ f⁻¹|\_P, and, for every object E of D(O\_X) and all morphisms a : A ⟶ E|\_U and b : Bo ⟶ E|\_V with a|\_P = b|\_P ∘ c, a morphism φ : F ⟶ E whose restriction to U is a ∘ f and whose restriction to V is b ∘ g. The compatibility over P is written with the identifications edsDerivedRestrictCompOpen and edsDerivedRestrictCompEtale of the iterated restrictions with the restriction to P”.
 
 > **Stacks 08HB.**  Let `(U ⊆ X, j_V : V ⟶ X)` be an elementary distinguished square of
 > algebraic spaces over a scheme `S`, let `P = U ×_X V` be its intersection and write `(-)|_Y`
@@ -1897,4 +1897,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.10, Tag 08GS](https://stacks.math.columbia.edu/tag/08GS)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.43 Grothendieck's algebraization theorem
 
-Section 76.43 of the Stacks Project, [Tag 0A00](https://stacks.math.columbia.edu/tag/0A00). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.43 of the Stacks Project, [Tag 0A00](https://stacks.math.columbia.edu/tag/0A00). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08BG, a lemma
 
 [Tag 08BG](https://stacks.math.columbia.edu/tag/08BG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isClosedImmersion_adicFibre_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedSubspaceTowerAlgebraization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedSubspaceTowerAlgebraization.lean#L56).
+**`AlgebraicGeometry.Space.exists_isClosedImmersion_adicFibre_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedSubspaceTowerAlgebraization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ClosedSubspaceTowerAlgebraization.lean#L56).
 
 > **Stacks 08BG.** Let `A` be a Noetherian ring complete with respect to an ideal `I`, write
 > `S = Spec A` and `S_n = Spec(A / I^{n+1})`, and let `X ⟶ S` be a separated morphism of finite
@@ -52,7 +52,7 @@ theorem exists_isClosedImmersion_adicFibre_iso [IsNoetherianRing A] [IsAdicCompl
 
 [Tag 0A01](https://stacks.math.columbia.edu/tag/0A01) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFinite_adicFibre_iso_of_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFiniteAlgebraization/FiniteAlgebraization.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdicFiniteAlgebraization/FiniteAlgebraization.lean#L62).
+**`AlgebraicGeometry.Space.exists_isFinite_adicFibre_iso_of_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdicFiniteAlgebraization/FiniteAlgebraization.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AdicFiniteAlgebraization/FiniteAlgebraization.lean#L62).
 
 > **Algebraization of a finite tower over the adic fibres.**  Let `A` be a Noetherian ring
 > complete along `I`, `S = Spec A`, and `f : X ⟶ S` a separated morphism of finite type of algebraic
@@ -91,13 +91,13 @@ theorem exists_isFinite_adicFibre_iso_of_tower [IsAdicComplete I A]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraization.lean#L443), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationTag.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationTag.lean#L23) (StacksFrontier).
+- [`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraization.lean#L443), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationTag.lean, line 23](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationTag.lean#L23) (StacksFrontier).
 
 ## Tag 0GHK, a remark
 
 [Tag 0GHK](https://stacks.math.columbia.edu/tag/0GHK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean#L288). The attribute's comment: “the quasi-separated case: `Y ⟶ S` quasi-separated and locally of finite type, existence and uniqueness; with the separated case `existsUnique_adicFibreMap_eq_of_isLocallyOfFiniteType` this is everything the remark asserts, its "we don't know the answer in general" being an open question, not a statement”.
+**`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean, line 288](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean#L288). The attribute's comment: “the quasi-separated case: `Y ⟶ S` quasi-separated and locally of finite type, existence and uniqueness; with the separated case `existsUnique_adicFibreMap_eq_of_isLocallyOfFiniteType` this is everything the remark asserts, its "we don't know the answer in general" being an open question, not a statement”.
 
 > **Stacks 0GHK, the quasi-separated case.** Let `A` be a Noetherian ring complete with respect
 > to an ideal `I`, `S = Spec A`, `S_n = Spec (A / I^{n+1})`, and let `X`, `Y` be algebraic spaces
@@ -123,7 +123,7 @@ theorem existsUnique_adicFibreMap_eq_of_isQuasiSeparated [IsNoetherianRing A]
     ∃! φ : X ⟶ Y, ∃ hφ : φ ≫ fY = fX, ∀ n, adicFibreMap A I B hS hSn φ hφ n = g n
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq_separated_and_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean#L314). The attribute's comment: “both assertions of the remark: the separated and the quasi-separated case, existence and uniqueness; "we don't know the answer in general" is an open question, not a statement”.
+**`AlgebraicGeometry.Space.existsUnique_adicFibreMap_eq_separated_and_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/MorphismAlgebraizationQuasiSeparated.lean#L314). The attribute's comment: “both assertions of the remark: the separated and the quasi-separated case, existence and uniqueness; "we don't know the answer in general" is an open question, not a statement”.
 
 > **Stacks 0GHK.** Let `A` be a Noetherian ring complete with respect to an ideal `I`,
 > `S = Spec A`, and let `X`, `Y` be algebraic spaces over `S` with `X ⟶ S` proper and `Y ⟶ S`
@@ -154,7 +154,7 @@ theorem existsUnique_adicFibreMap_eq_separated_and_quasiSeparated
 
 [Tag 0E7R](https://stacks.math.columbia.edu/tag/0E7R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isProjective_algebraization_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalCurve/SpaceAlgebraization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalCurve/SpaceAlgebraization.lean#L72).
+**`AlgebraicGeometry.Space.exists_isProjective_algebraization_of_dimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalCurve/SpaceAlgebraization.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalCurve/SpaceAlgebraization.lean#L72).
 
 > **[Stacks, Tag 0E7R], algebraization of formal curves.** Let `A` be a complete local
 > Noetherian ring, `S = Spec A`, `Sₙ = Spec (A / 𝔪 ^ (n + 1))`, and let `Xₙ ⟶ Sₙ` be algebraic spaces
@@ -192,7 +192,7 @@ theorem exists_isProjective_algebraization_of_dimension_le_one
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1605.exists_iso_isProjective_of_isProper_of_dimension_adicFibre_le_one`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCurveOverCompleteLocalScheme.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperCurveOverCompleteLocalScheme.lean#L26) (StacksFrontier).
+- [`AlgebraicGeometry.Space.C1605.exists_iso_isProjective_of_isProper_of_dimension_adicFibre_le_one`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModificationCompleteLocalProjective.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProperCurveOverCompleteLocalScheme.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperCurveOverCompleteLocalScheme.lean#L26) (StacksFrontier).
 
 ## Depends on
 
@@ -201,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.43, Tag 0A00](https://stacks.math.columbia.edu/tag/0A00)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

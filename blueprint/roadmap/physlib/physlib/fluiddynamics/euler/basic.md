@@ -8,7 +8,7 @@ proof: formalized
 
 # Euler equation for fluid flows
 
-The module `Physlib.FluidDynamics.Euler.Basic`, [Physlib/FluidDynamics/Euler/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/Euler/Basic.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
+The module `Physlib.FluidDynamics.Euler.Basic`, [Physlib/FluidDynamics/Euler/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Euler/Basic.lean): 3 declarations, 3 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.FluidDynamics.Euler.Basic`, [Physlib/FluidDynamics/Euler/Bas
 
 ## A. Euler equations
 
-**`FluidDynamics.Euler`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/Euler/Basic.lean#L48).
+**`FluidDynamics.Euler`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Euler/Basic.lean#L48).
 
 > The conservative Euler equations: continuity, Cauchy momentum, and inviscid stress.
 
@@ -37,7 +37,7 @@ The module `Physlib.FluidDynamics.Euler.Basic`, [Physlib/FluidDynamics/Euler/Bas
 def Euler (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) : Prop
 ```
 
-**`FluidDynamics.ConvectiveEuler`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/Euler/Basic.lean#L54).
+**`FluidDynamics.ConvectiveEuler`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Euler/Basic.lean#L54).
 
 > The convective Euler equations: continuity, convective Cauchy momentum, and inviscid
 > stress.
@@ -48,7 +48,7 @@ def ConvectiveEuler (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) :
 
 ## B. Equivalence of conservative and convective Euler forms
 
-**`FluidDynamics.euler_iff_convectiveEuler`**, a theorem, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/Euler/Basic.lean#L66). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`FluidDynamics.euler_iff_convectiveEuler`**, a theorem, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Euler/Basic.lean#L66). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The conservative and convective Euler forms are equivalent when the fields are
 > differentiable enough for the product rules.
@@ -71,4 +71,4 @@ theorem euler_iff_convectiveEuler
 
 ## Sources
 
-- [Physlib/FluidDynamics/Euler/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/Euler/Basic.lean)
+- [Physlib/FluidDynamics/Euler/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/Euler/Basic.lean)

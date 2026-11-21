@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.19 Morphisms representable by algebraic spaces
 
-Section 87.19 of the Stacks Project, [Tag 0AJG](https://stacks.math.columbia.edu/tag/0AJG). 15 tags here are carried by 59 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.19 of the Stacks Project, [Tag 0AJG](https://stacks.math.columbia.edu/tag/0AJG). 15 tags here are carried by 59 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AJG, the section
 
 [Tag 0AJG](https://stacks.math.columbia.edu/tag/0AJG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsLocallyOfFiniteType.of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableEtaleFiniteType.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableEtaleFiniteType.lean#L99). The attribute's comment: “the theory of morphisms of algebraic spaces available to a morphism representable by algebraic spaces, in the instance this library uses it: a representable etale morphism is locally of finite type in the sense of Definition 0AM4”.
+**`AlgebraicGeometry.FormalSpace.IsLocallyOfFiniteType.of_isRepresentableEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableEtaleFiniteType.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableEtaleFiniteType.lean#L99). The attribute's comment: “the theory of morphisms of algebraic spaces available to a morphism representable by algebraic spaces, in the instance this library uses it: a representable etale morphism is locally of finite type in the sense of Definition 0AM4”.
 
 > **Stacks 0AJG.** A morphism of fppf sheaves on the big fppf site of `S` which is
 > representable by algebraic spaces and étale is locally of finite type in the sense of
@@ -33,7 +33,7 @@ theorem IsLocallyOfFiniteType.of_isRepresentableEtale {X Y : FppfSheaf B S hS} (
 
 [Tag 0APY](https://stacks.math.columbia.edu/tag/0APY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L380). The attribute's comment: “representable by algebraic spaces in an arbitrary value universe”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 380](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L380). The attribute's comment: “representable by algebraic spaces in an arbitrary value universe”.
 
 > A composition of morphisms representable by algebraic spaces is
 > representable by algebraic spaces, for presheaves on the big fppf site of `S` with values in
@@ -49,13 +49,13 @@ theorem isRepresentableByAlgebraicSpacesULift_comp
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.relativelyRepresentable.isMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L395) (StacksFrontier): “representable by schemes”.
+- [`CategoryTheory.Functor.relativelyRepresentable.isMultiplicative`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isMultiplicative#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 395](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L395) (StacksFrontier): “representable by schemes”.
 
 ## Tag 0APZ, a lemma
 
 [Tag 0APZ](https://stacks.math.columbia.edu/tag/0APZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L101). The attribute's comment: “representable by algebraic spaces”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L101). The attribute's comment: “representable by algebraic spaces”.
 
 > A base change of a morphism representable by algebraic spaces is
 > representable by algebraic spaces: in a cartesian square of presheaves on the big fppf site
@@ -72,13 +72,13 @@ theorem isRepresentableByAlgebraicSpacesULift_of_isPullback
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L110) (StacksFrontier): “representable by schemes”.
+- [`CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.relativelyRepresentable.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Representable.lean#L110) (StacksFrontier): “representable by schemes”.
 
 ## Tag 0AQ0, a lemma
 
 [Tag 0AQ0](https://stacks.math.columbia.edu/tag/0AQ0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FiniteType.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FiniteType.lean#L388). The attribute's comment: “for a second morphism whose source is an arbitrary formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_isFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FiniteType.lean, line 388](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/FiniteType.lean#L388). The attribute's comment: “for a second morphism whose source is an arbitrary formal algebraic space”.
 
 > Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of fppf sheaves on the big fppf site of `S`
 > with `Y` a formal algebraic space. If `f ≫ g` is representable by algebraic spaces then so is
@@ -92,7 +92,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_comp_of_isFormalAlgebraicSpace
     Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS f.hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean#L161). The attribute's comment: “for a second morphism whose source is an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean#L161). The attribute's comment: “for a second morphism whose source is an affine formal algebraic space”.
 
 > **Stacks 0AQ0** when the intermediate sheaf is an affine formal algebraic space. Let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of fppf sheaves on the big fppf site of `S` with `Y`
@@ -107,7 +107,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_comp_of_isAffineFormal
     Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS f.hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean#L172). The attribute's comment: “for a second morphism which is a monomorphism of fppf sheaves”.
+**`AlgebraicGeometry.FormalSpace.isRepresentableByAlgebraicSpacesULift_of_comp_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableCancellation.lean#L172). The attribute's comment: “for a second morphism which is a monomorphism of fppf sheaves”.
 
 > **Stacks 0AQ0** when the second morphism is a monomorphism. Its relative diagonal is then
 > an isomorphism, hence representable by objects of the site.
@@ -123,7 +123,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_comp_of_mono {X Y Z : FppfSheaf
 
 [Tag 0AN4](https://stacks.math.columbia.edu/tag/0AN4) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRepresentable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableLocalityTFAE.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableLocalityTFAE.lean#L102). The attribute's comment: “the equivalence of conditions (1) to (5); the sixth item of the source, add more here, is a placeholder”.
+**`AlgebraicGeometry.FormalSpace.isRepresentable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableLocalityTFAE.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableLocalityTFAE.lean#L102). The attribute's comment: “the equivalence of conditions (1) to (5); the sixth item of the source, add more here, is a placeholder”.
 
 > **Stacks 0AN4.** For a morphism `f : X ⟶ Y` of formal algebraic spaces over `S` the
 > following are equivalent:
@@ -157,7 +157,7 @@ theorem isRepresentable_tfae {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
 
 [Tag 0AJH](https://stacks.math.columbia.edu/tag/0AJH) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_representable_over_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineCharts.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineCharts.lean#L586). The attribute's comment: “the full statement, with no hypothesis beyond the source's: the set-theoretic condition of Stacks 0AIS on the source is proved, not assumed”.
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_representable_over_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineCharts.lean, line 586](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RepresentableOverAffineCharts.lean#L586). The attribute's comment: “the full statement, with no hypothesis beyond the source's: the set-theoretic condition of Stacks 0AIS on the source is proved, not assumed”.
 
 > **Stacks 0AJH.** Let `S` be a scheme, let `Y` be an affine formal algebraic space over `S`,
 > and let `f : X ⟶ Y` be a morphism of sheaves on the big fppf site of `S` which is representable
@@ -181,7 +181,7 @@ theorem isFormalAlgebraicSpace_of_representable_over_isAffineFormal
 
 [Tag 0AJI](https://stacks.math.columbia.edu/tag/0AJI) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_isRepresentableByAlgebraicSpacesULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocallyNoetherianSource.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/LocallyNoetherianSource.lean#L65).
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_isRepresentableByAlgebraicSpacesULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocallyNoetherianSource.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/LocallyNoetherianSource.lean#L65).
 
 > **Stacks 0AJI.** If `Y` is a formal algebraic space over `S` and `f : X ⟶ Y` is a morphism
 > of fppf sheaves representable by algebraic spaces, then `X` is a formal algebraic space over
@@ -206,7 +206,7 @@ theorem isFormalAlgebraicSpace_of_isRepresentableByAlgebraicSpacesULift
 
 [Tag 0AKN](https://stacks.math.columbia.edu/tag/0AKN) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.relative_isAffineHom_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/AllTestObjects.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/AllTestObjects.lean#L250).
+**`AlgebraicGeometry.FormalSpace.relative_isAffineHom_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/AllTestObjects.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/AllTestObjects.lean#L250).
 
 > **Stacks 0AKN.** Let `S` be a scheme contained in a big fppf site `B` and let `f : X ⟶ Y`
 > be a morphism of affine formal algebraic spaces over `S` which is representable by algebraic
@@ -225,7 +225,7 @@ theorem relative_isAffineHom_of_isRepresentableByAlgebraicSpaces
       (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) f
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_affine_baseChange_of_isRepresentableByAlgebraicSpaces'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean, line 691](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean#L691). The attribute's comment: “representability by schemes together with affineness, over every test object of the site whose underlying scheme is affine”.
+**`AlgebraicGeometry.FormalSpace.exists_affine_baseChange_of_isRepresentableByAlgebraicSpaces'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean, line 691](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean#L691). The attribute's comment: “representability by schemes together with affineness, over every test object of the site whose underlying scheme is affine”.
 
 > **Stacks 0AKN** over the test objects with affine underlying scheme. Let `f : X ⟶ Y` be a
 > morphism of affine formal algebraic spaces over `S` which is representable by algebraic spaces,
@@ -254,7 +254,7 @@ theorem exists_affine_baseChange_of_isRepresentableByAlgebraicSpaces'
         IsAffineHom ((BigFppfOver.toScheme B S hS).map q)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isAffineHom_of_hasThickeningPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean, line 787](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean#L787). The attribute's comment: “both assertions of the source -- representability by schemes and affineness -- over an arbitrary test object of the site”.
+**`AlgebraicGeometry.FormalSpace.relative_isAffineHom_of_hasThickeningPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean, line 787](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/MorphismOfAffines.lean#L787). The attribute's comment: “both assertions of the source -- representability by schemes and affineness -- over an arbitrary test object of the site”.
 
 > **Stacks 0AKN.** A morphism `f : X ⟶ Y` of affine formal algebraic spaces over `S` which is
 > representable by algebraic spaces is representable by schemes, and the morphism of schemes
@@ -295,7 +295,7 @@ theorem relative_isAffineHom_of_hasThickeningPresentation
 
 [Tag 0AN5](https://stacks.math.columbia.edu/tag/0AN5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_tfae_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TautFormalSpectrumTfae.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TautFormalSpectrumTfae.lean#L273). The attribute's comment: “the equivalence of (1), (2) and (3), with Spf(B) an affine formal algebraic space as in Definition 0AIF”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_tfae_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TautFormalSpectrumTfae.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TautFormalSpectrumTfae.lean#L273). The attribute's comment: “the equivalence of (1), (2) and (3), with Spf(B) an affine formal algebraic space as in Definition 0AIF”.
 
 > **Stacks 0AN5.** Let `S` be a scheme and `φ : A ⟶ C` a continuous homomorphism of weakly
 > admissible topological rings over `S`, the formal spectrum `Spf C` being an affine formal
@@ -350,7 +350,7 @@ theorem formalSpectrumMap_tfae_of_isAffineFormalAlgebraicSpace
 
 [Tag 0AKP](https://stacks.math.columbia.edu/tag/0AKP) in the Stacks Project.
 
-**`AlgebraicGeometry.isAffineFormalAlgebraicSpace_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean#L99). The attribute's comment: “affine\_source”.
+**`AlgebraicGeometry.isAffineFormalAlgebraicSpace_of_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean#L99). The attribute's comment: “affine\_source”.
 
 > The source of a representable affine map of fppf sheaves to an affine
 > formal algebraic space is an affine formal algebraic space.
@@ -370,7 +370,7 @@ theorem isAffineFormalAlgebraicSpace_of_affine
     IsAffineFormalAlgebraicSpace B S hS X
 ```
 
-**`AlgebraicGeometry.isCountablyIndexed_of_affine'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean#L204). The attribute's comment: “countably\_indexed\_source”.
+**`AlgebraicGeometry.isCountablyIndexed_of_affine'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/RepresentableAffine.lean#L204). The attribute's comment: “countably\_indexed\_source”.
 
 > The source of a representable affine map to a countably indexed sheaf is
 > countably indexed.
@@ -390,7 +390,7 @@ theorem isCountablyIndexed_of_affine'
     FormalSpace.IsCountablyIndexed B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffinePullbackPresentation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffinePullbackPresentation.lean#L295). The attribute's comment: “countably\_indexed\_source”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffinePullbackPresentation.lean, line 295](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffinePullbackPresentation.lean#L295). The attribute's comment: “countably\_indexed\_source”.
 
 > The source of a representable affine morphism of fppf sheaves whose target is countably
 > indexed is itself countably indexed.
@@ -408,7 +408,7 @@ theorem isCountablyIndexed_of_relative_isAffineHom
     IsCountablyIndexed B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSource.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSource.lean#L165). The attribute's comment: “affine\_source”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSource.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSource.lean#L165). The attribute's comment: “affine\_source”.
 
 > **Stacks 0AKP, part (1).** The source of a representable affine morphism of fppf sheaves
 > whose target is an affine formal algebraic space is itself an affine formal algebraic space.
@@ -426,7 +426,7 @@ theorem isAffineFormalAlgebraicSpace_of_relative_isAffineHom
     IsAffineFormalAlgebraicSpace B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L194). The attribute's comment: “classical\_source”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L194). The attribute's comment: “classical\_source”.
 
 > **Stacks 0AKP, part (3).** The source of a representable affine morphism of fppf sheaves
 > whose target is a countably indexed and classical affine formal algebraic space is itself
@@ -449,7 +449,7 @@ theorem isCountablyIndexedAndClassical_of_relative_isAffineHom
     IsCountablyIndexed B S hS X ∧ IsClassical B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L220). The attribute's comment: “weakly\_adic\_source”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 220](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L220). The attribute's comment: “weakly\_adic\_source”.
 
 > **Stacks 0AKP, part (4).** The source of a representable affine morphism of fppf sheaves
 > whose target is a weakly adic affine formal algebraic space is itself weakly adic.
@@ -471,7 +471,7 @@ theorem isWeaklyAdic_of_relative_isAffineHom
     IsWeaklyAdic B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L252). The attribute's comment: “adic\_star\_source”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L252). The attribute's comment: “adic\_star\_source”.
 
 > **Stacks 0AKP, part (5).** The source of a representable affine morphism of fppf sheaves
 > whose target is an adic\* affine formal algebraic space is itself adic\*.
@@ -496,7 +496,7 @@ theorem isAdicStar_of_relative_isAffineHom
     IsAdicStar B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L291). The attribute's comment: “noetherian\_source”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineSourceTypes.lean#L291). The attribute's comment: “noetherian\_source”.
 
 > **Stacks 0AKP, part (6).** The source of a representable affine morphism of fppf sheaves
 > which is locally of finite type and whose target is a Noetherian affine formal algebraic space
@@ -525,7 +525,7 @@ theorem isNoetherian_of_relative_isAffineHom
     IsNoetherian B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_and_isClassical_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L148). The attribute's comment: “classical\_source”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_and_isClassical_of_relative_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L148). The attribute's comment: “classical\_source”.
 
 > **Stacks 0AKP, part (3).** The source of a representable affine morphism of fppf sheaves
 > whose target is a countably indexed classical affine formal algebraic space is itself countably
@@ -546,7 +546,7 @@ theorem isCountablyIndexed_and_isClassical_of_relative_isAffineHom
     IsCountablyIndexed B S hS X ∧ IsClassical B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L175). The attribute's comment: “noetherian\_source”. References: EGA I (10.13.2), “special case”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L175). The attribute's comment: “noetherian\_source”. References: EGA I (10.13.2), “special case”.
 
 > **Stacks 0AKP, part (6).** The source of a representable affine morphism of fppf sheaves
 > which is locally of finite type and whose target is a Noetherian affine formal algebraic space
@@ -571,7 +571,7 @@ theorem isNoetherian_of_relative_isAffineHom'
     IsNoetherian B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L200). The attribute's comment: “adic\_star\_source”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L200). The attribute's comment: “adic\_star\_source”.
 
 > **Stacks 0AKP, part (5).** The source of a representable affine morphism of fppf sheaves
 > whose target is an adic\* affine formal algebraic space is itself adic\*.
@@ -594,7 +594,7 @@ theorem isAdicStar_of_relative_isAffineHom'
     IsAdicStar B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L231). The attribute's comment: “weakly\_adic\_source”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_relative_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean, line 231](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeDescentAlongAffine.lean#L231). The attribute's comment: “weakly\_adic\_source”.
 
 > **Stacks 0AKP, part (4).** The source of a representable affine morphism of fppf sheaves
 > whose target is a weakly adic affine formal algebraic space is itself weakly adic.
@@ -620,7 +620,7 @@ theorem isWeaklyAdic_of_relative_isAffineHom'
 
 [Tag 0AKQ](https://stacks.math.columbia.edu/tag/0AKQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L341). The attribute's comment: “clause (1); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and parts (1) and (2) of Stacks 0AKP are the library's `isAffineFormalAlgebraicSpace_of_relative_isAffineHom` and `isCountablyIndexed_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L341). The attribute's comment: “clause (1); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and parts (1) and (2) of Stacks 0AKP are the library's `isAffineFormalAlgebraicSpace_of_relative_isAffineHom` and `isCountablyIndexed_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (1).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is countably indexed then
@@ -635,7 +635,7 @@ theorem isCountablyIndexed_of_isRepresentable {X Y : FppfSheaf B S hS} (f : X �
     IsCountablyIndexed B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L356). The attribute's comment: “clause (2); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (3) of Stacks 0AKP is the library's `isCountablyIndexedAndClassical_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 356](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L356). The attribute's comment: “clause (2); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (3) of Stacks 0AKP is the library's `isCountablyIndexedAndClassical_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (2).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is countably indexed and
@@ -650,7 +650,7 @@ theorem isCountablyIndexedAndClassical_of_isRepresentable {X Y : FppfSheaf B S h
     IsCountablyIndexed B S hS X ∧ IsClassical B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L371). The attribute's comment: “clause (3); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (4) of Stacks 0AKP is the library's `isWeaklyAdic_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L371). The attribute's comment: “clause (3); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (4) of Stacks 0AKP is the library's `isWeaklyAdic_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (3).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is weakly adic then so is
@@ -665,7 +665,7 @@ theorem isWeaklyAdic_of_isRepresentable {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
     IsWeaklyAdic B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L386). The attribute's comment: “clause (4); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (5) of Stacks 0AKP is the library's `isAdicStar_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L386). The attribute's comment: “clause (4); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (5) of Stacks 0AKP is the library's `isAdicStar_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (4).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is adic\* then so is
@@ -680,7 +680,7 @@ theorem isAdicStar_of_isRepresentable {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
     IsAdicStar B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L401). The attribute's comment: “clause (5); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (6) of Stacks 0AKP is the library's `isNoetherian_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransfer.lean#L401). The attribute's comment: “clause (5); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (6) of Stacks 0AKP is the library's `isNoetherian_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (5).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces and locally of finite type. If `Y`
@@ -696,7 +696,7 @@ theorem isNoetherian_of_isRepresentable {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
     IsNoetherian B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L74). The attribute's comment: “clause (1); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and parts (1) and (2) of Stacks 0AKP are the library's `isAffineFormalAlgebraicSpace_of_relative_isAffineHom` and `isCountablyIndexed_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L74). The attribute's comment: “clause (1); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and parts (1) and (2) of Stacks 0AKP are the library's `isAffineFormalAlgebraicSpace_of_relative_isAffineHom` and `isCountablyIndexed_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (1).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is countably indexed then
@@ -706,7 +706,7 @@ theorem isNoetherian_of_isRepresentable {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
 alias isCountablyIndexed_of_isRepresentable'
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L82). The attribute's comment: “clause (2); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (3) of Stacks 0AKP is the library's `isCountablyIndexedAndClassical_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexedAndClassical_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L82). The attribute's comment: “clause (2); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (3) of Stacks 0AKP is the library's `isCountablyIndexedAndClassical_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (2).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is countably indexed and
@@ -716,7 +716,7 @@ alias isCountablyIndexed_of_isRepresentable'
 alias isCountablyIndexedAndClassical_of_isRepresentable'
 ```
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L91). The attribute's comment: “clause (3); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (4) of Stacks 0AKP is the library's `isWeaklyAdic_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L91). The attribute's comment: “clause (3); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (4) of Stacks 0AKP is the library's `isWeaklyAdic_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (3).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is weakly adic then so is
@@ -726,7 +726,7 @@ alias isCountablyIndexedAndClassical_of_isRepresentable'
 alias isWeaklyAdic_of_isRepresentable'
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L99). The attribute's comment: “clause (4); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (5) of Stacks 0AKP is the library's `isAdicStar_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L99). The attribute's comment: “clause (4); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (5) of Stacks 0AKP is the library's `isAdicStar_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (4).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces. If `Y` is adic\* then so is
@@ -736,7 +736,7 @@ alias isWeaklyAdic_of_isRepresentable'
 alias isAdicStar_of_isRepresentable'
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L107). The attribute's comment: “clause (5); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (6) of Stacks 0AKP is the library's `isNoetherian_of_relative_isAffineHom`”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_of_isRepresentable'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/TypeTransferRefined.lean#L107). The attribute's comment: “clause (5); Stacks 0AKN is the library's `relative_isAffineHom_of_isRepresentableByAlgebraicSpaces` and clause (6) of Stacks 0AKP is the library's `isNoetherian_of_relative_isAffineHom`”.
 
 > **Stacks 0AKQ, clause (5).** Let `f : X ⟶ Y` be a morphism of affine formal algebraic
 > spaces over `S` which is representable by algebraic spaces and locally of finite type. If `Y`
@@ -750,7 +750,7 @@ alias isNoetherian_of_isRepresentable'
 
 [Tag 0AN6](https://stacks.math.columbia.edu/tag/0AN6) in the Stacks Project.
 
-**`TopologicalRing.CompletionOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L74). The attribute's comment: “completion\_over”.
+**`TopologicalRing.CompletionOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L74). The attribute's comment: “completion\_over”.
 
 > The completion of `A` over `B` is the inverse limit, over the weak ideals of definition
 > `J` of `B`, of the rings `A / JA`.
@@ -761,7 +761,7 @@ public def CompletionOver {B : Type u} {A : Type v} [CommRing B] [CommRing A]
     Subring (∀ J : WeakIdealOfDefinitionIndex B, A ⧸ extendedIdeal f J)
 ```
 
-**`TopologicalRing.CompletionOver.limitTopology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L90). The attribute's comment: “completion\_over”.
+**`TopologicalRing.CompletionOver.limitTopology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L90). The attribute's comment: “completion\_over”.
 
 > The inverse-limit topology on the completion over `B`, with every quotient ring in the
 > defining inverse system carrying the discrete topology.
@@ -772,7 +772,7 @@ public noncomputable instance limitTopology {B : Type u} {A : Type v} [CommRing 
     TopologicalSpace (CompletionOver f)
 ```
 
-**`TopologicalRing.CompletionOver.canonicalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L114). The attribute's comment: “completion\_over”.
+**`TopologicalRing.CompletionOver.canonicalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L114). The attribute's comment: “completion\_over”.
 
 > The canonical ring homomorphism from `B` to the completion of `A` over `B`.
 
@@ -781,7 +781,7 @@ public def canonicalMap {B : Type u} {A : Type v} [CommRing B] [CommRing A]
     [TopologicalSpace B] (f : B →+* A) : B →+* CompletionOver f
 ```
 
-**`TopologicalRing.CompletionOver.projection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L211). The attribute's comment: “kernel\_closure”.
+**`TopologicalRing.CompletionOver.projection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L211). The attribute's comment: “kernel\_closure”.
 
 > Every projection from the relative completion to a defining quotient is surjective.
 
@@ -791,7 +791,7 @@ public theorem projection_surjective {B : Type u} {A : Type v} [CommRing B] [Com
     Function.Surjective (projection f J)
 ```
 
-**`TopologicalRing.CompletionOver.isOpen_ker_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L220). The attribute's comment: “kernel\_closure”.
+**`TopologicalRing.CompletionOver.isOpen_ker_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 220](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L220). The attribute's comment: “kernel\_closure”.
 
 > The kernel of a projection from the relative completion is open.
 
@@ -801,7 +801,7 @@ public theorem isOpen_ker_projection {B : Type u} {A : Type v} [CommRing B] [Com
     IsOpen (RingHom.ker (projection f J) : Set (CompletionOver f))
 ```
 
-**`TopologicalRing.CompletionOver.ker_projection_eq_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L233). The attribute's comment: “kernel\_closure”.
+**`TopologicalRing.CompletionOver.ker_projection_eq_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L233). The attribute's comment: “kernel\_closure”.
 
 > The kernel of a projection from the relative completion is the closure of the ideal
 > extended from the corresponding weak ideal of definition of the base ring.
@@ -812,7 +812,7 @@ public theorem ker_projection_eq_closure {B : Type u} {A : Type v} [CommRing B] 
     RingHom.ker (projection f J) = Ideal.closure (J.1.map (canonicalMap f))
 ```
 
-**`TopologicalRing.projection_ker_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L340). The attribute's comment: “weakly\_admissible”.
+**`TopologicalRing.projection_ker_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L340). The attribute's comment: “weakly\_admissible”.
 
 > The kernel of every projection to `A / JA` is a weak ideal of definition of the completion.
 
@@ -822,7 +822,7 @@ public theorem projection_ker_isWeakIdealOfDefinition (f : B →+* A)
     TopologicalRing.IsWeakIdealOfDefinition (RingHom.ker (projection f J))
 ```
 
-**`TopologicalRing.completionOver_isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L382). The attribute's comment: “weakly\_admissible”.
+**`TopologicalRing.completionOver_isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 382](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L382). The attribute's comment: “weakly\_admissible”.
 
 > Completion over a weakly admissible topological ring is weakly admissible.
 
@@ -832,7 +832,7 @@ public theorem completionOver_isWeaklyAdmissible (f : B →+* A)
     TopologicalRing.IsWeaklyAdmissible (CompletionOver f)
 ```
 
-**`TopologicalRing.completeSpace_completionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L414). The attribute's comment: “complete\_linearly\_topologized”.
+**`TopologicalRing.completeSpace_completionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 414](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L414). The attribute's comment: “complete\_linearly\_topologized”.
 
 > The completion over a ring is complete for its canonical additive
 > uniformity.
@@ -843,7 +843,7 @@ public noncomputable instance completeSpace_completionOver (f : B →+* A) :
       (IsTopologicalAddGroup.rightUniformSpace (CompletionOver f))
 ```
 
-**`TopologicalRing.t2Space_completionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L441). The attribute's comment: “complete\_linearly\_topologized”.
+**`TopologicalRing.t2Space_completionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 441](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L441). The attribute's comment: “complete\_linearly\_topologized”.
 
 > The inverse-limit topology on the completion is separated.
 
@@ -852,7 +852,7 @@ public noncomputable instance t2Space_completionOver (f : B →+* A) :
     T2Space (CompletionOver f)
 ```
 
-**`TopologicalRing.continuous_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L462). The attribute's comment: “taut”.
+**`TopologicalRing.continuous_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 462](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L462). The attribute's comment: “taut”.
 
 > The canonical map to the completion over a topological ring is continuous.
 
@@ -862,7 +862,7 @@ public theorem continuous_canonicalMap {B : Type u} {A : Type v}
     (f : B →+* A) : Continuous (canonicalMap f)
 ```
 
-**`TopologicalRing.isTaut_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 492](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L492). The attribute's comment: “taut”.
+**`TopologicalRing.isTaut_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 492](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L492). The attribute's comment: “taut”.
 
 > The canonical map to the completion over a weakly preadmissible ring is taut.
 
@@ -875,13 +875,13 @@ public theorem isTaut_canonicalMap {B : Type u} {A : Type v}
 
 Declarations registered for the tag:
 
-- [`TopologicalRing.completionOverIsLinearTopology`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L275), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L408) (StacksFrontier): “complete\_linearly\_topologized”.
+- [`TopologicalRing.completionOverIsLinearTopology`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L275), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L408) (StacksFrontier): “complete\_linearly\_topologized”.
 
 ## Tag 0AN7, a remark
 
 [Tag 0AN7](https://stacks.math.columbia.edu/tag/0AN7) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumMap_constants_not_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean#L128). The attribute's comment: “(1): for `A = k` a field with the discrete topology and `B = k⟦t⟧` with the `t`-adic topology, `Spf (φ) : Spf(k⟦t⟧) → Spf(k)` of the inclusion of constants is a morphism of affine formal algebraic spaces which is not representable, and not even representable by algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.exists_formalSpectrumMap_constants_not_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean#L129). The attribute's comment: “(1): for `A = k` a field with the discrete topology and `B = k⟦t⟧` with the `t`-adic topology, `Spf (φ) : Spf(k⟦t⟧) → Spf(k)` of the inclusion of constants is a morphism of affine formal algebraic spaces which is not representable, and not even representable by algebraic spaces”.
 
 > **Stacks 0AN7 (1).** Let `k` be a field with the discrete topology and let `k⟦t⟧` carry the
 > `t`-adic topology; both are weakly admissible and the inclusion of constants `φ : k → k⟦t⟧` is
@@ -905,7 +905,7 @@ theorem exists_formalSpectrumMap_constants_not_representable
         (formalSpectrumMap (TopologicalRing.isWeaklyAdmissible_discreteTopology k) f).hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_representable_formalSpectrum_not_mcQuillan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean#L180). The attribute's comment: “(2): a representable morphism `f : Y → X` of affine formal algebraic spaces with `X = Spf(A)` McQuillan and `Y` not McQuillan, the example of Examples, Section 0ANY”.
+**`AlgebraicGeometry.FormalSpace.exists_representable_formalSpectrum_not_mcQuillan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SharpnessOfRepresentabilityExamples.lean#L181). The attribute's comment: “(2): a representable morphism `f : Y → X` of affine formal algebraic spaces with `X = Spf(A)` McQuillan and `Y` not McQuillan, the example of Examples, Section 0ANY”.
 
 > **Stacks 0AN7 (2).** There are a weakly admissible topological ring `A` over a base `S` and a
 > representable morphism `f : Y ⟶ Spf A` of affine formal algebraic spaces such that the target
@@ -935,7 +935,7 @@ theorem exists_representable_formalSpectrum_not_mcQuillan :
 
 [Tag 0AN8](https://stacks.math.columbia.edu/tag/0AN8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEssentiallySurjectiveSpf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EssentiallySurjectiveSpf.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EssentiallySurjectiveSpf.lean#L178). The attribute's comment: “essential surjectivity, and only for a quotient system satisfying the site condition of Stacks 0AIF, that the site hold the atlas of quotient spectra: the source leaves that condition implicit, its sites being indexed by a cutoff it may enlarge, and a quotient system by itself places only the individual quotient spectra in the site, not their coproduct. Nothing is asked of the coefficient ring beyond the source's own hypotheses”.
+**`AlgebraicGeometry.FormalSpace.isEssentiallySurjectiveSpf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EssentiallySurjectiveSpf.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/EssentiallySurjectiveSpf.lean#L178). The attribute's comment: “essential surjectivity, and only for a quotient system satisfying the site condition of Stacks 0AIF, that the site hold the atlas of quotient spectra: the source leaves that condition implicit, its sites being indexed by a cutoff it may enlarge, and a quotient system by itself places only the individual quotient spectra in the site, not their coproduct. Nothing is asked of the coefficient ring beyond the source's own hypotheses”.
 
 > **Essential surjectivity of `Spf` on étale algebras.** For a McQuillan affine formal algebraic
 > space `Spf R` over `S`, every affine formal algebraic space `V` over `S` carrying a morphism
@@ -946,7 +946,7 @@ theorem exists_representable_formalSpectrum_not_mcQuillan :
 theorem isEssentiallySurjectiveSpf : IsEssentiallySurjectiveSpf' 𝔅 S hS
 ```
 
-**`AlgebraicGeometry.FormalSpace.etaleFormalSpectrum_correspondence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionSpectrum.lean, line 899](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionSpectrum.lean#L899).
+**`AlgebraicGeometry.FormalSpace.etaleFormalSpectrum_correspondence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionSpectrum.lean, line 899](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionSpectrum.lean#L899).
 
 > **Stacks 0AN8.** Let `Y = Spf R` be a McQuillan affine formal algebraic space over `S`, for a
 > weakly admissible topological ring `R`. Sending the completion `A^∧ = lim A ⧸ JA` of an étale
@@ -990,7 +990,7 @@ theorem etaleFormalSpectrum_correspondence (hR : TopologicalRing.IsWeaklyAdmissi
               ∃ i : X ≅ formalSpectrum E, p = i.hom ≫ formalSpectrumMap hR g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.etale_stageMap_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean#L105). The attribute's comment: “the first step of the proof read in the site: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the morphism `Spec (A^∧ ⧸ K) ⟶ Spec (B ⧸ J)` of quotient stages of `Spf A^∧ ⟶ Spf B` induced by the canonical map `B → A^∧` is étale. The assertions about the morphism of formal spectra itself — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
+**`AlgebraicGeometry.FormalSpace.etale_stageMap_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean#L105). The attribute's comment: “the first step of the proof read in the site: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the morphism `Spec (A^∧ ⧸ K) ⟶ Spec (B ⧸ J)` of quotient stages of `Spf A^∧ ⟶ Spf B` induced by the canonical map `B → A^∧` is étale. The assertions about the morphism of formal spectra itself — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
 
 > **Stacks 0AN8**, the first step of the proof read in the site. For an étale ring map
 > `f : B →+* A` and a weak ideal of definition `J` of `B`, the morphism of quotient stages
@@ -1013,7 +1013,7 @@ theorem etale_stageMap_canonicalMap (f : B →+* A) (hf : f.Etale)
       ((BigAffineFppf.inclusion 𝔅 S hS).map (g.stageMap J K hJK)))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_isPullback_etale_formalSpectrumMap_completionOver_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean#L194). The attribute's comment: “the base change identification of the proof: for an étale ring map `B → A` and a point of `Spf B` out of a quasi-compact object `T` of the site, `T ×_{Spf B} Spf A^∧` is represented by the object `T ×_{Spec (B ⧸ J)} Spec (A ⧸ JA)` of the site and its projection to `T` is étale. The assertions about the morphism `Spf A^∧ ⟶ Spf B` itself — étaleness at an arbitrary scheme-valued point, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
+**`AlgebraicGeometry.FormalSpace.exists_isPullback_etale_formalSpectrumMap_completionOver_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleCompletionStageBaseChange.lean#L194). The attribute's comment: “the base change identification of the proof: for an étale ring map `B → A` and a point of `Spf B` out of a quasi-compact object `T` of the site, `T ×_{Spf B} Spf A^∧` is represented by the object `T ×_{Spec (B ⧸ J)} Spec (A ⧸ JA)` of the site and its projection to `T` is étale. The assertions about the morphism `Spf A^∧ ⟶ Spf B` itself — étaleness at an arbitrary scheme-valued point, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
 
 > **Stacks 0AN8**, the base change identification of its proof. For an étale ring map
 > `f : B →+* A` over a weakly admissible `B` and every point `T ⟶ Spf B` whose source is a
@@ -1041,7 +1041,7 @@ theorem exists_isPullback_etale_formalSpectrumMap_completionOver_of_compactSpace
       AlgebraicGeometry.Etale ((BigFppfOver.toScheme 𝔅 S hS).map q)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_etaleCompletionCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SmallEtaleSite/EtaleCompletionEquivalence.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SmallEtaleSite/EtaleCompletionEquivalence.lean#L412). The attribute's comment: “the equivalence of categories, with the functor `A^∧ ↦ Spf (A^∧)` and the McQuillan conclusion. The equivalence is realized on the opposite of the category of the algebras `A^∧`, a morphism of that category being a continuous `R`-algebra homomorphism and `Spf` being contravariant; Stacks 0DEF writes the same identification with the opposite taken on the geometric side, and `mcQuillanAffineEtaleEquivalence` moves it there. The quotient system `D` is how this library says that `R` is a topological `S`-algebra, the structure morphisms of the quotient spectra being data here, and without it `Spf R` is not defined; its large-site condition `QuotientSystem.HasLargeSite` says that the chosen big fppf site contains the atlas of `Spf R`, which is what Stacks 0AIF consumes to make `Spf R` an affine formal algebraic space, so it is part of the source's hypothesis that `Y` is one, and is a condition on the site rather than on `R`. It passes to every `A^∧` through Stacks 0ANM. No bound on the cardinality of `R` is assumed”.
+**`AlgebraicGeometry.FormalSpace.isEquivalence_etaleCompletionCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SmallEtaleSite/EtaleCompletionEquivalence.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/SmallEtaleSite/EtaleCompletionEquivalence.lean#L412). The attribute's comment: “the equivalence of categories, with the functor `A^∧ ↦ Spf (A^∧)` and the McQuillan conclusion. The equivalence is realized on the opposite of the category of the algebras `A^∧`, a morphism of that category being a continuous `R`-algebra homomorphism and `Spf` being contravariant; Stacks 0DEF writes the same identification with the opposite taken on the geometric side, and `mcQuillanAffineEtaleEquivalence` moves it there. The quotient system `D` is how this library says that `R` is a topological `S`-algebra, the structure morphisms of the quotient spectra being data here, and without it `Spf R` is not defined; its large-site condition `QuotientSystem.HasLargeSite` says that the chosen big fppf site contains the atlas of `Spf R`, which is what Stacks 0AIF consumes to make `Spf R` an affine formal algebraic space, so it is part of the source's hypothesis that `Y` is one, and is a condition on the site rather than on `R`. It passes to every `A^∧` through Stacks 0ANM. No bound on the cardinality of `R` is assumed”.
 
 > **Stacks 0AN8.** Let `S` be a scheme contained in a big fppf site `B` and let `R` be a
 > weakly admissible topological ring presented over `S` by a quotient system `D` whose atlas
@@ -1070,7 +1070,7 @@ theorem isEquivalence_etaleCompletionCharts :
             Nonempty (W.obj.left ≅ formalSpectrum (Y.quotientSystem hR D hD))
 ```
 
-**`TopologicalRing.existsUnique_algEquiv_of_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleLiftRigidity.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/EtaleLiftRigidity.lean#L97). The attribute's comment: “the rigidity step of the essential surjectivity half: for a weak ideal of definition `J₀` and an open ideal `J`, two étale `R ⧸ J`-algebras with identified reductions modulo the image of `J₀` are uniquely isomorphic compatibly with that identification. This is the uniqueness that produces the family `φ_J` of the source's proof; the construction of the étale lift, the identification of the stagewise base changes of a representable étale morphism with the spectra of étale algebras, the equivalence of categories and the McQuillan conclusion are not included”.
+**`TopologicalRing.existsUnique_algEquiv_of_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleLiftRigidity.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/EtaleLiftRigidity.lean#L97). The attribute's comment: “the rigidity step of the essential surjectivity half: for a weak ideal of definition `J₀` and an open ideal `J`, two étale `R ⧸ J`-algebras with identified reductions modulo the image of `J₀` are uniquely isomorphic compatibly with that identification. This is the uniqueness that produces the family `φ_J` of the source's proof; the construction of the étale lift, the identification of the stagewise base changes of a representable étale morphism with the spectra of étale algebras, the equivalence of categories and the McQuillan conclusion are not included”.
 
 > **Stacks 0AN8, the rigidity step `φ_J` of the essential surjectivity half.** Let `J₀` be a
 > weak ideal of definition of a topologized commutative ring `R` and let `J` be an open ideal of
@@ -1096,7 +1096,7 @@ theorem existsUnique_algEquiv_of_isWeakIdealOfDefinition {J₀ J : Ideal R}
           ((J₀.map (Ideal.Quotient.mk J)).map (algebraMap (R ⧸ J) S)))
 ```
 
-**`TopologicalRing.etale_quotientMap_weakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L92). The attribute's comment: “first step of the proof: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the ring map `B ⧸ J → A ⧸ JA` of quotient stages is étale. The assertions about morphisms of formal spectra — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
+**`TopologicalRing.etale_quotientMap_weakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L92). The attribute's comment: “first step of the proof: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the ring map `B ⧸ J → A ⧸ JA` of quotient stages is étale. The assertions about morphisms of formal spectra — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
 
 > **Stacks 0AN8**, first step of the proof.  For an étale ring map `f : B →+* A` and a weak
 > ideal of definition `J` of `B`, the induced map `B ⧸ J → A ⧸ JA` is étale.
@@ -1107,7 +1107,7 @@ public theorem etale_quotientMap_weakIdealOfDefinition {f : B →+* A} (hf : f.E
     (Ideal.quotientMap (extendedIdeal f J) f Ideal.le_comap_map).Etale
 ```
 
-**`TopologicalRing.exists_etale_surjection_weakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L125). The attribute's comment: “the étale-lift step of the essential surjectivity half: for a weak ideal of definition `J₀` of `B` and an étale `B ⧸ J₀`-algebra `A₀`, there is an étale `B`-algebra `C` together with a surjection `C → A₀` compatible with the structure maps whose kernel is the extended ideal `J₀ C`, so that `A₀` is the quotient stage `C ⧸ J₀ C`. This is the existence of the étale lift only; the comparison family `φ_J`, the identification of the stagewise base changes of a representable étale morphism with the spectra of étale algebras, the colimit assembly of the essential surjectivity half, the assertions about morphisms of formal spectra — representability, étaleness, full faithfulness — the equivalence of categories and the McQuillan conclusion are not included”.
+**`TopologicalRing.exists_etale_surjection_weakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L125). The attribute's comment: “the étale-lift step of the essential surjectivity half: for a weak ideal of definition `J₀` of `B` and an étale `B ⧸ J₀`-algebra `A₀`, there is an étale `B`-algebra `C` together with a surjection `C → A₀` compatible with the structure maps whose kernel is the extended ideal `J₀ C`, so that `A₀` is the quotient stage `C ⧸ J₀ C`. This is the existence of the étale lift only; the comparison family `φ_J`, the identification of the stagewise base changes of a representable étale morphism with the spectra of étale algebras, the colimit assembly of the essential surjectivity half, the assertions about morphisms of formal spectra — representability, étaleness, full faithfulness — the equivalence of categories and the McQuillan conclusion are not included”.
 
 > **Stacks 0AN8**, the étale-lift step of the essential surjectivity half.  Let `J₀` be a weak
 > ideal of definition of a linearly topologized ring `B` and let `A₀` be an étale `B ⧸ J₀`-algebra.
@@ -1141,7 +1141,7 @@ public theorem exists_etale_surjection_weakIdealOfDefinition
             (Ideal.Quotient.mk (J₀.1 : Ideal B))
 ```
 
-**`TopologicalRing.CompletionOver.etale_quotientMap_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L167). The attribute's comment: “first step of the proof, on the stages of the completion: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the map `B ⧸ J → A^∧ ⧸ ker (A^∧ → A ⧸ JA)` of quotient stages of the canonical map `B → A^∧` is étale. The assertions about morphisms of formal spectra — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
+**`TopologicalRing.CompletionOver.etale_quotientMap_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/EtaleModWeakIdeal.lean#L167). The attribute's comment: “first step of the proof, on the stages of the completion: for an étale ring map `B → A` and a weak ideal of definition `J` of `B`, the map `B ⧸ J → A^∧ ⧸ ker (A^∧ → A ⧸ JA)` of quotient stages of the canonical map `B → A^∧` is étale. The assertions about morphisms of formal spectra — representability, étaleness, full faithfulness, essential surjectivity, the equivalence of categories and the McQuillan conclusion — are not included”.
 
 > **Stacks 0AN8**, first step of the proof, on the stages of the completion.  For an étale ring
 > map `f : B →+* A` and a weak ideal of definition `J` of `B`, the map
@@ -1159,7 +1159,7 @@ public theorem etale_quotientMap_canonicalMap {f : B →+* A} (hf : f.Etale)
 
 [Tag 0AN9](https://stacks.math.columbia.edu/tag/0AN9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.etaleFormalSpectrumMap_surjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleSurjective.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleSurjective.lean#L371).
+**`AlgebraicGeometry.FormalSpace.etaleFormalSpectrumMap_surjective_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleSurjective.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/EtaleSurjective.lean#L371).
 
 > Let `R` be a weakly admissible topological ring, let `A` be an étale `R`-algebra and let
 > `R → A^∧` be the canonical map to the completion of `A` over `R`, presented by quotient systems
@@ -1194,4 +1194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.19, Tag 0AJG](https://stacks.math.columbia.edu/tag/0AJG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

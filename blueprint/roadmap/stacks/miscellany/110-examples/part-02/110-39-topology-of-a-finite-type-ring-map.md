@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.39 Topology of a finite type ring map
 
-Section 110.39 of the Stacks Project, [Tag 05JH](https://stacks.math.columbia.edu/tag/05JH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.39 of the Stacks Project, [Tag 05JH](https://stacks.math.columbia.edu/tag/05JH). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05JI, a lemma
 
 [Tag 05JI](https://stacks.math.columbia.edu/tag/05JI) in the Stacks Project.
 
-**`Stacks.Examples.exists_localHom_not_isNoetherianRing_no_quasiFinite_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FiniteTypeTopologyNonNoetherian.lean, line 584](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Algebra/FiniteTypeTopologyNonNoetherian.lean#L584).
+**`Stacks.Examples.exists_localHom_not_isNoetherianRing_no_quasiFinite_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FiniteTypeTopologyNonNoetherian.lean, line 584](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Algebra/FiniteTypeTopologyNonNoetherian.lean#L584).
 
 > **Stacks 05JI.** There is a local homomorphism `f : A → B` of local domains, essentially of
 > finite type, with finite residue field extension, such that for every prime `q ≠ m_B` of `B`
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.39, Tag 05JH](https://stacks.math.columbia.edu/tag/05JH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

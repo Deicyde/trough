@@ -8,7 +8,7 @@ proof: formalized
 
 # Time reversal in the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.TimeReversal`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean): 11 declarations, 3 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.TimeReversal`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean): 11 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.TimeReversal`
 
 ## A. Time reversal
 
-**`CondensedMatter.TightBindingChain.timeReversal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L51).
+**`CondensedMatter.TightBindingChain.timeReversal`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L51).
 
 > Time reversal: complex conjugation of the amplitudes.
 
@@ -38,48 +38,48 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.TimeReversal`
 noncomputable def timeReversal (ψ : T.HilbertSpace) : T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.timeReversal_val`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L54).
+**`CondensedMatter.TightBindingChain.timeReversal_val`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L54).
 
 ```lean
 lemma timeReversal_val (ψ : T.HilbertSpace) (n : Fin T.N) :
     (T.timeReversal ψ).val n = (starRingEnd ℂ) (ψ.val n)
 ```
 
-**`CondensedMatter.TightBindingChain.timeReversal_sub`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L57).
+**`CondensedMatter.TightBindingChain.timeReversal_sub`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L57).
 
 ```lean
 lemma timeReversal_sub (ψ φ : T.HilbertSpace) :
     T.timeReversal (ψ - φ) = T.timeReversal ψ - T.timeReversal φ
 ```
 
-**`CondensedMatter.TightBindingChain.timeReversal_smul`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L62).
+**`CondensedMatter.TightBindingChain.timeReversal_smul`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L62).
 
 ```lean
 lemma timeReversal_smul (c : ℂ) (ψ : T.HilbertSpace) :
     T.timeReversal (c • ψ) = (starRingEnd ℂ) c • T.timeReversal ψ
 ```
 
-**`CondensedMatter.TightBindingChain.timeReversal_real_smul`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L67).
+**`CondensedMatter.TightBindingChain.timeReversal_real_smul`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L67).
 
 ```lean
 lemma timeReversal_real_smul (r : ℝ) (ψ : T.HilbertSpace) :
     T.timeReversal (r • ψ) = r • T.timeReversal ψ
 ```
 
-**`CondensedMatter.TightBindingChain.inner_timeReversal`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L71).
+**`CondensedMatter.TightBindingChain.inner_timeReversal`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L71).
 
 ```lean
 lemma inner_timeReversal (ψ φ : T.HilbertSpace) :
     ⟪T.timeReversal ψ, T.timeReversal φ⟫_ℂ = (starRingEnd ℂ) ⟪ψ, φ⟫_ℂ
 ```
 
-**`CondensedMatter.TightBindingChain.norm_timeReversal`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L76).
+**`CondensedMatter.TightBindingChain.norm_timeReversal`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L76).
 
 ```lean
 lemma norm_timeReversal (ψ : T.HilbertSpace) : ‖T.timeReversal ψ‖ = ‖ψ‖
 ```
 
-**`CondensedMatter.TightBindingChain.apply_timeReversal`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L81).
+**`CondensedMatter.TightBindingChain.apply_timeReversal`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L81).
 
 > An operator with real matrix elements commutes with time reversal.
 
@@ -94,21 +94,21 @@ lemma apply_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}
     exact congrArg (· * _) (hA n m).symm
 ```
 
-**`CondensedMatter.TightBindingChain.openHamiltonian_timeReversal`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L90).
+**`CondensedMatter.TightBindingChain.openHamiltonian_timeReversal`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L90).
 
 ```lean
 lemma openHamiltonian_timeReversal (ψ : T.HilbertSpace) :
     T.openHamiltonian (T.timeReversal ψ) = T.timeReversal (T.openHamiltonian ψ)
 ```
 
-**`CondensedMatter.TightBindingChain.position_timeReversal`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L94).
+**`CondensedMatter.TightBindingChain.position_timeReversal`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L94).
 
 ```lean
 lemma position_timeReversal (ψ : T.HilbertSpace) :
     T.position (T.timeReversal ψ) = T.timeReversal (T.position ψ)
 ```
 
-**`CondensedMatter.TightBindingChain.current_timeReversal`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L101).
+**`CondensedMatter.TightBindingChain.current_timeReversal`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean#L101).
 
 > Time reversal reverses the current.
 
@@ -127,4 +127,4 @@ lemma current_timeReversal (ψ : T.HilbertSpace) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean)

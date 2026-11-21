@@ -13,7 +13,7 @@ statement: formalized
 > - [mathoverflow/41211](https://mathoverflow.net/questions/41211/easy-proof-of-the-fact-that-isotropic-spaces-are-euclidean)
 >   **Easy proof of the fact that isotropic spaces are Euclidean**
 
-*Quoted from [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 3 API statements, counted here but not shown.
 
@@ -33,11 +33,11 @@ theorem banach_mazur_rotation_problem :
       Nonempty (E ≃ₗᵢ[ℝ] H)
 ```
 
-Category `research open`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean#L90).
+Category `research open`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean#L90).
 
 ## `Arxiv.«math.0110202».banach_mazur_rotation_problem.finite_dimensional`
 
-Solved: stated here without proof.
+Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-07-000013](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-07-000013).
 
 > Every finite-dimensional real normed space whose isometry group acts transitively on the
 > unit sphere is Euclidean.
@@ -48,7 +48,7 @@ theorem banach_mazur_rotation_problem.finite_dimensional {E : Type*} [NormedAddC
     InnerProductSpaceable E
 ```
 
-Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean#L100).
+Category `research solved`; AMS [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean#L101).
 
 ## Depends on
 
@@ -56,5 +56,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean)
+- [FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0110202/BanachMazurRotation.lean)
 - [arxiv/math.0110202](https://arxiv.org/abs/math/0110202)

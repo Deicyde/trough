@@ -8,7 +8,7 @@ proof: formalized
 
 # The covariant jet algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.CovJetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean): 69 declarations (2 instances with no name), 51 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.CovJetAlgebra.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean): 69 declarations (2 instances with no name), 51 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.CovJetAlgebra.Basic`
 
 ## A. The covariant towers lie in the covariant subalgebra
 
-**`StandardModel.AlgebraRealization.covF_mem_covAlgebra`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L92).
+**`StandardModel.AlgebraRealization.covF_mem_covAlgebra`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L92).
 
 > The field-strength tower lies in the covariant subalgebra.
 
@@ -61,7 +61,7 @@ lemma covF_mem_covAlgebra {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (μ ν : F
     (φ : Module.Dual ℝ GaugeAlgebra) : h.covF l μ ν φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivH_mem_covAlgebra`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L98).
+**`StandardModel.AlgebraRealization.covDerivH_mem_covAlgebra`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L98).
 
 > The Higgs tower lies in the covariant subalgebra.
 
@@ -70,7 +70,7 @@ lemma covDerivH_mem_covAlgebra {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℂ HiggsVec) : h.covDerivH l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarH_mem_covAlgebra`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L104).
+**`StandardModel.AlgebraRealization.covDerivBarH_mem_covAlgebra`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L104).
 
 > The conjugate Higgs tower lies in the covariant subalgebra.
 
@@ -79,7 +79,7 @@ lemma covDerivBarH_mem_covAlgebra {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℂ (ConjModule HiggsVec)) : h.covDerivBarH l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivD_mem_covAlgebra`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L110).
+**`StandardModel.AlgebraRealization.covDerivD_mem_covAlgebra`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L110).
 
 > The down-type quark tower lies in the covariant subalgebra.
 
@@ -88,7 +88,7 @@ lemma covDerivD_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (φ : Module.Dual ℂ DownSinglet) : h.covDerivD i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarD_mem_covAlgebra`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L117).
+**`StandardModel.AlgebraRealization.covDerivBarD_mem_covAlgebra`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L117).
 
 > The conjugate down-type quark tower lies in the covariant subalgebra.
 
@@ -97,7 +97,7 @@ lemma covDerivBarD_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     (φ : Module.Dual ℂ (ConjModule DownSinglet)) : h.covDerivBarD i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivU_mem_covAlgebra`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L124).
+**`StandardModel.AlgebraRealization.covDerivU_mem_covAlgebra`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L124).
 
 > The up-type quark tower lies in the covariant subalgebra.
 
@@ -106,7 +106,7 @@ lemma covDerivU_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (φ : Module.Dual ℂ UpSinglet) : h.covDerivU i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarU_mem_covAlgebra`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L131).
+**`StandardModel.AlgebraRealization.covDerivBarU_mem_covAlgebra`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L131).
 
 > The conjugate up-type quark tower lies in the covariant subalgebra.
 
@@ -115,7 +115,7 @@ lemma covDerivBarU_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     (φ : Module.Dual ℂ (ConjModule UpSinglet)) : h.covDerivBarU i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivQ_mem_covAlgebra`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L138).
+**`StandardModel.AlgebraRealization.covDerivQ_mem_covAlgebra`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L138).
 
 > The quark doublet tower lies in the covariant subalgebra.
 
@@ -124,7 +124,7 @@ lemma covDerivQ_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (φ : Module.Dual ℂ QuarkDoublet) : h.covDerivQ i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarQ_mem_covAlgebra`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L145).
+**`StandardModel.AlgebraRealization.covDerivBarQ_mem_covAlgebra`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L145).
 
 > The conjugate quark doublet tower lies in the covariant subalgebra.
 
@@ -133,7 +133,7 @@ lemma covDerivBarQ_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     (φ : Module.Dual ℂ (ConjModule QuarkDoublet)) : h.covDerivBarQ i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivL_mem_covAlgebra`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L151).
+**`StandardModel.AlgebraRealization.covDerivL_mem_covAlgebra`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L151).
 
 > The lepton doublet tower lies in the covariant subalgebra.
 
@@ -142,7 +142,7 @@ lemma covDerivL_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (φ : Module.Dual ℂ LeptonDoubletV) : h.covDerivL i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarL_mem_covAlgebra`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L157).
+**`StandardModel.AlgebraRealization.covDerivBarL_mem_covAlgebra`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L157).
 
 > The conjugate lepton doublet tower lies in the covariant subalgebra.
 
@@ -151,7 +151,7 @@ lemma covDerivBarL_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     (φ : Module.Dual ℂ (ConjModule LeptonDoubletV)) : h.covDerivBarL i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivE_mem_covAlgebra`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L163).
+**`StandardModel.AlgebraRealization.covDerivE_mem_covAlgebra`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L163).
 
 > The charged-lepton singlet tower lies in the covariant subalgebra.
 
@@ -160,7 +160,7 @@ lemma covDerivE_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (φ : Module.Dual ℂ LeptonSinglet) : h.covDerivE i l φ ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.covDerivBarE_mem_covAlgebra`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L169).
+**`StandardModel.AlgebraRealization.covDerivBarE_mem_covAlgebra`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L169).
 
 > The conjugate charged-lepton singlet tower lies in the covariant subalgebra.
 
@@ -177,7 +177,7 @@ lemma covDerivBarE_mem_covAlgebra (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
 > the covariant subalgebra be regarded as an algebra with a gauge action, a Lorentz action
 > and a mass-weight grading of its own.
 
-**`StandardModel.AlgebraRealization.covGenerators_induction`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L190).
+**`StandardModel.AlgebraRealization.covGenerators_induction`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L190).
 
 > A property that holds of every covariant tower holds of every covariant generator:
 > the case analysis of the generating set, done once.
@@ -213,7 +213,7 @@ lemma covGenerators_induction {P : B → Prop}
     ∀ x ∈ h.covGenerators, P x
 ```
 
-**`StandardModel.AlgebraRealization.mapsTo_covAlgebra`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L249).
+**`StandardModel.AlgebraRealization.mapsTo_covAlgebra`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L249).
 
 > A unital multiplicative endomorphism of the algebra that carries the covariant
 > generators into the covariant subalgebra carries the whole subalgebra into itself.
@@ -225,7 +225,7 @@ lemma mapsTo_covAlgebra {f : B →ₗ[ℂ] B} (hone : f 1 = 1)
     f x ∈ h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.sum_smul_mem_covAlgebra`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L263).
+**`StandardModel.AlgebraRealization.sum_smul_mem_covAlgebra`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L263).
 
 > A Lorentz slot-mixing sum of covariant towers lies in the covariant subalgebra.
 
@@ -237,7 +237,7 @@ lemma sum_smul_mem_covAlgebra {n : ℕ} {c : (Fin n → (Fin 1 ⊕ Fin 3)) → �
 
 ### B.1. The global gauge action
 
-**`StandardModel.AlgebraRealization.repGlobal_one`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L276).
+**`StandardModel.AlgebraRealization.repGlobal_one`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L276).
 
 > The global gauge action fixes the unit of the algebra.
 
@@ -245,7 +245,7 @@ lemma sum_smul_mem_covAlgebra {n : ℕ} {c : (Fin n → (Fin 1 ⊕ Fin 3)) → �
 lemma repGlobal_one (g : GaugeGroupI) : repGlobal repJet g (1 : B) = 1
 ```
 
-**`StandardModel.AlgebraRealization.repGlobal_mem_covAlgebra`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L282).
+**`StandardModel.AlgebraRealization.repGlobal_mem_covAlgebra`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L282).
 
 > The global gauge action preserves the covariant subalgebra: it carries each covariant
 > tower to a tower of the same shape at a rotated value index, and it is multiplicative.
@@ -257,7 +257,7 @@ lemma repGlobal_mem_covAlgebra (g : GaugeGroupI) {x : B} (hx : x ∈ h.covAlgebr
 
 ### B.2. The Lorentz action
 
-**`StandardModel.AlgebraRealization.repLorentz_one`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L319).
+**`StandardModel.AlgebraRealization.repLorentz_one`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L319).
 
 > The Lorentz action fixes the unit of the algebra.
 
@@ -265,7 +265,7 @@ lemma repGlobal_mem_covAlgebra (g : GaugeGroupI) {x : B} (hx : x ∈ h.covAlgebr
 lemma repLorentz_one (Λ : SL(2,ℂ)) : repLorentz Λ (1 : B) = 1
 ```
 
-**`StandardModel.AlgebraRealization.repLorentz_mem_covAlgebra`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L331).
+**`StandardModel.AlgebraRealization.repLorentz_mem_covAlgebra`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L331).
 
 > The Lorentz action preserves the covariant subalgebra: it carries each covariant tower
 > to a slot-mixing sum of towers of the same shape, and it is multiplicative.
@@ -277,7 +277,7 @@ lemma repLorentz_mem_covAlgebra (Λ : SL(2,ℂ)) {x : B} (hx : x ∈ h.covAlgebr
 
 ### B.3. The mass-weight polynomial
 
-**`StandardModel.AlgebraRealization.massWeightPoly_mem_range_mapAlgHom`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L395).
+**`StandardModel.AlgebraRealization.massWeightPoly_mem_range_mapAlgHom`**, a lemma, [line 395](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L395).
 
 > The mass-weight polynomial carries the covariant subalgebra into the polynomials with
 > coefficients in it: each covariant tower is an eigenvector whose eigenvector is the tower
@@ -298,7 +298,7 @@ lemma massWeightPoly_mem_range_mapAlgHom {x : B} (hx : x ∈ h.covAlgebra) :
 > subalgebra itself; the identification is through the injection
 > `Polynomial.mapAlgHom h.covAlgebra.val`.
 
-**`StandardModel.AlgebraRealization.covRepGauge`**, a def, [line 461](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L461).
+**`StandardModel.AlgebraRealization.covRepGauge`**, a def, [line 461](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L461).
 
 > The global gauge action on the covariant subalgebra: the ambient global gauge action,
 > which section B shows preserves it.
@@ -307,14 +307,14 @@ lemma massWeightPoly_mem_range_mapAlgHom {x : B} (hx : x ∈ h.covAlgebra) :
 noncomputable def covRepGauge : Representation ℂ GaugeGroupI ↥h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.coe_covRepGauge`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L466).
+**`StandardModel.AlgebraRealization.coe_covRepGauge`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L466).
 
 ```lean
 lemma coe_covRepGauge (g : GaugeGroupI) (x : ↥h.covAlgebra) :
     (h.covRepGauge g x : B) = repGlobal repJet g (x : B)
 ```
 
-**`StandardModel.AlgebraRealization.covRepLorentz`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L471).
+**`StandardModel.AlgebraRealization.covRepLorentz`**, a def, [line 471](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L471).
 
 > The Lorentz action on the covariant subalgebra: the ambient Lorentz action, which
 > section B shows preserves it.
@@ -323,14 +323,14 @@ lemma coe_covRepGauge (g : GaugeGroupI) (x : ↥h.covAlgebra) :
 noncomputable def covRepLorentz : Representation ℂ SL(2,ℂ) ↥h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.coe_covRepLorentz`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L476).
+**`StandardModel.AlgebraRealization.coe_covRepLorentz`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L476).
 
 ```lean
 lemma coe_covRepLorentz (Λ : SL(2,ℂ)) (x : ↥h.covAlgebra) :
     (h.covRepLorentz Λ x : B) = repLorentz Λ (x : B)
 ```
 
-**`StandardModel.AlgebraRealization.mapAlgHom_val_injective`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L481).
+**`StandardModel.AlgebraRealization.mapAlgHom_val_injective`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L481).
 
 > Polynomials over the covariant subalgebra inject into polynomials over the algebra.
 
@@ -339,7 +339,7 @@ lemma mapAlgHom_val_injective :
     Function.Injective (Polynomial.mapAlgHom h.covAlgebra.val)
 ```
 
-**`StandardModel.AlgebraRealization.covMassWeightPoly`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L489).
+**`StandardModel.AlgebraRealization.covMassWeightPoly`**, a def, [line 489](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L489).
 
 > The mass-weight polynomial of the covariant subalgebra: the ambient mass-weight
 > polynomial, whose value on the subalgebra has all of its coefficients in the subalgebra
@@ -349,14 +349,14 @@ lemma mapAlgHom_val_injective :
 noncomputable def covMassWeightPoly : ↥h.covAlgebra →ₐ[ℂ] Polynomial ↥h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.mapAlgHom_covMassWeightPoly`**, a lemma, [line 496](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L496).
+**`StandardModel.AlgebraRealization.mapAlgHom_covMassWeightPoly`**, a lemma, [line 496](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L496).
 
 ```lean
 lemma mapAlgHom_covMassWeightPoly (x : ↥h.covAlgebra) :
     Polynomial.mapAlgHom h.covAlgebra.val (h.covMassWeightPoly x) = massWeightPoly (x : B)
 ```
 
-**`StandardModel.AlgebraRealization.covMassWeightPoly_eq_monomial_iff`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L503).
+**`StandardModel.AlgebraRealization.covMassWeightPoly_eq_monomial_iff`**, a lemma, [line 503](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L503).
 
 > A mass-weight eigenvalue equation in the covariant subalgebra is the ambient one.
 
@@ -368,7 +368,7 @@ lemma covMassWeightPoly_eq_monomial_iff {n : ℕ} (x : ↥h.covAlgebra) :
 
 ### C.1. Corestricting a family of symbols
 
-**`StandardModel.AlgebraRealization.corestrict`**, a def, [line 524](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L524).
+**`StandardModel.AlgebraRealization.corestrict`**, a def, [line 524](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L524).
 
 > A family of symbols whose values lie in the covariant subalgebra, read as a family
 > valued in that subalgebra.
@@ -379,7 +379,7 @@ noncomputable def corestrict {V : Type} [AddCommGroup V] [Module ℂ V]
     Module.Dual ℂ V →ₗ[ℂ] ↥h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.coe_corestrict`**, a lemma, [line 532](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L532).
+**`StandardModel.AlgebraRealization.coe_corestrict`**, a lemma, [line 532](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L532).
 
 ```lean
 lemma coe_corestrict {V : Type} [AddCommGroup V] [Module ℂ V]
@@ -387,7 +387,7 @@ lemma coe_corestrict {V : Type} [AddCommGroup V] [Module ℂ V]
     (h.corestrict G hG φ : B) = G φ
 ```
 
-**`StandardModel.AlgebraRealization.corestrictReal`**, a def, [line 537](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L537).
+**`StandardModel.AlgebraRealization.corestrictReal`**, a def, [line 537](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L537).
 
 > The real-linear analogue of `corestrict`, for the gauge-algebra valued family.
 
@@ -397,7 +397,7 @@ noncomputable def corestrictReal (G : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B
     Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] ↥h.covAlgebra
 ```
 
-**`StandardModel.AlgebraRealization.coe_corestrictReal`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L545).
+**`StandardModel.AlgebraRealization.coe_corestrictReal`**, a lemma, [line 545](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L545).
 
 ```lean
 lemma coe_corestrictReal (G : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B)
@@ -414,7 +414,7 @@ lemma coe_corestrictReal (G : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B)
 > algebra's own restricted to it. It is the universal object of the covariant theory in the
 > sense that `JetAlgebra` is the universal object of the theory in the bare symbols.
 
-**`StandardModel.CovJetAlgebra`**, an abbrev, [line 567](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L567).
+**`StandardModel.CovJetAlgebra`**, an abbrev, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L567).
 
 > The covariant jet algebra of the Standard Model: the covariant field algebra of the
 > jet algebra. Its elements are exactly the polynomial expressions in the covariant
@@ -424,7 +424,7 @@ lemma coe_corestrictReal (G : Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] B)
 abbrev CovJetAlgebra : Type
 ```
 
-**An instance with no name**, [line 572](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L572).
+**An instance with no name**, [line 572](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L572).
 
 > The covariant jet algebra is a ring: it is a subalgebra of the jet algebra. The
 > instance is given explicitly because the generic `Subalgebra.toRing` is not found by
@@ -434,7 +434,7 @@ abbrev CovJetAlgebra : Type
 noncomputable instance : Ring CovJetAlgebra
 ```
 
-**An instance with no name**, [line 577](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L577).
+**An instance with no name**, [line 577](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L577).
 
 > The covariant jet algebra is a complex algebra, stated at the ring instance just
 > given.
@@ -443,7 +443,7 @@ noncomputable instance : Ring CovJetAlgebra
 noncomputable instance : Algebra ℂ CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.repGaugeGroupI`**, an abbrev, [line 583](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L583).
+**`StandardModel.CovJetAlgebra.repGaugeGroupI`**, an abbrev, [line 583](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L583).
 
 > The action of the global gauge group on the covariant jet algebra.
 
@@ -451,7 +451,7 @@ noncomputable instance : Algebra ℂ CovJetAlgebra
 noncomputable abbrev repGaugeGroupI : Representation ℂ GaugeGroupI CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.repLorentzGroup`**, an abbrev, [line 587](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L587).
+**`StandardModel.CovJetAlgebra.repLorentzGroup`**, an abbrev, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L587).
 
 > The action of the Lorentz group on the covariant jet algebra.
 
@@ -459,7 +459,7 @@ noncomputable abbrev repGaugeGroupI : Representation ℂ GaugeGroupI CovJetAlgeb
 noncomputable abbrev repLorentzGroup : Representation ℂ SL(2,ℂ) CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.massWeightPoly`**, an abbrev, [line 591](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L591).
+**`StandardModel.CovJetAlgebra.massWeightPoly`**, an abbrev, [line 591](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L591).
 
 > The mass-weight polynomial of the covariant jet algebra.
 
@@ -467,7 +467,7 @@ noncomputable abbrev repLorentzGroup : Representation ℂ SL(2,ℂ) CovJetAlgebr
 noncomputable abbrev massWeightPoly : CovJetAlgebra →ₐ[ℂ] Polynomial CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.fieldStrength`**, a def, [line 596](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L596).
+**`StandardModel.CovJetAlgebra.fieldStrength`**, a def, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L596).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the field
 > strength.
@@ -477,7 +477,7 @@ noncomputable def fieldStrength {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (μ 
     Module.Dual ℝ GaugeAlgebra →ₗ[ℝ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_fieldStrength`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L602).
+**`StandardModel.CovJetAlgebra.coe_fieldStrength`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L602).
 
 ```lean
 lemma coe_fieldStrength {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3)
@@ -485,7 +485,7 @@ lemma coe_fieldStrength {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) (μ ν : Fin
     (fieldStrength l μ ν φ : JetAlgebra) = AlgebraRealization.id.covF l μ ν φ
 ```
 
-**`StandardModel.CovJetAlgebra.higgsField`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L606).
+**`StandardModel.CovJetAlgebra.higgsField`**, a def, [line 606](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L606).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the Higgs field.
 
@@ -494,7 +494,7 @@ noncomputable def higgsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ HiggsVec →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_higgsField`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L612).
+**`StandardModel.CovJetAlgebra.coe_higgsField`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L612).
 
 ```lean
 lemma coe_higgsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -502,7 +502,7 @@ lemma coe_higgsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     (higgsField l φ : JetAlgebra) = AlgebraRealization.id.covDerivH l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjHiggsField`**, a def, [line 618](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L618).
+**`StandardModel.CovJetAlgebra.conjHiggsField`**, a def, [line 618](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L618).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate Higgs
 > field.
@@ -512,7 +512,7 @@ noncomputable def conjHiggsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :
     Module.Dual ℂ (ConjModule HiggsVec) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjHiggsField`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L624).
+**`StandardModel.CovJetAlgebra.coe_conjHiggsField`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L624).
 
 ```lean
 lemma coe_conjHiggsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -520,7 +520,7 @@ lemma coe_conjHiggsField {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     (conjHiggsField l φ : JetAlgebra) = AlgebraRealization.id.covDerivBarH l φ
 ```
 
-**`StandardModel.CovJetAlgebra.downSingletField`**, a def, [line 630](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L630).
+**`StandardModel.CovJetAlgebra.downSingletField`**, a def, [line 630](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L630).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the down-type quark
 > singlet of the `i`-th generation.
@@ -530,7 +530,7 @@ noncomputable def downSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 �
     Module.Dual ℂ DownSinglet →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_downSingletField`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L636).
+**`StandardModel.CovJetAlgebra.coe_downSingletField`**, a lemma, [line 636](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L636).
 
 ```lean
 lemma coe_downSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -538,7 +538,7 @@ lemma coe_downSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3
     (downSingletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivD i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjDownSingletField`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L642).
+**`StandardModel.CovJetAlgebra.conjDownSingletField`**, a def, [line 642](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L642).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate down-
 > type quark singlet of the `i`-th generation.
@@ -548,7 +548,7 @@ noncomputable def conjDownSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin
     Module.Dual ℂ (ConjModule DownSinglet) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjDownSingletField`**, a lemma, [line 648](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L648).
+**`StandardModel.CovJetAlgebra.coe_conjDownSingletField`**, a lemma, [line 648](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L648).
 
 ```lean
 lemma coe_conjDownSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -556,7 +556,7 @@ lemma coe_conjDownSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ F
     (conjDownSingletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivBarD i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.upSingletField`**, a def, [line 654](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L654).
+**`StandardModel.CovJetAlgebra.upSingletField`**, a def, [line 654](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L654).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the up-type quark
 > singlet of the `i`-th generation.
@@ -566,7 +566,7 @@ noncomputable def upSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕
     Module.Dual ℂ UpSinglet →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_upSingletField`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L660).
+**`StandardModel.CovJetAlgebra.coe_upSingletField`**, a lemma, [line 660](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L660).
 
 ```lean
 lemma coe_upSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -574,7 +574,7 @@ lemma coe_upSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
     (upSingletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivU i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjUpSingletField`**, a def, [line 666](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L666).
+**`StandardModel.CovJetAlgebra.conjUpSingletField`**, a def, [line 666](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L666).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate up-type
 > quark singlet of the `i`-th generation.
@@ -584,7 +584,7 @@ noncomputable def conjUpSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1
     Module.Dual ℂ (ConjModule UpSinglet) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjUpSingletField`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L672).
+**`StandardModel.CovJetAlgebra.coe_conjUpSingletField`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L672).
 
 ```lean
 lemma coe_conjUpSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -592,7 +592,7 @@ lemma coe_conjUpSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin
     (conjUpSingletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivBarU i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.quarkDoubletField`**, a def, [line 678](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L678).
+**`StandardModel.CovJetAlgebra.quarkDoubletField`**, a def, [line 678](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L678).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the quark doublet of
 > the `i`-th generation.
@@ -602,7 +602,7 @@ noncomputable def quarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 
     Module.Dual ℂ QuarkDoublet →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_quarkDoubletField`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L684).
+**`StandardModel.CovJetAlgebra.coe_quarkDoubletField`**, a lemma, [line 684](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L684).
 
 ```lean
 lemma coe_quarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -610,7 +610,7 @@ lemma coe_quarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 
     (quarkDoubletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivQ i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjQuarkDoubletField`**, a def, [line 690](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L690).
+**`StandardModel.CovJetAlgebra.conjQuarkDoubletField`**, a def, [line 690](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L690).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate quark
 > doublet of the `i`-th generation.
@@ -620,7 +620,7 @@ noncomputable def conjQuarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fi
     Module.Dual ℂ (ConjModule QuarkDoublet) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjQuarkDoubletField`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L696).
+**`StandardModel.CovJetAlgebra.coe_conjQuarkDoubletField`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L696).
 
 ```lean
 lemma coe_conjQuarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -628,7 +628,7 @@ lemma coe_conjQuarkDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ 
     (conjQuarkDoubletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivBarQ i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.leptonDoubletField`**, a def, [line 702](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L702).
+**`StandardModel.CovJetAlgebra.leptonDoubletField`**, a def, [line 702](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L702).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the lepton doublet of
 > the `i`-th generation.
@@ -638,7 +638,7 @@ noncomputable def leptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1
     Module.Dual ℂ LeptonDoubletV →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_leptonDoubletField`**, a lemma, [line 707](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L707).
+**`StandardModel.CovJetAlgebra.coe_leptonDoubletField`**, a lemma, [line 707](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L707).
 
 ```lean
 lemma coe_leptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -646,7 +646,7 @@ lemma coe_leptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin
     (leptonDoubletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivL i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjLeptonDoubletField`**, a def, [line 713](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L713).
+**`StandardModel.CovJetAlgebra.conjLeptonDoubletField`**, a def, [line 713](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L713).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate lepton
 > doublet of the `i`-th generation.
@@ -656,7 +656,7 @@ noncomputable def conjLeptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (F
     Module.Dual ℂ (ConjModule LeptonDoubletV) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjLeptonDoubletField`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L718).
+**`StandardModel.CovJetAlgebra.coe_conjLeptonDoubletField`**, a lemma, [line 718](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L718).
 
 ```lean
 lemma coe_conjLeptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -664,7 +664,7 @@ lemma coe_conjLeptonDoubletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕
     (conjLeptonDoubletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivBarL i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.leptonSingletField`**, a def, [line 724](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L724).
+**`StandardModel.CovJetAlgebra.leptonSingletField`**, a def, [line 724](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L724).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the charged-lepton
 > singlet of the `i`-th generation.
@@ -674,7 +674,7 @@ noncomputable def leptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1
     Module.Dual ℂ LeptonSinglet →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_leptonSingletField`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L730).
+**`StandardModel.CovJetAlgebra.coe_leptonSingletField`**, a lemma, [line 730](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L730).
 
 ```lean
 lemma coe_leptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -682,7 +682,7 @@ lemma coe_leptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin
     (leptonSingletField i l φ : JetAlgebra) = AlgebraRealization.id.covDerivE i l φ
 ```
 
-**`StandardModel.CovJetAlgebra.conjLeptonSingletField`**, a def, [line 736](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L736).
+**`StandardModel.CovJetAlgebra.conjLeptonSingletField`**, a def, [line 736](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L736).
 
 > In the covariant jet algebra, the tower of covariant derivatives of the conjugate charged-
 > lepton singlet of the `i`-th generation.
@@ -692,7 +692,7 @@ noncomputable def conjLeptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (F
     Module.Dual ℂ (ConjModule LeptonSinglet) →ₗ[ℂ] CovJetAlgebra
 ```
 
-**`StandardModel.CovJetAlgebra.coe_conjLeptonSingletField`**, a lemma, [line 742](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L742).
+**`StandardModel.CovJetAlgebra.coe_conjLeptonSingletField`**, a lemma, [line 742](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L742).
 
 ```lean
 lemma coe_conjLeptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3))
@@ -709,7 +709,7 @@ lemma coe_conjLeptonSingletField (i : Fin 3) {n : ℕ} (l : Fin n → (Fin 1 ⊕
 > a Lorentz law, whose right-hand side is a sum of scalar multiples that the coercion has to
 > be pushed through.
 
-**`StandardModel.CovJetAlgebra.repGaugeGroupI_mul`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L760).
+**`StandardModel.CovJetAlgebra.repGaugeGroupI_mul`**, a lemma, [line 760](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L760).
 
 > The global gauge action on the covariant jet algebra is multiplicative.
 
@@ -718,7 +718,7 @@ lemma repGaugeGroupI_mul (g : GaugeGroupI) (x y : CovJetAlgebra) :
     repGaugeGroupI g (x * y) = repGaugeGroupI g x * repGaugeGroupI g y
 ```
 
-**`StandardModel.CovJetAlgebra.repLorentzGroup_mul`**, a lemma, [line 765](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L765).
+**`StandardModel.CovJetAlgebra.repLorentzGroup_mul`**, a lemma, [line 765](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L765).
 
 > The Lorentz action on the covariant jet algebra is multiplicative.
 
@@ -727,7 +727,7 @@ lemma repLorentzGroup_mul (Λ : SL(2,ℂ)) (x y : CovJetAlgebra) :
     repLorentzGroup Λ (x * y) = repLorentzGroup Λ x * repLorentzGroup Λ y
 ```
 
-**`StandardModel.CovJetAlgebra.massWeightPoly_eq_monomial`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L771).
+**`StandardModel.CovJetAlgebra.massWeightPoly_eq_monomial`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L771).
 
 > A mass-weight eigenvalue equation of the jet algebra, for an element of the covariant jet
 > algebra, is a mass-weight eigenvalue equation there.
@@ -739,7 +739,7 @@ lemma massWeightPoly_eq_monomial {n : ℕ} {x : CovJetAlgebra}
     massWeightPoly x = Polynomial.monomial n x
 ```
 
-**`StandardModel.CovJetAlgebra.isLorentzCovDerivTransforms_of`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L779).
+**`StandardModel.CovJetAlgebra.isLorentzCovDerivTransforms_of`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean#L779).
 
 > A Lorentz law of the jet algebra, for a family valued in the covariant jet algebra, is a
 > Lorentz law there: the coercion is additive and commutes with scalar multiplication.
@@ -764,4 +764,4 @@ lemma isLorentzCovDerivTransforms_of {V : Type} [AddCommGroup V] [Module ℂ V]
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean)

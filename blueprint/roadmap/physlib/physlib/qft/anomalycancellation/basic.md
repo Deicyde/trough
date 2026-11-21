@@ -8,7 +8,7 @@ proof: formalized
 
 # Anomaly cancellation conditions
 
-The module `Physlib.QFT.AnomalyCancellation.Basic`, [Physlib/QFT/AnomalyCancellation/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean): 36 declarations (1 instance with no name), 28 with a docstring.
+The module `Physlib.QFT.AnomalyCancellation.Basic`, [Physlib/QFT/AnomalyCancellation/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean): 36 declarations (1 instance with no name), 28 with a docstring.
 
 ## i. Overview
 
@@ -55,7 +55,7 @@ The module `Physlib.QFT.AnomalyCancellation.Basic`, [Physlib/QFT/AnomalyCancella
 > We can think of `Fin χ.numberCharges` as an indexing type for
 > the representations present in the theory where `χ : ACCSystemCharges`.
 
-**`ACCSystemCharges`**, a structure, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L98).
+**`ACCSystemCharges`**, a structure, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L98).
 
 > A system of charges, specified by the number of charges.
 
@@ -73,7 +73,7 @@ structure ACCSystemCharges where
 > That is, for each representation in the theory, indexed by an element of `Fin χ.numberCharges`,
 > we assign a rational charge.
 
-**`ACCSystemCharges.Charges`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L117).
+**`ACCSystemCharges.Charges`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L117).
 
 > The charges as functions from `Fin χ.numberCharges → ℚ`.
 
@@ -85,7 +85,7 @@ def Charges (χ : ACCSystemCharges) : Type
 
 > The type `χ.Charges` has the structure of a module over the field `ℚ`.
 
-**`ACCSystemCharges.chargesAddCommMonoid`**, an instance, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L132).
+**`ACCSystemCharges.chargesAddCommMonoid`**, an instance, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L132).
 
 > An instance to provide the necessary operations and properties for `charges` to form an additive
 > commutative monoid.
@@ -94,7 +94,7 @@ def Charges (χ : ACCSystemCharges) : Type
 instance chargesAddCommMonoid (χ : ACCSystemCharges) : AddCommMonoid χ.Charges
 ```
 
-**`ACCSystemCharges.chargesModule`**, an instance, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L140).
+**`ACCSystemCharges.chargesModule`**, an instance, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L140).
 
 > An instance to provide the necessary operations and properties for `charges` to form a module
 > over the field `ℚ`.
@@ -103,7 +103,7 @@ instance chargesAddCommMonoid (χ : ACCSystemCharges) : AddCommMonoid χ.Charges
 instance chargesModule (χ : ACCSystemCharges) : Module ℚ χ.Charges
 ```
 
-**`ACCSystemCharges.ChargesAddCommGroup`**, an instance, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L143).
+**`ACCSystemCharges.ChargesAddCommGroup`**, an instance, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L143).
 
 ```lean
 instance ChargesAddCommGroup (χ : ACCSystemCharges) : AddCommGroup χ.Charges
@@ -113,7 +113,7 @@ instance ChargesAddCommGroup (χ : ACCSystemCharges) : AddCommGroup χ.Charges
 
 > The type `χ.Charges` is a finite module.
 
-**An instance with no name**, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L155).
+**An instance with no name**, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L155).
 
 > The module `χ.Charges` over `ℚ` is finite.
 
@@ -126,7 +126,7 @@ instance (χ : ACCSystemCharges) : Module.Finite ℚ χ.Charges
 > We define the type `ACCSystemLinear` which extends `ACCSystemCharges` by adding
 > a finite number (determined by `numberLinear`) of linear equations in the rational charges.
 
-**`ACCSystemLinear`**, a structure, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L170).
+**`ACCSystemLinear`**, a structure, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L170).
 
 > The type of charges plus the linear ACCs.
 
@@ -143,7 +143,7 @@ structure ACCSystemLinear extends ACCSystemCharges where
 > We define the type `LinSols` of solutions to the linear ACCs.
 > That is the submodule of `χ.Charges` which satisfy all the linear ACCs.
 
-**`ACCSystemLinear.LinSols`**, a structure, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L188).
+**`ACCSystemLinear.LinSols`**, a structure, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L188).
 
 > The type of solutions to the linear ACCs.
 
@@ -159,7 +159,7 @@ structure LinSols (χ : ACCSystemLinear) where
 
 > We prove a lemma relating to the equality of two elements of `LinSols`.
 
-**`ACCSystemLinear.LinSols.ext`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L204).
+**`ACCSystemLinear.LinSols.ext`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L204).
 
 > Two solutions are equal if the underlying charges are equal.
 
@@ -171,7 +171,7 @@ lemma LinSols.ext {χ : ACCSystemLinear} {S T : χ.LinSols} (h : S.val = T.val) 
 
 > we now give a module structure to `LinSols`.
 
-**`ACCSystemLinear.linSolsAddCommMonoid`**, an instance, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L219).
+**`ACCSystemLinear.linSolsAddCommMonoid`**, an instance, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L219).
 
 > An instance providing the operations and properties for `LinSols` to form an
 > additive commutative monoid.
@@ -181,7 +181,7 @@ instance linSolsAddCommMonoid (χ : ACCSystemLinear) :
     AddCommMonoid χ.LinSols
 ```
 
-**`ACCSystemLinear.linSolsModule`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L235).
+**`ACCSystemLinear.linSolsModule`**, an instance, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L235).
 
 > An instance providing the operations and properties for `LinSols` to form a
 > module over `ℚ`.
@@ -190,7 +190,7 @@ instance linSolsAddCommMonoid (χ : ACCSystemLinear) :
 instance linSolsModule (χ : ACCSystemLinear) : Module ℚ χ.LinSols
 ```
 
-**`ACCSystemLinear.linSolsAddCommGroup`**, an instance, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L244).
+**`ACCSystemLinear.linSolsAddCommGroup`**, an instance, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L244).
 
 ```lean
 instance linSolsAddCommGroup (χ : ACCSystemLinear) : AddCommGroup χ.LinSols
@@ -201,7 +201,7 @@ instance linSolsAddCommGroup (χ : ACCSystemLinear) : AddCommGroup χ.LinSols
 > We give the linear embedding of solutions to the linear ACCs `LinSols` into
 > the module of all `charges`.
 
-**`ACCSystemLinear.linSolsIncl`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L257).
+**`ACCSystemLinear.linSolsIncl`**, a def, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L257).
 
 > The inclusion of `LinSols` into `charges`.
 
@@ -209,7 +209,7 @@ instance linSolsAddCommGroup (χ : ACCSystemLinear) : AddCommGroup χ.LinSols
 def linSolsIncl (χ : ACCSystemLinear) : χ.LinSols →ₗ[ℚ] χ.Charges
 ```
 
-**`ACCSystemLinear.linSolsIncl_injective`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L262).
+**`ACCSystemLinear.linSolsIncl_injective`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L262).
 
 ```lean
 lemma linSolsIncl_injective (χ : ACCSystemLinear) :
@@ -224,7 +224,7 @@ lemma linSolsIncl_injective (χ : ACCSystemLinear) :
 > These quadratic anomaly cancellation conditions correspond to the interaction
 > of the `u(1)` part of the gauge group of interest with another abelian part.
 
-**`ACCSystemQuad`**, a structure, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L280).
+**`ACCSystemQuad`**, a structure, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L280).
 
 > The type of charges plus the linear ACCs plus the quadratic ACCs.
 
@@ -240,7 +240,7 @@ structure ACCSystemQuad extends ACCSystemLinear where
 
 > We define the type `QuadSols` of solutions to the linear and quadratic ACCs.
 
-**`ACCSystemQuad.QuadSols`**, a structure, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L297).
+**`ACCSystemQuad.QuadSols`**, a structure, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L297).
 
 > The type of solutions to the linear and quadratic ACCs.
 
@@ -254,7 +254,7 @@ structure QuadSols (χ : ACCSystemQuad) extends χ.LinSols where
 
 > We prove a lemma relating to the equality of two elements of `QuadSols`.
 
-**`ACCSystemQuad.QuadSols.ext`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L311).
+**`ACCSystemQuad.QuadSols.ext`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L311).
 
 > Two `QuadSols` are equal if the underlying charges are equal.
 
@@ -269,7 +269,7 @@ lemma QuadSols.ext {χ : ACCSystemQuad} {S T : χ.QuadSols} (h : S.val = T.val) 
 > the quadratic ACCs are not linear. However it does carry the structure of
 > a `MulAction` of `ℚ`.
 
-**`ACCSystemQuad.quadSolsMulAction`**, an instance, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L327).
+**`ACCSystemQuad.quadSolsMulAction`**, an instance, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L327).
 
 > An instance giving the properties and structures to define an action of `ℚ` on `QuadSols`.
 
@@ -282,7 +282,7 @@ instance quadSolsMulAction (χ : ACCSystemQuad) : MulAction ℚ χ.QuadSols
 > We give the equivariant of solutions to the quadratic and linear ACCs `QuadSols` into
 > the solutions to the linear ACCs `LinSols`.
 
-**`ACCSystemQuad.quadSolsInclLinSols`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L343).
+**`ACCSystemQuad.quadSolsInclLinSols`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L343).
 
 > The inclusion of quadratic solutions into linear solutions.
 
@@ -290,7 +290,7 @@ instance quadSolsMulAction (χ : ACCSystemQuad) : MulAction ℚ χ.QuadSols
 def quadSolsInclLinSols (χ : ACCSystemQuad) : χ.QuadSols →[ℚ] χ.LinSols
 ```
 
-**`ACCSystemQuad.quadSolsInclLinSols_injective`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L347).
+**`ACCSystemQuad.quadSolsInclLinSols_injective`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L347).
 
 ```lean
 lemma quadSolsInclLinSols_injective (χ : ACCSystemQuad) :
@@ -302,7 +302,7 @@ lemma quadSolsInclLinSols_injective (χ : ACCSystemQuad) :
 > When there are no quadratic ACCs, the solutions to the linear ACCs embed into the solutions
 > to the quadratic and linear ACCs.
 
-**`ACCSystemQuad.linSolsInclQuadSolsZero`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L362).
+**`ACCSystemQuad.linSolsInclQuadSolsZero`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L362).
 
 > The inclusion of the linear solutions into the quadratic solutions, where there is
 > no quadratic equations (i.e. no U(1)'s in the underlying gauge group).
@@ -317,7 +317,7 @@ def linSolsInclQuadSolsZero (χ : ACCSystemQuad) (h : χ.numberQuadratic = 0) :
 > We give the equivariant embedding of solutions to the quadratic and linear ACCs `QuadSols` into
 > the module of all charges `Charges`.
 
-**`ACCSystemQuad.quadSolsIncl`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L377).
+**`ACCSystemQuad.quadSolsIncl`**, a def, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L377).
 
 > The inclusion of quadratic solutions into all charges.
 
@@ -325,7 +325,7 @@ def linSolsInclQuadSolsZero (χ : ACCSystemQuad) (h : χ.numberQuadratic = 0) :
 def quadSolsIncl (χ : ACCSystemQuad) : χ.QuadSols →[ℚ] χ.Charges
 ```
 
-**`ACCSystemQuad.quadSolsIncl_injective`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L380).
+**`ACCSystemQuad.quadSolsIncl_injective`**, a lemma, [line 380](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L380).
 
 ```lean
 lemma quadSolsIncl_injective (χ : ACCSystemQuad) :
@@ -337,7 +337,7 @@ lemma quadSolsIncl_injective (χ : ACCSystemQuad) :
 > We extend `ACCSystemQuad` to `ACCSystem` by adding the single cubic equation
 > in the rational charges. This corresponds to the `u(1)^3` anomaly.
 
-**`ACCSystem`**, a structure, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L406).
+**`ACCSystem`**, a structure, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L406).
 
 > The type of charges plus the anomaly cancellation conditions.
 >
@@ -358,7 +358,7 @@ structure ACCSystem extends ACCSystemQuad where
 
 > We define the type `Sols` of solutions to the full ACCs.
 
-**`ACCSystem.Sols`**, a structure, [line 421](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L421).
+**`ACCSystem.Sols`**, a structure, [line 421](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L421).
 
 > The type of solutions to the anomaly cancellation conditions.
 
@@ -372,7 +372,7 @@ structure Sols (χ : ACCSystem) extends χ.QuadSols where
 
 > We prove a lemma relating to the equality of two elements of `Sols`.
 
-**`ACCSystem.Sols.ext`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L434).
+**`ACCSystem.Sols.ext`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L434).
 
 > Two solutions are equal if the underlying charges are equal.
 
@@ -385,7 +385,7 @@ lemma Sols.ext {χ : ACCSystem} {S T : χ.Sols} (h : S.val = T.val) :
 
 > we define a predicate on charges which is true if they correspond to a solution.
 
-**`ACCSystem.IsSolution`**, a def, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L449).
+**`ACCSystem.IsSolution`**, a def, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L449).
 
 > A charge `S` is a solution if it extends to a solution.
 
@@ -399,7 +399,7 @@ def IsSolution (χ : ACCSystem) (S : χ.Charges) : Prop
 > as the cubic nor quadratic ACC is not linear. However it does carry the structure of
 > a `MulAction` of `ℚ`.
 
-**`ACCSystem.solsMulAction`**, an instance, [line 463](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L463).
+**`ACCSystem.solsMulAction`**, an instance, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L463).
 
 > An instance giving the properties and structures to define an action of `ℚ` on `Sols`.
 
@@ -409,7 +409,7 @@ instance solsMulAction (χ : ACCSystem) : MulAction ℚ χ.Sols
 
 ### H.4. Embeddings of solutions to the ACCs into quadratic solutions
 
-**`ACCSystem.solsInclQuadSols`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L477).
+**`ACCSystem.solsInclQuadSols`**, a def, [line 477](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L477).
 
 > The inclusion of `Sols` into `QuadSols`.
 
@@ -417,7 +417,7 @@ instance solsMulAction (χ : ACCSystem) : MulAction ℚ χ.Sols
 def solsInclQuadSols (χ : ACCSystem) : χ.Sols →[ℚ] χ.QuadSols
 ```
 
-**`ACCSystem.solsInclQuadSols_injective`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L481).
+**`ACCSystem.solsInclQuadSols_injective`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L481).
 
 ```lean
 lemma solsInclQuadSols_injective (χ : ACCSystem) :
@@ -426,7 +426,7 @@ lemma solsInclQuadSols_injective (χ : ACCSystem) :
 
 ### H.5. Embeddings of solutions to the ACCs into linear solutions
 
-**`ACCSystem.solsInclLinSols`**, a def, [line 491](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L491).
+**`ACCSystem.solsInclLinSols`**, a def, [line 491](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L491).
 
 > The inclusion of `Sols` into `LinSols`.
 
@@ -434,7 +434,7 @@ lemma solsInclQuadSols_injective (χ : ACCSystem) :
 def solsInclLinSols (χ : ACCSystem) : χ.Sols →[ℚ] χ.LinSols
 ```
 
-**`ACCSystem.solsInclLinSols_injective`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L494).
+**`ACCSystem.solsInclLinSols_injective`**, a lemma, [line 494](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L494).
 
 ```lean
 lemma solsInclLinSols_injective (χ : ACCSystem) :
@@ -443,7 +443,7 @@ lemma solsInclLinSols_injective (χ : ACCSystem) :
 
 ### H.6. Embeddings of solutions to the ACCs into charges
 
-**`ACCSystem.solsIncl`**, a def, [line 506](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L506).
+**`ACCSystem.solsIncl`**, a def, [line 506](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L506).
 
 > The inclusion of `Sols` into `LinSols`.
 
@@ -451,7 +451,7 @@ lemma solsInclLinSols_injective (χ : ACCSystem) :
 def solsIncl (χ : ACCSystem) : χ.Sols →[ℚ] χ.Charges
 ```
 
-**`ACCSystem.solsIncl_injective`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L509).
+**`ACCSystem.solsIncl_injective`**, a lemma, [line 509](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L509).
 
 ```lean
 lemma solsIncl_injective (χ : ACCSystem) :
@@ -465,7 +465,7 @@ lemma solsIncl_injective (χ : ACCSystem) :
 > such that mapping solutions and then including in the module of charges
 > is the same as including in the module of charges and then mapping charges.
 
-**`ACCSystem.Hom`**, a structure, [line 526](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L526).
+**`ACCSystem.Hom`**, a structure, [line 526](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L526).
 
 > The structure of a map between two ACCSystems.
 
@@ -481,7 +481,7 @@ structure Hom (χ η : ACCSystem) where
 
 ### I.1. Composition of morphisms between ACC systems
 
-**`ACCSystem.Hom.comp`**, a def, [line 541](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean#L541).
+**`ACCSystem.Hom.comp`**, a def, [line 541](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean#L541).
 
 > The definition of composition between two ACCSystems.
 
@@ -493,8 +493,8 @@ def Hom.comp {χ η ε : ACCSystem} (g : Hom η ε) (f : Hom χ η) : Hom χ ε
 
 ## Depends on
 
-- [Linear maps](../../mathematics/formathlib/linearmaps.md)
+- [Linear maps](../../mathematics/formathlib/part-01/linearmaps.md)
 
 ## Sources
 
-- [Physlib/QFT/AnomalyCancellation/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/Basic.lean)
+- [Physlib/QFT/AnomalyCancellation/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/Basic.lean)

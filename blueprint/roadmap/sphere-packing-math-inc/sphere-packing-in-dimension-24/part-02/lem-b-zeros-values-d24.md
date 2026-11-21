@@ -19,10 +19,6 @@ $$
 - [b-d24](../part-01/def-b-d24.md)
 - [minusone-d24](../part-01/lem-minusone-d24.md)
 
-## Proof
-
-.
-
 ## Lean
 
 Formalized as `SpherePacking.Dim24.b_mapsTo_pureImag`, `SpherePacking.Dim24.b_zero_of_norm_sq_eq_two_mul`, `SpherePacking.Dim24.bRadial_hasDerivAt_zero_of_two_lt`, `SpherePacking.Dim24.bRadial_zero`, `SpherePacking.Dim24.bRadial_sqrtTwo`, `SpherePacking.Dim24.bRadial_hasDerivAt_sqrtTwo`, `SpherePacking.Dim24.bRadial_two`, `SpherePacking.Dim24.bRadial_hasDerivAt_two`.

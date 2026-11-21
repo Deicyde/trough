@@ -8,7 +8,7 @@ proof: formalized
 
 # The light-cone basis of a boost axis over the integers
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.LightCone`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean): 12 declarations (1 instance with no name), 11 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.LightCone`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean): 12 declarations (1 instance with no name), 11 with a docstring.
 
 ## i. Overview
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.LightCone`, [Physlib
 
 ## A. The change of basis over the integers
 
-**`Lorentz.Invariants.lightConeCoeffZ`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L75).
+**`Lorentz.Invariants.lightConeCoeffZ`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L75).
 
 > The four light-cone directions of axis `i`, as integers.
 
@@ -59,7 +59,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.LightCone`, [Physlib
 def lightConeCoeffZ (i : Fin 3) (κ : Fin 4) (μ : Fin 1 ⊕ Fin 3) : ℤ
 ```
 
-**`Lorentz.Invariants.coe_lightConeCoeffZ`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L82).
+**`Lorentz.Invariants.coe_lightConeCoeffZ`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L82).
 
 > The integer copy casts to `lightConeCoeff`.
 
@@ -68,7 +68,7 @@ lemma coe_lightConeCoeffZ (i : Fin 3) (κ : Fin 4) (μ : Fin 1 ⊕ Fin 3) :
     ((lightConeCoeffZ i κ μ : ℤ) : ℂ) = lightConeCoeff i κ μ
 ```
 
-**`Lorentz.Invariants.lightConeCoeffInvZ`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L88).
+**`Lorentz.Invariants.lightConeCoeffInvZ`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L88).
 
 > Twice the coordinate directions in the light-cone basis, the `2` clearing the halves.
 
@@ -76,7 +76,7 @@ lemma coe_lightConeCoeffZ (i : Fin 3) (κ : Fin 4) (μ : Fin 1 ⊕ Fin 3) :
 def lightConeCoeffInvZ (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) (κ : Fin 4) : ℤ
 ```
 
-**`Lorentz.Invariants.coe_lightConeCoeffInvZ_eq_two_mul`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L95).
+**`Lorentz.Invariants.coe_lightConeCoeffInvZ_eq_two_mul`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L95).
 
 > The integer copy is exactly twice `lightConeCoeffInv`.
 
@@ -91,7 +91,7 @@ lemma coe_lightConeCoeffInvZ_eq_two_mul (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) (κ :
 > the light-cone directions of weight `±2` are supported in the first pair and the two of weight
 > `0` in the second. Either half of that statement kills half of `lightConeCoeffInvZ`.
 
-**`Lorentz.Invariants.InBoostPlane`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L111).
+**`Lorentz.Invariants.InBoostPlane`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L111).
 
 > The boost plane of axis `i`: time and the axis, the two directions the boost moves.
 
@@ -99,13 +99,13 @@ lemma coe_lightConeCoeffInvZ_eq_two_mul (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) (κ :
 def InBoostPlane (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) : Prop
 ```
 
-**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L113).
+**An instance with no name**, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L113).
 
 ```lean
 instance (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) : Decidable (InBoostPlane i μ)
 ```
 
-**`Lorentz.Invariants.lightConeCoeffInvZ_eq_zero_of_inBoostPlane`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L117).
+**`Lorentz.Invariants.lightConeCoeffInvZ_eq_zero_of_inBoostPlane`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L117).
 
 > A direction in the boost plane has no transverse light-cone components.
 
@@ -115,7 +115,7 @@ lemma lightConeCoeffInvZ_eq_zero_of_inBoostPlane {i : Fin 3} {μ : Fin 1 ⊕ Fin
     lightConeCoeffInvZ i μ κ = 0
 ```
 
-**`Lorentz.Invariants.lightConeCoeffInvZ_eq_zero_of_not_inBoostPlane`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L123).
+**`Lorentz.Invariants.lightConeCoeffInvZ_eq_zero_of_not_inBoostPlane`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L123).
 
 > A transverse direction has no light-cone components in the boost plane.
 
@@ -140,7 +140,7 @@ lemma lightConeCoeffInvZ_eq_zero_of_not_inBoostPlane {i : Fin 3} {μ : Fin 1 ⊕
 > slot off a weight-constrained sum over tuples, which is `Physlib.Fin.sum_filter_weight_succ`.
 > `transitionZ_eq_sum` is the induction that composes them.
 
-**`Lorentz.Invariants.slotZ`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L149).
+**`Lorentz.Invariants.slotZ`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L149).
 
 > One slot's factor: twice the coefficient of `κ` in `μ`, times that of `ν` in `κ`.
 
@@ -148,7 +148,7 @@ lemma lightConeCoeffInvZ_eq_zero_of_not_inBoostPlane {i : Fin 3} {μ : Fin 1 ⊕
 def slotZ (i : Fin 3) (κ : Fin 4) (μ ν : Fin 1 ⊕ Fin 3) : ℤ
 ```
 
-**`Lorentz.Invariants.transitionZ`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L156).
+**`Lorentz.Invariants.transitionZ`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L156).
 
 > Two to the number of slots times the entry, at `d` and `e`, of the map keeping the light-cone
 > components of total weight `m` along axis `i`; the factor is the one `lightConeCoeffInvZ`
@@ -159,7 +159,7 @@ def slotZ (i : Fin 3) (κ : Fin 4) (μ ν : Fin 1 ⊕ Fin 3) : ℤ
 def transitionZ (i : Fin 3) : {n : ℕ} → (d e : Fin n → Fin 1 ⊕ Fin 3) → ℤ → ℤ
 ```
 
-**`Lorentz.Invariants.transitionZ_succ`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L169).
+**`Lorentz.Invariants.transitionZ_succ`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L169).
 
 > One slot of the transition, with the case split of the recursion resolved: the first slot
 > runs over all four light-cone directions, each taking its own weight out of `m`. The two
@@ -173,7 +173,7 @@ lemma transitionZ_succ (i : Fin 3) {n : ℕ} (d e : Fin (n + 1) → Fin 1 ⊕ Fi
           * transitionZ i (Fin.tail d) (Fin.tail e) (m - lightConeWeight κ)
 ```
 
-**`Lorentz.Invariants.transitionZ_eq_sum`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L185).
+**`Lorentz.Invariants.transitionZ_eq_sum`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean#L185).
 
 > The recursion unfolded, as a sum over the multi-indices of total weight `m`.
 
@@ -196,4 +196,4 @@ lemma transitionZ_eq_sum (i : Fin 3) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean)

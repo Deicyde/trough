@@ -8,7 +8,7 @@ proof: formalized
 
 # 14.34 Standard resolutions
 
-Section 14.34 of the Stacks Project, [Tag 08N8](https://stacks.math.columbia.edu/tag/08N8). 9 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.34 of the Stacks Project, [Tag 08N8](https://stacks.math.columbia.edu/tag/08N8). 9 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08N9, a situation
 
@@ -16,7 +16,7 @@ Section 14.34 of the Stacks Project, [Tag 08N8](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Adjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L30) (StacksFrontier): “the situation: V : A ⥤ S with a left adjoint U : S ⥤ A, as the adjunction U ⊣ V”. References: SGA 3 I (5.3.1.1); SGA 4 II (6.5); SGA 4 IV (1.5); SGA 4 IV (3.1), “more general”.
+- [`CategoryTheory.Adjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch14.lean#L30) (StacksFrontier): “the situation: V : A ⥤ S with a left adjoint U : S ⥤ A, as the adjunction U ⊣ V”. References: SGA 3 I (5.3.1.1); SGA 4 II (6.5); SGA 4 IV (1.5); SGA 4 IV (3.1), “more general”.
 
 ## Tag 08NB, an equation
 
@@ -24,14 +24,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Adjunction.right_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.right_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L123) (StacksFrontier): “V → VUV → V is the identity (for `adj : U ⊣ V`, Mathlib's `F = U`, `G = V`; up to unitors)”.
-- [`CategoryTheory.Adjunction.left_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.left_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L126) (StacksFrontier): “U → UVU → U is the identity (same conventions)”.
+- [`CategoryTheory.Adjunction.right_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.right_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch14.lean#L123) (StacksFrontier): “V → VUV → V is the identity (for `adj : U ⊣ V`, Mathlib's `F = U`, `G = V`; up to unitors)”.
+- [`CategoryTheory.Adjunction.left_triangle`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.left_triangle#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch14.lean#L126) (StacksFrontier): “U → UVU → U is the identity (same conventions)”.
 
 ## Tag 08NC, a lemma
 
 [Tag 08NC](https://stacks.math.columbia.edu/tag/08NC) in the Stacks Project.
 
-**`CategoryTheory.Comonad.exists_augmented_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L187).
+**`CategoryTheory.Comonad.exists_augmented_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L187).
 
 > **Stacks 08NC**.
 > Let `G` be a comonad on a category `A`, with counit `G.ε : G ⟶ 𝟭 A` and comultiplication
@@ -74,7 +74,7 @@ public theorem exists_augmented_standardResolution {A : Type u} [Category.{v} A]
 
 [Tag 08ND](https://stacks.math.columbia.edu/tag/08ND) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.exists_homotopyInverse_whiskered_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L502).
+**`CategoryTheory.Adjunction.exists_homotopyInverse_whiskered_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 502](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L502).
 
 > **Stacks 08ND**.
 > Let `V : A ⥤ S` have a left adjoint `U : S ⥤ A`, and let `X` be the standard resolution: the
@@ -131,7 +131,7 @@ public theorem exists_homotopyInverse_whiskered_standardResolution
 
 [Tag 0G5T](https://stacks.math.columbia.edu/tag/0G5T) in the Stacks Project.
 
-**`AlgebraicTopology.homotopyEquivalences_forget_iff_quasiIso_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1183).
+**`AlgebraicTopology.homotopyEquivalences_forget_iff_quasiIso_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1183).
 
 > **Stacks 0G5T**.
 > Let `R` be a ring and let `f : X ⟶ Y` be a morphism of simplicial `R`-modules which is surjective
@@ -156,7 +156,7 @@ public theorem homotopyEquivalences_forget_iff_quasiIso_of_surjective {R : Type 
 
 [Tag 08NA](https://stacks.math.columbia.edu/tag/08NA) in the Stacks Project.
 
-**`AlgebraicTopology.homotopyEquivalences_forget_iff_quasiIso_forget₂_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1204).
+**`AlgebraicTopology.homotopyEquivalences_forget_iff_quasiIso_forget₂_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1204).
 
 > **Stacks 08NA**.
 > Let `A` be a ring and let `f : X ⟶ Y` be a morphism of simplicial `A`-algebras which is surjective
@@ -181,7 +181,7 @@ public theorem homotopyEquivalences_forget_iff_quasiIso_forget₂_of_surjective 
 
 [Tag 0G5U](https://stacks.math.columbia.edu/tag/0G5U) in the Stacks Project.
 
-**`ModuleCat.free_standardResolution_face_degeneracy_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1268).
+**`ModuleCat.free_standardResolution_face_degeneracy_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean, line 1268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/StandardResolution/Basic.lean#L1268).
 
 > **Stacks 0G5U**.
 > Let `R` be a ring, `M` an `R`-module and `R[N]` the free `R`-module on the underlying set of an
@@ -212,7 +212,7 @@ public theorem free_standardResolution_face_degeneracy_apply {R : Type u} [Ring 
 
 [Tag 09CB](https://stacks.math.columbia.edu/tag/09CB) in the Stacks Project.
 
-**`CommAlgCat.face_eq_aeval_and_degeneracy_eq_rename`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolution.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/StandardResolution.lean#L527).
+**`CommAlgCat.face_eq_aeval_and_degeneracy_eq_rename`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolution.lean, line 527](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/StandardResolution.lean#L527).
 
 > **Stacks 09CB**.
 > Let `A` be a ring and `B` a commutative `A`-algebra, and let `Xₙ(B) = A[A[⋯[B]⋯]]` (`n + 1`
@@ -257,7 +257,7 @@ theorem face_eq_aeval_and_degeneracy_eq_rename (A : Type u) [CommRing A]
 
 [Tag 08NE](https://stacks.math.columbia.edu/tag/08NE) in the Stacks Project.
 
-**`CommAlgCat.exists_homotopyInverse_whiskered_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolution.lean, line 704](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/StandardResolution.lean#L704). The attribute's comment: “both claims, for the polynomial-algebra adjunction on commutative algebras, with the degree-`n` inverses `b ↦ [⋯[b]⋯]` and `[e] ↦ [⋯[e]⋯]`”.
+**`CommAlgCat.exists_homotopyInverse_whiskered_standardResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolution.lean, line 704](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/StandardResolution.lean#L704). The attribute's comment: “both claims, for the polynomial-algebra adjunction on commutative algebras, with the degree-`n` inverses `b ↦ [⋯[b]⋯]` and `[e] ↦ [⋯[e]⋯]`”.
 
 > **Stacks 08NE**.
 > Let `A` be a ring, let `Alg_A` be the category of commutative `A`-algebras, let
@@ -346,4 +346,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.34, Tag 08N8](https://stacks.math.columbia.edu/tag/08N8)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

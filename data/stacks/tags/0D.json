@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0D00",
@@ -12174,7 +12174,7 @@
     {
      "name": "AlgebraicGeometry.RingedSite.familyMorphism_isFlat",
      "kind": "theorem",
-     "line": 248,
+     "line": 250,
      "private": false,
      "doc": "**Stacks 0D9U.** The morphism of ringed topoi induced by a morphism of semi-representable\nobjects is flat.",
      "statement": "theorem familyMorphism_isFlat (X : RingedSite.{u, v, max u v w r})\n    {K L : FormalCoproduct.{w} X.C} (f : K ⟶ L) :\n    Stacks.Sheaf.RingedToposFlat.RingedToposHom.IsFlat.{max u v w, max u v w,\n        max u v w r, max u v w, max u v w, max u v w r}\n      (familyMorphism.{w, v, u, r} X f).val",
@@ -15626,7 +15626,7 @@
     {
      "name": "Stacks.CategoryTheory.Hypercovering.exists_derivedPullbackEquivalence_localSerreFamily",
      "kind": "theorem",
-     "line": 167,
+     "line": 168,
      "private": false,
      "doc": "**Stacks 0DC7.** Let `(C, O_C)` be a ringed site with equalizers and fibre products, and let\n`A_U ⊂ Mod(O_U)` be weak Serre subcategories satisfying conditions 0DC2, 0DC3 and 0DC4 (the\nfields of `T : LocalSerreFamily`), with `A ⊂ Mod(O_C)` the modules whose restriction to every\n`C/U` lies in `A_U`. Let `K` be a hypercovering of `C`, let\n`a : ((C/K)_total, O) ⟶ (C, O_C)` be the ringed augmentation of Remark 0D9W, with `O = a⁻¹O_C`,\nand let `A_total ⊂ Mod(O)` be the cartesian `O`-modules `F` whose restriction `F_n` lies in\n`A_{K_n} = ∏_i A_{U_{n,i}}` for every `n`. Then `A_total` is a weak Serre subcategory of\n`Mod(O)`, and `La^*` defines an equivalence\n\n`D_A(O_C) ⟶ D_{A_total}(O)`\n\nwith quasi-inverse `Ra_*`: there is an equivalence of the full subcategories of the unbounded\nderived categories on the objects with cohomology in `A`, respectively `A_total`, whose functor\nis the restriction of the derived pullback `La^*` and whose inverse is the restriction of the\nderived direct image `Ra_*`.",
      "statement": "theorem exists_derivedPullbackEquivalence_localSerreFamily :\n    (totalLocalSerre J H OC T).IsWeakSerreClass ∧\n      ∃ e : (DerivedCategoryB.derivedCategoryB (baseLocalSerre J OC T)).FullSubcategory ≌\n          (DerivedCategoryB.derivedCategoryB (totalLocalSerre J H OC T)).FullSubcategory,\n        e.functor ⋙ (DerivedCategoryB.derivedCategoryB (totalLocalSerre J H OC T)).ι =\n            (DerivedCategoryB.derivedCategoryB (baseLocalSerre J OC T)).ι ⋙\n              (RingedToposHom.leftDerivedPullbackOfIsIsoFSharp\n                (hypercoveringRingedAugmentation J H OC).totalRingedHom).functor ∧\n          e.inverse ⋙ (DerivedCategoryB.derivedCategoryB (baseLocalSerre J OC T)).ι =\n            (DerivedCategoryB.derivedCategoryB (totalLocalSerre J H OC T)).ι ⋙\n              derivedPushforward (X := (hypercoveringSituation J H).totalRingedTopos\n                (hypercoveringRingedAugmentation J H OC).O)\n                (Y := (hypercoveringRingedAugmentation J H OC).augmentationRingedTopos)\n                (hypercoveringRingedAugmentation J H OC).totalRingedHom",
@@ -18497,7 +18497,7 @@
     {
      "name": "Stacks.SheafOfModules.SitePointStalkSheafify.kFlat_of_stalks",
      "kind": "theorem",
-     "line": 80,
+     "line": 126,
      "private": false,
      "doc": "**Stacks 0DEN, part (2), with no extra hypothesis.** On a ringed site whose underlying site\nhas enough points, a complex of `O`-modules whose stalk at every point is a K-flat complex of\nmodules over the stalk of `O` is itself K-flat.\n\nThis is `Stacks.Sheaves.KFlatStalkCriterion.kFlat_of_stalks` with its\n`Stacks.Sheaves.KFlatStalkCriterion.StalkTensorData` argument supplied by `stalkTensorData`.",
      "statement": "theorem kFlat_of_stalks (hJ : J.HasConservativeFamily.{u})\n    (K : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf O)) ℤ)\n    (hK : ∀ Ψ : J.Point.{u},\n      CochainComplex.KFlat.{u, u} (Stacks.Sheaves.KFlatStalkCriterion.stalkComplex O Ψ K)) :\n    Stacks.SheafOfModules.IsKFlat O K",
@@ -25242,7 +25242,7 @@
     {
      "name": "Deformation.ComplexLift.unit_comp_curvature",
      "kind": "theorem",
-     "line": 289,
+     "line": 287,
      "private": false,
      "doc": "The curvature computes the square of the lifted differential: pulled back to the lift and\nfollowed by the ideal inclusion it is `d ∘ d`. This is the identification of `ω` with the\ncurvature class, read on the complex representing it.",
      "statement": "theorem unit_comp_curvature (n : ℤ) :\n    L.baseChange.unit n ≫ (restrict f).map (curvature T n) ≫ T.emb (n + 1 + 1) =\n      L.F.d n ≫ L.F.d (n + 1)",
@@ -25256,7 +25256,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap",
      "kind": "def",
-     "line": 444,
+     "line": 442,
      "private": false,
      "doc": "**Stacks 0DIU.** The canonical map `ω(K₀) : K₀ ⟶ (K₀ ⊗^L_{O₀} I)[2]` attached to a\nsquare-zero extension of sheaves of rings with ideal sheaf `I`. It is the curvature of the\nlifted differential of a bounded above flat lift of `K₀`, transported along the\nquasi-isomorphism identifying the reduction of that lift with `K₀`.",
      "statement": "def obstructionMap {L : FlatLift f K₀} (T : IdealKernel S L) :\n    DerivedCategory.Q.obj K₀ ⟶ (D.functor.obj (DerivedCategory.Q.obj K₀))⟦(2 : ℤ)⟧",
@@ -25270,7 +25270,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap_natural",
      "kind": "theorem",
-     "line": 479,
+     "line": 477,
      "private": false,
      "doc": "**Stacks 0DIU.** Naturality of `ω`: for a map `φ : K₀ ⟶ L₀` of bounded above complexes\ncovered by a morphism of flat lifts, the square formed by `ω(K₀)`, `ω(L₀)` and the maps induced\nby `φ` commutes.",
      "statement": "theorem obstructionMap_natural :\n    DerivedCategory.Q.map φ ≫ obstructionMap D TM =\n      obstructionMap D TL ≫\n        (CategoryTheory.shiftFunctor (DerivedCategory (SheafMod O₀)) (2 : ℤ)).map\n          (D.functor.map (DerivedCategory.Q.map φ))",
@@ -25284,7 +25284,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap_eq_of_hom",
      "kind": "theorem",
-     "line": 512,
+     "line": 510,
      "private": false,
      "doc": "**Stacks 0DIU.** Two flat lifts of the same complex joined by a morphism of lifts over the\nidentity give the same map `ω(K₀)`. Together with the existence of a lift receiving maps from\nany two, this is the independence of `ω` of the lift, hence its canonicality.",
      "statement": "theorem obstructionMap_eq_of_hom {L M : FlatLift f K₀} (h : FlatLiftHom L M (𝟙 K₀))\n    (TL : IdealKernel S L) (TM : IdealKernel S M)\n    (hemb : ∀ n : ℤ, (restrict f).map (((idealTensorFunctor O₀ I).map h.red).f n) ≫\n      TM.emb n = TL.emb n ≫ h.hom n) :\n    obstructionMap D TL = obstructionMap D TM",
@@ -25382,7 +25382,7 @@
     {
      "name": "Deformation.ComplexLift.emb_coherence",
      "kind": "theorem",
-     "line": 185,
+     "line": 133,
      "private": false,
      "doc": "**Stacks 0DIU, coherence of the kernel identifications.** A morphism of flat lifts carries\nthe identification of the ideal part of the source to that of the target. This is the hypothesis\n`hemb` of `Deformation.ComplexLift.obstructionMap_natural` and of\n`Deformation.ComplexLift.obstructionMap_eq_of_hom`, and it holds for *every* pair of\nidentifications, because both are normalized by the same pure-tensor formula\n`Deformation.ComplexLift.IdealKernel.emb_tmul`.",
      "statement": "theorem emb_coherence (hf : Sheaf.IsLocallySurjective f)\n    {L : FlatLift f K₀} {M : FlatLift f L₀} {φ : K₀ ⟶ L₀} (h : FlatLiftHom L M φ)\n    (TL : IdealKernel S L) (TM : IdealKernel S M) (n : ℤ) :\n    (restrict f).map (((idealTensorFunctor O₀ I).map h.red).f n) ≫ TM.emb n =\n      TL.emb n ≫ h.hom n",
@@ -25396,7 +25396,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap_eq_of_lift",
      "kind": "theorem",
-     "line": 262,
+     "line": 210,
      "private": false,
      "doc": "**Stacks 0DIU, `ω(K₀)` does not depend on the flat lift.** Given a kernel identification on\nevery bounded above flat lift of `K₀` -- no compatibility between them assumed, since\n`Deformation.ComplexLift.emb_coherence` supplies it -- the map `ω(K₀)` computed from any two\nflat lifts is the same. The comparison that forces the agreement is\n`Deformation.ComplexLift.exists_flatLiftHom_pair`, Stacks 0DIT applied to the direct sum of the\ntwo lifted families.",
      "statement": "theorem obstructionMap_eq_of_lift (hf : Sheaf.IsLocallySurjective f)\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n))\n    (kern : ∀ M : FlatLift f K₀, IdealKernel S M) (L L' : FlatLift f K₀) :\n    obstructionMap D (kern L) = obstructionMap D (kern L')",
@@ -25508,7 +25508,7 @@
     {
      "name": "Deformation.ComplexLift.nonempty_idealKernel",
      "kind": "theorem",
-     "line": 379,
+     "line": 358,
      "private": false,
      "doc": "**Stacks 0DIU.** Every bounded above flat lift carries an identification of its ideal part\nwith the kernel of its reduction, normalized by the pure-tensor formula `x̄ ⊗ a ↦ a · x`.\n\nThe identification is `Deformation.ComplexLift.idealKernel`; this is its existence statement,\nwhich is what the independence argument consumes.",
      "statement": "theorem nonempty_idealKernel (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)\n    (L : FlatLift f K₀) : Nonempty (IdealKernel S L)",
@@ -25522,7 +25522,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap_eq_of_lift'",
      "kind": "theorem",
-     "line": 448,
+     "line": 427,
      "private": false,
      "doc": "**Stacks 0DIU, `ω(K₀)` depends on the complex alone.** Any two bounded above flat lifts of\n`K₀`, with any kernel identifications on them, compute the same map.",
      "statement": "theorem obstructionMap_eq_of_lift' (hf : Sheaf.IsLocallySurjective f)\n    (S : SquareZeroIdeal f I) (D : DerivedIdealTensor I)\n    {K₀ : CochainComplex (SheafMod O₀) ℤ}\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n))\n    {L L' : FlatLift f K₀} (T : IdealKernel S L) (T' : IdealKernel S L') :\n    obstructionMap D T = obstructionMap D T'",
@@ -25536,7 +25536,7 @@
     {
      "name": "Deformation.ComplexLift.omega",
      "kind": "def",
-     "line": 473,
+     "line": 452,
      "private": false,
      "doc": "**Stacks 0DIU.** The canonical map `ω(K₀) : K₀ ⟶ (K₀ ⊗^L_{O₀} I)[2]` attached to a\nsquare-zero extension `f : O ⟶ O₀` of sheaves of rings with ideal sheaf `I`, as a function of\nthe bounded above complex `K₀` alone: it is the curvature of the lifted differential of any\nbounded above flat lift of `K₀`, read through the canonical identification of the ideal part of\nthat lift with the kernel of its reduction.\n\nThe kernel identification is not chosen: it is `Deformation.ComplexLift.idealKernel`, built\nfrom the lift. The lift itself is chosen -- `Deformation.ComplexLift.exists_flatLift` -- and\nthat is irreducible here, because the bound the lifting construction is indexed by is available\nonly inside the propositional hypothesis `hK`. That the choice does not matter is\n`Deformation.ComplexLift.obstructionMap_eq_of_lift'`, and `Deformation.ComplexLift.omega_eq`\ncomputes `ω(K₀)` from any lift and any kernel identification, so nothing about `ω(K₀)` is\nhidden by it.",
      "statement": "def omega (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)\n    (D : DerivedIdealTensor I) (K₀ : CochainComplex (SheafMod O₀) ℤ)\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n)) :\n    DerivedCategory.Q.obj K₀ ⟶ (D.functor.obj (DerivedCategory.Q.obj K₀))⟦(2 : ℤ)⟧",
@@ -25550,7 +25550,7 @@
     {
      "name": "Deformation.ComplexLift.omega_eq",
      "kind": "theorem",
-     "line": 483,
+     "line": 462,
      "private": false,
      "doc": "**Stacks 0DIU.** The canonical map is computed by *any* bounded above flat lift and any\nkernel identification on it.",
      "statement": "theorem omega_eq (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)\n    (D : DerivedIdealTensor I) {K₀ : CochainComplex (SheafMod O₀) ℤ}\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n))\n    {L : FlatLift f K₀} (T : IdealKernel S L) :\n    omega hf S D K₀ hK = obstructionMap D T",
@@ -25564,7 +25564,7 @@
     {
      "name": "Deformation.ComplexLift.omega_natural",
      "kind": "theorem",
-     "line": 497,
+     "line": 476,
      "private": false,
      "doc": "**Stacks 0DIU, naturality of `ω`.** For a map `φ : K₀ ⟶ L₀` of bounded above complexes of\n`O₀`-modules the square formed by `ω(K₀)`, `ω(L₀)` and the maps induced by `φ` commutes. No\ncompatibility of lifts is assumed: the lift of `φ` is\n`Deformation.ComplexLift.exists_flatLiftHom` and the lift-independence is\n`Deformation.ComplexLift.omega_eq`.",
      "statement": "theorem omega_natural (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)\n    (D : DerivedIdealTensor I) {K₀ L₀ : CochainComplex (SheafMod O₀) ℤ} (φ : K₀ ⟶ L₀)\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n))\n    (hL : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (L₀.homology n)) :\n    DerivedCategory.Q.map φ ≫ omega hf S D L₀ hL =\n      omega hf S D K₀ hK ≫\n        (CategoryTheory.shiftFunctor (DerivedCategory (SheafMod O₀)) (2 : ℤ)).map\n          (D.functor.map (DerivedCategory.Q.map φ))",
@@ -25578,7 +25578,7 @@
     {
      "name": "Deformation.ComplexLift.omega_natural_derived",
      "kind": "theorem",
-     "line": 521,
+     "line": 500,
      "private": false,
      "doc": "**Stacks 0DIU, naturality of `ω` for an arbitrary morphism of the derived category.** For\nany `ψ : K₀ ⟶ L₀` in `D(O₀)` between bounded above complexes -- not merely one coming from a map\nof complexes -- the square formed by `ω(K₀)`, `ω(L₀)` and the maps induced by `ψ` commutes.\n\nEvery such `ψ` is a roof `K₀ ⟶ M ⟵ L₀` of maps of complexes with the second leg a\nquasi-isomorphism (`Deformation.ComplexLift.exists_roof_of_derived_hom`), so this follows from\nnaturality along maps of complexes applied to the two legs.",
      "statement": "theorem omega_natural_derived (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)\n    (D : DerivedIdealTensor I) {K₀ L₀ : CochainComplex (SheafMod O₀) ℤ}\n    (hK : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (K₀.homology n))\n    (hL : ∃ N : ℤ, ∀ n : ℤ, N ≤ n → IsZero (L₀.homology n))\n    (ψ : DerivedCategory.Q.obj K₀ ⟶ DerivedCategory.Q.obj L₀) :\n    ψ ≫ omega hf S D L₀ hL =\n      omega hf S D K₀ hK ≫\n        (CategoryTheory.shiftFunctor (DerivedCategory (SheafMod O₀)) (2 : ℤ)).map\n          (D.functor.map ψ)",
@@ -25592,7 +25592,7 @@
     {
      "name": "Deformation.ComplexLift.obstructionMap_eq_of_hom'",
      "kind": "theorem",
-     "line": 188,
+     "line": 173,
      "private": false,
      "doc": "**Stacks 0DIU.** Two flat lifts of the same complex joined by a morphism of flat lifts over\nthe identity give the same canonical class `ω(K₀)`. No compatibility of the ideal parts is\nassumed: it is automatic.",
      "statement": "theorem obstructionMap_eq_of_hom' [HasDerivedCategory.{d} (SheafMod O₀)]\n    (D : DerivedIdealTensor I) (hf : Sheaf.IsLocallySurjective f) {L M : FlatLift f K₀}\n    (h : FlatLiftHom L M (𝟙 K₀)) (TL : IdealKernel S L) (TM : IdealKernel S M) :\n    obstructionMap D TL = obstructionMap D TM",
@@ -26398,7 +26398,7 @@
     {
      "name": "RingTheory.TorIndependence.baseChangeCohomologyIsoOfFlat",
      "kind": "def",
-     "line": 996,
+     "line": 971,
      "private": false,
      "doc": "**Stacks 0DJD.** Consider a commutative diagram of rings\n`A' ← R' → B'` over `A ← R → B`, with `R'` flat over `R`, `A'` flat over `A ⊗_R R'` and `B'` flat\nover `R' ⊗_R B` (the assumptions of Stacks 08HW). For `M ∈ D(A)` there is a canonical\nisomorphism of `A' ⊗_{R'} B'`-modules\n\n`H^i((M ⊗ᴸ_A A') ⊗ᴸ_{R'} B') ≅ H^i(M ⊗ᴸ_R B) ⊗_{A ⊗_R B} (A' ⊗_{R'} B')`.\n\nThe derived tensor products are the ones of the source: `M ⊗ᴸ_A A'` is read in `D(R')` and\nbase changed along `R' → B'`, and `M` is read in `D(R)` and base changed along `R → B`; the\nmodule structures over `A' ⊗_{R'} B'` and `A ⊗_R B` on the cohomology are those of\n`RingTheory.TorIndependence.baseChangeCohomology`, coming from the actions of `A'` and of `A` by\nendomorphisms. Extension of scalars puts the new ring on the left of the tensor product.",
      "statement": "def baseChangeCohomologyIsoOfFlat\n    {R R' A B A' B' : Type u} [CommRing R] [CommRing R'] [CommRing A] [CommRing B]\n    [CommRing A'] [CommRing B']\n    [Algebra R R'] [Algebra R A] [Algebra R B]\n    [Algebra A A'] [Algebra R A'] [IsScalarTower R A A'] [Algebra R' A'] [IsScalarTower R R' A']\n    [Algebra B B'] [Algebra R B'] [IsScalarTower R B B'] [Algebra R' B'] [IsScalarTower R R' B']\n    [HasDerivedCategory.{u} (ModuleCat.{u} R)] [HasDerivedCategory.{u} (ModuleCat.{u} R')]\n    [HasDerivedCategory.{u} (ModuleCat.{u} A)] [HasDerivedCategory.{u} (ModuleCat.{u} B)]\n    [HasDerivedCategory.{u} (ModuleCat.{u} A')] [HasDerivedCategory.{u} (ModuleCat.{u} B')]\n    (hR' : (algebraMap R R').Flat)\n    (hA' : (Algebra.TensorProduct.lift (IsScalarTower.toAlgHom R A A')\n      (IsScalarTower.toAlgHom R R' A') (fun _ _ ↦ Commute.all _ _)).toRingHom.Flat)\n    (hB' : (Algebra.TensorProduct.lift (Algebra.ofId R' B') (IsScalarTower.toAlgHom R B B')\n      (fun _ _ ↦ Commute.all _ _)).toRingHom.Flat)\n    (M : DerivedCategory (ModuleCat.{u} A)) (i : ℤ) :\n    baseChangeCohomology (R := R') (R' := B')\n        ((totalDerivedExtensionScalars.{u, u, u} (algebraMap A A')).functor.obj M) i ≅\n      (ModuleCat.extendScalars.{u, u, u}\n        (TorChangeOfRings.tensorProductMap R R' A B A' B' (IsScalarTower.toAlgHom R A A')\n          (IsScalarTower.toAlgHom R B B'))).obj\n        (baseChangeCohomology (R := R) (R' := B) M i)",
@@ -28837,7 +28837,7 @@
     {
      "name": "AlgebraicGeometry.Space.isFinitePresentationOnCharts_flatLocusRestrict",
      "kind": "theorem",
-     "line": 322,
+     "line": 323,
      "private": false,
      "doc": "**Stacks 0DLR: `F|_U` is an `𝒪_U`-module of finite presentation.**  For a morphism of\nalgebraic spaces locally of finite presentation, a module quasi-coherent of finite type on the\nsmall étale site and a target whose weakly associated points are locally finite on the scheme of\none surjective étale chart, the module `F|_U` on the open subspace\n`U = {x ∈ |X| : F flat at x over Y}` is of finite presentation.\n\nConditions (1) and (2) are the source's own; condition (3), local finiteness of the weakly\nassociated points of `Y` in `|Y|`, is replaced by local finiteness on one *surjective* étale\nscheme chart, as the source's proof reads it.  This is the correction of Stacks 0DLR recorded in\n`errata.md`: with (3) on `|Y|` the statement is false,\n`Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`.\nThe every-chart reading the proof consumes is derived from it by\n`AlgebraicGeometry.Space.hasLocallyFiniteWeaklyAssociatedPointsOnCharts_of_isSurjectiveChart`.\n\nThe conclusion is read on the étale scheme charts of `U`, as every property of a module on an\nalgebraic space is in this development.  The proof is the source's: the condition is étale local,\nso it is enough to read it on one chart of `U` surjective on points, and such a chart may be\nchosen to lie over a chart of `Y` (Tag 02X1), where the scheme-level theorem Stacks 05IK applies;\nthe passage back to every chart is\n`AlgebraicGeometry.Space.isFinitePresentation_restrictToChartScheme_of_isSurjective`.",
      "statement": "theorem isFinitePresentationOnCharts_flatLocusRestrict (f : Xs ⟶ Ys)\n    (F : Modules.{u, u} B S hS Xs.1 Xs.2) [hqc : F.IsQuasicoherentOnSite]\n    (hf : IsLocallyOfFinitePresentation B S hS f.hom)\n    (hft : SheafOfModules.IsFiniteTypeOnSite F) (V₀ : SmallEtale B S hS Ys.1)\n    (hV₀ : IsSurjectiveChart B S hS V₀)\n    (h₀ : ∀ v : etaleChartScheme B S hS V₀,\n      ∃ W : (etaleChartScheme B S hS V₀).Opens, v ∈ W ∧\n        (Stacks.Divisors.schemeWeaklyAssociatedPoints (etaleChartScheme B S hS V₀) ∩\n          (W : Set (etaleChartScheme B S hS V₀))).Finite) :\n    IsFinitePresentationOnCharts B S hS\n      (flatLocusSpace B S hS f F\n        (isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart B S hS Xs f.hom F hf hqc hft\n          V₀ hV₀ h₀)).2\n      (flatLocusRestrict B S hS f F\n        (isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart B S hS Xs f.hom F hf hqc hft\n          V₀ hV₀ h₀))",
@@ -28851,7 +28851,7 @@
     {
      "name": "AlgebraicGeometry.Space.isFlatOver_flatLocusRestrict",
      "kind": "theorem",
-     "line": 395,
+     "line": 396,
      "private": false,
      "doc": "**Stacks 0DLR: `F|_U` is flat over `Y`.**  For a morphism of algebraic spaces locally of\nfinite presentation, a module quasi-coherent of finite type on the small étale site and a target\nwhose weakly associated points are locally finite on the scheme of one surjective étale chart,\nthe module `F|_U` on the open subspace `U = {x ∈ |X| : F flat at x over Y}` is flat over `Y` along\nthe composite `U ⟶ X ⟶ Y`, in the sense of Tag 05VV.\n\nConditions (1) and (2) are the source's own; condition (3) is replaced by local finiteness of the\nweakly associated points on one *surjective* étale scheme chart of the target, as the source's\nproof reads it, which is the correction of Stacks 0DLR recorded in `errata.md` (with (3) on `|Y|`\nthe statement is false,\n`Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`).\n\nOn a commuting square of étale scheme charts of `U ⟶ Y`, the chart of `U` is a chart of `X` whose\npoints all lie in the relative flat locus, so the square witnesses flatness at each of them by\nStacks 05VU.",
      "statement": "theorem isFlatOver_flatLocusRestrict (f : Xs ⟶ Ys) (F : Modules.{u, u} B S hS Xs.1 Xs.2)\n    [hqc : F.IsQuasicoherentOnSite] (hf : IsLocallyOfFinitePresentation B S hS f.hom)\n    (hft : SheafOfModules.IsFiniteTypeOnSite F) (V₀ : SmallEtale B S hS Ys.1)\n    (hV₀ : IsSurjectiveChart B S hS V₀)\n    (h₀ : ∀ v : etaleChartScheme B S hS V₀,\n      ∃ W : (etaleChartScheme B S hS V₀).Opens, v ∈ W ∧\n        (Stacks.Divisors.schemeWeaklyAssociatedPoints (etaleChartScheme B S hS V₀) ∩\n          (W : Set (etaleChartScheme B S hS V₀))).Finite) :\n    IsFlatOver B S hS\n      (flatLocusSpace B S hS f F\n        (isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart B S hS Xs f.hom F hf hqc hft\n          V₀ hV₀ h₀)).2\n      ((flatLocusSpaceι B S hS f F\n        (isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart B S hS Xs f.hom F hf hqc hft\n          V₀ hV₀ h₀)).hom ≫ f.hom)\n      (flatLocusRestrict B S hS f F\n        (isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart B S hS Xs f.hom F hf hqc hft\n          V₀ hV₀ h₀))",
@@ -29605,7 +29605,7 @@
     {
      "name": "AlgebraicGeometry.Space.isSeparable_componentFunctions_of_isProper",
      "kind": "theorem",
-     "line": 91,
+     "line": 92,
      "private": false,
      "doc": "**Stacks 0DMY, part (4).**  For a proper *geometrically* reduced algebraic space `X` over a\nfield `k`, each factor `k_i` of the global regular functions `A = ∏ k_i` is a finite separable\nfield extension of `k`:  for every componentwise factorization of `A` (part (2)) and every\nconnected component `c` of `|X|`, the factor at `c` is a field, finite over `k` and separable\nover `k`.",
      "statement": "theorem isSeparable_componentFunctions_of_isProper (hf : IsProper B (Spec (.of k)) hS f)\n    (hgr : IsGeometricallyReduced k B hS X hX)\n    (fac : ComponentwiseArtinianFactorization k B hS X)\n    (c : ConnectedComponents (points B (Spec (.of k)) hS X)) :\n    IsField (componentFunctions B (Spec (.of k)) hS X c) ∧\n      @Module.Finite k (componentFunctions B (Spec (.of k)) hS X c) _ _\n        (@Algebra.toModule k (componentFunctions B (Spec (.of k)) hS X c) _ _\n          (fac.factorAlgebra c)) ∧\n      @Algebra.IsSeparable k (componentFunctions B (Spec (.of k)) hS X c) _ _\n        (fac.factorAlgebra c)",
@@ -29619,7 +29619,7 @@
     {
      "name": "AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyConnected",
      "kind": "theorem",
-     "line": 110,
+     "line": 111,
      "private": false,
      "doc": "**Stacks 0DMY, part (5).**  For a proper geometrically connected algebraic space `X` over a\nfield `k`, the ring `A = H⁰(X, 𝒪_X)` of global regular functions is geometrically irreducible\nover `k`:  the spectrum of `A ⊗_k K` is irreducible for every field extension `K/k`.",
      "statement": "theorem irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyConnected\n    (hf : IsProper B (Spec (.of k)) hS f) (hconn : IsGeometricallyConnected B k hS X) :\n    ∀ (K : Type v) [Field K] [Algebra k K],\n      IrreducibleSpace (PrimeSpectrum (globalFunctions B (Spec (.of k)) hS X ⊗[k] K))",
@@ -29633,7 +29633,7 @@
     {
      "name": "AlgebraicGeometry.Space.irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyIrreducible",
      "kind": "theorem",
-     "line": 127,
+     "line": 128,
      "private": false,
      "doc": "**Stacks 0DMY, part (6).**  For a proper geometrically irreducible algebraic space `X` over\na field `k`, the ring `A = H⁰(X, 𝒪_X)` of global regular functions is geometrically irreducible\nover `k`.\n\nAs in the source, this is part (5): every base change of `X` has an irreducible, hence\nconnected, point space.",
      "statement": "theorem irreducibleSpace_primeSpectrum_globalFunctions_tensorProduct_of_isGeometricallyIrreducible\n    (hf : IsProper B (Spec (.of k)) hS f) (hirr : IsGeometricallyIrreducible B k hS X) :\n    ∀ (K : Type v) [Field K] [Algebra k K],\n      IrreducibleSpace (PrimeSpectrum (globalFunctions B (Spec (.of k)) hS X ⊗[k] K))",
@@ -29647,7 +29647,7 @@
     {
      "name": "AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyConnected",
      "kind": "theorem",
-     "line": 148,
+     "line": 149,
      "private": false,
      "doc": "**Stacks 0DMY, part (7), in its corrected form.**  For a proper geometrically reduced and\ngeometrically connected algebraic space `X` over a field `k`, the canonical homomorphism\n`k ⟶ H⁰(X, 𝒪_X)` is bijective: `A = k`.\n\nThe source prints \"geometrically reduced and connected\".  With mere connectedness the clause is\nfalse: `X = Spec ℚ(i)` over `k = ℚ` is proper, geometrically reduced and connected, yet\n`A = ℚ(i) ≠ ℚ`.  The source's proof uses geometric irreducibility of `A`, which it obtains from\npart (5), whose hypothesis is geometric connectedness; this is the hypothesis stated here, and\nthe wording of the scheme version, Tag 0BUG (7).  Recorded in `errata.md`.",
      "statement": "theorem bijective_baseToGlobalFunctions_of_isGeometricallyConnected\n    (hf : IsProper B (Spec (.of k)) hS f) (hgr : IsGeometricallyReduced k B hS X hX)\n    (hconn : IsGeometricallyConnected B k hS X) :\n    Function.Bijective (baseToGlobalFunctions k B hS X)",
@@ -29661,7 +29661,7 @@
     {
      "name": "AlgebraicGeometry.Space.bijective_baseToGlobalFunctions_of_isGeometricallyIntegral",
      "kind": "theorem",
-     "line": 163,
+     "line": 164,
      "private": false,
      "doc": "**Stacks 0DMY, part (8).**  For a proper geometrically integral algebraic space `X` over a\nfield `k`, the canonical homomorphism `k ⟶ H⁰(X, 𝒪_X)` is bijective:  `A = k`.\n\nAs in the source, this is part (7):  a geometrically integral algebraic space is geometrically\nreduced and geometrically connected.",
      "statement": "theorem bijective_baseToGlobalFunctions_of_isGeometricallyIntegral\n    (hf : IsProper B (Spec (.of k)) hS f) (hint : IsGeometricallyIntegral B k hS X) :\n    Function.Bijective (baseToGlobalFunctions k B hS X)",
@@ -37639,7 +37639,7 @@
     {
      "name": "CategoryTheory.Adjunction.existsUnique_homEquiv_derivedCategory_of_isRightDerivedValueAt",
      "kind": "theorem",
-     "line": 854,
+     "line": 855,
      "private": false,
      "doc": "**Stacks 0DVC**: deriving adjoints between derived categories. Let `F : 𝒜 ⥤ ℬ` be right\nadjoint to `G : ℬ ⥤ 𝒜`, functors of abelian categories, let `K` be a complex of `𝒜` and `M` a\ncomplex of `ℬ`, and let `RF`, resp. `LG`, be the right, resp. left, derived functor of\n`K(𝒜) ⥤ K(ℬ) ⥤ D(ℬ)`, resp. `K(ℬ) ⥤ K(𝒜) ⥤ D(𝒜)`, with respect to the quasi-isomorphisms.\nAssume `RF` is defined at `K`, with value `RF(K) = c.pt`, and `LG` is defined at `M`, with value\n`LG(M) = d.pt` (Stacks 05S9). Then there is a unique bijection\n`Hom_{D(ℬ)}(M, RF(K)) ≃ Hom_{D(𝒜)}(LG(M), K)` compatible with the fractions computing the two\nsides: for every index `s : K ⟶ I` of the ind-object defining `RF(K)`, every index `t : P ⟶ M`\nof the pro-object defining `LG(M)` and every pair of chain maps `f : P ⟶ F(I)`, `g : G(P) ⟶ I`\nthat are adjoint to one another in each degree, a morphism `ψ : M ⟶ RF(K)` satisfies\n`Qh(t) ≫ ψ = Qh(f) ≫ (coprojection at s)` if and only if its image satisfies\n`φ(ψ) ≫ Qh(s) = (projection at t) ≫ Qh(g)`.\n\nThe source's further assertion that this isomorphism is functorial in both variables is not part\nof this statement: the bijection is named `CategoryTheory.Adjunction.derivedCategoryHomEquiv`, and\nits naturality in `K` and in `M` is `derivedCategoryHomEquiv_comp_rightDerivedMap` and\n`derivedCategoryHomEquiv_map_comp`, in the module\n`StacksFrontier.CategoryTheory.Localization.DerivingAdjointsNaturality`.",
      "statement": "theorem existsUnique_homEquiv_derivedCategory_of_isRightDerivedValueAt\n    {A : Type u₁} [Category.{v₁} A] [Abelian A] [HasDerivedCategory.{w₁} A]\n    {B : Type u₂} [Category.{v₂} B] [Abelian B] [HasDerivedCategory.{w₂} B]\n    {F : A ⥤ B} {G : B ⥤ A} [F.Additive] [G.Additive] (adj : G ⊣ F)\n    (K : HomotopyCategory A (ComplexShape.up ℤ)) (M : HomotopyCategory B (ComplexShape.up ℤ))\n    (c : Cocone (MorphismProperty.Under.forget\n        (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)) ⊤ K ⋙\n      Under.forget K ⋙ F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh))\n    (hc : (F.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh).IsRightDerivedValueAt\n      (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)) K c)\n    (d : Cone (MorphismProperty.Over.forget\n        (HomotopyCategory.quasiIso B (ComplexShape.up ℤ)) ⊤ M ⋙\n      Over.forget M ⋙ G.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh))\n    (hd : (G.mapHomotopyCategory (ComplexShape.up ℤ) ⋙ DerivedCategory.Qh).IsLeftDerivedValueAt\n      (HomotopyCategory.quasiIso B (ComplexShape.up ℤ)) M d) :\n    ∃! φ : (DerivedCategory.Qh.obj M ⟶ c.pt) ≃ (d.pt ⟶ DerivedCategory.Qh.obj K),\n      ∀ (s : (HomotopyCategory.quasiIso A (ComplexShape.up ℤ)).Under ⊤ K)\n        (t : (HomotopyCategory.quasiIso B (ComplexShape.up ℤ)).Over ⊤ M)\n        (f : t.left.as ⟶ (F.mapHomologicalComplex (ComplexShape.up ℤ)).obj s.right.as)\n        (g : (G.mapHomologicalComplex (ComplexShape.up ℤ)).obj t.left.as ⟶ s.right.as),\n        (∀ n, f.f n = adj.homEquiv _ _ (g.f n)) →\n        ∀ ψ : DerivedCategory.Qh.obj M ⟶ c.pt,\n          DerivedCategory.Qh.map t.hom ≫ ψ =\n              DerivedCategory.Qh.map\n                ((HomotopyCategory.quotient B (ComplexShape.up ℤ)).map f) ≫ c.ι.app s ↔\n            φ ψ ≫ DerivedCategory.Qh.map s.hom =\n              d.π.app t ≫ DerivedCategory.Qh.map\n                ((HomotopyCategory.quotient A (ComplexShape.up ℤ)).map g)",
@@ -41790,7 +41790,7 @@
     {
      "name": "Deformation.hasFlatAlgebraLift_iff_hasFlatAlgebraLift_henselization",
      "kind": "theorem",
-     "line": 417,
+     "line": 418,
      "private": false,
      "doc": "**Stacks 0DZB.** Let `A' → A` be a surjective map of Noetherian rings with nilpotent kernel,\nlet `A → B` be a finite type flat ring map and let `𝔟 ⊆ B` be an ideal such that\n`Spec(B) → Spec(A)` is syntomic on the complement of `V(𝔟)`, that is `A → B_h` is syntomic for\nevery `h ∈ 𝔟`. Let `(Bʰ, 𝔟ʰ)` be the henselization of the pair `(B, 𝔟)`. Then `B` has a flat lift\nto `A'` if and only if `Bʰ` has a flat lift to `A'`.\n\nThe proof does not go through Stacks 0DZ2 (which is false); see the module documentation.",
      "statement": "public theorem hasFlatAlgebraLift_iff_hasFlatAlgebraLift_henselization\n    (A' A B : Type u) [CommRing A'] [CommRing A] [CommRing B]\n    [IsNoetherianRing A'] [IsNoetherianRing A] [Algebra A' A] [Algebra A B]\n    (hsurjA : Function.Surjective (algebraMap A' A))\n    (hnilA : IsNilpotent (RingHom.ker (algebraMap A' A)))\n    [Algebra.FiniteType A B] [Module.Flat A B] (b : Ideal B)\n    (hsyn : ∀ h ∈ b, Algebra.Syntomic A (Localization.Away h))\n    (Bh : Type u) [CommRing Bh] [Algebra B Bh] [Algebra A Bh] [IsScalarTower A B Bh]\n    (hhens : HenselianPair Bh (b.map (algebraMap B Bh)))\n    (huniv : ∀ (D : Type u) (_ : CommRing D) (K : Ideal D), HenselianPair D K →\n      ∀ f : B →+* D, b ≤ K.comap f →\n        ∃! g : Bh →+* D, g.comp (algebraMap B Bh) = f ∧\n          b.map (algebraMap B Bh) ≤ K.comap g) :\n    HasFlatAlgebraLift A' A B ↔ HasFlatAlgebraLift A' A Bh",
@@ -42569,7 +42569,7 @@
     {
      "name": "AlgebraicGeometry.isLciFamily_iff_isSyntomicFamily",
      "kind": "theorem",
-     "line": 135,
+     "line": 136,
      "private": false,
      "doc": "**Stacks 0DZV, part (1).** The equivalence of conditions (b) and (c): a family of curves has\na local complete intersection structure morphism exactly when its structure morphism is syntomic.\n\nA syntomic morphism of algebraic spaces is one which is flat and a local complete intersection\nmorphism, by Tag 06C9, and the structure morphism of a family of curves is flat, so the flatness\nhalf of that conjunction is supplied by the family itself.",
      "statement": "theorem isLciFamily_iff_isSyntomicFamily (X : CurveFamily B hZ) :\n    IsLciFamily B hZ X ↔ Space.IsSyntomic B integerBase hZ X.toBase.hom",
@@ -42583,7 +42583,7 @@
     {
      "name": "AlgebraicGeometry.curvesLci_isStrictlyFull",
      "kind": "theorem",
-     "line": 173,
+     "line": 174,
      "private": false,
      "doc": "**Stacks 0DZV.** The condition that a family of curves have a local complete intersection\nstructure morphism is invariant under isomorphism, so `Curves^{lci}` is a strictly full\nsubcategory of the category of families of curves: the first of the three conditions making it an\nopen substack.\n\nAn isomorphism of families of curves is a morphism of families, so this is base-change invariance\nof the condition applied to the inverse isomorphism.",
      "statement": "theorem curvesLci_isStrictlyFull :\n    (show ObjectProperty (CurveFamily B hZ) from\n      IsLciFamily B hZ).IsClosedUnderIsomorphisms",
@@ -42597,7 +42597,7 @@
     {
      "name": "AlgebraicGeometry.isLciFamily_curveFamilyOfSchemeMorphism_iff",
      "kind": "theorem",
-     "line": 208,
+     "line": 209,
      "private": false,
      "doc": "**Stacks 0DZV, part (2).** Condition (b) read on the family of curves attached to a proper\nflat morphism of schemes of finite presentation whose source has dimension at most one: that\nfamily has a local complete intersection structure morphism exactly when the morphism of schemes\nis a local complete intersection morphism.\n\nOver the spectrum of a field the right-hand side is the condition that the proper scheme be a\nlocal complete intersection over that field, which is condition (b) of part (2) of the source;\nsee `AlgebraicGeometry.factorsThroughCurvesLci_over_field_iff`. No hypothesis on the base is\nneeded, so the statement is proved over an arbitrary base scheme of the site.\n\nBoth sides pass through syntomicity. The every-étale-chart condition of Tag 03MJ at a morphism of\nthe site is the scheme-level condition itself for a property étale local on the source and target,\nwhich syntomicity is by Tag 04R3; at the level of schemes syntomicity is flatness together with\nthe local complete intersection property by Tag 069K, and the morphism is flat by hypothesis; at\nthe level of algebraic spaces it is the same conjunction by Tag 06C9, whose flatness half the\nfamily supplies.",
      "statement": "theorem isLciFamily_curveFamilyOfSchemeMorphism_iff\n    {T W : BigFppfOver B integerBase hZ} (g : T ⟶ W)\n    (hflat : Flat ((BigFppfOver.toScheme B integerBase hZ).map g))\n    (hproper : IsProper ((BigFppfOver.toScheme B integerBase hZ).map g))\n    (hlfp : LocallyOfFinitePresentation ((BigFppfOver.toScheme B integerBase hZ).map g))\n    (hqc : Space.IsQuasiCompact B integerBase hZ (schemeSpaceMap g).hom)\n    (hsep : Space.IsSeparated B integerBase hZ (schemeSpaceMap g).hom)\n    (hqsep : Space.IsQuasiSeparated B integerBase hZ (schemeSpaceMap g).hom)\n    (hdim : topologicalKrullDim ((BigFppfOver.toScheme B integerBase hZ).obj T) ≤ 1) :\n    IsLciFamily B hZ\n        (curveFamilyOfSchemeMorphism B hZ g hflat hproper hlfp hqc hsep hqsep hdim) ↔\n      IsLocalCompleteIntersectionMorphism\n        ((BigFppfOver.toScheme B integerBase hZ).map g)",

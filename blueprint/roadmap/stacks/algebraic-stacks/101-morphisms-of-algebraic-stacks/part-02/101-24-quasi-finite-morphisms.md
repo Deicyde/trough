@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.24 Quasi-finite morphisms
 
-Section 101.24 of the Stacks Project, [Tag 0G2L](https://stacks.math.columbia.edu/tag/0G2L). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.24 of the Stacks Project, [Tag 0G2L](https://stacks.math.columbia.edu/tag/0G2L). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G2M, a definition
 
 [Tag 0G2M](https://stacks.math.columbia.edu/tag/0G2M) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteAlgebraicStack.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteAlgebraicStack.lean#L50).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteAlgebraicStack.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteAlgebraicStack.lean#L50).
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is quasi-finite*
 > when it is locally quasi-finite (**Stacks 06PU**) and quasi-compact (**Stacks 050U**).
@@ -27,7 +27,7 @@ abbrev IsQuasiFinite {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳
 
 [Tag 0G2N](https://stacks.math.columbia.edu/tag/0G2N) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteComposition.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteComposition.lean#L53).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteComposition.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteComposition.lean#L53).
 
 > **Stacks 0G2N.** A composite of quasi-finite 1-morphisms of algebraic stacks over `S` is
 > quasi-finite: local quasi-finiteness composes by **Stacks 06UD** and quasi-compactness by
@@ -44,7 +44,7 @@ theorem isQuasiFinite_comp
 
 [Tag 0G2P](https://stacks.math.columbia.edu/tag/0G2P) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteBaseChange.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteBaseChange.lean#L60).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteBaseChange.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteBaseChange.lean#L60).
 
 > **Stacks 0G2P.** A base change of a quasi-finite 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
 > over `S` is quasi-finite: the first projection of any 2-fibre product of the cospan `(g, f)` is
@@ -66,7 +66,7 @@ theorem isQuasiFinite_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w}
 
 [Tag 0G2Q](https://stacks.math.columbia.edu/tag/0G2Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_of_comp_of_isQuasiSeparated_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteCancellation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteCancellation.lean#L79).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiFinite_of_comp_of_isQuasiSeparated_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteCancellation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiFiniteCancellation.lean#L79).
 
 > **Stacks 0G2Q.** If a composite of 1-morphisms of algebraic stacks over `S` is quasi-finite
 > and its second factor is quasi-separated and quasi-DM, then its first factor is quasi-finite.
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.24, Tag 0G2L](https://stacks.math.columbia.edu/tag/0G2L)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

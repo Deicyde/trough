@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.43 Valuative criterion for properness
 
-Section 101.43 of the Stacks Project, [Tag 0CLY](https://stacks.math.columbia.edu/tag/0CLY). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.43 of the Stacks Project, [Tag 0CLY](https://stacks.math.columbia.edu/tag/0CLY). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CLZ, a lemma
 
 [Tag 0CLZ](https://stacks.math.columbia.edu/tag/0CLZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_iff_valuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionProperness.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionProperness.lean#L159).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_iff_valuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionProperness.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ValuativeCriterionProperness.lean#L159).
 
 > **Stacks 0CLZ.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` which is of
 > finite type (**Stacks 06FS**, part (2)) and quasi-separated (**Stacks 04YW**). Then `f` is proper
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.43, Tag 0CLY](https://stacks.math.columbia.edu/tag/0CLY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

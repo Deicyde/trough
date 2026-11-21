@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.13 Colimits and cohomology
 
-Section 103.13 of the Stacks Project, [Tag 0GQU](https://stacks.math.columbia.edu/tag/0GQU). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 103.13 of the Stacks Project, [Tag 0GQU](https://stacks.math.columbia.edu/tag/0GQU). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GQV, a lemma
 
 [Tag 0GQV](https://stacks.math.columbia.edu/tag/0GQV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L247). The attribute's comment: “the site-theoretic step, at an arbitrary one of the five topologies of Stacks 06TP, hence for the fppf and the étale assertion alike; all four conditions of 0GN4 are assumed here”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_associatedTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L247). The attribute's comment: “the site-theoretic step, at an arbitrary one of the five topologies of Stacks 06TP, hence for the fppf and the étale assertion alike; all four conditions of 0GN4 are assumed here”.
 
 > **Stacks 0GQV at any one of the sites of Stacks 06TP, from all four conditions of
 > Stacks 0GN4.** Let `𝒳` be a category fibred in groupoids over the big fppf category of a scheme
@@ -87,7 +87,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_associatedTopology
       ((Sheaf.Γ (associatedTopology B S hS 𝒳.val.p τ) Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L312). The attribute's comment: “the site-theoretic step for the fppf site; conditions (1), (3) and (4) of 0GN4 are assumed here”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L312). The attribute's comment: “the site-theoretic step for the fppf site; conditions (1), (3) and (4) of 0GN4 are assumed here”.
 
 > **Stacks 0GQV in the fppf topology, from conditions (1), (3) and (4) of Stacks 0GN4.** Let `𝒳`
 > be a category fibred in groupoids over the big fppf category of a scheme `S` contained in a big
@@ -147,7 +147,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_fppf
       ((Sheaf.Γ (fppfTopology B S hS 𝒳) Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L373). The attribute's comment: “the second assertion, in the étale topology: the site-theoretic step for the étale site of Stacks 06TP; conditions (1), (3) and (4) of 0GN4 are assumed here”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L373). The attribute's comment: “the second assertion, in the étale topology: the site-theoretic step for the étale site of Stacks 06TP; conditions (1), (3) and (4) of 0GN4 are assumed here”.
 
 > **The second assertion of Stacks 0GQV: the same statement in the étale topology**, from
 > conditions (1), (3) and (4) of Stacks 0GN4. Let `𝒳` be a category fibred in groupoids over the
@@ -216,7 +216,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_etale
         Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L489). The attribute's comment: “for a quasi-compact algebraic stack; conditions (3) and (4) of 0GN4 are assumed”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 489](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L489). The attribute's comment: “for a quasi-compact algebraic stack; conditions (3) and (4) of 0GN4 are assumed”.
 
 > **Stacks 0GQV in the fppf topology for a quasi-compact algebraic stack, from conditions (3) and
 > (4) of Stacks 0GN4.** Let `𝒴` be a quasi-compact algebraic stack over a scheme `S` contained in a
@@ -279,7 +279,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompactSta
       ((Sheaf.Γ (fppfTopology B S hS 𝒴.val) Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L550). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack; conditions (1) and (2) of 0GN4 are now proved for the étale site, conditions (3) and (4) are assumed”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean, line 550](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomology.lean#L550). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack; conditions (1) and (2) of 0GN4 are now proved for the étale site, conditions (3) and (4) are assumed”.
 
 > **The second assertion of Stacks 0GQV, in the étale topology, for a quasi-compact algebraic
 > stack, from conditions (3) and (4) of Stacks 0GN4.** Let `𝒴` be a quasi-compact algebraic
@@ -346,7 +346,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompactSt
         Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 734](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L734). The attribute's comment: “the first assertion, in the fppf topology; all four conditions of 0GN4 proved, under the source's own hypotheses -- quasi-compactness of the stack and its absolute quasi-separatedness, with nothing asked of the base scheme of the site”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 734](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L734). The attribute's comment: “the first assertion, in the fppf topology; all four conditions of 0GN4 proved, under the source's own hypotheses -- quasi-compactness of the stack and its absolute quasi-separatedness, with nothing asked of the base scheme of the site”.
 
 > **Stacks 0GQV in the fppf topology: on a quasi-compact and quasi-separated algebraic stack,
 > cohomology commutes with filtered colimits.** Let `𝒳` be such a stack and give its total category
@@ -400,7 +400,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact_ab
       ((Sheaf.Γ (fppfTopology B S hS 𝒳.val) Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 835](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L835). The attribute's comment: “the second assertion, in the étale topology; all four conditions of 0GN4 proved, under the source's own hypotheses -- quasi-compactness of the stack and its absolute quasi-separatedness, with nothing asked of the base scheme of the site”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact_absolute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean, line 835](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAbsolute.lean#L835). The attribute's comment: “the second assertion, in the étale topology; all four conditions of 0GN4 proved, under the source's own hypotheses -- quasi-compactness of the stack and its absolute quasi-separatedness, with nothing asked of the base scheme of the site”.
 
 > **The second assertion of Stacks 0GQV: the same statement in the étale topology.** Let `𝒳` be
 > a quasi-compact and quasi-separated algebraic stack and give its total category the étale topology
@@ -445,7 +445,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact_a
         Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.hasFiniteCoverRefinementsFrom_fppfTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAffineRefinement.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAffineRefinement.lean#L168). The attribute's comment: “condition (2) of Stacks 0GN4 for the fppf site, from Stacks 021P”.
+**`AlgebraicGeometry.Stack.hasFiniteCoverRefinementsFrom_fppfTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAffineRefinement.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAffineRefinement.lean#L168). The attribute's comment: “condition (2) of Stacks 0GN4 for the fppf site, from Stacks 021P”.
 
 > **Condition (2) of Stacks 0GN4 for the fppf site of a category fibred in groupoids over the big
 > fppf category of `S`, at the objects lying over affine schemes.** Every covering sieve of an object
@@ -480,7 +480,7 @@ theorem hasFiniteCoverRefinementsFrom_fppfTopology
       {y : 𝒳.val.obj | IsAffineObject B S hS 𝒳.val.p y} x
 ```
 
-**`AlgebraicGeometry.Stack.exists_isAffineObject_isLocallySurjective_terminal_from`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean#L325). The attribute's comment: “condition (1) of Stacks 0GN4 for the fppf site, from Stacks 04YC and Stacks 06QA”.
+**`AlgebraicGeometry.Stack.exists_isAffineObject_isLocallySurjective_terminal_from`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean#L325). The attribute's comment: “condition (1) of Stacks 0GN4 for the fppf site, from Stacks 04YC and Stacks 06QA”.
 
 > **Condition (1) of Stacks 0GN4 for the fppf site of a quasi-compact algebraic stack, with one
 > object.** There is an object `x` of the site lying over an affine scheme for which the
@@ -498,7 +498,7 @@ theorem exists_isAffineObject_isLocallySurjective_terminal_from
         ((Sheaf.sheafifiedYoneda (fppfTopology B S hS 𝒳.val)).obj x))
 ```
 
-**`AlgebraicGeometry.Stack.exists_isAffineObject_isLocallySurjective_terminal_from_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean#L350). The attribute's comment: “condition (1) of Stacks 0GN4 for the étale site, from Stacks 04YC and Stacks 06XH part (2)”.
+**`AlgebraicGeometry.Stack.exists_isAffineObject_isLocallySurjective_terminal_from_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean, line 350](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyAtlasCovers.lean#L350). The attribute's comment: “condition (1) of Stacks 0GN4 for the étale site, from Stacks 04YC and Stacks 06XH part (2)”.
 
 > **Condition (1) of Stacks 0GN4 for the étale site of a quasi-compact algebraic stack, with one
 > object.** There is an object `x` of the site lying over an affine scheme for which the
@@ -524,7 +524,7 @@ theorem exists_isAffineObject_isLocallySurjective_terminal_from_etale
           (associatedTopology B S hS 𝒳.val.val.p (etaleTopology B))).obj x))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean#L634). The attribute's comment: “the first assertion, in the fppf topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base scheme; all four conditions of 0GN4 proved”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean, line 634](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEqualizerAffineCover.lean#L634). The attribute's comment: “the first assertion, in the fppf topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base scheme; all four conditions of 0GN4 proved”.
 
 > **Stacks 0GQV in the fppf topology for a quasi-compact algebraic stack which is quasi-separated
 > over a quasi-separated base scheme.** Let `𝒳` be such a stack and give its total category the fppf
@@ -551,7 +551,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiCompact
       ((Sheaf.Γ (fppfTopology B S hS 𝒳.val) Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.hasFiniteCoverRefinementsFrom_etaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleAffineRefinement.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleAffineRefinement.lean#L174). The attribute's comment: “condition (2) of Stacks 0GN4 for the étale site, from Stacks 0218”.
+**`AlgebraicGeometry.Stack.hasFiniteCoverRefinementsFrom_etaleTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleAffineRefinement.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleAffineRefinement.lean#L174). The attribute's comment: “condition (2) of Stacks 0GN4 for the étale site, from Stacks 0218”.
 
 > **Condition (2) of Stacks 0GN4 for the étale site of a category fibred in groupoids over the
 > big fppf category of `S`, at the objects lying over affine schemes.** Every covering sieve of an
@@ -584,7 +584,7 @@ theorem hasFiniteCoverRefinementsFrom_etaleTopology
       {y : 𝒳.val.obj | IsAffineObject B S hS 𝒳.val.p y} x
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean#L177). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base scheme; all four conditions of 0GN4 proved”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleEqualizerAffineCover.lean#L177). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base scheme; all four conditions of 0GN4 proved”.
 
 > **Stacks 0GQV in the étale topology for a quasi-compact algebraic stack which is
 > quasi-separated over a quasi-separated base scheme.** Let `𝒳` be such a stack and give its total
@@ -617,7 +617,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiCompact
         Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean#L430). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base; conditions (1), (2) and (3) of 0GN4 are now proved for the étale site, condition (4) is still assumed”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean, line 430](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyEtaleProductAffineCover.lean#L430). The attribute's comment: “the second assertion, in the étale topology, for a quasi-compact algebraic stack quasi-separated over a quasi-separated base; conditions (1), (2) and (3) of 0GN4 are now proved for the étale site, condition (4) is still assumed”.
 
 > **The second assertion of Stacks 0GQV, in the étale topology, for a quasi-compact algebraic
 > stack which is quasi-separated over a quasi-separated base scheme, from condition (4) of
@@ -661,7 +661,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_etale_of_isQuasiSeparated
         Ab.{u + 1}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean#L435). The attribute's comment: “for a quasi-compact algebraic stack quasi-separated over a quasi-separated base; condition (3) of 0GN4 is proved here and condition (4) is a hypothesis, discharged in ColimitsOfCohomologyEqualizerAffineCover”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfCohomologyProductAffineCover.lean#L435). The attribute's comment: “for a quasi-compact algebraic stack quasi-separated over a quasi-separated base; condition (3) of 0GN4 is proved here and condition (4) is a hypothesis, discharged in ColimitsOfCohomologyEqualizerAffineCover”.
 
 > **Stacks 0GQV in the fppf topology for a quasi-compact algebraic stack which is quasi-separated
 > over a quasi-separated base scheme, from condition (4) of Stacks 0GN4 alone.**
@@ -705,7 +705,7 @@ theorem isIso_colimit_post_rightDerived_globalSections_fppf_of_isQuasiSeparatedO
 
 [Tag 0GQW](https://stacks.math.columbia.edu/tag/0GQW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean#L701). The attribute's comment: “first assertion: the fppf topology, for f quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean, line 702](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean#L702). The attribute's comment: “first assertion: the fppf topology, for f quasi-compact and quasi-separated”.
 
 > **Stacks 0GQW, first assertion: the fppf topology.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and
 > quasi-separated 1-morphism of algebraic stacks. Then for every `p ≥ 0` the higher direct image
@@ -752,7 +752,7 @@ theorem preservesColimitsOfShape_rightDerived_abelianDirectImage_fppf_of_qcqs
         (BigFppfOver.associatedTopology B S hS 𝒴.val.val.p .fppf)).rightDerived n)
 ```
 
-**`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean#L735). The attribute's comment: “second assertion: the étale topology, for f quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean, line 736](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHigherDirectImagesQcqs.lean#L736). The attribute's comment: “second assertion: the étale topology, for f quasi-compact and quasi-separated”.
 
 > **Stacks 0GQW, second assertion: the étale topology.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and
 > quasi-separated 1-morphism of algebraic stacks. Then for every `p ≥ 0` the higher direct image
@@ -790,7 +790,7 @@ theorem preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs
 
 [Tag 0GQX](https://stacks.math.columbia.edu/tag/0GQX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean#L165). The attribute's comment: “the whole lemma, for f quasi-compact and quasi-separated and the functors f\_\{QCoh,*} and R^i f\_\{QCoh,*} (i ≥ 0) of Stacks 077A: each commutes with direct sums (indexed by ι : Type u) and with filtered colimits (indexed by filtered J : Type u)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean#L165). The attribute's comment: “the whole lemma, for f quasi-compact and quasi-separated and the functors f\_\{QCoh,*} and R^i f\_\{QCoh,*} (i ≥ 0) of Stacks 077A: each commutes with direct sums (indexed by ι : Type u) and with filtered colimits (indexed by filtered J : Type u)”.
 
 > **Stacks 0GQX.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks. The functor `f_{QCoh,*}` and the functors `Rⁱf_{QCoh,*}` (`i ≥ 0`) of
@@ -822,7 +822,7 @@ theorem preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qc
 
 [Tag 0GQY](https://stacks.math.columbia.edu/tag/0GQY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_quasicoherentHigherDirectImage_and_exact_preservesColimits_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean#L179). The attribute's comment: “the whole lemma, for an affine 1-morphism f of algebraic stacks and the functors R^i f\_\{QCoh,*} and f\_\{QCoh,*} of Stacks 077A: R^i f\_\{QCoh,*} = 0 for i > 0; f\_\{QCoh,*} is exact (preserves finite limits and finite colimits); it commutes with direct sums; it commutes with all colimits (indexed in the universe u of the site)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_quasicoherentHigherDirectImage_and_exact_preservesColimits_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean#L179). The attribute's comment: “the whole lemma, for an affine 1-morphism f of algebraic stacks and the functors R^i f\_\{QCoh,*} and f\_\{QCoh,*} of Stacks 077A: R^i f\_\{QCoh,*} = 0 for i > 0; f\_\{QCoh,*} is exact (preserves finite limits and finite colimits); it commutes with direct sums; it commutes with all colimits (indexed in the universe u of the site)”.
 
 > **Stacks 0GQY.** Let `f : 𝒳 ⟶ 𝒴` be an affine 1-morphism of algebraic stacks. Then
 >
@@ -849,7 +849,7 @@ theorem isZero_quasicoherentHigherDirectImage_and_exact_preservesColimits_of_isA
 
 [Tag 0GQZ](https://stacks.math.columbia.edu/tag/0GQZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L453). The attribute's comment: “the displayed colimit equality, for all 𝒪\_𝒳-modules; the directed index set is a small filtered category”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 453](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L453). The attribute's comment: “the displayed colimit equality, for all 𝒪\_𝒳-modules; the directed index set is a small filtered category”.
 
 > **Stacks 0GQZ, the displayed equality.** Let `𝒳` be a quasi-compact and quasi-separated
 > algebraic stack over a scheme `S` contained in a big fppf site, with the fppf topology of
@@ -887,7 +887,7 @@ theorem isIso_colimit_post_hom_of_isQuasiCompactStack
     IsIso (colimit.post D (coyoneda.obj (Opposite.op G)))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L484). The attribute's comment: “the 'in particular' clause: filtered colimits in QCoh(𝒪\_𝒳), indexed by a small filtered category”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 484](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L484). The attribute's comment: “the 'in particular' clause: filtered colimits in QCoh(𝒪\_𝒳), indexed by a small filtered category”.
 
 > **Stacks 0GQZ, the "in particular" clause.** For a quasi-compact and quasi-separated algebraic
 > stack and an `𝒪_𝒳`-module `𝒢` of finite presentation, `Hom_𝒳(𝒢, -)` commutes with filtered
@@ -919,7 +919,7 @@ theorem isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack
         .fppf)).ι ⋙ coyoneda.obj (Opposite.op G)))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_and_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L521). The attribute's comment: “the whole statement: the displayed colimit equality together with the 'in particular' clause for QCoh(𝒪\_𝒳)”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_and_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 521](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L521). The attribute's comment: “the whole statement: the displayed colimit equality together with the 'in particular' clause for QCoh(𝒪\_𝒳)”.
 
 > **Stacks 0GQZ in full.** For a quasi-compact and quasi-separated algebraic stack `𝒳`
 > (Stacks 04YB, Stacks 050D part (8)) and every small filtered index category `K`: for every
@@ -961,4 +961,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.13, Tag 0GQU](https://stacks.math.columbia.edu/tag/0GQU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

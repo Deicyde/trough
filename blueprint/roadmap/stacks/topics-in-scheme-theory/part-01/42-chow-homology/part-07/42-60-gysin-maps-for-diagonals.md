@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.60 Gysin maps for diagonals
 
-Section 42.60 of the Stacks Project, [Tag 0FBR](https://stacks.math.columbia.edu/tag/0FBR). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.60 of the Stacks Project, [Tag 0FBR](https://stacks.math.columbia.edu/tag/0FBR). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FBR, the section
 
 [Tag 0FBR](https://stacks.math.columbia.edu/tag/0FBR) in the Stacks Project.
 
-**`Stacks.Chow.isRegularImmersion_diagonal_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean#L50). The attribute's comment: “the diagonal of a smooth morphism is a regular immersion”. References: SGA 6 VII (1.10), “special case”; SGA 6 VIII (1.3), “special case”.
+**`Stacks.Chow.isRegularImmersion_diagonal_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean#L50). The attribute's comment: “the diagonal of a smooth morphism is a regular immersion”. References: SGA 6 VII (1.10), “special case”; SGA 6 VIII (1.3), “special case”.
 
 > The diagonal `Δ : X ⟶ X ×_Y X` of a smooth morphism is a regular immersion.
 
@@ -23,7 +23,7 @@ theorem isRegularImmersion_diagonal_of_smooth [Smooth f] :
     Stacks.AlgebraicGeometry.RegularIdealSheaf.IsRegularImmersion (pullback.diagonal f)
 ```
 
-**`Stacks.Chow.gysinMapExists_diagonal_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean#L57). The attribute's comment: “the Gysin map Δ^! is available for the diagonal”.
+**`Stacks.Chow.gysinMapExists_diagonal_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysin.lean#L57). The attribute's comment: “the Gysin map Δ^! is available for the diagonal”.
 
 > The Gysin map exists for the diagonal of a smooth morphism, in the sense of Stacks 0FF3.
 
@@ -32,7 +32,7 @@ theorem gysinMapExists_diagonal_of_smooth [Smooth f] :
     GysinMapExists (pullback.diagonal f)
 ```
 
-**`Stacks.Chow.diagonalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean#L158). The attribute's comment: “the Gysin class Δ^! ∈ A^d(X → X ×\_Y X) of the diagonal of a smooth morphism of constant relative dimension d”.
+**`Stacks.Chow.diagonalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean#L158). The attribute's comment: “the Gysin class Δ^! ∈ A^d(X → X ×\_Y X) of the diagonal of a smooth morphism of constant relative dimension d”.
 
 > **Stacks 0FBR, the Gysin class `Δ^! ∈ A^d(Y ⟶ Y ×_Z Y)`** of the diagonal of a smooth
 > morphism `g : Y ⟶ Z` of constant relative dimension `d`: the class `c(Y ⟶ Y ×_Z Y, 𝒩)` of Stacks
@@ -47,7 +47,7 @@ def diagonalGysinClass :
       (pullback.diagonal g) rfl d
 ```
 
-**`Stacks.Chow.isFiniteLocallyFreeOfRank_diagonalVirtualNormalBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalVirtualNormalBundle.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DiagonalVirtualNormalBundle.lean#L286). The attribute's comment: “constant relative dimension d: the normal bundle of the diagonal has rank d”.
+**`Stacks.Chow.isFiniteLocallyFreeOfRank_diagonalVirtualNormalBundle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalVirtualNormalBundle.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DiagonalVirtualNormalBundle.lean#L286). The attribute's comment: “constant relative dimension d: the normal bundle of the diagonal has rank d”.
 
 > **Stacks Project, Section 42.60 (Tag 0FBR), the degree.** For `f` smooth of constant relative
 > dimension `d`, the normal bundle of the diagonal is finite locally free of rank `d`; this is why
@@ -64,7 +64,7 @@ theorem isFiniteLocallyFreeOfRank_diagonalVirtualNormalBundle [Smooth f] {d : �
 
 [Tag 0FBS](https://stacks.math.columbia.edu/tag/0FBS) in the Stacks Project.
 
-**`Stacks.Chow.diagonalGysinMap_comp_eq_completedIdentityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinMap.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinMap.lean#L138). The attribute's comment: “Δ^! ∘ pr\_i^! = 1 for both projections i = 1, 2, Δ^! and pr\_i^! the Gysin maps of Stacks 0FF3, in the completed ring A^*(X)^∧, for any smooth X → Y”.
+**`Stacks.Chow.diagonalGysinMap_comp_eq_completedIdentityClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinMap.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinMap.lean#L138). The attribute's comment: “Δ^! ∘ pr\_i^! = 1 for both projections i = 1, 2, Δ^! and pr\_i^! the Gysin maps of Stacks 0FF3, in the completed ring A^*(X)^∧, for any smooth X → Y”.
 
 > **Stacks 0FBS: `Δ^! ∘ pr_i^! = 1` in `A^0(X)`, for `i = 1, 2`.** Let `f : X ⟶ Y` be a smooth
 > morphism of schemes locally of finite type over the base, let `Δ : X ⟶ X ×_Y X` be its diagonal
@@ -112,7 +112,7 @@ theorem diagonalGysinMap_comp_eq_completedIdentityClass :
 
 [Tag 0FBT](https://stacks.math.columbia.edu/tag/0FBT) in the Stacks Project.
 
-**`Stacks.Chow.smoothRelativeDimensionShiftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L79). The attribute's comment: “g^! read as the flat pullback g^* of the smooth morphism g; bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
+**`Stacks.Chow.smoothRelativeDimensionShiftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/SmoothChowCohomology.lean#L79). The attribute's comment: “g^! read as the flat pullback g^* of the smooth morphism g; bivariant classes are those of the Gysin system of invertible modules, `Stacks.Chow.gysinSystemOfInvertible`”.
 
 > **Stacks 0FBT.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of schemes locally of finite
 > type over `S`, with `g` smooth of relative dimension `d`. Then `c ↦ c ∘ g^*` is an isomorphism
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.60, Tag 0FBR](https://stacks.math.columbia.edu/tag/0FBR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

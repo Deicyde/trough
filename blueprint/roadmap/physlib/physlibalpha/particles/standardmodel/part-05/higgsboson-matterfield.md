@@ -8,7 +8,7 @@ proof: formalized
 
 # The Standard Model Higgs field as a matter field
 
-The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.MatterField`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean): 8 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.MatterField`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean): 8 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.MatterField`, [Physl
 
 ## A. The Higgs as a matter field
 
-**`StandardModel.HiggsVec.matterField`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L60).
+**`StandardModel.HiggsVec.matterField`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L60).
 
 > The Higgs field as a matter field of `StandardModel.localGaugeData`, valued in
 > `HiggsVec`, in the `2_{3}` representation of the gauge group, a Lorentz scalar, of mass
@@ -47,38 +47,38 @@ The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.MatterField`, [Physl
 noncomputable def matterField : MatterField localGaugeData
 ```
 
-**`StandardModel.HiggsVec.matterField_V`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L71).
+**`StandardModel.HiggsVec.matterField_V`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L71).
 
 ```lean
 lemma matterField_V : matterField.V = HiggsVec
 ```
 
-**`StandardModel.HiggsVec.matterField_repLorentz`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L74).
+**`StandardModel.HiggsVec.matterField_repLorentz`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L74).
 
 ```lean
 lemma matterField_repLorentz :
     matterField.repLorentz = Representation.trivial ℂ SL(2,ℂ) HiggsVec
 ```
 
-**`StandardModel.HiggsVec.matterField_repJet`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L78).
+**`StandardModel.HiggsVec.matterField_repJet`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L78).
 
 ```lean
 lemma matterField_repJet : matterField.repJet = repJetGaugeGroupI
 ```
 
-**`StandardModel.HiggsVec.matterField_repAlgebra`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L81).
+**`StandardModel.HiggsVec.matterField_repAlgebra`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L81).
 
 ```lean
 lemma matterField_repAlgebra : matterField.repAlgebra = gaugeAlgebraAction
 ```
 
-**`StandardModel.HiggsVec.matterField_massWeight`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L84).
+**`StandardModel.HiggsVec.matterField_massWeight`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L84).
 
 ```lean
 lemma matterField_massWeight : matterField.massWeight = 2
 ```
 
-**`StandardModel.HiggsVec.matterField_pureJetsActTrivially`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L87).
+**`StandardModel.HiggsVec.matterField_pureJetsActTrivially`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L87).
 
 > Pure gauge jets act trivially on the Higgs at the base point.
 
@@ -86,7 +86,7 @@ lemma matterField_massWeight : matterField.massWeight = 2
 lemma matterField_pureJetsActTrivially : matterField.PureJetsActTrivially
 ```
 
-**`StandardModel.HiggsVec.matterField_gaugeLorentzCompatible`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L91).
+**`StandardModel.HiggsVec.matterField_gaugeLorentzCompatible`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean#L91).
 
 > The gauge action on the Higgs commutes with its (trivial) Lorentz action.
 
@@ -100,4 +100,4 @@ lemma matterField_gaugeLorentzCompatible : matterField.GaugeLorentzCompatible
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean)
+- [PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean)

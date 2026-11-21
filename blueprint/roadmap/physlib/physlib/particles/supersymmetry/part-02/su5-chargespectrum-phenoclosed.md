@@ -8,7 +8,7 @@ proof: formalized
 
 # Phenomenologically closed sets of charge spectra
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean): 14 declarations (1 instance with no name), 5 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean): 14 declarations (1 instance with no name), 5 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed`, [Ph
 
 ## A. Phenomenologically closed under additions of 5-bar charges
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoClosedQ5`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L86).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoClosedQ5`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L86).
 
 > The proposition that for multiset set of charges `charges`,
 > adding individual elements of `S5` to the `Q5` charges of elements of `charges` again
@@ -58,7 +58,7 @@ def IsPhenoClosedQ5 (S5 : Finset 𝓩) (charges : Multiset (ChargeSpectrum 𝓩)
 
 ### A.1. Simplification using pheno-constrained due to additional of 5-bar charge
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenClosedQ5_of_isPhenoConstrainedQ5`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L97).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenClosedQ5_of_isPhenoConstrainedQ5`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L97).
 
 ```lean
 lemma isPhenClosedQ5_of_isPhenoConstrainedQ5 {S5 : Finset 𝓩} {charges : Multiset (ChargeSpectrum 𝓩)}
@@ -70,7 +70,7 @@ lemma isPhenClosedQ5_of_isPhenoConstrainedQ5 {S5 : Finset 𝓩} {charges : Multi
 
 ## B. Phenomenologically closed under additions of 10d charges
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoClosedQ10`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L121).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoClosedQ10`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L121).
 
 > The proposition that for multiset set of charges `charges`,
 > adding individual elements of `S10` to the `Q10` charges of elements of `charges` again
@@ -83,7 +83,7 @@ def IsPhenoClosedQ10 (S10 : Finset 𝓩) (charges : Multiset (ChargeSpectrum �
 
 ### B.1. Simplification using pheno-constrained due to additional of 10d charge
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenClosedQ10_of_isPhenoConstrainedQ10`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L132).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenClosedQ10_of_isPhenoConstrainedQ10`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L132).
 
 ```lean
 lemma isPhenClosedQ10_of_isPhenoConstrainedQ10 {S10 : Finset 𝓩}
@@ -96,7 +96,7 @@ lemma isPhenClosedQ10_of_isPhenoConstrainedQ10 {S10 : Finset 𝓩}
 
 ## C. Prop for multiset containing all pheno-viable completions of charges permitting top Yukawa
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ContainsPhenoCompletionsOfMinimallyAllows`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L157).
+**`SuperSymmetry.SU5.ChargeSpectrum.ContainsPhenoCompletionsOfMinimallyAllows`**, a def, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L157).
 
 > The proposition that for multiset set of charges `charges` contains all
 > viable completions of charges which allow the top Yukawa, given allowed values
@@ -109,7 +109,7 @@ def ContainsPhenoCompletionsOfMinimallyAllows (S5 S10 : Finset 𝓩)
 
 ### C.1. Simplification using fast version of completions of charges permitting top Yukawa
 
-**`SuperSymmetry.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_iff_completionsTopYukawa`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L169).
+**`SuperSymmetry.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_iff_completionsTopYukawa`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L169).
 
 ```lean
 lemma containsPhenoCompletionsOfMinimallyAllows_iff_completionsTopYukawa {S5 S10 : Finset 𝓩}
@@ -122,7 +122,7 @@ lemma containsPhenoCompletionsOfMinimallyAllows_iff_completionsTopYukawa {S5 S10
 
 ### C.2. Decidability of proposition
 
-**An instance with no name**, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L192).
+**An instance with no name**, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L192).
 
 ```lean
 instance {S5 S10 : Finset 𝓩} {charges : Multiset (ChargeSpectrum 𝓩)} :
@@ -131,7 +131,7 @@ instance {S5 S10 : Finset 𝓩} {charges : Multiset (ChargeSpectrum 𝓩)} :
 
 ### C.3. Monotonicity of proposition
 
-**`SuperSymmetry.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_of_subset`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L202).
+**`SuperSymmetry.SU5.ChargeSpectrum.containsPhenoCompletionsOfMinimallyAllows_of_subset`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L202).
 
 ```lean
 lemma containsPhenoCompletionsOfMinimallyAllows_of_subset {S5 S10 : Finset 𝓩}
@@ -143,7 +143,7 @@ lemma containsPhenoCompletionsOfMinimallyAllows_of_subset {S5 S10 : Finset 𝓩}
 
 ### C.4. `completeMinSubset`: Minimal multiset with viable completions of top-permitting charges
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L218).
+**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L218).
 
 > For a given `S5 S10 : Finset 𝓩`, the minimal multiset of charges which satisfies
 > the condition `ContainsPhenoCompletionsOfMinimallyAllows`.
@@ -156,7 +156,7 @@ def completeMinSubset (S5 S10 : Finset 𝓩) : Multiset (ChargeSpectrum 𝓩)
 
 #### C.4.1. The multiset `completeMinSubset` has no duplicates
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_nodup`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L229).
+**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_nodup`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L229).
 
 ```lean
 lemma completeMinSubset_nodup {S5 S10 : Finset 𝓩} :
@@ -165,7 +165,7 @@ lemma completeMinSubset_nodup {S5 S10 : Finset 𝓩} :
 
 #### C.4.2. The multiset `completeMinSubset` is minimal
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_subset_iff_containsPhenoCompletionsOfMinimallyAllows`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L242).
+**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_subset_iff_containsPhenoCompletionsOfMinimallyAllows`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L242).
 
 ```lean
 lemma completeMinSubset_subset_iff_containsPhenoCompletionsOfMinimallyAllows
@@ -176,7 +176,7 @@ lemma completeMinSubset_subset_iff_containsPhenoCompletionsOfMinimallyAllows
 
 #### C.4.3. The multiset `completeMinSubset` contains all completions
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_containsPhenoCompletionsOfMinimallyAllows`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L267).
+**`SuperSymmetry.SU5.ChargeSpectrum.completeMinSubset_containsPhenoCompletionsOfMinimallyAllows`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L267).
 
 ```lean
 lemma completeMinSubset_containsPhenoCompletionsOfMinimallyAllows (S5 S10 : Finset 𝓩) :
@@ -204,7 +204,7 @@ lemma completeMinSubset_containsPhenoCompletionsOfMinimallyAllows (S5 S10 : Fins
 > The importance of this lemma is that it is only regarding properties of finite-set `charges`
 > not of the whole space of possible charges.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.completeness_of_isPhenoClosedQ5_isPhenoClosedQ10`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L302).
+**`SuperSymmetry.SU5.ChargeSpectrum.completeness_of_isPhenoClosedQ5_isPhenoClosedQ10`**, a lemma, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L302).
 
 ```lean
 lemma completeness_of_isPhenoClosedQ5_isPhenoClosedQ10
@@ -223,7 +223,7 @@ lemma completeness_of_isPhenoClosedQ5_isPhenoClosedQ10
 
 ### D.2. Computable multiset containing all pheno-viable charge spectra
 
-**`SuperSymmetry.SU5.ChargeSpectrum.viableChargesMultiset`**, a def, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L398).
+**`SuperSymmetry.SU5.ChargeSpectrum.viableChargesMultiset`**, a def, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean#L398).
 
 > All charges, for a given `S5 S10 : Finset 𝓩`,
 > which permit a top Yukawa coupling, are not phenomenologically constrained,
@@ -246,4 +246,4 @@ unsafe def viableChargesMultiset (S5 S10 : Finset 𝓩) :
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean)

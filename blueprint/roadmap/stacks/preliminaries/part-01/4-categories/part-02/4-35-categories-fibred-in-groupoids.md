@@ -8,7 +8,7 @@ proof: formalized
 
 # 4.35 Categories fibred in groupoids
 
-Section 4.35 of the Stacks Project, [Tag 003S](https://stacks.math.columbia.edu/tag/003S). 15 tags here are carried by 22 declarations of the repository (1 in StacksCore and 21 in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 4.35 of the Stacks Project, [Tag 003S](https://stacks.math.columbia.edu/tag/003S). 15 tags here are carried by 22 declarations of the repository (1 in StacksCore and 21 in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 003T, a definition
 
@@ -16,13 +16,13 @@ Section 4.35 of the Stacks Project, [Tag 003S](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.IsFiberedInGroupoids`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/FiberedInGroupoids.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Defs.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Defs.lean#L26) (StacksFrontier): “Both conditions: `exists_lift` is (1), the existence of a lift with prescribed target of every base morphism; `unique_lift` is (2), the unique fill-in `χ` with `p.map χ = f` and `χ ≫ φ = ψ`.”.
+- [`CategoryTheory.Functor.IsFiberedInGroupoids`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/FiberedInGroupoids.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Defs.lean, line 26](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Defs.lean#L26) (StacksFrontier): “Both conditions: `exists_lift` is (1), the existence of a lift with prescribed target of every base morphism; `unique_lift` is (2), the unique fill-in `χ` with `p.map χ = f` and `χ ≫ φ = ψ`.”.
 
 ## Tag 03WP, an equation
 
 [Tag 03WP](https://stacks.math.columbia.edu/tag/03WP) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.existsUnique_vertical_factorisation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L52).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.existsUnique_vertical_factorisation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L52).
 
 > **Stacks 03WP.**
 > The two-step lift `ψ ∘ φ : z ⟶ x` of `g ∘ f` factors through the direct lift `γ : z' ⟶ x` by a
@@ -33,7 +33,7 @@ theorem existsUnique_vertical_factorisation :
     ∃! χ : z ⟶ z', p.IsHomLift (𝟙 W) χ ∧ χ ≫ γ = ψ ≫ φ
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.twoStepLiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L62).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.twoStepLiftIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L62).
 
 > **Stacks 03WP.**
 > The comparison isomorphism `z ≅ z'` between the domain of the two-step lift of `g ∘ f` and the
@@ -44,7 +44,7 @@ theorem existsUnique_vertical_factorisation :
 noncomputable def twoStepLiftIso : z ≅ z'
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.isIso_of_vertical_comp_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L83).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.isIso_of_vertical_comp_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Lifts.lean#L83).
 
 > **Stacks 03WP.**
 > Every morphism `χ : z ⟶ z'` of the fibre over `W` filling the diagram is an isomorphism: by
@@ -59,7 +59,7 @@ lemma isIso_of_vertical_comp_eq (χ : z ⟶ z') [p.IsHomLift (𝟙 W) χ] (hχ :
 
 [Tag 003V](https://stacks.math.columbia.edu/tag/003V) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.iff_isFibered_and_fiber_isGroupoid`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/FiberedInGroupoidsEquiv.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/FiberedInGroupoidsEquiv.lean#L165).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.iff_isFibered_and_fiber_isGroupoid`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/FiberedInGroupoidsEquiv.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/FiberedInGroupoidsEquiv.lean#L165).
 
 > **Stacks 003V (Lemma 4.35.2).** A functor `p : 𝒮 ⥤ 𝒞` is fibred in groupoids
 > if and only if it is a fibred category all of whose fibres are groupoids.
@@ -69,7 +69,7 @@ theorem iff_isFibered_and_fiber_isGroupoid :
     p.IsFiberedInGroupoids ↔ p.IsFibered ∧ ∀ S, IsGroupoid (p.Fiber S)
 ```
 
-**`CategoryTheory.Functor.isFiberedInGroupoids_iff_and_isStronglyCartesian_and_isGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L393). The attribute's comment: “the equivalence (1) ⇔ (2), every morphism strongly cartesian, and the groupoid-valued pseudofunctor of Lemma 02XO attached to any choice of lifts”.
+**`CategoryTheory.Functor.isFiberedInGroupoids_iff_and_isStronglyCartesian_and_isGroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/FiberedInGroupoidsPseudofunctor.lean#L394). The attribute's comment: “the equivalence (1) ⇔ (2), every morphism strongly cartesian, and the groupoid-valued pseudofunctor of Lemma 02XO attached to any choice of lifts”.
 
 > **Stacks 003V.** For a functor `p : 𝒳 ⥤ 𝒮`:
 >
@@ -104,7 +104,7 @@ theorem isFiberedInGroupoids_iff_and_isStronglyCartesian_and_isGroupoid (p : �
 
 [Tag 03WQ](https://stacks.math.columbia.edu/tag/03WQ) in the Stacks Project.
 
-**`CategoryTheory.Functor.isFiberedInGroupoids_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean#L422).
+**`CategoryTheory.Functor.isFiberedInGroupoids_stronglyCartesianOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/GroupoidOfStack.lean#L422).
 
 > **The category fibred in groupoids associated to a fibred category** (Stacks 03WQ). Let
 > `p : 𝒮 ⥤ 𝒞` be a fibred category, and let `𝒮'` be the subcategory of `𝒮` with the same objects
@@ -124,7 +124,7 @@ theorem isFiberedInGroupoids_stronglyCartesianOver (p : 𝒮 ⥤ 𝒞) [p.IsFibe
 
 [Tag 02XS](https://stacks.math.columbia.edu/tag/02XS) in the Stacks Project.
 
-**`CategoryTheory.CatFiberedInGroupoids`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoCategory.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoCategory.lean#L116).
+**`CategoryTheory.CatFiberedInGroupoids`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoCategory.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoCategory.lean#L116).
 
 > The 2-category of categories fibred in groupoids over `𝒞`: the full sub-2-category of the
 > 2-category `BasedCategory 𝒞` of categories over `𝒞` (Stacks 003Y) spanned by the categories fibred
@@ -145,7 +145,7 @@ abbrev CatFiberedInGroupoids (𝒞 : Type u₁) [Category.{v₁} 𝒞]
 
 [Tag 0041](https://stacks.math.columbia.edu/tag/0041) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoFibreProduct.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoFibreProduct.lean#L132).
+**`CategoryTheory.TwoFibreProductOver.isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoFibreProduct.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/TwoFibreProduct.lean#L132).
 
 > **Stacks 0041.** The 2-category of categories fibred in groupoids over `𝒞` has 2-fibre
 > products, given by the construction of Stacks 0040: if `p𝒳`, `p𝒴`, `p𝒮` are fibred in groupoids
@@ -163,7 +163,7 @@ theorem isFiberedInGroupoids (p𝒳 : 𝒳 ⥤ 𝒞) (p𝒴 : 𝒴 ⥤ 𝒞) (p�
 
 [Tag 003Z](https://stacks.math.columbia.edu/tag/003Z) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.faithful_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L208). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.faithful_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L208). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”.
 
 > **Stacks 003Z (1).** `G` is faithful if and only if for every object `U` of `C` the
 > induced functor `G_U : S_U ⥤ S'_U` on fibres is faithful.
@@ -174,7 +174,7 @@ theorem IsFiberedInGroupoids.faithful_iff_forall_fiber (p : S ⥤ C) (p' : S' �
     (hG : G ⋙ p' = p) : G.Faithful ↔ ∀ U : C, (Fiber.mapOfComp p p' G hG U).Faithful
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.full_and_faithful_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L217). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.full_and_faithful_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L217). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”.
 
 > **Stacks 003Z (1).** `G` is full and faithful if and only if for every object `U` of `C` the
 > induced functor `G_U : S_U ⥤ S'_U` on fibres is full and faithful.
@@ -186,7 +186,7 @@ theorem IsFiberedInGroupoids.full_and_faithful_iff_forall_fiber (p : S ⥤ C) (p
       ∀ U : C, ((Fiber.mapOfComp p p' G hG U).Full ∧ (Fiber.mapOfComp p p' G hG U).Faithful)
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L280). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”; SGA 1 VI (4.2), “(iii)”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_iff_forall_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L280). The attribute's comment: “(1)”. References: SGA 1 VI (6.10), “fibred in groupoids”; SGA 1 VI (4.2), “(iii)”.
 
 > **Stacks 003Z (1).** `G` is an equivalence of categories if and only if for every object
 > `U` of `C` the induced functor `G_U : S_U ⥤ S'_U` on fibres is an equivalence.
@@ -198,7 +198,7 @@ theorem IsFiberedInGroupoids.isEquivalence_iff_forall_fiber (p : S ⥤ C) (p' : 
     G.IsEquivalence ↔ ∀ U : C, (Fiber.mapOfComp p p' G hG U).IsEquivalence
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L368). The attribute's comment: “(2)”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.isEquivalence_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean, line 368](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Fibrewise.lean#L368). The attribute's comment: “(2)”.
 
 > **Stacks 003Z (2).** If `G` is an equivalence of categories, then `G` is an equivalence
 > in the 2-category of categories fibred in groupoids over `C`: there are a functor
@@ -218,7 +218,7 @@ theorem IsFiberedInGroupoids.isEquivalence_over (p : S ⥤ C) (p' : S' ⥤ C)
 
 [Tag 04Z7](https://stacks.math.columbia.edu/tag/04Z7) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.full_and_faithful_iff_isEquivalence_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Diagonal.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Diagonal.lean#L252).
+**`CategoryTheory.TwoFibreProductOver.full_and_faithful_iff_isEquivalence_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Diagonal.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Diagonal.lean#L252).
 
 > **Stacks 04Z7.** Let `p𝒮 : 𝒮 ⥤ 𝒞` and `p𝒮' : 𝒮' ⥤ 𝒞` be categories fibred in groupoids and
 > let `G : 𝒮 ⥤ 𝒮'` be a 1-morphism over `𝒞`. Then `G` is fully faithful if and only if the diagonal
@@ -234,7 +234,7 @@ theorem full_and_faithful_iff_isEquivalence_diagonal (h𝒮 : p𝒮.IsFiberedInG
 
 [Tag 03YT](https://stacks.math.columbia.edu/tag/03YT) in the Stacks Project.
 
-**`main_theorem03YT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Conjugation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Conjugation.lean#L132). References: SGA 1 VI (4.5), “both displayed maps”.
+**`main_theorem03YT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Conjugation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Conjugation.lean#L132). References: SGA 1 VI (4.5), “both displayed maps”.
 
 > **Stacks 03YT.** For `𝒮₁, …, 𝒮₄` over `𝒞` and equivalences `φ : 𝒮₁ ⟶ 𝒮₂`,
 > `ψ : 𝒮₃ ⟶ 𝒮₄` over `𝒞`, conjugation `α ↦ ψ ∘ α ∘ φ` is an equivalence of hom-categories
@@ -256,7 +256,7 @@ theorem main_theorem03YT
 
 [Tag 042I](https://stacks.math.columbia.edu/tag/042I) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.absoluteInertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Inertia.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Inertia.lean#L59).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.absoluteInertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Inertia.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Inertia.lean#L59).
 
 > **Stacks 042I.** If `p : S ⥤ C` is fibred in groupoids, then so is the inertia fibred
 > category `I_S ⥤ C`.
@@ -270,7 +270,7 @@ theorem absoluteInertia (p : S ⥤ C) (hp : p.IsFiberedInGroupoids) :
 
 [Tag 02XT](https://stacks.math.columbia.edu/tag/02XT) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.of_comp_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Slice.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Slice.lean#L89).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.of_comp_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Slice.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Slice.lean#L89).
 
 > **Stacks 02XT.** If `p : 𝒮 ⥤ 𝒞` is fibred in groupoids and factors through the slice
 > category `Over U` as `p' ⋙ Over.forget U = p`, then `p' : 𝒮 ⥤ Over U` is fibred in
@@ -290,7 +290,7 @@ theorem IsFiberedInGroupoids.of_comp_over
 
 [Tag 09WW](https://stacks.math.columbia.edu/tag/09WW) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Comp.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Comp.lean#L50).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Comp.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Comp.lean#L50).
 
 > **Stacks 09WW.** The composition of two functors that are fibred in groupoids is
 > fibred in groupoids.
@@ -305,7 +305,7 @@ theorem IsFiberedInGroupoids.comp (p : 𝒜 ⥤ ℬ) (q : ℬ ⥤ 𝒞)
 
 [Tag 06N6](https://stacks.math.columbia.edu/tag/06N6) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.hasPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean#L132). The attribute's comment: “(1)”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.hasPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean#L132). The attribute's comment: “(1)”.
 
 > Let `p` be fibred in groupoids and let `gx : x ⟶ y`, `gz : z ⟶ y` be morphisms of `S`. If
 > the fibre product of `p.map gx` and `p.map gz` exists in `C`, then the fibre product of `gx` and
@@ -319,7 +319,7 @@ theorem IsFiberedInGroupoids.hasPullback
     Limits.HasPullback gx gz
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.map_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean#L145). The attribute's comment: “(2)”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.map_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/FibreProducts.lean#L145). The attribute's comment: “(2)”.
 
 > For any fibre product `x ×_y z` in `S`, realized by a pullback square with vertex `P` and
 > projections `pr₁ : P ⟶ x`, `pr₂ : P ⟶ z`, the image `p.obj P` together with `p.map pr₁` and
@@ -340,7 +340,7 @@ theorem IsFiberedInGroupoids.map_isPullback
 
 [Tag 06N7](https://stacks.math.columbia.edu/tag/06N7) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.exists_factorization_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Factorization.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Factorization.lean#L450).
+**`CategoryTheory.Functor.IsFiberedInGroupoids.exists_factorization_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Factorization.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Factorization.lean#L450).
 
 > **Stacks 06N7 (Lemma 4.35.16).** Let `𝒞` be a category and let `𝒳`, `𝒴` be categories
 > fibred in groupoids over `𝒞` via `p : 𝒳 ⥤ 𝒞` and `q : 𝒴 ⥤ 𝒞`. Let `F : 𝒳 ⥤ 𝒴` be a
@@ -370,7 +370,7 @@ theorem IsFiberedInGroupoids.exists_factorization_isFiberedInGroupoids
 
 [Tag 06N8](https://stacks.math.columbia.edu/tag/06N8) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean#L193). The attribute's comment: “first claim: an equivalence h over 𝒴 with h ∘ b ≅ a over 𝒞”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean#L194). The attribute's comment: “first claim: an equivalence h over 𝒴 with h ∘ b ≅ a over 𝒞”.
 
 > **Stacks 06N8 (Lemma 4.35.17), first claim.** Let `p : 𝒳 ⥤ 𝒞` and `q : 𝒴 ⥤ 𝒞` be fibred
 > in groupoids and `F : 𝒳 ⥤ 𝒴` a 1-morphism over `𝒞` (`F ⋙ q = p`). Let `p' : 𝒳' ⥤ 𝒞`,
@@ -400,7 +400,7 @@ theorem amelioration_unique_isEquivalenceOver {p : 𝒳 ⥤ 𝒞} {q : 𝒴 ⥤ 
       (θ : b ⋙ h ≅ a), IsVerticalNatTrans p' θ.hom
 ```
 
-**`CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean#L235). The attribute's comment: “second claim: if the diagram commutes, h ∘ b ≅ a over 𝒴”.
+**`CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean, line 236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/AmeliorationUniquenessOver.lean#L236). The attribute's comment: “second claim: if the diagram commutes, h ∘ b ≅ a over 𝒴”.
 
 > **Stacks 06N8 (Lemma 4.35.17), second claim.** In the setting of
 > `amelioration_unique_isEquivalenceOver`, if the diagram actually commutes (`a ⋙ f = F` and
@@ -431,4 +431,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.35, Tag 003S](https://stacks.math.columbia.edu/tag/003S)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

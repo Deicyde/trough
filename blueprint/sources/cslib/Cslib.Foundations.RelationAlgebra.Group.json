@@ -1,0 +1,29 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "CSLib",
+ "repo": "leanprover/cslib",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
+ "module": "Cslib.Foundations.RelationAlgebra.Group",
+ "file": "Cslib/Foundations/RelationAlgebra/Group.lean",
+ "public": [
+  {"name": "Cslib.RelationAlgebra.AtomStructure.ofGroup", "kind": "def", "line": 44},
+  {"name": "Cslib.RelationAlgebra.AtomStructure.ofGroup_conv", "kind": "theorem", "line": 50},
+  {"name": "Cslib.RelationAlgebra.AtomStructure.mem_ofGroup_id", "kind": "theorem", "line": 53},
+  {"name": "Cslib.RelationAlgebra.AtomStructure.mem_ofGroup_cycles", "kind": "theorem", "line": 56},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.isIntegral_ofGroup", "kind": "theorem", "line": 72},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.cayley", "kind": "def", "line": 77},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.mem_cayley", "kind": "theorem", "line": 91},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.cayley_injective", "kind": "theorem", "line": 94},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.mem_range_cayley", "kind": "theorem", "line": 99},
+  {"name": "MulAction.set_mem_fixedPoints_iff", "kind": "theorem", "line": 112},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.range_cayley", "kind": "theorem", "line": 117},
+  {"name": "Cslib.RelationAlgebra.ComplexAlgebra.representable_ofGroup", "kind": "theorem", "line": 122},
+  {"name": "Cslib.RelationAlgebra.GroupRepresentable", "kind": "def", "line": 128},
+  {"name": "Cslib.RelationAlgebra.GroupRepresentable.of_injective", "kind": "theorem", "line": 138},
+  {"name": "Cslib.RelationAlgebra.GroupRepresentable.representable", "kind": "theorem", "line": 143},
+  {"name": "Cslib.RelationAlgebra.GroupRepresentable.isIntegral", "kind": "theorem", "line": 147}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

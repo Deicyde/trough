@@ -2,7 +2,7 @@
 
 15 modules under `CompPoly/Univariate/Roots/LasVegas/`, with 256 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.Roots.LasVegas.Correctness`](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Correctness.lean) and [`CompPoly.Univariate.Roots.LasVegas.Probability`](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/LasVegas/Probability.lean).
+These modules declare nothing public by name, so they have no article: [`CompPoly.Univariate.Roots.LasVegas.Correctness`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Correctness.lean) and [`CompPoly.Univariate.Roots.LasVegas.Probability`](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/LasVegas/Probability.lean).
 
 - [Las Vegas Linear-Factor Splitting](basic.md)
 - [Correctness](correctness/README.md)

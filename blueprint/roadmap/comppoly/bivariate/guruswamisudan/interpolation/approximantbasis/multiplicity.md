@@ -7,7 +7,7 @@ proof: formalized
 
 # Shear Equivalence for Guruswami-Sudan Multiplicity Constraints
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean), by Valerii Huhnin.
 
 > The approximant-basis backend reduces GS interpolation to diagonal modular
 > congruences on the `Z^b`-coefficients of the sheared polynomial `Q(X, R + Z)`.
@@ -25,7 +25,7 @@ proof: formalized
 > other; distinctness of the nodes then glues the per-node factors into powers
 > of `G`.
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_iff_hasseDeriv_eval_eq_zero` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L53))
+`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_iff_hasseDeriv_eval_eq_zero` (theorem, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L53))
 
 > `(X - x)^k` divides `A` iff the first `k` Hasse derivatives of `A` vanish
 > at `x`.
@@ -37,7 +37,7 @@ theorem X_sub_C_pow_dvd_iff_hasseDeriv_eval_eq_zero
       ∀ a, a < k → (Polynomial.hasseDeriv a A).eval x = 0
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_of_dvd_sub` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L70))
+`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_of_dvd_sub` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L70))
 
 > Shear-transfer core: the `(X - x)`-adic divisibility family of the outer
 > Hasse-derivative evaluations of `P` moves between outer evaluation points `u`
@@ -53,7 +53,7 @@ theorem X_sub_C_pow_dvd_hasseDeriv_eval_of_dvd_sub
     (X - C x) ^ (s - b) ∣ (Polynomial.hasseDeriv b P).eval v
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_iff_hasMultiplicity` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L113))
+`CompPoly.GuruswamiSudan.ApproximantBasis.X_sub_C_pow_dvd_hasseDeriv_eval_iff_hasMultiplicity` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L113))
 
 > At a single node `(x, y)` with `R(x) = y`, the `(X - x)`-adic divisibility
 > family of the sheared coefficients `(hasseDeriv b Q.toPoly).eval R` is
@@ -68,7 +68,7 @@ theorem X_sub_C_pow_dvd_hasseDeriv_eval_iff_hasMultiplicity
       CBivariate.hasMultiplicity Q s x y
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.linearFactor_toPoly_eq` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L151))
+`CompPoly.GuruswamiSudan.ApproximantBasis.linearFactor_toPoly_eq` (theorem, [line 151](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L151))
 
 > The linear factor of one node under `toPoly`.
 
@@ -77,7 +77,7 @@ theorem linearFactor_toPoly_eq (x : F) :
     (CPolynomial.linearFactor x).toPoly = (X - C x : Polynomial F)
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L173))
+`CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly` (theorem, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L173))
 
 > The array vanishing polynomial is the product of the node linear factors
 > under `toPoly`.
@@ -89,7 +89,7 @@ theorem vanishingPolynomialArray_toPoly (xs : Array F) :
         (X - C x : Polynomial F))).prod
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly_monic` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L184))
+`CompPoly.GuruswamiSudan.ApproximantBasis.vanishingPolynomialArray_toPoly_monic` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L184))
 
 > The array vanishing polynomial is monic over the underlying `toPoly`
 > image.
@@ -99,7 +99,7 @@ theorem vanishingPolynomialArray_toPoly_monic (xs : Array F) :
     Polynomial.Monic (CPolynomial.vanishingPolynomialArray xs).toPoly
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.prod_X_sub_C_pow_dvd_of_nodup` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L193))
+`CompPoly.GuruswamiSudan.ApproximantBasis.prod_X_sub_C_pow_dvd_of_nodup` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L193))
 
 > Per-node `(X - x)^k` divisibility glues to divisibility by the `k`-th
 > power of the product of distinct linear factors.
@@ -112,7 +112,7 @@ theorem prod_X_sub_C_pow_dvd_of_nodup
     (((xs : Multiset F).map fun x ↦ (X - C x : Polynomial F)).prod) ^ k ∣ A
 ```
 
-`CompPoly.GuruswamiSudan.ApproximantBasis.vanishing_pow_dvd_hasseDeriv_eval_iff_satisfiesMultiplicityConstraints` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L223))
+`CompPoly.GuruswamiSudan.ApproximantBasis.vanishing_pow_dvd_hasseDeriv_eval_iff_satisfiesMultiplicityConstraints` (theorem, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean#L223))
 
 > Batch shear equivalence: over distinct nodes, divisibility of every
 > sheared coefficient `C_b` by `G^(s-b)` is equivalent to the packed GS
@@ -140,5 +140,5 @@ theorem vanishing_pow_dvd_hasseDeriv_eval_iff_satisfiesMultiplicityConstraints
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/ApproximantBasis/Multiplicity.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.ApproximantBasis.Multiplicity.json)

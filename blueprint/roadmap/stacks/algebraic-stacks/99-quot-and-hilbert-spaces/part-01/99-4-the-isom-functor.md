@@ -8,13 +8,13 @@ proof: formalized
 
 # 99.4 The Isom functor
 
-Section 99.4 of the Stacks Project, [Tag 08K7](https://stacks.math.columbia.edu/tag/08K7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 99.4 of the Stacks Project, [Tag 08K7](https://stacks.math.columbia.edu/tag/08K7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08K7, the section
 
 [Tag 08K7](https://stacks.math.columbia.edu/tag/08K7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean#L355). The attribute's comment: “the Isom functor as a subfunctor of the Hom functor”.
+**`AlgebraicGeometry.Space.HomSituation.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean#L355). The attribute's comment: “the Isom functor as a subfunctor of the Hom functor”.
 
 > **Stacks 08K7.**  The relative Isom functor `Isom(F, G) ⊆ Hom(F, G)` as a subfunctor of the
 > relative Hom functor of Stacks 08JT: its sections at a test scheme `T` over the base are the
@@ -29,7 +29,7 @@ Section 99.4 of the Stacks Project, [Tag 08K7](https://stacks.math.columbia.edu/
 def isomSubfunctor : Subfunctor (s.homFunctor (modulePushforwardCoherence B S hS))
 ```
 
-**`AlgebraicGeometry.Space.HomSituation.isomFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean#L373). The attribute's comment: “the Isom functor”.
+**`AlgebraicGeometry.Space.HomSituation.isomFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsom.lean#L373). The attribute's comment: “the Isom functor”.
 
 > **Stacks 08K7.**  The relative Isom functor `Isom(F, G) : (Sch/base)ᵒᵖ ⥤ Sets`, whose value
 > at a test scheme `T` over the base is the set of invertible `𝒪_{X_T}`-homomorphisms
@@ -44,7 +44,7 @@ def isomFunctor : (s.SchemesOver)ᵒᵖ ⥤ Type (u + 1)
 
 [Tag 08K8](https://stacks.math.columbia.edu/tag/08K8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isSheafFor_isomFunctor_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomFpqcSheaf.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomFpqcSheaf.lean#L142). The attribute's comment: “the functor Isom(F, G) of Situation 08JT satisfies the sheaf property for every fpqc covering”.
+**`AlgebraicGeometry.Space.HomSituation.isSheafFor_isomFunctor_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomFpqcSheaf.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomFpqcSheaf.lean#L142). The attribute's comment: “the functor Isom(F, G) of Situation 08JT satisfies the sheaf property for every fpqc covering”.
 
 > **Stacks 08K8.**  In Situation 08JT the relative Isom functor `Isom(F, G)` satisfies the
 > sheaf property for the fpqc topology: for every fpqc covering `{U i ⟶ T}` of schemes over the
@@ -70,7 +70,7 @@ theorem isSheafFor_isomFunctor_of_isFpqcCovering {I : Type v} {T : s.SchemesOver
 
 [Tag 0D3T](https://stacks.math.columbia.edu/tag/0D3T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.bijective_isomMorOfSpaceIsom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/IsomFunctorMorphismsEquiv.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Hom/IsomFunctorMorphismsEquiv.lean#L67). The attribute's comment: “the whole identification, in Situation 08JT: for any algebraic space T over S, the map (h, u) |-> the morphism T -> Isom(F, G) is a bijection from all pairs of h : T -> base and an isomorphism u : F\_T -> G\_T of the pullbacks to X x\_\{base, h} T onto all morphisms from T into Isom(F, G); the pseudofunctoriality of direct images and both descent clauses are supplied by library results, so the statement takes no hypothesis”.
+**`AlgebraicGeometry.Space.HomSituation.bijective_isomMorOfSpaceIsom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/IsomFunctorMorphismsEquiv.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Hom/IsomFunctorMorphismsEquiv.lean#L67). The attribute's comment: “the whole identification, in Situation 08JT: for any algebraic space T over S, the map (h, u) |-> the morphism T -> Isom(F, G) is a bijection from all pairs of h : T -> base and an isomorphism u : F\_T -> G\_T of the pullbacks to X x\_\{base, h} T onto all morphisms from T into Isom(F, G); the pseudofunctoriality of direct images and both descent clauses are supplied by library results, so the statement takes no hypothesis”.
 
 > Let `T` be an algebraic space over `S`. The assignment `(h, u) ↦ isomMorOfSpaceIsom (h, u)`
 > is a bijection from the pairs of a morphism `h : T ⟶ base` and an isomorphism `u : F_T ⟶ G_T` of
@@ -93,7 +93,7 @@ theorem bijective_isomMorOfSpaceIsom (T : AlgebraicSpaces B S hS) :
 
 [Tag 08K9](https://stacks.math.columbia.edu/tag/08K9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.isAffineFinitePresentationAlgebraicSpaceOver_isomFunctor_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomAffineFinitePresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomAffineFinitePresentation.lean#L56). The attribute's comment: “Isom(F, G) is an algebraic space affine of finite presentation over B, for f of finite presentation and F, G of finite presentation, flat over B, with support proper over B”.
+**`AlgebraicGeometry.Space.HomSituation.isAffineFinitePresentationAlgebraicSpaceOver_isomFunctor_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomAffineFinitePresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Quot/RelativeIsomAffineFinitePresentation.lean#L56). The attribute's comment: “Isom(F, G) is an algebraic space affine of finite presentation over B, for f of finite presentation and F, G of finite presentation, flat over B, with support proper over B”.
 
 > In Situation 08JT assume that `f : X ⟶ B` is of finite presentation and that `𝓕` and `𝒢`
 > are finitely presented `𝒪_X`-modules, flat over `B`, with support proper over `B`. Then the
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 99.4, Tag 08K7](https://stacks.math.columbia.edu/tag/08K7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

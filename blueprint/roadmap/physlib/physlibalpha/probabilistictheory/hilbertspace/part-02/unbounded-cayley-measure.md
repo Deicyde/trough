@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap_cayleyMap, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_injective, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.CayleySupported, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleyInverseMap_of_supported, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleySupported, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMeasureEquiv
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap_cayleyMap, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_injective, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.CayleySupported, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleyInverseMap_of_supported, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleySupported, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMeasureEquiv
 statement: formalized
 proof: formalized
 ---
 
 # Spectral measures and the Cayley transform
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Measure`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean): 9 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Measure`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean): 9 declarations, 5 with a docstring.
 
 > Spectral measures on ℝ correspond to Cayley-supported spectral measures on ℂ.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Measu
 
 ## A. Pushforward and pullback along the Cayley transform
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L59).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L59).
 
 > The bounded spectral measure obtained from a real spectral measure by the Cayley map.
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Cayley.Measu
 def cayleyMap (μS : WOTSpectralMeasure ℝ H) : WOTSpectralMeasure ℂ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L63).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L63).
 
 > Pull a complex spectral measure back to a real variable using the inverse Cayley coordinate.
 
@@ -48,14 +48,14 @@ def cayleyMap (μS : WOTSpectralMeasure ℝ H) : WOTSpectralMeasure ℂ H
 def cayleyInverseMap (ν : WOTSpectralMeasure ℂ H) : WOTSpectralMeasure ℝ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap_cayleyMap`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyInverseMap_cayleyMap`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L66).
 
 ```lean
 lemma cayleyInverseMap_cayleyMap (μS : WOTSpectralMeasure ℝ H) :
     cayleyInverseMap (cayleyMap μS) = μS
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_injective`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_injective`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L86).
 
 > The Cayley pushforward is injective on real spectral measures. Thus a real spectral measure
 > is completely recoverable from its bounded Cayley-side measure; this is the basic uniqueness
@@ -68,7 +68,7 @@ lemma cayleyMap_injective {μS νS : WOTSpectralMeasure ℝ H}
 
 ## B. The Cayley equivalence of spectral-measure data
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.CayleySupported`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L98).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.CayleySupported`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L98).
 
 > A spectral measure on `ℂ` is Cayley supported when it lives on the unit circle and gives no mass
 > to `1`.
@@ -77,7 +77,7 @@ lemma cayleyMap_injective {μS νS : WOTSpectralMeasure ℝ H}
 def CayleySupported (ν : WOTSpectralMeasure ℂ H) : Prop
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleyInverseMap_of_supported`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L102).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleyInverseMap_of_supported`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L102).
 
 ```lean
 lemma cayleyMap_cayleyInverseMap_of_supported
@@ -85,14 +85,14 @@ lemma cayleyMap_cayleyInverseMap_of_supported
     cayleyMap (cayleyInverseMap ν) = ν
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleySupported`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L126).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_cayleySupported`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L126).
 
 ```lean
 lemma cayleyMap_cayleySupported (μS : WOTSpectralMeasure ℝ H) :
     CayleySupported (cayleyMap μS)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMeasureEquiv`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMeasureEquiv`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L149).
 
 > The Cayley transform is an equivalence between spectral measures on `ℝ` and Cayley-supported
 > spectral measures on `ℂ`.
@@ -102,7 +102,7 @@ def cayleyMeasureEquiv :
     WOTSpectralMeasure ℝ H ≃ {ν : WOTSpectralMeasure ℂ H // CayleySupported ν}
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_weakIntegral`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.cayleyMap_weakIntegral`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean#L156).
 
 ```lean
 lemma cayleyMap_weakIntegral {μS : WOTSpectralMeasure ℝ H}
@@ -119,4 +119,4 @@ lemma cayleyMap_weakIntegral {μS : WOTSpectralMeasure ℝ H}
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean)

@@ -1,6 +1,6 @@
 # Notes
 
-The folder [Physlib/Meta/Notes/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Notes): 4 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/Meta/Notes/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Notes): 4 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [Physlib.Meta.Notes.Basic](basic.md)
 - [Physlib.Meta.Notes.HTMLNote](htmlnote.md)

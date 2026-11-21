@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.12 Deformations of completions
 
-Section 93.12 of the Stacks Project, [Tag 0DZ0](https://stacks.math.columbia.edu/tag/0DZ0). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 93.12 of the Stacks Project, [Tag 0DZ0](https://stacks.math.columbia.edu/tag/0DZ0). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DZ1, a lemma
 
 [Tag 0DZ1](https://stacks.math.columbia.edu/tag/0DZ1) in the Stacks Project.
 
-**`Deformation.Examples.DerivedLift.exists_flat_lift_iff_exists_derived_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/DerivedLift.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/BaseChangeIndependence/DerivedLift.lean#L481).
+**`Deformation.Examples.DerivedLift.exists_flat_lift_iff_exists_derived_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/DerivedLift.lean, line 481](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/Tor/BaseChangeIndependence/DerivedLift.lean#L481).
 
 > Over a nilpotent surjection, an `A`-flat module lifts flatly if and only if
 > it admits a bounded-above derived lift.
@@ -53,7 +53,7 @@ public theorem exists_flat_lift_iff_exists_derived_lift
 
 [Tag 0DZ2](https://stacks.math.columbia.edu/tag/0DZ2) in the Stacks Project.
 
-**`Deformation.HasFlatModuleLift.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatModuleLift.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FlatModuleLift.lean#L272). The attribute's comment: “the implication (1) => (2) of 0DZ2, at the source's hypotheses with nothing added; it needs neither the Noetherian hypotheses, nor finiteness of `M`, nor `J'`, nor the local liftability hypothesis. The converse (2) => (1) is false as printed (Stacks erratum, see errata.md): `Deformation.Examples.ArtinSchreier.not_flatModuleLiftBaseChangeStatementFaithful` satisfies every hypothesis of the source and (2) holds there while (1) fails. The corrected equivalence, with `ker(A' → A)^2 = ⊥` and `M` finite over `P` added, is `Deformation.exists_flatModuleLift_iff_baseChange_of_sq_zero`”.
+**`Deformation.HasFlatModuleLift.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatModuleLift.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FlatModuleLift.lean#L272). The attribute's comment: “the implication (1) => (2) of 0DZ2, at the source's hypotheses with nothing added; it needs neither the Noetherian hypotheses, nor finiteness of `M`, nor `J'`, nor the local liftability hypothesis. The converse (2) => (1) is false as printed (Stacks erratum, see errata.md): `Deformation.Examples.ArtinSchreier.not_flatModuleLiftBaseChangeStatementFaithful` satisfies every hypothesis of the source and (2) holds there while (1) fails. The corrected equivalence, with `ker(A' → A)^2 = ⊥` and `M` finite over `P` added, is `Deformation.exists_flatModuleLift_iff_baseChange_of_sq_zero`”.
 
 > **Stacks 0DZ2, forward implication.** In a commuting square of ring maps `P' → Q'`,
 > `P' → P`, `Q' → Q`, `P → Q` whose left vertical map `p` is surjective with nilpotent kernel and
@@ -86,7 +86,7 @@ public theorem HasFlatModuleLift.baseChange
     HasFlatModuleLift ((algebraMap P' Q').comp (algebraMap A' P')) q (Q ⊗[P] M)
 ```
 
-**`Deformation.exists_flatModuleLift_iff_baseChange_of_sq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatModuleLiftBaseChangeAbstract.lean, line 863](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FlatModuleLiftBaseChangeAbstract.lean#L863). The attribute's comment: “corrected form of 0DZ2 (Stacks erratum, see errata.md): the equivalence (1) <=> (2) with the two hypotheses `hzeroA : ker(A' → A)^2 = ⊥` and `Module.Finite P M` added, every other hypothesis being the source's (Noetherianity is asked of `P` alone, flatness of `A → P` and nilpotence of the kernels follow, and `Module.Flat A' Q'` is the composite of `A' → P' → Q'`). As printed, (2) => (1) is false: `Deformation.Examples.ArtinSchreier.not_flatModuleLiftBaseChangeStatementFaithful` satisfies every hypothesis of the source, with `ker(A' → A) = (t)`, `t^3 = 0`, `t^2 ≠ 0` and `M` cyclic, and (1) fails there. So `I^2 = 0` cannot be weakened to `I^3 = 0`; finiteness of `M` is used by the source's own proof at 0A6A. The implication (1) => (2) holds as printed, with no hypothesis added: `Deformation.HasFlatModuleLift.baseChange`”.
+**`Deformation.exists_flatModuleLift_iff_baseChange_of_sq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatModuleLiftBaseChangeAbstract.lean, line 863](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FlatModuleLiftBaseChangeAbstract.lean#L863). The attribute's comment: “corrected form of 0DZ2 (Stacks erratum, see errata.md): the equivalence (1) <=> (2) with the two hypotheses `hzeroA : ker(A' → A)^2 = ⊥` and `Module.Finite P M` added, every other hypothesis being the source's (Noetherianity is asked of `P` alone, flatness of `A → P` and nilpotence of the kernels follow, and `Module.Flat A' Q'` is the composite of `A' → P' → Q'`). As printed, (2) => (1) is false: `Deformation.Examples.ArtinSchreier.not_flatModuleLiftBaseChangeStatementFaithful` satisfies every hypothesis of the source, with `ker(A' → A) = (t)`, `t^3 = 0`, `t^2 ≠ 0` and `M` cyclic, and (1) fails there. So `I^2 = 0` cannot be weakened to `I^3 = 0`; finiteness of `M` is used by the source's own proof at 0A6A. The implication (1) => (2) holds as printed, with no hypothesis added: `Deformation.HasFlatModuleLift.baseChange`”.
 
 > **Stacks 0DZ2, corrected (Stacks erratum).** Let `A' → P' → Q'` lie over `A → P → Q`, with
 > `A' → A`, `P' → P`, `Q' → Q` surjective, `ker(P' → P) = I·P'` and `ker(Q' → Q) = I·Q'` for
@@ -140,7 +140,7 @@ theorem exists_flatModuleLift_iff_baseChange_of_sq_zero
 
 [Tag 0DZ3](https://stacks.math.columbia.edu/tag/0DZ3) in the Stacks Project.
 
-**`Deformation.hasFlatAlgebraLift_iff_hasFlatAlgebraLift_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatAlgebraLiftCompletionNilpotent.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FlatAlgebraLiftCompletionNilpotent.lean#L348). The attribute's comment: “`Spec(B) → Spec(A)` being syntomic on the complement of `V(𝔟)` is read pointwise and affinely: for every prime `𝔮` not containing `𝔟` there is `g ∉ 𝔮` with `A → B_g` syntomic, the characterization of Stacks 00SY and 01UE. `B^∧` is `AdicCompletion 𝔟 B`. The published proof rests on Stacks 0DZ2, which is false at a nilpotent kernel; the proof here approximates a flat lift over the completed presentation by relation solutions over the polynomial presentation and corrects them one power of the kernel at a time (Artin-Rees plus Stacks 07M8 at every level). See the module docstring.”.
+**`Deformation.hasFlatAlgebraLift_iff_hasFlatAlgebraLift_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FlatAlgebraLiftCompletionNilpotent.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FlatAlgebraLiftCompletionNilpotent.lean#L348). The attribute's comment: “`Spec(B) → Spec(A)` being syntomic on the complement of `V(𝔟)` is read pointwise and affinely: for every prime `𝔮` not containing `𝔟` there is `g ∉ 𝔮` with `A → B_g` syntomic, the characterization of Stacks 00SY and 01UE. `B^∧` is `AdicCompletion 𝔟 B`. The published proof rests on Stacks 0DZ2, which is false at a nilpotent kernel; the proof here approximates a flat lift over the completed presentation by relation solutions over the polynomial presentation and corrects them one power of the kernel at a time (Artin-Rees plus Stacks 07M8 at every level). See the module docstring.”.
 
 > **Stacks 0DZ3.** Let `A' → A` be a surjective map of Noetherian rings with nilpotent kernel,
 > let `A → B` be a finite type flat ring map and let `𝔟 ⊆ B` be an ideal such that
@@ -168,7 +168,7 @@ public theorem hasFlatAlgebraLift_iff_hasFlatAlgebraLift_adicCompletion
 
 [Tag 0DZ4](https://stacks.math.columbia.edu/tag/0DZ4) in the Stacks Project.
 
-**`Deformation.Examples.exists_squareZeroAlgebraExtensionClassesCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CompletionFirstOrder.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/CompletionFirstOrder.lean#L1035).
+**`Deformation.Examples.exists_squareZeroAlgebraExtensionClassesCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CompletionFirstOrder.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/CompletionFirstOrder.lean#L1035).
 
 > **Stacks 0DZ4.** For a finite type algebra `B` over a field `k` which is smooth over `k`
 > outside the zero set of an ideal `J`, and a finite `B`-module `N`, completion along `J` is a
@@ -200,7 +200,7 @@ public theorem exists_squareZeroAlgebraExtensionClassesCompletionEquiv
 
 [Tag 0DZ5](https://stacks.math.columbia.edu/tag/0DZ5) in the Stacks Project.
 
-**`Deformation.Examples.isSmooth_and_bijective_differential_adicCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CompletionSmooth.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/CompletionSmooth.lean#L540). The attribute's comment: “both conclusions, at the completion functor `Deformation.Examples.adicCompletionFunctor` of Stacks 0DYV: it is smooth, and its differential on tangent spaces is bijective. The hypotheses are the source's: `P` of finite type over the field `k`, and `P` smooth over `k` at every prime not containing `J`”.
+**`Deformation.Examples.isSmooth_and_bijective_differential_adicCompletionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/CompletionSmooth.lean, line 540](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/Geometric/CompletionSmooth.lean#L540). The attribute's comment: “both conclusions, at the completion functor `Deformation.Examples.adicCompletionFunctor` of Stacks 0DYV: it is smooth, and its differential on tangent spaces is bijective. The hypotheses are the source's: `P` of finite type over the field `k`, and `P` smooth over `k` at every prime not containing `J`”.
 
 > **Stacks 0DZ5.** Let `k` be a field, `P` a finite type `k`-algebra, `J ⊆ P` an ideal such
 > that `Spec(P) → Spec(k)` is smooth on the complement of `V(J)`, and `P^` the `J`-adic
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.12, Tag 0DZ0](https://stacks.math.columbia.edu/tag/0DZ0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The mixed gauge-Higgs sector
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean): 8 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector.Basic`, [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.GaugeHiggsSector
 
 ## A. The mixed gauge-Higgs sector
 
-**`StandardModel.CovAlgebraRealization.commute_of_mem_gaugeAlgebra_of_mem_higgsAlgebra`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L71).
+**`StandardModel.CovAlgebraRealization.commute_of_mem_gaugeAlgebra_of_mem_higgsAlgebra`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L71).
 
 > The gauge algebra and the Higgs algebra commute element-wise.
 
@@ -52,7 +52,7 @@ lemma commute_of_mem_gaugeAlgebra_of_mem_higgsAlgebra {x y : B}
     Commute x y
 ```
 
-**`StandardModel.CovAlgebraRealization.higgsMassWeight_mul_gaugeMassWeight_le`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L92).
+**`StandardModel.CovAlgebraRealization.higgsMassWeight_mul_gaugeMassWeight_le`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L92).
 
 > The Higgs and gauge mass-weight submodules commute past each other.
 
@@ -62,7 +62,7 @@ lemma higgsMassWeight_mul_gaugeMassWeight_le (a b : ℕ) :
       ≤ h.isGaugeSector.massWeightSubmodule b * h.isHiggsSector.massWeightSubmodule a
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_le`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L102).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_le`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L102).
 
 > The mixed gauge-Higgs sector decomposition.
 
@@ -73,7 +73,7 @@ lemma sectorMassWeight_gauge_higgs_le (w : ℕ) :
         h.isGaugeSector.massWeightSubmodule p.1 * h.isHiggsSector.massWeightSubmodule p.2
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_eq_bot_of_lt_six`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L117).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_eq_bot_of_lt_six`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L117).
 
 > The mixed gauge-Higgs sector vanishes below weight `6`.
 
@@ -82,7 +82,7 @@ lemma sectorMassWeight_gauge_higgs_eq_bot_of_lt_six {w : ℕ} (hw : w < 6) :
     h.sectorMassWeight {GeneratorClass.gauge, GeneratorClass.higgs} w = ⊥
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_seven`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L137).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_seven`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L137).
 
 > The mixed gauge-Higgs sector vanishes at weight `7`: both a gauge weight and a
 > Higgs weight are even, so they cannot sum to an odd number.
@@ -92,7 +92,7 @@ lemma sectorMassWeight_gauge_higgs_seven :
     h.sectorMassWeight {GeneratorClass.gauge, GeneratorClass.higgs} 7 = ⊥
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_six`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L159).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_six`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L159).
 
 > **The mixed gauge-Higgs sector at weight `6`** is exactly the product of the
 > underived field strength with the underived Higgs: the only surviving splitting is
@@ -104,7 +104,7 @@ lemma sectorMassWeight_gauge_higgs_six :
       = h.isGaugeSector.derivSubmodule 0 * h.isHiggsSector.derivSubmodule 0
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_le_sectorMassWeight_gauge_higgs`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L198).
+**`StandardModel.CovAlgebraRealization.mul_le_sectorMassWeight_gauge_higgs`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L198).
 
 > A product of a gauge-weight piece and a Higgs-weight piece lands in the mixed
 > sector of the total weight.
@@ -117,7 +117,7 @@ lemma mul_le_sectorMassWeight_gauge_higgs {a b w : ℕ} {X Y : Submodule ℂ B}
     X * Y ≤ h.sectorMassWeight {GeneratorClass.gauge, GeneratorClass.higgs} w
 ```
 
-**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_eight`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L216).
+**`StandardModel.CovAlgebraRealization.sectorMassWeight_gauge_higgs_eight`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean#L216).
 
 > **The mixed gauge-Higgs sector at weight `8`.** The surviving splittings are
 > `4 + 4` and `6 + 2`, giving the field strength against the weight-four Higgs terms
@@ -143,4 +143,4 @@ lemma sectorMassWeight_gauge_higgs_eight :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean)

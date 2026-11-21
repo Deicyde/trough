@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.8 Algebraization of local cohomology, I
 
-Section 52.8 of the Stacks Project, [Tag 0EFF](https://stacks.math.columbia.edu/tag/0EFF). 7 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.8 of the Stacks Project, [Tag 0EFF](https://stacks.math.columbia.edu/tag/0EFF). 7 tags here are carried by 27 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EFG, an equation
 
 [Tag 0EFG](https://stacks.math.columbia.edu/tag/0EFG) in the Stacks Project.
 
-**`Stacks.Algebraization.associatedSubset`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedSubset.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedSubset.lean#L42).
+**`Stacks.Algebraization.associatedSubset`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedSubset.lean, line 42](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedSubset.lean#L42).
 
 > The primes whose specializations in `V(I)` all belong to `V(J) ∩ V(I)`.
 >
@@ -28,7 +28,7 @@ def associatedSubset (I J : Ideal A) : Set (PrimeSpectrum A)
 
 [Tag 0EFH](https://stacks.math.columbia.edu/tag/0EFH) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_notMem_mem_annihilator_homology_derivedCompletion_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorCompletedLocalCohomology.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorCompletedLocalCohomology.lean#L143). The attribute's comment: “the full statement: an element outside `p` annihilating the cohomology of the derived `I`-adic completion of `RΓ_{V(J)}(M)` in every degree `≤ s`”.
+**`Stacks.Algebraization.exists_notMem_mem_annihilator_homology_derivedCompletion_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorCompletedLocalCohomology.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorCompletedLocalCohomology.lean#L143). The attribute's comment: “the full statement: an element outside `p` annihilating the cohomology of the derived `I`-adic completion of `RΓ_{V(J)}(M)` in every degree `≤ s`”.
 
 > Let `I` and `J` be ideals of a Noetherian ring `A` with a dualizing complex, let `M` be a
 > finite `A`-module, and let `p` be a prime outside `V(J) ∩ V(I)` with `cd(A, I) ≤ d`. If
@@ -67,7 +67,7 @@ theorem exists_notMem_mem_annihilator_homology_derivedCompletion_localCohomology
                   (ModuleCat.of A M))))))
 ```
 
-**`Stacks.Algebraization.prod_smul_id_derivedHom_homology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean#L325). The attribute's comment: “the quantitative form of the truncation reduction, with the explicit product of per-degree annihilators”.
+**`Stacks.Algebraization.prod_smul_id_derivedHom_homology_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean#L325). The attribute's comment: “the quantitative form of the truncation reduction, with the explicit product of per-degree annihilators”.
 
 > **The engine.** For `P` concentrated in degrees `≤ d` and `Q` in degrees `≥ a`, the product
 > of scalars annihilating `H^j(Q)` for `a ≤ j ≤ s + d` annihilates `H^i(RHom_A(P, Q))` for every
@@ -85,7 +85,7 @@ public theorem prod_smul_id_derivedHom_homology_eq_zero {A : Type u} [CommRing A
           (Opposite.op P, Q))) = 0
 ```
 
-**`Stacks.Algebraization.exists_notMem_mem_annihilator_homology_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean#L364). The attribute's comment: “the homological-algebra reduction: after the two identifications of the first paragraph, the canonical-truncation argument producing an element outside `p` annihilating `H^i(RHom(P, Q))` for `i ≤ s`”.
+**`Stacks.Algebraization.exists_notMem_mem_annihilator_homology_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean, line 364](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/AnnihilatorTruncationReduction.lean#L364). The attribute's comment: “the homological-algebra reduction: after the two identifications of the first paragraph, the canonical-truncation argument producing an element outside `p` annihilating `H^i(RHom(P, Q))` for `i ≤ s`”.
 
 > **Stacks 0EFH, the homological reduction.** Let `P` have cohomology concentrated in degrees
 > `≤ d` and `Q` in degrees `≥ a`. If for each `j ≤ s + d` some element outside a prime `p`
@@ -107,7 +107,7 @@ public theorem exists_notMem_mem_annihilator_homology_derivedHom {A : Type u} [C
             (Opposite.op P, Q)))
 ```
 
-**`Stacks.LocalCohomology.isLE_localCohomologyDerived_single_of_cohomologicalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L108). The attribute's comment: “the use of hypothesis (3): `H^i(RΓ_I(A)) = 0` for `i > d` when `cd(A, I) ≤ d`”.
+**`Stacks.LocalCohomology.isLE_localCohomologyDerived_single_of_cohomologicalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L108). The attribute's comment: “the use of hypothesis (3): `H^i(RΓ_I(A)) = 0` for `i > d` when `cd(A, I) ≤ d`”.
 
 > A bound `d` on the cohomological dimension of `I` places the local cohomology
 > `RΓ_{V(I)}(M[0])` of Stacks 0A6Q in degrees `≤ d`.
@@ -121,7 +121,7 @@ theorem isLE_localCohomologyDerived_single_of_cohomologicalDimension_le
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj M))).IsLE d
 ```
 
-**`Stacks.LocalCohomology.isGE_localCohomologyDerived_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L152). The attribute's comment: “the boundedness the truncation reduction needs: `RΓ_{V(I)}(M[0])` lies in degrees `≥ 0`”.
+**`Stacks.LocalCohomology.isGE_localCohomologyDerived_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L152). The attribute's comment: “the boundedness the truncation reduction needs: `RΓ_{V(I)}(M[0])` lies in degrees `≥ 0`”.
 
 > The local cohomology `RΓ_{V(I)}(M[0])` of Stacks 0A6Q of a module placed in degree zero lies
 > in degrees `≥ 0`.
@@ -135,7 +135,7 @@ theorem isGE_localCohomologyDerived_single
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj M))).IsGE 0
 ```
 
-**`Stacks.LocalCohomology.exists_notMem_mem_annihilator_localCohomologyWithSupportIn_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L200). The attribute's comment: “the per-degree annihilator input: a single element outside `p` annihilating `H^j_{V(I+J)}(M)` for every `j ≤ s + d`”.
+**`Stacks.LocalCohomology.exists_notMem_mem_annihilator_localCohomologyWithSupportIn_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L200). The attribute's comment: “the per-degree annihilator input: a single element outside `p` annihilating `H^j_{V(I+J)}(M)` for every `j ≤ s + d`”.
 
 > **The per-degree annihilator input of Stacks 0EFH, in the support-indexed model.** For `M`
 > finite over a Noetherian ring `A` with a dualizing complex and `p` a prime outside
@@ -168,7 +168,7 @@ theorem exists_notMem_mem_annihilator_localCohomologyWithSupportIn_sup
           ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) j)
 ```
 
-**`Stacks.LocalCohomology.exists_notMem_mem_annihilator_localCohomologyModule_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L244). The attribute's comment: “the per-degree annihilator input, in the `RΓ_{V(I+J)}` coreflection model”.
+**`Stacks.LocalCohomology.exists_notMem_mem_annihilator_localCohomologyModule_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyAnnihilatorInputs.lean#L244). The attribute's comment: “the per-degree annihilator input, in the `RΓ_{V(I+J)}` coreflection model”.
 
 > **The per-degree annihilator input of Stacks 0EFH, in the coreflection model.** The
 > annihilator of the previous statement, transported to the local cohomology `RΓ_{V(I+J)}` of
@@ -199,7 +199,7 @@ theorem exists_notMem_mem_annihilator_localCohomologyModule_sup
           (ModuleCat.of A M) j)
 ```
 
-**`Stacks.Algebraization.derivedCompletionLocalCohomologySupIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L114). The attribute's comment: “the first identification of the proof: `RΓ_J(-)^∧ = RΓ_{I+J}(-)^∧`, which is what lets `J` be replaced by `I + J`”.
+**`Stacks.Algebraization.derivedCompletionLocalCohomologySupIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L114). The attribute's comment: “the first identification of the proof: `RΓ_J(-)^∧ = RΓ_{I+J}(-)^∧`, which is what lets `J` be replaced by `I + J`”.
 
 > For ideals `I` and `J` of `A` with `I` generated by the finite family `f`, derived `I`-adic
 > completion does not distinguish `RΓ_{V(J)}` from `RΓ_{V(J + I)}`: there is a natural isomorphism
@@ -216,7 +216,7 @@ def derivedCompletionLocalCohomologySupIso (A : Type u) [CommRing A] (I J : Idea
           DerivedCompletion.derivedCompletionFunctor A f
 ```
 
-**`Stacks.Algebraization.derivedCompletionIsoDerivedHomLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L150). The attribute's comment: “the second identification of the proof: derived `I`-adic completion is `RHom` out of `RΓ_{V(I)}(A)`”.
+**`Stacks.Algebraization.derivedCompletionIsoDerivedHomLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L150). The attribute's comment: “the second identification of the proof: derived `I`-adic completion is `RHom` out of `RΓ_{V(I)}(A)`”.
 
 > For a finite family `f` generating `I`, derived `I`-adic completion is derived Hom out of the
 > local cohomology `RΓ_{V(I)}(A)` of the ring: `K^∧ ≅ RHom_A(RΓ_{V(I)}(A), K)`.
@@ -231,7 +231,7 @@ def derivedCompletionIsoDerivedHomLocalCohomology (A : Type u) [CommRing A] (I :
           (ModuleCat.of A A)), K)
 ```
 
-**`Stacks.Algebraization.derivedCompletionIsoDerivedHomDerivedPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L165). The attribute's comment: “the second identification of the proof, written with `RΓ_I(A)` over a Noetherian ring”.
+**`Stacks.Algebraization.derivedCompletionIsoDerivedHomDerivedPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L165). The attribute's comment: “the second identification of the proof, written with `RΓ_I(A)` over a Noetherian ring”.
 
 > Over a Noetherian ring derived `I`-adic completion is derived Hom out of derived `I`-power
 > torsion of the ring: `K^∧ ≅ RHom_A(RΓ_I(A), K)`.
@@ -246,7 +246,7 @@ def derivedCompletionIsoDerivedHomDerivedPowerTorsion (A : Type u) [CommRing A]
           (Ideal.fg_of_isNoetherianRing I) (ModuleCat.of A A)), K)
 ```
 
-**`Stacks.Algebraization.derivedCompletionLocalCohomologyIsoDerivedHomSup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L180). The attribute's comment: “the two identifications of the first paragraph of the proof, composed into the form the truncation reduction consumes”.
+**`Stacks.Algebraization.derivedCompletionLocalCohomologyIsoDerivedHomSup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/LocalCohomologyCompletionComparison.lean#L180). The attribute's comment: “the two identifications of the first paragraph of the proof, composed into the form the truncation reduction consumes”.
 
 > For ideals `I` and `J` of `A` with `I` generated by the finite family `f`, the derived
 > `I`-adic completion of `RΓ_{V(J)}(K)` is `RHom_A(RΓ_{V(I)}(A), RΓ_{V(J + I)}(K))`.
@@ -270,7 +270,7 @@ def derivedCompletionLocalCohomologyIsoDerivedHomSup (A : Type u) [CommRing A] (
 
 [Tag 0EFI](https://stacks.math.columbia.edu/tag/0EFI) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_isStabilizingData_of_nonneg_or_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationExistence/UniformAnnihilation.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationExistence/UniformAnnihilation.lean#L386). The attribute's comment: “corrected statement: the source omits the hypothesis 0 ≤ d ∨ s ≤ 0, without which it is false (Stacks.Algebraization.not\_forall\_exists\_isStabilizingData\_of\_neg)”.
+**`Stacks.Algebraization.exists_isStabilizingData_of_nonneg_or_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationExistence/UniformAnnihilation.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationExistence/UniformAnnihilation.lean#L386). The attribute's comment: “corrected statement: the source omits the hypothesis 0 ≤ d ∨ s ≤ 0, without which it is false (Stacks.Algebraization.not\_forall\_exists\_isStabilizingData\_of\_neg)”.
 
 > **Stacks 0EFI**, in its corrected form. Let `I` and `J` be ideals of a Noetherian ring `A`,
 > let `M` be a finite `A`-module, and let `s` and `d` be integers with `0 ≤ d` or `s ≤ 0`. Under
@@ -301,7 +301,7 @@ public theorem exists_isStabilizingData_of_nonneg_or_nonpos
 
 [Tag 0EFJ](https://stacks.math.columbia.edu/tag/0EFJ) in the Stacks Project.
 
-**`Stacks.Algebraization.finite_localCohomologyModule_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean#L183). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, given the annihilation clause of 0EFI”.
+**`Stacks.Algebraization.finite_localCohomologyModule_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean, line 183](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean#L183). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, given the annihilation clause of 0EFI”.
 
 > **Stacks 0EFJ.** Under hypothesis (2') the local cohomology of `M` supported in the
 > stabilizing ideal `J₀` of Stacks 0EFI is a finite `A`-module in every degree `i ≤ s`.
@@ -327,7 +327,7 @@ public theorem finite_localCohomologyModule_stabilizingIdeal
         (ModuleCat.of A M) i)
 ```
 
-**`Stacks.Algebraization.finite_localCohomologyModule_stabilizingIdeal_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean#L227). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, for 0 ≤ d”.
+**`Stacks.Algebraization.finite_localCohomologyModule_stabilizingIdeal_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFiniteness.lean#L227). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, for 0 ≤ d”.
 
 > **Stacks 0EFJ.** Under hypotheses (1), (3), (4) of Stacks 0EFI together with hypothesis (2')
 > in place of its empty hypothesis (2), the local cohomology of `M` supported in the stabilizing
@@ -351,7 +351,7 @@ public theorem finite_localCohomologyModule_stabilizingIdeal_of_nonneg
         (ModuleCat.of A M) i)
 ```
 
-**`Stacks.Algebraization.IsStabilizingData.finite_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFinitenessGeneral.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFinitenessGeneral.lean#L82). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, for every ideal J₀ with the conclusions of 0EFI”.
+**`Stacks.Algebraization.IsStabilizingData.finite_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFinitenessGeneral.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationFinitenessGeneral.lean#L82). The attribute's comment: “H^i\_\{J₀}(M) is a finite A-module for i ≤ s, for every ideal J₀ with the conclusions of 0EFI”.
 
 > **Stacks 0EFJ.** Let `A` be a Noetherian ring with a dualizing complex `omega`, let `I`, `J`
 > be ideals, `M` a finite `A`-module and `s` an integer, and assume hypothesis (2'): for
@@ -381,7 +381,7 @@ public theorem IsStabilizingData.finite_localCohomologyModule {I J J₀ : Ideal 
 
 [Tag 0EFK](https://stacks.math.columbia.edu/tag/0EFK) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_homologyMap_localCohomologyComparison_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L290). The attribute's comment: “H^i\_\{J₀}(M) = H^i\_J(M) for i ≤ s”.
+**`Stacks.Algebraization.isIso_homologyMap_localCohomologyComparison_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L290). The attribute's comment: “H^i\_\{J₀}(M) = H^i\_J(M) for i ≤ s”.
 
 > Under hypothesis (6) of Stacks 0EFK the local cohomology of `M` supported in the stabilizing
 > ideal `J₀` of Stacks 0EFI agrees with the local cohomology supported in `J` in all degrees
@@ -398,7 +398,7 @@ public theorem isIso_homologyMap_localCohomologyComparison_stabilizingIdeal
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M))))
 ```
 
-**`Stacks.Algebraization.isIso_homologyMap_localCohomologyComparison_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L315). The attribute's comment: “H^i\_J(M) = H^i\_\{J + I}(M) for i ≤ s”.
+**`Stacks.Algebraization.isIso_homologyMap_localCohomologyComparison_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L315). The attribute's comment: “H^i\_J(M) = H^i\_\{J + I}(M) for i ≤ s”.
 
 > Under hypothesis (6) of Stacks 0EFK the local cohomology of `M` supported in `J` agrees
 > with the local cohomology supported in `J + I` in all degrees `i ≤ s`.
@@ -412,7 +412,7 @@ public theorem isIso_homologyMap_localCohomologyComparison_sup
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M))))
 ```
 
-**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L330). The attribute's comment: “H^i\_\{J + I}(M) is annihilated by a power of I for i ≤ s”.
+**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_sup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L330). The attribute's comment: “H^i\_\{J + I}(M) is annihilated by a power of I for i ≤ s”.
 
 > Under hypothesis (6) of Stacks 0EFK a single power of `I` annihilates `H^i_{J + I}(M)` in
 > every degree `i ≤ s`.
@@ -426,7 +426,7 @@ public theorem exists_pow_le_annihilator_localCohomologyModule_sup
           (ModuleCat.of A M) i)
 ```
 
-**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L384). The attribute's comment: “H^i\_\{J₀}(M) is annihilated by a power of I for i ≤ s”.
+**`Stacks.Algebraization.exists_pow_le_annihilator_localCohomologyModule_stabilizingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/StabilizationDepthCollapse.lean#L384). The attribute's comment: “H^i\_\{J₀}(M) is annihilated by a power of I for i ≤ s”.
 
 > Under hypothesis (6) of Stacks 0EFK a single power of `I` annihilates the local cohomology
 > of `M` supported in the stabilizing ideal `J₀` of Stacks 0EFI, in every degree `i ≤ s`.
@@ -445,7 +445,7 @@ public theorem exists_pow_le_annihilator_localCohomologyModule_stabilizingIdeal
 
 [Tag 0EFL](https://stacks.math.columbia.edu/tag/0EFL) in the Stacks Project.
 
-**`Stacks.Algebraization.isAlgebraizationIdeal_of_zeroLocus_inter_eq_empty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean#L936). The attribute's comment: “existence of J₀ in the case V(J) ∩ V(I) = ∅, which the δmax and δmin fields of AlgebraizationHypotheses exclude and the source does not: the source's condition (5), the only one naming δ, is guarded by V(𝔭) ∩ V(J) ∩ V(I) ≠ ∅ and so is vacuous here. J₀ = J serves, for every s and on I-adic completeness alone. With exists\_isAlgebraizationIdeal, which is the nonempty case, this covers the tag”.
+**`Stacks.Algebraization.isAlgebraizationIdeal_of_zeroLocus_inter_eq_empty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean, line 936](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean#L936). The attribute's comment: “existence of J₀ in the case V(J) ∩ V(I) = ∅, which the δmax and δmin fields of AlgebraizationHypotheses exclude and the source does not: the source's condition (5), the only one naming δ, is guarded by V(𝔭) ∩ V(J) ∩ V(I) ≠ ∅ and so is vacuous here. J₀ = J serves, for every s and on I-adic completeness alone. With exists\_isAlgebraizationIdeal, which is the nonempty case, this covers the tag”.
 
 > **Stacks 0EFL when `V(J) ∩ V(I)` is empty.** For an `I`-adically complete Noetherian ring and
 > ideals with `V(J) ∩ V(I) = ∅`, the ideal `J` itself has the property asserted of `J₀`, in every
@@ -470,7 +470,7 @@ public theorem isAlgebraizationIdeal_of_zeroLocus_inter_eq_empty
     IsAlgebraizationIdeal (M := M) I J s J
 ```
 
-**`Stacks.Algebraization.exists_isAlgebraizationIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean, line 979](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean#L979). The attribute's comment: “existence of J₀ in the case V(J) ∩ V(I) ≠ ∅, which is what the δmax and δmin fields of AlgebraizationHypotheses presuppose; the empty case, where the source's condition (5) is vacuous, is isAlgebraizationIdeal\_of\_zeroLocus\_inter\_eq\_empty, and the two together are the tag. The dualizing complex is taken in the ring's own module universe”.
+**`Stacks.Algebraization.exists_isAlgebraizationIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean, line 979](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparison.lean#L979). The attribute's comment: “existence of J₀ in the case V(J) ∩ V(I) ≠ ∅, which is what the δmax and δmin fields of AlgebraizationHypotheses presuppose; the empty case, where the source's condition (5) is vacuous, is isAlgebraizationIdeal\_of\_zeroLocus\_inter\_eq\_empty, and the two together are the tag. The dualizing complex is taken in the ring's own module universe”.
 
 > **Stacks 0EFL.** Let `I` and `J` be ideals of a Noetherian ring `A`, let `M` be a finite
 > `A`-module and let `s` and `d` be integers. Under conditions (1), (3), (4) and (5)
@@ -498,7 +498,7 @@ public theorem exists_isAlgebraizationIdeal
     ∃ J₀ : Ideal A, IsAlgebraizationIdeal (M := M) I J s J₀
 ```
 
-**`Stacks.Algebraization.exists_isAlgebraizationIdeal_of_sourceHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparisonSource.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparisonSource.lean#L73).
+**`Stacks.Algebraization.exists_isAlgebraizationIdeal_of_sourceHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparisonSource.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationComparisonSource.lean#L73).
 
 > **Stacks 0EFL.** Let `I, J` be ideals of a Noetherian ring `A`, let `M` be a finite
 > `A`-module, let `s, d` be integers, and let `T = {𝔭 : V(𝔭) ∩ V(I) ⊆ V(J) ∩ V(I)}`. Assume
@@ -584,7 +584,7 @@ public theorem exists_isAlgebraizationIdeal_of_sourceHypotheses (I J : Ideal A) 
 
 [Tag 0EFM](https://stacks.math.columbia.edu/tag/0EFM) in the Stacks Project.
 
-**`Stacks.Algebraization.MittagLefflerFailure.pow_mul_pow_mem_modIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L314). The attribute's comment: “the containment `(yⁿ) ⊆` the image: `xⁿyⁿ = pⁿ` in `M`”.
+**`Stacks.Algebraization.MittagLefflerFailure.pow_mul_pow_mem_modIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L314). The attribute's comment: “the containment `(yⁿ) ⊆` the image: `xⁿyⁿ = pⁿ` in `M`”.
 
 > `xⁿyⁿ = pⁿ` in `M`, so `xⁿyⁿ` lies in `(xy - p, pⁿ)`.
 
@@ -592,7 +592,7 @@ public theorem exists_isAlgebraizationIdeal_of_sourceHypotheses (I J : Ideal A) 
 theorem pow_mul_pow_mem_modIdeal (n : ℕ) : varX p ^ n * varY p ^ n ∈ modIdeal p n
 ```
 
-**`Stacks.Algebraization.MittagLefflerFailure.mem_span_of_pow_mul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L401). The attribute's comment: “the containment image `⊆ (yⁿ)`: an `x`-power-torsion element mod `(xy - p, pⁿ)` lies in `(p, xy, yⁿ)`”.
+**`Stacks.Algebraization.MittagLefflerFailure.mem_span_of_pow_mul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L401). The attribute's comment: “the containment image `⊆ (yⁿ)`: an `x`-power-torsion element mod `(xy - p, pⁿ)` lies in `(p, xy, yⁿ)`”.
 
 > **The `x`-power-torsion of `A/(xy - p, pⁿ⁺¹)` is carried by `(xy - p, yⁿ⁺¹)`.** If
 > `x^k f ∈ (xy - p, pⁿ⁺¹)` then `f ∈ (p, xy, yⁿ⁺¹)`.
@@ -604,7 +604,7 @@ theorem mem_span_of_pow_mul_mem (n k : ℕ) (f : MvPowerSeries (Fin 2) ℤ_[p])
       varY p ^ (n + 1)}
 ```
 
-**`Stacks.Algebraization.MittagLefflerFailure.imageSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L458). The attribute's comment: “the example: the image of `H⁰_J(M/pⁿM) ⟶ H⁰_J(M/pM)` is the ideal generated by `yⁿ` in `M/pM = A/(p, xy)`, for `A = ℤ_p[[x,y]]`, `I = (p)`, `J = (p, x)` and `M = A/(xy - p)`”.
+**`Stacks.Algebraization.MittagLefflerFailure.imageSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 458](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L458). The attribute's comment: “the example: the image of `H⁰_J(M/pⁿM) ⟶ H⁰_J(M/pM)` is the ideal generated by `yⁿ` in `M/pM = A/(p, xy)`, for `A = ℤ_p[[x,y]]`, `I = (p)`, `J = (p, x)` and `M = A/(xy - p)`”.
 
 > **Stacks 0EFM.** The image of `H⁰_J(M/pⁿM) → H⁰_J(M/pM)` is the ideal generated by `yⁿ` in
 > `M/pM = A/(p, xy)`, for `A = ℤ_p[[x, y]]`, `I = (p)`, `J = (p, x)` and `M = A/(xy - p)`.
@@ -615,7 +615,7 @@ theorem imageSections_eq (n : ℕ) :
       (Ideal.span {Ideal.Quotient.mk (modIdeal p 1) (varY p ^ (n + 1))})
 ```
 
-**`Stacks.Algebraization.MittagLefflerFailure.not_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L514). The attribute's comment: “the point of the example: the inverse system `H⁰_J(M/pⁿM)` does NOT satisfy the Mittag-Leffler condition, so the hypothesis of Lemma 0EFL cannot be dropped”.
+**`Stacks.Algebraization.MittagLefflerFailure.not_mittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean, line 514](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationMittagLefflerFailure.lean#L514). The attribute's comment: “the point of the example: the inverse system `H⁰_J(M/pⁿM)` does NOT satisfy the Mittag-Leffler condition, so the hypothesis of Lemma 0EFL cannot be dropped”.
 
 > **The inverse system `n ↦ H⁰_J(M/pⁿM)` is not Mittag-Leffler.** The images of its transition
 > maps into `H⁰_J(M/pM)` never stabilise.
@@ -632,4 +632,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.8, Tag 0EFF](https://stacks.math.columbia.edu/tag/0EFF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

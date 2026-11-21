@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.52 Closed points in fibres
 
-Section 37.52 of the Stacks Project, [Tag 053Q](https://stacks.math.columbia.edu/tag/053Q). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.52 of the Stacks Project, [Tag 053Q](https://stacks.math.columbia.edu/tag/053Q). 9 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 053R, a lemma
 
 [Tag 053R](https://stacks.math.columbia.edu/tag/053R) in the Stacks Project.
 
-**`Stacks.Divisors.fiber_support_eq_union_irreducibleComponents_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean#L355).
+**`Stacks.Divisors.fiber_support_eq_union_irreducibleComponents_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean#L355).
 
 > **Stacks 053R.** Let `f : X ⟶ S` be a dominant morphism locally of finite type between
 > irreducible schemes, let `I` be a locally principal ideal sheaf on `X` whose closed subscheme
@@ -43,7 +43,7 @@ public theorem fiber_support_eq_union_irreducibleComponents_general {X S : Schem
         C ⊆ (f.fiberι s) ⁻¹' (I.support : Set X)}
 ```
 
-**`Stacks.Divisors.fiber_support_eq_union_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/LocallyPrincipalSupport.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/LocallyPrincipalSupport.lean#L180). The attribute's comment: “the locally Noetherian case, the form in which Krull's principal ideal theorem applies to `f` directly. The statement without `[IsLocallyNoetherian X]`, which is the source's own, is `Stacks.Divisors.fiber_support_eq_union_irreducibleComponents_general` in `StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean:352`; it applies this one to a finitely generated ℤ-algebra that the affine situation descends to, by `StacksFrontier.AlgebraicGeometry.FibreDimension.AffineGeneralCase`.”.
+**`Stacks.Divisors.fiber_support_eq_union_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/LocallyPrincipalSupport.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/LocallyPrincipalSupport.lean#L180). The attribute's comment: “the locally Noetherian case, the form in which Krull's principal ideal theorem applies to `f` directly. The statement without `[IsLocallyNoetherian X]`, which is the source's own, is `Stacks.Divisors.fiber_support_eq_union_irreducibleComponents_general` in `StacksFrontier/AlgebraicGeometry/FibreDimension/GeneralCase.lean:352`; it applies this one to a finitely generated ℤ-algebra that the affine situation descends to, by `StacksFrontier.AlgebraicGeometry.FibreDimension.AffineGeneralCase`.”.
 
 > **Stacks 053R, the Noetherian case.** Let `f : X ⟶ S` be a dominant morphism locally of
 > finite type between irreducible schemes with `X` locally Noetherian, let `I` be a locally
@@ -68,7 +68,7 @@ public theorem fiber_support_eq_union_irreducibleComponents {X S : Scheme.{u}} (
 
 [Tag 053S](https://stacks.math.columbia.edu/tag/053S) in the Stacks Project.
 
-**`IsLocalRing.injective_quotient_of_dimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RelativeDimension/HorizontalDivisor.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RelativeDimension/HorizontalDivisor.lean#L471).
+**`IsLocalRing.injective_quotient_of_dimension_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RelativeDimension/HorizontalDivisor.lean, line 471](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/RelativeDimension/HorizontalDivisor.lean#L471).
 
 > **Stacks 053S.** Let `A ⊆ B` be an injective local homomorphism of local domains with `B`
 > essentially of finite type over `A`, and let `g ∈ 𝔪_B` lie in no minimal prime over `𝔪_A B`. If
@@ -96,7 +96,7 @@ public theorem injective_quotient_of_dimension_add_trdeg_eq
 
 [Tag 053T](https://stacks.math.columbia.edu/tag/053T) in the Stacks Project.
 
-**`IsLocalRing.ringKrullDim_closedFiber_add_trdeg_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RelativeDimension/FlatLocalExtension.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RelativeDimension/FlatLocalExtension.lean#L399). References: EGA IV (5.5.7), “field base”.
+**`IsLocalRing.ringKrullDim_closedFiber_add_trdeg_eq_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RelativeDimension/FlatLocalExtension.lean, line 399](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/RelativeDimension/FlatLocalExtension.lean#L399). References: EGA IV (5.5.7), “field base”.
 
 > The dimension of the closed fibre of an injective flat essentially finite type local
 > extension of domains, plus the residue-field transcendence degree, is the transcendence
@@ -121,7 +121,7 @@ public theorem ringKrullDim_closedFiber_add_trdeg_eq_trdeg
 
 [Tag 053U](https://stacks.math.columbia.edu/tag/053U) in the Stacks Project.
 
-**`AlgebraicGeometry.closure_closedPoints_between_fiber_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ClosedPointsBetweenInFibres.lean, line 1752](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ClosedPointsBetweenInFibres.lean#L1752). The attribute's comment: “the density conclusion of the tag, under the tag's own hypotheses — `f` locally of finite type, `x ⤳ x'`, `x'` closed in `X_{f x'}` — together with its exact range of validity: the points of `X_s` closed in `X_s` and lying between `x` and `x'` are dense in the closure of `x` in `X_s` if and only if `x = x'` or `f x ≠ f x'`. The reverse implication is the tag itself, proved by the argument of the source in `closure_closedPoints_between_fiber_eq`; the forward implication disposes of the only remaining situation, a nontrivial specialization inside one fibre, where the tag's set is the single closed point `x'` and the density is false — a gap in the source's statement, computed in `closure_closedPoints_between_fiber_subset_singleton_of_eq_base` and respected by the source's own proof.”.
+**`AlgebraicGeometry.closure_closedPoints_between_fiber_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ClosedPointsBetweenInFibres.lean, line 1752](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/ClosedPointsBetweenInFibres.lean#L1752). The attribute's comment: “the density conclusion of the tag, under the tag's own hypotheses — `f` locally of finite type, `x ⤳ x'`, `x'` closed in `X_{f x'}` — together with its exact range of validity: the points of `X_s` closed in `X_s` and lying between `x` and `x'` are dense in the closure of `x` in `X_s` if and only if `x = x'` or `f x ≠ f x'`. The reverse implication is the tag itself, proved by the argument of the source in `closure_closedPoints_between_fiber_eq`; the forward implication disposes of the only remaining situation, a nontrivial specialization inside one fibre, where the tag's set is the single closed point `x'` and the density is false — a gap in the source's statement, computed in `closure_closedPoints_between_fiber_subset_singleton_of_eq_base` and respected by the source's own proof.”.
 
 > **Stacks 053U**, under the hypotheses of the tag and no others. Let `f : X ⟶ S` be locally
 > of finite type, let `x ⤳ x'` be a specialization in `X` with `x'` closed in its fibre
@@ -158,7 +158,7 @@ public theorem closure_closedPoints_between_fiber_eq_iff
 
 [Tag 053V](https://stacks.math.columbia.edu/tag/053V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_isClosed_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L118). The attribute's comment: “the chain of immediate specializations inside the fibre, of length `d`, ending in a closed point of the fibre, together with the avoidance clause, and with nothing assumed about a prescribed `x'`. The final link `x_d ⤳ x'` to a prescribed `x'` with `x ⤳ x'` closed in its own fibre is not in this file, which never mentions `x'`; it is `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_of_isClosed` in `StacksFrontier.AlgebraicGeometry.Morphisms.Fibres.SpecializationChainToClosedSpecialization`, where `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff` states every assertion of the remark at once, at the hypotheses of the tag, together with the exact range of validity of the remark.”.
+**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_isClosed_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L118). The attribute's comment: “the chain of immediate specializations inside the fibre, of length `d`, ending in a closed point of the fibre, together with the avoidance clause, and with nothing assumed about a prescribed `x'`. The final link `x_d ⤳ x'` to a prescribed `x'` with `x ⤳ x'` closed in its own fibre is not in this file, which never mentions `x'`; it is `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_of_isClosed` in `StacksFrontier.AlgebraicGeometry.Morphisms.Fibres.SpecializationChainToClosedSpecialization`, where `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff` states every assertion of the remark at once, at the hypotheses of the tag, together with the exact range of validity of the remark.”.
 
 > **Stacks 053V**, the chain of immediate specializations inside the fibre, together with the
 > avoidance clause. For `f` locally of finite type and `W` a closed subset of the fibre `X_{f x}`
@@ -181,7 +181,7 @@ theorem exists_chain_isImmediateSpecialization_isClosed_fiber
       ∀ i, c i ∉ W
 ```
 
-**`AlgebraicGeometry.natTrdegFiber_eq_topologicalKrullDim_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L156). The attribute's comment: “the equality of `d` with the dimension of the closure of `x` in the fibre”.
+**`AlgebraicGeometry.natTrdegFiber_eq_topologicalKrullDim_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L156). The attribute's comment: “the equality of `d` with the dimension of the closure of `x` in the fibre”.
 
 > **Stacks 053V**, the identity `d = dim(closure of {x})`, the closure being taken in the
 > fibre `X_{f x}`.
@@ -193,7 +193,7 @@ theorem natTrdegFiber_eq_topologicalKrullDim_closure (f : X ⟶ S) [LocallyOfFin
       topologicalKrullDim (closure ({f.asFiber x} : Set (f.fiber (f x))))
 ```
 
-**`AlgebraicGeometry.natTrdegFiber_eq_toNat_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L239). The attribute's comment: “the equality of the length `d` of the chain with the transcendence degree `trdeg_{κ(s)}(κ(x))`”.
+**`AlgebraicGeometry.natTrdegFiber_eq_toNat_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean, line 239](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainInFibre.lean#L239). The attribute's comment: “the equality of the length `d` of the chain with the transcendence degree `trdeg_{κ(s)}(κ(x))`”.
 
 > **Stacks 053V**, the identity `d = trdeg_{κ(s)}(κ(x))`: the integer produced by
 > `AlgebraicGeometry.natTrdegFiber` is the transcendence degree of the residue field of `X` at `x`
@@ -206,7 +206,7 @@ theorem natTrdegFiber_eq_toNat_trdeg_residueField (f : X ⟶ S) (x : X) :
       Cardinal.toNat (Algebra.trdeg (S.residueField (f x)) (X.residueField x))
 ```
 
-**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean#L273). The attribute's comment: “the chain of immediate specializations inside the fibre, of length `d`, ending in a closed point of the fibre which specializes to the prescribed `x'` — unconditionally, the avoidance clause aside. The remark as a whole, avoidance clause included, is `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff` above, which states it at the hypotheses of the tag together with its exact range of validity”.
+**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean#L273). The attribute's comment: “the chain of immediate specializations inside the fibre, of length `d`, ending in a closed point of the fibre which specializes to the prescribed `x'` — unconditionally, the avoidance clause aside. The remark as a whole, avoidance clause included, is `AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff` above, which states it at the hypotheses of the tag together with its exact range of validity”.
 
 > **Stacks 053V without its avoidance clause**, and with no hypothesis added to the tag. For
 > `f` locally of finite type and `x ⤳ x'` with `x'` closed in its own fibre there is a chain
@@ -234,7 +234,7 @@ public theorem exists_chain_isImmediateSpecialization_specializes_fiber_of_isClo
       f.fiberι (f x) (c (Fin.last (natTrdegFiber f x))) ⤳ x'
 ```
 
-**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean#L338). The attribute's comment: “EVERY assertion of the remark at once — the chain of `d` immediate specializations inside the fibre, its last term closed in the fibre, the final link `x_d ⤳ x'`, the avoidance of any closed subset of the fibre which misses `x`, and `d = natTrdegFiber f x` — under the tag's own hypotheses, namely `f` locally of finite type, `x ⤳ x'` and `x'` closed in `X_{f x'}`, together with its exact range of validity: all of that holds if and only if `x = x'` or `f x ≠ f x'`. The reverse implication is the remark itself, by the argument of the source in `exists_chain_isImmediateSpecialization_specializes_fiber`; the forward implication disposes of the one remaining situation, a nontrivial specialization inside a single fibre, where `{x'}` is a closed subset of the fibre missing `x` which the last term of the chain cannot avoid, since a closed point specializing to `x'` is `x'`. That is the gap inherited from Stacks 053U, recorded there in `closure_closedPoints_between_fiber_eq_iff`, and respected by the source's own proof.”.
+**`AlgebraicGeometry.exists_chain_isImmediateSpecialization_specializes_fiber_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/SpecializationChainToClosedSpecialization.lean#L338). The attribute's comment: “EVERY assertion of the remark at once — the chain of `d` immediate specializations inside the fibre, its last term closed in the fibre, the final link `x_d ⤳ x'`, the avoidance of any closed subset of the fibre which misses `x`, and `d = natTrdegFiber f x` — under the tag's own hypotheses, namely `f` locally of finite type, `x ⤳ x'` and `x'` closed in `X_{f x'}`, together with its exact range of validity: all of that holds if and only if `x = x'` or `f x ≠ f x'`. The reverse implication is the remark itself, by the argument of the source in `exists_chain_isImmediateSpecialization_specializes_fiber`; the forward implication disposes of the one remaining situation, a nontrivial specialization inside a single fibre, where `{x'}` is a closed subset of the fibre missing `x` which the last term of the chain cannot avoid, since a closed point specializing to `x'` is `x'`. That is the gap inherited from Stacks 053U, recorded there in `closure_closedPoints_between_fiber_eq_iff`, and respected by the source's own proof.”.
 
 > **Stacks 053V, under the hypotheses of the tag and no others.** Let `f : X ⟶ S` be locally
 > of finite type, let `x ⤳ x'` be a specialization in `X` with `x'` closed in its own fibre
@@ -288,7 +288,7 @@ public theorem exists_chain_isImmediateSpecialization_specializes_fiber_iff
 
 [Tag 05GT](https://stacks.math.columbia.edu/tag/05GT) in the Stacks Project.
 
-**`Stacks.ClosedPointsFibre.exists_quotient_isLocalization_quasiFinite_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/LocalRing.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/LocalRing.lean#L55).
+**`Stacks.ClosedPointsFibre.exists_quotient_isLocalization_quasiFinite_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/LocalRing.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/LocalRing.lean#L55).
 
 > An open of the spectrum of an essentially finite type local algebra which meets the
 > complement of the closed fibre contains a prime whose quotient is a localization of a
@@ -319,7 +319,7 @@ theorem exists_quotient_isLocalization_quasiFinite_of_isOpen
 
 [Tag 05GU](https://stacks.math.columbia.edu/tag/05GU) in the Stacks Project.
 
-**`Stacks.ClosedPointsFibre.exists_closedSubscheme_quasiFiniteAt_meeting_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean#L70).
+**`Stacks.ClosedPointsFibre.exists_closedSubscheme_quasiFiniteAt_meeting_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean, line 70](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean#L70).
 
 > Let `f : X ⟶ S` be locally of finite type with `S` locally Noetherian, and let `x` be closed
 > in its fibre. If some point of the open `U` specializes to `x` and lies over a point other than
@@ -342,7 +342,7 @@ theorem exists_closedSubscheme_quasiFiniteAt_meeting_open
 
 [Tag 05GV](https://stacks.math.columbia.edu/tag/05GV) in the Stacks Project.
 
-**`AlgebraicGeometry.closure_closedPoints_between_fiber_eq_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/DenseClosedPoints.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/DenseClosedPoints.lean#L231). The attribute's comment: “the theorem the remark asserts, by the route it sketches; the hypothesis `f x ≠ f x'` (or `x = x'`) is added, Stacks 053U being false without it”.
+**`AlgebraicGeometry.closure_closedPoints_between_fiber_eq_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/DenseClosedPoints.lean, line 231](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/DenseClosedPoints.lean#L231). The attribute's comment: “the theorem the remark asserts, by the route it sketches; the hypothesis `f x ≠ f x'` (or `x = x'`) is added, Stacks 053U being false without it”.
 
 > **Stacks 053U for a locally Noetherian base.** For `f : X ⟶ S` locally of finite type with
 > `S` locally Noetherian, `x ⤳ x'` with `x'` closed in its fibre and `f x ≠ f x'` (or `x = x'`),
@@ -363,7 +363,7 @@ public theorem closure_closedPoints_between_fiber_eq_of_isLocallyNoetherian {X S
 
 [Tag 05GW](https://stacks.math.columbia.edu/tag/05GW) in the Stacks Project.
 
-**`Stacks.ClosedPointsFibre.exists_closedSubscheme_quasiFiniteAt_meeting_open_of_mem_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean#L259).
+**`Stacks.ClosedPointsFibre.exists_closedSubscheme_quasiFiniteAt_meeting_open_of_mem_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ClosedPointsFibre/ClosedSubscheme.lean#L259).
 
 > Let `f : X ⟶ S` be locally of finite type with `S` locally Noetherian, and let `x` be closed
 > in its fibre. If `x` lies in the closure of an open `U` no point of which lies over `f x`, then
@@ -390,4 +390,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.52, Tag 053Q](https://stacks.math.columbia.edu/tag/053Q)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.15 Miniversal formal objects and tangent spaces
 
-Section 90.15 of the Stacks Project, [Tag 06IL](https://stacks.math.columbia.edu/tag/06IL). 10 tags here are carried by 31 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 90.15 of the Stacks Project, [Tag 06IL](https://stacks.math.columbia.edu/tag/06IL). 10 tags here are carried by 31 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06IM, an equation
 
 [Tag 06IM](https://stacks.math.columbia.edu/tag/06IM) in the Stacks Project.
 
-**`Deformation.HasBijectiveDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/BijectiveDifferential.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/BijectiveDifferential.lean#L98).
+**`Deformation.HasBijectiveDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/BijectiveDifferential.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/TangentSpace/BijectiveDifferential.lean#L98).
 
 > **Stacks Project, Tag 06IM.** The differential of the morphism associated
 > to a formal object is bijective from `Λ`-derivations to its tangent space.
@@ -29,7 +29,7 @@ public def HasBijectiveDifferential
 
 [Tag 06T6](https://stacks.math.columbia.edu/tag/06T6) in the Stacks Project.
 
-**`Deformation.HasBijectiveDifferentialOnDerivationOrbits`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L101). The attribute's comment: “the condition, as a predicate on formal objects”.
+**`Deformation.HasBijectiveDifferentialOnDerivationOrbits`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L101). The attribute's comment: “the condition, as a predicate on formal objects”.
 
 > **Stacks Project, Tag 06T6,** the condition itself. The differential of a formal object is a
 > well-defined, equivariant map from derivations of its underlying algebra to the tangent space,
@@ -43,7 +43,7 @@ public noncomputable def HasBijectiveDifferentialOnDerivationOrbits
     (hp : IsPredeformationCategory p) (ξ : FormalObject p) : Prop
 ```
 
-**`Deformation.hasBijectiveDifferentialOnDerivationOrbits_of_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbitsOfBijective.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/DerivationOrbitsOfBijective.lean#L61). The attribute's comment: “the condition holds for a formal object with bijective differential”.
+**`Deformation.hasBijectiveDifferentialOnDerivationOrbits_of_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbitsOfBijective.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/DerivationOrbitsOfBijective.lean#L61). The attribute's comment: “the condition holds for a formal object with bijective differential”.
 
 > **Stacks Project, Tag 06T6.** The condition holds for a formal object whose differential is
 > bijective: the differential of such an object is a well-defined, equivariant and surjective map
@@ -58,7 +58,7 @@ public theorem hasBijectiveDifferentialOnDerivationOrbits_of_hasBijectiveDiffere
     HasBijectiveDifferentialOnDerivationOrbits.{u, v, w} p hp ξ
 ```
 
-**`Deformation.minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean#L703). The attribute's comment: “the condition holds for a minimal versal formal object”.
+**`Deformation.minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean#L703). The attribute's comment: “the condition holds for a minimal versal formal object”.
 
 > The differential of a minimal versal formal object of a predeformation category satisfying
 > Schlessinger's condition (S2) is well defined, surjective and equivariant, and induces a
@@ -79,7 +79,7 @@ public theorem minimalVersal_hasBijectiveDifferentialOnDerivationOrbits
 
 [Tag 06IR](https://stacks.math.columbia.edu/tag/06IR) in the Stacks Project.
 
-**`Deformation.isMinimalVersal_of_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean#L146). The attribute's comment: “minimality”.
+**`Deformation.isMinimalVersal_of_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean#L146). The attribute's comment: “minimality”.
 
 > A versal formal object of a predeformation category whose
 > differential is bijective on derivation orbits is a minimal versal formal object.
@@ -91,7 +91,7 @@ public theorem isMinimalVersal_of_hasBijectiveDifferentialOnDerivationOrbits
     IsMinimalVersal hp.cofibered ξ
 ```
 
-**`Deformation.isomorphic_of_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean#L212). The attribute's comment: “uniqueness”. References: SGA 7 VI (1.20), “uniqueness”.
+**`Deformation.isomorphic_of_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/DerivationOrbitCriterion.lean#L212). The attribute's comment: “uniqueness”. References: SGA 7 VI (1.20), “uniqueness”.
 
 > Any two versal formal objects whose differentials are bijective on derivation orbits are
 > isomorphic.
@@ -109,7 +109,7 @@ public theorem isomorphic_of_hasBijectiveDifferentialOnDerivationOrbits
 
 [Tag 06IV](https://stacks.math.columbia.edu/tag/06IV) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L410). The attribute's comment: “part (1): condition (S1)”.
+**`Deformation.schlessingerConditionS1_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L410). The attribute's comment: “part (1): condition (S1)”.
 
 > A versal formal object with bijective differential forces Schlessinger's
 > condition (S1). The bijectivity of the differential is not used.
@@ -126,7 +126,7 @@ public theorem schlessingerConditionS1_of_versal_bijectiveDifferential
     Deformation.SchlessingerConditionS1 p
 ```
 
-**`Deformation.schlessingerConditionS2_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L424). The attribute's comment: “part (2): condition (S2)”.
+**`Deformation.schlessingerConditionS2_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L424). The attribute's comment: “part (2): condition (S2)”.
 
 > A versal formal object with bijective differential forces Schlessinger's
 > condition (S2).
@@ -143,7 +143,7 @@ public theorem schlessingerConditionS2_of_versal_bijectiveDifferential
     Deformation.SchlessingerConditionS2 p
 ```
 
-**`Deformation.finiteDimensional_tangentSpace_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L729). The attribute's comment: “part (3): finite-dimensional tangent space”.
+**`Deformation.finiteDimensional_tangentSpace_of_versal_bijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 729](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L729). The attribute's comment: “part (3): finite-dimensional tangent space”.
 
 > A versal formal object with bijective differential has a
 > finite-dimensional tangent space.
@@ -173,13 +173,13 @@ public theorem finiteDimensional_tangentSpace_of_versal_bijectiveDifferential
 
 Declarations registered for the tag:
 
-- [`Deformation.schlessingerConditionS1_of_versal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L405) (StacksFrontier): “part (1): condition (S1)”.
+- [`Deformation.schlessingerConditionS1_of_versal`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L405) (StacksFrontier): “part (1): condition (S1)”.
 
 ## Tag 06T7, an example
 
 [Tag 06T7](https://stacks.math.columbia.edu/tag/06T7) in the Stacks Project.
 
-**`Deformation.exists_versal_orbitBijective_not_schlessingerConditionS2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/OrbitBijectivityWarning.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/OrbitBijectivityWarning.lean#L772).
+**`Deformation.exists_versal_orbitBijective_not_schlessingerConditionS2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/OrbitBijectivityWarning.lean, line 772](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/OrbitBijectivityWarning.lean#L772).
 
 > There is a predeformation category carrying a versal formal object whose differential is
 > bijective on `Der_Λ(k, k)`-orbits and which does not satisfy Schlessinger's condition (S2).
@@ -197,7 +197,7 @@ theorem exists_versal_orbitBijective_not_schlessingerConditionS2 :
 
 [Tag 06T8](https://stacks.math.columbia.edu/tag/06T8) in the Stacks Project.
 
-**`Deformation.minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean, line 703](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean#L703).
+**`Deformation.minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean, line 703](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/VersalObject/MinimalVersalOrbitBijection.lean#L703).
 
 > The differential of a minimal versal formal object of a predeformation category satisfying
 > Schlessinger's condition (S2) is well defined, surjective and equivariant, and induces a
@@ -218,7 +218,7 @@ public theorem minimalVersal_hasBijectiveDifferentialOnDerivationOrbits
 
 [Tag 06IX](https://stacks.math.columbia.edu/tag/06IX) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS1_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L123). The attribute's comment: “(1) implies (3a)”.
+**`Deformation.schlessingerConditionS1_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L123). The attribute's comment: “(1) implies (3a)”.
 
 > **Stacks Project, Tag 06IX,** the implication (1) ⟹ (3a). Condition (1) of that theorem is
 > that the predeformation category have a minimal versal formal object whose differential is
@@ -234,7 +234,7 @@ public theorem schlessingerConditionS1_of_minimalVersal_hasBijectiveDifferential
     SchlessingerConditionS1 p
 ```
 
-**`Deformation.exists_minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalExistence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalExistence.lean#L44). The attribute's comment: “(3) implies (2)”. References: SGA 7 VI (1.11), “(i)”; SGA 7 VI (1.20), “special case”.
+**`Deformation.exists_minimalVersal_hasBijectiveDifferentialOnDerivationOrbits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalExistence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalExistence.lean#L44). The attribute's comment: “(3) implies (2)”. References: SGA 7 VI (1.11), “(i)”; SGA 7 VI (1.20), “special case”.
 
 > A predeformation category satisfying Schlessinger's conditions (S1) and (S2) whose tangent
 > space is finite dimensional has a minimal versal formal object whose differential is bijective
@@ -260,7 +260,7 @@ public theorem exists_minimalVersal_hasBijectiveDifferentialOnDerivationOrbits
         HasBijectiveDifferentialOnDerivationOrbits.{u, v, w} 𝓕.p hpre ξ
 ```
 
-**`Deformation.schlessingerConditionS2_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L149). The attribute's comment: “(1) implies (3b)”.
+**`Deformation.schlessingerConditionS2_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L149). The attribute's comment: “(1) implies (3b)”.
 
 > **Stacks Project, Tag 06IX,** the implication (1) implies (3b). A predeformation category
 > with a minimal versal formal object whose differential is bijective — that is, one satisfying
@@ -280,7 +280,7 @@ public theorem schlessingerConditionS2_of_minimalVersal_hasBijectiveDifferential
     Deformation.SchlessingerConditionS2 𝓕.p
 ```
 
-**`Deformation.finiteDimensional_tangentSpace_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L172). The attribute's comment: “(1) implies (3c)”. References: SGA 7 VI (1.11), “(ii)”.
+**`Deformation.finiteDimensional_tangentSpace_of_minimalVersal_hasBijectiveDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L172). The attribute's comment: “(1) implies (3c)”. References: SGA 7 VI (1.11), “(ii)”.
 
 > **Stacks Project, Tag 06IX,** the implication (1) implies (3c). The tangent space of a
 > predeformation category with a minimal versal formal object whose differential is bijective —
@@ -313,7 +313,7 @@ public theorem finiteDimensional_tangentSpace_of_minimalVersal_hasBijectiveDiffe
         (Deformation.isomorphismClasses 𝓕 hpre.cofibered))
 ```
 
-**`Deformation.exists_minimalVersal_hasBijectiveDifferential_of_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L379). The attribute's comment: “(2) implies (1) under separability”.
+**`Deformation.exists_minimalVersal_hasBijectiveDifferential_of_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 379](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L379). The attribute's comment: “(2) implies (1) under separability”.
 
 > If `k` is separable over the image field of `Λ`, orbitwise bijectivity
 > of a minimal versal formal object's differential is ordinary bijectivity.
@@ -334,15 +334,15 @@ public theorem exists_minimalVersal_hasBijectiveDifferential_of_separable
 
 Declarations registered for the tag:
 
-- [`Deformation.schlessingerConditionS1_of_versal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L137) (StacksFrontier): “(1) implies (3a)”.
-- [`Deformation.schlessingerConditionS2_of_versal_bijectiveDifferential`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L424), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L192) (StacksFrontier): “(1) implies (3b)”.
-- [`Deformation.finiteDimensional_tangentSpace_of_versal_bijectiveDifferential`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L729), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L194) (StacksFrontier): “(1) implies (3c)”.
+- [`Deformation.schlessingerConditionS1_of_versal`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/Basic.lean#L788), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/FormalObject/DerivationOrbits.lean#L137) (StacksFrontier): “(1) implies (3a)”.
+- [`Deformation.schlessingerConditionS2_of_versal_bijectiveDifferential`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L424), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L192) (StacksFrontier): “(1) implies (3b)”.
+- [`Deformation.finiteDimensional_tangentSpace_of_versal_bijectiveDifferential`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/VersalBijectiveDifferential.lean#L729), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean, line 194](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/MiniversalSeparable.lean#L194) (StacksFrontier): “(1) implies (3c)”.
 
 ## Tag 06IY, a remark
 
 [Tag 06IY](https://stacks.math.columbia.edu/tag/06IY) in the Stacks Project.
 
-**`Deformation.IsHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean#L43). The attribute's comment: “hull”.
+**`Deformation.IsHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean, line 43](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean#L43). The attribute's comment: “hull”.
 
 > A *hull* of a category cofibered in groupoids over `𝒞_Λ` is a versal formal object whose
 > differential `dξ : T\underline{R}|_{𝒞_Λ} → T𝓕` is an isomorphism.
@@ -354,7 +354,7 @@ public abbrev IsHull {Λ : Type u} {k : Type w} [CommRing Λ] [Field k] [Algebra
     (hp : IsCofiberedInGroupoids p) (ξ : FormalObject p) : Prop
 ```
 
-**`Deformation.exists_hull_of_schlessingerConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L359). The attribute's comment: “(H1) + (H2) + (H3) implies a hull exists”. References: SGA 7 VI (1.20), “set-valued functor”.
+**`Deformation.exists_hull_of_schlessingerConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 359](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L359). The attribute's comment: “(H1) + (H2) + (H3) implies a hull exists”. References: SGA 7 VI (1.20), “set-valued functor”.
 
 > **Stacks Project, Tag 06IY.** A set-valued predeformation functor on `𝒞_Λ` satisfying
 > Schlessinger's conditions (H1), (H2) and (H3) has a hull, provided `k` is separable over the
@@ -401,7 +401,7 @@ public theorem exists_hull_of_schlessingerConditions
       IsHull ((isPredeformationCategory_iff F).2 hpre).cofibered ξ
 ```
 
-**`Deformation.exists_hull_of_schlessingerConditions_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L415). The attribute's comment: “(H1) + (H2) + (H3) implies a hull exists, classical case”. References: SGA 7 VI (1.20), “special case”.
+**`Deformation.exists_hull_of_schlessingerConditions_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean, line 415](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Schlessinger/SetValuedExistence.lean#L415). The attribute's comment: “(H1) + (H2) + (H3) implies a hull exists, classical case”. References: SGA 7 VI (1.20), “special case”.
 
 > **Stacks Project, Tag 06IY.** In the classical case — `Λ` a Noetherian complete local ring
 > whose residue field is identified with `k` — a set-valued predeformation functor satisfying
@@ -450,7 +450,7 @@ public theorem exists_hull_of_schlessingerConditions_isClassical
 
 [Tag 06IZ](https://stacks.math.columbia.edu/tag/06IZ) in the Stacks Project.
 
-**`Deformation.mapIsomorphismClasses_bijective_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L98). The attribute's comment: “bijective on isomorphism classes”.
+**`Deformation.mapIsomorphismClasses_bijective_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L98). The attribute's comment: “bijective on isomorphism classes”.
 
 > A based functor realizing the functor of isomorphism classes is bijective on isomorphism
 > classes over every object of the base: injective because its fibres are skeletal and identify
@@ -465,7 +465,7 @@ public theorem mapIsomorphismClasses_bijective_of_isIsomorphismClasses
     Function.Bijective (mapIsomorphismClasses h𝓐 h𝓑 φ A)
 ```
 
-**`Deformation.isSmooth_associatedMorphism_toIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L321). The attribute's comment: “smooth composite”.
+**`Deformation.isSmooth_associatedMorphism_toIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L321). The attribute's comment: “smooth composite”.
 
 > **Stacks Project, Tag 06IZ.** The composite of the morphism associated to a versal formal
 > object with the canonical morphism to the functor of isomorphism classes is smooth.
@@ -479,7 +479,7 @@ public theorem isSmooth_associatedMorphism_toIsomorphismClasses
       (toIsomorphismClasses 𝓕 hpre.cofibered))
 ```
 
-**`Deformation.isVersal_imageInIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L336). The attribute's comment: “versal image”.
+**`Deformation.isVersal_imageInIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L336). The attribute's comment: “versal image”.
 
 > **Stacks Project, Tag 06IZ.** The image of a versal formal object in the functor of
 > isomorphism classes is versal.
@@ -492,7 +492,7 @@ public theorem isVersal_imageInIsomorphismClasses
       (imageInIsomorphismClasses 𝓕 hpre ξ)
 ```
 
-**`Deformation.hasBijectiveDifferential_imageInIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L357). The attribute's comment: “tangent isomorphism”. References: SGA 7 VI (1.13), “tangent iso for [A]”.
+**`Deformation.hasBijectiveDifferential_imageInIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 357](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L357). The attribute's comment: “tangent isomorphism”. References: SGA 7 VI (1.13), “tangent iso for [A]”.
 
 > **Stacks Project, Tag 06IZ.** The image in the functor of isomorphism classes of a formal
 > object with bijective differential has bijective differential: the canonical morphism
@@ -506,7 +506,7 @@ public theorem hasBijectiveDifferential_imageInIsomorphismClasses
       (imageInIsomorphismClasses 𝓕 hpre ξ)
 ```
 
-**`Deformation.differential_toIsomorphismClasses_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L404). The attribute's comment: “tangent spaces of the canonical morphism”.
+**`Deformation.differential_toIsomorphismClasses_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClasses.lean#L404). The attribute's comment: “tangent spaces of the canonical morphism”.
 
 > **Stacks Project, Tag 06IZ.** The canonical morphism from a predeformation category to its
 > functor of isomorphism classes identifies tangent spaces.
@@ -519,7 +519,7 @@ public theorem differential_toIsomorphismClasses_bijective :
         (toIsomorphismClasses 𝓕 hpre.cofibered))
 ```
 
-**`Deformation.exists_hull_isomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean#L54). The attribute's comment: “existence of a hull”. References: SGA 7 VI (1.20), “existence”.
+**`Deformation.exists_hull_isomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Formal/VersalObject/IsomorphismClassesHull.lean#L54). The attribute's comment: “existence of a hull”. References: SGA 7 VI (1.20), “existence”.
 
 > A predeformation category satisfying Schlessinger's conditions (S1) and (S2), with
 > finite-dimensional tangent space and separable residue field extension, has a versal formal
@@ -552,7 +552,7 @@ public theorem exists_hull_isomorphismClasses
 
 [Tag 06T9](https://stacks.math.columbia.edu/tag/06T9) in the Stacks Project.
 
-**`Deformation.isPredeformationCategory_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L121). The attribute's comment: “predeformation category”.
+**`Deformation.isPredeformationCategory_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L121). The attribute's comment: “predeformation category”.
 
 > The base category `𝒞_Λ`, regarded through the identity functor as a category cofibered in
 > groupoids over itself, is a predeformation category.
@@ -562,7 +562,7 @@ public theorem isPredeformationCategory_id :
     IsPredeformationCategory.{u, v, w} (𝟭 (ArtinianLocalAlgCat.{u, max v w, w} Λ k))
 ```
 
-**`Deformation.schlessingerConditionS1_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L129). The attribute's comment: “condition (S1)”.
+**`Deformation.schlessingerConditionS1_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L129). The attribute's comment: “condition (S1)”.
 
 > `𝒞_Λ` over itself satisfies Schlessinger's condition (S1).
 
@@ -571,7 +571,7 @@ public theorem schlessingerConditionS1_id :
     SchlessingerConditionS1 (𝟭 (ArtinianLocalAlgCat.{u, max v w, w} Λ k))
 ```
 
-**`Deformation.schlessingerConditionS2_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L140). The attribute's comment: “condition (S2)”.
+**`Deformation.schlessingerConditionS2_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L140). The attribute's comment: “condition (S2)”.
 
 > `𝒞_Λ` over itself satisfies Schlessinger's condition (S2).
 
@@ -580,7 +580,7 @@ public theorem schlessingerConditionS2_id :
     SchlessingerConditionS2 (𝟭 (ArtinianLocalAlgCat.{u, max v w, w} Λ k))
 ```
 
-**`Deformation.unique_predeformationTangentSpace_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L200). The attribute's comment: “vanishing of the tangent space”.
+**`Deformation.unique_predeformationTangentSpace_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L200). The attribute's comment: “vanishing of the tangent space”.
 
 > The tangent space of `𝒞_Λ` over itself vanishes: it has exactly one element.
 
@@ -590,7 +590,7 @@ public theorem unique_predeformationTangentSpace_id :
       (𝟭 (ArtinianLocalAlgCat.{u, max v w, w} Λ k)) (isPredeformationCategory_id Λ k)))
 ```
 
-**`Deformation.isMinimalVersal_selfFormalObject_smoothModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L454). The attribute's comment: “the smooth model of Stacks 06SM carries a minimal versal formal object”.
+**`Deformation.isMinimalVersal_selfFormalObject_smoothModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 454](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L454). The attribute's comment: “the smooth model of Stacks 06SM carries a minimal versal formal object”.
 
 > The object `R` constructed in Stacks 06SM carries a minimal versal formal object of `𝒞_Λ`
 > regarded as cofibered in groupoids over itself.
@@ -601,7 +601,7 @@ public theorem isMinimalVersal_selfFormalObject_smoothModel :
       (selfFormalObject.{u, u, w} (smoothModel.{u, w} (Λ := Λ) (k := k)))
 ```
 
-**`Deformation.isMinimalVersal_id_base_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L465). The attribute's comment: “the cotangent identifications and the comparison with Stacks 06SM”.
+**`Deformation.isMinimalVersal_id_base_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean, line 465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Examples/BaseCategoryOverItself.lean#L465). The attribute's comment: “the cotangent identifications and the comparison with Stacks 06SM”.
 
 > The complete local algebra `S` underlying any minimal versal formal object of `𝒞_Λ` over
 > itself is formally smooth over `Λ` in the `𝔪_S`-adic topology, its module of differentials
@@ -628,4 +628,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.15, Tag 06IL](https://stacks.math.columbia.edu/tag/06IL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

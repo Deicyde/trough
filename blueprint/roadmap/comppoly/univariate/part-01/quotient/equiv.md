@@ -7,7 +7,7 @@ proof: formalized
 
 # QuotientCPolynomial <-> Polynomial Isomorphism
 
-`CompPoly.Univariate.Quotient.Equiv`, in [CompPoly/Univariate/Quotient/Equiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean), by Aristotle (Harmonic), Elias Judin.
+`CompPoly.Univariate.Quotient.Equiv`, in [CompPoly/Univariate/Quotient/Equiv.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean), by Aristotle (Harmonic), Elias Judin.
 
 > This file establishes the ring equivalence between `QuotientCPolynomial R`
 > (the quotient of `CPolynomial.Raw R` by coefficient-wise equivalence) and
@@ -21,7 +21,7 @@ proof: formalized
 > * `QuotientCPolynomial.ofPoly_toPoly` - round-trip identity `ofPoly ∘ toPoly = id`
 > * `QuotientCPolynomial.ringEquiv` - the ring equivalence `QuotientCPolynomial R ≃+* Polynomial R`
 
-`CompPoly.CPolynomial.QuotientCPolynomial.toPoly_resp` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L42))
+`CompPoly.CPolynomial.QuotientCPolynomial.toPoly_resp` (theorem, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L42))
 
 > Well-definedness: equivalent raw polynomials map to the same `Polynomial`.
 
@@ -30,7 +30,7 @@ theorem toPoly_resp (p q : CPolynomial.Raw R) (h : p ≈ q) :
     p.toPoly = q.toPoly
 ```
 
-`CompPoly.CPolynomial.QuotientCPolynomial.toPoly` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L52))
+`CompPoly.CPolynomial.QuotientCPolynomial.toPoly` (definition, [line 52](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L52))
 
 > Convert a `QuotientCPolynomial` to a mathlib `Polynomial R`.
 >
@@ -41,7 +41,7 @@ theorem toPoly_resp (p q : CPolynomial.Raw R) (h : p ≈ q) :
 noncomputable def toPoly (p : QuotientCPolynomial R) : Polynomial R
 ```
 
-`CompPoly.CPolynomial.QuotientCPolynomial.ofPoly` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L59))
+`CompPoly.CPolynomial.QuotientCPolynomial.ofPoly` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L59))
 
 > Convert a mathlib `Polynomial R` to a `QuotientCPolynomial R`.
 >
@@ -52,7 +52,7 @@ noncomputable def toPoly (p : QuotientCPolynomial R) : Polynomial R
 def ofPoly (p : Polynomial R) : QuotientCPolynomial R
 ```
 
-`CompPoly.CPolynomial.QuotientCPolynomial.toPoly_ofPoly` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L64))
+`CompPoly.CPolynomial.QuotientCPolynomial.toPoly_ofPoly` (theorem, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L64))
 
 > Round-trip identity: `toPoly ∘ ofPoly = id`.
 
@@ -60,7 +60,7 @@ def ofPoly (p : Polynomial R) : QuotientCPolynomial R
 theorem toPoly_ofPoly (p : Polynomial R) : toPoly (ofPoly p) = p
 ```
 
-`CompPoly.CPolynomial.QuotientCPolynomial.ofPoly_toPoly` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L69))
+`CompPoly.CPolynomial.QuotientCPolynomial.ofPoly_toPoly` (theorem, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L69))
 
 > Round-trip identity: `ofPoly ∘ toPoly = id`.
 
@@ -69,7 +69,7 @@ theorem ofPoly_toPoly [BEq R] [LawfulBEq R] (q : QuotientCPolynomial R) :
     ofPoly (toPoly q) = q
 ```
 
-`CompPoly.CPolynomial.QuotientCPolynomial.ringEquiv` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean#L85))
+`CompPoly.CPolynomial.QuotientCPolynomial.ringEquiv` (definition, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean#L85))
 
 > The ring equivalence between `QuotientCPolynomial R` and `Polynomial R`.
 >
@@ -92,5 +92,5 @@ noncomputable def ringEquiv [BEq R] [LawfulBEq R] : QuotientCPolynomial R ≃+* 
 
 ## Sources
 
-- [CompPoly/Univariate/Quotient/Equiv.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Quotient/Equiv.lean)
+- [CompPoly/Univariate/Quotient/Equiv.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Quotient/Equiv.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Quotient.Equiv.json)

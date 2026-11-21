@@ -2,11 +2,14 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Computability.Circuit.Shannon",
  "file": "Cslib/Computability/Circuit/Shannon.lean",
  "public": [
-  {"name": "Cslib.Circuits.Shannon.exists_hard_function", "kind": "theorem", "line": 128}
+  {"name": "Cslib.Circuits.Shannon.exists_hard_function_of_card_lt", "kind": "theorem", "line": 57},
+  {"name": "Cslib.Circuits.Shannon.exists_hard_full_function", "kind": "theorem", "line": 67},
+  {"name": "Cslib.Circuits.Shannon.tendsto_card_computableFunctions_div", "kind": "theorem", "line": 157},
+  {"name": "Cslib.Circuits.Shannon.exists_hard_function", "kind": "theorem", "line": 174}
  ],
  "private": [],
  "missing": [],

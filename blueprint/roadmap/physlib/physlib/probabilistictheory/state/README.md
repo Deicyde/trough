@@ -1,6 +1,6 @@
 # State
 
-The folder [Physlib/ProbabilisticTheory/State/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State): 8 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/ProbabilisticTheory/State/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State): 9 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [States](basic.md)
 - [Convex state spaces (Physlib)](convex.md)
@@ -9,4 +9,5 @@ The folder [Physlib/ProbabilisticTheory/State/](https://github.com/leanprover-co
 - [The metric space of states (Physlib)](metric.md)
 - [The state–effect pairing (Physlib)](pairing.md)
 - [Separation by states (Physlib)](separation.md)
-- [Equivalence between states and finite normalized weights](weightequivalence.md)
+- [States under symmetries](symmetry.md)
+- [States as weights](weight.md)

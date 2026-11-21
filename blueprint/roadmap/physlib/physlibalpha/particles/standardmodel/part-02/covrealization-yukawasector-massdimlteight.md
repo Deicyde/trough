@@ -8,7 +8,7 @@ proof: formalized
 
 # The Yukawa invariants below mass weight eight
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean): 5 declarations, 5 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean): 5 declarations, 5 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -66,7 +66,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Mas
 > underived ones. Each of the four has exactly one fermion factor, so section A gives all of
 > them the sign `-1`, the join included, and the invariant is left in `S`.
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_five_sup`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L125).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_five_sup`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L125).
 
 > Mass weight five carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `sectorMassWeight {higgs, fermion} 5 ⊔ S` lies in `S`. The weight is
@@ -79,7 +79,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_five_sup (S : Subm
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_seven_sup`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L137).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_seven_sup`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L137).
 
 > Mass weight seven carries no Lorentz invariant modulo a Lorentz-stable submodule: a
 > Lorentz invariant of `sectorMassWeight {higgs, fermion} 7 ⊔ S` lies in `S`. Each of the
@@ -105,7 +105,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_seven_sup
 > be present with a non-zero weight and the sector is already trivial at weight zero; the
 > scalars, which are what force `0 < w` there, never appear.
 
-**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_lt_eight_sup`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L167).
+**`StandardModel.CovAlgebraRealization.mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_lt_eight_sup`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L167).
 
 > Below mass weight eight the Yukawa sector carries no Lorentz invariant: a Lorentz
 > invariant of `sectorMassWeight {higgs, fermion} w ⊔ S` for `w < 8` lies in `S`. Weights
@@ -120,7 +120,7 @@ lemma mem_of_lorentz_invariant_sectorMassWeight_higgs_fermion_lt_eight_sup (w : 
     (hL : ∀ g : SL(2,ℂ), repLorentz g x = x) : x ∈ S
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L185).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L185).
 
 > The classification below mass weight eight as an equivalence, in the shape of the
 > gauge-sector statement `mem_massWeightSubmodule_lt_eight_sup_and_gauge_lorentz_invariant_iff`:
@@ -140,7 +140,7 @@ lemma mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invarian
           ∧ x = y
 ```
 
-**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L203).
+**`StandardModel.CovAlgebraRealization.mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invariant_iff_mem`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean#L203).
 
 > The same classification without the existential: below mass weight eight an element of
 > `sectorMassWeight {higgs, fermion} w ⊔ S` fixed by both groups is an element of `S` fixed
@@ -168,4 +168,4 @@ lemma mem_sectorMassWeight_higgs_fermion_lt_eight_sup_and_gauge_lorentz_invarian
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean)

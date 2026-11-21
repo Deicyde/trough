@@ -7,11 +7,11 @@ proof: formalized
 
 # ω-Regular languages
 
-`Cslib.Computability.Languages.OmegaRegularLanguage`, in [Cslib/Computability/Languages/OmegaRegularLanguage.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean), by Ching-Tsun Chou.
+`Cslib.Computability.Languages.OmegaRegularLanguage`, in [Cslib/Computability/Languages/OmegaRegularLanguage.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean), by Ching-Tsun Chou.
 
 > This file defines ω-regular languages and proves some properties of them.
 
-`Cslib.ωLanguage.IsRegular` (definition, [line 37](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L37))
+`Cslib.ωLanguage.IsRegular` (definition, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L37))
 
 > An ω-language is ω-regular iff it is accepted by a
 > finite-state nondeterministic Buchi automaton.
@@ -20,7 +20,7 @@ proof: formalized
 def IsRegular (p : ωLanguage Symbol)
 ```
 
-`Cslib.ωLanguage.isRegular_iff` (theorem, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L51))
+`Cslib.ωLanguage.isRegular_iff` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L51))
 
 > The state space of the accepting finite-state nondeterministic Buchi automaton
 > can in fact be universe-polymorphic.
@@ -30,7 +30,7 @@ theorem isRegular_iff {p : ωLanguage Symbol} :
     p.IsRegular ↔ ∃ (σ : Type v) (_ : Finite σ) (na : NA.Buchi σ Symbol), language na = p
 ```
 
-`Cslib.ωLanguage.IsRegular.of_da_buchi` (theorem, [line 56](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L56))
+`Cslib.ωLanguage.IsRegular.of_da_buchi` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L56))
 
 > The ω-language accepted by a finite-state deterministic Buchi automaton is ω-regular.
 
@@ -39,7 +39,7 @@ theorem IsRegular.of_da_buchi {State : Type} [Finite State] (da : DA.Buchi State
     (language da).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.not_da_buchi` (theorem, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L62))
+`Cslib.ωLanguage.IsRegular.not_da_buchi` (theorem, [line 62](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L62))
 
 > There is an ω-regular language that is not accepted by any deterministic Buchi automaton,
 > where the automaton is not even required to be finite-state.
@@ -50,7 +50,7 @@ theorem IsRegular.not_da_buchi :
     ¬ ∃ (State : Type) (da : DA.Buchi State Symbol), language da = p
 ```
 
-`Cslib.ωLanguage.IsRegular.regular_omegaLim` (theorem, [line 74](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L74))
+`Cslib.ωLanguage.IsRegular.regular_omegaLim` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L74))
 
 > The ω-limit of a regular language is ω-regular.
 
@@ -59,7 +59,7 @@ theorem IsRegular.regular_omegaLim {l : Language Symbol}
     (h : l.IsRegular) : (l↗ω).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.bot` (theorem, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L82))
+`Cslib.ωLanguage.IsRegular.bot` (theorem, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L82))
 
 > The empty language is ω-regular.
 
@@ -67,7 +67,7 @@ theorem IsRegular.regular_omegaLim {l : Language Symbol}
 theorem IsRegular.bot : (⊥ : ωLanguage Symbol).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.top` (theorem, [line 94](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L94))
+`Cslib.ωLanguage.IsRegular.top` (theorem, [line 94](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L94))
 
 > The language of all ω-sequences is ω-regular.
 
@@ -75,7 +75,7 @@ theorem IsRegular.bot : (⊥ : ωLanguage Symbol).IsRegular
 theorem IsRegular.top : (⊤ : ωLanguage Symbol).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.sup` (theorem, [line 110](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L110))
+`Cslib.ωLanguage.IsRegular.sup` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L110))
 
 > The union of two ω-regular languages is ω-regular.
 
@@ -84,7 +84,7 @@ theorem IsRegular.sup {p1 p2 : ωLanguage Symbol}
     (h1 : p1.IsRegular) (h2 : p2.IsRegular) : (p1 ⊔ p2).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.inf` (theorem, [line 131](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L131))
+`Cslib.ωLanguage.IsRegular.inf` (theorem, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L131))
 
 > The intersection of two ω-regular languages is ω-regular.
 
@@ -93,7 +93,7 @@ theorem IsRegular.inf {p1 p2 : ωLanguage Symbol}
     (h1 : p1.IsRegular) (h2 : p2.IsRegular) : (p1 ⊓ p2).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.iSup` (theorem, [line 151](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L151))
+`Cslib.ωLanguage.IsRegular.iSup` (theorem, [line 151](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L151))
 
 > The union of any finite number of ω-regular languages is ω-regular.
 
@@ -102,7 +102,7 @@ theorem IsRegular.iSup {I : Type*} [Finite I] {s : Set I} {p : I → ωLanguage 
     (h : ∀ i ∈ s, (p i).IsRegular) : (⨆ i ∈ s, p i).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.iInf` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L165))
+`Cslib.ωLanguage.IsRegular.iInf` (theorem, [line 165](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L165))
 
 > The intersection of any finite number of ω-regular languages is ω-regular.
 
@@ -111,7 +111,7 @@ theorem IsRegular.iInf {I : Type*} [Finite I] {s : Set I} {p : I → ωLanguage 
     (h : ∀ i ∈ s, (p i).IsRegular) : (⨅ i ∈ s, p i).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.hmul` (theorem, [line 179](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L179))
+`Cslib.ωLanguage.IsRegular.hmul` (theorem, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L179))
 
 > The concatenation of a regular language and an ω-regular language is ω-regular.
 
@@ -120,7 +120,7 @@ theorem IsRegular.hmul {l : Language Symbol} {p : ωLanguage Symbol}
     (h1 : l.IsRegular) (h2 : p.IsRegular) : (l * p).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.omegaPow` (theorem, [line 188](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L188))
+`Cslib.ωLanguage.IsRegular.omegaPow` (theorem, [line 188](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L188))
 
 > The ω-power of a regular language is an ω-regular language.
 
@@ -129,7 +129,7 @@ theorem IsRegular.omegaPow [Inhabited Symbol] {l : Language Symbol}
     (h : l.IsRegular) : (l^ω).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.eq_fin_iSup_hmul_omegaPow` (theorem, [line 196](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L196))
+`Cslib.ωLanguage.IsRegular.eq_fin_iSup_hmul_omegaPow` (theorem, [line 196](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L196))
 
 > An ω-language is regular iff it is the finite union of ω-languages of the form `L * M^ω`,
 > where all `L`s and `M`s are regular languages.
@@ -140,7 +140,7 @@ theorem IsRegular.eq_fin_iSup_hmul_omegaPow [Inhabited Symbol] (p : ωLanguage S
       (∀ i, (l i).IsRegular ∧ (m i).IsRegular) ∧ p = ⨆ i, (l i) * (m i)^ω
 ```
 
-`Cslib.ωLanguage.IsRegular.fin_cover_saturates` (theorem, [line 225](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L225))
+`Cslib.ωLanguage.IsRegular.fin_cover_saturates` (theorem, [line 225](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L225))
 
 > If an ω-language has a finite saturating cover made of ω-regular languages,
 > then it is an ω-regular language.
@@ -152,7 +152,7 @@ theorem IsRegular.fin_cover_saturates {I : Type*} [Finite I]
     (hc : ⨆ i, p i = ⊤) (hr : ∀ i, (p i).IsRegular) : q.IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.fin_cover_saturates_compl` (theorem, [line 241](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L241))
+`Cslib.ωLanguage.IsRegular.fin_cover_saturates_compl` (theorem, [line 241](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L241))
 
 > If an ω-language has a finite saturating cover made of ω-regular languages,
 > then its complement is an ω-regular language.
@@ -164,7 +164,7 @@ theorem IsRegular.fin_cover_saturates_compl {I : Type*} [Finite I]
     (hc : ⨆ i, p i = ⊤) (hr : ∀ i, (p i).IsRegular) : (qᶜ).IsRegular
 ```
 
-`Cslib.ωLanguage.IsRegular.compl` (theorem, [line 250](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L250))
+`Cslib.ωLanguage.IsRegular.compl` (theorem, [line 250](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean#L250))
 
 > The complementation of an ω-regular language is ω-regular.
 
@@ -192,5 +192,5 @@ theorem IsRegular.compl {Symbol : Type} [Inhabited Symbol] {p : ωLanguage Symbo
 
 ## Sources
 
-- [Cslib/Computability/Languages/OmegaRegularLanguage.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/OmegaRegularLanguage.lean)
+- [Cslib/Computability/Languages/OmegaRegularLanguage.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/OmegaRegularLanguage.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.OmegaRegularLanguage.json)

@@ -7,7 +7,7 @@ proof: formalized
 
 # URM-Computable Functions
 
-`Cslib.Computability.URM.Computable`, in [Cslib/Computability/URM/Computable.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/URM/Computable.lean), by Jesse Alama.
+`Cslib.Computability.URM.Computable`, in [Cslib/Computability/URM/Computable.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Computable.lean), by Jesse Alama.
 
 > This file defines the notion of URM-computability for partial functions on natural numbers.
 >
@@ -21,7 +21,7 @@ proof: formalized
 >
 > Inputs are provided in registers 0, 1, ..., n-1 and output is read from register 0.
 
-`Cslib.URM.Computes` (definition, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/URM/Computable.lean#L35))
+`Cslib.URM.Computes` (definition, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Computable.lean#L35))
 
 > A program `p` computes a partial function `f : (Fin n → ℕ) → Part ℕ` if for any input,
 > `eval p inputs = f inputs` as partial values. This captures both:
@@ -34,7 +34,7 @@ proof: formalized
 def Computes (n : ℕ) (p : Program) (f : (Fin n → ℕ) → Part ℕ) : Prop
 ```
 
-`Cslib.URM.Computable` (definition, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/URM/Computable.lean#L40))
+`Cslib.URM.Computable` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Computable.lean#L40))
 
 > A partial function `f : (Fin n → ℕ) → Part ℕ` is URM-computable if there exists a URM program
 > that computes it.
@@ -49,5 +49,5 @@ def Computable (n : ℕ) (f : (Fin n → ℕ) → Part ℕ) : Prop
 
 ## Sources
 
-- [Cslib/Computability/URM/Computable.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/URM/Computable.lean)
+- [Cslib/Computability/URM/Computable.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/URM/Computable.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.URM.Computable.json)

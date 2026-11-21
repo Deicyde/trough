@@ -7,9 +7,9 @@ proof: formalized
 
 # Product of deterministic automata
 
-`Cslib.Computability.Automata.DA.Prod`, in [Cslib/Computability/Automata/DA/Prod.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Prod.lean), by Fabrizio Montesi, Ching-Tsun Chou.
+`Cslib.Computability.Automata.DA.Prod`, in [Cslib/Computability/Automata/DA/Prod.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Prod.lean), by Fabrizio Montesi, Ching-Tsun Chou.
 
-`Cslib.Automata.DA.prod` (definition, [line 27](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Prod.lean#L27))
+`Cslib.Automata.DA.prod` (definition, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Prod.lean#L27))
 
 > The product of two deterministic automata.
 
@@ -17,7 +17,7 @@ proof: formalized
 def prod (da1 : DA State1 Symbol) (da2 : DA State2 Symbol) : DA (State1 × State2) Symbol
 ```
 
-`Cslib.Automata.DA.prod_mtr_eq` (theorem, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Prod.lean#L34))
+`Cslib.Automata.DA.prod_mtr_eq` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Prod.lean#L34))
 
 > A state is reachable by the product automaton iff its components are reachable by
 > the respective automaton components.
@@ -35,5 +35,5 @@ theorem prod_mtr_eq (da1 : DA State1 Symbol) (da2 : DA State2 Symbol)
 
 ## Sources
 
-- [Cslib/Computability/Automata/DA/Prod.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Automata/DA/Prod.lean)
+- [Cslib/Computability/Automata/DA/Prod.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Automata/DA/Prod.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Automata.DA.Prod.json)

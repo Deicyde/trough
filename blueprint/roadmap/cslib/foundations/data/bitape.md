@@ -7,7 +7,7 @@ proof: formalized
 
 # BiTape: Bidirectionally infinite TM tape representation using StackTape
 
-`Cslib.Foundations.Data.BiTape`, in [Cslib/Foundations/Data/BiTape.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean), by Bolton Bailey.
+`Cslib.Foundations.Data.BiTape`, in [Cslib/Foundations/Data/BiTape.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean), by Bolton Bailey.
 
 > This file defines `BiTape`, a tape representation for Turing machines
 > in the form of an `List` of `Option` values,
@@ -29,7 +29,7 @@ proof: formalized
 > * `BiTape.write`: Write a symbol at the current head position
 > * `BiTape.spaceUsed`: The space used by the tape
 
-`Cslib.Turing.BiTape` (structure, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L47))
+`Cslib.Turing.BiTape` (structure, [line 47](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L47))
 
 > A structure for bidirectionally-infinite Turing machine tapes
 > that eventually take on blank `none` values
@@ -44,7 +44,7 @@ structure BiTape (Symbol : Type*) where
   right : StackTape Symbol
 ```
 
-`Cslib.Turing.BiTape.nil` (definition, [line 60](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L60))
+`Cslib.Turing.BiTape.nil` (definition, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L60))
 
 > The empty `BiTape`
 
@@ -52,13 +52,13 @@ structure BiTape (Symbol : Type*) where
 def nil : BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.empty_eq_nil` (lemma, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L69))
+`Cslib.Turing.BiTape.empty_eq_nil` (lemma, [line 69](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L69))
 
 ```lean
 lemma empty_eq_nil : (∅ : BiTape Symbol) = nil
 ```
 
-`Cslib.Turing.BiTape.mk₁` (definition, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L76))
+`Cslib.Turing.BiTape.mk₁` (definition, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L76))
 
 > Given a `List` of `Symbol`s, construct a `BiTape` by mapping the list to `some` elements
 > and laying them out to the right side,
@@ -68,7 +68,7 @@ lemma empty_eq_nil : (∅ : BiTape Symbol) = nil
 def mk₁ (l : List Symbol) : BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.moveLeft` (definition, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L86))
+`Cslib.Turing.BiTape.moveLeft` (definition, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L86))
 
 > Move the head left by shifting the left StackTape under the head.
 
@@ -76,7 +76,7 @@ def mk₁ (l : List Symbol) : BiTape Symbol
 def moveLeft (t : BiTape Symbol) : BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.moveRight` (definition, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L92))
+`Cslib.Turing.BiTape.moveRight` (definition, [line 92](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L92))
 
 > Move the head right by shifting the right StackTape under the head.
 
@@ -84,7 +84,7 @@ def moveLeft (t : BiTape Symbol) : BiTape Symbol
 def moveRight (t : BiTape Symbol) : BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.move` (definition, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L100))
+`Cslib.Turing.BiTape.move` (definition, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L100))
 
 > Move the head to the left or right, shifting the tape underneath it.
 
@@ -92,7 +92,7 @@ def moveRight (t : BiTape Symbol) : BiTape Symbol
 def move (t : BiTape Symbol) : Dir → BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.optionMove` (definition, [line 107](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L107))
+`Cslib.Turing.BiTape.optionMove` (definition, [line 107](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L107))
 
 > Optionally perform a `move`, or do nothing if `none`.
 
@@ -100,19 +100,19 @@ def move (t : BiTape Symbol) : Dir → BiTape Symbol
 def optionMove : BiTape Symbol → Option Turing.Dir → BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.moveLeft_moveRight` (lemma, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L112))
+`Cslib.Turing.BiTape.moveLeft_moveRight` (lemma, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L112))
 
 ```lean
 lemma moveLeft_moveRight (t : BiTape Symbol) : t.moveLeft.moveRight = t
 ```
 
-`Cslib.Turing.BiTape.moveRight_moveLeft` (lemma, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L116))
+`Cslib.Turing.BiTape.moveRight_moveLeft` (lemma, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L116))
 
 ```lean
 lemma moveRight_moveLeft (t : BiTape Symbol) : t.moveRight.moveLeft = t
 ```
 
-`Cslib.Turing.BiTape.write` (definition, [line 124](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L124))
+`Cslib.Turing.BiTape.write` (definition, [line 124](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L124))
 
 > Write a value under the head of the `BiTape`.
 
@@ -120,7 +120,7 @@ lemma moveRight_moveLeft (t : BiTape Symbol) : t.moveRight.moveLeft = t
 def write (t : BiTape Symbol) (a : Option Symbol) : BiTape Symbol
 ```
 
-`Cslib.Turing.BiTape.spaceUsed` (definition, [line 130](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L130))
+`Cslib.Turing.BiTape.spaceUsed` (definition, [line 130](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L130))
 
 > The space used by a `BiTape` is the number of symbols
 > between and including the head, and leftmost and rightmost non-blank symbols on the `BiTape`.
@@ -129,21 +129,21 @@ def write (t : BiTape Symbol) (a : Option Symbol) : BiTape Symbol
 def spaceUsed (t : BiTape Symbol) : ℕ
 ```
 
-`Cslib.Turing.BiTape.spaceUsed_write` (lemma, [line 133](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L133))
+`Cslib.Turing.BiTape.spaceUsed_write` (lemma, [line 133](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L133))
 
 ```lean
 lemma spaceUsed_write (t : BiTape Symbol) (a : Option Symbol) :
     (t.write a).spaceUsed = t.spaceUsed
 ```
 
-`Cslib.Turing.BiTape.spaceUsed_mk₁` (lemma, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L136))
+`Cslib.Turing.BiTape.spaceUsed_mk₁` (lemma, [line 136](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L136))
 
 ```lean
 lemma spaceUsed_mk₁ (l : List Symbol) :
     (mk₁ l).spaceUsed = max 1 l.length
 ```
 
-`Cslib.Turing.BiTape.spaceUsed_move` (lemma, [line 142](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean#L142))
+`Cslib.Turing.BiTape.spaceUsed_move` (lemma, [line 142](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean#L142))
 
 ```lean
 lemma spaceUsed_move (t : BiTape Symbol) (d : Turing.Dir) :
@@ -156,5 +156,5 @@ lemma spaceUsed_move (t : BiTape Symbol) (d : Turing.Dir) :
 
 ## Sources
 
-- [Cslib/Foundations/Data/BiTape.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/BiTape.lean)
+- [Cslib/Foundations/Data/BiTape.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/BiTape.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Data.BiTape.json)

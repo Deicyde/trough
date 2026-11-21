@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.13 Colimits of algebraic spaces along thickenings
 
-Section 87.13 of the Stacks Project, [Tag 0AIT](https://stacks.math.columbia.edu/tag/0AIT). 4 tags here are carried by 72 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.13 of the Stacks Project, [Tag 0AIT](https://stacks.math.columbia.edu/tag/0AIT). 4 tags here are carried by 72 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AIU, a lemma
 
 [Tag 0AIU](https://stacks.math.columbia.edu/tag/0AIU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_colimit_isRepresentableThickeningULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ColimitOfAlgebraicSpaceThickenings.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ColimitOfAlgebraicSpaceThickenings.lean#L78). The attribute's comment: “corrected form (errata.md, 2026-10-27, entry 0GVM, 0AIU): the printed statement is false, since for an index set large compared with the site the colimit admits no surjection from an object of the site, so it fails the set-theoretic condition of Stacks 0AIS that Definition 0AIM includes in being a formal algebraic space (AlgebraicGeometry.FormalSpace.not\_forall\_isFormalAlgebraicSpace\_colimit\_thickenings). The correction adds exactly that clause of the conclusion to the hypotheses, for a sheaf isomorphic to the colimit; the source's other hypotheses are unchanged and its charts are constructed in the proof”.
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_of_colimit_isRepresentableThickeningULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ColimitOfAlgebraicSpaceThickenings.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ColimitOfAlgebraicSpaceThickenings.lean#L78). The attribute's comment: “corrected form (errata.md, 2026-10-27, entry 0GVM, 0AIU): the printed statement is false, since for an index set large compared with the site the colimit admits no surjection from an object of the site, so it fails the set-theoretic condition of Stacks 0AIS that Definition 0AIM includes in being a formal algebraic space (AlgebraicGeometry.FormalSpace.not\_forall\_isFormalAlgebraicSpace\_colimit\_thickenings). The correction adds exactly that clause of the conclusion to the hypotheses, for a sheaf isomorphic to the colimit; the source's other hypotheses are unchanged and its charts are constructed in the proof”.
 
 > **Stacks 0AIU, corrected.** Let `E` be a directed system of algebraic spaces over `S` whose
 > transition morphisms are representable thickenings. A sheaf `Z` isomorphic to `colim E` which
@@ -41,7 +41,7 @@ theorem isFormalAlgebraicSpace_of_colimit_isRepresentableThickeningULift
 
 [Tag 0CB8](https://stacks.math.columbia.edu/tag/0CB8) in the Stacks Project.
 
-**`PadicComplexInt.isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L127). The attribute's comment: “a weak ideal of definition that is not an ideal of definition, on the ring of integers of ℂ\_[p]”.
+**`PadicComplexInt.isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L127). The attribute's comment: “a weak ideal of definition that is not an ideal of definition, on the ring of integers of ℂ\_[p]”.
 
 > **Stacks 0AIW**, the negative clause on the example of Stacks 0CB8. The maximal ideal of the
 > ring of integers of the field `ℂ_[p]` of `p`-adic complex numbers is a weak ideal of definition
@@ -55,7 +55,7 @@ theorem isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition :
       ¬ TopologicalRing.IsIdealOfDefinition (maximalIdeal (PadicComplexInt p))
 ```
 
-**`PadicComplexInt.isIdealOfDefinition_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L162). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.isIdealOfDefinition_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L162). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The ideal `(p)` is an ideal of definition of the ring of integers of
 > `ℂ_[p]`: its topology is the `(p)`-adic one.
@@ -66,7 +66,7 @@ theorem isIdealOfDefinition_span_p :
       (Ideal.span ({(p : PadicComplexInt p)} : Set (PadicComplexInt p)))
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isWeakIdealOfDefinition_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L233). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isWeakIdealOfDefinition_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L233). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** In a local ring whose topology is `(π)`-adic, with the radical of `(π)` the
 > maximal ideal, the maximal ideal is a weak ideal of definition: it is open, and each of its
@@ -79,7 +79,7 @@ theorem isWeakIdealOfDefinition_maximalIdeal
     TopologicalRing.IsWeakIdealOfDefinition (maximalIdeal A)
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L245). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L245). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** A complete local ring whose topology is `(π)`-adic, with the radical of
 > `(π)` the maximal ideal, is weakly admissible: the maximal ideal is a weak ideal of
@@ -93,7 +93,7 @@ theorem isWeaklyAdmissible
     TopologicalRing.IsWeaklyAdmissible A
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isAffineFormalAlgebraicSpace_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L307). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isAffineFormalAlgebraicSpace_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L307). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** A complete local ring whose topology is `(π)`-adic, with the radical of
 > `(π)` the maximal ideal, has an affine formal algebraic space as formal spectrum, with no
@@ -113,7 +113,7 @@ theorem isAffineFormalAlgebraicSpace_formalSpectrum
     IsAffineFormalAlgebraicSpace B S hS (formalSpectrum D)
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isRelativelyRepresentable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L378). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isRelativelyRepresentable_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L378). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** The residue-field stage `Spec κ ⟶ Spf A` of the formal spectrum, that is
 > the colimit cocone map at the weak ideal of definition `𝔪`, is representable by objects of the
@@ -131,7 +131,7 @@ theorem isRelativelyRepresentable_residueField
       (formalSpectrumInclusion D (OrderDual.toDual J))
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isThickening_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L394). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isThickening_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L394). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** The residue-field stage `Spec κ ⟶ Spf A` of the formal spectrum is a
 > thickening: each of its base changes along a morphism from a represented sheaf is a thickening
@@ -153,7 +153,7 @@ theorem isThickening_residueField
       (formalSpectrumInclusion D (OrderDual.toDual J))
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.not_isIdealOfDefinition_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L416). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.not_isIdealOfDefinition_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean, line 416](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealOfDefinitionExample.lean#L416). The attribute's comment: “a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0CB8.** In a valuation ring whose topology is `(π)`-adic for some `π` in the
 > maximal ideal, the maximal ideal is not an ideal of definition if it is not finitely generated:
@@ -168,7 +168,7 @@ theorem not_isIdealOfDefinition_maximalIdeal
     ¬ TopologicalRing.IsIdealOfDefinition (maximalIdeal A)
 ```
 
-**`rationalPolynomial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L62). The attribute's comment: “the rational power series valuation ring”.
+**`rationalPolynomial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L62). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** Finite sums `∑ a_α t^α` with `α` ranging over nonnegative rationals,
 > realised as the monoid algebra of `ℚ≥0` over `k`.
@@ -177,7 +177,7 @@ theorem not_isIdealOfDefinition_maximalIdeal
 abbrev rationalPolynomial (k : Type*) [CommRing k]
 ```
 
-**`polynomialT`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L66). The attribute's comment: “the rational power series valuation ring”.
+**`polynomialT`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L66). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The monomial `t = t^1` in `rationalPolynomial k`.
 
@@ -185,7 +185,7 @@ abbrev rationalPolynomial (k : Type*) [CommRing k]
 def polynomialT (k : Type*) [CommRing k] : rationalPolynomial k
 ```
 
-**`polynomialTIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L71). The attribute's comment: “the rational power series valuation ring”.
+**`polynomialTIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L71). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The principal ideal `(t)` of `rationalPolynomial k`.
 
@@ -193,7 +193,7 @@ def polynomialT (k : Type*) [CommRing k] : rationalPolynomial k
 def polynomialTIdeal (k : Type*) [CommRing k] : Ideal (rationalPolynomial k)
 ```
 
-**`rationalPowerSeries`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L77). The attribute's comment: “the rational power series valuation ring”.
+**`rationalPowerSeries`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L77). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents over `k`,
 > constructed as the `(t)`-adic completion of `rationalPolynomial k`.
@@ -202,7 +202,7 @@ def polynomialTIdeal (k : Type*) [CommRing k] : Ideal (rationalPolynomial k)
 abbrev rationalPowerSeries (k : Type*) [CommRing k]
 ```
 
-**`CoefficientFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L83). The attribute's comment: “the rational power series valuation ring”.
+**`CoefficientFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L83). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** Coefficient families `(a_α)_{α ∈ ℚ≥0}` in `k` having, for every natural
 > number `n`, only finitely many nonzero entries with `α ≤ n`.
@@ -211,7 +211,7 @@ abbrev rationalPowerSeries (k : Type*) [CommRing k]
 def CoefficientFamily (k : Type*) [Zero k]
 ```
 
-**`coefficientRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L90). The attribute's comment: “the rational power series valuation ring”.
+**`coefficientRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L90). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The subring of `HahnSeries ℚ≥0 k` generated by the series whose support
 > is finite below every integer bound. `RationalPowerSeries.mem_coefficientRing_iff` shows that
@@ -221,7 +221,7 @@ def CoefficientFamily (k : Type*) [Zero k]
 def coefficientRing (k : Type*) [CommRing k] : Subring (HahnSeries ℚ≥0 k)
 ```
 
-**`RationalPowerSeries.t`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L98). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.t`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L98). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The element `π = t` of `rationalPowerSeries k`, the image of the
 > exponent-one monomial under the completion map.
@@ -230,7 +230,7 @@ def coefficientRing (k : Type*) [CommRing k] : Subring (HahnSeries ℚ≥0 k)
 def t (k : Type*) [CommRing k] : rationalPowerSeries k
 ```
 
-**`RationalPowerSeries.tIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L104). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.tIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L104). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The principal ideal `(t)` of `rationalPowerSeries k`, whose powers
 > define the topology.
@@ -239,7 +239,7 @@ def t (k : Type*) [CommRing k] : rationalPowerSeries k
 def tIdeal (k : Type*) [CommRing k] : Ideal (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.mem_coefficientRing_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L248). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.mem_coefficientRing_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CoefficientRing.lean#L248). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** Membership in `coefficientRing k` is precisely local finiteness of the
 > support below every integer bound; in particular the generating set of `coefficientRing k` is
@@ -251,7 +251,7 @@ theorem mem_coefficientRing_iff (k : Type*) [Field k] (f : HahnSeries ℚ≥0 k)
       ∀ n : ℕ, {q : ℚ≥0 | q ≤ n ∧ f.coeff q ≠ 0}.Finite
 ```
 
-**`RationalPowerSeries.exists_equiv_coefficientFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean#L552). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.exists_equiv_coefficientFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean, line 552](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean#L552). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** Every coefficient family `(a_α)` is represented by a unique element of
 > the coefficient ring, with unchanged coefficients.
@@ -262,7 +262,7 @@ theorem exists_equiv_coefficientFamily (k : Type*) [Field k] :
       ∀ f : CoefficientFamily k, ∀ q : ℚ≥0, ((e f).1).coeff q = f.1 q
 ```
 
-**`RationalPowerSeries.exists_ringEquiv_coefficientRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean#L607). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.exists_ringEquiv_coefficientRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean, line 607](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/CompletionEquiv.lean#L607). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The completed monoid algebra is the ring of locally finite coefficient
 > series, with the usual addition and convolution multiplication; the isomorphism preserves the
@@ -276,7 +276,7 @@ theorem exists_ringEquiv_coefficientRing (k : Type*) [Field k] :
           p.coeff q
 ```
 
-**`RationalPowerSeries.isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L39). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L39). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents is a
 > domain.
@@ -285,7 +285,7 @@ theorem exists_ringEquiv_coefficientRing (k : Type*) [Field k] :
 theorem isDomain (k : Type*) [Field k] : IsDomain (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.instIsDomain`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L52). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.instIsDomain`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L52). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents is a
 > domain.
@@ -294,7 +294,7 @@ theorem isDomain (k : Type*) [Field k] : IsDomain (rationalPowerSeries k)
 instance instIsDomain (k : Type*) [Field k] : IsDomain (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L58). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L58). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents is
 > local.
@@ -303,7 +303,7 @@ instance instIsDomain (k : Type*) [Field k] : IsDomain (rationalPowerSeries k)
 theorem isLocalRing (k : Type*) [Field k] : IsLocalRing (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.instIsLocalRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L66). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.instIsLocalRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L66). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents is
 > local.
@@ -312,7 +312,7 @@ theorem isLocalRing (k : Type*) [Field k] : IsLocalRing (rationalPowerSeries k)
 instance instIsLocalRing (k : Type*) [Field k] : IsLocalRing (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.isValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L72). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.isValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L72). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** This local domain is a valuation ring: inside its fraction field it is
 > maximal for the domination order among local subrings.
@@ -322,7 +322,7 @@ theorem isValuationRing (k : Type*) [Field k] :
     IsValuationRing (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.t_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L83). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.t_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L83). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The monomial `t` lies in the maximal ideal; in particular it is not a
 > unit.
@@ -332,7 +332,7 @@ theorem t_mem_maximalIdeal (k : Type*) [Field k] :
     t k ∈ IsLocalRing.maximalIdeal (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.isAdic_span_t`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L94). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.isAdic_span_t`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L94). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The topology of `rationalPowerSeries k` is the `(t)`-adic topology.
 
@@ -341,7 +341,7 @@ theorem isAdic_span_t (k : Type*) [Field k] :
     IsAdic (Ideal.span ({t k} : Set (rationalPowerSeries k)))
 ```
 
-**`RationalPowerSeries.isComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L100). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.isComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 100](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L100). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The ring of power series with nonnegative rational exponents is
 > separated and complete for its `(t)`-adic topology.
@@ -351,7 +351,7 @@ theorem isComplete (k : Type*) [Field k] :
     TopologicalRing.IsComplete (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.radical_span_t`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L133). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.radical_span_t`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L133). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The radical of `(t)` is the maximal ideal: every non-unit has positive
 > order, so some power of it is divisible by `t`.
@@ -362,7 +362,7 @@ theorem radical_span_t (k : Type*) [Field k] :
       IsLocalRing.maximalIdeal (rationalPowerSeries k)
 ```
 
-**`RationalPowerSeries.not_fg_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L205). The attribute's comment: “the rational power series valuation ring”.
+**`RationalPowerSeries.not_fg_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Valuation/RationalPowerSeries/ValuationRing.lean#L205). The attribute's comment: “the rational power series valuation ring”.
 
 > **Stacks 0CB8.** The maximal ideal is not finitely generated: finitely many elements of
 > the maximal ideal have a least positive order `a`, and the monomial of exponent `a / 2` is in
@@ -373,7 +373,7 @@ theorem not_fg_maximalIdeal (k : Type*) [Field k] :
     ¬ (IsLocalRing.maximalIdeal (rationalPowerSeries k)).FG
 ```
 
-**`PadicComplexInt.isAdic_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L93). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.isAdic_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L93). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The topology of the ring of integers of `ℂ_[p]`, inherited from `ℂ_[p]`, is
 > the `(p)`-adic topology.
@@ -383,7 +383,7 @@ theorem isAdic_span_p :
     IsAdic (Ideal.span ({(p : PadicComplexInt p)} : Set (PadicComplexInt p)))
 ```
 
-**`PadicComplexInt.instIsLinearTopology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L131). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.instIsLinearTopology`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L131). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The topology of the ring of integers of `ℂ_[p]` is linear: the open ideals
 > form a basis of neighbourhoods of zero.
@@ -392,7 +392,7 @@ theorem isAdic_span_p :
 instance instIsLinearTopology : IsLinearTopology (PadicComplexInt p) (PadicComplexInt p)
 ```
 
-**`PadicComplexInt.isComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L138). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.isComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L138). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The ring of integers of `ℂ_[p]` is separated and complete for its
 > topology.
@@ -401,7 +401,7 @@ instance instIsLinearTopology : IsLinearTopology (PadicComplexInt p) (PadicCompl
 theorem isComplete : TopologicalRing.IsComplete (PadicComplexInt p)
 ```
 
-**`PadicComplexInt.natCast_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L150). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.natCast_mem_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L150). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The element `p` of the ring of integers of `ℂ_[p]` lies in its maximal
 > ideal; in particular it is nonzero and not a unit.
@@ -411,7 +411,7 @@ theorem natCast_mem_maximalIdeal :
     (p : PadicComplexInt p) ∈ maximalIdeal (PadicComplexInt p)
 ```
 
-**`PadicComplexInt.radical_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L162). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.radical_span_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L162). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The radical of the ideal `(p)` of the ring of integers of `ℂ_[p]` is its
 > maximal ideal.
@@ -422,7 +422,7 @@ theorem radical_span_p :
       maximalIdeal (PadicComplexInt p)
 ```
 
-**`PadicComplexInt.isValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L193). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.isValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L193). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The ring of integers of `ℂ_[p]` is a valuation ring: inside its fraction
 > field it is maximal for the domination order among local subrings.
@@ -431,7 +431,7 @@ theorem radical_span_p :
 theorem isValuationRing : IsValuationRing (PadicComplexInt p)
 ```
 
-**`PadicComplexInt.not_fg_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L200). The attribute's comment: “the p-adic complex integers”.
+**`PadicComplexInt.not_fg_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/PadicComplexInt.lean#L200). The attribute's comment: “the p-adic complex integers”.
 
 > **Stacks 0CB8.** The maximal ideal of the ring of integers of `ℂ_[p]` is not finitely
 > generated: the valuation of `ℂ_[p]` takes arbitrarily small positive values, since `ℂ_[p]` is
@@ -445,7 +445,7 @@ theorem not_fg_maximalIdeal : ¬ (maximalIdeal (PadicComplexInt p)).FG
 
 [Tag 0AIV](https://stacks.math.columbia.edu/tag/0AIV) in the Stacks Project.
 
-**`AlgebraicGeometry.McQuillanFormalScheme.not_forall_isFppfColimitOfThickenings_of_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean#L90). The attribute's comment: “the statement as printed is false: the if direction, for sectionwise weak ideals of definition, fails for the twisted double, a formal scheme with a fundamental system of (weak) ideals of definition whose functor of points h\_𝔛 is not a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves); the corrected form is McQuillanFormalScheme.isFppfColimitOfThickenings\_iff\_exists\_isFundamentalSystem”.
+**`AlgebraicGeometry.McQuillanFormalScheme.not_forall_isFppfColimitOfThickenings_of_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean#L90). The attribute's comment: “the statement as printed is false: the if direction, for sectionwise weak ideals of definition, fails for the twisted double, a formal scheme with a fundamental system of (weak) ideals of definition whose functor of points h\_𝔛 is not a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves); the corrected form is McQuillanFormalScheme.isFppfColimitOfThickenings\_iff\_exists\_isFundamentalSystem”.
 
 > **Stacks 0AIV, the "if" direction as printed, is false.** There is a formal scheme `𝔛` in the
 > sense of McQuillan (the twisted double `AlgebraicGeometry.TwistedDouble.𝔛`, a formal scheme à la
@@ -468,7 +468,7 @@ theorem McQuillanFormalScheme.not_forall_isFppfColimitOfThickenings_of_exists :
         𝔛.IsFppfColimitOfThickenings
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.IsWeakIdealOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean#L108). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.IsWeakIdealOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean#L108). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
 
 > An ideal sheaf on `X` is a *weak ideal of definition* over a class `𝒜` of opens — the
 > affine formal open subschemes — when its ideal of sections over every open of `𝒜` is a weak
@@ -478,7 +478,7 @@ theorem McQuillanFormalScheme.not_forall_isFppfColimitOfThickenings_of_exists :
 def IsWeakIdealOfDefinitionOn (I : IdealSheaf X) (𝒜 : Opens X → Prop) : Prop
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IsFundamentalSystemOfWeakIdealsOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean#L118). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IsFundamentalSystemOfWeakIdealsOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinition.lean#L118). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
 
 > A family of ideal sheaves on `X` is a *fundamental system of weak ideals of definition* over
 > a class `𝒜` of opens — the affine formal open subschemes — when each member is a weak ideal of
@@ -490,7 +490,7 @@ def IsFundamentalSystemOfWeakIdealsOfDefinitionOn {X : LTRS.{u}} (𝒮 : Set (Id
     (𝒜 : Opens X → Prop) : Prop
 ```
 
-**`AlgebraicGeometry.McQuillanFormalScheme.isFppfColimitOfThickenings_iff_exists_isFundamentalSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitIff.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitIff.lean#L130). The attribute's comment: “h\_𝔛 is a colimit of schemes along thickenings as in Lemma 0AIU (colimit in fppf sheaves) exactly when there exists a fundamental system of weak ideals of definition, CORRECTED: the weak ideals of definition are those cut out by their sections over the affine formal opens, the ones to which the correspondence ℐ ↦ (𝔛, 𝒪\_𝔛/ℐ) applies (it fails for an arbitrary ideal sheaf)”.
+**`AlgebraicGeometry.McQuillanFormalScheme.isFppfColimitOfThickenings_iff_exists_isFundamentalSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitIff.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitIff.lean#L130). The attribute's comment: “h\_𝔛 is a colimit of schemes along thickenings as in Lemma 0AIU (colimit in fppf sheaves) exactly when there exists a fundamental system of weak ideals of definition, CORRECTED: the weak ideals of definition are those cut out by their sections over the affine formal opens, the ones to which the correspondence ℐ ↦ (𝔛, 𝒪\_𝔛/ℐ) applies (it fails for an arbitrary ideal sheaf)”.
 
 > The functor of points `h_𝔛` of a McQuillan formal scheme is a colimit of schemes along
 > thickenings, as in Stacks 0AIU, in fppf sheaves if and only if `𝔛` has a fundamental system of
@@ -503,7 +503,7 @@ theorem isFppfColimitOfThickenings_iff_exists_isFundamentalSystem (𝔛 : McQuil
         IsFundamentalSystemOfWeakIdealsOfDefinitionOn 𝒮 (IsWeakAffineFormalOpen 𝔛.obj)
 ```
 
-**`AlgebraicGeometry.McQuillanFormalScheme.exists_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_isFppfColimitOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitOnlyIf.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitOnlyIf.lean#L60). The attribute's comment: “the forward direction of the last sentence, as printed, with no extra hypothesis: if h\_𝔛 is a colimit of schemes along thickenings as in Lemma 0AIU (colimit in fppf sheaves), then there exists a fundamental system of weak ideals of definition for 𝔛, in the sectionwise sense the source defines, with no condition on its members. The converse fails as printed (not\_forall\_isFppfColimitOfThickenings\_of\_exists) and needs the members to be cut out by their sections (isFppfColimitOfThickenings\_iff\_exists\_isFundamentalSystem)”.
+**`AlgebraicGeometry.McQuillanFormalScheme.exists_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_isFppfColimitOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitOnlyIf.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionColimitOnlyIf.lean#L60). The attribute's comment: “the forward direction of the last sentence, as printed, with no extra hypothesis: if h\_𝔛 is a colimit of schemes along thickenings as in Lemma 0AIU (colimit in fppf sheaves), then there exists a fundamental system of weak ideals of definition for 𝔛, in the sectionwise sense the source defines, with no condition on its members. The converse fails as printed (not\_forall\_isFppfColimitOfThickenings\_of\_exists) and needs the members to be cut out by their sections (isFppfColimitOfThickenings\_iff\_exists\_isFundamentalSystem)”.
 
 > If the functor of points `h_𝔛` of a formal scheme `𝔛` in the sense of McQuillan is a colimit
 > of schemes along thickenings, then there exists a fundamental system of weak ideals of definition
@@ -518,7 +518,7 @@ theorem exists_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_isFppfColimitOfT
       IsFundamentalSystemOfWeakIdealsOfDefinitionOn 𝒮 (IsWeakAffineFormalOpen 𝔛.obj)
 ```
 
-**`AlgebraicGeometry.McQuillanFormalScheme.weakIdealOfDefinitionEquivThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L219). The attribute's comment: “the one-to-one correspondence between weak ideals of definition and thickenings Z → h\_𝔛, CORRECTED: the weak ideals of definition are those cut out by their sections over the affine formal opens (`IdealSheaf.IsCutOutOn`, the formal analogue of quasi-coherence), the printed statement for an arbitrary ideal sheaf being false (`exists_isWeakIdealOfDefinitionOn_forall_thickening_ideal_ne`); a thickening is a scheme Z with a relatively representable morphism h\_Z → h\_𝔛 whose base changes are thickenings of schemes, the functors of points being presheaves on all schemes, and thickenings are taken up to isomorphism over h\_𝔛”.
+**`AlgebraicGeometry.McQuillanFormalScheme.weakIdealOfDefinitionEquivThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L219). The attribute's comment: “the one-to-one correspondence between weak ideals of definition and thickenings Z → h\_𝔛, CORRECTED: the weak ideals of definition are those cut out by their sections over the affine formal opens (`IdealSheaf.IsCutOutOn`, the formal analogue of quasi-coherence), the printed statement for an arbitrary ideal sheaf being false (`exists_isWeakIdealOfDefinitionOn_forall_thickening_ideal_ne`); a thickening is a scheme Z with a relatively representable morphism h\_Z → h\_𝔛 whose base changes are thickenings of schemes, the functors of points being presheaves on all schemes, and thickenings are taken up to isomorphism over h\_𝔛”.
 
 > **Stacks 0AIV, the one-to-one correspondence between weak ideals of definition and thickenings
 > `Z → h_𝔛`.** A weak ideal of definition `ℐ` (cut out by its sections over the weak affine formal
@@ -530,7 +530,7 @@ noncomputable def weakIdealOfDefinitionEquivThickening :
     𝔛.WeakIdealOfDefinition ≃ Quotient (Thickening.setoid (𝔛 := 𝔛))
 ```
 
-**`AlgebraicGeometry.McQuillanFormalScheme.ker_quotientPoint_and_existsUnique_factor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L245). The attribute's comment: “the correspondence associates to ℐ the scheme Z = (𝔛, 𝒪\_𝔛/ℐ) with the obvious morphism to 𝔛: its kernel is ℐ and the points of 𝔛 killing ℐ are those factoring through it”.
+**`AlgebraicGeometry.McQuillanFormalScheme.ker_quotientPoint_and_existsUnique_factor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L245). The attribute's comment: “the correspondence associates to ℐ the scheme Z = (𝔛, 𝒪\_𝔛/ℐ) with the obvious morphism to 𝔛: its kernel is ℐ and the points of 𝔛 killing ℐ are those factoring through it”.
 
 > **Stacks 0AIV: the thickening attached to `ℐ` is `(𝔛, 𝒪_𝔛/ℐ)` with its obvious morphism to
 > `𝔛`.** The morphism `Z → 𝔛` of locally topologically ringed spaces underlying the thickening has
@@ -544,7 +544,7 @@ theorem ker_quotientPoint_and_existsUnique_factor (I : 𝔛.WeakIdealOfDefinitio
         I.1.Kills f ↔ ∃! k : T ⟶ I.thickening.scheme, schemeToLTRS.map k ≫ I.thickening.point = f
 ```
 
-**`AlgebraicGeometry.McQuillanFormalScheme.exists_isWeakIdealOfDefinitionOn_forall_thickening_ideal_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L259). The attribute's comment: “the printed correspondence, for an arbitrary ideal sheaf, is false: a weak ideal of definition which is the kernel of no thickening”.
+**`AlgebraicGeometry.McQuillanFormalScheme.exists_isWeakIdealOfDefinitionOn_forall_thickening_ideal_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCorrespondence.lean#L259). The attribute's comment: “the printed correspondence, for an arbitrary ideal sheaf, is false: a weak ideal of definition which is the kernel of no thickening”.
 
 > **Without the cut-out condition the correspondence of Stacks 0AIV fails.** There is a McQuillan
 > formal scheme — the pseudo-discretisation of the spectrum of the dual numbers over the `2`-adic
@@ -559,7 +559,7 @@ theorem exists_isWeakIdealOfDefinitionOn_forall_thickening_ideal_ne :
         ∀ Z : 𝔛.Thickening, Z.ideal ≠ I
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.exists_not_isWeakIdealOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L200). The attribute's comment: “the statement as printed is false: checking the weak ideal-of-definition condition on the members of an affine open covering does not suffice, already for Spec of the dual numbers over the 2-adic integers covered by itself, with the ideal sheaf of sections vanishing at the closed point; the corrected form is IdealSheaf.isWeakIdealOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.exists_not_isWeakIdealOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L200). The attribute's comment: “the statement as printed is false: checking the weak ideal-of-definition condition on the members of an affine open covering does not suffice, already for Spec of the dual numbers over the 2-adic integers covered by itself, with the ideal sheaf of sections vanishing at the closed point; the corrected form is IdealSheaf.isWeakIdealOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
 
 > **Stacks 0AIV is false as printed: the weak ideal of definition condition cannot be checked on
 > the members of an affine open covering.** There is a McQuillan formal scheme `X` whose whole space
@@ -576,7 +576,7 @@ theorem exists_not_isWeakIdealOfDefinitionOn_of_cover :
         ¬ I.IsWeakIdealOfDefinitionOn (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L248). The attribute's comment: “the statement as printed is false: checking the fundamental-system condition on the members of an affine open covering does not suffice, already for a one-member family on Spec of the dual numbers over the 2-adic integers covered by itself, with the ideal sheaf of sections vanishing at the closed point; the corrected form is isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L248). The attribute's comment: “the statement as printed is false: checking the fundamental-system condition on the members of an affine open covering does not suffice, already for a one-member family on Spec of the dual numbers over the 2-adic integers covered by itself, with the ideal sheaf of sections vanishing at the closed point; the corrected form is isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
 
 > **Stacks 0AIV, the locality of the fundamental-system condition, is false as printed.** It is
 > not true that a family of ideal sheaves on a formal scheme in the sense of McQuillan is a
@@ -605,7 +605,7 @@ theorem not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover :
       IsFundamentalSystemOfWeakIdealsOfDefinitionOn 𝒮 (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_hasBasis_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L315). The attribute's comment: “the statement as printed is false, also on the reading where the members are weak ideals of definition everywhere and the neighbourhood-basis property alone is checked on the members of an affine open covering: already for one weak ideal of definition on the pseudo-discretised Spec(Z[X\_0, X\_1, ...]/(X\_k^(k+1))) covered by itself; the corrected form is isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_hasBasis_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCoverCounterexample.lean#L315). The attribute's comment: “the statement as printed is false, also on the reading where the members are weak ideals of definition everywhere and the neighbourhood-basis property alone is checked on the members of an affine open covering: already for one weak ideal of definition on the pseudo-discretised Spec(Z[X\_0, X\_1, ...]/(X\_k^(k+1))) covered by itself; the corrected form is isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_cover\_of\_isMcQuillanFormalScheme”.
 
 > **Stacks 0AIV, the locality of the fundamental-system condition, is false as printed, also when
 > only the neighbourhood-basis half is checked on the covering.** It is not true that a family of
@@ -637,7 +637,7 @@ theorem not_forall_isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_hasBasis_cov
       IsFundamentalSystemOfWeakIdealsOfDefinitionOn 𝒮 (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean#L250). The attribute's comment: “it suffices to check the weak ideal-of-definition condition on the members of an affine open covering: for ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the correspondence with thickenings and of the colimit criterion; for an arbitrary ideal sheaf it is false (IdealSheaf.exists\_not\_isWeakIdealOfDefinitionOn\_of\_cover)”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean#L250). The attribute's comment: “it suffices to check the weak ideal-of-definition condition on the members of an affine open covering: for ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the correspondence with thickenings and of the colimit criterion; for an arbitrary ideal sheaf it is false (IdealSheaf.exists\_not\_isWeakIdealOfDefinitionOn\_of\_cover)”.
 
 > **Stacks 0AIV, the weak ideal-of-definition condition may be checked on the members of an
 > affine open covering, for ideal sheaves cut out by their sections.** Let `𝔛` be a formal scheme
@@ -664,7 +664,7 @@ theorem IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isCutOutOn
     I.IsWeakIdealOfDefinitionOn (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean#L280). The attribute's comment: “it suffices to check the fundamental-system condition on the members of an affine open covering: for a family indexed by a directed set, as in the source, of ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion; for arbitrary ideal sheaves it is false (not\_forall\_isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_hasBasis\_cover)”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean, line 280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionCutOutLocality.lean#L280). The attribute's comment: “it suffices to check the fundamental-system condition on the members of an affine open covering: for a family indexed by a directed set, as in the source, of ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion; for arbitrary ideal sheaves it is false (not\_forall\_isFundamentalSystemOfWeakIdealsOfDefinitionOn\_of\_hasBasis\_cover)”.
 
 > **Stacks 0AIV, the fundamental-system condition may be checked on the members of an affine
 > open covering, for ideal sheaves cut out by their sections.** Let `𝔛` be a formal scheme in the
@@ -696,7 +696,7 @@ theorem isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isCutOutOn
     IsFundamentalSystemOfWeakIdealsOfDefinitionOn 𝒮 (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isMcQuillanFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean#L65). The attribute's comment: “it suffices to check the weak ideal-of-definition condition on an affine open covering, CORRECTED: on the affine formal opens contained in a covering member, checking the covering members alone being insufficient (`exists_not_isWeakIdealOfDefinitionOn_of_cover`)”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isMcQuillanFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean#L65). The attribute's comment: “it suffices to check the weak ideal-of-definition condition on an affine open covering, CORRECTED: on the affine formal opens contained in a covering member, checking the covering members alone being insufficient (`exists_not_isWeakIdealOfDefinitionOn_of_cover`)”.
 
 > An ideal sheaf on a formal scheme `𝔛` in the sense of McQuillan is a weak ideal of definition
 > as soon as its ideals of sections over the affine formal opens contained in the members of an open
@@ -710,7 +710,7 @@ theorem IdealSheaf.isWeakIdealOfDefinitionOn_of_cover_of_isMcQuillanFormalScheme
     I.IsWeakIdealOfDefinitionOn (IsWeakAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isMcQuillanFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean#L81). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering, CORRECTED: on the affine formal opens contained in a covering member, checking the covering members alone being insufficient (`exists_not_isWeakIdealOfDefinitionOn_of_cover`), for a nonempty system directed by inclusion”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isMcQuillanFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakIdealOfDefinitionLocalityMcQuillan.lean#L81). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering, CORRECTED: on the affine formal opens contained in a covering member, checking the covering members alone being insufficient (`exists_not_isWeakIdealOfDefinitionOn_of_cover`), for a nonempty system directed by inclusion”.
 
 > A nonempty family of ideal sheaves on a formal scheme `𝔛` in the sense of McQuillan, directed
 > by inclusion, is a fundamental system of weak ideals of definition as soon as, over every affine
@@ -735,7 +735,7 @@ theorem isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isMcQuillanFor
 
 [Tag 0AIW](https://stacks.math.columbia.edu/tag/0AIW) in the Stacks Project.
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.IsIdealOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L180). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.IsIdealOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L180). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
 
 > An ideal sheaf on `X` is an *ideal of definition* over a class `𝒜` of opens — the affine
 > formal open subschemes — when its ideal of sections over every open of `𝒜` is an ideal of
@@ -745,7 +745,7 @@ theorem isFundamentalSystemOfWeakIdealsOfDefinitionOn_of_cover_of_isMcQuillanFor
 def IsIdealOfDefinitionOn (I : IdealSheaf X) (𝒜 : Opens X → Prop) : Prop
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IsFundamentalSystemOfIdealsOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L211). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IsFundamentalSystemOfIdealsOfDefinitionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 211](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L211). The attribute's comment: “the definition, over a class `𝒜` of affine formal opens”.
 
 > A family of ideal sheaves on `X` is a *fundamental system of ideals of definition* over a
 > class `𝒜` of opens — the affine formal open subschemes — when each member is an ideal of
@@ -757,7 +757,7 @@ def IsFundamentalSystemOfIdealsOfDefinitionOn {X : LTRS.{u}} (𝒮 : Set (IdealS
     (𝒜 : Opens X → Prop) : Prop
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_isIdealOfDefinition_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L448). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large, on a quasi-compact formal scheme à la EGA, over the members of a finite affine open covering, which is what the source's argument proves; `hdir` and `hne` are the source's directed index set `Λ`. Over every affine formal open the step is false for arbitrary ideal sheaves (erratum in errata.md, `not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`) and holds for systems cut out by their sections, `exists_forall_isIdealOfDefinitionOn_of_isCutOutOn`”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_isIdealOfDefinition_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 448](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L448). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large, on a quasi-compact formal scheme à la EGA, over the members of a finite affine open covering, which is what the source's argument proves; `hdir` and `hne` are the source's directed index set `Λ`. Over every affine formal open the step is false for arbitrary ideal sheaves (erratum in errata.md, `not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`) and holds for systems cut out by their sections, `exists_forall_isIdealOfDefinitionOn_of_isCutOutOn`”.
 
 > **Stacks 0AIW**, the eventual ideals of definition on a quasi-compact formal scheme à la EGA.
 > Here the class of opens is the class of affine formal open subschemes, so the two geometric
@@ -777,7 +777,7 @@ theorem exists_isIdealOfDefinition_of_isFormalScheme {X : LTRS.{u}} [CompactSpac
         ∀ V ∈ 𝒰, TopologicalRing.IsIdealOfDefinition (I.ideal V)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn_of_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L565). The attribute's comment: “we do NOT get the same correspondence as in Stacks 0AIV: already on a formal scheme à la EGA the ideal-of-definition condition is strictly stronger than the weak one, witnessed by the nilradical of the pseudo-discretisation of a one-prime scheme whose nilradical is not nilpotent”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn_of_nilradical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean, line 565](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinition.lean#L565). The attribute's comment: “we do NOT get the same correspondence as in Stacks 0AIV: already on a formal scheme à la EGA the ideal-of-definition condition is strictly stronger than the weak one, witnessed by the nilradical of the pseudo-discretisation of a one-prime scheme whose nilradical is not nilpotent”.
 
 > **Stacks 0AIW**, the separation of the ideal-of-definition condition from the weak one of
 > Stacks 0AIV, at the level of ideal sheaves on a formal scheme à la EGA. Let `R` be a nontrivial
@@ -797,7 +797,7 @@ theorem exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn_of_nilradical
         ¬ I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.FormalScheme.exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFppfColimitOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean#L192). The attribute's comment: “the direction from colimit to fundamental system: for 𝔛 quasi-compact, if h\_𝔛 is a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves) then there exists a fundamental system of ideals of definition for 𝔛, for ideal sheaves in the source's generality”.
+**`AlgebraicGeometry.FormalScheme.exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFppfColimitOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean#L192). The attribute's comment: “the direction from colimit to fundamental system: for 𝔛 quasi-compact, if h\_𝔛 is a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves) then there exists a fundamental system of ideals of definition for 𝔛, for ideal sheaves in the source's generality”.
 
 > **Stacks 0AIW, the "only if" direction, for arbitrary ideal sheaves.** If the functor of points
 > `h_𝔛` of a quasi-compact formal scheme `𝔛` à la EGA is a colimit of schemes along thickenings in
@@ -813,7 +813,7 @@ theorem FormalScheme.exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFppfC
       IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮 (IsAffineFormalOpen X.obj)
 ```
 
-**`AlgebraicGeometry.FormalScheme.isFppfColimitOfThickenings_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean#L218). The attribute's comment: “corrected form: for 𝔛 quasi-compact, h\_𝔛 is a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves) iff there exists a fundamental system of ideals of definition for 𝔛 cut out by their sections over the affine formal opens (erratum in errata.md); the direction from fundamental system to colimit as printed is false: see FormalScheme.not\_forall\_isFppfColimitOfThickenings\_of\_exists; the direction from colimit to fundamental system holds for arbitrary ideal sheaves, exists\_isFundamentalSystemOfIdealsOfDefinitionOn\_of\_isFppfColimitOfThickenings”.
+**`AlgebraicGeometry.FormalScheme.isFppfColimitOfThickenings_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean, line 218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionColimit.lean#L218). The attribute's comment: “corrected form: for 𝔛 quasi-compact, h\_𝔛 is a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves) iff there exists a fundamental system of ideals of definition for 𝔛 cut out by their sections over the affine formal opens (erratum in errata.md); the direction from fundamental system to colimit as printed is false: see FormalScheme.not\_forall\_isFppfColimitOfThickenings\_of\_exists; the direction from colimit to fundamental system holds for arbitrary ideal sheaves, exists\_isFundamentalSystemOfIdealsOfDefinitionOn\_of\_isFppfColimitOfThickenings”.
 
 > **Stacks 0AIW.** The functor of points `h_𝔛` of a quasi-compact formal scheme `𝔛` à la EGA is a
 > colimit of schemes along thickenings in fppf sheaves, as in Stacks 0AIU, if and only if `𝔛` has a
@@ -833,7 +833,7 @@ theorem FormalScheme.isFppfColimitOfThickenings_iff (X : FormalScheme.{u}) [Comp
         IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮 (IsAffineFormalOpen X.obj)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 730](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L730). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large: FALSE as printed, for ideal sheaves in the source's generality, on a quasi-compact (even affine) formal scheme à la EGA and for a nonempty directed system; the true statement is over the members of a finite affine open covering, `exists_isIdealOfDefinition_of_isFormalScheme`”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 730](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L730). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large: FALSE as printed, for ideal sheaves in the source's generality, on a quasi-compact (even affine) formal scheme à la EGA and for a nonempty directed system; the true statement is over the members of a finite affine open covering, `exists_isIdealOfDefinition_of_isFormalScheme`”.
 
 > **Stacks 0AIW, the eventual ideals of definition, is false as printed.** It is not true that on
 > every quasi-compact formal scheme à la EGA a fundamental system `{ℐ_λ}` of weak ideals of
@@ -858,7 +858,7 @@ theorem not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdea
         I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isIdealOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L763). The attribute's comment: “it suffices to check the ideal-of-definition condition on an affine open covering: FALSE as printed, for ideal sheaves in the source's generality, already for the covering of an affine formal scheme by itself”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isIdealOfDefinitionOn_of_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 763](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L763). The attribute's comment: “it suffices to check the ideal-of-definition condition on an affine open covering: FALSE as printed, for ideal sheaves in the source's generality, already for the covering of an affine formal scheme by itself”.
 
 > **Stacks 0AIW, the locality of the ideal-of-definition condition, is false as printed.** It is
 > not true that an ideal sheaf on a formal scheme à la EGA is an ideal of definition as soon as its
@@ -878,7 +878,7 @@ theorem not_forall_isIdealOfDefinitionOn_of_cover :
       I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfIdealsOfDefinitionOn_of_hasBasis_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L796). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering: FALSE as printed, for ideal sheaves in the source's generality, already for a single ideal of definition and the covering of an affine formal scheme by itself”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.not_forall_isFundamentalSystemOfIdealsOfDefinitionOn_of_hasBasis_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean, line 796](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCounterexample.lean#L796). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering: FALSE as printed, for ideal sheaves in the source's generality, already for a single ideal of definition and the covering of an affine formal scheme by itself”.
 
 > **Stacks 0AIW, the locality of the fundamental-system condition, is false as printed.** It is
 > not true that a family of ideals of definition on a formal scheme à la EGA is a fundamental system
@@ -905,7 +905,7 @@ theorem not_forall_isFundamentalSystemOfIdealsOfDefinitionOn_of_hasBasis_cover :
       IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮 (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_forall_isIdealOfDefinitionOn_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOut.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOut.lean#L278). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large, over EVERY affine formal open, for a directed system whose members are cut out by their sections over the affine formal opens (the condition of Stacks 0AIV singling out the ideal sheaves of thickenings); for arbitrary ideal sheaves the statement is false, `not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.exists_forall_isIdealOfDefinitionOn_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOut.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOut.lean#L278). The attribute's comment: “`ℐ_λ` is an ideal of definition for `λ` large, over EVERY affine formal open, for a directed system whose members are cut out by their sections over the affine formal opens (the condition of Stacks 0AIV singling out the ideal sheaves of thickenings); for arbitrary ideal sheaves the statement is false, `not_forall_exists_isIdealOfDefinitionOn_of_isFundamentalSystemOfWeakIdealsOfDefinitionOn`”.
 
 > **Stacks 0AIW, the eventual ideals of definition, for a system cut out by its sections.** On a
 > quasi-compact formal scheme à la EGA, let `𝒮` be a nonempty, directed fundamental system of weak
@@ -929,7 +929,7 @@ theorem exists_forall_isIdealOfDefinitionOn_of_isCutOutOn {X : LTRS.{u}} [Compac
       I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean#L162). The attribute's comment: “it suffices to check the ideal-of-definition condition on the members of an affine open covering: for ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion FormalScheme.isFppfColimitOfThickenings\_iff; for an arbitrary ideal sheaf it is false (not\_forall\_isIdealOfDefinitionOn\_of\_cover)”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean#L162). The attribute's comment: “it suffices to check the ideal-of-definition condition on the members of an affine open covering: for ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion FormalScheme.isFppfColimitOfThickenings\_iff; for an arbitrary ideal sheaf it is false (not\_forall\_isIdealOfDefinitionOn\_of\_cover)”.
 
 > **Stacks 0AIW, the ideal-of-definition condition may be checked on the members of an affine
 > open covering, for ideal sheaves cut out by their sections.** Let `𝔛` be a formal scheme à la EGA
@@ -953,7 +953,7 @@ theorem IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isCutOutOn
     I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean#L191). The attribute's comment: “it suffices to check the fundamental-system condition on the members of an affine open covering: for a family indexed by a directed set, as in the source, of ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion FormalScheme.isFppfColimitOfThickenings\_iff; for arbitrary ideal sheaves it is false (not\_forall\_isFundamentalSystemOfIdealsOfDefinitionOn\_of\_hasBasis\_cover)”. References: EGA I (10.3.7), “more general”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isCutOutOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionCutOutLocality.lean#L191). The attribute's comment: “it suffices to check the fundamental-system condition on the members of an affine open covering: for a family indexed by a directed set, as in the source, of ideal sheaves cut out by their sections over the affine formal opens (IdealSheaf.IsCutOutOn), the class of the colimit criterion FormalScheme.isFppfColimitOfThickenings\_iff; for arbitrary ideal sheaves it is false (not\_forall\_isFundamentalSystemOfIdealsOfDefinitionOn\_of\_hasBasis\_cover)”. References: EGA I (10.3.7), “more general”.
 
 > **Stacks 0AIW, the fundamental-system condition may be checked on the members of an affine
 > open covering, for ideal sheaves cut out by their sections.** Let `𝔛` be a formal scheme à la EGA
@@ -982,7 +982,7 @@ theorem isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isCutOutOn
     IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮 (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean#L112). The attribute's comment: “it suffices to check the ideal-of-definition condition on an affine open covering, CORRECTED, on a formal scheme à la EGA with no further hypothesis: the condition is checked on the affine formal opens contained in a covering member, not on the covering members themselves, which is false as the source states it (`not_forall_isIdealOfDefinitionOn_of_cover`)”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean#L112). The attribute's comment: “it suffices to check the ideal-of-definition condition on an affine open covering, CORRECTED, on a formal scheme à la EGA with no further hypothesis: the condition is checked on the affine formal opens contained in a covering member, not on the covering members themselves, which is false as the source states it (`not_forall_isIdealOfDefinitionOn_of_cover`)”.
 
 > **Stacks 0AIW**, the locality of the ideal-of-definition condition on a formal scheme à la EGA.
 > An ideal sheaf is an ideal of definition as soon as its ideals of sections over the affine formal
@@ -998,7 +998,7 @@ theorem IdealSheaf.isIdealOfDefinitionOn_of_cover_of_isFormalScheme {X : LTRS.{u
     I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean#L131). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering, CORRECTED, on a formal scheme à la EGA with no further hypothesis: both halves are checked on the affine formal opens contained in a covering member, not on the covering members themselves, which is false as the source states it (`not_forall_isFundamentalSystemOfIdealsOfDefinitionOn_of_hasBasis_cover`), for a nonempty system directed by inclusion (`hne`, `hdir`), the source's directed index set `Λ`”.
+**`AlgebraicGeometry.LocallyTopologicallyRingedSpace.isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isFormalScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/IdealOfDefinitionLocality.lean#L131). The attribute's comment: “it suffices to check the fundamental-system condition on an affine open covering, CORRECTED, on a formal scheme à la EGA with no further hypothesis: both halves are checked on the affine formal opens contained in a covering member, not on the covering members themselves, which is false as the source states it (`not_forall_isFundamentalSystemOfIdealsOfDefinitionOn_of_hasBasis_cover`), for a nonempty system directed by inclusion (`hne`, `hdir`), the source's directed index set `Λ`”.
 
 > **Stacks 0AIW**, the locality of the fundamental-system condition on a formal scheme à la EGA,
 > with no hypothesis on the class of opens: for a nonempty family directed by inclusion, both halves
@@ -1019,7 +1019,7 @@ theorem isFundamentalSystemOfIdealsOfDefinitionOn_of_cover_of_isFormalScheme {X 
     IsFundamentalSystemOfIdealsOfDefinitionOn 𝒮 (IsAffineFormalOpen X)
 ```
 
-**`AlgebraicGeometry.FormalScheme.not_forall_isFppfColimitOfThickenings_of_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean#L65). The attribute's comment: “the if direction as printed (sectionwise ideals of definition) is false: a quasi-compact formal scheme with a fundamental system of ideals of definition whose functor of points h\_𝔛 is not a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves); corrected form: FormalScheme.isFppfColimitOfThickenings\_iff”.
+**`AlgebraicGeometry.FormalScheme.not_forall_isFppfColimitOfThickenings_of_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalScheme/TwistedDoubleColimit.lean#L65). The attribute's comment: “the if direction as printed (sectionwise ideals of definition) is false: a quasi-compact formal scheme with a fundamental system of ideals of definition whose functor of points h\_𝔛 is not a colimit of schemes as in Lemma 0AIU (colimit in fppf sheaves); corrected form: FormalScheme.isFppfColimitOfThickenings\_iff”.
 
 > **Stacks 0AIW, the "if" direction as printed, is false.** There is a quasi-compact formal
 > scheme `𝔛` à la EGA (the twisted double `AlgebraicGeometry.TwistedDouble.𝔛`) which has a
@@ -1037,7 +1037,7 @@ theorem FormalScheme.not_forall_isFppfColimitOfThickenings_of_exists :
         X.toMcQuillanFormalScheme.IsFppfColimitOfThickenings
 ```
 
-**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isThickening_residueField_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L91). The attribute's comment: “we do NOT get the same correspondence between ideals of definition and thickenings as in Stacks 0AIV: the residue-field stage of Spf A is a thickening while the weak ideal of definition it corresponds to is not an ideal of definition (Stacks 0CB8); the formal spectrum is taken over a big fppf site through its presentation `D` (site membership and structure morphisms to `S`), as in the statements of Stacks 0CB8 combined here”.
+**`AlgebraicGeometry.FormalSpace.WeakIdealOfDefinitionExample.isThickening_residueField_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L91). The attribute's comment: “we do NOT get the same correspondence between ideals of definition and thickenings as in Stacks 0AIV: the residue-field stage of Spf A is a thickening while the weak ideal of definition it corresponds to is not an ideal of definition (Stacks 0CB8); the formal spectrum is taken over a big fppf site through its presentation `D` (site membership and structure morphisms to `S`), as in the statements of Stacks 0CB8 combined here”.
 
 > **Stacks 0AIW**, the failure of the correspondence of Stacks 0AIV for ideals of definition.
 > For a valuation ring `(A, 𝔪, κ)` which is `(π)`-adically complete for a nonzero `π ∈ 𝔪` whose
@@ -1066,7 +1066,7 @@ theorem isThickening_residueField_and_not_isIdealOfDefinition [IsDomain A]
       ¬ TopologicalRing.IsIdealOfDefinition J.1
 ```
 
-**`PadicComplexInt.isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L127). The attribute's comment: “the negative clause is not vacuous: in the ring of integers of ℂ\_[p] the maximal ideal is a weak ideal of definition and is not an ideal of definition”.
+**`PadicComplexInt.isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L127). The attribute's comment: “the negative clause is not vacuous: in the ring of integers of ℂ\_[p] the maximal ideal is a weak ideal of definition and is not an ideal of definition”.
 
 > **Stacks 0AIW**, the negative clause on the example of Stacks 0CB8. The maximal ideal of the
 > ring of integers of the field `ℂ_[p]` of `p`-adic complex numbers is a weak ideal of definition
@@ -1080,7 +1080,7 @@ theorem isWeakIdealOfDefinition_maximalIdeal_and_not_isIdealOfDefinition :
       ¬ TopologicalRing.IsIdealOfDefinition (maximalIdeal (PadicComplexInt p))
 ```
 
-**`PadicComplexInt.isThickening_residueField_not_from_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L142). The attribute's comment: “the negative clause on the example of Stacks 0CB8: a thickening of the formal spectrum of the ring of integers of ℂ\_[p] whose weak ideal of definition is not an ideal of definition; the formal spectrum is taken over a big fppf site through its presentation `D`”.
+**`PadicComplexInt.isThickening_residueField_not_from_idealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L142). The attribute's comment: “the negative clause on the example of Stacks 0CB8: a thickening of the formal spectrum of the ring of integers of ℂ\_[p] whose weak ideal of definition is not an ideal of definition; the formal spectrum is taken over a big fppf site through its presentation `D`”.
 
 > **Stacks 0AIW**, the negative clause on the example of Stacks 0CB8, geometrically: the
 > residue-field stage `Spec ℂ_[p]^- ⟶ Spf 𝒪_{ℂ_p}` of the formal spectrum of the ring of integers
@@ -1103,7 +1103,7 @@ theorem isThickening_residueField_not_from_idealOfDefinition
       ¬ TopologicalRing.IsIdealOfDefinition J.1
 ```
 
-**`PadicComplexInt.exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L241). The attribute's comment: “the negative clause is not vacuous at the level of ideal sheaves: an explicit formal scheme à la EGA with a weak ideal of definition that is not an ideal of definition”.
+**`PadicComplexInt.exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/IdealOfDefinitionNotAllThickenings.lean#L241). The attribute's comment: “the negative clause is not vacuous at the level of ideal sheaves: an explicit formal scheme à la EGA with a weak ideal of definition that is not an ideal of definition”.
 
 > **Stacks 0AIW**, the negative clause at the level of ideal sheaves, unconditionally. The
 > pseudo-discretisation of `Spec (𝒪_{ℂ_p}/(p))` is a formal scheme à la EGA whose nilradical is a
@@ -1119,7 +1119,7 @@ theorem exists_isWeakIdealOfDefinitionOn_not_isIdealOfDefinitionOn
         ¬ I.IsIdealOfDefinitionOn (IsAffineFormalOpen X)
 ```
 
-**`TopologicalRing.isIdealOfDefinition_of_le_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/IdealOfDefinition.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/IdealOfDefinition.lean#L106). The attribute's comment: “in an admissible topological ring all sufficiently small open ideals are ideals of definition: any open ideal contained in an ideal of definition is one”.
+**`TopologicalRing.isIdealOfDefinition_of_le_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/IdealOfDefinition.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Algebra/AdicTopology/IdealOfDefinition.lean#L106). The attribute's comment: “in an admissible topological ring all sufficiently small open ideals are ideals of definition: any open ideal contained in an ideal of definition is one”.
 
 > **Stacks 0AIW.** An open ideal contained in an ideal of definition is an ideal of definition:
 > its powers lie inside the corresponding powers of the larger ideal, and those are cofinal among
@@ -1140,4 +1140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.13, Tag 0AIT](https://stacks.math.columbia.edu/tag/0AIT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

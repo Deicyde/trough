@@ -8,13 +8,13 @@ proof: formalized
 
 # 72.11 Geometrically reduced algebraic spaces
 
-Section 72.11 of the Stacks Project, [Tag 0DMP](https://stacks.math.columbia.edu/tag/0DMP). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 72.11 of the Stacks Project, [Tag 0DMP](https://stacks.math.columbia.edu/tag/0DMP). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DMQ, a definition
 
 [Tag 0DMQ](https://stacks.math.columbia.edu/tag/0DMQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsGeometricallyReducedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L204). The attribute's comment: “part (1): at a point”.
+**`AlgebraicGeometry.Space.IsGeometricallyReducedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 204](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L204). The attribute's comment: “part (1): at a point”.
 
 > **Stacks 0DMQ, part (1).** An algebraic space `X` over a field `k` is *geometrically
 > reduced at* a point `x` of `X` when the étale local ring of `X` at every geometric point
@@ -28,7 +28,7 @@ abbrev IsGeometricallyReducedAt (k : Type u) [Field k] (B : BigFppfSite.{u})
     (x : points B (Spec (.of k)) hk X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGeometricallyReduced`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L217). The attribute's comment: “part (2): over the field”.
+**`AlgebraicGeometry.Space.IsGeometricallyReduced`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L217). The attribute's comment: “part (2): over the field”.
 
 > **Stacks 0DMQ, part (2).** An algebraic space over a field `k` is *geometrically
 > reduced* when it is geometrically reduced at every one of its points.
@@ -44,7 +44,7 @@ abbrev IsGeometricallyReduced (k : Type u) [Field k] (B : BigFppfSite.{u})
 
 [Tag 0DMR](https://stacks.math.columbia.edu/tag/0DMR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L510). The attribute's comment: “conditions (1) and (2): some étale neighbourhood”.
+**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 510](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L510). The attribute's comment: “conditions (1) and (2): some étale neighbourhood”.
 
 > **Stacks 0DMR, conditions (1) and (2).** An algebraic space over a field `k` is
 > geometrically reduced at a point `x` exactly when *some* étale neighbourhood `(U, u) → (X, x)`
@@ -63,7 +63,7 @@ theorem isGeometricallyReducedAt_iff_exists_etaleChart
                 (schemePoint B (Spec (.of k)) hk U p)
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L533). The attribute's comment: “conditions (1) and (3): every étale neighbourhood”.
+**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 533](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L533). The attribute's comment: “conditions (1) and (3): every étale neighbourhood”.
 
 > **Stacks 0DMR, conditions (1) and (3).** An algebraic space over a field `k` is
 > geometrically reduced at a point `x` exactly when *every* étale neighbourhood `(U, u) → (X, x)`
@@ -86,7 +86,7 @@ theorem isGeometricallyReducedAt_iff_forall_etaleChart
 
 [Tag 0DMS](https://stacks.math.columbia.edu/tag/0DMS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_exists_surjective_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 579](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L579). The attribute's comment: “conditions (1) and (2): some surjective étale chart”.
+**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_exists_surjective_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 579](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L579). The attribute's comment: “conditions (1) and (2): some surjective étale chart”.
 
 > **Stacks 0DMS, conditions (1) and (2).** An algebraic space over a field `k` is
 > geometrically reduced exactly when *some* surjective étale morphism `U → X` with `U` a scheme
@@ -101,7 +101,7 @@ theorem isGeometricallyReduced_iff_exists_surjective_etaleChart
           _root_.AlgebraicGeometry.GeometricallyReduced (B.inclusion.map U.hom)
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L600). The attribute's comment: “conditions (1) and (3): every étale chart”.
+**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_forall_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean, line 600](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReduced.lean#L600). The attribute's comment: “conditions (1) and (3): every étale chart”.
 
 > **Stacks 0DMS, conditions (1) and (3).** An algebraic space over a field `k` is
 > geometrically reduced exactly when *every* étale morphism `U → X` with `U` a scheme has `U`
@@ -120,7 +120,7 @@ theorem isGeometricallyReduced_iff_forall_etaleChart
 
 [Tag 0E02](https://stacks.math.columbia.edu/tag/0E02) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L440). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isGeometricallyReduced_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L440). The attribute's comment: “part (2)”.
 
 > **Stacks 0E02, part (2).** Over a perfect field a reduced algebraic space is geometrically
 > reduced: by Stacks 0DMS it suffices that every étale scheme chart is geometrically reduced,
@@ -133,7 +133,7 @@ theorem isGeometricallyReduced_of_isReduced [PerfectField k]
     IsGeometricallyReduced k B hk X hX
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedAt_of_isReduced_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedPerfectField.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedPerfectField.lean#L112). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isGeometricallyReducedAt_of_isReduced_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedPerfectField.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedPerfectField.lean#L112). The attribute's comment: “part (1)”.
 
 > **Stacks 0E02, part (1).** Let `X` be an algebraic space over a perfect field `k`, for
 > example a field of characteristic zero. If the étale local ring `𝒪_{X, x̄}` at a geometric
@@ -152,7 +152,7 @@ theorem isGeometricallyReducedAt_of_isReduced_etaleLocalRing
 
 [Tag 0E03](https://stacks.math.columbia.edu/tag/0E03) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_tfae_isReduced_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedBaseChange.lean#L135).
+**`AlgebraicGeometry.Space.isGeometricallyReduced_tfae_isReduced_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedBaseChange.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedBaseChange.lean#L135).
 
 > **Stacks 0E03.** Let `k` be a field of exponential characteristic `p` and let `X` be an
 > algebraic space over `k`. The following are equivalent:
@@ -213,7 +213,7 @@ theorem isGeometricallyReduced_tfae_isReduced_baseChange (k : Type u) [Field k] 
 
 [Tag 0E04](https://stacks.math.columbia.edu/tag/0E04) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedAt_relocalizeRestrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L347). The attribute's comment: “pointwise equivalence”.
+**`AlgebraicGeometry.Space.isGeometricallyReducedAt_relocalizeRestrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L347). The attribute's comment: “pointwise equivalence”.
 
 > **Stacks 0E04, pointwise statement.** An algebraic space over a field `k` is geometrically
 > reduced at a point `x` exactly when its base change to a field extension `k'/k` is
@@ -234,7 +234,7 @@ theorem isGeometricallyReducedAt_relocalizeRestrict_iff
           (fieldExtensionMap B k k' hk hk') X hX) x'
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_relocalizeRestrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L393). The attribute's comment: “global equivalence”.
+**`AlgebraicGeometry.Space.isGeometricallyReduced_relocalizeRestrict_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedFieldExtension.lean#L393). The attribute's comment: “global equivalence”.
 
 > **Stacks 0E04, global statement.** An algebraic space over a field `k` is geometrically
 > reduced over `k` exactly when its base change to a field extension `k'/k` is geometrically
@@ -254,7 +254,7 @@ theorem isGeometricallyReduced_relocalizeRestrict_iff
 
 [Tag 0E05](https://stacks.math.columbia.edu/tag/0E05) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_of_isEtaleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean#L93). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isGeometricallyReducedAt_iff_of_isEtaleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean, line 93](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean#L93). The attribute's comment: “part (1)”.
 
 > **Stacks 0E05, part (1).** Let `f : X ⟶ Y` be a morphism of algebraic spaces over a field
 > `k` and let `x` be a point of `X` with image `y`. If `f` is étale at `x`, then `X` is
@@ -271,7 +271,7 @@ theorem isGeometricallyReducedAt_iff_of_isEtaleAt
       IsGeometricallyReducedAt k B hk Y hY (pointsMap B (Spec (.of k)) hk X f x)
 ```
 
-**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_of_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean#L112). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isGeometricallyReduced_iff_of_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/GeometricallyReducedEtaleLocal.lean#L112). The attribute's comment: “part (2)”.
 
 > **Stacks 0E05, part (2).** Let `f : X ⟶ Y` be a surjective étale morphism of algebraic
 > spaces over a field `k`. Then `X` is geometrically reduced if and only if `Y` is.
@@ -293,4 +293,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 72.11, Tag 0DMP](https://stacks.math.columbia.edu/tag/0DMP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

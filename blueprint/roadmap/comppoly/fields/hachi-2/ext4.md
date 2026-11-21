@@ -7,7 +7,7 @@ proof: formalized
 
 # The degree-4 extension of Hachi
 
-`CompPoly.Fields.Hachi.Ext4`, in [CompPoly/Fields/Hachi/Ext4.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean), by Derek Sorensen.
+`CompPoly.Fields.Hachi.Ext4`, in [CompPoly/Fields/Hachi/Ext4.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean), by Derek Sorensen.
 
 > `Hachi[X] / (X^4 - 2)`, the degree-4 extension of the 32-bit prime field `2^32 - 99`.
 >
@@ -21,7 +21,7 @@ proof: formalized
 > * `Hachi.ext4Params`: the `BinomialParams` for `X^4 - 2`.
 > * `Hachi.Ext4`: the extension field itself.
 
-`Hachi.ext4Params` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L46))
+`Hachi.ext4Params` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L46))
 
 > The parameters of the quartic extension `Hachi[X] / (X^4 - 2)`.
 
@@ -29,25 +29,25 @@ proof: formalized
 def ext4Params : BinomialParams Field
 ```
 
-`Hachi.ext4Params_d` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L55))
+`Hachi.ext4Params_d` (theorem, [line 55](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L55))
 
 ```lean
 theorem ext4Params_d : ext4Params.d = 4
 ```
 
-`Hachi.ext4Params_W` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L56))
+`Hachi.ext4Params_W` (theorem, [line 56](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L56))
 
 ```lean
 theorem ext4Params_W : ext4Params.W = 2
 ```
 
-`Hachi.ext4Params_q` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L57))
+`Hachi.ext4Params_q` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L57))
 
 ```lean
 theorem ext4Params_q : ext4Params.q = fieldSize
 ```
 
-`Hachi.ext4Params_poly_irreducible` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L60))
+`Hachi.ext4Params_poly_irreducible` (theorem, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L60))
 
 > `X^4 - 2` is irreducible over Hachi, by the collapsed Rabin criterion.
 
@@ -55,7 +55,7 @@ theorem ext4Params_q : ext4Params.q = fieldSize
 theorem ext4Params_poly_irreducible : Irreducible ext4Params.poly
 ```
 
-`Hachi.Ext4` (abbreviation, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L77))
+`Hachi.Ext4` (abbreviation, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L77))
 
 > The degree-4 extension field of Hachi.
 
@@ -63,7 +63,7 @@ theorem ext4Params_poly_irreducible : Irreducible ext4Params.poly
 abbrev Ext4 : Type
 ```
 
-`Hachi.ext4Gen` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L80))
+`Hachi.ext4Gen` (definition, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L80))
 
 > The adjoined fourth root of `2`, as an element of `Ext4`.
 
@@ -71,7 +71,7 @@ abbrev Ext4 : Type
 def ext4Gen : Ext4
 ```
 
-`Hachi.ext4Gen_eq_gen` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L90))
+`Hachi.ext4Gen_eq_gen` (theorem, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L90))
 
 > `ext4Gen` is the framework's `Ext.gen`.
 >
@@ -84,7 +84,7 @@ def ext4Gen : Ext4
 theorem ext4Gen_eq_gen : ext4Gen = Ext.gen
 ```
 
-`Hachi.toQuot_ext4Gen` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L93))
+`Hachi.toQuot_ext4Gen` (theorem, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L93))
 
 > `ext4Gen` maps to the adjoined root of the specification.
 
@@ -92,7 +92,7 @@ theorem ext4Gen_eq_gen : ext4Gen = Ext.gen
 theorem toQuot_ext4Gen : Ext.toQuot ext4Gen = Ext.rt ext4Params.toExtensionParams
 ```
 
-`Hachi.ext4Gen_pow_four` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L97))
+`Hachi.ext4Gen_pow_four` (theorem, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L97))
 
 > **The defining relation**, as a theorem rather than only an executable check.
 
@@ -100,7 +100,7 @@ theorem toQuot_ext4Gen : Ext.toQuot ext4Gen = Ext.rt ext4Params.toExtensionParam
 theorem ext4Gen_pow_four : ext4Gen ^ 4 = Ext.ofBase (2 : Field)
 ```
 
-`Hachi.aeval_ext4Gen` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L101))
+`Hachi.aeval_ext4Gen` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L101))
 
 > `ext4Gen` is a root of `X^4 - 2`, in the form `aeval` expects.
 
@@ -108,7 +108,7 @@ theorem ext4Gen_pow_four : ext4Gen ^ 4 = Ext.ofBase (2 : Field)
 theorem aeval_ext4Gen : aeval ext4Gen ext4Params.poly = 0
 ```
 
-`Hachi.card_ext4` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean#L104))
+`Hachi.card_ext4` (theorem, [line 104](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean#L104))
 
 ```lean
 theorem card_ext4 : Fintype.card Ext4 = fieldSize ^ 4
@@ -126,5 +126,5 @@ theorem card_ext4 : Fintype.card Ext4 = fieldSize ^ 4
 
 ## Sources
 
-- [CompPoly/Fields/Hachi/Ext4.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Hachi/Ext4.lean)
+- [CompPoly/Fields/Hachi/Ext4.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Hachi/Ext4.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Hachi.Ext4.json)

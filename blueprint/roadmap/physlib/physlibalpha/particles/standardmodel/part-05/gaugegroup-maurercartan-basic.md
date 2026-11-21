@@ -8,7 +8,7 @@ proof: formalized
 
 # The Maurer–Cartan forms of the jet gauge group
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.MaurerCartan.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean): 12 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.MaurerCartan.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean): 12 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.MaurerCartan.Basic`,
 
 ## A. The Maurer–Cartan form of the jet gauge group
 
-**`StandardModel.maurerCartanForm`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L68).
+**`StandardModel.maurerCartanForm`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L68).
 
 > The Maurer–Cartan form `ω_μ(U) := i (∂_μ U) U⁻¹` of the jet gauge group, valued
 > in the jet gauge algebra.
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.MaurerCartan.Basic`,
 noncomputable def maurerCartanForm (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) : JetGaugeAlgebra
 ```
 
-**`StandardModel.maurerCartanForm_toSU3Matrix`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L77).
+**`StandardModel.maurerCartanForm_toSU3Matrix`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L77).
 
 ```lean
 lemma maurerCartanForm_toSU3Matrix (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
@@ -65,7 +65,7 @@ lemma maurerCartanForm_toSU3Matrix (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
       Complex.I • (U.1.1.map (pderiv μ) * star U.1.1)
 ```
 
-**`StandardModel.maurerCartanForm_toSU2Matrix`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L82).
+**`StandardModel.maurerCartanForm_toSU2Matrix`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L82).
 
 ```lean
 lemma maurerCartanForm_toSU2Matrix (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
@@ -73,7 +73,7 @@ lemma maurerCartanForm_toSU2Matrix (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
       Complex.I • (U.2.1.1.map (pderiv μ) * star U.2.1.1)
 ```
 
-**`StandardModel.maurerCartanForm_toU1Value`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L87).
+**`StandardModel.maurerCartanForm_toU1Value`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L87).
 
 ```lean
 lemma maurerCartanForm_toU1Value (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
@@ -81,34 +81,34 @@ lemma maurerCartanForm_toU1Value (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
       Complex.I • (pderiv μ U.2.2.1 * star U.2.2.1)
 ```
 
-**`StandardModel.maurerCartanForm_one`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L92).
+**`StandardModel.maurerCartanForm_one`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L92).
 
 ```lean
 lemma maurerCartanForm_one : maurerCartanForm (1 : JetGaugeGroupI) = 0
 ```
 
-**`StandardModel.maurerCartanForm_ofConstant`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L95).
+**`StandardModel.maurerCartanForm_ofConstant`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L95).
 
 ```lean
 lemma maurerCartanForm_ofConstant (U₀ : GaugeGroupI) :
     maurerCartanForm (JetGaugeGroupI.ofConstant U₀) = 0
 ```
 
-**`StandardModel.maurerCartanForm_cocycle`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L99).
+**`StandardModel.maurerCartanForm_cocycle`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L99).
 
 ```lean
 lemma maurerCartanForm_cocycle (U V : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) :
     maurerCartanForm (U * V) μ = maurerCartanForm U μ + adjoint U (maurerCartanForm V μ)
 ```
 
-**`StandardModel.deriv_zero_of_maurerCartanForm_zero`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L120).
+**`StandardModel.deriv_zero_of_maurerCartanForm_zero`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L120).
 
 ```lean
 lemma deriv_zero_of_maurerCartanForm_zero (U : JetGaugeGroupI) (h : maurerCartanForm U = 0) :
     ∀ μ, U.deriv μ = 0
 ```
 
-**`StandardModel.maurerCartanForm_eq_zero_iff_ofConstant`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L142).
+**`StandardModel.maurerCartanForm_eq_zero_iff_ofConstant`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L142).
 
 ```lean
 lemma maurerCartanForm_eq_zero_iff_ofConstant (U : JetGaugeGroupI) :
@@ -117,7 +117,7 @@ lemma maurerCartanForm_eq_zero_iff_ofConstant (U : JetGaugeGroupI) :
 
 ## B. The structural equation
 
-**`StandardModel.maurerCartanForm_structure`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L189).
+**`StandardModel.maurerCartanForm_structure`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L189).
 
 > The structural (Maurer–Cartan) equation, basis-independently: the Maurer–Cartan
 > form is flat,
@@ -140,7 +140,7 @@ lemma maurerCartanForm_structure (U : JetGaugeGroupI) (μ ν : Fin 1 ⊕ Fin 3) 
 
 ## C. The derivative of the adjoint action
 
-**`StandardModel.JetGaugeAlgebra.deriv_ofConstant`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L270).
+**`StandardModel.JetGaugeAlgebra.deriv_ofConstant`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L270).
 
 > The constant inclusion has vanishing formal derivative: constants have no
 > spacetime dependence.
@@ -150,7 +150,7 @@ lemma JetGaugeAlgebra.deriv_ofConstant (μ : Fin 1 ⊕ Fin 3) (a : GaugeAlgebra)
     deriv μ (ofConstant a) = 0
 ```
 
-**`StandardModel.deriv_adjointMap`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L279).
+**`StandardModel.deriv_adjointMap`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean#L279).
 
 > The formal derivative intertwines the adjoint action through the Maurer–Cartan
 > form: `∂_μ (Ad_U x) = Ad_U (∂_μ x) − ⁅ω_μ(U), Ad_U x⁆`. On the matrix factors this
@@ -170,4 +170,4 @@ lemma deriv_adjointMap (U : JetGaugeGroupI) (μ : Fin 1 ⊕ Fin 3) (x : JetGauge
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean)

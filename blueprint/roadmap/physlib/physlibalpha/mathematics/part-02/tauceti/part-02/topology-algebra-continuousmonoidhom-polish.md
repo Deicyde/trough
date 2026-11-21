@@ -8,7 +8,7 @@ proof: formalized
 
 # Polish spaces of continuous homomorphisms
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.ContinuousMonoidHom.Polish`, [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.ContinuousMonoidHom.Polish`, [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean): 1 declaration, 1 with a docstring.
 
 > The compact-open space of continuous homomorphisms from a second-countable locally compact monoid to
 > a Polish topological monoid is Polish.
@@ -29,7 +29,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Topology.Algebra.ContinuousMonoidHo
 
 ## A. Development
 
-**`ContinuousMonoidHom.instPolishSpace`**, an instance, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean#L45).
+**`ContinuousMonoidHom.instPolishSpace`**, an instance, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean#L45).
 
 > Continuous homomorphisms from a second-countable locally compact monoid to a Polish
 > topological monoid form a Polish space in the compact-open topology.
@@ -47,4 +47,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Topology/Algebra/ContinuousMonoidHom/Polish.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.21 Improving coherent formal modules
 
-Section 52.21 of the Stacks Project, [Tag 0EJD](https://stacks.math.columbia.edu/tag/0EJD). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.21 of the Stacks Project, [Tag 0EJD](https://stacks.math.columbia.edu/tag/0EJD). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EJE, a lemma
 
 [Tag 0EJE](https://stacks.math.columbia.edu/tag/0EJE) in the Stacks Project.
 
-**`Stacks.Algebraization.finite_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CompletedStalkFinite.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CompletedStalkFinite.lean#L441). The attribute's comment: “finiteness of the completed stalk over the completed local ring”.
+**`Stacks.Algebraization.finite_completedStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CompletedStalkFinite.lean, line 441](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/CompletedStalkFinite.lean#L441). The attribute's comment: “finiteness of the completed stalk over the completed local ring”.
 
 > **Stacks 0EJE, finiteness of the completed stalk.**
 >
@@ -33,7 +33,7 @@ theorem finite_completedStalk [IsLocallyNoetherian X] (J : X.IdealSheafData)
     Module.Finite (completedLocalRing J x) (completedStalk J G x)
 ```
 
-**`Stacks.Algebraization.isDepthOneQuotient_toImprovedSystem_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean#L112). The attribute's comment: “the canonical map (ℱₙ) → (ℱ'ₙ) of inverse systems of coherent modules, and its property (1); properties (2) and (3), which identify (ℱ'ₙ) pro-isomorphically with an object of Coh(X, ℐ), are not covered: they rest on Tag 0EIE, which this library does not carry”.
+**`Stacks.Algebraization.isDepthOneQuotient_toImprovedSystem_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean#L112). The attribute's comment: “the canonical map (ℱₙ) → (ℱ'ₙ) of inverse systems of coherent modules, and its property (1); properties (2) and (3), which identify (ℱ'ₙ) pro-isomorphically with an object of Coh(X, ℐ), are not covered: they rest on Tag 0EIE, which this library does not carry”.
 
 > Each component of the canonical map `(ℱₙ) ⟶ (ℱ'ₙ)` is the depth-one quotient of its source:
 > `ℱ'ₙ` is coherent, the map is surjective and an isomorphism on stalks outside `T`, and `ℱ'ₙ` has
@@ -44,7 +44,7 @@ theorem isDepthOneQuotient_toImprovedSystem_app (n : ℕᵒᵖ) :
     IsDepthOneQuotient T ((toImprovedSystem T hT F).app n)
 ```
 
-**`Stacks.Algebraization.exists_improving_map_of_coherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean#L133). The attribute's comment: “the canonical map out of an object of Coh(X, ℐ) and its property (1)”.
+**`Stacks.Algebraization.exists_improving_map_of_coherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModules.lean#L133). The attribute's comment: “the canonical map out of an object of Coh(X, ℐ) and its property (1)”.
 
 > A coherent adic system along an ideal sheaf admits a map to an inverse system of coherent
 > modules each of whose terms is the quotient of the corresponding term by its sections supported
@@ -56,7 +56,7 @@ theorem exists_improving_map_of_coherentAdicSystem {I : X.IdealSheafData}
     ∃ (G : ℕᵒᵖ ⥤ X.Modules) (τ : F.obj ⟶ G), ∀ n : ℕᵒᵖ, IsDepthOneQuotient T (τ.app n)
 ```
 
-**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_toImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesTheorem.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesTheorem.lean#L69). The attribute's comment: “the canonical map (ℱₙ) → (ℱ'ₙ) and its properties (1), (2) and (3); stated for every Noetherian scheme, without the dualizing complex of the source”.
+**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_toImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesTheorem.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesTheorem.lean#L69). The attribute's comment: “the canonical map (ℱₙ) → (ℱ'ₙ) and its properties (1), (2) and (3); stated for every Noetherian scheme, without the dualizing complex of the source”.
 
 > **Stacks Project, Tag 0EJE.** Let `X` be a Noetherian scheme, `ℐ` a quasi-coherent sheaf of
 > ideals with closed subscheme `Y`, `(ℱ_n)` an object of `Coh(X, ℐ)` and `T ⊆ Y` stable under
@@ -106,7 +106,7 @@ theorem exists_proIso_coherentAdicSystem_toImprovedSystem (hTY : T ⊆ I.support
 
 [Tag 0EJF](https://stacks.math.columbia.edu/tag/0EJF) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_canonicalImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthTwoCarrier.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthTwoCarrier.lean#L151). The attribute's comment: “the full lemma: under (a)-(e), the canonical map (ℱₙ) ⟶ (ℱ''ₙ), levelwise the improvement along T' ⊆ T, has depth(ℱ''\_\{n,y}) ≥ 1 for y ∈ T and depth(ℱ''\_\{n,y'}) ≥ 2 for y' ∈ T', (ℱ''ₙ) is pro-isomorphic to an object (ℋₙ) of Coh(X, ℐ), and the induced σ : (ℱₙ) ⟶ (ℋₙ) has kernel and cokernel annihilated by a power of ℐ: conclusions (1)-(4)”.
+**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_canonicalImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthTwoCarrier.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthTwoCarrier.lean#L151). The attribute's comment: “the full lemma: under (a)-(e), the canonical map (ℱₙ) ⟶ (ℱ''ₙ), levelwise the improvement along T' ⊆ T, has depth(ℱ''\_\{n,y}) ≥ 1 for y ∈ T and depth(ℱ''\_\{n,y'}) ≥ 2 for y' ∈ T', (ℱ''ₙ) is pro-isomorphic to an object (ℋₙ) of Coh(X, ℐ), and the induced σ : (ℱₙ) ⟶ (ℋₙ) has kernel and cokernel annihilated by a power of ℐ: conclusions (1)-(4)”.
 
 > **Stacks Project, Tag 0EJF.** Let `X` be a Noetherian scheme which locally has a dualizing
 > complex, `ℐ` a quasi-coherent ideal sheaf with support `Y`, `(ℱₙ)` an object of `Coh(X, ℐ)`,
@@ -185,7 +185,7 @@ theorem exists_proIso_coherentAdicSystem_canonicalImprovedSystem {X : Scheme.{u}
 
 [Tag 0EJG](https://stacks.math.columbia.edu/tag/0EJG) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_depthThreeImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthThreeCarrier.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthThreeCarrier.lean#L66).
+**`Stacks.Algebraization.exists_proIso_coherentAdicSystem_depthThreeImprovedSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthThreeCarrier.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ImprovingFormalModulesDepthThreeCarrier.lean#L66).
 
 > **[Stacks, Tag 0EJG].** Let `A` have a dualizing complex, let `d ≥ cd(A, I)` and let
 > `(ℱₙ)` in `Coh(U, I𝒪_U)` satisfy the `(2, 2 + d)`-inequalities. Then there is a map
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.21, Tag 0EJD](https://stacks.math.columbia.edu/tag/0EJD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

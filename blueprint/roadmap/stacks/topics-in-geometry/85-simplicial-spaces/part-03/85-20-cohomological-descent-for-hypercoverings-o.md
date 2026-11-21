@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.20 Cohomological descent for hypercoverings of an object: modules
 
-Section 85.20 of the Stacks Project, [Tag 0DA3](https://stacks.math.columbia.edu/tag/0DA3). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.20 of the Stacks Project, [Tag 0DA3](https://stacks.math.columbia.edu/tag/0DA3). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DA4, a lemma
 
 [Tag 0DA4](https://stacks.math.columbia.edu/tag/0DA4) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L290). The attribute's comment: “a^* on sheaves of modules is faithful. The essential-image inclusion is `isCartesianModule_of_mem_essImage_over`; fullness of a^*, and essential surjectivity onto the cartesian O-modules making a\_* a quasi-inverse, are not proved”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L290). The attribute's comment: “a^* on sheaves of modules is faithful. The essential-image inclusion is `isCartesianModule_of_mem_essImage_over`; fullness of a^*, and essential surjectivity onto the cartesian O-modules making a\_* a quasi-inverse, are not proved”.
 
 > **Stacks 0DA4, the faithfulness half.** Let `C` be a site with fibre products, `X` an object
 > of it, `O_C` a sheaf of commutative rings on `C` and `K` a hypercovering of `X`. With
@@ -27,7 +27,7 @@ theorem faithful_pullbackModules_over (hK : IsHypercovering P K) :
       OC).totalRingedHom.toModulesHom.pullbackModules.Faithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isCartesianModule_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L306). The attribute's comment: “the essential image of a^* consists of cartesian O-modules. Faithfulness of a^* is `faithful_pullbackModules_over`; fullness of a^*, and essential surjectivity onto the cartesian O-modules making a\_* a quasi-inverse, are not proved”.
+**`CategoryTheory.SimplicialSemiRepresentable.isCartesianModule_of_mem_essImage_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 306](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L306). The attribute's comment: “the essential image of a^* consists of cartesian O-modules. Faithfulness of a^* is `faithful_pullbackModules_over`; fullness of a^*, and essential surjectivity onto the cartesian O-modules making a\_* a quasi-inverse, are not proved”.
 
 > **Stacks 0DA4, the inclusion of the essential image in the cartesian modules.** In the
 > situation above, every sheaf of `O`-modules on the total site isomorphic to a pullback `a^*F` is
@@ -47,7 +47,7 @@ theorem isCartesianModule_of_mem_essImage_over
       (hypercoveringObjectRingedAugmentation P K OC).O F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L324). The attribute's comment: “a^* on sheaves of modules is full”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L324). The attribute's comment: “a^* on sheaves of modules is full”.
 
 > **Stacks 0DA4, the fullness half.** In the situation above, the pullback
 > `a^* : Mod(O_X) ⥤ Mod(O)` of sheaves of modules is full.
@@ -62,7 +62,7 @@ theorem full_pullbackModules_over (hK : IsHypercovering P K) :
       OC).totalRingedHom.toModulesHom.pullbackModules.Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulPullbackModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L334). The attribute's comment: “a^* on sheaves of modules is fully faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulPullbackModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L334). The attribute's comment: “a^* on sheaves of modules is fully faithful”.
 
 > **Stacks 0DA4, full faithfulness of `a^*` on sheaves of modules.**
 
@@ -72,7 +72,7 @@ def fullyFaithfulPullbackModulesOver (hK : IsHypercovering P K) :
       OC).totalRingedHom.toModulesHom.pullbackModules.FullyFaithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.essImage_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L348). The attribute's comment: “every cartesian O-module is an a^*M”.
+**`CategoryTheory.SimplicialSemiRepresentable.essImage_pullbackModules_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L348). The attribute's comment: “every cartesian O-module is an a^*M”.
 
 > **Stacks 0DA4, essential surjectivity onto the cartesian `O`-modules.** In the situation
 > above, every cartesian sheaf of `O`-modules on the total site is a pullback `a^*M`.
@@ -92,7 +92,7 @@ theorem essImage_pullbackModules_over (hK : IsHypercovering P K)
       OC).totalRingedHom.toModulesHom.pullbackModules.essImage F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_pullbackModules_iff_isCartesianModule_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L367). The attribute's comment: “the essential image of a^* on sheaves of modules is exactly the cartesian O-modules”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_pullbackModules_iff_isCartesianModule_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L367). The attribute's comment: “the essential image of a^* on sheaves of modules is exactly the cartesian O-modules”.
 
 > **Stacks 0DA4, the essential image of `a^*` is exactly the cartesian `O`-modules.** One
 > inclusion is `isCartesianModule_of_mem_essImage_over`, which is Stacks 0D7H (3); the other is
@@ -109,7 +109,7 @@ theorem mem_essImage_pullbackModules_iff_isCartesianModule_over (hK : IsHypercov
         (hypercoveringObjectRingedAugmentation P K OC).O F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_pullbackAdjPushforwardModules_unit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L381). The attribute's comment: “M = a\_* a^* M on sheaves of modules”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_pullbackAdjPushforwardModules_unit_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L381). The attribute's comment: “M = a\_* a^* M on sheaves of modules”.
 
 > **Stacks 0DA4, `a_*` is a quasi-inverse on `Mod(O_X)`.** The unit `M ⟶ a_*a^*M` of the
 > adjunction of Stacks 03D7 is an isomorphism for every sheaf of `O_X`-modules: a fully faithful
@@ -121,7 +121,7 @@ theorem isIso_pullbackAdjPushforwardModules_unit_over (hK : IsHypercovering P K)
       (hypercoveringObjectRingedAugmentation P K OC).totalRingedHom).unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_pullbackAdjPushforwardModules_counit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L396). The attribute's comment: “a^* a\_* F = F for a cartesian O-module F”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_pullbackAdjPushforwardModules_counit_app_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDescent.lean#L396). The attribute's comment: “a^* a\_* F = F for a cartesian O-module F”.
 
 > **Stacks 0DA4, `a_*` is a quasi-inverse on the cartesian `O`-modules.** The counit
 > `a^*a_*F ⟶ F` of the adjunction of Stacks 03D7 is an isomorphism at every cartesian sheaf of
@@ -144,7 +144,7 @@ theorem isIso_pullbackAdjPushforwardModules_counit_app_over (hK : IsHypercoverin
 
 [Tag 0DA5](https://stacks.math.columbia.edu/tag/0DA5) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedPullbackPushforwardUnit_app_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringSimplicialObjectModuleCohomologicalDescentUnconditional.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringSimplicialObjectModuleCohomologicalDescentUnconditional.lean#L275). The attribute's comment: “for a site with fibre products, a sheaf of rings and a hypercovering K of an object X, the map E -> Ra\_*La^*E is an isomorphism for every E in the unbounded D(O\_X)”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedPullbackPushforwardUnit_app_of_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringSimplicialObjectModuleCohomologicalDescentUnconditional.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringSimplicialObjectModuleCohomologicalDescentUnconditional.lean#L275). The attribute's comment: “for a site with fibre products, a sheaf of rings and a hypercovering K of an object X, the map E -> Ra\_*La^*E is an isomorphism for every E in the unbounded D(O\_X)”.
 
 > **Stacks 0DA5.** Let `C` be a site with fibre products, `X` an object of `C`, `O_C` a sheaf
 > of commutative rings on `C` and `K` a hypercovering of `X`. With `O_X = O_C|_{C/X}`,
@@ -179,7 +179,7 @@ theorem isIso_derivedPullbackPushforwardUnit_app_of_isHypercovering (hK : IsHype
 
 [Tag 0DA6](https://stacks.math.columbia.edu/tag/0DA6) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedModuleSectionsOverObjectIsoOfIsHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean#L321).
+**`CategoryTheory.SimplicialSemiRepresentable.derivedModuleSectionsOverObjectIsoOfIsHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean, line 321](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean#L321).
 
 > Let `C` be a site with fibre products, given by a pretopology `P`, let `X` be an object of
 > `C`, let `O_C` be a sheaf of commutative rings on `C` and let `K` be a hypercovering of `X` (a
@@ -206,7 +206,7 @@ def derivedModuleSectionsOverObjectIsoOfIsHypercovering (hK : IsHypercovering P 
           (ModuleCat.restrictScalars (totalSectionsRingHom P K OC)).mapDerivedCategory
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedModuleSectionsOverObjectIsoOfIsHypercovering_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean#L337). The attribute's comment: “the forward map of the isomorphism is the canonical one: RΓ(C/X, -) of the derived unit E|\_X ⟶ Ra\_*La^*(E|\_X), between RΓ(X, E) = RΓ(C/X, E|\_X) and the factorisation of Tag 08J6”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedModuleSectionsOverObjectIsoOfIsHypercovering_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleDerivedSections.lean#L337). The attribute's comment: “the forward map of the isomorphism is the canonical one: RΓ(C/X, -) of the derived unit E|\_X ⟶ Ra\_*La^*(E|\_X), between RΓ(X, E) = RΓ(C/X, E|\_X) and the factorisation of Tag 08J6”.
 
 > The forward map of `derivedModuleSectionsOverObjectIsoOfIsHypercovering` at `E` is
 > `RΓ(C/X, -)` of the derived unit `E|_X ⟶ Ra_*La^*(E|_X)` of the ringed augmentation, between the
@@ -231,7 +231,7 @@ theorem derivedModuleSectionsOverObjectIsoOfIsHypercovering_hom_app (hK : IsHype
 
 [Tag 0DA7](https://stacks.math.columbia.edu/tag/0DA7) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.exists_derivedPullbackEquivalence_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleBoundedBelowDescent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleBoundedBelowDescent.lean#L84).
+**`CategoryTheory.SimplicialSemiRepresentable.exists_derivedPullbackEquivalence_isHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleBoundedBelowDescent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/HypercoveringObjectModuleBoundedBelowDescent.lean#L84).
 
 > Let `C` be a site with fibre products, given by a pretopology `P`, let `X` be an object of
 > `C`, let `O_C` be a sheaf of commutative rings on `C` and let `K` be a hypercovering of `X`
@@ -281,4 +281,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.20, Tag 0DA3](https://stacks.math.columbia.edu/tag/0DA3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

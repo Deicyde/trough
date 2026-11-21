@@ -8,7 +8,7 @@ proof: formalized
 
 # The field data of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean): 5 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -67,7 +67,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Basic`,
 > it is supplied rather than inferred, so a second package over the same carriers is a
 > different context. `GaugeFieldData` adds only the matter content on top of it.
 
-**`GaugeFieldData`**, a structure, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L107).
+**`GaugeFieldData`**, a structure, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L107).
 
 > The field data of a gauge theory. Over a gauge context, given by a jet gauge group `GJ`
 > with global group `G₀`, a finite-dimensional real gauge algebra `𝔤` with jet algebra
@@ -132,7 +132,7 @@ structure GaugeFieldData {G₀ : Type} [Group G₀] {𝔤 : Type} [LieRing 𝔤]
 > algebra. Finite dimensionality of `𝔤` is what makes `Module.Dual ℝ 𝔤` the span of the
 > adjoint components, so that these generators really are the `A_μ^a`.
 
-**`GaugeFieldData.FermionValue`**, an abbrev, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L160).
+**`GaugeFieldData.FermionValue`**, an abbrev, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L160).
 
 > The value space of a fermionic species.
 
@@ -140,7 +140,7 @@ structure GaugeFieldData {G₀ : Type} [Group G₀] {𝔤 : Type} [LieRing 𝔤]
 abbrev FermionValue (i : T.FermionSpecies) : Type
 ```
 
-**`GaugeFieldData.BosonValue`**, an abbrev, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L163).
+**`GaugeFieldData.BosonValue`**, an abbrev, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L163).
 
 > The value space of a bosonic species.
 
@@ -155,7 +155,7 @@ abbrev BosonValue (j : T.BosonSpecies) : Type
 > They are stated on the datum alone so that a concrete theory can record them next to its
 > field data; the covariant derivative theory assumes them where it needs them.
 
-**`GaugeFieldData.PureJetsActTrivially`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L180).
+**`GaugeFieldData.PureJetsActTrivially`**, a def, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L180).
 
 > Pure gauge jets act trivially at the base point on every species of the datum.
 
@@ -163,7 +163,7 @@ abbrev BosonValue (j : T.BosonSpecies) : Type
 def PureJetsActTrivially : Prop
 ```
 
-**`GaugeFieldData.GaugeLorentzCompatible`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L185).
+**`GaugeFieldData.GaugeLorentzCompatible`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean#L185).
 
 > The infinitesimal gauge action of every species of the datum commutes with its Lorentz
 > representation.
@@ -178,4 +178,4 @@ def GaugeLorentzCompatible : Prop
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean)

@@ -7,9 +7,9 @@ proof: formalized
 
 # TypeClass
 
-`Batteries.Tactic.Lint.TypeClass`, in [Batteries/Tactic/Lint/TypeClass.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/TypeClass.lean), by Gabriel Ebner.
+`Batteries.Tactic.Lint.TypeClass`, in [Batteries/Tactic/Lint/TypeClass.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/TypeClass.lean), by Gabriel Ebner.
 
-`Batteries.Tactic.Lint.impossibleInstance` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/TypeClass.lean#L23))
+`Batteries.Tactic.Lint.impossibleInstance` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/TypeClass.lean#L23))
 
 > Lints for instances with arguments that cannot be filled in, like
 > ```
@@ -20,7 +20,7 @@ proof: formalized
 def impossibleInstance : Linter
 ```
 
-`Batteries.Tactic.Lint.nonClassInstance` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/TypeClass.lean#L48))
+`Batteries.Tactic.Lint.nonClassInstance` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/TypeClass.lean#L48))
 
 > A linter for checking if any declaration whose type is not a class is marked as an instance.
 
@@ -34,5 +34,5 @@ def nonClassInstance : Linter
 
 ## Sources
 
-- [Batteries/Tactic/Lint/TypeClass.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/TypeClass.lean)
+- [Batteries/Tactic/Lint/TypeClass.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/TypeClass.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Tactic.Lint.TypeClass.json)

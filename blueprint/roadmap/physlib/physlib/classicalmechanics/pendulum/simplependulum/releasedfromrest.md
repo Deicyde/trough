@@ -8,7 +8,7 @@ proof: formalized
 
 # The simple pendulum released from rest
 
-The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.ReleasedFromRest`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean): 9 declarations, 9 with a docstring.
+The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.ReleasedFromRest`, [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -67,7 +67,7 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.ReleasedFromRest`
 > The computation is the same rearrangement used throughout `SimplePendulum.Basic`, so no new
 > analytic input is needed here, only the two special values of the energy at time `0`.
 
-**`ClassicalMechanics.SimplePendulum.inertia_mul_sq_deriv_eq_of_isSolution_of_deriv_zero`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L99).
+**`ClassicalMechanics.SimplePendulum.inertia_mul_sq_deriv_eq_of_isSolution_of_deriv_zero`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L99).
 
 > Along a solution of the simple pendulum with `θ 0 0 = θ₀` and released from rest,
 > `∂ₜ θ 0 = 0`, the energy first integral holds at every instant in the form
@@ -83,7 +83,7 @@ lemma inertia_mul_sq_deriv_eq_of_isSolution_of_deriv_zero
     S.inertia * (∂ₜ θ t 0) ^ 2 = 2 * (S.m * S.g * S.ℓ) * (Real.cos (θ t 0) - Real.cos θ₀)
 ```
 
-**`ClassicalMechanics.SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L112).
+**`ClassicalMechanics.SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L112).
 
 > Along a solution of the simple pendulum with `θ 0 0 = θ₀` and released from rest,
 > `∂ₜ θ 0 = 0`, the energy first integral holds with the mass cancelled,
@@ -96,7 +96,7 @@ lemma sq_deriv_eq_of_isSolution_of_deriv_zero
     (∂ₜ θ t 0) ^ 2 = 2 * S.ω ^ 2 * (Real.cos (θ t 0) - Real.cos θ₀)
 ```
 
-**`ClassicalMechanics.SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero'`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L124).
+**`ClassicalMechanics.SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero'`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L124).
 
 > Along a solution of the simple pendulum with `θ 0 0 = θ₀` and released from rest,
 > `∂ₜ θ 0 = 0`, the energy first integral in the classical `g / ℓ` form:
@@ -119,7 +119,7 @@ lemma sq_deriv_eq_of_isSolution_of_deriv_zero'
 
 ### B.1. The motion and its identification with the small-angle trajectory
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L150).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L150).
 
 > The small-angle motion of the pendulum released from rest at initial angle `θ₀`: the
 > cosine `θ₀ cos (ω t)` of angular frequency `ω`.
@@ -128,7 +128,7 @@ lemma sq_deriv_eq_of_isSolution_of_deriv_zero'
 noncomputable def releasedFromRest (θ₀ : ℝ) : Time → EuclideanSpace ℝ (Fin 1)
 ```
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_eq`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L155).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_eq`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L155).
 
 > The motion released from rest at angle `θ₀` is the small-angle trajectory of the initial
 > conditions with initial angle `θ₀` and zero initial angular velocity.
@@ -140,7 +140,7 @@ lemma releasedFromRest_eq (θ₀ : ℝ) :
 
 ### B.2. Initial data and dynamics
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_at_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L170).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_at_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L170).
 
 > At time `0` the motion released from rest at angle `θ₀` is at the angle `θ₀`.
 
@@ -149,7 +149,7 @@ lemma releasedFromRest_at_zero (θ₀ : ℝ) :
     S.releasedFromRest θ₀ 0 = EuclideanSpace.single 0 θ₀
 ```
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_velocity_at_zero`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L177).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_velocity_at_zero`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L177).
 
 > The motion released from rest at angle `θ₀` is genuinely released from rest: its angular
 > velocity at time `0` vanishes.
@@ -158,7 +158,7 @@ lemma releasedFromRest_at_zero (θ₀ : ℝ) :
 lemma releasedFromRest_velocity_at_zero (θ₀ : ℝ) : ∂ₜ (S.releasedFromRest θ₀) 0 = 0
 ```
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_linearizedEquationOfMotion`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L183).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_linearizedEquationOfMotion`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L183).
 
 > The motion released from rest at angle `θ₀` satisfies the linearized equation of
 > motion.
@@ -168,7 +168,7 @@ lemma releasedFromRest_linearizedEquationOfMotion (θ₀ : ℝ) :
     S.LinearizedEquationOfMotion (S.releasedFromRest θ₀)
 ```
 
-**`ClassicalMechanics.SimplePendulum.releasedFromRest_periodic`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L190).
+**`ClassicalMechanics.SimplePendulum.releasedFromRest_periodic`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean#L190).
 
 > The motion released from rest at angle `θ₀` is periodic with the small-angle period: after
 > each time `2π √(ℓ/g)` the motion returns to the angle `θ₀` with zero angular velocity.
@@ -184,4 +184,4 @@ lemma releasedFromRest_periodic (θ₀ : ℝ) :
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean)
+- [Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean)

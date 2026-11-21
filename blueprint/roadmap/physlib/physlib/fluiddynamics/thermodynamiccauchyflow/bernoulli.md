@@ -8,7 +8,7 @@ proof: formalized
 
 # Bernoulli theory for thermodynamic Cauchy flows
 
-The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Bernoulli`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Bernoulli`, [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.FluidDynamics.ThermodynamicCauchyFlow.Bernoulli`, [Physlib/F
 
 ## A. Bernoulli function
 
-**`FluidDynamics.bernoulliFunction`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L49).
+**`FluidDynamics.bernoulliFunction`**, a def, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L49).
 
 > The Bernoulli function `|u|^2 / 2 + h + Phi`.
 
@@ -39,7 +39,7 @@ noncomputable def bernoulliFunction
 
 ## B. Bernoulli-law predicates
 
-**`FluidDynamics.LocalBernoulliLaw`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L61).
+**`FluidDynamics.LocalBernoulliLaw`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L61).
 
 > A local Bernoulli law: the Bernoulli function has zero spatial gradient.
 
@@ -48,7 +48,7 @@ def LocalBernoulliLaw
     (d : ℕ) (flow : ThermodynamicCauchyFlow d) (potential : Space d → ℝ) : Prop
 ```
 
-**`FluidDynamics.BernoulliLaw`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L66).
+**`FluidDynamics.BernoulliLaw`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean#L66).
 
 > A global Bernoulli law: the Bernoulli function is spatially constant at each time.
 
@@ -64,4 +64,4 @@ def BernoulliLaw
 
 ## Sources
 
-- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean)
+- [Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean)

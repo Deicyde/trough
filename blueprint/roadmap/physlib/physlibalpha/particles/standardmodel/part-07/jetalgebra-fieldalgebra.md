@@ -8,7 +8,7 @@ proof: formalized
 
 # The field algebra of the Standard Model is everything
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.FieldAlgebra`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean): 33 declarations, 33 with a docstring; 3 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.FieldAlgebra`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean): 33 declarations, 33 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.FieldAlgebra`, [Phys
 
 ## A. The generating set
 
-**`StandardModel.JetAlgebra.generators`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L88).
+**`StandardModel.JetAlgebra.generators`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L88).
 
 > The derivative symbols of every field of the Standard Model: the gauge field, the Higgs
 > and its conjugate, and the three generations of each of the five fermion species with
@@ -64,7 +64,7 @@ noncomputable def generators : Set JetAlgebra
 
 ### A.1. Membership of the generating set
 
-**`StandardModel.JetAlgebra.gaugeField_mem_generators`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L106).
+**`StandardModel.JetAlgebra.gaugeField_mem_generators`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L106).
 
 > The gauge-field symbols are generators.
 
@@ -73,7 +73,7 @@ lemma gaugeField_mem_generators (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕
     (φ : Module.Dual ℝ GaugeAlgebra) : gaugeField s μ φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.higgsField_mem_generators`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L111).
+**`StandardModel.JetAlgebra.higgsField_mem_generators`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L111).
 
 > The Higgs symbols are generators.
 
@@ -82,7 +82,7 @@ lemma higgsField_mem_generators (s : Multiset (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℂ HiggsVec) : higgsField s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjHiggsField_mem_generators`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L116).
+**`StandardModel.JetAlgebra.conjHiggsField_mem_generators`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L116).
 
 > The conjugate Higgs symbols are generators.
 
@@ -91,7 +91,7 @@ lemma conjHiggsField_mem_generators (s : Multiset (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℂ (ConjModule HiggsVec)) : conjHiggsField s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.downSingletField_mem_generators`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L122).
+**`StandardModel.JetAlgebra.downSingletField_mem_generators`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L122).
 
 > The symbols of the `i`-th generation down-type quark singlet are
 > generators.
@@ -101,7 +101,7 @@ lemma downSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3
     (φ : Module.Dual ℂ DownSinglet) : downSingletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjDownSingletField_mem_generators`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L129).
+**`StandardModel.JetAlgebra.conjDownSingletField_mem_generators`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L129).
 
 > The conjugate symbols of the `i`-th generation down-type quark singlet are
 > generators.
@@ -111,7 +111,7 @@ lemma conjDownSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ F
     (φ : Module.Dual ℂ (ConjModule DownSinglet)) : conjDownSingletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.upSingletField_mem_generators`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L136).
+**`StandardModel.JetAlgebra.upSingletField_mem_generators`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L136).
 
 > The symbols of the `i`-th generation up-type quark singlet are
 > generators.
@@ -121,7 +121,7 @@ lemma upSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℂ UpSinglet) : upSingletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjUpSingletField_mem_generators`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L143).
+**`StandardModel.JetAlgebra.conjUpSingletField_mem_generators`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L143).
 
 > The conjugate symbols of the `i`-th generation up-type quark singlet are
 > generators.
@@ -131,7 +131,7 @@ lemma conjUpSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     (φ : Module.Dual ℂ (ConjModule UpSinglet)) : conjUpSingletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.quarkDoubletField_mem_generators`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L150).
+**`StandardModel.JetAlgebra.quarkDoubletField_mem_generators`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L150).
 
 > The symbols of the `i`-th generation quark doublet are
 > generators.
@@ -141,7 +141,7 @@ lemma quarkDoubletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin 
     (φ : Module.Dual ℂ QuarkDoublet) : quarkDoubletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjQuarkDoubletField_mem_generators`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L157).
+**`StandardModel.JetAlgebra.conjQuarkDoubletField_mem_generators`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L157).
 
 > The conjugate symbols of the `i`-th generation quark doublet are
 > generators.
@@ -151,7 +151,7 @@ lemma conjQuarkDoubletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ 
     (φ : Module.Dual ℂ (ConjModule QuarkDoublet)) : conjQuarkDoubletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.leptonDoubletField_mem_generators`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L164).
+**`StandardModel.JetAlgebra.leptonDoubletField_mem_generators`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L164).
 
 > The symbols of the `i`-th generation lepton doublet are
 > generators.
@@ -161,7 +161,7 @@ lemma leptonDoubletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     (φ : Module.Dual ℂ LeptonDoubletV) : leptonDoubletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjLeptonDoubletField_mem_generators`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L171).
+**`StandardModel.JetAlgebra.conjLeptonDoubletField_mem_generators`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L171).
 
 > The conjugate symbols of the `i`-th generation lepton doublet are
 > generators.
@@ -171,7 +171,7 @@ lemma conjLeptonDoubletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕
     (φ : Module.Dual ℂ (ConjModule LeptonDoubletV)) : conjLeptonDoubletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.leptonSingletField_mem_generators`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L178).
+**`StandardModel.JetAlgebra.leptonSingletField_mem_generators`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L178).
 
 > The symbols of the `i`-th generation charged-lepton singlet are
 > generators.
@@ -181,7 +181,7 @@ lemma leptonSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     (φ : Module.Dual ℂ LeptonSinglet) : leptonSingletField i s φ ∈ generators
 ```
 
-**`StandardModel.JetAlgebra.conjLeptonSingletField_mem_generators`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L185).
+**`StandardModel.JetAlgebra.conjLeptonSingletField_mem_generators`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L185).
 
 > The conjugate symbols of the `i`-th generation charged-lepton singlet are
 > generators.
@@ -197,7 +197,7 @@ lemma conjLeptonSingletField_mem_generators (i : Fin 3) (s : Multiset (Fin 1 ⊕
 
 ### B.2. The Higgs sector
 
-**`StandardModel.JetAlgebra.higgsField_eq_includeHiggs`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L229).
+**`StandardModel.JetAlgebra.higgsField_eq_includeHiggs`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L229).
 
 > A Higgs symbol is the Higgs sector's own derivative symbol, included.
 
@@ -208,7 +208,7 @@ lemma higgsField_eq_includeHiggs (s : Multiset (Fin 1 ⊕ Fin 3))
       = includeHiggs (BosonicAlgebra.iteratedJetDeriv s (BosonicAlgebra.ofField φ))
 ```
 
-**`StandardModel.JetAlgebra.conjHiggsField_eq_includeHiggs`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L239).
+**`StandardModel.JetAlgebra.conjHiggsField_eq_includeHiggs`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L239).
 
 > A conjugate Higgs symbol is the Higgs sector's own conjugate derivative symbol,
 > included.
@@ -221,7 +221,7 @@ lemma conjHiggsField_eq_includeHiggs (s : Multiset (Fin 1 ⊕ Fin 3))
           (BosonicAlgebra.ofConjField φ))
 ```
 
-**`StandardModel.JetAlgebra.includeHiggs_mem_adjoin_generators`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L251).
+**`StandardModel.JetAlgebra.includeHiggs_mem_adjoin_generators`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L251).
 
 > Every element of the Higgs sector lies in the algebra generated by the symbols: the
 > Higgs jet algebra is generated by the Higgs field, its conjugate and their derivatives,
@@ -239,7 +239,7 @@ lemma includeHiggs_mem_adjoin_generators (h : HiggsJetAlgebra) :
 > single species and generation. Those span, by `FermionSpace.span_speciesDual_eq_top`, and
 > the symbol map is linear, so the families reach every symbol.
 
-**`StandardModel.JetAlgebra.fermionSymbol_eq_includeFermion`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L276).
+**`StandardModel.JetAlgebra.fermionSymbol_eq_includeFermion`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L276).
 
 > A fermionic symbol is the fermionic sector's own derivative symbol, included.
 
@@ -251,7 +251,7 @@ lemma fermionSymbol_eq_includeFermion (s : Multiset (Fin 1 ⊕ Fin 3))
           (FermionicAlgebra.ofField φ))
 ```
 
-**`StandardModel.JetAlgebra.conjFermionSymbol_eq_includeFermion`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L287).
+**`StandardModel.JetAlgebra.conjFermionSymbol_eq_includeFermion`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L287).
 
 > A conjugate fermionic symbol is the fermionic sector's own conjugate derivative symbol,
 > included.
@@ -264,7 +264,7 @@ lemma conjFermionSymbol_eq_includeFermion (s : Multiset (Fin 1 ⊕ Fin 3))
           (FermionicAlgebra.ofConjField φ))
 ```
 
-**`StandardModel.JetAlgebra.fermionSymbol_mem_adjoin_generators`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L299).
+**`StandardModel.JetAlgebra.fermionSymbol_mem_adjoin_generators`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L299).
 
 > Every fermionic symbol lies in the generated algebra. The families give the symbols of
 > the covectors pulled back from a single species and generation; those span every covector
@@ -276,7 +276,7 @@ lemma fermionSymbol_mem_adjoin_generators (s : Multiset (Fin 1 ⊕ Fin 3))
     fermionSymbol s φ ∈ Algebra.adjoin ℂ generators
 ```
 
-**`StandardModel.JetAlgebra.conjFermionSymbol_mem_adjoin_generators`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L328).
+**`StandardModel.JetAlgebra.conjFermionSymbol_mem_adjoin_generators`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L328).
 
 > Every conjugate fermionic symbol lies in the generated algebra, by the conjugate form
 > of the spanning argument.
@@ -287,7 +287,7 @@ lemma conjFermionSymbol_mem_adjoin_generators (s : Multiset (Fin 1 ⊕ Fin 3))
     conjFermionSymbol s φ ∈ Algebra.adjoin ℂ generators
 ```
 
-**`StandardModel.JetAlgebra.includeFermion_mem_adjoin_generators`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L360).
+**`StandardModel.JetAlgebra.includeFermion_mem_adjoin_generators`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L360).
 
 > Every element of the fermionic sector lies in the algebra generated by the symbols.
 
@@ -305,7 +305,7 @@ lemma includeFermion_mem_adjoin_generators (f : FermionJetAlgebra) :
 > supplied by `z ⊗ₜ x = (z ⊗ₜ 1) * (1 ⊗ₜ x)`, whose first factor is the image of `z` under
 > `algebraMap` and so lies in every subalgebra.
 
-**`StandardModel.JetAlgebra.iteratedD_complexJetDeriv_tmul`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L388).
+**`StandardModel.JetAlgebra.iteratedD_complexJetDeriv_tmul`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L388).
 
 > The iterated derivative of the complexification acts on a pure tensor through the
 > gauge sector's own iterated derivative.
@@ -318,7 +318,7 @@ lemma iteratedD_complexJetDeriv_tmul (s : Multiset (Fin 1 ⊕ Fin 3)) (z : ℂ)
       = z ⊗ₜ[ℝ] (LocalGaugeFieldAlgebra.iteratedJetDeriv GaugeAlgebra) s x
 ```
 
-**`StandardModel.JetAlgebra.includeGaugeReal`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L406).
+**`StandardModel.JetAlgebra.includeGaugeReal`**, a def, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L406).
 
 > The real gauge-boson jet algebra inside the jet algebra of the Standard Model: the
 > inclusion of the gauge sector precomposed with the inclusion of the real part of the
@@ -329,7 +329,7 @@ lemma iteratedD_complexJetDeriv_tmul (s : Multiset (Fin 1 ⊕ Fin 3)) (z : ℂ)
 noncomputable def includeGaugeReal : (LocalGaugeFieldAlgebra GaugeAlgebra) →ₐ[ℝ] JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.includeGaugeReal_apply`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L414).
+**`StandardModel.JetAlgebra.includeGaugeReal_apply`**, a lemma, [line 414](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L414).
 
 > The real gauge inclusion is the gauge inclusion of the pure tensor with complex part
 > one.
@@ -339,7 +339,7 @@ lemma includeGaugeReal_apply (x : (LocalGaugeFieldAlgebra GaugeAlgebra)) :
     includeGaugeReal x = includeGauge ((1 : ℂ) ⊗ₜ[ℝ] x)
 ```
 
-**`StandardModel.JetAlgebra.gaugeField_eq_includeGaugeReal`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L419).
+**`StandardModel.JetAlgebra.gaugeField_eq_includeGaugeReal`**, a lemma, [line 419](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L419).
 
 > A gauge-field symbol is the gauge sector's own derivative symbol, included through the
 > real part of the complexification.
@@ -352,7 +352,7 @@ lemma gaugeField_eq_includeGaugeReal (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 
           ((LocalGaugeFieldAlgebra.ofA GaugeAlgebra) μ φ))
 ```
 
-**`StandardModel.JetAlgebra.includeGaugeReal_mem_adjoin_generators`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L432).
+**`StandardModel.JetAlgebra.includeGaugeReal_mem_adjoin_generators`**, a lemma, [line 432](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L432).
 
 > Every element of the real gauge sector lies in the algebra generated by the symbols:
 > the gauge-boson jet algebra is generated over `ℝ` by the derivative symbols of the gauge
@@ -363,7 +363,7 @@ lemma includeGaugeReal_mem_adjoin_generators (x : (LocalGaugeFieldAlgebra GaugeA
     includeGaugeReal x ∈ Algebra.adjoin ℂ generators
 ```
 
-**`StandardModel.JetAlgebra.includeGauge_mem_adjoin_generators`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L446).
+**`StandardModel.JetAlgebra.includeGauge_mem_adjoin_generators`**, a lemma, [line 446](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L446).
 
 > Every element of the complexified gauge sector lies in the algebra generated by the
 > symbols: a pure tensor splits as a complex scalar times the image of its real part.
@@ -378,7 +378,7 @@ lemma includeGauge_mem_adjoin_generators (y : ℂ ⊗[ℝ] (LocalGaugeFieldAlgeb
 > The two matter sector inclusions factor through the sector equivalences, so a factor of
 > the carrier is a sector element read through one of them.
 
-**`StandardModel.JetAlgebra.includeFermionFactor_mem_adjoin_generators`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L474).
+**`StandardModel.JetAlgebra.includeFermionFactor_mem_adjoin_generators`**, a lemma, [line 474](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L474).
 
 > Every element of the fermionic factor of the carrier lies in the generated algebra.
 
@@ -388,7 +388,7 @@ lemma includeFermionFactor_mem_adjoin_generators
     fieldData.includeFermion a ∈ Algebra.adjoin ℂ generators
 ```
 
-**`StandardModel.JetAlgebra.includeBosonFactor_mem_adjoin_generators`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L483).
+**`StandardModel.JetAlgebra.includeBosonFactor_mem_adjoin_generators`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L483).
 
 > Every element of the bosonic factor of the carrier lies in the generated algebra.
 
@@ -400,7 +400,7 @@ lemma includeBosonFactor_mem_adjoin_generators
 
 ## C. The generation theorem
 
-**`StandardModel.JetAlgebra.includeFermionFactor_mul_includeBosonFactor_mul_includeConnection`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L510).
+**`StandardModel.JetAlgebra.includeFermionFactor_mul_includeBosonFactor_mul_includeConnection`**, a lemma, [line 510](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L510).
 
 > A pure tensor of the jet algebra is the product of the three factor inclusions applied
 > to its factors. The three inclusions are unfolded through the abstract `GaugeFieldData`
@@ -415,7 +415,7 @@ lemma includeFermionFactor_mul_includeBosonFactor_mul_includeConnection
       = ((a ⊗ₜ[ℂ] b) ⊗ₜ[ℂ] c : JetAlgebra)
 ```
 
-**`StandardModel.JetAlgebra.tmul_mem_adjoin_generators`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L525).
+**`StandardModel.JetAlgebra.tmul_mem_adjoin_generators`**, a lemma, [line 525](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L525).
 
 > Every pure tensor of the jet algebra lies in the algebra generated by the symbols.
 
@@ -425,7 +425,7 @@ lemma tmul_mem_adjoin_generators (w : fieldData.MatterAlgebra)
     (w ⊗ₜ[ℂ] y : JetAlgebra) ∈ Algebra.adjoin ℂ generators
 ```
 
-**`StandardModel.JetAlgebra.adjoin_generators_eq_top`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L548).
+**`StandardModel.JetAlgebra.adjoin_generators_eq_top`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean#L548).
 
 > The fields of the Standard Model generate its jet algebra. As a `ℂ`-algebra,
 > `JetAlgebra` is adjoined by the derivative symbols of the gauge field, the Higgs and its
@@ -448,4 +448,4 @@ lemma adjoin_generators_eq_top :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean)

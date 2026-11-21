@@ -8,7 +8,7 @@ proof: formalized
 
 # The local gauge field algebra of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean): 6 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean): 6 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The jet algebra
 
-**`LocalGaugeFieldAlgebra`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L76).
+**`LocalGaugeFieldAlgebra`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L76).
 
 > The local gauge field algebra, the jet algebra of the gauge bosons: the free
 > commutative algebra on the component functions `∂_s A_μ^φ` of the gauge-boson field,
@@ -58,7 +58,7 @@ abbrev LocalGaugeFieldAlgebra : Type
 
 ### A.1. The generators
 
-**`LocalGaugeFieldAlgebra.ofComponent`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L89).
+**`LocalGaugeFieldAlgebra.ofComponent`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L89).
 
 > The undifferentiated component function `A^φ` of the gauge-boson field along a
 > covector `φ` on the target space.
@@ -67,14 +67,14 @@ abbrev LocalGaugeFieldAlgebra : Type
 noncomputable def ofComponent : Module.Dual ℝ (GaugeBoson 𝔤) →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.ofComponent_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L94).
+**`LocalGaugeFieldAlgebra.ofComponent_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L94).
 
 ```lean
 lemma ofComponent_apply (φ : Module.Dual ℝ (GaugeBoson 𝔤)) :
     (ofComponent 𝔤) φ = SymmetricAlgebra.ι ℝ _ ((1 : SpaceTimeDerivAlgebraℝ) ⊗ₜ[ℝ] φ)
 ```
 
-**`LocalGaugeFieldAlgebra.ofA`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L102).
+**`LocalGaugeFieldAlgebra.ofA`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L102).
 
 > **The component function `A_μ^φ` of the gauge-boson field**: the spacetime index `μ`
 > paired against the Lorentz coordinate basis, the adjoint index against the abstract
@@ -86,7 +86,7 @@ noncomputable def ofA (μ : Fin 1 ⊕ Fin 3) :
     Module.Dual ℝ 𝔤 →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.ofA_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L107).
+**`LocalGaugeFieldAlgebra.ofA_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L107).
 
 ```lean
 lemma ofA_apply (μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 𝔤) :
@@ -94,7 +94,7 @@ lemma ofA_apply (μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 𝔤) :
       (Lorentz.CoVector.basis.dualBasis μ) φ)
 ```
 
-**`LocalGaugeFieldAlgebra.adjoin_ι_eq_top`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L113).
+**`LocalGaugeFieldAlgebra.adjoin_ι_eq_top`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L113).
 
 > The jet algebra is generated by the component functions.
 
@@ -113,4 +113,4 @@ lemma adjoin_ι_eq_top :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean)

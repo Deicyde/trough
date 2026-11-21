@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.18 Rig-smooth morphisms
 
-Section 88.18 of the Stacks Project, [Tag 0GCN](https://stacks.math.columbia.edu/tag/0GCN). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.18 of the Stacks Project, [Tag 0GCN](https://stacks.math.columbia.edu/tag/0GCN). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GCP, a definition
 
 [Tag 0GCP](https://stacks.math.columbia.edu/tag/0GCP) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean#L66).
+**`AlgebraicGeometry.FormalSpace.IsRigSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean#L66).
 
 > **Stacks 0GCP.** A morphism of formal algebraic spaces over `S` is *rig-smooth* when every
 > morphism between affine, representable, étale charts of its source and target is induced by a
@@ -29,7 +29,7 @@ abbrev IsRigSmooth (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0GCQ](https://stacks.math.columbia.edu/tag/0GCQ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_iff_hasPropertyOnEveryAffineEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean#L97). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_iff_hasPropertyOnEveryAffineEtaleDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmooth.lean#L97). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0GCQ, conditions (1) and (2).** A morphism of formal algebraic spaces over `S` is
 > rig-smooth exactly when rig-smoothness as a property of arrows of `WAdm^{Noeth}` holds on every
@@ -47,7 +47,7 @@ theorem isRigSmooth_iff_hasPropertyOnEveryAffineEtaleDiagram (B : BigFppfSite.{u
           RingHom.IsRigSmoothArrow φ) f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCharacterization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCharacterization.lean#L81).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCharacterization.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCharacterization.lean#L81).
 
 > **Stacks 0GCQ.** For a morphism `f : X ⟶ Y` of locally Noetherian formal algebraic spaces
 > over `S`, the following are equivalent: `f` is rig-smooth (Definition 0GCP); every commutative
@@ -72,7 +72,7 @@ theorem isRigSmooth_tfae {X Y : FppfSheaf B S hS} (f : X ⟶ Y)
           (fun φ ↦ RingHom.IsRigSmoothArrow φ) f]
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothLocalCharacterization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothLocalCharacterization.lean#L103).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothLocalCharacterization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothLocalCharacterization.lean#L103).
 
 > **Stacks 0GCQ.** Let `f : X ⟶ Y` be a morphism of locally Noetherian formal algebraic spaces
 > over `S`. The following are equivalent:
@@ -109,7 +109,7 @@ theorem isRigSmooth_tfae_of_isLocallyNoetherian {X Y : FppfSheaf B S hS} (f : X 
 
 [Tag 0GCR](https://stacks.math.columbia.edu/tag/0GCR) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothPullback.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothPullback.lean#L60).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothPullback.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothPullback.lean#L60).
 
 > **Stacks 0GCR.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` is rig-smooth and `g` is adic, then the base change
@@ -127,7 +127,7 @@ theorem isRigSmooth_pullback_snd {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y) (g : Z
 
 [Tag 0GCS](https://stacks.math.columbia.edu/tag/0GCS) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCompositionLocallyNoetherian.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCompositionLocallyNoetherian.lean#L57).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCompositionLocallyNoetherian.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothCompositionLocallyNoetherian.lean#L57).
 
 > **Stacks 0GCS.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` and `g` are rig-smooth, then so is `g ∘ f`.
@@ -145,7 +145,7 @@ theorem isRigSmooth_comp_of_isLocallyNoetherian (B : BigFppfSite.{u}) (S : Schem
 
 [Tag 0GH3](https://stacks.math.columbia.edu/tag/0GH3) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigFlat_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigFlat.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigFlat.lean#L46).
+**`AlgebraicGeometry.FormalSpace.isRigFlat_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigFlat.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSmoothRigFlat.lean#L46).
 
 > **Stacks 0GH3.** A rig-smooth morphism of locally Noetherian formal algebraic spaces over
 > `S` is rig-flat.
@@ -162,4 +162,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.18, Tag 0GCN](https://stacks.math.columbia.edu/tag/0GCN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.23 The completion functor
 
-Section 88.23 of the Stacks Project, [Tag 0GDB](https://stacks.math.columbia.edu/tag/0GDB). 11 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.23 of the Stacks Project, [Tag 0GDB](https://stacks.math.columbia.edu/tag/0GDB). 11 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AQ9, a lemma
 
 [Tag 0AQ9](https://stacks.math.columbia.edu/tag/0AQ9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionLocallyFiniteType.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionLocallyFiniteType.lean#L114).
+**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionLocallyFiniteType.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionLocallyFiniteType.lean#L114).
 
 > **Stacks 0AQ9.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S` and let `T`
 > be a set of points of `X`. If `f` is locally of finite type, then the induced morphism of
@@ -33,7 +33,7 @@ theorem isLocallyOfFiniteType_completionSheafMap
 
 [Tag 0GI0](https://stacks.math.columbia.edu/tag/0GI0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isEtale_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean#L208).
+**`AlgebraicGeometry.FormalSpace.isEtale_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionEtale.lean#L208).
 
 > Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S` and let `T` be a set of points
 > of `X`. If `f` is étale, then the induced morphism of completions `X'_{/|f|⁻¹ T} ⟶ X_{/T}` is
@@ -58,7 +58,7 @@ theorem isEtale_completionSheafMap
 
 [Tag 0GDC](https://stacks.math.columbia.edu/tag/0GDC) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionClosedImmersion.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionClosedImmersion.lean#L98).
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionClosedImmersion.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionClosedImmersion.lean#L98).
 
 > **Stacks 0GDC.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S` and let `T`
 > be a set of points of `X`. If `f` is a closed immersion, then the induced morphism of
@@ -79,7 +79,7 @@ theorem isClosedImmersion_completionSheafMap
 
 [Tag 0GDD](https://stacks.math.columbia.edu/tag/0GDD) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isProper_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionProper.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionProper.lean#L284).
+**`AlgebraicGeometry.FormalSpace.isProper_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionProper.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionProper.lean#L284).
 
 > Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S` and let `T` be a set of points
 > of `X`. If `f` is proper, then the induced morphism of completions
@@ -98,7 +98,7 @@ theorem isProper_completionSheafMap
 
 [Tag 0GDE](https://stacks.math.columbia.edu/tag/0GDE) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isQuasiCompact_completionSheafMap_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean#L181). The attribute's comment: “quasi-compactness of `f_{/T}` in the sense of Stacks 0AJC, in the form of condition (3) of Stacks 0AJB: every fibre product of `f_{/T}` with an affine scheme of the site mapping to `X_{/T}` is a quasi-compact formal algebraic space; stated for an arbitrary set `T` of points of `X`, closed in the source”.
+**`AlgebraicGeometry.FormalSpace.isQuasiCompact_completionSheafMap_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasiCompactIff.lean#L181). The attribute's comment: “quasi-compactness of `f_{/T}` in the sense of Stacks 0AJC, in the form of condition (3) of Stacks 0AJB: every fibre product of `f_{/T}` with an affine scheme of the site mapping to `X_{/T}` is a quasi-compact formal algebraic space; stated for an arbitrary set `T` of points of `X`, closed in the source”.
 
 > **Stacks 0GDE in the form of Stacks 0AJC.** Let `f : X' ⟶ X` be a quasi-compact morphism of
 > algebraic spaces over `S` and let `T` be a set of points of `X`. Then the completion
@@ -120,7 +120,7 @@ theorem isQuasiCompact_completionSheafMap_of_isQuasiCompact
 
 [Tag 0GDF](https://stacks.math.columbia.edu/tag/0GDF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_completionSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L248). The attribute's comment: “fibre product of completions”.
+**`AlgebraicGeometry.Space.isPullback_completionSheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L248). The attribute's comment: “fibre product of completions”.
 
 > **Stacks 0GDF.** The completion of a fibre product is the fibre product of the
 > completions: for morphisms `f : X' ⟶ X` and `g : Y ⟶ X` of presheaves on the big fppf site of
@@ -137,7 +137,7 @@ theorem isPullback_completionSheafPullback (f : X' ⟶ X) (g : Y ⟶ X)
       (completionSheafMap B S hS f T) (completionSheafMap B S hS g T)
 ```
 
-**`AlgebraicGeometry.Space.completionSheafDiagonal_comp_completionSheafInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L300). The attribute's comment: “diagonals agree over the fibre product”.
+**`AlgebraicGeometry.Space.completionSheafDiagonal_comp_completionSheafInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L300). The attribute's comment: “diagonals agree over the fibre product”.
 
 > **Stacks 0GDF.** The diagonal of the completed morphism is the diagonal of the original
 > morphism, read inside the ambient sheaf of `X' ×_X X'`: this is the equality
@@ -153,7 +153,7 @@ theorem completionSheafDiagonal_comp_completionSheafInclusion (f : X' ⟶ X)
         sheafifiedULiftMap B S hS (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.completionSheafDiagonal_eq_completionSheafMap_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L337). The attribute's comment: “equality of diagonals”.
+**`AlgebraicGeometry.Space.completionSheafDiagonal_eq_completionSheafMap_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonal.lean#L337). The attribute's comment: “equality of diagonals”.
 
 > **Stacks 0GDF.** The diagonal of the completed morphism is the completion of the diagonal:
 > `Δ_{f_{/T}} = (Δ_f)_{/T''}` as morphisms `X'_{/T'} ⟶ (X' ×_X X')_{/T''}`. The `eqToHom`
@@ -174,7 +174,7 @@ theorem completionSheafDiagonal_eq_completionSheafMap_diagonal (f : X' ⟶ X)
 
 [Tag 0GDG](https://stacks.math.columbia.edu/tag/0GDG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean#L130). The attribute's comment: “separated: the completion of a separated morphism of algebraic spaces along a set of points of its target is a separated morphism of formal algebraic spaces, separatedness of the completion read as the separatedness axiom of Stacks 0ARN”.
+**`AlgebraicGeometry.FormalSpace.isSeparatedMorphism_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean#L130). The attribute's comment: “separated: the completion of a separated morphism of algebraic spaces along a set of points of its target is a separated morphism of formal algebraic spaces, separatedness of the completion read as the separatedness axiom of Stacks 0ARN”.
 
 > **Stacks 0GDG, the separatedness clause.** Let `f : X' ⟶ X` be a morphism of algebraic
 > spaces over `S` and let `T` be a set of points of `X`. If `f` is separated, then the induced
@@ -190,7 +190,7 @@ theorem isSeparatedMorphism_completionSheafMap
     IsSeparatedMorphism B S hS (Space.completionSheafMap B S hS f T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isQuasiSeparatedMorphism_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean#L162). The attribute's comment: “quasi-separated: the completion of a quasi-separated morphism of algebraic spaces along a set of points of its target has quasi-compact relative diagonal. Quasi-compactness of the diagonal is read as `IsQuasiSeparatedMorphism`, that is, as `Space.IsQuasiCompactULift`: every base change of the diagonal along a morphism from a quasi-compact algebraic space has quasi-compact source. The implementation notes of `StacksFrontier.AlgebraicGeometry.FormalSpace.SeparatedMorphism` record that condition as a priori stronger than the source's quasi-compactness of a morphism of formal algebraic spaces, so the conclusion delivered is a priori stronger than the source's; the hypothesis is the source's quasi-separatedness of Stacks 03HL, part (3)”.
+**`AlgebraicGeometry.FormalSpace.isQuasiSeparatedMorphism_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSeparated.lean#L162). The attribute's comment: “quasi-separated: the completion of a quasi-separated morphism of algebraic spaces along a set of points of its target has quasi-compact relative diagonal. Quasi-compactness of the diagonal is read as `IsQuasiSeparatedMorphism`, that is, as `Space.IsQuasiCompactULift`: every base change of the diagonal along a morphism from a quasi-compact algebraic space has quasi-compact source. The implementation notes of `StacksFrontier.AlgebraicGeometry.FormalSpace.SeparatedMorphism` record that condition as a priori stronger than the source's quasi-compactness of a morphism of formal algebraic spaces, so the conclusion delivered is a priori stronger than the source's; the hypothesis is the source's quasi-separatedness of Stacks 03HL, part (3)”.
 
 > **Stacks 0GDG, the quasi-separatedness clause.** Let `f : X' ⟶ X` be a morphism of algebraic
 > spaces over `S` and let `T` be a set of points of `X`. If `f` is quasi-separated, then the
@@ -210,7 +210,7 @@ theorem isQuasiSeparatedMorphism_completionSheafMap
 
 [Tag 0GDH](https://stacks.math.columbia.edu/tag/0GDH) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_completionSheafMap_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigSmoothCover.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigSmoothCover.lean#L331). The attribute's comment: “for a morphism `f : X' ⟶ X` of algebraic spaces over `S` and a closed `T ⊆ |X|`: if `X` is locally Noetherian, `f` is locally of finite type and `U' → U` is smooth, then the completion `f_{/T} : X'_{/T'} ⟶ X_{/T}` is rig-smooth”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_completionSheafMap_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigSmoothCover.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigSmoothCover.lean#L331). The attribute's comment: “for a morphism `f : X' ⟶ X` of algebraic spaces over `S` and a closed `T ⊆ |X|`: if `X` is locally Noetherian, `f` is locally of finite type and `U' → U` is smooth, then the completion `f_{/T} : X'_{/T'} ⟶ X_{/T}` is rig-smooth”.
 
 > **Stacks 0GDH.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S`, let
 > `T ⊆ |X|` be closed, and let `U ⊆ X` be the open complement of `T` and `U' = f⁻¹U` (the
@@ -239,7 +239,7 @@ theorem isRigSmooth_completionSheafMap_of_isLocallyNoetherian
 
 [Tag 0AR2](https://stacks.math.columbia.edu/tag/0AR2) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_completionSheafMap_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAtlasCompatible.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAtlasCompatible.lean#L386).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_completionSheafMap_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAtlasCompatible.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAtlasCompatible.lean#L386).
 
 > **Stacks 0AR2.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S`, let
 > `T ⊆ |X|` be closed, and let `U ⊆ X` be the open complement of `T` and `U' = f⁻¹U` (the
@@ -263,7 +263,7 @@ theorem isRigEtale_completionSheafMap_of_isLocallyNoetherian
     IsRigEtale B S hS (Space.completionSheafMap B S hS f T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_completionSheafMap_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleCharts.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleCharts.lean#L702).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_completionSheafMap_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleCharts.lean, line 702](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionRigEtaleCharts.lean#L702).
 
 > **Stacks 0AR2.** Let `f : X' ⟶ X` be a morphism of algebraic spaces over `S`, let `T ⊆ |X|`
 > be closed and let `U' ⟶ U` be the restriction of `f` to the open complements of `T' = |f|⁻¹T`
@@ -301,7 +301,7 @@ theorem isRigEtale_completionSheafMap_of_isEtale {X' X : (BigFppfOver B S hS)ᵒ
 
 [Tag 0AQW](https://stacks.math.columbia.edu/tag/0AQW) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperValuativeLifting.lean, line 791](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperValuativeLifting.lean#L791).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ProperValuativeLifting.lean, line 791](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/ProperValuativeLifting.lean#L791).
 
 > **Stacks 0AQW.** In the situation of Stacks 0GDB, let `f : X' ⟶ X` be a proper morphism of
 > algebraic spaces over `S`, let `T` be a closed set of points of `X`, and let the restriction
@@ -335,7 +335,7 @@ theorem isRigSurjective_completionSheafMap {X' X : (BigFppfOver B S hS)ᵒᵖ �
 
 [Tag 0GDI](https://stacks.math.columbia.edu/tag/0GDI) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSurjective_diagonal_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonalRigSurjective.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonalRigSurjective.lean#L170).
+**`AlgebraicGeometry.FormalSpace.isRigSurjective_diagonal_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonalRigSurjective.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionDiagonalRigSurjective.lean#L170).
 
 > **Stacks 0GDI.** In the situation of Stacks 0GDB, let `f : X' ⟶ X` be a separated morphism
 > of algebraic spaces over `S`, let `T` be a closed set of points of `X`, and let the restriction
@@ -364,4 +364,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.23, Tag 0GDB](https://stacks.math.columbia.edu/tag/0GDB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

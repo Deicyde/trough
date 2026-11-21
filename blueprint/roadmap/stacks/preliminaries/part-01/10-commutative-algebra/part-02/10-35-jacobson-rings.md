@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.35 Jacobson rings
 
-Section 10.35 of the Stacks Project, [Tag 00FZ](https://stacks.math.columbia.edu/tag/00FZ). 22 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.35 of the Stacks Project, [Tag 00FZ](https://stacks.math.columbia.edu/tag/00FZ). 22 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00G0, a definition
 
@@ -16,8 +16,8 @@ Section 10.35 of the Stacks Project, [Tag 00FZ](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`IsJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Defs.lean#L30) (StacksFrontier): “a Jacobson ring”. References: EGA IV (10.4.1).
-- [`isJacobsonRing_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Defs.lean#L32) (StacksFrontier): “the defining condition: every radical ideal is its own Jacobson radical, i.e. the intersection of the maximal ideals containing it”.
+- [`IsJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 30](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Defs.lean#L30) (StacksFrontier): “a Jacobson ring”. References: EGA IV (10.4.1).
+- [`isJacobsonRing_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_iff#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 32](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Defs.lean#L32) (StacksFrontier): “the defining condition: every radical ideal is its own Jacobson radical, i.e. the intersection of the maximal ideals containing it”.
 
 ## Tag 00G1, a lemma
 
@@ -25,7 +25,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`isJacobsonRing_of_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_of_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Defs.lean#L34) (StacksFrontier): “in the generality of a Jacobson base ring”. References: EGA IV (10.4.7), “special case”; EGA IV (10.4.6), “in particular”; SGA 3 VIA (1.1.2), “partial”.
+- [`isJacobsonRing_of_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_of_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 34](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Defs.lean#L34) (StacksFrontier): “in the generality of a Jacobson base ring”. References: EGA IV (10.4.7), “special case”; EGA IV (10.4.6), “in particular”; SGA 3 VIA (1.1.2), “partial”.
 
 ## Tag 00G2, a lemma
 
@@ -33,7 +33,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`isJacobsonRing_iff_prime_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_iff_prime_eq#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Defs.lean#L39) (StacksFrontier): “the `mpr` direction”.
+- [`isJacobsonRing_iff_prime_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_iff_prime_eq#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Defs.lean#L39) (StacksFrontier): “the `mpr` direction”.
 
 ## Tag 00G3, a lemma
 
@@ -41,13 +41,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`PrimeSpectrum.isJacobsonRing_iff_jacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.isJacobsonRing_iff_jacobsonSpace#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Defs.lean#L40) (StacksFrontier). References: EGA IV (10.4.2), “special case”; EGA IV (10.4.1), “ring: Spec(A) Jacobson”.
+- [`PrimeSpectrum.isJacobsonRing_iff_jacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.isJacobsonRing_iff_jacobsonSpace#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Defs.lean, line 40](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Defs.lean#L40) (StacksFrontier). References: EGA IV (10.4.2), “special case”; EGA IV (10.4.1), “ring: Spec(A) Jacobson”.
 
 ## Tag 034J, a lemma
 
 [Tag 034J](https://stacks.math.columbia.edu/tag/034J) in the Stacks Project.
 
-**`exists_prime_vCapD_singleton_isField_of_not_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L482). The attribute's comment: “(1)”. References: EGA IV (10.4.5), “b) => a)”.
+**`exists_prime_vCapD_singleton_isField_of_not_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L482). The attribute's comment: “(1)”. References: EGA IV (10.4.5), “b) => a)”.
 
 > (Non-Jacobson direction, Stacks 034J (1).) If `R` is not a Jacobson ring, then
 > there exist a prime ideal `p` and an element `f` such that `p` is not maximal,
@@ -63,7 +63,7 @@ theorem exists_prime_vCapD_singleton_isField_of_not_isJacobsonRing {R : Type*} [
       IsField (Localization.Away (Ideal.Quotient.mk p.asIdeal f))
 ```
 
-**`vCapD_infinite_of_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L590). The attribute's comment: “(2)”. References: EGA IV (10.4.5), “a) => b)”.
+**`vCapD_infinite_of_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 590](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L590). The attribute's comment: “(2)”. References: EGA IV (10.4.5), “a) => b)”.
 
 > (Jacobson direction, Stacks 034J (2).) If `R` is a Jacobson ring, then for every
 > prime ideal `p` that is not maximal and every element `f ∉ p`, the set
@@ -80,7 +80,7 @@ theorem vCapD_infinite_of_isJacobsonRing {R : Type*} [CommRing R]
 
 [Tag 00G4](https://stacks.math.columbia.edu/tag/00G4) in the Stacks Project.
 
-**`isJacobsonRing_of_domain_noetherian_dim_le_one_infinite_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L181). References: EGA IV (10.4.3), “principal ideal ring”; EGA IV (10.5.2), “special case”; EGA IV (10.7.1), “partial”.
+**`isJacobsonRing_of_domain_noetherian_dim_le_one_infinite_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L181). References: EGA IV (10.4.3), “principal ideal ring”; EGA IV (10.5.2), “special case”; EGA IV (10.7.1), “partial”.
 
 > A Noetherian domain in which every nonzero prime ideal is maximal and which has infinitely many
 > maximal ideals is a Jacobson ring.
@@ -93,7 +93,7 @@ theorem isJacobsonRing_of_domain_noetherian_dim_le_one_infinite_maximalSpectrum
     IsJacobsonRing R
 ```
 
-**`int_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L219). References: EGA IV (10.4.3), “example ℤ”.
+**`int_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L219). References: EGA IV (10.4.3), “example ℤ”.
 
 > The ring `ℤ` is a Jacobson ring.
 
@@ -105,7 +105,7 @@ theorem int_isJacobsonRing : IsJacobsonRing ℤ
 
 [Tag 02CC](https://stacks.math.columbia.edu/tag/02CC) in the Stacks Project.
 
-**`prod_field_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L557).
+**`prod_field_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 557](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L557).
 
 > Let `A` be an infinite type and `(k α)` a family of fields. Then the product ring `∀ α, k α` is
 > a Jacobson ring.
@@ -120,7 +120,7 @@ theorem prod_field_isJacobsonRing
 
 [Tag 00G5](https://stacks.math.columbia.edu/tag/00G5) in the Stacks Project.
 
-**`isField_of_isDomain_finite_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L237). References: EGA IV (10.7.1), “partial”.
+**`isField_of_isDomain_finite_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L237). References: EGA IV (10.7.1), “partial”.
 
 > A Jacobson domain with finitely many maximal ideals is a field.
 
@@ -131,7 +131,7 @@ theorem isField_of_isDomain_finite_maximalIdeal
     IsField R
 ```
 
-**`not_isJacobsonRing_of_isLocalRing_of_isPrime_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L274). The attribute's comment: “local ring with at least two prime ideals”.
+**`not_isJacobsonRing_of_isLocalRing_of_isPrime_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L274). The attribute's comment: “local ring with at least two prime ideals”.
 
 > A local ring with at least two prime ideals is not a Jacobson ring: in a local ring the
 > Jacobson radical of every proper ideal is the maximal ideal, so a Jacobson local ring has the
@@ -143,7 +143,7 @@ theorem not_isJacobsonRing_of_isLocalRing_of_isPrime_ne
     (hpq : p ≠ q) : ¬ IsJacobsonRing R
 ```
 
-**`not_isJacobsonRing_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L287). The attribute's comment: “discrete valuation ring”.
+**`not_isJacobsonRing_of_isDiscreteValuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L287). The attribute's comment: “discrete valuation ring”.
 
 > A discrete valuation ring is not a Jacobson ring: its prime ideals `(0)` and the maximal
 > ideal are distinct.
@@ -157,7 +157,7 @@ theorem not_isJacobsonRing_of_isDiscreteValuationRing
 
 [Tag 00GA](https://stacks.math.columbia.edu/tag/00GA) in the Stacks Project.
 
-**`isMaximal_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L139).
+**`isMaximal_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L139).
 
 > Stacks tag 00GA: if `q ⊆ S` is a prime lying over a maximal ideal `m ⊆ R` and
 > the residue field extension `κ(q)/κ(m)` is algebraic, then `q` is maximal.
@@ -178,7 +178,7 @@ theorem isMaximal_of_isAlgebraic_residueField
 
 [Tag 00FT](https://stacks.math.columbia.edu/tag/00FT) in the Stacks Project.
 
-**`exists_monic_aeval_not_bijective_of_rank_lt_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L155).
+**`exists_monic_aeval_not_bijective_of_rank_lt_card`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L155).
 
 > Let `k` be a field and `V` a nonzero `k`-vector space with `dim_k V < |k|` (as cardinals).
 > Then for every `k`-linear operator `T : V → V` there is a monic polynomial `P` of degree `≥ 1`
@@ -197,7 +197,7 @@ theorem exists_monic_aeval_not_bijective_of_rank_lt_card
 
 [Tag 00FU](https://stacks.math.columbia.edu/tag/00FU) in the Stacks Project.
 
-**`Algebra.isAlgebraic_quotient_of_adjoin_eq_top_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L471). The attribute's comment: “(1)”.
+**`Algebra.isAlgebraic_quotient_of_adjoin_eq_top_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 471](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L471). The attribute's comment: “(1)”.
 
 > The residue fields of an algebra generated by fewer than `#k` elements are algebraic over
 > the field `k`.
@@ -209,7 +209,7 @@ theorem Algebra.isAlgebraic_quotient_of_adjoin_eq_top_of_card_lt {k : Type u} {S
     (m : Ideal S) [m.IsMaximal] : Algebra.IsAlgebraic k (S ⧸ m)
 ```
 
-**`isJacobsonRing_of_adjoin_eq_top_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L483). The attribute's comment: “(2)”.
+**`isJacobsonRing_of_adjoin_eq_top_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L483). The attribute's comment: “(2)”.
 
 > An algebra generated by fewer than `#k` elements over a field `k` is a Jacobson ring.
 
@@ -224,7 +224,7 @@ theorem isJacobsonRing_of_adjoin_eq_top_of_card_lt {k : Type u} {S : Type v} {I 
 
 [Tag 046V](https://stacks.math.columbia.edu/tag/046V) in the Stacks Project.
 
-**`Algebra.isAlgebraic_tensorProduct_quotient_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L404). The attribute's comment: “(1)”.
+**`Algebra.isAlgebraic_tensorProduct_quotient_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L404). The attribute's comment: “(1)”.
 
 > Every residue field of `K ⊗[k] S` is algebraic over `K` when `#S < #K`.
 
@@ -235,7 +235,7 @@ theorem Algebra.isAlgebraic_tensorProduct_quotient_of_card_lt (k : Type t) [Comm
     Algebra.IsAlgebraic K ((K ⊗[k] S) ⧸ m)
 ```
 
-**`isJacobsonRing_tensorProduct_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L412). The attribute's comment: “(2)”.
+**`isJacobsonRing_tensorProduct_of_card_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean, line 412](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Nullstellensatz.lean#L412). The attribute's comment: “(2)”.
 
 > The base change `K ⊗[k] S` is Jacobson when `#S < #K`.
 
@@ -251,14 +251,14 @@ theorem isJacobsonRing_tensorProduct_of_card_lt (k : Type t) [CommSemiring k]
 
 Declarations registered for the tag:
 
-- [`isJacobsonRing_localization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_localization#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L50) (StacksFrontier): “`R_f` is Jacobson; Mathlib states it for any `S` with `IsLocalization.Away f S`, so `S := Localization.Away f` gives the Stacks form.”. References: EGA IV (10.4.3), “special case”; EGA IV (10.4.7), “special case”.
-- [`IsLocalization.orderIsoOfMaximal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalization.orderIsoOfMaximal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L54) (StacksFrontier): “the maximal ideals of `R_f` correspond to the maximal ideals of `R` not containing `f`; Mathlib packages the correspondence as an order isomorphism, whose forward map is contraction along `algebraMap R R_f`.”.
+- [`isJacobsonRing_localization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_localization#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L50) (StacksFrontier): “`R_f` is Jacobson; Mathlib states it for any `S` with `IsLocalization.Away f S`, so `S := Localization.Away f` gives the Stacks form.”. References: EGA IV (10.4.3), “special case”; EGA IV (10.4.7), “special case”.
+- [`IsLocalization.orderIsoOfMaximal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalization.orderIsoOfMaximal#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L54) (StacksFrontier): “the maximal ideals of `R_f` correspond to the maximal ideals of `R` not containing `f`; Mathlib packages the correspondence as an order isomorphism, whose forward map is contraction along `algebraMap R R_f`.”.
 
 ## Tag 00G7, an example
 
 [Tag 00G7](https://stacks.math.columbia.edu/tag/00G7) in the Stacks Project.
 
-**`nonempty_ringEquiv_rat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L396). The attribute's comment: “R\_2 ≅ ℚ”.
+**`nonempty_ringEquiv_rat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L396). The attribute's comment: “R\_2 ≅ ℚ”.
 
 > `ℤ_{(2)}[1/2]` is isomorphic to `ℚ` as a ring.
 
@@ -266,7 +266,7 @@ Declarations registered for the tag:
 theorem nonempty_ringEquiv_rat : Nonempty (StacksR_at_2 ≃+* ℚ)
 ```
 
-**`comap_closedPoint_eq_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L403). The attribute's comment: “R → R\_2 maps the closed point of Spec(ℚ) to the generic point of Spec(R)”.
+**`comap_closedPoint_eq_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L403). The attribute's comment: “R → R\_2 maps the closed point of Spec(ℚ) to the generic point of Spec(R)”.
 
 > For any ring isomorphism `e : ℤ_{(2)}[1/2] ≃+* ℚ`, the composite
 > `Spec ℚ → Spec ℤ_{(2)}[1/2] → Spec ℤ_{(2)}` sends the closed point of `Spec ℚ` to the generic point
@@ -279,7 +279,7 @@ theorem comap_closedPoint_eq_genericPoint (e : StacksR_at_2 ≃+* ℚ) :
         ⟨⊥, Ideal.isPrime_bot⟩
 ```
 
-**`comap_closedPoint_not_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L427). The attribute's comment: “the image of the closed point of Spec(ℚ) is not closed in Spec(R)”.
+**`comap_closedPoint_not_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L427). The attribute's comment: “the image of the closed point of Spec(ℚ) is not closed in Spec(R)”.
 
 > For any ring isomorphism `e : ℤ_{(2)}[1/2] ≃+* ℚ`, the image of the closed point of `Spec ℚ`
 > in `Spec ℤ_{(2)}` is not closed, so the conclusion of Lemma 00G6 fails for the non-Jacobson ring
@@ -296,7 +296,7 @@ theorem comap_closedPoint_not_isClosed (e : StacksR_at_2 ≃+* ℚ) :
 
 [Tag 00G8](https://stacks.math.columbia.edu/tag/00G8) in the Stacks Project.
 
-**`specMapZQ_specQPoint_eq_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L527).
+**`specMapZQ_specQPoint_eq_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 527](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L527).
 
 > The inclusion `ℤ → ℚ` sends the unique point of `Spec(ℚ)` to the generic point `(0)` of
 > `Spec(ℤ)`.
@@ -310,7 +310,7 @@ theorem specMapZQ_specQPoint_eq_genericPoint :
 
 [Tag 00G9](https://stacks.math.columbia.edu/tag/00G9) in the Stacks Project.
 
-**`jacobson_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L92).
+**`jacobson_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Constructions.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Constructions.lean#L92).
 
 > Let `R` be a Jacobson ring and `I ⊆ R` an ideal. Then `R ⧸ I` is Jacobson, and
 > maximal ideals of `R ⧸ I` correspond (via `Ideal.comap (Ideal.Quotient.mk I)`) to
@@ -330,7 +330,7 @@ theorem jacobson_quotient
 
 [Tag 0CY7](https://stacks.math.columbia.edu/tag/0CY7) in the Stacks Project.
 
-**`Algebra.ker_algebraMap_isMaximal_of_finiteType_of_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/FiniteType.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/FiniteType.lean#L86). References: EGA IV (10.4.6), “preimage of max ideal”.
+**`Algebra.ker_algebraMap_isMaximal_of_finiteType_of_isJacobsonRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/FiniteType.lean, line 86](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/FiniteType.lean#L86). References: EGA IV (10.4.6), “preimage of max ideal”.
 
 > **Stacks 0CY7.** Let `R` be a Jacobson ring and let `K` be a field which is of finite type
 > as an `R`-algebra. Then `RingHom.ker (algebraMap R K)` is a maximal ideal of `R`. In particular,
@@ -350,15 +350,15 @@ public theorem Algebra.ker_algebraMap_isMaximal_of_finiteType_of_isJacobsonRing
 
 Declarations registered for the tag:
 
-- [`isJacobsonRing_of_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_of_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L145) (StacksFrontier): “(1) S is Jacobson”. References: EGA IV (10.4.7), “special case”; EGA IV (10.4.6), “in particular”; SGA 3 VIA (1.1.2), “partial”.
-- [`AlgebraicGeometry.Scheme.Hom.closePoints_subset_preimage_closedPoints`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.closePoints_subset_preimage_closedPoints#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L146) (StacksFrontier): “(2) closed points map to closed points (scheme form)”. References: EGA IV (10.4.7); EGA IV (10.9.2), “more general”.
-- [`finite_of_finite_type_of_isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=finite_of_finite_type_of_isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L148) (StacksFrontier): “(3) residue field extension is finite (applied to R/m → S/m')”. References: EGA IV (10.4.5), “a⇒b′”.
+- [`isJacobsonRing_of_finiteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isJacobsonRing_of_finiteType#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch10.lean#L145) (StacksFrontier): “(1) S is Jacobson”. References: EGA IV (10.4.7), “special case”; EGA IV (10.4.6), “in particular”; SGA 3 VIA (1.1.2), “partial”.
+- [`AlgebraicGeometry.Scheme.Hom.closePoints_subset_preimage_closedPoints`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.closePoints_subset_preimage_closedPoints#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch10.lean#L146) (StacksFrontier): “(2) closed points map to closed points (scheme form)”. References: EGA IV (10.4.7); EGA IV (10.9.2), “more general”.
+- [`finite_of_finite_type_of_isJacobsonRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=finite_of_finite_type_of_isJacobsonRing#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch10.lean#L148) (StacksFrontier): “(3) residue field extension is finite (applied to R/m → S/m')”. References: EGA IV (10.4.5), “a⇒b′”.
 
 ## Tag 00GC, a lemma
 
 [Tag 00GC](https://stacks.math.columbia.edu/tag/00GC) in the Stacks Project.
 
-**`isJacobsonRing_of_finiteType_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/Examples.lean#L230).
+**`isJacobsonRing_of_finiteType_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/Examples.lean, line 230](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/Examples.lean#L230).
 
 > A finite type algebra over `ℤ` is a Jacobson ring.
 
@@ -371,7 +371,7 @@ theorem isJacobsonRing_of_finiteType_int (B : Type*) [CommRing B] [Algebra ℤ B
 
 [Tag 00GD](https://stacks.math.columbia.edu/tag/00GD) in the Stacks Project.
 
-**`comap_image_subspaceClosedPoints_and_mem_comap_image_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/ImageConstructible.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Jacobson/ImageConstructible.lean#L229).
+**`comap_image_subspaceClosedPoints_and_mem_comap_image_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Jacobson/ImageConstructible.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Jacobson/ImageConstructible.lean#L229).
 
 > **Stacks 00GD.** Let `R` be a Jacobson ring and `S` a finite type `R`-algebra (hence also
 > Jacobson, Stacks 00GB); write `X = Spec R`, `Y = Spec S` and `f : Y → X` for the induced map.
@@ -396,7 +396,7 @@ theorem comap_image_subspaceClosedPoints_and_mem_comap_image_iff :
 
 [Tag 00GE](https://stacks.math.columbia.edu/tag/00GE) in the Stacks Project.
 
-**`PrimeSpectrum.exists_commSq_constructible_restrictToClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Constructible/ClosedPoints.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/Constructible/ClosedPoints.lean#L103). The attribute's comment: “the full square: both vertical arrows well defined, horizontal arrows the bijections of 005Y, and f(E)₀ = f(E₀)”.
+**`PrimeSpectrum.exists_commSq_constructible_restrictToClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/Constructible/ClosedPoints.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/Constructible/ClosedPoints.lean#L103). The attribute's comment: “the full square: both vertical arrows well defined, horizontal arrows the bijections of 005Y, and f(E)₀ = f(E₀)”.
 
 > **Stacks 00GE.** Let `R` be a Noetherian Jacobson ring and `φ : R → S` a ring map of
 > finite type, with `f : Y = Spec S → X = Spec R`, and write `X₀`, `Y₀` for the spaces of closed
@@ -447,7 +447,7 @@ theorem exists_commSq_constructible_restrictToClosedPoints [IsNoetherianRing R]
 
 [Tag 00GG](https://stacks.math.columbia.edu/tag/00GG) in the Stacks Project.
 
-**`idempotent_matrices_classified_by_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean#L120). The attribute's comment: “an idempotent matrix is conjugate to diag(1, …, 1, 0, …, 0), and idempotents are conjugate iff they have the same rank”.
+**`idempotent_matrices_classified_by_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean#L120). The attribute's comment: “an idempotent matrix is conjugate to diag(1, …, 1, 0, …, 0), and idempotents are conjugate iff they have the same rank”.
 
 > **Stacks Tag 00GG** (example of idempotent matrices).
 >
@@ -488,7 +488,7 @@ theorem idempotent_matrices_classified_by_rank
       IsConj M (Matrix.diagonal (fun i : Fin n => if (i : ℕ) < M.rank then (1 : K) else 0))
 ```
 
-**`Matrix.trace_eq_rank_of_isIdempotentElem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean#L134). The attribute's comment: “the trace of an idempotent matrix is its rank”.
+**`Matrix.trace_eq_rank_of_isIdempotentElem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/LinearAlgebra/Matrix/Idempotent.lean#L134). The attribute's comment: “the trace of an idempotent matrix is its rank”.
 
 > The trace of an idempotent matrix over a commutative local ring is its rank, cast to the
 > ring. In characteristic zero, distinct ranks therefore give distinct traces.
@@ -498,7 +498,7 @@ lemma Matrix.trace_eq_rank_of_isIdempotentElem (M : Matrix (Fin n) (Fin n) K)
     (hM : IsIdempotentElem M) : M.trace = (M.rank : K)
 ```
 
-**`StacksDraft.IdempotentMatrices.irreducibleComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L387). The attribute's comment: “the irreducible components of Spec R are the n + 1 orbit loci of diag(1, …, 1, 0, …, 0), pairwise disjoint”.
+**`StacksDraft.IdempotentMatrices.irreducibleComponents_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L387). The attribute's comment: “the irreducible components of Spec R are the n + 1 orbit loci of diag(1, …, 1, 0, …, 0), pairwise disjoint”.
 
 > **The irreducible components of the scheme of idempotent matrices.** The irreducible
 > components of `Spec R` are exactly the `n + 1` rank loci `rankLocus k n r`, `0 ≤ r ≤ n`; each
@@ -511,7 +511,7 @@ theorem irreducibleComponents_eq :
       {Z | ∃ r ≤ n, Z = rankLocus k n r}
 ```
 
-**`StacksDraft.IdempotentMatrices.point_mem_rankLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L430). The attribute's comment: “the k-points of the component rankLocus k n r form the GLₙ(k)-orbit of diag(1, …, 1, 0, …, 0) with r ones”.
+**`StacksDraft.IdempotentMatrices.point_mem_rankLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 430](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L430). The attribute's comment: “the k-points of the component rankLocus k n r form the GLₙ(k)-orbit of diag(1, …, 1, 0, …, 0) with r ones”.
 
 > **The orbits are the `k`-points of the components.** The `k`-point of an idempotent matrix
 > `M` lies in the component `rankLocus k n r` exactly when `M` is in the `GLₙ(k)`-orbit
@@ -522,7 +522,7 @@ theorem point_mem_rankLocus_iff {M : Matrix (Fin n) (Fin n) k} (hM : M * M = M) 
     (hr : r ≤ n) : point k n hM ∈ rankLocus k n r ↔ IsConj M (stdIdem k n r)
 ```
 
-**`StacksDraft.IdempotentMatrices.charpoly_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L464). The attribute's comment: “in every characteristic the components are separated by polynomial functions, the coefficients of the characteristic polynomial of T”.
+**`StacksDraft.IdempotentMatrices.charpoly_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L464). The attribute's comment: “in every characteristic the components are separated by polynomial functions, the coefficients of the characteristic polynomial of T”.
 
 > The coefficients of the characteristic polynomial of `T`, which are polynomials in the
 > `t_{ij}`, separate the components in every characteristic: on `rankLocus k n r` the polynomial
@@ -536,7 +536,7 @@ theorem charpoly_separates {r s : ℕ} (hr : r ≤ n) (hs : s ≤ n) (hrs : r �
     stdCharpoly k n r ≠ stdCharpoly k n s
 ```
 
-**`StacksDraft.IdempotentMatrices.trace_separates_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L487). The attribute's comment: “in characteristic 0 the trace takes the distinct values r on the distinct components”.
+**`StacksDraft.IdempotentMatrices.trace_separates_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 487](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L487). The attribute's comment: “in characteristic 0 the trace takes the distinct values r on the distinct components”.
 
 > In characteristic `0` the trace `f = t₁₁ + ⋯ + tₙₙ` separates the components: it takes the
 > value `r` on `rankLocus k n r` and the value `s` on `rankLocus k n s`, and `r ≠ s` in `k`.
@@ -548,7 +548,7 @@ theorem trace_separates_of_charZero [CharZero k] {r s : ℕ} (hrs : r ≠ s)
       (genericIdem k n).trace - algebraMap k (IdemRing k n) s ∈ q.asIdeal ∧ (r : k) ≠ (s : k)
 ```
 
-**`StacksDraft.IdempotentMatrices.trace_exteriorPower_three_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L522). The attribute's comment: “for n = 3, tr(⋀³T) is 1 on the component of diag(1, 1, 1) and 0 on the others, in every characteristic, in particular in characteristic 3”.
+**`StacksDraft.IdempotentMatrices.trace_exteriorPower_three_separates`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean, line 522](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Spectrum/Prime/IdempotentMatrices.lean#L522). The attribute's comment: “for n = 3, tr(⋀³T) is 1 on the component of diag(1, 1, 1) and 0 on the others, in every characteristic, in particular in characteristic 3”.
 
 > For `n = 3`, the function `tr(⋀³ T)` takes the value `1` on the component of `diag(1, 1, 1)`
 > and `0` on the other components, in every characteristic and in particular in characteristic
@@ -568,4 +568,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.35, Tag 00FZ](https://stacks.math.columbia.edu/tag/00FZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

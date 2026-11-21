@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Lennon–Pittel conjecture on… to Mathoverflow 339137
+# Ben Green's Open Problem 93 to Mathoverflow 339137
 
+- [Ben Green's Open Problem 93](../../../../greens-open-problems/part-04/ben-greens-open-problem-93.md)
 - [Lennon–Pittel conjecture on random stable matchings](../../../../papers/part-02/lennon-pittel-conjecture-on-random-stable-matchi.md)
 - [Central Binomial Tail Bounds, Conjecture 6.3](../../../../arxiv/part-01/central-binomial-tail-bounds-conjecture-6-3.md)
 - [Pittel's second-moment conjecture for nearly balanced markets](../../../../arxiv/part-01/pittels-second-moment-conjecture-for-nearly-bala.md)

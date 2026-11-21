@@ -8,7 +8,7 @@ proof: formalized
 
 # Representing measures and the Choquet order
 
-The module `PhyslibAlpha.Mathematics.Convex.Choquet.RepresentingMeasure`, [PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean): 14 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Mathematics.Convex.Choquet.RepresentingMeasure`, [PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean): 14 declarations, 9 with a docstring.
 
 > Representing measures of points of a convex set, the Choquet order, and maximal measures.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.Convex.Choquet.RepresentingMeasure`, [Physl
 
 ## A. Representing measures
 
-**`Choquet.IsRepresentingMeasure`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L64).
+**`Choquet.IsRepresentingMeasure`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L64).
 
 > A probability measure represents `x` when every continuous linear functional has the same
 > value at `x` as its integral.
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Mathematics.Convex.Choquet.RepresentingMeasure`, [Physl
 def IsRepresentingMeasure (x : S) (μ : ProbabilityMeasure S) : Prop
 ```
 
-**`Choquet.representingMeasures`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L68).
+**`Choquet.representingMeasures`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L68).
 
 > The probability measures representing `x`.
 
@@ -53,7 +53,7 @@ def IsRepresentingMeasure (x : S) (μ : ProbabilityMeasure S) : Prop
 def representingMeasures (x : S) : Set (ProbabilityMeasure S)
 ```
 
-**`Choquet.restrictCLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L72).
+**`Choquet.restrictCLM`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L72).
 
 > A continuous linear functional, as a continuous function on `S`.
 
@@ -61,7 +61,7 @@ def representingMeasures (x : S) : Set (ProbabilityMeasure S)
 def restrictCLM (ℓ : V →L[ℝ] ℝ) : C(S, ℝ)
 ```
 
-**`Choquet.isClosed_representingMeasures`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L75).
+**`Choquet.isClosed_representingMeasures`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L75).
 
 ```lean
 lemma isClosed_representingMeasures (x : S) : IsClosed (representingMeasures x)
@@ -69,7 +69,7 @@ lemma isClosed_representingMeasures (x : S) : IsClosed (representingMeasures x)
 
 ## B. The Choquet order
 
-**`Choquet.ChoquetLE`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L88).
+**`Choquet.ChoquetLE`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L88).
 
 > The Choquet order: `ν` gives every continuous convex function at least the integral `μ`
 > gives it.
@@ -78,27 +78,27 @@ lemma isClosed_representingMeasures (x : S) : IsClosed (representingMeasures x)
 def ChoquetLE (μ ν : ProbabilityMeasure S) : Prop
 ```
 
-**`Choquet.ChoquetLE.refl`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L92).
+**`Choquet.ChoquetLE.refl`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L92).
 
 ```lean
 lemma ChoquetLE.refl (μ : ProbabilityMeasure S) : ChoquetLE hS μ μ
 ```
 
-**`Choquet.ChoquetLE.trans`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L95).
+**`Choquet.ChoquetLE.trans`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L95).
 
 ```lean
 lemma ChoquetLE.trans {μ ν ρ : ProbabilityMeasure S} (hμν : ChoquetLE hS μ ν)
     (hνρ : ChoquetLE hS ν ρ) : ChoquetLE hS μ ρ
 ```
 
-**`Choquet.isClosed_setOf_choquetLE`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L99).
+**`Choquet.isClosed_setOf_choquetLE`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L99).
 
 ```lean
 lemma isClosed_setOf_choquetLE (μ : ProbabilityMeasure S) :
     IsClosed {ν : ProbabilityMeasure S | ChoquetLE hS μ ν}
 ```
 
-**`Choquet.ChoquetLE.isRepresentingMeasure`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L107).
+**`Choquet.ChoquetLE.isRepresentingMeasure`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L107).
 
 > Moving up the Choquet order keeps the represented point.
 
@@ -109,13 +109,13 @@ lemma ChoquetLE.isRepresentingMeasure {x : S} {μ ν : ProbabilityMeasure S}
 
 ## C. Maximal representing measures
 
-**`Choquet.representingMeasures_nonempty`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L121).
+**`Choquet.representingMeasures_nonempty`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L121).
 
 ```lean
 lemma representingMeasures_nonempty (x : S) : (representingMeasures x).Nonempty
 ```
 
-**`Choquet.IsChoquetMaximalAt`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L125).
+**`Choquet.IsChoquetMaximalAt`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L125).
 
 > `μ` represents `x` and is maximal in the Choquet order among the measures representing `x`.
 
@@ -123,7 +123,7 @@ lemma representingMeasures_nonempty (x : S) : (representingMeasures x).Nonempty
 def IsChoquetMaximalAt (x : S) (μ : ProbabilityMeasure S) : Prop
 ```
 
-**`Choquet.directed_choquetUpperSets`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L130).
+**`Choquet.directed_choquetUpperSets`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L130).
 
 > The representing measures above the members of a chain form a directed family.
 
@@ -133,7 +133,7 @@ lemma directed_choquetUpperSets (x : S) {c : Set (representingMeasures x)}
     Directed (· ⊇ ·) fun i : c => representingMeasures x ∩ {ν | ChoquetLE hS i.1.1 ν}
 ```
 
-**`Choquet.exists_choquetLE_of_isChain`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L141).
+**`Choquet.exists_choquetLE_of_isChain`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L141).
 
 > A nonempty chain of measures representing `x` has an upper bound among them.
 
@@ -143,7 +143,7 @@ lemma exists_choquetLE_of_isChain (x : S) {c : Set (representingMeasures x)}
     (hcne : c.Nonempty) : ∃ ub : representingMeasures x, ∀ a ∈ c, ChoquetLE hS a.1 ub.1
 ```
 
-**`Choquet.exists_isChoquetMaximalAt`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L154).
+**`Choquet.exists_isChoquetMaximalAt`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean#L154).
 
 > Every point has a Choquet-maximal representing measure.
 
@@ -158,4 +158,4 @@ lemma exists_isChoquetMaximalAt (x : S) :
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean)
+- [PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/RepresentingMeasure.lean)

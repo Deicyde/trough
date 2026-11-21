@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.14 Application to connectedness
 
-Section 52.14 of the Stacks Project, [Tag 0ECQ](https://stacks.math.columbia.edu/tag/0ECQ). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.14 of the Stacks Project, [Tag 0ECQ](https://stacks.math.columbia.edu/tag/0ECQ). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0ECR, a lemma
 
 [Tag 0ECR](https://stacks.math.columbia.edu/tag/0ECR) in the Stacks Project.
 
-**`Stacks.Algebraization.isConnected_zeroLocus_diff_and_isConnected_puncturedSpectrum_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/VarbaroConnectedness.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/VarbaroConnectedness.lean#L615). The attribute's comment: “both assertions: the connectedness of Y ∖ Z for closed Z ⊆ Y with dim(Z) < min(c, d - 1) - cd(A, I), and of the punctured spectrum of A/I when cd(A, I) < min(c, d - 1)”. References: SGA 2 XIII (2.1), “more general”.
+**`Stacks.Algebraization.isConnected_zeroLocus_diff_and_isConnected_puncturedSpectrum_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/VarbaroConnectedness.lean, line 615](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/VarbaroConnectedness.lean#L615). The attribute's comment: “both assertions: the connectedness of Y ∖ Z for closed Z ⊆ Y with dim(Z) < min(c, d - 1) - cd(A, I), and of the punctured spectrum of A/I when cd(A, I) < min(c, d - 1)”. References: SGA 2 XIII (2.1), “more general”.
 
 > **Stacks Project, Tag 0ECR** (Varbaro, Theorem 1.6). Let `(A, 𝔪)` be a Noetherian complete
 > local ring and `I` a proper ideal of `A`. Set `X = Spec(A)` and `Y = V(I)`, and denote by
@@ -51,7 +51,7 @@ theorem isConnected_zeroLocus_diff_and_isConnected_puncturedSpectrum_quotient
 
 [Tag 0EG5](https://stacks.math.columbia.edu/tag/0EG5) in the Stacks Project.
 
-**`Stacks.Algebraization.eq_empty_or_isConnected_zeroLocus_sdiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ConnectednessApplication.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ConnectednessApplication.lean#L702). The attribute's comment: “V(I) minus V(a) is empty or connected; hcmp carries 0EIF, the one hypothesis 0EG2 still has”.
+**`Stacks.Algebraization.eq_empty_or_isConnected_zeroLocus_sdiff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ConnectednessApplication.lean, line 702](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ConnectednessApplication.lean#L702). The attribute's comment: “V(I) minus V(a) is empty or connected; hcmp carries 0EIF, the one hypothesis 0EG2 still has”.
 
 > **Stacks Project, Tag 0EG5.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A`. Assume
 >
@@ -99,7 +99,7 @@ public theorem eq_empty_or_isConnected_zeroLocus_sdiff (A : Type u) [CommRing A]
         (PrimeSpectrum.zeroLocus (I : Set A) \ PrimeSpectrum.zeroLocus (a : Set A))
 ```
 
-**`Stacks.Algebraization.eq_empty_or_isConnected_zeroLocus_sdiff_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalLocusConnected.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalLocusConnected.lean#L89).
+**`Stacks.Algebraization.eq_empty_or_isConnected_zeroLocus_sdiff_of_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalLocusConnected.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalLocusConnected.lean#L89).
 
 > **Stacks Project, Tag 0EG5.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A`. Assume
 >
@@ -139,7 +139,7 @@ public theorem eq_empty_or_isConnected_zeroLocus_sdiff_of_isDualizingComplex (A 
 
 [Tag 0EG3](https://stacks.math.columbia.edu/tag/0EG3) in the Stacks Project.
 
-**`Stacks.Algebraization.isConnected_zeroLocus_singleton_sdiff_of_isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusConnected.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusConnected.lean#L81). The attribute's comment: “the whole statement: Y minus Z is connected, at the source's hypotheses”.
+**`Stacks.Algebraization.isConnected_zeroLocus_singleton_sdiff_of_isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusConnected.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusConnected.lean#L81). The attribute's comment: “the whole statement: Y minus Z is connected, at the source's hypotheses”.
 
 > **Stacks Project, Tag 0EG3.** Let `A` be a Noetherian domain which has a dualizing complex
 > and which is complete with respect to a nonzero `f ∈ A`. Let `f ∈ 𝔞 ⊆ A` be an ideal. Assume
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.14, Tag 0ECQ](https://stacks.math.columbia.edu/tag/0ECQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

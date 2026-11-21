@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.30 Cohomology and base change, VI
 
-Section 36.30 of the Stacks Project, [Tag 0A1G](https://stacks.math.columbia.edu/tag/0A1G). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.30 of the Stacks Project, [Tag 0A1G](https://stacks.math.columbia.edu/tag/0A1G). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A1H, a lemma
 
 [Tag 0A1H](https://stacks.math.columbia.edu/tag/0A1H) in the Stacks Project.
 
-**`AlgebraicGeometry.isPerfect_derivedPushforward_tensor_and_isIso_tensorFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TensorFinitelyPresentedPerfect.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TensorFinitelyPresentedPerfect.lean#L88).
+**`AlgebraicGeometry.isPerfect_derivedPushforward_tensor_and_isIso_tensorFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TensorFinitelyPresentedPerfect.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/TensorFinitelyPresentedPerfect.lean#L88).
 
 > **[Stacks, Tag 0A1H].** Let `f : X ⟶ S` be a morphism of schemes of finite presentation, let
 > `E` be a perfect object of `D(𝒪_X)` and let `𝒢^•` be a bounded complex of finitely presented
@@ -42,7 +42,7 @@ theorem isPerfect_derivedPushforward_tensor_and_isIso_tensorFlatBaseChangeMap {X
 
 [Tag 0A1I](https://stacks.math.columbia.edu/tag/0A1I) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FinitePresentationGlobalSectionsModel.exists_finiteProjectiveModel_of_properSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/FinitePresentationGlobalSectionsModel.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/FinitePresentationGlobalSectionsModel.lean#L149). The attribute's comment: “existence of the finite projective model M and the identification RGamma(X\_\{R'}, G\_\{R'}) = M tensor\_R R' for every base change; naturality in R' NOT stated. CARRIED: the pseudo-coherence half of the perfection, as the named residue PseudoCoherentDerivedGlobalSectionsOfProperSupport, and separatedness of f, a narrowing. Proved: the finite-Tor-dimension half and the identification. Accounting in the docstring”.
+**`Stacks.AlgebraicGeometry.FinitePresentationGlobalSectionsModel.exists_finiteProjectiveModel_of_properSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/FinitePresentationGlobalSectionsModel.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/FinitePresentationGlobalSectionsModel.lean#L149). The attribute's comment: “existence of the finite projective model M and the identification RGamma(X\_\{R'}, G\_\{R'}) = M tensor\_R R' for every base change; naturality in R' NOT stated. CARRIED: the pseudo-coherence half of the perfection, as the named residue PseudoCoherentDerivedGlobalSectionsOfProperSupport, and separatedness of f, a narrowing. Proved: the finite-Tor-dimension half and the identification. Accounting in the docstring”.
 
 > Let `R` be a ring, let `X` be a scheme of finite presentation over `R`, separated over `R`,
 > and let `G` be a finitely presented `𝒪_X`-module, flat over `R`, whose support is proper over `R`.
@@ -72,7 +72,7 @@ theorem exists_finiteProjectiveModel_of_properSupport
             DerivedCategory.Q.obj (extendScalarsComplex φ M))
 ```
 
-**`Stacks.AlgebraicGeometry.ProperSupportModel.exists_finiteProjectiveModel_derivedGlobalSections_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperSupportModel/FunctorialModel.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperSupportModel/FunctorialModel.lean#L203). The attribute's comment: “the remark in full: one finite complex M of finite projective R-modules, the identification RGamma(X\_\{R'}, G\_\{R'}) = M tensor\_R R' in D(R') for every base change, as a family of isomorphisms indexed by the ring map and the cartesian square and pinned to a single chain-level model over R, and the functoriality in R' as the cocycle square of the chain-level comparisons for two successive base changes; under exactly the source's hypotheses (X of finite presentation over R, not assumed separated; G finitely presented, flat over R, with proper support). The comparisons are Čech models of the scheme-theoretic support of G, which is proper over R; the cover is bound inside the existential”.
+**`Stacks.AlgebraicGeometry.ProperSupportModel.exists_finiteProjectiveModel_derivedGlobalSections_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperSupportModel/FunctorialModel.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperSupportModel/FunctorialModel.lean#L203). The attribute's comment: “the remark in full: one finite complex M of finite projective R-modules, the identification RGamma(X\_\{R'}, G\_\{R'}) = M tensor\_R R' in D(R') for every base change, as a family of isomorphisms indexed by the ring map and the cartesian square and pinned to a single chain-level model over R, and the functoriality in R' as the cocycle square of the chain-level comparisons for two successive base changes; under exactly the source's hypotheses (X of finite presentation over R, not assumed separated; G finitely presented, flat over R, with proper support). The comparisons are Čech models of the scheme-theoretic support of G, which is proper over R; the cover is bound inside the existential”.
 
 > **[Stacks, Tag 0A1I].** Let `R` be a ring, let `X` be a scheme of finite presentation over `R`
 > and let `G` be a finitely presented `𝒪_X`-module, flat over `R`, whose support is proper over `R`.
@@ -180,7 +180,7 @@ theorem exists_finiteProjectiveModel_derivedGlobalSections_functorial
 
 [Tag 0CSC](https://stacks.math.columbia.edu/tag/0CSC) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherent_derivedPushforward_tensor_and_isIso_tensorFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TensorPseudoCoherentPushforward.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TensorPseudoCoherentPushforward.lean#L368).
+**`AlgebraicGeometry.isPseudoCoherent_derivedPushforward_tensor_and_isIso_tensorFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TensorPseudoCoherentPushforward.lean, line 368](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/TensorPseudoCoherentPushforward.lean#L368).
 
 > **[Stacks, Tag 0CSC].** Let `f : X ⟶ S` be a morphism of schemes of finite presentation, let
 > `E` be a pseudo-coherent object of `D(𝒪_X)` and let `𝒢^•` be a bounded above complex of finitely
@@ -214,7 +214,7 @@ theorem isPseudoCoherent_derivedPushforward_tensor_and_isIso_tensorFlatBaseChang
 
 [Tag 0B91](https://stacks.math.columbia.edu/tag/0B91) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperFlatBaseChange.isPerfect_derivedPushforward_and_isIso_baseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperPushforwardPerfectAndBaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperPushforwardPerfectAndBaseChange.lean#L90). The attribute's comment: “both clauses in full: for f proper of finite presentation, (1) for f flat and E perfect, Rf\_*E is perfect and the canonical map Lg^*Rf\_*E --> Rf'\_*L(g')^*E of Tag 08HY is an isomorphism for every cartesian square; (2) for G of finite presentation and flat over S, Rf\_*G is perfect and the canonical map Lg^*Rf\_*G --> Rf'\_*(g')^*G is an isomorphism for every cartesian square”.
+**`AlgebraicGeometry.ProperFlatBaseChange.isPerfect_derivedPushforward_and_isIso_baseChange_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperPushforwardPerfectAndBaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperPushforwardPerfectAndBaseChange.lean#L90). The attribute's comment: “both clauses in full: for f proper of finite presentation, (1) for f flat and E perfect, Rf\_*E is perfect and the canonical map Lg^*Rf\_*E --> Rf'\_*L(g')^*E of Tag 08HY is an isomorphism for every cartesian square; (2) for G of finite presentation and flat over S, Rf\_*G is perfect and the canonical map Lg^*Rf\_*G --> Rf'\_*(g')^*G is an isomorphism for every cartesian square”.
 
 > **[Stacks, Tag 0B91].** Let `f : X ⟶ S` be a proper morphism of schemes of finite
 > presentation.
@@ -259,7 +259,7 @@ theorem isPerfect_derivedPushforward_and_isIso_baseChange_of_isProper {X S : Sch
 
 [Tag 0CSD](https://stacks.math.columbia.edu/tag/0CSD) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherent_derivedPushforward_and_isIso_derivedBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPushforwardPseudoCoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPushforwardPseudoCoherent.lean#L77).
+**`AlgebraicGeometry.isPseudoCoherent_derivedPushforward_and_isIso_derivedBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPushforwardPseudoCoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPushforwardPseudoCoherent.lean#L77).
 
 > **[Stacks, Tag 0CSD].** Let `f : X ⟶ S` be a flat proper morphism of schemes of finite
 > presentation and let `E ∈ D(𝒪_X)` be pseudo-coherent. Then `Rf_*E` is a pseudo-coherent object of
@@ -283,7 +283,7 @@ theorem isPseudoCoherent_derivedPushforward_and_isIso_derivedBaseChangeMap [Flat
 
 [Tag 0D2Q](https://stacks.math.columbia.edu/tag/0D2Q) in the Stacks Project.
 
-**`Stacks.ProperFlatPullbackLimit.bijective_comp_singleFunctor_map_limitPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean#L226). The attribute's comment: “the canonical map O\_X ⊗\_R lim M\_n --> lim O\_X ⊗\_R M\_n induces bijections Hom(E, source) --> Hom(E, target) for every E in D\_QCoh(O\_X), which is what the source's proof says the statement means; at every model of the derived category”.
+**`Stacks.ProperFlatPullbackLimit.bijective_comp_singleFunctor_map_limitPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean#L226). The attribute's comment: “the canonical map O\_X ⊗\_R lim M\_n --> lim O\_X ⊗\_R M\_n induces bijections Hom(E, source) --> Hom(E, target) for every E in D\_QCoh(O\_X), which is what the source's proof says the statement means; at every model of the derived category”.
 
 > **Stacks Project, Tag 0D2Q**, in the form the source's proof unfolds it. Let `R` be a ring,
 > `f : X ⟶ Spec R` proper, flat and of finite presentation, and `(Mₙ)` an inverse system of
@@ -309,7 +309,7 @@ theorem bijective_comp_singleFunctor_map_limitPost (R : CommRingCat.{u}) {X : Sc
         (limit.post M (tilde.functor R ⋙ Scheme.Modules.pullback f)))
 ```
 
-**`Stacks.ProperFlatPullbackLimit.isIso_homEquiv_singleFunctor_map_limitPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean#L266).
+**`Stacks.ProperFlatPullbackLimit.isIso_homEquiv_singleFunctor_map_limitPost`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatPullbackInverseLimit.lean#L266).
 
 > **Stacks Project, Tag 0D2Q.** Let `R` be a ring, `f : X ⟶ Spec R` proper, flat and of finite
 > presentation, and `(Mₙ)` an inverse system of `R`-modules with surjective transition maps. Then
@@ -333,7 +333,7 @@ theorem isIso_homEquiv_singleFunctor_map_limitPost (R : CommRingCat.{u}) {X : Sc
 
 [Tag 0A1J](https://stacks.math.columbia.edu/tag/0A1J) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFinitelyPresentedPushforwardBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFinitelyPresentedPushforwardBaseChange.lean#L166). The attribute's comment: “the base-change half of the conclusion ONLY, for the canonical map sheafHomFlatBaseChangeMap of Stacks 08IE, with the ORDINARY pullback (g')^*𝒢^• on the right as the source's boldface demands. The perfection half -- that K is a perfect object of D(O\_S) -- is NOT proved and is not stated: the library's result for it is Tag 0DJR, which assumes a Noetherian base, a locally-of-finite-type f and coherent terms, none of which Tag 0A1J grants, and the source closes that gap by a limit descent (Tags 01ZM, 01ZR, 05LY, 081G, 09RF) to a Noetherian stage that is not assembled in this library. Of what Tag 08IE case (1) asks beyond Tag 0A1J's hypotheses, all four are discharged here: quasi-compactness and quasi-separatedness of f from Tag 01TP part (3), commutativity of the square from the cartesian square, boundedness above of the complex from its two-sided boundedness, and quasi-coherence of its terms from their finite presentation by Tag 01BW. The perfectness of E is the source's own hypothesis, stated at the predicate Tag 08IE is written at, not a weaker stand-in. The three steps of the source proof of Tag 08IE are not assumed: Tag 08IE case (1) is proved outright in this library. What remains among this statement's own conditions is hK and hK', the quasi-coherence of the cohomology of the two derived internal homs, which Tag 0DJ9 asks of its complexes and which this library has at a spelling of the derived internal hom that does not line up with the one the comparison map is written at. The proper-support hypothesis on the complex is carried in the bundle and is not used by this half, the source's base-change argument not appealing to it”.
+**`AlgebraicGeometry.isIso_sheafHomFlatBaseChangeMap_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFinitelyPresentedPushforwardBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/BaseChange/SheafHomFinitelyPresentedPushforwardBaseChange.lean#L166). The attribute's comment: “the base-change half of the conclusion ONLY, for the canonical map sheafHomFlatBaseChangeMap of Stacks 08IE, with the ORDINARY pullback (g')^*𝒢^• on the right as the source's boldface demands. The perfection half -- that K is a perfect object of D(O\_S) -- is NOT proved and is not stated: the library's result for it is Tag 0DJR, which assumes a Noetherian base, a locally-of-finite-type f and coherent terms, none of which Tag 0A1J grants, and the source closes that gap by a limit descent (Tags 01ZM, 01ZR, 05LY, 081G, 09RF) to a Noetherian stage that is not assembled in this library. Of what Tag 08IE case (1) asks beyond Tag 0A1J's hypotheses, all four are discharged here: quasi-compactness and quasi-separatedness of f from Tag 01TP part (3), commutativity of the square from the cartesian square, boundedness above of the complex from its two-sided boundedness, and quasi-coherence of its terms from their finite presentation by Tag 01BW. The perfectness of E is the source's own hypothesis, stated at the predicate Tag 08IE is written at, not a weaker stand-in. The three steps of the source proof of Tag 08IE are not assumed: Tag 08IE case (1) is proved outright in this library. What remains among this statement's own conditions is hK and hK', the quasi-coherence of the cohomology of the two derived internal homs, which Tag 0DJ9 asks of its complexes and which this library has at a spelling of the derived internal hom that does not line up with the one the comparison map is written at. The proper-support hypothesis on the complex is carried in the bundle and is not used by this half, the source's base-change argument not appealing to it”.
 
 > **[Stacks, Tag 0A1J], the base-change half of the conclusion.** Let `f : X ⟶ S` be a
 > morphism of schemes of finite presentation, let `E` be a perfect object of `D(𝒪_X)` and let
@@ -379,7 +379,7 @@ public theorem isIso_sheafHomFlatBaseChangeMap_of_finitePresentation
     IsIso (sheafHomFlatBaseChangeMap f g f' g' sq E G)
 ```
 
-**`AlgebraicGeometry.isPerfect_derivedPushforward_derivedSheafHom_and_isIso_sheafHomFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SheafHomFinitelyPresentedPerfectBaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SheafHomFinitelyPresentedPerfectBaseChange.lean#L68).
+**`AlgebraicGeometry.isPerfect_derivedPushforward_derivedSheafHom_and_isIso_sheafHomFlatBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SheafHomFinitelyPresentedPerfectBaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/SheafHomFinitelyPresentedPerfectBaseChange.lean#L68).
 
 > **[Stacks, Tag 0A1J].** Let `f : X ⟶ S` be a morphism of schemes of finite presentation, let
 > `E` be a perfect object of `D(𝒪_X)` and let `𝒢^•` be a bounded complex of finitely presented
@@ -410,4 +410,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.30, Tag 0A1G](https://stacks.math.columbia.edu/tag/0A1G)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

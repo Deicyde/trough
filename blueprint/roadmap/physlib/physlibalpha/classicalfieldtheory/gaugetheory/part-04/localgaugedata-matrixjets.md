@@ -1,30 +1,31 @@
 ---
 declaration: module
 origin: cited
-lean: LocalGaugeData.MatrixJets, LocalGaugeData.MatrixJets.eval_ofConstant, LocalGaugeData.MatrixJets.evalLie_lie, LocalGaugeData.MatrixJets.ofConstantLie_lie, LocalGaugeData.MatrixJets.evalLie_ofConstantLie, LocalGaugeData.MatrixJets.deriv_comm, LocalGaugeData.MatrixJets.deriv_bracket, LocalGaugeData.MatrixJets.deriv_ofConstantLie
+lean: LocalGaugeData.MatrixJets, LocalGaugeData.MatrixJets.toMatJ_mul_inv, LocalGaugeData.MatrixJets.toMatJ_inv_mul, LocalGaugeData.MatrixJets.eval_ofConstant, LocalGaugeData.MatrixJets.evalLie_lie, LocalGaugeData.MatrixJets.ofConstantLie_lie, LocalGaugeData.MatrixJets.evalLie_ofConstantLie, LocalGaugeData.MatrixJets.deriv_comm
 statement: formalized
 proof: formalized
 ---
 
 # Matrix jet groups
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MatrixJets`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean): 37 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MatrixJets`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean): 39 declarations, 11 with a docstring.
 
 ## i. Overview
 
-> `U(1)` and `SU(n)` present their local gauge data in the same way: the gauge jets are
-> unitary matrices of jets, the Lie algebra jets are hermitian matrices of jets, evaluation is
-> the entrywise constant coefficient, constants embed entrywise, the derivative and the
-> coordinates act entrywise, the adjoint action is conjugation `U a U†` and the Maurer–Cartan
-> form is `i (∂_μ U) U†`. Every law of `LocalGaugeData` then follows from matrix identities
-> over the jet ring.
+> Matrix gauge groups present their local gauge data in the same way: the gauge jets are
+> invertible matrices of jets, the Lie algebra jets are matrices of jets, evaluation is the
+> entrywise constant coefficient, constants embed entrywise, the derivative and the
+> coordinates act entrywise, the adjoint action is conjugation `U a U⁻¹` and the
+> Maurer–Cartan form is `i (∂_μ U) U⁻¹`. Every law of `LocalGaugeData` then follows from
+> matrix identities over the jet ring. For `U(1)` and `SU(n)` the gauge jets are unitary, so
+> `U⁻¹ = U†`, and the Lie algebra jets are hermitian.
 >
 > `MatrixJets` records such a presentation: injective maps of the four carriers into matrices,
 > and what each structure map is in matrices. From it, `MatrixJets.toLocalGaugeData` proves
 > the laws once, `MatrixJets.faithful` shows the package is faithful, `MatrixJets.free`
 > reduces its freeness to three conditions on the carriers, and `MatrixJets.suFactor` is its
-> canonical `SU`-type factor. The concrete packages `u1` and
-> `su n` are instances.
+> canonical `SU`-type factor when the presentation is unitary. The concrete packages `u1`,
+> `su n` and the local gauge data of a `GlobalGaugeGroup` are instances.
 
 ## ii. Key results
 
@@ -40,13 +41,13 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.MatrixJ
 
 ## A. The presentation
 
-**`LocalGaugeData.MatrixJets`**, a structure, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L73).
+**`LocalGaugeData.MatrixJets`**, a structure, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L74).
 
 > **A presentation of gauge jets by matrices**: the value group, its Lie algebra, the jet
 > group and its Lie algebra of jets embed into `κ × κ` matrices, and every structure map of
 > the local gauge data is what it is for matrices: the entrywise constant coefficient,
 > inclusion of constants, derivative and coordinate multiplication, conjugation for the
-> adjoint actions and `i (∂_μ U) U†` for the Maurer–Cartan form.
+> adjoint actions and `i (∂_μ U) U⁻¹` for the Maurer–Cartan form.
 
 ```lean
 structure MatrixJets (κ : Type) [Fintype κ] [DecidableEq κ] (G₀ : Type) [Group G₀]
@@ -58,8 +59,6 @@ structure MatrixJets (κ : Type) [Fintype κ] [DecidableEq κ] (G₀ : Type) [Gr
   /-- The matrix of jets of a gauge jet. -/
   toMatJ : GJ →* Matrix κ κ SpaceTimeAlgebra
   toMatJ_injective : Function.Injective toMatJ
-  toMatJ_mul_star : ∀ U, toMatJ U * star (toMatJ U) = 1
-  star_toMatJ_mul : ∀ U, star (toMatJ U) * toMatJ U = 1
   /-- The matrix of a Lie algebra element. -/
   lie₀ : 𝔤 →ₗ[ℝ] Matrix κ κ ℂ
   lie₀_injective : Function.Injective lie₀
@@ -88,123 +87,135 @@ structure MatrixJets (κ : Type) [Fintype κ] [DecidableEq κ] (G₀ : Type) [Gr
   lieJ_coord : ∀ μ a, lieJ (coord μ a) = (X μ : SpaceTimeAlgebra) • lieJ a
   /-- The adjoint action of the jet group on the jet Lie algebra. -/
   adjoint : Representation ℝ GJ 𝔤J
-  lieJ_adjoint : ∀ U a, lieJ (adjoint U a) = toMatJ U * lieJ a * star (toMatJ U)
+  lieJ_adjoint : ∀ U a, lieJ (adjoint U a) = toMatJ U * lieJ a * toMatJ U⁻¹
   /-- The adjoint representation of the value group on its Lie algebra. -/
   adjointValue : Representation ℝ G₀ 𝔤
-  lie₀_adjointValue : ∀ g a, lie₀ (adjointValue g a) = toMat₀ g * lie₀ a * star (toMat₀ g)
+  lie₀_adjointValue : ∀ g a, lie₀ (adjointValue g a) = toMat₀ g * lie₀ a * toMat₀ g⁻¹
   /-- The Maurer–Cartan form `i (∂_μ U) U⁻¹` of a gauge jet. -/
   maurerCartan : GJ → (Fin 1 ⊕ Fin 3) → 𝔤J
   lieJ_maurerCartan : ∀ U μ, lieJ (maurerCartan U μ)
-    = Complex.I • ((toMatJ U).map (pderiv μ) * star (toMatJ U))
+    = Complex.I • ((toMatJ U).map (pderiv μ) * toMatJ U⁻¹)
+```
+
+**`LocalGaugeData.MatrixJets.toMatJ_mul_inv`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L125).
+
+```lean
+lemma toMatJ_mul_inv (U : GJ) : M.toMatJ U * M.toMatJ U⁻¹ = 1
+```
+
+**`LocalGaugeData.MatrixJets.toMatJ_inv_mul`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L129).
+
+```lean
+lemma toMatJ_inv_mul (U : GJ) : M.toMatJ U⁻¹ * M.toMatJ U = 1
 ```
 
 ## B. The local gauge data
 
 > Every law is an identity of matrices, read through the injective maps `lieJ` and `toMat₀`.
 
-**`LocalGaugeData.MatrixJets.eval_ofConstant`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L133).
+**`LocalGaugeData.MatrixJets.eval_ofConstant`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L140).
 
 ```lean
 lemma eval_ofConstant (g : G₀) : M.eval (M.ofConstant g) = g
 ```
 
-**`LocalGaugeData.MatrixJets.evalLie_lie`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L139).
+**`LocalGaugeData.MatrixJets.evalLie_lie`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L146).
 
 ```lean
 lemma evalLie_lie (a b : 𝔤J) : M.evalLie ⁅a, b⁆ = ⁅M.evalLie a, M.evalLie b⁆
 ```
 
-**`LocalGaugeData.MatrixJets.ofConstantLie_lie`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L144).
+**`LocalGaugeData.MatrixJets.ofConstantLie_lie`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L151).
 
 ```lean
 lemma ofConstantLie_lie (a b : 𝔤) :
     M.ofConstantLie ⁅a, b⁆ = ⁅M.ofConstantLie a, M.ofConstantLie b⁆
 ```
 
-**`LocalGaugeData.MatrixJets.evalLie_ofConstantLie`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L150).
+**`LocalGaugeData.MatrixJets.evalLie_ofConstantLie`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L157).
 
 ```lean
 lemma evalLie_ofConstantLie (a : 𝔤) : M.evalLie (M.ofConstantLie a) = a
 ```
 
-**`LocalGaugeData.MatrixJets.deriv_comm`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L156).
+**`LocalGaugeData.MatrixJets.deriv_comm`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L163).
 
 ```lean
 lemma deriv_comm (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J) :
     M.deriv μ (M.deriv ν a) = M.deriv ν (M.deriv μ a)
 ```
 
-**`LocalGaugeData.MatrixJets.deriv_bracket`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L163).
+**`LocalGaugeData.MatrixJets.deriv_bracket`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L170).
 
 ```lean
 lemma deriv_bracket (μ : Fin 1 ⊕ Fin 3) (x y : 𝔤J) :
     M.deriv μ ⁅x, y⁆ = ⁅M.deriv μ x, y⁆ + ⁅x, M.deriv μ y⁆
 ```
 
-**`LocalGaugeData.MatrixJets.deriv_ofConstantLie`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L173).
+**`LocalGaugeData.MatrixJets.deriv_ofConstantLie`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L180).
 
 ```lean
 lemma deriv_ofConstantLie (μ : Fin 1 ⊕ Fin 3) (a : 𝔤) : M.deriv μ (M.ofConstantLie a) = 0
 ```
 
-**`LocalGaugeData.MatrixJets.deriv_coord`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L179).
+**`LocalGaugeData.MatrixJets.deriv_coord`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L186).
 
 ```lean
 lemma deriv_coord (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J) :
     M.deriv μ (M.coord ν a) = M.coord ν (M.deriv μ a) + if μ = ν then a else 0
 ```
 
-**`LocalGaugeData.MatrixJets.evalLie_coord`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L194).
+**`LocalGaugeData.MatrixJets.evalLie_coord`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L201).
 
 ```lean
 lemma evalLie_coord (μ : Fin 1 ⊕ Fin 3) (a : 𝔤J) : M.evalLie (M.coord μ a) = 0
 ```
 
-**`LocalGaugeData.MatrixJets.coord_lie`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L200).
+**`LocalGaugeData.MatrixJets.coord_lie`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L207).
 
 ```lean
 lemma coord_lie (μ : Fin 1 ⊕ Fin 3) (a b : 𝔤J) : ⁅M.coord μ a, b⁆ = M.coord μ ⁅a, b⁆
 ```
 
-**`LocalGaugeData.MatrixJets.conj_mul_conj`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L207).
+**`LocalGaugeData.MatrixJets.conj_mul_conj`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L214).
 
-> Conjugation by a unitary matrix respects products.
+> Conjugation by an invertible matrix respects products.
 
 ```lean
 lemma conj_mul_conj (U : GJ) (A B : Matrix κ κ SpaceTimeAlgebra) :
-    (M.toMatJ U * A * star (M.toMatJ U)) * (M.toMatJ U * B * star (M.toMatJ U))
-      = M.toMatJ U * (A * B) * star (M.toMatJ U)
+    (M.toMatJ U * A * M.toMatJ U⁻¹) * (M.toMatJ U * B * M.toMatJ U⁻¹)
+      = M.toMatJ U * (A * B) * M.toMatJ U⁻¹
 ```
 
-**`LocalGaugeData.MatrixJets.adjoint_lie`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L214).
+**`LocalGaugeData.MatrixJets.adjoint_lie`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L221).
 
 ```lean
 lemma adjoint_lie (U : GJ) (x y : 𝔤J) :
     M.adjoint U ⁅x, y⁆ = ⁅M.adjoint U x, M.adjoint U y⁆
 ```
 
-**`LocalGaugeData.MatrixJets.evalLie_adjoint`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L221).
+**`LocalGaugeData.MatrixJets.evalLie_adjoint`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L228).
 
 ```lean
 lemma evalLie_adjoint (U : GJ) (x : 𝔤J) :
     M.evalLie (M.adjoint U x) = M.adjointValue (M.eval U) (M.evalLie x)
 ```
 
-**`LocalGaugeData.MatrixJets.maurerCartan_ofConstant`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L227).
+**`LocalGaugeData.MatrixJets.maurerCartan_ofConstant`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L234).
 
 ```lean
 lemma maurerCartan_ofConstant (g : G₀) (μ : Fin 1 ⊕ Fin 3) :
     M.maurerCartan (M.ofConstant g) μ = 0
 ```
 
-**`LocalGaugeData.MatrixJets.maurerCartan_cocycle`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L234).
+**`LocalGaugeData.MatrixJets.maurerCartan_cocycle`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L241).
 
 ```lean
 lemma maurerCartan_cocycle (U V : GJ) (μ : Fin 1 ⊕ Fin 3) :
     M.maurerCartan (U * V) μ = M.maurerCartan U μ + M.adjoint U (M.maurerCartan V μ)
 ```
 
-**`LocalGaugeData.MatrixJets.maurerCartan_structure`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L244).
+**`LocalGaugeData.MatrixJets.maurerCartan_structure`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L249).
 
 ```lean
 lemma maurerCartan_structure (U : GJ) (μ ν : Fin 1 ⊕ Fin 3) :
@@ -212,7 +223,7 @@ lemma maurerCartan_structure (U : GJ) (μ ν : Fin 1 ⊕ Fin 3) :
       + ⁅M.maurerCartan U μ, M.maurerCartan U ν⁆ = 0
 ```
 
-**`LocalGaugeData.MatrixJets.deriv_adjoint`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L270).
+**`LocalGaugeData.MatrixJets.deriv_adjoint`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L276).
 
 ```lean
 lemma deriv_adjoint (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :
@@ -220,7 +231,7 @@ lemma deriv_adjoint (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :
       - ⁅M.maurerCartan U μ, M.adjoint U x⁆
 ```
 
-**`LocalGaugeData.MatrixJets.evalLieHom`**, a def, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L287).
+**`LocalGaugeData.MatrixJets.evalLieHom`**, a def, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L294).
 
 > Evaluation of Lie algebra jets, as a morphism of Lie algebras.
 
@@ -228,13 +239,13 @@ lemma deriv_adjoint (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :
 noncomputable def evalLieHom : 𝔤J →ₗ⁅ℝ⁆ 𝔤
 ```
 
-**`LocalGaugeData.MatrixJets.evalLieHom_apply`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L292).
+**`LocalGaugeData.MatrixJets.evalLieHom_apply`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L299).
 
 ```lean
 lemma evalLieHom_apply (a : 𝔤J) : M.evalLieHom a = M.evalLie a
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData`**, a def, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L295).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L302).
 
 > **The local gauge data presented by matrices of jets.**
 
@@ -242,60 +253,60 @@ lemma evalLieHom_apply (a : 𝔤J) : M.evalLieHom a = M.evalLie a
 noncomputable def toLocalGaugeData : LocalGaugeData G₀ 𝔤 GJ 𝔤J
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_eval`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L320).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_eval`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L327).
 
 ```lean
 lemma toLocalGaugeData_eval : M.toLocalGaugeData.eval = M.eval
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstant`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L321).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstant`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L328).
 
 ```lean
 lemma toLocalGaugeData_ofConstant : M.toLocalGaugeData.ofConstant = M.ofConstant
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_evalLie_apply`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L322).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_evalLie_apply`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L329).
 
 ```lean
 lemma toLocalGaugeData_evalLie_apply (a : 𝔤J) :
     M.toLocalGaugeData.evalLie a = M.evalLie a
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstantLie`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L324).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_ofConstantLie`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L331).
 
 ```lean
 lemma toLocalGaugeData_ofConstantLie :
     M.toLocalGaugeData.ofConstantLie = M.ofConstantLie
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_deriv`**, a lemma, [line 326](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L326).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_deriv`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L333).
 
 ```lean
 lemma toLocalGaugeData_deriv (μ : Fin 1 ⊕ Fin 3) :
     M.toLocalGaugeData.deriv μ = M.deriv μ
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_mulCoord`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L328).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_mulCoord`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L335).
 
 ```lean
 lemma toLocalGaugeData_mulCoord (μ : Fin 1 ⊕ Fin 3) :
     M.toLocalGaugeData.mulCoord μ = M.coord μ
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_adjointJ`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L330).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_adjointJ`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L337).
 
 ```lean
 lemma toLocalGaugeData_adjointJ : M.toLocalGaugeData.adjointJ = M.adjoint
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_adjoint`**, a lemma, [line 331](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L331).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_adjoint`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L338).
 
 ```lean
 lemma toLocalGaugeData_adjoint :
     M.toLocalGaugeData.adjoint = M.adjointValue
 ```
 
-**`LocalGaugeData.MatrixJets.toLocalGaugeData_maurerCartan`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L333).
+**`LocalGaugeData.MatrixJets.toLocalGaugeData_maurerCartan`**, a lemma, [line 340](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L340).
 
 ```lean
 lemma toLocalGaugeData_maurerCartan :
@@ -304,7 +315,7 @@ lemma toLocalGaugeData_maurerCartan :
 
 ## C. The iterated derivative and faithfulness
 
-**`LocalGaugeData.MatrixJets.lieJ_iteratedDeriv`**, a lemma, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L343).
+**`LocalGaugeData.MatrixJets.lieJ_iteratedDeriv`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L350).
 
 > The iterated derivative is the entrywise iterated formal derivative.
 
@@ -314,7 +325,7 @@ lemma lieJ_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :
       = (M.lieJ a).map fun f => SpaceTimeAlgebra.iteratedPDeriv s f
 ```
 
-**`LocalGaugeData.MatrixJets.lie₀_evalLie_iteratedDeriv`**, a lemma, [line 359](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L359).
+**`LocalGaugeData.MatrixJets.lie₀_evalLie_iteratedDeriv`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L366).
 
 > The base-point value of the iterated derivative, entrywise.
 
@@ -324,7 +335,7 @@ lemma lie₀_evalLie_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) 
       = (M.lieJ a).map fun f => constantCoeff (SpaceTimeAlgebra.iteratedPDeriv s f)
 ```
 
-**`LocalGaugeData.MatrixJets.faithful`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L369).
+**`LocalGaugeData.MatrixJets.faithful`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L376).
 
 > **A package presented by matrices is faithful**: a jet is determined entrywise by the
 > constant coefficients of its derivatives, and a jet with vanishing Maurer–Cartan form has
@@ -336,13 +347,14 @@ lemma faithful : M.toLocalGaugeData.Faithful
 
 ## D. The canonical factor
 
-**`LocalGaugeData.MatrixJets.suFactor`**, a def, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L402).
+**`LocalGaugeData.MatrixJets.suFactor`**, a def, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L408).
 
-> **The canonical `SU`-type factor** of a package presented by matrices: the matrices of
-> jets themselves.
+> **The canonical `SU`-type factor** of a package presented by unitary matrices, those
+> whose inverse is the conjugate transpose: the matrices of jets themselves.
 
 ```lean
-noncomputable def suFactor : SUFactor M.toLocalGaugeData κ
+noncomputable def suFactor (hstar : ∀ U, star (M.toMatJ U) = M.toMatJ U⁻¹) :
+    SUFactor M.toLocalGaugeData κ
 ```
 
 ## E. Freeness
@@ -353,19 +365,19 @@ noncomputable def suFactor : SUFactor M.toLocalGaugeData κ
 > Lie algebra jet `P`. Taylor completeness and radial integrability then hold because they
 > hold for matrices of jets.
 
-**`LocalGaugeData.MatrixJets.lieJ_radial`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L426).
+**`LocalGaugeData.MatrixJets.lieJ_radial`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L433).
 
 > The radial component of the Maurer–Cartan form, in matrices:
-> `∑_μ x_μ · i (∂_μ U) U†`.
+> `∑_μ x_μ · i (∂_μ U) U⁻¹`.
 
 ```lean
 lemma lieJ_radial (U : GJ) :
     M.lieJ (M.toLocalGaugeData.radial U) =
       ∑ μ, (X μ : SpaceTimeAlgebra) •
-          (Complex.I • ((M.toMatJ U).map (pderiv μ) * star (M.toMatJ U)))
+          (Complex.I • ((M.toMatJ U).map (pderiv μ) * M.toMatJ U⁻¹))
 ```
 
-**`LocalGaugeData.MatrixJets.mem_truncationKer_zero_iff`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L434).
+**`LocalGaugeData.MatrixJets.mem_truncationKer_zero_iff`**, a lemma, [line 441](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L441).
 
 > A gauge jet is pure exactly when its matrix is the identity at the base point.
 
@@ -375,7 +387,7 @@ lemma mem_truncationKer_zero_iff (U : GJ) :
       (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (M.toMatJ U) = 1
 ```
 
-**`LocalGaugeData.MatrixJets.free`**, a lemma, [line 445](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L445).
+**`LocalGaugeData.MatrixJets.free`**, a lemma, [line 452](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean#L452).
 
 > **A criterion for freeness.** A presentation by matrices is free when every matrix of
 > jets built entrywise from Taylor data in `𝔤` is a Lie algebra jet, the Lie algebra jets
@@ -406,4 +418,4 @@ lemma free
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean)

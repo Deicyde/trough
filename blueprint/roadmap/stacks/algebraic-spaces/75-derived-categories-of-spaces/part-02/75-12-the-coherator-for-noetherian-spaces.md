@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.12 The coherator for Noetherian spaces
 
-Section 75.12 of the Stacks Project, [Tag 09TH](https://stacks.math.columbia.edu/tag/09TH). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.12 of the Stacks Project, [Tag 09TH](https://stacks.math.columbia.edu/tag/09TH). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09TI, a lemma
 
 [Tag 09TI](https://stacks.math.columbia.edu/tag/09TI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_filtered_colimit_pushforwards_artinian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ArtinianPushforwardColimit.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ArtinianPushforwardColimit.lean#L735).
+**`AlgebraicGeometry.exists_filtered_colimit_pushforwards_artinian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ArtinianPushforwardColimit.lean, line 735](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ArtinianPushforwardColimit.lean#L735).
 
 > **Stacks Project, Tag 09TI.** An injective quasi-coherent module on a
 > Noetherian affine scheme is a filtered colimit of pushforwards of coherent
@@ -42,7 +42,7 @@ public theorem exists_filtered_colimit_pushforwards_artinian
 
 [Tag 09TJ](https://stacks.math.columbia.edu/tag/09TJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_filtered_colimit_artinian_pushforwards_retract_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean#L114). The attribute's comment: “Over an arbitrary base scheme `S`, which generalizes the affine base of the source. The containment `hZ` of the terminal scheme in the big fppf site is the site condition under which the absolute quasi-separatedness in `IsNoetherian` is phrased. Direct summand is `CategoryTheory.Retract`, and the colimit is a cocone with a colimit proof.”.
+**`AlgebraicGeometry.Space.exists_filtered_colimit_artinian_pushforwards_retract_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean#L114). The attribute's comment: “Over an arbitrary base scheme `S`, which generalizes the affine base of the source. The containment `hZ` of the terminal scheme in the big fppf site is the site condition under which the absolute quasi-separatedness in `IsNoetherian` is phrased. Direct summand is `CategoryTheory.Retract`, and the colimit is a cocone with a colimit proof.”.
 
 > **Stacks 09TJ.**  Let `X` be a Noetherian algebraic space over a scheme `S` of a big fppf
 > site.  Every injective object `J` of the category `QCoh(𝒪_X)` of quasi-coherent modules on the
@@ -79,7 +79,7 @@ theorem exists_filtered_colimit_artinian_pushforwards_retract_of_isNoetherian
 
 [Tag 09TK](https://stacks.math.columbia.edu/tag/09TK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.injective_quasicoherentPushforward_obj_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InjectiveQuasicoherentPushforwardOfFlat.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InjectiveQuasicoherentPushforwardOfFlat.lean#L112).
+**`AlgebraicGeometry.Space.injective_quasicoherentPushforward_obj_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InjectiveQuasicoherentPushforwardOfFlat.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/InjectiveQuasicoherentPushforwardOfFlat.lean#L112).
 
 > **Stacks 09TK.**  Let `f : X ⟶ Y` be a flat, quasi-compact and quasi-separated morphism of
 > algebraic spaces over `S`.  If `J` is an injective object of `QCoh(𝒪_X)`, then `f_*J` is an
@@ -102,7 +102,7 @@ theorem injective_quasicoherentPushforward_obj_of_isFlat (f : X ⟶ Y)
 
 [Tag 09TL](https://stacks.math.columbia.edu/tag/09TL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_injective_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ChartLocalHigherDirectImage.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ChartLocalHigherDirectImage.lean#L343). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_injective_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ChartLocalHigherDirectImage.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/ChartLocalHigherDirectImage.lean#L343). The attribute's comment: “part (2)”.
 
 > **Stacks 09TL, part (2).**  Let `X` be a Noetherian algebraic space over a scheme `S`, let
 > `𝒥` be an injective object of `QCoh(𝒪_X)` and let `f : X ⟶ Y` be a morphism of algebraic spaces
@@ -123,7 +123,7 @@ theorem isZero_rightDerived_modulePushforward_injective_isNoetherian
     IsZero (((modulePushforward B S hS f).rightDerived p).obj J.obj)
 ```
 
-**`AlgebraicGeometry.Space.isZero_etaleRestrictionCohomology_of_injective_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean#L137). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isZero_etaleRestrictionCohomology_of_injective_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/UnconditionalArtinianPresentation.lean#L137). The attribute's comment: “part (1)”.
 
 > **Stacks 09TL, part (1).**  Let `X` be a Noetherian algebraic space over a scheme `S` of a
 > big fppf site and let `𝒥` be an injective object of `QCoh(𝒪_X)`.  Then `H^p(U, 𝒥|_U) = 0` for
@@ -145,7 +145,7 @@ theorem isZero_etaleRestrictionCohomology_of_injective_of_isNoetherian
 
 [Tag 09TM](https://stacks.math.columbia.edu/tag/09TM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_quasicoherentPushforwardExtension_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianCoherator/NoetherianExtension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianCoherator/NoetherianExtension.lean#L122).
+**`AlgebraicGeometry.Space.exists_quasicoherentPushforwardExtension_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianCoherator/NoetherianExtension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianCoherator/NoetherianExtension.lean#L122).
 
 > **Stacks 09TM.**  Let `f : X ⟶ Y` be a morphism of Noetherian algebraic spaces over `S`.
 > Then `f_*` on quasi-coherent modules has a right derived extension
@@ -188,7 +188,7 @@ theorem exists_quasicoherentPushforwardExtension_comparison (hZ : B.Contains (�
 
 [Tag 09TN](https://stacks.math.columbia.edu/tag/09TN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L116). The attribute's comment: “equivalence”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedComparison_isEquivalence_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L116). The attribute's comment: “equivalence”.
 
 > **[Stacks, Tag 09TN], the equivalence.**  Let `X` be a Noetherian algebraic space over `S`.
 > Then the comparison functor `i_X : D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` of Stacks 08F1 is an
@@ -199,7 +199,7 @@ theorem quasicoherentDerivedComparison_isEquivalence_of_isNoetherian :
     (quasicoherentDerivedComparison B S hS X.1 X.2).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L202). The attribute's comment: “equivalence with quasi-inverse RQ\_X”.
+**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L202). The attribute's comment: “equivalence with quasi-inverse RQ\_X”.
 
 > **[Stacks, Tag 09TN].**  Let `X` be a Noetherian algebraic space over `S`, `C_X` a coherator
 > of `X` and `RQ_X` a total right derived functor of it.  Then the comparison functor
@@ -239,4 +239,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.12, Tag 09TH](https://stacks.math.columbia.edu/tag/09TH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

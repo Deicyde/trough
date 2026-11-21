@@ -7,7 +7,7 @@ proof: formalized
 
 # Executable additive NTT algorithms
 
-`CompPoly.Fields.Binary.AdditiveNTT.Executable`, in [CompPoly/Fields/Binary/AdditiveNTT/Executable.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean), by Chung Thai Nguyen, Quang Dao.
+`CompPoly.Fields.Binary.AdditiveNTT.Executable`, in [CompPoly/Fields/Binary/AdditiveNTT/Executable.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean), by Chung Thai Nguyen, Quang Dao.
 
 > Generic function-backed and array-backed additive NTT implementations over a finite field,
 > with an explicitly supplied binary-subfield algebra and independent basis vectors. The
@@ -26,7 +26,7 @@ proof: formalized
 >
 > * [Diamond, B. E. and Posen, J., *Polylogarithmic proofs for multilinears over binary towers*][DP24]
 
-`AdditiveNTT.Array.toFinVec` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L38))
+`AdditiveNTT.Array.toFinVec` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L38))
 
 > Read an array of length `n` as a function on `Fin n`.
 
@@ -34,7 +34,7 @@ proof: formalized
 def Array.toFinVec {α : Type _} (n : ℕ) (arr : Array α) (h : arr.size = n) : Fin n → α
 ```
 
-`AdditiveNTT.arrayToFinFunction` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L42))
+`AdditiveNTT.arrayToFinFunction` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L42))
 
 > Converts an array to a `Fin n` function, using `0` for missing entries.
 
@@ -42,7 +42,7 @@ def Array.toFinVec {α : Type _} (n : ℕ) (arr : Array α) (h : arr.size = n) :
 def arrayToFinFunction {α : Type _} [Zero α] (n : ℕ) (arr : Array α) : Fin n → α
 ```
 
-`AdditiveNTT.List.prod_finRange_eq_finset_prod` (lemma, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L46))
+`AdditiveNTT.List.prod_finRange_eq_finset_prod` (lemma, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L46))
 
 > The product of a function over the list of finite indices equals its finite product.
 
@@ -51,7 +51,7 @@ lemma List.prod_finRange_eq_finset_prod {M : Type*} [CommMonoid M] {n : ℕ} (f 
     ((List.finRange n).map f).prod = ∏ i : Fin n, f i
 ```
 
-`AdditiveNTT.bitsToU` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L67))
+`AdditiveNTT.bitsToU` (definition, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L67))
 
 > Map the numeric mask `k` to the sum of the first `i` basis vectors selected by its bits,
 > as an element of their linear span.
@@ -61,7 +61,7 @@ def bitsToU (i : Fin r) (k : Fin (2 ^ i.val)) :
     AdditiveNTT.U (L := L) (𝔽q := 𝔽q) (β := β) i
 ```
 
-`AdditiveNTT.getUElements` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L86))
+`AdditiveNTT.getUElements` (definition, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L86))
 
 > Computes the elements of the subspace: `U_i = span({β_0, ..., β_{i-1}})`.
 
@@ -69,7 +69,7 @@ def bitsToU (i : Fin r) (k : Fin (2 ^ i.val)) :
 def getUElements (i : Fin r) : List L
 ```
 
-`AdditiveNTT.evalWAt` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L94))
+`AdditiveNTT.evalWAt` (definition, [line 94](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L94))
 
 > Evaluates the subspace vanishing polynomial `W_i(x) = ∏_{u ∈ U_i} (x - u).`
 
@@ -77,7 +77,7 @@ def getUElements (i : Fin r) : List L
 def evalWAt (i : Fin r) (x : L) : L
 ```
 
-`AdditiveNTT.evalNormalizedWAt` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L98))
+`AdditiveNTT.evalNormalizedWAt` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L98))
 
 > Evaluates the normalized subspace vanishing polynomial `Ŵ_i(x) = W_i(x) / W_i(β_i)`.
 
@@ -85,7 +85,7 @@ def evalWAt (i : Fin r) (x : L) : L
 def evalNormalizedWAt (i : Fin r) (x : L) : L
 ```
 
-`AdditiveNTT.computableTwiddleFactor` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L106))
+`AdditiveNTT.computableTwiddleFactor` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L106))
 
 > Compute the stage-`i` twiddle factor by summing normalized subspace-polynomial
 > evaluations selected by the bits of `u`.
@@ -94,7 +94,7 @@ def evalNormalizedWAt (i : Fin r) (x : L) : L
 def computableTwiddleFactor (i : Fin ℓ) (u : Fin (2 ^ (ℓ + R_rate - i - 1))) : L
 ```
 
-`AdditiveNTT.computableNTTStage` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L118))
+`AdditiveNTT.computableNTTStage` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L118))
 
 > Perform stage `i` on the coefficient buffer `b`, pairing entries whose indices differ
 > in bit `i` and applying the corresponding twiddle factor.
@@ -104,7 +104,7 @@ def computableNTTStage [Fact (LinearIndependent 𝔽q β)]
     (i : Fin ℓ) (b : Fin (2 ^ (ℓ + R_rate)) → L) : Fin (2^(ℓ + R_rate)) → L
 ```
 
-`AdditiveNTT.computableAdditiveNTT` (definition, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L194))
+`AdditiveNTT.computableAdditiveNTT` (definition, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L194))
 
 > Transform `2 ^ ℓ` novel-basis coefficients into `2 ^ (ℓ + R_rate)` values by first
 > tiling the coefficients and then applying stages `ℓ - 1` down to `0`. The basis has length
@@ -114,7 +114,7 @@ def computableNTTStage [Fact (LinearIndependent 𝔽q β)]
 def computableAdditiveNTT (a : Fin (2 ^ ℓ) → L) : Fin (2^(ℓ + R_rate)) → L
 ```
 
-`AdditiveNTT.tileCoeffsArray` (definition, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L202))
+`AdditiveNTT.tileCoeffsArray` (definition, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L202))
 
 > Array-backed coefficient tiling for the fast additive NTT path.
 
@@ -122,7 +122,7 @@ def computableAdditiveNTT (a : Fin (2 ^ ℓ) → L) : Fin (2^(ℓ + R_rate)) →
 def tileCoeffsArray (R_rate : ℕ) (a : Fin (2 ^ ℓ) → L) : Array L
 ```
 
-`AdditiveNTT.evalWAtCachedConstantsLoop` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L211))
+`AdditiveNTT.evalWAtCachedConstantsLoop` (definition, [line 211](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L211))
 
 > Starting from `acc`, iterate `acc ↦ acc * (acc + constants[k])` for indices
 > `k` from `j` to `constants.size - 1`. Return `acc` unchanged when `constants.size ≤ j`.
@@ -134,7 +134,7 @@ def tileCoeffsArray (R_rate : ℕ) (a : Fin (2 ^ ℓ) → L) : Array L
 def evalWAtCachedConstantsLoop (constants : Array L) (j : Nat) (acc : L) : L
 ```
 
-`AdditiveNTT.evalWAtCachedConstants` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L223))
+`AdditiveNTT.evalWAtCachedConstants` (definition, [line 223](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L223))
 
 > Evaluate a subspace polynomial using cached constants `W_k(β_k)`.
 >
@@ -145,7 +145,7 @@ def evalWAtCachedConstantsLoop (constants : Array L) (j : Nat) (acc : L) : L
 def evalWAtCachedConstants (constants : Array L) (x : L) : L
 ```
 
-`AdditiveNTT.subspacePolynomialConstantsArrayLoop` (definition, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L232))
+`AdditiveNTT.subspacePolynomialConstantsArrayLoop` (definition, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L232))
 
 > Extend the supplied `constants` array, starting at index `k` and stopping before `i`.
 > Each step evaluates the polynomial recurrence encoded by the current array at `β_k`
@@ -158,7 +158,7 @@ def evalWAtCachedConstants (constants : Array L) (x : L) : L
 def subspacePolynomialConstantsArrayLoop (i : Fin r) (k : Nat) (constants : Array L) : Array L
 ```
 
-`AdditiveNTT.subspacePolynomialConstantsArray` (definition, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L242))
+`AdditiveNTT.subspacePolynomialConstantsArray` (definition, [line 242](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L242))
 
 > Precompute the constants `W_k(β_k)` needed by the recursive subspace
 > polynomial evaluator up to stage `i`.
@@ -167,7 +167,7 @@ def subspacePolynomialConstantsArrayLoop (i : Fin r) (k : Nat) (constants : Arra
 def subspacePolynomialConstantsArray (i : Fin r) : Array L
 ```
 
-`AdditiveNTT.computableNormalizedWValuesArray` (definition, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L246))
+`AdditiveNTT.computableNormalizedWValuesArray` (definition, [line 246](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L246))
 
 > Precompute normalized vanishing evaluations used by one stage's twiddle factors.
 
@@ -175,7 +175,7 @@ def subspacePolynomialConstantsArray (i : Fin r) : Array L
 def computableNormalizedWValuesArray (i : Fin ℓ) : Array L
 ```
 
-`AdditiveNTT.computableTwiddleTableArray` (definition, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L258))
+`AdditiveNTT.computableTwiddleTableArray` (definition, [line 258](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L258))
 
 > Precompute all twiddle factors for one additive NTT stage.
 >
@@ -186,7 +186,7 @@ def computableNormalizedWValuesArray (i : Fin ℓ) : Array L
 def computableTwiddleTableArray (i : Fin ℓ) : Array L
 ```
 
-`AdditiveNTT.computableNTTStageArray` (definition, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L270))
+`AdditiveNTT.computableNTTStageArray` (definition, [line 270](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L270))
 
 > Array update for one additive NTT stage.
 >
@@ -197,7 +197,7 @@ def computableTwiddleTableArray (i : Fin ℓ) : Array L
 def computableNTTStageArray (i : Fin ℓ) (twiddles : Array L) (b : Array L) : Array L
 ```
 
-`AdditiveNTT.computableAdditiveNTTFastStages` (definition, [line 292](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L292))
+`AdditiveNTT.computableAdditiveNTTFastStages` (definition, [line 292](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L292))
 
 > Fast additive NTT stage driver over an `Array L` state.
 >
@@ -209,7 +209,7 @@ def computableNTTStageArray (i : Fin ℓ) (twiddles : Array L) (b : Array L) : A
 def computableAdditiveNTTFastStages : StateM (Array L) Unit
 ```
 
-`AdditiveNTT.computableAdditiveNTTFastAction` (definition, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L304))
+`AdditiveNTT.computableAdditiveNTTFastAction` (definition, [line 304](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L304))
 
 > Fast additive NTT array producer as a state action.
 
@@ -218,7 +218,7 @@ def computableAdditiveNTTFastAction (a : Fin (2 ^ ℓ) → L) :
     StateM (Array L) (Array L)
 ```
 
-`AdditiveNTT.computableAdditiveNTTFast` (definition, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L312))
+`AdditiveNTT.computableAdditiveNTTFast` (definition, [line 312](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean#L312))
 
 > Fast additive NTT array producer.
 
@@ -232,5 +232,5 @@ def computableAdditiveNTTFast (a : Fin (2 ^ ℓ) → L) : Array L
 
 ## Sources
 
-- [CompPoly/Fields/Binary/AdditiveNTT/Executable.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean)
+- [CompPoly/Fields/Binary/AdditiveNTT/Executable.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/AdditiveNTT/Executable.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Fields.Binary.AdditiveNTT.Executable.json)

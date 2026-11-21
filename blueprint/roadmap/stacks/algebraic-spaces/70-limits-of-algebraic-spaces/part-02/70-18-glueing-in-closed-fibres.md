@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.18 Glueing in closed fibres
 
-Section 70.18 of the Stacks Project, [Tag 0E8Y](https://stacks.math.columbia.edu/tag/0E8Y). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.18 of the Stacks Project, [Tag 0E8Y](https://stacks.math.columbia.edu/tag/0E8Y). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E8Z, a lemma
 
 [Tag 0E8Z](https://stacks.math.columbia.edu/tag/0E8Z) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_iff_forall_isAlgebraicSpace_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraicityOnBaseCover.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraicityOnBaseCover.lean#L141). The attribute's comment: “algebraicity is detected on an open covering of the base”.
+**`AlgebraicGeometry.isAlgebraicSpace_iff_forall_isAlgebraicSpace_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraicityOnBaseCover.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraicityOnBaseCover.lean#L141). The attribute's comment: “algebraicity is detected on an open covering of the base”.
 
 > **Stacks 0E8Z, the algebraicity criterion.** Let `{jᵢ : Tᵢ ⟶ S}` be a finite family of open
 > immersions of a big fppf site whose images cover `S`. An fppf sheaf on the big fppf site of `S`
@@ -31,7 +31,7 @@ theorem isAlgebraicSpace_iff_forall_isAlgebraicSpace_relocalizeRestrict [Finite 
       ∀ i, IsAlgebraicSpace B (T i) (hT i) ((OverShriek.relocalizeRestrict (j i)).obj F)
 ```
 
-**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_glueingFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationSliceGlueing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationSliceGlueing.lean#L64). The attribute's comment: “the equivalence clause: for an open covering of the base, base change is an equivalence onto the 2-fibre product of the categories of finite-presentation algebraic spaces over the two members. The criterion clause, that algebraicity is detected on such a covering, is `AlgebraicGeometry.isAlgebraicSpace_iff_forall_isAlgebraicSpace_relocalizeRestrict` in `StacksFrontier.AlgebraicGeometry.Spaces.AlgebraicityOnBaseCover`, which this module imports, so the two clauses cannot live in one file”.
+**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_glueingFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationSliceGlueing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationSliceGlueing.lean#L64). The attribute's comment: “the equivalence clause: for an open covering of the base, base change is an equivalence onto the 2-fibre product of the categories of finite-presentation algebraic spaces over the two members. The criterion clause, that algebraicity is detected on such a covering, is `AlgebraicGeometry.isAlgebraicSpace_iff_forall_isAlgebraicSpace_relocalizeRestrict` in `StacksFrontier.AlgebraicGeometry.Spaces.AlgebraicityOnBaseCover`, which this module imports, so the two clauses cannot live in one file”.
 
 > **The algebraic spaces of finite presentation over a base covered by two opens `U` and `W`
 > with intersection `V` are the `2`-fibre product `FP_U ×_{FP_V} FP_W`.** The comparison functor
@@ -48,7 +48,7 @@ theorem isEquivalence_glueingFunctor : (glueingFunctor B S hS hV.w).IsEquivalenc
 
 [Tag 0E90](https://stacks.math.columbia.edu/tag/0E90) in the Stacks Project.
 
-**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_glueingFunctor_specStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationSpecStalkGlueing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationSpecStalkGlueing.lean#L196). The attribute's comment: “for a point `s` of `S` whose complement is an open `U` with quasi-compact inclusion (the tag's closed point with `U = S ∖ {s} → S` quasi-compact), the comparison functor `FP_S ⥤ FP_U ×_{FP_V} FP_{Spec O_{S,s}}` is an equivalence, with `V = Spec O_{S,s} ∖ {s}` the complement of the closed point, which the vertex of the system of overlaps is by `toScheme_obj_opensSpecStalkSiteObj_eq_compl_closedPoint`. Both colimit identifications of the proof are derived from Stacks 07SK and the limit descriptions of `Spec O_{S,s}` and of its puncture over the affine open neighbourhoods of `s`”.
+**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_glueingFunctor_specStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationSpecStalkGlueing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationSpecStalkGlueing.lean#L196). The attribute's comment: “for a point `s` of `S` whose complement is an open `U` with quasi-compact inclusion (the tag's closed point with `U = S ∖ {s} → S` quasi-compact), the comparison functor `FP_S ⥤ FP_U ×_{FP_V} FP_{Spec O_{S,s}}` is an equivalence, with `V = Spec O_{S,s} ∖ {s}` the complement of the closed point, which the vertex of the system of overlaps is by `toScheme_obj_opensSpecStalkSiteObj_eq_compl_closedPoint`. Both colimit identifications of the proof are derived from Stacks 07SK and the limit descriptions of `Spec O_{S,s}` and of its puncture over the affine open neighbourhoods of `s`”.
 
 > **Stacks 0E90.**  Let `S` be a scheme, let `s` be a point of `S` and let `U` be an open of `S`
 > whose underlying set is the complement of `s` — so `s` is a closed point of `S` — with
@@ -81,7 +81,7 @@ theorem isEquivalence_glueingFunctor_specStalk (hUc : (U : Set S) = {s}ᶜ)
 
 [Tag 0E91](https://stacks.math.columbia.edu/tag/0E91) in the Stacks Project.
 
-**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_specStalkStageColimitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationLocalRingGlueingRealised.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationLocalRingGlueingRealised.lean#L268). The attribute's comment: “the equivalence of categories out of the filtered 2-colimit. The colimit of the categories `FP_{U ∪ W}` is the category `StageColimit` — objects the spaces over a stage, morphisms the germs — and the comparison functor `specStalkStageColimitFunctor` out of it to `FP_U ×_{FP_V} FP_{Spec O_{S,s}}` is full, faithful and essentially surjective, which is the fifth clause. The colimit runs over the stages `U ∪ W`, `W` an affine open neighbourhood of `s` inside a fixed one; the first two clauses say these are a cofinal family among the tag's opens `U'` with `U ⊆ U'` and `s ∈ U'`, so the colimit is the tag's. The third and fourth clauses pin the other two vertices: `Spec O_{S,s}`, and `V` as the preimage of `U` in it. The sole hypothesis is the tag's, that `U` is retrocompact in `S`; the tag's `s ∉ U` is unused, so the statement covers it”.
+**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_specStalkStageColimitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationLocalRingGlueingRealised.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationLocalRingGlueingRealised.lean#L268). The attribute's comment: “the equivalence of categories out of the filtered 2-colimit. The colimit of the categories `FP_{U ∪ W}` is the category `StageColimit` — objects the spaces over a stage, morphisms the germs — and the comparison functor `specStalkStageColimitFunctor` out of it to `FP_U ×_{FP_V} FP_{Spec O_{S,s}}` is full, faithful and essentially surjective, which is the fifth clause. The colimit runs over the stages `U ∪ W`, `W` an affine open neighbourhood of `s` inside a fixed one; the first two clauses say these are a cofinal family among the tag's opens `U'` with `U ⊆ U'` and `s ∈ U'`, so the colimit is the tag's. The third and fourth clauses pin the other two vertices: `Spec O_{S,s}`, and `V` as the preimage of `U` in it. The sole hypothesis is the tag's, that `U` is retrocompact in `S`; the tag's `s ∉ U` is unused, so the statement covers it”.
 
 > Let `S` be a scheme, `U` a retrocompact open of `S` and `s` a point of `S`, and put
 > `V = Spec 𝒪_{S, s} ∩ U`. Then the comparison functor
@@ -118,7 +118,7 @@ theorem isEquivalence_specStalkStageColimitFunctor (hU : IsRetrocompact (U : Set
 
 [Tag 0E92](https://stacks.math.columbia.edu/tag/0E92) in the Stacks Project.
 
-**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_comparisonFunctor_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationClosedPointsGlueingEquivalence.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationClosedPointsGlueingEquivalence.lean#L463).
+**`AlgebraicGeometry.FinitePresentationSpacesOver.isEquivalence_comparisonFunctor_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationClosedPointsGlueingEquivalence.lean, line 463](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationClosedPointsGlueingEquivalence.lean#L463).
 
 > **Stacks 0E92.** Let `S` be a scheme of a big fppf site and let `s₁, …, sₙ` be pairwise
 > distinct closed points of `S` such that `U = S ∖ {s₁, …, sₙ} ⟶ S` is quasi-compact. With
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.18, Tag 0E8Y](https://stacks.math.columbia.edu/tag/0E8Y)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -1,6 +1,6 @@
 # HilbertSpace
 
-The folder [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace): 67 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace): 67 modules, an article each, in path order with Basic.lean first in its folder.
 
 ## [Measurements in an orthonormal… to Weak-operator spectral measures](part-01/README.md)
 

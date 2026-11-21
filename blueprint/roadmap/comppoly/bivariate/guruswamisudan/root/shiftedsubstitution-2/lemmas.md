@@ -7,12 +7,12 @@ proof: formalized
 
 # Shifted Substitution Lemmas
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas`, in [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean), by Valerii Huhnin.
 
 > Semantic proof surface for the generic shifted substitution. The executable
 > operation is available independently of these heavier algebraic facts.
 
-`CompPoly.GuruswamiSudan.shiftedSubstitutionCoeffTerm_sum` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L26))
+`CompPoly.GuruswamiSudan.shiftedSubstitutionCoeffTerm_sum` (theorem, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L26))
 
 > The univariate coefficient sum produced by one `Y`-coefficient in shifted
 > substitution composes to the corresponding binomial expansion.
@@ -27,7 +27,7 @@ theorem shiftedSubstitutionCoeffTerm_sum {F : Type*}
       coeffY * (f + CPolynomial.X ^ t * g) ^ y
 ```
 
-`CompPoly.GuruswamiSudan.composeY_shiftedSubstitutionCoeffFold` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L48))
+`CompPoly.GuruswamiSudan.composeY_shiftedSubstitutionCoeffFold` (theorem, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L48))
 
 > Composing the bivariate contribution from one `Y`-coefficient gives the
 > corresponding univariate shifted-substitution term.
@@ -49,7 +49,7 @@ theorem composeY_shiftedSubstitutionCoeffFold {F : Type*}
         0
 ```
 
-`CompPoly.GuruswamiSudan.composeY_substituteYPolynomialPlusXPowerY` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L84))
+`CompPoly.GuruswamiSudan.composeY_substituteYPolynomialPlusXPowerY` (theorem, [line 84](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean#L84))
 
 > Semantic correctness of the shifted substitution `Y = f(X) + X^t Y`.
 
@@ -71,5 +71,5 @@ theorem composeY_substituteYPolynomialPlusXPowerY {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution/Lemmas.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.Lemmas.json)

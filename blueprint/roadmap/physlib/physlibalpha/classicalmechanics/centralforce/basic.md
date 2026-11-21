@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ClassicalMechanics.CentralForce, ClassicalMechanics.CentralForce.m_ne_zero, ClassicalMechanics.CentralForce.hamiltonian, ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_momentum, ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_position, ClassicalMechanics.CentralForce.contDiffOn_hamiltonian
+lean: ClassicalMechanics.CentralForce, ClassicalMechanics.CentralForce.m_ne_zero, ClassicalMechanics.CentralForce.hamiltonian, ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_momentum, ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_position, ClassicalMechanics.CentralForce.contDiffOn_hamiltonian, ClassicalMechanics.CentralForce.toHamiltonianSystem, ClassicalMechanics.CentralForce.mem_domain_toHamiltonianSystem
 statement: formalized
 proof: formalized
 ---
 
 # Central forces
 
-The module `PhyslibAlpha.ClassicalMechanics.CentralForce.Basic`, [PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.CentralForce.Basic`, [PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean): 9 declarations, 9 with a docstring.
 
 > Hamiltonian and partial gradients of a particle in a conservative central potential.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ClassicalMechanics.CentralForce.Basic`, [PhyslibAlpha/C
 
 ## A. The input data
 
-**`ClassicalMechanics.CentralForce`**, a structure, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L71).
+**`ClassicalMechanics.CentralForce`**, a structure, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L73).
 
 > A particle in three-dimensional space under a conservative central force centred at the origin,
 > specified by its mass `m` and a radial potential `V` smooth at positive radii.
@@ -64,7 +64,7 @@ structure CentralForce where
   contDiffOn_V : ContDiffOn ℝ ∞ V (Set.Ioi 0)
 ```
 
-**`ClassicalMechanics.CentralForce.m_ne_zero`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L87).
+**`ClassicalMechanics.CentralForce.m_ne_zero`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L89).
 
 > The mass of the particle is non-zero.
 
@@ -74,7 +74,7 @@ lemma m_ne_zero : S.m ≠ 0
 
 ## B. The Hamiltonian
 
-**`ClassicalMechanics.CentralForce.hamiltonian`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L97).
+**`ClassicalMechanics.CentralForce.hamiltonian`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L99).
 
 > The Hamiltonian `H(p, q) = ⟪p, p⟫ / (2 m) + V ‖q‖` of a central-force system, as a function of
 > the momentum `p` and the position `q`.
@@ -85,7 +85,7 @@ noncomputable def hamiltonian (p q : EuclideanSpace ℝ (Fin 3)) : ℝ
 
 ### B.1. Gradients of the Hamiltonian
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_momentum`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L107).
+**`ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_momentum`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L109).
 
 > The momentum gradient of the Hamiltonian of a central-force system is the velocity `p / m`.
 
@@ -94,7 +94,7 @@ lemma hasGradientAt_hamiltonian_momentum (p q : EuclideanSpace ℝ (Fin 3)) :
     HasGradientAt (fun p' => S.hamiltonian p' q) (S.m⁻¹ • p) p
 ```
 
-**`ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_position`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L116).
+**`ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_position`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L118).
 
 > Away from the centre of force, the position gradient of the Hamiltonian of a central-force
 > system is `V'(‖q‖) q / ‖q‖`, which is parallel to the position.
@@ -107,7 +107,7 @@ lemma hasGradientAt_hamiltonian_position (p : EuclideanSpace ℝ (Fin 3))
 
 ### B.2. Smoothness of the Hamiltonian
 
-**`ClassicalMechanics.CentralForce.contDiffOn_hamiltonian`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L134).
+**`ClassicalMechanics.CentralForce.contDiffOn_hamiltonian`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L136).
 
 > The Hamiltonian of a central-force system is smooth away from the centre of force.
 
@@ -116,9 +116,39 @@ lemma contDiffOn_hamiltonian :
     ContDiffOn ℝ ∞ (Function.uncurry S.hamiltonian) {x | x.2 ≠ 0}
 ```
 
+### B.3. The Hamiltonian system
+
+**`ClassicalMechanics.CentralForce.toHamiltonianSystem`**, a def, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L151).
+
+> The Hamiltonian system of a central force, defined away from the centre of force.
+
+```lean
+noncomputable def toHamiltonianSystem :
+    HamiltonianSystem 𝓘(ℝ, EuclideanSpace ℝ (Fin 3)) ⟨EuclideanSpace ℝ (Fin 3)⟩
+```
+
+**`ClassicalMechanics.CentralForce.mem_domain_toHamiltonianSystem`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L159).
+
+> A coordinate state belongs to the central-force domain exactly when its position is nonzero.
+
+```lean
+lemma mem_domain_toHamiltonianSystem (p q : EuclideanSpace ℝ (Fin 3)) :
+    PhaseSpace.ofInnerProductSpace p q ∈ S.toHamiltonianSystem.domain ↔ q ≠ 0
+```
+
+**`ClassicalMechanics.CentralForce.toHamiltonianSystem_hamiltonian`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean#L165).
+
+> The bundled central-force system has the existing central-force Hamiltonian in coordinates.
+
+```lean
+lemma toHamiltonianSystem_hamiltonian (t : Time) (p q : EuclideanSpace ℝ (Fin 3)) :
+    S.toHamiltonianSystem.hamiltonian (t, PhaseSpace.ofInnerProductSpace p q) =
+      S.hamiltonian p q
+```
+
 ## Depends on
 
-Its declarations' statements use no declaration of another module with an article here.
+- [Hamiltonian systems](../../../physlib/classicalmechanics/hamiltonianmechanics/basic.md)
 
 ## Proof depends on
 
@@ -126,4 +156,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean)
+- [PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean)

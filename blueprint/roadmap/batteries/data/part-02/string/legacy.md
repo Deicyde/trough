@@ -7,12 +7,12 @@ proof: formalized
 
 # Legacy implementations of `String` operations
 
-`Batteries.Data.String.Legacy`, in [Batteries/Data/String/Legacy.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean), by Leonardo de Moura, Mario Carneiro.
+`Batteries.Data.String.Legacy`, in [Batteries/Data/String/Legacy.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean), by Leonardo de Moura, Mario Carneiro.
 
 > This file includes old definitions of `String` functions that were downstreamed from core to prevent
 > `Batteries.Data.String.Lemmas` from breaking.
 
-`String.Legacy.mapAux` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L75))
+`String.Legacy.mapAux` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L75))
 
 > Implementation of `String.Legacy.map`.
 
@@ -20,7 +20,7 @@ proof: formalized
 def Legacy.mapAux (f : Char → Char) (i : Pos.Raw) (s : String) : String
 ```
 
-`String.Legacy.map` (definition, [line 96](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L96))
+`String.Legacy.map` (definition, [line 96](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L96))
 
 > Applies the function `f` to every character in a string, returning a string that contains the
 > resulting characters.
@@ -36,7 +36,7 @@ def Legacy.mapAux (f : Char → Char) (i : Pos.Raw) (s : String) : String
 def Legacy.map (f : Char → Char) (s : String) : String
 ```
 
-`String.Legacy.drop` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L113))
+`String.Legacy.drop` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L113))
 
 > Removes the specified number of characters (Unicode code points) from the start of the string.
 >
@@ -54,7 +54,7 @@ def Legacy.map (f : Char → Char) (s : String) : String
 def Legacy.drop (s : String) (n : Nat) : String
 ```
 
-`String.Legacy.take` (definition, [line 131](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L131))
+`String.Legacy.take` (definition, [line 131](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L131))
 
 > Creates a new string that contains the first `n` characters (Unicode code points) of `s`.
 >
@@ -73,7 +73,7 @@ def Legacy.drop (s : String) (n : Nat) : String
 def Legacy.take (s : String) (n : Nat) : String
 ```
 
-`String.Legacy.takeWhile` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L148))
+`String.Legacy.takeWhile` (definition, [line 148](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L148))
 
 > Creates a new string that contains the longest prefix of `s` in which `p` returns `true` for all
 > characters.
@@ -91,7 +91,7 @@ def Legacy.take (s : String) (n : Nat) : String
 def Legacy.takeWhile (s : String) (p : Char → Bool) : String
 ```
 
-`String.Legacy.dropWhile` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L165))
+`String.Legacy.dropWhile` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L165))
 
 > Creates a new string by removing the longest prefix from `s` in which `p` returns `true` for all
 > characters.
@@ -109,7 +109,7 @@ def Legacy.takeWhile (s : String) (p : Char → Bool) : String
 def Legacy.dropWhile (s : String) (p : Char → Bool) : String
 ```
 
-`String.Legacy.foldlAux` (definition, [line 175](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L175))
+`String.Legacy.foldlAux` (definition, [line 175](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L175))
 
 > Auxiliary definition for `String.Legacy.foldl`.
 >
@@ -121,7 +121,7 @@ def Legacy.foldlAux {α : Type u} (f : α → Char → α) (s : String) (stopPos
     (i : Pos.Raw) (a : α) : α
 ```
 
-`String.Legacy.foldl` (definition, [line 196](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L196))
+`String.Legacy.foldl` (definition, [line 196](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L196))
 
 > Folds a function over a string from the left, accumulating a value starting with `init`. The
 > accumulated value is combined with each character in order, using `f`.
@@ -138,7 +138,7 @@ def Legacy.foldlAux {α : Type u} (f : α → Char → α) (s : String) (stopPos
 def Legacy.foldl {α : Type u} (f : α → Char → α) (init : α) (s : String) : α
 ```
 
-`String.Legacy.front` (definition, [line 210](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L210))
+`String.Legacy.front` (definition, [line 210](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L210))
 
 > Returns the first character in `s`. If `s = ""`, returns `(default : Char)`.
 >
@@ -153,7 +153,7 @@ def Legacy.foldl {α : Type u} (f : α → Char → α) (init : α) (s : String)
 def Legacy.front (s : String) : Char
 ```
 
-`String.Legacy.back` (definition, [line 224](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L224))
+`String.Legacy.back` (definition, [line 224](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L224))
 
 > Returns the last character in `s`. If `s = ""`, returns `(default : Char)`.
 >
@@ -168,7 +168,7 @@ def Legacy.front (s : String) : Char
 def Legacy.back (s : String) : Char
 ```
 
-`String.Legacy.posOfAux` (definition, [line 234](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L234))
+`String.Legacy.posOfAux` (definition, [line 234](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L234))
 
 > Auxuliary definition for `String.Legacy.posOf`.
 >
@@ -179,7 +179,7 @@ def Legacy.back (s : String) : Char
 def Legacy.posOfAux (s : String) (c : Char) (stopPos : Pos.Raw) (pos : Pos.Raw) : Pos.Raw
 ```
 
-`String.Legacy.posOf` (definition, [line 256](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L256))
+`String.Legacy.posOf` (definition, [line 256](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L256))
 
 > Returns the position of the first occurrence of a character, `c`, in a string `s`. If `s` does not
 > contain `c`, returns `s.rawEndPos`.
@@ -196,7 +196,7 @@ def Legacy.posOfAux (s : String) (c : Char) (stopPos : Pos.Raw) (pos : Pos.Raw) 
 def Legacy.posOf (s : String) (c : Char) : Pos.Raw
 ```
 
-`String.Legacy.revPosOfAux` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L266))
+`String.Legacy.revPosOfAux` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L266))
 
 > Auxuliary definition for `String.Legacy.revPosOf`.
 >
@@ -207,7 +207,7 @@ def Legacy.posOf (s : String) (c : Char) : Pos.Raw
 def Legacy.revPosOfAux (s : String) (c : Char) (pos : Pos.Raw) : Option Pos.Raw
 ```
 
-`String.Legacy.revPosOf` (definition, [line 288](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L288))
+`String.Legacy.revPosOf` (definition, [line 288](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L288))
 
 > Returns the position of the last occurrence of a character, `c`, in a string `s`. If `s` does not
 > contain `c`, returns `none`.
@@ -224,7 +224,7 @@ def Legacy.revPosOfAux (s : String) (c : Char) (pos : Pos.Raw) : Option Pos.Raw
 def Legacy.revPosOf (s : String) (c : Char) : Option Pos.Raw
 ```
 
-`String.Legacy.findAux` (definition, [line 298](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L298))
+`String.Legacy.findAux` (definition, [line 298](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L298))
 
 > Auxuliary definition for `String.Legacy.find`.
 >
@@ -235,7 +235,7 @@ def Legacy.revPosOf (s : String) (c : Char) : Option Pos.Raw
 def Legacy.findAux (s : String) (p : Char → Bool) (stopPos : Pos.Raw) (pos : Pos.Raw) : Pos.Raw
 ```
 
-`String.Legacy.find` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L321))
+`String.Legacy.find` (definition, [line 321](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L321))
 
 > Finds the position of the first character in a string for which the Boolean predicate `p` returns
 > `true`. If there is no such character in the string, then the end position of the string is
@@ -253,7 +253,7 @@ def Legacy.findAux (s : String) (p : Char → Bool) (stopPos : Pos.Raw) (pos : P
 def Legacy.find (s : String) (p : Char → Bool) : Pos.Raw
 ```
 
-`String.Legacy.revFindAux` (definition, [line 331](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L331))
+`String.Legacy.revFindAux` (definition, [line 331](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L331))
 
 > Auxuliary definition for `String.Legacy.revFind`.
 >
@@ -264,7 +264,7 @@ def Legacy.find (s : String) (p : Char → Bool) : Pos.Raw
 def Legacy.revFindAux (s : String) (p : Char → Bool) (pos : Pos.Raw) : Option Pos.Raw
 ```
 
-`String.Legacy.revFind` (definition, [line 353](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L353))
+`String.Legacy.revFind` (definition, [line 353](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L353))
 
 > Finds the position of the last character in a string for which the Boolean predicate `p` returns
 > `true`. If there is no such character in the string, then `none` is returned.
@@ -281,7 +281,7 @@ def Legacy.revFindAux (s : String) (p : Char → Bool) (pos : Pos.Raw) : Option 
 def Legacy.revFind (s : String) (p : Char → Bool) : Option Pos.Raw
 ```
 
-`String.Legacy.foldrAux` (definition, [line 363](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L363))
+`String.Legacy.foldrAux` (definition, [line 363](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L363))
 
 > Auxuliary definition for `String.Legacy.foldr`.
 >
@@ -293,7 +293,7 @@ def Legacy.foldrAux {α : Type u} (f : Char → α → α) (a : α) (s : String)
     (i begPos : Pos.Raw) : α
 ```
 
-`String.Legacy.foldr` (definition, [line 387](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L387))
+`String.Legacy.foldr` (definition, [line 387](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L387))
 
 > Folds a function over a string from the right, accumulating a value starting with `init`. The
 > accumulated value is combined with each character in reverse order, using `f`.
@@ -310,7 +310,7 @@ def Legacy.foldrAux {α : Type u} (f : Char → α → α) (a : α) (s : String)
 def Legacy.foldr {α : Type u} (f : Char → α → α) (init : α) (s : String) : α
 ```
 
-`String.Legacy.anyAux` (definition, [line 397](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L397))
+`String.Legacy.anyAux` (definition, [line 397](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L397))
 
 > Auxuliary definition for `String.Legacy.any`.
 >
@@ -322,7 +322,7 @@ def Legacy.anyAux (s : String) (stopPos : Pos.Raw) (p : Char → Bool) (i : Pos.
     Bool
 ```
 
-`String.Legacy.any` (definition, [line 422](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L422))
+`String.Legacy.any` (definition, [line 422](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L422))
 
 > Checks whether there is a character in a string for which the Boolean predicate `p` returns `true`.
 >
@@ -341,7 +341,7 @@ def Legacy.anyAux (s : String) (stopPos : Pos.Raw) (p : Char → Bool) (i : Pos.
 def Legacy.any (s : String) (p : Char → Bool) : Bool
 ```
 
-`String.Legacy.all` (definition, [line 439](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L439))
+`String.Legacy.all` (definition, [line 439](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L439))
 
 > Checks whether the Boolean predicate `p` returns `true` for every character in a string.
 >
@@ -359,7 +359,7 @@ def Legacy.any (s : String) (p : Char → Bool) : Bool
 def Legacy.all (s : String) (p : Char → Bool) : Bool
 ```
 
-`String.Legacy.contains` (definition, [line 454](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L454))
+`String.Legacy.contains` (definition, [line 454](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L454))
 
 > Checks whether a string contains the specified character.
 >
@@ -375,7 +375,7 @@ def Legacy.all (s : String) (p : Char → Bool) : Bool
 def Legacy.contains (s : String) (c : Char) : Bool
 ```
 
-`Substring.Raw.Legacy.foldl` (definition, [line 469](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L469))
+`Substring.Raw.Legacy.foldl` (definition, [line 469](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L469))
 
 > Folds a function over a substring from the left, accumulating a value starting with `init`. The
 > accumulated value is combined with each character in order, using `f`.
@@ -387,7 +387,7 @@ def Legacy.contains (s : String) (c : Char) : Bool
 def Legacy.foldl {α : Type u} (f : α → Char → α) (init : α) (s : Substring.Raw) : α
 ```
 
-`Substring.Raw.Legacy.foldr` (definition, [line 481](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L481))
+`Substring.Raw.Legacy.foldr` (definition, [line 481](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L481))
 
 > Folds a function over a substring from the right, accumulating a value starting with `init`. The
 > accumulated value is combined with each character in reverse order, using `f`.
@@ -399,7 +399,7 @@ def Legacy.foldl {α : Type u} (f : α → Char → α) (init : α) (s : Substri
 def Legacy.foldr {α : Type u} (f : Char → α → α) (init : α) (s : Substring.Raw) : α
 ```
 
-`Substring.Raw.Legacy.any` (definition, [line 494](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L494))
+`Substring.Raw.Legacy.any` (definition, [line 494](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L494))
 
 > Checks whether the Boolean predicate `p` returns `true` for any character in a substring.
 >
@@ -412,7 +412,7 @@ def Legacy.foldr {α : Type u} (f : Char → α → α) (init : α) (s : Substri
 def Legacy.any (s : Substring.Raw) (p : Char → Bool) : Bool
 ```
 
-`Substring.Raw.Legacy.all` (definition, [line 507](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L507))
+`Substring.Raw.Legacy.all` (definition, [line 507](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L507))
 
 > Checks whether the Boolean predicate `p` returns `true` for every character in a substring.
 >
@@ -425,7 +425,7 @@ def Legacy.any (s : Substring.Raw) (p : Char → Bool) : Bool
 def Legacy.all (s : Substring.Raw) (p : Char → Bool) : Bool
 ```
 
-`Substring.Raw.Legacy.contains` (definition, [line 517](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean#L517))
+`Substring.Raw.Legacy.contains` (definition, [line 517](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean#L517))
 
 > Checks whether a substring contains the specified character.
 >
@@ -442,5 +442,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/String/Legacy.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/String/Legacy.lean)
+- [Batteries/Data/String/Legacy.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/String/Legacy.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.String.Legacy.json)

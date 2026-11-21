@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.34 Lichtenbaum's theorem
 
-Section 48.34 of the Stacks Project, [Tag 0G5D](https://stacks.math.columbia.edu/tag/0G5D). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.34 of the Stacks Project, [Tag 0G5D](https://stacks.math.columbia.edu/tag/0G5D). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G5E, a lemma
 
 [Tag 0G5E](https://stacks.math.columbia.edu/tag/0G5E) in the Stacks Project.
 
-**`Stacks.Duality.Lichtenbaum.le_topologicalKrullDim_and_isProper_of_not_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/VarietyTopCohomology.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/VarietyTopCohomology.lean#L212).
+**`Stacks.Duality.Lichtenbaum.le_topologicalKrullDim_and_isProper_of_not_isZero_rightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/VarietyTopCohomology.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/VarietyTopCohomology.lean#L212).
 
 > **[Stacks, Tag 0G5E].** Let `U` be a variety over a field `k` and let `F` be a coherent
 > `𝒪_U`-module. If `H^d(U, F)` is nonzero, then `dim(U) ≥ d`, and if equality holds, then `U` is
@@ -40,7 +40,7 @@ theorem le_topologicalKrullDim_and_isProper_of_not_isZero_rightDerived (k : Type
 
 [Tag 0G5F](https://stacks.math.columbia.edu/tag/0G5F) in the Stacks Project.
 
-**`Stacks.Duality.Lichtenbaum.tfae_isZero_cohomologyOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/Theorem.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/Theorem.lean#L107).
+**`Stacks.Duality.Lichtenbaum.tfae_isZero_cohomologyOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/Theorem.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/Lichtenbaum/Theorem.lean#L107).
 
 > **[Stacks, Tag 0G5F].** Let `X` be a separated scheme of finite type over a field `k`, of
 > dimension `d` (so `X` is nonempty). The following are equivalent:
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.34, Tag 0G5D](https://stacks.math.columbia.edu/tag/0G5D)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

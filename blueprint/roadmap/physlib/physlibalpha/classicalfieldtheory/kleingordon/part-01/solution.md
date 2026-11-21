@@ -8,7 +8,7 @@ proof: formalized
 
 # Klein–Gordon fields and causal propagation
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Solution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean): 32 declarations (1 instance with no name), 32 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Solution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean): 32 declarations (1 instance with no name), 32 with a docstring.
 
 > A disturbance of a relativistic field spreads inside the light cone. This file states how the
 > Klein–Gordon equation describes this, for massless and massive fields in every spatial dimension.
@@ -85,7 +85,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Solution`, [PhyslibAlp
 > The Fourier transform in time and space, the convolution form `u = K * f` and closed expressions
 > for the kernel `K` in a given dimension are not proved here.
 
-**`KleinGordon.Solution.retarded`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L115).
+**`KleinGordon.Solution.retarded`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L115).
 
 > The retarded solution of `operator m u = f`.
 
@@ -93,7 +93,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.Solution`, [PhyslibAlp
 abbrev retarded : TestField d F →ₗ[ℝ] smoothFields d F
 ```
 
-**`KleinGordon.Solution.advanced`**, an abbrev, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L118).
+**`KleinGordon.Solution.advanced`**, an abbrev, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L118).
 
 > The advanced solution of `operator m u = f`.
 
@@ -101,7 +101,7 @@ abbrev retarded : TestField d F →ₗ[ℝ] smoothFields d F
 abbrev advanced : TestField d F →ₗ[ℝ] smoothFields d F
 ```
 
-**An instance with no name**, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L123).
+**An instance with no name**, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L123).
 
 > Smooth fields form an additive group, needed to form the quotient.
 
@@ -109,7 +109,7 @@ abbrev advanced : TestField d F →ₗ[ℝ] smoothFields d F
 local instance : AddCommGroup (smoothFields d F)
 ```
 
-**`KleinGordon.Solution.retarded_solves`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L126).
+**`KleinGordon.Solution.retarded_solves`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L126).
 
 > The retarded solution solves the equation.
 
@@ -117,7 +117,7 @@ local instance : AddCommGroup (smoothFields d F)
 lemma retarded_solves (f : TestField d F) : operator m (retarded F m f) = f
 ```
 
-**`KleinGordon.Solution.advanced_solves`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L130).
+**`KleinGordon.Solution.advanced_solves`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L130).
 
 > The advanced solution solves the equation.
 
@@ -125,7 +125,7 @@ lemma retarded_solves (f : TestField d F) : operator m (retarded F m f) = f
 lemma advanced_solves (f : TestField d F) : operator m (advanced F m f) = f
 ```
 
-**`KleinGordon.Solution.retarded_support`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L134).
+**`KleinGordon.Solution.retarded_support`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L134).
 
 > The retarded solution vanishes outside the causal future of the source.
 
@@ -135,7 +135,7 @@ lemma retarded_support (f : TestField d F) :
       (causalRelation d).causalFuture (tsupport (f : SpaceTime d → F))
 ```
 
-**`KleinGordon.Solution.advanced_support`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L140).
+**`KleinGordon.Solution.advanced_support`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L140).
 
 > The advanced solution vanishes outside the causal past of the source.
 
@@ -145,7 +145,7 @@ lemma advanced_support (f : TestField d F) :
       (causalRelation d).causalPast (tsupport (f : SpaceTime d → F))
 ```
 
-**`KleinGordon.Solution.retarded_formula`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L147).
+**`KleinGordon.Solution.retarded_formula`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L147).
 
 > The retarded solution in time and space coordinates. At time `t` and position `x` it adds
 > the sine evolution of the source slice at every earlier time `s`.
@@ -157,7 +157,7 @@ lemma retarded_formula (f : TestField d F) (p : SpaceTime d) :
         (slice F (sourceEquiv F (testFieldEquiv F f)) s) (coordinates d p).2
 ```
 
-**`KleinGordon.Solution.advanced_formula`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L155).
+**`KleinGordon.Solution.advanced_formula`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L155).
 
 > The advanced solution in time and space coordinates. It adds the sine evolution of the
 > source slice at every later time.
@@ -169,7 +169,7 @@ lemma advanced_formula (f : TestField d F) (p : SpaceTime d) :
         (slice F (sourceEquiv F (testFieldEquiv F f)) s) (coordinates d p).2
 ```
 
-**`KleinGordon.Solution.propagator`**, an abbrev, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L163).
+**`KleinGordon.Solution.propagator`**, an abbrev, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L163).
 
 > The causal propagator `E`: the retarded minus the advanced solution.
 
@@ -177,7 +177,7 @@ lemma advanced_formula (f : TestField d F) (p : SpaceTime d) :
 abbrev propagator : TestField d F →ₗ[ℝ] smoothFields d F
 ```
 
-**`KleinGordon.Solution.propagator_eq`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L166).
+**`KleinGordon.Solution.propagator_eq`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L166).
 
 > The causal propagator is the retarded minus the advanced solution.
 
@@ -186,7 +186,7 @@ lemma propagator_eq (f : TestField d F) :
     propagator F m f = retarded F m f - advanced F m f
 ```
 
-**`KleinGordon.Solution.propagator_solves`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L170).
+**`KleinGordon.Solution.propagator_solves`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L170).
 
 > The causal propagator solves the equation without source.
 
@@ -194,7 +194,7 @@ lemma propagator_eq (f : TestField d F) :
 lemma propagator_solves (f : TestField d F) : operator m (propagator F m f) = 0
 ```
 
-**`KleinGordon.Solution.propagator_support`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L174).
+**`KleinGordon.Solution.propagator_support`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L174).
 
 > The causal propagator is supported in the causal future and past of the source.
 
@@ -204,7 +204,7 @@ lemma propagator_support (f : TestField d F) :
       (causalRelation d).causalHull (tsupport (f : SpaceTime d → F))
 ```
 
-**`KleinGordon.Solution.propagator_operator`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L180).
+**`KleinGordon.Solution.propagator_operator`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L180).
 
 > The causal propagator kills every source that is an equation of motion.
 
@@ -213,7 +213,7 @@ lemma propagator_operator (f : TestField d F) :
     propagator F m (compactOperator (equation m) f) = 0
 ```
 
-**`KleinGordon.Solution.existsUnique_retarded`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L185).
+**`KleinGordon.Solution.existsUnique_retarded`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L185).
 
 > A source has exactly one solution with support in the causal future of the source.
 
@@ -224,7 +224,7 @@ lemma existsUnique_retarded (f : TestField d F) :
         (causalRelation d).causalFuture (tsupport (f : SpaceTime d → F))
 ```
 
-**`KleinGordon.Solution.exact_sequence`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L193).
+**`KleinGordon.Solution.exact_sequence`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L193).
 
 > Compact sources, the equation of motion and the retarded minus advanced solution form an
 > exact sequence ending in the spacelike compact fields.
@@ -239,7 +239,7 @@ lemma exact_sequence :
       Function.Surjective (P.spacelikeCompactOperator (causalRelation d))
 ```
 
-**`KleinGordon.Solution.solutionsEquivQuotient`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L203).
+**`KleinGordon.Solution.solutionsEquivQuotient`**, a def, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L203).
 
 > Spacelike compact solutions are the compact sources modulo the equation of motion.
 
@@ -250,7 +250,7 @@ def solutionsEquivQuotient :
       (P.compactSources ⧸ LinearMap.range P.compactOperator)
 ```
 
-**`KleinGordon.Solution.retardedDistribution`**, an abbrev, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L216).
+**`KleinGordon.Solution.retardedDistribution`**, an abbrev, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L216).
 
 > The retarded solution for a compactly supported distribution.
 
@@ -258,7 +258,7 @@ def solutionsEquivQuotient :
 abbrev retardedDistribution (T : compactDistributions (SpaceTime d) V) : DistributionField d V
 ```
 
-**`KleinGordon.Solution.advancedDistribution`**, an abbrev, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L220).
+**`KleinGordon.Solution.advancedDistribution`**, an abbrev, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L220).
 
 > The advanced solution for a compactly supported distribution.
 
@@ -266,7 +266,7 @@ abbrev retardedDistribution (T : compactDistributions (SpaceTime d) V) : Distrib
 abbrev advancedDistribution (T : compactDistributions (SpaceTime d) V) : DistributionField d V
 ```
 
-**`KleinGordon.Solution.retardedDistribution_solves`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L226).
+**`KleinGordon.Solution.retardedDistribution_solves`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L226).
 
 > The retarded solution of a distribution solves the equation.
 
@@ -275,7 +275,7 @@ lemma retardedDistribution_solves (T : compactDistributions (SpaceTime d) V) :
     distributionOperator m (retardedDistribution m T) = T
 ```
 
-**`KleinGordon.Solution.advancedDistribution_solves`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L231).
+**`KleinGordon.Solution.advancedDistribution_solves`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L231).
 
 > The advanced solution of a distribution solves the equation.
 
@@ -284,7 +284,7 @@ lemma advancedDistribution_solves (T : compactDistributions (SpaceTime d) V) :
     distributionOperator m (advancedDistribution m T) = T
 ```
 
-**`KleinGordon.Solution.retardedDistribution_support`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L236).
+**`KleinGordon.Solution.retardedDistribution_support`**, a lemma, [line 236](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L236).
 
 > The retarded solution vanishes outside the causal future of the support of the source.
 
@@ -294,7 +294,7 @@ lemma retardedDistribution_support (T : compactDistributions (SpaceTime d) V) :
       ((causalRelation d).causalFuture (compactDistributionBound T))ᶜ
 ```
 
-**`KleinGordon.Solution.advancedDistribution_support`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L242).
+**`KleinGordon.Solution.advancedDistribution_support`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L242).
 
 > The advanced solution vanishes outside the causal past of the support of the source.
 
@@ -304,7 +304,7 @@ lemma advancedDistribution_support (T : compactDistributions (SpaceTime d) V) :
       ((causalRelation d).causalPast (compactDistributionBound T))ᶜ
 ```
 
-**`KleinGordon.Solution.retardedDistribution_unique`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L249).
+**`KleinGordon.Solution.retardedDistribution_unique`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L249).
 
 > A distribution solution supported in the causal future of a compact set is the retarded
 > solution.
@@ -316,7 +316,7 @@ lemma retardedDistribution_unique (T : compactDistributions (SpaceTime d) V)
     (hT : distributionOperator m u = T) : u = retardedDistribution m T
 ```
 
-**`KleinGordon.Solution.retardedDistribution_inverse`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L256).
+**`KleinGordon.Solution.retardedDistribution_inverse`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L256).
 
 > Solving and then applying the operator returns the source.
 
@@ -325,7 +325,7 @@ lemma retardedDistribution_inverse (T : compactDistributions (SpaceTime d) V) :
     retardedDistribution m (compactDistributionOperator m T) = T
 ```
 
-**`KleinGordon.Solution.pointSource`**, an abbrev, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L261).
+**`KleinGordon.Solution.pointSource`**, an abbrev, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L261).
 
 > The point source at `p`: the retarded solution of a delta distribution.
 
@@ -333,7 +333,7 @@ lemma retardedDistribution_inverse (T : compactDistributions (SpaceTime d) V) :
 abbrev pointSource (p : SpaceTime d)
 ```
 
-**`KleinGordon.Solution.pointSource_solves`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L264).
+**`KleinGordon.Solution.pointSource_solves`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L264).
 
 > The point source solves the equation with the delta distribution at `p` as source.
 
@@ -342,7 +342,7 @@ lemma pointSource_solves (p : SpaceTime d) :
     distributionOperator m (pointSource (m := m) p) = Distribution.delta p
 ```
 
-**`KleinGordon.Solution.pointSource_support`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L269).
+**`KleinGordon.Solution.pointSource_support`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L269).
 
 > The point source vanishes outside the causal future of `p`.
 
@@ -351,7 +351,7 @@ lemma pointSource_support (p : SpaceTime d) :
     IsVanishingOn (pointSource (m := m) p) ((causalRelation d).causalFuture {p})ᶜ
 ```
 
-**`KleinGordon.Solution.pointSource_reciprocity`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L275).
+**`KleinGordon.Solution.pointSource_reciprocity`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L275).
 
 > Reciprocity. The retarded kernel seen from `p` and tested on `f` is the advanced solution for
 > `f`, evaluated at `p`.
@@ -362,7 +362,7 @@ lemma pointSource_reciprocity (p : SpaceTime d) (f : TestField d ℝ) :
       ((realAdvancedGreenOperator m).toLinearMap f : SpaceTime d → ℝ) p
 ```
 
-**`KleinGordon.Solution.pointSource_apply`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L282).
+**`KleinGordon.Solution.pointSource_apply`**, a lemma, [line 282](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L282).
 
 > The point source at `p` applied to a test function `φ`. It integrates the sine evolution of
 > the delta distribution at the position of `p` against the slices of `φ` over later times.
@@ -376,7 +376,7 @@ lemma pointSource_apply (p : SpaceTime d) (φ : 𝓓((⊤ : Opens (SpaceTime d))
           (slice ℂ (sourceEquiv ℂ (_root_.TestFunction.postcompCLM Complex.ofRealCLM φ)) s)).re
 ```
 
-**`KleinGordon.Solution.fourier_sineEvolution`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L299).
+**`KleinGordon.Solution.fourier_sineEvolution`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L299).
 
 > In Fourier space the sine evolution multiplies by `sin(ω r) / ω`.
 
@@ -385,7 +385,7 @@ lemma fourier_sineEvolution {μ : ℝ} (hμ : 0 ≤ μ) (r : ℝ) (g : 𝓢(E, F
     𝓕 (sineEvolution F r μ g) ξ = (Real.sincPropagator r (dispersion μ ξ) : ℂ) • 𝓕 g ξ
 ```
 
-**`KleinGordon.Solution.retarded_slice_pairing`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L308).
+**`KleinGordon.Solution.retarded_slice_pairing`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean#L308).
 
 > At time `t` the retarded solution is a tempered distribution in space. Tested against a
 > Schwartz function it is the integral over earlier times `s` of the sine evolution of the source
@@ -404,4 +404,4 @@ lemma retarded_slice_pairing {μ : ℝ} (hμ : 0 ≤ μ) (t : ℝ) (g : 𝓢(E, 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean)

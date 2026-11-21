@@ -8,7 +8,7 @@ proof: formalized
 
 # Consistency of the Standard Model table with the existing formalisation
 
-The module `PhyslibAlpha.Particles.StandardModel.Model.Consistency`, [PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Model.Consistency`, [PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Model.Consistency`, [PhyslibAlp
 
 ## A. Consistency with the existing formalisation
 
-**`StandardModel.Model.localGaugeData_eq`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean#L57).
+**`StandardModel.Model.localGaugeData_eq`**, a lemma, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean#L57).
 
 > The local gauge data assembled from the factors of the table is the existing local
 > gauge data of the Standard Model.
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Model.Consistency`, [PhyslibAlp
 lemma localGaugeData_eq : StandardModel.localGaugeData = gaugeData
 ```
 
-**`StandardModel.Model.quarkDoublet_rep_mat`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean#L65).
+**`StandardModel.Model.quarkDoublet_rep_mat`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean#L65).
 
 > The quark doublet acts on its colour–weak index by the existing matrix `u · (U₃ ⊗ U₂)`
 > of the quark doublet.
@@ -61,4 +61,4 @@ lemma quarkDoublet_rep_mat (U : JetGaugeGroupI) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean)
+- [PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean)

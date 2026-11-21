@@ -2,9 +2,11 @@
 navigation: transparent
 ---
 
-# MSC2020 classes 37 to 94
+# MSC2020 classes 35 to 90
 
+- [Partial differential equations](35-partial-differential-equations/README.md)
 - [Dynamical systems and ergodic theory](37-dynamical-systems-and-ergodic-theory/README.md)
+- [Sequences, series, summability](40-sequences/README.md)
 - [Harmonic analysis on Euclidean spaces](42-harmonic-analysis-on-euclidean-spaces/README.md)
 - [Functional analysis](46-functional-analysis/README.md)
 - [Operator theory](47-operator-theory/README.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Mechanics of particles and systems](70-mechanics-of-particles-and-systems/README.md)
 - [Quantum theory](81-quantum-theory/README.md)
 - [Operations research, mathematical programming](90-operations-research/README.md)
-- [Game theory, economics, finance, and other social and behavioral sciences](91-game-theory/README.md)
-- [Information and communication theory, circuits](94-information-and-communication-theory/README.md)

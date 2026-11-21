@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.32 Spectral sequences for Ext
 
-Section 21.32 of the Stacks Project, [Tag 07A9](https://stacks.math.columbia.edu/tag/07A9). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.32 of the Stacks Project, [Tag 07A9](https://stacks.math.columbia.edu/tag/07A9). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07AA, an example
 
 [Tag 07AA](https://stacks.math.columbia.edu/tag/07AA) in the Stacks Project.
 
-**`CochainComplex.exists_cohomologyExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L104). The attribute's comment: “cohomology\_ext”.
+**`CochainComplex.exists_cohomologyExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L104). The attribute's comment: “cohomology\_ext”.
 
 > **Stacks Project, Tag 07AA, the hyper-`Ext` spectral sequence.** Let `C` be an abelian
 > category with enough injectives, let `K^•` be a bounded above complex of `C` and let `F` be an
@@ -37,7 +37,7 @@ public theorem exists_cohomologyExtSpectralSequence (K : CochainComplex C ℤ)
             ((DerivedCategory.singleFunctor C 0).obj F) n))
 ```
 
-**`CochainComplex.exists_termwiseExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L143). The attribute's comment: “termwise\_ext”.
+**`CochainComplex.exists_termwiseExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L143). The attribute's comment: “termwise\_ext”.
 
 > **Stacks Project, Tag 07AA, the termwise `Ext` spectral sequence.** Let `C` be an abelian
 > category with enough injectives, let `K^•` be a bounded above complex of `C` and let `F` be an
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.32, Tag 07A9](https://stacks.math.columbia.edu/tag/07A9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

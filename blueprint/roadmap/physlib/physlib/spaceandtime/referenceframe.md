@@ -8,7 +8,7 @@ proof: formalized
 
 # Reference frames
 
-The module `Physlib.SpaceAndTime.ReferenceFrame`, [Physlib/SpaceAndTime/ReferenceFrame.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean): 26 declarations (9 instances with no name), 22 with a docstring.
+The module `Physlib.SpaceAndTime.ReferenceFrame`, [Physlib/SpaceAndTime/ReferenceFrame.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean): 29 declarations (9 instances with no name), 25 with a docstring.
 
 > A point in space and a list of coordinates are different kinds of data. Assigning coordinates to a
 > point requires an origin and a basis for measuring displacements from that origin. A
@@ -34,7 +34,7 @@ The module `Physlib.SpaceAndTime.ReferenceFrame`, [Physlib/SpaceAndTime/Referenc
 > A reference frame can be pictured as a coordinate grid carried through time. It is part of how
 > motion is described, not an additional physical object moving with the particles.
 
-**`ClassicalMechanics.ReferenceFrame`**, a structure, [line 48](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L48).
+**`ClassicalMechanics.ReferenceFrame`**, a structure, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L48).
 
 > A time origin and a time-indexed spatial origin and basis in `d`-dimensional space.
 
@@ -48,7 +48,7 @@ structure ReferenceFrame (d : ℕ) where
   basis : Time → Module.Basis (Fin d) ℝ (EuclideanSpace ℝ (Fin d))
 ```
 
-**`ClassicalMechanics.ReferenceFrame.fromReferencePoints`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L62).
+**`ClassicalMechanics.ReferenceFrame.fromReferencePoints`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L62).
 
 > Build a reference frame from the trajectories of a collection of reference points.
 >
@@ -66,7 +66,7 @@ def ReferenceFrame.fromReferencePoints
     ReferenceFrame d
 ```
 
-**`ClassicalMechanics.ReferenceFrame.timeEquiv`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L86).
+**`ClassicalMechanics.ReferenceFrame.timeEquiv`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L86).
 
 > Convert a frame's real-valued time coordinate into an instant in affine time.
 
@@ -80,7 +80,7 @@ def timeEquiv (frame : ReferenceFrame d) : ℝ ≃ᵃ[ℝ] Time
 > moves in a straight line at constant velocity. These conditions restrict the frame, not the
 > particles described in that frame.
 
-**`ClassicalMechanics.ReferenceFrame.IsMetricConserved`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L98).
+**`ClassicalMechanics.ReferenceFrame.IsMetricConserved`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L98).
 
 > Whether the frame basis induces the same inner product on coordinates at every time.
 
@@ -88,7 +88,7 @@ def timeEquiv (frame : ReferenceFrame d) : ℝ ≃ᵃ[ℝ] Time
 def IsMetricConserved (frame : ReferenceFrame d) : Prop
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Orthonormal`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L103).
+**`ClassicalMechanics.ReferenceFrame.Orthonormal`**, a def, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L103).
 
 > Whether the frame's coordinate basis is orthonormal at every time.
 
@@ -96,7 +96,7 @@ def IsMetricConserved (frame : ReferenceFrame d) : Prop
 def Orthonormal (frame : ReferenceFrame d) : Prop
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Orthonormal.isMetricConserved`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L107).
+**`ClassicalMechanics.ReferenceFrame.Orthonormal.isMetricConserved`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L107).
 
 > An orthonormal frame conserves its coordinate metric.
 
@@ -104,13 +104,13 @@ def Orthonormal (frame : ReferenceFrame d) : Prop
 lemma Orthonormal.isMetricConserved (h : frame.Orthonormal) : frame.IsMetricConserved
 ```
 
-**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L111).
+**An instance with no name**, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L111).
 
 ```lean
 instance [h : Fact frame.Orthonormal] : Fact frame.IsMetricConserved
 ```
 
-**`ClassicalMechanics.ReferenceFrame.IsInertial`**, a structure, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L114).
+**`ClassicalMechanics.ReferenceFrame.IsInertial`**, a structure, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L114).
 
 > Whether a reference frame is related to its initial grid by uniform translation alone.
 
@@ -123,7 +123,7 @@ structure IsInertial (frame : ReferenceFrame d) : Prop where
   basis_conserved : ∀ t₁ t₂, frame.basis t₁ = frame.basis t₂
 ```
 
-**`ClassicalMechanics.ReferenceFrame.IsInertial.velocity`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L122).
+**`ClassicalMechanics.ReferenceFrame.IsInertial.velocity`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L122).
 
 > The time-independent velocity of an inertial frame's coordinate origin.
 
@@ -131,7 +131,36 @@ structure IsInertial (frame : ReferenceFrame d) : Prop where
 def IsInertial.velocity (h : frame.IsInertial) : EuclideanSpace ℝ (Fin d)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.IsInertial.isMetricConserved`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L126).
+**`ClassicalMechanics.ReferenceFrame.IsInertial.origin_vsub_eq`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L126).
+
+> The origin of an inertial frame moves by elapsed time times its constant velocity.
+
+```lean
+lemma IsInertial.origin_vsub_eq (h : frame.IsInertial) (t₁ t₂ : Time) :
+    frame.origin t₂ -ᵥ frame.origin t₁ = (t₂ -ᵥ t₁) • h.velocity
+```
+
+**`ClassicalMechanics.ReferenceFrame.IsInertial.velocity_eq_of_origin_vsub_eq`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L131).
+
+> A velocity describing the origin's displacement at every pair of times is unique.
+
+```lean
+lemma IsInertial.velocity_eq_of_origin_vsub_eq (h : frame.IsInertial)
+    {velocity : EuclideanSpace ℝ (Fin d)}
+    (hvelocity : ∀ t₁ t₂, frame.origin t₂ -ᵥ frame.origin t₁ = (t₂ -ᵥ t₁) • velocity) :
+    h.velocity = velocity
+```
+
+**`ClassicalMechanics.ReferenceFrame.IsInertial.origin_eq`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L140).
+
+> An inertial frame's origin has an affine trajectory through its position at the time origin.
+
+```lean
+lemma IsInertial.origin_eq (h : frame.IsInertial) (t : Time) :
+    frame.origin t = (t -ᵥ frame.timeOrigin) • h.velocity +ᵥ frame.origin frame.timeOrigin
+```
+
+**`ClassicalMechanics.ReferenceFrame.IsInertial.isMetricConserved`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L145).
 
 > An inertial frame conserves its coordinate metric.
 
@@ -139,7 +168,7 @@ def IsInertial.velocity (h : frame.IsInertial) : EuclideanSpace ℝ (Fin d)
 lemma IsInertial.isMetricConserved (h : frame.IsInertial) : frame.IsMetricConserved
 ```
 
-**An instance with no name**, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L131).
+**An instance with no name**, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L150).
 
 > Inertiality provides the conserved metric needed for metric operations on frame vectors.
 
@@ -156,7 +185,7 @@ instance [h : Fact frame.IsInertial] : Fact frame.IsMetricConserved
 > supplied by the surrounding definitions. When a vector represents a displacement, `dispEquiv`
 > converts its coordinates into the corresponding geometric displacement at a given time.
 
-**`ClassicalMechanics.ReferenceFrame.Vector`**, a structure, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L145).
+**`ClassicalMechanics.ReferenceFrame.Vector`**, a structure, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L164).
 
 > The `d` real components used to express a vector quantity relative to `frame`.
 
@@ -166,7 +195,7 @@ structure Vector (frame : ReferenceFrame d) where
   components : Fin d → ℝ
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.componentEquiv`**, a def, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L152).
+**`ClassicalMechanics.ReferenceFrame.Vector.componentEquiv`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L171).
 
 > Equivalence between frame vectors and coordinate components
 
@@ -174,19 +203,19 @@ structure Vector (frame : ReferenceFrame d) where
 def componentEquiv : frame.Vector ≃ (Fin d → ℝ)
 ```
 
-**An instance with no name**, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L155).
+**An instance with no name**, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L174).
 
 ```lean
 instance : AddCommGroup frame.Vector
 ```
 
-**An instance with no name**, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L157).
+**An instance with no name**, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L176).
 
 ```lean
 instance : Module ℝ frame.Vector
 ```
 
-**An instance with no name**, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L161).
+**An instance with no name**, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L180).
 
 > Scalar multiplication by a positive real.
 
@@ -194,7 +223,7 @@ instance : Module ℝ frame.Vector
 instance : SMul {x : ℝ // 0 < x} frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.componentLinearEquiv`**, a def, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L165).
+**`ClassicalMechanics.ReferenceFrame.Vector.componentLinearEquiv`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L184).
 
 > Linear equivalence between frame vectors and coordinate components.
 
@@ -202,7 +231,7 @@ instance : SMul {x : ℝ // 0 < x} frame.Vector
 def componentLinearEquiv : frame.Vector ≃ₗ[ℝ] (Fin d → ℝ)
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.dispEquiv`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L170).
+**`ClassicalMechanics.ReferenceFrame.Vector.dispEquiv`**, a def, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L189).
 
 > Equivalence between frame vectors and geometric displacements in space,
 > defined by the frame's basis at time coordinate `t`.
@@ -211,7 +240,7 @@ def componentLinearEquiv : frame.Vector ≃ₗ[ℝ] (Fin d → ℝ)
 def dispEquiv (t : ℝ) : frame.Vector ≃ₗ[ℝ] EuclideanSpace ℝ (Fin d)
 ```
 
-**An instance with no name**, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L174).
+**An instance with no name**, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L193).
 
 > Use the same topology for frame vectors as components' product topology.
 
@@ -219,7 +248,7 @@ def dispEquiv (t : ℝ) : frame.Vector ≃ₗ[ℝ] EuclideanSpace ℝ (Fin d)
 instance : TopologicalSpace frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.componentContLinearEquiv`**, a def, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L177).
+**`ClassicalMechanics.ReferenceFrame.Vector.componentContLinearEquiv`**, a def, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L196).
 
 > Continuous linear equivalence between frame vectors and coordinate components.
 
@@ -227,13 +256,13 @@ instance : TopologicalSpace frame.Vector
 def componentContLinearEquiv (frame : ReferenceFrame d) : frame.Vector ≃L[ℝ] (Fin d → ℝ)
 ```
 
-**An instance with no name**, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L182).
+**An instance with no name**, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L201).
 
 ```lean
 instance : FiniteDimensional ℝ frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.contDispEquiv`**, a def, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L187).
+**`ClassicalMechanics.ReferenceFrame.Vector.contDispEquiv`**, a def, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L206).
 
 > Continuous equivalence between frame vectors and geometric displacements in space,
 > defined by the frame's basis at time coordinate `t`.
@@ -242,7 +271,7 @@ instance : FiniteDimensional ℝ frame.Vector
 def contDispEquiv (t : ℝ) : frame.Vector ≃L[ℝ] EuclideanSpace ℝ (Fin d)
 ```
 
-**An instance with no name**, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L192).
+**An instance with no name**, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L211).
 
 > The physical norm on frame vectors, pulled back from geometric displacement space.
 
@@ -250,7 +279,7 @@ def contDispEquiv (t : ℝ) : frame.Vector ≃L[ℝ] EuclideanSpace ℝ (Fin d)
 instance [_h : Fact frame.IsMetricConserved] : NormedAddCommGroup frame.Vector
 ```
 
-**An instance with no name**, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L200).
+**An instance with no name**, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L219).
 
 > The physical inner product on frame vectors, pulled back from geometric displacement space.
 
@@ -258,7 +287,7 @@ instance [_h : Fact frame.IsMetricConserved] : NormedAddCommGroup frame.Vector
 instance [Fact frame.IsMetricConserved] : InnerProductSpace ℝ frame.Vector
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.norm_euclidean_if_orthonormal`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L209).
+**`ClassicalMechanics.ReferenceFrame.Vector.norm_euclidean_if_orthonormal`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L228).
 
 > In an orthonormal frame, the norm is the square root of squared components.
 
@@ -267,7 +296,7 @@ lemma norm_euclidean_if_orthonormal [h : Fact frame.Orthonormal] :
     ∀ v : frame.Vector, ‖v‖^2 = ∑ i, (v.components i)^2
 ```
 
-**`ClassicalMechanics.ReferenceFrame.Vector.inner_euclidean_if_orthonormal`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean#L219).
+**`ClassicalMechanics.ReferenceFrame.Vector.inner_euclidean_if_orthonormal`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean#L238).
 
 > In an orthonormal frame, the inner product is the sum of component products.
 
@@ -283,4 +312,4 @@ lemma inner_euclidean_if_orthonormal [h : Fact frame.Orthonormal] :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/ReferenceFrame.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/ReferenceFrame.lean)
+- [Physlib/SpaceAndTime/ReferenceFrame.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/ReferenceFrame.lean)

@@ -7,13 +7,13 @@ proof: formalized
 
 # Semantics of CCS
 
-`Cslib.Languages.CCS.Semantics`, in [Cslib/Languages/CCS/Semantics.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean), by Fabrizio Montesi.
+`Cslib.Languages.CCS.Semantics`, in [Cslib/Languages/CCS/Semantics.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean), by Fabrizio Montesi.
 
 > ## Main definitions
 > - `CCS.Tr`: transition relation for CCS.
 > - `CCS.lts`: the `LTS` of CCS.
 
-`Cslib.CCS.Tr` (inductive type, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L35))
+`Cslib.CCS.Tr` (inductive type, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L35))
 
 > The transition relation for CCS. This is a direct formalisation of the one found in
 > [Sangiorgi2011].
@@ -31,7 +31,7 @@ inductive Tr : Process Name Constant → Act Name → Process Name Constant → 
   | const : defs k = some p → Tr p μ p' → Tr («const» k) μ p'
 ```
 
-`Cslib.CCS.Terminated` (inductive type, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L50))
+`Cslib.CCS.Terminated` (inductive type, [line 50](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L50))
 
 > A process is (successfully) terminated if it is a composition of `nil`s.
 
@@ -43,7 +43,7 @@ inductive Terminated : Process Name Constant → Prop where
   | res : Terminated p → Terminated (res a p)
 ```
 
-`Cslib.CCS.not_tr_of_terminated` (theorem, [line 60](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L60))
+`Cslib.CCS.not_tr_of_terminated` (theorem, [line 60](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L60))
 
 > A terminated process has no outgoing transitions.
 
@@ -51,7 +51,7 @@ inductive Terminated : Process Name Constant → Prop where
 theorem not_tr_of_terminated (h : Terminated p) : ¬(lts (defs := defs)).Tr p μ p'
 ```
 
-`Cslib.CCS.pre_tr` (theorem, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L66))
+`Cslib.CCS.pre_tr` (theorem, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L66))
 
 > Inversion lemma for prefix transitions.
 
@@ -59,7 +59,7 @@ theorem not_tr_of_terminated (h : Terminated p) : ¬(lts (defs := defs)).Tr p μ
 theorem pre_tr (h : (lts (defs := defs)).Tr (pre μ p) μ' p') : μ = μ' ∧ p = p'
 ```
 
-`Cslib.CCS.const_tr` (theorem, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L72))
+`Cslib.CCS.const_tr` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L72))
 
 > Inversion lemma for constant transitions.
 
@@ -68,7 +68,7 @@ theorem const_tr (h : (lts (defs := defs)).Tr («const» k) μ p') :
     ∃ p, defs k = some p ∧ (lts (defs := defs)).Tr p μ p'
 ```
 
-`Cslib.CCS.pre_deterministicState` (theorem, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L80))
+`Cslib.CCS.pre_deterministicState` (theorem, [line 80](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L80))
 
 > Prefixes are deterministic.
 
@@ -76,7 +76,7 @@ theorem const_tr (h : (lts (defs := defs)).Tr («const» k) μ p') :
 theorem pre_deterministicState : DeterministicState (lts (defs := defs)) (pre μ p)
 ```
 
-`Cslib.CCS.const_deterministicStateLabel` (theorem, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L85))
+`Cslib.CCS.const_deterministicStateLabel` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L85))
 
 > Constants are deterministic if their definition is deterministic.
 
@@ -86,7 +86,7 @@ theorem const_deterministicStateLabel (hdef : defs k = some p)
     DeterministicStateLabel (lts (defs := defs)) («const» k) μ
 ```
 
-`Cslib.CCS.res_deterministicStateLabel` (theorem, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean#L100))
+`Cslib.CCS.res_deterministicStateLabel` (theorem, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean#L100))
 
 > Restriction is deterministic if its subterm is deterministic.
 
@@ -103,5 +103,5 @@ theorem res_deterministicStateLabel
 
 ## Sources
 
-- [Cslib/Languages/CCS/Semantics.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CCS/Semantics.lean)
+- [Cslib/Languages/CCS/Semantics.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CCS/Semantics.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CCS.Semantics.json)

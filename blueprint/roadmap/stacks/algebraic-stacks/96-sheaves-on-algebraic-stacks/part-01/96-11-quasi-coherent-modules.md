@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.11 Quasi-coherent modules
 
-Section 96.11 of the Stacks Project, [Tag 06WF](https://stacks.math.columbia.edu/tag/06WF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 96.11 of the Stacks Project, [Tag 06WF](https://stacks.math.columbia.edu/tag/06WF). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06WG, a definition
 
 [Tag 06WG](https://stacks.math.columbia.edu/tag/06WG) in the Stacks Project.
 
-**`AlgebraicGeometry.FibredSite.quasicoherentModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Modules.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Modules.lean#L53).
+**`AlgebraicGeometry.FibredSite.quasicoherentModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Modules.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Modules.lean#L53).
 
 > The category of quasi-coherent modules on the fppf ringed site of a category fibred in
 > groupoids over the schemes over `S`.
@@ -27,7 +27,7 @@ public abbrev quasicoherentModules
 
 [Tag 06WH](https://stacks.math.columbia.edu/tag/06WH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isQuasicoherentOnSite_modulePullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ModulePullback.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ModulePullback.lean#L215).
+**`AlgebraicGeometry.Stack.isQuasicoherentOnSite_modulePullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ModulePullback.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ModulePullback.lean#L215).
 
 > **Stacks 06WH.** The inverse image of sheaves of modules along a 1-morphism of categories
 > fibred in groupoids over the big fppf category of `S` preserves quasi-coherence.
@@ -55,7 +55,7 @@ instance isQuasicoherentOnSite_modulePullback
 
 [Tag 06WI](https://stacks.math.columbia.edu/tag/06WI) in the Stacks Project.
 
-**`AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_iff_forall_objectInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredSiteLocalization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredSiteLocalization.lean#L373).
+**`AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_iff_forall_objectInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredSiteLocalization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredSiteLocalization.lean#L373).
 
 > **Stacks 06WI.**  A sheaf of modules on the associated fppf site of a category fibred in
 > groupoids is quasi-coherent if and only if its inverse image `x^*𝓕` is a quasi-coherent sheaf on
@@ -77,7 +77,7 @@ public theorem isQuasicoherentOnSite_iff_forall_objectInverseImage
 
 [Tag 0EM8](https://stacks.math.columbia.edu/tag/0EM8) in the Stacks Project.
 
-**`AlgebraicGeometry.FibredSite.tfae_isQuasicoherentClause'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SiteEquivalenceAffine.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SiteEquivalenceAffine.lean#L282). The attribute's comment: “the three-way equivalence of the conditions at the Zariski, étale and fppf topologies (a sheaf for the inherited topology and quasi-coherent on that ringed site), for any category fibred in groupoids over (Sch/S)\_fppf and any presheaf of modules on it; the inputs are proved by isSheafFppfOfQuasicoherentOnSite\_siteKind and quasicoherentOnSiteOfLeFppf\_siteKind”.
+**`AlgebraicGeometry.FibredSite.tfae_isQuasicoherentClause'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SiteEquivalenceAffine.lean, line 282](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SiteEquivalenceAffine.lean#L282). The attribute's comment: “the three-way equivalence of the conditions at the Zariski, étale and fppf topologies (a sheaf for the inherited topology and quasi-coherent on that ringed site), for any category fibred in groupoids over (Sch/S)\_fppf and any presheaf of modules on it; the inputs are proved by isSheafFppfOfQuasicoherentOnSite\_siteKind and quasicoherentOnSiteOfLeFppf\_siteKind”.
 
 > **Stacks 0EM8.**  For a category `𝒳` fibred in groupoids over the big fppf category of
 > schemes over `S` and a presheaf of modules `𝓕` on `𝒳`, the three conditions
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.11, Tag 06WF](https://stacks.math.columbia.edu/tag/06WF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

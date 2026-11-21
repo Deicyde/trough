@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.5 First cohomology and extensions
 
-Section 20.5 of the Stacks Project, [Tag 0B39](https://stacks.math.columbia.edu/tag/0B39). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 20.5 of the Stacks Project, [Tag 0B39](https://stacks.math.columbia.edu/tag/0B39). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0B3A, a lemma
 
 [Tag 0B3A](https://stacks.math.columbia.edu/tag/0B3A) in the Stacks Project.
 
-**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L115). The attribute's comment: “the canonical bijection, as an isomorphism of abelian groups”.
+**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L115). The attribute's comment: “the canonical bijection, as an isomorphism of abelian groups”.
 
 > **Stacks 0B3A.** For a ringed space `(X, O_X)` and a sheaf of `O_X`-modules `F`, the
 > canonical bijection `Ext^1_{Mod(O_X)}(O_X, F) → H^1(X, F)`, an isomorphism of abelian groups.
@@ -24,7 +24,7 @@ def extOneEquivFirstCohomologyCanonical (M : SheafOfModules.{u} R) :
     Abelian.Ext (SheafOfModules.unit R) M 1 ≃+ Hgroup R ⊤ 1 M
 ```
 
-**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_extClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L154). The attribute's comment: “image of an extension: the boundary of `1` in the long exact cohomology sequence”.
+**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_extClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L154). The attribute's comment: “image of an extension: the boundary of `1` in the long exact cohomology sequence”.
 
 > **Stacks 0B3A.** The canonical bijection sends the class of the extension
 > `0 → F → E → O_X → 0` to the image of `1 ∈ Γ(X, O_X)` under the boundary map
@@ -39,7 +39,7 @@ theorem extOneEquivFirstCohomologyCanonical_extClass (M E : SheafOfModules.{u} R
         (oneCohomologyClass R)
 ```
 
-**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L178). The attribute's comment: “uniqueness: the boundary formula determines the bijection”.
+**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L178). The attribute's comment: “uniqueness: the boundary formula determines the bijection”.
 
 > **Stacks 0B3A.** The boundary formula determines the canonical bijection uniquely.
 
@@ -55,7 +55,7 @@ theorem extOneEquivFirstCohomologyCanonical_unique (M : SheafOfModules.{u} R)
     e = extOneEquivFirstCohomologyCanonical R M
 ```
 
-**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L196). The attribute's comment: “naturality in the coefficient module sheaf”.
+**`Stacks.Cohomology.SpaceModules.extOneEquivFirstCohomologyCanonical_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/Extensions/ExtOneCanonicalBoundary.lean#L196). The attribute's comment: “naturality in the coefficient module sheaf”.
 
 > **Stacks 0B3A.** The canonical bijection is natural in the coefficient module sheaf.
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.5, Tag 0B39](https://stacks.math.columbia.edu/tag/0B39)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

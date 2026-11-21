@@ -7,7 +7,7 @@ proof: formalized
 
 # Machines as transformers of tape words
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean), by Christian Reitwiessner, Samuel Schlesinger.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean), by Christian Reitwiessner, Samuel Schlesinger.
 
 > The interface through which combinators use machines: a machine reads words from its work tapes
 > and leaves words on them. A combinator composing such machines talks about words only, never about
@@ -44,7 +44,7 @@ proof: formalized
 > * `Turing.MultiTapeTM.transformsTapes_nop`: `nop` leaves every word as it was, the first machine of
 >   the interface and the check that the format is inhabited as intended.
 
-`Turing.MultiTapeTM.TransformsTapes` (definition, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L66))
+`Turing.MultiTapeTM.TransformsTapes` (definition, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L66))
 
 > `TransformsTapes tm P Q t s`: started in its initial state on tapes holding words `ws` that
 > satisfy the precondition `P`, the machine has a run path of at most `t` steps, visiting at most `s`
@@ -62,7 +62,7 @@ def TransformsTapes (tm : MultiTapeTM k Symbol State)
     (t s : ℕ) : Prop
 ```
 
-`Turing.MultiTapeTM.TransformsTapes.imp` (theorem, [line 78](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L78))
+`Turing.MultiTapeTM.TransformsTapes.imp` (theorem, [line 78](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L78))
 
 > A `TransformsTapes` statement can be read with a stronger precondition, a weaker postcondition
 > and larger bounds.
@@ -79,7 +79,7 @@ theorem TransformsTapes.imp {tm : MultiTapeTM k Symbol State}
     TransformsTapes tm P' Q' t' s'
 ```
 
-`Turing.MultiTapeTM.TransformsTapes.mono` (theorem, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L93))
+`Turing.MultiTapeTM.TransformsTapes.mono` (theorem, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L93))
 
 > A `TransformsTapes` statement can be read with larger bounds.
 
@@ -92,7 +92,7 @@ theorem TransformsTapes.mono {tm : MultiTapeTM k Symbol State}
     TransformsTapes tm P Q t' s'
 ```
 
-`Turing.MultiTapeTM.transformsTapes_iff_nil_output` (theorem, [line 108](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L108))
+`Turing.MultiTapeTM.transformsTapes_iff_nil_output` (theorem, [line 108](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L108))
 
 > **The ambient output is a concern of sequencing, not of machines.** A specification holds for
 > every prior output as soon as it holds for none, because a machine never reads what it has already
@@ -112,7 +112,7 @@ theorem transformsTapes_iff_nil_output {tm : MultiTapeTM k Symbol State}
         p.last = wordsCfg input none ws' emitted ∧ p.time ≤ t ∧ p.space ≤ s
 ```
 
-`Turing.MultiTapeTM.nop` (definition, [line 128](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L128))
+`Turing.MultiTapeTM.nop` (definition, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L128))
 
 > The machine that does nothing: it halts on its first step, leaving the configuration
 > unchanged.
@@ -121,7 +121,7 @@ theorem transformsTapes_iff_nil_output {tm : MultiTapeTM k Symbol State}
 def nop (k : ℕ) (Symbol : Type*) : MultiTapeTM k Symbol Unit
 ```
 
-`Turing.MultiTapeTM.step_nop` (lemma, [line 134](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L134))
+`Turing.MultiTapeTM.step_nop` (lemma, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L134))
 
 > A single step of `nop` halts and leaves the words alone.
 
@@ -130,7 +130,7 @@ lemma step_nop (ws : Fin k → List Symbol) (out : List Symbol) :
     (nop k Symbol).step (wordsCfg input (some ()) ws out) = wordsCfg input none ws out
 ```
 
-`Turing.MultiTapeTM.runFrom_nop_one` (lemma, [line 141](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L141))
+`Turing.MultiTapeTM.runFrom_nop_one` (lemma, [line 141](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L141))
 
 > `nop` reaches its halting configuration after exactly one step.
 
@@ -139,7 +139,7 @@ lemma runFrom_nop_one (ws : Fin k → List Symbol) (out : List Symbol) :
     (nop k Symbol).runFrom (wordsCfg input (some ()) ws out) 1 = wordsCfg input none ws out
 ```
 
-`Turing.MultiTapeTM.transformsTapes_nop` (theorem, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L148))
+`Turing.MultiTapeTM.transformsTapes_nop` (theorem, [line 148](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean#L148))
 
 > **The machine that does nothing** halts in one step, leaving every word as it was and emitting
 > nothing. Its heads never move, so it visits one cell per tape. This is the first machine of the
@@ -158,5 +158,5 @@ theorem transformsTapes_nop (k : ℕ) (Symbol : Type*) :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes.json)

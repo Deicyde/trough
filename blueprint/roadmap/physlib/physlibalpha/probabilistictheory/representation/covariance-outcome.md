@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: BoundedMeasurable.inducedChannel, BoundedMeasurable.inducedChannel_apply, BoundedMeasurable.isOrderAutomorphism_inducedChannel, BoundedMeasurable.inducedAction, BoundedMeasurable.inducedAction_val, BoundedMeasurable.comap_isCovariant, ProbabilisticTheory.Measurement.IsCovariant, ProbabilisticTheory.Measurement.IsCovariant.comp
+lean: BoundedMeasurable.inducedChannel, BoundedMeasurable.inducedChannel_apply, BoundedMeasurable.isOrderAutomorphism_inducedChannel, BoundedMeasurable.inducedAction, BoundedMeasurable.inducedAction_val, BoundedMeasurable.comap_isCovariant, PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant, PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant.comp
 statement: formalized
 proof: formalized
 ---
 
 # Covariance of measurements under an action on the outcomes
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Covariance.Outcome`, [PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean): 11 declarations (1 instance with no name), 11 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Covariance.Outcome`, [PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean): 11 declarations (1 instance with no name), 11 with a docstring.
 
 > Covariance of measurements under a group action on outcomes, and its preservation.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Covariance.Outcome`,
 
 ### A.1. The relabeling channels
 
-**`BoundedMeasurable.inducedChannel`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L69).
+**`BoundedMeasurable.inducedChannel`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L69).
 
 > The channel on the classical system that relabels outcomes by `σ`:
 > `f ↦ (x ↦ f (σ⁻¹ • x))`.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Covariance.Outcome`,
 def inducedChannel (σ : G) : Channel (BoundedMeasurable Ω) (BoundedMeasurable Ω)
 ```
 
-**`BoundedMeasurable.inducedChannel_apply`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L74).
+**`BoundedMeasurable.inducedChannel_apply`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L74).
 
 > The relabeling channel evaluates an observable at the relabeled outcome.
 
@@ -59,7 +59,7 @@ lemma inducedChannel_apply (σ : G) (f : BoundedMeasurable Ω) (x : Ω) :
     inducedChannel σ f x = f (σ⁻¹ • x)
 ```
 
-**`BoundedMeasurable.isOrderAutomorphism_inducedChannel`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L79).
+**`BoundedMeasurable.isOrderAutomorphism_inducedChannel`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L79).
 
 > Relabeling by `σ⁻¹` undoes relabeling by `σ`, so each relabeling channel is an
 > order-automorphism.
@@ -71,7 +71,7 @@ lemma isOrderAutomorphism_inducedChannel (σ : G) :
 
 ### A.2. The induced action
 
-**`BoundedMeasurable.inducedAction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L88).
+**`BoundedMeasurable.inducedAction`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L88).
 
 > The action of `G` on the classical system of `Ω` induced by its action on the outcomes.
 
@@ -79,7 +79,7 @@ lemma isOrderAutomorphism_inducedChannel (σ : G) :
 noncomputable def inducedAction : G →* Symmetry (BoundedMeasurable Ω)
 ```
 
-**`BoundedMeasurable.inducedAction_val`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L96).
+**`BoundedMeasurable.inducedAction_val`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L96).
 
 > The channel underlying the induced action of `σ` is the relabeling channel of `σ`.
 
@@ -90,7 +90,7 @@ lemma inducedAction_val (σ : G) :
 
 ### A.3. The diagonal action on a product of outcome spaces
 
-**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L104).
+**An instance with no name**, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L104).
 
 > The diagonal action on a product of outcome spaces is measurable.
 
@@ -100,7 +100,7 @@ instance : MeasurableAction G (Ω × Ω')
 
 ### A.4. Relabeling along an equivariant map
 
-**`BoundedMeasurable.comap_isCovariant`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L111).
+**`BoundedMeasurable.comap_isCovariant`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L111).
 
 > Relabeling along an equivariant measurable map is a covariant classical channel.
 
@@ -114,7 +114,7 @@ lemma comap_isCovariant (g : Ω' → Ω) (hg : Measurable g)
 
 ### B.1. The definition of covariance
 
-**`ProbabilisticTheory.Measurement.IsCovariant`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L134).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant`**, a def, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L134).
 
 > A measurement is covariant for an action on its outcomes, matched to the symmetry action `ρ`
 > on the system, when its channel intertwines the two actions.
@@ -125,7 +125,7 @@ def IsCovariant (ρ : G →* Symmetry E) (M : Measurement Ω E) : Prop
 
 ### B.2. Covariant post-processing
 
-**`ProbabilisticTheory.Measurement.IsCovariant.comp`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L141).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant.comp`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L141).
 
 > Post-processing a covariant measurement by a covariant classical channel gives a covariant
 > channel.
@@ -137,7 +137,7 @@ lemma IsCovariant.comp {ρ : G →* Symmetry E} {M : Measurement Ω E}
     (M.toChannel.comp K).IsCovariant inducedAction ρ
 ```
 
-**`ProbabilisticTheory.Measurement.IsCovariant.mapOutcome`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L149).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant.mapOutcome`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L149).
 
 > Relabeling the outcomes of a covariant measurement along an equivariant map gives a
 > covariant measurement.
@@ -150,7 +150,7 @@ lemma IsCovariant.mapOutcome {ρ : G →* Symmetry E} {N : Measurement Ω' E} (h
 
 ### B.3. Marginals of a covariant joint measurement
 
-**`ProbabilisticTheory.Measurement.IsCovariant.marginal`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L158).
+**`PhyslibAlpha.ProbabilisticTheory.Measurement.IsCovariant.marginal`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean#L158).
 
 > The first marginal of a covariant joint measurement, for the diagonal action on the product
 > of outcome spaces, is covariant.
@@ -168,4 +168,4 @@ lemma IsCovariant.marginal {ρ : G →* Symmetry E} {J : Measurement (Ω × Ω')
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean)

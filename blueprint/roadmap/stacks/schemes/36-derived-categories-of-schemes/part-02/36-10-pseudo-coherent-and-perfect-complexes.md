@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.10 Pseudo-coherent and perfect complexes
 
-Section 36.10 of the Stacks Project, [Tag 08E4](https://stacks.math.columbia.edu/tag/08E4). 9 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 36.10 of the Stacks Project, [Tag 08E4](https://stacks.math.columbia.edu/tag/08E4). 9 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 08E5, a lemma
 
 [Tag 08E5](https://stacks.math.columbia.edu/tag/08E5) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasicoherent_homology_of_isPseudoCoherent_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/QuasicoherentCohomology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/QuasicoherentCohomology.lean#L223).
+**`AlgebraicGeometry.isQuasicoherent_homology_of_isPseudoCoherent_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/QuasicoherentCohomology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PseudoCoherent/QuasicoherentCohomology.lean#L223).
 
 > Let `X` be a scheme. If `E` is an `m`-pseudo-coherent object of `D(𝒪_X)`, then `H^i(E)` is a
 > quasi-coherent `𝒪_X`-module for `i > m`, and every point of `X` has an open neighbourhood `U` on
@@ -52,7 +52,7 @@ public theorem isQuasicoherent_homology_of_isPseudoCoherent_scheme (X : Scheme.{
 
 [Tag 08E7](https://stacks.math.columbia.edu/tag/08E7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean#L444). The attribute's comment: “m-pseudo-coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean, line 444](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean#L444). The attribute's comment: “m-pseudo-coherent”.
 
 > **Tag 08E7 for `m`-pseudo-coherence.** A complex of `A`-modules is `m`-pseudo-coherent exactly
 > when the complex of `𝒪`-modules it determines on `Spec A` is `m`-pseudo-coherent.
@@ -68,7 +68,7 @@ public theorem isPseudoCoherentFrom_tilde_iff {A : Type u} [CommRing A]
       StacksDraft.PseudoCoherence.IsPseudoCoherentFrom (DerivedCategory.Q.obj M) m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean#L480). The attribute's comment: “pseudo-coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean, line 480](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/Affine.lean#L480). The attribute's comment: “pseudo-coherent”.
 
 > **Tag 08E7 for pseudo-coherence.** A complex of `A`-modules is pseudo-coherent exactly when the
 > complex of `𝒪`-modules it determines on `Spec A` is pseudo-coherent. Both sides are equivalent to
@@ -87,7 +87,7 @@ public theorem isPseudoCoherent_tilde_iff {A : Type u} [CommRing A]
       StacksDraft.PseudoCoherence.IsPseudoCoherent (DerivedCategory.Q.obj M)
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_tilde_iff_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean#L172). The attribute's comment: “m-pseudo-coherent, at the locally small derived category”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_tilde_iff_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean#L172). The attribute's comment: “m-pseudo-coherent, at the locally small derived category”.
 
 > **Tag 08E7 for `m`-pseudo-coherence, at the locally small derived category.** A complex of
 > `A`-modules is `m`-pseudo-coherent exactly when the complex of `𝒪`-modules it determines on
@@ -106,7 +106,7 @@ public theorem isPseudoCoherentFrom_tilde_iff_locallySmall {A : Type u} [CommRin
       StacksDraft.PseudoCoherence.IsPseudoCoherentFrom (DerivedCategory.Q.obj M) m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_tilde_iff_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean#L187). The attribute's comment: “pseudo-coherent, at the locally small derived category”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherent_tilde_iff_locallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentFrom/AffineLocallySmall.lean#L187). The attribute's comment: “pseudo-coherent, at the locally small derived category”.
 
 > **Tag 08E7 for pseudo-coherence, at the locally small derived category.** A complex of
 > `A`-modules is pseudo-coherent exactly when the complex of `𝒪`-modules it determines on `Spec A`
@@ -124,7 +124,7 @@ public theorem isPseudoCoherent_tilde_iff_locallySmall {A : Type u} [CommRing A]
       StacksDraft.PseudoCoherence.IsPseudoCoherent (DerivedCategory.Q.obj M)
 ```
 
-**`Stacks.AffineTilde.isPseudoCoherentFrom_of_isPseudoCoherentFrom_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean#L215). The attribute's comment: “m-pseudo-coherent, the direction from sheaves to modules”.
+**`Stacks.AffineTilde.isPseudoCoherentFrom_of_isPseudoCoherentFrom_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean#L215). The attribute's comment: “m-pseudo-coherent, the direction from sheaves to modules”.
 
 > **Stacks 08E7, the direction from sheaves to modules.** If the object of `D(𝒪_{Spec R})`
 > determined by a complex `M^•` of `R`-modules is `m`-pseudo-coherent (Stacks 08CB (3)), then `M^•`
@@ -141,7 +141,7 @@ theorem isPseudoCoherentFrom_of_isPseudoCoherentFrom_tildeComplex
     IsPseudoCoherentFrom (DerivedCategory.Q.obj M) m
 ```
 
-**`Stacks.AffineTilde.isPseudoCoherent_of_isPseudoCoherent_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean#L241). The attribute's comment: “pseudo-coherent, the direction from sheaves to modules”.
+**`Stacks.AffineTilde.isPseudoCoherent_of_isPseudoCoherent_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/PseudoCoherentRelative/TildeConverse.lean#L241). The attribute's comment: “pseudo-coherent, the direction from sheaves to modules”.
 
 > **Stacks 08E7, the direction from sheaves to modules, all degrees at once.** If the object of
 > `D(𝒪_{Spec R})` determined by a complex `M^•` of `R`-modules is pseudo-coherent (Stacks 08CB (3)),
@@ -159,7 +159,7 @@ theorem isPseudoCoherent_of_isPseudoCoherent_tildeComplex
     IsPseudoCoherent (DerivedCategory.Q.obj M)
 ```
 
-**`Stacks.AffineTilde.isPseudoCoherentFrom_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean#L142). The attribute's comment: “m-pseudo-coherent, the direction from modules to sheaves”.
+**`Stacks.AffineTilde.isPseudoCoherentFrom_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean#L142). The attribute's comment: “m-pseudo-coherent, the direction from modules to sheaves”.
 
 > **Stacks 08E7, the direction from modules to sheaves.** If a complex `M^•` of `R`-modules is
 > `m`-pseudo-coherent (Stacks 064Q (1)), then the object of `D(𝒪_{Spec R})` it determines is
@@ -172,7 +172,7 @@ theorem isPseudoCoherentFrom_tildeComplex (M : CochainComplex (ModuleCat.{u} R) 
       (X := (Spec R).toRingedSpace) (DerivedCategory.Q.obj (tildeComplex M)) m
 ```
 
-**`Stacks.AffineTilde.isPseudoCoherent_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean#L159). The attribute's comment: “pseudo-coherent, the direction from modules to sheaves”.
+**`Stacks.AffineTilde.isPseudoCoherent_tildeComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/PseudoCoherentRelative/TildePseudoCoherent.lean#L159). The attribute's comment: “pseudo-coherent, the direction from modules to sheaves”.
 
 > **Stacks 08E7, the direction from modules to sheaves, all degrees at once.** If a complex
 > `M^•` of `R`-modules is pseudo-coherent (Stacks 064Q (2)), then the object of `D(𝒪_{Spec R})` it
@@ -195,7 +195,7 @@ theorem isPseudoCoherent_tildeComplex (M : CochainComplex (ModuleCat.{u} R) ℤ)
 
 [Tag 08E8](https://stacks.math.columbia.edu/tag/08E8) in the Stacks Project.
 
-**`AlgebraicGeometry.isPseudoCoherentFrom_iff_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L137). The attribute's comment: “equivalence in degree m”. References: SGA 6 I (3.5), “b), Noetherian scheme”.
+**`AlgebraicGeometry.isPseudoCoherentFrom_iff_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L137). The attribute's comment: “equivalence in degree m”. References: SGA 6 I (3.5), “b), Noetherian scheme”.
 
 > **Stacks Project, Tag 08E8.** Let `X` be a Noetherian scheme, let `E` be an object of
 > `D_QCoh(𝒪_X)` and let `m` be an integer. Then `E` is `m`-pseudo-coherent if and only if `Hⁱ(E)`
@@ -212,7 +212,7 @@ public theorem isPseudoCoherentFrom_iff_coherent_homology (X : Scheme.{u}) [IsNo
         DerivedCategoryB.IsBoundedAbove E.1)
 ```
 
-**`AlgebraicGeometry.isPseudoCoherent_iff_boundedAbove_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L158). The attribute's comment: “identification with D⁻\_Coh”. References: SGA 6 I (3.5), “b) last claim, Noeth X”.
+**`AlgebraicGeometry.isPseudoCoherent_iff_boundedAbove_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L158). The attribute's comment: “identification with D⁻\_Coh”. References: SGA 6 I (3.5), “b) last claim, Noeth X”.
 
 > **Stacks Project, Tag 08E8, the final statement.** On a Noetherian scheme an object of
 > `D_QCoh(𝒪_X)` is pseudo-coherent if and only if it is bounded above and all of its cohomology
@@ -233,7 +233,7 @@ public theorem isPseudoCoherent_iff_boundedAbove_coherent_homology (X : Scheme.{
 
 [Tag 08E9](https://stacks.math.columbia.edu/tag/08E9) in the Stacks Project.
 
-**`AlgebraicGeometry.hasTorAmplitude_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean#L286). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.hasTorAmplitude_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean#L286). The attribute's comment: “part (1)”.
 
 > **Stacks 08E9 (1).** Let `X = Spec R` be an affine scheme and let `M` be an object of `D(R)`.
 > Then the associated object `M̃` of `D(𝒪_X)` has Tor amplitude in `[a, b]` if and only if `M` has
@@ -246,7 +246,7 @@ theorem hasTorAmplitude_tilde_iff (M : DerivedCategory (ModuleCat.{u} R)) (a b :
       StacksDraft.TorAmplitude.HasTorAmplitudeCanonical R M a b
 ```
 
-**`AlgebraicGeometry.hasFiniteTorDimension_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean#L320). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.hasFiniteTorDimension_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean, line 320](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedTildeTorAmplitude.lean#L320). The attribute's comment: “part (2)”.
 
 > **Stacks 08E9 (2).** Let `X = Spec R` be an affine scheme and let `M` be an object of `D(R)`.
 > Then the associated object `M̃` of `D(𝒪_X)` has finite Tor dimension if and only if `M` has finite
@@ -263,7 +263,7 @@ theorem hasFiniteTorDimension_tilde_iff (M : DerivedCategory (ModuleCat.{u} R)) 
 
 [Tag 0DHY](https://stacks.math.columbia.edu/tag/0DHY) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineRelativeTorAmplitude.hasTorAmplitude_relativeComplex_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean#L1104). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.AffineRelativeTorAmplitude.hasTorAmplitude_relativeComplex_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean, line 1104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean#L1104). The attribute's comment: “part (1)”.
 
 > **Stacks 0DHY, part (1).** Let `f : Spec A ⟶ Spec R` be the morphism of affine schemes of a
 > ring map `R → A`, let `M^•` be a complex of `A`-modules and let `E` be the complex of
@@ -286,7 +286,7 @@ theorem hasTorAmplitude_relativeComplex_iff (M : CochainComplex (ModuleCat.{u} A
           (ComplexShape.up ℤ)).obj M)) a b
 ```
 
-**`AlgebraicGeometry.AffineRelativeTorAmplitude.locallyHasFiniteTorDimension_relativeComplex_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean, line 1126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean#L1126). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.AffineRelativeTorAmplitude.locallyHasFiniteTorDimension_relativeComplex_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean, line 1126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/RelativeTorAmplitudeAffine.lean#L1126). The attribute's comment: “part (2)”.
 
 > **Stacks 0DHY, part (2).** In the situation of part (1), the complex `E` of
 > `f^{-1}𝒪_{Spec R}`-modules locally has finite Tor dimension if and only if `M^•`, read as a
@@ -310,7 +310,7 @@ theorem locallyHasFiniteTorDimension_relativeComplex_iff
 
 [Tag 08EA](https://stacks.math.columbia.edu/tag/08EA) in the Stacks Project.
 
-**`AlgebraicGeometry.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorAmplitudeQuasiCoherentTestsGlobal.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/TorAmplitudeQuasiCoherentTestsGlobal.lean#L143).
+**`AlgebraicGeometry.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/TorAmplitudeQuasiCoherentTestsGlobal.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/TorAmplitudeQuasiCoherentTestsGlobal.lean#L143).
 
 > **Stacks 08EA.** Let `X` be a quasi-separated scheme, `E` an object of `D_QCoh(𝒪_X)` and
 > `a ≤ b`. The following are equivalent:
@@ -332,7 +332,7 @@ theorem hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent {X : Scheme.{u}}
 
 [Tag 08EB](https://stacks.math.columbia.edu/tag/08EB) in the Stacks Project.
 
-**`AlgebraicGeometry.isPerfect_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean#L134).
+**`AlgebraicGeometry.isPerfect_tilde_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean#L134).
 
 > **Stacks 08EB.** Let `X = Spec R` be an affine scheme and let `M` be an object of `D(R)`. Then
 > the associated object `M̃` of `D(𝒪_X)` is a perfect object of `D(𝒪_X)` if and only if `M` is a
@@ -345,7 +345,7 @@ theorem isPerfect_tilde_iff (M : DerivedCategory (ModuleCat.{u} R)) :
       StacksDraft.Perfect.IsPerfect M
 ```
 
-**`AlgebraicGeometry.isPerfect_tilde_iff_of_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean#L184).
+**`AlgebraicGeometry.isPerfect_tilde_iff_of_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedTildePerfect.lean#L184).
 
 > **Stacks 08EB at an arbitrary pair of chosen derived categories.** Let `X = Spec R` be an
 > affine scheme and let `M` be an object of `D(R)`, for any chosen model of `D(R)` and any chosen
@@ -364,7 +364,7 @@ theorem isPerfect_tilde_iff_of_model [HasDerivedCategory.{w} (ModuleCat.{u} R)]
 
 [Tag 0A6H](https://stacks.math.columbia.edu/tag/0A6H) in the Stacks Project.
 
-**`AlgebraicGeometry.affineDerivedTildeHomComparison_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean, line 624](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean#L624). The attribute's comment: “(3)(b) K perfect and L arbitrary: the canonical comparison is the inverse of the isomorphism”.
+**`AlgebraicGeometry.affineDerivedTildeHomComparison_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean, line 624](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/Comparison.lean#L624). The attribute's comment: “(3)(b) K perfect and L arbitrary: the canonical comparison is the inverse of the isomorphism”.
 
 > **The canonical comparison agrees with clause (3)(b).** For `K` perfect it is the inverse
 > of the isomorphism `affinePerfectDerivedSheafHomIso`, hence invertible. This is what identifies
@@ -381,7 +381,7 @@ public theorem affineDerivedTildeHomComparison_perfect (R : CommRingCat.{u})
       (affinePerfectDerivedSheafHomIso R K L hK).inv
 ```
 
-**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L607). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
+**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 607](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L607). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
 
 > **Stacks 0A6H, clause (3), case (b).** Let `R` be a commutative ring, `X = Spec R`, and let
 > `K`, `L` be objects of `D(R)` with `K` perfect. Then the derived internal Hom of the derived
@@ -404,7 +404,7 @@ public def affinePerfectDerivedSheafHomIso (R : CommRingCat.{u})
         ((StacksDraft.DerivedHom.derivedHomAdjunction (R := R)).hom.obj (op K, L))
 ```
 
-**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L622). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
+**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 622](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L622). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
 
 > **The normalization of clause (3)(b).** On a bounded complex `P` of finite projective
 > modules the comparison is the sheafification of the ordinary Hom-complex comparison
@@ -432,7 +432,7 @@ public theorem affinePerfectDerivedSheafHomIso_model (R : CommRingCat.{u})
       (DerivedCategory.Q.mapIso (affineHomComplexTildeIso R P L hP)).hom
 ```
 
-**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L652). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
+**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 652](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L652). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
 
 > **Clause (3)(b) is natural in the target.**
 
@@ -449,7 +449,7 @@ public theorem affinePerfectDerivedSheafHomIso_natural_right (R : CommRingCat.{u
           ((StacksDraft.DerivedHom.derivedHomAdjunction (R := R)).hom.map (𝟙 (op K), g))
 ```
 
-**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L677). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
+**`AlgebraicGeometry.affinePerfectDerivedSheafHomIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean, line 677](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineDerivedHom/PerfectSource.lean#L677). The attribute's comment: “(3)(b) K perfect and L arbitrary”.
 
 > **Clause (3)(b) is contravariantly natural in the perfect source.**
 
@@ -467,7 +467,7 @@ public theorem affinePerfectDerivedSheafHomIso_natural_left (R : CommRingCat.{u}
           ((StacksDraft.DerivedHom.derivedHomAdjunction (R := R)).hom.map (f.op, 𝟙 L))
 ```
 
-**`AlgebraicGeometry.AffineExt.cohomologySheaf_isSheafification_extPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean#L71). The attribute's comment: “(4) the n-th cohomology sheaf of RHom(K~, L~) on Spec A is the sheaf of modules associated to the presheaf D(f) ↦ Ext^n\_\{A\_f}(K ⊗ A\_f, L ⊗ A\_f), through the canonical A\_f-linear comparison maps”.
+**`AlgebraicGeometry.AffineExt.cohomologySheaf_isSheafification_extPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean#L71). The attribute's comment: “(4) the n-th cohomology sheaf of RHom(K~, L~) on Spec A is the sheaf of modules associated to the presheaf D(f) ↦ Ext^n\_\{A\_f}(K ⊗ A\_f, L ⊗ A\_f), through the canonical A\_f-linear comparison maps”.
 
 > Let `A` be a commutative ring, let `K`, `L` be objects of `D(A)` and let `n` be an integer.
 > The `n`-th cohomology sheaf of `R𝓗om(K̃, L̃)` on `Spec A` is the sheaf of `𝒪_{Spec A}`-modules
@@ -501,7 +501,7 @@ theorem cohomologySheaf_isSheafification_extPresheaf (R : CommRingCat.{u})
           x ∈ basicOpen R g ∧ localizedExtRestrict R K L h n α = 0)
 ```
 
-**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L761). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
+**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 761](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L761). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
 
 > **[Stacks, Tag 0A6H] (3)(a).** Let `R` be a commutative ring, `X = Spec R`, and let `K`, `L`
 > be objects of `D(R)` with `K` pseudo-coherent and `L` bounded below. Then the derived internal
@@ -533,7 +533,7 @@ noncomputable def affinePseudoCoherentDerivedSheafHomIso (R : CommRingCat.{u})
         ((StacksDraft.DerivedHom.derivedHomAdjunction (R := R)).hom.obj (op K, L))
 ```
 
-**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 889](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L889). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
+**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 889](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L889). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
 
 > **[Stacks, Tag 0A6H] (3)(a).** The affine comparison is contravariantly natural in the
 > pseudo-coherent argument.
@@ -554,7 +554,7 @@ theorem affinePseudoCoherentDerivedSheafHomIso_natural_left (R : CommRingCat.{u}
           (f.op, 𝟙 L))
 ```
 
-**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 914](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L914). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
+**`AlgebraicGeometry.affinePseudoCoherentDerivedSheafHomIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 914](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L914). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below”.
 
 > **[Stacks, Tag 0A6H] (3)(a).** The affine comparison is covariantly natural in the
 > bounded-below argument.
@@ -575,7 +575,7 @@ theorem affinePseudoCoherentDerivedSheafHomIso_natural_right (R : CommRingCat.{u
           (𝟙 (op K), g))
 ```
 
-**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 995](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L995). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below: the canonical comparison is an isomorphism”.
+**`AlgebraicGeometry.isIso_affineDerivedTildeHomComparison_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean, line 995](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffinePseudoCoherentDerivedHom.lean#L995). The attribute's comment: “(3)(a) K pseudo-coherent and L bounded below: the canonical comparison is an isomorphism”.
 
 > **[Stacks, Tag 0A6H] (3)(a), for the canonical comparison.** Let `R` be a commutative ring,
 > `X = Spec R`, and let `K`, `L` be objects of `D(R)` with `K` pseudo-coherent and `L` bounded below.
@@ -593,7 +593,7 @@ theorem isIso_affineDerivedTildeHomComparison_of_isPseudoCoherent (R : CommRingC
     IsIso (affineDerivedTildeHomComparison R K L)
 ```
 
-**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean#L125). The attribute's comment: “part (2) on an arbitrary scheme: the derived internal Hom out of a perfect object into an object of D\_QCoh has quasi-coherent cohomology sheaves”.
+**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean#L125). The attribute's comment: “part (2) on an arbitrary scheme: the derived internal Hom out of a perfect object into an object of D\_QCoh has quasi-coherent cohomology sheaves”.
 
 > **Stacks Project, Tag 0A6H, part (2).** Let `Y` be a scheme, let `E` be a perfect object of
 > `D(𝒪_Y)` and let `F` be an object of `D_QCoh(𝒪_Y)`. Then the derived internal Hom
@@ -616,7 +616,7 @@ theorem derivedCategoryB_derivedSheafHom_of_isPerfect (Y : Scheme.{u})
       (((Stacks.SheafOfModules.derivedSheafHom Y.sheaf).obj (op E)).obj F)
 ```
 
-**`AlgebraicGeometry.isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean#L95). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh is locally bounded below”.
+**`AlgebraicGeometry.isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean, line 95](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean#L95). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh is locally bounded below”.
 
 > Let `Y` be a scheme, let `E` be a pseudo-coherent object of `D(𝒪_Y)` and let `F` be an
 > object of `D⁺_QCoh(𝒪_Y)`. Then `R𝓗om_{𝒪_Y}(E, F)` is locally bounded below: every point of `Y`
@@ -633,7 +633,7 @@ theorem isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent (Y : Scheme.{u
       (((Stacks.SheafOfModules.derivedSheafHom Y.sheaf).obj (op E)).obj F)
 ```
 
-**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean#L168). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh has quasi-coherent cohomology sheaves”.
+**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean#L168). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh has quasi-coherent cohomology sheaves”.
 
 > **Stacks Project, Tag 0A6H, part (1).** Let `Y` be a scheme, let `E` be a pseudo-coherent
 > object of `D(𝒪_Y)` and let `F` be an object of `D⁺_QCoh(𝒪_Y)`. Then the derived internal Hom
@@ -656,7 +656,7 @@ theorem derivedCategoryB_derivedSheafHom_of_isPseudoCoherent (Y : Scheme.{u})
       (((Stacks.SheafOfModules.derivedSheafHom Y.sheaf).obj (op E)).obj F)
 ```
 
-**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L75). The attribute's comment: “part (1) with the lower bound, on an arbitrary scheme, for a cohomologically bounded-above pseudo-coherent first argument”.
+**`AlgebraicGeometry.derivedCategoryBPlus_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/QuasiCoherent/FinitePushforwardDerivedSheafHom.lean#L75). The attribute's comment: “part (1) with the lower bound, on an arbitrary scheme, for a cohomologically bounded-above pseudo-coherent first argument”.
 
 > Let `Z` be a scheme, let `E` be an object of `D(𝒪_Z)` which is pseudo-coherent and
 > cohomologically bounded above, and let `F` lie in `D⁺_QCoh(𝒪_Z)`.  Then `R𝓗om_{𝒪_Z}(E, F)` lies
@@ -677,7 +677,7 @@ theorem derivedCategoryBPlus_derivedSheafHom_of_isPseudoCoherent (Z : Scheme.{u}
 
 [Tag 0ATN](https://stacks.math.columbia.edu/tag/0ATN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfect.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfect.lean#L334). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfect.lean, line 334](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfect.lean#L334). The attribute's comment: “part (1)”.
 
 > **Stacks 0ATN part (1): the diagonal of Stacks 0BYS is an isomorphism at a perfect source.**
 > For objects `K`, `L`, `M` of `D(O)` with `M` perfect,
@@ -704,7 +704,7 @@ theorem isIso_derivedTensorHomDiagonal_of_isPerfect
     IsIso (derivedTensorHomDiagonal X K L M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfectTensorFactor.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfectTensorFactor.lean#L227). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfectTensorFactor.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPerfectTensorFactor.lean#L227). The attribute's comment: “part (2)”.
 
 > **Stacks 0ATN part (2): the diagonal of Stacks 0BYS is an isomorphism at a perfect tensor
 > factor.** For objects `K`, `L`, `M` of `D(O)` with `K` perfect,
@@ -735,7 +735,7 @@ theorem isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor
     IsIso (derivedTensorHomDiagonal X K L M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent_of_hasTorAmplitudeGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean#L396). The attribute's comment: “part (3), with the tensor factor of Tor amplitude in [a, ∞) rather than of finite Tor dimension”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent_of_hasTorAmplitudeGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean#L396). The attribute's comment: “part (3), with the tensor factor of Tor amplitude in [a, ∞) rather than of finite Tor dimension”.
 
 > **The diagonal of Stacks 0BYS is an isomorphism at a pseudo-coherent source, a
 > cohomologically bounded-below target and a tensor factor of Tor amplitude in `[a, ∞)`.** For
@@ -761,7 +761,7 @@ public theorem isIso_derivedTensorHomDiagonal_of_isPseudoCoherent_of_hasTorAmpli
     IsIso (derivedTensorHomDiagonal X K L M)
 ```
 
-**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean#L468). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.RingedSite.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean, line 468](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/DerivedTensorHomDiagonalPseudoCoherent.lean#L468). The attribute's comment: “part (3)”.
 
 > **Stacks 0ATN part (3): the diagonal of Stacks 0BYS is an isomorphism at a pseudo-coherent
 > source, a cohomologically bounded-below target and a tensor factor of finite Tor dimension.**
@@ -795,4 +795,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.10, Tag 08E4](https://stacks.math.columbia.edu/tag/08E4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

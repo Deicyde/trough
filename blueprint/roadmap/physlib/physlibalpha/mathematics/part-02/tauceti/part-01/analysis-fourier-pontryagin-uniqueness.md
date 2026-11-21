@@ -8,7 +8,7 @@ proof: formalized
 
 # Uniqueness of Fourier--Stieltjes measures on a Pontryagin dual
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Uniqueness`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean): 20 declarations, 20 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Uniqueness`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean): 20 declarations, 20 with a docstring.
 
 > On a Polish Pontryagin dual, a finite measure is determined by the integrals of the evaluation
 > characters.
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Uniquen
 
 ## A. Development
 
-**`PontryaginDual.evalBoundedContinuous`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L75).
+**`PontryaginDual.evalBoundedContinuous`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L75).
 
 > Evaluation at `g`, as a bounded continuous complex-valued function on the Pontryagin dual.
 > Its values lie on the unit circle, so its norm is bounded by one.
@@ -64,7 +64,7 @@ def evalBoundedContinuous (g : G) :
     _root_.PontryaginDual (Multiplicative G) →ᵇ ℂ
 ```
 
-**`PontryaginDual.evalBoundedContinuous_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L83).
+**`PontryaginDual.evalBoundedContinuous_apply`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L83).
 
 > Evaluation of `evalBoundedContinuous` at a character.
 
@@ -74,7 +74,7 @@ lemma evalBoundedContinuous_apply (g : G)
     evalBoundedContinuous g χ = (χ (Multiplicative.ofAdd g) : ℂ)
 ```
 
-**`PontryaginDual.evalBoundedContinuous_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L90).
+**`PontryaginDual.evalBoundedContinuous_zero`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L90).
 
 > Evaluation at zero is the constant function one.
 
@@ -83,7 +83,7 @@ lemma evalBoundedContinuous_zero :
     evalBoundedContinuous (0 : G) = 1
 ```
 
-**`PontryaginDual.evalBoundedContinuous_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L97).
+**`PontryaginDual.evalBoundedContinuous_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L97).
 
 > Evaluation turns addition in the original group into pointwise multiplication.
 
@@ -93,7 +93,7 @@ lemma evalBoundedContinuous_add (g h : G) :
       evalBoundedContinuous g * evalBoundedContinuous h
 ```
 
-**`PontryaginDual.evalBoundedContinuous_neg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L105).
+**`PontryaginDual.evalBoundedContinuous_neg`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L105).
 
 > Evaluation at the negative of a group element is the pointwise star of evaluation there.
 
@@ -102,7 +102,7 @@ lemma evalBoundedContinuous_neg (g : G) :
     evalBoundedContinuous (-g) = star (evalBoundedContinuous g)
 ```
 
-**`PontryaginDual.evalMonoidHom`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L113).
+**`PontryaginDual.evalMonoidHom`**, a def, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L113).
 
 > Evaluation as a monoid homomorphism from the multiplicative copy of the original group.
 
@@ -111,7 +111,7 @@ def evalMonoidHom : Multiplicative G →*
     (_root_.PontryaginDual (Multiplicative G) →ᵇ ℂ)
 ```
 
-**`PontryaginDual.evalMonoidHom_apply`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L122).
+**`PontryaginDual.evalMonoidHom_apply`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L122).
 
 > Evaluation of `evalMonoidHom` at a character.
 
@@ -121,7 +121,7 @@ lemma evalMonoidHom_apply (g : Multiplicative G)
     evalMonoidHom g χ = (χ g : ℂ)
 ```
 
-**`PontryaginDual.evalAlgHom`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L129).
+**`PontryaginDual.evalAlgHom`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L129).
 
 > The algebra homomorphism sending a formal finite linear combination of group elements to the
 > corresponding finite linear combination of evaluation characters.
@@ -131,7 +131,7 @@ def evalAlgHom : AddMonoidAlgebra ℂ G →ₐ[ℂ]
     (_root_.PontryaginDual (Multiplicative G) →ᵇ ℂ)
 ```
 
-**`PontryaginDual.evalAlgHom_apply`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L135).
+**`PontryaginDual.evalAlgHom_apply`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L135).
 
 > Evaluation of `evalAlgHom` is the corresponding finite linear combination of characters.
 
@@ -141,7 +141,7 @@ lemma evalAlgHom_apply (a : AddMonoidAlgebra ℂ G)
     evalAlgHom a χ = a.coeff.sum fun g c => c * (χ (Multiplicative.ofAdd g) : ℂ)
 ```
 
-**`PontryaginDual.star_mem_range_evalAlgHom`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L143).
+**`PontryaginDual.star_mem_range_evalAlgHom`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L143).
 
 > The range of `evalAlgHom` is closed under pointwise complex conjugation.
 
@@ -151,7 +151,7 @@ lemma star_mem_range_evalAlgHom
     (hf : f ∈ evalAlgHom.range) : star f ∈ evalAlgHom.range
 ```
 
-**`PontryaginDual.evalPoly`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L156).
+**`PontryaginDual.evalPoly`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L156).
 
 > The star subalgebra of bounded continuous functions generated by evaluation characters.
 
@@ -160,7 +160,7 @@ def evalPoly : StarSubalgebra ℂ
     (_root_.PontryaginDual (Multiplicative G) →ᵇ ℂ)
 ```
 
-**`PontryaginDual.evalPoly_toSubalgebra`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L162).
+**`PontryaginDual.evalPoly_toSubalgebra`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L162).
 
 > The underlying subalgebra of `evalPoly` is the range of `evalAlgHom`.
 
@@ -169,7 +169,7 @@ lemma evalPoly_toSubalgebra :
     (evalPoly (G := G)).toSubalgebra = evalAlgHom.range
 ```
 
-**`PontryaginDual.mem_evalPoly`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L168).
+**`PontryaginDual.mem_evalPoly`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L168).
 
 > Membership in `evalPoly` means being a finite linear combination of evaluation
 > characters.
@@ -181,7 +181,7 @@ lemma mem_evalPoly (f : _root_.PontryaginDual (Multiplicative G) →ᵇ ℂ) :
         f = a.coeff.sum fun g c => c • evalBoundedContinuous g
 ```
 
-**`PontryaginDual.evalBoundedContinuous_mem_evalPoly`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L182).
+**`PontryaginDual.evalBoundedContinuous_mem_evalPoly`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L182).
 
 > Every evaluation character belongs to `evalPoly`.
 
@@ -190,7 +190,7 @@ lemma evalBoundedContinuous_mem_evalPoly (g : G) :
     evalBoundedContinuous g ∈ evalPoly
 ```
 
-**`PontryaginDual.separatesPoints_evalPoly`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L187).
+**`PontryaginDual.separatesPoints_evalPoly`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L187).
 
 > The evaluation-character algebra separates points of the Pontryagin dual.
 
@@ -201,7 +201,7 @@ lemma separatesPoints_evalPoly :
         (BoundedContinuousFunction.toContinuousMapStarₐ ℂ)).SeparatesPoints
 ```
 
-**`MeasureTheory.FiniteMeasure.integral_eq_of_forall_pontryaginMeasureTransform_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L211).
+**`MeasureTheory.FiniteMeasure.integral_eq_of_forall_pontryaginMeasureTransform_eq`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L211).
 
 > Two finite measures on the dual with the same Fourier--Stieltjes transform integrate every
 > finite linear combination of evaluation characters equally.
@@ -214,7 +214,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.integral_eq_of_forall_pontryaginMeasure
     ∫ χ, f χ ∂P = ∫ χ, f χ ∂Q
 ```
 
-**`MeasureTheory.FiniteMeasure.ext_of_forall_pontryaginMeasureTransform_eq`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L243).
+**`MeasureTheory.FiniteMeasure.ext_of_forall_pontryaginMeasureTransform_eq`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L243).
 
 > **Uniqueness of Fourier--Stieltjes measures on a Polish Pontryagin dual.** Two finite measures
 > on the dual are equal when their transforms agree on every element of the original group.
@@ -226,7 +226,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.ext_of_forall_pontryaginMeasureTransfor
     P = Q
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injective`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L253).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injective`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L253).
 
 > The Fourier--Stieltjes transform is injective on finite measures on a Polish Pontryagin
 > dual.
@@ -238,7 +238,7 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injective :
         P.pontryaginMeasureTransform)
 ```
 
-**`MeasureTheory.FiniteMeasure.ext_of_forall_pontryaginMeasureTransform_eq_of_innerRegular`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L272).
+**`MeasureTheory.FiniteMeasure.ext_of_forall_pontryaginMeasureTransform_eq_of_innerRegular`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L272).
 
 > **Uniqueness of inner regular Fourier--Stieltjes measures.** On the Pontryagin dual of a
 > locally compact abelian group, two finite inner regular measures are equal when their transforms
@@ -253,7 +253,7 @@ lemma
     P = Q
 ```
 
-**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injOn_innerRegular`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L285).
+**`MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injOn_innerRegular`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean#L285).
 
 > The Fourier--Stieltjes transform is injective on finite inner regular measures on the
 > Pontryagin dual of a locally compact abelian group.
@@ -276,4 +276,4 @@ lemma _root_.MeasureTheory.FiniteMeasure.pontryaginMeasureTransform_injOn_innerR
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/Uniqueness.lean)

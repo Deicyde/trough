@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.13 Products with simplicial sets
 
-Section 14.13 of the Stacks Project, [Tag 017A](https://stacks.math.columbia.edu/tag/017A). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 14.13 of the Stacks Project, [Tag 017A](https://stacks.math.columbia.edu/tag/017A). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 017B, an equation
 
 [Tag 017B](https://stacks.math.columbia.edu/tag/017B) in the Stacks Project.
 
-**`SSet.existsUnique_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L115). The attribute's comment: “the displayed set is the hom-set `π U ⋙ V ⟶ π U ⋙ W` over the category of elements of `U`; here its elements are described by the faces and the degeneracies”.
+**`SSet.existsUnique_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 115](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L115). The attribute's comment: “the displayed set is the hom-set `π U ⋙ V ⟶ π U ⋙ W` over the category of elements of `U`; here its elements are described by the faces and the degeneracies”.
 
 > **Stacks 017B**.
 > Let `U` be a simplicial set, let `V`, `W` be simplicial objects of a category `C`, and let
@@ -40,7 +40,7 @@ public theorem existsUnique_hom_app_eq (U : SSet.{w}) {V W : SimplicialObject C}
 
 [Tag 017C](https://stacks.math.columbia.edu/tag/017C) in the Stacks Project.
 
-**`CategoryTheory.Functor.copower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L189). The attribute's comment: “stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, and under the source's looser hypothesis that the coproducts exist”. References: SGA 4 IV (4.3), “more general”.
+**`CategoryTheory.Functor.copower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L189). The attribute's comment: “stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, and under the source's looser hypothesis that the coproducts exist”. References: SGA 4 IV (4.3), “more general”.
 
 > **Stacks 017C**.
 > The copower of `V : J ⥤ C` by `U : J ⥤ Type w`, defined whenever the coproduct of `U j`-many copies
@@ -62,7 +62,7 @@ public noncomputable def copower (V : J ⥤ C) (U : J ⥤ Type w)
 
 [Tag 017D](https://stacks.math.columbia.edu/tag/017D) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_corepresentableBy_copower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L311). The attribute's comment: “stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, under the source's looser hypothesis that the coproducts exist, and with the canonical isomorphism pinned by its components; the set of Equation 017B is the hom-set `π U ⋙ V ⟶ π U ⋙ W` over the category of elements of `U`”. References: SGA 3 I (1.8), “(1.8.2)”; SGA 4 IV (4.3), “For each set I”.
+**`CategoryTheory.Functor.exists_corepresentableBy_copower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L311). The attribute's comment: “stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, under the source's looser hypothesis that the coproducts exist, and with the canonical isomorphism pinned by its components; the set of Equation 017B is the hom-set `π U ⋙ V ⟶ π U ⋙ W` over the category of elements of `U`”. References: SGA 3 I (1.8), “(1.8.2)”; SGA 4 IV (4.3), “For each set I”.
 
 > **Stacks 017D**.
 > Let `V : J ⥤ C` and `U : J ⥤ Type w` be such that the coproducts defining the copower
@@ -91,7 +91,7 @@ public theorem exists_corepresentableBy_copower (V : J ⥤ C) (U : J ⥤ Type w)
 
 [Tag 017E](https://stacks.math.columbia.edu/tag/017E) in the Stacks Project.
 
-**`CategoryTheory.Functor.copowerProj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L497). The attribute's comment: “(2); stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, and under the looser hypothesis that the coproducts exist”.
+**`CategoryTheory.Functor.copowerProj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 497](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L497). The attribute's comment: “(2); stated for an arbitrary index category `J` in place of `SimplexCategoryᵒᵖ`, and under the looser hypothesis that the coproducts exist”.
 
 > **Stacks 017E** (2).
 > The canonical projection `V.copower U ⟶ V`, whose component at `j` is the identity of `V j` on
@@ -103,7 +103,7 @@ noncomputable def copowerProj (V : J ⥤ C) (U : J ⥤ Type w)
     [∀ j, HasCoproduct fun _ : U.obj j => V.obj j] : V.copower U ⟶ V
 ```
 
-**`CategoryTheory.SimplicialObject.prodFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L525). The attribute's comment: “(1)”.
+**`CategoryTheory.SimplicialObject.prodFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 525](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L525). The attribute's comment: “(1)”.
 
 > **Stacks 017E** (1).
 > The functor `FSSets × SimplicialObject C ⥤ SimplicialObject C` sending a pair `(U, V)` to the
@@ -117,7 +117,7 @@ noncomputable def prodFunctor : SSet.FSSets.{w} × SimplicialObject C ⥤ Simpli
 
 [Tag 017F](https://stacks.math.columbia.edu/tag/017F) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.constProdStd.phi_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L674). The attribute's comment: “(1)”.
+**`CategoryTheory.SimplicialObject.constProdStd.phi_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 674](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L674). The attribute's comment: “(1)”.
 
 > **Stacks 017F** (part 1).
 > For any simplicial object `V` of `C`, the map
@@ -128,7 +128,7 @@ theorem phi_bijective (V : SimplicialObject C) :
     Function.Bijective (phi X k V)
 ```
 
-**`CategoryTheory.SimplicialObject.constProdStd.phi_trunc_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L749). The attribute's comment: “(2)”.
+**`CategoryTheory.SimplicialObject.constProdStd.phi_trunc_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean, line 749](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicTopology/SimplicialObject/Copower.lean#L749). The attribute's comment: “(2)”.
 
 > **Stacks 017F** (part 2).
 > Let `n ≥ k` and let `W` be an `n`-truncated simplicial object of `C`. Then the map
@@ -147,4 +147,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.13, Tag 017A](https://stacks.math.columbia.edu/tag/017A)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0H00",
@@ -8924,7 +8924,7 @@
     {
      "name": "LinearMap.isUniversalDifferentialOperatorOfOrderLE_diagonalQuotient",
      "kind": "theorem",
-     "line": 1436,
+     "line": 1435,
      "private": false,
      "doc": "**Stacks 0H90.** Let `R → S` be a ring map, let `M` be an `S`-module, let `k : ℕ` and let\n`J = Ker(S ⊗[R] S → S)` be the kernel of the multiplication map. Make `S ⊗[R] M` a module over\n`S ⊗[R] S` by `(a ⊗ₜ b) • (t ⊗ₜ m) = (a * t) ⊗ₜ (b • m)` (`TensorProduct.diagonalModule`). Then the\n`S`-module `(S ⊗[R] M)/J^{k + 1}(S ⊗[R] M)`, with `s` acting as multiplication by `s ⊗ₜ 1`,\ntogether with the `R`-linear map `m ↦ class of 1 ⊗ₜ m`, is a module of principal parts of order\n`k` of `M`: that map is a differential operator of order at most `k` relative to `R → S` and every\nsuch operator out of `M` into an `S`-module factors uniquely `S`-linearly through it. Equivalently\nthere is a canonical isomorphism `Pᵏ_{S/R}(M) → (S ⊗[R] M)/J^{k + 1}(S ⊗[R] M)` carrying the\nuniversal differential operator of order `k` to `m ↦ class of 1 ⊗ₜ m`.",
      "statement": "public theorem isUniversalDifferentialOperatorOfOrderLE_diagonalQuotient (k : ℕ) :\n    letI := TensorProduct.diagonalModule R S M\n    haveI := TensorProduct.diagonalModule_isScalarTower R S M\n    (((KaehlerDifferential.ideal R S ^ (k + 1) •\n          (⊤ : Submodule (S ⊗[R] S) (S ⊗[R] M))).restrictScalars S).mkQ.restrictScalars R ∘ₗ\n        TensorProduct.mk R S M 1).IsUniversalDifferentialOperatorOfOrderLE S k",
@@ -8945,7 +8945,7 @@
     {
      "name": "Algebra.FormallyUnramified.base_change",
      "file": "StacksFrontier/RingTheory/Unramified/Basic.lean",
-     "line": 73,
+     "line": 71,
      "tier": "StacksFrontier",
      "comment": "formal unramifiedness is stable under base change",
      "ega": [

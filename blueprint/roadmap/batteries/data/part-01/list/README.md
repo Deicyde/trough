@@ -2,7 +2,7 @@
 
 11 modules under `Batteries/Data/List/`, with 577 public declarations.
 
-These modules declare nothing public by name, so they have no article: [`Batteries.Data.List.Init.Lemmas`](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Init/Lemmas.lean), [`Batteries.Data.List.Matcher`](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Matcher.lean) and [`Batteries.Data.List.Monadic`](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Monadic.lean).
+These modules declare nothing public by name, so they have no article: [`Batteries.Data.List.Init.Lemmas`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Init/Lemmas.lean), [`Batteries.Data.List.Matcher`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Matcher.lean) and [`Batteries.Data.List.Monadic`](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Monadic.lean).
 
 ## [ArrayMap to List Permutations](part-01/README.md)
 

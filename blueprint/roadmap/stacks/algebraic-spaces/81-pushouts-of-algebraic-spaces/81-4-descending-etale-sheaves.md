@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.4 Descending étale sheaves
 
-Section 81.4 of the Stacks Project, [Tag 0GFR](https://stacks.math.columbia.edu/tag/0GFR). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 81.4 of the Stacks Project, [Tag 0GFR](https://stacks.math.columbia.edu/tag/0GFR). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GFS, a lemma
 
 [Tag 0GFS](https://stacks.math.columbia.edu/tag/0GFS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toDescentData_smallEtaleSheafSystem_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleSheafDescent.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleSheafDescent.lean#L196).
+**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toDescentData_smallEtaleSheafSystem_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleSheafDescent.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleSheafDescent.lean#L196).
 
 > **Stacks 0GFS.** Let `X` be an algebraic space over a scheme `S` and let
 > `{g i : Y i ⟶ X}` be an étale covering of algebraic spaces. Then sheaves of sets on the small
@@ -34,7 +34,7 @@ theorem isEquivalence_toDescentData_smallEtaleSheafSystem_of_isEtaleCovering
       (fun i => toFinal B S hS (etaleObject B S hS (g i) (hg.etale i)))).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toDescentData_spacesEtalePseudofunctor_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleGlobalDescent.lean, line 555](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleGlobalDescent.lean#L555). The attribute's comment: “for the pseudofunctor of spaces-étale inverse images”.
+**`AlgebraicGeometry.Space.SpacesEtale.isEquivalence_toDescentData_spacesEtalePseudofunctor_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleGlobalDescent.lean, line 555](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleGlobalDescent.lean#L555). The attribute's comment: “for the pseudofunctor of spaces-étale inverse images”.
 
 > **Stacks 0GFS for the pseudofunctor of spaces-étale inverse images.** Let `X` be an
 > algebraic space over a scheme `S` and let `{g i : Y i ⟶ X}` be an étale covering of algebraic
@@ -54,7 +54,7 @@ theorem isEquivalence_toDescentData_spacesEtalePseudofunctor_of_isEtaleCovering
 
 [Tag 0GFT](https://stacks.math.columbia.edu/tag/0GFT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentEtaleLocal.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentEtaleLocal.lean#L375). The attribute's comment: “for the pseudofunctor of spaces-étale inverse images”.
+**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentEtaleLocal.lean, line 375](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentEtaleLocal.lean#L375). The attribute's comment: “for the pseudofunctor of spaces-étale inverse images”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` and let `{g i : Y i ⟶ Y}` be an
 > étale covering. If
@@ -78,7 +78,7 @@ theorem isEquivalence_toDescentData_singleton_of_isEtaleCovering
 
 [Tag 0GFU](https://stacks.math.columbia.edu/tag/0GFU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean#L208).
+**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean, line 208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean#L208).
 
 > **Stacks 0GFU.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > representable (by schemes) and is surjective and integral, or surjective and proper, or
@@ -103,7 +103,7 @@ theorem isEquivalence_toDescentData_singleton_of_relativelyRepresentable
 
 [Tag 0GFV](https://stacks.math.columbia.edu/tag/0GFV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_relativelyRepresentable_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean#L243). The attribute's comment: “Sh(Y\_étale) is the category of sheaves on the spaces-étale site of `Y`, equivalent to the small étale topos by Stacks 03G1; descent data for `{X ⟶ Y}` are those of the spaces-étale pseudofunctor along the singleton family. The proof combines Stacks 0GFU (`isEquivalence_toDescentData_singleton_of_relativelyRepresentable`) with the refinement principle Stacks 0GEA, via `isEquivalence_toDescentData_singleton_of_representable_comp`.”.
+**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_relativelyRepresentable_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentSchemeTarget.lean#L243). The attribute's comment: “Sh(Y\_étale) is the category of sheaves on the spaces-étale site of `Y`, equivalent to the small étale topos by Stacks 03G1; descent data for `{X ⟶ Y}` are those of the spaces-étale pseudofunctor along the singleton family. The proof combines Stacks 0GFU (`isEquivalence_toDescentData_singleton_of_relativelyRepresentable`) with the refinement principle Stacks 0GEA, via `isEquivalence_toDescentData_singleton_of_representable_comp`.”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` and let `π : X' ⟶ X` be a
 > morphism of algebraic spaces. Assume that `π ≫ f` is representable (by schemes) and is surjective
@@ -123,7 +123,7 @@ theorem isEquivalence_toDescentData_singleton_of_relativelyRepresentable_comp
 
 [Tag 0GFW](https://stacks.math.columbia.edu/tag/0GFW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_isSurjectiveIntegralProperOrFlatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentProperSurjective.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentProperSurjective.lean#L206).
+**`AlgebraicGeometry.Space.isEquivalence_toDescentData_singleton_of_isSurjectiveIntegralProperOrFlatLfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentProperSurjective.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentProperSurjective.lean#L206).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is surjective and integral, or
 > surjective and proper, or surjective, flat and locally of finite presentation. Then the functor
@@ -146,7 +146,7 @@ theorem isEquivalence_toDescentData_singleton_of_isSurjectiveIntegralProperOrFla
 
 [Tag 0GFX](https://stacks.math.columbia.edu/tag/0GFX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_toDescentData_of_isFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentFppfCovering.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentFppfCovering.lean#L112).
+**`AlgebraicGeometry.Space.isEquivalence_toDescentData_of_isFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentFppfCovering.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleDescentFppfCovering.lean#L112).
 
 > Let `S` be a scheme and let `{f i : X i ⟶ Y}` be an fppf covering of algebraic spaces over
 > `S`. Then the functor from sheaves on the spaces-étale site of `Y` (that is, `Sh(Y_étale)`) to
@@ -164,7 +164,7 @@ theorem isEquivalence_toDescentData_of_isFppfCovering {I : Type v}
 
 [Tag 0GFY](https://stacks.math.columbia.edu/tag/0GFY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_spacesModificationRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean#L68).
+**`AlgebraicGeometry.Space.isEquivalence_spacesModificationRestriction_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleModificationProper.lean#L68).
 
 > **[Stacks, Tag 0GFY].** Let `S` be a scheme, let `f : Y ⟶ X` be a proper morphism of
 > algebraic spaces over `S`, let `i : Z ⟶ X` be a closed immersion, and let `E = Z ×_X Y` with
@@ -191,4 +191,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.4, Tag 0GFR](https://stacks.math.columbia.edu/tag/0GFR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

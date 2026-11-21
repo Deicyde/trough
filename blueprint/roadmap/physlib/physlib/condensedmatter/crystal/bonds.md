@@ -8,7 +8,7 @@ proof: formalized
 
 # Bonds in a crystal
 
-The module `Physlib.CondensedMatter.Crystal.Bonds`, [Physlib/CondensedMatter/Crystal/Bonds.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean): 7 declarations (2 instances with no name), 7 with a docstring.
+The module `Physlib.CondensedMatter.Crystal.Bonds`, [Physlib/CondensedMatter/Crystal/Bonds.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean): 7 declarations (2 instances with no name), 7 with a docstring.
 
 > A bond connects sites in two unit cells of a crystal.
 
@@ -29,7 +29,7 @@ The module `Physlib.CondensedMatter.Crystal.Bonds`, [Physlib/CondensedMatter/Cry
 
 ## A. Bonds in a unit cell
 
-**`Physlib.CondensedMatter.Crystal.Bond`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L45).
+**`Physlib.CondensedMatter.Crystal.Bond`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L45).
 
 > A bond from `source` in one cell to `target` in the cell displaced by `displacement`.
 
@@ -43,7 +43,7 @@ structure Bond (C : Crystal G) where
   displacement : G
 ```
 
-**An instance with no name**, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L54).
+**An instance with no name**, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L54).
 
 > Bonds can be compared when cells and unit-cell labels can be compared.
 
@@ -51,7 +51,7 @@ structure Bond (C : Crystal G) where
 instance {C : Crystal G} [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq (Bond C)
 ```
 
-**`Physlib.CondensedMatter.Crystal.Bond.Links`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L62).
+**`Physlib.CondensedMatter.Crystal.Bond.Links`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L62).
 
 > Site `x` is the source and site `y` is the target of this bond.
 
@@ -59,7 +59,7 @@ instance {C : Crystal G} [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq 
 def Links (b : Bond C) (x y : C.Site) : Prop
 ```
 
-**`Physlib.CondensedMatter.Crystal.Bond.links_reference`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L66).
+**`Physlib.CondensedMatter.Crystal.Bond.links_reference`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L66).
 
 > Every bond links the reference site of its source to the site its displacement points to.
 
@@ -67,7 +67,7 @@ def Links (b : Bond C) (x y : C.Site) : Prop
 lemma links_reference (b : Bond C) : b.Links (Site.ref b.source) ⟨b.displacement, b.target⟩
 ```
 
-**`Physlib.CondensedMatter.Crystal.Bond.eq_of_links`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L70).
+**`Physlib.CondensedMatter.Crystal.Bond.eq_of_links`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L70).
 
 > Two bonds linking the same pair of sites are equal.
 
@@ -76,7 +76,7 @@ lemma eq_of_links {b b' : Bond C} {x y : C.Site} (h : b.Links x y) (h' : b'.Link
     b = b'
 ```
 
-**`Physlib.CondensedMatter.Crystal.Bond.links_vadd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L79).
+**`Physlib.CondensedMatter.Crystal.Bond.links_vadd`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L79).
 
 > Translating the endpoints gives another copy of the same bond.
 
@@ -85,7 +85,7 @@ lemma links_vadd (b : Bond C) (a : G) (x y : C.Site) :
     b.Links (a +ᵥ x) (a +ᵥ y) ↔ b.Links x y
 ```
 
-**An instance with no name**, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean#L84).
+**An instance with no name**, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean#L84).
 
 > The source and target of a bond can be checked from their site addresses.
 
@@ -99,4 +99,4 @@ instance [DecidableEq G] [DecidableEq C.UnitCell] (b : Bond C) : DecidableRel b.
 
 ## Sources
 
-- [Physlib/CondensedMatter/Crystal/Bonds.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Bonds.lean)
+- [Physlib/CondensedMatter/Crystal/Bonds.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/Crystal/Bonds.lean)

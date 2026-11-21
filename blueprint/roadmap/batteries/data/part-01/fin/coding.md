@@ -7,7 +7,7 @@ proof: formalized
 
 # Low-level coding recipes for `Fin` types
 
-`Batteries.Data.Fin.Coding`, in [Batteries/Data/Fin/Coding.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean), by François G. Dorais.
+`Batteries.Data.Fin.Coding`, in [Batteries/Data/Fin/Coding.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean), by François G. Dorais.
 
 > This module collects encoding/decoding bijections to represent basic type constructors of `Fin`
 > types as `Fin` types. These functions implement the isomorphism `Option (Fin n) ≃ Fin (n+1)`,
@@ -17,7 +17,7 @@ proof: formalized
 > Only a minimal API is provided. These utility functions are intended for use in other constructions.
 > Such constructions should avoid exposing these functions as they are not meant for public use.
 
-`Fin.encodeEmpty` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L29))
+`Fin.encodeEmpty` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L29))
 
 > Encode `Empty` into `Fin 0`.
 
@@ -25,7 +25,7 @@ proof: formalized
 def encodeEmpty : Empty → Fin 0
 ```
 
-`Fin.decodeEmpty` (definition, [line 32](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L32))
+`Fin.decodeEmpty` (definition, [line 32](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L32))
 
 > Decode `Empty` from `Fin 0`.
 
@@ -33,19 +33,19 @@ def encodeEmpty : Empty → Fin 0
 def decodeEmpty : Fin 0 → Empty
 ```
 
-`Fin.encodeEmpty_decodeEmpty` (theorem, [line 34](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L34))
+`Fin.encodeEmpty_decodeEmpty` (theorem, [line 34](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L34))
 
 ```lean
 theorem encodeEmpty_decodeEmpty (x : Fin 0) : encodeEmpty (decodeEmpty x) = x
 ```
 
-`Fin.decodeEmpty_encodeEmpty` (theorem, [line 36](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L36))
+`Fin.decodeEmpty_encodeEmpty` (theorem, [line 36](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L36))
 
 ```lean
 theorem decodeEmpty_encodeEmpty (x : Empty) : decodeEmpty (encodeEmpty x) = x
 ```
 
-`Fin.encodePUnit` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L40))
+`Fin.encodePUnit` (definition, [line 40](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L40))
 
 > Encode `PUnit` into `Fin 1`.
 
@@ -53,7 +53,7 @@ theorem decodeEmpty_encodeEmpty (x : Empty) : decodeEmpty (encodeEmpty x) = x
 def encodePUnit : PUnit → Fin 1
 ```
 
-`Fin.decodePUnit` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L44))
+`Fin.decodePUnit` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L44))
 
 > Decode `PUnit` from `Fin 1`.
 
@@ -61,7 +61,7 @@ def encodePUnit : PUnit → Fin 1
 def decodePUnit : Fin 1 → PUnit
 ```
 
-`Fin.encodeUnit` (abbreviation, [line 48](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L48))
+`Fin.encodeUnit` (abbreviation, [line 48](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L48))
 
 > Encode `Unit` into `Fin 1`.
 
@@ -69,7 +69,7 @@ def decodePUnit : Fin 1 → PUnit
 abbrev encodeUnit : Unit → Fin 1
 ```
 
-`Fin.decodeUnit` (abbreviation, [line 51](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L51))
+`Fin.decodeUnit` (abbreviation, [line 51](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L51))
 
 > Decode `Unit` from `Fin 1`.
 
@@ -77,19 +77,19 @@ abbrev encodeUnit : Unit → Fin 1
 abbrev decodeUnit : Fin 1 → Unit
 ```
 
-`Fin.encodePUnit_decodePUnit` (theorem, [line 53](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L53))
+`Fin.encodePUnit_decodePUnit` (theorem, [line 53](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L53))
 
 ```lean
 theorem encodePUnit_decodePUnit : (x : Fin 1) → encodePUnit (decodePUnit x) = x
 ```
 
-`Fin.decodePUnit_encodePUnit` (theorem, [line 56](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L56))
+`Fin.decodePUnit_encodePUnit` (theorem, [line 56](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L56))
 
 ```lean
 theorem decodePUnit_encodePUnit : (x : PUnit) → decodePUnit (encodePUnit x) = x
 ```
 
-`Fin.encodeBool` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L60))
+`Fin.encodeBool` (definition, [line 60](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L60))
 
 > Encode `Bool` into `Fin 2`.
 
@@ -97,7 +97,7 @@ theorem decodePUnit_encodePUnit : (x : PUnit) → decodePUnit (encodePUnit x) = 
 def encodeBool : Bool → Fin 2
 ```
 
-`Fin.decodeBool` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L65))
+`Fin.decodeBool` (definition, [line 65](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L65))
 
 > Decode `Bool` from `Fin 2`.
 
@@ -105,19 +105,19 @@ def encodeBool : Bool → Fin 2
 def decodeBool : Fin 2 → Bool
 ```
 
-`Fin.encodeBool_decodeBool` (theorem, [line 69](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L69))
+`Fin.encodeBool_decodeBool` (theorem, [line 69](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L69))
 
 ```lean
 theorem encodeBool_decodeBool : (x : Fin 2) → encodeBool (decodeBool x) = x
 ```
 
-`Fin.decodeBool_encodeBool` (theorem, [line 72](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L72))
+`Fin.decodeBool_encodeBool` (theorem, [line 72](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L72))
 
 ```lean
 theorem decodeBool_encodeBool : (x : Bool) → decodeBool (encodeBool x) = x
 ```
 
-`Fin.encodeOrdering` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L76))
+`Fin.encodeOrdering` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L76))
 
 > Encode `Ordering` into `Fin 3`.
 
@@ -125,7 +125,7 @@ theorem decodeBool_encodeBool : (x : Bool) → decodeBool (encodeBool x) = x
 def encodeOrdering : Ordering → Fin 3
 ```
 
-`Fin.decodeOrdering` (definition, [line 82](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L82))
+`Fin.decodeOrdering` (definition, [line 82](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L82))
 
 > Decode `Ordering` from `Fin 3`.
 
@@ -133,20 +133,20 @@ def encodeOrdering : Ordering → Fin 3
 def decodeOrdering : Fin 3 → Ordering
 ```
 
-`Fin.encodeOrdering_decodeOrdering` (theorem, [line 87](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L87))
+`Fin.encodeOrdering_decodeOrdering` (theorem, [line 87](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L87))
 
 ```lean
 theorem encodeOrdering_decodeOrdering : (x : Fin 3) → encodeOrdering (decodeOrdering x) = x
 ```
 
-`Fin.decodeOrdering_encodeOrdering` (theorem, [line 90](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L90))
+`Fin.decodeOrdering_encodeOrdering` (theorem, [line 90](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L90))
 
 ```lean
 theorem decodeOrdering_encodeOrdering :
     (x : Ordering) → decodeOrdering (encodeOrdering x) = x
 ```
 
-`Fin.encodeChar` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L95))
+`Fin.encodeChar` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L95))
 
 > Encode `Char` into `Fin Char.count`.
 
@@ -154,7 +154,7 @@ theorem decodeOrdering_encodeOrdering :
 def encodeChar (c : Char) : Fin Char.count
 ```
 
-`Fin.decodeChar` (definition, [line 102](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L102))
+`Fin.decodeChar` (definition, [line 102](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L102))
 
 > Decode `Char` from `Fin Char.count`.
 
@@ -162,19 +162,19 @@ def encodeChar (c : Char) : Fin Char.count
 def decodeChar (i : Fin Char.count) : Char
 ```
 
-`Fin.encodeChar_decodeChar` (theorem, [line 108](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L108))
+`Fin.encodeChar_decodeChar` (theorem, [line 108](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L108))
 
 ```lean
 theorem encodeChar_decodeChar (x) : encodeChar (decodeChar x) = x
 ```
 
-`Fin.decodeChar_encodeChar` (theorem, [line 115](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L115))
+`Fin.decodeChar_encodeChar` (theorem, [line 115](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L115))
 
 ```lean
 theorem decodeChar_encodeChar (x) : decodeChar (encodeChar x) = x
 ```
 
-`Fin.encodeOption` (definition, [line 125](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L125))
+`Fin.encodeOption` (definition, [line 125](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L125))
 
 > Encode `Option (Fin n)` into `Fin (n+1)`.
 
@@ -182,7 +182,7 @@ theorem decodeChar_encodeChar (x) : decodeChar (encodeChar x) = x
 def encodeOption : Option (Fin n) → Fin (n+1)
 ```
 
-`Fin.decodeOption` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L130))
+`Fin.decodeOption` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L130))
 
 > Decode `Option (Fin n)` from `Fin (n+1)`.
 
@@ -190,20 +190,20 @@ def encodeOption : Option (Fin n) → Fin (n+1)
 def decodeOption : Fin (n+1) → Option (Fin n)
 ```
 
-`Fin.encodeOption_decodeOption` (theorem, [line 134](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L134))
+`Fin.encodeOption_decodeOption` (theorem, [line 134](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L134))
 
 ```lean
 theorem encodeOption_decodeOption (x : Fin (n+1)) : encodeOption (decodeOption x) = x
 ```
 
-`Fin.decodeOption_encodeOption` (theorem, [line 146](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L146))
+`Fin.decodeOption_encodeOption` (theorem, [line 146](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L146))
 
 ```lean
 theorem decodeOption_encodeOption (x : Option (Fin n)) :
     decodeOption (encodeOption x) = x
 ```
 
-`Fin.encodeSum` (definition, [line 160](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L160))
+`Fin.encodeSum` (definition, [line 160](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L160))
 
 > Encode `Fin n ⊕ Fin m` into `Fin (n + m)`.
 
@@ -211,7 +211,7 @@ theorem decodeOption_encodeOption (x : Option (Fin n)) :
 def encodeSum : Sum (Fin n) (Fin m) → Fin (n + m)
 ```
 
-`Fin.decodeSum` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L165))
+`Fin.decodeSum` (definition, [line 165](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L165))
 
 > Decode `Fin n ⊕ Fin m` from `Fin (n + m)`.
 
@@ -219,21 +219,21 @@ def encodeSum : Sum (Fin n) (Fin m) → Fin (n + m)
 def decodeSum (x : Fin (n + m)) : Sum (Fin n) (Fin m)
 ```
 
-`Fin.encodeSum_decodeSum` (theorem, [line 168](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L168))
+`Fin.encodeSum_decodeSum` (theorem, [line 168](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L168))
 
 ```lean
 theorem encodeSum_decodeSum (x : Fin (n + m)) :
     encodeSum (decodeSum x) = x
 ```
 
-`Fin.decodeSum_encodeSum` (theorem, [line 173](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L173))
+`Fin.decodeSum_encodeSum` (theorem, [line 173](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L173))
 
 ```lean
 theorem decodeSum_encodeSum (x : Sum (Fin n) (Fin m)) :
     decodeSum (encodeSum x) = x
 ```
 
-`Fin.encodeProd` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L179))
+`Fin.encodeProd` (definition, [line 179](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L179))
 
 > Encode `Fin m × Fin n` into `Fin (m * n)`.
 
@@ -241,7 +241,7 @@ theorem decodeSum_encodeSum (x : Sum (Fin n) (Fin m)) :
 def encodeProd : Fin m × Fin n → Fin (m * n)
 ```
 
-`Fin.decodeProd` (definition, [line 183](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L183))
+`Fin.decodeProd` (definition, [line 183](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L183))
 
 > Decode `Fin m × Fin n` from `Fin (m * n)`.
 
@@ -249,19 +249,19 @@ def encodeProd : Fin m × Fin n → Fin (m * n)
 def decodeProd (z : Fin (m * n)) : Fin m × Fin n
 ```
 
-`Fin.encodeProd_decodeProd` (theorem, [line 186](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L186))
+`Fin.encodeProd_decodeProd` (theorem, [line 186](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L186))
 
 ```lean
 theorem encodeProd_decodeProd (x : Fin (m * n)) : encodeProd (decodeProd x) = x
 ```
 
-`Fin.decodeProd_encodeProd` (theorem, [line 189](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L189))
+`Fin.decodeProd_encodeProd` (theorem, [line 189](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L189))
 
 ```lean
 theorem decodeProd_encodeProd (x : Fin m × Fin n) : decodeProd (encodeProd x) = x
 ```
 
-`Fin.encodeSigma` (definition, [line 193](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L193))
+`Fin.encodeSigma` (definition, [line 193](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L193))
 
 > Encode `(i : Fin n) × Fin (f i)` into `Fin (Fin.sum f)`.
 
@@ -269,7 +269,7 @@ theorem decodeProd_encodeProd (x : Fin m × Fin n) : decodeProd (encodeProd x) =
 def encodeSigma (f : Fin n → Nat) (x : (i : Fin n) × Fin (f i)) : Fin (Fin.sum f)
 ```
 
-`Fin.decodeSigma` (definition, [line 202](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L202))
+`Fin.decodeSigma` (definition, [line 202](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L202))
 
 > Decode `(i : Fin n) × Fin (f i)` from `Fin (Fin.sum f)`.
 
@@ -277,21 +277,21 @@ def encodeSigma (f : Fin n → Nat) (x : (i : Fin n) × Fin (f i)) : Fin (Fin.su
 def decodeSigma (f : Fin n → Nat) (x : Fin (Fin.sum f)) : (i : Fin n) × Fin (f i)
 ```
 
-`Fin.encodeSigma_decodeSigma` (theorem, [line 213](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L213))
+`Fin.encodeSigma_decodeSigma` (theorem, [line 213](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L213))
 
 ```lean
 theorem encodeSigma_decodeSigma (f : Fin n → Nat) (x : Fin (Fin.sum f)) :
     encodeSigma f (decodeSigma f x) = x
 ```
 
-`Fin.decodeSigma_encodeSigma` (theorem, [line 229](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L229))
+`Fin.decodeSigma_encodeSigma` (theorem, [line 229](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L229))
 
 ```lean
 theorem decodeSigma_encodeSigma (f : Fin n → Nat) (x : (i : Fin n) × Fin (f i)) :
     decodeSigma f (encodeSigma f x) = x
 ```
 
-`Fin.encodeFun` (definition, [line 256](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L256))
+`Fin.encodeFun` (definition, [line 256](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L256))
 
 > Encode `Fin m → Fin n` into `Fin (n ^ m)`.
 
@@ -302,7 +302,7 @@ def encodeFun : {m : Nat} → (Fin m → Fin n) → Fin (n ^ m)
     _ < n * (encodeFun fun k => f k.succ).val + n
 ```
 
-`Fin.decodeFun` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L266))
+`Fin.decodeFun` (definition, [line 266](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L266))
 
 > Decode `Fin m → Fin n` from `Fin (n ^ m)`.
 
@@ -310,19 +310,19 @@ def encodeFun : {m : Nat} → (Fin m → Fin n) → Fin (n ^ m)
 def decodeFun : {m : Nat} → Fin (n ^ m) → Fin m → Fin n
 ```
 
-`Fin.encodeFun_decodeFun` (theorem, [line 276](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L276))
+`Fin.encodeFun_decodeFun` (theorem, [line 276](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L276))
 
 ```lean
 theorem encodeFun_decodeFun (x : Fin (n ^ m)) : encodeFun (decodeFun x) = x
 ```
 
-`Fin.decodeFun_encodeFun` (theorem, [line 281](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L281))
+`Fin.decodeFun_encodeFun` (theorem, [line 281](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L281))
 
 ```lean
 theorem decodeFun_encodeFun (x : Fin m → Fin n) : decodeFun (encodeFun x) = x
 ```
 
-`Fin.encodePi` (definition, [line 294](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L294))
+`Fin.encodePi` (definition, [line 294](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L294))
 
 > Encode `(i : Fin n) → Fin (f i)` into `Fin (Fin.prod f)`.
 
@@ -330,7 +330,7 @@ theorem decodeFun_encodeFun (x : Fin m → Fin n) : decodeFun (encodeFun x) = x
 def encodePi (f : Fin n → Nat) (x : (i : Fin n) → Fin (f i)) : Fin (Fin.prod f)
 ```
 
-`Fin.decodePi` (definition, [line 306](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L306))
+`Fin.decodePi` (definition, [line 306](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L306))
 
 > Decode `(i : Fin n) → Fin (f i)` from `Fin (Fin.prod f)`.
 
@@ -338,21 +338,21 @@ def encodePi (f : Fin n → Nat) (x : (i : Fin n) → Fin (f i)) : Fin (Fin.prod
 def decodePi (f : Fin n → Nat) (x : Fin (Fin.prod f)) : (i : Fin n) → Fin (f i)
 ```
 
-`Fin.encodePi_decodePi` (theorem, [line 319](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L319))
+`Fin.encodePi_decodePi` (theorem, [line 319](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L319))
 
 ```lean
 theorem encodePi_decodePi (f : Fin n → Nat) (x : Fin (Fin.prod f)) :
     encodePi f (decodePi f x) = x
 ```
 
-`Fin.decodePi_encodePi` (theorem, [line 332](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L332))
+`Fin.decodePi_encodePi` (theorem, [line 332](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L332))
 
 ```lean
 theorem decodePi_encodePi (f : Fin n → Nat) (x : (i : Fin n) → Fin (f i)) :
     decodePi f (encodePi f x) = x
 ```
 
-`Fin.encodeSubtype` (definition, [line 349](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L349))
+`Fin.encodeSubtype` (definition, [line 349](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L349))
 
 > Encode `{ i : Fin n // P i }` into `Fin (Fin.countP P)` where `P` is a decidable predicate.
 
@@ -361,7 +361,7 @@ def encodeSubtype (P : Fin n → Prop) [inst : DecidablePred P] (i : { i // P i 
     Fin (Fin.countP (P ·))
 ```
 
-`Fin.decodeSubtype` (definition, [line 368](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L368))
+`Fin.decodeSubtype` (definition, [line 368](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L368))
 
 > Decode `{ i : Fin n // P i }` from `Fin (Fin.countP P)` where `P` is a decidable predicate.
 
@@ -370,14 +370,14 @@ def decodeSubtype (P : Fin n → Prop) [inst : DecidablePred P] (k : Fin (Fin.co
     { i // P i }
 ```
 
-`Fin.encodeSubtype_zero_pos` (theorem, [line 386](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L386))
+`Fin.encodeSubtype_zero_pos` (theorem, [line 386](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L386))
 
 ```lean
 theorem encodeSubtype_zero_pos {P : Fin (n+1) → Prop} [DecidablePred P] (h₀ : P 0) :
     encodeSubtype P ⟨0, h₀⟩ = ⟨0, by grind [countP_succ]⟩
 ```
 
-`Fin.encodeSubtype_succ_pos` (theorem, [line 390](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L390))
+`Fin.encodeSubtype_succ_pos` (theorem, [line 390](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L390))
 
 ```lean
 theorem encodeSubtype_succ_pos {P : Fin (n+1) → Prop} [DecidablePred P] (h₀ : P 0) {i : Fin n}
@@ -385,7 +385,7 @@ theorem encodeSubtype_succ_pos {P : Fin (n+1) → Prop} [DecidablePred P] (h₀ 
       (encodeSubtype (fun i => P i.succ) ⟨i, h⟩).succ.cast (by grind [countP_succ])
 ```
 
-`Fin.encodeSubtype_succ_neg` (theorem, [line 395](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L395))
+`Fin.encodeSubtype_succ_neg` (theorem, [line 395](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L395))
 
 ```lean
 theorem encodeSubtype_succ_neg {P : Fin (n+1) → Prop} [DecidablePred P] (h₀ : ¬ P 0) {i : Fin n}
@@ -394,21 +394,21 @@ theorem encodeSubtype_succ_neg {P : Fin (n+1) → Prop} [DecidablePred P] (h₀ 
         (by simp [-countP_eq_countP_map_finRange, countP_succ, *])
 ```
 
-`Fin.encodeSubtype_decodeSubtype` (theorem, [line 401](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L401))
+`Fin.encodeSubtype_decodeSubtype` (theorem, [line 401](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L401))
 
 ```lean
 theorem encodeSubtype_decodeSubtype (P : Fin n → Prop) [DecidablePred P]
     (x : Fin (Fin.countP (P ·))) : encodeSubtype P (decodeSubtype P x) = x
 ```
 
-`Fin.decodeSubtype_encodeSubtype` (theorem, [line 411](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L411))
+`Fin.decodeSubtype_encodeSubtype` (theorem, [line 411](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L411))
 
 ```lean
 theorem decodeSubtype_encodeSubtype (P : Fin n → Prop) [DecidablePred P] (x : { x // P x}) :
     decodeSubtype P (encodeSubtype P x) = x
 ```
 
-`Fin.getRepr` (abbreviation, [line 438](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L438))
+`Fin.getRepr` (abbreviation, [line 438](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L438))
 
 > Get representative for the equivalence class of `x`.
 
@@ -416,35 +416,35 @@ theorem decodeSubtype_encodeSubtype (P : Fin n → Prop) [DecidablePred P] (x : 
 abbrev getRepr (s : Setoid (Fin n)) [DecidableRel s.r] (x : Fin n) : Fin n
 ```
 
-`Fin.equiv_getRepr` (theorem, [line 449](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L449))
+`Fin.equiv_getRepr` (theorem, [line 449](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L449))
 
 ```lean
 theorem equiv_getRepr (s : Setoid (Fin n)) [DecidableRel s.r] (x : Fin n) :
     s.r x (getRepr s x)
 ```
 
-`Fin.getRepr_equiv` (theorem, [line 461](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L461))
+`Fin.getRepr_equiv` (theorem, [line 461](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L461))
 
 ```lean
 theorem getRepr_equiv (s : Setoid (Fin n)) [DecidableRel s.r] (x : Fin n) :
     s.r (getRepr s x) x
 ```
 
-`Fin.getRepr_eq_getRepr_of_equiv` (theorem, [line 464](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L464))
+`Fin.getRepr_eq_getRepr_of_equiv` (theorem, [line 464](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L464))
 
 ```lean
 theorem getRepr_eq_getRepr_of_equiv (s : Setoid (Fin n)) [DecidableRel s.r] (h : s.r x y) :
     getRepr s x = getRepr s y
 ```
 
-`Fin.getRepr_getRepr` (theorem, [line 491](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L491))
+`Fin.getRepr_getRepr` (theorem, [line 491](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L491))
 
 ```lean
 theorem getRepr_getRepr (s : Setoid (Fin n)) [DecidableRel s.r] (x : Fin n) :
     getRepr s (getRepr s x) = getRepr s x
 ```
 
-`Fin.encodeQuotient` (definition, [line 497](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L497))
+`Fin.encodeQuotient` (definition, [line 497](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L497))
 
 > Encode `Quotient s` into `Fin m` where `s` is a decidable setoid on `Fin n`.
 
@@ -453,7 +453,7 @@ def encodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r] (x : Quotient s) :
     Fin (Fin.countP fun i => getRepr s i = i)
 ```
 
-`Fin.decodeQuotient` (definition, [line 505](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L505))
+`Fin.decodeQuotient` (definition, [line 505](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L505))
 
 > Decode `Quotient s` from `Fin m` where `s` is a decidable setoid on `Fin n`.
 
@@ -462,14 +462,14 @@ def decodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r]
     (i : Fin (Fin.countP fun i => getRepr s i = i)) : Quotient s
 ```
 
-`Fin.encodeQuotient_decodeQuotient` (theorem, [line 509](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L509))
+`Fin.encodeQuotient_decodeQuotient` (theorem, [line 509](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L509))
 
 ```lean
 theorem encodeQuotient_decodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r] (x) :
     encodeQuotient s (decodeQuotient s x) = x
 ```
 
-`Fin.decodeQuotient_encodeQuotient` (theorem, [line 516](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean#L516))
+`Fin.decodeQuotient_encodeQuotient` (theorem, [line 516](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean#L516))
 
 ```lean
 theorem decodeQuotient_encodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r] (x) :
@@ -487,5 +487,5 @@ theorem decodeQuotient_encodeQuotient (s : Setoid (Fin n)) [DecidableRel s.r] (x
 
 ## Sources
 
-- [Batteries/Data/Fin/Coding.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Fin/Coding.lean)
+- [Batteries/Data/Fin/Coding.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Fin/Coding.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Fin.Coding.json)

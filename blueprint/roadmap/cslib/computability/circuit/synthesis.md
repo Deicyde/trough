@@ -7,7 +7,7 @@ proof: formalized
 
 # Simultaneous circuit synthesis
 
-`Cslib.Computability.Circuit.Synthesis`, in [Cslib/Computability/Circuit/Synthesis.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Synthesis`, in [Cslib/Computability/Circuit/Synthesis.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean), by Samuel Schlesinger.
 
 > `Synthesis I sources targets cost` bounds the number of additional gates needed to compute
 > `targets` from `sources` under an interpretation `I`. Every function already available in the
@@ -21,7 +21,7 @@ proof: formalized
 > `Synthesis.exists_circuit_outputs` selects any tuple of outputs without adding gates;
 > `Synthesis.exists_circuit` specializes this to a single output.
 
-`Cslib.Circuits.inputs` (definition, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L40))
+`Cslib.Circuits.inputs` (definition, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L40))
 
 > The coordinate projections supplied by the circuit's inputs.
 
@@ -29,7 +29,7 @@ proof: formalized
 def inputs (n : ℕ) : Set ((Fin n → U) → U)
 ```
 
-`Cslib.Circuits.available` (definition, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L44))
+`Cslib.Circuits.available` (definition, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L44))
 
 > The functions computed by the wires of `p`, whether input wires or internal
 > gates.
@@ -38,7 +38,7 @@ def inputs (n : ℕ) : Set ((Fin n → U) → U)
 def available (I : Interpretation σ U) {g : ℕ} (p : Program σ n g) : Set ((Fin n → U) → U)
 ```
 
-`Cslib.Circuits.mem_available` (theorem, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L48))
+`Cslib.Circuits.mem_available` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L48))
 
 > A function is available exactly when some wire computes it pointwise.
 
@@ -47,7 +47,7 @@ theorem mem_available {g : ℕ} {p : Program σ n g} {f : (Fin n → U) → U} :
     f ∈ available I p ↔ ∃ w, ∀ x, p.trace I x w = f x
 ```
 
-`Cslib.Circuits.inputs_subset_available` (theorem, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L53))
+`Cslib.Circuits.inputs_subset_available` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L53))
 
 > The input projections are available in every program.
 
@@ -56,7 +56,7 @@ theorem inputs_subset_available {g : ℕ} (p : Program σ n g) :
     inputs n ⊆ available I p
 ```
 
-`Cslib.Circuits.Synthesis` (definition, [line 70](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L70))
+`Cslib.Circuits.Synthesis` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L70))
 
 > `Synthesis I sources targets cost` says that `targets` can be computed from `sources`
 > using at most `cost` additional gates, without losing anything already computed.
@@ -76,7 +76,7 @@ def Synthesis (I : Interpretation σ U) (sources targets : Set ((Fin n → U) �
     (cost : ℕ) : Prop
 ```
 
-`Cslib.Circuits.Synthesis.of_subset` (theorem, [line 81](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L81))
+`Cslib.Circuits.Synthesis.of_subset` (theorem, [line 81](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L81))
 
 > Available functions require no additional gates.
 
@@ -84,7 +84,7 @@ def Synthesis (I : Interpretation σ U) (sources targets : Set ((Fin n → U) �
 theorem of_subset (h : t ⊆ s) : Synthesis I s t 0
 ```
 
-`Cslib.Circuits.Synthesis.of_mem` (theorem, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L85))
+`Cslib.Circuits.Synthesis.of_mem` (theorem, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L85))
 
 > An available function requires no additional gates.
 
@@ -92,7 +92,7 @@ theorem of_subset (h : t ⊆ s) : Synthesis I s t 0
 theorem of_mem (hf : f ∈ s) : Synthesis I s {f} 0
 ```
 
-`Cslib.Circuits.Synthesis.mono` (theorem, [line 89](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L89))
+`Cslib.Circuits.Synthesis.mono` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L89))
 
 > Enlarge the source family, narrow the target family, or increase the budget.
 
@@ -101,7 +101,7 @@ theorem mono (h : Synthesis I s t a) {s' t' : Set ((Fin n → U) → U)}
     (hs : s ⊆ s') (ht : t' ⊆ t) (hab : a ≤ b) : Synthesis I s' t' b
 ```
 
-`Cslib.Circuits.Synthesis.comp` (theorem, [line 97](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L97))
+`Cslib.Circuits.Synthesis.comp` (theorem, [line 97](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L97))
 
 > Successive constructions add their gate budgets. The second construction may use the
 > targets of the first, and both target families remain available.
@@ -111,7 +111,7 @@ theorem comp (h : Synthesis I s t a) (h' : Synthesis I (s ∪ t) t₁ b) :
     Synthesis I s (t ∪ t₁) (a + b)
 ```
 
-`Cslib.Circuits.Synthesis.trans` (theorem, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L105))
+`Cslib.Circuits.Synthesis.trans` (theorem, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L105))
 
 > Successive constructions, keeping only the final targets.
 
@@ -120,7 +120,7 @@ theorem trans (h : Synthesis I s t a) (h' : Synthesis I (s ∪ t) t₁ b) :
     Synthesis I s t₁ (a + b)
 ```
 
-`Cslib.Circuits.Synthesis.union` (theorem, [line 110](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L110))
+`Cslib.Circuits.Synthesis.union` (theorem, [line 110](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L110))
 
 > Combine two target families, preserving the first while constructing the second.
 
@@ -129,7 +129,7 @@ theorem union (h : Synthesis I s t a) (h' : Synthesis I s t₁ b) :
     Synthesis I s (t ∪ t₁) (a + b)
 ```
 
-`Cslib.Circuits.Synthesis.gate` (theorem, [line 115](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L115))
+`Cslib.Circuits.Synthesis.gate` (theorem, [line 115](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L115))
 
 > Synthesize an operation whose arguments are already available.
 
@@ -139,7 +139,7 @@ theorem gate (op : σ.Op) (args : Fin (σ.Arity op) → (Fin n → U) → U)
     Synthesis I s {fun x => I op (fun i => args i x)} 1
 ```
 
-`Cslib.Circuits.Synthesis.biUnion` (theorem, [line 132](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L132))
+`Cslib.Circuits.Synthesis.biUnion` (theorem, [line 132](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L132))
 
 > Combine a finite family of target sets, retaining all earlier results.
 
@@ -149,7 +149,7 @@ theorem biUnion (indices : Finset ι) (targets : ι → Set ((Fin n → U) → U
     Synthesis I s (⋃ i ∈ indices, targets i) (∑ i ∈ indices, cost i)
 ```
 
-`Cslib.Circuits.Synthesis.iUnion` (theorem, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L143))
+`Cslib.Circuits.Synthesis.iUnion` (theorem, [line 143](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L143))
 
 > Combine target sets indexed by a finite type.
 
@@ -159,7 +159,7 @@ theorem iUnion [Fintype ι] (targets : ι → Set ((Fin n → U) → U)) (cost :
     Synthesis I s (⋃ i, targets i) (∑ i, cost i)
 ```
 
-`Cslib.Circuits.Synthesis.family` (theorem, [line 149](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L149))
+`Cslib.Circuits.Synthesis.family` (theorem, [line 149](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L149))
 
 > Simultaneously synthesize an indexed finite family of functions.
 
@@ -169,7 +169,7 @@ theorem family [Fintype ι] (f : ι → (Fin n → U) → U) (cost : ι → ℕ)
     Synthesis I s (Set.range f) (∑ i, cost i)
 ```
 
-`Cslib.Circuits.Synthesis.gate_of_syntheses` (theorem, [line 155](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L155))
+`Cslib.Circuits.Synthesis.gate_of_syntheses` (theorem, [line 155](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L155))
 
 > Synthesize every argument, then apply an operation with one further gate.
 
@@ -179,7 +179,7 @@ theorem gate_of_syntheses (op : σ.Op) (args : Fin (σ.Arity op) → (Fin n → 
     Synthesis I s {fun x => I op (fun i => args i x)} ((∑ i, cost i) + 1)
 ```
 
-`Cslib.Circuits.Synthesis.nullary` (theorem, [line 161](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L161))
+`Cslib.Circuits.Synthesis.nullary` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L161))
 
 > A nullary operation supplies its interpreted constant with one gate.
 
@@ -188,7 +188,7 @@ theorem nullary (op : σ.Op) (arity : σ.Arity op = 0) :
     Synthesis I s {fun _ => I op (fun i => Fin.elim0 (Fin.cast arity i))} 1
 ```
 
-`Cslib.Circuits.Synthesis.unary` (theorem, [line 167](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L167))
+`Cslib.Circuits.Synthesis.unary` (theorem, [line 167](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L167))
 
 > Feed a synthesized function to every argument of an operation, using one further gate.
 > In particular, this applies a unary operation.
@@ -198,7 +198,7 @@ theorem unary (h : Synthesis I s {f} a) (op : σ.Op) :
     Synthesis I s {fun x => I op (fun _ => f x)} (a + 1)
 ```
 
-`Cslib.Circuits.Synthesis.binary` (theorem, [line 173](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L173))
+`Cslib.Circuits.Synthesis.binary` (theorem, [line 173](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L173))
 
 > Feed `f` to argument zero and `g` to the remaining arguments, using one further gate.
 > For a binary operation, these are its two arguments.
@@ -209,7 +209,7 @@ theorem binary (hf : Synthesis I s {f} a) (hg : Synthesis I s {g} b) (op : σ.Op
       (a + b + 1)
 ```
 
-`Cslib.Circuits.Synthesis.combine` (theorem, [line 181](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L181))
+`Cslib.Circuits.Synthesis.combine` (theorem, [line 181](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L181))
 
 > Apply a synthesis bound to two previously synthesized arguments. The combining
 > construction can use several gates and can reuse either argument.
@@ -220,7 +220,7 @@ theorem combine {result : (Fin n → U) → U} {c : ℕ}
     (h : Synthesis I {f, g} {result} c) : Synthesis I s {result} (a + b + c)
 ```
 
-`Cslib.Circuits.Synthesis.foldr` (theorem, [line 191](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L191))
+`Cslib.Circuits.Synthesis.foldr` (theorem, [line 191](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L191))
 
 > Fold an ordered list of synthesized functions. No algebraic laws are needed for the
 > combining operation. The seed and the combining construction have their own gate budgets.
@@ -236,7 +236,7 @@ theorem foldr (op : U → U → U) (combineCost : ℕ)
       ((indices.map fun i => cost i + combineCost).sum + a)
 ```
 
-`Cslib.Circuits.Synthesis.finset_fold` (theorem, [line 209](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L209))
+`Cslib.Circuits.Synthesis.finset_fold` (theorem, [line 209](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L209))
 
 > Fold a finite set of synthesized functions with a commutative associative operation.
 > The seed need not be an identity or a constant, and the combining construction may use
@@ -253,7 +253,7 @@ theorem finset_fold (op : U → U → U) [Std.Commutative op] [Std.Associative o
       ((∑ i ∈ indices, (cost i + combineCost)) + a)
 ```
 
-`Cslib.Circuits.Synthesis.exists_circuit_outputs` (theorem, [line 228](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L228))
+`Cslib.Circuits.Synthesis.exists_circuit_outputs` (theorem, [line 228](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L228))
 
 > Select a tuple of outputs from a synthesis bound. Selecting outputs, including repeated
 > outputs or none at all, requires no additional gates.
@@ -264,7 +264,7 @@ theorem exists_circuit_outputs {m cost : ℕ} {f : Fin m → (Fin n → U) → U
     ∃ c : Circuit σ n m, c.Computes I (fun x j => f j x) ∧ c.size ≤ cost
 ```
 
-`Cslib.Circuits.Synthesis.exists_circuit` (theorem, [line 236](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean#L236))
+`Cslib.Circuits.Synthesis.exists_circuit` (theorem, [line 236](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean#L236))
 
 > Extract a single-output circuit from a synthesis bound on the input projections.
 
@@ -279,5 +279,5 @@ theorem exists_circuit {cost : ℕ} (h : Synthesis I (inputs n) {f} cost) :
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Synthesis.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Synthesis.lean)
+- [Cslib/Computability/Circuit/Synthesis.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Synthesis.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Circuit.Synthesis.json)

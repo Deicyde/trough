@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.22 Cohomology and base change, III
 
-Section 30.22 of the Stacks Project, [Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 30.22 of the Stacks Project, [Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07VK, a lemma
 
 [Tag 07VK](https://stacks.math.columbia.edu/tag/07VK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean#L644). The attribute's comment: “(1)”. References: SGA 6 0 (3.1), “affine-target flat case”; SGA 6 0 (4.1), “special case”; SGA 6 XIV (2.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean, line 644](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean#L644). The attribute's comment: “(1)”. References: SGA 6 0 (3.1), “affine-target flat case”; SGA 6 0 (4.1), “special case”; SGA 6 XIV (2.2), “special case”.
 
 > **[Stacks, Tag 07VK] (1).** Let `A` be a Noetherian ring, let `f : X ⟶ Spec A` be proper and
 > let `F` be a coherent `𝒪_X`-module flat over `Spec A`. Then `RΓ(X, F)` is a perfect object of
@@ -41,7 +41,7 @@ theorem isPerfect_derivedGlobalSections [IsNoetherianRing A] [IsProper f] [F.IsC
     StacksDraft.Perfect.IsPerfect (derivedGlobalSectionsOverBase f F)
 ```
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean#L99).
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean#L99).
 
 > **[Stacks, Tag 07VK].** Let `A` be a Noetherian ring, let `f : X ⟶ Spec A` be a proper
 > morphism of schemes and let `F` be a coherent `𝒪_X`-module flat over `Spec A`. Then
@@ -85,7 +85,7 @@ theorem isPerfect_and_isIso_baseChange [IsNoetherianRing A] [IsProper f] [F.IsCo
 
 [Tag 07VL](https://stacks.math.columbia.edu/tag/07VL) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean#L323). The attribute's comment: “Remark 30.22.2 in full: one bounded complex M of finite projective A-modules, the identification H^i(X\_\{A'}, F\_\{A'}) = H^i(M ⊗\_A A') for every base change given as a family of isomorphisms indexed by the ring map, the cartesian square and the degree and pinned to the single chain-level model over A, and the functoriality in A' as the cocycle square for a second base change A' ⟶ A''; under exactly the source's conditions — A Noetherian, f proper, F coherent and flat over A — with the finite affine cover bound inside the existential and supplied by properness. The closing citation to Hartshorne that flatness is essential is remark-level and appears as documentation in the module docstring.”.
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean#L323). The attribute's comment: “Remark 30.22.2 in full: one bounded complex M of finite projective A-modules, the identification H^i(X\_\{A'}, F\_\{A'}) = H^i(M ⊗\_A A') for every base change given as a family of isomorphisms indexed by the ring map, the cartesian square and the degree and pinned to the single chain-level model over A, and the functoriality in A' as the cocycle square for a second base change A' ⟶ A''; under exactly the source's conditions — A Noetherian, f proper, F coherent and flat over A — with the finite affine cover bound inside the existential and supplied by properness. The closing citation to Hartshorne that flatness is essential is remark-level and appears as documentation in the module docstring.”.
 
 > **[Stacks, Tag 07VL], Remark 30.22.2, both clauses.** Let `A` be a Noetherian ring,
 > `f : X ⟶ Spec A` a proper morphism of schemes and `F` a coherent `𝒪_X`-module flat over `A`. Then
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.22, Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

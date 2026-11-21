@@ -8,7 +8,7 @@ proof: formalized
 
 # The Norton dome in physical space
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PhysicalSpace`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean): 23 declarations, 23 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PhysicalSpace`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean): 23 declarations, 23 with a docstring.
 
 > The Norton dome chart dynamics as a point mass constrained to the dome surface.
 
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PhysicalSpace`, [PhyslibA
 > The horizontal distance from the apex has derivative `√(1 - s/g²)`; with the slope `√s / g` of
 > the depth this gives unit speed.
 
-**`ClassicalMechanics.NortonDome.horizontal`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L88).
+**`ClassicalMechanics.NortonDome.horizontal`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L88).
 
 > The horizontal distance `x(s) = (2g²/3) (1 - (1 - s/g²)^{3/2})` of the profile of the dome
 > from the apex at arc length `s`.
@@ -66,7 +66,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PhysicalSpace`, [PhyslibA
 noncomputable def horizontal (s : ℝ) : ℝ
 ```
 
-**`ClassicalMechanics.NortonDome.horizontal_eq`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L91).
+**`ClassicalMechanics.NortonDome.horizontal_eq`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L91).
 
 > The horizontal distance of the profile from the apex, written out.
 
@@ -75,7 +75,7 @@ lemma horizontal_eq (s : ℝ) :
     S.horizontal s = 2 * S.g ^ 2 / 3 * (1 - √(1 - s / S.g ^ 2) ^ 3)
 ```
 
-**`ClassicalMechanics.NortonDome.horizontal_zero`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L95).
+**`ClassicalMechanics.NortonDome.horizontal_zero`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L95).
 
 > The profile of the dome starts at the apex.
 
@@ -83,7 +83,7 @@ lemma horizontal_eq (s : ℝ) :
 lemma horizontal_zero : S.horizontal 0 = 0
 ```
 
-**`ClassicalMechanics.NortonDome.hasDerivAt_horizontal`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L100).
+**`ClassicalMechanics.NortonDome.hasDerivAt_horizontal`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L100).
 
 > The derivative of the horizontal distance with respect to the arc length is `√(1 - s/g²)`,
 > at every `s`.
@@ -92,7 +92,7 @@ lemma horizontal_zero : S.horizontal 0 = 0
 lemma hasDerivAt_horizontal (s : ℝ) : HasDerivAt S.horizontal (√(1 - s / S.g ^ 2)) s
 ```
 
-**`ClassicalMechanics.NortonDome.horizontal_differentiable`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L110).
+**`ClassicalMechanics.NortonDome.horizontal_differentiable`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L110).
 
 > The horizontal distance of the profile from the apex is a differentiable function of the
 > arc length.
@@ -101,7 +101,7 @@ lemma hasDerivAt_horizontal (s : ℝ) : HasDerivAt S.horizontal (√(1 - s / S.g
 lemma horizontal_differentiable : Differentiable ℝ S.horizontal
 ```
 
-**`ClassicalMechanics.NortonDome.unit_speed`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L116).
+**`ClassicalMechanics.NortonDome.unit_speed`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L116).
 
 > Unit speed: for arc length `0 ≤ s ≤ g²` the derivatives of the horizontal distance and
 > of the depth satisfy `x'(s)² + h'(s)² = 1`, so that `s` is indeed the arc length along the
@@ -114,7 +114,7 @@ lemma unit_speed {s : ℝ} (h0 : 0 ≤ s) (h1 : s ≤ S.g ^ 2) :
 
 ### A.2. The profile curve and the dome
 
-**`ClassicalMechanics.NortonDome.profile`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L132).
+**`ClassicalMechanics.NortonDome.profile`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L132).
 
 > The profile of the dome in the vertical plane through the apex: the point at arc length
 > `s` is at horizontal distance `x(s)` from the apex and at height `-h(s)`.
@@ -123,7 +123,7 @@ lemma unit_speed {s : ℝ} (h0 : 0 ≤ s) (h1 : s ≤ S.g ^ 2) :
 noncomputable def profile (s : ℝ) : Space 2
 ```
 
-**`ClassicalMechanics.NortonDome.profile_apply_zero`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L135).
+**`ClassicalMechanics.NortonDome.profile_apply_zero`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L135).
 
 > The horizontal coordinate of the profile of the dome.
 
@@ -131,7 +131,7 @@ noncomputable def profile (s : ℝ) : Space 2
 lemma profile_apply_zero (s : ℝ) : S.profile s 0 = S.horizontal s
 ```
 
-**`ClassicalMechanics.NortonDome.profile_apply_one`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L139).
+**`ClassicalMechanics.NortonDome.profile_apply_one`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L139).
 
 > The vertical coordinate of the profile of the dome is minus its depth below the apex.
 
@@ -139,7 +139,7 @@ lemma profile_apply_zero (s : ℝ) : S.profile s 0 = S.horizontal s
 lemma profile_apply_one (s : ℝ) : S.profile s 1 = -S.height s
 ```
 
-**`ClassicalMechanics.NortonDome.profile_zero`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L143).
+**`ClassicalMechanics.NortonDome.profile_zero`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L143).
 
 > The apex of the dome is the origin.
 
@@ -147,7 +147,7 @@ lemma profile_apply_one (s : ℝ) : S.profile s 1 = -S.height s
 lemma profile_zero : S.profile 0 = 0
 ```
 
-**`ClassicalMechanics.NortonDome.dome`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L149).
+**`ClassicalMechanics.NortonDome.dome`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L149).
 
 > The dome, in the vertical plane through its apex: the image of the profile on the range
 > `0 ≤ s ≤ g²` of arc lengths on which the profile exists.
@@ -156,7 +156,7 @@ lemma profile_zero : S.profile 0 = 0
 noncomputable def dome : Set (Space 2)
 ```
 
-**`ClassicalMechanics.NortonDome.profile_mem_dome`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L152).
+**`ClassicalMechanics.NortonDome.profile_mem_dome`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L152).
 
 > The point of the profile at arc length `0 ≤ s ≤ g²` lies on the dome.
 
@@ -169,7 +169,7 @@ lemma profile_mem_dome {s : ℝ} (h0 : 0 ≤ s) (h1 : s ≤ S.g ^ 2) : S.profile
 > Along a chart trajectory `r` the particle is at the point of the profile at arc length
 > `r t 0`, on the dome while that is in range.
 
-**`ClassicalMechanics.NortonDome.spaceTrajectory`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L166).
+**`ClassicalMechanics.NortonDome.spaceTrajectory`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L166).
 
 > The position of the particle in the plane along the chart trajectory `r` of the arc
 > length.
@@ -178,7 +178,7 @@ lemma profile_mem_dome {s : ℝ} (h0 : 0 ≤ s) (h1 : s ≤ S.g ^ 2) : S.profile
 noncomputable def spaceTrajectory (r : Time → EuclideanSpace ℝ (Fin 1)) : Time → Space 2
 ```
 
-**`ClassicalMechanics.NortonDome.spaceTrajectory_apply_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L170).
+**`ClassicalMechanics.NortonDome.spaceTrajectory_apply_zero`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L170).
 
 > The horizontal position of the particle along a chart trajectory.
 
@@ -187,7 +187,7 @@ lemma spaceTrajectory_apply_zero (r : Time → EuclideanSpace ℝ (Fin 1)) (t : 
     S.spaceTrajectory r t 0 = S.horizontal (r t 0)
 ```
 
-**`ClassicalMechanics.NortonDome.spaceTrajectory_apply_one`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L176).
+**`ClassicalMechanics.NortonDome.spaceTrajectory_apply_one`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L176).
 
 > The height of the particle along a chart trajectory is minus the depth of the dome at its
 > arc length.
@@ -197,7 +197,7 @@ lemma spaceTrajectory_apply_one (r : Time → EuclideanSpace ℝ (Fin 1)) (t : T
     S.spaceTrajectory r t 1 = -S.height (r t 0)
 ```
 
-**`ClassicalMechanics.NortonDome.spaceTrajectory_mem_dome`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L181).
+**`ClassicalMechanics.NortonDome.spaceTrajectory_mem_dome`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L181).
 
 > While its arc length is in the range `0 ≤ r ≤ g²` the particle is on the dome.
 
@@ -211,7 +211,7 @@ lemma spaceTrajectory_mem_dome (r : Time → EuclideanSpace ℝ (Fin 1)) {t : Ti
 > The velocity in the plane is the unit tangent `(x'(r), -h'(r))` times `ṙ`, so by unit speed the
 > square of the speed is `ṙ²` while the arc length is in range.
 
-**`ClassicalMechanics.NortonDome.differentiable_spaceTrajectory`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L197).
+**`ClassicalMechanics.NortonDome.differentiable_spaceTrajectory`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L197).
 
 > Along a differentiable chart trajectory the position of the particle is differentiable in
 > time.
@@ -221,7 +221,7 @@ lemma differentiable_spaceTrajectory (r : Time → EuclideanSpace ℝ (Fin 1))
     (hr : Differentiable ℝ r) : Differentiable ℝ (S.spaceTrajectory r)
 ```
 
-**`ClassicalMechanics.NortonDome.deriv_spaceTrajectory`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L208).
+**`ClassicalMechanics.NortonDome.deriv_spaceTrajectory`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L208).
 
 > The velocity of the particle in the plane along a differentiable chart trajectory `r` is
 > `(√(1 - r/g²), -√r / g)` times the rate of change `ṙ` of the arc length: the unit tangent
@@ -234,7 +234,7 @@ lemma deriv_spaceTrajectory (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Diff
       !₂[√(1 - r t 0 / S.g ^ 2) * (∂ₜ r t) 0, -(√(r t 0) / S.g) * (∂ₜ r t) 0]
 ```
 
-**`ClassicalMechanics.NortonDome.norm_sq_deriv_spaceTrajectory`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L222).
+**`ClassicalMechanics.NortonDome.norm_sq_deriv_spaceTrajectory`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L222).
 
 > While the arc length is in range, the square of the speed of the particle along a
 > differentiable chart trajectory is `ṙ²`.
@@ -251,7 +251,7 @@ lemma norm_sq_deriv_spaceTrajectory (r : Time → EuclideanSpace ℝ (Fin 1))
 > and the chart potential energy is `m g y` at its height `y` at all times; the chart Lagrangian
 > is the constrained Lagrangian `T - V`.
 
-**`ClassicalMechanics.NortonDome.kineticEnergy_eq_space`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L241).
+**`ClassicalMechanics.NortonDome.kineticEnergy_eq_space`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L241).
 
 > The chart kinetic energy of the dome along a differentiable chart trajectory is the kinetic
 > energy of the particle in physical space, while the arc length is in range.
@@ -262,7 +262,7 @@ lemma kineticEnergy_eq_space (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Dif
     S.kineticEnergy r t = (1 / (2 : ℝ)) * S.m * ‖∂ₜᵥ (S.spaceTrajectory r) t‖ ^ 2
 ```
 
-**`ClassicalMechanics.NortonDome.potentialEnergy_eq_height`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L250).
+**`ClassicalMechanics.NortonDome.potentialEnergy_eq_height`**, a lemma, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L250).
 
 > The chart potential energy of the dome is the gravitational potential `m g y` of the
 > particle at its height `y` in physical space.
@@ -272,7 +272,7 @@ lemma potentialEnergy_eq_height (r : Time → EuclideanSpace ℝ (Fin 1)) (t : T
     S.potentialEnergy (r t) = S.m * S.g * S.spaceTrajectory r t 1
 ```
 
-**`ClassicalMechanics.NortonDome.lagrangian_eq_space`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L257).
+**`ClassicalMechanics.NortonDome.lagrangian_eq_space`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L257).
 
 > The chart Lagrangian of the dome along a differentiable chart trajectory is the constrained
 > Lagrangian of the particle in physical space, while the arc length is in range.
@@ -285,7 +285,7 @@ lemma lagrangian_eq_space (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Differ
         - S.m * S.g * S.spaceTrajectory r t 1
 ```
 
-**`ClassicalMechanics.NortonDome.energy_eq_space`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L267).
+**`ClassicalMechanics.NortonDome.energy_eq_space`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean#L267).
 
 > The chart energy of the dome along a differentiable chart trajectory is the total energy of
 > the particle in physical space, while the arc length is in range.
@@ -304,4 +304,4 @@ lemma energy_eq_space (r : Time → EuclideanSpace ℝ (Fin 1)) (hr : Differenti
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PhysicalSpace.lean)

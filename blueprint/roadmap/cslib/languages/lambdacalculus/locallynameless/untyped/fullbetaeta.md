@@ -7,13 +7,13 @@ proof: formalized
 
 # βη-Confluence for the λ-calculus (FullBetaEta)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEta`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean), by Maximiliano Onofre Martínez, Yijun Leng.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEta`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean), by Maximiliano Onofre Martínez, Yijun Leng.
 
 > ## Reference
 >
 > * [T. Nipkow, *More Church-Rosser Proofs (in Isabelle/HOL)*][Nipkow2001]
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta` (abbreviation, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L36))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta` (abbreviation, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L36))
 
 > Full βη-reduction.
 
@@ -21,13 +21,13 @@ proof: formalized
 abbrev FullBetaEta : Term Var → Term Var → Prop
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta.redex_app_l_cong` (theorem, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L40))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta.redex_app_l_cong` (theorem, [line 40](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L40))
 
 ```lean
 theorem redex_app_l_cong (redex : M ↠βηᶠ M') (lc_N : LC N) : app M N ↠βηᶠ app M' N
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta.redex_app_r_cong` (theorem, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L49))
+`Cslib.LambdaCalculus.LocallyNameless.Untyped.Term.FullBetaEta.redex_app_r_cong` (theorem, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean#L49))
 
 ```lean
 theorem redex_app_r_cong (redex : M ↠βηᶠ M') (lc_N : LC N) : app N M ↠βηᶠ app N M'
@@ -44,5 +44,5 @@ theorem redex_app_r_cong (redex : M ↠βηᶠ M') (lc_N : LC N) : app N M ↠β
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/FullBetaEta.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.FullBetaEta.json)

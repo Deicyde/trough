@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrals against `L¹` peak functions concentrating at a point
 
-The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Integral.PeakFunction`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Integral.PeakFunction`, [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean): 3 declarations, 3 with a docstring.
 
 > Let `f i` be a net of `L¹` classes of unit integral, `∫ f i = 1`, with uniformly bounded `L¹` norms,
 > which concentrate at a point `x₀`: for every neighbourhood `U` of `x₀`, eventually each `f i`
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.MeasureTheory.Integral.PeakFunction
 
 ## A. Development
 
-**`TauCeti.norm_integral_smul_sub_le`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L82).
+**`TauCeti.norm_integral_smul_sub_le`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L82).
 
 > **The approximate-identity estimate.** If an `L¹` class `f` has unit integral and vanishes
 > almost everywhere outside `U`, and `φ` stays within `ε` of `y` on `U`, then the integral of `φ`
@@ -75,7 +75,7 @@ lemma norm_integral_smul_sub_le {f : α →₁[μ] 𝕜} (hf : ∫ x, f x ∂μ 
     ‖(∫ x, f x • φ x ∂μ) - y‖ ≤ ε * ‖f‖
 ```
 
-**`TauCeti.tendsto_integral_smul_of_tendsto`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L112).
+**`TauCeti.tendsto_integral_smul_of_tendsto`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L112).
 
 > **`L¹` peak functions integrate a function to its limit at the peak.** Let `f i` be `L¹`
 > classes which eventually have unit integral and `L¹` norm at most `C`, and which concentrate at
@@ -92,7 +92,7 @@ lemma tendsto_integral_smul_of_tendsto {ι : Type*} {l : Filter ι} {f : ι → 
     Tendsto (fun i ↦ ∫ x, f i x • φ x ∂μ) l (𝓝 a)
 ```
 
-**`TauCeti.exists_integral_eq_one_norm_eq_one`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L137).
+**`TauCeti.exists_integral_eq_one_norm_eq_one`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean#L137).
 
 > **`L¹` peak functions exist.** For a measure positive on nonempty open sets and finite on some
 > neighbourhood of each point, every neighbourhood `U` of a point carries an `L¹` class of unit
@@ -111,4 +111,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/MeasureTheory/Integral/PeakFunction.lean)

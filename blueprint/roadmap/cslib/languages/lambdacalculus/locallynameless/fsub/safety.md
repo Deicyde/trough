@@ -7,7 +7,7 @@ proof: formalized
 
 # λ-calculus (Fsub/Safety)
 
-`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean), by Chris Henson.
+`Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean), by Chris Henson.
 
 > The λ-calculus with polymorphism and subtyping, with a locally nameless representation of syntax.
 > This file proves type safety.
@@ -18,7 +18,7 @@ proof: formalized
 > * See also <https://www.cis.upenn.edu/~plclub/popl08-tutorial/code/>, from which
 >   this is adapted
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.preservation` (lemma, [line 37](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean#L37))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.preservation` (lemma, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean#L37))
 
 > Any reduction step preserves typing.
 
@@ -26,7 +26,7 @@ proof: formalized
 lemma Typing.preservation (der : Typing Γ t τ) (step : t ⭢βᵛ t') : Typing Γ t' τ
 ```
 
-`Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.progress` (lemma, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean#L76))
+`Cslib.LambdaCalculus.LocallyNameless.Fsub.Typing.progress` (lemma, [line 76](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean#L76))
 
 > Any typable term either has a reduction step or is a value.
 
@@ -40,5 +40,5 @@ lemma Typing.progress (der : Typing [] t τ) : t.Value ∨ ∃ t', t ⭢βᵛ t'
 
 ## Sources
 
-- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean)
+- [Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/LambdaCalculus/LocallyNameless/Fsub/Safety.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Languages.LambdaCalculus.LocallyNameless.Fsub.Safety.json)

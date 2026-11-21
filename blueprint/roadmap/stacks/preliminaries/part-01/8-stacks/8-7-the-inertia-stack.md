@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.7 The inertia stack
 
-Section 8.7 of the Stacks Project, [Tag 036X](https://stacks.math.columbia.edu/tag/036X). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.7 of the Stacks Project, [Tag 036X](https://stacks.math.columbia.edu/tag/036X). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 036Y, a lemma
 
 [Tag 036Y](https://stacks.math.columbia.edu/tag/036Y) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia.isStack_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L175). The attribute's comment: “(1)”.
+**`CategoryTheory.RelativeInertia.isStack_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L175). The attribute's comment: “(1)”.
 
 > Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` and `p' : 𝒳' ⥤ 𝒞` be stacks and let `F : 𝒳 ⥤ 𝒳'` be
 > a 1-morphism of stacks. Then the relative inertia `I_{𝒳/𝒳'}` (structure functor `π ⋙ p`) and the
@@ -26,7 +26,7 @@ theorem isStack_of_isStack (hp : p.IsStack J) (hp' : p'.IsStack J)
     (RelativeInertia.π F ⋙ p).IsStack J ∧ (RelativeInertia.toBase p).IsStack J
 ```
 
-**`CategoryTheory.RelativeInertia.isStack_and_fiber_isGroupoid_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L185). The attribute's comment: “(2), a stack in groupoids written out as a stack with groupoid fibres”.
+**`CategoryTheory.RelativeInertia.isStack_and_fiber_isGroupoid_of_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L185). The attribute's comment: “(2), a stack in groupoids written out as a stack with groupoid fibres”.
 
 > Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` and `p' : 𝒳' ⥤ 𝒞` be stacks in groupoids and let
 > `F : 𝒳 ⥤ 𝒳'` be a 1-morphism of stacks. Then the relative inertia `I_{𝒳/𝒳'}` and the inertia
@@ -43,7 +43,7 @@ theorem isStack_and_fiber_isGroupoid_of_isStack (hp : p.IsStack J)
         ∀ U, IsGroupoid ((RelativeInertia.toBase p).Fiber U))
 ```
 
-**`CategoryTheory.RelativeInertia.isStackInSetoids_of_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L199). The attribute's comment: “(3)”.
+**`CategoryTheory.RelativeInertia.isStackInSetoids_of_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean, line 199](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/RelativeInertiaIsStack.lean#L199). The attribute's comment: “(3)”.
 
 > Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` and `p' : 𝒳' ⥤ 𝒞` be stacks in setoids and let
 > `F : 𝒳 ⥤ 𝒳'` be a 1-morphism of stacks. Then the relative inertia `I_{𝒳/𝒳'}` and the inertia
@@ -60,7 +60,7 @@ theorem isStackInSetoids_of_isStackInSetoids (hp : p.IsStackInSetoids J)
 
 [Tag 04ZM](https://stacks.math.columbia.edu/tag/04ZM) in the Stacks Project.
 
-**`CategoryTheory.RelativeInertia.π_isEquivalence_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L190).
+**`CategoryTheory.RelativeInertia.π_isEquivalence_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L190).
 
 > Let `(𝒞, J)` be a site and let `𝒮` be a stack in groupoids over `𝒞`, written out as a stack
 > with groupoid fibres. The forgetful 1-morphism `π : I_𝒮 ⥤ 𝒮` of the absolute inertia is an
@@ -71,7 +71,7 @@ theorem π_isEquivalence_iff (hp : p.IsStack J) (hg : ∀ U, IsGroupoid (p.Fiber
     (RelativeInertia.π p).IsEquivalence ↔ p.IsStackInSetoids J
 ```
 
-**`CategoryTheory.RelativeInertia.π_comp_neutralSection_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L205).
+**`CategoryTheory.RelativeInertia.π_comp_neutralSection_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedCategory/Inertia.lean#L205).
 
 > For a stack in setoids the neutral section `x ↦ (x, 𝟙)` is a strict two-sided inverse of `π`,
 > so `π` is an isomorphism of categories over `𝒞` and in particular an equivalence in the 2-category
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.7, Tag 036X](https://stacks.math.columbia.edu/tag/036X)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

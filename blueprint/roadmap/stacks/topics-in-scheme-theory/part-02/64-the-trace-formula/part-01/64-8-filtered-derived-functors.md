@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.8 Filtered derived functors
 
-Section 64.8 of the Stacks Project, [Tag 03TC](https://stacks.math.columbia.edu/tag/03TC). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 64.8 of the Stacks Project, [Tag 03TC](https://stacks.math.columbia.edu/tag/03TC). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03TD, a definition
 
 [Tag 03TD](https://stacks.math.columbia.edu/tag/03TD) in the Stacks Project.
 
-**`CategoryTheory.FilteredDerived.filteredProjectiveMinusMapToDerivedMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L133). The attribute's comment: “filtered\_left\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredProjectiveMinusMapToDerivedMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L133). The attribute's comment: “filtered\_left\_derived\_functor”.
 
 > The lower route in the defining diagram: apply `G` termwise to a bounded-above
 > complex of filtered projective objects, then pass to the bounded-above filtered
@@ -27,7 +27,7 @@ noncomputable def filteredProjectiveMinusMapToDerivedMinus
       (CochainComplex.FilteredDerivedCategory.minus B).FullSubcategory
 ```
 
-**`CategoryTheory.FilteredDerived.filteredLeftDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L162). The attribute's comment: “filtered\_left\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredLeftDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L162). The attribute's comment: “filtered\_left\_derived\_functor”.
 
 > The filtered left derived functor on bounded-above filtered derived categories.
 
@@ -38,7 +38,7 @@ noncomputable def filteredLeftDerivedFunctor
       (CochainComplex.FilteredDerivedCategory.minus B).FullSubcategory
 ```
 
-**`CategoryTheory.FilteredDerived.filteredLeftDerivedFunctorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L173). The attribute's comment: “filtered\_left\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredLeftDerivedFunctorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/LeftDerivedFunctor.lean#L173). The attribute's comment: “filtered\_left\_derived\_functor”.
 
 > The natural isomorphism making the projective-resolution diagram commute.
 
@@ -49,7 +49,7 @@ noncomputable def filteredLeftDerivedFunctorComparison
       filteredProjectiveMinusMapToDerivedMinus G
 ```
 
-**`CategoryTheory.FilteredDerived.filteredInjectivePlusMapToDerivedPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L58). The attribute's comment: “filtered\_right\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredInjectivePlusMapToDerivedPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 58](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L58). The attribute's comment: “filtered\_right\_derived\_functor”.
 
 > The lower route in the defining diagram of the filtered right derived functor: apply `T`
 > termwise to a bounded-below complex of filtered injective objects, then pass to the
@@ -61,7 +61,7 @@ noncomputable def filteredInjectivePlusMapToDerivedPlus (T : A ⥤ B) [T.Additiv
       (CochainComplex.FilteredDerivedCategory.plus B).FullSubcategory
 ```
 
-**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L80). The attribute's comment: “filtered\_right\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L80). The attribute's comment: “filtered\_right\_derived\_functor”.
 
 > The filtered right derived functor `RT : DF⁺(A) ⥤ DF⁺(B)` of an additive functor
 > `T : A ⥤ B`, defined when `A` has enough injectives.
@@ -72,7 +72,7 @@ noncomputable def filteredRightDerivedFunctor (T : A ⥤ B) [T.Additive] [Enough
       (CochainComplex.FilteredDerivedCategory.plus B).FullSubcategory
 ```
 
-**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L89). The attribute's comment: “filtered\_right\_derived\_functor”.
+**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/RightDerivedFunctor.lean#L89). The attribute's comment: “filtered\_right\_derived\_functor”.
 
 > The natural isomorphism making the injective-resolution diagram for the filtered right
 > derived functor commute.
@@ -88,7 +88,7 @@ noncomputable def filteredRightDerivedFunctorComparison (T : A ⥤ B) [T.Additiv
 
 [Tag 03TE](https://stacks.math.columbia.edu/tag/03TE) in the Stacks Project.
 
-**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorGrPIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean#L323).
+**`CategoryTheory.FilteredDerived.filteredRightDerivedFunctorGrPIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FilteredDerived/Category/GradedRightDerivedFunctor.lean#L323).
 
 > Taking the `p`-th graded piece commutes with the filtered right derived functor: for an
 > additive functor `T : A ⥤ B` out of an abelian category with enough injectives, there is a
@@ -130,4 +130,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.8, Tag 03TC](https://stacks.math.columbia.edu/tag/03TC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

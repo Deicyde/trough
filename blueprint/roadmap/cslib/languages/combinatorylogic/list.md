@@ -7,14 +7,14 @@ proof: formalized
 
 # Church-Encoded Lists in SKI Combinatory Logic
 
-`Cslib.Languages.CombinatoryLogic.List`, in [Cslib/Languages/CombinatoryLogic/List.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean), by Jesse Alama.
+`Cslib.Languages.CombinatoryLogic.List`, in [Cslib/Languages/CombinatoryLogic/List.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean), by Jesse Alama.
 
 > Church-encoded lists for proving SKI ≃ TM equivalence. A list is encoded as
 > `λ c n. c a₀ (c a₁ (... (c aₖ n)...))` where each `aᵢ` is a Church numeral.
 
 > ### Church List Representation
 
-`Cslib.SKI.IsChurchList` (definition, [line 29](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L29))
+`Cslib.SKI.IsChurchList` (definition, [line 29](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L29))
 
 > A term correctly Church-encodes a list of natural numbers.
 
@@ -22,7 +22,7 @@ proof: formalized
 def IsChurchList : List ℕ → SKI → Prop
 ```
 
-`Cslib.SKI.isChurchList_trans` (theorem, [line 36](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L36))
+`Cslib.SKI.isChurchList_trans` (theorem, [line 36](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L36))
 
 > `IsChurchList` is preserved under multi-step reduction of the term.
 
@@ -31,7 +31,7 @@ theorem isChurchList_trans {ns : List ℕ} {cns cns' : SKI} (h : cns ↠ cns')
     (hcns' : IsChurchList ns cns') : IsChurchList ns cns
 ```
 
-`Cslib.SKI.IsChurchListPair` (structure, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L48))
+`Cslib.SKI.IsChurchListPair` (structure, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L48))
 
 > Both components of a pair are Church lists.
 
@@ -41,7 +41,7 @@ structure IsChurchListPair (prev curr : List ℕ) (p : SKI) : Prop where
   snd : IsChurchList curr (Snd ⬝ p)
 ```
 
-`Cslib.SKI.isChurchListPair_trans` (theorem, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L54))
+`Cslib.SKI.isChurchListPair_trans` (theorem, [line 54](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L54))
 
 > IsChurchListPair is preserved under reduction.
 
@@ -52,7 +52,7 @@ theorem isChurchListPair_trans {prev curr : List ℕ} {p p' : SKI} (hp : p ↠ p
 
 > ### Nil: The empty list
 
-`Cslib.SKI.List.NilPoly` (definition, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L67))
+`Cslib.SKI.List.NilPoly` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L67))
 
 > nil = λ c n. n
 
@@ -60,7 +60,7 @@ theorem isChurchListPair_trans {prev curr : List ℕ} {p p' : SKI} (hp : p ↠ p
 def NilPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.List.Nil` (definition, [line 70](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L70))
+`Cslib.SKI.List.Nil` (definition, [line 70](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L70))
 
 > The SKI term for the empty list.
 
@@ -68,7 +68,7 @@ def NilPoly : SKI.Polynomial 2
 def Nil : SKI
 ```
 
-`Cslib.SKI.List.nil_def` (theorem, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L73))
+`Cslib.SKI.List.nil_def` (theorem, [line 73](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L73))
 
 > Reduction: `Nil ⬝ c ⬝ n ↠ n`.
 
@@ -76,7 +76,7 @@ def Nil : SKI
 theorem nil_def (c n : SKI) : (Nil ⬝ c ⬝ n) ↠ n
 ```
 
-`Cslib.SKI.List.nil_correct` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L77))
+`Cslib.SKI.List.nil_correct` (theorem, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L77))
 
 > The empty list term correctly represents `[]`.
 
@@ -86,7 +86,7 @@ theorem nil_correct : IsChurchList [] Nil
 
 > ### Cons: Consing an element onto a list
 
-`Cslib.SKI.List.ConsPoly` (definition, [line 82](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L82))
+`Cslib.SKI.List.ConsPoly` (definition, [line 82](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L82))
 
 > cons = λ x xs c n. c x (xs c n)
 
@@ -94,7 +94,7 @@ theorem nil_correct : IsChurchList [] Nil
 def ConsPoly : SKI.Polynomial 4
 ```
 
-`Cslib.SKI.List.Cons` (definition, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L85))
+`Cslib.SKI.List.Cons` (definition, [line 85](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L85))
 
 > The SKI term for list cons.
 
@@ -102,7 +102,7 @@ def ConsPoly : SKI.Polynomial 4
 def Cons : SKI
 ```
 
-`Cslib.SKI.List.cons_def` (theorem, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L88))
+`Cslib.SKI.List.cons_def` (theorem, [line 88](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L88))
 
 > Reduction: `Cons ⬝ x ⬝ xs ⬝ c ⬝ n ↠ c ⬝ x ⬝ (xs ⬝ c ⬝ n)`.
 
@@ -111,7 +111,7 @@ theorem cons_def (x xs c n : SKI) :
     (Cons ⬝ x ⬝ xs ⬝ c ⬝ n) ↠ c ⬝ x ⬝ (xs ⬝ c ⬝ n)
 ```
 
-`Cslib.SKI.List.cons_correct` (theorem, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L93))
+`Cslib.SKI.List.cons_correct` (theorem, [line 93](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L93))
 
 > Cons preserves Church list representation.
 
@@ -121,7 +121,7 @@ theorem cons_correct {x : ℕ} {xs : List ℕ} {cx cxs : SKI}
     IsChurchList (x :: xs) (Cons ⬝ cx ⬝ cxs)
 ```
 
-`Cslib.SKI.List.singleton_correct` (theorem, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L101))
+`Cslib.SKI.List.singleton_correct` (theorem, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L101))
 
 > Singleton list correctness.
 
@@ -130,7 +130,7 @@ theorem singleton_correct {x : ℕ} {cx : SKI} (hcx : IsChurch x cx) :
     IsChurchList [x] (Cons ⬝ cx ⬝ Nil)
 ```
 
-`Cslib.SKI.List.toChurch` (definition, [line 106](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L106))
+`Cslib.SKI.List.toChurch` (definition, [line 106](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L106))
 
 > The canonical SKI term for a Church-encoded list.
 
@@ -138,7 +138,7 @@ theorem singleton_correct {x : ℕ} {cx : SKI} (hcx : IsChurch x cx) :
 def toChurch : List ℕ → SKI
 ```
 
-`Cslib.SKI.List.toChurch_nil` (lemma, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L112))
+`Cslib.SKI.List.toChurch_nil` (lemma, [line 112](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L112))
 
 > `toChurch [] = Nil`.
 
@@ -146,7 +146,7 @@ def toChurch : List ℕ → SKI
 lemma toChurch_nil : toChurch [] = Nil
 ```
 
-`Cslib.SKI.List.toChurch_cons` (lemma, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L116))
+`Cslib.SKI.List.toChurch_cons` (lemma, [line 116](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L116))
 
 > `toChurch (x :: xs) = Cons ⬝ SKI.toChurch x ⬝ toChurch xs`.
 
@@ -155,7 +155,7 @@ lemma toChurch_cons (x : ℕ) (xs : List ℕ) :
     toChurch (x :: xs) = Cons ⬝ (SKI.toChurch x) ⬝ (toChurch xs)
 ```
 
-`Cslib.SKI.List.toChurch_correct` (theorem, [line 120](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L120))
+`Cslib.SKI.List.toChurch_correct` (theorem, [line 120](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L120))
 
 > `toChurch ns` correctly represents `ns`.
 
@@ -165,7 +165,7 @@ theorem toChurch_correct (ns : List ℕ) : IsChurchList ns (toChurch ns)
 
 > ### Head: Extract the head of a list
 
-`Cslib.SKI.List.HeadDPoly` (definition, [line 128](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L128))
+`Cslib.SKI.List.HeadDPoly` (definition, [line 128](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L128))
 
 > headD d xs = xs K d (returns d for empty list)
 
@@ -173,7 +173,7 @@ theorem toChurch_correct (ns : List ℕ) : IsChurchList ns (toChurch ns)
 def HeadDPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.List.HeadD` (definition, [line 131](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L131))
+`Cslib.SKI.List.HeadD` (definition, [line 131](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L131))
 
 > The SKI term for list head with default.
 
@@ -181,7 +181,7 @@ def HeadDPoly : SKI.Polynomial 2
 def HeadD : SKI
 ```
 
-`Cslib.SKI.List.headD_def` (theorem, [line 134](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L134))
+`Cslib.SKI.List.headD_def` (theorem, [line 134](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L134))
 
 > Reduction: `HeadD ⬝ d ⬝ xs ↠ xs ⬝ K ⬝ d`.
 
@@ -189,7 +189,7 @@ def HeadD : SKI
 theorem headD_def (d xs : SKI) : (HeadD ⬝ d ⬝ xs) ↠ xs ⬝ K ⬝ d
 ```
 
-`Cslib.SKI.List.headD_correct` (theorem, [line 138](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L138))
+`Cslib.SKI.List.headD_correct` (theorem, [line 138](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L138))
 
 > General head-with-default correctness.
 
@@ -199,7 +199,7 @@ theorem headD_correct {d : ℕ} {cd : SKI} (hcd : IsChurch d cd)
     IsChurch (ns.headD d) (HeadD ⬝ cd ⬝ cns)
 ```
 
-`Cslib.SKI.List.Head` (definition, [line 154](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L154))
+`Cslib.SKI.List.Head` (definition, [line 154](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L154))
 
 > The SKI term for list head (default 0).
 
@@ -207,7 +207,7 @@ theorem headD_correct {d : ℕ} {cd : SKI} (hcd : IsChurch d cd)
 def Head : SKI
 ```
 
-`Cslib.SKI.List.head_def` (theorem, [line 157](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L157))
+`Cslib.SKI.List.head_def` (theorem, [line 157](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L157))
 
 > Reduction: `Head ⬝ xs ↠ xs ⬝ K ⬝ Zero`.
 
@@ -215,7 +215,7 @@ def Head : SKI
 theorem head_def (xs : SKI) : (Head ⬝ xs) ↠ xs ⬝ K ⬝ SKI.Zero
 ```
 
-`Cslib.SKI.List.head_correct` (theorem, [line 161](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L161))
+`Cslib.SKI.List.head_correct` (theorem, [line 161](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L161))
 
 > Head correctness (default 0).
 
@@ -226,7 +226,7 @@ theorem head_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns) :
 
 > ### Tail: Extract the tail of a list
 
-`Cslib.SKI.List.TailStepPoly` (definition, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L168))
+`Cslib.SKI.List.TailStepPoly` (definition, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L168))
 
 > Step function for tail: (prev, curr) → (curr, cons h curr)
 
@@ -234,7 +234,7 @@ theorem head_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns) :
 def TailStepPoly : SKI.Polynomial 2
 ```
 
-`Cslib.SKI.List.TailStep` (definition, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L172))
+`Cslib.SKI.List.TailStep` (definition, [line 172](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L172))
 
 > The step function for computing list tail.
 
@@ -242,7 +242,7 @@ def TailStepPoly : SKI.Polynomial 2
 def TailStep : SKI
 ```
 
-`Cslib.SKI.List.tailStep_def` (theorem, [line 175](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L175))
+`Cslib.SKI.List.tailStep_def` (theorem, [line 175](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L175))
 
 > Reduction of the tail step function.
 
@@ -251,7 +251,7 @@ theorem tailStep_def (h p : SKI) :
     (TailStep ⬝ h ⬝ p) ↠ MkPair ⬝ (Snd ⬝ p) ⬝ (Cons ⬝ h ⬝ (Snd ⬝ p))
 ```
 
-`Cslib.SKI.List.TailPoly` (definition, [line 180](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L180))
+`Cslib.SKI.List.TailPoly` (definition, [line 180](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L180))
 
 > tail xs = Fst (xs TailStep (MkPair Nil Nil))
 
@@ -259,7 +259,7 @@ theorem tailStep_def (h p : SKI) :
 def TailPoly : SKI.Polynomial 1
 ```
 
-`Cslib.SKI.List.Tail` (definition, [line 184](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L184))
+`Cslib.SKI.List.Tail` (definition, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L184))
 
 > The tail of a Church-encoded list.
 
@@ -267,7 +267,7 @@ def TailPoly : SKI.Polynomial 1
 def Tail : SKI
 ```
 
-`Cslib.SKI.List.tail_def` (theorem, [line 187](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L187))
+`Cslib.SKI.List.tail_def` (theorem, [line 187](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L187))
 
 > Reduction: `Tail ⬝ xs ↠ Fst ⬝ (xs ⬝ TailStep ⬝ (MkPair ⬝ Nil ⬝ Nil))`.
 
@@ -276,7 +276,7 @@ theorem tail_def (xs : SKI) :
     (Tail ⬝ xs) ↠ Fst ⬝ (xs ⬝ TailStep ⬝ (MkPair ⬝ Nil ⬝ Nil))
 ```
 
-`Cslib.SKI.List.tail_init` (theorem, [line 193](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L193))
+`Cslib.SKI.List.tail_init` (theorem, [line 193](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L193))
 
 > The initial pair (nil, nil) satisfies the invariant.
 
@@ -284,7 +284,7 @@ theorem tail_def (xs : SKI) :
 theorem tail_init : IsChurchListPair [] [] (MkPair ⬝ Nil ⬝ Nil)
 ```
 
-`Cslib.SKI.List.tailStep_correct` (theorem, [line 199](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L199))
+`Cslib.SKI.List.tailStep_correct` (theorem, [line 199](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L199))
 
 > The step function preserves the tail-computing invariant.
 
@@ -294,7 +294,7 @@ theorem tailStep_correct {x : ℕ} {xs : List ℕ} {cx p : SKI}
     IsChurchListPair xs (x :: xs) (TailStep ⬝ cx ⬝ p)
 ```
 
-`Cslib.SKI.List.tailFold_correct` (theorem, [line 206](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L206))
+`Cslib.SKI.List.tailFold_correct` (theorem, [line 206](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L206))
 
 ```lean
 theorem tailFold_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns) :
@@ -302,7 +302,7 @@ theorem tailFold_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns
          IsChurchListPair ns.tail ns p
 ```
 
-`Cslib.SKI.List.tail_correct` (theorem, [line 233](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L233))
+`Cslib.SKI.List.tail_correct` (theorem, [line 233](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L233))
 
 > Tail correctness.
 
@@ -313,7 +313,7 @@ theorem tail_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns) :
 
 > ### Prepending zero to a list (for Code.zero')
 
-`Cslib.SKI.List.PrependZeroPoly` (definition, [line 247](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L247))
+`Cslib.SKI.List.PrependZeroPoly` (definition, [line 247](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L247))
 
 > PrependZero xs = cons 0 xs = Cons ⬝ Zero ⬝ xs
 
@@ -321,7 +321,7 @@ theorem tail_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns) :
 def PrependZeroPoly : SKI.Polynomial 1
 ```
 
-`Cslib.SKI.List.PrependZero` (definition, [line 250](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L250))
+`Cslib.SKI.List.PrependZero` (definition, [line 250](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L250))
 
 > Prepend zero to a Church-encoded list.
 
@@ -329,7 +329,7 @@ def PrependZeroPoly : SKI.Polynomial 1
 def PrependZero : SKI
 ```
 
-`Cslib.SKI.List.prependZero_def` (theorem, [line 253](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L253))
+`Cslib.SKI.List.prependZero_def` (theorem, [line 253](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L253))
 
 > Reduction: `PrependZero ⬝ xs ↠ Cons ⬝ Zero ⬝ xs`.
 
@@ -337,7 +337,7 @@ def PrependZero : SKI
 theorem prependZero_def (xs : SKI) : (PrependZero ⬝ xs) ↠ Cons ⬝ SKI.Zero ⬝ xs
 ```
 
-`Cslib.SKI.List.prependZero_correct` (theorem, [line 257](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L257))
+`Cslib.SKI.List.prependZero_correct` (theorem, [line 257](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L257))
 
 > Prepending zero preserves Church list representation.
 
@@ -348,7 +348,7 @@ theorem prependZero_correct {ns : List ℕ} {cns : SKI} (hcns : IsChurchList ns 
 
 > ### Successor on list head (for Code.succ)
 
-`Cslib.SKI.List.SuccHead` (definition, [line 265](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L265))
+`Cslib.SKI.List.SuccHead` (definition, [line 265](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L265))
 
 > SuccHead xs = cons (succ (head xs)) nil
 
@@ -356,7 +356,7 @@ theorem prependZero_correct {ns : List ℕ} {cns : SKI} (hcns : IsChurchList ns 
 def SuccHead : SKI
 ```
 
-`Cslib.SKI.List.succHead_correct` (theorem, [line 268](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean#L268))
+`Cslib.SKI.List.succHead_correct` (theorem, [line 268](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean#L268))
 
 > `SuccHead` correctly computes a singleton containing `succ(head ns)`.
 
@@ -371,5 +371,5 @@ theorem succHead_correct (ns : List ℕ) (cns : SKI) (hcns : IsChurchList ns cns
 
 ## Sources
 
-- [Cslib/Languages/CombinatoryLogic/List.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/CombinatoryLogic/List.lean)
+- [Cslib/Languages/CombinatoryLogic/List.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Languages/CombinatoryLogic/List.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Languages.CombinatoryLogic.List.json)

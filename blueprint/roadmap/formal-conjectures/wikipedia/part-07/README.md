@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# The Petersen colouring… to Schanuel's Conjecture
+# The Petersen colouring… to Sato–Tate conjecture
 
 - [The Petersen colouring conjecture (Jaeger 1988)](the-petersen-colouring-conjecture-jaeger-1988.md)
 - [Pierce–Birkhoff conjecture](pierce-birkhoff-conjecture.md)
@@ -12,6 +12,7 @@ navigation: transparent
 - [Asymptotic density of powerful numbers](asymptotic-density-of-powerful-numbers.md)
 - [Primes and perfect squares](primes-and-perfect-squares.md)
 - [Prime Triplet Conjecture](prime-triplet-conjecture.md)
+- [Proth primes](proth-primes.md)
 - [Quasiperfect Numbers](quasiperfect-numbers.md)
 - [Ramanujan τ-function](ramanujan-function.md)
 - [Ramsey numbers](ramsey-numbers.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Particular values of the Riemann zeta function](particular-values-of-the-riemann-zeta-function.md)
 - [Rudin's conjecture on squares in arithmetic progressions](rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](sato-tate-conjecture.md)
-- [Schanuel's Conjecture](schanuels-conjecture.md)

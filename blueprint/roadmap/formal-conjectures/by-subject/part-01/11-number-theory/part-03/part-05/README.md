@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Period of $p$-th powers modulo… to A factorial ratio analogous to…
+# The 1680-Conjecture to Bounds on fractional parts $n…
 
+- [The 1680-Conjecture](../../../../../oeis/part-16/the-1680-conjecture.md)
+- [The cup-of-coffee sequence](../../../../../oeis/part-16/the-cup-of-coffee-sequence.md)
+- [Sum of four squares with square conditions](../../../../../oeis/part-16/sum-of-four-squares-with-square-conditions.md)
 - [Period of $p$-th powers modulo $n$](../../../../../oeis/part-16/period-of-p-th-powers-modulo-n.md)
 - [Sum of a triangular number, a generalized pentagonal number, and a generalized heptagonal number](../../../../../oeis/part-16/sum-of-a-triangular-number-a-generalized-pentago.md)
 - [Symmetry of digit sum differences $\operatorname{sign}(S_5(k) - S_1(k))$](../../../../../oeis/part-16/symmetry-of-digit-sum-differences-sign-s-5-k-s-1.md)
@@ -14,13 +17,10 @@ navigation: transparent
 - [The 2-4-6-8 Conjecture](../../../../../oeis/part-16/the-2-4-6-8-conjecture.md)
 - [Vanishing of bases with $b^n \equiv -1 \pmod{2n+1}$ for absolute Euler pseudoprimes](../../../../../oeis/part-16/vanishing-of-bases-with-b-n-equiv-1-pmod-2n-1-fo.md)
 - [Four-square conjecture with powers of 2, 3, and 5](../../../../../oeis/part-16/four-square-conjecture-with-powers-of-2-3-and-5.md)
-- [Characterization of Carmichael numbers via squarefree denominators $a(n)$](../../../../../oeis/part-16/characterization-of-carmichael-numbers-via-squar.md)
+- [Characterization of Carmichael numbers via squarefree denominators $a(n)$](../../../../../oeis/part-17/characterization-of-carmichael-numbers-via-squar.md)
 - [Nonnegativity of the Dirichlet square root of A046644](../../../../../oeis/part-17/nonnegativity-of-the-dirichlet-square-root-of-a0.md)
 - [Pronic indices for odd coefficients of $\sum_{n \ge 0} x^n \frac{(1+x^n)^n}{(1+x^{n+1})^{n+1}}$](../../../../../oeis/part-17/pronic-indices-for-odd-coefficients-of-sum-n-ge.md)
 - [Pronic indices for odd coefficients of $\sum_{n \ge 0} x^n \frac{(1+x^n)^n}{(1-x^{n+1})^{n+1}}$](../../../../../oeis/part-17/pronic-indices-for-odd-coefficients-of-sum-n-ge-2.md)
 - [Tripling until the seed's digits reappear](../../../../../oeis/part-17/tripling-until-the-seeds-digits-reappear.md)
 - [Convergence of fraction numerators $a(n)/b(n)$ to $e$](../../../../../oeis/part-17/convergence-of-fraction-numerators-a-n-b-n-to-e.md)
 - [Bounds on fractional parts $n r^2 - a(n)$ for $r = (2+\sqrt{5})/2$](../../../../../oeis/part-17/bounds-on-fractional-parts-n-r-2-a-n-for-r-2-sqr.md)
-- [Numerator of a sum involving binomial coefficients](../../../../../oeis/part-17/numerator-of-a-sum-involving-binomial-coefficien.md)
-- [Factor bounds for Fermat numbers](../../../../../oeis/part-17/factor-bounds-for-fermat-numbers.md)
-- [A factorial ratio analogous to the Catalan numbers](../../../../../oeis/part-17/a-factorial-ratio-analogous-to-the-catalan-numbe.md)

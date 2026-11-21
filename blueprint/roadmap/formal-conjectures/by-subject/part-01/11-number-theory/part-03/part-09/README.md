@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Hall's conjecture to Modularity conjecture
+# Gauss circle problem to Lychrel numbers in base 10
 
+- [Gauss circle problem](../../../../../wikipedia/part-04/gauss-circle-problem.md)
+- [Gilbreath's conjecture](../../../../../wikipedia/part-04/gilbreaths-conjecture.md)
+- [Goldbach's conjecture](../../../../../wikipedia/part-04/goldbachs-conjecture.md)
+- [The Goormaghtigh conjecture](../../../../../wikipedia/part-04/the-goormaghtigh-conjecture.md)
+- [Grimm's conjecture](../../../../../wikipedia/part-04/grimms-conjecture.md)
 - [Hall's conjecture](../../../../../wikipedia/part-04/halls-conjecture.md)
 - [First Hardy–Littlewood conjecture](../../../../../wikipedia/part-04/first-hardy-littlewood-conjecture.md)
 - [The Hasse--Weil conjecture for elliptic curves](../../../../../wikipedia/part-04/the-hasse-weil-conjecture-for-elliptic-curves.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [Littlewood conjectures](../../../../../wikipedia/part-05/littlewood-conjectures.md)
 - [Lonely runner conjecture](../../../../../wikipedia/part-05/lonely-runner-conjecture.md)
 - [Lychrel numbers in base 10](../../../../../wikipedia/part-06/lychrel-numbers-in-base-10.md)
-- [Magic Squares](../../../../../wikipedia/part-06/magic-squares.md)
-- [Mahler's 3/2 Problem](../../../../../wikipedia/part-06/mahlers-3-2-problem.md)
-- [Conjectures about Mersenne primes](../../../../../wikipedia/part-06/conjectures-about-mersenne-primes.md)
-- [Mills' Theorem](../../../../../wikipedia/part-06/mills-theorem.md)
-- [Modularity conjecture](../../../../../wikipedia/part-06/modularity-conjecture.md)

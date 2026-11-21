@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.13 Grothendieck's Existence Theorem, bis
 
-Section 77.13 of the Stacks Project, [Tag 0DIJ](https://stacks.math.columbia.edu/tag/0DIJ). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 77.13 of the Stacks Project, [Tag 0DIJ](https://stacks.math.columbia.edu/tag/0DIJ). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DIK, a situation
 
 [Tag 0DIK](https://stacks.math.columbia.edu/tag/0DIK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSystem.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSystem.lean#L108). The attribute's comment: “the situation as stated, with the derived pullback along each Xₙ → Xₙ₊₁ constructed by Stacks 06YY; its fields are the data and hypotheses of the source, together with a big fppf site containing Spec A and every Spec Aₙ in which the algebraic spaces are taken”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSystem.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSystem.lean#L108). The attribute's comment: “the situation as stated, with the derived pullback along each Xₙ → Xₙ₊₁ constructed by Stacks 06YY; its fields are the data and hypotheses of the source, together with a big fppf site containing Spec A and every Spec Aₙ in which the algebraic spaces are taken”.
 
 > The standing data of Grothendieck's existence theorem for algebraic spaces in its derived
 > form: an inverse system of rings `(Aₙ)` with surjective transitions whose kernels are locally
@@ -31,7 +31,7 @@ structure DerivedExistenceSystem
 
 [Tag 0DIL](https://stacks.math.columbia.edu/tag/0DIL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem.derivedLimit_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceBoundedLimit.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceBoundedLimit.lean#L139). The attribute's comment: “K = R lim\_\{D\_QCoh} K\_n = DQ\_X(R lim\_\{D(O\_X)} K\_n) lies in D^-\_QCoh(O\_X), for every choice of coherator and of derived limits”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem.derivedLimit_isBoundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceBoundedLimit.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceBoundedLimit.lean#L139). The attribute's comment: “K = R lim\_\{D\_QCoh} K\_n = DQ\_X(R lim\_\{D(O\_X)} K\_n) lies in D^-\_QCoh(O\_X), for every choice of coherator and of derived limits”.
 
 > In Situation 0DIK the inclusion `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a right adjoint `DQ_X` and the
 > tower `(Rjₙ,* Kₙ)` has a derived limit `L = R lim_{D(𝒪_X)} Kₙ`. For every coherator `DQ_X` and
@@ -67,7 +67,7 @@ theorem derivedLimit_isBoundedAbove :
 
 [Tag 0DIM](https://stacks.math.columbia.edu/tag/0DIM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem.isPseudoCoherent_and_isIso_stageTensorSectionsBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceTensorSectionsBaseChange.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceTensorSectionsBaseChange.lean#L392). The attribute's comment: “the full statement: for every perfect E, M = RΓ(X, E ⊗^L K) is pseudo-coherent and the canonical map M ⊗^L\_A Aₙ ⟶ RΓ(Xₙ, Lpₙ^*E ⊗^L Kₙ) is an isomorphism in D(Aₙ) for every n. D is Situation 0DIK (DerivedExistenceSystem), whose fields are only the situation's data and hypotheses: the rings Aₙ with surjective transitions with locally nilpotent kernels, the fppf site containing Spec A and every Spec Aₙ, X proper, flat and of finite presentation over A, the pseudo-coherent Kₙ, and the comparison isomorphisms Liₙ^* Kₙ₊₁ ≅ Kₙ; no result is a field. K = DQ\_X(R lim Kₙ) is the object of 0DIL, built from the coherator (the right adjoint of D\_QCoh(𝒪\_X) ⥤ D(𝒪\_X)) and a derived limit, both constructed and not assumed”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem.isPseudoCoherent_and_isIso_stageTensorSectionsBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceTensorSectionsBaseChange.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceTensorSectionsBaseChange.lean#L392). The attribute's comment: “the full statement: for every perfect E, M = RΓ(X, E ⊗^L K) is pseudo-coherent and the canonical map M ⊗^L\_A Aₙ ⟶ RΓ(Xₙ, Lpₙ^*E ⊗^L Kₙ) is an isomorphism in D(Aₙ) for every n. D is Situation 0DIK (DerivedExistenceSystem), whose fields are only the situation's data and hypotheses: the rings Aₙ with surjective transitions with locally nilpotent kernels, the fppf site containing Spec A and every Spec Aₙ, X proper, flat and of finite presentation over A, the pseudo-coherent Kₙ, and the comparison isomorphisms Liₙ^* Kₙ₊₁ ≅ Kₙ; no result is a field. K = DQ\_X(R lim Kₙ) is the object of 0DIL, built from the coherator (the right adjoint of D\_QCoh(𝒪\_X) ⥤ D(𝒪\_X)) and a derived limit, both constructed and not assumed”.
 
 > **[Stacks, Tag 0DIM].** In Situation 0DIK let `K = DQ_X(R lim Kₙ)` be the object of
 > [Stacks, Tag 0DIL] and `E` a perfect object of `D(𝒪_X)`. Then `M = RΓ(X, E ⊗^L K)` is a
@@ -92,7 +92,7 @@ theorem isPseudoCoherent_and_isIso_stageTensorSectionsBaseChange (D : DerivedExi
 
 [Tag 0DIN](https://stacks.math.columbia.edu/tag/0DIN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem.isPseudoCoherentOnLimit_quasicoherentDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistencePseudoCoherent.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistencePseudoCoherent.lean#L243). The attribute's comment: “the full statement: a coherator DQ\_X and a derived limit R lim\_\{D(O\_X)} K\_n exist, and for every such choice K = DQ\_X(R lim\_\{D(O\_X)} K\_n) is a derived limit R lim\_\{D\_QCoh} K\_n and is pseudo-coherent on X; every derived limit of the tower in D\_QCoh(O\_X) is pseudo-coherent on X”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem.isPseudoCoherentOnLimit_quasicoherentDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistencePseudoCoherent.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistencePseudoCoherent.lean#L243). The attribute's comment: “the full statement: a coherator DQ\_X and a derived limit R lim\_\{D(O\_X)} K\_n exist, and for every such choice K = DQ\_X(R lim\_\{D(O\_X)} K\_n) is a derived limit R lim\_\{D\_QCoh} K\_n and is pseudo-coherent on X; every derived limit of the tower in D\_QCoh(O\_X) is pseudo-coherent on X”.
 
 > **[Stacks, Tag 0DIN].** In Situation 0DIK the inclusion `ι : D_QCoh(𝒪_X) ⥤ D(𝒪_X)` has a right
 > adjoint `DQ_X` and the tower `(Rjₙ,* Kₙ)` has a derived limit `L = R lim_{D(𝒪_X)} Kₙ`. For every
@@ -128,7 +128,7 @@ theorem isPseudoCoherentOnLimit_quasicoherentDerivedLimit (D : DerivedExistenceS
 
 [Tag 0DIP](https://stacks.math.columbia.edu/tag/0DIP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem.isIso_etaleSectionsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceEtaleSectionsHocolim.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceEtaleSectionsHocolim.lean#L157). The attribute's comment: “in Situation 0DIK with K = DQ\_X(R lim K\_n) as in 0DIL: for every étale U → X with U qcqs and every n, the canonical map RΓ(U, K) ⊗^L\_A A\_n → RΓ(U\_n, K\_n) is an isomorphism in D(A\_n), U\_n = U ×\_X X\_n; the full statement, with 0CRW and 0DIM proved in the library”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem.isIso_etaleSectionsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceEtaleSectionsHocolim.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceEtaleSectionsHocolim.lean#L157). The attribute's comment: “in Situation 0DIK with K = DQ\_X(R lim K\_n) as in 0DIL: for every étale U → X with U qcqs and every n, the canonical map RΓ(U, K) ⊗^L\_A A\_n → RΓ(U\_n, K\_n) is an isomorphism in D(A\_n), U\_n = U ×\_X X\_n; the full statement, with 0CRW and 0DIM proved in the library”.
 
 > In Situation 0DIK let `K = DQ_X(R lim Kₙ)` be the object of [Stacks, Tag 0DIL]
 > (`AlgebraicGeometry.Space.SeparatedDerivedExistenceSystem.quasicoherentLimit` of
@@ -154,7 +154,7 @@ theorem isIso_etaleSectionsBaseChangeMap (D : DerivedExistenceSystem.{u})
 
 [Tag 0DIQ](https://stacks.math.columbia.edu/tag/0DIQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedExistenceSystem.exists_isPseudoCoherent_stageDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceGrothendieck.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceGrothendieck.lean#L289). The attribute's comment: “the full statement in Situation 0DIK with no further hypotheses: a pseudo-coherent K on X with isomorphisms Lj\_n^* K = K\_n for all n, compatible with the phi\_n through the composition isomorphism of derived pullbacks”.
+**`AlgebraicGeometry.Space.DerivedExistenceSystem.exists_isPseudoCoherent_stageDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceGrothendieck.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceGrothendieck.lean#L289). The attribute's comment: “the full statement in Situation 0DIK with no further hypotheses: a pseudo-coherent K on X with isomorphisms Lj\_n^* K = K\_n for all n, compatible with the phi\_n through the composition isomorphism of derived pullbacks”.
 
 > **The derived Grothendieck existence theorem.** In Situation 0DIK there is a
 > pseudo-coherent `K` in `D(𝒪_X)` with `Kₙ = K ⊗^L_{𝒪_X} 𝒪_{Xₙ}` for all `n`, compatibly with the
@@ -179,7 +179,7 @@ theorem exists_isPseudoCoherent_stageDerivedPullback_iso (D : DerivedExistenceSy
 
 [Tag 0DIR](https://stacks.math.columbia.edu/tag/0DIR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SupportedDerivedExistenceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupported.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupported.lean#L84). The attribute's comment: “the setting of the corrected remark: A = lim A\_n with surjective transitions and locally nilpotent kernels, X separated, flat and of finite presentation over A, K\_n pseudo-coherent on X\_n supported on a closed subset proper over A\_n, phi\_n isomorphisms; flatness is necessary, see the errata entry 0DIR(flatness dropped)”.
+**`AlgebraicGeometry.Space.SupportedDerivedExistenceSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupported.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupported.lean#L84). The attribute's comment: “the setting of the corrected remark: A = lim A\_n with surjective transitions and locally nilpotent kernels, X separated, flat and of finite presentation over A, K\_n pseudo-coherent on X\_n supported on a closed subset proper over A\_n, phi\_n isomorphisms; flatness is necessary, see the errata entry 0DIR(flatness dropped)”.
 
 > **The data of the generalized derived existence theorem (Stacks 0DIR, `X` flat).** An inverse
 > system of rings `(Aₙ)` with surjective transitions whose kernels are locally nilpotent, an
@@ -191,7 +191,7 @@ theorem exists_isPseudoCoherent_stageDerivedPullback_iso (D : DerivedExistenceSy
 structure SupportedDerivedExistenceSystem extends SeparatedDerivedExistenceSystem.{u}
 ```
 
-**`AlgebraicGeometry.Space.SupportedDerivedExistenceSystem.exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean#L134). The attribute's comment: “corrected form, X flat: K pseudo-coherent relative to A, Lj\_n^* K = K\_n compatibly with the phi\_n, and each cohomology sheaf of K supported on a closed subset proper over A; the one-subset support clause and the case of non-flat X are false (errata 0DIR)”.
+**`AlgebraicGeometry.Space.SupportedDerivedExistenceSystem.exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean#L134). The attribute's comment: “corrected form, X flat: K pseudo-coherent relative to A, Lj\_n^* K = K\_n compatibly with the phi\_n, and each cohomology sheaf of K supported on a closed subset proper over A; the one-subset support clause and the case of non-flat X are false (errata 0DIR)”.
 
 > **Grothendieck's existence theorem in its derived form, with supports proper over the base
 > (Stacks 0DIR, `X` flat over `A`, the per-degree support clause).** There is `K ∈ D(𝒪_X)`,
@@ -228,7 +228,7 @@ theorem exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_
                   D.containsLimitBase D.X.left.1 D.X.left.2) i).obj K)) ⊆ T
 ```
 
-**`AlgebraicGeometry.Space.RelativeDerivedExistenceSystem.exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean#L185). The attribute's comment: “corrected form on the remark's own data (X separated, of finite presentation, K\_n pseudo-coherent relative to A\_n, supported on closed subsets proper over A\_n) with X flat: K pseudo-coherent relative to A, Lj\_n^* K = K\_n compatibly, each cohomology sheaf of K supported on a closed subset proper over A; flatness is necessary and one closed subset for all of K fails (errata 0DIR)”.
+**`AlgebraicGeometry.Space.RelativeDerivedExistenceSystem.exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_supportOfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Deformations/DerivedExistenceSupportedPerDegree.lean#L185). The attribute's comment: “corrected form on the remark's own data (X separated, of finite presentation, K\_n pseudo-coherent relative to A\_n, supported on closed subsets proper over A\_n) with X flat: K pseudo-coherent relative to A, Lj\_n^* K = K\_n compatibly, each cohomology sheaf of K supported on a closed subset proper over A; flatness is necessary and one closed subset for all of K fails (errata 0DIR)”.
 
 > **The generalized derived existence theorem for the data of Stacks 0DIR, `X` flat over `A`,
 > with the per-degree support clause.** Let `(Aₙ)`, `X` separated and of finite presentation over
@@ -266,7 +266,7 @@ theorem exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso_isProperOver_
                   D.containsLimitBase D.X.left.1 D.X.left.2) i).obj K)) ⊆ T
 ```
 
-**`Stacks.Examples.DerivedExistenceNotFlat.not_forall_exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DerivedExistenceNotFlat.lean, line 810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/DerivedExistenceNotFlat.lean#L810). The attribute's comment: “refutation of the remark with X separated and of finite presentation, not flat: X = Spec A/(f), K\_n = O\_\{X\_n} admits no K pseudo-coherent relative to A with Lj\_n^* K = K\_n (errata entry 0DIR(flatness dropped))”.
+**`Stacks.Examples.DerivedExistenceNotFlat.not_forall_exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DerivedExistenceNotFlat.lean, line 810](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Spaces/DerivedExistenceNotFlat.lean#L810). The attribute's comment: “refutation of the remark with X separated and of finite presentation, not flat: X = Spec A/(f), K\_n = O\_\{X\_n} admits no K pseudo-coherent relative to A with Lj\_n^* K = K\_n (errata entry 0DIR(flatness dropped))”.
 
 > **The generalization of the derived existence theorem proposed in Stacks 0DIR is false
 > without flatness.** There is a system satisfying all of its hypotheses — `Aₙ = 𝔽₂ ⊕ 𝔽₂ⁿ`,
@@ -289,7 +289,7 @@ theorem not_forall_exists_isRelativelyPseudoCoherent_stageDerivedPullback_iso :
               D.containsBaseAt D.X n)).obj K ≅ D.K n)
 ```
 
-**`Stacks.Examples.DerivedExistenceSupportNotProper.not_forall_exists_isRelativelyPseudoCoherent_isProperOver_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DerivedExistenceSupportNotProper.lean, line 978](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Spaces/DerivedExistenceSupportNotProper.lean#L978). The attribute's comment: “refutation of the clause that K is supported on one closed subset proper over A: A = Z\_2, X = A^1\_A, K\_n = sum\_i O\_\{X\_n}/(x - 2^\{i+1})[2i] (errata entry 0DIR(support of K))”.
+**`Stacks.Examples.DerivedExistenceSupportNotProper.not_forall_exists_isRelativelyPseudoCoherent_isProperOver_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DerivedExistenceSupportNotProper.lean, line 978](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Spaces/DerivedExistenceSupportNotProper.lean#L978). The attribute's comment: “refutation of the clause that K is supported on one closed subset proper over A: A = Z\_2, X = A^1\_A, K\_n = sum\_i O\_\{X\_n}/(x - 2^\{i+1})[2i] (errata entry 0DIR(support of K))”.
 
 > **The support clause of the generalized derived existence theorem proposed in Stacks 0DIR is
 > false.** There is a system satisfying all of its hypotheses, with `X` moreover flat over `A` —
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.13, Tag 0DIJ](https://stacks.math.columbia.edu/tag/0DIJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.24 Alternative view of the Čech complex
 
-Section 20.24 of the Stacks Project, [Tag 02FR](https://stacks.math.columbia.edu/tag/02FR). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 20.24 of the Stacks Project, [Tag 02FR](https://stacks.math.columbia.edu/tag/02FR). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02FU, a lemma
 
 [Tag 02FU](https://stacks.math.columbia.edu/tag/02FU) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoveringResolutionQuasiIso.exists_coveringResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoveringResolutionQuasiIso/Main.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoveringResolutionQuasiIso/Main.lean#L153).
+**`Stacks.AlgebraicGeometry.CoveringResolutionQuasiIso.exists_coveringResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoveringResolutionQuasiIso/Main.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/CoveringResolutionQuasiIso/Main.lean#L153).
 
 > **Stacks Project, Tag 02FU.** Every open covering of a ringed space gives a canonical
 > augmented Čech resolution, functorial in the module sheaf: the complex, its augmentation,
@@ -32,13 +32,13 @@ theorem exists_coveringResolution (hU : ⨆ i, U i = ⊤) :
 
 Declarations registered for the tag:
 
-- [`LocallyFinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyFinite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch20.lean#L41) (StacksFrontier): “more general: any family of subsets; Mathlib asks for a neighbourhood of x, equivalently an open one”. References: EGA IV (3.1.6), “more general”; EGA IV (21.10.1), “partial”.
+- [`LocallyFinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyFinite#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch20.lean, line 41](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch20.lean#L41) (StacksFrontier): “more general: any family of subsets; Mathlib asks for a neighbourhood of x, equivalently an open one”. References: EGA IV (3.1.6), “more general”; EGA IV (21.10.1), “partial”.
 
 ## Tag 02FT, a remark
 
 [Tag 02FT](https://stacks.math.columbia.edu/tag/02FT) in the Stacks Project.
 
-**`Stacks.CechTotalComplex.CoveringResolution.isColimitCoveringTermCofan`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CoveringResolutionLocallyFinite.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CoveringResolutionLocallyFinite.lean#L114). The attribute's comment: “(third displayed formula: the terms of the complex of Tag 02FU are 𝔠ᵖ(𝒰, F) = ⨁ (j\_\{i₀…i\_p})\_* F\_\{i₀…i\_p})”.
+**`Stacks.CechTotalComplex.CoveringResolution.isColimitCoveringTermCofan`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CoveringResolutionLocallyFinite.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/CoveringResolutionLocallyFinite.lean#L114). The attribute's comment: “(third displayed formula: the terms of the complex of Tag 02FU are 𝔠ᵖ(𝒰, F) = ⨁ (j\_\{i₀…i\_p})\_* F\_\{i₀…i\_p})”.
 
 > **Stacks Project, Tag 02FT, third displayed formula.** Let `(X, R)` be a ringed space, let
 > `X = ⋃ i, U i` be a locally finite open covering and let `F` be a sheaf of `R`-modules. Then the
@@ -55,7 +55,7 @@ def isColimitCoveringTermCofan (_hU : ⨆ i, U i = ⊤) (hlf : LocallyFinite fun
       (coveringTermInj.{u, v, w, t} X R U F p))
 ```
 
-**`Stacks.LocallyFiniteCover.isColimitCofanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L393). The attribute's comment: “(second displayed formula: ⨁ (j\_i)\_* F\_i = ∏ (j\_i)\_* F\_i)”.
+**`Stacks.LocallyFiniteCover.isColimitCofanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L393). The attribute's comment: “(second displayed formula: ⨁ (j\_i)\_* F\_i = ∏ (j\_i)\_* F\_i)”.
 
 > **Stacks Project, Tag 02FT, second displayed formula.** Let `X = ⋃ i, U i` be a locally
 > finite open covering of a topological space, let `j i : U i → X` be the inclusions and let
@@ -68,7 +68,7 @@ noncomputable def isColimitCofanProduct (_hcov : IsOpenCover U)
     (hlf : LocallyFinite fun i => (U i : Set X)) : IsColimit (productCofan U F)
 ```
 
-**`Stacks.LocallyFiniteCover.isIso_coproductToProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L431). The attribute's comment: “(second displayed formula, as an isomorphism from ∐ to ∏)”.
+**`Stacks.LocallyFiniteCover.isIso_coproductToProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L431). The attribute's comment: “(second displayed formula, as an isomorphism from ∐ to ∏)”.
 
 > **Stacks Project, Tag 02FT, second displayed formula.** For a locally finite open
 > covering the canonical map from the direct sum of the `(j i)_* (F i)` to their direct product
@@ -79,7 +79,7 @@ theorem isIso_coproductToProduct (hcov : IsOpenCover U)
     (hlf : LocallyFinite fun i => (U i : Set X)) : IsIso (coproductToProduct U F)
 ```
 
-**`Stacks.LocallyFiniteCover.isIso_sectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L456). The attribute's comment: “(first displayed formula: Γ(V, 𝒢) = ∏ F\_i(V ∩ U\_i))”.
+**`Stacks.LocallyFiniteCover.isIso_sectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 456](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L456). The attribute's comment: “(first displayed formula: Γ(V, 𝒢) = ∏ F\_i(V ∩ U\_i))”.
 
 > **Stacks Project, Tag 02FT, first displayed formula.** With `X = ⋃ i, U i` a locally
 > finite open covering and `𝒢 = ⨁ i, (j i)_* (F i)`, for every open `V` of `X` the canonical
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.24, Tag 02FR](https://stacks.math.columbia.edu/tag/02FR)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

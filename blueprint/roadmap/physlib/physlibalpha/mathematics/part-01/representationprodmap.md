@@ -8,7 +8,7 @@ proof: formalized
 
 # The componentwise representation of a product group
 
-The module `PhyslibAlpha.Mathematics.RepresentationProdMap`, [PhyslibAlpha/Mathematics/RepresentationProdMap.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationProdMap.lean): 2 declarations, 1 with a docstring.
+The module `PhyslibAlpha.Mathematics.RepresentationProdMap`, [PhyslibAlpha/Mathematics/RepresentationProdMap.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationProdMap.lean): 2 declarations, 1 with a docstring.
 
 ## i. Overview
 
@@ -26,7 +26,7 @@ The module `PhyslibAlpha.Mathematics.RepresentationProdMap`, [PhyslibAlpha/Mathe
 
 ## A. The componentwise representation
 
-**`Representation.prodMap`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationProdMap.lean#L41).
+**`Representation.prodMap`**, a def, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationProdMap.lean#L41).
 
 > The componentwise representation of a product group on a product space.
 
@@ -37,7 +37,7 @@ noncomputable def Representation.prodMap {k G₁ G₂ V₁ V₂ : Type*} [CommSe
     Representation k (G₁ × G₂) (V₁ × V₂)
 ```
 
-**`Representation.prodMap_apply`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationProdMap.lean#L54).
+**`Representation.prodMap_apply`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationProdMap.lean#L54).
 
 ```lean
 lemma Representation.prodMap_apply {k G₁ G₂ V₁ V₂ : Type*} [CommSemiring k]
@@ -52,4 +52,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/RepresentationProdMap.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/RepresentationProdMap.lean)
+- [PhyslibAlpha/Mathematics/RepresentationProdMap.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/RepresentationProdMap.lean)

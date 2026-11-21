@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.nonneg_add_eq_zero, ProbabilisticTheory.sandwich_eq_zero, ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem, IsIdempotentElem.isSharp
+lean: PhyslibAlpha.ProbabilisticTheory.nonneg_add_eq_zero, PhyslibAlpha.ProbabilisticTheory.sandwich_eq_zero, PhyslibAlpha.ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem, IsIdempotentElem.isSharp
 statement: formalized
 proof: formalized
 ---
 
 # Projections are sharp
 
-The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SharpEffect`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SharpEffect`, [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean): 4 declarations, 4 with a docstring.
 
 > An idempotent effect of a C⋆-algebra is not a proper mixture of two different effects.
 
@@ -21,8 +21,8 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SharpEffect`, [Physlib
 ## ii. Key results
 
 > - `IsIdempotentElem.isSharp` : idempotent effects are sharp.
-> - `ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem` : the algebraic heart of the
->   proof, stated on bare elements.
+> - `PhyslibAlpha.ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem` : the algebraic
+>   heart of the proof, stated on bare elements.
 
 ## iv. References
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.CStarAlgebra.SharpEffect`, [Physlib
 
 ## A. Consequences of the C⋆-identity
 
-**`ProbabilisticTheory.nonneg_add_eq_zero`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L53).
+**`PhyslibAlpha.ProbabilisticTheory.nonneg_add_eq_zero`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L53).
 
 > In a partially ordered additive group, two nonnegative terms summing to zero vanish.
 
@@ -39,7 +39,7 @@ lemma nonneg_add_eq_zero {x y : A} (hx : 0 ≤ x) (hy : 0 ≤ y) (hxy : x + y = 
     x = 0
 ```
 
-**`ProbabilisticTheory.sandwich_eq_zero`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L62).
+**`PhyslibAlpha.ProbabilisticTheory.sandwich_eq_zero`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L62).
 
 > If `b * x * b = 0` for `b` self-adjoint and `x ≥ 0`, then `√x * b = 0`: the C⋆-identity
 > `‖z⋆z‖ = ‖z‖²`, applied to `z := √x * b`, since `z⋆z = b * √x * √x * b = b * x * b`.
@@ -49,7 +49,7 @@ lemma sandwich_eq_zero {b x : A} (hb : IsSelfAdjoint b) (hx : 0 ≤ x)
     (h : b * x * b = 0) : CFC.sqrt x * b = 0
 ```
 
-**`ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L75).
+**`PhyslibAlpha.ProbabilisticTheory.eq_of_mem_openSegment_of_isIdempotentElem`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L75).
 
 > The algebraic heart of `IsIdempotentElem.isSharp`, stated on bare elements of `A`: an
 > idempotent `a` between `0` and `1` cannot be written as a nontrivial mixture of two different
@@ -64,7 +64,7 @@ lemma eq_of_mem_openSegment_of_isIdempotentElem {a y₁ y₂ : A} (ha0 : 0 ≤ a
 
 ## B. Projections are sharp
 
-**`IsIdempotentElem.isSharp`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L158).
+**`IsIdempotentElem.isSharp`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean#L158).
 
 > **Projections are sharp**: an idempotent effect is not a proper mixture of two different
 > effects.
@@ -76,9 +76,9 @@ lemma _root_.IsIdempotentElem.isSharp {e : Effect (selfAdjoint A)}
 
 ## Depends on
 
-- [The observables of a C⋆-algebra](../../../physlib/probabilistictheory/cstaralgebra/orderunit.md)
-- [Sharp effects](../../../physlib/probabilistictheory/effect/sharp.md)
+- [The observables of a C⋆-algebra (PhyslibAlpha)](orderunit.md)
+- [Sharp effects (PhyslibAlpha)](../effect/sharp.md)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean)
+- [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean)

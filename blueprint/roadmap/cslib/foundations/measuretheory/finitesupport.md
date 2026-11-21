@@ -7,7 +7,7 @@ proof: formalized
 
 # Measures supported on finite sets
 
-`Cslib.Foundations.MeasureTheory.FiniteSupport`, in [Cslib/Foundations/MeasureTheory/FiniteSupport.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean), by Samuel Schlesinger, Thomas Waring.
+`Cslib.Foundations.MeasureTheory.FiniteSupport`, in [Cslib/Foundations/MeasureTheory/FiniteSupport.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean), by Samuel Schlesinger, Thomas Waring.
 
 > For a measure that vanishes off a finite set, every set is null-measurable if
 > singletons are measurable. Finite support is preserved by finite products of
@@ -34,7 +34,7 @@ proof: formalized
 >   singletons, every set is null-measurable for a measure with finite support,
 >   including finite products.
 
-`MeasureTheory.HasFiniteSupport` (class, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L49))
+`MeasureTheory.HasFiniteSupport` (class, [line 49](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L49))
 
 > A measure vanishes off a finite set.
 
@@ -44,7 +44,7 @@ class HasFiniteSupport {α : Type*} [MeasurableSpace α] (μ : Measure α) : Pro
   exists_finite_measure_compl_zero : ∃ s : Set α, s.Finite ∧ μ sᶜ = 0
 ```
 
-`MeasureTheory.HasFiniteSupport.exists_eq_sum_smul_dirac` (theorem, [line 56](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L56))
+`MeasureTheory.HasFiniteSupport.exists_eq_sum_smul_dirac` (theorem, [line 56](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L56))
 
 > On a space with measurable singletons, a measure with finite support is a finite sum
 > of Dirac measures weighted by its singleton masses. This is `Measure.ae_mem_finset_iff`
@@ -56,7 +56,7 @@ theorem HasFiniteSupport.exists_eq_sum_smul_dirac {α : Type*} [MeasurableSpace 
     ∃ s : Finset α, μ = ∑ a ∈ s, μ {a} • Measure.dirac a
 ```
 
-`MeasureTheory.HasFiniteSupport.isFiniteMeasure` (instance, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L66))
+`MeasureTheory.HasFiniteSupport.isFiniteMeasure` (instance, [line 66](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L66))
 
 > A sigma-finite measure with finite support is finite.
 
@@ -65,7 +65,7 @@ instance (priority := 100) HasFiniteSupport.isFiniteMeasure {α : Type*} [Measur
     (μ : Measure α) [HasFiniteSupport μ] [SigmaFinite μ] : IsFiniteMeasure μ
 ```
 
-`MeasureTheory.NullMeasurableSet.of_hasFiniteSupport` (theorem, [line 75](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L75))
+`MeasureTheory.NullMeasurableSet.of_hasFiniteSupport` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean#L75))
 
 > On a space with measurable singletons, every set is null-measurable for a measure
 > with finite support.
@@ -82,5 +82,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/MeasureTheory/FiniteSupport.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/MeasureTheory/FiniteSupport.lean)
+- [Cslib/Foundations/MeasureTheory/FiniteSupport.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/MeasureTheory/FiniteSupport.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.MeasureTheory.FiniteSupport.json)

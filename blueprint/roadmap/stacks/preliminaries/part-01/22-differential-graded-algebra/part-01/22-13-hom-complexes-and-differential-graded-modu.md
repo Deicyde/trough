@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.13 Hom complexes and differential graded modules
 
-Section 22.13 of the Stacks Project, [Tag 0FQ2](https://stacks.math.columbia.edu/tag/0FQ2). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 22.13 of the Stacks Project, [Tag 0FQ2](https://stacks.math.columbia.edu/tag/0FQ2). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FQ3, a lemma
 
 [Tag 0FQ3](https://stacks.math.columbia.edu/tag/0FQ3) in the Stacks Project.
 
-**`CochainComplex.endomorphismDGA`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Basic.lean#L57). The attribute's comment: “endomorphism algebra”.
+**`CochainComplex.endomorphismDGA`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/Basic.lean#L57). The attribute's comment: “endomorphism algebra”.
 
 > The endomorphism differential graded algebra of a cochain complex of `R`-modules, with its
 > canonical identification of homogeneous pieces with cochains.
@@ -24,7 +24,7 @@ noncomputable def endomorphismDGA (M : CochainComplex (ModuleCat.{u} R) ℤ) :
     EndomorphismDGA M
 ```
 
-**`DifferentialGraded.LeftModule.toEndomorphismHom_spec_surjective_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/LeftModuleEquivHom.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/LeftModuleEquivHom.lean#L87). The attribute's comment: “left module structures on a complex and algebra homomorphisms”.
+**`DifferentialGraded.LeftModule.toEndomorphismHom_spec_surjective_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/LeftModuleEquivHom.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/LeftModuleEquivHom.lean#L87). The attribute's comment: “left module structures on a complex and algebra homomorphisms”.
 
 > **Stacks 0FQ3.** Giving a left differential graded `A`-module structure on a complex `M` is the
 > same thing as giving a homomorphism of differential graded `R`-algebras from `A` into the
@@ -76,7 +76,7 @@ theorem toEndomorphismHom_spec_surjective_eq_iff (M : CochainComplex (ModuleCat.
 
 [Tag 0FQ4](https://stacks.math.columbia.edu/tag/0FQ4) in the Stacks Project.
 
-**`DifferentialGraded.rightTensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L619). The attribute's comment: “the identification”.
+**`DifferentialGraded.rightTensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 619](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L619). The attribute's comment: “the identification”.
 
 > For a right differential graded `A`-module `M'`, a left differential graded `A`-module `M` and
 > a complex `N` of `R`-modules, homomorphisms of right differential graded `A`-modules
@@ -87,7 +87,7 @@ noncomputable def rightTensorHomEquiv :
     DifferentialGradedModule.Hom M' P ≃ (tensorComplex M' M ⟶ N)
 ```
 
-**`DifferentialGraded.rightTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L625). The attribute's comment: “the identification on pure tensors”.
+**`DifferentialGraded.rightTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 625](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L625). The attribute's comment: “the identification on pure tensors”.
 
 > `rightTensorHomEquiv` sends `g` to the map of complexes taking `x ⊗ y` to `(g x)(y)`.
 
@@ -98,7 +98,7 @@ theorem rightTensorHomEquiv_apply (g : DifferentialGradedModule.Hom M' P)
       (((iso.hom.f p) ⟨g.toFun x, g.map_grading p x x.property⟩).v q n (by omega)).hom y
 ```
 
-**`DifferentialGraded.exists_rightTensorHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 643](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L643). The attribute's comment: “existence of the identification”.
+**`DifferentialGraded.exists_rightTensorHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 643](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L643). The attribute's comment: “existence of the identification”.
 
 > There is a right differential graded `A`-module `P` with underlying complex `Hom(M, N)` such
 > that homomorphisms `M' → P` are in bijection with maps of complexes `M' ⊗_A M → N`.
@@ -114,7 +114,7 @@ theorem exists_rightTensorHomEquiv :
 
 [Tag 0FQ5](https://stacks.math.columbia.edu/tag/0FQ5) in the Stacks Project.
 
-**`DifferentialGradedModule.existsUnique_isSignedAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean#L402). The attribute's comment: “module to homomorphism”.
+**`DifferentialGradedModule.existsUnique_isSignedAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean, line 402](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean#L402). The attribute's comment: “module to homomorphism”.
 
 > A right differential graded `A`-module whose underlying complex is identified with `M`
 > determines a unique homomorphism of differential graded algebras from `A` into the graded opposite
@@ -127,7 +127,7 @@ theorem existsUnique_isSignedAction (A : DifferentialGradedAlgebra R)
     ∃! τ : A.Hom (oppEndAlgebra M), IsSignedAction A M L i τ
 ```
 
-**`DifferentialGradedModule.exists_rightModule_isSignedAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean#L491). The attribute's comment: “homomorphism to module”.
+**`DifferentialGradedModule.exists_rightModule_isSignedAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean, line 491](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/RightModuleHom.lean#L491). The attribute's comment: “homomorphism to module”.
 
 > Every homomorphism of differential graded algebras from `A` into the graded opposite of the
 > endomorphism algebra of `M` arises from a right differential graded `A`-module whose underlying
@@ -143,7 +143,7 @@ theorem exists_rightModule_isSignedAction (A : DifferentialGradedAlgebra R)
 
 [Tag 0FQ6](https://stacks.math.columbia.edu/tag/0FQ6) in the Stacks Project.
 
-**`DifferentialGraded.leftTensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1229). The attribute's comment: “the identification”.
+**`DifferentialGraded.leftTensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1229). The attribute's comment: “the identification”.
 
 > For a right differential graded `A`-module `M`, a left differential graded `A`-module `M'` and
 > a complex `N` of `R`-modules, homomorphisms of left differential graded `A`-modules
@@ -154,7 +154,7 @@ noncomputable def leftTensorHomEquiv :
     LeftModule.Hom M' H ≃ (tensorComplex M M' ⟶ N)
 ```
 
-**`DifferentialGraded.leftTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1236). The attribute's comment: “the identification on pure tensors”.
+**`DifferentialGraded.leftTensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1236). The attribute's comment: “the identification on pure tensors”.
 
 > `leftTensorHomEquiv` sends `g` to the map of complexes taking `x ⊗ y` to
 > `(-1)^{pq} (g y)(x)`.
@@ -167,7 +167,7 @@ theorem leftTensorHomEquiv_apply (g : LeftModule.Hom M' H)
         (((iso.hom.f q) ⟨g.toFun y, g.map_grading q y y.property⟩).v p n (by omega)).hom x
 ```
 
-**`DifferentialGraded.exists_leftTensorHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1255). The attribute's comment: “existence of the identification”.
+**`DifferentialGraded.exists_leftTensorHomEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean, line 1255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Module/TensorHomAdjunction.lean#L1255). The attribute's comment: “existence of the identification”.
 
 > There is a left differential graded `A`-module `H` with underlying complex `Hom(M, N)` such
 > that homomorphisms `M' → H` are in bijection with maps of complexes `M ⊗_A M' → N`.
@@ -183,7 +183,7 @@ theorem exists_leftTensorHomEquiv :
 
 [Tag 0FQ7](https://stacks.math.columbia.edu/tag/0FQ7) in the Stacks Project.
 
-**`DifferentialGraded.LeftModule.exists_homEvaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean#L790). The attribute's comment: “the LEFT-handed remark: `M` is a LEFT differential graded `A`-module (called `L` here), `Hom(M, N)` is a RIGHT one (`rightHom`), `Hom(Hom(M, N), N)` is a LEFT one (`doubleHom`), and `ev` is a map of LEFT differential graded `A`-modules — its type is `DifferentialGraded.LeftModule.Hom L doubleHom`, whose `A`-linearity the third conjunct spells out. The modules are asserted to exist rather than named, having no canonical presentation, so each comes with an isomorphism of its underlying complex with the relevant Hom complex and with the formula for its action; the last conjunct identifies `ev` on underlying complexes with `CochainComplex.HomComplex.evaluationToDoubleHom`, which is 0FNM.”.
+**`DifferentialGraded.LeftModule.exists_homEvaluation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean, line 790](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean#L790). The attribute's comment: “the LEFT-handed remark: `M` is a LEFT differential graded `A`-module (called `L` here), `Hom(M, N)` is a RIGHT one (`rightHom`), `Hom(Hom(M, N), N)` is a LEFT one (`doubleHom`), and `ev` is a map of LEFT differential graded `A`-modules — its type is `DifferentialGraded.LeftModule.Hom L doubleHom`, whose `A`-linearity the third conjunct spells out. The modules are asserted to exist rather than named, having no canonical presentation, so each comes with an isomorphism of its underlying complex with the relevant Hom complex and with the formula for its action; the last conjunct identifies `ev` on underlying complexes with `CochainComplex.HomComplex.evaluationToDoubleHom`, which is 0FNM.”.
 
 > **Stacks 0FQ7.** Let `A` be a differential graded `R`-algebra, `L` a left differential graded
 > `A`-module and `N` a complex of `R`-modules. Then there are a right differential graded
@@ -237,7 +237,7 @@ theorem exists_homEvaluation (A : DifferentialGradedAlgebra.{u, v} R)
 
 [Tag 0FQ8](https://stacks.math.columbia.edu/tag/0FQ8) in the Stacks Project.
 
-**`DifferentialGradedModule.nonempty_homEvaluationData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean#L544). The attribute's comment: “the RIGHT-handed remark: `M` is a RIGHT differential graded `A`-module, `Hom(M, N)` is a LEFT one (`leftHom`), `Hom(Hom(M, N), N)` is a RIGHT one (`doubleHom`), and `ev` is a map of RIGHT differential graded `A`-modules — its type is `DifferentialGradedModule.Hom M doubleHom`. The data are asserted to exist rather than named, the Hom modules having no canonical presentation; `evaluation_apply` pins `ev` to 0FNM.”.
+**`DifferentialGradedModule.nonempty_homEvaluationData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean, line 544](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomEvaluation.lean#L544). The attribute's comment: “the RIGHT-handed remark: `M` is a RIGHT differential graded `A`-module, `Hom(M, N)` is a LEFT one (`leftHom`), `Hom(Hom(M, N), N)` is a RIGHT one (`doubleHom`), and `ev` is a map of RIGHT differential graded `A`-modules — its type is `DifferentialGradedModule.Hom M doubleHom`. The data are asserted to exist rather than named, the Hom modules having no canonical presentation; `evaluation_apply` pins `ev` to 0FNM.”.
 
 > **Stacks 0FQ8.** For a right differential graded `A`-module `M` and a complex `N` of
 > `R`-modules, the Hom complex `Hom^•(M, N)` carries a left differential graded `A`-module structure,
@@ -254,7 +254,7 @@ theorem nonempty_homEvaluationData (A : DifferentialGradedAlgebra.{u, v} R)
 
 [Tag 0FQ9](https://stacks.math.columbia.edu/tag/0FQ9) in the Stacks Project.
 
-**`DifferentialGradedAlgebra.LeftAction.shiftHomCochain_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean#L171). The attribute's comment: “left modules”.
+**`DifferentialGradedAlgebra.LeftAction.shiftHomCochain_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean#L171). The attribute's comment: “left modules”.
 
 > **Stacks 0FQ9**, left modules. If `M` is a left differential graded `A`-module then the
 > identification `Hom^•(M, N)[a - b] ≅ Hom^•(M[b], N[a])` of Tag 0FNN is a map of right differential
@@ -269,7 +269,7 @@ theorem LeftAction.shiftHomCochain_comp (act : A.LeftAction M) (a b p q : ℤ) (
       ((act.shift b).action p α).comp (shiftHomCochain M N a b q z) (by omega)
 ```
 
-**`DifferentialGradedAlgebra.RightAction.shiftHomCochain_homAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean#L184). The attribute's comment: “right modules”.
+**`DifferentialGradedAlgebra.RightAction.shiftHomCochain_homAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/DifferentialGraded/Endomorphism/HomComplexShift.lean#L184). The attribute's comment: “right modules”.
 
 > **Stacks 0FQ9**, right modules. If `M` is a right differential graded `A`-module then the
 > identification `Hom^•(M, N)[a - b] ≅ Hom^•(M[b], N[a])` of Tag 0FNN is a map of left differential
@@ -294,4 +294,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.13, Tag 0FQ2](https://stacks.math.columbia.edu/tag/0FQ2)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

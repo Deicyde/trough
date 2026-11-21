@@ -8,7 +8,7 @@ proof: formalized
 
 # 4.28 Formal properties
 
-Section 4.28 of the Stacks Project, [Tag 003D](https://stacks.math.columbia.edu/tag/003D). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 4.28 of the Stacks Project, [Tag 003D](https://stacks.math.columbia.edu/tag/003D). 2 tags here are carried by 1 declaration of the repository (in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 003E, a definition
 
@@ -16,13 +16,13 @@ Section 4.28 of the Stacks Project, [Tag 003D](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`NatTrans.hcomp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=NatTrans.hcomp#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/CategoryTheory/Basic.lean#L89) (StacksCore).
+- [`NatTrans.hcomp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=NatTrans.hcomp#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/CategoryTheory/Basic.lean#L89) (StacksCore).
 
 ## Tag 003F, a lemma
 
 [Tag 003F](https://stacks.math.columbia.edu/tag/003F) in the Stacks Project.
 
-**`CategoryTheory.NatTrans.vcomp_hcomp_formal_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Bicategory/FormalProperties.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Bicategory/FormalProperties.lean#L53).
+**`CategoryTheory.NatTrans.vcomp_hcomp_formal_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Bicategory/FormalProperties.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Bicategory/FormalProperties.lean#L53).
 
 > **Stacks 003F** (formal properties of vertical and horizontal composition). For natural
 > transformations between functors of arbitrary categories:
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.28, Tag 003D](https://stacks.math.columbia.edu/tag/003D)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

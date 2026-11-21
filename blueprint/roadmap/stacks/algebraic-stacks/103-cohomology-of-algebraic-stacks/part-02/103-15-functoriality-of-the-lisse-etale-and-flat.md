@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.15 Functoriality of the lisse-étale and flat-fppf sites
 
-Section 103.15 of the Stacks Project, [Tag 0GR1](https://stacks.math.columbia.edu/tag/0GR1). 4 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 103.15 of the Stacks Project, [Tag 0GR1](https://stacks.math.columbia.edu/tag/0GR1). 4 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07AT, a lemma
 
 [Tag 07AT](https://stacks.math.columbia.edu/tag/07AT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L261). The attribute's comment: “the functor of flat-fppf sites along a flat 1-morphism”.
+**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L261). The attribute's comment: “the functor of flat-fppf sites along a flat 1-morphism”.
 
 > The restriction of a flat 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` to a functor
 > between the flat-fppf sites, specified by the property that its composite with the inclusion of
@@ -28,7 +28,7 @@ def siteFunctor (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsFlat B S hS f) :
         inclusion B S hS 𝒳 ⋙ f.hom.hom.toFunctor}
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L287). The attribute's comment: “that functor is continuous”.
+**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L287). The attribute's comment: “that functor is continuous”.
 
 > The restriction of a flat 1-morphism to the flat-fppf sites is continuous.
 
@@ -38,7 +38,7 @@ theorem siteFunctor_isContinuous (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsFla
       (topology B S hS 𝒳) (topology B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L309). The attribute's comment: “that functor is cocontinuous”.
+**`AlgebraicGeometry.Stack.FlatFppf.siteFunctor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean#L309). The attribute's comment: “that functor is cocontinuous”.
 
 > The restriction of a flat 1-morphism to the flat-fppf sites is cocontinuous.
 
@@ -48,7 +48,7 @@ theorem siteFunctor_isCocontinuous (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsF
       (topology B S hS 𝒳) (topology B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L143). The attribute's comment: “the functor of lisse-etale sites along a smooth 1-morphism”.
+**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L143). The attribute's comment: “the functor of lisse-etale sites along a smooth 1-morphism”.
 
 > **Stacks 07AT** (1), the site functor. A smooth 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
 > over `S` restricts to a functor between the lisse-étale sites, specified by the property that its
@@ -66,7 +66,7 @@ def siteFunctor (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsSmooth B S hS f) :
         inclusion.{u, w} B S hS 𝒳 ⋙ f.hom.hom.toFunctor}
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L155). The attribute's comment: “that functor is continuous, in the smooth case”.
+**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L155). The attribute's comment: “that functor is continuous, in the smooth case”.
 
 > **Stacks 07AT** (1), continuity. The restriction of a smooth 1-morphism to the lisse-étale
 > sites is continuous: its composite with the inclusion of `𝒴` is, and continuity descends along
@@ -78,7 +78,7 @@ theorem siteFunctor_isContinuous (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsSmo
       (topology.{u, w} B S hS 𝒳) (topology.{u, w} B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L174). The attribute's comment: “that functor is cocontinuous, in the smooth case”.
+**`AlgebraicGeometry.Stack.LisseEtale.siteFunctor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean#L174). The attribute's comment: “that functor is cocontinuous, in the smooth case”.
 
 > **Stacks 07AT** (1), cocontinuity. The same descent, with the roles of continuity and
 > cocontinuity of the inclusion exchanged.
@@ -89,7 +89,7 @@ theorem siteFunctor_isCocontinuous (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsS
       (topology.{u, w} B S hS 𝒳) (topology.{u, w} B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.primedPushforwardAmbientEquiv'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean#L177). The attribute's comment: “part (2), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the flat-fppf site, at one flat object `y` of `𝒴` and for a sheaf of sets, with NO hypothesis beyond the sheaf condition on `ℱ`: the topology on the 2-fibre product `V ×_{y, 𝒴} 𝒳` that `AlgebraicGeometry.Stack.FlatFppf.primedPushforwardAmbientEquiv` takes as `J` is `AlgebraicGeometry.Stack.ambientTwoFibreProductTopology`, and its arguments `hℱ`, `hfac` and `hconn` are the theorems `AlgebraicGeometry.Stack.isSheaf_comp_ambientProjection`, `AlgebraicGeometry.Stack.FlatFppf.hasLocalFactorizations_primedInclusion` and `AlgebraicGeometry.Stack.FlatFppf.hasLocallyConnectedFactorizations_primedInclusion`, each proved for every algebraic stack. The site functor itself and its continuity and cocontinuity, which are the first assertion of the tag, are registered in `StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean`. Three pieces of the tag are not covered here: naturality of the bijection in `y`, so that it becomes an equality of sheaves on `𝒴_{flat,fppf}` rather than a family of bijections; the same identity at abelian rather than set coefficients; and the second identity `g'_!(f')^{-1} = f^{-1}g_!`. The first and the third are registered in `StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean`; the abelian form is claimed nowhere in the tree, and the tag does not ask for it -- the source's `ℱ` is a sheaf of sets, which is what the functors of a morphism of topoi act on”.
+**`AlgebraicGeometry.Stack.FlatFppf.primedPushforwardAmbientEquiv'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean#L177). The attribute's comment: “part (2), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the flat-fppf site, at one flat object `y` of `𝒴` and for a sheaf of sets, with NO hypothesis beyond the sheaf condition on `ℱ`: the topology on the 2-fibre product `V ×_{y, 𝒴} 𝒳` that `AlgebraicGeometry.Stack.FlatFppf.primedPushforwardAmbientEquiv` takes as `J` is `AlgebraicGeometry.Stack.ambientTwoFibreProductTopology`, and its arguments `hℱ`, `hfac` and `hconn` are the theorems `AlgebraicGeometry.Stack.isSheaf_comp_ambientProjection`, `AlgebraicGeometry.Stack.FlatFppf.hasLocalFactorizations_primedInclusion` and `AlgebraicGeometry.Stack.FlatFppf.hasLocallyConnectedFactorizations_primedInclusion`, each proved for every algebraic stack. The site functor itself and its continuity and cocontinuity, which are the first assertion of the tag, are registered in `StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean`. Three pieces of the tag are not covered here: naturality of the bijection in `y`, so that it becomes an equality of sheaves on `𝒴_{flat,fppf}` rather than a family of bijections; the same identity at abelian rather than set coefficients; and the second identity `g'_!(f')^{-1} = f^{-1}g_!`. The first and the third are registered in `StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean`; the abelian form is claimed nowhere in the tree, and the tag does not ask for it -- the source's `ℱ` is a sheaf of sets, which is what the functors of a morphism of topoi act on”.
 
 > **Stacks 07AT (2), the identity `f'_*(g')^{-1} = g^{-1}f_*`, at one flat object of `𝒴` and
 > for a sheaf of sets, with no further hypothesis.** For a flat 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
@@ -111,7 +111,7 @@ def primedPushforwardAmbientEquiv' (hf : AlgebraicStacks.IsFlat B S hS f)
       (f.hom.hom.toFunctor.op.ran.obj ℱ).obj (op y.obj)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.primedPushforwardAmbientEquiv'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean#L247). The attribute's comment: “part (1), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the lisse-étale site, at one smooth object `y` of `𝒴` and for a sheaf of sets, with NO hypothesis beyond the sheaf condition on `ℱ`: the topology on the 2-fibre product `V ×_{y, 𝒴} 𝒳` that `AlgebraicGeometry.Stack.LisseEtale.primedPushforwardAmbientEquiv` takes as `J` is `AlgebraicGeometry.Stack.ambientTwoFibreProductTopology`, and its arguments `hℱ`, `hfac` and `hconn` are the theorems `AlgebraicGeometry.Stack.isSheaf_comp_ambientProjection`, `AlgebraicGeometry.Stack.LisseEtale.hasLocalFactorizations_primedInclusion` and `AlgebraicGeometry.Stack.LisseEtale.hasLocallyConnectedFactorizations_primedInclusion`, each proved for every algebraic stack. The site functor itself and its continuity and cocontinuity, which are the first assertion of the tag, are registered in `StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean`. Three pieces of the tag are not covered here: naturality of the bijection in `y`, so that it becomes an equality of sheaves on `𝒴_{lisse,étale}` rather than a family of bijections; the same identity at abelian rather than set coefficients; and the second identity `g'_!(f')^{-1} = f^{-1}g_!`. The first and the third are registered in `StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean`; the abelian form is claimed nowhere in the tree, and the tag does not ask for it -- the source's `ℱ` is a sheaf of sets, which is what the functors of a morphism of topoi act on”.
+**`AlgebraicGeometry.Stack.LisseEtale.primedPushforwardAmbientEquiv'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardAmbientUnconditional.lean#L247). The attribute's comment: “part (1), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the lisse-étale site, at one smooth object `y` of `𝒴` and for a sheaf of sets, with NO hypothesis beyond the sheaf condition on `ℱ`: the topology on the 2-fibre product `V ×_{y, 𝒴} 𝒳` that `AlgebraicGeometry.Stack.LisseEtale.primedPushforwardAmbientEquiv` takes as `J` is `AlgebraicGeometry.Stack.ambientTwoFibreProductTopology`, and its arguments `hℱ`, `hfac` and `hconn` are the theorems `AlgebraicGeometry.Stack.isSheaf_comp_ambientProjection`, `AlgebraicGeometry.Stack.LisseEtale.hasLocalFactorizations_primedInclusion` and `AlgebraicGeometry.Stack.LisseEtale.hasLocallyConnectedFactorizations_primedInclusion`, each proved for every algebraic stack. The site functor itself and its continuity and cocontinuity, which are the first assertion of the tag, are registered in `StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean`. Three pieces of the tag are not covered here: naturality of the bijection in `y`, so that it becomes an equality of sheaves on `𝒴_{lisse,étale}` rather than a family of bijections; the same identity at abelian rather than set coefficients; and the second identity `g'_!(f')^{-1} = f^{-1}g_!`. The first and the third are registered in `StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean`; the abelian form is claimed nowhere in the tree, and the tag does not ask for it -- the source's `ℱ` is a sheaf of sets, which is what the functors of a morphism of topoi act on”.
 
 > **Stacks 07AT (1), the identity `f'_*(g')^{-1} = g^{-1}f_*`, at one smooth object of `𝒴` and
 > for a sheaf of sets, with no further hypothesis.** For a smooth 1-morphism `f : 𝒳 ⟶ 𝒴` of
@@ -135,7 +135,7 @@ def primedPushforwardAmbientEquiv' (hf : AlgebraicStacks.IsSmooth B S hS f)
       (f.hom.hom.toFunctor.op.ran.obj ℱ).obj (op y.obj)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.siteFunctorRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L226). The attribute's comment: “part (1), clause (d): the restriction `f'` of a smooth 1-morphism to the lisse-étale sites is a morphism of ringed topoi, at the universe in which the structure sheaf of Stacks 06TV takes its sections. Its structure map is the canonical identification of the two restricted structure sheaves”.
+**`AlgebraicGeometry.Stack.LisseEtale.siteFunctorRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L226). The attribute's comment: “part (1), clause (d): the restriction `f'` of a smooth 1-morphism to the lisse-étale sites is a morphism of ringed topoi, at the universe in which the structure sheaf of Stacks 06TV takes its sections. Its structure map is the canonical identification of the two restricted structure sheaves”.
 
 > **Stacks 07AT** (1), clause (d). **The restriction `f'` of a smooth 1-morphism to the
 > lisse-étale sites is a morphism of ringed topoi.** Its inverse image is restriction along the site
@@ -150,7 +150,7 @@ def siteFunctorRingedToposHom (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsSmooth
       (ringedTopos.{u, w} B S hS 𝒴 (closedUnderSmoothMorphisms.{u, w} B S hS 𝒴))
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.isIso_fSharpInverseImage_siteFunctorRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L248). The attribute's comment: “part (1), clause (d): the structure map of `f'` on the lisse-étale sites is an isomorphism, so `f'` is a flat morphism of ringed topoi”.
+**`AlgebraicGeometry.Stack.LisseEtale.isIso_fSharpInverseImage_siteFunctorRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 248](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L248). The attribute's comment: “part (1), clause (d): the structure map of `f'` on the lisse-étale sites is an isomorphism, so `f'` is a flat morphism of ringed topoi”.
 
 > **Stacks 07AT** (1), clause (d). The structure map of `f'` is an isomorphism: it is the
 > canonical identification of the two restricted structure sheaves.
@@ -161,7 +161,7 @@ theorem isIso_fSharpInverseImage_siteFunctorRingedToposHom (f : 𝒳 ⟶ 𝒴)
     IsIso (siteFunctorRingedToposHom.{u, w} B S hS f hf).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.ringedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L367). The attribute's comment: “part (1), clause (e): the square of ringed topoi formed by `f`, its restriction `f'` to the lisse-étale sites and the two inclusions `g`, `g'` of Stacks 0788 2-commutes. The invertible 2-morphism is the adjoint mate of the canonical morphism of the equality of the two inverse images”.
+**`AlgebraicGeometry.Stack.LisseEtale.ringedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 367](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L367). The attribute's comment: “part (1), clause (e): the square of ringed topoi formed by `f`, its restriction `f'` to the lisse-étale sites and the two inclusions `g`, `g'` of Stacks 0788 2-commutes. The invertible 2-morphism is the adjoint mate of the canonical morphism of the equality of the two inverse images”.
 
 > **Stacks 07AT** (1), clause (e). **The square of ringed topoi 2-commutes**: the composite
 > `g' ∘ f'` and the composite `f ∘ g` are 2-isomorphic as morphisms of ringed topoi
@@ -183,7 +183,7 @@ def ringedSquareTwoIso (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsSmooth B S hS
       (ringedSquareAcrossDown.{u, w} B S hS f hf)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.siteFunctorRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L425). The attribute's comment: “part (2), clause (d): the restriction `f'` of a flat 1-morphism to the flat-fppf sites is a morphism of ringed topoi, at the universe in which the structure sheaf of Stacks 06TV takes its sections. Its structure map is the canonical identification of the two restricted structure sheaves”.
+**`AlgebraicGeometry.Stack.FlatFppf.siteFunctorRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L425). The attribute's comment: “part (2), clause (d): the restriction `f'` of a flat 1-morphism to the flat-fppf sites is a morphism of ringed topoi, at the universe in which the structure sheaf of Stacks 06TV takes its sections. Its structure map is the canonical identification of the two restricted structure sheaves”.
 
 > **Stacks 07AT** (2), clause (d). **The restriction `f'` of a flat 1-morphism to the flat-fppf
 > sites is a morphism of ringed topoi.** Its inverse image is restriction along the site functor,
@@ -194,7 +194,7 @@ def siteFunctorRingedToposHom (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsFlat B
     RingedToposHom (ringedTopos B S hS 𝒳) (ringedTopos B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isIso_fSharpInverseImage_siteFunctorRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L442). The attribute's comment: “part (2), clause (d): the structure map of `f'` on the flat-fppf sites is an isomorphism, so `f'` is a flat morphism of ringed topoi”.
+**`AlgebraicGeometry.Stack.FlatFppf.isIso_fSharpInverseImage_siteFunctorRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 442](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L442). The attribute's comment: “part (2), clause (d): the structure map of `f'` on the flat-fppf sites is an isomorphism, so `f'` is a flat morphism of ringed topoi”.
 
 > **Stacks 07AT** (2), clause (d). The structure map of `f'` is an isomorphism.
 
@@ -204,7 +204,7 @@ theorem isIso_fSharpInverseImage_siteFunctorRingedToposHom (f : 𝒳 ⟶ 𝒴)
     IsIso (siteFunctorRingedToposHom B S hS f hf).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.ringedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L536). The attribute's comment: “part (2), clause (e): the square of ringed topoi formed by `f`, its restriction `f'` to the flat-fppf sites and the two inclusions `g`, `g'` of Stacks 0788 2-commutes. The invertible 2-morphism is the adjoint mate of the canonical morphism of the equality of the two inverse images”.
+**`AlgebraicGeometry.Stack.FlatFppf.ringedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean, line 536](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteRingedSquare.lean#L536). The attribute's comment: “part (2), clause (e): the square of ringed topoi formed by `f`, its restriction `f'` to the flat-fppf sites and the two inclusions `g`, `g'` of Stacks 0788 2-commutes. The invertible 2-morphism is the adjoint mate of the canonical morphism of the equality of the two inverse images”.
 
 > **Stacks 07AT** (2), clause (e). **The square of ringed topoi 2-commutes**: `g' ∘ f'` and
 > `f ∘ g` are 2-isomorphic as morphisms of ringed topoi
@@ -217,7 +217,7 @@ def ringedSquareTwoIso (f : 𝒳 ⟶ 𝒴) (hf : AlgebraicStacks.IsFlat B S hS f
       (ringedSquareDownAcross B S hS f) (ringedSquareAcrossDown B S hS f hf)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.isIso_sheafBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L103). The attribute's comment: “part (1), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the lisse-étale site, on sheaves of sets and natural in the object of the lisse-étale site of `𝒴`: the canonical map of Sites, Section 06UM, which is `CategoryTheory.SubsitePushforward.subsiteRanBaseChange` at the square of `f`, its restriction `f'` and the two inclusions, is invertible. The site functor and its continuity and cocontinuity are registered in `StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean`”.
+**`AlgebraicGeometry.Stack.LisseEtale.isIso_sheafBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 103](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L103). The attribute's comment: “part (1), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the lisse-étale site, on sheaves of sets and natural in the object of the lisse-étale site of `𝒴`: the canonical map of Sites, Section 06UM, which is `CategoryTheory.SubsitePushforward.subsiteRanBaseChange` at the square of `f`, its restriction `f'` and the two inclusions, is invertible. The site functor and its continuity and cocontinuity are registered in `StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSiteFunctor.lean`”.
 
 > **Stacks 07AT** (1), the identity `f'_*(g')^{-1} = g^{-1}f_*`. For a smooth 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks, the canonical map of Sites, Section 06UM from the restriction
@@ -239,7 +239,7 @@ theorem isIso_sheafBaseChange :
       (isContinuous_inclusion_topology'.{u, w} B S hS 𝒴))
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.shriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L136). The attribute's comment: “part (1), the identity `g'_!(f')^{-1} = f^{-1}g_!` for the lisse-étale site, on sheaves of sets: the conjugate of the first identity along the four adjunctions, exactly as the source derives it”.
+**`AlgebraicGeometry.Stack.LisseEtale.shriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L136). The attribute's comment: “part (1), the identity `g'_!(f')^{-1} = f^{-1}g_!` for the lisse-étale site, on sheaves of sets: the conjugate of the first identity along the four adjunctions, exactly as the source derives it”.
 
 > **Stacks 07AT** (1), the identity `g'_!(f')^{-1} = f^{-1}g_!`. It is the conjugate of
 > `AlgebraicGeometry.Stack.LisseEtale.isIso_sheafBaseChange` along the adjointness of `f^{-1}` and
@@ -262,7 +262,7 @@ noncomputable def shriekBaseChangeIso :
         (associatedTopology B S hS 𝒴.val.val.p (etaleTopology B))
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isIso_sheafBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L214). The attribute's comment: “part (2), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the flat-fppf site, on sheaves of sets and natural in the object of the flat-fppf site of `𝒴`: the canonical map of Sites, Section 06UM, which is `CategoryTheory.SubsitePushforward.subsiteRanBaseChange` at the square of `f`, its restriction `f'` and the two inclusions, is invertible. The site functor and its continuity and cocontinuity are registered in `StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean`”.
+**`AlgebraicGeometry.Stack.FlatFppf.isIso_sheafBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L214). The attribute's comment: “part (2), the identity `f'_*(g')^{-1} = g^{-1}f_*` for the flat-fppf site, on sheaves of sets and natural in the object of the flat-fppf site of `𝒴`: the canonical map of Sites, Section 06UM, which is `CategoryTheory.SubsitePushforward.subsiteRanBaseChange` at the square of `f`, its restriction `f'` and the two inclusions, is invertible. The site functor and its continuity and cocontinuity are registered in `StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSiteFunctor.lean`”.
 
 > **Stacks 07AT** (2), the identity `f'_*(g')^{-1} = g^{-1}f_*`. For a flat 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks, the canonical map of Sites, Section 06UM from the restriction
@@ -283,7 +283,7 @@ theorem isIso_sheafBaseChange :
       (isContinuous_inclusion_topology B S hS 𝒴))
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.shriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L247). The attribute's comment: “part (2), the identity `g'_!(f')^{-1} = f^{-1}g_!` for the flat-fppf site, on sheaves of sets: the conjugate of the first identity along the four adjunctions, exactly as the source derives it”.
+**`AlgebraicGeometry.Stack.FlatFppf.shriekBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteSheafPushforwardBaseChange.lean#L247). The attribute's comment: “part (2), the identity `g'_!(f')^{-1} = f^{-1}g_!` for the flat-fppf site, on sheaves of sets: the conjugate of the first identity along the four adjunctions, exactly as the source derives it”.
 
 > **Stacks 07AT** (2), the identity `g'_!(f')^{-1} = f^{-1}g_!`. It is the conjugate of
 > `AlgebraicGeometry.Stack.FlatFppf.isIso_sheafBaseChange` along the adjointness of `f^{-1}` and
@@ -311,7 +311,7 @@ noncomputable def shriekBaseChangeIso :
 
 [Tag 07AU](https://stacks.math.columbia.edu/tag/07AU) in the Stacks Project.
 
-**`CategoryTheory.SubsitePushforward.subsitePushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L315).
+**`CategoryTheory.SubsitePushforward.subsitePushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L315).
 
 > **Stacks 07AU**, equation 103.15.1.1. Let `f : 𝒳 ⥤ 𝒴` be a 1-morphism of categories over a
 > base `𝒞` with `𝒴` fibred in groupoids, and let `𝒳' ⊆ 𝒳` and `𝒴' ⊆ 𝒴` be full subcategories such
@@ -340,7 +340,7 @@ def subsitePushforwardSectionsEquiv (p𝒳 : 𝒳 ⥤ 𝒞) (p𝒴 : 𝒴 ⥤ �
       Presheaf.globalSections ((primedProjection p𝒳 p𝒴 f P c y).op ⋙ ℋ)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.sheafPrimedPushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L424).
+**`AlgebraicGeometry.Stack.FlatFppf.sheafPrimedPushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L424).
 
 > **Stacks 07AU, the flat-fppf case**, equation 103.15.1.1. Let `f : 𝒳 ⟶ 𝒴` be a flat
 > 1-morphism of algebraic stacks, let `ℋ` be a sheaf of sets on the flat-fppf site of `𝒳` and let
@@ -369,7 +369,7 @@ def sheafPrimedPushforwardSectionsEquiv (y : FlatFppf B S hS 𝒴)
       Presheaf.globalSections ((primedProjection B S hS f y).op ⋙ ℋ.obj)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.sheafPrimedPushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L513).
+**`AlgebraicGeometry.Stack.LisseEtale.sheafPrimedPushforwardSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean, line 513](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsitePushforwardFormula.lean#L513).
 
 > **Stacks 07AU, the lisse-étale case**, equation 103.15.1.1. Let `f : 𝒳 ⟶ 𝒴` be a smooth
 > 1-morphism of algebraic stacks, let `ℋ` be a sheaf of sets on the lisse-étale site of `𝒳` and let
@@ -402,7 +402,7 @@ def sheafPrimedPushforwardSectionsEquiv (y : LisseEtale.{u, w} B S hS 𝒴)
 
 [Tag 0GR2](https://stacks.math.columbia.edu/tag/0GR2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImage.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImage.lean#L74). The attribute's comment: “flat-fppf sheafification formula”.
+**`AlgebraicGeometry.Stack.FlatFppf.rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImage.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImage.lean#L74). The attribute's comment: “flat-fppf sheafification formula”.
 
 > **Stacks 0GR2, the flat-fppf case.** The `p`-th higher direct image along the morphism of
 > flat-fppf topoi induced by a flat 1-morphism of algebraic stacks is the sheaf associated to the
@@ -440,7 +440,7 @@ public theorem rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf (p : �
           presheafToSheaf (topology B S hS 𝒴) AddCommGrpCat.{max (u + 1) a})
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.rightDerived_sheafPushforward_iso_sheafify_fibreCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImageFibre.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImageFibre.lean#L73). The attribute's comment: “flat-fppf case: Rᵖf'\_*ℋ is the sheaf associated to y ↦ Hᵖ((V ×\_y 𝒳)', pr'⁻¹ℋ)”.
+**`AlgebraicGeometry.Stack.FlatFppf.rightDerived_sheafPushforward_iso_sheafify_fibreCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImageFibre.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfHigherDirectImageFibre.lean#L73). The attribute's comment: “flat-fppf case: Rᵖf'\_*ℋ is the sheaf associated to y ↦ Hᵖ((V ×\_y 𝒳)', pr'⁻¹ℋ)”.
 
 > **Stacks 0GR2, the flat-fppf case.** Let `f : 𝒳 ⟶ 𝒴` be a flat 1-morphism of algebraic
 > stacks and `f'` the induced morphism of flat-fppf topoi. For every `p` and every abelian sheaf
@@ -496,7 +496,7 @@ public theorem rightDerived_sheafPushforward_iso_sheafify_fibreCohomology (p : �
                 p)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImage.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImage.lean#L81). The attribute's comment: “lisse-étale sheafification formula”.
+**`AlgebraicGeometry.Stack.LisseEtale.rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImage.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImage.lean#L81). The attribute's comment: “lisse-étale sheafification formula”.
 
 > **Stacks 0GR2, the lisse-étale case.** The `p`-th higher direct image along the morphism of
 > lisse-étale topoi induced by a smooth 1-morphism of algebraic stacks is the sheaf associated to
@@ -534,7 +534,7 @@ public theorem rightDerived_sheafPushforward_iso_sheafify_derivedPresheaf (p : �
           presheafToSheaf (topology.{u, w} B S hS 𝒴) AddCommGrpCat.{max (u + 1) a})
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.rightDerived_sheafPushforward_iso_sheafify_fibreCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImageFibre.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImageFibre.lean#L73). The attribute's comment: “lisse-étale case: Rᵖf'\_*ℋ is the sheaf associated to y ↦ Hᵖ((V ×\_y 𝒳)', pr'⁻¹ℋ)”.
+**`AlgebraicGeometry.Stack.LisseEtale.rightDerived_sheafPushforward_iso_sheafify_fibreCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImageFibre.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleHigherDirectImageFibre.lean#L73). The attribute's comment: “lisse-étale case: Rᵖf'\_*ℋ is the sheaf associated to y ↦ Hᵖ((V ×\_y 𝒳)', pr'⁻¹ℋ)”.
 
 > **Stacks 0GR2, the lisse-étale case.** Let `f : 𝒳 ⟶ 𝒴` be a smooth 1-morphism of algebraic
 > stacks and `f'` the induced morphism of lisse-étale topoi. For every `p` and every abelian sheaf
@@ -594,7 +594,7 @@ public theorem rightDerived_sheafPushforward_iso_sheafify_fibreCohomology (p : �
 
 [Tag 0GR3](https://stacks.math.columbia.edu/tag/0GR3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_baseChangeMapPlus_app_lisseEtale_and_flatFppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteDerivedBaseChangeMap.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteDerivedBaseChangeMap.lean#L373). The attribute's comment: “both cases: for f smooth (lisse-étale sites, ℱ on 𝒳\_étale) and for f flat (flat-fppf sites, ℱ on 𝒳\_fppf), the canonical base change map g⁻¹ Rf\_* ℱ ⟶ Rf'\_* (g')⁻¹ ℱ is an isomorphism for every abelian sheaf ℱ, in D⁺ for any model of the derived categories. The map is Stacks.Cohomology.BoundedBelowComplexes.baseChangeMapPlus (the identification g⁻¹ ∘ Rf\_* = R(g⁻¹ ∘ f\_*) for the exact g⁻¹, the derived map of the canonical map g⁻¹f\_* ⟶ f'\_*(g')⁻¹ of Sites 06UM, and the canonical comparison R(f'\_* ∘ (g')⁻¹) ⟶ Rf'\_* ∘ (g')⁻¹ of 05T2) at ℱ in degree zero. The degree-zero isomorphism is 07AT and the acyclicity of restricted injectives for f'\_* is proved by descent”.
+**`AlgebraicGeometry.Stack.isIso_baseChangeMapPlus_app_lisseEtale_and_flatFppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubsiteDerivedBaseChangeMap.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubsiteDerivedBaseChangeMap.lean#L373). The attribute's comment: “both cases: for f smooth (lisse-étale sites, ℱ on 𝒳\_étale) and for f flat (flat-fppf sites, ℱ on 𝒳\_fppf), the canonical base change map g⁻¹ Rf\_* ℱ ⟶ Rf'\_* (g')⁻¹ ℱ is an isomorphism for every abelian sheaf ℱ, in D⁺ for any model of the derived categories. The map is Stacks.Cohomology.BoundedBelowComplexes.baseChangeMapPlus (the identification g⁻¹ ∘ Rf\_* = R(g⁻¹ ∘ f\_*) for the exact g⁻¹, the derived map of the canonical map g⁻¹f\_* ⟶ f'\_*(g')⁻¹ of Sites 06UM, and the canonical comparison R(f'\_* ∘ (g')⁻¹) ⟶ Rf'\_* ∘ (g')⁻¹ of 05T2) at ℱ in degree zero. The degree-zero isomorphism is 07AT and the acyclicity of restricted injectives for f'\_* is proved by descent”.
 
 > **Stacks 0GR3.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks, and as in **Stacks 07AT**
 > let `f'` be its restriction to the lisse-étale sites when `f` is smooth (respectively to the
@@ -690,4 +690,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.15, Tag 0GR1](https://stacks.math.columbia.edu/tag/0GR1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

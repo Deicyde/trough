@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "api_maps": [
   {
    "file": "Physlib/ClassicalFieldTheory/GaugeTheory/API-map.md",
@@ -137,6 +137,111 @@
     "3": "Standard Model gauge group API map — Physlib/Particles/StandardModel/GaugeGroup/API-map.md",
     "4": "Wikipedia, Gauge theory, https://en.wikipedia.org/wiki/Gauge_theory",
     "5": "Physlib GitHub issue #859, https://github.com/leanprover-community/physlib/issues/859"
+   }
+  },
+  {
+   "file": "Physlib/ClassicalFieldTheory/GreenOperator/API-map.md",
+   "folder": "Physlib/ClassicalFieldTheory/GreenOperator",
+   "title": "Green operators and the causal propagator",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### Compact sources and causal support\n\nLet $P$ be a linear operator on a space of admissible fields. Locality means\nthat $P$ cannot enlarge a field's closed support, so it acts on compactly\nsupported fields as well. [1] A retarded Green operator sends a compactly\nsupported source $f$ to a solution of $Pu=f$ supported in the causal future\nof the closed support of $f$. The advanced operator uses the causal past.\nBoth are linear and recover a compactly supported field $v$ when applied to\n$Pv$. A Green pair bundles these two inverses for the same $P$ and causal\nrelation. [2] Bär uses the opposite naming convention for the two time\ndirections. {1}\n\n### The causal propagator\n\nThe sign convention is $E=G_{\\mathrm{ret}}-G_{\\mathrm{adv}}$. Applying $P$\nto either response gives the same source, so $PEf=0$. The response is\nsupported in the union of the source's causal future and causal past. A\nfield is spacelike compact when its closed support lies in such a union\nfor some compact set. Thus $E$ maps compact sources to spacelike-compact\nhomogeneous solutions. [3][4][5]\n\nThe propagator annihilates every source of the form $Pv$ with $v$ compactly\nsupported. For the converse, assume that the intersection of the causal\nfuture of one compact set with the causal past of another is always compact.\nIf $Ef=0$, the retarded and advanced responses agree. Their common support\nlies in the intersection of the future and past of the source support, so\nthe common response is itself compactly supported and gives a compact\npreimage under $P$. [3][6]\n\n### Past-compact sources and the exact sequence\n\nA source is past compact when its closed support has compact intersection\nwith the causal past of every compact set. [3][7] Given localization data,\nthe retarded response near an event can be computed from a compact\ntruncation of the source. The truncation agrees locally with the source\nthroughout the causal past of a compact observation set whose causal\npast contains a neighborhood of the event. These responses agree on\noverlaps and glue. With compact causal diamonds, the construction gives a\ntwo-sided linear inverse for $P$ on past-compact fields and retains the\ncausal-future support bound. Time reversal supplies the corresponding\nconstruction for advanced propagation. [8][9] For the smooth spacetime\nsetting in the literature, see {1}.\n\nAssume compact causal diamonds and that every spacelike-compact field can\nbe written as the difference of a future-supported field and a past-supported\nfield, each supported to one side of a compact set. Assume also that $P$\nis injective on fields supported in the future\nof a compact set, and separately on fields supported in the past of a compact\nset. Then every spacelike-compact homogeneous solution is $Ef$ for some compact\nsource $f$. The propagator identifies the compact source space modulo the image\nof $P$ on compact fields with the spacelike-compact homogeneous solution\nspace. [10][11] Given both orientations of the\nlocalization data, compact causal diamonds and causal cutoffs give the full\nexact sequence\n$0\\to S_c\\xrightarrow{P} S_c\\xrightarrow{E} S_{sc}\\xrightarrow{P} S_{sc}\\to 0$,\nwhere $S_c$ and $S_{sc}$ are the compactly supported and spacelike-compact\nadmissible fields. [12]\n\n### Klein–Gordon on Minkowski spacetime\n\nIn any spatial dimension, the Klein–Gordon equation has a Green pair for\nsmooth fields valued in a complex Banach space, for any real mass parameter.\nThe construction uses a spatial Fourier response. A real scalar Green pair\nis also available. [13] In the complex Banach-valued setting the API proves\nuniqueness of the retarded solution with the causal-future support bound for\neach compact source, as well as the exact sequence and the quotient\ndescription above. [14]"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "PhyslibAlpha/Mathematics/Analysis/LocalOperator.lean",
+     "names": [
+      "LocalOperator",
+      "compactFields",
+      "compactOperator"
+     ]
+    },
+    "2": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean",
+     "names": [
+      "RetardedGreenOperator",
+      "AdvancedGreenOperator",
+      "GreenOperators"
+     ]
+    },
+    "3": {
+     "file": "PhyslibAlpha/Mathematics/Order/CausalRelation.lean",
+     "names": [
+      "causalHull",
+      "IsSpacelikeCompact",
+      "HasCompactCausalDiamonds",
+      "IsPastCompact"
+     ]
+    },
+    "4": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean",
+     "names": [
+      "spacelikeCompactSolution"
+     ]
+    },
+    "5": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/CausalPropagator.lean",
+     "names": [
+      "causalPropagator",
+      "causalPropagator_solves",
+      "causalPropagator_support",
+      "toSolutionSpace"
+     ]
+    },
+    "7": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean",
+     "names": [
+      "pastCompactFields"
+     ]
+    },
+    "8": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean",
+     "names": [
+      "PastLocalization",
+      "retardedValue_eq_on_past_bound",
+      "retardedSection",
+      "retardedExtension",
+      "retardedExtension_support"
+     ]
+    },
+    "9": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean",
+     "names": [
+      "reverse"
+     ]
+    },
+    "10": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/CausalPropagator.lean",
+     "names": [
+      "HasCausalCutoffs"
+     ]
+    },
+    "11": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Uniqueness.lean",
+     "names": [
+      "toSolutionSpace_surjective",
+      "solutionSpaceEquivQuotient",
+      "solutionSpaceEquivQuotient_symm_mk"
+     ]
+    },
+    "12": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Uniqueness.lean",
+     "names": [
+      "causalGreen_exactSequence"
+     ]
+    },
+    "13": {
+     "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean",
+     "names": [
+      "greenOperators",
+      "realGreenOperators"
+     ]
+    }
+   },
+   "references": {
+    "1": "Christian Bär, [Green-hyperbolic operators on globally hyperbolic spacetimes](https://arxiv.org/abs/1310.0738v2). Communications in Mathematical Physics 333, 1585–1615 (2015), Definition 3.1 and Theorems 3.8 and 3.22."
    }
   },
   {
@@ -295,7 +400,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Phase space and observables\n\nA configuration space Q is a smooth manifold without boundary {1}. [1] For finite-dimensional Q,\nits canonical Hamiltonian phase space is the cotangent bundle T*Q: a state consists of a\nconfiguration q and a momentum covector at q. [TODO] This space carries a canonical symplectic form,\nindependently of the choice of Hamiltonian {6}. [TODO] In the coordinate formulation on a complete\nreal inner-product space X, states are pairs (p, q) in X × X, and observables are real-valued\nfunctions f(p, q), with momentum first. [2] Identifying the cotangent phase space of a Euclidean\nconfiguration space with this coordinate representation uses the inner product to represent\ncovectors as momentum vectors. [TODO]\n\n### Hamiltonians and Hamiltonian trajectories\n\nA Hamiltonian system consists of a phase space and a smooth real-valued Hamiltonian, possibly\ntime-dependent and defined on an open domain. [TODO] The phase space describes kinematics; choosing the\nHamiltonian specifies dynamics through the symplectic form {2}{6}. [TODO] In coordinates, curves\np(t) and q(t) satisfy Hamilton's equations q̇ = ∇ₚH and ṗ = −∇qH exactly when the Hamilton\nequation operator vanishes. [3] The symplectic definition of Hamiltonian trajectories agrees with\nthese coordinate equations. [TODO] For a smooth Hamiltonian and a smooth phase-space curve, the\nvariational gradient of the action ∫ (⟨p, q̇⟩ − H(t, p, q)) dt is that operator. [4]\n\nFor a finite-dimensional real normed configuration space E, an open domain U in E* × E and a\nsmooth Hamiltonian H on Time × U determine a Hamiltonian system on U with the canonical symplectic\nform; E* denotes the continuous dual, containing the momenta {6}. [TODO]\n\nTaking E = ℝ, positive mass m and spring constant k gives the harmonic-oscillator Hamiltonian\nH(p, q) = p²/(2m) + k q²/2, which is smooth on the whole phase space. [12] Taking E = ℝ³, positive\nmass m and a radial potential V smooth at positive radii gives the central-force Hamiltonian\nH(p, q) = ‖p‖²/(2m) + V(‖q‖), smooth on the open domain U = {(p, q) | q ≠ 0}. [14] Using the\nEuclidean inner product to identify momenta with vectors, both are Hamiltonian systems obtained\nby the preceding construction. [TODO]\n\nThe Legendre map sends a velocity v to its conjugate momentum p = ∂L/∂v. If this map has a smooth\ninverse over time and configuration space, the Hamiltonian H(t, p, q) = p(v) − L(t, q, v), with\nv recovered from (t, p, q), gives the equivalent Hamiltonian description of a Lagrangian system\n{5}{6}. [TODO]\n\n### Poisson brackets and observable evolution\n\nThe coordinate Poisson bracket is {f, g} = ⟨∇qf, ∇ₚg⟩ − ⟨∇ₚf, ∇qg⟩. [2] It is antisymmetric,\nbilinear and satisfies the Leibniz rule, with the differentiability assumptions needed for the\ngradient rules. [5] Along a differentiable solution of Hamilton's equations, a time-independent\nobservable differentiable at the current state satisfies d f(p(t), q(t))/dt = {f, H(t)}(p(t), q(t)).\n[6] The canonical coordinate relations are {qᵢ, pⱼ} = δᵢⱼ, {qᵢ, qⱼ} = {pᵢ, pⱼ} = 0, and smooth\nobservables satisfy the Jacobi identity. [TODO]\n\n### Symmetries and conserved quantities\n\nFor a time-independent differentiable observable along a differentiable Hamiltonian trajectory,\na vanishing Poisson bracket with the Hamiltonian implies zero time derivative. [6] A smooth\nautonomous Hamiltonian Poisson-commutes with itself and has zero time derivative along its\nHamiltonian trajectories. [5][6] These quantities are constant on connected time intervals,\ngiving energy conservation in the autonomous case. [TODO]\n\nOn a finite-dimensional real symplectic vector space, an affine infinitesimally symplectic Lie\nalgebra action has a moment map whose components generate the action's vector fields through\ntheir symplectic gradients. [7] If an autonomous Hamiltonian is invariant under a generator, the\ncorresponding moment-map component is constant along its Hamiltonian trajectories. [8]\n\n### Integrability\n\nFor an autonomous Hamiltonian on a 2d-dimensional Euclidean phase space, Liouville integrability\non an open dense domain U consists of d smooth observables, including the Hamiltonian, that\npairwise Poisson-commute and whose phase-space gradients are linearly independent on U. [9] Each\nhas zero time derivative along a differentiable Hamiltonian trajectory at times when the state\nlies in U. [10] With one degree of freedom, the Hamiltonian alone gives integrability on any open\ndense domain where it is smooth and its phase-space gradient is nonzero. [11] The Liouville–Arnold\ntheorem identifies compact connected regular common level sets as invariant tori and supplies\nlocal action–angle coordinates {6}. [TODO]\n\n### Existing examples and their connections\n\nThe harmonic oscillator {3} and simple pendulum {4} have explicit canonical momenta and\nHamiltonians, with Hamiltonian, Newtonian and variational descriptions agreeing for smooth\ntrajectories. The pendulum is expressed using a real lift of its angle. [12][13]\n\nThree-dimensional central-force systems have Hamiltonians smooth away from the centre. [14]\nTheir angular-momentum observables L² and Lz Poisson-commute with each other and with the\nHamiltonian away from the centre. [15] Their functional independence on a suitable open dense\ndomain gives central-force Liouville integrability. [TODO]\n\nA point particle of positive mass m in a Euclidean configuration space with a smooth potential V\nhas Lagrangian L(q, v) = m ‖v‖²/2 − V(q) and Hamiltonian H(p, q) = ‖p‖²/(2m) + V(q), linked by\nthe momentum p = m v. [TODO]"
+     "text": "### Phase space and observables\n\nA configuration space Q is a smooth manifold without boundary {1}. [1] For finite-dimensional Q,\nits canonical Hamiltonian phase space is the cotangent bundle T*Q: a state consists of a\nconfiguration q and a momentum covector at q. [16] This space carries a canonical symplectic form,\nindependently of the choice of Hamiltonian {6}. [TODO] In the coordinate formulation on a complete\nreal inner-product space X, states are pairs (p, q) in X × X, and observables are real-valued\nfunctions f(p, q), with momentum first. [2] Identifying the cotangent phase space of a Euclidean\nconfiguration space with this coordinate representation uses the inner product to represent\ncovectors as momentum vectors. [17]\n\n### Hamiltonians and Hamiltonian trajectories\n\nA Hamiltonian system consists of a phase space and a smooth real-valued Hamiltonian, possibly\ntime-dependent and defined on an open domain. [18] The phase space describes kinematics; choosing the\nHamiltonian specifies dynamics through the symplectic form {2}{6}. [TODO] In coordinates, curves\np(t) and q(t) satisfy Hamilton's equations q̇ = ∇ₚH and ṗ = −∇qH exactly when the Hamilton\nequation operator vanishes. [3] The symplectic definition of Hamiltonian trajectories agrees with\nthese coordinate equations. [TODO] For a smooth Hamiltonian and a smooth phase-space curve, the\nvariational gradient of the action ∫ (⟨p, q̇⟩ − H(t, p, q)) dt is that operator. [4]\n\nFor a finite-dimensional real normed configuration space E, an open domain U in E* × E and a\nsmooth Hamiltonian H on Time × U determine a Hamiltonian system on U with the canonical symplectic\nform; E* denotes the continuous dual, containing the momenta {6}. [TODO]\n\nTaking E = ℝ, positive mass m and spring constant k gives the harmonic-oscillator Hamiltonian\nH(p, q) = p²/(2m) + k q²/2, which is smooth on the whole phase space. [12] Taking E = ℝ³, positive\nmass m and a radial potential V smooth at positive radii gives the central-force Hamiltonian\nH(p, q) = ‖p‖²/(2m) + V(‖q‖), smooth on the open domain U = {(p, q) | q ≠ 0}. [14] Using the\nEuclidean inner product to identify momenta with vectors, both are Hamiltonian systems obtained\nby the preceding construction. [TODO]\n\nThe Legendre map sends a velocity v to its conjugate momentum p = ∂L/∂v. If this map has a smooth\ninverse over time and configuration space, the Hamiltonian H(t, p, q) = p(v) − L(t, q, v), with\nv recovered from (t, p, q), gives the equivalent Hamiltonian description of a Lagrangian system\n{5}{6}. [TODO]\n\n### Poisson brackets and observable evolution\n\nThe coordinate Poisson bracket is {f, g} = ⟨∇qf, ∇ₚg⟩ − ⟨∇ₚf, ∇qg⟩. [2] It is antisymmetric,\nbilinear and satisfies the Leibniz rule, with the differentiability assumptions needed for the\ngradient rules. [5] Along a differentiable solution of Hamilton's equations, a time-independent\nobservable differentiable at the current state satisfies d f(p(t), q(t))/dt = {f, H(t)}(p(t), q(t)).\n[6] The canonical coordinate relations are {qᵢ, pⱼ} = δᵢⱼ, {qᵢ, qⱼ} = {pᵢ, pⱼ} = 0, and smooth\nobservables satisfy the Jacobi identity. [TODO]\n\n### Symmetries and conserved quantities\n\nFor a time-independent differentiable observable along a differentiable Hamiltonian trajectory,\na vanishing Poisson bracket with the Hamiltonian implies zero time derivative. [6] A smooth\nautonomous Hamiltonian Poisson-commutes with itself and has zero time derivative along its\nHamiltonian trajectories. [5][6] These quantities are constant on connected time intervals,\ngiving energy conservation in the autonomous case. [20]\n\nOn a finite-dimensional real symplectic vector space, an affine infinitesimally symplectic Lie\nalgebra action has a moment map whose components generate the action's vector fields through\ntheir symplectic gradients. [7] If an autonomous Hamiltonian is invariant under a generator, the\ncorresponding moment-map component is constant along its Hamiltonian trajectories. [8]\n\n### Integrability\n\nFor an autonomous Hamiltonian on a 2d-dimensional Euclidean phase space, Liouville integrability\non an open dense domain U consists of d smooth observables, including the Hamiltonian, that\npairwise Poisson-commute and whose phase-space gradients are linearly independent on U. [9] Each\nhas zero time derivative along a differentiable Hamiltonian trajectory at times when the state\nlies in U. [10] With one degree of freedom, the Hamiltonian alone gives integrability on any open\ndense domain where it is smooth and its phase-space gradient is nonzero. [11] The Liouville–Arnold\ntheorem identifies compact connected regular common level sets as invariant tori and supplies\nlocal action–angle coordinates {6}. [TODO]\n\n### Existing examples and their connections\n\nThe harmonic oscillator {3} and simple pendulum {4} have explicit canonical momenta and\nHamiltonians, with Hamiltonian, Newtonian and variational descriptions agreeing for smooth\ntrajectories. The pendulum is expressed using a real lift of its angle. [12][13]\n\nThree-dimensional central-force systems have Hamiltonians smooth away from the centre. [14]\nThey define Hamiltonian systems on this domain. [19]\nTheir angular-momentum observables L² and Lz Poisson-commute with each other and with the\nHamiltonian away from the centre. [15] Their functional independence on a suitable open dense\ndomain gives central-force Liouville integrability. [TODO]\n\nA point particle of positive mass m in a Euclidean configuration space with a smooth potential V\nhas Lagrangian L(q, v) = m ‖v‖²/2 − V(q) and Hamiltonian H(p, q) = ‖p‖²/(2m) + V(q), linked by\nthe momentum p = m v. [TODO]"
     }
    ],
    "lean": {
@@ -360,6 +465,37 @@
       "poissonBracket_angularMomentumSq_angularMomentumZ",
       "poissonBracket_angularMomentumSq_hamiltonian",
       "poissonBracket_angularMomentumZ_hamiltonian"
+     ]
+    },
+    "16": {
+     "file": "Physlib/ClassicalMechanics/PhaseSpace/Basic.lean",
+     "names": [
+      "PhaseSpace",
+      "PhaseSpace.position",
+      "PhaseSpace.momentum",
+      "PhaseSpace.contMDiff_position",
+      "PhaseSpace.contMDiff_zeroMomentum"
+     ]
+    },
+    "17": {
+     "file": "Physlib/ClassicalMechanics/PhaseSpace/Basic.lean",
+     "names": [
+      "PhaseSpace.normedSpaceDiffeomorph",
+      "PhaseSpace.innerProductSpaceDiffeomorph"
+     ]
+    },
+    "18": {
+     "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean",
+     "names": [
+      "HamiltonianSystem",
+      "HamiltonianSystem.ofNormedSpace",
+      "HamiltonianSystem.ofInnerProductSpace"
+     ]
+    },
+    "19": {
+     "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean",
+     "names": [
+      "CentralForce.toHamiltonianSystem"
      ]
     }
    },
@@ -474,7 +610,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Lagrangian systems and the action\n\nA Lagrangian system on a configuration space M {1} is a smooth function L : Time × TM → ℝ of\ntime {2} and of the positions and velocities, depending on first derivatives only. [1] A smooth\nvariation of a curve γ on [t₀, t₁] is a smooth family of curves starting at γ and fixing γ(t₀)\nand γ(t₁). [2] The action of γ is ∫ L(t, γ, γ̇) dt over [t₀, t₁], and γ is a critical point of\nthe action when it is smooth and every variation has zero first variation of the action {3}.\n[3] On a normed space, the action is the integral of L(t, q, q̇) along the coordinate curve. [4]\n\n### Equations of motion\n\nOn a normed space, a smooth curve is a critical point of the action over [t₀, t₁] with\nt₀ ≠ t₁ if and only if the Euler–Lagrange equations hold. [5] A smooth curve is a critical point\nof the action if and only if the Euler–Lagrange equations hold in every chart {4}. [TODO]\nLagrangians L(q, q̇, t) written in generalised coordinates are Lagrangian systems {5}. [TODO]\n\n### Symmetries and conservation laws\n\nNoether's theorem: if an autonomous Lagrangian system admits a one-parameter group of\ndiffeomorphisms of M, then its Lagrange equations have a first integral {4}. [TODO] The\nconservation of momentum and of angular momentum follow from Noether's theorem. [TODO] The energy\nof an autonomous Lagrangian system is constant along its motions. [TODO]\n\n### Natural systems\n\nA natural system is one whose Lagrangian is kinetic minus potential energy, the kinetic energy\ncoming from a Riemannian metric on M. [TODO]"
+     "text": "### Lagrangian systems and the action\n\nA Lagrangian system on a configuration space M {1} is a smooth function L : Time × TM → ℝ of\ntime {2} and of the positions and velocities, depending on first derivatives only. [1] A smooth\nvariation of a curve γ on [t₀, t₁] is a smooth family of curves starting at γ and fixing γ(t₀)\nand γ(t₁). [2] The action of γ is ∫ L(t, γ, γ̇) dt over [t₀, t₁], and γ is a critical point of\nthe action when it is smooth and every variation has zero first variation of the action {3}.\n[3] On a normed space, the action is the integral of L(t, q, q̇) along the coordinate curve. [4]\nIn a chart, the Lagrangian is a smooth function L(t, q, q̇) over the chart target. [6]\n\n### Equations of motion\n\nOn a normed space, a smooth curve is a critical point of the action over [t₀, t₁] with\nt₀ ≠ t₁ if and only if the Euler–Lagrange equations hold. [5] A smooth curve is a critical point\nof the action if and only if the Euler–Lagrange equations hold in every chart {4}. [TODO]\nLagrangians L(q, q̇, t) written in generalised coordinates are Lagrangian systems {5}. [TODO]\n\n### Symmetries and conservation laws\n\nNoether's theorem: if an autonomous Lagrangian system admits a one-parameter group of\ndiffeomorphisms of M, then its Lagrange equations have a first integral {4}. [TODO] The\nconservation of momentum and of angular momentum follow from Noether's theorem. [TODO] The energy\nof an autonomous Lagrangian system is constant along its motions. [TODO]\n\n### Natural systems\n\nA natural system is one whose Lagrangian is kinetic minus potential energy, the kinetic energy\ncoming from a Riemannian metric on M. [TODO]"
     }
    ],
    "lean": {
@@ -1519,7 +1655,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Pointwise Higgs values\n\nThe pointwise Higgs values form a two-dimensional complex Euclidean space. [1] They carry an\northonormal basis, and a real mass scale determines a Higgs vector with the expected norm. [2]\nThey correspond to four real scalar coordinates. [3]\n\nThe global Standard Model gauge group {1} acts on them through a representation, given explicitly as\na U(1) phase times an SU(2) matrix and compatible with the group law. [4] That representation\npreserves inner products and norms. [5] Two Higgs vectors lie in the same gauge orbit exactly when\nthey have the same norm. The electromagnetic U(1) leaves the Higgs vacuum (0, v) invariant, and\none of its elements removes the phase of the first component. [6] The stability group of a Higgs vector is the gauge group it leaves\nunbroken: for the vacuum (0, √a) it is SU(3) × U(1)_EM, for any other nonzero Higgs vector it is\na conjugate of this, and the subgroup fixing every Higgs vector is SU(3) × ℤ₆. [7] Pairs of Higgs vectors, with this\ngauge action, are the configurations of the two Higgs doublet model {2}.\n\n### The Higgs bundle and Higgs fields\n\nThe Higgs bundle over spacetime {3} is a smooth vector bundle, currently the trivial bundle with\nfibre the pointwise Higgs values. [8] It is the bundle associated to the gauge group, rather than\nthe trivial one. [TODO]\n\nHiggs fields are smooth sections of the Higgs bundle; each has an underlying map to pointwise\nHiggs values, and every Higgs vector gives a constant field. [9] The components of a Higgs field\nare smooth, real and imaginary parts alike. [10] The pointwise inner product of two Higgs fields\nhas an explicit expansion, is conjugate symmetric and additive, and is smooth. [11] The pointwise\nnorm squared of a Higgs field is the real part of its inner product with itself, is nonnegative,\nand is smooth. [12]\n\nGauge transformations act on Higgs fields pointwise; two Higgs fields lie in the same orbit\nexactly when their pointwise norms squared agree, and every smooth nonnegative function on\nspacetime is the norm squared of some Higgs field. [13][TODO] Since the gauge group preserves\ninner products and norms of Higgs vectors, the pointwise inner product and norm squared of Higgs\nfields are gauge invariant. [5]\n\n### The Higgs potential\n\nThe Standard Model Higgs potential {4} has a mass parameter and a quartic coupling, and evaluates\nsmoothly on a Higgs field; negating both parameters negates the potential, and the potential\nvanishes on the zero field; at each spacetime point it is gauge invariant. [14] Completing the\nsquare writes it as a quadratic in the norm squared, whose discriminant is nonnegative and\nvanishes exactly in a characterized case. [15]\n\nA bounded-below potential has nonnegative quartic coupling, and a positive quartic coupling makes\nit bounded below. [16] The values it attains, its bounds when the discriminant vanishes, and its\nminimum for positive and maximum for negative quartic coupling are all determined\nexplicitly. [16]\n\n### Effective potentials\n\nAn effective potential is a function on pointwise Higgs values; when it is gauge invariant it is\nconstant on gauge orbits and so factors through the norm. [17] An effective potential of bounded\nmass dimension is polynomial, splits into homogeneous terms of each mass dimension whose odd terms\nvanish when it is invariant, and is then a sum of powers of the norm. [18] Effective potentials\ndetermine potentials on Higgs fields, so that field-level statements follow from pointwise\ninvariant ones. [TODO] Higgs fields have covariant derivatives and kinetic terms, built from a\ngauge connection over spacetime. [TODO]"
+     "text": "### Pointwise Higgs values\n\nThe pointwise Higgs values form a two-dimensional complex Euclidean space. [1] They carry an\northonormal basis, and a real mass scale determines a Higgs vector with the expected norm. [2]\nThey correspond to four real scalar coordinates. [3]\n\nThe global Standard Model gauge group {1} acts on them through a representation, given explicitly as\na U(1) phase times an SU(2) matrix and compatible with the group law. [4] That representation\npreserves inner products and norms. [5] Two Higgs vectors lie in the same gauge orbit exactly when\nthey have the same norm. The electromagnetic U(1) leaves the Higgs vacuum (0, v) invariant, and\none of its elements removes the phase of the first component. [6] The stability group of a Higgs vector is the gauge group it leaves\nunbroken: for the vacuum (0, √a) it is SU(3) × U(1)_EM, for any other nonzero Higgs vector it is\na conjugate of this, and the subgroup fixing every Higgs vector is SU(3) × ℤ₆. [7] Pairs of Higgs vectors, with this\ngauge action, are the configurations of the two Higgs doublet model {2}.\n\n### The Higgs bundle and Higgs fields\n\nThe Higgs bundle over spacetime {3} is a smooth vector bundle, currently the trivial bundle with\nfibre the pointwise Higgs values. [8] It is the bundle associated to the gauge group, rather than\nthe trivial one. [TODO]\n\nA Higgs field has a Higgs vector as its value at each spacetime point, and every Higgs vector\ndefines a constant field. [9] The real and imaginary parts of its components are real analytic. [10]\nThe pointwise inner product of two Higgs fields has an explicit expansion, is conjugate\nsymmetric and additive, and is smooth. [11] The squared norm is the real part of the inner product\nof the field with itself; it is nonnegative and smooth. [12] Which scalar functions on spacetime\noccur as these squared norms? [TODO]\n\nThe weak isospin factor SU(2) acts on the two complex components of a Higgs doublet, with the\ncolour and hypercharge factors set to the identity. [4] In the trivial bundle, on a region where\nthe doublet is nowhere zero, a local weak rotation sends it to the neutral representative whose\nsecond component is its norm. For a $C^n$ doublet the chosen rotation has $C^n$ matrix entries on\nthe region. [13] This is the scalar part of unitary gauge: the doublet's direction is fixed while\nits magnitude can vary across spacetime.\n\nOn a region where the first of two $C^n$ doublets is nowhere zero, their pointwise squared norms\nagree exactly when a weak rotation with $C^n$ matrix entries carries the first to the second\nthere. For Higgs fields this gives real analytic matrix entries on that region. [14] A pointwise\naction of the full local Standard Model gauge group on Higgs sections requires transformations\ncompatible with the analyticity of the fields. [TODO]\n\n### The Higgs potential\n\nThe Standard Model Higgs potential {4} has a mass parameter and a quartic coupling, and evaluates\nsmoothly on a Higgs field; negating both parameters negates the potential, and the potential\nvanishes on the zero field; at each spacetime point it is gauge invariant. [15] Completing the\nsquare writes it as a quadratic in the norm squared, whose discriminant is nonnegative and\nvanishes exactly in a characterized case. [16]\n\nA bounded-below potential has nonnegative quartic coupling, and a positive quartic coupling makes\nit bounded below. [17] The values it attains, its bounds when the discriminant vanishes, and its\nminimum for positive and maximum for negative quartic coupling are all determined\nexplicitly. [17]\n\n### Effective potentials\n\nAn effective potential is a function on pointwise Higgs values; when it is gauge invariant it is\nconstant on gauge orbits and so factors through the norm. [18] An effective potential of bounded\nmass dimension is polynomial, splits into homogeneous terms of each mass dimension whose odd terms\nvanish when it is invariant, and is then a sum of powers of the norm. [19] Effective potentials\ndetermine potentials on Higgs fields, so that field-level statements follow from pointwise\ninvariant ones. [TODO] Higgs fields have covariant derivatives and kinetic terms, built from a\ngauge connection over spacetime. [TODO]"
     }
    ],
    "lean": {
@@ -1643,12 +1779,13 @@
     "13": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/Basic.lean",
      "names": [
-      "gaugeAction",
-      "guage_orbit",
-      "gauge_orbit_surject"
+      "toRealGroupElem_toSU2_of_ne_zero",
+      "toRealGroupElem_eq_toSU2",
+      "toRealGroupElem_toSU2_apply_self",
+      "contDiffOn_toRealGroupElem_toSU2"
      ]
     },
-    "14": {
+    "15": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
      "names": [
       "Potential",
@@ -1662,7 +1799,7 @@
       "toFun_eq_of_repGaugeGroupI"
      ]
     },
-    "15": {
+    "16": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
      "names": [
       "complete_square",
@@ -1674,7 +1811,7 @@
       "quadDiscrim_eq_zero_iff_normSq"
      ]
     },
-    "16": {
+    "17": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
      "names": [
       "IsBounded",
@@ -1688,7 +1825,7 @@
       "isMaxOn_iff_field_of_𝓵_neg"
      ]
     },
-    "17": {
+    "18": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/EffectivePotential.lean",
      "names": [
       "EffectivePotential",
@@ -1698,7 +1835,7 @@
       "factors_through_norm"
      ]
     },
-    "18": {
+    "19": {
      "file": "Physlib/Particles/StandardModel/HiggsBoson/EffectivePotential.lean",
      "names": [
       "HasMaxMassDimLE",
@@ -1762,6 +1899,56 @@
     "5": "Physlib GitHub issue #877, https://github.com/leanprover-community/physlib/issues/877",
     "6": "J. Lurie, *On the classification of topological field theories*, Current Developments in Mathematics 2008 (2009), 129–280.",
     "7": "E. Witten, *Quantum field theory and the Jones polynomial*, Communications in Mathematical Physics 121 (1989), 351–399."
+   }
+  },
+  {
+   "file": "Physlib/QuantumMechanics/Blackbody/API-map.md",
+   "folder": "Physlib/QuantumMechanics/Blackbody",
+   "title": "Blackbody radiation",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### Frequency and wavelength spectra\n\nA black body is specified by its temperature. For positive frequency $\\nu$ and temperature $T$,\nits spectral radiance per unit frequency is given by Planck's law,\n$B_\\nu(T)=2h\\nu^3/[c^2(\\exp(h\\nu/(k_B T))-1)]$. This radiance is positive in that domain and\nvanishes at zero frequency and at absolute zero. [1]\n\nThe wavelength density at $\\lambda>0$ measures radiance over an interval in wavelength. At\npositive temperature, the change of variable $\\nu=c/\\lambda$ gives\n$B_\\lambda(T)=(c/\\lambda^2) B_\\nu(T)|_{\\nu=c/\\lambda}$, where $c/\\lambda^2$ is the magnitude of the\nJacobian. [2]\n\n### Energy per mode and the classical comparison\n\nA mode of frequency $\\nu>0$ is modeled by an oscillator with level spacing $\\varepsilon=h\\nu$.\nIn the canonical ensemble {1}, its levels have energies $n\\varepsilon$ for nonnegative integers\n$n$. At positive temperature, the mean energy is\n$\\varepsilon/(\\exp(\\beta\\varepsilon)-1)$, with $\\beta=1/(k_B T)$. The corresponding classical model\nintegrates over positive energies with Lebesgue measure and has mean energy $k_B T$. [3]\n\nMultiplying each mean energy by the same factor $2\\nu^2/c^2$ gives Planck's spectral radiance and\nthe Rayleigh–Jeans spectral radiance, respectively. The quantized mean energy is strictly below\nthe classical one, so Planck's radiance is strictly below Rayleigh–Jeans at every positive\nfrequency and positive temperature. [4][5]"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean",
+     "names": [
+      "BlackBody",
+      "BlackBody.spectralRadiance",
+      "BlackBody.spectralRadiance_pos",
+      "BlackBody.spectralRadiance_zeroFreq",
+      "BlackBody.spectralRadiance_absZero"
+     ]
+    },
+    "2": {
+     "file": "Physlib/QuantumMechanics/Blackbody/PlancksLaw.lean",
+     "names": [
+      "BlackBody.spectralRadianceWave",
+      "BlackBody.spectralRadianceWave_eq_spectralRadiance"
+     ]
+    },
+    "3": {
+     "file": "PhyslibAlpha/QuantumMechanics/Blackbody/RayleighJeans.lean",
+     "names": [
+      "BlackBody.quantizedOscillator",
+      "BlackBody.quantizedOscillator_meanEnergy",
+      "BlackBody.classicalOscillator",
+      "BlackBody.classicalOscillator_meanEnergy"
+     ]
+    },
+    "4": {
+     "file": "PhyslibAlpha/QuantumMechanics/Blackbody/RayleighJeans.lean",
+     "names": [
+      "BlackBody.rayleighJeans",
+      "BlackBody.rayleighJeans_eq_meanEnergy",
+      "BlackBody.spectralRadiance_eq_meanEnergy"
+     ]
+    }
+   },
+   "references": {
+    "1": "Canonical ensemble API map — Physlib/StatisticalMechanics/CanonicalEnsemble/API-map.md"
    }
   },
   {
@@ -4020,7 +4207,7 @@
    "content": [
     {
      "heading": "Content (Alpha)",
-     "text": "### Frames\n\nA reference frame records a time origin, together with an affine origin and a basis of displacements\nof space {1} at each time. [1] Its time origin converts a real time coordinate into an instant of\ntime {2}. [14] A frame can be built from the trajectories of a collection of reference points,\nprovided those points form an affine basis at every time: one point serves as the origin, and the\ndisplacements from it to the others serve as the basis. [2] The origin and basis of a frame built in\nthis way are exactly those points and displacements. [TODO]\n\nA frame may induce the same inner product on coordinates at every time, in which case it\nconserves its coordinate metric. [3] A frame may also have orthonormal axes at every time; such a\nframe conserves its coordinate metric, and typeclass inference knows this. [4]\n\n### Inertial frames\n\nA frame is inertial when its origin moves with constant velocity and its axes are the same at\nevery time, both measured against the affine structure that space itself supplies. [5] This is a\nrestriction on the observer rather than on whatever is being observed. An inertial frame's origin\nhas a definite constant velocity. [6] Over any elapsed time the origin is displaced by that\nelapsed time multiplied by this velocity. [TODO] An inertial frame conserves its coordinate\nmetric, and typeclass inference knows this. [7]\n\nThe relative motion of two inertial frames is the boost, rotation and translation carrying one to\nthe other, and it induces a transformation law on measured components. [TODO] A frame whose\naxes are constant and whose origin moves with constant velocity relative to an inertial frame is\nitself inertial. [TODO]\n\n### Measured vector quantities\n\nA vector quantity measured by an observer, a relative position, a velocity, an acceleration, a\nforce, a momentum, is a list of components read off that observer's axes. These components have\na carrier of their own, equivalent to the tuples of coordinates. [8] They add and scale\ncomponentwise, inheriting the additive and scalar structure of their entries, regardless of which\nquantity they stand for; the physical dimension, units and transformation law belong to whatever\nsupplies the quantity. [9] The components carry a topology, a continuous linear equivalence with\ncoordinate tuples, and finite dimensionality. [11]\n\nThrough the frame's basis at a given time, such components name a geometric displacement in\nspace, as a linear and as a continuous linear map. [10] Lengths and angles are geometric facts\nabout that displacement rather than about the numbers. For a frame that conserves its coordinate\nmetric, the components carry a norm and an inner product pulled back through the frame basis from\ndisplacement space, so that a displacement keeps its length and its angles even when the axes are\nskew or unequally scaled. [12] In an orthonormal frame these reduce to the familiar Euclidean\nformulas: the sum of the squared components gives the squared length, and the sum of the\ncomponentwise products gives the inner product. [13]\n\nThe derivative of a trajectory expressed in a frame gives the velocity and acceleration that frame\nmeasures, as the time derivative of the coordinate components. [TODO]"
+     "text": "### Frames\n\nA reference frame records a time origin, together with an affine origin and a basis of displacements\nof space {1} at each time. [1] Its time origin converts a real time coordinate into an instant of\ntime {2}. [14] A frame can be built from the trajectories of a collection of reference points,\nprovided those points form an affine basis at every time: one point serves as the origin, and the\ndisplacements from it to the others serve as the basis. [2] The origin and basis of a frame built in\nthis way are exactly those points and displacements. [TODO]\n\nA frame may induce the same inner product on coordinates at every time, in which case it\nconserves its coordinate metric. [3] A frame may also have orthonormal axes at every time; such a\nframe conserves its coordinate metric, and typeclass inference knows this. [4]\n\n### Inertial frames\n\nA frame is inertial when its origin moves with constant velocity and its axes are the same at\nevery time, both measured against the affine structure that space itself supplies. [5] This is a\nrestriction on the observer rather than on whatever is being observed. An inertial frame's origin\nhas a definite constant velocity. [6] Over any elapsed time the origin is displaced by that\nelapsed time multiplied by this velocity. This velocity is uniquely determined by the displacement\nlaw, and the origin has an affine trajectory through its position at the frame's time origin. [15]\nAn inertial frame conserves its coordinate\nmetric, and typeclass inference knows this. [7]\n\nThe relative motion of two inertial frames is the boost, rotation and translation carrying one to\nthe other, and it induces a transformation law on measured components. [TODO] A frame whose\naxes are constant and whose origin moves with constant velocity relative to an inertial frame is\nitself inertial. [TODO]\n\n### Measured vector quantities\n\nA vector quantity measured by an observer, a relative position, a velocity, an acceleration, a\nforce, a momentum, is a list of components read off that observer's axes. These components have\na carrier of their own, equivalent to the tuples of coordinates. [8] They add and scale\ncomponentwise, inheriting the additive and scalar structure of their entries, regardless of which\nquantity they stand for; the physical dimension, units and transformation law belong to whatever\nsupplies the quantity. [9] The components carry a topology, a continuous linear equivalence with\ncoordinate tuples, and finite dimensionality. [11]\n\nThrough the frame's basis at a given time, such components name a geometric displacement in\nspace, as a linear and as a continuous linear map. [10] Lengths and angles are geometric facts\nabout that displacement rather than about the numbers. For a frame that conserves its coordinate\nmetric, the components carry a norm and an inner product pulled back through the frame basis from\ndisplacement space, so that a displacement keeps its length and its angles even when the axes are\nskew or unequally scaled. [12] In an orthonormal frame these reduce to the familiar Euclidean\nformulas: the sum of the squared components gives the squared length, and the sum of the\ncomponentwise products gives the inner product. [13]\n\nThe derivative of a trajectory expressed in a frame gives the velocity and acceleration that frame\nmeasures, as the time derivative of the coordinate components. [TODO]"
     }
    ],
    "lean": {
@@ -4124,6 +4311,14 @@
      "names": [
       "ReferenceFrame.timeOrigin",
       "ReferenceFrame.timeEquiv"
+     ]
+    },
+    "15": {
+     "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
+     "names": [
+      "IsInertial.origin_vsub_eq",
+      "IsInertial.velocity_eq_of_origin_vsub_eq",
+      "IsInertial.origin_eq"
      ]
     }
    },
@@ -4604,6 +4799,81 @@
    "references": {
     "1": "Time API map — Physlib/SpaceAndTime/Time/API-map.md",
     "2": "Space API map — Physlib/SpaceAndTime/Space/API-map.md"
+   }
+  },
+  {
+   "file": "Physlib/SpaceAndTime/WaveVectorSpace/API-map.md",
+   "folder": "Physlib/SpaceAndTime/WaveVectorSpace",
+   "title": "Wavevector space",
+   "content": [
+    {
+     "heading": "Content (Alpha)",
+     "text": "### Wavevectors and their basic structure\n\nA wavevector is identified by its $d$ real coordinates. [1]\nWavevector space has a distinguished zero and is a vector space over the reals:\nwavevectors may be added, subtracted and multiplied by real numbers. [2]\nIt has both a norm and inner product structure with which it is isometric\nto standard $d$-dimensional Euclidean space. [3]\nIt has an orthonormal set of basis vectors, and for each basis vector\nthere is a corresponding coordinate function given by orthogonal projection. [4]\nWavevectors carry units of inverse-length and are rescaled\nunder a change of inverse-length unit. [TODO]\n\n### Derivatives\n\nFunctions from wavevector space into a normed space can be differentiated along\nthe coordinate directions; the partial derivatives satisfy the usual linearity properties,\nproduct rule and power rule. [5]\nThe gradient, divergence, laplacian and curl are defined for functions of wavevector. [TODO]\n\n### Duality with Space\n\nThere is a natural pairing of wavevector space with spatial displacements in Space {1}:\nfor a given wavevector $k$ and point in space $x$ the pairing $k\\cdot x = \\sum_i k_ix^i$\ngives the phase difference relative to some fixed reference point. [6]\nFixing a wavevector $k$ gives its dual functional $x \\mapsto k\\cdot x$ on space and similarly\nfixing a displacement $x$ gives its dual functional $k \\mapsto k\\cdot x$ on wavevector space. [7]\nChanging the reference point changes the phase at all points in space by the same amount. [TODO]\n\n### Fourier transforms\n\nThe Fourier transform takes a suitably nice function of space to a function of wavevector,\nresolving its spatial dependence into plane-wave components; the inverse Fourier transform\nreconstructs the spatial function from those components. [8]\nThe transform and its inverse have a consistent choice of normalization\nand preserve inner products up to the corresponding normalization factor. [TODO]\nThe Fourier transform maps derivatives with respect to space to multiplication by wavevector\nand *vice versa*, under suitable regularity and decay assumptions. [TODO]"
+    }
+   ],
+   "lean": {
+    "1": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
+     "names": [
+      "WaveVectorSpace"
+     ]
+    },
+    "2": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
+     "names": [
+      "instZero",
+      "instModuleReal"
+     ]
+    },
+    "3": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
+     "names": [
+      "instNormedAddCommGroup",
+      "instInnerProductSpaceReal",
+      "equivEuclideanSpace"
+     ]
+    },
+    "4": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
+     "names": [
+      "basis",
+      "coord",
+      "coordCLM"
+     ]
+    },
+    "5": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Derivatives/Basic.lean",
+     "names": [
+      "deriv",
+      "deriv_add",
+      "deriv_const_smul",
+      "deriv_smul",
+      "deriv_pow"
+     ]
+    },
+    "6": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/DualPairing.lean",
+     "names": [
+      "pairingCLM"
+     ]
+    },
+    "7": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/DualPairing.lean",
+     "names": [
+      "WaveVectorSpace.dual",
+      "Space.dual"
+     ]
+    },
+    "8": {
+     "file": "Physlib/SpaceAndTime/WaveVectorSpace/Fourier.lean",
+     "names": [
+      "fourierIntegral",
+      "fourierIntegralInv"
+     ]
+    }
+   },
+   "references": {
+    "1": "Space API map — Physlib/SpaceAndTime/Space/API-map.md"
    }
   },
   {

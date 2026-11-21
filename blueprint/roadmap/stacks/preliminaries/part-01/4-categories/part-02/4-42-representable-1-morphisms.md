@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.42 Representable 1-morphisms
 
-Section 4.42 of the Stacks Project, [Tag 02Y4](https://stacks.math.columbia.edu/tag/02Y4). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 4.42 of the Stacks Project, [Tag 02Y4](https://stacks.math.columbia.edu/tag/02Y4). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02Y5, a lemma
 
 [Tag 02Y5](https://stacks.math.columbia.edu/tag/02Y5) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.FstFiber.objEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean#L117). The attribute's comment: “(1)”.
+**`CategoryTheory.TwoFibreProductOver.FstFiber.objEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean#L117). The attribute's comment: “(1)”.
 
 > **Stacks 02Y5 (1).**
 > The objects of the fibre category of `(𝒞/U) ×_𝒴 𝒳` over an object `f : V ⟶ U` of `𝒞/U` are the
@@ -27,7 +27,7 @@ noncomputable def objEquiv (h𝒴 : p𝒴.IsFiberedInGroupoids) :
       Σ x : p𝒳.Fiber f.left, {φ : G.obj f ⟶ F.obj x.1 // p𝒴.IsHomLift (𝟙 f.left) φ}
 ```
 
-**`CategoryTheory.TwoFibreProductOver.FstFiber.homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean#L188). The attribute's comment: “(2)”.
+**`CategoryTheory.TwoFibreProductOver.FstFiber.homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Fibres.lean#L188). The attribute's comment: “(2)”.
 
 > **Stacks 02Y5 (2).**
 > The morphisms of the fibre category of `(𝒞/U) ×_𝒴 𝒳` over an object `f : V ⟶ U` of `𝒞/U` between
@@ -44,7 +44,7 @@ def homEquiv (A B : (fst (Over.forget U) p𝒳 p𝒴 G F).Fiber f) :
 
 [Tag 02Y6](https://stacks.math.columbia.edu/tag/02Y6) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.fst_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/SliceProduct.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/SliceProduct.lean#L77).
+**`CategoryTheory.TwoFibreProductOver.fst_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/SliceProduct.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/SliceProduct.lean#L77).
 
 > **Stacks 02Y6.** Let `𝒳`, `𝒴` be categories fibred in groupoids over `𝒞`, let `F : 𝒳 ⥤ 𝒴` and
 > `G : 𝒞/U ⥤ 𝒴` be 1-morphisms over `𝒞`. Then the first projection of the 2-fibre product
@@ -62,7 +62,7 @@ theorem TwoFibreProductOver.fst_isFiberedInGroupoids (U : 𝒞) (p𝒳 : 𝒳 �
 
 [Tag 02Y7](https://stacks.math.columbia.edu/tag/02Y7) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.IsRepresentableMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean#L142).
+**`Stacks.RepresentableMorphism.IsRepresentableMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean#L142).
 
 > **Stacks 02Y7.** `F : 𝒳 ⥤ 𝒴` (a 1-morphism over `𝒞`) is *representable*, equivalently
 > `𝒳` is *relatively representable over* `𝒴`, when for every object `U` of `𝒞` and every
@@ -82,7 +82,7 @@ def IsRepresentableMorphism (p : 𝒳 ⥤ 𝒞) (q : 𝒴 ⥤ 𝒞) (F : 𝒳 �
 
 [Tag 02Y8](https://stacks.math.columbia.edu/tag/02Y8) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.inducedFiberFunctor_faithful_of_isRepresentableMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean, line 770](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean#L770).
+**`Stacks.RepresentableMorphism.inducedFiberFunctor_faithful_of_isRepresentableMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean, line 770](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/FibreFunctors.lean#L770).
 
 > **Stacks 02Y8** (Lemma 4.42.4), the stated implication. If `F : 𝒳 ⥤ 𝒴` is a representable
 > 1-morphism over `𝒞` between categories fibred in groupoids, then for every object `U` of `𝒞` the
@@ -102,7 +102,7 @@ theorem inducedFiberFunctor_faithful_of_isRepresentableMorphism
 
 [Tag 02Y9](https://stacks.math.columbia.edu/tag/02Y9) in the Stacks Project.
 
-**`CategoryTheory.isRepresentableMorphism_of_faithful_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/MorphismCriterion.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/MorphismCriterion.lean#L46).
+**`CategoryTheory.isRepresentableMorphism_of_faithful_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/MorphismCriterion.lean, line 46](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/MorphismCriterion.lean#L46).
 
 > Let `𝒳`, `𝒴` be categories fibred in groupoids over `𝒞`, let `F : 𝒳 ⥤ 𝒴` be a 1-morphism
 > over `𝒞` and let `c` be a choice of pullbacks for `𝒴`. If every functor `F_U : 𝒳_U ⥤ 𝒴_U` on
@@ -124,7 +124,7 @@ theorem isRepresentableMorphism_of_faithful_of_isRepresentable (p𝒳 : 𝒳 ⥤
 
 [Tag 02YA](https://stacks.math.columbia.edu/tag/02YA) in the Stacks Project.
 
-**`Stacks.RepresentableMorphism.isRepresentableMorphism_diagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/DiagonalRepresentable.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/DiagonalRepresentable.lean#L327).
+**`Stacks.RepresentableMorphism.isRepresentableMorphism_diagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/DiagonalRepresentable.lean, line 327](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/DiagonalRepresentable.lean#L327).
 
 > **Stacks 02YA.** Let `𝒞` be a category with products of pairs and fibre products, and let
 > `p : 𝒮 ⥤ 𝒞` be a category fibred in groupoids. The diagonal `𝒮 ⥤ 𝒮 × 𝒮` into the 2-fibre product
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.42, Tag 02Y4](https://stacks.math.columbia.edu/tag/02Y4)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

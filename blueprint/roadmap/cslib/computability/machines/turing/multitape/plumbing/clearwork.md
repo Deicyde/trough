@@ -7,7 +7,7 @@ proof: formalized
 
 # A machine that clears a work tape
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean), by Christian Reitwiessner.
 
 > `clearWork Symbol` erases the word on its work tape and returns the head to the start. It never
 > moves the input head and never outputs. It is the sequential composition of two one-tape machines:
@@ -29,7 +29,7 @@ proof: formalized
 > * `Turing.MultiTapeTM.transformsTapes_clearWork_tapeEmb`: placed on tape `i` of a `k`-tape machine
 >   it does so on that tape and leaves every other tape unchanged.
 
-`Turing.MultiTapeTM.clearWork` (definition, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L45))
+`Turing.MultiTapeTM.clearWork` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L45))
 
 > The one-tape machine that clears its tape: it moves to the end of the word and erases it on
 > the way back.
@@ -39,7 +39,7 @@ public noncomputable def clearWork (Symbol : Type*) :
     MultiTapeTM 1 Symbol (Unit ⊕ RewindWorkState)
 ```
 
-`Turing.MultiTapeTM.transformsTapes_clearWork` (theorem, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L51))
+`Turing.MultiTapeTM.transformsTapes_clearWork` (theorem, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L51))
 
 > **The machine that clears its work tape** replaces the word on it by the empty word, in at most
 > `3 * (w.length + 1)` steps and `w.length + 2` cells.
@@ -53,7 +53,7 @@ public theorem transformsTapes_clearWork (w : List Symbol) :
 
 > ### Clearing one of several work tapes
 
-`Turing.MultiTapeTM.transformsTapes_clearWork_tapeEmb` (theorem, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L86))
+`Turing.MultiTapeTM.transformsTapes_clearWork_tapeEmb` (theorem, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean#L86))
 
 > **The machine that clears a work tape**, placed on tape `i` of a `k`-tape machine, replaces the
 > word on that tape by the empty word and leaves every other tape unchanged, in at most
@@ -75,5 +75,5 @@ public theorem transformsTapes_clearWork_tapeEmb (i : Fin k) (w : List Symbol) :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork.json)

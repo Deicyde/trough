@@ -8,7 +8,7 @@ proof: formalized
 
 # Pauli's algebraic derivation of the hydrogen spectrum
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.PauliSpectrum`, [PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean): 24 declarations, 24 with a docstring, 1 listed as significant.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.PauliSpectrum`, [PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean): 24 declarations, 24 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.PauliSpectrum`, [PhyslibAlpha
 > Components are indexed by `Fin 3`, and the cross-product relations are stated cyclically for
 > the triples `(i, i + 1, i + 2)`.
 
-**`PhyslibAlpha.Hydrogen.PauliSystem`**, a structure, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L77).
+**`PhyslibAlpha.Hydrogen.PauliSystem`**, a structure, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L77).
 
 > Pauli's abstract hydrogen system for a hydrogen atom `Hy` in three dimensions: angular
 > momentum `L`, Laplace-Runge-Lenz vector `A` and Hamiltonian `H` on a complex vector space `V`,
@@ -88,7 +88,7 @@ structure PauliSystem (Hy : HydrogenAtom 3) where
 > `J² = (-ℏ² - m k² / (2E)) / (4ℏ²)` is a scalar by `L · A = 0` and the relation for `A²`.
 > The two square roots `±√(-2mE)` give `J₊ = (L + K) / (2ℏ)` and `J₋ = (L - K) / (2ℏ)`.
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.kappa`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L121).
+**`PhyslibAlpha.Hydrogen.PauliSystem.kappa`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L121).
 
 > The rescaling `κ = √(-2mE)` of the Laplace-Runge-Lenz vector at energy `E`.
 
@@ -96,7 +96,7 @@ structure PauliSystem (Hy : HydrogenAtom 3) where
 def kappa (Hy : HydrogenAtom 3) (E : ℝ) : ℂ
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.kappa_sq`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L124).
+**`PhyslibAlpha.Hydrogen.PauliSystem.kappa_sq`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L124).
 
 > `κ² = -2mE` for `E < 0`.
 
@@ -104,7 +104,7 @@ def kappa (Hy : HydrogenAtom 3) (E : ℝ) : ℂ
 lemma kappa_sq {E : ℝ} (hE : E < 0) : kappa Hy E ^ 2 = -2 * Hy.m * E
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.kappa_ne_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L131).
+**`PhyslibAlpha.Hydrogen.PauliSystem.kappa_ne_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L131).
 
 > `κ ≠ 0` for `E < 0`.
 
@@ -112,7 +112,7 @@ lemma kappa_sq {E : ℝ} (hE : E < 0) : kappa Hy E ^ 2 = -2 * Hy.m * E
 lemma kappa_ne_zero {E : ℝ} (hE : E < 0) : kappa Hy E ≠ 0
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.ne_zero_of_sq_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L136).
+**`PhyslibAlpha.Hydrogen.PauliSystem.ne_zero_of_sq_eq`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L136).
 
 > A square root `κ` of `-2mE` is nonzero for `E < 0`.
 
@@ -120,7 +120,7 @@ lemma kappa_ne_zero {E : ℝ} (hE : E < 0) : kappa Hy E ≠ 0
 lemma ne_zero_of_sq_eq {E : ℝ} (hE : E < 0) {κ : ℂ} (hκ2 : κ ^ 2 = -2 * Hy.m * E) : κ ≠ 0
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.J`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L144).
+**`PhyslibAlpha.Hydrogen.PauliSystem.J`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L144).
 
 > The components `Jᵢ = (Lᵢ + Aᵢ / κ) / (2ℏ)`.
 
@@ -128,7 +128,7 @@ lemma ne_zero_of_sq_eq {E : ℝ} (hE : E < 0) {κ : ℂ} (hκ2 : κ ^ 2 = -2 * H
 def J (P : PauliSystem V Hy) (κ : ℂ) (i : Fin 3) : Module.End ℂ V
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L148).
+**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L148).
 
 > `[Jᵢ, Jᵢ₊₁] = i Jᵢ₊₂` on a space where `H = E < 0`, for `κ² = -2mE`.
 
@@ -138,7 +138,7 @@ lemma comm_J (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) {κ : ℂ}
     ⁅P.J κ i, P.J κ (i + 1)⁆ = Complex.I • P.J κ (i + 2)
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.rep`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L167).
+**`PhyslibAlpha.Hydrogen.PauliSystem.rep`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L167).
 
 > The angular momentum representation `J = (L + A / κ) / (2ℏ)` for `κ² = -2mE`.
 
@@ -147,7 +147,7 @@ def rep (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) {κ : ℂ} (hκ2 : κ ^ 2 
     (hH : P.H = (E : ℂ) • 1) : Sl2.AngularMomentumRepresentation V
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.rep_Jsq`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L177).
+**`PhyslibAlpha.Hydrogen.PauliSystem.rep_Jsq`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L177).
 
 > `J² = (-ℏ² - m k² / (2E)) / (4ℏ²)` on a space where `H = E < 0`, for `κ² = -2mE`.
 
@@ -158,7 +158,7 @@ lemma rep_Jsq (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) {κ : ℂ}
       (-((ℏ : ℝ) : ℂ) ^ 2 - Hy.m * Hy.k ^ 2 / (2 * E))) • 1
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L208).
+**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L208).
 
 > The angular momentum representation `J₊ = (L + K) / (2ℏ)`, with `K = A / κ`.
 
@@ -167,7 +167,7 @@ def plusRep (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) (hH : P.H = (E : ℂ) 
     Sl2.AngularMomentumRepresentation V
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.minusRep`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L213).
+**`PhyslibAlpha.Hydrogen.PauliSystem.minusRep`**, a def, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L213).
 
 > The angular momentum representation `J₋ = (L - K) / (2ℏ)`, with `K = A / κ`.
 
@@ -176,7 +176,7 @@ def minusRep (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) (hH : P.H = (E : ℂ)
     Sl2.AngularMomentumRepresentation V
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep_Jsq`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L218).
+**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep_Jsq`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L218).
 
 > `J₊² = (-ℏ² - m k² / (2E)) / (4ℏ²)` on a space where `H = E < 0`.
 
@@ -186,7 +186,7 @@ lemma plusRep_Jsq (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) (hH : P.H = (E :
       (-((ℏ : ℝ) : ℂ) ^ 2 - Hy.m * Hy.k ^ 2 / (2 * E))) • 1
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.minusRep_Jsq`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L224).
+**`PhyslibAlpha.Hydrogen.PauliSystem.minusRep_Jsq`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L224).
 
 > `J₋² = J₊²`: both are `(-ℏ² - m k² / (2E)) / (4ℏ²)` on a space where `H = E < 0`.
 
@@ -196,7 +196,7 @@ lemma minusRep_Jsq (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) (hH : P.H = (E 
       (-((ℏ : ℝ) : ℂ) ^ 2 - Hy.m * Hy.k ^ 2 / (2 * E))) • 1
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J_neg_succ`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L230).
+**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J_neg_succ`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L230).
 
 > `[J(κ)ᵢ, J(-κ)ᵢ₊₁] = 0` on a space where `H = E < 0`, for `κ² = -2mE`.
 
@@ -206,7 +206,7 @@ lemma comm_J_neg_succ (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) {κ : ℂ}
     ⁅P.J κ i, P.J (-κ) (i + 1)⁆ = 0
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J_neg`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L248).
+**`PhyslibAlpha.Hydrogen.PauliSystem.comm_J_neg`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L248).
 
 > `[J(κ)ᵢ, J(-κ)ⱼ] = 0` on a space where `H = E < 0`, for `κ² = -2mE`.
 
@@ -216,7 +216,7 @@ lemma comm_J_neg (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0) {κ : ℂ}
     ⁅P.J κ i, P.J (-κ) j⁆ = 0
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep_comm_minusRep`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L266).
+**`PhyslibAlpha.Hydrogen.PauliSystem.plusRep_comm_minusRep`**, a lemma, [line 266](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L266).
 
 > The `sl₂` triples of `J₊` and `J₋` commute.
 
@@ -231,7 +231,7 @@ lemma plusRep_comm_minusRep (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0)
 
 ## C. The Bohr levels
 
-**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.exists_Jsq_eigenvector`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L285).
+**`PhyslibAlpha.Sl2.AngularMomentumRepresentation.exists_Jsq_eigenvector`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L285).
 
 > On a nonzero finite-dimensional space `J²` has an eigenvalue `j(j+1)` with `2j ∈ ℕ`.
 
@@ -241,7 +241,7 @@ lemma _root_.PhyslibAlpha.Sl2.AngularMomentumRepresentation.exists_Jsq_eigenvect
     ∃ (n : ℕ) (v : V), v ≠ 0 ∧ ρ.Jsq v = ((n : ℂ) / 2 * ((n : ℂ) / 2 + 1)) • v
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.eq_energyLevel_of_casimir`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L297).
+**`PhyslibAlpha.Hydrogen.PauliSystem.eq_energyLevel_of_casimir`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L297).
 
 > If the Casimir `(-ℏ² - m k² / (2E)) / (4ℏ²)` equals `j(j+1)` with `n = 2j`, then `E` is the
 > Bohr level `E = -m k² / (2 ℏ² (n + 1)²)`.
@@ -253,7 +253,7 @@ lemma eq_energyLevel_of_casimir {E : ℝ} (hE : E < 0) {n : ℕ}
     E = Hy.energyLevel n
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_of_H_eq`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L313).
+**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_of_H_eq`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L313).
 
 > Pauli's theorem on a nonzero finite-dimensional space on which `H = E < 0`.
 
@@ -263,7 +263,7 @@ lemma exists_energyLevel_of_H_eq [FiniteDimensional ℂ V] [Nontrivial V]
     ∃ n : ℕ, E = Hy.energyLevel n
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.mapsTo_eigenspace`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L321).
+**`PhyslibAlpha.Hydrogen.PauliSystem.mapsTo_eigenspace`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L321).
 
 > Operators commuting with `H` preserve its eigenspaces.
 
@@ -272,7 +272,7 @@ lemma mapsTo_eigenspace (P : PauliSystem V Hy) {T : Module.End ℂ V} (hT : ⁅P
     (μ : ℂ) : Set.MapsTo T (P.H.eigenspace μ) (P.H.eigenspace μ)
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.restrictEigenspace`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L330).
+**`PhyslibAlpha.Hydrogen.PauliSystem.restrictEigenspace`**, a def, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L330).
 
 > The restriction of a Pauli system to an eigenspace of `H`.
 
@@ -281,7 +281,7 @@ def restrictEigenspace (P : PauliSystem V Hy) (μ : ℂ) :
     PauliSystem (P.H.eigenspace μ) Hy
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel`**, a theorem, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L365). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel`**, a theorem, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L365). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > **Pauli's theorem.** Every nonzero finite-dimensional eigenspace of the Hamiltonian with
 > negative eigenvalue `E` has `E` equal to a Bohr level `-m k² / (2 ℏ² n²)`.
@@ -297,7 +297,7 @@ theorem exists_energyLevel (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0)
 > A common primitive vector of `J₊` and `J₋` has the same highest weight `n` for both, since
 > `J₊² = J₋²`, and its lowering grid gives `(n + 1)²` linearly independent vectors.
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_le_finrank_of_H_eq`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L384).
+**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_le_finrank_of_H_eq`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L384).
 
 > On a nonzero finite-dimensional space on which `H = E < 0`, `E` is a Bohr level
 > `E = -m k² / (2 ℏ² (n + 1)²)` and the space has dimension at least `(n + 1)²`.
@@ -308,7 +308,7 @@ lemma exists_energyLevel_le_finrank_of_H_eq [FiniteDimensional ℂ V] [Nontrivia
     ∃ n : ℕ, E = Hy.energyLevel n ∧ (n + 1) ^ 2 ≤ Module.finrank ℂ V
 ```
 
-**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_le_finrank`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L424).
+**`PhyslibAlpha.Hydrogen.PauliSystem.exists_energyLevel_le_finrank`**, a lemma, [line 424](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean#L424).
 
 > **Degeneracy of the Bohr levels.** A nonzero finite-dimensional eigenspace of the Hamiltonian
 > with eigenvalue `E < 0` has `E = -m k² / (2 ℏ² (n + 1)²)` and dimension at least `(n + 1)²`.
@@ -323,7 +323,7 @@ lemma exists_energyLevel_le_finrank (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0
 ## Depends on
 
 - [The Rydberg formula and the spectral series of the hydrogen atom](../../../physlib/quantummechanics/hydrogen/rydberg.md)
-- [Abstract angular momentum representations](../angularmomentum/basic.md)
+- [Abstract angular momentum representations](../angularmomentum/part-01/basic.md)
 
 ## Proof depends on
 
@@ -331,4 +331,4 @@ lemma exists_energyLevel_le_finrank (P : PauliSystem V Hy) {E : ℝ} (hE : E < 0
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The fermionic generators of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionGenerators`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean): 27 declarations (2 instances with no name), 21 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.FermionGenerators`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean): 27 declarations (2 instances with no name), 21 with a docstring.
 
 ## i. Overview
 
@@ -75,7 +75,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Fermion
 
 ## A. The fermionic generator space and its species assembly
 
-**`GaugeFieldData.FermionGenerators`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L120).
+**`GaugeFieldData.FermionGenerators`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L120).
 
 > The fermionic generator space of the datum, holding the component functions `∂_s ψ_α`
 > and their conjugates of every fermionic species at once, as a direct sum over the species.
@@ -96,19 +96,19 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.Fermion
 def FermionGenerators : Type
 ```
 
-**An instance with no name**, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L122).
+**An instance with no name**, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L122).
 
 ```lean
 instance : AddCommGroup T.FermionGenerators
 ```
 
-**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L125).
+**An instance with no name**, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L125).
 
 ```lean
 instance : Module ℂ T.FermionGenerators
 ```
 
-**`GaugeFieldData.inclFermion`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L130).
+**`GaugeFieldData.inclFermion`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L130).
 
 > The inclusion of the component space of one fermionic species into the fermionic generator
 > space.
@@ -118,7 +118,7 @@ def inclFermion (i : T.FermionSpecies) :
     JetComponentSpace (T.fermion i) →ₗ[ℂ] T.FermionGenerators
 ```
 
-**`GaugeFieldData.assembleFermion`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L140).
+**`GaugeFieldData.assembleFermion`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L140).
 
 > The assembly of a species-wise family of linear maps out of the fermionic generator space
 > into a common target.
@@ -128,7 +128,7 @@ def assembleFermion (f : ∀ i, JetComponentSpace (T.fermion i) →ₗ[ℂ] N) :
     T.FermionGenerators →ₗ[ℂ] N
 ```
 
-**`GaugeFieldData.assembleFermion_inclFermion`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L147).
+**`GaugeFieldData.assembleFermion_inclFermion`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L147).
 
 ```lean
 lemma assembleFermion_inclFermion (f : ∀ i, JetComponentSpace (T.fermion i) →ₗ[ℂ] N)
@@ -136,7 +136,7 @@ lemma assembleFermion_inclFermion (f : ∀ i, JetComponentSpace (T.fermion i) �
     T.assembleFermion f (T.inclFermion i x) = f i x
 ```
 
-**`GaugeFieldData.fermionGenerators_hom_ext`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L154).
+**`GaugeFieldData.fermionGenerators_hom_ext`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L154).
 
 > Two linear maps out of the fermionic generator space agreeing on every species are
 > equal.
@@ -157,7 +157,7 @@ lemma fermionGenerators_hom_ext {F F' : T.FermionGenerators →ₗ[ℂ] N}
 
 ### B.1. The Lorentz action
 
-**`GaugeFieldData.repLorentzFermion`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L179).
+**`GaugeFieldData.repLorentzFermion`**, a def, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L179).
 
 > The Lorentz action on the fermionic generator space, acting on each species through the
 > Lorentz representation of its matter field.
@@ -166,7 +166,7 @@ lemma fermionGenerators_hom_ext {F F' : T.FermionGenerators →ₗ[ℂ] N}
 noncomputable def repLorentzFermion : Representation ℂ SL(2,ℂ) T.FermionGenerators
 ```
 
-**`GaugeFieldData.repLorentzFermion_inclFermion`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L188).
+**`GaugeFieldData.repLorentzFermion_inclFermion`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L188).
 
 ```lean
 lemma repLorentzFermion_inclFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
@@ -177,7 +177,7 @@ lemma repLorentzFermion_inclFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
 
 ### B.2. The jet gauge action
 
-**`GaugeFieldData.repJetFermion`**, a def, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L206).
+**`GaugeFieldData.repJetFermion`**, a def, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L206).
 
 > The action of the jet gauge group on the fermionic generator space, acting on each
 > species through the fibrewise jet action of its matter field. Both the fibrewise
@@ -188,7 +188,7 @@ lemma repLorentzFermion_inclFermion (Λ : SL(2,ℂ)) (i : T.FermionSpecies)
 noncomputable def repJetFermion : Representation ℂ GJ T.FermionGenerators
 ```
 
-**`GaugeFieldData.repJetFermion_inclFermion`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L215).
+**`GaugeFieldData.repJetFermion_inclFermion`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L215).
 
 ```lean
 lemma repJetFermion_inclFermion (U : GJ) (i : T.FermionSpecies)
@@ -204,7 +204,7 @@ lemma repJetFermion_inclFermion (U : GJ) (i : T.FermionSpecies)
 > `3` and a scalar weight `2`. The generator space records one weight per species, and the
 > scaling acts on the summand of a species through that species' weight alone.
 
-**`GaugeFieldData.massWeightScaleFermion`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L237).
+**`GaugeFieldData.massWeightScaleFermion`**, a def, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L237).
 
 > The mass-weight scaling on the fermionic generator space, with the weight of each species
 > taken from its matter field. Species of different weight scale differently, which is the
@@ -215,7 +215,7 @@ noncomputable def massWeightScaleFermion (c : ℂ) :
     T.FermionGenerators →ₗ[ℂ] T.FermionGenerators
 ```
 
-**`GaugeFieldData.massWeightScaleFermion_inclFermion`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L247).
+**`GaugeFieldData.massWeightScaleFermion_inclFermion`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L247).
 
 > On the summand of a species the scaling is that species' own mass-weight scaling, with
 > the weight recorded in its matter field.
@@ -228,7 +228,7 @@ lemma massWeightScaleFermion_inclFermion (c : ℂ) (i : T.FermionSpecies)
         (JetComponentSpace.massWeightScale (T.fermion i).massWeight c x)
 ```
 
-**`GaugeFieldData.massWeightScaleFermion_inclFermion_basis_tmul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L257).
+**`GaugeFieldData.massWeightScaleFermion_inclFermion_basis_tmul`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L257).
 
 > A component function `∂_s ψ_α` of a species scales by `c ^ (w + 2 |s|)`, where `w` is
 > the mass weight of that species. There is one factor of `c` per unit of mass dimension of
@@ -243,7 +243,7 @@ lemma massWeightScaleFermion_inclFermion_basis_tmul (c : ℂ) (i : T.FermionSpec
           ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace (T.fermion i))
 ```
 
-**`GaugeFieldData.massWeightScaleFermion_inclFermion_basis_tmul_conj`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L270).
+**`GaugeFieldData.massWeightScaleFermion_inclFermion_basis_tmul_conj`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L270).
 
 > The conjugate component functions of a species scale with the same weight as its
 > unconjugated ones.
@@ -266,7 +266,7 @@ lemma massWeightScaleFermion_inclFermion_basis_tmul_conj (c : ℂ) (i : T.Fermio
 > species-diagonal and the same assembly serves. It is recorded here so that the generator
 > space carries every operation the local field algebra is built from.
 
-**`GaugeFieldData.jetDerivFermion`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L301).
+**`GaugeFieldData.jetDerivFermion`**, a def, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L301).
 
 > The ordinary derivative shift on the fermionic generator space, acting on each species'
 > component functions by appending `∂_μ` to the derivative label.
@@ -276,7 +276,7 @@ noncomputable def jetDerivFermion (μ : Fin 1 ⊕ Fin 3) :
     T.FermionGenerators →ₗ[ℂ] T.FermionGenerators
 ```
 
-**`GaugeFieldData.jetDerivFermion_inclFermion`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L308).
+**`GaugeFieldData.jetDerivFermion_inclFermion`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L308).
 
 ```lean
 lemma jetDerivFermion_inclFermion (μ : Fin 1 ⊕ Fin 3) (i : T.FermionSpecies)
@@ -285,7 +285,7 @@ lemma jetDerivFermion_inclFermion (μ : Fin 1 ⊕ Fin 3) (i : T.FermionSpecies)
       = T.inclFermion i (JetComponentSpace.jetDeriv μ x)
 ```
 
-**`GaugeFieldData.jetDerivFermion_comm`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L316).
+**`GaugeFieldData.jetDerivFermion_comm`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L316).
 
 > Mixed partials agree on the fermionic generator space, because they do on each
 > species.
@@ -296,7 +296,7 @@ lemma jetDerivFermion_comm (μ ν : Fin 1 ⊕ Fin 3) :
       = (T.jetDerivFermion ν).comp (T.jetDerivFermion μ)
 ```
 
-**`GaugeFieldData.repLorentzFermion_jetDerivFermion`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L327).
+**`GaugeFieldData.repLorentzFermion_jetDerivFermion`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L327).
 
 > The derivative shift is a Lorentz vector on the fermionic generator space: it is
 > one on each species, and both operations are species-diagonal.
@@ -309,7 +309,7 @@ lemma repLorentzFermion_jetDerivFermion (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3)
           T.jetDerivFermion a (T.repLorentzFermion Λ x)
 ```
 
-**`GaugeFieldData.massWeightScaleFermion_jetDerivFermion`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L347).
+**`GaugeFieldData.massWeightScaleFermion_jetDerivFermion`**, a lemma, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L347).
 
 > The derivative carries mass weight two on the fermionic generator space, whatever
 > the weights of the species: the shift adds two units of mass dimension to every
@@ -323,7 +323,7 @@ lemma massWeightScaleFermion_jetDerivFermion (c : ℂ) (μ : Fin 1 ⊕ Fin 3) :
 
 ## C. The fermionic generators as one component space
 
-**`GaugeFieldData.fermionGeneratorsEquiv`**, a def, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L372).
+**`GaugeFieldData.fermionGeneratorsEquiv`**, a def, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L372).
 
 > **The fermionic generator space is the component space of the fermionic matter field.** The
 > direct sum over the species of their component spaces is, the species type being finite,
@@ -340,7 +340,7 @@ noncomputable def fermionGeneratorsEquiv (w : ℕ) (h : ∀ i, (T.fermion i).mas
 
 ### C.1. The species as pullbacks
 
-**`GaugeFieldData.fermionGeneratorsEquiv_inclFermion`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L390).
+**`GaugeFieldData.fermionGeneratorsEquiv_inclFermion`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L390).
 
 > **A species sits inside the fermionic generators as the pullback along the projection
 > onto it.** A component function of the multiplet `i` becomes the component function of
@@ -354,7 +354,7 @@ lemma fermionGeneratorsEquiv_inclFermion (w : ℕ) (h : ∀ i, (T.fermion i).mas
         (T.projFermionField w h i) x
 ```
 
-**`GaugeFieldData.fermionFieldComponents_hom_ext`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L408).
+**`GaugeFieldData.fermionFieldComponents_hom_ext`**, a lemma, [line 408](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L408).
 
 > Two linear maps out of the component space of the fermionic matter field agree as soon as
 > they agree on every species, the species pullbacks spanning it. This is the counterpart,
@@ -372,7 +372,7 @@ lemma fermionFieldComponents_hom_ext {N : Type} [AddCommGroup N] [Module ℂ N]
 
 ### C.2. The identification of the transformation data
 
-**`GaugeFieldData.fermionGeneratorsEquiv_repLorentzFermion`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L434).
+**`GaugeFieldData.fermionGeneratorsEquiv_repLorentzFermion`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L434).
 
 > **The identification is Lorentz-equivariant.** The species-diagonal Lorentz action on
 > the generator space is the Lorentz action on the component functions of the single field:
@@ -387,7 +387,7 @@ lemma fermionGeneratorsEquiv_repLorentzFermion (w : ℕ) (h : ∀ i, (T.fermion 
         (T.fermionGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.fermionGeneratorsEquiv_repJetFermion`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L462).
+**`GaugeFieldData.fermionGeneratorsEquiv_repJetFermion`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L462).
 
 > The identification is equivariant for the jet gauge action. The species-diagonal
 > action of the jets of gauge transformations on the generator space is the action on the
@@ -409,7 +409,7 @@ lemma fermionGeneratorsEquiv_repJetFermion (w : ℕ) (h : ∀ i, (T.fermion i).m
         (T.fermionGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.fermionGeneratorsEquiv_massWeightScaleFermion`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L484).
+**`GaugeFieldData.fermionGeneratorsEquiv_massWeightScaleFermion`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L484).
 
 > **The identification carries the species-wise mass-weight scaling to a single
 > scaling.** With one weight `w` shared by every species, the scaling that acts on each
@@ -424,7 +424,7 @@ lemma fermionGeneratorsEquiv_massWeightScaleFermion (w : ℕ)
       = JetComponentSpace.massWeightScale w c (T.fermionGeneratorsEquiv w h y)
 ```
 
-**`GaugeFieldData.fermionGeneratorsEquiv_jetDerivFermion`**, a lemma, [line 505](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L505).
+**`GaugeFieldData.fermionGeneratorsEquiv_jetDerivFermion`**, a lemma, [line 505](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean#L505).
 
 > The identification carries the derivative shift across. The species-diagonal shift
 > of the derivative label on the generator space is the shift on the component functions of
@@ -447,4 +447,4 @@ lemma fermionGeneratorsEquiv_jetDerivFermion (w : ℕ) (h : ∀ i, (T.fermion i)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean)

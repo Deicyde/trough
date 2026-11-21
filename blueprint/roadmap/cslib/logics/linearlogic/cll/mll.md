@@ -7,7 +7,7 @@ proof: formalized
 
 # Multiplicative Classical Linear Logic (MLL)
 
-`Cslib.Logics.LinearLogic.CLL.MLL`, in [Cslib/Logics/LinearLogic/CLL/MLL.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean), by Fabrizio Montesi.
+`Cslib.Logics.LinearLogic.CLL.MLL`, in [Cslib/Logics/LinearLogic/CLL/MLL.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean), by Fabrizio Montesi.
 
 > Multiplicative classical linear logic, defined as a fragment of classical linear logic by means of
 > a predicate (unbundled style) and `Subtype` (bundled style).
@@ -26,7 +26,7 @@ proof: formalized
 >
 > We also call the first part the 'unbundled part' and the second the 'bundled part'.
 
-`Cslib.Logic.CLL.Proposition.IsMLL` (definition, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L38))
+`Cslib.Logic.CLL.Proposition.IsMLL` (definition, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L38))
 
 > A proposition is in the multiplicative fragment of CLL.
 
@@ -34,7 +34,7 @@ proof: formalized
 def Proposition.IsMLL : Proposition Atom → Prop
 ```
 
-`Cslib.Logic.CLL.Proposition.IsMLL.rec` (definition, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L45))
+`Cslib.Logic.CLL.Proposition.IsMLL.rec` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L45))
 
 > Recursor for MLL propositions.
 
@@ -52,7 +52,7 @@ def Proposition.IsMLL.rec
     {a : Proposition Atom} (h : a.IsMLL) : motive (a := a) h
 ```
 
-`Cslib.Logic.CLL.Proposition.isMLL_dual` (theorem, [line 74](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L74))
+`Cslib.Logic.CLL.Proposition.isMLL_dual` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L74))
 
 > Duality in MLL stays in MLL.
 
@@ -60,7 +60,7 @@ def Proposition.IsMLL.rec
 theorem Proposition.isMLL_dual {a : Proposition Atom} (ha : a.IsMLL) : a⫠.IsMLL
 ```
 
-`Cslib.Logic.CLL.Proposition.Context.IsMLL` (definition, [line 79](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L79))
+`Cslib.Logic.CLL.Proposition.Context.IsMLL` (definition, [line 79](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L79))
 
 > A multiplicative propositional context.
 
@@ -68,7 +68,7 @@ theorem Proposition.isMLL_dual {a : Proposition Atom} (ha : a.IsMLL) : a⫠.IsML
 def Proposition.Context.IsMLL : Context Atom → Prop
 ```
 
-`Cslib.Logic.CLL.Proposition.Context.isMLL_fill` (theorem, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L86))
+`Cslib.Logic.CLL.Proposition.Context.isMLL_fill` (theorem, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L86))
 
 > Filling a multiplicative propositional context with a multiplicative proposition stays in MLL.
 
@@ -77,7 +77,7 @@ theorem Proposition.Context.isMLL_fill {c : CLL.Proposition.Context Atom} {a : C
     (hc : c.IsMLL) : (c.fill a).IsMLL ↔ a.IsMLL
 ```
 
-`Cslib.Logic.CLL.Sequent.IsMLL` (definition, [line 95](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L95))
+`Cslib.Logic.CLL.Sequent.IsMLL` (definition, [line 95](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L95))
 
 > A multiplicative sequent.
 
@@ -85,7 +85,7 @@ theorem Proposition.Context.isMLL_fill {c : CLL.Proposition.Context Atom} {a : C
 def Sequent.IsMLL (Γ : Sequent Atom)
 ```
 
-`Cslib.Logic.CLL.Proof.IsMLL` (definition, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L101))
+`Cslib.Logic.CLL.Proof.IsMLL` (definition, [line 101](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L101))
 
 > A proof is in MLL.
 
@@ -93,7 +93,7 @@ def Sequent.IsMLL (Γ : Sequent Atom)
 def Proof.IsMLL {Γ : Sequent Atom} : ⇓Γ → Prop
 ```
 
-`Cslib.Logic.CLL.Proof.IsMLL.rec` (definition, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L109))
+`Cslib.Logic.CLL.Proof.IsMLL.rec` (definition, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L109))
 
 > Recursor for MLL derivations.
 
@@ -118,7 +118,7 @@ def Proof.IsMLL.rec
     {Γ : Sequent Atom} {p : Proof Γ} (h : p.IsMLL) : @motive Γ p h
 ```
 
-`Cslib.Logic.CLL.Proof.isMLL_sequent` (theorem, [line 145](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L145))
+`Cslib.Logic.CLL.Proof.isMLL_sequent` (theorem, [line 145](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L145))
 
 > A proof in the MLL fragment can only prove MLL sequents.
 
@@ -126,7 +126,7 @@ def Proof.IsMLL.rec
 theorem Proof.isMLL_sequent {Γ : Sequent Atom} {p : ⇓Γ} (h : p.IsMLL) : Γ.IsMLL
 ```
 
-`Cslib.Logic.CLL.Proof.isMLL_cutFree` (theorem, [line 158](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L158))
+`Cslib.Logic.CLL.Proof.isMLL_cutFree` (theorem, [line 158](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L158))
 
 > If a CLL derivation is cut-free and concludes an MLL sequent, then it is an MLL derivation.
 
@@ -135,7 +135,7 @@ theorem Proof.isMLL_cutFree {Γ : Sequent Atom} (p : ⇓Γ) (hΓ : Γ.IsMLL)
     (hp : p.cutFree) : p.IsMLL
 ```
 
-`Cslib.Logic.CLL.MLL.Proof` (abbreviation, [line 179](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L179))
+`Cslib.Logic.CLL.MLL.Proof` (abbreviation, [line 179](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L179))
 
 > MLL derivations.
 
@@ -143,7 +143,7 @@ theorem Proof.isMLL_cutFree {Γ : Sequent Atom} (p : ⇓Γ) (hΓ : Γ.IsMLL)
 abbrev MLL.Proof (Γ : CLL.Sequent Atom)
 ```
 
-`Cslib.Logic.CLL.MLL` (opaque constant, [line 182](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L182))
+`Cslib.Logic.CLL.MLL` (opaque constant, [line 182](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L182))
 
 > Tag for the MLL inference system.
 
@@ -151,7 +151,7 @@ abbrev MLL.Proof (Γ : CLL.Sequent Atom)
 opaque MLL : Type
 ```
 
-`Cslib.Logic.CLL.MLL.Proof.isMLL_sequent` (theorem, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L192))
+`Cslib.Logic.CLL.MLL.Proof.isMLL_sequent` (theorem, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L192))
 
 > MLL proofs derive only MLL sequents.
 
@@ -159,7 +159,7 @@ opaque MLL : Type
 theorem Proof.isMLL_sequent {Γ : Sequent Atom} (p : MLL⇓Γ) : Γ.IsMLL
 ```
 
-`Cslib.Logic.CLL.Proof.cutFreeToMLL` (definition, [line 198](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean#L198))
+`Cslib.Logic.CLL.Proof.cutFreeToMLL` (definition, [line 198](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean#L198))
 
 > Downcasting of cut-free CLL proofs of multiplicative sequents into MLL proofs.
 
@@ -173,5 +173,5 @@ def Proof.cutFreeToMLL {Γ : Sequent Atom} (p : ⇓Γ) (hΓ : Γ.IsMLL) (hp : p.
 
 ## Sources
 
-- [Cslib/Logics/LinearLogic/CLL/MLL.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/MLL.lean)
+- [Cslib/Logics/LinearLogic/CLL/MLL.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Logics/LinearLogic/CLL/MLL.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Logics.LinearLogic.CLL.MLL.json)

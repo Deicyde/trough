@@ -7,7 +7,7 @@ proof: formalized
 
 # Small-factor extraction for reducible polynomials
 
-`CompPoly.ToMathlib.Polynomial.Irreducible`, in [CompPoly/ToMathlib/Polynomial/Irreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/Irreducible.lean), by Derek Sorensen.
+`CompPoly.ToMathlib.Polynomial.Irreducible`, in [CompPoly/ToMathlib/Polynomial/Irreducible.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Irreducible.lean), by Derek Sorensen.
 
 > A reducible polynomial of degree `n` always has an irreducible factor of degree at most
 > `n / 2`: it splits as a product of two non-units whose degrees sum to `n`, and the smaller
@@ -22,7 +22,7 @@ proof: formalized
 > * `Polynomial.exists_factor_natDegree_le_of_reducible`: a reducible polynomial of degree `n`
 >   has an irreducible factor of degree at most `n / 2`.
 
-`Polynomial.exists_factor_natDegree_le_of_reducible` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/Irreducible.lean#L41))
+`Polynomial.exists_factor_natDegree_le_of_reducible` (theorem, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Irreducible.lean#L41))
 
 > A reducible polynomial of positive degree `n` has an irreducible factor of degree at most
 > `n / 2`.
@@ -42,5 +42,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/ToMathlib/Polynomial/Irreducible.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/ToMathlib/Polynomial/Irreducible.lean)
+- [CompPoly/ToMathlib/Polynomial/Irreducible.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/ToMathlib/Polynomial/Irreducible.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.ToMathlib.Polynomial.Irreducible.json)

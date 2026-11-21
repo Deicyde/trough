@@ -7,7 +7,7 @@ proof: formalized
 
 # Initial setup for code actions
 
-`Batteries.CodeAction.Basic`, in [Batteries/CodeAction/Basic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Basic.lean), by Mario Carneiro.
+`Batteries.CodeAction.Basic`, in [Batteries/CodeAction/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Basic.lean), by Mario Carneiro.
 
 > This declares a code action provider that calls all `@[hole_code_action]` definitions
 > on each occurrence of a hole (`_`, `?_` or `sorry`).
@@ -16,7 +16,7 @@ proof: formalized
 > attempt to use this code action provider when browsing the `Batteries.CodeAction.Hole.Attr` file
 > itself.)
 
-`Batteries.CodeAction.tacticCodeActionProvider` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Basic.lean#L30))
+`Batteries.CodeAction.tacticCodeActionProvider` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Basic.lean#L30))
 
 > A code action which calls `@[tactic_code_action]` code actions.
 
@@ -30,5 +30,5 @@ def tacticCodeActionProvider : CodeActionProvider
 
 ## Sources
 
-- [Batteries/CodeAction/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Basic.lean)
+- [Batteries/CodeAction/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Basic.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.CodeAction.Basic.json)

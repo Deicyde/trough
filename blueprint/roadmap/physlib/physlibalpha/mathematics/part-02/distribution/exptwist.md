@@ -8,7 +8,7 @@ proof: formalized
 
 # Exponential twists of compactly supported functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.ExpTwist`, [PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean): 8 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.ExpTwist`, [PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean): 8 declarations, 2 with a docstring.
 
 > Multiplying a compactly supported function by `exp (a ℓ x)` moves it by `O (|a|)` in every
 > derivative.
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.ExpTwist`, [PhyslibAlpha/Mathe
 
 > - `ExpTwist.norm_iteratedFDeriv_twist_mul_sub_le` : the derivatives of `twist * v - v`.
 
-**`ExpTwist.twist`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L61).
+**`ExpTwist.twist`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L61).
 
 > exp (a ℓ x)
 
@@ -47,40 +47,40 @@ The module `PhyslibAlpha.Mathematics.Distribution.ExpTwist`, [PhyslibAlpha/Mathe
 def twist (ℓ : E →L[ℝ] ℝ) (a : ℝ) (x : E) : ℝ
 ```
 
-**`ExpTwist.contDiff_twist`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L63).
+**`ExpTwist.contDiff_twist`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L63).
 
 ```lean
 lemma contDiff_twist (ℓ : E →L[ℝ] ℝ) (a : ℝ) : ContDiff ℝ ∞ (twist ℓ a)
 ```
 
-**`ExpTwist.norm_iteratedFDeriv_exp`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L66).
+**`ExpTwist.norm_iteratedFDeriv_exp`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L66).
 
 ```lean
 lemma norm_iteratedFDeriv_exp (i : ℕ) (y : ℝ) :
     ‖iteratedFDeriv ℝ i Real.exp y‖ = Real.exp y
 ```
 
-**`ExpTwist.norm_iteratedFDeriv_twist_le`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L71).
+**`ExpTwist.norm_iteratedFDeriv_twist_le`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L71).
 
 ```lean
 lemma norm_iteratedFDeriv_twist_le (ℓ : E →L[ℝ] ℝ) (a : ℝ) (i : ℕ) (x : E) :
     ‖iteratedFDeriv ℝ i (twist ℓ a) x‖ ≤ (|a| * ‖ℓ‖) ^ i * Real.exp (|a| * ‖ℓ‖ * ‖x‖)
 ```
 
-**`ExpTwist.abs_exp_sub_one_le`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L93).
+**`ExpTwist.abs_exp_sub_one_le`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L93).
 
 ```lean
 lemma abs_exp_sub_one_le (y : ℝ) : |Real.exp y - 1| ≤ |y| * Real.exp |y|
 ```
 
-**`ExpTwist.abs_twist_sub_one_le`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L108).
+**`ExpTwist.abs_twist_sub_one_le`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L108).
 
 ```lean
 lemma abs_twist_sub_one_le (ℓ : E →L[ℝ] ℝ) (a : ℝ) (x : E) :
     |twist ℓ a x - 1| ≤ |a| * ‖ℓ‖ * ‖x‖ * Real.exp (|a| * ‖ℓ‖ * ‖x‖)
 ```
 
-**`ExpTwist.norm_iteratedFDeriv_twist_sub_one_le`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L119).
+**`ExpTwist.norm_iteratedFDeriv_twist_sub_one_le`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L119).
 
 ```lean
 lemma norm_iteratedFDeriv_twist_sub_one_le (ℓ : E →L[ℝ] ℝ) {a R : ℝ} (ha : |a| ≤ 1) {x : E}
@@ -89,7 +89,7 @@ lemma norm_iteratedFDeriv_twist_sub_one_le (ℓ : E →L[ℝ] ℝ) {a R : ℝ} (
       |a| * ((1 + R) * (1 + ‖ℓ‖) ^ (k + 1) * Real.exp (‖ℓ‖ * R))
 ```
 
-**`ExpTwist.norm_iteratedFDeriv_twist_mul_sub_le`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L172).
+**`ExpTwist.norm_iteratedFDeriv_twist_mul_sub_le`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean#L172).
 
 > **The twist moves a compactly supported function by `O(|a|)` in every derivative.**
 
@@ -111,4 +111,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean)
+- [PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/ExpTwist.lean)

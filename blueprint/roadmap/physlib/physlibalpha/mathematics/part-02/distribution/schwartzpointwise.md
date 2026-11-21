@@ -8,7 +8,7 @@ proof: formalized
 
 # Pointwise polynomial decay of Schwartz functions
 
-The module `PhyslibAlpha.Mathematics.Distribution.SchwartzPointwise`, [PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.Mathematics.Distribution.SchwartzPointwise`, [PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean): 2 declarations, 2 with a docstring.
 
 > A Schwartz function decays faster than every power of `1 + ‖z‖`.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.Mathematics.Distribution.SchwartzPointwise`, [PhyslibAl
 > - `SchwartzMap.norm_le_rpow_neg_mul` : the pointwise decay with an explicit constant.
 > - `SchwartzMap.exists_norm_le_rpow_neg` : the decay with an unspecified constant.
 
-**`SchwartzMap.norm_le_rpow_neg_mul`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean#L53).
+**`SchwartzMap.norm_le_rpow_neg_mul`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean#L53).
 
 > **Decay of a Schwartz function with an explicit constant.**
 
@@ -42,7 +42,7 @@ lemma norm_le_rpow_neg_mul (h : 𝓢(V, F)) (k : ℕ) (z : V) :
       (1 + ‖z‖) ^ (-(k : ℝ))
 ```
 
-**`SchwartzMap.exists_norm_le_rpow_neg`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean#L70).
+**`SchwartzMap.exists_norm_le_rpow_neg`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean#L70).
 
 > A Schwartz function decays like `(1 + ‖z‖)⁻ᵏ` for every `k`. The constant is nonnegative.
 
@@ -57,4 +57,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean)
+- [PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Distribution/SchwartzPointwise.lean)

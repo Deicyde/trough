@@ -8,7 +8,7 @@ proof: formalized
 
 # Ontological models of a quantum system
 
-The module `PhyslibAlpha.QuantumMechanics.Foundations.OntologicalModel`, [PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Foundations.OntologicalModel`, [PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean): 4 declarations, 4 with a docstring.
 
 > Ontological models of a finite target quantum system, ψ-ontic models and preparation
 > independence.
@@ -57,7 +57,7 @@ The module `PhyslibAlpha.QuantumMechanics.Foundations.OntologicalModel`, [Physli
 
 ## A. Ontological models
 
-**`QuantumMechanics.OntologicalModel`**, a structure, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L95).
+**`QuantumMechanics.OntologicalModel`**, a structure, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L95).
 
 > An ontological model (Harrigan–Spekkens) of the quantum system `𝓗[d]`, with ontic state
 > space `Λ`.
@@ -99,7 +99,7 @@ structure OntologicalModel (d : Type*) [Fintype d] [DecidableEq d] (Λ : Type*)
 
 ## B. ψ-ontic models
 
-**`QuantumMechanics.OntologicalModel.IsPsiOntic`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L136).
+**`QuantumMechanics.OntologicalModel.IsPsiOntic`**, a def, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L136).
 
 > An ontological model is ψ-ontic if the preparation measures of any two unit vectors with
 > different vector states are mutually singular, so that the ontic state determines the quantum
@@ -112,7 +112,7 @@ def IsPsiOntic (M : OntologicalModel d Λ) : Prop
 
 ## C. Preparation independence
 
-**`QuantumMechanics.OntologicalModel.PreparationIndependent`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L163).
+**`QuantumMechanics.OntologicalModel.PreparationIndependent`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L163).
 
 > The preparation-independence assumption of Pusey, Barrett and Rudolph for the model `M`,
 > relative to a family of models `Mn n` of `n` copies of the system (on `𝓗[Fin n → d]`, with ontic
@@ -137,7 +137,7 @@ def PreparationIndependent (M : OntologicalModel d Λ) {Λn : ℕ → Type*}
     [∀ n, MeasurableSpace (Λn n)] (Mn : (n : ℕ) → OntologicalModel (Fin n → d) (Λn n)) : Prop
 ```
 
-**`QuantumMechanics.OntologicalModel.PreparationIndependent.of_prep_piProdVec`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L173).
+**`QuantumMechanics.OntologicalModel.PreparationIndependent.of_prep_piProdVec`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean#L173).
 
 > The Cartesian-product form of preparation independence: if the `n`-copy models have ontic
 > space `Fin n → Λ` and prepare the product vector `piProdVec ψ` with the product of the
@@ -154,10 +154,10 @@ lemma PreparationIndependent.of_prep_piProdVec {M : OntologicalModel d Λ}
 
 ## Depends on
 
-- [The observables of a C⋆-algebra](../../../physlib/probabilistictheory/cstaralgebra/orderunit.md)
+- [The observables of a C⋆-algebra (PhyslibAlpha)](../../probabilistictheory/cstaralgebra/orderunit.md)
 - [Measurements](../../probabilistictheory/measurement/basic.md)
 - [Product states of a product of finite targets](../hilbertspaces/finitetarget-productstate.md)
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean)
+- [PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean)

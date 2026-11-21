@@ -7,13 +7,13 @@ proof: formalized
 
 # Diagonal Modular Equation Solver Context
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean), by Valerii Huhnin.
 
 > Umbrella module for the diagonal modular-equation solver: definitions,
 > soundness, the completeness development, and the production
 > `ModularSolutionBasisContext` instance backed by the X-adic PM-basis.
 
-`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasisContextViaPMBasis` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean#L31))
+`CompPoly.PolynomialMatrix.Approximant.modularSolutionBasisContextViaPMBasis` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean#L31))
 
 > Diagonal modular-equation solution-basis context obtained from the
 > exact-nullspace lift and an X-adic PM-basis context.
@@ -35,5 +35,5 @@ def modularSolutionBasisContextViaPMBasis
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.json)

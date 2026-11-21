@@ -7,7 +7,7 @@ proof: formalized
 
 # VC Dimension for Concept Classes
 
-`Cslib.MachineLearning.PACLearning.VCDimension`, in [Cslib/MachineLearning/PACLearning/VCDimension.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean), by Samuel Schlesinger.
+`Cslib.MachineLearning.PACLearning.VCDimension`, in [Cslib/MachineLearning/PACLearning/VCDimension.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean), by Samuel Schlesinger.
 
 > This file defines *shattering* and the *Vapnik-Chervonenkis dimension* for
 > binary concept classes `C : ConceptClass α Bool`, i.e. sets of `α → Bool`
@@ -36,7 +36,7 @@ proof: formalized
 >   *A General Lower Bound on the Number of Examples Needed
 >   for Learning*][EHKV1989]
 
-`Cslib.MachineLearning.PACLearning.SetShatters` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L53))
+`Cslib.MachineLearning.PACLearning.SetShatters` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L53))
 
 > A binary concept class `C` *shatters* a set `W` if for every subset `W' ⊆ W`,
 > there exists a concept `c ∈ C` whose positive set `c ⁻¹' {true}` intersects `W`
@@ -46,7 +46,7 @@ proof: formalized
 def SetShatters (C : ConceptClass α Bool) (W : Set α) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.SetShatters.subset` (theorem, [line 58](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L58))
+`Cslib.MachineLearning.PACLearning.SetShatters.subset` (theorem, [line 58](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L58))
 
 > Shattering is anti-monotone in the shattered set: if `C` shatters `W` and
 > `V ⊆ W`, then `C` shatters `V`.
@@ -56,7 +56,7 @@ theorem SetShatters.subset {C : ConceptClass α Bool} {W V : Set α}
     (hW : SetShatters C W) (hVW : V ⊆ W) : SetShatters C V
 ```
 
-`Cslib.MachineLearning.PACLearning.SetShatters.superset` (theorem, [line 75](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L75))
+`Cslib.MachineLearning.PACLearning.SetShatters.superset` (theorem, [line 75](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L75))
 
 > Shattering is monotone in the concept class: if `C` shatters `W` and `C ⊆ C'`,
 > then `C'` shatters `W`.
@@ -66,7 +66,7 @@ theorem SetShatters.superset {C C' : ConceptClass α Bool} {W : Set α}
     (hW : SetShatters C W) (hCC' : C ⊆ C') : SetShatters C' W
 ```
 
-`Finset.Shatters.toSetShatters` (theorem, [line 86](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L86))
+`Finset.Shatters.toSetShatters` (theorem, [line 86](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L86))
 
 > If a finite set family `𝒜` shatters a finite set `s` in the sense of Mathlib's
 > `Finset.Shatters`, then the concept class of characteristic functions of sets in `𝒜`
@@ -80,7 +80,7 @@ theorem _root_.Finset.Shatters.toSetShatters {𝒜 : Finset (Finset α)} {s : Fi
       {c : α → Bool | ∃ t ∈ 𝒜, ∀ x, c x = decide (x ∈ t)} ↑s
 ```
 
-`Cslib.MachineLearning.PACLearning.vcDim` (definition, [line 111](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L111))
+`Cslib.MachineLearning.PACLearning.vcDim` (definition, [line 111](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L111))
 
 > The *Vapnik-Chervonenkis dimension* of a binary concept class `C` is the
 > supremum of the cardinalities of finite sets shattered by `C`. Returns `0` when
@@ -93,7 +93,7 @@ theorem _root_.Finset.Shatters.toSetShatters {𝒜 : Finset (Finset α)} {s : Fi
 noncomputable def vcDim (C : ConceptClass α Bool) : ℕ
 ```
 
-`Cslib.MachineLearning.PACLearning.HasFiniteVCDim` (definition, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L118))
+`Cslib.MachineLearning.PACLearning.HasFiniteVCDim` (definition, [line 118](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L118))
 
 > A binary concept class `C` has *finite VC dimension* if there is a uniform
 > upper bound on the cardinalities of finite sets it shatters. This is the
@@ -104,7 +104,7 @@ noncomputable def vcDim (C : ConceptClass α Bool) : ℕ
 def HasFiniteVCDim (C : ConceptClass α Bool) : Prop
 ```
 
-`Cslib.MachineLearning.PACLearning.hasFiniteVCDim_iff` (theorem, [line 123](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean#L123))
+`Cslib.MachineLearning.PACLearning.hasFiniteVCDim_iff` (theorem, [line 123](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean#L123))
 
 > A class has finite VC dimension iff there is a uniform bound on the
 > cardinality of every shattered finite set.
@@ -120,5 +120,5 @@ theorem hasFiniteVCDim_iff {C : ConceptClass α Bool} :
 
 ## Sources
 
-- [Cslib/MachineLearning/PACLearning/VCDimension.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/MachineLearning/PACLearning/VCDimension.lean)
+- [Cslib/MachineLearning/PACLearning/VCDimension.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/MachineLearning/PACLearning/VCDimension.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.MachineLearning.PACLearning.VCDimension.json)

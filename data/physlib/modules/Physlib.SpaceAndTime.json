@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "Physlib/SpaceAndTime/GalileanGroup/Basic.lean",
@@ -464,7 +464,7 @@
      "text": "## B. Inertial reference frames\n\nIn Newtonian mechanics, an inertial coordinate grid does not rotate or change scale, and its origin\nmoves in a straight line at constant velocity. These conditions restrict the frame, not the\nparticles described in that frame."
     },
     {
-     "line": 133,
+     "line": 152,
      "text": "## C. Vectors in a reference frame\n\n`frame.Vector` is the common coordinate carrier for vector quantities expressed relative to\n`frame`. It intentionally records the coordinate frame but not the physical dimension, so relative\nposition, velocity, acceleration, force, momentum, and similar quantities can use the same\ncomponentwise calculations. Their different physical roles, units, and transformation laws must be\nsupplied by the surrounding definitions. When a vector represents a displacement, `dispEquiv`\nconverts its coordinates into the corresponding geometric displacement at a given time."
     }
    ],
@@ -542,9 +542,33 @@
      "sorry": false
     },
     {
-     "name": "ClassicalMechanics.ReferenceFrame.IsInertial.isMetricConserved",
+     "name": "ClassicalMechanics.ReferenceFrame.IsInertial.origin_vsub_eq",
      "kind": "lemma",
      "line": 126,
+     "doc": "The origin of an inertial frame moves by elapsed time times its constant velocity.",
+     "statement": "lemma IsInertial.origin_vsub_eq (h : frame.IsInertial) (t₁ t₂ : Time) :\n    frame.origin t₂ -ᵥ frame.origin t₁ = (t₂ -ᵥ t₁) • h.velocity",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.IsInertial.velocity_eq_of_origin_vsub_eq",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "A velocity describing the origin's displacement at every pair of times is unique.",
+     "statement": "lemma IsInertial.velocity_eq_of_origin_vsub_eq (h : frame.IsInertial)\n    {velocity : EuclideanSpace ℝ (Fin d)}\n    (hvelocity : ∀ t₁ t₂, frame.origin t₂ -ᵥ frame.origin t₁ = (t₂ -ᵥ t₁) • velocity) :\n    h.velocity = velocity",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.IsInertial.origin_eq",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "An inertial frame's origin has an affine trajectory through its position at the time origin.",
+     "statement": "lemma IsInertial.origin_eq (h : frame.IsInertial) (t : Time) :\n    frame.origin t = (t -ᵥ frame.timeOrigin) • h.velocity +ᵥ frame.origin frame.timeOrigin",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.IsInertial.isMetricConserved",
+     "kind": "lemma",
+     "line": 145,
      "doc": "An inertial frame conserves its coordinate metric.",
      "statement": "lemma IsInertial.isMetricConserved (h : frame.IsInertial) : frame.IsMetricConserved",
      "sorry": false
@@ -552,7 +576,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 131,
+     "line": 150,
      "doc": "Inertiality provides the conserved metric needed for metric operations on frame vectors.",
      "statement": "instance [h : Fact frame.IsInertial] : Fact frame.IsMetricConserved",
      "sorry": false
@@ -560,7 +584,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector",
      "kind": "structure",
-     "line": 145,
+     "line": 164,
      "doc": "The `d` real components used to express a vector quantity relative to `frame`.",
      "statement": "structure Vector (frame : ReferenceFrame d) where\n  /-- One scalar coefficient for each axis of the frame. -/\n  components : Fin d → ℝ",
      "sorry": false
@@ -568,7 +592,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.componentEquiv",
      "kind": "def",
-     "line": 152,
+     "line": 171,
      "doc": "Equivalence between frame vectors and coordinate components",
      "statement": "def componentEquiv : frame.Vector ≃ (Fin d → ℝ)",
      "sorry": false
@@ -576,7 +600,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 155,
+     "line": 174,
      "doc": "",
      "statement": "instance : AddCommGroup frame.Vector",
      "sorry": false
@@ -584,7 +608,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 157,
+     "line": 176,
      "doc": "",
      "statement": "instance : Module ℝ frame.Vector",
      "sorry": false
@@ -592,7 +616,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 161,
+     "line": 180,
      "doc": "Scalar multiplication by a positive real.",
      "statement": "instance : SMul {x : ℝ // 0 < x} frame.Vector",
      "sorry": false
@@ -600,7 +624,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.componentLinearEquiv",
      "kind": "def",
-     "line": 165,
+     "line": 184,
      "doc": "Linear equivalence between frame vectors and coordinate components.",
      "statement": "def componentLinearEquiv : frame.Vector ≃ₗ[ℝ] (Fin d → ℝ)",
      "sorry": false
@@ -608,7 +632,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.dispEquiv",
      "kind": "def",
-     "line": 170,
+     "line": 189,
      "doc": "Equivalence between frame vectors and geometric displacements in space,\ndefined by the frame's basis at time coordinate `t`.",
      "statement": "def dispEquiv (t : ℝ) : frame.Vector ≃ₗ[ℝ] EuclideanSpace ℝ (Fin d)",
      "sorry": false
@@ -616,7 +640,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 174,
+     "line": 193,
      "doc": "Use the same topology for frame vectors as components' product topology.",
      "statement": "instance : TopologicalSpace frame.Vector",
      "sorry": false
@@ -624,7 +648,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.componentContLinearEquiv",
      "kind": "def",
-     "line": 177,
+     "line": 196,
      "doc": "Continuous linear equivalence between frame vectors and coordinate components.",
      "statement": "def componentContLinearEquiv (frame : ReferenceFrame d) : frame.Vector ≃L[ℝ] (Fin d → ℝ)",
      "sorry": false
@@ -632,7 +656,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 182,
+     "line": 201,
      "doc": "",
      "statement": "instance : FiniteDimensional ℝ frame.Vector",
      "sorry": false
@@ -640,7 +664,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.contDispEquiv",
      "kind": "def",
-     "line": 187,
+     "line": 206,
      "doc": "Continuous equivalence between frame vectors and geometric displacements in space,\ndefined by the frame's basis at time coordinate `t`.",
      "statement": "def contDispEquiv (t : ℝ) : frame.Vector ≃L[ℝ] EuclideanSpace ℝ (Fin d)",
      "sorry": false
@@ -648,7 +672,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 192,
+     "line": 211,
      "doc": "The physical norm on frame vectors, pulled back from geometric displacement space.",
      "statement": "instance [_h : Fact frame.IsMetricConserved] : NormedAddCommGroup frame.Vector",
      "sorry": false
@@ -656,7 +680,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 200,
+     "line": 219,
      "doc": "The physical inner product on frame vectors, pulled back from geometric displacement space.",
      "statement": "instance [Fact frame.IsMetricConserved] : InnerProductSpace ℝ frame.Vector",
      "sorry": false
@@ -664,7 +688,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.norm_euclidean_if_orthonormal",
      "kind": "lemma",
-     "line": 209,
+     "line": 228,
      "doc": "In an orthonormal frame, the norm is the square root of squared components.",
      "statement": "lemma norm_euclidean_if_orthonormal [h : Fact frame.Orthonormal] :\n    ∀ v : frame.Vector, ‖v‖^2 = ∑ i, (v.components i)^2",
      "sorry": false
@@ -672,7 +696,7 @@
     {
      "name": "ClassicalMechanics.ReferenceFrame.Vector.inner_euclidean_if_orthonormal",
      "kind": "lemma",
-     "line": 219,
+     "line": 238,
      "doc": "In an orthonormal frame, the inner product is the sum of component products.",
      "statement": "lemma inner_euclidean_if_orthonormal [h : Fact frame.Orthonormal] :\n    ∀ v w : frame.Vector, inner ℝ v w = ∑ i, v.components i * w.components i",
      "sorry": false
@@ -4961,55 +4985,55 @@
    "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 48,
+     "line": 49,
      "text": "## A.1. Instance of an additive commutative monoid"
     },
     {
-     "line": 104,
+     "line": 105,
      "text": "## A.2. Instance of a module over `ℝ`"
     },
     {
-     "line": 147,
+     "line": 148,
      "text": "## A.3. Instance of an inner product space"
     },
     {
-     "line": 269,
+     "line": 274,
      "text": "## A.4. Instance of a measurable space"
     },
     {
-     "line": 280,
+     "line": 285,
      "text": "## The norm on `Space`"
     },
     {
-     "line": 286,
+     "line": 291,
      "text": "## Inner product"
     },
     {
-     "line": 310,
+     "line": 315,
      "text": "## Basis\n\nA basis in Lean is typically represented by `Module.Basis ι R M`: an indexed\nfamily of vectors in an `R`-module `M` such that every element of `M` has a\nunique finite linear expansion in those vectors. The index type `ι` names the\nbasis vectors, and the map `basis.repr` gives the coordinate representation of a\nvector with respect to that basis.\n\nFor inner product spaces, Lean also has `OrthonormalBasis ι R M`. This is a\nbasis whose vectors are orthonormal, packaged together with a linear isometric\nequivalence between `M` and its coordinate space. It can be coerced to the\nunderlying `Module.Basis` using `basis.toBasis` when only the linear-algebraic\nbasis structure is needed.\n\nThe standard basis below is indexed by `Fin d`, so the basis vector `basis i`\nis the unit vector in the `i`th coordinate direction of `Space d`."
     },
     {
-     "line": 418,
+     "line": 423,
      "text": "## Coordinates"
     },
     {
-     "line": 492,
+     "line": 497,
      "text": "## Basic differentiablity conditions"
     },
     {
-     "line": 561,
+     "line": 566,
      "text": "## Directions"
     },
     {
-     "line": 584,
+     "line": 589,
      "text": "## One equiv"
     },
     {
-     "line": 658,
+     "line": 663,
      "text": "## Relation to tangent space"
     },
     {
-     "line": 714,
+     "line": 719,
      "text": "## Properties of vadd with module structure"
     }
    ],
@@ -5017,7 +5041,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 54,
+     "line": 55,
      "doc": "",
      "statement": "instance {d} : Add (Space d)",
      "sorry": false
@@ -5025,7 +5049,7 @@
     {
      "name": "Space.add_val",
      "kind": "lemma",
-     "line": 58,
+     "line": 59,
      "doc": "",
      "statement": "lemma add_val {d: ℕ} (x y : Space d) :\n    (x + y).val = x.val + y.val",
      "sorry": false
@@ -5033,7 +5057,7 @@
     {
      "name": "Space.add_apply",
      "kind": "lemma",
-     "line": 62,
+     "line": 63,
      "doc": "",
      "statement": "lemma add_apply {d : ℕ} (x y : Space d) (i : Fin d) :\n    (x + y) i = x i + y i",
      "sorry": false
@@ -5041,7 +5065,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 66,
+     "line": 67,
      "doc": "",
      "statement": "instance {d} : AddCommMonoid (Space d)",
      "sorry": false
@@ -5049,7 +5073,7 @@
     {
      "name": "Space.nsmul_val",
      "kind": "lemma",
-     "line": 86,
+     "line": 87,
      "doc": "",
      "statement": "lemma nsmul_val {d : ℕ} (n : ℕ) (a : Space d) :\n    (n • a).val = fun i => n • a.val i",
      "sorry": false
@@ -5057,7 +5081,7 @@
     {
      "name": "Space.nsmul_apply",
      "kind": "lemma",
-     "line": 90,
+     "line": 91,
      "doc": "",
      "statement": "lemma nsmul_apply {d : ℕ} (n : ℕ) (a : Space d) (i : Fin d) :\n    (n • a) i = n • (a i)",
      "sorry": false
@@ -5065,7 +5089,7 @@
     {
      "name": "Space.eq_vadd_zero",
      "kind": "lemma",
-     "line": 93,
+     "line": 94,
      "doc": "",
      "statement": "lemma eq_vadd_zero {d} (s : Space d) :\n    ∃ v : EuclideanSpace ℝ (Fin d), s = v +ᵥ (0 : Space d)",
      "sorry": false
@@ -5073,7 +5097,7 @@
     {
      "name": "Space.add_vadd_zero",
      "kind": "lemma",
-     "line": 99,
+     "line": 100,
      "doc": "",
      "statement": "lemma add_vadd_zero {d} (v1 v2 : EuclideanSpace ℝ (Fin d)) :\n    (v1 +ᵥ (0 : Space d)) + (v2 +ᵥ (0 : Space d)) = (v1 + v2) +ᵥ (0 : Space d)",
      "sorry": false
@@ -5081,7 +5105,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 110,
+     "line": 111,
      "doc": "",
      "statement": "instance {d} : SMul ℝ (Space d)",
      "sorry": false
@@ -5089,7 +5113,7 @@
     {
      "name": "Space.smul_val",
      "kind": "lemma",
-     "line": 114,
+     "line": 115,
      "doc": "",
      "statement": "lemma smul_val {d : ℕ} (c : ℝ) (p : Space d) :\n    (c • p).val = fun i => c * p.val i",
      "sorry": false
@@ -5097,7 +5121,7 @@
     {
      "name": "Space.smul_apply",
      "kind": "lemma",
-     "line": 118,
+     "line": 119,
      "doc": "",
      "statement": "lemma smul_apply {d : ℕ} (c : ℝ) (p : Space d) (i : Fin d) :\n    (c • p) i = c * (p i)",
      "sorry": false
@@ -5105,7 +5129,7 @@
     {
      "name": "Space.smul_vadd_zero",
      "kind": "lemma",
-     "line": 122,
+     "line": 123,
      "doc": "",
      "statement": "lemma smul_vadd_zero {d} (k : ℝ) (v : EuclideanSpace ℝ (Fin d)) :\n    k • (v +ᵥ (0 : Space d)) = (k • v) +ᵥ (0 : Space d)",
      "sorry": false
@@ -5113,7 +5137,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 127,
+     "line": 128,
      "doc": "",
      "statement": "instance {d} : Module ℝ (Space d)",
      "sorry": false
@@ -5121,7 +5145,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 153,
+     "line": 154,
      "doc": "",
      "statement": "noncomputable instance {d} : Norm (Space d)",
      "sorry": false
@@ -5129,7 +5153,7 @@
     {
      "name": "Space.norm_eq",
      "kind": "lemma",
-     "line": 156,
+     "line": 157,
      "doc": "",
      "statement": "lemma norm_eq {d} (p : Space d) : ‖p‖ = √ (∑ i, (p i) ^ 2)",
      "sorry": false
@@ -5137,7 +5161,7 @@
     {
      "name": "Space.abs_eval_le_norm",
      "kind": "lemma",
-     "line": 160,
+     "line": 161,
      "doc": "",
      "statement": "lemma abs_eval_le_norm {d} (p : Space d) (i : Fin d) :\n    |p i| ≤ ‖p‖",
      "sorry": false
@@ -5145,7 +5169,7 @@
     {
      "name": "Space.norm_sq_eq",
      "kind": "lemma",
-     "line": 166,
+     "line": 167,
      "doc": "",
      "statement": "lemma norm_sq_eq {d} (p : Space d) :\n    ‖p‖ ^ 2 = ∑ i, (p i) ^ 2",
      "sorry": false
@@ -5153,7 +5177,7 @@
     {
      "name": "Space.point_dim_zero_eq",
      "kind": "lemma",
-     "line": 171,
+     "line": 172,
      "doc": "",
      "statement": "lemma point_dim_zero_eq (p : Space 0) : p = 0",
      "sorry": false
@@ -5161,7 +5185,7 @@
     {
      "name": "Space.norm_vadd_zero",
      "kind": "lemma",
-     "line": 175,
+     "line": 176,
      "doc": "",
      "statement": "lemma norm_vadd_zero {d} (v : EuclideanSpace ℝ (Fin d)) :\n    ‖v +ᵥ (0 : Space d)‖ = ‖v‖",
      "sorry": false
@@ -5169,7 +5193,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 179,
+     "line": 180,
      "doc": "",
      "statement": "instance : Neg (Space d)",
      "sorry": false
@@ -5177,7 +5201,7 @@
     {
      "name": "Space.neg_val",
      "kind": "lemma",
-     "line": 183,
+     "line": 184,
      "doc": "",
      "statement": "lemma neg_val {d : ℕ} (p : Space d) :\n    (-p).val = fun i => - (p.val i)",
      "sorry": false
@@ -5185,7 +5209,7 @@
     {
      "name": "Space.neg_apply",
      "kind": "lemma",
-     "line": 187,
+     "line": 188,
      "doc": "",
      "statement": "lemma neg_apply {d : ℕ} (p : Space d) (i : Fin d) :\n    (-p) i = - (p i)",
      "sorry": false
@@ -5193,7 +5217,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 190,
+     "line": 191,
      "doc": "",
      "statement": "noncomputable instance {d} : AddCommGroup (Space d)",
      "sorry": false
@@ -5201,7 +5225,7 @@
     {
      "name": "Space.sub_apply",
      "kind": "lemma",
-     "line": 197,
+     "line": 198,
      "doc": "",
      "statement": "lemma sub_apply {d} (p q : Space d) (i : Fin d) :\n    (p - q) i = p i - q i",
      "sorry": false
@@ -5209,7 +5233,7 @@
     {
      "name": "Space.sub_val",
      "kind": "lemma",
-     "line": 202,
+     "line": 203,
      "doc": "",
      "statement": "lemma sub_val {d} (p q : Space d) :\n    (p - q).val = fun i => p.val i - q.val i",
      "sorry": false
@@ -5217,7 +5241,7 @@
     {
      "name": "Space.vadd_zero_sub_vadd_zero",
      "kind": "lemma",
-     "line": 206,
+     "line": 207,
      "doc": "",
      "statement": "lemma vadd_zero_sub_vadd_zero {d} (v1 v2 : EuclideanSpace ℝ (Fin d)) :\n    (v1 +ᵥ (0 : Space d)) - (v2 +ᵥ (0 : Space d)) = (v1 - v2) +ᵥ (0 : Space d)",
      "sorry": false
@@ -5225,7 +5249,7 @@
     {
      "name": "Space.dist_eq_norm",
      "kind": "lemma",
-     "line": 212,
+     "line": 213,
      "doc": "",
      "statement": "lemma dist_eq_norm {d} (p q : Space d) :\n    dist p q = ‖p - q‖",
      "sorry": false
@@ -5233,7 +5257,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 215,
+     "line": 216,
      "doc": "",
      "statement": "noncomputable instance {d} : SeminormedAddCommGroup (Space d)",
      "sorry": false
@@ -5241,7 +5265,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 220,
+     "line": 221,
      "doc": "",
      "statement": "noncomputable instance : NormedAddCommGroup (Space d)",
      "sorry": false
@@ -5249,7 +5273,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 225,
+     "line": 226,
      "doc": "",
      "statement": "instance {d} : Inner ℝ (Space d)",
      "sorry": false
@@ -5257,7 +5281,7 @@
     {
      "name": "Space.inner_vadd_zero",
      "kind": "lemma",
-     "line": 229,
+     "line": 230,
      "doc": "",
      "statement": "lemma inner_vadd_zero {d} (v1 v2 : EuclideanSpace ℝ (Fin d)) :\n    inner ℝ (v1 +ᵥ (0 : Space d)) (v2 +ᵥ (0 : Space d)) = Inner.inner ℝ v1 v2",
      "sorry": false
@@ -5265,7 +5289,7 @@
     {
      "name": "Space.inner_apply",
      "kind": "lemma",
-     "line": 233,
+     "line": 234,
      "doc": "",
      "statement": "lemma inner_apply {d} (p q : Space d) :\n    inner ℝ p q = ∑ i, p i * q i",
      "sorry": false
@@ -5273,7 +5297,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 236,
+     "line": 237,
      "doc": "",
      "statement": "instance {d} : InnerProductSpace ℝ (Space d)",
      "sorry": false
@@ -5281,7 +5305,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 262,
+     "line": 267,
      "doc": "The normed space structure on `Space d`, registered directly. It is definitionally the\none underlying the inner product space structure, but registering it as its own instance is\nneeded for typeclass search to find the operator-norm structure on `Space d →L[ℝ] ℝ`\n(for example `NormSMulClass ℝ (Space d →L[ℝ] ℝ)`), which is not found when\n`NormedSpace ℝ (Space d)` arises only as a nested subgoal through\n`InnerProductSpace.toNormedSpace`.",
      "statement": "noncomputable instance {d} : NormedSpace ℝ (Space d)",
      "sorry": false
@@ -5289,7 +5313,7 @@
     {
      "name": "Space.norm_smul_sphere",
      "kind": "lemma",
-     "line": 264,
+     "line": 269,
      "doc": "",
      "statement": "lemma norm_smul_sphere {d : ℕ} (n : ↑(Metric.sphere (0 : Space d) 1))\n    {r : ℝ} (hr : 0 ≤ r) :\n    ‖(r • (n : Space d))‖ = r",
      "sorry": false
@@ -5297,7 +5321,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 275,
+     "line": 280,
      "doc": "",
      "statement": "noncomputable instance {d : ℕ} : MeasurableSpace (Space d)",
      "sorry": false
@@ -5305,7 +5329,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 277,
+     "line": 282,
      "doc": "",
      "statement": "instance {d : ℕ} : BorelSpace (Space d)",
      "sorry": false
@@ -5313,7 +5337,7 @@
     {
      "name": "Space.inner_eq_sum",
      "kind": "lemma",
-     "line": 292,
+     "line": 297,
      "doc": "",
      "statement": "lemma inner_eq_sum {d} (p q : Space d) :\n    inner ℝ p q = ∑ i, p i * q i",
      "sorry": false
@@ -5321,7 +5345,7 @@
     {
      "name": "Space.sum_apply",
      "kind": "lemma",
-     "line": 297,
+     "line": 302,
      "doc": "",
      "statement": "lemma sum_apply {ι : Type} [Fintype ι] (f : ι → Space d) (i : Fin d) :\n    (∑ x, f x) i = ∑ x, f x i",
      "sorry": false
@@ -5329,7 +5353,7 @@
     {
      "name": "Space.basis",
      "kind": "def",
-     "line": 332,
+     "line": 337,
      "doc": "The standard basis of Space based on `Fin d`.",
      "statement": "noncomputable def basis {d} : OrthonormalBasis (Fin d) ℝ (Space d)",
      "sorry": false
@@ -5337,7 +5361,7 @@
     {
      "name": "Space.apply_eq_basis_repr_apply",
      "kind": "lemma",
-     "line": 352,
+     "line": 357,
      "doc": "",
      "statement": "lemma apply_eq_basis_repr_apply {d} (p : Space d) (i : Fin d) :\n    p i = basis.repr p i",
      "sorry": false
@@ -5345,7 +5369,7 @@
     {
      "name": "Space.basis_repr_apply",
      "kind": "lemma",
-     "line": 357,
+     "line": 362,
      "doc": "",
      "statement": "lemma basis_repr_apply {d} (p : Space d) (i : Fin d) :\n    basis.repr p i = p i",
      "sorry": false
@@ -5353,7 +5377,7 @@
     {
      "name": "Space.basis_repr_symm_apply",
      "kind": "lemma",
-     "line": 362,
+     "line": 367,
      "doc": "",
      "statement": "lemma basis_repr_symm_apply {d} (v : EuclideanSpace ℝ (Fin d)) (i : Fin d) :\n    basis.repr.symm v i = v i",
      "sorry": false
@@ -5361,7 +5385,7 @@
     {
      "name": "Space.basis_apply",
      "kind": "lemma",
-     "line": 365,
+     "line": 370,
      "doc": "",
      "statement": "lemma basis_apply {d} (i j : Fin d) :\n    basis i j = if i = j then 1 else 0",
      "sorry": false
@@ -5369,7 +5393,7 @@
     {
      "name": "Space.basis_self",
      "kind": "lemma",
-     "line": 370,
+     "line": 375,
      "doc": "",
      "statement": "lemma basis_self {d} (i : Fin d) : basis i i = 1",
      "sorry": false
@@ -5377,7 +5401,7 @@
     {
      "name": "Space.inner_basis",
      "kind": "lemma",
-     "line": 374,
+     "line": 379,
      "doc": "",
      "statement": "lemma inner_basis {d} (p : Space d) (i : Fin d) :\n    inner ℝ p (basis i) = p i",
      "sorry": false
@@ -5385,7 +5409,7 @@
     {
      "name": "Space.basis_inner",
      "kind": "lemma",
-     "line": 379,
+     "line": 384,
      "doc": "",
      "statement": "lemma basis_inner {d} (i : Fin d) (p : Space d) :\n    inner ℝ (basis i) p = p i",
      "sorry": false
@@ -5393,7 +5417,7 @@
     {
      "name": "Space.basis_repr_inner_eq",
      "kind": "lemma",
-     "line": 385,
+     "line": 390,
      "doc": "",
      "statement": "lemma basis_repr_inner_eq {d} (p : Space d) (v : EuclideanSpace ℝ (Fin d)) :\n    ⟪basis.repr p, v⟫_ℝ = ⟪p, basis.repr.symm v⟫_ℝ",
      "sorry": false
@@ -5401,7 +5425,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 389,
+     "line": 394,
      "doc": "",
      "statement": "instance {d : ℕ} : FiniteDimensional ℝ (Space d)",
      "sorry": false
@@ -5409,7 +5433,7 @@
     {
      "name": "Space.finrank_eq_dim",
      "kind": "lemma",
-     "line": 393,
+     "line": 398,
      "doc": "",
      "statement": "lemma finrank_eq_dim {d : ℕ} : Module.finrank ℝ (Space d) = d",
      "sorry": false
@@ -5417,7 +5441,7 @@
     {
      "name": "Space.rank_eq_dim",
      "kind": "lemma",
-     "line": 397,
+     "line": 402,
      "doc": "",
      "statement": "lemma rank_eq_dim {d : ℕ} : Module.rank ℝ (Space d) = d",
      "sorry": false
@@ -5425,7 +5449,7 @@
     {
      "name": "Space.fderiv_basis_repr",
      "kind": "lemma",
-     "line": 401,
+     "line": 406,
      "doc": "",
      "statement": "lemma fderiv_basis_repr {d} (p : Space d) :\n    fderiv ℝ basis.repr p = basis.repr.toContinuousLinearMap",
      "sorry": false
@@ -5433,7 +5457,7 @@
     {
      "name": "Space.fderiv_basis_repr_symm",
      "kind": "lemma",
-     "line": 407,
+     "line": 412,
      "doc": "",
      "statement": "lemma fderiv_basis_repr_symm {d} (v : EuclideanSpace ℝ (Fin d)) :\n    fderiv ℝ basis.repr.symm v = basis.repr.symm.toContinuousLinearMap",
      "sorry": false
@@ -5441,7 +5465,7 @@
     {
      "name": "Space.basis_induction_on",
      "kind": "lemma",
-     "line": 412,
+     "line": 417,
      "doc": "",
      "statement": "lemma basis_induction_on {d} {P : Space d → Prop}\n    (hb : ∀ i, P (basis i)) (hzero : P 0)\n    (hadd : ∀ p1 p2, P p1 → P p2 → P (p1 + p2))\n    (hsmul : ∀ (c : ℝ) p, P p → P (c • p)) (p : Space d) : P p",
      "sorry": false
@@ -5449,7 +5473,7 @@
     {
      "name": "Space.coord",
      "kind": "def",
-     "line": 427,
+     "line": 432,
      "doc": "The standard coordinate functions of Space based on `Fin d`.\n\nThe notation `𝔁 μ p` can be used for this.",
      "statement": "noncomputable def coord (μ : Fin d) (p : Space d) : ℝ",
      "sorry": false
@@ -5457,7 +5481,7 @@
     {
      "name": "Space.coord_apply",
      "kind": "lemma",
-     "line": 430,
+     "line": 435,
      "doc": "",
      "statement": "lemma coord_apply (μ : Fin d) (p : Space d) :\n    coord μ p = p μ",
      "sorry": false
@@ -5465,7 +5489,7 @@
     {
      "name": "Space.coordCLM",
      "kind": "def",
-     "line": 435,
+     "line": 440,
      "doc": "The standard coordinate functions of Space based on `Fin d`, as a continuous linear map.",
      "statement": "noncomputable def coordCLM {d} (μ : Fin d) : Space d →L[ℝ] ℝ",
      "sorry": false
@@ -5473,7 +5497,7 @@
     {
      "name": "Space.coord_contDiff",
      "kind": "lemma",
-     "line": 448,
+     "line": 453,
      "doc": "",
      "statement": "lemma coord_contDiff {i} : ContDiff ℝ ∞ (fun x : Space d => x.coord i)",
      "sorry": false
@@ -5481,7 +5505,7 @@
     {
      "name": "Space.coordCLM_apply",
      "kind": "lemma",
-     "line": 451,
+     "line": 456,
      "doc": "",
      "statement": "lemma coordCLM_apply (μ : Fin d) (p : Space d) :\n    coordCLM μ p = coord μ p",
      "sorry": false
@@ -5489,7 +5513,7 @@
     {
      "name": "Space.eval_continuous",
      "kind": "lemma",
-     "line": 459,
+     "line": 464,
      "doc": "",
      "statement": "lemma eval_continuous {d} (i : Fin d) :\n    Continuous (fun p : Space d => p i)",
      "sorry": false
@@ -5497,7 +5521,7 @@
     {
      "name": "Space.eval_differentiable",
      "kind": "lemma",
-     "line": 465,
+     "line": 470,
      "doc": "",
      "statement": "lemma eval_differentiable {d} (i : Fin d) :\n    Differentiable ℝ (fun p : Space d => p i)",
      "sorry": false
@@ -5505,7 +5529,7 @@
     {
      "name": "Space.eval_contDiff",
      "kind": "lemma",
-     "line": 471,
+     "line": 476,
      "doc": "",
      "statement": "lemma eval_contDiff {d n} (i : Fin d) :\n    ContDiff ℝ n (fun p : Space d => p i)",
      "sorry": false
@@ -5513,7 +5537,7 @@
     {
      "name": "Space.eval_hasTemperateGrowth",
      "kind": "lemma",
-     "line": 477,
+     "line": 482,
      "doc": "",
      "statement": "lemma eval_hasTemperateGrowth {d} (i : Fin d) :\n    Function.HasTemperateGrowth (fun p : Space d => p i)",
      "sorry": false
@@ -5521,7 +5545,7 @@
     {
      "name": "Space.equivPi",
      "kind": "def",
-     "line": 483,
+     "line": 488,
      "doc": "The continuous linear equivalence between `Space d` and the corresponding `Pi` type.",
      "statement": "noncomputable def equivPi (d : ℕ) :\n    Space d ≃L[ℝ] Π (_ : Fin d), ℝ",
      "sorry": false
@@ -5529,7 +5553,7 @@
     {
      "name": "Space.mk_continuous",
      "kind": "lemma",
-     "line": 499,
+     "line": 504,
      "doc": "",
      "statement": "lemma mk_continuous {d : ℕ} :\n    Continuous (fun (f : Fin d → ℝ) => (⟨f⟩ : Space d))",
      "sorry": false
@@ -5537,7 +5561,7 @@
     {
      "name": "Space.mk_differentiable",
      "kind": "lemma",
-     "line": 503,
+     "line": 508,
      "doc": "",
      "statement": "lemma mk_differentiable {d : ℕ} :\n    Differentiable ℝ (fun (f : Fin d → ℝ) => (⟨f⟩ : Space d))",
      "sorry": false
@@ -5545,7 +5569,7 @@
     {
      "name": "Space.mk_contDiff",
      "kind": "lemma",
-     "line": 507,
+     "line": 512,
      "doc": "",
      "statement": "lemma mk_contDiff {d : ℕ} {n : WithTop ℕ∞}:\n    ContDiff ℝ n (fun (f : Fin d → ℝ) => (⟨f⟩ : Space d))",
      "sorry": false
@@ -5553,7 +5577,7 @@
     {
      "name": "Space.fderiv_mk",
      "kind": "lemma",
-     "line": 511,
+     "line": 516,
      "doc": "",
      "statement": "lemma fderiv_mk {d : ℕ} (f : Fin d → ℝ) :\n    fderiv ℝ Space.mk f = (equivPi d).symm",
      "sorry": false
@@ -5561,7 +5585,7 @@
     {
      "name": "Space.fderiv_val",
      "kind": "lemma",
-     "line": 517,
+     "line": 522,
      "doc": "",
      "statement": "lemma fderiv_val {d : ℕ} (p : Space d) :\n    fderiv ℝ Space.val p = (equivPi d)",
      "sorry": false
@@ -5569,7 +5593,7 @@
     {
      "name": "Space.fderiv_eval_apply",
      "kind": "lemma",
-     "line": 523,
+     "line": 528,
      "doc": "",
      "statement": "lemma fderiv_eval_apply {d : ℕ} (p y : Space d) (i : Fin d) :\n    fderiv ℝ (fun p => p.val i) p y = y i",
      "sorry": false
@@ -5577,7 +5601,7 @@
     {
      "name": "Space.contDiffOn_vadd",
      "kind": "lemma",
-     "line": 531,
+     "line": 536,
      "doc": "",
      "statement": "lemma contDiffOn_vadd (s : Space d) :\n    ContDiffOn ℝ ω (fun (v : EuclideanSpace ℝ (Fin d)) => v +ᵥ s) Set.univ",
      "sorry": false
@@ -5585,7 +5609,7 @@
     {
      "name": "Space.vadd_differentiable",
      "kind": "lemma",
-     "line": 536,
+     "line": 541,
      "doc": "",
      "statement": "lemma vadd_differentiable {d} (s : Space d) :\n    Differentiable ℝ (fun (v : EuclideanSpace ℝ (Fin d)) => v +ᵥ s)",
      "sorry": false
@@ -5593,7 +5617,7 @@
     {
      "name": "Space.contDiffOn_vsub",
      "kind": "lemma",
-     "line": 541,
+     "line": 546,
      "doc": "",
      "statement": "lemma contDiffOn_vsub (s1 : Space d) :\n    ContDiffOn ℝ ω (fun (s : Space d) => s -ᵥ s1) Set.univ",
      "sorry": false
@@ -5601,7 +5625,7 @@
     {
      "name": "Space.vsub_differentiable",
      "kind": "lemma",
-     "line": 546,
+     "line": 551,
      "doc": "",
      "statement": "lemma vsub_differentiable {d} (s1 : Space d) :\n    Differentiable ℝ (fun (s : Space d) => s -ᵥ s1)",
      "sorry": false
@@ -5609,7 +5633,7 @@
     {
      "name": "Space.fderiv_space_components",
      "kind": "lemma",
-     "line": 550,
+     "line": 555,
      "doc": "",
      "statement": "lemma fderiv_space_components {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (μ : Fin d) (f : M → Space d) (hf : Differentiable ℝ f) (m dm : M) :\n    fderiv ℝ f m dm μ = fderiv ℝ (fun m' => f m' μ) m dm",
      "sorry": false
@@ -5617,7 +5641,7 @@
     {
      "name": "Space.Direction",
      "kind": "structure",
-     "line": 568,
+     "line": 573,
      "doc": "Notion of direction where `unit` returns a unit vector in the direction specified.",
      "statement": "structure Direction (d : ℕ := 3) where\n  /-- Unit vector specifying the direction. -/\n  unit : Space d\n  norm : ‖unit‖ = 1",
      "sorry": false
@@ -5625,7 +5649,7 @@
     {
      "name": "Space.toDirection",
      "kind": "def",
-     "line": 574,
+     "line": 579,
      "doc": "Direction of a `Space` value with respect to the origin.",
      "statement": "noncomputable def toDirection {d : ℕ} (x : Space d) (h : x ≠ 0) : Direction d",
      "sorry": false
@@ -5633,7 +5657,7 @@
     {
      "name": "Space.direction_unit_sq_sum",
      "kind": "lemma",
-     "line": 579,
+     "line": 584,
      "doc": "",
      "statement": "lemma direction_unit_sq_sum {d} (s : Direction d) :\n    ∑ i : Fin d, (s.unit i) ^ 2 = 1",
      "sorry": false
@@ -5641,7 +5665,7 @@
     {
      "name": "Space.oneEquiv",
      "kind": "def",
-     "line": 591,
+     "line": 596,
      "doc": "The linear isometric equivalence between `Space 1` and `ℝ`.",
      "statement": "noncomputable def oneEquiv : Space 1 ≃ₗᵢ[ℝ] ℝ",
      "sorry": false
@@ -5649,7 +5673,7 @@
     {
      "name": "Space.oneEquiv_coe",
      "kind": "lemma",
-     "line": 605,
+     "line": 610,
      "doc": "",
      "statement": "lemma oneEquiv_coe :\n    (oneEquiv : Space 1 → ℝ) = fun x => x 0",
      "sorry": false
@@ -5657,7 +5681,7 @@
     {
      "name": "Space.oneEquiv_symm_coe",
      "kind": "lemma",
-     "line": 609,
+     "line": 614,
      "doc": "",
      "statement": "lemma oneEquiv_symm_coe :\n    (oneEquiv.symm : ℝ → Space 1) = (fun x => ⟨fun _ => x⟩)",
      "sorry": false
@@ -5665,7 +5689,7 @@
     {
      "name": "Space.oneEquiv_symm_apply",
      "kind": "lemma",
-     "line": 613,
+     "line": 618,
      "doc": "",
      "statement": "lemma oneEquiv_symm_apply (x : ℝ) (i : Fin 1) :\n    oneEquiv.symm x i = x",
      "sorry": false
@@ -5673,7 +5697,7 @@
     {
      "name": "Space.oneEquiv_continuous",
      "kind": "lemma",
-     "line": 617,
+     "line": 622,
      "doc": "",
      "statement": "lemma oneEquiv_continuous :\n    Continuous (oneEquiv : Space 1 → ℝ)",
      "sorry": false
@@ -5681,7 +5705,7 @@
     {
      "name": "Space.oneEquiv_symm_continuous",
      "kind": "lemma",
-     "line": 622,
+     "line": 627,
      "doc": "",
      "statement": "lemma oneEquiv_symm_continuous :\n    Continuous (oneEquiv.symm : ℝ → Space 1)",
      "sorry": false
@@ -5689,7 +5713,7 @@
     {
      "name": "Space.oneEquivCLE",
      "kind": "def",
-     "line": 628,
+     "line": 633,
      "doc": "The continuous linear equivalence between `Space 1` and `ℝ`.",
      "statement": "noncomputable def oneEquivCLE : Space 1 ≃L[ℝ] ℝ",
      "sorry": false
@@ -5697,7 +5721,7 @@
     {
      "name": "Space.oneEquiv_measurableEmbedding",
      "kind": "lemma",
-     "line": 634,
+     "line": 639,
      "doc": "",
      "statement": "lemma oneEquiv_measurableEmbedding : MeasurableEmbedding oneEquiv",
      "sorry": false
@@ -5705,7 +5729,7 @@
     {
      "name": "Space.oneEquiv_symm_measurableEmbedding",
      "kind": "lemma",
-     "line": 643,
+     "line": 648,
      "doc": "",
      "statement": "lemma oneEquiv_symm_measurableEmbedding : MeasurableEmbedding oneEquiv.symm",
      "sorry": false
@@ -5713,7 +5737,7 @@
     {
      "name": "Space.oneEquiv_measurePreserving",
      "kind": "lemma",
-     "line": 652,
+     "line": 657,
      "doc": "",
      "statement": "lemma oneEquiv_measurePreserving : MeasurePreserving oneEquiv volume volume",
      "sorry": false
@@ -5721,7 +5745,7 @@
     {
      "name": "Space.oneEquiv_symm_measurePreserving",
      "kind": "lemma",
-     "line": 655,
+     "line": 660,
      "doc": "",
      "statement": "lemma oneEquiv_symm_measurePreserving : MeasurePreserving oneEquiv.symm volume volume",
      "sorry": false
@@ -5729,7 +5753,7 @@
     {
      "name": "Space.modelDiffeo",
      "kind": "def",
-     "line": 667,
+     "line": 672,
      "doc": "A diffeomorphism between the two different manifold structures on `Space d`,\nthat equivalent to `𝓡 d` and that equivalent to `𝓘(ℝ, Space d)`",
      "statement": "noncomputable def modelDiffeo {d} : Diffeomorph (𝓡 d) 𝓘(ℝ, Space d) (Space d) (Space d) ⊤",
      "sorry": false
@@ -5737,7 +5761,7 @@
     {
      "name": "Space.modelDiffeo_apply",
      "kind": "lemma",
-     "line": 680,
+     "line": 685,
      "doc": "",
      "statement": "lemma modelDiffeo_apply {d : ℕ} (p : Space d) :\n    modelDiffeo p = p",
      "sorry": false
@@ -5745,7 +5769,7 @@
     {
      "name": "Space.basis_eq_mfderiv_modelDiffeo_single",
      "kind": "lemma",
-     "line": 688,
+     "line": 693,
      "doc": "The derivative of `modelDiffeo` provides an equivalence between\n`Space d` and `EuclideanSpace ℝ (Fin d)`. This equivalences takes the basis\nof `EuclideanSpace ℝ (Fin d)` to the basis of `Space d`, and vice versa.",
      "statement": "lemma basis_eq_mfderiv_modelDiffeo_single (d : ℕ) (μ : Fin d) (x : Space d) :\n    basis μ = mfderiv (𝓡 d) 𝓘(ℝ, Space d) (modelDiffeo (d := d)) x\n      (EuclideanSpace.single μ 1)",
      "sorry": false
@@ -5753,7 +5777,7 @@
     {
      "name": "Space.norm_vadd_le_add",
      "kind": "lemma",
-     "line": 720,
+     "line": 725,
      "doc": "",
      "statement": "lemma norm_vadd_le_add {d} (v : EuclideanSpace ℝ (Fin d)) (s : Space d) :\n    ‖v +ᵥ s‖ ≤ ‖v‖ + ‖s‖",
      "sorry": false
@@ -5761,7 +5785,7 @@
     {
      "name": "Space.differentiable_vadd",
      "kind": "lemma",
-     "line": 733,
+     "line": 738,
      "doc": "",
      "statement": "lemma differentiable_vadd {d} (v : EuclideanSpace ℝ (Fin d)) :\n    Differentiable ℝ (fun (s : Space d) => v +ᵥ s)",
      "sorry": false
@@ -5769,7 +5793,7 @@
     {
      "name": "Space.fderiv_vadd",
      "kind": "lemma",
-     "line": 738,
+     "line": 743,
      "doc": "",
      "statement": "lemma fderiv_vadd {d} (v : EuclideanSpace ℝ (Fin d)) :\n    fderiv ℝ (fun s => v +ᵥ s) = fun (_ : Space d) => ContinuousLinearMap.id ℝ _",
      "sorry": false
@@ -5777,7 +5801,7 @@
     {
      "name": "Space.vadd_hasTemperateGrowth",
      "kind": "lemma",
-     "line": 746,
+     "line": 751,
      "doc": "",
      "statement": "lemma vadd_hasTemperateGrowth {d} (v : EuclideanSpace ℝ (Fin d)) :\n    Function.HasTemperateGrowth (fun s : Space d => v +ᵥ s)",
      "sorry": false
@@ -5785,7 +5809,7 @@
    ],
    "private": 0,
    "aliases": 0,
-   "informal": 0
+   "informal": 1
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/Basic.lean",
@@ -8381,11 +8405,11 @@
    "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 110,
+     "line": 111,
      "text": "## B. Time slices of distributions"
     },
     {
-     "line": 155,
+     "line": 165,
      "text": "### B.1. Time slices and derivatives"
     }
    ],
@@ -8393,7 +8417,7 @@
     {
      "name": "SpaceTime.timeSlice",
      "kind": "def",
-     "line": 34,
+     "line": 35,
      "doc": "The timeslice of a function `SpaceTime d → M` forming a function\n`Time → Space d → M`.",
      "statement": "def timeSlice {d : ℕ} {M : Type} (c : SpeedOfLight := 1) :\n    (SpaceTime d → M) ≃ (Time → Space d → M)",
      "sorry": false
@@ -8401,7 +8425,7 @@
     {
      "name": "SpaceTime.timeSlice_contDiff",
      "kind": "lemma",
-     "line": 46,
+     "line": 47,
      "doc": "",
      "statement": "lemma timeSlice_contDiff {d : ℕ} {M : Type} [NormedAddCommGroup M]\n    [NormedSpace ℝ M]\n    {n} (c : SpeedOfLight) (f : SpaceTime d → M) (h : ContDiff ℝ n f) :\n    ContDiff ℝ n ↿(timeSlice c f)",
      "sorry": false
@@ -8409,7 +8433,7 @@
     {
      "name": "SpaceTime.timeSlice_differentiable",
      "kind": "lemma",
-     "line": 56,
+     "line": 57,
      "doc": "",
      "statement": "lemma timeSlice_differentiable {d : ℕ} {M : Type} [NormedAddCommGroup M]\n    [NormedSpace ℝ M] (c : SpeedOfLight)\n    (f : SpaceTime d → M) (h : Differentiable ℝ f) :\n    Differentiable ℝ ↿(timeSlice c f)",
      "sorry": false
@@ -8417,7 +8441,7 @@
     {
      "name": "SpaceTime.timeSlice_symm_contDiff",
      "kind": "lemma",
-     "line": 66,
+     "line": 67,
      "doc": "",
      "statement": "lemma timeSlice_symm_contDiff {d : ℕ} {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {n} (c : SpeedOfLight) (f : Time → Space d → M) (h : ContDiff ℝ n ↿f) :\n    ContDiff ℝ n ((timeSlice c).symm f)",
      "sorry": false
@@ -8425,7 +8449,7 @@
     {
      "name": "SpaceTime.timeSlice_symm_differentiable",
      "kind": "lemma",
-     "line": 75,
+     "line": 76,
      "doc": "",
      "statement": "lemma timeSlice_symm_differentiable {d : ℕ} {M : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight)\n    (f : Time → Space d → M) (h : Differentiable ℝ ↿f) :\n    Differentiable ℝ ↿((timeSlice c).symm f)",
      "sorry": false
@@ -8433,7 +8457,7 @@
     {
      "name": "SpaceTime.timeSliceLinearEquiv",
      "kind": "def",
-     "line": 86,
+     "line": 87,
      "doc": "The timeslice of a function `SpaceTime d → M` forming a function\n`Time → Space d → M`, as a linear equivalence.",
      "statement": "def timeSliceLinearEquiv {d : ℕ} {M : Type} [AddCommGroup M] [Module ℝ M]\n    (c : SpeedOfLight := 1) :\n    (SpaceTime d → M) ≃ₗ[ℝ] (Time → Space d → M)",
      "sorry": false
@@ -8441,7 +8465,7 @@
     {
      "name": "SpaceTime.timeSliceLinearEquiv_apply",
      "kind": "lemma",
-     "line": 101,
+     "line": 102,
      "doc": "",
      "statement": "lemma timeSliceLinearEquiv_apply {d : ℕ} {M : Type} [AddCommGroup M] [Module ℝ M]\n    (c : SpeedOfLight) (f : SpaceTime d → M) : timeSliceLinearEquiv c f = timeSlice c f",
      "sorry": false
@@ -8449,7 +8473,7 @@
     {
      "name": "SpaceTime.timeSliceLinearEquiv_symm_apply",
      "kind": "lemma",
-     "line": 105,
+     "line": 106,
      "doc": "",
      "statement": "lemma timeSliceLinearEquiv_symm_apply {d : ℕ} {M : Type} [AddCommGroup M] [Module ℝ M]\n    (c : SpeedOfLight) (f : Time → Space d → M) :\n    (timeSliceLinearEquiv c).symm f = (timeSlice c).symm f",
      "sorry": false
@@ -8457,65 +8481,73 @@
     {
      "name": "SpaceTime.distTimeSlice",
      "kind": "def",
-     "line": 119,
+     "line": 121,
      "doc": "The time slice of a distribution on `SpaceTime d` to form a distribution\non `Time × Space d`.",
-     "statement": "noncomputable def distTimeSlice {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight := 1) :\n    ((SpaceTime d) →d[ℝ] M) ≃L[ℝ] ((Time × Space d) →d[ℝ] M)",
+     "statement": "noncomputable def distTimeSlice{F} [NormedAddCommGroup F] [NormedSpace ℝ F]\n    (c : SpeedOfLight := 1) :\n    Distribution (⟨Set.univ (α := SpaceTime d), isOpen_univ⟩) F ⊤ →L[ℝ]\n    Distribution (⟨Set.univ (α := Time × Space d), isOpen_univ⟩) F ⊤",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTime.tempDistTimeSlice",
+     "kind": "def",
+     "line": 129,
+     "doc": "The time slice of a tempered distribution on `SpaceTime d` to form a distribution\non `Time × Space d`.",
+     "statement": "noncomputable def tempDistTimeSlice {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight := 1) :\n    ((SpaceTime d) →d[ℝ] M) ≃L[ℝ] ((Time × Space d) →d[ℝ] M)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distTimeSlice_apply",
      "kind": "lemma",
-     "line": 145,
+     "line": 155,
      "doc": "",
-     "statement": "lemma distTimeSlice_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight) (f : (SpaceTime d) →d[ℝ] M)\n    (κ : 𝓢(Time × Space d, ℝ)) : distTimeSlice c f κ =\n    f (compCLMOfContinuousLinearEquiv ℝ (toTimeAndSpace c) κ)",
+     "statement": "lemma distTimeSlice_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight) (f : (SpaceTime d) →d[ℝ] M)\n    (κ : 𝓢(Time × Space d, ℝ)) : tempDistTimeSlice c f κ =\n    f (compCLMOfContinuousLinearEquiv ℝ (toTimeAndSpace c) κ)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distTimeSlice_symm_apply",
      "kind": "lemma",
-     "line": 150,
+     "line": 160,
      "doc": "",
-     "statement": "lemma distTimeSlice_symm_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight) (f : (Time × (Space d)) →d[ℝ] M)\n    (κ : 𝓢(SpaceTime d, ℝ)) : (distTimeSlice c).symm f κ =\n    f (compCLMOfContinuousLinearEquiv ℝ (toTimeAndSpace c).symm κ)",
+     "statement": "lemma distTimeSlice_symm_apply {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    (c : SpeedOfLight) (f : (Time × (Space d)) →d[ℝ] M)\n    (κ : 𝓢(SpaceTime d, ℝ)) : (tempDistTimeSlice c).symm f κ =\n    f (compCLMOfContinuousLinearEquiv ℝ (toTimeAndSpace c).symm κ)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distTimeSlice_distDeriv_inl",
      "kind": "lemma",
-     "line": 161,
+     "line": 171,
      "doc": "",
-     "statement": "lemma distTimeSlice_distDeriv_inl {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (SpaceTime d) →d[ℝ] M) :\n    distTimeSlice c (distDeriv (Sum.inl 0) f) =\n    (1/c.val) • Space.distTimeDeriv (distTimeSlice c f)",
+     "statement": "lemma distTimeSlice_distDeriv_inl {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (SpaceTime d) →d[ℝ] M) :\n    tempDistTimeSlice c (distDeriv (Sum.inl 0) f) =\n    (1/c.val) • Space.distTimeDeriv (tempDistTimeSlice c f)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distDeriv_inl_distTimeSlice_symm",
      "kind": "lemma",
-     "line": 186,
+     "line": 196,
      "doc": "",
-     "statement": "lemma distDeriv_inl_distTimeSlice_symm {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (Time × Space d) →d[ℝ] M) :\n    distDeriv (Sum.inl 0) ((distTimeSlice c).symm f) =\n    (1/c.val) • (distTimeSlice c).symm (Space.distTimeDeriv f)",
+     "statement": "lemma distDeriv_inl_distTimeSlice_symm {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (Time × Space d) →d[ℝ] M) :\n    distDeriv (Sum.inl 0) ((tempDistTimeSlice c).symm f) =\n    (1/c.val) • (tempDistTimeSlice c).symm (Space.distTimeDeriv f)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distTimeSlice_symm_distTimeDeriv_eq",
      "kind": "lemma",
-     "line": 198,
+     "line": 208,
      "doc": "",
-     "statement": "lemma distTimeSlice_symm_distTimeDeriv_eq {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (Time × Space d) →d[ℝ] M) :\n    (distTimeSlice c).symm (Space.distTimeDeriv f) =\n    c.val • distDeriv (Sum.inl 0) ((distTimeSlice c).symm f)",
+     "statement": "lemma distTimeSlice_symm_distTimeDeriv_eq {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (f : (Time × Space d) →d[ℝ] M) :\n    (tempDistTimeSlice c).symm (Space.distTimeDeriv f) =\n    c.val • distDeriv (Sum.inl 0) ((tempDistTimeSlice c).symm f)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distTimeSlice_distDeriv_inr",
      "kind": "lemma",
-     "line": 206,
+     "line": 216,
      "doc": "",
-     "statement": "lemma distTimeSlice_distDeriv_inr {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (i : Fin d) (f : (SpaceTime d) →d[ℝ] M) :\n    distTimeSlice c (distDeriv (Sum.inr i) f) =\n    Space.distSpaceDeriv i (distTimeSlice c f)",
+     "statement": "lemma distTimeSlice_distDeriv_inr {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (i : Fin d) (f : (SpaceTime d) →d[ℝ] M) :\n    tempDistTimeSlice c (distDeriv (Sum.inr i) f) =\n    Space.distSpaceDeriv i (tempDistTimeSlice c f)",
      "sorry": false
     },
     {
      "name": "SpaceTime.distDeriv_inr_distTimeSlice_symm",
      "kind": "lemma",
-     "line": 227,
+     "line": 237,
      "doc": "",
-     "statement": "lemma distDeriv_inr_distTimeSlice_symm {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (i : Fin d) (f : (Time × Space d) →d[ℝ] M) :\n    distDeriv (Sum.inr i) ((distTimeSlice c).symm f) =\n    (distTimeSlice c).symm (Space.distSpaceDeriv i f)",
+     "statement": "lemma distDeriv_inr_distTimeSlice_symm {M d} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    {c : SpeedOfLight}\n    (i : Fin d) (f : (Time × Space d) →d[ℝ] M) :\n    distDeriv (Sum.inr i) ((tempDistTimeSlice c).symm f) =\n    (tempDistTimeSlice c).symm (Space.distSpaceDeriv i f)",
      "sorry": false
     }
    ],
@@ -9612,16 +9644,16 @@
   {
    "file": "Physlib/SpaceAndTime/Time/ManifoldCurves.lean",
    "module": "Physlib.SpaceAndTime.Time.ManifoldCurves",
-   "title": "Curves in normed spaces over `Time`",
-   "doc": "A curve `Time → F` is smooth, or has a given derivative, iff its coordinate curve does.\n\n## i. Overview\n\nThe charts of `Time` are translations, so the coordinate curve `τ ↦ γ (τ +ᵥ t₀)` needs no origin.\n\n## ii. Key results\n\n- `Time.contMDiff_iff_contDiff_vadd`: a curve is `C^n` iff its coordinate curve is\n- `Time.mfderiv_eq_deriv_vadd`: the manifold derivative is the derivative of the coordinate curve\n- `Time.tangentMap_eq_deriv_vadd`: the tangent map of a curve in coordinates\n\n## iii. Table of contents\n\n- A. Smoothness and differentiability of curves\n- B. Derivatives of curves\n\n## iv. References\n\n* None.",
+   "title": "Curves over `Time`",
+   "doc": "A curve `Time → F` is smooth, or has a given derivative, iff its coordinate curve does.\n\n## i. Overview\n\nThe charts of `Time` are translations, so the coordinate curve `τ ↦ γ (τ +ᵥ t₀)` needs no origin.\n\n## ii. Key results\n\n- `Time.contMDiff_iff_contDiff_vadd`: a curve is `C^n` iff its coordinate curve is\n- `Time.mfderiv_eq_deriv_vadd`: the manifold derivative is the derivative of the coordinate curve\n- `Time.contDiffAt_extChartAt_comp_vadd`: a curve read in a chart is smooth where it lies in it\n- `Time.tangentMap_eq_deriv_vadd`: the tangent map of a curve in coordinates\n\n## iii. Table of contents\n\n- A. Smoothness and differentiability of curves\n- B. Derivatives of curves\n\n## iv. References\n\n* None.",
    "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
-     "line": 44,
+     "line": 47,
      "text": "## A. Smoothness and differentiability of curves"
     },
     {
-     "line": 98,
+     "line": 112,
      "text": "## B. Derivatives of curves"
     }
    ],
@@ -9629,7 +9661,7 @@
     {
      "name": "Time.contMDiffAt_iff_contDiffAt_vadd",
      "kind": "lemma",
-     "line": 58,
+     "line": 61,
      "doc": "A curve into a normed space is `C^n` at `x` iff its coordinate curve is `C^n` at `0`.",
      "statement": "lemma contMDiffAt_iff_contDiffAt_vadd (γ : Time → F) (x : Time) (n : ℕ∞ω) :\n    ContMDiffAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) n γ x ↔ ContDiffAt ℝ n (fun τ : ℝ ↦ γ (τ +ᵥ x)) 0",
      "sorry": false
@@ -9637,7 +9669,7 @@
     {
      "name": "Time.mdifferentiableAt_iff_differentiableAt_vadd",
      "kind": "lemma",
-     "line": 65,
+     "line": 68,
      "doc": "A curve into a normed space is differentiable at `x` iff its coordinate curve is at `0`.",
      "statement": "lemma mdifferentiableAt_iff_differentiableAt_vadd (γ : Time → F) (x : Time) :\n    MDifferentiableAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ x ↔ DifferentiableAt ℝ (fun τ : ℝ ↦ γ (τ +ᵥ x)) 0",
      "sorry": false
@@ -9645,7 +9677,7 @@
     {
      "name": "Time.contMDiff_iff_contDiff_vadd",
      "kind": "lemma",
-     "line": 78,
+     "line": 81,
      "doc": "A curve `γ : Time → F` into a normed space is `C^n` iff the coordinate curve\n`τ ↦ γ (τ +ᵥ t₀)` is `C^n`.",
      "statement": "lemma contMDiff_iff_contDiff_vadd (γ : Time → F) (t₀ : Time) (n : ℕ∞ω) :\n    ContMDiff 𝓘(ℝ, ℝ) 𝓘(ℝ, F) n γ ↔ ContDiff ℝ n (fun τ : ℝ ↦ γ (τ +ᵥ t₀))",
      "sorry": false
@@ -9653,15 +9685,23 @@
     {
      "name": "Time.mdifferentiableAt_vadd_iff",
      "kind": "lemma",
-     "line": 92,
+     "line": 95,
      "doc": "A curve into a normed space is differentiable at `s +ᵥ t₀` iff its coordinate curve based\nat `t₀` is differentiable at `s`.",
      "statement": "lemma mdifferentiableAt_vadd_iff (γ : Time → F) (t₀ : Time) (s : ℝ) :\n    MDifferentiableAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ (s +ᵥ t₀) ↔\n      DifferentiableAt ℝ (fun τ : ℝ ↦ γ (τ +ᵥ t₀)) s",
      "sorry": false
     },
     {
+     "name": "Time.contDiffAt_extChartAt_comp_vadd",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "A curve in a manifold read in a chart is smooth at times at which it lies in the chart.",
+     "statement": "lemma contDiffAt_extChartAt_comp_vadd {E H M : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [TopologicalSpace H] {I : ModelWithCorners ℝ E H} [TopologicalSpace M] [ChartedSpace H M]\n    [IsManifold I ∞ M] (x : M) {γ : Time → M} (t₀ : Time) {σ : ℝ}\n    (hγ : ContMDiffAt 𝓘(ℝ, ℝ) I ∞ γ (σ +ᵥ t₀)) (hσ : γ (σ +ᵥ t₀) ∈ (extChartAt I x).source) :\n    ContDiffAt ℝ ∞ (fun σ' : ℝ ↦ extChartAt I x (γ (σ' +ᵥ t₀))) σ",
+     "sorry": false
+    },
+    {
      "name": "Time.writtenInExtChartAt_eq_vadd",
      "kind": "lemma",
-     "line": 103,
+     "line": 117,
      "doc": "A curve read in the extended chart at `x` is its coordinate curve based at `x`.",
      "statement": "lemma writtenInExtChartAt_eq_vadd (γ : Time → F) (x : Time) :\n    writtenInExtChartAt 𝓘(ℝ, ℝ) 𝓘(ℝ, F) x γ = fun τ : ℝ ↦ γ (τ +ᵥ x)",
      "sorry": false
@@ -9669,7 +9709,7 @@
     {
      "name": "Time.mfderiv_eq_deriv_vadd",
      "kind": "lemma",
-     "line": 109,
+     "line": 123,
      "doc": "The manifold derivative of a curve into a normed space at `s +ᵥ t₀` applied to `1`\nequals the ordinary derivative of the coordinate curve at `s`.",
      "statement": "lemma mfderiv_eq_deriv_vadd (γ : Time → F) (t₀ : Time) (s : ℝ) :\n    mfderiv 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ (s +ᵥ t₀) (1 : ℝ) = deriv (fun τ : ℝ ↦ γ (τ +ᵥ t₀)) s",
      "sorry": false
@@ -9677,7 +9717,7 @@
     {
      "name": "Time.tangentMap_eq_deriv_vadd",
      "kind": "lemma",
-     "line": 125,
+     "line": 139,
      "doc": "The tangent map of a curve into a normed space sends `⟨s +ᵥ t₀, 1⟩` to the point and\nthe ordinary derivative of the coordinate curve.",
      "statement": "lemma tangentMap_eq_deriv_vadd (γ : Time → F) (t₀ : Time) (s : ℝ) :\n    tangentMap 𝓘(ℝ, ℝ) 𝓘(ℝ, F) γ ⟨s +ᵥ t₀, (1 : ℝ)⟩ =\n      ⟨γ (s +ᵥ t₀), deriv (fun τ : ℝ ↦ γ (τ +ᵥ t₀)) s⟩",
      "sorry": false
@@ -10936,51 +10976,55 @@
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
    "module": "Physlib.SpaceAndTime.WaveVectorSpace.Basic",
    "title": "Wave Vector Space",
-   "doc": "## i. Overview\n\nIn this module we define the type `WaveVectorSpace d` corresponding to the `d`-dimensional\nspace of (angular) wave vectors in `Space d`.\n\nIn contrast to `Space d`, `WaveVectorSpace d` has a distinguished zero;\nthe purpose of this file is to define this zero, the structure of a `Module`\non `WaveVectorSpace d`, and the structure of a real `InnerProductSpace` on `WaveVectorSpace d`,\nnone of which requires any non-canonical choices.\n\n`WaveVectorSpace d` is implemented as a structure with a field `val : Fin d → ℝ`\nrather than as an `abbrev` of `EuclideanSpace ℝ (Fin d)` or a `def` of a type with value\n`EuclideanSpace ℝ (Fin d)` for the same reasons as for `Space d`;\nsee `Physlib.SpaceAndTime.Space.Basic` for a discussion of the (dis)advantages of each.\n\n## ii. Key results\n\n- `WaveVectorSpace d` : the space of wave vectors in `Space d`\n- `instModuleReal` : `WaveVectorSpace d` is a module over `ℝ`\n- `instInnerProductSpaceReal` : `WaveVectorSpace d` is a real inner product space\n- `equivEuclideanSpace` : the linear isometric equivalence between `WaveVectorSpace d` and `ℝᵈ`\n\n## iii. Table of contents\n\n- A. The `WaveVectorSpace` type\n- B. Instances on `WaveVectorSpace`\n  - B.1. Coercion to functions\n  - B.2. Subsingleton for `d = 0`\n  - B.3. Zero\n  - B.4. Additive commutative group\n  - B.5. Module over `ℝ`\n  - B.6. Inner product space\n- C. Linear isometric equivalence with `ℝᵈ`\n  - C.1. Standard basis\n  - C.2. Coordinate functions\n\n## iv. References",
+   "doc": "## i. Overview\n\nIn this module we define the type `WaveVectorSpace d` corresponding to the `d`-dimensional\nspace of (angular) wave vectors in `Space d`.\n\nIn contrast to `Space d`, `WaveVectorSpace d` has a distinguished zero;\nthe purpose of this file is to define this zero, the structure of a `Module`\non `WaveVectorSpace d`, and the structure of a real `InnerProductSpace` on `WaveVectorSpace d`,\nnone of which requires any non-canonical choices.\n\n`WaveVectorSpace d` is implemented as a structure with a field `val : Fin d → ℝ`\nrather than as an `abbrev` of `EuclideanSpace ℝ (Fin d)` or a `def` of a type with value\n`EuclideanSpace ℝ (Fin d)` for the same reasons as for `Space d`;\nsee `Physlib.SpaceAndTime.Space.Basic` for a discussion of the (dis)advantages of each.\n\n## ii. Key results\n\n- `WaveVectorSpace d` : the space of wave vectors in `Space d`\n- `instModuleReal` : `WaveVectorSpace d` is a module over `ℝ`\n- `instInnerProductSpaceReal` : `WaveVectorSpace d` is a real inner product space\n- `equivEuclideanSpace` : the linear isometric equivalence between `WaveVectorSpace d` and `ℝᵈ`\n\n## iii. Table of contents\n\n- A. The `WaveVectorSpace` type\n- B. Instances on `WaveVectorSpace`\n  - B.1. Coercion to functions\n  - B.2. Subsingleton for `d = 0`\n  - B.3. Zero\n  - B.4. Additive commutative group\n  - B.5. Module over `ℝ`\n  - B.6. Inner product space\n  - B.7. Measurable space\n- C. Linear isometric equivalence with `ℝᵈ`\n  - C.1. Standard basis\n  - C.2. Coordinate functions\n\n## iv. References",
    "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
-     "line": 57,
+     "line": 59,
      "text": "## A. The `WaveVectorSpace` type"
     },
     {
-     "line": 81,
+     "line": 83,
      "text": "## B. Instances on `WaveVectorSpace`"
     },
     {
-     "line": 85,
+     "line": 87,
      "text": "### B.1. Coercion to functions"
     },
     {
-     "line": 98,
+     "line": 100,
      "text": "### B.2. Subsingleton for `d = 0`"
     },
     {
-     "line": 105,
+     "line": 107,
      "text": "### B.3. Zero"
     },
     {
-     "line": 115,
+     "line": 117,
      "text": "### B.4. Additive commutative group"
     },
     {
-     "line": 152,
+     "line": 154,
      "text": "### B.5. Module over `ℝ`"
     },
     {
-     "line": 170,
+     "line": 172,
      "text": "### B.6. Inner product space"
     },
     {
-     "line": 207,
+     "line": 212,
+     "text": "### B.7. Measurable space"
+    },
+    {
+     "line": 220,
      "text": "## C. Linear isometric equivalence with `ℝᵈ`"
     },
     {
-     "line": 233,
+     "line": 246,
      "text": "### C.1. Standard basis"
     },
     {
-     "line": 266,
+     "line": 279,
      "text": "### C.2. Coordinate functions"
     }
    ],
@@ -10988,7 +11032,7 @@
     {
      "name": "WaveVectorSpace",
      "kind": "structure",
-     "line": 65,
+     "line": 67,
      "doc": "The type `WaveVectorSpace d` is the real vector space which corresponds to `d`-dimensional\n(angular) wave vectors in `Space d` with a given (but arbitrary) choice of inverse length unit.\n\nThe default value of `d` is `3`. Thus `WaveVectorSpace = WaveVectorSpace 3`",
      "statement": "structure WaveVectorSpace (d : ℕ := 3) where\n  /-- The underlying map `Fin d → ℝ` associated with a vector in `WaveVectorSpace`. -/\n  val : Fin d → ℝ",
      "sorry": false
@@ -10996,7 +11040,7 @@
     {
      "name": "WaveVectorSpace.eq_of_val",
      "kind": "lemma",
-     "line": 73,
+     "line": 75,
      "doc": "",
      "statement": "lemma eq_of_val {k₁ k₂ : WaveVectorSpace d} (h : k₁.val = k₂.val) : k₁ = k₂",
      "sorry": false
@@ -11004,7 +11048,7 @@
     {
      "name": "WaveVectorSpace.val_eq_iff",
      "kind": "lemma",
-     "line": 78,
+     "line": 80,
      "doc": "",
      "statement": "lemma val_eq_iff {k₁ k₂ : WaveVectorSpace d} : k₁.val = k₂.val ↔ k₁ = k₂",
      "sorry": false
@@ -11012,7 +11056,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 89,
+     "line": 91,
      "doc": "",
      "statement": "instance : CoeFun (WaveVectorSpace d) (fun _ ↦ Fin d → ℝ)",
      "sorry": false
@@ -11020,7 +11064,7 @@
     {
      "name": "WaveVectorSpace.eq_of_apply",
      "kind": "lemma",
-     "line": 93,
+     "line": 95,
      "doc": "",
      "statement": "lemma eq_of_apply {k₁ k₂ : WaveVectorSpace d} (h : ∀ i, k₁ i = k₂ i) : k₁ = k₂",
      "sorry": false
@@ -11028,23 +11072,23 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 102,
+     "line": 104,
      "doc": "",
      "statement": "instance : Subsingleton (WaveVectorSpace 0)",
      "sorry": false
     },
     {
-     "name": "",
+     "name": "WaveVectorSpace.instZero",
      "kind": "instance",
-     "line": 109,
+     "line": 111,
      "doc": "",
-     "statement": "instance : Zero (WaveVectorSpace d)",
+     "statement": "instance instZero : Zero (WaveVectorSpace d)",
      "sorry": false
     },
     {
      "name": "WaveVectorSpace.zero_val",
      "kind": "lemma",
-     "line": 113,
+     "line": 115,
      "doc": "",
      "statement": "lemma zero_val : (0 : WaveVectorSpace d).val = 0",
      "sorry": false
@@ -11052,7 +11096,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 123,
+     "line": 125,
      "doc": "",
      "statement": "instance : Add (WaveVectorSpace d)",
      "sorry": false
@@ -11060,7 +11104,7 @@
     {
      "name": "WaveVectorSpace.add_val",
      "kind": "lemma",
-     "line": 127,
+     "line": 129,
      "doc": "",
      "statement": "lemma add_val : (k₁ + k₂).val = k₁.val + k₂.val",
      "sorry": false
@@ -11068,7 +11112,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 129,
+     "line": 131,
      "doc": "",
      "statement": "instance : Sub (WaveVectorSpace d)",
      "sorry": false
@@ -11076,7 +11120,7 @@
     {
      "name": "WaveVectorSpace.sub_val",
      "kind": "lemma",
-     "line": 133,
+     "line": 135,
      "doc": "",
      "statement": "lemma sub_val : (k₁ - k₂).val = k₁.val - k₂.val",
      "sorry": false
@@ -11084,7 +11128,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 135,
+     "line": 137,
      "doc": "",
      "statement": "instance : Neg (WaveVectorSpace d)",
      "sorry": false
@@ -11092,7 +11136,7 @@
     {
      "name": "WaveVectorSpace.neg_val",
      "kind": "lemma",
-     "line": 139,
+     "line": 141,
      "doc": "",
      "statement": "lemma neg_val : (-k).val = -k.val",
      "sorry": false
@@ -11100,7 +11144,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 141,
+     "line": 143,
      "doc": "",
      "statement": "instance : AddCommGroup (WaveVectorSpace d)",
      "sorry": false
@@ -11108,7 +11152,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 156,
+     "line": 158,
      "doc": "",
      "statement": "instance : SMul ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11116,7 +11160,7 @@
     {
      "name": "WaveVectorSpace.smul_val",
      "kind": "lemma",
-     "line": 160,
+     "line": 162,
      "doc": "",
      "statement": "lemma smul_val (c : ℝ) (k : WaveVectorSpace d) : (c • k).val = c • k.val",
      "sorry": false
@@ -11124,7 +11168,7 @@
     {
      "name": "WaveVectorSpace.instModuleReal",
      "kind": "instance",
-     "line": 162,
+     "line": 164,
      "doc": "",
      "statement": "instance instModuleReal : Module ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11132,7 +11176,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 178,
+     "line": 180,
      "doc": "",
      "statement": "instance : Inner ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11140,7 +11184,7 @@
     {
      "name": "WaveVectorSpace.inner_apply",
      "kind": "lemma",
-     "line": 181,
+     "line": 183,
      "doc": "",
      "statement": "lemma inner_apply (k₁ k₂ : WaveVectorSpace d) : ⟪k₁, k₂⟫ = ∑ i, k₁ i * k₂ i",
      "sorry": false
@@ -11148,7 +11192,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 183,
+     "line": 185,
      "doc": "",
      "statement": "instance : InnerProductSpace.Core ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11156,15 +11200,23 @@
     {
      "name": "WaveVectorSpace.instNormedAddCommGroup",
      "kind": "instance",
-     "line": 193,
+     "line": 195,
      "doc": "",
      "statement": "noncomputable instance instNormedAddCommGroup : NormedAddCommGroup (WaveVectorSpace d)",
      "sorry": false
     },
     {
+     "name": "WaveVectorSpace.instNormedSpace",
+     "kind": "instance",
+     "line": 198,
+     "doc": "",
+     "statement": "noncomputable instance instNormedSpace : NormedSpace ℝ (WaveVectorSpace d)",
+     "sorry": false
+    },
+    {
      "name": "WaveVectorSpace.instInnerProductSpaceReal",
      "kind": "instance",
-     "line": 196,
+     "line": 201,
      "doc": "",
      "statement": "noncomputable instance instInnerProductSpaceReal : InnerProductSpace ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11172,7 +11224,7 @@
     {
      "name": "WaveVectorSpace.norm_eq",
      "kind": "lemma",
-     "line": 199,
+     "line": 204,
      "doc": "",
      "statement": "lemma norm_eq (k : WaveVectorSpace d) : ‖k‖ = √(∑ i, k i ^ 2)",
      "sorry": false
@@ -11180,15 +11232,31 @@
     {
      "name": "WaveVectorSpace.norm_sq_eq",
      "kind": "lemma",
-     "line": 202,
+     "line": 207,
      "doc": "",
      "statement": "lemma norm_sq_eq (k : WaveVectorSpace d) : ‖k‖ ^ 2 = ∑ i, k i ^ 2",
      "sorry": false
     },
     {
+     "name": "",
+     "kind": "instance",
+     "line": 216,
+     "doc": "",
+     "statement": "noncomputable instance : MeasurableSpace (WaveVectorSpace d)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 218,
+     "doc": "",
+     "statement": "instance : BorelSpace (WaveVectorSpace d)",
+     "sorry": false
+    },
+    {
      "name": "WaveVectorSpace.equivEuclideanSpace",
      "kind": "def",
-     "line": 212,
+     "line": 225,
      "doc": "The linear isometric equivalence between `WaveVectorSpace d` and `ℝᵈ`.",
      "statement": "def equivEuclideanSpace : WaveVectorSpace d ≃ₗᵢ[ℝ] EuclideanSpace ℝ (Fin d)",
      "sorry": false
@@ -11196,7 +11264,7 @@
     {
      "name": "WaveVectorSpace.equivEuclideanSpace_apply",
      "kind": "lemma",
-     "line": 220,
+     "line": 233,
      "doc": "",
      "statement": "lemma equivEuclideanSpace_apply (k : WaveVectorSpace d) (i : Fin d) :\n    equivEuclideanSpace k i = k i",
      "sorry": false
@@ -11204,7 +11272,7 @@
     {
      "name": "WaveVectorSpace.equivEuclideanSpace_symm_apply",
      "kind": "lemma",
-     "line": 225,
+     "line": 238,
      "doc": "",
      "statement": "lemma equivEuclideanSpace_symm_apply (v : EuclideanSpace ℝ (Fin d)) (i : Fin d) :\n    equivEuclideanSpace.symm v i = v i",
      "sorry": false
@@ -11212,7 +11280,7 @@
     {
      "name": "WaveVectorSpace.finrank_waveVectorSpace",
      "kind": "lemma",
-     "line": 230,
+     "line": 243,
      "doc": "",
      "statement": "lemma finrank_waveVectorSpace : Module.finrank ℝ (WaveVectorSpace d) = d",
      "sorry": false
@@ -11220,7 +11288,7 @@
     {
      "name": "WaveVectorSpace.basis",
      "kind": "def",
-     "line": 242,
+     "line": 255,
      "doc": "The standard basis of `WaveVectorSpace d`.",
      "statement": "def basis : OrthonormalBasis (Fin d) ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11228,7 +11296,7 @@
     {
      "name": "WaveVectorSpace.basis_repr_apply",
      "kind": "lemma",
-     "line": 246,
+     "line": 259,
      "doc": "",
      "statement": "lemma basis_repr_apply : basis.repr k i = k i",
      "sorry": false
@@ -11236,7 +11304,7 @@
     {
      "name": "WaveVectorSpace.basis_repr_symm_apply",
      "kind": "lemma",
-     "line": 249,
+     "line": 262,
      "doc": "",
      "statement": "lemma basis_repr_symm_apply : basis.repr.symm v i = v i",
      "sorry": false
@@ -11244,7 +11312,7 @@
     {
      "name": "WaveVectorSpace.basis_apply",
      "kind": "lemma",
-     "line": 252,
+     "line": 265,
      "doc": "",
      "statement": "lemma basis_apply : basis i j = δ[i,j]",
      "sorry": false
@@ -11252,7 +11320,7 @@
     {
      "name": "WaveVectorSpace.inner_basis",
      "kind": "lemma",
-     "line": 255,
+     "line": 268,
      "doc": "",
      "statement": "lemma inner_basis : inner ℝ k (basis i) = k i",
      "sorry": false
@@ -11260,7 +11328,7 @@
     {
      "name": "WaveVectorSpace.basis_inner",
      "kind": "lemma",
-     "line": 259,
+     "line": 272,
      "doc": "",
      "statement": "lemma basis_inner : inner ℝ (basis i) k = k i",
      "sorry": false
@@ -11268,7 +11336,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 262,
+     "line": 275,
      "doc": "",
      "statement": "instance : FiniteDimensional ℝ (WaveVectorSpace d)",
      "sorry": false
@@ -11276,7 +11344,7 @@
     {
      "name": "WaveVectorSpace.coord",
      "kind": "def",
-     "line": 277,
+     "line": 290,
      "doc": "The standard coordinate functions of `WaveVectorSpace` based on `Fin d`.",
      "statement": "def coord : ℝ",
      "sorry": false
@@ -11284,7 +11352,7 @@
     {
      "name": "WaveVectorSpace.coord_apply",
      "kind": "lemma",
-     "line": 279,
+     "line": 292,
      "doc": "",
      "statement": "lemma coord_apply : k.coord i = k i",
      "sorry": false
@@ -11292,7 +11360,7 @@
     {
      "name": "WaveVectorSpace.coordCLM",
      "kind": "def",
-     "line": 283,
+     "line": 296,
      "doc": "The standard coordinate functions of `WaveVectorSpace` based on `Fin d`,\nas a continuous linear map.",
      "statement": "def coordCLM : WaveVectorSpace d →L[ℝ] ℝ",
      "sorry": false
@@ -11300,7 +11368,7 @@
     {
      "name": "WaveVectorSpace.coordCLM_apply",
      "kind": "lemma",
-     "line": 291,
+     "line": 304,
      "doc": "",
      "statement": "lemma coordCLM_apply : coordCLM i k = k.coord i",
      "sorry": false
@@ -11308,7 +11376,7 @@
     {
      "name": "WaveVectorSpace.coord_contDiff",
      "kind": "lemma",
-     "line": 294,
+     "line": 307,
      "doc": "",
      "statement": "lemma coord_contDiff : ContDiff ℝ n (coord i)",
      "sorry": false
@@ -11316,9 +11384,239 @@
     {
      "name": "WaveVectorSpace.val_contDiff",
      "kind": "lemma",
-     "line": 297,
+     "line": 310,
      "doc": "",
      "statement": "lemma val_contDiff : ContDiff ℝ n (val · i)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/SpaceAndTime/WaveVectorSpace/Derivatives/Basic.lean",
+   "module": "Physlib.SpaceAndTime.WaveVectorSpace.Derivatives.Basic",
+   "title": "Derivatives on `WaveVectorSpace`",
+   "doc": "## i. Overview\n\nIn this module we define derivatives of functions on `WaveVectorSpace` with respect\nto the standard basis.\n\n## ii. Key results\n\n- `deriv i` : The derivative of a function `f : WaveVectorSpace d → M`\n  in the direction of the `i`ᵗʰ basis vector, denoted by `∂[i] f`.\n\n## iii. Table of contents\n\n- A. Derivatives of functions on `WaveVectorSpace d`\n  - A.1. Constant functions\n  - A.2. Addition and subtraction\n  - A.3. Negation / scalar multiplication\n  - A.4. Powers\n  - A.5. Components / coordinate functions\n  - A.6. Norm-squared\n  - A.7. Inner product\n\n## iv. References",
+   "copyright": "2026 Gregory J. Loges",
+   "sections": [
+    {
+     "line": 44,
+     "text": "## A. Derivatives of functions on `WaveVectorSpace d`"
+    },
+    {
+     "line": 62,
+     "text": "### A.1. Constant functions"
+    },
+    {
+     "line": 73,
+     "text": "### A.2. Addition and subtraction"
+    },
+    {
+     "line": 93,
+     "text": "### A.3. Negation / scalar multiplication"
+    },
+    {
+     "line": 123,
+     "text": "### A.4. Powers"
+    },
+    {
+     "line": 134,
+     "text": "### A.5. Components / coordinate functions"
+    },
+    {
+     "line": 154,
+     "text": "### A.6. Norm-squared"
+    },
+    {
+     "line": 165,
+     "text": "### A.7. Inner product"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "WaveVectorSpace.deriv",
+     "kind": "def",
+     "line": 50,
+     "doc": "Given a function `f : WaveVectorSpace d → M`,\n`∂[i] f` is its derivative in the direction of the `i`ᵗʰ basis vector.",
+     "statement": "noncomputable def deriv {M : Type*} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]\n    (i : Fin d) (f : WaveVectorSpace d → M) (k : WaveVectorSpace d) : M",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_eq",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma deriv_eq {M : Type*} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]\n    (i : Fin d) (f : WaveVectorSpace d → M) (k : WaveVectorSpace d) :\n    ∂[i] f k = fderiv ℝ f k (basis i)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_const",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma deriv_const\n    {M : Type*} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M] (i : Fin d) (m : M) :\n    ∂[i] (fun _ : WaveVectorSpace d ↦ m) = 0",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_add",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma deriv_add : ∂[i] (f₁ + f₂) k = ∂[i] f₁ k + ∂[i] f₂ k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_sub",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma deriv_sub : ∂[i] (f₁ - f₂) k = ∂[i] f₁ k - ∂[i] f₂ k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_neg",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "",
+     "statement": "lemma deriv_neg (i : Fin d) (f : WaveVectorSpace d → M) : ∂[i] (-f) = -∂[i] f",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_smul",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "The product rule for functions on `WaveVectorSpace`.",
+     "statement": "lemma deriv_smul {𝕜 : Type*} [NontriviallyNormedField 𝕜] [NormedAlgebra ℝ 𝕜] [NormedSpace 𝕜 M]\n    (i : Fin d) {c : WaveVectorSpace d → 𝕜} {f : WaveVectorSpace d → M} {k : WaveVectorSpace d}\n    (hc : DifferentiableAt ℝ c k) (hf : DifferentiableAt ℝ f k) :\n    ∂[i] (c • f) k = c k • ∂[i] f k + ∂[i] c k • f k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_const_smul",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma deriv_const_smul\n    {R : Type*} [Semiring R] [Module R M] [SMulCommClass ℝ R M] [ContinuousConstSMul R M] (c : R)\n    (i : Fin d) {f : WaveVectorSpace d → M} {k : WaveVectorSpace d} (hf : DifferentiableAt ℝ f k) :\n    ∂[i] (c • f) k = c • ∂[i] f k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_pow",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "The power rule for functions on `WaveVectorSpace`.",
+     "statement": "lemma deriv_pow {𝔸 : Type*} [NormedCommRing 𝔸] [NormedAlgebra ℝ 𝔸] (i : Fin d)\n    {f : WaveVectorSpace d → 𝔸} {k : WaveVectorSpace d} (n : ℕ) (hf : DifferentiableAt ℝ f k) :\n    ∂[i] (f ^ n) k = (n • f k ^ (n - 1)) • ∂[i] f k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_coordCLM",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma deriv_coordCLM : ∂[i] (coordCLM j) k = δ[i,j]",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_coord",
+     "kind": "lemma",
+     "line": 147,
+     "doc": "",
+     "statement": "lemma deriv_coord : ∂[i] (coord j) k = δ[i,j]",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_component",
+     "kind": "lemma",
+     "line": 150,
+     "doc": "",
+     "statement": "lemma deriv_component : ∂[i] (fun k ↦ k j) k = δ[i,j]",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.norm_sq_differentiable",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "",
+     "statement": "lemma norm_sq_differentiable : Differentiable ℝ (fun k : WaveVectorSpace d ↦ ‖k‖ ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_norm_sq",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma deriv_norm_sq (i : Fin d) (k : WaveVectorSpace d) : ∂[i] (fun k ↦ ‖k‖ ^ 2) k = 2 * k i",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_differentiable",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "",
+     "statement": "lemma inner_differentiable : Differentiable ℝ (fun k : WaveVectorSpace d ↦ ⟪k, k⟫)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_differentiableAt",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma inner_differentiableAt : DifferentiableAt ℝ (fun k ↦ ⟪k, k⟫) k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_apply_differentiable",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "",
+     "statement": "lemma inner_apply_differentiable (hf : Differentiable ℝ f) (hg : Differentiable ℝ g) :\n    Differentiable ℝ (fun m : M ↦ ⟪f m, g m⟫)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_apply_differentiableAt",
+     "kind": "lemma",
+     "line": 189,
+     "doc": "",
+     "statement": "lemma inner_apply_differentiableAt\n    {m : M} (hf : DifferentiableAt ℝ f m) (hg : DifferentiableAt ℝ g m) :\n    DifferentiableAt ℝ (fun m : M ↦ ⟪f m, g m⟫) m",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_contDiff",
+     "kind": "lemma",
+     "line": 195,
+     "doc": "",
+     "statement": "lemma inner_contDiff {n : WithTop ℕ∞} : ContDiff ℝ n (fun k : WaveVectorSpace d ↦ ⟪k, k⟫)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.inner_apply_contDiff",
+     "kind": "lemma",
+     "line": 199,
+     "doc": "",
+     "statement": "lemma inner_apply_contDiff {n : WithTop ℕ∞} (hf : ContDiff ℝ n f) (hg : ContDiff ℝ n g) :\n    ContDiff ℝ n (fun m : M ↦ ⟪f m, g m⟫)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_inner_self",
+     "kind": "lemma",
+     "line": 203,
+     "doc": "",
+     "statement": "lemma deriv_inner_self : ∂[i] (fun k ↦ ⟪k, k⟫) k = 2 * k i",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_inner_left",
+     "kind": "lemma",
+     "line": 206,
+     "doc": "",
+     "statement": "lemma deriv_inner_left : ∂[i] (fun k ↦ ⟪k, k₂⟫) k₁ = k₂ i",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_inner_right",
+     "kind": "lemma",
+     "line": 210,
+     "doc": "",
+     "statement": "lemma deriv_inner_right : ∂[i] (fun k ↦ ⟪k₁, k⟫) k₂ = k₁ i",
      "sorry": false
     }
    ],
@@ -11330,7 +11628,7 @@
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/DualPairing.lean",
    "module": "Physlib.SpaceAndTime.WaveVectorSpace.DualPairing",
    "title": "Duality of `Space` and `WaveVectorSpace`",
-   "doc": "## i. Overview\n\nUpon selecting an origin for the affine space `Space d`,\nthe spaces `Space d` and `WaveVectorSpace d` are dual as real vector spaces.\nThere is natural continuous bilinear map `WaveVectorSpace d × Space d → ℝ` which sends\nthe pair `(k, x)` to `∑ᵢ kⁱxᵢ`. For fixed `k` this gives rise to a functional `Space d →L[ℝ] ℝ`\nmapping `x ↦ k ⬝ᵥ x`, and similarly for fixed `x`.\n\n## ii. Key results\n\n- `Space.dual x` : the functional on `WaveVectorSpace` corresponding to `x : Space d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.dual k` : the functional on `Space` corresponding to `k : WaveVectorSpace d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.pairingCLM` : the dual pairing between `WaveVectorSpace` and `Space`,\n  bundled as a continuous bilinear map.\n\n## iii. Table of contents\n\n- A. Strong duals\n- B. Bilinear pairing\n\n## iv. References",
+   "doc": "## i. Overview\n\nUpon selecting an origin for the affine space `Space d`,\nthe spaces `Space d` and `WaveVectorSpace d` are dual as real vector spaces.\nThere is natural continuous bilinear map `WaveVectorSpace d × Space d → ℝ` which sends\nthe pair `(k, x)` to `∑ᵢ kⁱxᵢ`. For fixed `k` this gives rise to a functional `Space d →L[ℝ] ℝ`\nmapping `x ↦ k ⬝ᵥ x`, and similarly for fixed `x`.\n\n## ii. Key results\n\n- `Space.dual x` : the functional on `WaveVectorSpace` corresponding to `x : Space d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.dual k` : the functional on `Space` corresponding to `k : WaveVectorSpace d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.pairingCLM` : the dual pairing between `WaveVectorSpace` and `Space`,\n  bundled as a continuous bilinear map.\n\n## iii. Table of contents\n\n- A. Strong duals\n- B. Bilinear pairing\n- C. Derivatives\n\n## iv. References",
    "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
@@ -11338,8 +11636,12 @@
      "text": "## A. Strong duals"
     },
     {
-     "line": 73,
+     "line": 95,
      "text": "## B. Bilinear pairing"
+    },
+    {
+     "line": 125,
+     "text": "## C. Derivatives"
     }
    ],
    "declarations": [
@@ -11360,9 +11662,17 @@
      "sorry": false
     },
     {
+     "name": "Space.opNorm_dual_eq_norm",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma opNorm_dual_eq_norm (x : Space d) : ‖x.dual‖ = ‖x‖",
+     "sorry": false
+    },
+    {
      "name": "WaveVectorSpace.dual",
      "kind": "def",
-     "line": 66,
+     "line": 77,
      "doc": "The functional on `Space d` dual to `k`, defined by `x ↦ k ⬝ᵥ x`.",
      "statement": "def dual (k : WaveVectorSpace d) : StrongDual ℝ (Space d)",
      "sorry": false
@@ -11370,15 +11680,23 @@
     {
      "name": "WaveVectorSpace.dual_apply",
      "kind": "lemma",
-     "line": 71,
+     "line": 82,
      "doc": "",
      "statement": "lemma dual_apply (k : WaveVectorSpace d) (x : Space d) : k.dual x = k ⬝ᵥ x",
      "sorry": false
     },
     {
+     "name": "WaveVectorSpace.opNorm_dual_eq_norm",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma opNorm_dual_eq_norm (k : WaveVectorSpace d) : ‖k.dual‖ = ‖k‖",
+     "sorry": false
+    },
+    {
      "name": "WaveVectorSpace.pairingCLM",
      "kind": "def",
-     "line": 78,
+     "line": 100,
      "doc": "The bilinear form `WaveVectorSpace d × Space d → ℝ` given by `k ↦ x ↦ k ⬝ᵥ x`.",
      "statement": "def pairingCLM : WaveVectorSpace d →L[ℝ] Space d →L[ℝ] ℝ",
      "sorry": false
@@ -11386,7 +11704,7 @@
     {
      "name": "WaveVectorSpace.pairingCLM_apply_eq_dual",
      "kind": "lemma",
-     "line": 87,
+     "line": 109,
      "doc": "",
      "statement": "lemma pairingCLM_apply_eq_dual (k : WaveVectorSpace d) : pairingCLM k = k.dual",
      "sorry": false
@@ -11394,15 +11712,425 @@
     {
      "name": "WaveVectorSpace.pairingCLM_flip_apply_eq_dual",
      "kind": "lemma",
-     "line": 89,
+     "line": 111,
      "doc": "",
      "statement": "lemma pairingCLM_flip_apply_eq_dual (x : Space d) : pairingCLM.flip x = x.dual",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.pairingCLM_apply_apply",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma pairingCLM_apply_apply (k : WaveVectorSpace d) (x : Space d) : pairingCLM k x = k ⬝ᵥ x",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.continuous_dual",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma continuous_dual : Continuous (dual : WaveVectorSpace d → StrongDual ℝ (Space d))",
+     "sorry": false
+    },
+    {
+     "name": "Space.continuous_dual",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "",
+     "statement": "lemma _root_.Space.continuous_dual :\n    Continuous (Space.dual : Space d → StrongDual ℝ (WaveVectorSpace d))",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_pairingCLM",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "",
+     "statement": "lemma deriv_pairingCLM (i : Fin d) (k : WaveVectorSpace d) (x : Space d) :\n    ∂[i] (pairingCLM k) x = k i",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_pairingCLM_flip",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma deriv_pairingCLM_flip (i : Fin d) (x : Space d) (k : WaveVectorSpace d) :\n    ∂[i] (pairingCLM.flip x) k = x i",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_dual",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "The derivative of the functional `x ↦ k ⬝ᵥ x` with respect to `xⁱ` is `kᵢ`.",
+     "statement": "lemma deriv_dual (i : Fin d) (k : WaveVectorSpace d) (x : Space d) : ∂[i] k.dual x = k i",
+     "sorry": false
+    },
+    {
+     "name": "Space.deriv_dual",
+     "kind": "lemma",
+     "line": 147,
+     "doc": "The derivative of the functional `k ↦ k ⬝ᵥ x` with respect to `kᵢ` is `xⁱ`.",
+     "statement": "lemma _root_.Space.deriv_dual (i : Fin d) (x : Space d) (k : WaveVectorSpace d) :\n    ∂[i] x.dual k = x i",
      "sorry": false
     }
    ],
    "private": 0,
    "aliases": 0,
    "informal": 1
+  },
+  {
+   "file": "Physlib/SpaceAndTime/WaveVectorSpace/Fourier.lean",
+   "module": "Physlib.SpaceAndTime.WaveVectorSpace.Fourier",
+   "title": "Fourier transforms between `Space` and `WaveVectorSpace`",
+   "doc": "## i. Overview\n\nThe purpose of this module is to provide a means to work with Fourier transforms in a way\nthat is both dimensionally consistent and flexible enough to allow various conventions.\n\nThe two main definitions are `fourierIntegral a b : (Space d → E) → WaveVectorSpace d → E`\nand `fourierIntegralInv a b : (WaveVectorSpace d → E) → Space d → E` which amount to the following\nintegral transformations depending on two parameters `a b : ℝ`:\n\n$$\n\\tilde{f}(k) :=\n  \\sqrt{\\frac{|b|}{(2\\pi)^{1-a}}}\n  \\int f(x)\\,\\mathrm{e}^{\\mathrm{i}bk\\cdot x} \\,\\mathrm{d}^dx\n\\;,\\qquad\nf(x) :=\n  \\sqrt{\\frac{|b|}{(2\\pi)^{1+a}}}\n  \\int \\tilde{f}(k)\\,\\mathrm{e}^{-\\mathrm{i}bk\\cdot x} \\,\\mathrm{d}^dk\n\\;.\n$$\n\nThese are implemented as rescaled/dilated versions of `VectorFourier.fourierIntegral`\nand most results require that the input function be integrable.\n\nResults which hold for all `a` and `b` should be written in terms of `fourierIntegral a b`.\nOpening the `FourierTransform` namespace allows one to use the notation `𝓕` and `𝓕⁻`\nwith default values $(a,b) = (0,1)$; to use this notation with a different convention include\nthe line `open scoped FourierTransform[a][b]` (*e.g.* `open scoped FourierTransform1n1`\nfor $(a,b) = (1,-1)$). If a common convention is missing it can be added below in section B.\n\n## ii. Key results\n\n- `fourierIntegral a b` : the Fourier integral with real parameters `a` and `b`,\n  corresponding to a choice of convention, which maps a function `f : Space d → E`\n  to its Fourier transform of type `WaveVectorSpace d → E`.\n- `fourierIntegralInv a b` : the inverse Fourier integral with real parameters `a` and `b`,\n  corresponding to a choice of convention, which maps a function `g : WaveVectorSpace d → E`\n  to its Fourier transform of type `Space d → E`.\n- `deriv_fourierIntegral` / `deriv_fourierIntegralInv` : for a suitably nice function\n  `f : Space d → E` the derivative along the `i`ᵗʰ coordinate direction of its Fourier integral\n  is the Fourier integral of the function `x ↦ (b * I * x i) • f x`, and similarly for functions\n  `WaveVectorSpace d → E` and the inverse Fourier integral.\n\n## iii. Table of contents\n\n- A. Fourier integrals\n  - A.1. Two-parameter definitions\n  - A.2. Basic properties\n    - A.2.1. Linearity\n    - A.2.2. Continuity\n    - A.2.3. Integration of continuous linear maps\n  - A.3. Derivatives\n    - A.3.1. Fourier multipliers\n    - A.3.2. Fréchet derivatives\n    - A.3.3. Partial derivatives\n- B. Fourier instances\n  - B.1. `(a, b) = (0, 1)` (default)\n  - B.2. `(a, b) = (1, -1)`\n\n## iv. References\n\nThe parametrization in terms of `a b : ℝ` follows that given here:\n\n* Weisstein, Eric W. \"Fourier Transform.\" From MathWorld--A Wolfram Resource.\n  [ref: mathworld_fourier_transform]",
+   "copyright": "2026 Gregory J. Loges",
+   "sections": [
+    {
+     "line": 86,
+     "text": "## A. Fourier integrals"
+    },
+    {
+     "line": 97,
+     "text": "### A.1. Two-parameter definitions"
+    },
+    {
+     "line": 146,
+     "text": "### A.2. Basic properties"
+    },
+    {
+     "line": 159,
+     "text": "#### A.2.1. Linearity"
+    },
+    {
+     "line": 184,
+     "text": "#### A.2.2. Continuity"
+    },
+    {
+     "line": 198,
+     "text": "#### A.2.3. Integration of continuous linear maps"
+    },
+    {
+     "line": 226,
+     "text": "### A.3. Derivatives"
+    },
+    {
+     "line": 230,
+     "text": "#### A.3.1. Fourier multipliers"
+    },
+    {
+     "line": 301,
+     "text": "#### A.3.2. Fréchet derivatives"
+    },
+    {
+     "line": 327,
+     "text": "#### A.3.3. Partial derivatives"
+    },
+    {
+     "line": 357,
+     "text": "## B. Fourier instances"
+    },
+    {
+     "line": 369,
+     "text": "### B.1. `(a, b) = (0, 1)` (default)\n\n$$\n\\tilde{f}(k) := \\frac{1}{\\sqrt{2\\pi}} \\int f(x)\\,\\mathrm{e}^{\\mathrm{i}k\\cdot x} \\,\\mathrm{d}x\n\\;,\\qquad\nf(x) := \\frac{1}{\\sqrt{2\\pi}} \\int \\tilde{f}(k)\\,\\mathrm{e}^{-\\mathrm{i}k\\cdot x} \\,\\mathrm{d}k\n$$"
+    },
+    {
+     "line": 388,
+     "text": "### B.2. `(a, b) = (1, -1)`\n\n$$\n\\tilde{f}(k) := \\int f(x)\\,\\mathrm{e}^{-\\mathrm{i}k\\cdot x} \\,\\mathrm{d}x\n\\;,\\qquad\nf(x) := \\frac{1}{2\\pi} \\int \\tilde{f}(k)\\,\\mathrm{e}^{\\mathrm{i}k\\cdot x} \\,\\mathrm{d}k\n$$"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "WaveVectorSpace.fourierIntegral",
+     "kind": "def",
+     "line": 107,
+     "doc": "The Fourier integral over `Space`,\n\n`√(|b| / (2 * π) ^ (1 - a)) • ∫ x, exp (b * (k ⬝ᵥ x) * I) • f x ∂volume`,\n\nparametrized by `a b : ℝ`.",
+     "statement": "noncomputable def fourierIntegral (f : Space d → E) (k : WaveVectorSpace d) : E",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_def",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma fourierIntegral_def (f : Space d → E) :\n    fourierIntegral a b f\n      = √(|b| / (2 * π) ^ (1 - a))\n        • VectorFourier.fourierIntegral 𝐞 volume\n          (-(b / (2 * π)) • pairingCLM.flip).toLinearMap₁₂ f",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_eq",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "",
+     "statement": "lemma fourierIntegral_eq (f : Space d → E) (k : WaveVectorSpace d) :\n    fourierIntegral a b f k\n      = √(|b| / (2 * π) ^ (1 - a)) • ∫ x : Space d, cexp (b * (k ⬝ᵥ x) * I) • f x",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv",
+     "kind": "def",
+     "line": 130,
+     "doc": "The inverse Fourier integral over `WaveVectorSpace`,\n\n`√(|b| / (2 * π) ^ (1 + a)) • ∫ k, exp (-b * (k ⬝ᵥ x) * I) • g k ∂volume`,\n\nparametrized by `a b : ℝ`.",
+     "statement": "noncomputable def fourierIntegralInv (g : WaveVectorSpace d → E) (x : Space d) : E",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_def",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_def (g : WaveVectorSpace d → E) :\n    fourierIntegralInv a b g\n      = √(|b| / (2 * π) ^ (1 + a))\n        • VectorFourier.fourierIntegral 𝐞 volume ((b / (2 * π)) • pairingCLM).toLinearMap₁₂ g",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_eq",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_eq (g : WaveVectorSpace d → E) (x : Space d) :\n    fourierIntegralInv a b g x\n      = √(|b| / (2 * π) ^ (1 + a)) • ∫ k : WaveVectorSpace d, cexp (-b * (k ⬝ᵥ x) * I) • g k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_congr_ae",
+     "kind": "lemma",
+     "line": 150,
+     "doc": "",
+     "statement": "lemma fourierIntegral_congr_ae {f₁ f₂ : Space d → E} (hf : f₁ =ᵐ[volume] f₂) :\n    fourierIntegral a b f₁ = fourierIntegral a b f₂",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_congr_ae",
+     "kind": "lemma",
+     "line": 154,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_congr_ae {g₁ g₂ : WaveVectorSpace d → E} (hg : g₁ =ᵐ[volume] g₂) :\n    fourierIntegralInv a b g₁ = fourierIntegralInv a b g₂",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_const_smul",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "",
+     "statement": "lemma fourierIntegral_const_smul (f : Space d → E) (c : ℂ) :\n    fourierIntegral a b (c • f) = c • fourierIntegral a b f",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_const_smul",
+     "kind": "lemma",
+     "line": 167,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_const_smul (f : WaveVectorSpace d → E) (c : ℂ) :\n    fourierIntegralInv a b (c • f) = c • fourierIntegralInv a b f",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_add",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "",
+     "statement": "lemma fourierIntegral_add {f₁ f₂ : Space d → E} (hf₁ : Integrable f₁) (hf₂ : Integrable f₂) :\n    fourierIntegral a b (f₁ + f₂) = fourierIntegral a b f₁ + fourierIntegral a b f₂",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_add",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_add\n    {g₁ g₂ : WaveVectorSpace d → E} (hg₁ : Integrable g₁) (hg₂ : Integrable g₂) :\n    fourierIntegralInv a b (g₁ + g₂) = fourierIntegralInv a b g₁ + fourierIntegralInv a b g₂",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_continuous",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma fourierIntegral_continuous {f : Space d → E} (hf : Integrable f) :\n    Continuous (fourierIntegral a b f)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_continuous",
+     "kind": "lemma",
+     "line": 193,
+     "doc": "",
+     "statement": "lemma fourierIntegralInv_continuous {g : WaveVectorSpace d → E} (hg : Integrable g) :\n    Continuous (fourierIntegralInv a b g)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegral_continuousLinearMap_apply",
+     "kind": "lemma",
+     "line": 209,
+     "doc": "Given a CLM-valued function of space, `f : Space d → F →L[ℝ] E`,\nevaluating its Fourier integral at `v : F` is the same as taking\nthe Fourier integral of `x ↦ f x v`.",
+     "statement": "lemma fourierIntegral_continuousLinearMap_apply\n    {f : Space d → F →L[ℝ] E} (hf : Integrable f) (k : WaveVectorSpace d) (v : F) :\n    fourierIntegral a b f k v = fourierIntegral a b (f · v) k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fourierIntegralInv_continuousLinearMap_apply",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "Given a CLM-valued function of wavevector, `g : WaveVectorSpace d → F →L[ℝ] E`,\nevaluating its inverse Fourier integral at `v : F` is the same as taking\nthe inverse Fourier integral of `k ↦ g k v`.",
+     "statement": "lemma fourierIntegralInv_continuousLinearMap_apply\n    {g : WaveVectorSpace d → F →L[ℝ] E} (hg : Integrable g) (x : Space d) (v : F) :\n    fourierIntegralInv a b g x v = fourierIntegralInv a b (g · v) x",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierIntegrand",
+     "kind": "def",
+     "line": 237,
+     "doc": "Send a function `f : Space d → E` to the function `f : Space d → Hom (WaveVectorSpace d, E)`\ngiven by `x ↦ k ↦ b * I * (k ⬝ᵥ x) • f x`. This is designed so that the Fourier transform of\n`fderivFourierIntegrand b f` is the `fderiv` of the Fourier transform of `f`.",
+     "statement": "noncomputable def fderivFourierIntegrand (f : Space d → E) (x : Space d) :\n    WaveVectorSpace d →L[ℝ] E",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierInvIntegrand",
+     "kind": "def",
+     "line": 245,
+     "doc": "Send a function `g : WaveVectorSpace d → E` to the function\n`g : WaveVectorSpace d → Hom (Space d, E)` given by `k ↦ x ↦ -b * I * (k ⬝ᵥ x) • g k`.\nThis is designed so that the inverse Fourier transform of `fderivFourierInvIntegrand b g`\nis the `fderiv` of the inverse Fourier transform of `g`.",
+     "statement": "noncomputable def fderivFourierInvIntegrand (g : WaveVectorSpace d → E) (k : WaveVectorSpace d) :\n    Space d →L[ℝ] E",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierIntegrand_eq",
+     "kind": "lemma",
+     "line": 249,
+     "doc": "",
+     "statement": "lemma fderivFourierIntegrand_eq (f : Space d → E) :\n    fderivFourierIntegrand b f = fun x ↦ (b * I) • x.dual.smulRight (f x)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierInvIntegrand_eq",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "",
+     "statement": "lemma fderivFourierInvIntegrand_eq (g : WaveVectorSpace d → E) :\n    fderivFourierInvIntegrand b g = fun k ↦ -(b * I) • k.dual.smulRight (g k)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierIntegrand_apply",
+     "kind": "lemma",
+     "line": 258,
+     "doc": "",
+     "statement": "lemma fderivFourierIntegrand_apply (f : Space d → E) (x : Space d) (k : WaveVectorSpace d) :\n    fderivFourierIntegrand b f x k = (b * I) • (k ⬝ᵥ x) • f x",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderivFourierInvIntegrand_apply",
+     "kind": "lemma",
+     "line": 263,
+     "doc": "",
+     "statement": "lemma fderivFourierInvIntegrand_apply\n    (g : WaveVectorSpace d → E) (k : WaveVectorSpace d) (x : Space d) :\n    fderivFourierInvIntegrand b g k x = -(b * I) • (k ⬝ᵥ x) • g k",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.opNorm_fderivFourierIntegrand",
+     "kind": "lemma",
+     "line": 269,
+     "doc": "",
+     "statement": "lemma opNorm_fderivFourierIntegrand (f : Space d → E) (x : Space d) :\n    ‖fderivFourierIntegrand b f x‖ = |b| * ‖x‖ * ‖f x‖",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.opNorm_fderivFourierInvIntegrand",
+     "kind": "lemma",
+     "line": 274,
+     "doc": "",
+     "statement": "lemma opNorm_fderivFourierInvIntegrand (g : WaveVectorSpace d → E) (k : WaveVectorSpace d) :\n    ‖fderivFourierInvIntegrand b g k‖ = |b| * ‖k‖ * ‖g k‖",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.aestronglyMeasurable_fderivFourierIntegrand",
+     "kind": "lemma",
+     "line": 279,
+     "doc": "",
+     "statement": "lemma aestronglyMeasurable_fderivFourierIntegrand {f : Space d → E} (hf : AEStronglyMeasurable f) :\n    AEStronglyMeasurable (fderivFourierIntegrand b f)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.aestronglyMeasurable_fderivFourierInvIntegrand",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma aestronglyMeasurable_fderivFourierInvIntegrand\n    {g : WaveVectorSpace d → E} (hg : AEStronglyMeasurable g) :\n    AEStronglyMeasurable (fderivFourierInvIntegrand b g)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.integrable_fderivFourierIntegrand",
+     "kind": "lemma",
+     "line": 291,
+     "doc": "",
+     "statement": "lemma integrable_fderivFourierIntegrand {f : Space d → E}\n    (hf : AEStronglyMeasurable f) (hf' : Integrable fun x ↦ ‖x‖ * ‖f x‖) :\n    Integrable (fderivFourierIntegrand b f)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.integrable_fderivFourierInvIntegrand",
+     "kind": "lemma",
+     "line": 296,
+     "doc": "",
+     "statement": "lemma integrable_fderivFourierInvIntegrand {g : WaveVectorSpace d → E}\n    (hg : AEStronglyMeasurable g) (hg' : Integrable fun k ↦ ‖k‖ * ‖g k‖) :\n    Integrable (fderivFourierInvIntegrand b g)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderiv_fourierIntegral",
+     "kind": "lemma",
+     "line": 305,
+     "doc": "",
+     "statement": "lemma fderiv_fourierIntegral\n    {f : Space d → E} (hf : Integrable f) (hf' : Integrable fun x ↦ ‖x‖ * ‖f x‖) :\n    fderiv ℝ (fourierIntegral a b f) = fourierIntegral a b (fderivFourierIntegrand b f)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.fderiv_fourierIntegralInv",
+     "kind": "lemma",
+     "line": 315,
+     "doc": "",
+     "statement": "lemma fderiv_fourierIntegralInv\n    {g : WaveVectorSpace d → E} (hg : Integrable g) (hg' : Integrable (fun k ↦ ‖k‖ * ‖g k‖)) :\n    fderiv ℝ (fourierIntegralInv a b g)\n      = fourierIntegralInv a b (fderivFourierInvIntegrand b g)",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_fourierIntegral",
+     "kind": "lemma",
+     "line": 333,
+     "doc": "The partial derivative of the Fourier transform of `f` along coordinate `i`\nis the Fourier transform of `x ↦ (b * I * x i) • f x`, provided both integrals exist.",
+     "statement": "lemma deriv_fourierIntegral (i : Fin d)\n    {f : Space d → E} (hf : Integrable f) (hf' : Integrable fun x ↦ ‖x‖ * ‖f x‖) :\n    ∂[i] (fourierIntegral a b f) = fourierIntegral a b fun x ↦ (b * I * x i) • f x",
+     "sorry": false
+    },
+    {
+     "name": "WaveVectorSpace.deriv_fourierIntegralInv",
+     "kind": "lemma",
+     "line": 344,
+     "doc": "The partial derivative of the inverse Fourier transform of `g` along coordinate `i`\nis the inverse Fourier transform of `k ↦ (-b * I * k i) • g k`, provided both integrals exist.",
+     "statement": "lemma deriv_fourierIntegralInv (i : Fin d)\n    {g : WaveVectorSpace d → E} (hg : Integrable g) (hg' : Integrable fun k ↦ ‖k‖ * ‖g k‖) :\n    ∂[i] (fourierIntegralInv a b g) = fourierIntegralInv a b fun k ↦ -(b * I * k i) • g k",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 380,
+     "doc": "Notation for the Fourier transform `fourierIntegral 0 1`.",
+     "statement": "scoped instance : FourierTransform (Space d → E) (WaveVectorSpace d → E)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 384,
+     "doc": "Notation for the inverse Fourier transform `fourierIntegralInv 0 1`.",
+     "statement": "scoped instance : FourierTransformInv (WaveVectorSpace d → E) (Space d → E)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 401,
+     "doc": "Notation for the Fourier transform `fourierIntegral 1 (-1)`.",
+     "statement": "scoped instance : FourierTransform (Space d → E) (WaveVectorSpace d → E)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 405,
+     "doc": "Notation for the inverse Fourier transform `fourierIntegralInv 1 (-1)`.",
+     "statement": "scoped instance : FourierTransformInv (WaveVectorSpace d → E) (Space d → E)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

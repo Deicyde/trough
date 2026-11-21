@@ -8,7 +8,7 @@ proof: formalized
 
 # Solid sphere surfaces in `Space d`
 
-The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean): 13 declarations, 3 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere`, [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean): 13 declarations, 3 with a docstring.
 
 > The closed unit ball in `Space d` with its measure, distribution and positive volume.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere`, [PhyslibAlpha
 
 ## A. The definition of the solid sphere surface
 
-**`Space.solidSphere`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L59).
+**`Space.solidSphere`**, a def, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L59).
 
 > The inclusion into `Space d` of its closed unit ball `B^d` (the subtype coercion `x ↦ x.1`).
 
@@ -41,25 +41,25 @@ The module `PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere`, [PhyslibAlpha
 def solidSphere (d : ℕ) : Metric.closedBall (0 : Space d) 1 → Space d
 ```
 
-**`Space.solidSphere_injective`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L61).
+**`Space.solidSphere_injective`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L61).
 
 ```lean
 lemma solidSphere_injective (d : ℕ) : Function.Injective (solidSphere d)
 ```
 
-**`Space.solidSphere_continuous`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L66).
+**`Space.solidSphere_continuous`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L66).
 
 ```lean
 lemma solidSphere_continuous (d : ℕ) : Continuous (solidSphere d)
 ```
 
-**`Space.solidSphere_measurableEmbedding`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L68).
+**`Space.solidSphere_measurableEmbedding`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L68).
 
 ```lean
 lemma solidSphere_measurableEmbedding (d : ℕ) : MeasurableEmbedding (solidSphere d)
 ```
 
-**`Space.norm_solidSphere_le`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L74).
+**`Space.norm_solidSphere_le`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L74).
 
 ```lean
 lemma norm_solidSphere_le (d : ℕ) (x : Metric.closedBall (0 : Space d) 1) :
@@ -68,7 +68,7 @@ lemma norm_solidSphere_le (d : ℕ) (x : Metric.closedBall (0 : Space d) 1) :
 
 ## B. The measure associated with the solid sphere
 
-**`Space.solidSphereMeasure`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L88).
+**`Space.solidSphereMeasure`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L88).
 
 > The measure on `Space d` corresponding to integration over a solid sphere, i.e. the
 > ambient volume measure restricted to the closed unit ball.
@@ -77,14 +77,14 @@ lemma norm_solidSphere_le (d : ℕ) (x : Metric.closedBall (0 : Space d) 1) :
 def solidSphereMeasure (d : ℕ) : Measure (Space d)
 ```
 
-**`Space.solidSphereMeasure_isFiniteMeasure`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L91).
+**`Space.solidSphereMeasure_isFiniteMeasure`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L91).
 
 ```lean
 instance solidSphereMeasure_isFiniteMeasure (d : ℕ) :
     IsFiniteMeasure (solidSphereMeasure d)
 ```
 
-**`Space.solidSphereMeasure_hasTemperateGrowth`**, an instance, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L96).
+**`Space.solidSphereMeasure_hasTemperateGrowth`**, an instance, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L96).
 
 ```lean
 instance solidSphereMeasure_hasTemperateGrowth (d : ℕ) :
@@ -93,7 +93,7 @@ instance solidSphereMeasure_hasTemperateGrowth (d : ℕ) :
 
 ## C. The distribution associated with the solid sphere
 
-**`Space.solidSphereDist`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L109).
+**`Space.solidSphereDist`**, a def, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L109).
 
 > The distribution on `Space d` corresponding to integration over a solid sphere.
 > One can roughly think of this distribution as taking a test function `f` to its integral against
@@ -103,14 +103,14 @@ instance solidSphereMeasure_hasTemperateGrowth (d : ℕ) :
 def solidSphereDist (d : ℕ) : (Space d) →d[ℝ] ℝ
 ```
 
-**`Space.solidSphereDist_apply_eq_integral_solidSphereMeasure`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L112).
+**`Space.solidSphereDist_apply_eq_integral_solidSphereMeasure`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L112).
 
 ```lean
 lemma solidSphereDist_apply_eq_integral_solidSphereMeasure (d : ℕ) (f : 𝓢(Space d, ℝ)) :
     solidSphereDist d f = ∫ x, f x ∂solidSphereMeasure d
 ```
 
-**`Space.solidSphereDist_apply_eq_integral_closedBall`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L116).
+**`Space.solidSphereDist_apply_eq_integral_closedBall`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L116).
 
 ```lean
 lemma solidSphereDist_apply_eq_integral_closedBall (d : ℕ) (f : 𝓢(Space d, ℝ)) :
@@ -119,14 +119,14 @@ lemma solidSphereDist_apply_eq_integral_closedBall (d : ℕ) (f : 𝓢(Space d, 
 
 ## D. The solid sphere has positive ambient volume
 
-**`Space.solidSphere_volume_pos`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L126).
+**`Space.solidSphere_volume_pos`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L126).
 
 ```lean
 lemma solidSphere_volume_pos (d : ℕ) :
     0 < volume (Metric.closedBall (0 : Space d) 1)
 ```
 
-**`Space.solidSphereMeasure_univ_pos`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L132).
+**`Space.solidSphereMeasure_univ_pos`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean#L132).
 
 ```lean
 lemma solidSphereMeasure_univ_pos (d : ℕ) : 0 < solidSphereMeasure d Set.univ
@@ -139,4 +139,4 @@ lemma solidSphereMeasure_univ_pos (d : ℕ) : 0 < solidSphereMeasure d Set.univ
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean)
+- [PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean)

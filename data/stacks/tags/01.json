@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0100",
@@ -6637,10 +6637,6 @@
        "comment": "(ii)"
       },
       {
-       "ref": "4 XVII 1.2.3",
-       "comment": "(ii)"
-      },
-      {
        "ref": "4 V 0.4",
        "comment": ""
       }
@@ -11794,7 +11790,7 @@
     {
      "name": "Stacks.AssociatedSheaf.associatedSheafUnitIso",
      "kind": "def",
-     "line": 156,
+     "line": 162,
      "private": false,
      "doc": "**Construction (3) carries the base ring to the structure sheaf:** `ℱ_R ≅ 𝒪_X`.\n\nBoth legs are already in the repository: `Stacks.AssociatedSheaf.freeIsoAssociatedSheaf`\nidentifies `ℱ` of a free module with the free sheaf of modules on the same index type, and\n`Stacks.SheafOfModules.Site.freePUnitIso` identifies the free sheaf of modules on a one-element\nindex type with the structure sheaf. What is interposed is only the `R`-module isomorphism\n`(PUnit →₀ R) ≃ₗ[R] R`.",
      "statement": "def associatedSheafUnitIso :\n    associatedSheaf X α (ModuleCat.of R R) ≅\n      SheafOfModules.unit (structureSheafRing X)",
@@ -12823,7 +12819,7 @@
     {
      "name": "Stacks.SheafOfModules.Tensor.sheafTensor",
      "kind": "def",
-     "line": 166,
+     "line": 200,
      "private": false,
      "doc": "The tensor product of module sheaves in independent section universes, obtained by\nsheafifying the canonical objectwise tensor product of their underlying presheaves.",
      "statement": "noncomputable def sheafTensor :\n    SheafOfModules.{leftUniverse} (ringSheaf R) ⥤ SheafOfModules.{rightUniverse} (ringSheaf R) ⥤\n      SheafOfModules.{max leftUniverse rightUniverse} (ringSheaf R)",
@@ -12927,7 +12923,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorStalkRingedSpace.tensorStalkIso",
      "kind": "def",
-     "line": 910,
+     "line": 928,
      "private": false,
      "doc": "**The canonical `O_{X,x}`-linear isomorphism `(F ⊗_{O_X} G)_x ≅ F_x ⊗_{O_{X,x}} G_x`\n(Stacks Tag 01CB).**  It is extracted (via `Classical.choice`) from `exists_tensorStalkIso`,\nand is characterised on germs of pure tensors by `tensorStalkIso_germ` below.",
      "statement": "noncomputable def tensorStalkIso (x : X.carrier)\n    (F G : SheafOfModules.{u} (structureSheafRing X)) :\n    letI := stalkModule X\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n        (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F).obj G).val x\n    (grpStalk X ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      (⟨X.presheaf, X.IsSheaf⟩ :\n        Sheaf (JX X) CommRingCat.{u})).obj F).obj G)).val x) ≃ₗ[ringStalk X x]\n      ((grpStalk X F.val x) ⊗[ringStalk X x] (grpStalk X G.val x))",
@@ -12946,7 +12942,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorStalkRingedSpace.tensorStalkIso_germ",
      "kind": "theorem",
-     "line": 924,
+     "line": 942,
      "private": false,
      "doc": "**Characterisation of the canonical isomorphism.**  On the germ of a pure tensor of\nsections it acts by `germ (m ⊗ n) ↦ (germ m) ⊗ (germ n)`.",
      "statement": "theorem tensorStalkIso_germ (x : X.carrier)\n    (F G : SheafOfModules.{u} (structureSheafRing X))\n    (U : TopologicalSpace.Opens X.carrier) (hxU : x ∈ U)\n    (m : F.val.obj (Opposite.op U)) (n : G.val.obj (Opposite.op U)) :\n    tensorStalkIso X x F G\n        (grpGerm X ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F).obj G)).val x U hxU\n          (toTensorSheafSection X F G (Opposite.op U)\n            (m ⊗ₜ[X.presheaf.obj (Opposite.op U)] n)))\n      = (grpGerm X F.val x U hxU m) ⊗ₜ[ringStalk X x] (grpGerm X G.val x U hxU n)",
@@ -12960,7 +12956,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorStalkRingedSpace.tensorStalkIso_natural",
      "kind": "theorem",
-     "line": 989,
+     "line": 1007,
      "private": false,
      "doc": "**Functoriality of the stalk-of-tensor-product isomorphism (Stacks Tag 01CB).**\n\nGiven morphisms `φ : F ⟶ F'` and `ψ : G ⟶ G'` of sheaves of `O_X`-modules, the canonical\nisomorphisms `tensorStalkIso` for `(F, G)` and `(F', G')` are natural: the square\n\n```\n(F ⊗ G)_x   --tensorStalkIso-->   F_x ⊗ G_x\n   |                                   |\n(φ⊗ψ)_x                            φ_x ⊗ ψ_x\n   v                                   v\n(F'⊗ G')_x  --tensorStalkIso-->   F'_x ⊗ G'_x\n```\n\ncommutes, as a square of `O_{X,x}`-linear maps.  All four maps are the canonical ones:\n* the left vertical map is the canonical `O_{X,x}`-linear stalk map (`stalkMapL`) of the\n  *canonical* induced morphism `tensorSheafMap φ ψ = φ ⊗ ψ`;\n* the right vertical map is `TensorProduct.map φ_x ψ_x`, where `φ_x = stalkMapL φ`,\n  `ψ_x = stalkMapL ψ` are the canonical `O_{X,x}`-linear stalk maps of `φ`, `ψ`.",
      "statement": "theorem tensorStalkIso_natural (x : X.carrier)\n    (F G F' G' : SheafOfModules.{u} (structureSheafRing X))\n    (φ : F ⟶ F') (ψ : G ⟶ G') :\n    letI := stalkModule X\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n        (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F).obj G).val x\n    letI := stalkModule X\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n        (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F').obj G').val x\n    (TensorProduct.map (stalkMapL X F.val F'.val φ.val x) (stalkMapL X G.val G'.val ψ.val x)).comp\n        (tensorStalkIso X x F G).toLinearMap\n      = (tensorStalkIso X x F' G').toLinearMap.comp\n          (stalkMapL X ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F).obj G)).val\n      ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u})).obj F').obj G')).val\n            (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      (⟨X.presheaf, X.IsSheaf⟩ : Sheaf (JX X) CommRingCat.{u}))).map\n        ((φ, ψ) : (_, _) ⟶ (_, _)))).val x)",
@@ -12980,7 +12976,7 @@
     {
      "name": "AlgebraicGeometry.tensorSheafMap_epi_right",
      "kind": "theorem",
-     "line": 151,
+     "line": 152,
      "private": false,
      "doc": "Tensoring an epimorphism of `O_X`-modules on the left by an `O_X`-module gives an\nepimorphism. This is Tag 01CC in the second variable.",
      "statement": "theorem tensorSheafMap_epi_right {G G' : SheafOfModules.{u} (structureSheafRing X)}\n    (F : SheafOfModules.{u} (structureSheafRing X)) (ψ : G ⟶ G') [Epi ψ] :\n    Epi (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      ⟨((X)).presheaf, ((X)).IsSheaf⟩)).map (((𝟙 F), ψ) : (F, G) ⟶ (F, G'))))",
@@ -13028,7 +13024,7 @@
     {
      "name": "Stacks.RingedSpace.comparisonBifunctorIso",
      "kind": "def",
-     "line": 569,
+     "line": 568,
      "private": false,
      "doc": "**Stacks 01CD**, unconditionally: pulling back the tensor product of two sheaves of modules\non a ringed space is the tensor product of their pullbacks, naturally in both arguments.  This\nis `Stacks.RingedSpace.comparisonIso` with its hypothesis discharged, so by\n`Stacks.RingedSpace.comparison_unique` it is the only candidate.",
      "statement": "noncomputable def comparisonBifunctorIso :\n    Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      ⟨Y.presheaf, Y.IsSheaf⟩) ⋙ pullbackFunctor f ≅\n      Functor.prod (pullbackFunctor f) (pullbackFunctor f) ⋙\n        Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n          ⟨X.presheaf, X.IsSheaf⟩)",
@@ -13042,10 +13038,10 @@
     {
      "name": "Stacks.RingedSpace.comparisonBifunctorIso_hom_homEquiv_unit_tmul",
      "kind": "lemma",
-     "line": 585,
+     "line": 584,
      "private": false,
      "doc": "**The canonicality clause of Stacks 01CD.**  The adjoint transpose of the forward map of\n`comparisonBifunctorIso` at `(A, B)` carries the sheafification-unit image of a pure tensor to\nthe image, under the corresponding unit on `X`, of the tensor of the two pullback-unit\nimages.",
-     "statement": "lemma comparisonBifunctorIso_hom_homEquiv_unit_tmul\n    (A B : SheafOfModules.{u} (structureRingSheaf Y)) (U : (Opens Y.carrier)ᵒᵖ)\n    (a : A.val.obj U) (b : B.val.obj U) :\n    Hom.app ((pullbackAdjunction f).homEquiv\n          (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n            ⟨Y.presheaf, Y.IsSheaf⟩).obj A).obj B)\n          (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n            ⟨X.presheaf, X.IsSheaf⟩).obj ((pullbackFunctor f).obj A)).obj\n              ((pullbackFunctor f).obj B))\n          ((comparisonBifunctorIso f).hom.app (A, B))).val U\n        (Hom.app ((PresheafOfModules.sheafificationAdjunction\n          (R := Stacks.SheafOfModules.Tensor.ringSheaf ⟨Y.presheaf, Y.IsSheaf⟩)\n          (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf ⟨Y.presheaf, Y.IsSheaf⟩).obj)).unit.app\n            (_root_.PresheafOfModules.tensorObj A.val B.val)) U (a ⊗ₜ b)) =\n      Hom.app ((PresheafOfModules.sheafificationAdjunction\n        (R := Stacks.SheafOfModules.Tensor.ringSheaf ⟨X.presheaf, X.IsSheaf⟩)\n        (𝟙 (Stacks.SheafOfModules.Tensor.ringSheaf ⟨X.presheaf, X.IsSheaf⟩).obj)).unit.app\n          (_root_.PresheafOfModules.tensorObj ((pullbackFunctor f).obj A).val\n            ((pullbackFunctor f).obj B).val))\n        ((opensMap f).op.obj U) (pullbackUnit f A U a ⊗ₜ pullbackUnit f B U b)",
+     "statement": "lemma comparisonBifunctorIso_hom_homEquiv_unit_tmul\n    (A B : SheafOfModules.{u} (structureRingSheaf Y)) (U : (Opens Y.carrier)ᵒᵖ)\n    (a : A.val.obj U) (b : B.val.obj U) :\n    Hom.app ((pullbackAdjunction f).homEquiv\n          (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n            ⟨Y.presheaf, Y.IsSheaf⟩).obj A).obj B)\n          (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n            ⟨X.presheaf, X.IsSheaf⟩).obj ((pullbackFunctor f).obj A)).obj\n              ((pullbackFunctor f).obj B))\n          ((comparisonBifunctorIso f).hom.app (A, B))).val U\n        (Hom.app ((Stacks.SheafOfModules.Tensor.sheafificationAdjunction\n            ⟨Y.presheaf, Y.IsSheaf⟩).unit.app\n            (_root_.PresheafOfModules.tensorObj A.val B.val)) U (a ⊗ₜ b)) =\n      Hom.app ((Stacks.SheafOfModules.Tensor.sheafificationAdjunction\n          ⟨X.presheaf, X.IsSheaf⟩).unit.app\n          (_root_.PresheafOfModules.tensorObj ((pullbackFunctor f).obj A).val\n            ((pullbackFunctor f).obj B).val))\n        ((opensMap f).op.obj U) (pullbackUnit f A U a ⊗ₜ pullbackUnit f B U b)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -13090,7 +13086,7 @@
     {
      "name": "Stacks.TensorCoherence.isCoherent_tensorSheaf",
      "kind": "theorem",
-     "line": 454,
+     "line": 535,
      "private": false,
      "doc": "**Stacks Project, Tag 01CE.**",
      "statement": "theorem isCoherent_tensorSheaf\n    (F G : SheafOfModules.{u} (Stacks.commRingSheafToRingSheaf O))\n    [F.IsFinitePresentation] (hG : IsCoherent G) :\n    IsCoherent\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} O).flip.obj G).obj F)",
@@ -13104,7 +13100,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.tensorSheaf_isCoherent_of_isFinitePresentation",
      "kind": "theorem",
-     "line": 521,
+     "line": 491,
      "private": false,
      "doc": "On a ringed space, the tensor product of a sheaf of modules of finite presentation with a\ncoherent sheaf of modules is coherent.",
      "statement": "theorem tensorSheaf_isCoherent_of_isFinitePresentation\n    (X : AlgebraicGeometry.RingedSpace.{u, u})\n    (F G : _root_.SheafOfModules.{u}\n      (structureSheafRing X))\n    [F.IsFinitePresentation] [_root_.SheafOfModules.IsCoherent G] :\n    _root_.SheafOfModules.IsCoherent ((((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf,\n        ((X)).IsSheaf⟩).obj (F)).obj (G)))",
@@ -13118,7 +13114,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.tensorSheaf_isCoherent",
      "kind": "theorem",
-     "line": 556,
+     "line": 526,
      "private": false,
      "doc": "The tensor product of two coherent sheaves of modules is coherent.",
      "statement": "theorem tensorSheaf_isCoherent (X : AlgebraicGeometry.RingedSpace.{u, u})\n    (F G : _root_.SheafOfModules.{u}\n      (structureSheafRing X))\n    [_root_.SheafOfModules.IsCoherent F] [_root_.SheafOfModules.IsCoherent G] :\n    _root_.SheafOfModules.IsCoherent ((((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf,\n        ((X)).IsSheaf⟩).obj (F)).obj (G)))",
@@ -13197,7 +13193,7 @@
     {
      "name": "AlgebraicGeometry.tensorSheaf_isQuasicoherent",
      "kind": "instance",
-     "line": 624,
+     "line": 561,
      "private": false,
      "doc": "**Stacks Project, Tag 01CE.** The tensor product of two quasi-coherent\nmodules on a ringed space is quasi-coherent.",
      "statement": "instance tensorSheaf_isQuasicoherent\n    (X : AlgebraicGeometry.RingedSpace.{u, u})\n    (F G : SheafOfModules.{u} ((Stacks.SheafOfModules.Tensor.ringSheaf X.sheaf)))\n    [F.IsQuasicoherent] [G.IsQuasicoherent] :\n    ((((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf, ((X)).IsSheaf⟩).obj (F)).obj\n        (G))).IsQuasicoherent",
@@ -13217,7 +13213,7 @@
     {
      "name": "SheafOfModules.ringedSpaceAlgebras",
      "kind": "def",
-     "line": 424,
+     "line": 420,
      "private": false,
      "doc": "**The tensor, exterior and symmetric algebras of a sheaf of modules on a ringed space**, as\nthe package Section 17.21 attaches to `F`: the three graded algebras, their three universal\nproperties, the identification of the homogeneous pieces of `T(F)` with the tensor powers of `F`,\nthe degree-zero identifications, the vanishing in negative degrees, the direct-sum presentation\nand the two quotient maps `T(F) ⟶ ⋀(F)` and `T(F) ⟶ Sym(F)`. It is `SheafOfModules.algebras`,\ni.e. `sheafifiedAlgebras`, at the site of open subsets of `X`, so each of the three algebras is\nthe degreewise sheafification of its sectionwise counterpart, which is the section's own\nconstruction.",
      "statement": "noncomputable def ringedSpaceAlgebras (F : SheafOfModules.{w} (structureSheafRing X)) :\n    TensorExteriorSymmetricAlgebras (Opens.grothendieckTopology X.carrier) F",
@@ -13404,7 +13400,7 @@
     {
      "name": "Stacks.PullbackAlgebra.pullbackTensorPieceIso",
      "kind": "def",
-     "line": 331,
+     "line": 327,
      "private": false,
      "doc": "The pullback of the degree-`n` piece of the tensor algebra of `F` is the degree-`n` piece of\nthe tensor algebra of `f^*F`.",
      "statement": "noncomputable def pullbackTensorPieceIso (n : ℕ) :\n    (pullbackFunctor f).obj (S.tensor.piece (n : ℤ)) ≅ T.tensor.piece (n : ℤ)",
@@ -13418,7 +13414,7 @@
     {
      "name": "Stacks.PullbackAlgebra.pullbackTensorSheafIso",
      "kind": "def",
-     "line": 393,
+     "line": 389,
      "private": false,
      "doc": "The pullback of the underlying direct-sum sheaf of the tensor algebra of `F` is the\nunderlying direct-sum sheaf of the tensor algebra of `f^*F`.",
      "statement": "noncomputable def pullbackTensorSheafIso :\n    (pullbackFunctor f).obj S.tensorAlgebraSheaf ≅ T.tensorAlgebraSheaf",
@@ -13476,7 +13472,7 @@
     {
      "name": "SheafOfModules.ExtPresentation.epi_extDesc_app",
      "kind": "theorem",
-     "line": 334,
+     "line": 355,
      "private": false,
      "doc": "**The surjectivity clause of Stacks Tag 01CJ for exterior powers.** If `p : M₁ ⟶ M` is an\nepimorphism of sheaves of modules on a space, `A'` is an exterior algebra of `M₁` and `B'` an\nexterior algebra of `M`, then the induced map `⋀ⁿ(M₁) ⟶ ⋀ⁿ(M)` is an epimorphism in every degree.\nThis is the clause `⟶ 0` of the sequence Tag 01CJ asserts.\n\nThe hypothesis `n ≥ 1` of the source is not needed: the statement holds in degree `0` too, where\nboth powers are the structure sheaf.",
      "statement": "theorem epi_extDesc_app [Epi p] (n : ℕ) : Epi ((extDesc ι κ hA' hB' p).app (n : ℤ))",
@@ -13490,7 +13486,7 @@
     {
      "name": "SheafOfModules.ExtPresentation.exteriorPresentation_exact",
      "kind": "theorem",
-     "line": 600,
+     "line": 598,
      "private": false,
      "doc": "**Stacks Tag 01CJ for exterior powers.** Let `M₂ --q--> M₁ --p--> M ⟶ 0` be a presentation of\na sheaf of modules on a topological space with a sheaf of commutative rings — `p` an epimorphism\nand the complex exact at `M₁` — let `A'` be an exterior algebra of `M₁` and `B'` one of `M`. Then\nfor every `k` the three-term sequence\n\n`M₂ ⊗ ⋀^k(M₁) ⟶ ⋀^{k+1}(M₁) ⟶ ⋀^{k+1}(M) ⟶ 0`\n\nis exact at the middle term and its second map is an epimorphism, which is the exactness the\nsource asserts in every degree `n = k + 1 ≥ 1`.",
      "statement": "theorem exteriorPresentation_exact (hS : (ShortComplex.mk q p hqp).Exact) [Epi p] (k : ℕ) :\n    (extComplex ι κ hA' hB' p q hqp k).Exact ∧\n      Epi (extComplex ι κ hA' hB' p q hqp k).g",
@@ -13796,7 +13792,7 @@
     {
      "name": "Stacks.SheafOfModules.isQuasicoherent_tensorPower",
      "kind": "theorem",
-     "line": 548,
+     "line": 542,
      "private": false,
      "doc": "**Each tensor power of a quasi-coherent sheaf of modules on a ringed space is\nquasi-coherent.** This is clause (5) of Stacks Tag 01CK for the tensor powers. A presentation of\n`F` over an open presents `Tⁿ(F)` over that same open, by\n`Stacks.SheafOfModules.nonempty_presentation_tensorPower_over`, so the covering family which\npresents `F` presents each tensor power too.",
      "statement": "theorem isQuasicoherent_tensorPower {X : AlgebraicGeometry.RingedSpace.{t, t}}\n    (F : _root_.SheafOfModules.{t} (structureSheafRing X)) [F.IsQuasicoherent]\n    (A : _root_.SheafOfModules.TensorExteriorSymmetricAlgebras\n      (Opens.grothendieckTopology X.carrier) F) (n : ℕ) :\n    (A.tensor.piece (n : ℤ)).IsQuasicoherent",
@@ -13933,7 +13929,7 @@
     {
      "name": "Stacks.SheafOfModules.isQuasicoherent_tensorAlgebraSheaf_of_isQuasicoherent",
      "kind": "theorem",
-     "line": 569,
+     "line": 563,
      "private": false,
      "doc": "**The tensor algebra of a quasi-coherent sheaf of modules on a ringed space is\nquasi-coherent.** This is the tensor assertion of Stacks Tag 01CL. The covering family is the one\nthat presents `F`; no degree needs a smaller open, because\n`Stacks.SheafOfModules.nonempty_presentation_tensorPower_over` presents every degree over that\nsame open.",
      "statement": "theorem isQuasicoherent_tensorAlgebraSheaf_of_isQuasicoherent\n    {X : AlgebraicGeometry.RingedSpace.{t, t}}\n    (F : _root_.SheafOfModules.{t} (structureSheafRing X)) [F.IsQuasicoherent]\n    (A : _root_.SheafOfModules.TensorExteriorSymmetricAlgebras\n      (Opens.grothendieckTopology X.carrier) F) :\n    A.tensorAlgebraSheaf.IsQuasicoherent",
@@ -13953,7 +13949,7 @@
     {
      "name": "Stacks.SheafOfModules.internalHomTensorIso",
      "kind": "def",
-     "line": 212,
+     "line": 270,
      "private": false,
      "doc": "The sheaf-hom out of a tensor product is canonically the corresponding iterated sheaf-hom:\n`ℋom(F ⊗ G, H) ≅ ℋom(F, ℋom(G, H))`.",
      "statement": "noncomputable def internalHomTensorIso\n    (F G H : _root_.SheafOfModules.{u} (structureSheafRing X)) :\n    sheafHomSpace X (((Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩).obj F).obj G) H ≅\n      sheafHomSpace X F (sheafHomSpace X G H)",
@@ -13967,7 +13963,7 @@
     {
      "name": "Stacks.SheafOfModules.internalHomTensorIso_hom_app_tmul",
      "kind": "theorem",
-     "line": 228,
+     "line": 285,
      "private": false,
      "doc": "The canonical sheaf-hom isomorphism is currying: on every open, its evaluation on two\nlocal sections agrees with evaluation on their pure tensor.",
      "statement": "theorem internalHomTensorIso_hom_app_tmul\n    (U : Opens X.carrier)\n    (s : (sheafHomSpace X\n      (((Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩).obj F).obj G) H).val.obj (op U))\n    (f : F.val.obj (op U)) (g : G.val.obj (op U)) :\n    evalNestedInternalHomSection X U\n        ((internalHomTensorIso X F G H).hom.val.app (op U) s) f g =\n      evalTensorHomSection X U s f g",
@@ -13981,7 +13977,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorHomEquiv",
      "kind": "def",
-     "line": 251,
+     "line": 308,
      "private": false,
      "doc": "Giving a morphism `F ⊗ G ⟶ H` is canonically equivalent to giving a morphism\n`F ⟶ ℋom(G, H)`.",
      "statement": "noncomputable def tensorHomEquiv\n    (F G H : _root_.SheafOfModules.{u} (structureSheafRing X)) :\n    (((Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩).obj F).obj G ⟶ H) ≃ (F ⟶ sheafHomSpace X G H)",
@@ -13995,7 +13991,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorHomEquiv_isTensorCurry",
      "kind": "theorem",
-     "line": 264,
+     "line": 320,
      "private": false,
      "doc": "The forward direction of `tensorHomEquiv` is the canonical currying map.",
      "statement": "theorem tensorHomEquiv_isTensorCurry\n    (t : ((Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩).obj F).obj G ⟶ H) :\n    IsTensorCurry X t (tensorHomEquiv X F G H t)",
@@ -14009,7 +14005,7 @@
     {
      "name": "Stacks.SheafOfModules.internalHomTensorIso_natural_left",
      "kind": "theorem",
-     "line": 359,
+     "line": 390,
      "private": false,
      "doc": "The canonical isomorphism commutes with precomposition in its first argument.",
      "statement": "theorem internalHomTensorIso_natural_left\n    {F' : _root_.SheafOfModules.{u} (structureSheafRing X)} (f : F' ⟶ F) :\n    (internalHomTensorIso X F G H).hom ≫ sheafHomMapLeft X f =\n      sheafHomMapLeft X ((Functor.uncurry.obj (Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩)).map\n        ((f, 𝟙 G) : (_, _) ⟶ (_, _))) ≫\n        (internalHomTensorIso X F' G H).hom",
@@ -14023,7 +14019,7 @@
     {
      "name": "Stacks.SheafOfModules.internalHomTensorIso_natural_middle",
      "kind": "theorem",
-     "line": 371,
+     "line": 402,
      "private": false,
      "doc": "The canonical isomorphism commutes with precomposition in its second argument.",
      "statement": "theorem internalHomTensorIso_natural_middle\n    {G' : _root_.SheafOfModules.{u} (structureSheafRing X)} (g : G' ⟶ G) :\n    (internalHomTensorIso X F G H).hom ≫ sheafHomMapRight X (sheafHomMapLeft X g) =\n      sheafHomMapLeft X ((Functor.uncurry.obj (Tensor.sheafTensor ⟨X.presheaf, X.IsSheaf⟩)).map\n        ((𝟙 F, g) : (_, _) ⟶ (_, _))) ≫\n        (internalHomTensorIso X F G' H).hom",
@@ -14037,7 +14033,7 @@
     {
      "name": "Stacks.SheafOfModules.internalHomTensorIso_natural_right",
      "kind": "theorem",
-     "line": 383,
+     "line": 414,
      "private": false,
      "doc": "The canonical isomorphism commutes with postcomposition in its target.",
      "statement": "theorem internalHomTensorIso_natural_right\n    {H' : _root_.SheafOfModules.{u} (structureSheafRing X)} (h : H ⟶ H') :\n    sheafHomMapRight X h ≫ (internalHomTensorIso X F G H').hom =\n      (internalHomTensorIso X F G H).hom ≫ sheafHomMapRight X (sheafHomMapRight X h)",
@@ -14248,7 +14244,7 @@
     {
      "name": "Stacks.SheafOfModules.IsInvertible",
      "kind": "class",
-     "line": 131,
+     "line": 139,
      "private": false,
      "doc": "**Stacks Project, Tag 01CS**, equivalently **Tag 0409 (2)**. A sheaf of `O`-modules is\n*invertible* when its tensor functor is an equivalence. The universal property specifies that\ntensor functor independently of any chosen construction of sheafification, hence on every\nsite; so the ringed-space form of the definition and the ringed-site form coincide here.",
      "statement": "class IsInvertible\n    (L : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO)) : Prop",
@@ -14334,7 +14330,7 @@
     {
      "name": "Stacks.SheafOfModules.tensorProduct_isInvertible",
      "kind": "theorem",
-     "line": 482,
+     "line": 523,
      "private": false,
      "doc": "**Stacks Project, Tag 01CT (1), Tag 040A (1).** The tensor product of two invertible sheaves\nof modules is invertible.",
      "statement": "theorem tensorProduct_isInvertible\n    (L N : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))\n    [IsInvertible O hO L] [IsInvertible O hO N] :\n    IsInvertible O hO ((((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w}\n      ⟨O, Presheaf.isSheaf_of_isSheaf_comp _ O (forget₂ CommRingCat RingCat) hO⟩).obj L)).obj N)",
@@ -14382,7 +14378,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorPower.isInvertible_tensorPower",
      "kind": "theorem",
-     "line": 200,
+     "line": 204,
      "private": false,
      "doc": "**Every integer tensor power of an invertible sheaf of modules is invertible.** For\nnon-negative exponents this is Tag 01CT (1) and the successor comparison; for negative exponents\nit is the same two inputs read backwards, cancelling the invertible factor `L`.",
      "statement": "theorem isInvertible_tensorPower [IsInvertible O hO L] (n : ℤ) :\n    IsInvertible O hO (tensorPower O hO L n)",
@@ -14396,7 +14392,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorPower.mulIso_comm",
      "kind": "theorem",
-     "line": 461,
+     "line": 503,
      "private": false,
      "doc": "**The commutativity normalisation of Tag 01CU**: the canonical multiplication on the integer\ntensor powers of an invertible sheaf of modules agrees with itself after the symmetry constraint\nof the tensor product sheaf. This was the last of the four normalisations of Tag 01CU still\noutstanding.",
      "statement": "theorem mulIso_comm (n m p : ℤ) (h : n + m = p) (h' : m + n = p) :\n    mulIso O hO L n m p h =\n      Stacks.SheafOfModules.tensorSheafBraiding O hO (pow L n) (pow L m) ≪≫\n        mulIso O hO L m n p h'",
@@ -14410,7 +14406,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorPower.tensorPowerCoherence_exists",
      "kind": "theorem",
-     "line": 595,
+     "line": 638,
      "private": false,
      "doc": "**The canonical multiplication on the integer tensor powers of an invertible sheaf of modules\nexists and satisfies every normalisation asserted by Tag 01CU**: the two unit constraints, the\ndegree-`(n, 1)` normalisation by the defining iteration, naturality of that comparison,\nassociativity against the associativity constraint of the tensor product sheaf, and commutativity\nagainst its symmetry constraint.\n\nThe multiplication is transported from `Stacks.MonoidalCategory.mul` by\n`Stacks.MonoidalCategory.nonempty_powCoherence`, which is what absorbs the fact that the tensor\npowers of Tag 01CU are built from `(Stacks.SheafOfModules.Tensor.sheafTensor _).flip.obj L` while\nthe multiplication is built from `tensorRight`: the two functors are equal but their chosen\nquasi-inverses, used by the negative exponents, have no common normal form.",
      "statement": "theorem tensorPowerCoherence_exists : Nonempty (TensorPowerCoherence O hO L)",
@@ -14429,7 +14425,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorPower.braidingScalar_eq_id",
      "kind": "theorem",
-     "line": 344,
+     "line": 362,
      "private": false,
      "doc": "The braiding scalar of the tensor powers of an invertible sheaf of modules is the identity,\nin every degree.",
      "statement": "theorem braidingScalar_eq_id (n : ℤ) : braidingScalar O hO L n = 𝟙 _",
@@ -14471,7 +14467,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorPower.tensorPowerMulIso",
      "kind": "def",
-     "line": 339,
+     "line": 345,
      "private": false,
      "doc": "The canonical multiplication isomorphism `L^{⊗ n} ⊗_O L^{⊗ m} ≅ L^{⊗ (n + m)}`, the addition\nlaw `CategoryTheory.Equivalence.powAdd` for the powers of `- ⊗ L` applied to the structure sheaf,\nread through `powFunctorIsoTensorRight`.",
      "statement": "noncomputable def tensorPowerMulIso (n m : ℤ) :\n    (((Stacks.SheafOfModules.Tensor.sheafTensor ⟨O, Presheaf.isSheaf_of_isSheaf_comp _ (O) (forget₂\n      CommRingCat RingCat) (hO)⟩).obj ((tensorPower O hO L n))).obj ((tensorPower\n      O hO L m))) ≅\n      tensorPower O hO L (n + m)",
@@ -14485,7 +14481,7 @@
     {
      "name": "Stacks.SheafOfModules.Invertible.tensorPower",
      "kind": "def",
-     "line": 156,
+     "line": 164,
      "private": false,
      "doc": "**Stacks Project, Tag 01CU.** The `n`th tensor power `L^{⊗ n}` of an invertible sheaf `L`,\nfor `n` an arbitrary integer: the image of the structure sheaf under the `n`th power of the\nright-tensor autoequivalence.",
      "statement": "noncomputable def tensorPower\n    (L : SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))\n    [IsInvertible O hO L] (n : ℤ) :\n    SheafOfModules.{w} (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO)",
@@ -14499,7 +14495,7 @@
     {
      "name": "Stacks.SelfBraidingInvertible.braidingScalar_eq_id",
      "kind": "theorem",
-     "line": 87,
+     "line": 103,
      "private": false,
      "doc": "**The braiding scalar of a tensor power of an invertible sheaf of modules is the identity**,\nin every degree. By `Stacks.SheafOfModules.TensorPower.tensorSheafBraiding_self_eq_refl_iff` this\nis the commutativity constraint of Stacks Tag 01CU in degrees `(n, n)`.",
      "statement": "theorem braidingScalar_eq_id (n : ℤ) :\n    Stacks.SheafOfModules.TensorPower.braidingScalar 𝒪 h𝒪 L n = 𝟙 _",
@@ -14603,7 +14599,7 @@
     {
      "name": "Stacks.SheafOfModules.sectionRingStructure_exists",
      "kind": "theorem",
-     "line": 742,
+     "line": 696,
      "private": false,
      "doc": "There is a graded ring structure on the section ring whose homogeneous product is tensor\nmultiplication.",
      "statement": "theorem sectionRingStructure_exists\n    (L : SheafOfModules.{w} (TensorSheafification.structureSheaf O hO))\n    [IsInvertible O hO L] :\n    Nonempty (SectionRingStructure O hO L)",
@@ -14617,7 +14613,7 @@
     {
      "name": "Stacks.SheafOfModules.sectionModuleStructure_exists",
      "kind": "theorem",
-     "line": 1153,
+     "line": 1107,
      "private": false,
      "doc": "There is a module structure of the section module over the section ring whose action on\nhomogeneous terms is tensor multiplication.",
      "statement": "theorem sectionModuleStructure_exists\n    (L F : SheafOfModules.{w} (TensorSheafification.structureSheaf O hO))\n    [IsInvertible O hO L] :\n    Nonempty (SectionModuleStructure O hO L F)",
@@ -15192,7 +15188,7 @@
     {
      "name": "Stacks.SheafOfModules.isOpen_nonvanishingLocus",
      "kind": "theorem",
-     "line": 464,
+     "line": 465,
      "private": false,
      "doc": "**Stacks Project, Tag 01CY** (openness). For an invertible sheaf of modules on a ringed\nspace all of whose stalks are local rings, the nonvanishing locus of a global section is\nopen.",
      "statement": "theorem isOpen_nonvanishingLocus\n    (L : SheafOfModules.{u} (structureSheafRing X))\n    [IsInvertible X.presheaf (structureSheafRing X).property L] (s : L.sections) :\n    IsOpen (nonvanishingLocus L s)",
@@ -15225,10 +15221,10 @@
     {
      "name": "Stacks.InverseSection.exists_tensorInv_section_pairing_eq_one",
      "kind": "theorem",
-     "line": 559,
+     "line": 572,
      "private": false,
-     "doc": "**Stacks Tag 01CY, the inverse-section clause**, in the shape of the tagged statement: on the\nnonvanishing open of a global section `s` of an invertible module, there is a section `t` of the\n`(-1)`-st tensor power whose canonical tensor-power pairing with `s` evaluates to `1`.\n\nThe pairing is the one the tagged statement names: form the elementary tensor of `s`, read in the\nfirst tensor power, with `t`; push it into the sheafified tensor product; apply the addition\nisomorphism of Stacks Tag 01CU in degrees `1` and `-1`; reindex along `1 + (-1) = 0`. The tagged\nstatement then compares the result with `1` directly, its zeroth tensor power being the unit of\n`SheafOfModules` on the nose; here the zeroth tensor power is the *sheafified* unit, so\n`AlgebraicGeometry.SheafOfModules.tensorPowZeroIso` is inserted, and only then is the comparison\nwith `1 : 𝒪_X(X_s)` a statement.",
-     "statement": "theorem exists_tensorInv_section_pairing_eq_one (s : L.sections) :\n    ∃ t : (tensorPow X.sheaf.obj (structureSheaf X.sheaf).property L (-1)).val.obj\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)),\n      (tensorPowZeroIso X.sheaf.obj (structureSheaf X.sheaf).property L).hom.val.app\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n        ((tensorPowReindexIso X.sheaf.obj (structureSheaf X.sheaf).property L\n            (show (1 : ℤ) + -1 = 0 by omega)).hom.val.app\n          (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n          ((tensorPowAddIsoSheaf X.sheaf.obj (structureSheaf X.sheaf).property L\n              1 (-1)).hom.val.app\n            (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n            ((toSheafify X.sheaf.obj (structureSheaf X.sheaf).property\n                ((PresheafOfModules.tensorObj (O := X.sheaf.obj) ((powPre L 1))\n                  ((powPre L (-1)))))).app\n              (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n              ((tensorPowOneIso X.sheaf.obj (structureSheaf X.sheaf).property L).inv.val.app\n                  (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n                  (s.eval (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)))\n                ⊗ₜ[X.presheaf.obj\n                    (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))] t)))) =\n      (1 : X.presheaf.obj\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)))",
+     "doc": "**Stacks Tag 01CY, the inverse-section clause**, in the shape of the tagged statement: on the\nnonvanishing open of a global section `s` of an invertible module, there is a section `t` of the\n`(-1)`-st tensor power whose canonical tensor-power pairing with `s` evaluates to `1`.\n\nThe pairing is the one the tagged statement names: form the elementary tensor of `s`, read in the\nfirst tensor power, with `t`; push it into the sheafified tensor product along the unit of\n`Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction`; apply the addition\nisomorphism of Stacks Tag 01CU in degrees `1` and `-1`; reindex along `1 + (-1) = 0`. The tagged\nstatement then compares the result with `1` directly, its zeroth tensor power being the unit of\n`SheafOfModules` on the nose; here the zeroth tensor power is the *sheafified* unit, so\n`AlgebraicGeometry.SheafOfModules.tensorPowZeroIso` is inserted, and only then is the comparison\nwith `1 : 𝒪_X(X_s)` a statement.",
+     "statement": "theorem exists_tensorInv_section_pairing_eq_one (s : L.sections) :\n    ∃ t : (tensorPow X.sheaf.obj (structureSheaf X.sheaf).property L (-1)).val.obj\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)),\n      (tensorPowZeroIso X.sheaf.obj (structureSheaf X.sheaf).property L).hom.val.app\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n        ((tensorPowReindexIso X.sheaf.obj (structureSheaf X.sheaf).property L\n            (show (1 : ℤ) + -1 = 0 by omega)).hom.val.app\n          (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n          ((tensorPowAddIsoSheaf X.sheaf.obj (structureSheaf X.sheaf).property L\n              1 (-1)).hom.val.app\n            (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n            (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction\n                ⟨X.sheaf.obj, Presheaf.isSheaf_of_isSheaf_comp _ (X.sheaf.obj)\n                  (forget₂ CommRingCat RingCat) ((structureSheaf X.sheaf).property)⟩).unit.app\n                ((PresheafOfModules.tensorObj (O := X.sheaf.obj) ((powPre L 1))\n                  ((powPre L (-1)))))).app\n              (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n              ((tensorPowOneIso X.sheaf.obj (structureSheaf X.sheaf).property L).inv.val.app\n                  (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))\n                  (s.eval (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)))\n                ⊗ₜ[X.presheaf.obj\n                    (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s))] t)))) =\n      (1 : X.presheaf.obj\n        (op (Stacks.NonvanishingTrivialize.nonvanishingOpen X L s)))",
      "sorry": false,
      "ega": [
       {
@@ -21428,7 +21424,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorPowerIso",
      "kind": "def",
-     "line": 168,
+     "line": 167,
      "private": false,
      "doc": "**Stacks Project, Tag 01I8 (tensor-power part).** The associated sheaf of a tensor power is\ncanonically the tensor power of the associated sheaf.",
      "statement": "noncomputable def tildeTensorPowerIso (R : CommRingCat.{u}) (M : ModuleCat.{u} R) :\n    (n : ℕ) → (tilde (ModuleCat.of R (TensorPower R n M)) ≅ specTildeTensorPower R M n)",
@@ -21442,7 +21438,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorPowerIso_hom_tprod",
      "kind": "theorem",
-     "line": 344,
+     "line": 332,
      "private": false,
      "doc": "**Stacks Project, Tag 01I8 (tensor-power part).** The canonical affine tensor-power\ncomparison carries a pure tensor to the tensor product of its associated global sections.",
      "statement": "theorem tildeTensorPowerIso_hom_tprod (R : CommRingCat.{u}) (M : ModuleCat.{u} R) (n : ℕ)\n    (a : Fin n → M) :\n    (tildeTensorPowerIso R M n).hom.val.app (specGlobalOpen R)\n        ((tilde.toOpen (ModuleCat.of R (TensorPower R n M)) ⊤).hom\n          (PiTensorProduct.tprod R a)) =\n      tildeTensorPowerSection R M n a",
@@ -21456,7 +21452,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorPowerIso_natural",
      "kind": "theorem",
-     "line": 554,
+     "line": 542,
      "private": false,
      "doc": "**Stacks Project, Tag 01I8 (tensor-power part).** Naturality of the affine tensor-power\ncomparison. The right-hand map is the degree-`n` component of a unital graded-algebra map\nextending `tilde.map f` on degree-one generators; the universal property of the tensor algebra\nmakes such a map unique, so quantifying over it is a statement about the canonical one.",
      "statement": "theorem tildeTensorPowerIso_natural\n    (hg : (specTildeAlgebras R M).tensorGenerator ≫ g.app 1 =\n      tilde.map f ≫ (specTildeAlgebras R N).tensorGenerator) (n : ℕ) :\n    tilde.map (ModuleCat.ofHom (PiTensorProduct.map (fun _ : Fin n => f.hom))) ≫\n        (tildeTensorPowerIso R N n).hom =\n      (tildeTensorPowerIso R M n).hom ≫ ((specTildeAlgebras R M).tensorPieceIso n).inv ≫\n        g.app (n : ℤ) ≫ ((specTildeAlgebras R N).tensorPieceIso n).hom",
@@ -21470,7 +21466,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorPowerIso_natural_piTensorProductMap",
      "kind": "theorem",
-     "line": 592,
+     "line": 580,
      "private": false,
      "doc": "**Stacks Project, Tag 01I8 (tensor-power part).** Naturality of the affine tensor-power\ncomparison against the canonical induced map, rather than against a hypothesised one: this is\n`tildeTensorPowerIso_natural` instantiated at `specTildeTensorAlgebraMap`, the unital\ngraded-algebra map the universal property of the tensor algebra provides. The left-hand map is\nthe associated sheaf of `PiTensorProduct.map`, the `n`-fold tensor power of `f`.",
      "statement": "theorem tildeTensorPowerIso_natural_piTensorProductMap (n : ℕ) :\n    tilde.map (ModuleCat.ofHom (PiTensorProduct.map (fun _ : Fin n => f.hom))) ≫\n        (tildeTensorPowerIso R N n).hom =\n      (tildeTensorPowerIso R M n).hom ≫ ((specTildeAlgebras R M).tensorPieceIso n).inv ≫\n        (specTildeTensorAlgebraMap R f).app (n : ℤ) ≫\n          ((specTildeAlgebras R N).tensorPieceIso n).hom",
@@ -21484,7 +21480,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorIso",
      "kind": "def",
-     "line": 403,
+     "line": 430,
      "private": false,
      "doc": "For modules `M` and `N` over `R`, there is a canonical isomorphism\n`(M ⊗[R] N)~ ≅ M~ ⊗_{𝒪_(Spec R)} N~`.",
      "statement": "noncomputable def tildeTensorIso (R : CommRingCat.{u})\n    (M N : ModuleCat.{u} R) :\n    tilde (M ⊗ N) ≅\n      specTensorSheaf R (tilde M) (tilde N)",
@@ -21503,10 +21499,10 @@
     {
      "name": "AlgebraicGeometry.tildeTensorIso_hom_tmul",
      "kind": "theorem",
-     "line": 413,
+     "line": 441,
      "private": false,
-     "doc": "The canonical isomorphism sends a pure tensor, under the\ntilde--global-sections adjunction, to the section obtained by tensoring the two\ncanonical global sections and applying the sheafification unit.",
-     "statement": "theorem tildeTensorIso_hom_tmul (R : CommRingCat.{u})\n    (M N : ModuleCat.{u} R) (m : M) (n : N) :\n    (((tilde.adjunction (R := R)).homEquiv (M ⊗ N)\n      (specTensorSheaf R (tilde M) (tilde N))) (tildeTensorIso R M N).hom).hom\n        (TensorProduct.tmul R m n) =\n      ((Stacks.SheafOfModules.TensorSheafification.toSheafify (Spec R).presheaf\n        (isSheaf_specStructureRingPresheaf R)\n        (specTensorPresheaf R (tilde M) (tilde N))).app (.op ⊤)).hom\n        (TensorProduct.tmul ((Spec R).presheaf.obj (.op ⊤))\n          ((tilde.toOpen M ⊤).hom m) ((tilde.toOpen N ⊤).hom n))",
+     "doc": "The canonical isomorphism sends a pure tensor, under the\ntilde--global-sections adjunction, to the section obtained by tensoring the two\ncanonical global sections and applying the unit of the sheafification inside the tensor\nproduct of sheaves.",
+     "statement": "theorem tildeTensorIso_hom_tmul (R : CommRingCat.{u})\n    (M N : ModuleCat.{u} R) (m : M) (n : N) :\n    (((tilde.adjunction (R := R)).homEquiv (M ⊗ N)\n      (specTensorSheaf R (tilde M) (tilde N))) (tildeTensorIso R M N).hom).hom\n        (TensorProduct.tmul R m n) =\n      (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction (specRingSheaf R)).unit.app\n        (specTensorPresheaf R (tilde M) (tilde N))).app (.op ⊤)).hom\n        (TensorProduct.tmul ((Spec R).presheaf.obj (.op ⊤))\n          ((tilde.toOpen M ⊤).hom m) ((tilde.toOpen N ⊤).hom n))",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -21517,10 +21513,10 @@
     {
      "name": "AlgebraicGeometry.tildeTensorIso_eq_of_hom_tmul",
      "kind": "theorem",
-     "line": 429,
+     "line": 456,
      "private": false,
      "doc": "The comparison is canonical: it is the *only* isomorphism `(M ⊗ N)~ ≅ M~ ⊗ N~` satisfying\nthe pure-tensor equation `tildeTensorIso_hom_tmul`, so `tildeTensorIso` does not depend on the\nchoice `Classical.choose` makes to produce it.",
-     "statement": "theorem tildeTensorIso_eq_of_hom_tmul (R : CommRingCat.{u})\n    (M N : ModuleCat.{u} R)\n    (e : tilde (M ⊗ N) ≅ specTensorSheaf R (tilde M) (tilde N))\n    (he : ∀ (m : M) (n : N),\n      (((tilde.adjunction (R := R)).homEquiv (M ⊗ N)\n        (specTensorSheaf R (tilde M) (tilde N))) e.hom).hom\n          (TensorProduct.tmul R m n) =\n        ((Stacks.SheafOfModules.TensorSheafification.toSheafify (Spec R).presheaf\n          (isSheaf_specStructureRingPresheaf R)\n          (specTensorPresheaf R (tilde M) (tilde N))).app (.op ⊤)).hom\n          (TensorProduct.tmul ((Spec R).presheaf.obj (.op ⊤))\n            ((tilde.toOpen M ⊤).hom m) ((tilde.toOpen N ⊤).hom n))) :\n    e = tildeTensorIso R M N",
+     "statement": "theorem tildeTensorIso_eq_of_hom_tmul (R : CommRingCat.{u})\n    (M N : ModuleCat.{u} R)\n    (e : tilde (M ⊗ N) ≅ specTensorSheaf R (tilde M) (tilde N))\n    (he : ∀ (m : M) (n : N),\n      (((tilde.adjunction (R := R)).homEquiv (M ⊗ N)\n        (specTensorSheaf R (tilde M) (tilde N))) e.hom).hom\n          (TensorProduct.tmul R m n) =\n        (((Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction (specRingSheaf R)).unit.app\n          (specTensorPresheaf R (tilde M) (tilde N))).app (.op ⊤)).hom\n          (TensorProduct.tmul ((Spec R).presheaf.obj (.op ⊤))\n            ((tilde.toOpen M ⊤).hom m) ((tilde.toOpen N ⊤).hom n))) :\n    e = tildeTensorIso R M N",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -21531,7 +21527,7 @@
     {
      "name": "AlgebraicGeometry.tildeTensorIso_natural",
      "kind": "theorem",
-     "line": 451,
+     "line": 477,
      "private": false,
      "doc": "The canonical tensor comparison is natural in both modules.",
      "statement": "theorem tildeTensorIso_natural (R : CommRingCat.{u})\n    {M M' N N' : ModuleCat.{u} R} (f : M ⟶ M') (g : N ⟶ N') :\n    tilde.map (f ⊗ₘ g) ≫ (tildeTensorIso R M' N').hom =\n      (tildeTensorIso R M N).hom ≫ tildeTensorSheafMap R f g",
@@ -21545,7 +21541,7 @@
     {
      "name": "Stacks.AssociatedSheaf.associatedSheafTensorIso",
      "kind": "def",
-     "line": 137,
+     "line": 139,
      "private": false,
      "doc": "**Construction (3) carries the tensor product of `R`-modules to the tensor product of\nsheaves of modules:** `ℱ_{M ⊗_R N} ≅ ℱ_M ⊗_{𝒪_X} ℱ_N`, on an arbitrary ringed space.\n\nThis is the clause of Tag 01I8 that the determinant argument of Tag 0FJN needs on the\ntrivialising open of Tag 08BL rather than on an affine scheme.",
      "statement": "def associatedSheafTensorIso (M N : ModuleCat.{u} R) :\n    associatedSheaf X α (M ⊗ N) ≅\n      ((Stacks.SheafOfModules.Tensor.sheafTensor\n        ⟨X.presheaf, Presheaf.isSheaf_of_isSheaf_comp _ X.presheaf\n          (forget₂ CommRingCat RingCat) (structureSheafRing X).property⟩).obj\n        (associatedSheaf X α M)).obj (associatedSheaf X α N)",
@@ -27561,7 +27557,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorPowerPresentation.lean",
-      "line": 569
+      "line": 563
      }
     },
     {
@@ -28998,7 +28994,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_standardOpen",
      "kind": "theorem",
-     "line": 729,
+     "line": 720,
      "private": false,
      "doc": "On a positive-degree standard open, the canonical morphism sends the tensor of two\nhomogeneous fractions to the fraction of their tensor over the product of the denominators.",
      "statement": "theorem associatedModuleSheafTensorMap_standardOpen\n    {f : S} {d : ℕ} (hf : f ∈ 𝒮 d) (hd : 0 < d)\n    (p q : ℕ) (m : M) (hm : m ∈ 𝒨 (p • (d : ℤ)))\n    (n : N) (hn : n ∈ 𝒩 (q • (d : ℤ))) :\n    letI := tensorGrading_decomposition (S := S) 𝒮 𝒨 𝒩\n    letI := tensorGrading_gradedSMul (S := S) 𝒮 𝒨 𝒩\n    let U := ProjectiveSpectrum.basicOpen 𝒮 f\n    let F := ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 𝒨\n    let G := ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 𝒩\n    ((associatedModuleSheafTensorMap 𝒮 𝒨 𝒩).val.app (op U))\n      (Stacks.SheafOfModules.TensorStalkRingedSpace.toTensorSheafSection\n        (_root_.AlgebraicGeometry.Proj 𝒮).toRingedSpace F G (op U)\n        (((ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮 𝒨 hf hd).symm\n          (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 𝒨 hf p m hm)) ⊗ₜ[_]\n         ((ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮 𝒩 hf hd).symm\n          (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 𝒩 hf q n hn)))) =\n      (ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮\n        (tensorGrading (S := S) 𝒨 𝒩) hf hd).symm\n        (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 (tensorGrading (S := S) 𝒨 𝒩)\n          hf (p + q) (m ⊗ₜ[S] n)\n          (by\n            apply AddSubgroup.subset_closure\n            refine ⟨p • (d : ℤ), q • (d : ℤ), ?_, m, hm, n, hn, rfl⟩\n            simp [add_mul]))",
@@ -29017,7 +29013,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_stalk",
      "kind": "theorem",
-     "line": 792,
+     "line": 783,
      "private": false,
      "doc": "On the stalk at a homogeneous prime of a positive-degree standard open, the canonical\nmorphism carries the tensor of the germs of two homogeneous fractions to the germ of the\nfraction of their tensor.",
      "statement": "theorem associatedModuleSheafTensorMap_stalk\n    {f : S} {d : ℕ} (hf : f ∈ 𝒮 d) (hd : 0 < d)\n    (x : ProjectiveSpectrum.top 𝒮)\n    (hx : x ∈ ProjectiveSpectrum.basicOpen 𝒮 f)\n    (p q : ℕ) (m : M) (hm : m ∈ 𝒨 (p • (d : ℤ)))\n    (n : N) (hn : n ∈ 𝒩 (q • (d : ℤ))) :\n    letI := tensorGrading_decomposition (S := S) 𝒮 𝒨 𝒩\n    letI := tensorGrading_gradedSMul (S := S) 𝒮 𝒨 𝒩\n    let X := (_root_.AlgebraicGeometry.Proj 𝒮).toRingedSpace\n    let U := ProjectiveSpectrum.basicOpen 𝒮 f\n    let F := ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 𝒨\n    let G := ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 𝒩\n    let T := ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 (tensorGrading (S := S) 𝒨 𝒩)\n    letI := Stacks.SheafOfModules.TensorStalkRingedSpace.stalkModule X F.val x\n    letI := Stacks.SheafOfModules.TensorStalkRingedSpace.stalkModule X G.val x\n    letI := Stacks.SheafOfModules.TensorStalkRingedSpace.stalkModule X\n      ((((Stacks.SheafOfModules.Tensor.sheafTensor (X).sheaf).obj (F)).obj (G))).val x\n    letI := Stacks.SheafOfModules.TensorStalkRingedSpace.stalkModule X T.val x\n    Stacks.SheafOfModules.TensorStalkRingedSpace.stalkMapL X\n      ((((Stacks.SheafOfModules.Tensor.sheafTensor (X).sheaf).obj (F)).obj (G))).val T.val\n      (associatedModuleSheafTensorMap 𝒮 𝒨 𝒩).val x\n      ((Stacks.SheafOfModules.TensorStalkRingedSpace.tensorStalkIso X x F G).symm\n        ((Stacks.SheafOfModules.TensorStalkRingedSpace.grpGerm X F.val x U hx\n            ((ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮 𝒨 hf hd).symm\n              (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 𝒨 hf p m hm)))\n          ⊗ₜ[Stacks.SheafOfModules.TensorStalkRingedSpace.ringStalk X x]\n         (Stacks.SheafOfModules.TensorStalkRingedSpace.grpGerm X G.val x U hx\n            ((ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮 𝒩 hf hd).symm\n              (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 𝒩 hf q n hn))))) =\n      Stacks.SheafOfModules.TensorStalkRingedSpace.grpGerm X T.val x U hx\n        ((ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv 𝒮\n          (tensorGrading (S := S) 𝒨 𝒩) hf hd).symm\n          (ProjectiveSpectrum.Proj.degreeZeroFraction 𝒮 (tensorGrading (S := S) 𝒨 𝒩)\n            hf (p + q) (m ⊗ₜ[S] n)\n            (by\n              apply AddSubgroup.subset_closure\n              refine ⟨p • (d : ℤ), q • (d : ℤ), ?_, m, hm, n, hn, rfl⟩\n              simp [add_mul])))",
@@ -29374,7 +29370,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ModuleTwistIso.moduleTwistMap_isIso_on_whereInvertible",
      "kind": "theorem",
-     "line": 391,
+     "line": 420,
      "private": false,
      "doc": "On the largest open on which the `d`-divisible twists are invertible and their multiplication\nmaps are isomorphisms, the canonical comparison from the tensor product of an associated sheaf\nwith such a twist to the associated sheaf of the shifted module is an isomorphism, for every\ngraded module and every integral multiple of `d`. The hypothesis `0 < d` is not used.",
      "statement": "theorem moduleTwistMap_isIso_on_whereInvertible (d : ℕ) (_hd : 0 < d) (n : ℤ) :\n    IsIso ((Scheme.Modules.restrictFunctor (whereInvertible 𝒮 d).ι).map\n      (moduleTwistMap 𝒮 𝒨 ((d : ℤ) * n)))",
@@ -29434,7 +29430,7 @@
     {
      "name": "Stacks.AlgebraicGeometry.ProjMapCard.projMapData_preserves_products",
      "kind": "theorem",
-     "line": 345,
+     "line": 337,
      "private": false,
      "doc": "**Tag 01MY, graded-algebra multiplication, on the canonical bundle.** The tagged\nstatement's spelling of `twistMap_comp_pullbackTwistMultiplication`: the morphism and the twist\nmaps are the fields of `Stacks.AlgebraicGeometry.ProjTwistCompare.projMapData`.",
      "statement": "public theorem projMapData_preserves_products (ψ : 𝒜 →+*ᵍ ℬ)\n    (n m : ℤ) :\n    pullbackTwistMultiplication 𝒜 (projMapData 𝒜 ℬ ψ).hom n m ≫\n      (projMapData 𝒜 ℬ ψ).twistMap (n + m) =\n    ((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u}\n      ⟨(((mapDomain 𝒜 ℬ ψ).toScheme.toRingedSpace)).presheaf,\n      (((mapDomain 𝒜 ℬ ψ).toScheme.toRingedSpace)).IsSheaf⟩)).map\n      ((((projMapData 𝒜 ℬ ψ).twistMap n), ((projMapData 𝒜 ℬ ψ).twistMap m)) : (_, _) ⟶ (_, _))) ≫\n      pullbackTwistMultiplication ℬ (mapDomain 𝒜 ℬ ψ).ι n m",
@@ -33995,7 +33991,7 @@
     {
      "name": "AlgebraicGeometry.isAmple_iff_tensorPower_isAmple",
      "kind": "theorem",
-     "line": 589,
+     "line": 586,
      "private": false,
      "doc": "An invertible sheaf is ample if and only if any of its positive tensor\npowers is ample.",
      "statement": "theorem isAmple_iff_tensorPower_isAmple (X : Scheme.{u}) (L : X.Modules)\n    [SheafOfModules.IsInvertible X.toRingedSpace.presheaf\n      (structureSheafRing X.toRingedSpace).property L]\n    (n : ℕ) (hn : 1 ≤ n) :\n    Scheme.Modules.IsAmple X L ↔\n    Scheme.Modules.IsAmple X\n        (Invertible.tensorPower X.toRingedSpace.presheaf\n          (structureSheafRing X.toRingedSpace).property L (n : ℤ))",
@@ -35103,7 +35099,7 @@
     {
      "name": "Stacks.SectionRingVeroneseChart.isIso_twistComparison",
      "kind": "theorem",
-     "line": 270,
+     "line": 271,
      "private": false,
      "doc": "**The second claim of Stacks Tag 01QI: the maps `f^*𝒪_Y(n) → 𝓛^{⊗ n}` are all\nisomorphisms.**",
      "statement": "theorem isIso_twistComparison (hL : Stacks.Ample.IsAmple X L) (n : ℤ) :\n    IsIso (twistComparison L hL n)",
@@ -45615,7 +45611,7 @@
     {
      "name": "Stacks.SheafOfModules.homLocalizationMap_injective",
      "kind": "theorem",
-     "line": 281,
+     "line": 277,
      "private": false,
      "doc": "**[Stacks, Tag 01XQ] part (1).** Let `X` be a quasi-compact scheme, let `L` be an invertible\n`𝒪_X`-module, let `s` be a global section of `L` and let `ℱ`, `𝒢` be quasi-coherent\n`𝒪_X`-modules with `ℱ` of finite type. The comparison map of Tag 0B5M\n`(⨁_n Hom(ℱ, 𝒢 ⊗ L^{⊗ n}))_{(s)} ⟶ Hom_{𝒪_{X_s}}(ℱ|_{X_s}, 𝒢|_{X_s})` is injective.",
      "statement": "theorem homLocalizationMap_injective (X : Scheme.{u}) [CompactSpace X]\n    (L : SheafOfModules.{u} (structureSheafRing X.toRingedSpace))\n    [IsInvertible X.toRingedSpace.presheaf\n      (structureSheafRing X.toRingedSpace).property L]\n    (F G : X.Modules) [F.IsQuasicoherent] [G.IsQuasicoherent] [F.IsFiniteType]\n    (s : L.sections) :\n    Function.Injective (homLocalizationMap X L F G s)",
@@ -46576,7 +46572,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.tensorSheaf_isCoherent",
      "kind": "theorem",
-     "line": 556,
+     "line": 526,
      "private": false,
      "doc": "The tensor product of two coherent sheaves of modules is coherent.",
      "statement": "theorem tensorSheaf_isCoherent (X : AlgebraicGeometry.RingedSpace.{u, u})\n    (F G : _root_.SheafOfModules.{u}\n      (structureSheafRing X))\n    [_root_.SheafOfModules.IsCoherent F] [_root_.SheafOfModules.IsCoherent G] :\n    _root_.SheafOfModules.IsCoherent ((((Stacks.SheafOfModules.Tensor.sheafTensor ⟨((X)).presheaf,\n        ((X)).IsSheaf⟩).obj (F)).obj (G)))",

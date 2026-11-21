@@ -7,7 +7,7 @@ proof: formalized
 
 # Diagonal Modular Equations
 
-`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic`, in [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean), by Valerii Huhnin.
 
 > GS-independent solution-basis interface for systems
 > `p * matrix = 0 mod diag(moduli)`.
@@ -46,7 +46,7 @@ proof: formalized
 >     Villard, G., *Faster algorithms for multivariate interpolation with
 >     multiplicities and simultaneous polynomial approximations*][CJNSV15]
 
-`CompPoly.PolynomialMatrix.Approximant.ModularEquation` (structure, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L69))
+`CompPoly.PolynomialMatrix.Approximant.ModularEquation` (structure, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L69))
 
 > Diagonal modular-equation data.  Rows of `matrix` are solution coordinates;
 > columns are reduced independently by `moduli`.
@@ -57,7 +57,7 @@ structure ModularEquation (F : Type*) [Zero F] where
   matrix : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.ModularEquation.solutionWidth` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L74))
+`CompPoly.PolynomialMatrix.Approximant.ModularEquation.solutionWidth` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L74))
 
 > Number of principal solution coordinates.
 
@@ -65,7 +65,7 @@ structure ModularEquation (F : Type*) [Zero F] where
 def ModularEquation.solutionWidth (equation : ModularEquation F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.ModularEquation.modularWidth` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L78))
+`CompPoly.PolynomialMatrix.Approximant.ModularEquation.modularWidth` (definition, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L78))
 
 > Number of modular columns.
 
@@ -73,7 +73,7 @@ def ModularEquation.solutionWidth (equation : ModularEquation F) : Nat
 def ModularEquation.modularWidth (equation : ModularEquation F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.negativeDiagonalRows` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L82))
+`CompPoly.PolynomialMatrix.Approximant.negativeDiagonalRows` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L82))
 
 > Diagonal rows `-diag(moduli)` for the exact-nullspace lift.
 
@@ -81,7 +81,7 @@ def ModularEquation.modularWidth (equation : ModularEquation F) : Nat
 def negativeDiagonalRows (moduli : Array (CPolynomial F)) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.exactNullspaceLift` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L87))
+`CompPoly.PolynomialMatrix.Approximant.exactNullspaceLift` (definition, [line 87](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L87))
 
 > Exact-nullspace lift `[F; -diag(M)]`.
 
@@ -89,7 +89,7 @@ def negativeDiagonalRows (moduli : Array (CPolynomial F)) : PolynomialMatrix F
 def exactNullspaceLift (equation : ModularEquation F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.principalSolutionRows` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L92))
+`CompPoly.PolynomialMatrix.Approximant.principalSolutionRows` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L92))
 
 > Principal solution rows: keep the first `solutionWidth` entries of each
 > expanded nullspace row.
@@ -99,7 +99,7 @@ def principalSolutionRows (solutionWidth : Nat) (basis : PolynomialMatrix F) :
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.exactNullspaceProblem` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L99))
+`CompPoly.PolynomialMatrix.Approximant.exactNullspaceProblem` (definition, [line 99](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L99))
 
 > Build the X-adic exact-nullspace problem used by the modular-equation
 > solver.
@@ -108,7 +108,7 @@ def principalSolutionRows (solutionWidth : Nat) (basis : PolynomialMatrix F) :
 def exactNullspaceProblem (equation : ModularEquation F) : XAdicProblem F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.chunkedLiftOrders` (definition, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L110))
+`CompPoly.PolynomialMatrix.Approximant.chunkedLiftOrders` (definition, [line 110](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L110))
 
 > Entry-aware X-adic orders for a chunked exact-nullspace lift.  A balanced
 > in-window solution has chunk coefficients of degree below `delta`, and the
@@ -123,7 +123,7 @@ def chunkedLiftOrders (delta modularWidth : Nat)
     (chunkedPrincipal : PolynomialMatrix F) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.chunkedPrincipalRows` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L126))
+`CompPoly.PolynomialMatrix.Approximant.chunkedPrincipalRows` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L126))
 
 > Principal rows for the chunked exact-nullspace lift.  Chunk row
 > `(coord, offset)` stores `X^offset` times the corresponding original relation
@@ -137,7 +137,7 @@ def chunkedPrincipalRows (modCtx : CPolynomial.ModContext F)
     (plan : PartialLinearizationPlan) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceLift` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L137))
+`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceLift` (definition, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L137))
 
 > Chunked exact-nullspace lift for a partial-linearization plan.
 
@@ -147,7 +147,7 @@ def chunkedExactNullspaceLift (modCtx : CPolynomial.ModContext F)
     (plan : PartialLinearizationPlan) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceProblem` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L144))
+`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceProblem` (definition, [line 144](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L144))
 
 > Build the X-adic exact-nullspace problem after principal-coordinate chunk
 > expansion, with generic partial-linearization orders.
@@ -158,7 +158,7 @@ def chunkedExactNullspaceProblem (modCtx : CPolynomial.ModContext F)
     (plan : PartialLinearizationPlan) : XAdicProblem F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceProblemForShift` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L153))
+`CompPoly.PolynomialMatrix.Approximant.chunkedExactNullspaceProblemForShift` (definition, [line 153](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L153))
 
 > Build the chunked X-adic exact-nullspace problem with entry-aware orders.
 > The `shift` argument is kept for call-site symmetry; orders depend only on the
@@ -170,7 +170,7 @@ def chunkedExactNullspaceProblemForShift (modCtx : CPolynomial.ModContext F)
     (plan : PartialLinearizationPlan) (_shift : Array Nat) : XAdicProblem F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile` (structure, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L163))
+`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile` (structure, [line 163](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L163))
 
 > Shifted pivot-degree profile discovered for the principal solution
 > coordinates.  `none` means that the discovery pass did not see a row pivoting in
@@ -182,7 +182,7 @@ structure PivotDegreeProfile where
 deriving Repr, BEq
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.emptyPivotDegreeProfile` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L168))
+`CompPoly.PolynomialMatrix.Approximant.emptyPivotDegreeProfile` (definition, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L168))
 
 > Empty shifted pivot-degree profile for a fixed principal width.
 
@@ -190,7 +190,7 @@ deriving Repr, BEq
 def emptyPivotDegreeProfile (solutionWidth : Nat) : PivotDegreeProfile
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.insert` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L173))
+`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.insert` (definition, [line 173](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L173))
 
 > Insert a discovered pivot degree, keeping the smallest degree for each
 > principal leading position.
@@ -200,7 +200,7 @@ def PivotDegreeProfile.insert (profile : PivotDegreeProfile)
     (position degree : Nat) : PivotDegreeProfile
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.coversAll` (definition, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L183))
+`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.coversAll` (definition, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L183))
 
 > Whether the profile has discovered a pivot degree for every coordinate.
 
@@ -208,7 +208,7 @@ def PivotDegreeProfile.insert (profile : PivotDegreeProfile)
 def PivotDegreeProfile.coversAll (profile : PivotDegreeProfile) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.discoveredAny` (definition, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L187))
+`CompPoly.PolynomialMatrix.Approximant.PivotDegreeProfile.discoveredAny` (definition, [line 187](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L187))
 
 > Whether the profile has discovered a pivot degree for any coordinate.
 
@@ -216,7 +216,7 @@ def PivotDegreeProfile.coversAll (profile : PivotDegreeProfile) : Bool
 def PivotDegreeProfile.discoveredAny (profile : PivotDegreeProfile) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotDegreeProfileMergeRows` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L191))
+`CompPoly.PolynomialMatrix.Approximant.pivotDegreeProfileMergeRows` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L191))
 
 > Merge the principal pivot degrees observed in `rows` into a profile.
 
@@ -226,7 +226,7 @@ def pivotDegreeProfileMergeRows (profile : PivotDegreeProfile)
     PivotDegreeProfile
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotDegreeProfileFromRows` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L207))
+`CompPoly.PolynomialMatrix.Approximant.pivotDegreeProfileFromRows` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L207))
 
 > Discover principal pivot degrees from compressed candidate rows.
 
@@ -236,7 +236,7 @@ def pivotDegreeProfileFromRows (solutionWidth : Nat)
     PivotDegreeProfile
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.solutionBasisWithPlanViaPMBasis` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L214))
+`CompPoly.PolynomialMatrix.Approximant.solutionBasisWithPlanViaPMBasis` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L214))
 
 > Solve a diagonal modular equation with a supplied partial-linearization plan.
 
@@ -247,7 +247,7 @@ def solutionBasisWithPlanViaPMBasis (modCtx : CPolynomial.ModContext F)
     (plan : PartialLinearizationPlan) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.solutionBasisViaPMBasis` (definition, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L226))
+`CompPoly.PolynomialMatrix.Approximant.solutionBasisViaPMBasis` (definition, [line 226](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L226))
 
 > Solve once with the conservative shift-spread window.  This is a debug
 > entry point only: its chunk count can grow quadratically in the module width
@@ -260,7 +260,7 @@ def solutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (equation : ModularEquation F) (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.knownDegreeSolutionBasisViaPMBasis` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L236))
+`CompPoly.PolynomialMatrix.Approximant.knownDegreeSolutionBasisViaPMBasis` (definition, [line 236](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L236))
 
 > Known-degree reconstruction pass: build the partial-linearization plan from
 > the discovered pivot degrees and solve the X-adic problem directly for that
@@ -273,7 +273,7 @@ def knownDegreeSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (profile : PivotDegreeProfile) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.unchunkedSolutionBasisViaPMBasis` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L247))
+`CompPoly.PolynomialMatrix.Approximant.unchunkedSolutionBasisViaPMBasis` (definition, [line 247](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L247))
 
 > Solve once without principal-coordinate chunking.  This is an explicit
 > tiny-leaf/debug entry point; the default modular-equation context does not use
@@ -285,7 +285,7 @@ def unchunkedSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (equation : ModularEquation F) (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.filterModularSolutionRows` (definition, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L256))
+`CompPoly.PolynomialMatrix.Approximant.filterModularSolutionRows` (definition, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L256))
 
 > Keep only rows that satisfy the original diagonal modular equation after
 > compression from the exact-nullspace / X-adic bridge.
@@ -297,7 +297,7 @@ def filterModularSolutionRows
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.modularResidualRows` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L267))
+`CompPoly.PolynomialMatrix.Approximant.modularResidualRows` (definition, [line 267](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L267))
 
 > Residual rows `B * F mod diag(M)` for candidate solution rows `B`.
 
@@ -308,7 +308,7 @@ def modularResidualRows
     PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.candidateRowShift` (definition, [line 277](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L277))
+`CompPoly.PolynomialMatrix.Approximant.candidateRowShift` (definition, [line 277](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L277))
 
 > Shift used for polynomial combinations of compressed candidate rows.  The
 > degree of a coefficient multiplying row `i` is measured relative to the shifted
@@ -318,7 +318,7 @@ def modularResidualRows
 def candidateRowShift (rows : PolynomialMatrix F) (shift : Array Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.pivotWindowCap` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L284))
+`CompPoly.PolynomialMatrix.Approximant.pivotWindowCap` (definition, [line 284](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L284))
 
 > Upper bound for the adaptive search window above each coordinate's shift.
 > The row `e_j * lcm(moduli)` is always a solution and `deg lcm(moduli)` is at
@@ -329,7 +329,7 @@ def candidateRowShift (rows : PolynomialMatrix F) (shift : Array Nat) : Array Na
 def pivotWindowCap (equation : ModularEquation F) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.fullWindowDegreeBound` (definition, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L293))
+`CompPoly.PolynomialMatrix.Approximant.fullWindowDegreeBound` (definition, [line 293](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L293))
 
 > Coefficient-degree bound for the full-window fallback problem.  Any row of
 > the lifted module whose shifted degree does not exceed the shifted degree of an
@@ -343,7 +343,7 @@ def fullWindowDegreeBound (equation : ModularEquation F)
     (shift : Array Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.reducedExactNullspaceLift` (definition, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L300))
+`CompPoly.PolynomialMatrix.Approximant.reducedExactNullspaceLift` (definition, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L300))
 
 > Exact-nullspace lift with the relation entries reduced columnwise by the
 > moduli, so every principal entry of column `b` has degree below `deg M_b` and
@@ -354,7 +354,7 @@ def reducedExactNullspaceLift (modCtx : CPolynomial.ModContext F)
     (equation : ModularEquation F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.fullWindowExactNullspaceProblem` (definition, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L315))
+`CompPoly.PolynomialMatrix.Approximant.fullWindowExactNullspaceProblem` (definition, [line 315](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L315))
 
 > Unchunked exact-nullspace problem with orders certifying exactness across
 > the whole pivot window: a lifted row with principal coefficient degrees at most
@@ -369,7 +369,7 @@ def fullWindowExactNullspaceProblem (modCtx : CPolynomial.ModContext F)
     (equation : ModularEquation F) (bound : Nat) : XAdicProblem F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.fullWindowSolutionBasisViaPMBasis` (definition, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L326))
+`CompPoly.PolynomialMatrix.Approximant.fullWindowSolutionBasisViaPMBasis` (definition, [line 326](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L326))
 
 > Certified full-window solve: compute a minimal basis of the unchunked
 > exact-nullspace problem whose orders cover the entire pivot window, and keep
@@ -384,7 +384,7 @@ def fullWindowSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.verificationWindowBound` (definition, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L341))
+`CompPoly.PolynomialMatrix.Approximant.verificationWindowBound` (definition, [line 341](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L341))
 
 > Certified verification window sized by the best exact degree already in
 > hand.  Solutions at or above the best adaptive degree are dominated by the
@@ -397,7 +397,7 @@ def verificationWindowBound (equation : ModularEquation F)
     (shift : Array Nat) (bestDegree? : Option Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.windowedSolutionBasisViaPMBasis` (definition, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L352))
+`CompPoly.PolynomialMatrix.Approximant.windowedSolutionBasisViaPMBasis` (definition, [line 352](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L352))
 
 > Certified solve over an explicit coefficient-degree window: an unchunked
 > exact-nullspace problem whose orders certify exactness for every row dominated
@@ -411,7 +411,7 @@ def windowedSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (shift : Array Nat) (bound : Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.verificationSolutionBasisViaPMBasis` (definition, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L362))
+`CompPoly.PolynomialMatrix.Approximant.verificationSolutionBasisViaPMBasis` (definition, [line 362](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L362))
 
 > Certified verification solve over the best-degree-shrunk window sized by
 > `verificationWindowBound`.
@@ -422,7 +422,7 @@ def verificationSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
     (shift : Array Nat) (bestDegree? : Option Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.degreeGatePassed` (definition, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L373))
+`CompPoly.PolynomialMatrix.Approximant.degreeGatePassed` (definition, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L373))
 
 > Whether a caller-supplied degree bound certifies the adaptive result: the
 > gate passes when the best exact degree already found does not exceed the
@@ -434,7 +434,7 @@ def verificationSolutionBasisViaPMBasis (modCtx : CPolynomial.ModContext F)
 def degreeGatePassed (degreeBound? bestDegree? : Option Nat) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.gatedWindowBound` (definition, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L382))
+`CompPoly.PolynomialMatrix.Approximant.gatedWindowBound` (definition, [line 382](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L382))
 
 > Verification window for a gated solve.  With a caller-supplied degree
 > bound the window only has to cover solutions within the bound, so it is
@@ -446,7 +446,7 @@ def gatedWindowBound (equation : ModularEquation F)
     (shift : Array Nat) (degreeBound? bestDegree? : Option Nat) : Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.degreeGatePassed_eq_true_iff` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L389))
+`CompPoly.PolynomialMatrix.Approximant.degreeGatePassed_eq_true_iff` (theorem, [line 389](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L389))
 
 > The degree gate passes exactly for a bound certified by an adaptive best.
 
@@ -457,7 +457,7 @@ theorem degreeGatePassed_eq_true_iff {degreeBound? bestDegree? : Option Nat} :
         best ≤ bound
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveProfileDegrees` (definition, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L403))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveProfileDegrees` (definition, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L403))
 
 > Pivot-degree assignment for one adaptive round: discovered coordinates use
 > their observed pivot degrees, undiscovered coordinates use the current
@@ -468,7 +468,7 @@ def adaptiveProfileDegrees (shift : Array Nat) (profile : PivotDegreeProfile)
     (budgets : Array Nat) (solutionWidth : Nat) : Array (Option Nat)
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.leastSolutionRowDegree?` (definition, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L412))
+`CompPoly.PolynomialMatrix.Approximant.leastSolutionRowDegree?` (definition, [line 412](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L412))
 
 > Least shifted degree among accumulated solution rows.
 
@@ -477,7 +477,7 @@ def leastSolutionRowDegree? (rows : PolynomialMatrix F) (shift : Array Nat) :
     Option Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.coordinateSettled` (definition, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L424))
+`CompPoly.PolynomialMatrix.Approximant.coordinateSettled` (definition, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L424))
 
 > A coordinate needs no wider search window once its pivot degree is
 > discovered, its window has reached the cap, or its window already covers every
@@ -493,7 +493,7 @@ def coordinateSettled (profile : PivotDegreeProfile) (budgets : Array Nat)
     (cap : Nat) (bestDegree? : Option Nat) (shift : Array Nat) (j : Nat) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.allCoordinatesSettled` (definition, [line 433](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L433))
+`CompPoly.PolynomialMatrix.Approximant.allCoordinatesSettled` (definition, [line 433](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L433))
 
 > Whether every principal coordinate is settled for the current windows.
 
@@ -503,7 +503,7 @@ def allCoordinatesSettled (profile : PivotDegreeProfile) (budgets : Array Nat)
     (solutionWidth : Nat) : Bool
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.escalateUnsettledBudgets` (definition, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L442))
+`CompPoly.PolynomialMatrix.Approximant.escalateUnsettledBudgets` (definition, [line 442](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L442))
 
 > Double the escalation windows of coordinates that are not settled, clamped
 > at the window cap.  Settled coordinates keep their window so the total window
@@ -515,7 +515,7 @@ def escalateUnsettledBudgets (profile : PivotDegreeProfile)
     (shift : Array Nat) : Array Nat
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.AdaptiveSolveState` (structure, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L455))
+`CompPoly.PolynomialMatrix.Approximant.AdaptiveSolveState` (structure, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L455))
 
 > State carried between adaptive solution-basis rounds.  `filtered`
 > accumulates the exact solution rows found across all rounds.
@@ -528,7 +528,7 @@ structure AdaptiveSolveState (F : Type*) [Zero F] where
   raw : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionRound` (definition, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L464))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionRound` (definition, [line 464](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L464))
 
 > One adaptive round: solve the chunked exact-nullspace problem for the
 > current window assignment, keep the rows that satisfy the original diagonal
@@ -541,7 +541,7 @@ def adaptiveSolutionRound
     (shift : Array Nat) (state : AdaptiveSolveState F) : AdaptiveSolveState F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionLoop` (definition, [line 484](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L484))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionLoop` (definition, [line 484](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L484))
 
 > Fuel-bounded adaptive window-escalation loop.  Rounds stop as soon as the
 > caller's degree bound is already met by the best exact row found, or every
@@ -556,7 +556,7 @@ def adaptiveSolutionLoop
     Nat → AdaptiveSolveState F → AdaptiveSolveState F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionBasis` (definition, [line 522](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L522))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionBasis` (definition, [line 522](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L522))
 
 > Run the adaptive degree-first solver: discover the shifted pivot-degree
 > profile with geometrically growing per-coordinate windows, where the final
@@ -571,7 +571,7 @@ def adaptiveSolutionBasis
     (shift : Array Nat) (degreeBound? : Option Nat) : AdaptiveSolveState F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.discoverPivotDegreeProfileViaPMBasis` (definition, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L536))
+`CompPoly.PolynomialMatrix.Approximant.discoverPivotDegreeProfileViaPMBasis` (definition, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L536))
 
 > Discover the shifted pivot-degree profile through the adaptive solver.
 
@@ -582,7 +582,7 @@ def discoverPivotDegreeProfileViaPMBasis
     (shift : Array Nat) : PivotDegreeProfile
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.repairSolutionRowsViaPMBasis` (definition, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L552))
+`CompPoly.PolynomialMatrix.Approximant.repairSolutionRowsViaPMBasis` (definition, [line 552](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L552))
 
 > One residual reconstruction pass.  If compressed rows `B` are not themselves
 > exact modular solutions, solve for polynomial combinations `C` such that
@@ -602,7 +602,7 @@ def repairSolutionRowsViaPMBasis
     (shift : Array Nat) (rows : PolynomialMatrix F) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.debugUnchunkedFilteredSolutionBasisViaPMBasis` (definition, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L569))
+`CompPoly.PolynomialMatrix.Approximant.debugUnchunkedFilteredSolutionBasisViaPMBasis` (definition, [line 569](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L569))
 
 > Debug helper for tiny problems that intentionally disables
 > principal-coordinate chunking, keeping an unchunked solve available for
@@ -616,7 +616,7 @@ def debugUnchunkedFilteredSolutionBasisViaPMBasis
     (shift : Array Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.knownDegreeFilteredSolutionBasisViaPMBasis` (definition, [line 580](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L580))
+`CompPoly.PolynomialMatrix.Approximant.knownDegreeFilteredSolutionBasisViaPMBasis` (definition, [line 580](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L580))
 
 > Known-degree reconstruction followed by the original diagonal-equation
 > guard.  The reconstruction plan is built from discovered shifted pivot degrees,
@@ -630,7 +630,7 @@ def knownDegreeFilteredSolutionBasisViaPMBasis
     (shift : Array Nat) (profile : PivotDegreeProfile) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.filteredSolutionBasisViaPMBasis` (definition, [line 612](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L612))
+`CompPoly.PolynomialMatrix.Approximant.filteredSolutionBasisViaPMBasis` (definition, [line 612](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L612))
 
 > Solver exposed through the modular-equation context: run the adaptive
 > degree-first window-escalation loop, whose final round is the known-degree
@@ -660,7 +660,7 @@ def filteredSolutionBasisViaPMBasis
     (shift : Array Nat) (degreeBound? : Option Nat) : PolynomialMatrix F
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.rowSatisfiesModularBool_of_mem_filterModularSolutionRows` (theorem, [line 632](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L632))
+`CompPoly.PolynomialMatrix.Approximant.rowSatisfiesModularBool_of_mem_filterModularSolutionRows` (theorem, [line 632](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L632))
 
 > Rows kept by the modular solution filter satisfy the modular predicate.
 
@@ -673,7 +673,7 @@ theorem rowSatisfiesModularBool_of_mem_filterModularSolutionRows
     rowSatisfiesModularBool mulCtx modCtx row equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionRound_filtered_sound` (theorem, [line 646](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L646))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionRound_filtered_sound` (theorem, [line 646](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L646))
 
 > One adaptive round preserves modular soundness of the accumulated filtered
 > rows.
@@ -690,7 +690,7 @@ theorem adaptiveSolutionRound_filtered_sound
       rowSatisfiesModularBool mulCtx modCtx row equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionLoop_filtered_sound` (theorem, [line 664](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L664))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionLoop_filtered_sound` (theorem, [line 664](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L664))
 
 > The adaptive escalation loop preserves modular soundness of the accumulated
 > filtered rows.
@@ -709,7 +709,7 @@ theorem adaptiveSolutionLoop_filtered_sound
         rowSatisfiesModularBool mulCtx modCtx row equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionBasis_filtered_sound` (theorem, [line 699](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L699))
+`CompPoly.PolynomialMatrix.Approximant.adaptiveSolutionBasis_filtered_sound` (theorem, [line 699](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L699))
 
 > Rows accumulated by the adaptive solver satisfy the modular predicate.
 
@@ -724,7 +724,7 @@ theorem adaptiveSolutionBasis_filtered_sound
       rowSatisfiesModularBool mulCtx modCtx row equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.filteredSolutionBasisViaPMBasis_sound` (theorem, [line 713](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L713))
+`CompPoly.PolynomialMatrix.Approximant.filteredSolutionBasisViaPMBasis_sound` (theorem, [line 713](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L713))
 
 > Every row returned by the filtered PM-basis modular solver satisfies the
 > original diagonal modular equation.
@@ -740,7 +740,7 @@ theorem filteredSolutionBasisViaPMBasis_sound
     rowSatisfiesModularBool mulCtx modCtx row equation.matrix equation.moduli = true
 ```
 
-`CompPoly.PolynomialMatrix.Approximant.ModularSolutionBasisContext` (structure, [line 742](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L742))
+`CompPoly.PolynomialMatrix.Approximant.ModularSolutionBasisContext` (structure, [line 742](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean#L742))
 
 > Modular-equation solution-basis context with theorem fields.
 >
@@ -794,5 +794,5 @@ structure ModularSolutionBasisContext (F : Type*) [Field F] [BEq F] [LawfulBEq F
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean)
+- [CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/PolynomialMatrix/Approximant/ModularEquation/Basic.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.LinearAlgebra.PolynomialMatrix.Approximant.ModularEquation.Basic.json)

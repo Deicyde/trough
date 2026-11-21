@@ -8,7 +8,7 @@ proof: formalized
 
 # Integrating interactions over local regions
 
-The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Sum`, [Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean): 12 declarations, 12 with a docstring.
+The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Sum`, [Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean): 12 declarations, 12 with a docstring.
 
 > An interaction defines a local observable by integrating its terms over a region.
 
@@ -34,7 +34,7 @@ The module `Physlib.ProbabilisticTheory.LocalNet.Interaction.Sum`, [Physlib/Prob
 
 ## iv. References
 
-**`ProbabilisticTheory.Interaction.norm_termIn_le`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L63).
+**`ProbabilisticTheory.Interaction.norm_termIn_le`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L58).
 
 > The norm of a term cannot increase when included into another region.
 
@@ -44,15 +44,15 @@ lemma norm_termIn_le (Λ : R) (i : ι) : ‖Φ.termIn Λ i‖ ≤ ‖Φ.term i�
 
 ## A. Integration over a region
 
-**`ProbabilisticTheory.Interaction.sumIn`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L73).
+**`ProbabilisticTheory.Interaction.sumIn`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L70).
 
 > The observable in `Λ` obtained by integrating the interaction terms supported there.
 
 ```lean
-noncomputable def sumIn (Λ : R) : A Λ
+noncomputable def sumIn (Λ : R) : (A Λ).Observables
 ```
 
-**`ProbabilisticTheory.Interaction.norm_sumIn_le`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L76).
+**`ProbabilisticTheory.Interaction.norm_sumIn_le`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L73).
 
 > The norm of the integral is bounded by the integral of the norms.
 
@@ -60,29 +60,29 @@ noncomputable def sumIn (Λ : R) : A Λ
 lemma norm_sumIn_le (Λ : R) : ‖Φ.sumIn μ Λ‖ ≤ ∫ i, ‖Φ.termIn Λ i‖ ∂μ
 ```
 
-**`ProbabilisticTheory.Interaction.sumIn_add`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L80).
+**`ProbabilisticTheory.Interaction.sumIn_add`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L77).
 
 > Integration preserves addition of interaction terms with the same supports.
 
 ```lean
-lemma sumIn_add (s : ι → R) (t t' : ∀ i, A (s i)) {Λ : R}
+lemma sumIn_add (s : ι → R) (t t' : ∀ i, (A (s i)).Observables) {Λ : R}
     (h : Integrable ((⟨s, t⟩ : Interaction N ι).termIn Λ) μ)
     (h' : Integrable ((⟨s, t'⟩ : Interaction N ι).termIn Λ) μ) :
     (⟨s, t + t'⟩ : Interaction N ι).sumIn μ Λ =
       (⟨s, t⟩ : Interaction N ι).sumIn μ Λ + (⟨s, t'⟩ : Interaction N ι).sumIn μ Λ
 ```
 
-**`ProbabilisticTheory.Interaction.sumIn_smul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L89).
+**`ProbabilisticTheory.Interaction.sumIn_smul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L86).
 
 > Integration preserves scalar multiplication of interaction terms.
 
 ```lean
-lemma sumIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, A (s i)) (Λ : R) :
+lemma sumIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, (A (s i)).Observables) (Λ : R) :
     (⟨s, c • t⟩ : Interaction N ι).sumIn μ Λ =
       c • (⟨s, t⟩ : Interaction N ι).sumIn μ Λ
 ```
 
-**`ProbabilisticTheory.Interaction.setIntegral_labelsIn`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L101).
+**`ProbabilisticTheory.Interaction.setIntegral_labelsIn`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L98).
 
 > Integrating the terms supported in `Λ` in a larger region `Λ'` agrees with including
 > the integral over `Λ` into `Λ'`.
@@ -95,15 +95,15 @@ lemma setIntegral_labelsIn {Λ Λ' : R} (h : Λ ≤ Λ') (hS : MeasurableSet (Φ
 
 ## B. Nested regions
 
-**`ProbabilisticTheory.Interaction.coupling`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L111).
+**`ProbabilisticTheory.Interaction.coupling`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L108).
 
 > The contribution in `Λ'` from terms not supported in `Λ`.
 
 ```lean
-noncomputable def coupling (Λ Λ' : R) : A Λ'
+noncomputable def coupling (Λ Λ' : R) : (A Λ').Observables
 ```
 
-**`ProbabilisticTheory.Interaction.sumIn_split`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L116).
+**`ProbabilisticTheory.Interaction.sumIn_split`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L113).
 
 > The observable in a larger region is the included observable of the smaller region
 > plus the remaining interaction terms.
@@ -116,15 +116,15 @@ lemma sumIn_split {Λ Λ' : R} (h : Λ ≤ Λ') (hS : MeasurableSet (Φ.labelsIn
 
 ## C. Disjoint regions
 
-**`ProbabilisticTheory.Interaction.crossingIn`**, a def, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L125).
+**`ProbabilisticTheory.Interaction.crossingIn`**, a def, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L122).
 
 > The contribution in `Λ` from terms supported in neither `Λ₁` nor `Λ₂`.
 
 ```lean
-noncomputable def crossingIn (Λ₁ Λ₂ Λ : R) : A Λ
+noncomputable def crossingIn (Λ₁ Λ₂ Λ : R) : (A Λ).Observables
 ```
 
-**`ProbabilisticTheory.Interaction.sumIn_disjoint`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L130).
+**`ProbabilisticTheory.Interaction.sumIn_disjoint`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L127).
 
 > For regions with disjoint sets of supported terms, the observable in a common larger
 > region is the sum of their included observables and the remaining interaction terms.
@@ -140,7 +140,7 @@ lemma sumIn_disjoint {Λ₁ Λ₂ Λ : R} (h₁ : Λ₁ ≤ Λ) (h₂ : Λ₂ �
 
 ## D. Discrete interactions
 
-**`ProbabilisticTheory.Interaction.sumIn_count`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L146).
+**`ProbabilisticTheory.Interaction.sumIn_count`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L145).
 
 > With finitely many labels, integration against the counting measure is a finite sum.
 
@@ -149,7 +149,7 @@ lemma sumIn_count [Fintype ι] (Λ : R) :
     Φ.sumIn Measure.count Λ = ∑ i, Φ.termIn Λ i
 ```
 
-**`ProbabilisticTheory.Interaction.sumIn_count_tsum`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L152).
+**`ProbabilisticTheory.Interaction.sumIn_count_tsum`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean#L151).
 
 > With countably many labels, integration against the counting measure is an infinite sum,
 > provided the terms are integrable.
@@ -163,7 +163,7 @@ lemma sumIn_count_tsum [Countable ι] {Λ : R}
 ## Depends on
 
 - [Interactions on a local net](interaction-basic.md)
-- [Archimedean order-unit spaces](../orderunit/archimedean.md)
+- [Archimedean order-unit spaces (Physlib)](../orderunit/archimedean.md)
 
 ## Proof depends on
 
@@ -171,4 +171,4 @@ lemma sumIn_count_tsum [Countable ι] {Λ : R}
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean)
+- [Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.13 Fully faithful functors
 
-Section 57.13 of the Stacks Project, [Tag 0G07](https://stacks.math.columbia.edu/tag/0G07). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.13 of the Stacks Project, [Tag 0G07](https://stacks.math.columbia.edu/tag/0G07). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G09, an equation
 
 [Tag 0G09](https://stacks.math.columbia.edu/tag/0G09) in the Stacks Project.
 
-**`AlgebraicGeometry.DiagonalResolution.originalComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DiagonalResolution.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/DiagonalResolution.lean#L209).
+**`AlgebraicGeometry.DiagonalResolution.originalComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/DiagonalResolution.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Perfect/DiagonalResolution.lean#L209).
 
 > **The complex `… → ℰ₂ ⊠ 𝒢₂ → ℰ₁ ⊠ 𝒢₁ → ℰ₀ ⊠ 𝒢₀` of external tensor products underlying a
 > resolution of the diagonal.** It is the augmented resolution with its degree-zero term `𝒪_Δ`
@@ -28,7 +28,7 @@ def originalComplex : ChainComplex (pullback f f).Modules ℕ
 
 [Tag 0G0A](https://stacks.math.columbia.edu/tag/0G0A) in the Stacks Project.
 
-**`AlgebraicGeometry.DiagonalResolution.transformedTerm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L135). The attribute's comment: “the terms of the complex”.
+**`AlgebraicGeometry.DiagonalResolution.transformedTerm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L135). The attribute's comment: “the terms of the complex”.
 
 > The term `ℰᵢ ⊠ F(𝒢ᵢ)`: the derived external tensor product, on `X ×_A Y`, of the `i`-th first
 > factor of a resolution of the diagonal with the value of `F` at the `i`-th second factor.
@@ -39,7 +39,7 @@ def transformedTerm (hG : ∀ i, IsPerfect (X := X.toRingedSpace)
     DerivedCategory (pullback f g).Modules
 ```
 
-**`AlgebraicGeometry.DiagonalResolution.HomTransport.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L165). The attribute's comment: “the complex”.
+**`AlgebraicGeometry.DiagonalResolution.HomTransport.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L165). The attribute's comment: “the complex”.
 
 > The complex `… → ℰ₂ ⊠ F(𝒢₂) → ℰ₁ ⊠ F(𝒢₁) → ℰ₀ ⊠ F(𝒢₀)` on `X ×_A Y` obtained from a
 > resolution of the diagonal of `X` by transforming its second factors by `F`. Its differentials
@@ -50,7 +50,7 @@ def complex (T : HomTransport R g F hG) :
     ChainComplex (DerivedCategory (pullback f g).Modules) ℕ
 ```
 
-**`AlgebraicGeometry.DiagonalResolution.HomTransport.complex_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L180). The attribute's comment: “the differentials of the complex”.
+**`AlgebraicGeometry.DiagonalResolution.HomTransport.complex_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/Basic.lean#L180). The attribute's comment: “the differentials of the complex”.
 
 > The differential of the transformed complex from index `i + 1` to index `i` is the
 > differential `ℰᵢ₊₁ ⊠ 𝒢ᵢ₊₁ ⟶ ℰᵢ ⊠ 𝒢ᵢ` of the resolution of the diagonal, transported along the
@@ -61,7 +61,7 @@ theorem complex_d (T : HomTransport R g F hG) (i : ℕ) :
     T.complex.d (i + 1) i = T.hom (i + 1) i (R.boxDifferential i)
 ```
 
-**`AlgebraicGeometry.exists_transformedDiagonalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/SituationUnconditional.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/SituationUnconditional.lean#L122).
+**`AlgebraicGeometry.exists_transformedDiagonalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/SituationUnconditional.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/TransformedDiagonal/SituationUnconditional.lean#L122).
 
 > **(0G0A).** For `X`, `Y` proper smooth over a field `k`, `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)`
 > `k`-linear exact fully faithful and `R` a resolution of the diagonal by `ℰᵢ ⊠ 𝒢ᵢ`, there is a
@@ -90,7 +90,7 @@ theorem exists_transformedDiagonalComplex (k : Type u) [Field k]
 
 [Tag 0G0B](https://stacks.math.columbia.edu/tag/0G0B) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fourierMukai_areSiblingsPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L518).
+**`AlgebraicGeometry.exists_fourierMukai_areSiblingsPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 518](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L518).
 
 > **Stacks Project, Tag 0G0B.** Let `k` be a field and `X`, `Y` smooth proper `k`-schemes.
 > Every `k`-linear exact fully faithful functor `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` has a sibling
@@ -124,7 +124,7 @@ theorem _root_.AlgebraicGeometry.exists_fourierMukai_areSiblingsPerfect
 
 [Tag 0G0C](https://stacks.math.columbia.edu/tag/0G0C) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iso_perfectFourierMukaiOver_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L768).
+**`AlgebraicGeometry.exists_iso_perfectFourierMukaiOver_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 768](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L768).
 
 > **Stacks Project, Tag 0G0C** (Orlov). Let `k` be a field and `X`, `Y` smooth proper schemes
 > over `k` with `X` projective over `k` (`AlgebraicGeometry.IsProjective X.hom`, the first condition
@@ -156,7 +156,7 @@ theorem _root_.AlgebraicGeometry.exists_iso_perfectFourierMukaiOver_of_isProject
 
 [Tag 0G0D](https://stacks.math.columbia.edu/tag/0G0D) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fourierMukai_isEquivalence_areSiblingsPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L549).
+**`AlgebraicGeometry.exists_fourierMukai_isEquivalence_areSiblingsPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 549](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L549).
 
 > **Stacks Project, Tag 0G0D.** Let `k` be a field and `X`, `Y` smooth proper `k`-schemes. If
 > `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` is a `k`-linear exact equivalence, then there is a Fourier-Mukai
@@ -188,7 +188,7 @@ theorem _root_.AlgebraicGeometry.exists_fourierMukai_isEquivalence_areSiblingsPe
 
 [Tag 0G0E](https://stacks.math.columbia.edu/tag/0G0E) in the Stacks Project.
 
-**`Stacks.Duality.nonempty_iso_diagonalFourierMukaiKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/IdentityKernelStepThree.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/IdentityKernelStepThree.lean#L150).
+**`Stacks.Duality.nonempty_iso_diagonalFourierMukaiKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/IdentityKernelStepThree.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/IdentityKernelStepThree.lean#L150).
 
 > **[Stacks, Tag 0G0E].**  Let `k` be a field, let `X` be a smooth proper scheme over `k` and
 > let `K` be a perfect object of `D(𝒪_{X ×_k X})`.  If the Fourier-Mukai functor
@@ -210,4 +210,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.13, Tag 0G07](https://stacks.math.columbia.edu/tag/0G07)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

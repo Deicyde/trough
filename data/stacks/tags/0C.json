@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0C00",
@@ -6221,7 +6221,7 @@
     {
      "name": "Stacks.Divisors.addEffectiveCartierDivisor_shortExact",
      "kind": "theorem",
-     "line": 1070,
+     "line": 1052,
      "private": false,
      "doc": "**Stacks Project, Tag 0C4T.**  Let `D ⊆ D'` be effective Cartier divisors on a scheme `X`\nand let `C` be an effective Cartier divisor with `D' = D + C`, which exists by\n[Stacks, Tag 02ON].  Then there is a short exact sequence\n`0 ⟶ 𝒪_X(-D)|_C ⟶ 𝒪_{D'} ⟶ 𝒪_D ⟶ 0` of `𝒪_X`-modules.",
      "statement": "theorem addEffectiveCartierDivisor_shortExact (D D' C : X.IdealSheafData)\n    (hD : IsEffectiveCartierDivisor D) (hsub : D' ≤ D) (hsum : D' = D * C) :\n    ∃ f : (Scheme.Modules.pushforward C.subschemeι).obj\n          ((Scheme.Modules.pullback C.subschemeι).obj (negativeTwist D)) ⟶\n        Scheme.IdealSheafData.closedSubschemeStructureSheaf D',\n      ∃ zero : f ≫ Scheme.IdealSheafData.closedSubschemeRestriction hsub = 0,\n        (ShortComplex.mk f (Scheme.IdealSheafData.closedSubschemeRestriction hsub)\n          zero).ShortExact",
@@ -6784,7 +6784,7 @@
     {
      "name": "AlgebraicGeometry.subsingleton_picardGroup_compl_exceptionalIdeal",
      "kind": "theorem",
-     "line": 221,
+     "line": 222,
      "private": false,
      "doc": "**Stacks Project, Tag 0C5G, the third step of the source's proof.** Let `A` be a regular\nlocal ring and let `X ⟶ Spec A` be the blowup of `Spec A` in its maximal ideal, with exceptional\ndivisor `E`. Then `Pic(X ∖ E)` is trivial.\n\nThe blowup is an isomorphism over the complement of its centre (Tag 02OS), that complement is\nthe punctured spectrum of `A`, and a regular local ring is a unique factorization domain, so the\nPicard group of its punctured spectrum vanishes (Tag 0F2H). No hypothesis on the dimension of\n`A` is used.",
      "statement": "theorem subsingleton_picardGroup_compl_exceptionalIdeal (A : Type u) [CommRing A]\n    [IsRegularLocalRing A] :\n    Subsingleton (Scheme.Opens.toScheme (exceptionalIdeal (Scheme.IdealSheafData.ofIdealTop\n      (Ideal.map (Scheme.ΓSpecIso (.of A)).inv.hom\n        (IsLocalRing.maximalIdeal A)))).support.compl).picardGroup",
@@ -15465,10 +15465,10 @@
     {
      "name": "Stacks.AlgebraicGeometry.PicardBaseChange.exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivialization",
      "kind": "theorem",
-     "line": 85,
+     "line": 86,
      "private": false,
      "doc": "**Stacks Project, Tag 0CDX, the clause that the multiplication is an isomorphism.** For a\nquasi-compact, quasi-separated scheme `X` over `A`, a faithfully flat ring map `φ : A →+* B` and\nan invertible `𝒪_X`-module `L` whose pullback to `X_B` is trivial, the canonical multiplication\n\n`Γ(X, L) ⊗_{Γ(X, 𝒪_X)} Γ(X, L^{⊗ -1}) ⟶ Γ(X, 𝒪_X)`\n\nis an isomorphism. The multiplication is the coherent multiplication of Tag 01CU in degrees\n`(1, -1)`, written out on pure tensors.",
-     "statement": "theorem exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivialization\n    {A B : Type u} [CommRing A] [CommRing B] (φ : A →+* B) (hφ : φ.FaithfullyFlat)\n    {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) [CompactSpace X] [QuasiSeparatedSpace X]\n    (L : X.Modules)\n    [_root_.AlgebraicGeometry.SheafOfModules.IsInvertible X.presheaf X.ringCatSheaf.property L]\n    (hL : _root_.AlgebraicGeometry.SheafOfModules.IsTrivial\n      (Limits.pullback f (Spec.map (CommRingCat.ofHom φ))).presheaf\n      (Limits.pullback f (Spec.map (CommRingCat.ofHom φ))).ringCatSheaf.property\n      ((Scheme.Modules.pullback\n        (Limits.pullback.fst f (Spec.map (CommRingCat.ofHom φ)))).obj L)) :\n    letI : Module Γ(X, ⊤)\n        ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤)) :=\n      ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤)).isModule\n    ∃ e : TensorProduct Γ(X, ⊤) Γ(L, ⊤)\n        ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤))\n        ≃ₗ[Γ(X, ⊤)] Γ(X, ⊤),\n      ∀ s t, e (TensorProduct.tmul Γ(X, ⊤) s t) =\n        (((tensorPowerCoherence X.presheaf X.ringCatSheaf.property L).mulIso 1 (-1)).hom.val.app\n            (.op ⊤)).hom\n          (((Stacks.SheafOfModules.TensorSheafification.toSheafify X.presheaf\n            X.ringCatSheaf.property\n            ((PresheafOfModules.tensorObj (O := X.presheaf)\n              ((tensorPower X.presheaf X.ringCatSheaf.property L 1).val)\n              ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val)))).app (.op ⊤)).hom\n            ((((tensorPowerOneIso X.presheaf X.ringCatSheaf.property L).inv.val.app\n              (.op ⊤)).hom s) ⊗ₜ[Γ(X, ⊤)] t))",
+     "statement": "theorem exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivialization\n    {A B : Type u} [CommRing A] [CommRing B] (φ : A →+* B) (hφ : φ.FaithfullyFlat)\n    {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) [CompactSpace X] [QuasiSeparatedSpace X]\n    (L : X.Modules)\n    [_root_.AlgebraicGeometry.SheafOfModules.IsInvertible X.presheaf X.ringCatSheaf.property L]\n    (hL : _root_.AlgebraicGeometry.SheafOfModules.IsTrivial\n      (Limits.pullback f (Spec.map (CommRingCat.ofHom φ))).presheaf\n      (Limits.pullback f (Spec.map (CommRingCat.ofHom φ))).ringCatSheaf.property\n      ((Scheme.Modules.pullback\n        (Limits.pullback.fst f (Spec.map (CommRingCat.ofHom φ)))).obj L)) :\n    letI : Module Γ(X, ⊤)\n        ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤)) :=\n      ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤)).isModule\n    ∃ e : TensorProduct Γ(X, ⊤) Γ(L, ⊤)\n        ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤))\n        ≃ₗ[Γ(X, ⊤)] Γ(X, ⊤),\n      ∀ s t, e (TensorProduct.tmul Γ(X, ⊤) s t) =\n        (((tensorPowerCoherence X.presheaf X.ringCatSheaf.property L).mulIso 1 (-1)).hom.val.app\n            (.op ⊤)).hom\n          ((((structureSheafificationAdjunction X.presheaf X.ringCatSheaf.property).unit.app\n            (PresheafOfModules.tensorObj (O := X.presheaf)\n              ((tensorPower X.presheaf X.ringCatSheaf.property L 1).val)\n              ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val))).app (.op ⊤)).hom\n            ((((tensorPowerOneIso X.presheaf X.ringCatSheaf.property L).inv.val.app\n              (.op ⊤)).hom s) ⊗ₜ[Γ(X, ⊤)] t))",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -20630,7 +20630,7 @@
     {
      "name": "CategoryTheory.Functor.isStack_of_faithful_of_isSheaf",
      "kind": "theorem",
-     "line": 320,
+     "line": 318,
      "private": false,
      "doc": "**Descent along a faithful 1-morphism into a stack in groupoids.** Let `(𝒞, J)` be a site and\nlet `F : 𝒮 ⥤ 𝒯` be a 1-morphism of categories fibred in groupoids over `𝒞`, that is a functor\nwith `F ⋙ q = p`. Assume that (1) `𝒯` is a stack in groupoids over `𝒞`, (2) for every object `U`\nof `𝒞` the functor `𝒮_U ⥤ 𝒯_U` of fibre categories is faithful, and (3) for every object `y` of\n`𝒯` over `U` the presheaf on `𝒞/U` sending `h : V ⟶ U` to the isomorphism classes of pairs\n`(x, f)` with `x` an object of `𝒮_V` and `f : F(x) ⟶ h^* y` a morphism of `𝒯_V` is a sheaf. Then\n`𝒮` is a stack in groupoids over `𝒞`.\n\nCondition (3) is the two hypotheses `hsep` and `hglue`, in which a pair over `h` is a morphism\n`f : F.obj x ⟶ y` lying over `h`, and the class of `(x₂, f₂)` is the restriction of the class of\n`(x₁, f₁)` along `g : W ⟶ V` when `F.map c ≫ f₁ = f₂` for some lift `c : x₂ ⟶ x₁` of `g`.",
      "statement": "public theorem isStack_of_faithful_of_isSheaf {p : 𝒮 ⥤ 𝒞} {q : 𝒯 ⥤ 𝒞} {F : 𝒮 ⥤ 𝒯}\n    {J : GrothendieckTopology 𝒞} (hp : p.IsFiberedInGroupoids) (hq : q.IsFiberedInGroupoids)\n    (hF : F ⋙ q = p) (hT : q.IsStack J)\n    (hfaithful : ∀ U : 𝒞, (Fiber.fiberInclusion (p := p) (S := U) ⋙ F).Faithful)\n    (hsep : ∀ (y : 𝒯) ⦃V : 𝒞⦄ (h : V ⟶ q.obj y) (R : Sieve V), R ∈ J V →\n      ∀ ⦃x x' : 𝒮⦄ (f : F.obj x ⟶ y) (f' : F.obj x' ⟶ y),\n        q.IsHomLift h f → q.IsHomLift h f' →\n        (∀ ⦃W : 𝒞⦄ (g : W ⟶ V), R g → ∃ (z : 𝒮) (c : z ⟶ x) (c' : z ⟶ x'),\n          p.IsHomLift g c ∧ p.IsHomLift g c' ∧ F.map c ≫ f = F.map c' ≫ f') →\n        ∃ e : x ⟶ x', p.IsHomLift (𝟙 V) e ∧ F.map e ≫ f' = f)\n    (hglue : ∀ (y : 𝒯) ⦃V : 𝒞⦄ (h : V ⟶ q.obj y) (R : Sieve V), R ∈ J V →\n      ∀ (x : ∀ ⦃W : 𝒞⦄ (g : W ⟶ V), R g → 𝒮)\n        (f : ∀ ⦃W : 𝒞⦄ (g : W ⟶ V) (hg : R g), F.obj (x g hg) ⟶ y),\n        (∀ ⦃W : 𝒞⦄ (g : W ⟶ V) (hg : R g), q.IsHomLift (g ≫ h) (f g hg)) →\n        (∀ ⦃W W' : 𝒞⦄ (g : W ⟶ V) (hg : R g) (k : W' ⟶ W),\n          ∃ c : x (k ≫ g) (R.downward_closed hg k) ⟶ x g hg,\n            p.IsHomLift k c ∧ F.map c ≫ f g hg = f (k ≫ g) (R.downward_closed hg k)) →\n        ∃ (x₀ : 𝒮) (f₀ : F.obj x₀ ⟶ y), q.IsHomLift h f₀ ∧\n          ∀ ⦃W : 𝒞⦄ (g : W ⟶ V) (hg : R g), ∃ c : x g hg ⟶ x₀,\n            p.IsHomLift g c ∧ F.map c ≫ f₀ = f g hg) :\n    p.IsStack J",
@@ -27012,7 +27012,7 @@
     {
      "name": "AlgebraicGeometry.isClosedImmersion_chowDatumMorphism",
      "kind": "theorem",
-     "line": 336,
+     "line": 337,
      "private": false,
      "doc": "**[Stacks, Tag 0CSK], first assertion: `U ⟶ V` is a closed immersion.**  It is the inverse of\nan isomorphism, a transport along an equality of opens, and the closed immersion `c|_V`.",
      "statement": "theorem isClosedImmersion_chowDatumMorphism (hb : IsIso ((iZ ≫ p) ∣_ U))\n    (hc : IsClosedImmersion ((iZ ≫ q) ∣_ V))\n    (hW : (iZ ≫ p) ⁻¹ᵁ U = (iZ ≫ q) ⁻¹ᵁ V) :\n    IsClosedImmersion (chowDatumMorphism p q iZ U V hb hW)",
@@ -27522,7 +27522,7 @@
     {
      "name": "AlgebraicGeometry.exists_isClopen_isProper_of_henselianPair",
      "kind": "theorem",
-     "line": 270,
+     "line": 271,
      "private": false,
      "doc": "Let `(A, I)` be a henselian pair and let `f : X ⟶ Spec A` be separated and of finite type.  An\nopen and closed subscheme `i : Y ⟶ X ×_{Spec A} Spec (A ⧸ I)` of the closed fibre which is proper\nover `Spec (A ⧸ I)` is the closed fibre of an open and closed subscheme `w : W ⟶ X` which is\nproper over `Spec A`: there is an isomorphism `Y ≅ W ×_{Spec A} Spec (A ⧸ I)` over the closed\nfibre.",
      "statement": "theorem exists_isClopen_isProper_of_henselianPair (A : Type u) [CommRing A]\n    (I : Ideal A) (hI : HenselianPair A I) {X : Scheme.{u}} (f : X ⟶ Spec (.of A))\n    [LocallyOfFiniteType f] [QuasiCompact f] [IsSeparated f] {Y : Scheme.{u}}\n    (i : Y ⟶ pullback f (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))))\n    [IsOpenImmersion i] [IsClosedImmersion i]\n    [IsProper (i ≫ pullback.snd f (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))))] :\n    ∃ (W : Scheme.{u}) (w : W ⟶ X) (_ : IsOpenImmersion w) (_ : IsClosedImmersion w)\n      (_ : IsProper (w ≫ f)),\n      let q := Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))\n      let w₀ : pullback (w ≫ f) q ⟶ pullback f q :=\n        pullback.lift (pullback.fst (w ≫ f) q ≫ w) (pullback.snd (w ≫ f) q)\n          (by rw [Category.assoc]; exact pullback.condition)\n      ∃ e : Y ≅ pullback (w ≫ f) q, e.hom ≫ w₀ = i",
@@ -29045,7 +29045,7 @@
     {
      "name": "AlgebraicGeometry.Space.isWeaklyAssociatedPrime_geometricModuleStalk_modulePullback_iff",
      "kind": "theorem",
-     "line": 275,
+     "line": 276,
      "private": false,
      "doc": "**Stacks 0CUT** at the étale local ring, for the geometric stalk of the pullback module.\nLet `f : X ⟶ Y` be a finite flat morphism of algebraic spaces and let `x̄` be a geometric point\nof `X` with image `ȳ`. Then the maximal ideal of `𝒪_{Y, ȳ}` is weakly associated to the\ngeometric stalk `G_{ȳ}` exactly when the maximal ideal of `𝒪_{X, x̄}` is weakly associated to\nthe geometric stalk `(f^*G)_{x̄}` of the pullback module.",
      "statement": "theorem isWeaklyAssociatedPrime_geometricModuleStalk_modulePullback_iff (f : X ⟶ Y)\n    (hfinite : IsFinite B S hS f.hom) (hflat : IsFlat B S hS f.hom)\n    (xbar : GeometricPoint B S hS X.1)\n    (G : Modules.{u, u} B S hS Y.1 Y.2) :\n    letI : IsLocalRing (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar)) :=\n      isLocalRing_etaleLocalRing B S hS Y.1 Y.2 (geometricPointMap f.hom xbar)\n    letI : IsLocalRing (etaleLocalRing B S hS X.1 xbar) :=\n      isLocalRing_etaleLocalRing B S hS X.1 X.2 xbar\n    letI : Module (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar))\n        (geometricModuleStalk B S hS Y (geometricPointMap f.hom xbar) G) :=\n      (geometricModuleStalk B S hS Y (geometricPointMap f.hom xbar) G).isModule\n    letI : Module (etaleLocalRing B S hS X.1 xbar)\n        (geometricModuleStalk B S hS X xbar ((modulePullback B S hS f).obj G)) :=\n      (geometricModuleStalk B S hS X xbar ((modulePullback B S hS f).obj G)).isModule\n    (IsWeaklyAssociatedPrime (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar))\n          (geometricModuleStalk B S hS Y (geometricPointMap f.hom xbar) G)\n          (maximalIdeal (etaleLocalRing B S hS Y.1 (geometricPointMap f.hom xbar))) ↔\n      IsWeaklyAssociatedPrime (etaleLocalRing B S hS X.1 xbar)\n        (geometricModuleStalk B S hS X xbar ((modulePullback B S hS f).obj G))\n        (maximalIdeal (etaleLocalRing B S hS X.1 xbar)))",
@@ -32228,7 +32228,7 @@
     {
      "name": "Deformation.ToposThickening.MorphismOfFirstOrderThickenings.existenceObstructionClass_first",
      "kind": "theorem",
-     "line": 405,
+     "line": 404,
      "private": false,
      "doc": "The obstruction classes of the two thickenings are compatible: the map\n`Ext²_O(F, K₂) ⟶ Ext²_O(F, K₁)` induced by `κ` carries `o(F, K₂, c₂)` to `o(F, K₁, c₁)`.",
      "statement": "theorem existenceObstructionClass_first\n    [HasExt.{e} (SheafOfModules.{w₂} (Stacks.SheafOfModules.Tensor.ringSheaf D.O₂))]\n    (F K₁ K₂ : SheafOfModules.{w₂} (Stacks.SheafOfModules.Tensor.ringSheaf (baseRing i)))\n    (c₁ : ((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.first.I).obj F ⟶ K₁)\n    (c₂ : ((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).obj D.second.I).obj F ⟶ K₂)\n    (κ : K₂ ⟶ K₁)\n    (hκ : c₂ ≫ κ =\n      ((Stacks.SheafOfModules.Tensor.sheafTensor (baseRing i)).map D.idealMap).app F ≫ c₁) :\n    existenceObstructionClass D.first F K₁ c₁ =\n      (existenceObstructionClass D.second F K₂ c₂).comp (Abelian.Ext.mk₀ κ) (add_zero 2)",

@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.15 Derived functors on derived categories
 
-Section 13.15 of the Stacks Project, [Tag 05T3](https://stacks.math.columbia.edu/tag/05T3). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.15 of the Stacks Project, [Tag 05T3](https://stacks.math.columbia.edu/tag/05T3). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05T5, a lemma
 
 [Tag 05T5](https://stacks.math.columbia.edu/tag/05T5) in the Stacks Project.
 
-**`StacksDerivedFunctorComparison.definedAtR_big_iff_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L626). The attribute's comment: “(1)”. References: SGA 4 XVII (1.2.4), “Definedness clause”.
+**`StacksDerivedFunctorComparison.definedAtR_big_iff_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 626](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L626). The attribute's comment: “(1)”. References: SGA 4 XVII (1.2.4), “Definedness clause”.
 
 > **Statement (1), "defined at".** For `X` an object of `K⁺(A)`, the right derived functor of
 > `F : K(A) ⥤ D(B)` is defined at `X` (viewed in `K(A)` via `ι`) if and only if the right derived
@@ -26,7 +26,7 @@ theorem definedAtR_big_iff_plus (X : HomotopyCategory.Plus A) :
       ∃ c, (Fplus F).IsRightDerivedValueAt (qisPlus A) X c
 ```
 
-**`StacksDerivedFunctorComparison.valueR_big_iso_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L662). The attribute's comment: “(1), values”. References: SGA 4 XVII (1.2.4), “Value clause”; SGA 4½ Etat 0 (4.2.3.2), “(A)”.
+**`StacksDerivedFunctorComparison.valueR_big_iso_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 662](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L662). The attribute's comment: “(1), values”. References: SGA 4 XVII (1.2.4), “Value clause”; SGA 4½ Etat 0 (4.2.3.2), “(A)”.
 
 > **Statement (1), values.** When the right derived functors of `F : K(A) ⥤ D(B)` and of
 > `F⁺ : K⁺(A) ⥤ D⁺(B)` are defined at `X`, with values `cbig.pt` and `cplus.pt`, the values are
@@ -47,7 +47,7 @@ theorem valueR_big_iso_plus (X : HomotopyCategory.Plus A)
           e.hom = (Dplus.ι B).map (cplus.ι.app s)
 ```
 
-**`StacksDerivedFunctorComparison.computesR_big_iff_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L685). The attribute's comment: “(2)”.
+**`StacksDerivedFunctorComparison.computesR_big_iff_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 685](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L685). The attribute's comment: “(2)”.
 
 > **Statement (2).** For `X` an object of `K⁺(A)`, `X` computes the right derived functor of
 > `F : K(A) ⥤ D(B)` (viewed in `K(A)`) if and only if `X` computes the right derived functor of
@@ -59,7 +59,7 @@ theorem computesR_big_iff_plus (X : HomotopyCategory.Plus A) :
       (Fplus F).ComputesRightDerived (qisPlus A) X
 ```
 
-**`StacksDerivedFunctorComparison.definedAtL_big_iff_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 717](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L717). The attribute's comment: “(3)”. References: SGA 4 XVII (1.2.5), “(iv), single functor”.
+**`StacksDerivedFunctorComparison.definedAtL_big_iff_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 717](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L717). The attribute's comment: “(3)”. References: SGA 4 XVII (1.2.5), “(iv), single functor”.
 
 > **Statement (3), "defined at".** For `X` an object of `K⁻(A)`, the left derived functor of
 > `F : K(A) ⥤ D(B)` is defined at `X` (viewed in `K(A)` via `ι`) if and only if the left derived
@@ -71,7 +71,7 @@ theorem definedAtL_big_iff_minus (X : KMinus A) :
       ∃ c, (Fminus F).IsLeftDerivedValueAt (qisMinus A) X c
 ```
 
-**`StacksDerivedFunctorComparison.valueL_big_iso_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L750). The attribute's comment: “(3), values”. References: SGA 4 XVII (1.2.5), “(iv)”; SGA 4½ Etat 0 (4.2.3.2), “(A)”.
+**`StacksDerivedFunctorComparison.valueL_big_iso_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 750](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L750). The attribute's comment: “(3), values”. References: SGA 4 XVII (1.2.5), “(iv)”; SGA 4½ Etat 0 (4.2.3.2), “(A)”.
 
 > **Statement (3), values.** When the left derived functors of `F : K(A) ⥤ D(B)` and of
 > `F⁻ : K⁻(A) ⥤ D⁻(B)` are defined at `X`, with values `cbig.pt` and `cminus.pt`, the values are
@@ -92,7 +92,7 @@ theorem valueL_big_iso_minus (X : KMinus A)
           cbig.π.app (MorphismProperty.Over.mk ⊤ ((KMinus.ι A).map s.hom) s.prop)
 ```
 
-**`StacksDerivedFunctorComparison.computesL_big_iff_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L773). The attribute's comment: “(4)”. References: SGA 4 XVII (1.2.5), “(iv), single functor”.
+**`StacksDerivedFunctorComparison.computesL_big_iff_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean, line 773](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/BoundedDerivedFunctorComparison.lean#L773). The attribute's comment: “(4)”. References: SGA 4 XVII (1.2.5), “(iv), single functor”.
 
 > **Statement (4).** For `X` an object of `K⁻(A)`, `X` computes the left derived functor of
 > `F : K(A) ⥤ D(B)` (viewed in `K(A)`) if and only if `X` computes the left derived functor of
@@ -108,7 +108,7 @@ theorem computesL_big_iff_minus (X : KMinus A) :
 
 [Tag 0157](https://stacks.math.columbia.edu/tag/0157) in the Stacks Project.
 
-**`CategoryTheory.Functor.rightAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L99). The attribute's comment: “(3), with `RF` Mathlib's `Functor.totalRightDerived` on `K⁺(C)`; the source's formulation, for a partially defined `RF`, is `Functor.IsRightAcyclic`”. References: SGA 4 XVII (1.2.3), “(ii)”; SGA 4 XVII (1.2.3), “(ii)”; SGA 4 V (0.4).
+**`CategoryTheory.Functor.rightAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L99). The attribute's comment: “(3), with `RF` Mathlib's `Functor.totalRightDerived` on `K⁺(C)`; the source's formulation, for a partially defined `RF`, is `Functor.IsRightAcyclic`”. References: SGA 4 XVII (1.2.3), “(ii)”; SGA 4 V (0.4).
 
 > An object `A` of an abelian category `C` is **right acyclic** for an additive functor
 > `F : C ⥤ D` to an abelian category, or **acyclic for `RF`**, if the complex `A[0]` with `A` in
@@ -122,7 +122,7 @@ public def rightAcyclic (F : C ⥤ D) [F.Additive]
       (HomotopyCategory.Plus.quasiIso C)] : ObjectProperty C
 ```
 
-**`CategoryTheory.Functor.rightDerivedK`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L263). The attribute's comment: “(1), the right derived functor `RF` of case (1) of 05T4: `F : K(A) ⥤ D(B)` relative to `Qis(A)`, a functor on the objects where it is defined”.
+**`CategoryTheory.Functor.rightDerivedK`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 263](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L263). The attribute's comment: “(1), the right derived functor `RF` of case (1) of 05T4: `F : K(A) ⥤ D(B)` relative to `Qis(A)`, a functor on the objects where it is defined”.
 
 > **Stacks 0157(1), case (1) of Situation 05T4.** A right derived functor of the additive
 > functor `F : A ⥤ B`: the partial functor `RF` of `F : K(A) ⥤ D(B)` relative to the
@@ -134,7 +134,7 @@ noncomputable def rightDerivedK :
     ((Fbig F).rightDerivedDomain (qisBig A)).FullSubcategory ⥤ DerivedCategory B
 ```
 
-**`CategoryTheory.Functor.rightDerivedKPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L274). The attribute's comment: “(1), the right derived functor `RF` of case (2) of 05T4: `F : K⁺(A) ⥤ D⁺(B)` relative to `Qis⁺(A)`, a functor on the objects where it is defined”.
+**`CategoryTheory.Functor.rightDerivedKPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L274). The attribute's comment: “(1), the right derived functor `RF` of case (2) of 05T4: `F : K⁺(A) ⥤ D⁺(B)` relative to `Qis⁺(A)`, a functor on the objects where it is defined”.
 
 > **Stacks 0157(1), case (2) of Situation 05T4.** A right derived functor of the additive
 > functor `F : A ⥤ B`: the partial functor `RF` of `F⁺ : K⁺(A) ⥤ D⁺(B)` relative to the
@@ -146,7 +146,7 @@ noncomputable def rightDerivedKPlus :
     ((Fplus F).rightDerivedDomain (qisPlus A)).FullSubcategory ⥤ Dplus B
 ```
 
-**`CategoryTheory.Functor.leftDerivedK`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L285). The attribute's comment: “(2), the left derived functor `LF` of case (3) of 05T4: `F : K(A) ⥤ D(B)` relative to `Qis(A)`, a functor on the objects where it is defined”.
+**`CategoryTheory.Functor.leftDerivedK`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 285](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L285). The attribute's comment: “(2), the left derived functor `LF` of case (3) of 05T4: `F : K(A) ⥤ D(B)` relative to `Qis(A)`, a functor on the objects where it is defined”.
 
 > **Stacks 0157(2), case (3) of Situation 05T4.** A left derived functor of the additive
 > functor `F : A ⥤ B`: the partial functor `LF` of `F : K(A) ⥤ D(B)` relative to the
@@ -158,7 +158,7 @@ noncomputable def leftDerivedK :
     ((Fbig F).leftDerivedDomain (qisBig A)).FullSubcategory ⥤ DerivedCategory B
 ```
 
-**`CategoryTheory.Functor.leftDerivedKMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L296). The attribute's comment: “(2), the left derived functor `LF` of case (4) of 05T4: `F : K⁻(A) ⥤ D⁻(B)` relative to `Qis⁻(A)`, a functor on the objects where it is defined”.
+**`CategoryTheory.Functor.leftDerivedKMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L296). The attribute's comment: “(2), the left derived functor `LF` of case (4) of 05T4: `F : K⁻(A) ⥤ D⁻(B)` relative to `Qis⁻(A)`, a functor on the objects where it is defined”.
 
 > **Stacks 0157(2), case (4) of Situation 05T4.** A left derived functor of the additive
 > functor `F : A ⥤ B`: the partial functor `LF` of `F⁻ : K⁻(A) ⥤ D⁻(B)` relative to the
@@ -170,7 +170,7 @@ noncomputable def leftDerivedKMinus :
     ((Fminus F).leftDerivedDomain (qisMinus A)).FullSubcategory ⥤ Dminus B
 ```
 
-**`CategoryTheory.Functor.IsRightAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L307). The attribute's comment: “(3), right acyclic objects: `X[0]` computes `RF`; for `RF` on `K(A)` this is `isRightAcyclic_iff_computesRightDerived_K`”.
+**`CategoryTheory.Functor.IsRightAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L307). The attribute's comment: “(3), right acyclic objects: `X[0]` computes `RF`; for `RF` on `K(A)` this is `isRightAcyclic_iff_computesRightDerived_K`”.
 
 > **Stacks 0157(3).** An object `X` of `A` is *right acyclic for `F`*, or *acyclic for `RF`*,
 > if `X[0]` computes `RF`: the right derived functor of `F⁺ : K⁺(A) ⥤ D⁺(B)` relative to
@@ -181,7 +181,7 @@ noncomputable def leftDerivedKMinus :
 def IsRightAcyclic : ObjectProperty A
 ```
 
-**`CategoryTheory.Functor.isRightAcyclic_iff_computesRightDerived_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L313). The attribute's comment: “(3), with `RF` the right derived functor of case (1) of 05T4”.
+**`CategoryTheory.Functor.isRightAcyclic_iff_computesRightDerived_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 313](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L313). The attribute's comment: “(3), with `RF` the right derived functor of case (1) of 05T4”.
 
 > **Stacks 0157(3), the two right derived functors.** `X` is right acyclic for `F` exactly
 > when `X[0]` computes the right derived functor of `F : K(A) ⥤ D(B)` relative to `Qis(A)`.
@@ -192,7 +192,7 @@ theorem isRightAcyclic_iff_computesRightDerived_K (X : A) :
       (Fbig F).ComputesRightDerived (qisBig A) ((HomotopyCategory.singleFunctor A 0).obj X)
 ```
 
-**`CategoryTheory.Functor.IsLeftAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L324). The attribute's comment: “(4), left acyclic objects: `X[0]` computes `LF`; for `LF` on `K(A)` this is `isLeftAcyclic_iff_computesLeftDerived_K`”.
+**`CategoryTheory.Functor.IsLeftAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 324](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L324). The attribute's comment: “(4), left acyclic objects: `X[0]` computes `LF`; for `LF` on `K(A)` this is `isLeftAcyclic_iff_computesLeftDerived_K`”.
 
 > **Stacks 0157(4).** An object `X` of `A` is *left acyclic for `F`*, or *acyclic for `LF`*,
 > if `X[0]` computes `LF`: the left derived functor of `F⁻ : K⁻(A) ⥤ D⁻(B)` relative to
@@ -203,7 +203,7 @@ theorem isRightAcyclic_iff_computesRightDerived_K (X : A) :
 def IsLeftAcyclic : ObjectProperty A
 ```
 
-**`CategoryTheory.Functor.isLeftAcyclic_iff_computesLeftDerived_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L330). The attribute's comment: “(4), with `LF` the left derived functor of case (3) of 05T4”.
+**`CategoryTheory.Functor.isLeftAcyclic_iff_computesLeftDerived_K`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean, line 330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOfAdditive.lean#L330). The attribute's comment: “(4), with `LF` the left derived functor of case (3) of 05T4”.
 
 > **Stacks 0157(4), the two left derived functors.** `X` is left acyclic for `F` exactly when
 > `X[0]` computes the left derived functor of `F : K(A) ⥤ D(B)` relative to `Qis(A)`.
@@ -218,7 +218,7 @@ theorem isLeftAcyclic_iff_computesLeftDerived_K (X : A) :
 
 [Tag 05T7](https://stacks.math.columbia.edu/tag/05T7) in the Stacks Project.
 
-**`CochainComplex.exists_quasiIso_prop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean#L769).
+**`CochainComplex.exists_quasiIso_prop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean, line 769](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean#L769).
 
 > **Stacks 05T7.** Let `A` be an abelian category, let `P` be a class of
 > objects of `A` containing a zero object and such that every object of `A` is a
@@ -244,7 +244,7 @@ public theorem exists_quasiIso_prop (P : ObjectProperty A)
 
 [Tag 05T6](https://stacks.math.columbia.edu/tag/05T6) in the Stacks Project.
 
-**`CochainComplex.exists_quasiIso_prop_isStrictlyGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean, line 481](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean#L481).
+**`CochainComplex.exists_quasiIso_prop_isStrictlyGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean, line 481](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/DerivedFunctorsOnDerivedCategories.lean#L481).
 
 > **Stacks 05T6.** Let `A` be an abelian category, let `P` be a class of objects of `A`
 > containing a zero object and such that every object of `A` is a subobject of an object
@@ -266,7 +266,7 @@ public theorem exists_quasiIso_prop_isStrictlyGE (P : ObjectProperty A) [P.Conta
 
 [Tag 05T8](https://stacks.math.columbia.edu/tag/05T8) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasPointwiseRightDerivedFunctor_and_le_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 623](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L623). The attribute's comment: “The right derived functor `RF` is defined everywhere on `K⁺(C)`, and every object of `I` is acyclic for it.”. References: SGA 4 V (0.4), “M acyclic for u”; SGA 4½ Etat 0 (4.2.3.2), “SES-stable σ, + case”.
+**`CategoryTheory.Functor.hasPointwiseRightDerivedFunctor_and_le_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 623](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L623). The attribute's comment: “The right derived functor `RF` is defined everywhere on `K⁺(C)`, and every object of `I` is acyclic for it.”. References: SGA 4 V (0.4), “M acyclic for u”; SGA 4½ Etat 0 (4.2.3.2), “SES-stable σ, + case”.
 
 > **Stacks 05T8.** Let `F : C ⥤ D` be an additive functor between abelian categories and let
 > `I` be a class of objects of `C` such that every object of `C` is a subobject of an object
@@ -287,7 +287,7 @@ public theorem hasPointwiseRightDerivedFunctor_and_le_rightAcyclic
       I ≤ F.rightAcyclic
 ```
 
-**`CategoryTheory.Functor.le_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L645). References: SGA 4 V (0.4), “M acyclic for u”; SGA 4½ Etat 0 (4.2.3.2), “σ right f-acyclic”.
+**`CategoryTheory.Functor.le_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 645](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L645). References: SGA 4 V (0.4), “M acyclic for u”; SGA 4½ Etat 0 (4.2.3.2), “σ right f-acyclic”.
 
 > **Stacks 05T8.** Let `F : C ⥤ D` be an additive functor between abelian categories whose
 > right derived functor `RF : D⁺(C) ⥤ D⁺(D)` exists, and let `I` be a class of objects of `C` such
@@ -306,7 +306,7 @@ public theorem le_rightAcyclic (F : C ⥤ D) [F.Additive]
     I ≤ F.rightAcyclic
 ```
 
-**`CategoryTheory.Functor.RightAcyclicCriterion.map_quasiIso_nat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L542). The attribute's comment: “the quasi-isomorphism half, for `ℕ`-indexed complexes”.
+**`CategoryTheory.Functor.RightAcyclicCriterion.map_quasiIso_nat`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 542](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L542). The attribute's comment: “the quasi-isomorphism half, for `ℕ`-indexed complexes”.
 
 > **Stacks 05T8 for `ℕ`-indexed complexes.** Let `F : C ⥤ D` be an additive functor between
 > abelian categories and let `I` be a class of objects of `C` adapted to `F` in the sense of
@@ -327,7 +327,7 @@ lemma map_quasiIso_nat (F : C ⥤ D) [F.Additive] (I : ObjectProperty C)
     QuasiIso ((F.mapHomologicalComplex (ComplexShape.up ℕ)).map f)
 ```
 
-**`CategoryTheory.InjectiveResolution.isIso_homologyMap_map_of_desc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L592). The attribute's comment: “the computation of `Rⁿ F` by a resolution by `I`-objects, for `ℕ`-indexed resolutions”.
+**`CategoryTheory.InjectiveResolution.isIso_homologyMap_map_of_desc`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 592](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L592). The attribute's comment: “the computation of `Rⁿ F` by a resolution by `I`-objects, for `ℕ`-indexed resolutions”.
 
 > **Right derived functors are computed by any resolution by `F`-adapted objects.** Let `I` be a
 > class of objects of `C` adapted to an additive functor `F` in the sense of [Stacks 05T8], let `J`
@@ -353,7 +353,7 @@ lemma isIso_homologyMap_map_of_desc (F : C ⥤ D) [F.Additive] (I : ObjectProper
       ((F.mapHomologicalComplex (ComplexShape.up ℕ)).map β) n)
 ```
 
-**`CategoryTheory.InjectiveResolution.isoRightDerivedObjOfQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L612). The attribute's comment: “the resulting identification of `Rⁿ F (X)` with `Hⁿ (F (K))`”.
+**`CategoryTheory.InjectiveResolution.isoRightDerivedObjOfQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean, line 612](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/Resolution/NatIntBridge.lean#L612). The attribute's comment: “the resulting identification of `Rⁿ F (X)` with `Hⁿ (F (K))`”.
 
 > The identification of `(F.rightDerived n).obj X` with the degree-`n` cohomology of `F` applied
 > to a resolution of `X` by `F`-adapted objects, along a descent `β` of the identity. See
@@ -377,7 +377,7 @@ def isoRightDerivedObjOfQuasiIso (F : C ⥤ D) [F.Additive] (I : ObjectProperty 
 
 [Tag 05T9](https://stacks.math.columbia.edu/tag/05T9) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasPointwiseRightDerivedFunctor_op_and_le_rightAcyclic_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 798](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L798). The attribute's comment: “The left derived functor `LF` (encoded as the right derived functor of `F.op` on `K⁺(Cᵒᵖ)`) is defined everywhere, and every object of `P` is acyclic for it.”. References: SGA 4 XVII (1.2.6); SGA 4½ Etat 0 (4.2.3.2), “SES-stable σ, - case”.
+**`CategoryTheory.Functor.hasPointwiseRightDerivedFunctor_op_and_le_rightAcyclic_op`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean, line 798](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/AcyclicObjects.lean#L798). The attribute's comment: “The left derived functor `LF` (encoded as the right derived functor of `F.op` on `K⁺(Cᵒᵖ)`) is defined everywhere, and every object of `P` is acyclic for it.”. References: SGA 4 XVII (1.2.6); SGA 4½ Etat 0 (4.2.3.2), “SES-stable σ, - case”.
 
 > **Stacks 05T9.** Let `F : C ⥤ D` be an additive functor between abelian categories and let
 > `P` be a class of objects of `C` such that every object of `C` is a quotient of an object
@@ -408,4 +408,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.15, Tag 05T3](https://stacks.math.columbia.edu/tag/05T3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

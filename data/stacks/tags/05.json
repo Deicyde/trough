@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0500",
@@ -11124,7 +11124,7 @@
     {
      "name": "assStacks_tensorProduct_of_flat_fiberRing",
      "kind": "theorem",
-     "line": 313,
+     "line": 311,
      "private": false,
      "doc": "**Stacks Tag 05C2.** Let `R → S` be a ring map, let `M` be an `R`-module and let `N` be an\n`S`-module which is flat as an `R`-module. Viewing `Spec(S ⊗_R κ(𝔭))` as a subset of `Spec(S)`\n(Remark 00E6), we have\n`Ass_S(N ⊗_R M) ⊇ ⋃_{𝔭 ∈ Ass_R(M)} Ass_{S ⊗_R κ(𝔭)}(N ⊗_R κ(𝔭))`,\nand this inclusion is an equality if `R` is Noetherian. Every `Ass` is that of Definition 00LA,\n`IsAssociatedPrimeStacks`: the primes that are the annihilator of an element, over `R`, over `S`\nand over the fibre rings, with no Noetherian hypothesis on `S` or on the fibre rings.\n\nThe source writes `M ⊗_R N`; it is `N ⊗[R] M` here, the `S`-module structure being carried by the\nleft factor, and the two are the same `S`-module by `TensorProduct.comm`. The fibre module\n`N ⊗_R κ(𝔭)` is spelled as the base change `(S ⊗[R] κ(𝔭)) ⊗[S] N`, which carries the action of\nthe fibre ring and is `S`-isomorphic to `N ⊗[R] κ(𝔭)` by\n`TensorProduct.AlgebraTensorModule.cancelBaseChange`. The inclusion\n`Spec(S ⊗_R κ(𝔭)) ⊆ Spec(S)` is the image under `PrimeSpectrum.comap` of the canonical map\n`S → S ⊗_R κ(𝔭)`.",
      "statement": "public theorem assStacks_tensorProduct_of_flat_fiberRing {R S M N : Type*} [CommRing R]\n    [CommRing S] [Algebra R S] [AddCommGroup M] [Module R M] [AddCommGroup N] [Module S N]\n    [Module R N] [IsScalarTower R S N] [Module.Flat R N] :\n    (⋃ p ∈ {p : PrimeSpectrum R | IsAssociatedPrimeStacks R M p.asIdeal},\n        PrimeSpectrum.comap (algebraMap S (S ⊗[R] p.asIdeal.ResidueField)) ''\n          {Q | IsAssociatedPrimeStacks (S ⊗[R] p.asIdeal.ResidueField)\n            ((S ⊗[R] p.asIdeal.ResidueField) ⊗[S] N) Q.asIdeal}) ⊆\n      {q : PrimeSpectrum S | IsAssociatedPrimeStacks S (N ⊗[R] M) q.asIdeal} ∧\n    (IsNoetherianRing R →\n      {q : PrimeSpectrum S | IsAssociatedPrimeStacks S (N ⊗[R] M) q.asIdeal} =\n        ⋃ p ∈ {p : PrimeSpectrum R | IsAssociatedPrimeStacks R M p.asIdeal},\n          PrimeSpectrum.comap (algebraMap S (S ⊗[R] p.asIdeal.ResidueField)) ''\n            {Q | IsAssociatedPrimeStacks (S ⊗[R] p.asIdeal.ResidueField)\n              ((S ⊗[R] p.asIdeal.ResidueField) ⊗[S] N) Q.asIdeal})",
@@ -12342,7 +12342,7 @@
     {
      "name": "AlgebraicGeometry.mem_relativeAssassin_pullback_iff",
      "kind": "theorem",
-     "line": 552,
+     "line": 543,
      "private": false,
      "doc": "**Stacks Project, Tag 05DC.** Under arbitrary base change, a point is in\nthe relative assassin of the pulled-back quasi-coherent module exactly when\nits image is in the original relative assassin and its residue-field tensor\nproduct point is generic in an irreducible component.",
      "statement": "theorem mem_relativeAssassin_pullback_iff\n    {X S S' : Scheme.{u}} (f : X ⟶ S) (g : S' ⟶ S) (F : X.Modules)\n    [F.IsQuasicoherent] [LocallyOfFiniteType f]\n    (x' : pullback (C := Scheme.{u}) f g) :\n    x' ∈ Stacks.Divisors.relativeAssassin (pullback.snd (C := Scheme.{u}) f g)\n        ((Scheme.Modules.pullback (pullback.fst (C := Scheme.{u}) f g)).obj F) ↔\n      (pullback.fst (C := Scheme.{u}) f g x' ∈ Stacks.Divisors.relativeAssassin f F ∧\n        ∃ Z ∈ irreducibleComponents\n            (Spec (Scheme.Pullback.Triplet.ofPoint x').tensor),\n          IsGenericPoint (Scheme.Pullback.SpecOfPoint x') Z)",
@@ -20664,7 +20664,7 @@
     {
      "name": "Stacks.SheafOfModules.FlatSheafification.sheafTensorRight_preservesColimits",
      "kind": "lemma",
-     "line": 173,
+     "line": 168,
      "private": false,
      "doc": "Tensoring on the right with `F` preserves all colimits indexed in the module universe.",
      "statement": "public lemma sheafTensorRight_preservesColimits\n    {C : Type u} [Category.{v} C] (J : GrothendieckTopology C)\n    [J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [J.WEqualsLocallyBijective AddCommGrpCat.{z}]\n    [HasWeakSheafify J AddCommGrpCat.{z}]\n    (O : Sheaf J CommRingCat.{w})\n    (F : SheafOfModules.{z} (Stacks.SheafOfModules.Tensor.ringSheaf O)) :\n    PreservesColimitsOfSize.{max u z, z}\n      ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, z, z} (J := J) O).flip.obj F)",
@@ -20678,7 +20678,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorColimits.tensorLeft_preservesColimits",
      "kind": "theorem",
-     "line": 694,
+     "line": 742,
      "private": false,
      "doc": "Tensoring with a fixed sheaf of modules commutes with all small colimits, independently of\nthe ring universe.",
      "statement": "public theorem tensorLeft_preservesColimits (R : Sheaf J CommRingCat.{w})\n    [J.WEqualsLocallyBijective AddCommGrpCat.{z}] [HasWeakSheafify J AddCommGrpCat.{z}]\n    (F : SheafOfModules.{z} (Stacks.SheafOfModules.Tensor.ringSheaf R)) :\n    PreservesColimitsOfSize.{a, z}\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, z, z} R).obj F))",
@@ -20761,7 +20761,7 @@
     {
      "name": "AlgebraicGeometry.SheafOfModules.isFlat_iff_stalk_flat",
      "kind": "theorem",
-     "line": 78,
+     "line": 89,
      "private": false,
      "doc": "A module sheaf on a ringed space is flat precisely when each of its\nstalks is flat over the corresponding stalk of the structure sheaf.",
      "statement": "public theorem isFlat_iff_stalk_flat {X : TopCat.{u}}\n    (O : Sheaf (Opens.grothendieckTopology X) CommRingCat.{u})\n    (F : _root_.SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u} O)) :\n    IsFlat F ↔\n      ∀ x : X,\n        letI : Module (TopCat.Presheaf.stalk (C := CommRingCat.{u}) (X := X) O.obj x)\n          (TopCat.Presheaf.stalk (C := AddCommGrpCat.{u}) (X := X) F.val.presheaf x) :=\n          inferInstanceAs (Module (TopCat.Presheaf.stalk (C := CommRingCat.{u}) (X := X) O.obj x)\n          (TopCat.Presheaf.stalk (C := AddCommGrpCat.{u}) (X := X)\n              ((id F.val : _root_.PresheafOfModules.{u}\n                (O.obj ⋙ forget₂ CommRingCat.{u} RingCat.{u})).presheaf) x))\n        Module.Flat (TopCat.Presheaf.stalk (C := CommRingCat.{u}) (X := X) O.obj x)\n          (TopCat.Presheaf.stalk (C := AddCommGrpCat.{u}) (X := X) F.val.presheaf x)",
@@ -27582,7 +27582,7 @@
     {
      "name": "StacksColimitRingsFlat.flat_colimit",
      "kind": "theorem",
-     "line": 262,
+     "line": 259,
      "private": false,
      "doc": "Let `{R_i, φ_{ii'}}` be a system of rings over the directed set `ι`, with colimit\n`R = colim_i R_i`.\n\n1. If `N` is an `R`-module which is flat as an `R_i`-module (via `R_i → R`) for all `i`, then\n   `N` is flat as an `R`-module.\n2. If each `M_i` is a flat `R_i`-module and the `f_{ii'} : M_i → M_{i'}` are\n   `φ_{ii'}`-semilinear maps forming a system, then `M = colim_i M_i` (the colimit of the\n   abelian groups, with its `R`-module structure `moduleDirectLimit`) is a flat `R`-module.",
      "statement": "theorem flat_colimit :\n    (∀ (N : Type*) [AddCommGroup N] [Module (ColimitRing G φ) N],\n      (∀ i : ι, @Module.Flat (G i) N _ _ (Module.compHom N (structHom G φ i))) →\n        Module.Flat (ColimitRing G φ) N) ∧\n    ((∀ i : ι, Module.Flat (G i) (M i)) →\n      Module.Flat (ColimitRing G φ) (_root_.DirectLimit M f))",
@@ -28009,7 +28009,7 @@
     {
      "name": "Stacks.FlatChangeOfRings.isFlat_extendScalars",
      "kind": "theorem",
-     "line": 371,
+     "line": 395,
      "private": false,
      "doc": "**Stacks Project, Tag 05V4.** Extension of scalars along a morphism of sheaves of\ncommutative rings takes a flat sheaf of modules to a flat sheaf of modules.",
      "statement": "theorem isFlat_extendScalars (hG : SheafOfModules.IsFlat G) :\n    SheafOfModules.IsFlat ((extendScalars f).obj G)",
@@ -28598,7 +28598,7 @@
     {
      "name": "Stacks.Examples.exists_faithfullyFlat_free_baseChange_directSum",
      "kind": "theorem",
-     "line": 328,
+     "line": 329,
      "private": false,
      "doc": "**Stacks 05VF.** A countable direct sum of rank one locally free modules is projective and\nbecomes free after a faithfully flat base change.",
      "statement": "theorem exists_faithfullyFlat_free_baseChange_directSum {R : Type u} [CommRing R]\n    (L : ℕ → Type u) [∀ n, AddCommGroup (L n)] [∀ n, Module R (L n)]\n    (hL : ∀ n, Module.IsFiniteLocallyFreeOfRank R (L n) 1) :\n    ∃ (S : Type u) (_ : CommRing S) (_ : Algebra R S),\n      Module.Projective R (⨁ n, L n) ∧ Module.FaithfullyFlat R S ∧\n        Module.Free S (S ⊗[R] (⨁ n, L n))",
@@ -37734,7 +37734,7 @@
     {
      "name": "AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isThickening",
      "kind": "theorem",
-     "line": 136,
+     "line": 137,
      "private": false,
      "doc": "**Stacks 05ZQ.** Let `S` be a scheme and let `G ⊂ X` be a thickening of algebraic spaces\nover `S`, of arbitrary order. Let `V` be an object of the spaces-étale site of `G` whose\nunderlying algebraic space is affine. Then restriction of global regular functions\n`Γ(U, 𝒪_U) → Γ(V, 𝒪_V)` is surjective, where `U` is the object of the spaces-étale site of `X`\nwhose base change along the inclusion is isomorphic to `V`, and the map is pullback along the\ncomposite `V ≅ G ×_X U ⟶ U` of that isomorphism with the cartesian projection.\n\nIn the notation of the source, `G` is `X`, `X` is `X'`, and `V` is the source's `U`: the object\n`U` here is the source's `U'` with `U = X ×_{X'} U'`, and `Γ(U, 𝒪_U)` is the source's\n`Γ(U, 𝒪_{X'})`, the sections of `𝒪_{X'}` read on `X_{spaces,étale}` through Stacks 05ZM.\n\nBase change along the inclusion is essentially surjective at a thickening of arbitrary order,\n`AlgebraicGeometry.Space.essSurj_spacesBaseChange_of_isThickening`; the instance is discharged\nin the statement, so no part of Stacks 05ZH is granted. The object `U` and the isomorphism are\nthe `CategoryTheory.Functor.objPreimage` and `CategoryTheory.Functor.objObjPreimageIso` of that\nessential surjectivity. Affineness of `V` transported across the isomorphism makes\n`AlgebraicGeometry.Space.surjective_globalFunctionsMap_spacesBaseChange_projection_of_isThickening`\napply at `U`, and pullback along an isomorphism is bijective on global regular functions.\n\nThis is the sole 05ZQ registration. The former conditional siblings\n`AlgebraicGeometry.Space.surjective_globalFunctionsMap_projection_of_isThickening` and\n`AlgebraicGeometry.Space.surjective_globalFunctionsMap_of_isFirstOrderThickening`, which grant\nthe hypotheses of Stacks 07VS, are unregistered steps.",
      "statement": "theorem surjective_globalFunctionsMap_of_isThickening\n    (hG : IsThickening B S hS X G)\n    (V : SpacesEtale B S hS (IsThickening.space B S hS hG))\n    (hV : IsAffineSpace B S hS\n      ((SpacesEtale.toSpaces B S hS (IsThickening.space B S hS hG)).obj V).obj) :\n    letI : (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.EssSurj :=\n      essSurj_spacesBaseChange_of_isThickening B S hS hG\n    Function.Surjective (globalFunctionsMap B S hS\n      ((SpacesEtale.toSpaces B S hS (IsThickening.space B S hS hG)).map\n          ((spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.objObjPreimageIso\n            V).inv ≫\n        (spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).projection.app\n          ((spacesBaseChange B S hS (IsThickening.inclusion B S hS hG)).functor.objPreimage\n            V)))",

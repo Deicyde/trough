@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.Composite, ProbabilisticTheory.Composite.tmul, PositiveLinearMap.rslice, PositiveLinearMap.lslice, PositiveLinearMap.rslice_tmul, PositiveLinearMap.lslice_tmul, PositiveLinearMap.tensor, PositiveLinearMap.tensor_tmul
+lean: PhyslibAlpha.ProbabilisticTheory.Composite, PhyslibAlpha.ProbabilisticTheory.Composite.tmul, PositiveLinearMap.rslice, PositiveLinearMap.lslice, PositiveLinearMap.rslice_tmul, PositiveLinearMap.lslice_tmul, PositiveLinearMap.tensor, PositiveLinearMap.tensor_tmul
 statement: formalized
 proof: formalized
 ---
 
 # Composite systems
 
-The module `PhyslibAlpha.ProbabilisticTheory.Composite.TensorCone`, [PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean): 49 declarations (1 instance with no name), 32 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Composite.TensorCone`, [PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean): 49 declarations (1 instance with no name), 32 with a docstring.
 
 > Composite systems: the minimal and maximal tensor cones, composites, and nuclear systems.
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Composite.TensorCone`, [PhyslibAlph
 
 > * None.
 
-**`ProbabilisticTheory.Composite`**, an abbrev, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.Composite`**, an abbrev, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L74).
 
 > The observables of the composite of two systems: the tensor products `E ⊗ F`.
 
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Composite.TensorCone`, [PhyslibAlph
 abbrev Composite : Type _
 ```
 
-**`ProbabilisticTheory.Composite.tmul`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.Composite.tmul`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L77).
 
 > The product `x ⊗ y` of observables of the two parts, as a composite observable.
 
@@ -66,7 +66,7 @@ abbrev Composite.tmul (x : E) (y : F) : Composite E F
 
 ## A. Slices and product functionals
 
-**`PositiveLinearMap.rslice`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L90).
+**`PositiveLinearMap.rslice`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L90).
 
 > Apply a positive functional to the second factor.
 
@@ -74,7 +74,7 @@ abbrev Composite.tmul (x : E) (y : F) : Composite E F
 noncomputable def rslice (ψ : F →ₚ[ℝ] ℝ) : E ⊗[ℝ] F →ₗ[ℝ] E
 ```
 
-**`PositiveLinearMap.lslice`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L94).
+**`PositiveLinearMap.lslice`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L94).
 
 > Apply a positive functional to the first factor.
 
@@ -82,19 +82,19 @@ noncomputable def rslice (ψ : F →ₚ[ℝ] ℝ) : E ⊗[ℝ] F →ₗ[ℝ] E
 noncomputable def lslice (φ : E →ₚ[ℝ] ℝ) : E ⊗[ℝ] F →ₗ[ℝ] F
 ```
 
-**`PositiveLinearMap.rslice_tmul`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L98).
+**`PositiveLinearMap.rslice_tmul`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L98).
 
 ```lean
 lemma rslice_tmul (ψ : F →ₚ[ℝ] ℝ) (x : E) (y : F) : rslice ψ (x ⊗ₜ[ℝ] y) = ψ y • x
 ```
 
-**`PositiveLinearMap.lslice_tmul`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L102).
+**`PositiveLinearMap.lslice_tmul`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L102).
 
 ```lean
 lemma lslice_tmul (φ : E →ₚ[ℝ] ℝ) (x : E) (y : F) : lslice φ (x ⊗ₜ[ℝ] y) = φ x • y
 ```
 
-**`PositiveLinearMap.tensor`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L106).
+**`PositiveLinearMap.tensor`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L106).
 
 > The product functional `φ ⊗ ψ`.
 
@@ -102,21 +102,21 @@ lemma lslice_tmul (φ : E →ₚ[ℝ] ℝ) (x : E) (y : F) : lslice φ (x ⊗ₜ
 noncomputable def tensor (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) : E ⊗[ℝ] F →ₗ[ℝ] ℝ
 ```
 
-**`PositiveLinearMap.tensor_tmul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L110).
+**`PositiveLinearMap.tensor_tmul`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L110).
 
 ```lean
 lemma tensor_tmul (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (x : E) (y : F) :
     tensor φ ψ (x ⊗ₜ[ℝ] y) = φ x * ψ y
 ```
 
-**`PositiveLinearMap.tensor_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L114).
+**`PositiveLinearMap.tensor_apply`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L114).
 
 ```lean
 lemma tensor_apply (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (z : E ⊗[ℝ] F) :
     tensor φ ψ z = φ (rslice ψ z)
 ```
 
-**`PositiveLinearMap.tensor_apply_eq_lslice`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L118).
+**`PositiveLinearMap.tensor_apply_eq_lslice`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L118).
 
 ```lean
 lemma tensor_apply_eq_lslice (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (z : E ⊗[ℝ] F) :
@@ -125,7 +125,7 @@ lemma tensor_apply_eq_lslice (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (
 
 ## B. The minimal and the maximal cone
 
-**`ProbabilisticTheory.minTensorCone`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L138).
 
 > The minimal tensor cone: sums of products of nonnegative observables.
 
@@ -133,7 +133,7 @@ lemma tensor_apply_eq_lslice (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (
 noncomputable def minTensorCone : PointedCone ℝ (E ⊗[ℝ] F)
 ```
 
-**`ProbabilisticTheory.maxTensorCone`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L144).
+**`PhyslibAlpha.ProbabilisticTheory.maxTensorCone`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L144).
 
 > The maximal tensor cone: composite observables to which no product of positive functionals
 > assigns a negative value.
@@ -142,21 +142,21 @@ noncomputable def minTensorCone : PointedCone ℝ (E ⊗[ℝ] F)
 noncomputable def maxTensorCone : PointedCone ℝ (E ⊗[ℝ] F)
 ```
 
-**`ProbabilisticTheory.tmul_mem_minTensorCone`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.tmul_mem_minTensorCone`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L147).
 
 ```lean
 lemma tmul_mem_minTensorCone {x : E} {y : F} (hx : 0 ≤ x) (hy : 0 ≤ y) :
     x ⊗ₜ[ℝ] y ∈ minTensorCone E F
 ```
 
-**`ProbabilisticTheory.smul_mem_minTensorCone`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L152).
+**`PhyslibAlpha.ProbabilisticTheory.smul_mem_minTensorCone`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L152).
 
 ```lean
 lemma smul_mem_minTensorCone {c : ℝ} (hc : 0 ≤ c) {w : E ⊗[ℝ] F} (hw : w ∈ minTensorCone E F) :
     c • w ∈ minTensorCone E F
 ```
 
-**`ProbabilisticTheory.minTensorCone_induction`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L159).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone_induction`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L159).
 
 > An induction principle for the minimal cone: a property of composite observables that holds
 > for products of nonnegative observables and is stable under sums and nonnegative multiples holds
@@ -169,7 +169,7 @@ lemma minTensorCone_induction {p : E ⊗[ℝ] F → Prop} {z : E ⊗[ℝ] F} (hz
     p z
 ```
 
-**`ProbabilisticTheory.tensor_eq_dualDistrib`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L172).
+**`PhyslibAlpha.ProbabilisticTheory.tensor_eq_dualDistrib`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L172).
 
 > The product functional of positive functionals is the pairing with their dual tensor.
 
@@ -178,7 +178,7 @@ lemma tensor_eq_dualDistrib (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ) (z
     tensor φ ψ z = dualDistrib ℝ E F (φ.toLinearMap ⊗ₜ[ℝ] ψ.toLinearMap) z
 ```
 
-**`ProbabilisticTheory.mem_maxTensorCone`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L180).
+**`PhyslibAlpha.ProbabilisticTheory.mem_maxTensorCone`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L180).
 
 > A composite observable is in the maximal cone exactly when every product of positive
 > functionals assigns it a nonnegative value.
@@ -188,7 +188,7 @@ lemma mem_maxTensorCone {z : E ⊗[ℝ] F} :
     z ∈ maxTensorCone E F ↔ ∀ (φ : E →ₚ[ℝ] ℝ) (ψ : F →ₚ[ℝ] ℝ), 0 ≤ tensor φ ψ z
 ```
 
-**`ProbabilisticTheory.minTensorCone_le_maxTensorCone`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L189).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone_le_maxTensorCone`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L189).
 
 > Every observable in the minimal cone is in the maximal cone.
 
@@ -198,13 +198,13 @@ lemma minTensorCone_le_maxTensorCone : minTensorCone E F ≤ maxTensorCone E F
 
 ## C. Tensor products of positive maps
 
-**`ProbabilisticTheory.posCone_map_le`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L198).
+**`PhyslibAlpha.ProbabilisticTheory.posCone_map_le`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L198).
 
 ```lean
 lemma posCone_map_le (φ : E →ₚ[ℝ] E') : (PosCone E).map φ.toLinearMap ≤ PosCone E'
 ```
 
-**`ProbabilisticTheory.minTensorCone_map_le`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L203).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone_map_le`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L203).
 
 > Tensor products of positive maps preserve the minimal cone.
 
@@ -214,7 +214,7 @@ lemma minTensorCone_map_le (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') :
       minTensorCone E' F'
 ```
 
-**`ProbabilisticTheory.maxTensorCone_map_le`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L210).
+**`PhyslibAlpha.ProbabilisticTheory.maxTensorCone_map_le`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L210).
 
 > Tensor products of positive maps preserve the maximal cone.
 
@@ -224,7 +224,7 @@ lemma maxTensorCone_map_le (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') :
       maxTensorCone E' F'
 ```
 
-**`ProbabilisticTheory.map_mem_minTensorCone`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.map_mem_minTensorCone`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L216).
 
 ```lean
 lemma map_mem_minTensorCone (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') {z : E ⊗[ℝ] F}
@@ -232,7 +232,7 @@ lemma map_mem_minTensorCone (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') {z :
     TensorProduct.map φ.toLinearMap ψ.toLinearMap z ∈ minTensorCone E' F'
 ```
 
-**`ProbabilisticTheory.map_mem_maxTensorCone`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L221).
+**`PhyslibAlpha.ProbabilisticTheory.map_mem_maxTensorCone`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L221).
 
 ```lean
 lemma map_mem_maxTensorCone (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') {z : E ⊗[ℝ] F}
@@ -242,7 +242,7 @@ lemma map_mem_maxTensorCone (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') {z :
 
 ## D. Composites
 
-**`ProbabilisticTheory.IsArchimedeanTensorCone`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L232).
+**`PhyslibAlpha.ProbabilisticTheory.IsArchimedeanTensorCone`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L232).
 
 > A cone of composite observables is Archimedean when a composite observable that becomes
 > nonnegative after adding any positive multiple of the unit `1 ⊗ 1` is already nonnegative.
@@ -251,7 +251,7 @@ lemma map_mem_maxTensorCone (φ : E →ₚ[ℝ] E') (ψ : F →ₚ[ℝ] F') {z :
 def IsArchimedeanTensorCone (C : PointedCone ℝ (E ⊗[ℝ] F)) : Prop
 ```
 
-**`ProbabilisticTheory.CompositeCone`**, a structure, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L238).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone`**, a structure, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L238).
 
 > A composite of two systems: a choice of nonnegative composite observables that contains every
 > product of nonnegative observables and that no product of positive functionals makes negative.
@@ -266,33 +266,33 @@ structure CompositeCone where
   le_max : toPointedCone ≤ maxTensorCone E F
 ```
 
-**An instance with no name**, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L248).
+**An instance with no name**, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L248).
 
 ```lean
 instance : SetLike (CompositeCone E F) (E ⊗[ℝ] F)
 ```
 
-**`ProbabilisticTheory.CompositeCone.mem_toPointedCone`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L253).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.mem_toPointedCone`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L253).
 
 ```lean
 lemma mem_toPointedCone {C : CompositeCone E F} {z : E ⊗[ℝ] F} :
     z ∈ C.toPointedCone ↔ z ∈ C
 ```
 
-**`ProbabilisticTheory.CompositeCone.ext`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L257).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.ext`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L257).
 
 ```lean
 lemma ext {C D : CompositeCone E F} (h : ∀ z, z ∈ C ↔ z ∈ D) : C = D
 ```
 
-**`ProbabilisticTheory.CompositeCone.tmul_mem`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L259).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tmul_mem`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L259).
 
 ```lean
 lemma tmul_mem (C : CompositeCone E F) {x : E} {y : F} (hx : 0 ≤ x) (hy : 0 ≤ y) :
     x ⊗ₜ[ℝ] y ∈ C
 ```
 
-**`ProbabilisticTheory.CompositeCone.tensor_nonneg`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L264).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tensor_nonneg`**, a lemma, [line 264](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L264).
 
 > Every product of positive functionals is nonnegative on a composite.
 
@@ -301,7 +301,7 @@ lemma tensor_nonneg (C : CompositeCone E F) (φ : E →ₚ[ℝ] ℝ) (ψ : F →
     (hz : z ∈ C) : 0 ≤ tensor φ ψ z
 ```
 
-**`ProbabilisticTheory.CompositeCone.instModuleNNReal`**, an instance, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L269).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.instModuleNNReal`**, an instance, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L269).
 
 > The elements of a composite form an `ℝ≥0`-module.
 
@@ -309,7 +309,7 @@ lemma tensor_nonneg (C : CompositeCone E F) (φ : E →ₚ[ℝ] ℝ) (ψ : F →
 instance instModuleNNReal (C : CompositeCone E F) : Module ℝ≥0 C.toPointedCone
 ```
 
-**`ProbabilisticTheory.CompositeCone.minimal`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L280).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.minimal`**, a def, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L280).
 
 > The minimal composite.
 
@@ -317,7 +317,7 @@ instance instModuleNNReal (C : CompositeCone E F) : Module ℝ≥0 C.toPointedCo
 noncomputable def minimal : CompositeCone E F
 ```
 
-**`ProbabilisticTheory.CompositeCone.maximal`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L285).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.maximal`**, a def, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L285).
 
 > The maximal composite.
 
@@ -325,7 +325,7 @@ noncomputable def minimal : CompositeCone E F
 noncomputable def maximal : CompositeCone E F
 ```
 
-**`ProbabilisticTheory.CompositeCone.IsArchimedean`**, a def, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L290).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.IsArchimedean`**, a def, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L290).
 
 > A composite is Archimedean when a composite observable that becomes nonnegative after adding
 > any positive multiple of the unit `1 ⊗ 1` is already nonnegative.
@@ -334,7 +334,7 @@ noncomputable def maximal : CompositeCone E F
 def IsArchimedean (C : CompositeCone E F) : Prop
 ```
 
-**`ProbabilisticTheory.CompositeCone.tmulRight`**, a def, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L294).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tmulRight`**, a def, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L294).
 
 > For fixed `0 ≤ y₀`, tensoring on the right with `y₀` maps nonnegative observables of `E`
 > `ℝ≥0`-linearly into any composite.
@@ -344,14 +344,14 @@ def tmulRight (C : CompositeCone E F) {y₀ : F} (hy₀ : 0 ≤ y₀) :
     PosCone E →ₗ[ℝ≥0] C.toPointedCone
 ```
 
-**`ProbabilisticTheory.CompositeCone.tmulRight_apply`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L301).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tmulRight_apply`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L301).
 
 ```lean
 lemma tmulRight_apply (C : CompositeCone E F) {y₀ : F} (hy₀ : 0 ≤ y₀) (x : PosCone E) :
     (C.tmulRight hy₀ x : E ⊗[ℝ] F) = (x : E) ⊗ₜ[ℝ] y₀
 ```
 
-**`ProbabilisticTheory.CompositeCone.tmulLeft`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L306).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tmulLeft`**, a def, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L306).
 
 > For fixed `0 ≤ x₀`, tensoring on the left with `x₀` maps nonnegative observables of `F`
 > `ℝ≥0`-linearly into any composite.
@@ -361,14 +361,14 @@ def tmulLeft (C : CompositeCone E F) {x₀ : E} (hx₀ : 0 ≤ x₀) :
     PosCone F →ₗ[ℝ≥0] C.toPointedCone
 ```
 
-**`ProbabilisticTheory.CompositeCone.tmulLeft_apply`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L313).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.tmulLeft_apply`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L313).
 
 ```lean
 lemma tmulLeft_apply (C : CompositeCone E F) {x₀ : E} (hx₀ : 0 ≤ x₀) (y : PosCone F) :
     (C.tmulLeft hx₀ y : E ⊗[ℝ] F) = x₀ ⊗ₜ[ℝ] (y : F)
 ```
 
-**`ProbabilisticTheory.exists_eq_sub_minTensorCone`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L320).
+**`PhyslibAlpha.ProbabilisticTheory.exists_eq_sub_minTensorCone`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L320).
 
 > Every composite observable is a difference of two sums of products of nonnegative
 > observables.
@@ -380,7 +380,7 @@ lemma exists_eq_sub_minTensorCone (t : E ⊗[ℝ] F) :
 
 ## E. The closure of the minimal cone and nuclear systems
 
-**`ProbabilisticTheory.exists_tmul_add_smul_mem`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L341).
+**`PhyslibAlpha.ProbabilisticTheory.exists_tmul_add_smul_mem`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L341).
 
 > A product plus a large enough multiple of `1 ⊗ 1` lies in the minimal cone:
 > `x ⊗ y + (a * b) • (1 ⊗ 1)` is half the sum of `(a • 1 ± x) ⊗ (b • 1 ± y)`.
@@ -390,7 +390,7 @@ lemma exists_tmul_add_smul_mem (x : E) (y : F) :
     ∃ t : ℝ, x ⊗ₜ[ℝ] y + t • ((1 : E) ⊗ₜ[ℝ] (1 : F)) ∈ minTensorCone E F
 ```
 
-**`ProbabilisticTheory.exists_add_smul_mem`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L356).
+**`PhyslibAlpha.ProbabilisticTheory.exists_add_smul_mem`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L356).
 
 > Every composite observable plus a large enough multiple of `1 ⊗ 1` lies in the minimal cone.
 
@@ -399,7 +399,7 @@ lemma exists_add_smul_mem (z : E ⊗[ℝ] F) :
     ∃ t : ℝ, z + t • ((1 : E) ⊗ₜ[ℝ] (1 : F)) ∈ minTensorCone E F
 ```
 
-**`ProbabilisticTheory.isDominatedCone_minTensorCone`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L370).
+**`PhyslibAlpha.ProbabilisticTheory.isDominatedCone_minTensorCone`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L370).
 
 > The minimal cone is a convex cone dominated by `1 ⊗ 1`.
 
@@ -408,7 +408,7 @@ lemma isDominatedCone_minTensorCone :
     IsDominatedCone (minTensorCone E F : Set (E ⊗[ℝ] F)) ((1 : E) ⊗ₜ[ℝ] (1 : F))
 ```
 
-**`ProbabilisticTheory.minTensorClosure`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L381).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorClosure`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L381).
 
 > The Archimedean closure of the minimal cone: composite observables that become sums of products
 > of nonnegative observables after adding any positive multiple of the unit `1 ⊗ 1`.
@@ -417,14 +417,14 @@ lemma isDominatedCone_minTensorCone :
 def minTensorClosure : Set (E ⊗[ℝ] F)
 ```
 
-**`ProbabilisticTheory.minTensorCone_subset_closure`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L384).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone_subset_closure`**, a lemma, [line 384](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L384).
 
 ```lean
 lemma minTensorCone_subset_closure :
     (minTensorCone E F : Set (E ⊗[ℝ] F)) ⊆ minTensorClosure E F
 ```
 
-**`ProbabilisticTheory.minTensorClosure_subset_maxTensorCone`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L393).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorClosure_subset_maxTensorCone`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L393).
 
 > The closure of the minimal cone lies in the maximal cone.
 
@@ -433,7 +433,7 @@ lemma minTensorClosure_subset_maxTensorCone :
     minTensorClosure E F ⊆ (maxTensorCone E F : Set (E ⊗[ℝ] F))
 ```
 
-**`ProbabilisticTheory.IsArchimedeanTensorCone.closure_subset`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L406).
+**`PhyslibAlpha.ProbabilisticTheory.IsArchimedeanTensorCone.closure_subset`**, a lemma, [line 406](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L406).
 
 > An Archimedean cone containing the minimal cone contains its closure.
 
@@ -443,7 +443,7 @@ lemma IsArchimedeanTensorCone.closure_subset {C : PointedCone ℝ (E ⊗[ℝ] F)
     minTensorClosure E F ⊆ C
 ```
 
-**`ProbabilisticTheory.CompositeCone.IsArchimedean.closure_subset`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L411).
+**`PhyslibAlpha.ProbabilisticTheory.CompositeCone.IsArchimedean.closure_subset`**, a lemma, [line 411](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L411).
 
 > An Archimedean composite contains the closure of the minimal cone.
 
@@ -452,7 +452,7 @@ lemma CompositeCone.IsArchimedean.closure_subset {C : CompositeCone E F} (hC : C
     minTensorClosure E F ⊆ C
 ```
 
-**`ProbabilisticTheory.IsNuclear`**, a def, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L417).
+**`PhyslibAlpha.ProbabilisticTheory.IsNuclear`**, a def, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L417).
 
 > A system is nuclear when it composes uniquely with every Archimedean system: every composite
 > observable in the maximal cone lies in the closure of the minimal cone.
@@ -461,7 +461,7 @@ lemma CompositeCone.IsArchimedean.closure_subset {C : CompositeCone E F} (hC : C
 def IsNuclear : Prop
 ```
 
-**`ProbabilisticTheory.mem_maxTensorCone_iff_rslice`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L427).
+**`PhyslibAlpha.ProbabilisticTheory.mem_maxTensorCone_iff_rslice`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean#L427).
 
 > For Archimedean `E`, a composite observable is in the maximal cone exactly when applying any
 > positive functional to the second factor leaves a nonnegative observable.
@@ -473,8 +473,8 @@ lemma mem_maxTensorCone_iff_rslice {z : E ⊗[ℝ] F} :
 
 ## Depends on
 
-- [Ordered positive cones](../../../physlib/probabilistictheory/orderunit/cone.md)
 - [Separation from dominated cones](../../mathematics/part-01/convex/dominatedcone.md)
+- [Ordered positive cones (PhyslibAlpha)](../orderunit/cone.md)
 
 ## Proof depends on
 
@@ -482,4 +482,4 @@ lemma mem_maxTensorCone_iff_rslice {z : E ⊗[ℝ] F} :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean)

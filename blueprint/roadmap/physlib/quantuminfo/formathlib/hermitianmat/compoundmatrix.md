@@ -8,14 +8,14 @@ proof: formalized
 
 # Compound matrices on `HermitianMat`
 
-The module `QuantumInfo.ForMathlib.HermitianMat.CompoundMatrix`, [QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean): 4 declarations, 4 with a docstring.
+The module `QuantumInfo.ForMathlib.HermitianMat.CompoundMatrix`, [QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean): 4 declarations, 4 with a docstring.
 
 > This file lifts the compound-matrix construction from
 > `QuantumInfo.ForMathlib.Majorization` to `HermitianMat`. The compound matrix of
 > a Hermitian matrix is again Hermitian, and inherits the natural spectral and
 > positivity properties of the original.
 
-**`HermitianMat.compoundHermitian`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L29).
+**`HermitianMat.compoundHermitian`**, a def, [line 29](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L29).
 
 > The `k`-th compound matrix of a Hermitian matrix, packaged as a
 > `HermitianMat`.
@@ -25,7 +25,7 @@ noncomputable def compoundHermitian (A : HermitianMat d ℂ) (k : ℕ) :
     HermitianMat {S : Finset d // S.card = k} ℂ
 ```
 
-**`HermitianMat.compoundHermitian_eigenvalues`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L37).
+**`HermitianMat.compoundHermitian_eigenvalues`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L37).
 
 > The eigenvalues of `compoundHermitian A k` are the products of eigenvalues
 > of `A` over `k`-subsets, up to an index permutation.
@@ -37,7 +37,7 @@ lemma compoundHermitian_eigenvalues (A : HermitianMat d ℂ) (k : ℕ) :
         fun S => ∏ i : Fin k, A.H.eigenvalues (S.1.orderEmbOfFin S.2 i)
 ```
 
-**`HermitianMat.compoundHermitian_nonneg`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L49).
+**`HermitianMat.compoundHermitian_nonneg`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L49).
 
 > `compoundHermitian` preserves positive semidefiniteness.
 
@@ -46,7 +46,7 @@ lemma compoundHermitian_nonneg (A : HermitianMat d ℂ) (hA : 0 ≤ A) (k : ℕ)
     0 ≤ compoundHermitian A k
 ```
 
-**`HermitianMat.compoundHermitian_conj`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L61).
+**`HermitianMat.compoundHermitian_conj`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean#L61).
 
 > `compoundHermitian` distributes over `HermitianMat.conj`: the compound of
 > `A.conj B` equals the conjugation of `compoundHermitian A k` by `compoundMatrix B k`.
@@ -64,4 +64,4 @@ lemma compoundHermitian_conj (A : HermitianMat d ℂ) (B : Matrix d d ℂ) (k : 
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean)
+- [QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean)

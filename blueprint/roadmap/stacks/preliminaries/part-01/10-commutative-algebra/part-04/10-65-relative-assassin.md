@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.65 Relative assassin
 
-Section 10.65 of the Stacks Project, [Tag 05GA](https://stacks.math.columbia.edu/tag/05GA). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.65 of the Stacks Project, [Tag 05GA](https://stacks.math.columbia.edu/tag/05GA). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05GB, a lemma
 
 [Tag 05GB](https://stacks.math.columbia.edu/tag/05GB) in the Stacks Project.
 
-**`Module.relativeAssassin_comparison_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelativeAssassin.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RelativeAssassin.lean#L1096).
+**`Module.relativeAssassin_comparison_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelativeAssassin.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/RelativeAssassin.lean#L1096).
 
 > Let `R → S` be a ring map and let `N` be an `S`-module. A prime `𝔮` of `S` is associated to an
 > `S`-module `P` when it is the annihilator of some element of `P`, that is
@@ -69,7 +69,7 @@ public theorem _root_.Module.relativeAssassin_comparison_annihilator (R : Type u
 
 [Tag 05GC](https://stacks.math.columbia.edu/tag/05GC) in the Stacks Project.
 
-**`Module.relativeAssassin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelativeAssassin/Defs.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/RelativeAssassin/Defs.lean#L101).
+**`Module.relativeAssassin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RelativeAssassin/Defs.lean, line 101](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/RelativeAssassin/Defs.lean#L101).
 
 > The **relative assassin** `Ass_{S/R}(N)` of an `S`-module `N` over a ring map `R → S`: the
 > set of primes `𝔮` of `S` which, with `𝔭 = R ∩ 𝔮` the contraction of `𝔮` to `R`, are associated
@@ -84,7 +84,7 @@ public def relativeAssassin : Set (PrimeSpectrum S)
 
 [Tag 0312](https://stacks.math.columbia.edu/tag/0312) in the Stacks Project.
 
-**`associatedPrimes.tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L565).
+**`associatedPrimes.tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean, line 565](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatBaseChange.lean#L565).
 
 > Let `R → S` be a ring map, let `M` be an `R`-module and let `N` be an `S`-module which is flat
 > as an `R`-module. Then `Ass_S(N ⊗_R M) ⊇ ⋃_{𝔭 ∈ Ass_R(M)} Ass_S(N / 𝔭N)`, and if `R` is
@@ -115,7 +115,7 @@ public theorem associatedPrimes.tensorProduct_of_flat {R S M N : Type*} [CommRin
 
 [Tag 05C1](https://stacks.math.columbia.edu/tag/05C1) in the Stacks Project.
 
-**`Stacks.AssociatedPrimes.Localization.assPrimes_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean#L436). The attribute's comment: “Exact-annihilator Ass (00LA); S ⊗\_R K and N ⊗\_R K modelled by their localization universal properties; R generalized from a domain to any ring with K its total ring of fractions.”.
+**`Stacks.AssociatedPrimes.Localization.assPrimes_chain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Localization.lean#L436). The attribute's comment: “Exact-annihilator Ass (00LA); S ⊗\_R K and N ⊗\_R K modelled by their localization universal properties; R generalized from a domain to any ring with K its total ring of fractions.”.
 
 > **Stacks 05C1 / Lemma 10.65.4.**  Let `R → S` be a ring map, `N` an `S`-module that is flat
 > over `R`, and `K` the fraction field of `R` (more generally, its total ring of fractions).
@@ -142,7 +142,7 @@ theorem assPrimes_chain [Module.Flat R N] (μN : N →ₗ[R] NK) (μNₛ : N →
 
 [Tag 05C2](https://stacks.math.columbia.edu/tag/05C2) in the Stacks Project.
 
-**`assStacks_tensorProduct_of_flat_fiberRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatTensorProductFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatTensorProductFibre.lean#L313). The attribute's comment: “Every `Ass` is that of Definition 00LA (`IsAssociatedPrimeStacks`), over `R`, over `S` and over the fibre rings; the fibre module `N ⊗_R κ(𝔭)` is written `(S ⊗[R] κ(𝔭)) ⊗[S] N`.”.
+**`assStacks_tensorProduct_of_flat_fiberRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatTensorProductFibre.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Ideal/AssociatedPrime/FlatTensorProductFibre.lean#L311). The attribute's comment: “Every `Ass` is that of Definition 00LA (`IsAssociatedPrimeStacks`), over `R`, over `S` and over the fibre rings; the fibre module `N ⊗_R κ(𝔭)` is written `(S ⊗[R] κ(𝔭)) ⊗[S] N`.”.
 
 > **Stacks Tag 05C2.** Let `R → S` be a ring map, let `M` be an `R`-module and let `N` be an
 > `S`-module which is flat as an `R`-module. Viewing `Spec(S ⊗_R κ(𝔭))` as a subset of `Spec(S)`
@@ -184,4 +184,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.65, Tag 05GA](https://stacks.math.columbia.edu/tag/05GA)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

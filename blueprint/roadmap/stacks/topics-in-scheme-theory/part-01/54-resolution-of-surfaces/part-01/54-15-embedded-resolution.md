@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.15 Embedded resolution
 
-Section 54.15 of the Stacks Project, [Tag 0BI3](https://stacks.math.columbia.edu/tag/0BI3). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 54.15 of the Stacks Project, [Tag 0BI3](https://stacks.math.columbia.edu/tag/0BI3). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BI4, a lemma
 
 [Tag 0BI4](https://stacks.math.columbia.edu/tag/0BI4) in the Stacks Project.
 
-**`AlgebraicGeometry.resolveCurve_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveResolution.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveResolution.lean#L549). References: EGA IV (7.9.1), “more general”.
+**`AlgebraicGeometry.resolveCurve_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveResolution.lean, line 549](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveResolution.lean#L549). References: EGA IV (7.9.1), “more general”.
 
 > **Stacks Project, Tag 0BI4.** For a one-dimensional integral Noetherian scheme `Y` the
 > following are equivalent: there is an alteration `X → Y` with `X` regular; there is a resolution
@@ -36,7 +36,7 @@ theorem resolveCurve_tfae (Y : Scheme.{u}) [IsIntegral Y] [IsNoetherian Y]
 
 [Tag 0BI5](https://stacks.math.columbia.edu/tag/0BI5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_pointBlowupChain_chainTransform_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/AmbientCurveResolution.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/AmbientCurveResolution.lean#L257).
+**`AlgebraicGeometry.exists_pointBlowupChain_chainTransform_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/AmbientCurveResolution.lean, line 257](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/AmbientCurveResolution.lean#L257).
 
 > Let `X` be a Noetherian scheme and let `Y ⊆ X` be an integral closed subscheme of dimension
 > one admitting an alteration by a regular scheme — one of the equivalent conditions of
@@ -57,7 +57,7 @@ public theorem exists_pointBlowupChain_chainTransform_isRegular {X : Scheme.{u}}
 
 [Tag 0BI6](https://stacks.math.columbia.edu/tag/0BI6) in the Stacks Project.
 
-**`AlgebraicGeometry.IntersectionMultiplicityContext.intersectionMultiplicity_natCast_eq_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/IntersectionMultiplicity.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/IntersectionMultiplicity.lean#L201).
+**`AlgebraicGeometry.IntersectionMultiplicityContext.intersectionMultiplicity_natCast_eq_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/IntersectionMultiplicity.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/IntersectionMultiplicity.lean#L201).
 
 > **Stacks Project, Tag 0BI6.** The intersection multiplicity at `p` is the length of the
 > local ring of the scheme-theoretic intersection as an `𝒪_{X,p}`-module.
@@ -73,7 +73,7 @@ theorem intersectionMultiplicity_natCast_eq_length
 
 [Tag 0BI7](https://stacks.math.columbia.edu/tag/0BI7) in the Stacks Project.
 
-**`AlgebraicGeometry.strictTransformToCurve_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L654). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.strictTransformToCurve_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 654](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L654). The attribute's comment: “part (1)”.
 
 > Part (1): a curve regular at the centre is unchanged by strict transform.
 
@@ -87,7 +87,7 @@ public theorem strictTransformToCurve_isIso
     IsIso (transformToCurve Y p hp)
 ```
 
-**`AlgebraicGeometry.strictTransform_exceptional_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L726). The attribute's comment: “part (2), unique point”.
+**`AlgebraicGeometry.strictTransform_exceptional_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 726](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L726). The attribute's comment: “part (2), unique point”.
 
 > Part (2): the strict transform has exactly one point on the exceptional fibre.
 
@@ -103,7 +103,7 @@ public theorem strictTransform_exceptional_unique
       q ∈ (AlgebraicGeometry.exceptionalIdeal (centerIdeal p hp)).support
 ```
 
-**`AlgebraicGeometry.strictTransform_exceptional_multiplicity_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 776](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L776). The attribute's comment: “part (2), multiplicity”.
+**`AlgebraicGeometry.strictTransform_exceptional_multiplicity_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 776](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L776). The attribute's comment: “part (2), multiplicity”.
 
 > Part (2): the exceptional intersection has multiplicity one.
 
@@ -122,7 +122,7 @@ public theorem
       (AlgebraicGeometry.exceptionalIdeal (centerIdeal p hp)) q hq = 1
 ```
 
-**`AlgebraicGeometry.strictTransform_intersectionMultiplicity_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 1168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L1168). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.strictTransform_intersectionMultiplicity_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean, line 1168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveStrictTransform.lean#L1168). The attribute's comment: “part (3)”.
 
 > Part (3): an intersection surviving the blowup has smaller multiplicity.
 
@@ -146,7 +146,7 @@ public theorem
 
 [Tag 0BI8](https://stacks.math.columbia.edu/tag/0BI8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_pointBlowupChain_familyTransform_isRegular_pairwise_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveFamilyResolution.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveFamilyResolution.lean#L1195).
+**`AlgebraicGeometry.exists_pointBlowupChain_familyTransform_isRegular_pairwise_disjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveFamilyResolution.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CurveFamilyResolution.lean#L1195).
 
 > **Stacks Project, Tag 0BI8.** Let `X` be a Noetherian scheme and let
 > `Y : Fin n → X.IdealSheafData` be pairwise distinct integral closed subschemes of dimension one,
@@ -173,7 +173,7 @@ public theorem exists_pointBlowupChain_familyTransform_isRegular_pairwise_disjoi
 
 [Tag 0BIB](https://stacks.math.columbia.edu/tag/0BIB) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.exists_pointBlowupChain_comap_isEffectiveCartierDivisor_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CartierInverseImage.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CartierInverseImage.lean#L403). The attribute's comment: “a closed subscheme containing no positive-dimensional irreducible component of a regular quasi-compact scheme of dimension at most two becomes an effective Cartier divisor after finitely many blowups at closed points lying over it”.
+**`Stacks.ResolutionOfSurfaces.exists_pointBlowupChain_comap_isEffectiveCartierDivisor_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CartierInverseImage.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/CartierInverseImage.lean#L403). The attribute's comment: “a closed subscheme containing no positive-dimensional irreducible component of a regular quasi-compact scheme of dimension at most two becomes an effective Cartier divisor after finitely many blowups at closed points lying over it”.
 
 > **Stacks Project, Tag 0BIB.** Let `X` be a regular scheme of dimension (at most) two which is
 > quasi-compact, and let `Z ⊆ X` be a closed subscheme containing no irreducible component of `X` of
@@ -210,7 +210,7 @@ public theorem exists_pointBlowupChain_comap_isEffectiveCartierDivisor_of_isRegu
 
 [Tag 0BIC](https://stacks.math.columbia.edu/tag/0BIC) in the Stacks Project.
 
-**`Stacks.ResolutionOfSurfaces.exists_pointBlowupChain_comap_support_eq_isStrictNormalCrossings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/NormalCrossingsResolution.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/NormalCrossingsResolution.lean#L156).
+**`Stacks.ResolutionOfSurfaces.exists_pointBlowupChain_comap_support_eq_isStrictNormalCrossings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/NormalCrossingsResolution.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/EmbeddedResolution/NormalCrossingsResolution.lean#L156).
 
 > **Stacks Project, Tag 0BIC.** Let `X` be a regular Noetherian scheme of dimension two and let
 > `Z ⊆ X` be a closed subscheme containing no irreducible component of `X` — the source's "proper
@@ -244,4 +244,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.15, Tag 0BI3](https://stacks.math.columbia.edu/tag/0BI3)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

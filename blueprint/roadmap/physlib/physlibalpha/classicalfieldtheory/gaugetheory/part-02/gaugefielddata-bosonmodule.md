@@ -8,7 +8,7 @@ proof: formalized
 
 # The bosonic module of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonModule`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean): 9 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonModule`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean): 9 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeFieldData.BosonMo
 
 ## A. The bosonic module
 
-**`GaugeFieldData.BosonModule`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L81).
+**`GaugeFieldData.BosonModule`**, an abbrev, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L81).
 
 > **The bosonic module of a gauge theory**: the product, over the bosonic species,
 > of their value spaces. One element of it is a value of the entire bosonic content of
@@ -66,7 +66,7 @@ abbrev BosonModule : Type
 
 ### A.1. The species projections and inclusions
 
-**`GaugeFieldData.projBosonValue`**, an abbrev, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L90).
+**`GaugeFieldData.projBosonValue`**, an abbrev, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L90).
 
 > The component of a bosonic configuration in one species.
 
@@ -75,7 +75,7 @@ abbrev projBosonValue (i : T.BosonSpecies) :
     T.BosonModule →ₗ[ℂ] T.BosonValue i
 ```
 
-**`GaugeFieldData.inclBosonValue`**, an abbrev, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L96).
+**`GaugeFieldData.inclBosonValue`**, an abbrev, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L96).
 
 > The inclusion of one bosonic species into the bosonic module, extending a value
 > of that species by zero in every other.
@@ -85,21 +85,21 @@ abbrev inclBosonValue (i : T.BosonSpecies) :
     T.BosonValue i →ₗ[ℂ] T.BosonModule
 ```
 
-**`GaugeFieldData.projBosonValue_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L103).
+**`GaugeFieldData.projBosonValue_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L103).
 
 ```lean
 lemma projBosonValue_apply (i : T.BosonSpecies) (v : T.BosonModule) :
     T.projBosonValue i v = v i
 ```
 
-**`GaugeFieldData.projBosonValue_inclBosonValue_self`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L106).
+**`GaugeFieldData.projBosonValue_inclBosonValue_self`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L106).
 
 ```lean
 lemma projBosonValue_inclBosonValue_self (i : T.BosonSpecies)
     (v : T.BosonValue i) : T.projBosonValue i (T.inclBosonValue i v) = v
 ```
 
-**`GaugeFieldData.projBosonValue_inclBosonValue_of_ne`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L112).
+**`GaugeFieldData.projBosonValue_inclBosonValue_of_ne`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L112).
 
 > A value of one species has no component in any other species: the inclusions of
 > distinct species have disjoint supports.
@@ -109,7 +109,7 @@ lemma projBosonValue_inclBosonValue_of_ne {i j : T.BosonSpecies} (h : i ≠ j)
     (v : T.BosonValue j) : T.projBosonValue i (T.inclBosonValue j v) = 0
 ```
 
-**`GaugeFieldData.sum_inclBosonValue_proj`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L119).
+**`GaugeFieldData.sum_inclBosonValue_proj`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L119).
 
 > **A bosonic configuration is the sum of its species components**. The product over
 > the species is their direct sum, the species type being finite, so nothing is lost in
@@ -120,7 +120,7 @@ lemma sum_inclBosonValue_proj (v : T.BosonModule) :
     ∑ i, T.inclBosonValue i (v i) = v
 ```
 
-**`GaugeFieldData.bosonModule_hom_ext`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L124).
+**`GaugeFieldData.bosonModule_hom_ext`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L124).
 
 > Two linear maps out of the bosonic module agreeing on every species are equal.
 
@@ -132,7 +132,7 @@ lemma bosonModule_hom_ext {N : Type} [AddCommGroup N] [Module ℂ N]
 
 ### A.2. The dimension of the bosonic module
 
-**`GaugeFieldData.finrank_bosonModule`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L140).
+**`GaugeFieldData.finrank_bosonModule`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean#L140).
 
 > **The dimension of the bosonic module is the sum of the dimensions of the
 > species**, each species contributing the number of complex components of its
@@ -149,4 +149,4 @@ lemma finrank_bosonModule :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean)

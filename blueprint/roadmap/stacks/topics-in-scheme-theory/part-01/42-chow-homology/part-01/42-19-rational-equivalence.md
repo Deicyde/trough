@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.19 Rational equivalence
 
-Section 42.19 of the Stacks Project, [Tag 02RV](https://stacks.math.columbia.edu/tag/02RV). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.19 of the Stacks Project, [Tag 02RV](https://stacks.math.columbia.edu/tag/02RV). 5 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02RW, a definition
 
 [Tag 02RW](https://stacks.math.columbia.edu/tag/02RW) in the Stacks Project.
 
-**`Stacks.Chow.exists_principalDivisorFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisorFamily.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisorFamily.lean#L110). The attribute's comment: “locally finite sums of principal divisors”.
+**`Stacks.Chow.exists_principalDivisorFamilySum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisorFamily.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DimensionFunction/PrincipalDivisorFamily.lean#L110). The attribute's comment: “locally finite sums of principal divisors”.
 
 > **Stacks 02RW.** A locally finite family of integral closed subschemes of `X` of
 > delta-dimension `k + 1`, each carrying a nonzero rational function, determines a cycle of
@@ -32,7 +32,7 @@ theorem exists_principalDivisorFamilySum (C : ChowSituation.{u}) {X : Scheme.{u}
       ∀ x : X, α.1 x = principalDivisorFamilyCoefficient C p W hW g x
 ```
 
-**`Stacks.Chow.IsRationallyEquivalentToZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L330). The attribute's comment: “rationally equivalent to zero”.
+**`Stacks.Chow.IsRationallyEquivalentToZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 330](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L330). The attribute's comment: “rationally equivalent to zero”.
 
 > **Stacks 02RW.** A `k`-cycle is rationally equivalent to zero when its coefficients are the
 > locally finite sum of the pushforwards of the principal divisors of nonzero rational functions
@@ -43,7 +43,7 @@ def IsRationallyEquivalentToZero (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X
     [LocallyOfFiniteType p] (k : ℤ) (α : CycleGroup C p k) : Prop
 ```
 
-**`Stacks.Chow.rationallyEquivalentToZero_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L352). The attribute's comment: “zero family”.
+**`Stacks.Chow.rationallyEquivalentToZero_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L352). The attribute's comment: “zero family”.
 
 > **Stacks 02RW.** The zero cycle is rationally equivalent to zero, via the empty family.
 
@@ -53,7 +53,7 @@ theorem rationallyEquivalentToZero_zero (C : ChowSituation.{u}) {X : Scheme.{u}}
     IsRationallyEquivalentToZero C p k 0
 ```
 
-**`Stacks.Chow.rationallyEquivalentToZero_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L363). The attribute's comment: “closure under addition”.
+**`Stacks.Chow.rationallyEquivalentToZero_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L363). The attribute's comment: “closure under addition”.
 
 > **Stacks 02RW.** The sum of two cycles rationally equivalent to zero is rationally
 > equivalent to zero, via the disjoint union of the two families.
@@ -66,7 +66,7 @@ theorem rationallyEquivalentToZero_add (C : ChowSituation.{u}) {X : Scheme.{u}}
     IsRationallyEquivalentToZero C p k (α + β)
 ```
 
-**`Stacks.Chow.rationallyEquivalentToZero_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L386). The attribute's comment: “closure under negation”.
+**`Stacks.Chow.rationallyEquivalentToZero_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L386). The attribute's comment: “closure under negation”.
 
 > **Stacks 02RW.** The negative of a cycle rationally equivalent to zero is rationally
 > equivalent to zero, via the inverses of the same rational functions.
@@ -78,7 +78,7 @@ theorem rationallyEquivalentToZero_neg (C : ChowSituation.{u}) {X : Scheme.{u}}
     IsRationallyEquivalentToZero C p k (-α)
 ```
 
-**`Stacks.Chow.rationalEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L402). The attribute's comment: “cycles rationally equivalent to zero”.
+**`Stacks.Chow.rationalEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 402](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L402). The attribute's comment: “cycles rationally equivalent to zero”.
 
 > **Stacks 02RW.** The subgroup of `k`-cycles rationally equivalent to zero.
 
@@ -87,7 +87,7 @@ def rationalEquivalences (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.S
     [LocallyOfFiniteType p] (k : ℤ) : AddSubgroup (CycleGroup C p k)
 ```
 
-**`Stacks.Chow.RationallyEquivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L419). The attribute's comment: “rational equivalence”.
+**`Stacks.Chow.RationallyEquivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 419](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L419). The attribute's comment: “rational equivalence”.
 
 > **Stacks 02RW.** Two `k`-cycles are rationally equivalent when their difference is a locally
 > finite sum of pushforwards of principal divisors.
@@ -97,7 +97,7 @@ abbrev RationallyEquivalent (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ 
     [LocallyOfFiniteType p] (k : ℤ) (α β : CycleGroup C p k) : Prop
 ```
 
-**`Stacks.Chow.chowGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L425). The attribute's comment: “Chow group”. References: SGA 6 XIV (4.1), “partial”.
+**`Stacks.Chow.chowGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean, line 425](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalenceDefs.lean#L425). The attribute's comment: “Chow group”. References: SGA 6 XIV (4.1), “partial”.
 
 > **Stacks 02RW.** The Chow group `A_k(X)` of `k`-cycles modulo rational equivalence.
 
@@ -110,7 +110,7 @@ abbrev chowGroup (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.S)
 
 [Tag 0GU3](https://stacks.math.columbia.edu/tag/0GU3) in the Stacks Project.
 
-**`Stacks.Chow.pointwiseDivisorDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L465). The attribute's comment: “pointwise\_divisor\_differential”.
+**`Stacks.Chow.pointwiseDivisorDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L465). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** The divisor differential from pointwise Milnor K₁-chains at the points of
 > relative dimension `k + 1` to pointwise Milnor K₀-chains at the points of relative dimension `k`:
@@ -123,7 +123,7 @@ def pointwiseDivisorDifferential (k : ℤ) :
     PointwiseKOneGroup C p k →+ PointwiseCycleGroup C p k
 ```
 
-**`Stacks.Chow.pointwiseDivisorDifferential_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L474). The attribute's comment: “pointwise\_divisor\_differential”.
+**`Stacks.Chow.pointwiseDivisorDifferential_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L474). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** The divisor differential satisfies the coordinatewise divisor formula.
 
@@ -132,7 +132,7 @@ theorem pointwiseDivisorDifferential_spec (k : ℤ) :
     IsPointwiseDivisorDifferential C p k (pointwiseDivisorDifferential C p k)
 ```
 
-**`Stacks.Chow.exists_pointwiseDivisorDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L487). The attribute's comment: “pointwise\_divisor\_differential”.
+**`Stacks.Chow.exists_pointwiseDivisorDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L487). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** There is a homomorphism from pointwise Milnor K₁-chains to pointwise Milnor
 > K₀-chains satisfying the coordinatewise divisor formula.
@@ -143,7 +143,7 @@ theorem exists_pointwiseDivisorDifferential (k : ℤ) :
       IsPointwiseDivisorDifferential C p k d
 ```
 
-**`Stacks.Chow.pointwiseChowClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L75). The attribute's comment: “the map from pointwise cycles to the Chow group”.
+**`Stacks.Chow.pointwiseChowClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L75). The attribute's comment: “the map from pointwise cycles to the Chow group”.
 
 > **Stacks 0GU3.** The class in the Chow group `A_k(X)` of a locally finite family of
 > degree-zero Milnor K-classes at the points of relative dimension `k`: the cycle it names,
@@ -153,7 +153,7 @@ theorem exists_pointwiseDivisorDifferential (k : ℤ) :
 def pointwiseChowClass (k : ℤ) : PointwiseCycleGroup C p k →+ chowGroup C p k
 ```
 
-**`Stacks.Chow.pointwiseChowClass_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L92). The attribute's comment: “surjectivity of the presentation”.
+**`Stacks.Chow.pointwiseChowClass_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L92). The attribute's comment: “surjectivity of the presentation”.
 
 > **Stacks 0GU3.** Every class in the Chow group `A_k(X)` is the class of a pointwise Milnor
 > K₀ chain: the chain attached to any cycle representing it.
@@ -163,7 +163,7 @@ theorem pointwiseChowClass_surjective (k : ℤ) :
     Function.Surjective (pointwiseChowClass C p k)
 ```
 
-**`Stacks.Chow.pointwiseDivisorDifferential_range_eq_ker_pointwiseChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L424). The attribute's comment: “exactness of the presentation”.
+**`Stacks.Chow.pointwiseDivisorDifferential_range_eq_ker_pointwiseChowClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwisePresentation.lean#L424). The attribute's comment: “exactness of the presentation”.
 
 > **Stacks 0GU3.** The presentation of the Chow group is exact in the middle: a pointwise
 > Milnor K₀-chain is a pointwise divisor exactly when the cycle it names is rationally equivalent
@@ -178,7 +178,7 @@ theorem pointwiseDivisorDifferential_range_eq_ker_pointwiseChowClass (k : ℤ) :
 
 [Tag 02RX](https://stacks.math.columbia.edu/tag/02RX) in the Stacks Project.
 
-**`Stacks.Chow.exists_rationallyEquivalent_properPushforward_of_cycleGroupRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L141). The attribute's comment: “lifting a rational equivalence from an open subscheme”.
+**`Stacks.Chow.exists_rationallyEquivalent_properPushforward_of_cycleGroupRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L141). The attribute's comment: “lifting a rational equivalence from an open subscheme”.
 
 > Let `V ⊆ X` be an open subscheme and let `i : Y ⟶ X` be a closed immersion whose image is the
 > complement of `V`. If two `k`-cycles on `X` become rationally equivalent after restriction to `V`,
@@ -197,7 +197,7 @@ theorem exists_rationallyEquivalent_properPushforward_of_cycleGroupRestrict
       RationallyEquivalent C sX k α (β + properPushforward C sY sX i hi k γ)
 ```
 
-**`Stacks.Chow.surjective_chowGroupOpensRestrictOfIsOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L198). The attribute's comment: “surjectivity onto the Chow group of the open subscheme”.
+**`Stacks.Chow.surjective_chowGroupOpensRestrictOfIsOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 198](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L198). The attribute's comment: “surjectivity onto the Chow group of the open subscheme”.
 
 > The localization sequence of Chow groups is exact at `A_k(V)`: restriction of `k`-cycle
 > classes to an open subscheme `V ⊆ X` is surjective.
@@ -208,7 +208,7 @@ theorem surjective_chowGroupOpensRestrictOfIsOpenImmersion (C : ChowSituation.{u
     Function.Surjective (chowGroupOpensRestrictOfIsOpenImmersion C sX V k)
 ```
 
-**`Stacks.Chow.exact_chowPushforward_chowGroupOpensRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L212). The attribute's comment: “exactness at the Chow group of the ambient scheme”.
+**`Stacks.Chow.exact_chowPushforward_chowGroupOpensRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/LocalizationSequence.lean#L212). The attribute's comment: “exactness at the Chow group of the ambient scheme”.
 
 > The localization sequence of Chow groups is exact at `A_k(X)`: for an open subscheme `V ⊆ X`
 > and a closed immersion `i : Y ⟶ X` whose image is the complement of `V`, a `k`-cycle class on `X`
@@ -227,7 +227,7 @@ theorem exact_chowPushforward_chowGroupOpensRestrict (C : ChowSituation.{u})
 
 [Tag 0F94](https://stacks.math.columbia.edu/tag/0F94) in the Stacks Project.
 
-**`Stacks.Chow.exact_intersectionToSummandsChow_summandsToUnionChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean#L423). The attribute's comment: “exactness in the middle”.
+**`Stacks.Chow.exact_intersectionToSummandsChow_summandsToUnionChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean#L423). The attribute's comment: “exactness in the middle”.
 
 > The sequence of Chow groups of a union of two closed subschemes is exact in the middle: a pair
 > of classes of `k`-cycles on the two closed subschemes has vanishing sum of pushforwards exactly
@@ -239,7 +239,7 @@ theorem exact_intersectionToSummandsChow_summandsToUnionChow
     Function.Exact (intersectionToSummandsChow C sX I J k) (summandsToUnionChow C sX I J k)
 ```
 
-**`Stacks.Chow.surjective_summandsToUnionChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean#L435). The attribute's comment: “surjectivity”.
+**`Stacks.Chow.surjective_summandsToUnionChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedCoverExactSequence.lean#L435). The attribute's comment: “surjectivity”.
 
 > If two closed subschemes cover the ambient scheme set-theoretically, every class of `k`-cycles
 > on it is the sum of the classes of the pushforwards of a `k`-cycle on each of them.
@@ -249,7 +249,7 @@ theorem surjective_summandsToUnionChow (hcover : I.support ⊔ J.support = ⊤) 
     Function.Surjective (summandsToUnionChow C sX I J k)
 ```
 
-**`Stacks.Chow.surjective_chowPushforwardOfIsClosedImmersion_coprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean#L134). The attribute's comment: “surjectivity, for two arbitrary closed immersions”.
+**`Stacks.Chow.surjective_chowPushforwardOfIsClosedImmersion_coprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean#L134). The attribute's comment: “surjectivity, for two arbitrary closed immersions”.
 
 > **Stacks 0F94, surjectivity, for two closed immersions.** If the images of two closed
 > immersions `j₁ : X₁ ⟶ X` and `j₂ : X₂ ⟶ X` cover `X`, every class of `k`-cycles on `X` is the sum
@@ -262,7 +262,7 @@ theorem surjective_chowPushforwardOfIsClosedImmersion_coprod
       (chowPushforwardOfIsClosedImmersion C sX₂ sX j₂ hj₂ k))
 ```
 
-**`Stacks.Chow.exact_chowPushforwardOfIsClosedImmersion_prod_coprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean#L179). The attribute's comment: “exactness in the middle, for two arbitrary closed immersions”.
+**`Stacks.Chow.exact_chowPushforwardOfIsClosedImmersion_prod_coprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/ClosedImmersionCoverExactSequence.lean#L179). The attribute's comment: “exactness in the middle, for two arbitrary closed immersions”.
 
 > **Stacks 0F94, exactness in the middle, for two closed immersions.** If the images of two
 > closed immersions `j₁ : X₁ ⟶ X` and `j₂ : X₂ ⟶ X` cover `X`, a pair of classes of `k`-cycles on
@@ -287,7 +287,7 @@ theorem exact_chowPushforwardOfIsClosedImmersion_prod_coprod
 
 [Tag 02RZ](https://stacks.math.columbia.edu/tag/02RZ) in the Stacks Project.
 
-**`Stacks.Chow.rationallyEquivalent_finsum_of_closedSupports`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChowToolkit/ClosedImmersionCarrier.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChowToolkit/ClosedImmersionCarrier.lean#L250).
+**`Stacks.Chow.rationallyEquivalent_finsum_of_closedSupports`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChowToolkit/ClosedImmersionCarrier.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ChowToolkit/ClosedImmersionCarrier.lean#L250).
 
 > **Stacks 02RZ, two-sided form.** Rational equivalences on a locally finite family of closed
 > subschemes of `X` may be summed: if cycles `a i` and `b i` on the closed subschemes `T i` are
@@ -322,4 +322,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.19, Tag 02RV](https://stacks.math.columbia.edu/tag/02RV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Energy conditions of the cosmic fluid
 
-The module `Physlib.Cosmology.FLRW.EnergyConditions`, [Physlib/Cosmology/FLRW/EnergyConditions.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.Cosmology.FLRW.EnergyConditions`, [Physlib/Cosmology/FLRW/EnergyConditions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `Physlib.Cosmology.FLRW.EnergyConditions`, [Physlib/Cosmology/FLRW/En
 
 ## A. The energy conditions
 
-**`Cosmology.CosmicFluid.NullEnergyCondition`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L57).
+**`Cosmology.CosmicFluid.NullEnergyCondition`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L57).
 
 > The null energy condition at time `t`, `0 ≤ ρ + p / c²`, for the total energy density `ρ`
 > and the pressure `p` of the cosmic fluid, `c` being the speed of light.
@@ -42,7 +42,7 @@ The module `Physlib.Cosmology.FLRW.EnergyConditions`, [Physlib/Cosmology/FLRW/En
 def NullEnergyCondition : Prop
 ```
 
-**`Cosmology.CosmicFluid.WeakEnergyCondition`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L61).
+**`Cosmology.CosmicFluid.WeakEnergyCondition`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L61).
 
 > The weak energy condition at time `t`, `0 ≤ ρ ∧ 0 ≤ ρ + p / c²`, for the total energy density
 > `ρ` and the pressure `p` of the cosmic fluid, `c` being the speed of light.
@@ -51,7 +51,7 @@ def NullEnergyCondition : Prop
 def WeakEnergyCondition : Prop
 ```
 
-**`Cosmology.CosmicFluid.StrongEnergyCondition`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L65).
+**`Cosmology.CosmicFluid.StrongEnergyCondition`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L65).
 
 > The strong energy condition at time `t`, `0 ≤ ρ + p / c² ∧ 0 ≤ ρ + 3 p / c²`, for the total
 > energy density `ρ` and the pressure `p` of the cosmic fluid, `c` being the speed of light.
@@ -60,7 +60,7 @@ def WeakEnergyCondition : Prop
 def StrongEnergyCondition : Prop
 ```
 
-**`Cosmology.CosmicFluid.DominantEnergyCondition`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L70).
+**`Cosmology.CosmicFluid.DominantEnergyCondition`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L70).
 
 > The dominant energy condition at time `t`, `0 ≤ ρ ∧ |p| ≤ ρ c²`, for the total energy density
 > `ρ` and the pressure `p` of the cosmic fluid, `c` being the speed of light.
@@ -71,7 +71,7 @@ def DominantEnergyCondition : Prop
 
 ## B. Implications between the energy conditions
 
-**`Cosmology.CosmicFluid.DominantEnergyCondition.weakEnergyCondition`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L81).
+**`Cosmology.CosmicFluid.DominantEnergyCondition.weakEnergyCondition`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L81).
 
 > The dominant energy condition implies the weak energy condition.
 
@@ -80,7 +80,7 @@ lemma DominantEnergyCondition.weakEnergyCondition (h : F.DominantEnergyCondition
     F.WeakEnergyCondition c t
 ```
 
-**`Cosmology.CosmicFluid.WeakEnergyCondition.nullEnergyCondition`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L94).
+**`Cosmology.CosmicFluid.WeakEnergyCondition.nullEnergyCondition`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L94).
 
 > The weak energy condition implies the null energy condition.
 
@@ -89,7 +89,7 @@ lemma WeakEnergyCondition.nullEnergyCondition (h : F.WeakEnergyCondition c t) :
     F.NullEnergyCondition c t
 ```
 
-**`Cosmology.CosmicFluid.StrongEnergyCondition.nullEnergyCondition`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean#L99).
+**`Cosmology.CosmicFluid.StrongEnergyCondition.nullEnergyCondition`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean#L99).
 
 > The strong energy condition implies the null energy condition.
 
@@ -104,4 +104,4 @@ lemma StrongEnergyCondition.nullEnergyCondition (h : F.StrongEnergyCondition c t
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/EnergyConditions.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/EnergyConditions.lean)
+- [Physlib/Cosmology/FLRW/EnergyConditions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/EnergyConditions.lean)

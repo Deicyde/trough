@@ -7,7 +7,7 @@ proof: formalized
 
 # Lupanov's asymptotically optimal upper bound
 
-`Cslib.Computability.Circuit.Boolean.Lupanov`, in [Cslib/Computability/Circuit/Boolean/Lupanov.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Lupanov.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Boolean.Lupanov`, in [Cslib/Computability/Circuit/Boolean/Lupanov.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Lupanov.lean), by Samuel Schlesinger.
 
 > Every Boolean function on `n` inputs has a De Morgan circuit with at most
 > `(1 + ε) * 2 ^ n / n` gates for all sufficiently large `n`, given any `ε > 0`.
@@ -46,7 +46,7 @@ proof: formalized
 > * [Stasys Jukna, *Boolean Function Complexity: Advances and Frontiers*][Jukna2012],
 >   Theorem 1.15: a modern exposition.
 
-`Cslib.Circuits.Boolean.Lupanov.exists_circuit` (theorem, [line 208](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Lupanov.lean#L208))
+`Cslib.Circuits.Boolean.Lupanov.exists_circuit` (theorem, [line 208](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Lupanov.lean#L208))
 
 > Lupanov's upper bound: every Boolean function on `n` inputs has a De Morgan circuit
 > with at most `(1 + ε) 2ⁿ/n` gates, uniformly for sufficiently large `n`.
@@ -61,7 +61,7 @@ theorem exists_circuit (ε : ℝ) (hε : 0 < ε) :
         c.Computes interpretation (single f) ∧ (c.size : ℝ) ≤ (1 + ε) * 2 ^ n / n
 ```
 
-`Cslib.Circuits.Boolean.Lupanov.complexity_le` (theorem, [line 238](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Lupanov.lean#L238))
+`Cslib.Circuits.Boolean.Lupanov.complexity_le` (theorem, [line 238](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Lupanov.lean#L238))
 
 > Lupanov's upper bound for circuit complexity: every Boolean function on `n` inputs has
 > complexity at most `(1 + ε) 2ⁿ/n`, uniformly for sufficiently large `n`.
@@ -83,5 +83,5 @@ theorem complexity_le (ε : ℝ) (hε : 0 < ε) :
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Boolean/Lupanov.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Lupanov.lean)
+- [Cslib/Computability/Circuit/Boolean/Lupanov.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Lupanov.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Circuit.Boolean.Lupanov.json)

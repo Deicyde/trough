@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.84 Pseudo-coherent and perfect ring maps
 
-Section 15.84 of the Stacks Project, [Tag 067G](https://stacks.math.columbia.edu/tag/067G). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.84 of the Stacks Project, [Tag 067G](https://stacks.math.columbia.edu/tag/067G). 8 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 067H, a definition
 
 [Tag 067H](https://stacks.math.columbia.edu/tag/067H) in the Stacks Project.
 
-**`Algebra.PseudoCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean#L88). The attribute's comment: “(1)”.
+**`Algebra.PseudoCoherent`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean#L88). The attribute's comment: “(1)”.
 
 > An `A`-algebra `B` is *pseudo-coherent* if `B` is a quotient `A[x₁, …, xₙ] ⧸ I` of a
 > polynomial algebra such that the `A[x₁, …, xₙ]`-module `A[x₁, …, xₙ] ⧸ I` has a resolution by
@@ -35,7 +35,7 @@ public class Algebra.PseudoCoherent (A : Type u) (B : Type v) [CommRing A] [Comm
     [Algebra A B] : Prop
 ```
 
-**`Algebra.Perfect`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean#L159). The attribute's comment: “(2)”. References: SGA 6 III (4.1), “affine case”.
+**`Algebra.Perfect`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Defs.lean#L159). The attribute's comment: “(2)”. References: SGA 6 III (4.1), “affine case”.
 
 > An `A`-algebra `B` is *perfect* if `B` is a quotient `A[x₁, …, xₙ] ⧸ I` of a polynomial
 > algebra such that the `A[x₁, …, xₙ]`-module `A[x₁, …, xₙ] ⧸ I` has a resolution by finite free
@@ -68,7 +68,7 @@ public class Algebra.Perfect (A : Type u) (B : Type v) [CommRing A] [CommRing B]
 
 [Tag 068Y](https://stacks.math.columbia.edu/tag/068Y) in the Stacks Project.
 
-**`Algebra.perfect_iff_pseudoCoherent_and_exists_flat_roof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean#L279).
+**`Algebra.perfect_iff_pseudoCoherent_and_exists_flat_roof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean#L279).
 
 > **Stacks 068Y.** An `A`-algebra `B` is perfect in the sense of `Algebra.Perfect` (a resolution
 > by finite free modules and finite projective dimension over a polynomial presentation) exactly when
@@ -94,7 +94,7 @@ public theorem _root_.Algebra.perfect_iff_pseudoCoherent_and_exists_flat_roof {A
 
 [Tag 067I](https://stacks.math.columbia.edu/tag/067I) in the Stacks Project.
 
-**`Algebra.PseudoCoherent.of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Noetherian.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Noetherian.lean#L38). References: SGA 6 III (1.3), “third example, affine”.
+**`Algebra.PseudoCoherent.of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Noetherian.lean, line 38](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Noetherian.lean#L38). References: SGA 6 III (1.3), “third example, affine”.
 
 > **Stacks 067I.** A finite-type ring map whose source is Noetherian is pseudo-coherent.
 
@@ -109,7 +109,7 @@ public theorem of_finiteType
 
 [Tag 067J](https://stacks.math.columbia.edu/tag/067J) in the Stacks Project.
 
-**`Algebra.Perfect.of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean#L401).
+**`Algebra.Perfect.of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean, line 401](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/PerfectPresentation.lean#L401).
 
 > **Stacks 067J.** A flat algebra of finite presentation is perfect.
 >
@@ -128,7 +128,7 @@ public theorem _root_.Algebra.Perfect.of_flat_of_finitePresentation (A : Type u)
 
 [Tag 067K](https://stacks.math.columbia.edu/tag/067K) in the Stacks Project.
 
-**`Algebra.Perfect.of_finiteType_of_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Regular.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Regular.lean#L75).
+**`Algebra.Perfect.of_finiteType_of_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Regular.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Regular.lean#L75).
 
 > **Stacks 067K.** A finite-type algebra over a regular ring is perfect. It is a theorem and not
 > an instance: with Stacks 0682 (a perfect algebra is of finite presentation) it would close an
@@ -149,7 +149,7 @@ public theorem of_finiteType_of_isRegularRing (A : Type u) (B : Type v) [CommRin
 
 [Tag 07EN](https://stacks.math.columbia.edu/tag/07EN) in the Stacks Project.
 
-**`RingHom.IsLocalCompleteIntersection.perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/CompleteIntersection.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/CompleteIntersection.lean#L272). References: SGA 6 III (4.1.1), “second part, affine”; SGA 6 VIII (1.7), “affine case”.
+**`RingHom.IsLocalCompleteIntersection.perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/CompleteIntersection.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/CompleteIntersection.lean#L272). References: SGA 6 III (4.1.1), “second part, affine”; SGA 6 VIII (1.7), “affine case”.
 
 > **Stacks 07EN.** A local complete intersection homomorphism is perfect.
 
@@ -162,7 +162,7 @@ public theorem IsLocalCompleteIntersection.perfect {A : Type u} {B : Type v} [Co
 
 [Tag 0DHQ](https://stacks.math.columbia.edu/tag/0DHQ) in the Stacks Project.
 
-**`PseudoCoherence.relativelyPseudoCoherent_iff_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Absolute.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Absolute.lean#L132).
+**`PseudoCoherence.relativelyPseudoCoherent_iff_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Absolute.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Absolute.lean#L132).
 
 > **Stacks 0DHQ.** Let `R → A` be a pseudo-coherent ring map. An object of `D(A)` is
 > `m`-pseudo-coherent relative to `R` exactly when it is `m`-pseudo-coherent, and it is
@@ -181,7 +181,7 @@ public theorem relativelyPseudoCoherent_iff_pseudoCoherent
 
 [Tag 0E1T](https://stacks.math.columbia.edu/tag/0E1T) in the Stacks Project.
 
-**`PseudoCoherence.pseudoCoherent_tfae_of_surjective_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Surjection.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/PseudoCoherentMap/Surjection.lean#L110). The attribute's comment: “item (3) relative to `B`; printed `A`, a typo, see errata.md”.
+**`PseudoCoherence.pseudoCoherent_tfae_of_surjective_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/PseudoCoherentMap/Surjection.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/PseudoCoherentMap/Surjection.lean#L110). The attribute's comment: “item (3) relative to `B`; printed `A`, a typo, see errata.md”.
 
 > **Stacks 0E1T.** Let `R → B → A` be ring maps with `B → A` surjective and `B`, `A` flat and of
 > finite presentation over `R`, and let `K ∈ D(A)` with restriction `Kₑ ∈ D(B)`. Then `K` is
@@ -223,4 +223,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.84, Tag 067G](https://stacks.math.columbia.edu/tag/067G)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

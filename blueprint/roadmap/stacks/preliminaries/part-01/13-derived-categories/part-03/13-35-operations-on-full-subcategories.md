@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.35 Operations on full subcategories
 
-Section 13.35 of the Stacks Project, [Tag 0FX0](https://stacks.math.columbia.edu/tag/0FX0). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.35 of the Stacks Project, [Tag 0FX0](https://stacks.math.columbia.edu/tag/0FX0). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FX3, a lemma
 
 [Tag 0FX3](https://stacks.math.columbia.edu/tag/0FX3) in the Stacks Project.
 
-**`closedUnderDirectSums_add_star_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 859](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L859). The attribute's comment: “(1)”.
+**`closedUnderDirectSums_add_star_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 859](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L859). The attribute's comment: “(1)”.
 
 > **Stacks 0FX3 (1).** `add 𝒜 ⋆ add ℬ` is closed under direct sums:
 > for all `X, X' ∈ add 𝒜 ⋆ add ℬ` we have `X ⊞ X' ∈ add 𝒜 ⋆ add ℬ`.
@@ -32,7 +32,7 @@ theorem closedUnderDirectSums_add_star_add (𝒜 ℬ : Set C) :
     ClosedUnderDirectSums (add 𝒜 ⋆ add ℬ)
 ```
 
-**`closedUnderDirectSums_smd_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 887](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L887). The attribute's comment: “(2)”.
+**`closedUnderDirectSums_smd_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 887](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L887). The attribute's comment: “(2)”.
 
 > **Stacks 0FX3 (2).** `smd (add 𝒜)` is closed under direct sums:
 > for all `X, X' ∈ smd (add 𝒜)` we have `X ⊞ X' ∈ smd (add 𝒜)`.
@@ -51,7 +51,7 @@ theorem closedUnderDirectSums_smd_add (𝒜 : Set C) :
 
 [Tag 0FX4](https://stacks.math.columbia.edu/tag/0FX4) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.retractClosure_extensionProductIter_isClosedUnderBinaryProducts_and_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L202).
+**`CategoryTheory.ObjectProperty.retractClosure_extensionProductIter_isClosedUnderBinaryProducts_and_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L202).
 
 > For a full subcategory `P` of a triangulated category which is closed under direct sums,
 > the subcategory `smd(P^{⋆ (n + 1)})` of direct summands of `n`-fold extensions of objects of
@@ -76,7 +76,7 @@ theorem retractClosure_extensionProductIter_isClosedUnderBinaryProducts_and_add
 
 [Tag 0FX5](https://stacks.math.columbia.edu/tag/0FX5) in the Stacks Project.
 
-**`Stacks.TriangulatedGenerators.isoClosure_strictMap_biSup_shift_eq_and_strictMap_operations_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean#L215). The attribute's comment: “Each of `F(𝒜[a, b]) = F(𝒜)[a, b]` (for any set of shifts, up to isomorphism), `F(smd(𝒜)) ⊂ smd(F(𝒜))`, `F(add(𝒜)) ⊂ add(F(𝒜))`, `F(𝒜 ⋆ ℬ) ⊂ F(𝒜) ⋆ F(ℬ)` and `F(𝒜^{⋆ n}) ⊂ F(𝒜)^{⋆ n}`, with `F(𝒜) = 𝒜.strictMap F`.”.
+**`Stacks.TriangulatedGenerators.isoClosure_strictMap_biSup_shift_eq_and_strictMap_operations_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean, line 215](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean#L215). The attribute's comment: “Each of `F(𝒜[a, b]) = F(𝒜)[a, b]` (for any set of shifts, up to isomorphism), `F(smd(𝒜)) ⊂ smd(F(𝒜))`, `F(add(𝒜)) ⊂ add(F(𝒜))`, `F(𝒜 ⋆ ℬ) ⊂ F(𝒜) ⋆ F(ℬ)` and `F(𝒜^{⋆ n}) ⊂ F(𝒜)^{⋆ n}`, with `F(𝒜) = 𝒜.strictMap F`.”.
 
 > **The operations on full subcategories are compatible with an exact functor.** Let
 > `F : C ⥤ D` be an exact functor of pretriangulated categories, and for a full subcategory `A` of
@@ -101,7 +101,7 @@ theorem isoClosure_strictMap_biSup_shift_eq_and_strictMap_operations_le
       (A.extensionProductIter n).strictMap F ≤ (A.strictMap F).extensionProductIter n
 ```
 
-**`Stacks.TriangulatedGenerators.retractClosure_extensionProductIter_biSup_shift_inverseImage_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean#L240). The attribute's comment: “The composite `F(smd(add(𝒜[c, d])^{⋆ n})) ⊂ smd(add(F(𝒜)[c, d])^{⋆ n})`.”.
+**`Stacks.TriangulatedGenerators.retractClosure_extensionProductIter_biSup_shift_inverseImage_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean, line 240](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/ExactFunctorBoundedOperations.lean#L240). The attribute's comment: “The composite `F(smd(add(𝒜[c, d])^{⋆ n})) ⊂ smd(add(F(𝒜)[c, d])^{⋆ n})`.”.
 
 > **The bounded-shift form of `smd(add(P[c, d])^{⋆ n})` is functorial along an exact functor.**
 > Let `F : C ⥤ D` be an exact functor of pretriangulated categories, let `P` be a property of
@@ -130,7 +130,7 @@ theorem retractClosure_extensionProductIter_biSup_shift_inverseImage_of_le
 
 [Tag 0FX7](https://stacks.math.columbia.edu/tag/0FX7) in the Stacks Project.
 
-**`DerivedCategory.prop_retractClosure_extensionProductIter_of_prop_homology_and_of_prop_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L541).
+**`DerivedCategory.prop_retractClosure_extensionProductIter_of_prop_homology_and_of_prop_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 541](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L541).
 
 > Let `C` be an abelian category and `E` a class of objects of `C`, viewed inside the derived
 > category `D(C)`. Let `a ≤ b`. (1) If the cohomology of `K : D(C)` vanishes outside `[a, b]` and
@@ -162,7 +162,7 @@ theorem prop_retractClosure_extensionProductIter_of_prop_homology_and_of_prop_X
 
 [Tag 0FX8](https://stacks.math.columbia.edu/tag/0FX8) in the Stacks Project.
 
-**`CategoryTheory.Functor.isZero_obj_shift_of_retractClosure_extensionProductIter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L659).
+**`CategoryTheory.Functor.isZero_obj_shift_of_retractClosure_extensionProductIter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean, line 659](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/OperationsOnFullSubcategories.lean#L659).
 
 > Let `H : C ⥤ A` be a homological functor from a triangulated category to an abelian category,
 > with `H^i(X) = H(X⟦i⟧)`, and let `E` be a class of objects of `C` such that `H^i(E) = 0` for
@@ -191,4 +191,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.35, Tag 0FX0](https://stacks.math.columbia.edu/tag/0FX0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

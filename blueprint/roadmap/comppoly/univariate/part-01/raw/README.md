@@ -1,6 +1,6 @@
 # Raw
 
-7 modules under `CompPoly/Univariate/Raw/`, with 235 public declarations.
+7 modules under `CompPoly/Univariate/Raw/`, with 240 public declarations.
 
 - [Raw Univariate Algorithm Contexts](context.md)
 - [Raw Computable Univariate Polynomials](core.md)

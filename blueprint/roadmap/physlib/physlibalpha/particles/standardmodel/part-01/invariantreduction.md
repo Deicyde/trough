@@ -8,7 +8,7 @@ proof: formalized
 
 # Invariant reduction for the gauge and Lorentz groups
 
-The module `PhyslibAlpha.Particles.StandardModel.InvariantReduction`, [PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean): 28 declarations, 28 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.InvariantReduction`, [PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean): 28 declarations, 28 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.Particles.StandardModel.InvariantReduction`, [PhyslibAl
 > gauge group, its colour or isospin factor, or the Lorentz group is transported to it by
 > `ReducesInvariantsTo.comp`.
 
-**`StandardModel.gaugeLorentzMaps`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L73).
+**`StandardModel.gaugeLorentzMaps`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L73).
 
 > The gauge and Lorentz groups read as a single family of linear maps, indexed by their
 > disjoint union.
@@ -52,7 +52,7 @@ The module `PhyslibAlpha.Particles.StandardModel.InvariantReduction`, [PhyslibAl
 def gaugeLorentzMaps : GaugeGroupI ⊕ SL(2,ℂ) → B →ₗ[ℂ] B
 ```
 
-**`StandardModel.isStableUnder_gaugeLorentzMaps_iff`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L80).
+**`StandardModel.isStableUnder_gaugeLorentzMaps_iff`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L80).
 
 > A submodule stable under both groups is stable under the combined family, and
 > conversely.
@@ -64,7 +64,7 @@ lemma isStableUnder_gaugeLorentzMaps_iff {V : Submodule ℂ B} :
         ∧ ∀ Λ : SL(2,ℂ), ∀ y ∈ V, repLorentz Λ y ∈ V
 ```
 
-**`StandardModel.forall_gaugeLorentzMaps_eq_self_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L91).
+**`StandardModel.forall_gaugeLorentzMaps_eq_self_iff`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L91).
 
 > An element fixed by both groups is fixed by the combined family, and conversely.
 
@@ -74,7 +74,7 @@ lemma forall_gaugeLorentzMaps_eq_self_iff {x : B} :
       ↔ (∀ g : GaugeGroupI, repGauge g x = x) ∧ ∀ Λ : SL(2,ℂ), repLorentz Λ x = x
 ```
 
-**`StandardModel.isFixedBy_gaugeLorentzMaps_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L102).
+**`StandardModel.isFixedBy_gaugeLorentzMaps_iff`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L102).
 
 > A submodule fixed pointwise by both groups is fixed pointwise by the combined family, and
 > conversely.
@@ -86,7 +86,7 @@ lemma isFixedBy_gaugeLorentzMaps_iff {V : Submodule ℂ B} :
         ∧ ∀ Λ : SL(2,ℂ), ∀ y ∈ V, repLorentz Λ y = y
 ```
 
-**`StandardModel.ReducesInvariantsTo.mem_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L115).
+**`StandardModel.ReducesInvariantsTo.mem_sup_and_gauge_lorentz_invariant_iff`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L115).
 
 > The classification endpoint `ReducesInvariantsTo.mem_sup_and_forall_eq_self_iff` for the
 > gauge and Lorentz groups together, with the two invariances and the two stabilities stated
@@ -103,7 +103,7 @@ lemma ReducesInvariantsTo.mem_sup_and_gauge_lorentz_invariant_iff {V W S : Submo
           ∧ (∀ Λ : SL(2,ℂ), repLorentz Λ y = y) ∧ x - y ∈ W
 ```
 
-**`StandardModel.ReducesInvariantsTo.ofGauge`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L127).
+**`StandardModel.ReducesInvariantsTo.ofGauge`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L127).
 
 > A gauge reduction is a reduction for the gauge and Lorentz groups together.
 
@@ -113,7 +113,7 @@ lemma ReducesInvariantsTo.ofGauge {V W : Submodule ℂ B}
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) V W
 ```
 
-**`StandardModel.ReducesInvariantsTo.ofSU3`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L134).
+**`StandardModel.ReducesInvariantsTo.ofSU3`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L134).
 
 > A reduction for the colour factor is a reduction for the gauge and Lorentz groups
 > together.
@@ -124,7 +124,7 @@ lemma ReducesInvariantsTo.ofSU3 {V W : Submodule ℂ B}
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) V W
 ```
 
-**`StandardModel.ReducesInvariantsTo.ofSU2`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L142).
+**`StandardModel.ReducesInvariantsTo.ofSU2`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L142).
 
 > A reduction for the isospin factor is a reduction for the gauge and Lorentz groups
 > together.
@@ -135,7 +135,7 @@ lemma ReducesInvariantsTo.ofSU2 {V W : Submodule ℂ B}
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) V W
 ```
 
-**`StandardModel.ReducesInvariantsTo.ofLorentz`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L149).
+**`StandardModel.ReducesInvariantsTo.ofLorentz`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L149).
 
 > A Lorentz reduction is a reduction for the gauge and Lorentz groups together.
 
@@ -145,7 +145,7 @@ lemma ReducesInvariantsTo.ofLorentz {V W : Submodule ℂ B}
     ReducesInvariantsTo (gaugeLorentzMaps repGauge repLorentz) V W
 ```
 
-**`StandardModel.gaugeLorentzMaps_mul`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L163).
+**`StandardModel.gaugeLorentzMaps_mul`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L163).
 
 > The two groups read as one family of maps respect multiplication, each of the two
 > representations doing so.
@@ -169,7 +169,7 @@ lemma gaugeLorentzMaps_mul
 > `(1, V, 1)` and `(1, 1, t)`, the entries of inverses in `SU(3)` and `SU(2)`, and the
 > factorisation that turns three separate invariances into gauge invariance.
 
-**`StandardModel.su3_inv_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L191).
+**`StandardModel.su3_inv_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L191).
 
 > The entries of the inverse of an `SU(3)` element are the conjugated transposed
 > entries, the inverse of a unitary matrix being its conjugate transpose.
@@ -179,7 +179,7 @@ lemma su3_inv_apply (U : specialUnitaryGroup (Fin 3) ℂ) (a b : Fin 3) :
     (U⁻¹).1 a b = conj (U.1 b a)
 ```
 
-**`StandardModel.su2_inv_apply`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L198).
+**`StandardModel.su2_inv_apply`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L198).
 
 > The entries of the inverse of an `SU(2)` element are the conjugated transposed
 > entries.
@@ -189,7 +189,7 @@ lemma su2_inv_apply (U : specialUnitaryGroup (Fin 2) ℂ) (a b : Fin 2) :
     (U⁻¹).1 a b = conj (U.1 b a)
 ```
 
-**`StandardModel.unitary_inv_coe`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L204).
+**`StandardModel.unitary_inv_coe`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L204).
 
 > The inverse of a unitary scalar is its conjugate.
 
@@ -197,7 +197,7 @@ lemma su2_inv_apply (U : specialUnitaryGroup (Fin 2) ℂ) (a b : Fin 2) :
 lemma unitary_inv_coe (t : unitary ℂ) : ((t⁻¹ : unitary ℂ) : ℂ) = star (t : ℂ)
 ```
 
-**`StandardModel.toSU3_su3Elt`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L207).
+**`StandardModel.toSU3_su3Elt`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L207).
 
 > The colour factor of a colour gauge transformation.
 
@@ -206,7 +206,7 @@ lemma toSU3_su3Elt (U : specialUnitaryGroup (Fin 3) ℂ) :
     GaugeGroupI.toSU3 ((U, 1, 1) : GaugeGroupI) = U
 ```
 
-**`StandardModel.toSU2_su3Elt`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L211).
+**`StandardModel.toSU2_su3Elt`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L211).
 
 > The isospin factor of a colour gauge transformation is trivial.
 
@@ -215,7 +215,7 @@ lemma toSU2_su3Elt (U : specialUnitaryGroup (Fin 3) ℂ) :
     GaugeGroupI.toSU2 ((U, 1, 1) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.toU1_su3Elt`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L215).
+**`StandardModel.toU1_su3Elt`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L215).
 
 > The hypercharge factor of a colour gauge transformation is trivial.
 
@@ -224,7 +224,7 @@ lemma toU1_su3Elt (U : specialUnitaryGroup (Fin 3) ℂ) :
     GaugeGroupI.toU1 ((U, 1, 1) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.inv_su3Elt`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L220).
+**`StandardModel.inv_su3Elt`**, a lemma, [line 220](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L220).
 
 > The inverse of a colour gauge transformation is the colour transformation of the
 > inverse.
@@ -234,7 +234,7 @@ lemma inv_su3Elt (U : specialUnitaryGroup (Fin 3) ℂ) :
     ((U, 1, 1) : GaugeGroupI)⁻¹ = ((U⁻¹, 1, 1) : GaugeGroupI)
 ```
 
-**`StandardModel.toSU3_su2Elt`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L225).
+**`StandardModel.toSU3_su2Elt`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L225).
 
 > The colour factor of an isospin gauge transformation is trivial.
 
@@ -243,7 +243,7 @@ lemma toSU3_su2Elt (V : specialUnitaryGroup (Fin 2) ℂ) :
     GaugeGroupI.toSU3 ((1, V, 1) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.toSU2_su2Elt`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L229).
+**`StandardModel.toSU2_su2Elt`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L229).
 
 > The isospin factor of an isospin gauge transformation.
 
@@ -252,7 +252,7 @@ lemma toSU2_su2Elt (V : specialUnitaryGroup (Fin 2) ℂ) :
     GaugeGroupI.toSU2 ((1, V, 1) : GaugeGroupI) = V
 ```
 
-**`StandardModel.toU1_su2Elt`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L233).
+**`StandardModel.toU1_su2Elt`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L233).
 
 > The hypercharge factor of an isospin gauge transformation is trivial.
 
@@ -261,7 +261,7 @@ lemma toU1_su2Elt (V : specialUnitaryGroup (Fin 2) ℂ) :
     GaugeGroupI.toU1 ((1, V, 1) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.inv_su2Elt`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L238).
+**`StandardModel.inv_su2Elt`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L238).
 
 > The inverse of an isospin gauge transformation is the isospin transformation of the
 > inverse.
@@ -271,7 +271,7 @@ lemma inv_su2Elt (V : specialUnitaryGroup (Fin 2) ℂ) :
     ((1, V, 1) : GaugeGroupI)⁻¹ = ((1, V⁻¹, 1) : GaugeGroupI)
 ```
 
-**`StandardModel.toSU3_u1Elt`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L243).
+**`StandardModel.toSU3_u1Elt`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L243).
 
 > The colour factor of a hypercharge gauge transformation is trivial.
 
@@ -280,7 +280,7 @@ lemma toSU3_u1Elt (t : unitary ℂ) :
     GaugeGroupI.toSU3 ((1, 1, t) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.toSU2_u1Elt`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L247).
+**`StandardModel.toSU2_u1Elt`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L247).
 
 > The isospin factor of a hypercharge gauge transformation is trivial.
 
@@ -289,7 +289,7 @@ lemma toSU2_u1Elt (t : unitary ℂ) :
     GaugeGroupI.toSU2 ((1, 1, t) : GaugeGroupI) = 1
 ```
 
-**`StandardModel.toU1_u1Elt`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L251).
+**`StandardModel.toU1_u1Elt`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L251).
 
 > The hypercharge factor of a hypercharge gauge transformation.
 
@@ -298,7 +298,7 @@ lemma toU1_u1Elt (t : unitary ℂ) :
     GaugeGroupI.toU1 ((1, 1, t) : GaugeGroupI) = t
 ```
 
-**`StandardModel.inv_u1Elt`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L256).
+**`StandardModel.inv_u1Elt`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L256).
 
 > The inverse of a hypercharge gauge transformation is the hypercharge transformation of
 > the inverse.
@@ -308,7 +308,7 @@ lemma inv_u1Elt (t : unitary ℂ) :
     ((1, 1, t) : GaugeGroupI)⁻¹ = ((1, 1, t⁻¹) : GaugeGroupI)
 ```
 
-**`StandardModel.forall_repGauge_eq_self`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L262).
+**`StandardModel.forall_repGauge_eq_self`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L262).
 
 > A gauge transformation is the product of its colour, isospin and hypercharge parts, so
 > an element fixed by each of the three factors separately is gauge invariant.
@@ -326,7 +326,7 @@ lemma forall_repGauge_eq_self {B : Type*} [AddCommGroup B] [Module ℂ B]
 > The range of a symbol map is carried into itself by the gauge group, and, with no
 > derivative slots, by the Lorentz group.
 
-**`StandardModel.isStableUnder_range_repGauge`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L287).
+**`StandardModel.isStableUnder_range_repGauge`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L287).
 
 > The range of a symbol map is carried into itself by the gauge group: the symbol is
 > equivariant, so a gauge transformation only moves the dual vector it is evaluated at.
@@ -338,7 +338,7 @@ lemma isStableUnder_range_repGauge {M : Type} [AddCommGroup M] [Module ℂ M]
     ∀ g : GaugeGroupI, ∀ y ∈ LinearMap.range F, repGauge g y ∈ LinearMap.range F
 ```
 
-**`StandardModel.isStableUnder_range_repLorentz`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L296).
+**`StandardModel.isStableUnder_range_repLorentz`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean#L296).
 
 > The range of an underived symbol map is carried into itself by the Lorentz group: with
 > no derivative slots to mix, the transformation law moves the dual vector alone.
@@ -360,4 +360,4 @@ lemma isStableUnder_range_repLorentz {M : Type} [AddCommGroup M] [Module ℂ M]
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean)
+- [PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean)

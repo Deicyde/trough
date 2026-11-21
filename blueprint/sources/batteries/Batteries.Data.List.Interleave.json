@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "Batteries",
  "repo": "leanprover-community/batteries",
- "rev": "b4b25a3886a16daacaf6615c2eea7170a6e8f458",
+ "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
  "module": "Batteries.Data.List.Interleave",
  "file": "Batteries/Data/List/Interleave.lean",
  "public": [

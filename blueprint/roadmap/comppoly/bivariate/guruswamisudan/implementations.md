@@ -7,13 +7,13 @@ proof: formalized
 
 # Guruswami-Sudan Concrete Implementations
 
-`CompPoly.Bivariate.GuruswamiSudan.Implementations`, in [CompPoly/Bivariate/GuruswamiSudan/Implementations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Implementations`, in [CompPoly/Bivariate/GuruswamiSudan/Implementations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean), by Valerii Huhnin.
 
 > Named concrete dense-interpolation/Roth-Ruckenstein implementations and
 > correctness theorem specializations for the implementations exercised by the
 > benchmark suite.
 
-`CompPoly.GuruswamiSudan.koalaBearDenseInterpContext` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L34))
+`CompPoly.GuruswamiSudan.koalaBearDenseInterpContext` (definition, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L34))
 
 > Dense interpolation backend over canonical KoalaBear.
 
@@ -21,7 +21,7 @@ proof: formalized
 def koalaBearDenseInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseInterpContext` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L38))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseInterpContext` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L38))
 
 > Dense interpolation backend over native-word fast KoalaBear.
 
@@ -29,7 +29,7 @@ def koalaBearDenseInterpContext : GSInterpContext KoalaBear.Field
 def fastKoalaBearDenseInterpContext : GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFastMulContext` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L42))
+`CompPoly.GuruswamiSudan.koalaBearNttFastMulContext` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L42))
 
 > NTTFast-backed univariate multiplication over canonical KoalaBear.
 
@@ -37,7 +37,7 @@ def fastKoalaBearDenseInterpContext : GSInterpContext KoalaBear.Fast.Field
 def koalaBearNttFastMulContext : CPolynomial.MulContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFastLowMulContext` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L46))
+`CompPoly.GuruswamiSudan.koalaBearNttFastLowMulContext` (definition, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L46))
 
 > NTTFast-backed low univariate multiplication over canonical KoalaBear.
 
@@ -46,7 +46,7 @@ def koalaBearNttFastLowMulContext :
     PolynomialMatrix.MulLowContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFastModContext` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L53))
+`CompPoly.GuruswamiSudan.koalaBearNttFastModContext` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L53))
 
 > NTTFast-backed univariate monic remainders over canonical KoalaBear.
 
@@ -54,7 +54,7 @@ def koalaBearNttFastLowMulContext :
 def koalaBearNttFastModContext : CPolynomial.ModContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearNttFastBatchEvalContext` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L57))
+`CompPoly.GuruswamiSudan.koalaBearNttFastBatchEvalContext` (definition, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L57))
 
 > NTTFast-backed subproduct batch evaluation over canonical KoalaBear.
 
@@ -62,7 +62,7 @@ def koalaBearNttFastModContext : CPolynomial.ModContext KoalaBear.Field
 def koalaBearNttFastBatchEvalContext : CPolynomial.BatchEvalContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFastMulContext` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L62))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFastMulContext` (definition, [line 62](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L62))
 
 > NTTFast-backed univariate multiplication over native-word fast KoalaBear.
 
@@ -70,7 +70,7 @@ def koalaBearNttFastBatchEvalContext : CPolynomial.BatchEvalContext KoalaBear.Fi
 def fastKoalaBearNttFastMulContext : CPolynomial.MulContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFastLowMulContext` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L66))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFastLowMulContext` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L66))
 
 > NTTFast-backed low univariate multiplication over native-word fast KoalaBear.
 
@@ -79,7 +79,7 @@ def fastKoalaBearNttFastLowMulContext :
     PolynomialMatrix.MulLowContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFastModContext` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L73))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFastModContext` (definition, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L73))
 
 > NTTFast-backed univariate monic remainders over native-word fast KoalaBear.
 
@@ -87,7 +87,7 @@ def fastKoalaBearNttFastLowMulContext :
 def fastKoalaBearNttFastModContext : CPolynomial.ModContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearNttFastBatchEvalContext` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L77))
+`CompPoly.GuruswamiSudan.fastKoalaBearNttFastBatchEvalContext` (definition, [line 77](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L77))
 
 > NTTFast-backed subproduct batch evaluation over native-word fast KoalaBear.
 
@@ -96,7 +96,7 @@ def fastKoalaBearNttFastBatchEvalContext :
     CPolynomial.BatchEvalContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearLeeDirectInterpContext` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L83))
+`CompPoly.GuruswamiSudan.koalaBearLeeDirectInterpContext` (definition, [line 83](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L83))
 
 > Lee-O'Sullivan interpolation over canonical KoalaBear with direct vanishing setup.
 
@@ -104,7 +104,7 @@ def fastKoalaBearNttFastBatchEvalContext :
 def koalaBearLeeDirectInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearLeeSubproductInterpContext` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L90))
+`CompPoly.GuruswamiSudan.koalaBearLeeSubproductInterpContext` (definition, [line 90](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L90))
 
 > Lee-O'Sullivan interpolation over canonical KoalaBear with subproduct-tree vanishing setup.
 
@@ -112,7 +112,7 @@ def koalaBearLeeDirectInterpContext : GSInterpContext KoalaBear.Field
 def koalaBearLeeSubproductInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearLeeDirectInterpContext` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L98))
+`CompPoly.GuruswamiSudan.fastKoalaBearLeeDirectInterpContext` (definition, [line 98](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L98))
 
 > Lee-O'Sullivan interpolation over native-word fast KoalaBear with direct vanishing setup.
 
@@ -120,7 +120,7 @@ def koalaBearLeeSubproductInterpContext : GSInterpContext KoalaBear.Field
 def fastKoalaBearLeeDirectInterpContext : GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearLeeSubproductInterpContext` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L106))
+`CompPoly.GuruswamiSudan.fastKoalaBearLeeSubproductInterpContext` (definition, [line 106](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L106))
 
 > Lee-O'Sullivan interpolation over native-word fast KoalaBear with
 > subproduct-tree vanishing setup.
@@ -129,7 +129,7 @@ def fastKoalaBearLeeDirectInterpContext : GSInterpContext KoalaBear.Fast.Field
 def fastKoalaBearLeeSubproductInterpContext : GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.approximantPMBasisLeafCutoff` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L118))
+`CompPoly.GuruswamiSudan.approximantPMBasisLeafCutoff` (definition, [line 118](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L118))
 
 > PM-basis scalar-kernel cutoff for the approximant-basis interpolation backend.
 >
@@ -141,7 +141,7 @@ def fastKoalaBearLeeSubproductInterpContext : GSInterpContext KoalaBear.Fast.Fie
 def approximantPMBasisLeafCutoff : Nat
 ```
 
-`CompPoly.GuruswamiSudan.approximantPMBasisComposeLeafCutoff` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L123))
+`CompPoly.GuruswamiSudan.approximantPMBasisComposeLeafCutoff` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L123))
 
 > Polynomial-matrix basis-composition cutoff for the approximant backend.
 > The current GS interpolation shapes are narrow enough that direct bounded
@@ -151,7 +151,7 @@ def approximantPMBasisLeafCutoff : Nat
 def approximantPMBasisComposeLeafCutoff : Nat
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearApproximantPMBasisContext` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L126))
+`CompPoly.GuruswamiSudan.koalaBearApproximantPMBasisContext` (definition, [line 126](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L126))
 
 > Recursive approximant-basis PM-basis context over canonical KoalaBear.
 
@@ -160,7 +160,7 @@ def koalaBearApproximantPMBasisContext :
     PolynomialMatrix.Approximant.PMBasisContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearApproximantSolutionContext` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L133))
+`CompPoly.GuruswamiSudan.koalaBearApproximantSolutionContext` (definition, [line 133](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L133))
 
 > Diagonal modular-equation solution context over canonical KoalaBear.
 
@@ -169,7 +169,7 @@ def koalaBearApproximantSolutionContext :
     PolynomialMatrix.Approximant.ModularSolutionBasisContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearApproximantBasisDirectInterpContext` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L140))
+`CompPoly.GuruswamiSudan.koalaBearApproximantBasisDirectInterpContext` (definition, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L140))
 
 > Approximant-basis interpolation over canonical KoalaBear.
 
@@ -177,7 +177,7 @@ def koalaBearApproximantSolutionContext :
 def koalaBearApproximantBasisDirectInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearApproximantBasisSubproductInterpContext` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L148))
+`CompPoly.GuruswamiSudan.koalaBearApproximantBasisSubproductInterpContext` (definition, [line 148](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L148))
 
 > Approximant-basis interpolation over canonical KoalaBear with
 > subproduct-tree vanishing setup.
@@ -186,7 +186,7 @@ def koalaBearApproximantBasisDirectInterpContext : GSInterpContext KoalaBear.Fie
 def koalaBearApproximantBasisSubproductInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearApproximantBasisInterpContext` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L156))
+`CompPoly.GuruswamiSudan.koalaBearApproximantBasisInterpContext` (definition, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L156))
 
 > Default approximant-basis interpolation over canonical KoalaBear.
 
@@ -194,7 +194,7 @@ def koalaBearApproximantBasisSubproductInterpContext : GSInterpContext KoalaBear
 def koalaBearApproximantBasisInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearApproximantPMBasisContext` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L160))
+`CompPoly.GuruswamiSudan.fastKoalaBearApproximantPMBasisContext` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L160))
 
 > Recursive approximant-basis PM-basis context over native-word fast KoalaBear.
 
@@ -203,7 +203,7 @@ def fastKoalaBearApproximantPMBasisContext :
     PolynomialMatrix.Approximant.PMBasisContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearApproximantSolutionContext` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L167))
+`CompPoly.GuruswamiSudan.fastKoalaBearApproximantSolutionContext` (definition, [line 167](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L167))
 
 > Diagonal modular-equation solution context over native-word fast KoalaBear.
 
@@ -212,7 +212,7 @@ def fastKoalaBearApproximantSolutionContext :
     PolynomialMatrix.Approximant.ModularSolutionBasisContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisDirectInterpContext` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L174))
+`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisDirectInterpContext` (definition, [line 174](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L174))
 
 > Approximant-basis interpolation over native-word fast KoalaBear.
 
@@ -221,7 +221,7 @@ def fastKoalaBearApproximantBasisDirectInterpContext :
     GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisSubproductInterpContext` (definition, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L183))
+`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisSubproductInterpContext` (definition, [line 183](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L183))
 
 > Approximant-basis interpolation over native-word fast KoalaBear with
 > subproduct-tree vanishing setup.
@@ -231,7 +231,7 @@ def fastKoalaBearApproximantBasisSubproductInterpContext :
     GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisInterpContext` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L192))
+`CompPoly.GuruswamiSudan.fastKoalaBearApproximantBasisInterpContext` (definition, [line 192](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L192))
 
 > Default approximant-basis interpolation over native-word fast KoalaBear.
 
@@ -240,7 +240,7 @@ def fastKoalaBearApproximantBasisInterpContext :
     GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.hybridReductionStepBudget` (definition, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L202))
+`CompPoly.GuruswamiSudan.hybridReductionStepBudget` (definition, [line 202](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L202))
 
 > Mulders-Storjohann step budget for the hybrid interpolation backend: the
 > ski-rental rent/buy break-even, set near the cost ratio between one
@@ -253,7 +253,7 @@ def fastKoalaBearApproximantBasisInterpContext :
 def hybridReductionStepBudget (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearHybridInterpContext` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L207))
+`CompPoly.GuruswamiSudan.koalaBearHybridInterpContext` (definition, [line 207](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L207))
 
 > Hybrid interpolation (budgeted Lee-O'Sullivan reduction with approximant
 > fallback) over canonical KoalaBear.
@@ -262,7 +262,7 @@ def hybridReductionStepBudget (params : GSInterpParams) : Nat
 def koalaBearHybridInterpContext : GSInterpContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearHybridInterpContext` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L216))
+`CompPoly.GuruswamiSudan.fastKoalaBearHybridInterpContext` (definition, [line 216](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L216))
 
 > Hybrid interpolation (budgeted Lee-O'Sullivan reduction with approximant
 > fallback) over native-word fast KoalaBear.
@@ -271,7 +271,7 @@ def koalaBearHybridInterpContext : GSInterpContext KoalaBear.Field
 def fastKoalaBearHybridInterpContext : GSInterpContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearRothRootContext` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L225))
+`CompPoly.GuruswamiSudan.koalaBearRothRootContext` (definition, [line 225](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L225))
 
 > Roth-Ruckenstein root backend over canonical KoalaBear.
 
@@ -279,7 +279,7 @@ def fastKoalaBearHybridInterpContext : GSInterpContext KoalaBear.Fast.Field
 def koalaBearRothRootContext : GSRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearRothNttFastRootContext` (definition, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L229))
+`CompPoly.GuruswamiSudan.koalaBearRothNttFastRootContext` (definition, [line 229](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L229))
 
 > Roth-Ruckenstein root backend over canonical KoalaBear with NTTFast field roots.
 
@@ -287,7 +287,7 @@ def koalaBearRothRootContext : GSRootContext KoalaBear.Field
 def koalaBearRothNttFastRootContext : GSRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearRothRootContext` (definition, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L233))
+`CompPoly.GuruswamiSudan.fastKoalaBearRothRootContext` (definition, [line 233](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L233))
 
 > Roth-Ruckenstein root backend over native-word fast KoalaBear.
 
@@ -295,7 +295,7 @@ def koalaBearRothNttFastRootContext : GSRootContext KoalaBear.Field
 def fastKoalaBearRothRootContext : GSRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearRothNttFastRootContext` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L237))
+`CompPoly.GuruswamiSudan.fastKoalaBearRothNttFastRootContext` (definition, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L237))
 
 > Roth-Ruckenstein root backend over native-word fast KoalaBear with NTTFast field roots.
 
@@ -303,7 +303,7 @@ def fastKoalaBearRothRootContext : GSRootContext KoalaBear.Fast.Field
 def fastKoalaBearRothNttFastRootContext : GSRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearAlekhnovichRootContext` (definition, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L241))
+`CompPoly.GuruswamiSudan.koalaBearAlekhnovichRootContext` (definition, [line 241](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L241))
 
 > Alekhnovich root backend over canonical KoalaBear.
 
@@ -311,7 +311,7 @@ def fastKoalaBearRothNttFastRootContext : GSRootContext KoalaBear.Fast.Field
 def koalaBearAlekhnovichRootContext : GSRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearAlekhnovichNttFastRootContext` (definition, [line 245](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L245))
+`CompPoly.GuruswamiSudan.koalaBearAlekhnovichNttFastRootContext` (definition, [line 245](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L245))
 
 > Alekhnovich root backend over canonical KoalaBear with NTTFast field roots.
 
@@ -319,7 +319,7 @@ def koalaBearAlekhnovichRootContext : GSRootContext KoalaBear.Field
 def koalaBearAlekhnovichNttFastRootContext : GSRootContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearAlekhnovichRootContext` (definition, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L249))
+`CompPoly.GuruswamiSudan.fastKoalaBearAlekhnovichRootContext` (definition, [line 249](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L249))
 
 > Alekhnovich root backend over native-word fast KoalaBear.
 
@@ -327,7 +327,7 @@ def koalaBearAlekhnovichNttFastRootContext : GSRootContext KoalaBear.Field
 def fastKoalaBearAlekhnovichRootContext : GSRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearAlekhnovichNttFastRootContext` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L253))
+`CompPoly.GuruswamiSudan.fastKoalaBearAlekhnovichNttFastRootContext` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L253))
 
 > Alekhnovich root backend over native-word fast KoalaBear with NTTFast field roots.
 
@@ -335,7 +335,7 @@ def fastKoalaBearAlekhnovichRootContext : GSRootContext KoalaBear.Fast.Field
 def fastKoalaBearAlekhnovichNttFastRootContext : GSRootContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothContext` (definition, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L257))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothContext` (definition, [line 257](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L257))
 
 > Filtered dense/Roth context over canonical KoalaBear.
 
@@ -343,7 +343,7 @@ def fastKoalaBearAlekhnovichNttFastRootContext : GSRootContext KoalaBear.Fast.Fi
 def koalaBearDenseRothContext : GSFilteredCoreContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastContext` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L261))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastContext` (definition, [line 261](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L261))
 
 > Filtered dense/Roth context over canonical KoalaBear with NTTFast field roots.
 
@@ -351,7 +351,7 @@ def koalaBearDenseRothContext : GSFilteredCoreContext KoalaBear.Field
 def koalaBearDenseRothNttFastContext : GSFilteredCoreContext KoalaBear.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothContext` (definition, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L266))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothContext` (definition, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L266))
 
 > Filtered dense/Roth context over native-word fast KoalaBear.
 
@@ -359,7 +359,7 @@ def koalaBearDenseRothNttFastContext : GSFilteredCoreContext KoalaBear.Field
 def fastKoalaBearDenseRothContext : GSFilteredCoreContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastContext` (definition, [line 271](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L271))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastContext` (definition, [line 271](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L271))
 
 > Filtered dense/Roth context over native-word fast KoalaBear with NTTFast field roots.
 
@@ -367,7 +367,7 @@ def fastKoalaBearDenseRothContext : GSFilteredCoreContext KoalaBear.Fast.Field
 def fastKoalaBearDenseRothNttFastContext : GSFilteredCoreContext KoalaBear.Fast.Field
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothGsCore_sound` (theorem, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L276))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothGsCore_sound` (theorem, [line 276](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L276))
 
 > Concrete soundness for the canonical KoalaBear dense/Roth core.
 
@@ -382,7 +382,7 @@ theorem koalaBearDenseRothGsCore_sound {points : Array (KoalaBear.Field × Koala
             CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothGsCore_complete_of_enough_matches` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L288))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothGsCore_complete_of_enough_matches` (theorem, [line 288](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L288))
 
 > Concrete completeness for the canonical KoalaBear dense/Roth core.
 
@@ -397,7 +397,7 @@ theorem koalaBearDenseRothGsCore_complete_of_enough_matches
     p ∈ (gsCore points koalaBearDenseInterpContext koalaBearRothRootContext params).toList
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothGsFilteredCore_sound` (theorem, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L300))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothGsFilteredCore_sound` (theorem, [line 300](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L300))
 
 > Concrete soundness for the canonical KoalaBear dense/Roth filtered core.
 
@@ -416,7 +416,7 @@ theorem koalaBearDenseRothGsFilteredCore_sound
               candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothGsFilteredCore_complete_of_enough_matches` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L316))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothGsFilteredCore_complete_of_enough_matches` (theorem, [line 316](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L316))
 
 > Concrete completeness for the canonical KoalaBear dense/Roth filtered core.
 
@@ -433,7 +433,7 @@ theorem koalaBearDenseRothGsFilteredCore_complete_of_enough_matches
       params radius).toList
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsCore_sound` (theorem, [line 330](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L330))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsCore_sound` (theorem, [line 330](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L330))
 
 > Concrete soundness for the canonical KoalaBear dense/Roth-NTTFast core.
 
@@ -451,7 +451,7 @@ theorem koalaBearDenseRothNttFastGsCore_sound
             CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsCore_complete_of_enough_matches` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L345))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsCore_complete_of_enough_matches` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L345))
 
 > Concrete completeness for the canonical KoalaBear dense/Roth-NTTFast core.
 
@@ -466,7 +466,7 @@ theorem koalaBearDenseRothNttFastGsCore_complete_of_enough_matches
     p ∈ (gsCore points koalaBearDenseInterpContext koalaBearRothNttFastRootContext params).toList
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsFilteredCore_sound` (theorem, [line 357](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L357))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsFilteredCore_sound` (theorem, [line 357](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L357))
 
 > Concrete soundness for the canonical KoalaBear dense/Roth-NTTFast filtered core.
 
@@ -485,7 +485,7 @@ theorem koalaBearDenseRothNttFastGsFilteredCore_sound
               candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches` (theorem, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L373))
+`CompPoly.GuruswamiSudan.koalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches` (theorem, [line 373](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L373))
 
 > Concrete completeness for the canonical KoalaBear dense/Roth-NTTFast filtered core.
 
@@ -502,7 +502,7 @@ theorem koalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches
       params radius).toList
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsCore_sound` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L387))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsCore_sound` (theorem, [line 387](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L387))
 
 > Concrete soundness for the fast KoalaBear dense/Roth core.
 
@@ -520,7 +520,7 @@ theorem fastKoalaBearDenseRothGsCore_sound
             CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsCore_complete_of_enough_matches` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L402))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsCore_complete_of_enough_matches` (theorem, [line 402](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L402))
 
 > Concrete completeness for the fast KoalaBear dense/Roth core.
 
@@ -536,7 +536,7 @@ theorem fastKoalaBearDenseRothGsCore_complete_of_enough_matches
       params).toList
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsFilteredCore_sound` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L415))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsFilteredCore_sound` (theorem, [line 415](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L415))
 
 > Concrete soundness for the fast KoalaBear dense/Roth filtered core.
 
@@ -555,7 +555,7 @@ theorem fastKoalaBearDenseRothGsFilteredCore_sound
               candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsFilteredCore_complete_of_enough_matches` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L431))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothGsFilteredCore_complete_of_enough_matches` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L431))
 
 > Concrete completeness for the fast KoalaBear dense/Roth filtered core.
 
@@ -572,7 +572,7 @@ theorem fastKoalaBearDenseRothGsFilteredCore_complete_of_enough_matches
       params radius).toList
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsCore_sound` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L445))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsCore_sound` (theorem, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L445))
 
 > Concrete soundness for the fast KoalaBear dense/Roth-NTTFast core.
 
@@ -590,7 +590,7 @@ theorem fastKoalaBearDenseRothNttFastGsCore_sound
             CBivariate.composeY Q p = 0
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsCore_complete_of_enough_matches` (theorem, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L460))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsCore_complete_of_enough_matches` (theorem, [line 460](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L460))
 
 > Concrete completeness for the fast KoalaBear dense/Roth-NTTFast core.
 
@@ -606,7 +606,7 @@ theorem fastKoalaBearDenseRothNttFastGsCore_complete_of_enough_matches
       params).toList
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsFilteredCore_sound` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L473))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsFilteredCore_sound` (theorem, [line 473](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L473))
 
 > Concrete soundness for the fast KoalaBear dense/Roth-NTTFast filtered core.
 
@@ -625,7 +625,7 @@ theorem fastKoalaBearDenseRothNttFastGsFilteredCore_sound
               candidateMismatchCount points p ≤ radius
 ```
 
-`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches` (theorem, [line 489](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L489))
+`CompPoly.GuruswamiSudan.fastKoalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches` (theorem, [line 489](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean#L489))
 
 > Concrete completeness for the fast KoalaBear dense/Roth-NTTFast filtered core.
 
@@ -657,5 +657,5 @@ theorem fastKoalaBearDenseRothNttFastGsFilteredCore_complete_of_enough_matches
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Implementations.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Implementations.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Implementations.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Implementations.json)

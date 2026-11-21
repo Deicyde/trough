@@ -1,7 +1,7 @@
 {
  "repo": "leanprover-community/physlib",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
- "date": "2026-11-12T06:57:32Z",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
+ "date": "2026-11-19T11:22:56Z",
  "toolchain": "v4.35.0",
  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
  "mathlib_version": "v4.35.0",
@@ -523,20 +523,20 @@
   ]
  },
  "counts": {
-  "declarations_Physlib": 10780,
-  "declarations_PhyslibAlpha": 14569,
+  "declarations_Physlib": 10949,
+  "declarations_PhyslibAlpha": 15122,
   "declarations_QuantumInfo": 2117,
-  "documented_Physlib": 5409,
-  "documented_PhyslibAlpha": 10706,
+  "documented_Physlib": 5516,
+  "documented_PhyslibAlpha": 10970,
   "documented_QuantumInfo": 903,
-  "files_Physlib": 673,
-  "files_PhyslibAlpha": 830,
+  "files_Physlib": 690,
+  "files_PhyslibAlpha": 875,
   "files_QuantumInfo": 81,
-  "instances_Physlib": 486,
-  "instances_PhyslibAlpha": 285,
+  "instances_Physlib": 489,
+  "instances_PhyslibAlpha": 290,
   "instances_QuantumInfo": 94,
-  "private_Physlib": 119,
-  "private_PhyslibAlpha": 204,
+  "private_Physlib": 122,
+  "private_PhyslibAlpha": 237,
   "private_QuantumInfo": 354
  }
 }

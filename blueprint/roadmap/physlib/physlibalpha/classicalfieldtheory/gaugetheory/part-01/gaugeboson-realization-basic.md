@@ -8,7 +8,7 @@ proof: formalized
 
 # Realizations of the gauge-boson jet algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean): 8 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean): 8 declarations, 6 with a docstring.
 
 ## i. Overview
 
@@ -84,7 +84,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization
 
 ## A. Realizations of the gauge-boson jet algebra
 
-**`GaugeAlgebraRealization`**, a structure, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L111).
+**`GaugeAlgebraRealization`**, a structure, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L111).
 
 > An algebra `B` carrying the gauge bosons of the package `jets`: an algebra map out of
 > the complexified gauge-boson jet algebra, equivariant for the jet gauge group and the
@@ -120,7 +120,7 @@ structure GaugeAlgebraRealization (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) (B 
     repLorentz Λ (b₁ * b₂) = repLorentz Λ b₁ * repLorentz Λ b₂
 ```
 
-**`GaugeAlgebraRealization.id`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L146).
+**`GaugeAlgebraRealization.id`**, a def, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L146).
 
 > The gauge-boson jet algebra realized in itself, by the identity.
 
@@ -129,20 +129,20 @@ noncomputable def id : GaugeAlgebraRealization jets (ℂ ⊗[ℝ] LocalGaugeFiel
     (complexRepJet jets) (complexRepLorentzGroup 𝔤)
 ```
 
-**`GaugeAlgebraRealization.A_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L159).
+**`GaugeAlgebraRealization.A_apply`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L159).
 
 ```lean
 lemma A_apply (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 𝔤) :
     h.A s μ φ = h.toAlgHom (gaugeField 𝔤 s μ φ)
 ```
 
-**`GaugeAlgebraRealization.id_A`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L165).
+**`GaugeAlgebraRealization.id_A`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L165).
 
 ```lean
 lemma id_A : (GaugeAlgebraRealization.id jets).A = gaugeField 𝔤
 ```
 
-**`GaugeAlgebraRealization.ext`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L169).
+**`GaugeAlgebraRealization.ext`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L169).
 
 > A realization is determined by its algebra map.
 
@@ -151,7 +151,7 @@ lemma ext {h₁ h₂ : GaugeAlgebraRealization jets B repJet repLorentz}
     (h : h₁.toAlgHom = h₂.toAlgHom) : h₁ = h₂
 ```
 
-**`GaugeAlgebraRealization.commute_A`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L183).
+**`GaugeAlgebraRealization.commute_A`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L183).
 
 > The gauge-field symbols of a realization commute, being images of a commutative
 > algebra.
@@ -161,7 +161,7 @@ lemma commute_A (p q : Multiset (Fin 1 ⊕ Fin 3)) (μ ν : Fin 1 ⊕ Fin 3)
     (φ ψ : Module.Dual ℝ 𝔤) : Commute (h.A p μ φ) (h.A q ν ψ)
 ```
 
-**`GaugeAlgebraRealization.lorentz_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L191).
+**`GaugeAlgebraRealization.lorentz_apply`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L191).
 
 > The Lorentz law: the gauge-field symbol carries one covector index, and each derivative
 > slot transforms as a covector.
@@ -175,7 +175,7 @@ lemma lorentz_apply (Λ : SL(2,ℂ)) (n : ℕ) (l : Fin n → (Fin 1 ⊕ Fin 3))
       ∑ a, (((Lorentz.SL2C.toLorentzGroup Λ).1 a μ : ℝ) : ℂ) • h.A (List.ofFn p) a φ
 ```
 
-**`GaugeAlgebraRealization.gauge_apply_deriv`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L211).
+**`GaugeAlgebraRealization.gauge_apply_deriv`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean#L211).
 
 > The gauge law: a jet `U` acts on the derivative symbol `∂_s A_μ^φ` by the Leibniz
 > convolution of the dual adjoint Taylor coefficients of `U⁻¹` against lower symbols (the
@@ -196,4 +196,4 @@ lemma gauge_apply_deriv (U : GJ) (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 �
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean)

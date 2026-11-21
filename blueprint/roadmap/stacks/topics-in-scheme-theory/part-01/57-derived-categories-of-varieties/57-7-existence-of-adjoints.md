@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.7 Existence of adjoints
 
-Section 57.7 of the Stacks Project, [Tag 0FYM](https://stacks.math.columbia.edu/tag/0FYM). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.7 of the Stacks Project, [Tag 0FYM](https://stacks.math.columbia.edu/tag/0FYM). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FYN, a lemma
 
 [Tag 0FYN](https://stacks.math.columbia.edu/tag/0FYN) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_exact_rightAdjoint_and_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/Adjoints.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/Adjoints.lean#L378).
+**`Stacks.AlgebraicGeometry.DerivedVarieties.Orlov.exists_exact_rightAdjoint_and_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/Adjoints.lean, line 378](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/Adjoints.lean#L378).
 
 > **[Stacks, Tag 0FYN].** Let `k` be a field and let `X`, `Y` be proper schemes over `k`. If `X`
 > is regular, then any `k`-linear exact functor `F : D_perf(𝒪_X) ⥤ D_perf(𝒪_Y)` has an exact right
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.7, Tag 0FYM](https://stacks.math.columbia.edu/tag/0FYM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

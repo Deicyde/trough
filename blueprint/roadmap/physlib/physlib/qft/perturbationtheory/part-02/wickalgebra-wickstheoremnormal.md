@@ -8,9 +8,9 @@ proof: formalized
 
 # Wick's theorem for normal ordered lists
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheoremNormal`, [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean): 7 declarations, 4 with a docstring, 1 listed as significant.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheoremNormal`, [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean): 7 declarations, 4 with a docstring, 1 listed as significant.
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_eqTimeOnly`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L46).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_eqTimeOnly`**, a lemma, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L46).
 
 > For a list `φs` of `𝓕.FieldOp`, then
 >
@@ -35,7 +35,7 @@ lemma timeOrder_ofFieldOpList_eqTimeOnly (φs : List 𝓕.FieldOp) :
     φsΛ.1.sign • φsΛ.1.timeContract.1 * 𝓣(𝓝(ofFieldOpList [φsΛ.1]ᵘᶜ))
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_eq_eqTimeOnly_empty`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L68).
+**`FieldSpecification.WickAlgebra.timeOrder_ofFieldOpList_eq_eqTimeOnly_empty`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L68).
 
 ```lean
 lemma timeOrder_ofFieldOpList_eq_eqTimeOnly_empty (φs : List 𝓕.FieldOp) :
@@ -44,7 +44,7 @@ lemma timeOrder_ofFieldOpList_eq_eqTimeOnly_empty (φs : List 𝓕.FieldOp) :
     φsΛ.1.sign • φsΛ.1.timeContract.1 * 𝓣(𝓝(ofFieldOpList [φsΛ.1]ᵘᶜ))
 ```
 
-**`FieldSpecification.WickAlgebra.normalOrder_timeOrder_ofFieldOpList_eq_eqTimeOnly_empty`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L103).
+**`FieldSpecification.WickAlgebra.normalOrder_timeOrder_ofFieldOpList_eq_eqTimeOnly_empty`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L103).
 
 > For a list `φs` of `𝓕.FieldOp`, then
 >
@@ -63,7 +63,7 @@ lemma normalOrder_timeOrder_ofFieldOpList_eq_eqTimeOnly_empty (φs : List 𝓕.F
     φsΛ.1.sign • φsΛ.1.timeContract.1 * 𝓣(𝓝(ofFieldOpList [φsΛ.1]ᵘᶜ))
 ```
 
-**`FieldSpecification.WickAlgebra.timeOrder_haveEqTime_split`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L129).
+**`FieldSpecification.WickAlgebra.timeOrder_haveEqTime_split`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L129).
 
 > For a list `φs` of `𝓕.FieldOp`, then `𝓣(φs)` is equal to the sum of
 >
@@ -93,7 +93,7 @@ lemma timeOrder_haveEqTime_split (φs : List 𝓕.FieldOp) :
       φssucΛ.1.wickTerm)
 ```
 
-**`FieldSpecification.WickAlgebra.normalOrder_timeOrder_ofFieldOpList_eq_not_haveEqTime_sub_inductive`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L161).
+**`FieldSpecification.WickAlgebra.normalOrder_timeOrder_ofFieldOpList_eq_not_haveEqTime_sub_inductive`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L161).
 
 ```lean
 lemma normalOrder_timeOrder_ofFieldOpList_eq_not_haveEqTime_sub_inductive (φs : List 𝓕.FieldOp) :
@@ -105,7 +105,7 @@ lemma normalOrder_timeOrder_ofFieldOpList_eq_not_haveEqTime_sub_inductive (φs :
         φssucΛ.1.wickTerm - 𝓣(𝓝(ofFieldOpList [φsΛ.1]ᵘᶜ)))
 ```
 
-**`FieldSpecification.WickAlgebra.wicks_theorem_normal_order_empty`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L173).
+**`FieldSpecification.WickAlgebra.wicks_theorem_normal_order_empty`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L173).
 
 ```lean
 lemma wicks_theorem_normal_order_empty : 𝓣(𝓝(ofFieldOpList [])) =
@@ -113,7 +113,7 @@ lemma wicks_theorem_normal_order_empty : 𝓣(𝓝(ofFieldOpList [])) =
     φsΛ.1.wickTerm
 ```
 
-**`FieldSpecification.WickAlgebra.wicks_theorem_normal_order`**, a theorem, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L213). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`FieldSpecification.WickAlgebra.wicks_theorem_normal_order`**, a theorem, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean#L213). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > For a list `φs` of `𝓕.FieldOp`, the normal-ordered version of Wick's theorem states that
 >
@@ -148,4 +148,4 @@ theorem wicks_theorem_normal_order : (φs : List 𝓕.FieldOp) →
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean)

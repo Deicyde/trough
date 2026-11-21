@@ -1,52 +1,56 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/AngularMomentum.lean",
    "module": "PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum",
    "title": "Angular-momentum observables under a central force",
-   "doc": "Squared angular momentum, its axial component, and their Poisson brackets for central forces.\n\n## i. Overview\n\nThe angular momentum of a particle at position `q` with momentum `p` is `L = q × p`. This file\ndefines it on phase space, together with the two functions of it which Poisson-commute: its squared\nmagnitude `L² = ‖L‖²` and its component `L_z` along the z-axis. Their gradients follow from\nLagrange's identity `‖q × p‖² = ⟪q, q⟫ ⟪p, p⟫ - ⟪q, p⟫²` and the explicit form\n`L_z = q₀ p₁ - q₁ p₀`.\n\nWe show that `L²` and `L_z` are in involution, and that both Poisson-commute with any Hamiltonian\nwhose momentum gradient is parallel to the momentum and whose position gradient is parallel to the\nposition. By `CentralForce.hasGradientAt_hamiltonian_momentum` and\n`CentralForce.hasGradientAt_hamiltonian_position`, this includes the Hamiltonian of every\ncentral-force system away from the centre of force, so `L²` and `L_z` are conserved by the motion.\n\n## ii. Key results\n\n- `CentralForce.angularMomentum` : the angular momentum `L = q × p`.\n- `CentralForce.angularMomentumSq`, `CentralForce.angularMomentumZ` : `L²` and `L_z`.\n- `CentralForce.angularMomentumSq_eq` : Lagrange's identity for `L²`.\n- `CentralForce.poissonBracket_angularMomentumSq_angularMomentumZ` : `{L², L_z} = 0`.\n- `CentralForce.poissonBracket_angularMomentumSq_hamiltonian`,\n  `CentralForce.poissonBracket_angularMomentumZ_hamiltonian` : `L²` and `L_z` Poisson-commute with\n  the Hamiltonian of a central-force system.\n\n## iii. Table of contents\n\n- A. The angular momentum\n  - A.1. The squared magnitude and the z-component\n  - A.2. Smoothness\n- B. Gradients\n- C. Poisson brackets\n  - C.1. The squared magnitude and the z-component are in involution\n  - C.2. Poisson brackets for radial partial gradients\n  - C.3. Conservation under a central force\n\n## iv. References\n\n* H. Goldstein, C. Poole and J. Safko, *Classical Mechanics*, 3rd edition,\n  Section 9.7 (Poisson bracket relations for angular momentum) and Chapter 3 (central forces).",
+   "doc": "Squared angular momentum, its axial component, and their Poisson brackets for central forces.\n\n## i. Overview\n\nThe angular momentum of a particle at position `q` with momentum `p` is `L = q × p`. This file\ndefines it on phase space, together with the two functions of it which Poisson-commute: its squared\nmagnitude `L² = ‖L‖²` and its component `L_z` along the z-axis. Their gradients follow from\nLagrange's identity `‖q × p‖² = ⟪q, q⟫ ⟪p, p⟫ - ⟪q, p⟫²` and the explicit form\n`L_z = q₀ p₁ - q₁ p₀`.\n\nWe show that `L²` and `L_z` are in involution, and that both Poisson-commute with any Hamiltonian\nwhose momentum gradient is parallel to the momentum and whose position gradient is parallel to the\nposition. By `CentralForce.hasGradientAt_hamiltonian_momentum` and\n`CentralForce.hasGradientAt_hamiltonian_position`, this includes the Hamiltonian of every\ncentral-force system away from the centre of force, so `L²` and `L_z` are conserved by the motion.\n\n## ii. Key results\n\n- `CentralForce.angularMomentum` : the angular momentum `L = q × p`.\n- `CentralForce.angularMomentumSq`, `CentralForce.angularMomentumZ` : `L²` and `L_z`.\n- `CentralForce.angularMomentumSq_eq` : Lagrange's identity for `L²`.\n- `CentralForce.poissonBracket_angularMomentumSq_angularMomentumZ` : `{L², L_z} = 0`.\n- `CentralForce.poissonBracket_angularMomentumSq_hamiltonian`,\n  `CentralForce.poissonBracket_angularMomentumZ_hamiltonian` : `L²` and `L_z` Poisson-commute with\n  the Hamiltonian of a central-force system.\n- `CentralForce.hamiltonian_angularMomentumZ_eq_on_Icc` gives conservation along an orbit.\n\n## iii. Table of contents\n\n- A. The angular momentum\n  - A.1. The squared magnitude and the z-component\n  - A.2. Smoothness\n- B. Gradients\n- C. Poisson brackets\n  - C.1. The squared magnitude and the z-component are in involution\n  - C.2. Poisson brackets for radial partial gradients\n  - C.3. Conservation under a central force\n- D. Conservation along a trajectory\n\n## iv. References\n\n* H. Goldstein, C. Poole and J. Safko, *Classical Mechanics*, 3rd edition,\n  Section 9.7 (Poisson bracket relations for angular momentum) and Chapter 3 (central forces).",
    "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
-     "line": 67,
+     "line": 69,
      "text": "## A. The angular momentum"
     },
     {
-     "line": 92,
+     "line": 94,
      "text": "### A.1. The squared magnitude and the z-component"
     },
     {
-     "line": 123,
+     "line": 125,
      "text": "### A.2. Smoothness"
     },
     {
-     "line": 148,
+     "line": 150,
      "text": "## B. Gradients"
     },
     {
-     "line": 189,
+     "line": 191,
      "text": "## C. Poisson brackets"
     },
     {
-     "line": 195,
+     "line": 197,
      "text": "### C.1. The squared magnitude and the z-component are in involution"
     },
     {
-     "line": 211,
+     "line": 213,
      "text": "### C.2. Poisson brackets for radial partial gradients\n\nAt a phase-space point where the momentum gradient of a Hamiltonian is parallel to the momentum\nand its position gradient is parallel to the position, its Poisson brackets with `L²` and `L_z`\nvanish. These sufficient conditions apply to the central-force Hamiltonian away from the centre."
     },
     {
-     "line": 248,
+     "line": 250,
      "text": "### C.3. Conservation under a central force"
+    },
+    {
+     "line": 274,
+     "text": "## D. Conservation along a trajectory"
     }
    ],
    "declarations": [
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentum",
      "kind": "def",
-     "line": 74,
+     "line": 76,
      "doc": "The angular momentum `L = q × p` of a particle at position `q` with momentum `p`.",
      "statement": "noncomputable def angularMomentum (p q : EuclideanSpace ℝ (Fin 3)) : EuclideanSpace ℝ (Fin 3)",
      "sorry": false
@@ -54,7 +58,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentum_apply_zero",
      "kind": "lemma",
-     "line": 78,
+     "line": 80,
      "doc": "The x-component of the angular momentum is `q₁ p₂ - q₂ p₁`.",
      "statement": "lemma angularMomentum_apply_zero (p q : EuclideanSpace ℝ (Fin 3)) :\n    angularMomentum p q 0 = q 1 * p 2 - q 2 * p 1",
      "sorry": false
@@ -62,7 +66,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentum_apply_one",
      "kind": "lemma",
-     "line": 83,
+     "line": 85,
      "doc": "The y-component of the angular momentum is `q₂ p₀ - q₀ p₂`.",
      "statement": "lemma angularMomentum_apply_one (p q : EuclideanSpace ℝ (Fin 3)) :\n    angularMomentum p q 1 = q 2 * p 0 - q 0 * p 2",
      "sorry": false
@@ -70,7 +74,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentum_apply_two",
      "kind": "lemma",
-     "line": 88,
+     "line": 90,
      "doc": "The z-component of the angular momentum is `q₀ p₁ - q₁ p₀`.",
      "statement": "lemma angularMomentum_apply_two (p q : EuclideanSpace ℝ (Fin 3)) :\n    angularMomentum p q 2 = q 0 * p 1 - q 1 * p 0",
      "sorry": false
@@ -78,7 +82,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentumSq",
      "kind": "def",
-     "line": 100,
+     "line": 102,
      "doc": "The squared magnitude `L² = ‖q × p‖²` of the angular momentum, as a function on phase\nspace.",
      "statement": "noncomputable def angularMomentumSq (p q : EuclideanSpace ℝ (Fin 3)) : ℝ",
      "sorry": false
@@ -86,7 +90,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentumZ",
      "kind": "def",
-     "line": 104,
+     "line": 106,
      "doc": "The component `L_z` of the angular momentum along the z-axis, as a function on phase space.",
      "statement": "noncomputable def angularMomentumZ (p q : EuclideanSpace ℝ (Fin 3)) : ℝ",
      "sorry": false
@@ -94,7 +98,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentumSq_eq_sum",
      "kind": "lemma",
-     "line": 108,
+     "line": 110,
      "doc": "The squared magnitude of the angular momentum is the sum of the squares of its components.",
      "statement": "lemma angularMomentumSq_eq_sum (p q : EuclideanSpace ℝ (Fin 3)) :\n    angularMomentumSq p q =\n      angularMomentum p q 0 ^ 2 + angularMomentum p q 1 ^ 2 + angularMomentum p q 2 ^ 2",
      "sorry": false
@@ -102,7 +106,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.angularMomentumSq_eq",
      "kind": "lemma",
-     "line": 116,
+     "line": 118,
      "doc": "Lagrange's identity: the squared magnitude of the angular momentum `q × p` is\n`⟪q, q⟫ ⟪p, p⟫ - ⟪q, p⟫²`.",
      "statement": "lemma angularMomentumSq_eq (p q : EuclideanSpace ℝ (Fin 3)) :\n    angularMomentumSq p q = ⟪q, q⟫_ℝ * ⟪p, p⟫_ℝ - ⟪q, p⟫_ℝ ^ 2",
      "sorry": false
@@ -110,7 +114,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.contDiff_angularMomentumSq",
      "kind": "lemma",
-     "line": 130,
+     "line": 132,
      "doc": "The squared magnitude of the angular momentum is a smooth function on phase space.",
      "statement": "lemma contDiff_angularMomentumSq : ContDiff ℝ ∞ (Function.uncurry angularMomentumSq)",
      "sorry": false
@@ -118,7 +122,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.contDiff_angularMomentumZ",
      "kind": "lemma",
-     "line": 140,
+     "line": 142,
      "doc": "The z-component of the angular momentum is a smooth function on phase space.",
      "statement": "lemma contDiff_angularMomentumZ : ContDiff ℝ ∞ (Function.uncurry angularMomentumZ)",
      "sorry": false
@@ -126,7 +130,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_momentum",
      "kind": "lemma",
-     "line": 155,
+     "line": 157,
      "doc": "The momentum gradient of `L²` is `2 ⟪q, q⟫ p - 2 ⟪q, p⟫ q`.",
      "statement": "lemma hasGradientAt_angularMomentumSq_momentum (p q : EuclideanSpace ℝ (Fin 3)) :\n    HasGradientAt (fun p' => angularMomentumSq p' q)\n      ((2 * ⟪q, q⟫_ℝ) • p - (2 * ⟪q, p⟫_ℝ) • q) p",
      "sorry": false
@@ -134,7 +138,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumSq_position",
      "kind": "lemma",
-     "line": 164,
+     "line": 166,
      "doc": "The position gradient of `L²` is `2 ⟪p, p⟫ q - 2 ⟪q, p⟫ p`.",
      "statement": "lemma hasGradientAt_angularMomentumSq_position (p q : EuclideanSpace ℝ (Fin 3)) :\n    HasGradientAt (fun q' => angularMomentumSq p q')\n      ((2 * ⟪p, p⟫_ℝ) • q - (2 * ⟪q, p⟫_ℝ) • p) q",
      "sorry": false
@@ -142,7 +146,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_momentum",
      "kind": "lemma",
-     "line": 173,
+     "line": 175,
      "doc": "The momentum gradient of `L_z` is `q₀ e₁ - q₁ e₀`.",
      "statement": "lemma hasGradientAt_angularMomentumZ_momentum (p q : EuclideanSpace ℝ (Fin 3)) :\n    HasGradientAt (fun p' => angularMomentumZ p' q)\n      (q 0 • EuclideanSpace.single 1 1 - q 1 • EuclideanSpace.single 0 1) p",
      "sorry": false
@@ -150,7 +154,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_angularMomentumZ_position",
      "kind": "lemma",
-     "line": 181,
+     "line": 183,
      "doc": "The position gradient of `L_z` is `p₁ e₀ - p₀ e₁`.",
      "statement": "lemma hasGradientAt_angularMomentumZ_position (p q : EuclideanSpace ℝ (Fin 3)) :\n    HasGradientAt (fun q' => angularMomentumZ p q')\n      (p 1 • EuclideanSpace.single 0 1 - p 0 • EuclideanSpace.single 1 1) q",
      "sorry": false
@@ -158,7 +162,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_angularMomentumZ",
      "kind": "lemma",
-     "line": 202,
+     "line": 204,
      "doc": "The squared magnitude of the angular momentum and its z-component are in involution.",
      "statement": "lemma poissonBracket_angularMomentumSq_angularMomentumZ (p q : EuclideanSpace ℝ (Fin 3)) :\n    poissonBracket angularMomentumSq angularMomentumZ p q = 0",
      "sorry": false
@@ -166,7 +170,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_eq_zero_of_hasGradientAt",
      "kind": "lemma",
-     "line": 223,
+     "line": 225,
      "doc": "`L²` Poisson-commutes with any phase-space function whose momentum gradient is parallel to the\nmomentum and whose position gradient is parallel to the position.",
      "statement": "lemma poissonBracket_angularMomentumSq_eq_zero_of_hasGradientAt\n    {H : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3) → ℝ}\n    {p q : EuclideanSpace ℝ (Fin 3)} {a c : ℝ}\n    (hp : HasGradientAt (fun p' => H p' q) (a • p) p)\n    (hq : HasGradientAt (fun q' => H p q') (c • q) q) :\n    poissonBracket angularMomentumSq H p q = 0",
      "sorry": false
@@ -174,7 +178,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_eq_zero_of_hasGradientAt",
      "kind": "lemma",
-     "line": 236,
+     "line": 238,
      "doc": "`L_z` Poisson-commutes with any phase-space function whose momentum gradient is parallel to\nthe momentum and whose position gradient is parallel to the position.",
      "statement": "lemma poissonBracket_angularMomentumZ_eq_zero_of_hasGradientAt\n    {H : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3) → ℝ}\n    {p q : EuclideanSpace ℝ (Fin 3)} {a c : ℝ}\n    (hp : HasGradientAt (fun p' => H p' q) (a • p) p)\n    (hq : HasGradientAt (fun q' => H p q') (c • q) q) :\n    poissonBracket angularMomentumZ H p q = 0",
      "sorry": false
@@ -182,7 +186,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.poissonBracket_angularMomentumSq_hamiltonian",
      "kind": "lemma",
-     "line": 258,
+     "line": 260,
      "doc": "Away from the centre of force, the squared magnitude of the angular momentum Poisson-commutes\nwith the Hamiltonian of a central-force system, so is conserved by the motion.",
      "statement": "lemma poissonBracket_angularMomentumSq_hamiltonian (p : EuclideanSpace ℝ (Fin 3))\n    {q : EuclideanSpace ℝ (Fin 3)} (hq : q ≠ 0) :\n    poissonBracket angularMomentumSq S.hamiltonian p q = 0",
      "sorry": false
@@ -190,9 +194,17 @@
     {
      "name": "ClassicalMechanics.CentralForce.poissonBracket_angularMomentumZ_hamiltonian",
      "kind": "lemma",
-     "line": 266,
+     "line": 268,
      "doc": "Away from the centre of force, the z-component of the angular momentum Poisson-commutes with\nthe Hamiltonian of a central-force system, so is conserved by the motion.",
      "statement": "lemma poissonBracket_angularMomentumZ_hamiltonian (p : EuclideanSpace ℝ (Fin 3))\n    {q : EuclideanSpace ℝ (Fin 3)} (hq : q ≠ 0) :\n    poissonBracket angularMomentumZ S.hamiltonian p q = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.hamiltonian_angularMomentumZ_eq_on_Icc",
+     "kind": "lemma",
+     "line": 280,
+     "doc": "The energy and signed axial angular momentum agree at any two times on a central-force\ntrajectory satisfying Hamilton's equations away from the centre.",
+     "statement": "lemma hamiltonian_angularMomentumZ_eq_on_Icc\n    {p q : ℝ → EuclideanSpace ℝ (Fin 3)} {a b t₁ t₂ : ℝ}\n    (h₁ : t₁ ∈ Set.Icc a b) (h₂ : t₂ ∈ Set.Icc a b)\n    (hne : ∀ t ∈ Set.Icc a b, q t ≠ 0)\n    (hp : ∀ t ∈ Set.Icc a b, HasDerivAt p (-(deriv S.V ‖q t‖ / ‖q t‖) • q t) t)\n    (hq : ∀ t ∈ Set.Icc a b, HasDerivAt q (S.m⁻¹ • p t) t) :\n    S.hamiltonian (p t₁) (q t₁) = S.hamiltonian (p t₂) (q t₂) ∧\n    angularMomentumZ (p t₁) (q t₁) = angularMomentumZ (p t₂) (q t₂)",
      "sorry": false
     }
    ],
@@ -204,31 +216,35 @@
    "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/Basic.lean",
    "module": "PhyslibAlpha.ClassicalMechanics.CentralForce.Basic",
    "title": "Central forces",
-   "doc": "Hamiltonian and partial gradients of a particle in a conservative central potential.\n\n## i. Overview\n\nThis file models a particle of mass `m` in three-dimensional space under a conservative central\nforce centred at the origin. The force is derived from a potential `V (‖q‖)` which depends only on\nthe distance `‖q‖` from the origin. Its Hamiltonian, as a function of the momentum `p` and the\nposition `q`, is\n\n$$H(p, q) = \\frac{\\langle p, p\\rangle}{2m} + V(\\|q\\|).$$\n\nThe Kepler problem, `V r = -k / r`, and the isotropic harmonic oscillator, `V r = k r² / 2`, are\nthe most important examples.\n\nThe radial potential `V` is represented by a function on all of `ℝ`, with smoothness required\nonly for positive radii. Its value at zero is part of this total-function representation; the\nposition-gradient and smoothness results apply only when `q ≠ 0`, allowing potentials singular\nat the physical centre.\n\nThis file defines the Hamiltonian and computes its partial gradients: the momentum gradient is the\nvelocity `p / m`, and away from the centre the position gradient `V'(‖q‖) q / ‖q‖` is parallel to\nthe position. The latter is what makes the angular momentum a conserved quantity.\n\n## ii. Key results\n\n- `CentralForce` : the input data, a mass and a potential smooth away from the centre of force.\n- `CentralForce.hamiltonian` : the Hamiltonian.\n- `CentralForce.hasGradientAt_hamiltonian_momentum`,\n  `CentralForce.hasGradientAt_hamiltonian_position` : its partial gradients.\n- `CentralForce.contDiffOn_hamiltonian` : it is smooth away from the centre of force.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The Hamiltonian\n  - B.1. Gradients of the Hamiltonian\n  - B.2. Smoothness of the Hamiltonian\n\n## iv. References\n\n* H. Goldstein, C. Poole and J. Safko, *Classical Mechanics*, 3rd edition, Chapter 3.",
+   "doc": "Hamiltonian and partial gradients of a particle in a conservative central potential.\n\n## i. Overview\n\nThis file models a particle of mass `m` in three-dimensional space under a conservative central\nforce centred at the origin. The force is derived from a potential `V (‖q‖)` which depends only on\nthe distance `‖q‖` from the origin. Its Hamiltonian, as a function of the momentum `p` and the\nposition `q`, is\n\n$$H(p, q) = \\frac{\\langle p, p\\rangle}{2m} + V(\\|q\\|).$$\n\nThe Kepler problem, `V r = -k / r`, and the isotropic harmonic oscillator, `V r = k r² / 2`, are\nthe most important examples.\n\nThe radial potential `V` is represented by a function on all of `ℝ`, with smoothness required\nonly for positive radii. Its value at zero is part of this total-function representation; the\nposition-gradient and smoothness results apply only when `q ≠ 0`, allowing potentials singular\nat the physical centre.\n\nThis file defines the Hamiltonian and computes its partial gradients: the momentum gradient is the\nvelocity `p / m`, and away from the centre the position gradient `V'(‖q‖) q / ‖q‖` is parallel to\nthe position. The latter is what makes the angular momentum a conserved quantity.\n\n## ii. Key results\n\n- `CentralForce` : the input data, a mass and a potential smooth away from the centre of force.\n- `CentralForce.hamiltonian` : the Hamiltonian.\n- `CentralForce.hasGradientAt_hamiltonian_momentum`,\n  `CentralForce.hasGradientAt_hamiltonian_position` : its partial gradients.\n- `CentralForce.contDiffOn_hamiltonian` : it is smooth away from the centre of force.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The Hamiltonian\n  - B.1. Gradients of the Hamiltonian\n  - B.2. Smoothness of the Hamiltonian\n  - B.3. The Hamiltonian system\n\n## iv. References\n\n* H. Goldstein, C. Poole and J. Safko, *Classical Mechanics*, 3rd edition, Chapter 3.",
    "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
-     "line": 63,
+     "line": 65,
      "text": "## A. The input data"
     },
     {
-     "line": 89,
+     "line": 91,
      "text": "## B. The Hamiltonian"
     },
     {
-     "line": 100,
+     "line": 102,
      "text": "### B.1. Gradients of the Hamiltonian"
     },
     {
-     "line": 127,
+     "line": 129,
      "text": "### B.2. Smoothness of the Hamiltonian"
+    },
+    {
+     "line": 146,
+     "text": "### B.3. The Hamiltonian system"
     }
    ],
    "declarations": [
     {
      "name": "ClassicalMechanics.CentralForce",
      "kind": "structure",
-     "line": 71,
+     "line": 73,
      "doc": "A particle in three-dimensional space under a conservative central force centred at the origin,\nspecified by its mass `m` and a radial potential `V` smooth at positive radii.",
      "statement": "structure CentralForce where\n  /-- The mass of the particle. -/\n  m : ℝ\n  /-- The potential, as a function of the distance from the centre of force. -/\n  V : ℝ → ℝ\n  /-- The mass of the particle is positive. -/\n  m_pos : 0 < m\n  /-- The potential is smooth away from the centre of force. -/\n  contDiffOn_V : ContDiffOn ℝ ∞ V (Set.Ioi 0)",
      "sorry": false
@@ -236,7 +252,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.m_ne_zero",
      "kind": "lemma",
-     "line": 87,
+     "line": 89,
      "doc": "The mass of the particle is non-zero.",
      "statement": "lemma m_ne_zero : S.m ≠ 0",
      "sorry": false
@@ -244,7 +260,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hamiltonian",
      "kind": "def",
-     "line": 97,
+     "line": 99,
      "doc": "The Hamiltonian `H(p, q) = ⟪p, p⟫ / (2 m) + V ‖q‖` of a central-force system, as a function of\nthe momentum `p` and the position `q`.",
      "statement": "noncomputable def hamiltonian (p q : EuclideanSpace ℝ (Fin 3)) : ℝ",
      "sorry": false
@@ -252,7 +268,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_momentum",
      "kind": "lemma",
-     "line": 107,
+     "line": 109,
      "doc": "The momentum gradient of the Hamiltonian of a central-force system is the velocity `p / m`.",
      "statement": "lemma hasGradientAt_hamiltonian_momentum (p q : EuclideanSpace ℝ (Fin 3)) :\n    HasGradientAt (fun p' => S.hamiltonian p' q) (S.m⁻¹ • p) p",
      "sorry": false
@@ -260,7 +276,7 @@
     {
      "name": "ClassicalMechanics.CentralForce.hasGradientAt_hamiltonian_position",
      "kind": "lemma",
-     "line": 116,
+     "line": 118,
      "doc": "Away from the centre of force, the position gradient of the Hamiltonian of a central-force\nsystem is `V'(‖q‖) q / ‖q‖`, which is parallel to the position.",
      "statement": "lemma hasGradientAt_hamiltonian_position (p : EuclideanSpace ℝ (Fin 3))\n    {q : EuclideanSpace ℝ (Fin 3)} (hq : q ≠ 0) :\n    HasGradientAt (fun q' => S.hamiltonian p q') ((deriv S.V ‖q‖ / ‖q‖) • q) q",
      "sorry": false
@@ -268,9 +284,181 @@
     {
      "name": "ClassicalMechanics.CentralForce.contDiffOn_hamiltonian",
      "kind": "lemma",
-     "line": 134,
+     "line": 136,
      "doc": "The Hamiltonian of a central-force system is smooth away from the centre of force.",
      "statement": "lemma contDiffOn_hamiltonian :\n    ContDiffOn ℝ ∞ (Function.uncurry S.hamiltonian) {x | x.2 ≠ 0}",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.toHamiltonianSystem",
+     "kind": "def",
+     "line": 151,
+     "doc": "The Hamiltonian system of a central force, defined away from the centre of force.",
+     "statement": "noncomputable def toHamiltonianSystem :\n    HamiltonianSystem 𝓘(ℝ, EuclideanSpace ℝ (Fin 3)) ⟨EuclideanSpace ℝ (Fin 3)⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.mem_domain_toHamiltonianSystem",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "A coordinate state belongs to the central-force domain exactly when its position is nonzero.",
+     "statement": "lemma mem_domain_toHamiltonianSystem (p q : EuclideanSpace ℝ (Fin 3)) :\n    PhaseSpace.ofInnerProductSpace p q ∈ S.toHamiltonianSystem.domain ↔ q ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.toHamiltonianSystem_hamiltonian",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "The bundled central-force system has the existing central-force Hamiltonian in coordinates.",
+     "statement": "lemma toHamiltonianSystem_hamiltonian (t : Time) (p q : EuclideanSpace ℝ (Fin 3)) :\n    S.toHamiltonianSystem.hamiltonian (t, PhaseSpace.ofInnerProductSpace p q) =\n      S.hamiltonian p q",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/ConservedQuantities.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.CentralForce.ConservedQuantities",
+   "title": "Conserved quantities for central forces",
+   "doc": "The Hamiltonian, squared angular momentum, and axial angular momentum as a family of observables.\n\n## i. Overview\n\nThe central-force Hamiltonian and the squared magnitude and axial component of angular momentum\nform a family of three observables. Their Poisson brackets vanish away from the centre of force,\nand their phase-space gradients are given by the existing central-force results.\n\n## ii. Key results\n\n- `CentralForce.conservedQuantities` : the three observables.\n- `CentralForce.poissonBracket_conservedQuantities` : the observables are pairwise in involution.\n- `CentralForce.gradient_conservedQuantities` : the phase-space gradients of the observables.\n\n## iii. Table of contents\n\n- A. The conserved quantities\n  - A.1. Involution\n  - A.2. Gradients\n\n## iv. References\n\nSee `PhyslibAlpha.ClassicalMechanics.CentralForce.AngularMomentum` for references.",
+   "copyright": "2026 Rithwik Ranganathan",
+   "sections": [
+    {
+     "line": 44,
+     "text": "## A. The conserved quantities"
+    },
+    {
+     "line": 58,
+     "text": "### A.1. Involution"
+    },
+    {
+     "line": 80,
+     "text": "### A.2. Gradients"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.CentralForce.conservedQuantities",
+     "kind": "def",
+     "line": 54,
+     "doc": "The three conserved quantities in involution of a central-force system: the Hamiltonian `H`,\nthe squared magnitude `L²` of the angular momentum, and its z-component `L_z`.",
+     "statement": "noncomputable def conservedQuantities :\n    Fin 3 → EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3) → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.poissonBracket_conservedQuantities",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "Away from the centre of force, the conserved quantities of a central-force system are pairwise\nin involution.",
+     "statement": "lemma poissonBracket_conservedQuantities (i j : Fin 3) (p : EuclideanSpace ℝ (Fin 3))\n    {q : EuclideanSpace ℝ (Fin 3)} (hq : q ≠ 0) :\n    poissonBracket (S.conservedQuantities i) (S.conservedQuantities j) p q = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.gradient_conservedQuantities",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "Away from the centre of force, the phase-space gradients of the conserved quantities of a\ncentral-force system.",
+     "statement": "lemma gradient_conservedQuantities (p : EuclideanSpace ℝ (Fin 3)) {q : EuclideanSpace ℝ (Fin 3)}\n    (hq : q ≠ 0) :\n    (fun i => (gradient (fun p' => S.conservedQuantities i p' q) p,\n      gradient (fun q' => S.conservedQuantities i p q') q)) =\n    ![(S.m⁻¹ • p, (deriv S.V ‖q‖ / ‖q‖) • q),\n      ((2 * ⟪q, q⟫_ℝ) • p - (2 * ⟪q, p⟫_ℝ) • q, (2 * ⟪p, p⟫_ℝ) • q - (2 * ⟪q, p⟫_ℝ) • p),\n      (q 0 • EuclideanSpace.single 1 1 - q 1 • EuclideanSpace.single 0 1,\n        p 1 • EuclideanSpace.single 0 1 - p 0 • EuclideanSpace.single 1 1)]",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/CentralForce/LiouvilleIntegrable.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.CentralForce.LiouvilleIntegrable",
+   "title": "Central-force systems are Liouville integrable",
+   "doc": "Independence and involution of the Hamiltonian, squared angular momentum and axial component.\n\n## i. Overview\n\nThe Hamiltonian `H`, squared angular momentum `L²` and axial component `L_z` are independent\nand in involution on the open dense domain where the radial momentum is non-zero and the\nangular momentum is not parallel to the z-axis. This proves Liouville integrability for every\ncentral-force system. The domain is sufficient; no maximality claim is made.\n\nIndependence follows by pairing a vanishing combination of gradients with radial changes of\nmomentum, infinitesimal rotations and momentum scaling, successively eliminating its coefficients.\n\n## ii. Key results\n\n- `CentralForce.integrabilityDomain` : the chosen domain in phase space.\n- `CentralForce.isOpen_integrabilityDomain`, `CentralForce.dense_integrabilityDomain` : it is\n  open and dense.\n- `CentralForce.snd_ne_zero_of_mem_integrabilityDomain` : it excludes the centre of force.\n- `CentralForce.linearIndependent_conservedQuantities` : the observables are independent there.\n- `CentralForce.liouvilleIntegrable` : the resulting Liouville-integrability construction.\n- `CentralForce.toHamiltonianSystem_isLiouvilleIntegrableOn` : the shared Hamiltonian system is\n  integrable on the same coordinate domain.\n\n## iii. Table of contents\n\n- A. The domain of integrability\n- B. Functional independence\n- C. Liouville integrability\n\n## iv. References\n\n* V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd edition,\n  Chapter 10. [ref: arnold_mechanics]",
+   "copyright": "2026 Rithwik Ranganathan",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## A. The domain of integrability"
+    },
+    {
+     "line": 105,
+     "text": "## B. Functional independence"
+    },
+    {
+     "line": 176,
+     "text": "## C. Liouville integrability"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.CentralForce.integrabilityDomain",
+     "kind": "def",
+     "line": 65,
+     "doc": "The phase-space domain where the radial momentum is non-zero and the angular momentum\nis not parallel to the z-axis, used to establish central-force integrability.",
+     "statement": "def integrabilityDomain : Set (EuclideanSpace ℝ (Fin 3) × EuclideanSpace ℝ (Fin 3))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.integrabilityDomain_eq",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "The domain is the non-vanishing set of a polynomial in the phase-space coordinates.",
+     "statement": "lemma integrabilityDomain_eq : integrabilityDomain =\n    {x | (x.1 0 * x.2 0 + x.1 1 * x.2 1 + x.1 2 * x.2 2) *\n      ((x.2 1 * x.1 2 - x.2 2 * x.1 1) ^ 2 + (x.2 2 * x.1 0 - x.2 0 * x.1 2) ^ 2) ≠ 0}",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.isOpen_integrabilityDomain",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "The chosen central-force domain is open.",
+     "statement": "lemma isOpen_integrabilityDomain : IsOpen integrabilityDomain",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.dense_integrabilityDomain",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "The chosen central-force domain is dense.",
+     "statement": "lemma dense_integrabilityDomain : Dense integrabilityDomain",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.snd_ne_zero_of_mem_integrabilityDomain",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "The chosen domain excludes the centre of force.",
+     "statement": "lemma snd_ne_zero_of_mem_integrabilityDomain\n    {x : EuclideanSpace ℝ (Fin 3) × EuclideanSpace ℝ (Fin 3)} (hx : x ∈ integrabilityDomain) :\n    x.2 ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.linearIndependent_gradients",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "On the domain of integrability, a phase-space function whose momentum gradient is a non-zero\nmultiple `a • p` of the momentum and whose position gradient is a multiple `c • q` of the\nposition, such as the Hamiltonian of a central-force system, is functionally independent of `L²`\nand `L_z`: the three phase-space gradients are linearly independent.",
+     "statement": "lemma linearIndependent_gradients {p q : EuclideanSpace ℝ (Fin 3)} {a c : ℝ} (ha : a ≠ 0)\n    (hx : (p, q) ∈ integrabilityDomain) :\n    LinearIndependent ℝ ![(a • p, c • q),\n      ((2 * ⟪q, q⟫_ℝ) • p - (2 * ⟪q, p⟫_ℝ) • q, (2 * ⟪p, p⟫_ℝ) • q - (2 * ⟪q, p⟫_ℝ) • p),\n      (q 0 • EuclideanSpace.single 1 1 - q 1 • EuclideanSpace.single 0 1,\n        p 1 • EuclideanSpace.single 0 1 - p 0 • EuclideanSpace.single 1 1)]",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.linearIndependent_conservedQuantities",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "On the domain of integrability, the conserved quantities of a central-force system are\nfunctionally independent: their phase-space gradients are linearly independent.",
+     "statement": "lemma linearIndependent_conservedQuantities\n    {x : EuclideanSpace ℝ (Fin 3) × EuclideanSpace ℝ (Fin 3)} (hx : x ∈ integrabilityDomain) :\n    LinearIndependent ℝ (fun i => (gradient (fun p' => S.conservedQuantities i p' x.2) x.1,\n      gradient (fun q' => S.conservedQuantities i x.1 q') x.2))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.liouvilleIntegrable",
+     "kind": "def",
+     "line": 185,
+     "doc": "Every central-force system is Liouville integrable on the domain of integrability, with the\nHamiltonian, the squared magnitude of the angular momentum and its z-component as conserved\nquantities.",
+     "statement": "noncomputable def liouvilleIntegrable :\n    LiouvilleIntegrableOn integrabilityDomain S.hamiltonian",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.CentralForce.toHamiltonianSystem_isLiouvilleIntegrableOn",
+     "kind": "lemma",
+     "line": 202,
+     "doc": "The Hamiltonian system associated with a central force is Liouville integrable on the\ncoordinate domain of integrability.",
+     "statement": "lemma toHamiltonianSystem_isLiouvilleIntegrableOn :\n    S.toHamiltonianSystem.IsLiouvilleIntegrableOn integrabilityDomain",
      "sorry": false
     }
    ],
@@ -364,19 +552,23 @@
    "file": "PhyslibAlpha/ClassicalMechanics/LiouvilleIntegrable/Basic.lean",
    "module": "PhyslibAlpha.ClassicalMechanics.LiouvilleIntegrable.Basic",
    "title": "Liouville integrable systems",
-   "doc": "Liouville integrability on an open dense domain and conservation along Hamiltonian trajectories.\n\n## i. Overview\n\nA Hamiltonian system on a `2d`-dimensional phase space is *Liouville integrable* when it carries\n`d` conserved quantities, one per degree of freedom, that are\n\n- smooth,\n- pairwise Poisson-commuting (\"in involution\"), and\n- functionally independent, i.e. their phase-space gradients are linearly independent.\n\nFunctional independence need not hold at every point of phase space: the\ngradient of the Hamiltonian of the harmonic oscillator vanishes at the equilibrium, and the Kepler\nHamiltonian is singular at the origin of position space. The definition therefore asks for the\nconditions on an open *domain* `U` of phase space, which must be dense so that the conditions hold\ngenerically. Without density the empty domain would make every Hamiltonian integrable.\n\nThese are the integrability conditions used in the Liouville–Arnold theorem. Its conclusions about\ninvariant tori and action-angle coordinates require further hypotheses on common level sets and\nare not formalized here (see the `TODO` below). What is formalized is the definition itself and its\nconsequence: each of the `d` conserved quantities really is conserved along the Hamiltonian flow\ninside `U`, by reducing to `deriv_comp_eq_poissonBracket` from\n`Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`.\n\nWith one degree of freedom the conditions collapse: the Hamiltonian is the only conserved quantity,\ninvolution is automatic, and independence says only that the gradient of the Hamiltonian does not\nvanish. `LiouvilleIntegrableOn.oneDegreeOfFreedom` records this, and is how the harmonic oscillator\nand the simple pendulum are shown to be integrable.\n\nFollowing the convention of `poissonBracket`, a phase-space function `f : X → X → ℝ` is read as\n`f p q` for a momentum `p` and a position `q`. Since PhysLib has no existing precedent for a\n`FiniteDimensional`/`Module.finrank` hypothesis on an abstract phase space, position space is fixed\nconcretely as `EuclideanSpace ℝ (Fin d)` for an explicit `d : ℕ`, matching the indexing convention\nalready used for e.g. `RigidBody (d : ℕ)`.\n\n## ii. Key results\n\n- `LiouvilleIntegrableOn` : the structure of a Liouville integrable system for a Hamiltonian `H`\n  on an open dense domain `U` of phase space.\n- `LiouvilleIntegrableOn.deriv_comp_eq_zero` : each conserved quantity has zero time derivative\n  along a solution of Hamilton's equations for `H` which stays in `U`.\n- `LiouvilleIntegrableOn.oneDegreeOfFreedom` : a system with one degree of freedom is Liouville\n  integrable wherever its Hamiltonian is smooth with non-vanishing gradient.\n\n## iii. Table of contents\n\n- A. The definition of Liouville integrability\n- B. Conservation along the flow\n- C. Systems with one degree of freedom\n\n## iv. References\n\n* V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd edition, Chapter 10.",
+   "doc": "Liouville integrability on an open dense domain and conservation along Hamiltonian trajectories.\n\n## i. Overview\n\nA Hamiltonian system on a `2d`-dimensional phase space is *Liouville integrable* when it carries\n`d` conserved quantities, one per degree of freedom, that are\n\n- smooth,\n- pairwise Poisson-commuting (\"in involution\"), and\n- functionally independent, i.e. their phase-space gradients are linearly independent.\n\nFunctional independence need not hold at every point of phase space: the\ngradient of the Hamiltonian of the harmonic oscillator vanishes at the equilibrium, and the Kepler\nHamiltonian is singular at the origin of position space. The definition therefore asks for the\nconditions on an open *domain* `U` of phase space, which must be dense so that the conditions hold\ngenerically. Without density the empty domain would make every Hamiltonian integrable.\n\nThese are the integrability conditions used in the Liouville–Arnold theorem. Its conclusions about\ninvariant tori and action-angle coordinates require further hypotheses on common level sets and\nare not formalized here (see the `TODO` below). What is formalized is the definition itself and its\nconsequence: each of the `d` conserved quantities really is conserved along the Hamiltonian flow\ninside `U`, by reducing to `deriv_comp_eq_poissonBracket` from\n`Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket`.\n\nWith one degree of freedom the conditions collapse: the Hamiltonian is the only conserved quantity,\ninvolution is automatic, and independence says only that the gradient of the Hamiltonian does not\nvanish. `LiouvilleIntegrableOn.oneDegreeOfFreedom` records this, and is how the harmonic oscillator\nand the simple pendulum are shown to be integrable.\n\nFollowing the convention of `poissonBracket`, a phase-space function `f : X → X → ℝ` is read as\n`f p q` for a momentum `p` and a position `q`. Since PhysLib has no existing precedent for a\n`FiniteDimensional`/`Module.finrank` hypothesis on an abstract phase space, position space is fixed\nconcretely as `EuclideanSpace ℝ (Fin d)` for an explicit `d : ℕ`, matching the indexing convention\nalready used for e.g. `RigidBody (d : ℕ)`.\n\n## ii. Key results\n\n- `LiouvilleIntegrableOn` : the structure of a Liouville integrable system for a Hamiltonian `H`\n  on an open dense domain `U` of phase space.\n- `HamiltonianSystem.LiouvilleIntegrabilityData` : an autonomous coordinate Hamiltonian and its\n  integrability data, related to a Hamiltonian system on a coordinate domain.\n- `HamiltonianSystem.IsLiouvilleIntegrableOn` : coordinate integrability for a Hamiltonian system,\n  including agreement with an autonomous Hamiltonian on the integrability domain.\n- `LiouvilleIntegrableOn.deriv_comp_eq_zero` : each conserved quantity has zero time derivative\n  along a solution of Hamilton's equations for `H` which stays in `U`.\n- `LiouvilleIntegrableOn.oneDegreeOfFreedom` : a system with one degree of freedom is Liouville\n  integrable wherever its Hamiltonian is smooth with non-vanishing gradient.\n\n## iii. Table of contents\n\n- A. The definition of Liouville integrability\n  - A.1. Integrability of Hamiltonian systems\n- B. Conservation along the flow\n- C. Systems with one degree of freedom\n\n## iv. References\n\n* V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd edition, Chapter 10.",
    "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
-     "line": 78,
+     "line": 84,
      "text": "## A. The definition of Liouville integrability"
     },
     {
-     "line": 109,
+     "line": 115,
+     "text": "### A.1. Integrability of Hamiltonian systems"
+    },
+    {
+     "line": 142,
      "text": "## B. Conservation along the flow"
     },
     {
-     "line": 134,
+     "line": 167,
      "text": "## C. Systems with one degree of freedom"
     }
    ],
@@ -384,15 +576,31 @@
     {
      "name": "ClassicalMechanics.LiouvilleIntegrableOn",
      "kind": "structure",
-     "line": 88,
+     "line": 94,
      "doc": "A Liouville integrable system for a Hamiltonian `H` on an open dense domain `U` of the\n`2d`-dimensional phase space `EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d)`, whose points\nare read as `(p, q)`: `d` smooth conserved quantities, one per degree of freedom, that are pairwise\nin involution and functionally independent at every point of `U`.",
      "statement": "structure LiouvilleIntegrableOn {d : ℕ}\n    (U : Set (EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d)))\n    (H : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ) where\n  /-- The domain on which the system is integrable is open. -/\n  isOpen : IsOpen U\n  /-- The domain on which the system is integrable is dense, i.e. integrability holds\n  generically. -/\n  dense : Dense U\n  /-- The `d` conserved quantities, one per degree of freedom. -/\n  f : Fin d → EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ\n  /-- The conserved quantities are smooth on `U`. -/\n  contDiffOn : ∀ i, ContDiffOn ℝ ∞ (Function.uncurry (f i)) U\n  /-- The Hamiltonian itself is one of the conserved quantities. -/\n  exists_hamiltonian : ∃ i, f i = H\n  /-- The conserved quantities pairwise Poisson-commute on `U`, i.e. are in involution. -/\n  involutive : ∀ i j, ∀ x ∈ U, poissonBracket (f i) (f j) x.1 x.2 = 0\n  /-- The conserved quantities are functionally independent on `U`: their phase-space gradients\n  (the `p`- and `q`-partials together) are linearly independent. -/\n  independent : ∀ x ∈ U, LinearIndependent ℝ\n    (fun i => (gradient (fun p' => f i p' x.2) x.1, gradient (fun q' => f i x.1 q') x.2))",
      "sorry": false
     },
     {
+     "name": "ClassicalMechanics.HamiltonianSystem.LiouvilleIntegrabilityData",
+     "kind": "structure",
+     "line": 121,
+     "doc": "An autonomous coordinate Hamiltonian and its Liouville integrability data, related to a\nHamiltonian system on a coordinate domain.",
+     "statement": "structure HamiltonianSystem.LiouvilleIntegrabilityData {d : ℕ}\n    (S : HamiltonianSystem 𝓘(ℝ, EuclideanSpace ℝ (Fin d)) ⟨EuclideanSpace ℝ (Fin d)⟩)\n    (U : Set (EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d))) where\n  /-- The autonomous Hamiltonian in momentum-position coordinates. -/\n  coordinateHamiltonian : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ\n  /-- The system agrees with the coordinate Hamiltonian on the domain at every time. -/\n  hamiltonian_eq : ∀ t p q, (p, q) ∈ U →\n    S.hamiltonian (t, PhaseSpace.ofInnerProductSpace p q) = coordinateHamiltonian p q\n  /-- Coordinate states in the integrability domain belong to the system's domain. -/\n  domain_subset : ∀ p q, (p, q) ∈ U → PhaseSpace.ofInnerProductSpace p q ∈ S.domain\n  /-- The coordinate Hamiltonian has the Liouville integrability data. -/\n  integrable : LiouvilleIntegrableOn U coordinateHamiltonian",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.IsLiouvilleIntegrableOn",
+     "kind": "def",
+     "line": 137,
+     "doc": "A Hamiltonian system is Liouville integrable on a coordinate domain when that domain lies\ninside the system's domain and, for every time, the system agrees there with an autonomous\ncoordinate Hamiltonian satisfying the Liouville integrability conditions.",
+     "statement": "def HamiltonianSystem.IsLiouvilleIntegrableOn {d : ℕ}\n    (S : HamiltonianSystem 𝓘(ℝ, EuclideanSpace ℝ (Fin d)) ⟨EuclideanSpace ℝ (Fin d)⟩)\n    (U : Set (EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d))) : Prop",
+     "sorry": false
+    },
+    {
      "name": "ClassicalMechanics.LiouvilleIntegrableOn.deriv_comp_eq_zero",
      "kind": "lemma",
-     "line": 117,
+     "line": 150,
      "doc": "Each conserved quantity of a Liouville integrable system has zero time derivative along a\nsolution of Hamilton's equations for `H` which lies in the domain `U` at time `t`.",
      "statement": "lemma LiouvilleIntegrableOn.deriv_comp_eq_zero {d : ℕ}\n    {U : Set (EuclideanSpace ℝ (Fin d) × EuclideanSpace ℝ (Fin d))}\n    {H : EuclideanSpace ℝ (Fin d) → EuclideanSpace ℝ (Fin d) → ℝ}\n    (LI : LiouvilleIntegrableOn U H)\n    (p q : Time → EuclideanSpace ℝ (Fin d)) (t : Time) (i : Fin d)\n    (heq : hamiltonEqOp (fun _ => H) p q = 0)\n    (hp : DifferentiableAt ℝ p t) (hq : DifferentiableAt ℝ q t) (hU : (p t, q t) ∈ U) :\n    ∂ₜ (fun t => LI.f i (p t) (q t)) t = 0",
      "sorry": false
@@ -400,7 +608,7 @@
     {
      "name": "ClassicalMechanics.LiouvilleIntegrableOn.oneDegreeOfFreedom",
      "kind": "def",
-     "line": 143,
+     "line": 176,
      "doc": "A Hamiltonian system with one degree of freedom is Liouville integrable, with the Hamiltonian as\nits single conserved quantity, on any open dense domain on which the Hamiltonian is smooth and has\nnon-vanishing phase-space gradient.",
      "statement": "def LiouvilleIntegrableOn.oneDegreeOfFreedom\n    {U : Set (EuclideanSpace ℝ (Fin 1) × EuclideanSpace ℝ (Fin 1))}\n    {H : EuclideanSpace ℝ (Fin 1) → EuclideanSpace ℝ (Fin 1) → ℝ}\n    (hU : IsOpen U) (hdense : Dense U) (hH : ContDiffOn ℝ ∞ (Function.uncurry H) U)\n    (hgrad : ∀ x ∈ U,\n      (gradient (fun p' => H p' x.2) x.1, gradient (fun q' => H x.1 q') x.2) ≠ 0) :\n    LiouvilleIntegrableOn U H",
      "sorry": false
@@ -3543,6 +3751,3466 @@
      "line": 89,
      "doc": "The real square root is not Lipschitz on any interval `[0, ε]` with `ε > 0`, for any\nLipschitz constant.",
      "statement": "lemma not_lipschitzOnWith_sqrt (K : NNReal) {ε : ℝ} (hε : 0 < ε) :\n    ¬ LipschitzOnWith K (fun y : ℝ => √y) (Set.Icc 0 ε)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Circular.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Circular",
+   "title": "Circular orbits for the Hohmann transfer",
+   "doc": "The two circular coasts obey the same central force law.\n\n## i. Overview\n\nA circular orbit rotates uniformly at the rate determined by the radius and gravitational\nparameter. The phase is free so its position can meet the transfer ellipse at an apsis.\n\n## ii. Key results\n\n- `circular_newton` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Circular positions, velocities, and accelerations\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 39,
+     "text": "## A. Circular positions, velocities, and accelerations"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularRate",
+     "kind": "def",
+     "line": 44,
+     "doc": "The angular rate of a circular orbit of radius `R`.",
+     "statement": "def circularRate (mu R : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularSpeed",
+     "kind": "def",
+     "line": 46,
+     "doc": "The speed of a circular orbit of radius `R`.",
+     "statement": "def circularSpeed (mu R : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularPosition",
+     "kind": "def",
+     "line": 48,
+     "doc": "The position on a prograde circle with the given initial phase.",
+     "statement": "def circularPosition (mu R phase t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularVelocity",
+     "kind": "def",
+     "line": 52,
+     "doc": "The velocity on a prograde circle with the given initial phase.",
+     "statement": "def circularVelocity (mu R phase t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularRate_pos",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "",
+     "statement": "lemma circularRate_pos {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :\n    0 < circularRate mu R",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularRate_sq",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "",
+     "statement": "lemma circularRate_sq {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :\n    circularRate mu R ^ 2 = mu/R^3",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularSpeed_pos",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma circularSpeed_pos {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :\n    0 < circularSpeed mu R",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularSpeed_sq",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma circularSpeed_sq {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :\n    circularSpeed mu R ^ 2 = mu/R",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circularSpeed_eq_rate",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma circularSpeed_eq_rate {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R) :\n    R*circularRate mu R = circularSpeed mu R",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_circularPosition",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma norm_circularPosition {mu R : ℝ} (hR : 0 < R) (phase t : ℝ) :\n    ‖circularPosition mu R phase t‖ = R",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_circularPosition",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma hasDerivAt_circularPosition (mu R phase t : ℝ) :\n    HasDerivAt (circularPosition mu R phase) (circularVelocity mu R phase t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_circularVelocity",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma hasDerivAt_circularVelocity (mu R phase t : ℝ) :\n    HasDerivAt (circularVelocity mu R phase)\n      (-(circularRate mu R)^2 • circularPosition mu R phase t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.circular_newton",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma circular_newton {mu R : ℝ} (hm : 0 < mu) (hR : 0 < R)\n    (phase t : ℝ) :\n    deriv (deriv (circularPosition mu R phase)) t =\n      -(mu/‖circularPosition mu R phase t‖^3) • circularPosition mu R phase t",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Differentiation.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Differentiation",
+   "title": "Time derivatives of the Hohmann ellipse",
+   "doc": "Kepler time determines the velocity and acceleration.\n\n## i. Overview\n\nThe inverse Kepler clock supplies the anomaly rate. Differentiating the Cartesian coordinates\nyields the velocity and then an acceleration parallel to the displacement.\n\n## ii. Key results\n\n- `hasDerivAt_velocity` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Differentiation along the ellipse\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Differentiation along the ellipse"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position",
+     "kind": "def",
+     "line": 42,
+     "doc": "The position on the transfer ellipse at the given physical time.",
+     "statement": "def position (p : Parameters) (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity",
+     "kind": "def",
+     "line": 44,
+     "doc": "The velocity on the transfer ellipse at a given physical time.",
+     "statement": "def velocity (p : Parameters) (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_D",
+     "kind": "lemma",
+     "line": 46,
+     "doc": "",
+     "statement": "lemma hasDerivAt_D (p : Parameters) (u : ℝ) :\n    HasDerivAt (D p) (p.e*Real.sin u) u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_position",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "",
+     "statement": "lemma hasDerivAt_position (p : Parameters) (t : ℝ) :\n    HasDerivAt (position p) (velocity p t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_velocityAtAnomaly_x",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "",
+     "statement": "lemma hasDerivAt_velocityAtAnomaly_x (p : Parameters) (u : ℝ) :\n    HasDerivAt (fun s => (velocityAtAnomaly p s).re)\n      (-p.a*p.n*(Real.cos u-p.e)/(D p u)^2) u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_velocityAtAnomaly_y",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma hasDerivAt_velocityAtAnomaly_y (p : Parameters) (u : ℝ) :\n    HasDerivAt (fun s => (velocityAtAnomaly p s).im)\n      (-p.b*p.n*Real.sin u/(D p u)^2) u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_velocity",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma hasDerivAt_velocity (p : Parameters) (t : ℝ) :\n    HasDerivAt (velocity p)\n      (-(p.n^2/(D p (anomaly p t))^3) • position p t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deriv_position",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma deriv_position (p : Parameters) : deriv (position p) = velocity p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_continuous",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma position_continuous (p : Parameters) : Continuous (position p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity_continuous",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma velocity_continuous (p : Parameters) : Continuous (velocity p)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Dynamics.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Dynamics",
+   "title": "Newtonian dynamics of the Hohmann ellipse",
+   "doc": "The transfer coast solves the inverse-square equation.\n\n## i. Overview\n\nThe norm of the position stays positive. Rewriting the radial acceleration with the mean motion\nlaw gives the Newtonian acceleration at every real time.\n\n## ii. Key results\n\n- `second_deriv_position` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The Newtonian equation and periodicity\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. The Newtonian equation and periodicity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.gravity",
+     "kind": "def",
+     "line": 42,
+     "doc": "The inverse-square central acceleration at the given position.",
+     "statement": "def gravity (mu : ℝ) (q : ℂ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_position",
+     "kind": "lemma",
+     "line": 44,
+     "doc": "",
+     "statement": "lemma norm_position (p : Parameters) (t : ℝ) :\n    ‖position p t‖ = radial p (anomaly p t)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_bounds",
+     "kind": "lemma",
+     "line": 46,
+     "doc": "",
+     "statement": "lemma position_bounds (p : Parameters) (t : ℝ) :\n    p.r₁ ≤ ‖position p t‖ ∧ ‖position p t‖ ≤ p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_position_pos",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "",
+     "statement": "lemma norm_position_pos (p : Parameters) (t : ℝ) : 0 < ‖position p t‖",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_ne_zero",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma position_ne_zero (p : Parameters) (t : ℝ) : position p t ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.acceleration_coefficient",
+     "kind": "lemma",
+     "line": 55,
+     "doc": "",
+     "statement": "lemma acceleration_coefficient (p : Parameters) (u : ℝ) :\n    p.n^2/(D p u)^3 = p.mu/(radial p u)^3",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_velocity_newton",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma hasDerivAt_velocity_newton (p : Parameters) (t : ℝ) :\n    HasDerivAt (velocity p) (gravity p.mu (position p t)) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.second_deriv_position",
+     "kind": "lemma",
+     "line": 64,
+     "doc": "",
+     "statement": "lemma second_deriv_position (p : Parameters) (t : ℝ) :\n    deriv (deriv (position p)) t = -(p.mu/‖position p t‖^3) • position p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_periodic",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma position_periodic (p : Parameters) :\n    Function.Periodic (position p) (2*p.transferTime)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity_periodic",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma velocity_periodic (p : Parameters) :\n    Function.Periodic (velocity p) (2*p.transferTime)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Endpoints.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Endpoints",
+   "title": "Apsidal speeds on the Hohmann ellipse",
+   "doc": "The transfer velocity is tangential at both apses.\n\n## i. Overview\n\nEvaluating the actual time derivative at departure and arrival gives the periapsis and apoapsis\nspeeds. These speeds admit closed forms in the two orbital radii.\n\n## ii. Key results\n\n- `periSpeed_formula` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Positions and velocities at the apses\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Positions and velocities at the apses"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.periSpeed",
+     "kind": "def",
+     "line": 42,
+     "doc": "The transfer speed at periapsis.",
+     "statement": "def periSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apoSpeed",
+     "kind": "def",
+     "line": 44,
+     "doc": "The transfer speed at apoapsis.",
+     "statement": "def apoSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.periSpeed_pos",
+     "kind": "lemma",
+     "line": 46,
+     "doc": "",
+     "statement": "lemma periSpeed_pos (p : Parameters) : 0 < periSpeed p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apoSpeed_pos",
+     "kind": "lemma",
+     "line": 48,
+     "doc": "",
+     "statement": "lemma apoSpeed_pos (p : Parameters) : 0 < apoSpeed p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_departure",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "",
+     "statement": "lemma position_departure (p : Parameters) : position p 0 = pack p.r₁ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.position_arrival",
+     "kind": "lemma",
+     "line": 52,
+     "doc": "",
+     "statement": "lemma position_arrival (p : Parameters) :\n    position p p.transferTime = pack (-p.r₂) 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity_departure",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma velocity_departure (p : Parameters) : velocity p 0 = pack 0 (periSpeed p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity_arrival",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "",
+     "statement": "lemma velocity_arrival (p : Parameters) :\n    velocity p p.transferTime = pack 0 (-apoSpeed p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.periSpeed_sq",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma periSpeed_sq (p : Parameters) :\n    periSpeed p ^ 2 = 2*p.mu*p.r₂/(p.r₁*(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apoSpeed_sq",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma apoSpeed_sq (p : Parameters) :\n    apoSpeed p ^ 2 = 2*p.mu*p.r₁/(p.r₂*(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.periSpeed_formula",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma periSpeed_formula (p : Parameters) :\n    periSpeed p = Real.sqrt (2*p.mu*p.r₂/(p.r₁*(p.r₁+p.r₂)))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apoSpeed_formula",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma apoSpeed_formula (p : Parameters) :\n    apoSpeed p = Real.sqrt (2*p.mu*p.r₁/(p.r₂*(p.r₁+p.r₂)))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_velocity_departure",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma norm_velocity_departure (p : Parameters) : ‖velocity p 0‖ = periSpeed p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_velocity_arrival",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma norm_velocity_arrival (p : Parameters) :\n    ‖velocity p p.transferTime‖ = apoSpeed p",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Geometry.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Geometry",
+   "title": "Geometry of the Hohmann ellipse",
+   "doc": "The eccentric anomaly parameterizes the transfer ellipse.\n\n## i. Overview\n\nThe attracting centre is at the origin. The distance from the focus lies between the two circular\nradii, with equality at the two apses.\n\n## ii. Key results\n\n- `norm_ellipse` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The ellipse and its apses\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. The ellipse and its apses"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D",
+     "kind": "def",
+     "line": 43,
+     "doc": "The focus distance divided by the semimajor axis.",
+     "statement": "def D (p : Parameters) (u : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.radial",
+     "kind": "def",
+     "line": 45,
+     "doc": "The distance from the attracting focus at a given eccentric anomaly.",
+     "statement": "def radial (p : Parameters) (u : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse",
+     "kind": "def",
+     "line": 47,
+     "doc": "The position on the transfer ellipse at the given eccentric anomaly.",
+     "statement": "def ellipse (p : Parameters) (u : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocityAtAnomaly",
+     "kind": "def",
+     "line": 50,
+     "doc": "The physical velocity on the transfer ellipse at the given anomaly.",
+     "statement": "def velocityAtAnomaly (p : Parameters) (u : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_lower",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma D_lower (p : Parameters) (u : ℝ) : 1 - p.e ≤ D p u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_upper",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma D_upper (p : Parameters) (u : ℝ) : D p u ≤ 1 + p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_pos",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma D_pos (p : Parameters) (u : ℝ) : 0 < D p u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_ne",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma D_ne (p : Parameters) (u : ℝ) : D p u ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.radial_pos",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma radial_pos (p : Parameters) (u : ℝ) : 0 < radial p u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse_squared_radius",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma ellipse_squared_radius (p : Parameters) (u : ℝ) :\n    (ellipse p u).re ^ 2 + (ellipse p u).im ^ 2 = (radial p u)^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_ellipse",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma norm_ellipse (p : Parameters) (u : ℝ) : ‖ellipse p u‖ = radial p u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.radial_bounds",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma radial_bounds (p : Parameters) (u : ℝ) :\n    p.r₁ ≤ radial p u ∧ radial p u ≤ p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse_ne_zero",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma ellipse_ne_zero (p : Parameters) (u : ℝ) : ellipse p u ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_zero",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma D_zero (p : Parameters) : D p 0 = 1 - p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.D_pi",
+     "kind": "lemma",
+     "line": 92,
+     "doc": "",
+     "statement": "lemma D_pi (p : Parameters) : D p Real.pi = 1 + p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse_zero",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma ellipse_zero (p : Parameters) : ellipse p 0 = pack p.r₁ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse_pi",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma ellipse_pi (p : Parameters) : ellipse p Real.pi = pack (-p.r₂) 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.ellipse_periodic",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma ellipse_periodic (p : Parameters) : Function.Periodic (ellipse p) (2*Real.pi)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Impulses.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Impulses",
+   "title": "The two Hohmann velocity impulses",
+   "doc": "The velocity jumps match the transfer ellipse to the circles.\n\n## i. Overview\n\nThe two velocity jumps are tangential. Their magnitudes are the speed excess at departure and the\nspeed deficit at arrival. At the opposite apsis the prograde direction is the negative imaginary\naxis.\n\n## ii. Key results\n\n- `totalDeltaV_eq_sum_norms` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Vector jumps and their magnitudes\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 39,
+     "text": "## A. Vector jumps and their magnitudes"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₁",
+     "kind": "def",
+     "line": 44,
+     "doc": "The magnitude of the departure velocity impulse.",
+     "statement": "def deltaV₁ (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₂",
+     "kind": "def",
+     "line": 46,
+     "doc": "The magnitude of the arrival velocity impulse.",
+     "statement": "def deltaV₂ (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.totalDeltaV",
+     "kind": "def",
+     "line": 48,
+     "doc": "The sum of the departure and arrival impulse magnitudes.",
+     "statement": "def totalDeltaV (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.entryImpulse",
+     "kind": "def",
+     "line": 50,
+     "doc": "The change in velocity from the inner circle to the ellipse.",
+     "statement": "def entryImpulse (p : Parameters) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.exitImpulse",
+     "kind": "def",
+     "line": 53,
+     "doc": "The change in velocity from the ellipse to the outer circle.",
+     "statement": "def exitImpulse (p : Parameters) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.peri_excess_sq",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "",
+     "statement": "lemma peri_excess_sq (p : Parameters) :\n    periSpeed p ^ 2 - circularSpeed p.mu p.r₁ ^ 2 =\n      p.mu*(p.r₂-p.r₁)/(p.r₁*(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apo_deficit_sq",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma apo_deficit_sq (p : Parameters) :\n    circularSpeed p.mu p.r₂ ^ 2 - apoSpeed p ^ 2 =\n      p.mu*(p.r₂-p.r₁)/(p.r₂*(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₁_pos",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma deltaV₁_pos (p : Parameters) : 0 < deltaV₁ p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₂_pos",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma deltaV₂_pos (p : Parameters) : 0 < deltaV₂ p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.totalDeltaV_pos",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma totalDeltaV_pos (p : Parameters) : 0 < totalDeltaV p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.periSpeed_factorized",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma periSpeed_factorized (p : Parameters) :\n    periSpeed p = circularSpeed p.mu p.r₁ * Real.sqrt (2*p.r₂/(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apoSpeed_factorized",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma apoSpeed_factorized (p : Parameters) :\n    apoSpeed p = circularSpeed p.mu p.r₂ * Real.sqrt (2*p.r₁/(p.r₁+p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₁_formula",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma deltaV₁_formula (p : Parameters) :\n    deltaV₁ p = Real.sqrt (p.mu/p.r₁) *\n      (Real.sqrt (2*p.r₂/(p.r₁+p.r₂))-1)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.deltaV₂_formula",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma deltaV₂_formula (p : Parameters) :\n    deltaV₂ p = Real.sqrt (p.mu/p.r₂) *\n      (1-Real.sqrt (2*p.r₁/(p.r₁+p.r₂)))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.entryImpulse_eq",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma entryImpulse_eq (p : Parameters) : entryImpulse p = pack 0 (deltaV₁ p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.exitImpulse_eq",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma exitImpulse_eq (p : Parameters) : exitImpulse p = pack 0 (-deltaV₂ p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.entryImpulse_norm",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma entryImpulse_norm (p : Parameters) : ‖entryImpulse p‖ = deltaV₁ p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.exitImpulse_norm",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "",
+     "statement": "lemma exitImpulse_norm (p : Parameters) : ‖exitImpulse p‖ = deltaV₂ p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.totalDeltaV_eq_sum_norms",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "",
+     "statement": "lemma totalDeltaV_eq_sum_norms (p : Parameters) :\n    totalDeltaV p = ‖entryImpulse p‖ + ‖exitImpulse p‖",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.impulses_tangential",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma impulses_tangential (p : Parameters) :\n    (position p 0).re * (entryImpulse p).re +\n      (position p 0).im * (entryImpulse p).im = 0 ∧\n    (position p p.transferTime).re * (exitImpulse p).re +\n      (position p p.transferTime).im * (exitImpulse p).im = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Invariants.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Invariants",
+   "title": "Mechanical invariants of the Hohmann ellipse",
+   "doc": "The elliptical coast has constant specific energy and angular momentum.\n\n## i. Overview\n\nThe squared speed follows the vis-viva identity. Together with the focus distance and the planar\ncross product this gives the conserved specific energy and signed angular momentum.\n\n## ii. Key results\n\n- `coast_energy` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Vis-viva and the two invariants\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Vis-viva and the two invariants"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.specificEnergy",
+     "kind": "def",
+     "line": 42,
+     "doc": "The sum of kinetic and gravitational potential energy per unit mass.",
+     "statement": "def specificEnergy (mu : ℝ) (q v : ℂ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocity_numerator",
+     "kind": "lemma",
+     "line": 44,
+     "doc": "",
+     "statement": "lemma velocity_numerator (p : Parameters) (u : ℝ) :\n    p.a^2*Real.sin u^2 + p.b^2*Real.cos u^2 =\n      p.a^2 * D p u * (1+p.e*Real.cos u)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.velocityAtAnomaly_norm_sq",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma velocityAtAnomaly_norm_sq (p : Parameters) (u : ℝ) :\n    ‖velocityAtAnomaly p u‖^2 =\n      p.n^2*p.a^2*(1+p.e*Real.cos u)/D p u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.vis_viva_at_anomaly",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma vis_viva_at_anomaly (p : Parameters) (u : ℝ) :\n    ‖velocityAtAnomaly p u‖^2 = p.mu*(2/‖ellipse p u‖-1/p.a)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.vis_viva",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma vis_viva (p : Parameters) (t : ℝ) :\n    ‖deriv (position p) t‖^2 = p.mu*(2/‖position p t‖-1/p.a)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.coast_energy",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma coast_energy (p : Parameters) (t : ℝ) :\n    specificEnergy p.mu (position p t) (deriv (position p) t) = -p.mu/(2*p.a)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.coast_energy_negative",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma coast_energy_negative (p : Parameters) (t : ℝ) :\n    specificEnergy p.mu (position p t) (deriv (position p) t) < 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.angular_momentum_at_anomaly",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma angular_momentum_at_anomaly (p : Parameters) (u : ℝ) :\n    cross (ellipse p u) (velocityAtAnomaly p u) = p.a*p.b*p.n",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.coast_angular_momentum",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma coast_angular_momentum (p : Parameters) (t : ℝ) :\n    cross (position p t) (deriv (position p) t) = p.a*p.b*p.n",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.coast_angular_momentum_pos",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma coast_angular_momentum_pos (p : Parameters) (t : ℝ) :\n    0 < cross (position p t) (deriv (position p) t)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/KeplerClock.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.KeplerClock",
+   "title": "Kepler time for the Hohmann ellipse",
+   "doc": "The eccentric anomaly is obtained by inverting Kepler time.\n\n## i. Overview\n\nThe derivative of the clock is strictly positive for eccentricity below one. Monotonicity and\nsurjectivity give an inverse on all real times, whose derivative follows from the inverse rule.\n\n## ii. Key results\n\n- `hasDerivAt_anomaly` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The clock and its inverse\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. The clock and its inverse"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock",
+     "kind": "def",
+     "line": 42,
+     "doc": "The elapsed Kepler time at a given eccentric anomaly.",
+     "statement": "def clock (p : Parameters) (u : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_clock",
+     "kind": "lemma",
+     "line": 44,
+     "doc": "",
+     "statement": "lemma hasDerivAt_clock (p : Parameters) (u : ℝ) :\n    HasDerivAt (clock p) (D p u / p.n) u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_continuous",
+     "kind": "lemma",
+     "line": 47,
+     "doc": "",
+     "statement": "lemma clock_continuous (p : Parameters) : Continuous (clock p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_strictMono",
+     "kind": "lemma",
+     "line": 49,
+     "doc": "",
+     "statement": "lemma clock_strictMono (p : Parameters) : StrictMono (clock p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_bounds",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma clock_bounds (p : Parameters) (u : ℝ) :\n    (u-p.e)/p.n ≤ clock p u ∧ clock p u ≤ (u+p.e)/p.n",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_surjective",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma clock_surjective (p : Parameters) : Function.Surjective (clock p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clockIso",
+     "kind": "def",
+     "line": 73,
+     "doc": "The inverse is the inverse of a proved order isomorphism.",
+     "statement": "def clockIso (p : Parameters) : ℝ ≃o ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly",
+     "kind": "def",
+     "line": 81,
+     "doc": "The eccentric anomaly at the given physical time.",
+     "statement": "def anomaly (p : Parameters) (t : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_anomaly",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma clock_anomaly (p : Parameters) (t : ℝ) : clock p (anomaly p t) = t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_clock",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma anomaly_clock (p : Parameters) (u : ℝ) : anomaly p (clock p u) = u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_continuous",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma anomaly_continuous (p : Parameters) : Continuous (anomaly p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_strictMono",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma anomaly_strictMono (p : Parameters) : StrictMono (anomaly p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hasDerivAt_anomaly",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma hasDerivAt_anomaly (p : Parameters) (t : ℝ) :\n    HasDerivAt (anomaly p) (p.n / D p (anomaly p t)) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_zero",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma clock_zero (p : Parameters) : clock p 0 = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_pi",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma clock_pi (p : Parameters) : clock p Real.pi = p.transferTime",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_zero",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "",
+     "statement": "lemma anomaly_zero (p : Parameters) : anomaly p 0 = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_transferTime",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "",
+     "statement": "lemma anomaly_transferTime (p : Parameters) :\n    anomaly p p.transferTime = Real.pi",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.kepler_equation",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma kepler_equation (p : Parameters) (t : ℝ) :\n    anomaly p t - p.e * Real.sin (anomaly p t) = p.n*t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_bounds",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma anomaly_bounds (p : Parameters) {t : ℝ} (ht : t ∈ Set.Icc 0 p.transferTime) :\n    anomaly p t ∈ Set.Icc 0 Real.pi",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.clock_add_two_pi",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma clock_add_two_pi (p : Parameters) (u : ℝ) :\n    clock p (u+2*Real.pi) = clock p u + 2*p.transferTime",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.anomaly_add_period",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "",
+     "statement": "lemma anomaly_add_period (p : Parameters) (t : ℝ) :\n    anomaly p (t+2*p.transferTime) = anomaly p t + 2*Real.pi",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Lagrangian.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Lagrangian",
+   "title": "Lagrangian dynamics of the Hohmann transfer coast",
+   "doc": "The smooth coast satisfies the Euler–Lagrange equation for a Kepler Lagrangian on its radial range.\n\n## i. Overview\n\nThe inverse-radius term is singular at the centre. The normed-space constructor for\n`LagrangianSystem` requires a globally smooth Lagrangian. We smooth the inverse-radius term inside\nhalf the inner orbital radius. The entire transfer ellipse stays outside this region, where the\nLagrangian is the usual kinetic term plus the gravitational parameter divided by the radius.\n\n## ii. Key results\n\n- `lagrangianSystem` packages the smooth extension on the planar configuration space.\n- `lagrangianSystem_coord_eq` recovers the Kepler Lagrangian outside the modified region.\n- `eulerLagrange_position` proves that the Euler–Lagrange covector vanishes on the smooth coast.\n\n## iii. Table of contents\n\n- A. The Lagrangian on the plane\n- B. The Euler–Lagrange equation along the coast\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann transfer coast.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. The Lagrangian on the plane"
+    },
+    {
+     "line": 96,
+     "text": "## B. The Euler–Lagrange equation along the coast"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.lagrangianSystem",
+     "kind": "def",
+     "line": 84,
+     "doc": "The Lagrangian system on the plane that agrees with the Kepler Lagrangian on the coast.",
+     "statement": "def lagrangianSystem (p : Parameters) : LagrangianSystem 𝓘(ℝ, ℂ) ⟨ℂ⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.lagrangianSystem_coord_eq",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "Outside the modified region the coordinate Lagrangian is the original Kepler Lagrangian.",
+     "statement": "lemma lagrangianSystem_coord_eq (p : Parameters) (t₀ : Time) (t : ℝ) {q : ℂ}\n    (v : ℂ) (hq : p.r₁ / 2 ≤ ‖q‖) :\n    (lagrangianSystem p).coord t₀ (t, q, v) = ‖v‖ ^ 2 / 2 + p.mu / ‖q‖",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.eulerLagrange_position",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "The Hohmann transfer coast satisfies the Euler–Lagrange equation in the planar system.",
+     "statement": "lemma eulerLagrange_position (p : Parameters) (t₀ : Time) (t : ℝ) :\n    eulerLagrange (lagrangianSystem p) t₀ (position p) t = 0",
+     "sorry": false
+    }
+   ],
+   "private": 7,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Parameters.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Parameters",
+   "title": "Parameters of an outward Hohmann transfer",
+   "doc": "The two circular radii determine the transfer ellipse.\n\n## i. Overview\n\nThe central gravitational parameter and the two radii determine the semiaxes, eccentricity, mean\nmotion and half-period.\n\n## ii. Key results\n\n- `Parameters.transferTime_eq` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Elliptic geometry and transfer time\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Elliptic geometry and transfer time"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters",
+     "kind": "structure",
+     "line": 52,
+     "doc": "The positive gravitational parameter and the ordered circular radii.",
+     "statement": "structure Parameters where\n  /-- The central gravitational parameter. -/\n  mu : ℝ\n  /-- The radius of the inner circular orbit. -/\n  r₁ : ℝ\n  /-- The radius of the outer circular orbit. -/\n  r₂ : ℝ\n  /-- The gravitational parameter is positive. -/\n  mu_pos : 0 < mu\n  /-- The inner radius is positive. -/\n  r₁_pos : 0 < r₁\n  /-- The outer radius exceeds the inner radius. -/\n  outward : r₁ < r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.a",
+     "kind": "def",
+     "line": 69,
+     "doc": "The semimajor axis of the transfer ellipse.",
+     "statement": "def a (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.e",
+     "kind": "def",
+     "line": 71,
+     "doc": "The eccentricity of the transfer ellipse.",
+     "statement": "def e (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.b",
+     "kind": "def",
+     "line": 73,
+     "doc": "The semiminor axis of the transfer ellipse.",
+     "statement": "def b (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.n",
+     "kind": "def",
+     "line": 75,
+     "doc": "The mean motion of the transfer ellipse.",
+     "statement": "def n (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.transferTime",
+     "kind": "def",
+     "line": 77,
+     "doc": "The time to coast from periapsis to apoapsis.",
+     "statement": "def transferTime (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.r₂_pos",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma r₂_pos (p : Parameters) : 0 < p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.sum_pos",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma sum_pos (p : Parameters) : 0 < p.r₁ + p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.a_pos",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "",
+     "statement": "lemma a_pos (p : Parameters) : 0 < p.a",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.e_pos",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma e_pos (p : Parameters) : 0 < p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.e_lt_one",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma e_lt_one (p : Parameters) : p.e < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.b_pos",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma b_pos (p : Parameters) : 0 < p.b",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.b_sq",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma b_sq (p : Parameters) : p.b ^ 2 = p.r₁ * p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.n_pos",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma n_pos (p : Parameters) : 0 < p.n",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.n_sq",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma n_sq (p : Parameters) : p.n ^ 2 = p.mu / p.a ^ 3",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.a_ne",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma a_ne (p : Parameters) : p.a ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.n_ne",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma n_ne (p : Parameters) : p.n ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.r₁_ne",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma r₁_ne (p : Parameters) : p.r₁ ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.r₂_ne",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma r₂_ne (p : Parameters) : p.r₂ ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.one_sub_e_pos",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma one_sub_e_pos (p : Parameters) : 0 < 1 - p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.one_add_e_pos",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma one_add_e_pos (p : Parameters) : 0 < 1 + p.e",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.a_mul_one_sub_e",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma a_mul_one_sub_e (p : Parameters) : p.a * (1 - p.e) = p.r₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.a_mul_one_add_e",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma a_mul_one_add_e (p : Parameters) : p.a * (1 + p.e) = p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.b_sq_ellipse",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma b_sq_ellipse (p : Parameters) : p.b ^ 2 = p.a ^ 2 * (1 - p.e ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.n_sq_mul_a_cube",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma n_sq_mul_a_cube (p : Parameters) : p.n ^ 2 * p.a ^ 3 = p.mu",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.transferTime_pos",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma transferTime_pos (p : Parameters) : 0 < p.transferTime",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.transferTime_sq",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "lemma transferTime_sq (p : Parameters) :\n    p.transferTime ^ 2 * p.mu = Real.pi ^ 2 * p.a ^ 3",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.Parameters.transferTime_eq",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma transferTime_eq (p : Parameters) :\n    p.transferTime = Real.pi * Real.sqrt (p.a ^ 3 / p.mu)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Plane.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Plane",
+   "title": "Planar coordinates for the Hohmann transfer",
+   "doc": "Complex coordinates carry the Euclidean norm.\n\n## i. Overview\n\nThe real and imaginary parts represent Cartesian coordinates. The norm and derivative identities\nlet later modules work with both components while retaining the Euclidean norm.\n\n## ii. Key results\n\n- `pack_deriv` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Cartesian coordinates and differentiation\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Cartesian coordinates and differentiation"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack",
+     "kind": "def",
+     "line": 52,
+     "doc": "A planar vector with the given Cartesian coordinates.",
+     "statement": "def pack (x y : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.cross",
+     "kind": "def",
+     "line": 54,
+     "doc": "The signed scalar component of the cross product normal to the plane.",
+     "statement": "def cross (z w : ℂ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.sqSpeed",
+     "kind": "def",
+     "line": 56,
+     "doc": "The squared Euclidean speed of a planar velocity.",
+     "statement": "def sqSpeed (z : ℂ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_re",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "",
+     "statement": "lemma pack_re (x y : ℝ) : (pack x y).re = x",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_im",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "",
+     "statement": "lemma pack_im (x y : ℝ) : (pack x y).im = y",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.sqSpeed_eq_norm_sq",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma sqSpeed_eq_norm_sq (z : ℂ) : sqSpeed z = ‖z‖ ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_pack_sq",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma norm_pack_sq (x y : ℝ) : ‖pack x y‖ ^ 2 = x ^ 2 + y ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_pack_eq",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma norm_pack_eq {x y r : ℝ} (hr : 0 ≤ r) (hs : x^2+y^2=r^2) :\n    ‖pack x y‖ = r",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.norm_pack_vertical",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma norm_pack_vertical (y : ℝ) : ‖pack 0 y‖ = |y|",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_deriv",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma pack_deriv {f g : ℝ → ℝ} {f' g' t : ℝ}\n    (hf : HasDerivAt f f' t) (hg : HasDerivAt g g' t) :\n    HasDerivAt (fun s => pack (f s) (g s)) (pack f' g') t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_smul",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "",
+     "statement": "lemma pack_smul (c x y : ℝ) : c • pack x y = pack (c*x) (c*y)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_sub",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma pack_sub (x y u v : ℝ) : pack x y - pack u v = pack (x-u) (y-v)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.pack_neg",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma pack_neg (x y : ℝ) : -pack x y = pack (-x) (-y)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/PublicStatement.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.PublicStatement",
+   "title": "Existence of an outward Hohmann transfer",
+   "doc": "Two positive ordered radii admit a tangential two-impulse transfer.\n\n## i. Overview\n\nThe explicit ellipse joins two prograde circles at its apses. The statement exposes the time\nderivatives, Newtonian equations, velocity jump norms, and transfer time in terms of the input\ndata.\n\n## ii. Key results\n\n- `exists_hohmann_transfer` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Existence and physical transfer identities\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Existence and physical transfer identities"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.hohmann_transfer",
+     "kind": "lemma",
+     "line": 43,
+     "doc": "The explicit outward transfer satisfies the Newtonian equations and burn identities.",
+     "statement": "lemma hohmann_transfer (p : Parameters) :\n    0 < p.transferTime ∧\n    (∀ t, deriv (deriv (position p)) t =\n      -(p.mu/‖position p t‖^3) • position p t) ∧\n    (∀ t, p.r₁ ≤ ‖position p t‖ ∧ ‖position p t‖ ≤ p.r₂) ∧\n    position p 0 = pack p.r₁ 0 ∧\n    position p p.transferTime = pack (-p.r₂) 0 ∧\n    deriv (position p) 0 = pack 0 (periSpeed p) ∧\n    deriv (position p) p.transferTime = pack 0 (-apoSpeed p) ∧\n    incoming p 0 = position p 0 ∧\n    position p p.transferTime = outgoing p p.transferTime ∧\n    (∀ t, deriv (deriv (incoming p)) t =\n      -(p.mu/‖incoming p t‖^3) • incoming p t) ∧\n    (∀ t, deriv (deriv (outgoing p)) t =\n      -(p.mu/‖outgoing p t‖^3) • outgoing p t) ∧\n    ‖deriv (position p) 0-deriv (incoming p) 0‖ = deltaV₁ p ∧\n    ‖deriv (outgoing p) p.transferTime-deriv (position p) p.transferTime‖ = deltaV₂ p ∧\n    0 < deltaV₁ p ∧ 0 < deltaV₂ p ∧\n    deltaV₁ p = Real.sqrt (p.mu/p.r₁)*(Real.sqrt (2*p.r₂/(p.r₁+p.r₂))-1) ∧\n    deltaV₂ p = Real.sqrt (p.mu/p.r₂)*(1-Real.sqrt (2*p.r₁/(p.r₁+p.r₂))) ∧\n    p.transferTime = Real.pi*Real.sqrt (p.a^3/p.mu) ∧\n    (∀ t, specificEnergy p.mu (position p t) (deriv (position p) t) = -p.mu/(2*p.a)) ∧\n    (∀ t, cross (position p t) (deriv (position p) t) = p.a*p.b*p.n)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.exists_hohmann_transfer",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Existence without asking the reader to trust a project-defined orbit predicate.\nAll geometric and motion hypotheses are consequences, not input fields.",
+     "statement": "lemma exists_hohmann_transfer (mu r₁ r₂ : ℝ)\n    (hmu : 0 < mu) (hr₁ : 0 < r₁) (horder : r₁ < r₂) :\n    ∃ (q v c₁ c₂ : ℝ → ℂ) (τ d₁ d₂ : ℝ),\n      0 < τ ∧ 0 < d₁ ∧ 0 < d₂ ∧\n      (∀ t, HasDerivAt q (v t) t) ∧\n      (∀ t, HasDerivAt v (-(mu/‖q t‖^3) • q t) t) ∧\n      (∀ t, deriv (deriv q) t = -(mu/‖q t‖^3) • q t) ∧\n      (∀ t, r₁ ≤ ‖q t‖ ∧ ‖q t‖ ≤ r₂) ∧\n      q 0 = pack r₁ 0 ∧ q τ = pack (-r₂) 0 ∧\n      (∀ t, ‖c₁ t‖ = r₁) ∧ (∀ t, ‖c₂ t‖ = r₂) ∧\n      (∀ t, deriv (deriv c₁) t = -(mu/‖c₁ t‖^3) • c₁ t) ∧\n      (∀ t, deriv (deriv c₂) t = -(mu/‖c₂ t‖^3) • c₂ t) ∧\n      c₁ 0 = q 0 ∧ q τ = c₂ τ ∧\n      v 0-deriv c₁ 0 = pack 0 d₁ ∧\n      deriv c₂ τ-v τ = pack 0 (-d₂) ∧\n      ‖v 0-deriv c₁ 0‖ = d₁ ∧ ‖deriv c₂ τ-v τ‖ = d₂ ∧\n      d₁ = Real.sqrt (mu/r₁)*(Real.sqrt (2*r₂/(r₁+r₂))-1) ∧\n      d₂ = Real.sqrt (mu/r₂)*(1-Real.sqrt (2*r₁/(r₁+r₂))) ∧\n      τ = Real.pi*Real.sqrt (((r₁+r₂)/2)^3/mu)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Dynamics/Transfer.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Dynamics.Transfer",
+   "title": "Joining the Hohmann coast to circular orbits",
+   "doc": "The incoming circle, transfer ellipse and outgoing circle share the burn positions.\n\n## i. Overview\n\nEach coast is defined on all real times. The flight uses them on successive intervals, with the\npositions matched at the two impulses and velocities allowed to jump.\n\n## ii. Key results\n\n- `junction_velocity_jumps` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Coast arcs and their junctions\n\n## iv. References\n\n- [ref: hohmann_jpl_orbital_mechanics] describes the Hohmann ellipse and its apses.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Coast arcs and their junctions"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming",
+     "kind": "def",
+     "line": 43,
+     "doc": "The inner circular coast before the departure impulse.",
+     "statement": "def incoming (p : Parameters) (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoingPhase",
+     "kind": "def",
+     "line": 45,
+     "doc": "The phase that places the outer circular orbit at the arrival apsis.",
+     "statement": "def outgoingPhase (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing",
+     "kind": "def",
+     "line": 47,
+     "doc": "The outer circular coast after the arrival impulse.",
+     "statement": "def outgoing (p : Parameters) (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.flight",
+     "kind": "def",
+     "line": 50,
+     "doc": "The position throughout the two circular coasts and the transfer coast.",
+     "statement": "def flight (p : Parameters) (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming_deriv",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma incoming_deriv (p : Parameters) (t : ℝ) :\n    deriv (incoming p) t = circularVelocity p.mu p.r₁ 0 t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_deriv",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "",
+     "statement": "lemma outgoing_deriv (p : Parameters) (t : ℝ) :\n    deriv (outgoing p) t = circularVelocity p.mu p.r₂ (outgoingPhase p) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming_newton",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "",
+     "statement": "lemma incoming_newton (p : Parameters) (t : ℝ) :\n    deriv (deriv (incoming p)) t = -(p.mu/‖incoming p t‖^3) • incoming p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_newton",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma outgoing_newton (p : Parameters) (t : ℝ) :\n    deriv (deriv (outgoing p)) t = -(p.mu/‖outgoing p t‖^3) • outgoing p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming_radius",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma incoming_radius (p : Parameters) (t : ℝ) : ‖incoming p t‖ = p.r₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_radius",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma outgoing_radius (p : Parameters) (t : ℝ) : ‖outgoing p t‖ = p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming_zero",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma incoming_zero (p : Parameters) : incoming p 0 = pack p.r₁ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_angle",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma outgoing_angle (p : Parameters) :\n    circularRate p.mu p.r₂*p.transferTime + outgoingPhase p = Real.pi",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_arrival",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma outgoing_arrival (p : Parameters) :\n    outgoing p p.transferTime = pack (-p.r₂) 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.incoming_velocity_zero",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma incoming_velocity_zero (p : Parameters) :\n    deriv (incoming p) 0 = pack 0 (circularSpeed p.mu p.r₁)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.outgoing_velocity_arrival",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma outgoing_velocity_arrival (p : Parameters) :\n    deriv (outgoing p) p.transferTime = pack 0 (-circularSpeed p.mu p.r₂)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.junction_positions",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma junction_positions (p : Parameters) :\n    incoming p 0 = position p 0 ∧\n      position p p.transferTime = outgoing p p.transferTime",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.junction_velocity_jumps",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma junction_velocity_jumps (p : Parameters) :\n    deriv (position p) 0 - deriv (incoming p) 0 = entryImpulse p ∧\n    deriv (outgoing p) p.transferTime - deriv (position p) p.transferTime = exitImpulse p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.flight_before",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma flight_before (p : Parameters) {t : ℝ} (ht : t < 0) :\n    flight p t = incoming p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.flight_transfer",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma flight_transfer (p : Parameters) {t : ℝ} (ht : t ∈ Set.Icc 0 p.transferTime) :\n    flight p t = position p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.flight_after",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma flight_after (p : Parameters) {t : ℝ} (ht : p.transferTime < t) :\n    flight p t = outgoing p t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannTransfer.apsidal_parameters_unique",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "",
+     "statement": "lemma apsidal_parameters_unique (p : Parameters) {A E : ℝ}\n    (_hA : 0 < A) (h₁ : A*(1-E)=p.r₁) (h₂ : A*(1+E)=p.r₂) :\n    A = p.a ∧ E = p.e",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Bielliptic.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.Bielliptic",
+   "title": "The cost of a finite bielliptic transfer",
+   "doc": "A third burn can reduce total impulse for a finite radius ratio.\n\n## i. Overview\n\nIn normalized units the radii are 1, 64 and 16. Rational bounds on three square roots certify a\nstrict margin greater than 9/1000 in the summed speed changes.\n\n## ii. Key results\n\n- `Bielliptic.finite_bielliptic_saves_deltaV` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The three-burn cost and its strict margin\n\n## iv. References\n\n- [ref: hohmann_weber_bielliptic]. Weber describes the three-burn bielliptic transfer geometry.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 39,
+     "text": "## A. The three-burn cost and its strict margin"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.Parameters",
+     "kind": "structure",
+     "line": 45,
+     "doc": "Normalized radii: departure 1, target R, common apocentre B.",
+     "statement": "structure Parameters where\n  /-- The final circular radius in units of the initial radius. -/\n  R : ℝ\n  /-- The common apoapsis radius in units of the initial radius. -/\n  B : ℝ\n  /-- The final radius exceeds the initial radius. -/\n  one_lt_R : 1 < R\n  /-- The common apoapsis lies outside the final circle. -/\n  R_lt_B : R < B",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.departureSpeed",
+     "kind": "def",
+     "line": 56,
+     "doc": "First ellipse periapsis speed.",
+     "statement": "def departureSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.arrivalSpeed",
+     "kind": "def",
+     "line": 58,
+     "doc": "Second ellipse periapsis speed at the final radius.",
+     "statement": "def arrivalSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.firstApoSpeed",
+     "kind": "def",
+     "line": 60,
+     "doc": "The first ellipse speed at the common apoapsis.",
+     "statement": "def firstApoSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.secondApoSpeed",
+     "kind": "def",
+     "line": 62,
+     "doc": "The second ellipse speed at the common apoapsis.",
+     "statement": "def secondApoSpeed (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.cost",
+     "kind": "def",
+     "line": 64,
+     "doc": "Three actual speed-jump magnitudes; the final burn is retrograde.",
+     "statement": "def cost (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannPeri",
+     "kind": "def",
+     "line": 69,
+     "doc": "The normalized periapsis speed of the direct Hohmann transfer.",
+     "statement": "def hohmannPeri (R : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannCost",
+     "kind": "def",
+     "line": 71,
+     "doc": "The normalized cost of a direct Hohmann transfer to radius `R`.",
+     "statement": "def hohmannCost (R : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.time",
+     "kind": "def",
+     "line": 75,
+     "doc": "The sum of the two bielliptic half-periods in normalized units.",
+     "statement": "def time (p : Parameters) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.hohmannTime",
+     "kind": "def",
+     "line": 78,
+     "doc": "The direct Hohmann half-period in normalized units.",
+     "statement": "def hohmannTime (R : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.cost_nonneg",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma cost_nonneg (p : Parameters) : 0 ≤ cost p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.time_pos",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma time_pos (p : Parameters) : 0 < time p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.«example»",
+     "kind": "def",
+     "line": 90,
+     "doc": "Concrete finite-radius witness.",
+     "statement": "def «example» : Parameters",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_departure",
+     "kind": "lemma",
+     "line": 92,
+     "doc": "",
+     "statement": "lemma example_departure : departureSpeed «example» = Real.sqrt (128/65 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_arrival",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "",
+     "statement": "lemma example_arrival : arrivalSpeed «example» = Real.sqrt (1/10 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma example_hohmann : hohmannPeri 16 = Real.sqrt (32/17 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.sqrt_rational_interval",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "Rational squared bounds; no floating-point/native evaluation is involved.",
+     "statement": "lemma sqrt_rational_interval {x l u : ℝ} (_hl : 0 ≤ l) (hu : 0 ≤ u)\n    (hlo : l^2 ≤ x) (hhi : x ≤ u^2) : l ≤ Real.sqrt x ∧ Real.sqrt x ≤ u",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_H_bounds",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma example_root_H_bounds :\n    (13719/10000 : ℝ) ≤ Real.sqrt (32/17 : ℝ) ∧\n      Real.sqrt (32/17 : ℝ) ≤ (1372/1000 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_A_bounds",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma example_root_A_bounds :\n    (7/5 : ℝ) ≤ Real.sqrt (128/65 : ℝ) ∧\n      Real.sqrt (128/65 : ℝ) ≤ (14033/10000 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_root_D_bounds",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma example_root_D_bounds :\n    (31/100 : ℝ) ≤ Real.sqrt (1/10 : ℝ) ∧\n      Real.sqrt (1/10 : ℝ) ≤ (31623/100000 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_cost_closed",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma example_cost_closed : cost «example» =\n    (63/64 : ℝ)*Real.sqrt (128/65 : ℝ) +\n      (5/4 : ℝ)*Real.sqrt (1/10 : ℝ) - (5/4 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.example_hohmann_closed",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma example_hohmann_closed : hohmannCost 16 =\n    (15/16 : ℝ)*Real.sqrt (32/17 : ℝ)-(3/4 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_saves_deltaV",
+     "kind": "lemma",
+     "line": 149,
+     "doc": "Exact strict margin: over 0.009 times the departure circular speed.",
+     "statement": "lemma finite_bielliptic_saves_deltaV :\n    (9/1000 : ℝ) < hohmannCost 16 - cost «example»",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.finite_bielliptic_beats_hohmann",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma finite_bielliptic_beats_hohmann : cost «example» < hohmannCost 16",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.not_universally_best_against_bielliptic",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "This refutes an unrestricted optimality claim already in a small subclass\nof three-burn transfers. It does not identify the all-impulse global optimum.",
+     "statement": "lemma not_universally_best_against_bielliptic :\n    ¬ (∀ p : Parameters, hohmannCost p.R ≤ cost p)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Bielliptic.scaled_counterexample",
+     "kind": "lemma",
+     "line": 170,
+     "doc": "",
+     "statement": "lemma scaled_counterexample {v : ℝ} (hv : 0 < v) :\n    v*cost «example» < v*hohmannCost 16",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/BiellipticWitness.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.BiellipticWitness",
+   "title": "A physical bielliptic counterexample",
+   "doc": "Two actual Newtonian coasts realize a cheaper three-impulse maneuver.\n\n## i. Overview\n\nThe first arc travels from radius 1 to the common apoapsis at 64. The second travels from that\napoapsis to radius 16. The three actual velocity jumps give the strict cost comparison.\n\n## ii. Key results\n\n- `BiellipticWitness.physical_three_impulse_counterexample` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The two coasts and the three velocity jumps\n\n## iv. References\n\n- [ref: hohmann_weber_bielliptic]. Weber describes the three-burn bielliptic transfer geometry.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. The two coasts and the three velocity jumps"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.first",
+     "kind": "def",
+     "line": 44,
+     "doc": "The first coast from radius 1 to the common apoapsis at radius 64.",
+     "statement": "def first : Parameters",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second",
+     "kind": "def",
+     "line": 46,
+     "doc": "The ellipse with periapsis at radius 16 and apoapsis at radius 64.",
+     "statement": "def second : Parameters",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.direct",
+     "kind": "def",
+     "line": 48,
+     "doc": "The comparison Hohmann transfer from radius 1 to radius 16.",
+     "statement": "def direct : Parameters",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.secondPosition",
+     "kind": "def",
+     "line": 50,
+     "doc": "The position along the second coast, timed from apoapsis.",
+     "statement": "def secondPosition (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.secondVelocity",
+     "kind": "def",
+     "line": 52,
+     "doc": "The velocity along the second coast, timed from apoapsis.",
+     "statement": "def secondVelocity (t : ℝ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.totalTime",
+     "kind": "def",
+     "line": 54,
+     "doc": "The combined duration of the two bielliptic coasts.",
+     "statement": "def totalTime : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₁",
+     "kind": "def",
+     "line": 57,
+     "doc": "The velocity jump from the inner circle onto the first ellipse.",
+     "statement": "def jump₁ : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₂",
+     "kind": "def",
+     "line": 59,
+     "doc": "The velocity jump between ellipses at the common apoapsis.",
+     "statement": "def jump₂ : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₃",
+     "kind": "def",
+     "line": 61,
+     "doc": "The velocity jump from the second ellipse onto the final circle.",
+     "statement": "def jump₃ : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.cost",
+     "kind": "def",
+     "line": 63,
+     "doc": "The sum of the impulse magnitudes for the specified transfer.",
+     "statement": "def cost : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.secondPosition_deriv",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma secondPosition_deriv (t : ℝ) : HasDerivAt secondPosition (secondVelocity t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.secondVelocity_deriv",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma secondVelocity_deriv (t : ℝ) :\n    HasDerivAt secondVelocity (-(1/‖secondPosition t‖^3) • secondPosition t) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_newton",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma second_newton (t : ℝ) :\n    deriv (deriv secondPosition) t = -(1/‖secondPosition t‖^3) • secondPosition t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_start",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma second_start : secondPosition 0=pack (-64) 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_end",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma second_end : secondPosition second.transferTime=pack 16 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_velocity_start",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma second_velocity_start : secondVelocity 0=pack 0 (-apoSpeed second)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_velocity_end",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma second_velocity_end : secondVelocity second.transferTime=pack 0 (periSpeed second)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.junction",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma junction : position first first.transferTime=secondPosition 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.time_pos",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma time_pos : 0 < totalTime",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.first_peri",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma first_peri : periSpeed first=Real.sqrt (128/65 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_peri",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma second_peri : periSpeed second=Real.sqrt (1/10 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.first_apo",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "",
+     "statement": "lemma first_apo : apoSpeed first=Real.sqrt (128/65 : ℝ)/64",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.second_apo",
+     "kind": "lemma",
+     "line": 113,
+     "doc": "",
+     "statement": "lemma second_apo : apoSpeed second=Real.sqrt (1/10 : ℝ)/4",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.direct_peri",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "",
+     "statement": "lemma direct_peri : periSpeed direct=Real.sqrt (32/17 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.direct_apo",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma direct_apo : apoSpeed direct=Real.sqrt (32/17 : ℝ)/16",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.direct_cost",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "",
+     "statement": "lemma direct_cost : totalDeltaV direct=Bielliptic.hohmannCost 16",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₁_norm",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "",
+     "statement": "lemma jump₁_norm : ‖jump₁‖=|Real.sqrt (128/65 : ℝ)-1|",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₂_norm",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "",
+     "statement": "lemma jump₂_norm : ‖jump₂‖=|Real.sqrt (1/10 : ℝ)/4-Real.sqrt (128/65 : ℝ)/64|",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.jump₃_norm",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "",
+     "statement": "lemma jump₃_norm : ‖jump₃‖=|Real.sqrt (1/10 : ℝ)-(1/4 : ℝ)|",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.cost_eq",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma cost_eq : cost=Bielliptic.cost Bielliptic.«example»",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.BiellipticWitness.physical_three_impulse_counterexample",
+     "kind": "lemma",
+     "line": 167,
+     "doc": "The numerical comparison is linked to actual finite-time coast arcs and\nactual vector jump norms. No arrival time or third burn is sent to infinity.",
+     "statement": "lemma physical_three_impulse_counterexample :\n    0 < totalTime ∧\n    (∀ t, deriv (deriv (position first)) t =\n      -(1/‖position first t‖^3) • position first t) ∧\n    (∀ t, deriv (deriv secondPosition) t =\n      -(1/‖secondPosition t‖^3) • secondPosition t) ∧\n    position first 0=pack 1 0 ∧\n    position first first.transferTime=secondPosition 0 ∧\n    secondPosition second.transferTime=pack 16 0 ∧\n    (9/1000 : ℝ) < totalDeltaV direct-(‖jump₁‖+‖jump₂‖+‖jump₃‖)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/EndpointBounds.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.EndpointBounds",
+   "title": "Lower bounds on the two Hohmann impulses",
+   "doc": "Each impulse has a lower bound over the feasible invariant pairs.\n\n## i. Overview\n\nSplit the comparison by signed angular momentum relative to the Hohmann value. Factoring the cost\ndifference gives a sum of nonnegative terms in each case.\n\n## ii. Key results\n\n- `first_square_lower_bound` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The two squared cost inequalities\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. The two squared cost inequalities"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.gap₁_low",
+     "kind": "lemma",
+     "line": 43,
+     "doc": "Exact nonnegative certificate on the h ≤ hH half-plane.",
+     "statement": "lemma gap₁_low (s : Shape) (w h : ℝ) :\n    s.burnSquare₁ w h - s.burnH₁ ^ 2 =\n      (w + 2*s.alpha - s.alpha^2*h^2) +\n      (s.hH-h)*(2-s.alpha^2*(h+s.hH))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.gap₁_high",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "",
+     "statement": "lemma gap₁_high (s : Shape) (w h : ℝ) :\n    s.burnSquare₁ w h - s.burnH₁ ^ 2 =\n      (w+2-h^2) + (h-s.hH)*(h+s.hH-2)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.gap₂_low",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "",
+     "statement": "lemma gap₂_low (s : Shape) (w h : ℝ) :\n    s.burnSquare₂ w h - s.burnH₂ ^ 2 =\n      (w+2*s.alpha-s.alpha^2*h^2) +\n      s.alpha*(s.hH-h)*(2*s.circularOuter-s.alpha*(h+s.hH))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.gap₂_high",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma gap₂_high (s : Shape) (w h : ℝ) :\n    s.burnSquare₂ w h - s.burnH₂ ^ 2 =\n      (w+2-h^2) + (h-s.hH)*(h+s.hH-2*s.alpha*s.circularOuter)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.low_factor₁_pos",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma low_factor₁_pos (s : Shape) {h : ℝ} (hh : h ≤ s.hH) :\n    0 < 2 - s.alpha^2*(h+s.hH)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.low_factor₂_pos",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma low_factor₂_pos (s : Shape) {h : ℝ} (hh : h ≤ s.hH) :\n    0 < 2*s.circularOuter-s.alpha*(h+s.hH)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.high_factor₁_pos",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma high_factor₁_pos (s : Shape) {h : ℝ} (hh : s.hH ≤ h) :\n    0 < h+s.hH-2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.high_factor₂_pos",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma high_factor₂_pos (s : Shape) {h : ℝ} (hh : s.hH ≤ h) :\n    0 < h+s.hH-2*s.alpha*s.circularOuter",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.first_square_lower_bound",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "Every feasible competitor pays at least the Hohmann first impulse.",
+     "statement": "lemma first_square_lower_bound (s : Shape) {w h : ℝ} (hf : s.Feasible w h) :\n    s.burnH₁ ^ 2 ≤ s.burnSquare₁ w h",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.second_square_lower_bound",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "The second impulse separately also attains its global minimum at Hohmann.",
+     "statement": "lemma second_square_lower_bound (s : Shape) {w h : ℝ} (hf : s.Feasible w h) :\n    s.burnH₂ ^ 2 ≤ s.burnSquare₂ w h",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.first_square_strict_of_h_ne",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma first_square_strict_of_h_ne (s : Shape) {w h : ℝ}\n    (hf : s.Feasible w h) (hne : h ≠ s.hH) :\n    s.burnH₁ ^ 2 < s.burnSquare₁ w h",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.invariant_pair_of_first_square_eq",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "The unique minimizer is an invariant pair, not a unique time-parametrized\ntrajectory: rotations and extra revolutions still have the same cost.",
+     "statement": "lemma invariant_pair_of_first_square_eq (s : Shape) {w h : ℝ}\n    (hf : s.Feasible w h) (heq : s.burnSquare₁ w h = s.burnH₁^2) :\n    h = s.hH ∧ w = s.energyH",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/EndpointOptimality.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.EndpointOptimality",
+   "title": "Optimality over normalized endpoint velocities",
+   "doc": "The Hohmann endpoint velocities minimize the total impulse.\n\n## i. Overview\n\nConservation of normalized energy and signed angular momentum supplies the endpoint constraints.\nTaking nonnegative square roots gives lower bounds for the two impulses and the equality\nconditions.\n\n## ii. Key results\n\n- `endpoint_equality_characterization` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The endpoint comparison and equality case\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. The endpoint comparison and equality case"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData",
+     "kind": "structure",
+     "line": 46,
+     "doc": "Two endpoint velocities in their own oriented radial/tangential frames.\nThe two conservation equalities are endpoint constraints, NOT a theorem that\narbitrary supplied data form a Kepler arc. Newton arcs are connected separately.",
+     "statement": "structure EndpointData (s : Shape) where\n  /-- The normalized radial velocity at the inner endpoint. -/\n  radial₁ : ℝ\n  /-- The normalized prograde tangential velocity at the inner endpoint. -/\n  tangent₁ : ℝ\n  /-- The normalized radial velocity at the outer endpoint. -/\n  radial₂ : ℝ\n  /-- The normalized prograde tangential velocity at the outer endpoint. -/\n  tangent₂ : ℝ\n  /-- The endpoints have the same signed angular momentum. -/\n  angular : tangent₂ = s.alpha * tangent₁\n  /-- The endpoints have the same specific mechanical energy. -/\n  energy : radial₁^2+tangent₁^2-2 = radial₂^2+tangent₂^2-2*s.alpha",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.w",
+     "kind": "def",
+     "line": 63,
+     "doc": "Twice the normalized specific energy of the endpoint data.",
+     "statement": "def w {s : Shape} (z : EndpointData s) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₁",
+     "kind": "def",
+     "line": 65,
+     "doc": "The departure impulse magnitude for the normalized endpoint data.",
+     "statement": "def impulse₁ {s : Shape} (z : EndpointData s) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₂",
+     "kind": "def",
+     "line": 68,
+     "doc": "The arrival impulse magnitude for the normalized endpoint data.",
+     "statement": "def impulse₂ {s : Shape} (z : EndpointData s) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.cost",
+     "kind": "def",
+     "line": 71,
+     "doc": "The sum of the impulse magnitudes for the specified transfer.",
+     "statement": "def cost {s : Shape} (z : EndpointData s) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.feasible",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma feasible {s : Shape} (z : EndpointData s) : s.Feasible z.w z.tangent₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₁_nonneg",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma impulse₁_nonneg {s : Shape} (z : EndpointData s) : 0 ≤ z.impulse₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₂_nonneg",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma impulse₂_nonneg {s : Shape} (z : EndpointData s) : 0 ≤ z.impulse₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₁_sq",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma impulse₁_sq {s : Shape} (z : EndpointData s) :\n    z.impulse₁^2 = z.radial₁^2+(z.tangent₁-1)^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₂_sq",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma impulse₂_sq {s : Shape} (z : EndpointData s) :\n    z.impulse₂^2 = z.radial₂^2+(z.tangent₂-s.circularOuter)^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₁_sq_invariant",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma impulse₁_sq_invariant {s : Shape} (z : EndpointData s) :\n    z.impulse₁^2 = s.burnSquare₁ z.w z.tangent₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.EndpointData.impulse₂_sq_invariant",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma impulse₂_sq_invariant {s : Shape} (z : EndpointData s) :\n    z.impulse₂^2 = s.burnSquare₂ z.w z.tangent₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.endpoint_impulses_lower_bound",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "A global inequality over ALL feasible endpoint velocities, not merely a\nstationary-point or small-perturbation calculation.",
+     "statement": "lemma endpoint_impulses_lower_bound (s : Shape) (z : EndpointData s) :\n    s.burnH₁ ≤ z.impulse₁ ∧ s.burnH₂ ≤ z.impulse₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.endpoint_total_lower_bound",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma endpoint_total_lower_bound (s : Shape) (z : EndpointData s) :\n    s.costH ≤ z.cost",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.hohmannEndpoints",
+     "kind": "def",
+     "line": 123,
+     "doc": "A feasible corner achieving the lower bound; physical attainment is H1.",
+     "statement": "def hohmannEndpoints (s : Shape) : EndpointData s",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.hohmannEndpoints_cost",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "",
+     "statement": "lemma hohmannEndpoints_cost (s : Shape) : (hohmannEndpoints s).cost = s.costH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.endpoint_equality_characterization",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "Equality forces both endpoint radial velocities to vanish and fixes signed\nangular momentum. No claim of uniqueness of flight time or orientation.",
+     "statement": "lemma endpoint_equality_characterization (s : Shape) (z : EndpointData s)\n    (heq : z.cost = s.costH) :\n    z.tangent₁ = s.hH ∧ z.tangent₂ = s.alpha*s.hH ∧\n      z.radial₁ = 0 ∧ z.radial₂ = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Fuel.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.Fuel",
+   "title": "Hohmann optimality in the ideal rocket model",
+   "doc": "Fixed positive exhaust speed transfers the impulse bound to propellant fraction.\n\n## i. Overview\n\nThe ideal rocket equation gives the fraction consumed as a function of total delta-v at fixed\nexhaust speed. Monotonicity transfers the two-impulse bound to this model.\n\n## ii. Key results\n\n- `newton_arc_ideal_fuel_lower_bound` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The ideal propellant fraction\n\n## iv. References\n\n- [ref: hohmann_nasa_rocket]. NASA Glenn gives the ideal rocket equation.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. The ideal propellant fraction"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.idealPropellantFraction",
+     "kind": "def",
+     "line": 43,
+     "doc": "The fraction of initial mass consumed at fixed exhaust speed.",
+     "statement": "def idealPropellantFraction (exhaustSpeed deltaV : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.idealPropellantFraction_mono",
+     "kind": "lemma",
+     "line": 46,
+     "doc": "",
+     "statement": "lemma idealPropellantFraction_mono {ve d₁ d₂ : ℝ} (hExhaustSpeed : 0 < ve) (hd : d₁ ≤ d₂) :\n    idealPropellantFraction ve d₁ ≤ idealPropellantFraction ve d₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.idealPropellantFraction_strict",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma idealPropellantFraction_strict {ve d₁ d₂ : ℝ} (hExhaustSpeed : 0 < ve) (hd : d₁ < d₂) :\n    idealPropellantFraction ve d₁ < idealPropellantFraction ve d₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.remaining_fraction_two_burns",
+     "kind": "lemma",
+     "line": 64,
+     "doc": "Equal exhaust speed makes multiplying burn mass ratios equivalent to using\nsum delta-v; this is the ONLY fuel interpretation used here.",
+     "statement": "lemma remaining_fraction_two_burns (ve d₁ d₂ : ℝ) :\n    Real.exp (-d₁/ve)*Real.exp (-d₂/ve) = Real.exp (-(d₁+d₂)/ve)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.newton_arc_ideal_fuel_lower_bound",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma newton_arc_ideal_fuel_lower_bound (p : Units) (a : KeplerArc p.mu)\n    (h₀ : (a.state a.t₀).radius=p.r₁) (h₁ : (a.state a.t₁).radius=p.r₂)\n    {ve : ℝ} (hExhaustSpeed : 0 < ve) :\n    idealPropellantFraction ve p.bound ≤ idealPropellantFraction ve\n      ((a.state a.t₀).impulse p.speed+(a.state a.t₁).impulse p.circular₂)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/H1Bridge.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.H1Bridge",
+   "title": "Attainment of the Hohmann lower bound",
+   "doc": "The explicit Hohmann trajectory attains the lower bound within the comparison class.\n\n## i. Overview\n\nThe apsidal speeds in the explicit transfer match the normalized optimal speeds. Taking real and\nimaginary parts of the Newtonian coast gives a member of the very same comparison class used for\nthe lower bound.\n\n## ii. Key results\n\n- `h1_global_two_impulse_minimum` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Physical attainment and the minimum\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 39,
+     "text": "## A. Physical attainment and the minimum"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.unitsOfH1",
+     "kind": "def",
+     "line": 44,
+     "doc": "Data conversion only; no optimality assumption is added to H1.",
+     "statement": "def unitsOfH1 (p : HohmannTransfer.Parameters) : Units",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_speed",
+     "kind": "lemma",
+     "line": 47,
+     "doc": "",
+     "statement": "lemma h1_speed (p : HohmannTransfer.Parameters) :\n    (unitsOfH1 p).speed=HohmannTransfer.circularSpeed p.mu p.r₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_outer_speed",
+     "kind": "lemma",
+     "line": 49,
+     "doc": "",
+     "statement": "lemma h1_outer_speed (p : HohmannTransfer.Parameters) :\n    (unitsOfH1 p).circular₂=HohmannTransfer.circularSpeed p.mu p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_peri_speed",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma h1_peri_speed (p : HohmannTransfer.Parameters) :\n    (unitsOfH1 p).speed*(unitsOfH1 p).shape.hH=HohmannTransfer.periSpeed p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_apo_speed",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma h1_apo_speed (p : HohmannTransfer.Parameters) :\n    (unitsOfH1 p).speed*((unitsOfH1 p).shape.alpha*(unitsOfH1 p).shape.hH)=\n      HohmannTransfer.apoSpeed p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_bound_eq_totalDeltaV",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma h1_bound_eq_totalDeltaV (p : HohmannTransfer.Parameters) :\n    (unitsOfH1 p).bound=HohmannTransfer.totalDeltaV p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_global_two_impulse_minimum",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "Physical attainment from H1 plus a global lower bound against arbitrary\nsmooth two-impulse competitors. Free time, free phase, fixed central field.",
+     "statement": "lemma h1_global_two_impulse_minimum (p : HohmannTransfer.Parameters) :\n    (∀ t, deriv (deriv (HohmannTransfer.position p)) t =\n      -(p.mu/‖HohmannTransfer.position p t‖^3) • HohmannTransfer.position p t) ∧\n    HohmannTransfer.position p 0=HohmannTransfer.pack p.r₁ 0 ∧\n    HohmannTransfer.position p p.transferTime=HohmannTransfer.pack (-p.r₂) 0 ∧\n    (unitsOfH1 p).bound=\n      ‖HohmannTransfer.entryImpulse p‖+‖HohmannTransfer.exitImpulse p‖ ∧\n    (∀ a : KeplerArc p.mu,\n      (a.state a.t₀).radius=p.r₁ → (a.state a.t₁).radius=p.r₂ →\n      HohmannTransfer.totalDeltaV p ≤\n        (a.state a.t₀).impulse (HohmannTransfer.circularSpeed p.mu p.r₁)+\n        (a.state a.t₁).impulse (HohmannTransfer.circularSpeed p.mu p.r₂))",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1KeplerArc",
+     "kind": "def",
+     "line": 118,
+     "doc": "The explicit H1 coast is a member of the same class used for the lower bound.",
+     "statement": "def h1KeplerArc (p : HohmannTransfer.Parameters) : KeplerArc p.mu",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_state_radius",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma h1_state_radius (p : HohmannTransfer.Parameters) (t : ℝ) :\n    ((h1KeplerArc p).state t).radius = ‖HohmannTransfer.position p t‖",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.h1_attains_bound_in_kepler_class",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "The lower bound is attained within the actual Newtonian comparison class.",
+     "statement": "lemma h1_attains_bound_in_kepler_class (p : HohmannTransfer.Parameters) :\n    ∃ a : KeplerArc p.mu,\n      (a.state a.t₀).radius = p.r₁ ∧ (a.state a.t₁).radius = p.r₂ ∧\n      (a.state a.t₀).impulse (unitsOfH1 p).speed +\n        (a.state a.t₁).impulse (unitsOfH1 p).circular₂ = (unitsOfH1 p).bound",
+     "sorry": false
+    }
+   ],
+   "private": 2,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/KeplerConservation.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.KeplerConservation",
+   "title": "Kepler conservation and two-impulse bounds",
+   "doc": "Newtonian coast arcs supply the endpoint invariants needed for the cost bound.\n\n## i. Overview\n\nA comparison arc has differentiable position and velocity and avoids the centre throughout a\nfinite interval. The Newtonian equation gives constant energy and angular momentum without\nrestricting their signs.\n\n## ii. Key results\n\n- `KeplerArc.newton_arc_lower_bound` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Conservation along an arbitrary comparison arc\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Conservation along an arbitrary comparison arc"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc",
+     "kind": "structure",
+     "line": 44,
+     "doc": "A noncollision Newtonian coast over a positive finite time interval.",
+     "statement": "structure KeplerArc (mu : ℝ) where\n  /-- The time of the departure impulse. -/\n  t₀ : ℝ\n  /-- The time of the arrival impulse. -/\n  t₁ : ℝ\n  /-- The coast takes positive time. -/\n  time_order : t₀ < t₁\n  /-- The first Cartesian position coordinate as a function of time. -/\n  x : ℝ → ℝ\n  /-- The second Cartesian position coordinate as a function of time. -/\n  y : ℝ → ℝ\n  /-- The first Cartesian velocity coordinate as a function of time. -/\n  vx : ℝ → ℝ\n  /-- The second Cartesian velocity coordinate as a function of time. -/\n  vy : ℝ → ℝ\n  /-- The coast stays away from the attracting centre. -/\n  radius_pos : ∀ t ∈ Icc t₀ t₁, 0 < Real.sqrt (x t^2+y t^2)\n  /-- The first position derivative is the first velocity component. -/\n  dx : ∀ t ∈ Icc t₀ t₁, HasDerivAt x (vx t) t\n  /-- The second position derivative is the second velocity component. -/\n  dy : ∀ t ∈ Icc t₀ t₁, HasDerivAt y (vy t) t\n  /-- The first velocity derivative obeys Newtonian central acceleration. -/\n  dvx : ∀ t ∈ Icc t₀ t₁,\n    HasDerivAt vx (-mu*x t/(Real.sqrt (x t^2+y t^2))^3) t\n  /-- The second velocity derivative obeys Newtonian central acceleration. -/\n  dvy : ∀ t ∈ Icc t₀ t₁,\n    HasDerivAt vy (-mu*y t/(Real.sqrt (x t^2+y t^2))^3) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.state",
+     "kind": "def",
+     "line": 75,
+     "doc": "The Cartesian state of the coast at the given time.",
+     "statement": "def state {mu : ℝ} (a : KeplerArc mu) (t : ℝ) : PlanarState",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.left_mem",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma left_mem {mu : ℝ} (a : KeplerArc mu) : a.t₀ ∈ Icc a.t₀ a.t₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.right_mem",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma right_mem {mu : ℝ} (a : KeplerArc mu) : a.t₁ ∈ Icc a.t₀ a.t₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.radius_deriv",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma radius_deriv {mu t : ℝ} (a : KeplerArc mu) (ht : t ∈ Icc a.t₀ a.t₁) :\n    HasDerivAt (fun u => (a.state u).radius)\n      ((a.x t*a.vx t+a.y t*a.vy t)/(a.state t).radius) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.angular_deriv_zero",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma angular_deriv_zero {mu t : ℝ} (a : KeplerArc mu) (ht : t ∈ Icc a.t₀ a.t₁) :\n    HasDerivAt (fun u => (a.state u).angular) 0 t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.energy_deriv_zero",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma energy_deriv_zero {mu t : ℝ} (a : KeplerArc mu) (ht : t ∈ Icc a.t₀ a.t₁) :\n    HasDerivAt (fun u => (a.state u).energy mu) 0 t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.equal_endpoints_of_zero_deriv",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma equal_endpoints_of_zero_deriv {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)\n    (hd : ∀ t ∈ Icc a b, HasDerivAt f 0 t) : f b=f a",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.energy_conserved",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma energy_conserved {mu : ℝ} (a : KeplerArc mu) :\n    (a.state a.t₀).energy mu = (a.state a.t₁).energy mu",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.angular_conserved",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "",
+     "statement": "lemma angular_conserved {mu : ℝ} (a : KeplerArc mu) :\n    (a.state a.t₀).angular = (a.state a.t₁).angular",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.endpoints",
+     "kind": "def",
+     "line": 138,
+     "doc": "Obtain endpoint constraints from the actual ODE; no conservation law is an\ninput field of KeplerArc. Endpoint orientation and coast time are unrestricted.",
+     "statement": "def endpoints (p : Units) (a : KeplerArc p.mu)\n    (h₀ : (a.state a.t₀).radius=p.r₁) (h₁ : (a.state a.t₁).radius=p.r₂) :\n    PhysicalEndpoints p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.newton_arc_lower_bound",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "Global two-impulse lower bound for every noncollision Newtonian coast arc.\nNo tangency, ellipse, energy sign or positive angular momentum is assumed.",
+     "statement": "lemma newton_arc_lower_bound (p : Units) (a : KeplerArc p.mu)\n    (h₀ : (a.state a.t₀).radius=p.r₁) (h₁ : (a.state a.t₁).radius=p.r₂) :\n    p.bound ≤ (a.state a.t₀).impulse p.speed + (a.state a.t₁).impulse p.circular₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.KeplerArc.newton_arc_equality_endpoints",
+     "kind": "lemma",
+     "line": 164,
+     "doc": "Equality of the actual Cartesian cost forces the Hohmann endpoint velocities.",
+     "statement": "lemma newton_arc_equality_endpoints (p : Units) (a : KeplerArc p.mu)\n    (h₀ : (a.state a.t₀).radius = p.r₁) (h₁ : (a.state a.t₁).radius = p.r₂)\n    (he : (a.state a.t₀).impulse p.speed + (a.state a.t₁).impulse p.circular₂ = p.bound) :\n    (a.state a.t₀).radial = 0 ∧ (a.state a.t₁).radial = 0 ∧\n    (a.state a.t₀).tangent = p.speed * p.shape.hH ∧\n    (a.state a.t₁).tangent = p.speed * (p.shape.alpha * p.shape.hH)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PhysicalUnits.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.PhysicalUnits",
+   "title": "Restoring physical units to the Hohmann bounds",
+   "doc": "The normalized lower bound scales by the inner circular speed.\n\n## i. Overview\n\nThe physical radial and tangential endpoint components are normalized by the inner circular\nspeed. The cost scales linearly and the feasibility equations are preserved.\n\n## ii. Key results\n\n- `PhysicalEndpoints.physical_lower_bound` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Physical endpoint data and normalization\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Physical endpoint data and normalization"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units",
+     "kind": "structure",
+     "line": 42,
+     "doc": "The gravitational parameter and the ordered physical radii for the comparison.",
+     "statement": "structure Units where\n  /-- The central gravitational parameter. -/\n  mu : ℝ\n  /-- The radius of the inner circular orbit. -/\n  r₁ : ℝ\n  /-- The radius of the outer circular orbit. -/\n  r₂ : ℝ\n  /-- The gravitational parameter is positive. -/\n  mu_pos : 0 < mu\n  /-- The inner radius is positive. -/\n  r₁_pos : 0 < r₁\n  /-- The outer radius exceeds the inner radius. -/\n  outward : r₁ < r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.r₂_pos",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "",
+     "statement": "lemma r₂_pos (p : Units) : 0 < p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.r₁_ne",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "",
+     "statement": "lemma r₁_ne (p : Units) : p.r₁ ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.r₂_ne",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma r₂_ne (p : Units) : p.r₂ ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.shape",
+     "kind": "def",
+     "line": 63,
+     "doc": "The reciprocal radius ratio associated with the physical radii.",
+     "statement": "def shape (p : Units) : Shape",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.speed",
+     "kind": "def",
+     "line": 69,
+     "doc": "The inner circular speed used as the unit of velocity.",
+     "statement": "def speed (p : Units) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.circular₂",
+     "kind": "def",
+     "line": 71,
+     "doc": "The outer circular speed in physical units.",
+     "statement": "def circular₂ (p : Units) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.bound",
+     "kind": "def",
+     "line": 73,
+     "doc": "The Hohmann cost bound in physical units.",
+     "statement": "def bound (p : Units) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.speed_pos",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma speed_pos (p : Units) : 0 < p.speed",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.speed_ne",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma speed_ne (p : Units) : p.speed ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.speed_sq",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma speed_sq (p : Units) : p.speed^2 = p.mu/p.r₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.mu_over_r₂",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma mu_over_r₂ (p : Units) : p.mu/p.r₂ = p.shape.alpha*p.speed^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Units.circular₂_eq_sqrt",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma circular₂_eq_sqrt (p : Units) : p.circular₂ = Real.sqrt (p.mu/p.r₂)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints",
+     "kind": "structure",
+     "line": 98,
+     "doc": "Physical endpoint velocities sharing the same energy and angular momentum.",
+     "statement": "structure PhysicalEndpoints (p : Units) where\n  /-- The radial velocity at the inner endpoint. -/\n  radial₁ : ℝ\n  /-- The prograde tangential velocity at the inner endpoint. -/\n  tangent₁ : ℝ\n  /-- The radial velocity at the outer endpoint. -/\n  radial₂ : ℝ\n  /-- The prograde tangential velocity at the outer endpoint. -/\n  tangent₂ : ℝ\n  /-- The endpoints have the same signed angular momentum. -/\n  angular : p.r₁*tangent₁ = p.r₂*tangent₂\n  /-- The endpoints have the same specific mechanical energy. -/\n  energy : radial₁^2+tangent₁^2-2*p.mu/p.r₁ =\n    radial₂^2+tangent₂^2-2*p.mu/p.r₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints.cost",
+     "kind": "def",
+     "line": 116,
+     "doc": "The sum of the impulse magnitudes for the specified transfer.",
+     "statement": "def cost {p : Units} (z : PhysicalEndpoints p) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints.normalized",
+     "kind": "def",
+     "line": 121,
+     "doc": "The endpoint data expressed in the inner radius and circular speed units.",
+     "statement": "def normalized {p : Units} (z : PhysicalEndpoints p) : EndpointData p.shape",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints.norm_scale",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "",
+     "statement": "lemma norm_scale (a b v : ℝ) (hv : 0 < v) :\n    v*Real.sqrt ((a/v)^2+(b/v)^2) = Real.sqrt (a^2+b^2)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints.cost_eq_scaled",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "",
+     "statement": "lemma cost_eq_scaled {p : Units} (z : PhysicalEndpoints p) :\n    z.cost = p.speed*z.normalized.cost",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PhysicalEndpoints.physical_lower_bound",
+     "kind": "lemma",
+     "line": 164,
+     "doc": "",
+     "statement": "lemma physical_lower_bound {p : Units} (z : PhysicalEndpoints p) : p.bound ≤ z.cost",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PlanarState.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.PlanarState",
+   "title": "Planar states for the Hohmann comparison",
+   "doc": "Cartesian velocity jumps can be evaluated in polar components.\n\n## i. Overview\n\nThe endpoint velocity is compared with the prograde circular velocity at the same position. The\nsquared Euclidean norm decomposes into a radial square and a tangential difference squared.\n\n## ii. Key results\n\n- `PlanarState.impulse_polar` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Cartesian and polar endpoint data\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Cartesian and polar endpoint data"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState",
+     "kind": "structure",
+     "line": 42,
+     "doc": "The Cartesian position and velocity of a particle in the orbital plane.",
+     "statement": "structure PlanarState where\n  /-- The first Cartesian position coordinate. -/\n  x : ℝ\n  /-- The second Cartesian position coordinate. -/\n  y : ℝ\n  /-- The first Cartesian velocity coordinate. -/\n  vx : ℝ\n  /-- The second Cartesian velocity coordinate. -/\n  vy : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.radius",
+     "kind": "def",
+     "line": 55,
+     "doc": "The Euclidean distance from the attracting centre.",
+     "statement": "def radius (z : PlanarState) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.angular",
+     "kind": "def",
+     "line": 57,
+     "doc": "The signed angular momentum per unit mass.",
+     "statement": "def angular (z : PlanarState) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.radial",
+     "kind": "def",
+     "line": 59,
+     "doc": "The component of the velocity along the outward radial direction.",
+     "statement": "def radial (z : PlanarState) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.tangent",
+     "kind": "def",
+     "line": 61,
+     "doc": "The velocity component in the prograde tangential direction.",
+     "statement": "def tangent (z : PlanarState) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.energy",
+     "kind": "def",
+     "line": 63,
+     "doc": "Twice the sum of kinetic and gravitational potential energy per unit mass.",
+     "statement": "def energy (z : PlanarState) (mu : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.impulse",
+     "kind": "def",
+     "line": 65,
+     "doc": "Actual Cartesian speed change to/from the same prograde circular velocity.",
+     "statement": "def impulse (z : PlanarState) (c : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.radius_sq",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma radius_sq (z : PlanarState) : z.radius^2=z.x^2+z.y^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.radius_mul_tangent",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma radius_mul_tangent (z : PlanarState) (hr : 0 < z.radius) :\n    z.radius*z.tangent = z.angular",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.polar_speed_sq",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma polar_speed_sq (z : PlanarState) (hr : 0 < z.radius) :\n    z.radial^2+z.tangent^2=z.vx^2+z.vy^2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.PlanarState.impulse_polar",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "",
+     "statement": "lemma impulse_polar (z : PlanarState) (c : ℝ) (hr : 0 < z.radius) :\n    z.impulse c = Real.sqrt (z.radial^2+(z.tangent-c)^2)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/PublicStatement.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.PublicStatement",
+   "title": "Global two-impulse Hohmann bounds",
+   "doc": "Every allowed Newtonian comparison arc satisfies the Hohmann lower bound.\n\n## i. Overview\n\nThe global comparison is over two impulses between coplanar circular orbits with the same\norientation. The coast has free time and phase. A finite three-impulse cost comparison\ndistinguishes the larger class.\n\n## ii. Key results\n\n- `global_two_impulse_newton_lower_bound` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. The lower bound and the finite cost comparison\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. The lower bound and the finite cost comparison"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.global_two_impulse_endpoint_optimality",
+     "kind": "lemma",
+     "line": 45,
+     "doc": "Global means all feasible TWO-impulse, coplanar, co-oriented circle-to-circle\ntransfers, with free departure phase and flight time. A coast may have radial\nvelocity, negative momentum, or nonnegative energy. No third burn is allowed.",
+     "statement": "lemma global_two_impulse_endpoint_optimality (s : Shape) :\n    (∀ z : EndpointData s, s.costH ≤ z.cost) ∧\n    (hohmannEndpoints s).cost=s.costH ∧\n    (∀ z : EndpointData s, z.cost=s.costH →\n      z.tangent₁=s.hH ∧ z.tangent₂=s.alpha*s.hH ∧\n      z.radial₁=0 ∧ z.radial₂=0)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.global_two_impulse_newton_lower_bound",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "The global inequality applies to genuinely differentiable Newtonian coast\narcs; conservation is proved in KeplerConservation rather than postulated.",
+     "statement": "lemma global_two_impulse_newton_lower_bound (p : Units) (a : KeplerArc p.mu)\n    (h₀ : (a.state a.t₀).radius=p.r₁) (h₁ : (a.state a.t₁).radius=p.r₂) :\n    p.bound ≤ (a.state a.t₀).impulse p.speed+(a.state a.t₁).impulse p.circular₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.finite_three_impulse_counterexample",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "An unrestricted all-maneuver assertion is false: a finite 1→64→16\nbielliptic construction has strictly smaller delta-v than Hohmann 1→16.",
+     "statement": "lemma finite_three_impulse_counterexample :\n    (9/1000 : ℝ) < Bielliptic.hohmannCost 16 - Bielliptic.cost Bielliptic.«example»",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/Hohmann/Optimality/Shape.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.Hohmann.Optimality.Shape",
+   "title": "Dimensionless Hohmann parameters",
+   "doc": "The reciprocal radius ratio determines the normalized Hohmann cost.\n\n## i. Overview\n\nUse the inner radius and its circular speed as units. The Hohmann invariant pair lies at the\nintersection of two inequalities for the squared radial speeds.\n\n## ii. Key results\n\n- `Shape.corner_feasible` gives the main result of this module.\n\n## iii. Table of contents\n\n- A. Normalized invariants and feasibility\n\n## iv. References\n\n- [ref: hohmann_prussing_1992]. Prussing studies the two-impulse global comparison.",
+   "copyright": "2026 Chengyuan AI Lab",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. Normalized invariants and feasibility"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape",
+     "kind": "structure",
+     "line": 51,
+     "doc": "Reciprocal radius ratio. Length unit is r₁; speed unit is √(μ/r₁).",
+     "statement": "structure Shape where\n  /-- The inner circular radius divided by the outer circular radius. -/\n  alpha : ℝ\n  /-- The radius ratio is positive. -/\n  alpha_pos : 0 < alpha\n  /-- The radius ratio is less than one. -/\n  alpha_lt_one : alpha < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.circularOuter",
+     "kind": "def",
+     "line": 62,
+     "doc": "The outer circular speed in units of the inner circular speed.",
+     "statement": "def circularOuter (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.hH",
+     "kind": "def",
+     "line": 64,
+     "doc": "The signed angular momentum of the normalized Hohmann coast.",
+     "statement": "def hH (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.energyH",
+     "kind": "def",
+     "line": 66,
+     "doc": "Twice the normalized specific energy of the Hohmann coast.",
+     "statement": "def energyH (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnH₁",
+     "kind": "def",
+     "line": 68,
+     "doc": "The conserved energy variable is twice specific energy in speed units.",
+     "statement": "def burnH₁ (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnH₂",
+     "kind": "def",
+     "line": 70,
+     "doc": "The normalized magnitude of the Hohmann arrival impulse.",
+     "statement": "def burnH₂ (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.costH",
+     "kind": "def",
+     "line": 72,
+     "doc": "The sum of the two normalized Hohmann impulse magnitudes.",
+     "statement": "def costH (s : Shape) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.sum_pos",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma sum_pos (s : Shape) : 0 < 1 + s.alpha",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.c_pos",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma c_pos (s : Shape) : 0 < s.circularOuter",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.c_sq",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma c_sq (s : Shape) : s.circularOuter ^ 2 = s.alpha",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.c_lt_one",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma c_lt_one (s : Shape) : s.circularOuter < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.h_pos",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma h_pos (s : Shape) : 0 < s.hH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.h_sq",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma h_sq (s : Shape) : s.hH ^ 2 = 2 / (1 + s.alpha)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.h_sq_mul",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma h_sq_mul (s : Shape) : s.hH ^ 2 * (1 + s.alpha) = 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.one_lt_h_sq",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma one_lt_h_sq (s : Shape) : 1 < s.hH ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.one_lt_h",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma one_lt_h (s : Shape) : 1 < s.hH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.alpha_h_sq_lt_one",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma alpha_h_sq_lt_one (s : Shape) : s.alpha * s.hH ^ 2 < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.alpha_h_lt_c",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma alpha_h_lt_c (s : Shape) : s.alpha * s.hH < s.circularOuter",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.alpha_c_lt_one",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma alpha_c_lt_one (s : Shape) : s.alpha * s.circularOuter < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.alpha_sq_h_lt_one",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "",
+     "statement": "lemma alpha_sq_h_lt_one (s : Shape) : s.alpha ^ 2 * s.hH < 1",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.alpha_c_lt_h",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma alpha_c_lt_h (s : Shape) : s.alpha * s.circularOuter < s.hH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.corner_inner",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma corner_inner (s : Shape) : s.energyH + 2 = s.hH ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.corner_outer",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "",
+     "statement": "lemma corner_outer (s : Shape) : s.energyH + 2 * s.alpha = s.alpha ^ 2 * s.hH ^ 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.corner_relation",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma corner_relation (s : Shape) :\n    s.alpha ^ 2 * s.hH ^ 2 - 2 * s.alpha = s.hH ^ 2 - 2",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnH₁_pos",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "lemma burnH₁_pos (s : Shape) : 0 < s.burnH₁",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnH₂_pos",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma burnH₂_pos (s : Shape) : 0 < s.burnH₂",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.costH_pos",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "",
+     "statement": "lemma costH_pos (s : Shape) : 0 < s.costH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.Feasible",
+     "kind": "def",
+     "line": 125,
+     "doc": "Both radial-speed squares must be nonnegative. h is signed: retrograde\ncoasts are not silently excluded. This is a relaxation, not a trajectory.",
+     "statement": "def Feasible (s : Shape) (w h : ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.corner_feasible",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "",
+     "statement": "lemma corner_feasible (s : Shape) : s.Feasible s.energyH s.hH",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnSquare₁",
+     "kind": "def",
+     "line": 134,
+     "doc": "The first squared impulse expressed in the normalized invariant pair.",
+     "statement": "def burnSquare₁ (_s : Shape) (w h : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HohmannOptimality.Shape.burnSquare₂",
+     "kind": "def",
+     "line": 136,
+     "doc": "The second squared impulse expressed in the normalized invariant pair.",
+     "statement": "def burnSquare₂ (s : Shape) (w h : ℝ) : ℝ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/LagrangeEquilateral.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.LagrangeEquilateral",
+   "title": "Lagrange's circular equilateral solution",
+   "doc": "Three positive masses form a rotating equilateral triangle in a Newtonian gravitational system.\n\n## i. Overview\n\nA triangle of side length `ℓ` is translated to its mass barycentre. Rotating it with angular\nspeed `√(G * M / ℓ ^ 3)`, where `M` is the total mass, preserves the separation of each pair.\nThe gravitational acceleration of each particle is therefore the centripetal acceleration\nof its rotation. The rotating trajectories define particles in an arbitrary planar inertial\nreference frame, and `NewtonianSystem.ofGravity` supplies the system and both Newton laws.\n\n## ii. Key results\n\n- `exists_lagrange_equilateral_solution` gives the three labelled particles, their equilateral\n  distances, uniform circular motion about the barycentre, and Kepler's third law.\n\n## iii. Table of contents\n\n- A. The rotating configuration\n- B. Particles in the inertial frame\n- C. The Lagrange solution\n\n## iv. References\n\n* [ref: chenciner_fejoz_2008], §8, for the reduction of the equilateral force sum.\n* R5 Lean formalization.\n  https://github.com/hkjtsgmc79-boop/lagrange-three-body-lean/releases/tag/v0.5.1",
+   "copyright": "2026 Qianli Ma",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. The rotating configuration"
+    },
+    {
+     "line": 121,
+     "text": "## B. Particles in the inertial frame"
+    },
+    {
+     "line": 247,
+     "text": "## C. The Lagrange solution"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.LagrangeOrbit.exists_lagrange_equilateral_solution",
+     "kind": "lemma",
+     "line": 282,
+     "doc": "The Lagrange relative equilibrium for three positive masses in a planar inertial frame.\nThe labelled particles move on a rigid equilateral triangle about their mass barycentre,\nwith a positive common period obeying Kepler's third law.",
+     "statement": "public lemma exists_lagrange_equilateral_solution (frame : ReferenceFrame 2) [Fact frame.IsInertial]\n    (hG : 0 < G) (hℓ : 0 < ℓ) :\n    ∃ (system : NewtonianSystem 2) (e : Fin 3 ≃ system.Particle) (T : ℝ),\n      system.frame = frame ∧\n      system.internalForces = gravityForces G system.particles ∧\n      system.externalForces = 0 ∧\n      (∀ i, (e i).mass = m i) ∧\n      (∀ t, ∑ i, (m i).val • (e i).pos t = 0) ∧\n      (∀ t i j, i ≠ j → ‖(e i).pos t - (e j).pos t‖ = ℓ) ∧\n      (∀ i, Function.Periodic (e i).pos T) ∧\n      (∃ plane : ℂ ≃ₗᵢ[ℝ] system.frame.Vector, ∀ t i,\n        (e i).pos t = plane (rotation (Circle.exp (2 * Real.pi / T * t))\n          (plane.symm ((e i).pos 0)))) ∧\n      0 < T ∧ T ^ 2 * (G * ∑ i, (m i).val) = 4 * Real.pi ^ 2 * ℓ ^ 3",
+     "sorry": false
+    }
+   ],
+   "private": 22,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/ClassicalMechanics/OrbitalMechanics/NewtonianGravity.lean",
+   "module": "PhyslibAlpha.ClassicalMechanics.OrbitalMechanics.NewtonianGravity",
+   "title": "Pairwise Newtonian gravitation",
+   "doc": "Pair forces for a finite collection of point particles in a reference frame.\n\n## i. Overview\n\nFor a source of mass `m`, the gravitational acceleration of a target is proportional to\n`G * m` times the displacement towards the source divided by the cube of the separation.\nHere `G` is the gravitational constant in the frame's units. The force multiplies the\nacceleration by the target mass. Each ordered pair of distinct particle occurrences supplies\none internal force, preserving multiplicities in the particle multiset.\n\nThe formulas use the frame's physical norm. They model Newtonian gravity at collision-free\ntimes. At coincidence the Lean expression has value zero by totalized division.\n\n## ii. Key results\n\n- `ReferenceFrame.gravityForces_reverse` proves Newton's third law for the force multiset.\n- `ReferenceFrame.netForce_gravity` expresses the net force as mass times acceleration.\n- `PointParticle.NewtonianSystem.ofGravity` bundles a solution of the acceleration equations\n  as a Newtonian system in an inertial frame.\n\n## iii. Table of contents\n\n- A. Gravitational forces and acceleration\n- B. Newtonian systems under gravity\n\n## iv. References\n\n* [ref: goldstein_classicalmechanics], Chapter 3, for the inverse-square gravitational force.",
+   "copyright": "2026 Qianli Ma",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. Gravitational forces and acceleration"
+    },
+    {
+     "line": 160,
+     "text": "## B. Newtonian systems under gravity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.pairGravityAcceleration",
+     "kind": "def",
+     "line": 59,
+     "doc": "The contribution of the source to the target's gravitational acceleration.",
+     "statement": "def pairGravityAcceleration (source target : particles) (t : ℝ) : frame.Vector",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.gravityAcceleration",
+     "kind": "def",
+     "line": 64,
+     "doc": "The target's gravitational acceleration from all other particle occurrences.",
+     "statement": "def gravityAcceleration (target : particles) (t : ℝ) : frame.Vector",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.pairGravity",
+     "kind": "def",
+     "line": 69,
+     "doc": "The Newtonian force exerted by one particle on another in the given frame.",
+     "statement": "def pairGravity (source target : particles) (hne : source ≠ target) :\n    frame.InternalForce particles",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.pairGravity_reverse",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Exchanging source and target gives the equal and opposite force.",
+     "statement": "lemma pairGravity_reverse (source target : particles) (hne : source ≠ target) :\n    (pairGravity G particles source target hne).reverse =\n      pairGravity G particles target source hne.symm",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.GravityPairs",
+     "kind": "abbrev",
+     "line": 96,
+     "doc": "All ordered pairs of distinct particle occurrences, grouped by target.",
+     "statement": "abbrev GravityPairs",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.gravityForces",
+     "kind": "def",
+     "line": 99,
+     "doc": "The internal gravitational forces, with each ordered pair occurring once.",
+     "statement": "def gravityForces : Multiset (frame.InternalForce particles)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.gravityForces_reverse",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "Newton's third law for the collection of pairwise gravitational forces.",
+     "statement": "lemma gravityForces_reverse :\n    (gravityForces G particles).map InternalForce.reverse = gravityForces G particles",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.netForce_gravity",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "The net internal force is the target mass times its gravitational acceleration.",
+     "statement": "lemma netForce_gravity (target : particles) (t : ℝ) :\n    netForce target (gravityForces G particles) 0 t =\n      target.1.mass • gravityAcceleration G particles target t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.ReferenceFrame.acceleration_eq_gravity_iff",
+     "kind": "lemma",
+     "line": 145,
+     "doc": "In an inertial frame, the gravitational acceleration equation is equivalent to Newton's\nsecond law for the constructed internal forces.",
+     "statement": "lemma acceleration_eq_gravity_iff [Fact frame.IsInertial]\n    (target : particles) (t : ℝ) :\n    target.1.acceleration t = gravityAcceleration G particles target t ↔\n      netForce target (gravityForces G particles) 0 t =\n        target.1.mass • target.1.acceleration t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PointParticle.NewtonianSystem.ofGravity",
+     "kind": "def",
+     "line": 170,
+     "doc": "Bundle particles that follow the gravitational equations of motion as a Newtonian system\nwith no external forces. The inverse-square law describes the motion at collision-free times.",
+     "statement": "def ofGravity (G : ℝ) (particles : Multiset frame.Particle)\n    (motion : ∀ (target : particles) (t : ℝ),\n      target.1.acceleration t = gravityAcceleration G particles target t) :\n    NewtonianSystem d",
      "sorry": false
     }
    ],

@@ -8,7 +8,7 @@ proof: formalized
 
 # The energy of the trajectories
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean): 1 declaration, none with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean): 1 declaration, none with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy`, [Phy
 > For a given set of initial conditions, the energy of the trajectory is constant,
 > due to the conservation of energy. Here we show it's value.
 
-**`ClassicalMechanics.HarmonicOscillator.trajectory_energy`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean#L50).
+**`ClassicalMechanics.HarmonicOscillator.trajectory_energy`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean#L50).
 
 ```lean
 lemma trajectory_energy (IC : InitialConditions) : S.energy (IC.trajectory S) =
@@ -42,4 +42,4 @@ lemma trajectory_energy (IC : InitialConditions) : S.energy (IC.trajectory S) =
 
 ## Sources
 
-- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean)
+- [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.17 Countability
 
-Section 57.17 of the Stacks Project, [Tag 0G0T](https://stacks.math.columbia.edu/tag/0G0T). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.17 of the Stacks Project, [Tag 0G0T](https://stacks.math.columbia.edu/tag/0G0T). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G0U, a lemma
 
 [Tag 0G0U](https://stacks.math.columbia.edu/tag/0G0U) in the Stacks Project.
 
-**`AlgebraicGeometry.countable_hom_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/FiniteTypeSchemes.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/FiniteTypeSchemes.lean#L143). The attribute's comment: “countable\_hom”.
+**`AlgebraicGeometry.countable_hom_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/FiniteTypeSchemes.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/FiniteTypeSchemes.lean#L143). The attribute's comment: “countable\_hom”.
 
 > Over a countable Noetherian ring, the morphisms over the base between two schemes of finite
 > type form a countable type.
@@ -28,7 +28,7 @@ public theorem countable_hom_of_finiteType
     Countable (X ⟶ Y)
 ```
 
-**`AlgebraicGeometry.countable_isomorphismClasses_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/IsomorphismClasses.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/IsomorphismClasses.lean#L536). The attribute's comment: “countable\_iso\_classes”.
+**`AlgebraicGeometry.countable_isomorphismClasses_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/IsomorphismClasses.lean, line 536](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/IsomorphismClasses.lean#L536). The attribute's comment: “countable\_iso\_classes”.
 
 > There are countably many isomorphism classes of schemes of finite type over a countable
 > Noetherian ring.
@@ -46,7 +46,7 @@ public theorem countable_isomorphismClasses_of_finiteType
 
 [Tag 0G0V](https://stacks.math.columbia.edu/tag/0G0V) in the Stacks Project.
 
-**`AlgebraicGeometry.boundedDerivedCategory_essentiallyCountable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/BoundedDerivedCategory.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/BoundedDerivedCategory.lean#L453).
+**`AlgebraicGeometry.boundedDerivedCategory_essentiallyCountable`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/BoundedDerivedCategory.lean, line 453](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/BoundedDerivedCategory.lean#L453).
 
 > The bounded derived category of an essentially countable abelian category is essentially
 > countable.
@@ -61,7 +61,7 @@ public instance boundedDerivedCategory_essentiallyCountable
 
 [Tag 0G0W](https://stacks.math.columbia.edu/tag/0G0W) in the Stacks Project.
 
-**`AlgebraicGeometry.essentiallyCountable_perfect_and_boundedCoherent_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/PerfectDerivedCategory.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/PerfectDerivedCategory.lean#L209). The attribute's comment: “D\_perf(O\_X) and D^b\_Coh(O\_X) are countable categories”.
+**`AlgebraicGeometry.essentiallyCountable_perfect_and_boundedCoherent_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/PerfectDerivedCategory.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/PerfectDerivedCategory.lean#L209). The attribute's comment: “D\_perf(O\_X) and D^b\_Coh(O\_X) are countable categories”.
 
 > **Stacks Project, Tag 0G0W.** Let `X` be a scheme of finite type over a countable Noetherian
 > ring `R`. Then the categories `D_perf(𝒪_X)` and `D^b_Coh(𝒪_X)` are countable: each has
@@ -95,7 +95,7 @@ public theorem essentiallyCountable_perfect_and_boundedCoherent_of_finiteType {R
 
 [Tag 0G0X](https://stacks.math.columbia.edu/tag/0G0X) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_countable_finiteType_isomorphism_families_of_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/CountableIsomorphismFamilies.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/CountableIsomorphismFamilies.lean#L592).
+**`AlgebraicGeometry.exists_countable_finiteType_isomorphism_families_of_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/CountableIsomorphismFamilies.lean, line 592](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Limits/CountableIsomorphismFamilies.lean#L592).
 
 > For `S` of finite type over an algebraically closed field `K` and `X, Y` of finite type over
 > `S`, there is a countable set `I`, for each `i` a finite-type morphism `S i ⟶ S` and an
@@ -122,7 +122,7 @@ public theorem exists_countable_finiteType_isomorphism_families_of_isAlgClosed
 
 [Tag 0G0Y](https://stacks.math.columbia.edu/tag/0G0Y) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_countable_relativeEquivalenceKernels`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/RelativeEquivalenceKernels.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/RelativeEquivalenceKernels.lean#L54).
+**`AlgebraicGeometry.exists_countable_relativeEquivalenceKernels`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/RelativeEquivalenceKernels.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Countability/RelativeEquivalenceKernels.lean#L54).
 
 > **Stacks Project, Tag 0G0Y.** Let `K` be an algebraically closed field. There is a countable
 > set `I` and for each `i ∈ I` a system `(Sᵢ/K, Xᵢ ⟶ Sᵢ, Yᵢ ⟶ Sᵢ, Mᵢ)` with
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.17, Tag 0G0T](https://stacks.math.columbia.edu/tag/0G0T)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

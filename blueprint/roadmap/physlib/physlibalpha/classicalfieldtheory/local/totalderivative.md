@@ -8,7 +8,7 @@ proof: formalized
 
 # Total derivatives on local jet-dependent functions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDerivative`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean): 8 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDerivative`, [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean): 8 declarations, 3 with a docstring.
 
 > Total derivatives of jet-dependent functions, defined via evaluation along fields.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.TotalDerivative`, [PhyslibAl
 
 ## A. Evaluation on jets
 
-**`ClassicalFieldTheory.Local.evalOnJet`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L52).
+**`ClassicalFieldTheory.Local.evalOnJet`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L52).
 
 > Evaluate a local jet-dependent function along the `k`-jet of a field.
 
@@ -45,7 +45,7 @@ noncomputable def evalOnJet (k : ℕ) (F : JetPoint d m k → ℝ)
 
 ## B. Total derivatives
 
-**`ClassicalFieldTheory.Local.totalDerivative`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L63).
+**`ClassicalFieldTheory.Local.totalDerivative`**, a def, [line 63](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L63).
 
 > The total derivative of a jet-dependent function in the coordinate direction `i`.
 
@@ -54,7 +54,7 @@ noncomputable def totalDerivative (k : ℕ) (i : Fin d) (F : JetPoint d m k → 
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.iteratedTotalDerivative`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L68).
+**`ClassicalFieldTheory.Local.iteratedTotalDerivative`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L68).
 
 > The iterated total derivative indexed by a multi-index.
 
@@ -63,7 +63,7 @@ noncomputable def iteratedTotalDerivative (k : ℕ) (I : MultiIndex d) (F : JetP
     (f : Space d → EuclideanSpace ℝ (Fin m)) : Space d → ℝ
 ```
 
-**`ClassicalFieldTheory.Local.evalOnJet_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L73).
+**`ClassicalFieldTheory.Local.evalOnJet_apply`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L73).
 
 ```lean
 lemma evalOnJet_apply (k : ℕ) (F : JetPoint d m k → ℝ)
@@ -71,7 +71,7 @@ lemma evalOnJet_apply (k : ℕ) (F : JetPoint d m k → ℝ)
     evalOnJet k F f x = F (jetAt k f x)
 ```
 
-**`ClassicalFieldTheory.Local.totalDerivative_eq`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L78).
+**`ClassicalFieldTheory.Local.totalDerivative_eq`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L78).
 
 ```lean
 lemma totalDerivative_eq (k : ℕ) (i : Fin d) (F : JetPoint d m k → ℝ)
@@ -79,7 +79,7 @@ lemma totalDerivative_eq (k : ℕ) (i : Fin d) (F : JetPoint d m k → ℝ)
     totalDerivative k i F f = ∂[i] (fun x => F (jetAt k f x))
 ```
 
-**`ClassicalFieldTheory.Local.iteratedTotalDerivative_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L83).
+**`ClassicalFieldTheory.Local.iteratedTotalDerivative_eq`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L83).
 
 ```lean
 lemma iteratedTotalDerivative_eq (k : ℕ) (I : MultiIndex d) (F : JetPoint d m k → ℝ)
@@ -87,7 +87,7 @@ lemma iteratedTotalDerivative_eq (k : ℕ) (I : MultiIndex d) (F : JetPoint d m 
     iteratedTotalDerivative k I F f = ∂^[I] (fun x => F (jetAt k f x))
 ```
 
-**`ClassicalFieldTheory.Local.iteratedTotalDerivative_zero`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L87).
+**`ClassicalFieldTheory.Local.iteratedTotalDerivative_zero`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L87).
 
 ```lean
 lemma iteratedTotalDerivative_zero (k : ℕ) (F : JetPoint d m k → ℝ)
@@ -95,7 +95,7 @@ lemma iteratedTotalDerivative_zero (k : ℕ) (F : JetPoint d m k → ℝ)
     iteratedTotalDerivative k (0 : MultiIndex d) F f = evalOnJet k F f
 ```
 
-**`ClassicalFieldTheory.Local.iteratedTotalDerivative_single`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L92).
+**`ClassicalFieldTheory.Local.iteratedTotalDerivative_single`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean#L92).
 
 ```lean
 lemma iteratedTotalDerivative_single (k : ℕ) (i : Fin d) (F : JetPoint d m k → ℝ)
@@ -110,4 +110,4 @@ lemma iteratedTotalDerivative_single (k : ℕ) (i : Fin d) (F : JetPoint d m k �
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean)

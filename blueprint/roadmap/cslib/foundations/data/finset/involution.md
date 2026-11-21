@@ -7,7 +7,7 @@ proof: formalized
 
 # Counting via involutions
 
-`Cslib.Foundations.Data.Finset.Involution`, in [Cslib/Foundations/Data/Finset/Involution.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/Finset/Involution.lean), by Samuel Schlesinger.
+`Cslib.Foundations.Data.Finset.Involution`, in [Cslib/Foundations/Data/Finset/Involution.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Finset/Involution.lean), by Samuel Schlesinger.
 
 > If `σ` is an involution on a finset `s` and every orbit `{x, σ x}` meets a
 > predicate `p`, then at least half of `s` satisfies `p`. This is the
@@ -21,7 +21,7 @@ proof: formalized
 > - `Finset.card_div_two_le_card_filter_of_involution`: at least half of `s`
 >   satisfies `p`.
 
-`Finset.card_filter_not_le_card_filter_of_involution` (theorem, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/Finset/Involution.lean#L35))
+`Finset.card_filter_not_le_card_filter_of_involution` (theorem, [line 35](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Finset/Involution.lean#L35))
 
 > If `σ` is an involution on `s` and every orbit `{x, σ x}` meets `p`, then
 > `σ` injects the elements of `s` failing `p` into those satisfying `p`.
@@ -33,7 +33,7 @@ theorem card_filter_not_le_card_filter_of_involution
     #(s.filter fun x => ¬ p x) ≤ #(s.filter p)
 ```
 
-`Finset.card_div_two_le_card_filter_of_involution` (theorem, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/Finset/Involution.lean#L45))
+`Finset.card_div_two_le_card_filter_of_involution` (theorem, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Finset/Involution.lean#L45))
 
 > If `σ` is an involution on `s` and every orbit `{x, σ x}` meets `p`, then
 > at least half of `s` satisfies `p`.
@@ -51,5 +51,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/Finset/Involution.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/Finset/Involution.lean)
+- [Cslib/Foundations/Data/Finset/Involution.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/Finset/Involution.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Data.Finset.Involution.json)

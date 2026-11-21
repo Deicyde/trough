@@ -7,7 +7,7 @@ proof: formalized
 
 # Complexity of the identity function
 
-`Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id`, in [Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id`, in [Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean), by Christian Reitwiessner.
 
 > A machine with a single state and no work tapes scans the input from left to right, copying each
 > symbol to the output tape, and halts on the blank at the right end of the input. On input `w` it
@@ -18,7 +18,7 @@ proof: formalized
 > * `Turing.MultiTapeTM.computableInTimeAndSpace_id`: the identity is computable in one step per
 >   input symbol and zero space.
 
-`Turing.MultiTapeTM.computableInTimeAndSpace_id` (theorem, [line 90](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean#L90))
+`Turing.MultiTapeTM.computableInTimeAndSpace_id` (theorem, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean#L90))
 
 > The identity function is computable in one step per input symbol and zero space.
 
@@ -34,5 +34,5 @@ public theorem computableInTimeAndSpace_id {enc : α ↪ List Bool} :
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id.json)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.17 Applications
 
-Section 97.17 of the Stacks Project, [Tag 06FG](https://stacks.math.columbia.edu/tag/06FG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 97.17 of the Stacks Project, [Tag 06FG](https://stacks.math.columbia.edu/tag/06FG). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06FH, a lemma
 
 [Tag 06FH](https://stacks.math.columbia.edu/tag/06FH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_hasRelativeProperty_flat_lfp_surjective_quotientStackProjectionHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDiagonalUnconditional.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDiagonalUnconditional.lean#L133).
+**`AlgebraicGeometry.Stack.exists_hasRelativeProperty_flat_lfp_surjective_quotientStackProjectionHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDiagonalUnconditional.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDiagonalUnconditional.lean#L133).
 
 > **The atlas of the quotient stack of a flat, locally finitely presented groupoid.** Let
 > `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over an algebraic space `A` over a scheme
@@ -46,7 +46,7 @@ theorem exists_hasRelativeProperty_flat_lfp_surjective_quotientStackProjectionHo
 
 [Tag 06FI](https://stacks.math.columbia.edu/tag/06FI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatQuotientStackAlgebraic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatQuotientStackAlgebraic.lean#L48). The attribute's comment: “stated for a groupoid in algebraic spaces over an arbitrary algebraic space A over S, the source's groupoid over S being the case A = S; Stacks 06DC, 06FH and 04TB are proved”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_quotientStack_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatQuotientStackAlgebraic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatQuotientStackAlgebraic.lean#L48). The attribute's comment: “stated for a groupoid in algebraic spaces over an arbitrary algebraic space A over S, the source's groupoid over S being the case A = S; Stacks 06DC, 06FH and 04TB are proved”.
 
 > Let `G = (U, R, s, t, c)` be a groupoid in algebraic spaces over an algebraic space `A` over
 > a scheme `S` of a big fppf site. If the source and the target of `G` are flat and locally of finite
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.17, Tag 06FG](https://stacks.math.columbia.edu/tag/06FG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

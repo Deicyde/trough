@@ -8,7 +8,7 @@ proof: formalized
 
 # Smooth sources as distributions
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.SmoothSources`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.SmoothSources`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean): 4 declarations, 4 with a docstring.
 
 > The retarded solution of a smooth source and the distributional retarded solution agree.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.SmoothSources`, [Physl
 > - `retardedDistribution_ofFun` : the retarded solution of the distribution of a test field is the
 >   distribution of the smooth retarded solution.
 
-**`KleinGordon.Spacetime.lineDerivCLM_lineDerivCLM_ofFun`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L74).
+**`KleinGordon.Spacetime.lineDerivCLM_lineDerivCLM_ofFun`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L74).
 
 > The weak derivative of the second order of a smooth function.
 
@@ -63,7 +63,7 @@ lemma lineDerivCLM_lineDerivCLM_ofFun {u : SpaceTime d → V} (hu : ContDiff ℝ
         (SpaceTime.deriv μ (SpaceTime.deriv μ u)) volume ⊤
 ```
 
-**`KleinGordon.Spacetime.distributionOperator_ofFun`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L89).
+**`KleinGordon.Spacetime.distributionOperator_ofFun`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L89).
 
 > **The Klein–Gordon operator on a smooth field.** The operator on the distribution induced by a
 > smooth field is the distribution induced by the smooth operator.
@@ -74,7 +74,7 @@ lemma distributionOperator_ofFun (m : ℝ) (u : smoothFields d V) :
       Distribution.ofFun (⊤ : Opens (SpaceTime d)) (operator m u).val volume ⊤
 ```
 
-**`KleinGordon.Spacetime.ofFun_mem_compactDistributions`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L123).
+**`KleinGordon.Spacetime.ofFun_mem_compactDistributions`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L123).
 
 > The distribution induced by a test field has compact support.
 
@@ -84,7 +84,7 @@ lemma ofFun_mem_compactDistributions (f : TestField d V) :
       compactDistributions (SpaceTime d) V
 ```
 
-**`KleinGordon.Spacetime.retardedDistribution_ofFun`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L133).
+**`KleinGordon.Spacetime.retardedDistribution_ofFun`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean#L133).
 
 > **Smooth sources.** The retarded solution of the distribution induced by a test field is the
 > distribution induced by the smooth retarded solution. This is the one Green operator realised on
@@ -109,4 +109,4 @@ lemma retardedDistribution_ofFun {F : Type} [NormedAddCommGroup F] [NormedSpace 
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean)

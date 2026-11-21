@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.36 Proper hypercoverings of algebraic spaces
 
-Section 85.36 of the Stacks Project, [Tag 0DHI](https://stacks.math.columbia.edu/tag/0DHI). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 85.36 of the Stacks Project, [Tag 0DHI](https://stacks.math.columbia.edu/tag/0DHI). 6 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DHJ, a lemma
 
 [Tag 0DHJ](https://stacks.math.columbia.edu/tag/0DHJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.phComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L604). The attribute's comment: “the upper horizontal arrow h : Sh((Spaces/U)\_\{ph, total}) → Sh(U\_étale)”.
+**`AlgebraicGeometry.Space.phComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 604](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L604). The attribute's comment: “the upper horizontal arrow h : Sh((Spaces/U)\_\{ph, total}) → Sh(U\_étale)”.
 
 > **The upper horizontal arrow of Tag 0DHJ**, `h : Sh((Spaces/U)_total) → Sh(U_étale)`, the
 > morphism of topoi of the morphism of sites given by `V/U_n ↦ V/U_n`.
@@ -25,7 +25,7 @@ def phComparisonMorphism :
       (Sheaf (etaleSimplicialSite A).totalTopology (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L627). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh((Spaces/X)\_ph) → Sh(X\_étale)”.
+**`AlgebraicGeometry.Space.spacesEtaleComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 627](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L627). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh((Spaces/X)\_ph) → Sh(X\_étale)”.
 
 > **The lower horizontal arrow of Tag 0DHJ**, `h_{-1} : Sh(Spaces/X) → Sh(X_étale)`, the
 > morphism of topoi of the inclusion `X_{spaces, étale} → Spaces/X`, `W ↦ W/X`.
@@ -36,7 +36,7 @@ def spacesEtaleComparisonMorphism (X : AlgebraicSpaces B S hS) :
       (Sheaf (SpacesEtale.topology B S hS X) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.BigPHSpaceSite.phEtaleComparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean, line 623](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean#L623). The attribute's comment: “the commutative diagram of topoi, on direct images”.
+**`AlgebraicGeometry.BigPHSpaceSite.phEtaleComparisonSquarePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean, line 623](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean#L623). The attribute's comment: “the commutative diagram of topoi, on direct images”.
 
 > **Tag 0DHJ, on direct images.** Let `a : U → X` be an augmented simplicial algebraic space
 > over `S`. The diagram of topoi
@@ -54,7 +54,7 @@ def phEtaleComparisonSquarePushforwardIso :
       (phComparisonMorphism A P.topology).pushforward ⋙ (etaleAugmentationMorphism A).pushforward
 ```
 
-**`AlgebraicGeometry.BigPHSpaceSite.phEtaleComparisonSquareInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean#L631). The attribute's comment: “the commutative diagram of topoi, on inverse images”.
+**`AlgebraicGeometry.BigPHSpaceSite.phEtaleComparisonSquareInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean, line 631](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonSquare.lean#L631). The attribute's comment: “the commutative diagram of topoi, on inverse images”.
 
 > **Tag 0DHJ, on inverse images**: `h⁻¹ ∘ a⁻¹ ≅ a_ph⁻¹ ∘ h₋₁⁻¹`.
 
@@ -69,7 +69,7 @@ def phEtaleComparisonSquareInverseImageIso :
 
 [Tag 0DHK](https://stacks.math.columbia.edu/tag/0DHK) in the Stacks Project.
 
-**`AlgebraicGeometry.BigPHSpaceSite.etaleAugmentation_inverseImage_fullyFaithful_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean#L235). The attribute's comment: “sheaves of sets”.
+**`AlgebraicGeometry.BigPHSpaceSite.etaleAugmentation_inverseImage_fullyFaithful_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean, line 235](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean#L235). The attribute's comment: “sheaves of sets”.
 
 > **Stacks 0DHK, sheaves of sets.** Let `S` be a scheme, `X` an algebraic space over `S`, `U` a
 > simplicial algebraic space over `S` and `a : U → X` an augmentation which is a proper hypercovering
@@ -91,7 +91,7 @@ theorem etaleAugmentation_inverseImage_fullyFaithful_of_isProperHypercovering
         IsIso ((etaleAugmentationMorphism A).adj.counit.app G))
 ```
 
-**`AlgebraicGeometry.BigPHSpaceSite.etaleAugmentation_abelianInverseImage_fullyFaithful_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean#L271). The attribute's comment: “sheaves of abelian groups”.
+**`AlgebraicGeometry.BigPHSpaceSite.etaleAugmentation_abelianInverseImage_fullyFaithful_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringFullyFaithful.lean#L271). The attribute's comment: “sheaves of abelian groups”.
 
 > **Stacks 0DHK, sheaves of abelian groups.** Let `a : U → X` be an augmented simplicial
 > algebraic space which is a proper hypercovering of `X`. Then the inverse image
@@ -118,7 +118,7 @@ theorem etaleAugmentation_abelianInverseImage_fullyFaithful_of_isProperHypercove
 
 [Tag 0DHL](https://stacks.math.columbia.edu/tag/0DHL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_etaleAugmentation_derivedPlusUnit_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean#L336). The attribute's comment: “for `K` with torsion cohomology sheaves; the torsion hypothesis is required: for `K = ℚ` the statement is false”.
+**`AlgebraicGeometry.Space.isIso_etaleAugmentation_derivedPlusUnit_of_isProperHypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean#L336). The attribute's comment: “for `K` with torsion cohomology sheaves; the torsion hypothesis is required: for `K = ℚ` the statement is false”.
 
 > **Stacks Project, Tag 0DHL**, corrected statement. Let `S` be a scheme, `X` an algebraic
 > space over `S`, `U` a simplicial algebraic space over `S` and `a : U → X` an augmentation. If
@@ -170,7 +170,7 @@ theorem isIso_etaleAugmentation_derivedPlusUnit_of_isProperHypercovering
 
 [Tag 0DHM](https://stacks.math.columbia.edu/tag/0DHM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedGlobalSectionsIsoOfIsProperHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean#L367).
+**`AlgebraicGeometry.Space.derivedGlobalSectionsIsoOfIsProperHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringDerivedDescent.lean#L367).
 
 > **Stacks Project, Tag 0DHM**, corrected statement. Let `S` be a scheme, `X` an algebraic
 > space over `S`, `U` a simplicial algebraic space over `S` and `a : U → X` an augmentation. If
@@ -211,7 +211,7 @@ def derivedGlobalSectionsIsoOfIsProperHypercovering (hA : IsProperHypercovering 
 
 [Tag 0DHN](https://stacks.math.columbia.edu/tag/0DHN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L164). The attribute's comment: “corrected form (errata.md, 2026-11-06): `a⁻¹ : D⁺_tors(X_étale) ≌ D⁺_{𝒜, tors}(U_étale)` with quasi-inverse `Ra_*`; as printed, for all of `D⁺(X_étale)`, the statement is false”.
+**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L164). The attribute's comment: “corrected form (errata.md, 2026-11-06): `a⁻¹ : D⁺_tors(X_étale) ≌ D⁺_{𝒜, tors}(U_étale)` with quasi-inverse `Ra_*`; as printed, for all of `D⁺(X_étale)`, the statement is false”.
 
 > **Stacks Project, Tag 0DHN**, for torsion coefficients. Let `S` be a scheme, `X` an algebraic
 > space over `S`, `U` a simplicial algebraic space over `S` and `a : U → X` an augmentation, and let
@@ -255,7 +255,7 @@ def derivedPlusTorsionEquivalenceOfIsProperHypercovering (hA : IsProperHypercove
           DerivedCategory.Plus.ι).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L181). The attribute's comment: “the equivalence is `a⁻¹`”.
+**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L181). The attribute's comment: “the equivalence is `a⁻¹`”.
 
 > **The equivalence of Tag 0DHN is `a⁻¹`**: its forward functor, followed by the inclusion into
 > `D⁺(U_étale)`, is the inclusion of `D⁺_tors(X_étale)` followed by
@@ -274,7 +274,7 @@ theorem derivedPlusTorsionEquivalenceOfIsProperHypercovering_functor
           (etaleAugmentation A)).rightDerivedFunctorPlus
 ```
 
-**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L197). The attribute's comment: “the quasi-inverse is `Ra_*`”.
+**`AlgebraicGeometry.Space.derivedPlusTorsionEquivalenceOfIsProperHypercovering_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/ProperHypercoveringTorsionDerivedEquivalence.lean#L197). The attribute's comment: “the quasi-inverse is `Ra_*`”.
 
 > **The quasi-inverse of the equivalence of Tag 0DHN is `Ra_*`**: its inverse functor, followed
 > by the inclusion into `D⁺(X_étale)`, is the inclusion of `D⁺_{𝒜, tors}(U_étale)` followed by
@@ -297,7 +297,7 @@ theorem derivedPlusTorsionEquivalenceOfIsProperHypercovering_inverse
 
 [Tag 0DHP](https://stacks.math.columbia.edu/tag/0DHP) in the Stacks Project.
 
-**`AlgebraicGeometry.BigPHSpaceSite.phHypercoveringEtaleSpectralSequenceOfTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/PhHypercoveringEtaleSpectralSequence.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/PhHypercoveringEtaleSpectralSequence.lean#L298).
+**`AlgebraicGeometry.BigPHSpaceSite.phHypercoveringEtaleSpectralSequenceOfTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/PhHypercoveringEtaleSpectralSequence.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Simplicial/PhHypercoveringEtaleSpectralSequence.lean#L298).
 
 > Let `S` be a scheme, `X` an algebraic space over `S`, `U` a simplicial algebraic space over
 > `S` and `a : U → X` an augmentation. Let `𝓕` be a torsion abelian sheaf on `X_étale` and let
@@ -341,4 +341,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.36, Tag 0DHI](https://stacks.math.columbia.edu/tag/0DHI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

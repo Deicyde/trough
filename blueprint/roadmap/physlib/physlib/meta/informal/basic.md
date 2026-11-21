@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib.Meta.Informal.Basic
 
-The module `Physlib.Meta.Informal.Basic`, [Physlib/Meta/Informal/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Informal/Basic.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Meta.Informal.Basic`, [Physlib/Meta/Informal/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Basic.lean): 2 declarations, 2 with a docstring.
 
 ## Informal definitions and lemmas
 
@@ -17,7 +17,7 @@ The module `Physlib.Meta.Informal.Basic`, [Physlib/Meta/Informal/Basic.lean](htt
 >
 > Everything else about informal definitions and lemmas are in the `Informal.Post` module.
 
-**`InformalDefinition`**, a structure, [line 23](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Informal/Basic.lean#L23).
+**`InformalDefinition`**, a structure, [line 23](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Basic.lean#L23).
 
 > The structure representing an informal definition.
 
@@ -30,7 +30,7 @@ structure InformalDefinition where
   tag : String
 ```
 
-**`InformalLemma`**, a structure, [line 31](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Informal/Basic.lean#L31).
+**`InformalLemma`**, a structure, [line 31](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Basic.lean#L31).
 
 > The structure representing an informal lemma.
 
@@ -56,4 +56,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Informal/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Informal/Basic.lean)
+- [Physlib/Meta/Informal/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Informal/Basic.lean)

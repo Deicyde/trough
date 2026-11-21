@@ -8,13 +8,13 @@ proof: formalized
 
 # 40.13 Étale localization of groupoids
 
-Section 40.13 of the Stacks Project, [Tag 03FK](https://stacks.math.columbia.edu/tag/03FK). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 40.13 of the Stacks Project, [Tag 03FK](https://stacks.math.columbia.edu/tag/03FK). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03FL, a lemma
 
 [Tag 03FL](https://stacks.math.columbia.edu/tag/03FL) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_finite_openClosed_subgroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteSubgroupoid.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteSubgroupoid.lean#L308).
+**`AlgebraicGeometry.GroupoidScheme.exists_finite_openClosed_subgroupoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteSubgroupoid.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteSubgroupoid.lean#L308).
 
 > Around a point at which the object map is quasi-finite and whose source fibre is finite, a
 > flat finitely presented groupoid has, after an elementary étale base change, a finite
@@ -77,7 +77,7 @@ public theorem exists_finite_openClosed_subgroupoid
 
 [Tag 03X5](https://stacks.math.columbia.edu/tag/03X5) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_finite_openClosed_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteRestriction.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteRestriction.lean#L416).
+**`AlgebraicGeometry.GroupoidScheme.exists_finite_openClosed_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteRestriction.lean, line 416](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Groupoids/More/EtaleLocalizationFiniteSubgroupoid/FiniteRestriction.lean#L416).
 
 > The finite open-and-closed subgroupoid around a quasi-finite point can be chosen as the
 > full restriction when the relation morphism is universally closed.
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 40.13, Tag 03FK](https://stacks.math.columbia.edu/tag/03FK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

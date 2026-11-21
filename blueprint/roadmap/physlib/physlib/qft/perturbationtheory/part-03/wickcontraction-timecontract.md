@@ -8,9 +8,9 @@ proof: formalized
 
 # Time contractions (TimeContract)
 
-The module `Physlib.QFT.PerturbationTheory.WickContraction.TimeContract`, [Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean): 7 declarations, 5 with a docstring.
+The module `Physlib.QFT.PerturbationTheory.WickContraction.TimeContract`, [Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean): 7 declarations, 5 with a docstring.
 
-**`WickContraction.timeContract`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L30).
+**`WickContraction.timeContract`**, a def, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L30).
 
 > For a list `φs` of `𝓕.FieldOp` and a Wick contraction `φsΛ` the
 > element of the center of `𝓕.WickAlgebra`, `φsΛ.timeContract` is defined as the product
@@ -23,7 +23,7 @@ noncomputable def timeContract {φs : List 𝓕.FieldOp}
     Subalgebra.center ℂ 𝓕.WickAlgebra
 ```
 
-**`WickContraction.timeContract_insert_none`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L44).
+**`WickContraction.timeContract_insert_none`**, a lemma, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L44).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, and a `i ≤ φs.length` the following relation holds
@@ -38,7 +38,7 @@ lemma timeContract_insert_none (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
     (φsΛ ↩Λ φ i none).timeContract = φsΛ.timeContract
 ```
 
-**`WickContraction.timeContract_insertAndContract_some`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L59).
+**`WickContraction.timeContract_insertAndContract_some`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L59).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted`, then
@@ -59,14 +59,14 @@ lemma timeContract_insertAndContract_some
     φsΛ.timeContract
 ```
 
-**`WickContraction.timeContract_empty`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L79).
+**`WickContraction.timeContract_empty`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L79).
 
 ```lean
 lemma timeContract_empty (φs : List 𝓕.FieldOp) :
     (@empty φs.length).timeContract = 1
 ```
 
-**`WickContraction.timeContract_insert_some_of_lt`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L98).
+**`WickContraction.timeContract_insert_some_of_lt`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L98).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted` such that `i ≤ k`, with the
@@ -91,7 +91,7 @@ lemma timeContract_insert_some_of_lt
       φsΛ.timeContract)
 ```
 
-**`WickContraction.timeContract_insert_some_of_not_lt`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L143).
+**`WickContraction.timeContract_insert_some_of_not_lt`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L143).
 
 > For a list `φs = φ₀…φₙ` of `𝓕.FieldOp`, a Wick contraction `φsΛ` of `φs`, an element `φ` of
 > `𝓕.FieldOp`, a `i ≤ φs.length` and a `k` in `φsΛ.uncontracted` such that `k < i`, with the
@@ -116,7 +116,7 @@ lemma timeContract_insert_some_of_not_lt
       ((uncontractedFieldOpEquiv φs φsΛ) (some k)) * φsΛ.timeContract)
 ```
 
-**`WickContraction.timeContract_of_not_gradingCompliant`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L195).
+**`WickContraction.timeContract_of_not_gradingCompliant`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean#L195).
 
 ```lean
 lemma timeContract_of_not_gradingCompliant (φs : List 𝓕.FieldOp)
@@ -132,4 +132,4 @@ lemma timeContract_of_not_gradingCompliant (φs : List 𝓕.FieldOp)
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean)
+- [Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean)

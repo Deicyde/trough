@@ -30,7 +30,7 @@ statement: formalized
 > - [LY23] X. Li, X. Yang, *An improvement on Gauss's circle problem and Dirichlet's divisor
 >   problem*, [arXiv:2308.14859](https://arxiv.org/abs/2308.14859) (2023), Theorem 1.2.
 
-*Quoted from [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open, 1 solved and 1 textbook result. It also has 1 test statement, counted here but not shown.
 
@@ -45,7 +45,7 @@ theorem divisor_error_dirichlet :
     divisorError =O[atTop] fun x => Real.sqrt x
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L70).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L70).
 
 ## `DirichletDivisorProblem.dirichlet_divisor_problem`
 
@@ -59,7 +59,7 @@ theorem dirichlet_divisor_problem :
     ∀ ε > (0 : ℝ), divisorError =O[atTop] fun x => x ^ ((1 : ℝ) / 4 + ε)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L79).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L79).
 
 ## `DirichletDivisorProblem.divisor_error_hardy`
 
@@ -73,7 +73,7 @@ theorem divisor_error_hardy :
     ¬ (divisorError =o[atTop] fun x => x ^ ((1 : ℝ) / 4))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L88).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean#L88).
 
 ## Depends on
 
@@ -81,5 +81,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean)
+- [FormalConjectures/Wikipedia/DirichletDivisorProblem.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/DirichletDivisorProblem.lean)
 - [Wikipedia: Divisor summatory function](https://en.wikipedia.org/wiki/Divisor_summatory_function)

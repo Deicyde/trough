@@ -8,7 +8,7 @@ proof: formalized
 
 # The Yukawa terms built on the conjugate Higgs symbol
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Families.BarHiggs`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean): 70 declarations, 70 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Families.BarHiggs`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean): 70 declarations, 70 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Fam
 > conjugate Higgs symbol supplying the fundamental index and the quark doublet the
 > anti-fundamental one, and both fermions are left-handed.
 
-**`StandardModel.CovAlgebraRealization.barDownBlock`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L79).
+**`StandardModel.CovAlgebraRealization.barDownBlock`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L79).
 
 > The components of the conjugate down-type Yukawa block `barH bard Q`: a conjugate
 > Higgs symbol, a conjugate down-singlet symbol and a quark-doublet symbol, none carrying
@@ -55,7 +55,7 @@ noncomputable def barDownBlock (f f' : Fin 3) (i sbd : Fin 2) (cbd : Fin 3) (sQ 
     (cQ : Fin 3) (wQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU3FundamentalAntiFundamental_barDownBlock`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L87).
+**`StandardModel.CovAlgebraRealization.isSU3FundamentalAntiFundamental_barDownBlock`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L87).
 
 > The two colour indices of the conjugate down-type block carry one fundamental and one
 > anti-fundamental `su(3)` index, the conjugate down singlet supplying the fundamental
@@ -67,7 +67,7 @@ lemma isSU3FundamentalAntiFundamental_barDownBlock (f f' : Fin 3) (i sbd sQ wQ :
       (fun l : Fin 2 → Fin 3 => h.barDownBlock f f' i sbd (l 0) sQ (l 1) wQ)
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barDownBlock`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L102).
+**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barDownBlock`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L102).
 
 > The two isospin indices of the conjugate down-type block carry one fundamental and one
 > anti-fundamental `su(2)` index, the conjugate Higgs symbol supplying the fundamental
@@ -80,7 +80,7 @@ lemma isSU2FundamentalAntiFundamental_barDownBlock (f f' : Fin 3) (sbd : Fin 2) 
       (fun l : Fin 2 → Fin 2 => h.barDownBlock f f' (l 0) sbd cbd sQ cQ (l 1))
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barDownBlock`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L115).
+**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barDownBlock`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L115).
 
 > The two spinor indices of the conjugate down-type block are both dual left-handed.
 
@@ -91,7 +91,7 @@ lemma isBiDualLeftWeyl_barDownBlock (f f' : Fin 3) (i : Fin 2) (cbd cQ : Fin 3)
       (ofPairComponents fun a b => h.barDownBlock f f' i a cbd b cQ wQ)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barDownBlock`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L133).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barDownBlock`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L133).
 
 > A hypercharge transformation fixes every component of the conjugate down-type block,
 > the three hypercharges `3`, `-2` and `-1` cancelling.
@@ -103,7 +103,7 @@ lemma repGauge_u1_barDownBlock (t : unitary ℂ) (f f' : Fin 3) (i sbd : Fin 2)
       = h.barDownBlock f f' i sbd cbd sQ cQ wQ
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlockColour`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L147).
+**`StandardModel.CovAlgebraRealization.barDownBlockColour`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L147).
 
 > The colour contraction of the conjugate down-type block.
 
@@ -111,7 +111,7 @@ lemma repGauge_u1_barDownBlock (t : unitary ℂ) (f f' : Fin 3) (i sbd : Fin 2)
 noncomputable def barDownBlockColour (f f' : Fin 3) (i sbd sQ wQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlockColour_eq`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L152).
+**`StandardModel.CovAlgebraRealization.barDownBlockColour_eq`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L152).
 
 > The colour contraction of the conjugate down-type block written out.
 
@@ -121,7 +121,7 @@ lemma barDownBlockColour_eq (f f' : Fin 3) (i sbd sQ wQ : Fin 2) :
       = ∑ a : Fin 3, h.barDownBlock f f' i sbd a sQ a wQ
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barDownBlockColour`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L159).
+**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barDownBlockColour`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L159).
 
 > The colour contraction of the conjugate down-type block still carries one fundamental
 > and one anti-fundamental isospin index.
@@ -132,7 +132,7 @@ lemma isSU2FundamentalAntiFundamental_barDownBlockColour (f f' : Fin 3) (sbd sQ 
       (fun l : Fin 2 → Fin 2 => h.barDownBlockColour f f' (l 0) sbd sQ (l 1))
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlockIsospin`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L167).
+**`StandardModel.CovAlgebraRealization.barDownBlockIsospin`**, a def, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L167).
 
 > The isospin contraction of the colour-contracted conjugate down-type block.
 
@@ -140,7 +140,7 @@ lemma isSU2FundamentalAntiFundamental_barDownBlockColour (f f' : Fin 3) (sbd sQ 
 noncomputable def barDownBlockIsospin (f f' : Fin 3) (sbd sQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlockIsospin_eq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L172).
+**`StandardModel.CovAlgebraRealization.barDownBlockIsospin_eq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L172).
 
 > The doubly contracted conjugate down-type block written out.
 
@@ -150,7 +150,7 @@ lemma barDownBlockIsospin_eq (f f' : Fin 3) (sbd sQ : Fin 2) :
       = ∑ p : Fin 2 × Fin 3, h.barDownBlock f f' p.1 sbd p.2 sQ p.2 p.1
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barDownBlockIsospin`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L181).
+**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barDownBlockIsospin`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L181).
 
 > The doubly contracted conjugate down-type block carries two dual left-handed Weyl
 > indices.
@@ -160,7 +160,7 @@ lemma isBiDualLeftWeyl_barDownBlockIsospin (f f' : Fin 3) :
     IsBiDualLeftWeyl B repLorentz (ofPairComponents (h.barDownBlockIsospin f f'))
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownYukawa`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L190).
+**`StandardModel.CovAlgebraRealization.barDownYukawa`**, a def, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L190).
 
 > The conjugate down-type Yukawa term of the family pair `(f, f')`. It is the image of the metric
 > `εL'` under the map with the contracted block as its components.
@@ -171,7 +171,7 @@ noncomputable def barDownYukawa (f f' : Fin 3) : B
 
 ## B. The invariance of the conjugate down-type Yukawa term, and its mass weight
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barDownBlockColour`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L201).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barDownBlockColour`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L201).
 
 > The colour contraction of the conjugate down-type block is fixed by the colour
 > factor.
@@ -183,7 +183,7 @@ lemma repGauge_su3_barDownBlockColour (U : specialUnitaryGroup (Fin 3) ℂ) (f f
       = h.barDownBlockColour f f' i sbd sQ wQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barDownBlockIsospin`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L209).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barDownBlockIsospin`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L209).
 
 > The doubly contracted conjugate down-type block is fixed by the colour factor.
 
@@ -194,7 +194,7 @@ lemma repGauge_su3_barDownBlockIsospin (U : specialUnitaryGroup (Fin 3) ℂ) (f 
       = h.barDownBlockIsospin f f' sbd sQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barDownBlockIsospin`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L217).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barDownBlockIsospin`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L217).
 
 > The doubly contracted conjugate down-type block is fixed by the isospin factor.
 
@@ -205,7 +205,7 @@ lemma repGauge_su2_barDownBlockIsospin (V : specialUnitaryGroup (Fin 2) ℂ) (f 
       = h.barDownBlockIsospin f f' sbd sQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barDownBlockIsospin`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L225).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barDownBlockIsospin`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L225).
 
 > The doubly contracted conjugate down-type block is fixed by the hypercharge factor.
 
@@ -215,7 +215,7 @@ lemma repGauge_u1_barDownBlockIsospin (t : unitary ℂ) (f f' : Fin 3) (sbd sQ :
       = h.barDownBlockIsospin f f' sbd sQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_barDownYukawa`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L233).
+**`StandardModel.CovAlgebraRealization.repGauge_barDownYukawa`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L233).
 
 > The conjugate down-type Yukawa term is gauge invariant.
 
@@ -224,7 +224,7 @@ lemma repGauge_barDownYukawa (f f' : Fin 3) (g : GaugeGroupI) :
     repGauge g (h.barDownYukawa f f') = h.barDownYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_barDownYukawa`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L242).
+**`StandardModel.CovAlgebraRealization.repLorentz_barDownYukawa`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L242).
 
 > The conjugate down-type Yukawa term is Lorentz invariant.
 
@@ -233,7 +233,7 @@ lemma repLorentz_barDownYukawa (f f' : Fin 3) (Λ : SL(2,ℂ)) :
     repLorentz Λ (h.barDownYukawa f f') = h.barDownYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownBlock_mem_sectorMassWeight`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L249).
+**`StandardModel.CovAlgebraRealization.barDownBlock_mem_sectorMassWeight`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L249).
 
 > Every component of the conjugate down-type block sits at mass weight eight in the
 > Yukawa sector.
@@ -245,7 +245,7 @@ lemma barDownBlock_mem_sectorMassWeight (f f' : Fin 3) (i sbd : Fin 2) (cbd : Fi
       ∈ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownYukawa_mem_sectorMassWeight`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L259).
+**`StandardModel.CovAlgebraRealization.barDownYukawa_mem_sectorMassWeight`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L259).
 
 > The conjugate down-type Yukawa term sits at mass weight eight in the Yukawa sector.
 
@@ -262,7 +262,7 @@ lemma barDownYukawa_mem_sectorMassWeight (f f' : Fin 3) :
 > Higgs symbol and the conjugate quark doublet both carry the fundamental, so the invariant
 > is again the antisymmetric symbol — and both fermions are right-handed.
 
-**`StandardModel.CovAlgebraRealization.barUpBlock`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L279).
+**`StandardModel.CovAlgebraRealization.barUpBlock`**, a def, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L279).
 
 > The components of the conjugate up-type Yukawa block `barH u barQ`.
 
@@ -271,7 +271,7 @@ noncomputable def barUpBlock (f f' : Fin 3) (i su : Fin 2) (cu : Fin 3) (sbQ : F
     (cbQ : Fin 3) (wbQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU3FundamentalAntiFundamental_barUpBlock`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L287).
+**`StandardModel.CovAlgebraRealization.isSU3FundamentalAntiFundamental_barUpBlock`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L287).
 
 > The two colour indices of the conjugate up-type block carry one fundamental and one
 > anti-fundamental `su(3)` index, the conjugate quark doublet supplying the fundamental
@@ -283,7 +283,7 @@ lemma isSU3FundamentalAntiFundamental_barUpBlock (f f' : Fin 3) (i su sbQ wbQ : 
       (fun l : Fin 2 → Fin 3 => h.barUpBlock f f' i su (l 1) sbQ (l 0) wbQ)
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU2BiFundamental_barUpBlock`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L304).
+**`StandardModel.CovAlgebraRealization.isSU2BiFundamental_barUpBlock`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L304).
 
 > The two isospin indices of the conjugate up-type block are both fundamental: the
 > conjugate Higgs symbol and the conjugate quark doublet both carry the fundamental of
@@ -296,7 +296,7 @@ lemma isSU2BiFundamental_barUpBlock (f f' : Fin 3) (su : Fin 2) (cu : Fin 3)
       (fun l : Fin 2 → Fin 2 => h.barUpBlock f f' (l 0) su cu sbQ cbQ (l 1))
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualRightWeyl_barUpBlock`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L317).
+**`StandardModel.CovAlgebraRealization.isBiDualRightWeyl_barUpBlock`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L317).
 
 > The two spinor indices of the conjugate up-type block are both dual right-handed.
 
@@ -307,7 +307,7 @@ lemma isBiDualRightWeyl_barUpBlock (f f' : Fin 3) (i : Fin 2) (cu cbQ : Fin 3)
       (ofPairComponents fun a b => h.barUpBlock f f' i a cu b cbQ wbQ)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barUpBlock`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L335).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barUpBlock`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L335).
 
 > A hypercharge transformation fixes every component of the conjugate up-type block, the
 > three hypercharges `3`, `-4` and `1` cancelling.
@@ -319,7 +319,7 @@ lemma repGauge_u1_barUpBlock (t : unitary ℂ) (f f' : Fin 3) (i su : Fin 2) (cu
       = h.barUpBlock f f' i su cu sbQ cbQ wbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlockColour`**, a def, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L348).
+**`StandardModel.CovAlgebraRealization.barUpBlockColour`**, a def, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L348).
 
 > The colour contraction of the conjugate up-type block.
 
@@ -327,7 +327,7 @@ lemma repGauge_u1_barUpBlock (t : unitary ℂ) (f f' : Fin 3) (i su : Fin 2) (cu
 noncomputable def barUpBlockColour (f f' : Fin 3) (i su sbQ wbQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlockColour_eq`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L353).
+**`StandardModel.CovAlgebraRealization.barUpBlockColour_eq`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L353).
 
 > The colour contraction of the conjugate up-type block written out.
 
@@ -337,7 +337,7 @@ lemma barUpBlockColour_eq (f f' : Fin 3) (i su sbQ wbQ : Fin 2) :
       = ∑ a : Fin 3, h.barUpBlock f f' i su a sbQ a wbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU2BiFundamental_barUpBlockColour`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L360).
+**`StandardModel.CovAlgebraRealization.isSU2BiFundamental_barUpBlockColour`**, a lemma, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L360).
 
 > The colour contraction of the conjugate up-type block still carries two fundamental
 > isospin indices.
@@ -348,7 +348,7 @@ lemma isSU2BiFundamental_barUpBlockColour (f f' : Fin 3) (su sbQ : Fin 2) :
       (fun l : Fin 2 → Fin 2 => h.barUpBlockColour f f' (l 0) su sbQ (l 1))
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlockIsospin`**, a def, [line 368](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L368).
+**`StandardModel.CovAlgebraRealization.barUpBlockIsospin`**, a def, [line 368](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L368).
 
 > The isospin contraction of the colour-contracted conjugate up-type block, by the
 > antisymmetric symbol.
@@ -357,7 +357,7 @@ lemma isSU2BiFundamental_barUpBlockColour (f f' : Fin 3) (su sbQ : Fin 2) :
 noncomputable def barUpBlockIsospin (f f' : Fin 3) (su sbQ : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlockIsospin_eq`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L373).
+**`StandardModel.CovAlgebraRealization.barUpBlockIsospin_eq`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L373).
 
 > The doubly contracted conjugate up-type block written out.
 
@@ -367,7 +367,7 @@ lemma barUpBlockIsospin_eq (f f' : Fin 3) (su sbQ : Fin 2) :
       - ∑ a : Fin 3, h.barUpBlock f f' 1 su a sbQ a 0
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualRightWeyl_barUpBlockIsospin`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L381).
+**`StandardModel.CovAlgebraRealization.isBiDualRightWeyl_barUpBlockIsospin`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L381).
 
 > The doubly contracted conjugate up-type block carries two dual right-handed Weyl
 > indices.
@@ -377,7 +377,7 @@ lemma isBiDualRightWeyl_barUpBlockIsospin (f f' : Fin 3) :
     IsBiDualRightWeyl B repLorentz (ofPairComponents (h.barUpBlockIsospin f f'))
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawa`**, a def, [line 391](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L391).
+**`StandardModel.CovAlgebraRealization.barUpYukawa`**, a def, [line 391](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L391).
 
 > The conjugate up-type Yukawa term of the family pair `(f, f')`. It is the image of the metric
 > `εR'` under the map with the contracted block as its components.
@@ -388,7 +388,7 @@ noncomputable def barUpYukawa (f f' : Fin 3) : B
 
 ## D. The invariance of the conjugate up-type Yukawa term, and its mass weight
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barUpBlockColour`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L401).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barUpBlockColour`**, a lemma, [line 401](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L401).
 
 > The colour contraction of the conjugate up-type block is fixed by the colour factor.
 
@@ -399,7 +399,7 @@ lemma repGauge_su3_barUpBlockColour (U : specialUnitaryGroup (Fin 3) ℂ) (f f' 
       = h.barUpBlockColour f f' i su sbQ wbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barUpBlockIsospin`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L409).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barUpBlockIsospin`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L409).
 
 > The doubly contracted conjugate up-type block is fixed by the colour factor.
 
@@ -410,7 +410,7 @@ lemma repGauge_su3_barUpBlockIsospin (U : specialUnitaryGroup (Fin 3) ℂ) (f f'
       = h.barUpBlockIsospin f f' su sbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barUpBlockIsospin`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L417).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barUpBlockIsospin`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L417).
 
 > The doubly contracted conjugate up-type block is fixed by the isospin factor.
 
@@ -421,7 +421,7 @@ lemma repGauge_su2_barUpBlockIsospin (V : specialUnitaryGroup (Fin 2) ℂ) (f f'
       = h.barUpBlockIsospin f f' su sbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barUpBlockIsospin`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L425).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barUpBlockIsospin`**, a lemma, [line 425](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L425).
 
 > The doubly contracted conjugate up-type block is fixed by the hypercharge factor.
 
@@ -431,7 +431,7 @@ lemma repGauge_u1_barUpBlockIsospin (t : unitary ℂ) (f f' : Fin 3) (su sbQ : F
       = h.barUpBlockIsospin f f' su sbQ
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_barUpYukawa`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L434).
+**`StandardModel.CovAlgebraRealization.repGauge_barUpYukawa`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L434).
 
 > The conjugate up-type Yukawa term is gauge invariant.
 
@@ -440,7 +440,7 @@ lemma repGauge_barUpYukawa (f f' : Fin 3) (g : GaugeGroupI) :
     repGauge g (h.barUpYukawa f f') = h.barUpYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_barUpYukawa`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L443).
+**`StandardModel.CovAlgebraRealization.repLorentz_barUpYukawa`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L443).
 
 > The conjugate up-type Yukawa term is Lorentz invariant.
 
@@ -449,7 +449,7 @@ lemma repLorentz_barUpYukawa (f f' : Fin 3) (Λ : SL(2,ℂ)) :
     repLorentz Λ (h.barUpYukawa f f') = h.barUpYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpBlock_mem_sectorMassWeight`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L450).
+**`StandardModel.CovAlgebraRealization.barUpBlock_mem_sectorMassWeight`**, a lemma, [line 450](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L450).
 
 > Every component of the conjugate up-type block sits at mass weight eight in the Yukawa
 > sector.
@@ -461,7 +461,7 @@ lemma barUpBlock_mem_sectorMassWeight (f f' : Fin 3) (i su : Fin 2) (cu : Fin 3)
       ∈ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawa_mem_sectorMassWeight`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L460).
+**`StandardModel.CovAlgebraRealization.barUpYukawa_mem_sectorMassWeight`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L460).
 
 > The conjugate up-type Yukawa term sits at mass weight eight in the Yukawa sector.
 
@@ -478,7 +478,7 @@ lemma barUpYukawa_mem_sectorMassWeight (f f' : Fin 3) :
 > isospin is `2 ⊗ 2̄` with the conjugate Higgs symbol supplying the fundamental index, and
 > both fermions are left-handed.
 
-**`StandardModel.CovAlgebraRealization.barLeptonBlock`**, a def, [line 485](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L485).
+**`StandardModel.CovAlgebraRealization.barLeptonBlock`**, a def, [line 485](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L485).
 
 > The components of the conjugate charged-lepton Yukawa block `barH L bare`.
 
@@ -486,7 +486,7 @@ lemma barUpYukawa_mem_sectorMassWeight (f f' : Fin 3) :
 noncomputable def barLeptonBlock (f f' : Fin 3) (i sL wL sbe : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barLeptonBlock`**, a lemma, [line 490](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L490).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barLeptonBlock`**, a lemma, [line 490](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L490).
 
 > The conjugate lepton block is colour invariant outright.
 
@@ -497,7 +497,7 @@ lemma repGauge_su3_barLeptonBlock (U : specialUnitaryGroup (Fin 3) ℂ) (f f' : 
       = h.barLeptonBlock f f' i sL wL sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barLeptonBlock`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L500).
+**`StandardModel.CovAlgebraRealization.isSU2FundamentalAntiFundamental_barLeptonBlock`**, a lemma, [line 500](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L500).
 
 > The two isospin indices of the conjugate lepton block carry one fundamental and one
 > anti-fundamental `su(2)` index, the conjugate Higgs symbol supplying the fundamental
@@ -509,7 +509,7 @@ lemma isSU2FundamentalAntiFundamental_barLeptonBlock (f f' : Fin 3) (sL sbe : Fi
       (fun l : Fin 2 → Fin 2 => h.barLeptonBlock f f' (l 0) sL (l 1) sbe)
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barLeptonBlock`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L513).
+**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barLeptonBlock`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L513).
 
 > The two spinor indices of the conjugate lepton block are both dual left-handed.
 
@@ -519,7 +519,7 @@ lemma isBiDualLeftWeyl_barLeptonBlock (f f' : Fin 3) (i wL : Fin 2) :
       (ofPairComponents fun a b => h.barLeptonBlock f f' i a wL b)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barLeptonBlock`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L530).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barLeptonBlock`**, a lemma, [line 530](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L530).
 
 > A hypercharge transformation fixes every component of the conjugate lepton block, the
 > three hypercharges `3`, `3` and `-6` cancelling.
@@ -530,7 +530,7 @@ lemma repGauge_u1_barLeptonBlock (t : unitary ℂ) (f f' : Fin 3) (i sL wL sbe :
       = h.barLeptonBlock f f' i sL wL sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonBlockIsospin`**, a def, [line 543](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L543).
+**`StandardModel.CovAlgebraRealization.barLeptonBlockIsospin`**, a def, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L543).
 
 > The isospin contraction of the conjugate lepton block.
 
@@ -538,7 +538,7 @@ lemma repGauge_u1_barLeptonBlock (t : unitary ℂ) (f f' : Fin 3) (i sL wL sbe :
 noncomputable def barLeptonBlockIsospin (f f' : Fin 3) (sL sbe : Fin 2) : B
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonBlockIsospin_eq`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L548).
+**`StandardModel.CovAlgebraRealization.barLeptonBlockIsospin_eq`**, a lemma, [line 548](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L548).
 
 > The isospin contraction of the conjugate lepton block written out.
 
@@ -548,7 +548,7 @@ lemma barLeptonBlockIsospin_eq (f f' : Fin 3) (sL sbe : Fin 2) :
       = ∑ w : Fin 2, h.barLeptonBlock f f' w sL w sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barLeptonBlockIsospin`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L555).
+**`StandardModel.CovAlgebraRealization.isBiDualLeftWeyl_barLeptonBlockIsospin`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L555).
 
 > The contracted conjugate lepton block carries two dual left-handed Weyl indices.
 
@@ -557,7 +557,7 @@ lemma isBiDualLeftWeyl_barLeptonBlockIsospin (f f' : Fin 3) :
     IsBiDualLeftWeyl B repLorentz (ofPairComponents (h.barLeptonBlockIsospin f f'))
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawa`**, a def, [line 563](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L563).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawa`**, a def, [line 563](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L563).
 
 > The conjugate charged-lepton Yukawa term of the family pair `(f, f')`. It is the image of the
 > metric `εL'` under the map with the contracted block as its components.
@@ -568,7 +568,7 @@ noncomputable def barLeptonYukawa (f f' : Fin 3) : B
 
 ## F. The invariance of the conjugate charged-lepton Yukawa term, and its mass weight
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barLeptonBlockIsospin`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L573).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barLeptonBlockIsospin`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L573).
 
 > The contracted conjugate lepton block is fixed by the colour factor.
 
@@ -579,7 +579,7 @@ lemma repGauge_su3_barLeptonBlockIsospin (U : specialUnitaryGroup (Fin 3) ℂ)
       = h.barLeptonBlockIsospin f f' sL sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barLeptonBlockIsospin`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L581).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barLeptonBlockIsospin`**, a lemma, [line 581](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L581).
 
 > The contracted conjugate lepton block is fixed by the isospin factor.
 
@@ -590,7 +590,7 @@ lemma repGauge_su2_barLeptonBlockIsospin (V : specialUnitaryGroup (Fin 2) ℂ)
       = h.barLeptonBlockIsospin f f' sL sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barLeptonBlockIsospin`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L589).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barLeptonBlockIsospin`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L589).
 
 > The contracted conjugate lepton block is fixed by the hypercharge factor.
 
@@ -600,7 +600,7 @@ lemma repGauge_u1_barLeptonBlockIsospin (t : unitary ℂ) (f f' : Fin 3) (sL sbe
       = h.barLeptonBlockIsospin f f' sL sbe
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_barLeptonYukawa`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L596).
+**`StandardModel.CovAlgebraRealization.repGauge_barLeptonYukawa`**, a lemma, [line 596](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L596).
 
 > The conjugate charged-lepton Yukawa term is gauge invariant.
 
@@ -609,7 +609,7 @@ lemma repGauge_barLeptonYukawa (f f' : Fin 3) (g : GaugeGroupI) :
     repGauge g (h.barLeptonYukawa f f') = h.barLeptonYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_barLeptonYukawa`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L605).
+**`StandardModel.CovAlgebraRealization.repLorentz_barLeptonYukawa`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L605).
 
 > The conjugate charged-lepton Yukawa term is Lorentz invariant.
 
@@ -618,7 +618,7 @@ lemma repLorentz_barLeptonYukawa (f f' : Fin 3) (Λ : SL(2,ℂ)) :
     repLorentz Λ (h.barLeptonYukawa f f') = h.barLeptonYukawa f f'
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonBlock_mem_sectorMassWeight`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L612).
+**`StandardModel.CovAlgebraRealization.barLeptonBlock_mem_sectorMassWeight`**, a lemma, [line 612](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L612).
 
 > Every component of the conjugate lepton block sits at mass weight eight in the Yukawa
 > sector.
@@ -629,7 +629,7 @@ lemma barLeptonBlock_mem_sectorMassWeight (f f' : Fin 3) (i sL wL sbe : Fin 2) :
       ∈ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawa_mem_sectorMassWeight`**, a lemma, [line 622](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L622).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawa_mem_sectorMassWeight`**, a lemma, [line 622](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L622).
 
 > The conjugate charged-lepton Yukawa term sits at mass weight eight in the Yukawa
 > sector.
@@ -649,7 +649,7 @@ lemma barLeptonYukawa_mem_sectorMassWeight (f f' : Fin 3) :
 > rather than a one-way inclusion.  The six transposed blocks add nothing: by
 > `mul_mul_swap_eq_neg` their terms are minus these.
 
-**`StandardModel.CovAlgebraRealization.barDownYukawaSpan`**, a def, [line 644](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L644).
+**`StandardModel.CovAlgebraRealization.barDownYukawaSpan`**, a def, [line 644](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L644).
 
 > The span of the conjugate down-type Yukawa terms over the nine family pairs.
 
@@ -657,7 +657,7 @@ lemma barLeptonYukawa_mem_sectorMassWeight (f f' : Fin 3) :
 noncomputable def barDownYukawaSpan : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawaSpan`**, a def, [line 648](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L648).
+**`StandardModel.CovAlgebraRealization.barUpYukawaSpan`**, a def, [line 648](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L648).
 
 > The span of the conjugate up-type Yukawa terms over the nine family pairs.
 
@@ -665,7 +665,7 @@ noncomputable def barDownYukawaSpan : Submodule ℂ B
 noncomputable def barUpYukawaSpan : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan`**, a def, [line 652](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L652).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan`**, a def, [line 652](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L652).
 
 > The span of the conjugate charged-lepton Yukawa terms over the nine family pairs.
 
@@ -673,7 +673,7 @@ noncomputable def barUpYukawaSpan : Submodule ℂ B
 noncomputable def barLeptonYukawaSpan : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_sectorMassWeight`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L656).
+**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_sectorMassWeight`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L656).
 
 > The conjugate down-type Yukawa span sits at mass weight eight in the Yukawa sector.
 
@@ -683,7 +683,7 @@ lemma barDownYukawaSpan_le_sectorMassWeight :
       ≤ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_invariants`**, a lemma, [line 663](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L663).
+**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_invariants`**, a lemma, [line 663](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L663).
 
 > The conjugate down-type Yukawa span is a space of gauge invariants.
 
@@ -691,7 +691,7 @@ lemma barDownYukawaSpan_le_sectorMassWeight :
 lemma barDownYukawaSpan_le_invariants : h.barDownYukawaSpan ≤ repGauge.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_lorentzInvariants`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L668).
+**`StandardModel.CovAlgebraRealization.barDownYukawaSpan_le_lorentzInvariants`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L668).
 
 > The conjugate down-type Yukawa span is a space of Lorentz invariants.
 
@@ -700,7 +700,7 @@ lemma barDownYukawaSpan_le_lorentzInvariants :
     h.barDownYukawaSpan ≤ repLorentz.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_sectorMassWeight`**, a lemma, [line 674](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L674).
+**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_sectorMassWeight`**, a lemma, [line 674](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L674).
 
 > The conjugate up-type Yukawa span sits at mass weight eight in the Yukawa sector.
 
@@ -710,7 +710,7 @@ lemma barUpYukawaSpan_le_sectorMassWeight :
       ≤ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_invariants`**, a lemma, [line 681](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L681).
+**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_invariants`**, a lemma, [line 681](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L681).
 
 > The conjugate up-type Yukawa span is a space of gauge invariants.
 
@@ -718,7 +718,7 @@ lemma barUpYukawaSpan_le_sectorMassWeight :
 lemma barUpYukawaSpan_le_invariants : h.barUpYukawaSpan ≤ repGauge.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_lorentzInvariants`**, a lemma, [line 686](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L686).
+**`StandardModel.CovAlgebraRealization.barUpYukawaSpan_le_lorentzInvariants`**, a lemma, [line 686](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L686).
 
 > The conjugate up-type Yukawa span is a space of Lorentz invariants.
 
@@ -726,7 +726,7 @@ lemma barUpYukawaSpan_le_invariants : h.barUpYukawaSpan ≤ repGauge.invariants
 lemma barUpYukawaSpan_le_lorentzInvariants : h.barUpYukawaSpan ≤ repLorentz.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_sectorMassWeight`**, a lemma, [line 692](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L692).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_sectorMassWeight`**, a lemma, [line 692](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L692).
 
 > The conjugate charged-lepton Yukawa span sits at mass weight eight in the Yukawa
 > sector.
@@ -737,7 +737,7 @@ lemma barLeptonYukawaSpan_le_sectorMassWeight :
       ≤ h.sectorMassWeight {GeneratorClass.higgs, GeneratorClass.fermion} 8
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_invariants`**, a lemma, [line 699](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L699).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_invariants`**, a lemma, [line 699](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L699).
 
 > The conjugate charged-lepton Yukawa span is a space of gauge invariants.
 
@@ -745,7 +745,7 @@ lemma barLeptonYukawaSpan_le_sectorMassWeight :
 lemma barLeptonYukawaSpan_le_invariants : h.barLeptonYukawaSpan ≤ repGauge.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_lorentzInvariants`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L704).
+**`StandardModel.CovAlgebraRealization.barLeptonYukawaSpan_le_lorentzInvariants`**, a lemma, [line 704](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L704).
 
 > The conjugate charged-lepton Yukawa span is a space of Lorentz invariants.
 
@@ -754,7 +754,7 @@ lemma barLeptonYukawaSpan_le_lorentzInvariants :
     h.barLeptonYukawaSpan ≤ repLorentz.invariants
 ```
 
-**`StandardModel.CovAlgebraRealization.yukawaSpan`**, a def, [line 711](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L711).
+**`StandardModel.CovAlgebraRealization.yukawaSpan`**, a def, [line 711](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L711).
 
 > The Yukawa span of the Standard Model at mass weight eight: the join of the six
 > couplings, each over the nine family pairs.
@@ -763,7 +763,7 @@ lemma barLeptonYukawaSpan_le_lorentzInvariants :
 noncomputable def yukawaSpan : Submodule ℂ B
 ```
 
-**`StandardModel.CovAlgebraRealization.yukawaSpan_le_inf`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L719).
+**`StandardModel.CovAlgebraRealization.yukawaSpan_le_inf`**, a lemma, [line 719](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean#L719).
 
 > The Yukawa span lies inside the gauge- and Lorentz-invariants of the Yukawa sector at
 > mass weight eight. This is the easy direction of the classification: every Yukawa term
@@ -782,4 +782,4 @@ lemma yukawaSpan_le_inf :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean)

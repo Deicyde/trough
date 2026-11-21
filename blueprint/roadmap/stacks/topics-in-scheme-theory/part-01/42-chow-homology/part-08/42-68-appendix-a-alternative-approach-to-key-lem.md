@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.68 Appendix A: Alternative approach to key lemma
 
-Section 42.68 of the Stacks Project, [Tag 0EAZ](https://stacks.math.columbia.edu/tag/0EAZ). 39 tags here are carried by 87 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.68 of the Stacks Project, [Tag 0EAZ](https://stacks.math.columbia.edu/tag/0EAZ). 39 tags here are carried by 87 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02P6, a definition
 
 [Tag 02P6](https://stacks.math.columbia.edu/tag/02P6) in the Stacks Project.
 
-**`Module.FiniteLength.IsAdmissibleSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L73). The attribute's comment: “admissible sequences”.
+**`Module.FiniteLength.IsAdmissibleSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L73). The attribute's comment: “admissible sequences”.
 
 > **Stacks Project, Tag 02P6.** A finite sequence in a module over a local ring is
 > admissible if the maximal ideal times each entry is contained in the span of the preceding
@@ -25,7 +25,7 @@ public def IsAdmissibleSequence {R : Type u} {M : Type v} [CommRing R] [IsLocalR
     [AddCommGroup M] [Module R M] {n : ℕ} (e : Fin n → M) : Prop
 ```
 
-**`Module.FiniteLength.AdmissibleSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L80). The attribute's comment: “symbols”.
+**`Module.FiniteLength.AdmissibleSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 80](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L80). The attribute's comment: “symbols”.
 
 > **Stacks Project, Tag 02P6.** The symbols used to generate the determinant: admissible
 > sequences whose length is the length of the module.
@@ -35,7 +35,7 @@ public abbrev AdmissibleSequence (R : Type u) (M : Type v) [CommRing R] [IsLocal
     [AddCommGroup M] [Module R M]
 ```
 
-**`Module.FiniteLength.DeterminantRelation`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L94). The attribute's comment: “admissible relations”.
+**`Module.FiniteLength.DeterminantRelation`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L94). The attribute's comment: “admissible relations”.
 
 > **Stacks Project, Tag 02P6.** The three families of admissible relations: a dependent
 > entry gives zero, replacing an entry up to a unit and earlier entries scales by the residue
@@ -47,7 +47,7 @@ public inductive DeterminantRelation {R : Type u} {M : Type v} [CommRing R]
     [IsLocalRing R] [AddCommGroup M] [Module R M] : DeterminantFree R M → Prop
 ```
 
-**`Module.FiniteLength.determinant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L128). The attribute's comment: “the determinant”.
+**`Module.FiniteLength.determinant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Basic.lean#L128). The attribute's comment: “the determinant”.
 
 > **Stacks Project, Tag 02P6.** The determinant of a finite-length module over a local
 > ring, as a vector space over the residue field.
@@ -61,7 +61,7 @@ public abbrev determinant (R : Type u) (M : Type v) [CommRing R] [IsLocalRing R]
 
 [Tag 02P7](https://stacks.math.columbia.edu/tag/02P7) in the Stacks Project.
 
-**`Module.FiniteLength.span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L150). The attribute's comment: “generators”.
+**`Module.FiniteLength.span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L150). The attribute's comment: “generators”.
 
 > **Stacks Project, Tags 02P7 and 02P9.** The symbol of every admissible sequence that
 > spans a finite-length module generates its determinant over the residue field.
@@ -72,7 +72,7 @@ public theorem span_symbol_eq_top (_hM : IsFiniteLength R M)
     (IsLocalRing.ResidueField R) ∙ symbol e = ⊤
 ```
 
-**`Module.FiniteLength.finrank_determinant_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L160).
+**`Module.FiniteLength.finrank_determinant_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L160).
 
 > **Stacks Project, Tag 02P7.** The determinant of a finite-length module over a local
 > ring has dimension at most one over the residue field.
@@ -84,7 +84,7 @@ public theorem finrank_determinant_le_one
     Module.finrank (IsLocalRing.ResidueField R) (determinant R M) ≤ 1
 ```
 
-**`Module.FiniteLength.exists_span_eq_top_and_span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean#L45). The attribute's comment: “generator”.
+**`Module.FiniteLength.exists_span_eq_top_and_span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean#L45). The attribute's comment: “generator”.
 
 > **Stacks Project, Tag 02P7.** A finite-length module over a local ring has an
 > admissible sequence that spans it, and the symbol of that sequence generates the
@@ -98,7 +98,7 @@ public theorem exists_span_eq_top_and_span_symbol_eq_top
       (IsLocalRing.ResidueField R) ∙ symbol e = ⊤
 ```
 
-**`Module.FiniteLength.rank_determinant_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean#L56).
+**`Module.FiniteLength.rank_determinant_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RankLeOne.lean#L56).
 
 > **Stacks Project, Tag 02P7.** The determinant of a finite-length module over a local
 > ring has dimension at most one over the residue field.
@@ -114,7 +114,7 @@ public theorem rank_determinant_le_one
 
 [Tag 02P8](https://stacks.math.columbia.edu/tag/02P8) in the Stacks Project.
 
-**`Module.FiniteLength.determinantExteriorPowerComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExteriorPower.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExteriorPower.lean#L254).
+**`Module.FiniteLength.determinantExteriorPowerComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExteriorPower.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExteriorPower.lean#L254).
 
 > For a finite-dimensional module over the residue field of a local ring, the determinant
 > defined from admissible symbols is isomorphic to its top exterior power. Under this
@@ -133,7 +133,7 @@ public noncomputable def determinantExteriorPowerComparison
 
 [Tag 02P9](https://stacks.math.columbia.edu/tag/02P9) in the Stacks Project.
 
-**`Module.FiniteLength.finrank_determinant_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Dimension/FinrankEqOne.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Dimension/FinrankEqOne.lean#L113). The attribute's comment: “dimension”.
+**`Module.FiniteLength.finrank_determinant_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Dimension/FinrankEqOne.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Dimension/FinrankEqOne.lean#L113). The attribute's comment: “dimension”.
 
 > The determinant of a finite-length module over a local ring has dimension one over the
 > residue field.
@@ -144,7 +144,7 @@ public theorem finrank_determinant_eq_one {R : Type u} {M : Type v} [CommRing R]
     Module.finrank (IsLocalRing.ResidueField R) (determinant R M) = 1
 ```
 
-**`Module.FiniteLength.span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L150). The attribute's comment: “generators”.
+**`Module.FiniteLength.span_symbol_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/DimensionLeOne.lean#L150). The attribute's comment: “generators”.
 
 > **Stacks Project, Tags 02P7 and 02P9.** The symbol of every admissible sequence that
 > spans a finite-length module generates its determinant over the residue field.
@@ -159,7 +159,7 @@ public theorem span_symbol_eq_top (_hM : IsFiniteLength R M)
 
 [Tag 05M7](https://stacks.math.columbia.edu/tag/05M7) in the Stacks Project.
 
-**`Module.FiniteLength.determinantFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Functor.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Functor.lean#L472).
+**`Module.FiniteLength.determinantFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Functor.lean, line 472](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Functor.lean#L472).
 
 > **Stacks Project, Tag 05M7.** The determinant of a finite-length module over a local
 > ring, together with the maps induced by module isomorphisms, is a functor to the groupoid
@@ -174,7 +174,7 @@ public noncomputable def determinantFunctor (R : Type u) [CommRing R] [IsLocalRi
 
 [Tag 02PA](https://stacks.math.columbia.edu/tag/02PA) in the Stacks Project.
 
-**`Module.FiniteLength.determinantExactSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExactSequence.lean, line 980](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExactSequence.lean#L980). The attribute's comment: “detexactsequencemap”.
+**`Module.FiniteLength.determinantExactSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExactSequence.lean, line 980](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/ExactSequence.lean#L980). The attribute's comment: “detexactsequencemap”.
 
 > **Stacks Project, Tag 02PA (determinant exact-sequence map).** The canonical linear map
 > from the tensor product of the determinants of the outer terms of a short exact sequence to
@@ -193,7 +193,7 @@ public noncomputable def determinantExactSequenceMap
       determinant R L
 ```
 
-**`Module.FiniteLength.determinantExactSequenceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaIsomorphism.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaIsomorphism.lean#L57). The attribute's comment: “gamma\_isomorphism”.
+**`Module.FiniteLength.determinantExactSequenceMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaIsomorphism.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaIsomorphism.lean#L57). The attribute's comment: “gamma\_isomorphism”.
 
 > **The determinant map of a short exact sequence is an isomorphism.** For a short exact
 > sequence `0 → K → L → M → 0` of finite-length modules over a local ring, the determinant map
@@ -211,7 +211,7 @@ public theorem determinantExactSequenceMap_bijective
     Function.Bijective (determinantExactSequenceMap i p hi hp hip hK hL hM)
 ```
 
-**`Module.FiniteLength.determinantExactSequenceMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaNatural.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaNatural.lean#L142). The attribute's comment: “gamma\_natural”.
+**`Module.FiniteLength.determinantExactSequenceMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaNatural.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaNatural.lean#L142). The attribute's comment: “gamma\_natural”.
 
 > **Stacks Project, Tag 02PA (`gamma_natural`).** The determinant map of a short
 > exact sequence is natural under an isomorphism of short exact sequences.
@@ -239,7 +239,7 @@ public theorem determinantExactSequenceMap_natural
           K.of.property L.of.property M.of.property)
 ```
 
-**`Module.FiniteLength.determinantExactSequenceMap_three_by_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaThreeByThree.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaThreeByThree.lean#L501). The attribute's comment: “gamma\_three\_by\_three”.
+**`Module.FiniteLength.determinantExactSequenceMap_three_by_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaThreeByThree.lean, line 501](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaThreeByThree.lean#L501). The attribute's comment: “gamma\_three\_by\_three”.
 
 > **Stacks Project, Tag 02PA (`gamma_three_by_three`).** In a commutative
 > three-by-three diagram with exact rows and columns, the two composites of determinant maps
@@ -293,7 +293,7 @@ public theorem determinantExactSequenceMap_three_by_three
               (moduleLength R C) (moduleLength R G)))
 ```
 
-**`Module.FiniteLength.determinantExactSequenceMap_comparison_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaVectorSpaces.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaVectorSpaces.lean#L150). The attribute's comment: “gamma\_vector\_spaces”.
+**`Module.FiniteLength.determinantExactSequenceMap_comparison_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaVectorSpaces.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/GammaVectorSpaces.lean#L150). The attribute's comment: “gamma\_vector\_spaces”.
 
 > For a short exact sequence of finite-dimensional vector spaces over the residue field of a
 > local ring, under the canonical comparison of the determinant with the top exterior power, the
@@ -342,7 +342,7 @@ public theorem determinantExactSequenceMap_comparison_apply
 
 [Tag 02PB](https://stacks.math.columbia.edu/tag/02PB) in the Stacks Project.
 
-**`Module.FiniteLength.DeterminantTheory.existsUnique_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Characterization.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Characterization.lean#L423).
+**`Module.FiniteLength.DeterminantTheory.existsUnique_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Characterization.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/Characterization.lean#L423).
 
 > **Stacks Project, Tag 02PB.** The determinant functor of finite-length modules over a
 > local ring, endowed with the maps `γ_{K → L → M}`, is characterized by its properties: every
@@ -364,7 +364,7 @@ public theorem DeterminantTheory.existsUnique_comparison {R : Type u} [CommRing 
 
 [Tag 02PC](https://stacks.math.columbia.edu/tag/02PC) in the Stacks Project.
 
-**`Module.FiniteLength.isFiniteLength_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L189). The attribute's comment: “finite length”.
+**`Module.FiniteLength.isFiniteLength_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 189](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L189). The attribute's comment: “finite length”.
 
 > A module of finite length over `R` has finite length over `R₀`.
 
@@ -379,7 +379,7 @@ public theorem isFiniteLength_restrictScalars
     IsFiniteLength R₀ M
 ```
 
-**`Module.FiniteLength.moduleLength_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L203). The attribute's comment: “length”.
+**`Module.FiniteLength.moduleLength_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L203). The attribute's comment: “length”.
 
 > The length is unchanged by restriction along a local homomorphism inducing an
 > isomorphism of residue fields.
@@ -395,7 +395,7 @@ public theorem moduleLength_restrictScalars
     moduleLength R M = moduleLength R₀ M
 ```
 
-**`Module.FiniteLength.determinantRestrictScalarsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L541). The attribute's comment: “canonical isomorphism”.
+**`Module.FiniteLength.determinantRestrictScalarsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 541](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L541). The attribute's comment: “canonical isomorphism”.
 
 > The canonical comparison of determinant spaces for a local ring map with unchanged
 > residue field.
@@ -413,7 +413,7 @@ public noncomputable def determinantRestrictScalarsEquiv
       determinant R₀ M
 ```
 
-**`Module.FiniteLength.determinantRestrictScalarsEquiv_symbol`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L556). The attribute's comment: “symbols”.
+**`Module.FiniteLength.determinantRestrictScalarsEquiv_symbol`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 556](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L556). The attribute's comment: “symbols”.
 
 > The canonical comparison takes a determinant symbol to the symbol of the same
 > sequence over the smaller local ring.
@@ -433,7 +433,7 @@ public theorem determinantRestrictScalarsEquiv_symbol
       admissibleSequence_restrictScalars hκ hM e⟩
 ```
 
-**`Module.FiniteLength.determinantRestrictScalarsEquiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L573). The attribute's comment: “functoriality”.
+**`Module.FiniteLength.determinantRestrictScalarsEquiv_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 573](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L573). The attribute's comment: “functoriality”.
 
 > The canonical comparison commutes with symbol-preserving determinant maps induced
 > by an isomorphism of modules.
@@ -464,7 +464,7 @@ public theorem determinantRestrictScalarsEquiv_natural
       gR₀ (determinantRestrictScalarsEquiv hκ hM z)
 ```
 
-**`Module.FiniteLength.determinantRestrictScalarsEquiv_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L630). The attribute's comment: “exact sequences”.
+**`Module.FiniteLength.determinantRestrictScalarsEquiv_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean, line 630](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/RestrictScalars.lean#L630). The attribute's comment: “exact sequences”.
 
 > The determinant comparison respects the canonical determinant isomorphism of a
 > short exact sequence.
@@ -497,7 +497,7 @@ public theorem determinantRestrictScalarsEquiv_exact
 
 [Tag 02PD](https://stacks.math.columbia.edu/tag/02PD) in the Stacks Project.
 
-**`Module.FiniteLength.determinantFunctor_map_unit_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/UnitScaling.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/UnitScaling.lean#L136).
+**`Module.FiniteLength.determinantFunctor_map_unit_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/UnitScaling.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/DeterminantsFiniteLength/UnitScaling.lean#L136).
 
 > Multiplication by a unit on a finite-length module acts on its determinant
 > by the corresponding power of the residue of that unit.
@@ -516,7 +516,7 @@ public theorem determinantFunctor_map_unit_smul
 
 [Tag 02PJ](https://stacks.math.columbia.edu/tag/02PJ) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Basic.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Basic.lean#L162).
+**`AlgebraicGeometry.periodicDeterminant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Basic.lean, line 162](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Basic.lean#L162).
 
 > **Stacks Project, Tag 02PJ.** The determinant of an exact two-periodic complex on a
 > finite-length module over a local ring.
@@ -534,7 +534,7 @@ noncomputable def periodicDeterminant
 
 [Tag 02PK](https://stacks.math.columbia.edu/tag/02PK) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_symbol_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean#L79). The attribute's comment: “formula”.
+**`AlgebraicGeometry.periodicDeterminant_symbol_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean#L79). The attribute's comment: “formula”.
 
 > **Stacks Project, Tag 02PK.** For an exact two-periodic complex, the determinant symbol
 > formed from an admissible sequence in the image of the first differential and lifts from the
@@ -574,7 +574,7 @@ theorem periodicDeterminant_symbol_eq
                 (Fin.cast hrightLength i), hright⟩
 ```
 
-**`AlgebraicGeometry.eq_periodicDeterminant_of_symbol_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean#L185). The attribute's comment: “uniqueness”.
+**`AlgebraicGeometry.eq_periodicDeterminant_of_symbol_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean, line 185](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Formula.lean#L185). The attribute's comment: “uniqueness”.
 
 > **Stacks Project, Tag 02PK.** The signed comparison of symbols of generating admissible
 > sequences uniquely determines the determinant of an exact two-periodic complex.
@@ -618,7 +618,7 @@ theorem eq_periodicDeterminant_of_symbol_eq
 
 [Tag 02PL](https://stacks.math.columbia.edu/tag/02PL) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_mul_swap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Swap.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Swap.lean#L39).
+**`AlgebraicGeometry.periodicDeterminant_mul_swap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Swap.lean, line 39](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Swap.lean#L39).
 
 > **Stacks Project, Tag 02PL.** Interchanging the two maps of an exact two-periodic complex
 > inverts its periodic determinant.
@@ -637,7 +637,7 @@ theorem periodicDeterminant_mul_swap
 
 [Tag 02PM](https://stacks.math.columbia.edu/tag/02PM) in the Stacks Project.
 
-**`Module.length_eq_twice_image_length`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Length.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Length.lean#L37). The attribute's comment: “length\_eq\_twice\_image\_length”.
+**`Module.length_eq_twice_image_length`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Length.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Length.lean#L37). The attribute's comment: “length\_eq\_twice\_image\_length”.
 
 > **Stacks Project, Tag 02PM.** The length of an exact one-differential periodic complex is
 > twice the length of the image of its differential.
@@ -647,7 +647,7 @@ lemma length_eq_twice_image_length (φ : M →ₗ[R] M) (hφ : Function.Exact φ
     Module.length R M = 2 * Module.length R (LinearMap.range φ)
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_self_eq_negOne_pow_range_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean#L64). The attribute's comment: “periodic\_determinant\_sign”.
+**`AlgebraicGeometry.periodicDeterminant_self_eq_negOne_pow_range_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean#L64). The attribute's comment: “periodic\_determinant\_sign”.
 
 > **Stacks Project, Tag 02PM.** The determinant of an exact one-differential periodic
 > complex is the sign of the length of the image of its differential.
@@ -661,7 +661,7 @@ theorem periodicDeterminant_self_eq_negOne_pow_range_length
       (-1 : (IsLocalRing.ResidueField R)ˣ) ^ moduleLength R (LinearMap.range φ)
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_self_eq_negOne_pow_half_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean#L87). The attribute's comment: “periodic\_determinant\_sign”.
+**`AlgebraicGeometry.periodicDeterminant_self_eq_negOne_pow_half_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Sign.lean#L87). The attribute's comment: “periodic\_determinant\_sign”.
 
 > **Stacks Project, Tag 02PM.** The same determinant is the sign of half the length of the
 > underlying module.
@@ -679,7 +679,7 @@ theorem periodicDeterminant_self_eq_negOne_pow_half_length
 
 [Tag 02PN](https://stacks.math.columbia.edu/tag/02PN) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_equiv_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean#L232). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.periodicDeterminant_equiv_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean#L232). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 02PN, part (1).** The periodic determinant of an automorphism and
 > zero is the determinant of the automorphism.
@@ -695,7 +695,7 @@ theorem periodicDeterminant_equiv_zero
       hM = determinantAutomorphism e hM
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_zero_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean#L290). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.periodicDeterminant_zero_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Automorphisms.lean#L290). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 02PN, part (2).** The periodic determinant of zero and an
 > automorphism is the inverse of its determinant.
@@ -715,7 +715,7 @@ theorem periodicDeterminant_zero_equiv
 
 [Tag 02PO](https://stacks.math.columbia.edu/tag/02PO) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/ShortExact.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/ShortExact.lean#L201).
+**`AlgebraicGeometry.periodicDeterminant_short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/ShortExact.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/ShortExact.lean#L201).
 
 > **Stacks Project, Tag 02PO.** The periodic determinant is multiplicative in a short exact
 > sequence of exact two-periodic complexes of finite-length modules.
@@ -750,7 +750,7 @@ theorem periodicDeterminant_short_exact
 
 [Tag 02PP](https://stacks.math.columbia.edu/tag/02PP) in the Stacks Project.
 
-**`DualNumber.span_symbol_dualNumberSequence_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L332). The attribute's comment: “dual\_generator”.
+**`DualNumber.span_symbol_dualNumberSequence_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L332). The attribute's comment: “dual\_generator”.
 
 > **Stacks Project, Tag 02PP.** The symbol `[ε, 1]` of the admissible sequence `(ε, 1)` of the
 > dual numbers over themselves generates their determinant over the residue field.
@@ -760,7 +760,7 @@ theorem span_symbol_dualNumberSequence_eq_top (k : Type u) [Field k] :
     (IsLocalRing.ResidueField (DualNumber k)) ∙ symbol (dualNumberSequence k) = ⊤
 ```
 
-**`DualNumber.periodicGamma_unitMulT_dualRangeSequence_first`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L343). The attribute's comment: “dual\_gamma\_values”.
+**`DualNumber.periodicGamma_unitMulT_dualRangeSequence_first`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 343](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L343). The attribute's comment: “dual\_gamma\_values”.
 
 > **Stacks Project, Tag 02PP.** For the short exact sequence of the dual numbers given by the
 > image of multiplication by `v ε` and multiplication by `u ε`, the determinant map sends the tensor
@@ -777,7 +777,7 @@ theorem periodicGamma_unitMulT_dualRangeSequence_first (k : Type u) [Field k] (u
         symbol (dualNumberSequence k)
 ```
 
-**`DualNumber.periodicGamma_unitMulT_dualRangeSequence_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L360). The attribute's comment: “dual\_gamma\_values”.
+**`DualNumber.periodicGamma_unitMulT_dualRangeSequence_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 360](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L360). The attribute's comment: “dual\_gamma\_values”.
 
 > **Stacks Project, Tag 02PP.** For the short exact sequence of the dual numbers given by the
 > image of multiplication by `u ε` and multiplication by `v ε`, the determinant map sends the tensor
@@ -794,7 +794,7 @@ theorem periodicGamma_unitMulT_dualRangeSequence_second (k : Type u) [Field k] (
         symbol (dualNumberSequence k)
 ```
 
-**`DualNumber.periodicDeterminant_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L373). The attribute's comment: “dual\_periodic\_determinant”.
+**`DualNumber.periodicDeterminant_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberDeterminant.lean#L373). The attribute's comment: “dual\_periodic\_determinant”.
 
 > **Stacks Project, Tag 02PP.** The periodic determinant of multiplication by `u ε` and
 > `v ε` on the dual numbers is `-u / v`.
@@ -808,7 +808,7 @@ theorem periodicDeterminant_unitMulT (k : Type u) [Field k] (u v : kˣ) :
         Units.map (algebraMap k (IsLocalRing.ResidueField (DualNumber k))) (-u / v)
 ```
 
-**`DualNumber.range_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean#L52). The attribute's comment: “dual\_images\_kernels”.
+**`DualNumber.range_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean#L52). The attribute's comment: “dual\_images\_kernels”.
 
 > The image of multiplication by a unit multiple of `ε` is the ideal generated by `ε`.
 
@@ -817,7 +817,7 @@ theorem range_unitMulT (k : Type u) [Field k] (u : kˣ) :
     LinearMap.range (unitMulT k u) = Ideal.span {DualNumber.eps}
 ```
 
-**`DualNumber.ker_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean#L65). The attribute's comment: “dual\_images\_kernels”.
+**`DualNumber.ker_unitMulT`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean, line 65](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/DualNumberIdeals.lean#L65). The attribute's comment: “dual\_images\_kernels”.
 
 > The kernel of multiplication by a unit multiple of `ε` is the ideal generated by `ε`.
 
@@ -830,7 +830,7 @@ theorem ker_unitMulT (k : Type u) [Field k] (u : kˣ) :
 
 [Tag 02PQ](https://stacks.math.columbia.edu/tag/02PQ) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_padicInt_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean#L274). The attribute's comment: “the determinant of the p-adic periodic complex”.
+**`AlgebraicGeometry.periodicDeterminant_padicInt_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean#L274). The attribute's comment: “the determinant of the p-adic periodic complex”.
 
 > **Stacks Project, Tag 02PQ.** Let `p` be a prime, let `a + b = l`, and let `u` and `v` be
 > units of `ℤ_[p]`. Multiplication by `p ^ b * u` and by `p ^ a * v` on `ℤ_[p] / (p ^ l)` is an
@@ -859,7 +859,7 @@ theorem periodicDeterminant_padicInt_quotient (a b l : ℕ) (hl : a + b = l) (u 
           Units.map (IsLocalRing.residue ℤ_[p]).toMonoidHom (u ^ a / v ^ b)
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_padicInt_quotient_toZMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean#L307). The attribute's comment: “the determinant mod p in order-of-vanishing form”.
+**`AlgebraicGeometry.periodicDeterminant_padicInt_quotient_toZMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/PadicIntExample.lean#L307). The attribute's comment: “the determinant mod p in order-of-vanishing form”.
 
 > **Stacks Project, Tag 02PQ.** The same determinant read in `𝔽_p = ZMod p` and written with
 > the orders of vanishing of the two differentials `α = p ^ b * u` and `β = p ^ a * v`: it is
@@ -905,7 +905,7 @@ theorem periodicDeterminant_padicInt_quotient_toZMod (a b l : ℕ) (hl : a + b =
 
 [Tag 02PS](https://stacks.math.columbia.edu/tag/02PS) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_upperBlockEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Blocks.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Blocks.lean#L181).
+**`AlgebraicGeometry.periodicDeterminant_upperBlockEndomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Blocks.lean, line 181](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Blocks.lean#L181).
 
 > **Stacks Project, Tag 02PS.** The periodic determinant of two invertible upper-right
 > blocks is the signed ratio of their ordinary matrix determinants.
@@ -927,7 +927,7 @@ theorem periodicDeterminant_upperBlockEndomorphism
 
 [Tag 02PT](https://stacks.math.columbia.edu/tag/02PT) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicDeterminant_crossPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/BlockPairExample.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/BlockPairExample.lean#L152).
+**`AlgebraicGeometry.periodicDeterminant_crossPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/BlockPairExample.lean, line 152](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/BlockPairExample.lean#L152).
 
 > **Stacks Project, Tag 02PT.** For nonzero `u₁, u₂, v₁, v₂` in a field `k`, the two
 > endomorphisms of `k^{⊕ 4}` with single nonzero matrix entries `u₁, u₂` and `v₂, v₁` form an
@@ -947,7 +947,7 @@ theorem periodicDeterminant_crossPair {k : Type u} [Field k] (u₁ u₂ v₁ v�
 
 [Tag 02PU](https://stacks.math.columbia.edu/tag/02PU) in the Stacks Project.
 
-**`AlgebraicGeometry.exact_alpha_betaGamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L129). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exact_alpha_betaGamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L129). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `α` followed by `βγ` on the original
 > module.
@@ -958,7 +958,7 @@ theorem exact_alpha_betaGamma (α β γ : M →ₗ[R] M)
     Function.Exact α (β ∘ₗ γ)
 ```
 
-**`AlgebraicGeometry.exact_betaGamma_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L137). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exact_betaGamma_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L137). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `βγ` followed by `α` on the original
 > module.
@@ -969,7 +969,7 @@ theorem exact_betaGamma_alpha (α β γ : M →ₗ[R] M)
     Function.Exact (β ∘ₗ γ) α
 ```
 
-**`AlgebraicGeometry.exact_alpha_beta_onGammaRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L168). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exact_alpha_beta_onGammaRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L168). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `α` followed by `β` on the image of `γ`.
 
@@ -979,7 +979,7 @@ theorem exact_alpha_beta_onGammaRange (α β γ : M →ₗ[R] M)
     Function.Exact (alphaOnGammaRange α β γ h) (betaOnGammaRange α β γ h)
 ```
 
-**`AlgebraicGeometry.exact_beta_alpha_onGammaRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L176). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exact_beta_alpha_onGammaRange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L176). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `β` followed by `α` on the image of `γ`.
 
@@ -989,7 +989,7 @@ theorem exact_beta_alpha_onGammaRange (α β γ : M →ₗ[R] M)
     Function.Exact (betaOnGammaRange α β γ h) (alphaOnGammaRange α β γ h)
 ```
 
-**`AlgebraicGeometry.exact_alpha_gamma_onKerBetaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L210). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exact_alpha_gamma_onKerBetaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L210). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `α` followed by `γ` on the quotient by the
 > kernel of `β`.
@@ -1001,7 +1001,7 @@ theorem exact_alpha_gamma_onKerBetaQuotient (α β γ : M →ₗ[R] M)
       (gammaOnKerBetaQuotient α β γ h)
 ```
 
-**`AlgebraicGeometry.exact_gamma_alpha_onKerBetaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L224). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exact_gamma_alpha_onKerBetaQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L224). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 02PU.** Exactness of `γ` followed by `α` on the quotient by the
 > kernel of `β`.
@@ -1013,7 +1013,7 @@ theorem exact_gamma_alpha_onKerBetaQuotient (α β γ : M →ₗ[R] M)
       (alphaOnKerBetaQuotient α β γ h)
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 615](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L615). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.periodicDeterminant_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean, line 615](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Multiplicativity.lean#L615). The attribute's comment: “part (4)”.
 
 > **Stacks Project, Tag 02PU.** The determinant of `(M, α, βγ)` is the product of the
 > determinants on the image of `γ` and the quotient by the kernel of `β`.
@@ -1039,7 +1039,7 @@ theorem periodicDeterminant_mul (α β γ : M →ₗ[R] M)
 
 [Tag 02PV](https://stacks.math.columbia.edu/tag/02PV) in the Stacks Project.
 
-**`AlgebraicGeometry.connectingEquivs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/ConnectingEquivs.lean, line 544](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/ConnectingEquivs.lean#L544). The attribute's comment: “connecting isomorphisms”.
+**`AlgebraicGeometry.connectingEquivs`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/ConnectingEquivs.lean, line 544](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/ConnectingEquivs.lean#L544). The attribute's comment: “connecting isomorphisms”.
 
 > **Stacks Project, Tag 02PV.** The two connecting isomorphisms associated to an exact
 > morphism of two-periodic complexes. The first uses `φ'` then `ψ`, and the second uses `ψ'`
@@ -1066,7 +1066,7 @@ noncomputable def connectingEquivs
         ((e.2 (Submodule.Quotient.mk x') : LinearMap.ker α) : M) = φ y)}
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_eq_det_connecting_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Formula.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Formula.lean#L92). The attribute's comment: “comparison formula”.
+**`AlgebraicGeometry.periodicDeterminant_eq_det_connecting_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Formula.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Formula.lean#L92). The attribute's comment: “comparison formula”.
 
 > **Stacks Project, Tag 02PV.** The change of periodic determinant is the determinant of the
 > second connecting isomorphism followed by the inverse of the first.
@@ -1095,7 +1095,7 @@ theorem periodicDeterminant_eq_det_connecting_mul
       periodicDeterminant φ' ψ' hφ'ψ' hψ'φ' hM'
 ```
 
-**`AlgebraicGeometry.periodicDeterminant_eq_of_connecting_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Invariance.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Invariance.lean#L66). The attribute's comment: “equal connecting isomorphisms”.
+**`AlgebraicGeometry.periodicDeterminant_eq_of_connecting_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Invariance.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicComplexesDeterminants/Comparison/Invariance.lean#L66). The attribute's comment: “equal connecting isomorphisms”.
 
 > **Stacks Project, Tag 02PV.** Equal connecting isomorphisms give equal periodic
 > determinants.
@@ -1126,7 +1126,7 @@ theorem periodicDeterminant_eq_of_connecting_eq
 
 [Tag 02PX](https://stacks.math.columbia.edu/tag/02PX) in the Stacks Project.
 
-**`AlgebraicGeometry.exact_periodicQuotient_phi_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean#L88). The attribute's comment: “periodic\_exactness”.
+**`AlgebraicGeometry.exact_periodicQuotient_phi_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean#L88). The attribute's comment: “periodic\_exactness”.
 
 > On the quotient by the common composite image, the map induced by `φ` is exact before
 > the map induced by `ψ`.
@@ -1138,7 +1138,7 @@ theorem exact_periodicQuotient_phi_psi (φ ψ : M →ₗ[R] M)
     Function.Exact (periodicQuotientPhi φ ψ hcomm) (periodicQuotientPsi φ ψ hcomm)
 ```
 
-**`AlgebraicGeometry.exact_periodicQuotient_psi_phi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean#L99). The attribute's comment: “periodic\_exactness”.
+**`AlgebraicGeometry.exact_periodicQuotient_psi_phi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/PeriodicExactness.lean#L99). The attribute's comment: “periodic\_exactness”.
 
 > On the quotient by the common composite image, the map induced by `ψ` is exact before
 > the map induced by `φ`.
@@ -1150,7 +1150,7 @@ theorem exact_periodicQuotient_psi_phi (φ ψ : M →ₗ[R] M)
     Function.Exact (periodicQuotientPsi φ ψ hcomm) (periodicQuotientPhi φ ψ hcomm)
 ```
 
-**`Module.isFiniteLength_quotient_range_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/FiniteLength.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/FiniteLength.lean#L91). The attribute's comment: “finite\_length”.
+**`Module.isFiniteLength_quotient_range_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/FiniteLength.lean, line 91](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/FiniteLength.lean#L91). The attribute's comment: “finite\_length”.
 
 > The quotient of a finite module of support dimension one by an injective endomorphism has
 > finite length.
@@ -1166,7 +1166,7 @@ theorem isFiniteLength_quotient_range_of_injective
 
 [Tag 02PY](https://stacks.math.columbia.edu/tag/02PY) in the Stacks Project.
 
-**`AlgebraicGeometry.isFiniteLength_quotient_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L56). The attribute's comment: “part (1): finite length”.
+**`AlgebraicGeometry.isFiniteLength_quotient_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L56). The attribute's comment: “part (1): finite length”.
 
 > **Stacks Project, Tag 02PY.** The quotient by `abM` has finite length.
 
@@ -1180,7 +1180,7 @@ theorem isFiniteLength_quotient_mul [IsNoetherianRing A] [IsLocalRing A]
         ((LinearMap.lsmul A M a) ∘ₗ (LinearMap.lsmul A M b)))
 ```
 
-**`AlgebraicGeometry.exact_mul_left_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L68). The attribute's comment: “part (1): exactness at b”.
+**`AlgebraicGeometry.exact_mul_left_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L68). The attribute's comment: “part (1): exactness at b”.
 
 > **Stacks Project, Tag 02PY.** Exactness at the differential induced by multiplication
 > by `b`.
@@ -1197,7 +1197,7 @@ theorem exact_mul_left_right (a b : A)
         (range_lsmul_comp_comm a b))
 ```
 
-**`AlgebraicGeometry.exact_mul_right_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L83). The attribute's comment: “part (1): exactness at a”.
+**`AlgebraicGeometry.exact_mul_right_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L83). The attribute's comment: “part (1): exactness at a”.
 
 > **Stacks Project, Tag 02PY.** Exactness at the differential induced by multiplication
 > by `a`.
@@ -1214,7 +1214,7 @@ theorem exact_mul_right_left (a b : A)
         (range_lsmul_comp_comm a b))
 ```
 
-**`AlgebraicGeometry.isFiniteLength_ring_quotient_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L98). The attribute's comment: “part (2): finite length”.
+**`AlgebraicGeometry.isFiniteLength_ring_quotient_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L98). The attribute's comment: “part (2): finite length”.
 
 > **Stacks Project, Tag 02PY.** The ring quotient `A/(ab)` has finite length when `A` has
 > dimension one.
@@ -1229,7 +1229,7 @@ theorem isFiniteLength_ring_quotient_mul
         ((LinearMap.lsmul A A a) ∘ₗ (LinearMap.lsmul A A b)))
 ```
 
-**`AlgebraicGeometry.exact_ring_mul_left_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L109). The attribute's comment: “part (2): exactness at b”.
+**`AlgebraicGeometry.exact_ring_mul_left_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L109). The attribute's comment: “part (2): exactness at b”.
 
 > **Stacks Project, Tag 02PY.** Exactness at multiplication by `b` on `A/(ab)`.
 
@@ -1245,7 +1245,7 @@ theorem exact_ring_mul_left_right
         (range_lsmul_comp_comm a b))
 ```
 
-**`AlgebraicGeometry.exact_ring_mul_right_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L122). The attribute's comment: “part (2): exactness at a”.
+**`AlgebraicGeometry.exact_ring_mul_right_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Exactness.lean#L122). The attribute's comment: “part (2): exactness at a”.
 
 > **Stacks Project, Tag 02PY.** Exactness at multiplication by `a` on `A/(ab)`.
 
@@ -1265,7 +1265,7 @@ theorem exact_ring_mul_right_left
 
 [Tag 02PZ](https://stacks.math.columbia.edu/tag/02PZ) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Basic.lean#L40).
+**`AlgebraicGeometry.moduleSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Basic.lean#L40).
 
 > **Stacks Project, Tag 02PZ.** The symbol of a finite module of support dimension one,
 > evaluated on two elements acting injectively on it.
@@ -1282,7 +1282,7 @@ noncomputable def moduleSymbol
 
 [Tag 02Q0](https://stacks.math.columbia.edu/tag/02Q0) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_mul_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean#L50). The attribute's comment: “multiplicativity”.
+**`AlgebraicGeometry.moduleSymbol_mul_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean, line 50](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean#L50). The attribute's comment: “multiplicativity”.
 
 > **Stacks Project, Tag 02Q0.** The symbol is multiplicative in its second argument.
 
@@ -1296,7 +1296,7 @@ theorem moduleSymbol_mul_right
       moduleSymbol a b ha hb hdim * moduleSymbol a c ha hc hdim
 ```
 
-**`AlgebraicGeometry.moduleSymbol_mul_swap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean#L394). The attribute's comment: “swapped-arguments identity”.
+**`AlgebraicGeometry.moduleSymbol_mul_swap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Multiplicativity.lean#L394). The attribute's comment: “swapped-arguments identity”.
 
 > **Stacks Project, Tag 02Q0.** Swapping the two arguments gives inverse symbols.
 
@@ -1313,7 +1313,7 @@ theorem moduleSymbol_mul_swap
 
 [Tag 02Q1](https://stacks.math.columbia.edu/tag/02Q1) in the Stacks Project.
 
-**`AlgebraicGeometry.tameSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/TameSymbol.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/TameSymbol.lean#L308).
+**`AlgebraicGeometry.tameSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/TameSymbol.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/TameSymbol.lean#L308).
 
 > **Stacks Project, Tag 02Q1.** The tame symbol of a one-dimensional Noetherian local
 > domain, extended to its fraction field.
@@ -1329,7 +1329,7 @@ noncomputable def tameSymbol {A : Type u} [CommRing A] [IsDomain A]
 
 [Tag 0AY9](https://stacks.math.columbia.edu/tag/0AY9) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_self_eq_negOne_pow_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Self.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Self.lean#L68).
+**`AlgebraicGeometry.moduleSymbol_self_eq_negOne_pow_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Self.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Self.lean#L68).
 
 > The symbol of a nonzerodivisor `a` with itself is `(-1) ^ length (M / aM)`.
 
@@ -1348,7 +1348,7 @@ theorem moduleSymbol_self_eq_negOne_pow_length
 
 [Tag 02Q2](https://stacks.math.columbia.edu/tag/02Q2) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_unit_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean#L48). The attribute's comment: “module formula”.
+**`AlgebraicGeometry.moduleSymbol_unit_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean#L48). The attribute's comment: “module formula”.
 
 > **Stacks Project, Tag 02Q2.** The symbol with a unit in its first argument is the
 > corresponding power of its residue, with exponent the length of the quotient by the second
@@ -1365,7 +1365,7 @@ theorem moduleSymbol_unit_left
         moduleLength A (M ⧸ (LinearMap.lsmul A M b).range)
 ```
 
-**`AlgebraicGeometry.moduleSymbol_unit_left_ring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean#L110). The attribute's comment: “ring formula”.
+**`AlgebraicGeometry.moduleSymbol_unit_left_ring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Unit.lean#L110). The attribute's comment: “ring formula”.
 
 > **Stacks Project, Tag 02Q2.** For a one-dimensional Noetherian local ring, the exponent in
 > the unit-symbol formula is the order of vanishing of the second argument.
@@ -1384,7 +1384,7 @@ theorem moduleSymbol_unit_left_ring
 
 [Tag 02Q3](https://stacks.math.columbia.edu/tag/02Q3) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/ShortExact.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/ShortExact.lean#L137).
+**`AlgebraicGeometry.moduleSymbol_short_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/ShortExact.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/ShortExact.lean#L137).
 
 > **Stacks Project, Tag 02Q3.** The symbol of the middle term of a short exact sequence is
 > the product of the symbols of its outer terms.
@@ -1414,7 +1414,7 @@ theorem moduleSymbol_short_exact
 
 [Tag 02Q4](https://stacks.math.columbia.edu/tag/02Q4) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_eq_of_ker_coker_supportDim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Invariance.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Invariance.lean#L478).
+**`AlgebraicGeometry.moduleSymbol_eq_of_ker_coker_supportDim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Invariance.lean, line 478](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Invariance.lean#L478).
 
 > **Stacks Project, Tag 02Q4.** The symbol is unchanged by a map of one-dimensional finite
 > modules whose kernel and cokernel have support dimension at most zero.
@@ -1439,7 +1439,7 @@ theorem moduleSymbol_eq_of_ker_coker_supportDim_le_zero
 
 [Tag 02Q5](https://stacks.math.columbia.edu/tag/02Q5) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_eq_finprod_minimal_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/MinimalPrimes.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/MinimalPrimes.lean#L408).
+**`AlgebraicGeometry.moduleSymbol_eq_finprod_minimal_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/MinimalPrimes.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/MinimalPrimes.lean#L408).
 
 > **Stacks Project, Tag 02Q5.** The symbol of a finite one-dimensional module is the product
 > of the symbols of its minimal support quotients, weighted by localization lengths.
@@ -1468,7 +1468,7 @@ theorem moduleSymbol_eq_finprod_minimal_support
 
 [Tag 02Q6](https://stacks.math.columbia.edu/tag/02Q6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_unit_algebraMap_eq_zpow_div_zpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean#L242). The attribute's comment: “the power product is a unit of the valuation ring”.
+**`AlgebraicGeometry.exists_unit_algebraMap_eq_zpow_div_zpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean#L242). The attribute's comment: “the power product is a unit of the valuation ring”.
 
 > For a discrete valuation ring `A` with fraction field `K` and nonzero `x, y ∈ K`, the power
 > product `x ^ (ord_A y) / y ^ (ord_A x)` is the image of a unit of `A`.
@@ -1481,7 +1481,7 @@ theorem exists_unit_algebraMap_eq_zpow_div_zpow
       (x : K) ^ (ordInt A (y : K) y.ne_zero) / (y : K) ^ (ordInt A (x : K) x.ne_zero)
 ```
 
-**`AlgebraicGeometry.tameSymbol_eq_negOnePow_mul_residue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean#L262). The attribute's comment: “the tame symbol formula”.
+**`AlgebraicGeometry.tameSymbol_eq_negOnePow_mul_residue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/DiscreteValuationRing.lean#L262). The attribute's comment: “the tame symbol formula”.
 
 > For a discrete valuation ring `A` with fraction field `K` and nonzero `x, y ∈ K`, the symbol
 > `d_A(x, y)` is the usual tame symbol: if `w` is a unit of `A` representing
@@ -1506,7 +1506,7 @@ theorem tameSymbol_eq_negOnePow_mul_residue
 
 [Tag 02Q8](https://stacks.math.columbia.edu/tag/02Q8) in the Stacks Project.
 
-**`AlgebraicGeometry.moduleSymbol_steinberg_prepare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Steinberg.lean, line 983](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Steinberg.lean#L983).
+**`AlgebraicGeometry.moduleSymbol_steinberg_prepare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Steinberg.lean, line 983](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Steinberg.lean#L983).
 
 > **Stacks Project, Tag 02Q8.** Let `A` be a Noetherian local ring, let `a b : A`, and let `M`
 > be a finite `A`-module of support dimension one on which each of `a`, `b` and `b - a` acts
@@ -1531,7 +1531,7 @@ theorem moduleSymbol_steinberg_prepare
 
 [Tag 02Q9](https://stacks.math.columbia.edu/tag/02Q9) in the Stacks Project.
 
-**`AlgebraicGeometry.tameSymbol_one_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean#L98). The attribute's comment: “two units of the fraction field identified by `(y : K) = 1 - (x : K)`”.
+**`AlgebraicGeometry.tameSymbol_one_sub`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean, line 98](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean#L98). The attribute's comment: “two units of the fraction field identified by `(y : K) = 1 - (x : K)`”.
 
 > **Stacks Project, Tag 02Q9.** Let `A` be a Noetherian local domain of dimension one with
 > fraction field `K`. For `x` a unit of `K` and `y` the unit `1 - x` of `K`, the tame symbol of
@@ -1547,7 +1547,7 @@ theorem tameSymbol_one_sub {A : Type u} [CommRing A] [IsDomain A]
     tameSymbol (K := K) hdim x y = 1
 ```
 
-**`AlgebraicGeometry.tameSymbol_one_sub_mk0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean#L149). The attribute's comment: “an element of the fraction field other than `0` and `1`”.
+**`AlgebraicGeometry.tameSymbol_one_sub_mk0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/SteinbergTame.lean#L149). The attribute's comment: “an element of the fraction field other than `0` and `1`”.
 
 > **Stacks Project, Tag 02Q9.** Let `A` be a Noetherian local domain of dimension one with
 > fraction field `K`. For `x ∈ K` other than `0` and `1`, the tame symbol of Tag 02Q1 satisfies
@@ -1566,7 +1566,7 @@ theorem tameSymbol_one_sub_mk0 {A : Type u} [CommRing A] [IsDomain A]
 
 [Tag 02QB](https://stacks.math.columbia.edu/tag/02QB) in the Stacks Project.
 
-**`Module.FiniteLength.injective_iff_bijective_and_length_quotient_range_eq_order`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GoodSequenceColength.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GoodSequenceColength.lean#L391).
+**`Module.FiniteLength.injective_iff_bijective_and_length_quotient_range_eq_order`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GoodSequenceColength.lean, line 391](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/GoodSequenceColength.lean#L391).
 
 > **Stacks Project, Tag 02QB.** Let `R` be a Noetherian local ring, `q` a prime with `R / q` of
 > dimension one, and `φ : M → N` a map of finite modules each generated by a sequence of `l` terms
@@ -1623,7 +1623,7 @@ public theorem injective_iff_bijective_and_length_quotient_range_eq_order
 
 [Tag 02QC](https://stacks.math.columbia.edu/tag/02QC) in the Stacks Project.
 
-**`Module.FiniteLength.exists_sequence_with_successive_quotients_at_minimal_support_and_length_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LengthsDeterminants/GoodSequences.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LengthsDeterminants/GoodSequences.lean#L423). The attribute's comment: “The ring is not assumed local.”.
+**`Module.FiniteLength.exists_sequence_with_successive_quotients_at_minimal_support_and_length_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LengthsDeterminants/GoodSequences.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/LengthsDeterminants/GoodSequences.lean#L423). The attribute's comment: “The ring is not assumed local.”.
 
 > **Stacks Project, Tag 02QC.** Let `M` be a finite module over a Noetherian ring `R` and
 > `q` a minimal point of the support of `M`. Then there is a sequence `x₁, …, x_l` in `M` such
@@ -1660,7 +1660,7 @@ theorem exists_sequence_with_successive_quotients_at_minimal_support_and_length_
 
 [Tag 02QD](https://stacks.math.columbia.edu/tag/02QD) in the Stacks Project.
 
-**`AlgebraicGeometry.neg_periodicLength_eq_finsum_ordFrac_periodicDeterminant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean#L62).
+**`AlgebraicGeometry.neg_periodicLength_eq_finsum_ordFrac_periodicDeterminant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean#L62).
 
 > **Stacks Project, Tag 02QD.** Let `R` be a Noetherian local ring and `(M, φ, ψ)` a
 > `(2, 1)`-periodic complex with `M` finite, the cohomology of finite length and the support of `M`
@@ -1703,7 +1703,7 @@ theorem neg_periodicLength_eq_finsum_ordFrac_periodicDeterminant
 
 [Tag 02QE](https://stacks.math.columbia.edu/tag/02QE) in the Stacks Project.
 
-**`AlgebraicGeometry.length_quotient_sub_length_ker_eq_finsum_ordOfResidueUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean#L237).
+**`AlgebraicGeometry.length_quotient_sub_length_ker_eq_finsum_ordOfResidueUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/PeriodicLengthDeterminantFormula.lean#L237).
 
 > **Stacks Project, Tag 02QE.** Let `R` be a Noetherian local ring, `M` a finite `R`-module
 > whose support has dimension at most one, and `ψ : M → M` an `R`-linear map whose kernel and
@@ -1742,7 +1742,7 @@ theorem length_quotient_sub_length_ker_eq_finsum_ordOfResidueUnit
 
 [Tag 02QJ](https://stacks.math.columbia.edu/tag/02QJ) in the Stacks Project.
 
-**`Stacks.Chow.finsum_fracTameSymbolOrderAt_canonical_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityCanonical.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityCanonical.lean#L123). The attribute's comment: “the second displayed form, the sum over all height-one primes”.
+**`Stacks.Chow.finsum_fracTameSymbolOrderAt_canonical_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityCanonical.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityCanonical.lean#L123). The attribute's comment: “the second displayed form, the sum over all height-one primes”.
 
 > **Stacks Project, Tag 02QJ: the Key Lemma for `d`.** Let `A` be a two-dimensional Noetherian
 > local domain with fraction field `K` and let `f, g ∈ K^*`. Then
@@ -1767,7 +1767,7 @@ theorem finsum_fracTameSymbolOrderAt_canonical_eq_zero [IsDomain A] [IsLocalRing
       fracTameSymbolOrderAt hdim p (canonicalHeightOneSymbol p) f g = 0
 ```
 
-**`Stacks.Chow.finsum_heightOneOrd_tameSymbol_totalFraction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityTotalFraction.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityTotalFraction.lean#L206). The attribute's comment: “generalization: for every two-dimensional Noetherian local ring, on the total ring of fractions”.
+**`Stacks.Chow.finsum_heightOneOrd_tameSymbol_totalFraction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityTotalFraction.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/ReciprocityTotalFraction.lean#L206). The attribute's comment: “generalization: for every two-dimensional Noetherian local ring, on the total ring of fractions”.
 
 > **Stacks Project, Tag 0EAX: the Key Lemma, for every two-dimensional Noetherian local
 > ring.** Let `A` be a two-dimensional Noetherian local ring, not necessarily a domain, with total
@@ -1793,7 +1793,7 @@ theorem finsum_heightOneOrd_tameSymbol_totalFraction_eq_zero [IsLocalRing A]
         (Units.map (heightOneFractionMap p).toMonoidHom g)) = 0
 ```
 
-**`AlgebraicGeometry.localTameSymbol_ne_one_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean#L534). The attribute's comment: “finiteness of the set of contributing primes, which makes the sum finite”.
+**`AlgebraicGeometry.localTameSymbol_ne_one_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean, line 534](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean#L534). The attribute's comment: “finiteness of the set of contributing primes, which makes the sum finite”.
 
 > **Stacks Project, Tag 02QJ.** Two units of the fraction field have trivial tame symbol at
 > all but finitely many height-one primes, so the reciprocity sum below is a finite sum.
@@ -1807,7 +1807,7 @@ theorem localTameSymbol_ne_one_finite
       localTameSymbol q f g ≠ 1}
 ```
 
-**`AlgebraicGeometry.sum_ord_localTameSymbol_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean, line 1217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean#L1217). The attribute's comment: “the reciprocity formula, second displayed form: all height-one primes”.
+**`AlgebraicGeometry.sum_ord_localTameSymbol_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean, line 1217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/Symbols/Reciprocity.lean#L1217). The attribute's comment: “the reciprocity formula, second displayed form: all height-one primes”.
 
 > **Stacks Project, Tag 02QJ.** Let `A` be a two-dimensional Noetherian local domain
 > with fraction field `K` and let `f, g` be units of `K`. The orders of vanishing of the tame
@@ -1837,4 +1837,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.68, Tag 0EAZ](https://stacks.math.columbia.edu/tag/0EAZ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

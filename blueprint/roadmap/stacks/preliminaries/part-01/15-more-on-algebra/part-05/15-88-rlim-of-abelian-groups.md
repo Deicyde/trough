@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.88 Rlim of abelian groups
 
-Section 15.88 of the Stacks Project, [Tag 07KV](https://stacks.math.columbia.edu/tag/07KV). 17 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.88 of the Stacks Project, [Tag 07KV](https://stacks.math.columbia.edu/tag/07KV). 17 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07KW, a lemma
 
 [Tag 07KW](https://stacks.math.columbia.edu/tag/07KW) in the Stacks Project.
 
-**`Rlim.lim_hasRightDerivedFunctor_and_computations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 1769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L1769).
+**`Rlim.lim_hasRightDerivedFunctor_and_computations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 1769](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L1769).
 
 > **Stacks 07KW.** The inverse-limit functor on inverse systems of abelian groups has a right
 > derived functor on the unbounded derived category. Higher derived limits vanish above degree one;
@@ -91,7 +91,7 @@ public theorem lim_hasRightDerivedFunctor_and_computations :
 
 [Tag 08U4](https://stacks.math.columbia.edu/tag/08U4) in the Stacks Project.
 
-**`Rlim.lim_hasRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 1979](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L1979).
+**`Rlim.lim_hasRightDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 1979](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L1979).
 
 > **Stacks 08U4.** The inverse-limit functor on inverse systems of abelian groups has a
 > right derived functor from `D(Ab(N))` to `D(Ab)`.
@@ -110,7 +110,7 @@ public theorem lim_hasRightDerivedFunctor :
 
 [Tag 0H31](https://stacks.math.columbia.edu/tag/0H31) in the Stacks Project.
 
-**`Rlim.exists_sixTerm_exact_sequence_lim_rightDerived_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 2023](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L2023).
+**`Rlim.exists_sixTerm_exact_sequence_lim_rightDerived_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 2023](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L2023).
 
 > **Stacks 0H31.** A short exact sequence of inverse systems of abelian groups induces
 > the exact sequence
@@ -154,7 +154,7 @@ public theorem exists_sixTerm_exact_sequence_lim_rightDerived_one
 
 [Tag 0918](https://stacks.math.columbia.edu/tag/0918) in the Stacks Project.
 
-**`Rlim.comparisonHomologyLimit_isIso_of_isZero_rightDerivedLim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 2387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L2387).
+**`Rlim.comparisonHomologyLimit_isIso_of_isZero_rightDerivedLim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean, line 2387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/Rlim.lean#L2387).
 
 > **Stacks 0918.** Let
 > `A⁻² ⟶ A⁻¹ ⟶ A⁰ ⟶ A¹` be an inverse system of four-term complexes of
@@ -187,7 +187,7 @@ public theorem comparisonHomologyLimit_isIso_of_isZero_rightDerivedLim
 
 [Tag 0H9K](https://stacks.math.columbia.edu/tag/0H9K) in the Stacks Project.
 
-**`Rlim.Pro.exists_map_lim_and_cokernel_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/LimAndRlimOne.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/LimAndRlimOne.lean#L657).
+**`Rlim.Pro.exists_map_lim_and_cokernel_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/LimAndRlimOne.lean, line 657](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/LimAndRlimOne.lean#L657).
 
 > **Stacks 0H9K.** Morphisms of pro-systems of abelian groups induce maps on inverse limits
 > and first derived inverse limits. The maps are functorial in the pro-morphism, and both are
@@ -283,7 +283,7 @@ public theorem exists_map_lim_and_cokernel_delta :
 
 [Tag 0919](https://stacks.math.columbia.edu/tag/0919) in the Stacks Project.
 
-**`Rlim.Hom.hom_into_isDerivedLimit_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean#L422).
+**`Rlim.Hom.hom_into_isDerivedLimit_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean#L422).
 
 > **Stacks 0919.** If `K` is a derived limit of an inverse system `F` in a triangulated
 > category, then for every object `L` there is a short exact sequence
@@ -323,7 +323,7 @@ public theorem hom_into_isDerivedLimit_shortExact
 
 [Tag 0H9L](https://stacks.math.columbia.edu/tag/0H9L) in the Stacks Project.
 
-**`Rlim.Pro.nonempty_iso_of_isDerivedLimit_of_pro_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/DerivedLimit.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/DerivedLimit.lean#L251).
+**`Rlim.Pro.nonempty_iso_of_isDerivedLimit_of_pro_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/DerivedLimit.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/DerivedLimit.lean#L251).
 
 > **Stacks 0H9L.** Derived limits of pro-isomorphic inverse systems in a pretriangulated
 > category are non-canonically isomorphic.
@@ -342,7 +342,7 @@ public theorem nonempty_iso_of_isDerivedLimit_of_pro_isomorphism
 
 [Tag 0CQX](https://stacks.math.columbia.edu/tag/0CQX) in the Stacks Project.
 
-**`Rlim.Hom.shortExact_map_from_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean#L693).
+**`Rlim.Hom.shortExact_map_from_isHomotopyColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean, line 693](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimHom.lean#L693).
 
 > **Stacks 0CQX.** Let `F : ℕ ⥤ D` be a system in a pretriangulated category and let `K` be a
 > derived colimit of `F`. For every `L` there is a short exact sequence
@@ -387,7 +387,7 @@ public theorem shortExact_map_from_isHomotopyColimit
 
 [Tag 091A](https://stacks.math.columbia.edu/tag/091A) in the Stacks Project.
 
-**`Rlim.ChaoticSite.diagramLimitAndRightDerivedIsoSiteCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimSiteCohomology.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimSiteCohomology.lean#L76).
+**`Rlim.ChaoticSite.diagramLimitAndRightDerivedIsoSiteCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimSiteCohomology.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimSiteCohomology.lean#L76).
 
 > On the chaotic site on a small category, abelian sheaves are diagrams of abelian groups on
 > its opposite category. Under the canonical equivalence, global sections are naturally isomorphic
@@ -410,7 +410,7 @@ public noncomputable def diagramLimitAndRightDerivedIsoSiteCohomology
 
 [Tag 07KX](https://stacks.math.columbia.edu/tag/07KX) in the Stacks Project.
 
-**`Rlim.lim_hasRightDerivedFunctor_and_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean#L355).
+**`Rlim.lim_hasRightDerivedFunctor_and_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean#L355).
 
 > **Stacks 07KX.** The right-derived inverse-limit functor on inverse systems of abelian groups
 > is, on every object, a derived limit of the associated inverse system in `D(Ab)`. Equivalently,
@@ -435,7 +435,7 @@ public theorem lim_hasRightDerivedFunctor_and_isDerivedLimit :
 
 [Tag 07KY](https://stacks.math.columbia.edu/tag/07KY) in the Stacks Project.
 
-**`DerivedCategory.isDerivedLimit_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MilnorShortExact.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/MilnorShortExact.lean#L273).
+**`DerivedCategory.isDerivedLimit_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MilnorShortExact.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/MilnorShortExact.lean#L273).
 
 > The canonical Milnor short exact sequence of a derived limit. The inclusion descends the
 > connecting morphism through the cokernel of `1 - shift` in degree `r - 1`, and the projection to
@@ -480,7 +480,7 @@ public theorem isDerivedLimit_homology_shortExact
 
 [Tag 0CQ9](https://stacks.math.columbia.edu/tag/0CQ9) in the Stacks Project.
 
-**`Stacks.InverseSystem.AbelianGroupDerivedLift.exists_lift_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Ab.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Ab.lean#L393).
+**`Stacks.InverseSystem.AbelianGroupDerivedLift.exists_lift_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Ab.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/Ab.lean#L393).
 
 > **Stacks Tag 0CQ9 / Lemma 15.88.11.**
 > Every inverse system `K : Nᵒᵖ ⥤ D(Ab)` of objects of the derived category `D(Ab)`
@@ -503,7 +503,7 @@ theorem exists_lift_of_inverseSystem (K : ℕᵒᵖ ⥤ DerivedCategory Ab.{u}) 
 
 [Tag 08U5](https://stacks.math.columbia.edu/tag/08U5) in the Stacks Project.
 
-**`Rlim.derivedLimit_iso_rightDerivedLimit_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean#L511).
+**`Rlim.derivedLimit_iso_rightDerivedLimit_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean, line 511](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/RlimTriangle.lean#L511).
 
 > **Stacks 08U5.** Let `E` be an inverse system in `D(Ab)` and let `K` be a derived
 > limit of `E`.  The system has a lift to `D(Ab(N))`, and the value on every lift of a
@@ -591,7 +591,7 @@ public theorem derivedLimit_iso_rightDerivedLimit_and_homology_shortExact
 
 [Tag 091B](https://stacks.math.columbia.edu/tag/091B) in the Stacks Project.
 
-**`Rlim.Pro.lim_hasRightDerivedFunctor_and_maps_proIsomorphisms_to_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean#L477).
+**`Rlim.Pro.lim_hasRightDerivedFunctor_and_maps_proIsomorphisms_to_isomorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean, line 477](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean#L477).
 
 > **Stacks 091B.** The right-derived inverse-limit functor sends a morphism of derived inverse
 > systems to an isomorphism if the induced morphism between their associated systems in `D(Ab)` is
@@ -621,7 +621,7 @@ public theorem lim_hasRightDerivedFunctor_and_maps_proIsomorphisms_to_isomorphis
 
 [Tag 0CQA](https://stacks.math.columbia.edu/tag/0CQA) in the Stacks Project.
 
-**`Rlim.isMittagLeffler_iff_isZero_rightDerivedLim_one_and_countable_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean#L322).
+**`Rlim.isMittagLeffler_iff_isZero_rightDerivedLim_one_and_countable_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean, line 322](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean#L322).
 
 > **Stacks 0CQA (Emmanouil).** An inverse system of abelian groups is Mittag--Leffler if and
 > only if the first derived inverse limit vanishes for it and for the countable direct sum of
@@ -650,13 +650,13 @@ public theorem isMittagLeffler_iff_isZero_rightDerivedLim_one_and_countable_copr
 
 Declarations registered for the tag:
 
-- [`isMittagLeffler_of_shortExact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InverseLimit.lean#L174), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean#L52) (StacksFrontier): “In a short exact sequence of inverse systems of abelian groups indexed by the natural numbers, if the outer two systems are Mittag-Leffler, then the middle system is Mittag-Leffler.”.
+- [`isMittagLeffler_of_shortExact`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/InverseLimit.lean#L174), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/MittagLeffler.lean#L52) (StacksFrontier): “In a short exact sequence of inverse systems of abelian groups indexed by the natural numbers, if the outer two systems are Mittag-Leffler, then the middle system is Mittag-Leffler.”.
 
 ## Tag 091C, a lemma
 
 [Tag 091C](https://stacks.math.columbia.edu/tag/091C) in the Stacks Project.
 
-**`Rlim.Pro.isProZero_iff_isZero_lim_and_rightDerivedLim_one_and_countable_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean#L613).
+**`Rlim.Pro.isProZero_iff_isZero_lim_and_rightDerivedLim_one_and_countable_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean, line 613](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/ProIsomorphism/RightDerivedLimit.lean#L613).
 
 > **Stacks 091C.** An inverse system of abelian groups is zero as a pro-object if and only if
 > its inverse limit and first derived inverse limit vanish, and the same two vanishings hold for
@@ -688,4 +688,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.88, Tag 07KV](https://stacks.math.columbia.edu/tag/07KV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

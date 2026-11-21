@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.16 Finite cover by a scheme
 
-Section 70.16 of the Stacks Project, [Tag 0ACX](https://stacks.math.columbia.edu/tag/0ACX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.16 of the Stacks Project, [Tag 0ACX](https://stacks.math.columbia.edu/tag/0ACX). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09YC, a proposition
 
 [Tag 09YC](https://stacks.math.columbia.edu/tag/09YC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsFiniteSurjectiveSchemeCover_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpSchemeCoverExistence.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpSchemeCoverExistence.lean#L97).
+**`AlgebraicGeometry.Space.existsFiniteSurjectiveSchemeCover_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpSchemeCoverExistence.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFpSchemeCoverExistence.lean#L97).
 
 > **Stacks Project, Tag 09YC.** Let `X` be a quasi-compact and quasi-separated algebraic space
 > over a scheme `S`. Then
@@ -48,7 +48,7 @@ theorem existsFiniteSurjectiveSchemeCover_and_refining
 
 [Tag 0GUM](https://stacks.math.columbia.edu/tag/0GUM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isLimit_finite_finitePresentation_fixedOnOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/IntegralLimitFinitePresentationFixedOnOpen.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/IntegralLimitFinitePresentationFixedOnOpen.lean#L83).
+**`AlgebraicGeometry.Space.exists_isLimit_finite_finitePresentation_fixedOnOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/IntegralLimitFinitePresentationFixedOnOpen.lean, line 83](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/IntegralLimitFinitePresentationFixedOnOpen.lean#L83).
 
 > An integral morphism `f : X ⟶ Y` of algebraic spaces over `S`, with `Y` quasi-compact and
 > quasi-separated, which is finite and of finite presentation over a quasi-compact open subspace `V`
@@ -84,7 +84,7 @@ theorem exists_isLimit_finite_finitePresentation_fixedOnOpen
 
 [Tag 0GUN](https://stacks.math.columbia.edu/tag/0GUN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteSchemeCover_finiteEtaleOverDenseOpen_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteSchemeCoverExistence.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteSchemeCoverExistence.lean#L156).
+**`AlgebraicGeometry.Space.exists_finiteSchemeCover_finiteEtaleOverDenseOpen_and_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteSchemeCoverExistence.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteSchemeCoverExistence.lean#L156).
 
 > **Stacks Project, Tag 0GUN.** Let `X` be a quasi-compact and quasi-separated algebraic
 > space over a scheme `S` such that `|X|` has finitely many irreducible components. Then
@@ -118,7 +118,7 @@ theorem exists_finiteSchemeCover_finiteEtaleOverDenseOpen_and_refining
 
 [Tag 0GUP](https://stacks.math.columbia.edu/tag/0GUP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteEtaleCoverStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteEtaleCoverStratification.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteEtaleCoverStratification.lean#L57).
+**`AlgebraicGeometry.Space.exists_finiteEtaleCoverStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteEtaleCoverStratification.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteEtaleCoverStratification.lean#L57).
 
 > **Stacks 0GUP.** Let `X` be a quasi-compact and quasi-separated algebraic space. There are
 > `t ≥ 0` and closed subspaces `X ⊇ Z₀ ⊇ Z₁ ⊇ ⋯ ⊇ Z_t = ∅` with each `Z_i ⟶ X` of finite
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.16, Tag 0ACX](https://stacks.math.columbia.edu/tag/0ACX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

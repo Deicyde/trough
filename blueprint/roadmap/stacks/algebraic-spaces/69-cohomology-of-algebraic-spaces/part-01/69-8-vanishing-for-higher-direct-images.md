@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.8 Vanishing for higher direct images
 
-Section 69.8 of the Stacks Project, [Tag 073F](https://stacks.math.columbia.edu/tag/073F). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.8 of the Stacks Project, [Tag 073F](https://stacks.math.columbia.edu/tag/073F). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 073G, a lemma
 
 [Tag 073G](https://stacks.math.columbia.edu/tag/073G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_forall_isZero_rightDerived_modulePushforward_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageUniformBound.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageUniformBound.lean#L505). The attribute's comment: “n(X -> Y) is a natural number, chosen before the base change, the module and the degree; X' is any algebraic space completing a cartesian square over f”.
+**`AlgebraicGeometry.Space.exists_forall_isZero_rightDerived_modulePushforward_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageUniformBound.lean, line 505](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageUniformBound.lean#L505). The attribute's comment: “n(X -> Y) is a natural number, chosen before the base change, the module and the degree; X' is any algebraic space completing a cartesian square over f”.
 
 > **[Stacks, Tag 073G].**  Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces over `S`, with `Y` quasi-compact.  There is a single degree `n(X → Y)` such that
@@ -36,7 +36,7 @@ theorem exists_forall_isZero_rightDerived_modulePushforward_of_qcqs {X Y : Algeb
 
 [Tag 073H](https://stacks.math.columbia.edu/tag/073H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardUnconditional.lean#L44).
+**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardUnconditional.lean#L44).
 
 > For an affine morphism `f : X ⟶ Y` of algebraic spaces over `S`, a quasi-coherent
 > `𝒪_X`-module `𝓕` and `n > 0`, the higher direct image vanishes: `R^n f_* 𝓕 = 0`.
@@ -49,7 +49,7 @@ theorem isZero_rightDerived_modulePushforward_of_isQuasicoherentOnSite
     IsZero (((modulePushforward B S hS f).rightDerived n).obj G)
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardVanishingUnconditional.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardVanishingUnconditional.lean#L140). The attribute's comment: “the full statement, for the direct image `Space.modulePushforward`”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardVanishingUnconditional.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineHigherPushforwardVanishingUnconditional.lean#L140). The attribute's comment: “the full statement, for the direct image `Space.modulePushforward`”.
 
 > Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over a scheme `S` contained in a
 > big fppf site `B`, and let `𝓕` be a quasi-coherent `𝒪_X`-module. Then the higher direct images
@@ -63,7 +63,7 @@ theorem isZero_rightDerived_modulePushforward_isAffineHom (f : X ⟶ Y)
     IsZero (((modulePushforward B S hS f).rightDerived p).obj F)
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isAffineHom_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismHigherDirectImageVanishing.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismHigherDirectImageVanishing.lean#L99).
+**`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isAffineHom_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismHigherDirectImageVanishing.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismHigherDirectImageVanishing.lean#L99).
 
 > **Stacks 073H.** Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and let
 > `𝓕` be a quasi-coherent `𝒪_X`-module.  Then `R^n f_*𝓕 = 0` for every `n > 0`.
@@ -87,7 +87,7 @@ theorem isZero_rightDerived_modulePushforward_of_isAffineHom_of_isQuasicoherent 
 
 [Tag 0D2U](https://stacks.math.columbia.edu/tag/0D2U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cohomologyCollapseIsoOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapse.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapse.lean#L74). The attribute's comment: “the Leray collapse R^i Γ(Y, f\_* -)(F) ≅ H^i(Y, f\_*F), as modules over the global sections of Y, every degree”.
+**`AlgebraicGeometry.Space.cohomologyCollapseIsoOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapse.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapse.lean#L74). The attribute's comment: “the Leray collapse R^i Γ(Y, f\_* -)(F) ≅ H^i(Y, f\_*F), as modules over the global sections of Y, every degree”.
 
 > **Stacks 0D2U.**  Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and `𝓕`
 > a quasi-coherent `𝒪_X`-module.  Then for every `i ≥ 0` the cohomology of `𝓕` on `X`, as the
@@ -107,7 +107,7 @@ def cohomologyCollapseIsoOfIsAffineHom (f : X ⟶ Y) (hf : IsAffineHom B S hS f.
         ((modulePushforward B S hS f).obj F))
 ```
 
-**`AlgebraicGeometry.Space.cohomologyUliftIsoOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyOverRing.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyOverRing.lean#L359).
+**`AlgebraicGeometry.Space.cohomologyUliftIsoOfIsAffineHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyOverRing.lean, line 359](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyOverRing.lean#L359).
 
 > **Stacks 0D2U.** Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over `S` and `𝓕`
 > a quasi-coherent `𝒪_X`-module. Then `Hⁱ(X, 𝓕) = Hⁱ(Y, f_*𝓕)` for every `i ≥ 0`.
@@ -134,7 +134,7 @@ def cohomologyUliftIsoOfIsAffineHom.{w} (haff : IsAffineHom B S hS f.hom)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.cohomologyIsoOfIsAffineHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyIso.lean#L230), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapseUnconditional.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapseUnconditional.lean#L124) (StacksFrontier).
+- [`AlgebraicGeometry.Space.cohomologyIsoOfIsAffineHom`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyIso.lean#L230), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapseUnconditional.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineMorphismCohomologyCollapseUnconditional.lean#L124) (StacksFrontier).
 
 ## Depends on
 
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.8, Tag 073F](https://stacks.math.columbia.edu/tag/073F)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

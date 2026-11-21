@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.133 Finite order differential operators
 
-Section 10.133 of the Stacks Project, [Tag 09CH](https://stacks.math.columbia.edu/tag/09CH). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.133 of the Stacks Project, [Tag 09CH](https://stacks.math.columbia.edu/tag/09CH). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09CI, a definition
 
 [Tag 09CI](https://stacks.math.columbia.edu/tag/09CI) in the Stacks Project.
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L110). The attribute's comment: “The source's `k` bounds the order: `Diff⁰ ⊆ Diff¹ ⊆ …`, whence `LE` in the name. The commutator `m ↦ D (g • m) - g • D m` is the difference of the two composites of `D` with `Algebra.lsmul R R _ g`, multiplication by `g`. The `S`-module `Diffᵏ_{S/R}(M, N)` of the paragraph following the definition is a separate statement. See the module docstring.”. References: EGA IV (16.8.1), “affine (module) case”; SGA 3 VIIA (1.4), “affine case”; SGA 6 II (AppII.1.2.2), “Diff^n, affine case”; SGA 3 VIIA (1.1.1), “partial”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L110). The attribute's comment: “The source's `k` bounds the order: `Diff⁰ ⊆ Diff¹ ⊆ …`, whence `LE` in the name. The commutator `m ↦ D (g • m) - g • D m` is the difference of the two composites of `D` with `Algebra.lsmul R R _ g`, multiplication by `g`. The `S`-module `Diffᵏ_{S/R}(M, N)` of the paragraph following the definition is a separate statement. See the module docstring.”. References: EGA IV (16.8.1), “affine (module) case”; SGA 3 VIIA (1.4), “affine case”; SGA 6 II (AppII.1.2.2), “Diff^n, affine case”; SGA 3 VIIA (1.1.1), “partial”.
 
 > Let `R → S` be a ring map, let `M` and `N` be `S`-modules, and let `k : ℕ`.
 > `D.IsDifferentialOperatorOfOrderLE S k` says that the `R`-linear map `D : M → N` is a
@@ -31,7 +31,7 @@ public def IsDifferentialOperatorOfOrderLE (S : Type*) [Semiring S] [Algebra R S
 
 [Tag 09CJ](https://stacks.math.columbia.edu/tag/09CJ) in the Stacks Project.
 
-**`isDiffOpOfOrder_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L458). References: EGA IV (16.8.9), “affine case”; SGA 3 VIIA (1.2), “affine, deviations of id”; SGA 3 VIIA (1.4), “partial”.
+**`isDiffOpOfOrder_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 458](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L458). References: EGA IV (16.8.9), “affine case”; SGA 3 VIIA (1.2), “affine, deviations of id”; SGA 3 VIIA (1.4), “partial”.
 
 > The composition of a differential operator of order `k` with one of order `k'` is a
 > differential operator of order `k + k'`.
@@ -48,7 +48,7 @@ theorem isDiffOpOfOrder_comp
 
 [Tag 09CK](https://stacks.math.columbia.edu/tag/09CK) in the Stacks Project.
 
-**`LinearMap.exists_universal_isDifferentialOperatorOfOrderLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean#L335). The attribute's comment: “Stated in the universal-object form of the paragraph following the lemma: the isomorphism `Diffᵏ_{S/R}(M, N) = Hom_S(Pᵏ_{S/R}(M), N)` is the map `α ↦ α ∘ D_univ`, so the universal operator is pinned and functoriality in `N` is automatic. See the module docstring.”. References: EGA IV (16.8.3), “affine case”; SGA 6 II (AppII.1.2.3), “affine (module) case”; SGA 6 II (AppII.1.2.2), “affine case”.
+**`LinearMap.exists_universal_isDifferentialOperatorOfOrderLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean#L335). The attribute's comment: “Stated in the universal-object form of the paragraph following the lemma: the isomorphism `Diffᵏ_{S/R}(M, N) = Hom_S(Pᵏ_{S/R}(M), N)` is the map `α ↦ α ∘ D_univ`, so the universal operator is pinned and functoriality in `N` is automatic. See the module docstring.”. References: EGA IV (16.8.3), “affine case”; SGA 6 II (AppII.1.2.3), “affine (module) case”; SGA 6 II (AppII.1.2.2), “affine case”.
 
 > **Stacks 09CK.** Let `R → S` be a ring map, let `M` be an `S`-module and let `k : ℕ`. There
 > exist an `S`-module `P` and a differential operator `D_univ : M → P` of order at most `k`
@@ -71,7 +71,7 @@ public theorem exists_universal_isDifferentialOperatorOfOrderLE (k : ℕ) :
 
 [Tag 09CL](https://stacks.math.columbia.edu/tag/09CL) in the Stacks Project.
 
-**`LinearMap.IsUniversalDifferentialOperatorOfOrderLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L387). The attribute's comment: “The source names the module `Pᵏ_{S/R}(M)` it has just constructed; defined here is the property of a pair `(P, D)` of being one, which determines it up to unique isomorphism and so applies to every construction. Existence of such a pair is Lemma 09CK. See the module docstring.”. References: SGA 6 II (AppII.1.2.2), “affine case”.
+**`LinearMap.IsUniversalDifferentialOperatorOfOrderLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L387). The attribute's comment: “The source names the module `Pᵏ_{S/R}(M)` it has just constructed; defined here is the property of a pair `(P, D)` of being one, which determines it up to unique isomorphism and so applies to every construction. Existence of such a pair is Lemma 09CK. See the module docstring.”. References: SGA 6 II (AppII.1.2.2), “affine case”.
 
 > Let `R → S` be a ring map, let `M` be an `S`-module and let `k : ℕ`. For an
 > `R`-linear map `D : M → P` into an `S`-module `P`, the property
@@ -92,7 +92,7 @@ public def IsUniversalDifferentialOperatorOfOrderLE (S : Type v) [Semiring S] [A
 
 [Tag 09CM](https://stacks.math.columbia.edu/tag/09CM) in the Stacks Project.
 
-**`diff1EquivDerProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L184). The attribute's comment: “First claim, `Diff¹(S, N) = Der_R(S, N) ⊕ N`, via `D ↦ (σ_D, D 1)`. The second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, is `isUniversalDifferentialOperatorOfOrderLE_kaehlerDProdId`.”. References: SGA 3 VIIA (1.3.1), “Dev≤1 ≃ O\_S ⊕ Der\_S”.
+**`diff1EquivDerProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 184](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L184). The attribute's comment: “First claim, `Diff¹(S, N) = Der_R(S, N) ⊕ N`, via `D ↦ (σ_D, D 1)`. The second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, is `isUniversalDifferentialOperatorOfOrderLE_kaehlerDProdId`.”. References: SGA 3 VIIA (1.3.1), “Dev≤1 ≃ O\_S ⊕ Der\_S”.
 
 > The `S`-module isomorphism `Diff¹(S, N) ≃ₗ[S] Der_R(S, N) × N` given by `D ↦ (σ_D, D 1)`, where
 > `σ_D g = D g - g · D 1`, with inverse `(σ, x) ↦ σ + λ_x`.
@@ -101,7 +101,7 @@ public def IsUniversalDifferentialOperatorOfOrderLE (S : Type v) [Semiring S] [A
 def diff1EquivDerProd : Diff1 R S N ≃ₗ[S] (Derivation R S N × N)
 ```
 
-**`isUniversalDifferentialOperatorOfOrderLE_kaehlerDProdId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L361). The attribute's comment: “Second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, in the form of Definition 09CL: the pair `(Ω[S⁄R] × S, b ↦ (d b, b))` is a module of principal parts of order `1` of `S`. The isomorphism with any other module of principal parts is `principalPartsOne_equiv_kaehler_prod`.”.
+**`isUniversalDifferentialOperatorOfOrderLE_kaehlerDProdId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 361](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L361). The attribute's comment: “Second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, in the form of Definition 09CL: the pair `(Ω[S⁄R] × S, b ↦ (d b, b))` is a module of principal parts of order `1` of `S`. The isomorphism with any other module of principal parts is `principalPartsOne_equiv_kaehler_prod`.”.
 
 > **Stacks 09CM, second claim.** Let `R → S` be a ring map. Then `Ω[S⁄R] × S`, together with
 > `b ↦ (d b, b)`, is the module of principal parts of order `1` of `S`: the map `b ↦ (d b, b)` is a
@@ -114,7 +114,7 @@ theorem isUniversalDifferentialOperatorOfOrderLE_kaehlerDProdId :
     (kaehlerDProdId R S).IsUniversalDifferentialOperatorOfOrderLE S 1
 ```
 
-**`principalPartsOne_equiv_kaehler_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L373). The attribute's comment: “Second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, as an `S`-linear isomorphism out of an arbitrary module of principal parts `(P, D)` of order `1` of `S` (Definition 09CL), matching `D` with `b ↦ (d b, b)`.”.
+**`principalPartsOne_equiv_kaehler_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 373](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L373). The attribute's comment: “Second claim, `P¹_{S/R} = Ω_{S/R} ⊕ S`, as an `S`-linear isomorphism out of an arbitrary module of principal parts `(P, D)` of order `1` of `S` (Definition 09CL), matching `D` with `b ↦ (d b, b)`.”.
 
 > **Stacks 09CM, second claim, as an isomorphism.** Let `R → S` be a ring map and let
 > `D : S → P` be a universal differential operator of order `≤ 1` on `S`, so that `P` is the module
@@ -132,7 +132,7 @@ theorem principalPartsOne_equiv_kaehler_prod {P : Type*} [AddCommGroup P] [Modul
 
 [Tag 09CN](https://stacks.math.columbia.edu/tag/09CN) in the Stacks Project.
 
-**`PrincipalPartsOne.shortExact_symbol_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalPartsSequence.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/PrincipalPartsSequence.lean#L278). The attribute's comment: “`P¹_{S/R}(M)` is `PrincipalPartsOne R S M`, the quotient of the free `S`-module on symbols `[m]` by the relations of the proof of Lemma 09CK for order `1`. The two maps of the sequence are pinned by `ι (d b ⊗ₜ m) = [b m] - b [m]` and `π [m] = m`; functoriality in `M` is stated as functoriality of `PrincipalPartsOne.map` and naturality of both maps.”. References: SGA 6 II (AppII.1.2.4), “n = 1, ring setting”.
+**`PrincipalPartsOne.shortExact_symbol_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalPartsSequence.lean, line 278](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/PrincipalPartsSequence.lean#L278). The attribute's comment: “`P¹_{S/R}(M)` is `PrincipalPartsOne R S M`, the quotient of the free `S`-module on symbols `[m]` by the relations of the proof of Lemma 09CK for order `1`. The two maps of the sequence are pinned by `ι (d b ⊗ₜ m) = [b m] - b [m]` and `π [m] = m`; functoriality in `M` is stated as functoriality of `PrincipalPartsOne.map` and naturality of both maps.”. References: SGA 6 II (AppII.1.2.4), “n = 1, ring setting”.
 
 > **Stacks 09CN.** Let `R → S` be a ring map and let `M` be an `S`-module, and let
 > `P¹_{S/R}(M)` be the module of principal parts of order `1` of `M` as constructed in the proof of
@@ -162,7 +162,7 @@ theorem shortExact_symbol_proj :
 
 [Tag 0H8Z](https://stacks.math.columbia.edu/tag/0H8Z) in the Stacks Project.
 
-**`LinearMap.IsUniversalDifferentialOperatorOfOrderLE.isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 873](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L873). The attribute's comment: “Modules of principal parts appear through the universal property of Definition 09CL rather than as chosen constructions, and both base changes in Mathlib's `IsBaseChange` form. The map of Remark 09CP is the hypothesis `hψ`, which pins it since a universal `D` generates `P` over `B`. See the module docstring.”.
+**`LinearMap.IsUniversalDifferentialOperatorOfOrderLE.isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 873](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L873). The attribute's comment: “Modules of principal parts appear through the universal property of Definition 09CL rather than as chosen constructions, and both base changes in Mathlib's `IsBaseChange` form. The map of Remark 09CP is the hypothesis `hψ`, which pins it since a universal `D` generates `P` over `B`. See the module docstring.”.
 
 > **Stacks 0H8Z.** Let `A → A'` and `A → B` be ring maps, let `B' = B ⊗_A A'`, let `M` be a
 > `B`-module and let `M' = M ⊗_A A'`, a `B'`-module, with `φ : M → M'` the canonical map. Let
@@ -197,7 +197,7 @@ public theorem isBaseChange
 
 [Tag 0H90](https://stacks.math.columbia.edu/tag/0H90) in the Stacks Project.
 
-**`LinearMap.isUniversalDifferentialOperatorOfOrderLE_diagonalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean, line 1436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean#L1436). The attribute's comment: “Stated as: the quotient `(S ⊗[R] M)/J^{k + 1}(S ⊗[R] M)`, with the map `m ↦ class of 1 ⊗ₜ m`, is a module of principal parts of order `k` (Definition 09CL), which gives the source's canonical isomorphism with `Pᵏ_{S/R}(M)` by uniqueness of a representing pair and pins the map. The `S ⊗[R] S`-action on `S ⊗[R] M` is the explicit `TensorProduct.diagonalModule`.”.
+**`LinearMap.isUniversalDifferentialOperatorOfOrderLE_diagonalQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean, line 1435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/PrincipalParts.lean#L1435). The attribute's comment: “Stated as: the quotient `(S ⊗[R] M)/J^{k + 1}(S ⊗[R] M)`, with the map `m ↦ class of 1 ⊗ₜ m`, is a module of principal parts of order `k` (Definition 09CL), which gives the source's canonical isomorphism with `Pᵏ_{S/R}(M)` by uniqueness of a representing pair and pins the map. The `S ⊗[R] S`-action on `S ⊗[R] M` is the explicit `TensorProduct.diagonalModule`.”.
 
 > **Stacks 0H90.** Let `R → S` be a ring map, let `M` be an `S`-module, let `k : ℕ` and let
 > `J = Ker(S ⊗[R] S → S)` be the kernel of the multiplication map. Make `S ⊗[R] M` a module over
@@ -222,7 +222,7 @@ public theorem isUniversalDifferentialOperatorOfOrderLE_diagonalQuotient (k : �
 
 [Tag 0G34](https://stacks.math.columbia.edu/tag/0G34) in the Stacks Project.
 
-**`deRham_isDiffOpOfOrder_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L429).
+**`deRham_isDiffOpOfOrder_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L429).
 
 > Let `A → B` be a ring map and `i ≥ 0`. The de Rham differential `d : Ωⁱ_{B/A} → Ωⁱ⁺¹_{B/A}`,
 > an additive map that is `A`-linear (`hAlin`) and satisfies
@@ -241,7 +241,7 @@ theorem deRham_isDiffOpOfOrder_one (i : ℕ)
 
 [Tag 0G35](https://stacks.math.columbia.edu/tag/0G35) in the Stacks Project.
 
-**`isDiffOpLE_succ_of_comm_isDiffOpLE_on_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L763).
+**`isDiffOpLE_succ_of_comm_isDiffOpLE_on_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Defs.lean, line 763](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/Defs.lean#L763).
 
 > Let `A → B` be a ring map, let `(g i)`
 > generate `B` as an `A`-algebra, let `M, N` be `B`-modules and `D : M →+ N` an
@@ -263,7 +263,7 @@ theorem isDiffOpLE_succ_of_comm_isDiffOpLE_on_generators
 
 [Tag 0G36](https://stacks.math.columbia.edu/tag/0G36) in the Stacks Project.
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE.existsUnique_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Localization.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/Localization.lean#L632). The attribute's comment: “Stated for abstract localizations `IsLocalization T S'`, `IsLocalizedModule T f`, `IsLocalizedModule T g` rather than for `Localization T` and `LocalizedModule T`. The order of the extension is relative to `R → S'`, as in the source's proof. `extends` is spelled as the equation `E ∘ₗ f.restrictScalars R = g.restrictScalars R ∘ₗ D`, so the source's canonical maps are pinned; the case `k = 0` is `IsLocalizedModule.lift`. See the module docstring.”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE.existsUnique_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/Localization.lean, line 632](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/Localization.lean#L632). The attribute's comment: “Stated for abstract localizations `IsLocalization T S'`, `IsLocalizedModule T f`, `IsLocalizedModule T g` rather than for `Localization T` and `LocalizedModule T`. The order of the extension is relative to `R → S'`, as in the source's proof. `extends` is spelled as the equation `E ∘ₗ f.restrictScalars R = g.restrictScalars R ∘ₗ D`, so the source's canonical maps are pinned; the case `k = 0` is `IsLocalizedModule.lift`. See the module docstring.”.
 
 > **Stacks 0G36.** Let `R → S` be a ring map, let `M` and `N` be `S`-modules and let `T ⊆ S` be
 > a multiplicative subset. A differential operator `D : M → N` of order at most `k` relative to
@@ -284,7 +284,7 @@ public theorem existsUnique_extension {k : ℕ} {D : M →ₗ[R] N}
 
 [Tag 0G37](https://stacks.math.columbia.edu/tag/0G37) in the Stacks Project.
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE.rTensorB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L355). The attribute's comment: “the operator `D ⊗ id_N` itself; `rTensorB_tmul` is its values on pure tensors, `order_rTensorB` the order bound and `eq_rTensorB` its uniqueness. The `B`-algebra structure on `A ⊗[R] B` and the actions on `M ⊗[R] N`, `M' ⊗[R] N` are hypotheses because Mathlib has no such instances; `halg`, `hsmul` and `hsmul'` pin them to the canonical ones. See the module docstring.”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE.rTensorB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 355](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L355). The attribute's comment: “the operator `D ⊗ id_N` itself; `rTensorB_tmul` is its values on pure tensors, `order_rTensorB` the order bound and `eq_rTensorB` its uniqueness. The `B`-algebra structure on `A ⊗[R] B` and the actions on `M ⊗[R] N`, `M' ⊗[R] N` are hypotheses because Mathlib has no such instances; `halg`, `hsmul` and `hsmul'` pin them to the canonical ones. See the module docstring.”.
 
 > **The operator `D ⊗ id_N`.** The tensor product of an `R`-linear map `D : M →ₗ[R] M'` with the
 > identity of a `B`-module `N`, as a `B`-linear map `M ⊗[R] N → M' ⊗[R] N`. Its underlying `R`-linear
@@ -303,7 +303,7 @@ public def rTensorB
     (D : M →ₗ[R] M') : M ⊗[R] N →ₗ[B] M' ⊗[R] N
 ```
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE.rTensorB_tmul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L367). The attribute's comment: “the values of `rTensorB` on pure tensors”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE.rTensorB_tmul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 367](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L367). The attribute's comment: “the values of `rTensorB` on pure tensors”.
 
 > `D ⊗ id_N` sends `m ⊗ n` to `D m ⊗ n`.
 
@@ -318,7 +318,7 @@ public lemma rTensorB_tmul
     rTensorB halg hsmul hsmul' D (m ⊗ₜ[R] n) = D m ⊗ₜ[R] n
 ```
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE.order_rTensorB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L381). The attribute's comment: “the order bound on `rTensorB`”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE.order_rTensorB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L381). The attribute's comment: “the order bound on `rTensorB`”.
 
 > If `D` is a differential operator of order at most `k` relative to `R → A`, then `D ⊗ id_N` is
 > one of order at most `k` relative to `B → A ⊗[R] B`.
@@ -334,7 +334,7 @@ public lemma order_rTensorB {k : ℕ} {D : M →ₗ[R] M'}
     (rTensorB halg hsmul hsmul' D).IsDifferentialOperatorOfOrderLE (A ⊗[R] B) k
 ```
 
-**`LinearMap.IsDifferentialOperatorOfOrderLE.eq_rTensorB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L394). The attribute's comment: “uniqueness of `rTensorB`”.
+**`LinearMap.IsDifferentialOperatorOfOrderLE.eq_rTensorB`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DifferentialOperator/BaseChange.lean#L394). The attribute's comment: “uniqueness of `rTensorB`”.
 
 > `D ⊗ id_N` is the only `B`-linear map `M ⊗[R] N → M' ⊗[R] N` carrying `m ⊗ n` to `D m ⊗ n`.
 
@@ -357,4 +357,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.133, Tag 09CH](https://stacks.math.columbia.edu/tag/09CH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

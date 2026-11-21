@@ -2,7 +2,7 @@
  "schema": "trough-ledger/v1",
  "library": "CSLib",
  "repo": "leanprover/cslib",
- "rev": "86d560b6cbb379bd82512424cbcd2a915a1565e7",
+ "rev": "7c95c37f952458306479b64468cb98d101ee1cf1",
  "module": "Cslib.Foundations.Relation.Basic",
  "file": "Cslib/Foundations/Relation/Basic.lean",
  "public": [
@@ -43,12 +43,11 @@
   {"name": "Relation.swap_right_le_join₂_reflTransGen", "kind": "theorem", "line": 148},
   {"name": "Relation.reflTransGen_mono_closed", "kind": "theorem", "line": 152},
   {"name": "Relation.ReflGen.symmGen_symm", "kind": "lemma", "line": 158},
-  {"name": "Relation.reflTransGen_symmGen", "kind": "theorem", "line": 162},
-  {"name": "Relation.join_inl", "kind": "theorem", "line": 165},
-  {"name": "Relation.join_inr", "kind": "theorem", "line": 169},
-  {"name": "Relation.join_inl_reflTransGen", "kind": "theorem", "line": 173},
-  {"name": "Relation.join_inr_reflTransGen", "kind": "theorem", "line": 177},
-  {"name": "Relation.acyclic_le", "kind": "theorem", "line": 180}
+  {"name": "Relation.join_inl", "kind": "theorem", "line": 164},
+  {"name": "Relation.join_inr", "kind": "theorem", "line": 168},
+  {"name": "Relation.join_inl_reflTransGen", "kind": "theorem", "line": 172},
+  {"name": "Relation.join_inr_reflTransGen", "kind": "theorem", "line": 176},
+  {"name": "Relation.acyclic_le", "kind": "theorem", "line": 179}
  ],
  "private": [],
  "missing": [],

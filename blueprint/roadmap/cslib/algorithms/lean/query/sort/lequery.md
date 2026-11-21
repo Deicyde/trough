@@ -7,12 +7,12 @@ proof: formalized
 
 # LEQuery: Comparison Queries for Sorting
 
-`Cslib.Algorithms.Lean.Query.Sort.LEQuery`, in [Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean), by Sebastian Graf, Kim Morrison, Shreyas Srinivas.
+`Cslib.Algorithms.Lean.Query.Sort.LEQuery`, in [Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean), by Sebastian Graf, Kim Morrison, Shreyas Srinivas.
 
 > `LEQuery α` is the query type for comparison-based sorting algorithms.
 > A query `LEQuery.le a b` asks whether `a ≤ b` and returns a `Bool`.
 
-`Cslib.Query.LEQuery` (inductive type, [line 23](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L23))
+`Cslib.Query.LEQuery` (inductive type, [line 23](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L23))
 
 > Comparison query: asks whether `a ≤ b`, returning a `Bool`.
 
@@ -21,7 +21,7 @@ inductive LEQuery (α : Type) : Type → Type where
   | le (a b : α) : LEQuery α Bool
 ```
 
-`Cslib.Query.LEQuery.ask` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L27))
+`Cslib.Query.LEQuery.ask` (abbreviation, [line 27](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L27))
 
 > Lift `LEQuery.le a b` into a `FreeM` that returns the comparison result.
 
@@ -29,14 +29,14 @@ inductive LEQuery (α : Type) : Type → Type where
 abbrev LEQuery.ask (a b : α) : FreeM (LEQuery α) Bool
 ```
 
-`Cslib.Query.LEQuery.eval_ask` (theorem, [line 30](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L30))
+`Cslib.Query.LEQuery.eval_ask` (theorem, [line 30](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L30))
 
 ```lean
 theorem LEQuery.eval_ask (oracle : {ι : Type} → LEQuery α ι → ι) (a b : α) :
     (LEQuery.ask a b).eval oracle = oracle (.le a b)
 ```
 
-`Cslib.Query.LEQuery.oracleOf` (definition, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L34))
+`Cslib.Query.LEQuery.oracleOf` (definition, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L34))
 
 > Build an oracle for `LEQuery α` from a binary predicate `α → α → Bool`.
 
@@ -44,14 +44,14 @@ theorem LEQuery.eval_ask (oracle : {ι : Type} → LEQuery α ι → ι) (a b : 
 def LEQuery.oracleOf (f : α → α → Bool) : {ι : Type} → LEQuery α ι → ι
 ```
 
-`Cslib.Query.LEQuery.oracleOf_le` (theorem, [line 37](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L37))
+`Cslib.Query.LEQuery.oracleOf_le` (theorem, [line 37](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L37))
 
 ```lean
 theorem LEQuery.oracleOf_le (f : α → α → Bool) (a b : α) :
     LEQuery.oracleOf f (.le a b) = f a b
 ```
 
-`Cslib.Query.LEQuery.cardResponse_eq_two` (theorem, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L41))
+`Cslib.Query.LEQuery.cardResponse_eq_two` (theorem, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L41))
 
 > Every `LEQuery α ι` has response type `ι = Bool`, of cardinality two.
 
@@ -59,7 +59,7 @@ theorem LEQuery.oracleOf_le (f : α → α → Bool) (a b : α) :
 theorem LEQuery.cardResponse_eq_two : ∀ {ι : Type}, LEQuery α ι → #ι = 2
 ```
 
-`Cslib.Query.LEQuery.cardResponse_le_two` (theorem, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L44))
+`Cslib.Query.LEQuery.cardResponse_le_two` (theorem, [line 44](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L44))
 
 ```lean
 theorem LEQuery.cardResponse_le_two {ι : Type} (op : LEQuery α ι) : #ι ≤ 2
@@ -71,5 +71,5 @@ theorem LEQuery.cardResponse_le_two {ι : Type} (op : LEQuery α ι) : #ι ≤ 2
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean)
 - [Declaration ledger](../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.LEQuery.json)

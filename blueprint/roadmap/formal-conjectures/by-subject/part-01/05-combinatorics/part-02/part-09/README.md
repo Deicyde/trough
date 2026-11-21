@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# Written on the Wall II -… to Claude's Cycles
+# Written on the Wall II -… to Written on the Wall II -…
 
+- [Written on the Wall II - Conjecture 145](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-145.md)
+- [Written on the Wall II - Conjecture 146](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-146.md)
+- [Written on the Wall II - Conjecture 172](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-172.md)
+- [Written on the Wall II - Conjecture 176](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-176.md)
+- [Written on the Wall II - Conjecture 181](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-181.md)
 - [Written on the Wall II - Conjecture 189](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-189.md)
 - [Written on the Wall II - Conjecture 194](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-194.md)
 - [Written on the Wall II - Conjecture 198a](../../../../../written-on-the-wall-ii/part-03/written-on-the-wall-ii-conjecture-198a.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [Written on the Wall II - Conjecture 327](../../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-327.md)
 - [Written on the Wall II - Conjecture 430a](../../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-430a.md)
 - [Written on the Wall II - Conjecture 438b](../../../../../written-on-the-wall-ii/part-04/written-on-the-wall-ii-conjecture-438b.md)
-- [Fanelli–Moscardelli conjecture on approximate roommates stability](../../../../../papers/part-01/fanelli-moscardelli-conjecture-on-approximate-ro.md)
-- [The Bollobás–Eldridge–Catlin conjecture on graph packing (1978)](../../../../../papers/part-01/the-bollobas-eldridge-catlin-conjecture-on-graph.md)
-- [The burning number conjecture](../../../../../papers/part-01/the-burning-number-conjecture.md)
-- [Chvátal's Conjecture](../../../../../papers/part-01/chvatals-conjecture.md)
-- [Claude's Cycles](../../../../../papers/part-01/claudes-cycles.md)

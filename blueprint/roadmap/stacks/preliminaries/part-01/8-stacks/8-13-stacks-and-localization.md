@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.13 Stacks and localization
 
-Section 8.13 of the Stacks Project, [Tag 04WT](https://stacks.math.columbia.edu/tag/04WT). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.13 of the Stacks Project, [Tag 04WT](https://stacks.math.columbia.edu/tag/04WT). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04WU, a lemma
 
 [Tag 04WU](https://stacks.math.columbia.edu/tag/04WU) in the Stacks Project.
 
-**`CategoryTheory.Over.isStack_forget_iff_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/OverIsStack.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/OverIsStack.lean#L312).
+**`CategoryTheory.Over.isStack_forget_iff_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/OverIsStack.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/OverIsStack.lean#L312).
 
 > Let `(𝒞, J)` be a site and let `U` be an object of `𝒞`. The localization `j_U : 𝒞/U ⥤ 𝒞` is a
 > stack over `𝒞` if and only if the representable presheaf `h_U` is a sheaf.
@@ -28,7 +28,7 @@ theorem isStack_forget_iff_isSheaf (J : GrothendieckTopology 𝒞) :
 
 [Tag 04WV](https://stacks.math.columbia.edu/tag/04WV) in the Stacks Project.
 
-**`CategoryTheory.Over.isStack_of_isStack_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean#L666).
+**`CategoryTheory.Over.isStack_of_isStack_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean, line 666](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean#L666).
 
 > **Construction B of Stacks 04WV, at the level of stacks, for an arbitrary site.** Let `U` be an
 > object of `𝒞` whose representable presheaf `h_U` is a sheaf, and let `p : 𝒮 ⥤ 𝒞/U` be a functor
@@ -53,7 +53,7 @@ theorem isStack_of_isStack_comp_forget (p : 𝒮 ⥤ Over U) {J : GrothendieckTo
     p.IsStack (J.over U)
 ```
 
-**`CategoryTheory.Over.basedStackEquivStackPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean, line 733](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean#L733).
+**`CategoryTheory.Over.basedStackEquivStackPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean, line 733](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/StackOfCompForget.lean#L733).
 
 > **Constructions A and B of Stacks 04WV are mutually inverse on objects**, for an arbitrary site
 > `(𝒞, J)` and an object `U` whose representable presheaf is a sheaf. A pair `(𝒯, p)` carries no
@@ -72,7 +72,7 @@ def basedStackEquivStackPair :
     BasedStack.{v₁, v₁, max u₁ v₁, max u₁ v₁} (Over U) (J.over U) ≃ StackPair U J hU
 ```
 
-**`CategoryTheory.Functor.isStack_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L249).
+**`CategoryTheory.Functor.isStack_comp_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 249](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L249).
 
 > **Construction A for stacks.** Let `U` be an object of `𝒞` whose representable presheaf `h_U`
 > is a sheaf, and let `p : 𝒮 ⥤ 𝒞/U` be a stack over the site `(𝒞/U, J.over U)`. Then
@@ -84,7 +84,7 @@ theorem isStack_comp_forget (p : 𝒳 ⥤ Over U) {J : GrothendieckTopology 𝒞
     (p ⋙ Over.forget U).IsStack J
 ```
 
-**`CategoryTheory.Over.stackConstructionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L592).
+**`CategoryTheory.Over.stackConstructionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 592](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L592).
 
 > **Construction A is bijective on 1-morphisms**, and is the identity on the underlying
 > functor.
@@ -96,7 +96,7 @@ def stackConstructionHomEquiv
       StackPairHom U J hU (stackConstructionA U J hU 𝒮) (stackConstructionA U J hU 𝒮')
 ```
 
-**`CategoryTheory.Over.stackConstructionHom₂Equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 632](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L632).
+**`CategoryTheory.Over.stackConstructionHom₂Equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean, line 632](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Localization/StacksAndLocalization.lean#L632).
 
 > **Construction A is bijective on 2-morphisms**, and is the identity on the underlying morphism
 > of functors.
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.13, Tag 04WT](https://stacks.math.columbia.edu/tag/04WT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

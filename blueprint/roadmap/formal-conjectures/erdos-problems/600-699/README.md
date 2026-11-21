@@ -2,7 +2,7 @@
 
 The Erdős problems numbered 600 to 699 that Formal Conjectures states, one article each.
 
-## [Erdős Problem 600 to Erdős Problem 628](part-01/README.md)
+## [Erdős Problem 600 to Erdős Problem 627](part-01/README.md)
 
 - [Erdős Problem 600](part-01/erdos-problem-600.md)
 - [Erdős Problem 601](part-01/erdos-problem-601.md)
@@ -21,12 +21,13 @@ The Erdős problems numbered 600 to 699 that Formal Conjectures states, one arti
 - [Erdős Problem 621](part-01/erdos-problem-621.md)
 - [Erdős Problem 623](part-01/erdos-problem-623.md)
 - [Erdős Problem 624](part-01/erdos-problem-624.md)
+- [Erdős Problem 625](part-01/erdos-problem-625.md)
 - [Erdős Problem 626](part-01/erdos-problem-626.md)
 - [Erdős Problem 627](part-01/erdos-problem-627.md)
-- [Erdős Problem 628](part-01/erdos-problem-628.md)
 
-## [Erdős Problem 629 to Erdős Problem 655](part-02/README.md)
+## [Erdős Problem 628 to Erdős Problem 654](part-02/README.md)
 
+- [Erdős Problem 628](part-02/erdos-problem-628.md)
 - [Erdős Problem 629](part-02/erdos-problem-629.md)
 - [Erdős Problem 633](part-02/erdos-problem-633.md)
 - [Erdős Problem 636](part-02/erdos-problem-636.md)
@@ -46,10 +47,10 @@ The Erdős problems numbered 600 to 699 that Formal Conjectures states, one arti
 - [Erdős Problem 652](part-02/erdos-problem-652.md)
 - [Erdős Problem 653](part-02/erdos-problem-653.md)
 - [Erdős Problem 654](part-02/erdos-problem-654.md)
-- [Erdős Problem 655](part-02/erdos-problem-655.md)
 
-## [Erdős Problem 656 to Erdős Problem 677](part-03/README.md)
+## [Erdős Problem 655 to Erdős Problem 676](part-03/README.md)
 
+- [Erdős Problem 655](part-03/erdos-problem-655.md)
 - [Erdős Problem 656](part-03/erdos-problem-656.md)
 - [Erdős Problem 657](part-03/erdos-problem-657.md)
 - [Erdős Problem 658](part-03/erdos-problem-658.md)
@@ -69,10 +70,10 @@ The Erdős problems numbered 600 to 699 that Formal Conjectures states, one arti
 - [Erdős Problem 674](part-03/erdos-problem-674.md)
 - [Erdős Problem 675](part-03/erdos-problem-675.md)
 - [Erdős Problem 676](part-03/erdos-problem-676.md)
-- [Erdős Problem 677](part-03/erdos-problem-677.md)
 
-## [Erdős Problem 678 to Erdős Problem 698](part-04/README.md)
+## [Erdős Problem 677 to Erdős Problem 697](part-04/README.md)
 
+- [Erdős Problem 677](part-04/erdos-problem-677.md)
 - [Erdős Problem 678](part-04/erdos-problem-678.md)
 - [Erdős Problem 679](part-04/erdos-problem-679.md)
 - [Erdős Problem 680](part-04/erdos-problem-680.md)
@@ -92,8 +93,8 @@ The Erdős problems numbered 600 to 699 that Formal Conjectures states, one arti
 - [Erdős Problem 695](part-04/erdos-problem-695.md)
 - [Erdős Problem 696](part-04/erdos-problem-696.md)
 - [Erdős Problem 697](part-04/erdos-problem-697.md)
-- [Erdős Problem 698](part-04/erdos-problem-698.md)
 
-## [Erdős Problem 699](part-05/README.md)
+## [Erdős Problem 698 to Erdős Problem 699](part-05/README.md)
 
+- [Erdős Problem 698](part-05/erdos-problem-698.md)
 - [Erdős Problem 699](part-05/erdos-problem-699.md)

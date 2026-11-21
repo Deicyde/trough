@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.3 Thickenings
 
-Section 106.3 of the Stacks Project, [Tag 0BPN](https://stacks.math.columbia.edu/tag/0BPN). 9 tags here are carried by 38 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.3 of the Stacks Project, [Tag 0BPN](https://stacks.math.columbia.edu/tag/0BPN). 9 tags here are carried by 38 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BPP, a definition
 
 [Tag 0BPP](https://stacks.math.columbia.edu/tag/0BPP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L82). The attribute's comment: “part (1): thickening”.
+**`AlgebraicGeometry.Stack.IsThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L82). The attribute's comment: “part (1): thickening”.
 
 > **Stacks 0BPP**, part (1). A 1-morphism of algebraic stacks over `S` *is a thickening* when it
 > is a closed immersion, in the sense of Stacks 04YL part (2), and is surjective on the underlying
@@ -28,7 +28,7 @@ Section 106.3 of the Stacks Project, [Tag 0BPN](https://stacks.math.columbia.edu
 abbrev IsThickening {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (i : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.ThickeningMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L92). The attribute's comment: “part (2): morphisms of thickenings”.
+**`AlgebraicGeometry.Stack.ThickeningMorphism`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L92). The attribute's comment: “part (2): morphisms of thickenings”.
 
 > **Stacks 0BPP**, part (2). A *morphism of thickenings* from the thickening `i` to the
 > thickening `j` of algebraic stacks over `S`: a 1-morphism of the ambient stacks, a 1-morphism of
@@ -39,7 +39,7 @@ structure ThickeningMorphism {𝒳 𝒳' 𝒴 𝒴' : AlgebraicStacks.{u, w} B S
     (i : 𝒳 ⟶ 𝒳') (j : 𝒴 ⟶ 𝒴') (_hi : IsThickening i) (_hj : IsThickening j)
 ```
 
-**`AlgebraicGeometry.Stack.ThickeningOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L105). The attribute's comment: “part (3): thickenings over a stack”.
+**`AlgebraicGeometry.Stack.ThickeningOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L105). The attribute's comment: “part (3): thickenings over a stack”.
 
 > **Stacks 0BPP**, part (3). A thickening of algebraic stacks over `S` together with a
 > 1-morphism from its ambient stack to a fixed algebraic stack `𝒵`.
@@ -48,7 +48,7 @@ structure ThickeningMorphism {𝒳 𝒳' 𝒴 𝒴' : AlgebraicStacks.{u, w} B S
 structure ThickeningOver (𝒵 : AlgebraicStacks.{u, w} B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.ThickeningMorphismOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L121). The attribute's comment: “part (3): morphisms over a stack”.
+**`AlgebraicGeometry.Stack.ThickeningMorphismOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Thickening.lean#L121). The attribute's comment: “part (3): morphisms over a stack”.
 
 > **Stacks 0BPP**, part (3). A morphism of thickenings of algebraic stacks over a fixed
 > algebraic stack `𝒵`: a morphism of the underlying thickenings whose ambient component lies over
@@ -63,7 +63,7 @@ structure ThickeningMorphismOver {𝒵 : AlgebraicStacks.{u, w} B S hS}
 
 [Tag 0CJ7](https://stacks.math.columbia.edu/tag/0CJ7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isThickening_iff_isRelativeThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L97). The attribute's comment: “equivalence of (1) and (2)”.
+**`AlgebraicGeometry.Stack.isThickening_iff_isRelativeThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 97](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L97). The attribute's comment: “equivalence of (1) and (2)”.
 
 > A 1-morphism of algebraic stacks over `S` is a thickening in the sense of **Stacks 0BPP** part
 > (1) if and only if it is representable by algebraic spaces and is a thickening in the relative sense
@@ -78,7 +78,7 @@ theorem isThickening_iff_isRelativeThickening (i : 𝒳 ⟶ 𝒳') :
     IsThickening i ↔ IsRelativeThickening B S hS i.hom
 ```
 
-**`AlgebraicGeometry.Stack.isClosedImmersion_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L110). The attribute's comment: “closed immersion”.
+**`AlgebraicGeometry.Stack.isClosedImmersion_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L110). The attribute's comment: “closed immersion”.
 
 > A thickening of algebraic stacks over `S` is a closed immersion in the sense of **Stacks 04YL**
 > part (2).
@@ -93,7 +93,7 @@ theorem isClosedImmersion_of_isThickening (hi : IsThickening i) :
     AlgebraicStacks.IsClosedImmersion B S hS i
 ```
 
-**`AlgebraicGeometry.Stack.universalHomeomorphism_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L146). The attribute's comment: “universal homeomorphism”.
+**`AlgebraicGeometry.Stack.universalHomeomorphism_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean, line 146](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningUniversalHomeomorphism.lean#L146). The attribute's comment: “universal homeomorphism”.
 
 > A thickening of algebraic stacks over `S` is a universal homeomorphism in the sense of
 > **Stacks 0CI7**: every base change of it induces a homeomorphism on the topological spaces of
@@ -115,7 +115,7 @@ theorem universalHomeomorphism_of_isThickening (hi : IsThickening i) :
 
 [Tag 0BPQ](https://stacks.math.columbia.edu/tag/0BPQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFirstOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickening.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickening.lean#L74).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFirstOrderThickening`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickening.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickening.lean#L74).
 
 > **Stacks 0BPQ.** A closed immersion `i : 𝒳 ⟶ 𝒳'` of algebraic stacks over `S` exhibits `𝒳'`
 > as a *first-order thickening* of `𝒳` when, for every scheme-valued point `U ⟶ 𝒳'` and every
@@ -132,7 +132,7 @@ abbrev IsFirstOrderThickening (i : 𝒳 ⟶ 𝒳') : Prop
 
 [Tag 0BPR](https://stacks.math.columbia.edu/tag/0BPR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isFirstOrderThickening_fst_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickeningBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickeningBaseChange.lean#L55). The attribute's comment: “first order thickening base-changes to a first order thickening”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isFirstOrderThickening_fst_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickeningBaseChange.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FirstOrderThickeningBaseChange.lean#L55). The attribute's comment: “first order thickening base-changes to a first order thickening”.
 
 > If `𝒴 ⊂ 𝒴'` is a first-order thickening of algebraic
 > stacks over `S` and `𝒳 = 𝒴 ×_{𝒴'} 𝒳'` for a 1-morphism `g : 𝒳' ⟶ 𝒴'`, then `𝒳 ⊂ 𝒳'` — the
@@ -146,7 +146,7 @@ theorem isFirstOrderThickening_fst_of_isTwoFibreProduct
     IsFirstOrderThickening B S hS P.fst
 ```
 
-**`AlgebraicGeometry.Stack.isThickening_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean#L275). The attribute's comment: “base-changed thickening”.
+**`AlgebraicGeometry.Stack.isThickening_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean, line 275](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean#L275). The attribute's comment: “base-changed thickening”.
 
 > **Stacks 0BPR.** Let `i : 𝒴 ⟶ 𝒴'` be a thickening of algebraic stacks over `S`, let
 > `f : 𝒳' ⟶ 𝒴'` be a 1-morphism of algebraic stacks, and let `P` be a 2-fibre product of that
@@ -165,7 +165,7 @@ theorem isThickening_baseChange (i : 𝒴 ⟶ 𝒴') (f : 𝒳' ⟶ 𝒴')
     IsThickening P.snd
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeThickeningMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean#L289). The attribute's comment: “morphism of thickenings”.
+**`AlgebraicGeometry.Stack.baseChangeThickeningMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningBaseChange.lean#L289). The attribute's comment: “morphism of thickenings”.
 
 > **Stacks 0BPR.** A 2-fibre product square of a thickening `i : 𝒴 ⟶ 𝒴'` of algebraic stacks
 > along a 1-morphism `f : 𝒳' ⟶ 𝒴'` *is* a morphism of thickenings from the base-changed thickening
@@ -184,7 +184,7 @@ def baseChangeThickeningMorphism (i : 𝒴 ⟶ 𝒴') (f : 𝒳' ⟶ 𝒴')
 
 [Tag 0BPS](https://stacks.math.columbia.edu/tag/0BPS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningComposition.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningComposition.lean#L75). The attribute's comment: “the composite of two thickenings is a thickening”.
+**`AlgebraicGeometry.Stack.isThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningComposition.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningComposition.lean#L75). The attribute's comment: “the composite of two thickenings is a thickening”.
 
 > **Stacks 0BPS.** A composite of thickenings of algebraic stacks over `S` is a thickening:
 > the composite is a closed immersion by Stacks 0502, and it is surjective on points because each
@@ -201,7 +201,7 @@ theorem isThickening_comp
 
 [Tag 0BPT](https://stacks.math.columbia.edu/tag/0BPT) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isThickening_stackReductionInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L148). The attribute's comment: “assertion (1): an algebraic stack is a thickening of its reduction”.
+**`AlgebraicGeometry.Stack.isThickening_stackReductionInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L148). The attribute's comment: “assertion (1): an algebraic stack is a thickening of its reduction”.
 
 > **Stacks 0BPT, assertion (1).** An algebraic stack over `S` is a thickening of its reduction:
 > the inclusion of the reduction is a closed immersion and is surjective on points, which are the
@@ -215,7 +215,7 @@ theorem isThickening_stackReductionInclusion (R : StackReduction B S hS 𝒳) :
     IsThickening R.inclusion
 ```
 
-**`AlgebraicGeometry.Stack.isClosedSubstack_stackReductionEssImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L180). The attribute's comment: “assertion (1), substack form: the reduction is a closed substack with every point”.
+**`AlgebraicGeometry.Stack.isClosedSubstack_stackReductionEssImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L180). The attribute's comment: “assertion (1), substack form: the reduction is a closed substack with every point”.
 
 > **Stacks 0BPT, assertion (1), substack form.** The reduction of an algebraic stack `𝒳` over
 > `S` is realised as a closed substack of `𝒳` carrying every point of `𝒳`, which is what it means
@@ -237,7 +237,7 @@ theorem isClosedSubstack_stackReductionEssImage (R : StackReduction B S hS 𝒳)
             (CatFiberedInGroupoids.homFunctor R.inclusion.hom).essImage hP)
 ```
 
-**`AlgebraicGeometry.Stack.stackReductionOfThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L203). The attribute's comment: “assertion (2): a thickening has the same reduction as its ambient stack”.
+**`AlgebraicGeometry.Stack.stackReductionOfThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L203). The attribute's comment: “assertion (2): a thickening has the same reduction as its ambient stack”.
 
 > **Stacks 0BPT, assertion (2).** Let `𝒳 ⊆ 𝒳'` be a thickening of algebraic stacks over `S`.
 > Then the reduction of `𝒳` is a reduction of `𝒳'`, included through `𝒳`: this is the source's
@@ -255,7 +255,7 @@ def stackReductionOfThickening
     StackReduction B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isReducedStack_iff_essImage_stackReduction_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L279). The attribute's comment: “assertion (3): the reduction is the whole stack exactly when the stack is reduced”.
+**`AlgebraicGeometry.Stack.isReducedStack_iff_essImage_stackReduction_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReduction.lean#L279). The attribute's comment: “assertion (3): the reduction is the whole stack exactly when the stack is reduced”.
 
 > **Stacks 0BPT, assertion (3).** Let `R` present the reduction of an algebraic stack `𝒳` over
 > `S`. Then the closed substack of `𝒳` cut out by that reduction is all of `𝒳` exactly when `𝒳` is a
@@ -276,7 +276,7 @@ theorem isReducedStack_iff_essImage_stackReduction_eq_top (R : StackReduction B 
       IsReducedStack B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isThickening_stackReduction_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L77). The attribute's comment: “assertion (1): an algebraic stack is a thickening of its reduction”.
+**`AlgebraicGeometry.Stack.isThickening_stackReduction_inclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 77](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L77). The attribute's comment: “assertion (1): an algebraic stack is a thickening of its reduction”.
 
 > **Stacks 0BPT, assertion (1).** An algebraic stack `𝒳'` over `S` is a thickening of its
 > reduction `𝒳'_red` (**Stacks 050C**): the inclusion of the reduction is a closed immersion which
@@ -288,7 +288,7 @@ theorem isThickening_stackReduction_inclusion (𝒳' : AlgebraicStacks.{u, w} B 
     IsThickening (stackReduction 𝒳').inclusion
 ```
 
-**`AlgebraicGeometry.Stack.essImage_stackReduction_eq_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L114). The attribute's comment: “assertion (2): a thickening has the same reduction as its ambient stack”.
+**`AlgebraicGeometry.Stack.essImage_stackReduction_eq_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L114). The attribute's comment: “assertion (2): a thickening has the same reduction as its ambient stack”.
 
 > **Stacks 0BPT, assertion (2).** Let `i : 𝒳 ⟶ 𝒳'` be a thickening of algebraic stacks over
 > `S`. Then `𝒳'_red = 𝒳_red ⊆ 𝒳`: the reduction of `𝒳'` is the substack of `𝒳'` cut out by the
@@ -308,7 +308,7 @@ theorem essImage_stackReduction_eq_of_isThickening {𝒳 𝒳' : AlgebraicStacks
         (CatFiberedInGroupoids.homFunctor i.hom).essImage
 ```
 
-**`AlgebraicGeometry.Stack.essImage_stackReduction_eq_essImage_iff_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L138). The attribute's comment: “assertion (3): a thickening is the reduction of its ambient stack exactly when it is reduced”.
+**`AlgebraicGeometry.Stack.essImage_stackReduction_eq_essImage_iff_isReducedStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean, line 138](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningReductionCanonical.lean#L138). The attribute's comment: “assertion (3): a thickening is the reduction of its ambient stack exactly when it is reduced”.
 
 > **Stacks 0BPT, assertion (3).** Let `i : 𝒳 ⟶ 𝒳'` be a thickening of algebraic stacks over
 > `S`. Then `𝒳 = 𝒳'_red` — the reduction of `𝒳'` and `𝒳` cut out the same substack of `𝒳'` —
@@ -331,7 +331,7 @@ theorem essImage_stackReduction_eq_essImage_iff_isReducedStack
 
 [Tag 0BPU](https://stacks.math.columbia.edu/tag/0BPU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isThickening_diagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L456). The attribute's comment: “first assertion”.
+**`AlgebraicGeometry.Stack.isThickening_diagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 456](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L456). The attribute's comment: “first assertion”.
 
 > **Stacks 0BPU, the first assertion.** In a morphism of thickenings
 > `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`, the comparison 1-morphism
@@ -362,7 +362,7 @@ theorem isThickening_diagonalComparison
     IsThickening (diagonalComparison B S hS m)
 ```
 
-**`AlgebraicGeometry.Stack.isThickening_selfProductDiagonalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 797](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L797). The attribute's comment: “first assertion”.
+**`AlgebraicGeometry.Stack.isThickening_selfProductDiagonalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 797](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L797). The attribute's comment: “first assertion”.
 
 > **Stacks 0BPU, the first assertion, for the comparison with an explicit body.** For a morphism
 > of thickenings `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` of algebraic stacks over `S`, the canonical
@@ -397,7 +397,7 @@ theorem isThickening_selfProductDiagonalMap
     IsThickening (selfProductDiagonalMap B S hS m)
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_selfProductDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 944](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L944). The attribute's comment: “cartesian diagonal square”.
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_selfProductDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean, line 944](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonal.lean#L944). The attribute's comment: “cartesian diagonal square”.
 
 > **Stacks 0BPU, the second assertion: the diagonal square of a morphism of thickenings of
 > algebraic stacks is cartesian.** For a morphism of thickenings
@@ -462,7 +462,7 @@ def isTwoFibreProduct_selfProductDiagonalSquare :
 
 [Tag 0BPV](https://stacks.math.columbia.edu/tag/0BPV) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.thickeningMorphism_relativeDiagonal_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonalProperties.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonalProperties.lean#L99).
+**`AlgebraicGeometry.Stack.thickeningMorphism_relativeDiagonal_inner_iff_outer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonalProperties.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningDiagonalProperties.lean#L99).
 
 > **Stacks 0BPV.** Let `(f, f') : (𝒳 ⊂ 𝒳') → (𝒴 ⊂ 𝒴')` be a morphism of thickenings of
 > algebraic stacks over `S`, `f = m.inner` and `f' = m.outer`, and let `Δ : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` and
@@ -571,7 +571,7 @@ theorem thickeningMorphism_relativeDiagonal_inner_iff_outer (m : ThickeningMorph
 
 [Tag 0BPW](https://stacks.math.columbia.edu/tag/0BPW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableCFG_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningIsScheme.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningIsScheme.lean#L48). The attribute's comment: “clause (2): scheme”.
+**`AlgebraicGeometry.Stack.isRepresentableCFG_iff_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningIsScheme.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningIsScheme.lean#L48). The attribute's comment: “clause (2): scheme”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is a scheme if and only if
 > `𝒳'` is a scheme.
@@ -582,7 +582,7 @@ theorem isRepresentableCFG_iff_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThic
       Stacks.RepresentableMorphism.IsRepresentableCFG 𝒳'.val.val.p
 ```
 
-**`AlgebraicGeometry.Stack.isDMOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L429). The attribute's comment: “clause (3): DM over the base”.
+**`AlgebraicGeometry.Stack.isDMOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L429). The attribute's comment: “clause (3): DM over the base”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is DM over `S` if and only
 > if `𝒳'` is DM over `S`.
@@ -592,7 +592,7 @@ theorem isDMOver_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i) :
     IsDMOver B S hS 𝒳 ↔ IsDMOver B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L436). The attribute's comment: “clause (4): quasi-DM over the base”.
+**`AlgebraicGeometry.Stack.isQuasiDMOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L436). The attribute's comment: “clause (4): quasi-DM over the base”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is quasi-DM over `S` if
 > and only if `𝒳'` is quasi-DM over `S`.
@@ -602,7 +602,7 @@ theorem isQuasiDMOver_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i
     IsQuasiDMOver B S hS 𝒳 ↔ IsQuasiDMOver B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isDMAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L445). The attribute's comment: “clause (3): DM, the absolute axiom of Stacks 050D part (5)”.
+**`AlgebraicGeometry.Stack.isDMAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 445](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L445). The attribute's comment: “clause (3): DM, the absolute axiom of Stacks 050D part (5)”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is Deligne–Mumford if and
 > only if `𝒳'` is Deligne–Mumford, in the absolute sense of `AlgebraicGeometry.Stack.IsDMAbs`.
@@ -612,7 +612,7 @@ theorem isDMAbs_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i) :
     IsDMAbs.{u, w, w'} B S hS 𝒳 ↔ IsDMAbs.{u, w, w'} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L454). The attribute's comment: “clause (4): quasi-DM, the absolute axiom of Stacks 050D part (6)”.
+**`AlgebraicGeometry.Stack.isQuasiDMAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 454](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L454). The attribute's comment: “clause (4): quasi-DM, the absolute axiom of Stacks 050D part (6)”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is quasi-DM if and only
 > if `𝒳'` is quasi-DM, in the absolute sense of `AlgebraicGeometry.Stack.IsQuasiDMAbs`.
@@ -622,7 +622,7 @@ theorem isQuasiDMAbs_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i)
     IsQuasiDMAbs.{u, w, w'} B S hS 𝒳 ↔ IsQuasiDMAbs.{u, w, w'} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 463](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L463). The attribute's comment: “clause (1): algebraic space, the whole equivalence”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean, line 463](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningQuasiDMDeligneMumford.lean#L463). The attribute's comment: “clause (1): algebraic space, the whole equivalence”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S`, then `𝒳` is an algebraic space if
 > and only if `𝒳'` is an algebraic space.
@@ -634,7 +634,7 @@ theorem isRepresentableByAlgebraicSpace_iff_isThickening (i : 𝒳 ⟶ 𝒳')
       IsRepresentableByAlgebraicSpace B S hS 𝒳'.val
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean#L122). The attribute's comment: “clause (5): separated, the absolute axiom of Stacks 050D part (7)”.
+**`AlgebraicGeometry.Stack.isSeparatedAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean, line 122](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean#L122). The attribute's comment: “clause (5): separated, the absolute axiom of Stacks 050D part (7)”.
 
 > **Stacks 0BPW, clause (5).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S` then
 > `𝒳` is separated if and only if `𝒳'` is — the absolute axiom, part (7) of **Stacks 050D**.
@@ -649,7 +649,7 @@ theorem isSeparatedAbs_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening 
     IsSeparatedAbs.{u, w, w'} B S hS 𝒳 ↔ IsSeparatedAbs.{u, w, w'} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparatedAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean#L136). The attribute's comment: “clause (6): quasi-separated, the absolute axiom of Stacks 050D part (8)”.
+**`AlgebraicGeometry.Stack.isQuasiSeparatedAbs_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAbsolute.lean#L136). The attribute's comment: “clause (6): quasi-separated, the absolute axiom of Stacks 050D part (8)”.
 
 > **Stacks 0BPW, clause (6).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S` then
 > `𝒳` is quasi-separated if and only if `𝒳'` is — the absolute axiom, part (8) of
@@ -663,7 +663,7 @@ theorem isQuasiSeparatedAbs_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThicke
     IsQuasiSeparatedAbs.{u, w, w'} B S hS 𝒳 ↔ IsQuasiSeparatedAbs.{u, w, w'} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L471). The attribute's comment: “clause (1): algebraic space -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace\_iff\_isThickening”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 471](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L471). The attribute's comment: “clause (1): algebraic space -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace\_iff\_isThickening”.
 
 > **Stacks 0BPW, clause (1), from the ambient stack to the closed substack.** If `𝒳 ⊂ 𝒳'` is a
 > thickening of algebraic stacks over `S` and `𝒳'` is an algebraic space, then so is `𝒳`.
@@ -680,7 +680,7 @@ theorem isRepresentableByAlgebraicSpace_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi
     IsRepresentableByAlgebraicSpace B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.isDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L495). The attribute's comment: “clause (3): DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isDMOver\_iff\_isThickening”.
+**`AlgebraicGeometry.Stack.isDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L495). The attribute's comment: “clause (3): DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isDMOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (3).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks
 > over `S` and `𝒳'` is DM over `S`, then so is `𝒳`.
@@ -701,7 +701,7 @@ theorem isDMOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i)
     (h : IsDMOver B S hS 𝒳') : IsDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L510). The attribute's comment: “clause (4): quasi-DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiDMOver\_iff\_isThickening”.
+**`AlgebraicGeometry.Stack.isQuasiDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 510](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L510). The attribute's comment: “clause (4): quasi-DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiDMOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (4).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks
 > over `S` and `𝒳'` is quasi-DM over `S`, then so is `𝒳`. The companion of
@@ -717,7 +717,7 @@ theorem isQuasiDMOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i)
     (h : IsQuasiDMOver B S hS 𝒳') : IsQuasiDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L525). The attribute's comment: “clause (5): separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isSeparatedOver\_iff\_isThickening”.
+**`AlgebraicGeometry.Stack.isSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 525](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L525). The attribute's comment: “clause (5): separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isSeparatedOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (5).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over
 > `S` and `𝒳'` is separated over `S`, then so is `𝒳`. The companion of
@@ -733,7 +733,7 @@ theorem isSeparatedOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening 
     (h : IsSeparatedOver B S hS 𝒳') : IsSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L540). The attribute's comment: “clause (6): quasi-separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiSeparatedOver\_iff\_isThickening”.
+**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 540](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L540). The attribute's comment: “clause (6): quasi-separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiSeparatedOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (6).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over
 > `S` and `𝒳'` is quasi-separated over `S`, then so is `𝒳`. The companion of
@@ -749,7 +749,7 @@ theorem isQuasiSeparatedOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThicke
     (h : IsQuasiSeparatedOver B S hS 𝒳') : IsQuasiSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean#L424). The attribute's comment: “clause (6): quasi-separated over the base”.
+**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean#L424). The attribute's comment: “clause (6): quasi-separated over the base”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S` then `𝒳` is quasi-separated over `S`
 > if and only if `𝒳'` is. Here quasi-separatedness over `S` is part (4) of **Stacks 050D**.
@@ -759,7 +759,7 @@ theorem isQuasiSeparatedOver_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThick
     IsQuasiSeparatedOver B S hS 𝒳 ↔ IsQuasiSeparatedOver B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean#L432). The attribute's comment: “clause (5): separated over the base”.
+**`AlgebraicGeometry.Stack.isSeparatedOver_iff_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean, line 432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationConverse.lean#L432). The attribute's comment: “clause (5): separated over the base”.
 
 > If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over `S` then `𝒳` is separated over `S` if and
 > only if `𝒳'` is. Here separatedness over `S` is part (3) of **Stacks 050D**.
@@ -776,4 +776,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.3, Tag 0BPN](https://stacks.math.columbia.edu/tag/0BPN)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

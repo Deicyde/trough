@@ -1,6 +1,6 @@
 # Calculus
 
-The folder [Physlib/Mathematics/Calculus/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus): 8 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/Mathematics/Calculus/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus): 8 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [Adjoint Fréchet derivative](adjfderiv.md)
 - [Divergence](divergence.md)
@@ -8,7 +8,7 @@ The folder [Physlib/Mathematics/Calculus/](https://github.com/leanprover-communi
 - [Parametric Integration](parametricintegration.md)
 - [Partial derivatives on products](partialderivatives.md)
 
-Modules in [Wirtinger/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Calculus/Wirtinger):
+Modules in [Wirtinger/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Calculus/Wirtinger):
 
 - [Wirtinger calculus](wirtinger-basic.md)
 - [Partial Wirtinger derivatives `∂_I`, `∂̄_I` in a complex coordinate basis on `ℂ^n`](wirtinger-coordinate.md)

@@ -7,7 +7,7 @@ proof: formalized
 
 # Myhill-Nerode Theorem
 
-`Cslib.Computability.Languages.MyhillNerode`, in [Cslib/Computability/Languages/MyhillNerode.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean), by Akhilesh Balaji, Ching-Tsun Chou.
+`Cslib.Computability.Languages.MyhillNerode`, in [Cslib/Computability/Languages/MyhillNerode.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean), by Akhilesh Balaji, Ching-Tsun Chou.
 
 > Let `l` be a language on an alphabet `α`. The Nerode congruence (referred to as `c_l`
 > in comments below) of a language `l` is a right congruence on strings where two strings are
@@ -34,7 +34,7 @@ proof: formalized
 >    and Implications*][Malkin2024]
 > * [Wikipedia contributors, Myhill–Nerode theorem][WikipediaMyhillNerode2026]
 
-`Language.NerodeCongruence` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L53))
+`Language.NerodeCongruence` (definition, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L53))
 
 > The Nerode congruence (henceforth called `c_l`) of a language `l` is a right congruence on
 > strings where two strings are related iff all their right extensions are either both in the language
@@ -44,7 +44,7 @@ proof: formalized
 def NerodeCongruence (l : Language α) : RightCongruence α
 ```
 
-`Language.NerodeQuotient` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L61))
+`Language.NerodeQuotient` (abbreviation, [line 61](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L61))
 
 > The quotient type of a Nerode congruence.
 
@@ -52,7 +52,7 @@ def NerodeCongruence (l : Language α) : RightCongruence α
 abbrev NerodeQuotient (l : Language α)
 ```
 
-`Language.NerodeCongruenceDA` (definition, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L67))
+`Language.NerodeCongruenceDA` (definition, [line 67](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L67))
 
 > The Nerode congruence of a language `l` gives rise to a DFA where each state corresponds to an
 > equivalence class of the language under the Nerode congruence. Note that this is simply the DFA
@@ -63,7 +63,7 @@ abbrev NerodeQuotient (l : Language α)
 def NerodeCongruenceDA (l : Language α) : DA.FinAcc (l.NerodeQuotient) α
 ```
 
-`Language.nerodeCongruenceDA_language_eq` (theorem, [line 74](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L74))
+`Language.nerodeCongruenceDA_language_eq` (theorem, [line 74](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L74))
 
 > The DFA constructed from the Nerode congruence `c_l` on `l` accepts `l`.
 
@@ -72,7 +72,7 @@ theorem nerodeCongruenceDA_language_eq (l : Language α) :
     language (l.NerodeCongruenceDA) = l
 ```
 
-`Language.da_nerodeCongruence_iff` (theorem, [line 89](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L89))
+`Language.da_nerodeCongruence_iff` (theorem, [line 89](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L89))
 
 > The statement (two strings are related by the Nerode congruence `c_l` on `l` iff all their right
 > extensions are either both in the language or both not in it) is equivalent to stating that (all
@@ -84,7 +84,7 @@ theorem da_nerodeCongruence_iff {State : Type*} (M : DA.FinAcc State α) (x y : 
     ∀ z, M.mtr (M.mtr M.start x) z ∈ M.accept ↔ M.mtr (M.mtr M.start y) z ∈ M.accept
 ```
 
-`Language.IsRegular.finite_nerodeQuotient` (theorem, [line 96](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L96))
+`Language.IsRegular.finite_nerodeQuotient` (theorem, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L96))
 
 > If `l` is regular then the Nerode congruence on `l` has finitely many equivalence classes.
 
@@ -93,7 +93,7 @@ theorem IsRegular.finite_nerodeQuotient (h : l.IsRegular) :
     Finite (l.NerodeQuotient)
 ```
 
-`Language.IsRegular.iff_finite_nerodeQuotient` (theorem, [line 113](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L113))
+`Language.IsRegular.iff_finite_nerodeQuotient` (theorem, [line 113](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L113))
 
 > `l` is regular iff the Nerode congruence on `l` has finitely many equivalence classes.
 
@@ -102,7 +102,7 @@ theorem IsRegular.iff_finite_nerodeQuotient {l : Language α} :
     l.IsRegular ↔ Finite (l.NerodeQuotient)
 ```
 
-`Language.dfa_num_state_ge` (theorem, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L125))
+`Language.dfa_num_state_ge` (theorem, [line 125](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L125))
 
 > Given a set of strings all distinguishable by `l` (i.e., not related to each other by the Nerode
 > congruence on `l`), the number of states in the DFA accepting `l` is at least the number of strings
@@ -116,7 +116,7 @@ theorem dfa_num_state_ge
     Nat.card ws ≤ Nat.card State
 ```
 
-`Language.dfa_num_state_min` (theorem, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L146))
+`Language.dfa_num_state_min` (theorem, [line 146](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L146))
 
 > All DFAs accepting `l` must have at least as many states as the number of equivalence classes
 > of the Nerode congruence on `l`.
@@ -126,7 +126,7 @@ theorem dfa_num_state_min {State : Type} {M : DA.FinAcc State α} [Finite State]
     Nat.card (language M).NerodeQuotient ≤ Nat.card State
 ```
 
-`Cslib.Automata.DA.FinAcc.IsMinimalAutomaton` (definition, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L168))
+`Cslib.Automata.DA.FinAcc.IsMinimalAutomaton` (definition, [line 168](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L168))
 
 > The minimal DFA accepting `l` has the same number of states as the number of equivalence classes
 > of the Nerode congruence on `l`.
@@ -135,7 +135,7 @@ theorem dfa_num_state_min {State : Type} {M : DA.FinAcc State α} [Finite State]
 def IsMinimalAutomaton {State : Type*} (M : FinAcc State α) (l : Language α)
 ```
 
-`Cslib.Automata.DA.FinAcc.StateCongruence` (definition, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L174))
+`Cslib.Automata.DA.FinAcc.StateCongruence` (definition, [line 174](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L174))
 
 > Given a DFA `M`, two strings are related iff they reach the same state under when run through
 > `M`. The Nerode congruence is the state congruence with respect to the minimal DFA accepting `l`.
@@ -144,7 +144,7 @@ def IsMinimalAutomaton {State : Type*} (M : FinAcc State α) (l : Language α)
 def StateCongruence (M : FinAcc State α) : RightCongruence α
 ```
 
-`Cslib.Automata.DA.FinAcc.stateCongruence_le_nerodeCongruence` (theorem, [line 184](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L184))
+`Cslib.Automata.DA.FinAcc.stateCongruence_le_nerodeCongruence` (theorem, [line 184](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L184))
 
 > The Nerode congruence is the most coarse state congruence given a language.
 
@@ -153,7 +153,7 @@ theorem stateCongruence_le_nerodeCongruence {x y : List α}
     (h : (StateCongruence M).r x y) : ((language M).NerodeCongruence).r x y
 ```
 
-`Cslib.Automata.DA.FinAcc.unique_minimal` (theorem, [line 192](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean#L192))
+`Cslib.Automata.DA.FinAcc.unique_minimal` (theorem, [line 192](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean#L192))
 
 > The minimal DFA `M` accepting the language `l` is unique up to unique isomorphism.
 
@@ -173,5 +173,5 @@ theorem unique_minimal [Finite State]
 
 ## Sources
 
-- [Cslib/Computability/Languages/MyhillNerode.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/MyhillNerode.lean)
+- [Cslib/Computability/Languages/MyhillNerode.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Languages/MyhillNerode.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Computability.Languages.MyhillNerode.json)

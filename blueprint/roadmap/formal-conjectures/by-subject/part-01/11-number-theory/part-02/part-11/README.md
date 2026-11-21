@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Sum of next $n$ primes to Maximum exponent in the prime…
+# Catalan-Mersenne numbers to Nearest integer to $n/\sqrt{2}$
 
+- [Catalan-Mersenne numbers](../../../../../oeis/part-02/catalan-mersenne-numbers.md)
+- [Wolstenholme numbers](../../../../../oeis/part-02/wolstenholme-numbers.md)
 - [Sum of next $n$ primes](../../../../../oeis/part-02/sum-of-next-n-primes.md)
 - [Least prime $\ge n$](../../../../../oeis/part-02/least-prime-ge-n.md)
 - [Prime numbers at the beginning of the 20th century](../../../../../oeis/part-02/prime-numbers-at-the-beginning-of-the-20th-centu.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Denominators of coefficients in Stirling's expansion for $\log(\Gamma(z))$](../../../../../oeis/part-03/denominators-of-coefficients-in-stirlings-expans.md)
 - [$a(n) = \sum_{k=1}^n (k^2 \bmod n)$](../../../../../oeis/part-03/a-n-sum-k-1-n-k-2-bmod-n.md)
 - [Nearest integer to $n/\sqrt{2}$](../../../../../oeis/part-03/nearest-integer-to-n-sqrt-2.md)
-- [Asymptotics of subsets of $\{1, 2, \dots, n\}$ with integer average](../../../../../oeis/part-03/asymptotics-of-subsets-of-1-2-dots-n-with-intege.md)
-- [Maximum exponent in the prime factorization of $n$](../../../../../oeis/part-03/maximum-exponent-in-the-prime-factorization-of-n.md)

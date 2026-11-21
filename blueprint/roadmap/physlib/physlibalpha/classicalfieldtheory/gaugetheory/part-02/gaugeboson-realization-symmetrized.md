@@ -8,7 +8,7 @@ proof: formalized
 
 # The symmetrized derivatives of a gauge field and the classification of invariants
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.Symmetrized`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean): 68 declarations, 58 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.Symmetrized`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean): 68 declarations, 58 with a docstring.
 
 ## i. Overview
 
@@ -60,7 +60,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization
 
 ## A. The symmetrized derivative symbols
 
-**`GaugeAlgebraRealization.symmetrizedDeriv`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L105).
+**`GaugeAlgebraRealization.symmetrizedDeriv`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L105).
 
 > The symmetrized derivative symbol `sym(∂_s A)^φ`: the average over the directions
 > `μ ∈ s` of the symbols `∂_{s−μ} A_μ^φ`, so that the direction of the gauge field is
@@ -72,7 +72,7 @@ noncomputable def symmetrizedDeriv (s : Multiset (Fin 1 ⊕ Fin 3))
     (φ : Module.Dual ℝ 𝔤) : B
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDeriv_singleton`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L112).
+**`GaugeAlgebraRealization.symmetrizedDeriv_singleton`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L112).
 
 ```lean
 lemma symmetrizedDeriv_singleton (μ : Fin 1 ⊕ Fin 3)
@@ -80,7 +80,7 @@ lemma symmetrizedDeriv_singleton (μ : Fin 1 ⊕ Fin 3)
     (φ : Module.Dual ℝ 𝔤) : symmetrizedDeriv ({μ}) A φ = A 0 μ φ
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDeriv_empty`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L119).
+**`GaugeAlgebraRealization.symmetrizedDeriv_empty`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L119).
 
 ```lean
 lemma symmetrizedDeriv_empty
@@ -88,7 +88,7 @@ lemma symmetrizedDeriv_empty
     (φ : Module.Dual ℝ 𝔤) : symmetrizedDeriv 0 A φ = 0
 ```
 
-**`GaugeAlgebraRealization.deriv_sub_symmetrizedDeriv_eq_sum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L127).
+**`GaugeAlgebraRealization.deriv_sub_symmetrizedDeriv_eq_sum`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L127).
 
 > The symmetrization defect of a symbol: the average of its differences with the symbols
 > in which one derivative direction has been exchanged with the field direction.
@@ -101,7 +101,7 @@ lemma deriv_sub_symmetrizedDeriv_eq_sum (s : Multiset (Fin 1 ⊕ Fin 3))
       ((1/(s.card + 1 : ℝ)) • ((s.map fun ν => A s μ φ - A (μ ::ₘ s - {ν}) ν φ).sum))
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDerivₗ`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L140).
+**`GaugeAlgebraRealization.symmetrizedDerivₗ`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L140).
 
 > The symmetrized symbols are linear in the dual index.
 
@@ -111,7 +111,7 @@ noncomputable def symmetrizedDerivₗ (s : Multiset (Fin 1 ⊕ Fin 3))
     Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDeriv_eq_sum_coord`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L155).
+**`GaugeAlgebraRealization.symmetrizedDeriv_eq_sum_coord`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L155).
 
 > The expansion of a symmetrized symbol in a basis of the gauge algebra.
 
@@ -127,7 +127,7 @@ lemma symmetrizedDeriv_eq_sum_coord {ι : Type} [Fintype ι] (bv : Module.Basis 
 > symbols `∂_p A_μ`, the symmetrized symbols `sym(∂_r A)`, and the covariant derivatives
 > `𝒟_l F` of the field strength, each filtered by the number of derivatives.
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L183).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint`**, a def, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L183).
 
 > The iterated covariant derivative `𝒟_l F` of an adjoint family of derivative
 > symbols along a *list* of directions: covariant derivatives do not commute (their
@@ -143,7 +143,7 @@ noncomputable def iteratedCovDerivAdjoint
       Multiset (Fin 1 ⊕ Fin 3) → Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_map`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L192).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_map`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L192).
 
 > The iterated covariant derivative is natural in the algebra.
 
@@ -156,7 +156,7 @@ lemma iteratedCovDerivAdjoint_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCom
       fun p => Φ ∘ₗ iteratedCovDerivAdjoint A l F p
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_map`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L209).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_map`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L209).
 
 > The covariant tower of the field strength is natural in the algebra: the tower of the
 > image family is the image of the tower.
@@ -172,7 +172,7 @@ lemma iteratedCovDerivAdjoint_fieldStrength_map {B' : Type} [Ring B'] [Module �
       = Φ (iteratedCovDerivAdjoint A l (fieldStrength A μ ν) 0 φ)
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_apply_of_map_lie`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L225).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_apply_of_map_lie`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L225).
 
 > At a dual vector vanishing on every bracket, such as the coordinate of an abelian factor,
 > the iterated covariant derivative is the ordinary derivative along the multiset of its
@@ -187,7 +187,7 @@ lemma iteratedCovDerivAdjoint_apply_of_map_lie {φ : Module.Dual ℝ 𝔤}
     iteratedCovDerivAdjoint A l F s φ = F (↑l + s) φ
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_apply_perm_of_map_lie`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L239).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_apply_perm_of_map_lie`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L239).
 
 > Hence at such a dual vector the covariant derivatives commute: the iterated covariant
 > derivative depends only on the multiset of its directions.
@@ -201,7 +201,7 @@ lemma iteratedCovDerivAdjoint_apply_perm_of_map_lie {φ : Module.Dual ℝ 𝔤}
     iteratedCovDerivAdjoint A l F s φ = iteratedCovDerivAdjoint A l' F s φ
 ```
 
-**`GaugeAlgebraRealization.symbolsLE`**, an abbrev, [line 250](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L250).
+**`GaugeAlgebraRealization.symbolsLE`**, an abbrev, [line 250](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L250).
 
 > The derivative symbols `∂_p A_μ^φ` with at most `n` derivatives.
 
@@ -209,7 +209,7 @@ lemma iteratedCovDerivAdjoint_apply_perm_of_map_lie {φ : Module.Dual ℝ 𝔤}
 abbrev symbolsLE (n : ℕ) : Set B
 ```
 
-**`GaugeAlgebraRealization.symbols`**, an abbrev, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L256).
+**`GaugeAlgebraRealization.symbols`**, an abbrev, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L256).
 
 > All derivative symbols `∂_p A_μ^φ`.
 
@@ -217,7 +217,7 @@ abbrev symbolsLE (n : ℕ) : Set B
 abbrev symbols : Set B
 ```
 
-**`GaugeAlgebraRealization.symSymbolsLE`**, an abbrev, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L262).
+**`GaugeAlgebraRealization.symSymbolsLE`**, an abbrev, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L262).
 
 > The symmetrized symbols `sym(∂_r A)^φ` with at least one and at most `n` derivatives.
 
@@ -225,7 +225,7 @@ abbrev symbols : Set B
 abbrev symSymbolsLE (n : ℕ) : Set B
 ```
 
-**`GaugeAlgebraRealization.towerLT`**, an abbrev, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L269).
+**`GaugeAlgebraRealization.towerLT`**, an abbrev, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L269).
 
 > The covariant derivatives `𝒟_l F_{ν λ}^φ` of the field strength with fewer than `n`
 > derivatives.
@@ -234,7 +234,7 @@ abbrev symSymbolsLE (n : ℕ) : Set B
 abbrev towerLT (n : ℕ) : Set B
 ```
 
-**`GaugeAlgebraRealization.tower`**, an abbrev, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L275).
+**`GaugeAlgebraRealization.tower`**, an abbrev, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L275).
 
 > All covariant derivatives `𝒟_l F_{ν λ}^φ` of the field strength.
 
@@ -242,37 +242,37 @@ abbrev towerLT (n : ℕ) : Set B
 abbrev tower : Set B
 ```
 
-**`GaugeAlgebraRealization.symbolsLE_mono`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L280).
+**`GaugeAlgebraRealization.symbolsLE_mono`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L280).
 
 ```lean
 lemma symbolsLE_mono {n m : ℕ} (hnm : n ≤ m) : symbolsLE A n ⊆ symbolsLE A m
 ```
 
-**`GaugeAlgebraRealization.symbolsLE_subset_symbols`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L285).
+**`GaugeAlgebraRealization.symbolsLE_subset_symbols`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L285).
 
 ```lean
 lemma symbolsLE_subset_symbols (n : ℕ) : symbolsLE A n ⊆ symbols A
 ```
 
-**`GaugeAlgebraRealization.symSymbolsLE_mono`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L290).
+**`GaugeAlgebraRealization.symSymbolsLE_mono`**, a lemma, [line 290](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L290).
 
 ```lean
 lemma symSymbolsLE_mono {n m : ℕ} (hnm : n ≤ m) : symSymbolsLE A n ⊆ symSymbolsLE A m
 ```
 
-**`GaugeAlgebraRealization.towerLT_mono`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L294).
+**`GaugeAlgebraRealization.towerLT_mono`**, a lemma, [line 294](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L294).
 
 ```lean
 lemma towerLT_mono {n m : ℕ} (hnm : n ≤ m) : towerLT A n ⊆ towerLT A m
 ```
 
-**`GaugeAlgebraRealization.towerLT_subset_tower`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L298).
+**`GaugeAlgebraRealization.towerLT_subset_tower`**, a lemma, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L298).
 
 ```lean
 lemma towerLT_subset_tower (n : ℕ) : towerLT A n ⊆ tower A
 ```
 
-**`GaugeAlgebraRealization.adjoin_symbols_mono`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L313).
+**`GaugeAlgebraRealization.adjoin_symbols_mono`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L313).
 
 > Symbol subalgebras are monotone in the order bound.
 
@@ -281,7 +281,7 @@ lemma adjoin_symbols_mono {n m : ℕ} (hnm : n ≤ m) :
     Algebra.adjoin ℂ (symbolsLE A n) ≤ Algebra.adjoin ℂ (symbolsLE A m)
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDeriv_mem_adjoin_symbolsLE`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L320).
+**`GaugeAlgebraRealization.symmetrizedDeriv_mem_adjoin_symbolsLE`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L320).
 
 > A symmetrized symbol with `r` derivatives is a polynomial in the symbols with fewer
 > than `r` derivatives.
@@ -302,7 +302,7 @@ lemma symmetrizedDeriv_mem_adjoin_symbolsLE (r : Multiset (Fin 1 ⊕ Fin 3))
 > derivative of a family shifts the derivative index and adds a bracket convolution, both of
 > which stay inside the symbol subalgebras by construction.
 
-**`GaugeAlgebraRealization.bracketFam_mem_adjoin_symbols`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L345).
+**`GaugeAlgebraRealization.bracketFam_mem_adjoin_symbols`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L345).
 
 > The bracket of two component families whose components are order-`n` symbol
 > polynomials is again an order-`n` symbol polynomial, componentwise.
@@ -314,7 +314,7 @@ lemma bracketFam_mem_adjoin_symbols {n : ℕ} {f g : Module.Dual ℝ 𝔤 →ₗ
     bracketFam f g φ ∈ Algebra.adjoin ℂ (symbolsLE A n)
 ```
 
-**`GaugeAlgebraRealization.fieldStrength_mem_adjoin_symbols`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L356).
+**`GaugeAlgebraRealization.fieldStrength_mem_adjoin_symbols`**, a lemma, [line 356](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L356).
 
 > Every derivative symbol of the field strength is a symbol polynomial of order
 > one higher than the number of derivatives.
@@ -325,7 +325,7 @@ lemma fieldStrength_mem_adjoin_symbols (q : Multiset (Fin 1 ⊕ Fin 3)) (ν lam 
     fieldStrength A ν lam q φ ∈ Algebra.adjoin ℂ (symbolsLE A (q.card + 1))
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_sub_mem`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L369).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_sub_mem`**, a lemma, [line 369](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L369).
 
 > Unitriangularity of the covariant tower: the covariant and plain derivative symbols of
 > the field strength differ by a polynomial in lower-order symbols. Stated at every
@@ -340,7 +340,7 @@ lemma iteratedCovDerivAdjoint_sub_mem (l : List (Fin 1 ⊕ Fin 3)) (ν lam : Fin
       Algebra.adjoin ℂ (symbolsLE A (l.length + s.card))
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_mem_adjoin_symbols`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L412).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_mem_adjoin_symbols`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L412).
 
 > The underived covariant field-strength tower consists of polynomials in the
 > gauge-field symbols.
@@ -351,7 +351,7 @@ lemma iteratedCovDerivAdjoint_fieldStrength_mem_adjoin_symbols
     iteratedCovDerivAdjoint A l (fieldStrength A ν lam) 0 φ ∈ Algebra.adjoin ℂ (symbols A)
 ```
 
-**`GaugeAlgebraRealization.symbol_mem_symFieldAdjoin_sup`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L426).
+**`GaugeAlgebraRealization.symbol_mem_symFieldAdjoin_sup`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L426).
 
 > The inductive step of the generation theorem: every derivative symbol of order `n + 1`
 > lies in the subalgebra generated by its symmetrization, the covariant derivatives of the
@@ -364,7 +364,7 @@ lemma symbol_mem_symFieldAdjoin_sup (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1
       Algebra.adjoin ℂ (symbolsLE A (s.card - 1))
 ```
 
-**`GaugeAlgebraRealization.symbolAdjoin_eq_symFieldAdjoin`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L473).
+**`GaugeAlgebraRealization.symbolAdjoin_eq_symFieldAdjoin`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L473).
 
 > The generation theorem, by strong induction on the order: the derivative symbols of
 > order at most `n` and the symmetrized symbols together with the covariant field-strength
@@ -378,7 +378,7 @@ lemma symbolAdjoin_eq_symFieldAdjoin (n : ℕ) :
       Algebra.adjoin ℂ (symSymbolsLE A (n + 1) ∪ towerLT A n)
 ```
 
-**`GaugeAlgebraRealization.symbolAdjoin_eq_symFieldAdjoin_top`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L513).
+**`GaugeAlgebraRealization.symbolAdjoin_eq_symFieldAdjoin_top`**, a lemma, [line 513](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L513).
 
 > The generation theorem, unbounded version: the derivative symbols of all orders, and
 > the symmetrized symbols together with the full covariant field-strength tower, generate
@@ -393,7 +393,7 @@ lemma symbolAdjoin_eq_symFieldAdjoin_top :
         r ≠ 0 ∧ b = symmetrizedDeriv r A φ} ∪ tower A)
 ```
 
-**`GaugeAlgebraRealization.symbolAdjoin_union_eq_symFieldAdjoin_union`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L529).
+**`GaugeAlgebraRealization.symbolAdjoin_union_eq_symFieldAdjoin_union`**, a lemma, [line 529](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L529).
 
 > The generation theorem relativized to an arbitrary set `S` of extra generators.
 
@@ -403,7 +403,7 @@ lemma symbolAdjoin_union_eq_symFieldAdjoin_union (n : ℕ) (S : Set B) :
       Algebra.adjoin ℂ ((symSymbolsLE A (n + 1) ∪ towerLT A n) ∪ S)
 ```
 
-**`GaugeAlgebraRealization.exists_le_of_mem_adjoin_symbols_union`**, a lemma, [line 537](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L537).
+**`GaugeAlgebraRealization.exists_le_of_mem_adjoin_symbols_union`**, a lemma, [line 537](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L537).
 
 > Finite order bound: membership in the subalgebra generated by all symbols and `S`
 > uses only finitely many generators, hence symbols of some bounded order.
@@ -416,7 +416,7 @@ lemma exists_le_of_mem_adjoin_symbols_union (S : Set B) {x : B}
 
 ## D. The gauge action on the symmetrized derivatives
 
-**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L573).
+**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L573).
 
 > The gauge transformation of the symmetrized derivatives: averaging the transformation
 > law `gauge_apply_deriv` of the individual derivative symbols over the multiset `s`, the
@@ -437,7 +437,7 @@ lemma repGauge_symmetrizedDeriv
       + algebraMap ℂ B (φ (jets.evalLie (jets.symmetrizedMaurerCartanForm U⁻¹ s)))
 ```
 
-**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv_truncationKer`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L605).
+**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv_truncationKer`**, a lemma, [line 605](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L605).
 
 > The action of a pure jet on the symmetrized derivatives is through the symmetrized
 > Maurer–Cartan data: for a gauge jet `U` with identity value, the inhomogeneous shift of
@@ -455,7 +455,7 @@ lemma repGauge_symmetrizedDeriv_truncationKer
       + algebraMap ℂ B (φ (jets.symmetrizedMaurerCartanCoeff U⁻¹ ⟨s, hs⟩))
 ```
 
-**`GaugeAlgebraRealization.exists_repGauge_symmetrizedDeriv_shift`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L621).
+**`GaugeAlgebraRealization.exists_repGauge_symmetrizedDeriv_shift`**, a lemma, [line 621](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L621).
 
 > The pure jets realize arbitrary translations of the symmetrized derivative
 > coordinates: for any prescribed family `c` of gauge-algebra values there is a pure jet
@@ -474,7 +474,7 @@ lemma exists_repGauge_symmetrizedDeriv_shift [jets.Free]
           + algebraMap ℂ B (φ (c ⟨s, hs⟩))
 ```
 
-**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv_translation`**, a lemma, [line 639](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L639).
+**`GaugeAlgebraRealization.repGauge_symmetrizedDeriv_translation`**, a lemma, [line 639](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L639).
 
 > Pure translation: when all positive dual adjoint coefficients of `U⁻¹` below the order
 > of `s` vanish, the adjoint convolution in the transformation of the symmetrized symbol
@@ -492,7 +492,7 @@ lemma repGauge_symmetrizedDeriv_translation
         algebraMap ℂ B (φ (jets.symmetrizedMaurerCartanCoeff U⁻¹ ⟨s, hs⟩))
 ```
 
-**`GaugeAlgebraRealization.exists_translation_of_support`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L668).
+**`GaugeAlgebraRealization.exists_translation_of_support`**, a lemma, [line 668](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L668).
 
 > Realization of top-order translations: any coefficient family supported at exactly
 > order `N` is realized by a pure jet trivial to order `N - 1`, by freeness of the
@@ -513,7 +513,7 @@ lemma exists_translation_of_support [jets.Free] (N : ℕ)
 > central in `B`, the statement that the gauge field is bosonic. Everything built from the
 > symbols by the bracket is then central as well.
 
-**`GaugeAlgebraRealization.smul_mem_center`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L696).
+**`GaugeAlgebraRealization.smul_mem_center`**, a lemma, [line 696](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L696).
 
 > Real multiples of central elements are central.
 
@@ -522,7 +522,7 @@ lemma smul_mem_center (r : ℝ) {x : B} (hx : x ∈ Subring.center B) :
     r • x ∈ Subring.center B
 ```
 
-**`GaugeAlgebraRealization.bracketFam_mem_center`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L702).
+**`GaugeAlgebraRealization.bracketFam_mem_center`**, a lemma, [line 702](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L702).
 
 > The bracket of component families with central components is central.
 
@@ -532,7 +532,7 @@ lemma bracketFam_mem_center {f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B}
     (φ : Module.Dual ℝ 𝔤) : bracketFam f g φ ∈ Subring.center B
 ```
 
-**`GaugeAlgebraRealization.commutatorFam_mem_center`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L710).
+**`GaugeAlgebraRealization.commutatorFam_mem_center`**, a lemma, [line 710](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L710).
 
 > The derived commutator terms of central symbols are central.
 
@@ -544,7 +544,7 @@ lemma commutatorFam_mem_center
     commutatorFam A ν lam s φ ∈ Subring.center B
 ```
 
-**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_mem_center`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L722).
+**`GaugeAlgebraRealization.iteratedCovDerivAdjoint_fieldStrength_mem_center`**, a lemma, [line 722](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L722).
 
 > If the derivative symbols of the gauge field are central, so are all derivative symbols
 > of the covariant derivatives of the field strength.
@@ -558,7 +558,7 @@ lemma iteratedCovDerivAdjoint_fieldStrength_mem_center
     iteratedCovDerivAdjoint A l (fieldStrength A ν lam) s φ ∈ Subring.center B
 ```
 
-**`GaugeAlgebraRealization.symmetrizedDeriv_mem_center`**, a lemma, [line 744](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L744).
+**`GaugeAlgebraRealization.symmetrizedDeriv_mem_center`**, a lemma, [line 744](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L744).
 
 > If the derivative symbols of the gauge field are central, so are the symmetrized
 > symbols.
@@ -571,7 +571,7 @@ lemma symmetrizedDeriv_mem_center
     symmetrizedDeriv s A φ ∈ Subring.center B
 ```
 
-**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_eq_of_mem_truncationKer_zero`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L757).
+**`GaugeAlgebraRealization.TransformsInAdjoint.repGauge_eq_of_mem_truncationKer_zero`**, a lemma, [line 757](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L757).
 
 > Anything that transforms in the adjoint is invariant under the pure jets: at `s = 0`
 > the transformation law is the dual adjoint action of the base-point value `U₀⁻¹ = 1`.
@@ -583,7 +583,7 @@ lemma TransformsInAdjoint.repGauge_eq_of_mem_truncationKer_zero
     (φ : Module.Dual ℝ 𝔤) : repGauge U.1 (F 0 φ) = F 0 φ
 ```
 
-**`GaugeAlgebraRealization.transformsInAdjoint_iteratedCovDerivAdjoint`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L767).
+**`GaugeAlgebraRealization.transformsInAdjoint_iteratedCovDerivAdjoint`**, a lemma, [line 767](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L767).
 
 > Every iterated covariant derivative of the field strength is an adjoint gauge tensor:
 > the recursion of `TransformsInAdjoint.covDerivAdjoint` over the list of directions, from
@@ -596,7 +596,7 @@ lemma transformsInAdjoint_iteratedCovDerivAdjoint (l : List (Fin 1 ⊕ Fin 3))
       (iteratedCovDerivAdjoint h.A l (fieldStrength h.A ν lam))
 ```
 
-**`GaugeAlgebraRealization.repGauge_iteratedCovDerivAdjoint_fieldStrength_of_mem_truncationKer_zero`**, a lemma, [line 776](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L776).
+**`GaugeAlgebraRealization.repGauge_iteratedCovDerivAdjoint_fieldStrength_of_mem_truncationKer_zero`**, a lemma, [line 776](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L776).
 
 > The covariant derivatives of the field strength are invariant under the pure jets.
 
@@ -608,7 +608,7 @@ lemma repGauge_iteratedCovDerivAdjoint_fieldStrength_of_mem_truncationKer_zero
       iteratedCovDerivAdjoint h.A l (fieldStrength h.A ν lam) 0 φ
 ```
 
-**`GaugeAlgebraRealization.repGauge_one`**, a lemma, [line 787](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L787).
+**`GaugeAlgebraRealization.repGauge_one`**, a lemma, [line 787](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L787).
 
 > The gauge action fixes the unit, being multiplicative and invertible.
 
@@ -617,7 +617,7 @@ lemma repGauge_one (U : GJ) :
     repGauge U (1 : B) = 1
 ```
 
-**`GaugeAlgebraRealization.repGaugeRingHom`**, a def, [line 800](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L800).
+**`GaugeAlgebraRealization.repGaugeRingHom`**, a def, [line 800](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L800).
 
 > The gauge action of a jet as a ring endomorphism of the algebra of local
 > expressions.
@@ -626,7 +626,7 @@ lemma repGauge_one (U : GJ) :
 def repGaugeRingHom (U : GJ) : B →+* B
 ```
 
-**`GaugeAlgebraRealization.repGaugeRingHom_apply`**, a lemma, [line 809](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L809).
+**`GaugeAlgebraRealization.repGaugeRingHom_apply`**, a lemma, [line 809](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L809).
 
 ```lean
 lemma repGaugeRingHom_apply (U : GJ) (x : B) :
@@ -642,7 +642,7 @@ lemma repGaugeRingHom_apply (U : GJ) (x : B) :
 > proof chooses any polynomial representation and kills its top coefficient by evaluating the
 > invariance at enough shifts.
 
-**`GaugeAlgebraRealization.commute_of_mem_adjoin`**, a lemma, [line 826](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L826).
+**`GaugeAlgebraRealization.commute_of_mem_adjoin`**, a lemma, [line 826](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L826).
 
 > Commutation with a generating set extends to the generated subalgebra.
 
@@ -651,7 +651,7 @@ lemma commute_of_mem_adjoin {X : Set B} {y : B} (hX : ∀ x ∈ X, Commute x y)
     {r : B} (hr : r ∈ Algebra.adjoin ℂ X) : Commute r y
 ```
 
-**`GaugeAlgebraRealization.commute_symmetrizedDeriv_right`**, a lemma, [line 837](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L837).
+**`GaugeAlgebraRealization.commute_symmetrizedDeriv_right`**, a lemma, [line 837](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L837).
 
 > Anything commuting with all gauge-field symbols commutes with the symmetrized
 > symbols.
@@ -664,7 +664,7 @@ lemma commute_symmetrizedDeriv_right {y : B}
     Commute y (symmetrizedDeriv r A φ)
 ```
 
-**`GaugeAlgebraRealization.commute_symmetrizedDeriv`**, a lemma, [line 849](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L849).
+**`GaugeAlgebraRealization.commute_symmetrizedDeriv`**, a lemma, [line 849](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L849).
 
 > For a bosonic gauge field the symmetrized symbols commute with each other.
 
@@ -676,7 +676,7 @@ lemma commute_symmetrizedDeriv
     Commute (symmetrizedDeriv r A φ) (symmetrizedDeriv r' A φ')
 ```
 
-**`GaugeAlgebraRealization.eq_zero_of_forall_sum_smul_pow_eq_zero`**, a lemma, [line 860](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L860).
+**`GaugeAlgebraRealization.eq_zero_of_forall_sum_smul_pow_eq_zero`**, a lemma, [line 860](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L860).
 
 > A `B`-valued polynomial function of one real variable that vanishes identically
 > has vanishing coefficients: pair with real-linear functionals, which separate
@@ -688,7 +688,7 @@ lemma eq_zero_of_forall_sum_smul_pow_eq_zero {n : ℕ} {b : ℕ → B}
     ∀ m ∈ Finset.range n, b m = 0
 ```
 
-**`GaugeAlgebraRealization.exists_polynomial_rep`**, a lemma, [line 883](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L883).
+**`GaugeAlgebraRealization.exists_polynomial_rep`**, a lemma, [line 883](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L883).
 
 > Any element of the subalgebra generated by a subalgebra `R` and a single element `y`
 > commuting with `R` is a polynomial in `y` with coefficients in `R`: the subalgebra is the
@@ -700,7 +700,7 @@ lemma exists_polynomial_rep (R : Subalgebra ℂ B) (y : B) (hy : ∀ r ∈ R, Co
     ∃ (n : ℕ) (r : ℕ → B), (∀ k, r k ∈ R) ∧ x = ∑ k ∈ Finset.range n, r k * y ^ k
 ```
 
-**`GaugeAlgebraRealization.map_mul_pow_eq_sum`**, a lemma, [line 913](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L913).
+**`GaugeAlgebraRealization.map_mul_pow_eq_sum`**, a lemma, [line 913](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L913).
 
 > The binomial expansion of the translate of a single monomial `r * y ^ k` under an
 > endomorphism fixing `r` and shifting `y` by a real scalar `t`.
@@ -712,7 +712,7 @@ lemma map_mul_pow_eq_sum (Φ : B →+* B) {r y : B} (hr : Φ r = r) {t : ℝ}
       ∑ j ∈ Finset.range (k + 1), t ^ j • ((k.choose j : ℂ) • (r * y ^ (k - j)))
 ```
 
-**`GaugeAlgebraRealization.mem_of_translationInvariant_single`**, a lemma, [line 933](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L933).
+**`GaugeAlgebraRealization.mem_of_translationInvariant_single`**, a lemma, [line 933](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L933).
 
 > The single-variable extraction: an element of `R[y]` invariant under a family of ring
 > endomorphisms fixing `R` pointwise and translating `y` by arbitrary real scalars lies in
@@ -727,7 +727,7 @@ lemma mem_of_translationInvariant_single (R : Subalgebra ℂ B) (y : B)
     {x : B} (hx : x ∈ R ⊔ Algebra.adjoin ℂ {y}) (hinv : ∀ t, Φ t x = x) : x ∈ R
 ```
 
-**`GaugeAlgebraRealization.mem_of_translationInvariant`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1009).
+**`GaugeAlgebraRealization.mem_of_translationInvariant`**, a lemma, [line 1009](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1009).
 
 > The extraction theorem: if a family of ring endomorphisms fixes a subalgebra `R`
 > pointwise and translates finitely many commuting elements `y i`, each commuting with
@@ -771,7 +771,7 @@ lemma mem_of_translationInvariant {ι : Type} [Fintype ι]
 > tower and `S`. It is fixed by the pure jets trivial to order `m`, and its elements commute
 > with every symmetrized symbol.
 
-**`GaugeAlgebraRealization.repGauge_eq_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1104).
+**`GaugeAlgebraRealization.repGauge_eq_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1104).
 
 > h.A pure jet trivial to order `m` fixes every generator of order at most `m`: the
 > symmetrized symbols with at most `m` derivatives, the covariant tower and `S`.
@@ -786,7 +786,7 @@ lemma repGauge_eq_of_mem_adjoin_symSymbolsLE {U : jets.truncationKer 0}
     repGauge U.1 z = z
 ```
 
-**`GaugeAlgebraRealization.commute_symmetrizedDeriv_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1126).
+**`GaugeAlgebraRealization.commute_symmetrizedDeriv_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1126).
 
 > Every element of the order-`m` subalgebra commutes with every symmetrized symbol.
 
@@ -804,7 +804,7 @@ lemma commute_symmetrizedDeriv_of_mem_adjoin_symSymbolsLE
 > index set prescribes a shift family supported at order `m + 1`, hence a pure jet
 > translating each coordinate by the corresponding value of `t`.
 
-**`GaugeAlgebraRealization.topCoord`**, a def, [line 1155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1155).
+**`GaugeAlgebraRealization.topCoord`**, a def, [line 1155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1155).
 
 > The top-order coordinates: the symmetrized symbols of order `m + 1` in the basis
 > `bv`.
@@ -813,7 +813,7 @@ lemma commute_symmetrizedDeriv_of_mem_adjoin_symSymbolsLE
 noncomputable def topCoord : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι → B
 ```
 
-**`GaugeAlgebraRealization.shiftFamily`**, a def, [line 1159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1159).
+**`GaugeAlgebraRealization.shiftFamily`**, a def, [line 1159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1159).
 
 > The shift family supported at order `m + 1` with coordinates `t` in the basis `bv`.
 
@@ -822,7 +822,7 @@ noncomputable def shiftFamily (t : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι → ℝ) 
     {r : Multiset (Fin 1 ⊕ Fin 3) // r ≠ 0} → 𝔤
 ```
 
-**`GaugeAlgebraRealization.shiftFamily_eq_zero_of_card_ne`**, a lemma, [line 1164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1164).
+**`GaugeAlgebraRealization.shiftFamily_eq_zero_of_card_ne`**, a lemma, [line 1164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1164).
 
 ```lean
 lemma shiftFamily_eq_zero_of_card_ne (t : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι → ℝ)
@@ -830,7 +830,7 @@ lemma shiftFamily_eq_zero_of_card_ne (t : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι �
     shiftFamily m bv t r = 0
 ```
 
-**`GaugeAlgebraRealization.coord_shiftFamily`**, a lemma, [line 1170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1170).
+**`GaugeAlgebraRealization.coord_shiftFamily`**, a lemma, [line 1170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1170).
 
 ```lean
 lemma coord_shiftFamily (t : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι → ℝ)
@@ -838,7 +838,7 @@ lemma coord_shiftFamily (t : Sym (Fin 1 ⊕ Fin 3) (m + 1) × ι → ℝ)
     bv.coord j (shiftFamily m bv t ⟨ps, hp0⟩) = t (ps, j)
 ```
 
-**`GaugeAlgebraRealization.commute_topCoord_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1182).
+**`GaugeAlgebraRealization.commute_topCoord_of_mem_adjoin_symSymbolsLE`**, a lemma, [line 1182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1182).
 
 > The top-order coordinates commute with the order-`m` subalgebra.
 
@@ -848,7 +848,7 @@ lemma commute_topCoord_of_mem_adjoin_symSymbolsLE (p : Sym (Fin 1 ⊕ Fin 3) (m 
     Commute z (topCoord h.A m bv p)
 ```
 
-**`GaugeAlgebraRealization.mem_sup_adjoin_range_topCoord`**, a lemma, [line 1189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1189).
+**`GaugeAlgebraRealization.mem_sup_adjoin_range_topCoord`**, a lemma, [line 1189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1189).
 
 > An element of the order-`m + 1` subalgebra lies in the sup of the order-`m` subalgebra
 > and the subalgebra generated by the top-order coordinates.
@@ -860,7 +860,7 @@ lemma mem_sup_adjoin_range_topCoord {z : B}
       Algebra.adjoin ℂ (Set.range (topCoord h.A m bv))
 ```
 
-**`GaugeAlgebraRealization.repGauge_topCoord`**, a lemma, [line 1207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1207).
+**`GaugeAlgebraRealization.repGauge_topCoord`**, a lemma, [line 1207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1207).
 
 > The pure jet realizing the shift family `t` translates each top-order coordinate by
 > the corresponding value of `t`.
@@ -877,7 +877,7 @@ lemma repGauge_topCoord {U : jets.truncationKer 0}
 
 ### G.3. The descent
 
-**`GaugeAlgebraRealization.mem_adjoin_symSymbolsLE_of_repGauge_eq`**, a lemma, [line 1233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1233).
+**`GaugeAlgebraRealization.mem_adjoin_symSymbolsLE_of_repGauge_eq`**, a lemma, [line 1233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1233).
 
 > The descent: an element of the order-`m + 1` subalgebra fixed by all pure jets lies
 > in the order-`m` subalgebra. The pure jets realizing the shift families at order
@@ -893,7 +893,7 @@ lemma mem_adjoin_symSymbolsLE_of_repGauge_eq [jets.Free] {z : B}
 
 ### G.4. The classification
 
-**`GaugeAlgebraRealization.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 1268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1268).
+**`GaugeAlgebraRealization.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 1268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1268).
 
 > The classification of invariants: a gauge-invariant element of the subalgebra
 > generated by the gauge-field symbols and a set `S` of `truncationKer 0`-fixed
@@ -914,7 +914,7 @@ lemma invariant_mem_adjoin_fieldStrength [jets.Free] (S : Set B)
 
 ## H. The classification for the jet algebra itself
 
-**`LocalGaugeFieldAlgebra.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 1318](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1318).
+**`LocalGaugeFieldAlgebra.invariant_mem_adjoin_fieldStrength`**, a lemma, [line 1318](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean#L1318).
 
 > The classification of gauge invariants of the gauge-boson jet algebra: for a free
 > package, a gauge-invariant element of the subalgebra generated by the gauge-field symbols
@@ -944,4 +944,4 @@ lemma invariant_mem_adjoin_fieldStrength [jets.Free] (S : Set (ℂ ⊗[ℝ] Loca
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean)

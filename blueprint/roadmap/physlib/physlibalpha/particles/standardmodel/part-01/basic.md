@@ -8,7 +8,7 @@ proof: formalized
 
 # The Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.Basic`, [PhyslibAlpha/Particles/StandardModel/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean): 15 declarations (1 instance with no name), 14 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Basic`, [PhyslibAlpha/Particles/StandardModel/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean): 15 declarations (1 instance with no name), 14 with a docstring.
 
 ## i. Overview
 
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Basic`, [PhyslibAlpha/Particles
 
 ## A. The gauge group
 
-**`StandardModel.Model.gauge`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L66).
+**`StandardModel.Model.gauge`**, an abbrev, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L66).
 
 > The gauge group `SU(3) × SU(2) × U(1)`, as a list of factors.
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Basic`, [PhyslibAlpha/Particles
 abbrev gauge : List FactorSpec
 ```
 
-**`StandardModel.Model.gaugeData`**, an abbrev, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L70).
+**`StandardModel.Model.gaugeData`**, an abbrev, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L70).
 
 > The local gauge data of the Standard Model gauge group: jets of `SU(3) × SU(2) × U(1)`
 > gauge transformations with their Lie algebra of jets.
@@ -59,7 +59,7 @@ abbrev gauge : List FactorSpec
 noncomputable abbrev gaugeData
 ```
 
-**`StandardModel.Model.factors`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L73).
+**`StandardModel.Model.factors`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L73).
 
 > The factors of the gauge group, as what the rows are charged under.
 
@@ -72,7 +72,7 @@ noncomputable abbrev factors : Factors gaugeData
 > Each field is its Lorentz label and its charges in the order of the factors: the `SU(3)`
 > label, the `SU(2)` label and the hypercharge.
 
-**`StandardModel.Model.quarkDoublet`**, an abbrev, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L85).
+**`StandardModel.Model.quarkDoublet`**, an abbrev, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L85).
 
 > The quark doublet `q ∼ (3, 2)_{1}`.
 
@@ -80,7 +80,7 @@ noncomputable abbrev factors : Factors gaugeData
 abbrev quarkDoublet : MatterFieldData factors
 ```
 
-**`StandardModel.Model.leptonDoublet`**, an abbrev, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L88).
+**`StandardModel.Model.leptonDoublet`**, an abbrev, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L88).
 
 > The lepton doublet `l ∼ (1, 2)_{-3}`.
 
@@ -88,7 +88,7 @@ abbrev quarkDoublet : MatterFieldData factors
 abbrev leptonDoublet : MatterFieldData factors
 ```
 
-**`StandardModel.Model.upSinglet`**, an abbrev, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L91).
+**`StandardModel.Model.upSinglet`**, an abbrev, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L91).
 
 > The up-type quark singlet `u ∼ (3, 1)_{4}`.
 
@@ -96,7 +96,7 @@ abbrev leptonDoublet : MatterFieldData factors
 abbrev upSinglet : MatterFieldData factors
 ```
 
-**`StandardModel.Model.downSinglet`**, an abbrev, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L94).
+**`StandardModel.Model.downSinglet`**, an abbrev, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L94).
 
 > The down-type quark singlet `d ∼ (3, 1)_{-2}`.
 
@@ -104,7 +104,7 @@ abbrev upSinglet : MatterFieldData factors
 abbrev downSinglet : MatterFieldData factors
 ```
 
-**`StandardModel.Model.leptonSinglet`**, an abbrev, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L97).
+**`StandardModel.Model.leptonSinglet`**, an abbrev, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L97).
 
 > The charged-lepton singlet `e ∼ (1, 1)_{-6}`.
 
@@ -112,7 +112,7 @@ abbrev downSinglet : MatterFieldData factors
 abbrev leptonSinglet : MatterFieldData factors
 ```
 
-**`StandardModel.Model.higgs`**, an abbrev, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L100).
+**`StandardModel.Model.higgs`**, an abbrev, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L100).
 
 > The Higgs `H ∼ (1, 2)_{3}`.
 
@@ -120,7 +120,7 @@ abbrev leptonSinglet : MatterFieldData factors
 abbrev higgs : MatterFieldData factors
 ```
 
-**`StandardModel.Model.Fields`**, an inductive, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L103).
+**`StandardModel.Model.Fields`**, an inductive, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L103).
 
 > The fields of the Standard Model.
 
@@ -141,7 +141,7 @@ inductive Fields
   deriving DecidableEq, Repr
 ```
 
-**An instance with no name**, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L118).
+**An instance with no name**, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L118).
 
 ```lean
 instance : Fintype Fields
@@ -149,7 +149,7 @@ instance : Fintype Fields
 
 ## C. The field content
 
-**`StandardModel.Model.table`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L128).
+**`StandardModel.Model.table`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L128).
 
 > **The Standard Model table**: each field with its number of generations, three for the
 > fermions and one for the Higgs.
@@ -158,7 +158,7 @@ instance : Fintype Fields
 def table : FieldData factors Fields
 ```
 
-**`StandardModel.Model.fieldData`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L138).
+**`StandardModel.Model.fieldData`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L138).
 
 > **The field content of the Standard Model**: the fifteen fermionic species (five fields
 > in three generations) and the Higgs, as matter fields of `gaugeData`.
@@ -167,7 +167,7 @@ def table : FieldData factors Fields
 noncomputable def fieldData : GaugeFieldData gaugeData
 ```
 
-**`StandardModel.Model.card_fermionSpecies`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L141).
+**`StandardModel.Model.card_fermionSpecies`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L141).
 
 > The Standard Model has fifteen fermionic species.
 
@@ -175,7 +175,7 @@ noncomputable def fieldData : GaugeFieldData gaugeData
 lemma card_fermionSpecies : Fintype.card fieldData.FermionSpecies = 15
 ```
 
-**`StandardModel.Model.card_bosonSpecies`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean#L144).
+**`StandardModel.Model.card_bosonSpecies`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean#L144).
 
 > The Standard Model has one bosonic species.
 
@@ -190,4 +190,4 @@ lemma card_bosonSpecies : Fintype.card fieldData.BosonSpecies = 1
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Basic.lean)

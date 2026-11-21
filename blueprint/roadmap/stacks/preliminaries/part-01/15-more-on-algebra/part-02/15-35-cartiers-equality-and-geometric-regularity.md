@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.35 Cartier's equality and geometric regularity
 
-Section 15.35 of the Stacks Project, [Tag 07E0](https://stacks.math.columbia.edu/tag/07E0). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 15.35 of the Stacks Project, [Tag 07E0](https://stacks.math.columbia.edu/tag/07E0). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07E1, a lemma
 
 [Tag 07E1](https://stacks.math.columbia.edu/tag/07E1) in the Stacks Project.
 
-**`trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L342). References: EGA 0 (21.7.1); EGA 0 (21.7.2), “special case”.
+**`trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 342](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L342). References: EGA 0 (21.7.1); EGA 0 (21.7.2), “special case”.
 
 > **Cartier's equality.** For a finitely generated extension of fields `K/k`, the module of
 > Kähler differentials and the first homology of the naive cotangent complex are
@@ -34,7 +34,7 @@ public theorem trdeg_eq_finrank_kaehlerDifferential_sub_finrank_h1Cotangent
 
 [Tag 07E2](https://stacks.math.columbia.edu/tag/07E2) in the Stacks Project.
 
-**`jacobiZariski_exact_of_fieldExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L480).
+**`jacobiZariski_exact_of_fieldExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 480](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L480).
 
 > Let `M/L/K` be a tower of field extensions. Then the canonical Jacobi--Zariski sequence
 >
@@ -65,7 +65,7 @@ public theorem jacobiZariski_exact_of_fieldExtensions
 
 [Tag 07E3](https://stacks.math.columbia.edu/tag/07E3) in the Stacks Project.
 
-**`finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L613). References: EGA 0 (21.7.1).
+**`finrank_ker_sub_finrank_coker_kaehlerDifferential_map_sub_h1Cotangent_map_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean, line 613](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/FieldTheory/KaehlerDifferential/CartierEquality.lean#L613). References: EGA 0 (21.7.1).
 
 > Given a commutative square of fields
 > ```
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.35, Tag 07E0](https://stacks.math.columbia.edu/tag/07E0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.24 Limits and derived categories
 
-Section 75.24 of the Stacks Project, [Tag 09RG](https://stacks.math.columbia.edu/tag/09RG). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 75.24 of the Stacks Project, [Tag 09RG](https://stacks.math.columbia.edu/tag/09RG). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09RH, a situation
 
 [Tag 09RH](https://stacks.math.columbia.edu/tag/09RH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean#L53).
+**`AlgebraicGeometry.Space.DescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean, line 53](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean#L53).
 
 > **Stacks 09RH.** A directed inverse system of quasi-compact and quasi-separated algebraic
 > spaces over `S` whose transition morphisms are affine, equipped with a chosen limit cone and a
@@ -29,7 +29,7 @@ structure DescentSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contai
 
 [Tag 09RI](https://stacks.math.columbia.edu/tag/09RI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.isHomColimit_canonicalDerivedPullbackSystem_of_isPerfect_or_isPseudoCoherent_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitDerivedHomSmallEtaleTensor.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitDerivedHomSmallEtaleTensor.lean#L61). The attribute's comment: “both clauses, at the tag's own hypotheses”.
+**`AlgebraicGeometry.Space.DescentSituation.isHomColimit_canonicalDerivedPullbackSystem_of_isPerfect_or_isPseudoCoherent_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitDerivedHomSmallEtaleTensor.lean, line 61](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitDerivedHomSmallEtaleTensor.lean#L61). The attribute's comment: “both clauses, at the tag's own hypotheses”.
 
 > **Stacks 09RI.**  In Situation 09RH, let `E₀` and `K₀` be objects of `D(𝒪_{X₀})`, put
 > `E_i = Lf_{i0}^*E₀`, `K_i = Lf_{i0}^*K₀` for `i ≥ 0` and `E = Lf_0^*E₀`, `K = Lf_0^*K₀`.  If
@@ -70,7 +70,7 @@ theorem isHomColimit_canonicalDerivedPullbackSystem_of_isPerfect_or_isPseudoCohe
 
 [Tag 09RJ](https://stacks.math.columbia.edu/tag/09RJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_descendedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean#L242). The attribute's comment: “fullness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
+**`AlgebraicGeometry.Space.DescentSituation.exists_descendedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean#L242). The attribute's comment: “fullness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
 
 > **Fullness of the comparison out of the colimit, Stacks 09RJ.**  In Situation 09RH, let `E₀`
 > and `K₀` be perfect objects of `D(𝒪_{X₀})` and put `E_i = Lf_{i0}^*E₀`, `K_i = Lf_{i0}^*K₀` for
@@ -98,7 +98,7 @@ theorem exists_descendedHom
       homProjection sys E₀.obj K₀.obj i g = φ
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.eventually_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean#L270). The attribute's comment: “faithfulness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
+**`AlgebraicGeometry.Space.DescentSituation.eventually_map_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjects.lean#L270). The attribute's comment: “faithfulness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
 
 > **Faithfulness of the comparison out of the colimit, Stacks 09RJ.**  In Situation 09RH, with
 > `E₀` and `K₀` perfect objects of `D(𝒪_{X₀})` as above, two morphisms `E_i ⟶ K_i` at a stage
@@ -128,7 +128,7 @@ theorem eventually_map_eq
       homTransition sys E₀.obj K₀.obj i j h g'
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_descendedHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean#L116). The attribute's comment: “fullness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
+**`AlgebraicGeometry.Space.DescentSituation.exists_descendedHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean#L116). The attribute's comment: “fullness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
 
 > **Fullness of the comparison out of the colimit, Stacks 09RJ.**  In Situation 09RH, let `E₀`
 > and `K₀` be perfect objects of `D(𝒪_{X₀})` and put `E_i = Lf_{i0}^*E₀`, `K_i = Lf_{i0}^*K₀` for
@@ -148,7 +148,7 @@ theorem exists_descendedHom_of_isPerfect
       homProjection sys E₀.obj K₀.obj i g = φ
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.eventually_map_eq_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean#L134). The attribute's comment: “faithfulness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
+**`AlgebraicGeometry.Space.DescentSituation.eventually_map_eq_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/LimitPerfectObjectsPerfectTarget.lean#L134). The attribute's comment: “faithfulness of the comparison out of the colimit of the categories of perfect objects, which the source's proof takes from Stacks 09RI; essential surjectivity, the other half of that proof, is not included”.
 
 > **Faithfulness of the comparison out of the colimit, Stacks 09RJ.**  In Situation 09RH, with
 > `E₀` and `K₀` perfect objects of `D(𝒪_{X₀})` as above, two morphisms `E_i ⟶ K_i` at a stage
@@ -168,7 +168,7 @@ theorem eventually_map_eq_of_isPerfect
       homTransition sys E₀.obj K₀.obj i j h g'
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.perfectObjectsDescend_and_perfectHomsDescend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentOverIntegers.lean, line 960](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentOverIntegers.lean#L960). The attribute's comment: “Under the size bound `ChartsBounded` on the chart systems of the stages, which the source does not state (the sites are size-bounded models of the big fppf site).”.
+**`AlgebraicGeometry.Space.DescentSituation.perfectObjectsDescend_and_perfectHomsDescend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentOverIntegers.lean, line 960](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentOverIntegers.lean#L960). The attribute's comment: “Under the size bound `ChartsBounded` on the chart systems of the stages, which the source does not state (the sites are size-bounded models of the big fppf site).”.
 
 > **Stacks 09RJ.** In Situation 09RH (`X = lim Xᵢ` along affine transition morphisms of
 > quasi-compact quasi-separated algebraic spaces) the category of perfect objects of `D(𝒪_X)` is the
@@ -190,7 +190,7 @@ theorem perfectObjectsDescend_and_perfectHomsDescend (hb : ChartsBounded B S hS 
     D.PerfectObjectsDescend ∧ D.PerfectHomsDescend
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.perfectObjectsDescend_and_perfectHomsDescend_of_mk_lt_cof_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentUnbounded.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentUnbounded.lean#L143). The attribute's comment: “both halves, at the tag's own hypotheses”.
+**`AlgebraicGeometry.Space.DescentSituation.perfectObjectsDescend_and_perfectHomsDescend_of_mk_lt_cof_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentUnbounded.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RestrictedPerfectDescentUnbounded.lean#L143). The attribute's comment: “both halves, at the tag's own hypotheses”.
 
 > **Stacks 09RJ at the hypotheses of Situation 09RH, with no bounded-charts hypothesis.** In
 > Situation 09RH, indexed by a directed set in the universe of the site with fewer elements than
@@ -233,4 +233,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.24, Tag 09RG](https://stacks.math.columbia.edu/tag/09RG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Jacobi's formula for matrices of jets
 
-The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Jacobi`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Jacobi`, [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean): 2 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -27,7 +27,7 @@ The module `PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Jacobi`, [Physl
 
 ## A. The Leibniz rule for a finite product
 
-**`SpaceTimeAlgebra.pderiv_finset_prod`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean#L49).
+**`SpaceTimeAlgebra.pderiv_finset_prod`**, a lemma, [line 49](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean#L49).
 
 > The Leibniz rule for a finite product.
 
@@ -39,7 +39,7 @@ lemma pderiv_finset_prod {ι : Type*} [DecidableEq ι] (μ : Fin 1 ⊕ Fin 3) (s
 
 ## B. Jacobi's formula
 
-**`SpaceTimeAlgebra.jacobi`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean#L71).
+**`SpaceTimeAlgebra.jacobi`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean#L71).
 
 > **Jacobi's formula**: the derivative of a determinant is the trace of the derivative
 > against the adjugate.
@@ -56,4 +56,4 @@ lemma jacobi {κ : Type} [Fintype κ] [DecidableEq κ] (M : Matrix κ κ SpaceTi
 
 ## Sources
 
-- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean)
+- [PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean)

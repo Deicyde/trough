@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.49 When is a morphism an isomorphism?
 
-Section 76.49 of the Stacks Project, [Tag 05X7](https://stacks.math.columbia.edu/tag/05X7). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.49 of the Stacks Project, [Tag 05X7](https://stacks.math.columbia.edu/tag/05X7). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05X8, a lemma
 
 [Tag 05X8](https://stacks.math.columbia.edu/tag/05X8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_forall_factorsThrough_iff_isUnramified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L291).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_forall_factorsThrough_iff_isUnramified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 291](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L291).
 
 > **Stacks 05X8.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` whose source and
 > target are given over a third algebraic space `Z` by morphisms `p : X ⟶ Z` and `q : Y ⟶ Z` with
@@ -46,7 +46,7 @@ theorem exists_isOpenSubspace_forall_factorsThrough_iff_isUnramified_baseChange
 
 [Tag 05X9](https://stacks.math.columbia.edu/tag/05X9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isUnramified_universallyInjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L545).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isUnramified_universallyInjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 545](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L545).
 
 > **Stacks 05X9.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` whose source and
 > target are given over a third algebraic space `Z` by morphisms `p : X ⟶ Z` and `q : Y ⟶ Z` with
@@ -82,7 +82,7 @@ theorem exists_isOpenSubspace_iff_isUnramified_universallyInjective_baseChange
 
 [Tag 05XA](https://stacks.math.columbia.edu/tag/05XA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isClosedImmersion_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionLocusOnBase.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionLocusOnBase.lean#L82).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isClosedImmersion_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionLocusOnBase.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ClosedImmersionLocusOnBase.lean#L82).
 
 > **Stacks 05XA.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` whose source and
 > target are given over a third algebraic space `Z` by morphisms `p : X ⟶ Z` and `q : Y ⟶ Z` with
@@ -112,7 +112,7 @@ theorem exists_isOpenSubspace_iff_isClosedImmersion_baseChange
 
 [Tag 05XB](https://stacks.math.columbia.edu/tag/05XB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean#L131). The attribute's comment: “the open subspace of the base over which the morphism becomes flat”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean#L131). The attribute's comment: “the open subspace of the base over which the morphism becomes flat”.
 
 > **Stacks 05XB.**  Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` whose source and target are given over a third algebraic space `Z` by morphisms
@@ -144,7 +144,7 @@ theorem exists_isOpenSubspace_iff_isFlat_baseChange
 
 [Tag 05XC](https://stacks.math.columbia.edu/tag/05XC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isSurjective_isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean#L209). The attribute's comment: “the open subspace of the base over which the morphism becomes surjective and flat”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isSurjective_isFlat_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FlatLocusOnBase.lean#L209). The attribute's comment: “the open subspace of the base over which the morphism becomes surjective and flat”.
 
 > **Stacks 05XC.**  Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` whose source and target are given over a third algebraic space `Z` by morphisms
@@ -179,7 +179,7 @@ theorem exists_isOpenSubspace_iff_isSurjective_isFlat_baseChange
 
 [Tag 05XD](https://stacks.math.columbia.edu/tag/05XD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/IsomorphismLocusOnBase.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/IsomorphismLocusOnBase.lean#L125). The attribute's comment: “the open subspace of the base over which the morphism becomes an isomorphism”.
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_iff_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/IsomorphismLocusOnBase.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/IsomorphismLocusOnBase.lean#L125). The attribute's comment: “the open subspace of the base over which the morphism becomes an isomorphism”.
 
 > **Stacks 05XD.**  Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` whose source and target are given over a third algebraic space `Z` by morphisms
@@ -210,7 +210,7 @@ theorem exists_isOpenSubspace_iff_isIso_baseChange
 
 [Tag 06CE](https://stacks.math.columbia.edu/tag/06CE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.koszulLocusOnBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L153). The attribute's comment: “the open subspace of the base”.
+**`AlgebraicGeometry.Space.koszulLocusOnBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L153). The attribute's comment: “the open subspace of the base”.
 
 > **Stacks 06CE.** The open subspace `W ⊂ Z` of a morphism `f : X ⟶ Y` of algebraic spaces
 > over `S` whose source is given over `Z` by `p : X ⟶ Z`: the subspace of the base cut out by
@@ -221,7 +221,7 @@ theorem exists_isOpenSubspace_iff_isIso_baseChange
 public def koszulLocusOnBase (f : X ⟶ Y) (p : X ⟶ Z) : Subfunctor Z
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_ι_koszulLocusOnBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L160). The attribute's comment: “the point set of the open subspace of the base”.
+**`AlgebraicGeometry.Space.range_pointsMap_ι_koszulLocusOnBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L160). The attribute's comment: “the point set of the open subspace of the base”.
 
 > The point set of `W` is the complement of the image under `p` of the non-Koszul locus
 > of `f`.
@@ -233,7 +233,7 @@ public theorem range_pointsMap_ι_koszulLocusOnBase (f : X ⟶ Y) (p : X ⟶ Z) 
       (pointsMap B S hS X p '' {x : points B S hS X | KoszulAt B S hS f x}ᶜ)ᶜ
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_koszulLocusOnBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L172). The attribute's comment: “the subspace of the base is open”.
+**`AlgebraicGeometry.Space.isOpenSubspace_koszulLocusOnBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBase.lean#L172). The attribute's comment: “the subspace of the base is open”.
 
 > **Stacks 06CE.** `W` is an open subspace of `Z`.
 >
@@ -247,7 +247,7 @@ public theorem isOpenSubspace_koszulLocusOnBase (hZ : IsAlgebraicSpace B S hS Z)
     IsOpenSubspace B S hS (koszulLocusOnBase B S hS f p)
 ```
 
-**`AlgebraicGeometry.Space.factorsThrough_koszulLocusOnBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L110). The attribute's comment: “with the open subspace named rather than quantified over”.
+**`AlgebraicGeometry.Space.factorsThrough_koszulLocusOnBase_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L110). The attribute's comment: “with the open subspace named rather than quantified over”.
 
 > **Stacks 06CE, with the open subspace named.** Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` whose source and target are given over a third algebraic space `Z` by morphisms
@@ -269,7 +269,7 @@ theorem factorsThrough_koszulLocusOnBase_iff
       IsLocalCompleteIntersection B S hS (baseChangeOverBase B S hS f p q hfq g)
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_factorsThrough_iff_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L135).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_factorsThrough_iff_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean, line 135](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/KoszulLocusOnBaseUnconditional.lean#L135).
 
 > **Stacks 06CE.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` whose source and
 > target are given over a third algebraic space `Z` by morphisms `p : X ⟶ Z` and `q : Y ⟶ Z` with
@@ -301,4 +301,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.49, Tag 05X7](https://stacks.math.columbia.edu/tag/05X7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

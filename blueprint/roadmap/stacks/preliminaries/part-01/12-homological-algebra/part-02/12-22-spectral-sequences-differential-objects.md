@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.22 Spectral sequences: differential objects
 
-Section 12.22 of the Stacks Project, [Tag 011U](https://stacks.math.columbia.edu/tag/011U). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.22 of the Stacks Project, [Tag 011U](https://stacks.math.columbia.edu/tag/011U). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 011V, a definition
 
 [Tag 011V](https://stacks.math.columbia.edu/tag/011V) in the Stacks Project.
 
-**`StacksDifferentialObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L54). The attribute's comment: “object”.
+**`StacksDifferentialObject`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L54). The attribute's comment: “object”.
 
 > A differential object of a category `C` with zero morphisms is a pair
 > `(X, d)` where `X : C` and `d : X ⟶ X` satisfies `d ≫ d = 0`.
@@ -27,7 +27,7 @@ Section 12.22 of the Stacks Project, [Tag 011U](https://stacks.math.columbia.edu
 structure StacksDifferentialObject (C : Type*) [Category C] [Limits.HasZeroMorphisms C]
 ```
 
-**`StacksDifferentialObject.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L69). The attribute's comment: “morphism”.
+**`StacksDifferentialObject.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L69). The attribute's comment: “morphism”.
 
 > A morphism of differential objects: a morphism in `C` that commutes with
 > the differentials.
@@ -40,7 +40,7 @@ structure Hom (M N : StacksDifferentialObject C)
 
 [Tag 011W](https://stacks.math.columbia.edu/tag/011W) in the Stacks Project.
 
-**`stacksDifferentialObject_abelianStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L237). The attribute's comment: “structure”.
+**`stacksDifferentialObject_abelianStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L237). The attribute's comment: “structure”.
 
 > The abelian structure on the category of differential objects of an abelian category.
 
@@ -50,7 +50,7 @@ noncomputable def stacksDifferentialObject_abelianStructure
     Abelian (StacksDifferentialObject C)
 ```
 
-**`stacksDifferentialObject_abelian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L243). The attribute's comment: “nonempty”.
+**`stacksDifferentialObject_abelian`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 243](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L243). The attribute's comment: “nonempty”.
 
 ```lean
 alias stacksDifferentialObject_abelian
@@ -60,7 +60,7 @@ alias stacksDifferentialObject_abelian
 
 [Tag 011X](https://stacks.math.columbia.edu/tag/011X) in the Stacks Project.
 
-**`StacksDifferentialObject.homology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L284).
+**`StacksDifferentialObject.homology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 284](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L284).
 
 > The homology `H(A, d) = Ker(d)/Im(d)` of a differential object, as the homology of
 > `A --d--> A --d--> A`.
@@ -73,7 +73,7 @@ noncomputable abbrev homology (A : StacksDifferentialObject C) : C
 
 [Tag 011Y](https://stacks.math.columbia.edu/tag/011Y) in the Stacks Project.
 
-**`StacksDifferentialObject.ShortExactSequence.homology_exact_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/DifferentialObject.lean#L392).
+**`StacksDifferentialObject.ShortExactSequence.homology_exact_sequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialObject.lean, line 392](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/DifferentialObject.lean#L392).
 
 > For a short exact sequence `0 → (A, d) → (B, d) → (C, d) → 0` of
 > differential objects there is a connecting morphism `δ : H(C, d) ⟶ H(A, d)` making the periodic
@@ -94,7 +94,7 @@ theorem homology_exact_sequence :
 
 [Tag 011Z](https://stacks.math.columbia.edu/tag/011Z) in the Stacks Project.
 
-**`StacksDifferentialObject.spectralSequenceOfEndo`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/DifferentialObject.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/DifferentialObject.lean#L137).
+**`StacksDifferentialObject.spectralSequenceOfEndo`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/Defs/DifferentialObject.lean, line 137](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/SpectralSequence/Defs/DifferentialObject.lean#L137).
 
 > The spectral sequence `(E_r, d_r)_{r ≥ 0}` associated to a differential object `(A, d)`
 > and an injective endomorphism `α` commuting with `d`: `(E_0, d_0) = (A/αA, d)`, and for `r ≥ 1`
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.22, Tag 011U](https://stacks.math.columbia.edu/tag/011U)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

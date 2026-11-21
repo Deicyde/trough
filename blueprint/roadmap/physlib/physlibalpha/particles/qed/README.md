@@ -1,6 +1,6 @@
 # QED
 
-The folder [PhyslibAlpha/Particles/QED/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/QED): 12 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/Particles/QED/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/QED): 12 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [The jet algebras of quantum electrodynamics](basic.md)
 - [The current coupling of quantum electrodynamics](currentcoupling.md)

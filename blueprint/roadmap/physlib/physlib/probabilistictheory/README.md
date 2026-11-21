@@ -1,6 +1,6 @@
 # ProbabilisticTheory
 
-The folder [Physlib/ProbabilisticTheory/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory): 1 module, with an article; then 8 folders below it, a page each, 30 modules in all.
+The folder [Physlib/ProbabilisticTheory/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory): 1 module, with an article; then 7 folders below it, a page each, 35 modules in all.
 
 - [Probabilistic theories](basic.md)
 - [Channel](channel/README.md)
@@ -8,6 +8,5 @@ The folder [Physlib/ProbabilisticTheory/](https://github.com/leanprover-communit
 - [Effect](effect/README.md)
 - [LocalNet](localnet/README.md)
 - [OrderUnit](orderunit/README.md)
-- [StarAlgebra](staralgebra/README.md)
 - [State](state/README.md)
 - [Weight](weight/README.md)

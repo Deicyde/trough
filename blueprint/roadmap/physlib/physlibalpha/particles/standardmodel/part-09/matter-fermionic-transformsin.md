@@ -8,7 +8,7 @@ proof: formalized
 
 # The transformation law of the fermionic generators
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.TransformsIn`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.TransformsIn`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean): 4 declarations, 4 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.TransformsIn`,
 
 ### B.1. The field
 
-**`StandardModel.FermionicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofField`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L117).
+**`StandardModel.FermionicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofField`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L117).
 
 > The transformation law of the derivative generators of a matter field: a jet of gauge
 > transformations mixes `∂_s ψ_φ` with the lower generators, each splitting `s = s₁ + s₂` of
@@ -67,7 +67,7 @@ lemma repJetGaugeGroupI_iteratedJetDeriv_ofField
           (ofField (GaugeAlgebraRealization.repDualCoeff M.repJet U⁻¹ p.1 φ))).sum
 ```
 
-**`StandardModel.FermionicAlgebra.transformsIn_iteratedJetDeriv_ofField`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L137).
+**`StandardModel.FermionicAlgebra.transformsIn_iteratedJetDeriv_ofField`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L137).
 
 > The derivative generators of a matter field transform in the representation `rep`
 > carried by its jets, in the sense demanded by `LocalGaugeData.TransformsIn`.
@@ -80,7 +80,7 @@ lemma transformsIn_iteratedJetDeriv_ofField :
 
 ### B.2. The conjugate field
 
-**`StandardModel.FermionicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofConjField`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L152).
+**`StandardModel.FermionicAlgebra.repJetGaugeGroupI_iteratedJetDeriv_ofConjField`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L152).
 
 > The transformation law of the derivative generators of the conjugate matter field. It
 > is the law of the field itself for the conjugate action `JetComponentSpace.repConj M.repJet` on
@@ -99,7 +99,7 @@ lemma repJetGaugeGroupI_iteratedJetDeriv_ofConjField
               φ))).sum
 ```
 
-**`StandardModel.FermionicAlgebra.transformsIn_iteratedJetDeriv_ofConjField`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L177).
+**`StandardModel.FermionicAlgebra.transformsIn_iteratedJetDeriv_ofConjField`**, a lemma, [line 177](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean#L177).
 
 > The derivative generators of the conjugate matter field transform in the conjugate
 > representation `JetComponentSpace.repConj M.repJet`, in the sense demanded by
@@ -122,4 +122,4 @@ lemma transformsIn_iteratedJetDeriv_ofConjField :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean)

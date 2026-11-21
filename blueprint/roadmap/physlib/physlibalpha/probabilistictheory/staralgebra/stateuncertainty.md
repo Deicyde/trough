@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.AlgState.apply_selfAdjoint, ProbabilisticTheory.AlgState.fluctuation, ProbabilisticTheory.AlgState.star_fluctuation, ProbabilisticTheory.AlgState.covariance, ProbabilisticTheory.AlgState.variance, ProbabilisticTheory.AlgState.bracket, ProbabilisticTheory.AlgState.apply_fluctuation_mul, ProbabilisticTheory.AlgState.bracket_eq_im
+lean: PhyslibAlpha.ProbabilisticTheory.AlgState.apply_selfAdjoint, PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuation, PhyslibAlpha.ProbabilisticTheory.AlgState.star_fluctuation, PhyslibAlpha.ProbabilisticTheory.AlgState.covariance, PhyslibAlpha.ProbabilisticTheory.AlgState.variance, PhyslibAlpha.ProbabilisticTheory.AlgState.bracket, PhyslibAlpha.ProbabilisticTheory.AlgState.apply_fluctuation_mul, PhyslibAlpha.ProbabilisticTheory.AlgState.bracket_eq_im
 statement: formalized
 proof: formalized
 ---
 
 # Uncertainty relations for states on a `*`-algebra
 
-The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.StateUncertainty`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean): 20 declarations, 16 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.StateUncertainty`, [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean): 20 declarations, 16 with a docstring.
 
 > The Robertson–Schrödinger relation and Robertson's relation for several observables hold for a
 > state on any unital `*`-algebra, with no norm on the algebra.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.StateUncertainty`, [Phy
 
 ## A. Fluctuations
 
-**`ProbabilisticTheory.AlgState.apply_selfAdjoint`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.apply_selfAdjoint`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L73).
 
 > A self-adjoint element has a real expectation.
 
@@ -55,7 +55,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.StarAlgebra.StateUncertainty`, [Phy
 lemma apply_selfAdjoint (a : selfAdjoint A) : ω (a : A) = ((ω (a : A)).re : ℂ)
 ```
 
-**`ProbabilisticTheory.AlgState.fluctuation`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuation`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L79).
 
 > The fluctuation `a - ω(a)` of an observable.
 
@@ -63,13 +63,13 @@ lemma apply_selfAdjoint (a : selfAdjoint A) : ω (a : A) = ((ω (a : A)).re : �
 def fluctuation (a : selfAdjoint A) : A
 ```
 
-**`ProbabilisticTheory.AlgState.star_fluctuation`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L81).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.star_fluctuation`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L81).
 
 ```lean
 lemma star_fluctuation (a : selfAdjoint A) : star (ω.fluctuation a) = ω.fluctuation a
 ```
 
-**`ProbabilisticTheory.AlgState.covariance`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covariance`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L86).
 
 > The covariance `Re ω((a - ω(a)) (b - ω(b)))` of two observables.
 
@@ -77,7 +77,7 @@ lemma star_fluctuation (a : selfAdjoint A) : star (ω.fluctuation a) = ω.fluctu
 noncomputable def covariance (a b : selfAdjoint A) : ℝ
 ```
 
-**`ProbabilisticTheory.AlgState.variance`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.variance`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L90).
 
 > The variance of an observable.
 
@@ -85,7 +85,7 @@ noncomputable def covariance (a b : selfAdjoint A) : ℝ
 noncomputable def variance (a : selfAdjoint A) : ℝ
 ```
 
-**`ProbabilisticTheory.AlgState.bracket`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.bracket`**, a def, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L93).
 
 > The expectation of the bracket of two observables.
 
@@ -93,7 +93,7 @@ noncomputable def variance (a : selfAdjoint A) : ℝ
 noncomputable def bracket (a b : selfAdjoint A) : ℝ
 ```
 
-**`ProbabilisticTheory.AlgState.apply_fluctuation_mul`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L96).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.apply_fluctuation_mul`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L96).
 
 > `ω((a - ω(a)) (b - ω(b))) = ω(a b) - ω(a) ω(b)`.
 
@@ -102,7 +102,7 @@ lemma apply_fluctuation_mul (a b : selfAdjoint A) :
     ω (ω.fluctuation a * ω.fluctuation b) = ω ((a : A) * b) - ω (a : A) * ω (b : A)
 ```
 
-**`ProbabilisticTheory.AlgState.bracket_eq_im`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L107).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.bracket_eq_im`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L107).
 
 > The bracket is the imaginary part of `ω((a - ω(a)) (b - ω(b)))`.
 
@@ -113,7 +113,7 @@ lemma bracket_eq_im (a b : selfAdjoint A) :
 
 ## B. The matrices `Σ` and `Ω`
 
-**`ProbabilisticTheory.AlgState.covarianceMatrix`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L129).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covarianceMatrix`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L129).
 
 > The covariance matrix `Σ_jk = Cov(a_j, a_k)` of a family of observables.
 
@@ -121,7 +121,7 @@ lemma bracket_eq_im (a b : selfAdjoint A) :
 noncomputable def covarianceMatrix (a : ι → selfAdjoint A) : Matrix ι ι ℝ
 ```
 
-**`ProbabilisticTheory.AlgState.bracketMatrix`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L133).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.bracketMatrix`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L133).
 
 > The matrix `Ω_jk = ω⟨⁅a_j, a_k⁆⟩` of expectations of brackets.
 
@@ -129,7 +129,7 @@ noncomputable def covarianceMatrix (a : ι → selfAdjoint A) : Matrix ι ι ℝ
 noncomputable def bracketMatrix (a : ι → selfAdjoint A) : Matrix ι ι ℝ
 ```
 
-**`ProbabilisticTheory.AlgState.fluctuationVector`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L137).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.fluctuationVector`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L137).
 
 > The fluctuation of an observable as a vector of the pre-Hilbert space of the state.
 
@@ -137,7 +137,7 @@ noncomputable def bracketMatrix (a : ι → selfAdjoint A) : Matrix ι ι ℝ
 def fluctuationVector (a : selfAdjoint A) : ω.PreGNS
 ```
 
-**`ProbabilisticTheory.AlgState.inner_fluctuationVector`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L139).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.inner_fluctuationVector`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L139).
 
 ```lean
 lemma inner_fluctuationVector (a b : selfAdjoint A) :
@@ -145,7 +145,7 @@ lemma inner_fluctuationVector (a b : selfAdjoint A) :
       ω (ω.fluctuation a * ω.fluctuation b)
 ```
 
-**`ProbabilisticTheory.AlgState.gram_fluctuation`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L147).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.gram_fluctuation`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L147).
 
 > **`Σ + iΩ` is the Gram matrix of the fluctuations.**
 
@@ -156,7 +156,7 @@ lemma gram_fluctuation (a : ι → selfAdjoint A) :
         Complex.I • (ω.bracketMatrix a).map ((↑) : ℝ → ℂ)
 ```
 
-**`ProbabilisticTheory.AlgState.transpose_gram_fluctuation`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L157).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.transpose_gram_fluctuation`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L157).
 
 > `Σ - iΩ` is the transpose of the Gram matrix.
 
@@ -169,7 +169,7 @@ lemma transpose_gram_fluctuation (a : ι → selfAdjoint A) :
 
 ## C. Uncertainty relations
 
-**`ProbabilisticTheory.AlgState.robertson_schrodinger`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L170).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.robertson_schrodinger`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L170).
 
 > **The Robertson–Schrödinger relation** for a state on a `*`-algebra:
 > `Cov(a, b)² + ω⟨⁅a, b⁆⟩² ≤ Var a · Var b`.
@@ -179,7 +179,7 @@ lemma robertson_schrodinger (a b : selfAdjoint A) :
     ω.covariance a b ^ 2 + ω.bracket a b ^ 2 ≤ ω.variance a * ω.variance b
 ```
 
-**`ProbabilisticTheory.AlgState.robertson_det`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L184).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.robertson_det`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L184).
 
 > **Robertson's uncertainty relation for several observables** for a state on a `*`-algebra:
 > for every finite family of observables, `|det Ω| ≤ det Σ`.
@@ -191,19 +191,19 @@ lemma robertson_det [Fintype ι] [DecidableEq ι] (a : ι → selfAdjoint A) :
 
 ## D. Symmetric states
 
-**`ProbabilisticTheory.AlgState.apply_eq_zero_of_symm`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L199).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.apply_eq_zero_of_symm`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L199).
 
 ```lean
 lemma apply_eq_zero_of_symm : ω (b : A) = 0
 ```
 
-**`ProbabilisticTheory.AlgState.apply_mul_eq_zero_of_symm`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L207).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.apply_mul_eq_zero_of_symm`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L207).
 
 ```lean
 lemma apply_mul_eq_zero_of_symm : ω ((a : A) * b) = 0
 ```
 
-**`ProbabilisticTheory.AlgState.covariance_eq_zero_of_symm`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L216).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.covariance_eq_zero_of_symm`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L216).
 
 > **In a symmetric state, an even and an odd observable have covariance zero.**
 
@@ -211,7 +211,7 @@ lemma apply_mul_eq_zero_of_symm : ω ((a : A) * b) = 0
 lemma covariance_eq_zero_of_symm : ω.covariance a b = 0
 ```
 
-**`ProbabilisticTheory.AlgState.bracket_eq_zero_of_symm`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L224).
+**`PhyslibAlpha.ProbabilisticTheory.AlgState.bracket_eq_zero_of_symm`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean#L224).
 
 > **In a symmetric state, an even and an odd observable have a bracket of expectation
 > zero.**
@@ -231,4 +231,4 @@ lemma bracket_eq_zero_of_symm : ω.bracket a b = 0
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean)
+- [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean)

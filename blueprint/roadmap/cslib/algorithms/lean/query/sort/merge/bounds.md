@@ -7,14 +7,14 @@ proof: formalized
 
 # Merge Sort: Combined Bounds
 
-`Cslib.Algorithms.Lean.Query.Sort.Merge.Bounds`, in [Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean), by Kim Morrison.
+`Cslib.Algorithms.Lean.Query.Sort.Merge.Bounds`, in [Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean), by Kim Morrison.
 
 > Instantiating the general comparison-sorting lower bound at `mergeSort`, and comparing it
 > with the `n * ⌈log₂ n⌉` upper bound. Since `LowerBound.le_upperBound` makes the two
 > bounds meet, the purely arithmetic fact `⌈log₂ n!⌉ ≤ n * ⌈log₂ n⌉` falls out of the
 > framework with no further work.
 
-`Cslib.Query.mergeSort_lowerBound` (theorem, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean#L28))
+`Cslib.Query.mergeSort_lowerBound` (theorem, [line 28](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean#L28))
 
 > Merge sort has worst-case query complexity at least `⌈log₂(n!)⌉`.
 
@@ -23,7 +23,7 @@ theorem mergeSort_lowerBound [Infinite α] :
     LowerBound (mergeSort (α := α)) List.length (fun n => Nat.clog 2 (Nat.factorial n))
 ```
 
-`Cslib.Query.clog_factorial_le_mul_clog` (theorem, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean#L34))
+`Cslib.Query.clog_factorial_le_mul_clog` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean#L34))
 
 > Sanity check that the bounds compose: comparing merge sort's upper and lower bounds
 > yields this arithmetic fact with no further work.
@@ -45,5 +45,5 @@ theorem clog_factorial_le_mul_clog (n : ℕ) :
 
 ## Sources
 
-- [Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean)
+- [Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Algorithms/Lean/Query/Sort/Merge/Bounds.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Algorithms.Lean.Query.Sort.Merge.Bounds.json)

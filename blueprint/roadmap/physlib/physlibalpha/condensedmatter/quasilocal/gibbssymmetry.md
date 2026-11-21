@@ -8,7 +8,7 @@ proof: formalized
 
 # Covariance of the finite-volume ensembles under site symmetries
 
-The module `PhyslibAlpha.CondensedMatter.QuasiLocal.GibbsSymmetry`, [PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean): 13 declarations, 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.QuasiLocal.GibbsSymmetry`, [PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean): 13 declarations, 11 with a docstring.
 
 > A symmetry of an interaction carries the Hamiltonian and the ensembles of a box to those of the
 > moved box.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.CondensedMatter.QuasiLocal.GibbsSymmetry`, [PhyslibAlph
 
 ## A. Moving the Gibbs weight
 
-**`CondensedMatter.QuasiLocal.quantumIso_exp`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L65).
+**`CondensedMatter.QuasiLocal.quantumIso_exp`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L65).
 
 > Moving commutes with the exponential.
 
@@ -45,7 +45,7 @@ lemma quantumIso_exp (γ : Γ) (X : Finset S) (a : Alg (fun _ : S => Ω₀) X) :
     quantumIso γ X (NormedSpace.exp a) = NormedSpace.exp (quantumIso γ X a)
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_trace`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L71).
+**`CondensedMatter.QuasiLocal.quantumIso_trace`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L71).
 
 > Moving preserves the trace.
 
@@ -54,21 +54,21 @@ lemma quantumIso_trace (γ : Γ) (X : Finset S) (a : Alg (fun _ : S => Ω₀) X)
     (quantumIso γ X a).trace = a.trace
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_gibbsWeight`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L77).
+**`CondensedMatter.QuasiLocal.quantumIso_gibbsWeight`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L77).
 
 ```lean
 lemma quantumIso_gibbsWeight (γ : Γ) (X : Finset S) (a : Alg (fun _ : S => Ω₀) X) :
     quantumIso γ X (gibbsWeight a) = gibbsWeight (quantumIso γ X a)
 ```
 
-**`CondensedMatter.QuasiLocal.quantumIso_partition`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L81).
+**`CondensedMatter.QuasiLocal.quantumIso_partition`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L81).
 
 ```lean
 lemma quantumIso_partition (γ : Γ) (X : Finset S) (a : Alg (fun _ : S => Ω₀) X) :
     partition (quantumIso γ X a) = partition a
 ```
 
-**`CondensedMatter.QuasiLocal.gibbsFunctional_quantumIso`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L86).
+**`CondensedMatter.QuasiLocal.gibbsFunctional_quantumIso`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L86).
 
 > **The Gibbs functional is covariant.**
 
@@ -79,7 +79,7 @@ lemma gibbsFunctional_quantumIso (γ : Γ) (X : Finset S) (h b : Alg (fun _ : S 
 
 ## B. Moving the Hamiltonian
 
-**`CondensedMatter.QuasiLocal.Interaction.IsInvariant`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L94).
+**`CondensedMatter.QuasiLocal.Interaction.IsInvariant`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L94).
 
 > An interaction is *invariant* under `γ` if moving a term gives the term of the moved region.
 
@@ -87,7 +87,7 @@ lemma gibbsFunctional_quantumIso (γ : Γ) (X : Finset S) (h b : Alg (fun _ : S 
 def Interaction.IsInvariant (I : Interaction (fun _ : S => Ω₀)) (γ : Γ) : Prop
 ```
 
-**`CondensedMatter.QuasiLocal.powersetSmul`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L98).
+**`CondensedMatter.QuasiLocal.powersetSmul`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L98).
 
 > The bijection between the regions of a box and the regions of the moved box.
 
@@ -95,7 +95,7 @@ def Interaction.IsInvariant (I : Interaction (fun _ : S => Ω₀)) (γ : Γ) : P
 def powersetSmul (γ : Γ) (Λ : Finset S) : Λ.powerset ≃ (γ • Λ).powerset
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.hamiltonian_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L108).
+**`CondensedMatter.QuasiLocal.Interaction.hamiltonian_smul`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L108).
 
 > **The Hamiltonian of a moved box**: for an invariant interaction, moving the Hamiltonian of a
 > box gives the Hamiltonian of the moved box.
@@ -108,7 +108,7 @@ lemma Interaction.hamiltonian_smul (I : Interaction (fun _ : S => Ω₀)) {γ : 
 
 ## C. Moving the ensembles
 
-**`CondensedMatter.QuasiLocal.Interaction.canonicalState_smul`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L122).
+**`CondensedMatter.QuasiLocal.Interaction.canonicalState_smul`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L122).
 
 > **The canonical ensemble is covariant**: the expectation of a moved observable in the
 > ensemble of the moved box is the expectation of the observable in the ensemble of the box.
@@ -119,7 +119,7 @@ lemma Interaction.canonicalState_smul (I : Interaction (fun _ : S => Ω₀)) {γ
     I.canonicalState β (γ • Λ) (quantumIso γ Λ a) = I.canonicalState β Λ a
 ```
 
-**`CondensedMatter.QuasiLocal.siteSmul`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L132).
+**`CondensedMatter.QuasiLocal.siteSmul`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L132).
 
 > The bijection between the sites of a box and the sites of the moved box.
 
@@ -127,7 +127,7 @@ lemma Interaction.canonicalState_smul (I : Interaction (fun _ : S => Ω₀)) {γ
 def siteSmul (γ : Γ) (Λ : Finset S) : ↥Λ ≃ ↥(γ • Λ)
 ```
 
-**`CondensedMatter.QuasiLocal.chargeOp_smul`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L140).
+**`CondensedMatter.QuasiLocal.chargeOp_smul`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L140).
 
 > **A uniform charge is moved to the uniform charge of the moved box.**
 
@@ -136,7 +136,7 @@ lemma chargeOp_smul (q₀ : Ω₀ → ℝ) (γ : Γ) (Λ : Finset S) :
     quantumIso γ Λ (chargeOp (fun _ : S => q₀) Λ) = chargeOp (fun _ : S => q₀) (γ • Λ)
 ```
 
-**`CondensedMatter.QuasiLocal.grandCanonicalOp_quantumIso`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L157).
+**`CondensedMatter.QuasiLocal.grandCanonicalOp_quantumIso`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L157).
 
 > The charge of a moved box, as a statement about the operator whose weight is the grand
 > canonical one.
@@ -147,7 +147,7 @@ lemma grandCanonicalOp_quantumIso (γ : Γ) (Λ : Finset S) (β μ : ℝ) (H N :
       grandCanonicalOp β μ (quantumIso γ Λ H) (quantumIso γ Λ N)
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalState_smul`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L164).
+**`CondensedMatter.QuasiLocal.Interaction.grandCanonicalState_smul`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean#L164).
 
 > **The grand canonical ensemble is covariant**, for an invariant interaction and a uniform
 > charge.
@@ -167,4 +167,4 @@ lemma Interaction.grandCanonicalState_smul (I : Interaction (fun _ : S => Ω₀)
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean)
+- [PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean)

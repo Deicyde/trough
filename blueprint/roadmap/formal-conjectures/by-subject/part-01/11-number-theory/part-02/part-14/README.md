@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Smallest prime formed by… to Fibonacci transform satisfying…
+# Binary representation of primes… to $a(0) = 1$, $a(n) =…
 
+- [Binary representation of primes that divide a number, in decimal](../../../../../oeis/part-05/binary-representation-of-primes-that-divide-a-nu.md)
+- [Expansion of $(1 - x)/(1 - 2 x + 3 x^2)$](../../../../../oeis/part-05/expansion-of-1-x-1-2-x-3-x-2.md)
 - [Smallest prime formed by concatenation $n, n-1, \dots, n-k$](../../../../../oeis/part-05/smallest-prime-formed-by-concatenation-n-n-1-dot.md)
 - [Conjectures associated with A087719](../../../../../oeis/part-05/conjectures-associated-with-a087719.md)
 - [Number of pairs of twin primes between $n^2$ and $(n+1)^2$](../../../../../oeis/part-05/number-of-pairs-of-twin-primes-between-n-2-and-n.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Conjectures associated with A102371](../../../../../oeis/part-06/conjectures-associated-with-a102371.md)
 - [Floor of sum of $\{n/k\}$](../../../../../oeis/part-06/floor-of-sum-of-n-k.md)
 - [$a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$](../../../../../oeis/part-06/a-0-1-a-n-a-n-1-a-n-1-2.md)
-- [Number of decompositions of $2n+1$ into $2p+q$, where $p$ and $q$ are both odd primes](../../../../../oeis/part-06/number-of-decompositions-of-2n-1-into-2p-q-where.md)
-- [Fibonacci transform satisfying $|a(n)| = F(n+1)$](../../../../../oeis/part-06/fibonacci-transform-satisfying-a-n-f-n-1.md)

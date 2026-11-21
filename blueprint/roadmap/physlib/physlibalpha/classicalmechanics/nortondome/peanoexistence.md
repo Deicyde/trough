@@ -8,7 +8,7 @@ proof: formalized
 
 # Peano's existence theorem (statements)
 
-The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PeanoExistence`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PeanoExistence`, [PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean): 1 declaration, 1 with a docstring.
 
 > Statements of Peano's existence theorem for ODEs, pending its proof in Mathlib.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ClassicalMechanics.NortonDome.PeanoExistence`, [Physlib
 
 ## A. The hypotheses
 
-**`IsPeano`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean#L65).
+**`IsPeano`**, a structure, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean#L65).
 
 > The hypotheses for Peano's existence theorem on a closed time interval and a closed ball.
 
@@ -69,4 +69,4 @@ structure IsPeano {E : Type*} [NormedAddCommGroup E]
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean)
+- [PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/NortonDome/PeanoExistence.lean)

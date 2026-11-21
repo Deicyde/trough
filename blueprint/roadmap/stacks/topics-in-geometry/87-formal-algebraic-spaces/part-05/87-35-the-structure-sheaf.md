@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.35 The structure sheaf
 
-Section 87.35 of the Stacks Project, [Tag 0DEI](https://stacks.math.columbia.edu/tag/0DEI). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.35 of the Stacks Project, [Tag 0DEI](https://stacks.math.columbia.edu/tag/0DEI). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DEJ, a lemma
 
 [Tag 0DEJ](https://stacks.math.columbia.edu/tag/0DEJ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheaf/Exists.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheaf/Exists.lean#L66).
+**`AlgebraicGeometry.FormalSpace.exists_isStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheaf/Exists.lean, line 66](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheaf/Exists.lean#L66).
 
 > **Stacks 0DEJ.** Every formal algebraic space has a structure sheaf: a sheaf of topological
 > rings `𝒪_X` on its small étale site `X_étale` such that `𝒪_X(U_red) = lim Γ(U_λ, 𝒪_{U_λ})` as
@@ -31,7 +31,7 @@ theorem exists_isStructureSheaf {X : FppfSheaf B S hS} (hX : IsFormalAlgebraicSp
 
 [Tag 0DEK](https://stacks.math.columbia.edu/tag/0DEK) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_not_enough_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NotEnoughSections.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/NotEnoughSections.lean#L209).
+**`AlgebraicGeometry.FormalSpace.exists_isAffineFormalAlgebraicSpace_not_enough_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/NotEnoughSections.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/NotEnoughSections.lean#L209).
 
 > The structure sheaf of a formal algebraic space does not always have enough sections. There
 > is an affine formal algebraic space `X` which is not McQuillan (it fails condition (4) of Stacks
@@ -72,7 +72,7 @@ theorem exists_isAffineFormalAlgebraicSpace_not_enough_sections :
 
 [Tag 0DEL](https://stacks.math.columbia.edu/tag/0DEL) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.completedCechComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean#L411). The attribute's comment: “the computation half of the proof: for a covering of `X = Spf A` by one affine étale chart `Spf B^∧` the Čech cohomology of `𝒪_X` vanishes in every positive degree. The site-theoretic half, the reduction of `Hⁿ(X_étale, 𝒪_X)` to these Čech complexes along Stacks 03F9, 03OZ, 0DEE and 0DEF, is not carried: this library does have the étale sites of a formal algebraic space, `AlgebraicGeometry.FormalSpace.SmallEtale` and its siblings of Stacks 0DEA, and Stacks 0DEE as an equivalence, AlgebraicGeometry.FormalSpace.affineEtaleEquivalence, but no structure sheaf on an étale site; Stacks 0DEF is formalized only as the ring-theoretic category of the completions `B^∧`. Stated for an arbitrary antitone sequence of ideals and an arbitrary faithfully flat `A`-algebra, which generalizes the source's weakly admissible `A` and étale covering `A → B`”.
+**`AlgebraicGeometry.FormalSpace.completedCechComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean, line 411](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean#L411). The attribute's comment: “the computation half of the proof: for a covering of `X = Spf A` by one affine étale chart `Spf B^∧` the Čech cohomology of `𝒪_X` vanishes in every positive degree. The site-theoretic half, the reduction of `Hⁿ(X_étale, 𝒪_X)` to these Čech complexes along Stacks 03F9, 03OZ, 0DEE and 0DEF, is not carried: this library does have the étale sites of a formal algebraic space, `AlgebraicGeometry.FormalSpace.SmallEtale` and its siblings of Stacks 0DEA, and Stacks 0DEE as an equivalence, AlgebraicGeometry.FormalSpace.affineEtaleEquivalence, but no structure sheaf on an étale site; Stacks 0DEF is formalized only as the ring-theoretic category of the completions `B^∧`. Stated for an arbitrary antitone sequence of ideals and an arbitrary faithfully flat `A`-algebra, which generalizes the source's weakly admissible `A` and étale covering `A → B`”.
 
 > **Stacks 0DEL.**  Let `X = Spf A` be a countably indexed affine formal algebraic space, with
 > `J₀ ⊇ J₁ ⊇ ⋯` a countable fundamental system of weak ideals of definition of `A`, and let
@@ -84,7 +84,7 @@ theorem completedCechComplex_homology_isZero [Module.FaithfullyFlat A B] (n : �
     IsZero ((completedCechComplex B J hJ).homology (n + 1))
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_completedCechComplex_homology_isZero_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean#L495). The attribute's comment: “the covering-level content with the source's own hypotheses: a countably indexed affine formal algebraic space and a surjective affine étale chart of it, in place of the antitone sequence of ideals and the faithfully flat algebra of `completedCechComplex_homology_isZero`. The conclusion is still the vanishing of the Čech cohomology of the covering, not of `Hⁿ(X_étale, 𝒪_X)`: this library has no structure sheaf on the étale site of a formal algebraic space: Stacks 0DEE is an equivalence here, AlgebraicGeometry.FormalSpace.affineEtaleEquivalence, but Stacks 0DEF is formalized only as the ring-theoretic category of the completions `B^∧`, so no object of the affine étale site is known to be of the form `Spf B^∧` and the sections of `𝒪_X` are undefined”.
+**`AlgebraicGeometry.FormalSpace.exists_completedCechComplex_homology_isZero_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean, line 495](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafEtaleCohomology.lean#L495). The attribute's comment: “the covering-level content with the source's own hypotheses: a countably indexed affine formal algebraic space and a surjective affine étale chart of it, in place of the antitone sequence of ideals and the faithfully flat algebra of `completedCechComplex_homology_isZero`. The conclusion is still the vanishing of the Čech cohomology of the covering, not of `Hⁿ(X_étale, 𝒪_X)`: this library has no structure sheaf on the étale site of a formal algebraic space: Stacks 0DEE is an equivalence here, AlgebraicGeometry.FormalSpace.affineEtaleEquivalence, but Stacks 0DEF is formalized only as the ring-theoretic category of the completions `B^∧`, so no object of the affine étale site is known to be of the form `Spf B^∧` and the sections of `𝒪_X` are undefined”.
 
 > **Stacks 0DEL** with the hypotheses of the source.  A countably indexed affine formal
 > algebraic space `X` is the formal spectrum of a weakly admissible topological ring `A` carrying
@@ -113,7 +113,7 @@ theorem exists_completedCechComplex_homology_isZero_of_isCountablyIndexed
             IsZero ((completedCechComplex Y.carrier J hJ).homology (n + 1))
 ```
 
-**`AlgebraicGeometry.FormalSpace.subsingleton_sheafH_countablyIndexedStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean#L119). The attribute's comment: “at an arbitrary reduction `X_red` of `X`, which Stacks 0DEA reads `X_étale` against”.
+**`AlgebraicGeometry.FormalSpace.subsingleton_sheafH_countablyIndexedStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean#L119). The attribute's comment: “at an arbitrary reduction `X_red` of `X`, which Stacks 0DEA reads `X_étale` against”.
 
 > **Stacks 0DEL.** Let `X` be a countably indexed affine formal algebraic space over `S`, and
 > let `X_red` be a reduction of `X`. Then the structure sheaf `𝒪_X` has no higher cohomology on
@@ -131,7 +131,7 @@ theorem subsingleton_sheafH_countablyIndexedStructureSheaf (hc : IsCountablyInde
         (countablyIndexedStructureSheaf hc R)) n)
 ```
 
-**`AlgebraicGeometry.FormalSpace.subsingleton_sheafH_canonicalStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean#L131).
+**`AlgebraicGeometry.FormalSpace.subsingleton_sheafH_canonicalStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/StructureSheafHigherVanishing.lean#L131).
 
 > **Stacks 0DEL.** If `X` is a countably indexed affine formal algebraic space over `S`, then
 > `Hⁿ(X_étale, 𝒪_X) = 0` for `n > 0`, where `X_étale` is the small étale site of Stacks 0DEA at the
@@ -154,7 +154,7 @@ theorem subsingleton_sheafH_canonicalStructureSheaf (hX : IsAffineFormalAlgebrai
 
 [Tag 0DEM](https://stacks.math.columbia.edu/tag/0DEM) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.not_nonempty_abelian_quasicoherentModules_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L79). The attribute's comment: “the content of Examples, Section 0ALF: for every Noetherian domain `A` complete for a principal ideal `(π)` with `π ≠ 0` not a unit, `Spf(A)` is a Noetherian affine formal algebraic space whose quasi-coherent modules do not form an abelian category”.
+**`AlgebraicGeometry.FormalSpace.not_nonempty_abelian_quasicoherentModules_completionAlongIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionQuasicoherentNotAbelian.lean#L79). The attribute's comment: “the content of Examples, Section 0ALF: for every Noetherian domain `A` complete for a principal ideal `(π)` with `π ≠ 0` not a unit, `Spf(A)` is a Noetherian affine formal algebraic space whose quasi-coherent modules do not form an abelian category”.
 
 > **Stacks 0DEM.** Let `A` be a Noetherian domain which is complete for a principal ideal
 > `I = (π)` with `π` neither zero nor a unit, and let `X = Spf(A)` be the completion of `Spec A`
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.35, Tag 0DEI](https://stacks.math.columbia.edu/tag/0DEI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

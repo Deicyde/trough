@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.4 Stacks
 
-Section 8.4 of the Stacks Project, [Tag 0268](https://stacks.math.columbia.edu/tag/0268). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 8.4 of the Stacks Project, [Tag 0268](https://stacks.math.columbia.edu/tag/0268). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 026F, a definition
 
 [Tag 026F](https://stacks.math.columbia.edu/tag/026F) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack/Defs.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Descent/IsStack/Defs.lean#L44). The attribute's comment: “for a functor, the three conditions being the three fields”.
+**`CategoryTheory.Functor.IsStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack/Defs.lean, line 44](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Descent/IsStack/Defs.lean#L44). The attribute's comment: “for a functor, the three conditions being the three fields”.
 
 > The three conditions of Stacks 026F for a functor `p : 𝒳 ⥤ 𝒮`: `p` is a fibred category, the
 > presheaves `Mor(x, y)` of Stacks 02ZB are sheaves, and descent along a covering sieve is
@@ -31,7 +31,7 @@ structure IsStack (p : 𝒳 ⥤ 𝒮) (J : GrothendieckTopology 𝒮) : Prop
 
 [Tag 02ZF](https://stacks.math.columbia.edu/tag/02ZF) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStack_iff_isEquivalence_toDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/DescentDataEquivalence.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/DescentDataEquivalence.lean#L375).
+**`CategoryTheory.Functor.isStack_iff_isEquivalence_toDescentData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/DescentDataEquivalence.lean, line 375](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/DescentDataEquivalence.lean#L375).
 
 > **Stacks 02ZF.** Let `p : 𝒳 ⥤ 𝒮` be a fibred category over a site `(𝒮, J)`. Then `p` is a stack
 > if and only if, for every covering `𝒰 = {f i : U i ⟶ U}` of the site, the functor `𝒳_U ⥤ DD(𝒰)`
@@ -48,7 +48,7 @@ theorem isStack_iff_isEquivalence_toDescentData (J : GrothendieckTopology 𝒮) 
 
 [Tag 04TU](https://stacks.math.columbia.edu/tag/04TU) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStack.fullSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Descent/IsStack.lean#L113).
+**`CategoryTheory.Functor.IsStack.fullSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack.lean, line 113](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Descent/IsStack.lean#L113).
 
 > Let `p : 𝒳 ⥤ 𝒮` be a stack over the site `(𝒮, J)` and let `P` cut out a full subcategory of
 > `𝒳`. If `P` is closed under strongly cartesian pullbacks and locally closed, both read fibrewise
@@ -65,7 +65,7 @@ theorem IsStack.fullSubcategory (p : 𝒳 ⥤ 𝒮) (J : GrothendieckTopology �
 
 [Tag 042W](https://stacks.math.columbia.edu/tag/042W) in the Stacks Project.
 
-**`CategoryTheory.BasedCategory.isStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean, line 32](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean#L32).
+**`CategoryTheory.BasedCategory.isStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean, line 32](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean#L32).
 
 > Let `(𝒞, J)` be a site and let `𝒳`, `𝒴` be categories over `𝒞`. If `𝒳` and `𝒴` are equivalent
 > as categories over `𝒞`, then `𝒳` is a stack over `𝒞` if and only if `𝒴` is.
@@ -80,7 +80,7 @@ theorem BasedCategory.isStack_iff_of_equivalence
 
 [Tag 02ZG](https://stacks.math.columbia.edu/tag/02ZG) in the Stacks Project.
 
-**`CategoryTheory.BasedStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L62). The attribute's comment: “(1)”.
+**`CategoryTheory.BasedStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L62). The attribute's comment: “(1)”.
 
 > **Stacks 02ZG (1)**.
 > An object of the 2-category of stacks over the site `(𝒞, J)`: a category over `𝒞` whose structure
@@ -90,7 +90,7 @@ theorem BasedCategory.isStack_iff_of_equivalence
 structure BasedStack (𝒞 : Type u₁) [Category.{v₁} 𝒞] (J : GrothendieckTopology 𝒞)
 ```
 
-**`CategoryTheory.BasedStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L78). The attribute's comment: “(2)”.
+**`CategoryTheory.BasedStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L78). The attribute's comment: “(2)”.
 
 > **Stacks 02ZG (2)**.
 > A 1-morphism of stacks over `𝒞`: a functor `G` between the underlying categories with
@@ -102,7 +102,7 @@ structure BasedStack (𝒞 : Type u₁) [Category.{v₁} 𝒞] (J : Grothendieck
 structure Hom (𝒳 𝒴 : BasedStack.{v₁, v₂, u₁, u₂} 𝒞 J)
 ```
 
-**`CategoryTheory.BasedStack.homCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L109). The attribute's comment: “(3)”.
+**`CategoryTheory.BasedStack.homCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L109). The attribute's comment: “(3)”.
 
 > **Stacks 02ZG (3)**.
 > The 2-morphisms between two 1-morphisms of stacks: the morphisms of functors `t` with
@@ -114,7 +114,7 @@ structure Hom (𝒳 𝒴 : BasedStack.{v₁, v₂, u₁, u₂} 𝒞 J)
 instance homCategory (𝒳 𝒴 : BasedStack.{v₁, v₂, u₁, u₂} 𝒞 J) : Category (𝒳 ⟶ 𝒴)
 ```
 
-**`CategoryTheory.BasedStack.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L203).
+**`CategoryTheory.BasedStack.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/TwoCategory.lean#L203).
 
 > **Stacks 02ZG**.
 > The 2-category of stacks over the site `(𝒞, J)`: the sub-2-category of the 2-category of fibred
@@ -130,7 +130,7 @@ instance bicategory : Bicategory (BasedStack.{v₁, v₂, u₁, u₂} 𝒞 J)
 
 [Tag 026G](https://stacks.math.columbia.edu/tag/026G) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isStack_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoFibreProductDescentIndependentBase.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/TwoFibreProductDescentIndependentBase.lean#L647).
+**`CategoryTheory.TwoFibreProductOver.isStack_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/TwoFibreProductDescentIndependentBase.lean, line 647](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/TwoFibreProductDescentIndependentBase.lean#L647).
 
 > The 2-fibre product of stacks over a site `(𝒞, J)` is a stack, with the hom universe of the
 > site independent of the hom universe of the three categories of the cospan: if `p𝒳`, `p𝒴`, `p𝒮`
@@ -150,7 +150,7 @@ theorem isStack_structureFunctor
 
 [Tag 04WQ](https://stacks.math.columbia.edu/tag/04WQ) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsFibredOneMorphism.full_and_faithful_iff_isIso_morSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FullyFaithfulIffMorSheafIso.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FullyFaithfulIffMorSheafIso.lean#L79).
+**`CategoryTheory.Functor.IsFibredOneMorphism.full_and_faithful_iff_isIso_morSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FullyFaithfulIffMorSheafIso.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/FullyFaithfulIffMorSheafIso.lean#L79).
 
 > **Stacks 04WQ.** Let `F : 𝒳 ⥤ 𝒴` be a 1-morphism of stacks `p : 𝒳 ⥤ 𝒞`, `r : 𝒴 ⥤ 𝒞` over a
 > site `(𝒞, J)`. Then `F` is fully faithful (as a functor between the total categories) if and only
@@ -176,7 +176,7 @@ theorem full_and_faithful_iff_isIso_morSheafMap (hF : p.IsFibredOneMorphism r F)
 
 [Tag 046N](https://stacks.math.columbia.edu/tag/046N) in the Stacks Project.
 
-**`CategoryTheory.Functor.isEquivalenceOver_iff_locallyEssSurjOnFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/FullyFaithfulEquivalence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/FullyFaithfulEquivalence.lean#L55).
+**`CategoryTheory.Functor.isEquivalenceOver_iff_locallyEssSurjOnFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/FullyFaithfulEquivalence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/InheritedTopology/FullyFaithfulEquivalence.lean#L55).
 
 > **Stacks 046N**. Let `(𝒞, J)` be a site, let `p : 𝒳 ⥤ 𝒞` and `q : 𝒴 ⥤ 𝒞` be stacks over `𝒞`
 > and let `F : 𝒳 ⥤ 𝒴` be a fully faithful 1-morphism of fibred categories over `𝒞`. Then the
@@ -199,7 +199,7 @@ theorem isEquivalenceOver_iff_locallyEssSurjOnFibers
 
 [Tag 03ZZ](https://stacks.math.columbia.edu/tag/03ZZ) in the Stacks Project.
 
-**`CategoryTheory.Functor.small_fibreRepresentatives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L102). The attribute's comment: “the cutdown: a full subcategory of 𝒳 whose objects form a set”.
+**`CategoryTheory.Functor.small_fibreRepresentatives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L102). The attribute's comment: “the cutdown: a full subcategory of 𝒳 whose objects form a set”.
 
 > The objects of the cutdown form a set: they are indexed by the pairs of an object `U` of `𝒮`
 > and an object of the small model of `𝒳_U`.
@@ -209,7 +209,7 @@ instance small_fibreRepresentatives :
     ObjectProperty.Small.{max u₁ w} (p.fibreRepresentatives)
 ```
 
-**`CategoryTheory.Functor.small_fiber_restrict_fibreRepresentatives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L118). The attribute's comment: “the cutdown: each of its fibres is a set”.
+**`CategoryTheory.Functor.small_fiber_restrict_fibreRepresentatives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L118). The attribute's comment: “the cutdown: each of its fibres is a set”.
 
 > Each fibre of the cutdown is a set at the universe of condition (4): the fibre over `U` is
 > covered by the small model of `𝒳_U`.
@@ -219,7 +219,7 @@ instance small_fiber_restrict_fibreRepresentatives (U : 𝒮) :
     Small.{w} ((p.restrict p.fibreRepresentatives).Fiber U)
 ```
 
-**`CategoryTheory.Functor.isEquivalence_ι_fibreRepresentatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L140). The attribute's comment: “(b): the inclusion of the cutdown is fully faithful and essentially surjective”.
+**`CategoryTheory.Functor.isEquivalence_ι_fibreRepresentatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L140). The attribute's comment: “(b): the inclusion of the cutdown is fully faithful and essentially surjective”.
 
 > **Stacks 03ZZ (b).** The inclusion `𝒳_small ⥤ 𝒳` of the cutdown is fully faithful and
 > essentially surjective.
@@ -228,7 +228,7 @@ instance small_fiber_restrict_fibreRepresentatives (U : 𝒮) :
 theorem isEquivalence_ι_fibreRepresentatives : (p.fibreRepresentatives).ι.IsEquivalence
 ```
 
-**`CategoryTheory.Functor.IsStack.fibreRepresentatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L145). The attribute's comment: “(a): the restriction of p to the cutdown satisfies the conditions of 026F”.
+**`CategoryTheory.Functor.IsStack.fibreRepresentatives`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean, line 145](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Stack/FibreRepresentatives.lean#L145). The attribute's comment: “(a): the restriction of p to the cutdown satisfies the conditions of 026F”.
 
 > **Stacks 03ZZ (a).** If `p : 𝒳 ⥤ 𝒮` satisfies the three conditions of Stacks 026F over the
 > site `(𝒮, J)`, then so does its restriction to the cutdown; that is, the cutdown is a stack.
@@ -245,4 +245,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.4, Tag 0268](https://stacks.math.columbia.edu/tag/0268)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

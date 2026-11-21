@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the fermion mass-weight submodules
 
-The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean): 42 declarations, 42 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean): 42 declarations, 42 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.Gaug
 
 > * None.
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightOne`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L77).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightOne`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L77).
 
 > Weight one is trivial.
 
@@ -40,7 +40,7 @@ noncomputable def massWeightSubmoduleGaugeWeightOne :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 1)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L84).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightTwo`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L84).
 
 > Weight two is trivial.
 
@@ -49,7 +49,7 @@ noncomputable def massWeightSubmoduleGaugeWeightTwo :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 2)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightThree`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L91).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightThree`**, a def, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L91).
 
 > Weight three is the underived fermion towers.
 
@@ -58,7 +58,7 @@ noncomputable def massWeightSubmoduleGaugeWeightThree :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 3)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFour`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L98).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFour`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L98).
 
 > Weight four is trivial.
 
@@ -67,7 +67,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFour :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 4)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFive`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L105).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFive`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L105).
 
 > Weight five is the once-derived fermion towers.
 
@@ -76,7 +76,7 @@ noncomputable def massWeightSubmoduleGaugeWeightFive :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 5)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L112).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L112).
 
 > Weight six is the products of two underived fermion towers.
 
@@ -85,7 +85,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSix :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 6)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L120).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSeven`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L120).
 
 > Weight seven is the twice-derived fermion towers.
 
@@ -94,7 +94,7 @@ noncomputable def massWeightSubmoduleGaugeWeightSeven :
     GaugeWeightDecomposition repGauge (h.massWeightSubmodule 7)
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightEight`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L127).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightEight`**, a def, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L127).
 
 > Weight eight is the kinetic sector: an underived tower against a once-derived one.
 
@@ -105,7 +105,7 @@ noncomputable def massWeightSubmoduleGaugeWeightEight :
 
 ## A. The weight-zero pieces
 
-**`StandardModel.IsFermionSector.zero_not_mem_fermionGaugeWeights`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L143).
+**`StandardModel.IsFermionSector.zero_not_mem_fermionGaugeWeights`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L143).
 
 > Every gauge weight carried by a fermion symbol has nonzero hypercharge: each of the
 > ten species has a fixed nonzero hypercharge, independent of colour, isospin and
@@ -116,7 +116,7 @@ noncomputable def massWeightSubmoduleGaugeWeightEight :
 lemma zero_not_mem_fermionGaugeWeights : (0 : GaugeWeight) ∉ fermionGaugeWeights
 ```
 
-**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L151).
+**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight_piece_zero`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L151).
 
 > The weight-zero piece of the fermion derivative submodules is trivial: unlike
 > the gauge sector, no single fermion symbol is a gauge singlet, since every one of the
@@ -129,7 +129,7 @@ lemma derivSubmoduleGaugeWeight_piece_zero (n : ℕ) :
     (h.derivSubmoduleGaugeWeight n).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightOne_piece_zero`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L157).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightOne_piece_zero`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L157).
 
 > The weight-zero piece at mass weight 1: the submodule itself is trivial.
 
@@ -138,7 +138,7 @@ lemma massWeightSubmoduleGaugeWeightOne_piece_zero :
     (h.massWeightSubmoduleGaugeWeightOne).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L161).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightTwo_piece_zero`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L161).
 
 > The weight-zero piece at mass weight 2: the submodule itself is trivial.
 
@@ -147,7 +147,7 @@ lemma massWeightSubmoduleGaugeWeightTwo_piece_zero :
     (h.massWeightSubmoduleGaugeWeightTwo).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightThree_piece_zero`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L166).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightThree_piece_zero`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L166).
 
 > The weight-zero piece at mass weight three: the underived fermion towers carry no
 > gauge singlet, since every fermion symbol has nonzero hypercharge.
@@ -157,7 +157,7 @@ lemma massWeightSubmoduleGaugeWeightThree_piece_zero :
     (h.massWeightSubmoduleGaugeWeightThree).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L171).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFour_piece_zero`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L171).
 
 > The weight-zero piece at mass weight 4: the submodule itself is trivial.
 
@@ -166,7 +166,7 @@ lemma massWeightSubmoduleGaugeWeightFour_piece_zero :
     (h.massWeightSubmoduleGaugeWeightFour).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFive_piece_zero`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L176).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightFive_piece_zero`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L176).
 
 > The weight-zero piece at mass weight five: the once-derived fermion towers carry no
 > gauge singlet, since every fermion symbol has nonzero hypercharge.
@@ -176,7 +176,7 @@ lemma massWeightSubmoduleGaugeWeightFive_piece_zero :
     (h.massWeightSubmoduleGaugeWeightFive).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSeven_piece_zero`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L182).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSeven_piece_zero`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L182).
 
 > The weight-zero piece at mass weight seven: the twice-derived fermion towers carry
 > no gauge singlet, since every fermion symbol has nonzero hypercharge.
@@ -194,7 +194,7 @@ lemma massWeightSubmoduleGaugeWeightSeven_piece_zero :
 > and discarding the non-conjugate pairings, whose hypercharges never cancel, takes the
 > infrastructure developed here.
 
-**`StandardModel.IsFermionSector.piece_sup_mul`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L200).
+**`StandardModel.IsFermionSector.piece_sup_mul`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L200).
 
 > If the left factor of a product decomposition is a join `VA ⊔ VB`, its weight-`w`
 > piece splits along the join.
@@ -209,7 +209,7 @@ lemma piece_sup_mul {VA VB VC : Submodule ℂ B}
         ⊔ (GaugeWeightDecomposition.mul (d := dB) (d' := dC)).piece w
 ```
 
-**`StandardModel.IsFermionSector.piece_mul_sup`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L216).
+**`StandardModel.IsFermionSector.piece_mul_sup`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L216).
 
 > If the right factor of a product decomposition is a join `VA ⊔ VB`, its weight-`w`
 > piece splits along the join.
@@ -224,7 +224,7 @@ lemma piece_mul_sup {VA VB VC : Submodule ℂ B}
         ⊔ (GaugeWeightDecomposition.mul (d := dC) (d' := dB)).piece w
 ```
 
-**`StandardModel.IsFermionSector.mul_piece_zero_eq_bot_of_hypercharge`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L233).
+**`StandardModel.IsFermionSector.mul_piece_zero_eq_bot_of_hypercharge`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L233).
 
 > Two decompositions with constant, non-cancelling hypercharge across their whole
 > supports have a trivial product at weight zero: a weight from one can never cancel
@@ -238,7 +238,7 @@ lemma mul_piece_zero_eq_bot_of_hypercharge {V V' : Submodule ℂ B}
     (GaugeWeightDecomposition.mul (d := dV) (d' := dV')).piece 0 = ⊥
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightD_hc`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L254).
+**`StandardModel.IsFermionSector.rangeGaugeWeightD_hc`**, a lemma, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L254).
 
 > The `d` symbols carry hypercharge `2` (the negative of the down-singlet's `-2`),
 > independent of colour and family.
@@ -248,7 +248,7 @@ lemma rangeGaugeWeightD_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin 3)
     ∀ w ∈ (h.rangeGaugeWeightD f l).supp, w.2.2.2 = 2
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarD_hc`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L263).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarD_hc`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L263).
 
 > The `bard` symbols carry hypercharge `-2`, independent of colour and family.
 
@@ -257,7 +257,7 @@ lemma rangeGaugeWeightBarD_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin
     ∀ w ∈ (h.rangeGaugeWeightBarD f l).supp, w.2.2.2 = -2
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightU_hc`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L272).
+**`StandardModel.IsFermionSector.rangeGaugeWeightU_hc`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L272).
 
 > The `u` symbols carry hypercharge `-4`, independent of colour and family.
 
@@ -266,7 +266,7 @@ lemma rangeGaugeWeightU_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin 3)
     ∀ w ∈ (h.rangeGaugeWeightU f l).supp, w.2.2.2 = -4
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarU_hc`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L281).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarU_hc`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L281).
 
 > The `baru` symbols carry hypercharge `4`, independent of colour and family.
 
@@ -275,7 +275,7 @@ lemma rangeGaugeWeightBarU_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin
     ∀ w ∈ (h.rangeGaugeWeightBarU f l).supp, w.2.2.2 = 4
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightQ_hc`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L291).
+**`StandardModel.IsFermionSector.rangeGaugeWeightQ_hc`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L291).
 
 > The `Q` symbols carry hypercharge `-1`, independent of colour, isospin and
 > family.
@@ -285,7 +285,7 @@ lemma rangeGaugeWeightQ_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin 3)
     ∀ w ∈ (h.rangeGaugeWeightQ f l).supp, w.2.2.2 = -1
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ_hc`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L301).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ_hc`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L301).
 
 > The `barQ` symbols carry hypercharge `1`, independent of colour, isospin and
 > family.
@@ -295,7 +295,7 @@ lemma rangeGaugeWeightBarQ_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin
     ∀ w ∈ (h.rangeGaugeWeightBarQ f l).supp, w.2.2.2 = 1
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightL_hc`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L310).
+**`StandardModel.IsFermionSector.rangeGaugeWeightL_hc`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L310).
 
 > The `L` symbols carry hypercharge `3`, independent of isospin and family.
 
@@ -304,7 +304,7 @@ lemma rangeGaugeWeightL_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin 3)
     ∀ w ∈ (h.rangeGaugeWeightL f l).supp, w.2.2.2 = 3
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarL_hc`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L319).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarL_hc`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L319).
 
 > The `barL` symbols carry hypercharge `-3`, independent of isospin and family.
 
@@ -313,7 +313,7 @@ lemma rangeGaugeWeightBarL_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin
     ∀ w ∈ (h.rangeGaugeWeightBarL f l).supp, w.2.2.2 = -3
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightE_hc`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L328).
+**`StandardModel.IsFermionSector.rangeGaugeWeightE_hc`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L328).
 
 > The `e` symbols carry hypercharge `6`, independent of family.
 
@@ -322,7 +322,7 @@ lemma rangeGaugeWeightE_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin 3)
     ∀ w ∈ (h.rangeGaugeWeightE f l).supp, w.2.2.2 = 6
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarE_hc`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L337).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarE_hc`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L337).
 
 > The `bare` symbols carry hypercharge `-6`, independent of family.
 
@@ -331,7 +331,7 @@ lemma rangeGaugeWeightBarE_hc {n : ℕ} (f : Fin 3) (l : Fin n → Fin 1 ⊕ Fin
     ∀ w ∈ (h.rangeGaugeWeightBarE f l).supp, w.2.2.2 = -6
 ```
 
-**`StandardModel.IsFermionSector.speciesGaugeWeight`**, a def, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L349).
+**`StandardModel.IsFermionSector.speciesGaugeWeight`**, a def, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L349).
 
 > The gauge weight decomposition of one family's full set of symbols at fixed
 > derivative slots, matching the recipe of `derivSubmodule` itself: the join of the
@@ -347,7 +347,7 @@ noncomputable def speciesGaugeWeight (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 
         LinearMap.range (e f l) ⊔ LinearMap.range (bare f l))
 ```
 
-**`StandardModel.IsFermionSector.speciesGaugeWeight_mul_piece_zero`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L378).
+**`StandardModel.IsFermionSector.speciesGaugeWeight_mul_piece_zero`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L378).
 
 > The weight-zero piece of the product of two families' full symbol sets collapses
 > to the ten conjugate pairings: every other combination of species has hypercharges
@@ -381,7 +381,7 @@ lemma speciesGaugeWeight_mul_piece_zero {n m : ℕ} (f f' : Fin 3) (l : Fin n �
             (d' := h.rangeGaugeWeightE f' l')).piece 0
 ```
 
-**`StandardModel.IsFermionSector.iSup_fin_zero_eq`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L589).
+**`StandardModel.IsFermionSector.iSup_fin_zero_eq`**, a lemma, [line 589](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L589).
 
 > The zero-index derivative slot collapses a supremum over it to its value: there
 > is nothing to derive with respect to.
@@ -391,7 +391,7 @@ lemma iSup_fin_zero_eq {α : Type} [CompleteLattice α] (F : (Fin 0 → Fin 1 �
     ⨆ l, F l = F ![]
 ```
 
-**`StandardModel.IsFermionSector.derivSubmodule_zero_eq`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L595).
+**`StandardModel.IsFermionSector.derivSubmodule_zero_eq`**, a lemma, [line 595](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L595).
 
 > The underived derivative submodule as a join over families alone, the trivial
 > derivative slot dropped.
@@ -411,7 +411,7 @@ lemma derivSubmodule_zero_eq :
         LinearMap.range (bare f ![]))
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 614](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L614).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightSix_piece_zero`**, a lemma, [line 614](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L614).
 
 > The weight-zero piece at mass weight six, written out in the mass terms
 > themselves: the join, over pairs of families, of the ten ways to pair each
@@ -444,7 +444,7 @@ lemma massWeightSubmoduleGaugeWeightSix_piece_zero :
               (d' := h.rangeGaugeWeightE f' ![])).piece 0
 ```
 
-**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L679).
+**`StandardModel.IsFermionSector.massWeightSubmoduleGaugeWeightEight_piece_zero`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L679).
 
 > The weight-zero piece at mass weight eight, written out in the kinetic terms
 > themselves: the join, over pairs of families and a once-derived slot, of the ten
@@ -493,7 +493,7 @@ lemma massWeightSubmoduleGaugeWeightEight_piece_zero :
 > This is the fermionic analogue of `exists_smul_contraction_of_invariant_subset` for the
 > Lorentz group.
 
-**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_derivSubmodule_sup`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L779).
+**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_derivSubmodule_sup`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L779).
 
 > A gauge-invariant element of `h.derivSubmodule n ⊔ S`, for any submodule `S` closed under
 > the gauge action, already lies in `S`. The fermionic part carries no gauge singlet, since
@@ -507,7 +507,7 @@ lemma mem_of_invariant_of_mem_derivSubmodule_sup {n : ℕ} {S : Submodule ℂ B}
     (hinv : ∀ g : GaugeGroupI, repGauge g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleOne_sup`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L789).
+**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleOne_sup`**, a lemma, [line 789](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L789).
 
 > Mass weight one contributes nothing to a join: the submodule is trivial, so no invariance
 > hypothesis is needed.
@@ -517,7 +517,7 @@ lemma mem_of_mem_massWeightSubmoduleOne_sup {S : Submodule ℂ B}
     {x : B} (hx : x ∈ h.massWeightSubmodule 1 ⊔ S) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleTwo_sup`**, a lemma, [line 795](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L795).
+**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleTwo_sup`**, a lemma, [line 795](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L795).
 
 > Mass weight two contributes nothing to a join: the submodule is trivial, so no invariance
 > hypothesis is needed.
@@ -527,7 +527,7 @@ lemma mem_of_mem_massWeightSubmoduleTwo_sup {S : Submodule ℂ B}
     {x : B} (hx : x ∈ h.massWeightSubmodule 2 ⊔ S) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleFour_sup`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L801).
+**`StandardModel.IsFermionSector.mem_of_mem_massWeightSubmoduleFour_sup`**, a lemma, [line 801](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L801).
 
 > Mass weight four contributes nothing to a join: the submodule is trivial, so no
 > invariance hypothesis is needed.
@@ -537,7 +537,7 @@ lemma mem_of_mem_massWeightSubmoduleFour_sup {S : Submodule ℂ B}
     {x : B} (hx : x ∈ h.massWeightSubmodule 4 ⊔ S) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleThree_sup`**, a lemma, [line 808](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L808).
+**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleThree_sup`**, a lemma, [line 808](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L808).
 
 > A gauge-invariant element of `h.massWeightSubmodule 3 ⊔ S`, for `S` closed under the
 > gauge action, lies in `S`: mass weight three is the underived fermion towers, which carry
@@ -550,7 +550,7 @@ lemma mem_of_invariant_of_mem_massWeightSubmoduleThree_sup {S : Submodule ℂ B}
     (hinv : ∀ g : GaugeGroupI, repGauge g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleFive_sup`**, a lemma, [line 818](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L818).
+**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleFive_sup`**, a lemma, [line 818](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L818).
 
 > A gauge-invariant element of `h.massWeightSubmodule 5 ⊔ S`, for `S` closed under the
 > gauge action, lies in `S`: mass weight five is the once-derived fermion towers, which carry
@@ -563,7 +563,7 @@ lemma mem_of_invariant_of_mem_massWeightSubmoduleFive_sup {S : Submodule ℂ B}
     (hinv : ∀ g : GaugeGroupI, repGauge g x = x) : x ∈ S
 ```
 
-**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleSeven_sup`**, a lemma, [line 828](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L828).
+**`StandardModel.IsFermionSector.mem_of_invariant_of_mem_massWeightSubmoduleSeven_sup`**, a lemma, [line 828](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean#L828).
 
 > A gauge-invariant element of `h.massWeightSubmodule 7 ⊔ S`, for `S` closed under the
 > gauge action, lies in `S`: mass weight seven is the twice-derived fermion towers, which
@@ -583,4 +583,4 @@ lemma mem_of_invariant_of_mem_massWeightSubmoduleSeven_sup {S : Submodule ℂ B}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean)

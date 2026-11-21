@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation support lemmas
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Support`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean): 10 declarations, none with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Support`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean): 10 declarations, none with a docstring.
 
 > Support lemmas for the first variation: varied fields, test functions, varied jet coordinates.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Support`, [Ph
 
 ## A. Varied fields
 
-**`ClassicalFieldTheory.Local.variedField_zero`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L53).
+**`ClassicalFieldTheory.Local.variedField_zero`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L53).
 
 ```lean
 lemma variedField_zero (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -38,7 +38,7 @@ lemma variedField_zero (f : Space d → EuclideanSpace ℝ (Fin m))
     variedField f η 0 = f
 ```
 
-**`ClassicalFieldTheory.Local.variedField_variedField`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L60).
+**`ClassicalFieldTheory.Local.variedField_variedField`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L60).
 
 ```lean
 lemma variedField_variedField (f : Space d → EuclideanSpace ℝ (Fin m))
@@ -49,21 +49,21 @@ lemma variedField_variedField (f : Space d → EuclideanSpace ℝ (Fin m))
 
 ## B. Iterated derivative support lemmas
 
-**`ClassicalFieldTheory.Local.contDiff_space_deriv`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L72).
+**`ClassicalFieldTheory.Local.contDiff_space_deriv`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L72).
 
 ```lean
 lemma contDiff_space_deriv {g : Space d → ℝ} (hg : ContDiff ℝ ∞ g)
     (i : Fin d) : ContDiff ℝ ∞ (∂[i] g)
 ```
 
-**`ClassicalFieldTheory.Local.isTestFunction_space_deriv`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L78).
+**`ClassicalFieldTheory.Local.isTestFunction_space_deriv`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L78).
 
 ```lean
 lemma isTestFunction_space_deriv {g : Space d → ℝ} (hg : IsTestFunction g) (i : Fin d) :
     IsTestFunction (∂[i] g)
 ```
 
-**`ClassicalFieldTheory.Local.iteratedDerivList_contDiff`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L82).
+**`ClassicalFieldTheory.Local.iteratedDerivList_contDiff`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L82).
 
 ```lean
 lemma iteratedDerivList_contDiff (L : List (Fin d)) {g : Space d → ℝ}
@@ -71,7 +71,7 @@ lemma iteratedDerivList_contDiff (L : List (Fin d)) {g : Space d → ℝ}
     ContDiff ℝ ∞ (L.foldr (fun i h => ∂[i] h) g)
 ```
 
-**`ClassicalFieldTheory.Local.iteratedDerivList_isTestFunction`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L92).
+**`ClassicalFieldTheory.Local.iteratedDerivList_isTestFunction`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L92).
 
 ```lean
 lemma iteratedDerivList_isTestFunction (L : List (Fin d)) {g : Space d → ℝ}
@@ -79,7 +79,7 @@ lemma iteratedDerivList_isTestFunction (L : List (Fin d)) {g : Space d → ℝ}
     IsTestFunction (L.foldr (fun i h => ∂[i] h) g)
 ```
 
-**`ClassicalFieldTheory.Local.iteratedDerivList_commute_deriv`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L102).
+**`ClassicalFieldTheory.Local.iteratedDerivList_commute_deriv`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L102).
 
 ```lean
 lemma iteratedDerivList_commute_deriv (L : List (Fin d)) (i : Fin d)
@@ -87,7 +87,7 @@ lemma iteratedDerivList_commute_deriv (L : List (Fin d)) (i : Fin d)
     L.foldr (fun j h => ∂[j] h) (∂[i] g) = ∂[i] (L.foldr (fun j h => ∂[j] h) g)
 ```
 
-**`ClassicalFieldTheory.Local.iteratedDeriv_coord_isTestFunction`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L117).
+**`ClassicalFieldTheory.Local.iteratedDeriv_coord_isTestFunction`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L117).
 
 ```lean
 lemma iteratedDeriv_coord_isTestFunction (η : AdmissibleVariation d (EuclideanSpace ℝ (Fin m)))
@@ -95,7 +95,7 @@ lemma iteratedDeriv_coord_isTestFunction (η : AdmissibleVariation d (EuclideanS
     IsTestFunction (fun x => ∂^[I.1] (fun y => (η y) a) x)
 ```
 
-**`ClassicalFieldTheory.Local.firstVariationDensityTerm_integrable_of_continuous_coordDeriv`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L123).
+**`ClassicalFieldTheory.Local.firstVariationDensityTerm_integrable_of_continuous_coordDeriv`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L123).
 
 ```lean
 lemma firstVariationDensityTerm_integrable_of_continuous_coordDeriv
@@ -109,7 +109,7 @@ lemma firstVariationDensityTerm_integrable_of_continuous_coordDeriv
 
 ## C. Varied local-jet coordinates
 
-**`ClassicalFieldTheory.Local.continuous_jetBaseCoordinates_variedField`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L145).
+**`ClassicalFieldTheory.Local.continuous_jetBaseCoordinates_variedField`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean#L145).
 
 ```lean
 lemma continuous_jetBaseCoordinates_variedField
@@ -131,4 +131,4 @@ lemma continuous_jetBaseCoordinates_variedField
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean)

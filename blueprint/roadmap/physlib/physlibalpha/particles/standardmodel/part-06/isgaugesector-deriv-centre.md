@@ -8,7 +8,7 @@ proof: formalized
 
 # The centre of `SL(2,ℂ)` on the gauge sector
 
-The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.Centre`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.Centre`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean): 3 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.Centre`, [P
 > At the centre each of the three sums of `repLorentz_F` is a sum against a row of the identity
 > matrix, so each collapses to its diagonal term and the symbol is returned unchanged.
 
-**`StandardModel.IsGaugeSector.repLorentz_neg_one_F`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L84).
+**`StandardModel.IsGaugeSector.repLorentz_neg_one_F`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L84).
 
 > A field-strength symbol is fixed by the centre of `SL(2,ℂ)`: all of its indices mix by the
 > Lorentz matrix, which is the identity there.
@@ -56,7 +56,7 @@ lemma repLorentz_neg_one_F {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fi
     (φ : Module.Dual ℝ GaugeAlgebra) : repLorentz (-1) (F l μ ν φ) = F l μ ν φ
 ```
 
-**`StandardModel.IsGaugeSector.span_range_F_le_centreEigenspace`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L97).
+**`StandardModel.IsGaugeSector.span_range_F_le_centreEigenspace`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L97).
 
 > The span of a field-strength symbol family carries the sign `+1`.
 
@@ -71,7 +71,7 @@ lemma span_range_F_le_centreEigenspace {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
 > The derivative submodule is the join of the symbol spans over the derivative slots and the two
 > covector indices, and an eigenspace is closed under joins.
 
-**`StandardModel.IsGaugeSector.derivSubmodule_le_centreEigenspace`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L117).
+**`StandardModel.IsGaugeSector.derivSubmodule_le_centreEigenspace`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean#L117).
 
 > **The centre of `SL(2,ℂ)` acts on the field-strength derivative submodules by `+1`**, for
 > any number of covariant derivatives: the field strength is of integer spin and every one of
@@ -89,4 +89,4 @@ lemma derivSubmodule_le_centreEigenspace (n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean)

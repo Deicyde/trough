@@ -8,7 +8,7 @@ proof: formalized
 
 # The cohomology class of the affine symplectic group
 
-The module `PhyslibAlpha.ClassicalMechanics.MomentMap.Cohomology`, [PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean): 38 declarations (8 instances with no name), 18 with a docstring.
+The module `PhyslibAlpha.ClassicalMechanics.MomentMap.Cohomology`, [PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean): 38 declarations (8 instances with no name), 18 with a docstring.
 
 > The moment cocycle of the affine symplectic group has a non-zero cohomology class.
 
@@ -69,7 +69,7 @@ The module `PhyslibAlpha.ClassicalMechanics.MomentMap.Cohomology`, [PhyslibAlpha
 
 > The affine symplectomorphisms `x ↦ B x + C` of (10.12), with `B` linear symplectic.
 
-**`ClassicalMechanics.AffineSymplecticGroup`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L97).
+**`ClassicalMechanics.AffineSymplecticGroup`**, a structure, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L97).
 
 > The affine symplectic group of a bilinear form `σ` on `E`: the affine maps `x ↦ B x + C` with
 > `B` a linear equivalence preserving `σ` (Souriau (10.12)).
@@ -85,63 +85,63 @@ structure AffineSymplecticGroup {E : Type} [AddCommGroup E] [Module ℝ E]
   map_symplecticForm : ∀ v w, σ (linear v) (linear w) = σ v w
 ```
 
-**An instance with no name**, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L110).
+**An instance with no name**, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L110).
 
 ```lean
 instance : Mul (AffineSymplecticGroup σ)
 ```
 
-**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L114).
+**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L114).
 
 ```lean
 instance : One (AffineSymplecticGroup σ)
 ```
 
-**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L116).
+**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L116).
 
 ```lean
 instance : Inv (AffineSymplecticGroup σ)
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.mul_linear`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L122).
+**`ClassicalMechanics.AffineSymplecticGroup.mul_linear`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L122).
 
 ```lean
 lemma mul_linear (a b : AffineSymplecticGroup σ) : (a * b).linear = b.linear.trans a.linear
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.mul_translation`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L125).
+**`ClassicalMechanics.AffineSymplecticGroup.mul_translation`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L125).
 
 ```lean
 lemma mul_translation (a b : AffineSymplecticGroup σ) :
     (a * b).translation = a.linear b.translation + a.translation
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.one_linear`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L129).
+**`ClassicalMechanics.AffineSymplecticGroup.one_linear`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L129).
 
 ```lean
 lemma one_linear : (1 : AffineSymplecticGroup σ).linear = LinearEquiv.refl ℝ E
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.one_translation`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L132).
+**`ClassicalMechanics.AffineSymplecticGroup.one_translation`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L132).
 
 ```lean
 lemma one_translation : (1 : AffineSymplecticGroup σ).translation = 0
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.inv_linear`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L135).
+**`ClassicalMechanics.AffineSymplecticGroup.inv_linear`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L135).
 
 ```lean
 lemma inv_linear (a : AffineSymplecticGroup σ) : a⁻¹.linear = a.linear.symm
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.inv_translation`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L138).
+**`ClassicalMechanics.AffineSymplecticGroup.inv_translation`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L138).
 
 ```lean
 lemma inv_translation (a : AffineSymplecticGroup σ) :
     a⁻¹.translation = -(a.linear.symm a.translation)
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.ext`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L143).
+**`ClassicalMechanics.AffineSymplecticGroup.ext`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L143).
 
 > Two elements with the same linear and translation parts are equal.
 
@@ -150,13 +150,13 @@ lemma ext {a b : AffineSymplecticGroup σ} (hl : a.linear = b.linear)
     (ht : a.translation = b.translation) : a = b
 ```
 
-**An instance with no name**, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L149).
+**An instance with no name**, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L149).
 
 ```lean
 instance : Group (AffineSymplecticGroup σ)
 ```
 
-**An instance with no name**, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L166).
+**An instance with no name**, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L166).
 
 > The affine symplectic group acts on `E` by `a_E(x) = B x + C` (10.12).
 
@@ -164,7 +164,7 @@ instance : Group (AffineSymplecticGroup σ)
 instance : MulAction (AffineSymplecticGroup σ) E
 ```
 
-**`ClassicalMechanics.AffineSymplecticGroup.smul_def`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L176).
+**`ClassicalMechanics.AffineSymplecticGroup.smul_def`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L176).
 
 ```lean
 lemma smul_def (a : AffineSymplecticGroup σ) (x : E) : a • x = a.linear x + a.translation
@@ -177,7 +177,7 @@ lemma smul_def (a : AffineSymplecticGroup σ) (x : E) : a • x = a.linear x + a
 > (6.25). Only the module structure is used here: the Lie bracket of Souriau's (11.22 a) lives on
 > the abstract Lie algebra of `AffineSymplecticAction`.
 
-**`ClassicalMechanics.affineSymplecticAlgebra`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L195).
+**`ClassicalMechanics.affineSymplecticAlgebra`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L195).
 
 > The Lie algebra of the affine symplectic group: the pairs `(A, b)` with `A` infinitesimally
 > symplectic ((10.28)-(10.32)).
@@ -186,14 +186,14 @@ lemma smul_def (a : AffineSymplecticGroup σ) (x : E) : a • x = a.linear x + a
 def affineSymplecticAlgebra (σ : LinearMap.BilinForm ℝ E) : Submodule ℝ ((E →ₗ[ℝ] E) × E)
 ```
 
-**`ClassicalMechanics.mem_affineSymplecticAlgebra`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L214).
+**`ClassicalMechanics.mem_affineSymplecticAlgebra`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L214).
 
 ```lean
 lemma mem_affineSymplecticAlgebra {Z : (E →ₗ[ℝ] E) × E} :
     Z ∈ affineSymplecticAlgebra σ ↔ ∀ v w, σ (Z.1 v) w + σ v (Z.1 w) = 0
 ```
 
-**`ClassicalMechanics.vectorField`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L218).
+**`ClassicalMechanics.vectorField`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L218).
 
 > The affine vector field `Z_E(x) = A x + b` of `Z = (A, b)`, as in `AffineSymplecticAction`.
 
@@ -201,7 +201,7 @@ lemma mem_affineSymplecticAlgebra {Z : (E →ₗ[ℝ] E) × E} :
 def vectorField (Z : affineSymplecticAlgebra σ) (x : E) : E
 ```
 
-**`ClassicalMechanics.adjoint`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L221).
+**`ClassicalMechanics.adjoint`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L221).
 
 > The adjoint action (6.24): `Ad(a)(A, b) = (B A B⁻¹, B b - B A B⁻¹ C)` for `a = (B, C)`.
 
@@ -210,20 +210,20 @@ def adjoint (a : AffineSymplecticGroup σ) :
     affineSymplecticAlgebra σ →ₗ[ℝ] affineSymplecticAlgebra σ
 ```
 
-**`ClassicalMechanics.adjoint_one`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L243).
+**`ClassicalMechanics.adjoint_one`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L243).
 
 ```lean
 lemma adjoint_one : adjoint (1 : AffineSymplecticGroup σ) = LinearMap.id
 ```
 
-**`ClassicalMechanics.adjoint_mul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L248).
+**`ClassicalMechanics.adjoint_mul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L248).
 
 ```lean
 lemma adjoint_mul (a b : AffineSymplecticGroup σ) :
     adjoint (a * b) = adjoint a ∘ₗ adjoint b
 ```
 
-**`ClassicalMechanics.vectorField_adjoint`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L262).
+**`ClassicalMechanics.vectorField_adjoint`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L262).
 
 > (6.25): the adjoint action is the one for which `(Ad(a) Z)_E (a_E x) = B (Z_E x)`. With
 > `vectorField_injective` this characterises `adjoint`.
@@ -233,7 +233,7 @@ lemma vectorField_adjoint (a : AffineSymplecticGroup σ) (Z : affineSymplecticAl
     vectorField (adjoint a Z) (a • x) = a.linear (vectorField Z x)
 ```
 
-**`ClassicalMechanics.vectorField_injective`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L277).
+**`ClassicalMechanics.vectorField_injective`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L277).
 
 > An element of the Lie algebra is determined by its vector field.
 
@@ -247,7 +247,7 @@ lemma vectorField_injective {Z Z' : affineSymplecticAlgebra σ}
 > The coadjoint action of (11.15), `a_{𝔤*}(μ) = μ ∘ Ad(a⁻¹)`, and the moment of (11.7), which is the
 > moment of `AffineSymplecticAction` read on the pairs `(A, b)`.
 
-**An instance with no name**, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L297).
+**An instance with no name**, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L297).
 
 > (11.15): the coadjoint action `a_{𝔤*}(μ) = μ.a_𝔤⁻¹`, that is `μ ∘ Ad(a⁻¹)`.
 
@@ -255,26 +255,26 @@ lemma vectorField_injective {Z Z' : affineSymplecticAlgebra σ}
 instance : SMul (AffineSymplecticGroup σ) (Dual ℝ (affineSymplecticAlgebra σ))
 ```
 
-**`ClassicalMechanics.coadjoint_smul_apply`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L301).
+**`ClassicalMechanics.coadjoint_smul_apply`**, a lemma, [line 301](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L301).
 
 ```lean
 lemma coadjoint_smul_apply (a : AffineSymplecticGroup σ) (μ : Dual ℝ (affineSymplecticAlgebra σ))
     (Z : affineSymplecticAlgebra σ) : (a • μ) Z = μ (adjoint a⁻¹ Z)
 ```
 
-**An instance with no name**, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L304).
+**An instance with no name**, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L304).
 
 ```lean
 instance : MulAction (AffineSymplecticGroup σ) (Dual ℝ (affineSymplecticAlgebra σ))
 ```
 
-**An instance with no name**, [line 312](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L312).
+**An instance with no name**, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L312).
 
 ```lean
 instance : DistribMulAction (AffineSymplecticGroup σ) (Dual ℝ (affineSymplecticAlgebra σ))
 ```
 
-**`ClassicalMechanics.moment`**, a def, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L322).
+**`ClassicalMechanics.moment`**, a def, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L322).
 
 > (11.7): the moment of the affine symplectic action, `μ(x)(A, b) = -½ σ(A x, x) - σ(b, x)`, the
 > moment of `AffineSymplecticAction` read on the pairs `(A, b)`.
@@ -283,14 +283,14 @@ instance : DistribMulAction (AffineSymplecticGroup σ) (Dual ℝ (affineSymplect
 def moment (σ : LinearMap.BilinForm ℝ E) (x : E) : Dual ℝ (affineSymplecticAlgebra σ)
 ```
 
-**`ClassicalMechanics.moment_apply`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L333).
+**`ClassicalMechanics.moment_apply`**, a lemma, [line 333](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L333).
 
 ```lean
 lemma moment_apply (x : E) (Z : affineSymplecticAlgebra σ) :
     moment σ x Z = -(1 / 2 : ℝ) * σ (Z.1.1 x) x - σ Z.1.2 x
 ```
 
-**`ClassicalMechanics.moment_zero`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L337).
+**`ClassicalMechanics.moment_zero`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L337).
 
 ```lean
 lemma moment_zero : moment σ (0 : E) = 0
@@ -300,7 +300,7 @@ lemma moment_zero : moment σ (0 : E) = 0
 
 > (11.17 a) in closed form, (11.17 b), (11.17 c) and the non-vanishing of the class.
 
-**`ClassicalMechanics.moment_smul_sub_smul_moment`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L352).
+**`ClassicalMechanics.moment_smul_sub_smul_moment`**, a lemma, [line 352](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L352).
 
 > (11.17 a) in closed form: for this moment, the defect `θ(a) = μ(a_E(x)) - a_{𝔤*}(μ(x))` does
 > not depend on the point `x`, and equals the moment at `a_E(0) = C`. The terms in `x` cancel by the
@@ -312,7 +312,7 @@ lemma moment_smul_sub_smul_moment (hσ : IsSymplecticForm σ) (x : E)
     moment σ (a • x) - a • moment σ x = moment σ a.translation
 ```
 
-**`ClassicalMechanics.isCocycle₁_moment_translation`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L373).
+**`ClassicalMechanics.isCocycle₁_moment_translation`**, a lemma, [line 373](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L373).
 
 > (11.17 b): `θ(a) = μ(C)` is a 1-cocycle of the coadjoint action,
 > `θ(a × b) = θ(a) + a_{𝔤*}(θ(b))`.
@@ -322,7 +322,7 @@ lemma isCocycle₁_moment_translation (hσ : IsSymplecticForm σ) :
     groupCohomology.IsCocycle₁ (fun a : AffineSymplecticGroup σ => moment σ a.translation)
 ```
 
-**`ClassicalMechanics.sigmaLinear`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L387).
+**`ClassicalMechanics.sigmaLinear`**, a def, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L387).
 
 > `y ↦ σ (A y)` as a continuous linear map from `E` to `E →L[ℝ] ℝ`, used to differentiate the
 > quadratic part of the moment.
@@ -332,7 +332,7 @@ def sigmaLinear {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDim
     (σ : LinearMap.BilinForm ℝ E) (A : E →ₗ[ℝ] E) : E →L[ℝ] (E →L[ℝ] ℝ)
 ```
 
-**`ClassicalMechanics.sigmaLinear_apply`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L393).
+**`ClassicalMechanics.sigmaLinear_apply`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L393).
 
 ```lean
 lemma sigmaLinear_apply {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
@@ -340,7 +340,7 @@ lemma sigmaLinear_apply {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
     sigmaLinear σ A y v = σ (A y) v
 ```
 
-**`ClassicalMechanics.hasFDerivAt_quad`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L399).
+**`ClassicalMechanics.hasFDerivAt_quad`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L399).
 
 > The derivative of `y ↦ σ (A y) y` at `x` is `v ↦ σ (A v) x + σ (A x) v`.
 
@@ -351,7 +351,7 @@ lemma hasFDerivAt_quad {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
       ((sigmaLinear σ A x).comp (ContinuousLinearMap.id ℝ E) + (sigmaLinear σ A).flip x) x
 ```
 
-**`ClassicalMechanics.hasFDerivAt_moment`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L409).
+**`ClassicalMechanics.hasFDerivAt_moment`**, a lemma, [line 409](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L409).
 
 > (11.7) for the affine symplectic group: `σ(Z_E(x)) = -∇[μ.Z]`.
 
@@ -363,7 +363,7 @@ lemma hasFDerivAt_moment {E : Type} [NormedAddCommGroup E] [NormedSpace ℝ E]
       (-(LinearMap.toContinuousLinearMap (σ (vectorField Z x)))) x
 ```
 
-**`ClassicalMechanics.hasDerivAt_moment_translation`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L430).
+**`ClassicalMechanics.hasDerivAt_moment_translation`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L430).
 
 > Part of (11.17 c): along any curve of the group issued from the identity whose translation part
 > has velocity `b'`, the derivative of `θ = μ(C)` at the identity is `σ (b', b Z)`, which is the value
@@ -378,7 +378,7 @@ lemma hasDerivAt_moment_translation {E : Type} [NormedAddCommGroup E] [NormedSpa
     HasDerivAt (fun t => moment σ (γ t).translation Z) (σ b' Z.1.2) 0
 ```
 
-**`ClassicalMechanics.not_isCoboundary₁_moment_translation`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L448).
+**`ClassicalMechanics.not_isCoboundary₁_moment_translation`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L448).
 
 > The cohomology class of the affine symplectic group of a non-zero symplectic vector space is
 > NOT zero: `θ` is not a coboundary. On the translations `(id, C)` the coadjoint action fixes the
@@ -398,7 +398,7 @@ lemma not_isCoboundary₁_moment_translation (hσ : IsSymplecticForm σ) (hE : �
 > The simplest instance: the standard symplectic plane, whose affine symplectic group has a non-zero
 > cohomology class. This is the group-level counterpart of `planeTranslations_not_coboundary`.
 
-**`ClassicalMechanics.planeForm_not_isCoboundary₁`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L481).
+**`ClassicalMechanics.planeForm_not_isCoboundary₁`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean#L481).
 
 > The affine symplectic group of the symplectic plane has a non-zero cohomology class.
 
@@ -414,4 +414,4 @@ lemma planeForm_not_isCoboundary₁ :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean)
+- [PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalMechanics/MomentMap/Cohomology.lean)

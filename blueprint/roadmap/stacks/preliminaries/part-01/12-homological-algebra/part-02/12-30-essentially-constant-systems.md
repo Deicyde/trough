@@ -8,13 +8,13 @@ proof: formalized
 
 # 12.30 Essentially constant systems
 
-Section 12.30 of the Stacks Project, [Tag 0A2D](https://stacks.math.columbia.edu/tag/0A2D). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 12.30 of the Stacks Project, [Tag 0A2D](https://stacks.math.columbia.edu/tag/0A2D). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A2E, a lemma
 
 [Tag 0A2E](https://stacks.math.columbia.edu/tag/0A2E) in the Stacks Project.
 
-**`CategoryTheory.EssentiallyConstantInd.isEssentiallyConstantInd_iff_exists_subcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean#L261). The attribute's comment: “(1)”.
+**`CategoryTheory.EssentiallyConstantInd.isEssentiallyConstantInd_iff_exists_subcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean#L261). The attribute's comment: “(1)”.
 
 > Stacks 0A2E (1). Let `M : I ⥤ A` be a diagram over a filtered category in a preadditive
 > Karoubian category. Then `M` is essentially constant if and only if `colim M` exists and there are
@@ -34,7 +34,7 @@ theorem isEssentiallyConstantInd_iff_exists_subcategory [IsFiltered I] [IsIdempo
             ∃ (i'' : I') (f : i' ⟶ i''), b.inr ≫ e.hom ≫ M.map (H.map f) = 0
 ```
 
-**`CategoryTheory.EssentiallyConstantPro.isEssentiallyConstantPro_iff_exists_subcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean#L447). The attribute's comment: “(2)”.
+**`CategoryTheory.EssentiallyConstantPro.isEssentiallyConstantPro_iff_exists_subcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean, line 447](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Karoubian.lean#L447). The attribute's comment: “(2)”.
 
 > Stacks 0A2E (2). Let `M : I ⥤ A` be a diagram over a cofiltered category in a preadditive
 > Karoubian category. Then `M` is essentially constant if and only if `lim M` exists and there are
@@ -58,7 +58,7 @@ theorem isEssentiallyConstantPro_iff_exists_subcategory [IsCofiltered I] [IsIdem
 
 [Tag 0A2F](https://stacks.math.columbia.edu/tag/0A2F) in the Stacks Project.
 
-**`hasColimit_biprod_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L186). The attribute's comment: “iff”.
+**`hasColimit_biprod_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L186). The attribute's comment: “iff”.
 
 > In a Karoubian additive category, the pointwise biproduct functor `F ⊞ G`
 > has a colimit iff both `F` and `G` do.
@@ -71,7 +71,7 @@ theorem hasColimit_biprod_iff
     HasColimit (F ⊞ G) ↔ HasColimit F ∧ HasColimit G
 ```
 
-**`colimitBiprodIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L213). The attribute's comment: “iso”.
+**`colimitBiprodIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L213). The attribute's comment: “iso”.
 
 > In a Karoubian additive category, if both `F` and `G` have colimits, then
 > the colimit of the pointwise biproduct is canonically isomorphic to the
@@ -86,7 +86,7 @@ noncomputable def colimitBiprodIso
     colimit (F ⊞ G) ≅ colimit F ⊞ colimit G
 ```
 
-**`colimitBiprodIso_of_hasColimit_biprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L226). The attribute's comment: “iso\_from\_biprod”.
+**`colimitBiprodIso_of_hasColimit_biprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L226). The attribute's comment: “iso\_from\_biprod”.
 
 > In a Karoubian additive category, if `F ⊞ G` has a colimit, then it is canonically isomorphic
 > to the biproduct of the colimits of `F` and `G`.
@@ -105,7 +105,7 @@ noncomputable def colimitBiprodIso_of_hasColimit_biprod
 
 [Tag 0A2G](https://stacks.math.columbia.edu/tag/0A2G) in the Stacks Project.
 
-**`isEssentiallyConstantInd_biprod_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L385).
+**`isEssentiallyConstantInd_biprod_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 385](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L385).
 
 > Let `I` be a filtered category and `C` an additive Karoubian category. For
 > two functors `F, G : I ⥤ C`, the direct sum `F ⊞ G` is essentially constant
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 12.30, Tag 0A2D](https://stacks.math.columbia.edu/tag/0A2D)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

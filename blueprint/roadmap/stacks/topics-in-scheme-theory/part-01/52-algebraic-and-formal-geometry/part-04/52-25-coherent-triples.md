@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.25 Coherent triples
 
-Section 52.25 of the Stacks Project, [Tag 0F22](https://stacks.math.columbia.edu/tag/0F22). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.25 of the Stacks Project, [Tag 0F22](https://stacks.math.columbia.edu/tag/0F22). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0F23, a lemma
 
 [Tag 0F23](https://stacks.math.columbia.edu/tag/0F23) in the Stacks Project.
 
-**`Stacks.Algebraization.nonempty_preparedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTriplePreparation.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTriplePreparation.lean#L262).
+**`Stacks.Algebraization.nonempty_preparedExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTriplePreparation.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTriplePreparation.lean#L262).
 
 > **Stacks Project, Tag 0F23.** Every coherent triple admits a prepared extension: a coherent
 > module on `Spec A` on which `f` acts regularly, isomorphic to the triple's punctured-spectrum
@@ -34,7 +34,7 @@ public theorem nonempty_preparedExtension (A : Type u) [CommRing A]
 
 [Tag 0F24](https://stacks.math.columbia.edu/tag/0F24) in the Stacks Project.
 
-**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L92). The attribute's comment: “the Euler characteristic of the triple itself”.
+**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L92). The attribute's comment: “the Euler characteristic of the triple itself”.
 
 > **The Euler characteristic of a coherent triple**: the length of the cokernel minus the
 > length of the kernel of the closed-fibre map of a prepared extension. Prepared extensions exist
@@ -46,7 +46,7 @@ public noncomputable def CoherentTriple.eulerCharacteristic {A : Type u} [CommRi
     [IsLocalRing A] [IsNoetherianRing A] {f : A} (T : CoherentTriple A f) : ℤ
 ```
 
-**`Stacks.Algebraization.kernel_finiteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean#L490). The attribute's comment: “finite length of the kernel”.
+**`Stacks.Algebraization.kernel_finiteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean, line 490](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean#L490). The attribute's comment: “finite length of the kernel”.
 
 > **The kernel of the closed-fibre map of a prepared extension has finite length over `A`.**
 
@@ -58,7 +58,7 @@ public theorem kernel_finiteLength
     IsFiniteLength A (kernel P.closedFibreMap).carrier
 ```
 
-**`Stacks.Algebraization.cokernel_finiteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean#L503). The attribute's comment: “finite length of the cokernel”.
+**`Stacks.Algebraization.cokernel_finiteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean, line 503](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleLength.lean#L503). The attribute's comment: “finite length of the cokernel”.
 
 > **The cokernel of the closed-fibre map of a prepared extension has finite length over
 > `A`.**
@@ -75,7 +75,7 @@ public theorem cokernel_finiteLength
 
 [Tag 0F25](https://stacks.math.columbia.edu/tag/0F25) in the Stacks Project.
 
-**`Stacks.Algebraization.PreparedExtension.eulerCharacteristic_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/WellDefined.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/WellDefined.lean#L483).
+**`Stacks.Algebraization.PreparedExtension.eulerCharacteristic_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/WellDefined.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/WellDefined.lean#L483).
 
 > **Stacks Project, Tag 0F25.** The Euler characteristic of a coherent triple does not depend
 > on the prepared extension used to compute it: any two prepared extensions of the same triple have
@@ -93,7 +93,7 @@ public theorem PreparedExtension.eulerCharacteristic_eq
 
 [Tag 0F26](https://stacks.math.columbia.edu/tag/0F26) in the Stacks Project.
 
-**`Stacks.Algebraization.eulerCharacteristic_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/Additivity.lean, line 727](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/Additivity.lean#L727).
+**`Stacks.Algebraization.eulerCharacteristic_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/Additivity.lean, line 727](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerCharacteristic/Additivity.lean#L727).
 
 > **Stacks Project, Tag 0F26.** The Euler characteristic of a coherent triple is additive
 > along a short exact sequence of coherent triples: for any prepared extensions `P`, `Q` and `N`
@@ -110,7 +110,7 @@ public theorem eulerCharacteristic_add_of_shortExact
     Q.eulerCharacteristic = P.eulerCharacteristic + N.eulerCharacteristic
 ```
 
-**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L157). The attribute's comment: “additivity for the Euler characteristics of the triples themselves”.
+**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_add_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L157). The attribute's comment: “additivity for the Euler characteristics of the triples themselves”.
 
 > **Stacks Project, Tag 0F26 for the triples themselves.** The Euler characteristic of a
 > coherent triple is additive along a short exact sequence of coherent triples.
@@ -127,7 +127,7 @@ public theorem CoherentTriple.eulerCharacteristic_add_of_shortExact {A : Type u}
 
 [Tag 0F27](https://stacks.math.columbia.edu/tag/0F27) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_polynomial_natDegree_le_dim_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertInductionStep.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertInductionStep.lean#L171).
+**`Stacks.Algebraization.exists_polynomial_natDegree_le_dim_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertInductionStep.lean, line 171](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertInductionStep.lean#L171).
 
 > Let `A` be a Noetherian local ring, `f ∈ 𝔪` a nonzerodivisor, and `(L, L₀, λ)` an invertible
 > coherent triple. For every coherent triple `T = (F, F₀, α)` there is a polynomial `P ∈ ℚ[t]` with
@@ -144,7 +144,7 @@ public theorem exists_polynomial_natDegree_le_dim_supp (hf : f ∈ maximalIdeal 
         ∀ n : ℤ, (((T.twistZ L hL n).eulerCharacteristic : ℤ) : ℚ) = P.eval (n : ℚ)
 ```
 
-**`Stacks.Algebraization.exists_polynomial_natDegree_le_of_forall_sub_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L205). The attribute's comment: “the concluding step: polynomiality on ℤ from the first difference”.
+**`Stacks.Algebraization.exists_polynomial_natDegree_le_of_forall_sub_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleHilbertPolynomial.lean#L205). The attribute's comment: “the concluding step: polynomiality on ℤ from the first difference”.
 
 > **A function on all of `ℤ` whose first difference is a polynomial is a polynomial.** If
 > `g : ℤ → ℤ` satisfies `g (n + 1) - g n = Q(n)` at every integer `n`, with `Q` a rational
@@ -162,7 +162,7 @@ public theorem exists_polynomial_natDegree_le_of_forall_sub_eq {g : ℤ → ℤ}
     ∃ P : Polynomial ℚ, P.natDegree ≤ d + 1 ∧ ∀ n : ℤ, (g n : ℚ) = P.eval (n : ℚ)
 ```
 
-**`Stacks.Algebraization.CoherentTriple.twistPow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTensor.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTensor.lean#L246). The attribute's comment: “the twist of a coherent triple by the nonnegative powers of an invertible triple”.
+**`Stacks.Algebraization.CoherentTriple.twistPow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTensor.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTensor.lean#L246). The attribute's comment: “the twist of a coherent triple by the nonnegative powers of an invertible triple”.
 
 > **The twists of a coherent triple by the nonnegative tensor powers of an invertible coherent
 > triple.** The zeroth twist is the triple itself and each further one is the tensor product of the
@@ -175,7 +175,7 @@ public noncomputable def CoherentTriple.twistPow {A : Type u} [CommRing A] [IsLo
     {f : A} (T L : CoherentTriple A f) (hL : IsInvertibleTriple L) : ℕ → CoherentTriple A f
 ```
 
-**`Stacks.Algebraization.CoherentTriple.twistZ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTwist.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTwist.lean#L187). The attribute's comment: “the integer twists of a coherent triple by an invertible coherent triple”.
+**`Stacks.Algebraization.CoherentTriple.twistZ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTwist.lean, line 187](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTwist.lean#L187). The attribute's comment: “the integer twists of a coherent triple by an invertible coherent triple”.
 
 > **The twist of a coherent triple by the `n`-th tensor power of an invertible coherent
 > triple**, for `n : ℤ`. Its members are the tensor products of the members of the triple with the
@@ -195,7 +195,7 @@ public noncomputable def CoherentTriple.twistZ {A : Type u} [CommRing A] [IsLoca
 
 [Tag 0F28](https://stacks.math.columbia.edu/tag/0F28) in the Stacks Project.
 
-**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_eq_length_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean#L168). The attribute's comment: “the Euler characteristic formula”.
+**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_eq_length_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean#L168). The attribute's comment: “the Euler characteristic formula”.
 
 > **Stacks Project, Tag 0F28.** For an invertible coherent triple over a Noetherian local ring
 > of depth at least three, the Euler characteristic of the triple is the length of the cokernel of
@@ -225,7 +225,7 @@ public theorem CoherentTriple.eulerCharacteristic_eq_length_cokernel (A : Type u
           LinearMap.range (globalSectionsMap A f T))).toNat : ℤ)
 ```
 
-**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean#L210). The attribute's comment: “nonnegativity”.
+**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleEulerFormula.lean#L210). The attribute's comment: “nonnegativity”.
 
 > **The Euler characteristic of an invertible coherent triple is nonnegative**, being the
 > length of a cokernel.
@@ -243,7 +243,7 @@ public theorem CoherentTriple.eulerCharacteristic_nonneg (A : Type u) [CommRing 
     0 ≤ T.eulerCharacteristic
 ```
 
-**`Stacks.Algebraization.globalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean#L170). The attribute's comment: “the canonical map on global sections”.
+**`Stacks.Algebraization.globalSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean, line 170](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean#L170). The attribute's comment: “the canonical map on global sections”.
 
 > **The canonical map on global sections of a coherent triple.** It carries a section of the
 > module on the punctured spectrum to its restriction to the punctured closed fibre, read through
@@ -259,7 +259,7 @@ noncomputable def globalSectionsMap (A : Type u) [CommRing A] [IsLocalRing A] (f
     Γ(T.F, ⊤) →ₗ[A] Γ((Scheme.Modules.pullback (puncturedClosedFibre A f).ι).obj T.F₀, ⊤)
 ```
 
-**`Stacks.Algebraization.finiteLength_cokernel_globalSectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean#L750). The attribute's comment: “finite length of the cokernel”.
+**`Stacks.Algebraization.finiteLength_cokernel_globalSectionsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean, line 750](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleInvertible.lean#L750). The attribute's comment: “finite length of the cokernel”.
 
 > **The cokernel of the canonical map on global sections has finite length.** The restriction
 > map from the closed fibre to the punctured closed fibre is surjective, by Hartogs extension on
@@ -282,7 +282,7 @@ theorem finiteLength_cokernel_globalSectionsMap (A : Type u) [CommRing A] [IsLoc
         LinearMap.range (globalSectionsMap A f T))
 ```
 
-**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_eq_zero_iff_isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTriviality.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTriviality.lean#L316). The attribute's comment: “vanishing criterion”.
+**`Stacks.Algebraization.CoherentTriple.eulerCharacteristic_eq_zero_iff_isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTriviality.lean, line 316](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Algebraization/CoherentTripleTriviality.lean#L316). The attribute's comment: “vanishing criterion”.
 
 > **Stacks Project, Tag 0F28.** For an invertible coherent triple over a Noetherian local ring
 > of depth at least three, the Euler characteristic of the triple vanishes exactly when the member
@@ -318,4 +318,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.25, Tag 0F22](https://stacks.math.columbia.edu/tag/0F22)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

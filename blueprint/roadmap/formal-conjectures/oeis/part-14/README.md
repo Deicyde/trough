@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Number of $0 < k < n/2$ such… to Difference between $n \tau(n)$…
+# Ordered ways to write $2n = p +… to Sum of $d \cdot \tau(d)$ over…
 
+- [Ordered ways to write $2n = p + q$ with $p, q$ and $p_{p+2} + 2$ all prime](ordered-ways-to-write-2n-p-q-with-p-q-and-p-p-2.md)
 - [Number of $0 < k < n/2$ such that $\phi(k)\phi(n-k)$ is a square](number-of-0-k-n-2-such-that-phi-k-phi-n-k-is-a-s.md)
 - [Number of parts in the symmetric representation of $\sigma(n)$](number-of-parts-in-the-symmetric-representation.md)
 - [Ordered ways to write $n = k + m$ with $p_k + 4$ and $p_{p_m} + 4$ both prime](ordered-ways-to-write-n-k-m-with-p-k-4-and-p-p-m.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Signed digit sums in bases $b \ge 5$](signed-digit-sums-in-bases-b-ge-5.md)
 - [Least index $i$ for which $\text{num}(\sigma_1(i)/i) - \text{den}(\sigma_1(i)/i) = n$](least-index-i-for-which-num-sigma-1-i-i-den-sigm.md)
 - [Sum of $d \cdot \tau(d)$ over proper divisors $d$ of $n$](sum-of-d-cdot-tau-d-over-proper-divisors-d-of-n.md)
-- [Difference between $n \tau(n)$ and $\sum_{d \mid n, d < n} d \tau(d)$](difference-between-n-tau-n-and-sum-d-mid-n-d-n-d.md)

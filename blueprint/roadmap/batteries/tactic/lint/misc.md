@@ -7,11 +7,11 @@ proof: formalized
 
 # Various linters
 
-`Batteries.Tactic.Lint.Misc`, in [Batteries/Tactic/Lint/Misc.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean), by Floris van Doorn, Robert Y. Lewis, Arthur Paulino, Gabriel Ebner.
+`Batteries.Tactic.Lint.Misc`, in [Batteries/Tactic/Lint/Misc.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean), by Floris van Doorn, Robert Y. Lewis, Arthur Paulino, Gabriel Ebner.
 
 > This file defines several small linters.
 
-`Batteries.Tactic.Lint.unusedArguments` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L29))
+`Batteries.Tactic.Lint.unusedArguments` (definition, [line 29](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L29))
 
 > A linter for checking for unused arguments. We skip all declarations that contain `sorry` in
 > their value, and allow arguments starting with `_` to be unused.
@@ -20,7 +20,7 @@ proof: formalized
 def unusedArguments : Linter
 ```
 
-`Batteries.Tactic.Lint.docBlame` (definition, [line 83](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L83))
+`Batteries.Tactic.Lint.docBlame` (definition, [line 83](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L83))
 
 > A linter for checking definition doc strings.
 
@@ -28,7 +28,7 @@ def unusedArguments : Linter
 def docBlame : Linter
 ```
 
-`Batteries.Tactic.Lint.docBlameThm` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L111))
+`Batteries.Tactic.Lint.docBlameThm` (definition, [line 111](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L111))
 
 > A linter for checking theorem doc strings.
 
@@ -36,7 +36,7 @@ def docBlame : Linter
 def docBlameThm : Linter
 ```
 
-`Batteries.Tactic.Lint.checkType` (definition, [line 132](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L132))
+`Batteries.Tactic.Lint.checkType` (definition, [line 132](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L132))
 
 > A linter for checking whether statements of declarations are well-typed.
 
@@ -44,7 +44,7 @@ def docBlameThm : Linter
 def checkType : Linter
 ```
 
-`Batteries.Tactic.Lint.synTaut` (definition, [line 149](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L149))
+`Batteries.Tactic.Lint.synTaut` (definition, [line 149](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L149))
 
 > A linter for checking that declarations aren't syntactic tautologies.
 > Checks whether a lemma is a declaration of the form `∀ a b ... z, e₁ = e₂`
@@ -57,7 +57,7 @@ def checkType : Linter
 def synTaut : Linter
 ```
 
-`Batteries.Tactic.Lint.findUnusedHaves` (definition, [line 174](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L174))
+`Batteries.Tactic.Lint.findUnusedHaves` (definition, [line 174](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L174))
 
 > Return a list of unused `let_fun` terms in an expression that introduce proofs.
 
@@ -65,7 +65,7 @@ def synTaut : Linter
 def findUnusedHaves (_ : Expr) : MetaM (Array MessageData)
 ```
 
-`Batteries.Tactic.Lint.unusedHavesSuffices` (definition, [line 194](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L194))
+`Batteries.Tactic.Lint.unusedHavesSuffices` (definition, [line 194](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L194))
 
 > A linter for checking that declarations don't have unused term mode have statements.
 
@@ -73,7 +73,7 @@ def findUnusedHaves (_ : Expr) : MetaM (Array MessageData)
 def unusedHavesSuffices : Linter
 ```
 
-`Batteries.Tactic.Lint.explicitVarsOfIff` (definition, [line 221](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean#L221))
+`Batteries.Tactic.Lint.explicitVarsOfIff` (definition, [line 221](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean#L221))
 
 > A linter for checking if variables appearing on both sides of an iff are explicit. Ideally, such
 > variables should be implicit instead.
@@ -88,5 +88,5 @@ def explicitVarsOfIff : Linter
 
 ## Sources
 
-- [Batteries/Tactic/Lint/Misc.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Misc.lean)
+- [Batteries/Tactic/Lint/Misc.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Misc.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Tactic.Lint.Misc.json)

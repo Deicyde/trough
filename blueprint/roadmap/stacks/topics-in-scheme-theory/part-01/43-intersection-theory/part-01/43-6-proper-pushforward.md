@@ -8,13 +8,13 @@ proof: formalized
 
 # 43.6 Proper pushforward
 
-Section 43.6 of the Stacks Project, [Tag 0AZC](https://stacks.math.columbia.edu/tag/0AZC). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 43.6 of the Stacks Project, [Tag 0AZC](https://stacks.math.columbia.edu/tag/0AZC). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AZD, a lemma
 
 [Tag 0AZD](https://stacks.math.columbia.edu/tag/0AZD) in the Stacks Project.
 
-**`Stacks.Intersection.properPushforward_coherentSheafCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean#L78). The attribute's comment: “cycle identity for a coherent sheaf”.
+**`Stacks.Intersection.properPushforward_coherentSheafCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean#L78). The attribute's comment: “cycle identity for a coherent sheaf”.
 
 > **Stacks 0AZD.** Let `f : X ⟶ Y` be a proper morphism of varieties over a field `k` and let
 > `F` be a coherent `𝒪_X`-module whose support has dimension at most `n`. Then proper pushforward
@@ -41,7 +41,7 @@ theorem properPushforward_coherentSheafCycle (k : Type u) [Field k]
           (fieldChowSituation k) sX sY f hf F hFn)
 ```
 
-**`Stacks.Intersection.properPushforward_closedSubschemeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean#L106). The attribute's comment: “closed subscheme”.
+**`Stacks.Intersection.properPushforward_closedSubschemeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Intersection/ProperPushforward/CoherentSheaf.lean#L106). The attribute's comment: “closed subscheme”.
 
 > **Stacks 0AZD.** Let `f : X ⟶ Y` be a proper morphism of varieties over a field `k` and let
 > `i : Z ⟶ X` be a closed subscheme of dimension at most `n`. Then proper pushforward of
@@ -77,7 +77,7 @@ theorem properPushforward_closedSubschemeCycle (k : Type u) [Field k] {Z : Schem
 
 [Tag 0B0N](https://stacks.math.columbia.edu/tag/0B0N) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean#L268). The attribute's comment: “functoriality of proper pushforward of cycles, in the case of varieties”.
+**`Stacks.Chow.properPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean#L268). The attribute's comment: “functoriality of proper pushforward of cycles, in the case of varieties”.
 
 > **Stacks 02R5.** Proper pushforward of `k`-cycles is functorial: pushing forward along
 > `f : X ⟶ Y` and then along `g : Y ⟶ Z` is pushing forward along the composite.
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.6, Tag 0AZC](https://stacks.math.columbia.edu/tag/0AZC)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

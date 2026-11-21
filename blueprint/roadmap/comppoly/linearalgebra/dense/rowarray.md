@@ -7,7 +7,7 @@ proof: formalized
 
 # Row-Array Homogeneous Kernels
 
-`CompPoly.LinearAlgebra.Dense.RowArray`, in [CompPoly/LinearAlgebra/Dense/RowArray.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.RowArray`, in [CompPoly/LinearAlgebra/Dense/RowArray.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean), by Valerii Huhnin.
 
 > Gauss-Jordan reduction and homogeneous-kernel extraction for a matrix stored as
 > an array of rows, `Array (Array F)`, with the column count passed separately.
@@ -18,7 +18,7 @@ proof: formalized
 > columns exactly as in `DenseMatrix.homogeneousKernelBasis`.
 > Correctness is in `CompPoly.LinearAlgebra.Dense.RowArrayCorrectness`.
 
-`CompPoly.DenseMatrix.toRows` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L32))
+`CompPoly.DenseMatrix.toRows` (definition, [line 32](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L32))
 
 > The rows of a dense matrix as a row array, each of width `M.cols`.
 
@@ -26,7 +26,7 @@ proof: formalized
 def toRows [Zero F] (M : DenseMatrix F) : Array (Array F)
 ```
 
-`CompPoly.DenseMatrix.swapScalarRows` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L38))
+`CompPoly.DenseMatrix.swapScalarRows` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L38))
 
 > Swap two scalar rows in a row-array matrix.
 
@@ -35,7 +35,7 @@ def swapScalarRows (rows : Array (Array F)) (rowA rowB : Nat) :
     Array (Array F)
 ```
 
-`CompPoly.DenseMatrix.findScalarPivotRow` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L45))
+`CompPoly.DenseMatrix.findScalarPivotRow` (definition, [line 45](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L45))
 
 > Find a nonzero pivot row at or below `startRow` in column `col`.
 
@@ -44,7 +44,7 @@ def findScalarPivotRow (rows : Array (Array F)) (startRow col : Nat) :
     Option Nat
 ```
 
-`CompPoly.DenseMatrix.normalizeScalarRow` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L51))
+`CompPoly.DenseMatrix.normalizeScalarRow` (definition, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L51))
 
 > Scale a scalar row so that column `pivotCol` becomes one.
 
@@ -52,7 +52,7 @@ def findScalarPivotRow (rows : Array (Array F)) (startRow col : Nat) :
 def normalizeScalarRow (row : Array F) (pivotCol : Nat) : Array F
 ```
 
-`CompPoly.DenseMatrix.addScaledScalarRow` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L59))
+`CompPoly.DenseMatrix.addScaledScalarRow` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L59))
 
 > Add `factor * source` to `target`, using zero defaults for ragged rows.
 
@@ -60,7 +60,7 @@ def normalizeScalarRow (row : Array F) (pivotCol : Nat) : Array F
 def addScaledScalarRow (target source : Array F) (factor : F) : Array F
 ```
 
-`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L64))
+`CompPoly.DenseMatrix.normalizeAndEliminateScalarRows` (definition, [line 64](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L64))
 
 > Normalize one pivot row and clear the pivot column in all other rows.
 
@@ -69,7 +69,7 @@ def normalizeAndEliminateScalarRows (rows : Array (Array F))
     (pivotRow pivotCol : Nat) : Array (Array F)
 ```
 
-`CompPoly.DenseMatrix.ScalarRrefResult` (structure, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L86))
+`CompPoly.DenseMatrix.ScalarRrefResult` (structure, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L86))
 
 > RREF result for a scalar row-array matrix.
 
@@ -79,7 +79,7 @@ structure ScalarRrefResult where
   pivots : Array Nat
 ```
 
-`CompPoly.DenseMatrix.scalarRrefRowsLoop` (definition, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L91))
+`CompPoly.DenseMatrix.scalarRrefRowsLoop` (definition, [line 91](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L91))
 
 > Fuel-bounded row-array RREF for tiny scalar coefficient matrices.
 
@@ -88,7 +88,7 @@ def scalarRrefRowsLoop (cols : Nat) :
     Nat → Nat → Nat → Array (Array F) → Array Nat → ScalarRrefResult (F := F)
 ```
 
-`CompPoly.DenseMatrix.scalarRrefRows` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L107))
+`CompPoly.DenseMatrix.scalarRrefRows` (definition, [line 107](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L107))
 
 > Row-array RREF for tiny scalar coefficient matrices.
 
@@ -97,7 +97,7 @@ def scalarRrefRows (rows : Array (Array F)) (cols : Nat) :
     ScalarRrefResult (F := F)
 ```
 
-`CompPoly.DenseMatrix.basisVectorForFreeColumnRows` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L112))
+`CompPoly.DenseMatrix.basisVectorForFreeColumnRows` (definition, [line 112](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L112))
 
 > Kernel basis vector for one free column of a row-array RREF matrix.
 
@@ -106,7 +106,7 @@ def basisVectorForFreeColumnRows (rows : Array (Array F))
     (pivots : Array Nat) (cols free : Nat) : Array F
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisRows` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean#L123))
+`CompPoly.DenseMatrix.homogeneousKernelBasisRows` (definition, [line 123](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean#L123))
 
 > Homogeneous scalar-kernel basis for a row-array matrix.
 
@@ -121,5 +121,5 @@ def homogeneousKernelBasisRows (rows : Array (Array F)) (cols : Nat) :
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/RowArray.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/RowArray.lean)
+- [CompPoly/LinearAlgebra/Dense/RowArray.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/RowArray.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.RowArray.json)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.25 Relative dualizing complexes in the Noetherian case
 
-Section 47.25 of the Stacks Project, [Tag 0E9M](https://stacks.math.columbia.edu/tag/0E9M). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 47.25 of the Stacks Project, [Tag 0E9M](https://stacks.math.columbia.edu/tag/0E9M). 9 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BZV, a lemma
 
 [Tag 0BZV](https://stacks.math.columbia.edu/tag/0BZV) in the Stacks Project.
 
-**`Dualizing.relativeDualizingComplexBaseChange_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L226). The attribute's comment: “case (3), R → A perfect and A, R' Tor independent”.
+**`Dualizing.relativeDualizingComplexBaseChange_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 226](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L226). The attribute's comment: “case (3), R → A perfect and A, R' Tor independent”.
 
 > Let `R → R'` be a ring homomorphism, let `φ : R → A` be a perfect homomorphism presented by
 > `p`, and let `A` and `R'` be Tor independent over `R`.  Then the relative dualizing complex
@@ -41,7 +41,7 @@ theorem relativeDualizingComplexBaseChange_of_perfect [Algebra.Perfect R A]
           ((DerivedCategory.singleFunctor (ModuleCat.{u} R') 0).obj (ModuleCat.of R' R')))
 ```
 
-**`Dualizing.relativeDualizingComplexBaseChange_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L270). The attribute's comment: “case (1), R → R' flat”.
+**`Dualizing.relativeDualizingComplexBaseChange_of_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L270). The attribute's comment: “case (1), R → R' flat”.
 
 > Let `R` be a Noetherian ring, `R → R'` a flat ring homomorphism, and let `φ : R → A` be of
 > finite type, presented by `p`.  Then the relative dualizing complex commutes with base change to
@@ -68,7 +68,7 @@ theorem relativeDualizingComplexBaseChange_of_flatBaseChange [IsNoetherianRing R
           ((DerivedCategory.singleFunctor (ModuleCat.{u} R') 0).obj (ModuleCat.of R' R')))
 ```
 
-**`Dualizing.relativeDualizingComplexBaseChange_of_flatAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L316). The attribute's comment: “case (2), R → A flat”.
+**`Dualizing.relativeDualizingComplexBaseChange_of_flatAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean, line 316](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingBaseChange.lean#L316). The attribute's comment: “case (2), R → A flat”.
 
 > Let `R` be a Noetherian ring, `R → R'` a ring homomorphism, and let `φ : R → A` be flat
 > and of finite type, presented by `p`.  Then the relative dualizing complex commutes with base
@@ -99,7 +99,7 @@ theorem relativeDualizingComplexBaseChange_of_flatAlgebra [IsNoetherianRing R]
 
 [Tag 0BZW](https://stacks.math.columbia.edu/tag/0BZW) in the Stacks Project.
 
-**`Dualizing.upperShriekFunctor_unit_derivedCategoryBBounded_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizing.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizing.lean#L147). The attribute's comment: “(1)(a)”. References: SGA 5 III (6.2), “partial”.
+**`Dualizing.upperShriekFunctor_unit_derivedCategoryBBounded_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizing.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizing.lean#L147). The attribute's comment: “(1)(a)”. References: SGA 5 III (6.2), “partial”.
 
 > Let `φ : R →+* A` be a perfect homomorphism of finite type of Noetherian rings. Then the
 > relative dualizing complex `ω_{A/R} = φ^!(R)` lies in `Dᵇ_Coh(A)`.
@@ -114,7 +114,7 @@ theorem upperShriekFunctor_unit_derivedCategoryBBounded_of_perfect
           (ModuleCat.of R (ULift.{v} R))))
 ```
 
-**`Dualizing.PolynomialPresentation.relativeDualizingComplex_hasFiniteTorDimension_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean#L466). The attribute's comment: “(1)(b)”. References: SGA 5 III (6.2), “partial”.
+**`Dualizing.PolynomialPresentation.relativeDualizingComplex_hasFiniteTorDimension_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean#L466). The attribute's comment: “(1)(b)”. References: SGA 5 III (6.2), “partial”.
 
 > **[Stacks, Tag 0BZW] (1)(b).**  Let `φ : R →+* A` be a perfect homomorphism, presented by `p`.
 > Then the relative dualizing complex `ω^•_{A/R} = φ^!(R)` has finite Tor dimension as a complex of
@@ -139,7 +139,7 @@ theorem relativeDualizingComplex_hasFiniteTorDimension_of_perfect [Algebra.Perfe
           ((DerivedCategory.singleFunctor (ModuleCat.{u} R) 0).obj (ModuleCat.of R R))))
 ```
 
-**`Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean#L523). The attribute's comment: “(2)(a)”.
+**`Dualizing.PolynomialPresentation.relativeDualizingComplex_isRelativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean, line 523](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingFiniteTorDimension.lean#L523). The attribute's comment: “(2)(a)”.
 
 > **[Stacks, Tag 0BZW] (2)(a).**  Let `φ : R → A` be a flat homomorphism of finite type of
 > Noetherian rings, presented by `p`.  Then `ω^•_{A/R} = φ^!(R)` is perfect relative to `R` in the
@@ -173,7 +173,7 @@ theorem relativeDualizingComplex_isRelativelyPerfect
         ((DerivedCategory.singleFunctor (ModuleCat.{u} R) 0).obj (ModuleCat.of R R)))
 ```
 
-**`Dualizing.upperShriekFunctor_unit_isIso_derivedHomothety_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean#L69). The attribute's comment: “(1)(c)”.
+**`Dualizing.upperShriekFunctor_unit_isIso_derivedHomothety_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean#L69). The attribute's comment: “(1)(c)”.
 
 > **Stacks Project, Tag 0BZW (1)(c).**  Let `φ : R →+* A` be a perfect homomorphism of finite
 > type of Noetherian rings, presented by an arbitrary polynomial presentation `p`.  Then the
@@ -199,7 +199,7 @@ theorem upperShriekFunctor_unit_isIso_derivedHomothety_of_perfect [IsNoetherianR
           (ModuleCat.of R (ULift.{v} R)))))
 ```
 
-**`Dualizing.isDualizingComplex_derivedExtensionScalars_relativeDualizing_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean#L116). The attribute's comment: “(2)(b)”.
+**`Dualizing.isDualizingComplex_derivedExtensionScalars_relativeDualizing_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingProperties.lean#L116). The attribute's comment: “(2)(b)”.
 
 > **Stacks Project, Tag 0BZW (2)(b).**  Let `φ : R → A` be a flat homomorphism of finite type of
 > Noetherian rings, presented by an arbitrary polynomial presentation `p`, and let `R → k` be a
@@ -229,7 +229,7 @@ theorem isDualizingComplex_derivedExtensionScalars_relativeDualizing_of_flat
 
 [Tag 0E0P](https://stacks.math.columbia.edu/tag/0E0P) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_derivedExtensionScalars_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FieldExtensionBaseChange.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FieldExtensionBaseChange.lean#L123).
+**`Dualizing.isDualizingComplex_derivedExtensionScalars_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FieldExtensionBaseChange.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/DualizingComplexes/FieldExtensionBaseChange.lean#L123).
 
 > **Stacks Project, Tag 0E0P.** Let `k ⊆ K` be an extension of fields and let `A` be a
 > `k`-algebra of finite type.  The derived base change of a dualizing complex for `A` along
@@ -252,7 +252,7 @@ theorem isDualizingComplex_derivedExtensionScalars_fieldExtension
 
 [Tag 0E4B](https://stacks.math.columbia.edu/tag/0E4B) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.isInvertible_upperShriekFunctor_obj_unit_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean#L477).
+**`Dualizing.PolynomialPresentation.isInvertible_upperShriekFunctor_obj_unit_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean, line 477](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean#L477).
 
 > **Stacks 0E4B**, invertibility of the relative dualizing complex of a local complete
 > intersection homomorphism.  Let `φ : R → A` be a local complete intersection homomorphism with
@@ -276,7 +276,7 @@ theorem isInvertible_upperShriekFunctor_obj_unit_of_isLocalCompleteIntersection
     MonoidalCategory.IsInvertible (p.upperShriekFunctor.{u, u}.obj R₀)
 ```
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean#L507). The attribute's comment: “the formula φ^!(K) = K ⊗\_R^L ω\_\{A/R}, at an arbitrary polynomial presentation and an arbitrary module universe”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean, line 507](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/CompleteIntersection.lean#L507). The attribute's comment: “the formula φ^!(K) = K ⊗\_R^L ω\_\{A/R}, at an arbitrary polynomial presentation and an arbitrary module universe”.
 
 > **Stacks 0E4B**, the formula for upper shriek.  Let `φ : R → A` be a local complete
 > intersection homomorphism and let `p` be a polynomial presentation of `φ`.
@@ -303,7 +303,7 @@ theorem upperShriekFunctor_iso_derivedTensorProduct_of_lci
       derivedTensorProductOver.{u, v} f (p.upperShriekFunctor.{u, v}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L207). The attribute's comment: “the formula φ^!(K) = K ⊗\_R^L ω\_\{A/R}, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct\_of\_lci”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L207). The attribute's comment: “the formula φ^!(K) = K ⊗\_R^L ω\_\{A/R}, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct\_of\_lci”.
 
 > **Stacks 0E4B, with no carried hypothesis.** Let `φ : R → A` be a local complete intersection
 > homomorphism and `p` a polynomial presentation of it. Then
@@ -331,7 +331,7 @@ theorem nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_lci
 
 [Tag 0E4C](https://stacks.math.columbia.edu/tag/0E4C) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_fiber_iff_isInvertible_upperShriekFunctor_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/GorensteinFibres.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/GorensteinFibres.lean#L379).
+**`Dualizing.isGorensteinRing_fiber_iff_isInvertible_upperShriekFunctor_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/GorensteinFibres.lean, line 379](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/GorensteinFibres.lean#L379).
 
 > **Stacks Project, Tag 0E4C.**  Let `φ : R → A` be a flat homomorphism of finite type of
 > Noetherian rings.  Then the fibres `A ⊗_R κ(q)` are Gorenstein for every prime `q ⊆ R` if and
@@ -356,7 +356,7 @@ theorem isGorensteinRing_fiber_iff_isInvertible_upperShriekFunctor_unit
 
 [Tag 0E9N](https://stacks.math.columbia.edu/tag/0E9N) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_localization_isNormalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Normalized.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/Normalized.lean#L421).
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_localization_isNormalizedDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Normalized.lean, line 421](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/Normalized.lean#L421).
 
 > Let `φ : R → A` be a finite type homomorphism of Noetherian rings with `R` local, and let
 > `m ⊆ A` be a maximal ideal lying over the maximal ideal of `R`.  If `ω_R` is a normalized
@@ -378,7 +378,7 @@ theorem PolynomialPresentation.upperShriekFunctor_localization_isNormalizedDuali
 
 [Tag 0E9P](https://stacks.math.columbia.edu/tag/0E9P) in the Stacks Project.
 
-**`Dualizing.upperShriekFunctor_neg_relativeDimensionAt_le_of_nontrivial_localizedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBound.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBound.lean#L422). The attribute's comment: “for the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, the relative dualizing complex being well defined only up to isomorphism, and with the fibre dimension named by a hypothesis identifying it with a natural number”.
+**`Dualizing.upperShriekFunctor_neg_relativeDimensionAt_le_of_nontrivial_localizedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBound.lean, line 422](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBound.lean#L422). The attribute's comment: “for the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, the relative dualizing complex being well defined only up to isomorphism, and with the fibre dimension named by a hypothesis identifying it with a natural number”.
 
 > **[Stacks, Tag 0E9P].** Let `R → A` be a finite type homomorphism of Noetherian rings, let
 > `𝔮 ⊂ A` be a prime and let `d` be the dimension at `𝔮` of the fibre of `Spec(A) → Spec(R)` over
@@ -404,7 +404,7 @@ theorem upperShriekFunctor_neg_relativeDimensionAt_le_of_nontrivial_localizedHom
 
 [Tag 0E9Q](https://stacks.math.columbia.edu/tag/0E9Q) in the Stacks Project.
 
-**`Dualizing.upperShriekFunctor_relativeDimensionAt_bounds_of_nontrivial_localizedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBoundUpper.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBoundUpper.lean#L238). The attribute's comment: “the local bounds: H^i(omega)\_q nonzero implies -d <= i <= 0, d the dimension at q of the fibre through q, for the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, the relative dualizing complex being well defined only up to isomorphism; the Tor amplitude clause is Dualizing.upperShriekFunctor\_hasTorAmplitude\_of\_fiber\_dimension\_le”.
+**`Dualizing.upperShriekFunctor_relativeDimensionAt_bounds_of_nontrivial_localizedHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBoundUpper.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/FibreDimensionBoundUpper.lean#L238). The attribute's comment: “the local bounds: H^i(omega)\_q nonzero implies -d <= i <= 0, d the dimension at q of the fibre through q, for the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, the relative dualizing complex being well defined only up to isomorphism; the Tor amplitude clause is Dualizing.upperShriekFunctor\_hasTorAmplitude\_of\_fiber\_dimension\_le”.
 
 > **[Stacks, Tag 0E9Q], the local bounds.** Let `R → A` be a flat finite type homomorphism of
 > Noetherian rings, let `𝔮 ⊂ A` be a prime and let `d` be the dimension at `𝔮` of the fibre of
@@ -427,7 +427,7 @@ theorem upperShriekFunctor_relativeDimensionAt_bounds_of_nontrivial_localizedHom
       -(d : ℤ) ≤ i ∧ i ≤ 0
 ```
 
-**`Dualizing.upperShriekFunctor_hasTorAmplitude_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingTorAmplitude.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingTorAmplitude.lean#L505). The attribute's comment: “the Tor amplitude clause: if all fibres of Spec(A) -> Spec(R) have dimension at most d then the relative dualizing complex has Tor amplitude in [-d, 0] over R; the relative dualizing complex is read at the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, being well defined only up to isomorphism”.
+**`Dualizing.upperShriekFunctor_hasTorAmplitude_of_fiber_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingTorAmplitude.lean, line 505](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingTorAmplitude.lean#L505). The attribute's comment: “the Tor amplitude clause: if all fibres of Spec(A) -> Spec(R) have dimension at most d then the relative dualizing complex has Tor amplitude in [-d, 0] over R; the relative dualizing complex is read at the upper shriek functor of an arbitrary polynomial presentation of the homomorphism, being well defined only up to isomorphism”.
 
 > **[Stacks, Tag 0E9Q], the Tor amplitude clause.**  Let `R → A` be a flat finite type
 > homomorphism of Noetherian rings.  If all fibres of `Spec(A) → Spec(R)` have dimension at most
@@ -464,7 +464,7 @@ theorem upperShriekFunctor_hasTorAmplitude_of_fiber_dimension_le
 
 [Tag 0E9R](https://stacks.math.columbia.edu/tag/0E9R) in the Stacks Project.
 
-**`Dualizing.le_of_nontrivial_localizedModule_homology_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean, line 813](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean#L813). The attribute's comment: “the vanishing H^i(ω\_\{A/R})\_𝔭 = 0 for i < -r, in full”.
+**`Dualizing.le_of_nontrivial_localizedModule_homology_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean, line 813](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean#L813). The attribute's comment: “the vanishing H^i(ω\_\{A/R})\_𝔭 = 0 for i < -r, in full”.
 
 > **[Stacks, Tag 0E9R], the vanishing.**  Let `R → A` be a finite type homomorphism of
 > Noetherian rings and let `𝔭 ⊂ R` be a prime.  Assume that `R_𝔭` is Cohen--Macaulay and that
@@ -498,7 +498,7 @@ theorem le_of_nontrivial_localizedModule_homology_relativeDualizingComplex
       -(r : ℤ) ≤ i
 ```
 
-**`Dualizing.propertySkModule_localizedModule_homology_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean#L847). The attribute's comment: “the (S\_2) clause, H^\{-r}(ω\_\{A/R})\_𝔭 is (S\_2) as an A\_𝔭-module, in full”.
+**`Dualizing.propertySkModule_localizedModule_homology_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean, line 847](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Dualizing/UpperShriek/RelativeDualizingCohenMacaulay.lean#L847). The attribute's comment: “the (S\_2) clause, H^\{-r}(ω\_\{A/R})\_𝔭 is (S\_2) as an A\_𝔭-module, in full”.
 
 > **[Stacks, Tag 0E9R], the `(S₂)` clause.**  Let `R → A` be a finite type homomorphism of
 > Noetherian rings and let `𝔭 ⊂ R` be a prime.  Assume that `R_𝔭` is Cohen--Macaulay and that
@@ -538,4 +538,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.25, Tag 0E9M](https://stacks.math.columbia.edu/tag/0E9M)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.24 Finite morphisms and pro-étale sites
 
-Section 61.24 of the Stacks Project, [Tag 09A7](https://stacks.math.columbia.edu/tag/09A7). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 61.24 of the Stacks Project, [Tag 09A7](https://stacks.math.columbia.edu/tag/09A7). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09A8, a lemma
 
 [Tag 09A8](https://stacks.math.columbia.edu/tag/09A8) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exact_smallProetalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/FinitePushforwardExact.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/FinitePushforwardExact.lean#L90).
+**`AlgebraicGeometry.ProEtale.exact_smallProetalePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/FinitePushforwardExact.lean, line 90](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/FinitePushforwardExact.lean#L90).
 
 > **Stacks 09A8.** For a finite morphism of schemes which is locally of finite presentation,
 > direct image of abelian sheaves along the induced morphism of small pro-étale sites is exact.
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.24, Tag 09A7](https://stacks.math.columbia.edu/tag/09A7)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

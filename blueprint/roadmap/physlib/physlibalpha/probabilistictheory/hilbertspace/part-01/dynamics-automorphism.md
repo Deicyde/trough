@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.conjStarAlgAut_surjective, ProbabilisticTheory.conjStarAlgAut_eq_iff, ProbabilisticTheory.ProjectiveUnitary, ProbabilisticTheory.projectiveUnitaryEquivStarAlgAut, UnitaryOneParameterGroup.toAutomorphism, UnitaryOneParameterGroup.toAutomorphism_apply, UnitaryOneParameterGroup.hasDerivAt_toAutomorphism, UnitaryOneParameterGroup.const_of_hasDerivAt_zero
+lean: PhyslibAlpha.ProbabilisticTheory.conjStarAlgAut_surjective, PhyslibAlpha.ProbabilisticTheory.conjStarAlgAut_eq_iff, PhyslibAlpha.ProbabilisticTheory.ProjectiveUnitary, PhyslibAlpha.ProbabilisticTheory.projectiveUnitaryEquivStarAlgAut, UnitaryOneParameterGroup.toAutomorphism, UnitaryOneParameterGroup.toAutomorphism_apply, UnitaryOneParameterGroup.hasDerivAt_toAutomorphism, UnitaryOneParameterGroup.const_of_hasDerivAt_zero
 statement: formalized
 proof: formalized
 ---
 
 # Automorphisms of the bounded operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Dynamics.Automorphism`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean): 11 declarations (1 instance with no name), 10 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Dynamics.Automorphism`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean): 11 declarations (1 instance with no name), 10 with a docstring.
 
 > ⋆-automorphisms of bounded operators are unitary conjugations; conjugation flows are unique.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Dynamics.Automorphism`
 
 ## A. Every ⋆-automorphism is unitary conjugation
 
-**`ProbabilisticTheory.conjStarAlgAut_surjective`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.conjStarAlgAut_surjective`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L60).
 
 > Every ⋆-automorphism of `H →L[ℂ] H` is implemented by unitary conjugation.
 
@@ -45,7 +45,7 @@ lemma conjStarAlgAut_surjective :
     Function.Surjective (Unitary.conjStarAlgAut ℂ (H →L[ℂ] H))
 ```
 
-**`ProbabilisticTheory.conjStarAlgAut_eq_iff`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.conjStarAlgAut_eq_iff`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L72).
 
 > Two unitaries implement the same ⋆-automorphism of `H →L[ℂ] H` exactly when they differ by a
 > scalar phase.
@@ -57,7 +57,7 @@ lemma conjStarAlgAut_eq_iff (u v : unitary (H →L[ℂ] H)) :
       ∃ c : unitary ℂ, u = c • v
 ```
 
-**`ProbabilisticTheory.ProjectiveUnitary`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.ProjectiveUnitary`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L79).
 
 > The projective unitary group of `H`, obtained by quotienting out scalar phases.
 
@@ -66,13 +66,13 @@ def ProjectiveUnitary (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ 
     [CompleteSpace H]
 ```
 
-**An instance with no name**, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L83).
+**An instance with no name**, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L83).
 
 ```lean
 noncomputable instance : Group (ProjectiveUnitary H)
 ```
 
-**`ProbabilisticTheory.projectiveUnitaryEquivStarAlgAut`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.projectiveUnitaryEquivStarAlgAut`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L86).
 
 > Reversible transformations of `H →L[ℂ] H` are precisely projective unitaries.
 
@@ -83,7 +83,7 @@ noncomputable def projectiveUnitaryEquivStarAlgAut :
 
 ## B. The automorphism group generated by unitary conjugation
 
-**`UnitaryOneParameterGroup.toAutomorphism`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L99).
+**`UnitaryOneParameterGroup.toAutomorphism`**, a def, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L99).
 
 > The reversible dynamics `a ↦ U(t) a U(t)⋆` induced by a unitary one-parameter group.
 
@@ -92,7 +92,7 @@ noncomputable def toAutomorphism (U : UnitaryOneParameterGroup H) :
     AutomorphismGroup (H →L[ℂ] H)
 ```
 
-**`UnitaryOneParameterGroup.toAutomorphism_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L121).
+**`UnitaryOneParameterGroup.toAutomorphism_apply`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L121).
 
 > The induced automorphism is unitary conjugation.
 
@@ -103,7 +103,7 @@ lemma toAutomorphism_apply (U : UnitaryOneParameterGroup H) (t : ℝ) (a : H →
 
 ## C. Differential characterization
 
-**`UnitaryOneParameterGroup.hasDerivAt_toAutomorphism`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L129).
+**`UnitaryOneParameterGroup.hasDerivAt_toAutomorphism`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L129).
 
 > The conjugation flow satisfies the Heisenberg equation
 > `d/dt αₜ(a) = ⁅αₜ(a), i • generator⁆`.
@@ -114,7 +114,7 @@ lemma hasDerivAt_toAutomorphism (U : UnitaryOneParameterGroup H) (a : H →L[ℂ
       ⁅(toAutomorphism U).toFun t a, Complex.I • U.generator⁆ t
 ```
 
-**`UnitaryOneParameterGroup.const_of_hasDerivAt_zero`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L142).
+**`UnitaryOneParameterGroup.const_of_hasDerivAt_zero`**, a lemma, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L142).
 
 > A function on `ℝ` with everywhere-zero derivative is constant.
 
@@ -123,7 +123,7 @@ lemma const_of_hasDerivAt_zero {f : ℝ → H →L[ℂ] H} (hf : ∀ s, HasDeriv
     f t = f 0
 ```
 
-**`UnitaryOneParameterGroup.hasDerivAt_conj_zero`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L153).
+**`UnitaryOneParameterGroup.hasDerivAt_conj_zero`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L153).
 
 > Along a solution `α` of the Heisenberg equation, the conjugated path
 > `s ↦ U(s)⋆ αₛ(a) U(s)` has zero derivative.
@@ -136,7 +136,7 @@ lemma hasDerivAt_conj_zero (U : UnitaryOneParameterGroup H)
     HasDerivAt (fun r => star (U r) * α r a * U r) 0 s
 ```
 
-**`UnitaryOneParameterGroup.toAutomorphism_unique`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L167).
+**`UnitaryOneParameterGroup.toAutomorphism_unique`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean#L167).
 
 > The conjugation flow is the unique solution of its Heisenberg initial-value problem.
 
@@ -149,9 +149,9 @@ lemma toAutomorphism_unique (U : UnitaryOneParameterGroup H)
 
 ## Depends on
 
-- [Unitary one-parameter groups](../../../../physlib/mathematics/formathlib/oneparametersubgroups-unitary.md)
+- [Unitary one-parameter groups](../../../../physlib/mathematics/formathlib/part-02/oneparametersubgroups-unitary.md)
 - [⋆-automorphisms and reversible dynamics](../../cstaralgebra/automorphism.md)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean)

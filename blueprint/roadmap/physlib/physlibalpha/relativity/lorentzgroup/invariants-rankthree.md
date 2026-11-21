@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of three four-vector indices
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankThree`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean): 9 declarations, 9 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankThree`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean): 9 declarations, 9 with a docstring.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankThree`, [Physlib
 > the two transverse directions, so on the light-cone directions of that axis it is `1` on the
 > two of weight `±2` and `-1` on the two transverse ones (`lightConeSign`).
 
-**`Lorentz.lightConeSign`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L71).
+**`Lorentz.lightConeSign`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L71).
 
 > The sign the half turn about an axis gives each light-cone direction of that axis: `1` on
 > the two of weight `±2`, `-1` on the two transverse ones.
@@ -56,7 +56,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankThree`, [Physlib
 def lightConeSign (κ : Fin 4) : ℤ
 ```
 
-**`Lorentz.sum_halfTurn_lightConeCoeff`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L75).
+**`Lorentz.sum_halfTurn_lightConeCoeff`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L75).
 
 > The half turn about the axis `i` acts on each light-cone direction along that axis
 > by its sign.
@@ -68,7 +68,7 @@ lemma sum_halfTurn_lightConeCoeff (i : Fin 3) (κ : Fin 4) (ν : Fin 1 ⊕ Fin 3
       = ((lightConeSign κ : ℤ) : ℂ) * lightConeCoeff i κ ν
 ```
 
-**`Lorentz.sum_prod_halfTurn_lightConeCoeff`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L89).
+**`Lorentz.sum_prod_halfTurn_lightConeCoeff`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L89).
 
 > The scalar behind the action of the half turn on a light-cone multi-index: the half
 > turn acts slot by slot, so the product of the per-slot signs factors out.
@@ -81,7 +81,7 @@ lemma sum_prod_halfTurn_lightConeCoeff (i : Fin 3) {n : ℕ} (c : Fin n → Fin 
       = ((∏ j, lightConeSign (c j) : ℤ) : ℂ) * ∏ j, lightConeCoeff i (c j) (a j)
 ```
 
-**`Lorentz.prod_lightConeSign_of_sum_lightConeWeight_eq_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L112).
+**`Lorentz.prod_lightConeSign_of_sum_lightConeWeight_eq_zero`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L112).
 
 > A light-cone multi-index of three slots and total boost weight zero has an odd
 > number of transverse slots, so the half turn acts on it by `-1`.
@@ -97,7 +97,7 @@ lemma prod_lightConeSign_of_sum_lightConeWeight_eq_zero (c : Fin 3 → Fin 4)
 > of total weight zero, the others being killed by the boost. The half turn about that axis
 > negates exactly those, so they vanish too and nothing is left.
 
-**`Lorentz.RankThree.lightConeComponent_act_halfTurn`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L133).
+**`Lorentz.RankThree.lightConeComponent_act_halfTurn`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L133).
 
 > The half turn multiplies a light-cone component by the product of the signs of its slots.
 
@@ -108,7 +108,7 @@ lemma lightConeComponent_act_halfTurn {n : ℕ} (i : Fin 3)
       = ((∏ s, lightConeSign (κ s) : ℤ) : ℂ) * lightConeComponent i c κ
 ```
 
-**`Lorentz.RankThree.lightConeComponent_eq_zero_of_weight_zero`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L143).
+**`Lorentz.RankThree.lightConeComponent_eq_zero_of_weight_zero`**, a lemma, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L143).
 
 > An invariant coefficient tensor has no weight-zero light-cone component either, the half
 > turn negating those.
@@ -119,7 +119,7 @@ lemma lightConeComponent_eq_zero_of_weight_zero {c : (Fin 3 → Fin 1 ⊕ Fin 3)
     (hκ : ∑ s, lightConeWeight (κ s) = 0) : lightConeComponent i c κ = 0
 ```
 
-**`Lorentz.RankThree.eq_zero_of_isInvariantCoeff`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L152).
+**`Lorentz.RankThree.eq_zero_of_isInvariantCoeff`**, a lemma, [line 152](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L152).
 
 > An invariant coefficient tensor is zero: no light-cone component of it survives.
 
@@ -133,7 +133,7 @@ lemma eq_zero_of_isInvariantCoeff {c : (Fin 3 → Fin 1 ⊕ Fin 3) → ℂ}
 > The invariants of the range of an equivariant map come from invariant tensors, whose coefficient
 > tensors are invariant, so section B leaves none of them.
 
-**`Lorentz.RankThree.eq_zero_of_invariant`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L175).
+**`Lorentz.RankThree.eq_zero_of_invariant`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L175).
 
 > Every Lorentz invariant in the range of `f` is zero: three indices carry no invariant
 > contraction.
@@ -143,7 +143,7 @@ lemma eq_zero_of_invariant (hf : IsLorentzCovariant 3 B repLorentz f) {x : B}
     (hx : x ∈ LinearMap.range f) (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x = 0
 ```
 
-**`Lorentz.RankThree.reducesInvariantsTo_bot`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L181).
+**`Lorentz.RankThree.reducesInvariantsTo_bot`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean#L181).
 
 > The range of `f` reduces to `⊥`: a Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a
 > Lorentz-stable submodule, lies in `S`.
@@ -159,4 +159,4 @@ lemma reducesInvariantsTo_bot (hf : IsLorentzCovariant 3 B repLorentz f) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean)

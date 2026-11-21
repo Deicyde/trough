@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge action on the bosonic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.GaugeAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean): 14 declarations, 8 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.GaugeAction`, [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean): 14 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Bosonic.GaugeAction`, [P
 
 ## A. The action of the jet gauge group
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L65).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L65).
 
 > **The jet gauge action on the bosonic algebra** of the matter field `M`: the symmetric-algebra
 > functor applied to the gauge action on the jet component space. The fibrewise action on the jets
@@ -47,7 +47,7 @@ noncomputable def repJetGaugeGroupI :
     Representation ℂ GJ (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L75).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L75).
 
 ```lean
 lemma repJetGaugeGroupI_apply
@@ -56,7 +56,7 @@ lemma repJetGaugeGroupI_apply
       SymmetricAlgebra.map (JetComponentSpace.repJet M U) x
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L81).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply_one`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L81).
 
 ```lean
 lemma repJetGaugeGroupI_apply_one
@@ -64,7 +64,7 @@ lemma repJetGaugeGroupI_apply_one
     repJetGaugeGroupI M U (1 : BosonicAlgebra M) = 1
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply_mul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L86).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_apply_mul`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L86).
 
 ```lean
 lemma repJetGaugeGroupI_apply_mul
@@ -73,7 +73,7 @@ lemma repJetGaugeGroupI_apply_mul
       repJetGaugeGroupI M U x * repJetGaugeGroupI M U y
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ι`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L94).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ι`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L94).
 
 > On a component function the jet gauge action is the action on the component space.
 
@@ -84,7 +84,7 @@ lemma repJetGaugeGroupI_ι
       SymmetricAlgebra.ι ℂ _ (JetComponentSpace.repJet M U v)
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupIAlgHom`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L102).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupIAlgHom`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L102).
 
 > The jet gauge action as an algebra homomorphism: a gauge transformation acts on a
 > Lagrangian term factor by factor.
@@ -101,7 +101,7 @@ noncomputable def repJetGaugeGroupIAlgHom
 > the *value* of the gauge transformation at the base point alone. So `ofField` and
 > `ofConjField` are equivariant on the nose, for the contragredient of that value.
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ofField`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L125).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ofField`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L125).
 
 > **`ofField` is gauge equivariant.** The undifferentiated component functions transform
 > by the contragredient of the value of the gauge transformation at the base point; no
@@ -114,7 +114,7 @@ lemma repJetGaugeGroupI_ofField
       ofField (Module.Dual.transpose (jetEval ∘ₗ (M.repJet U⁻¹).comp jetOfConstant) φ)
 ```
 
-**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ofConjField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L139).
+**`StandardModel.BosonicAlgebra.repJetGaugeGroupI_ofConjField`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L139).
 
 > **`ofConjField` is gauge equivariant**, for the conjugate action
 > `JetComponentSpace.repConj rep` on the
@@ -130,7 +130,7 @@ lemma repJetGaugeGroupI_ofConjField
 
 ## B. Constant gauge transformations
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L160).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L160).
 
 > The action of the constant — that is, global — gauge transformations on the bosonic
 > algebra, obtained by including a gauge transformation as a constant gauge jet.
@@ -140,7 +140,7 @@ noncomputable def repGaugeGroupI :
     Representation ℂ G₀ (BosonicAlgebra M)
 ```
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L164).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L164).
 
 ```lean
 lemma repGaugeGroupI_apply
@@ -149,7 +149,7 @@ lemma repGaugeGroupI_apply
       repJetGaugeGroupI M (jets.ofConstant g) x
 ```
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply_one`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L170).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply_one`**, a lemma, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L170).
 
 ```lean
 lemma repGaugeGroupI_apply_one
@@ -157,7 +157,7 @@ lemma repGaugeGroupI_apply_one
     repGaugeGroupI M g (1 : BosonicAlgebra M) = 1
 ```
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply_mul`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L175).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI_apply_mul`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L175).
 
 ```lean
 lemma repGaugeGroupI_apply_mul
@@ -166,7 +166,7 @@ lemma repGaugeGroupI_apply_mul
       repGaugeGroupI M g x * repGaugeGroupI M g y
 ```
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI_ofField`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L183).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI_ofField`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L183).
 
 > A constant gauge transformation acts on the undifferentiated field by the
 > contragredient of its value — which for a constant jet is the transformation itself.
@@ -179,7 +179,7 @@ lemma repGaugeGroupI_ofField
         (jetEval ∘ₗ (M.repJet (jets.ofConstant g⁻¹)).comp jetOfConstant) φ)
 ```
 
-**`StandardModel.BosonicAlgebra.repGaugeGroupI_ofConjField`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L194).
+**`StandardModel.BosonicAlgebra.repGaugeGroupI_ofConjField`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean#L194).
 
 > A constant gauge transformation acts on the undifferentiated conjugate field by the
 > conjugate contragredient of its value.
@@ -200,4 +200,4 @@ lemma repGaugeGroupI_ofConjField
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean)

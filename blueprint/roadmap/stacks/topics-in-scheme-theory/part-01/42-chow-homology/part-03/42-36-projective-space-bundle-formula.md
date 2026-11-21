@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.36 Projective space bundle formula
 
-Section 42.36 of the Stacks Project, [Tag 02TV](https://stacks.math.columbia.edu/tag/02TV). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.36 of the Stacks Project, [Tag 02TV](https://stacks.math.columbia.edu/tag/02TV). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02TW, a lemma
 
 [Tag 02TW](https://stacks.math.columbia.edu/tag/02TW) in the Stacks Project.
 
-**`Stacks.Chow.projectiveBundleProjection_twist_eq_zero_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProjectionFormula.lean, line 502](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProjectionFormula.lean#L502). The attribute's comment: “vanishing below the fibre dimension: the assertion for s < r - 1, with no hypothesis. The projective bundle enters as a flat, proper morphism of relative dimension r - 1 over the base (Stacks 02TX) and its twist as an invertible module; Stacks 02S1 for the flat pullback, Stacks 02SO and 02TI for the cap product and Stacks 02S2 for the pushforward are all supplied from this development. The top fibre power, that the pushforward at s = r - 1 is α itself, is NOT proved here. What it still needs is the mapping-in half of the universal property of relative Proj, Stacks 01O4, to produce the section Z -> pi^-1(Z) whose image the r - 1 sections cut out; the other two ingredients the source's proof uses are now available, Stacks 02TM unconditionally and the rational sections of O\_P(1) as Stacks.ProjectiveBundleTwist.twistSectionGerm”.
+**`Stacks.Chow.projectiveBundleProjection_twist_eq_zero_of_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProjectionFormula.lean, line 502](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProjectionFormula.lean#L502). The attribute's comment: “vanishing below the fibre dimension: the assertion for s < r - 1, with no hypothesis. The projective bundle enters as a flat, proper morphism of relative dimension r - 1 over the base (Stacks 02TX) and its twist as an invertible module; Stacks 02S1 for the flat pullback, Stacks 02SO and 02TI for the cap product and Stacks 02S2 for the pushforward are all supplied from this development. The top fibre power, that the pushforward at s = r - 1 is α itself, is NOT proved here. What it still needs is the mapping-in half of the universal property of relative Proj, Stacks 01O4, to produce the section Z -> pi^-1(Z) whose image the r - 1 sections cut out; the other two ingredients the source's proof uses are now available, Stacks 02TM unconditionally and the rational sections of O\_P(1) as Stacks.ProjectiveBundleTwist.twistSectionGerm”.
 
 > **Stacks 02TW, vanishing below the fibre dimension, with no hypothesis.** For `s < r - 1`,
 >
@@ -44,7 +44,7 @@ theorem projectiveBundleProjection_twist_eq_zero_of_lt (L : P.Modules)
       (invertibleChernCap C sP L) s k α = 0
 ```
 
-**`Stacks.Chow.projectiveBundle_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean#L149).
+**`Stacks.Chow.projectiveBundle_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean#L149).
 
 > For the projective bundle `π : P ⟶ X` of a module of rank `n + 1`, `α ∈ A_k(X)` and `s ≤ n`,
 > the class `π_*(c₁(𝒪_P(1))^s ∩ π^*α) ∈ A_{k+n-s}(X)` is `0` if `s < n` and is `α` if `s = n`.
@@ -66,7 +66,7 @@ theorem projectiveBundle_projection (s : ℕ) (hs : s ≤ n) (k m : ℤ) (h : k 
 
 [Tag 02TX](https://stacks.math.columbia.edu/tag/02TX) in the Stacks Project.
 
-**`Stacks.Chow.projectiveBundle_formula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean#L168).
+**`Stacks.Chow.projectiveBundle_formula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean, line 168](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/Formula.lean#L168).
 
 > The projective space bundle formula for the projective bundle of a module of rank `n + 1`: the
 > map `⨁_{i ≤ n} A_{k+i}(X) ⟶ A_{k+n}(P)`, `(α_i) ↦ ∑_i c₁(𝒪_P(1))^i ∩ π^*α_i`, is bijective.
@@ -81,7 +81,7 @@ theorem projectiveBundle_formula (k : ℤ) :
       (relativeDimension_bundleProj E n) (invCap C (bundleProj E ≫ sX) (bundleTwist E)) k)
 ```
 
-**`Stacks.Chow.bijective_projectiveBundleFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/FormulaOfRank.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/FormulaOfRank.lean#L121). References: SGA 7 XVII (5.3), “more general”.
+**`Stacks.Chow.bijective_projectiveBundleFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/FormulaOfRank.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/ProjectiveBundleFormula/FormulaOfRank.lean#L121). References: SGA 7 XVII (5.3), “more general”.
 
 > **The projective space bundle formula.** Let `X` be locally of finite type over the
 > base `S` of chapter 42, `ℰ` a finite locally free `𝒪_X`-module of rank `r` and
@@ -98,7 +98,7 @@ theorem bijective_projectiveBundleFormulaMap (k : ℤ) :
 
 [Tag 02TY](https://stacks.math.columbia.edu/tag/02TY) in the Stacks Project.
 
-**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleAffineSpaceBundle.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleAffineSpaceBundle.lean#L262). The attribute's comment: “the isomorphism in rank zero, the bundle now the relative spectrum of the symmetric algebra of a finite locally free sheaf of rank zero rather than an abstract affine-space bundle”.
+**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleAffineSpaceBundle.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleAffineSpaceBundle.lean#L262). The attribute's comment: “the isomorphism in rank zero, the bundle now the relative spectrum of the symmetric algebra of a finite locally free sheaf of rank zero rather than an abstract affine-space bundle”.
 
 > **Stacks 02TY in rank zero, for the relative spectrum of the symmetric algebra.** Let `X` be
 > locally of finite type over the base of chapter 42, let `ℰ` be a finite locally free sheaf of rank
@@ -131,7 +131,7 @@ theorem flatPullbackChow_bijective_vectorBundleToBase_zero (C : ChowSituation.{u
         (relativeDimension_vectorBundleToBase E 0) k))
 ```
 
-**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean#L340).
+**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleChowBijective.lean#L340).
 
 > **[Stacks, Tag 02TY].** Let `(S, δ)` be as in Situation 02QL, let `X` be locally of finite type
 > over `S`, let `ℰ` be a finite locally free `𝒪_X`-module of rank `r` and let
@@ -159,7 +159,7 @@ theorem flatPullbackChow_bijective_vectorBundleToBase {X : Scheme.{u}} (sX : X �
       rfl r (relativeDimension_vectorBundleToBase E r) k)
 ```
 
-**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase_factorsGeneral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleFlatPullback.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleFlatPullback.lean#L121).
+**`Stacks.Chow.flatPullbackChow_bijective_vectorBundleToBase_factorsGeneral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleFlatPullback.lean, line 121](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundleFlatPullback.lean#L121).
 
 > **Stacks 02TY.** Let `X` be locally of finite type over the base of chapter 42, let `ℰ` be a
 > finite locally free `𝒪_X`-module of rank `r` and let `p : Spec_X(Sym(ℰ)) ⟶ X` be its vector
@@ -184,7 +184,7 @@ theorem flatPullbackChow_bijective_vectorBundleToBase_factorsGeneral (C : ChowSi
       (flatPullbackFactorsThroughRationalEquivalence_general C _ sX _ rfl r _ k))
 ```
 
-**`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundlePullbackIso.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundlePullbackIso.lean#L149). The attribute's comment: “the isomorphism in rank zero, the projection carried as an affine-space bundle of rank zero rather than as the relative spectrum of a symmetric algebra”.
+**`Stacks.Chow.flatPullbackChow_bijective_of_isAffineSpaceBundle_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundlePullbackIso.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/AffineBundle/VectorBundlePullbackIso.lean#L149). The attribute's comment: “the isomorphism in rank zero, the projection carried as an affine-space bundle of rank zero rather than as the relative spectrum of a symmetric algebra”.
 
 > **Stacks 02TY in rank zero.** Let `X` be locally of finite type over the base of chapter 42,
 > let `ℰ` be a finite locally free sheaf of rank `0` on `X` and let `p : E ⟶ X` be the associated
@@ -236,4 +236,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.36, Tag 02TV](https://stacks.math.columbia.edu/tag/02TV)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

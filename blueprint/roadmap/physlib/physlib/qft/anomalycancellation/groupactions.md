@@ -8,7 +8,7 @@ proof: formalized
 
 # Group actions on ACC systems.
 
-The module `Physlib.QFT.AnomalyCancellation.GroupActions`, [Physlib/QFT/AnomalyCancellation/GroupActions.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean): 12 declarations (1 instance with no name), 7 with a docstring.
+The module `Physlib.QFT.AnomalyCancellation.GroupActions`, [Physlib/QFT/AnomalyCancellation/GroupActions.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean): 12 declarations (1 instance with no name), 7 with a docstring.
 
 > We define a group action on an ACC system as a representation on the vector spaces of charges
 > under which the anomaly equations are invariant.
@@ -18,7 +18,7 @@ The module `Physlib.QFT.AnomalyCancellation.GroupActions`, [Physlib/QFT/AnomalyC
 > - The group action acting on solutions to the linear + quadratic equations.
 > - The group action acting on solutions to the anomaly cancellation conditions.
 
-**`ACCSystemGroupAction`**, a structure, [line 28](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L28).
+**`ACCSystemGroupAction`**, a structure, [line 28](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L28).
 
 > The type of a group action on a system of charges is defined as a representation on
 > the vector spaces of charges under which the anomaly equations are invariant.
@@ -39,7 +39,7 @@ structure ACCSystemGroupAction (χ : ACCSystem) where
   cubicInvariant : ∀ g S, χ.cubicACC (rep g S) = χ.cubicACC S
 ```
 
-**An instance with no name**, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L45).
+**An instance with no name**, [line 45](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L45).
 
 > The given instance of a group on the `group` field of a `ACCSystemGroupAction`.
 
@@ -47,7 +47,7 @@ structure ACCSystemGroupAction (χ : ACCSystem) where
 instance {χ : ACCSystem} (G : ACCSystemGroupAction χ) : Group G.group
 ```
 
-**`ACCSystemGroupAction.linSolMap`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L48).
+**`ACCSystemGroupAction.linSolMap`**, a def, [line 48](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L48).
 
 > The action of a group element on the vector space of linear solutions.
 
@@ -56,7 +56,7 @@ def linSolMap {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group) :
     χ.LinSols →ₗ[ℚ] χ.LinSols
 ```
 
-**`ACCSystemGroupAction.linSolRep`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L58).
+**`ACCSystemGroupAction.linSolRep`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L58).
 
 > The representation acting on the vector space of solutions to the linear ACCs.
 
@@ -65,7 +65,7 @@ def linSolRep {χ : ACCSystem} (G : ACCSystemGroupAction χ) :
     Representation ℚ G.group χ.LinSols
 ```
 
-**`ACCSystemGroupAction.rep_linSolRep_commute`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L74).
+**`ACCSystemGroupAction.rep_linSolRep_commute`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L74).
 
 > The representation on the charges and anomaly free solutions
 > commutes with the inclusion.
@@ -76,7 +76,7 @@ lemma rep_linSolRep_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : 
     G.rep g (χ.linSolsIncl S)
 ```
 
-**`ACCSystemGroupAction.quadSolAction`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L80).
+**`ACCSystemGroupAction.quadSolAction`**, an instance, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L80).
 
 > A multiplicative action of `G.group` on `quadSols`.
 
@@ -85,7 +85,7 @@ instance quadSolAction {χ : ACCSystem} (G : ACCSystemGroupAction χ) :
     MulAction G.group χ.QuadSols
 ```
 
-**`ACCSystemGroupAction.linSolRep_quadSolAction_commute`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L94).
+**`ACCSystemGroupAction.linSolRep_quadSolAction_commute`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L94).
 
 ```lean
 lemma linSolRep_quadSolAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group)
@@ -93,7 +93,7 @@ lemma linSolRep_quadSolAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction
     G.linSolRep g (χ.quadSolsInclLinSols S)
 ```
 
-**`ACCSystemGroupAction.rep_quadSolAction_commute`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L98).
+**`ACCSystemGroupAction.rep_quadSolAction_commute`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L98).
 
 ```lean
 lemma rep_quadSolAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group)
@@ -101,7 +101,7 @@ lemma rep_quadSolAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (
     G.rep g (χ.quadSolsIncl S)
 ```
 
-**`ACCSystemGroupAction.solAction`**, an instance, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L103).
+**`ACCSystemGroupAction.solAction`**, an instance, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L103).
 
 > The group action acting on solutions to the anomaly cancellation conditions.
 
@@ -109,7 +109,7 @@ lemma rep_quadSolAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (
 instance solAction {χ : ACCSystem} (G : ACCSystemGroupAction χ) : MulAction G.group χ.Sols
 ```
 
-**`ACCSystemGroupAction.quadSolAction_solAction_commute`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L119).
+**`ACCSystemGroupAction.quadSolAction_solAction_commute`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L119).
 
 ```lean
 lemma quadSolAction_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group)
@@ -117,7 +117,7 @@ lemma quadSolAction_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction
     G.quadSolAction.toFun _ _ (χ.solsInclQuadSols S) g
 ```
 
-**`ACCSystemGroupAction.linSolRep_solAction_commute`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L123).
+**`ACCSystemGroupAction.linSolRep_solAction_commute`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L123).
 
 ```lean
 lemma linSolRep_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group)
@@ -125,7 +125,7 @@ lemma linSolRep_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ)
     G.linSolRep g (χ.solsInclLinSols S)
 ```
 
-**`ACCSystemGroupAction.rep_solAction_commute`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L127).
+**`ACCSystemGroupAction.rep_solAction_commute`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean#L127).
 
 ```lean
 lemma rep_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : G.group)
@@ -138,4 +138,4 @@ lemma rep_solAction_commute {χ : ACCSystem} (G : ACCSystemGroupAction χ) (g : 
 
 ## Sources
 
-- [Physlib/QFT/AnomalyCancellation/GroupActions.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/AnomalyCancellation/GroupActions.lean)
+- [Physlib/QFT/AnomalyCancellation/GroupActions.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/AnomalyCancellation/GroupActions.lean)

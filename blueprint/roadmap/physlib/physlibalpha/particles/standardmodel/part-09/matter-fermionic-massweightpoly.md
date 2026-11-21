@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight polynomial on the fermionic algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean): 24 declarations, 22 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassWeightPoly`, [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean): 24 declarations, 22 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Matter.Fermionic.MassWeightPoly
 
 ## A. The mass-weight polynomial of a component function
 
-**`StandardModel.FermionicAlgebra.monomialₗ`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L71).
+**`StandardModel.FermionicAlgebra.monomialₗ`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L71).
 
 > The monomial map into polynomials over the fermionic algebra, as a map of `ℂ`-modules
 > rather than of `FermionicAlgebra M`-modules.
@@ -51,14 +51,14 @@ noncomputable def monomialₗ (n : ℕ) :
     FermionicAlgebra M →ₗ[ℂ] Polynomial (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.monomialₗ_apply`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L76).
+**`StandardModel.FermionicAlgebra.monomialₗ_apply`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L76).
 
 ```lean
 lemma monomialₗ_apply (n : ℕ) (x : FermionicAlgebra M) :
     monomialₗ n x = Polynomial.monomial n x
 ```
 
-**`StandardModel.FermionicAlgebra.halfPoly`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L83).
+**`StandardModel.FermionicAlgebra.halfPoly`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L83).
 
 > One half of the mass-weight polynomial on the jet component space, for a field of mass
 > weight `w`: the linear map sending the symbol `∂_s ψ` to `X ^ (w + 2 |s|)` times its image
@@ -71,7 +71,7 @@ noncomputable def halfPoly {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] W →ₗ[ℂ] Polynomial (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.halfPoly_basis_tmul`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L92).
+**`StandardModel.FermionicAlgebra.halfPoly_basis_tmul`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L92).
 
 > On the symbol `∂_s ψ` the half mass-weight polynomial is the monomial of degree
 > `w + 2 |s|`: the field contributes `w` and each derivative two.
@@ -85,7 +85,7 @@ lemma halfPoly_basis_tmul {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
         (k (SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] x))
 ```
 
-**`StandardModel.FermionicAlgebra.ιFst`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L102).
+**`StandardModel.FermionicAlgebra.ιFst`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L102).
 
 > The inclusion of the unconjugated symbols into the fermionic algebra.
 
@@ -93,7 +93,7 @@ lemma halfPoly_basis_tmul {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
 noncomputable def ιFst : SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ M.V →ₗ[ℂ] FermionicAlgebra M
 ```
 
-**`StandardModel.FermionicAlgebra.ιSnd`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L106).
+**`StandardModel.FermionicAlgebra.ιSnd`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L106).
 
 > The inclusion of the conjugate symbols into the fermionic algebra.
 
@@ -102,7 +102,7 @@ noncomputable def ιSnd :
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ (ConjModule M.V) →ₗ[ℂ] FermionicAlgebra M
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L112).
+**`StandardModel.FermionicAlgebra.jetComponentPoly`**, a def, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L112).
 
 > The mass-weight polynomial of a component function of a field of mass weight `w`: the
 > sum of the two half maps, one for the field and one for its conjugate.
@@ -112,14 +112,14 @@ noncomputable def jetComponentPoly (w : ℕ) :
     JetComponentSpace M →ₗ[ℂ] Polynomial (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L117).
+**`StandardModel.FermionicAlgebra.jetComponentPoly_apply`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L117).
 
 ```lean
 lemma jetComponentPoly_apply (w : ℕ) (x : JetComponentSpace M) :
     jetComponentPoly w x = halfPoly w ιFst x.1 + halfPoly w ιSnd x.2
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly_inl`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L122).
+**`StandardModel.FermionicAlgebra.jetComponentPoly_inl`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L122).
 
 > On an unconjugated derivative monomial the component map is a monomial eigenvector.
 
@@ -131,7 +131,7 @@ lemma jetComponentPoly_inl (w : ℕ) (s : Multiset (Fin 1 ⊕ Fin 3)) (φ : Modu
           ((SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0) : JetComponentSpace M))
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly_inr`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L132).
+**`StandardModel.FermionicAlgebra.jetComponentPoly_inr`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L132).
 
 > On a conjugate derivative monomial the component map is a monomial eigenvector.
 
@@ -146,7 +146,7 @@ lemma jetComponentPoly_inr (w : ℕ) (s : Multiset (Fin 1 ⊕ Fin 3))
 
 ## B. The square-zero condition
 
-**`StandardModel.FermionicAlgebra.generators`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L170).
+**`StandardModel.FermionicAlgebra.generators`**, a def, [line 170](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L170).
 
 > The set of derivative monomials in the jet component space: the unconjugated symbols
 > `∂_s ψ_φ` together with the conjugate symbols `∂_s ψ̄_φ`.
@@ -155,7 +155,7 @@ lemma jetComponentPoly_inr (w : ℕ) (s : Multiset (Fin 1 ⊕ Fin 3))
 def generators (M : MatterField jets) : Set (JetComponentSpace M)
 ```
 
-**`StandardModel.FermionicAlgebra.span_generators_eq_top`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L178).
+**`StandardModel.FermionicAlgebra.span_generators_eq_top`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L178).
 
 > The derivative monomials span the jet component space: every component function is the
 > sum of its two halves, and each half is spanned by derivative monomials.
@@ -164,7 +164,7 @@ def generators (M : MatterField jets) : Set (JetComponentSpace M)
 lemma span_generators_eq_top : Submodule.span ℂ (generators M) = ⊤
 ```
 
-**`StandardModel.FermionicAlgebra.exists_jetComponentPoly_eq_monomial`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L206).
+**`StandardModel.FermionicAlgebra.exists_jetComponentPoly_eq_monomial`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L206).
 
 > Every derivative monomial is a monomial eigenvector of the component map: this is the
 > only property of the component map that the square-zero argument uses.
@@ -175,7 +175,7 @@ lemma exists_jetComponentPoly_eq_monomial (w : ℕ) {v : JetComponentSpace M}
     ∃ n : ℕ, jetComponentPoly w v = Polynomial.monomial n (ExteriorAlgebra.ι ℂ v)
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly_mul_self`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L218).
+**`StandardModel.FermionicAlgebra.jetComponentPoly_mul_self`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L218).
 
 > The component map squares to zero, as the universal property of the exterior algebra
 > demands. The symmetrised square is a bilinear form, so it is enough to check that it
@@ -189,7 +189,7 @@ lemma jetComponentPoly_mul_self (w : ℕ) (v : JetComponentSpace M) :
 
 ## C. The mass-weight polynomial on the fermionic algebra
 
-**`StandardModel.FermionicAlgebra.massWeightPoly`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L252).
+**`StandardModel.FermionicAlgebra.massWeightPoly`**, a def, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L252).
 
 > The mass-weight polynomial on the fermionic algebra of a field of mass weight `w`: the
 > `ℂ`-algebra map sending a generator of mass weight `n` to `X ^ n` times itself. It is
@@ -200,7 +200,7 @@ noncomputable def massWeightPoly (w : ℕ) :
     FermionicAlgebra M →ₐ[ℂ] Polynomial (FermionicAlgebra M)
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_ι`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L258).
+**`StandardModel.FermionicAlgebra.massWeightPoly_ι`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L258).
 
 > On a component function the mass-weight polynomial is the component-function map.
 
@@ -211,7 +211,7 @@ lemma massWeightPoly_ι (w : ℕ) (x : JetComponentSpace M) :
 
 ## D. The mass weight of the field and its derivatives
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_iteratedJetDeriv_ofField`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L270).
+**`StandardModel.FermionicAlgebra.massWeightPoly_iteratedJetDeriv_ofField`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L270).
 
 > The generator `∂_s ψ_φ` is a monomial eigenvector of mass weight `w + 2 |s|`: the field
 > carries its own mass weight and each derivative adds two.
@@ -223,7 +223,7 @@ lemma massWeightPoly_iteratedJetDeriv_ofField (w : ℕ) (s : Multiset (Fin 1 ⊕
       Polynomial.monomial (w + 2 * Multiset.card s) (iteratedJetDeriv s (ofField φ))
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_iteratedJetDeriv_ofConjField`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L278).
+**`StandardModel.FermionicAlgebra.massWeightPoly_iteratedJetDeriv_ofConjField`**, a lemma, [line 278](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L278).
 
 > The conjugate generator `∂_s ψ̄_φ` is a monomial eigenvector of the same mass weight
 > `w + 2 |s|` as the generator it conjugates.
@@ -236,7 +236,7 @@ lemma massWeightPoly_iteratedJetDeriv_ofConjField (w : ℕ) (s : Multiset (Fin 1
         (iteratedJetDeriv s (ofConjField φ))
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_ofField`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L286).
+**`StandardModel.FermionicAlgebra.massWeightPoly_ofField`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L286).
 
 > The undifferentiated field has mass weight `w`.
 
@@ -245,7 +245,7 @@ lemma massWeightPoly_ofField (w : ℕ) (φ : Module.Dual ℂ M.V) :
     massWeightPoly w (ofField φ) = Polynomial.monomial w (ofField φ)
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_ofConjField`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L293).
+**`StandardModel.FermionicAlgebra.massWeightPoly_ofConjField`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L293).
 
 > The undifferentiated conjugate field has mass weight `w`.
 
@@ -256,7 +256,7 @@ lemma massWeightPoly_ofConjField (w : ℕ) (φ : Module.Dual ℂ (ConjModule M.V
 
 ## E. Recovering an element from its mass-weight polynomial
 
-**`StandardModel.FermionicAlgebra.halfPoly_eval_one`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L308).
+**`StandardModel.FermionicAlgebra.halfPoly_eval_one`**, a lemma, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L308).
 
 > Setting the formal variable to one collapses a half mass-weight polynomial back to the
 > symbol it graded. The derivative monomials span, so it is enough to check this on the
@@ -268,7 +268,7 @@ lemma halfPoly_eval_one {W : Type} [AddCommGroup W] [Module ℂ W] (w : ℕ)
     (y : SpaceTimeDerivAlgebraℂ ⊗[ℂ] W) : (halfPoly w k y).eval 1 = k y
 ```
 
-**`StandardModel.FermionicAlgebra.jetComponentPoly_eval_one`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L328).
+**`StandardModel.FermionicAlgebra.jetComponentPoly_eval_one`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L328).
 
 > Setting the formal variable to one recovers the component function.
 
@@ -277,7 +277,7 @@ lemma jetComponentPoly_eval_one (w : ℕ) (x : JetComponentSpace M) :
     (jetComponentPoly w x).eval 1 = ExteriorAlgebra.ι ℂ x
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_eval_one`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L337).
+**`StandardModel.FermionicAlgebra.massWeightPoly_eval_one`**, a lemma, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L337).
 
 > Setting the formal variable to one recovers the original element: the mass-weight
 > pieces of an element sum back to it.
@@ -287,7 +287,7 @@ lemma massWeightPoly_eval_one (w : ℕ) (a : FermionicAlgebra M) :
     (massWeightPoly w a).eval 1 = a
 ```
 
-**`StandardModel.FermionicAlgebra.massWeightPoly_injective`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L353).
+**`StandardModel.FermionicAlgebra.massWeightPoly_injective`**, a lemma, [line 353](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean#L353).
 
 > The mass-weight polynomial is injective: an element is recovered from its graded
 > pieces. It is not surjective, since a monomial of the wrong degree is not the grading of
@@ -304,4 +304,4 @@ lemma massWeightPoly_injective (w : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean)
+- [PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean)

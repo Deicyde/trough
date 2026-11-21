@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.IsFacetSum, ProbabilisticTheory.vals_sum_tmul_facet, ProbabilisticTheory.isFacetSum_vals, ProbabilisticTheory.mem_minTensorCone_of_isFacetSum, ProbabilisticTheory.exists_isApproxBinaryJointEffect, ProbabilisticTheory.IsNuclear.isClassical, ProbabilisticTheory.hasRieszDecomposition_of_minTensorCone_eq_square, HasRieszDecomposition.maxTensorCone_subset_square
+lean: PhyslibAlpha.ProbabilisticTheory.IsFacetSum, PhyslibAlpha.ProbabilisticTheory.vals_sum_tmul_facet, PhyslibAlpha.ProbabilisticTheory.isFacetSum_vals, PhyslibAlpha.ProbabilisticTheory.mem_minTensorCone_of_isFacetSum, PhyslibAlpha.ProbabilisticTheory.exists_isApproxBinaryJointEffect, PhyslibAlpha.ProbabilisticTheory.IsNuclear.isClassical, PhyslibAlpha.ProbabilisticTheory.hasRieszDecomposition_of_minTensorCone_eq_square, HasRieszDecomposition.maxTensorCone_subset_square
 statement: formalized
 proof: formalized
 ---
 
 # Classical theories compose uniquely with the square
 
-The module `PhyslibAlpha.ProbabilisticTheory.Classical.NamiokaPhelps`, [PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean): 12 declarations, 11 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Classical.NamiokaPhelps`, [PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean): 12 declarations, 11 with a docstring.
 
 > Namioka–Phelps square test: classical exactly when composition with the square is unique.
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.NamiokaPhelps`, [PhyslibA
 
 ## A. Facet coordinates of the minimal cone
 
-**`ProbabilisticTheory.IsFacetSum`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L69).
+**`PhyslibAlpha.ProbabilisticTheory.IsFacetSum`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L69).
 
 > Vertex values that are the facet sums of four nonnegative observables.
 
@@ -55,14 +55,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.Classical.NamiokaPhelps`, [PhyslibA
 def IsFacetSum (A : Fin 4 → E) : Prop
 ```
 
-**`ProbabilisticTheory.vals_sum_tmul_facet`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.vals_sum_tmul_facet`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L72).
 
 ```lean
 lemma vals_sum_tmul_facet (X : Fin 4 → E) :
     vals (∑ j, X j ⊗ₜ[ℝ] facet j) = ![X 2 + X 3, X 0 + X 3, X 1 + X 2, X 0 + X 1]
 ```
 
-**`ProbabilisticTheory.isFacetSum_vals`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.isFacetSum_vals`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L78).
 
 > The vertex values of a composite observable in the minimal cone are facet sums.
 
@@ -71,7 +71,7 @@ lemma isFacetSum_vals {z : E ⊗[ℝ] Square} (hz : z ∈ minTensorCone E Square
     IsFacetSum (vals z)
 ```
 
-**`ProbabilisticTheory.mem_minTensorCone_of_isFacetSum`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.mem_minTensorCone_of_isFacetSum`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L97).
 
 > A composite observable whose vertex values are facet sums is in the minimal cone.
 
@@ -82,7 +82,7 @@ lemma mem_minTensorCone_of_isFacetSum {z : E ⊗[ℝ] Square} (hz : IsFacetSum (
 
 ## B. Nuclear systems are classical
 
-**`ProbabilisticTheory.exists_isApproxBinaryJointEffect`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L109).
+**`PhyslibAlpha.ProbabilisticTheory.exists_isApproxBinaryJointEffect`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L109).
 
 > If the maximal cone of the composite with the square lies in the closure of the minimal cone,
 > every two effects have joint effects up to any error: the composite observable with vertex values
@@ -95,7 +95,7 @@ lemma exists_isApproxBinaryJointEffect
     (e f : Effect E) {δ : ℝ} (hδ : 0 < δ) : ∃ g : E, Effect.IsApproxBinaryJointEffect e f δ g
 ```
 
-**`ProbabilisticTheory.IsNuclear.isClassical`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L132).
+**`PhyslibAlpha.ProbabilisticTheory.IsNuclear.isClassical`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L132).
 
 > **Nuclear systems are classical.** If composition with every Archimedean system is unique, the
 > positive functionals form a lattice: the state space is a Choquet simplex.
@@ -106,7 +106,7 @@ lemma IsNuclear.isClassical (h : IsNuclear E) : IsClassical E
 
 ## C. The square test
 
-**`ProbabilisticTheory.hasRieszDecomposition_of_minTensorCone_eq_square`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L145).
+**`PhyslibAlpha.ProbabilisticTheory.hasRieszDecomposition_of_minTensorCone_eq_square`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L145).
 
 > If composition with the square is unique, observables have the Riesz decomposition: the
 > composite observable with vertex values `f₁, g, f₁ + f₂ - g, f₂` is in the maximal cone, and its
@@ -117,7 +117,7 @@ lemma hasRieszDecomposition_of_minTensorCone_eq_square
     (h : minTensorCone E Square = maxTensorCone E Square) : HasRieszDecomposition E
 ```
 
-**`HasRieszDecomposition.maxTensorCone_subset_square`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L162).
+**`HasRieszDecomposition.maxTensorCone_subset_square`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L162).
 
 > With the Riesz decomposition, every composite observable with the square in the maximal cone
 > is in the minimal cone.
@@ -127,7 +127,7 @@ lemma _root_.HasRieszDecomposition.maxTensorCone_subset_square (hE : HasRieszDec
     maxTensorCone E Square ≤ minTensorCone E Square
 ```
 
-**`ProbabilisticTheory.minTensorCone_eq_maxTensorCone_square_iff`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L176).
+**`PhyslibAlpha.ProbabilisticTheory.minTensorCone_eq_maxTensorCone_square_iff`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L176).
 
 > **Square test.** Composition with the square is unique exactly when the observables have the
 > Riesz decomposition.
@@ -139,7 +139,7 @@ lemma minTensorCone_eq_maxTensorCone_square_iff :
 
 ## D. Classicality
 
-**`ProbabilisticTheory.isClassical_of_minTensorCone_eq_square`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L185).
+**`PhyslibAlpha.ProbabilisticTheory.isClassical_of_minTensorCone_eq_square`**, a lemma, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L185).
 
 > If composition with the square is unique, the positive functionals form a lattice: the state
 > space is a Choquet simplex.
@@ -149,7 +149,7 @@ lemma isClassical_of_minTensorCone_eq_square
     (h : minTensorCone E Square = maxTensorCone E Square) : IsClassical E
 ```
 
-**`ProbabilisticTheory.isClassical_iff_minTensorCone_eq_square`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L197).
+**`PhyslibAlpha.ProbabilisticTheory.isClassical_iff_minTensorCone_eq_square`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L197).
 
 > **Namioka–Phelps square test.** On a complete Archimedean order-unit space, the state space is
 > a Choquet simplex exactly when composition with the square is unique.
@@ -159,7 +159,7 @@ lemma isClassical_iff_minTensorCone_eq_square :
     IsClassical E ↔ minTensorCone E Square = maxTensorCone E Square
 ```
 
-**`ProbabilisticTheory.jointlyMeasurable_iff_minTensorCone_eq_square`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L204).
+**`PhyslibAlpha.ProbabilisticTheory.jointlyMeasurable_iff_minTensorCone_eq_square`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean#L204).
 
 > **Two probes of classicality.** On a complete Archimedean order-unit space, every two yes/no
 > measurements are compatible exactly when composition with the square is unique.
@@ -182,4 +182,4 @@ lemma jointlyMeasurable_iff_minTensorCone_eq_square :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean)

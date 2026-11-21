@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.LocalNet.restrict, ProbabilisticTheory.LocalNet.restrict_apply, ProbabilisticTheory.LocalNet.restrict_refl, ProbabilisticTheory.LocalNet.restrict_restrict, ProbabilisticTheory.LocalNet.CompatibleStates, ProbabilisticTheory.LocalNet.CompatibleStates.compat_apply, ProbabilisticTheory.LocalNet.Quasilocal.lift, ProbabilisticTheory.LocalNet.Quasilocal.lift_apply
+lean: ProbabilisticTheory.LocalNet.restrict, ProbabilisticTheory.LocalNet.restrict_apply, ProbabilisticTheory.LocalNet.restrict_refl, ProbabilisticTheory.LocalNet.restrict_restrict, ProbabilisticTheory.LocalNet.CompatibleStates, ProbabilisticTheory.LocalNet.CompatibleStates.compat_apply, ProbabilisticTheory.LocalNet.lift, ProbabilisticTheory.LocalNet.lift_apply
 statement: formalized
 proof: formalized
 ---
 
 # States of a local net
 
-The module `Physlib.ProbabilisticTheory.State.Local`, [Physlib/ProbabilisticTheory/State/Local.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean): 12 declarations (1 instance with no name), 12 with a docstring.
+The module `Physlib.ProbabilisticTheory.State.Local`, [Physlib/ProbabilisticTheory/State/Local.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean): 12 declarations (1 instance with no name), 12 with a docstring.
 
 > Compatible subsystem states and states of the whole system.
 
@@ -36,44 +36,45 @@ The module `Physlib.ProbabilisticTheory.State.Local`, [Physlib/ProbabilisticTheo
 > - `LocalNet.restrict`: precomposition with the observable inclusion map.
 > - `LocalNet.CompatibleStates`: a compatible family of states on the subsystems.
 > - `LocalNet.CompatibleStates.compat_apply`: compatible states agree on included observables.
-> - `LocalNet.Quasilocal.toState`: the quasilocal state defined by a compatible family.
-> - `LocalNet.Quasilocal.stateEquiv`: quasilocal states correspond to compatible local states.
+> - `LocalNet.toState`: the quasilocal state defined by a compatible family.
+> - `LocalNet.stateEquiv`: quasilocal states correspond to compatible local states.
 
 ## iv. References
 
 ## A. Restriction of states
 
-**`ProbabilisticTheory.LocalNet.restrict`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L68).
+**`ProbabilisticTheory.LocalNet.restrict`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L65).
 
 > Restrict a state of `Y` to `X` by pulling it back along the observable inclusion channel.
 
 ```lean
-def restrict (h : X ≤ Y) (ω : 𝓢[ℝ, A Y]) : 𝓢[ℝ, A X]
+def restrict (N : LocalNet R A) (h : X ≤ Y) (ω : (A Y).State) : (A X).State
 ```
 
-**`ProbabilisticTheory.LocalNet.restrict_apply`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L72).
+**`ProbabilisticTheory.LocalNet.restrict_apply`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L69).
 
 > Restriction evaluates an observable through its inclusion into the larger subsystem.
 
 ```lean
-lemma restrict_apply (h : X ≤ Y) (ω : 𝓢[ℝ, A Y]) (a : A X) :
+lemma restrict_apply (N : LocalNet R A) (h : X ≤ Y) (ω : (A Y).State) (a : (A X).Observables) :
     N.restrict h ω a = ω (N.incl h a)
 ```
 
-**`ProbabilisticTheory.LocalNet.restrict_refl`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L77).
+**`ProbabilisticTheory.LocalNet.restrict_refl`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L74).
 
 > Restriction to the same subsystem is the identity.
 
 ```lean
-lemma restrict_refl (ω : 𝓢[ℝ, A X]) : N.restrict (le_refl X) ω = ω
+lemma restrict_refl (N : LocalNet R A) (ω : (A X).State) : N.restrict (le_refl X) ω = ω
 ```
 
-**`ProbabilisticTheory.LocalNet.restrict_restrict`**, a lemma, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L82).
+**`ProbabilisticTheory.LocalNet.restrict_restrict`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L79).
 
 > Successive restrictions agree with direct restriction.
 
 ```lean
-lemma restrict_restrict (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z) (ω : 𝓢[ℝ, A Z]) :
+lemma restrict_restrict (N : LocalNet R A) (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z)
+    (ω : (A Z).State) :
     N.restrict h₁ (N.restrict h₂ ω) = N.restrict h₃ ω
 ```
 
@@ -84,29 +85,29 @@ lemma restrict_restrict (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z) (ω :
 > ensures that local observables have consistent expectation values, even in infinite systems with
 > correlations and entanglement.
 
-**`ProbabilisticTheory.LocalNet.CompatibleStates`**, a structure, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L98).
+**`ProbabilisticTheory.LocalNet.CompatibleStates`**, a structure, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L96).
 
 > A state on each subsystem whose restrictions agree with the states of smaller subsystems.
 
 ```lean
 structure CompatibleStates (N : LocalNet R A) where
   /-- The state of the subsystem `X`. -/
-  state : ∀ X, 𝓢[ℝ, A X]
+  state : ∀ X, (A X).State
   /-- The state of `X` is the restriction of the state of any larger subsystem `Y`. -/
   compat : ∀ {X Y : R} (h : X ≤ Y), N.restrict h (state Y) = state X
 ```
 
-**`ProbabilisticTheory.LocalNet.CompatibleStates.compat_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L105).
+**`ProbabilisticTheory.LocalNet.CompatibleStates.compat_apply`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L103).
 
 > An observable has the same expectation in every subsystem containing it.
 
 ```lean
 lemma CompatibleStates.compat_apply {N : LocalNet R A} (ω : N.CompatibleStates)
-    {X Y : R} (h : X ≤ Y) (a : A X) :
+    {X Y : R} (h : X ≤ Y) (a : (A X).Observables) :
     ω.state Y (N.incl h a) = ω.state X a
 ```
 
-**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L116).
+**An instance with no name**, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L108).
 
 > Decidable equality used internally by the direct-limit construction.
 
@@ -119,7 +120,7 @@ noncomputable local instance : DecidableEq R
 > A quasilocal observable has a local representative. A compatible family evaluates that
 > representative in its subsystem; compatibility makes the result independent of the representative.
 
-**`ProbabilisticTheory.LocalNet.Quasilocal.lift`**, a def, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L126).
+**`ProbabilisticTheory.LocalNet.lift`**, a def, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L118).
 
 > The expectation functional of `LocalNet.CompatibleStates` on the whole system.
 
@@ -127,39 +128,39 @@ noncomputable local instance : DecidableEq R
 noncomputable def lift (σ : N.CompatibleStates) : N.Quasilocal →ₗ[ℝ] ℝ
 ```
 
-**`ProbabilisticTheory.LocalNet.Quasilocal.lift_apply`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L136).
+**`ProbabilisticTheory.LocalNet.lift_apply`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L128).
 
 > The expectation functional of `LocalNet.CompatibleStates` evaluates a quasilocal observable
 > in any subsystem representing it.
 
 ```lean
-lemma lift_apply (σ : N.CompatibleStates) (i : R) (a : A i) :
+lemma lift_apply (σ : N.CompatibleStates) (i : R) (a : (A i).Observables) :
     lift σ (toQuasilocal N i a) = σ.state i a
 ```
 
-**`ProbabilisticTheory.LocalNet.Quasilocal.toState`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L144).
+**`ProbabilisticTheory.LocalNet.toState`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L138).
 
 > The state of the whole system defined by `LocalNet.CompatibleStates`.
 
 ```lean
-noncomputable def toState (σ : N.CompatibleStates) : 𝓢[ℝ, N.Quasilocal]
+noncomputable def toState (σ : N.CompatibleStates) : N.quasilocalTheory.State
 ```
 
-**`ProbabilisticTheory.LocalNet.Quasilocal.toState_apply`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L155).
+**`ProbabilisticTheory.LocalNet.toState_apply`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L149).
 
 > On a quasilocal observable represented in the subsystem `i`, `toState σ` is the state of `i`.
 
 ```lean
-lemma toState_apply (σ : N.CompatibleStates) (i : R) (a : A i) :
+lemma toState_apply (σ : N.CompatibleStates) (i : R) (a : (A i).Observables) :
     toState σ (toQuasilocal N i a) = σ.state i a
 ```
 
-**`ProbabilisticTheory.LocalNet.Quasilocal.stateEquiv`**, a def, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean#L160).
+**`ProbabilisticTheory.LocalNet.stateEquiv`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean#L154).
 
 > A state of the whole system is the same as `LocalNet.CompatibleStates`.
 
 ```lean
-noncomputable def stateEquiv : 𝓢[ℝ, N.Quasilocal] ≃ N.CompatibleStates
+noncomputable def stateEquiv : N.quasilocalTheory.State ≃ N.CompatibleStates
 ```
 
 ## Depends on
@@ -169,4 +170,4 @@ noncomputable def stateEquiv : 𝓢[ℝ, N.Quasilocal] ≃ N.CompatibleStates
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/State/Local.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Local.lean)
+- [Physlib/ProbabilisticTheory/State/Local.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/State/Local.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Density parameters and the closure relation
 
-The module `Physlib.Cosmology.FLRW.DensityParameters`, [Physlib/Cosmology/FLRW/DensityParameters.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean): 8 declarations, 8 with a docstring.
+The module `Physlib.Cosmology.FLRW.DensityParameters`, [Physlib/Cosmology/FLRW/DensityParameters.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean): 8 declarations, 8 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `Physlib.Cosmology.FLRW.DensityParameters`, [Physlib/Cosmology/FLRW/D
 > With the convention `x / 0 = 0`, these quantities vanish when `H = 0` or `G = 0`. They have their
 > physical meaning at the times at which `H ≠ 0`.
 
-**`Cosmology.FLRW.criticalDensity`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L73).
+**`Cosmology.FLRW.criticalDensity`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L73).
 
 > The critical density `ρ_cr = 3 H² / (8 π G)` of an FLRW model at time `t`, where `H` is the
 > Hubble parameter of its scale factor. It is the density of a spatially flat universe without
@@ -58,7 +58,7 @@ The module `Physlib.Cosmology.FLRW.DensityParameters`, [Physlib/Cosmology/FLRW/D
 noncomputable def criticalDensity (G : ℝ) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.densityParameter`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L77).
+**`Cosmology.FLRW.densityParameter`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L77).
 
 > The density parameter `Ω = ρ / ρ_cr` of a cosmic fluid in an FLRW model.
 
@@ -66,7 +66,7 @@ noncomputable def criticalDensity (G : ℝ) (t : Time) : ℝ
 noncomputable def densityParameter (F : CosmicFluid) (G : ℝ) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.curvatureDensityParameter`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L83).
+**`Cosmology.FLRW.curvatureDensityParameter`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L83).
 
 > The curvature density parameter `Ω_K = - k c² / (H² a²)` of an FLRW model, where `k` is the
 > curvature parameter of its spatial geometry. When `H` and `a` are nonzero, it is positive for a
@@ -76,7 +76,7 @@ noncomputable def densityParameter (F : CosmicFluid) (G : ℝ) (t : Time) : ℝ
 noncomputable def curvatureDensityParameter (c : SpeedOfLight) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.lambdaDensityParameter`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L88).
+**`Cosmology.FLRW.lambdaDensityParameter`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L88).
 
 > The density parameter `Ω_Λ = Λ c² / (3 H²)` of the cosmological constant in an FLRW
 > model.
@@ -85,7 +85,7 @@ noncomputable def curvatureDensityParameter (c : SpeedOfLight) (t : Time) : ℝ
 noncomputable def lambdaDensityParameter (Λ : ℝ) (c : SpeedOfLight) (t : Time) : ℝ
 ```
 
-**`Cosmology.FLRW.lambdaDensityParameter_eq_densityParameter`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L93).
+**`Cosmology.FLRW.lambdaDensityParameter_eq_densityParameter`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L93).
 
 > For `G ≠ 0`, `Ω_Λ` is the density parameter of the empty fluid with the cosmological constant
 > folded in.
@@ -97,7 +97,7 @@ lemma lambdaDensityParameter_eq_densityParameter {Λ G : ℝ} {c : SpeedOfLight}
       = U.densityParameter (CosmicFluid.empty.addCosmologicalConstant Λ G c) G t
 ```
 
-**`Cosmology.FLRW.densityParameter_addCosmologicalConstant`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L104).
+**`Cosmology.FLRW.densityParameter_addCosmologicalConstant`**, a lemma, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L104).
 
 > For `G ≠ 0`, folding the cosmological constant into a cosmic fluid adds `Ω_Λ` to its
 > density parameter.
@@ -111,7 +111,7 @@ lemma densityParameter_addCosmologicalConstant (F : CosmicFluid) {Λ G : ℝ} {c
 
 ## B. The closure relation
 
-**`Cosmology.FLRW.FriedmannSolution.densityParameter_add_lambda_add_curvature`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L124).
+**`Cosmology.FLRW.FriedmannSolution.densityParameter_add_lambda_add_curvature`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L124).
 
 > The closure relation `Ω + Ω_Λ + Ω_K = 1` for a solution of the Friedmann equations, at the
 > times of the interval of the model at which `H ≠ 0`.
@@ -123,7 +123,7 @@ lemma densityParameter_add_lambda_add_curvature (h : U.FriedmannSolution F Λ G 
       + U.curvatureDensityParameter c t = 1
 ```
 
-**`Cosmology.FLRW.FriedmannSolution.densityParameter_add_curvature`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean#L145).
+**`Cosmology.FLRW.FriedmannSolution.densityParameter_add_curvature`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean#L145).
 
 > The closure relation `Ω + Ω_K = 1` for a solution of the Friedmann equations without
 > cosmological constant, at the times of the interval of the model at which `H ≠ 0`.
@@ -140,4 +140,4 @@ lemma densityParameter_add_curvature (h : U.FriedmannSolution F 0 G c) {t : Time
 
 ## Sources
 
-- [Physlib/Cosmology/FLRW/DensityParameters.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Cosmology/FLRW/DensityParameters.lean)
+- [Physlib/Cosmology/FLRW/DensityParameters.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Cosmology/FLRW/DensityParameters.lean)

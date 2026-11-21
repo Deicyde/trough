@@ -8,13 +8,13 @@ proof: formalized
 
 # 106.7 Infinitesimal deformations
 
-Section 106.7 of the Stacks Project, [Tag 0DNQ](https://stacks.math.columbia.edu/tag/0DNQ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 106.7 of the Stacks Project, [Tag 0DNQ](https://stacks.math.columbia.edu/tag/0DNQ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DNR, a lemma
 
 [Tag 0DNR](https://stacks.math.columbia.edu/tag/0DNR) in the Stacks Project.
 
-**`Deformation.Artin.existsUnique_infFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/FlatBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Infinitesimal/FlatBaseChange.lean#L203).
+**`Deformation.Artin.existsUnique_infFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/FlatBaseChange.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Infinitesimal/FlatBaseChange.lean#L203).
 
 > **Stacks 0DNR.** Let `𝒳` be a category fibred in groupoids over the big fppf site of `S`,
 > let `A → C` be a flat homomorphism of `S`-algebras, let `x` be an object of `𝒳` over `Spec A`
@@ -44,7 +44,7 @@ public theorem existsUnique_infFlatBaseChange
             hMN ((a * c) ⊗ₜ[A] D.homRepX M θ q)) → e' = e
 ```
 
-**`Deformation.Artin.exists_infFlatBaseChange_of_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/InfFlatBaseChangeStack.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Infinitesimal/InfFlatBaseChangeStack.lean#L322).
+**`Deformation.Artin.exists_infFlatBaseChange_of_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/InfFlatBaseChangeStack.lean, line 322](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Infinitesimal/InfFlatBaseChangeStack.lean#L322).
 
 > **Stacks 0DNR: infinitesimal automorphisms commute with flat base change.** Let `𝒳` be an
 > algebraic stack over `S` whose inertia `ℐ_𝒳 ⟶ 𝒳` is locally of finite presentation, let `A → C`
@@ -84,7 +84,7 @@ theorem exists_infFlatBaseChange_of_inertia (𝒳 : AlgebraicStacks.{u, w} B S h
 
 [Tag 0DNS](https://stacks.math.columbia.edu/tag/0DNS) in the Stacks Project.
 
-**`Deformation.Artin.LiftClassSheaf.isSheaf_liftClassPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftClassSheafCondition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Infinitesimal/LiftClassSheafCondition.lean#L149).
+**`Deformation.Artin.LiftClassSheaf.isSheaf_liftClassPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftClassSheafCondition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Infinitesimal/LiftClassSheafCondition.lean#L149).
 
 > **Stacks 0DNS.** For an algebraic stack over a base scheme whose inertia is locally of finite
 > presentation, and a deformation situation `(A' → A, x)`, the functor sending an affine
@@ -103,7 +103,7 @@ theorem isSheaf_liftClassPresheaf
 
 [Tag 0DNT](https://stacks.math.columbia.edu/tag/0DNT) in the Stacks Project.
 
-**`Deformation.Artin.exists_tangentFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFlatBaseChangeStack.lean, line 586](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFlatBaseChangeStack.lean#L586).
+**`Deformation.Artin.exists_tangentFlatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFlatBaseChangeStack.lean, line 586](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFlatBaseChangeStack.lean#L586).
 
 > **Stacks 0DNT: tangent modules of an algebraic stack commute with flat base change.** Let `𝒳`
 > be an algebraic stack over `S` with `𝒳 → S` locally of finite presentation, `A → C` a flat
@@ -154,7 +154,7 @@ theorem exists_tangentFlatBaseChange
 
 [Tag 0DNU](https://stacks.math.columbia.edu/tag/0DNU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_lift_of_fppf_lift_of_isDeformationSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackFppfLift.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackFppfLift.lean#L333).
+**`AlgebraicGeometry.Stack.exists_lift_of_fppf_lift_of_isDeformationSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackFppfLift.lean, line 333](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/GroupoidLift/StackFppfLift.lean#L333).
 
 > **Stacks 0DNU.** Let `𝒳` be an algebraic stack over `S` whose structure morphism is locally of
 > finite presentation, and let `(A' → A, x)` be a deformation situation, `A' → A` being
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 106.7, Tag 0DNQ](https://stacks.math.columbia.edu/tag/0DNQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

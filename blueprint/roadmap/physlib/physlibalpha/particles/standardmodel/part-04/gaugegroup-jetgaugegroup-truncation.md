@@ -8,7 +8,7 @@ proof: formalized
 
 # Truncation of the jet gauge group
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Truncation`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Truncation`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean): 7 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.JetGaugeGroup.Trunca
 
 ## A. The truncation
 
-**`StandardModel.JetGaugeGroupI.truncation`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L64).
+**`StandardModel.JetGaugeGroupI.truncation`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L64).
 
 > The `n`-th truncation of a jet of a gauge transformation: componentwise, all Taylor
 > coefficients of total degree greater than `n` are set to zero.
@@ -50,7 +50,7 @@ noncomputable def truncation (n : ℕ) (U : JetGaugeGroupI) :
         (Fin 2) SpaceTimeAlgebra × SpaceTimeAlgebra
 ```
 
-**`StandardModel.JetGaugeGroupI.truncation_one`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L72).
+**`StandardModel.JetGaugeGroupI.truncation_one`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L72).
 
 > Truncation of the identity jet is the identity value triple.
 
@@ -60,7 +60,7 @@ lemma truncation_one (n : ℕ) : truncation n (1 : JetGaugeGroupI) = 1
 
 ## B. The comparison with the Maurer–Cartan filtration
 
-**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_eq_zero_of_mem_truncationKer`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L89).
+**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_eq_zero_of_mem_truncationKer`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L89).
 
 > The base-point Taylor data of the Maurer–Cartan form of a jet trivial to order `n`,
 > read as power-series coefficients of a scalar component `f` of the jet gauge algebra
@@ -78,7 +78,7 @@ lemma coeff_maurerCartanForm_eq_zero_of_mem_truncationKer (ψ : GaugeAlgebra →
     coeff m (f (maurerCartanForm U ρ)) = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toSU3Matrix_eq_zero_of_mem_truncationKer`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L109).
+**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toSU3Matrix_eq_zero_of_mem_truncationKer`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L109).
 
 > The `su(3)` entries of `coeff_maurerCartanForm_eq_zero_of_mem_truncationKer`.
 
@@ -89,7 +89,7 @@ lemma coeff_maurerCartanForm_toSU3Matrix_eq_zero_of_mem_truncationKer {U : JetGa
     coeff m ((maurerCartanForm U ρ).toSU3Matrix i j) = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toSU2Matrix_eq_zero_of_mem_truncationKer`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L119).
+**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toSU2Matrix_eq_zero_of_mem_truncationKer`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L119).
 
 > The `su(2)` entries of `coeff_maurerCartanForm_eq_zero_of_mem_truncationKer`.
 
@@ -100,7 +100,7 @@ lemma coeff_maurerCartanForm_toSU2Matrix_eq_zero_of_mem_truncationKer {U : JetGa
     coeff m ((maurerCartanForm U ρ).toSU2Matrix i j) = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toU1Value_eq_zero_of_mem_truncationKer`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L129).
+**`StandardModel.JetGaugeGroupI.coeff_maurerCartanForm_toU1Value_eq_zero_of_mem_truncationKer`**, a lemma, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L129).
 
 > The `u(1)` value of `coeff_maurerCartanForm_eq_zero_of_mem_truncationKer`.
 
@@ -111,7 +111,7 @@ lemma coeff_maurerCartanForm_toU1Value_eq_zero_of_mem_truncationKer {U : JetGaug
     coeff m (maurerCartanForm U ρ).toU1Value = 0
 ```
 
-**`StandardModel.JetGaugeGroupI.truncation_eq_one_of_mem_truncationKer`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L141).
+**`StandardModel.JetGaugeGroupI.truncation_eq_one_of_mem_truncationKer`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean#L141).
 
 > Maurer–Cartan triangularity for the Standard Model: a jet trivial to order `n` in the
 > sense of the Maurer–Cartan filtration truncates to the identity at order `n`. On each
@@ -130,4 +130,4 @@ lemma truncation_eq_one_of_mem_truncationKer {U : JetGaugeGroupI} {n : ℕ}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean)

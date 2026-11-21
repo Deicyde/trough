@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 602 to Erdős Problem 639
+# Erdős Problem 602 to Erdős Problem 636
 
 - [Erdős Problem 602](../../../../../erdos-problems/600-699/part-01/erdos-problem-602.md)
 - [Erdős Problem 603](../../../../../erdos-problems/600-699/part-01/erdos-problem-603.md)
@@ -17,10 +17,10 @@ navigation: transparent
 - [Erdős Problem 619](../../../../../erdos-problems/600-699/part-01/erdos-problem-619.md)
 - [Erdős Problem 621](../../../../../erdos-problems/600-699/part-01/erdos-problem-621.md)
 - [Erdős Problem 624](../../../../../erdos-problems/600-699/part-01/erdos-problem-624.md)
+- [Erdős Problem 625](../../../../../erdos-problems/600-699/part-01/erdos-problem-625.md)
 - [Erdős Problem 626](../../../../../erdos-problems/600-699/part-01/erdos-problem-626.md)
 - [Erdős Problem 627](../../../../../erdos-problems/600-699/part-01/erdos-problem-627.md)
-- [Erdős Problem 628](../../../../../erdos-problems/600-699/part-01/erdos-problem-628.md)
+- [Erdős Problem 628](../../../../../erdos-problems/600-699/part-02/erdos-problem-628.md)
 - [Erdős Problem 629](../../../../../erdos-problems/600-699/part-02/erdos-problem-629.md)
 - [Erdős Problem 633](../../../../../erdos-problems/600-699/part-02/erdos-problem-633.md)
 - [Erdős Problem 636](../../../../../erdos-problems/600-699/part-02/erdos-problem-636.md)
-- [Erdős Problem 639](../../../../../erdos-problems/600-699/part-02/erdos-problem-639.md)

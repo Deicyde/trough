@@ -8,7 +8,7 @@ proof: formalized
 
 # The rhombohedral lattice
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.Rhombohedral`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.Rhombohedral`, [PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean): 7 declarations, 7 with a docstring.
 
 > The rhombohedral lattice, with its embedding and the bonds of its first two neighbour shells.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.Rhombohedral`, [Physli
 
 ## A. The lattice and its embedding
 
-**`CondensedMatter.Crystal.rhombohedral`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L53).
+**`CondensedMatter.Crystal.rhombohedral`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L53).
 
 > One site per primitive cell of the rhombohedral lattice.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Examples.Rhombohedral`, [Physli
 def rhombohedral
 ```
 
-**`CondensedMatter.Crystal.rhombohedralVectors`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L56).
+**`CondensedMatter.Crystal.rhombohedralVectors`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L56).
 
 > The primitive vectors `(p, q, q)`, `(q, p, q)` and `(q, q, p)` of a rhombohedral lattice.
 
@@ -52,7 +52,7 @@ def rhombohedral
 noncomputable def rhombohedralVectors (p q : ℝ) : Fin 3 → EuclideanSpace ℝ (Fin 3)
 ```
 
-**`CondensedMatter.Crystal.rhombohedralVectors_independent`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L60).
+**`CondensedMatter.Crystal.rhombohedralVectors_independent`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L60).
 
 > The primitive vectors are independent when `p ≠ q` and `p + 2 q ≠ 0`.
 
@@ -61,7 +61,7 @@ lemma rhombohedralVectors_independent {p q : ℝ} (hpq : p ≠ q) (hp : p + 2 * 
     LinearIndependent ℝ (rhombohedralVectors p q)
 ```
 
-**`CondensedMatter.Crystal.rhombohedralGeometry`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L78).
+**`CondensedMatter.Crystal.rhombohedralGeometry`**, a def, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L78).
 
 > The rhombohedral lattice embedded with the primitive vectors `rhombohedralVectors p q`.
 
@@ -72,7 +72,7 @@ noncomputable def rhombohedralGeometry (p q : ℝ) (hpq : p ≠ q) (hp : p + 2 *
 
 ## B. Bonds and coordination number
 
-**`CondensedMatter.Crystal.rhombohedralBonds`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L87).
+**`CondensedMatter.Crystal.rhombohedralBonds`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L87).
 
 > The bonds of the first two shells for `-1 / 4 < cos α < 0`, up to sign: the three primitive
 > vectors and their pairwise sums.
@@ -81,7 +81,7 @@ noncomputable def rhombohedralGeometry (p q : ℝ) (hpq : p ≠ q) (hp : p + 2 *
 def rhombohedralBonds : List (Bond (Fin 3 → ℤ) Unit)
 ```
 
-**`CondensedMatter.Crystal.rhombohedralGraph`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L92).
+**`CondensedMatter.Crystal.rhombohedralGraph`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L92).
 
 > The twelve-neighbour rhombohedral graph.
 
@@ -89,7 +89,7 @@ def rhombohedralBonds : List (Bond (Fin 3 → ℤ) Unit)
 def rhombohedralGraph : PeriodicGraph rhombohedral
 ```
 
-**`CondensedMatter.Crystal.rhombohedral_neighbors_card`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L95).
+**`CondensedMatter.Crystal.rhombohedral_neighbors_card`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean#L95).
 
 > Each site of the rhombohedral lattice has twelve neighbours.
 
@@ -104,4 +104,4 @@ lemma rhombohedral_neighbors_card (x : rhombohedral.Site) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 96.13 Stackification and sheaves
 
-Section 96.13 of the Stacks Project, [Tag 06WP](https://stacks.math.columbia.edu/tag/06WP). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 96.13 of the Stacks Project, [Tag 06WP](https://stacks.math.columbia.edu/tag/06WP). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06WQ, a lemma
 
 [Tag 06WQ](https://stacks.math.columbia.edu/tag/06WQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalence_inverseImage_of_isEquivalenceOver_stackifications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationInduced.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationInduced.lean#L92).
+**`AlgebraicGeometry.Stack.isEquivalence_inverseImage_of_isEquivalenceOver_stackifications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationInduced.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationInduced.lean#L92).
 
 > **Stacks 06WQ.** Let `F : 𝒳 ⥤ 𝒴` be a 1-morphism of categories fibred in groupoids over the
 > big fppf category of `S`. If `F` induces an equivalence of stackifications, then the morphism of
@@ -61,7 +61,7 @@ theorem isEquivalence_inverseImage_of_isEquivalenceOver_stackifications
 
 [Tag 06WR](https://stacks.math.columbia.edu/tag/06WR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isEquivalence_modulePullback_of_isStackification_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean#L79). The attribute's comment: “the Mod clause: f^* is an equivalence Mod(𝒪\_𝒴) ⥤ Mod(𝒪\_𝒳), for categories fibred in groupoids in arbitrary universes and modules in any universe containing that of the rings”.
+**`AlgebraicGeometry.Stack.isEquivalence_modulePullback_of_isStackification_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean#L79). The attribute's comment: “the Mod clause: f^* is an equivalence Mod(𝒪\_𝒴) ⥤ Mod(𝒪\_𝒳), for categories fibred in groupoids in arbitrary universes and modules in any universe containing that of the rings”.
 
 > **Stacks 06WR, the `Mod` clause.**  Let `f : 𝒳 ⥤ 𝒴` be a 1-morphism of categories fibred in
 > groupoids over the big fppf category of `S`, and suppose `f` induces an equivalence of
@@ -89,7 +89,7 @@ theorem isEquivalence_modulePullback_of_isStackification_of_isEquivalenceOver
       B.topology le_rfl).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.isEquivalence_quasicoherentPullback_of_isStackification_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean#L112). The attribute's comment: “the QCoh clause: f^* is an equivalence QCoh(𝒪\_𝒴) ⥤ QCoh(𝒪\_𝒳), for categories fibred in groupoids in arbitrary universes and modules in any universe containing that of the rings”.
+**`AlgebraicGeometry.Stack.isEquivalence_quasicoherentPullback_of_isStackification_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean, line 112](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/StackificationModulesOfStackifications.lean#L112). The attribute's comment: “the QCoh clause: f^* is an equivalence QCoh(𝒪\_𝒴) ⥤ QCoh(𝒪\_𝒳), for categories fibred in groupoids in arbitrary universes and modules in any universe containing that of the rings”.
 
 > **Stacks 06WR, the `QCoh` clause.**  Let `f : 𝒳 ⥤ 𝒴` be a 1-morphism of categories fibred in
 > groupoids over the big fppf category of `S`, and suppose `f` induces an equivalence of
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 96.13, Tag 06WP](https://stacks.math.columbia.edu/tag/06WP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

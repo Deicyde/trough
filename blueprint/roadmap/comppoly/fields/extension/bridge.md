@@ -7,7 +7,7 @@ proof: formalized
 
 # Bridging `Ext P` to `AdjoinRoot P.poly`
 
-`CompPoly.Fields.Extension.Bridge`, in [CompPoly/Fields/Extension/Bridge.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean), by Derek Sorensen.
+`CompPoly.Fields.Extension.Bridge`, in [CompPoly/Fields/Extension/Bridge.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean), by Derek Sorensen.
 
 > The computable coefficient-vector arithmetic of `CompPoly/Fields/Extension/Defs.lean` is related
 > to its specification `AdjoinRoot f` by
@@ -36,7 +36,7 @@ proof: formalized
 > Bijectivity, cardinality and the `Field` structure are in
 > `CompPoly/Fields/Extension/Field.lean`.
 
-`CompPoly.Extension.Ext.rt` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L54))
+`CompPoly.Extension.Ext.rt` (definition, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L54))
 
 > The image of `X` in the quotient, i.e. the adjoined root of `f`.
 
@@ -44,7 +44,7 @@ proof: formalized
 noncomputable def rt (P : ExtensionParams F) : Quot[P]
 ```
 
-`CompPoly.Extension.Ext.degree_poly` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L57))
+`CompPoly.Extension.Ext.degree_poly` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L57))
 
 > The degree of the defining polynomial, as a `WithBot ℕ`.
 
@@ -52,7 +52,7 @@ noncomputable def rt (P : ExtensionParams F) : Quot[P]
 theorem degree_poly : P.poly.degree = (P.d : WithBot ℕ)
 ```
 
-`CompPoly.Extension.Ext.toQuot` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L60))
+`CompPoly.Extension.Ext.toQuot` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L60))
 
 > The map from coefficient vectors to the quotient ring.
 
@@ -62,38 +62,38 @@ noncomputable def toQuot (x : Ext P) : Quot[P]
 
 > ### `toQuot` is additive
 
-`CompPoly.Extension.Ext.toQuot_zero` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L65))
+`CompPoly.Extension.Ext.toQuot_zero` (theorem, [line 65](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L65))
 
 ```lean
 theorem toQuot_zero : toQuot (0 : Ext P) = 0
 ```
 
-`CompPoly.Extension.Ext.toQuot_add` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L67))
+`CompPoly.Extension.Ext.toQuot_add` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L67))
 
 ```lean
 theorem toQuot_add (x y : Ext P) : toQuot (x + y) = toQuot x + toQuot y
 ```
 
-`CompPoly.Extension.Ext.toQuot_neg` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L70))
+`CompPoly.Extension.Ext.toQuot_neg` (theorem, [line 70](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L70))
 
 ```lean
 theorem toQuot_neg (x : Ext P) : toQuot (-x) = -toQuot x
 ```
 
-`CompPoly.Extension.Ext.toQuot_sub` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L73))
+`CompPoly.Extension.Ext.toQuot_sub` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L73))
 
 ```lean
 theorem toQuot_sub (x y : Ext P) : toQuot (x - y) = toQuot x - toQuot y
 ```
 
-`CompPoly.Extension.Ext.toQuot_smul` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L76))
+`CompPoly.Extension.Ext.toQuot_smul` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L76))
 
 ```lean
 theorem toQuot_smul (c : F) (x : Ext P) :
     toQuot (c • x) = algebraMap F Quot[P] c * toQuot x
 ```
 
-`CompPoly.Extension.Ext.toQuot_one` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L81))
+`CompPoly.Extension.Ext.toQuot_one` (theorem, [line 81](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L81))
 
 > Only the constant coefficient of `1` is nonzero, so `toQuot 1` collapses to `1`.
 
@@ -101,13 +101,13 @@ theorem toQuot_smul (c : F) (x : Ext P) :
 theorem toQuot_one : toQuot (1 : Ext P) = 1
 ```
 
-`CompPoly.Extension.Ext.toQuot_natCast` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L88))
+`CompPoly.Extension.Ext.toQuot_natCast` (theorem, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L88))
 
 ```lean
 theorem toQuot_natCast (n : ℕ) : toQuot (n : Ext P) = n
 ```
 
-`CompPoly.Extension.Ext.toQuot_intCast` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L95))
+`CompPoly.Extension.Ext.toQuot_intCast` (theorem, [line 95](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L95))
 
 ```lean
 theorem toQuot_intCast (n : ℤ) : toQuot (n : Ext P) = n
@@ -115,7 +115,7 @@ theorem toQuot_intCast (n : ℤ) : toQuot (n : Ext P) = n
 
 > ### Injectivity
 
-`CompPoly.Extension.Ext.toQuot_eq_mk` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L105))
+`CompPoly.Extension.Ext.toQuot_eq_mk` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L105))
 
 > `toQuot` as the class of an explicit degree-`< d` polynomial representative.
 
@@ -124,13 +124,13 @@ theorem toQuot_eq_mk (x : Ext P) :
     toQuot x = AdjoinRoot.mk P.poly (∑ i : Fin P.d, C (coeff x i) * X ^ (i : ℕ))
 ```
 
-`CompPoly.Extension.Ext.toQuot_injective` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L129))
+`CompPoly.Extension.Ext.toQuot_injective` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L129))
 
 ```lean
 theorem toQuot_injective : Function.Injective (toQuot (P := P))
 ```
 
-`CompPoly.Extension.Ext.toQuot_inj` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L140))
+`CompPoly.Extension.Ext.toQuot_inj` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L140))
 
 ```lean
 theorem toQuot_inj {x y : Ext P} : toQuot x = toQuot y ↔ x = y
@@ -138,7 +138,7 @@ theorem toQuot_inj {x y : Ext P} : toQuot x = toQuot y ↔ x = y
 
 > ### The defining relation and the multiply-by-`X` homomorphism law
 
-`CompPoly.Extension.Ext.toQuot_rangeForm` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L147))
+`CompPoly.Extension.Ext.toQuot_rangeForm` (theorem, [line 147](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L147))
 
 > `toQuot` as a sum over `Finset.range`, using the total `coeffNat`. Convenient for the shift
 > reindexing in `toQuot_shiftReduce`.
@@ -148,7 +148,7 @@ theorem toQuot_rangeForm (x : Ext P) :
     toQuot x = ∑ k ∈ Finset.range P.d, algebraMap F Quot[P] (coeffNat x k) * (rt P) ^ k
 ```
 
-`CompPoly.Extension.Ext.rt_relation` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L155))
+`CompPoly.Extension.Ext.rt_relation` (theorem, [line 155](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L155))
 
 > **The defining relation**, from `AdjoinRoot.mk_self`: the adjoined root `rt` satisfies
 > `rt ^ d + ∑ lowerᵢ · rt ^ i = 0`.
@@ -159,7 +159,7 @@ theorem rt_relation :
       = 0
 ```
 
-`CompPoly.Extension.Ext.sum_lower_rangeForm` (theorem, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L172))
+`CompPoly.Extension.Ext.sum_lower_rangeForm` (theorem, [line 172](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L172))
 
 > In `range` form: `∑_{m < d} lowerₘ · rt ^ m = -rt ^ d`.
 
@@ -169,7 +169,7 @@ theorem sum_lower_rangeForm :
       = -(rt P) ^ P.d
 ```
 
-`CompPoly.Extension.Ext.coeffNat_shiftReduce` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L184))
+`CompPoly.Extension.Ext.coeffNat_shiftReduce` (theorem, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L184))
 
 > The coefficient formula for `shiftReduce`, in `coeffNat` form.
 
@@ -179,7 +179,7 @@ theorem coeffNat_shiftReduce (e : Ext P) {m : ℕ} (h : m < P.d) :
       = (if m = 0 then 0 else coeffNat e (m - 1)) - coeffNat e (P.d - 1) * P.lowerCoeffNat m
 ```
 
-`CompPoly.Extension.Ext.toQuot_shiftReduce` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L194))
+`CompPoly.Extension.Ext.toQuot_shiftReduce` (theorem, [line 194](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L194))
 
 > **The multiply-by-`X` homomorphism law.** `shiftReduce` is multiplication by `X` in the quotient,
 > so `toQuot (shiftReduce e) = rt * toQuot e`. This is the one place `rt_relation` is consumed, and
@@ -191,20 +191,20 @@ theorem toQuot_shiftReduce (e : Ext P) : toQuot (shiftReduce e) = rt P * toQuot 
 
 > ### Reduced monomials
 
-`CompPoly.Extension.Ext.monomialMod_zero` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L230))
+`CompPoly.Extension.Ext.monomialMod_zero` (theorem, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L230))
 
 ```lean
 theorem monomialMod_zero : (monomialMod 0 : Ext P) = 1
 ```
 
-`CompPoly.Extension.Ext.monomialMod_succ` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L232))
+`CompPoly.Extension.Ext.monomialMod_succ` (theorem, [line 232](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L232))
 
 ```lean
 theorem monomialMod_succ (k : ℕ) :
     (monomialMod (k + 1) : Ext P) = shiftReduce (monomialMod k)
 ```
 
-`CompPoly.Extension.Ext.toQuot_monomialMod` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L237))
+`CompPoly.Extension.Ext.toQuot_monomialMod` (theorem, [line 237](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L237))
 
 > `monomialMod k` really is `X^k` reduced: its image under `toQuot` is `rt ^ k`.
 
@@ -214,7 +214,7 @@ theorem toQuot_monomialMod (k : ℕ) : toQuot (monomialMod k : Ext P) = (rt P) ^
 
 > ### `toQuot` is multiplicative
 
-`CompPoly.Extension.Ext.toQuot_mul` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L244))
+`CompPoly.Extension.Ext.toQuot_mul` (theorem, [line 244](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L244))
 
 ```lean
 theorem toQuot_mul (x y : Ext P) : toQuot (x * y) = toQuot x * toQuot y
@@ -227,7 +227,7 @@ theorem toQuot_mul (x y : Ext P) : toQuot (x * y) = toQuot x * toQuot y
 > available from `toQuot_mul` plus injectivity — so exponentiation can be handled before the full
 > ring structure is transported.
 
-`CompPoly.Extension.Ext.mul_assoc'` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L275))
+`CompPoly.Extension.Ext.mul_assoc'` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L275))
 
 > Associativity. Kept out of the instance graph as a plain theorem to avoid a `Semigroup`
 > diamond with the `CommRing` instance below.
@@ -236,7 +236,7 @@ theorem toQuot_mul (x y : Ext P) : toQuot (x * y) = toQuot x * toQuot y
 theorem mul_assoc' (x y z : Ext P) : x * y * z = x * (y * z)
 ```
 
-`CompPoly.Extension.Ext.toQuot_pow` (theorem, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L278))
+`CompPoly.Extension.Ext.toQuot_pow` (theorem, [line 278](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L278))
 
 ```lean
 theorem toQuot_pow (x : Ext P) (n : ℕ) : toQuot (x ^ n) = toQuot x ^ n
@@ -251,13 +251,13 @@ theorem toQuot_pow (x : Ext P) (n : ℕ) : toQuot (x ^ n) = toQuot x ^ n
 > by hand keeps every operation computable, matching how `CPolynomial` assembles its instances in
 > `CompPoly/Univariate/Basic.lean`.
 
-`CompPoly.Extension.Ext.instAddCommGroup` (instance, [line 294](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L294))
+`CompPoly.Extension.Ext.instAddCommGroup` (instance, [line 294](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L294))
 
 ```lean
 instance instAddCommGroup : AddCommGroup (Ext P)
 ```
 
-`CompPoly.Extension.Ext.instCommRing` (instance, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L311))
+`CompPoly.Extension.Ext.instCommRing` (instance, [line 311](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L311))
 
 ```lean
 instance instCommRing : CommRing (Ext P)
@@ -265,7 +265,7 @@ instance instCommRing : CommRing (Ext P)
 
 > ### The base field and the adjoined root
 
-`CompPoly.Extension.Ext.toQuot_ofBase` (theorem, [line 336](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L336))
+`CompPoly.Extension.Ext.toQuot_ofBase` (theorem, [line 336](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L336))
 
 > `ofBase` lands on the constant coefficient, so it agrees with `algebraMap` into the quotient.
 
@@ -274,7 +274,7 @@ theorem toQuot_ofBase (c : F) :
     toQuot (ofBase (P := P) c) = algebraMap F Quot[P] c
 ```
 
-`CompPoly.Extension.Ext.toQuot_gen` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L345))
+`CompPoly.Extension.Ext.toQuot_gen` (theorem, [line 345](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L345))
 
 > `gen` is the class of `X`, i.e. the adjoined root.
 
@@ -282,7 +282,7 @@ theorem toQuot_ofBase (c : F) :
 theorem toQuot_gen : toQuot (gen : Ext P) = rt P
 ```
 
-`CompPoly.Extension.Ext.ofBaseRingHom` (definition, [line 354](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L354))
+`CompPoly.Extension.Ext.ofBaseRingHom` (definition, [line 354](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L354))
 
 > The base-field embedding, as a ring homomorphism.
 
@@ -290,13 +290,13 @@ theorem toQuot_gen : toQuot (gen : Ext P) = rt P
 def ofBaseRingHom (P : ExtensionParams F) : F →+* Ext P
 ```
 
-`CompPoly.Extension.Ext.ofBaseRingHom_apply` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L361))
+`CompPoly.Extension.Ext.ofBaseRingHom_apply` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L361))
 
 ```lean
 theorem ofBaseRingHom_apply (c : F) : ofBaseRingHom P c = ofBase c
 ```
 
-`CompPoly.Extension.Ext.instAlgebra` (instance, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L364))
+`CompPoly.Extension.Ext.instAlgebra` (instance, [line 364](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L364))
 
 > The extension is an `F`-algebra.
 
@@ -304,20 +304,20 @@ theorem ofBaseRingHom_apply (c : F) : ofBaseRingHom P c = ofBase c
 instance instAlgebra : Algebra F (Ext P)
 ```
 
-`CompPoly.Extension.Ext.algebraMap_eq_ofBase` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L370))
+`CompPoly.Extension.Ext.algebraMap_eq_ofBase` (theorem, [line 370](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L370))
 
 ```lean
 theorem algebraMap_eq_ofBase (c : F) : algebraMap F (Ext P) c = ofBase c
 ```
 
-`CompPoly.Extension.Ext.toQuot_sum` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L372))
+`CompPoly.Extension.Ext.toQuot_sum` (theorem, [line 372](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L372))
 
 ```lean
 theorem toQuot_sum {ι : Type*} (s : Finset ι) (f : ι → Ext P) :
     toQuot (∑ i ∈ s, f i) = ∑ i ∈ s, toQuot (f i)
 ```
 
-`CompPoly.Extension.Ext.gen_pow_d` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L381))
+`CompPoly.Extension.Ext.gen_pow_d` (theorem, [line 381](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L381))
 
 > **The defining relation** at the level of `Ext`: `gen ^ d` equals the reduced monomial
 > `monomialMod d`.
@@ -326,7 +326,7 @@ theorem toQuot_sum {ι : Type*} (s : Finset ι) (f : ι → Ext P) :
 theorem gen_pow_d : (gen : Ext P) ^ P.d = monomialMod P.d
 ```
 
-`CompPoly.Extension.Ext.aeval_gen_poly` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L385))
+`CompPoly.Extension.Ext.aeval_gen_poly` (theorem, [line 385](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L385))
 
 > `gen` is a root of the defining polynomial, in the form Mathlib's `aeval` expects.
 
@@ -334,7 +334,7 @@ theorem gen_pow_d : (gen : Ext P) ^ P.d = monomialMod P.d
 theorem aeval_gen_poly : aeval (gen : Ext P) P.poly = 0
 ```
 
-`CompPoly.Extension.Ext.toQuotRingHom` (definition, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L401))
+`CompPoly.Extension.Ext.toQuotRingHom` (definition, [line 401](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L401))
 
 > `toQuot` packaged as a ring homomorphism.
 
@@ -348,7 +348,7 @@ noncomputable def toQuotRingHom (P : ExtensionParams F) : Ext P →+* Quot[P]
 > collapses (the only nonzero lower coefficient is `lower₀ = -W`) to `rt ^ d = W`, recovering the
 > `gen ^ d = ofBase W` law the degree-4 extensions rely on.
 
-`CompPoly.Extension.Ext.rt_pow_d_binomial` (theorem, [line 416](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L416))
+`CompPoly.Extension.Ext.rt_pow_d_binomial` (theorem, [line 416](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L416))
 
 > The collapsed defining relation for a binomial modulus: `rt ^ d = W`.
 
@@ -357,7 +357,7 @@ theorem rt_pow_d_binomial (P : BinomialParams F) :
     (rt P.toExtensionParams) ^ P.d = algebraMap F Quot[P.toExtensionParams] P.W
 ```
 
-`CompPoly.Extension.Ext.gen_pow_d_binomial` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean#L432))
+`CompPoly.Extension.Ext.gen_pow_d_binomial` (theorem, [line 432](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean#L432))
 
 > **The binomial defining relation** at the level of `Ext`: `gen ^ d = ofBase W`.
 
@@ -372,5 +372,5 @@ theorem gen_pow_d_binomial (P : BinomialParams F) :
 
 ## Sources
 
-- [CompPoly/Fields/Extension/Bridge.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Bridge.lean)
+- [CompPoly/Fields/Extension/Bridge.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Bridge.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Extension.Bridge.json)

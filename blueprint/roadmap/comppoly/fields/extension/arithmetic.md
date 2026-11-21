@@ -7,7 +7,7 @@ proof: formalized
 
 # Computable arithmetic for monic quotient presentations
 
-`CompPoly.Fields.Extension.Arithmetic`, in [CompPoly/Fields/Extension/Arithmetic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean), by Derek Sorensen.
+`CompPoly.Fields.Extension.Arithmetic`, in [CompPoly/Fields/Extension/Arithmetic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean), by Derek Sorensen.
 
 > `ExtensionParams F` stores the degree, lower modulus coefficients and an explicit inverse-exponent
 > parameter `q`. `Ext P` is one nominal carrier with coefficient vectors in ascending degree order.
@@ -27,7 +27,7 @@ proof: formalized
 > laws belong to `Extension/Field.lean`. Raw parameters with an incorrect `q` still admit arithmetic
 > but do not thereby acquire field laws. The binomial conversion describes the modulus `X^d - W`.
 
-`CompPoly.Extension.ExtensionParams` (structure, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L49))
+`CompPoly.Extension.ExtensionParams` (structure, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L49))
 
 > The data defining an extension `F[X] / f` by a monic modulus `f` of degree `d`.
 >
@@ -54,7 +54,7 @@ structure ExtensionParams (F : Type*) where
   q : ℕ
 ```
 
-`CompPoly.Extension.ExtensionParams.lowerCoeff` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L68))
+`CompPoly.Extension.ExtensionParams.lowerCoeff` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L68))
 
 > The coefficient of `X^i` in the lower part of the modulus.
 
@@ -62,7 +62,7 @@ structure ExtensionParams (F : Type*) where
 def lowerCoeff (i : Fin P.d) : F
 ```
 
-`CompPoly.Extension.ExtensionParams.lowerCoeffNat` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L71))
+`CompPoly.Extension.ExtensionParams.lowerCoeffNat` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L71))
 
 > The lower modulus coefficient at index `k`, or zero when `P.d ≤ k`.
 
@@ -70,25 +70,25 @@ def lowerCoeff (i : Fin P.d) : F
 def lowerCoeffNat (k : ℕ) : F
 ```
 
-`CompPoly.Extension.ExtensionParams.lowerCoeffNat_coe` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L73))
+`CompPoly.Extension.ExtensionParams.lowerCoeffNat_coe` (theorem, [line 73](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L73))
 
 ```lean
 theorem lowerCoeffNat_coe (i : Fin P.d) : P.lowerCoeffNat (i : ℕ) = P.lowerCoeff i
 ```
 
-`CompPoly.Extension.ExtensionParams.lowerCoeffNat_of_ge` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L76))
+`CompPoly.Extension.ExtensionParams.lowerCoeffNat_of_ge` (theorem, [line 76](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L76))
 
 ```lean
 theorem lowerCoeffNat_of_ge {k : ℕ} (h : P.d ≤ k) : P.lowerCoeffNat k = 0
 ```
 
-`CompPoly.Extension.ExtensionParams.d_pos` (theorem, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L80))
+`CompPoly.Extension.ExtensionParams.d_pos` (theorem, [line 80](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L80))
 
 ```lean
 theorem d_pos : 0 < P.d
 ```
 
-`CompPoly.Extension.Ext` (structure, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L88))
+`CompPoly.Extension.Ext` (structure, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L88))
 
 > The carrier of the quotient by the monic modulus in `P`, with coefficients in ascending
 > order of powers. The parameter remains part of the type even when two moduli have equal degree.
@@ -99,7 +99,7 @@ structure Ext {F : Type*} (P : ExtensionParams F) : Type _ where
   coeffs : Vector F P.d
 ```
 
-`CompPoly.Extension.Ext.ofVector` (definition, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L97))
+`CompPoly.Extension.Ext.ofVector` (definition, [line 97](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L97))
 
 > Build an element from coefficients in ascending order of powers.
 
@@ -107,7 +107,7 @@ structure Ext {F : Type*} (P : ExtensionParams F) : Type _ where
 def ofVector (v : Vector F P.d) : Ext P
 ```
 
-`CompPoly.Extension.Ext.coeffs_ofVector` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L101))
+`CompPoly.Extension.Ext.coeffs_ofVector` (theorem, [line 101](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L101))
 
 > Extracting the coefficients of a constructed element returns the input vector.
 
@@ -115,7 +115,7 @@ def ofVector (v : Vector F P.d) : Ext P
 theorem coeffs_ofVector (v : Vector F P.d) : coeffs (ofVector (P := P) v) = v
 ```
 
-`CompPoly.Extension.Ext.ofVector_coeffs` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L105))
+`CompPoly.Extension.Ext.ofVector_coeffs` (theorem, [line 105](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L105))
 
 > Reconstructing an element from its coefficient vector returns that element.
 
@@ -123,7 +123,7 @@ theorem coeffs_ofVector (v : Vector F P.d) : coeffs (ofVector (P := P) v) = v
 theorem ofVector_coeffs (x : Ext P) : ofVector (coeffs x) = x
 ```
 
-`CompPoly.Extension.Ext.coeffs_injective` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L109))
+`CompPoly.Extension.Ext.coeffs_injective` (theorem, [line 109](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L109))
 
 > The coefficient vector uniquely determines an element.
 
@@ -131,7 +131,7 @@ theorem ofVector_coeffs (x : Ext P) : ofVector (coeffs x) = x
 theorem coeffs_injective : Function.Injective (coeffs (P := P))
 ```
 
-`CompPoly.Extension.Ext.ofFn` (definition, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L113))
+`CompPoly.Extension.Ext.ofFn` (definition, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L113))
 
 > Build an element from a coefficient function.
 
@@ -139,7 +139,7 @@ theorem coeffs_injective : Function.Injective (coeffs (P := P))
 def ofFn (g : Fin P.d → F) : Ext P
 ```
 
-`CompPoly.Extension.Ext.coeff` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L116))
+`CompPoly.Extension.Ext.coeff` (definition, [line 116](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L116))
 
 > The coefficient of `X^i`.
 
@@ -147,13 +147,13 @@ def ofFn (g : Fin P.d → F) : Ext P
 def coeff (x : Ext P) (i : Fin P.d) : F
 ```
 
-`CompPoly.Extension.Ext.coeff_ofFn` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L119))
+`CompPoly.Extension.Ext.coeff_ofFn` (theorem, [line 119](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L119))
 
 ```lean
 theorem coeff_ofFn (g : Fin P.d → F) (i : Fin P.d) : coeff (ofFn g) i = g i
 ```
 
-`CompPoly.Extension.Ext.ext` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L124))
+`CompPoly.Extension.Ext.ext` (theorem, [line 124](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L124))
 
 > Two elements with the same coefficients are equal.
 
@@ -161,13 +161,13 @@ theorem coeff_ofFn (g : Fin P.d → F) (i : Fin P.d) : coeff (ofFn g) i = g i
 theorem ext {x y : Ext P} (h : ∀ i, coeff x i = coeff y i) : x = y
 ```
 
-`CompPoly.Extension.Ext.ofFn_coeff` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L128))
+`CompPoly.Extension.Ext.ofFn_coeff` (theorem, [line 128](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L128))
 
 ```lean
 theorem ofFn_coeff (x : Ext P) : ofFn (coeff x) = x
 ```
 
-`CompPoly.Extension.Ext.equivFn` (definition, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L131))
+`CompPoly.Extension.Ext.equivFn` (definition, [line 131](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L131))
 
 > Coefficient vectors are exactly functions out of `Fin d`.
 
@@ -175,7 +175,7 @@ theorem ofFn_coeff (x : Ext P) : ofFn (coeff x) = x
 def equivFn (P : ExtensionParams F) : Ext P ≃ (Fin P.d → F)
 ```
 
-`CompPoly.Extension.Ext.coeffNat` (definition, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L138))
+`CompPoly.Extension.Ext.coeffNat` (definition, [line 138](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L138))
 
 > The coefficient at index `i`, or zero when `P.d ≤ i`.
 
@@ -183,19 +183,19 @@ def equivFn (P : ExtensionParams F) : Ext P ≃ (Fin P.d → F)
 def coeffNat (x : Ext P) (i : ℕ) : F
 ```
 
-`CompPoly.Extension.Ext.coeffNat_coe` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L140))
+`CompPoly.Extension.Ext.coeffNat_coe` (theorem, [line 140](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L140))
 
 ```lean
 theorem coeffNat_coe (x : Ext P) (i : Fin P.d) : coeffNat x (i : ℕ) = coeff x i
 ```
 
-`CompPoly.Extension.Ext.coeffNat_of_lt` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L143))
+`CompPoly.Extension.Ext.coeffNat_of_lt` (theorem, [line 143](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L143))
 
 ```lean
 theorem coeffNat_of_lt (x : Ext P) {i : ℕ} (h : i < P.d) : coeffNat x i = coeff x ⟨i, h⟩
 ```
 
-`CompPoly.Extension.Ext.coeffNat_of_ge` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L146))
+`CompPoly.Extension.Ext.coeffNat_of_ge` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L146))
 
 ```lean
 theorem coeffNat_of_ge (x : Ext P) {i : ℕ} (h : P.d ≤ i) : coeffNat x i = 0
@@ -207,7 +207,7 @@ theorem coeffNat_of_ge (x : Ext P) {i : ℕ} (h : P.d ≤ i) : coeffNat x i = 0
 > coordinates of `X`. The quotient bridge over a field promotes the constant embedding to an
 > `Algebra` structure and identifies the reduced power `gen ^ d` with `monomialMod d`.
 
-`CompPoly.Extension.Ext.ofBase` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L157))
+`CompPoly.Extension.Ext.ofBase` (definition, [line 157](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L157))
 
 > Place a coefficient-ring element in the constant coordinate.
 
@@ -215,7 +215,7 @@ theorem coeffNat_of_ge (x : Ext P) {i : ℕ} (h : P.d ≤ i) : coeffNat x i = 0
 def ofBase (c : F) : Ext P
 ```
 
-`CompPoly.Extension.Ext.gen` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L160))
+`CompPoly.Extension.Ext.gen` (definition, [line 160](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L160))
 
 > The coordinate vector with coefficient one at `X` and zero elsewhere.
 
@@ -230,7 +230,7 @@ def gen : Ext P
 > Everything downstream is proved from the single homomorphism law
 > `toQuot (shiftReduce e) = rt * toQuot e`.
 
-`CompPoly.Extension.Ext.shiftReduce` (definition, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L184))
+`CompPoly.Extension.Ext.shiftReduce` (definition, [line 184](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L184))
 
 > Multiply by `X` and reduce modulo `f`.
 >
@@ -242,7 +242,7 @@ def gen : Ext P
 def shiftReduce (e : Ext P) : Ext P
 ```
 
-`CompPoly.Extension.Ext.monomialMod` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L191))
+`CompPoly.Extension.Ext.monomialMod` (definition, [line 191](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L191))
 
 > The reduced form of `X^k` modulo `f`, obtained by iterating `shiftReduce` (multiply by `X`,
 > reduce) `k` times from `1 = X^0`. Its image under `toQuot` is `rt ^ k`.
@@ -251,7 +251,7 @@ def shiftReduce (e : Ext P) : Ext P
 def monomialMod (k : ℕ) : Ext P
 ```
 
-`CompPoly.Extension.Ext.mul` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L201))
+`CompPoly.Extension.Ext.mul` (definition, [line 201](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L201))
 
 > The monic-reduction product formula, representing multiplication in `F[X] / f`
 > when the coefficient ring is commutative.
@@ -263,7 +263,7 @@ def monomialMod (k : ℕ) : Ext P
 def mul (x y : Ext P) : Ext P
 ```
 
-`CompPoly.Extension.Ext.redScan` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L208))
+`CompPoly.Extension.Ext.redScan` (definition, [line 208](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L208))
 
 > Append `cur, shiftReduce cur, …`, `n` entries in all, to `acc`; the scan that builds `red`.
 > This is the table the `shiftReduce` docstring above refers to.
@@ -272,14 +272,14 @@ def mul (x y : Ext P) : Ext P
 def redScan : ℕ → Ext P → Array (Ext P) → Array (Ext P)
 ```
 
-`CompPoly.Extension.Ext.redScan_size` (theorem, [line 212](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L212))
+`CompPoly.Extension.Ext.redScan_size` (theorem, [line 212](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L212))
 
 ```lean
 theorem redScan_size (n : ℕ) (cur : Ext P) (acc : Array (Ext P)) :
     (redScan n cur acc).size = acc.size + n
 ```
 
-`CompPoly.Extension.Ext.redScan_getElem` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L219))
+`CompPoly.Extension.Ext.redScan_getElem` (theorem, [line 219](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L219))
 
 > Entry `k` of the scan is `shiftReduce^[k - acc.size] cur` past the prefix it was given.
 
@@ -290,7 +290,7 @@ theorem redScan_getElem (n : ℕ) (cur : Ext P) (acc : Array (Ext P)) (k : ℕ)
       if hlt : k < acc.size then acc[k] else shiftReduce^[k - acc.size] cur
 ```
 
-`CompPoly.Extension.Ext.red` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L253))
+`CompPoly.Extension.Ext.red` (definition, [line 253](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L253))
 
 > The reduction table: `red P` holds `X^k mod f` for every `k ≤ 2d - 2`, i.e. every exponent a
 > product of two reduced elements can reach.
@@ -304,14 +304,14 @@ theorem redScan_getElem (n : ℕ) (cur : Ext P) (acc : Array (Ext P)) (k : ℕ)
 def red (P : ExtensionParams F) : Vector (Ext P) (2 * P.d - 1)
 ```
 
-`CompPoly.Extension.Ext.red_getElem` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L256))
+`CompPoly.Extension.Ext.red_getElem` (theorem, [line 256](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L256))
 
 ```lean
 theorem red_getElem {k : ℕ} (hk : k < 2 * P.d - 1) :
     (red P)[k] = monomialMod k
 ```
 
-`Fin.foldl_add_eq_add_sum` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L264))
+`Fin.foldl_add_eq_add_sum` (theorem, [line 264](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L264))
 
 > A left fold that adds `f i` at each step is `a` plus the sum; the bridge from the loops the
 > compiler runs to the `Finset.sum`s the specification is stated with.
@@ -321,7 +321,7 @@ theorem _root_.Fin.foldl_add_eq_add_sum {M : Type*} [AddCommMonoid M] {n : ℕ} 
     (a : M) : Fin.foldl n (fun acc i => acc + f i) a = a + ∑ i, f i
 ```
 
-`CompPoly.Extension.Ext.convCoeff` (definition, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L286))
+`CompPoly.Extension.Ext.convCoeff` (definition, [line 286](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L286))
 
 > Coefficient `k` of the unreduced product `x · y` in `F[X]`, the convolution `∑_{i + j = k} xᵢ yⱼ`,
 > as one loop over `i` with `j = k - i`; a pair outside `[0, d)` contributes zero. `k` ranges over
@@ -340,7 +340,7 @@ theorem _root_.Fin.foldl_add_eq_add_sum {M : Type*} [AddCommMonoid M] {n : ℕ} 
 def convCoeff [Mul F] [Add F] [Zero F] (x y : Ext P) (k : ℕ) (init : F) : F
 ```
 
-`CompPoly.Extension.Ext.contractCoeff` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L295))
+`CompPoly.Extension.Ext.contractCoeff` (definition, [line 295](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L295))
 
 > Coefficient `m` of the reduction of the unreduced product `prod` against the table `tbl`:
 > `∑_k prodₖ · [X^k mod f]ₘ`. See `convCoeff` for why this is a separate function.
@@ -350,7 +350,7 @@ def contractCoeff [Mul F] [Add F] (tbl : Vector (Ext P) (2 * P.d - 1))
     (prod : Vector F (2 * P.d - 1)) (m : Fin P.d) (init : F) : F
 ```
 
-`CompPoly.Extension.Ext.mulTbl` (definition, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L318))
+`CompPoly.Extension.Ext.mulTbl` (definition, [line 318](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L318))
 
 > Table-driven multiplication: the compiled implementation of `mul`.
 >
@@ -373,7 +373,7 @@ def contractCoeff [Mul F] [Add F] (tbl : Vector (Ext P) (2 * P.d - 1))
 def mulTbl (x y : Ext P) : Ext P
 ```
 
-`CompPoly.Extension.Ext.convCoeff_zero` (theorem, [line 324](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L324))
+`CompPoly.Extension.Ext.convCoeff_zero` (theorem, [line 324](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L324))
 
 > `convCoeff` from zero is the convolution sum, with the second index as a `coeffNat`.
 
@@ -383,7 +383,7 @@ theorem convCoeff_zero (x y : Ext P) (k : ℕ) :
       if (i : ℕ) ≤ k ∧ k - (i : ℕ) < P.d then coeff x i * coeffNat y (k - (i : ℕ)) else 0
 ```
 
-`CompPoly.Extension.Ext.sum_fin_add_eq_sum_fin_ite` (theorem, [line 335](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L335))
+`CompPoly.Extension.Ext.sum_fin_add_eq_sum_fin_ite` (theorem, [line 335](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L335))
 
 > The reindexing behind `mul_eq_mulTbl`: summing `g (i + j)` over `j < d` is summing `g k` over
 > the `k < 2d - 1` that `i + j` reaches, for a fixed `i < d`.
@@ -395,7 +395,7 @@ theorem sum_fin_add_eq_sum_fin_ite {M : Type*} [AddCommMonoid M] {d : ℕ} (i : 
       ∑ k : Fin (2 * d - 1), if (i : ℕ) ≤ (k : ℕ) ∧ (k : ℕ) - (i : ℕ) < d then g k else 0
 ```
 
-`CompPoly.Extension.Ext.mul_eq_mulTbl` (theorem, [line 355](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L355))
+`CompPoly.Extension.Ext.mul_eq_mulTbl` (theorem, [line 355](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L355))
 
 ```lean
 theorem mul_eq_mulTbl : @mul = @mulTbl
@@ -403,47 +403,47 @@ theorem mul_eq_mulTbl : @mul = @mulTbl
 
 > ### Coefficients of the operations
 
-`CompPoly.Extension.Ext.coeff_zero` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L392))
+`CompPoly.Extension.Ext.coeff_zero` (theorem, [line 392](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L392))
 
 ```lean
 theorem coeff_zero (i : Fin P.d) : coeff (0 : Ext P) i = 0
 ```
 
-`CompPoly.Extension.Ext.coeff_one` (theorem, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L393))
+`CompPoly.Extension.Ext.coeff_one` (theorem, [line 393](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L393))
 
 ```lean
 theorem coeff_one (i : Fin P.d) :
     coeff (1 : Ext P) i = if (i : ℕ) = 0 then 1 else 0
 ```
 
-`CompPoly.Extension.Ext.coeff_add` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L395))
+`CompPoly.Extension.Ext.coeff_add` (theorem, [line 395](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L395))
 
 ```lean
 theorem coeff_add (x y : Ext P) (i : Fin P.d) :
     coeff (x + y) i = coeff x i + coeff y i
 ```
 
-`CompPoly.Extension.Ext.coeff_neg` (theorem, [line 397](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L397))
+`CompPoly.Extension.Ext.coeff_neg` (theorem, [line 397](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L397))
 
 ```lean
 theorem coeff_neg (x : Ext P) (i : Fin P.d) : coeff (-x) i = -coeff x i
 ```
 
-`CompPoly.Extension.Ext.coeff_sub` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L398))
+`CompPoly.Extension.Ext.coeff_sub` (theorem, [line 398](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L398))
 
 ```lean
 theorem coeff_sub (x y : Ext P) (i : Fin P.d) :
     coeff (x - y) i = coeff x i - coeff y i
 ```
 
-`CompPoly.Extension.Ext.coeff_smul` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L400))
+`CompPoly.Extension.Ext.coeff_smul` (theorem, [line 400](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L400))
 
 ```lean
 theorem coeff_smul (c : F) (x : Ext P) (i : Fin P.d) :
     coeff (c • x) i = c * coeff x i
 ```
 
-`CompPoly.Extension.Ext.coeff_shiftReduce` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L403))
+`CompPoly.Extension.Ext.coeff_shiftReduce` (theorem, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L403))
 
 ```lean
 theorem coeff_shiftReduce (e : Ext P) (m : Fin P.d) :
@@ -452,7 +452,7 @@ theorem coeff_shiftReduce (e : Ext P) (m : Fin P.d) :
         - coeffNat e (P.d - 1) * P.lowerCoeff m
 ```
 
-`CompPoly.Extension.Ext.coeff_mul` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L408))
+`CompPoly.Extension.Ext.coeff_mul` (theorem, [line 408](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L408))
 
 ```lean
 theorem coeff_mul (x y : Ext P) (m : Fin P.d) :
@@ -461,21 +461,21 @@ theorem coeff_mul (x y : Ext P) (m : Fin P.d) :
         coeff x i * coeff y j * coeff (monomialMod ((i : ℕ) + (j : ℕ))) m
 ```
 
-`CompPoly.Extension.Ext.coeff_ofBase` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L414))
+`CompPoly.Extension.Ext.coeff_ofBase` (theorem, [line 414](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L414))
 
 ```lean
 theorem coeff_ofBase (c : F) (i : Fin P.d) :
     coeff (ofBase (P := P) c) i = if (i : ℕ) = 0 then c else 0
 ```
 
-`CompPoly.Extension.Ext.coeff_gen` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L417))
+`CompPoly.Extension.Ext.coeff_gen` (theorem, [line 417](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L417))
 
 ```lean
 theorem coeff_gen (i : Fin P.d) :
     coeff (gen : Ext P) i = if (i : ℕ) = 1 then 1 else 0
 ```
 
-`CompPoly.Extension.Ext.ofBase_one` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L421))
+`CompPoly.Extension.Ext.ofBase_one` (theorem, [line 421](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L421))
 
 > `ofBase` agrees with `1` on the multiplicative unit.
 
@@ -483,7 +483,7 @@ theorem coeff_gen (i : Fin P.d) :
 theorem ofBase_one : ofBase (P := P) (1 : F) = 1
 ```
 
-`CompPoly.Extension.Ext.ofBase_zero` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L424))
+`CompPoly.Extension.Ext.ofBase_zero` (theorem, [line 424](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L424))
 
 > `ofBase` agrees with `0`.
 
@@ -491,7 +491,7 @@ theorem ofBase_one : ofBase (P := P) (1 : F) = 1
 theorem ofBase_zero : ofBase (P := P) (0 : F) = 0
 ```
 
-`CompPoly.Extension.Ext.ofBase_natCast` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L428))
+`CompPoly.Extension.Ext.ofBase_natCast` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L428))
 
 > `ofBase` agrees with the `ℕ`-cast, so scalars and numerals do not diverge.
 
@@ -499,7 +499,7 @@ theorem ofBase_zero : ofBase (P := P) (0 : F) = 0
 theorem ofBase_natCast (n : ℕ) : ofBase (P := P) (n : F) = (n : Ext P)
 ```
 
-`CompPoly.Extension.Ext.ofBase_intCast` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L431))
+`CompPoly.Extension.Ext.ofBase_intCast` (theorem, [line 431](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L431))
 
 > `ofBase` agrees with the `ℤ`-cast.
 
@@ -507,27 +507,27 @@ theorem ofBase_natCast (n : ℕ) : ofBase (P := P) (n : F) = (n : Ext P)
 theorem ofBase_intCast (n : ℤ) : ofBase (P := P) (n : F) = (n : Ext P)
 ```
 
-`CompPoly.Extension.Ext.coeff_natCast` (theorem, [line 433](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L433))
+`CompPoly.Extension.Ext.coeff_natCast` (theorem, [line 433](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L433))
 
 ```lean
 theorem coeff_natCast (n : ℕ) (i : Fin P.d) :
     coeff (n : Ext P) i = if (i : ℕ) = 0 then (n : F) else 0
 ```
 
-`CompPoly.Extension.Ext.coeff_intCast` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L436))
+`CompPoly.Extension.Ext.coeff_intCast` (theorem, [line 436](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L436))
 
 ```lean
 theorem coeff_intCast (n : ℤ) (i : Fin P.d) :
     coeff (n : Ext P) i = if (i : ℕ) = 0 then (n : F) else 0
 ```
 
-`CompPoly.Extension.Ext.pow_def` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L439))
+`CompPoly.Extension.Ext.pow_def` (theorem, [line 439](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L439))
 
 ```lean
 theorem pow_def (x : Ext P) (n : ℕ) : x ^ n = npowBinRec n x
 ```
 
-`CompPoly.Extension.Ext.inv` (definition, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L445))
+`CompPoly.Extension.Ext.inv` (definition, [line 445](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L445))
 
 > The canonical inverse candidate `x ^ (q^d - 2)`.
 >
@@ -538,25 +538,25 @@ theorem pow_def (x : Ext P) (n : ℕ) : x ^ n = npowBinRec n x
 def inv (x : Ext P) : Ext P
 ```
 
-`CompPoly.Extension.Ext.instInv` (instance, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L447))
+`CompPoly.Extension.Ext.instInv` (instance, [line 447](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L447))
 
 ```lean
 instance instInv : Inv (Ext P)
 ```
 
-`CompPoly.Extension.Ext.instDiv` (instance, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L448))
+`CompPoly.Extension.Ext.instDiv` (instance, [line 448](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L448))
 
 ```lean
 instance instDiv : Div (Ext P)
 ```
 
-`CompPoly.Extension.Ext.inv_def` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L450))
+`CompPoly.Extension.Ext.inv_def` (theorem, [line 450](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L450))
 
 ```lean
 theorem inv_def (x : Ext P) : x⁻¹ = x ^ (P.q ^ P.d - 2)
 ```
 
-`CompPoly.Extension.Ext.div_def` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L451))
+`CompPoly.Extension.Ext.div_def` (theorem, [line 451](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L451))
 
 ```lean
 theorem div_def (x y : Ext P) : x / y = x * y⁻¹
@@ -568,7 +568,7 @@ theorem div_def (x y : Ext P) : x / y = x * y⁻¹
 > keeps the `W`-only interface; `toExtensionParams` maps it into the general framework. The
 > polynomial correspondence and binomial irreducibility criterion are proved separately.
 
-`CompPoly.Extension.BinomialParams` (structure, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L466))
+`CompPoly.Extension.BinomialParams` (structure, [line 466](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L466))
 
 > Parameters for the quotient `F[X] / (X^d - W)`: the degree, constant `W`, and a proposed
 > base cardinality. The modulus has lower coefficients `(-W, 0, …, 0)`.
@@ -585,13 +585,13 @@ structure BinomialParams (F : Type*) where
   q : ℕ
 ```
 
-`CompPoly.Extension.BinomialParams.d_pos` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L481))
+`CompPoly.Extension.BinomialParams.d_pos` (theorem, [line 481](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L481))
 
 ```lean
 theorem d_pos : 0 < P.d
 ```
 
-`CompPoly.Extension.BinomialParams.toExtensionParams` (definition, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L485))
+`CompPoly.Extension.BinomialParams.toExtensionParams` (definition, [line 485](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L485))
 
 > The general-framework parameters for the binomial modulus `X^d - W`: the lower coefficient
 > vector is `(-W, 0, …, 0)`.
@@ -600,19 +600,19 @@ theorem d_pos : 0 < P.d
 def toExtensionParams : ExtensionParams F
 ```
 
-`CompPoly.Extension.BinomialParams.toExtensionParams_d` (theorem, [line 491](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L491))
+`CompPoly.Extension.BinomialParams.toExtensionParams_d` (theorem, [line 491](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L491))
 
 ```lean
 theorem toExtensionParams_d : P.toExtensionParams.d = P.d
 ```
 
-`CompPoly.Extension.BinomialParams.toExtensionParams_q` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L492))
+`CompPoly.Extension.BinomialParams.toExtensionParams_q` (theorem, [line 492](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L492))
 
 ```lean
 theorem toExtensionParams_q : P.toExtensionParams.q = P.q
 ```
 
-`CompPoly.Extension.BinomialParams.toExtensionParams_lowerCoeff` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean#L494))
+`CompPoly.Extension.BinomialParams.toExtensionParams_lowerCoeff` (theorem, [line 494](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean#L494))
 
 ```lean
 theorem toExtensionParams_lowerCoeff (i : Fin P.toExtensionParams.d) :
@@ -625,5 +625,5 @@ Its statements use no other CompPoly module's declarations.
 
 ## Sources
 
-- [CompPoly/Fields/Extension/Arithmetic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Extension/Arithmetic.lean)
+- [CompPoly/Fields/Extension/Arithmetic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Extension/Arithmetic.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Extension.Arithmetic.json)

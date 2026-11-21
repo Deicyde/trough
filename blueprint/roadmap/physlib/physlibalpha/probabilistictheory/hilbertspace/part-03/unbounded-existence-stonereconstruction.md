@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.stoneReconstructionSpectralMeasure, ProbabilisticTheory.QuantumMechanics.stoneReconstructionData, ProbabilisticTheory.QuantumMechanics.stoneReconstructionUnitaryGroup, ProbabilisticTheory.QuantumMechanics.hasDerivAt_generator_unique, ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction_of_mem_domain, ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_domain_dense, ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionSpectralMeasure, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionData, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionUnitaryGroup, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.hasDerivAt_generator_unique, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction_of_mem_domain, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_domain_dense, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction
 statement: formalized
 proof: formalized
 ---
 
 # Stone's theorem: reconstruction of the group
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.StoneReconstruction`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.StoneReconstruction`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean): 7 declarations, 7 with a docstring.
 
 > Stone's theorem, reconstruction: a unitary group is exp(i t T) for its generator.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.St
 
 ## A. The reconstructed unitary group
 
-**`ProbabilisticTheory.QuantumMechanics.stoneReconstructionSpectralMeasure`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L71).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionSpectralMeasure`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L71).
 
 > The Cayley-transform spectral measure for `stoneCandidateGenerator hUmul`'s essential
 > self-adjoint closure.
@@ -42,7 +42,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.St
 noncomputable def stoneReconstructionSpectralMeasure : WOTSpectralMeasure ℝ H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.stoneReconstructionData`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionData`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L78).
 
 > The domain-aware spectral theorem for `stoneCandidateGenerator hUmul`'s closure, built via the
 > Cayley transform from this Track's essential self-adjointness result.
@@ -53,7 +53,7 @@ lemma stoneReconstructionData :
       (stoneReconstructionSpectralMeasure hU0 hUmul hUunit hUcont)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.stoneReconstructionUnitaryGroup`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneReconstructionUnitaryGroup`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L86).
 
 > The unitary group `exp(i t T)` of the closure of the candidate generator.
 
@@ -63,7 +63,7 @@ noncomputable def stoneReconstructionUnitaryGroup (t : ℝ) : H →L[ℂ] H
 
 ## B. Uniqueness for the evolution equation
 
-**`ProbabilisticTheory.QuantumMechanics.hasDerivAt_generator_unique`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.hasDerivAt_generator_unique`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L103).
 
 > Two curves through the same starting point, both solving `w' = i • T w` while remaining in
 > `T`'s domain, coincide everywhere: the standard Schrödinger-equation uniqueness argument, using
@@ -79,7 +79,7 @@ lemma hasDerivAt_generator_unique {y z : ℝ → H} (hTsym : T.IsSymmetric)
 
 ## C. Reconstruction of the group
 
-**`ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction_of_mem_domain`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L160).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction_of_mem_domain`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L160).
 
 > **Stone's theorem, reconstruction direction.** `U` agrees with the concrete unitary group
 > `stoneReconstructionUnitaryGroup` on every vector in `stoneCandidateGenerator hUmul`'s domain.
@@ -90,7 +90,7 @@ lemma stoneCandidateGenerator_reconstruction_of_mem_domain
     U t (x : H) = stoneReconstructionUnitaryGroup hU0 hUmul hUunit hUcont t (x : H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_domain_dense`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L219).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_domain_dense`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L219).
 
 > The domain of the candidate generator is dense.
 
@@ -99,7 +99,7 @@ lemma stoneCandidateGenerator_domain_dense :
     Dense ((stoneCandidateGenerator (U := U) hUmul).domain : Set H)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L237).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_reconstruction`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean#L237).
 
 > **Stone's theorem.** A strongly continuous unitary group is `exp(i t T)` for the closure `T` of
 > its candidate generator.
@@ -123,4 +123,4 @@ lemma stoneCandidateGenerator_reconstruction (x : H) (t : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean)

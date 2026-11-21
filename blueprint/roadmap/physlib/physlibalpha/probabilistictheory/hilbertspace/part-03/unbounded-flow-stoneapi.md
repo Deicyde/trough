@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero_iff, ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt, ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_iff
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero_iff, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_iff
 statement: formalized
 proof: formalized
 ---
 
 # The generator of the unitary group
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneAPI`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean): 3 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneAPI`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean): 3 declarations, 3 with a docstring.
 
 > The domain of T is the set of vectors with differentiable orbit under exp(i t T).
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneAP
 
 ## A. The derivative at zero
 
-**`ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero_iff`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_zero_iff`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L65).
 
 > If the orbit is differentiable at zero, its derivative is forced by the operator.
 
@@ -40,7 +40,7 @@ lemma expUnitaryGroup_hasDerivAt_zero_iff (x : H) (y : H) :
 
 ## B. The derivative at an arbitrary time
 
-**`ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L93).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.mem_domain_iff_expUnitaryGroup_hasDerivAt`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L93).
 
 > The generator domain is independent of the time at which differentiability is tested.  This
 > is the orbit-level form of Stone's theorem used by evolution arguments.
@@ -51,7 +51,7 @@ lemma mem_domain_iff_expUnitaryGroup_hasDerivAt (x : H) (s : ℝ) :
       ∃ y : H, HasDerivAt (fun t : ℝ => D.expUnitaryGroup t x) y s
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_iff`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L132).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.DomainAwareSelfAdjointSpectralTheorem.expUnitaryGroup_hasDerivAt_iff`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean#L132).
 
 > The derivative at an arbitrary time is uniquely the evolved generator vector.
 
@@ -72,4 +72,4 @@ lemma expUnitaryGroup_hasDerivAt_iff (x : H) (y : H) (s : ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean)

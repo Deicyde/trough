@@ -8,7 +8,7 @@ proof: formalized
 
 # The retarded solution as a convolution with the retarded kernel
 
-The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Convolution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean): 5 declarations, 5 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Convolution`, [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean): 5 declarations, 5 with a docstring.
 
 > The retarded solution at `p` is the retarded kernel tested against the reflected and shifted
 > source.
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.KleinGordon.RetardedKernel.Convolu
 >   the distribution tested against the cut off advanced solution.
 > - `retardedDistribution_delta_apply` : the point source gives the advanced solution at `p`.
 
-**`KleinGordon.Solution.retarded_eq_kernel`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L66).
+**`KleinGordon.Solution.retarded_eq_kernel`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L66).
 
 > **The retarded solution as a convolution.** The retarded solution of a real test source at
 > `p` is the retarded kernel tested against the source reflected through `p`.
@@ -52,7 +52,7 @@ lemma retarded_eq_kernel (p : SpaceTime d) (f : TestField d ℝ) :
         (actTestFunction (pointReflection p)⁻¹ (testFieldEquiv ℝ f))
 ```
 
-**`KleinGordon.Solution.actTestFunction_pointReflection_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L79).
+**`KleinGordon.Solution.actTestFunction_pointReflection_apply`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L79).
 
 > The reflected source takes the value `f (p - x)` at `x`.
 
@@ -62,7 +62,7 @@ lemma actTestFunction_pointReflection_apply (p x : SpaceTime d) (f : TestField d
       testFieldEquiv ℝ f (p - x)
 ```
 
-**`KleinGordon.Solution.retardedDistribution_apply`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L87).
+**`KleinGordon.Solution.retardedDistribution_apply`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L87).
 
 > **Convolution with a compactly supported distribution by transposition.** The retarded
 > solution of `T` tested against `f` is `T` tested against the advanced solution of `f` cut off by
@@ -75,7 +75,7 @@ lemma retardedDistribution_apply (T : compactDistributions (SpaceTime d) ℝ) (f
         (testFieldEquiv ℝ f))
 ```
 
-**`KleinGordon.Solution.realAdvancedCutoff_compactCutoff_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L93).
+**`KleinGordon.Solution.realAdvancedCutoff_compactCutoff_apply`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L93).
 
 > The cut off advanced solution has the value `χ p * (A f) p`.
 
@@ -87,7 +87,7 @@ lemma realAdvancedCutoff_compactCutoff_apply (T : compactDistributions (SpaceTim
         ((realAdvancedGreenOperator m).toLinearMap f).val p
 ```
 
-**`KleinGordon.Solution.retardedDistribution_delta_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L101).
+**`KleinGordon.Solution.retardedDistribution_delta_apply`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean#L101).
 
 > For the point source the transposed convolution is the advanced solution at `p`.
 
@@ -103,4 +103,4 @@ lemma retardedDistribution_delta_apply (p : SpaceTime d) (f : TestField d ℝ) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet gauge action on the jet algebra of the Standard Model
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.GaugeAction`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean): 13 declarations, 12 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.GaugeAction`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean): 13 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -40,7 +40,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.GaugeAction`, [Physl
 
 ## A. The action of the jet gauge group
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupIFermion`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L71).
+**`StandardModel.JetAlgebra.repJetGaugeGroupIFermion`**, an abbrev, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L71).
 
 > The jet gauge action on the fermionic factor: the exterior-algebra functor applied to
 > the species-wise action on the fermionic generator space.
@@ -50,7 +50,7 @@ noncomputable abbrev repJetGaugeGroupIFermion :
     Representation ℂ JetGaugeGroupI (ExteriorAlgebra ℂ fieldData.FermionGenerators)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupIBoson`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L77).
+**`StandardModel.JetAlgebra.repJetGaugeGroupIBoson`**, an abbrev, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L77).
 
 > The jet gauge action on the bosonic factor: the symmetric-algebra functor applied to
 > the species-wise action on the bosonic generator space.
@@ -60,7 +60,7 @@ noncomputable abbrev repJetGaugeGroupIBoson :
     Representation ℂ JetGaugeGroupI (SymmetricAlgebra ℂ fieldData.BosonGenerators)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L84).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI`**, a def, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L84).
 
 > The jet gauge action on the jet algebra of the Standard Model. Matter is acted on
 > species by species from `fieldData`; the connection factor carries the generic affine
@@ -70,7 +70,7 @@ noncomputable abbrev repJetGaugeGroupIBoson :
 noncomputable def repJetGaugeGroupI : Representation ℂ JetGaugeGroupI JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_tmul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L89).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_tmul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L89).
 
 ```lean
 lemma repJetGaugeGroupI_tmul (U : JetGaugeGroupI)
@@ -84,7 +84,7 @@ lemma repJetGaugeGroupI_tmul (U : JetGaugeGroupI)
 
 ### A.1. Multiplicativity
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_apply_mul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L105).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_apply_mul`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L105).
 
 > The jet gauge action on the jet algebra is multiplicative: a jet of gauge
 > transformations acts on a Lagrangian term factor by factor.
@@ -96,7 +96,7 @@ lemma repJetGaugeGroupI_apply_mul (U : JetGaugeGroupI) (x y : JetAlgebra) :
 
 ### A.2. The action on the three factors
 
-**`StandardModel.JetAlgebra.complexRepJetGaugeGroupI_apply_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L121).
+**`StandardModel.JetAlgebra.complexRepJetGaugeGroupI_apply_one`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L121).
 
 > The jet gauge action on the complexified gauge sector fixes the unit.
 
@@ -106,7 +106,7 @@ lemma complexRepJetGaugeGroupI_apply_one (U : JetGaugeGroupI) :
       (1 : ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra GaugeAlgebra)) = 1
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_matter_one`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L130).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_matter_one`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L130).
 
 > The matter factor of the jet gauge action fixes the unit. The proof instantiates the
 > abstract `Representation.tprod_apply_one`, so that the unit of the matter factor is never
@@ -118,7 +118,7 @@ lemma repJetGaugeGroupI_matter_one (U : JetGaugeGroupI) :
         (1 : fieldData.MatterAlgebra) = 1
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeConnection`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L139).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeConnection`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L139).
 
 > The jet gauge action restricts to the generic connection factor, where it is the
 > generic affine action of the Standard Model local gauge data.
@@ -131,7 +131,7 @@ lemma repJetGaugeGroupI_includeConnection (U : JetGaugeGroupI)
           (_root_.LocalGaugeFieldAlgebra.complexRepJet localGaugeData U y)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeFermionFactor`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L154).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeFermionFactor`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L154).
 
 > The jet gauge action restricts to the fermionic factor, where it is the
 > exterior-algebra functor applied to the species-wise action of the datum. The factor
@@ -146,7 +146,7 @@ lemma repJetGaugeGroupI_includeFermionFactor (U : JetGaugeGroupI)
       = fieldData.includeFermion (repJetGaugeGroupIFermion U a)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeBosonFactor`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L169).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeBosonFactor`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L169).
 
 > The jet gauge action restricts to the bosonic factor, where it is the
 > symmetric-algebra functor applied to the species-wise action of the datum.
@@ -165,7 +165,7 @@ lemma repJetGaugeGroupI_includeBosonFactor (U : JetGaugeGroupI)
 > `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Structure`; so the action restricts
 > to each sector's own action under its existing name.
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeGauge`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L196).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeGauge`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L196).
 
 > The jet gauge action restricts to the gauge sector's own action. The gauge sector
 > inclusion is the connection inclusion of the datum, the Standard Model gauge bosons being
@@ -178,7 +178,7 @@ lemma repJetGaugeGroupI_includeGauge (U : JetGaugeGroupI)
       = includeGauge (_root_.LocalGaugeFieldAlgebra.complexRepJet localGaugeData U y)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeFermion`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L203).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeFermion`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L203).
 
 > The jet gauge action restricts to the fermionic sector's own action.
 
@@ -188,7 +188,7 @@ lemma repJetGaugeGroupI_includeFermion (U : JetGaugeGroupI) (f : FermionJetAlgeb
       = includeFermion (FermionJetAlgebra.repJetGaugeGroupI U f)
 ```
 
-**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeHiggs`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L211).
+**`StandardModel.JetAlgebra.repJetGaugeGroupI_includeHiggs`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean#L211).
 
 > The jet gauge action restricts to the Higgs sector's own action.
 
@@ -209,4 +209,4 @@ lemma repJetGaugeGroupI_includeHiggs (U : JetGaugeGroupI) (h : HiggsJetAlgebra) 
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean)

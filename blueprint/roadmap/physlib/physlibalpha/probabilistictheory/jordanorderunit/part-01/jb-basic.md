@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.NormedJordanAlgebra, ProbabilisticTheory.JBAlgebra, ProbabilisticTheory.IsJBOrderUnit, ProbabilisticTheory.JBAlgebra.norm_mul_self_le_norm_mul_self_add_mul_self, ProbabilisticTheory.JBAlgebra.norm_mul_self_of_norm_eq_one, ProbabilisticTheory.JBAlgebra.eq_zero_of_mul_self_eq_zero, ProbabilisticTheory.JBAlgebra.mul_self_eq_zero_iff, ProbabilisticTheory.JBAlgebra.norm_eq_orderUnitNorm
+lean: PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra, PhyslibAlpha.ProbabilisticTheory.JBAlgebra, PhyslibAlpha.ProbabilisticTheory.IsJBOrderUnit, PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_mul_self_le_norm_mul_self_add_mul_self, PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_mul_self_of_norm_eq_one, PhyslibAlpha.ProbabilisticTheory.JBAlgebra.eq_zero_of_mul_self_eq_zero, PhyslibAlpha.ProbabilisticTheory.JBAlgebra.mul_self_eq_zero_iff, PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_eq_orderUnitNorm
 statement: formalized
 proof: formalized
 ---
 
 # Normed Jordan algebras and JB-algebras
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean): 25 declarations (6 instances with no name), 25 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Basic`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean): 25 declarations (6 instances with no name), 25 with a docstring.
 
 > Normed Jordan algebras, JB-algebras and ordered JB-algebras, with their basic properties.
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.JB.Basic`, [Physlib
 
 ## A. Normed Jordan algebras
 
-**`ProbabilisticTheory.NormedJordanAlgebra`**, a class, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L64).
+**`PhyslibAlpha.ProbabilisticTheory.NormedJordanAlgebra`**, a class, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L64).
 
 > A real normed unital Jordan algebra.
 
@@ -65,7 +65,7 @@ class NormedJordanAlgebra (E : Type*) extends Norm E, MetricSpace E, NonAssocCom
   norm_mul_le : ∀ x y : E, ‖x * y‖ ≤ ‖x‖ * ‖y‖
 ```
 
-**An instance with no name**, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L82).
+**An instance with no name**, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L82).
 
 > The coherent additive metric structure underlying a normed Jordan algebra.
 
@@ -73,7 +73,7 @@ class NormedJordanAlgebra (E : Type*) extends Norm E, MetricSpace E, NonAssocCom
 instance {E : Type*} [s : NormedJordanAlgebra E] : NormedAddCommGroup E
 ```
 
-**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L85).
+**An instance with no name**, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L85).
 
 > The coherent real normed-space structure underlying a normed Jordan algebra.
 
@@ -81,7 +81,7 @@ instance {E : Type*} [s : NormedJordanAlgebra E] : NormedAddCommGroup E
 instance {E : Type*} [s : NormedJordanAlgebra E] : NormedSpace ℝ E
 ```
 
-**An instance with no name**, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L89).
+**An instance with no name**, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L89).
 
 > Scalar actions commute with Jordan multiplication.
 
@@ -89,7 +89,7 @@ instance {E : Type*} [s : NormedJordanAlgebra E] : NormedSpace ℝ E
 instance {E : Type*} [s : NormedJordanAlgebra E] : SMulCommClass ℝ E E
 ```
 
-**An instance with no name**, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L92).
+**An instance with no name**, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L92).
 
 > Scalar actions form a tower over Jordan multiplication.
 
@@ -97,7 +97,7 @@ instance {E : Type*} [s : NormedJordanAlgebra E] : SMulCommClass ℝ E E
 instance {E : Type*} [s : NormedJordanAlgebra E] : IsScalarTower ℝ E E
 ```
 
-**An instance with no name**, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L95).
+**An instance with no name**, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L95).
 
 > A normed Jordan algebra satisfies Mathlib's commutative Jordan predicate.
 
@@ -107,7 +107,7 @@ instance {E : Type*} [s : NormedJordanAlgebra E] : IsCommJordan E
 
 ## B. JB-algebras
 
-**`ProbabilisticTheory.JBAlgebra`**, a class, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L101).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra`**, a class, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L101).
 
 > A JB-algebra: a complete real normed Jordan algebra whose norm realizes squares exactly and is
 > monotone under addition of squares. No order is chosen at this analytic level.
@@ -121,7 +121,7 @@ class JBAlgebra (E : Type*) [NormedJordanAlgebra E] : Prop extends CompleteSpace
   norm_mul_self_le_add : ∀ a b : E, ‖a * a‖ ≤ ‖a * a + b * b‖
 ```
 
-**`ProbabilisticTheory.IsJBOrderUnit`**, a class, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.IsJBOrderUnit`**, a class, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L110).
 
 > A coherent ordered realization of a JB-algebra. It bundles the analytic Jordan algebra,
 > order-unit structure, positive-square compatibility, and completeness without instance diamonds.
@@ -134,7 +134,7 @@ class IsJBOrderUnit (E : Type*) extends NormedJordanAlgebra E, IsJordanOrderUnit
 
 ## C. Basic consequences
 
-**`ProbabilisticTheory.JBAlgebra.norm_mul_self_le_norm_mul_self_add_mul_self`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L123).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_mul_self_le_norm_mul_self_add_mul_self`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L123).
 
 > `‖a ∘ a‖ ≤ ‖a ∘ a + b ∘ b‖`.
 
@@ -142,7 +142,7 @@ class IsJBOrderUnit (E : Type*) extends NormedJordanAlgebra E, IsJordanOrderUnit
 lemma norm_mul_self_le_norm_mul_self_add_mul_self (a b : E) : ‖a * a‖ ≤ ‖a * a + b * b‖
 ```
 
-**`ProbabilisticTheory.JBAlgebra.norm_mul_self_of_norm_eq_one`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L127).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_mul_self_of_norm_eq_one`**, a lemma, [line 127](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L127).
 
 > The Jordan square of a norm-`1` element has norm `1`.
 
@@ -150,7 +150,7 @@ lemma norm_mul_self_le_norm_mul_self_add_mul_self (a b : E) : ‖a * a‖ ≤ �
 lemma norm_mul_self_of_norm_eq_one {a : E} (ha : ‖a‖ = 1) : ‖a * a‖ = 1
 ```
 
-**`ProbabilisticTheory.JBAlgebra.eq_zero_of_mul_self_eq_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L131).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.eq_zero_of_mul_self_eq_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L131).
 
 > A Jordan square in a JB-algebra is zero only when its root is zero.
 
@@ -158,7 +158,7 @@ lemma norm_mul_self_of_norm_eq_one {a : E} (ha : ‖a‖ = 1) : ‖a * a‖ = 1
 lemma eq_zero_of_mul_self_eq_zero {a : E} (ha : a * a = 0) : a = 0
 ```
 
-**`ProbabilisticTheory.JBAlgebra.mul_self_eq_zero_iff`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L138).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.mul_self_eq_zero_iff`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L138).
 
 > The zero-square criterion as an equivalence, convenient when transporting formal reality to
 > subalgebras and quotients.
@@ -169,7 +169,7 @@ lemma mul_self_eq_zero_iff {a : E} : a * a = 0 ↔ a = 0
 
 ### C.1. Ordered JB-algebras
 
-**`ProbabilisticTheory.JBAlgebra.norm_eq_orderUnitNorm`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L154).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_eq_orderUnitNorm`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L154).
 
 > In an ordered JB realization, the analytic norm is exactly the order-unit norm.
 
@@ -177,7 +177,7 @@ lemma mul_self_eq_zero_iff {a : E} : a * a = 0 ↔ a = 0
 lemma norm_eq_orderUnitNorm (x : E) : ‖x‖ = ArchimedeanOrderUnitSpace.orderUnitNorm x
 ```
 
-**`ProbabilisticTheory.JBAlgebra.withOrderUnitNormIsometryEquiv`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L158).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.withOrderUnitNormIsometryEquiv`**, a def, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L158).
 
 > The identity map from the order-unit-norm copy to a JB algebra is an isometry.
 
@@ -185,7 +185,7 @@ lemma norm_eq_orderUnitNorm (x : E) : ‖x‖ = ArchimedeanOrderUnitSpace.orderU
 noncomputable def withOrderUnitNormIsometryEquiv : WithOrderUnitNorm E ≃ₗᵢ[ℝ] E
 ```
 
-**An instance with no name**, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L163).
+**An instance with no name**, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L163).
 
 > A JB algebra is complete in its order-unit norm, since that norm is its JB norm.
 
@@ -193,7 +193,7 @@ noncomputable def withOrderUnitNormIsometryEquiv : WithOrderUnitNorm E ≃ₗᵢ
 instance : CompleteSpace (WithOrderUnitNorm E)
 ```
 
-**`ProbabilisticTheory.JBAlgebra.norm_le_iff_order_bounds`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L169).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_le_iff_order_bounds`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L169).
 
 > A nonnegative scalar bounds the analytic JB norm exactly when its order-unit multiple bounds
 > the observable on both sides. This is the public norm/order interface for an ordered JB algebra.
@@ -203,7 +203,7 @@ lemma norm_le_iff_order_bounds {x : E} {r : ℝ} (hr : 0 ≤ r) :
     ‖x‖ ≤ r ↔ -(r • (1 : E)) ≤ x ∧ x ≤ r • (1 : E)
 ```
 
-**`ProbabilisticTheory.JBAlgebra.norm_le_one_of_zero_le_of_le_one`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L180).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.norm_le_one_of_zero_le_of_le_one`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L180).
 
 > The unit interval is contained in the analytic closed unit ball of an ordered JB algebra.
 
@@ -211,7 +211,7 @@ lemma norm_le_iff_order_bounds {x : E} {r : ℝ} (hr : 0 ≤ r) :
 lemma norm_le_one_of_zero_le_of_le_one {x : E} (hx : 0 ≤ x) (hxu : x ≤ 1) : ‖x‖ ≤ 1
 ```
 
-**`ProbabilisticTheory.JBAlgebra.isClosed_nonneg`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L191).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.isClosed_nonneg`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L191).
 
 > The positive cone is closed for the supplied JB norm.  This transports the order-unit
 > closedness argument to the analytic norm through `norm_eq_orderUnitNorm`, and is the limit step
@@ -221,7 +221,7 @@ lemma norm_le_one_of_zero_le_of_le_one {x : E} (hx : 0 ≤ x) (hxu : x ≤ 1) : 
 lemma isClosed_nonneg : IsClosed {x : E | 0 ≤ x}
 ```
 
-**`ProbabilisticTheory.JBAlgebra.isSumSq_nonneg`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L225).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.isSumSq_nonneg`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L225).
 
 > Every finite sum of Jordan squares is positive.
 
@@ -229,7 +229,7 @@ lemma isClosed_nonneg : IsClosed {x : E | 0 ≤ x}
 lemma isSumSq_nonneg {s : E} (hs : IsSumSq s) : 0 ≤ s
 ```
 
-**`ProbabilisticTheory.JBAlgebra.no_mul_self_eq_neg_one`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L233).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.no_mul_self_eq_neg_one`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L233).
 
 > A JB-algebra has no square root of `-1`.  This elementary ordered consequence is the
 > key algebraic obstruction separating the real JB one-generator algebra from arbitrary real
@@ -239,7 +239,7 @@ lemma isSumSq_nonneg {s : E} (hs : IsSumSq s) : 0 ≤ s
 lemma no_mul_self_eq_neg_one [Nontrivial E] (a : E) : a * a ≠ -1
 ```
 
-**`ProbabilisticTheory.JBAlgebra.add_mul_self_eq_zero_iff`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L244).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.add_mul_self_eq_zero_iff`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L244).
 
 > A sum of two Jordan squares can vanish only when both roots vanish.  This is the
 > two-square form of formal reality and is useful when analysing quadratic real factors in the
@@ -250,7 +250,7 @@ lemma add_mul_self_eq_zero_iff {a b : E} :
     a * a + b * b = 0 ↔ a = 0 ∧ b = 0
 ```
 
-**`ProbabilisticTheory.JBAlgebra.mul_self_add_one_ne_zero`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L255).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.mul_self_add_one_ne_zero`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L255).
 
 > The positive quadratic factor `a² + 1` cannot vanish in a nontrivial JB-algebra.
 
@@ -258,7 +258,7 @@ lemma add_mul_self_eq_zero_iff {a b : E} :
 lemma mul_self_add_one_ne_zero [Nontrivial E] (a : E) : a * a + 1 ≠ 0
 ```
 
-**`ProbabilisticTheory.JBAlgebra.instIsFormallyReal`**, an instance, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L261).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.instIsFormallyReal`**, an instance, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L261).
 
 > A JB-algebra is formally real: a sum of squares vanishes only if every term does.
 
@@ -266,7 +266,7 @@ lemma mul_self_add_one_ne_zero [Nontrivial E] (a : E) : a * a + 1 ≠ 0
 noncomputable instance instIsFormallyReal : IsFormallyReal E
 ```
 
-**`ProbabilisticTheory.JBAlgebra.toWithOrderUnitNormLinearIsometryEquiv`**, a def, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L269).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.toWithOrderUnitNormLinearIsometryEquiv`**, a def, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L269).
 
 > In an ordered JB-algebra the norm is the order-unit norm, as a linear isometric equivalence.
 
@@ -275,7 +275,7 @@ noncomputable def toWithOrderUnitNormLinearIsometryEquiv :
     E ≃ₗᵢ[ℝ] WithOrderUnitNorm E
 ```
 
-**`ProbabilisticTheory.JBAlgebra.completeWithOrderUnitNorm`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L277).
+**`PhyslibAlpha.ProbabilisticTheory.JBAlgebra.completeWithOrderUnitNorm`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean#L277).
 
 > An ordered JB-algebra is complete for its order-unit norm.
 
@@ -290,4 +290,4 @@ lemma completeWithOrderUnitNorm : CompleteSpace (WithOrderUnitNorm E)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean)

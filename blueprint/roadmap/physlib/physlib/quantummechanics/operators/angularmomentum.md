@@ -8,7 +8,7 @@ proof: formalized
 
 # Angular momentum operator
 
-The module `Physlib.QuantumMechanics.Operators.AngularMomentum`, [Physlib/QuantumMechanics/Operators/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean): 46 declarations, 19 with a docstring.
+The module `Physlib.QuantumMechanics.Operators.AngularMomentum`, [Physlib/QuantumMechanics/Operators/AngularMomentum.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean): 46 declarations, 19 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `Physlib.QuantumMechanics.Operators.AngularMomentum`, [Physlib/Quantu
 
 ## A. Angular momentum operator
 
-**`QuantumMechanics.angularMomentumCLM`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L76).
+**`QuantumMechanics.angularMomentumCLM`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L76).
 
 > Component `i j` of the angular momentum operator is the continuous linear map
 > from `𝓢(Space d, ℂ)` to itself defined by `𝐋ᵢⱼ ≔ 𝐱ᵢ∘𝐩ⱼ - 𝐱ⱼ∘𝐩ᵢ`.
@@ -53,14 +53,14 @@ The module `Physlib.QuantumMechanics.Operators.AngularMomentum`, [Physlib/Quantu
 def angularMomentumCLM {d : ℕ} (i j : Fin d) : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.angularMomentumCLM_apply_fun`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L85).
+**`QuantumMechanics.angularMomentumCLM_apply_fun`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L85).
 
 ```lean
 lemma angularMomentumCLM_apply_fun {d : ℕ} (i j : Fin d) (ψ : 𝓢(Space d, ℂ)) :
     𝐋 i j ψ = 𝐱 i (𝐩 j ψ) - 𝐱 j (𝐩 i ψ)
 ```
 
-**`QuantumMechanics.angularMomentumCLM_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L88).
+**`QuantumMechanics.angularMomentumCLM_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L88).
 
 ```lean
 lemma angularMomentumCLM_apply {d : ℕ} (i j : Fin d) (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
@@ -69,7 +69,7 @@ lemma angularMomentumCLM_apply {d : ℕ} (i j : Fin d) (ψ : 𝓢(Space d, ℂ))
 
 ### A.1 Antisymmetry
 
-**`QuantumMechanics.angularMomentumCLM_antisymm`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L98).
+**`QuantumMechanics.angularMomentumCLM_antisymm`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L98).
 
 > The angular momentum operator is antisymmetric, `𝐋ᵢⱼ = -𝐋ⱼᵢ`
 
@@ -77,7 +77,7 @@ lemma angularMomentumCLM_apply {d : ℕ} (i j : Fin d) (ψ : 𝓢(Space d, ℂ))
 lemma angularMomentumCLM_antisymm {d : ℕ} (i j : Fin d) : 𝐋 i j = -𝐋 j i
 ```
 
-**`QuantumMechanics.angularMomentumCLM_eq_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L102).
+**`QuantumMechanics.angularMomentumCLM_eq_zero`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L102).
 
 > Angular momentum operator components with repeated index vanish, `𝐋ᵢᵢ = 0`.
 
@@ -87,7 +87,7 @@ lemma angularMomentumCLM_eq_zero {d : ℕ} (i : Fin d) : 𝐋 i i = 0
 
 ## B. Angular momentum squared operator
 
-**`QuantumMechanics.angularMomentumOperatorSqr`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L111).
+**`QuantumMechanics.angularMomentumOperatorSqr`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L111).
 
 > The square of the angular momentum operator, `𝐋² ≔ ½ ∑ᵢⱼ 𝐋ᵢⱼ∘𝐋ᵢⱼ`.
 
@@ -95,14 +95,14 @@ lemma angularMomentumCLM_eq_zero {d : ℕ} (i : Fin d) : 𝐋 i i = 0
 def angularMomentumOperatorSqr {d : ℕ} : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.angularMomentumOperatorSqr_apply_fun`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L120).
+**`QuantumMechanics.angularMomentumOperatorSqr_apply_fun`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L120).
 
 ```lean
 lemma angularMomentumOperatorSqr_apply_fun {d : ℕ} (ψ : 𝓢(Space d, ℂ)) :
     𝐋² ψ = (2 : ℂ)⁻¹ • ∑ i, ∑ j, 𝐋 i j (𝐋 i j ψ)
 ```
 
-**`QuantumMechanics.angularMomentumOperatorSqr_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L125).
+**`QuantumMechanics.angularMomentumOperatorSqr_apply`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L125).
 
 ```lean
 lemma angularMomentumOperatorSqr_apply {d : ℕ} (ψ : 𝓢(Space d, ℂ)) (x : Space d) :
@@ -120,7 +120,7 @@ lemma angularMomentumOperatorSqr_apply {d : ℕ} (ψ : 𝓢(Space d, ℂ)) (x : 
 >             Dualizing using the Levi-Civita symbol produces the familiar (pseudo)vector angular
 >             momentum operator with components 𝐋₀ = 𝐋₁₂, 𝐋₁ = 𝐋₂₀ and 𝐋₂ = 𝐋₀₁.
 
-**`QuantumMechanics.angularMomentumOperator1D_trivial`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L145).
+**`QuantumMechanics.angularMomentumOperator1D_trivial`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L145).
 
 > In one dimension the angular momentum operator is trivial.
 
@@ -128,7 +128,7 @@ lemma angularMomentumOperatorSqr_apply {d : ℕ} (ψ : 𝓢(Space d, ℂ)) (x : 
 lemma angularMomentumOperator1D_trivial : 𝐋[1] = 0
 ```
 
-**`QuantumMechanics.angularMomentumOperator2D`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L150).
+**`QuantumMechanics.angularMomentumOperator2D`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L150).
 
 > The angular momentum (pseudo)scalar operator in two dimensions, `𝐋 ≔ 𝐋₀₁`.
 
@@ -136,7 +136,7 @@ lemma angularMomentumOperator1D_trivial : 𝐋[1] = 0
 def angularMomentumOperator2D : 𝓢(Space 2, ℂ) →L[ℂ] 𝓢(Space 2, ℂ)
 ```
 
-**`QuantumMechanics.angularMomentumOperator3D`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L154).
+**`QuantumMechanics.angularMomentumOperator3D`**, a def, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L154).
 
 > The angular momentum (pseudo)vector operator in three dimensions, `𝐋ᵢ ≔ ½ ∑ⱼₖ εᵢⱼₖ 𝐋ⱼₖ`.
 > The transpose matches the convention of `Matrix.crossProductVee`, giving `(𝐋₁₂, 𝐋₂₀, 𝐋₀₁)`.
@@ -147,7 +147,7 @@ def angularMomentumOperator3D (i : Fin 3) : 𝓢(Space 3, ℂ) →L[ℂ] 𝓢(Sp
 
 ## D. Hilbert-space angular momentum operator
 
-**`QuantumMechanics.angularMomentumOperator`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L168).
+**`QuantumMechanics.angularMomentumOperator`**, a def, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L168).
 
 > Component `i j` of angular momentum on the Hilbert space, with Schwartz domain.
 > This transports the existing Schwartz-space operator `𝐋 i j`.
@@ -156,14 +156,14 @@ def angularMomentumOperator3D (i : Fin 3) : 𝓢(Space 3, ℂ) →L[ℂ] 𝓢(Sp
 def angularMomentumOperator : SpaceDHilbertSpace d →ₗ.[ℂ] SpaceDHilbertSpace d
 ```
 
-**`QuantumMechanics.angularMomentumOperator_domain_eq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L172).
+**`QuantumMechanics.angularMomentumOperator_domain_eq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L172).
 
 ```lean
 lemma angularMomentumOperator_domain_eq :
     (angularMomentumOperator i j).domain = SchwartzSubmodule d
 ```
 
-**`QuantumMechanics.angularMomentumOperator_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L175).
+**`QuantumMechanics.angularMomentumOperator_apply`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L175).
 
 ```lean
 lemma angularMomentumOperator_apply (ψ : SchwartzSubmodule d) :
@@ -171,28 +171,28 @@ lemma angularMomentumOperator_apply (ψ : SchwartzSubmodule d) :
       schwartzEquiv volume (𝐋 i j ((schwartzEquiv volume).symm ψ))
 ```
 
-**`QuantumMechanics.angularMomentumOperator_apply_ae`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L179).
+**`QuantumMechanics.angularMomentumOperator_apply_ae`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L179).
 
 ```lean
 lemma angularMomentumOperator_apply_ae (ψ : SchwartzSubmodule d) :
     angularMomentumOperator i j ψ =ᵐ[volume] 𝐋 i j ((schwartzEquiv volume).symm ψ)
 ```
 
-**`QuantumMechanics.angularMomentumOperator_range`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L183).
+**`QuantumMechanics.angularMomentumOperator_range`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L183).
 
 ```lean
 lemma angularMomentumOperator_range (ψ : SchwartzSubmodule d) :
     angularMomentumOperator i j ψ ∈ SchwartzSubmodule d
 ```
 
-**`QuantumMechanics.angularMomentumOperator_hasDenseDomain`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L187).
+**`QuantumMechanics.angularMomentumOperator_hasDenseDomain`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L187).
 
 ```lean
 lemma angularMomentumOperator_hasDenseDomain :
     (angularMomentumOperator i j).HasDenseDomain
 ```
 
-**`QuantumMechanics.angularMomentumCLM_eq_momentum_position`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L191).
+**`QuantumMechanics.angularMomentumCLM_eq_momentum_position`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L191).
 
 > Reversing the order of position and momentum leaves angular momentum unchanged.
 
@@ -201,7 +201,7 @@ lemma angularMomentumCLM_eq_momentum_position :
     𝐋 i j = 𝐩 j ∘L 𝐱 i - 𝐩 i ∘L 𝐱 j
 ```
 
-**`QuantumMechanics.angularMomentumOperator_isSymmetric`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L197).
+**`QuantumMechanics.angularMomentumOperator_isSymmetric`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L197).
 
 > Each angular momentum component is symmetric on the Schwartz domain.
 
@@ -210,7 +210,7 @@ lemma angularMomentumOperator_isSymmetric :
     (angularMomentumOperator i j).IsSymmetric
 ```
 
-**`QuantumMechanics.angularMomentumOperator_isUnbounded`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L209).
+**`QuantumMechanics.angularMomentumOperator_isUnbounded`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L209).
 
 > Angular momentum on the Schwartz domain is densely defined and closable.
 
@@ -219,7 +219,7 @@ lemma angularMomentumOperator_isUnbounded :
     (angularMomentumOperator i j).IsUnbounded
 ```
 
-**`QuantumMechanics.angularMomentumCLM_inner`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L215).
+**`QuantumMechanics.angularMomentumCLM_inner`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L215).
 
 > The component symmetry identity, expressed directly on Schwartz maps.
 
@@ -231,7 +231,7 @@ lemma angularMomentumCLM_inner (f g : 𝓢(Space d, ℂ)) :
 
 ### D.1. Angular momentum squared on the Hilbert space
 
-**`QuantumMechanics.angularMomentumSqOperator`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L227).
+**`QuantumMechanics.angularMomentumSqOperator`**, a def, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L227).
 
 > Angular momentum squared on the Hilbert space, with the invariant Schwartz domain.
 > This transports the existing Schwartz operator `𝐋²`, including its factor `1/2`.
@@ -240,35 +240,35 @@ lemma angularMomentumCLM_inner (f g : 𝓢(Space d, ℂ)) :
 def angularMomentumSqOperator : SpaceDHilbertSpace d →ₗ.[ℂ] SpaceDHilbertSpace d
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_domain_eq`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L234).
+**`QuantumMechanics.angularMomentumSqOperator_domain_eq`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L234).
 
 ```lean
 lemma angularMomentumSqOperator_domain_eq :
     (angularMomentumSqOperator (d := d)).domain = SchwartzSubmodule d
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_apply`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L237).
+**`QuantumMechanics.angularMomentumSqOperator_apply`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L237).
 
 ```lean
 lemma angularMomentumSqOperator_apply (ψ : SchwartzSubmodule d) : angularMomentumSqOperator ψ =
     schwartzEquiv volume (𝐋² ((schwartzEquiv volume).symm ψ))
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_apply_ae`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L240).
+**`QuantumMechanics.angularMomentumSqOperator_apply_ae`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L240).
 
 ```lean
 lemma angularMomentumSqOperator_apply_ae (ψ : SchwartzSubmodule d) :
     angularMomentumSqOperator ψ =ᵐ[volume] 𝐋² ((schwartzEquiv volume).symm ψ)
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_range`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L244).
+**`QuantumMechanics.angularMomentumSqOperator_range`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L244).
 
 ```lean
 lemma angularMomentumSqOperator_range (ψ : SchwartzSubmodule d) :
     angularMomentumSqOperator ψ ∈ SchwartzSubmodule d
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_apply_eq_sum`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L251).
+**`QuantumMechanics.angularMomentumSqOperator_apply_eq_sum`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L251).
 
 > The squared operator is the sum of squares of Hilbert-space components on their
 > common invariant domain. The inner applications land in Schwartz by `angularMomentumOperator_range`.
@@ -280,14 +280,14 @@ lemma angularMomentumSqOperator_apply_eq_sum (ψ : SchwartzSubmodule d) :
         ⟨angularMomentumOperator i j ψ, angularMomentumOperator_range i j ψ⟩
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_hasDenseDomain`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L269).
+**`QuantumMechanics.angularMomentumSqOperator_hasDenseDomain`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L269).
 
 ```lean
 lemma angularMomentumSqOperator_hasDenseDomain :
     (angularMomentumSqOperator (d := d)).HasDenseDomain
 ```
 
-**`QuantumMechanics.angularMomentumSqr_inner`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L273).
+**`QuantumMechanics.angularMomentumSqr_inner`**, a lemma, [line 273](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L273).
 
 > Symmetry of `𝐋²` follows by moving each component across the inner product twice.
 
@@ -297,7 +297,7 @@ lemma angularMomentumSqr_inner (f g : 𝓢(Space d, ℂ)) :
       ⟪(schwartzEquiv volume f : SpaceDHilbertSpace d), schwartzEquiv volume (𝐋² g)⟫_ℂ
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_isSymmetric`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L281).
+**`QuantumMechanics.angularMomentumSqOperator_isSymmetric`**, a lemma, [line 281](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L281).
 
 > Angular momentum squared is symmetric on the Schwartz domain.
 
@@ -305,7 +305,7 @@ lemma angularMomentumSqr_inner (f g : 𝓢(Space d, ℂ)) :
 lemma angularMomentumSqOperator_isSymmetric : (angularMomentumSqOperator (d := d)).IsSymmetric
 ```
 
-**`QuantumMechanics.angularMomentumSqOperator_isUnbounded`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L289).
+**`QuantumMechanics.angularMomentumSqOperator_isUnbounded`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L289).
 
 > In Physlib terminology, the squared operator is densely defined and closable.
 
@@ -317,38 +317,38 @@ lemma angularMomentumSqOperator_isUnbounded : (angularMomentumSqOperator (d := d
 
 ### E.1. Angular momentum / position
 
-**`QuantumMechanics.angularMomentum_commutation_position`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L309).
+**`QuantumMechanics.angularMomentum_commutation_position`**, a lemma, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L309).
 
 ```lean
 lemma angularMomentum_commutation_position :
     ⁅𝐋 i j, 𝐱 k⁆ = (I * ℏ) • (δ[i,k] • 𝐱 j - δ[j,k] • 𝐱 i)
 ```
 
-**`QuantumMechanics.angularMomentum_commutation_radiusRegPow`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L317).
+**`QuantumMechanics.angularMomentum_commutation_radiusRegPow`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L317).
 
 ```lean
 lemma angularMomentum_commutation_radiusRegPow : ⁅𝐋 i j, 𝐫₀[d] ε s⁆ = 0
 ```
 
-**`QuantumMechanics.angularMomentum_comp_radiusRegPow_commute`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L323).
+**`QuantumMechanics.angularMomentum_comp_radiusRegPow_commute`**, a lemma, [line 323](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L323).
 
 ```lean
 lemma angularMomentum_comp_radiusRegPow_commute : 𝐋 i j ∘L 𝐫₀ ε s = 𝐫₀ ε s ∘L 𝐋 i j
 ```
 
-**`QuantumMechanics.angularMomentumSqr_commutation_radiusRegPow`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L327).
+**`QuantumMechanics.angularMomentumSqr_commutation_radiusRegPow`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L327).
 
 ```lean
 lemma angularMomentumSqr_commutation_radiusRegPow : ⁅𝐋²[d], 𝐫₀[d] ε s⁆ = 0
 ```
 
-**`QuantumMechanics.angularMomentumSqr_comp_radiusRegPow_commute`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L330).
+**`QuantumMechanics.angularMomentumSqr_comp_radiusRegPow_commute`**, a lemma, [line 330](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L330).
 
 ```lean
 lemma angularMomentumSqr_comp_radiusRegPow_commute : 𝐋² ∘L 𝐫₀[d] ε s = 𝐫₀ ε s ∘L 𝐋²
 ```
 
-**`QuantumMechanics.angularMomentum_cyclic_position`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L336).
+**`QuantumMechanics.angularMomentum_cyclic_position`**, a lemma, [line 336](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L336).
 
 > `𝐋ᵢⱼ𝐱ₖ + 𝐋ⱼₖ𝐱ᵢ + 𝐋ₖᵢ𝐱ⱼ = 0`; in three dimensions this is `𝐋 · 𝐱 = 0`.
 > The identity is trivial unless `i`, `j`, `k` are pairwise distinct, so it has no content in
@@ -361,39 +361,39 @@ lemma angularMomentum_cyclic_position :
 
 ### E.2. Angular momentum / momentum
 
-**`QuantumMechanics.angularMomentum_commutation_momentum`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L351).
+**`QuantumMechanics.angularMomentum_commutation_momentum`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L351).
 
 ```lean
 lemma angularMomentum_commutation_momentum :
     ⁅𝐋 i j, 𝐩 k⁆ = (I * ℏ) • (δ[i,k] • 𝐩 j - δ[j,k] • 𝐩 i)
 ```
 
-**`QuantumMechanics.momentum_comp_angularMomentum_eq`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L357).
+**`QuantumMechanics.momentum_comp_angularMomentum_eq`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L357).
 
 ```lean
 lemma momentum_comp_angularMomentum_eq :
     𝐩 k ∘L 𝐋 i j = 𝐋 i j ∘L 𝐩 k - (I * ℏ) • (δ[i,k] • 𝐩 j - δ[j,k] • 𝐩 i)
 ```
 
-**`QuantumMechanics.angularMomentum_commutation_momentumSqr`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L362).
+**`QuantumMechanics.angularMomentum_commutation_momentumSqr`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L362).
 
 ```lean
 lemma angularMomentum_commutation_momentumSqr : ⁅𝐋 i j, 𝐩[d] ⬝ᵥ 𝐩⁆ = 0
 ```
 
-**`QuantumMechanics.momentumSqr_comp_angularMomentum_commute`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L367).
+**`QuantumMechanics.momentumSqr_comp_angularMomentum_commute`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L367).
 
 ```lean
 lemma momentumSqr_comp_angularMomentum_commute : (𝐩 ⬝ᵥ 𝐩) ∘L 𝐋 i j = 𝐋 i j ∘L (𝐩 ⬝ᵥ 𝐩)
 ```
 
-**`QuantumMechanics.angularMomentumSqr_commutation_momentumSqr`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L371).
+**`QuantumMechanics.angularMomentumSqr_commutation_momentumSqr`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L371).
 
 ```lean
 lemma angularMomentumSqr_commutation_momentumSqr : ⁅𝐋²[d], 𝐩[d] ⬝ᵥ 𝐩⁆ = 0
 ```
 
-**`QuantumMechanics.angularMomentum_cyclic_momentum`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L377).
+**`QuantumMechanics.angularMomentum_cyclic_momentum`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L377).
 
 > `𝐋ᵢⱼ𝐩ₖ + 𝐋ⱼₖ𝐩ᵢ + 𝐋ₖᵢ𝐩ⱼ = 0`; in three dimensions this is `𝐋 · 𝐩 = 0`.
 > The identity is trivial unless `i`, `j`, `k` are pairwise distinct, so it has no content in
@@ -406,14 +406,14 @@ lemma angularMomentum_cyclic_momentum :
 
 ### E.3. Angular momentum / angular momentum
 
-**`QuantumMechanics.angularMomentum_commutation_angularMomentum`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L389).
+**`QuantumMechanics.angularMomentum_commutation_angularMomentum`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L389).
 
 ```lean
 lemma angularMomentum_commutation_angularMomentum : ⁅𝐋 i j, 𝐋 k l⁆ =
     (I * ℏ) • (δ[i,k] • 𝐋 j l - δ[i,l] • 𝐋 j k - δ[j,k] • 𝐋 i l + δ[j,l] • 𝐋 i k)
 ```
 
-**`QuantumMechanics.angularMomentumSqr_commutation_angularMomentum`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L398).
+**`QuantumMechanics.angularMomentumSqr_commutation_angularMomentum`**, a lemma, [line 398](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L398).
 
 ```lean
 lemma angularMomentumSqr_commutation_angularMomentum : ⁅𝐋²[d], 𝐋 i j⁆ = 0
@@ -423,7 +423,7 @@ lemma angularMomentumSqr_commutation_angularMomentum : ⁅𝐋²[d], 𝐋 i j⁆
 
 > Angular momentum commutes with the dilation operator `𝐱 · 𝐩`.
 
-**`QuantumMechanics.angularMomentum_commutation_positionDotMomentum`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L415).
+**`QuantumMechanics.angularMomentum_commutation_positionDotMomentum`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean#L415).
 
 ```lean
 lemma angularMomentum_commutation_positionDotMomentum : ⁅𝐋 i j, 𝐱[d] ⬝ᵥ 𝐩⁆ = 0
@@ -442,4 +442,4 @@ lemma angularMomentum_commutation_positionDotMomentum : ⁅𝐋 i j, 𝐱[d] ⬝
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/AngularMomentum.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum.lean)
+- [Physlib/QuantumMechanics/Operators/AngularMomentum.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/AngularMomentum.lean)

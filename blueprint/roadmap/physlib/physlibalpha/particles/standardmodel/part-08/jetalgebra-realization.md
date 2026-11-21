@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebra of the Standard Model is a Standard Model (Realization)
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Realization`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean): 1 declaration, 1 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Realization`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean): 1 declaration, 1 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.Realization`, [Physl
 
 ## A. The identity realization
 
-**`StandardModel.AlgebraRealization.id`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean#L58).
+**`StandardModel.AlgebraRealization.id`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean#L58).
 
 > The jet algebra of the Standard Model is a Standard Model: it is one along the identity
 > algebra map.
@@ -53,4 +53,4 @@ noncomputable def id : AlgebraRealization JetAlgebra JetAlgebra.repJetGaugeGroup
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean)

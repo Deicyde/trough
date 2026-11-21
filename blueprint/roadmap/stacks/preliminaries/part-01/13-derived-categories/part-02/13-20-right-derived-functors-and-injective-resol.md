@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.20 Right derived functors and injective resolutions
 
-Section 13.20 of the Stacks Project, [Tag 0156](https://stacks.math.columbia.edu/tag/0156). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.20 of the Stacks Project, [Tag 0156](https://stacks.math.columbia.edu/tag/0156). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05TH, a lemma
 
 [Tag 05TH](https://stacks.math.columbia.edu/tag/05TH) in the Stacks Project.
 
-**`CategoryTheory.Functor.computesRightDerived_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean#L81). The attribute's comment: “(1); for every functor out of `K⁺(𝒜)`, exact or not. (2) is `CategoryTheory.Functor.computesRightDerived_single_of_injective`”.
+**`CategoryTheory.Functor.computesRightDerived_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean#L81). The attribute's comment: “(1); for every functor out of `K⁺(𝒜)`, exact or not. (2) is `CategoryTheory.Functor.computesRightDerived_single_of_injective`”.
 
 > **Stacks 05TH**, part (1). Let `K` be a bounded below complex of injective objects of an
 > abelian category `C`. Then `K` computes the right derived functor `RF` relative to the
@@ -29,7 +29,7 @@ theorem computesRightDerived_of_injective {H : Type u₃} [Category.{v₃} H]
     F.ComputesRightDerived (HomotopyCategory.Plus.quasiIso C) K
 ```
 
-**`CategoryTheory.Functor.computesRightDerived_single_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean#L118). The attribute's comment: “(2); right acyclicity is 0157(3) in the 05SX form, with no hypothesis that `𝒜` have enough injectives”.
+**`CategoryTheory.Functor.computesRightDerived_single_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/ComputesOfInjective.lean#L118). The attribute's comment: “(2); right acyclicity is 0157(3) in the 05SX form, with no hypothesis that `𝒜` have enough injectives”.
 
 > **Stacks 05TH**, part (2). Let `F : C ⥤ D` be an additive functor between abelian categories
 > and let `I` be an injective object of `C`. Then `I` is right acyclic for `F` in the sense of
@@ -43,7 +43,7 @@ theorem computesRightDerived_single_of_injective {D : Type u₂} [Category.{v₂
       (HomotopyCategory.Plus.quasiIso C) ((HomotopyCategory.Plus.singleFunctor C 0).obj I)
 ```
 
-**`HomotopyCategory.Plus.hasPointwiseRightDerivedFunctorAt_of_injective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean#L283). The attribute's comment: “part (1): RF is defined at a bounded below complex of injectives”.
+**`HomotopyCategory.Plus.hasPointwiseRightDerivedFunctorAt_of_injective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean, line 283](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean#L283). The attribute's comment: “part (1): RF is defined at a bounded below complex of injectives”.
 
 > **Stacks 05TH**, part (1), first half. Let `K` be a bounded below complex of injective
 > objects of an abelian category `C`. Then the right derived functor of any functor
@@ -65,7 +65,7 @@ public instance hasPointwiseRightDerivedFunctorAt_of_injective {H : Type u₃} [
 
 [Tag 05TI](https://stacks.math.columbia.edu/tag/05TI) in the Stacks Project.
 
-**`hasPointwiseRightDerivedFunctor_of_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean#L470). The attribute's comment: “(1)”. References: SGA 4 XVII (1.2.7), “enough injectives (RF)”.
+**`hasPointwiseRightDerivedFunctor_of_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean, line 470](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean#L470). The attribute's comment: “(1)”. References: SGA 4 XVII (1.2.7), “enough injectives (RF)”.
 
 > **Statement 1 (Stacks Tag 05TI, part 1).** Let `A` be an abelian category with enough
 > injectives. For every triangulated category `D` and every exact (triangulated) functor
@@ -81,7 +81,7 @@ theorem hasPointwiseRightDerivedFunctor_of_isTriangulated {A : Type*} [Category 
     F.HasPointwiseRightDerivedFunctor (HomotopyCategory.Plus.quasiIso A)
 ```
 
-**`hasPointwiseRightDerivedFunctor_mapPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean#L487). The attribute's comment: “(2)”. References: EGA 0 (13.6.1), “existence of R^pT”; SGA 4 XVII (1.2.7), “enough injectives (RF)”.
+**`hasPointwiseRightDerivedFunctor_mapPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean, line 487](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorPlus.lean#L487). The attribute's comment: “(2)”. References: EGA 0 (13.6.1), “existence of R^pT”; SGA 4 XVII (1.2.7), “enough injectives (RF)”.
 
 > **Statement 2 (Stacks Tag 05TI, part 2).** Let `A` be an abelian category with enough
 > injectives. For every abelian category `B` and every additive functor `F : A ⥤ B`, the
@@ -101,7 +101,7 @@ theorem hasPointwiseRightDerivedFunctor_mapPlus {A B : Type*} [Category A] [Abel
 
 [Tag 0159](https://stacks.math.columbia.edu/tag/0159) in the Stacks Project.
 
-**`CategoryTheory.Functor.isTriangulated_rightDerivedFunctorPlus_and_deltaFunctorStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctorPlus.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctorPlus.lean#L220).
+**`CategoryTheory.Functor.isTriangulated_rightDerivedFunctorPlus_and_deltaFunctorStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctorPlus.lean, line 220](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctorPlus.lean#L220).
 
 > **Stacks 0159.** Let `𝒜` be an abelian category with enough injectives and let
 > `F : 𝒜 ⥤ ℬ` be an additive functor, with right derived functor `RF : D⁺(𝒜) ⥤ D⁺(ℬ)`
@@ -138,7 +138,7 @@ theorem isTriangulated_rightDerivedFunctorPlus_and_deltaFunctorStructure :
 
 [Tag 015B](https://stacks.math.columbia.edu/tag/015B) in the Stacks Project.
 
-**`CategoryTheory.Functor.rightDerivedPlus_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusProperties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusProperties.lean#L134).
+**`CategoryTheory.Functor.rightDerivedPlus_properties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusProperties.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusProperties.lean#L134).
 
 > **The higher right derived functors of a left exact functor** ([Stacks, Tag 015B]). Let `𝒜`
 > be an abelian category with enough injectives and `F : 𝒜 ⥤ ℬ` a left exact functor to an abelian
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.20, Tag 0156](https://stacks.math.columbia.edu/tag/0156)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

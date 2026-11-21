@@ -8,7 +8,7 @@ proof: formalized
 
 # The formal total derivative on the gauge-boson jet algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.JetDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean): 26 declarations (1 instance with no name), 16 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.JetDeriv`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean): 26 declarations (1 instance with no name), 16 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.
 
 ## A. The derivative on the jet component space
 
-**`GaugeBoson.JetComponentSpace.jetDeriv`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L71).
+**`GaugeBoson.JetComponentSpace.jetDeriv`**, a def, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L71).
 
 > The derivative of components in the jet component space, in the direction `ν`: the
 > shift `∂_s A_μ^φ ↦ ∂_{s + {ν}} A_μ^φ` of the derivative label, i.e. right multiplication
@@ -50,7 +50,7 @@ noncomputable def JetComponentSpace.jetDeriv (ν : Fin 1 ⊕ Fin 3) :
     (JetComponentSpace 𝔤) →ₗ[ℝ] (JetComponentSpace 𝔤)
 ```
 
-**`GaugeBoson.JetComponentSpace.jetDeriv_tmul`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L80).
+**`GaugeBoson.JetComponentSpace.jetDeriv_tmul`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L80).
 
 ```lean
 lemma JetComponentSpace.jetDeriv_tmul (ν : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℝ)
@@ -60,7 +60,7 @@ lemma JetComponentSpace.jetDeriv_tmul (ν : Fin 1 ⊕ Fin 3) (a : SpaceTimeDeriv
           ({ν} : Multiset (Fin 1 ⊕ Fin 3))) ⊗ₜ[ℝ] φ
 ```
 
-**`GaugeBoson.JetComponentSpace.jetDeriv_comm`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L89).
+**`GaugeBoson.JetComponentSpace.jetDeriv_comm`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L89).
 
 > Total derivatives commute on the component space: the derivative labels live in a
 > symmetric algebra.
@@ -73,7 +73,7 @@ lemma JetComponentSpace.jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## B. The total derivative on the jet algebra
 
-**`LocalGaugeFieldAlgebra.jetDeriv`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L115).
+**`LocalGaugeFieldAlgebra.jetDeriv`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L115).
 
 > The formal total spacetime derivative on the gauge-boson jet algebra in the direction
 > `ν`: the derivation extending the shift `∂_s A_μ^φ ↦ ∂_{s + {ν}} A_μ^φ` of the component
@@ -84,7 +84,7 @@ noncomputable def jetDeriv (ν : Fin 1 ⊕ Fin 3) :
     (LocalGaugeFieldAlgebra 𝔤) →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_ι`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L121).
+**`LocalGaugeFieldAlgebra.jetDeriv_ι`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L121).
 
 ```lean
 lemma jetDeriv_ι (ν : Fin 1 ⊕ Fin 3) (x : (GaugeBoson.JetComponentSpace 𝔤)) :
@@ -92,20 +92,20 @@ lemma jetDeriv_ι (ν : Fin 1 ⊕ Fin 3) (x : (GaugeBoson.JetComponentSpace 𝔤
       = SymmetricAlgebra.ι ℝ _ ((GaugeBoson.JetComponentSpace.jetDeriv 𝔤) ν x)
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L128).
+**`LocalGaugeFieldAlgebra.jetDeriv_one`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L128).
 
 ```lean
 lemma jetDeriv_one (ν : Fin 1 ⊕ Fin 3) : (jetDeriv 𝔤) ν (1 : (LocalGaugeFieldAlgebra 𝔤)) = 0
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_algebraMap`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L133).
+**`LocalGaugeFieldAlgebra.jetDeriv_algebraMap`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L133).
 
 ```lean
 lemma jetDeriv_algebraMap (ν : Fin 1 ⊕ Fin 3) (r : ℝ) :
     (jetDeriv 𝔤) ν (algebraMap ℝ (LocalGaugeFieldAlgebra 𝔤) r) = 0
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_mul`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L139).
+**`LocalGaugeFieldAlgebra.jetDeriv_mul`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L139).
 
 > The total derivative is a derivation: the Leibniz rule.
 
@@ -114,7 +114,7 @@ lemma jetDeriv_mul (ν : Fin 1 ⊕ Fin 3) (x y : (LocalGaugeFieldAlgebra 𝔤)) 
     (jetDeriv 𝔤) ν (x * y) = (jetDeriv 𝔤) ν x * y + x * (jetDeriv 𝔤) ν y
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_comm_apply`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L145).
+**`LocalGaugeFieldAlgebra.jetDeriv_comm_apply`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L145).
 
 > Mixed partials agree on the jet algebra.
 
@@ -123,7 +123,7 @@ lemma jetDeriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : (LocalGaugeFieldAlgebra
     (jetDeriv 𝔤) μ ((jetDeriv 𝔤) ν x) = (jetDeriv 𝔤) ν ((jetDeriv 𝔤) μ x)
 ```
 
-**`LocalGaugeFieldAlgebra.jetDeriv_comm`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L151).
+**`LocalGaugeFieldAlgebra.jetDeriv_comm`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L151).
 
 ```lean
 lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
@@ -132,7 +132,7 @@ lemma jetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## C. The iterated total derivative
 
-**An instance with no name**, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L161).
+**An instance with no name**, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L161).
 
 ```lean
 instance : RightCommutative
@@ -140,7 +140,7 @@ instance : RightCommutative
       D.comp ((jetDeriv 𝔤) μ))
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L172).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv`**, a def, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L172).
 
 > The iterated total derivative `∂_s` along a multiset `s` of directions, well defined
 > because the directional derivatives commute.
@@ -150,14 +150,14 @@ noncomputable def iteratedJetDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) :
     (LocalGaugeFieldAlgebra 𝔤) →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L178).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_zero`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L178).
 
 ```lean
 lemma iteratedJetDeriv_zero :
     (iteratedJetDeriv 𝔤) (0 : Multiset (Fin 1 ⊕ Fin 3)) = LinearMap.id
 ```
 
-**`LocalGaugeFieldAlgebra.foldl_comp_eq`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L183).
+**`LocalGaugeFieldAlgebra.foldl_comp_eq`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L183).
 
 > Any initial map factors out of the fold defining the iterated derivative.
 
@@ -167,21 +167,21 @@ lemma foldl_comp_eq (s : Multiset (Fin 1 ⊕ Fin 3)) :
       s.foldl (fun D μ => D.comp ((jetDeriv 𝔤) μ)) D = D ∘ₗ (iteratedJetDeriv 𝔤) s
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L197).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_cons`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L197).
 
 ```lean
 lemma iteratedJetDeriv_cons (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :
     (iteratedJetDeriv 𝔤) (μ ::ₘ s) = (jetDeriv 𝔤) μ ∘ₗ (iteratedJetDeriv 𝔤) s
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L203).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_singleton`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L203).
 
 ```lean
 lemma iteratedJetDeriv_singleton (μ : Fin 1 ⊕ Fin 3) :
     (iteratedJetDeriv 𝔤) ({μ} : Multiset (Fin 1 ⊕ Fin 3)) = (jetDeriv 𝔤) μ
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_add`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L210).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_add`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L210).
 
 > Differentiating along `s + t` is differentiating along `t` and then along `s`.
 
@@ -190,7 +190,7 @@ lemma iteratedJetDeriv_add (s t : Multiset (Fin 1 ⊕ Fin 3)) :
     (iteratedJetDeriv 𝔤) (s + t) = (iteratedJetDeriv 𝔤) t ∘ₗ (iteratedJetDeriv 𝔤) s
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L223).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_cons'`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L223).
 
 > The companion of `iteratedJetDeriv_cons`, peeling the new derivative on the inside:
 > the derivatives commute, so the extra direction may equally be applied first.
@@ -200,7 +200,7 @@ lemma iteratedJetDeriv_cons' (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin
     (iteratedJetDeriv 𝔤) (μ ::ₘ s) = (iteratedJetDeriv 𝔤) s ∘ₗ (jetDeriv 𝔤) μ
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L230).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_ι`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L230).
 
 > On a component function the iterated derivative writes the derivative symbol `∂_s`
 > into the derivative label.
@@ -213,7 +213,7 @@ lemma iteratedJetDeriv_ι (s : Multiset (Fin 1 ⊕ Fin 3)) (a : SpaceTimeDerivAl
           ((a * SpaceTimeDerivAlgebraℝ.basisMultiset s) ⊗ₜ[ℝ] φ)
 ```
 
-**`LocalGaugeFieldAlgebra.iteratedJetDeriv_ofA`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L249).
+**`LocalGaugeFieldAlgebra.iteratedJetDeriv_ofA`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L249).
 
 > **The derivative generator `∂_s A_μ^φ`**: the iterated derivative of the gauge-field
 > component function.
@@ -229,7 +229,7 @@ lemma iteratedJetDeriv_ofA (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 
 
 ## D. Generation by the gauge fields and their derivatives
 
-**`GaugeBoson.dual_eq_sum_componentDual`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L267).
+**`GaugeBoson.dual_eq_sum_componentDual`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L267).
 
 > Every covector on the gauge-boson target space decomposes along the Lorentz coordinate
 > directions into component covectors: the spacetime index is expanded in the coordinate
@@ -243,7 +243,7 @@ lemma _root_.GaugeBoson.dual_eq_sum_componentDual
         TensorProduct.mk ℝ Lorentz.CoVector 𝔤 (Lorentz.CoVector.basis μ))
 ```
 
-**`LocalGaugeFieldAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L305).
+**`LocalGaugeFieldAlgebra.adjoin_iteratedJetDeriv_eq_top`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L305).
 
 > **The jet algebra is generated by the gauge fields and their derivatives.** Every
 > element is a polynomial in the derivative generators `∂_s A_μ^φ` — nothing else is
@@ -259,7 +259,7 @@ lemma adjoin_iteratedJetDeriv_eq_top :
 
 ## E. The derivative on the complexification
 
-**`LocalGaugeFieldAlgebra.complexJetDeriv`**, a def, [line 365](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L365).
+**`LocalGaugeFieldAlgebra.complexJetDeriv`**, a def, [line 365](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L365).
 
 > The formal total derivative on the complexified gauge-boson jet algebra, by base
 > change. This is the derivative the ambient Lagrangian theory uses.
@@ -269,14 +269,14 @@ noncomputable def complexJetDeriv (ν : Fin 1 ⊕ Fin 3) :
     ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤) →ₗ[ℂ] ℂ ⊗[ℝ] (LocalGaugeFieldAlgebra 𝔤)
 ```
 
-**`LocalGaugeFieldAlgebra.complexJetDeriv_tmul`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L371).
+**`LocalGaugeFieldAlgebra.complexJetDeriv_tmul`**, a lemma, [line 371](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L371).
 
 ```lean
 lemma complexJetDeriv_tmul (ν : Fin 1 ⊕ Fin 3) (z : ℂ) (x : (LocalGaugeFieldAlgebra 𝔤)) :
     (complexJetDeriv 𝔤) ν (z ⊗ₜ[ℝ] x) = z ⊗ₜ[ℝ] (jetDeriv 𝔤) ν x
 ```
 
-**`LocalGaugeFieldAlgebra.complexJetDeriv_mul`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L377).
+**`LocalGaugeFieldAlgebra.complexJetDeriv_mul`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L377).
 
 > The Leibniz rule on the complexification.
 
@@ -286,7 +286,7 @@ lemma complexJetDeriv_mul (ν : Fin 1 ⊕ Fin 3) (x y : ℂ ⊗[ℝ] (LocalGauge
       = (complexJetDeriv 𝔤) ν x * y + x * (complexJetDeriv 𝔤) ν y
 ```
 
-**`LocalGaugeFieldAlgebra.complexJetDeriv_comm`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L396).
+**`LocalGaugeFieldAlgebra.complexJetDeriv_comm`**, a lemma, [line 396](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean#L396).
 
 > The complexified total derivatives commute.
 
@@ -303,4 +303,4 @@ lemma complexJetDeriv_comm (μ ν : Fin 1 ⊕ Fin 3) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean)

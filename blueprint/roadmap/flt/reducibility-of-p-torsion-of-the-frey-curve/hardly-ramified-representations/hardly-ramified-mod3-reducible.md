@@ -13,10 +13,6 @@ Suppose $k$ is a finite field of characteristic 3, and suppose $\overline{rho}:\
 
 - [hardly_ramified](hardly-ramified.md)
 
-## Proof
-
-Omitted for now. …
-
 ## Lean
 
 Stated as [`GaloisRepresentation.IsHardlyRamified.mod_three`](https://ImperialCollegeLondon.github.io/FLT/docs/find/#doc/GaloisRepresentation.IsHardlyRamified.mod_three); the blueprint marks no proof of it as formalized.

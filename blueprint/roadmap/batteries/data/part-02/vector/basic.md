@@ -7,11 +7,11 @@ proof: formalized
 
 # Vectors
 
-`Batteries.Data.Vector.Basic`, in [Batteries/Data/Vector/Basic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean), by Shreyas Srinivas, François G. Dorais, Chad Sharp.
+`Batteries.Data.Vector.Basic`, in [Batteries/Data/Vector/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean), by Shreyas Srinivas, François G. Dorais, Chad Sharp.
 
 > `Vector α n` is a thin wrapper around `Array α` for arrays of fixed size `n`.
 
-`Vector.allDiff` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L23))
+`Vector.allDiff` (definition, [line 23](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L23))
 
 > Returns `true` when all elements of the vector are pairwise distinct using `==` for comparison.
 
@@ -19,7 +19,7 @@ proof: formalized
 def allDiff [BEq α] (as : Vector α n) : Bool
 ```
 
-`Vector.uset` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L30))
+`Vector.uset` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L30))
 
 > Set an element of a vector using a `USize` index and a proof that the index is within bounds.
 
@@ -27,7 +27,7 @@ def allDiff [BEq α] (as : Vector α n) : Bool
 def uset (xs : Vector α n) (i : USize) (v : α) (h : i.toNat < n) : Vector α n
 ```
 
-`Vector.scanlM` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L75))
+`Vector.scanlM` (definition, [line 75](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L75))
 
 > Fold an effectful function `f` over the array from the left, returning the list of partial results.
 
@@ -36,7 +36,7 @@ def scanlM [Monad m] (f : β → α → m β) (init : β) (as : Vector α n)
     : m (Vector β (n + 1))
 ```
 
-`Vector.scanrM` (definition, [line 120](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L120))
+`Vector.scanrM` (definition, [line 120](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L120))
 
 > Fold an effectful function `f` over the array from the right, returning the list of partial results.
 
@@ -45,7 +45,7 @@ def scanrM [Monad m] (f : α → β → m β) (init : β) (as : Vector α n) :
     m (Vector β (n + 1))
 ```
 
-`Vector.scanl` (definition, [line 137](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L137))
+`Vector.scanl` (definition, [line 137](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L137))
 
 > Fold a function `f` over the list from the left, returning the vector of partial results.
 
@@ -53,7 +53,7 @@ def scanrM [Monad m] (f : α → β → m β) (init : β) (as : Vector α n) :
 def scanl (f : β → α → β) (init : β) (as : Vector α n) : Vector β (n + 1)
 ```
 
-`Vector.scanr` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean#L144))
+`Vector.scanr` (definition, [line 144](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean#L144))
 
 > Fold a function `f` over the list from the right, returning the vector of partial results.
 
@@ -71,5 +71,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Data/Vector/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/Vector/Basic.lean)
+- [Batteries/Data/Vector/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/Vector/Basic.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.Vector.Basic.json)

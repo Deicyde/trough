@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.134 The naive cotangent complex
 
-Section 10.134 of the Stacks Project, [Tag 00S0](https://stacks.math.columbia.edu/tag/00S0). 19 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.134 of the Stacks Project, [Tag 00S0](https://stacks.math.columbia.edu/tag/00S0). 19 tags here are carried by 38 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07BL, an equation
 
@@ -16,7 +16,7 @@ Section 10.134 of the Stacks Project, [Tag 00S0](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`Algebra.Generators.self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Generators.self#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch10.lean#L262) (StacksFrontier): “the canonical surjection R[S] → S, [s] ↦ s: the generators of S indexed by S itself, whose map MvPolynomial S R → S is aeval id”.
+- [`Algebra.Generators.self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Generators.self#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 262](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/MathlibRegistrations/Ch10.lean#L262) (StacksFrontier): “the canonical surjection R[S] → S, [s] ↦ s: the generators of S indexed by S itself, whose map MvPolynomial S R → S is aeval id”.
 
 ## Tag 07BM, an equation
 
@@ -24,13 +24,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Algebra.Extension.cotangentComplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Extension.cotangentComplex#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L569) (StacksFrontier): “the naive cotangent differential”. References: EGA IV (17.15.9); SGA 1 II (5.9), “more general”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.1), “affine case”.
+- [`Algebra.Extension.cotangentComplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Extension.cotangentComplex#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 569](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L569) (StacksFrontier): “the naive cotangent differential”. References: EGA IV (17.15.9); SGA 1 II (5.9), “more general”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.1), “affine case”.
 
 ## Tag 07BN, a definition
 
 [Tag 07BN](https://stacks.math.columbia.edu/tag/07BN) in the Stacks Project.
 
-**`Algebra.naiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L161). The attribute's comment: “The complex itself; Mathlib has its differential (`Algebra.Extension.cotangentComplex` at `Algebra.Generators.self R S`) and its degree-`1` homology (`Algebra.H1Cotangent`), but not the two-term complex. See the module docstring.”. References: SGA 6 VIII (2.1), “affine case, R[S]”.
+**`Algebra.naiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L161). The attribute's comment: “The complex itself; Mathlib has its differential (`Algebra.Extension.cotangentComplex` at `Algebra.Generators.self R S`) and its degree-`1` homology (`Algebra.H1Cotangent`), but not the two-term complex. See the module docstring.”. References: SGA 6 VIII (2.1), “affine case, R[S]”.
 
 > **The naive cotangent complex** (Stacks 07BN): for a ring map `R → S`, the two-term chain
 > complex of `S`-modules
@@ -52,7 +52,7 @@ public noncomputable def Algebra.naiveCotangentComplex (R : Type u) (S : Type v)
 
 [Tag 06RQ](https://stacks.math.columbia.edu/tag/06RQ) in the Stacks Project.
 
-**`Stacks.NaiveCotangent.RingSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean#L279). The attribute's comment: “The commutative square of rings; the functoriality of the naive cotangent complex in it is `Algebra.Generators.naiveCotangentComplex_functorial`.”.
+**`Stacks.NaiveCotangent.RingSquare`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean, line 279](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean#L279). The attribute's comment: “The commutative square of rings; the functoriality of the naive cotangent complex in it is `Algebra.Generators.naiveCotangentComplex_functorial`.”.
 
 > **A commutative square of rings** (Stacks 06RQ): ring maps `R → S`, `R → R'`, `R' → S'` and
 > `φ : S → S'` such that the two composites `R → S'` agree. It is the datum for which the naive
@@ -62,7 +62,7 @@ public noncomputable def Algebra.naiveCotangentComplex (R : Type u) (S : Type v)
 structure RingSquare (R S R' S' : Type*) [CommRing R] [CommRing S] [CommRing R'] [CommRing S']
 ```
 
-**`Algebra.Generators.naiveCotangentComplex_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean#L353). The attribute's comment: “The functoriality of the naive cotangent complex in the square: kernels, the maps of complexes `NL(α) → NL(α')` and `NL(α) ⊗_S S' → NL(α')`, the canonical map of the canonical presentations, and its compatibility with composition.”.
+**`Algebra.Generators.naiveCotangentComplex_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean, line 353](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Functoriality.lean#L353). The attribute's comment: “The functoriality of the naive cotangent complex in the square: kernels, the maps of complexes `NL(α) → NL(α')` and `NL(α) ⊗_S S' → NL(α')`, the canonical map of the canonical presentations, and its compatibility with composition.”.
 
 > **Functoriality of the naive cotangent complex in a commutative square of rings**
 > (Stacks 06RQ). Let `R → S`, `R' → S'`, `R → R'`, `φ : S → S'` be a commutative square of rings
@@ -106,7 +106,7 @@ theorem naiveCotangentComplex_functorial (P : Generators R S ι) (P' : Generator
 
 [Tag 00S1](https://stacks.math.columbia.edu/tag/00S1) in the Stacks Project.
 
-**`Deformation.Artin.derivedNaiveCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveCotangentPresentation.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Obstruction/NaiveCotangentPresentation.lean#L348). The attribute's comment: “presentation independence in the derived category: the comparison with the canonical presentation is an isomorphism in D(A)”. References: SGA 6 0 (4.3), “partial”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.2), “special case”.
+**`Deformation.Artin.derivedNaiveCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveCotangentPresentation.lean, line 348](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Deformation/Artin/Obstruction/NaiveCotangentPresentation.lean#L348). The attribute's comment: “presentation independence in the derived category: the comparison with the canonical presentation is an isomorphism in D(A)”. References: SGA 6 0 (4.3), “partial”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.2), “special case”.
 
 > For any presentation of `A` over `Λ`, the comparison with the canonical presentation is an
 > isomorphism `NL(α) ≅ NL_{A/Λ}` in the derived category of `A`-modules.
@@ -118,7 +118,7 @@ public def derivedNaiveCotangentComplexIso (P : Algebra.Generators Λ A ι)
       derivedNaiveCotangentComplex Λ A
 ```
 
-**`NaiveCotangent.exists_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L417). The attribute's comment: “(1)”.
+**`NaiveCotangent.exists_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 417](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L417). The attribute's comment: “(1)”.
 
 > **Existence.** There exists a morphism of presentations `varphi` from `α` to `α'`
 > covering the square.
@@ -127,7 +127,7 @@ public def derivedNaiveCotangentComplexIso (P : Algebra.Generators Λ A ι)
 theorem exists_hom (P : Generators R S ι) (P' : Generators R' S' ι') : Nonempty (P.Hom P')
 ```
 
-**`NaiveCotangent.nlMap_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L427). The attribute's comment: “(2)”.
+**`NaiveCotangent.nlMap_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L427). The attribute's comment: “(2)”.
 
 > **Homotopy uniqueness.** Any two morphisms of presentations `varphi, varphi'` from `α` to
 > `α'` induce homotopic chain maps `NL(varphi), NL(varphi')` (over the source base `S`). The
@@ -141,7 +141,7 @@ theorem nlMap_homotopic (P : Generators R S ι) (P' : Generators R' S' ι') (φ 
     Homotopic (nlMap P P' φ) (nlMap P P' φ')
 ```
 
-**`NaiveCotangent.nlMapBase_comp_nlMapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L436). The attribute's comment: “(3)”.
+**`NaiveCotangent.nlMapBase_comp_nlMapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L436). The attribute's comment: “(3)”.
 
 > **Compatibility with composition.** Given a commutative diagram of two squares and
 > compatible morphisms of presentations `varphi : P → P'`, `varphi' : P' → P''`, the composite
@@ -158,7 +158,7 @@ theorem nlMapBase_comp_nlMapBase {R'' S'' ι'' : Type*} [CommRing R''] [CommRing
     (nlMapBase S P' P'' φ').comp (nlMapBase S P P' φ) = nlMapBase S P P'' (φ'.comp φ)
 ```
 
-**`NaiveCotangent.nlMap_isHomotopyEquiv_and_isQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L516). The attribute's comment: “(4)”.
+**`NaiveCotangent.nlMap_isHomotopyEquiv_and_isQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 516](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L516). The attribute's comment: “(4)”.
 
 > **Isomorphism case.** If `R → R'` and `φ : S → S'` are isomorphisms, then for any morphism
 > of presentations `varphi` from `α` to `α'` the induced chain map `NL(varphi)` (over `S`) is
@@ -170,7 +170,7 @@ theorem nlMap_isHomotopyEquiv_and_isQuasiIso (hR : Function.Bijective (algebraMa
     (φ : P.Hom P') : IsHomotopyEquiv (nlMap P P' φ) ∧ IsQuasiIso (nlMap P P' φ)
 ```
 
-**`NaiveCotangent.nlMap_canonical_isQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L559).
+**`NaiveCotangent.nlMap_canonical_isQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Defs.lean, line 559](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Defs.lean#L559).
 
 > **Comparison with the canonical complex.** Any morphism of presentations `varphi` from a
 > presentation `α` of `S/R` to the canonical presentation `α_can : R[S] → S` induces a
@@ -185,7 +185,7 @@ theorem nlMap_canonical_isQuasiIso (P : Generators R S ι) (φ : P.Hom (canonica
 
 [Tag 08Q1](https://stacks.math.columbia.edu/tag/08Q1) in the Stacks Project.
 
-**`NaiveCotangent.isHomotopyEquiv_toKaehlerChainMap_of_algEquiv_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean#L223). The attribute's comment: “the homotopy equivalence `NL_{S/R} → (0 → Ω_{S/R})`, for the canonical naive cotangent complex of any `R`-algebra `S` isomorphic to a polynomial algebra `R[x_i : i ∈ ι]`”.
+**`NaiveCotangent.isHomotopyEquiv_toKaehlerChainMap_of_algEquiv_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean#L223). The attribute's comment: “the homotopy equivalence `NL_{S/R} → (0 → Ω_{S/R})`, for the canonical naive cotangent complex of any `R`-algebra `S` isomorphic to a polynomial algebra `R[x_i : i ∈ ι]`”.
 
 > **The naive cotangent complex of a polynomial algebra** (Stacks 08Q1). Let `R → S` be a
 > polynomial algebra, that is `S ≅ R[x_i : i ∈ ι]` as `R`-algebras for some set of variables `ι`.
@@ -198,7 +198,7 @@ theorem isHomotopyEquiv_toKaehlerChainMap_of_algEquiv_mvPolynomial {ι : Type*}
     (e : MvPolynomial ι R ≃ₐ[R] S) : IsHomotopyEquiv (toKaehlerChainMap R S)
 ```
 
-**`NaiveCotangent.isQuasiIso_toKaehlerChainMap_of_algEquiv_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean#L234). The attribute's comment: “the quasi-isomorphism `NL_{S/R} → (0 → Ω_{S/R})` deduced from the homotopy equivalence, for any `R`-algebra `S` isomorphic to a polynomial algebra `R[x_i : i ∈ ι]`”.
+**`NaiveCotangent.isQuasiIso_toKaehlerChainMap_of_algEquiv_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/FormallySmoothExtensionQuasiIso.lean#L234). The attribute's comment: “the quasi-isomorphism `NL_{S/R} → (0 → Ω_{S/R})` deduced from the homotopy equivalence, for any `R`-algebra `S` isomorphic to a polynomial algebra `R[x_i : i ∈ ι]`”.
 
 > **Homology of the naive cotangent complex of a polynomial algebra** (Stacks 08Q1). For an
 > `R`-algebra `S` isomorphic to a polynomial algebra `R[x_i : i ∈ ι]`, the augmentation
@@ -214,7 +214,7 @@ theorem isQuasiIso_toKaehlerChainMap_of_algEquiv_mvPolynomial {ι : Type*}
 
 [Tag 00S2](https://stacks.math.columbia.edu/tag/00S2) in the Stacks Project.
 
-**`Algebra.Generators.Cotangent.map_ker_baseChange_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean#L144). The attribute's comment: “Exactness at `H₁(L_{C/A})`, the one node of the six term sequence that is not in Mathlib; the term on the left is the source's `H₁(NL_{B/A} ⊗_B C)`, so no `Tor` vanishing hypothesis is needed. See the module docstring.”.
+**`Algebra.Generators.Cotangent.map_ker_baseChange_cotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/Kaehler/JacobiZariski.lean#L144). The attribute's comment: “Exactness at `H₁(L_{C/A})`, the one node of the six term sequence that is not in Mathlib; the term on the left is the source's `H₁(NL_{B/A} ⊗_B C)`, so no `Tor` vanishing hypothesis is needed. See the module docstring.”.
 
 > **The Jacobi-Zariski sequence is exact at `H₁(L_{C/A})`**: let `A → B → C` be ring maps, let
 > `α : A[x_s, s ∈ S] → B` be a presentation with kernel `I`, let `β : B[y_t, t ∈ T] → C` be a
@@ -234,7 +234,7 @@ public theorem map_ker_baseChange_cotangentComplex (Q : Generators S T ι)
         LinearMap.ker (Extension.Cotangent.map (Q.ofComp P).toExtensionHom)
 ```
 
-**`NaiveCotangent.jacobiZariski_sixTerm_exact_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean#L272). The attribute's comment: “the six-term exact sequence with its middle column an ARBITRARY presentation of `C` over `A`, rather than the presentation `Q.comp P` induced by the other two, which is what `NaiveCotangent.jacobiZariski_sixTerm_exact` gives; the two are compared by Stacks 00S1 (4), which this statement uses but does not state”.
+**`NaiveCotangent.jacobiZariski_sixTerm_exact_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean#L272). The attribute's comment: “the six-term exact sequence with its middle column an ARBITRARY presentation of `C` over `A`, rather than the presentation `Q.comp P` induced by the other two, which is what `NaiveCotangent.jacobiZariski_sixTerm_exact` gives; the two are compared by Stacks 00S1 (4), which this statement uses but does not state”.
 
 > **The Jacobi-Zariski six-term exact sequence over three independently chosen
 > presentations** (Stacks 00S2 together with Stacks 00S1).  Let `A → B → C` be ring maps, let
@@ -264,7 +264,7 @@ theorem jacobiZariski_sixTerm_exact_extension (Q : Generators S T ι)
       Surjective (nlExtensionOverMap ψ).onH₀
 ```
 
-**`NaiveCotangent.jacobiZariski_sixTerm_exact_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean#L326). The attribute's comment: “the six-term exact sequence between the naive cotangent complexes of the three CANONICAL presentations of Stacks 07BL, rather than of the three presentations of the source's own proof”.
+**`NaiveCotangent.jacobiZariski_sixTerm_exact_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean, line 326](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiPresentations.lean#L326). The attribute's comment: “the six-term exact sequence between the naive cotangent complexes of the three CANONICAL presentations of Stacks 07BL, rather than of the three presentations of the source's own proof”.
 
 > **The Jacobi-Zariski six-term exact sequence over the canonical presentations** of Stacks
 > 07BL.  For ring maps `A → B → C`,
@@ -296,7 +296,7 @@ theorem jacobiZariski_sixTerm_exact_canonical
       Surjective (nlExtensionOverMap ψ).onH₀
 ```
 
-**`NaiveCotangent.jacobiZariski_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L159). The attribute's comment: “The canonical commutative diagram with exact rows: the top row is short exact, the bottom row is exact with a surjection at its right end.”.
+**`NaiveCotangent.jacobiZariski_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L159). The attribute's comment: “The canonical commutative diagram with exact rows: the top row is short exact, the bottom row is exact with a surjection at its right end.”.
 
 > **The Jacobi-Zariski diagram** (Stacks 00S2, first assertion).  Let `A → B → C` be ring maps,
 > let `α : A[x_s] → B` and `β : B[y_t] → C` be presentations with kernels `I` and `J`, and let
@@ -319,7 +319,7 @@ public theorem jacobiZariski_diagram (Q : Generators S T ι) (P : Generators R S
       (NL Q).d ∘ₗ (nlOfComp Q P).f₁ = (nlOfComp Q P).f₀ ∘ₗ (NL (Q.comp P)).d
 ```
 
-**`NaiveCotangent.jacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L175). The attribute's comment: “The connecting map of the six-term sequence, for the naive cotangent complexes of three presentations as in the source's own proof.”.
+**`NaiveCotangent.jacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 175](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L175). The attribute's comment: “The connecting map of the six-term sequence, for the naive cotangent complexes of three presentations as in the source's own proof.”.
 
 > **The Jacobi-Zariski connecting map** (Stacks 00S2): for ring maps `A → B → C` and
 > presentations `α : A[x_s] → B`, `β : B[y_t] → C` with induced presentation
@@ -331,7 +331,7 @@ public noncomputable def jacobiZariskiConnecting (Q : Generators S T ι) (P : Ge
     H₁ (NL Q) →ₗ[T] H₀ (nlBaseChange T P)
 ```
 
-**`NaiveCotangent.jacobiZariski_sixTerm_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L196). The attribute's comment: “The six-term exact sequence for the naive cotangent complex, over the three presentations of the source's own proof; `Stacks.KaehlerDifferential.JacobiZariski` records only exactness at `H₁(L_{C/A})`, and for the full cotangent complex.”.
+**`NaiveCotangent.jacobiZariski_sixTerm_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L196). The attribute's comment: “The six-term exact sequence for the naive cotangent complex, over the three presentations of the source's own proof; `Stacks.KaehlerDifferential.JacobiZariski` records only exactness at `H₁(L_{C/A})`, and for the full cotangent complex.”.
 
 > **The Jacobi-Zariski six-term exact sequence** (Stacks 00S2) for the naive cotangent
 > complex.  Let `A → B → C` be ring maps, let `α : A[x_s] → B` and `β : B[y_t] → C` be
@@ -353,7 +353,7 @@ public theorem jacobiZariski_sixTerm_exact (Q : Generators S T ι) (P : Generato
       Surjective (nlOfComp Q P).onH₀
 ```
 
-**`NaiveCotangent.exists_jacobiZariski_sixTerm_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L219). The attribute's comment: “The existential form of the six-term sequence for the naive cotangent complex.”.
+**`NaiveCotangent.exists_jacobiZariski_sixTerm_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiSixTerm.lean#L219). The attribute's comment: “The existential form of the six-term sequence for the naive cotangent complex.”.
 
 > **Stacks 00S2** in the form in which the source states it: there *exists* a six-term
 > exact sequence
@@ -374,7 +374,7 @@ public theorem exists_jacobiZariski_sixTerm_exact (Q : Generators S T ι)
         Surjective (nlOfComp Q P).onH₀
 ```
 
-**`NaiveCotangent.bijective_h1BaseChangeMap_of_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiTor.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiTor.lean#L85). The attribute's comment: “The final assertion: if `Tor₁^B(Ω_{B/A}, C)` and `Tor₂^B(Ω_{B/A}, C)` vanish then the canonical map `C ⊗_B H₁(NL_{B/A}) → H₁(NL_{B/A} ⊗_B C)` is an isomorphism; `Tor` is Mathlib's `Tor'` on `ModuleCat B`, with `B` and `C` in one universe as `Tor` requires.”.
+**`NaiveCotangent.bijective_h1BaseChangeMap_of_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiTor.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/JacobiZariskiTor.lean#L85). The attribute's comment: “The final assertion: if `Tor₁^B(Ω_{B/A}, C)` and `Tor₂^B(Ω_{B/A}, C)` vanish then the canonical map `C ⊗_B H₁(NL_{B/A}) → H₁(NL_{B/A} ⊗_B C)` is an isomorphism; `Tor` is Mathlib's `Tor'` on `ModuleCat B`, with `B` and `C` in one universe as `Tor` requires.”.
 
 > **The `Tor` clause of the Jacobi-Zariski sequence** (Stacks 00S2, final assertion).  Let
 > `A → B → C` be ring maps and let `α : A[x_s] → B` be a presentation of `B` over `A`.  If
@@ -396,7 +396,7 @@ theorem bijective_h1BaseChangeMap_of_tor {T : Type u} [CommRing T] [Algebra S T]
 
 [Tag 07VC](https://stacks.math.columbia.edu/tag/07VC) in the Stacks Project.
 
-**`NaiveCotangent.towerChainMap_homotopic_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L216). The attribute's comment: “the composition is homotopy equivalent to zero”.
+**`NaiveCotangent.towerChainMap_homotopic_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 216](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L216). The attribute's comment: “the composition is homotopy equivalent to zero”.
 
 > **Stacks 07VC.** The composition `NL_{B/A} ⟶ NL_{C/A} ⟶ NL_{C/B}` of the two
 > functoriality maps of the naive cotangent complex is homotopic to the zero chain map.
@@ -408,7 +408,7 @@ public theorem towerChainMap_homotopic_zero :
         (nlRestrict B (Generators.self B C)))
 ```
 
-**`NaiveCotangent.towerNullHomotopy_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L227). The attribute's comment: “the displayed map is an explicit homotopy”.
+**`NaiveCotangent.towerNullHomotopy_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L227). The attribute's comment: “the displayed map is an explicit homotopy”.
 
 > The two homotopy relations satisfied by `towerNullHomotopy`: it is a null homotopy of the
 > composition `NL_{B/A} ⟶ NL_{C/A} ⟶ NL_{C/B}`.
@@ -421,7 +421,7 @@ public theorem towerNullHomotopy_spec :
         (nlRestrict B (Generators.self B C)).d ∘ₗ towerNullHomotopy A B C
 ```
 
-**`NaiveCotangent.towerNullHomotopy_cotangentSpaceBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L259). The attribute's comment: “the value of the homotopy on the basis element d[b]”.
+**`NaiveCotangent.towerNullHomotopy_cotangentSpaceBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/CompositionNullHomotopy.lean#L259). The attribute's comment: “the value of the homotopy on the basis element d[b]”.
 
 > **Stacks 07VC.** The homotopy sends the basis element `d[b]` of
 > `Ω_{A[B]/A} ⊗_{A[B]} B` to the class of `[φ(b)] - b` in `J/J²`.
@@ -437,7 +437,7 @@ public theorem towerNullHomotopy_cotangentSpaceBasis (b : B) :
 
 [Tag 07BP](https://stacks.math.columbia.edu/tag/07BP) in the Stacks Project.
 
-**`h1Cotangent_equiv_cotangent_of_surjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/H1.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/H1.lean#L116).
+**`h1Cotangent_equiv_cotangent_of_surjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/H1.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/H1.lean#L116).
 
 > For a surjective ring map `A → B` with kernel `I := RingHom.ker (algebraMap A B)`, the
 > `A`-linear isomorphism `Algebra.H1Cotangent A B ≃ₗ[A] I.Cotangent`.
@@ -448,7 +448,7 @@ noncomputable def h1Cotangent_equiv_cotangent_of_surjective
     Algebra.H1Cotangent A B ≃ₗ[A] (RingHom.ker (algebraMap A B)).Cotangent
 ```
 
-**`NaiveCotangent.nlToConormalOfSurjective_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Surjective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Surjective.lean#L108). The attribute's comment: “the homotopy equivalence `NL_{B/A} ≃ (I/I^2 → 0)`; the consequence `H_1(L_{B/A}) = I/I^2` is `h1Cotangent_equiv_cotangent_of_surjective`”.
+**`NaiveCotangent.nlToConormalOfSurjective_isHomotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Surjective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Surjective.lean#L108). The attribute's comment: “the homotopy equivalence `NL_{B/A} ≃ (I/I^2 → 0)`; the consequence `H_1(L_{B/A}) = I/I^2` is `h1Cotangent_equiv_cotangent_of_surjective`”.
 
 > **Stacks 07BP.** Let `A → B` be a surjective ring map with kernel `I`. Then the naive
 > cotangent complex `NL_{B/A}` is homotopy equivalent to the chain complex `(I/I² → 0)` with
@@ -463,7 +463,7 @@ theorem nlToConormalOfSurjective_isHomotopyEquiv (h : Function.Surjective (algeb
 
 [Tag 065V](https://stacks.math.columbia.edu/tag/065V) in the Stacks Project.
 
-**`exact_mapCotangent_kerCotangentToTensor_and_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean, line 697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean#L697). References: EGA 0 (20.5.12), “(i), special case”.
+**`exact_mapCotangent_kerCotangentToTensor_and_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean, line 697](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean#L697). References: EGA 0 (20.5.12), “(i), special case”.
 
 > **Stacks Tag 065V (Lemma 10.134.7).** Let `A → B → C` be ring maps with `A → C`
 > surjective, and set `I = ker (A → C)` and `J = ker (B → C)`. Then the sequence
@@ -488,7 +488,7 @@ theorem exact_mapCotangent_kerCotangentToTensor_and_surjective
 
 [Tag 00S4](https://stacks.math.columbia.edu/tag/00S4) in the Stacks Project.
 
-**`FlatBaseChangeNL.statement2_complex_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean, line 758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean#L758). References: EGA IV (16.2.2), “(iii)”; EGA IV (16.2.4), “affine case”; SGA 3 I (6.8.5), “special case”; SGA 3 III (0.14), “partial”.
+**`FlatBaseChangeNL.statement2_complex_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean, line 758](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean#L758). References: EGA IV (16.2.2), “(iii)”; EGA IV (16.2.4), “affine case”; SGA 3 I (6.8.5), “special case”; SGA 3 III (0.14), “partial”.
 
 > **Statement 2, part (b): the canonical comparison is an isomorphism.**
 >
@@ -504,7 +504,7 @@ theorem statement2_complex_iso [Module.Flat R R'] (P : Algebra.Extension R S) :
         (iso.e0 : _ →ₗ[R' ⊗[R] S] _) = cotComparison0 R' P
 ```
 
-**`FlatBaseChangeNL.statement3_homotopy_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean, line 1465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean#L1465).
+**`FlatBaseChangeNL.statement3_homotopy_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean, line 1465](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/BaseChange.lean#L1465).
 
 > **Statement 3**: under flatness of `R → R'`, the canonical comparison chain map of
 > naive cotangent complexes `NL_{S/R} ⊗_S S' → NL_{S'/R'}` (with `NL_{S'/R'}` the
@@ -527,7 +527,7 @@ theorem statement3_homotopy_equiv [Module.Flat R R'] :
 
 [Tag 07BQ](https://stacks.math.columbia.edu/tag/07BQ) in the Stacks Project.
 
-**`RingMapSystemUnbundled.isIso_colim_NL`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Colimit.lean, line 1697](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Colimit.lean#L1697).
+**`RingMapSystemUnbundled.isIso_colim_NL`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Colimit.lean, line 1697](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Colimit.lean#L1697).
 
 > **Stacks Tag 07BQ, Lemma 10.134.9 (packaged).**
 > The canonical comparison morphism `colim_λ NL_{S_λ/R_λ} → NL_{S/R}` is an
@@ -549,7 +549,7 @@ theorem isIso_colim_NL [IsDirected Λ (· ≤ ·)] [Nonempty Λ] :
 
 [Tag 07BR](https://stacks.math.columbia.edu/tag/07BR) in the Stacks Project.
 
-**`kaehlerDifferential_subsingleton_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1151).
+**`kaehlerDifferential_subsingleton_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1149).
 
 > `H₀(NL_{S⁻¹A/A}) = Ω_{S⁻¹A/A} = 0`: the module of Kähler differentials of a
 > localization `S⁻¹A` over `A` vanishes.
@@ -560,7 +560,7 @@ theorem kaehlerDifferential_subsingleton_of_isLocalization
     Subsingleton (Ω[B⁄A])
 ```
 
-**`h1Cotangent_subsingleton_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1160).
+**`h1Cotangent_subsingleton_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1158).
 
 > `H₁(NL_{S⁻¹A/A}) = 0`: the first naive cotangent homology of a localization `S⁻¹A`
 > over `A` vanishes.
@@ -575,7 +575,7 @@ theorem h1Cotangent_subsingleton_of_isLocalization
 
 [Tag 07BS](https://stacks.math.columbia.edu/tag/07BS) in the Stacks Project.
 
-**`naiveCotangentComplex_localization_base_homotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1459).
+**`naiveCotangentComplex_localization_base_homotopyEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1457).
 
 > With `Aₘ` a localization of `A` at the multiplicative subset `M` and a ring map `Aₘ → B`, the
 > canonical chain map `φ = (φ₁, φ₀) : NL_{B/A} → NL_{B/Aₘ}`, given by
@@ -608,7 +608,7 @@ theorem naiveCotangentComplex_localization_base_homotopyEquiv
       φ₀ ∘ₗ ψ₀ - LinearMap.id = Q.cotangentComplex ∘ₗ t
 ```
 
-**`NaiveCotangent.isQuasiIso_nlExtensionOverMap_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean#L479). The attribute's comment: “the canonical map `NL_{T/R} ⟶ NL_{T/R'}` is bijective in both degrees, hence a quasi-isomorphism; the homotopy equivalence itself is `naiveCotangentComplex_localization_base_homotopyEquiv`.”.
+**`NaiveCotangent.isQuasiIso_nlExtensionOverMap_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean, line 479](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean#L479). The attribute's comment: “the canonical map `NL_{T/R} ⟶ NL_{T/R'}` is bijective in both degrees, hence a quasi-isomorphism; the homotopy equivalence itself is `naiveCotangentComplex_localization_base_homotopyEquiv`.”.
 
 > **Localizing the base**: for a localization `R' = N⁻¹R` of `R` at a multiplicative subset
 > `N ⊆ R` and a ring map `R' → T`, the canonical map of two-term complexes `NL_{T/R} ⟶ NL_{T/R'}`
@@ -624,7 +624,7 @@ theorem isQuasiIso_nlExtensionOverMap_of_isLocalization (N : Submonoid R) [IsLoc
 
 [Tag 08JZ](https://stacks.math.columbia.edu/tag/08JZ) in the Stacks Project.
 
-**`Algebra.Generators.naiveCotangentComplex_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1014](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1014). The attribute's comment: “The whole statement: the presentation `β` (its values on the variables), the generators `I`, `f x - 1` of its kernel (Mathlib's `Algebra.Generators.comp_localizationAway_ker`), items (1) (from Mathlib's `Algebra.Generators.cotangentCompLocalizationAwayEquiv` and `Algebra.Generators.basisCotangentAway`), (2) (from Mathlib's `Algebra.Generators.CotangentSpace.compEquiv`) and (3), and the homotopy equivalence `NL_{B/A} ⊗_B B_g → NL_{B_g/A}`, for the map induced by any morphism between any presentations.”.
+**`Algebra.Generators.naiveCotangentComplex_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1012). The attribute's comment: “The whole statement: the presentation `β` (its values on the variables), the generators `I`, `f x - 1` of its kernel (Mathlib's `Algebra.Generators.comp_localizationAway_ker`), items (1) (from Mathlib's `Algebra.Generators.cotangentCompLocalizationAwayEquiv` and `Algebra.Generators.basisCotangentAway`), (2) (from Mathlib's `Algebra.Generators.CotangentSpace.compEquiv`) and (3), and the homotopy equivalence `NL_{B/A} ⊗_B B_g → NL_{B_g/A}`, for the map induced by any morphism between any presentations.”.
 
 > **Stacks 08JZ, the formation of the naive cotangent complex commutes with localization at an
 > element.** Let `A → B` be a ring map, let `g ∈ B`, let `B_g` be a localization of `B` away from
@@ -708,7 +708,7 @@ public theorem naiveCotangentComplex_localizationAway
 
 [Tag 00S7](https://stacks.math.columbia.edu/tag/00S7) in the Stacks Project.
 
-**`Algebra.Extension.Cotangent.bijOn_ker_liftBaseChange_map_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L186). The attribute's comment: “The `H₁` half at the level of the complexes, where the homology is `ker (d ⊗ T)` rather than `T ⊗ ker d`. The `H₀` half is `KaehlerDifferential.isLocalizedModule_map` and the `H¹(L)`-level `H₁` half is `Algebra.H1Cotangent.isLocalizedModule`. See the module docstring.”.
+**`Algebra.Extension.Cotangent.bijOn_ker_liftBaseChange_map_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L186). The attribute's comment: “The `H₁` half at the level of the complexes, where the homology is `ker (d ⊗ T)` rather than `T ⊗ ker d`. The `H₀` half is `KaehlerDifferential.isLocalizedModule_map` and the `H¹(L)`-level `H₁` half is `Algebra.H1Cotangent.isLocalizedModule`. See the module docstring.”.
 
 > **The naive cotangent complex commutes with localization**, on `H₁`: let `A → B` be a ring
 > map, let `M ⊆ B` be a multiplicative subset with localization `M⁻¹B`, and let `α`, `β` be
@@ -727,7 +727,7 @@ public theorem Algebra.Extension.Cotangent.bijOn_ker_liftBaseChange_map_of_isLoc
       (LinearMap.ker Q.toExtension.cotangentComplex)
 ```
 
-**`NaiveCotangent.isQuasiIso_nlExtensionBaseChangeMap_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean#L446). The attribute's comment: “the whole lemma at the level of the complexes: the canonical map `NL_{S/R} ⊗_S T ⟶ NL_{T/R}` is a quasi-isomorphism. The `H₁` half alone is `Algebra.Extension.Cotangent.bijOn_ker_liftBaseChange_map_of_isLocalization`.”.
+**`NaiveCotangent.isQuasiIso_nlExtensionBaseChangeMap_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean, line 446](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/LocalizationBaseAndTarget.lean#L446). The attribute's comment: “the whole lemma at the level of the complexes: the canonical map `NL_{S/R} ⊗_S T ⟶ NL_{T/R}` is a quasi-isomorphism. The `H₁` half alone is `Algebra.Extension.Cotangent.bijOn_ker_liftBaseChange_map_of_isLocalization`.”.
 
 > **Localizing the target**: for a localization `T = M⁻¹S` of `S` at a multiplicative subset
 > `M ⊆ S`, the canonical map of two-term complexes `NL_{S/R} ⊗_S T ⟶ NL_{T/R}` is a
@@ -743,7 +743,7 @@ theorem isQuasiIso_nlExtensionBaseChangeMap_of_isLocalization (M : Submonoid S) 
 
 [Tag 00S3](https://stacks.math.columbia.edu/tag/00S3) in the Stacks Project.
 
-**`main_theorem_00s3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/TwoTermComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/TwoTermComplex.lean#L155).
+**`main_theorem_00s3`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/TwoTermComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/TwoTermComplex.lean#L155).
 
 > **Stacks Tag 00S3 (Lemma 10.134.14).** Let `R` be a ring and let
 > `A_• : A_1 →[d_A] A_0` and `B_• : B_1 →[d_B] B_0` be two term complexes of
@@ -764,7 +764,7 @@ theorem main_theorem_00s3 (A B : TwoComplex R)
 
 [Tag 00S5](https://stacks.math.columbia.edu/tag/00S5) in the Stacks Project.
 
-**`NaiveCotangent.Conormal.conormal_stable_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean#L269).
+**`NaiveCotangent.Conormal.conormal_stable_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Conormal.lean#L269).
 
 > **Stacks Tag 00S5 (Lemma 10.134.15).** Let `R → S` be a ring map of finite
 > type, and let
@@ -784,7 +784,7 @@ theorem conormal_stable_iso [Algebra.FiniteType R S]
 
 [Tag 00S6](https://stacks.math.columbia.edu/tag/00S6) in the Stacks Project.
 
-**`Algebra.Generators.nonempty_cotangent_baseChange_prod_linearEquiv_of_isLocalizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 819](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L819). The attribute's comment: “The isomorphism is non-canonical: `Nonempty` of a linear equivalence is the whole statement. See the module docstring.”.
+**`Algebra.Generators.nonempty_cotangent_baseChange_prod_linearEquiv_of_isLocalizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 819](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L819). The attribute's comment: “The isomorphism is non-canonical: `Nonempty` of a linear equivalence is the whole statement. See the module docstring.”.
 
 > **The conormal module up to free summands, after localizing at an element**: let `R → S` be
 > a ring map, let `g ∈ S` and let `S_g` be a localization of `S` away from `g`. Let
@@ -807,4 +807,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.134, Tag 00S0](https://stacks.math.columbia.edu/tag/00S0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

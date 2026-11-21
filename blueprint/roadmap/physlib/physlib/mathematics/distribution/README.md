@@ -1,6 +1,6 @@
 # Distribution
 
-The folder [Physlib/Mathematics/Distribution/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution): 2 modules, an article each, in path order.
+The folder [Physlib/Mathematics/Distribution/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution): 2 modules, an article each, in path order.
 
 - [Physlib.Mathematics.Distribution.PowMul](powmul.md)
 - [Distributions](tempereddistribution.md)

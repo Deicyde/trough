@@ -7,11 +7,11 @@ proof: formalized
 
 # Shifted Substitution for Guruswami-Sudan Root Search
 
-`CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution`, in [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution`, in [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean), by Valerii Huhnin.
 
 > Executable substitution of `Y = f(X) + X^t Y` in bivariate polynomials.
 
-`CompPoly.GuruswamiSudan.shiftPolynomialByXPower` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L23))
+`CompPoly.GuruswamiSudan.shiftPolynomialByXPower` (definition, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L23))
 
 > Multiply a univariate polynomial by `X^t`.
 
@@ -21,7 +21,7 @@ def shiftPolynomialByXPower {F : Type*}
     (p : CPolynomial F) (t : Nat) : CPolynomial F
 ```
 
-`CompPoly.GuruswamiSudan.shiftedSubstitutionCoeffTerm` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L30))
+`CompPoly.GuruswamiSudan.shiftedSubstitutionCoeffTerm` (definition, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L30))
 
 > The contribution of one `Y^y` coefficient to `Y^r` after substituting
 > `Y = f(X) + X^t Y`.
@@ -32,7 +32,7 @@ def shiftedSubstitutionCoeffTerm {F : Type*}
     (coeffY f : CPolynomial F) (t y r : Nat) : CPolynomial F
 ```
 
-`CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerY` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L37))
+`CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerY` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L37))
 
 > Substitute `Y = f(X) + X^t Y` into a bivariate polynomial.
 
@@ -42,7 +42,7 @@ def substituteYPolynomialPlusXPowerY {F : Type*}
     (Q : CBivariate F) (f : CPolynomial F) (t : Nat) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerYTruncated` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L53))
+`CompPoly.GuruswamiSudan.substituteYPolynomialPlusXPowerYTruncated` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean#L53))
 
 > Truncated substitution `Y = f(X) + X^t Y`, keeping only `X`-degree `< N`
 > after each accumulated `Y`-coefficient contribution.
@@ -59,5 +59,5 @@ def substituteYPolynomialPlusXPowerYTruncated {F : Type*}
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Root/ShiftedSubstitution.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Root.ShiftedSubstitution.json)

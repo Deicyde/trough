@@ -8,7 +8,7 @@ proof: formalized
 
 # Pheno constrained charge spectra
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean): 15 declarations, 4 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean): 15 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained`
 
 ## A. Phenomenological constrained charge spectra
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrained`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L76).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrained`**, a def, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L76).
 
 > A charge is pheno-constrained if it leads to the presence of any term causing proton decay
 > ` {W1, Λ, W2, K1}` or R-parity violation `{β, Λ, W2, W4, K1, K2}`.
@@ -48,7 +48,7 @@ def IsPhenoConstrained (x : ChargeSpectrum 𝓩) : Prop
 
 ### A.1. Decidability of `IsPhenoConstrained`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrained`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L86).
+**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrained`**, an instance, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L86).
 
 ```lean
 instance decidableIsPhenoConstrained [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) :
@@ -59,7 +59,7 @@ instance decidableIsPhenoConstrained [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩
 
 > The empty charge spectrum does not allow any terms, and so is not pheno-constrained.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.not_isPhenoConstrained_empty`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L100).
+**`SuperSymmetry.SU5.ChargeSpectrum.not_isPhenoConstrained_empty`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L100).
 
 ```lean
 lemma not_isPhenoConstrained_empty :
@@ -71,7 +71,7 @@ lemma not_isPhenoConstrained_empty :
 > If a charge spectrum `x` is pheno-constrained, then any charge spectrum `y` containing `x`
 > is also pheno-constrained.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_mono`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L113).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_mono`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L113).
 
 ```lean
 lemma isPhenoConstrained_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y)
@@ -80,7 +80,7 @@ lemma isPhenoConstrained_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y)
 
 ## B. Charges of pheno-constraining terms in the super potential
 
-**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L128).
+**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L128).
 
 > The collection of charges of super-potential terms leading to a pheno-constrained model.
 
@@ -90,7 +90,7 @@ def phenoConstrainingChargesSP (x : ChargeSpectrum 𝓩) : Multiset 𝓩
 
 ### B.1. The empty charge spectrum has an empty set of pheno-constraining term charges
 
-**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP_empty`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L139).
+**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP_empty`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L139).
 
 ```lean
 lemma phenoConstrainingChargesSP_empty :
@@ -99,7 +99,7 @@ lemma phenoConstrainingChargesSP_empty :
 
 ### B.2. The charges of pheno-constraining terms in the SP is monotone
 
-**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP_mono`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L148).
+**`SuperSymmetry.SU5.ChargeSpectrum.phenoConstrainingChargesSP_mono`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L148).
 
 ```lean
 lemma phenoConstrainingChargesSP_mono [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) :
@@ -111,7 +111,7 @@ lemma phenoConstrainingChargesSP_mono [DecidableEq 𝓩] {x y : ChargeSpectrum �
 > We now define `IsPhenoConstrainedQ5` which gives the condition that a charge spectrum becomes
 > pheno-constrained after adding a single charge to the `Q5` set.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrainedQ5`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L171).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrainedQ5`**, a def, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L171).
 
 > The proposition which is true if the addition of a charge `q5` to a set of charge `x` leads
 > `x` to being phenomenologically constrained.
@@ -122,7 +122,7 @@ def IsPhenoConstrainedQ5 [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q5 : 𝓩
 
 ### C.2. Reducing the condition `IsPhenoConstrainedQ5`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrainedQ5_iff`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L182).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrainedQ5_iff`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L182).
 
 ```lean
 lemma isPhenoConstrainedQ5_iff [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q5 : 𝓩) :
@@ -133,7 +133,7 @@ lemma isPhenoConstrainedQ5_iff [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q5 
 
 ### C.3. Decidability of `IsPhenoConstrainedQ5`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrainedQ5`**, an instance, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L194).
+**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrainedQ5`**, an instance, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L194).
 
 ```lean
 instance decidableIsPhenoConstrainedQ5 [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q5 : 𝓩) :
@@ -142,7 +142,7 @@ instance decidableIsPhenoConstrainedQ5 [DecidableEq 𝓩] (x : ChargeSpectrum �
 
 ### C.4. Charge spectra with added `Q5` charge is pheno-constrained iff
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_insertQ5_iff_isPhenoConstrainedQ5`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L204).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_insertQ5_iff_isPhenoConstrainedQ5`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L204).
 
 ```lean
 lemma isPhenoConstrained_insertQ5_iff_isPhenoConstrainedQ5 [DecidableEq 𝓩] {qHd qHu : Option 𝓩}
@@ -157,7 +157,7 @@ lemma isPhenoConstrained_insertQ5_iff_isPhenoConstrainedQ5 [DecidableEq 𝓩] {q
 > We now define `IsPhenoConstrainedQ10` which gives the condition that a charge spectrum becomes
 > pheno-constrained after adding a single charge to the `Q10` set.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrainedQ10`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L238).
+**`SuperSymmetry.SU5.ChargeSpectrum.IsPhenoConstrainedQ10`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L238).
 
 > The proposition which is true if the addition of a charge `q10` to a set of charges `x` leads
 > `x` to being phenomenologically constrained.
@@ -168,7 +168,7 @@ def IsPhenoConstrainedQ10 [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q10 : �
 
 ### D.2. Reducing the condition `IsPhenoConstrainedQ10`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrainedQ10_iff`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L249).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrainedQ10_iff`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L249).
 
 ```lean
 lemma isPhenoConstrainedQ10_iff [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q10 : 𝓩) :
@@ -178,7 +178,7 @@ lemma isPhenoConstrainedQ10_iff [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q1
 
 ### D.3. Decidability of `IsPhenoConstrainedQ10`
 
-**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrainedQ10`**, an instance, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L260).
+**`SuperSymmetry.SU5.ChargeSpectrum.decidableIsPhenoConstrainedQ10`**, an instance, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L260).
 
 ```lean
 instance decidableIsPhenoConstrainedQ10 [DecidableEq 𝓩] (x : ChargeSpectrum 𝓩) (q10 : 𝓩) :
@@ -187,7 +187,7 @@ instance decidableIsPhenoConstrainedQ10 [DecidableEq 𝓩] (x : ChargeSpectrum �
 
 ### D.4. Charge spectra with added `Q10` charge is pheno-constrained iff
 
-**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_insertQ10_iff_isPhenoConstrainedQ10`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L270).
+**`SuperSymmetry.SU5.ChargeSpectrum.isPhenoConstrained_insertQ10_iff_isPhenoConstrainedQ10`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean#L270).
 
 ```lean
 lemma isPhenoConstrained_insertQ10_iff_isPhenoConstrainedQ10 [DecidableEq 𝓩] {qHd qHu : Option 𝓩}
@@ -203,4 +203,4 @@ lemma isPhenoConstrained_insertQ10_iff_isPhenoConstrainedQ10 [DecidableEq 𝓩] 
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean)

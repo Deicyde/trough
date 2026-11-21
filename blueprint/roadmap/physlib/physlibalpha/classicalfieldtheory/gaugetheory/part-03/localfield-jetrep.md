@@ -8,7 +8,7 @@ proof: formalized
 
 # Fibrewise actions on `V`-valued jets
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.JetRep`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean): 19 declarations, 19 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.JetRep`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean): 19 declarations, 19 with a docstring.
 
 ## i. Overview
 
@@ -48,7 +48,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.JetRep`, [P
 
 > * None.
 
-**`JetComponentSpace.rep_tmul_of_smul_comm`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L76).
+**`JetComponentSpace.rep_tmul_of_smul_comm`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L76).
 
 > **A fibrewise action is determined by its values on constant jets.** If the gauge
 > action commutes with multiplication by scalar jets — the statement that it acts on the
@@ -64,7 +64,7 @@ lemma rep_tmul_of_smul_comm
     rep U (f ⊗ₜ[ℂ] v) = f • rep U (jetOfConstant v)
 ```
 
-**`JetComponentSpace.lift_mul_tmul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L89).
+**`JetComponentSpace.lift_mul_tmul`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L89).
 
 > **The canonical evaluation is a right module map.** Writing `ev` for the canonical
 > `SpaceTimeAlgebra ⊗ End V → (V →ₗ SpaceTimeAlgebra ⊗ V)`, `g ⊗ T ↦ (v ↦ g ⊗ₜ T v)`, multiplying on
@@ -79,7 +79,7 @@ lemma lift_mul_tmul (x : SpaceTimeAlgebra ⊗[ℂ] Module.End ℂ V)
         (TensorProduct.mk ℂ SpaceTimeAlgebra V)) x (T v)
 ```
 
-**`JetComponentSpace.rep_lift_of_smul_comm`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L109).
+**`JetComponentSpace.rep_lift_of_smul_comm`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L109).
 
 > **A fibrewise action is the `SpaceTimeAlgebra`-linear extension of its coefficient.** If the
 > element `x` of `SpaceTimeAlgebra ⊗ End V` records `rep U` on constant jets, then `rep U` agrees
@@ -100,7 +100,7 @@ lemma rep_lift_of_smul_comm
         (TensorProduct.mk ℂ SpaceTimeAlgebra V)) (x * y) v
 ```
 
-**`JetComponentSpace.coeff_mul_of_smul_comm`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L136).
+**`JetComponentSpace.coeff_mul_of_smul_comm`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L136).
 
 > **The coefficient of a fibrewise action is multiplicative.** Recording `rep` on
 > constant jets as a family `c` in `SpaceTimeAlgebra ⊗ End V`, group multiplication becomes
@@ -122,7 +122,7 @@ lemma coeff_mul_of_smul_comm
       = rep (U * W) (jetOfConstant v)
 ```
 
-**`JetComponentSpace.symbolAction_mul`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L158).
+**`JetComponentSpace.symbolAction_mul`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L158).
 
 > **The symbol action of a coefficient is an anti-homomorphism.** Let `Θ` send a
 > coefficient `g ⊗ T` in `SpaceTimeAlgebra ⊗ End V` to the endomorphism `jetRingAction g ⊗ Tᵀ` of
@@ -143,7 +143,7 @@ lemma symbolAction_mul
     Θ (x * y) = Θ y ∘ₗ Θ x
 ```
 
-**`JetComponentSpace.lift_congr_leftComm`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L187).
+**`JetComponentSpace.lift_congr_leftComm`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L187).
 
 > **The coefficient of a linear map, canonically.** For finite-dimensional `V` the canonical
 > `SpaceTimeAlgebra ⊗ (V →ₗ W) → (V →ₗ SpaceTimeAlgebra ⊗ W)` is inverted by reassociating the
@@ -162,7 +162,7 @@ lemma lift_congr_leftComm [Module.Free ℂ V] [Module.Finite ℂ V]
       = dualTensorHom ℂ V (SpaceTimeAlgebra ⊗[ℂ] W) G v
 ```
 
-**`JetComponentSpace.repConj`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L226).
+**`JetComponentSpace.repConj`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L226).
 
 > **The conjugate jet action.** Given a gauge action on the jets of a `V`-valued field,
 > this is the induced action on the jets of the *conjugate* field.
@@ -185,7 +185,7 @@ noncomputable def repConj (rep : Representation ℂ G (SpaceTimeAlgebra ⊗[ℂ]
     Representation ℂ G (SpaceTimeAlgebra ⊗[ℂ] ConjModule V)
 ```
 
-**`JetComponentSpace.repConj_apply_tmul`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L238).
+**`JetComponentSpace.repConj_apply_tmul`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L238).
 
 > On pure tensors the conjugate jet action conjugates the jet factor: it is `rep`
 > evaluated at `star f ⊗ₜ v`, read back through the same identification.
@@ -199,7 +199,7 @@ lemma repConj_apply_tmul (rep : Representation ℂ G (SpaceTimeAlgebra ⊗[ℂ] 
         (conjEquiv (k := ℂ) (M := SpaceTimeAlgebra ⊗[ℂ] V) (rep U (star f ⊗ₜ[ℂ] v)))
 ```
 
-**`JetComponentSpace.tensorEquiv_congr_conjEquiv_smul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L248).
+**`JetComponentSpace.tensorEquiv_congr_conjEquiv_smul`**, a lemma, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L248).
 
 > **The identification conjugates the jet-ring action.** Carrying a `V`-valued jet over
 > to the conjugate side turns multiplication by `star χ` into multiplication by `χ`: the
@@ -215,7 +215,7 @@ lemma tensorEquiv_congr_conjEquiv_smul (χ : SpaceTimeAlgebra) (y : SpaceTimeAlg
           (conjEquiv (k := ℂ) (M := SpaceTimeAlgebra ⊗[ℂ] V) y)
 ```
 
-**`JetComponentSpace.repConj_apply_conjEquiv`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L269).
+**`JetComponentSpace.repConj_apply_conjEquiv`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L269).
 
 > The conjugate jet action is the original one, read through the identification. On
 > a jet carried over to the conjugate side, `repConj rep U` is `rep U` applied on the
@@ -233,7 +233,7 @@ lemma repConj_apply_conjEquiv (rep : Representation ℂ G (SpaceTimeAlgebra ⊗[
         (conjEquiv (k := ℂ) (M := SpaceTimeAlgebra ⊗[ℂ] V) (rep U y))
 ```
 
-**`JetComponentSpace.repConj_smul_comm`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L292).
+**`JetComponentSpace.repConj_smul_comm`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L292).
 
 > **The conjugate jet action is fibrewise-linear whenever the original is.** This is
 > what lets the coefficient machinery of `coeff_mul_of_smul_comm` be instantiated at
@@ -248,7 +248,7 @@ lemma repConj_smul_comm
     repConj rep U (χ • z) = χ • repConj rep U z
 ```
 
-**`JetComponentSpace.lTensor_conjEquiv_naturality`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L313).
+**`JetComponentSpace.lTensor_conjEquiv_naturality`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L313).
 
 > The identification of the conjugate of the jets with the jets of the conjugate is
 > natural in the value space. A linear map of value spaces acts on either side by the same
@@ -266,7 +266,7 @@ lemma lTensor_conjEquiv_naturality (f : V →ₗ[ℂ] W) (y : SpaceTimeAlgebra �
             ((LinearMap.lTensor SpaceTimeAlgebra f) y))
 ```
 
-**`JetComponentSpace.lTensor_comp_repConj`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L335).
+**`JetComponentSpace.lTensor_comp_repConj`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L335).
 
 > The conjugate jet action is natural in the value space. A linear map of value
 > spaces intertwining two fibrewise jet actions intertwines the actions on the jets of the
@@ -283,7 +283,7 @@ lemma lTensor_comp_repConj (repV : Representation ℂ G (SpaceTimeAlgebra ⊗[�
       = (repConj repW U).comp (LinearMap.lTensor SpaceTimeAlgebra (ConjModule.map (k := ℂ) f))
 ```
 
-**`JetComponentSpace.lift_injective`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L357).
+**`JetComponentSpace.lift_injective`**, a lemma, [line 357](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L357).
 
 > **The coefficient is determined by its action on constants.** For finite-dimensional `V` the
 > canonical evaluation `SpaceTimeAlgebra ⊗ (V →ₗ W) → (V →ₗ SpaceTimeAlgebra ⊗ W)` is injective.
@@ -297,7 +297,7 @@ lemma lift_injective [Module.Free ℂ V] [Module.Finite ℂ V]
       (TensorProduct.mk ℂ SpaceTimeAlgebra W)) y v) : x = y
 ```
 
-**`JetComponentSpace.jetCoeff`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L381).
+**`JetComponentSpace.jetCoeff`**, a def, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L381).
 
 > **The coefficient of a fibrewise gauge action.** For finite-dimensional `V`, the
 > restriction of `rep U` to constant jets is an element of `SpaceTimeAlgebra ⊗ End V` — a matrix of
@@ -309,7 +309,7 @@ noncomputable def jetCoeff [Module.Free ℂ V] [Module.Finite ℂ V]
     SpaceTimeAlgebra ⊗[ℂ] Module.End ℂ V
 ```
 
-**`JetComponentSpace.jetCoeff_spec`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L389).
+**`JetComponentSpace.jetCoeff_spec`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L389).
 
 > The coefficient reproduces `rep U` on constant jets.
 
@@ -328,7 +328,7 @@ lemma jetCoeff_spec [Module.Free ℂ V] [Module.Finite ℂ V]
 > postcomposition with `f` and `SpaceTimeAlgebra ⊗ End W` by precomposition. The two images agree, and
 > that single identity is what carries the gauge action across a map of value spaces.
 
-**`JetComponentSpace.lift_lTensor_llcomp`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L413).
+**`JetComponentSpace.lift_lTensor_llcomp`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L413).
 
 > Postcomposing a coefficient with `f` evaluates as applying `f` to the value.
 
@@ -342,7 +342,7 @@ lemma lift_lTensor_llcomp (f : V →ₗ[ℂ] W) (x : SpaceTimeAlgebra ⊗[ℂ] M
           (TensorProduct.mk ℂ SpaceTimeAlgebra V)) x v)
 ```
 
-**`JetComponentSpace.lift_lTensor_lcomp`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L426).
+**`JetComponentSpace.lift_lTensor_lcomp`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L426).
 
 > Precomposing a coefficient with `f` evaluates as evaluating at the image of the
 > argument.
@@ -356,7 +356,7 @@ lemma lift_lTensor_lcomp (f : V →ₗ[ℂ] W) (y : SpaceTimeAlgebra ⊗[ℂ] Mo
         (TensorProduct.mk ℂ SpaceTimeAlgebra W)) y (f v)
 ```
 
-**`JetComponentSpace.jetCoeff_naturality`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L442).
+**`JetComponentSpace.jetCoeff_naturality`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean#L442).
 
 > The coefficient of a fibrewise action is natural in the value space. If `f` maps
 > the values of one field to the values of another and intertwines their jet actions, then
@@ -384,4 +384,4 @@ lemma jetCoeff_naturality [Module.Free ℂ V] [Module.Finite ℂ V]
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean)

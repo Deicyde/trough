@@ -8,7 +8,7 @@ proof: formalized
 
 # The magnetic field around a infinite wire
 
-The module `Physlib.Electromagnetism.Current.InfiniteWire`, [Physlib/Electromagnetism/Current/InfiniteWire.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean): 15 declarations, 2 with a docstring.
+The module `Physlib.Electromagnetism.Current.InfiniteWire`, [Physlib/Electromagnetism/Current/InfiniteWire.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean): 15 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -34,7 +34,7 @@ The module `Physlib.Electromagnetism.Current.InfiniteWire`, [Physlib/Electromagn
 >
 > $$J(t, x, y, z) = (0, I δ((y, z)), 0, 0).$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L64).
+**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity`**, a def, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L65).
 
 > The current density associated with an infinite wire carrying a current `I`
 > along the `x`-axis.
@@ -44,14 +44,14 @@ noncomputable def wireCurrentDensity (c : SpeedOfLight) :
     ℝ →ₗ[ℝ] TempDistLorentzCurrentDensity 3
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_chargeDesnity`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L74).
+**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_chargeDesnity`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L75).
 
 ```lean
 lemma wireCurrentDensity_chargeDesnity (c : SpeedOfLight) (I : ℝ) :
     (wireCurrentDensity c I).chargeDensity c = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_fst`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L80).
+**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_fst`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L81).
 
 ```lean
 lemma wireCurrentDensity_currentDensity_fst (c : SpeedOfLight) (I : ℝ)
@@ -62,7 +62,7 @@ lemma wireCurrentDensity_currentDensity_fst (c : SpeedOfLight) (I : ℝ)
     I • diracDelta ℝ 0) η
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_snd`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L90).
+**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_snd`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L91).
 
 ```lean
 lemma wireCurrentDensity_currentDensity_snd (c : SpeedOfLight) (I : ℝ)
@@ -70,7 +70,7 @@ lemma wireCurrentDensity_currentDensity_snd (c : SpeedOfLight) (I : ℝ)
     (wireCurrentDensity c I).currentDensity c ε 1 = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_thrd`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L97).
+**`Electromagnetism.TempDistElectromagneticPotential.wireCurrentDensity_currentDensity_thrd`**, a lemma, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L98).
 
 ```lean
 lemma wireCurrentDensity_currentDensity_thrd (c : SpeedOfLight) (I : ℝ)
@@ -85,7 +85,7 @@ lemma wireCurrentDensity_currentDensity_thrd (c : SpeedOfLight) (I : ℝ)
 >
 > $$A(t, x, y, z) = \left(0, -\frac{μ_0 I}{2\pi} \log (\sqrt{y^2 + z^2}), 0, 0\right).$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L114).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire`**, a def, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L115).
 
 > The electromagnetic potential of an infinite wire along the x-axis carrying a current `I`.
 
@@ -100,7 +100,7 @@ noncomputable def infiniteWire (𝓕 : FreeSpace) (I : ℝ) :
 >
 > $$V(t, x, y, z) = 0.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_scalarPotential`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L134).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_scalarPotential`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L135).
 
 ```lean
 lemma infiniteWire_scalarPotential (𝓕 : FreeSpace) (I : ℝ) :
@@ -117,7 +117,7 @@ lemma infiniteWire_scalarPotential (𝓕 : FreeSpace) (I : ℝ) :
 > and the spatial derivative $\partial_x \vec A$ is also zero, as expected for
 > a system with translational symmetry along the x-axis.
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L153).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L154).
 
 ```lean
 lemma infiniteWire_vectorPotential (𝓕 : FreeSpace) (I : ℝ) :
@@ -129,7 +129,7 @@ lemma infiniteWire_vectorPotential (𝓕 : FreeSpace) (I : ℝ) :
     (by apply (IsDistBounded.log_norm (by norm_num)).smul_const)))
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_fst`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L165).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_fst`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L166).
 
 ```lean
 lemma infiniteWire_vectorPotential_fst (𝓕 : FreeSpace) (I : ℝ)(η : 𝓢(Time × Space 3, ℝ)) :
@@ -140,28 +140,28 @@ lemma infiniteWire_vectorPotential_fst (𝓕 : FreeSpace) (I : ℝ)(η : 𝓢(Ti
     (IsDistBounded.log_norm)) η
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_snd`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L175).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_snd`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L176).
 
 ```lean
 lemma infiniteWire_vectorPotential_snd (𝓕 : FreeSpace) (I : ℝ) :
     (infiniteWire 𝓕 I).vectorPotential 𝓕.c η 1 = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_thrd`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L181).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_thrd`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L182).
 
 ```lean
 lemma infiniteWire_vectorPotential_thrd (𝓕 : FreeSpace) (I : ℝ) :
     (infiniteWire 𝓕 I).vectorPotential 𝓕.c η 2 = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_distTimeDeriv`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L187).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_distTimeDeriv`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L188).
 
 ```lean
 lemma infiniteWire_vectorPotential_distTimeDeriv (𝓕 : FreeSpace) (I : ℝ) :
     distTimeDeriv ((infiniteWire 𝓕 I).vectorPotential 𝓕.c) = 0
 ```
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_distSpaceDeriv_0`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L194).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_vectorPotential_distSpaceDeriv_0`**, a lemma, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L195).
 
 ```lean
 lemma infiniteWire_vectorPotential_distSpaceDeriv_0 (𝓕 : FreeSpace) (I : ℝ) :
@@ -174,7 +174,7 @@ lemma infiniteWire_vectorPotential_distSpaceDeriv_0 (𝓕 : FreeSpace) (I : ℝ)
 >
 > $$\vec E(t, x, y, z) = 0.$$
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_electricField`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L210).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_electricField`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L211).
 
 ```lean
 lemma infiniteWire_electricField (𝓕 : FreeSpace) (I : ℝ) :
@@ -183,7 +183,7 @@ lemma infiniteWire_electricField (𝓕 : FreeSpace) (I : ℝ) :
 
 ## D. Maxwell's equations
 
-**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_isExterma`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean#L222).
+**`Electromagnetism.TempDistElectromagneticPotential.infiniteWire_isExterma`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean#L223).
 
 ```lean
 lemma infiniteWire_isExterma {𝓕 : FreeSpace} {I : ℝ} :
@@ -201,4 +201,4 @@ lemma infiniteWire_isExterma {𝓕 : FreeSpace} {I : ℝ} :
 
 ## Sources
 
-- [Physlib/Electromagnetism/Current/InfiniteWire.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Current/InfiniteWire.lean)
+- [Physlib/Electromagnetism/Current/InfiniteWire.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Current/InfiniteWire.lean)

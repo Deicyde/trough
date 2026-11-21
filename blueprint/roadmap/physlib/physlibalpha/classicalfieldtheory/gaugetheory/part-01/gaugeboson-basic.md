@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge-boson field of a gauge theory
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean): 15 declarations (3 instances with no name), 7 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean): 15 declarations (3 instances with no name), 7 with a docstring.
 
 ## i. Overview
 
@@ -39,7 +39,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Basic`, [Ph
 
 ## A. The target space of the gauge-boson field
 
-**`GaugeBoson`**, a structure, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L69).
+**`GaugeBoson`**, a structure, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L69).
 
 > The target vector space of the gauge-boson field: a spacetime covector
 > with values in the gauge algebra. Its components are the fields `A_μ^a`; here the
@@ -53,7 +53,7 @@ structure GaugeBoson where
 
 ### A.1. Linear structure
 
-**`GaugeBoson.valEquiv`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L83).
+**`GaugeBoson.valEquiv`**, a def, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L83).
 
 > Identifies a gauge boson with its underlying tensor-product value.
 
@@ -61,19 +61,19 @@ structure GaugeBoson where
 def valEquiv : (GaugeBoson 𝔤) ≃ Lorentz.CoVector ⊗[ℝ] 𝔤
 ```
 
-**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L87).
+**An instance with no name**, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L87).
 
 ```lean
 noncomputable instance : AddCommGroup (GaugeBoson 𝔤)
 ```
 
-**An instance with no name**, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L89).
+**An instance with no name**, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L89).
 
 ```lean
 noncomputable instance : Module ℝ (GaugeBoson 𝔤)
 ```
 
-**`GaugeBoson.valLinEquiv`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L94).
+**`GaugeBoson.valLinEquiv`**, a def, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L94).
 
 > The linear identification with the underlying tensor product.
 
@@ -81,32 +81,32 @@ noncomputable instance : Module ℝ (GaugeBoson 𝔤)
 def valLinEquiv : (GaugeBoson 𝔤) ≃ₗ[ℝ] Lorentz.CoVector ⊗[ℝ] 𝔤
 ```
 
-**`GaugeBoson.valLinEquiv_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L102).
+**`GaugeBoson.valLinEquiv_apply`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L102).
 
 ```lean
 lemma valLinEquiv_apply (v : (GaugeBoson 𝔤)) : (valLinEquiv 𝔤) v = v.val
 ```
 
-**`GaugeBoson.valLinEquiv_symm_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L105).
+**`GaugeBoson.valLinEquiv_symm_apply`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L105).
 
 ```lean
 lemma valLinEquiv_symm_apply (m : Lorentz.CoVector ⊗[ℝ] 𝔤) :
     (valLinEquiv 𝔤).symm m = ⟨m⟩
 ```
 
-**`GaugeBoson.val_add`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L110).
+**`GaugeBoson.val_add`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L110).
 
 ```lean
 lemma val_add (v₁ v₂ : (GaugeBoson 𝔤)) : (v₁ + v₂).val = v₁.val + v₂.val
 ```
 
-**`GaugeBoson.val_smul`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L114).
+**`GaugeBoson.val_smul`**, a lemma, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L114).
 
 ```lean
 lemma val_smul (r : ℝ) (v : (GaugeBoson 𝔤)) : (r • v).val = r • v.val
 ```
 
-**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L116).
+**An instance with no name**, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L116).
 
 ```lean
 instance : Module.Finite ℝ (GaugeBoson 𝔤)
@@ -114,7 +114,7 @@ instance : Module.Finite ℝ (GaugeBoson 𝔤)
 
 ### A.2. The Lorentz action on the target space
 
-**`GaugeBoson.repLorentzGroup`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L130).
+**`GaugeBoson.repLorentzGroup`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L130).
 
 > The Lorentz action on the gauge-boson target space: the covector action on the
 > spacetime index, and the trivial action on the gauge-algebra factor.
@@ -125,7 +125,7 @@ noncomputable def repLorentzGroup : Representation ℝ SL(2,ℂ) (GaugeBoson �
 
 ### A.3. The global gauge action on the target space
 
-**`GaugeBoson.repValue`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L153).
+**`GaugeBoson.repValue`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L153).
 
 > The global gauge action on the gauge-boson target space: the adjoint action on the
 > gauge-algebra factor, and the trivial action on the spacetime index.
@@ -137,7 +137,7 @@ noncomputable def repValue {G₀ : Type} [Monoid G₀] (ρ : Representation ℝ 
 
 ## B. The jet component space
 
-**`GaugeBoson.JetComponentSpace`**, an abbrev, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L181).
+**`GaugeBoson.JetComponentSpace`**, an abbrev, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L181).
 
 > The jet component space of the gauge-boson field: the span of the component functions
 > `∂_s A_μ^φ`. The `SpaceTimeDerivAlgebraℝ` factor carries the derivative label `s`, and the
@@ -151,7 +151,7 @@ abbrev JetComponentSpace : Type
 
 ### B.1. The component covectors
 
-**`GaugeBoson.componentDual`**, a def, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L193).
+**`GaugeBoson.componentDual`**, a def, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L193).
 
 > The covector on the gauge-boson target space pairing the spacetime index against a
 > covector `ω` and the adjoint index against `φ`.
@@ -162,7 +162,7 @@ noncomputable def componentDual :
       Module.Dual ℝ 𝔤 →ₗ[ℝ] Module.Dual ℝ (GaugeBoson 𝔤)
 ```
 
-**`GaugeBoson.componentDual_apply_val_tmul`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L210).
+**`GaugeBoson.componentDual_apply_val_tmul`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean#L210).
 
 ```lean
 lemma componentDual_apply_val_tmul (ω : Module.Dual ℝ Lorentz.CoVector)
@@ -176,4 +176,4 @@ lemma componentDual_apply_val_tmul (ω : Module.Dual ℝ Lorentz.CoVector)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Basic.lean)

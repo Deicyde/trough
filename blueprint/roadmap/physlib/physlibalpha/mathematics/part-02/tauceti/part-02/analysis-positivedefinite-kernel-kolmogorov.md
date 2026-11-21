@@ -8,7 +8,7 @@ proof: formalized
 
 # Kolmogorov decomposition of a positive-definite kernel
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Kernel.Kolmogorov`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean): 15 declarations, 14 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Kernel.Kolmogorov`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean): 15 declarations, 14 with a docstring; 1 private, not shown.
 
 > This file constructs the canonical Hilbert-space realization of a scalar-valued positive-definite
 > kernel.
@@ -50,7 +50,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Kernel.Ko
 
 ## A. Development
 
-**`TauCeti.positiveDefiniteKernelOperator`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L73).
+**`TauCeti.positiveDefiniteKernelOperator`**, a def, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L73).
 
 > A scalar kernel regarded as an operator-valued kernel on the one-dimensional Hilbert space
 > `𝕜`: the entry at `(a, b)` is left multiplication by `K a b`.
@@ -60,14 +60,14 @@ noncomputable def positiveDefiniteKernelOperator (K : α → α → 𝕜) :
     Matrix α α (𝕜 →L[𝕜] 𝕜)
 ```
 
-**`TauCeti.positiveDefiniteKernelOperator_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L78).
+**`TauCeti.positiveDefiniteKernelOperator_apply`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L78).
 
 ```lean
 lemma positiveDefiniteKernelOperator_apply (K : α → α → 𝕜) (a b : α) (z : 𝕜) :
     positiveDefiniteKernelOperator K a b z = K a b * z
 ```
 
-**`TauCeti.posSemidef_positiveDefiniteKernelOperator`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L88).
+**`TauCeti.posSemidef_positiveDefiniteKernelOperator`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L88).
 
 > The operator-valued kernel obtained from a scalar positive-definite kernel is positive
 > semidefinite.  This is the bridge needed by Mathlib's `RKHS.OfKernel` construction.
@@ -77,7 +77,7 @@ lemma posSemidef_positiveDefiniteKernelOperator (hK : Matrix.PosSemidef K) :
     (positiveDefiniteKernelOperator K).PosSemidef
 ```
 
-**`Matrix.PosSemidef.KolmogorovSpace`**, an abbrev, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L135).
+**`Matrix.PosSemidef.KolmogorovSpace`**, an abbrev, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L135).
 
 > The canonical Hilbert space in the Kolmogorov decomposition of `K`.
 >
@@ -88,7 +88,7 @@ lemma posSemidef_positiveDefiniteKernelOperator (hK : Matrix.PosSemidef K) :
 noncomputable abbrev KolmogorovSpace (hK : Matrix.PosSemidef K)
 ```
 
-**`Matrix.PosSemidef.kolmogorovFeature`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L142).
+**`Matrix.PosSemidef.kolmogorovFeature`**, a def, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L142).
 
 > The canonical feature map into the Kolmogorov space.  It sends `a` to the reproducing-kernel
 > vector at `a`, evaluated on the scalar `1`.
@@ -98,7 +98,7 @@ noncomputable def kolmogorovFeature (hK : Matrix.PosSemidef K) (a : α) :
     KolmogorovSpace hK
 ```
 
-**`Matrix.PosSemidef.inner_kolmogorovFeature`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L151).
+**`Matrix.PosSemidef.inner_kolmogorovFeature`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L151).
 
 > **Kolmogorov identity.** Inner products of the canonical feature vectors recover the
 > original kernel.
@@ -108,7 +108,7 @@ lemma inner_kolmogorovFeature (hK : Matrix.PosSemidef K) (a b : α) :
     ⟪kolmogorovFeature hK a, kolmogorovFeature hK b⟫_𝕜 = K a b
 ```
 
-**`Matrix.PosSemidef.norm_kolmogorovFeature_sq`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L165).
+**`Matrix.PosSemidef.norm_kolmogorovFeature_sq`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L165).
 
 > The squared norm of a canonical feature vector is the real part of the corresponding
 > diagonal kernel value.
@@ -118,7 +118,7 @@ lemma norm_kolmogorovFeature_sq (hK : Matrix.PosSemidef K) (a : α) :
     ‖kolmogorovFeature hK a‖ ^ 2 = RCLike.re (K a a)
 ```
 
-**`Matrix.PosSemidef.norm_kolmogorovFeature_sub_sq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L172).
+**`Matrix.PosSemidef.norm_kolmogorovFeature_sub_sq`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L172).
 
 > The squared distance between two canonical feature vectors, expressed entirely in terms of
 > the original kernel.
@@ -129,7 +129,7 @@ lemma norm_kolmogorovFeature_sub_sq (hK : Matrix.PosSemidef K) (a b : α) :
       RCLike.re (K a a) - 2 * RCLike.re (K a b) + RCLike.re (K b b)
 ```
 
-**`Matrix.PosSemidef.kolmogorovFeature_dense`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L180).
+**`Matrix.PosSemidef.kolmogorovFeature_dense`**, a lemma, [line 180](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L180).
 
 > The canonical feature vectors have dense linear span in the Kolmogorov space.  Thus the
 > construction is minimal: it contains no orthogonal summand invisible to the kernel.
@@ -139,7 +139,7 @@ lemma kolmogorovFeature_dense (hK : Matrix.PosSemidef K) :
     (Submodule.span 𝕜 (Set.range (kolmogorovFeature hK))).topologicalClosure = ⊤
 ```
 
-**`Matrix.PosSemidef.kolmogorovIsometry`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L218).
+**`Matrix.PosSemidef.kolmogorovIsometry`**, a def, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L218).
 
 > The unique linear isometry from the canonical Kolmogorov space into any Hilbert-space
 > realization of `K`.  It sends each canonical feature vector to the corresponding vector in the
@@ -151,7 +151,7 @@ noncomputable def kolmogorovIsometry {E : Type w} [NormedAddCommGroup E]
     (hφ : ∀ a b, ⟪φ a, φ b⟫_𝕜 = K a b) : KolmogorovSpace hK →ₗᵢ[𝕜] E
 ```
 
-**`Matrix.PosSemidef.kolmogorovIsometry_apply`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L241).
+**`Matrix.PosSemidef.kolmogorovIsometry_apply`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L241).
 
 > The universal comparison isometry sends canonical feature vectors to the vectors of the
 > given realization.
@@ -163,7 +163,7 @@ lemma kolmogorovIsometry_apply {E : Type w} [NormedAddCommGroup E]
     kolmogorovIsometry hK φ hφ (kolmogorovFeature hK a) = φ a
 ```
 
-**`Matrix.PosSemidef.kolmogorovIsometry_unique`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L259).
+**`Matrix.PosSemidef.kolmogorovIsometry_unique`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L259).
 
 > A linear isometry out of the canonical Kolmogorov space is uniquely determined by its values
 > on the canonical feature vectors.
@@ -175,7 +175,7 @@ lemma kolmogorovIsometry_unique {E : Type w} [NormedAddCommGroup E]
     (hT : ∀ a, T (kolmogorovFeature hK a) = φ a) : T = kolmogorovIsometry hK φ hφ
 ```
 
-**`Matrix.PosSemidef.kolmogorovIsometry_surjective`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L272).
+**`Matrix.PosSemidef.kolmogorovIsometry_surjective`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L272).
 
 > If the vectors in a realization of `K` have dense linear span, the universal comparison
 > isometry is surjective.
@@ -188,7 +188,7 @@ lemma kolmogorovIsometry_surjective {E : Type w} [NormedAddCommGroup E]
     Function.Surjective (kolmogorovIsometry hK φ hφ)
 ```
 
-**`Matrix.PosSemidef.kolmogorovEquiv`**, a def, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L288).
+**`Matrix.PosSemidef.kolmogorovEquiv`**, a def, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L288).
 
 > The canonical Kolmogorov space is linearly isometric to every other minimal realization of
 > the same kernel.
@@ -201,7 +201,7 @@ noncomputable def kolmogorovEquiv {E : Type w} [NormedAddCommGroup E]
     KolmogorovSpace hK ≃ₗᵢ[𝕜] E
 ```
 
-**`Matrix.PosSemidef.kolmogorovEquiv_apply`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L299).
+**`Matrix.PosSemidef.kolmogorovEquiv_apply`**, a lemma, [line 299](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean#L299).
 
 > The equivalence with another minimal realization sends canonical feature vectors to the
 > vectors of that realization.
@@ -224,4 +224,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Kernel/Kolmogorov.lean)

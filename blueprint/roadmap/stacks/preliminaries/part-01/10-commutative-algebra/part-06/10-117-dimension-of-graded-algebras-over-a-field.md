@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.117 Dimension of graded algebras over a field
 
-Section 10.117 of the Stacks Project, [Tag 00P5](https://stacks.math.columbia.edu/tag/00P5). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.117 of the Stacks Project, [Tag 00P5](https://stacks.math.columbia.edu/tag/00P5). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00P6, a lemma
 
 [Tag 00P6](https://stacks.math.columbia.edu/tag/00P6) in the Stacks Project.
 
-**`GradedAlgebra.irrelevant_isMaximal_and_ringKrullDim_eq_localKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/KrullDimension.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GradedAlgebra/KrullDimension.lean#L1003). The attribute's comment: “Items (1)-(4). `S_0 = k` is `𝒜 0 = 1` with `Nontrivial S`; `dim_x Spec(S)` is `TopologicalSpace.localKrullDim` at the point given by `S_+`, also shown equal to its height `dim(S_m)`; the convention `deg 0 = -1` is unfolded into the cases `P = 0`, `P ≠ 0`. See the module docstring.”. References: EGA IV (6.10.5), “special case”.
+**`GradedAlgebra.irrelevant_isMaximal_and_ringKrullDim_eq_localKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/KrullDimension.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/GradedAlgebra/KrullDimension.lean#L1003). The attribute's comment: “Items (1)-(4). `S_0 = k` is `𝒜 0 = 1` with `Nontrivial S`; `dim_x Spec(S)` is `TopologicalSpace.localKrullDim` at the point given by `S_+`, also shown equal to its height `dim(S_m)`; the convention `deg 0 = -1` is unfolded into the cases `P = 0`, `P ≠ 0`. See the module docstring.”. References: EGA IV (6.10.5), “special case”.
 
 > **Stacks 00P6.** Let `k` be a field and let `S` be a graded `k`-algebra with `S_0 = k` that is
 > generated over `k` by finitely many elements of degree `1`. Let `P ∈ ℚ[T]` be the polynomial with
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.117, Tag 00P5](https://stacks.math.columbia.edu/tag/00P5)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

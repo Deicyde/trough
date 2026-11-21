@@ -8,7 +8,7 @@ proof: formalized
 
 # The speed limit of the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.SpeedLimit`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean): 12 declarations, 11 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.SpeedLimit`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean): 12 declarations, 11 with a docstring.
 
 ## i. Overview
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.SpeedLimit`, 
 
 ## A. The largest current
 
-**`CondensedMatter.TightBindingChain.maxCurrent`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L58).
+**`CondensedMatter.TightBindingChain.maxCurrent`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L58).
 
 > The largest current `2 |a t| cos (π / (N + 1))` of the open chain.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.SpeedLimit`, 
 noncomputable def maxCurrent : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.abs_currentEigenvalue_le`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L61).
+**`CondensedMatter.TightBindingChain.abs_currentEigenvalue_le`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L61).
 
 > Every current eigenvalue is at most `maxCurrent` in absolute value.
 
@@ -52,7 +52,7 @@ lemma abs_currentEigenvalue_le {k : ℕ} (hk : 1 ≤ k) (hkN : k ≤ T.N) :
 
 ## B. The basis of current eigenstates
 
-**`CondensedMatter.TightBindingChain.currentBasisVec`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L90).
+**`CondensedMatter.TightBindingChain.currentBasisVec`**, a def, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L90).
 
 > The normalized current eigenstates `ψ_{k+1}`, `k < N`.
 
@@ -60,13 +60,13 @@ lemma abs_currentEigenvalue_le {k : ℕ} (hk : 1 ≤ k) (hkN : k ≤ T.N) :
 noncomputable def currentBasisVec (k : Fin T.N) : T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.norm_currentBasisVec`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L93).
+**`CondensedMatter.TightBindingChain.norm_currentBasisVec`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L93).
 
 ```lean
 lemma norm_currentBasisVec (k : Fin T.N) : ‖T.currentBasisVec k‖ = 1
 ```
 
-**`CondensedMatter.TightBindingChain.orthonormal_currentBasisVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L100).
+**`CondensedMatter.TightBindingChain.orthonormal_currentBasisVec`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L100).
 
 > The normalized current eigenstates are orthonormal.
 
@@ -74,7 +74,7 @@ lemma norm_currentBasisVec (k : Fin T.N) : ‖T.currentBasisVec k‖ = 1
 lemma orthonormal_currentBasisVec (ht : T.t ≠ 0) : Orthonormal ℂ T.currentBasisVec
 ```
 
-**`CondensedMatter.TightBindingChain.currentBasis`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L128).
+**`CondensedMatter.TightBindingChain.currentBasis`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L128).
 
 > The orthonormal basis of normalized current eigenstates.
 
@@ -84,7 +84,7 @@ noncomputable def currentBasis (ht : T.t ≠ 0) : OrthonormalBasis (Fin T.N) ℂ
 
 ## C. No state is faster
 
-**`CondensedMatter.TightBindingChain.current_currentBasis`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L140).
+**`CondensedMatter.TightBindingChain.current_currentBasis`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L140).
 
 > The current on the basis of current eigenstates.
 
@@ -94,7 +94,7 @@ lemma current_currentBasis (ht : T.t ≠ 0) (k : Fin T.N) :
       (T.currentEigenvalue ((k : ℕ) + 1) : ℂ) • T.currentBasis ht k
 ```
 
-**`CondensedMatter.TightBindingChain.re_inner_current_eq_sum`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L148).
+**`CondensedMatter.TightBindingChain.re_inner_current_eq_sum`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L148).
 
 > The mean current in the basis of current eigenstates:
 > `re ⟨ψ|J|ψ⟩ = ∑ k, λ_k |⟨k|ψ⟩|²`.
@@ -105,7 +105,7 @@ lemma re_inner_current_eq_sum (ht : T.t ≠ 0) (ψ : T.HilbertSpace) :
       ∑ k : Fin T.N, T.currentEigenvalue ((k : ℕ) + 1) * ‖⟪T.currentBasis ht k, ψ⟫_ℂ‖ ^ 2
 ```
 
-**`CondensedMatter.TightBindingChain.abs_re_inner_current_le`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L158).
+**`CondensedMatter.TightBindingChain.abs_re_inner_current_le`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L158).
 
 > In every vector, `|re ⟨ψ|J|ψ⟩| ≤ maxCurrent ‖ψ‖²`.
 
@@ -114,7 +114,7 @@ lemma abs_re_inner_current_le (ht : T.t ≠ 0) (ψ : T.HilbertSpace) :
     |(⟪ψ, T.current ψ⟫_ℂ).re| ≤ T.maxCurrent * ‖ψ‖ ^ 2
 ```
 
-**`CondensedMatter.TightBindingChain.abs_expectation_current_le`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L171).
+**`CondensedMatter.TightBindingChain.abs_expectation_current_le`**, a lemma, [line 171](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L171).
 
 > **Speed limit.** In every state, `|⟨J⟩| ≤ maxCurrent`: no state of the open chain moves
 > faster than `2 |a t| cos (π / (N + 1))`.
@@ -125,7 +125,7 @@ lemma abs_expectation_current_le (ht : T.t ≠ 0)
     |ω⟨T.currentObservable⟩| ≤ T.maxCurrent
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_current_maxCurrentState`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L200).
+**`CondensedMatter.TightBindingChain.expectation_current_maxCurrentState`**, a lemma, [line 200](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L200).
 
 > The maximal current state carries the current `⟨J⟩ = 2 a t cos (π / (N + 1))`.
 
@@ -135,7 +135,7 @@ lemma expectation_current_maxCurrentState :
       2 * (T.a * T.t * Real.cos (Real.pi / (T.N + 1)))
 ```
 
-**`CondensedMatter.TightBindingChain.abs_expectation_current_maxCurrentState`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L208).
+**`CondensedMatter.TightBindingChain.abs_expectation_current_maxCurrentState`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean#L208).
 
 > The maximal current state moves at the speed limit.
 
@@ -151,4 +151,4 @@ lemma abs_expectation_current_maxCurrentState :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean)

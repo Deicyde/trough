@@ -8,12 +8,12 @@ proof: formalized
 
 # Schwartz submodule of the Hilbert space
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.SchwartzSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean): 4 declarations, 1 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.SchwartzSubmodule`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean): 4 declarations, 1 with a docstring.
 
 > This can be used to define e.g.
 > the rigged Hilbert space.
 
-**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L34).
+**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl`**, a def, [line 34](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L34).
 
 > The continuous linear map including Schwartz functions into the hilbert space.
 
@@ -21,20 +21,20 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.SchwartzSubmodul
 def schwartzIncl : 𝓢(ℝ, ℂ) →L[ℂ] HilbertSpace
 ```
 
-**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_injective`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L37).
+**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_injective`**, a lemma, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L37).
 
 ```lean
 lemma schwartzIncl_injective : Function.Injective schwartzIncl
 ```
 
-**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_coe_ae`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L40).
+**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_coe_ae`**, a lemma, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L40).
 
 ```lean
 lemma schwartzIncl_coe_ae (ψ : 𝓢(ℝ, ℂ)) :
     ψ.1 =ᶠ[ae volume] (schwartzIncl ψ)
 ```
 
-**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_inner`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L43).
+**`QuantumMechanics.OneDimension.HilbertSpace.schwartzIncl_inner`**, a lemma, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean#L43).
 
 ```lean
 lemma schwartzIncl_inner (ψ1 ψ2 : 𝓢(ℝ, ℂ)) :
@@ -47,4 +47,4 @@ lemma schwartzIncl_inner (ψ1 ψ2 : 𝓢(ℝ, ℂ)) :
 
 ## Sources
 
-- [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean)
+- [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean)

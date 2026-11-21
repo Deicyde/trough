@@ -8,7 +8,7 @@ proof: formalized
 
 # `C` grows with the length of the chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainMonotonicity`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean): 3 declarations, 3 with a docstring; 11 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainMonotonicity`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean): 3 declarations, 3 with a docstring; 11 private, not shown.
 
 ## i. Overview
 
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongC
 
 ## D. Monotonicity
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatioSqForm_strictMonoOn`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L259).
+**`CondensedMatter.TightBindingChain.uncertaintyRatioSqForm_strictMonoOn`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L259).
 
 > The closed form of `C²` is strictly increasing on `n ≥ 5`, that is, from four sites on.
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongC
 lemma uncertaintyRatioSqForm_strictMonoOn : StrictMonoOn uncertaintyRatioSqForm (Ici 5)
 ```
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio_lt_uncertaintyRatio`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L272).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio_lt_uncertaintyRatio`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L272).
 
 > **Monotonicity.** From four sites on, `C` strictly increases with the number of sites.
 
@@ -55,7 +55,7 @@ lemma uncertaintyRatio_lt_uncertaintyRatio {T T' : TightBindingChain} (ht : T.t 
     T.uncertaintyRatio < T'.uncertaintyRatio
 ```
 
-**`CondensedMatter.TightBindingChain.uncertaintyRatio_lt_sqrt_pi_sq_div_three_sub_two`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L285).
+**`CondensedMatter.TightBindingChain.uncertaintyRatio_lt_sqrt_pi_sq_div_three_sub_two`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean#L285).
 
 > From four sites on, `C` stays strictly below its long chain limit `√(π² / 3 - 2)`.
 
@@ -70,4 +70,4 @@ lemma uncertaintyRatio_lt_sqrt_pi_sq_div_three_sub_two (ht : T.t ≠ 0) (hN : 4 
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean)

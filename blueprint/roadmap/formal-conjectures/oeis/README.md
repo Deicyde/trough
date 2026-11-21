@@ -1,6 +1,6 @@
 # OEIS
 
-The 346 problem files in [FormalConjectures/OEIS](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OEIS) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
+The 349 problem files in [FormalConjectures/OEIS](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -188,7 +188,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [$a(n)$ = the number of values of $k <= 10^n$ such that $\sqrt{k(k+1)(k+2)(k+3)+1}$ is prime](part-08/a-n-the-number-of-values-of-k-10-n-such-that-sqr.md)
 - [$a(n) = \sum_{j=1}^{n} (3^j + (-2)^j)$](part-08/a-n-sum-j-1-n-3-j-2-j.md)
 
-## [Determinants of 2 X 2 matrices… to Denominators of $\sum_{k=1}^n…](part-09/README.md)
+## [Determinants of 2 X 2 matrices… to Smallest index $k > n$ such…](part-09/README.md)
 
 - [Determinants of 2 X 2 matrices of non-overlapping blocks of 4 consecutive primes](part-09/determinants-of-2-x-2-matrices-of-non-overlappin.md)
 - [Number of primes in $n$-th row of triangle $k^2 - k + p_n$](part-09/number-of-primes-in-n-th-row-of-triangle-k-2-k-p.md)
@@ -204,15 +204,16 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Collatz step differences](part-09/collatz-step-differences.md)
 - [Representations as $p + 2^x + 7 \cdot 2^y$ with $p \equiv 5 \pmod 6$](part-09/representations-as-p-2-x-7-cdot-2-y-with-p-equiv.md)
 - [Representations as $p + 2^x + 11 \cdot 2^y$ with $p \equiv 1 \pmod 6$](part-09/representations-as-p-2-x-11-cdot-2-y-with-p-equi.md)
+- [Exponentials of $\sum_{n \ge 1} q^{n^m} x^n / n$](part-09/exponentials-of-sum-n-ge-1-q-n-m-x-n-n.md)
 - [Smallest $m$ such that $n^3 + m^3 + 1$ is prime](part-09/smallest-m-such-that-n-3-m-3-1-is-prime.md)
 - [Number of ways to express $n$ as sum of square, pentagonal, and hexagonal numbers](part-09/number-of-ways-to-express-n-as-sum-of-square-pen.md)
 - [Rowland-style prime-generating recurrence](part-09/rowland-style-prime-generating-recurrence.md)
 - [Chua's Euclidean prime sequence](part-09/chuas-euclidean-prime-sequence.md)
 - [Smallest index $k > n$ such that $(p_k+p_{k+1})/(p_n+p_{n+1})$ is an integer $\ge 2$](part-09/smallest-index-k-n-such-that-p-k-p-k-1-p-n-p-n-1.md)
-- [Denominators of $\sum_{k=1}^n \frac{1}{k 2^k}$](part-09/denominators-of-sum-k-1-n-frac-1-k-2-k.md)
 
-## [Recurrence with fourth powers… to Number of primes of the form…](part-10/README.md)
+## [Denominators of $\sum_{k=1}^n… to Denominator of $B_{n+1}(x) -…](part-10/README.md)
 
+- [Denominators of $\sum_{k=1}^n \frac{1}{k 2^k}$](part-10/denominators-of-sum-k-1-n-frac-1-k-2-k.md)
 - [Recurrence with fourth powers of binomial coefficients](part-10/recurrence-with-fourth-powers-of-binomial-coeffi.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n (-4)^k \binom{n}{k}^2 \binom{n-k}{k}^2$](part-10/central-binomial-sum-a-n-sum-k-0-n-4-k-binom-n-k.md)
 - [Central binomial sum $a(n) = \sum_{k=0}^n \binom{n}{k}^2 \binom{n-k}{k}^2 (-16)^k$](part-10/central-binomial-sum-a-n-sum-k-0-n-binom-n-k-2-b.md)
@@ -232,10 +233,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Number of distinct sums of distinct proper divisors of $n$](part-10/number-of-distinct-sums-of-distinct-proper-divis.md)
 - [Size of smallest subset of $\{1, 2, \dots, n\}$ with distinct subset sums](part-10/size-of-smallest-subset-of-1-2-dots-n-with-disti.md)
 - [Denominator of $B_{n+1}(x) - B_{n+1}$](part-10/denominator-of-b-n-1-x-b-n-1.md)
-- [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](part-10/number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)
 
-## [Primes of the form $3^n \pm 3^k… to Primes $p < n$ with $n^2 - n +…](part-11/README.md)
+## [Number of primes of the form… to Partitions $2n + 1 = x + y$…](part-11/README.md)
 
+- [Number of primes of the form $2^n \pm 2^k \pm 1$ with $0 \le k < n$](part-11/number-of-primes-of-the-form-2-n-pm-2-k-pm-1-wit.md)
 - [Primes of the form $3^n \pm 3^k \pm 1$](part-11/primes-of-the-form-3-n-pm-3-k-pm-1.md)
 - [Lerch quotients of odd primes](part-11/lerch-quotients-of-odd-primes.md)
 - [Position of $n$-th partial sum of the harmonic series when jointly ranked with $\{\log(k+1)\}$](part-11/position-of-n-th-partial-sum-of-the-harmonic-ser.md)
@@ -255,10 +256,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Smallest integer $s > n$ such that $1 + 2s + 3s^2 + \dots + n s^{n-1}$ is prime](part-11/smallest-integer-s-n-such-that-1-2s-3s-2-dots-n.md)
 - [Partitions $n = x + y$ with $x^2 + xy + y^2$ prime](part-11/partitions-n-x-y-with-x-2-xy-y-2-prime.md)
 - [Partitions $2n + 1 = x + y$ with $x^4 + y^4$ prime](part-11/partitions-2n-1-x-y-with-x-4-y-4-prime.md)
-- [Primes $p < n$ with $n^2 - n + p$ and $n^2 + n - p$ prime](part-11/primes-p-n-with-n-2-n-p-and-n-2-n-p-prime.md)
 
-## [Representations of $n$ using… to Partitions $n = p + q$ with…](part-12/README.md)
+## [Primes $p < n$ with $n^2 - n +… to Ways to write $n = x + y + z$…](part-12/README.md)
 
+- [Primes $p < n$ with $n^2 - n + p$ and $n^2 + n - p$ prime](part-12/primes-p-n-with-n-2-n-p-and-n-2-n-p-prime.md)
 - [Representations of $n$ using prime pairs with prime gaps of $6$](part-12/representations-of-n-using-prime-pairs-with-prim.md)
 - [Partitions of $n$ into $x + y$ with $(xy)^2 + 1$ prime](part-12/partitions-of-n-into-x-y-with-xy-2-1-prime.md)
 - [Partitions of $n$ into $x + y$ with $(xy)^2 + xy + 1$ prime](part-12/partitions-of-n-into-x-y-with-xy-2-xy-1-prime.md)
@@ -278,10 +279,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Numbers $n$ such that $n^2 + \pi(n)$ is prime](part-12/numbers-n-such-that-n-2-pi-n-is-prime.md)
 - [Undirected circular permutations with adjacent products minus one all prime](part-12/undirected-circular-permutations-with-adjacent-p.md)
 - [Ways to write $n = x + y + z$ with six linear and quadratic forms prime](part-12/ways-to-write-n-x-y-z-with-six-linear-and-quadra.md)
-- [Partitions $n = p + q$ with $p$, $3p - 10$, and $(p - 1)q - 1$ prime](part-12/partitions-n-p-q-with-p-3p-10-and-p-1-q-1-prime.md)
 
-## [Triples summing to $n$ with… to Ordered ways to write $2n = p +…](part-13/README.md)
+## [Partitions $n = p + q$ with… to Prime quadruplets generated by…](part-13/README.md)
 
+- [Partitions $n = p + q$ with $p$, $3p - 10$, and $(p - 1)q - 1$ prime](part-13/partitions-n-p-q-with-p-3p-10-and-p-1-q-1-prime.md)
 - [Triples summing to $n$ with $2m+1$ and $2m^3+1$ prime](part-13/triples-summing-to-n-with-2m-1-and-2m-3-1-prime.md)
 - [Smallest $n$-th power equal to a sum of consecutive immediately preceding positive $n$-th powers](part-13/smallest-n-th-power-equal-to-a-sum-of-consecutiv.md)
 - [Sum of two numbers with prime conditions](part-13/sum-of-two-numbers-with-prime-conditions.md)
@@ -301,10 +302,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Number of integers $0 < k < n$ such that $p = k + \phi(n - k)$ and $2(n - p) + 1$ are both prime](part-13/number-of-integers-0-k-n-such-that-p-k-phi-n-k-a.md)
 - [Number of $0 < k < n-2$ with $p = \phi(k) + \phi(n-k)/2 + 1$ and $p_p - p \pm 1$ prime](part-13/number-of-0-k-n-2-with-p-phi-k-phi-n-k-2-1-and-p.md)
 - [Prime quadruplets generated by $p = 3\phi(k) + \phi(n-k) - 1$](part-13/prime-quadruplets-generated-by-p-3-phi-k-phi-n-k.md)
-- [Ordered ways to write $2n = p + q$ with $p, q$ and $p_{p+2} + 2$ all prime](part-13/ordered-ways-to-write-2n-p-q-with-p-q-and-p-p-2.md)
 
-## [Number of $0 < k < n/2$ such… to Difference between $n \tau(n)$…](part-14/README.md)
+## [Ordered ways to write $2n = p +… to Sum of $d \cdot \tau(d)$ over…](part-14/README.md)
 
+- [Ordered ways to write $2n = p + q$ with $p, q$ and $p_{p+2} + 2$ all prime](part-14/ordered-ways-to-write-2n-p-q-with-p-q-and-p-p-2.md)
 - [Number of $0 < k < n/2$ such that $\phi(k)\phi(n-k)$ is a square](part-14/number-of-0-k-n-2-such-that-phi-k-phi-n-k-is-a-s.md)
 - [Number of parts in the symmetric representation of $\sigma(n)$](part-14/number-of-parts-in-the-symmetric-representation.md)
 - [Ordered ways to write $n = k + m$ with $p_k + 4$ and $p_{p_m} + 4$ both prime](part-14/ordered-ways-to-write-n-k-m-with-p-k-4-and-p-p-m.md)
@@ -324,10 +325,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Signed digit sums in bases $b \ge 5$](part-14/signed-digit-sums-in-bases-b-ge-5.md)
 - [Least index $i$ for which $\text{num}(\sigma_1(i)/i) - \text{den}(\sigma_1(i)/i) = n$](part-14/least-index-i-for-which-num-sigma-1-i-i-den-sigm.md)
 - [Sum of $d \cdot \tau(d)$ over proper divisors $d$ of $n$](part-14/sum-of-d-cdot-tau-d-over-proper-divisors-d-of-n.md)
-- [Difference between $n \tau(n)$ and $\sum_{d \mid n, d < n} d \tau(d)$](part-14/difference-between-n-tau-n-and-sum-d-mid-n-d-n-d.md)
 
-## [Least $m$ such that $m + n$… to Representations of $n$ as $x^2…](part-15/README.md)
+## [Difference between $n \tau(n)$… to Additive decompositions of…](part-15/README.md)
 
+- [Difference between $n \tau(n)$ and $\sum_{d \mid n, d < n} d \tau(d)$](part-15/difference-between-n-tau-n-and-sum-d-mid-n-d-n-d.md)
 - [Least $m$ such that $m + n$ divides $\mathrm{prime}(m) + \mathrm{prime}(n)$](part-15/least-m-such-that-m-n-divides-prime-m-prime-n.md)
 - [Least $m > 0$ coprime to $n$ such that $mn \mid C(m+n)$](part-15/least-m-0-coprime-to-n-such-that-mn-mid-c-m-n.md)
 - [Smallest prime factors of $2^{2^n+2} + 3$](part-15/smallest-prime-factors-of-2-2-n-2-3.md)
@@ -347,10 +348,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square](part-15/refining-lagranges-four-square-theorem-with-5x-2.md)
 - [Additive decompositions of $\pi(T(n))$](part-15/additive-decompositions-of-pi-t-n.md)
 - [Additive decompositions of $\pi(\frac{n(n+1)}{2} + 1)$](part-15/additive-decompositions-of-pi-frac-n-n-1-2-1.md)
-- [Representations of $n$ as $x^2 + \phi(y^2) + \phi(z^2)$](part-15/representations-of-n-as-x-2-phi-y-2-phi-z-2.md)
 
-## [Sums of a cube, a square, and a… to Characterization of Carmichael…](part-16/README.md)
+## [Representations of $n$ as $x^2… to Four-square conjecture with…](part-16/README.md)
 
+- [Representations of $n$ as $x^2 + \phi(y^2) + \phi(z^2)$](part-16/representations-of-n-as-x-2-phi-y-2-phi-z-2.md)
 - [Sums of a cube, a square, and a positive triangular number](part-16/sums-of-a-cube-a-square-and-a-positive-triangula.md)
 - [Sums of a square and three weighted cubes](part-16/sums-of-a-square-and-three-weighted-cubes.md)
 - [Sums of a triangular number and three weighted cubes](part-16/sums-of-a-triangular-number-and-three-weighted-c.md)
@@ -370,10 +371,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [The 2-4-6-8 Conjecture](part-16/the-2-4-6-8-conjecture.md)
 - [Vanishing of bases with $b^n \equiv -1 \pmod{2n+1}$ for absolute Euler pseudoprimes](part-16/vanishing-of-bases-with-b-n-equiv-1-pmod-2n-1-fo.md)
 - [Four-square conjecture with powers of 2, 3, and 5](part-16/four-square-conjecture-with-powers-of-2-3-and-5.md)
-- [Characterization of Carmichael numbers via squarefree denominators $a(n)$](part-16/characterization-of-carmichael-numbers-via-squar.md)
 
-## [Nonnegativity of the Dirichlet… to A cubic generating function…](part-17/README.md)
+## [Characterization of Carmichael… to Integrality of the factorial…](part-17/README.md)
 
+- [Characterization of Carmichael numbers via squarefree denominators $a(n)$](part-17/characterization-of-carmichael-numbers-via-squar.md)
 - [Nonnegativity of the Dirichlet square root of A046644](part-17/nonnegativity-of-the-dirichlet-square-root-of-a0.md)
 - [Pronic indices for odd coefficients of $\sum_{n \ge 0} x^n \frac{(1+x^n)^n}{(1+x^{n+1})^{n+1}}$](part-17/pronic-indices-for-odd-coefficients-of-sum-n-ge.md)
 - [Pronic indices for odd coefficients of $\sum_{n \ge 0} x^n \frac{(1+x^n)^n}{(1-x^{n+1})^{n+1}}$](part-17/pronic-indices-for-odd-coefficients-of-sum-n-ge-2.md)
@@ -388,20 +389,22 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [A generating function with powers two and three](part-17/a-generating-function-with-powers-two-and-three.md)
 - [A generating function with powers two and four](part-17/a-generating-function-with-powers-two-and-four.md)
 - [A generating function with powers two and four](part-17/a-generating-function-with-powers-two-and-four-2.md)
+- [A self-compositional exponential generating function](part-17/a-self-compositional-exponential-generating-func.md)
 - [A quadratic generating function with sign substitution](part-17/a-quadratic-generating-function-with-sign-substi.md)
 - [A generating function with signed square terms](part-17/a-generating-function-with-signed-square-terms.md)
 - [The generating function $A(x)=1+3xA(x)^2-2xA(-x)^2$](part-17/the-generating-function-a-x-1-3xa-x-2-2xa-x-2.md)
 - [Integrality of the factorial ratio $\frac{(12n+6)! (6n+9)!}{108 (4n+2)! (2n+3)! ((6n+5)!)^2}$](part-17/integrality-of-the-factorial-ratio-frac-12n-6-6n.md)
-- [Unique realization of odd primes $p \notin \{3, 5\}$ by continued fraction values](part-17/unique-realization-of-odd-primes-p-notin-3-5-by.md)
-- [A cubic generating function with ternary substitution](part-17/a-cubic-generating-function-with-ternary-substit.md)
 
-## [A logarithmic derivative with… to Decimal concatenation of a…](part-18/README.md)
+## [Unique realization of odd… to Decimal concatenation of a…](part-18/README.md)
 
+- [Unique realization of odd primes $p \notin \{3, 5\}$ by continued fraction values](part-18/unique-realization-of-odd-primes-p-notin-3-5-by.md)
+- [A cubic generating function with ternary substitution](part-18/a-cubic-generating-function-with-ternary-substit.md)
 - [A logarithmic derivative with prime-divisible coefficients](part-18/a-logarithmic-derivative-with-prime-divisible-co.md)
 - [Periodicity of $k$-th prime factors in coupled nonlinear recurrence $a(n)$](part-18/periodicity-of-k-th-prime-factors-in-coupled-non.md)
 - [Lengths of the 2-dense sublists of divisors of $n$](part-18/lengths-of-the-2-dense-sublists-of-divisors-of-n.md)
+- [A compositional generating function](part-18/a-compositional-generating-function.md)
 - [A differential generating function](part-18/a-differential-generating-function.md)
 - [Maximum number of terms in a 2-dense sublist of divisors of $n$](part-18/maximum-number-of-terms-in-a-2-dense-sublist-of.md)
 - [Decimal concatenation of a cofactor and the largest prime factor](part-18/decimal-concatenation-of-a-cofactor-and-the-larg.md)
 
-No article: 2 files here state no research or textbook statement: [$a(n) = n$ if $n$ is prime, otherwise $a(n) = 1$](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OEIS/89026.lean), [Sloping binary numbers: read array of binary numbers (right-justified) along diagonals of slope $-1$](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OEIS/105033.lean).
+No article: 2 files here state no research or textbook statement: [$a(n) = n$ if $n$ is prime, otherwise $a(n) = 1$](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/89026.lean), [Sloping binary numbers: read array of binary numbers (right-justified) along diagonals of slope $-1$](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/OEIS/105033.lean).

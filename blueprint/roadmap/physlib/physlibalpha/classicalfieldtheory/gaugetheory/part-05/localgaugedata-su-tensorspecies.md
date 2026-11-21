@@ -8,7 +8,7 @@ proof: formalized
 
 # The complex tensor species of `SU(N)`
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.TensorSpecies`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean): 37 declarations, 26 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.TensorSpecies`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean): 37 declarations, 26 with a docstring.
 
 ## i. Overview
 
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.Tens
 
 ## A. The colors and the carriers
 
-**`suTensor.Color`**, an inductive, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L74).
+**`suTensor.Color`**, an inductive, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L74).
 
 > The colors of the complex tensors of `SU(N)`.
 
@@ -62,7 +62,7 @@ inductive Color
   deriving DecidableEq
 ```
 
-**`suTensor.modules`**, an abbrev, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L86).
+**`suTensor.modules`**, an abbrev, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L86).
 
 > The carriers of the three colors.
 
@@ -70,19 +70,19 @@ inductive Color
 abbrev modules : Color → Type
 ```
 
-**`suTensor.modulesAddCommGroup`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L91).
+**`suTensor.modulesAddCommGroup`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L91).
 
 ```lean
 noncomputable instance modulesAddCommGroup : ∀ c, AddCommGroup (modules N c)
 ```
 
-**`suTensor.modulesModule`**, an instance, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L96).
+**`suTensor.modulesModule`**, an instance, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L96).
 
 ```lean
 noncomputable instance modulesModule : ∀ c, Module ℂ (modules N c)
 ```
 
-**`suTensor.basisIdx`**, an abbrev, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L103).
+**`suTensor.basisIdx`**, an abbrev, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L103).
 
 > The labels of the basis vectors: `Fin N` for the fundamental and anti-fundamental colors,
 > and the labels of the generalized Gell-Mann matrices for the adjoint.
@@ -91,19 +91,19 @@ noncomputable instance modulesModule : ∀ c, Module ℂ (modules N c)
 abbrev basisIdx : Color → Type
 ```
 
-**`suTensor.basisIdxFintype`**, an instance, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L108).
+**`suTensor.basisIdxFintype`**, an instance, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L108).
 
 ```lean
 instance basisIdxFintype : ∀ c, Fintype (basisIdx N c)
 ```
 
-**`suTensor.basisIdxDecidableEq`**, an instance, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L113).
+**`suTensor.basisIdxDecidableEq`**, an instance, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L113).
 
 ```lean
 instance basisIdxDecidableEq : ∀ c, DecidableEq (basisIdx N c)
 ```
 
-**`suTensor.basis`**, an abbrev, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L120).
+**`suTensor.basis`**, an abbrev, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L120).
 
 > The bases of the carriers: the standard basis for the fundamental and anti-fundamental colors,
 > and the generalized Gell-Mann matrices for the adjoint.
@@ -114,7 +114,7 @@ noncomputable abbrev basis : (c : Color) → Basis (basisIdx N c) ℂ (modules N
 
 ## B. The representations
 
-**`suTensor.fundRep`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L132).
+**`suTensor.fundRep`**, a def, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L132).
 
 > The fundamental representation, `v ↦ g v`.
 
@@ -122,7 +122,7 @@ noncomputable abbrev basis : (c : Color) → Basis (basisIdx N c) ℂ (modules N
 noncomputable def fundRep : Representation ℂ (SU N) (Fin N → ℂ)
 ```
 
-**`suTensor.antiFundRep`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L143).
+**`suTensor.antiFundRep`**, a def, [line 143](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L143).
 
 > The anti-fundamental representation, `v ↦ (g⁻¹)ᵀ v`, the dual of the fundamental one. For
 > unitary `g`, `(g⁻¹)ᵀ` is the complex conjugate of `g`.
@@ -131,7 +131,7 @@ noncomputable def fundRep : Representation ℂ (SU N) (Fin N → ℂ)
 noncomputable def antiFundRep : Representation ℂ (SU N) (Fin N → ℂ)
 ```
 
-**`suTensor.rep`**, an abbrev, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L153).
+**`suTensor.rep`**, an abbrev, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L153).
 
 > The representations of the three colors.
 
@@ -141,7 +141,7 @@ noncomputable abbrev rep : (c : Color) → Representation ℂ (SU N) (modules N 
 
 ## C. The contractions
 
-**`suTensor.fundContr`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L166).
+**`suTensor.fundContr`**, a def, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L166).
 
 > The contraction of a fundamental against an anti-fundamental index, the dot product
 > `v ⊗ w ↦ ∑ vᵢ wᵢ`.
@@ -151,7 +151,7 @@ noncomputable def fundContr : ((fundRep N).tprod (antiFundRep N)).IntertwiningMa
     (Representation.trivial ℂ (SU N) ℂ)
 ```
 
-**`suTensor.antiFundContr`**, a def, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L175).
+**`suTensor.antiFundContr`**, a def, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L175).
 
 > The contraction of an anti-fundamental against a fundamental index, the dot product
 > `w ⊗ v ↦ ∑ wᵢ vᵢ`.
@@ -169,7 +169,7 @@ noncomputable def antiFundContr : ((antiFundRep N).tprod (fundRep N)).Intertwini
 > injective, so a unit is unique, and it is invariant, its transform being sent to
 > `g ∘ id ∘ g⁻¹ = id`.
 
-**`suTensor.coevalMap`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L202).
+**`suTensor.coevalMap`**, a def, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L202).
 
 > The endomorphism `x ↦ ∑ contr (x ⊗ wᵢ) vᵢ` of `V` attached to `∑ wᵢ ⊗ vᵢ ∈ W ⊗ V`.
 
@@ -178,14 +178,14 @@ noncomputable def coevalMap (contr : (ρ.tprod σ).IntertwiningMap
     (Representation.trivial ℂ (SU N) ℂ)) : W ⊗[ℂ] V →ₗ[ℂ] V →ₗ[ℂ] V
 ```
 
-**`suTensor.coevalMap_tmul`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L210).
+**`suTensor.coevalMap_tmul`**, a lemma, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L210).
 
 ```lean
 lemma coevalMap_tmul (w : W) (v x : V) :
     coevalMap contr (w ⊗ₜ v) x = contr (x ⊗ₜ w) • v
 ```
 
-**`suTensor.lid_rTensor_assoc_symm_eq_coevalMap`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L214).
+**`suTensor.lid_rTensor_assoc_symm_eq_coevalMap`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L214).
 
 > The contraction of `x` against the first factor of `U` is `coevalMap contr U x`.
 
@@ -195,7 +195,7 @@ lemma lid_rTensor_assoc_symm_eq_coevalMap (x : V) (U : W ⊗[ℂ] V) :
       ((TensorProduct.assoc ℂ V W V).symm (x ⊗ₜ[ℂ] U))) = coevalMap contr U x
 ```
 
-**`suTensor.coevalMap_injective`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L222).
+**`suTensor.coevalMap_injective`**, a lemma, [line 222](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L222).
 
 > `coevalMap` is injective when the contraction separates `W`.
 
@@ -205,7 +205,7 @@ lemma coevalMap_injective [FiniteDimensional ℂ V]
     Function.Injective (coevalMap contr)
 ```
 
-**`suTensor.coevalMap_map`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L231).
+**`suTensor.coevalMap_map`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L231).
 
 > Transforming both factors of `U` conjugates `coevalMap contr U`, by the invariance of the
 > contraction.
@@ -216,7 +216,7 @@ lemma coevalMap_map (g : SU N) (U : W ⊗[ℂ] V) :
       = ρ g ∘ₗ coevalMap contr U ∘ₗ ρ g⁻¹
 ```
 
-**`suTensor.map_eq_self_of_coevalMap_eq_id`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L246).
+**`suTensor.map_eq_self_of_coevalMap_eq_id`**, a lemma, [line 246](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L246).
 
 > An element whose `coevalMap` is the identity is invariant, when the contraction separates
 > `W`.
@@ -228,7 +228,7 @@ lemma map_eq_self_of_coevalMap_eq_id [FiniteDimensional ℂ V]
     TensorProduct.map (σ g) (ρ g) U = U
 ```
 
-**`suTensor.unitOf`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L256).
+**`suTensor.unitOf`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L256).
 
 > The unit intertwining map `a ↦ a • U` of an invariant element `U ∈ W ⊗ V`.
 
@@ -237,14 +237,14 @@ noncomputable def unitOf {U : W ⊗[ℂ] V} (hU : ∀ g : SU N, TensorProduct.ma
     (Representation.trivial ℂ (SU N) ℂ).IntertwiningMap (σ.tprod ρ)
 ```
 
-**`suTensor.unitOf_apply`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L265).
+**`suTensor.unitOf_apply`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L265).
 
 ```lean
 lemma unitOf_apply {U : W ⊗[ℂ] V} (hU : ∀ g : SU N, TensorProduct.map (σ g) (ρ g) U = U)
     (a : ℂ) : unitOf hU a = a • U
 ```
 
-**`suTensor.pairUnitVal`**, a def, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L272).
+**`suTensor.pairUnitVal`**, a def, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L272).
 
 > The element `∑ eᵢ ⊗ eᵢ` of `ℂᴺ ⊗ ℂᴺ`, the unit of the fundamental and of the anti-fundamental
 > color.
@@ -253,13 +253,13 @@ lemma unitOf_apply {U : W ⊗[ℂ] V} (hU : ∀ g : SU N, TensorProduct.map (σ 
 noncomputable def pairUnitVal : (Fin N → ℂ) ⊗[ℂ] (Fin N → ℂ)
 ```
 
-**`suTensor.comm_pairUnitVal`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L275).
+**`suTensor.comm_pairUnitVal`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L275).
 
 ```lean
 lemma comm_pairUnitVal : TensorProduct.comm ℂ _ _ (pairUnitVal N) = pairUnitVal N
 ```
 
-**`suTensor.dotProduct_flip_injective`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L279).
+**`suTensor.dotProduct_flip_injective`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L279).
 
 > The dot product separates vectors.
 
@@ -269,7 +269,7 @@ lemma dotProduct_flip_injective : Function.Injective
       (Fin N → ℂ) ⊗[ℂ] (Fin N → ℂ) →ₗ[ℂ] ℂ)).flip
 ```
 
-**`suTensor.coevalMap_pairUnitVal`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L285).
+**`suTensor.coevalMap_pairUnitVal`**, a lemma, [line 285](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L285).
 
 > Contracting against `∑ eᵢ ⊗ eᵢ` by the dot product is the identity.
 
@@ -280,7 +280,7 @@ lemma coevalMap_pairUnitVal {ρ σ : Representation ℂ (SU N) (Fin N → ℂ)}
     coevalMap contr (pairUnitVal N) = LinearMap.id
 ```
 
-**`suTensor.fundUnit`**, a def, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L296).
+**`suTensor.fundUnit`**, a def, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L296).
 
 > The unit of the fundamental color, `∑ eᵢ ⊗ eᵢ` in anti-fundamental ⊗ fundamental.
 
@@ -289,7 +289,7 @@ noncomputable def fundUnit : (Representation.trivial ℂ (SU N) ℂ).Intertwinin
     ((antiFundRep N).tprod (fundRep N))
 ```
 
-**`suTensor.antiFundUnit`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L302).
+**`suTensor.antiFundUnit`**, a def, [line 302](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L302).
 
 > The unit of the anti-fundamental color, `∑ eᵢ ⊗ eᵢ` in fundamental ⊗ anti-fundamental.
 
@@ -298,7 +298,7 @@ noncomputable def antiFundUnit : (Representation.trivial ℂ (SU N) ℂ).Intertw
     ((fundRep N).tprod (antiFundRep N))
 ```
 
-**`suTensor.adjUnitVal`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L309).
+**`suTensor.adjUnitVal`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L309).
 
 > The element `∑ b_a ⊗ bᵃ` of `su(N)_ℂ ⊗ su(N)_ℂ`, for the Gell-Mann basis `b` and its dual basis
 > `bᵃ` under the trace form: the unit of the adjoint color.
@@ -307,20 +307,20 @@ noncomputable def antiFundUnit : (Representation.trivial ℂ (SU N) ℂ).Intertw
 noncomputable def adjUnitVal : (SUAlgebraComplexified N) ⊗[ℂ] (SUAlgebraComplexified N)
 ```
 
-**`suTensor.coevalMap_adjUnitVal`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L312).
+**`suTensor.coevalMap_adjUnitVal`**, a lemma, [line 312](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L312).
 
 ```lean
 lemma coevalMap_adjUnitVal : coevalMap (adjContr N) (adjUnitVal N) = LinearMap.id
 ```
 
-**`suTensor.coevalMap_comm_adjUnitVal`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L322).
+**`suTensor.coevalMap_comm_adjUnitVal`**, a lemma, [line 322](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L322).
 
 ```lean
 lemma coevalMap_comm_adjUnitVal :
     coevalMap (adjContr N) (TensorProduct.comm ℂ _ _ (adjUnitVal N)) = LinearMap.id
 ```
 
-**`suTensor.comm_adjUnitVal`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L338).
+**`suTensor.comm_adjUnitVal`**, a lemma, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L338).
 
 > The unit of the adjoint color is symmetric.
 
@@ -328,7 +328,7 @@ lemma coevalMap_comm_adjUnitVal :
 lemma comm_adjUnitVal : TensorProduct.comm ℂ _ _ (adjUnitVal N) = adjUnitVal N
 ```
 
-**`suTensor.adjUnit`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L343).
+**`suTensor.adjUnit`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L343).
 
 > The unit of the adjoint color, `∑ b_a ⊗ bᵃ`.
 
@@ -339,7 +339,7 @@ noncomputable def adjUnit : (Representation.trivial ℂ (SU N) ℂ).Intertwining
 
 ## E. The tensor species
 
-**`suTensor`**, a def, [line 360](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L360).
+**`suTensor`**, a def, [line 360](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L360).
 
 > The complex tensor species of `SU(N)`, with fundamental, anti-fundamental and adjoint
 > indices. The fundamental and anti-fundamental colors are dual to each other, the adjoint
@@ -361,14 +361,14 @@ noncomputable def suTensor (N : ℕ) : TensorSpecies ℂ suTensor.Color (SU N)
 > the invariants in the range of an equivariant map out of `(suTensor N).Tensor c` come from invariant
 > tensors.
 
-**`suTensor.toMatrix_fundRep`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L434).
+**`suTensor.toMatrix_fundRep`**, a lemma, [line 434](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L434).
 
 ```lean
 lemma toMatrix_fundRep (g : SU N) :
     LinearMap.toMatrix (Pi.basisFun ℂ (Fin N)) (Pi.basisFun ℂ (Fin N)) (fundRep N g) = g.1
 ```
 
-**`suTensor.toMatrix_antiFundRep`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L439).
+**`suTensor.toMatrix_antiFundRep`**, a lemma, [line 439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L439).
 
 ```lean
 lemma toMatrix_antiFundRep (g : SU N) :
@@ -376,7 +376,7 @@ lemma toMatrix_antiFundRep (g : SU N) :
       = (g⁻¹).1ᵀ
 ```
 
-**`suTensor.toMatrix_rep_inv`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L448).
+**`suTensor.toMatrix_rep_inv`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L448).
 
 > On every color, the matrix of `g⁻¹` is the conjugate transpose of the matrix of `g`.
 
@@ -386,7 +386,7 @@ lemma toMatrix_rep_inv (k : Color) (g : SU N) :
       = (LinearMap.toMatrix (basis N k) (basis N k) (rep N k g))ᴴ
 ```
 
-**`suTensor.isAdjointClosed`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L466).
+**`suTensor.isAdjointClosed`**, a lemma, [line 466](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean#L466).
 
 > Every list of colors of the `SU(N)` tensors is closed under adjoints, with `g' = g⁻¹`.
 
@@ -401,4 +401,4 @@ lemma isAdjointClosed {n : ℕ} (c : Fin n → Color) : (suTensor N).IsAdjointCl
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean)

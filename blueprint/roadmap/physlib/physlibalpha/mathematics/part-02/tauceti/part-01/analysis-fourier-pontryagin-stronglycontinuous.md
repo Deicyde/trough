@@ -8,7 +8,7 @@ proof: formalized
 
 # Matrix coefficients of strongly continuous unitary representations
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.StronglyContinuous`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean): 1 declaration, 1 with a docstring; 16 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.StronglyContinuous`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean): 1 declaration, 1 with a docstring; 16 private, not shown.
 
 > Let `π` be a strongly continuous unitary representation of a locally compact abelian group `G` on a
 > complex Hilbert space `H`, and let `ξ ∈ H`.
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.Fourier.Pontryagin.Strongl
 
 ## A. Development
 
-**`ContRepresentation.exists_pontryaginMeasureTransform_eq_inner`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean#L295).
+**`ContRepresentation.exists_pontryaginMeasureTransform_eq_inner`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean#L295).
 
 > **Spectral theorem for strongly continuous unitary representations**, cyclic form. For a
 > strongly continuous unitary representation `π` of a locally compact abelian group `G` on a
@@ -79,4 +79,4 @@ lemma ContRepresentation.exists_pontryaginMeasureTransform_eq_inner
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/Fourier/Pontryagin/StronglyContinuous.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Distributions
 
-The module `Physlib.Mathematics.Distribution.TemperedDistribution`, [Physlib/Mathematics/Distribution/TemperedDistribution.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean): 28 declarations, 18 with a docstring; 3 private, not shown.
+The module `Physlib.Mathematics.Distribution.TemperedDistribution`, [Physlib/Mathematics/Distribution/TemperedDistribution.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean): 28 declarations, 18 with a docstring; 3 private, not shown.
 
 ## i. Overview
 
@@ -76,7 +76,7 @@ The module `Physlib.Mathematics.Distribution.TemperedDistribution`, [Physlib/Mat
 > We use the notation `E →d[𝕜] F` to denote the space of distributions from `E` to `F`
 > where `E` is a normed vector space over `ℝ` and `F` is a normed vector space over `𝕜`.
 
-**`Physlib.Distribution`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L115).
+**`Physlib.Distribution`**, an abbrev, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L115).
 
 > An `F`-valued distribution on `E` (where `E` is a normed vector space over `ℝ` and `F` is a
 > normed vector space over `𝕜`) is a continuous linear map `𝓢(E, 𝕜) →L[𝕜] F` where `𝒮(E, 𝕜)` is
@@ -97,7 +97,7 @@ abbrev Distribution (𝕜 E F : Type) [RCLike 𝕜] [NormedAddCommGroup E] [Norm
 > `𝓢(E, 𝕜) →ₗ[𝕜] F` (without the continuity requirement) by imposing a condition
 > on the size of `u` applied to `η`.
 
-**`Physlib.Distribution.ofLinear`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L150).
+**`Physlib.Distribution.ofLinear`**, a def, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L150).
 
 > The construction of a distribution from the following data:
 > 1. We take a finite set `s` of pairs `(k, n) ∈ ℕ × ℕ` that will be explained later.
@@ -115,7 +115,7 @@ def ofLinear (s : Finset (ℕ × ℕ)) (u : 𝓢(E, 𝕜) →ₗ[𝕜] F)
       ‖u η‖ ≤ C * (‖x‖ ^ k * ‖iteratedFDeriv ℝ n η x‖)) : E →d[𝕜] F
 ```
 
-**`Physlib.Distribution.ofLinear_apply`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L163).
+**`Physlib.Distribution.ofLinear_apply`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L163).
 
 ```lean
 lemma ofLinear_apply (s : Finset (ℕ × ℕ)) (u : 𝓢(E, 𝕜) →ₗ[𝕜] F)
@@ -139,7 +139,7 @@ lemma ofLinear_apply (s : Finset (ℕ × ℕ)) (u : 𝓢(E, 𝕜) →ₗ[𝕜] F
 > `map_sum (fderivD 𝕜) u s`, since `fderivD 𝕜` is a linear map. Integrals of families of
 > distributions are treated in the next subsection.
 
-**`Physlib.Distribution.fderivD`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L208).
+**`Physlib.Distribution.fderivD`**, a def, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L208).
 
 > The Fréchet derivative of a distribution.
 >
@@ -159,7 +159,7 @@ lemma ofLinear_apply (s : Finset (ℕ × ℕ)) (u : 𝓢(E, 𝕜) →ₗ[𝕜] F
 def fderivD [FiniteDimensional ℝ E] : (E →d[𝕜] F) →ₗ[𝕜] (E →d[𝕜] (E →L[ℝ] F))
 ```
 
-**`Physlib.Distribution.fderivD_apply`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L261).
+**`Physlib.Distribution.fderivD_apply`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L261).
 
 ```lean
 lemma fderivD_apply [FiniteDimensional ℝ E] (u : E →d[𝕜] F) (η : 𝓢(E, 𝕜)) (v : E) :
@@ -174,7 +174,7 @@ lemma fderivD_apply [FiniteDimensional ℝ E] (u : E →d[𝕜] F) (η : 𝓢(E,
 > integral is continuous on the test functions. Distributional differentiation then commutes with
 > the integral after evaluation at a test function and a direction.
 
-**`Physlib.Distribution.integrable_eval_of_bound`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L293).
+**`Physlib.Distribution.integrable_eval_of_bound`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L293).
 
 > Evaluations of a distribution family with an integrable seminorm bound are integrable.
 
@@ -182,7 +182,7 @@ lemma fderivD_apply [FiniteDimensional ℝ E] (u : E →d[𝕜] F) (η : 𝓢(E,
 lemma integrable_eval_of_bound (η : 𝓢(E, 𝕜)) : Integrable (fun a => u a η) μ
 ```
 
-**`Physlib.Distribution.integralOfBound`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L300).
+**`Physlib.Distribution.integralOfBound`**, a def, [line 300](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L300).
 
 > The weak integral of a family of distributions with an integrable Schwartz seminorm bound.
 > It acts on a test function by integrating the evaluations of the family.
@@ -191,7 +191,7 @@ lemma integrable_eval_of_bound (η : 𝓢(E, 𝕜)) : Integrable (fun a => u a �
 def integralOfBound : E →d[𝕜] F
 ```
 
-**`Physlib.Distribution.integralOfBound_apply`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L321).
+**`Physlib.Distribution.integralOfBound_apply`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L321).
 
 > Evaluation of the weak integral is the integral of the evaluations.
 
@@ -200,7 +200,7 @@ lemma integralOfBound_apply (η : 𝓢(E, 𝕜)) :
     integralOfBound u s b hb hmeas hbound hb_nonneg η = ∫ a, u a η ∂μ
 ```
 
-**`Physlib.Distribution.integrable_fderivD_eval_of_bound`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L328).
+**`Physlib.Distribution.integrable_fderivD_eval_of_bound`**, a lemma, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L328).
 
 > Differentiated evaluations of a family with an integrable seminorm bound are integrable.
 
@@ -209,7 +209,7 @@ lemma integrable_fderivD_eval_of_bound (η : 𝓢(E, 𝕜)) (v : E) :
     Integrable (fun a => fderivD 𝕜 (u a) η v) μ
 ```
 
-**`Physlib.Distribution.fderivD_integralOfBound_apply`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L335).
+**`Physlib.Distribution.fderivD_integralOfBound_apply`**, a lemma, [line 335](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L335).
 
 > Distributional differentiation commutes with the weak integral after evaluation at a test
 > function and a direction.
@@ -227,7 +227,7 @@ lemma fderivD_integralOfBound_apply (η : 𝓢(E, 𝕜)) (v : E) :
 > of the distribution `u` is the distribution which takes `η` to `⟪u, F[η]⟫` where `F[η]` is the
 > fourier transform of `η`.
 
-**`Physlib.Distribution.fourierTransform`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L361).
+**`Physlib.Distribution.fourierTransform`**, a def, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L361).
 
 > Definition of Fourier transform of distribution: Let `u` be a distribution. Then its Fourier
 > transform is `F{u}` where given a test function `η`, `F{u}(η) := u(F{η})`.
@@ -236,7 +236,7 @@ lemma fderivD_integralOfBound_apply (η : 𝓢(E, 𝕜)) (v : E) :
 def fourierTransform : (E →d[ℂ] F) →ₗ[ℂ] (E →d[ℂ] F)
 ```
 
-**`Physlib.Distribution.fourierTransform_apply`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L366).
+**`Physlib.Distribution.fourierTransform_apply`**, a lemma, [line 366](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L366).
 
 ```lean
 lemma fourierTransform_apply (u : E →d[ℂ] F) (η : 𝓢(E, ℂ)) :
@@ -248,7 +248,7 @@ lemma fourierTransform_apply (u : E →d[ℂ] F) (η : 𝓢(E, ℂ)) :
 > Mathlib's tempered distributions use the pointwise convergence topology on the same underlying
 > continuous linear maps. The following construction converts Physlib distributions to that API.
 
-**`Physlib.Distribution.toTemperedDistribution`**, a def, [line 385](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L385).
+**`Physlib.Distribution.toTemperedDistribution`**, a def, [line 385](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L385).
 
 > The Mathlib tempered distribution associated to a Physlib distribution.
 
@@ -256,14 +256,14 @@ lemma fourierTransform_apply (u : E →d[ℂ] F) (η : 𝓢(E, ℂ)) :
 def toTemperedDistribution (u : E →d[ℂ] F) : 𝓢'(E, F)
 ```
 
-**`Physlib.Distribution.toTemperedDistribution_apply`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L389).
+**`Physlib.Distribution.toTemperedDistribution_apply`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L389).
 
 ```lean
 lemma toTemperedDistribution_apply (u : E →d[ℂ] F) (η : 𝓢(E, ℂ)) :
     u.toTemperedDistribution η = u η
 ```
 
-**`Physlib.Distribution.toTemperedDistribution_fourierTransform`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L402).
+**`Physlib.Distribution.toTemperedDistribution_fourierTransform`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L402).
 
 > Conversion to Mathlib tempered distributions commutes with the Fourier transform.
 
@@ -285,7 +285,7 @@ lemma toTemperedDistribution_fourierTransform (u : E →d[ℂ] F) :
 > The constant distribution is the distribution which corresponds to a constant function,
 > it takes `η` to the integral of `η` over the volume measure.
 
-**`Physlib.Distribution.const`**, a def, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L438).
+**`Physlib.Distribution.const`**, a def, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L438).
 
 > The constant distribution `E →d[𝕜] F`, for a given `c : F` this corresponds
 > to the integral `∫ x, η x • c ∂MeasureTheory.volume`.
@@ -294,7 +294,7 @@ lemma toTemperedDistribution_fourierTransform (u : E →d[ℂ] F) :
 def const [hμ : Measure.HasTemperateGrowth (volume (α := E))] (c : F) : E →d[𝕜] F
 ```
 
-**`Physlib.Distribution.const_apply`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L481).
+**`Physlib.Distribution.const_apply`**, a lemma, [line 481](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L481).
 
 ```lean
 lemma const_apply [hμ : Measure.HasTemperateGrowth (volume (α := E))] (c : F)
@@ -302,7 +302,7 @@ lemma const_apply [hμ : Measure.HasTemperateGrowth (volume (α := E))] (c : F)
     const 𝕜 E c η = ∫ x, η x • c ∂MeasureTheory.volume
 ```
 
-**`Physlib.Distribution.fderivD_const`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L491).
+**`Physlib.Distribution.fderivD_const`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L491).
 
 ```lean
 lemma fderivD_const [hμ : Measure.IsAddHaarMeasure (volume (α := E))]
@@ -315,7 +315,7 @@ lemma fderivD_const [hμ : Measure.IsAddHaarMeasure (volume (α := E))]
 > Every finite measure has temperate growth, so integrating Schwartz maps against it defines a
 > scalar distribution.
 
-**`Physlib.Distribution.ofFiniteMeasure`**, a def, [line 527](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L527).
+**`Physlib.Distribution.ofFiniteMeasure`**, a def, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L527).
 
 > The scalar distribution associated to a finite measure, acting on a Schwartz map by
 > integration.
@@ -324,14 +324,14 @@ lemma fderivD_const [hμ : Measure.IsAddHaarMeasure (volume (α := E))]
 def ofFiniteMeasure (μ : Measure E) [IsFiniteMeasure μ] : E →d[𝕜] 𝕜
 ```
 
-**`Physlib.Distribution.ofFiniteMeasure_apply`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L531).
+**`Physlib.Distribution.ofFiniteMeasure_apply`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L531).
 
 ```lean
 lemma ofFiniteMeasure_apply (μ : Measure E) [IsFiniteMeasure μ] (η : 𝓢(E, 𝕜)) :
     ofFiniteMeasure 𝕜 μ η = ∫ x, η x ∂μ
 ```
 
-**`Physlib.Distribution.toTemperedDistribution_ofFiniteMeasure`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L538).
+**`Physlib.Distribution.toTemperedDistribution_ofFiniteMeasure`**, a lemma, [line 538](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L538).
 
 > The finite-measure distribution agrees with Mathlib's tempered distribution associated to the
 > same measure.
@@ -341,7 +341,7 @@ lemma toTemperedDistribution_ofFiniteMeasure (μ : Measure E) [IsFiniteMeasure �
     (ofFiniteMeasure ℂ μ).toTemperedDistribution = μ.toTemperedDistribution
 ```
 
-**`Physlib.Distribution.ofFiniteMeasure_eq_iff`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L638).
+**`Physlib.Distribution.ofFiniteMeasure_eq_iff`**, a lemma, [line 638](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L638).
 
 > The complex scalar distribution associated to a finite measure determines the measure.
 
@@ -359,7 +359,7 @@ lemma ofFiniteMeasure_eq_iff
 > `η` to `η a`. We also define `diracDelta'` which takes in an element of `v` of `F` and
 > outputs `η a • v`.
 
-**`Physlib.Distribution.diracDelta`**, a def, [line 668](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L668).
+**`Physlib.Distribution.diracDelta`**, a def, [line 668](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L668).
 
 > Dirac delta distribution `diracDelta 𝕜 a : E →d[𝕜] 𝕜` takes in a test function `η : 𝓢(E, 𝕜)`
 > and outputs `η a`. Intuitively this is an infinite density at a single point `a`.
@@ -368,14 +368,14 @@ lemma ofFiniteMeasure_eq_iff
 def diracDelta (a : E) : E →d[𝕜] 𝕜
 ```
 
-**`Physlib.Distribution.diracDelta_apply`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L672).
+**`Physlib.Distribution.diracDelta_apply`**, a lemma, [line 672](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L672).
 
 ```lean
 lemma diracDelta_apply (a : E) (η : 𝓢(E, 𝕜)) :
     diracDelta 𝕜 a η = η a
 ```
 
-**`Physlib.Distribution.diracDelta'`**, a def, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L679).
+**`Physlib.Distribution.diracDelta'`**, a def, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L679).
 
 > Dirac delta in a given direction `v : F`. `diracDelta' 𝕜 a v` takes in a test function
 > `η : 𝓢(E, 𝕜)` and outputs `η a • v`. Intuitively this is an infinitely intense vector field
@@ -385,7 +385,7 @@ lemma diracDelta_apply (a : E) (η : 𝓢(E, 𝕜)) :
 def diracDelta' (a : E) (v : F) : E →d[𝕜] F
 ```
 
-**`Physlib.Distribution.diracDelta'_apply`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L682).
+**`Physlib.Distribution.diracDelta'_apply`**, a lemma, [line 682](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L682).
 
 ```lean
 lemma diracDelta'_apply (a : E) (v : F) (η : 𝓢(E, 𝕜)) :
@@ -398,7 +398,7 @@ lemma diracDelta'_apply (a : E) (v : F) (η : 𝓢(E, 𝕜)) :
 > from `EuclideanSpace ℝ (Fin d.succ)` to `ℝ` which takes a `η` to the integral of `η` in the
 > upper-half plane (determined by the last coordinate in `EuclideanSpace ℝ (Fin d.succ)`).
 
-**`Physlib.Distribution.heavisideStep`**, a def, [line 700](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L700).
+**`Physlib.Distribution.heavisideStep`**, a def, [line 700](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L700).
 
 > The Heaviside step distribution defined on `(EuclideanSpace ℝ (Fin d.succ)) `
 > equal to `1` in the positive `z`-direction and `0` in the negative `z`-direction.
@@ -407,7 +407,7 @@ lemma diracDelta'_apply (a : E) (v : F) (η : 𝓢(E, 𝕜)) :
 def heavisideStep (d : ℕ) : (EuclideanSpace ℝ (Fin d.succ)) →d[ℝ] ℝ
 ```
 
-**`Physlib.Distribution.heavisideStep_apply`**, a lemma, [line 739](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L739).
+**`Physlib.Distribution.heavisideStep_apply`**, a lemma, [line 739](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean#L739).
 
 ```lean
 lemma heavisideStep_apply (d : ℕ) (η : 𝓢(EuclideanSpace ℝ (Fin d.succ), ℝ)) :
@@ -421,4 +421,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Mathematics/Distribution/TemperedDistribution.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Distribution/TemperedDistribution.lean)
+- [Physlib/Mathematics/Distribution/TemperedDistribution.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Distribution/TemperedDistribution.lean)

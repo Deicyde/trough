@@ -7,7 +7,7 @@ proof: formalized
 
 # A machine that moves to the end of a word
 
-`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean), by Christian Reitwiessner.
+`Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork`, in [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean), by Christian Reitwiessner.
 
 > `forwardWork Symbol` moves the head of its work tape to the right over the word it holds and halts
 > on the frontier, the first blank cell just past the word. It never modifies a tape, never moves the
@@ -28,7 +28,7 @@ proof: formalized
 > * `Turing.MultiTapeTM.runFrom_forwardWork`: its run from the initial state.
 > * `Turing.MultiTapeTM.workTapePos_runFrom_forwardWork`: its head stays within `[p, w.length]`.
 
-`Turing.MultiTapeTM.forwardWork` (definition, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L41))
+`Turing.MultiTapeTM.forwardWork` (definition, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L41))
 
 > The one-tape machine that moves its head to the end of its word. Over a symbol it moves right;
 > on the first blank it halts without moving.
@@ -37,7 +37,7 @@ proof: formalized
 public def forwardWork (Symbol : Type*) : MultiTapeTM 1 Symbol Unit
 ```
 
-`Turing.MultiTapeTM.runFrom_forwardWork` (theorem, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L72))
+`Turing.MultiTapeTM.runFrom_forwardWork` (theorem, [line 72](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L72))
 
 > **The run of the machine that moves to the end of the word.** Started with the tape holding a
 > word `w` and the head at a cell `p` with `p + n = w.length`, after `n + 1` steps the machine has
@@ -52,7 +52,7 @@ public theorem runFrom_forwardWork (inpos : Fin (input.length + 2)) (w : List Sy
       ⟨none, inpos, fun _ => tapeOfList w, fun _ => (w.length : ℤ), out⟩
 ```
 
-`Turing.MultiTapeTM.workTapePos_runFrom_forwardWork` (theorem, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L83))
+`Turing.MultiTapeTM.workTapePos_runFrom_forwardWork` (theorem, [line 83](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L83))
 
 > At every step, the head is within `[p, w.length]`.
 
@@ -71,5 +71,5 @@ public theorem workTapePos_runFrom_forwardWork (inpos : Fin (input.length + 2))
 
 ## Sources
 
-- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean)
+- [Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean)
 - [Declaration ledger](../../../../../../../sources/cslib/Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork.json)

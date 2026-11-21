@@ -8,11 +8,11 @@ proof: formalized
 
 # Physlib.Meta.Remark.Basic
 
-The module `Physlib.Meta.Remark.Basic`, [Physlib/Meta/Remark/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Remark/Basic.lean): 2 declarations, 2 with a docstring.
+The module `Physlib.Meta.Remark.Basic`, [Physlib/Meta/Remark/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Remark/Basic.lean): 2 declarations, 2 with a docstring.
 
 ## Underlying structure for remarks
 
-**`Physlib.RemarkInfo`**, a structure, [line 21](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Remark/Basic.lean#L21).
+**`Physlib.RemarkInfo`**, a structure, [line 21](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Remark/Basic.lean#L21).
 
 > The information from a `remark ...` command. To be used in a note file
 
@@ -30,7 +30,7 @@ structure RemarkInfo where
   nameSpace : Name
 ```
 
-**`Physlib.elabRemark`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Remark/Basic.lean#L46).
+**`Physlib.elabRemark`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Remark/Basic.lean#L46).
 
 > Elaborator for the `note ...` command
 
@@ -44,4 +44,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/Meta/Remark/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Remark/Basic.lean)
+- [Physlib/Meta/Remark/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Meta/Remark/Basic.lean)

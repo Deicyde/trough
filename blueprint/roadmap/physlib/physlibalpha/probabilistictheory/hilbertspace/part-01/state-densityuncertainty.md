@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.expectation_ofDensity, ProbabilisticTheory.UnitalPositiveLinearMap.covariance_ofDensity, ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofDensity, ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_ofDensity, ProbabilisticTheory.UnitalPositiveLinearMap.trace_rankOne_self, ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_rankOne
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.expectation_ofDensity, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covariance_ofDensity, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofDensity, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_ofDensity, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.trace_rankOne_self, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_rankOne
 statement: formalized
 proof: formalized
 ---
 
 # Uncertainty in density-operator states
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.DensityUncertainty`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.DensityUncertainty`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean): 6 declarations, 6 with a docstring.
 
 > Expectation, covariance, variance and Robertson–Schrödinger for density-operator states.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.State.DensityUncertain
 
 ## A. Statistics of density states as traces
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.expectation_ofDensity`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L61).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.expectation_ofDensity`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L61).
 
 > The expectation of an observable in a density state is the real part of `Tr(a ρ)`.
 
@@ -42,7 +42,7 @@ lemma expectation_ofDensity (a : Observable (H →L[ℂ] H)) :
     (ofDensity hpos hnorm)⟨a⟩ = ((↑(a : H →L[ℂ] H) * ↑ρ : H →ₗ[ℂ] H).trace ℂ H).re
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.covariance_ofDensity`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L66).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.covariance_ofDensity`**, a lemma, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L66).
 
 > The covariance in a density state is `Re Tr(δa δb ρ)` for the centered observables.
 
@@ -53,7 +53,7 @@ lemma covariance_ofDensity (a b : Observable (H →L[ℂ] H)) :
         centered (ofDensity hpos hnorm) b) * ↑ρ : H →ₗ[ℂ] H).trace ℂ H).re
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofDensity`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L73).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.variance_ofDensity`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L73).
 
 > The variance in a density state is `Re Tr(δa² ρ)` for the centered observable.
 
@@ -66,7 +66,7 @@ lemma variance_ofDensity (a : Observable (H →L[ℂ] H)) :
 
 ## B. Robertson–Schrödinger for density operators
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_ofDensity`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.robertson_schrodinger_ofDensity`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L85).
 
 > **Robertson–Schrödinger relation for mixed states.** For a density operator `ρ` and
 > observables `a`, `b` with centered parts `δa`, `δb`,
@@ -86,7 +86,7 @@ lemma robertson_schrodinger_ofDensity (a b : Observable (H →L[ℂ] H)) :
 
 ## C. Vector states as rank-one density states
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.trace_rankOne_self`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.trace_rankOne_self`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L103).
 
 > For a unit vector `ψ`, the projection `|ψ⟩⟨ψ|` has trace one.
 
@@ -95,7 +95,7 @@ lemma trace_rankOne_self {ψ : H} (h : ‖ψ‖ = 1) :
     ((InnerProductSpace.rankOne ℂ ψ ψ : H →L[ℂ] H) : H →ₗ[ℂ] H).trace ℂ H = 1
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_rankOne`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.ofDensity_rankOne`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean#L110).
 
 > The density state of the projection `|ψ⟩⟨ψ|` is the vector state of `ψ`: pure states are
 > the rank-one mixed states.
@@ -119,4 +119,4 @@ lemma ofDensity_rankOne {ψ : H} (h : ‖ψ‖ = 1) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean)

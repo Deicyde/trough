@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.JB.jpow_eq_pow, ProbabilisticTheory.JB.moment_eq_integral, ProbabilisticTheory.JB.apply_eq_integral, ProbabilisticTheory.JB.variance_eq_integral_sq_sub
+lean: PhyslibAlpha.ProbabilisticTheory.JB.jpow_eq_pow, PhyslibAlpha.ProbabilisticTheory.JB.moment_eq_integral, PhyslibAlpha.ProbabilisticTheory.JB.apply_eq_integral, PhyslibAlpha.ProbabilisticTheory.JB.variance_eq_integral_sq_sub
 statement: formalized
 proof: formalized
 ---
 
 # Spectral formulas for Jordan moments
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Statistics`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Statistics`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean): 4 declarations, 4 with a docstring.
 
 > Jordan moments and the variance of an observable as integrals against its spectral measure.
 
@@ -33,7 +33,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.Statis
 
 ## A. Jordan powers of a single element are ordinary powers
 
-**`ProbabilisticTheory.JB.jpow_eq_pow`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jpow_eq_pow`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L60).
 
 > Jordan powers of a self-adjoint element are its ordinary powers.
 
@@ -44,7 +44,7 @@ lemma jpow_eq_pow (a : selfAdjoint A) (n : ℕ) :
 
 ## B. Moments as integrals against the outcome distribution
 
-**`ProbabilisticTheory.JB.moment_eq_integral`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L77).
+**`PhyslibAlpha.ProbabilisticTheory.JB.moment_eq_integral`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L77).
 
 > The `n`-th moment of `a` in the
 > state `ω` (restricted from a state on the whole C⋆-algebra) is `∫ y^n dμ_{ω,a}` — exactly
@@ -56,7 +56,7 @@ lemma moment_eq_integral (ω : 𝓢[ℂ, A]) (a : selfAdjoint A) (n : ℕ) :
       ∫ y, y ^ n ∂(realSpectralMeasure ω a)
 ```
 
-**`ProbabilisticTheory.JB.apply_eq_integral`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.JB.apply_eq_integral`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L92).
 
 > **The mean is the first moment, as an integral.** Specializing `moment_eq_integral` to `n = 1`
 > gives `ω(a) = ∫ y \, d\mu_{\omega,a}`, since `IsJordanOrderUnit.moment_one` identifies the first
@@ -67,7 +67,7 @@ lemma apply_eq_integral (ω : 𝓢[ℂ, A]) (a : selfAdjoint A) :
     ω.onObservables a = ∫ y, y ∂(realSpectralMeasure ω a)
 ```
 
-**`ProbabilisticTheory.JB.variance_eq_integral_sq_sub`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L99).
+**`PhyslibAlpha.ProbabilisticTheory.JB.variance_eq_integral_sq_sub`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean#L99).
 
 > **The variance is `∫ y² dμ - (∫ y dμ)²`** for the distribution `μ` of the observable.
 
@@ -84,4 +84,4 @@ lemma variance_eq_integral_sq_sub (ω : 𝓢[ℂ, A]) (a : selfAdjoint A) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean)

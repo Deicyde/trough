@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.19 The Jacobson radical of a ring
 
-Section 10.19 of the Stacks Project, [Tag 0AMD](https://stacks.math.columbia.edu/tag/0AMD). 2 tags here are carried by 2 declarations of the repository (all in StacksCore) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 10.19 of the Stacks Project, [Tag 0AMD](https://stacks.math.columbia.edu/tag/0AMD). 2 tags here are carried by 2 declarations of the repository (all in StacksCore) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AME, a lemma
 
 [Tag 0AME](https://stacks.math.columbia.edu/tag/0AME) in the Stacks Project.
 
-**`Ideal.le_ringJacobson_iff_isUnit_one_add`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Jacobson/Ideal.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Jacobson/Ideal.lean#L35). The attribute's comment: “(1) ⇔ (2)”.
+**`Ideal.le_ringJacobson_iff_isUnit_one_add`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Jacobson/Ideal.lean, line 35](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Jacobson/Ideal.lean#L35). The attribute's comment: “(1) ⇔ (2)”.
 
 > **Stacks 0AME**, (1) ⇔ (2): an ideal is contained in the Jacobson radical if and only if
 > every element of `1 + I` is a unit.
@@ -27,7 +27,7 @@ theorem le_ringJacobson_iff_isUnit_one_add (I : Ideal R) :
     I ≤ Ring.jacobson R ↔ ∀ x ∈ I, IsUnit (1 + x)
 ```
 
-**`Ideal.isUnit_of_isUnit_quotient_mk`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Jacobson/Ideal.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Jacobson/Ideal.lean#L49). The attribute's comment: “in this case a unit mod I is a unit”.
+**`Ideal.isUnit_of_isUnit_quotient_mk`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Jacobson/Ideal.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Jacobson/Ideal.lean#L49). The attribute's comment: “in this case a unit mod I is a unit”.
 
 > **Stacks 0AME**, the closing clause: if `I` is contained in the Jacobson radical, then an
 > element of `R` whose image in `R ⧸ I` is a unit is itself a unit.
@@ -47,7 +47,7 @@ theorem isUnit_of_isUnit_quotient_mk (I : Ideal R) (h : I ≤ Ring.jacobson R) (
 
 Declarations registered for the tag:
 
-- [`IsLocalHom.of_comap_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalHom.of_comap_surjective#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L49) (StacksCore).
+- [`IsLocalHom.of_comap_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalHom.of_comap_surjective#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L49) (StacksCore).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.19, Tag 0AMD](https://stacks.math.columbia.edu/tag/0AMD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 57.15 Relative equivalences
 
-Section 57.15 of the Stacks Project, [Tag 0G0H](https://stacks.math.columbia.edu/tag/0G0H). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 57.15 of the Stacks Project, [Tag 0G0H](https://stacks.math.columbia.edu/tag/0G0H). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0G0I, a definition
 
 [Tag 0G0I](https://stacks.math.columbia.edu/tag/0G0I) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRelativeEquivalenceKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalence.lean#L123). The attribute's comment: “the Fourier-Mukai kernel of a relative equivalence from `X` to `Y` over `S`, as the predicate on a perfect object of `D(𝒪_{X ×_S Y})` asserting the existence of a perfect `K'` on `Y ×_S X` with the two convolution isomorphisms; stated for arbitrary `f` and `g` rather than only smooth proper ones”.
+**`AlgebraicGeometry.IsRelativeEquivalenceKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalence.lean#L123). The attribute's comment: “the Fourier-Mukai kernel of a relative equivalence from `X` to `Y` over `S`, as the predicate on a perfect object of `D(𝒪_{X ×_S Y})` asserting the existence of a perfect `K'` on `Y ×_S X` with the two convolution isomorphisms; stated for arbitrary `f` and `g` rather than only smooth proper ones”.
 
 > **[Stacks, Tag 0G0I]**: `K` is *the Fourier-Mukai kernel of a relative equivalence from `X`
 > to `Y` over `S`*.
@@ -40,7 +40,7 @@ def IsRelativeEquivalenceKernel (K : DerivedCategory (Limits.pullback f g).Modul
 
 [Tag 0G0J](https://stacks.math.columbia.edu/tag/0G0J) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_quasiCoherentFourierMukai_of_isRelativeEquivalenceKernel`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean#L116). The attribute's comment: “Phi\_K : D\_QCoh(O\_X) -> D\_QCoh(O\_Y) is an equivalence”.
+**`AlgebraicGeometry.isEquivalence_quasiCoherentFourierMukai_of_isRelativeEquivalenceKernel`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean#L116). The attribute's comment: “Phi\_K : D\_QCoh(O\_X) -> D\_QCoh(O\_Y) is an equivalence”.
 
 > **[Stacks, Tag 0G0J], the clause for `D_QCoh`.** Let `S` be a scheme, let `f : X ⟶ S` and
 > `g : Y ⟶ S` be smooth and proper, and let `K` be the Fourier-Mukai kernel of a relative
@@ -57,7 +57,7 @@ def IsRelativeEquivalenceKernel (K : DerivedCategory (Limits.pullback f g).Modul
 public alias isEquivalence_quasiCoherentFourierMukai_of_isRelativeEquivalenceKernel
 ```
 
-**`AlgebraicGeometry.isEquivalence_perfectFourierMukai_of_isRelativeEquivalenceKernel`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean#L130). The attribute's comment: “Phi\_K : D\_perf(O\_X) -> D\_perf(O\_Y) is an equivalence”.
+**`AlgebraicGeometry.isEquivalence_perfectFourierMukai_of_isRelativeEquivalenceKernel`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceEquivalences.lean#L130). The attribute's comment: “Phi\_K : D\_perf(O\_X) -> D\_perf(O\_Y) is an equivalence”.
 
 > **[Stacks, Tag 0G0J], the clause for `D_perf`.** Let `S` be a scheme, let `f : X ⟶ S` and
 > `g : Y ⟶ S` be smooth and proper, and let `K` be the Fourier-Mukai kernel of a relative
@@ -74,7 +74,7 @@ public alias isEquivalence_quasiCoherentFourierMukai_of_isRelativeEquivalenceKer
 public alias isEquivalence_perfectFourierMukai_of_isRelativeEquivalenceKernel
 ```
 
-**`AlgebraicGeometry.isEquivalence_quasiCoherentFourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean#L296). The attribute's comment: “Phi\_K : D\_QCoh(O\_X) -> D\_QCoh(O\_Y) is an equivalence”.
+**`AlgebraicGeometry.isEquivalence_quasiCoherentFourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean#L296). The attribute's comment: “Phi\_K : D\_QCoh(O\_X) -> D\_QCoh(O\_Y) is an equivalence”.
 
 > **[Stacks, Tag 0G0J], the clause for `D_QCoh`.** Let `f : X ⟶ S` and `g : Y ⟶ S` be smooth
 > and proper and let `K` be the Fourier-Mukai kernel of a relative equivalence from `X` to `Y` over
@@ -99,7 +99,7 @@ theorem isEquivalence_quasiCoherentFourierMukai
       (isQuasicoherent_homology_of_isRelativeEquivalenceKernel f g hK)).IsEquivalence
 ```
 
-**`AlgebraicGeometry.isEquivalence_perfectFourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean#L325). The attribute's comment: “Phi\_K : D\_perf(O\_X) -> D\_perf(O\_Y) is an equivalence”.
+**`AlgebraicGeometry.isEquivalence_perfectFourierMukai`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceIsEquivalence.lean#L325). The attribute's comment: “Phi\_K : D\_perf(O\_X) -> D\_perf(O\_Y) is an equivalence”.
 
 > **[Stacks, Tag 0G0J], the clause for `D_perf`.** Let `f : X ⟶ S` and `g : Y ⟶ S` be smooth
 > and proper and let `K` be the Fourier-Mukai kernel of a relative equivalence from `X` to `Y` over
@@ -126,7 +126,7 @@ theorem isEquivalence_perfectFourierMukai
 
 [Tag 0G0K](https://stacks.math.columbia.edu/tag/0G0K) in the Stacks Project.
 
-**`AlgebraicGeometry.isRelativeEquivalenceKernel_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceBaseChangeDischarged.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceBaseChangeDischarged.lean#L71). The attribute's comment: “the whole lemma, for an arbitrary base change S1 -> S, with f and g flat, separated and qcqs, which the source's smooth proper f and g are; Tag 08IB is proved by AlgebraicGeometry.derivedBaseChangeIsIsoOnQuasicoherent”.
+**`AlgebraicGeometry.isRelativeEquivalenceKernel_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceBaseChangeDischarged.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceBaseChangeDischarged.lean#L71). The attribute's comment: “the whole lemma, for an arbitrary base change S1 -> S, with f and g flat, separated and qcqs, which the source's smooth proper f and g are; Tag 08IB is proved by AlgebraicGeometry.derivedBaseChangeIsIsoOnQuasicoherent”.
 
 > **[Stacks, Tag 0G0K]: a relative equivalence is stable under base change.** Let `f : X ⟶ S`
 > and `g : Y ⟶ S` be flat, separated, quasi-compact and quasi-separated (for instance smooth and
@@ -156,7 +156,7 @@ theorem isRelativeEquivalenceKernel_baseChange
 
 [Tag 0G0L](https://stacks.math.columbia.edu/tag/0G0L) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isRelativeEquivalenceKernel_of_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceLimitDescent.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceLimitDescent.lean#L749).
+**`AlgebraicGeometry.exists_isRelativeEquivalenceKernel_of_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceLimitDescent.lean, line 749](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DerivedVarieties/FourierMukai/RelativeEquivalenceLimitDescent.lean#L749).
 
 > **[Stacks, Tag 0G0L]: a relative equivalence over a limit of schemes comes from a finite
 > stage.** Let `S = lim S_i` be the limit of a directed inverse system of quasi-compact and
@@ -205,4 +205,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 57.15, Tag 0G0H](https://stacks.math.columbia.edu/tag/0G0H)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

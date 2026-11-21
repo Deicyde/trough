@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.11 Algebraization of formal sections, I
 
-Section 52.11 of the Stacks Project, [Tag 0DXH](https://stacks.math.columbia.edu/tag/0DXH). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.11 of the Stacks Project, [Tag 0DXH](https://stacks.math.columbia.edu/tag/0DXH). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0DXI, a lemma
 
 [Tag 0DXI](https://stacks.math.columbia.edu/tag/0DXI) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_toLimit_homology_derivedCompletion_puncturedSpectrumSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean#L213). The attribute's comment: “the whole lemma: for `(A, 𝔪)` Noetherian local with punctured spectrum `U`, a coherent `𝒪_U`-module `ℱ` and an ideal `I ⊆ A`, the comparison map `Hⁱ(RΓ(U,ℱ)^∧) ⟶ lim_n Hⁱ(U, ℱ/Iⁿℱ)` is an isomorphism in every degree `i`, the left-hand side being the derived `I`-adic completion in `D(A)` of the derived sections `RΓ(U,ℱ)` and the tower on the right being the adic quotient tower at `I𝒪_U`. The map shown invertible is the comparison map, characterized by the limit projections through an `α` required to exhibit `RΓ(U,ℱ)^∧` as a derived limit of `n ↦ RΓ(U, ℱ/Iⁿℱ)`, sitting in the distinguished Milnor triangle with `1 - shift`”.
+**`Stacks.Algebraization.isIso_toLimit_homology_derivedCompletion_puncturedSpectrumSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean, line 213](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean#L213). The attribute's comment: “the whole lemma: for `(A, 𝔪)` Noetherian local with punctured spectrum `U`, a coherent `𝒪_U`-module `ℱ` and an ideal `I ⊆ A`, the comparison map `Hⁱ(RΓ(U,ℱ)^∧) ⟶ lim_n Hⁱ(U, ℱ/Iⁿℱ)` is an isomorphism in every degree `i`, the left-hand side being the derived `I`-adic completion in `D(A)` of the derived sections `RΓ(U,ℱ)` and the tower on the right being the adic quotient tower at `I𝒪_U`. The map shown invertible is the comparison map, characterized by the limit projections through an `α` required to exhibit `RΓ(U,ℱ)^∧` as a derived limit of `n ↦ RΓ(U, ℱ/Iⁿℱ)`, sitting in the distinguished Milnor triangle with `1 - shift`”.
 
 > **Stacks Project, Tag 0DXI.** Let `(A, 𝔪)` be a Noetherian local ring, let
 > `U = Spec A ∖ {𝔪}` be its punctured spectrum, let `ℱ` be a coherent `𝒪_U`-module and let
@@ -58,7 +58,7 @@ theorem isIso_toLimit_homology_derivedCompletion_puncturedSpectrumSections
           Hi.map α ≫ Hi.map (Pi.π Y n)) ∧ IsIso q
 ```
 
-**`Stacks.Algebraization.exists_homologyIso_limit_derivedCompletion_puncturedSpectrumSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean#L290). The attribute's comment: “the whole lemma read as an isomorphism of `A`-modules: `Hⁱ(RΓ(U,ℱ)^∧) ≅ lim_n Hⁱ(U, ℱ/Iⁿℱ)` in every degree `i`, for `(A, 𝔪)` Noetherian local with punctured spectrum `U`, a coherent `𝒪_U`-module `ℱ` and an ideal `I ⊆ A`. The isomorphism is the comparison map, characterized by the limit projections through an `α` required to exhibit `RΓ(U,ℱ)^∧` as a derived limit of `n ↦ RΓ(U, ℱ/Iⁿℱ)`”.
+**`Stacks.Algebraization.exists_homologyIso_limit_derivedCompletion_puncturedSpectrumSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumDerivedCompletion.lean#L290). The attribute's comment: “the whole lemma read as an isomorphism of `A`-modules: `Hⁱ(RΓ(U,ℱ)^∧) ≅ lim_n Hⁱ(U, ℱ/Iⁿℱ)` in every degree `i`, for `(A, 𝔪)` Noetherian local with punctured spectrum `U`, a coherent `𝒪_U`-module `ℱ` and an ideal `I ⊆ A`. The isomorphism is the comparison map, characterized by the limit projections through an `α` required to exhibit `RΓ(U,ℱ)^∧` as a derived limit of `n ↦ RΓ(U, ℱ/Iⁿℱ)`”.
 
 > **Stacks Project, Tag 0DXI, read as an isomorphism of `A`-modules.** In the situation of
 > `Stacks.Algebraization.isIso_toLimit_homology_derivedCompletion_puncturedSpectrumSections`, the
@@ -95,7 +95,7 @@ theorem exists_homologyIso_limit_derivedCompletion_puncturedSpectrumSections
 
 [Tag 0DXQ](https://stacks.math.columbia.edu/tag/0DXQ) in the Stacks Project.
 
-**`Stacks.Algebraization.coherentFormalAlgebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentSheafPuncturedAlgebraization.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentSheafPuncturedAlgebraization.lean#L216).
+**`Stacks.Algebraization.coherentFormalAlgebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentSheafPuncturedAlgebraization.lean, line 216](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/CoherentSheafPuncturedAlgebraization.lean#L216).
 
 > **Stacks 0DXQ.**  Let `(A, 𝔪)` be a Noetherian local ring which has a dualizing complex and
 > is complete with respect to an ideal `I`.  Set `X = Spec A`, `Y = V(I)` and `U = X ∖ {𝔪}`, and
@@ -189,7 +189,7 @@ theorem coherentFormalAlgebraization (I : Ideal A) (s d : ℤ)
                     (complementCohomologyBase (A := CommRingCat.of A) J M i))
 ```
 
-**`Stacks.Algebraization.PuncturedNeighbourhood.exists_ideal_finite_neighbourhoodCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean#L270). The attribute's comment: “finiteness of H^i(V, ℱ) for i < s, with ℱ = M̃|\_U”.
+**`Stacks.Algebraization.PuncturedNeighbourhood.exists_ideal_finite_neighbourhoodCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean, line 270](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean#L270). The attribute's comment: “finiteness of H^i(V, ℱ) for i < s, with ℱ = M̃|\_U”.
 
 > **Stacks 0DXQ, the finiteness clause.** Let `(A, 𝔪)` be a Noetherian local ring which has a
 > dualizing complex and is `I`-adically complete, let `M` be a finite `A`-module, and assume
@@ -217,7 +217,7 @@ public theorem exists_ideal_finite_neighbourhoodCohomology (I : Ideal A) (s d : 
           ∀ i : ℕ, (i : ℤ) < s → Module.Finite A (neighbourhoodCohomology (M := M) J i)
 ```
 
-**`Stacks.Algebraization.PuncturedNeighbourhood.finite_neighbourhoodCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean#L352). The attribute's comment: “finiteness of H^i(V, ℱ) for i < s, with ℱ = M̃|\_U”.
+**`Stacks.Algebraization.PuncturedNeighbourhood.finite_neighbourhoodCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedNeighbourhoodCohomologyFiniteness.lean#L352). The attribute's comment: “finiteness of H^i(V, ℱ) for i < s, with ℱ = M̃|\_U”.
 
 > **Stacks 0DXQ, the finiteness clause.** Let `(A, 𝔪)` be a Noetherian local ring which has a
 > dualizing complex and is `I`-adically complete, let `M` be a finite `A`-module, and assume
@@ -249,7 +249,7 @@ public theorem finite_neighbourhoodCohomology (I : Ideal A) (s d : ℤ)
 
 [Tag 0DXR](https://stacks.math.columbia.edu/tag/0DXR) in the Stacks Project.
 
-**`Stacks.Algebraization.mono_comparisonMap_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean#L233). The attribute's comment: “the injectivity half of the displayed map, proved with none of the source's hypotheses beyond Noetherian and coherent; the surjectivity half and the finiteness of the two modules hold at the source's own hypotheses, by `Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`”.
+**`Stacks.Algebraization.mono_comparisonMap_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean, line 233](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean#L233). The attribute's comment: “the injectivity half of the displayed map, proved with none of the source's hypotheses beyond Noetherian and coherent; the surjectivity half and the finiteness of the two modules hold at the source's own hypotheses, by `Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`”.
 
 > **Stacks 0DXR, the injectivity half.** The canonical map from the sections of a coherent
 > module `ℱ` on the punctured spectrum `U = Spec(A) ∖ {𝔪}` defined near `U ∩ V(I)` to the
@@ -267,7 +267,7 @@ public theorem mono_comparisonMap_maximalIdeal [F.IsCoherent] :
     Mono (comparisonMap A I (maximalIdeal A) F)
 ```
 
-**`Stacks.Algebraization.mono_comparisonModuleMap_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean#L259). The attribute's comment: “the two sides of the displayed map are A-modules and the map is A-linear, and injective as a map of A-modules; its underlying map of abelian groups is the tag's map, by forget₂\_comparisonModuleMap. The surjectivity half and the finiteness of the two A-modules hold at the source's own hypotheses, by `Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`”.
+**`Stacks.Algebraization.mono_comparisonModuleMap_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean, line 259](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSections.lean#L259). The attribute's comment: “the two sides of the displayed map are A-modules and the map is A-linear, and injective as a map of A-modules; its underlying map of abelian groups is the tag's map, by forget₂\_comparisonModuleMap. The surjectivity half and the finiteness of the two A-modules hold at the source's own hypotheses, by `Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`”.
 
 > **Stacks 0DXR, the `A`-module structures and the `A`-linearity of the displayed map.** The
 > source states its conclusion as an isomorphism *of finite `A`-modules*, so the two sides carry
@@ -292,7 +292,7 @@ public theorem mono_comparisonModuleMap_maximalIdeal [F.IsCoherent] :
     Mono (comparisonModuleMap A I (maximalIdeal A) F)
 ```
 
-**`Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSectionsWhole.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSectionsWhole.lean#L300). The attribute's comment: “the whole statement: the displayed map colim\_V H⁰(V, ℱ) ⟶ lim\_n H⁰(U, ℱ/Iⁿℱ) is an isomorphism of A-modules, and both of its two sides are finite A-modules”.
+**`Stacks.Algebraization.isIso_comparisonModuleMap_and_finite_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSectionsWhole.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PuncturedSpectrumFormalSectionsWhole.lean#L300). The attribute's comment: “the whole statement: the displayed map colim\_V H⁰(V, ℱ) ⟶ lim\_n H⁰(U, ℱ/Iⁿℱ) is an isomorphism of A-modules, and both of its two sides are finite A-modules”.
 
 > **Stacks 0DXR.** Let `(A, 𝔪)` be a Noetherian local ring which has a dualizing complex and is
 > complete with respect to an ideal `I`. Put `X = Spec(A)`, `Y = V(I)` and `U = X ∖ {𝔪}`, and let
@@ -342,4 +342,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.11, Tag 0DXH](https://stacks.math.columbia.edu/tag/0DXH)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

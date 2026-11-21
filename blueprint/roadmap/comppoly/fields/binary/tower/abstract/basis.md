@@ -7,11 +7,11 @@ proof: formalized
 
 # Abstract Binary Tower Basis
 
-`CompPoly.Fields.Binary.Tower.Abstract.Basis`, in [CompPoly/Fields/Binary/Tower/Abstract/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean), by Quang Dao, Chung Thai Nguyen.
+`CompPoly.Fields.Binary.Tower.Abstract.Basis`, in [CompPoly/Fields/Binary/Tower/Abstract/Basis.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean), by Quang Dao, Chung Thai Nguyen.
 
 > Basis constructions and index-casting lemmas for abstract binary tower extensions.
 
-`BinaryTower.hli_level_diff_0` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L27))
+`BinaryTower.hli_level_diff_0` (definition, [line 27](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L27))
 
 ```lean
 def hli_level_diff_0 (l : ℕ) :
@@ -19,7 +19,7 @@ def hli_level_diff_0 (l : ℕ) :
   @Basis (Fin 1) (BTField l) (BTField l) _ _ instAlgebra.toModule
 ```
 
-`BinaryTower.BTField.isScalarTower_succ_right` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L59))
+`BinaryTower.BTField.isScalarTower_succ_right` (definition, [line 59](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L59))
 
 > Reducible Prop-valued helper for `letI` scalar-tower instances.
 
@@ -27,7 +27,7 @@ def hli_level_diff_0 (l : ℕ) :
 def BTField.isScalarTower_succ_right (l r : ℕ) (h_le : l ≤ r)
 ```
 
-`BinaryTower.multilinearBasis` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L68))
+`BinaryTower.multilinearBasis` (definition, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L68))
 
 > The multilinear basis for `BTField τ` over `BTField k` is the set of multilinear monomials
 > in the tower generators `Z(k+1), ..., Z(τ)`.
@@ -39,7 +39,7 @@ def multilinearBasis (l r : ℕ) (h_le : l ≤ r) :
     Basis (Fin (2 ^ (r - l))) (BTField l) (BTField r)
 ```
 
-`BinaryTower.BTField.PowerBasis.dim_of_eq_rec` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L120))
+`BinaryTower.BTField.PowerBasis.dim_of_eq_rec` (theorem, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L120))
 
 ```lean
 theorem BTField.PowerBasis.dim_of_eq_rec
@@ -56,7 +56,7 @@ theorem BTField.PowerBasis.dim_of_eq_rec
     = b.dim
 ```
 
-`BinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L137))
+`BinaryTower.PowerBasis.cast_basis_succ_of_eq_rec_apply` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L137))
 
 ```lean
 theorem PowerBasis.cast_basis_succ_of_eq_rec_apply
@@ -91,7 +91,7 @@ theorem PowerBasis.cast_basis_succ_of_eq_rec_apply
     left k = right
 ```
 
-`BinaryTower.algebraMap_𝕏_eq_of_index_eq` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L179))
+`BinaryTower.algebraMap_𝕏_eq_of_index_eq` (lemma, [line 179](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L179))
 
 > When two indices are equal, the tower algebra maps send the respective 𝕏 to the same element.
 
@@ -106,7 +106,7 @@ lemma algebraMap_𝕏_eq_of_index_eq (r k m : ℕ) (h_k_le : k + 1 ≤ r) (h_m_l
 > The basis element at index `j` is the product of the tower generators at
 > the ON bits in binary representation of `j`.
 
-`BinaryTower.multilinearBasis_apply` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L193))
+`BinaryTower.multilinearBasis_apply` (theorem, [line 193](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean#L193))
 
 ```lean
 theorem multilinearBasis_apply (r : ℕ) : ∀ l : ℕ, (h_le : l ≤ r) → ∀ (j : Fin (2  ^ (r - l))),
@@ -123,5 +123,5 @@ theorem multilinearBasis_apply (r : ℕ) : ∀ l : ℕ, (h_le : l ≤ r) → ∀
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Tower/Abstract/Basis.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean)
+- [CompPoly/Fields/Binary/Tower/Abstract/Basis.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Tower/Abstract/Basis.lean)
 - [Declaration ledger](../../../../../../sources/comppoly/CompPoly.Fields.Binary.Tower.Abstract.Basis.json)

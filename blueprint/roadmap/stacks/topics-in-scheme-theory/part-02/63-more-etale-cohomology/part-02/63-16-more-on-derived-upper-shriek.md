@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.16 More on derived upper shriek
 
-Section 63.16 of the Stacks Project, [Tag 0GLJ](https://stacks.math.columbia.edu/tag/0GLJ). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 63.16 of the Stacks Project, [Tag 0GLJ](https://stacks.math.columbia.edu/tag/0GLJ). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GLK, a lemma
 
 [Tag 0GLK](https://stacks.math.columbia.edu/tag/0GLK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.derivedUpperShriek_homology_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AffineEtaleHomology.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AffineEtaleHomology.lean#L92). References: SGA 4½ Arcata (4.5.1), “more general”; SGA 7 XIII (2.1.6), “more general”.
+**`Stacks.EtaleCohomology.derivedUpperShriek_homology_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AffineEtaleHomology.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AffineEtaleHomology.lean#L92). References: SGA 4½ Arcata (4.5.1), “more general”; SGA 7 XIII (2.1.6), “more general”.
 
 > **Stacks Project, Tag 0GLK.** Let `f : X ⟶ Y` be a separated finite type morphism of
 > quasi-compact and quasi-separated schemes, let `Λ` be a torsion ring (`n = 0` in `Λ` for some
@@ -44,7 +44,7 @@ theorem derivedUpperShriek_homology_affineEtale {X Y : Scheme.{u}} (f : X ⟶ Y)
               ((derivedLowerShriekUnbounded.{u, 0} f j Λ).rightAdjoint.obj K)))
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L281). The attribute's comment: “D⁺ variant: the comparison of the two sheafifications given by the adjunction Rf\_! ⊣ Uf, for an explicit right adjoint Uf of Rf\_! on D⁺”.
+**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 281](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L281). The attribute's comment: “D⁺ variant: the comparison of the two sheafifications given by the adjunction Rf\_! ⊣ Uf, for an explicit right adjoint Uf of Rf\_! on D⁺”.
 
 > **D⁺ variant of Stacks Tag 0GLK, the adjunction step.** For an explicit right adjoint
 > `Uf` of `Rf_!` on `D⁺`, the sheafification of the source's presheaf
@@ -65,7 +65,7 @@ def affineEtaleSheafifiedHomIso {X Y : Scheme.{u}} {f : X ⟶ Y}
         (affineEtaleUpperShriekHomPresheaf.{u, r} Λ X (Uf.obj K) n)
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIsoOfToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L305). The attribute's comment: “D⁺ variant: the comparison of the two sheafifications, for an explicit right adjoint of the proper pushforward R(fbar)\_* on D⁺; the right adjoint of Rj\_! along the open immersion is constructed”.
+**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIsoOfToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 305](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L305). The attribute's comment: “D⁺ variant: the comparison of the two sheafifications, for an explicit right adjoint of the proper pushforward R(fbar)\_* on D⁺; the right adjoint of Rj\_! along the open immersion is constructed”.
 
 > **D⁺ variant of Stacks Tag 0GLK, the adjunction step, built from a right adjoint of the proper
 > pushforward.**
@@ -90,7 +90,7 @@ def affineEtaleSheafifiedHomIsoOfToBase {X Y : Scheme.{u}} {f : X ⟶ Y}
           ((Ubar ⋙ etaleModuleDerivedRestriction.{u, r} Λ j.immersion).obj K) n)
 ```
 
-**`Stacks.EtaleCohomology.derivedUpperShriekHomologyAffineEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L340). The attribute's comment: “D⁺ variant, for an explicit right adjoint Uf of Rf\_! on D⁺ and with the identification of the sheafified Hom presheaf of Uf K with its cohomology sheaf passed as an argument; the unbounded statement is derivedUpperShriek\_homology\_affineEtale”.
+**`Stacks.EtaleCohomology.derivedUpperShriekHomologyAffineEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L340). The attribute's comment: “D⁺ variant, for an explicit right adjoint Uf of Rf\_! on D⁺ and with the identification of the sheafified Hom presheaf of Uf K with its cohomology sheaf passed as an argument; the unbounded statement is derivedUpperShriek\_homology\_affineEtale”.
 
 > **D⁺ variant of Stacks Tag 0GLK, with an explicit right adjoint and the sheafified
 > cohomology identification as an argument.** The full statement of the tag, on unbounded derived
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.16, Tag 0GLJ](https://stacks.math.columbia.edu/tag/0GLJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

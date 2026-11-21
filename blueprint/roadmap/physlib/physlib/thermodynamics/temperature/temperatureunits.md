@@ -8,7 +8,7 @@ proof: formalized
 
 # Units on Temperature
 
-The module `Physlib.Thermodynamics.Temperature.TemperatureUnits`, [Physlib/Thermodynamics/Temperature/TemperatureUnits.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean): 7 declarations (1 instance with no name), 6 with a docstring.
+The module `Physlib.Thermodynamics.Temperature.TemperatureUnits`, [Physlib/Thermodynamics/Temperature/TemperatureUnits.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean): 7 declarations (1 instance with no name), 6 with a docstring.
 
 > A unit of temperature corresponds to a choice of translationally-invariant
 > metric on the temperature manifold (to be defined diffeomorphic to `ℝ≥0`).
@@ -24,7 +24,7 @@ The module `Physlib.Thermodynamics.Temperature.TemperatureUnits`, [Physlib/Therm
 > We choose to state the
 > existence of the temperature unit of kelvin, and construct all other temperature units from that.
 
-**`TemperatureUnit`**, a structure, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L35).
+**`TemperatureUnit`**, a structure, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L35).
 
 > The choices of translationally-invariant metrics on the temperature-manifold.
 > Such a choice corresponds to a choice of units for temperature.
@@ -36,7 +36,7 @@ structure TemperatureUnit where
   property : 0 < val
 ```
 
-**An instance with no name**, [line 40](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L40).
+**An instance with no name**, [line 40](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L40).
 
 ```lean
 instance : PositiveRealUnitCore TemperatureUnit
@@ -51,7 +51,7 @@ instance : PositiveRealUnitCore TemperatureUnit
 >
 > Once we have defined kelvin, we can define other temperature units by scaling kelvin.
 
-**`TemperatureUnit.kelvin`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L66).
+**`TemperatureUnit.kelvin`**, a def, [line 66](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L66).
 
 > The definition of a temperature unit of kelvin.
 
@@ -59,7 +59,7 @@ instance : PositiveRealUnitCore TemperatureUnit
 def kelvin : TemperatureUnit
 ```
 
-**`TemperatureUnit.nanokelvin`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L69).
+**`TemperatureUnit.nanokelvin`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L69).
 
 > The temperature unit of degrees nanokelvin (10^(-9) kelvin).
 
@@ -67,7 +67,7 @@ def kelvin : TemperatureUnit
 noncomputable def nanokelvin : TemperatureUnit
 ```
 
-**`TemperatureUnit.microkelvin`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L72).
+**`TemperatureUnit.microkelvin`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L72).
 
 > The temperature unit of degrees microkelvin (10^(-6) kelvin).
 
@@ -75,7 +75,7 @@ noncomputable def nanokelvin : TemperatureUnit
 noncomputable def microkelvin : TemperatureUnit
 ```
 
-**`TemperatureUnit.millikelvin`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L75).
+**`TemperatureUnit.millikelvin`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L75).
 
 > The temperature unit of degrees millikelvin (10^(-3) kelvin).
 
@@ -83,7 +83,7 @@ noncomputable def microkelvin : TemperatureUnit
 noncomputable def millikelvin : TemperatureUnit
 ```
 
-**`TemperatureUnit.absoluteFahrenheit`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L79).
+**`TemperatureUnit.absoluteFahrenheit`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean#L79).
 
 > The temperature unit of degrees fahrenheit ((5/9) of a kelvin).
 > Note, this is fahrenheit starting at `0` absolute temperature.
@@ -98,4 +98,4 @@ noncomputable def absoluteFahrenheit : TemperatureUnit
 
 ## Sources
 
-- [Physlib/Thermodynamics/Temperature/TemperatureUnits.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean)
+- [Physlib/Thermodynamics/Temperature/TemperatureUnits.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Thermodynamics/Temperature/TemperatureUnits.lean)

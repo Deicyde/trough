@@ -8,7 +8,7 @@ proof: formalized
 
 # The inclusion of the Euclidean group into the affine automorphism group
 
-The module `Physlib.SpaceAndTime.Space.EuclideanGroup.AffineGroup`, [Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean): 12 declarations, 11 with a docstring.
+The module `Physlib.SpaceAndTime.Space.EuclideanGroup.AffineGroup`, [Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean): 12 declarations, 11 with a docstring.
 
 > This file has two parts.
 >
@@ -45,7 +45,7 @@ The module `Physlib.SpaceAndTime.Space.EuclideanGroup.AffineGroup`, [Physlib/Spa
 > (first leg) → `AffineIsometryEquiv.toAffineEquivHom` (second leg) → `toAffineEquiv`
 > (the composite).
 
-**`EuclideanGroup.orthogonalToLinearIsometryEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L58).
+**`EuclideanGroup.orthogonalToLinearIsometryEquiv`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L58).
 
 > An orthogonal matrix viewed as a linear isometry equivalence of `EuclideanSpace ℝ (Fin n)`;
 > the linear ingredient of the first leg `toAffineIsometryHom`.
@@ -56,7 +56,7 @@ noncomputable def orthogonalToLinearIsometryEquiv
     EuclideanSpace ℝ (Fin n) ≃ₗᵢ[ℝ] EuclideanSpace ℝ (Fin n)
 ```
 
-**`EuclideanGroup.orthogonalToLinearIsometryEquiv_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L68).
+**`EuclideanGroup.orthogonalToLinearIsometryEquiv_apply`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L68).
 
 ```lean
 lemma orthogonalToLinearIsometryEquiv_apply
@@ -64,7 +64,7 @@ lemma orthogonalToLinearIsometryEquiv_apply
     orthogonalToLinearIsometryEquiv Q x = Q • x
 ```
 
-**`EuclideanGroup.toAffineIsometryHom`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L74).
+**`EuclideanGroup.toAffineIsometryHom`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L74).
 
 > The first leg of the inclusion: `⟨t, Q⟩ ↦ (x ↦ Q x + t)`, bundled as a monoid homomorphism
 > from the Euclidean group into the affine isometry group of `EuclideanSpace ℝ (Fin n)`.
@@ -75,7 +75,7 @@ noncomputable def toAffineIsometryHom :
       AffineIsometryEquiv ℝ (EuclideanSpace ℝ (Fin n)) (EuclideanSpace ℝ (Fin n))
 ```
 
-**`EuclideanGroup.toAffineIsometryHom_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L88).
+**`EuclideanGroup.toAffineIsometryHom_apply`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L88).
 
 > Unfolds `toAffineIsometryHom` into its translation and linear factors.
 
@@ -86,7 +86,7 @@ lemma toAffineIsometryHom_apply (A : EuclideanGroup n) :
         (orthogonalToLinearIsometryEquiv A.linear).toAffineIsometryEquiv
 ```
 
-**`AffineIsometryEquiv.toAffineEquivHom`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L95).
+**`AffineIsometryEquiv.toAffineEquivHom`**, a def, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L95).
 
 > The second leg of the inclusion: `AffineIsometryEquiv.toAffineEquiv` bundled as a monoid
 > homomorphism into the affine automorphism group.
@@ -97,7 +97,7 @@ noncomputable def _root_.AffineIsometryEquiv.toAffineEquivHom :
       AffineEquiv ℝ (EuclideanSpace ℝ (Fin n)) (EuclideanSpace ℝ (Fin n))
 ```
 
-**`EuclideanGroup.toAffineEquiv`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L106).
+**`EuclideanGroup.toAffineEquiv`**, a def, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L106).
 
 > The inclusion of the Euclidean group into Mathlib's affine automorphism group: the composite
 > of the two legs `toAffineIsometryHom` and `AffineIsometryEquiv.toAffineEquivHom`.
@@ -115,7 +115,7 @@ noncomputable def toAffineEquiv :
 > field order: the `invFun` ingredient, the two lemmas proving `left_inv`, and the lemma proving
 > `right_inv`. Nothing in part 1 depends on this section.
 
-**`EuclideanGroup.linearIsometryEquivToOrthogonal`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L121).
+**`EuclideanGroup.linearIsometryEquivToOrthogonal`**, a def, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L121).
 
 > The `invFun` ingredient of `toAffineIsometryMulEquiv`: a linear isometry equivalence read back
 > as an orthogonal matrix, inverse to the linear bridge `orthogonalToLinearIsometryEquiv` (see the
@@ -127,7 +127,7 @@ noncomputable def linearIsometryEquivToOrthogonal
     Matrix.orthogonalGroup (Fin n) ℝ
 ```
 
-**`EuclideanGroup.orthogonalToLinearIsometryEquiv_left_inv`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L137).
+**`EuclideanGroup.orthogonalToLinearIsometryEquiv_left_inv`**, a lemma, [line 137](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L137).
 
 > `linearIsometryEquivToOrthogonal` is a left inverse of `orthogonalToLinearIsometryEquiv`.
 > Together with `linearIsometryEquiv_constVAdd_mul`, this proves `left_inv` of
@@ -139,7 +139,7 @@ lemma orthogonalToLinearIsometryEquiv_left_inv
     linearIsometryEquivToOrthogonal (orthogonalToLinearIsometryEquiv Q) = Q
 ```
 
-**`EuclideanGroup.linearIsometryEquiv_constVAdd_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L155).
+**`EuclideanGroup.linearIsometryEquiv_constVAdd_mul`**, a lemma, [line 155](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L155).
 
 > The affine map `x ↦ t +ᵥ L x`, projected to its linear isometry component, is `L`.
 > Together with `orthogonalToLinearIsometryEquiv_left_inv`, this proves `left_inv` of
@@ -153,7 +153,7 @@ lemma linearIsometryEquiv_constVAdd_mul
         L.toAffineIsometryEquiv).linearIsometryEquiv) = L
 ```
 
-**`EuclideanGroup.orthogonalToLinearIsometryEquiv_right_inv`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L169).
+**`EuclideanGroup.orthogonalToLinearIsometryEquiv_right_inv`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L169).
 
 > `linearIsometryEquivToOrthogonal` is a right inverse of `orthogonalToLinearIsometryEquiv`;
 > this proves `right_inv` of `toAffineIsometryMulEquiv`.
@@ -164,7 +164,7 @@ lemma orthogonalToLinearIsometryEquiv_right_inv
     orthogonalToLinearIsometryEquiv (linearIsometryEquivToOrthogonal L) = L
 ```
 
-**`EuclideanGroup.toAffineIsometryMulEquiv`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L185).
+**`EuclideanGroup.toAffineIsometryMulEquiv`**, a def, [line 185](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L185).
 
 > `EuclideanGroup n ≃* AffineIsometryEquiv ℝ (EuclideanSpace ℝ (Fin n)) _`: the Euclidean group
 > is the full group of affine isometries of Euclidean space. This upgrades `toAffineIsometryHom` to
@@ -176,7 +176,7 @@ noncomputable def toAffineIsometryMulEquiv :
       AffineIsometryEquiv ℝ (EuclideanSpace ℝ (Fin n)) (EuclideanSpace ℝ (Fin n))
 ```
 
-**`EuclideanGroup.toAffineIsometryMulEquiv_apply`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L207).
+**`EuclideanGroup.toAffineIsometryMulEquiv_apply`**, a lemma, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean#L207).
 
 > `toAffineIsometryMulEquiv` agrees with `toAffineIsometryHom`.
 
@@ -191,4 +191,4 @@ lemma toAffineIsometryMulEquiv_apply (A : EuclideanGroup n) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean)
+- [Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean)

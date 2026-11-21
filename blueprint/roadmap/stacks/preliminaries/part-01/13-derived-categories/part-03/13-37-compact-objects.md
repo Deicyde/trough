@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.37 Compact objects
 
-Section 13.37 of the Stacks Project, [Tag 09SM](https://stacks.math.columbia.edu/tag/09SM). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.37 of the Stacks Project, [Tag 09SM](https://stacks.math.columbia.edu/tag/09SM). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07LS, a definition
 
 [Tag 07LS](https://stacks.math.columbia.edu/tag/07LS) in the Stacks Project.
 
-**`CategoryTheory.IsCompactObject`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean#L106).
+**`CategoryTheory.IsCompactObject`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean#L106).
 
 > An object `K` of a preadditive category is *compact* if for every family `E : I → C` whose
 > direct sum exists, the map `⨁ i, (K ⟶ E i) → (K ⟶ ∐ E)` sending a finitely supported family
@@ -29,7 +29,7 @@ public class IsCompactObject (K : C) : Prop
 
 [Tag 09QH](https://stacks.math.columbia.edu/tag/09QH) in the Stacks Project.
 
-**`CategoryTheory.isClosedUnderIsomorphisms_isTriangulated_isSaturated_and_isIdempotentComplete_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean#L532).
+**`CategoryTheory.isClosedUnderIsomorphisms_isTriangulated_isSaturated_and_isIdempotentComplete_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean, line 532](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/ThickSubcategory.lean#L532).
 
 > The compact objects of a pre-triangulated category `D` with direct sums form the objects of a
 > Karoubian, saturated, strictly full, pre-triangulated subcategory of `D`: the property of being
@@ -50,7 +50,7 @@ public theorem
 
 [Tag 09SN](https://stacks.math.columbia.edu/tag/09SN) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_isHomotopyColimit_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean#L723).
+**`CategoryTheory.Pretriangulated.exists_isHomotopyColimit_of_compactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean, line 723](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean#L723).
 
 > **Stacks 09SN**. Let `D` be a pre-triangulated category with direct sums and let `E : ι → D`
 > be a family of compact objects such that `⨁ E i` generates `D`, i.e. the only objects right
@@ -76,7 +76,7 @@ public theorem exists_isHomotopyColimit_of_compactlyGenerated
 
 [Tag 09SP](https://stacks.math.columbia.edu/tag/09SP) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.exists_fac_triangEnvelope_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L323).
+**`CategoryTheory.Pretriangulated.exists_fac_triangEnvelope_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L323).
 
 > **Stacks 09SP**. Let `D` be a triangulated category with direct sums, `E : ι → D` a family of
 > compact objects, and `X : ℕ → D` a system of cell attachments as in [Stacks, Tag 09SN]: `X 0` is
@@ -102,7 +102,7 @@ public theorem exists_fac_triangEnvelope_of_isCompactObject
 
 [Tag 09SQ](https://stacks.math.columbia.edu/tag/09SQ) in the Stacks Project.
 
-**`CategoryTheory.Pretriangulated.IsCompactlyGenerated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean#L142).
+**`CategoryTheory.Pretriangulated.IsCompactlyGenerated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CellStructure.lean#L142).
 
 > A category `D` with a shift by `ℤ` is *compactly generated* if there is a family `E : ι → D`
 > of compact objects, indexed by a type `ι : Type w`, which is a weak generator: the only objects of
@@ -114,7 +114,7 @@ public theorem exists_fac_triangEnvelope_of_isCompactObject
 public def IsCompactlyGenerated : Prop
 ```
 
-**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_ofObj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L396). The attribute's comment: “the source's form of the generation condition: the direct sum ∐ E is a weak generator”.
+**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_ofObj_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L396). The attribute's comment: “the source's form of the generation condition: the direct sum ∐ E is a weak generator”.
 
 > A family of objects is a weak generator if and only if its direct sum is one: for a family
 > `E : ι → C` whose coproduct exists, the property of belonging to `E` is a weak generator exactly
@@ -132,7 +132,7 @@ public theorem isWeakTriangulatedGenerator_ofObj_iff {C : Type u} [Category.{v} 
 
 [Tag 09SR](https://stacks.math.columbia.edu/tag/09SR) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_iff_triangEnvelope_eq_isCompactObject_and_isCompactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L714).
+**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_iff_triangEnvelope_eq_isCompactObject_and_isCompactlyGenerated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean, line 714](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/CompactObjects/CompactGenerators.lean#L714).
 
 > **Stacks 09SR**. Let `D` be a triangulated category with direct sums and let `E` be a compact
 > object of `D`. Then `E` is a weak generator of `D` if and only if `E` is a classical generator of
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.37, Tag 09SM](https://stacks.math.columbia.edu/tag/09SM)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -1,6 +1,6 @@
 # Dynamics
 
-The folder [Physlib/Electromagnetism/Dynamics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics): 6 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [Physlib/Electromagnetism/Dynamics/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Electromagnetism/Dynamics): 6 modules, an article each, in path order with Basic.lean first in its folder.
 
 - [Free space](basic.md)
 - [The Lorentz Current Density (Electromagnetism/Dynamics/CurrentDensity)](currentdensity.md)

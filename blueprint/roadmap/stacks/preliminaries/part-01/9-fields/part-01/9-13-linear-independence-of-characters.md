@@ -8,13 +8,13 @@ proof: formalized
 
 # 9.13 Linear independence of characters
 
-Section 9.13 of the Stacks Project, [Tag 0CKK](https://stacks.math.columbia.edu/tag/0CKK). 2 tags here are carried by 2 declarations of the repository (all in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 9.13 of the Stacks Project, [Tag 0CKK](https://stacks.math.columbia.edu/tag/0CKK). 2 tags here are carried by 2 declarations of the repository (all in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EM9, a lemma
 
 [Tag 0EM9](https://stacks.math.columbia.edu/tag/0EM9) in the Stacks Project.
 
-**`Finset.Nonempty.exists_sum_pow_ne_zero`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/LinearAlgebra/LinearIndependent/Basic.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/LinearAlgebra/LinearIndependent/Basic.lean#L16).
+**`Finset.Nonempty.exists_sum_pow_ne_zero`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/LinearAlgebra/LinearIndependent/Basic.lean, line 16](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/LinearAlgebra/LinearIndependent/Basic.lean#L16).
 
 ```lean
 theorem Finset.Nonempty.exists_sum_pow_ne_zero {R : Type*} [CommRing R] [IsDomain R]
@@ -25,7 +25,7 @@ theorem Finset.Nonempty.exists_sum_pow_ne_zero {R : Type*} [CommRing R] [IsDomai
 
 [Tag 0CKN](https://stacks.math.columbia.edu/tag/0CKN) in the Stacks Project.
 
-**`Algebra.liftEmbeddingsEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/FieldTheory/LiftEmbeddingsEquiv.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/FieldTheory/LiftEmbeddingsEquiv.lean#L96).
+**`Algebra.liftEmbeddingsEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/FieldTheory/LiftEmbeddingsEquiv.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksCore/FieldTheory/LiftEmbeddingsEquiv.lean#L96).
 
 > **Stacks 0CKN**.
 > For a finite separable extension `K/F` with `L` algebraically closed, the canonical
@@ -46,4 +46,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 9.13, Tag 0CKK](https://stacks.math.columbia.edu/tag/0CKK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

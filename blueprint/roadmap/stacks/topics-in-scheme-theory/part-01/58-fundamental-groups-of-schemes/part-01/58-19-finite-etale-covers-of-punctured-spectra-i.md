@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.19 Finite étale covers of punctured spectra, I
 
-Section 58.19 of the Stacks Project, [Tag 0BLE](https://stacks.math.columbia.edu/tag/0BLE). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.19 of the Stacks Project, [Tag 0BLE](https://stacks.math.columbia.edu/tag/0BLE). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BLF, a situation
 
 [Tag 0BLF](https://stacks.math.columbia.edu/tag/0BLF) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.LocalLefschetzSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalLefschetzSituation.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalLefschetzSituation.lean#L64).
+**`Stacks.FundamentalGroup.LocalLefschetzSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalLefschetzSituation.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LocalLefschetzSituation.lean#L64).
 
 > The standing data and hypotheses of the local Lefschetz situation.
 
@@ -22,7 +22,7 @@ Section 58.19 of the Stacks Project, [Tag 0BLE](https://stacks.math.columbia.edu
 public structure LocalLefschetzSituation
 ```
 
-**`AlgebraicGeometry.LocalLefschetzSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LocalLefschetz.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LocalLefschetz.lean#L60).
+**`AlgebraicGeometry.LocalLefschetzSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LocalLefschetz.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/LocalLefschetz.lean#L60).
 
 > The standing data of the local Lefschetz situation: a Noetherian local ring `A` together
 > with an element `f` of its maximal ideal.
@@ -33,13 +33,13 @@ structure LocalLefschetzSituation
 
 Declarations registered for the tag:
 
-- [`Stacks.puncturedSpectrum`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/Defs.lean#L32), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/LocalCohomology/Deps/PuncturedSpectrumAffine.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/Deps/PuncturedSpectrumAffine.lean#L59) (StacksFrontier): “the punctured spectra”.
+- [`Stacks.puncturedSpectrum`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/Defs.lean#L32), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/LocalCohomology/Deps/PuncturedSpectrumAffine.lean, line 59](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/LocalCohomology/Deps/PuncturedSpectrumAffine.lean#L59) (StacksFrontier): “the punctured spectra”.
 
 ## Tag 0BLG, a lemma
 
 [Tag 0BLG](https://stacks.math.columbia.edu/tag/0BLG) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.faithful_finiteEtaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L229).
+**`AlgebraicGeometry.LocalLefschetzSituation.faithful_finiteEtaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean, line 229](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FaithfulRestriction.lean#L229).
 
 > **Stacks Project, Tag 0BLG.** In the local Lefschetz situation, base change of finite étale
 > covers from the punctured spectrum of `A` to the punctured spectrum of `A / fA` is faithful,
@@ -60,7 +60,7 @@ lemma faithful_finiteEtaleRestriction (S : LocalLefschetzSituation.{u})
 
 [Tag 0BLH](https://stacks.math.columbia.edu/tag/0BLH) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_extension_of_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FiniteExtensionFromCompletion.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FiniteExtensionFromCompletion.lean#L580).
+**`AlgebraicGeometry.exists_finite_extension_of_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FiniteExtensionFromCompletion.lean, line 580](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FiniteExtensionFromCompletion.lean#L580).
 
 > A finite cover of the punctured spectrum which extends over the completed
 > spectrum extends over the original local spectrum, compatibly with both given
@@ -94,7 +94,7 @@ lemma exists_finite_extension_of_completion
 
 [Tag 0BLI](https://stacks.math.columbia.edu/tag/0BLI) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulFromCompletion.lean, line 873](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulFromCompletion.lean#L873).
+**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulFromCompletion.lean, line 873](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulFromCompletion.lean#L873).
 
 > **Stacks Project, Tag 0BLI.** In the local Lefschetz situation assume that `A` is henselian,
 > or more generally that `(A, fA)` is a henselian pair. If restriction of finite étale covers from
@@ -119,7 +119,7 @@ theorem fullyFaithful_finiteEtaleRestriction_of_completion
 
 [Tag 0EK5](https://stacks.math.columbia.edu/tag/0EK5) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L219). The attribute's comment: “for an arbitrary Noetherian local ring `A` with a dualizing complex and `(A, (f))` a henselian pair, hypothesis (c) being the disjunction of branches (i) and (ii)”.
+**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L219). The attribute's comment: “for an arbitrary Noetherian local ring `A` with a dualizing complex and `(A, (f))` a henselian pair, hypothesis (c) being the disjunction of branches (i) and (ii)”.
 
 > **[Stacks, Tag 0EK5].** In the local Lefschetz situation assume
 >
@@ -165,7 +165,7 @@ public theorem fullyFaithful_finiteEtaleRestriction_of_dualizingComplex
 
 [Tag 0BM6](https://stacks.math.columbia.edu/tag/0BM6) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_annihilated_of_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L141). The attribute's comment: “for an arbitrary Noetherian local ring `A`, with `H¹_𝔪(A)` and `H²_𝔪(A)` killed by a power of `f` and with `A` henselian or `(A, (f))` a henselian pair”.
+**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_annihilated_of_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L141). The attribute's comment: “for an arbitrary Noetherian local ring `A`, with `H¹_𝔪(A)` and `H²_𝔪(A)` killed by a power of `f` and with `A` henselian or `(A, (f))` a henselian pair”.
 
 > **[Stacks, Tag 0BM6].** In the local Lefschetz situation assume that `H¹_𝔪(A)` and `H²_𝔪(A)`
 > are annihilated by a power of `f` and that `A` is henselian, or more generally that the pair
@@ -198,7 +198,7 @@ public theorem fullyFaithful_finiteEtaleRestriction_of_annihilated_of_henselian
 
 [Tag 0BLJ](https://stacks.math.columbia.edu/tag/0BLJ) in the Stacks Project.
 
-**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_three_le_depth_of_henselianLocalRing_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L250). The attribute's comment: “for an arbitrary Noetherian local ring `A` of depth at least `3`, with `A` henselian or `(A, (f))` a henselian pair”.
+**`AlgebraicGeometry.LocalLefschetzSituation.fullyFaithful_finiteEtaleRestriction_of_three_le_depth_of_henselianLocalRing_or`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FullyFaithfulPunctured.lean#L250). The attribute's comment: “for an arbitrary Noetherian local ring `A` of depth at least `3`, with `A` henselian or `(A, (f))` a henselian pair”.
 
 > **[Stacks, Tag 0BLJ].** In the local Lefschetz situation assume that `A` has depth at least
 > `3` and that `A` is henselian or, more generally, that the pair `(A, (f))` is henselian. Then
@@ -225,4 +225,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.19, Tag 0BLE](https://stacks.math.columbia.edu/tag/0BLE)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

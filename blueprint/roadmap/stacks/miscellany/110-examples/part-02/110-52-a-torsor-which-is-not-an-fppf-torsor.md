@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.52 A torsor which is not an fppf torsor
 
-Section 110.52 of the Stacks Project, [Tag 04AF](https://stacks.math.columbia.edu/tag/04AF). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.52 of the Stacks Project, [Tag 04AF](https://stacks.math.columbia.edu/tag/04AF). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 077B, a lemma
 
 [Tag 077B](https://stacks.math.columbia.edu/tag/077B) in the Stacks Project.
 
-**`Stacks.Examples.RadicalTower.exists_not_isEquivalence_fppfTorsors_toPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean#L301). The attribute's comment: “G-Principal and G-Torsors are not equivalent in general: for S = Spec ℚ and the group scheme G = ∏ᵢ μ\_\{i+2} the canonical functor G-Torsors ⥤ G-Principal is not essentially surjective, hence not an equivalence, over every big fppf site”.
+**`Stacks.Examples.RadicalTower.exists_not_isEquivalence_fppfTorsors_toPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean, line 301](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/StackComparison.lean#L301). The attribute's comment: “G-Principal and G-Torsors are not equivalent in general: for S = Spec ℚ and the group scheme G = ∏ᵢ μ\_\{i+2} the canonical functor G-Torsors ⥤ G-Principal is not essentially surjective, hence not an equivalence, over every big fppf site”.
 
 > **Stacks Project, Tag 077B.**  The stack `G-Principal` of principal homogeneous `G`-spaces
 > (Stacks 04UN) and the stack `G-Torsors` of fppf `G`-torsors (Stacks 04UR) are not equivalent in
@@ -41,4 +41,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.52, Tag 04AF](https://stacks.math.columbia.edu/tag/04AF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

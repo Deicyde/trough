@@ -8,7 +8,7 @@ proof: formalized
 
 # Lorentz invariants of a single four-vector index
 
-The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankOne`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean): 8 declarations (1 instance with no name), 7 with a docstring.
+The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankOne`, [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean): 8 declarations (1 instance with no name), 7 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankOne`, [PhyslibAl
 > leaves only the two weight-zero directions, and their coefficients in `d` vanish unless `d` is
 > itself transverse.
 
-**`Lorentz.RankOne.Transverse`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L70).
+**`Lorentz.RankOne.Transverse`**, a def, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L70).
 
 > A direction transverse to the boost along axis `i`: neither time nor the axis.
 
@@ -52,13 +52,13 @@ The module `PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankOne`, [PhyslibAl
 def Transverse (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) : Prop
 ```
 
-**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L73).
+**An instance with no name**, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L73).
 
 ```lean
 instance (i : Fin 3) (μ : Fin 1 ⊕ Fin 3) : Decidable (Transverse i μ)
 ```
 
-**`Lorentz.RankOne.prod_lightConeCoeffInv_eq_zero`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L77).
+**`Lorentz.RankOne.prod_lightConeCoeffInv_eq_zero`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L77).
 
 > A non-transverse direction has no weight-zero light-cone coefficient.
 
@@ -69,7 +69,7 @@ lemma prod_lightConeCoeffInv_eq_zero {i : Fin 3} {d : Fin 1 → Fin 1 ⊕ Fin 3}
     ∏ s, lightConeCoeffInv i (d s) (κ s) = 0
 ```
 
-**`Lorentz.RankOne.eq_zero_of_not_transverse`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L89).
+**`Lorentz.RankOne.eq_zero_of_not_transverse`**, a lemma, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L89).
 
 > An invariant coefficient tensor vanishes off the two directions transverse to the axis.
 
@@ -83,7 +83,7 @@ lemma eq_zero_of_not_transverse {c : (Fin 1 → Fin 1 ⊕ Fin 3) → ℂ} (hc : 
 > No direction is transverse to all three axes at once, so applying A to the three axes in turn
 > leaves no coefficient standing.
 
-**`Lorentz.RankOne.not_transverse_all`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L107).
+**`Lorentz.RankOne.not_transverse_all`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L107).
 
 > No direction is transverse to all three axes at once, a finite check.
 
@@ -92,7 +92,7 @@ lemma not_transverse_all (μ : Fin 1 ⊕ Fin 3) :
     ¬(Transverse 0 μ ∧ Transverse 1 μ ∧ Transverse 2 μ)
 ```
 
-**`Lorentz.RankOne.eq_zero_of_isInvariantCoeff`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L113).
+**`Lorentz.RankOne.eq_zero_of_isInvariantCoeff`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L113).
 
 > An invariant coefficient tensor is zero.
 
@@ -106,7 +106,7 @@ lemma eq_zero_of_isInvariantCoeff {c : (Fin 1 → Fin 1 ⊕ Fin 3) → ℂ}
 > The invariants of the range of an equivariant map come from invariant tensors, whose coefficient
 > tensors are invariant, so section B leaves none of them.
 
-**`Lorentz.RankOne.eq_zero_of_invariant`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L138).
+**`Lorentz.RankOne.eq_zero_of_invariant`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L138).
 
 > Every Lorentz invariant in the range of `f` is zero: one index carry no invariant
 > contraction.
@@ -116,7 +116,7 @@ lemma eq_zero_of_invariant (hf : IsLorentzCovariant 1 B repLorentz f) {x : B}
     (hx : x ∈ LinearMap.range f) (hinv : ∀ g : SL(2,ℂ), repLorentz g x = x) : x = 0
 ```
 
-**`Lorentz.RankOne.reducesInvariantsTo_bot`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L144).
+**`Lorentz.RankOne.reducesInvariantsTo_bot`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean#L144).
 
 > The range of `f` reduces to `⊥`: a Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a
 > Lorentz-stable submodule, lies in `S`.
@@ -132,4 +132,4 @@ lemma reducesInvariantsTo_bot (hf : IsLorentzCovariant 1 B repLorentz f) :
 
 ## Sources
 
-- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean)
+- [PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean)

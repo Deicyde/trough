@@ -8,7 +8,7 @@ proof: formalized
 
 # The field symbols of the local field algebra and their transformation laws
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean): 31 declarations, 25 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.TransformsIn`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean): 31 declarations, 25 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.TransformsI
 
 ## A. The connection factor as a realization of the gauge bosons
 
-**`GaugeFieldData.gaugeRealization`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L68).
+**`GaugeFieldData.gaugeRealization`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L68).
 
 > The connection factor as a realization of the gauge bosons in `J(T)`: the inclusion of
 > the complexified gauge-only algebra, equivariant for both actions, with the included
@@ -49,13 +49,13 @@ noncomputable def gaugeRealization :
     GaugeAlgebraRealization jets T.LocalFieldAlgebra T.repJet T.repLorentzGroup
 ```
 
-**`GaugeFieldData.gaugeRealization_toAlgHom`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L81).
+**`GaugeFieldData.gaugeRealization_toAlgHom`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L81).
 
 ```lean
 lemma gaugeRealization_toAlgHom : T.gaugeRealization.toAlgHom = T.includeConnection
 ```
 
-**`GaugeFieldData.gaugeRealization_A`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L83).
+**`GaugeFieldData.gaugeRealization_A`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L83).
 
 ```lean
 lemma gaugeRealization_A (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
@@ -66,7 +66,7 @@ lemma gaugeRealization_A (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)
 
 ## B. The matter symbol families
 
-**`GaugeFieldData.fermionSymbolMap`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L98).
+**`GaugeFieldData.fermionSymbolMap`**, a def, [line 98](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L98).
 
 > The unconjugated symbols of a fermionic species, as a linear map on the unconjugated
 > half of its component space.
@@ -76,7 +76,7 @@ noncomputable def fermionSymbolMap (i : T.FermionSpecies) :
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ (T.FermionValue i) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.conjFermionSymbolMap`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L104).
+**`GaugeFieldData.conjFermionSymbolMap`**, a def, [line 104](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L104).
 
 > The conjugate symbols of a fermionic species, as a linear map on the conjugate half of
 > its component space.
@@ -87,7 +87,7 @@ noncomputable def conjFermionSymbolMap (i : T.FermionSpecies) :
       T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.bosonSymbolMap`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L111).
+**`GaugeFieldData.bosonSymbolMap`**, a def, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L111).
 
 > The unconjugated symbols of a bosonic species, as a linear map on the unconjugated
 > half of its component space.
@@ -97,7 +97,7 @@ noncomputable def bosonSymbolMap (j : T.BosonSpecies) :
     SpaceTimeDerivAlgebraℂ ⊗[ℂ] Module.Dual ℂ (T.BosonValue j) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.conjBosonSymbolMap`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L117).
+**`GaugeFieldData.conjBosonSymbolMap`**, a def, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L117).
 
 > The conjugate symbols of a bosonic species, as a linear map on the conjugate half of
 > its component space.
@@ -108,7 +108,7 @@ noncomputable def conjBosonSymbolMap (j : T.BosonSpecies) :
       T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.fermionSymbol`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L124).
+**`GaugeFieldData.fermionSymbol`**, a def, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L124).
 
 > The derivative symbols `∂_s ψ^φ` of a fermionic species: the family over the
 > derivative multiset `s`, indexed by the covectors of the value space.
@@ -118,7 +118,7 @@ noncomputable def fermionSymbol (i : T.FermionSpecies) (s : Multiset (Fin 1 ⊕ 
     Module.Dual ℂ (T.FermionValue i) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.conjFermionSymbol`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L130).
+**`GaugeFieldData.conjFermionSymbol`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L130).
 
 > The conjugate derivative symbols `∂_s ψ̄^φ` of a fermionic species, indexed by the
 > covectors of the conjugate value space.
@@ -128,7 +128,7 @@ noncomputable def conjFermionSymbol (i : T.FermionSpecies) (s : Multiset (Fin 1 
     Module.Dual ℂ (ConjModule (T.FermionValue i)) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.bosonSymbol`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L135).
+**`GaugeFieldData.bosonSymbol`**, a def, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L135).
 
 > The derivative symbols `∂_s φ^χ` of a bosonic species.
 
@@ -137,7 +137,7 @@ noncomputable def bosonSymbol (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ Fin 
     Module.Dual ℂ (T.BosonValue j) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.conjBosonSymbol`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L140).
+**`GaugeFieldData.conjBosonSymbol`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L140).
 
 > The conjugate derivative symbols `∂_s φ̄^χ` of a bosonic species.
 
@@ -146,7 +146,7 @@ noncomputable def conjBosonSymbol (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ 
     Module.Dual ℂ (ConjModule (T.BosonValue j)) →ₗ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.fermionSymbol_apply`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L146).
+**`GaugeFieldData.fermionSymbol_apply`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L146).
 
 ```lean
 lemma fermionSymbol_apply (i : T.FermionSpecies) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -154,7 +154,7 @@ lemma fermionSymbol_apply (i : T.FermionSpecies) (s : Multiset (Fin 1 ⊕ Fin 3)
     T.fermionSymbol i s φ = T.ιFermion i (SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0)
 ```
 
-**`GaugeFieldData.conjFermionSymbol_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L150).
+**`GaugeFieldData.conjFermionSymbol_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L150).
 
 ```lean
 lemma conjFermionSymbol_apply (i : T.FermionSpecies) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -162,7 +162,7 @@ lemma conjFermionSymbol_apply (i : T.FermionSpecies) (s : Multiset (Fin 1 ⊕ Fi
     T.conjFermionSymbol i s φ = T.ιFermion i (0, SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ)
 ```
 
-**`GaugeFieldData.bosonSymbol_apply`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L154).
+**`GaugeFieldData.bosonSymbol_apply`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L154).
 
 ```lean
 lemma bosonSymbol_apply (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -170,7 +170,7 @@ lemma bosonSymbol_apply (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ Fin 3))
     T.bosonSymbol j s φ = T.ιBoson j (SpaceTimeDerivAlgebraℂ.basis s ⊗ₜ[ℂ] φ, 0)
 ```
 
-**`GaugeFieldData.conjBosonSymbol_apply`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L158).
+**`GaugeFieldData.conjBosonSymbol_apply`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L158).
 
 ```lean
 lemma conjBosonSymbol_apply (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ Fin 3))
@@ -184,7 +184,7 @@ lemma conjBosonSymbol_apply (j : T.BosonSpecies) (s : Multiset (Fin 1 ⊕ Fin 3)
 > on its half of the component space, and the law of the symbols is
 > `JetComponentSpace.repDual_basis_tmul` pushed through the symbol map.
 
-**`GaugeFieldData.repJet_fermionSymbolMap`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L192).
+**`GaugeFieldData.repJet_fermionSymbolMap`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L192).
 
 > The unconjugated fermionic symbol map intertwines the jet gauge actions.
 
@@ -196,7 +196,7 @@ lemma repJet_fermionSymbolMap (i : T.FermionSpecies) (U : GJ)
         (JetComponentSpace.repDual (T.fermion i).repJet (T.fermion i).repJet_smul U x)
 ```
 
-**`GaugeFieldData.repJet_conjFermionSymbolMap`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L202).
+**`GaugeFieldData.repJet_conjFermionSymbolMap`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L202).
 
 > The conjugate fermionic symbol map intertwines the jet gauge actions.
 
@@ -209,7 +209,7 @@ lemma repJet_conjFermionSymbolMap (i : T.FermionSpecies) (U : GJ)
           (JetComponentSpace.repConj_smul_comm (T.fermion i).repJet_smul) U x)
 ```
 
-**`GaugeFieldData.repJet_bosonSymbolMap`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L213).
+**`GaugeFieldData.repJet_bosonSymbolMap`**, a lemma, [line 213](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L213).
 
 > The unconjugated bosonic symbol map intertwines the jet gauge actions.
 
@@ -221,7 +221,7 @@ lemma repJet_bosonSymbolMap (j : T.BosonSpecies) (U : GJ)
         (JetComponentSpace.repDual (T.boson j).repJet (T.boson j).repJet_smul U x)
 ```
 
-**`GaugeFieldData.repJet_conjBosonSymbolMap`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L223).
+**`GaugeFieldData.repJet_conjBosonSymbolMap`**, a lemma, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L223).
 
 > The conjugate bosonic symbol map intertwines the jet gauge actions.
 
@@ -234,7 +234,7 @@ lemma repJet_conjBosonSymbolMap (j : T.BosonSpecies) (U : GJ)
           (JetComponentSpace.repConj_smul_comm (T.boson j).repJet_smul) U x)
 ```
 
-**`GaugeFieldData.transformsIn_fermionSymbol`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L235).
+**`GaugeFieldData.transformsIn_fermionSymbol`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L235).
 
 > The symbols of a fermionic species transform in the jet gauge representation of the
 > species.
@@ -245,7 +245,7 @@ lemma transformsIn_fermionSymbol (i : T.FermionSpecies) :
       (T.fermionSymbol i)
 ```
 
-**`GaugeFieldData.transformsIn_conjFermionSymbol`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L242).
+**`GaugeFieldData.transformsIn_conjFermionSymbol`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L242).
 
 > The conjugate symbols of a fermionic species transform in the conjugate of the jet
 > gauge representation of the species.
@@ -256,7 +256,7 @@ lemma transformsIn_conjFermionSymbol (i : T.FermionSpecies) :
       (JetComponentSpace.repConj (T.fermion i).repJet) (T.conjFermionSymbol i)
 ```
 
-**`GaugeFieldData.transformsIn_bosonSymbol`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L249).
+**`GaugeFieldData.transformsIn_bosonSymbol`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L249).
 
 > The symbols of a bosonic species transform in the jet gauge representation of the
 > species.
@@ -267,7 +267,7 @@ lemma transformsIn_bosonSymbol (j : T.BosonSpecies) :
       (T.bosonSymbol j)
 ```
 
-**`GaugeFieldData.transformsIn_conjBosonSymbol`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L256).
+**`GaugeFieldData.transformsIn_conjBosonSymbol`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L256).
 
 > The conjugate symbols of a bosonic species transform in the conjugate of the jet gauge
 > representation of the species.
@@ -285,7 +285,7 @@ lemma transformsIn_conjBosonSymbol (j : T.BosonSpecies) :
 > of the symbols is that of the derivative monomials,
 > `SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_ofFn`.
 
-**`GaugeFieldData.repLorentzGroup_fermionSymbolMap`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L297).
+**`GaugeFieldData.repLorentzGroup_fermionSymbolMap`**, a lemma, [line 297](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L297).
 
 > The unconjugated fermionic symbol map intertwines the Lorentz actions.
 
@@ -297,7 +297,7 @@ lemma repLorentzGroup_fermionSymbolMap (i : T.FermionSpecies) (Λ : SL(2,ℂ))
         ((SpaceTimeDerivAlgebraℂ.repLorentzGroup.tprod (T.fermion i).repLorentz.dual) Λ x)
 ```
 
-**`GaugeFieldData.repLorentzGroup_conjFermionSymbolMap`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L307).
+**`GaugeFieldData.repLorentzGroup_conjFermionSymbolMap`**, a lemma, [line 307](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L307).
 
 > The conjugate fermionic symbol map intertwines the Lorentz actions.
 
@@ -310,7 +310,7 @@ lemma repLorentzGroup_conjFermionSymbolMap (i : T.FermionSpecies) (Λ : SL(2,ℂ
             (T.fermion i).repLorentz.conj.dual) Λ x)
 ```
 
-**`GaugeFieldData.repLorentzGroup_bosonSymbolMap`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L319).
+**`GaugeFieldData.repLorentzGroup_bosonSymbolMap`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L319).
 
 > The unconjugated bosonic symbol map intertwines the Lorentz actions.
 
@@ -322,7 +322,7 @@ lemma repLorentzGroup_bosonSymbolMap (j : T.BosonSpecies) (Λ : SL(2,ℂ))
         ((SpaceTimeDerivAlgebraℂ.repLorentzGroup.tprod (T.boson j).repLorentz.dual) Λ x)
 ```
 
-**`GaugeFieldData.repLorentzGroup_conjBosonSymbolMap`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L329).
+**`GaugeFieldData.repLorentzGroup_conjBosonSymbolMap`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L329).
 
 > The conjugate bosonic symbol map intertwines the Lorentz actions.
 
@@ -334,7 +334,7 @@ lemma repLorentzGroup_conjBosonSymbolMap (j : T.BosonSpecies) (Λ : SL(2,ℂ))
         ((SpaceTimeDerivAlgebraℂ.repLorentzGroup.tprod (T.boson j).repLorentz.conj.dual) Λ x)
 ```
 
-**`GaugeFieldData.isLorentzDerivTransforms_fermionSymbol`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L341).
+**`GaugeFieldData.isLorentzDerivTransforms_fermionSymbol`**, a lemma, [line 341](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L341).
 
 > The symbols of a fermionic species transform as the derivative symbols of a field in
 > the Lorentz representation of the species.
@@ -345,7 +345,7 @@ lemma isLorentzDerivTransforms_fermionSymbol (i : T.FermionSpecies) :
       (T.fermion i).repLorentz (T.fermionSymbol i)
 ```
 
-**`GaugeFieldData.isLorentzDerivTransforms_conjFermionSymbol`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L348).
+**`GaugeFieldData.isLorentzDerivTransforms_conjFermionSymbol`**, a lemma, [line 348](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L348).
 
 > The conjugate symbols of a fermionic species transform as the derivative symbols of a
 > field in the conjugate of the Lorentz representation of the species.
@@ -356,7 +356,7 @@ lemma isLorentzDerivTransforms_conjFermionSymbol (i : T.FermionSpecies) :
       (T.fermion i).repLorentz.conj (T.conjFermionSymbol i)
 ```
 
-**`GaugeFieldData.isLorentzDerivTransforms_bosonSymbol`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L355).
+**`GaugeFieldData.isLorentzDerivTransforms_bosonSymbol`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L355).
 
 > The symbols of a bosonic species transform as the derivative symbols of a field in the
 > Lorentz representation of the species.
@@ -367,7 +367,7 @@ lemma isLorentzDerivTransforms_bosonSymbol (j : T.BosonSpecies) :
       (T.boson j).repLorentz (T.bosonSymbol j)
 ```
 
-**`GaugeFieldData.isLorentzDerivTransforms_conjBosonSymbol`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L362).
+**`GaugeFieldData.isLorentzDerivTransforms_conjBosonSymbol`**, a lemma, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean#L362).
 
 > The conjugate symbols of a bosonic species transform as the derivative symbols of a
 > field in the conjugate of the Lorentz representation of the species.
@@ -389,4 +389,4 @@ lemma isLorentzDerivTransforms_conjBosonSymbol (j : T.BosonSpecies) :
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean)

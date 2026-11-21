@@ -8,7 +8,7 @@ proof: formalized
 
 # Realizations of the ordinary gauge sector
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSectorRealization`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean): 7 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSectorRealization`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean): 7 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.GaugeSector
 
 ## A. The correspondence
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L61).
+**`GaugeFieldData.gaugeSectorRealizationEquiv`**, a def, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L61).
 
 > Realizations of the ordinary gauge sector are the real realizations of the gauge-only
 > algebra, the target keeping its complex actions restricted to `ℝ`.
@@ -46,7 +46,7 @@ noncomputable def gaugeSectorRealizationEquiv :
 
 ## B. Computation
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_toAlgHom`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L77).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_toAlgHom`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L77).
 
 ```lean
 lemma gaugeSectorRealizationEquiv_toAlgHom
@@ -56,7 +56,7 @@ lemma gaugeSectorRealizationEquiv_toAlgHom
           Algebra.TensorProduct.includeRight
 ```
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_toAlgHom_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L84).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_toAlgHom_apply`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L84).
 
 ```lean
 lemma gaugeSectorRealizationEquiv_toAlgHom_apply
@@ -66,7 +66,7 @@ lemma gaugeSectorRealizationEquiv_toAlgHom_apply
       = f.toAlgHom (T.gaugeSectorEquiv ((1 : ℂ) ⊗ₜ[ℝ] x))
 ```
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_A`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L91).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_A`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L91).
 
 > The gauge symbols of the corresponding real realization are the sector symbols.
 
@@ -78,7 +78,7 @@ lemma gaugeSectorRealizationEquiv_A
       = f.toAlgHom (T.gaugeSectorEquiv (LocalGaugeFieldAlgebra.gaugeField 𝔤 s μ φ))
 ```
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L99).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L99).
 
 ```lean
 lemma gaugeSectorRealizationEquiv_symm_toAlgHom
@@ -89,7 +89,7 @@ lemma gaugeSectorRealizationEquiv_symm_toAlgHom
           T.gaugeSectorEquiv.symm.toAlgHom
 ```
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L107).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L107).
 
 ```lean
 lemma gaugeSectorRealizationEquiv_symm_toAlgHom_apply
@@ -100,7 +100,7 @@ lemma gaugeSectorRealizationEquiv_symm_toAlgHom_apply
           (T.gaugeSectorEquiv.symm x)
 ```
 
-**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom_gaugeField`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L115).
+**`GaugeFieldData.gaugeSectorRealizationEquiv_symm_toAlgHom_gaugeField`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean#L115).
 
 > The sector symbols of the corresponding sector realization are the gauge symbols.
 
@@ -121,4 +121,4 @@ lemma gaugeSectorRealizationEquiv_symm_toAlgHom_gaugeField
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean)

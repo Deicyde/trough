@@ -7,11 +7,11 @@ proof: formalized
 
 # LogicalEquivalence
 
-`Cslib.Foundations.Logic.LogicalEquivalence`, in [Cslib/Foundations/Logic/LogicalEquivalence.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/LogicalEquivalence.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Logic.LogicalEquivalence`, in [Cslib/Foundations/Logic/LogicalEquivalence.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/LogicalEquivalence.lean), by Fabrizio Montesi.
 
 > Typeclass and notation for logical equivalence.
 
-`Cslib.Logic.LogicalEquivalence` (class, [line 23](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/LogicalEquivalence.lean#L23))
+`Cslib.Logic.LogicalEquivalence` (class, [line 23](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/LogicalEquivalence.lean#L23))
 
 > A logical equivalence `eqv` for an inference system `S` is a congruence on propositions (of type
 > `α`) that preserves validity of judgements under any judgemental context.
@@ -32,5 +32,5 @@ class LogicalEquivalence S (eqv : α → α → Prop)
 
 ## Sources
 
-- [Cslib/Foundations/Logic/LogicalEquivalence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/LogicalEquivalence.lean)
+- [Cslib/Foundations/Logic/LogicalEquivalence.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Logic/LogicalEquivalence.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Logic.LogicalEquivalence.json)

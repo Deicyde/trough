@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the gauge sector
 
-The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean): 21 declarations, 17 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean): 21 declarations, 17 with a docstring.
 
 ## i. Overview
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.Deriv.GaugeWeight
 
 > * None.
 
-**`StandardModel.biUnion_univ_const`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L54).
+**`StandardModel.biUnion_univ_const`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L54).
 
 > A join over a nonempty index of a constant family of supports is that support.
 
@@ -47,13 +47,13 @@ lemma biUnion_univ_const {ι : Type*} [Fintype ι] [Nonempty ι] (t : Finset Gau
 
 ## A. Eigenvectors of the gauge action among the field-strength symbols
 
-**`StandardModel.IsGaugeSector.real_smul_eq`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L80).
+**`StandardModel.IsGaugeSector.real_smul_eq`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L80).
 
 ```lean
 lemma real_smul_eq (r : ℝ) (b : B) : r • b = ((r : ℂ)) • b
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_pair_add`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L84).
+**`StandardModel.IsGaugeSector.repGauge_pair_add`**, a lemma, [line 84](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L84).
 
 ```lean
 lemma repGauge_pair_add (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
@@ -64,7 +64,7 @@ lemma repGauge_pair_add (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin
       = z • (F l μ ν φ₁ + Complex.I • F l μ ν φ₂)
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_pair_sub`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L97).
+**`StandardModel.IsGaugeSector.repGauge_pair_sub`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L97).
 
 ```lean
 lemma repGauge_pair_sub (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
@@ -75,7 +75,7 @@ lemma repGauge_pair_sub (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin
       = (starRingEnd ℂ z) • (F l μ ν φ₁ - Complex.I • F l μ ν φ₂)
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_fixed`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L111).
+**`StandardModel.IsGaugeSector.repGauge_fixed`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L111).
 
 ```lean
 lemma repGauge_fixed (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
@@ -86,7 +86,7 @@ lemma repGauge_fixed (g : GaugeGroupI) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
 
 ## B. The gauge weight decomposition
 
-**`StandardModel.IsGaugeSector.adjVec`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L128).
+**`StandardModel.IsGaugeSector.adjVec`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L128).
 
 > The weight vectors of the adjoint: for each root the two complex combinations of
 > the paired coordinate symbols, and for each Cartan direction the symbol itself.
@@ -97,7 +97,7 @@ noncomputable def adjVec (h : IsGaugeSector B repGauge hrepGauge_mul repLorentz
     (μ ν : Fin 1 ⊕ Fin 3) : Fin 4 ⊕ Fin 4 ⊕ Fin 4 → B
 ```
 
-**`StandardModel.IsGaugeSector.adjWeight`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L138).
+**`StandardModel.IsGaugeSector.adjWeight`**, a def, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L138).
 
 > The gauge weight of each adjoint weight vector.
 
@@ -105,7 +105,7 @@ noncomputable def adjVec (h : IsGaugeSector B repGauge hrepGauge_mul repLorentz
 def adjWeight : Fin 4 ⊕ Fin 4 ⊕ Fin 4 → GaugeWeight
 ```
 
-**`StandardModel.IsGaugeSector.repGauge_adjVec`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L145).
+**`StandardModel.IsGaugeSector.repGauge_adjVec`**, a lemma, [line 145](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L145).
 
 > Each adjoint weight vector is a simultaneous eigenvector of the gauge torus.
 
@@ -116,7 +116,7 @@ lemma repGauge_adjVec {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 �
       = ((expI : ℂ) ^ GaugeWeight.coord (adjWeight k) i) • h.adjVec l μ ν k
 ```
 
-**`StandardModel.IsGaugeSector.F_coord_rootIdx_fst`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L175).
+**`StandardModel.IsGaugeSector.F_coord_rootIdx_fst`**, a lemma, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L175).
 
 > The first symbol of a root pair, recovered from the two weight vectors.
 
@@ -128,7 +128,7 @@ lemma F_coord_rootIdx_fst {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
         + h.adjVec l μ ν (Sum.inr (Sum.inl r)))
 ```
 
-**`StandardModel.IsGaugeSector.F_coord_rootIdx_snd`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L188).
+**`StandardModel.IsGaugeSector.F_coord_rootIdx_snd`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L188).
 
 > The second symbol of a root pair, recovered from the two weight vectors.
 
@@ -140,7 +140,7 @@ lemma F_coord_rootIdx_snd {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin
         - h.adjVec l μ ν (Sum.inr (Sum.inl r)))
 ```
 
-**`StandardModel.IsGaugeSector.F_coord_mem_iSup`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L201).
+**`StandardModel.IsGaugeSector.F_coord_mem_iSup`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L201).
 
 > Every standard coordinate symbol lies in the join of the weight-vector lines.
 
@@ -151,7 +151,7 @@ lemma F_coord_mem_iSup {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 1 
       ∈ ⨆ k, Submodule.span ℂ {h.adjVec l μ ν k}
 ```
 
-**`StandardModel.IsGaugeSector.span_range_eq_iSup`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L239).
+**`StandardModel.IsGaugeSector.span_range_eq_iSup`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L239).
 
 > The span of the field-strength symbols is the join of the twelve weight lines.
 
@@ -161,7 +161,7 @@ lemma span_range_eq_iSup {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : Fin 
       = ⨆ k, Submodule.span ℂ {h.adjVec l μ ν k}
 ```
 
-**`StandardModel.IsGaugeSector.rangeGaugeWeight`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L260).
+**`StandardModel.IsGaugeSector.rangeGaugeWeight`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L260).
 
 > The gauge weight decomposition of the span of one field-strength symbol map.
 
@@ -171,7 +171,7 @@ noncomputable def rangeGaugeWeight {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3)
     GaugeWeightDecomposition repGauge (Submodule.span ℂ (Set.range (F l μ ν)))
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight`**, an instance, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L272).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight`**, an instance, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L272).
 
 > **The gauge weight decomposition of the gauge derivative submodules**, for any
 > number of covariant derivatives.
@@ -181,7 +181,7 @@ noncomputable instance derivSubmoduleGaugeWeight (n : ℕ) :
     GaugeWeightDecomposition repGauge (h.derivSubmodule n)
 ```
 
-**`StandardModel.IsGaugeSector.rangeGaugeWeight_supp`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L283).
+**`StandardModel.IsGaugeSector.rangeGaugeWeight_supp`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L283).
 
 > The support of the decomposition of one symbol map: the image of `adjWeight`.
 
@@ -192,7 +192,7 @@ lemma rangeGaugeWeight_supp {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (μ ν : F
         ({adjWeight k} : Finset GaugeWeight)
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L293).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L293).
 
 > **The gauge weights occurring in the gauge derivative submodules**: the six `su(3)`
 > roots, the two `su(2)` roots and the zero weight carried by the Cartan and `u(1)`
@@ -208,7 +208,7 @@ lemma derivSubmoduleGaugeWeight_supp (n : ℕ) :
 
 ## C. The pieces of the decomposition
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L317).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece`**, a lemma, [line 317](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L317).
 
 > **The pieces of the gauge weight decomposition.**  The weight-`w` piece is the join,
 > over the derivative slots and the two covector indices, of the lines spanned by those
@@ -222,7 +222,7 @@ lemma derivSubmoduleGaugeWeight_piece (n : ℕ) (w : GaugeWeight) :
         (if w = adjWeight k then ℂ ∙ h.adjVec l μ ν k else ⊥)
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_rootWeight`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L324).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_rootWeight`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L324).
 
 > The piece at a root weight: the `+` combination for that root alone.
 
@@ -233,7 +233,7 @@ lemma derivSubmoduleGaugeWeight_piece_rootWeight (n : ℕ) (r : Fin 4) :
         ℂ ∙ h.adjVec l μ ν (Sum.inl r)
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_neg_rootWeight`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L345).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_neg_rootWeight`**, a lemma, [line 345](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L345).
 
 > The piece at the opposite of a root weight: the `-` combination for that root.
 
@@ -244,7 +244,7 @@ lemma derivSubmoduleGaugeWeight_piece_neg_rootWeight (n : ℕ) (r : Fin 4) :
         ℂ ∙ h.adjVec l μ ν (Sum.inr (Sum.inl r))
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_zero'`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L367).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_zero'`**, a lemma, [line 367](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L367).
 
 > The weight-zero piece: the two `su(3)` Cartan generators, the `su(2)` Cartan
 > generator and the `u(1)` generator, the only directions the torus fixes.
@@ -257,7 +257,7 @@ lemma derivSubmoduleGaugeWeight_piece_zero' (n : ℕ) :
         ℂ ∙ h.adjVec l μ ν (Sum.inr (Sum.inr c))
 ```
 
-**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_eq_bot`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L382).
+**`StandardModel.IsGaugeSector.derivSubmoduleGaugeWeight_piece_eq_bot`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean#L382).
 
 > Every other weight has a trivial piece.
 
@@ -274,4 +274,4 @@ lemma derivSubmoduleGaugeWeight_piece_eq_bot (n : ℕ) {w : GaugeWeight}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean)

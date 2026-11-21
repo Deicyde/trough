@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.57 The étale topology vs Zariski and finite étale Covers
 
-Section 110.57 of the Stacks Project, [Tag 0HAQ](https://stacks.math.columbia.edu/tag/0HAQ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.57 of the Stacks Project, [Tag 0HAQ](https://stacks.math.columbia.edu/tag/0HAQ). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0HAR, a lemma
 
 [Tag 0HAR](https://stacks.math.columbia.edu/tag/0HAR) in the Stacks Project.
 
-**`AlgebraicGeometry.not_exists_cover_zariskiFiniteEtale_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/EtaleNotZariskiFiniteEtale.lean, line 942](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Sites/EtaleNotZariskiFiniteEtale.lean#L942).
+**`AlgebraicGeometry.not_exists_cover_zariskiFiniteEtale_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Sites/EtaleNotZariskiFiniteEtale.lean, line 942](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Sites/EtaleNotZariskiFiniteEtale.lean#L942).
 
 > **Stacks Project, Tag 0HAR.** Let `X` be a smooth connected affine curve over `ℂ` and
 > `g : Y ⟶ X` a finite morphism of degree `3` from a smooth connected curve `Y` over `ℂ`, such that
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.57, Tag 0HAQ](https://stacks.math.columbia.edu/tag/0HAQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

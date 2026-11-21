@@ -8,13 +8,13 @@ proof: formalized
 
 # 6.32 Closed immersions and (pre)sheaves
 
-Section 6.32 of the Stacks Project, [Tag 00AD](https://stacks.math.columbia.edu/tag/00AD). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 6.32 of the Stacks Project, [Tag 00AD](https://stacks.math.columbia.edu/tag/00AD). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 00AE, a lemma
 
 [Tag 00AE](https://stacks.math.columbia.edu/tag/00AE) in the Stacks Project.
 
-**`ClosedImmersionSheaves.isTerminalStalkPushforwardOfNotMemRange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L116). References: EGA 0 (4.2.5), “zero stalks outside X”.
+**`ClosedImmersionSheaves.isTerminalStalkPushforwardOfNotMemRange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L116). References: EGA 0 (4.2.5), “zero stalks outside X”.
 
 > **Stacks 00AE, the stalks of `i_* F` away from `Z`.** For `i : Z ⟶ X` a closed embedding,
 > `F` a sheaf on `Z` and `x ∈ X` not in the image of `i`, the stalk `(i_* F)_x` is a terminal
@@ -32,7 +32,7 @@ noncomputable def isTerminalStalkPushforwardOfNotMemRange
     IsTerminal (stalk (i _* F) x)
 ```
 
-**`ClosedImmersionSheaves.sheaf_pullback_pushforward_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L202).
+**`ClosedImmersionSheaves.sheaf_pullback_pushforward_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L202).
 
 > **Stacks 00AE, `i⁻¹ i_* = id`.** For an inducing `i : Z ⟶ X` — in particular for the
 > inclusion of a closed subset — the counit `i⁻¹ i_* ⟶ 𝟭` of the adjunction
@@ -47,13 +47,13 @@ theorem sheaf_pullback_pushforward_counit_isIso
 
 Declarations registered for the tag:
 
-- [`TopCat.Presheaf.stalkPushforward.stalkPushforward_iso_of_isInducing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopCat.Presheaf.stalkPushforward.stalkPushforward_iso_of_isInducing#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L217) (StacksFrontier): “The stalk of `i_* F` at a point `i z` of the closed subset `Z` is `F_z`, via the canonical comparison map `stalkPushforward`. Mathlib proves this for any inducing map, and a closed embedding is inducing.”. References: EGA 0 (3.4.5), “more general”.
+- [`TopCat.Presheaf.stalkPushforward.stalkPushforward_iso_of_isInducing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopCat.Presheaf.stalkPushforward.stalkPushforward_iso_of_isInducing#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Pushforward.lean#L217) (StacksFrontier): “The stalk of `i_* F` at a point `i z` of the closed subset `Z` is `F_z`, via the canonical comparison map `stalkPushforward`. Mathlib proves this for any inducing map, and a closed embedding is inducing.”. References: EGA 0 (3.4.5), “more general”.
 
 ## Tag 00AF, a lemma
 
 [Tag 00AF](https://stacks.math.columbia.edu/tag/00AF) in the Stacks Project.
 
-**`pushforward00AF_fullyFaithful_and_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SetsEssImage.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/SetsEssImage.lean#L72). The attribute's comment: “Full faithfulness holds for any subset `Z`; closedness is used for the essential image.”.
+**`pushforward00AF_fullyFaithful_and_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/SetsEssImage.lean, line 72](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/SetsEssImage.lean#L72). The attribute's comment: “Full faithfulness holds for any subset `Z`; closedness is used for the essential image.”.
 
 > **Stacks 00AF.** For the inclusion `i : Z → X` of a closed subset, the functor
 > `i_* : Sh(Z) → Sh(X)` on sheaves of sets is fully faithful, and its essential image consists
@@ -71,7 +71,7 @@ theorem pushforward00AF_fullyFaithful_and_essImage_iff (X : TopCat.{u}) {Z : Set
 
 [Tag 00AG](https://stacks.math.columbia.edu/tag/00AG) in the Stacks Project.
 
-**`closedInclusion_pushforward_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L67).
+**`closedInclusion_pushforward_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 67](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L67).
 
 > **Stacks 00AG, faithfulness.** The pushforward of sheaves of abelian groups along a closed
 > embedding is a faithful functor.
@@ -82,7 +82,7 @@ theorem closedInclusion_pushforward_faithful
     (closedInclusionPushforward Z X i).Faithful
 ```
 
-**`closedInclusion_pushforward_full`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L75).
+**`closedInclusion_pushforward_full`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L75).
 
 > **Stacks 00AG, fullness.** The pushforward of sheaves of abelian groups along a closed
 > embedding is a full functor: every morphism `i_* 𝒜 ⟶ i_* ℬ` is `i_*` of a morphism `𝒜 ⟶ ℬ`.
@@ -93,7 +93,7 @@ theorem closedInclusion_pushforward_full
     (closedInclusionPushforward Z X i).Full
 ```
 
-**`closedInclusion_pushforward_essImage_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L117). References: EGA 0 (3.4.6), “(F)”; EGA 0 (4.2.5), “Ψ\_*M is zero outside X”; EGA IV (21.9.1), “special case”; SGA 6 IX (1.1), “Support clause”.
+**`closedInclusion_pushforward_essImage_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 117](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L117). References: EGA 0 (3.4.6), “(F)”; EGA 0 (4.2.5), “Ψ\_*M is zero outside X”; EGA IV (21.9.1), “special case”; SGA 6 IX (1.1), “Support clause”.
 
 > **Stacks 00AG, essential image.** If a sheaf `G` of abelian groups on `X` lies in the
 > essential image of the pushforward along a closed embedding `i`, then the stalk of `G` vanishes
@@ -108,7 +108,7 @@ theorem closedInclusion_pushforward_essImage_stalk_isZero
     ∀ x : X, x ∉ Set.range i.hom → IsZero (Presheaf.stalk G.obj x)
 ```
 
-**`Stacks.ClosedImmersion.closedInclusionPushforward_full_faithful_and_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L269).
+**`Stacks.ClosedImmersion.closedInclusionPushforward_full_faithful_and_essImage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 269](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L269).
 
 > **Stacks 00AG.** Let `i : Z ⟶ X` be a closed embedding of topological spaces. The
 > pushforward `i_* : Ab(Z) ⥤ Ab(X)` on sheaves of abelian groups is fully faithful, and its
@@ -131,7 +131,7 @@ theorem closedInclusionPushforward_full_faithful_and_essImage_iff
 
 [Tag 00AH](https://stacks.math.columbia.edu/tag/00AH) in the Stacks Project.
 
-**`Stacks.full_and_faithful_sheafPushforward_subsetInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean#L157). The attribute's comment: “fully faithful part; holds for any subset `Z`”.
+**`Stacks.full_and_faithful_sheafPushforward_subsetInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean, line 157](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean#L157). The attribute's comment: “fully faithful part; holds for any subset `Z`”.
 
 > **Stacks 00AH, part 1, in its general form.** For `X : TopCat.{u}`, any subset
 > `Z ⊆ X` with inclusion `i : Z ↪ X`, and any type of algebraic structure `(C, F)`
@@ -148,7 +148,7 @@ theorem full_and_faithful_sheafPushforward_subsetInclusion (X : TopCat.{u}) (Z :
       (TopCat.Sheaf.pushforward S.C (subsetInclusion X Z)).Faithful
 ```
 
-**`Stacks.essImage_sheafPushforward_subsetInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean#L539). The attribute's comment: “essential image part”.
+**`Stacks.essImage_sheafPushforward_subsetInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean, line 539](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/PushforwardAlgStruct.lean#L539). The attribute's comment: “essential image part”.
 
 > **Stacks 00AH, part 2, in its general form.** Let `X : TopCat.{u}`, let `Z ⊆ X`
 > be closed with inclusion `i : Z ↪ X`, and let `(C, F)` be a type of algebraic structure
@@ -176,7 +176,7 @@ theorem essImage_sheafPushforward_subsetInclusion_iff (X : TopCat.{u}) (Z : Set 
 
 [Tag 00AI](https://stacks.math.columbia.edu/tag/00AI) in the Stacks Project.
 
-**`ClosedImmersionSheaves.not_preservesColimitsOfShape_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L78). The attribute's comment: “i\_* is not right exact as a functor between categories of sheaves of sets”. References: SGA 4 IV (3.1.2), “u\_* not right exact”.
+**`ClosedImmersionSheaves.not_preservesColimitsOfShape_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L78). The attribute's comment: “i\_* is not right exact as a functor between categories of sheaves of sets”. References: SGA 4 IV (3.1.2), “u\_* not right exact”.
 
 > **Stacks 00AI, first half.** For `i : Z ⟶ X` a closed embedding and `x ∈ X` outside the image
 > of `i`, the pushforward `i_* : Sh(Z, Type) ⥤ Sh(X, Type)` does not preserve binary coproducts, i.e.
@@ -195,7 +195,7 @@ theorem not_preservesColimitsOfShape_sheafPushforward
     ¬ PreservesColimitsOfShape (Discrete WalkingPair) (Sheaf.pushforward (Type u) i)
 ```
 
-**`ClosedImmersionSheaves.not_isLeftAdjoint_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L111). The attribute's comment: “in particular i\_* cannot have a right adjoint”.
+**`ClosedImmersionSheaves.not_isLeftAdjoint_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L111). The attribute's comment: “in particular i\_* cannot have a right adjoint”.
 
 > **Stacks 00AI, second half.** For `i : Z ⟶ X` a closed embedding and `x ∈ X` outside the image
 > of `i`, the pushforward `i_* : Sh(Z, Type) ⥤ Sh(X, Type)` has no right adjoint: a functor with a
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 6.32, Tag 00AD](https://stacks.math.columbia.edu/tag/00AD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

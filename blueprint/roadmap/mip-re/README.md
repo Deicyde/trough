@@ -1,6 +1,10 @@
 # MIP* = RE
 
-The project's blueprint, read at commit [5926bdff](https://github.com/vidick/MIPRE-formalization/tree/5926bdff5db621f44682a101007ef2fe3ae8d970) (2026-10-15): one article for each of its 667 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 47 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
+[vidick/MIPRE-formalization](https://github.com/vidick/MIPRE-formalization) says in its README:
+
+> This repository hosts a collaborative Lean 4 formalization project for the theorem **MIP\* = RE** (Ji, Natarajan, Vidick, Wright, Yuen, [arXiv:2001.04383](https://arxiv.org/abs/2001.04383)).
+
+Its blueprint, by the MIP$^*$ = RE formalization project, read at commit [5926bdff](https://github.com/vidick/MIPRE-formalization/tree/5926bdff5db621f44682a101007ef2fe3ae8d970) (2026-10-15): one article for each of its 667 nodes whose Lean declarations it names and marks formalized, or in Mathlib. Its other 47 nodes have no article, and a section of only those is left out: the map records what the project contains, not what it plans. A statement for which the blueprint marks no proof `\leanok` says so. Dependencies are the blueprint's `\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.
 
 The text is the blueprint's, under its Apache-2.0 license: each page has a section's prose, remarks and examples in the blueprint's order, with each node's statement and proof where the node stands.
 

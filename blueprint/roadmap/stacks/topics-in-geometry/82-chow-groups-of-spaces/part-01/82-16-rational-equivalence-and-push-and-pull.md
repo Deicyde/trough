@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.16 Rational equivalence and push and pull
 
-Section 82.16 of the Stacks Project, [Tag 0EQ9](https://stacks.math.columbia.edu/tag/0EQ9). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 82.16 of the Stacks Project, [Tag 0EQ9](https://stacks.math.columbia.edu/tag/0EQ9). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0EQA, a lemma
 
 [Tag 0EQA](https://stacks.math.columbia.edu/tag/0EQA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatPullbackMap_rationalFunctionPrincipalDivisorCycle_eq_finsum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackPrincipalDivisorComponents.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackPrincipalDivisorComponents.lean#L719). The attribute's comment: “the displayed identity of (k + r - 1)-cycles on X, at every integral closed subspace of X; the sum is over the irreducible components X' of X (a locally finite family), m\_\{X',X} is the length of O\_X at the generic point of X' (0EE9 part (1) for the space X), g ∘ f|\_\{X'} is the image of g under the extension of function fields of the dominant f|\_\{X'} (0EML), and every cycle is the one of this chapter: f^* is 0EP8, div is 0EQ1 at the canonical embeddings of 0ENK, (X' → X)\_* is 0EP1; the hypotheses are exactly the tag's”.
+**`AlgebraicGeometry.Space.flatPullbackMap_rationalFunctionPrincipalDivisorCycle_eq_finsum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackPrincipalDivisorComponents.lean, line 719](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackPrincipalDivisorComponents.lean#L719). The attribute's comment: “the displayed identity of (k + r - 1)-cycles on X, at every integral closed subspace of X; the sum is over the irreducible components X' of X (a locally finite family), m\_\{X',X} is the length of O\_X at the generic point of X' (0EE9 part (1) for the space X), g ∘ f|\_\{X'} is the image of g under the extension of function fields of the dominant f|\_\{X'} (0EML), and every cycle is the one of this chapter: f^* is 0EP8, div is 0EQ1 at the canonical embeddings of 0ENK, (X' → X)\_* is 0EP1; the hypotheses are exactly the tag's”.
 
 > **Stacks 0EQA.** *Flat pullback of a principal divisor.* In Situation 0EDT let `X, Y/B` be
 > good, assume `Y` integral with `dim_δ(Y) = k`, and let `f : X ⟶ Y` be a flat morphism over `B`
@@ -45,7 +45,7 @@ theorem flatPullbackMap_rationalFunctionPrincipalDivisorCycle_eq_finsum_componen
 
 [Tag 0EQB](https://stacks.math.columbia.edu/tag/0EQB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.rationallyEquivalentCanonical_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackRationalEquivalenceCanonical.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackRationalEquivalenceCanonical.lean#L466). The attribute's comment: “f^*α ∼\_rat f^*β in Z\_\{m+r}(X) for α ∼\_rat β in Z\_m(Y), f flat of relative dimension r between good spaces over B; rational equivalence at the canonical embeddings of 0ENK, the presenting family on X indexed in max v (u+1) when the one on Y is indexed in v”.
+**`AlgebraicGeometry.Space.rationallyEquivalentCanonical_flatPullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackRationalEquivalenceCanonical.lean, line 466](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackRationalEquivalenceCanonical.lean#L466). The attribute's comment: “f^*α ∼\_rat f^*β in Z\_\{m+r}(X) for α ∼\_rat β in Z\_m(Y), f flat of relative dimension r between good spaces over B; rational equivalence at the canonical embeddings of 0ENK, the presenting family on X indexed in max v (u+1) when the one on Y is indexed in v”.
 
 > In Situation 0EDT let `X, Y/B` be good and let `f : X ⟶ Y` be a morphism over `B` which is
 > flat of relative dimension `r`. If `α ∼_rat β` are rationally equivalent `m`-cycles on `Y`, then
@@ -69,7 +69,7 @@ theorem rationallyEquivalentCanonical_flatPullbackMap (m n : ℤ) (hmn : m + (r 
 
 [Tag 0EQC](https://stacks.math.columbia.edu/tag/0EQC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.rationallyEquivalentCanonical_properCyclePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardRationalEquivalence.lean, line 708](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardRationalEquivalence.lean#L708).
+**`AlgebraicGeometry.Space.rationallyEquivalentCanonical_properCyclePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardRationalEquivalence.lean, line 708](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardRationalEquivalence.lean#L708).
 
 > **Stacks 0EQC.** In Situation 0EDT let `X/B` and `Y/B` be good and let `p : X ⟶ Y` be a
 > proper morphism over the base. If `α, β ∈ Z_k(X)` are rationally equivalent, then `p_*α` is
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.16, Tag 0EQ9](https://stacks.math.columbia.edu/tag/0EQ9)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

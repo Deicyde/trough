@@ -8,7 +8,7 @@ proof: formalized
 
 # Maximal self-adjoint subrings
 
-The module `QuantumInfo.ForMathlib.IsMaximalSelfAdjoint`, [QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean): 5 declarations, 3 with a docstring.
+The module `QuantumInfo.ForMathlib.IsMaximalSelfAdjoint`, [QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean): 5 declarations, 3 with a docstring.
 
 > This file introduces the `IsMaximalSelfAdjoint R α` typeclass, which records that the
 > `TrivialStar` ring `R` carries the self-adjoint part of a star ring `α`. It bundles an
@@ -17,7 +17,7 @@ The module `QuantumInfo.ForMathlib.IsMaximalSelfAdjoint`, [QuantumInfo/ForMathli
 > Hermitian matrix be valued in `ℝ` instead of `ℂ`, reflecting that physical observables are
 > self-adjoint and take real expectation values.
 
-**`IsMaximalSelfAdjoint`**, a class, [line 27](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L27).
+**`IsMaximalSelfAdjoint`**, a class, [line 27](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L27).
 
 > `IsMaximalSelfAdjoint R α` witnesses that `R` is the maximal `TrivialStar` subring of the
 > star ring `α`, via an additive map `selfadjMap : α →+ R` collecting the self-adjoint part of
@@ -35,7 +35,7 @@ class IsMaximalSelfAdjoint (R : outParam Type*) (α : Type*) [Star α] [Star R] 
   selfadj_algebra : ∀ {a : α}, IsSelfAdjoint a → algebraMap _ _ (selfadjMap a) = a
 ```
 
-**`instTrivialStarIsMaximalSelfAdjoint`**, an instance, [line 37](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L37).
+**`instTrivialStarIsMaximalSelfAdjoint`**, an instance, [line 37](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L37).
 
 > Every `TrivialStar` `CommSemiring` is its own maximal self adjoints.
 
@@ -44,7 +44,7 @@ instance instTrivialStarIsMaximalSelfAdjoint {R} [Star R] [TrivialStar R] [CommS
     IsMaximalSelfAdjoint R R
 ```
 
-**`instRCLikeIsMaximalSelfAdjoint`**, an instance, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L44).
+**`instRCLikeIsMaximalSelfAdjoint`**, an instance, [line 44](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L44).
 
 > ℝ is the maximal self adjoint elements over RCLike
 
@@ -52,14 +52,14 @@ instance instTrivialStarIsMaximalSelfAdjoint {R} [Star R] [TrivialStar R] [CommS
 instance instRCLikeIsMaximalSelfAdjoint {α} [RCLike α] : IsMaximalSelfAdjoint ℝ α
 ```
 
-**`IsMaximalSelfAdjoint.trivial_selfadjMap`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L56).
+**`IsMaximalSelfAdjoint.trivial_selfadjMap`**, a lemma, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L56).
 
 ```lean
 lemma trivial_selfadjMap {R} [Star R] [TrivialStar R] [CommSemiring R] :
     (selfadjMap : R →+ R) = .id R
 ```
 
-**`IsMaximalSelfAdjoint.RCLike_selfadjMap`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L61).
+**`IsMaximalSelfAdjoint.RCLike_selfadjMap`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean#L61).
 
 ```lean
 lemma RCLike_selfadjMap {α} [RCLike α] : (selfadjMap : α →+ ℝ) = RCLike.re
@@ -71,4 +71,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean)
+- [QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean)

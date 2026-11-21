@@ -7,13 +7,13 @@ proof: formalized
 
 # Boolean synthesis
 
-`Cslib.Computability.Circuit.Boolean.Synthesis`, in [Cslib/Computability/Circuit/Boolean/Synthesis.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean), by Samuel Schlesinger.
+`Cslib.Computability.Circuit.Boolean.Synthesis`, in [Cslib/Computability/Circuit/Boolean/Synthesis.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean), by Samuel Schlesinger.
 
 > The generic synthesis rules specialize to the De Morgan basis: constants, negation, conjunction,
 > and disjunction. Finite conjunctions and disjunctions use the generic fold bound, and
 > `synthesis_minterm` combines literals to test a specified tuple of input bits.
 
-`Cslib.Circuits.Synthesis.const` (theorem, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L34))
+`Cslib.Circuits.Synthesis.const` (theorem, [line 34](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L34))
 
 > Constants cost one gate.
 
@@ -21,7 +21,7 @@ proof: formalized
 theorem const (value : Bool) : Synthesis interpretation s {fun _ => value} 1
 ```
 
-`Cslib.Circuits.Synthesis.not` (theorem, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L38))
+`Cslib.Circuits.Synthesis.not` (theorem, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L38))
 
 > Apply negation to a synthesized function.
 
@@ -30,7 +30,7 @@ theorem not (h : Synthesis interpretation s {f} a) :
     Synthesis interpretation s {fun x => !f x} (a + 1)
 ```
 
-`Cslib.Circuits.Synthesis.and` (theorem, [line 43](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L43))
+`Cslib.Circuits.Synthesis.and` (theorem, [line 43](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L43))
 
 > Binary conjunction costs one gate beyond its arguments.
 
@@ -39,7 +39,7 @@ theorem and (hf : Synthesis interpretation s {f} a) (hg : Synthesis interpretati
     Synthesis interpretation s {fun x => f x && g x} (a + b + 1)
 ```
 
-`Cslib.Circuits.Synthesis.or` (theorem, [line 48](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L48))
+`Cslib.Circuits.Synthesis.or` (theorem, [line 48](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L48))
 
 > Binary disjunction costs one gate beyond its arguments.
 
@@ -48,7 +48,7 @@ theorem or (hf : Synthesis interpretation s {f} a) (hg : Synthesis interpretatio
     Synthesis interpretation s {fun x => f x || g x} (a + b + 1)
 ```
 
-`Cslib.Circuits.Synthesis.exists_mem` (theorem, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L53))
+`Cslib.Circuits.Synthesis.exists_mem` (theorem, [line 53](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L53))
 
 > Disjoin a finite family of functions. The extra gate supplies the empty disjunction.
 
@@ -59,7 +59,7 @@ theorem exists_mem (indices : Finset ι) (f : ι → BooleanFunction n) (cost : 
       ((∑ i ∈ indices, (cost i + 1)) + 1)
 ```
 
-`Cslib.Circuits.Synthesis.forall_mem` (theorem, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L68))
+`Cslib.Circuits.Synthesis.forall_mem` (theorem, [line 68](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L68))
 
 > Conjoin a finite family of functions. The extra gate supplies the empty conjunction.
 
@@ -70,7 +70,7 @@ theorem forall_mem (indices : Finset ι) (f : ι → BooleanFunction n) (cost : 
       ((∑ i ∈ indices, (cost i + 1)) + 1)
 ```
 
-`Cslib.Circuits.Boolean.synthesis_minterm` (theorem, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L87))
+`Cslib.Circuits.Boolean.synthesis_minterm` (theorem, [line 87](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean#L87))
 
 > A conjunction testing a specified tuple of input bits.
 
@@ -88,5 +88,5 @@ theorem synthesis_minterm {k : ℕ} (wires : Fin k → Fin n) (value : Fin k →
 
 ## Sources
 
-- [Cslib/Computability/Circuit/Boolean/Synthesis.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Synthesis.lean)
+- [Cslib/Computability/Circuit/Boolean/Synthesis.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Computability/Circuit/Boolean/Synthesis.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Computability.Circuit.Boolean.Synthesis.json)

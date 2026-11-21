@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.TraceClass.isTraceClass_rankOne, ProbabilisticTheory.TraceClass.trace_rankOne, ProbabilisticTheory.TraceClass.tracePairing_rankOne, ProbabilisticTheory.TraceClass.norm_le_tracePairing, ProbabilisticTheory.TraceClass.norm_tracePairing, ProbabilisticTheory.TraceClass.norm_tracePairingContinuousLinearMap, ProbabilisticTheory.TraceClass.tracePairingLinearIsometry, ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_apply
+lean: PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_rankOne, PhyslibAlpha.ProbabilisticTheory.TraceClass.trace_rankOne, PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_rankOne, PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_le_tracePairing, PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_tracePairing, PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_tracePairingContinuousLinearMap, PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingLinearIsometry, PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_apply
 statement: formalized
 proof: formalized
 ---
 
 # The trace pairing is isometric
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.TracePairingNorm`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean): 9 declarations, 3 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.TracePairingNorm`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean): 9 declarations, 3 with a docstring.
 
 > The trace pairing of bounded operators against trace-class operators is an isometry.
 
@@ -30,14 +30,14 @@ The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.TracePairingNorm`, [Ph
 
 ## A. Rank-one operators are trace class
 
-**`ProbabilisticTheory.TraceClass.isTraceClass_rankOne`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.isTraceClass_rankOne`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L60).
 
 ```lean
 lemma isTraceClass_rankOne (x y : H) :
     IsTraceClass (InnerProductSpace.rankOne ℂ x y)
 ```
 
-**`ProbabilisticTheory.TraceClass.trace_rankOne`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.trace_rankOne`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L90).
 
 ```lean
 lemma trace_rankOne (x y : H) :
@@ -47,7 +47,7 @@ lemma trace_rankOne (x y : H) :
 
 ## B. The trace pairing with rank-one operators
 
-**`ProbabilisticTheory.TraceClass.tracePairing_rankOne`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L110).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairing_rankOne`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L110).
 
 ```lean
 lemma tracePairing_rankOne (A : H →L[ℂ] H) (x y : H) :
@@ -57,14 +57,14 @@ lemma tracePairing_rankOne (A : H →L[ℂ] H) (x y : H) :
 
 ## C. The norm of the trace pairing
 
-**`ProbabilisticTheory.TraceClass.norm_le_tracePairing`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L140).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_le_tracePairing`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L140).
 
 ```lean
 lemma norm_le_tracePairing (A : H →L[ℂ] H) :
     ‖A‖ ≤ ‖tracePairing A‖
 ```
 
-**`ProbabilisticTheory.TraceClass.norm_tracePairing`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L214).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_tracePairing`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L214).
 
 > The concrete trace pairing is isometric; this is the norm half of the `H →L[ℂ] H` predual
 > theorem.
@@ -74,7 +74,7 @@ lemma norm_tracePairing (A : H →L[ℂ] H) :
     ‖tracePairing A‖ = ‖A‖
 ```
 
-**`ProbabilisticTheory.TraceClass.norm_tracePairingContinuousLinearMap`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L219).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.norm_tracePairingContinuousLinearMap`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L219).
 
 > The operator-to-functional map has the same norm as the operator.
 
@@ -85,7 +85,7 @@ lemma norm_tracePairingContinuousLinearMap (A : H →L[ℂ] H) :
 
 ## D. The trace pairing as a linear isometry
 
-**`ProbabilisticTheory.TraceClass.tracePairingLinearIsometry`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L231).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingLinearIsometry`**, a def, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L231).
 
 > The trace pairing, as a linear isometry from bounded operators into the dual of the trace-class
 > operators.
@@ -95,14 +95,14 @@ def tracePairingLinearIsometry :
     (H →L[ℂ] H) →ₗᵢ[ℂ] (TraceClass H →L[ℂ] ℂ)
 ```
 
-**`ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_apply`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L237).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_apply`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L237).
 
 ```lean
 lemma tracePairingLinearIsometry_apply (A : H →L[ℂ] H) :
     tracePairingLinearIsometry A = tracePairing A
 ```
 
-**`ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_norm`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L240).
+**`PhyslibAlpha.ProbabilisticTheory.TraceClass.tracePairingLinearIsometry_norm`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean#L240).
 
 ```lean
 lemma tracePairingLinearIsometry_norm (A : H →L[ℂ] H) :
@@ -119,4 +119,4 @@ lemma tracePairingLinearIsometry_norm (A : H →L[ℂ] H) :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean)
+- [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean)

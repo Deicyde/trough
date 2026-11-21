@@ -7,7 +7,7 @@ proof: formalized
 
 # Common Utilities for Binary Fields
 
-`CompPoly.Fields.Binary.Common`, in [CompPoly/Fields/Binary/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean), by Chung Thai Nguyen, Quang Dao, Derek Sorensen, Dimitris Mitsios.
+`CompPoly.Fields.Binary.Common`, in [CompPoly/Fields/Binary/Common.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean), by Chung Thai Nguyen, Quang Dao, Derek Sorensen, Dimitris Mitsios.
 
 > This file provides shared utilities for binary field implementations (fields of characteristic 2).
 > It includes:
@@ -31,73 +31,73 @@ proof: formalized
 
 > ## Section 1: ZMod 2 Polynomial Lemmas
 
-`ZMod2Poly.add_self_cancel` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L48))
+`ZMod2Poly.add_self_cancel` (lemma, [line 48](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L48))
 
 ```lean
 lemma ZMod2Poly.add_self_cancel (a : Polynomial (ZMod 2)) : a + a = 0
 ```
 
-`ZMod2Poly.sub_eq_add` (lemma, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L51))
+`ZMod2Poly.sub_eq_add` (lemma, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L51))
 
 ```lean
 lemma ZMod2Poly.sub_eq_add (a b : Polynomial (ZMod 2)) : a - b = a + b
 ```
 
-`ZMod2Poly.neg_eq_self` (lemma, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L54))
+`ZMod2Poly.neg_eq_self` (lemma, [line 54](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L54))
 
 ```lean
 lemma ZMod2Poly.neg_eq_self (a : Polynomial (ZMod 2)) : -a = a
 ```
 
-`ZMod2Poly.add_eq_sub` (lemma, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L57))
+`ZMod2Poly.add_eq_sub` (lemma, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L57))
 
 ```lean
 lemma ZMod2Poly.add_eq_sub (a b : Polynomial (ZMod 2)) : a + b = a - b
 ```
 
-`ZMod2Poly.two_mul` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L60))
+`ZMod2Poly.two_mul` (lemma, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L60))
 
 ```lean
 lemma ZMod2Poly.two_mul (a : Polynomial (ZMod 2)) : 2 * a = 0
 ```
 
-`ZMod2Poly.mul_two` (lemma, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L63))
+`ZMod2Poly.mul_two` (lemma, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L63))
 
 ```lean
 lemma ZMod2Poly.mul_two (a : Polynomial (ZMod 2)) : a * 2 = 0
 ```
 
-`ZMod2Poly.two_eq_zero` (lemma, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L66))
+`ZMod2Poly.two_eq_zero` (lemma, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L66))
 
 ```lean
 lemma ZMod2Poly.two_eq_zero : (2 : Polynomial (ZMod 2)) = 0
 ```
 
-`ZMod2Poly.three_eq_one` (lemma, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L69))
+`ZMod2Poly.three_eq_one` (lemma, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L69))
 
 ```lean
 lemma ZMod2Poly.three_eq_one : (3 : Polynomial (ZMod 2)) = 1
 ```
 
-`ZMod2Poly.mul_three` (lemma, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L71))
+`ZMod2Poly.mul_three` (lemma, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L71))
 
 ```lean
 lemma ZMod2Poly.mul_three (a : Polynomial (ZMod 2)) : a * 3 = a
 ```
 
-`ZMod2Poly.natCast_ZMod2` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L75))
+`ZMod2Poly.natCast_ZMod2` (lemma, [line 75](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L75))
 
 ```lean
 lemma ZMod2Poly.natCast_ZMod2 (n : ℕ) : (n : Polynomial (ZMod 2)) = ((n % 2) : ℕ)
 ```
 
-`ZMod2_value_eq_zero_or_one` (lemma, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L79))
+`ZMod2_value_eq_zero_or_one` (lemma, [line 79](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L79))
 
 ```lean
 lemma ZMod2_value_eq_zero_or_one (x : ZMod 2) : x = 0 ∨ x = 1
 ```
 
-`eq_of_associated_ZMod2` (lemma, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L88))
+`eq_of_associated_ZMod2` (lemma, [line 88](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L88))
 
 > Helper: In Polynomial (ZMod 2), the only unit is 1.
 > Therefore, if two polynomials are Associated (differ by a unit), they must be Equal.
@@ -106,19 +106,19 @@ lemma ZMod2_value_eq_zero_or_one (x : ZMod 2) : x = 0 ∨ x = 1
 lemma eq_of_associated_ZMod2 {a b : Polynomial (ZMod 2)} (h : Associated a b) : a = b
 ```
 
-`ZMod2Poly.fintypeCard_eq_two` (lemma, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L120))
+`ZMod2Poly.fintypeCard_eq_two` (lemma, [line 120](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L120))
 
 ```lean
 lemma ZMod2Poly.fintypeCard_eq_two : Fintype.card (ZMod 2) = 2
 ```
 
-`ZMod2Poly.frobenius` (lemma, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L122))
+`ZMod2Poly.frobenius` (lemma, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L122))
 
 ```lean
 lemma ZMod2Poly.frobenius (a b : Polynomial (ZMod 2)) : (a + b) ^ 2 = a ^ 2 + b ^ 2
 ```
 
-`ZMod2Poly.euclidean_gcd_comm` (lemma, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L137))
+`ZMod2Poly.euclidean_gcd_comm` (lemma, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L137))
 
 > **EuclideanDomain.gcd_comm for Polynomials**
 > Commutativity: EuclideanDomain.gcd(a, b) = EuclideanDomain.gcd(b, a)
@@ -131,7 +131,7 @@ lemma ZMod2Poly.euclidean_gcd_comm (a b : Polynomial (ZMod 2)) :
 
 > ## Section 2: Polynomial Helper Lemmas
 
-`Polynomial.exists_factor_le_64_of_reducible` (lemma, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L156))
+`Polynomial.exists_factor_le_64_of_reducible` (lemma, [line 156](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L156))
 
 > Helper Lemma:
 > If P is a degree 128 polynomial and is REDUCIBLE,
@@ -145,7 +145,7 @@ lemma Polynomial.exists_factor_le_64_of_reducible.{u} {R : Type u} [Field R] (P 
 
 > ## Section 3: BitVec Operations
 
-`BinaryField.BitVec.toNat_of_cast` (lemma, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L230))
+`BinaryField.BitVec.toNat_of_cast` (lemma, [line 230](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L230))
 
 ```lean
 lemma BitVec.toNat_of_cast {w w2 : ℕ} (x : BitVec w) (h_width_eq : w = w2) :
@@ -154,13 +154,13 @@ lemma BitVec.toNat_of_cast {w w2 : ℕ} (x : BitVec w) (h_width_eq : w = w2) :
 
 > ## Section 4: BitVec ↔ Polynomial Isomorphism
 
-`BinaryField.toPoly` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L243))
+`BinaryField.toPoly` (definition, [line 243](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L243))
 
 ```lean
 noncomputable def toPoly {w : Nat} (v : BitVec w) : (ZMod 2)[X]
 ```
 
-`BinaryField.carryLessMul_unfold` (lemma, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L248))
+`BinaryField.carryLessMul_unfold` (lemma, [line 248](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L248))
 
 > Unfold `clMul` into an always-XOR form so that `toPoly_fold_xor`
 > applies directly in the proof of `toPoly_clMul`.
@@ -172,7 +172,7 @@ lemma carryLessMul_unfold {v w : ℕ} (a b : BitVec v) :
         then (zeroExtendTo b : BitVec w) <<< (i : Nat) else 0)) (0 : BitVec w)
 ```
 
-`BinaryField.clMul_unfold` (lemma, [line 259](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L259))
+`BinaryField.clMul_unfold` (lemma, [line 259](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L259))
 
 ```lean
 lemma clMul_unfold (a b : B128) :
@@ -181,7 +181,7 @@ lemma clMul_unfold (a b : B128) :
         then to256 b <<< (i : Nat) else 0)) (0 : B256)
 ```
 
-`BinaryField.toPoly_one_shiftLeft` (lemma, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L266))
+`BinaryField.toPoly_one_shiftLeft` (lemma, [line 266](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L266))
 
 > A single set bit at position `n` denotes the monomial `X^n`.
 
@@ -190,26 +190,26 @@ lemma toPoly_one_shiftLeft {w : Nat} (n : Nat) (h : n < w) :
     toPoly (1 <<< n : BitVec w) = X^n
 ```
 
-`BinaryField.toPoly_one_eq_one` (lemma, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L305))
+`BinaryField.toPoly_one_eq_one` (lemma, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L305))
 
 ```lean
 lemma toPoly_one_eq_one {w : Nat} (h_w_pos : w > 0) : toPoly (BitVec.ofNat w 1) = 1
 ```
 
-`BinaryField.toPoly_zero_eq_zero` (lemma, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L332))
+`BinaryField.toPoly_zero_eq_zero` (lemma, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L332))
 
 ```lean
 lemma toPoly_zero_eq_zero {w : Nat} : toPoly (BitVec.ofNat w 0) = 0
 ```
 
-`BinaryField.toPoly_ne_zero_iff_ne_zero` (lemma, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L339))
+`BinaryField.toPoly_ne_zero_iff_ne_zero` (lemma, [line 339](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L339))
 
 ```lean
 lemma toPoly_ne_zero_iff_ne_zero {w : Nat} (v : BitVec w) :
     toPoly v ≠ 0 ↔ v ≠ 0
 ```
 
-`BinaryField.toPoly_degree_lt_w` (lemma, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L403))
+`BinaryField.toPoly_degree_lt_w` (lemma, [line 403](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L403))
 
 > ToPoly degree is less than width
 
@@ -218,27 +218,27 @@ lemma toPoly_degree_lt_w {w : ℕ} (h_w_pos : w > 0) (v : BitVec w) :
     (toPoly v).degree < w
 ```
 
-`BinaryField.toPoly_degree_of_lt_two_pow` (lemma, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L425))
+`BinaryField.toPoly_degree_of_lt_two_pow` (lemma, [line 425](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L425))
 
 ```lean
 lemma toPoly_degree_of_lt_two_pow {w d : ℕ} (v : BitVec w)
     (hv : v.toNat < 2 ^ d) : (toPoly v).degree < d
 ```
 
-`BinaryField.BitVec_lt_two_pow_of_toPoly_degree_lt` (lemma, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L455))
+`BinaryField.BitVec_lt_two_pow_of_toPoly_degree_lt` (lemma, [line 455](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L455))
 
 ```lean
 lemma BitVec_lt_two_pow_of_toPoly_degree_lt {w d : ℕ} (v : BitVec w)
     (h_toPoly_degree_lt : (toPoly v).degree < d) : v.toNat < 2 ^ d
 ```
 
-`BinaryField.toPoly_xor` (lemma, [line 504](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L504))
+`BinaryField.toPoly_xor` (lemma, [line 504](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L504))
 
 ```lean
 lemma toPoly_xor {w} (a b : BitVec w) : toPoly (a ^^^ b) = toPoly a + toPoly b
 ```
 
-`BinaryField.toPoly_fold_xor` (lemma, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L553))
+`BinaryField.toPoly_fold_xor` (lemma, [line 553](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L553))
 
 > The "Homomorphism" Lemma.
 > Since toPoly(a ^^^ b) = toPoly a + toPoly b,
@@ -262,28 +262,28 @@ lemma toPoly_fold_xor {w : Nat} (n : Nat) (f : Nat → (BitVec w)) :
     ∑ i ∈ (Finset.range n), toPoly (f i)
 ```
 
-`BinaryField.toPoly_128_extend_256` (lemma, [line 565](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L565))
+`BinaryField.toPoly_128_extend_256` (lemma, [line 565](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L565))
 
 ```lean
 lemma toPoly_128_extend_256 (a : B128) :
     toPoly (to256 a) = toPoly a
 ```
 
-`BinaryField.BitVec_getLsb_eq_false_of_toNat_lt_two_pow` (theorem, [line 588](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L588))
+`BinaryField.BitVec_getLsb_eq_false_of_toNat_lt_two_pow` (theorem, [line 588](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L588))
 
 ```lean
 theorem BitVec_getLsb_eq_false_of_toNat_lt_two_pow {w d : ℕ} (a : BitVec w) (ha : a.toNat < 2 ^ d)
     (i : Fin w) (hd : d ≤ (i : ℕ)) : a.getLsb i = false
 ```
 
-`BinaryField.BitVec_getElem_eq_false_of_toNat_lt_two_pow` (theorem, [line 596](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L596))
+`BinaryField.BitVec_getElem_eq_false_of_toNat_lt_two_pow` (theorem, [line 596](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L596))
 
 ```lean
 theorem BitVec_getElem_eq_false_of_toNat_lt_two_pow {w d : ℕ} (a : BitVec w) (ha : a.toNat < 2 ^ d)
     (n : ℕ) (hn : n < w) (hd : d ≤ n) : a[n] = false
 ```
 
-`BinaryField.BitVec_getLsb_shiftLeft` (theorem, [line 603](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L603))
+`BinaryField.BitVec_getLsb_shiftLeft` (theorem, [line 603](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L603))
 
 ```lean
 theorem BitVec_getLsb_shiftLeft {w : ℕ} (a : BitVec w) (shift n : ℕ) (hn : n < w) :
@@ -293,7 +293,7 @@ theorem BitVec_getLsb_shiftLeft {w : ℕ} (a : BitVec w) (shift n : ℕ) (hn : n
         else false)
 ```
 
-`BinaryField.toPoly_coeff` (theorem, [line 618](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L618))
+`BinaryField.toPoly_coeff` (theorem, [line 618](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L618))
 
 ```lean
 theorem toPoly_coeff {w : ℕ} (v : BitVec w) (n : ℕ) :
@@ -301,14 +301,14 @@ theorem toPoly_coeff {w : ℕ} (v : BitVec w) (n : ℕ) :
       (if h : n < w then (if v.getLsb ⟨n, h⟩ = true then (1 : ZMod 2) else 0) else 0)
 ```
 
-`BinaryField.toPoly_shiftLeft_no_overflow` (theorem, [line 676](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L676))
+`BinaryField.toPoly_shiftLeft_no_overflow` (theorem, [line 676](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L676))
 
 ```lean
 theorem toPoly_shiftLeft_no_overflow {w d : ℕ} (a : BitVec w) (ha : a.toNat < 2 ^ d) {shift : ℕ}
     (h_no_overflow : d + shift ≤ w) : toPoly (a <<< shift) = (toPoly a) * X^shift
 ```
 
-`BinaryField.toPoly_zeroExtendTo` (lemma, [line 705](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L705))
+`BinaryField.toPoly_zeroExtendTo` (lemma, [line 705](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L705))
 
 > Widening does not change the polynomial denoted.
 
@@ -317,7 +317,7 @@ lemma toPoly_zeroExtendTo {v w : ℕ} (a : BitVec v) (h : v ≤ w) :
     toPoly (zeroExtendTo (w := w) a) = toPoly a
 ```
 
-`BinaryField.toPoly_carryLessMul` (lemma, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L723))
+`BinaryField.toPoly_carryLessMul` (lemma, [line 723](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L723))
 
 > `carryLessMul` denotes the product of the denoted polynomials, provided the result
 > width admits the full product.
@@ -327,7 +327,7 @@ lemma toPoly_carryLessMul {v w : ℕ} (a b : BitVec v) (h : v + v ≤ w) :
     toPoly (carryLessMul (w := w) a b) = toPoly a * toPoly b
 ```
 
-`BinaryField.toPoly_clMul` (lemma, [line 746](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L746))
+`BinaryField.toPoly_clMul` (lemma, [line 746](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L746))
 
 ```lean
 lemma toPoly_clMul (a b : B128) :
@@ -336,7 +336,7 @@ lemma toPoly_clMul (a b : B128) :
 
 > ### Splitting a bit vector
 
-`BinaryField.toPoly_eq_range` (lemma, [line 753](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L753))
+`BinaryField.toPoly_eq_range` (lemma, [line 753](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L753))
 
 > `toPoly` as a sum over the set bits, indexed by `ℕ`.
 
@@ -345,7 +345,7 @@ lemma toPoly_eq_range {w : ℕ} (v : BitVec w) :
     toPoly v = ∑ i ∈ Finset.range w, if v.toNat.testBit i then (X : (ZMod 2)[X]) ^ i else 0
 ```
 
-`BinaryField.toPoly_split` (lemma, [line 761](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L761))
+`BinaryField.toPoly_split` (lemma, [line 761](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L761))
 
 > Splitting the denoted polynomial at bit position `n` into a high part carrying `X ^ n`
 > and a low part.
@@ -358,7 +358,7 @@ lemma toPoly_split {w : ℕ} (v : BitVec w) (n : ℕ) (hn : n ≤ w) :
         + ∑ i ∈ Finset.range n, if v.toNat.testBit i then (X : (ZMod 2)[X]) ^ i else 0
 ```
 
-`BinaryField.chain_step` (lemma, [line 779](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L779))
+`BinaryField.chain_step` (lemma, [line 779](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L779))
 
 > Helper lemma to chain the modular squaring steps.
 
@@ -372,14 +372,14 @@ lemma chain_step {P : Polynomial (ZMod 2)} (hP : P ≠ 0) {k : ℕ}
 
 > ## Section 5: GCD Verification Helpers
 
-`BinaryField.gcd_eq_gcd_next_step` (lemma, [line 802](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L802))
+`BinaryField.gcd_eq_gcd_next_step` (lemma, [line 802](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L802))
 
 ```lean
 lemma gcd_eq_gcd_next_step {a b q r : Polynomial (ZMod 2)} (hb : b ≠ 0) (h : a = q * b + r) :
     EuclideanDomain.gcd a b = EuclideanDomain.gcd b r
 ```
 
-`BinaryField.gcd_one_zero` (lemma, [line 814](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean#L814))
+`BinaryField.gcd_one_zero` (lemma, [line 814](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean#L814))
 
 ```lean
 lemma gcd_one_zero : EuclideanDomain.gcd (1 : Polynomial (ZMod 2)) 0 = 1
@@ -396,5 +396,5 @@ lemma gcd_one_zero : EuclideanDomain.gcd (1 : Polynomial (ZMod 2)) 0 = 1
 
 ## Sources
 
-- [CompPoly/Fields/Binary/Common.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Fields/Binary/Common.lean)
+- [CompPoly/Fields/Binary/Common.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Fields/Binary/Common.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.Fields.Binary.Common.json)

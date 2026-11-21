@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0300",
@@ -586,7 +586,7 @@
     {
      "name": "Normal.separableClosure_perfectClosure_tensorDecomposition",
      "kind": "theorem",
-     "line": 70,
+     "line": 71,
      "private": false,
      "doc": "**Stacks 030M.** Let `E / F` be a normal algebraic extension, and let `E_sep` and `E_insep` be\nthe separable closure and the relative perfect closure of `F` in `E`. Then\n1. `E_sep / F` is Galois and `E / E_sep` is purely inseparable;\n2. `E_insep / F` is purely inseparable and `E / E_insep` is Galois;\n3. `E = E_sep ⊗[F] E_insep`: the multiplication map `E_sep ⊗[F] E_insep → E` is bijective, so it is\n  an isomorphism of `F`-algebras.",
      "statement": "theorem Normal.separableClosure_perfectClosure_tensorDecomposition [Normal F E] :\n    (IsGalois F (separableClosure F E) ∧ IsPurelyInseparable (separableClosure F E) E) ∧\n    (IsPurelyInseparable F (perfectClosure F E) ∧ IsGalois (perfectClosure F E) E) ∧\n    Function.Bijective\n      (Algebra.TensorProduct.productMap (separableClosure F E).val (perfectClosure F E).val)",
@@ -1193,7 +1193,7 @@
     {
      "name": "AdicCompletion.instIsAdicComplete",
      "kind": "instance",
-     "line": 156,
+     "line": 157,
      "private": false,
      "doc": "Adic completeness over a Noetherian ring, as an instance. Let `R` be a Noetherian ring, `I` an\nideal of `R` and `M` an `R`-module. Then the `I`-adic completion `M^∧` of `M` is `I`-adically\ncomplete. This is the Noetherian form of `AdicCompletion.isAdicComplete`, stated as an instance:\nover a Noetherian ring the finite generation of `I` that the proof needs is automatic, so no side\ncondition has to be supplied. The three assertions of Stacks 031C together are\n`AdicCompletion.isAdicComplete_and_pow_smul_top_eq_range_ofPowSMul_and_bijective_liftQ_eval`.",
      "statement": "public instance instIsAdicComplete {R : Type*} [CommRing R] [IsNoetherianRing R] (I : Ideal R)\n    (M : Type*) [AddCommGroup M] [Module R M] :\n    IsAdicComplete I (AdicCompletion I M)",
@@ -1740,7 +1740,7 @@
     {
      "name": "Algebra.FormallySmooth.isSeparableExtension",
      "kind": "theorem",
-     "line": 264,
+     "line": 262,
      "private": false,
      "doc": "Let `K/k` be an extension of fields. If `K` is formally smooth over `k`, then `K` is a\nseparable extension of `k`: every subextension of `K/k` finitely generated over `k` has a\nseparating transcendence basis.",
      "statement": "public theorem Algebra.FormallySmooth.isSeparableExtension (k K : Type*) [Field k] [Field K]\n    [Algebra k K] [Algebra.FormallySmooth k K] : Algebra.IsSeparableExtension k K",
@@ -1789,7 +1789,7 @@
     {
      "name": "Algebra.FormallySmooth.of_algebraicIndependent_and_of_isSeparable_and_of_isSeparableExtension",
      "kind": "theorem",
-     "line": 226,
+     "line": 224,
      "private": false,
      "doc": "Let `K/k` be an extension of fields. Then `K` is formally smooth over `k` in each of the\nfollowing three cases: (1) `K` is purely transcendental over `k`, that is, `K` is generated as an\nintermediate field by an algebraically independent set; (2) `K` is separable algebraic over `k`;\n(3) `K` is separable over `k` in the sense of `Algebra.IsSeparableExtension`.",
      "statement": "public theorem\n    Algebra.FormallySmooth.of_algebraicIndependent_and_of_isSeparable_and_of_isSeparableExtension\n    (k K : Type*) [Field k] [Field K] [Algebra k K] :\n    (∀ s : Set K, AlgebraicIndependent k ((↑) : s → K) → IntermediateField.adjoin k s = ⊤ →\n        Algebra.FormallySmooth k K) ∧\n      (Algebra.IsSeparable k K → Algebra.FormallySmooth k K) ∧\n      (Algebra.IsSeparableExtension k K → Algebra.FormallySmooth k K)",
@@ -1798,10 +1798,6 @@
       {
        "ref": "0 19.6.1",
        "comment": "sufficiency"
-      },
-      {
-       "ref": "0 21.5.1",
-       "comment": "more general"
       },
       {
        "ref": "0 21.5.1",
@@ -1830,7 +1826,7 @@
     {
      "name": "Algebra.FormallySmooth.of_charZero_and_iff_isSeparableExtension_of_charP",
      "kind": "theorem",
-     "line": 563,
+     "line": 561,
      "private": false,
      "doc": "Let `k` be a field and `K/k` a field extension. If the characteristic of `k` is zero, then `K`\nis formally smooth over `k`. If the characteristic of `k` is `p > 0`, then `K` is formally smooth\nover `k` if and only if `K` is separable over `k`.",
      "statement": "public theorem Algebra.FormallySmooth.of_charZero_and_iff_isSeparableExtension_of_charP\n    (k K : Type*) [Field k] [Field K] [Algebra k K] :\n    (CharZero k → Algebra.FormallySmooth k K) ∧\n      ∀ p : ℕ, 0 < p → CharP k p →\n        (Algebra.FormallySmooth k K ↔ Algebra.IsSeparableExtension k K)",
@@ -1850,7 +1846,7 @@
     {
      "name": "Algebra.isSeparableExtension_of_charZero_and_tfae",
      "kind": "theorem",
-     "line": 506,
+     "line": 504,
      "private": false,
      "doc": "Let `K/k` be a field extension. If the characteristic of `k` is zero then `K` is separable over\n`k`; and, in any characteristic, the following are equivalent: `K` is separable over `k`, the ring\n`K ⊗_k k^{1/p}` is reduced for the exponential characteristic `p` of `k`, `K` is geometrically\nreduced over `k`, the map `K ⊗_k Ω_{k/𝐙} → Ω_{K/𝐙}` is injective, `H_1(L_{K/k}) = 0`, and `K` is\nformally smooth over `k`.",
      "statement": "public theorem Algebra.isSeparableExtension_of_charZero_and_tfae (k K : Type*) [Field k] [Field K]\n    [Algebra k K] :\n    (CharZero k → Algebra.IsSeparableExtension k K) ∧\n      List.TFAE\n        [Algebra.IsSeparableExtension k K,\n          IsReduced (K ⊗[k] AdjoinPthRoots k),\n          Algebra.IsGeometricallyReduced k K,\n          Function.Injective (KaehlerDifferential.mapBaseChange ℤ k K),\n          Subsingleton (Algebra.H1Cotangent k K),\n          Algebra.FormallySmooth k K]",
@@ -7747,7 +7743,7 @@
     {
      "name": "Algebra.IsSeparableExtension.tfae_exists_smooth",
      "kind": "theorem",
-     "line": 333,
+     "line": 335,
      "private": false,
      "doc": "**A finitely generated field extension is separable if and only if it is the localization of a\nsmooth algebra.** For a finitely generated field extension `K/k` the following are equivalent:\n`K/k` is separable; some smooth `k`-subalgebra of `K` has `K` as its fraction field; some smooth\n`k`-algebra has `K` as a localization.",
      "statement": "public theorem Algebra.IsSeparableExtension.tfae_exists_smooth\n    (k : Type*) (K : Type v) [Field k] [Field K] [Algebra k K] [Algebra.EssFiniteType k K] :\n    List.TFAE\n      [Algebra.IsSeparableExtension k K,\n        ∃ R : Subalgebra k K, Algebra.Smooth k R ∧ IsFractionRing R K,\n        ∃ (R : Type v) (_ : CommRing R) (_ : Algebra k R) (_ : Algebra R K)\n          (_ : IsScalarTower k R K) (S : Submonoid R),\n          Algebra.Smooth k R ∧ IsLocalization S K]",
@@ -17853,7 +17849,7 @@
     {
      "name": "Stacks.SheafOfModules.pullbackTensorIso",
      "kind": "def",
-     "line": 1006,
+     "line": 1160,
      "private": false,
      "doc": "**Stacks 03EL.** For a morphism of ringed topoi\n`(f, f♯) : (Sh(C), O_C) ⟶ (Sh(D), O_D)`, the pullback of a tensor product of sheaves of\n`O_D`-modules is the tensor product of their pullbacks,\n\n`f^*(F ⊗_{O_D} G) ≅ f^*F ⊗_{O_C} f^*G`,\n\nnaturally in `F` and in `G`. The comparison is the one determined by the chain of bijections\n`Stacks.SheafOfModules.pullbackTensorHomEquiv`, whose naturality in the sheaf of values turns it\ninto a morphism of sheaves of modules and whose naturality in `F` and `G` makes that morphism a\nnatural transformation.",
      "statement": "def pullbackTensorIso :\n    (Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u', v', w', w', w'} Y.O)) ⋙\n        f.pullbackModules ≅\n      Functor.prod (f.pullbackModules) (f.pullbackModules) ⋙\n        (Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, w, w} X.O))",
@@ -18046,7 +18042,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.preservesFiniteColimits_internalHomFirstMate",
      "kind": "theorem",
-     "line": 865,
+     "line": 866,
      "private": false,
      "doc": "**Stacks 03EN in the first variable, for the mate.** Internal Hom into a fixed sheaf of\nmodules, contravariant in its source, carries finite colimits of sheaves of modules to finite\nlimits of internal Hom sheaves.\n\nThis is the continuity that the proof of Stacks 0GN2 uses to pass from the structure sheaf to a\nfinitely presented source, and it holds with no hypothesis: `internalHomFirstMate` is a left\nadjoint, by `internalHomFirstMateAdjunction`.",
      "statement": "theorem preservesFiniteColimits_internalHomFirstMate :\n    Limits.PreservesFiniteColimits (internalHomFirstMate O G)",
@@ -18202,7 +18198,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.sheafCurryIso",
      "kind": "def",
-     "line": 242,
+     "line": 264,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case.** The canonical currying isomorphism for the sheafified tensor\nproduct and the internal Hom sheaf.",
      "statement": "noncomputable def sheafCurryIso :\n    siteSheafInternalHom J O (((Stacks.SheafOfModules.Tensor.sheafTensor O).obj F).obj G) H ≅\n      siteSheafInternalHom J O F (siteSheafInternalHom J O G H)",
@@ -18216,7 +18212,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.sheafCurryIso_hom_app_tmul",
      "kind": "theorem",
-     "line": 287,
+     "line": 309,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case.** The canonical isomorphism is tensor currying on every local\npure tensor.",
      "statement": "theorem sheafCurryIso_hom_app_tmul (U : C)\n    (s : (siteSheafInternalHom J O\n      (((Stacks.SheafOfModules.Tensor.sheafTensor O).obj F).obj G) H).val.obj (op U))\n    (f : F.val.obj (op U)) (g : G.val.obj (op U)) :\n    ((((((sheafCurryIso O F G H).hom.val.app (op U)).hom s).app\n        (op (Over.mk (𝟙 U)))).hom f).app (op (Over.mk (𝟙 U)))).hom g =\n      (s.app (op (Over.mk (𝟙 U)))).hom\n        (toSheafTensorSection O F G U (f ⊗ₜ[O.obj.obj (op U)] g))",
@@ -18230,7 +18226,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_left",
      "kind": "theorem",
-     "line": 305,
+     "line": 327,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case.** Currying is contravariantly natural in the first tensor\nfactor.",
      "statement": "theorem sheafCurryIso_natural_left\n    {F F' :\n      _root_.SheafOfModules.{max u v} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) O)}\n    (f : F' ⟶ F) :\n    (sheafCurryIso O F G H).hom ≫ sheafInternalHomMapLeft J O f =\n      sheafInternalHomMapLeft J O (sheafTensorMap O f (𝟙 G)) ≫\n        (sheafCurryIso O F' G H).hom",
@@ -18244,7 +18240,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_middle",
      "kind": "theorem",
-     "line": 322,
+     "line": 344,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case.** Currying is contravariantly natural in the second tensor\nfactor.",
      "statement": "theorem sheafCurryIso_natural_middle\n    {G G' :\n      _root_.SheafOfModules.{max u v} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) O)}\n    (g : G' ⟶ G) :\n    (sheafCurryIso O F G H).hom ≫\n        sheafInternalHomMapRight O (sheafInternalHomMapLeft J O g) =\n      sheafInternalHomMapLeft J O (sheafTensorMap O (𝟙 F) g) ≫\n        (sheafCurryIso O F G' H).hom",
@@ -18258,7 +18254,7 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.sheafCurryIso_natural_right",
      "kind": "theorem",
-     "line": 340,
+     "line": 362,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case.** Currying is covariantly natural in the target.",
      "statement": "theorem sheafCurryIso_natural_right\n    {H H' :\n      _root_.SheafOfModules.{max u v} ((Stacks.SheafOfModules.Tensor.ringSheaf (J := J)) O)}\n    (h : H ⟶ H') :\n    sheafInternalHomMapRight O h ≫ (sheafCurryIso O F G H').hom =\n      (sheafCurryIso O F G H).hom ≫\n        sheafInternalHomMapRight O (sheafInternalHomMapRight O h)",
@@ -18272,9 +18268,9 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorRightHomAdjunction",
      "kind": "def",
-     "line": 95,
+     "line": 86,
      "private": false,
-     "doc": "**Stacks 03EO, sheaf case, at a free ring universe.**  Tensoring on the right by `G` is left\nadjoint to the internal-Hom functor with source `G`, for a sheaf of rings whose sections lie in\na universe independent of those of the site.\n\nThe presheaf clause\n`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomAdjunction` is composed\nwith the sheafification adjunction and the result restricted along the fully faithful forgetful\nfunctor; this is legitimate because the right adjoint of the composite already takes values in\nsheaves, the internal Hom of Stacks 03EM being a sheaf as soon as its target is.",
+     "doc": "**Stacks 03EO, sheaf case, at a free ring universe.**  Tensoring on the right by `G` is left\nadjoint to the internal-Hom functor with source `G`, for a sheaf of rings whose sections lie in\na universe independent of those of the site.\n\nThe presheaf clause\n`Stacks.PresheafOfModules.InternalHom.FreeUniverse.presheafTensorHomAdjunction` is composed\nwith the sealed sheafification adjunction\n`Stacks.SheafOfModules.Tensor.sheafificationForgetAdjunction` and the result restricted along\nthe fully faithful forgetful functor; this is legitimate because the right adjoint of the\ncomposite already takes values in sheaves, the internal Hom of Stacks 03EM being a sheaf as soon\nas its target is.",
      "statement": "def sheafTensorRightHomAdjunction :\n    (Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max u v w, max u v w} R).flip.obj G ⊣\n      internalHomSecondFunctor.{v, u, w, w} J R G",
      "sorry": false,
      "ega": [],
@@ -18286,10 +18282,10 @@
     {
      "name": "Stacks.SheafOfModules.InternalHom.FreeUniverse.sheafTensorHomEquiv_apply",
      "kind": "theorem",
-     "line": 129,
+     "line": 110,
      "private": false,
      "doc": "**Stacks 03EO, sheaf case, at a free ring universe, on sections.**  The correspondence is\nthe canonical currying map: a morphism `b` out of the sheafified tensor product is sent to the\nmap taking a section `x` of `F` over `U` and a section `y` of `G` over `T ⟶ U` to the value of\n`b` on the image of the pure tensor `x|_T ⊗ y`.",
-     "statement": "theorem sheafTensorHomEquiv_apply\n    (b : ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max u v w, max u v w} R).obj\n      F).obj G ⟶ H) (U : C)\n    (x : F.val.obj (Opposite.op U)) {T : C} (q : T ⟶ U)\n    (y : G.val.obj (Opposite.op T)) :\n    FreeUniverse.sectionOfRestr R.obj H.val U q\n        (((((sheafTensorHomEquiv R F G H b).val.app (Opposite.op U)).hom x).app\n          (Opposite.op (Over.mk q))).hom (FreeUniverse.restrSection R.obj G.val U q y)) =\n      FreeUniverse.globalTensorHom R.obj F.val G.val H.val\n        ((sheafifyForgetAdjunction R).homEquiv (F.val.tensorObj G.val) H b) T\n        (F.val.restrictₛₗ q.op x ⊗ₜ y)",
+     "statement": "theorem sheafTensorHomEquiv_apply\n    (b : ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max u v w, max u v w} R).obj\n      F).obj G ⟶ H) (U : C)\n    (x : F.val.obj (Opposite.op U)) {T : C} (q : T ⟶ U)\n    (y : G.val.obj (Opposite.op T)) :\n    FreeUniverse.sectionOfRestr R.obj H.val U q\n        (((((sheafTensorHomEquiv R F G H b).val.app (Opposite.op U)).hom x).app\n          (Opposite.op (Over.mk q))).hom (FreeUniverse.restrSection R.obj G.val U q y)) =\n      FreeUniverse.globalTensorHom R.obj F.val G.val H.val\n        ((sheafificationForgetAdjunction R).homEquiv (F.val.tensorObj G.val) H b) T\n        (F.val.restrictₛₗ q.op x ⊗ₜ y)",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -18460,7 +18456,7 @@
     {
      "name": "Stacks.SheafOfModules.FlatSheafification.isFlat_sheafification",
      "kind": "lemma",
-     "line": 425,
+     "line": 420,
      "private": false,
      "doc": "The sheaf associated to a flat presheaf of modules is flat over the associated sheaf of\nrings.",
      "statement": "public lemma isFlat_sheafification\n    {O : Cᵒᵖ ⥤ CommRingCat.{w}} {Osharp : Sheaf J CommRingCat.{w}}\n    (a : O ⋙ forget₂ CommRingCat.{w} RingCat.{w} ⟶\n      (Stacks.SheafOfModules.Tensor.ringSheaf Osharp).obj)\n    [Presheaf.IsLocallyInjective J a]\n    [Presheaf.IsLocallySurjective J a]\n    (F : PresheafOfModules.{z} (O ⋙ forget₂ CommRingCat.{w} RingCat.{w}))\n    (hF : AlgebraicGeometry.SheafOfModules.PresheafOfModules.IsFlat F) :\n    AlgebraicGeometry.SheafOfModules.IsFlat\n      ((PresheafOfModules.sheafification\n        (R := Stacks.SheafOfModules.Tensor.ringSheaf Osharp) a).obj F)",
@@ -18662,7 +18658,7 @@
     {
      "name": "Stacks.SheafOfModules.FlatCover.exists_epi_from_isFlat",
      "file": "StacksFrontier/Deformation/ToposThickening/ModulesOnThickening/TensorSheafSections.lean",
-     "line": 153,
+     "line": 177,
      "tier": "StacksFrontier",
      "comment": "part (4): every sheaf of modules is a quotient of a flat one",
      "ega": [],
@@ -18680,7 +18676,7 @@
     {
      "name": "Stacks.sheafTensorRight_shortExact_of_flat",
      "kind": "theorem",
-     "line": 792,
+     "line": 812,
      "private": false,
      "doc": "**Stacks Project, Tag 03EX, sheaf case.** If the final term of a short exact sequence of\nsheaves of modules is flat, then tensoring the sequence with any sheaf of modules gives a\nshort exact sequence of sheaves of modules.",
      "statement": "theorem sheafTensorRight_shortExact_of_flat\n    (S : ShortComplex (SheafOfModules.{max t w} (Stacks.SheafOfModules.Tensor.ringSheaf O)))\n    (G : SheafOfModules.{max t w} (Stacks.SheafOfModules.Tensor.ringSheaf O))\n    (hS : S.ShortExact) (hflat : SheafOfModules.IsFlat S.X₃) :\n    ∃ h : ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max t w, max t w} O).flip.obj\n          G).map S.f ≫\n        ((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max t w, max t w} O).flip.obj\n          G).map S.g = 0,\n      (ShortComplex.mk\n        (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max t w, max t w} O).flip.obj\n          G).map S.f)\n        (((Stacks.SheafOfModules.Tensor.sheafTensor.{u, v, w, max t w, max t w} O).flip.obj\n          G).map S.g) h).ShortExact",
@@ -20025,7 +20021,7 @@
     {
      "name": "AlgebraicGeometry.BigFppfOver.baseAssociatedModuleIsoSectionsSheaf",
      "kind": "def",
-     "line": 592,
+     "line": 602,
      "private": false,
      "doc": "**Stacks 03FH (1) on the big sites.**  The construction `𝓕 ↦ 𝓕^a` of Definition 03DU (3) —\nthe sheaf on `(Sch/S)_τ` whose value at `f : T → S` is `Γ(T, f^*𝓕)` — **is** the pullback of\n`𝓕` under the morphism of ringed sites\n`id_{τ, Zar} : ((Sch/S)_τ, 𝒪) → (S_Zar, 𝒪)`, at each of the five\n`τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.\n\n**No sheafification is left in the statement.**  Two inputs compose.  Stacks 070S (1),\n`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleIsoSections`, presents the pullback as the\n`τ`-sheafification of the pullback-sections presheaf of modules of Stacks 03DS; and Stacks 03DT\non the five big sites,\n`AlgebraicGeometry.BigFppfOver.isSheaf_sectionsPresheafOfModules_baseOverTopology`, says that for\na quasi-coherent `𝓕` that presheaf is **already** a `τ`-sheaf — it is what\n`AlgebraicGeometry.BigFppfOver.sectionsSheafOfModules` packages.  So the counit of\n`CategoryTheory.PresheafOfModules.sheafificationAdjunction` is invertible there and removes the\nsheafification, which is the step that turns 070S (1) into the remark's own identification with\n`𝓕^a` itself.\n\n**The right-hand side is `𝓕^a` as Definition 03DU (3) defines it**, by its sections: the\nunderlying presheaf of modules of `AlgebraicGeometry.BigFppfOver.sectionsSheafOfModules` is\n`AlgebraicGeometry.BigFppfOver.sectionsPresheafOfModules`, the presheaf of Stacks 03DS, and at\n`τ = fppf` the packaging is the tagged clause-(3) definition\n`AlgebraicGeometry.overAssociatedModule` on the nose —\n`AlgebraicGeometry.BigFppfOver.overAssociatedModule_fppf`, in\n`StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/OverAssociatedModuleIso.lean`, which is\n`rfl`.\n\n**What the other 03FH registrations carry.**  Clause (1) of the remark offers two morphisms.\nThis is the first of them, `id_{τ, Zar}`, on the big site, at all five `τ`; the second,\n`id_{small, étale, Zar} : (S_étale, 𝒪) → (S_Zar, 𝒪)`, is\n`AlgebraicGeometry.SmallEtale.associatedModuleIsoOfSections`\n(`StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleSectionsIso.lean`), with the\nsmall Zariski reading in\n`AlgebraicGeometry.SmallZariski.associatedModuleIsoOfSections`.  The two together are the whole\nof clause (1).  `AlgebraicGeometry.BigFppfOver.baseAssociatedModuleIsoSections` is the same\ncomparison read before the sheafification is removed, where it is Stacks 070S (1).\n\n**Quasi-coherence is not an added hypothesis.**  The construction whose two descriptions the\nremark identifies is `𝓕 ↦ 𝓕^a` of Definition 03DU (3), which is made for a quasi-coherent\n`𝒪_S`-module; the sheafified form above, which is 070S's own statement, needs nothing of `𝓕`.\n\nThe declaration is also what reads the comparison of\n`AlgebraicGeometry.BigFppfOver.restrictTopologyAssociatedModuleIso` below off the sections\ndescription, and so is **the key to Stacks 0GNE**: both of the modules compared there are this\none sheaf.",
      "statement": "noncomputable def baseAssociatedModuleIsoSectionsSheaf (τ : SiteKind) (F : S.Modules)\n    [F.IsQuasicoherent] :\n    (baseAssociatedModule B S hS τ).obj F ≅ sectionsSheafOfModules B S hS τ F",
@@ -22077,7 +22073,7 @@
     {
      "name": "AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing",
      "kind": "def",
-     "line": 278,
+     "line": 273,
      "private": false,
      "doc": "**The pairing `(⨁_{n ≥ 0} Γ(X, 𝒪_X(n))) × (⨁_{m ∈ ℤ} Γ(X, ℱ(m))) ⟶ ⨁_{m ∈ ℤ} Γ(X, ℱ(m))`**\non `X = Proj 𝒮`: the biadditive extension of the canonical multiplication of a global section of\n`𝒪_X(n)` with a global section of `ℱ(m)`.",
      "statement": "public noncomputable def globalSectionsPairing :\n    (⨁ n : ℕ, twistGlobalSections 𝒮 n) →+\n      (twistedGlobalSections 𝒮 F →+ twistedGlobalSections 𝒮 F)",
@@ -22091,7 +22087,7 @@
     {
      "name": "AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing_of_of",
      "kind": "theorem",
-     "line": 286,
+     "line": 281,
      "private": false,
      "doc": "The pairing of a global section of `𝒪(n)` with a global section of `ℱ(m)` is their canonical\nproduct, a global section of `ℱ(n + m)`.",
      "statement": "public theorem globalSectionsPairing_of_of (n : ℕ) (m : ℤ) (s : twistGlobalSections 𝒮 n)\n    (t : (twistSheafOfModules 𝒮 F m).val.obj (op ⊤)) :\n    globalSectionsPairing 𝒮 F (DirectSum.of _ n s) (DirectSum.of _ m t) =\n      DirectSum.of _ ((n : ℤ) + m) (multiplyHomogeneousSections 𝒮 F n m s t)",
@@ -22105,7 +22101,7 @@
     {
      "name": "AlgebraicGeometry.ProjectiveSpectrum.Proj.twistedGlobalSectionsModule",
      "kind": "instance",
-     "line": 903,
+     "line": 898,
      "private": false,
      "doc": "**The module `⨁_{m ∈ ℤ} Γ(X, ℱ(m))` over the graded ring `⨁_{n ≥ 0} Γ(X, 𝒪_X(n))`** on\n`X = Proj 𝒮`, for the pairing that multiplies a global section of `𝒪_X(n)` with a global\nsection of `ℱ(m)` through the canonical morphism `𝒪_X(n) ⊗ ℱ(m) ⟶ ℱ(n + m)`.",
      "statement": "public noncomputable instance twistedGlobalSectionsModule :\n    Module (⨁ n : ℕ, twistGlobalSections 𝒮 n) (twistedGlobalSections 𝒮 F)",
@@ -28363,7 +28359,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteType",
      "kind": "theorem",
-     "line": 307,
+     "line": 301,
      "private": false,
      "doc": "**Stacks Project, Tag 03L6, finite type case.** The tensor product of two sheaves of\nmodules of finite type on a ringed site is of finite type.",
      "statement": "theorem tensorSheaf_isFiniteType (X : AlgebraicGeometry.RingedSite.{u, v, w})\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [HasWeakSheafify X.J AddCommGrpCat.{w}]\n    [X.J.WEqualsLocallyBijective AddCommGrpCat.{w}]\n    [∀ U : X.C, HasWeakSheafify (X.J.over U) AddCommGrpCat.{w}]\n    [∀ U : X.C, (X.J.over U).WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (F G : _root_.SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n    [_root_.SheafOfModules.IsFiniteType F] [_root_.SheafOfModules.IsFiniteType G] :\n    _root_.SheafOfModules.IsFiniteType\n      (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)",
@@ -28377,7 +28373,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyGeneratedBySectionsOnSite",
      "kind": "theorem",
-     "line": 345,
+     "line": 339,
      "private": false,
      "doc": "**Stacks Project, Tag 03L6, locally generated case.** The tensor product of two sheaves of\nmodules locally generated by sections on a ringed site is locally generated by sections.",
      "statement": "theorem tensorSheaf_isLocallyGeneratedBySectionsOnSite\n    (X : AlgebraicGeometry.RingedSite.{u, v, w})\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [HasWeakSheafify X.J AddCommGrpCat.{w}]\n    [X.J.WEqualsLocallyBijective AddCommGrpCat.{w}]\n    [∀ U : X.C, HasWeakSheafify (X.J.over U) AddCommGrpCat.{w}]\n    [∀ U : X.C, (X.J.over U).WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (F G : _root_.SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n    (hF : _root_.SheafOfModules.IsLocallyGeneratedBySectionsOnSite F)\n    (hG : _root_.SheafOfModules.IsLocallyGeneratedBySectionsOnSite G) :\n    _root_.SheafOfModules.IsLocallyGeneratedBySectionsOnSite\n      (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)",
@@ -28405,7 +28401,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isCoherent_of_isFinitePresentation",
      "kind": "theorem",
-     "line": 191,
+     "line": 188,
      "private": false,
      "doc": "**Stacks Project, Tag 03L6, finite presentation against coherence.**  The tensor product of\na sheaf of modules of finite presentation with a coherent sheaf of modules on a ringed site is\ncoherent.\n\nFollowing the source: `F` admits a finite presentation over each member of a covering family,\nthe restriction of `G` to such a member is still coherent, and the tensor product formed on the\nslice site is the restriction of the global one by\n`Stacks.SheafOfModules.TensorLocalProperties.tensorOverIso`; so\n`isCoherentOnSite_tensorSheaf_of_presentation` applies on each member, and coherence is local on\nthe site.",
      "statement": "theorem tensorSheaf_isCoherent_of_isFinitePresentation\n    (X : AlgebraicGeometry.RingedSite.{u, v, w})\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [HasWeakSheafify X.J AddCommGrpCat.{w}]\n    [X.J.WEqualsLocallyBijective AddCommGrpCat.{w}]\n    [∀ U : X.C, HasWeakSheafify (X.J.over U) AddCommGrpCat.{w}]\n    [∀ U : X.C, (X.J.over U).WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (F G : _root_.SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n    [_root_.SheafOfModules.IsFinitePresentation F]\n    [hG : _root_.SheafOfModules.IsCoherentOnSite G] :\n    _root_.SheafOfModules.IsCoherentOnSite\n      (((Stacks.SheafOfModules.Tensor.sheafTensor X.O).obj F).obj G)",
@@ -28419,7 +28415,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isLocallyFreeOnSite",
      "kind": "theorem",
-     "line": 562,
+     "line": 657,
      "private": false,
      "doc": "**Stacks Project, Tag 03L6, part (1).** The tensor product of two locally free sheaves of\nmodules on a ringed site is locally free.",
      "statement": "theorem tensorSheaf_isLocallyFreeOnSite (X : AlgebraicGeometry.RingedSite.{u, v, w})\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [HasWeakSheafify X.J AddCommGrpCat.{w}]\n    [X.J.WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (F G : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n    (hF : SheafOfModules.IsLocallyFreeOnSite F)\n    (hG : SheafOfModules.IsLocallyFreeOnSite G) :\n    SheafOfModules.IsLocallyFreeOnSite\n      (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor X.O))).obj\n        (F, G))",
@@ -28433,7 +28429,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorLocalProperties.tensorSheaf_isFiniteLocallyFreeOnSite",
      "kind": "theorem",
-     "line": 580,
+     "line": 675,
      "private": false,
      "doc": "**Stacks Project, Tag 03L6, part (2).** The tensor product of two finite locally free\nsheaves of modules on a ringed site is finite locally free.",
      "statement": "theorem tensorSheaf_isFiniteLocallyFreeOnSite (X : AlgebraicGeometry.RingedSite.{u, v, w})\n    [X.J.HasSheafCompose (forget₂ CommRingCat.{w} RingCat.{w})]\n    [HasWeakSheafify X.J AddCommGrpCat.{w}]\n    [X.J.WEqualsLocallyBijective AddCommGrpCat.{w}]\n    (F G : SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))\n    (hF : SheafOfModules.IsFiniteLocallyFreeOnSite F)\n    (hG : SheafOfModules.IsFiniteLocallyFreeOnSite G) :\n    SheafOfModules.IsFiniteLocallyFreeOnSite\n      (((Functor.uncurry.obj (Stacks.SheafOfModules.Tensor.sheafTensor X.O))).obj\n        (F, G))",
@@ -31496,7 +31492,7 @@
     {
      "name": "CategoryTheory.Yoneda.fullyFaithful",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 145,
+     "line": 146,
      "tier": "StacksFrontier",
      "comment": "",
      "ega": [
@@ -31529,7 +31525,7 @@
     {
      "name": "CategoryTheory.PreZeroHypercover",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 147,
+     "line": 148,
      "tier": "StacksFrontier",
      "comment": "",
      "ega": [],
@@ -31563,7 +31559,7 @@
     {
      "name": "Opens.pretopology",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 149,
+     "line": 150,
      "tier": "StacksFrontier",
      "comment": "the site itself: the opens of `X` with the inclusions as morphisms, and the\n  jointly covering families as coverings",
      "ega": [],
@@ -31581,7 +31577,7 @@
     {
      "name": "CategoryTheory.Limits.CompleteLattice.pullback_eq_inf",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 152,
+     "line": 153,
      "tier": "StacksFrontier",
      "comment": "the category of opens has fibre products, with `U ×_W V = U ⊓ V`",
      "ega": [],
@@ -31596,7 +31592,7 @@
     {
      "name": "CategoryTheory.Presieve.IsSeparatedFor",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 261,
+     "line": 262,
      "tier": "StacksFrontier",
      "comment": "separated presheaf of sets, for one covering",
      "ega": [],
@@ -31622,7 +31618,7 @@
     {
      "name": "CategoryTheory.Presieve.IsSeparated",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 263,
+     "line": 264,
      "tier": "StacksFrontier",
      "comment": "separated presheaf of sets on a site",
      "ega": [],
@@ -31656,7 +31652,7 @@
     {
      "name": "CategoryTheory.Presheaf.IsSeparated",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 264,
+     "line": 265,
      "tier": "StacksFrontier",
      "comment": "separated abelian presheaf",
      "ega": [],
@@ -31690,7 +31686,7 @@
     {
      "name": "CategoryTheory.Equalizer.Presieve.Arrows.sheaf_condition",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 265,
+     "line": 266,
      "tier": "StacksFrontier",
      "comment": "the sheaf condition for one covering, as the equalizer diagram",
      "ega": [],
@@ -31704,7 +31700,7 @@
     {
      "name": "CategoryTheory.Presieve.IsSheaf",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 267,
+     "line": 268,
      "tier": "StacksFrontier",
      "comment": "sheaf of sets on a site",
      "ega": [
@@ -31747,7 +31743,7 @@
     {
      "name": "CategoryTheory.Precoverage.isSheaf_toGrothendieck_iff_of_isStableUnderBaseChange",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 268,
+     "line": 269,
      "tier": "StacksFrontier",
      "comment": "the sheaf condition is checked on the coverings",
      "ega": [],
@@ -31756,7 +31752,7 @@
     {
      "name": "CategoryTheory.Presheaf.IsSheaf",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 270,
+     "line": 271,
      "tier": "StacksFrontier",
      "comment": "abelian sheaf",
      "ega": [
@@ -31811,7 +31807,7 @@
     {
      "name": "CategoryTheory.Presheaf.isSheaf_iff_isSheaf_forget",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 271,
+     "line": 272,
      "tier": "StacksFrontier",
      "comment": "an abelian presheaf is a sheaf iff its presheaf of sets is one",
      "ega": [
@@ -31844,7 +31840,7 @@
     {
      "name": "CategoryTheory.Presieve.isTerminal_of_isSheafFor_empty_presieve",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 274,
+     "line": 275,
      "tier": "StacksFrontier",
      "comment": "sheaves of sets",
      "ega": [],
@@ -31862,7 +31858,7 @@
     {
      "name": "CategoryTheory.Sheaf.isTerminalOfBotCover",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 276,
+     "line": 277,
      "tier": "StacksFrontier",
      "comment": "sheaves with values in any category, e.g. abelian groups",
      "ega": [],
@@ -31890,7 +31886,7 @@
     {
      "name": "Opens.pretopology_toGrothendieck",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 279,
+     "line": 280,
      "tier": "StacksFrontier",
      "comment": "the open coverings generate the topology of X_Zar",
      "ega": [],
@@ -31899,7 +31895,7 @@
     {
      "name": "TopCat.Presheaf.isSheaf_iff_isSheafUniqueGluing_types",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 281,
+     "line": 282,
      "tier": "StacksFrontier",
      "comment": "sheaves of sets",
      "ega": [
@@ -31922,7 +31918,7 @@
     {
      "name": "TopCat.Presheaf.isSheaf_iff_isSheafUniqueGluing",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 282,
+     "line": 283,
      "tier": "StacksFrontier",
      "comment": "sheaves with values in a concrete category, e.g. abelian groups",
      "ega": [],
@@ -31937,7 +31933,7 @@
     {
      "name": "CategoryTheory.Sheaf",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 285,
+     "line": 286,
      "tier": "StacksFrontier",
      "comment": "the full subcategory of sheaves",
      "ega": [
@@ -32016,7 +32012,7 @@
     {
      "name": "CategoryTheory.fullyFaithfulSheafToPresheaf",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 286,
+     "line": 287,
      "tier": "StacksFrontier",
      "comment": "the inclusion into presheaves is fully faithful",
      "ega": [],
@@ -32025,7 +32021,7 @@
     {
      "name": "CategoryTheory.isSheaf_iff_isSheaf_of_type",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 288,
+     "line": 289,
      "tier": "StacksFrontier",
      "comment": "the objects of Sh(C) are the sheaves of sets",
      "ega": [
@@ -32050,7 +32046,7 @@
     {
      "name": "CategoryTheory.Presieve.Arrows.PullbackCompatible",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 291,
+     "line": 292,
      "tier": "StacksFrontier",
      "comment": "the compatibility condition defining the zeroth Čech cohomology",
      "ega": [],
@@ -32059,7 +32055,7 @@
     {
      "name": "CategoryTheory.Equalizer.Presieve.Arrows.compatible_iff",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 293,
+     "line": 294,
      "tier": "StacksFrontier",
      "comment": "as the equalizer of the two maps to the products over the Uᵢ ×_U Uⱼ",
      "ega": [],
@@ -32068,7 +32064,7 @@
     {
      "name": "CategoryTheory.PreOneHypercover.multicospanIndex",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 295,
+     "line": 296,
      "tier": "StacksFrontier",
      "comment": "the Čech diagram, whose multiequalizer is the zeroth Čech cohomology",
      "ega": [],
@@ -32077,7 +32073,7 @@
     {
      "name": "CategoryTheory.PreZeroHypercover.sectionsEquivOfHasPullbacks",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 297,
+     "line": 298,
      "tier": "StacksFrontier",
      "comment": "the sections of the Čech diagram are the compatible families",
      "ega": [],
@@ -32329,7 +32325,7 @@
     {
      "name": "CategoryTheory.sheafIsAbelian",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 300,
+     "line": 301,
      "tier": "StacksFrontier",
      "comment": "abelian category",
      "ega": [],
@@ -32351,7 +32347,7 @@
     {
      "name": "CategoryTheory.Sheaf.instIsGrothendieckAbelian",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 301,
+     "line": 302,
      "tier": "StacksFrontier",
      "comment": "Grothendieck abelian category, for a small site",
      "ega": [],
@@ -32365,7 +32361,7 @@
     {
      "name": "CategoryTheory.IsGrothendieckAbelian.enoughInjectives",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 303,
+     "line": 304,
      "tier": "StacksFrontier",
      "comment": "enough injectives, for a Grothendieck abelian category",
      "ega": [],
@@ -32401,7 +32397,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.fpqcPrecoverage",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 306,
+     "line": 307,
      "tier": "StacksFrontier",
      "comment": "fpqc coverings",
      "ega": [],
@@ -32423,7 +32419,7 @@
     {
      "name": "AlgebraicGeometry.QuasiCompactCover",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 307,
+     "line": 308,
      "tier": "StacksFrontier",
      "comment": "condition (2)",
      "ega": [],
@@ -32432,7 +32428,7 @@
     {
      "name": "AlgebraicGeometry.QuasiCompactCover.exists_isAffineOpen_of_isCompact",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 308,
+     "line": 309,
      "tier": "StacksFrontier",
      "comment": "condition (2) with affine opens",
      "ega": [
@@ -32693,7 +32689,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.instSubcanonicalFpqcTopology",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 311,
+     "line": 312,
      "tier": "StacksFrontier",
      "comment": "on the category of all schemes",
      "ega": [],
@@ -32735,7 +32731,7 @@
     {
      "name": "CategoryTheory.GrothendieckTopology.subcanonical_over",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 313,
+     "line": 314,
      "tier": "StacksFrontier",
      "comment": "passage to Sch/S",
      "ega": [],
@@ -33549,7 +33545,7 @@
     {
      "name": "CategoryTheory.yonedaEquiv",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 315,
+     "line": 316,
      "tier": "StacksFrontier",
      "comment": "the bijection",
      "ega": [
@@ -33604,7 +33600,7 @@
     {
      "name": "CategoryTheory.yonedaLemma",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 316,
+     "line": 317,
      "tier": "StacksFrontier",
      "comment": "functoriality",
      "ega": [
@@ -33637,7 +33633,7 @@
     {
      "name": "PresheafOfModules.freeObj",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 155,
+     "line": 156,
      "tier": "StacksFrontier",
      "comment": "Z_G(U) = Z[G(U)]: the free presheaf of modules on G, over the constant presheaf of rings Z (Z_U is the case G = h_U)",
      "ega": [],
@@ -35446,7 +35442,7 @@
     {
      "name": "AlgebraicGeometry.Etale.iff_smoothOfRelativeDimension_zero",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 157,
+     "line": 158,
      "tier": "StacksFrontier",
      "comment": "Mathlib's étale morphisms are exactly the smooth morphisms of relative dimension 0",
      "ega": [],
@@ -35812,7 +35808,7 @@
     {
      "name": "Algebra.IsStandardEtale",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 159,
+     "line": 160,
      "tier": "StacksFrontier",
      "comment": "B is standard étale over A: B ≅ (A[t]/(f))_g with f monic and df/dt invertible in B",
      "ega": [],
@@ -35860,7 +35856,7 @@
     {
      "name": "AlgebraicGeometry.Scheme.etalePrecoverage",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 161,
+     "line": 162,
      "tier": "StacksFrontier",
      "comment": "the étale coverings: families of étale morphisms that are jointly surjective",
      "ega": [],
@@ -36243,7 +36239,7 @@
     {
      "name": "AlgebraicGeometry.Etale.instHasOfPostcompPropertyScheme",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 163,
+     "line": 164,
      "tier": "StacksFrontier",
      "comment": "an S-morphism between étale S-schemes is étale",
      "ega": [
@@ -36284,7 +36280,7 @@
     {
      "name": "instIsCofilteredElementsEtaleCompOverForgetObjOppositeFunctorTypeCoyonedaOpMk",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 166,
+     "line": 167,
      "tier": "StacksFrontier",
      "comment": "the étale neighborhoods of a geometric point s : Spec Ω → S (Ω separably closed) form a cofiltered category",
      "ega": [],
@@ -37392,7 +37388,7 @@
     {
      "name": "HenselianLocalRing",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 322,
+     "line": 323,
      "tier": "StacksFrontier",
      "comment": "",
      "ega": [
@@ -37415,7 +37411,7 @@
     {
      "name": "HenselianLocalRing.TFAE",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 323,
+     "line": 324,
      "tier": "StacksFrontier",
      "comment": "Stacks' formulation, with `a₀` in the residue field (item 2)",
      "ega": [],
@@ -37430,7 +37426,7 @@
     {
      "name": "IsAdicComplete.henselianRing",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 327,
+     "line": 328,
      "tier": "StacksFrontier",
      "comment": "for `I = maximalIdeal R`, `HenselianRing R (maximalIdeal R)` is the condition of 03QF",
      "ega": [
@@ -38599,7 +38595,7 @@
     {
      "name": "IsBrauerEquivalent",
      "file": "StacksFrontier/MathlibRegistrations/Ch59.lean",
-     "line": 332,
+     "line": 333,
      "tier": "StacksFrontier",
      "comment": "",
      "ega": [],
@@ -39529,7 +39525,7 @@
     {
      "name": "Stacks.EtaleCohomology.subsingleton_sheafH_multiplicativeSheaf_of_smoothCurve",
      "kind": "theorem",
-     "line": 97,
+     "line": 98,
      "private": false,
      "doc": "**Stacks Project, Tag 03RM.** Let `X` be a smooth curve over an algebraically closed field\n`k`. Then\n\n`H^q_étale(X, 𝐆_m) = 0` for every `q ≥ 2`.\n\nThe long exact sequence of the fundamental exact sequence of Stacks 03RI,\n`Stacks.EtaleCohomology.shortExact_divisorSequenceOfCurve`, places `H^q(X, 𝐆_m)` between\n`H^{q-1}(X, ⨁_{x ∈ X_0} i_{x,*} 𝐙)`, zero by Stacks 03RL, and `H^q(X, j_* 𝐆_{m,η})`, zero by\nStacks 03RK; the latter rests on Stacks 03RJ and Stacks 03RG, supplied here.",
      "statement": "theorem subsingleton_sheafH_multiplicativeSheaf_of_smoothCurve {k : Type u} [Field k]\n    [IsAlgClosed k] {X : Scheme.{u}} (g : X ⟶ Spec (.of k)) [IsCurve k g] [Smooth g]\n    (q : ℕ) (hq : 2 ≤ q) :\n    Subsingleton\n      (Sheaf.H.{u + 1, u + 1} (Stacks.Kummer.multiplicativeSheaf.{u, u + 1} X) q)",
@@ -40879,7 +40875,7 @@
     {
      "name": "AlgebraicGeometry.exists_isFilteredColimit_isConstructibleSetSheaf_of_qcqs",
      "kind": "theorem",
-     "line": 100,
+     "line": 101,
      "private": false,
      "doc": "**Stacks 03SA, part (1).** Let `X` be a quasi-compact and quasi-separated scheme and `F` a\nsheaf of sets on `X_étale`. Then `F` is a filtered colimit of constructible sheaves of sets.\n\nThis is `AlgebraicGeometry.exists_isFilteredColimit_isConstructibleSetSheaf` with both of its\nhypotheses discharged: Stacks 093C (1) by\n`AlgebraicGeometry.setSheavesAreFilteredColimitsOfPresentations` and Stacks 03S0 by\n`AlgebraicGeometry.etaleFiniteStratificationExists`.",
      "statement": "public theorem exists_isFilteredColimit_isConstructibleSetSheaf_of_qcqs\n    (F : Sheaf (SmallEtale.topology B X.obj X.property) (Type (u + 1))) :\n    ∃ (I : Type (u + 1)) (_ : SmallCategory I) (_ : IsFiltered I)\n      (D : I ⥤ Sheaf (SmallEtale.topology B X.obj X.property) (Type (u + 1)))\n      (ι : D ⟶ (Functor.const I).obj F), Nonempty (IsColimit (Cocone.mk F ι)) ∧\n        ∀ i, IsConstructibleSetSheaf B X (D.obj i)",
@@ -40893,7 +40889,7 @@
     {
      "name": "AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs",
      "kind": "theorem",
-     "line": 120,
+     "line": 121,
      "private": false,
      "doc": "**Stacks 03SA, part (3).** Let `X` be a quasi-compact and quasi-separated scheme, `Λ` a\nNoetherian ring and `F` a sheaf of `Λ`-modules on `X_étale`. Then `F` is a filtered colimit of\nconstructible sheaves of `Λ`-modules.\n\nThis is `AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf` with both of its\nhypotheses discharged: Stacks 093C (2) by\n`AlgebraicGeometry.moduleSheavesAreFilteredColimitsOfPresentations` and Stacks 03S8 for sheaves of\nmodules by `AlgebraicGeometry.isConstructibleModuleSheaf_moduleShriekConstant`.",
      "statement": "public theorem exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs\n    (F : Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} Λ)) :\n    ∃ (I : Type (u + 1)) (_ : SmallCategory I) (_ : IsFiltered I)\n      (D : I ⥤ Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} Λ))\n      (ι : D ⟶ (Functor.const I).obj F), Nonempty (IsColimit (Cocone.mk F ι)) ∧\n        ∀ i, IsConstructibleModuleSheaf B X Λ (D.obj i)",
@@ -40912,7 +40908,7 @@
     {
      "name": "AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_small",
      "kind": "theorem",
-     "line": 214,
+     "line": 215,
      "private": false,
      "doc": "**Stacks 03SA, part (3), for a coefficient ring in any universe.** Let `X` be a quasi-compact\nand quasi-separated scheme, `R` a Noetherian ring and `F` a sheaf of `R`-modules on `X_étale`.\nThen `F` is a filtered colimit of constructible sheaves of `R`-modules.\n\n`AlgebraicGeometry.exists_isFilteredColimit_isConstructibleModuleSheaf_of_qcqs` is the same\nstatement for a ring in `Type (u + 1)`. Here `R` need only be small in that universe: `F` is\ncarried to a sheaf of `Shrink.{u + 1} R`-modules by\n`AlgebraicGeometry.SmallEtale.sheafShrinkEquivalence`, presented there, and the presentation is\ncarried back by the inverse equivalence, which preserves colimits; constructibility of the terms\ncomes back by `AlgebraicGeometry.isConstructibleModuleSheaf_of_shrink`. The two sheafification\nside conditions at `R` are theorems of the library,\n`AlgebraicGeometry.SmallEtale.isRightAdjointPushforward_moduleCatSucc` and\n`AlgebraicGeometry.SmallEtale.hasWeakSheafifyOver_moduleCatSucc`, so the only hypotheses are\nthose of the tag and the smallness of `R`.",
      "statement": "public theorem exists_isFilteredColimit_isConstructibleModuleSheaf_of_small\n    (F : Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} R)) :\n    ∃ (I : Type (u + 1)) (_ : SmallCategory I) (_ : IsFiltered I)\n      (D : I ⥤ Sheaf (SmallEtale.topology B X.obj X.property) (ModuleCat.{u + 1} R))\n      (ι : D ⟶ (Functor.const I).obj F), Nonempty (IsColimit (Cocone.mk F ι)) ∧\n        ∀ i, IsConstructibleModuleSheaf B X R (D.obj i)",
@@ -41446,7 +41442,7 @@
     {
      "name": "Stacks.Frobenius.fibreComparison_galoisStalkAction",
      "kind": "theorem",
-     "line": 396,
+     "line": 397,
      "private": false,
      "doc": "**Stacks Project, Tag 03ST, Galois equivariance in degree zero.** The comparison of Étale\nCohomology, Theorem 03Q9 carries the Galois action of Étale Cohomology Section 03QW on the stalk\n`(α_* ℱ)_{Spec k̄}` to restriction along the automorphism `id_X × Spec σ` of the geometric fibre\n`X_{k̄}`: on the germ at an étale neighbourhood `W` of the geometric point, acting by `σ` and\nthen comparing is restricting along `(id_X × Spec σ) ∘ (X_{k̄} ⟶ X_W)`.\n\nSince the germs are jointly surjective onto the stalk, this determines the induced map on the\nwhole stalk, and it is the statement that the identification of Tag 03Q9 is a map of\n`G_k`-modules.",
      "statement": "public theorem fibreComparison_galoisStalkAction (σ : K ≃ₐ[k] K)\n    (W : (Spec (.of k)).Etale)\n    (u : (Scheme.pointSmallEtale (specAlgebraMap k K)).fiber.obj W) :\n    (Scheme.pointSmallEtale (specAlgebraMap k K)).toPresheafFiber W u\n          ((sheafToPresheaf _ _).obj ((smallEtalePushforwardAb X.hom).obj F)) ≫\n        (galoisStalkAction Ab.{u + 1} K σ (𝟙 (Spec (.of k)))).app\n          ((smallEtalePushforwardAb X.hom).obj F) ≫\n        fibreComparison K X F =\n      (smallEtaleSectionsPullbackAb (pullback.fst X.hom (specAlgebraMap k K))\n        ((smallEtaleBaseChange X.hom).obj W)\n        (galoisBaseChange X K σ ≫ fibreLift K X W u)\n        ((congrArg (fun z => z ≫ ((smallEtaleBaseChange X.hom).obj W).hom)\n            (galoisBaseChange_comp_fibreLift K X σ W u).symm).trans\n          (fibreLift_comp_hom K X W (galoisLift K σ W u)))).app F",
@@ -44861,7 +44857,7 @@
     {
      "name": "Stacks.GroupCohomology.normalInvariantsFunctor",
      "kind": "def",
-     "line": 192,
+     "line": 193,
      "private": false,
      "doc": "Taking invariants under a normal subgroup `N` of a topological group `Γ` is a functor\n`H⁰(N, -)` from discrete `Γ`-modules to discrete `Γ ⧸ N`-modules.",
      "statement": "def normalInvariantsFunctor :\n    ContinuousGModule.{u, v} Γ ⥤ ContinuousGModule.{u, v} (Γ ⧸ N)",
@@ -44875,7 +44871,7 @@
     {
      "name": "Stacks.GroupCohomology.derivedNormalInvariantsFunctor",
      "kind": "abbrev",
-     "line": 235,
+     "line": 236,
      "private": false,
      "doc": "The right derived functor `RH⁰(N, -) : D⁺(Mod_Γ) ⥤ D⁺(Mod_{Γ⧸N})` of taking invariants\nunder a normal subgroup.",
      "statement": "abbrev derivedNormalInvariantsFunctor [HasDerivedCategory (ContinuousGModule.{u, max u v} Γ)]\n    [HasDerivedCategory (ContinuousGModule.{u, max u v} (Γ ⧸ N))] :\n    DerivedCategory.Plus (ContinuousGModule.{u, max u v} Γ) ⥤\n      DerivedCategory.Plus (ContinuousGModule.{u, max u v} (Γ ⧸ N))",
@@ -44889,7 +44885,7 @@
     {
      "name": "Stacks.GroupCohomology.derivedInvariantsFunctor",
      "kind": "abbrev",
-     "line": 253,
+     "line": 254,
      "private": false,
      "doc": "The right derived functor `RH⁰(Γ, -) : D⁺(Mod_Γ) ⥤ D⁺(Ab)` of taking invariants on discrete\n`Γ`-modules, whose cohomology objects are the groups `Hⁱ(Γ, M)`.",
      "statement": "abbrev derivedInvariantsFunctor [HasDerivedCategory (ContinuousGModule.{u, max u v} Γ)]\n    [HasDerivedCategory AddCommGrpCat.{max u v}] :\n    DerivedCategory.Plus (ContinuousGModule.{u, max u v} Γ) ⥤\n      DerivedCategory.Plus AddCommGrpCat.{max u v}",
@@ -45141,7 +45137,7 @@
     {
      "name": "Stacks.GroupHomology.bijective_torOneLimitMap",
      "kind": "theorem",
-     "line": 608,
+     "line": 609,
      "private": false,
      "doc": "**Stacks Project, Section 03VI, notes on homology (1), in degree one with `M = Λ`, for the\nabstract `Tor`.** For a finite ring `Λ` and a profinite group `G` topologically generated by\nfinitely many elements, the change-of-rings map\n`Tor₁^{Λ[[G]]}(Λ, Λ) → lim_U Tor₁^{Λ[G/U]}(Λ, Λ)` (`torOneLimitMap`) is bijective. Here\n`Tor_•^{Λ[[G]]}(-, Λ)` is the left derived functor of the coinvariants of `Λ[[G]]`-modules and the\nlimit is the completed `Tor` of `torDiagram`, which is `H₁(G, Λ)` (`homologyIsoLimitTor`,\n`torOneIsoHomology`). Surjectivity holds for every profinite `G` (`torOneLimitMap_surjective`);\ninjectivity fails for `G = (ℤ/p)^ℕ` (`not_injective_torOneLimitMap_piZMod`).",
      "statement": "theorem bijective_torOneLimitMap {ι : Type*} [Finite ι] {g : ι → G}\n    (hg : Dense (Subgroup.closure (Set.range g) : Set G)) :\n    Function.Bijective (torOneLimitMap Λ G).hom",
@@ -45283,7 +45279,7 @@
     {
      "name": "_root_.continuousGModuleEnoughInjectives",
      "file": "StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean",
-     "line": 264,
+     "line": 265,
      "tier": "StacksFrontier",
      "comment": "the category of discrete G-modules has enough injectives",
      "ega": [],
@@ -45292,7 +45288,7 @@
     {
      "name": "_root_.continuousGroupCohomologyFunctor",
      "file": "StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean",
-     "line": 266,
+     "line": 267,
      "tier": "StacksFrontier",
      "comment": "the cohomology functors Hⁱ(G, -) of a profinite group on discrete modules",
      "ega": [],
@@ -45301,7 +45297,7 @@
     {
      "name": "_root_.continuousGroupCohomology",
      "file": "StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean",
-     "line": 268,
+     "line": 269,
      "tier": "StacksFrontier",
      "comment": "the cohomology groups Hⁱ(G, M) of a profinite group on a discrete module",
      "ega": [],
@@ -45329,7 +45325,7 @@
     {
      "name": "Stacks.EtaleCohomology.compactlySupportedCohomologyTwo_galoisIso_tateTwistCoinvariants",
      "kind": "theorem",
-     "line": 472,
+     "line": 473,
      "private": false,
      "doc": "**Stacks Project, Tag 03VK, as an isomorphism of `Gal(k^{sep}/k)`-modules.**\n\nThe right-hand side is built here: `Stacks.Trace.coinvariants` of the restriction of `ρ` to the\ngeometric fundamental group `N`, carrying the residual Galois action of\n`Stacks.EtaleCohomology.galoisCoinvariantsRepresentation` through the fundamental exact sequence\n`φ`, Tate-twisted by `-1` as the source defines the twist.  The left-hand side is the compactly\nsupported cohomology module of Tag 0GJZ in degree two, carrying the Galois action `galois`.\n\nThe geometric input is a pairing of `H²_c` with the `n`-th roots of unity, taking values in the\ncoinvariants, equivariant for the Galois actions on all three of its arguments and nondegenerate\nat one root of unity `ζ₀`.  That is the shape in which the source supplies it: the twist in the\nconclusion is not assumed anywhere, it comes out of the computation of the Galois action on\n`μ_n`, which is the cyclotomic character.  See the module docstring for the inputs carried as\nhypotheses and the tags they belong to.\n\n`hbase` pins `Xbar` as the geometric curve `X_{k̄} = X ×_k k^{sep}`, so that the cohomology on\nthe left is that of the base change and not of an unrelated scheme over `k^{sep}`; both the\nprojection `gbar` and the structure morphism `fbar` are determined by that one isomorphism, so\nneither is an unconstrained choice.  The identification itself plays no part in the twist\nbookkeeping, which is why the proof only destructures it.",
      "statement": "public theorem compactlySupportedCohomologyTwo_galoisIso_tateTwistCoinvariants\n    [LocallyOfFiniteType fbar] [QuasiCompact fbar] [IsSeparated fbar]\n    [IsCurve k fX] [Smooth fX] [GeometricallyConnected fX]\n    (gbar : Xbar ⟶ X)\n    (hbase : ∃ e : Xbar ≅ pullback fX (Spec.map (CommRingCat.ofHom (algebraMap k ksep))),\n      gbar = e.hom ≫ pullback.fst fX (Spec.map (CommRingCat.ofHom (algebraMap k ksep))) ∧\n        fbar = e.hom ≫ pullback.snd fX (Spec.map (CommRingCat.ofHom (algebraMap k ksep))))\n    (etabar : AlgebraicGeometry.GeometricPoint X)\n    (ρ : Representation Λ (EtaleFundamentalGroup X etabar) M)\n    (N : Subgroup (EtaleFundamentalGroup X etabar)) [N.Normal]\n    (φ : EtaleFundamentalGroup X etabar ⧸ N ≃* (ksep ≃ₐ[k] ksep))\n    (galois : Representation Λ (ksep ≃ₐ[k] ksep)\n      (compactlySupportedCohomologyTwo.{u, r} ksep fbar jbar Λ F))\n    (pair : Additive (rootsOfUnity n ksep) →+\n      (compactlySupportedCohomologyTwo.{u, r} ksep fbar jbar Λ F →ₗ[Λ]\n        Stacks.Trace.coinvariants (ρ.comp N.subtype)))\n    (hpair : ∀ (σ : ksep ≃ₐ[k] ksep) (ζ : rootsOfUnity n ksep)\n        (x : compactlySupportedCohomologyTwo.{u, r} ksep fbar jbar Λ F),\n      pair (Additive.ofMul (galoisRootsOfUnity k ksep n σ ζ)) (galois σ x) =\n        galoisCoinvariantsRepresentation ρ N φ σ (pair (Additive.ofMul ζ) x))\n    (ζ₀ : rootsOfUnity n ksep)\n    (hζ₀ : Function.Bijective (pair (Additive.ofMul ζ₀))) :\n    ∃ θ : compactlySupportedCohomologyTwo.{u, r} ksep fbar jbar Λ F ≃ₗ[Λ]\n        Stacks.Trace.coinvariants (ρ.comp N.subtype),\n      ∀ (σ : ksep ≃ₐ[k] ksep)\n        (x : compactlySupportedCohomologyTwo.{u, r} ksep fbar jbar Λ F),\n        θ (galois σ x) =\n          tateTwistNegOne k ksep n Λ (galoisCoinvariantsRepresentation ρ N φ) σ (θ x)",
@@ -45533,7 +45529,7 @@
     {
      "name": "AlgebraicGeometry.geometricGaloisDerivedKernelInvariantsIsoOfAlgClosure",
      "kind": "def",
-     "line": 481,
+     "line": 482,
      "private": false,
      "doc": "**Tag 03VM, the derived version of the cohomological half with its Galois action, over any\nfield, with the group side defined from `X` over `k`**: for a geometrically connected smooth curve\n`X` over a field `k`, `k̄` an algebraic closure of `k`, `Λ` a finite ring with `#Λ` invertible in\n`k`, and `X_{k̄} ≇ 𝐏¹_{k̄}`,\n\n`RH⁰(π₁(X_{k̄}), M) ≅ RΓ^{Gal}(X_{k̄}, ℱ_ρ)`\n\nin the bounded below derived category of discrete `Λ`-modules with a continuous action of\n`Aut(k̄/k) = Gal(k^{sep}/k)`, naturally in the finite `Λ`-module `M` with continuous action `ρ`\nof `π₁(X)`. The left side is the derived invariants under the kernel of the projection\n`π₁(X, η̄) ⟶ Aut(k̄/k)` of `X` over `k`, i.e. under the image of `π₁(X_{k̄}, η̄)`. The right side\nis computed on `X' = X ×_k k'`, `k'` the perfect closure of `k` in `k̄`; forgetting the action it\nis `RΓ(X_{k̄}, ℱ_ρ|_{X_{k̄}})` of `X` itself\n(`AlgebraicGeometry.perfectClosureGaloisDerivedSectionsForgetIso`).",
      "statement": "def geometricGaloisDerivedKernelInvariantsIsoOfAlgClosure (hΛ : IsUnit ((Nat.card Λ : ℕ) : k))\n    (hP : ¬ ∃ e : fieldBaseChange (Over.mk f) K ≅ projectiveSpaceOver 1 (Spec (.of K)),\n      e.hom ≫ (projectiveSpaceOver 1 (Spec (.of K)) ↘ Spec (.of K)) =\n        pullback.snd (Over.mk f).hom (specAlgebraMap k K)) :\n    geometricGaloisDerivedInvariantsOfAlgClosure B X f K y Λ ≅\n      perfectClosureGaloisDerivedSections B X f K y Λ",
@@ -45828,7 +45824,7 @@
     {
      "name": "Stacks.Adeles.GlobalFunctionField.isAlgebraic_eigenvalues_of_isEigenform",
      "kind": "theorem",
-     "line": 169,
+     "line": 170,
      "private": false,
      "doc": "**Stacks Project, Tag 03VX.** Algebraicity of eigenvalues. Let `k` be a finite field of\ncharacteristic `p`, `K` a function field over `k` (for instance `K = k(X)` for a geometrically\nirreducible smooth projective curve `X` over `k`), and `Λ` a field in which `p` is invertible,\nwith prime subfield `F ⊂ Λ` (the bottom subfield `⊥`). If `f ∈ C(Λ)` is an eigenform, with\n`T_v f = t_v f` and `U_v f = u_v f` at every place `v`, then the eigenvalues `t_v` are algebraic\nover `F`; so are the `u_v`, which equal `q_v⁻¹ ∈ F`.\n\n`C(Λ)` is `Stacks.Adeles.cuspFormsCentralChar` and an eigenform is `Stacks.Adeles.IsEigenform`\n(an unramified cusp form with a unit value, Tag 03VS). The proof uses Proposition 03VW,\n`Stacks.Adeles.GlobalFunctionField.cuspFormsCentralChar_fg_and_baseChange`.",
      "statement": "public theorem isAlgebraic_eigenvalues_of_isEigenform (hp : IsUnit (ringChar k : Λ))\n    {f : GL (Fin 2) (AdeleRing K) → Λ} {t u : Place K → Λ} (hf : IsEigenform f t u)\n    (hfC : f ∈ cuspFormsCentralChar K Λ) (v : Place K) :\n    IsAlgebraic ↥(⊥ : Subfield Λ) (t v) ∧ IsAlgebraic ↥(⊥ : Subfield Λ) (u v)",

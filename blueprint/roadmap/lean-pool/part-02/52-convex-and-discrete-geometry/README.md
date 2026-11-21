@@ -1,8 +1,9 @@
 # Convex and discrete geometry
 
-The Lean Pool projects whose card's first MSC2020 code is in class 52, Convex and discrete geometry: 15 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 52, Convex and discrete geometry: 16 articles, one per card.
 
 - [A Conditional Fourteen-Point Case of Erdős Problem 132](erdos132-n14.md)
+- [An explicit improvement to the planar distinct-distance bound in general position](distinct-distances-general-position.md)
 - [The Bannai-Bannai-Stanton Bound on Distance Sets](bannai-bannai-stanton.md)
 - [Convex Three-Distance Degree-Six Theorem and Exceptional-Word Closures](erdos132-convex-k3.md)
 - [Conway–Soifer covering conjecture for n = 3](conway-soifer-three.md)

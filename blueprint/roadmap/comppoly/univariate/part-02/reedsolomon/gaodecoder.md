@@ -7,7 +7,7 @@ proof: formalized
 
 # Gao Decoder for Reed-Solomon Codes
 
-`CompPoly.Univariate.ReedSolomon.GaoDecoder`, in [CompPoly/Univariate/ReedSolomon/GaoDecoder.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean), by Juan Conejero.
+`CompPoly.Univariate.ReedSolomon.GaoDecoder`, in [CompPoly/Univariate/ReedSolomon/GaoDecoder.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean), by Juan Conejero.
 
 > Gao's decoding algorithm [Gao02] for the Reed-Solomon code of `ReedSolomon.lean`;
 > correctness is proved in `GaoCorrectness.lean`.
@@ -24,7 +24,7 @@ proof: formalized
 >
 > * [Gao, S., *A New Algorithm for Decoding Reed-Solomon Codes*][Gao02]
 
-`CompPoly.ReedSolomon.Gao.nodalPoly` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L38))
+`CompPoly.ReedSolomon.Gao.nodalPoly` (definition, [line 38](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L38))
 
 > Nodal polynomial of the evaluation domain: `g₀(x) = ∏ a ∈ D, (x − a)`.
 
@@ -32,7 +32,7 @@ proof: formalized
 def nodalPoly [Ring F] [BEq F] [LawfulBEq F] [Nontrivial F] (D : Domain F) : CPolynomial F
 ```
 
-`CompPoly.ReedSolomon.Gao.receivedInterpolant` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L43))
+`CompPoly.ReedSolomon.Gao.receivedInterpolant` (definition, [line 43](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L43))
 
 > Unique polynomial `g₁ ∈ 𝔽[X]` of degree < `D.n` such that
 > `g₁(aᵢ) = r[i]` for `aᵢ ∈ D`.
@@ -42,7 +42,7 @@ def receivedInterpolant [Field F] [BEq F] [LawfulBEq F]
     (D : Domain F) (r : Vector F D.n) : CPolynomial F
 ```
 
-`CompPoly.ReedSolomon.Gao.partialGcd` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L49))
+`CompPoly.ReedSolomon.Gao.partialGcd` (definition, [line 49](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L49))
 
 > Partial extended Euclidean algorithm stopping when the remainder
 > has degree less than `(n + k + 1)/2 = ⌈(n+k)/2⌉`.
@@ -53,7 +53,7 @@ def partialGcd [Field F] [BEq F] [LawfulBEq F]
     CPolynomial F × CPolynomial F × CPolynomial F
 ```
 
-`CompPoly.ReedSolomon.Gao.decode` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L66))
+`CompPoly.ReedSolomon.Gao.decode` (definition, [line 66](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean#L66))
 
 > Gao's algorithm.
 >
@@ -81,5 +81,5 @@ def decode [Field F] [BEq F] [LawfulBEq F]
 
 ## Sources
 
-- [CompPoly/Univariate/ReedSolomon/GaoDecoder.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean)
+- [CompPoly/Univariate/ReedSolomon/GaoDecoder.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ReedSolomon/GaoDecoder.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ReedSolomon.GaoDecoder.json)

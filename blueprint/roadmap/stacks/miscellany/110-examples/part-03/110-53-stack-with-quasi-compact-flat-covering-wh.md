@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.53 Stack with quasi-compact flat covering which is not algebraic
 
-Section 110.53 of the Stacks Project, [Tag 04AG](https://stacks.math.columbia.edu/tag/04AG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.53 of the Stacks Project, [Tag 04AG](https://stacks.math.columbia.edu/tag/04AG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04AH, a lemma
 
 [Tag 04AH](https://stacks.math.columbia.edu/tag/04AH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isFiniteType_classifyingStack_of_smoothSchemeCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean#L69).
+**`AlgebraicGeometry.Stack.isFiniteType_classifyingStack_of_smoothSchemeCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Stacks/ClassifyingStackFiniteType.lean#L69).
 
 > **Stacks 04AH.** Let `k` be a field and let `G` be an affine group scheme over `k`. If the
 > classifying stack `[Spec(k)/G]` has a smooth surjective covering by a scheme, then `G` is of
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.53, Tag 04AG](https://stacks.math.columbia.edu/tag/04AG)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

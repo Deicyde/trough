@@ -8,7 +8,7 @@ proof: formalized
 
 # The maximal current state of the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean): 13 declarations, 13 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Basic`, [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean): 13 declarations, 13 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Basic
 
 ## A. The largest current
 
-**`CondensedMatter.TightBindingChain.currentEigenvalue_le_one`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L61).
+**`CondensedMatter.TightBindingChain.currentEigenvalue_le_one`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L61).
 
 > For `t ≥ 0`, the current eigenstate with `k = 1` carries the largest current.
 
@@ -46,7 +46,7 @@ lemma currentEigenvalue_le_one (ht : 0 ≤ T.t) {k : ℕ} (hk : 1 ≤ k) (hkN : 
 
 ## B. The Hamiltonian on the current eigenstates
 
-**`CondensedMatter.TightBindingChain.inner_openHamiltonian_currentEigenstate`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L81).
+**`CondensedMatter.TightBindingChain.inner_openHamiltonian_currentEigenstate`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L81).
 
 > The Hamiltonian on the current eigenstates:
 > `⟨m|H ψ_k⟩ = E0 ⟨m|ψ_k⟩ - 2 t sin θ iᵐ⁺¹ cos ((m + 1) θ)` with `θ = k π / (N + 1)`.
@@ -114,7 +114,7 @@ lemma inner_openHamiltonian_currentEigenstate (k : ℕ) (m : Fin T.N) :
 
 ## C. The maximal current state
 
-**`CondensedMatter.TightBindingChain.maxCurrentState`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L147).
+**`CondensedMatter.TightBindingChain.maxCurrentState`**, a def, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L147).
 
 > The maximal current state: the current eigenstate with `k = 1`, times `√(2 / (N + 1))`.
 
@@ -122,7 +122,7 @@ lemma inner_openHamiltonian_currentEigenstate (k : ℕ) (m : Fin T.N) :
 noncomputable def maxCurrentState : T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.norm_maxCurrentState`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L151).
+**`CondensedMatter.TightBindingChain.norm_maxCurrentState`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L151).
 
 > The maximal current state has norm one.
 
@@ -130,7 +130,7 @@ noncomputable def maxCurrentState : T.HilbertSpace
 lemma norm_maxCurrentState : ‖T.maxCurrentState‖ = 1
 ```
 
-**`CondensedMatter.TightBindingChain.inner_maxCurrentState`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L158).
+**`CondensedMatter.TightBindingChain.inner_maxCurrentState`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L158).
 
 > The amplitude of the maximal current state on the site `m`.
 
@@ -141,7 +141,7 @@ lemma inner_maxCurrentState (m : Fin T.N) :
   rw [maxCurrentState, inner_smul_right, inner_currentEigenstate, Nat.cast_one, one_mul]
 ```
 
-**`CondensedMatter.TightBindingChain.inner_openHamiltonian_maxCurrentState`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L164).
+**`CondensedMatter.TightBindingChain.inner_openHamiltonian_maxCurrentState`**, a lemma, [line 164](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L164).
 
 > The Hamiltonian on the maximal current state, site by site.
 
@@ -155,7 +155,7 @@ lemma inner_openHamiltonian_maxCurrentState (m : Fin T.N) :
   ring
 ```
 
-**`CondensedMatter.TightBindingChain.current_maxCurrentState`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L173).
+**`CondensedMatter.TightBindingChain.current_maxCurrentState`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L173).
 
 > The maximal current state carries the current `2 a t cos (π / (N + 1))`.
 
@@ -164,7 +164,7 @@ lemma current_maxCurrentState :
     T.current T.maxCurrentState = (T.currentEigenvalue 1 : ℂ) • T.maxCurrentState
 ```
 
-**`CondensedMatter.TightBindingChain.maxCurrentVectorState`**, an abbrev, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L178).
+**`CondensedMatter.TightBindingChain.maxCurrentVectorState`**, an abbrev, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L178).
 
 > The maximal current state as a state on the operators of the chain.
 
@@ -175,7 +175,7 @@ noncomputable abbrev maxCurrentVectorState :
 
 ## D. Expectations
 
-**`CondensedMatter.TightBindingChain.expectation_maxCurrentState`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L189).
+**`CondensedMatter.TightBindingChain.expectation_maxCurrentState`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L189).
 
 > Expectations in the maximal current state are real parts of its diagonal matrix elements.
 
@@ -185,7 +185,7 @@ lemma expectation_maxCurrentState (A : Observable (T.HilbertSpace →L[ℂ] T.Hi
       (⟪T.maxCurrentState, (A : T.HilbertSpace →L[ℂ] T.HilbertSpace) T.maxCurrentState⟫_ℂ).re
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_openHamiltonian_maxCurrentState`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L206).
+**`CondensedMatter.TightBindingChain.expectation_openHamiltonian_maxCurrentState`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L206).
 
 > The maximal current state sits at the centre of the band, `⟨H⟩ = E0`.
 
@@ -194,7 +194,7 @@ lemma expectation_openHamiltonian_maxCurrentState :
     T.maxCurrentVectorState⟨T.openHamiltonianObservable⟩ = T.E0
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_position_maxCurrentState`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L231).
+**`CondensedMatter.TightBindingChain.expectation_position_maxCurrentState`**, a lemma, [line 231](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L231).
 
 > The maximal current state sits at the centre of the chain, `⟨X⟩ = a (N - 1) / 2`.
 
@@ -203,7 +203,7 @@ lemma expectation_position_maxCurrentState :
     T.maxCurrentVectorState⟨T.positionObservable⟩ = T.a * (T.N - 1) / 2
 ```
 
-**`CondensedMatter.TightBindingChain.expectation_bracket_maxCurrentState`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L269).
+**`CondensedMatter.TightBindingChain.expectation_bracket_maxCurrentState`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L269).
 
 > The bracket of the maximal current state: `⟨⁅H, X⁆⟩ = -a t cos (π / (N + 1))`.
 
@@ -213,7 +213,7 @@ lemma expectation_bracket_maxCurrentState :
       -(T.a * T.t * Real.cos (Real.pi / (T.N + 1)))
 ```
 
-**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L291).
+**`CondensedMatter.TightBindingChain.robertson_schrodinger_maxCurrentState`**, a lemma, [line 291](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean#L291).
 
 > **Energy–position uncertainty of the maximal current state.**
 > `Cov(H, X)² + (a t cos (π / (N + 1)))² ≤ Var H · Var X` in the maximal current state.
@@ -234,4 +234,4 @@ lemma robertson_schrodinger_maxCurrentState :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean)

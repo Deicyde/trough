@@ -8,7 +8,7 @@ proof: formalized
 
 # Nelson's analytic-vector theorem
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Nelson`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean): 15 declarations, 8 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVector.Nelson`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean): 15 declarations, 8 with a docstring.
 
 > Nelson's theorem: a symmetric operator with dense analytic vectors is essentially self-adjoint.
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.AnalyticVect
 > - M. Reed and B. Simon, *Methods of Modern Mathematical Physics II*, Academic Press, 1975, Thm.
 >   X.39.
 
-**`LinearPMap.IsEntireVector.globalAnalyticOrbit`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L52).
+**`LinearPMap.IsEntireVector.globalAnalyticOrbit`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L52).
 
 > Every entire vector supplies a `GlobalAnalyticOrbit` once the operator is known to be
 > symmetric on a dense domain.  This packages the global case through the same certificate used by
@@ -42,7 +42,7 @@ lemma IsEntireVector.globalAnalyticOrbit
     Nonempty (GlobalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.IsAnalyticVector.localAnalyticOrbitOfWitness`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L77).
+**`LinearPMap.IsAnalyticVector.localAnalyticOrbitOfWitness`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L77).
 
 > The exponential series of an analytic vector, as a local orbit.
 
@@ -56,7 +56,7 @@ noncomputable def IsAnalyticVector.localAnalyticOrbitOfWitness
     LocalAnalyticOrbit T x
 ```
 
-**`LinearPMap.IsAnalyticVector.localAnalyticOrbit`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L112).
+**`LinearPMap.IsAnalyticVector.localAnalyticOrbit`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L112).
 
 ```lean
 lemma IsAnalyticVector.localAnalyticOrbit
@@ -66,7 +66,7 @@ lemma IsAnalyticVector.localAnalyticOrbit
     Nonempty (LocalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.IsAnalyticVector.localAnalyticOrbit_at_exp_of_radius`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L122).
+**`LinearPMap.IsAnalyticVector.localAnalyticOrbit_at_exp_of_radius`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L122).
 
 > At a point reached by the exponential series, a new local orbit exists with any radius below the
 > original one.
@@ -81,7 +81,7 @@ lemma IsAnalyticVector.localAnalyticOrbit_at_exp_of_radius
     Nonempty (LocalAnalyticOrbit T (analyticExp T v a))
 ```
 
-**`LinearPMap.AnalyticVectorWitness.advance`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L149).
+**`LinearPMap.AnalyticVectorWitness.advance`**, a def, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L149).
 
 > Move an analytic vector along its exponential series by a given time. The new radius is the
 > midpoint of a fixed lower bound and the old radius, so repeated steps keep a uniform radius.
@@ -96,7 +96,7 @@ noncomputable def AnalyticVectorWitness.advance
     AnalyticVectorWitness T
 ```
 
-**`LinearPMap.AnalyticVectorWitness.advance_radius`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L203).
+**`LinearPMap.AnalyticVectorWitness.advance_radius`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L203).
 
 ```lean
 lemma AnalyticVectorWitness.advance_radius
@@ -108,7 +108,7 @@ lemma AnalyticVectorWitness.advance_radius
     (W.advance hclosed hsym hdense hr hrW ha).radius = (r + W.radius) / 2
 ```
 
-**`LinearPMap.AnalyticVectorWitness.advance_norm`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L212).
+**`LinearPMap.AnalyticVectorWitness.advance_norm`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L212).
 
 ```lean
 lemma AnalyticVectorWitness.advance_norm
@@ -120,7 +120,7 @@ lemma AnalyticVectorWitness.advance_norm
     ‖(W.advance hclosed hsym hdense hr hrW ha).state‖ = ‖W.state‖
 ```
 
-**`LinearPMap.AnalyticVectorWitness.uniformIntegerLineData`**, a def, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L229).
+**`LinearPMap.AnalyticVectorWitness.uniformIntegerLineData`**, a def, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L229).
 
 > A two-sided line of witnesses with a fixed lower-radius invariant.  Positive indices advance
 > by `δ`, negative indices by `-δ`; the midpoint choice in `advance` makes the invariant stable in
@@ -137,7 +137,7 @@ noncomputable def AnalyticVectorWitness.uniformIntegerLineData
     ℤ → {W : AnalyticVectorWitness T // r < W.radius ∧ ‖W.state‖ = ‖W0.state‖}
 ```
 
-**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L261).
+**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine`**, a def, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L261).
 
 > The two-sided line of witnesses underlying `uniformIntegerLineData`.
 
@@ -152,7 +152,7 @@ noncomputable def AnalyticVectorWitness.uniformIntegerLine
     ℤ → AnalyticVectorWitness T
 ```
 
-**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_succ_of_nonneg`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L272).
+**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_succ_of_nonneg`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L272).
 
 ```lean
 lemma AnalyticVectorWitness.uniformIntegerLine_succ_of_nonneg
@@ -168,7 +168,7 @@ lemma AnalyticVectorWitness.uniformIntegerLine_succ_of_nonneg
       hr hrW0 hδ h2δ n).iterates δ
 ```
 
-**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_pred_of_nonpos`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L288).
+**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_pred_of_nonpos`**, a lemma, [line 288](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L288).
 
 ```lean
 lemma AnalyticVectorWitness.uniformIntegerLine_pred_of_nonpos
@@ -184,7 +184,7 @@ lemma AnalyticVectorWitness.uniformIntegerLine_pred_of_nonpos
         hr hrW0 hδ h2δ n).iterates (-δ)
 ```
 
-**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_step`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L304).
+**`LinearPMap.AnalyticVectorWitness.uniformIntegerLine_step`**, a lemma, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L304).
 
 ```lean
 lemma AnalyticVectorWitness.uniformIntegerLine_step
@@ -202,7 +202,7 @@ lemma AnalyticVectorWitness.uniformIntegerLine_step
 
 > A two-sided sequence of local orbits with a uniform radius glues to a global orbit.
 
-**`LinearPMap.GlobalAnalyticOrbit.of_uniform_witness_line`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L378).
+**`LinearPMap.GlobalAnalyticOrbit.of_uniform_witness_line`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L378).
 
 ```lean
 lemma GlobalAnalyticOrbit.of_uniform_witness_line
@@ -219,7 +219,7 @@ lemma GlobalAnalyticOrbit.of_uniform_witness_line
     Nonempty (GlobalAnalyticOrbit T x)
 ```
 
-**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors_of_globalOrbit`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L443).
+**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors_of_globalOrbit`**, a lemma, [line 443](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L443).
 
 > A symmetric operator is essentially self-adjoint if the analytic vectors are dense and each of
 > them has a global norm-preserving orbit.
@@ -234,7 +234,7 @@ lemma IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors_of_globalOrbi
 
 ## A. Nelson's single-operator criterion
 
-**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L502).
+**`LinearPMap.IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors`**, a lemma, [line 502](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean#L502).
 
 > **Nelson's analytic-vector theorem.** A symmetric operator with a dense set of analytic vectors
 > is essentially self-adjoint (Reed–Simon II, Thm. X.39).
@@ -252,4 +252,4 @@ lemma IsSymmetric.isEssentiallySelfAdjoint_of_denseAnalyticVectors
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean)

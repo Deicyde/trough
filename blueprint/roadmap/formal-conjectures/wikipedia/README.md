@@ -1,6 +1,6 @@
 # Wikipedia
 
-The 177 problem files in [FormalConjectures/Wikipedia](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
+The 179 problem files in [FormalConjectures/Wikipedia](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -142,7 +142,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Infinitude of Pell number primes](part-06/infinitude-of-pell-number-primes.md)
 - [Perfect numbers](part-06/perfect-numbers.md)
 
-## [The Petersen colouring… to Schanuel's Conjecture](part-07/README.md)
+## [The Petersen colouring… to Sato–Tate conjecture](part-07/README.md)
 
 - [The Petersen colouring conjecture (Jaeger 1988)](part-07/the-petersen-colouring-conjecture-jaeger-1988.md)
 - [Pierce–Birkhoff conjecture](part-07/pierce-birkhoff-conjecture.md)
@@ -152,6 +152,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Asymptotic density of powerful numbers](part-07/asymptotic-density-of-powerful-numbers.md)
 - [Primes and perfect squares](part-07/primes-and-perfect-squares.md)
 - [Prime Triplet Conjecture](part-07/prime-triplet-conjecture.md)
+- [Proth primes](part-07/proth-primes.md)
 - [Quasiperfect Numbers](part-07/quasiperfect-numbers.md)
 - [Ramanujan τ-function](part-07/ramanujan-function.md)
 - [Ramsey numbers](part-07/ramsey-numbers.md)
@@ -163,10 +164,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Particular values of the Riemann zeta function](part-07/particular-values-of-the-riemann-zeta-function.md)
 - [Rudin's conjecture on squares in arithmetic progressions](part-07/rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](part-07/sato-tate-conjecture.md)
-- [Schanuel's Conjecture](part-07/schanuels-conjecture.md)
 
-## [Hypothesis H to Gottschalk's surjunctivity…](part-08/README.md)
+## [Schanuel's Conjecture to (m,k)-perfect numbers](part-08/README.md)
 
+- [Schanuel's Conjecture](part-08/schanuels-conjecture.md)
 - [Hypothesis H](part-08/hypothesis-h.md)
 - [Scholz conjecture on addition chains](part-08/scholz-conjecture-on-addition-chains.md)
 - [Selfridge's conjectures](part-08/selfridges-conjectures.md)
@@ -186,12 +187,13 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Sumner's universal tournament conjecture (1971)](part-08/sumners-universal-tournament-conjecture-1971.md)
 - [Sum of three cubes](part-08/sum-of-three-cubes.md)
 - [(m,k)-perfect numbers](part-08/m-k-perfect-numbers.md)
-- [Gottschalk's surjunctivity conjecture](part-08/gottschalks-surjunctivity-conjecture.md)
 
-## [Tarski's exponential function… to Woodall Primes](part-09/README.md)
+## [Gottschalk's surjunctivity… to Woodall Primes](part-09/README.md)
 
+- [Gottschalk's surjunctivity conjecture](part-09/gottschalks-surjunctivity-conjecture.md)
 - [Tarski's exponential function problem](part-09/tarskis-exponential-function-problem.md)
 - [Taxicab numbers](part-09/taxicab-numbers.md)
+- [Thabit numbers and Thabit primes](part-09/thabit-numbers-and-thabit-primes.md)
 - [Toronto spaces](part-09/toronto-spaces.md)
 - [The total colouring conjecture (Behzad 1965, Vizing 1968)](part-09/the-total-colouring-conjecture-behzad-1965-vizin.md)
 - [Open questions on transcendence of numbers](part-09/open-questions-on-transcendence-of-numbers.md)
@@ -208,4 +210,4 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Wolstenholme Prime](part-09/wolstenholme-prime.md)
 - [Woodall Primes](part-09/woodall-primes.md)
 
-No article: 9 files here state no research or textbook statement: [Brocard's Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BrocardProblem.lean), [Erdős–Rado sunflower conjecture](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosRadoSunflowerConjecture.lean), [The Hadwiger-Nelson Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HadwigerNelson.lean), [Happy Ending Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HappyEndingProblem.lean), [Herzog–Schönheim conjecture](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HerzogSchonheimConjecture.lean), [Hilbert's Fifth Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HilbertFifthProblem.lean), [Minimum Overlap Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MinimalOverlapProblem.lean), [No-three-in-line problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/NoThreeInLineProblem.lean), [Existence of Odd Weird Numbers](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/OddWeirdNumber.lean).
+No article: 9 files here state no research or textbook statement: [Brocard's Problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/BrocardProblem.lean), [Erdős–Rado sunflower conjecture](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/ErdosRadoSunflowerConjecture.lean), [The Hadwiger-Nelson Problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/HadwigerNelson.lean), [Happy Ending Problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/HappyEndingProblem.lean), [Herzog–Schönheim conjecture](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/HerzogSchonheimConjecture.lean), [Hilbert's Fifth Problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/HilbertFifthProblem.lean), [Minimum Overlap Problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/MinimalOverlapProblem.lean), [No-three-in-line problem](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/NoThreeInLineProblem.lean), [Existence of Odd Weird Numbers](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Wikipedia/OddWeirdNumber.lean).

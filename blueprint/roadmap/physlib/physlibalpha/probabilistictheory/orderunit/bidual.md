@@ -8,7 +8,7 @@ proof: formalized
 
 # The bidual of a system
 
-The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Bidual`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean): 8 declarations (1 instance with no name), 4 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Bidual`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean): 8 declarations (1 instance with no name), 4 with a docstring.
 
 > The bidual of a system is an Archimedean order-unit space, and a lattice for classical systems.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Bidual`, [PhyslibAlpha/Pr
 
 ## A. The unit of the bidual
 
-**An instance with no name**, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L51).
+**An instance with no name**, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L51).
 
 > The unit of the bidual: the total weight of a positive functional.
 
@@ -40,19 +40,19 @@ The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Bidual`, [PhyslibAlpha/Pr
 instance : One (Bidual E)
 ```
 
-**`Bidual.coe_one`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L53).
+**`Bidual.coe_one`**, a lemma, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L53).
 
 ```lean
 lemma coe_one (φ : E →ₚ[ℝ] ℝ) : (1 : Bidual E) φ = φ 1
 ```
 
-**`Bidual.ofE_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L55).
+**`Bidual.ofE_one`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L55).
 
 ```lean
 lemma ofE_one : ofE (1 : E) = 1
 ```
 
-**`Bidual.exists_bound_one`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L58).
+**`Bidual.exists_bound_one`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L58).
 
 > An element of the bidual is bounded by a multiple of the total weight.
 
@@ -60,19 +60,19 @@ lemma ofE_one : ofE (1 : E) = 1
 lemma exists_bound_one (x : Bidual E) : ∃ n : ℕ, ∀ φ, |x φ| ≤ n * φ 1
 ```
 
-**`Bidual.instOrderUnitSpace`**, an instance, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L65).
+**`Bidual.instOrderUnitSpace`**, an instance, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L65).
 
 ```lean
 instance instOrderUnitSpace : OrderUnitSpace (Bidual E)
 ```
 
-**`Bidual.instArchimedeanOrderUnitSpace`**, an instance, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L74).
+**`Bidual.instArchimedeanOrderUnitSpace`**, an instance, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L74).
 
 ```lean
 instance instArchimedeanOrderUnitSpace : ArchimedeanOrderUnitSpace (Bidual E)
 ```
 
-**`Bidual.apply_le_of_le_one`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L85).
+**`Bidual.apply_le_of_le_one`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L85).
 
 > A positive functional's value on an element of the bidual below the unit is at most its total
 > weight.
@@ -83,7 +83,7 @@ lemma apply_le_of_le_one {x : Bidual E} (hx : x ≤ 1) (φ : E →ₚ[ℝ] ℝ) 
 
 ## B. The bidual of a classical system
 
-**`Bidual.instOrderUnitLattice`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L91).
+**`Bidual.instOrderUnitLattice`**, an instance, [line 91](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean#L91).
 
 > The bidual of a classical system is an order-unit lattice.
 
@@ -100,4 +100,4 @@ noncomputable instance instOrderUnitLattice [Fact (HasLatticeDualCone E)] :
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean)
+- [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.12 Dimension of a stack
 
-Section 100.12 of the Stacks Project, [Tag 0AFL](https://stacks.math.columbia.edu/tag/0AFL). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 100.12 of the Stacks Project, [Tag 0AFL](https://stacks.math.columbia.edu/tag/0AFL). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AFM, a lemma
 
 [Tag 0AFM](https://stacks.math.columbia.edu/tag/0AFM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.dimensionSubNat_eq_dimensionSubNat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionChartIndependence.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DimensionChartIndependence.lean#L416).
+**`AlgebraicGeometry.Stack.dimensionSubNat_eq_dimensionSubNat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionChartIndependence.lean, line 416](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/DimensionChartIndependence.lean#L416).
 
 > Let `𝒳` be a locally Noetherian algebraic stack over `S`, and let `f : T ⟶ 𝒳` and
 > `f' : T' ⟶ 𝒳` be two smooth, locally-of-finite-type 1-morphisms from algebraic spaces, with
@@ -47,7 +47,7 @@ theorem dimensionSubNat_eq_dimensionSubNat_of_isSmooth
       dimensionSubNat (Space.dimensionAtPoint B S hS T' hT' t') d'
 ```
 
-**`AlgebraicGeometry.Stack.exists_dimensionSubNat_eq_dimensionSubNat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionFiniteness.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionFiniteness.lean#L136).
+**`AlgebraicGeometry.Stack.exists_dimensionSubNat_eq_dimensionSubNat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionFiniteness.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionFiniteness.lean#L136).
 
 > Let `𝒳` be a locally Noetherian algebraic stack over `S`, let `f : T ⟶ 𝒳` and
 > `f' : T' ⟶ 𝒳` be smooth, locally-of-finite-type 1-morphisms from algebraic spaces, and let
@@ -90,7 +90,7 @@ theorem exists_dimensionSubNat_eq_dimensionSubNat_of_isSmooth
 
 [Tag 0AFN](https://stacks.math.columbia.edu/tag/0AFN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.dimensionAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean#L124).
+**`AlgebraicGeometry.Stack.dimensionAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean#L124).
 
 > **Stacks 0AFN.** The dimension of a locally Noetherian algebraic stack `𝒳` at a point `x`:
 > the infimum of `dim_t(T) - dim_t(T_x)` over the 1-morphisms `T ⟶ 𝒳` from an algebraic space
@@ -102,7 +102,7 @@ noncomputable def dimensionAtPoint (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (x : points B S hS 𝒳.val.val 𝒳.val.property) : EInt
 ```
 
-**`AlgebraicGeometry.Stack.dimensionAtPoint_eq_dimensionSubNat_zero_of_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionRepresentable.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DimensionRepresentable.lean#L68). The attribute's comment: “agreement with the dimension of an algebraic space”.
+**`AlgebraicGeometry.Stack.dimensionAtPoint_eq_dimensionSubNat_zero_of_representing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionRepresentable.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/DimensionRepresentable.lean#L68). The attribute's comment: “agreement with the dimension of an algebraic space”.
 
 > **Stacks 0AFN, agreement with the dimension of an algebraic space.** Let `𝒵` be a locally
 > Noetherian algebraic stack over `S` represented by an algebraic space `W`, and let `x ∈ |W|`
@@ -130,7 +130,7 @@ theorem dimensionAtPoint_eq_dimensionSubNat_zero_of_representing
 
 [Tag 0AFP](https://stacks.math.columbia.edu/tag/0AFP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.dimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean#L155).
+**`AlgebraicGeometry.Stack.dimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Dimension.lean#L155).
 
 > **Stacks 0AFP.** The dimension of a locally Noetherian algebraic stack: the supremum, over
 > the points of the stack, of its dimension at that point, as an extended integer.
@@ -144,7 +144,7 @@ noncomputable abbrev dimension (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 0AFR](https://stacks.math.columbia.edu/tag/0AFR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_dimension_classifyingStack_additiveGroup_eq_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean#L134). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: over every field the classifying stack of the additive group is constructed and has dimension `-1`”.
+**`AlgebraicGeometry.Stack.exists_dimension_classifyingStack_additiveGroup_eq_neg_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean, line 134](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean#L134). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: over every field the classifying stack of the additive group is constructed and has dimension `-1`”.
 
 > **Stacks 0AFR: the classifying stack of `𝐆ₐ` has dimension `-1`.** Over every field `k`, the
 > classifying stack `B𝐆ₐ = [Spec k/𝐆ₐ]` has a model in the 2-category of algebraic stacks, and every
@@ -162,7 +162,7 @@ theorem exists_dimension_classifyingStack_additiveGroup_eq_neg_one :
           dimension C (Spec (.of k)) hk 𝒬 hN = ((-1 : ℤ) : EInt)
 ```
 
-**`AlgebraicGeometry.Stack.exists_algebraicStack_dimension_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean#L154). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: a locally Noetherian algebraic stack of dimension `-1` exists over every field”.
+**`AlgebraicGeometry.Stack.exists_algebraicStack_dimension_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/NegativeDimensionExample.lean#L154). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: a locally Noetherian algebraic stack of dimension `-1` exists over every field”.
 
 > **Stacks 0AFR: the dimension of an algebraic stack can be a negative integer.** Over every
 > field `k` there is a locally Noetherian algebraic stack of dimension `-1`, namely a model of the
@@ -176,7 +176,7 @@ theorem exists_algebraicStack_dimension_lt_zero :
         dimension C (Spec (.of k)) hk 𝒬 hN < 0
 ```
 
-**`AlgebraicGeometry.Stack.dimension_quotientStack_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L119). The attribute's comment: “upper bound `dim [X/G] ≤ dim X - dim G` for every group algebraic space locally of finite type over the field, smooth or not, acting on an algebraic space locally of finite type; the equality is `dimension_quotientStack_eq_of_isLocallyOfFiniteType`”.
+**`AlgebraicGeometry.Stack.dimension_quotientStack_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 119](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L119). The attribute's comment: “upper bound `dim [X/G] ≤ dim X - dim G` for every group algebraic space locally of finite type over the field, smooth or not, acting on an algebraic space locally of finite type; the equality is `dimension_quotientStack_eq_of_isLocallyOfFiniteType`”.
 
 > Let `X` be an algebraic space locally of finite type over a field `k`, and let `G` be a group
 > algebraic space locally of finite type over `k`, not necessarily smooth, acting on `X`. Then the
@@ -199,7 +199,7 @@ theorem dimension_quotientStack_le
             dimensionSubNat (Space.dimension C (Spec (.of k)) hk X.left hX) m
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L142). The attribute's comment: “upper bound `dim BG ≤ -dim G` for every group algebraic space locally of finite type over the field, smooth or not; the equality is `dimension_classifyingStack_eq_neg_of_isLocallyOfFiniteType`”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L142). The attribute's comment: “upper bound `dim BG ≤ -dim G` for every group algebraic space locally of finite type over the field, smooth or not; the equality is `dimension_classifyingStack_eq_neg_of_isLocallyOfFiniteType`”.
 
 > For a group algebraic space `G` locally of finite type over a field `k`, not necessarily
 > smooth, the dimension of `G` is a natural number `m`, and every model of the classifying stack
@@ -216,7 +216,7 @@ theorem dimension_classifyingStack_le
           dimension C (Spec (.of k)) hk 𝒬 hN ≤ ((-(m : ℤ) : ℤ) : EInt)
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L160). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: every model of `BG` has negative dimension, for every group algebraic space of positive dimension locally of finite type over the field, smooth or not”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean, line 160](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimension.lean#L160). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: every model of `BG` has negative dimension, for every group algebraic space of positive dimension locally of finite type over the field, smooth or not”.
 
 > The dimension of an algebraic stack can be a negative integer: for a group algebraic space `G`
 > of positive dimension, locally of finite type over a field `k` and not necessarily smooth, every
@@ -232,7 +232,7 @@ theorem dimension_classifyingStack_lt_zero
       dimension C (Spec (.of k)) hk 𝒬 hN < 0
 ```
 
-**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L443). The attribute's comment: “`dim [X/G] = dim X - dim G` for a group smooth over the field; the quotient stack is constructed, and every model of it has this dimension”.
+**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 443](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L443). The attribute's comment: “`dim [X/G] = dim X - dim G` for a group smooth over the field; the quotient stack is constructed, and every model of it has this dimension”.
 
 > **The dimension of a quotient stack by a smooth group.** Let `X` be an algebraic space locally
 > of finite type over a field `k` and let `G` be a group algebraic space smooth over `k` acting on
@@ -260,7 +260,7 @@ theorem dimension_quotientStack_eq_of_isSmooth
             dimensionSubNat (Space.dimension C (Spec (.of k)) hk X.left hX) m
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L477). The attribute's comment: “`dim BG = -dim G` for the classifying stack of a group smooth over the field; the classifying stack is constructed, and every model of it has this dimension”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 477](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L477). The attribute's comment: “`dim BG = -dim G` for the classifying stack of a group smooth over the field; the classifying stack is constructed, and every model of it has this dimension”.
 
 > **The dimension of the classifying stack of a smooth group.** Let `G` be a group algebraic
 > space smooth over a field `k`. Then the classifying stack `BG = [Spec k/G]` is an algebraic stack
@@ -281,7 +281,7 @@ theorem dimension_classifyingStack_eq_neg_of_isSmooth
           dimension C (Spec (.of k)) hk 𝒬 hN = ((-(m : ℤ) : ℤ) : EInt)
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_isSmooth_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L504). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` for a group of positive dimension smooth over the field”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_isSmooth_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 504](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L504). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` for a group of positive dimension smooth over the field”.
 
 > **The dimension of an algebraic stack can be a negative integer.** Let `G` be a group algebraic
 > space of positive dimension, smooth over a field `k`. Then the classifying stack `BG` is an
@@ -302,7 +302,7 @@ theorem dimension_classifyingStack_lt_zero_of_isSmooth_of_pos
           dimension C (Spec (.of k)) hk 𝒬 hN < 0
 ```
 
-**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L761). The attribute's comment: “`dim [X/G] = dim X - dim G` over a field of characteristic zero, for every group scheme locally of finite type; the quotient stack is constructed”.
+**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 761](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L761). The attribute's comment: “`dim [X/G] = dim X - dim G` over a field of characteristic zero, for every group scheme locally of finite type; the quotient stack is constructed”.
 
 > **The dimension of a quotient stack in characteristic zero.** Let `X` be an algebraic space
 > locally of finite type over a field `k` of characteristic `0`, and let `G` be a group scheme
@@ -331,7 +331,7 @@ theorem dimension_quotientStack_eq_of_charZero [CharZero k]
             dimensionSubNat (Space.dimension C (Spec (.of k)) hk X.left hX) m
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 787](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L787). The attribute's comment: “`dim BG = -dim G` over a field of characteristic zero, for every group scheme locally of finite type; the classifying stack is constructed”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_charZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 787](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L787). The attribute's comment: “`dim BG = -dim G` over a field of characteristic zero, for every group scheme locally of finite type; the classifying stack is constructed”.
 
 > **The dimension of the classifying stack in characteristic zero.** For a group scheme `G`
 > locally of finite type over a field `k` of characteristic `0`, the classifying stack `BG` is an
@@ -352,7 +352,7 @@ theorem dimension_classifyingStack_eq_neg_of_charZero [CharZero k]
           dimension C (Spec (.of k)) hk 𝒬 hN = ((-(m : ℤ) : ℤ) : EInt)
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_charZero_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 807](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L807). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` over a field of characteristic zero, for every group scheme of positive dimension locally of finite type”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_charZero_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean, line 807](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionField.lean#L807). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` over a field of characteristic zero, for every group scheme of positive dimension locally of finite type”.
 
 > **The dimension of an algebraic stack can be a negative integer, in characteristic zero.** For
 > a group scheme `G` of positive dimension, locally of finite type over a field of characteristic
@@ -373,7 +373,7 @@ theorem dimension_classifyingStack_lt_zero_of_charZero_of_pos [CharZero k]
           dimension C (Spec (.of k)) hk 𝒬 hN < 0
 ```
 
-**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L54). The attribute's comment: “`dim [X/G] = dim X - dim G` for every group algebraic space locally of finite type over the field, smooth or not, acting on an algebraic space locally of finite type; the quotient stack is constructed”.
+**`AlgebraicGeometry.Stack.dimension_quotientStack_eq_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 54](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L54). The attribute's comment: “`dim [X/G] = dim X - dim G` for every group algebraic space locally of finite type over the field, smooth or not, acting on an algebraic space locally of finite type; the quotient stack is constructed”.
 
 > Let `X` be an algebraic space locally of finite type over a field `k`, and let
 > `G` be a group algebraic space locally of finite type over `k`, not necessarily smooth, acting on
@@ -401,7 +401,7 @@ theorem dimension_quotientStack_eq_of_isLocallyOfFiniteType
             dimensionSubNat (Space.dimension C (Spec (.of k)) hk X.left hX) m
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L79). The attribute's comment: “`dim BG = -dim G` for every group algebraic space locally of finite type over the field, smooth or not; the classifying stack is constructed”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_eq_neg_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L79). The attribute's comment: “`dim BG = -dim G` for every group algebraic space locally of finite type over the field, smooth or not; the classifying stack is constructed”.
 
 > For a group algebraic space `G` locally of finite type over a field `k`, not necessarily
 > smooth, the classifying stack `BG` is an algebraic stack, the dimension of `G` is a natural number
@@ -421,7 +421,7 @@ theorem dimension_classifyingStack_eq_neg_of_isLocallyOfFiniteType
           dimension C (Spec (.of k)) hk 𝒬 hN = ((-(m : ℤ) : ℤ) : EInt)
 ```
 
-**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_isLocallyOfFiniteType_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L99). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` for every group algebraic space of positive dimension locally of finite type over the field, smooth or not”.
+**`AlgebraicGeometry.Stack.dimension_classifyingStack_lt_zero_of_isLocallyOfFiniteType_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackDimensionFiniteType.lean#L99). The attribute's comment: “the dimension of an algebraic stack can be a negative integer: `dim BG < 0` for every group algebraic space of positive dimension locally of finite type over the field, smooth or not”.
 
 > For a group algebraic space `G` of positive dimension, locally of finite type over a field `k`
 > and not necessarily smooth, the classifying stack `BG` is an algebraic stack, and every model of
@@ -448,4 +448,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.12, Tag 0AFL](https://stacks.math.columbia.edu/tag/0AFL)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

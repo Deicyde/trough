@@ -7,12 +7,12 @@ proof: formalized
 
 # NTT and Evaluation
 
-`CompPoly.Univariate.NTT.Evaluation`, in [CompPoly/Univariate/NTT/Evaluation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean), by Valerii Huhnin.
+`CompPoly.Univariate.NTT.Evaluation`, in [CompPoly/Univariate/NTT/Evaluation.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean), by Valerii Huhnin.
 
 > Bridge definitions and theorems connecting the NTT specification layer to
 > evaluation on the root-of-unity domain.
 
-`CompPoly.CPolynomial.NTT.evalOnDomain` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L29))
+`CompPoly.CPolynomial.NTT.evalOnDomain` (definition, [line 29](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L29))
 
 > Evaluate a raw polynomial on all nodes of an NTT domain in natural order.
 
@@ -20,7 +20,7 @@ proof: formalized
 def evalOnDomain (D : Domain R) (p : CPolynomial.Raw R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.evalOnDomain_eq_evalBatch` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L33))
+`CompPoly.CPolynomial.NTT.evalOnDomain_eq_evalBatch` (theorem, [line 33](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L33))
 
 > `evalOnDomain` is `evalBatch` specialized to the NTT domain nodes.
 
@@ -30,7 +30,7 @@ theorem evalOnDomain_eq_evalBatch (D : Domain R) (p : CPolynomial R) :
       evalBatch p (Array.ofFn (fun k : D.Idx => D.node k))
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardSpec_eval_node_eq` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L46))
+`CompPoly.CPolynomial.NTT.Forward.forwardSpec_eval_node_eq` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L46))
 
 > Pointwise form: the forward NTT specification evaluates a raw polynomial at a domain node.
 
@@ -40,7 +40,7 @@ theorem forwardSpec_eval_node_eq (D : Domain R) (p : CPolynomial.Raw R)
     (forwardSpec D p)[k.1] = p.eval (D.node k)
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardSpec_eq_evalOnDomain` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L68))
+`CompPoly.CPolynomial.NTT.Forward.forwardSpec_eq_evalOnDomain` (theorem, [line 68](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L68))
 
 > The forward NTT specification evaluates a raw polynomial on all domain nodes.
 
@@ -50,7 +50,7 @@ theorem forwardSpec_eq_evalOnDomain (D : Domain R) (p : CPolynomial.Raw R)
     forwardSpec D p = evalOnDomain D p
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardImpl_eval_node_eq` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L78))
+`CompPoly.CPolynomial.NTT.Forward.forwardImpl_eval_node_eq` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L78))
 
 > Pointwise form: the forward NTT implementation evaluates a raw polynomial at a domain node.
 
@@ -60,7 +60,7 @@ theorem forwardImpl_eval_node_eq (D : Domain R) (p : CPolynomial.Raw R)
     (forwardImpl D p).getD k.1 0 = p.eval (D.node k)
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardImpl_eq_evalOnDomain` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean#L86))
+`CompPoly.CPolynomial.NTT.Forward.forwardImpl_eq_evalOnDomain` (theorem, [line 86](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean#L86))
 
 > The forward NTT implementation evaluates a raw polynomial on all domain nodes.
 
@@ -78,5 +78,5 @@ theorem forwardImpl_eq_evalOnDomain (D : Domain R) (p : CPolynomial.Raw R)
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/Evaluation.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Evaluation.lean)
+- [CompPoly/Univariate/NTT/Evaluation.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Evaluation.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.Evaluation.json)

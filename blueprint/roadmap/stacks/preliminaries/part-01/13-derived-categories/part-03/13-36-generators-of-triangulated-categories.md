@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.36 Generators of triangulated categories
 
-Section 13.36 of the Stacks Project, [Tag 09SI](https://stacks.math.columbia.edu/tag/09SI). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.36 of the Stacks Project, [Tag 09SI](https://stacks.math.columbia.edu/tag/09SI). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FX9, a lemma
 
 [Tag 0FX9](https://stacks.math.columbia.edu/tag/0FX9) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.triangEnvelopeIter_eq_and_triangEnvelopeIter_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L408).
+**`CategoryTheory.ObjectProperty.triangEnvelopeIter_eq_and_triangEnvelopeIter_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 408](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L408).
 
 > The descriptions of the levels of the triangulated envelope, [Stacks, Tag 0FX9]. Write
 > `⟨P⟩ₙ₊₁ = P.triangEnvelopeIter n` (Mathlib counts extensions, so its index is one less than the
@@ -55,7 +55,7 @@ public theorem triangEnvelopeIter_eq_and_triangEnvelopeIter_add [IsTriangulated 
 
 [Tag 0ATG](https://stacks.math.columbia.edu/tag/0ATG) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.triangEnvelope_eq_iSup_and_isSaturated_and_le_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L482). References: SGA 4½ Etat 0 (2.3.3), “more general”.
+**`CategoryTheory.ObjectProperty.triangEnvelope_eq_iSup_and_isSaturated_and_le_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 482](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L482). References: SGA 4½ Etat 0 (2.3.3), “more general”.
 
 > The triangulated envelope `⟨P⟩ = ⋃ₙ ⟨P⟩ₙ` of a nonempty object property `P` of a
 > triangulated category is the union over `n, m` of the subcategories `smd(add(P[-m, m])^{⋆ n})`;
@@ -79,7 +79,7 @@ public theorem triangEnvelope_eq_iSup_and_isSaturated_and_le_iff
 
 [Tag 09SJ](https://stacks.math.columbia.edu/tag/09SJ) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.IsWeakTriangulatedGenerator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L512). The attribute's comment: “(3)”.
+**`CategoryTheory.ObjectProperty.IsWeakTriangulatedGenerator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 512](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L512). The attribute's comment: “(3)”.
 
 > A property of objects `P` of a category `C` with zero morphisms and a shift by `ℤ` is a
 > *weak generator*, or simply a *generator*, if every object `K` receiving only zero maps from the
@@ -91,7 +91,7 @@ public theorem triangEnvelope_eq_iSup_and_isSaturated_and_le_iff
 public def IsWeakTriangulatedGenerator (P : ObjectProperty C) : Prop
 ```
 
-**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L521). The attribute's comment: “(3), in the source's literal form: for every nonzero K an integer n and a nonzero map E ⟶ K⟦n⟧”.
+**`CategoryTheory.ObjectProperty.isWeakTriangulatedGenerator_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 521](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L521). The attribute's comment: “(3), in the source's literal form: for every nonzero K an integer n and a nonzero map E ⟶ K⟦n⟧”.
 
 > A weak generator in the source's own words: `P` is a weak generator if and only if for every
 > nonzero object `K` there are an object `E` satisfying `P`, an integer `n` and a nonzero map
@@ -108,7 +108,7 @@ public theorem isWeakTriangulatedGenerator_iff (P : ObjectProperty C) :
 
 [Tag 09SK](https://stacks.math.columbia.edu/tag/09SK) in the Stacks Project.
 
-**`Stacks.TriangulatedGenerators.hom_vanishing_iff_gen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 905](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L905).
+**`Stacks.TriangulatedGenerators.hom_vanishing_iff_gen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 905](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L905).
 
 > Stacks tag `09SK` (Lemma 13.36.4). For objects `E, K` of a triangulated
 > category `D`, the following are equivalent:
@@ -125,7 +125,7 @@ theorem hom_vanishing_iff_gen (E K : D) :
 
 [Tag 09SL](https://stacks.math.columbia.edu/tag/09SL) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.IsClassicalTriangulatedGenerator.isZero_of_rightOrthogonal_shiftClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L578).
+**`CategoryTheory.ObjectProperty.IsClassicalTriangulatedGenerator.isZero_of_rightOrthogonal_shiftClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 578](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L578).
 
 > **Stacks 09SL**: a classical generator of a (pre)triangulated category is a weak generator.
 > If the triangulated envelope of an object property `P` is everything, then an object `Y` which
@@ -142,7 +142,7 @@ public theorem IsClassicalTriangulatedGenerator.isZero_of_rightOrthogonal_shiftC
 
 [Tag 0FXA](https://stacks.math.columbia.edu/tag/0FXA) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.IsClassicalTriangulatedGenerator.isStrongTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L661).
+**`CategoryTheory.ObjectProperty.IsClassicalTriangulatedGenerator.isStrongTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Generators.lean, line 661](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/Generators.lean#L661).
 
 > **Stacks 0FXA**: in a triangulated category which has a strong generator, every classical
 > generator is a strong generator. Here the ambient strong generator is a finite family of objects
@@ -160,7 +160,7 @@ public theorem IsClassicalTriangulatedGenerator.isStrongTriangulatedGenerator [I
 
 [Tag 0ATH](https://stacks.math.columbia.edu/tag/0ATH) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.triangEnvelope_singleton_le_of_sums_of_extensions_of_summands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/TriangulatedEnvelopeInduction.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Triangulated/TriangulatedEnvelopeInduction.lean#L57).
+**`CategoryTheory.ObjectProperty.triangEnvelope_singleton_le_of_sums_of_extensions_of_summands`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/TriangulatedEnvelopeInduction.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Triangulated/TriangulatedEnvelopeInduction.lean#L57).
 
 > Let `E` be an object of a triangulated category and let `T` be a property of objects which
 > is inherited by finite direct sums, satisfies the two-out-of-three property for distinguished
@@ -186,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.36, Tag 09SI](https://stacks.math.columbia.edu/tag/09SI)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

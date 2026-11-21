@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.34 Functoriality of small étale topos
 
-Section 59.34 of the Stacks Project, [Tag 04I0](https://stacks.math.columbia.edu/tag/04I0). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.34 of the Stacks Project, [Tag 04I0](https://stacks.math.columbia.edu/tag/04I0). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04I1, an equation
 
 [Tag 04I1](https://stacks.math.columbia.edu/tag/04I1) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean#L63).
+**`Stacks.EtaleCohomology.smallEtaleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean#L63).
 
 > Base change along `f : X ⟶ Y`, as a functor from the small étale site of `Y` to that of
 > `X`: an étale scheme `W` over `Y` is sent to the fibre product `W ×_Y X`, which is étale over
@@ -26,7 +26,7 @@ Section 59.34 of the Stacks Project, [Tag 04I0](https://stacks.math.columbia.edu
 public def smallEtaleBaseChange {X Y : Scheme.{u}} (f : X ⟶ Y) : Y.Etale ⥤ X.Etale
 ```
 
-**`Stacks.EtaleCohomology.smallEtaleBaseChangeObjIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean#L82). The attribute's comment: “object formula”.
+**`Stacks.EtaleCohomology.smallEtaleBaseChangeObjIso_hom_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GlobalSectionsClosed/InverseImage.lean#L82). The attribute's comment: “object formula”.
 
 > The object formula `V/Y ↦ X ×_Y V/X` for the base-change functor `u : Y_étale → X_étale`:
 > under `smallEtaleBaseChangeObjIso`, the structure morphism of the base change of `V` to `X` is
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.34, Tag 04I0](https://stacks.math.columbia.edu/tag/04I0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

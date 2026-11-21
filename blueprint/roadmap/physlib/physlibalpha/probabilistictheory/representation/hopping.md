@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.UnitaryRep.hopping, ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix, ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix_apply, ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_blochMatrix, ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_hopping_subset, ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize, ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize_apply, ProbabilisticTheory.QuantumMechanics.UnitaryRep.conjTranspose_symmetrize
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.hopping, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix_apply, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_blochMatrix, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_hopping_subset, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize_apply, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.conjTranspose_symmetrize
 statement: formalized
 proof: formalized
 ---
 
 # Hopping operators and their Bloch matrices
 
-The module `PhyslibAlpha.ProbabilisticTheory.Representation.Hopping`, [PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean): 9 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.Representation.Hopping`, [PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean): 9 declarations, 7 with a docstring.
 
 > The finite-range translation-invariant operators are the operators whose symbol is a trigonometric
 > polynomial.
@@ -38,7 +38,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Hopping`, [PhyslibAl
 
 ## A. The hopping operator and its Bloch matrix
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.hopping`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L74).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.hopping`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L74).
 
 > A translation-invariant hopping operator `∑_r π(r) ι(A_r)` with finitely many matrices `A_r`,
 > the amplitude of hopping by the lattice vector `r` between orbitals.
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.Representation.Hopping`, [PhyslibAl
 def hopping (A : G →₀ Matrix (Fin N) (Fin N) ℂ) : H →L[ℂ] H
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L79).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix`**, a def, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L79).
 
 > The Bloch matrix `b(χ) = ∑_r χ(r) A_r` of a hopping operator, a continuous matrix-valued
 > function on the Brillouin zone.
@@ -57,7 +57,7 @@ def blochMatrix (A : G →₀ Matrix (Fin N) (Fin N) ℂ) :
     C(PontryaginDual (Multiplicative G), Matrix (Fin N) (Fin N) ℂ)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L90).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochMatrix_apply`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L90).
 
 ```lean
 lemma blochMatrix_apply (A : G →₀ Matrix (Fin N) (Fin N) ℂ)
@@ -65,7 +65,7 @@ lemma blochMatrix_apply (A : G →₀ Matrix (Fin N) (Fin N) ℂ)
     blochMatrix A χ = A.sum fun r M => ((χ (Multiplicative.ofAdd r) : Circle) : ℂ) • M
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_blochMatrix`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L97).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.blochHom_blochMatrix`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L97).
 
 > **The hopping operator is the integral of its Bloch matrix.**
 
@@ -76,7 +76,7 @@ lemma blochHom_blochMatrix (A : G →₀ Matrix (Fin N) (Fin N) ℂ) :
 
 ## B. The spectrum
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_hopping_subset`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L141).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.spectrum_hopping_subset`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L141).
 
 > The spectrum of a finite-range translation-invariant operator is contained in the union of the
 > spectra of its Bloch matrices.
@@ -89,7 +89,7 @@ lemma spectrum_hopping_subset (A : G →₀ Matrix (Fin N) (Fin N) ℂ) :
 
 ## C. Hermitian hopping
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L156).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize`**, a def, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L156).
 
 > The Hermitian completion of a family of hopping matrices: the amplitude for hopping by `r` is
 > `A r` plus the adjoint of the amplitude for hopping back by `-r`.
@@ -98,14 +98,14 @@ lemma spectrum_hopping_subset (A : G →₀ Matrix (Fin N) (Fin N) ℂ) :
 def symmetrize (A : G →₀ Matrix (Fin N) (Fin N) ℂ) : G →₀ Matrix (Fin N) (Fin N) ℂ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L161).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.symmetrize_apply`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L161).
 
 ```lean
 lemma symmetrize_apply (A : G →₀ Matrix (Fin N) (Fin N) ℂ) (r : G) :
     symmetrize A r = A r + (A (-r))ᴴ
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.conjTranspose_symmetrize`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.conjTranspose_symmetrize`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L168).
 
 > A symmetrized family of hopping matrices satisfies `(A r)ᴴ = A (-r)`.
 
@@ -114,7 +114,7 @@ lemma conjTranspose_symmetrize (A : G →₀ Matrix (Fin N) (Fin N) ℂ) (r : G)
     (symmetrize A r)ᴴ = symmetrize A (-r)
 ```
 
-**`ProbabilisticTheory.QuantumMechanics.UnitaryRep.isHermitian_blochMatrix`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L178).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.UnitaryRep.isHermitian_blochMatrix`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean#L178).
 
 > **Hermitian hopping gives Hermitian Bloch matrices.** If `(A r)ᴴ = A (-r)` for every `r`, then
 > the Bloch matrix `∑_r χ(r) A_r` is Hermitian at every crystal momentum `χ`.
@@ -131,4 +131,4 @@ lemma isHermitian_blochMatrix (A : G →₀ Matrix (Fin N) (Fin N) ℂ)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean)
+- [PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean)

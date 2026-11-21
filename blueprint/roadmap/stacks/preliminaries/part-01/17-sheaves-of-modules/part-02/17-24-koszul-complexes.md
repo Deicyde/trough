@@ -8,13 +8,13 @@ proof: formalized
 
 # 17.24 Koszul complexes
 
-Section 17.24 of the Stacks Project, [Tag 062J](https://stacks.math.columbia.edu/tag/062J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 17.24 of the Stacks Project, [Tag 062J](https://stacks.math.columbia.edu/tag/062J). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 062K, a definition
 
 [Tag 062K](https://stacks.math.columbia.edu/tag/062K) in the Stacks Project.
 
-**`SheafOfModules.koszulDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/DifferentialGradedAlgebra.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/DifferentialGradedAlgebra.lean#L193). References: SGA 3 III (4.6.1), “Koszul complex”.
+**`SheafOfModules.koszulDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/DifferentialGradedAlgebra.lean, line 193](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/DifferentialGradedAlgebra.lean#L193). References: SGA 3 III (4.6.1), “Koszul complex”.
 
 > **The Koszul complex `K_•(φ)` of an `O`-module map `φ : F → O`, as a sheaf of differential
 > graded algebras.** This is Stacks tag 062K. Its underlying graded algebra is the exterior algebra
@@ -43,7 +43,7 @@ noncomputable def koszulDifferentialGradedAlgebra :
 
 [Tag 062L](https://stacks.math.columbia.edu/tag/062L) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.SeqKoszul.koszulDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/SequenceDifferentialGradedAlgebra.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/SequenceDifferentialGradedAlgebra.lean#L99). The attribute's comment: “the Koszul complex of 062K at `(f₁, …, f_r) : O_X^{⊕ r} → O_X`, as a sheaf of differential graded algebras; `sheafComplex` is its chain complex of sectionwise exterior powers”.
+**`Stacks.AlgebraicGeometry.SeqKoszul.koszulDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/SequenceDifferentialGradedAlgebra.lean, line 99](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Koszul/Sheaf/SequenceDifferentialGradedAlgebra.lean#L99). The attribute's comment: “the Koszul complex of 062K at `(f₁, …, f_r) : O_X^{⊕ r} → O_X`, as a sheaf of differential graded algebras; `sheafComplex` is its chain complex of sectionwise exterior powers”.
 
 > **The Koszul complex `K_•(O_X, f₁, …, f_r)` on a family of global sections of a ringed
 > space**: the Koszul complex of Stacks tag 062K associated to the map
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 17.24, Tag 062J](https://stacks.math.columbia.edu/tag/062J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

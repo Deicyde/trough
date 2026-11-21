@@ -8,29 +8,29 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LiebAndoTrace
 
-The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LiebAndoTrace`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean): 14 declarations (2 instances with no name), 6 with a docstring; 21 private, not shown.
+The module `QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LiebAndoTrace`, [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean): 14 declarations (2 instances with no name), 6 with a docstring; 21 private, not shown.
 
-**An instance with no name**, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L30).
+**An instance with no name**, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L30).
 
 ```lean
 noncomputable local instance : NonnegSpectrumClass ℝ ((L ℋ)ᵐᵒᵖ)
 ```
 
-**An instance with no name**, [line 33](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L33).
+**An instance with no name**, [line 33](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L33).
 
 ```lean
 noncomputable local instance :
     IsometricContinuousFunctionalCalculus ℂ ((L ℋ)ᵐᵒᵖ) IsStarNormal
 ```
 
-**`LiebAndoTrace.instCFCRealSelfAdjointMop`**, an instance, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L38).
+**`LiebAndoTrace.instCFCRealSelfAdjointMop`**, an instance, [line 38](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L38).
 
 ```lean
 noncomputable instance instCFCRealSelfAdjointMop :
     ContinuousFunctionalCalculus ℝ ((L ℋ)ᵐᵒᵖ) IsSelfAdjoint
 ```
 
-**`LiebAndoTrace.traceRe`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L42).
+**`LiebAndoTrace.traceRe`**, a def, [line 42](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L42).
 
 > The real part of the finite-dimensional trace on bounded operators.
 
@@ -38,7 +38,7 @@ noncomputable instance instCFCRealSelfAdjointMop :
 noncomputable def traceRe (T : L ℋ) : ℝ
 ```
 
-**`LiebAndoTrace.liebTraceMap`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L46).
+**`LiebAndoTrace.liebTraceMap`**, a def, [line 46](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L46).
 
 > Trace functional appearing in Lieb's concavity theorem.
 
@@ -46,7 +46,7 @@ noncomputable def traceRe (T : L ℋ) : ℝ
 noncomputable def liebTraceMap (s : ℝ) (K : L ℋ) (A B : L ℋ) : ℝ
 ```
 
-**`LiebAndoTrace.liebExtensionTraceMap`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L50).
+**`LiebAndoTrace.liebExtensionTraceMap`**, a def, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L50).
 
 > Trace functional appearing in Lieb's extension theorem.
 
@@ -54,7 +54,7 @@ noncomputable def liebTraceMap (s : ℝ) (K : L ℋ) (A B : L ℋ) : ℝ
 noncomputable def liebExtensionTraceMap (q p : ℝ) (K : L ℋ) (A B : L ℋ) : ℝ
 ```
 
-**`LiebAndoTrace.liebCorollaryTraceMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L54).
+**`LiebAndoTrace.liebCorollaryTraceMap`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L54).
 
 > Trace functional appearing in Corollary 1.3.
 
@@ -62,7 +62,7 @@ noncomputable def liebExtensionTraceMap (q p : ℝ) (K : L ℋ) (A B : L ℋ) : 
 noncomputable def liebCorollaryTraceMap (q r : ℝ) (K : L ℋ) (A B : L ℋ) : ℝ
 ```
 
-**`LiebAndoTrace.andoTraceMap`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L58).
+**`LiebAndoTrace.andoTraceMap`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L58).
 
 > Trace functional appearing in Ando's convexity theorem.
 
@@ -70,7 +70,7 @@ noncomputable def liebCorollaryTraceMap (q r : ℝ) (K : L ℋ) (A B : L ℋ) : 
 noncomputable def andoTraceMap (q r : ℝ) (K : L ℋ) (A B : L ℋ) : ℝ
 ```
 
-**`LiebAndoTrace.pdSet_convexCombo`**, a lemma, [line 756](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L756).
+**`LiebAndoTrace.pdSet_convexCombo`**, a lemma, [line 756](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L756).
 
 > Convex combinations preserve `pdSet` (strict positivity).
 
@@ -81,7 +81,7 @@ lemma pdSet_convexCombo {A B : L ℋ} {t : ℝ}
     ((1 - t) • A + t • B) ∈ pdSet (ℋ := ℋ)
 ```
 
-**`LiebAndoTrace.liebTrace_jointlyConcaveOn_pdSet`**, a lemma, [line 1050](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1050).
+**`LiebAndoTrace.liebTrace_jointlyConcaveOn_pdSet`**, a lemma, [line 1050](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1050).
 
 ```lean
 lemma liebTrace_jointlyConcaveOn_pdSet
@@ -90,7 +90,7 @@ lemma liebTrace_jointlyConcaveOn_pdSet
       (liebTraceMap (ℋ := ℋ) s K)
 ```
 
-**`LiebAndoTrace.liebTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1115).
+**`LiebAndoTrace.liebTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1115).
 
 ```lean
 lemma liebTrace_jointlyConvexOn_pdSet
@@ -99,7 +99,7 @@ lemma liebTrace_jointlyConvexOn_pdSet
       (liebTraceMap (ℋ := ℋ) s K)
 ```
 
-**`LiebAndoTrace.liebExtensionTrace_jointlyConcaveOn_pdSet`**, a lemma, [line 1181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1181).
+**`LiebAndoTrace.liebExtensionTrace_jointlyConcaveOn_pdSet`**, a lemma, [line 1181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1181).
 
 ```lean
 lemma liebExtensionTrace_jointlyConcaveOn_pdSet
@@ -108,7 +108,7 @@ lemma liebExtensionTrace_jointlyConcaveOn_pdSet
       (liebExtensionTraceMap (ℋ := ℋ) q p K)
 ```
 
-**`LiebAndoTrace.andoTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1298).
+**`LiebAndoTrace.andoTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1298).
 
 ```lean
 lemma andoTrace_jointlyConvexOn_pdSet
@@ -118,7 +118,7 @@ lemma andoTrace_jointlyConvexOn_pdSet
       (andoTraceMap (ℋ := ℋ) q r K)
 ```
 
-**`LiebAndoTrace.liebCorollaryTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1439](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1439).
+**`LiebAndoTrace.liebCorollaryTrace_jointlyConvexOn_pdSet`**, a lemma, [line 1439](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean#L1439).
 
 ```lean
 lemma liebCorollaryTrace_jointlyConvexOn_pdSet
@@ -137,4 +137,4 @@ lemma liebCorollaryTrace_jointlyConvexOn_pdSet
 
 ## Sources
 
-- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean)
+- [QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuity of positive-definite functions
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean): 7 declarations, 7 with a docstring; 5 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Continuity`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean): 7 declarations, 7 with a docstring; 5 private, not shown.
 
 > This file records the standard continuity upgrade for positive-definite functions on a seminormed
 > additive group with the negation involution.
@@ -51,7 +51,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Continuit
 
 ## A. Development
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_add_star_eq_zero`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L161).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_add_star_eq_zero`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L161).
 
 > The local monoid-level real-part form of the standard positive-definite continuity estimate.
 
@@ -62,7 +62,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_add_star_eq_zero
       ≤ 2 * (F 0).re * ((F 0).re - (F (x + star y)).re)
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_add_star_eq_zero`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L197).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_add_star_eq_zero`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L197).
 
 > The local monoid-level norm-valued form of the standard positive-definite continuity
 > estimate.
@@ -73,7 +73,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_add_star_eq_zero
     ‖F x - F y‖ ^ 2 ≤ 2 * (F 0).re * ‖F (x + star y) - F 0‖
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_star_eq_neg`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L217).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_star_eq_neg`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L217).
 
 > The local real-part form of the standard positive-definite continuity estimate.
 
@@ -84,7 +84,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_star_eq_neg (hF : IsPosit
       ≤ 2 * (F 0).re * ((F 0).re - (F (x - y)).re)
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_forall_star_eq_neg`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L228).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_forall_star_eq_neg`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L228).
 
 > The real-part form of the standard positive-definite continuity estimate under a globally
 > negating involution.
@@ -96,7 +96,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_re_sub_of_forall_star_eq_neg
       ≤ 2 * (F 0).re * ((F 0).re - (F (x - y)).re)
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_star_eq_neg`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L235).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_star_eq_neg`**, a lemma, [line 235](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L235).
 
 > The local norm-valued form of the standard positive-definite continuity estimate.
 
@@ -106,7 +106,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_star_eq_neg (hF : IsPos
     ‖F x - F y‖ ^ 2 ≤ 2 * (F 0).re * ‖F (x - y) - F 0‖
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_forall_star_eq_neg`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L245).
+**`TauCeti.IsPositiveDefinite.norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_forall_star_eq_neg`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L245).
 
 > The norm-valued form of the standard positive-definite continuity estimate under a globally
 > negating involution.
@@ -117,7 +117,7 @@ lemma norm_sub_sq_le_two_mul_map_zero_re_mul_norm_sub_of_forall_star_eq_neg
     ‖F x - F y‖ ^ 2 ≤ 2 * (F 0).re * ‖F (x - y) - F 0‖
 ```
 
-**`TauCeti.IsPositiveDefinite.uniformContinuous_of_continuousAt_zero_of_forall_star_eq_neg`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L258).
+**`TauCeti.IsPositiveDefinite.uniformContinuous_of_continuousAt_zero_of_forall_star_eq_neg`**, a lemma, [line 258](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean#L258).
 
 > A positive-definite function on a seminormed additive group with the negation involution is
 > uniformly continuous as soon as it is continuous at the origin.
@@ -134,4 +134,4 @@ lemma uniformContinuous_of_continuousAt_zero_of_forall_star_eq_neg (hF : IsPosit
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Continuity.lean)

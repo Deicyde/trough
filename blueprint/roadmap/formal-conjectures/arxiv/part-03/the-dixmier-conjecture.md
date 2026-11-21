@@ -51,7 +51,7 @@ statement: formalized
 > `Fin n ⊕ Fin n` as in `FormalConjecturesForMathlib/Algebra/WeylAlgebra.lean`; the Poisson
 > side of the chain is stated in `PoissonConjecture.lean` in this directory.
 
-*Quoted from [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 2 open and 5 solved. It also has 1 test statement, counted here but not shown.
 
@@ -68,7 +68,7 @@ Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html
 theorem dixmier_conjecture : ¬ ∀ n, DixmierConjectureFor K n
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L90).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L90).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.dimension_one`
 
@@ -81,7 +81,7 @@ Open: stated without proof.
 theorem dixmier_conjecture.variants.dimension_one : DixmierConjectureFor K 1
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L98).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L98).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.dimension_two`
 
@@ -95,7 +95,7 @@ Open: stated without proof.
 theorem dixmier_conjecture.variants.dimension_two : DixmierConjectureFor K 2
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L107).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L107).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.dimension_three`
 
@@ -108,7 +108,7 @@ Solved: stated here; a Lean proof is at [https://palomar-registry.org/entry.html
 theorem dixmier_conjecture.variants.dimension_three : ¬ DixmierConjectureFor K 3
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L116).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L116).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.dimension_ge_three`
 
@@ -123,7 +123,7 @@ theorem dixmier_conjecture.variants.dimension_ge_three (n : ℕ) (hn : 3 ≤ n) 
     ¬ DixmierConjectureFor K n
 ```
 
-Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L126).
+Category `research solved`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L126).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.jacobian_implication`
 
@@ -137,7 +137,7 @@ theorem dixmier_conjecture.variants.jacobian_implication (n : ℕ)
     (h : DixmierConjectureFor K n) : JacobianConjectureProp K (Fin n)
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L136).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L136).
 
 ## `Arxiv.«math.0608009».dixmier_conjecture.variants.poisson_implication`
 
@@ -155,7 +155,7 @@ theorem dixmier_conjecture.variants.poisson_implication (n : ℕ)
     (L : Type) [Field L] [CharZero L] : DixmierConjectureFor L n
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 148](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L148).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [17 Nonassociative rings and algebras](../../by-subject/part-01/17-nonassociative-rings-and-algebras/README.md). Declared in [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean, line 148](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean#L148).
 
 ## Depends on
 
@@ -163,5 +163,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean)
+- [FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/math.0608009/DixmierConjecture.lean)
 - [Sur les algèbres de Weyl](http://www.numdam.org/item/BSMF_1968__96__209_0/)

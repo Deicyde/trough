@@ -8,7 +8,7 @@ proof: formalized
 
 # The jet algebra of the Standard Model is a Standard Model (AlgebraRealization)
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.AlgebraRealization`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean): 10 declarations, 10 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.AlgebraRealization`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean): 10 declarations, 10 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -82,7 +82,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.AlgebraRealization`,
 
 ### A.1. The field algebra
 
-**`StandardModel.JetAlgebra.algebraRealization_fieldAlgebra_eq_top`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L117).
+**`StandardModel.JetAlgebra.algebraRealization_fieldAlgebra_eq_top`**, a lemma, [line 117](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L117).
 
 > The fields of the Standard Model generate its jet algebra: the field algebra of the
 > instance is the whole of `JetAlgebra`.
@@ -93,7 +93,7 @@ lemma algebraRealization_fieldAlgebra_eq_top : AlgebraRealization.id.fieldAlgebr
 
 ### A.2. The collapse of the graded pieces
 
-**`StandardModel.AlgebraRealization.massWeightSubmodule_eq_ker`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L141).
+**`StandardModel.AlgebraRealization.massWeightSubmodule_eq_ker`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L141).
 
 > When the field algebra is everything the graded piece of mass weight `n` is the
 > weight-`n` eigenspace of `massWeightPoly` on the whole algebra: the intersection with the
@@ -106,7 +106,7 @@ lemma massWeightSubmodule_eq_ker (htop : h.fieldAlgebra = ⊤) (n : ℕ) :
         - (Polynomial.monomial n : B →ₗ[B] Polynomial B).restrictScalars ℂ)
 ```
 
-**`StandardModel.AlgebraRealization.massWeightSubmoduleLE_eq_iSup_ker`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L151).
+**`StandardModel.AlgebraRealization.massWeightSubmoduleLE_eq_iSup_ker`**, a lemma, [line 151](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L151).
 
 > When the field algebra is everything the filtration by mass weight at most `w` is the
 > join of the eigenspaces of `massWeightPoly` of weight `0` through `w`, taken over the
@@ -121,7 +121,7 @@ lemma massWeightSubmoduleLE_eq_iSup_ker (htop : h.fieldAlgebra = ⊤) (w : ℕ) 
 
 ### A.3. The mass-weight filtration of the jet algebra
 
-**`StandardModel.JetAlgebra.massWeightSubmodule`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L173).
+**`StandardModel.JetAlgebra.massWeightSubmodule`**, a def, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L173).
 
 > The weight-`n` piece of the jet algebra, defined on the algebra itself: the eigenspace
 > on which `massWeightPoly` is the monomial `X ^ n`. Nothing about `AlgebraRealization` enters
@@ -132,7 +132,7 @@ lemma massWeightSubmoduleLE_eq_iSup_ker (htop : h.fieldAlgebra = ⊤) (w : ℕ) 
 noncomputable def massWeightSubmodule (n : ℕ) : Submodule ℂ JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.mem_massWeightSubmodule`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L188).
+**`StandardModel.JetAlgebra.mem_massWeightSubmodule`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L188).
 
 > Membership of the weight-`n` piece is the eigenvalue equation.
 
@@ -141,7 +141,7 @@ lemma mem_massWeightSubmodule {n : ℕ} {x : JetAlgebra} :
     x ∈ massWeightSubmodule n ↔ massWeightPoly x = Polynomial.monomial n x
 ```
 
-**`StandardModel.JetAlgebra.massWeightSubmoduleLE`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L194).
+**`StandardModel.JetAlgebra.massWeightSubmoduleLE`**, a def, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L194).
 
 > The mass-weight filtration of the jet algebra, defined on the algebra itself: the join
 > of the weight pieces of weight at most `w`. An element lies in it exactly when it is a
@@ -151,7 +151,7 @@ lemma mem_massWeightSubmodule {n : ℕ} {x : JetAlgebra} :
 noncomputable def massWeightSubmoduleLE (w : ℕ) : Submodule ℂ JetAlgebra
 ```
 
-**`StandardModel.JetAlgebra.algebraRealization_massWeightSubmodule`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L199).
+**`StandardModel.JetAlgebra.algebraRealization_massWeightSubmodule`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L199).
 
 > The graded piece defined on the jet algebra is the graded piece of the instance: the
 > two differ only by the intersection with the field algebra, which is everything.
@@ -161,7 +161,7 @@ lemma algebraRealization_massWeightSubmodule (n : ℕ) :
     AlgebraRealization.id.massWeightSubmodule n = massWeightSubmodule n
 ```
 
-**`StandardModel.JetAlgebra.algebraRealization_massWeightSubmoduleLE`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L212).
+**`StandardModel.JetAlgebra.algebraRealization_massWeightSubmoduleLE`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L212).
 
 > The filtration defined on the jet algebra is the filtration of the instance.
 
@@ -200,7 +200,7 @@ lemma algebraRealization_massWeightSubmoduleLE (w : ℕ) :
 > subalgebra of `JetAlgebra`, and a set-aside `S` still has to be written in the covariant
 > towers for the classification to say anything about it.
 
-**`StandardModel.JetAlgebra.mem_massWeightSubmoduleLE_eight_and_invariant_iff_lagrangian`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L265).
+**`StandardModel.JetAlgebra.mem_massWeightSubmoduleLE_eight_and_invariant_iff_lagrangian`**, a lemma, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L265).
 
 > The invariant content of the Standard Model up to mass dimension four, on the jet
 > algebra of the Standard Model itself, with nothing set aside. An element of mass weight
@@ -230,7 +230,7 @@ lemma mem_massWeightSubmoduleLE_eight_and_invariant_iff_lagrangian (x : JetAlgeb
               ⊔ AlgebraRealization.id.toCovAlgebraRealization.yukawaSpan)))
 ```
 
-**`StandardModel.JetAlgebra.mem_massWeightSubmoduleLE_eight_sup_and_invariant_iff_lagrangian`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L293).
+**`StandardModel.JetAlgebra.mem_massWeightSubmoduleLE_eight_sup_and_invariant_iff_lagrangian`**, a lemma, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean#L293).
 
 > The same classification as
 > `mem_massWeightSubmoduleLE_eight_and_invariant_iff_lagrangian`, with a submodule `S` set
@@ -271,4 +271,4 @@ lemma mem_massWeightSubmoduleLE_eight_sup_and_invariant_iff_lagrangian
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean)

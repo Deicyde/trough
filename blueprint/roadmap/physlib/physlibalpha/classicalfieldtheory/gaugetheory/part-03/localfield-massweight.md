@@ -8,7 +8,7 @@ proof: formalized
 
 # The mass-weight filtration and the invariants of a local field algebra
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.MassWeight`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean): 26 declarations, 16 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.MassWeight`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean): 26 declarations, 16 with a docstring.
 
 ## i. Overview
 
@@ -43,7 +43,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.MassWeight`
 
 ## A. The mass-weight scaling
 
-**`GaugeFieldData.massWeightAssignment`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L75).
+**`GaugeFieldData.massWeightAssignment`**, a def, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L75).
 
 > The assignment scaling each generator by `c` to its mass weight: a component function
 > `∂_s φ_α` of a species of mass weight `w` by `c ^ (w + 2 |s|)`, a connection generator
@@ -54,7 +54,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalField.MassWeight`
 noncomputable def massWeightAssignment (c : ℝ) : T.Assignment T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.massWeightScale`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L89).
+**`GaugeFieldData.massWeightScale`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L89).
 
 > **The mass-weight scaling of the local field algebra**: the algebra endomorphism
 > scaling each generator by `c` to its mass weight.
@@ -63,7 +63,7 @@ noncomputable def massWeightAssignment (c : ℝ) : T.Assignment T.LocalFieldAlge
 noncomputable def massWeightScale (c : ℝ) : T.LocalFieldAlgebra →ₐ[ℂ] T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.massWeightScale_ιFermion`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L93).
+**`GaugeFieldData.massWeightScale_ιFermion`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L93).
 
 ```lean
 lemma massWeightScale_ιFermion (c : ℝ) (i : T.FermionSpecies)
@@ -72,7 +72,7 @@ lemma massWeightScale_ιFermion (c : ℝ) (i : T.FermionSpecies)
       = T.ιFermion i (JetComponentSpace.massWeightScale (T.fermion i).massWeight (c : ℂ) x)
 ```
 
-**`GaugeFieldData.massWeightScale_ιBoson`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L100).
+**`GaugeFieldData.massWeightScale_ιBoson`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L100).
 
 ```lean
 lemma massWeightScale_ιBoson (c : ℝ) (j : T.BosonSpecies)
@@ -81,7 +81,7 @@ lemma massWeightScale_ιBoson (c : ℝ) (j : T.BosonSpecies)
       = T.ιBoson j (JetComponentSpace.massWeightScale (T.boson j).massWeight (c : ℂ) y)
 ```
 
-**`GaugeFieldData.massWeightScale_ιConnection`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L107).
+**`GaugeFieldData.massWeightScale_ιConnection`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L107).
 
 ```lean
 lemma massWeightScale_ιConnection (c : ℝ) (v : GaugeBoson.JetComponentSpace 𝔤) :
@@ -91,7 +91,7 @@ lemma massWeightScale_ιConnection (c : ℝ) (v : GaugeBoson.JetComponentSpace �
 
 ## B. The graded pieces and the filtration
 
-**`GaugeFieldData.massWeightSubmodule`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L120).
+**`GaugeFieldData.massWeightSubmodule`**, a def, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L120).
 
 > **The weight-`n` piece** of the local field algebra: the elements scaled by `c ^ n`
 > under every mass-weight scaling: the equaliser of the scalings and the scalars.
@@ -100,14 +100,14 @@ lemma massWeightScale_ιConnection (c : ℝ) (v : GaugeBoson.JetComponentSpace �
 noncomputable def massWeightSubmodule (n : ℕ) : Submodule ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.mem_massWeightSubmodule_iff`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L124).
+**`GaugeFieldData.mem_massWeightSubmodule_iff`**, a lemma, [line 124](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L124).
 
 ```lean
 lemma mem_massWeightSubmodule_iff {n : ℕ} {x : T.LocalFieldAlgebra} :
     x ∈ T.massWeightSubmodule n ↔ ∀ c : ℝ, T.massWeightScale c x = ((c : ℂ) ^ n) • x
 ```
 
-**`GaugeFieldData.massWeightSubmoduleLE`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L130).
+**`GaugeFieldData.massWeightSubmoduleLE`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L130).
 
 > **The mass-weight filtration**: the join of the pieces of weight at most `w`.
 
@@ -115,7 +115,7 @@ lemma mem_massWeightSubmodule_iff {n : ℕ} {x : T.LocalFieldAlgebra} :
 noncomputable def massWeightSubmoduleLE (w : ℕ) : Submodule ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.massWeightSubmodule_le_massWeightSubmoduleLE`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L133).
+**`GaugeFieldData.massWeightSubmodule_le_massWeightSubmoduleLE`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L133).
 
 ```lean
 lemma massWeightSubmodule_le_massWeightSubmoduleLE {k w : ℕ} (h : k ≤ w) :
@@ -124,7 +124,7 @@ lemma massWeightSubmodule_le_massWeightSubmoduleLE {k w : ℕ} (h : k ≤ w) :
 
 ## C. The invariants
 
-**`GaugeFieldData.gaugeInvariants`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L144).
+**`GaugeFieldData.gaugeInvariants`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L144).
 
 > **The gauge invariants**: the elements fixed by every jet of gauge transformations.
 
@@ -132,14 +132,14 @@ lemma massWeightSubmodule_le_massWeightSubmoduleLE {k w : ℕ} (h : k ≤ w) :
 noncomputable def gaugeInvariants : Submodule ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.mem_gaugeInvariants_iff`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L148).
+**`GaugeFieldData.mem_gaugeInvariants_iff`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L148).
 
 ```lean
 lemma mem_gaugeInvariants_iff {x : T.LocalFieldAlgebra} :
     x ∈ T.gaugeInvariants ↔ ∀ U : GJ, T.repJet U x = x
 ```
 
-**`GaugeFieldData.lorentzInvariants`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L153).
+**`GaugeFieldData.lorentzInvariants`**, a def, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L153).
 
 > **The Lorentz invariants**: the elements fixed by every Lorentz transformation.
 
@@ -147,14 +147,14 @@ lemma mem_gaugeInvariants_iff {x : T.LocalFieldAlgebra} :
 noncomputable def lorentzInvariants : Submodule ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.mem_lorentzInvariants_iff`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L157).
+**`GaugeFieldData.mem_lorentzInvariants_iff`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L157).
 
 ```lean
 lemma mem_lorentzInvariants_iff {x : T.LocalFieldAlgebra} :
     x ∈ T.lorentzInvariants ↔ ∀ Λ : SL(2,ℂ), T.repLorentzGroup Λ x = x
 ```
 
-**`GaugeFieldData.invariantsLE`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L163).
+**`GaugeFieldData.invariantsLE`**, a def, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L163).
 
 > **The invariants of mass weight at most `w`**: the gauge and Lorentz invariants in the
 > filtration. A Lagrangian of mass dimension at most `w / 2` is an element of it.
@@ -163,7 +163,7 @@ lemma mem_lorentzInvariants_iff {x : T.LocalFieldAlgebra} :
 noncomputable def invariantsLE (w : ℕ) : Submodule ℂ T.LocalFieldAlgebra
 ```
 
-**`GaugeFieldData.mem_invariantsLE_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L166).
+**`GaugeFieldData.mem_invariantsLE_iff`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L166).
 
 ```lean
 lemma mem_invariantsLE_iff {w : ℕ} {x : T.LocalFieldAlgebra} :
@@ -171,7 +171,7 @@ lemma mem_invariantsLE_iff {w : ℕ} {x : T.LocalFieldAlgebra} :
       ∧ (∀ U : GJ, T.repJet U x = x) ∧ ∀ Λ : SL(2,ℂ), T.repLorentzGroup Λ x = x
 ```
 
-**`GaugeFieldData.invariantsLE_eq_iff`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L173).
+**`GaugeFieldData.invariantsLE_eq_iff`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L173).
 
 > A description of the invariants of mass weight at most `w`, element by element: an
 > element of the filtration fixed by both groups is exactly an element of `Q`.
@@ -183,7 +183,7 @@ lemma invariantsLE_eq_iff (w : ℕ) (Q : Submodule ℂ T.LocalFieldAlgebra) :
         ∧ ∀ Λ : SL(2,ℂ), T.repLorentzGroup Λ x = x) ↔ x ∈ Q
 ```
 
-**`GaugeFieldData.invariantsLE_inf_eq_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L181).
+**`GaugeFieldData.invariantsLE_inf_eq_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L181).
 
 > A description of the invariants of mass weight at most `w` lying in a submodule `A`,
 > element by element.
@@ -197,7 +197,7 @@ lemma invariantsLE_inf_eq_iff (w : ℕ) (A Q : Submodule ℂ T.LocalFieldAlgebra
 
 ## D. The contraction of a boson with its conjugate
 
-**`GaugeFieldData.bosonNormSq`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L197).
+**`GaugeFieldData.bosonNormSq`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L197).
 
 > **The contraction `φ† φ`** of a bosonic species with its conjugate, through a basis of
 > its value space: the sum over the basis of the conjugate coordinate times the coordinate.
@@ -215,7 +215,7 @@ noncomputable def bosonNormSq (j : T.BosonSpecies) {ι : Type} [Fintype ι] [Dec
 > invariants of one datum onto those of the other. This is what relates two presentations
 > of the same field content, such as a model's table and a hand-built datum.
 
-**`GaugeFieldData.mem_massWeightSubmodule_apply_iff`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L218).
+**`GaugeFieldData.mem_massWeightSubmodule_apply_iff`**, a lemma, [line 218](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L218).
 
 > The mass-weight scaling is respected: the weight-`n` piece is carried onto the
 > weight-`n` piece.
@@ -227,7 +227,7 @@ lemma mem_massWeightSubmodule_apply_iff
     e x ∈ T'.massWeightSubmodule n ↔ x ∈ T.massWeightSubmodule n
 ```
 
-**`GaugeFieldData.massWeightSubmodule_map`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L224).
+**`GaugeFieldData.massWeightSubmodule_map`**, a lemma, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L224).
 
 ```lean
 lemma massWeightSubmodule_map
@@ -236,7 +236,7 @@ lemma massWeightSubmodule_map
       = T'.massWeightSubmodule n
 ```
 
-**`GaugeFieldData.massWeightSubmoduleLE_map`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L233).
+**`GaugeFieldData.massWeightSubmoduleLE_map`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L233).
 
 ```lean
 lemma massWeightSubmoduleLE_map
@@ -245,7 +245,7 @@ lemma massWeightSubmoduleLE_map
       = T'.massWeightSubmoduleLE w
 ```
 
-**`GaugeFieldData.gaugeInvariants_map`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L240).
+**`GaugeFieldData.gaugeInvariants_map`**, a lemma, [line 240](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L240).
 
 > The gauge invariants are carried onto the gauge invariants.
 
@@ -255,7 +255,7 @@ lemma gaugeInvariants_map (hjet : ∀ (U : GJ) x, e (T.repJet U x) = T'.repJet U
       = T'.gaugeInvariants
 ```
 
-**`GaugeFieldData.lorentzInvariants_map`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L249).
+**`GaugeFieldData.lorentzInvariants_map`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L249).
 
 > The Lorentz invariants are carried onto the Lorentz invariants.
 
@@ -266,7 +266,7 @@ lemma lorentzInvariants_map
       = T'.lorentzInvariants
 ```
 
-**`GaugeFieldData.mem_massWeightSubmoduleLE_apply_iff`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L259).
+**`GaugeFieldData.mem_massWeightSubmoduleLE_apply_iff`**, a lemma, [line 259](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L259).
 
 > The filtration is respected, element by element.
 
@@ -277,7 +277,7 @@ lemma mem_massWeightSubmoduleLE_apply_iff
     e x ∈ T'.massWeightSubmoduleLE w ↔ x ∈ T.massWeightSubmoduleLE w
 ```
 
-**`GaugeFieldData.mem_invariantsLE_apply_iff`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L267).
+**`GaugeFieldData.mem_invariantsLE_apply_iff`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L267).
 
 > The invariants of mass weight at most `w` are respected, element by element.
 
@@ -289,7 +289,7 @@ lemma mem_invariantsLE_apply_iff (hjet : ∀ (U : GJ) x, e (T.repJet U x) = T'.r
     e x ∈ T'.invariantsLE w ↔ x ∈ T.invariantsLE w
 ```
 
-**`GaugeFieldData.invariantsLE_map`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L277).
+**`GaugeFieldData.invariantsLE_map`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean#L277).
 
 > **The invariants of mass weight at most `w` are carried onto the invariants of mass
 > weight at most `w`** by an isomorphism respecting the two actions and the scaling.
@@ -309,4 +309,4 @@ lemma invariantsLE_map (hjet : ∀ (U : GJ) x, e (T.repJet U x) = T'.repJet U (e
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.33 Étale localization of morphisms
 
-Section 76.33 of the Stacks Project, [Tag 082G](https://stacks.math.columbia.edu/tag/082G). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.33 of the Stacks Project, [Tag 082G](https://stacks.math.columbia.edu/tag/082G). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 082H, a lemma
 
 [Tag 082H](https://stacks.math.columbia.edu/tag/082H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etale_decomposition_isFinite_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePart.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePart.lean#L338).
+**`AlgebraicGeometry.Space.exists_etale_decomposition_isFinite_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePart.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePart.lean#L338).
 
 > **Stacks Project, Tag 082H.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`,
 > let `y` be a point of `|Y|` and let `x₁, …, x_n` be points of `|X|` mapping to `y`. Assume that
@@ -63,7 +63,7 @@ theorem exists_etale_decomposition_isFinite_of_isQuasiFiniteAt
 
 [Tag 0ADU](https://stacks.math.columbia.edu/tag/0ADU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etale_finite_clopen_part`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleQuasiFinitePart.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleQuasiFinitePart.lean#L383).
+**`AlgebraicGeometry.Space.exists_etale_finite_clopen_part`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleQuasiFinitePart.lean, line 383](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleQuasiFinitePart.lean#L383).
 
 > **Stacks 0ADU.** An étale neighbourhood of the image of `x` splits the pullback into two
 > open-and-closed parts, one of them finite over the neighbourhood and containing a point above
@@ -95,7 +95,7 @@ public theorem exists_etale_finite_clopen_part
         pointsMap B S hS V.toFunctor (V.ι ≫ pullback.fst g.hom f.hom) v = u
 ```
 
-**`AlgebraicGeometry.Space.exists_etale_decomposition_isFinite_point_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePoint.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePoint.lean#L202).
+**`AlgebraicGeometry.Space.exists_etale_decomposition_isFinite_point_of_isQuasiFiniteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePoint.lean, line 202](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleSplitQuasiFinitePoint.lean#L202).
 
 > **Stacks Project, Tag 0ADU.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`,
 > let `x` be a point of `|X|` and let `y` be its image in `|Y|`. Assume that `f` is locally of
@@ -141,4 +141,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.33, Tag 082G](https://stacks.math.columbia.edu/tag/082G)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

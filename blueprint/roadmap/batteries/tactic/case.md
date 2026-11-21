@@ -7,7 +7,7 @@ proof: formalized
 
 # Extensions to the `case` tactic
 
-`Batteries.Tactic.Case`, in [Batteries/Tactic/Case.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Case.lean), by Kyle Miller.
+`Batteries.Tactic.Case`, in [Batteries/Tactic/Case.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Case.lean), by Kyle Miller.
 
 > Adds a variant of `case` that looks for a goal with a particular type, rather than a goal
 > with a particular tag.
@@ -15,7 +15,7 @@ proof: formalized
 >
 > Also adds `case'` extensions.
 
-`Batteries.Tactic.findGoalOfPatt` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Case.lean#L122))
+`Batteries.Tactic.findGoalOfPatt` (definition, [line 122](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Case.lean#L122))
 
 > Find the first goal among those matching `tag` whose type unifies with `patt`.
 > The `renameI` array consists of names to use to rename inaccessibles.
@@ -29,7 +29,7 @@ def findGoalOfPatt (gs : List MVarId)
     TacticM (MVarId × List MVarId × List MVarId)
 ```
 
-`Batteries.Tactic.processCasePattBody` (definition, [line 159](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Case.lean#L159))
+`Batteries.Tactic.processCasePattBody` (definition, [line 159](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Case.lean#L159))
 
 > Given a `casePattBody`, either give a synthetic hole or a tactic sequence
 > (along with the syntax for the `=>`).
@@ -40,7 +40,7 @@ def processCasePattBody (stx : TSyntax ``casePattTac) :
     TacticM (Term ⊕ (Syntax × TSyntax ``Parser.Tactic.tacticSeq))
 ```
 
-`Batteries.Tactic.evalCase` (definition, [line 168](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Case.lean#L168))
+`Batteries.Tactic.evalCase` (definition, [line 168](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Case.lean#L168))
 
 > Implementation for `case` and `case'`.
 
@@ -59,5 +59,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/Case.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Case.lean)
+- [Batteries/Tactic/Case.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Case.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Tactic.Case.json)

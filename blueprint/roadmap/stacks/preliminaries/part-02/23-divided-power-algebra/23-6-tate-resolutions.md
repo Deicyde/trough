@@ -8,13 +8,13 @@ proof: formalized
 
 # 23.6 Tate resolutions
 
-Section 23.6 of the Stacks Project, [Tag 09PF](https://stacks.math.columbia.edu/tag/09PF). 12 tags here are carried by 61 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 23.6 of the Stacks Project, [Tag 09PF](https://stacks.math.columbia.edu/tag/09PF). 12 tags here are carried by 61 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09PG, a definition
 
 [Tag 09PG](https://stacks.math.columbia.edu/tag/09PG) in the Stacks Project.
 
-**`DividedPowers.TateResolution.DividedPowerStructure`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean#L148).
+**`DividedPowers.TateResolution.DividedPowerStructure`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean#L148).
 
 > A divided power structure on the positive even part of a strictly graded-commutative graded
 > algebra.
@@ -28,7 +28,7 @@ public structure DividedPowerStructure (𝒜 : ℕ → Submodule R A) [GradedAlg
 
 [Tag 09PH](https://stacks.math.columbia.edu/tag/09PH) in the Stacks Project.
 
-**`DividedPowers.TateResolution.ExteriorOddVariable.equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorDividedPowers.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorDividedPowers.lean#L303). The attribute's comment: “exterior algebra as an iterated odd variable extension”.
+**`DividedPowers.TateResolution.ExteriorOddVariable.equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorDividedPowers.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorDividedPowers.lean#L303). The attribute's comment: “exterior algebra as an iterated odd variable extension”.
 
 > The odd-variable extension of `⋀[R] M` is `⋀[R] (M × R)`.
 
@@ -37,7 +37,7 @@ public noncomputable def equiv :
     OddVariableExtension (exteriorGrade R M) 1 ≃ₐ[R] ExteriorAlgebra R (M × R)
 ```
 
-**`DividedPowers.TateResolution.isCompatibleWithDifferential_exteriorDividedPowerStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorKoszulCompatibility.lean, line 300](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorKoszulCompatibility.lean#L300). The attribute's comment: “compatibility with the Koszul differential”.
+**`DividedPowers.TateResolution.isCompatibleWithDifferential_exteriorDividedPowerStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorKoszulCompatibility.lean, line 300](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/ExteriorKoszulCompatibility.lean#L300). The attribute's comment: “compatibility with the Koszul differential”.
 
 > The divided powers of `⋀[R] (Fin r → R)` are compatible with contraction by every `R`-linear
 > functional, hence with the Koszul differential of every finite sequence in `R`.
@@ -49,7 +49,7 @@ public theorem isCompatibleWithDifferential_exteriorDividedPowerStructure (r : �
         (CliffordAlgebra.contractLeft φ)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_oddVariableDividedPowerStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean#L654). The attribute's comment: “existence and uniqueness”.
+**`DividedPowers.TateResolution.existsUnique_oddVariableDividedPowerStructure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean, line 654](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean#L654). The attribute's comment: “existence and uniqueness”.
 
 > There is a unique divided power structure on an odd-variable extension which extends the
 > given divided powers on the coefficient algebra.
@@ -62,7 +62,7 @@ public theorem existsUnique_oddVariableDividedPowerStructure
       IsOddVariableDividedPowerExtension Aᵢ d gamma delta
 ```
 
-**`DividedPowers.TateResolution.oddVariableDividedPowerStructure_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean, line 690](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean#L690). The attribute's comment: “divided power formula”.
+**`DividedPowers.TateResolution.oddVariableDividedPowerStructure_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean, line 690](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Existence.lean#L690). The attribute's comment: “divided power formula”.
 
 > For `x` in the positive even part and `y` in the odd part, the `n`th divided power of
 > `x + yT` is `gamma_n(x) + gamma_(n - 1)(x)yT`.
@@ -79,7 +79,7 @@ public theorem oddVariableDividedPowerStructure_dpow
         inclusion Aᵢ d (gamma.dpow (n - 1) x * y) * generator Aᵢ d
 ```
 
-**`DividedPowers.TateResolution.OddVariableExtension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L197). The attribute's comment: “odd\_variable\_extension”.
+**`DividedPowers.TateResolution.OddVariableExtension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 197](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L197). The attribute's comment: “odd\_variable\_extension”.
 
 > The odd-variable extension `A⟨T⟩`.  Its elements are pairs `(a, b)`, written
 > mathematically as `a + bT`.
@@ -88,7 +88,7 @@ public theorem oddVariableDividedPowerStructure_dpow
 public abbrev OddVariableExtension (Aᵢ : ℕ → Submodule R A) [GradedAlgebra Aᵢ] (d : ℕ)
 ```
 
-**`DividedPowers.TateResolution.OddVariableExtension.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L256). The attribute's comment: “odd\_variable\_extension”.
+**`DividedPowers.TateResolution.OddVariableExtension.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L256). The attribute's comment: “odd\_variable\_extension”.
 
 > The degree-`m` piece `A_m ⊕ A_{m-d}T` of the odd-variable extension.
 
@@ -97,7 +97,7 @@ public def grade (Aᵢ : ℕ → Submodule R A) [GradedAlgebra Aᵢ] (d m : ℕ)
     Submodule R (OddVariableExtension Aᵢ d)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_oddVariableExtension_ringHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L222). The attribute's comment: “mapping property”.
+**`DividedPowers.TateResolution.existsUnique_oddVariableExtension_ringHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L222). The attribute's comment: “mapping property”.
 
 > The mapping property of the odd variable extension of Tag 09PH, for ring homomorphisms. A
 > ring homomorphism out of `B⟨T⟩` which preserves degrees is determined by, and may be prescribed
@@ -113,7 +113,7 @@ public theorem existsUnique_oddVariableExtension_ringHom
       (∀ (m : ℕ) (x : OddVariableExtension ℬ d), x ∈ grade ℬ d m → g x ∈ 𝒟 m)
 ```
 
-**`DividedPowers.TateResolution.oddVariableExtension_ringHom_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L311). The attribute's comment: “mapping property”.
+**`DividedPowers.TateResolution.oddVariableExtension_ringHom_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 311](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L311). The attribute's comment: “mapping property”.
 
 > A degree-preserving ring homomorphism out of an odd variable extension which restricts to a
 > divided-power compatible map on the coefficients is itself compatible with divided powers.
@@ -133,7 +133,7 @@ public theorem oddVariableExtension_ringHom_dpow
 
 [Tag 09PI](https://stacks.math.columbia.edu/tag/09PI) in the Stacks Project.
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L62). The attribute's comment: “even\_variable\_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 62](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L62). The attribute's comment: “even\_variable\_algebra”.
 
 > The algebra of finite divided-power polynomials in one even variable over `A`.
 >
@@ -143,7 +143,7 @@ public theorem oddVariableExtension_ringHom_dpow
 public structure EvenVariableAlgebra (A : Type v) [Ring A]
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L131). The attribute's comment: “even\_variable\_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L131). The attribute's comment: “even\_variable\_algebra”.
 
 > The binomially weighted convolution product.
 
@@ -151,7 +151,7 @@ public structure EvenVariableAlgebra (A : Type v) [Ring A]
 public def mul (x y : EvenVariableAlgebra A) : EvenVariableAlgebra A
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L351). The attribute's comment: “even\_variable\_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L351). The attribute's comment: “even\_variable\_algebra”.
 
 > The degree-`m` piece after adjoining an even variable of degree `d`.
 >
@@ -163,7 +163,7 @@ public def grade (𝒜 : ℕ → Submodule R A) (d m : ℕ) :
     Submodule R (EvenVariableAlgebra A)
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.gradedAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L559). The attribute's comment: “even\_variable\_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.gradedAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 559](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L559). The attribute's comment: “even\_variable\_algebra”.
 
 > The shifted homogeneous pieces give an internal grading of the coefficient algebra.
 
@@ -172,7 +172,7 @@ public instance gradedAlgebra (𝒜 : ℕ → Submodule R A) [GradedAlgebra 𝒜
     (d : ℕ) : GradedAlgebra (grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.strictlyGradedComm`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L614). The attribute's comment: “even\_variable\_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.strictlyGradedComm`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L614). The attribute's comment: “even\_variable\_algebra”.
 
 > An even variable preserves strict graded commutativity, including vanishing odd squares.
 
@@ -181,7 +181,7 @@ public instance strictlyGradedComm (𝒜 : ℕ → Submodule R A) [IsStrictlyGra
     (d : ℕ) [Fact (Even d)] : IsStrictlyGradedComm (grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.evenVariableDividedPowerStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L280). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.evenVariableDividedPowerStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 280](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L280). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The divided-power structure on the algebra obtained by adjoining an even
 > variable of positive degree.
@@ -193,7 +193,7 @@ public noncomputable def evenVariableDividedPowerStructure
     DividedPowerStructure (EvenVariableAlgebra.grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.dpow_coeffEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L393). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.dpow_coeffEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 393](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L393). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The new divided powers restrict to the original structure on `A`.
 
@@ -206,7 +206,7 @@ public theorem dpow_coeffEmbedding
       coeffEmbedding (γ.dpow n x)
 ```
 
-**`DividedPowers.TateResolution.dpow_monomial_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L404). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.dpow_monomial_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L404). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The divided powers of the formal monomial `T⁽ⁱ⁾`.
 
@@ -218,7 +218,7 @@ public theorem dpow_monomial_one
       monomial (n * i) (dividedPowerMonomialCoefficient n i • (1 : A))
 ```
 
-**`DividedPowers.TateResolution.dpow_positivePolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L432). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.dpow_positivePolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L432). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The multinomial expansion for a finite sum of positive-exponent terms
 > whose coefficients are even.
@@ -235,7 +235,7 @@ public theorem dpow_positivePolynomial
       positivePolynomialDividedPower n x
 ```
 
-**`DividedPowers.TateResolution.dpow_coeff_add_positive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 579](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L579). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.dpow_coeff_add_positive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 579](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L579). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > Adding a positive-even constant coefficient obeys the divided-power
 > binomial formula.
@@ -255,7 +255,7 @@ public theorem dpow_coeff_add_positive
       (evenVariableDividedPowerStructure d hd γ).dpow ij.2 x
 ```
 
-**`DividedPowers.TateResolution.evenVariableDividedPowerStructure_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L607). The attribute's comment: “even\_variable\_divided\_powers”.
+**`DividedPowers.TateResolution.evenVariableDividedPowerStructure_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 607](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L607). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > Compatibility and the formal-monomial rule determine the divided-power
 > structure uniquely.
@@ -274,7 +274,7 @@ public theorem evenVariableDividedPowerStructure_unique
     δ = evenVariableDividedPowerStructure d hd γ
 ```
 
-**`DividedPowers.TateResolution.evenVariableAlgebra_ringHom_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableLift.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableLift.lean#L89). The attribute's comment: “mapping property”.
+**`DividedPowers.TateResolution.evenVariableAlgebra_ringHom_dpow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableLift.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableLift.lean#L89). The attribute's comment: “mapping property”.
 
 > A degree-preserving ring homomorphism out of an even variable algebra which restricts to a
 > divided-power compatible map on the coefficients is itself compatible with divided powers.
@@ -294,7 +294,7 @@ public theorem evenVariableAlgebra_ringHom_dpow
     δ.dpow n (g x) = g ((evenVariableDividedPowerStructure d hd β).dpow n x)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_evenVariableAlgebra_ringHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L390). The attribute's comment: “mapping property”.
+**`DividedPowers.TateResolution.existsUnique_evenVariableAlgebra_ringHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean, line 390](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableLift.lean#L390). The attribute's comment: “mapping property”.
 
 > The mapping property of the even variable algebra of Tag 09PI, for ring homomorphisms. A
 > ring homomorphism out of `B⟨T⟩` is determined by, and may be prescribed by, its restriction to
@@ -316,7 +316,7 @@ public theorem existsUnique_evenVariableAlgebra_ringHom
 
 [Tag 0F4I](https://stacks.math.columbia.edu/tag/0F4I) in the Stacks Project.
 
-**`DividedPowers.TateResolution.ringHom_dpow_of_finiteVariableStage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedProduct.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedProduct.lean#L153). The attribute's comment: “divided powers on a finite stage”.
+**`DividedPowers.TateResolution.ringHom_dpow_of_finiteVariableStage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedProduct.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedProduct.lean#L153). The attribute's comment: “divided powers on a finite stage”.
 
 > Compatibility with divided powers propagates from the coefficients and the adjoined variables
 > to a whole finite variable stage. The argument is that the graph of the homomorphism is a subring
@@ -353,7 +353,7 @@ public theorem ringHom_dpow_of_finiteVariableStage
     ε.dpow n (f x) = f (δ.dpow n x)
 ```
 
-**`DividedPowers.TateResolution.finiteVariableStages_directedColimit_addHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDerivation.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDerivation.lean#L153). The attribute's comment: “directed colimit of finite stages, additively”.
+**`DividedPowers.TateResolution.finiteVariableStages_directedColimit_addHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDerivation.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDerivation.lean#L153). The attribute's comment: “directed colimit of finite stages, additively”.
 
 > The additive analogue of `finiteVariableStages_directedColimit`: if the finite variable stages
 > cover the extension, a family of additive maps out of them which agree wherever their arguments
@@ -377,7 +377,7 @@ public theorem finiteVariableStages_directedColimit_addHom
         g (x : C) = f S x
 ```
 
-**`DividedPowers.TateResolution.exists_gradedDividedPowerColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/DirectLimit.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/DirectLimit.lean#L299). The attribute's comment: “directed colimit of graded algebras with divided powers”.
+**`DividedPowers.TateResolution.exists_gradedDividedPowerColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/DirectLimit.lean, line 299](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/DirectLimit.lean#L299). The attribute's comment: “directed colimit of graded algebras with divided powers”.
 
 > The colimit of a directed system of strictly graded-commutative nonnegatively graded
 > algebras with divided powers on their positive even parts, indexed by an arbitrary nonempty
@@ -445,7 +445,7 @@ public theorem exists_gradedDividedPowerColimit
                   ∃! F : C →ₗ[R] M, ∀ (S : I) (x : B S), F (incl S x) = g S x
 ```
 
-**`DividedPowers.TateResolution.exists_setVariableDividedPowerExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/Existence.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/Existence.lean#L414). The attribute's comment: “set-indexed construction”.
+**`DividedPowers.TateResolution.exists_setVariableDividedPowerExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/Existence.lean, line 414](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/Construction/Existence.lean#L414). The attribute's comment: “set-indexed construction”.
 
 > A set of positive-degree variables has a free strictly graded-commutative algebra with
 > divided powers over a graded divided-power algebra. Every element involves only finitely many
@@ -552,7 +552,7 @@ public theorem exists_setVariableDividedPowerExtension
                       ε.dpow n (g x) = g (δ.dpow n x)))
 ```
 
-**`DividedPowers.TateResolution.finiteVariableStage_insert`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L74). The attribute's comment: “finite iterated one-variable extensions”.
+**`DividedPowers.TateResolution.finiteVariableStage_insert`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 74](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L74). The attribute's comment: “finite iterated one-variable extensions”.
 
 > A successor finite stage is obtained by adjoining its new variable and all of its
 > divided powers to the preceding stage. For an odd-degree variable its positive divided
@@ -575,7 +575,7 @@ public theorem finiteVariableStage_insert
           {x : C | x = T j ∨ ∃ n : ℕ, x = δ.dpow n (T j)})
 ```
 
-**`DividedPowers.TateResolution.finiteVariableStage_empty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L114). The attribute's comment: “initial finite stage”.
+**`DividedPowers.TateResolution.finiteVariableStage_empty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 114](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L114). The attribute's comment: “initial finite stage”.
 
 > The initial finite stage is generated by the coefficient algebra.
 
@@ -589,7 +589,7 @@ public theorem finiteVariableStage_empty
     finiteVariableStage δ ι T ∅ = Subring.closure (Set.range ι)
 ```
 
-**`DividedPowers.TateResolution.finiteVariableStages_directedColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L141). The attribute's comment: “directed colimit of finite stages”.
+**`DividedPowers.TateResolution.finiteVariableStages_directedColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DirectedColimit.lean#L141). The attribute's comment: “directed colimit of finite stages”.
 
 > If the finite-variable stages cover the algebra, they present it as their directed colimit:
 > a family of ring homomorphisms out of the stages which agree wherever their arguments agree in
@@ -614,7 +614,7 @@ public theorem finiteVariableStages_directedColimit
         g (x : C) = f S x
 ```
 
-**`DividedPowers.TateResolution.existsUnique_dividedPowerStructure_of_finiteStages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L457). The attribute's comment: “finite-stage extension”.
+**`DividedPowers.TateResolution.existsUnique_dividedPowerStructure_of_finiteStages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L457). The attribute's comment: “finite-stage extension”.
 
 > Let a directed system of strictly graded-commutative graded algebras with divided powers,
 > indexed by a nonempty directed preorder, map compatibly to a strictly graded-commutative graded
@@ -661,7 +661,7 @@ public theorem existsUnique_dividedPowerStructure_of_finiteStages
           δ.dpow n (ι S x) = ι S ((γ S).dpow n x)
 ```
 
-**`DividedPowers.TateResolution.finiteVariableStage_dpow_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 705](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L705). The attribute's comment: “finite stages preserve divided powers”.
+**`DividedPowers.TateResolution.finiteVariableStage_dpow_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 705](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L705). The attribute's comment: “finite stages preserve divided powers”.
 
 > Divided powers of elements supported on a finite set of homogeneous variables over a
 > graded coefficient algebra are still supported on that set. The variables need not all have the
@@ -687,7 +687,7 @@ public theorem finiteVariableStage_dpow_mem
     δ.dpow n x ∈ finiteVariableStage δ ι T S
 ```
 
-**`DividedPowers.TateResolution.dividedPowerStructure_unique_of_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L1195). The attribute's comment: “uniqueness”.
+**`DividedPowers.TateResolution.dividedPowerStructure_unique_of_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean, line 1195](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableExtension/FiniteStage/DividedPowerStructure.lean#L1195). The attribute's comment: “uniqueness”.
 
 > On a set-indexed extension, divided powers are forced by their restriction to the
 > coefficient algebra and by their values on the adjoined generators.
@@ -715,7 +715,7 @@ public theorem dividedPowerStructure_unique_of_generators
 
 [Tag 09PJ](https://stacks.math.columbia.edu/tag/09PJ) in the Stacks Project.
 
-**`DividedPowers.TateResolution.IsCompatibleWithDifferential`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean#L261).
+**`DividedPowers.TateResolution.IsCompatibleWithDifferential`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean, line 261](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/Basic.lean#L261).
 
 > A divided power structure is compatible with a differential if the differential of every
 > positive divided power has the expected divided-power derivative.
@@ -729,7 +729,7 @@ public class IsCompatibleWithDifferential {𝒜 : ℕ → Submodule R A} [Graded
 
 [Tag 09PK](https://stacks.math.columbia.edu/tag/09PK) in the Stacks Project.
 
-**`DividedPowers.TateResolution.dividedPowerStructureOnHomology_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Homology/DividedPowerStructure.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/Homology/DividedPowerStructure.lean#L37).
+**`DividedPowers.TateResolution.dividedPowerStructureOnHomology_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/Homology/DividedPowerStructure.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/Homology/DividedPowerStructure.lean#L37).
 
 > A surjective morphism from a positively acyclic divided-power DGA induces divided
 > powers on the actual homology quotient of its target. The induced operations agree with
@@ -798,7 +798,7 @@ public theorem dividedPowerStructureOnHomology_of_surjective
 
 [Tag 09PL](https://stacks.math.columbia.edu/tag/09PL) in the Stacks Project.
 
-**`DividedPowers.TateResolution.exists_dividedPowerStructure_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FlatTensor/DividedPowerStructure.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FlatTensor/DividedPowerStructure.lean#L709).
+**`DividedPowers.TateResolution.exists_dividedPowerStructure_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FlatTensor/DividedPowerStructure.lean, line 709](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FlatTensor/DividedPowerStructure.lean#L709).
 
 > Divided powers and their compatibility with the differential extend under arbitrary base
 > change: for a ring map `R → R'`, the differential graded algebra `R' ⊗[R] A` with grading
@@ -835,7 +835,7 @@ public theorem exists_dividedPowerStructure_baseChange
 
 [Tag 09PM](https://stacks.math.columbia.edu/tag/09PM) in the Stacks Project.
 
-**`DividedPowers.TateResolution.existsUnique_differential_mixedDegreeSetVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean, line 645](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean#L645). The attribute's comment: “set of variables of prescribed degrees”.
+**`DividedPowers.TateResolution.existsUnique_differential_mixedDegreeSetVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean, line 645](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean#L645). The attribute's comment: “set of variables of prescribed degrees”.
 
 > A cycle of degree `deg j - 1` for each adjoined variable `j` determines the unique
 > divided-power-compatible differential on an extension by a set of variables of degrees `deg`.
@@ -880,7 +880,7 @@ public theorem existsUnique_differential_mixedDegreeSetVariableExtension
         (∀ j : J, dC (T j) = ι (e j)) ∧ IsCompatibleWithDifferential δ dC
 ```
 
-**`DividedPowers.TateResolution.existsUnique_differential_setVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean, line 973](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean#L973). The attribute's comment: “set of variables”.
+**`DividedPowers.TateResolution.existsUnique_differential_setVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean, line 973](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/SetVariableDifferential.lean#L973). The attribute's comment: “set of variables”.
 
 > **The differential of a set-variable divided power extension**, the set-indexed form of
 > Tag 09PM. A differential on the coefficient algebra, compatible with its divided powers,
@@ -905,7 +905,7 @@ public theorem existsUnique_differential_setVariableExtension
         (∀ j : J, D (T j) = ι (ev j)) ∧ IsCompatibleWithDifferential δ D
 ```
 
-**`DividedPowers.TateResolution.existsUnique_differential_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L410). The attribute's comment: “odd variable”.
+**`DividedPowers.TateResolution.existsUnique_differential_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 410](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L410). The attribute's comment: “odd variable”.
 
 > A closed element of degree `d - 1` determines the unique divided-power-compatible
 > differential after adjoining an odd variable of degree `d`.
@@ -928,7 +928,7 @@ public theorem existsUnique_differential_oddVariableExtension
           (oddVariableDividedPowerStructure 𝒜 γ d hd hd_odd) dExt)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_differential_evenVariableAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L445). The attribute's comment: “even variable”.
+**`DividedPowers.TateResolution.existsUnique_differential_evenVariableAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 445](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L445). The attribute's comment: “even variable”.
 
 > A closed element of degree `d - 1` determines the unique divided-power-compatible
 > differential after adjoining an even divided-power variable of degree `d`.
@@ -951,7 +951,7 @@ public theorem existsUnique_differential_evenVariableAlgebra
           (evenVariableDividedPowerStructure d hd γ) dExt)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_gradedDerivation_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L500). The attribute's comment: “odd variable, as a graded derivation”.
+**`DividedPowers.TateResolution.existsUnique_gradedDerivation_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 500](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L500). The attribute's comment: “odd variable, as a graded derivation”.
 
 > An element of degree `d - 1`, with no cycle condition imposed on it, determines the unique
 > divided-power-compatible graded derivation on the algebra obtained by adjoining an odd variable of
@@ -977,7 +977,7 @@ public theorem existsUnique_gradedDerivation_oddVariableExtension
           (oddVariableDividedPowerStructure 𝒜 γ d hd hd_odd) dExt)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_gradedDerivation_evenVariableAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L531). The attribute's comment: “even variable, as a graded derivation”.
+**`DividedPowers.TateResolution.existsUnique_gradedDerivation_evenVariableAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean, line 531](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/VariableDifferential/ExistsUnique.lean#L531). The attribute's comment: “even variable, as a graded derivation”.
 
 > An element of degree `d - 1`, with no cycle condition imposed on it, determines the unique
 > divided-power-compatible graded derivation on the algebra obtained by adjoining an even
@@ -1006,7 +1006,7 @@ public theorem existsUnique_gradedDerivation_evenVariableAlgebra
 
 [Tag 09PN](https://stacks.math.columbia.edu/tag/09PN) in the Stacks Project.
 
-**`DividedPowers.TateResolution.finiteTateResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L524). The attribute's comment: “finite generators in each degree, for a prescribed presentation”.
+**`DividedPowers.TateResolution.finiteTateResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 524](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L524). The attribute's comment: “finite generators in each degree, for a prescribed presentation”.
 
 > **Tate's resolution with finitely many generators in each degree, for a prescribed
 > presentation.** Let `φ : R[xᵢ] → S` be a surjection from a polynomial ring whose coefficient ring
@@ -1030,7 +1030,7 @@ public noncomputable def finiteTateResolution (φ : MvPolynomial σ R →ₐ[R] 
     Resolution R S σ φ
 ```
 
-**`DividedPowers.TateResolution.finite_finiteTateResolution_polynomialIndices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L582). The attribute's comment: “finite generators in each degree, for a prescribed presentation”.
+**`DividedPowers.TateResolution.finite_finiteTateResolution_polynomialIndices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 582](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L582). The attribute's comment: “finite generators in each degree, for a prescribed presentation”.
 
 > The degreewise finite Tate resolution really is degreewise finite: it has finitely many
 > variables in each degree, which is the finiteness assertion of Tag 09PN. The variables of degree
@@ -1045,7 +1045,7 @@ public theorem finite_finiteTateResolution_polynomialIndices (φ : MvPolynomial 
     Finite ((finiteTateResolution φ hφ s₀ hs₀).polynomialIndices i)
 ```
 
-**`DividedPowers.TateResolution.exists_finite_tateResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L605). The attribute's comment: “finite generators in each degree”.
+**`DividedPowers.TateResolution.exists_finite_tateResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean, line 605](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateResolution.lean#L605). The attribute's comment: “finite generators in each degree”.
 
 > **The finiteness half of Tag 09PN.** A Noetherian commutative ring `R` and an `R`-algebra `S`
 > of finite type admit a surjection `φ : R[x₁, …, x_k] → S` from a polynomial ring in finitely many
@@ -1064,7 +1064,7 @@ public theorem exists_finite_tateResolution (R S : Type u) [CommRing R] [CommRin
       Function.Surjective φ ∧ ∀ i : ℕ, Finite (A.polynomialIndices i)
 ```
 
-**`DividedPowers.TateResolution.exists_boundary_of_gradeZero_combination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean#L131). The attribute's comment: “a spanning family kills every cycle of its degree, degree-zero coefficients”.
+**`DividedPowers.TateResolution.exists_boundary_of_gradeZero_combination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean#L131). The attribute's comment: “a spanning family kills every cycle of its degree, degree-zero coefficients”.
 
 > **A combination with coefficients of degree zero of cycles killed by variables is a
 > boundary.** If the variable `T j` of degree `n + 1` has `v j` for boundary, then the boundary of
@@ -1082,7 +1082,7 @@ public theorem exists_boundary_of_gradeZero_combination {J : Type y} (v T : J �
     ∃ b : A, b ∈ Aᵢ (n + 1) ∧ d b = ∑ j ∈ s, c j * v j
 ```
 
-**`DividedPowers.TateResolution.hasFiniteSpanningCycles_finiteTateStage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean#L402). The attribute's comment: “finitely many variables suffice at each step over a Noetherian base”.
+**`DividedPowers.TateResolution.hasFiniteSpanningCycles_finiteTateStage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean, line 402](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/FiniteTateTower.lean#L402). The attribute's comment: “finitely many variables suffice at each step over a Noetherian base”.
 
 > **Over a Noetherian coefficient ring every degree of every stage of the degreewise finite
 > tower has a finite spanning family of cycles**, so the empty fallback of
@@ -1105,7 +1105,7 @@ public theorem hasFiniteSpanningCycles_finiteTateStage [IsNoetherianRing P] (N m
       (finiteTateStage (finiteTateBase.{u, v} (R := R) P s₀) N).datum m
 ```
 
-**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.free_grade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean#L1080). The attribute's comment: “freeness of the homogeneous pieces”.
+**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.free_grade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean#L1080). The attribute's comment: “freeness of the homogeneous pieces”.
 
 > Each homogeneous piece is free over the ground ring as soon as the coefficient algebra is.
 > This is the `free` field of a Tate resolution, Tag 09PN.
@@ -1115,7 +1115,7 @@ public theorem free_grade (G : GradedDividedPowerPolynomial Aᵢ γ ι) [Module.
     Module.Free R ↥(Aᵢ n)
 ```
 
-**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.finite_grade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean#L1089). The attribute's comment: “finiteness of the homogeneous pieces”.
+**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.finite_grade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedBasis.lean#L1089). The attribute's comment: “finiteness of the homogeneous pieces”.
 
 > Each homogeneous piece is module finite over the ground ring as soon as the coefficient
 > algebra is and there are only finitely many variables in each degree: there are then only
@@ -1126,7 +1126,7 @@ public theorem finite_grade (G : GradedDividedPowerPolynomial Aᵢ γ ι) [Modul
     [∀ i : ℕ, Finite (G.indices i)] (n : ℕ) : Module.Finite R ↥(Aᵢ n)
 ```
 
-**`DividedPowers.TateResolution.existsUnique_gradedDividedPowerPolynomial_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean, line 638](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean#L638). The attribute's comment: “mapping property”.
+**`DividedPowers.TateResolution.existsUnique_gradedDividedPowerPolynomial_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean, line 638](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean#L638). The attribute's comment: “mapping property”.
 
 > The mapping property of an iterated graded divided-power polynomial algebra.
 > The target may live in a universe independent of the source and its variables.
@@ -1152,7 +1152,7 @@ public theorem existsUnique_gradedDividedPowerPolynomial_map
         g (γ.dpow n a) = δ.dpow n (g a))
 ```
 
-**`DividedPowers.TateResolution.existsUnique_algEquiv_gradedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean#L759). The attribute's comment: “uniqueness of the presentation”.
+**`DividedPowers.TateResolution.existsUnique_algEquiv_gradedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean, line 759](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/GradedPolynomialMap.lean#L759). The attribute's comment: “uniqueness of the presentation”.
 
 > Two graded divided power polynomial algebras over the same coefficient algebra, whose index
 > data are identified degreewise, are uniquely isomorphic over the coefficients and the variables,
@@ -1182,7 +1182,7 @@ public theorem existsUnique_algEquiv_gradedDividedPowerPolynomial
         e.symm (γ'.dpow n a) = γ.dpow n (e.symm a))
 ```
 
-**`DividedPowers.TateResolution.exists_gradedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreeConstruction.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreeConstruction.lean#L79). The attribute's comment: “graded divided power polynomial algebra over a prescribed degree-zero algebra”.
+**`DividedPowers.TateResolution.exists_gradedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreeConstruction.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreeConstruction.lean#L79). The attribute's comment: “graded divided power polynomial algebra over a prescribed degree-zero algebra”.
 
 > A graded divided-power polynomial algebra exists over any prescribed commutative degree-zero
 > algebra `P`, with one homogeneous variable of degree `n + 1` for each element of `indices n`.
@@ -1203,7 +1203,7 @@ public theorem exists_gradedDividedPowerPolynomial {R : Type u} [CommRing R] (P 
               (h : RestrictedStageGradedDividedPowerPolynomial Aᵢ γ ι), h.indices = indices
 ```
 
-**`DividedPowers.TateResolution.existsUnique_restrictedStageGradedDividedPowerPolynomial_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreePolynomial.lean, line 596](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreePolynomial.lean#L596). The attribute's comment: “mapping property of a graded divided-power polynomial algebra”.
+**`DividedPowers.TateResolution.existsUnique_restrictedStageGradedDividedPowerPolynomial_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreePolynomial.lean, line 596](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/MixedDegreePolynomial.lean#L596). The attribute's comment: “mapping property of a graded divided-power polynomial algebra”.
 
 > The mapping property of an iterated graded divided-power polynomial algebra: prescribing
 > the values on the coefficient algebra and on the variables, subject to the degree conditions,
@@ -1232,7 +1232,7 @@ public theorem existsUnique_restrictedStageGradedDividedPowerPolynomial_map
         g (γ.dpow n a) = δ.dpow n (g a))
 ```
 
-**`DividedPowers.TateResolution.exists_boundary_of_coefficient_combination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L223). The attribute's comment: “a spanning family of variables kills every cycle of its degree”.
+**`DividedPowers.TateResolution.exists_boundary_of_coefficient_combination`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L223). The attribute's comment: “a spanning family of variables kills every cycle of its degree”.
 
 > **A combination of the cycles killed by the variables of degree `n + 1` is a boundary.** The
 > boundary of the corresponding combination of the variables is it, by linearity of the differential
@@ -1251,7 +1251,7 @@ public theorem exists_boundary_of_coefficient_combination
     ∃ b : A, b ∈ Aᵢ (n + 1) ∧ d b = ∑ j ∈ s, c j • v j
 ```
 
-**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.fg_coefficientGrade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L272). The attribute's comment: “finite generation of the homogeneous pieces over the coefficients”.
+**`DividedPowers.TateResolution.GradedDividedPowerPolynomial.fg_coefficientGrade`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L272). The attribute's comment: “finite generation of the homogeneous pieces over the coefficients”.
 
 > **Each homogeneous piece is finitely generated over the coefficient algebra** as soon as the
 > variables are finite in each degree: there are then only finitely many divided power monomials of
@@ -1269,7 +1269,7 @@ public theorem fg_coefficientGrade (G : GradedDividedPowerPolynomial Aᵢ γ ι)
     (coefficientGrade Aᵢ h0 n).FG
 ```
 
-**`DividedPowers.TateResolution.exists_finite_spanning_cycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L315). The attribute's comment: “a finite generating family of the cycles of a degree”.
+**`DividedPowers.TateResolution.exists_finite_spanning_cycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean, line 315](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/NoetherianCycles.lean#L315). The attribute's comment: “a finite generating family of the cycles of a degree”.
 
 > **A finite family of degree-`n` cycles that every degree-`n` cycle is a combination of.**
 >
@@ -1287,7 +1287,7 @@ public theorem exists_finite_spanning_cycles (G : GradedDividedPowerPolynomial A
       ∀ x : A, x ∈ Aᵢ n → d x = 0 → ∃ c : A → P, ∑ y ∈ s, c y • y = x
 ```
 
-**`DividedPowers.TateResolution.chainStagePresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/StagePresentation.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/StagePresentation.lean#L237). The attribute's comment: “each finite stage is a graded divided power polynomial algebra”.
+**`DividedPowers.TateResolution.chainStagePresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/StagePresentation.lean, line 237](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/StagePresentation.lean#L237). The attribute's comment: “each finite stage is a graded divided power polynomial algebra”.
 
 > **The stage `N` of a chain of set-variable divided power extensions is a graded divided power
 > polynomial algebra over the base of the chain**, on the variables of degrees `1, …, N`.
@@ -1307,7 +1307,7 @@ public noncomputable def chainStagePresentation
     GradedDividedPowerPolynomial (B N).grade (B N).gamma (chainStageCoefficient B step N)
 ```
 
-**`DividedPowers.TateResolution.tateResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/TateColimitResolution.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/TateColimitResolution.lean#L499). The attribute's comment: “resolution of any polynomial presentation”.
+**`DividedPowers.TateResolution.tateResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/TateColimitResolution.lean, line 499](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/TateColimitResolution.lean#L499). The attribute's comment: “resolution of any polynomial presentation”.
 
 > **Tate's resolution of a prescribed polynomial presentation.** Every surjection
 > `φ : R[xᵢ] → S` from a polynomial ring extends to a divided power differential graded algebra
@@ -1331,7 +1331,7 @@ public noncomputable def tateResolution (φ : MvPolynomial σ R →ₐ[R] S)
 
 [Tag 0BZ9](https://stacks.math.columbia.edu/tag/0BZ9) in the Stacks Project.
 
-**`DividedPowers.TateResolution.exists_finite_tateResolution_of_pseudoCoherent_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean#L85). The attribute's comment: “for a prescribed presentation”.
+**`DividedPowers.TateResolution.exists_finite_tateResolution_of_pseudoCoherent_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean#L85). The attribute's comment: “for a prescribed presentation”.
 
 > **A pseudo-coherent ring map admits a Tate resolution with finitely many generators in each
 > degree, extending any prescribed finite presentation.** If `R → S` is pseudo-coherent and
@@ -1353,7 +1353,7 @@ public theorem exists_finite_tateResolution_of_pseudoCoherent_of_surjective
     ∃ A : Resolution R S (Fin k) φ, ∀ i : ℕ, Finite (A.polynomialIndices i)
 ```
 
-**`DividedPowers.TateResolution.exists_finite_tateResolution_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean#L139). The attribute's comment: “existence of some finite presentation with such a resolution”.
+**`DividedPowers.TateResolution.exists_finite_tateResolution_of_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean, line 139](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/PseudoCoherentTateResolution.lean#L139). The attribute's comment: “existence of some finite presentation with such a resolution”.
 
 > **A pseudo-coherent ring map admits a Tate resolution with finitely many generators in each
 > degree.** If `R → S` is pseudo-coherent then there are a surjection `φ : R[x₁, …, x_k] → S` from
@@ -1376,7 +1376,7 @@ public theorem exists_finite_tateResolution_of_pseudoCoherent
 
 [Tag 09PP](https://stacks.math.columbia.edu/tag/09PP) in the Stacks Project.
 
-**`DividedPowers.TateResolution.exists_dividedPowerDGAMap_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DividedPowerDGALift.lean, line 842](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/DividedPowerDGALift.lean#L842).
+**`DividedPowers.TateResolution.exists_dividedPowerDGAMap_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DividedPowerDGALift.lean, line 842](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/DividedPowerDGALift.lean#L842).
 
 > A map from a graded divided-power polynomial DGA to a positively acyclic
 > divided-power DGA lifting a prescribed map on zeroth homology.
@@ -1413,7 +1413,7 @@ public theorem exists_dividedPowerDGAMap_lift
 
 [Tag 09PQ](https://stacks.math.columbia.edu/tag/09PQ) in the Stacks Project.
 
-**`DividedPowers.TateResolution.exists_dividedPowerStructure_torDirectSum_forall_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/TorIndependence.lean, line 874](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DividedPowers/TateResolution/TorIndependence.lean#L874). The attribute's comment: “divided power algebra structure on Tor, independent of the Tate resolution”.
+**`DividedPowers.TateResolution.exists_dividedPowerStructure_torDirectSum_forall_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/TorIndependence.lean, line 870](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DividedPowers/TateResolution/TorIndependence.lean#L870). The attribute's comment: “divided power algebra structure on Tor, independent of the Tate resolution”.
 
 > **The divided power algebra `Tor_*^R(S, T)`, independent of the Tate resolution.** For a
 > commutative ring `R` and commutative `R`-algebras `S` and `T`, the direct sum
@@ -1496,4 +1496,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 23.6, Tag 09PF](https://stacks.math.columbia.edu/tag/09PF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

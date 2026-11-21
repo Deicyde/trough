@@ -8,9 +8,9 @@ proof: formalized
 
 # Static Wick's theorem
 
-The module `Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTheorem`, [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean): 1 declaration, 1 with a docstring, 1 listed as significant.
+The module `Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTheorem`, [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean): 1 declaration, 1 with a docstring, 1 listed as significant.
 
-**`FieldSpecification.WickAlgebra.static_wick_theorem`**, a theorem, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean#L57). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`FieldSpecification.WickAlgebra.static_wick_theorem`**, a theorem, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean#L57). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > For a list `φs` of `𝓕.FieldOp`, the static version of Wick's theorem states that
 >
@@ -51,4 +51,4 @@ theorem static_wick_theorem : (φs : List 𝓕.FieldOp) →
 
 ## Sources
 
-- [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean)
+- [Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean)

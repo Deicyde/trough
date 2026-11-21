@@ -8,7 +8,7 @@ proof: formalized
 
 # Representations by measures on a boundary
 
-The module `PhyslibAlpha.Mathematics.Convex.Choquet.BoundaryRepresentation`, [PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean): 4 declarations, 4 with a docstring.
+The module `PhyslibAlpha.Mathematics.Convex.Choquet.BoundaryRepresentation`, [PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean): 4 declarations, 4 with a docstring.
 
 > Boundary representations of points by regular probability measures, and simplices.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.Mathematics.Convex.Choquet.BoundaryRepresentation`, [Ph
 
 ## A. Boundary representations
 
-**`Choquet.IsBoundaryRepresentation`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L57).
+**`Choquet.IsBoundaryRepresentation`**, a def, [line 57](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L57).
 
 > A regular probability measure on `B` represents `x` when the average of every test over the
 > boundary agrees with its value at `x`.
@@ -46,7 +46,7 @@ def IsBoundaryRepresentation (test : A → X → ℝ) (boundary : B → X) (x : 
     (μ : Measure B) : Prop
 ```
 
-**`Choquet.HasBoundaryDecomposition`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L64).
+**`Choquet.HasBoundaryDecomposition`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L64).
 
 > A point has a boundary decomposition when some regular probability measure on the boundary
 > represents it.
@@ -55,7 +55,7 @@ def IsBoundaryRepresentation (test : A → X → ℝ) (boundary : B → X) (x : 
 def HasBoundaryDecomposition (test : A → X → ℝ) (boundary : B → X) (x : X) : Prop
 ```
 
-**`Choquet.HasUniqueBoundaryDecomposition`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L69).
+**`Choquet.HasUniqueBoundaryDecomposition`**, a def, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L69).
 
 > A point has a unique boundary decomposition when exactly one regular probability measure on
 > the boundary represents it.
@@ -67,7 +67,7 @@ def HasUniqueBoundaryDecomposition (test : A → X → ℝ) (boundary : B → X)
 
 ## B. Simplices
 
-**`Choquet.IsSimplexRepresentation`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L77).
+**`Choquet.IsSimplexRepresentation`**, a def, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean#L77).
 
 > A tested space is a simplex with boundary `B` when every point has a unique boundary
 > decomposition.
@@ -82,4 +82,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean)
+- [PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet/BoundaryRepresentation.lean)

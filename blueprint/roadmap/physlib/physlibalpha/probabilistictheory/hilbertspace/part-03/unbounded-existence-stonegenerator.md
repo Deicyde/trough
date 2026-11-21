@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_denseAnalyticVectors, ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_isEssentiallySelfAdjoint
+lean: PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_denseAnalyticVectors, PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_isEssentiallySelfAdjoint
 statement: formalized
 proof: formalized
 ---
 
 # Stone's theorem: existence of the generator
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.StoneGenerator`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean): 2 declarations, 2 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.StoneGenerator`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean): 2 declarations, 2 with a docstring.
 
 > Stone's theorem, existence: the candidate generator is essentially self-adjoint.
 
@@ -30,7 +30,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Existence.St
 
 ## A. Density of analytic vectors
 
-**`ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_denseAnalyticVectors`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean#L65).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_denseAnalyticVectors`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean#L65).
 
 > **The analytic vectors of the candidate generator are dense**: every vector is a limit of
 > Gårding vectors.
@@ -45,7 +45,7 @@ lemma stoneCandidateGenerator_denseAnalyticVectors (hU0 : U 0 = 1)
 
 ## B. Essential self-adjointness
 
-**`ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_isEssentiallySelfAdjoint`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean#L88).
+**`PhyslibAlpha.ProbabilisticTheory.QuantumMechanics.stoneCandidateGenerator_isEssentiallySelfAdjoint`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean#L88).
 
 > **Stone's theorem, existence.** The candidate generator of a strongly continuous unitary group
 > is essentially self-adjoint.
@@ -68,4 +68,4 @@ lemma stoneCandidateGenerator_isEssentiallySelfAdjoint (hU0 : U 0 = 1)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean)
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean)

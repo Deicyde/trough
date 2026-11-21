@@ -8,7 +8,7 @@ proof: formalized
 
 # The velocity band is open from four sites on
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Width`, [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean): 11 declarations, 7 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Width`, [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean): 11 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Width`, 
 
 ## A. Time reversal and the uncertainty defect
 
-**`CondensedMatter.TightBindingChain.meanOf_timeReversal`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L55).
+**`CondensedMatter.TightBindingChain.meanOf_timeReversal`**, a lemma, [line 55](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L55).
 
 ```lean
 lemma meanOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}
@@ -40,14 +40,14 @@ lemma meanOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}
     T.meanOf A (T.timeReversal ψ) = T.meanOf A ψ
 ```
 
-**`CondensedMatter.TightBindingChain.meanOf_current_timeReversal`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L60).
+**`CondensedMatter.TightBindingChain.meanOf_current_timeReversal`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L60).
 
 ```lean
 lemma meanOf_current_timeReversal (ψ : T.HilbertSpace) :
     T.meanOf T.current (T.timeReversal ψ) = -T.meanOf T.current ψ
 ```
 
-**`CondensedMatter.TightBindingChain.flucOf_timeReversal`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L65).
+**`CondensedMatter.TightBindingChain.flucOf_timeReversal`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L65).
 
 ```lean
 lemma flucOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}
@@ -55,7 +55,7 @@ lemma flucOf_timeReversal {A : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace}
     T.flucOf A (T.timeReversal ψ) = T.timeReversal (T.flucOf A ψ)
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf_timeReversal`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L71).
+**`CondensedMatter.TightBindingChain.defectOf_timeReversal`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L71).
 
 > Time reversal keeps the uncertainty defect.
 
@@ -64,7 +64,7 @@ lemma defectOf_timeReversal (ψ : T.HilbertSpace) :
     T.defectOf (T.timeReversal ψ) = T.defectOf ψ
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L78).
+**`CondensedMatter.TightBindingChain.defectOf_smul`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L78).
 
 > A global phase keeps the uncertainty defect.
 
@@ -75,7 +75,7 @@ lemma defectOf_smul {c : ℂ} (hc : ‖c‖ = 1) (ψ : T.HilbertSpace) :
 
 ## B. The speed limit is reached only by extreme eigenstates
 
-**`CondensedMatter.TightBindingChain.timeReversal_currentEigenstate_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L97).
+**`CondensedMatter.TightBindingChain.timeReversal_currentEigenstate_one`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L97).
 
 > The time reverse of the longest standing wave is the shortest one.
 
@@ -84,7 +84,7 @@ lemma timeReversal_currentEigenstate_one :
     T.timeReversal (T.currentEigenstate 1) = T.currentEigenstate T.N
 ```
 
-**`CondensedMatter.TightBindingChain.currentBasis_zero`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L111).
+**`CondensedMatter.TightBindingChain.currentBasis_zero`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L111).
 
 > The maximal current state and its time reverse are the extreme current eigenstates.
 
@@ -93,7 +93,7 @@ lemma currentBasis_zero (ht : T.t ≠ 0) :
     T.currentBasis ht ⟨0, Nat.pos_of_neZero _⟩ = T.maxCurrentState
 ```
 
-**`CondensedMatter.TightBindingChain.currentBasis_last`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L115).
+**`CondensedMatter.TightBindingChain.currentBasis_last`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L115).
 
 ```lean
 lemma currentBasis_last (ht : T.t ≠ 0) :
@@ -101,7 +101,7 @@ lemma currentBasis_last (ht : T.t ≠ 0) :
       T.timeReversal T.maxCurrentState
 ```
 
-**`CondensedMatter.TightBindingChain.defectOf_eq_of_meanOf_current_eq`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L123).
+**`CondensedMatter.TightBindingChain.defectOf_eq_of_meanOf_current_eq`**, a lemma, [line 123](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L123).
 
 > A unit vector moving at the speed limit has the defect of the maximal current state.
 
@@ -113,7 +113,7 @@ lemma defectOf_eq_of_meanOf_current_eq (ht : T.t ≠ 0) {ψ : T.HilbertSpace} (h
 
 ## C. The band is not empty
 
-**`CondensedMatter.TightBindingChain.threshold_lt_maxCurrent`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L187).
+**`CondensedMatter.TightBindingChain.threshold_lt_maxCurrent`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L187).
 
 > From four sites on, the threshold lies strictly below the speed limit.
 
@@ -121,7 +121,7 @@ lemma defectOf_eq_of_meanOf_current_eq (ht : T.t ≠ 0) {ψ : T.HilbertSpace} (h
 lemma threshold_lt_maxCurrent (ht : T.t ≠ 0) (hN : 4 ≤ T.N) : T.threshold < T.maxCurrent
 ```
 
-**`CondensedMatter.TightBindingChain.maxCurrent_mem_velocityBand`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L203).
+**`CondensedMatter.TightBindingChain.maxCurrent_mem_velocityBand`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean#L203).
 
 > From four sites on, the velocity band is not empty: it contains the speed limit.
 
@@ -137,4 +137,4 @@ lemma maxCurrent_mem_velocityBand (ht : T.t ≠ 0) (hN : 4 ≤ T.N) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean)

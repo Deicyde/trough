@@ -8,14 +8,14 @@ proof: formalized
 
 # Complex Lorentz tensors with Gaussian integer components
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.OfGaussianInt`, [Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean): 8 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.OfGaussianInt`, [Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean): 8 declarations, 1 with a docstring.
 
 > A complex Lorentz tensor whose components in the standard basis are Gaussian integers can be
 > written as `ofGaussianInt f` for a map `f` from component indices to `GaussianInt`. The
 > product, contraction and permutation of such tensors are again of this form, so identities
 > between them reduce to decidable equalities of Gaussian integers.
 
-**`complexLorentzTensor.ofGaussianInt`**, a def, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L35).
+**`complexLorentzTensor.ofGaussianInt`**, a def, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L35).
 
 > A complex Lorentz tensor from a map
 > `(Π j, complexLorentzTensor.basisIdx (c j)) → GaussianInt`. All complex Lorentz tensors
@@ -27,7 +27,7 @@ noncomputable def ofGaussianInt {n : ℕ} {c : Fin n → complexLorentzTensor.Co
       ℂT(c)
 ```
 
-**`complexLorentzTensor.ofGaussianInt_basis_repr_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L51).
+**`complexLorentzTensor.ofGaussianInt_basis_repr_apply`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L51).
 
 ```lean
 lemma ofGaussianInt_basis_repr_apply {n : ℕ} {c : Fin n → complexLorentzTensor.Color}
@@ -36,7 +36,7 @@ lemma ofGaussianInt_basis_repr_apply {n : ℕ} {c : Fin n → complexLorentzTens
   (Tensor.basis c).repr (ofGaussianInt f) b = GaussianInt.toComplex (f b)
 ```
 
-**`complexLorentzTensor.basis_eq_ofGaussianInt`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L58).
+**`complexLorentzTensor.basis_eq_ofGaussianInt`**, a lemma, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L58).
 
 ```lean
 lemma basis_eq_ofGaussianInt {n : ℕ} {c : Fin n → complexLorentzTensor.Color}
@@ -45,7 +45,7 @@ lemma basis_eq_ofGaussianInt {n : ℕ} {c : Fin n → complexLorentzTensor.Color
     = ofGaussianInt (fun b' => if b = b' then 1 else 0)
 ```
 
-**`complexLorentzTensor.contr_basis_gaussianInt`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L67).
+**`complexLorentzTensor.contr_basis_gaussianInt`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L67).
 
 ```lean
 lemma contr_basis_gaussianInt {c : complexLorentzTensor.Color}
@@ -57,7 +57,7 @@ lemma contr_basis_gaussianInt {c : complexLorentzTensor.Color}
       = GaussianInt.toComplex (if i = basisIdxTauEquiv c j then 1 else 0)
 ```
 
-**`complexLorentzTensor.prodT_ofGaussianInt_ofGaussianInt`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L81).
+**`complexLorentzTensor.prodT_ofGaussianInt_ofGaussianInt`**, a lemma, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L81).
 
 ```lean
 lemma prodT_ofGaussianInt_ofGaussianInt {n n1 : ℕ} {c : Fin n → complexLorentzTensor.Color}
@@ -69,7 +69,7 @@ lemma prodT_ofGaussianInt_ofGaussianInt {n n1 : ℕ} {c : Fin n → complexLoren
       f1 (ComponentIdx.prod b).2)))
 ```
 
-**`complexLorentzTensor.contrT_ofGaussianInt_eq_sum_dropPairSection`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L93).
+**`complexLorentzTensor.contrT_ofGaussianInt_eq_sum_dropPairSection`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L93).
 
 ```lean
 lemma contrT_ofGaussianInt_eq_sum_dropPairSection {n : ℕ}
@@ -82,7 +82,7 @@ lemma contrT_ofGaussianInt_eq_sum_dropPairSection {n : ℕ}
         then 1 else 0))))
 ```
 
-**`complexLorentzTensor.contrT_ofGaussianInt`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L115).
+**`complexLorentzTensor.contrT_ofGaussianInt`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L115).
 
 ```lean
 lemma contrT_ofGaussianInt {n : ℕ} {c : Fin (n + 1 + 1) → complexLorentzTensor.Color}
@@ -94,7 +94,7 @@ lemma contrT_ofGaussianInt {n : ℕ} {c : Fin (n + 1 + 1) → complexLorentzTens
         (x, basisIdxCongr h.2 ((basisIdxTauEquiv (c i)).symm x)))))))
 ```
 
-**`complexLorentzTensor.permT_ofGaussianInt`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L141).
+**`complexLorentzTensor.permT_ofGaussianInt`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean#L141).
 
 ```lean
 lemma permT_ofGaussianInt {n m : ℕ} {c : Fin n → complexLorentzTensor.Color}
@@ -112,4 +112,4 @@ lemma permT_ofGaussianInt {n m : ℕ} {c : Fin n → complexLorentzTensor.Color}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean)

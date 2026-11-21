@@ -7,11 +7,11 @@ proof: formalized
 
 # Generic Basis Combination Helpers
 
-`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean), by Valerii Huhnin.
+`CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations`, in [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean), by Valerii Huhnin.
 
 > Generic finite-Y and basis-combination lemmas used by Lee-O'Sullivan correctness.
 
-`CompPoly.CBivariate.coeff_neg` (theorem, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L23))
+`CompPoly.CBivariate.coeff_neg` (theorem, [line 23](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L23))
 
 ```lean
 theorem coeff_neg {R : Type*}
@@ -20,7 +20,7 @@ theorem coeff_neg {R : Type*}
     coeff (-P) i j = -coeff P i j
 ```
 
-`CompPoly.CBivariate.coeff_sub` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L34))
+`CompPoly.CBivariate.coeff_sub` (theorem, [line 34](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L34))
 
 ```lean
 theorem coeff_sub {R : Type*}
@@ -29,7 +29,7 @@ theorem coeff_sub {R : Type*}
     coeff (P - Q) i j = coeff P i j - coeff Q i j
 ```
 
-`CompPoly.CBivariate.coeff_CC_mul` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L46))
+`CompPoly.CBivariate.coeff_CC_mul` (theorem, [line 46](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L46))
 
 ```lean
 theorem coeff_CC_mul {R : Type*}
@@ -38,7 +38,7 @@ theorem coeff_CC_mul {R : Type*}
     coeff (CC c * Q) i j = c * coeff Q i j
 ```
 
-`CompPoly.CBivariate.coeff_X_mul_zero` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L57))
+`CompPoly.CBivariate.coeff_X_mul_zero` (theorem, [line 57](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L57))
 
 ```lean
 theorem coeff_X_mul_zero {R : Type*}
@@ -47,7 +47,7 @@ theorem coeff_X_mul_zero {R : Type*}
     coeff (X * Q) 0 j = 0
 ```
 
-`CompPoly.CBivariate.coeff_X_mul_succ` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L67))
+`CompPoly.CBivariate.coeff_X_mul_succ` (theorem, [line 67](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L67))
 
 ```lean
 theorem coeff_X_mul_succ {R : Type*}
@@ -56,7 +56,7 @@ theorem coeff_X_mul_succ {R : Type*}
     coeff (X * Q) (i + 1) j = coeff Q i j
 ```
 
-`CompPoly.CBivariate.evalEval_CC_mul` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L78))
+`CompPoly.CBivariate.evalEval_CC_mul` (theorem, [line 78](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L78))
 
 ```lean
 theorem evalEval_CC_mul {F : Type*}
@@ -65,7 +65,7 @@ theorem evalEval_CC_mul {F : Type*}
     evalEval x y (CC c * Q) = c * evalEval x y Q
 ```
 
-`CompPoly.CBivariate.evalEval_X_mul` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L85))
+`CompPoly.CBivariate.evalEval_X_mul` (theorem, [line 85](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L85))
 
 ```lean
 theorem evalEval_X_mul {F : Type*}
@@ -74,7 +74,7 @@ theorem evalEval_X_mul {F : Type*}
     evalEval x y (X * Q) = x * evalEval x y Q
 ```
 
-`CompPoly.CBivariate.evalEval_sub` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L92))
+`CompPoly.CBivariate.evalEval_sub` (theorem, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L92))
 
 ```lean
 theorem evalEval_sub {F : Type*}
@@ -83,7 +83,7 @@ theorem evalEval_sub {F : Type*}
     evalEval x y (P - Q) = evalEval x y P - evalEval x y Q
 ```
 
-`CompPoly.CBivariate.hasseDerivative_sub` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L102))
+`CompPoly.CBivariate.hasseDerivative_sub` (theorem, [line 102](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L102))
 
 ```lean
 theorem hasseDerivative_sub {F : Type*}
@@ -93,7 +93,7 @@ theorem hasseDerivative_sub {F : Type*}
       hasseDerivative a b P - hasseDerivative a b Q
 ```
 
-`CompPoly.CBivariate.hasseDerivative_CC_mul` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L113))
+`CompPoly.CBivariate.hasseDerivative_CC_mul` (theorem, [line 113](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L113))
 
 ```lean
 theorem hasseDerivative_CC_mul {F : Type*}
@@ -102,7 +102,7 @@ theorem hasseDerivative_CC_mul {F : Type*}
     hasseDerivative a b (CC c * Q) = CC c * hasseDerivative a b Q
 ```
 
-`CompPoly.CBivariate.hasseDerivative_X_mul_zero_xOrder` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L122))
+`CompPoly.CBivariate.hasseDerivative_X_mul_zero_xOrder` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L122))
 
 ```lean
 theorem hasseDerivative_X_mul_zero_xOrder {F : Type*}
@@ -111,7 +111,7 @@ theorem hasseDerivative_X_mul_zero_xOrder {F : Type*}
     hasseDerivative 0 b (X * Q) = X * hasseDerivative 0 b Q
 ```
 
-`CompPoly.CBivariate.hasseDerivative_X_mul_succ_xOrder` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L137))
+`CompPoly.CBivariate.hasseDerivative_X_mul_succ_xOrder` (theorem, [line 137](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L137))
 
 ```lean
 theorem hasseDerivative_X_mul_succ_xOrder {F : Type*}
@@ -121,7 +121,7 @@ theorem hasseDerivative_X_mul_succ_xOrder {F : Type*}
       X * hasseDerivative (a + 1) b Q + hasseDerivative a b Q
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_CC_mul` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L168))
+`CompPoly.CBivariate.hasseDerivativeEval_CC_mul` (theorem, [line 168](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L168))
 
 ```lean
 theorem hasseDerivativeEval_CC_mul {F : Type*}
@@ -131,7 +131,7 @@ theorem hasseDerivativeEval_CC_mul {F : Type*}
       c * hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_sub` (theorem, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L178))
+`CompPoly.CBivariate.hasseDerivativeEval_sub` (theorem, [line 178](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L178))
 
 ```lean
 theorem hasseDerivativeEval_sub {F : Type*}
@@ -141,7 +141,7 @@ theorem hasseDerivativeEval_sub {F : Type*}
       hasseDerivativeEval a b x y P - hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_X_mul_zero_xOrder` (theorem, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L188))
+`CompPoly.CBivariate.hasseDerivativeEval_X_mul_zero_xOrder` (theorem, [line 188](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L188))
 
 ```lean
 theorem hasseDerivativeEval_X_mul_zero_xOrder {F : Type*}
@@ -151,7 +151,7 @@ theorem hasseDerivativeEval_X_mul_zero_xOrder {F : Type*}
       x * hasseDerivativeEval 0 b x y Q
 ```
 
-`CompPoly.CBivariate.hasseDerivativeEval_X_mul_succ_xOrder` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L198))
+`CompPoly.CBivariate.hasseDerivativeEval_X_mul_succ_xOrder` (theorem, [line 198](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L198))
 
 ```lean
 theorem hasseDerivativeEval_X_mul_succ_xOrder {F : Type*}
@@ -162,7 +162,7 @@ theorem hasseDerivativeEval_X_mul_succ_xOrder {F : Type*}
         hasseDerivativeEval a b x y Q
 ```
 
-`CompPoly.GuruswamiSudan.koetterYCap` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L214))
+`CompPoly.GuruswamiSudan.koetterYCap` (definition, [line 214](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L214))
 
 > Finite `Y` cap shared by positive-`Y`-weight interpolation proofs.
 
@@ -170,7 +170,7 @@ theorem hasseDerivativeEval_X_mul_succ_xOrder {F : Type*}
 def koetterYCap (params : GSInterpParams) : Nat
 ```
 
-`CompPoly.GuruswamiSudan.coeff_ofYCoefficient` (theorem, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L217))
+`CompPoly.GuruswamiSudan.coeff_ofYCoefficient` (theorem, [line 217](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L217))
 
 ```lean
 theorem coeff_ofYCoefficient {F : Type*}
@@ -180,7 +180,7 @@ theorem coeff_ofYCoefficient {F : Type*}
       if k = j then P.coeff i else 0
 ```
 
-`CompPoly.GuruswamiSudan.coeff_ofYConstant` (theorem, [line 239](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L239))
+`CompPoly.GuruswamiSudan.coeff_ofYConstant` (theorem, [line 239](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L239))
 
 ```lean
 theorem coeff_ofYConstant {F : Type*}
@@ -190,7 +190,7 @@ theorem coeff_ofYConstant {F : Type*}
       if j = 0 then P.coeff i else 0
 ```
 
-`CompPoly.GuruswamiSudan.coeff_ofYConstant_mul` (theorem, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L260))
+`CompPoly.GuruswamiSudan.coeff_ofYConstant_mul` (theorem, [line 260](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L260))
 
 ```lean
 theorem coeff_ofYConstant_mul {F : Type*}
@@ -200,7 +200,7 @@ theorem coeff_ofYConstant_mul {F : Type*}
       (A * P.val.coeff j).coeff i
 ```
 
-`CompPoly.GuruswamiSudan.natWeightedDegree_ofYConstant_mul_le` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L275))
+`CompPoly.GuruswamiSudan.natWeightedDegree_ofYConstant_mul_le` (theorem, [line 275](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L275))
 
 ```lean
 theorem natWeightedDegree_ofYConstant_mul_le {F : Type*}
@@ -210,7 +210,7 @@ theorem natWeightedDegree_ofYConstant_mul_le {F : Type*}
       A.natDegree + CBivariate.natWeightedDegree P 1 w
 ```
 
-`CompPoly.GuruswamiSudan.validWitness_coeffY_eq_zero_of_yCap_lt` (theorem, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L305))
+`CompPoly.GuruswamiSudan.validWitness_coeffY_eq_zero_of_yCap_lt` (theorem, [line 305](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L305))
 
 ```lean
 theorem validWitness_coeffY_eq_zero_of_yCap_lt {F : Type*}
@@ -222,7 +222,7 @@ theorem validWitness_coeffY_eq_zero_of_yCap_lt {F : Type*}
     Q.val.coeff j = 0
 ```
 
-`CompPoly.GuruswamiSudan.ofYConstant_zero` (theorem, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L332))
+`CompPoly.GuruswamiSudan.ofYConstant_zero` (theorem, [line 332](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L332))
 
 ```lean
 theorem ofYConstant_zero {F : Type*}
@@ -230,7 +230,7 @@ theorem ofYConstant_zero {F : Type*}
     CBivariate.ofYConstant (0 : CPolynomial F) = 0
 ```
 
-`CompPoly.GuruswamiSudan.ofYConstant_add` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L343))
+`CompPoly.GuruswamiSudan.ofYConstant_add` (theorem, [line 343](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L343))
 
 ```lean
 theorem ofYConstant_add {F : Type*}
@@ -240,7 +240,7 @@ theorem ofYConstant_add {F : Type*}
       CBivariate.ofYConstant P + CBivariate.ofYConstant Q
 ```
 
-`CompPoly.GuruswamiSudan.ofYConstant_C` (theorem, [line 356](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L356))
+`CompPoly.GuruswamiSudan.ofYConstant_C` (theorem, [line 356](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L356))
 
 ```lean
 theorem ofYConstant_C {F : Type*}
@@ -248,7 +248,7 @@ theorem ofYConstant_C {F : Type*}
     CBivariate.ofYConstant (CPolynomial.C c) = CBivariate.CC c
 ```
 
-`CompPoly.GuruswamiSudan.ofYConstant_mul` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L361))
+`CompPoly.GuruswamiSudan.ofYConstant_mul` (theorem, [line 361](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L361))
 
 ```lean
 theorem ofYConstant_mul {F : Type*}
@@ -258,7 +258,7 @@ theorem ofYConstant_mul {F : Type*}
       CBivariate.ofYConstant P * CBivariate.ofYConstant Q
 ```
 
-`CompPoly.GuruswamiSudan.ofYConstant_X_mul` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L394))
+`CompPoly.GuruswamiSudan.ofYConstant_X_mul` (theorem, [line 394](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L394))
 
 ```lean
 theorem ofYConstant_X_mul {F : Type*}
@@ -268,7 +268,7 @@ theorem ofYConstant_X_mul {F : Type*}
       CBivariate.X * CBivariate.ofYConstant P
 ```
 
-`CompPoly.GuruswamiSudan.cpoly_eq_zero_of_val_size_eq_zero` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L428))
+`CompPoly.GuruswamiSudan.cpoly_eq_zero_of_val_size_eq_zero` (theorem, [line 428](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L428))
 
 ```lean
 theorem cpoly_eq_zero_of_val_size_eq_zero {F : Type*}
@@ -277,7 +277,7 @@ theorem cpoly_eq_zero_of_val_size_eq_zero {F : Type*}
     P = 0
 ```
 
-`CompPoly.GuruswamiSudan.hasseDerivativeEval_ofYConstant_mul_eq_eval_mul_of_lower` (theorem, [line 440](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L440))
+`CompPoly.GuruswamiSudan.hasseDerivativeEval_ofYConstant_mul_eq_eval_mul_of_lower` (theorem, [line 440](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L440))
 
 ```lean
 theorem hasseDerivativeEval_ofYConstant_mul_eq_eval_mul_of_lower {F : Type*}
@@ -290,7 +290,7 @@ theorem hasseDerivativeEval_ofYConstant_mul_eq_eval_mul_of_lower {F : Type*}
           CPolynomial.eval x A * CBivariate.hasseDerivativeEval order b x y P
 ```
 
-`CompPoly.GuruswamiSudan.hasseDerivativeEval_ofYConstant_mul_eq_zero_of_lower` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L498))
+`CompPoly.GuruswamiSudan.hasseDerivativeEval_ofYConstant_mul_eq_zero_of_lower` (theorem, [line 498](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L498))
 
 ```lean
 theorem hasseDerivativeEval_ofYConstant_mul_eq_zero_of_lower {F : Type*}
@@ -301,7 +301,7 @@ theorem hasseDerivativeEval_ofYConstant_mul_eq_zero_of_lower {F : Type*}
     CBivariate.hasseDerivativeEval order b x y (CBivariate.ofYConstant A * P) = 0
 ```
 
-`CompPoly.GuruswamiSudan.foldl_add_congr_terms` (theorem, [line 510](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L510))
+`CompPoly.GuruswamiSudan.foldl_add_congr_terms` (theorem, [line 510](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L510))
 
 ```lean
 theorem foldl_add_congr_terms {α : Type*} [Add α]
@@ -311,7 +311,7 @@ theorem foldl_add_congr_terms {α : Type*} [Add α]
       xs.foldl (fun out x ↦ out + g x) z
 ```
 
-`CompPoly.GuruswamiSudan.foldl_add_distrib_terms_aux` (theorem, [line 523](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L523))
+`CompPoly.GuruswamiSudan.foldl_add_distrib_terms_aux` (theorem, [line 523](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L523))
 
 ```lean
 theorem foldl_add_distrib_terms_aux {α : Type*} [AddCommMonoid α]
@@ -321,7 +321,7 @@ theorem foldl_add_distrib_terms_aux {α : Type*} [AddCommMonoid α]
         xs.foldl (fun out x ↦ out + g x) b
 ```
 
-`CompPoly.GuruswamiSudan.foldl_add_distrib_terms` (theorem, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L536))
+`CompPoly.GuruswamiSudan.foldl_add_distrib_terms` (theorem, [line 536](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L536))
 
 ```lean
 theorem foldl_add_distrib_terms {α : Type*} [AddCommMonoid α]
@@ -331,7 +331,7 @@ theorem foldl_add_distrib_terms {α : Type*} [AddCommMonoid α]
         xs.foldl (fun out x ↦ out + g x) 0
 ```
 
-`CompPoly.GuruswamiSudan.foldl_add_single_beq_of_not_mem` (theorem, [line 543](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L543))
+`CompPoly.GuruswamiSudan.foldl_add_single_beq_of_not_mem` (theorem, [line 543](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L543))
 
 ```lean
 theorem foldl_add_single_beq_of_not_mem {α : Type*} [AddCommMonoid α]
@@ -341,7 +341,7 @@ theorem foldl_add_single_beq_of_not_mem {α : Type*} [AddCommMonoid α]
       acc
 ```
 
-`CompPoly.GuruswamiSudan.foldl_add_single_beq_of_nodup_mem` (theorem, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L561))
+`CompPoly.GuruswamiSudan.foldl_add_single_beq_of_nodup_mem` (theorem, [line 561](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L561))
 
 ```lean
 theorem foldl_add_single_beq_of_nodup_mem {α : Type*} [AddCommMonoid α]
@@ -351,7 +351,7 @@ theorem foldl_add_single_beq_of_nodup_mem {α : Type*} [AddCommMonoid α]
       term
 ```
 
-`CompPoly.GuruswamiSudan.koetterBasisCombination` (definition, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L586))
+`CompPoly.GuruswamiSudan.koetterBasisCombination` (definition, [line 586](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L586))
 
 ```lean
 def koetterBasisCombination {F : Type*}
@@ -359,7 +359,7 @@ def koetterBasisCombination {F : Type*}
     (weights : Nat → CPolynomial F) (basis : Array (CBivariate F)) : CBivariate F
 ```
 
-`CompPoly.GuruswamiSudan.koetterBasisSpanContains` (definition, [line 592](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L592))
+`CompPoly.GuruswamiSudan.koetterBasisSpanContains` (definition, [line 592](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L592))
 
 ```lean
 def koetterBasisSpanContains {F : Type*}
@@ -367,7 +367,7 @@ def koetterBasisSpanContains {F : Type*}
     (basis : Array (CBivariate F)) (Q : CBivariate F) : Prop
 ```
 
-`CompPoly.GuruswamiSudan.koetterBasisCombination_eq_zero_of_weights_zero` (theorem, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L597))
+`CompPoly.GuruswamiSudan.koetterBasisCombination_eq_zero_of_weights_zero` (theorem, [line 597](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L597))
 
 ```lean
 theorem koetterBasisCombination_eq_zero_of_weights_zero {F : Type*}
@@ -377,7 +377,7 @@ theorem koetterBasisCombination_eq_zero_of_weights_zero {F : Type*}
     koetterBasisCombination weights basis = 0
 ```
 
-`CompPoly.GuruswamiSudan.coeff_koetterBasisCombination` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L623))
+`CompPoly.GuruswamiSudan.coeff_koetterBasisCombination` (theorem, [line 623](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean#L623))
 
 ```lean
 theorem coeff_koetterBasisCombination {F : Type*}
@@ -399,9 +399,9 @@ theorem coeff_koetterBasisCombination {F : Type*}
 ## Proof depends on
 
 - [Guruswami-Sudan Polynomial Correctness Lemmas](../../../polynomialcorrectness.md)
-- [`toPoly` Degree Lemmas](../../../../../univariate/part-02/topoly/degree.md)
+- [Degrees and degree bounds under `toPoly`](../../../../../univariate/part-02/topoly/degree.md)
 
 ## Sources
 
-- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean)
+- [CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Bivariate/GuruswamiSudan/Interpolation/LeeOSullivan/Correctness/Combinations.lean)
 - [Declaration ledger](../../../../../../../sources/comppoly/CompPoly.Bivariate.GuruswamiSudan.Interpolation.LeeOSullivan.Correctness.Combinations.json)

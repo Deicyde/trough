@@ -8,7 +8,7 @@ proof: formalized
 
 # Incompressible fluid flows
 
-The module `Physlib.FluidDynamics.FluidFlow.Incompressible`, [Physlib/FluidDynamics/FluidFlow/Incompressible.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean): 4 declarations, 4 with a docstring.
+The module `Physlib.FluidDynamics.FluidFlow.Incompressible`, [Physlib/FluidDynamics/FluidFlow/Incompressible.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean): 4 declarations, 4 with a docstring.
 
 ## i. Overview
 
@@ -30,7 +30,7 @@ The module `Physlib.FluidDynamics.FluidFlow.Incompressible`, [Physlib/FluidDynam
 
 ## A. Incompressibility predicates
 
-**`FluidDynamics.FluidFlow.incompressibilityResidual`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L52).
+**`FluidDynamics.FluidFlow.incompressibilityResidual`**, a def, [line 52](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L52).
 
 > The incompressibility residual, given by the divergence of the velocity field.
 
@@ -39,7 +39,7 @@ noncomputable def incompressibilityResidual (d : ℕ) (fluid : FluidFlow d) :
     Time → Space d → ℝ
 ```
 
-**`FluidDynamics.FluidFlow.ClassicalIncompressible`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L58).
+**`FluidDynamics.FluidFlow.ClassicalIncompressible`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L58).
 
 > A classical incompressible flow has divergence-free velocity at points where the velocity
 > field is differentiable.
@@ -48,7 +48,7 @@ noncomputable def incompressibilityResidual (d : ℕ) (fluid : FluidFlow d) :
 def ClassicalIncompressible (d : ℕ) (fluid : FluidFlow d) : Prop
 ```
 
-**`FluidDynamics.FluidFlow.SmoothIncompressible`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L64).
+**`FluidDynamics.FluidFlow.SmoothIncompressible`**, a def, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L64).
 
 > A smooth incompressible flow has globally differentiable velocity and vanishing
 > incompressibility residual everywhere.
@@ -57,7 +57,7 @@ def ClassicalIncompressible (d : ℕ) (fluid : FluidFlow d) : Prop
 def SmoothIncompressible (d : ℕ) (fluid : FluidFlow d) : Prop
 ```
 
-**`FluidDynamics.FluidFlow.classicalIncompressible_of_smoothIncompressible`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L69).
+**`FluidDynamics.FluidFlow.classicalIncompressible_of_smoothIncompressible`**, a lemma, [line 69](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean#L69).
 
 > A smooth incompressible flow is classically incompressible.
 
@@ -74,4 +74,4 @@ lemma classicalIncompressible_of_smoothIncompressible
 
 ## Sources
 
-- [Physlib/FluidDynamics/FluidFlow/Incompressible.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/FluidDynamics/FluidFlow/Incompressible.lean)
+- [Physlib/FluidDynamics/FluidFlow/Incompressible.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/FluidDynamics/FluidFlow/Incompressible.lean)

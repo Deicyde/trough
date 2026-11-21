@@ -8,13 +8,13 @@ proof: formalized
 
 # 103.11 Pushforward of quasi-coherent modules
 
-Section 103.11 of the Stacks Project, [Tag 070A](https://stacks.math.columbia.edu/tag/070A). 7 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 103.11 of the Stacks Project, [Tag 070A](https://stacks.math.columbia.edu/tag/070A). 7 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 077A, a proposition
 
 [Tag 077A](https://stacks.math.columbia.edu/tag/077A) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentPullbackDirectImageAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImage.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImage.lean#L244). The attribute's comment: “first assertion: f^* on quasi-coherent modules has the right adjoint f\_\{QCoh,*} = Q ∘ f\_* ∘ i, for every 1-morphism of algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentPullbackDirectImageAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImage.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImage.lean#L244). The attribute's comment: “first assertion: f^* on quasi-coherent modules has the right adjoint f\_\{QCoh,*} = Q ∘ f\_* ∘ i, for every 1-morphism of algebraic stacks”.
 
 > **Stacks 077A, the first assertion: `f^* : QCoh(𝒪_𝒴) ⥤ QCoh(𝒪_𝒳)` has the right adjoint
 > `f_{QCoh,*}`**, defined as the composite of the inclusion, the direct image of modules
@@ -29,7 +29,7 @@ def quasicoherentPullbackDirectImageAdjunction :
     quasicoherentPullback B S hS f ⊣ quasicoherentDirectImage B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentDirectImageIsoComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L143). The attribute's comment: “f\_\{QCoh,*} is the composite QCoh(O\_X) → LQCoh^fbc(O\_X) → LQCoh^fbc(O\_Y) → QCoh(O\_Y) of the inclusion, f\_* of Stacks 0771 and Q of Stacks 0778”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentDirectImageIsoComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L143). The attribute's comment: “f\_\{QCoh,*} is the composite QCoh(O\_X) → LQCoh^fbc(O\_X) → LQCoh^fbc(O\_Y) → QCoh(O\_Y) of the inclusion, f\_* of Stacks 0771 and Q of Stacks 0778”.
 
 > **Stacks 077A**: `f_{QCoh,*}` is the composite
 > `QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒴) → QCoh(𝒪_𝒴)` of the inclusion, the direct image
@@ -45,7 +45,7 @@ def quasicoherentDirectImageIsoComposite :
           ((lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒴).ι ⋙ coherator B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentHigherDirectImageIsoComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L156). The attribute's comment: “R^i f\_\{QCoh,*} is the composite QCoh(O\_X) → LQCoh^fbc(O\_X) → LQCoh^fbc(O\_Y) → QCoh(O\_Y) of the inclusion, R^i f\_* of Stacks 0771 and Q of Stacks 0778”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentHigherDirectImageIsoComposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L156). The attribute's comment: “R^i f\_\{QCoh,*} is the composite QCoh(O\_X) → LQCoh^fbc(O\_X) → LQCoh^fbc(O\_Y) → QCoh(O\_Y) of the inclusion, R^i f\_* of Stacks 0771 and Q of Stacks 0778”.
 
 > **Stacks 077A**: `Rⁱf_{QCoh,*}` is the composite
 > `QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒴) → QCoh(𝒪_𝒴)` of the inclusion, the higher direct
@@ -60,7 +60,7 @@ def quasicoherentHigherDirectImageIsoComposite (i : ℕ) :
           ((lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒴).ι ⋙ coherator B S hS 𝒴)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentHigherDirectImageDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L172). The attribute's comment: “second assertion: \{R^i f\_\{QCoh,*}}\_\{i ≥ 0} forms a cohomological δ-functor QCoh(O\_X) ⥤ QCoh(O\_Y), for f quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentHigherDirectImageDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 172](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L172). The attribute's comment: “second assertion: \{R^i f\_\{QCoh,*}}\_\{i ≥ 0} forms a cohomological δ-functor QCoh(O\_X) ⥤ QCoh(O\_Y), for f quasi-compact and quasi-separated”.
 
 > **Stacks 077A, the second assertion: `{Rⁱf_{QCoh,*}}_{i ≥ 0}` is a cohomological δ-functor**
 > (**Stacks 010Q**) `QCoh(𝒪_𝒳) ⥤ QCoh(𝒪_𝒴)`, for a quasi-compact and quasi-separated 1-morphism
@@ -77,7 +77,7 @@ def quasicoherentHigherDirectImageDeltaFunctor :
 
 [Tag 0GQQ](https://stacks.math.columbia.edu/tag/0GQQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isIso_app_quasicoherentDirectImageOfEtale_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFlatObject.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFlatObject.lean#L224). The attribute's comment: “the canonical comparison, namely the counit of Stacks 0778, is invertible on sections over a flat object: both (f\_*F)(y) = (f\_\{QCoh,*}F)(y) and (R^i f\_*F)(y) = (R^i f\_\{QCoh,*}F)(y), never an unspecified isomorphism. Carried: the middle étale direct image of Stacks 077A on LQCoh^fbc, as data D exactly as in 0GQX; and hker, hcoker, which are Stacks 0779 part (2), its library form needing Stacks 0771 part (2) to reach this reading”.
+**`AlgebraicGeometry.Stack.isIso_app_quasicoherentDirectImageOfEtale_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFlatObject.lean, line 224](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFlatObject.lean#L224). The attribute's comment: “the canonical comparison, namely the counit of Stacks 0778, is invertible on sections over a flat object: both (f\_*F)(y) = (f\_\{QCoh,*}F)(y) and (R^i f\_*F)(y) = (R^i f\_\{QCoh,*}F)(y), never an unspecified isomorphism. Carried: the middle étale direct image of Stacks 077A on LQCoh^fbc, as data D exactly as in 0GQX; and hker, hcoker, which are Stacks 0779 part (2), its library form needing Stacks 0771 part (2) to reach this reading”.
 
 > **Stacks 0GQQ.**  Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks over `S`, let `y` be a flat object of `𝒴` and let `ℱ` be an object of
@@ -132,7 +132,7 @@ theorem isIso_app_quasicoherentDirectImageOfEtale_counit
             (op y))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.bijective_coheratorAdjunction_counit_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L205). The attribute's comment: “(f\_*F)(y) = (f\_\{QCoh,*}F)(y) and (R^i f\_*F)(y) = (R^i f\_\{QCoh,*}F)(y) for f qcqs, y flat and F quasi-coherent: the adjunction maps of the coherator are bijective at y; i ≥ 0, both sides vanishing for i < 0”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.bijective_coheratorAdjunction_counit_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentHigherDirectImageDeltaFunctor.lean#L205). The attribute's comment: “(f\_*F)(y) = (f\_\{QCoh,*}F)(y) and (R^i f\_*F)(y) = (R^i f\_\{QCoh,*}F)(y) for f qcqs, y flat and F quasi-coherent: the adjunction maps of the coherator are bijective at y; i ≥ 0, both sides vanishing for i < 0”.
 
 > **Stacks 0GQQ.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks, `y` an object of `𝒴` such that `y : V → 𝒴` is flat, and `𝓕` a quasi-coherent
@@ -157,7 +157,7 @@ theorem bijective_coheratorAdjunction_counit_directImage (F : quasicoherentModul
 
 [Tag 0GQR](https://stacks.math.columbia.edu/tag/0GQR) in the Stacks Project.
 
-**`AlgebraicGeometry.FibredSite.directImageNaiveCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L250). The attribute's comment: “the vertical arrow c on the right, the naive relative cup product in degree 0”.
+**`AlgebraicGeometry.FibredSite.directImageNaiveCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L250). The attribute's comment: “the vertical arrow c on the right, the naive relative cup product in degree 0”.
 
 > **The naive relative cup product in degree `0`** (Stacks 0FPJ), the right vertical arrow `c`
 > of Stacks 0GQR: `f_*𝓕 ⊗ f_*𝓖 ⟶ f_*(𝓕 ⊗ 𝓖)`, adjoint to the comparison of Stacks 03EL
@@ -177,7 +177,7 @@ def directImageNaiveCupProduct (M N : quasicoherentModules.{u, u + 1, u, u} B S 
           ((quasicoherentSheafTensor B S hS p hp).obj (M, N)))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L336). The attribute's comment: “the left vertical arrow, Q applied to c through the comparison of Remark 0GQM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L336). The attribute's comment: “the left vertical arrow, Q applied to c through the comparison of Remark 0GQM”.
 
 > **The left vertical arrow of Stacks 0GQR**,
 > `f_{QCoh,*}𝓕 ⊗ f_{QCoh,*}𝓖 ⟶ f_{QCoh,*}(𝓕 ⊗ 𝓖)`, for a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
@@ -192,7 +192,7 @@ def quasicoherentCupProduct (𝓕 𝓖 : quasicoherentModules B S hS 𝒳) :
       (Q𝒴).obj ((fStar).obj ((i𝒳).obj ((tensorQ𝒳).obj (𝓕, 𝓖))))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.map_quasicoherentCupProduct_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L396). The attribute's comment: “commutativity of the diagram, for a quasi-compact quasi-separated 1-morphism of algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.map_quasicoherentCupProduct_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 396](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L396). The attribute's comment: “commutativity of the diagram, for a quasi-compact quasi-separated 1-morphism of algebraic stacks”.
 
 > **Stacks 0GQR.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks and let `𝓕`, `𝓖` be quasi-coherent `𝒪_𝒳`-modules. The square
@@ -225,7 +225,7 @@ theorem map_quasicoherentCupProduct_comp_counit
         cupC 𝓕 𝓖
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L413). The attribute's comment: “the construction is functorial in F and G: the left vertical arrow”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 413](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L413). The attribute's comment: “the construction is functorial in F and G: the left vertical arrow”.
 
 > **Stacks 0GQR, functoriality of the left vertical arrow** in `𝓕` and `𝓖`, for a
 > quasi-compact quasi-separated 1-morphism of algebraic stacks.
@@ -238,7 +238,7 @@ theorem quasicoherentCupProduct_natural
       quasicoherentCupProduct B S hS f 𝓕 𝓖 ≫ (fQCoh).map ((tensorQ𝒳).map (a ×ₘ b))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentNaiveCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L428). The attribute's comment: “the construction is functorial in F and G: the arrow c”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentNaiveCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean, line 428](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageCupProduct.lean#L428). The attribute's comment: “the construction is functorial in F and G: the arrow c”.
 
 > **Stacks 0GQR, functoriality of the naive relative cup product `c`** in `𝓕` and `𝓖`, for a
 > quasi-compact quasi-separated 1-morphism of algebraic stacks.
@@ -251,7 +251,7 @@ theorem quasicoherentNaiveCupProduct_natural
       cupC 𝓕 𝓖 ≫ (fStar).map ((i𝒳).map ((tensorQ𝒳).map (a ×ₘ b)))
 ```
 
-**`Stacks.Cohomology.DegreeZeroCupProduct.naiveRelativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L140). The attribute's comment: “the vertical arrow c on the right, for a morphism of ringed topoi”.
+**`Stacks.Cohomology.DegreeZeroCupProduct.naiveRelativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 140](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L140). The attribute's comment: “the vertical arrow c on the right, for a morphism of ringed topoi”.
 
 > **The naive relative cup product in degree zero**, the map
 > `f_*F ⊗_{O_D} f_*G ⟶ f_*(F ⊗_{O_C} G)` adjoint to the comparison of Tag 03EL followed by the
@@ -266,7 +266,7 @@ def naiveRelativeCupProduct
         ((Functor.uncurry.obj (sheafTensor.{u, v, w, w, w} X.O)).obj (F, G))
 ```
 
-**`Stacks.Cohomology.DegreeZeroCupProduct.quasicoherentRelativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L180). The attribute's comment: “the left vertical arrow, over an adjunction with a tensor comparison”.
+**`Stacks.Cohomology.DegreeZeroCupProduct.quasicoherentRelativeCupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L180). The attribute's comment: “the left vertical arrow, over an adjunction with a tensor comparison”.
 
 > The naive relative cup product in degree zero carried through the comparison attached to the
 > adjunction `adj : i ⊣ Q` and the tensor comparison `α`: the canonical map
@@ -280,7 +280,7 @@ def quasicoherentRelativeCupProduct
         ((Functor.uncurry.obj (sheafTensor.{u, v, w, w, w} X.O)).obj (F, G)))
 ```
 
-**`Stacks.Cohomology.DegreeZeroCupProduct.map_quasicoherentRelativeCupProduct_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L192). The attribute's comment: “commutativity of the diagram, over an adjunction with a tensor comparison”.
+**`Stacks.Cohomology.DegreeZeroCupProduct.map_quasicoherentRelativeCupProduct_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L192). The attribute's comment: “commutativity of the diagram, over an adjunction with a tensor comparison”.
 
 > **The square commutes.**  Going right along the upper horizontal
 > arrow — the comparison `α` followed by the counit of `adj` in each tensor factor — and then down
@@ -299,7 +299,7 @@ theorem map_quasicoherentRelativeCupProduct_comp_counit
           naiveRelativeCupProduct f F G
 ```
 
-**`Stacks.Cohomology.DegreeZeroCupProduct.quasicoherentRelativeCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L207). The attribute's comment: “functoriality in the two modules, over an adjunction with a tensor comparison”.
+**`Stacks.Cohomology.DegreeZeroCupProduct.quasicoherentRelativeCupProduct_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean, line 207](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/DegreeZeroCupProductAndCoherator.lean#L207). The attribute's comment: “functoriality in the two modules, over an adjunction with a tensor comparison”.
 
 > **The construction is functorial in the two modules.**
 
@@ -318,7 +318,7 @@ theorem quasicoherentRelativeCupProduct_natural
 
 [Tag 0782](https://stacks.math.columbia.edu/tag/0782) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentLeraySpectralSequence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentLeraySpectralSequence.lean#L84). The attribute's comment: “for f qcqs and F quasi-coherent, a first quadrant spectral sequence E\_2^\{p,q} = H^p(𝒴, R^q f\_\{QCoh,*} F) ⇒ H^\{p+q}(𝒳, F); modules have sections in the universe u of the schemes, and H^p = R^p Hom(𝒪, -) takes values in AddCommGrpCat.\{u + 1}”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentLeraySpectralSequence.lean, line 84](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentLeraySpectralSequence.lean#L84). The attribute's comment: “for f qcqs and F quasi-coherent, a first quadrant spectral sequence E\_2^\{p,q} = H^p(𝒴, R^q f\_\{QCoh,*} F) ⇒ H^\{p+q}(𝒳, F); modules have sections in the universe u of the schemes, and H^p = R^p Hom(𝒪, -) takes values in AddCommGrpCat.\{u + 1}”.
 
 > **Stacks 0782.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks and `ℱ` a quasi-coherent `𝒪_𝒳`-module.  There is a spectral sequence with
@@ -349,7 +349,7 @@ theorem exists_quasicoherentLeraySpectralSequence
 
 [Tag 0783](https://stacks.math.columbia.edu/tag/0783) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentRelativeLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentRelativeLeraySpectralSequence.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentRelativeLeraySpectralSequence.lean#L271). The attribute's comment: “the spectral sequence E\_2^\{p,q} = R^p g\_\{QCoh,*}(R^q f\_\{QCoh,*} F) converging to R^\{p+q}(g ∘ f)\_\{QCoh,*} F for qcqs morphisms of algebraic stacks, modules at the universe u of the schemes”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentRelativeLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentRelativeLeraySpectralSequence.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentRelativeLeraySpectralSequence.lean#L271). The attribute's comment: “the spectral sequence E\_2^\{p,q} = R^p g\_\{QCoh,*}(R^q f\_\{QCoh,*} F) converging to R^\{p+q}(g ∘ f)\_\{QCoh,*} F for qcqs morphisms of algebraic stacks, modules at the universe u of the schemes”.
 
 > **Stacks 0783: the relative Leray spectral sequence for the quasi-coherent direct image.**
 > Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be quasi-compact and quasi-separated 1-morphisms of algebraic
@@ -386,7 +386,7 @@ theorem exists_quasicoherentRelativeLeraySpectralSequence
         (quasicoherentHigherDirectImage B S hS (f ≫ g) n).obj ℱ)
 ```
 
-**`Stacks.Cohomology.Leray.exists_quasicoherentRelativeLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/CoheratorRelativeLeraySpectralSequence.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/CoheratorRelativeLeraySpectralSequence.lean#L340). The attribute's comment: “the E₂ page R^p g\_\{QCoh,*}(R^q f\_\{QCoh,*} ℱ) and convergence, FOR RINGED TOPOI, not algebraic stacks, hence NOT a generalization: 0734 is proved at RingedTopos.\{u,u,u}, a stack's is \{u,u+1,u}. Carried: the 0778 coherators, 0779(3)(2)(1) and 0775(2), the last absent here; 077A is proved for algebraic stacks, not for these ringed topoi, so only its recipe Q ∘ R^i(-)\_* ∘ i is reused. See the module docstring”. References: EGA 0 (12.2.4), “more general”; SGA 2 VIII (3.1), “more general”; SGA 4 V (5.3), “more general”; SGA 4 V (5.4), “more general”; SGA 4½ Arcata (2.3.3), “more general”.
+**`Stacks.Cohomology.Leray.exists_quasicoherentRelativeLeraySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/CoheratorRelativeLeraySpectralSequence.lean, line 340](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/CoheratorRelativeLeraySpectralSequence.lean#L340). The attribute's comment: “the E₂ page R^p g\_\{QCoh,*}(R^q f\_\{QCoh,*} ℱ) and convergence, FOR RINGED TOPOI, not algebraic stacks, hence NOT a generalization: 0734 is proved at RingedTopos.\{u,u,u}, a stack's is \{u,u+1,u}. Carried: the 0778 coherators, 0779(3)(2)(1) and 0775(2), the last absent here; 077A is proved for algebraic stacks, not for these ringed topoi, so only its recipe Q ∘ R^i(-)\_* ∘ i is reused. See the module docstring”. References: EGA 0 (12.2.4), “more general”; SGA 2 VIII (3.1), “more general”; SGA 4 V (5.3), “more general”; SGA 4 V (5.4), “more general”; SGA 4½ Arcata (2.3.3), “more general”.
 
 > **Stacks 0783, the relative Leray spectral sequence for the quasi-coherent direct image.**
 > Let `f : (Sh(C), 𝒪_C) → (Sh(D), 𝒪_D)` and `g : (Sh(D), 𝒪_D) → (Sh(E), 𝒪_E)` be morphisms of
@@ -451,7 +451,7 @@ theorem exists_quasicoherentRelativeLeraySpectralSequence {𝒬Y : Type u₁} [C
 
 [Tag 0784](https://stacks.math.columbia.edu/tag/0784) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfSpectralSequenceData_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean#L123). The attribute's comment: “the E₁ form, which is what Sheaves on Stacks 06XJ gives and what makes the first differential the Čech differential; the tag's own text writes E₂. Stated for an arbitrary sheaf of modules rather than only a quasi-coherent one. Carries the hypothesis that `𝒰` has equalizers, as Tag 06XJ does”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfSpectralSequenceData_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean#L123). The attribute's comment: “the E₁ form, which is what Sheaves on Stacks 06XJ gives and what makes the first differential the Čech differential; the tag's own text writes E₂. Stated for an arbitrary sheaf of modules rather than only a quasi-coherent one. Carries the hypothesis that `𝒰` has equalizers, as Tag 06XJ does”.
 
 > **Stacks 0784.** Let `f : 𝒰 ⟶ 𝒳` be a `1`-morphism of algebraic stacks which is
 > representable by algebraic spaces, surjective, flat and locally of finite presentation, and let
@@ -473,7 +473,7 @@ theorem exists_fppfSpectralSequenceData_module
       (fppfAbelianSheaf B S hS F))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.pageOneIsoModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean#L136). The attribute's comment: “the reading of the E₁ page as the cohomology of the inverse image of the module”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.pageOneIsoModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatCoveringSpectralSequence.lean#L136). The attribute's comment: “the reading of the E₁ page as the cohomology of the inverse image of the module”.
 
 > **Stacks 0784**, the first page. The term of the spectral sequence of a flat presentation in
 > position `(p, q)` is the degree `q` fppf cohomology, on the degree `p` term `𝒰ₚ` of the relative
@@ -499,7 +499,7 @@ def pageOneIsoModule
               𝒳.val.isFiberedInGroupoids SiteKind.fppf)).obj F))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfModuleCechSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatPresentationModuleCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatPresentationModuleCohomology.lean#L79). The attribute's comment: “for an arbitrary sheaf of modules, which contains the quasi-coherent case; the equalizers of `𝒰` needed by Tag 06XJ are Tag 06WY (3), proved for algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_fppfModuleCechSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatPresentationModuleCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatPresentationModuleCohomology.lean#L79). The attribute's comment: “for an arbitrary sheaf of modules, which contains the quasi-coherent case; the equalizers of `𝒰` needed by Tag 06XJ are Tag 06WY (3), proved for algebraic stacks”.
 
 > Let `f : 𝒰 ⟶ 𝒳` be a `1`-morphism of algebraic stacks which is representable by algebraic
 > spaces, surjective, flat and locally of finite presentation, and let `F` be a sheaf of
@@ -539,7 +539,7 @@ theorem exists_fppfModuleCechSpectralSequence
 
 [Tag 0785](https://stacks.math.columbia.edu/tag/0785) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentCoveringSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentCoveringSpectralSequence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentCoveringSpectralSequence.lean#L277). The attribute's comment: “the stated terms sit on the first page: the proof applies Q\_𝒴 to the E₁ spectral sequence of 072G, whose first differential is the Čech differential”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_quasicoherentCoveringSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentCoveringSpectralSequence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentCoveringSpectralSequence.lean#L277). The attribute's comment: “the stated terms sit on the first page: the proof applies Q\_𝒴 to the E₁ spectral sequence of 072G, whose first differential is the Čech differential”.
 
 > **Stacks 0785.** Let `f : 𝒰 ⟶ 𝒳` be a 1-morphism of algebraic stacks which is representable
 > by algebraic spaces, surjective, flat, locally of finite presentation, quasi-compact and
@@ -570,7 +570,7 @@ theorem exists_quasicoherentCoveringSpectralSequence
         (quasicoherentHigherDirectImage B S hS g n.toNat).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.pushforwardPageOneIsoQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/QCohCoveringSpectralSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/QCohCoveringSpectralSequence.lean#L141). The attribute's comment: “the reading of the E₁ page as the higher direct image of the inverse image of the quasi-coherent module, the inverse image being taken as a sheaf of modules and the higher direct image being the abelian one along the morphism of sites”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.pushforwardPageOneIsoQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/QCohCoveringSpectralSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Cech/QCohCoveringSpectralSequence.lean#L141). The attribute's comment: “the reading of the E₁ page as the higher direct image of the inverse image of the quasi-coherent module, the inverse image being taken as a sheaf of modules and the higher direct image being the abelian one along the morphism of sites”.
 
 > **Stacks 0785**, the first page. The term of the covering pushforward spectral sequence of a
 > flat presentation in position `(p, q)` is the degree `q` higher direct image along `g ∘ fₚ` of
@@ -637,4 +637,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 103.11, Tag 070A](https://stacks.math.columbia.edu/tag/070A)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

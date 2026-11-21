@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Recurrence $a(n+2) =… to Expansion of $(1 - x)/(1 - 2 x…
+# Number of primes $p$ such that… to Smallest $r$ such that…
 
+- [Number of primes $p$ such that $2^n \le p \le 2^n + \mathrm{prime}(n)$](../../../../../oeis/part-04/number-of-primes-p-such-that-2-n-le-p-le-2-n-pri.md)
+- [Value of $n$-th cyclotomic polynomial at $n$](../../../../../oeis/part-04/value-of-n-th-cyclotomic-polynomial-at-n.md)
 - [Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation](../../../../../oeis/part-04/recurrence-a-n-2-a-n-1-a-n-a-n-a-n-1-via-concate.md)
 - [Determinant of matrix with entries indicating primality of $i^2 + j^2$](../../../../../oeis/part-04/determinant-of-matrix-with-entries-indicating-pr.md)
 - [Alternating sum of signs of powers of $3/2$](../../../../../oeis/part-04/alternating-sum-of-signs-of-powers-of-3-2.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Smallest palindrome with exactly $n$ divisors](../../../../../oeis/part-05/smallest-palindrome-with-exactly-n-divisors.md)
 - [Smallest prime $p$ such that $p + n$ is an $n$-th power](../../../../../oeis/part-05/smallest-prime-p-such-that-p-n-is-an-n-th-power.md)
 - [Smallest $r$ such that (concatenation of $n$, $r$ times) $\cdot 10 + 1$ is prime](../../../../../oeis/part-05/smallest-r-such-that-concatenation-of-n-r-times.md)
-- [Binary representation of primes that divide a number, in decimal](../../../../../oeis/part-05/binary-representation-of-primes-that-divide-a-nu.md)
-- [Expansion of $(1 - x)/(1 - 2 x + 3 x^2)$](../../../../../oeis/part-05/expansion-of-1-x-1-2-x-3-x-2.md)

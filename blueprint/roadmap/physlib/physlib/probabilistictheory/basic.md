@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory
+lean: ProbabilisticTheory, ProbabilisticTheory.real
 statement: formalized
 proof: formalized
 ---
 
 # Probabilistic theories
 
-The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Basic.lean): 1 declaration, 1 with a docstring.
+The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean): 2 declarations, 2 with a docstring.
 
 > A probabilistic theory is described by its ordered real observables and a certain outcome.
 
@@ -16,19 +16,20 @@ The module `Physlib.ProbabilisticTheory.Basic`, [Physlib/ProbabilisticTheory/Bas
 
 > The observables of a physical system form an ordered real vector space. Positive observables are
 > those whose measured values are never negative. The certain outcome `1` bounds every observable
-> up to a multiple and sets the scale of the theory. The order is Archimedean, so no observable is
-> infinitesimally positive and the certain outcome defines a genuine norm.
+> up to a multiple and sets the scale for measurement outcomes. The order is Archimedean, so no
+> observable is infinitesimally positive and the certain outcome defines a genuine norm.
 
 ## ii. Key results
 
 > - `ProbabilisticTheory` : ordered real observables with a certain outcome and an Archimedean
 >   order.
+> - `ProbabilisticTheory.real` : real-valued outcomes with unit 1.
 
 ## iv. References
 
 ## A. Observable space and certain outcome
 
-**`ProbabilisticTheory`**, a structure, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Basic.lean#L41).
+**`ProbabilisticTheory`**, a structure, [line 43](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean#L43).
 
 > An ordered real observable space with a certain outcome and no infinitesimal observables.
 
@@ -57,10 +58,20 @@ structure ProbabilisticTheory where
     (∀ ε : ℝ, 0 < ε → A ≤ ε • (1 : Observables)) → A ≤ 0
 ```
 
+## B. The real numbers
+
+**`ProbabilisticTheory.real`**, an abbrev, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean#L73).
+
+> The real numbers with their usual order and unit 1.
+
+```lean
+abbrev ProbabilisticTheory.real : ProbabilisticTheory
+```
+
 ## Depends on
 
 Its declarations' statements use no declaration of another module with an article here.
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Basic.lean)
+- [Physlib/ProbabilisticTheory/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Basic.lean)

@@ -6,9 +6,9 @@ statement: formalized
 proof: formalized
 ---
 
-# Convexity and mixtures of effects
+# Convexity and mixtures of effects (Physlib)
 
-The module `Physlib.ProbabilisticTheory.Effect.Convex`, [Physlib/ProbabilisticTheory/Effect/Convex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Convex.lean): 3 declarations, 3 with a docstring.
+The module `Physlib.ProbabilisticTheory.Effect.Convex`, [Physlib/ProbabilisticTheory/Effect/Convex.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Convex.lean): 3 declarations, 3 with a docstring.
 
 > The effect interval is convex, so effects can be mixed with a given probability.
 
@@ -29,35 +29,35 @@ The module `Physlib.ProbabilisticTheory.Effect.Convex`, [Physlib/ProbabilisticTh
 
 ## A. Convexity and mixtures of effects
 
-**`ProbabilisticTheory.Effect.convex`**, a lemma, [line 52](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Convex.lean#L52).
+**`ProbabilisticTheory.Effect.convex`**, a lemma, [line 50](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Convex.lean#L50).
 
 > The effect interval is convex.
 
 ```lean
-lemma convex : Convex ℝ (Effect E)
+lemma convex : Convex ℝ P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.mix`**, a def, [line 55](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Convex.lean#L55).
+**`ProbabilisticTheory.Effect.mix`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Convex.lean#L53).
 
 > Randomize between two effects with probability `t` of testing the first.
 
 ```lean
-def mix (e f : Effect E) (t : unitInterval) : Effect E
+def mix (e f : P.Effect) (t : unitInterval) : P.Effect
 ```
 
-**`ProbabilisticTheory.Effect.coe_mix`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Convex.lean#L61).
+**`ProbabilisticTheory.Effect.coe_mix`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Convex.lean#L59).
 
 > Evaluation of a mixture is the pointwise convex combination.
 
 ```lean
-lemma coe_mix (e f : Effect E) (t : unitInterval) :
-    ((mix e f t : Effect E) : E) = (t : ℝ) • (e : E) + (1 - (t : ℝ)) • (f : E)
+lemma coe_mix (e f : P.Effect) (t : unitInterval) :
+    ((mix e f t : P.Effect) : P.Observables) = (t : ℝ) • e.1 + (1 - (t : ℝ)) • f.1
 ```
 
 ## Depends on
 
-- [Effects](basic.md)
+- [Effects (Physlib)](basic.md)
 
 ## Sources
 
-- [Physlib/ProbabilisticTheory/Effect/Convex.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Effect/Convex.lean)
+- [Physlib/ProbabilisticTheory/Effect/Convex.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/ProbabilisticTheory/Effect/Convex.lean)

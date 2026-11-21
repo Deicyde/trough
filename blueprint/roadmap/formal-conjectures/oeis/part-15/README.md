@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Least $m$ such that $m + n$… to Representations of $n$ as $x^2…
+# Difference between $n \tau(n)$… to Additive decompositions of…
 
+- [Difference between $n \tau(n)$ and $\sum_{d \mid n, d < n} d \tau(d)$](difference-between-n-tau-n-and-sum-d-mid-n-d-n-d.md)
 - [Least $m$ such that $m + n$ divides $\mathrm{prime}(m) + \mathrm{prime}(n)$](least-m-such-that-m-n-divides-prime-m-prime-n.md)
 - [Least $m > 0$ coprime to $n$ such that $mn \mid C(m+n)$](least-m-0-coprime-to-n-such-that-mn-mid-c-m-n.md)
 - [Smallest prime factors of $2^{2^n+2} + 3$](smallest-prime-factors-of-2-2-n-2-3.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Refining Lagrange's four-square theorem with $(5x^2 + 7y^2 + 9z^2)yz$ a square](refining-lagranges-four-square-theorem-with-5x-2.md)
 - [Additive decompositions of $\pi(T(n))$](additive-decompositions-of-pi-t-n.md)
 - [Additive decompositions of $\pi(\frac{n(n+1)}{2} + 1)$](additive-decompositions-of-pi-frac-n-n-1-2-1.md)
-- [Representations of $n$ as $x^2 + \phi(y^2) + \phi(z^2)$](representations-of-n-as-x-2-phi-y-2-phi-z-2.md)

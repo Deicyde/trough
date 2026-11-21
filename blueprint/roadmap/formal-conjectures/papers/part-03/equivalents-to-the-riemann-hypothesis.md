@@ -15,7 +15,7 @@ statement: formalized
 > * [Co26] A. Connes, [The Riemann Hypothesis: Past, Present and a Letter Through
 >   Time](https://arxiv.org/abs/2602.04022), 2026.
 
-*Quoted from [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 10 research or textbook statements: 5 open and 5 solved. It also has 2 API statements, counted here but not shown.
 
@@ -37,7 +37,7 @@ theorem robin_criterion :
     RiemannHypothesis ↔ ∀ n > 5040, σ 1 n < (exp eulerMascheroniConstant) * n * log (log n)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L46).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 46](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L46).
 
 ## `RiemannHypothesis.robin_criterion_rhs`
 
@@ -50,7 +50,7 @@ theorem robin_criterion_rhs {n : ℕ} (hn : n > 5040) :
     σ 1 n < exp eulerMascheroniConstant * n * log (log n)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L52).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L52).
 
 ## `RiemannHypothesis.lagarias_criterion`
 
@@ -74,7 +74,7 @@ theorem lagarias_criterion : RiemannHypothesis ↔
     ∀ n > 1, σ 1 n < harmonic n + exp (harmonic n) * log (harmonic n)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L67).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L67).
 
 ## `RiemannHypothesis.lagarias_criterion_rhs`
 
@@ -87,7 +87,7 @@ theorem lagarias_criterion_rhs {n : ℕ} (hn : 1 < n) :
     σ 1 n < harmonic n + exp (harmonic n) * log (harmonic n)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L73).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L73).
 
 ## `RiemannHypothesis.li_criterion`
 
@@ -105,7 +105,7 @@ Solved: stated here without proof.
 theorem li_criterion : RiemannHypothesis ↔ ∀ n > 0, 0 < lambda n
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L102).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L102).
 
 ## `RiemannHypothesis.li_criterion_rhs`
 
@@ -117,7 +117,7 @@ Open: stated without proof.
 theorem li_criterion_rhs {n : ℕ} (hn : 0 < n) : 0 < lambda n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L107).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L107).
 
 ## `RiemannHypothesis.beurling_nyman_criterion`
 
@@ -134,7 +134,7 @@ theorem beurling_nyman_criterion : RiemannHypothesis ↔
       (hθ : ∀ ν, θ ν ∈ Set.Ioc 0 1) (h : ∑ ν, c ν * θ ν = 0) }
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L136).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L136).
 
 ## `RiemannHypothesis.beurling_nyman_criterion_rhs`
 
@@ -148,7 +148,7 @@ theorem beurling_nyman_criterion_rhs :
       (hθ : ∀ ν, θ ν ∈ Set.Ioc 0 1) (h : ∑ ν, c ν * θ ν = 0) }
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L143).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [28 Measure and integration](../../by-subject/part-01/28-measure-and-integration/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L143).
 
 ## `RiemannHypothesis.weil_positivity_criterion`
 
@@ -174,7 +174,7 @@ theorem weil_positivity_criterion :
         ∑' p : Nat.Primes, weilNonArchimedean p (g ⋆ fun x ↦ g (-x)) ≤ 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L173).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L173).
 
 ## `RiemannHypothesis.weil_positivity_criterion_rhs`
 
@@ -189,7 +189,7 @@ theorem weil_positivity_criterion_rhs {g : C_c(ℝ, ℝ)} (hg : ContDiff ℝ ∞
       ∑' p : Nat.Primes, weilNonArchimedean p (g ⋆ fun x ↦ g (-x)) ≤ 0
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 181](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L181).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean, line 181](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean#L181).
 
 ## Depends on
 
@@ -197,6 +197,6 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean)
+- [FormalConjectures/Paper/RiemannHypothesisEquivalents.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Paper/RiemannHypothesisEquivalents.lean)
 - [The Riemann Hypothesis: Past, Present and a Letter Through
   Time](https://arxiv.org/abs/2602.04022)

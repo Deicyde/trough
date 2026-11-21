@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.20 Cohomological interpretation
 
-Section 64.20 of the Stacks Project, [Tag 03UY](https://stacks.math.columbia.edu/tag/03UY). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 64.20 of the Stacks Project, [Tag 03UY](https://stacks.math.columbia.edu/tag/03UY). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03UZ, a theorem
 
 [Tag 03UZ](https://stacks.math.columbia.edu/tag/03UZ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.lFunction_eq_inv_charSeries_compactSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FiniteCoefficientCohomologicalInterpretation.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FiniteCoefficientCohomologicalInterpretation.lean#L169). References: SGA 4½ Fonctions L (2.2), “Theorem 2.2 case a)”.
+**`Stacks.EtaleCohomology.lFunction_eq_inv_charSeries_compactSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FiniteCoefficientCohomologicalInterpretation.lean, line 169](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FiniteCoefficientCohomologicalInterpretation.lean#L169). References: SGA 4½ Fonctions L (2.2), “Theorem 2.2 case a)”.
 
 > **The cohomological interpretation of the L-function with finite coefficients.** Let `X` be a
 > separated scheme of finite type over a finite field `k`, `k̄` an algebraic closure of `k`, `Λ` a
@@ -39,7 +39,7 @@ theorem lFunction_eq_inv_charSeries_compactSupport
 
 [Tag 03V0](https://stacks.math.columbia.edu/tag/03V0) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LAdicSheaf.nonempty_compactificationOf_and_rationalLFunction_eq_gradedCharSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean#L190). The attribute's comment: “for a Q\_l-sheaf with l invertible in k, X separated (where H^i\_c is defined); H^i\_c through any compactification of X over k (one exists by 0F41)”.
+**`Stacks.EtaleCohomology.LAdicSheaf.nonempty_compactificationOf_and_rationalLFunction_eq_gradedCharSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean#L190). The attribute's comment: “for a Q\_l-sheaf with l invertible in k, X separated (where H^i\_c is defined); H^i\_c through any compactification of X over k (one exists by 0F41)”.
 
 > **[Stacks, Tag 03V0]: the L-function of a `ℚ_ℓ`-sheaf.** Let `X` be a separated scheme of
 > finite type over a finite field `k` with `p ^ q` elements, `k̄` an algebraic closure of `k`, `ℓ` a
@@ -74,7 +74,7 @@ theorem LAdicSheaf.nonempty_compactificationOf_and_rationalLFunction_eq_gradedCh
 
 [Tag 03V1](https://stacks.math.columbia.edu/tag/03V1) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LAdicSheaf.adicLFunction_eq_inv_charSeries_compactSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/AdicLFunctionCohomologicalInterpretation.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/AdicLFunctionCohomologicalInterpretation.lean#L63). The attribute's comment: “the identity for Z\_l coefficients is the l-adic limit of 03UZ at the levels, and it is equivalent to 03V0 for F ⊗ Q\_l since Z\_l has no l-torsion”.
+**`Stacks.EtaleCohomology.LAdicSheaf.adicLFunction_eq_inv_charSeries_compactSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/AdicLFunctionCohomologicalInterpretation.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/AdicLFunctionCohomologicalInterpretation.lean#L63). The attribute's comment: “the identity for Z\_l coefficients is the l-adic limit of 03UZ at the levels, and it is equivalent to 03V0 for F ⊗ Q\_l since Z\_l has no l-torsion”.
 
 > **The ℓ-adic cohomological interpretation of the L-function.** Let `X` be a separated scheme
 > of finite type over a finite field `k`, `k̄` an algebraic closure of `k`, `ℓ` a prime invertible
@@ -125,7 +125,7 @@ public theorem LAdicSheaf.adicLFunction_eq_inv_charSeries_compactSupport (hℓ :
 
 [Tag 03V3](https://stacks.math.columbia.edu/tag/03V3) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isPerfect_compactSupport_and_sum_stalkTrace_eq_compactSupportLefschetzNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaConstructibleFiniteTor.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaConstructibleFiniteTor.lean#L85). The attribute's comment: “`Λ : Type` (universe 0); X in a big étale site; K ∈ D\_ctf(X, Λ) represented by a bounded below complex; RΓ\_c(X\_k̄, K) through any compactification (one exists by 0F41)”. References: SGA 4½ Rapport (4.10), “special case”; SGA 4½ Rapport (5.13), “more general”.
+**`Stacks.EtaleCohomology.isPerfect_compactSupport_and_sum_stalkTrace_eq_compactSupportLefschetzNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaConstructibleFiniteTor.lean, line 85](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaConstructibleFiniteTor.lean#L85). The attribute's comment: “`Λ : Type` (universe 0); X in a big étale site; K ∈ D\_ctf(X, Λ) represented by a bounded below complex; RΓ\_c(X\_k̄, K) through any compactification (one exists by 0F41)”. References: SGA 4½ Rapport (4.10), “special case”; SGA 4½ Rapport (5.13), “more general”.
 
 > **The trace formula ([Stacks, Tag 03V3]).** Let `k` be a finite field with `p ^ q` elements and
 > `k̄` an algebraic closure of `k`, let `X` be a separated scheme of finite type over `k` (of any
@@ -162,7 +162,7 @@ theorem isPerfect_compactSupport_and_sum_stalkTrace_eq_compactSupportLefschetzNu
             canonicalCompactSupportLefschetzNumber.{u, 0} Λ f j kbar p q hcard K hX
 ```
 
-**`Stacks.EtaleCohomology.perfectDerivedTrace_canonicalCompactSupportFrobenius_eq_sum_of_isCtf_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDctfFinal.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDctfFinal.lean#L79). The attribute's comment: “RGamma\_c(X\_kbar, K) is perfect and the trace formula, for K in D\_ctf(X, Lambda)”.
+**`Stacks.EtaleCohomology.perfectDerivedTrace_canonicalCompactSupportFrobenius_eq_sum_of_isCtf_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDctfFinal.lean, line 79](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDctfFinal.lean#L79). The attribute's comment: “RGamma\_c(X\_kbar, K) is perfect and the trace formula, for K in D\_ctf(X, Lambda)”.
 
 > **[Stacks, Tag 03V3]: the trace formula for `D_ctf`.** Let `X` be a separated scheme of finite
 > type over the finite field `k` with `p ^ q` elements, lying in the big étale site `B`, with a
@@ -195,7 +195,7 @@ theorem perfectDerivedTrace_canonicalCompactSupportFrobenius_eq_sum_of_isCtf_of_
 
 [Tag 03V2](https://stacks.math.columbia.edu/tag/03V2) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LAdicSheaf.isZero_rationalGeometricCompactlySupportedCohomology_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L361). The attribute's comment: “the lower half of the degree bound: H^i\_c(X\_kbar, F) = 0 for i < 0”.
+**`Stacks.EtaleCohomology.LAdicSheaf.isZero_rationalGeometricCompactlySupportedCohomology_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 361](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L361). The attribute's comment: “the lower half of the degree bound: H^i\_c(X\_kbar, F) = 0 for i < 0”.
 
 > **`Hⁱ_c(X_k̄, F ⊗ Q_ℓ) = 0` for `i < 0`**, for every ℓ-adic sheaf `F` on a separated scheme of
 > finite type over a field, every extension field `k̄` and every compactification: the lower half
@@ -208,7 +208,7 @@ public theorem LAdicSheaf.isZero_rationalGeometricCompactlySupportedCohomology_o
     IsZero (LAdicSheaf.rationalGeometricCompactlySupportedCohomology B X ℓ f j kbar F i)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.traceFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean#L88). The attribute's comment: “finiteness, the degree bounds 0 <= i <= 2 dim X and the trace formula”. References: SGA 4½ Rapport (2.10), “special case”; SGA 7 I (0.1.1), “Q\_ℓ clause of case 0.1.1”.
+**`Stacks.EtaleCohomology.LAdicSheaf.traceFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LAdicTraceFormulaFinal.lean#L88). The attribute's comment: “finiteness, the degree bounds 0 <= i <= 2 dim X and the trace formula”. References: SGA 4½ Rapport (2.10), “special case”; SGA 7 I (0.1.1), “Q\_ℓ clause of case 0.1.1”.
 
 > **The trace formula for a `ℚ_ℓ`-sheaf.** Let `X` be a separated scheme of finite type over a
 > finite field `k` with `p ^ q` elements, `k̄` an algebraic closure of `k`, `ℓ` a prime with `ℓ ≠ p`
@@ -242,7 +242,7 @@ theorem LAdicSheaf.traceFormula (hℓp : ℓ ≠ p) (F : LAdicSheaf.{u, u + 1} B
 
 [Tag 03V4](https://stacks.math.columbia.edu/tag/03V4) in the Stacks Project.
 
-**`Stacks.InverseSystem.perfectTower_padicTrace_eq_alternating_trace_limitCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/PerfectTower/TraceFormula.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/PerfectTower/TraceFormula.lean#L474). The attribute's comment: “parts (1), (2) and (3)”.
+**`Stacks.InverseSystem.perfectTower_padicTrace_eq_alternating_trace_limitCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/PerfectTower/TraceFormula.lean, line 474](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Homology/DerivedCategory/InverseSystem/PerfectTower/TraceFormula.lean#L474). The attribute's comment: “parts (1), (2) and (3)”.
 
 > **Stacks 03V4.** Let `ℓ` be a prime.  Suppose we have `Kₙ ∈ D_perf(ℤ/ℓⁿ⁺¹ℤ)`,
 > `πₙ : Kₙ → Kₙ` and isomorphisms `φₙ : Kₙ₊₁ ⊗ᴸ_{ℤ/ℓⁿ⁺²ℤ} ℤ/ℓⁿ⁺¹ℤ → Kₙ` compatible with `πₙ₊₁`
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.20, Tag 03UY](https://stacks.math.columbia.edu/tag/03UY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

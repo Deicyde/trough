@@ -8,7 +8,7 @@ proof: formalized
 
 # Normalizing positive-definite functions
 
-The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Normalize`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean): 5 declarations, 5 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Normalize`, [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean): 5 declarations, 5 with a docstring; 1 private, not shown.
 
 > This file records the standard normalization step for positive-definite functions: if `F : M → ℂ` is
 > positive definite and `F 0 ≠ 0`, then multiplying by the reciprocal of the nonnegative real number
@@ -47,7 +47,7 @@ The module `PhyslibAlpha.Mathematics.TauCeti.Analysis.PositiveDefinite.Normalize
 
 ## A. Development
 
-**`TauCeti.IsPositiveDefinite.normalize`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L73).
+**`TauCeti.IsPositiveDefinite.normalize`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L73).
 
 > Multiplying a positive-definite function by the reciprocal of its real value at the origin
 > preserves positive-definiteness. If `F 0 = 0` this gives the zero scaling; the separate
@@ -58,7 +58,7 @@ lemma normalize (hF : IsPositiveDefinite F) :
     IsPositiveDefinite (fun x => (((F 0).re)⁻¹ : ℂ) * F x)
 ```
 
-**`TauCeti.IsPositiveDefinite.normalize_apply_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L79).
+**`TauCeti.IsPositiveDefinite.normalize_apply_zero`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L79).
 
 > The normalized positive-definite function has value `1` at the origin.
 
@@ -67,7 +67,7 @@ lemma normalize_apply_zero (hF : IsPositiveDefinite F) (h0 : F 0 ≠ 0) :
     (((F 0).re)⁻¹ : ℂ) * F 0 = 1
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_add_star_eq_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L88).
+**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_add_star_eq_zero`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L88).
 
 > At points satisfying `a + star a = 0`, the normalized positive-definite function is bounded
 > by `1`. When `F 0 = 0` the normalizing scalar is `0`, so the bound holds trivially.
@@ -78,7 +78,7 @@ lemma norm_normalize_apply_le_one_of_add_star_eq_zero (hF : IsPositiveDefinite F
     ‖(((F 0).re)⁻¹ : ℂ) * F a‖ ≤ 1
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_star_eq_neg`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L108).
+**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_star_eq_neg`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L108).
 
 > Under the negation involution, the normalized positive-definite function is bounded by `1` at
 > every point.
@@ -89,7 +89,7 @@ lemma norm_normalize_apply_le_one_of_star_eq_neg (hH : IsPositiveDefinite H)
     ‖(((H 0).re)⁻¹ : ℂ) * H a‖ ≤ 1
 ```
 
-**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_forall_star_eq_neg`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L115).
+**`TauCeti.IsPositiveDefinite.norm_normalize_apply_le_one_of_forall_star_eq_neg`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean#L115).
 
 > If the involution is negation everywhere, the normalized positive-definite function is
 > uniformly bounded by `1`.
@@ -106,4 +106,4 @@ lemma norm_normalize_apply_le_one_of_forall_star_eq_neg (hH : IsPositiveDefinite
 
 ## Sources
 
-- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean)
+- [PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/TauCeti/Analysis/PositiveDefinite/Normalize.lean)

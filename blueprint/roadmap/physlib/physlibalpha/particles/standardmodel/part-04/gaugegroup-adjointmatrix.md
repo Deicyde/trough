@@ -8,7 +8,7 @@ proof: formalized
 
 # The adjoint matrices of `SU(2)` and `SU(3)`
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.AdjointMatrix`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean): 8 declarations, 7 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.AdjointMatrix`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean): 8 declarations, 7 with a docstring.
 
 ## i. Overview
 
@@ -31,7 +31,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.AdjointMatrix`, [Phy
 
 ## A. The adjoint matrix of `SU(2)`
 
-**`StandardModel.su2AdjointMatrix`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L53).
+**`StandardModel.su2AdjointMatrix`**, a def, [line 53](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L53).
 
 > The adjoint matrix of an element of `SU(2)`: the trace pairing of the Pauli basis of
 > `su(2)` with the Pauli basis conjugated by that element.
@@ -41,7 +41,7 @@ noncomputable def su2AdjointMatrix (U : specialUnitaryGroup (Fin 2) ℂ) :
     Matrix (Fin 3) (Fin 3) ℝ
 ```
 
-**`StandardModel.su2AdjointMatrix_apply`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L62).
+**`StandardModel.su2AdjointMatrix_apply`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L62).
 
 > The entries of the adjoint matrix.
 
@@ -52,7 +52,7 @@ lemma su2AdjointMatrix_apply (U : specialUnitaryGroup (Fin 2) ℂ) (i j : Fin 3)
           (U.1 * pauliMatrix (Sum.inr j) * star U.1))).re
 ```
 
-**`StandardModel.sum_su2AdjointMatrix_row_mul`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L68).
+**`StandardModel.sum_su2AdjointMatrix_row_mul`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L68).
 
 > The rows of the adjoint matrix are orthonormal.
 
@@ -62,7 +62,7 @@ lemma sum_su2AdjointMatrix_row_mul (U : specialUnitaryGroup (Fin 2) ℂ) (c d : 
       = if c = d then 1 else 0
 ```
 
-**`StandardModel.su2AdjointMatrix_inv`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L74).
+**`StandardModel.su2AdjointMatrix_inv`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L74).
 
 > The adjoint matrix of the inverse is the transpose.
 
@@ -73,7 +73,7 @@ lemma su2AdjointMatrix_inv (U : specialUnitaryGroup (Fin 2) ℂ) (a b : Fin 3) :
 
 ## B. The adjoint matrix of `SU(3)`
 
-**`StandardModel.su3AdjointMatrix`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L88).
+**`StandardModel.su3AdjointMatrix`**, a def, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L88).
 
 > The adjoint matrix of `U ∈ SU(3)`: the trace pairing of the Gell-Mann basis with the
 > Gell-Mann basis conjugated by `U`.
@@ -83,7 +83,7 @@ noncomputable def su3AdjointMatrix (U : specialUnitaryGroup (Fin 3) ℂ) :
     Matrix (Fin 8) (Fin 8) ℝ
 ```
 
-**`StandardModel.su3AdjointMatrix_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L94).
+**`StandardModel.su3AdjointMatrix_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L94).
 
 ```lean
 lemma su3AdjointMatrix_apply (U : specialUnitaryGroup (Fin 3) ℂ) (i j : Fin 8) :
@@ -91,7 +91,7 @@ lemma su3AdjointMatrix_apply (U : specialUnitaryGroup (Fin 3) ℂ) (i j : Fin 8)
       = 2⁻¹ * (Matrix.trace (gellMannMatrix i * (U.1 * gellMannMatrix j * star U.1))).re
 ```
 
-**`StandardModel.sum_su3AdjointMatrix_row_mul`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L100).
+**`StandardModel.sum_su3AdjointMatrix_row_mul`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L100).
 
 > The rows of the adjoint matrix are orthonormal.
 
@@ -101,7 +101,7 @@ lemma sum_su3AdjointMatrix_row_mul (U : specialUnitaryGroup (Fin 3) ℂ) (c d : 
       = if c = d then 1 else 0
 ```
 
-**`StandardModel.su3AdjointMatrix_inv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L106).
+**`StandardModel.su3AdjointMatrix_inv`**, a lemma, [line 106](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean#L106).
 
 > The adjoint matrix of the inverse is the transpose.
 
@@ -116,4 +116,4 @@ lemma su3AdjointMatrix_inv (U : specialUnitaryGroup (Fin 3) ℂ) (a b : Fin 8) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean)

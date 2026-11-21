@@ -7,9 +7,9 @@ proof: formalized
 
 # DecidableEqZero
 
-`Cslib.Foundations.Data.DecidableEqZero`, in [Cslib/Foundations/Data/DecidableEqZero.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/DecidableEqZero.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Data.DecidableEqZero`, in [Cslib/Foundations/Data/DecidableEqZero.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/DecidableEqZero.lean), by Fabrizio Montesi.
 
-`Cslib.DecidableEqZero` (abbreviation, [line 18](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/DecidableEqZero.lean#L18))
+`Cslib.DecidableEqZero` (abbreviation, [line 18](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/DecidableEqZero.lean#L18))
 
 > Equality to `Zero` is decidable for all elements of a type (`α`).
 
@@ -23,5 +23,5 @@ Its statements use no other CSLib module's declarations.
 
 ## Sources
 
-- [Cslib/Foundations/Data/DecidableEqZero.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/DecidableEqZero.lean)
+- [Cslib/Foundations/Data/DecidableEqZero.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Data/DecidableEqZero.lean)
 - [Declaration ledger](../../../../sources/cslib/Cslib.Foundations.Data.DecidableEqZero.json)

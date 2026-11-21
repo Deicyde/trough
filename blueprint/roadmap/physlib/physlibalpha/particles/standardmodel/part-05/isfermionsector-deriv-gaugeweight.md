@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge weight decomposition of the fermion sector
 
-The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean): 34 declarations, 33 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.GaugeWeight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean): 34 declarations, 33 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.Deriv.GaugeWeig
 
 ## C. Ranges of symbol maps
 
-**`StandardModel.range_eq_iSup_span`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L70).
+**`StandardModel.range_eq_iSup_span`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L70).
 
 ```lean
 lemma range_eq_iSup_span {M : Type} [AddCommGroup M] [Module ℂ M]
@@ -45,7 +45,7 @@ lemma range_eq_iSup_span {M : Type} [AddCommGroup M] [Module ℂ M]
 
 ## D. The gauge weight decomposition of the derivative submodules
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_d`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L115).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_d`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L115).
 
 > The gauge torus acts diagonally on the `d` symbol components.
 
@@ -57,7 +57,7 @@ lemma repGauge_gaugeTorusGen_d (i : Fin 4) (f : Fin 3) {n : ℕ}
         ((DownSinglet.basis).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_bard`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L125).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_bard`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L125).
 
 > The gauge torus acts diagonally on the `bard` symbol components.
 
@@ -69,7 +69,7 @@ lemma repGauge_gaugeTorusGen_bard (i : Fin 4) (f : Fin 3) {n : ℕ}
         (((Basis.conj DownSinglet.basis)).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_u`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L134).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_u`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L134).
 
 > The gauge torus acts diagonally on the `u` symbol components.
 
@@ -81,7 +81,7 @@ lemma repGauge_gaugeTorusGen_u (i : Fin 4) (f : Fin 3) {n : ℕ}
         ((UpSinglet.basis).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_baru`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L144).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_baru`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L144).
 
 > The gauge torus acts diagonally on the `baru` symbol components.
 
@@ -93,7 +93,7 @@ lemma repGauge_gaugeTorusGen_baru (i : Fin 4) (f : Fin 3) {n : ℕ}
         (((Basis.conj UpSinglet.basis)).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_Q`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L153).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_Q`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L153).
 
 > The gauge torus acts diagonally on the `Q` symbol components.
 
@@ -105,7 +105,7 @@ lemma repGauge_gaugeTorusGen_Q (i : Fin 4) (f : Fin 3) {n : ℕ}
         ((QuarkDoublet.basis).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_barQ`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L163).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_barQ`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L163).
 
 > The gauge torus acts diagonally on the `barQ` symbol components.
 
@@ -117,7 +117,7 @@ lemma repGauge_gaugeTorusGen_barQ (i : Fin 4) (f : Fin 3) {n : ℕ}
         (((Basis.conj QuarkDoublet.basis)).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_L`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L172).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_L`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L172).
 
 > The gauge torus acts diagonally on the `L` symbol components.
 
@@ -129,7 +129,7 @@ lemma repGauge_gaugeTorusGen_L (i : Fin 4) (f : Fin 3) {n : ℕ}
         ((LeptonDoubletV.basis).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_barL`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L182).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_barL`**, a lemma, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L182).
 
 > The gauge torus acts diagonally on the `barL` symbol components.
 
@@ -141,7 +141,7 @@ lemma repGauge_gaugeTorusGen_barL (i : Fin 4) (f : Fin 3) {n : ℕ}
         (((Basis.conj LeptonDoubletV.basis)).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_e`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L191).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_e`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L191).
 
 > The gauge torus acts diagonally on the `e` symbol components.
 
@@ -153,7 +153,7 @@ lemma repGauge_gaugeTorusGen_e (i : Fin 4) (f : Fin 3) {n : ℕ}
         ((LeptonSinglet.basis).coord j)
 ```
 
-**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_bare`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L201).
+**`StandardModel.IsFermionSector.repGauge_gaugeTorusGen_bare`**, a lemma, [line 201](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L201).
 
 > The gauge torus acts diagonally on the `bare` symbol components.
 
@@ -165,7 +165,7 @@ lemma repGauge_gaugeTorusGen_bare (i : Fin 4) (f : Fin 3) {n : ℕ}
         (((Basis.conj LeptonSinglet.basis)).coord j)
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightD`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L210).
+**`StandardModel.IsFermionSector.rangeGaugeWeightD`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L210).
 
 > The gauge weight decomposition of the range of the `d` symbols.
 
@@ -175,7 +175,7 @@ noncomputable def rangeGaugeWeightD (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (d f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarD`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L221).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarD`**, a def, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L221).
 
 > The gauge weight decomposition of the range of the `bard` symbols.
 
@@ -185,7 +185,7 @@ noncomputable def rangeGaugeWeightBarD (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (bard f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightU`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L232).
+**`StandardModel.IsFermionSector.rangeGaugeWeightU`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L232).
 
 > The gauge weight decomposition of the range of the `u` symbols.
 
@@ -195,7 +195,7 @@ noncomputable def rangeGaugeWeightU (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (u f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarU`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L243).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarU`**, a def, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L243).
 
 > The gauge weight decomposition of the range of the `baru` symbols.
 
@@ -205,7 +205,7 @@ noncomputable def rangeGaugeWeightBarU (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (baru f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightQ`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L254).
+**`StandardModel.IsFermionSector.rangeGaugeWeightQ`**, a def, [line 254](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L254).
 
 > The gauge weight decomposition of the range of the `Q` symbols.
 
@@ -215,7 +215,7 @@ noncomputable def rangeGaugeWeightQ (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (Q f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L265).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ`**, a def, [line 265](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L265).
 
 > The gauge weight decomposition of the range of the `barQ` symbols.
 
@@ -225,7 +225,7 @@ noncomputable def rangeGaugeWeightBarQ (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (barQ f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightL`**, a def, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L276).
+**`StandardModel.IsFermionSector.rangeGaugeWeightL`**, a def, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L276).
 
 > The gauge weight decomposition of the range of the `L` symbols.
 
@@ -235,7 +235,7 @@ noncomputable def rangeGaugeWeightL (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (L f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarL`**, a def, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L287).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarL`**, a def, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L287).
 
 > The gauge weight decomposition of the range of the `barL` symbols.
 
@@ -245,7 +245,7 @@ noncomputable def rangeGaugeWeightBarL (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (barL f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightE`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L298).
+**`StandardModel.IsFermionSector.rangeGaugeWeightE`**, a def, [line 298](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L298).
 
 > The gauge weight decomposition of the range of the `e` symbols.
 
@@ -255,7 +255,7 @@ noncomputable def rangeGaugeWeightE (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (e f l))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarE`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L309).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarE`**, a def, [line 309](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L309).
 
 > The gauge weight decomposition of the range of the `bare` symbols.
 
@@ -265,7 +265,7 @@ noncomputable def rangeGaugeWeightBarE (f : Fin 3) {n : ℕ}
     GaugeWeightDecomposition repGauge (LinearMap.range (bare f l))
 ```
 
-**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight`**, an instance, [line 328](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L328).
+**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight`**, an instance, [line 328](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L328).
 
 > **The gauge weight decomposition of the fermion derivative submodules**, for any
 > number of covariant derivatives: the join, over families, derivative slots and the
@@ -284,7 +284,7 @@ noncomputable instance derivSubmoduleGaugeWeight (n : ℕ) :
 
 ## E. The support of the decomposition
 
-**`StandardModel.IsFermionSector.fermionGaugeWeights`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L364).
+**`StandardModel.IsFermionSector.fermionGaugeWeights`**, a def, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L364).
 
 > The gauge weights carried by the fermion symbols: for each species the image of
 > its value weights, negated for the unbarred species (the symbols pair with the dual
@@ -294,7 +294,7 @@ noncomputable instance derivSubmoduleGaugeWeight (n : ℕ) :
 def fermionGaugeWeights : Finset GaugeWeight
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightD_supp`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L377).
+**`StandardModel.IsFermionSector.rangeGaugeWeightD_supp`**, a lemma, [line 377](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L377).
 
 > The support of the `d` range decomposition.
 
@@ -304,7 +304,7 @@ lemma rangeGaugeWeightD_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = Finset.univ.image (fun j : Fin 2 × Fin 3 => -(DownSinglet.valueGaugeWeight j))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarD_supp`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L382).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarD_supp`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L382).
 
 > The support of the `bard` range decomposition.
 
@@ -314,7 +314,7 @@ lemma rangeGaugeWeightBarD_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
       = Finset.univ.image (fun j : Fin 2 × Fin 3 => DownSinglet.valueGaugeWeight j)
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightU_supp`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L387).
+**`StandardModel.IsFermionSector.rangeGaugeWeightU_supp`**, a lemma, [line 387](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L387).
 
 > The support of the `u` range decomposition.
 
@@ -324,7 +324,7 @@ lemma rangeGaugeWeightU_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = Finset.univ.image (fun j : Fin 2 × Fin 3 => -(UpSinglet.valueGaugeWeight j))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarU_supp`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L392).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarU_supp`**, a lemma, [line 392](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L392).
 
 > The support of the `baru` range decomposition.
 
@@ -334,7 +334,7 @@ lemma rangeGaugeWeightBarU_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
       = Finset.univ.image (fun j : Fin 2 × Fin 3 => UpSinglet.valueGaugeWeight j)
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightQ_supp`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L397).
+**`StandardModel.IsFermionSector.rangeGaugeWeightQ_supp`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L397).
 
 > The support of the `Q` range decomposition.
 
@@ -344,7 +344,7 @@ lemma rangeGaugeWeightQ_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = Finset.univ.image (fun j : Fin 2 × Fin 3 × Fin 2 => -(QuarkDoublet.valueGaugeWeight j))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ_supp`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L402).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarQ_supp`**, a lemma, [line 402](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L402).
 
 > The support of the `barQ` range decomposition.
 
@@ -354,7 +354,7 @@ lemma rangeGaugeWeightBarQ_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
       = Finset.univ.image (fun j : Fin 2 × Fin 3 × Fin 2 => QuarkDoublet.valueGaugeWeight j)
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightL_supp`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L407).
+**`StandardModel.IsFermionSector.rangeGaugeWeightL_supp`**, a lemma, [line 407](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L407).
 
 > The support of the `L` range decomposition.
 
@@ -364,7 +364,7 @@ lemma rangeGaugeWeightL_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = Finset.univ.image (fun j : Fin 2 × Fin 2 => -(LeptonDoubletV.valueGaugeWeight j))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarL_supp`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L412).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarL_supp`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L412).
 
 > The support of the `barL` range decomposition.
 
@@ -374,7 +374,7 @@ lemma rangeGaugeWeightBarL_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
       = Finset.univ.image (fun j : Fin 2 × Fin 2 => LeptonDoubletV.valueGaugeWeight j)
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightE_supp`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L417).
+**`StandardModel.IsFermionSector.rangeGaugeWeightE_supp`**, a lemma, [line 417](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L417).
 
 > The support of the `e` range decomposition.
 
@@ -384,7 +384,7 @@ lemma rangeGaugeWeightE_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 
       = Finset.univ.image (fun j : Fin 2 => -(LeptonSinglet.valueGaugeWeight j))
 ```
 
-**`StandardModel.IsFermionSector.rangeGaugeWeightBarE_supp`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L422).
+**`StandardModel.IsFermionSector.rangeGaugeWeightBarE_supp`**, a lemma, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L422).
 
 > The support of the `bare` range decomposition.
 
@@ -394,7 +394,7 @@ lemma rangeGaugeWeightBarE_supp (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
       = Finset.univ.image (fun j : Fin 2 => LeptonSinglet.valueGaugeWeight j)
 ```
 
-**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L430).
+**`StandardModel.IsFermionSector.derivSubmoduleGaugeWeight_supp`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean#L430).
 
 > **The support of the gauge weight decomposition of the fermion derivative
 > submodules**: the gauge weights of the ten species, independent of the number of
@@ -415,4 +415,4 @@ lemma derivSubmoduleGaugeWeight_supp (n : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean)
+- [PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean)

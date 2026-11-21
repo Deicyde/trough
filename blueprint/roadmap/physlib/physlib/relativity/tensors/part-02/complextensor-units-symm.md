@@ -8,13 +8,13 @@ proof: formalized
 
 # Physlib.Relativity.Tensors.ComplexTensor.Units.Symm
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Units.Symm`, [Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean): 6 declarations, 6 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Units.Symm`, [Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean): 6 declarations, 6 with a docstring.
 
 ## Symmetry lemmas relating to units
 
 ## Symmetry properties
 
-**`complexLorentzTensor.coContrUnit_symm`**, a lemma, [line 30](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L30).
+**`complexLorentzTensor.coContrUnit_symm`**, a lemma, [line 30](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L30).
 
 > Swapping indices of `coContrUnit` returns `contrCoUnit`: `{δ' | μ ν = δ | ν μ}ᵀ`.
 
@@ -22,7 +22,7 @@ The module `Physlib.Relativity.Tensors.ComplexTensor.Units.Symm`, [Physlib/Relat
 lemma coContrUnit_symm : {δ' | μ ν = δ | ν μ}ᵀ
 ```
 
-**`complexLorentzTensor.contrCoUnit_symm`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L35).
+**`complexLorentzTensor.contrCoUnit_symm`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L35).
 
 > Swapping indices of `contrCoUnit` returns `coContrUnit`: `{δ | μ ν = δ' | ν μ}ᵀ`.
 
@@ -30,7 +30,7 @@ lemma coContrUnit_symm : {δ' | μ ν = δ | ν μ}ᵀ
 lemma contrCoUnit_symm : {δ | μ ν = δ' | ν μ}ᵀ
 ```
 
-**`complexLorentzTensor.dualLeftLeftUnit_symm`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L41).
+**`complexLorentzTensor.dualLeftLeftUnit_symm`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L41).
 
 > Swapping indices of `dualLeftLeftUnit` returns
 > `leftDualLeftUnit`: `{δL' | α α' = δL | α' α}ᵀ`.
@@ -39,7 +39,7 @@ lemma contrCoUnit_symm : {δ | μ ν = δ' | ν μ}ᵀ
 lemma dualLeftLeftUnit_symm : {δL' | α α' = δL | α' α}ᵀ
 ```
 
-**`complexLorentzTensor.leftDualLeftUnit_symm`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L47).
+**`complexLorentzTensor.leftDualLeftUnit_symm`**, a lemma, [line 47](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L47).
 
 > Swapping indices of `leftDualLeftUnit` returns
 > `dualLeftLeftUnit`: `{δL | α α' = δL' | α' α}ᵀ`.
@@ -48,7 +48,7 @@ lemma dualLeftLeftUnit_symm : {δL' | α α' = δL | α' α}ᵀ
 lemma leftDualLeftUnit_symm : {δL | α α' = δL' | α' α}ᵀ
 ```
 
-**`complexLorentzTensor.dualRightRightUnit_symm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L54).
+**`complexLorentzTensor.dualRightRightUnit_symm`**, a lemma, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L54).
 
 > Swapping indices of `dualRightRightUnit` returns `rightDualRightUnit`:
 > `{δR' | β β' = δR | β' β}ᵀ`.
@@ -57,7 +57,7 @@ lemma leftDualLeftUnit_symm : {δL | α α' = δL' | α' α}ᵀ
 lemma dualRightRightUnit_symm : {δR' | β β' = δR | β' β}ᵀ
 ```
 
-**`complexLorentzTensor.rightDualRightUnit_symm`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L61).
+**`complexLorentzTensor.rightDualRightUnit_symm`**, a lemma, [line 61](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean#L61).
 
 > Swapping indices of `rightDualRightUnit` returns `dualRightRightUnit`:
 > `{δR | β β' = δR' | β' β}ᵀ`.
@@ -72,4 +72,4 @@ lemma rightDualRightUnit_symm : {δR | β β' = δR' | β' β}ᵀ
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean)
+- [Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean)

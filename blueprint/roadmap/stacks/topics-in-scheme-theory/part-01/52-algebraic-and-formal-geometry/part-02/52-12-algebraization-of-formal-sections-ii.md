@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.12 Algebraization of formal sections, II
 
-Section 52.12 of the Stacks Project, [Tag 0EG1](https://stacks.math.columbia.edu/tag/0EG1). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 52.12 of the Stacks Project, [Tag 0EG1](https://stacks.math.columbia.edu/tag/0EG1). 7 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0H48, a lemma
 
 [Tag 0H48](https://stacks.math.columbia.edu/tag/0H48) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_comparisonMap_first_of_middle_and_third`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExact.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExact.lean#L281). The attribute's comment: “first comparison”.
+**`Stacks.Algebraization.isIso_comparisonMap_first_of_middle_and_third`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExact.lean, line 281](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExact.lean#L281). The attribute's comment: “first comparison”.
 
 > For a short exact sequence `0 → F' → F → F'' → 0` of
 > coherent modules on `U = Spec(A) ∖ V(𝔞)` with `A` Noetherian, if the comparison maps of
@@ -29,7 +29,7 @@ theorem isIso_comparisonMap_first_of_middle_and_third
     IsIso (comparisonMap A I a S.X₁)
 ```
 
-**`Stacks.Algebraization.isIso_comparisonMap_middle_of_ends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExactMiddle.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExactMiddle.lean#L1037). The attribute's comment: “middle comparison”.
+**`Stacks.Algebraization.isIso_comparisonMap_middle_of_ends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExactMiddle.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComparisonShortExactMiddle.lean#L1037). The attribute's comment: “middle comparison”.
 
 > **Stacks 0H48, the middle comparison.** For a short exact sequence `0 → F' → F → F'' → 0` of
 > coherent modules on `U = Spec(A) ∖ V(𝔞)` with `A` Noetherian, if the comparison maps of
@@ -47,7 +47,7 @@ theorem isIso_comparisonMap_middle_of_ends (A : Type u) [CommRing A] [IsNoetheri
 
 [Tag 0EIF](https://stacks.math.columbia.edu/tag/0EIF) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_comparisonMap_of_formalSectionsHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationTheorem.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationTheorem.lean#L78).
+**`Stacks.Algebraization.isIso_comparisonMap_of_formalSectionsHypotheses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationTheorem.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationTheorem.lean#L78).
 
 > **Stacks 0EIF.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let `F` be a coherent
 > module on `U = Spec(A) ∖ V(𝔞)`. Assume that `A` is `I`-adically complete and has a dualizing
@@ -66,7 +66,7 @@ public theorem isIso_comparisonMap_of_formalSectionsHypotheses {A : Type u} [Com
     IsIso (comparisonMap A I a F)
 ```
 
-**`Stacks.Algebraization.isIso_comparisonMap_iff_realized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsSerreOneAlternative.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsSerreOneAlternative.lean#L142). The attribute's comment: “REDUCED, not proved: the conclusion holds exactly when every formal section is realized on one neighbourhood. Injectivity is proved outright here; the realization half is NOT proved and NOT assumed — it is the right-hand side of this equivalence. See the coverage note”.
+**`Stacks.Algebraization.isIso_comparisonMap_iff_realized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsSerreOneAlternative.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsSerreOneAlternative.lean#L142). The attribute's comment: “REDUCED, not proved: the conclusion holds exactly when every formal section is realized on one neighbourhood. Injectivity is proved outright here; the realization half is NOT proved and NOT assumed — it is the right-hand side of this equivalence. See the coverage note”.
 
 > The comparison map is an isomorphism exactly when every compatible family of sections of
 > `F / Iⁿ F` on `U` is the comparison of a section of `F` over a single open `V ⊆ U` containing
@@ -84,7 +84,7 @@ public theorem isIso_comparisonMap_iff_realized [IsNoetherianRing A] [F.IsCohere
 
 [Tag 0EG2](https://stacks.math.columbia.edu/tag/0EG2) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_comparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedPointInductionComparison.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedPointInductionComparison.lean#L384). The attribute's comment: “the third condition of Stacks 0EIF removed, by induction on the associated points off V(I). Carried, each in its own generality and none of them this conclusion: Stacks 0EIF (SerreOneAlternativeComparison), the middle clause of Stacks 0H48 (MiddleComparisonOfShortExact), and the short exact sequence the source builds from Stacks 0BK0, 0DX3 and 0AW0 (AssociatedPointSplitting, in which no comparison map occurs). Proved here: the induction, the base case, and the descent of the measure and of conditions (1) and (2) to a submodule”.
+**`Stacks.Algebraization.isIso_comparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedPointInductionComparison.lean, line 384](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/AssociatedPointInductionComparison.lean#L384). The attribute's comment: “the third condition of Stacks 0EIF removed, by induction on the associated points off V(I). Carried, each in its own generality and none of them this conclusion: Stacks 0EIF (SerreOneAlternativeComparison), the middle clause of Stacks 0H48 (MiddleComparisonOfShortExact), and the short exact sequence the source builds from Stacks 0BK0, 0DX3 and 0AW0 (AssociatedPointSplitting, in which no comparison map occurs). Proved here: the induction, the base case, and the descent of the measure and of conditions (1) and (2) to a submodule”.
 
 > **Stacks 0EG2.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let `F` be a coherent
 > module on `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -111,7 +111,7 @@ public theorem isIso_comparisonMap [IsNoetherianRing A]
     IsIso (comparisonMap A I a F)
 ```
 
-**`Stacks.Algebraization.isIso_comparisonMap_of_associatedPointsClosureDimensionBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAssociatedPointInduction.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAssociatedPointInduction.lean#L78).
+**`Stacks.Algebraization.isIso_comparisonMap_of_associatedPointsClosureDimensionBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAssociatedPointInduction.lean, line 78](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAssociatedPointInduction.lean#L78).
 
 > **Stacks 0EG2.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let `F` be a coherent
 > module on `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -137,7 +137,7 @@ public theorem isIso_comparisonMap_of_associatedPointsClosureDimensionBound
 
 [Tag 0EIG](https://stacks.math.columbia.edu/tag/0EIG) in the Stacks Project.
 
-**`Stacks.Algebraization.FormalSectionsII.globalToFormalSections_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean#L252). The attribute's comment: “canonicality of the displayed arrow: its n-th component is reduction mod I^n”.
+**`Stacks.Algebraization.FormalSectionsII.globalToFormalSections_proj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean, line 252](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean#L252). The attribute's comment: “canonicality of the displayed arrow: its n-th component is reduction mod I^n”.
 
 > **The arrow of Stacks 0EIG is canonical**: its `n`-th component is reduction modulo `Iⁿ` of
 > a global section of `F` on `U`, not an arbitrary arrow into the limit.
@@ -148,7 +148,7 @@ theorem globalToFormalSections_proj (n : ℕ) :
       (adicProj (idealSheafNearVanishing A I a) F (op n)).app ⊤
 ```
 
-**`Stacks.Algebraization.FormalSectionsII.isIso_globalToFormalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean#L312). The attribute's comment: “H^0(U,F) = lim H^0(U,F/I^nF); 0EG2 applied, its 3 hypotheses passed through”.
+**`Stacks.Algebraization.FormalSectionsII.isIso_globalToFormalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsAlgebraizationII.lean#L312). The attribute's comment: “H^0(U,F) = lim H^0(U,F/I^nF); 0EG2 applied, its 3 hypotheses passed through”.
 
 > **Stacks 0EIG.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let `F` be a coherent
 > module on `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -196,7 +196,7 @@ theorem isIso_globalToFormalSections [IsNoetherianRing A] [F.IsCoherent]
     IsIso (globalToFormalSections A I a F)
 ```
 
-**`Stacks.Algebraization.FormalSectionsII.isIso_globalToFormalSections_of_depthTwoOffFormalLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsGlobalAlgebraization.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsGlobalAlgebraization.lean#L75).
+**`Stacks.Algebraization.FormalSectionsII.isIso_globalToFormalSections_of_depthTwoOffFormalLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsGlobalAlgebraization.lean, line 75](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/FormalSectionsGlobalAlgebraization.lean#L75).
 
 > **Stacks 0EIG.** Let `I ⊆ 𝔞` be ideals of a Noetherian ring `A` and let `F` be a coherent
 > module on `U = Spec(A) ∖ V(𝔞)`. Assume
@@ -227,7 +227,7 @@ theorem isIso_globalToFormalSections_of_depthTwoOffFormalLocus
 
 [Tag 0EIH](https://stacks.math.columbia.edu/tag/0EIH) in the Stacks Project.
 
-**`Stacks.Algebraization.mono_principalComparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusTagInjectivity.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusTagInjectivity.lean#L219). The attribute's comment: “injectivity”.
+**`Stacks.Algebraization.mono_principalComparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusTagInjectivity.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusTagInjectivity.lean#L219). The attribute's comment: “injectivity”.
 
 > **Stacks 0EIH, the injectivity half.** Let `A` be a Noetherian ring, let `f ∈ A`, let
 > `𝔞 ⊆ A` be an ideal and let `M` be a finite `A`-module. Then the map
@@ -247,7 +247,7 @@ theorem mono_principalComparisonMap (A : Type u) [CommRing A] [IsNoetherianRing 
     Mono (principalComparisonMap A f a M)
 ```
 
-**`Stacks.Algebraization.FormalSections.isIso_formalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalSections/Algebraization.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalSections/Algebraization.lean#L607).
+**`Stacks.Algebraization.FormalSections.isIso_formalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalSections/Algebraization.lean, line 607](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalSections/Algebraization.lean#L607).
 
 > Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` be an element of an ideal of `A`, and let `M`
 > be a finite `A`-module. Assume
@@ -284,7 +284,7 @@ theorem isIso_formalComparison (A : Type u) [CommRing A] [IsNoetherianRing A] (f
 
 [Tag 0H49](https://stacks.math.columbia.edu/tag/0H49) in the Stacks Project.
 
-**`Stacks.Algebraization.isIso_comparisonMap_span_singleton_of_two_lt_closureLocalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusAlgebraization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusAlgebraization.lean#L260).
+**`Stacks.Algebraization.isIso_comparisonMap_span_singleton_of_two_lt_closureLocalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusAlgebraization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusAlgebraization.lean#L260).
 
 > **Stacks Project, Tag 0H49.** Let `A` be a Noetherian ring, let `f ∈ 𝔞 ⊆ A` and let `ℱ` be
 > a coherent module on `U = Spec(A) ∖ V(𝔞)`. Assume `A` is `f`-adically complete and has a
@@ -322,7 +322,7 @@ theorem isIso_comparisonMap_span_singleton_of_two_lt_closureLocalDimension
     IsIso (comparisonMap A (Ideal.span {f}) a F)
 ```
 
-**`Stacks.Algebraization.mono_comparisonMap_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusDimensionCriterion.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusDimensionCriterion.lean#L136). The attribute's comment: “injectivity”.
+**`Stacks.Algebraization.mono_comparisonMap_span_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusDimensionCriterion.lean, line 136](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocusDimensionCriterion.lean#L136). The attribute's comment: “injectivity”.
 
 > **Stacks 0H49, the injectivity half.** For a coherent module `ℱ` on
 > `U = Spec(A) ∖ V(𝔞)` over a Noetherian ring `A` and an element `f ∈ A`, the map
@@ -348,7 +348,7 @@ theorem mono_comparisonMap_span_singleton (A : Type u) [CommRing A] [IsNoetheria
 
 Declarations registered for the tag:
 
-- [`Stacks.Algebraization.ComplementTower.sectionsToLimit_isIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctions.lean#L603), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocus.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocus.lean#L236) (StacksFrontier).
+- [`Stacks.Algebraization.ComplementTower.sectionsToLimit_isIso`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/ComplementFormalFunctions.lean#L603), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocus.lean, line 236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalGeometry/PrincipalFormalLocus.lean#L236) (StacksFrontier).
 
 ## Depends on
 
@@ -357,4 +357,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.12, Tag 0EG1](https://stacks.math.columbia.edu/tag/0EG1)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -22,7 +22,7 @@ statement: formalized
 > - [OEIS A181697](https://oeis.org/A181697), first-kind chain lengths
 > - [OEIS A181715](https://oeis.org/A181715), second-kind chain lengths
 
-*Quoted from [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open. It also has 2 test statements, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem infinitely_many_firstKind_chains (k : ℕ) (hk : 0 < k) :
     Set.Infinite {p : ℕ | IsFirstKindChainOfLength p k}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean#L83).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean#L83).
 
 ## `CunninghamChain.infinitely_many_secondKind_chains`
 
@@ -54,7 +54,7 @@ theorem infinitely_many_secondKind_chains (k : ℕ) (hk : 0 < k) :
     Set.Infinite {p : ℕ | IsSecondKindChainOfLength p k}
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean#L93).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean#L93).
 
 ## Depends on
 
@@ -62,5 +62,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean)
+- [FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/1104.1579/CunninghamChain.lean)
 - [Polynomial Cunningham Chains](https://arxiv.org/abs/1104.1579)

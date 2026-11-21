@@ -8,7 +8,7 @@ proof: formalized
 
 # Green's identity and regularised radial functions
 
-The module `PhyslibAlpha.QuantumMechanics.Hydrogen.GreenIdentity`, [PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean): 18 declarations, 12 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.Hydrogen.GreenIdentity`, [PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean): 18 declarations, 12 with a docstring.
 
 ## i. Overview
 
@@ -35,7 +35,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.GreenIdentity`, [PhyslibAlpha
 
 ## A. Green's identity for smooth functions
 
-**`PhyslibAlpha.Hydrogen.deriv_ofReal`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L60).
+**`PhyslibAlpha.Hydrogen.deriv_ofReal`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L60).
 
 > The derivative of a real function, viewed as a complex function.
 
@@ -44,7 +44,7 @@ lemma deriv_ofReal {d : ℕ} {u : Space d → ℝ} (hu : Differentiable ℝ u) (
     ∂[i] (fun y => (u y : ℂ)) y = ((∂[i] u y : ℝ) : ℂ)
 ```
 
-**`PhyslibAlpha.Hydrogen.deriv_schwartz`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L68).
+**`PhyslibAlpha.Hydrogen.deriv_schwartz`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L68).
 
 > The coordinate derivative of a Schwartz map, as a Schwartz map.
 
@@ -53,7 +53,7 @@ lemma deriv_schwartz {d : ℕ} (f : 𝓢(Space d, ℂ)) (i : Fin d) :
     ∂[i] ⇑f = ⇑(∂_{Space.basis i} f : 𝓢(Space d, ℂ))
 ```
 
-**`PhyslibAlpha.Hydrogen.integral_ofReal_mul_sum_deriv_deriv`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L75).
+**`PhyslibAlpha.Hydrogen.integral_ofReal_mul_sum_deriv_deriv`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L75).
 
 > **Green's identity for smooth functions.** If `u` is `C²` and `u`, `∂ᵢu`, `∂ᵢ∂ᵢu` are
 > polynomially bounded, then `∫ u Σᵢ ∂ᵢ∂ᵢ f = ∫ (Σᵢ ∂ᵢ∂ᵢ u) f` for every Schwartz map `f`.
@@ -68,7 +68,7 @@ lemma integral_ofReal_mul_sum_deriv_deriv {d : ℕ} {u : Space d → ℝ} (hu : 
 
 ## B. Derivatives of radial functions
 
-**`PhyslibAlpha.Hydrogen.deriv_radial_mul`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L138).
+**`PhyslibAlpha.Hydrogen.deriv_radial_mul`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L138).
 
 > `∂ᵢ (G(‖y‖²) Q) = G ∂ᵢQ + Q G' 2yᵢ` at every point, if `G` is differentiable on `[0, ∞)`.
 
@@ -79,7 +79,7 @@ lemma deriv_radial_mul {d : ℕ} {G G' : ℝ → ℝ} (hG : ∀ s, 0 ≤ s → H
       fun y => G (‖y‖ ^ 2) * ∂[i] Q y + Q y * (G' (‖y‖ ^ 2) * (2 * y i))
 ```
 
-**`PhyslibAlpha.Hydrogen.deriv_deriv_radial_mul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L147).
+**`PhyslibAlpha.Hydrogen.deriv_deriv_radial_mul`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L147).
 
 > `∂ᵢ∂ᵢ (G(‖y‖²) Q) = G ∂ᵢ∂ᵢQ + 4 G' yᵢ ∂ᵢQ + (2 G' + 4 yᵢ² G'') Q` at every point.
 
@@ -94,7 +94,7 @@ lemma deriv_deriv_radial_mul {d : ℕ} {G G' G'' : ℝ → ℝ}
 
 ## C. Regularised radial profiles
 
-**`PhyslibAlpha.Hydrogen.regG`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L181).
+**`PhyslibAlpha.Hydrogen.regG`**, a def, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L181).
 
 > The regularised radial profile `s ↦ f(√(s + ε²))`, smooth also at `s = 0`.
 
@@ -102,7 +102,7 @@ lemma deriv_deriv_radial_mul {d : ℕ} {G G' G'' : ℝ → ℝ}
 def regG (f : ℝ → ℝ) (ε s : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.regG'`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L184).
+**`PhyslibAlpha.Hydrogen.regG'`**, a def, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L184).
 
 > The derivative of `regG f ε`.
 
@@ -110,7 +110,7 @@ def regG (f : ℝ → ℝ) (ε s : ℝ) : ℝ
 def regG' (f' : ℝ → ℝ) (ε s : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.regG''`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L188).
+**`PhyslibAlpha.Hydrogen.regG''`**, a def, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L188).
 
 > The second derivative of `regG f ε`.
 
@@ -118,21 +118,21 @@ def regG' (f' : ℝ → ℝ) (ε s : ℝ) : ℝ
 def regG'' (f' f'' : ℝ → ℝ) (ε s : ℝ) : ℝ
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_regG`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L192).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_regG`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L192).
 
 ```lean
 lemma hasDerivAt_regG {f f' : ℝ → ℝ} (hf : ∀ r, 0 < r → HasDerivAt f (f' r) r) {ε s : ℝ}
     (hs : 0 < s + ε ^ 2) : HasDerivAt (regG f ε) (regG' f' ε s) s
 ```
 
-**`PhyslibAlpha.Hydrogen.hasDerivAt_regG'`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L199).
+**`PhyslibAlpha.Hydrogen.hasDerivAt_regG'`**, a lemma, [line 199](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L199).
 
 ```lean
 lemma hasDerivAt_regG' {f' f'' : ℝ → ℝ} (hf : ∀ r, 0 < r → HasDerivAt f' (f'' r) r) {ε s : ℝ}
     (hs : 0 < s + ε ^ 2) : HasDerivAt (regG' f' ε) (regG'' f' f'' ε s) s
 ```
 
-**`PhyslibAlpha.Hydrogen.abs_le_regRadius`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L208).
+**`PhyslibAlpha.Hydrogen.abs_le_regRadius`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L208).
 
 > The regularised radius `√(‖y‖² + ε²)` is at least `|ε|`.
 
@@ -140,14 +140,14 @@ lemma hasDerivAt_regG' {f' f'' : ℝ → ℝ} (hf : ∀ r, 0 < r → HasDerivAt 
 lemma abs_le_regRadius {d : ℕ} (ε : ℝ) (y : Space d) : |ε| ≤ Real.sqrt (‖y‖ ^ 2 + ε ^ 2)
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_regRadius`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L211).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_regRadius`**, a lemma, [line 211](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L211).
 
 ```lean
 lemma isPolyBounded_regRadius {d : ℕ} (ε : ℝ) :
     IsPolyBounded (fun y : Space d => Real.sqrt (‖y‖ ^ 2 + ε ^ 2))
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_poly_exp_regRadius`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L221).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_poly_exp_regRadius`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L221).
 
 > A polynomial in the regularised radius times `e^(-κρ)`, `κ ≥ 0`, is polynomially bounded.
 
@@ -157,14 +157,14 @@ lemma isPolyBounded_poly_exp_regRadius {d : ℕ} (p : Polynomial ℝ) {κ : ℝ}
       p.eval (Real.sqrt (‖y‖ ^ 2 + ε ^ 2)) * Real.exp (-(κ * Real.sqrt (‖y‖ ^ 2 + ε ^ 2))))
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_inv_regRadius`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L229).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_inv_regRadius`**, a lemma, [line 229](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L229).
 
 ```lean
 lemma isPolyBounded_inv_regRadius {d : ℕ} {ε : ℝ} (hε : ε ≠ 0) :
     IsPolyBounded (fun y : Space d => (Real.sqrt (‖y‖ ^ 2 + ε ^ 2))⁻¹)
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_regG`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L237).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_regG`**, a lemma, [line 237](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L237).
 
 > The profiles `G_ε`, `G_ε'`, `G_ε''` of `f(r) = p(r) e^(-κr)` on `‖y‖²` are polynomially
 > bounded for fixed `ε ≠ 0`.
@@ -175,7 +175,7 @@ lemma isPolyBounded_regG {d : ℕ} (p : Polynomial ℝ) {κ : ℝ} (hκ : 0 ≤ 
       regG (fun r => p.eval r * Real.exp (-(κ * r))) ε (‖y‖ ^ 2))
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_regG'`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L242).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_regG'`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L242).
 
 ```lean
 lemma isPolyBounded_regG' {d : ℕ} (q : Polynomial ℝ) {κ : ℝ} (hκ : 0 ≤ κ) {ε : ℝ}
@@ -184,7 +184,7 @@ lemma isPolyBounded_regG' {d : ℕ} (q : Polynomial ℝ) {κ : ℝ} (hκ : 0 ≤
       regG' (fun r => q.eval r * Real.exp (-(κ * r))) ε (‖y‖ ^ 2))
 ```
 
-**`PhyslibAlpha.Hydrogen.isPolyBounded_regG''`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L253).
+**`PhyslibAlpha.Hydrogen.isPolyBounded_regG''`**, a lemma, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L253).
 
 ```lean
 lemma isPolyBounded_regG'' {d : ℕ} (q q' : Polynomial ℝ) {κ : ℝ} (hκ : 0 ≤ κ) {ε : ℝ}
@@ -194,7 +194,7 @@ lemma isPolyBounded_regG'' {d : ℕ} (q q' : Polynomial ℝ) {κ : ℝ} (hκ : 0
         ε (‖y‖ ^ 2))
 ```
 
-**`PhyslibAlpha.Hydrogen.exists_abs_poly_exp_regRadius_le`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L275).
+**`PhyslibAlpha.Hydrogen.exists_abs_poly_exp_regRadius_le`**, a lemma, [line 275](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean#L275).
 
 > A bound for `p(ρ) e^(-κρ)`, `ρ = √(‖y‖² + ε²)`, uniform in `|ε| ≤ 1`.
 
@@ -211,4 +211,4 @@ lemma exists_abs_poly_exp_regRadius_le {d : ℕ} (p : Polynomial ℝ) {κ : ℝ}
 
 ## Sources
 
-- [PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean)
+- [PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean)

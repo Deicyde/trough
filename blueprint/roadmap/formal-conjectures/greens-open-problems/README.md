@@ -1,6 +1,6 @@
 # Green's open problems
 
-The 75 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
+The 76 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -50,13 +50,14 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Green's Open Problem 47](part-02/greens-open-problem-47.md)
 - [Green's Open Problem 49](part-02/greens-open-problem-49.md)
 
-## [Ben Green's Open Problem 50 to Ben Green's Open Problem 75](part-03/README.md)
+## [Ben Green's Open Problem 50 to Ben Green's Open Problem 74](part-03/README.md)
 
 - [Ben Green's Open Problem 50](part-03/ben-greens-open-problem-50.md)
 - [Green's Open Problem 51](part-03/greens-open-problem-51.md)
 - [Green's Open Problem 52](part-03/greens-open-problem-52.md)
 - [Green's Open Problem 53](part-03/greens-open-problem-53.md)
 - [Ben Green's Open Problem 54](part-03/ben-greens-open-problem-54.md)
+- [Ben Green's Open Problem 55](part-03/ben-greens-open-problem-55.md)
 - [Ben Green's Open Problem 57](part-03/ben-greens-open-problem-57.md)
 - [Ben Green's Open Problem 58](part-03/ben-greens-open-problem-58.md)
 - [Ben Green's Open Problem 59](part-03/ben-greens-open-problem-59.md)
@@ -71,10 +72,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 70](part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](part-03/ben-greens-open-problem-72.md)
 - [Ben Green's Open Problem 74](part-03/ben-greens-open-problem-74.md)
-- [Ben Green's Open Problem 75](part-03/ben-greens-open-problem-75.md)
 
-## [Ben Green's Open Problem 76 to Ben Green's Open Problem 100](part-04/README.md)
+## [Ben Green's Open Problem 75 to Ben Green's Open Problem 100](part-04/README.md)
 
+- [Ben Green's Open Problem 75](part-04/ben-greens-open-problem-75.md)
 - [Ben Green's Open Problem 76](part-04/ben-greens-open-problem-76.md)
 - [Ben Green's Open Problem 77](part-04/ben-greens-open-problem-77.md)
 - [Ben Green's Open Problem 82](part-04/ben-greens-open-problem-82.md)
@@ -91,4 +92,4 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 97](part-04/ben-greens-open-problem-97.md)
 - [Ben Green's Open Problem 100](part-04/ben-greens-open-problem-100.md)
 
-No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/81.lean).
+No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/GreensOpenProblems/81.lean).

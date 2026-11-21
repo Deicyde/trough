@@ -7,9 +7,9 @@ proof: formalized
 
 # Panic
 
-`Batteries.Util.Panic`, in [Batteries/Util/Panic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Panic.lean), by François G. Dorais.
+`Batteries.Util.Panic`, in [Batteries/Util/Panic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Panic.lean), by François G. Dorais.
 
-`Batteries.panicWith` (definition, [line 13](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Panic.lean#L13))
+`Batteries.panicWith` (definition, [line 13](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Panic.lean#L13))
 
 > Panic with a specific default value `v`.
 
@@ -17,7 +17,7 @@ proof: formalized
 def panicWith (v : α) (msg : String) : α
 ```
 
-`Batteries.panicWith_eq` (theorem, [line 15](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Panic.lean#L15))
+`Batteries.panicWith_eq` (theorem, [line 15](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Panic.lean#L15))
 
 ```lean
 theorem panicWith_eq (v : α) (msg) : panicWith v msg = v
@@ -29,5 +29,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Util/Panic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/Panic.lean)
+- [Batteries/Util/Panic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/Panic.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Util.Panic.json)

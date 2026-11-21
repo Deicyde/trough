@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.10 Equivariant quasi-coherent sheaves
 
-Section 78.10 of the Stacks Project, [Tag 043S](https://stacks.math.columbia.edu/tag/043S). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 78.10 of the Stacks Project, [Tag 043S](https://stacks.math.columbia.edu/tag/043S). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 043T, a definition
 
 [Tag 043T](https://stacks.math.columbia.edu/tag/043T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.EquivariantQuasicoherentModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentModules.lean#L133).
+**`AlgebraicGeometry.Space.EquivariantQuasicoherentModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentModules.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentModules.lean#L133).
 
 > A `G`-equivariant quasi-coherent `𝒪_X`-module for an action `A` of a group algebraic space
 > `G` over `B` on an algebraic space `X` over `B`: a quasi-coherent `𝒪_X`-module `ℱ` together with
@@ -30,7 +30,7 @@ structure EquivariantQuasicoherentModule (G : GroupAlgebraicSpace 𝒞 S hS B hB
 
 [Tag 043U](https://stacks.math.columbia.edu/tag/043U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.equivariantQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentPullback/Functor.lean, line 600](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentPullback/Functor.lean#L600). References: SGA 3 I (6.3.1), “special case”.
+**`AlgebraicGeometry.Space.equivariantQuasicoherentPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentPullback/Functor.lean, line 600](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/EquivariantQuasicoherentPullback/Functor.lean#L600). References: SGA 3 I (6.3.1), “special case”.
 
 > **Stacks 043U.**  The inverse image along a `G`-equivariant morphism `f : X ⟶ Y` of
 > algebraic spaces over `B` is a functor from the `G`-equivariant quasi-coherent `𝒪_Y`-modules to
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.10, Tag 043S](https://stacks.math.columbia.edu/tag/043S)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

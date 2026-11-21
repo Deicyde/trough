@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.26 Sheaves of modules on algebraic spaces
 
-Section 66.26 of the Stacks Project, [Tag 03LT](https://stacks.math.columbia.edu/tag/03LT). 5 tags here are carried by 38 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 66.26 of the Stacks Project, [Tag 03LT](https://stacks.math.columbia.edu/tag/03LT). 5 tags here are carried by 38 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03LU, an equation
 
 [Tag 03LU](https://stacks.math.columbia.edu/tag/03LU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.moduleSheafFunctor_map_compIsoCongr_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsComp.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsComp.lean#L271). The attribute's comment: “the composition comparison for direct images is the geometric comparison”.
+**`AlgebraicGeometry.Space.moduleSheafFunctor_map_compIsoCongr_hom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsComp.lean, line 271](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsComp.lean#L271). The attribute's comment: “the composition comparison for direct images is the geometric comparison”.
 
 > **Stacks 03LU.**  The comparison `f_* ∘ g_* ≅ (f ≫ g)_*` of direct images of `𝒪`-modules is
 > the geometric comparison `AlgebraicGeometry.Space.smallToposMorphismTypeU_comp` of Stacks 03G2,
@@ -36,7 +36,7 @@ theorem moduleSheafFunctor_map_compIsoCongr_hom_app (f : X ⟶ Y) (g : Y ⟶ Z)
         ((Sheaf.moduleSheafFunctor (structureRingSheaf B S hS X)).obj F)
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardCompIso'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleCompIso.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleCompIso.lean#L154). The attribute's comment: “pushforward composition”.
+**`AlgebraicGeometry.Space.modulePushforwardCompIso'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleCompIso.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModuleCompIso.lean#L154). The attribute's comment: “pushforward composition”.
 
 > **Stacks 03LU, the composition comparison for the direct image of modules.**  The composite of
 > the direct images of `𝒪`-modules along `f : X ⟶ Y` and then `g : Y ⟶ Z` is canonically isomorphic
@@ -61,7 +61,7 @@ noncomputable def modulePushforwardCompIso' (f : X ⟶ Y) (g : Y ⟶ Z) :
       (smallEtaleRingedToposHom B S hS (f ≫ g)).pushforwardModules
 ```
 
-**`AlgebraicGeometry.Space.modulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean#L81). The attribute's comment: “pullback”.
+**`AlgebraicGeometry.Space.modulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean, line 81](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean#L81). The attribute's comment: “pullback”.
 
 > The pullback `f^*G = 𝒪_X ⊗_{f⁻¹𝒪_Y} f⁻¹G` of `𝒪_Y`-modules along a morphism `f : X ⟶ Y`
 > of algebraic spaces: the pullback of Stacks 03D6 along the morphism of small étale ringed topoi
@@ -74,7 +74,7 @@ noncomputable def modulePullback (f : X ⟶ Y) :
     Modules.{u, u} B S hS Y.1 Y.2 ⥤ Modules.{u, u} B S hS X.1 X.2
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean#L209). The attribute's comment: “the adjunction”.
+**`AlgebraicGeometry.Space.modulePullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullback.lean#L209). The attribute's comment: “the adjunction”.
 
 > Pullback of `𝒪`-modules along a morphism of algebraic spaces is left adjoint to the
 > pushforward `AlgebraicGeometry.Space.modulePushforward`: there is a bijection
@@ -85,7 +85,7 @@ noncomputable def modulePullbackAdjunction (f : X ⟶ Y) :
     modulePullback B S hS f ⊣ modulePushforward B S hS f
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L366). The attribute's comment: “pushforward composition”.
+**`AlgebraicGeometry.Space.modulePushforwardCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L366). The attribute's comment: “pushforward composition”.
 
 > The canonical comparison `f_* ∘ g_* ≅ (f ≫ g)_*` of direct images of `𝒪`-modules along a
 > composite of morphisms of algebraic spaces.
@@ -100,7 +100,7 @@ noncomputable def modulePushforwardCompIso (f : X ⟶ Y) (g : Y ⟶ Z) :
       modulePushforward B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L366). The attribute's comment: “the composition comparison for direct images”.
+**`AlgebraicGeometry.Space.modulePushforwardCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 366](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L366). The attribute's comment: “the composition comparison for direct images”.
 
 > The canonical comparison `f_* ∘ g_* ≅ (f ≫ g)_*` of direct images of `𝒪`-modules along a
 > composite of morphisms of algebraic spaces.
@@ -115,7 +115,7 @@ noncomputable def modulePushforwardCompIso (f : X ⟶ Y) (g : Y ⟶ Z) :
       modulePushforward B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L457). The attribute's comment: “pullback composition”.
+**`AlgebraicGeometry.Space.modulePullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L457). The attribute's comment: “pullback composition”.
 
 > The canonical comparison `g^* ∘ f^* ≅ (f ≫ g)^*` of inverse images of `𝒪`-modules along a
 > composite of morphisms of algebraic spaces.
@@ -131,7 +131,7 @@ noncomputable def modulePullbackCompIso (f : X ⟶ Y) (g : Y ⟶ Z) :
     modulePullback B S hS g ⋙ modulePullback B S hS f ≅ modulePullback B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L457). The attribute's comment: “the composition comparison for pullbacks”.
+**`AlgebraicGeometry.Space.modulePullbackCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean, line 457](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackComp.lean#L457). The attribute's comment: “the composition comparison for pullbacks”.
 
 > The canonical comparison `g^* ∘ f^* ≅ (f ≫ g)^*` of inverse images of `𝒪`-modules along a
 > composite of morphisms of algebraic spaces.
@@ -147,7 +147,7 @@ noncomputable def modulePullbackCompIso (f : X ⟶ Y) (g : Y ⟶ Z) :
     modulePullback B S hS g ⋙ modulePullback B S hS f ≅ modulePullback B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardIdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean#L307). The attribute's comment: “the unit law for the direct image”.
+**`AlgebraicGeometry.Space.modulePushforwardIdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean#L307). The attribute's comment: “the unit law for the direct image”.
 
 > **The unit law of Stacks 03LU for the direct image**: the direct image of `𝒪`-modules along
 > an identity morphism of algebraic spaces is the identity functor.
@@ -165,7 +165,7 @@ def modulePushforwardIdIso (X : AlgebraicSpaces B S hS) :
     modulePushforward B S hS (𝟙 X) ≅ 𝟭 (Modules.{u, u} B S hS X.1 X.2)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean#L323). The attribute's comment: “the unit law: the inverse image of modules along an identity is the identity functor”.
+**`AlgebraicGeometry.Space.modulePullbackIdIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePullbackId.lean#L323). The attribute's comment: “the unit law: the inverse image of modules along an identity is the identity functor”.
 
 > **The unit law of Stacks 03LU**: the inverse image of `𝒪`-modules along an identity morphism
 > of algebraic spaces is the identity functor.
@@ -180,7 +180,7 @@ def modulePullbackIdIso (X : AlgebraicSpaces B S hS) :
     modulePullback B S hS (𝟙 X) ≅ 𝟭 (Modules.{u, u} B S hS X.1 X.2)
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardCompIsoAssoc.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardCompIsoAssoc.lean#L287). The attribute's comment: “the associativity of the composition comparison for direct images”.
+**`AlgebraicGeometry.Space.modulePushforwardCompIso_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardCompIsoAssoc.lean, line 287](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardCompIsoAssoc.lean#L287). The attribute's comment: “the associativity of the composition comparison for direct images”.
 
 > **Stacks 03LU, associativity of the composition comparison for direct images.**  For three
 > composable morphisms `f : W ⟶ X`, `g : X ⟶ Y`, `h : Y ⟶ Z` of algebraic spaces the two ways of
@@ -202,7 +202,7 @@ theorem modulePushforwardCompIso_assoc (f : W ⟶ X) (g : X ⟶ Y) (h : Y ⟶ Z)
         modulePushforwardCompIso B S hS (f ≫ g) h
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardCoherence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardIdIso.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardIdIso.lean#L45). The attribute's comment: “the pseudofunctoriality of the direct image, assembled: the identity comparison together with the associativity and the two unit laws of the composition comparison, as one datum with no hypothesis”.
+**`AlgebraicGeometry.Space.modulePushforwardCoherence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardIdIso.lean, line 45](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleModulePushforwardIdIso.lean#L45). The attribute's comment: “the pseudofunctoriality of the direct image, assembled: the identity comparison together with the associativity and the two unit laws of the composition comparison, as one datum with no hypothesis”.
 
 > **Pseudofunctoriality of the direct image of `𝒪`-modules of Stacks 03LU, with no
 > hypothesis.**  The identity datum is
@@ -214,7 +214,7 @@ theorem modulePushforwardCompIso_assoc (f : W ⟶ X) (g : X ⟶ Y) (h : Y ⟶ Z)
 noncomputable def modulePushforwardCoherence : ModulePushforwardCoherence B S hS
 ```
 
-**`AlgebraicGeometry.Space.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureMapSharp.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureMapSharp.lean#L573). The attribute's comment: “pushforward”.
+**`AlgebraicGeometry.Space.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureMapSharp.lean, line 573](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/StructureMapSharp.lean#L573). The attribute's comment: “pushforward”.
 
 > **Stacks 03D6, part (1)**, unconditionally, and the direct-image half of Stacks 03LU: the
 > direct image of `𝒪_X`-modules along a morphism of algebraic spaces, read as `𝒪_Y`-modules by
@@ -237,7 +237,7 @@ noncomputable def modulePushforward (f : X ⟶ Y) :
 
 [Tag 03LV](https://stacks.math.columbia.edu/tag/03LV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.etaleInverseImageStructureSheafIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleInverseImageStructureSheaf.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleInverseImageStructureSheaf.lean#L154). The attribute's comment: “the canonical structure map”.
+**`AlgebraicGeometry.Space.etaleInverseImageStructureSheafIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleInverseImageStructureSheaf.lean, line 154](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleInverseImageStructureSheaf.lean#L154). The attribute's comment: “the canonical structure map”.
 
 > The forward map of `AlgebraicGeometry.Space.etaleInverseImageStructureSheafIso` is the
 > inverse-image form of the structure map of Stacks 03G8.  This is what makes that isomorphism the
@@ -249,7 +249,7 @@ theorem etaleInverseImageStructureSheafIso_hom (h : U ⟶ V) (hh : IsEtale B S h
       (smallEtaleRingedToposHom B S hS h).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “pullback of modules is inverse image”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “pullback of modules is inverse image”.
 
 > **Stacks 03LV.** Along an étale morphism of algebraic spaces, the pullback of `𝒪_Y`-modules
 > of Stacks 03LU is naturally isomorphic to the inverse image of modules with its scalars
@@ -260,7 +260,7 @@ noncomputable def modulePullbackIsoEtaleModuleInverseImage :
     modulePullback B S hS f ≅ etaleModuleInverseImage B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L178). The attribute's comment: “canonical module comparison”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 178](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L178). The attribute's comment: “canonical module comparison”.
 
 > **Stacks 03LV.** The comparison of the pullback of modules with the inverse image sends the
 > canonical image of every section of the inverse image to that same section.  This specifies the
@@ -281,7 +281,7 @@ theorem modulePullbackIsoEtaleModuleInverseImage_unit_app
       m
 ```
 
-**`AlgebraicGeometry.Space.modulePullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L200). The attribute's comment: “exactness”.
+**`AlgebraicGeometry.Space.modulePullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 200](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L200). The attribute's comment: “exactness”.
 
 > **Stacks 03LV.** Pullback of sheaves of modules along an étale morphism of algebraic spaces
 > is exact.  Through the comparison with the inverse image both halves are the exactness of the
@@ -294,7 +294,7 @@ theorem modulePullback_exact :
       (modulePullback B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “the identification f^*G = G|\_\{X\_étale}”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “the identification f^*G = G|\_\{X\_étale}”.
 
 > **Stacks Equation 03LW, that is clause (2) of Stacks 03LV.**  Along an étale morphism
 > `f : X ⟶ Y` of algebraic spaces the pullback of `𝒪_Y`-modules of Stacks 03LU is naturally
@@ -310,7 +310,7 @@ noncomputable def modulePullbackIsoEtaleModulePullback :
     modulePullback B S hS f ≅ etaleModulePullback.{u, u} B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.isIso_fSharpInverseImage_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L377). The attribute's comment: “the inverse image of the structure sheaf, h⁻¹𝒪\_V = 𝒪\_U”.
+**`AlgebraicGeometry.Space.isIso_fSharpInverseImage_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 377](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L377). The attribute's comment: “the inverse image of the structure sheaf, h⁻¹𝒪\_V = 𝒪\_U”.
 
 > **Stacks 03LV.** For an étale morphism of algebraic spaces the inverse-image form
 > `f⁻¹𝒪_Y ⟶ 𝒪_X` of the structure map of the morphism of small étale ringed topoi of Stacks 03G8
@@ -326,7 +326,7 @@ theorem isIso_fSharpInverseImage_of_isEtale :
     IsIso (smallEtaleRingedToposHom B S hS f).fSharpInverseImage
 ```
 
-**`AlgebraicGeometry.Space.etaleStructureSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L424). The attribute's comment: “inverse image of the structure sheaf”.
+**`AlgebraicGeometry.Space.etaleStructureSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 424](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L424). The attribute's comment: “inverse image of the structure sheaf”.
 
 > **Stacks 03LV.** For an étale morphism of algebraic spaces the inverse image of the
 > structure sheaf of the target along the morphism of small étale ringed topoi of Stacks 03G8 is
@@ -339,7 +339,7 @@ noncomputable def etaleStructureSheafIso :
       (smallEtaleRingedTopos B S hS Y).O ≅ (smallEtaleRingedTopos B S hS X).O
 ```
 
-**`AlgebraicGeometry.Space.etaleStructureSheafIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L435). The attribute's comment: “canonical structure map”.
+**`AlgebraicGeometry.Space.etaleStructureSheafIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 435](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L435). The attribute's comment: “canonical structure map”.
 
 > **Stacks 03LV.** The forward map of the canonical isomorphism of structure sheaves along an
 > étale morphism is the inverse-image form of the structure map; the isomorphism is not an extra
@@ -355,7 +355,7 @@ theorem etaleStructureSheafIso_hom :
 
 [Tag 03LW](https://stacks.math.columbia.edu/tag/03LW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “the identification f^*G = f\_small^\{-1}G along an étale morphism”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “the identification f^*G = f\_small^\{-1}G along an étale morphism”.
 
 > **Stacks 03LV.** Along an étale morphism of algebraic spaces, the pullback of `𝒪_Y`-modules
 > of Stacks 03LU is naturally isomorphic to the inverse image of modules with its scalars
@@ -366,7 +366,7 @@ noncomputable def modulePullbackIsoEtaleModuleInverseImage :
     modulePullback B S hS f ≅ etaleModuleInverseImage B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.etaleModuleInverseImageIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L341). The attribute's comment: “the inverse image of modules is étale restriction”.
+**`AlgebraicGeometry.Space.etaleModuleInverseImageIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 341](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L341). The attribute's comment: “the inverse image of modules is étale restriction”.
 
 > **Stacks' Equation 03LW**, the outer identification `G|_{X_étale} = f_{small}^{-1}G`: the
 > inverse image of `𝒪_Y`-modules along an étale morphism, read over `𝒪_X` through the canonical
@@ -377,7 +377,7 @@ noncomputable def etaleModuleInverseImageIsoEtaleModulePullback :
     etaleModuleInverseImage B S hS f hf ≅ etaleModulePullback.{u, u} B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “pullback of modules along an étale morphism is étale restriction”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “pullback of modules along an étale morphism is étale restriction”.
 
 > **Stacks Equation 03LW, that is clause (2) of Stacks 03LV.**  Along an étale morphism
 > `f : X ⟶ Y` of algebraic spaces the pullback of `𝒪_Y`-modules of Stacks 03LU is naturally
@@ -393,7 +393,7 @@ noncomputable def modulePullbackIsoEtaleModulePullback :
     modulePullback B S hS f ≅ etaleModulePullback.{u, u} B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L385). The attribute's comment: “canonical module comparison”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 385](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L385). The attribute's comment: “canonical module comparison”.
 
 > **Stacks Equation 03LW, canonicity.**  The comparison of the pullback of modules with étale
 > restriction sends the canonical image of a section of the inverse image of modules to the
@@ -425,7 +425,7 @@ theorem modulePullbackIsoEtaleModulePullback_unit_app (G : Modules.{u, u} B S hS
 
 [Tag 03LX](https://stacks.math.columbia.edu/tag/03LX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_moduleEtaleBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean#L723). The attribute's comment: “the ordinary direct image, for the CANONICAL comparison map and for an ÉTALE square: g étale, not merely flat, so this is a special case of Stacks 073K part (1) and not that tag. The existing 03LX attributes carry isomorphisms with the right endpoints that are not identified with the canonical map”.
+**`AlgebraicGeometry.Space.isIso_moduleEtaleBaseChangeComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean, line 723](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModuleEtaleBaseChangeHFace.lean#L723). The attribute's comment: “the ordinary direct image, for the CANONICAL comparison map and for an ÉTALE square: g étale, not merely flat, so this is a special case of Stacks 073K part (1) and not that tag. The existing 03LX attributes carry isomorphisms with the right endpoints that are not identified with the canonical map”.
 
 > **Stacks 03LX for the ordinary direct image, read as a statement about the canonical map, in
 > the étale case.**  For a cartesian square of algebraic spaces whose bottom arrow `g` is étale,
@@ -453,7 +453,7 @@ theorem isIso_moduleEtaleBaseChangeComparison (sq : IsPullback i f' f g)
     IsIso (moduleEtaleBaseChangeComparison B S hS i f' f g sq hg)
 ```
 
-**`AlgebraicGeometry.Space.moduleHigherPushforwardEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean#L147). The attribute's comment: “the higher direct images”.
+**`AlgebraicGeometry.Space.moduleHigherPushforwardEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean, line 147](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModuleHigherPushforwardEtaleBaseChange.lean#L147). The attribute's comment: “the higher direct images”.
 
 > Let
 >
@@ -482,7 +482,7 @@ noncomputable def moduleHigherPushforwardEtaleBaseChangeIso (sq : IsPullback i f
       (modulePushforward B S hS f).rightDerived n ⋙ etaleModulePullback B S hS g hg
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardEtaleBaseChange.lean, line 820](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardEtaleBaseChange.lean#L820). The attribute's comment: “the footnote, with both restrictions read as the inverse image of modules (Stacks 03LW)”.
+**`AlgebraicGeometry.Space.modulePullbackSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardEtaleBaseChange.lean, line 820](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ModulePushforwardEtaleBaseChange.lean#L820). The attribute's comment: “the footnote, with both restrictions read as the inverse image of modules (Stacks 03LW)”.
 
 > **Stacks 03LX, the footnote.** For a commutative — in particular a cartesian — square
 >
@@ -518,7 +518,7 @@ noncomputable def modulePullbackSquareIso (sq : IsPullback i f' f g) :
       modulePullback B S hS f ⋙ modulePullback B S hS i
 ```
 
-**`AlgebraicGeometry.Space.modulePushforwardEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSharpBaseChange.lean, line 826](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StructureSharpBaseChange.lean#L826). The attribute's comment: “the ordinary direct image”.
+**`AlgebraicGeometry.Space.modulePushforwardEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StructureSharpBaseChange.lean, line 826](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/StructureSharpBaseChange.lean#L826). The attribute's comment: “the ordinary direct image”.
 
 > **Stacks 03LX, the ordinary direct image, unconditionally.**  Let
 >
@@ -569,7 +569,7 @@ noncomputable def modulePushforwardEtaleBaseChangeIso (sq : IsPullback i f' f g)
 
 [Tag 03LY](https://stacks.math.columbia.edu/tag/03LY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L244). The attribute's comment: “the chartwise pullback of modules”.
+**`AlgebraicGeometry.Space.chartModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L244). The attribute's comment: “the chartwise pullback of modules”.
 
 > **Stacks 03LY.** The pullback of `𝒪`-modules of Stacks 03LU along the morphism of algebraic
 > spaces represented by a morphism of étale scheme charts of `X`.  This is the functor
@@ -581,7 +581,7 @@ noncomputable def chartModuleInverseImage {V U : SmallEtale B S hS X.1} (f : V �
       Modules.{u, u} B S hS (chartSpace B S hS X V).1 (chartSpace B S hS X V).2
 ```
 
-**`AlgebraicGeometry.Space.chartModuleInverseImageComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L256). The attribute's comment: “canonical comparison of chartwise pullbacks”.
+**`AlgebraicGeometry.Space.chartModuleInverseImageComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 256](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L256). The attribute's comment: “canonical comparison of chartwise pullbacks”.
 
 > **Stacks 03LY.** The canonical comparison of successive chartwise pullbacks of modules with
 > the pullback along the composite morphism of charts: it is the composition comparison of
@@ -597,7 +597,7 @@ noncomputable def chartModuleInverseImageComp {W V U : SmallEtale B S hS X.1} (f
       chartModuleInverseImage B S hS X (g ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.chartModuleRestrictionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L274). The attribute's comment: “compatibility of chart restriction with the chartwise pullback”.
+**`AlgebraicGeometry.Space.chartModuleRestrictionComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 274](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L274). The attribute's comment: “compatibility of chart restriction with the chartwise pullback”.
 
 > **Stacks 03LY.** Restriction of a module to a chart commutes canonically with further
 > chartwise pullback along a morphism of charts: the composite of the structure morphism of the
@@ -609,7 +609,7 @@ noncomputable def chartModuleRestrictionComp {V U : SmallEtale B S hS X.1} (f : 
       chartModuleRestriction B S hS X V
 ```
 
-**`AlgebraicGeometry.Space.ChartModuleGlueingData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L337). The attribute's comment: “the data (1), (2) and the cocycle condition”.
+**`AlgebraicGeometry.Space.ChartModuleGlueingData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L337). The attribute's comment: “the data (1), (2) and the cocycle condition”.
 
 > **The data of Stacks 03LY**: a sheaf of `𝒪_U`-modules on the small étale site of every étale
 > scheme chart `U` of `X`, transition isomorphisms along the chartwise pullbacks of modules, and
@@ -619,7 +619,7 @@ noncomputable def chartModuleRestrictionComp {V U : SmallEtale B S hS X.1} (f : 
 structure ChartModuleGlueingData
 ```
 
-**`AlgebraicGeometry.Space.chartModuleRestrictionComp_cocycle_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L449). The attribute's comment: “the cocycle condition for the chartwise restrictions of a module”.
+**`AlgebraicGeometry.Space.chartModuleRestrictionComp_cocycle_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L449). The attribute's comment: “the cocycle condition for the chartwise restrictions of a module”.
 
 > **Stacks 03LY, the cocycle condition for the chartwise restrictions.**  For composable
 > morphisms `g : W ⟶ V` and `f : V ⟶ U` of étale scheme charts of `X` and an `𝒪_X`-module `F`, the
@@ -642,7 +642,7 @@ theorem chartModuleRestrictionComp_cocycle_app (F : Modules.{u, u} B S hS X.1 X.
         ((chartModuleRestrictionComp B S hS X (g ≫ f)).app F).hom
 ```
 
-**`AlgebraicGeometry.Space.isChartModuleCocycle_chartModuleRestrictionTransitionFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L556). The attribute's comment: “the cocycle condition for the chartwise restrictions, as a term of the predicate”.
+**`AlgebraicGeometry.Space.isChartModuleCocycle_chartModuleRestrictionTransitionFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 556](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L556). The attribute's comment: “the cocycle condition for the chartwise restrictions, as a term of the predicate”.
 
 > **The cocycle condition of Stacks 03LY for the chartwise restrictions of an `𝒪_X`-module, as
 > a term of the predicate.**  This is
@@ -657,7 +657,7 @@ theorem isChartModuleCocycle_chartModuleRestrictionTransitionFamily
       (chartModuleRestrictionTransitionFamily B S hS X F)
 ```
 
-**`AlgebraicGeometry.Space.canonicalChartModuleGlueingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 573](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L573). The attribute's comment: “the chartwise glueing datum of a module”.
+**`AlgebraicGeometry.Space.canonicalChartModuleGlueingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 573](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L573). The attribute's comment: “the chartwise glueing datum of a module”.
 
 > **The chartwise glueing datum of an `𝒪_X`-module**: its restrictions to the étale scheme
 > charts of `X`, the comparisons `AlgebraicGeometry.Space.chartModuleRestrictionComp` as the
@@ -668,7 +668,7 @@ noncomputable def canonicalChartModuleGlueingData (F : Modules.{u, u} B S hS X.1
     ChartModuleGlueingData B S hS X
 ```
 
-**`AlgebraicGeometry.Space.chartModuleGlueingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 597](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L597). The attribute's comment: “the canonical chartwise description of modules”.
+**`AlgebraicGeometry.Space.chartModuleGlueingFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean, line 597](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueing.lean#L597). The attribute's comment: “the canonical chartwise description of modules”.
 
 > **The canonical chartwise description of `𝒪_X`-modules**: the functor sending an
 > `𝒪_X`-module to the family of its restrictions to the étale scheme charts of `X`, with the
@@ -680,7 +680,7 @@ noncomputable def chartModuleGlueingFunctor :
     Modules.{u, u} B S hS X.1 X.2 ⥤ ChartModuleGlueingData B S hS X
 ```
 
-**`AlgebraicGeometry.Space.chartModuleGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueingEquivalence.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueingEquivalence.lean#L476). The attribute's comment: “the equivalence of modules with chartwise glueing data”.
+**`AlgebraicGeometry.Space.chartModuleGlueingEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueingEquivalence.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartModuleGlueingEquivalence.lean#L476). The attribute's comment: “the equivalence of modules with chartwise glueing data”.
 
 > A sheaf of `𝒪_X`-modules on the small étale site of an algebraic space `X` is the same thing
 > as a family of `𝒪_U`-modules `F_U` on the small étale sites of the étale scheme charts `U` of
@@ -700,4 +700,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.26, Tag 03LT](https://stacks.math.columbia.edu/tag/03LT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

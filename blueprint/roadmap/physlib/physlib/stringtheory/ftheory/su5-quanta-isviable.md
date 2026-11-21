@@ -8,7 +8,7 @@ proof: formalized
 
 # Viable Quanta with Yukawa
 
-The module `Physlib.StringTheory.FTheory.SU5.Quanta.IsViable`, [Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean): 11 declarations, 3 with a docstring.
+The module `Physlib.StringTheory.FTheory.SU5.Quanta.IsViable`, [Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean): 11 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -46,7 +46,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Quanta.IsViable`, [Physlib/StringTh
 
 ## A. The condition for a `Quanta` to be viable
 
-**`FTheory.SU5.Quanta.IsViable`**, a structure, [line 81](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L81).
+**`FTheory.SU5.Quanta.IsViable`**, a structure, [line 81](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L81).
 
 > For a given `I : CodimensionOneConfig` the condition on a `Quanta` for it to be
 > phenomenologically viable.
@@ -84,7 +84,7 @@ structure IsViable (x : Quanta) : Prop where
   linear_anomalies : x.LinearAnomalyCancellation
 ```
 
-**`FTheory.SU5.Quanta.isViable_iff_def`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L112).
+**`FTheory.SU5.Quanta.isViable_iff_def`**, a lemma, [line 112](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L112).
 
 ```lean
 lemma isViable_iff_def (x : Quanta) : IsViable x ↔
@@ -105,7 +105,7 @@ lemma isViable_iff_def (x : Quanta) : IsViable x ↔
 
 ### A.1. Simplification of the prop to use the set of viable charges `viableCharges I`
 
-**`FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L135).
+**`FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L135).
 
 ```lean
 lemma isViable_iff_charges_mem_viableCharges (x : Quanta) :
@@ -125,7 +125,7 @@ lemma isViable_iff_charges_mem_viableCharges (x : Quanta) :
 
 ### A.2. Further simplification of the prop to use the set of viable charges `Quanta.liftCharge`
 
-**`FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges_mem_liftCharges`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L157).
+**`FTheory.SU5.Quanta.isViable_iff_charges_mem_viableCharges_mem_liftCharges`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L157).
 
 ```lean
 lemma isViable_iff_charges_mem_viableCharges_mem_liftCharges (x : Quanta) :
@@ -136,7 +136,7 @@ lemma isViable_iff_charges_mem_viableCharges_mem_liftCharges (x : Quanta) :
 
 ### A.3. Further simplification of the prop to use the anomaly free set of viable charges
 
-**`FTheory.SU5.Quanta.isViable_iff_filter`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L173).
+**`FTheory.SU5.Quanta.isViable_iff_filter`**, a lemma, [line 173](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L173).
 
 ```lean
 lemma isViable_iff_filter (x : Quanta) :
@@ -155,7 +155,7 @@ lemma isViable_iff_filter (x : Quanta) :
 >     Quanta.liftCharge).filter LinearAnomalyCancellation)
 > ```
 
-**`FTheory.SU5.Quanta.viableElems`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L195).
+**`FTheory.SU5.Quanta.viableElems`**, a def, [line 195](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L195).
 
 > Given a `CodimensionOneConfig` the `Quanta` which satisfy the condition `IsViable`.
 
@@ -165,7 +165,7 @@ def viableElems : Multiset Quanta
 
 ### B.1. Every element of the multiset is viable
 
-**`FTheory.SU5.Quanta.isViable_of_mem_viableElems`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L239).
+**`FTheory.SU5.Quanta.isViable_of_mem_viableElems`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L239).
 
 ```lean
 lemma isViable_of_mem_viableElems (x : Quanta) (h : x ∈ viableElems) :
@@ -174,7 +174,7 @@ lemma isViable_of_mem_viableElems (x : Quanta) (h : x ∈ viableElems) :
 
 ### B.2. A quanta is viable if and only if it is in the multiset
 
-**`FTheory.SU5.Quanta.isViable_iff_mem_viableElems`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L251).
+**`FTheory.SU5.Quanta.isViable_iff_mem_viableElems`**, a lemma, [line 251](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L251).
 
 ```lean
 lemma isViable_iff_mem_viableElems (x : Quanta) :
@@ -183,7 +183,7 @@ lemma isViable_iff_mem_viableElems (x : Quanta) :
 
 ### B.3. Every element of the multiset regenerates Yukawa at two insertions of the Yukawa singlets
 
-**`FTheory.SU5.Quanta.yukawaSingletsRegenerateDangerousInsertion_two_of_isViable`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L274).
+**`FTheory.SU5.Quanta.yukawaSingletsRegenerateDangerousInsertion_two_of_isViable`**, a lemma, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L274).
 
 > Every viable Quanta regenerates a dangerous coupling at two insertions of the Yukawa
 > singlets.
@@ -196,7 +196,7 @@ lemma yukawaSingletsRegenerateDangerousInsertion_two_of_isViable
 
 ### B.4. Those quanta which satisfy the quartic anomaly cancellation condition
 
-**`FTheory.SU5.Quanta.quarticAnomalyCancellation_iff_mem_of_isViable`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L287).
+**`FTheory.SU5.Quanta.quarticAnomalyCancellation_iff_mem_of_isViable`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L287).
 
 ```lean
 lemma quarticAnomalyCancellation_iff_mem_of_isViable (x : Quanta) (h : IsViable x) :
@@ -211,7 +211,7 @@ lemma quarticAnomalyCancellation_iff_mem_of_isViable (x : Quanta) (h : IsViable 
 
 ### B.5. Map down to Z2
 
-**`FTheory.SU5.Quanta.map_to_Z2_of_isViable`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L305).
+**`FTheory.SU5.Quanta.map_to_Z2_of_isViable`**, a lemma, [line 305](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean#L305).
 
 ```lean
 lemma map_to_Z2_of_isViable (x : Quanta ℤ) (h : IsViable x) :
@@ -226,4 +226,4 @@ lemma map_to_Z2_of_isViable (x : Quanta ℤ) (h : IsViable x) :
 
 ## Sources
 
-- [Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean)
+- [Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean)

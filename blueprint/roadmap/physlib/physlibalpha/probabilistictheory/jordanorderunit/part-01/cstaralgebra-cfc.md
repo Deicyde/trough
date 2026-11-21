@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.JB.jordanCfc, ProbabilisticTheory.JB.jordanCfc_id, ProbabilisticTheory.JB.norm_jordanCfc, ProbabilisticTheory.JB.jordanCfc_mul, ProbabilisticTheory.JB.jordanCfc_commute, ProbabilisticTheory.JB.jordanCfc_nonneg, ProbabilisticTheory.JB.jordanCfc_monotone
+lean: PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc, PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_id, PhyslibAlpha.ProbabilisticTheory.JB.norm_jordanCfc, PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_mul, PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_commute, PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_nonneg, PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_monotone
 statement: formalized
 proof: formalized
 ---
 
 # Continuous functional calculus of self-adjoint elements
 
-The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.CFC`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean): 7 declarations, 7 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.CFC`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean): 7 declarations, 7 with a docstring.
 
 > The continuous functional calculus of a self-adjoint C⋆-algebra element, valued in observables.
 
@@ -32,7 +32,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.CStarAlgebra.CFC`, 
 
 ## A. The functional calculus
 
-**`ProbabilisticTheory.JB.jordanCfc`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L60).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L60).
 
 > The continuous functional calculus of a self-adjoint element, as a linear map into the
 > observables.
@@ -42,7 +42,7 @@ noncomputable def jordanCfc (a : selfAdjoint A) :
     C(spectrum ℝ (a : A), ℝ) →ₗ[ℝ] selfAdjoint A
 ```
 
-**`ProbabilisticTheory.JB.jordanCfc_id`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L72).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_id`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L72).
 
 > The coordinate function is sent to the original Jordan observable.
 
@@ -51,7 +51,7 @@ lemma jordanCfc_id (a : selfAdjoint A) :
     jordanCfc a ((ContinuousMap.id ℝ).restrict (spectrum ℝ (a : A))) = a
 ```
 
-**`ProbabilisticTheory.JB.norm_jordanCfc`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L78).
+**`PhyslibAlpha.ProbabilisticTheory.JB.norm_jordanCfc`**, a lemma, [line 78](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L78).
 
 > The concrete Jordan CFC is isometric.
 
@@ -60,7 +60,7 @@ lemma norm_jordanCfc (a : selfAdjoint A) (f : C(spectrum ℝ (a : A), ℝ)) :
     ‖jordanCfc a f‖ = ‖f‖
 ```
 
-**`ProbabilisticTheory.JB.jordanCfc_mul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L85).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_mul`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L85).
 
 > Although `jordanCfc` is packaged as a linear map, its values commute because its source is
 > commutative.  Hence it preserves the Jordan product exactly.
@@ -70,7 +70,7 @@ lemma jordanCfc_mul (a : selfAdjoint A) (f g : C(spectrum ℝ (a : A), ℝ)) :
     jordanCfc a (f * g) = jordanCfc a f * jordanCfc a g
 ```
 
-**`ProbabilisticTheory.JB.jordanCfc_commute`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_commute`**, a lemma, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L103).
 
 > Every continuous function of an observable commutes with that observable in its ambient Cstar
 > algebra.  Thus the one-variable calculus lands in the compatible Jordan fragment generated by
@@ -83,7 +83,7 @@ lemma jordanCfc_commute (a : selfAdjoint A) (f : C(spectrum ℝ (a : A), ℝ)) :
 
 ## B. Positivity and monotonicity
 
-**`ProbabilisticTheory.JB.jordanCfc_nonneg`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L120).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_nonneg`**, a lemma, [line 120](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L120).
 
 > A nonnegative continuous function of a Jordan observable is nonnegative.
 
@@ -92,7 +92,7 @@ lemma jordanCfc_nonneg (a : selfAdjoint A) {f : C(spectrum ℝ (a : A), ℝ)} (h
     0 ≤ jordanCfc a f
 ```
 
-**`ProbabilisticTheory.JB.jordanCfc_monotone`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L128).
+**`PhyslibAlpha.ProbabilisticTheory.JB.jordanCfc_monotone`**, a lemma, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean#L128).
 
 > The concrete Jordan continuous functional calculus is order-preserving.
 
@@ -106,4 +106,4 @@ lemma jordanCfc_monotone (a : selfAdjoint A) : Monotone (jordanCfc a)
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean)
+- [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean)

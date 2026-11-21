@@ -1,11 +1,11 @@
 # Convex
 
-The folder [PhyslibAlpha/Mathematics/Convex/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex): 6 modules, an article each, in path order.
+The folder [PhyslibAlpha/Mathematics/Convex/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex): 6 modules, an article each, in path order.
 
 - [Separation from dominated cones](dominatedcone.md)
 - [Extreme points of `ℓq` balls](lpball.md)
 
-Modules in [Choquet/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex/Choquet):
+Modules in [Choquet/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Mathematics/Convex/Choquet):
 
 - [Representations by measures on a boundary](choquet-boundaryrepresentation.md)
 - [Every point is a mixture of extreme points](choquet-extremepointdecomposition.md)

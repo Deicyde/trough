@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.10 Right adjoint of pushforward for closed immersions and base change
 
-Section 48.10 of the Stacks Project, [Tag 0E2J](https://stacks.math.columbia.edu/tag/0E2J). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 48.10 of the Stacks Project, [Tag 0E2J](https://stacks.math.columbia.edu/tag/0E2J). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E2K, an equation
 
 [Tag 0E2K](https://stacks.math.columbia.edu/tag/0E2K) in the Stacks Project.
 
-**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupportMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeMap.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeMap.lean#L158). The attribute's comment: “the canonical base change map (48.10.0.1), functorial in K, for a cartesian square with i a closed immersion and Z, X' Tor independent over X”.
+**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupportMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeMap.lean, line 158](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeMap.lean#L158). The attribute's comment: “the canonical base change map (48.10.0.1), functorial in K, for a cartesian square with i a closed immersion and Z, X' Tor independent over X”.
 
 > **Stacks Project, Tag 0E2K.** The canonical base-change map
 >
@@ -45,7 +45,7 @@ def baseChangeSheafHomExactSupportMap (sq : IsPullback i' g f i) [IsClosedImmers
 
 [Tag 0E2L](https://stacks.math.columbia.edu/tag/0E2L) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientBaseChange.isIso_rightAdjointBaseChangeMap_iff_of_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean#L201). The attribute's comment: “both directions, for a base change map filling the pushforward square; its identification with the map of Cohomology, Remark 08I3, which the source omits, is the hypothesis `hψ`, and the base change isomorphism `Ri'_* ∘ Lg^* ≅ Lf^* ∘ Ri_*` of Stacks 0E23 is the named hypothesis `e`”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientBaseChange.isIso_rightAdjointBaseChangeMap_iff_of_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean#L201). The attribute's comment: “both directions, for a base change map filling the pushforward square; its identification with the map of Cohomology, Remark 08I3, which the source omits, is the hypothesis `hψ`, and the base change isomorphism `Ri'_* ∘ Lg^* ≅ Lf^* ∘ Ri_*` of Stacks 0E23 is the named hypothesis `e`”.
 
 > **Stacks Project, Tag 0E2L.** The map `Lg^* R ℰom(𝒪_Z, K) ⟶ R ℰom(𝒪_{Z'}, Lf^*K)` of
 > [Stacks, Tag 0E2K] is an isomorphism if and only if a base change map
@@ -67,7 +67,7 @@ theorem isIso_rightAdjointBaseChangeMap_iff_of_eq
     IsIso (rightAdjointBaseChangeMap S S' Lf Lg e K) ↔ IsIso ψ
 ```
 
-**`RingedSpaceModuleAdjunction.ClosedQuotientBaseChange.isIso_rightAdjointBaseChangeMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean#L219). The attribute's comment: “both directions, for the base change map induced by Stacks 0E2K; the base change isomorphism `Ri'_* ∘ Lg^* ≅ Lf^* ∘ Ri_*` of Stacks 0E23 is the named hypothesis `e`”.
+**`RingedSpaceModuleAdjunction.ClosedQuotientBaseChange.isIso_rightAdjointBaseChangeMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean, line 219](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChange.lean#L219). The attribute's comment: “both directions, for the base change map induced by Stacks 0E2K; the base change isomorphism `Ri'_* ∘ Lg^* ≅ Lf^* ∘ Ri_*` of Stacks 0E23 is the named hypothesis `e`”.
 
 > **Stacks Project, Tag 0E2L.** The map `Lg^* R ℰom(𝒪_Z, K) ⟶ R ℰom(𝒪_{Z'}, Lf^*K)` of
 > [Stacks, Tag 0E2K] is an isomorphism if and only if the base change map
@@ -81,7 +81,7 @@ theorem isIso_rightAdjointBaseChangeMap_iff
       IsIso (derivedSheafHomBaseChangeMap S S' Lf Lg e K)
 ```
 
-**`Stacks.Duality.ExactSupportBaseChange.isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackSheafHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean#L250).
+**`Stacks.Duality.ExactSupportBaseChange.isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackSheafHomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean#L250).
 
 > **Stacks Project, Tag 0E2L.** Consider a cartesian square of schemes
 >
@@ -117,7 +117,7 @@ theorem isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackShe
         ((derivedPushforward i.toLRSHom.toShHom).obj (unitObject Z.toSheafedSpace)) K)
 ```
 
-**`Stacks.Duality.ExactSupportBaseChange.isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackSheafHomMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean#L365). The attribute's comment: “the same statement, with the target written R SheafHom(O\_\{Z'}, Lf^*K) through the identification O\_\{Z'} = Lf^*O\_Z of Tor independence, as the source writes it”.
+**`Stacks.Duality.ExactSupportBaseChange.isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackSheafHomMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean, line 365](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportBaseChangeInternalHom.lean#L365). The attribute's comment: “the same statement, with the target written R SheafHom(O\_\{Z'}, Lf^*K) through the identification O\_\{Z'} = Lf^*O\_Z of Tor independence, as the source writes it”.
 
 > **Stacks Project, Tag 0E2L**, with the target written as the source writes it. In the
 > situation of
@@ -146,7 +146,7 @@ theorem isIso_baseChangeSheafHomExactSupportMap_app_iff_isIso_derivedPullbackShe
 
 [Tag 0E2M](https://stacks.math.columbia.edu/tag/0E2M) in the Stacks Project.
 
-**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupport_isIso_of_flat_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChange.lean#L244). The attribute's comment: “only the reduction to invertibility after Ri'\_*; see the docstring”.
+**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupport_isIso_of_flat_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChange.lean#L244). The attribute's comment: “only the reduction to invertibility after Ri'\_*; see the docstring”.
 
 > **Stacks Project, Tag 0E2M, in part.** In the situation of [Stacks, Tag 0E2J] — a cartesian
 > square whose right-hand column `i` is a closed immersion, with `Z` and `X'` Tor independent over
@@ -186,7 +186,7 @@ theorem baseChangeSheafHomExactSupport_isIso_of_flat_pseudoCoherent
     IsIso (baseChangeSheafHomExactSupport sq htor hst K)
 ```
 
-**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupportMap_isIso_of_flat_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeIso.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeIso.lean#L191).
+**`Stacks.Duality.ExactSupportBaseChange.baseChangeSheafHomExactSupportMap_isIso_of_flat_pseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeIso.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/ExactSupportFlatBaseChangeIso.lean#L191).
 
 > **Stacks Project, Tag 0E2M.** Consider a cartesian square of schemes
 >
@@ -224,7 +224,7 @@ theorem baseChangeSheafHomExactSupportMap_isIso_of_flat_pseudoCoherent
 
 [Tag 0E2N](https://stacks.math.columbia.edu/tag/0E2N) in the Stacks Project.
 
-**`Stacks.Duality.TensorHomTorAmplitude.isIso_tensorDerivedSheafHomModelMap_of_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/TensorHomTorAmplitudeModel.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/TensorHomTorAmplitudeModel.lean#L449). The attribute's comment: “the canonical map is `tensorDerivedSheafHomModelMap`: on a K-injective model `I` of `K` and a K-flat model `A` of `M` it is the class of the morphism of complexes whose pushforward is the inverse projection formula followed by the interchange of 0BYR, `phi (x) a |-> (s |-> phi(s) (x) a)`, that is the counit `Ri_* R Hom(O_Z, K) -> K` tensored with `M`; the quasi-coherence of `K` and `M` is part of the statement and is not used”.
+**`Stacks.Duality.TensorHomTorAmplitude.isIso_tensorDerivedSheafHomModelMap_of_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/TensorHomTorAmplitudeModel.lean, line 449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointLemmas/TensorHomTorAmplitudeModel.lean#L449). The attribute's comment: “the canonical map is `tensorDerivedSheafHomModelMap`: on a K-injective model `I` of `K` and a K-flat model `A` of `M` it is the class of the morphism of complexes whose pushforward is the inverse projection formula followed by the interchange of 0BYR, `phi (x) a |-> (s |-> phi(s) (x) a)`, that is the counit `Ri_* R Hom(O_Z, K) -> K` tensored with `M`; the quasi-coherence of `K` and `M` is part of the statement and is not used”.
 
 > **[Stacks, Tag 0E2N].** Let `i : Z ⟶ X` be a pseudo-coherent closed immersion of schemes, let
 > `M ∈ D_QCoh(𝒪_X)` locally have Tor amplitude in `[a, ∞)` and let `K ∈ D⁺_QCoh(𝒪_X)`. Then the
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.10, Tag 0E2J](https://stacks.math.columbia.edu/tag/0E2J)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.31 Relative effective Cartier divisors
 
-Section 42.31 of the Stacks Project, [Tag 02TP](https://stacks.math.columbia.edu/tag/02TP). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.31 of the Stacks Project, [Tag 02TP](https://stacks.math.columbia.edu/tag/02TP). 1 tag here is carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02TR, a lemma
 
 [Tag 02TR](https://stacks.math.columbia.edu/tag/02TR) in the Stacks Project.
 
-**`Stacks.Chow.gysinChowOfInvertible_canonicalSection_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L190). The attribute's comment: “first equality i^* p^* α = (p|\_D)^* α, for p of relative dimension r + 1 (relative dimension 0 is `gysinChowOfInvertible_canonicalSection_flatPullbackChow_of_relativeDimension_zero`)”.
+**`Stacks.Chow.gysinChowOfInvertible_canonicalSection_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L190). The attribute's comment: “first equality i^* p^* α = (p|\_D)^* α, for p of relative dimension r + 1 (relative dimension 0 is `gysinChowOfInvertible_canonicalSection_flatPullbackChow_of_relativeDimension_zero`)”.
 
 > **Stacks 02TR, first equality.** Let `p : X ⟶ Y` be flat of relative dimension `r + 1`
 > between schemes locally of finite type over the base, let `i : D ⟶ X` be a relative effective
@@ -39,7 +39,7 @@ theorem gysinChowOfInvertible_canonicalSection_flatPullbackChow (r : ℕ)
           p r hp D hD) (k + 1) α
 ```
 
-**`Stacks.Chow.firstChernClassCapChow_divisorSheaf_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L238). The attribute's comment: “second equality c\_1(O\_X(D)) ∩ p^* α = i\_*((p|\_D)^* α), for p of relative dimension r + 1 (relative dimension 0 is `firstChernClassCapChow_divisorSheaf_flatPullbackChow_of_relativeDimension_zero`)”.
+**`Stacks.Chow.firstChernClassCapChow_divisorSheaf_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L238). The attribute's comment: “second equality c\_1(O\_X(D)) ∩ p^* α = i\_*((p|\_D)^* α), for p of relative dimension r + 1 (relative dimension 0 is `firstChernClassCapChow_divisorSheaf_flatPullbackChow_of_relativeDimension_zero`)”.
 
 > **Stacks 02TR, second equality.** In the situation of
 > `Stacks.Chow.gysinChowOfInvertible_canonicalSection_flatPullbackChow`, with `ℒ = 𝒪_X(D)`,
@@ -62,7 +62,7 @@ theorem firstChernClassCapChow_divisorSheaf_flatPullbackChow (r : ℕ)
             p r hp D hD) (k + 1) α)
 ```
 
-**`Stacks.Chow.gysinChowOfInvertible_canonicalSection_flatPullbackChow_of_relativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L272). The attribute's comment: “first equality, for p of relative dimension 0: D is empty, so CH\_k(D) = 0 and i^* p^* α = 0”.
+**`Stacks.Chow.gysinChowOfInvertible_canonicalSection_flatPullbackChow_of_relativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 272](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L272). The attribute's comment: “first equality, for p of relative dimension 0: D is empty, so CH\_k(D) = 0 and i^* p^* α = 0”.
 
 > **Stacks 02TR in relative dimension zero, first equality.** If `p` has relative dimension `0`
 > then a relative effective Cartier divisor `D` on `X/Y` is empty, so `CH_k(D) = 0` and
@@ -80,7 +80,7 @@ theorem gysinChowOfInvertible_canonicalSection_flatPullbackChow_of_relativeDimen
         chowGroup C (D.subschemeι ≫ sX) k) = 0
 ```
 
-**`Stacks.Chow.firstChernClassCapChow_divisorSheaf_flatPullbackChow_of_relativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L289). The attribute's comment: “second equality, for p of relative dimension 0: D is empty, so c\_1(O\_X(D)) ∩ p^* α = i\_*(0) = 0”.
+**`Stacks.Chow.firstChernClassCapChow_divisorSheaf_flatPullbackChow_of_relativeDimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierChow.lean#L289). The attribute's comment: “second equality, for p of relative dimension 0: D is empty, so c\_1(O\_X(D)) ∩ p^* α = i\_*(0) = 0”.
 
 > **Stacks 02TR in relative dimension zero, second equality.** If `p` has relative dimension `0`
 > then a relative effective Cartier divisor `D` on `X/Y` is empty, so `i_*((p|_D)^* α) = 0` and
@@ -95,7 +95,7 @@ theorem firstChernClassCapChow_divisorSheaf_flatPullbackChow_of_relativeDimensio
           (flatPullbackChowOfRelativeDimension C sX sY p hbase 0 hp (k + 1) α)) = 0
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L179). The attribute's comment: “first equality, on the fundamental cycle of an integral closed subscheme”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 179](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L179). The attribute's comment: “first equality, on the fundamental cycle of an integral closed subscheme”.
 
 > **Stacks 02TR, first equality, on an integral component.** Let `p : X ⟶ Y` be flat of
 > relative dimension `r + 1` over the base scheme of chapter 42, let `i : D ⟶ X` be a relative
@@ -136,7 +136,7 @@ theorem gysinHomomorphismOfInvertible_flatPullback_primeCycle
           (cycleAssociatedToClosedSubscheme C sY W.subschemeι (k + 1)))
 ```
 
-**`Stacks.Chow.effectiveCartierIntersectionOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L242). The attribute's comment: “second equality, as intersection with D, on a fundamental cycle”.
+**`Stacks.Chow.effectiveCartierIntersectionOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 242](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L242). The attribute's comment: “second equality, as intersection with D, on a fundamental cycle”.
 
 > **Stacks 02TR, second equality, on an integral component, as intersection with `D`.** In the
 > situation of `Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_primeCycle`,
@@ -182,7 +182,7 @@ theorem effectiveCartierIntersectionOfInvertible_flatPullback_primeCycle
             (cycleAssociatedToClosedSubscheme C sY W.subschemeι (k + 1))))
 ```
 
-**`Stacks.Chow.firstChernClassCapOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L290). The attribute's comment: “second equality, in the c₁(L) ∩ − form, on a fundamental cycle”.
+**`Stacks.Chow.firstChernClassCapOfInvertible_flatPullback_primeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean, line 290](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullback.lean#L290). The attribute's comment: “second equality, in the c₁(L) ∩ − form, on a fundamental cycle”.
 
 > **Stacks 02TR, second equality, on an integral component.** In the situation of
 > `Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_primeCycle`,
@@ -230,7 +230,7 @@ theorem firstChernClassCapOfInvertible_flatPullback_primeCycle
             (cycleAssociatedToClosedSubscheme C sY W.subschemeι (k + 1))))
 ```
 
-**`Stacks.Chow.gysinChowOfInvertible_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean#L332). The attribute's comment: “first equality, for an arbitrary class in A\_\{k+1}(Y)”.
+**`Stacks.Chow.gysinChowOfInvertible_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean, line 332](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean#L332). The attribute's comment: “first equality, for an arbitrary class in A\_\{k+1}(Y)”.
 
 > Let `p : X ⟶ Y` be flat of relative dimension `r + 1` over
 > the base scheme of chapter 42 and let `i : D ⟶ X` be a relative effective Cartier divisor on
@@ -265,7 +265,7 @@ theorem gysinChowOfInvertible_flatPullbackChow (C : ChowSituation.{u}) {X Y : Sc
           (Stacks.Divisors.zeroScheme X L (s.eval (.op ⊤))) hD) (k + 1) α
 ```
 
-**`Stacks.Chow.firstChernClassCapChow_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean#L405). The attribute's comment: “second equality, for an arbitrary class in A\_\{k+1}(Y)”.
+**`Stacks.Chow.firstChernClassCapChow_flatPullbackChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean, line 405](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/RelativeEffectiveCartierFlatPullbackChow.lean#L405). The attribute's comment: “second equality, for an arbitrary class in A\_\{k+1}(Y)”.
 
 > In the situation of
 > `Stacks.Chow.gysinChowOfInvertible_flatPullbackChow`, for every class `α ∈ A_{k+1}(Y)`
@@ -311,4 +311,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.31, Tag 02TP](https://stacks.math.columbia.edu/tag/02TP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

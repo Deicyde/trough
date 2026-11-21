@@ -7,7 +7,7 @@ proof: formalized
 
 # Modal Frames
 
-`Cslib.Foundations.Semantics.Frame.Basic`, in [Cslib/Foundations/Semantics/Frame/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.Frame.Basic`, in [Cslib/Foundations/Semantics/Frame/Basic.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean), by Fabrizio Montesi.
 
 > A frame is a structure of relations, each with its own arity.
 >
@@ -20,7 +20,7 @@ proof: formalized
 >
 > * [P. Blackburn, M. de Rijke, Y. Venema, *Modal Logic*][Blackburn2001]
 
-`Cslib.Frame` (structure, [line 38](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L38))
+`Cslib.Frame` (structure, [line 38](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L38))
 
 > A frame is an indexed structure of general relations that can differ in argument positions.
 >
@@ -36,7 +36,7 @@ structure Frame (World : Type u) (τ : PFunctor) where
   r : (op : τ.A) → World → (τ.B op → World) → Prop
 ```
 
-`Cslib.Frame.project` (definition, [line 45](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L45))
+`Cslib.Frame.project` (definition, [line 45](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L45))
 
 > The binary relation obtained by observing position `i` of the worlds accessible via `op`.
 
@@ -44,7 +44,7 @@ structure Frame (World : Type u) (τ : PFunctor) where
 def project (f : Frame World τ) (op : τ.A) (i : τ.B op) : World → World → Prop
 ```
 
-`Cslib.Frame.diagonal` (definition, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L51))
+`Cslib.Frame.diagonal` (definition, [line 51](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L51))
 
 > The binary relation induced by restricting the accessibility relation of `op`
 > to constant tuples of worlds.
@@ -53,21 +53,21 @@ def project (f : Frame World τ) (op : τ.A) (i : τ.B op) : World → World →
 def diagonal (f : Frame World τ) (op : τ.A) : World → World → Prop
 ```
 
-`Cslib.Frame.r_const_of_diagonal` (theorem, [line 55](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L55))
+`Cslib.Frame.r_const_of_diagonal` (theorem, [line 55](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L55))
 
 ```lean
 theorem r_const_of_diagonal {f : Frame World τ} (h : f.diagonal op w w') :
     f.r op w (fun _ => w')
 ```
 
-`Cslib.Frame.diagonal_of_r` (theorem, [line 59](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L59))
+`Cslib.Frame.diagonal_of_r` (theorem, [line 59](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L59))
 
 ```lean
 theorem diagonal_of_r [PFunctor.Unary τ] {f : Frame World τ} (h : f.r op w ws) :
     f.diagonal op w (ws default)
 ```
 
-`Cslib.Frame.DiagonalInverse` (class, [line 63](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L63))
+`Cslib.Frame.DiagonalInverse` (class, [line 63](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L63))
 
 > Two operators in a frame have inverse diagonal relations.
 
@@ -76,7 +76,7 @@ class DiagonalInverse (f : Frame World τ) (op₁ op₂ : τ.A) where
   diagonalInverse : ∀ w w', f.diagonal op₁ w w' ↔ f.diagonal op₂ w' w
 ```
 
-`Cslib.Frame.DiagonalSymm` (class, [line 71](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L71))
+`Cslib.Frame.DiagonalSymm` (class, [line 71](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L71))
 
 > A frame is diagonally symmetric at `op` if, whenever `w` accesses `ws`, some component of `ws`
 > accesses the constant sequence at `w`.
@@ -86,7 +86,7 @@ class DiagonalSymm (f : Frame World τ) (op : τ.A) where
   symm w ws : f.r op w ws → ∃ i, f.r op (ws i) (fun _ => w)
 ```
 
-`Cslib.Frame.Trans` (class, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L77))
+`Cslib.Frame.Trans` (class, [line 77](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L77))
 
 > A frame is transitive at `op` if accessibility can be composed through any accessible component:
 > whenever `w` accesses `ws₁` and `ws₁ i` accesses `ws₂`, then `w` accesses `ws₂`.
@@ -96,7 +96,7 @@ class Trans (f : Frame World τ) (op : τ.A) where
   trans w ws₁ i ws₂ : f.r op w ws₁ → f.r op (ws₁ i) ws₂ → f.r op w ws₂
 ```
 
-`Cslib.Frame.RightEuclidean` (class, [line 90](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L90))
+`Cslib.Frame.RightEuclidean` (class, [line 90](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L90))
 
 > A frame is right Euclidean at `op` if, whenever a world `w` accesses two tuples `ws₁` and
 > `ws₂`, some component of `ws₂` accesses `ws₁`.
@@ -106,7 +106,7 @@ class RightEuclidean (f : Frame World τ) (op : τ.A) where
   rightEuclidean w ws₁ ws₂ : f.r op w ws₁ → f.r op w ws₂ → ∃ i, f.r op (ws₂ i) ws₁
 ```
 
-`Cslib.Frame.PreservesMap` (definition, [line 96](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L96))
+`Cslib.Frame.PreservesMap` (definition, [line 96](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L96))
 
 > A predicate map `Ps` is preserved from `P` by `op` if, whenever `P` holds at a world `w`,
 > then for every tuple `ws` accessible from `w` via `op`, each component `ws i` satisfies the
@@ -116,7 +116,7 @@ class RightEuclidean (f : Frame World τ) (op : τ.A) where
 def PreservesMap (f : Frame α τ) (op : τ.A) (P : α → Prop) (Ps : τ.B op → α → Prop) : Prop
 ```
 
-`Cslib.Frame.ofRelations` (definition, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L100))
+`Cslib.Frame.ofRelations` (definition, [line 100](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L100))
 
 > Builds a unary frame from an indexed family of binary relations.
 
@@ -125,14 +125,14 @@ def ofRelations {τ : PFunctor} [τ.Unary] (r : τ.A → World → World → Pro
     Frame World τ
 ```
 
-`Cslib.Frame.ofRelations_iff` (lemma, [line 105](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L105))
+`Cslib.Frame.ofRelations_iff` (lemma, [line 105](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L105))
 
 ```lean
 lemma ofRelations_iff {τ : PFunctor} [τ.Unary] (r : τ.A → World → World → Prop) (i : τ.A)
     (w : World) (ws : τ.B i → World) : (ofRelations r).r i w ws ↔ r i w (ws default)
 ```
 
-`Cslib.Frame.ofRelations_diagonal_iff` (lemma, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean#L109))
+`Cslib.Frame.ofRelations_diagonal_iff` (lemma, [line 109](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean#L109))
 
 ```lean
 lemma ofRelations_diagonal_iff {τ : PFunctor} [τ.Unary]
@@ -146,5 +146,5 @@ lemma ofRelations_diagonal_iff {τ : PFunctor} [τ.Unary]
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/Frame/Basic.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/Frame/Basic.lean)
+- [Cslib/Foundations/Semantics/Frame/Basic.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/Frame/Basic.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.Frame.Basic.json)

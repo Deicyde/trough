@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.29 Morphisms of topoi
 
-Section 7.29 of the Stacks Project, [Tag 039Z](https://stacks.math.columbia.edu/tag/039Z). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 7.29 of the Stacks Project, [Tag 039Z](https://stacks.math.columbia.edu/tag/039Z). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 03A0, a lemma
 
 [Tag 03A0](https://stacks.math.columbia.edu/tag/03A0) in the Stacks Project.
 
-**`gInv_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean#L223).
+**`gInv_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean, line 223](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean#L223).
 
 > **Stacks 03A0**, the pullback half. Let `C`, `D` be sites and `u : C ⥤ D` a functor such
 > that
@@ -36,7 +36,7 @@ Section 7.29 of the Stacks Project, [Tag 039Z](https://stacks.math.columbia.edu/
 theorem gInv_isEquivalence : (gInv C D J K u).IsEquivalence
 ```
 
-**`gStar_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean#L232).
+**`gStar_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismDefs.lean#L232).
 
 > **Stacks 03A0**, the direct-image half. In the situation of `gInv_isEquivalence`, the
 > direct image `g_*` of the morphism of topoi of Stacks 00XO is an equivalence of categories as
@@ -51,7 +51,7 @@ theorem gStar_isEquivalence : (gStar C D J K u).IsEquivalence
 
 [Tag 03CG](https://stacks.math.columbia.edu/tag/03CG) in the Stacks Project.
 
-**`IsSpecialCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismComp.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismComp.lean#L28).
+**`IsSpecialCocontinuous`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismComp.lean, line 28](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposMorphismComp.lean#L28).
 
 > A functor `u : C ⥤ D` from a site `(C, J)` to a site `(D, K)` is a *special cocontinuous
 > functor* if it is cocontinuous and makes `(C, J)` a dense subsite of `(D, K)`.
@@ -66,7 +66,7 @@ def IsSpecialCocontinuous {C : Type*} [Category C] {D : Type*} [Category D]
 
 [Tag 03CH](https://stacks.math.columbia.edu/tag/03CH) in the Stacks Project.
 
-**`CategoryTheory.Sites.LocalizedToposSquare.isSpecialCocontinuous_overPost_and_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizedToposSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/LocalizedToposSquare.lean#L116).
+**`CategoryTheory.Sites.LocalizedToposSquare.isSpecialCocontinuous_overPost_and_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizedToposSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/LocalizedToposSquare.lean#L116).
 
 > **Stacks 03CH.** Let `u : C ⥤ D` be a special cocontinuous functor between sites, which
 > is the instance `[u.IsDenseSubsite J K]` (equivalently `IsSpecialCocontinuous J K u`, by
@@ -108,7 +108,7 @@ theorem isSpecialCocontinuous_overPost_and_isEquivalence :
 
 [Tag 03A1](https://stacks.math.columbia.edu/tag/03A1) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.exists_isDenseSubsite_subcanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 766](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L766). The attribute's comment: “A full subcategory of `Sh(C)` with a set of objects which contains the sheafified representables and is closed under fibre products is a site, for the coverings whose coproduct is a surjection of sheaves; that site is subcanonical, `U ↦ h_U^#` is a special cocontinuous functor, and the induced equivalence of topoi matches the representables of the two sides. This is all five conclusions, with (5) stated for every object of the subcategory.”.
+**`CategoryTheory.GrothendieckTopology.exists_isDenseSubsite_subcanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 766](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L766). The attribute's comment: “A full subcategory of `Sh(C)` with a set of objects which contains the sheafified representables and is closed under fibre products is a site, for the coverings whose coproduct is a surjection of sheaves; that site is subcanonical, `U ↦ h_U^#` is a special cocontinuous functor, and the induced equivalence of topoi matches the representables of the two sides. This is all five conclusions, with (5) stated for every object of the subcategory.”.
 
 > Let `(C, J)` be a site and let `ι : C' ⥤ Sh(C)` be a full subcategory of the
 > category of sheaves of sets on `C`, with a set of objects, which is closed under fibre products
@@ -142,7 +142,7 @@ public theorem exists_isDenseSubsite_subcanonical {C : Type u} [Category.{v} C]
 
 [Tag 03CI](https://stacks.math.columbia.edu/tag/03CI) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.exists_isDenseSubsite_subcanonical_hasFiniteLimits_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 1432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L1432). The attribute's comment: “Any topos is equivalent, by a special cocontinuous functor, to the topos of sheaves on a site which is subcanonical, has all finite limits, has all subsheaves of representables representable, and on which a prescribed set of sheaves becomes representable. This is conclusions (1), (3), (4) and (5); conclusion (2) holds for every topology and is `ofArrows_mem_iff_isLocallySurjective_sigmaDesc_uliftYoneda_map`. The functor is also recorded to preserve all finite limits that exist in the given site.”. References: SGA 4 IV (1.2), “i) => i')”.
+**`CategoryTheory.GrothendieckTopology.exists_isDenseSubsite_subcanonical_hasFiniteLimits_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 1432](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L1432). The attribute's comment: “Any topos is equivalent, by a special cocontinuous functor, to the topos of sheaves on a site which is subcanonical, has all finite limits, has all subsheaves of representables representable, and on which a prescribed set of sheaves becomes representable. This is conclusions (1), (3), (4) and (5); conclusion (2) holds for every topology and is `ofArrows_mem_iff_isLocallySurjective_sigmaDesc_uliftYoneda_map`. The functor is also recorded to preserve all finite limits that exist in the given site.”. References: SGA 4 IV (1.2), “i) => i')”.
 
 > Let `(C, J)` be a site and let `F : ι → Sheaf J (Type max u v)` be a set of
 > sheaves of sets on `C`. Then there is a site `(D, K)` and a special cocontinuous functor
@@ -174,7 +174,7 @@ public theorem exists_isDenseSubsite_subcanonical_hasFiniteLimits_representable 
 
 [Tag 03A2](https://stacks.math.columbia.edu/tag/03A2) in the Stacks Project.
 
-**`MorphismOfTopoi.exists_isDenseSubsite_isMorphismOfSites_pushforward_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L1081). The attribute's comment: “Every morphism of topoi is the composition of the equivalence induced by a special cocontinuous functor with the morphism of topoi induced by a morphism of sites. The conclusion also records, from Stacks 03CJ, that `u` preserves the final object.”.
+**`MorphismOfTopoi.exists_isDenseSubsite_isMorphismOfSites_pushforward_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/MorphismsOfTopoi.lean#L1081). The attribute's comment: “Every morphism of topoi is the composition of the equivalence induced by a special cocontinuous functor with the morphism of topoi induced by a morphism of sites. The conclusion also records, from Stacks 03CJ, that `u` preserves the final object.”.
 
 > Let `(C, J)` and `(D, K)` be sites and let `f : Sh(C) → Sh(D)` be a morphism
 > of topoi. Then there are a site `(C', J')` and functors `v : C ⥤ C'` and `u : D ⥤ C'` such that
@@ -205,7 +205,7 @@ public theorem exists_isDenseSubsite_isMorphismOfSites_pushforward_iso {C : Type
 
 [Tag 03CJ](https://stacks.math.columbia.edu/tag/03CJ) in the Stacks Project.
 
-**`MorphismOfTopoi.exists_twoSided_isDenseSubsite_representablyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposReplacement.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/ToposReplacement.lean#L251). The attribute's comment: “Any morphism of topoi fits into a commutative square with two equivalences given by special cocontinuous functors and a morphism of topoi coming from a functor `u : D' ⥤ C'` to which Stacks 00X6 applies, with both `C'` and `D'` having all finite limits and subcanonical topologies, and with prescribed families of sheaves on `C` and on `D` becoming representable on `C'` and on `D'`.”.
+**`MorphismOfTopoi.exists_twoSided_isDenseSubsite_representablyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/ToposReplacement.lean, line 251](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/ToposReplacement.lean#L251). The attribute's comment: “Any morphism of topoi fits into a commutative square with two equivalences given by special cocontinuous functors and a morphism of topoi coming from a functor `u : D' ⥤ C'` to which Stacks 00X6 applies, with both `C'` and `D'` having all finite limits and subcanonical topologies, and with prescribed families of sheaves on `C` and on `D` becoming representable on `C'` and on `D'`.”.
 
 > Let `(C, J)` and `(D, K)` be sites and let `f : Sh(C) → Sh(D)` be a morphism of topoi. Then
 > there are sites `(C', J')` and `(D', K')`, special cocontinuous functors `v : C ⥤ C'` and
@@ -250,4 +250,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.29, Tag 039Z](https://stacks.math.columbia.edu/tag/039Z)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

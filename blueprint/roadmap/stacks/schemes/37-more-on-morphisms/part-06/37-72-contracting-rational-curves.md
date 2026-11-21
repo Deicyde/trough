@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.72 Contracting rational curves
 
-Section 37.72 of the Stacks Project, [Tag 0E7E](https://stacks.math.columbia.edu/tag/0E7E). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 37.72 of the Stacks Project, [Tag 0E7E](https://stacks.math.columbia.edu/tag/0E7E). 8 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0E7F, a lemma
 
 [Tag 0E7F](https://stacks.math.columbia.edu/tag/0E7F) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean#L371). The attribute's comment: “part (1)”. References: EGA III (7.9.10.1), “partial”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean#L371). The attribute's comment: “part (1)”. References: EGA III (7.9.10.1), “partial”.
 
 > **[Stacks, Tag 0E7F], part (1).** Let `f : X ⟶ Y` be proper and let `y ∈ Y` be a point whose
 > fibre has dimension at most one. If `R¹ f_* 𝒪_X = 0`, then `H¹(X_y, 𝒪_{X_y}) = 0`.
@@ -31,7 +31,7 @@ theorem isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage
     IsZero (firstCohomologyStructureSheaf (f.fiber y))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean#L391). The attribute's comment: “part (2)”. References: EGA III (7.9.10.1), “partial”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean, line 391](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreFirstCohomology.lean#L391). The attribute's comment: “part (2)”. References: EGA III (7.9.10.1), “partial”.
 
 > **[Stacks, Tag 0E7F], part (2).** Let `f : X ⟶ Y` be proper and let `y ∈ Y` be a point whose
 > fibre has dimension at most one. If there is a morphism `g : Y' ⟶ Y` with `y` in its image such
@@ -56,7 +56,7 @@ theorem isZero_firstCohomologyStructureSheaf_fiber_of_isZero_firstDirectImage_ba
 
 [Tag 0E7G](https://stacks.math.columbia.edu/tag/0E7G) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_isZero_restrict_firstDirectImage_of_isPullback_of_isZero_cohomologyOne_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean#L201). The attribute's comment: “an open V ∋ y with R¹ f\_* 𝒪\_X|\_V = 0, and R¹ f'\_* 𝒪\_\{X'} = 0 for every cartesian square over f whose base morphism lands in V”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_isZero_restrict_firstDirectImage_of_isPullback_of_isZero_cohomologyOne_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean, line 201](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean#L201). The attribute's comment: “an open V ∋ y with R¹ f\_* 𝒪\_X|\_V = 0, and R¹ f'\_* 𝒪\_\{X'} = 0 for every cartesian square over f whose base morphism lands in V”.
 
 > **[Stacks, Tag 0E7G].** Let `f : X ⟶ Y` be proper and let `y ∈ Y` be a point with
 > `dim(X_y) ≤ 1` and `H¹(X_y, 𝒪_{X_y}) = 0`. Then there is an open neighbourhood `V` of `y` such
@@ -85,7 +85,7 @@ theorem exists_isOpen_isZero_restrict_firstDirectImage_of_isPullback_of_isZero_c
         IsPullback g' f' f g → Set.range g ⊆ V → IsZero (firstDirectImageStructureSheaf f')
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_firstDirectImage_vanishes_universally`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean#L246). The attribute's comment: “an open V ∋ y with R¹ f\_* 𝒪\_X|\_V = 0, and R¹ f'\_* 𝒪\_\{X'} = 0 for the chosen pullback f' of f along g ≫ V.ι, for every g : Y' ⟶ V”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_firstDirectImage_vanishes_universally`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean, line 246](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/VanishingNeighbourhood.lean#L246). The attribute's comment: “an open V ∋ y with R¹ f\_* 𝒪\_X|\_V = 0, and R¹ f'\_* 𝒪\_\{X'} = 0 for the chosen pullback f' of f along g ≫ V.ι, for every g : Y' ⟶ V”.
 
 > **[Stacks, Tag 0E7G].** Let `f : X ⟶ Y` be proper and let `y ∈ Y` be a point with
 > `dim(X_y) ≤ 1` and `H¹(X_y, 𝒪_{X_y}) = 0`. Then there is an open neighbourhood `V` of `y` such
@@ -113,7 +113,7 @@ theorem exists_isOpen_firstDirectImage_vanishes_universally (f : X ⟶ Y) [IsPro
 
 [Tag 0E7H](https://stacks.math.columbia.edu/tag/0E7H) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_higherDirectImage_of_one_lt_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L102). The attribute's comment: “clause (1)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_higherDirectImage_of_one_lt_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 102](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L102). The attribute's comment: “clause (1)”.
 
 > **[Stacks, Tag 0E7H] clause (1).** For a proper morphism `f : X ⟶ Y` all of whose fibres
 > have dimension at most one and a quasi-coherent `ℱ` on `X`, `Rᵖ f_* ℱ = 0` for every `p > 1`.
@@ -128,7 +128,7 @@ theorem isZero_higherDirectImage_of_one_lt_of_isProper {X Y : Scheme.{u}} (f : X
     IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_cohomology_of_notMem_zero_one_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L116). The attribute's comment: “clause (3)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_cohomology_of_notMem_zero_one_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L116). The attribute's comment: “clause (3)”.
 
 > **[Stacks, Tag 0E7H] clause (3).** For a proper morphism `f : X ⟶ Y` onto an affine scheme
 > all of whose fibres have dimension at most one and a quasi-coherent `ℱ` on `X`,
@@ -146,7 +146,7 @@ theorem isZero_cohomology_of_notMem_zero_one_of_isAffine {X Y : Scheme.{u}} (f :
     IsZero (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerivedPlus p).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_cohomology_one_of_generatingSections_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L196). The attribute's comment: “clause (4)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_cohomology_one_of_generatingSections_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L196). The attribute's comment: “clause (4)”.
 
 > **[Stacks, Tag 0E7H] clause (4).** Let `f : X ⟶ Y` be a proper morphism onto an affine
 > scheme such that `dim(X_y) ≤ 1` and `H¹(X_y, 𝒪_{X_y}) = 0` for every `y ∈ Y`, and let `ℱ` be a
@@ -165,7 +165,7 @@ theorem isZero_cohomology_one_of_generatingSections_of_isAffine {X Y : Scheme.{u
     IsZero (((Stacks.Cohomology.AffineBase.moduleGlobalSections X).rightDerivedPlus 1).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_higherDirectImage_one_of_epi_pullback_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L210). The attribute's comment: “clause (2)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_higherDirectImage_one_of_epi_pullback_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean, line 210](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionOneCohomologyVanishing.lean#L210). The attribute's comment: “clause (2)”.
 
 > **[Stacks, Tag 0E7H] clause (2).** Let `f : X ⟶ Y` be a proper morphism such that
 > `dim(X_y) ≤ 1` and `H¹(X_y, 𝒪_{X_y}) = 0` for every `y ∈ Y`, let `ℱ` be a quasi-coherent
@@ -186,7 +186,7 @@ theorem isZero_higherDirectImage_one_of_epi_pullback_of_isProper {X Y : Scheme.{
 
 [Tag 0E7I](https://stacks.math.columbia.edu/tag/0E7I) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.epi_unitToPushforwardUnit_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SurjectivityAfterBaseChange.lean, line 816](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SurjectivityAfterBaseChange.lean#L816).
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.epi_unitToPushforwardUnit_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SurjectivityAfterBaseChange.lean, line 816](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SurjectivityAfterBaseChange.lean#L816).
 
 > **[Stacks, Tag 0E7I].** Let `f : X ⟶ Y` be a proper morphism of schemes such that
 > `dim(X_y) ≤ 1` and `H¹(X_y, 𝒪_{X_y}) = 0` for every `y ∈ Y`, and suppose `𝒪_Y ⟶ f_* 𝒪_X` is
@@ -217,7 +217,7 @@ theorem epi_unitToPushforwardUnit_of_baseChange
 
 [Tag 0E7J](https://stacks.math.columbia.edu/tag/0E7J) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_flat_fibreDimension_vanishing_epi_near_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SpecialFibreNeighbourhood.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SpecialFibreNeighbourhood.lean#L338).
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_flat_fibreDimension_vanishing_epi_near_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SpecialFibreNeighbourhood.lean, line 338](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/SpecialFibreNeighbourhood.lean#L338).
 
 > **[Stacks, Tag 0E7J].** Let `X --f--> Y --q--> S` be morphisms of schemes and let `s ∈ S`.
 > Write `f_s : X_s ⟶ Y_s` for the induced morphism of fibres over `s` (in the two spellings
@@ -263,7 +263,7 @@ theorem exists_isOpen_flat_fibreDimension_vanishing_epi_near_specialFibre (f : X
 
 [Tag 0E7K](https://stacks.math.columbia.edu/tag/0E7K) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_directImageStructureSheafBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L129). The attribute's comment: “clause (b): formation of f\_* 𝒪\_X commutes with arbitrary base change S' ⟶ S”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_directImageStructureSheafBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L129). The attribute's comment: “clause (b): formation of f\_* 𝒪\_X commutes with arbitrary base change S' ⟶ S”.
 
 > **[Stacks, Tag 0E7K], clause (b).** Let `X ⟶ Y ⟶ S` be a commutative triangle of schemes with
 > `X ⟶ S` flat, let `f : X ⟶ Y` be proper with `dim(X_y) ≤ 1` for every `y ∈ Y`, and suppose
@@ -279,7 +279,7 @@ theorem isIso_directImageStructureSheafBaseChangeMap_of_flat {X Y S : Scheme.{u}
     IsIso (directImageStructureSheafBaseChangeMap f (pullback.fst q h))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf_of_fibreDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L142). The attribute's comment: “clause (a): f\_* 𝒪\_X is flat over S”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf_of_fibreDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L142). The attribute's comment: “clause (a): f\_* 𝒪\_X is flat over S”.
 
 > **[Stacks, Tag 0E7K], clause (a).** Let `X ⟶ Y ⟶ S` be a commutative triangle of schemes with
 > `X ⟶ S` flat, let `f : X ⟶ Y` be proper with `dim(X_y) ≤ 1` for every `y ∈ Y`, and suppose
@@ -293,7 +293,7 @@ theorem isFlatOver_directImageStructureSheaf_of_fibreDimension_le_one {X Y S : S
     IsFlatOver q.toLRSHom.toShHom (directImageStructureSheaf f)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafFlat.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafFlat.lean#L107). The attribute's comment: “clause (a): flatness of `f_* 𝒪_X` over the base”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafFlat.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafFlat.lean#L107). The attribute's comment: “clause (a): flatness of `f_* 𝒪_X` over the base”.
 
 > Let `X ⟶ Y ⟶ S` be a commutative triangle of schemes with `X ⟶ S` flat, let `f : X ⟶ Y` be
 > proper with `dim(X_y) ≤ 1` for every `y ∈ Y`, and suppose `R¹ f_* 𝒪_X = 0`. Then `f_* 𝒪_X` is
@@ -311,7 +311,7 @@ theorem isFlatOver_directImageStructureSheaf (hcoh : CohomologyVanishesAboveOne.
 
 [Tag 0E7L](https://stacks.math.columbia.edu/tag/0E7L) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_isIso_unitToPushforwardUnit_of_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/StructureSheafIsoNearSpecialFibreReduction.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/StructureSheafIsoNearSpecialFibreReduction.lean#L442).
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isOpen_isIso_unitToPushforwardUnit_of_specialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/StructureSheafIsoNearSpecialFibreReduction.lean, line 442](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/StructureSheafIsoNearSpecialFibreReduction.lean#L442).
 
 > **[Stacks, Tag 0E7L].** Let `X --f--> Y --q--> S` be a commutative triangle of schemes and
 > `s ∈ S`. Assume
@@ -371,7 +371,7 @@ theorem exists_isOpen_isIso_unitToPushforwardUnit_of_specialFibre (f : X ⟶ Y) 
 
 [Tag 0E24](https://stacks.math.columbia.edu/tag/0E24) in the Stacks Project.
 
-**`Stacks.PicardFibreTrivial.pullback_injective_and_exists_pullback_iso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardFibreTrivial/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardFibreTrivial/Basic.lean#L203).
+**`Stacks.PicardFibreTrivial.pullback_injective_and_exists_pullback_iso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardFibreTrivial/Basic.lean, line 203](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/PicardFibreTrivial/Basic.lean#L203).
 
 > **Stacks Project, Tag 0E24.** Let `f : X ⟶ Y` be a proper morphism onto a Noetherian scheme
 > such that `f_* 𝒪_X = 𝒪_Y`, such that the fibres of `f` have dimension at most one, and such
@@ -415,4 +415,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.72, Tag 0E7E](https://stacks.math.columbia.edu/tag/0E7E)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

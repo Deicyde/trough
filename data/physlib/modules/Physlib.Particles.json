@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/GeorgiGlashow/Basic.lean",
@@ -7588,151 +7588,155 @@
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Basic.lean",
    "module": "Physlib.Particles.StandardModel.HiggsBoson.Basic",
    "title": "The Higgs field",
-   "doc": "## i. Overview\n\nThe Higgs field describes is the underlying field of the Higgs boson.\nIt is a map from SpaceTime to a 2-dimensional complex vector space.\nIn this module we define the Higgs field and prove some basic properties.\n\n## ii. Key results\n\n- `HiggsVec`: The 2-dimensional complex vector space which is the target space of the Higgs field.\n  This vector space is equipped with an action of the global gauge group of the Standard Model.\n- `HiggsBundle`: The trivial vector bundle over `SpaceTime` with fiber `HiggsVec`.\n- `HiggsField`: The type of smooth sections of the `HiggsBundle`, i.e., the type of Higgs fields.\n- `stabilizer_ofReal`: The stability group of the Higgs vacuum `(0, √a)`, i.e. the gauge\n  group left unbroken by it, is `SU(3) × U(1)_EM`.\n\n## iii. Table of contents\n\n- A. The Higgs vector space\n  - A.1. Definition of the Higgs vector space\n  - A.2. Orthonormal basis\n  - A.3. Generating Higgs vectors from real numbers\n  - A.4. Action of the gauge group on `HiggsVec`\n    - A.4.1. Definition of the representation\n    - A.4.2. Unitary nature of the action\n    - A.4.3. Group properties of the representation applied to vectors\n  - A.5. The Gauge orbit of a Higgs vector\n    - A.5.1. The rotation matrix to ofReal\n    - A.5.2. Members of orbits\n  - A.6. The stability group of a Higgs vector\n  - A.7. The electromagnetic U(1) and the phase of the first component\n  - A.8. To real scalars\n- B. The Higgs bundle\n  - B.1. Definition of the Higgs bundle\n  - B.2. Instance of a vector bundle\n- C. The Higgs fields\n  - C.1. Relations between `HiggsField` and `HiggsVec`\n    - C.1.1. The constant Higgs field\n    - C.1.2. The map from `HiggsField` to `SpaceTime → HiggsVec`\n  - C.2. Smoothness properties of components\n  - C.3. The pointwise inner product\n    - C.3.1. Basic equalities\n    - C.3.2. Symmetry properties\n    - C.3.3. Linearity conditions\n    - C.3.4. Smoothness of the inner product\n  - C.4. The pointwise norm\n    - C.4.1. Basic equalities\n    - C.4.2. Positivity\n    - C.4.3. On the zero section\n    - C.4.4. Smoothness of the norm-squared\n    - C.4.5. Norm-squared of constant Higgs fields\n  - C.5. The action of the gauge group on Higgs fields\n\n## iv. References\n\n* The particle data group has properties of the Higgs boson Review of Particle Physics, PDG.\n  [ref: ParticleDataGroup:2018ovx]",
+   "doc": "The Higgs vector space, its gauge representation, and the space of analytic Higgs fields.\n\n## i. Overview\n\nThe Higgs field is the underlying field of the Higgs boson.\nIt is a map from SpaceTime to a 2-dimensional complex vector space.\nIn this module we define the Higgs field and prove some basic properties.\n\n## ii. Key results\n\n- `HiggsVec`: The 2-dimensional complex vector space which is the target space of the Higgs field.\n  This vector space is equipped with an action of the global gauge group of the Standard Model.\n- `HiggsBundle`: The trivial vector bundle over `SpaceTime` with fiber `HiggsVec`.\n- `HiggsField`: The type of real analytic sections of the `HiggsBundle`.\n- `stabilizer_ofReal`: The stability group of the Higgs vacuum `(0, √a)`, i.e. the gauge\n  group left unbroken by it, is `SU(3) × U(1)_EM`.\n- `HiggsVec.toRealGroupElem_toSU2_apply_self`: The weak rotation to the neutral representative.\n- `HiggsVec.exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq`: The squared norm determines the local\n  weak gauge orbit of a nonzero Higgs doublet, at any order of differentiability.\n\n## iii. Table of contents\n\n- A. The Higgs vector space\n  - A.1. Definition of the Higgs vector space\n  - A.2. Orthonormal basis\n  - A.3. Generating Higgs vectors from real numbers\n  - A.4. Action of the gauge group on `HiggsVec`\n    - A.4.1. Definition of the representation\n    - A.4.2. Unitary nature of the action\n    - A.4.3. Group properties of the representation applied to vectors\n  - A.5. The Gauge orbit of a Higgs vector\n    - A.5.1. The rotation matrix to ofReal\n    - A.5.2. Members of orbits\n    - A.5.3. Local gauge orbits of Higgs doublets\n  - A.6. The stability group of a Higgs vector\n  - A.7. The electromagnetic U(1) and the phase of the first component\n  - A.8. To real scalars\n- B. The Higgs bundle\n  - B.1. Definition of the Higgs bundle\n  - B.2. Instance of a vector bundle\n- C. The Higgs fields\n  - C.1. Relations between `HiggsField` and `HiggsVec`\n    - C.1.1. The constant Higgs field\n    - C.1.2. The map from `HiggsField` to `SpaceTime → HiggsVec`\n  - C.2. Smoothness properties of components\n  - C.3. The pointwise inner product\n    - C.3.1. Basic equalities\n    - C.3.2. Symmetry properties\n    - C.3.3. Linearity conditions\n    - C.3.4. Smoothness of the inner product\n  - C.4. The pointwise norm\n    - C.4.1. Basic equalities\n    - C.4.2. Positivity\n    - C.4.3. On the zero section\n    - C.4.4. Smoothness of the norm-squared\n    - C.4.5. Norm-squared of constant Higgs fields\n  - C.5. The action of the gauge group on Higgs fields\n\n## iv. References\n\n* The particle data group has properties of the Higgs boson Review of Particle Physics, PDG.\n  [ref: ParticleDataGroup:2018ovx]",
    "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 84,
+     "line": 92,
      "text": "## A. The Higgs vector space\n\nThe target space of the Higgs field is a 2-dimensional complex vector space.\nIn this section we will define this vector space, and the action of the\nglobal gauge group on it."
     },
     {
-     "line": 94,
+     "line": 102,
      "text": "### A.1. Definition of the Higgs vector space"
     },
     {
-     "line": 105,
+     "line": 113,
      "text": "### A.2. Orthonormal basis\n\nWe define an orthonormal basis of `HiggsVec`."
     },
     {
-     "line": 117,
+     "line": 125,
      "text": "### A.3. Generating Higgs vectors from real numbers\n\nGiven a real number `a` we define the Higgs vector corresponding to that real number\nas `(0, √a)`. This has the property that its norm-squared is equal to `a`.\nFollowing the textbook convention, the non-zero entry sits in the second (lower) component,\nwhich is the electrically neutral component of the Higgs doublet\n(see `GaugeGroupI.electromagnetismU1`)."
     },
     {
-     "line": 138,
+     "line": 146,
      "text": "### A.4. Action of the gauge group on `HiggsVec`\n\nThe gauge group of the Standard Model acts on `HiggsVec` by matrix multiplication."
     },
     {
-     "line": 146,
+     "line": 154,
      "text": "#### A.4.1. Definition of the representation"
     },
     {
-     "line": 184,
+     "line": 192,
      "text": "#### A.4.2. Unitary nature of the action\n\nThe action of `StandardModel.GaugeGroupI` on `HiggsVec` is unitary."
     },
     {
-     "line": 207,
+     "line": 215,
      "text": "#### A.4.3. Group properties of the representation applied to vectors"
     },
     {
-     "line": 225,
+     "line": 233,
      "text": "### A.5. The Gauge orbit of a Higgs vector\n\nWe show that two Higgs vectors are in the same gauge orbit if and only if they have the same norm."
     },
     {
-     "line": 233,
+     "line": 241,
      "text": "#### A.5.1. The rotation matrix to ofReal\n\nWe define an element of `GaugeGroupI` which takes a given Higgs vector to the\ncorresponding `ofReal` Higgs vector."
     },
     {
-     "line": 297,
+     "line": 374,
      "text": "#### A.5.2. Members of orbits\n\nMembers of the orbit of a Higgs vector under the action of `GaugeGroupI` are exactly those\nHiggs vectors with the same norm."
     },
     {
-     "line": 319,
+     "line": 396,
+     "text": "#### A.5.3. Local gauge orbits of Higgs doublets\n\nIn a trivialization, a doublet field is a map into `HiggsVec`. The weak rotation\nto the neutral representative preserves the regularity of the field wherever\nit is nonzero. The following results concern the action on the doublet itself.\n\nIf both doublets vanish at the same point, equal norms need not give a transformation continuous\nat that point. For example, `(x + iy, 0)` and `(x - iy, 0)` both vanish at the origin and have\nequal norms everywhere. The transforming matrix would have to send the first basis vector to\nitself on the punctured `x`-axis and to its negative on the punctured `y`-axis, so it cannot be\ncontinuous at the origin."
+    },
+    {
+     "line": 439,
      "text": "### A.6. The stability group of a Higgs vector\n\nThe stability group of a Higgs vector `φ` is the subgroup `repGaugeGroupI.stabilizer φ` of\n`GaugeGroupI` fixing `φ`, i.e. the gauge group left unbroken when the Higgs field takes the\nvalue `φ`. For the vacuum `ofReal a = (0, √a)` with `a > 0` it is `SU(3) × U(1)_EM`, and for\nany other non-zero Higgs vector it is a conjugate of this subgroup. The subgroup fixing every\nHiggs vector is `SU(3) × ℤ₆`."
     },
     {
-     "line": 424,
+     "line": 544,
      "text": "### A.7. The electromagnetic U(1) and the phase of the first component"
     },
     {
-     "line": 474,
+     "line": 594,
      "text": "### A.8. To real scalars"
     },
     {
-     "line": 508,
+     "line": 628,
      "text": "## B. The Higgs bundle\n\nWe define the Higgs bundle as the trivial vector bundle with base `SpaceTime` and fiber `HiggsVec`.\nThe Higgs field will then be defined as smooth sections of this bundle."
     },
     {
-     "line": 516,
+     "line": 636,
      "text": "### B.1. Definition of the Higgs bundle\n\nWe define the Higgs bundle."
     },
     {
-     "line": 530,
+     "line": 650,
      "text": "### B.2. Instance of a vector bundle\n\nWe given the Higgs bundle an instance of a smooth vector bundle."
     },
     {
-     "line": 542,
-     "text": "## C. The Higgs fields\n\nHiggs fields are smooth sections of the Higgs bundle.\nThis corresponds to smooth maps from `SpaceTime` to `HiggsVec`.\nWe here define the type of Higgs fields and create an API around them."
+     "line": 662,
+     "text": "## C. The Higgs fields\n\n`HiggsField` consists of real analytic sections of the trivial Higgs bundle.\nThese correspond to real analytic maps from `SpaceTime` to `HiggsVec`.\nWe here define the type of Higgs fields and create an API around them."
     },
     {
-     "line": 562,
+     "line": 680,
      "text": "### C.1. Relations between `HiggsField` and `HiggsVec`"
     },
     {
-     "line": 568,
+     "line": 686,
      "text": "#### C.1.1. The constant Higgs field\n\nWe define the constant Higgs field associated to a given Higgs vector."
     },
     {
-     "line": 597,
+     "line": 715,
      "text": "#### C.1.2. The map from `HiggsField` to `SpaceTime → HiggsVec`"
     },
     {
-     "line": 613,
+     "line": 731,
      "text": "### C.2. Smoothness properties of components\n\nWe prove some smoothness properties of the components of a Higgs field."
     },
     {
-     "line": 642,
+     "line": 760,
      "text": "### C.3. The pointwise inner product\n\nThe pointwise inner product on the Higgs field."
     },
     {
-     "line": 655,
+     "line": 773,
      "text": "#### C.3.1. Basic equalities"
     },
     {
-     "line": 678,
+     "line": 796,
      "text": "#### C.3.2. Symmetry properties"
     },
     {
-     "line": 688,
+     "line": 806,
      "text": "#### C.3.3. Linearity conditions"
     },
     {
-     "line": 720,
+     "line": 838,
      "text": "#### C.3.4. Smoothness of the inner product"
     },
     {
-     "line": 731,
+     "line": 849,
      "text": "### C.4. The pointwise norm\n\nWe define the pointwise norm-squared of a Higgs field."
     },
     {
-     "line": 750,
+     "line": 868,
      "text": "#### C.4.1. Basic equalities"
     },
     {
-     "line": 770,
+     "line": 888,
      "text": "#### C.4.2. Positivity"
     },
     {
-     "line": 778,
+     "line": 896,
      "text": "#### C.4.3. On the zero section"
     },
     {
-     "line": 789,
+     "line": 907,
      "text": "#### C.4.4. Smoothness of the norm-squared"
     },
     {
-     "line": 800,
+     "line": 918,
      "text": "#### C.4.5. Norm-squared of constant Higgs fields"
     },
     {
-     "line": 810,
-     "text": "### C.5. The action of the gauge group on Higgs fields\n\nThe results in this section are currently informal."
+     "line": 928,
+     "text": "### C.5. The action of the gauge group on Higgs fields\n\nWhen two Higgs fields have equal pointwise squared norms on a region and the first is nowhere\nzero there, A.5.3 gives a weak gauge transformation with real analytic matrix entries on that\nregion. This concerns the scalar part of unitary gauge in the trivial Higgs bundle.\n\nThe general gauge action on sections remains informal. A pointwise action on `HiggsField` must\npreserve analyticity, which arbitrary smooth gauge transformations need not do."
     }
    ],
    "declarations": [
     {
      "name": "StandardModel.HiggsVec",
      "kind": "abbrev",
-     "line": 101,
+     "line": 109,
      "doc": "The vector space `HiggsVec` is defined to be the complex Euclidean space of dimension 2.\nFor a given spacetime point a Higgs field gives a value in `HiggsVec`.",
      "statement": "abbrev HiggsVec",
      "sorry": false
@@ -7740,7 +7744,7 @@
     {
      "name": "StandardModel.HiggsVec.orthonormBasis",
      "kind": "def",
-     "line": 114,
+     "line": 122,
      "doc": "An orthonormal basis of `HiggsVec`.",
      "statement": "def orthonormBasis : OrthonormalBasis (Fin 2) ℂ HiggsVec",
      "sorry": false
@@ -7748,7 +7752,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal",
      "kind": "def",
-     "line": 131,
+     "line": 139,
      "doc": "Generating a Higgs vector `(0, √a)` from a real number `a`, such that the norm-squared of\nthat Higgs vector is `a`.",
      "statement": "def ofReal (a : ℝ) : HiggsVec",
      "sorry": false
@@ -7756,7 +7760,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal_normSq",
      "kind": "lemma",
-     "line": 135,
+     "line": 143,
      "doc": "",
      "statement": "lemma ofReal_normSq {a : ℝ} (ha : 0 ≤ a) : ‖ofReal a‖ ^ 2 = a",
      "sorry": false
@@ -7764,7 +7768,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI",
      "kind": "def",
-     "line": 156,
+     "line": 164,
      "doc": "The representation of the gauge group `GaugeGroupI` on `HiggsVec`: the `SU(2)`\nfactor acts by matrix multiplication, and the `U(1)` factor by scalar\nmultiplication with its third power. Hypercharges are normalised as `6Y`, so the\npower `3` corresponds to the textbook hypercharge `Y = 1/2`.",
      "statement": "def repGaugeGroupI : Representation ℂ GaugeGroupI HiggsVec",
      "sorry": false
@@ -7772,7 +7776,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_apply",
      "kind": "lemma",
-     "line": 172,
+     "line": 180,
      "doc": "",
      "statement": "lemma repGaugeGroupI_apply (g : StandardModel.GaugeGroupI) (φ : HiggsVec) :\n    repGaugeGroupI g φ = (WithLp.toLp 2 <| g.toU1 ^ 3 • (g.toSU2.1 *ᵥ φ.ofLp))",
      "sorry": false
@@ -7780,7 +7784,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_apply_eq_U1_mul_SU2",
      "kind": "lemma",
-     "line": 175,
+     "line": 183,
      "doc": "",
      "statement": "lemma repGaugeGroupI_apply_eq_U1_mul_SU2 (g : StandardModel.GaugeGroupI) (φ : HiggsVec) :\n    repGaugeGroupI g φ = (WithLp.toLp 2 <| g.toSU2.1 *ᵥ (g.toU1 ^ 3 • φ.ofLp))",
      "sorry": false
@@ -7788,7 +7792,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_apply_eq_U1_smul_SU2",
      "kind": "lemma",
-     "line": 179,
+     "line": 187,
      "doc": "",
      "statement": "lemma repGaugeGroupI_apply_eq_U1_smul_SU2 (g : StandardModel.GaugeGroupI) (φ : HiggsVec) :\n    repGaugeGroupI g φ = (WithLp.toLp 2 <| (g.toU1 ^ 3 • g.toSU2.1) *ᵥ φ.ofLp)",
      "sorry": false
@@ -7796,7 +7800,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_inner",
      "kind": "lemma",
-     "line": 194,
+     "line": 202,
      "doc": "",
      "statement": "lemma repGaugeGroupI_inner (g : StandardModel.GaugeGroupI) (φ ψ : HiggsVec) :\n    ⟪repGaugeGroupI g φ, repGaugeGroupI g ψ⟫_ℂ = ⟪φ, ψ⟫_ℂ",
      "sorry": false
@@ -7804,7 +7808,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_norm",
      "kind": "lemma",
-     "line": 203,
+     "line": 211,
      "doc": "",
      "statement": "lemma repGaugeGroupI_norm (g : StandardModel.GaugeGroupI) (φ : HiggsVec) :\n    ‖repGaugeGroupI g φ‖ = ‖φ‖",
      "sorry": false
@@ -7812,7 +7816,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_mul_apply",
      "kind": "lemma",
-     "line": 213,
+     "line": 221,
      "doc": "",
      "statement": "lemma repGaugeGroupI_mul_apply (g₁ g₂ : StandardModel.GaugeGroupI) (φ : HiggsVec) :\n    repGaugeGroupI (g₁ * g₂) φ = repGaugeGroupI g₁ (repGaugeGroupI g₂ φ)",
      "sorry": false
@@ -7820,7 +7824,7 @@
     {
      "name": "StandardModel.HiggsVec.repGaugeGroupI_inv_apply_eq_iff",
      "kind": "lemma",
-     "line": 217,
+     "line": 225,
      "doc": "",
      "statement": "lemma repGaugeGroupI_inv_apply_eq_iff (g : StandardModel.GaugeGroupI) (φ ψ : HiggsVec) :\n    repGaugeGroupI g⁻¹ φ = ψ ↔ φ = repGaugeGroupI g ψ",
      "sorry": false
@@ -7828,7 +7832,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem",
      "kind": "def",
-     "line": 244,
+     "line": 252,
      "doc": "Given a Higgs vector, a rotation matrix which puts the first component of the\nvector to zero, and the second component to a non-negative real.",
      "statement": "def toRealGroupElem (φ : HiggsVec) : GaugeGroupI",
      "sorry": false
@@ -7836,23 +7840,63 @@
     {
      "name": "StandardModel.HiggsVec.toRealGroupElem_apply_self",
      "kind": "lemma",
-     "line": 275,
+     "line": 283,
      "doc": "",
      "statement": "lemma toRealGroupElem_apply_self (φ : HiggsVec) :\n    repGaugeGroupI (toRealGroupElem φ) φ = ofReal (‖φ‖ ^ 2)",
      "sorry": false
     },
     {
+     "name": "StandardModel.HiggsVec.toRealGroupElem_toSU2_of_ne_zero",
+     "kind": "lemma",
+     "line": 306,
+     "doc": "The matrix of the weak rotation to the neutral representative of a nonzero Higgs vector.",
+     "statement": "lemma toRealGroupElem_toSU2_of_ne_zero (v : HiggsVec) (hv : v ≠ 0) :\n    (toRealGroupElem v).toSU2.val =\n      !![v 1 / ‖v‖, -v 0 / ‖v‖; conj (v 0) / ‖v‖, conj (v 1) / ‖v‖]",
+     "sorry": false
+    },
+    {
+     "name": "StandardModel.HiggsVec.toRealGroupElem_eq_toSU2",
+     "kind": "lemma",
+     "line": 312,
+     "doc": "The rotation to the neutral representative has trivial colour and hypercharge factors.",
+     "statement": "lemma toRealGroupElem_eq_toSU2 (v : HiggsVec) :\n    toRealGroupElem v = (1, (toRealGroupElem v).toSU2, 1)",
+     "sorry": false
+    },
+    {
+     "name": "StandardModel.HiggsVec.toRealGroupElem_toSU2_apply_self",
+     "kind": "lemma",
+     "line": 321,
+     "doc": "The weak factor of `toRealGroupElem` alone rotates the Higgs doublet to\nthe neutral representative `(0, ‖v‖)`, as used in unitary gauge.",
+     "statement": "lemma toRealGroupElem_toSU2_apply_self (v : HiggsVec) :\n    repGaugeGroupI (1, (toRealGroupElem v).toSU2, 1) v = ofReal (‖v‖ ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "StandardModel.HiggsVec.contDiffOn_toRealGroupElem_toSU2",
+     "kind": "lemma",
+     "line": 327,
+     "doc": "The matrix entries of the explicit weak rotation to the neutral representative\nare `C^n` away from the zero vector, including for `n = ∞` (smooth) and `n = ω` (analytic).",
+     "statement": "lemma contDiffOn_toRealGroupElem_toSU2 {n : ℕ∞ω} :\n    ContDiffOn ℝ n (fun (v : HiggsVec) (i j : Fin 2) => (toRealGroupElem v).toSU2.val i j)\n      {v | v ≠ 0}",
+     "sorry": false
+    },
+    {
      "name": "StandardModel.HiggsVec.exists_repGaugeGroupI_eq_iff_norm_eq",
      "kind": "lemma",
-     "line": 308,
+     "line": 385,
      "doc": "Two Higgs vectors are in the same gauge orbit (i.e. related by `repGaugeGroupI`)\nif and only if they have the same norm.",
      "statement": "lemma exists_repGaugeGroupI_eq_iff_norm_eq (φ : HiggsVec) (ψ : HiggsVec) :\n    (∃ g : GaugeGroupI, repGaugeGroupI g φ = ψ) ↔ ‖ψ‖ = ‖φ‖",
      "sorry": false
     },
     {
+     "name": "StandardModel.HiggsVec.exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq",
+     "kind": "lemma",
+     "line": 414,
+     "doc": "On a set where the first of two `C^n` doublets is nonzero, their pointwise squared norms\nagree exactly when a weak `SU(2)` transformation with `C^n` entries relates them there.",
+     "statement": "lemma exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq {E : Type*}\n    [NormedAddCommGroup E] [NormedSpace ℝ E]\n    {n : ℕ∞ω} {s : Set E} {φ ψ : E → HiggsVec} (hφ : ContDiffOn ℝ n φ s) (hψ : ContDiffOn ℝ n ψ s)\n    (hnφ : ∀ x ∈ s, φ x ≠ 0) :\n    (∃ g : E → specialUnitaryGroup (Fin 2) ℂ,\n      ContDiffOn ℝ n (fun x (i j : Fin 2) => (g x).val i j) s ∧\n      ∀ x ∈ s, repGaugeGroupI (1, g x, 1) (φ x) = ψ x) ↔\n    ∀ x ∈ s, ‖φ x‖ ^ 2 = ‖ψ x‖ ^ 2",
+     "sorry": false
+    },
+    {
      "name": "StandardModel.HiggsVec.mem_stabilizer_ofReal_iff",
      "kind": "lemma",
-     "line": 333,
+     "line": 453,
      "doc": "A gauge transformation fixes the non-zero Higgs vector `ofReal a = (0, √a)` if and only if\nits `SU(2)` part is `diag(u³, ū³)`, where `u` is its `U(1)` part.",
      "statement": "lemma mem_stabilizer_ofReal_iff {a : ℝ} (ha : 0 < a) (g : GaugeGroupI) :\n    g ∈ repGaugeGroupI.stabilizer (ofReal a) ↔\n    GaugeGroupI.toSU2 g = GaugeGroupI.diagSU2 (GaugeGroupI.toU1 g ^ 3)",
      "sorry": false
@@ -7860,7 +7904,7 @@
     {
      "name": "StandardModel.HiggsVec.stabilizer_ofReal",
      "kind": "theorem",
-     "line": 366,
+     "line": 486,
      "doc": "The Higgs vacuum breaks electroweak symmetry down to color and electromagnetism: the\nstability group of the non-zero Higgs vector `ofReal a = (0, √a)` is the subgroup\n`SU(3) × U(1)_EM` of `GaugeGroupI`, with elements `(h, diag(u³, ū³), u)`.",
      "statement": "theorem stabilizer_ofReal {a : ℝ} (ha : 0 < a) :\n    repGaugeGroupI.stabilizer (ofReal a) = UnbrokenGaugeGroupI.incl.range",
      "sorry": false
@@ -7868,7 +7912,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_stabilizer_eq_conj_unbrokenGaugeGroupI",
      "kind": "lemma",
-     "line": 377,
+     "line": 497,
      "doc": "The stability group of any non-zero Higgs vector is conjugate to `SU(3) × U(1)_EM`.",
      "statement": "lemma exists_stabilizer_eq_conj_unbrokenGaugeGroupI (φ : HiggsVec) (hφ : φ ≠ 0) :\n    ∃ g : GaugeGroupI, repGaugeGroupI.stabilizer φ =\n      UnbrokenGaugeGroupI.incl.range.map (MulAut.conj g)",
      "sorry": false
@@ -7876,7 +7920,7 @@
     {
      "name": "StandardModel.HiggsVec.mem_iInf_stabilizer_iff",
      "kind": "lemma",
-     "line": 390,
+     "line": 510,
      "doc": "The gauge transformations fixing every Higgs vector are those of the form\n`(h, α⁻³ I₂, α)` with `h ∈ SU(3)` arbitrary and `α` a sixth root of unity, i.e. the subgroup\n`SU(3) × ℤ₆` of `GaugeGroupI`. Here `ℤ₆` sits inside `SU(2) × U(1)`: it is the image there of\nthe central `ℤ₆` used for `GaugeGroupℤ₆`, whose elements also carry the `SU(3)` part `α² I₃`,\nso this subgroup contains the central `ℤ₆`.",
      "statement": "lemma mem_iInf_stabilizer_iff (g : GaugeGroupI) :\n    g ∈ ⨅ φ, repGaugeGroupI.stabilizer φ ↔\n    ∃ α : rootsOfUnity 6 ℂ, GaugeGroupI.toSU2 g = gaugeGroupℤ₆SU2OfRoot α ∧\n      GaugeGroupI.toU1 g = gaugeGroupℤ₆UnitaryOfRoot α",
      "sorry": false
@@ -7884,7 +7928,7 @@
     {
      "name": "StandardModel.HiggsVec.electromagnetismU1_repGaugeGroupI_apply",
      "kind": "lemma",
-     "line": 432,
+     "line": 552,
      "doc": "The electromagnetic `U(1)` acts on a Higgs vector as `diag(u⁶, 1)`: the upper component\nhas electric charge `+1` and the lower component is neutral.",
      "statement": "lemma electromagnetismU1_repGaugeGroupI_apply (g : unitary ℂ) (φ : HiggsVec) :\n    repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) φ =\n    (WithLp.toLp 2 <| !![g.1 ^ 6, 0; 0, 1] *ᵥ φ.ofLp)",
      "sorry": false
@@ -7892,7 +7936,7 @@
     {
      "name": "StandardModel.HiggsVec.electromagnetismU1_repGaugeGroupI_ofReal",
      "kind": "lemma",
-     "line": 446,
+     "line": 566,
      "doc": "The electromagnetic `U(1)` leaves the Higgs vector `ofReal a = (0, √a)` invariant:\nthe Higgs vacuum is electrically neutral, so electromagnetism is unbroken.",
      "statement": "lemma electromagnetismU1_repGaugeGroupI_ofReal (g : unitary ℂ) (a : ℝ) :\n    repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) (ofReal a) = ofReal a",
      "sorry": false
@@ -7900,7 +7944,7 @@
     {
      "name": "StandardModel.HiggsVec.exists_electromagnetismU1_fst_eq_norm",
      "kind": "lemma",
-     "line": 456,
+     "line": 576,
      "doc": "There is an element of the electromagnetic `U(1)` making the first (charged) component of a\nHiggs vector real and non-negative. It fixes second components, and so the Higgs vacuum\n`ofReal a`. This is used to gauge-fix two-Higgs-doublet configurations to\n`Φ1 = (0, ‖Φ1‖)`.",
      "statement": "lemma exists_electromagnetismU1_fst_eq_norm (φ : HiggsVec) :\n    ∃ g : unitary ℂ,\n      (repGaugeGroupI (StandardModel.GaugeGroupI.electromagnetismU1 g) φ).ofLp 0 = ‖φ.ofLp 0‖",
      "sorry": false
@@ -7908,7 +7952,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealScalars",
      "kind": "def",
-     "line": 481,
+     "line": 601,
      "doc": "The underlying real values of the Higgs vector.",
      "statement": "def toRealScalars : HiggsVec →ₗ[ℝ] (Fin 4 → ℝ)",
      "sorry": false
@@ -7916,7 +7960,7 @@
     {
      "name": "StandardModel.HiggsVec.toRealScalars_smul_real",
      "kind": "lemma",
-     "line": 494,
+     "line": 614,
      "doc": "",
      "statement": "lemma toRealScalars_smul_real (a : ℝ) (φ : HiggsVec) :\n    toRealScalars (a • φ) = a • toRealScalars φ",
      "sorry": false
@@ -7924,7 +7968,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal_toRealScalars",
      "kind": "lemma",
-     "line": 497,
+     "line": 617,
      "doc": "",
      "statement": "lemma ofReal_toRealScalars (a : ℝ) :\n    toRealScalars (ofReal a) = !₄[0, 0, Real.sqrt a, 0]",
      "sorry": false
@@ -7932,7 +7976,7 @@
     {
      "name": "StandardModel.HiggsVec.ofReal_toRealScalars_norm",
      "kind": "lemma",
-     "line": 502,
+     "line": 622,
      "doc": "",
      "statement": "lemma ofReal_toRealScalars_norm (φ : HiggsVec) :\n    toRealScalars (ofReal (‖φ‖ ^ 2)) = !₄[0, 0, ‖φ‖, 0]",
      "sorry": false
@@ -7940,7 +7984,7 @@
     {
      "name": "StandardModel.HiggsBundle",
      "kind": "abbrev",
-     "line": 528,
+     "line": 648,
      "doc": "The `HiggsBundle` is defined as the trivial vector bundle with base `SpaceTime` and\nfiber `HiggsVec`. Thus as a manifold it corresponds to `ℝ⁴ × ℂ²`.",
      "statement": "abbrev HiggsBundle",
      "sorry": false
@@ -7948,7 +7992,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 539,
+     "line": 659,
      "doc": "The instance of a smooth vector bundle with total space `HiggsBundle` and fiber `HiggsVec`.",
      "statement": "instance : ContMDiffVectorBundle ⊤ HiggsVec HiggsBundle (Lorentz.Vector.asSmoothManifold 3)",
      "sorry": false
@@ -7956,15 +8000,15 @@
     {
      "name": "StandardModel.HiggsField",
      "kind": "abbrev",
-     "line": 556,
-     "doc": "The type `HiggsField` is defined such that elements are smooth sections of the trivial\nvector bundle `HiggsBundle`. Such elements are Higgs fields. Since `HiggsField` is\ntrivial as a vector bundle, a Higgs field is equivalent to a smooth map\nfrom `SpaceTime` to `HiggsVec`.",
+     "line": 674,
+     "doc": "Real analytic sections of the trivial Higgs bundle, equivalently real analytic maps from\n`SpaceTime` to `HiggsVec`. The regularity `⊤` here means `ω`, not ordinary `C^∞`.",
      "statement": "abbrev HiggsField : Type",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.const",
      "kind": "def",
-     "line": 578,
+     "line": 696,
      "doc": "Given a vector in `HiggsVec` the constant Higgs field with value equal to that\nsection.",
      "statement": "def const : HiggsVec →ₗ[ℝ] HiggsField",
      "sorry": false
@@ -7972,7 +8016,7 @@
     {
      "name": "StandardModel.HiggsField.const_apply",
      "kind": "lemma",
-     "line": 595,
+     "line": 713,
      "doc": "For all spacetime points, the constant Higgs field defined by a Higgs vector,\nreturns that Higgs Vector.",
      "statement": "lemma const_apply (φ : HiggsVec) (x : SpaceTime) : const φ x = φ",
      "sorry": false
@@ -7980,7 +8024,7 @@
     {
      "name": "StandardModel.HiggsField.toHiggsVec",
      "kind": "def",
-     "line": 604,
+     "line": 722,
      "doc": "Given a `HiggsField`, the corresponding map from `SpaceTime` to `HiggsVec`.",
      "statement": "def toHiggsVec (φ : HiggsField) : SpaceTime → HiggsVec",
      "sorry": false
@@ -7988,7 +8032,7 @@
     {
      "name": "StandardModel.HiggsField.toHiggsVec_smooth",
      "kind": "lemma",
-     "line": 606,
+     "line": 724,
      "doc": "",
      "statement": "lemma toHiggsVec_smooth (φ : HiggsField) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, HiggsVec) ⊤ φ.toHiggsVec",
      "sorry": false
@@ -7996,7 +8040,7 @@
     {
      "name": "StandardModel.HiggsField.const_toHiggsVec_apply",
      "kind": "lemma",
-     "line": 610,
+     "line": 728,
      "doc": "",
      "statement": "lemma const_toHiggsVec_apply (φ : HiggsField) (x : SpaceTime) :\n    const (φ.toHiggsVec x) x = φ x",
      "sorry": false
@@ -8004,7 +8048,7 @@
     {
      "name": "StandardModel.HiggsField.contDiff",
      "kind": "lemma",
-     "line": 622,
+     "line": 740,
      "doc": "",
      "statement": "lemma contDiff (φ : HiggsField) :\n    ContDiff ℝ ⊤ φ",
      "sorry": false
@@ -8012,7 +8056,7 @@
     {
      "name": "StandardModel.HiggsField.toVec_smooth",
      "kind": "lemma",
-     "line": 626,
+     "line": 744,
      "doc": "",
      "statement": "lemma toVec_smooth (φ : HiggsField) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, EuclideanSpace ℂ (Fin 2)) ⊤ φ",
      "sorry": false
@@ -8020,7 +8064,7 @@
     {
      "name": "StandardModel.HiggsField.apply_smooth",
      "kind": "lemma",
-     "line": 630,
+     "line": 748,
      "doc": "",
      "statement": "lemma apply_smooth (φ : HiggsField) :\n    ∀ i, ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℂ) ⊤ (fun (x : SpaceTime) => (φ x i))",
      "sorry": false
@@ -8028,7 +8072,7 @@
     {
      "name": "StandardModel.HiggsField.apply_re_smooth",
      "kind": "lemma",
-     "line": 634,
+     "line": 752,
      "doc": "",
      "statement": "lemma apply_re_smooth (φ : HiggsField) (i : Fin 2) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (reCLM ∘ (fun (x : SpaceTime) => (φ x i)))",
      "sorry": false
@@ -8036,7 +8080,7 @@
     {
      "name": "StandardModel.HiggsField.apply_im_smooth",
      "kind": "lemma",
-     "line": 638,
+     "line": 756,
      "doc": "",
      "statement": "lemma apply_im_smooth (φ : HiggsField) (i : Fin 2) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (imCLM ∘ (fun (x : SpaceTime) => (φ x i)))",
      "sorry": false
@@ -8044,7 +8088,7 @@
     {
      "name": "",
      "kind": "instance",
-     "line": 652,
+     "line": 770,
      "doc": "",
      "statement": "instance : Inner (SpaceTime → ℂ) (HiggsField)",
      "sorry": false
@@ -8052,7 +8096,7 @@
     {
      "name": "StandardModel.HiggsField.inner_apply",
      "kind": "lemma",
-     "line": 661,
+     "line": 779,
      "doc": "",
      "statement": "lemma inner_apply (φ1 φ2 : HiggsField) (x : SpaceTime) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) x = ⟪φ1 x, φ2 x⟫_ℂ",
      "sorry": false
@@ -8060,7 +8104,7 @@
     {
      "name": "StandardModel.HiggsField.inner_eq_expand",
      "kind": "lemma",
-     "line": 664,
+     "line": 782,
      "doc": "",
      "statement": "lemma inner_eq_expand (φ1 φ2 : HiggsField) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) = fun x => equivRealProdCLM.symm (((φ1 x 0).re * (φ2 x 0).re\n    + (φ1 x 1).re * (φ2 x 1).re+ (φ1 x 0).im * (φ2 x 0).im + (φ1 x 1).im * (φ2 x 1).im),\n    ((φ1 x 0).re * (φ2 x 0).im + (φ1 x 1).re * (φ2 x 1).im\n    - (φ1 x 0).im * (φ2 x 0).re - (φ1 x 1).im * (φ2 x 1).re))",
      "sorry": false
@@ -8068,7 +8112,7 @@
     {
      "name": "StandardModel.HiggsField.inner_expand_conj",
      "kind": "lemma",
-     "line": 674,
+     "line": 792,
      "doc": "Expands the inner product on Higgs fields in terms of complex components of the\nHiggs fields.",
      "statement": "lemma inner_expand_conj (φ1 φ2 : HiggsField) (x : SpaceTime) :\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ) x = conj (φ1 x 0) * φ2 x 0 + conj (φ1 x 1) * φ2 x 1",
      "sorry": false
@@ -8076,7 +8120,7 @@
     {
      "name": "StandardModel.HiggsField.inner_symm",
      "kind": "lemma",
-     "line": 684,
+     "line": 802,
      "doc": "",
      "statement": "lemma inner_symm (φ1 φ2 : HiggsField) :\n    conj ⟪φ2, φ1⟫_(SpaceTime → ℂ) = ⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8084,7 +8128,7 @@
     {
      "name": "StandardModel.HiggsField.inner_add_left",
      "kind": "lemma",
-     "line": 694,
+     "line": 812,
      "doc": "",
      "statement": "lemma inner_add_left (φ1 φ2 φ3 : HiggsField) :\n    ⟪φ1 + φ2, φ3⟫_(SpaceTime → ℂ) = ⟪φ1, φ3⟫_(SpaceTime → ℂ) + ⟪φ2, φ3⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8092,7 +8136,7 @@
     {
      "name": "StandardModel.HiggsField.inner_add_right",
      "kind": "lemma",
-     "line": 698,
+     "line": 816,
      "doc": "",
      "statement": "lemma inner_add_right (φ1 φ2 φ3 : HiggsField) :\n    ⟪φ1, φ2 + φ3⟫_(SpaceTime → ℂ) = ⟪φ1, φ2⟫_(SpaceTime → ℂ) + ⟪φ1, φ3⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8100,7 +8144,7 @@
     {
      "name": "StandardModel.HiggsField.inner_zero_left",
      "kind": "lemma",
-     "line": 703,
+     "line": 821,
      "doc": "",
      "statement": "lemma inner_zero_left (φ : HiggsField) :\n    ⟪0, φ⟫_(SpaceTime → ℂ) = 0",
      "sorry": false
@@ -8108,7 +8152,7 @@
     {
      "name": "StandardModel.HiggsField.inner_zero_right",
      "kind": "lemma",
-     "line": 708,
+     "line": 826,
      "doc": "",
      "statement": "lemma inner_zero_right (φ : HiggsField) :\n    ⟪φ, 0⟫_(SpaceTime → ℂ) = 0",
      "sorry": false
@@ -8116,7 +8160,7 @@
     {
      "name": "StandardModel.HiggsField.inner_neg_left",
      "kind": "lemma",
-     "line": 712,
+     "line": 830,
      "doc": "",
      "statement": "lemma inner_neg_left (φ1 φ2 : HiggsField) :\n    ⟪-φ1, φ2⟫_(SpaceTime → ℂ) = -⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8124,7 +8168,7 @@
     {
      "name": "StandardModel.HiggsField.inner_neg_right",
      "kind": "lemma",
-     "line": 716,
+     "line": 834,
      "doc": "",
      "statement": "lemma inner_neg_right (φ1 φ2 : HiggsField) :\n    ⟪φ1, -φ2⟫_(SpaceTime → ℂ) = -⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8132,7 +8176,7 @@
     {
      "name": "StandardModel.HiggsField.inner_smooth",
      "kind": "lemma",
-     "line": 726,
+     "line": 844,
      "doc": "",
      "statement": "lemma inner_smooth (φ1 φ2 : HiggsField) : ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℂ) ⊤\n    ⟪φ1, φ2⟫_(SpaceTime → ℂ)",
      "sorry": false
@@ -8140,7 +8184,7 @@
     {
      "name": "StandardModel.HiggsField.normSq",
      "kind": "def",
-     "line": 745,
+     "line": 863,
      "doc": "Given an element `φ` of `HiggsField`, `normSq φ` is defined as the\nthe function `SpaceTime → ℝ` obtained by taking the square norm of the\npointwise Higgs vector. In other words, `normSq φ x = ‖φ x‖ ^ 2`.\n\nThe notation `‖φ‖_H^2` is used for the `normSq φ`.",
      "statement": "def normSq (φ : HiggsField) : SpaceTime → ℝ",
      "sorry": false
@@ -8148,7 +8192,7 @@
     {
      "name": "StandardModel.HiggsField.inner_self_eq_normSq",
      "kind": "lemma",
-     "line": 756,
+     "line": 874,
      "doc": "",
      "statement": "lemma inner_self_eq_normSq (φ : HiggsField) (x : SpaceTime) :\n    ⟪φ, φ⟫_(SpaceTime → ℂ) x = ‖φ‖_H^2 x",
      "sorry": false
@@ -8156,7 +8200,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_eq_inner_self_re",
      "kind": "lemma",
-     "line": 760,
+     "line": 878,
      "doc": "",
      "statement": "lemma normSq_eq_inner_self_re (φ : HiggsField) (x : SpaceTime) :\n    φ.normSq x = (⟪φ, φ⟫_(SpaceTime → ℂ) x).re",
      "sorry": false
@@ -8164,7 +8208,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_expand",
      "kind": "lemma",
-     "line": 765,
+     "line": 883,
      "doc": "The expansion of the norm squared of into components.",
      "statement": "lemma normSq_expand (φ : HiggsField) :\n    φ.normSq = fun x => (conj (φ x 0) * (φ x 0) + conj (φ x 1) * (φ x 1)).re",
      "sorry": false
@@ -8172,7 +8216,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_nonneg",
      "kind": "lemma",
-     "line": 776,
+     "line": 894,
      "doc": "",
      "statement": "lemma normSq_nonneg (φ : HiggsField) (x : SpaceTime) : 0 ≤ ‖φ‖_H^2 x",
      "sorry": false
@@ -8180,7 +8224,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_zero",
      "kind": "lemma",
-     "line": 785,
+     "line": 903,
      "doc": "",
      "statement": "lemma normSq_zero : ‖0‖_H^2 = 0",
      "sorry": false
@@ -8188,7 +8232,7 @@
     {
      "name": "StandardModel.HiggsField.normSq_smooth",
      "kind": "lemma",
-     "line": 796,
+     "line": 914,
      "doc": "The norm squared of the Higgs field is a smooth function on space-time.",
      "statement": "lemma normSq_smooth (φ : HiggsField) : ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ φ.normSq",
      "sorry": false
@@ -8196,15 +8240,23 @@
     {
      "name": "StandardModel.HiggsField.const_normSq",
      "kind": "lemma",
-     "line": 807,
+     "line": 925,
      "doc": "",
      "statement": "lemma const_normSq (φ : HiggsVec) (x : SpaceTime) :\n    ‖const φ‖_H^2 x = ‖φ‖ ^ 2",
      "sorry": false
+    },
+    {
+     "name": "StandardModel.HiggsField.exists_analytic_su2_rep_eq_iff_normSq_eq",
+     "kind": "lemma",
+     "line": 942,
+     "doc": "The `HiggsField` specialization of `HiggsVec.exists_contDiffOn_su2_rep_eq_iff_norm_sq_eq`.\nThe action and real analyticity of the matrix entries hold on the given region.",
+     "statement": "lemma exists_analytic_su2_rep_eq_iff_normSq_eq (φ ψ : HiggsField) (s : Set SpaceTime)\n    (hφ : ∀ x ∈ s, φ x ≠ 0) :\n    (∃ g : SpaceTime → specialUnitaryGroup (Fin 2) ℂ,\n      ContDiffOn ℝ ω (fun x (i j : Fin 2) => (g x).val i j) s ∧\n      ∀ x ∈ s, HiggsVec.repGaugeGroupI (1, g x, 1) (φ x) = ψ x) ↔\n    ∀ x ∈ s, φ.normSq x = ψ.normSq x",
+     "sorry": false
     }
    ],
-   "private": 0,
+   "private": 1,
    "aliases": 0,
-   "informal": 5
+   "informal": 4
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/EffectivePotential.lean",
@@ -8400,51 +8452,51 @@
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
    "module": "Physlib.Particles.StandardModel.HiggsBoson.Potential",
    "title": "The potential of the Higgs field",
-   "doc": "We define the potential of the Higgs field.\n\nWe show that the potential is a smooth function on spacetime.",
+   "doc": "The classical Higgs potential, its bounds, and its extrema.\n\n## i. Overview\n\nThe potential depends only on the squared norm of the field at a spacetime point. It is a\npolynomial of degree at most two in that squared norm, and constant fields realize every\nnonnegative squared norm. The bounds and extrema below compare values of the potential at\npoints; they do not involve the kinetic term or an energy integral.\n\n## ii. Key results\n\n- `Potential.toFun_smooth`: the potential evaluated on a Higgs field is smooth.\n- `Potential.isBounded_iff`: the criterion for boundedness below.\n- `Potential.isMinOn_iff_field_of_𝓵_zero`: the minimizing field values at zero quartic coupling.\n\n## iii. Table of contents\n\n- A. The Higgs potential\n- B. Basic properties\n- C. The discriminant\n- D. Boundedness of the potential\n- E. Minimum and maximum\n\n## iv. References\n\n* None.",
    "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
-     "line": 32,
-     "text": "## The Higgs potential"
+     "line": 55,
+     "text": "## A. The Higgs potential"
     },
     {
-     "line": 84,
-     "text": "## Basic properties"
+     "line": 110,
+     "text": "## B. Basic properties"
     },
     {
-     "line": 129,
-     "text": "## The discriminant"
+     "line": 155,
+     "text": "## C. The discriminant"
     },
     {
-     "line": 271,
-     "text": "## Boundedness of the potential"
+     "line": 297,
+     "text": "## D. Boundedness of the potential"
     },
     {
-     "line": 324,
-     "text": "## Minimum and maximum"
+     "line": 367,
+     "text": "## E. Minimum and maximum"
     }
    ],
    "declarations": [
     {
      "name": "StandardModel.HiggsField.Potential",
      "kind": "structure",
-     "line": 41,
-     "doc": "The structure `Potential` is defined with two fields, `μ2` corresponding\nto the mass-squared of the Higgs boson, and `l` corresponding to the coefficient\nof the quartic term in the Higgs potential. Note that `l` is usually denoted `λ`.",
-     "statement": "structure Potential where\n  /-- The mass-squared of the Higgs boson. -/\n  μ2 : ℝ\n  /-- The quartic coupling of the Higgs boson. Usually denoted λ. -/\n  𝓵 : ℝ",
+     "line": 63,
+     "doc": "The parameters of the classical Higgs potential. With `s` the squared norm of the field\nvalue, the potential is `-μ2 * s + 𝓵 * s ^ 2`.",
+     "statement": "structure Potential where\n  /-- The mass parameter of the potential; its negative is the coefficient of the squared norm. -/\n  μ2 : ℝ\n  /-- The quartic coupling, usually denoted `λ`. -/\n  𝓵 : ℝ",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.Potential.toFun",
      "kind": "def",
-     "line": 58,
-     "doc": "Given a element `P` of `Potential`, `P.toFun` is Higgs potential.\nIt is defined for a Higgs field `φ` and a spacetime point `x` as\n\n`-μ² ‖φ‖_H^2 x + l * ‖φ‖_H^2 x * ‖φ‖_H^2 x`.",
+     "line": 77,
+     "doc": "Evaluate the classical Higgs potential on the value of the field `φ` at the point `x`.",
      "statement": "def toFun (φ : HiggsField) (x : SpaceTime) : ℝ",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.Potential.toFun_smooth",
      "kind": "lemma",
-     "line": 62,
+     "line": 88,
      "doc": "The potential is smooth.",
      "statement": "lemma toFun_smooth (φ : HiggsField) :\n    ContMDiff 𝓘(ℝ, SpaceTime) 𝓘(ℝ, ℝ) ⊤ (fun x => P.toFun φ x)",
      "sorry": false
@@ -8452,15 +8504,15 @@
     {
      "name": "StandardModel.HiggsField.Potential.neg",
      "kind": "def",
-     "line": 69,
-     "doc": "The Higgs potential formed by negating the mass squared and the quartic coupling.",
+     "line": 95,
+     "doc": "The Higgs potential formed by negating both parameters.",
      "statement": "def neg : Potential",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.Potential.toFun_neg",
      "kind": "lemma",
-     "line": 74,
+     "line": 100,
      "doc": "",
      "statement": "lemma toFun_neg (φ : HiggsField) (x : SpaceTime) : P.neg.toFun φ x = - P.toFun φ x",
      "sorry": false
@@ -8468,7 +8520,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.μ2_neg",
      "kind": "lemma",
-     "line": 79,
+     "line": 105,
      "doc": "",
      "statement": "lemma μ2_neg : P.neg.μ2 = - P.μ2",
      "sorry": false
@@ -8476,7 +8528,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.𝓵_neg",
      "kind": "lemma",
-     "line": 82,
+     "line": 108,
      "doc": "",
      "statement": "lemma 𝓵_neg : P.neg.𝓵 = - P.𝓵",
      "sorry": false
@@ -8484,7 +8536,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.toFun_zero",
      "kind": "lemma",
-     "line": 91,
+     "line": 117,
      "doc": "",
      "statement": "lemma toFun_zero (x : SpaceTime) : P.toFun 0 x = 0",
      "sorry": false
@@ -8492,7 +8544,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.toFun_eq_of_repGaugeGroupI",
      "kind": "lemma",
-     "line": 96,
+     "line": 122,
      "doc": "The Higgs potential is gauge invariant: at a spacetime point `x`, it takes the same value on\ntwo Higgs fields whose values at `x` are related by an element of the gauge group.",
      "statement": "lemma toFun_eq_of_repGaugeGroupI (g : GaugeGroupI) (φ ψ : HiggsField) (x : SpaceTime)\n    (h : ψ x = HiggsVec.repGaugeGroupI g (φ x)) : P.toFun ψ x = P.toFun φ x",
      "sorry": false
@@ -8500,7 +8552,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.complete_square",
      "kind": "lemma",
-     "line": 100,
+     "line": 126,
      "doc": "",
      "statement": "lemma complete_square (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    P.toFun φ x = P.𝓵 * (‖φ‖_H^2 x - P.μ2 / (2 * P.𝓵)) ^ 2 - P.μ2 ^ 2 / (4 * P.𝓵)",
      "sorry": false
@@ -8508,7 +8560,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.as_quad",
      "kind": "lemma",
-     "line": 107,
+     "line": 133,
      "doc": "The quadratic equation satisfied by the Higgs potential at a spacetime point `x`.",
      "statement": "lemma as_quad (φ : HiggsField) (x : SpaceTime) :\n    P.𝓵 * ‖φ‖_H^2 x * ‖φ‖_H^2 x + (- P.μ2) * ‖φ‖_H^2 x + (- P.toFun φ x) = 0",
      "sorry": false
@@ -8516,15 +8568,15 @@
     {
      "name": "StandardModel.HiggsField.Potential.toFun_eq_zero_iff",
      "kind": "lemma",
-     "line": 114,
-     "doc": "The Higgs potential is zero iff and only if the higgs field is zero, or the\nhiggs field has norm-squared `P.μ2 / P.𝓵`, assuming `P.𝓁 = 0`.",
+     "line": 140,
+     "doc": "With nonzero quartic coupling, the potential vanishes exactly when the field value is zero\nor has squared norm `P.μ2 / P.𝓵`.",
      "statement": "lemma toFun_eq_zero_iff (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    P.toFun φ x = 0 ↔ φ x = 0 ∨ ‖φ‖_H^2 x = P.μ2 / P.𝓵",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.Potential.quadDiscrim",
      "kind": "def",
-     "line": 136,
+     "line": 162,
      "doc": "The discriminant of the quadratic equation formed by the Higgs potential.",
      "statement": "def quadDiscrim (φ : HiggsField) (x : SpaceTime) : ℝ",
      "sorry": false
@@ -8532,7 +8584,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.quadDiscrim_nonneg",
      "kind": "lemma",
-     "line": 139,
+     "line": 165,
      "doc": "The discriminant of the quadratic formed by the potential is non-negative.",
      "statement": "lemma quadDiscrim_nonneg (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    0 ≤ P.quadDiscrim φ x",
      "sorry": false
@@ -8540,7 +8592,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.quadDiscrim_eq_sqrt_mul_sqrt",
      "kind": "lemma",
-     "line": 147,
+     "line": 173,
      "doc": "",
      "statement": "lemma quadDiscrim_eq_sqrt_mul_sqrt (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    P.quadDiscrim φ x = Real.sqrt (P.quadDiscrim φ x) * Real.sqrt (P.quadDiscrim φ x)",
      "sorry": false
@@ -8548,7 +8600,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff",
      "kind": "lemma",
-     "line": 151,
+     "line": 177,
      "doc": "",
      "statement": "lemma quadDiscrim_eq_zero_iff (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    P.quadDiscrim φ x = 0 ↔ P.toFun φ x = - P.μ2 ^ 2 / (4 * P.𝓵)",
      "sorry": false
@@ -8556,7 +8608,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.quadDiscrim_eq_zero_iff_normSq",
      "kind": "lemma",
-     "line": 161,
+     "line": 187,
      "doc": "",
      "statement": "lemma quadDiscrim_eq_zero_iff_normSq (h : P.𝓵 ≠ 0) (φ : HiggsField) (x : SpaceTime) :\n    P.quadDiscrim φ x = 0 ↔ ‖φ‖_H^2 x = P.μ2 / (2 * P.𝓵)",
      "sorry": false
@@ -8564,7 +8616,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.neg_𝓵_quadDiscrim_zero_bound",
      "kind": "lemma",
-     "line": 177,
+     "line": 203,
      "doc": "For an element `P` of `Potential`, if `l < 0` then the following upper bound for the potential\nexists\n\n`P.toFun φ x ≤ - μ2 ^ 2 / (4 * 𝓵)`.",
      "statement": "lemma neg_𝓵_quadDiscrim_zero_bound (h : P.𝓵 < 0) (φ : HiggsField) (x : SpaceTime) :\n    P.toFun φ x ≤ - P.μ2 ^ 2 / (4 * P.𝓵)",
      "sorry": false
@@ -8572,7 +8624,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.pos_𝓵_quadDiscrim_zero_bound",
      "kind": "lemma",
-     "line": 188,
+     "line": 214,
      "doc": "For an element `P` of `Potential`, if `0 < l` then the following lower bound for the potential\nexists\n\n`- μ2 ^ 2 / (4 * 𝓵) ≤ P.toFun φ x`.",
      "statement": "lemma pos_𝓵_quadDiscrim_zero_bound (h : 0 < P.𝓵) (φ : HiggsField) (x : SpaceTime) :\n    - P.μ2 ^ 2 / (4 * P.𝓵) ≤ P.toFun φ x",
      "sorry": false
@@ -8580,7 +8632,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.neg_𝓵_toFun_neg",
      "kind": "lemma",
-     "line": 197,
+     "line": 223,
      "doc": "If `P.𝓵` is negative, then if `P.μ2` is greater than zero, for all space-time points,\nthe potential is negative `P.toFun φ x ≤ 0`.",
      "statement": "lemma neg_𝓵_toFun_neg (h : P.𝓵 < 0) (φ : HiggsField) (x : SpaceTime) :\n    (0 < P.μ2 ∧ P.toFun φ x ≤ 0) ∨ P.μ2 ≤ 0",
      "sorry": false
@@ -8588,7 +8640,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.pos_𝓵_toFun_pos",
      "kind": "lemma",
-     "line": 208,
+     "line": 234,
      "doc": "If `P.𝓵` is bigger then zero, then if `P.μ2` is less than zero, for all space-time points,\nthe potential is positive `0 ≤ P.toFun φ x`.",
      "statement": "lemma pos_𝓵_toFun_pos (h : 0 < P.𝓵) (φ : HiggsField) (x : SpaceTime) :\n    (P.μ2 < 0 ∧ 0 ≤ P.toFun φ x) ∨ 0 ≤ P.μ2",
      "sorry": false
@@ -8596,7 +8648,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.neg_𝓵_sol_exists_iff",
      "kind": "lemma",
-     "line": 220,
+     "line": 246,
      "doc": "For an element `P` of `Potential` with `l < 0` and a real `c : ℝ`, there exists\n  a Higgs field `φ` and a spacetime point `x` such that `P.toFun φ x = c` iff one of the\n  following two conditions hold:\n- `0 < μ2` and `c ≤ 0`. That is, if `l` is negative and `μ2` positive, then the potential\n  takes every non-positive value.\n- or `μ2 ≤ 0` and `c ≤ - μ2 ^ 2 / (4 * 𝓵)`. That is, if `l` is negative and `μ2` non-positive,\n  then the potential takes every value less then or equal to its bound.",
      "statement": "lemma neg_𝓵_sol_exists_iff (h𝓵 : P.𝓵 < 0) (c : ℝ) : (∃ φ x, P.toFun φ x = c) ↔ (0 < P.μ2 ∧ c ≤ 0) ∨\n    (P.μ2 ≤ 0 ∧ c ≤ - P.μ2 ^ 2 / (4 * P.𝓵))",
      "sorry": false
@@ -8604,7 +8656,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.pos_𝓵_sol_exists_iff",
      "kind": "lemma",
-     "line": 263,
+     "line": 289,
      "doc": "For an element `P` of `Potential` with `0 < l` and a real `c : ℝ`, there exists\n  a Higgs field `φ` and a spacetime point `x` such that `P.toFun φ x = c` iff one of the\n  following two conditions hold:\n- `μ2 < 0` and `0 ≤ c`. That is, if `l` is positive and `μ2` negative, then the potential\n  takes every non-negative value.\n- or `0 ≤ μ2` and `- μ2 ^ 2 / (4 * 𝓵) ≤ c`. That is, if `l` is positive and `μ2` non-negative,\n  then the potential takes every value greater then or equal to its bound.",
      "statement": "lemma pos_𝓵_sol_exists_iff (h𝓵 : 0 < P.𝓵) (c : ℝ) : (∃ φ x, P.toFun φ x = c) ↔ (P.μ2 < 0 ∧ 0 ≤ c) ∨\n    (0 ≤ P.μ2 ∧ - P.μ2 ^ 2 / (4 * P.𝓵) ≤ c)",
      "sorry": false
@@ -8612,15 +8664,15 @@
     {
      "name": "StandardModel.HiggsField.Potential.IsBounded",
      "kind": "def",
-     "line": 282,
-     "doc": "Given a element `P` of `Potential`, the proposition `IsBounded P` is true if and only if\nthere exists a real `c` such that for all Higgs fields `φ` and spacetime points `x`,\nthe Higgs potential corresponding to `φ` at `x` is greater then or equal to`c`. I.e.\n\n`∀ Φ x, c ≤ P.toFun Φ x`.",
+     "line": 304,
+     "doc": "The Higgs potential has a uniform lower bound over all field values at spacetime points.",
      "statement": "def IsBounded : Prop",
      "sorry": false
     },
     {
      "name": "StandardModel.HiggsField.Potential.isBounded_𝓵_nonneg",
      "kind": "lemma",
-     "line": 287,
+     "line": 309,
      "doc": "Given a element `P` of `Potential` which is bounded,\nthe quartic coefficient `𝓵` of `P` is non-negative.",
      "statement": "lemma isBounded_𝓵_nonneg (h : P.IsBounded) : 0 ≤ P.𝓵",
      "sorry": false
@@ -8628,15 +8680,31 @@
     {
      "name": "StandardModel.HiggsField.Potential.isBounded_of_𝓵_pos",
      "kind": "lemma",
-     "line": 308,
+     "line": 330,
      "doc": "Given a element `P` of `Potential` with `0 < 𝓵`, then the potential is bounded.",
      "statement": "lemma isBounded_of_𝓵_pos (h : 0 < P.𝓵) : P.IsBounded",
      "sorry": false
     },
     {
+     "name": "StandardModel.HiggsField.Potential.isBounded_iff_of_𝓵_zero",
+     "kind": "lemma",
+     "line": 341,
+     "doc": "With zero quartic coupling, the Higgs potential is bounded below exactly when the\ncoefficient `-P.μ2` of the squared norm is nonnegative.",
+     "statement": "lemma isBounded_iff_of_𝓵_zero (h𝓵 : P.𝓵 = 0) : P.IsBounded ↔ P.μ2 ≤ 0",
+     "sorry": false
+    },
+    {
+     "name": "StandardModel.HiggsField.Potential.isBounded_iff",
+     "kind": "lemma",
+     "line": 357,
+     "doc": "The Higgs potential is bounded below exactly when the quartic coupling is positive or is\nzero with a nonnegative coefficient of the squared norm.",
+     "statement": "lemma isBounded_iff : P.IsBounded ↔ 0 < P.𝓵 ∨ P.𝓵 = 0 ∧ P.μ2 ≤ 0",
+     "sorry": false
+    },
+    {
      "name": "StandardModel.HiggsField.Potential.eq_zero_iff_of_μSq_nonpos_𝓵_pos",
      "kind": "lemma",
-     "line": 330,
+     "line": 373,
      "doc": "",
      "statement": "lemma eq_zero_iff_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)\n    (x : SpaceTime) : P.toFun φ x = 0 ↔ φ x = 0",
      "sorry": false
@@ -8644,7 +8712,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonpos_𝓵_pos",
      "kind": "lemma",
-     "line": 339,
+     "line": 382,
      "doc": "",
      "statement": "lemma isMinOn_iff_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)\n    (x : SpaceTime) : IsMinOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x)\n    ↔ P.toFun φ x = 0",
      "sorry": false
@@ -8652,7 +8720,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonpos_𝓵_pos",
      "kind": "lemma",
-     "line": 357,
+     "line": 400,
      "doc": "",
      "statement": "lemma isMinOn_iff_field_of_μSq_nonpos_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : P.μ2 ≤ 0) (φ : HiggsField)\n    (x : SpaceTime) : IsMinOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x)\n    ↔ φ x = 0",
      "sorry": false
@@ -8660,7 +8728,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMinOn_iff_of_μSq_nonneg_𝓵_pos",
      "kind": "lemma",
-     "line": 363,
+     "line": 406,
      "doc": "",
      "statement": "lemma isMinOn_iff_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 ≤ P.μ2) (φ : HiggsField)\n    (x : SpaceTime) : IsMinOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x) ↔\n    P.toFun φ x = - P.μ2 ^ 2 / (4 * P.𝓵)",
      "sorry": false
@@ -8668,7 +8736,7 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMinOn_iff_field_of_μSq_nonneg_𝓵_pos",
      "kind": "lemma",
-     "line": 380,
+     "line": 423,
      "doc": "",
      "statement": "lemma isMinOn_iff_field_of_μSq_nonneg_𝓵_pos (h𝓵 : 0 < P.𝓵) (hμ2 : 0 ≤ P.μ2) (φ : HiggsField)\n    (x : SpaceTime) : IsMinOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x) ↔\n    ‖φ‖_H^2 x = P.μ2 /(2 * P.𝓵)",
      "sorry": false
@@ -8676,15 +8744,23 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_pos",
      "kind": "theorem",
-     "line": 392,
+     "line": 435,
      "doc": "Given an element `P` of `Potential` with `0 < l`, then the Higgs field `φ` and\n  spacetime point `x` minimize the potential if and only if one of the following conditions\n  holds\n- `0 ≤ μ2` and `‖φ‖_H^2 x = μ2 / (2 * 𝓵)`.\n- or `μ2 < 0` and `φ x = 0`.",
      "statement": "theorem isMinOn_iff_field_of_𝓵_pos (h𝓵 : 0 < P.𝓵) (φ : HiggsField) (x : SpaceTime) :\n    IsMinOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x) ↔\n    (0 ≤ P.μ2 ∧ ‖φ‖_H^2 x = P.μ2 /(2 * P.𝓵)) ∨ (P.μ2 < 0 ∧ φ x = 0)",
      "sorry": false
     },
     {
+     "name": "StandardModel.HiggsField.Potential.isMinOn_iff_field_of_𝓵_zero",
+     "kind": "lemma",
+     "line": 445,
+     "doc": "With zero quartic coupling, every field value minimizes the potential if the coefficient\nof the squared norm is zero. If that coefficient is positive, only the zero field value\nminimizes it. If the coefficient is negative, the potential has no minimum.",
+     "statement": "lemma isMinOn_iff_field_of_𝓵_zero (h𝓵 : P.𝓵 = 0) (φ : HiggsField) (x : SpaceTime) :\n    IsMinOn (fun (ψ, y) => P.toFun ψ y) Set.univ (φ, x) ↔\n      P.μ2 = 0 ∨ (P.μ2 < 0 ∧ φ x = 0)",
+     "sorry": false
+    },
+    {
      "name": "StandardModel.HiggsField.Potential.isMaxOn_iff_isMinOn_neg",
      "kind": "lemma",
-     "line": 399,
+     "line": 469,
      "doc": "",
      "statement": "lemma isMaxOn_iff_isMinOn_neg (φ : HiggsField) (x : SpaceTime) :\n    IsMaxOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x) ↔\n    IsMinOn (fun (φ, x) => P.neg.toFun φ x) Set.univ (φ, x)",
      "sorry": false
@@ -8692,15 +8768,15 @@
     {
      "name": "StandardModel.HiggsField.Potential.isMaxOn_iff_field_of_𝓵_neg",
      "kind": "lemma",
-     "line": 412,
+     "line": 482,
      "doc": "Given an element `P` of `Potential` with `l < 0`, then the Higgs field `φ` and\n  spacetime point `x` maximizes the potential if and only if one of the following conditions\n  holds\n- `μ2 ≤ 0` and `‖φ‖_H^2 x = μ2 / (2 * 𝓵)`.\n- or `0 < μ2` and `φ x = 0`.",
      "statement": "lemma isMaxOn_iff_field_of_𝓵_neg (h𝓵 : P.𝓵 < 0) (φ : HiggsField) (x : SpaceTime) :\n    IsMaxOn (fun (φ, x) => P.toFun φ x) Set.univ (φ, x) ↔\n    (P.μ2 ≤ 0 ∧ ‖φ‖_H^2 x = P.μ2 /(2 * P.𝓵)) ∨ (0 < P.μ2 ∧ φ x = 0)",
      "sorry": false
     }
    ],
-   "private": 0,
+   "private": 1,
    "aliases": 0,
-   "informal": 2
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/StandardModel/Representations.lean",

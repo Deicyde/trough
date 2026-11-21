@@ -8,7 +8,7 @@ proof: formalized
 
 # Space
 
-The module `Physlib.SpaceAndTime.Space.Basic`, [Physlib/SpaceAndTime/Space/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean): 25 declarations (13 instances with no name), 2 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Basic`, [Physlib/SpaceAndTime/Space/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean): 25 declarations (13 instances with no name), 2 with a docstring.
 
 > In this module, we define the the type `Space d` which corresponds
 > to `d`-dimensional flat Euclidean space and prove some properties about it.
@@ -66,7 +66,7 @@ The module `Physlib.SpaceAndTime.Space.Basic`, [Physlib/SpaceAndTime/Space/Basic
 
 ## A. The `Space` type
 
-**`Space`**, a structure, [line 82](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L82).
+**`Space`**, a structure, [line 82](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L82).
 
 > The type `Space d` is the world-volume which corresponds to
 > `d` dimensional (flat) Euclidean space with a given (but arbitrary)
@@ -80,14 +80,14 @@ structure Space (d : ℕ := 3) where
   val : Fin d → ℝ
 ```
 
-**`Space.eq_of_val`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L88).
+**`Space.eq_of_val`**, a lemma, [line 88](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L88).
 
 ```lean
 lemma eq_of_val {d} {p q : Space d} (h : p.val = q.val) :
     p = q
 ```
 
-**`Space.val_eq_iff`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L95).
+**`Space.val_eq_iff`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L95).
 
 ```lean
 lemma val_eq_iff {d} {p q : Space d} :
@@ -98,13 +98,13 @@ lemma val_eq_iff {d} {p q : Space d} :
 
 ## B.1. Instance of coercion to functions
 
-**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L114).
+**An instance with no name**, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L114).
 
 ```lean
 instance {d} : CoeFun (Space d) (fun _ => Fin d → ℝ)
 ```
 
-**`Space.eq_of_apply`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L118).
+**`Space.eq_of_apply`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L118).
 
 ```lean
 lemma eq_of_apply {d} {p q : Space d}
@@ -113,13 +113,13 @@ lemma eq_of_apply {d} {p q : Space d}
 
 ## B.2. The Non-emptiness
 
-**An instance with no name**, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L130).
+**An instance with no name**, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L130).
 
 ```lean
 instance {d} : Nonempty (Space d)
 ```
 
-**An instance with no name**, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L133).
+**An instance with no name**, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L133).
 
 ```lean
 instance : Subsingleton (Space 0)
@@ -127,20 +127,20 @@ instance : Subsingleton (Space 0)
 
 ## B.3.1. The additive action
 
-**An instance with no name**, [line 142](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L142).
+**An instance with no name**, [line 142](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L142).
 
 ```lean
 noncomputable instance : VAdd (EuclideanSpace ℝ (Fin d)) (Space d)
 ```
 
-**`Space.vadd_val`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L146).
+**`Space.vadd_val`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L146).
 
 ```lean
 lemma vadd_val {d} (v : EuclideanSpace ℝ (Fin d)) (s : Space d) :
     (v +ᵥ s).val = fun i => v i + s.val i
 ```
 
-**`Space.vadd_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L150).
+**`Space.vadd_apply`**, a lemma, [line 150](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L150).
 
 ```lean
 lemma vadd_apply {d} (v : EuclideanSpace ℝ (Fin d))
@@ -148,14 +148,14 @@ lemma vadd_apply {d} (v : EuclideanSpace ℝ (Fin d))
     (v +ᵥ s) i = v i + s i
 ```
 
-**`Space.vadd_transitive`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L154).
+**`Space.vadd_transitive`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L154).
 
 ```lean
 lemma vadd_transitive {d} (s1 s2 : Space d) :
     ∃ v : EuclideanSpace ℝ (Fin d), v +ᵥ s1 = s2
 ```
 
-**An instance with no name**, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L160).
+**An instance with no name**, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L160).
 
 ```lean
 noncomputable instance : AddAction (EuclideanSpace ℝ (Fin d)) (Space d)
@@ -163,13 +163,13 @@ noncomputable instance : AddAction (EuclideanSpace ℝ (Fin d)) (Space d)
 
 ## B.3.2. Subtraction
 
-**An instance with no name**, [line 175](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L175).
+**An instance with no name**, [line 175](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L175).
 
 ```lean
 noncomputable instance {d} : VSub (EuclideanSpace ℝ (Fin d)) (Space d)
 ```
 
-**`Space.vsub_apply`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L179).
+**`Space.vsub_apply`**, a lemma, [line 179](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L179).
 
 ```lean
 lemma vsub_apply {d} (s1 s2 : Space d) (i : Fin d) :
@@ -178,7 +178,7 @@ lemma vsub_apply {d} (s1 s2 : Space d) (i : Fin d) :
 
 ## B.3.3. AddTorsor instance
 
-**An instance with no name**, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L188).
+**An instance with no name**, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L188).
 
 ```lean
 noncomputable instance {d} : AddTorsor (EuclideanSpace ℝ (Fin d)) (Space d)
@@ -186,19 +186,19 @@ noncomputable instance {d} : AddTorsor (EuclideanSpace ℝ (Fin d)) (Space d)
 
 ## B.4. PseudoMetricSpace
 
-**An instance with no name**, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L202).
+**An instance with no name**, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L202).
 
 ```lean
 noncomputable instance {d} : Dist (Space d)
 ```
 
-**`Space.dist_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L205).
+**`Space.dist_eq`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L205).
 
 ```lean
 lemma dist_eq {d} (p q : Space d) : dist p q = √ (∑ i, (p i - q i) ^ 2)
 ```
 
-**An instance with no name**, [line 207](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L207).
+**An instance with no name**, [line 207](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L207).
 
 ```lean
 noncomputable instance {d} : PseudoMetricSpace (Space d)
@@ -206,7 +206,7 @@ noncomputable instance {d} : PseudoMetricSpace (Space d)
 
 ## B.5. NormAddTorsor instance
 
-**An instance with no name**, [line 223](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L223).
+**An instance with no name**, [line 223](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L223).
 
 ```lean
 noncomputable instance {d} : NormedAddTorsor (EuclideanSpace ℝ (Fin d)) (Space d)
@@ -214,7 +214,7 @@ noncomputable instance {d} : NormedAddTorsor (EuclideanSpace ℝ (Fin d)) (Space
 
 ## B.6. Metric space instance
 
-**An instance with no name**, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L232).
+**An instance with no name**, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L232).
 
 ```lean
 noncomputable instance {d} : MetricSpace (Space d)
@@ -222,7 +222,7 @@ noncomputable instance {d} : MetricSpace (Space d)
 
 ## B.7. Non-trivality
 
-**`Space.instNontrivial`**, an instance, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L241).
+**`Space.instNontrivial`**, an instance, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L241).
 
 ```lean
 instance instNontrivial {d : ℕ} [NeZero d] : Nontrivial (Space d)
@@ -230,7 +230,7 @@ instance instNontrivial {d : ℕ} [NeZero d] : Nontrivial (Space d)
 
 ## C. Model structure (i.e. structure of a manifold)
 
-**`Space.homEuclideanSpaceSpace`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L260).
+**`Space.homEuclideanSpaceSpace`**, a def, [line 260](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L260).
 
 > `Space d` is homoemorphic to d-dimensional euclidean space. This is used to define the `IsManifold`
 > instance on `Space d`.
@@ -239,19 +239,19 @@ instance instNontrivial {d : ℕ} [NeZero d] : Nontrivial (Space d)
 noncomputable def homEuclideanSpaceSpace (d : ℕ) : EuclideanSpace ℝ (Fin d) ≃ₜ Space d
 ```
 
-**An instance with no name**, [line 274](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L274).
+**An instance with no name**, [line 274](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L274).
 
 ```lean
 noncomputable instance (d : ℕ) : ChartedSpace (EuclideanSpace ℝ (Fin d)) (Space d)
 ```
 
-**An instance with no name**, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L277).
+**An instance with no name**, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L277).
 
 ```lean
 instance (d : ℕ) : IsManifold (𝓡 d) ⊤ (Space d)
 ```
 
-**`Space.chartAt_eq`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean#L280).
+**`Space.chartAt_eq`**, a lemma, [line 280](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean#L280).
 
 ```lean
 lemma chartAt_eq (d : ℕ) (p : Space d) :
@@ -265,4 +265,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Basic.lean)
+- [Physlib/SpaceAndTime/Space/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Basic.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.14 Completion along a closed subset
 
-Section 87.14 of the Stacks Project, [Tag 0AIX](https://stacks.math.columbia.edu/tag/0AIX). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 87.14 of the Stacks Project, [Tag 0AIX](https://stacks.math.columbia.edu/tag/0AIX). 7 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AIY, a lemma
 
 [Tag 0AIY](https://stacks.math.columbia.edu/tag/0AIY) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineMcQuillan.lean, line 895](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineMcQuillan.lean#L895). The attribute's comment: “McQuillan affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineMcQuillan.lean, line 895](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineMcQuillan.lean#L895). The attribute's comment: “McQuillan affine formal algebraic space”.
 
 > **Stacks 0AIY.** Let `S` be a scheme, let `X = Spec A` be an affine scheme over `S` lying
 > in the big fppf site and let `T ⊆ |X|` be a closed subset. The completion of `X` along `T` —
@@ -32,7 +32,7 @@ theorem hasSomeSurjectivePresentation_completionSheaf
         (supportedPoints B S hS (affineOver B S hS hA f) T))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_completionSheaf_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineStageAtlas.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineStageAtlas.lean#L116). The attribute's comment: “McQuillan affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_completionSheaf_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineStageAtlas.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAffineStageAtlas.lean#L116). The attribute's comment: “McQuillan affine formal algebraic space”.
 
 > **Stacks 0AIY.** Let `S` be a scheme, let `X = Spec A` be an affine scheme over `S` lying
 > in the big fppf site and let `T ⊆ |X|` be a closed subset. The completion of `X` along `T` —
@@ -50,7 +50,7 @@ theorem hasSomeSurjectivePresentation_completionSheaf_of_isClosed
         (supportedPoints B S hS (affineOver B S hS hA f) T))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_toSheafify_completionSubfunctor_affineOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean#L386). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.FormalSpace.isIso_toSheafify_completionSubfunctor_affineOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean#L386). The attribute's comment: “the functor”.
 
 > Let `X = Spec A` be an affine scheme over `S` lying in the site and `T ⊆ |X|` a subset. The
 > functor sending an object `U` of the big fppf site of `S` to the morphisms `f : U ⟶ X` with
@@ -70,7 +70,7 @@ theorem isIso_toSheafify_completionSubfunctor_affineOver {A : Type u} [CommRing 
 
 [Tag 0AIZ](https://stacks.math.columbia.edu/tag/0AIZ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_completionSheaf_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean#L515).
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_completionSheaf_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean, line 515](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean#L515).
 
 > **Stacks 0AIZ.** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `T ⊆ |X|` be a closed subset. The completion `X_{/T}` of `X` along `T` — the fppf sheaf attached
@@ -93,7 +93,7 @@ theorem isFormalAlgebraicSpace_completionSheaf_of_isClosed
     IsFormalAlgebraicSpace B S hS (Space.completionSheaf B S hS X T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalAlgebraicSpace.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalAlgebraicSpace.lean#L236). The attribute's comment: “assumes the affine étale charts of X as hA, str, a, ha, hcov, their closed point sets as hTi and hTpts, the affine case's HasStageAtlas as hstage, and the 0AIS condition as hset”.
+**`AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalAlgebraicSpace.lean, line 236](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalAlgebraicSpace.lean#L236). The attribute's comment: “assumes the affine étale charts of X as hA, str, a, ha, hcov, their closed point sets as hTi and hTpts, the affine case's HasStageAtlas as hstage, and the 0AIS condition as hset”.
 
 > **Stacks 0AIZ.** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `T ⊆ |X|` be a closed subset. The completion `X_{/T}` of `X` along `T` — the fppf sheaf attached
@@ -134,7 +134,7 @@ theorem isFormalAlgebraicSpace_completionSheaf
     IsFormalAlgebraicSpace B S hS (Space.completionSheaf B S hS X T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_toSheafify_completionSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean#L374). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.FormalSpace.isIso_toSheafify_completionSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean, line 374](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionSetTheoretic.lean#L374). The attribute's comment: “the functor”.
 
 > Let `X` be an algebraic space over `S` and `T` a set of points of `X`. The functor sending
 > an object `U` of the big fppf site of `S` to the morphisms `f : U ⟶ X` with `f(|U|) ⊆ T` is an
@@ -153,7 +153,7 @@ theorem isIso_toSheafify_completionSubfunctor
 
 [Tag 0AMC](https://stacks.math.columbia.edu/tag/0AMC) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.completionAlongClosedSubset`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean#L568).
+**`AlgebraicGeometry.FormalSpace.completionAlongClosedSubset`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean, line 568](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlgebraicSpaceAtlas.lean#L568).
 
 > **Stacks 0AMC.** Let `S` be a scheme, let `X` be an algebraic space over `S` and let
 > `T ⊆ |X|` be a closed subset. The *completion of `X` along `T`* is the formal algebraic space
@@ -173,7 +173,7 @@ def completionAlongClosedSubset {X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0APV](https://stacks.math.columbia.edu/tag/0APV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean#L230). The attribute's comment: “cartesian square”.
+**`AlgebraicGeometry.Space.isPullback_completionSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean, line 230](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean#L230). The attribute's comment: “cartesian square”.
 
 > **Stacks 0APV.** Completion is compatible with base change: for a morphism `f : X' ⟶ X`
 > of presheaves on the big fppf site of `S` and a set `T` of points of `X`, the square formed
@@ -191,7 +191,7 @@ theorem isPullback_completionSheafMap
       (completionSheafInclusion B S hS X T)
 ```
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_completionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean#L245). The attribute's comment: “representable by algebraic spaces”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpacesULift_completionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean, line 245](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/Completion.lean#L245). The attribute's comment: “representable by algebraic spaces”.
 
 > **Stacks 0APV.** For a morphism `f : X' ⟶ X` of algebraic spaces over `S` and a set `T`
 > of points of `X`, the induced morphism of completions `X'_{/|f|⁻¹ T} ⟶ X_{/T}` is
@@ -210,7 +210,7 @@ theorem isRepresentableByAlgebraicSpacesULift_completionMap
 
 [Tag 0GB9](https://stacks.math.columbia.edu/tag/0GB9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isReduction_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubsetReduction.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubsetReduction.lean#L379).
+**`AlgebraicGeometry.FormalSpace.isReduction_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubsetReduction.lean, line 379](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionAlongClosedSubsetReduction.lean#L379).
 
 > **Stacks 0GB9.** Let `X` be an algebraic space over `S` and let `T ⊆ |X|` be a closed
 > subset. The reduction of the completion `X_{/T}` of `X` along `T` is the reduced induced
@@ -228,7 +228,7 @@ theorem isReduction_completionSheaf :
 
 [Tag 0GBA](https://stacks.math.columbia.edu/tag/0GBA) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean#L430). The attribute's comment: “adic*”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean, line 430](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean#L430). The attribute's comment: “adic*”.
 
 > **Stacks 0GBA (1).** Let `X = Spec A` be an affine scheme over `S` in the big fppf site and
 > let `T ⊆ |X|` be a closed subset whose complement is quasi-compact, that is a constructible
@@ -245,7 +245,7 @@ theorem isAdicStar_completionSheaf
       (Space.completionSheaf B S hS (yoneda.obj (affineOver B S hS hA f)) T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isNoetherian_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean#L447). The attribute's comment: “Noetherian”.
+**`AlgebraicGeometry.FormalSpace.isNoetherian_completionSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean, line 447](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionTypes.lean#L447). The attribute's comment: “Noetherian”.
 
 > **Stacks 0GBA (3).** Let `X = Spec A` be a Noetherian affine scheme over `S` in the big
 > fppf site and let `T ⊆ |X|` be a closed subset. Then the completion `X_{/T}` is a Noetherian
@@ -260,7 +260,7 @@ theorem isNoetherian_completionSheaf [IsNoetherianRing A]
       (Space.completionSheaf B S hS (yoneda.obj (affineOver B S hS hA f)) T)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_completionComparison_adicQuotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean#L167). The attribute's comment: “formal spectrum, for the constructed quotient-system presentation `AlgebraicGeometry.FormalSpace.adicQuotientSystem` of the completion”.
+**`AlgebraicGeometry.FormalSpace.isIso_completionComparison_adicQuotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineRigEtaleAlgebraization.lean#L167). The attribute's comment: “formal spectrum, for the constructed quotient-system presentation `AlgebraicGeometry.FormalSpace.adicQuotientSystem` of the completion”.
 
 > Let `X = Spec A` be an affine scheme over `S` in the big fppf site and let `T = V(I)` for a
 > finitely generated ideal `I ⊆ A`. Then the canonical comparison `Spf (A^∧) ⟶ X_{/T}` is an
@@ -273,7 +273,7 @@ theorem isIso_completionComparison_adicQuotientSystem (hA : B.Contains (Spec (.o
       (quotientSystemCompatible_adicQuotientSystem B S hS hA f I hI))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean#L936). The attribute's comment: “formal spectrum”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
+**`AlgebraicGeometry.FormalSpace.isIso_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean, line 936](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean#L936). The attribute's comment: “formal spectrum”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
 
 > **Stacks 0GBA (2).** Let `X = Spec A` be an affine scheme over `S` in the big fppf site
 > and let `T = V(I)` be the zero locus of a finitely generated ideal `I ⊆ A`. Then the
@@ -292,7 +292,7 @@ theorem isIso_completionComparison
 
 [Tag 0APW](https://stacks.math.columbia.edu/tag/0APW) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_zeroLocusCompletion_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean#L250). The attribute's comment: “clause (1)”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_zeroLocusCompletion_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean, line 250](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean#L250). The attribute's comment: “clause (1)”.
 
 > **Stacks 0APW (1).** Let `X = Spec A` be an affine scheme over `S` and `T = V(I)` a closed
 > subset. If the formal completion `X_{/T}` is countably indexed and `T = V(e 0, e 1, …)` is cut
@@ -310,7 +310,7 @@ theorem isAdicStar_zeroLocusCompletion_of_isCountablyIndexed (I : Ideal A) (e : 
     IsAdicStar B S hS (zeroLocusCompletion B S hS hA f I)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_not_isAdicStar_zeroLocusCompletion_gabber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean#L268). The attribute's comment: “clause (2)”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_not_isAdicStar_zeroLocusCompletion_gabber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedCompletionAdicStar.lean#L268). The attribute's comment: “clause (2)”.
 
 > **Stacks 0APW (2).** The conclusion of clause (1) fails without the countability of the
 > equations: for Gabber's ring `A` and `T = V(x_α : α ∈ ω₁)`, the formal completion `X_{/T}` of
@@ -340,4 +340,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.14, Tag 0AIX](https://stacks.math.columbia.edu/tag/0AIX)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

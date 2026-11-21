@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0A01",
@@ -385,7 +385,7 @@
      "sga": [],
      "file": "StacksFrontier/AlgebraicGeometry/FormalGeometry/DerivedCompletionRinged/PushforwardCommutesCompletion.lean",
      "tier": "StacksFrontier",
-     "comment": "the canonical map `(Rf_*K)^∧ ⟶ Rf_*(K^∧)` whose invertibility the tag asserts,\n  constructed as a mate and hence natural in `K`, at an arbitrary pair of sheaves of ideals\n  subject only to the relation of [Stacks, Tag 099J] between them. Its invertibility at every\n  object of `D(𝒪')`, which is the tag's assertion, is\n  `AlgebraicGeometry.RingedSite.isIso_derivedCompletionPushforwardComparison_inverseImageIdealSheaf_of_isFiniteType`\n  of `PushforwardCommutesCompletionLocalToGlobal.lean`, at the tag's own data: `ℐ` of finite\n  type and `ℐ' = f^{-1}ℐ · 𝒪_X`"
+     "comment": "the canonical map `(Rf_*K)^∧ ⟶ Rf_*(K^∧)` whose invertibility the tag asserts,\n  constructed as a mate and hence natural in `K`, at an arbitrary pair of sheaves of ideals\n  subject only to the relation of [Stacks, Tag 099J] between them. Its invertibility at every\n  object of `D(𝒪')`, which is the tag's assertion, is `AlgebraicGeometry.RingedSite.isIso_derivedCompletionPushforwardComparison_inverseImageIdealSheaf_of_isFiniteType` of `PushforwardCommutesCompletionLocalToGlobal.lean`, at the tag's own data: `ℐ` of finite type and `ℐ' = f^{-1}ℐ · 𝒪_X`"
     },
     {
      "name": "AlgebraicGeometry.RingedSite.isIso_derivedCompletionPushforwardComparison_of_isIso_map_unit",
@@ -19400,10 +19400,6 @@
       {
        "ref": "0 17.3.1",
        "comment": "fin. coh. dim ⇔ regular"
-      },
-      {
-       "ref": "0 17.3.1",
-       "comment": "fin. coh. dim ⇔ regular"
       }
      ],
      "sga": [],
@@ -21719,7 +21715,7 @@
     {
      "name": "AlgebraicGeometry.pseudoDiscreteSetSheafAdjunction",
      "kind": "def",
-     "line": 338,
+     "line": 339,
      "private": false,
      "doc": "**Stacks 0AHY**: on a space with a basis of quasi-compact opens, pseudo-discretisation of\nsheaves of sets is left adjoint to the forgetful functor from sheaves of topological spaces to\nsheaves of sets.",
      "statement": "noncomputable def pseudoDiscreteSetSheafAdjunction :\n    pseudoDiscreteSetSheafFunctor X ⊣ sheafForgetTopCat X",
@@ -21733,7 +21729,7 @@
     {
      "name": "AlgebraicGeometry.pseudoDiscreteSetSheafEquivalence",
      "kind": "def",
-     "line": 396,
+     "line": 397,
      "private": false,
      "doc": "**Stacks 0AHY**: on a space with a basis of quasi-compact opens, pseudo-discretisation is an\nequivalence between the category of sheaves of sets and the category of pseudo-discrete sheaves of\ntopological spaces; its inverse forgets the topology.",
      "statement": "noncomputable def pseudoDiscreteSetSheafEquivalence :\n    Sheaf (Opens.grothendieckTopology X) (Type u) ≌ PseudoDiscreteTopSheaf X",
@@ -25513,7 +25509,7 @@
      "sga": [],
      "declared": {
       "file": "StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphism.lean",
-      "line": 152
+      "line": 153
      }
     }
    ]
@@ -25524,7 +25520,7 @@
     {
      "name": "AlgebraicGeometry.FormalSpace.IsQuasiCompactOnSchemeBaseChanges.isQuasiCompact",
      "kind": "theorem",
-     "line": 233,
+     "line": 234,
      "private": false,
      "doc": "**Stacks 0AJB, condition (2) implies condition (3).** The fibre product condition over the\nquasi-compact schemes over `S` in the site restricts to the affine ones, an affine scheme\nbeing quasi-compact.",
      "statement": "theorem IsQuasiCompactOnSchemeBaseChanges.isQuasiCompact {X Y : FppfSheaf B S hS} {f : X ⟶ Y}\n    (h : IsQuasiCompactOnSchemeBaseChanges B S hS f) : IsQuasiCompact B S hS f",
@@ -25712,7 +25708,7 @@
     {
      "name": "AlgebraicGeometry.FormalSpace.IsQuasiCompact",
      "kind": "abbrev",
-     "line": 204,
+     "line": 205,
      "private": false,
      "doc": "**Stacks 0AJC**, in the form of **Stacks 0AJB, condition (3)**. A morphism of formal\nalgebraic spaces over `S` is *quasi-compact* when every fibre product of it with an affine\nscheme over `S` in the site mapping to its target is a quasi-compact formal algebraic space\nover `S`. The condition makes sense, and is stated, for an arbitrary morphism of fppf sheaves\non the big fppf site of `S`.",
      "statement": "abbrev IsQuasiCompact {X Y : FppfSheaf B S hS} (f : X ⟶ Y) : Prop",
@@ -30024,7 +30020,7 @@
     {
      "name": "AlgebraicGeometry.FormalSpace.exists_formalSpectrumMap_constants_not_representable",
      "kind": "theorem",
-     "line": 128,
+     "line": 129,
      "private": false,
      "doc": "**Stacks 0AN7 (1).** Let `k` be a field with the discrete topology and let `k⟦t⟧` carry the\n`t`-adic topology; both are weakly admissible and the inclusion of constants `φ : k → k⟦t⟧` is\ncontinuous. Then, over the base `S = Spec k` of a suitable big fppf site, the formal spectra\n`Spf k` and `Spf k⟦t⟧` are affine formal algebraic spaces and\n`Spf (φ) : Spf k⟦t⟧ ⟶ Spf k` is neither representable nor representable by algebraic spaces.",
      "statement": "theorem exists_formalSpectrumMap_constants_not_representable\n    (k : Type u) [Field k] [TopologicalSpace k] [DiscreteTopology k] :\n    ∃ (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)\n      (D : QuotientSystem B S hS k)\n      (E : QuotientSystem B S hS (TopologicalRing.TAdicPowerSeries k))\n      (f : ContinuousHom D E),\n      f.toRingHom = TopologicalRing.constantsToTAdicPowerSeries k ∧\n      IsAffineFormalAlgebraicSpace B S hS (formalSpectrum D) ∧\n      IsAffineFormalAlgebraicSpace B S hS (formalSpectrum E) ∧\n      ¬ (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)).relativelyRepresentable\n        (formalSpectrumMap (TopologicalRing.isWeaklyAdmissible_discreteTopology k) f) ∧\n      ¬ Space.IsRepresentableByAlgebraicSpacesULift.{u + 1} B S hS\n        (formalSpectrumMap (TopologicalRing.isWeaklyAdmissible_discreteTopology k) f).hom",
@@ -30038,7 +30034,7 @@
     {
      "name": "AlgebraicGeometry.FormalSpace.exists_representable_formalSpectrum_not_mcQuillan",
      "kind": "theorem",
-     "line": 180,
+     "line": 181,
      "private": false,
      "doc": "**Stacks 0AN7 (2).** There are a weakly admissible topological ring `A` over a base `S` and a\nrepresentable morphism `f : Y ⟶ Spf A` of affine formal algebraic spaces such that the target\n`Spf A` is McQuillan but the source `Y` is not. This is the example of Examples, Section 0ANY,\ni.e. Stacks 0CBE, with its McQuillan target identified with a formal spectrum. The source is not\nMcQuillan in the sense of condition (4) of Stacks 0AIC, and not in the sense of condition (1)\neither: it is isomorphic to the formal spectrum of no weakly admissible topological ring.",
      "statement": "theorem exists_representable_formalSpectrum_not_mcQuillan :\n    ∃ (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)\n      (A : Type u) (_ : CommRing A) (_ : TopologicalSpace A) (_ : IsTopologicalRing A)\n      (_ : IsLinearTopology A A) (D : QuotientSystem B S hS A) (Y : FppfSheaf B S hS)\n      (f : Y ⟶ formalSpectrum D),\n      TopologicalRing.IsWeaklyAdmissible A ∧\n      IsAffineFormalAlgebraicSpace B S hS Y ∧\n      IsAffineFormalAlgebraicSpace B S hS (formalSpectrum D) ∧\n      HasSomeSurjectivePresentation B S hS (formalSpectrum D) ∧\n      (Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)).relativelyRepresentable f ∧\n      ¬ HasSomeSurjectivePresentation B S hS Y ∧\n      ¬ ∃ (A' : Type u) (_ : CommRing A') (_ : TopologicalSpace A') (_ : IsTopologicalRing A')\n        (_ : IsLinearTopology A' A') (D' : QuotientSystem B S hS A'),\n        TopologicalRing.IsWeaklyAdmissible A' ∧ Nonempty (Y ≅ formalSpectrum D')",
@@ -30503,7 +30499,7 @@
      "line": 515,
      "private": false,
      "doc": "**Stacks 0ANJ**, (a) ⇔ (b) as stated: for a continuous arrow `B → A` of weakly admissible\nlinearly topologized rings with `B` having a countable fundamental system of neighbourhoods of\nzero, `B → A` is taut if and only if for every decreasing fundamental sequence `J n` of weak\nideals of definition of `B` there is a commutative diagram of discrete rings `Aₙ` over\n`B → B ⧸ J n` with `Aₙ₊₁ ⧸ J n Aₙ₊₁ = Aₙ` and `A = lim Aₙ` as topological rings.",
-     "statement": "theorem isTaut_iff_forall_exists_isQuotientDiagram {A B : Type u}\n    [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]\n    [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]\n    (f : B →+* A) (hf : Continuous f)\n    (hA : TopologicalRing.IsWeaklyAdmissible A) (hB : TopologicalRing.IsWeaklyAdmissible B)\n    (hBcount : (nhds (0 : B)).IsCountablyGenerated) :\n    RingHom.IsTaut f ↔\n      ∀ (J : ℕ → Ideal B) (hJ : RingHom.QuotientDiagram.IsFundamentalSequence J),\n        ∃ (Aₙ : ℕ → Type u) (_ : ∀ n, CommRing (Aₙ n)) (_ : ∀ n, TopologicalSpace (Aₙ n))\n          (π : ∀ n, A →+* Aₙ n) (t : ∀ n, Aₙ (n + 1) →+* Aₙ n) (σ : ∀ n, B ⧸ J n →+* Aₙ n),\n          RingHom.QuotientDiagram.IsQuotientDiagram f J hJ.2.1 π t σ",
+     "statement": "theorem isTaut_iff_forall_exists_isQuotientDiagram {A B : Type u}\n    [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]\n    [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]\n    (f : B →+* A)\n    (hA : TopologicalRing.IsWeaklyAdmissible A) (hB : TopologicalRing.IsWeaklyAdmissible B)\n    (hBcount : (nhds (0 : B)).IsCountablyGenerated) :\n    RingHom.IsTaut f ↔\n      ∀ (J : ℕ → Ideal B) (hJ : RingHom.QuotientDiagram.IsFundamentalSequence J),\n        ∃ (Aₙ : ℕ → Type u) (_ : ∀ n, CommRing (Aₙ n)) (_ : ∀ n, TopologicalSpace (Aₙ n))\n          (π : ∀ n, A →+* Aₙ n) (t : ∀ n, Aₙ (n + 1) →+* Aₙ n) (σ : ∀ n, B ⧸ J n →+* Aₙ n),\n          RingHom.QuotientDiagram.IsQuotientDiagram f J hJ.2.1 π t σ",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -30517,7 +30513,7 @@
      "line": 496,
      "private": false,
      "doc": "A continuous arrow `B → A` of weakly admissible linearly topologized rings is taut if and only\nif, for the given decreasing fundamental sequence `J n` of weak ideals of definition of `B`, there\nexist discrete rings `Aₙ` forming a commutative diagram over `B → B ⧸ J n` with\n`Aₙ₊₁ ⧸ J n Aₙ₊₁ = Aₙ` and `A = lim Aₙ` as topological rings.",
-     "statement": "public theorem isTaut_iff_exists_isQuotientDiagram.{u} {A B : Type u}\n    [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]\n    [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]\n    (f : B →+* A) (_hf : Continuous f)\n    (hA : TopologicalRing.IsWeaklyAdmissible A) (_hB : TopologicalRing.IsWeaklyAdmissible B)\n    (J : ℕ → Ideal B) (hJ : IsFundamentalSequence J) :\n    RingHom.IsTaut f ↔\n      ∃ (Aₙ : ℕ → Type u) (_ : ∀ n, CommRing (Aₙ n)) (_ : ∀ n, TopologicalSpace (Aₙ n))\n        (π : ∀ n, A →+* Aₙ n) (t : ∀ n, Aₙ (n + 1) →+* Aₙ n) (σ : ∀ n, B ⧸ J n →+* Aₙ n),\n        IsQuotientDiagram f J hJ.2.1 π t σ",
+     "statement": "public theorem isTaut_iff_exists_isQuotientDiagram.{u} {A B : Type u}\n    [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]\n    [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]\n    (f : B →+* A) (hA : TopologicalRing.IsWeaklyAdmissible A)\n    (J : ℕ → Ideal B) (hJ : IsFundamentalSequence J) :\n    RingHom.IsTaut f ↔\n      ∃ (Aₙ : ℕ → Type u) (_ : ∀ n, CommRing (Aₙ n)) (_ : ∀ n, TopologicalSpace (Aₙ n))\n        (π : ∀ n, A →+* Aₙ n) (t : ∀ n, Aₙ (n + 1) →+* Aₙ n) (σ : ∀ n, B ⧸ J n →+* Aₙ n),\n        IsQuotientDiagram f J hJ.2.1 π t σ",
      "sorry": false,
      "ega": [],
      "sga": [],
@@ -35963,7 +35959,7 @@
     {
      "name": "AlgebraicGeometry.flat_quotient_smallerFlatnessIdeal",
      "kind": "theorem",
-     "line": 330,
+     "line": 339,
      "private": false,
      "doc": "**Stacks Project, Tag 0ATC.** Let `I` be an ideal of a commutative ring `A` and let\n`U ⊆ Spec A` be a quasi-compact open. If `M/IM` is flat over `A/I` and `M~` is flat on `U`,\nthen `M/I₂M` is flat over `A/I₂`, where `I₂ = Ker (I → Γ(U, (I/I²)~))`.\n\nThe source assumes `A` local; locality is not used.",
      "statement": "theorem flat_quotient_smallerFlatnessIdeal\n    {A : Type u} [CommRing A]\n    {M : Type u} [AddCommGroup M] [Module A M]\n    (I : Ideal A) (U : (Spec (.of A)).Opens)\n    (hU : IsCompact U.1)\n    (hquot : Module.Flat (A ⧸ I) (M ⧸ I • (⊤ : Submodule A M)))\n    (hflat : SheafOfModules.IsFlat.{u, u, u, u} (O := (U : Scheme).sheaf)\n      (show (U : Scheme).Modules from\n        (tilde (ModuleCat.of A M)).restrict U.ι)) :\n    Module.Flat (A ⧸ smallerFlatnessIdeal I U)\n      (M ⧸ smallerFlatnessIdeal I U • (⊤ : Submodule A M))",
@@ -41955,10 +41951,10 @@
     {
      "name": "AlgebraicGeometry.topologicalKrullDim_component_pullback_lower_bounds",
      "kind": "theorem",
-     "line": 922,
+     "line": 923,
      "private": false,
      "doc": "**Stacks Project, Tag 0AZN.** Let `f : X ⟶ Y` be a morphism of varieties over a field, let\n`Z ⊆ Y` be a closed subvariety, presented by the ideal sheaf `I`, and let `W` be an irreducible\ncomponent of the scheme-theoretic inverse image `f⁻¹(Z) = X ×_Y Z`. Then:\n\n1. if `f` is a regular immersion of codimension `c`, then `dim Z ≤ dim W + c`, that is, `W` has\n   dimension at least `dim Z - c`;\n2. if `f` is a local complete intersection morphism of relative dimension `r`, and `Z` has\n   dimension `d`, then `W` has dimension `m` with `d + r ≤ m`.\n\nDimensions are `topologicalKrullDim`, valued in `WithBot ℕ∞`, which has no subtraction: the\nsource's `dim W ≥ d - c` in part (1) is accordingly a relation between the two dimensions,\n`dim Z ≤ dim W + c`. In part (2) the relative dimension `r` is an integer, negative for a\nregular immersion, so there the two dimensions are produced as the natural numbers they are and\n`d + r ≤ m` is an inequality in `ℤ`.",
-     "statement": "theorem topologicalKrullDim_component_pullback_lower_bounds\n    (k : Type u) [Field k] {X Y : Scheme.{u}} (sX : X ⟶ Spec (.of k)) (sY : Y ⟶ Spec (.of k))\n    [IsVariety k sX] [IsVariety k sY] (f : X ⟶ Y) (hf : f ≫ sY = sX)\n    (I : Y.IdealSheafData) [IsIntegral I.subscheme]\n    (W : Set (pullback f I.subschemeι : Scheme.{u}))\n    (hW : W ∈ irreducibleComponents (pullback f I.subschemeι : Scheme.{u})) :\n    (∀ [IsImmersion f], Stacks.AlgebraicGeometry.RegularIdealSheaf.IsRegularImmersion f →\n        ∀ (c : ℕ) [SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u}\n          (Stacks.Conormal.conormalSheaf f) c],\n          topologicalKrullDim I.subscheme ≤ topologicalKrullDim W + (c : WithBot ℕ∞)) ∧\n      (∀ r : ℤ, IsLocalCompleteIntersectionMorphismOfRelativeDimension f r →\n        ∃ d m : ℕ, topologicalKrullDim I.subscheme = (d : WithBot ℕ∞) ∧\n          topologicalKrullDim W = (m : WithBot ℕ∞) ∧ (d : ℤ) + r ≤ (m : ℤ))",
+     "statement": "theorem topologicalKrullDim_component_pullback_lower_bounds\n    (k : Type u) [Field k] {X Y : Scheme.{u}} (sX : X ⟶ Spec (.of k)) (sY : Y ⟶ Spec (.of k))\n    [IsVariety k sX] [IsVariety k sY] (f : X ⟶ Y)\n    (I : Y.IdealSheafData) [IsIntegral I.subscheme]\n    (W : Set (pullback f I.subschemeι : Scheme.{u}))\n    (hW : W ∈ irreducibleComponents (pullback f I.subschemeι : Scheme.{u})) :\n    (∀ [IsImmersion f], Stacks.AlgebraicGeometry.RegularIdealSheaf.IsRegularImmersion f →\n        ∀ (c : ℕ) [SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u}\n          (Stacks.Conormal.conormalSheaf f) c],\n          topologicalKrullDim I.subscheme ≤ topologicalKrullDim W + (c : WithBot ℕ∞)) ∧\n      (∀ r : ℤ, IsLocalCompleteIntersectionMorphismOfRelativeDimension f r →\n        ∃ d m : ℕ, topologicalKrullDim I.subscheme = (d : WithBot ℕ∞) ∧\n          topologicalKrullDim W = (m : WithBot ℕ∞) ∧ (d : ℤ) + r ≤ (m : ℤ))",
      "sorry": false,
      "ega": [],
      "sga": [],

@@ -1,8 +1,7 @@
 # StarAlgebra
 
-The folder [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra): 13 modules, an article each, in path order.
+The folder [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/StarAlgebra): 12 modules, an article each, in path order.
 
-- [Expectation values of non-self-adjoint operators](complexextension.md)
 - [The covariance form of a state and its symmetries](covarianceform.md)
 - [Covariances do not decrease under unital maps](covarianceformunitalmap.md)
 - [The GNS representation of a state on a unital `*`-algebra](gns.md)

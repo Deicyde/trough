@@ -1,6 +1,6 @@
 # GaugeTheory
 
-The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory): 77 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory): 81 modules, an article each, in path order with Basic.lean first in its folder.
 
 ## [The gauge-boson field of a… to The gauge law on brackets and…](part-01/README.md)
 
@@ -31,13 +31,17 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The fermionic generators of a gauge theory](part-02/gaugefielddata-fermiongenerators.md)
 - [The fermionic matter field of a gauge theory](part-02/gaugefielddata-fermionmatterfield.md)
 - [The fermionic module of a gauge theory](part-02/gaugefielddata-fermionmodule.md)
+- [Global gauge groups](part-02/globalgaugegroup-basic.md)
+- [The gauge jets of a global gauge group](part-02/globalgaugegroup-gaugejetgroup.md)
+- [The Lie algebra jets of a global gauge group](part-02/globalgaugegroup-jetliealgebra.md)
+- [The local gauge data of a global gauge group](part-02/globalgaugegroup-localgaugedata.md)
 - [The covariant field algebra of a gauge theory](part-02/localcovfield-basic.md)
 - [The covariant gauge sector as the complexified covariant gauge-only algebra](part-02/localcovfield-gaugesector.md)
 - [Realizations of the covariant gauge sector](part-02/localcovfield-gaugesectorrealization.md)
-- [Realizations of the covariant field algebra (LocalCovField/Realization)](part-02/localcovfield-realization.md)
 
-## [The covariant sector algebras… to Realizations of the local field…](part-03/README.md)
+## [Realizations of the covariant… to The mass-weight filtration and…](part-03/README.md)
 
+- [Realizations of the covariant field algebra (LocalCovField/Realization)](part-03/localcovfield-realization.md)
 - [The covariant sector algebras of the local field algebra](part-03/localcovfield-sector.md)
 - [Realizations of the covariant sector algebras](part-03/localcovfield-sectorrealization.md)
 - [The local field algebra of a gauge theory and its universal property](part-03/localfield-basic.md)
@@ -49,10 +53,10 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [Fibrewise actions on `V`-valued jets](part-03/localfield-jetrep.md)
 - [The Lorentz action on the local field algebra](part-03/localfield-lorentzaction.md)
 - [The mass-weight filtration and the invariants of a local field algebra](part-03/localfield-massweight.md)
-- [Realizations of the local field algebra](part-03/localfield-realization.md)
 
-## [The ordinary sector algebras of… to The generalized Gell-Mann…](part-04/README.md)
+## [Realizations of the local field… to The Lie algebra `su(n)` over a…](part-04/README.md)
 
+- [Realizations of the local field algebra](part-04/localfield-realization.md)
 - [The ordinary sector algebras of the local field algebra](part-04/localfield-sector.md)
 - [Realizations of the ordinary sector algebras](part-04/localfield-sectorrealization.md)
 - [The field symbols of the local field algebra and their transformation laws](part-04/localfield-transformsin.md)
@@ -68,10 +72,10 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The local gauge data of `SU(n)`](part-04/localgaugedata-su-basic.md)
 - [The adjoint representation of `SU(N)`](part-04/localgaugedata-su-adjoint.md)
 - [The Lie algebra `su(n)` over a `*`-algebra](part-04/localgaugedata-su-algebra.md)
-- [The generalized Gell-Mann matrices (PhyslibAlpha)](part-04/localgaugedata-su-gellmann.md)
 
-## [The complex tensor species of… to The jet component space of a…](part-05/README.md)
+## [The generalized Gell-Mann… to Gauge tensors in a…](part-05/README.md)
 
+- [The generalized Gell-Mann matrices (PhyslibAlpha)](part-05/localgaugedata-su-gellmann.md)
 - [The complex tensor species of `SU(N)`](part-05/localgaugedata-su-tensorspecies.md)
 - [Elements of `SU(N)` in a coordinate plane, and what commutes with them](part-05/localgaugedata-su-invariants-basic.md)
 - [Invariants of one and of two adjoint indices of `SU(N)`](part-05/localgaugedata-su-invariants-adjoint.md)
@@ -86,10 +90,10 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The direct sum of a finite family of matter fields](part-05/matterfield-pi.md)
 - [The direct sum of two matter fields](part-05/matterfield-prod.md)
 - [Gauge tensors in a representation](part-05/matterfield-transformsin.md)
-- [The jet component space of a matter field](part-05/matterfield-jetcomponent-basic.md)
 
-## [The gauge action on the jet… to Model tables](part-06/README.md)
+## [The jet component space of a… to Model tables](part-06/README.md)
 
+- [The jet component space of a matter field](part-06/matterfield-jetcomponent-basic.md)
 - [The gauge action on the jet component space](part-06/matterfield-jetcomponent-gaugeaction.md)
 - [The transformation law of a derivative symbol](part-06/matterfield-jetcomponent-transformsin.md)
 - [Matrix representations of a jet gauge group](part-06/matterfield-matrixrep-basic.md)

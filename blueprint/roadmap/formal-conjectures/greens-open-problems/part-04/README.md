@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Ben Green's Open Problem 76 to Ben Green's Open Problem 100
+# Ben Green's Open Problem 75 to Ben Green's Open Problem 100
 
+- [Ben Green's Open Problem 75](ben-greens-open-problem-75.md)
 - [Ben Green's Open Problem 76](ben-greens-open-problem-76.md)
 - [Ben Green's Open Problem 77](ben-greens-open-problem-77.md)
 - [Ben Green's Open Problem 82](ben-greens-open-problem-82.md)

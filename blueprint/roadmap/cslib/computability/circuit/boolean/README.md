@@ -1,6 +1,6 @@
 # Boolean
 
-7 modules under `Cslib/Computability/Circuit/Boolean/`, with 22 public declarations.
+7 modules under `Cslib/Computability/Circuit/Boolean/`, with 23 public declarations.
 
 - [Boolean circuits](basic.md)
 - [Completeness of the De Morgan basis](complexity.md)

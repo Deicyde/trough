@@ -12,7 +12,7 @@ statement: formalized
 > by Boris Pittel, Section 6, Notes (2).
 > The conjecture also appears in the [arXiv preprint, p. 26](https://arxiv.org/pdf/2406.10319#page=26).
 
-*Quoted from [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [d8d031d4](https://github.com/google-deepmind/formal-conjectures/tree/d8d031d4998c78575159ccab9a7a9e95ce043883), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open.
 
@@ -44,7 +44,7 @@ theorem pittel_hyperbola_threshold :
             marketLaw n p.1 (hyperbolaEvent n p.1 ε)) atTop (𝓝 0)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean#L63).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean#L63).
 
 ## Depends on
 
@@ -52,5 +52,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean)
+- [FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean at d8d031d4](https://github.com/google-deepmind/formal-conjectures/blob/d8d031d4998c78575159ccab9a7a9e95ce043883/FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean)
 - [On Constrained Matchings, Stable Under Random Preferences](https://doi.org/10.1002/rsa.70036)

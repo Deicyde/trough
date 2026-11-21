@@ -8,7 +8,7 @@ proof: formalized
 
 # Gradient of functions and distributions on `Space d`
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.Grad`, [Physlib/SpaceAndTime/Space/Derivatives/Grad.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean): 40 declarations, 5 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Derivatives.Grad`, [Physlib/SpaceAndTime/Space/Derivatives/Grad.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean): 40 declarations, 5 with a docstring.
 
 ## i. Overview
 
@@ -29,7 +29,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.Grad`, [Physlib/SpaceAndTime/
 
 ## A. The gradient of functions on `Space d`
 
-**`Space.grad`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L72).
+**`Space.grad`**, a def, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L72).
 
 > The vector calculus operator `grad`.
 
@@ -40,7 +40,7 @@ noncomputable def grad {d} (f : Space d → ℝ) :
 
 ### A.1. Gradient of the zero function
 
-**`Space.grad_zero`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L85).
+**`Space.grad_zero`**, a lemma, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L85).
 
 ```lean
 lemma grad_zero : ∇ (0 : Space d → ℝ) = 0
@@ -48,7 +48,7 @@ lemma grad_zero : ∇ (0 : Space d → ℝ) = 0
 
 ### A.2. Gradient distributes over addition
 
-**`Space.grad_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L97).
+**`Space.grad_add`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L97).
 
 ```lean
 lemma grad_add (f1 f2 : Space d → ℝ)
@@ -56,7 +56,7 @@ lemma grad_add (f1 f2 : Space d → ℝ)
     ∇ (f1 + f2) = ∇ f1 + ∇ f2
 ```
 
-**`Space.grad_fun_add_const`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L107).
+**`Space.grad_fun_add_const`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L107).
 
 ```lean
 lemma grad_fun_add_const (f : Space d → ℝ) (c : ℝ) :
@@ -65,7 +65,7 @@ lemma grad_fun_add_const (f : Space d → ℝ) (c : ℝ) :
 
 ### A.3. Gradient of a constant function
 
-**`Space.grad_const`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L119).
+**`Space.grad_const`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L119).
 
 ```lean
 lemma grad_const : ∇ (fun _ : Space d => c) = 0
@@ -73,7 +73,7 @@ lemma grad_const : ∇ (fun _ : Space d => c) = 0
 
 ### A.4. Gradient distributes over scalar multiplication
 
-**`Space.grad_smul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L131).
+**`Space.grad_smul`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L131).
 
 ```lean
 lemma grad_smul (f : Space d → ℝ) (k : ℝ)
@@ -83,7 +83,7 @@ lemma grad_smul (f : Space d → ℝ) (k : ℝ)
 
 ### A.5. Gradient distributes over negation
 
-**`Space.grad_neg`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L147).
+**`Space.grad_neg`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L147).
 
 ```lean
 lemma grad_neg (f : Space d → ℝ) :
@@ -92,7 +92,7 @@ lemma grad_neg (f : Space d → ℝ) :
 
 ### A.6. Expansion in terms of basis vectors
 
-**`Space.grad_eq_sum`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L161).
+**`Space.grad_eq_sum`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L161).
 
 ```lean
 lemma grad_eq_sum {d} (f : Space d → ℝ) (x : Space d) :
@@ -101,7 +101,7 @@ lemma grad_eq_sum {d} (f : Space d → ℝ) (x : Space d) :
 
 ### A.7. Components of the gradient
 
-**`Space.grad_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L174).
+**`Space.grad_apply`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L174).
 
 ```lean
 lemma grad_apply {d} (f : Space d → ℝ) (x : Space d) (i : Fin d) :
@@ -110,35 +110,35 @@ lemma grad_apply {d} (f : Space d → ℝ) (x : Space d) (i : Fin d) :
 
 ### A.8. Inner product with a gradient
 
-**`Space.grad_inner_single`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L186).
+**`Space.grad_inner_single`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L186).
 
 ```lean
 lemma grad_inner_single {d} (f : Space d → ℝ) (x : Space d) (i : Fin d) :
     ⟪∇ f x, EuclideanSpace.single i 1⟫_ℝ = ∂[i] f x
 ```
 
-**`Space.grad_inner_eq`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L190).
+**`Space.grad_inner_eq`**, a lemma, [line 190](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L190).
 
 ```lean
 lemma grad_inner_eq {d} (f : Space d → ℝ) (x : Space d) (y : EuclideanSpace ℝ (Fin d)) :
     ⟪∇ f x, y⟫_ℝ = ∑ i, y i * ∂[i] f x
 ```
 
-**`Space.inner_grad_eq`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L194).
+**`Space.inner_grad_eq`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L194).
 
 ```lean
 lemma inner_grad_eq {d} (f : Space d → ℝ) (x : EuclideanSpace ℝ (Fin d)) (y : Space d) :
     ⟪x, ∇ f y⟫_ℝ = ∑ i, x i * ∂[i] f y
 ```
 
-**`Space.grad_inner_repr_eq`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L198).
+**`Space.grad_inner_repr_eq`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L198).
 
 ```lean
 lemma grad_inner_repr_eq {d} (f : Space d → ℝ) (x y : Space d) :
     ⟪∇ f x, (Space.basis).repr y⟫_ℝ = fderiv ℝ f x y
 ```
 
-**`Space.repr_grad_inner_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L202).
+**`Space.repr_grad_inner_eq`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L202).
 
 ```lean
 lemma repr_grad_inner_eq {d} (f : Space d → ℝ) (x y : Space d) :
@@ -147,42 +147,42 @@ lemma repr_grad_inner_eq {d} (f : Space d → ℝ) (x y : Space d) :
 
 ### A.9. Gradient is equal to `gradient` from Mathlib
 
-**`Space.grad_eq_gradient`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L212).
+**`Space.grad_eq_gradient`**, a lemma, [line 212](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L212).
 
 ```lean
 lemma grad_eq_gradient {d} (f : Space d → ℝ) :
     ∇ f = basis.repr ∘ gradient f
 ```
 
-**`Space.gradient_eq_grad`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L219).
+**`Space.gradient_eq_grad`**, a lemma, [line 219](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L219).
 
 ```lean
 lemma gradient_eq_grad {d} (f : Space d → ℝ) :
     gradient f = basis.repr.symm ∘ ∇ f
 ```
 
-**`Space.gradient_apply_eq_grad`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L225).
+**`Space.gradient_apply_eq_grad`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L225).
 
 ```lean
 lemma gradient_apply_eq_grad {d} (f : Space d → ℝ) (x : Space d) :
     gradient f x = basis.repr.symm (∇ f x)
 ```
 
-**`Space.gradient_eq_sum`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L230).
+**`Space.gradient_eq_sum`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L230).
 
 ```lean
 lemma gradient_eq_sum {d} (f : Space d → ℝ) (x : Space d) :
     gradient f x = ∑ i, ∂[i] f x • basis i
 ```
 
-**`Space.euclid_gradient_eq_sum`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L234).
+**`Space.euclid_gradient_eq_sum`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L234).
 
 ```lean
 lemma euclid_gradient_eq_sum {d} (f : EuclideanSpace ℝ (Fin d) → ℝ) (x : EuclideanSpace ℝ (Fin d)) :
     gradient f x = ∑ i, fderiv ℝ f x (EuclideanSpace.single i 1) • EuclideanSpace.single i 1
 ```
 
-**`DifferentiableAt.hasGradientAt_grad`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L244).
+**`DifferentiableAt.hasGradientAt_grad`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L244).
 
 ```lean
 lemma _root_.DifferentiableAt.hasGradientAt_grad {d} {f : Space d → ℝ} (x : Space d)
@@ -192,7 +192,7 @@ lemma _root_.DifferentiableAt.hasGradientAt_grad {d} {f : Space d → ℝ} (x : 
 
 ### A.10. Value of gradient in the direction of the position vector
 
-**`Space.grad_inner_space_unit_vector`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L257).
+**`Space.grad_inner_space_unit_vector`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L257).
 
 > The gradient in the direction of the space position.
 
@@ -201,14 +201,14 @@ lemma grad_inner_space_unit_vector {d} (x : Space d) (f : Space d → ℝ) (hd :
     ⟪∇ f x, ‖x‖⁻¹ • basis.repr x⟫_ℝ = _root_.deriv (fun r => f (r • ‖x‖⁻¹ • x)) ‖x‖
 ```
 
-**`Space.grad_inner_space`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L277).
+**`Space.grad_inner_space`**, a lemma, [line 277](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L277).
 
 ```lean
 lemma grad_inner_space {d} (x : Space d) (f : Space d → ℝ) (hd : Differentiable ℝ f) :
     ⟪∇ f x, basis.repr x⟫_ℝ = ‖x‖ * _root_.deriv (fun r => f (r • ‖x‖⁻¹ • x)) ‖x‖
 ```
 
-**`Space.grad_smul_inner_space`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L286).
+**`Space.grad_smul_inner_space`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L286).
 
 ```lean
 lemma grad_smul_inner_space {d} (x : Space d) (f : Space d → ℝ) (hd : Differentiable ℝ f) (t : ℝ)
@@ -216,7 +216,7 @@ lemma grad_smul_inner_space {d} (x : Space d) (f : Space d → ℝ) (hd : Differ
     ⟪∇ f (t • x), basis.repr x⟫_ℝ = _root_.deriv (fun r => f (r • x)) t
 ```
 
-**`Space.eq_integral_grad`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L316).
+**`Space.eq_integral_grad`**, a lemma, [line 316](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L316).
 
 ```lean
 lemma eq_integral_grad {f : Space → ℝ} (hf : ContDiff ℝ 1 f) :
@@ -226,7 +226,7 @@ lemma eq_integral_grad {f : Space → ℝ} (hf : ContDiff ℝ 1 f) :
 
 ### A.11. Gradient of the norm squared function
 
-**`Space.grad_norm_sq`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L351).
+**`Space.grad_norm_sq`**, a lemma, [line 351](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L351).
 
 ```lean
 lemma grad_norm_sq (x : Space d) :
@@ -235,7 +235,7 @@ lemma grad_norm_sq (x : Space d) :
 
 ### A.12. Gradient of the inner product function
 
-**`Space.grad_inner`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L364).
+**`Space.grad_inner`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L364).
 
 > The gradient of the inner product is given by `2 • x`.
 
@@ -244,14 +244,14 @@ lemma grad_inner {d : ℕ} :
     ∇ (fun y : Space d => ⟪y, y⟫_ℝ) = fun z => (2 : ℝ) • basis.repr z
 ```
 
-**`Space.grad_inner_left`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L370).
+**`Space.grad_inner_left`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L370).
 
 ```lean
 lemma grad_inner_left {d : ℕ} (x : Space d) :
     ∇ (fun y : Space d => ⟪y, x⟫_ℝ) = fun _ => basis.repr x
 ```
 
-**`Space.grad_inner_right`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L375).
+**`Space.grad_inner_right`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L375).
 
 ```lean
 lemma grad_inner_right {d : ℕ} (x : Space d) :
@@ -260,7 +260,7 @@ lemma grad_inner_right {d : ℕ} (x : Space d) :
 
 ### A.13. Integrability with bounded functions
 
-**`Space.integrable_isDistBounded_inner_grad_schwartzMap`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L390).
+**`Space.integrable_isDistBounded_inner_grad_schwartzMap`**, a lemma, [line 390](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L390).
 
 ```lean
 lemma integrable_isDistBounded_inner_grad_schwartzMap {d : ℕ}
@@ -269,7 +269,7 @@ lemma integrable_isDistBounded_inner_grad_schwartzMap {d : ℕ}
     Integrable (fun x => ⟪f x, Space.grad η x⟫_ℝ) volume
 ```
 
-**`Space.integrable_isDistBounded_inner_grad_schwartzMap_spherical`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L412).
+**`Space.integrable_isDistBounded_inner_grad_schwartzMap_spherical`**, a lemma, [line 412](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L412).
 
 ```lean
 lemma integrable_isDistBounded_inner_grad_schwartzMap_spherical {d : ℕ}
@@ -283,7 +283,7 @@ lemma integrable_isDistBounded_inner_grad_schwartzMap_spherical {d : ℕ}
 
 ### A.14. Differentiability of gradient
 
-**`Space.contDiff_grad`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L442).
+**`Space.contDiff_grad`**, a lemma, [line 442](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L442).
 
 ```lean
 lemma contDiff_grad {n} {f : Space → ℝ} (hf : ContDiff ℝ (n + 1) f) :
@@ -294,7 +294,7 @@ lemma contDiff_grad {n} {f : Space → ℝ} (hf : ContDiff ℝ (n + 1) f) :
 
 ### B.1. The definition
 
-**`Space.distGrad`**, a def, [line 463](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L463).
+**`Space.distGrad`**, a def, [line 463](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L463).
 
 > The gradient of a distribution `(Space d) →d[ℝ] ℝ` as a distribution
 > `(Space d) →d[ℝ] (EuclideanSpace ℝ (Fin d))`.
@@ -306,14 +306,14 @@ noncomputable def distGrad {d} :
 
 ### B.2. The gradient of inner products
 
-**`Space.distGrad_inner_eq`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L483).
+**`Space.distGrad_inner_eq`**, a lemma, [line 483](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L483).
 
 ```lean
 lemma distGrad_inner_eq {d} (f : (Space d) →d[ℝ] ℝ) (η : 𝓢(Space d, ℝ))
     (y : EuclideanSpace ℝ (Fin d)) : ⟪∇ᵈ f η, y⟫_ℝ = fderivD ℝ f η (basis.repr.symm y)
 ```
 
-**`Space.distGrad_eq_of_inner`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L491).
+**`Space.distGrad_eq_of_inner`**, a lemma, [line 491](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L491).
 
 ```lean
 lemma distGrad_eq_of_inner {d} (f : (Space d) →d[ℝ] ℝ)
@@ -324,7 +324,7 @@ lemma distGrad_eq_of_inner {d} (f : (Space d) →d[ℝ] ℝ)
 
 ### B.3. The gradient as a sum over basis vectors
 
-**`Space.distGrad_eq_sum_basis`**, a lemma, [line 505](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L505).
+**`Space.distGrad_eq_sum_basis`**, a lemma, [line 505](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L505).
 
 ```lean
 lemma distGrad_eq_sum_basis {d} (f : (Space d) →d[ℝ] ℝ) (η : 𝓢(Space d, ℝ)) :
@@ -335,7 +335,7 @@ lemma distGrad_eq_sum_basis {d} (f : (Space d) →d[ℝ] ℝ) (η : 𝓢(Space d
 
 ### B.4. The underlying function of the gradient distribution
 
-**`Space.distGrad_toFun_eq_distDeriv`**, a lemma, [line 527](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L527).
+**`Space.distGrad_toFun_eq_distDeriv`**, a lemma, [line 527](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L527).
 
 ```lean
 lemma distGrad_toFun_eq_distDeriv {d} (f : (Space d) →d[ℝ] ℝ) :
@@ -344,7 +344,7 @@ lemma distGrad_toFun_eq_distDeriv {d} (f : (Space d) →d[ℝ] ℝ) :
 
 ### B.5. The gradient applied to a Schwartz function
 
-**`Space.distGrad_apply`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L543).
+**`Space.distGrad_apply`**, a lemma, [line 543](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L543).
 
 ```lean
 lemma distGrad_apply {d} (f : (Space d) →d[ℝ] ℝ) (ε : 𝓢(Space d, ℝ)) :
@@ -353,7 +353,7 @@ lemma distGrad_apply {d} (f : (Space d) →d[ℝ] ℝ) (ε : 𝓢(Space d, ℝ))
 
 ### B.6. Gradient of constant distributions
 
-**`Space.distGrad_const`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L555).
+**`Space.distGrad_const`**, a lemma, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L555).
 
 ```lean
 lemma distGrad_const {d} (c : ℝ) :
@@ -362,7 +362,7 @@ lemma distGrad_const {d} (c : ℝ) :
 
 ### B.7. The gradient of a Schwartz map
 
-**`Space.gradSchwartz`**, a def, [line 567](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L567).
+**`Space.gradSchwartz`**, a def, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L567).
 
 > The gradient on Scwhwartz maps.
 
@@ -370,7 +370,7 @@ lemma distGrad_const {d} (c : ℝ) :
 noncomputable def gradSchwartz {d} : 𝓢(Space d, ℝ) →L[ℝ] 𝓢(Space d, EuclideanSpace ℝ (Fin d))
 ```
 
-**`Space.gradSchwartz_apply_eq_grad`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L573).
+**`Space.gradSchwartz_apply_eq_grad`**, a lemma, [line 573](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean#L573).
 
 ```lean
 lemma gradSchwartz_apply_eq_grad {d} (η : 𝓢(Space d, ℝ)) (x : Space d) :
@@ -384,4 +384,4 @@ lemma gradSchwartz_apply_eq_grad {d} (η : 𝓢(Space d, ℝ)) (x : Space d) :
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/Grad.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/Grad.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Grad.lean)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.23 Locally quasi-finite morphisms
 
-Section 101.23 of the Stacks Project, [Tag 06PT](https://stacks.math.columbia.edu/tag/06PT). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.23 of the Stacks Project, [Tag 06PT](https://stacks.math.columbia.edu/tag/06PT). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06UA, a lemma
 
 [Tag 06UA](https://stacks.math.columbia.edu/tag/06UA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_and_discreteTopology_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L186). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_and_discreteTopology_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 186](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L186). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 06UA, the implication (1) ⟹ (2).** A 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces and locally quasi-finite in the sense of **Stacks 04XB** is
@@ -35,7 +35,7 @@ theorem isLocallyOfFiniteType_and_discreteTopology_of_isLocallyQuasiFinite
             (twoFibreProductSquareAlgebraicStacks B S hS f g).pt.val.property)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_of_isLocallyOfFiniteType_of_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L308). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_of_isLocallyOfFiniteType_of_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 308](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L308). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 06UA, the implication (2) ⟹ (1).** A 1-morphism of algebraic stacks over `S` which is
 > representable by algebraic spaces, locally of finite type, and whose fibre over every field-valued
@@ -60,7 +60,7 @@ theorem isLocallyQuasiFinite_of_isLocallyOfFiniteType_of_discreteTopology
     IsLocallyQuasiFinite B S hS f.hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_iff_isLocallyOfFiniteType_and_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L362).
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_iff_isLocallyOfFiniteType_and_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean, line 362](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRepresentable.lean#L362).
 
 > **Stacks 06UA.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` which is representable
 > by algebraic spaces is locally quasi-finite in the sense of **Stacks 04XB** exactly when it is
@@ -87,7 +87,7 @@ theorem isLocallyQuasiFinite_iff_isLocallyOfFiniteType_and_discreteTopology
 
 [Tag 06PU](https://stacks.math.columbia.edu/tag/06PU) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteAlgebraicStack.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteAlgebraicStack.lean#L87).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsLocallyQuasiFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteAlgebraicStack.lean, line 87](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteAlgebraicStack.lean#L87).
 
 > **Stacks 06PU.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is locally
 > quasi-finite* when it is quasi-DM (**Stacks 04YW**), locally of finite type (**Stacks 06FS**,
@@ -107,7 +107,7 @@ abbrev IsLocallyQuasiFinite {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f
 
 [Tag 06UB](https://stacks.math.columbia.edu/tag/06UB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteBaseChange.lean#L111).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteBaseChange.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteBaseChange.lean#L111).
 
 > **Stacks 06UB.** A base change of a locally quasi-finite 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks over `S` is locally quasi-finite: the first projection of any 2-fibre product of the
@@ -132,7 +132,7 @@ theorem isLocallyQuasiFinite_baseChange {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks
 
 [Tag 06UC](https://stacks.math.columbia.edu/tag/06UC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.locallyQuasiFinite_of_isLocallyQuasiFinite_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverField.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverField.lean#L314).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.locallyQuasiFinite_of_isLocallyQuasiFinite_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverField.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverField.lean#L314).
 
 > Let `𝒳 ⟶ Spec(k)` be a locally quasi-finite 1-morphism, where `𝒳` is an
 > algebraic stack over the field `k`, and let `f : V ⟶ 𝒳` be a locally quasi-finite 1-morphism out
@@ -153,7 +153,7 @@ theorem locallyQuasiFinite_of_isLocallyQuasiFinite_over_field
     LocallyOfFiniteType g ∧ LocallyQuasiFinite g
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.locallyQuasiFinite_of_isLocallyQuasiFinite_over_fieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverFieldPoint.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverFieldPoint.lean#L351). The attribute's comment: “at a field-valued point of a general base scheme”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.locallyQuasiFinite_of_isLocallyQuasiFinite_over_fieldPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverFieldPoint.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteOverFieldPoint.lean#L351). The attribute's comment: “at a field-valued point of a general base scheme”.
 
 > **Stacks 06UC at a field-valued point of a general base scheme, for the Stacks 06PU notion
 > of local quasi-finiteness of the chart.** This is
@@ -177,7 +177,7 @@ theorem locallyQuasiFinite_of_isLocallyQuasiFinite_over_fieldPoint
 
 [Tag 06UD](https://stacks.math.columbia.edu/tag/06UD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteComposition.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteComposition.lean#L500).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteComposition.lean, line 500](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteComposition.lean#L500).
 
 > **Stacks 06UD.** A composite of locally quasi-finite 1-morphisms of algebraic stacks over
 > `S` is locally quasi-finite.
@@ -201,7 +201,7 @@ theorem isLocallyQuasiFinite_comp
 
 [Tag 06UE](https://stacks.math.columbia.edu/tag/06UE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean#L82). The attribute's comment: “All three conditions, with no hypothesis beyond the source's. The implication (1) implies (2) uses Tag 06MF through hasQuasiDMPresentation\_of\_isAbsolutelyQuasiDM, and the terminal scheme that Tag 050D part (6) needs lies in the site by AlgebraicGeometry.BigFppfSite.contains\_terminal”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean, line 82](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean#L82). The attribute's comment: “All three conditions, with no hypothesis beyond the source's. The implication (1) implies (2) uses Tag 06MF through hasQuasiDMPresentation\_of\_isAbsolutelyQuasiDM, and the terminal scheme that Tag 050D part (6) needs lies in the site by AlgebraicGeometry.BigFppfSite.contains\_terminal”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are equivalent: `f`
 > is quasi-DM; every base change of `f` along an algebraic space over `𝒴` has a surjective, flat,
@@ -220,7 +220,7 @@ theorem isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover_unconditional (f : 𝒳 ⟶ 
 
 [Tag 06UF](https://stacks.math.columbia.edu/tag/06UF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRelativePresentationUnconditional.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRelativePresentationUnconditional.lean#L440).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRelativePresentationUnconditional.lean, line 440](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteRelativePresentationUnconditional.lean#L440).
 
 > **Stacks 06UF.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -249,7 +249,7 @@ theorem isLocallyQuasiFinite_tfae (f : 𝒳 ⟶ 𝒴) :
 
 [Tag 06UG](https://stacks.math.columbia.edu/tag/06UG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_of_comp_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteCancellation.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteCancellation.lean#L105).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_of_comp_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteCancellation.lean, line 105](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocallyQuasiFiniteCancellation.lean#L105).
 
 > **Stacks 06UG.** If a composite of 1-morphisms of algebraic stacks over `S` is locally
 > quasi-finite and its second factor is quasi-DM, then its first factor is locally quasi-finite.
@@ -274,4 +274,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.23, Tag 06PT](https://stacks.math.columbia.edu/tag/06PT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

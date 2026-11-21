@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.13 Ramification theory
 
-Section 58.13 of the Stacks Project, [Tag 0BSD](https://stacks.math.columbia.edu/tag/0BSD). 7 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 58.13 of the Stacks Project, [Tag 0BSD](https://stacks.math.columbia.edu/tag/0BSD). 7 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0BSV, an equation
 
 [Tag 0BSV](https://stacks.math.columbia.edu/tag/0BSV) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleFundamentalGroupMap_inertiaSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean#L387). The attribute's comment: “right-hand square”.
+**`AlgebraicGeometry.etaleFundamentalGroupMap_inertiaSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean#L387). The attribute's comment: “right-hand square”.
 
 > **Stacks Project, Tag 0BSV.** The square formed by the generic and local spectra of a ring
 > extension commutes on fundamental groups. In the inertia diagram the extension is `A → Ah`, with
@@ -45,7 +45,7 @@ theorem etaleFundamentalGroupMap_inertiaSquare
           (Spec.map (CommRingCat.ofHom (algebraMap Ah Kh))) x σ))
 ```
 
-**`AlgebraicGeometry.etaleFundamentalGroupMap_fractionField_strictHenselization_to_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean#L423). The attribute's comment: “trivial diagonal”.
+**`AlgebraicGeometry.etaleFundamentalGroupMap_fractionField_strictHenselization_to_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean, line 423](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagram.lean#L423). The attribute's comment: “trivial diagonal”.
 
 > **Stacks Project, Tag 0BSV.** The diagonal of the inertia diagram is the trivial map: it
 > factors through the fundamental group of the strictly henselian spectrum of `Ash`, which is
@@ -74,7 +74,7 @@ theorem etaleFundamentalGroupMap_fractionField_strictHenselization_to_henselizat
 
 [Tag 0BSW](https://stacks.math.columbia.edu/tag/0BSW) in the Stacks Project.
 
-**`Stacks.RamificationTheory.surjective_and_ker_absoluteGaloisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean#L388). The attribute's comment: “the lower right corner π₁(X) = Gal(M/K) of the translated diagram, M the maximal subextension unramified with respect to X: the right vertical arrow, from the absolute Galois group of the function field, is surjective with kernel Gal(K^sep/M), for a general integral normal X. The other objects and arrows of the diagram, the square and the kernels are Stacks.RamificationTheory.inertiaDiagram\_translation, which also proves that its right vertical arrow, for X = Spec A, is this one”.
+**`Stacks.RamificationTheory.surjective_and_ker_absoluteGaloisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean, line 388](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean#L388). The attribute's comment: “the lower right corner π₁(X) = Gal(M/K) of the translated diagram, M the maximal subextension unramified with respect to X: the right vertical arrow, from the absolute Galois group of the function field, is surjective with kernel Gal(K^sep/M), for a general integral normal X. The other objects and arrows of the diagram, the square and the kernels are Stacks.RamificationTheory.inertiaDiagram\_translation, which also proves that its right vertical arrow, for X = Spec A, is this one”.
 
 > **Stacks Project, Tag 0BSW.** The right vertical arrow `π₁(U) → π₁(X)` of the diagram is
 > surjective, and its kernel is the subgroup fixing the maximal subextension `M` unramified with
@@ -103,7 +103,7 @@ theorem surjective_and_ker_absoluteGaloisToFundamentalGroup
         (maximalEtaleExtension X sbar).fixingSubgroup
 ```
 
-**`Stacks.RamificationTheory.inertiaDiagram_translation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean, line 1296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean#L1296). The attribute's comment: “the whole translated diagram: π₁(U^h) = D with the top arrow the inclusion, the image I of π₁(U^sh), the left vertical arrow D → Gal(κ(𝔪^sh)/κ) surjective with kernel I and identified with π₁(U^h) → π₁(X^h) through an isomorphism Gal(κ(𝔪^sh)/κ) ≅ π₁(X^h), the bottom arrow and the commutative square, and the right vertical arrow surjective with kernel the smallest closed normal subgroup containing I and equal to absoluteGaloisToFundamentalGroup, the arrow which Tag 0BQM identifies with restriction Gal(K^sep/K) → Gal(M/K)”.
+**`Stacks.RamificationTheory.inertiaDiagram_translation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean, line 1298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/InertiaDiagramTranslation.lean#L1298). The attribute's comment: “the whole translated diagram: π₁(U^h) = D with the top arrow the inclusion, the image I of π₁(U^sh), the left vertical arrow D → Gal(κ(𝔪^sh)/κ) surjective with kernel I and identified with π₁(U^h) → π₁(X^h) through an isomorphism Gal(κ(𝔪^sh)/κ) ≅ π₁(X^h), the bottom arrow and the commutative square, and the right vertical arrow surjective with kernel the smallest closed normal subgroup containing I and equal to absoluteGaloisToFundamentalGroup, the arrow which Tag 0BQM identifies with restriction Gal(K^sep/K) → Gal(M/K)”.
 
 > **Stacks Project, Tag 0BSW.** Let `(A, 𝔪, κ)` be a normal local domain with fraction field
 > `K`, let `K^sep = L` be a separable closure of `K` inside an algebraically closed algebraic
@@ -263,7 +263,7 @@ theorem inertiaDiagram_translation [q.IsMaximal]
 
 [Tag 0BTD](https://stacks.math.columbia.edu/tag/0BTD) in the Stacks Project.
 
-**`AlgebraicGeometry.normalClosure_iUnion_ker_topologicalClosure_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L335). The attribute's comment: “the inclusion of subgroup (3) in subgroup (1), and only that inclusion: subgroup (1) is the kernel of π₁(Spec K) → π₁(X) rather than the subgroup fixing the maximal unramified subextension, so no Noetherian hypothesis is needed, and subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
+**`AlgebraicGeometry.normalClosure_iUnion_ker_topologicalClosure_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L335). The attribute's comment: “the inclusion of subgroup (3) in subgroup (1), and only that inclusion: subgroup (1) is the kernel of π₁(Spec K) → π₁(X) rather than the subgroup fixing the maximal unramified subextension, so no Noetherian hypothesis is needed, and subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
 
 > **Stacks Project, Tag 0BTD, the inclusion of subgroup (3) in subgroup (1).** Let `X` be an
 > integral scheme with function field `K`. The smallest closed normal subgroup of `π₁(Spec K)`
@@ -288,7 +288,7 @@ theorem normalClosure_iUnion_ker_topologicalClosure_le_ker [IsIntegral X]
         p).toMonoidHom.ker
 ```
 
-**`AlgebraicGeometry.ker_etaleFundamentalGroupMap_stalk_eq_normalClosure_topologicalClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L362). The attribute's comment: “that each generator of subgroup (3) used here — the kernel of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) — is the smallest closed normal subgroup containing the image of π₁(Spec K\_x^sh) = Gal(K^sep/K\_x^sh), which is how the source presents subgroup (3); this is Tag 0BSM applied to the local rings of X”.
+**`AlgebraicGeometry.ker_etaleFundamentalGroupMap_stalk_eq_normalClosure_topologicalClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 362](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L362). The attribute's comment: “that each generator of subgroup (3) used here — the kernel of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) — is the smallest closed normal subgroup containing the image of π₁(Spec K\_x^sh) = Gal(K^sep/K\_x^sh), which is how the source presents subgroup (3); this is Tag 0BSM applied to the local rings of X”.
 
 > **Stacks Project, Tag 0BTD, the generators of subgroup (3).** Let `X` be a normal integral
 > scheme with function field `K`, let `x` be a point of `X`, let `Ash` be a strict henselization of
@@ -321,7 +321,7 @@ theorem ker_etaleFundamentalGroupMap_stalk_eq_normalClosure_topologicalClosure
           (algebraMap (X.residueField (genericPoint X)) Ksh))) q))).topologicalClosure
 ```
 
-**`AlgebraicGeometry.normalClosure_range_topologicalClosure_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L397). The attribute's comment: “that each generator Gal(K^sep/K\_x^sh) of subgroup (3) generates a closed normal subgroup contained in subgroup (1), one point x of X at a time; subgroup (1) is the kernel of π₁(Spec K) → π₁(X), so no Noetherian hypothesis is needed; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
+**`AlgebraicGeometry.normalClosure_range_topologicalClosure_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 397](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L397). The attribute's comment: “that each generator Gal(K^sep/K\_x^sh) of subgroup (3) generates a closed normal subgroup contained in subgroup (1), one point x of X at a time; subgroup (1) is the kernel of π₁(Spec K) → π₁(X), so no Noetherian hypothesis is needed; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
 
 > **Stacks Project, Tag 0BTD, one generator of subgroup (3) lies in subgroup (1).** Let `X` be
 > a normal integral scheme with function field `K`, let `x` be a point of `X`, let `Ash` be a
@@ -354,7 +354,7 @@ theorem normalClosure_range_topologicalClosure_le_ker
           (algebraMap (X.residueField (genericPoint X)) Ksh))))).toMonoidHom.ker
 ```
 
-**`AlgebraicGeometry.comap_normalClosure_iUnion_ker_le_ker_galoisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L449). The attribute's comment: “the inclusion of subgroup (3) in subgroup (1) read inside Gal(K^sep/K) through the identification of Tag 0BNE; subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
+**`AlgebraicGeometry.comap_normalClosure_iUnion_ker_le_ker_galoisToFundamentalGroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L449). The attribute's comment: “the inclusion of subgroup (3) in subgroup (1) read inside Gal(K^sep/K) through the identification of Tag 0BNE; subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators; subgroup (2) is AlgebraicGeometry.inertiaClosedNormalSubgroup below”.
 
 > **Stacks Project, Tag 0BTD, the inclusion of subgroup (3) in subgroup (1), inside
 > `Gal(K^sep/K)`.** Transporting along the identification `Gal(K^sep/K) = π₁(Spec K)` of Stacks Tag
@@ -376,7 +376,7 @@ theorem comap_normalClosure_iUnion_ker_le_ker_galoisToFundamentalGroup :
       (galoisToFundamentalGroup X L Ω).toMonoidHom.ker
 ```
 
-**`AlgebraicGeometry.inertiaClosedNormalSubgroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L589). The attribute's comment: “subgroup (2): the smallest closed normal subgroup of Gal(K^sep/K) containing the inertia group I\_y for every point y of the normalization X^sep of X in K^sep, with the points of X^sep over a nonempty affine open U of X presented as the primes of the integral closure of Γ(X, U) in K^sep”.
+**`AlgebraicGeometry.inertiaClosedNormalSubgroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 589](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L589). The attribute's comment: “subgroup (2): the smallest closed normal subgroup of Gal(K^sep/K) containing the inertia group I\_y for every point y of the normalization X^sep of X in K^sep, with the points of X^sep over a nonempty affine open U of X presented as the primes of the integral closure of Γ(X, U) in K^sep”.
 
 > **Subgroup (2) of Stacks Tag 0BTD.** The smallest closed normal subgroup of
 > `Gal(K^sep/K) = π₁(Spec K)` containing the inertia group `I_y` for every point `y` of the
@@ -386,7 +386,7 @@ theorem comap_normalClosure_iUnion_ker_le_ker_galoisToFundamentalGroup :
 def inertiaClosedNormalSubgroup : Subgroup Gal(L / X.residueField (genericPoint X))
 ```
 
-**`AlgebraicGeometry.isFinite_etale_fromNormalization_of_inertiaGenerators_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L723). The attribute's comment: “the second paragraph of the proof: triviality of the inertia groups I\_y on a finite Galois subextension F of K^sep/K makes X unramified in F”. References: SGA 1 V (2.2), “(ii)”; SGA 1 V (2.3), “special case”.
+**`AlgebraicGeometry.isFinite_etale_fromNormalization_of_inertiaGenerators_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 723](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L723). The attribute's comment: “the second paragraph of the proof: triviality of the inertia groups I\_y on a finite Galois subextension F of K^sep/K makes X unramified in F”. References: SGA 1 V (2.2), “(ii)”; SGA 1 V (2.3), “special case”.
 
 > **Stacks Tag 0BTD, the inertia criterion for unramifiedness.** Let `X` be a normal integral
 > scheme with function field `K` and let `F` be a finite Galois subextension of `K^sep / K` whose
@@ -416,7 +416,7 @@ theorem isFinite_etale_fromNormalization_of_inertiaGenerators_subset
     IsFinite f.fromNormalization ∧ Etale f.fromNormalization
 ```
 
-**`AlgebraicGeometry.ker_galoisToFundamentalGroup_le_inertiaClosedNormalSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 851](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L851). The attribute's comment: “the inclusion of subgroup (1) in subgroup (2), and only that inclusion: subgroup (1) is the kernel of Gal(K^sep/K) → π₁(X) and subgroup (2) is the closed normal subgroup generated by the inertia groups I\_y; the reverse inclusion (2) ⊆ (3) needs the conjugacy of I\_y with Gal(K^sep/K\_x^sh) from Tag 0BSW, is AlgebraicGeometry.inertiaClosedNormalSubgroup\_le\_stalkKerClosedNormalSubgroup below”.
+**`AlgebraicGeometry.ker_galoisToFundamentalGroup_le_inertiaClosedNormalSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 851](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L851). The attribute's comment: “the inclusion of subgroup (1) in subgroup (2), and only that inclusion: subgroup (1) is the kernel of Gal(K^sep/K) → π₁(X) and subgroup (2) is the closed normal subgroup generated by the inertia groups I\_y; the reverse inclusion (2) ⊆ (3) needs the conjugacy of I\_y with Gal(K^sep/K\_x^sh) from Tag 0BSW, is AlgebraicGeometry.inertiaClosedNormalSubgroup\_le\_stalkKerClosedNormalSubgroup below”.
 
 > **Stacks Tag 0BTD, the reverse inclusion `(1) ⊆ (2)`.** Let `X` be a normal integral scheme
 > with function field `K`. The kernel of the surjection `Gal(K^sep/K) → π₁(X)` is contained in the
@@ -440,7 +440,7 @@ theorem ker_galoisToFundamentalGroup_le_inertiaClosedNormalSubgroup
     (galoisToFundamentalGroup X L Ω).toMonoidHom.ker ≤ inertiaClosedNormalSubgroup X L
 ```
 
-**`AlgebraicGeometry.inertiaClosedNormalSubgroup_le_stalkKerClosedNormalSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 969](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L969). The attribute's comment: “the inclusion of subgroup (2) in subgroup (3), which together with the inclusions (3) ⊆ (1) and (1) ⊆ (2) above gives the equality of the three subgroups; subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators and is read inside Gal(K^sep/K) through the identification of Tag 0BNE”.
+**`AlgebraicGeometry.inertiaClosedNormalSubgroup_le_stalkKerClosedNormalSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 969](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L969). The attribute's comment: “the inclusion of subgroup (2) in subgroup (3), which together with the inclusions (3) ⊆ (1) and (1) ⊆ (2) above gives the equality of the three subgroups; subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators and is read inside Gal(K^sep/K) through the identification of Tag 0BNE”.
 
 > **Stacks Tag 0BTD, the inclusion `(2) ⊆ (3)`.** Let `X` be a normal integral scheme with
 > function field `K`. The smallest closed normal subgroup of `Gal(K^sep/K)` containing the inertia
@@ -467,7 +467,7 @@ theorem inertiaClosedNormalSubgroup_le_stalkKerClosedNormalSubgroup :
     inertiaClosedNormalSubgroup X L ≤ stalkKerClosedNormalSubgroup X L Ω
 ```
 
-**`AlgebraicGeometry.ker_galoisToFundamentalGroup_eq_inertiaClosedNormalSubgroup_and_stalkKer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L1068). The attribute's comment: “the equality of the three subgroups, assembled from the cycle (3) ⊆ (1) ⊆ (2) ⊆ (3); subgroup (1) is the kernel of Gal(K^sep/K) → π₁(X) rather than the subgroup fixing the maximal unramified subextension, so no Noetherian hypothesis is needed, and subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators”.
+**`AlgebraicGeometry.ker_galoisToFundamentalGroup_eq_inertiaClosedNormalSubgroup_and_stalkKer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalKernelLocalRings.lean#L1068). The attribute's comment: “the equality of the three subgroups, assembled from the cycle (3) ⊆ (1) ⊆ (2) ⊆ (3); subgroup (1) is the kernel of Gal(K^sep/K) → π₁(X) rather than the subgroup fixing the maximal unramified subextension, so no Noetherian hypothesis is needed, and subgroup (3) is written with the kernels of π₁(Spec K) → π₁(Spec 𝒪\_\{X,x}) as generators”.
 
 > **Stacks Tag 0BTD.** Let `X` be a normal integral scheme with function field `K`. The three
 > subgroups of `Gal(K^sep/K)` of the source are equal: the kernel of `Gal(K^sep/K) → π₁(X)`, the
@@ -488,7 +488,7 @@ theorem ker_galoisToFundamentalGroup_eq_inertiaClosedNormalSubgroup_and_stalkKer
 
 [Tag 0BTE](https://stacks.math.columbia.edu/tag/0BTE) in the Stacks Project.
 
-**`MvPolynomial.mem_evenSubalgebra_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L190). The attribute's comment: “the invariant subring k[tᵢtⱼ]”.
+**`MvPolynomial.mem_evenSubalgebra_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 190](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L190). The attribute's comment: “the invariant subring k[tᵢtⱼ]”.
 
 > The subring `k[tᵢtⱼ]` consists of the polynomials all of whose monomials have even degree.
 
@@ -497,7 +497,7 @@ theorem mem_evenSubalgebra_iff {f : MvPolynomial σ k} :
     f ∈ evenSubalgebra k σ ↔ ∀ m ∈ f.support, Even (Finsupp.degree m)
 ```
 
-**`MvPolynomial.mem_evenSubalgebra_iff_negVars_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L206). The attribute's comment: “the invariant subring k[tᵢtⱼ]”.
+**`MvPolynomial.mem_evenSubalgebra_iff_negVars_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 206](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L206). The attribute's comment: “the invariant subring k[tᵢtⱼ]”.
 
 > The subring `k[tᵢtⱼ]` is the ring of invariants of the `±1`-action, provided `2 ≠ 0`.
 
@@ -506,7 +506,7 @@ theorem mem_evenSubalgebra_iff_negVars_eq (h2 : (2 : k) ≠ 0) {f : MvPolynomial
     f ∈ evenSubalgebra k σ ↔ negVars k σ f = f
 ```
 
-**`MvPolynomial.finite_evenSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L297). The attribute's comment: “the degree two morphism”.
+**`MvPolynomial.finite_evenSubalgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L297). The attribute's comment: “the degree two morphism”.
 
 > The polynomial ring in finitely many variables is a finite module over `k[tᵢtⱼ]`: the morphism
 > `𝐀ⁿ_k → Spec(k[tᵢtⱼ])` is finite.
@@ -516,7 +516,7 @@ theorem finite_evenSubalgebra [Finite σ] :
     Module.Finite (evenSubalgebra k σ) (MvPolynomial σ k)
 ```
 
-**`MvPolynomial.rank_evenSubalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L337). The attribute's comment: “the degree two morphism”.
+**`MvPolynomial.rank_evenSubalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 337](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L337). The attribute's comment: “the degree two morphism”.
 
 > The polynomial ring has rank two as a module over `k[tᵢtⱼ]`: the morphism
 > `𝐀ⁿ_k → Spec(k[tᵢtⱼ])` has degree two.
@@ -526,7 +526,7 @@ theorem rank_evenSubalgebra_eq_two (h2 : (2 : k) ≠ 0) [Nonempty σ] :
     Module.rank (evenSubalgebra k σ) (MvPolynomial σ k) = 2
 ```
 
-**`MvPolynomial.finrank_evenSubalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L372). The attribute's comment: “the degree two morphism”.
+**`MvPolynomial.finrank_evenSubalgebra_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 372](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L372). The attribute's comment: “the degree two morphism”.
 
 > The polynomial ring in finitely many variables has rank two as a module over `k[tᵢtⱼ]`.
 
@@ -535,7 +535,7 @@ theorem finrank_evenSubalgebra_eq_two (h2 : (2 : k) ≠ 0) [Nonempty σ] :
     Module.finrank (evenSubalgebra k σ) (MvPolynomial σ k) = 2
 ```
 
-**`MvPolynomial.isUnramifiedAt_of_under_ne_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L580). The attribute's comment: “unramified away from the vertex”.
+**`MvPolynomial.isUnramifiedAt_of_under_ne_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 580](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L580). The attribute's comment: “unramified away from the vertex”.
 
 > The morphism `𝐀ⁿ_k → Spec(k[tᵢtⱼ])` is unramified at every point of `𝐀ⁿ_k` which does not
 > lie over the vertex `𝔪 = (tᵢtⱼ)`.
@@ -546,7 +546,7 @@ theorem isUnramifiedAt_of_under_ne_vertexIdeal (h2 : (2 : k) ≠ 0) (q : Ideal (
     Algebra.IsUnramifiedAt (evenSubalgebra k σ) q
 ```
 
-**`MvPolynomial.not_isUnramifiedAt_idealOfVars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L639). The attribute's comment: “ramified at the vertex”.
+**`MvPolynomial.not_isUnramifiedAt_idealOfVars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 639](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L639). The attribute's comment: “ramified at the vertex”.
 
 > The morphism `𝐀ⁿ_k → Spec(k[tᵢtⱼ])` is ramified at the vertex `(t₁, …, tₙ)` of `𝐀ⁿ_k`, which
 > lies over the vertex `𝔪 = (tᵢtⱼ)`.
@@ -556,7 +556,7 @@ theorem not_isUnramifiedAt_idealOfVars [Nonempty σ] :
     ¬ Algebra.IsUnramifiedAt (evenSubalgebra k σ) (idealOfVars σ k)
 ```
 
-**`MvPolynomial.height_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 744](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L744). The attribute's comment: “the vertex has codimension n”.
+**`MvPolynomial.height_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 744](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L744). The attribute's comment: “the vertex has codimension n”.
 
 > The vertex `𝔪 = (tᵢtⱼ)` has height `n` in `k[tᵢtⱼ]` for `n` variables: it is a point of
 > codimension `n` of the quotient.
@@ -565,7 +565,7 @@ theorem not_isUnramifiedAt_idealOfVars [Nonempty σ] :
 theorem height_vertexIdeal (n : ℕ) : (vertexIdeal k (Fin n)).height = n
 ```
 
-**`MvPolynomial.one_lt_height_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L759). The attribute's comment: “ramification in codimension greater than one”.
+**`MvPolynomial.one_lt_height_vertexIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean, line 759](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/QuadraticConeRamification.lean#L759). The attribute's comment: “ramification in codimension greater than one”.
 
 > For at least two variables the vertex `𝔪 = (tᵢtⱼ)` has codimension greater than one, so the
 > ramification of `𝐀ⁿ_k → Spec(k[tᵢtⱼ])` is not visible in codimension one.
@@ -578,7 +578,7 @@ theorem one_lt_height_vertexIdeal {n : ℕ} (hn : 2 ≤ n) : 1 < (vertexIdeal k 
 
 [Tag 0BTF](https://stacks.math.columbia.edu/tag/0BTF) in the Stacks Project.
 
-**`AlgebraicGeometry.normalization_unramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean, line 2218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean#L2218). The attribute's comment: “conditions (1)–(8)”.
+**`AlgebraicGeometry.normalization_unramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean, line 2218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean#L2218). The attribute's comment: “conditions (1)–(8)”.
 
 > **Unramifiedness of the normalization of a normal integral scheme in a finite extension of
 > its function field.** For `X` integral and normal with function field `K`, a finite extension
@@ -628,7 +628,7 @@ public theorem normalization_unramified_tfae
         Etale (f.fiberToSpecResidueField x))]
 ```
 
-**`AlgebraicGeometry.normalization_unramified_iff_trivialInertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean, line 2415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean#L2415). The attribute's comment: “condition (9)”.
+**`AlgebraicGeometry.normalization_unramified_iff_trivialInertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean, line 2415](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/NormalUnramifiedTFAE.lean#L2415). The attribute's comment: “condition (9)”.
 
 > **The Galois case: unramifiedness of the normalization is triviality of every inertia
 > group.** For `X` integral and normal with function field `K` and `L / K` finite Galois with
@@ -670,7 +670,7 @@ public theorem normalization_unramified_iff_trivialInertia
 
 [Tag 0BUA](https://stacks.math.columbia.edu/tag/0BUA) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.exists_tameInertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 1208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L1208). The attribute's comment: “the wild–tame exact sequence and canonical character”. References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “I/P ≅ Ẑ(1), P pro-p”.
+**`Stacks.FundamentalGroup.exists_tameInertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 1208](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L1208). The attribute's comment: “the wild–tame exact sequence and canonical character”. References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “I/P ≅ Ẑ(1), P pro-p”.
 
 > The canonical tame character has a pro-primary kernel and maps onto all compatible
 > families of prime-to-residue-characteristic roots of unity.
@@ -767,14 +767,14 @@ public theorem exists_tameInertiaCharacter
 
 Declarations registered for the tag:
 
-- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L49) (StacksFrontier): “the kernel of the decomposition-group residue action”.
-- [`Ideal.Quotient.stabilizerHom_surjective_of_profinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom_surjective_of_profinite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L52) (StacksFrontier): “surjectivity of the decomposition-group residue action”. References: SGA 1 V (1.1), “closed points”; SGA 1 V (1.3), “special case”.
+- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L49) (StacksFrontier): “the kernel of the decomposition-group residue action”.
+- [`Ideal.Quotient.stabilizerHom_surjective_of_profinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom_surjective_of_profinite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean, line 52](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/InfiniteInertia.lean#L52) (StacksFrontier): “surjectivity of the decomposition-group residue action”. References: SGA 1 V (1.1), “closed points”; SGA 1 V (1.3), “special case”.
 
 ## Tag 0BUB, a lemma
 
 [Tag 0BUB](https://stacks.math.columbia.edu/tag/0BUB) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.isAlgClosure_quotient_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean#L132). The attribute's comment: “the residue field is an algebraic closure of the residue field of `A`”.
+**`Stacks.FundamentalGroup.isAlgClosure_quotient_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean#L132). The attribute's comment: “the residue field is an algebraic closure of the residue field of `A`”.
 
 > **Stacks 0BUB**, first assertion.  The residue field of the integral closure of a discrete
 > valuation ring in a separable closure of its fraction field is an algebraic closure of the
@@ -790,7 +790,7 @@ public theorem isAlgClosure_quotient_integralClosure
     IsAlgClosure (A ⧸ P.under A) (integralClosure A L ⧸ P)
 ```
 
-**`Stacks.FundamentalGroup.exists_residueSeparableClosureHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean#L149). The attribute's comment: “the exact sequence `1 → I → D → Gal(κ^sep/κ) → 1`”.
+**`Stacks.FundamentalGroup.exists_residueSeparableClosureHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureDecomposition.lean#L149). The attribute's comment: “the exact sequence `1 → I → D → Gal(κ^sep/κ) → 1`”.
 
 > **Stacks 0BUB**, the first exact sequence.  Write `κ = A ⧸ (P.under A)` for the residue
 > field of `A` and `κ̄` for the residue field at `P`, an algebraic closure of `κ`, and let
@@ -823,7 +823,7 @@ public theorem exists_residueSeparableClosureHom
       θ.ker.map (MulAction.stabilizer Gal(L/K) P).subtype = P.inertia Gal(L/K)
 ```
 
-**`Stacks.FundamentalGroup.isAlgClosed_quotient_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L57). The attribute's comment: “the algebraically closed residue field”.
+**`Stacks.FundamentalGroup.isAlgClosed_quotient_integralClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 57](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L57). The attribute's comment: “the algebraically closed residue field”.
 
 > The residue field of the integral closure in a separable closure is
 > algebraically closed.
@@ -839,7 +839,7 @@ public theorem isAlgClosed_quotient_integralClosure
     IsAlgClosed (integralClosure A L ⧸ P)
 ```
 
-**`Stacks.FundamentalGroup.primeToChar_divides_tameRamificationIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L131). The attribute's comment: “cofinality of prime-to-characteristic orders”.
+**`Stacks.FundamentalGroup.primeToChar_divides_tameRamificationIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L131). The attribute's comment: “cofinality of prime-to-characteristic orders”.
 
 > Every positive order prime to the residue characteristic divides a tame
 > ramification index at a finite Galois subextension.
@@ -866,7 +866,7 @@ public theorem primeToChar_divides_tameRamificationIndex
         n ∣ IsDiscreteValuationRing.tameRamificationIndex A F q
 ```
 
-**`Stacks.FundamentalGroup.exists_primeToChar_tameInertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L325). The attribute's comment: “the wild–tame exact sequence and canonical character”. References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “I/P ≅ Ẑ(1), P pro-p”; SGA 7 XV (2.2.5), “partial”.
+**`Stacks.FundamentalGroup.exists_primeToChar_tameInertiaCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 325](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L325). The attribute's comment: “the wild–tame exact sequence and canonical character”. References: SGA 1 XIII (2.0), “inertia structure”; SGA 7 I (0.3), “I/P ≅ Ẑ(1), P pro-p”; SGA 7 XV (2.2.5), “partial”.
 
 > The canonical tame inertia character at a separable closure has wild kernel
 > and reaches every compatible family of prime-to-characteristic roots of unity.
@@ -933,8 +933,8 @@ public theorem exists_primeToChar_tameInertiaCharacter
 
 Declarations registered for the tag:
 
-- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L48) (StacksFrontier): “the kernel in the decomposition exact sequence”.
-- [`Ideal.Quotient.stabilizerHom_surjective_of_profinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom_surjective_of_profinite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L51) (StacksFrontier): “surjectivity in the decomposition exact sequence”. References: SGA 1 V (1.1), “closed points”; SGA 1 V (1.3), “special case”.
+- [`Ideal.Quotient.ker_stabilizerHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.ker_stabilizerHom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 48](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L48) (StacksFrontier): “the kernel in the decomposition exact sequence”.
+- [`Ideal.Quotient.stabilizerHom_surjective_of_profinite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.Quotient.stabilizerHom_surjective_of_profinite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean, line 51](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/SeparableClosureInertia.lean#L51) (StacksFrontier): “surjectivity in the decomposition exact sequence”. References: SGA 1 V (1.1), “closed points”; SGA 1 V (1.3), “special case”.
 
 ## Depends on
 
@@ -943,4 +943,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.13, Tag 0BSD](https://stacks.math.columbia.edu/tag/0BSD)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

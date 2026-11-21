@@ -8,7 +8,7 @@ proof: formalized
 
 # Hydrogen atom
 
-The module `Physlib.QuantumMechanics.Hydrogen.Basic`, [Physlib/QuantumMechanics/Hydrogen/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean): 8 declarations, 4 with a docstring.
+The module `Physlib.QuantumMechanics.Hydrogen.Basic`, [Physlib/QuantumMechanics/Hydrogen/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean): 8 declarations, 4 with a docstring.
 
 > This module introduces the `d`-dimensional hydrogen atom with `1/r` potential.
 >
@@ -28,7 +28,7 @@ The module `Physlib.QuantumMechanics.Hydrogen.Basic`, [Physlib/QuantumMechanics/
 > * https://doi.org/10.1103/PhysRevA.80.032507. [ref: doi\_physreva\_80\_032507]
 > * https://doi.org/10.1063/1.3290740. [ref: doi\_1063\_1\_3290740]
 
-**`QuantumMechanics.HydrogenAtom`**, a structure, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L56).
+**`QuantumMechanics.HydrogenAtom`**, a structure, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L56).
 
 > A hydrogen atom is characterized by the number of spatial dimensions `d`,
 > the mass `m` and the coefficient `k` for the `1/r` potential.
@@ -42,19 +42,19 @@ structure HydrogenAtom (d : ℕ) extends SpaceDQuantumSystem d where
 
 ## A. Basic
 
-**`QuantumMechanics.HydrogenAtom.potential_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L71).
+**`QuantumMechanics.HydrogenAtom.potential_eq`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L71).
 
 ```lean
 lemma potential_eq : H.potential = fun x ↦ -H.k * ‖x‖⁻¹
 ```
 
-**`QuantumMechanics.HydrogenAtom.potential_AESM`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L74).
+**`QuantumMechanics.HydrogenAtom.potential_AESM`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L74).
 
 ```lean
 lemma potential_AESM : AEStronglyMeasurable H.potential
 ```
 
-**`QuantumMechanics.HydrogenAtom.potential_AEM`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L79).
+**`QuantumMechanics.HydrogenAtom.potential_AEM`**, a lemma, [line 79](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L79).
 
 ```lean
 lemma potential_AEM : AEMeasurable H.potential
@@ -62,7 +62,7 @@ lemma potential_AEM : AEMeasurable H.potential
 
 ## B. Regularization
 
-**`QuantumMechanics.HydrogenAtom.hamiltonianRegCLM`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L87).
+**`QuantumMechanics.HydrogenAtom.hamiltonianRegCLM`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L87).
 
 > The hydrogen atom Hamiltonian regularized by `ε ≠ 0` is defined to be
 > `𝐇(ε) ≔ (2m)⁻¹𝐩² - k·𝐫(ε)⁻¹`.
@@ -71,7 +71,7 @@ lemma potential_AEM : AEMeasurable H.potential
 def hamiltonianRegCLM (ε : ℝˣ) : 𝓢(Space d, ℂ) →L[ℂ] 𝓢(Space d, ℂ)
 ```
 
-**`QuantumMechanics.HydrogenAtom.hamiltonianRegCLM_eq`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L90).
+**`QuantumMechanics.HydrogenAtom.hamiltonianRegCLM_eq`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L90).
 
 ```lean
 lemma hamiltonianRegCLM_eq (ε : ℝˣ) :
@@ -80,7 +80,7 @@ lemma hamiltonianRegCLM_eq (ε : ℝˣ) :
 
 ## C. Domain of the Hamiltonian
 
-**`QuantumMechanics.HydrogenAtom.polyBddSchwartzSubmodule_le_hamiltonianOperator_domain`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L101).
+**`QuantumMechanics.HydrogenAtom.polyBddSchwartzSubmodule_le_hamiltonianOperator_domain`**, a lemma, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L101).
 
 > Polynomially-bounded Schwartz maps `f` with `‖x‖ ^ (-k) * ‖f x‖ ≤ Cₖ` for all `k ≤ ⌊2 - d/2⌋`
 > lie in the domain of the Hamiltonian. For `d ≥ 3` these are all Schwartz maps.
@@ -91,7 +91,7 @@ lemma polyBddSchwartzSubmodule_le_hamiltonianOperator_domain :
       H.hamiltonianOperator.domain
 ```
 
-**`QuantumMechanics.HydrogenAtom.hamiltonianOperator_hasDenseDomain`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L116).
+**`QuantumMechanics.HydrogenAtom.hamiltonianOperator_hasDenseDomain`**, a lemma, [line 116](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean#L116).
 
 > The Hamiltonian of the hydrogen atom is densely defined, in any dimension.
 
@@ -106,4 +106,4 @@ lemma hamiltonianOperator_hasDenseDomain : H.hamiltonianOperator.HasDenseDomain
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Hydrogen/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Hydrogen/Basic.lean)
+- [Physlib/QuantumMechanics/Hydrogen/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Hydrogen/Basic.lean)

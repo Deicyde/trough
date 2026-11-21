@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.94 The cospecialization map
 
-Section 59.94 of the Stacks Project, [Tag 0GJT](https://stacks.math.columbia.edu/tag/0GJT). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 59.94 of the Stacks Project, [Tag 0GJT](https://stacks.math.columbia.edu/tag/0GJT). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0GJU, a lemma
 
 [Tag 0GJU](https://stacks.math.columbia.edu/tag/0GJU) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_pullback_cospecializationUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationMap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationMap.lean#L255). The attribute's comment: “modulo derived-stalk conservativity and the stalk computation”.
+**`AlgebraicGeometry.isIso_pullback_cospecializationUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationMap.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationMap.lean#L255). The attribute's comment: “modulo derived-stalk conservativity and the stalk computation”.
 
 > Assume that isomorphy in unbounded derived categories of abelian sheaves on small étale sites
 > is detected on stalks (`hcons`) and that the stalks of `i⁻¹β_{K,s,t}` are canonical maps of
@@ -32,7 +32,7 @@ theorem isIso_pullback_cospecializationUnit
         (cospecializationUnit B hS f s t K))
 ```
 
-**`AlgebraicGeometry.isIso_pullback_cospecializationUnit_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean#L76).
+**`AlgebraicGeometry.isIso_pullback_cospecializationUnit_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean, line 76](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean#L76).
 
 > **[Stacks, Tag 0GJU].** Let `f : X ⟶ S` be a morphism of schemes, `s` a geometric point of
 > `S`, `t` a geometric point of `Spec 𝒪^{sh}_{S,s}`, and `K` an object of `D(X_étale)` which is
@@ -53,7 +53,7 @@ theorem isIso_pullback_cospecializationUnit_of_isGE (K : smallEtaleDerivedCatego
 
 [Tag 0GJV](https://stacks.math.columbia.edu/tag/0GJV) in the Stacks Project.
 
-**`AlgebraicGeometry.specializationStalk_comp_baseChange_comp_cospecializationMap_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationSquareLocallyAcyclic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationSquareLocallyAcyclic.lean#L92).
+**`AlgebraicGeometry.specializationStalk_comp_baseChange_comp_cospecializationMap_of_isGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationSquareLocallyAcyclic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/CospecializationSquareLocallyAcyclic.lean#L92).
 
 > **[Stacks, Tag 0GJV].** Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of
 > schemes, `s` a geometric point of `S`, `t` a geometric point of `Spec 𝒪^{sh}_{S,s}`, and `K` an
@@ -92,7 +92,7 @@ theorem specializationStalk_comp_baseChange_comp_cospecializationMap_of_isGE
 
 [Tag 0GJW](https://stacks.math.columbia.edu/tag/0GJW) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_specializationStalk_and_cospecializationMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean#L128). References: SGA 4 XVI (2.3), “special case”; SGA 4½ Arcata (5.3.1), “more general”; SGA 4½ Th finitude (5.2.4), “for proper f”.
+**`AlgebraicGeometry.isIso_specializationStalk_and_cospecializationMap_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/ProperLocallyAcyclicSpecialization.lean#L128). References: SGA 4 XVI (2.3), “special case”; SGA 4½ Arcata (5.3.1), “more general”; SGA 4½ Th finitude (5.2.4), “for proper f”.
 
 > **[Stacks, Tag 0GJW].** Let `f : X ⟶ S` be a morphism of schemes and `K` an object of
 > `D(X_étale)` such that
@@ -152,7 +152,7 @@ theorem isIso_specializationStalk_and_cospecializationMap_of_isProper [IsProper 
 
 [Tag 0GKD](https://stacks.math.columbia.edu/tag/0GKD) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_specializationMap_of_smooth_of_isProper_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SmoothProperSpecializationUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SmoothProperSpecializationUnconditional.lean#L68). References: SGA 4 XVI (2.3), “special case”; SGA 4½ Th finitude (5.2.4), “partial”; SGA 7 I (2.1), “more general”.
+**`AlgebraicGeometry.isIso_specializationMap_of_smooth_of_isProper_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SmoothProperSpecializationUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/SmoothProperSpecializationUnconditional.lean#L68). References: SGA 4 XVI (2.3), “special case”; SGA 4½ Th finitude (5.2.4), “partial”; SGA 7 I (2.1), “more general”.
 
 > Let `f : X ⟶ S` be a morphism of schemes and `F` an abelian sheaf on `X_étale`. Assume
 >
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.94, Tag 0GJT](https://stacks.math.columbia.edu/tag/0GJT)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

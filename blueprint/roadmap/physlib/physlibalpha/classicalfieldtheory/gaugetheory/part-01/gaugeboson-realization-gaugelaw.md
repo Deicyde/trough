@@ -8,7 +8,7 @@ proof: formalized
 
 # The gauge law on brackets and iterated derivatives
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.GaugeLaw`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean): 47 declarations, 24 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization.GaugeLaw`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean): 47 declarations, 24 with a docstring.
 
 ## i. Overview
 
@@ -53,7 +53,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization
 
 > * None.
 
-**`GaugeAlgebraRealization.dualPairEquiv`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L92).
+**`GaugeAlgebraRealization.dualPairEquiv`**, a def, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L92).
 
 > The canonical equivalence, through finite-dimensional duality, between
 > algebra-valued fields `B ⊗ 𝔤` and their component families `φ ↦ A^φ`: the element
@@ -64,7 +64,7 @@ noncomputable def dualPairEquiv :
     (B ⊗[ℝ] 𝔤) ≃ₗ[ℝ] (Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
 ```
 
-**`GaugeAlgebraRealization.tensorBracket`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L101).
+**`GaugeAlgebraRealization.tensorBracket`**, a def, [line 101](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L101).
 
 > The bracket of two algebra-valued fields: multiplication in `B` on the first
 > factors, the Lie bracket of the gauge algebra on the second, so that on pure
@@ -75,7 +75,7 @@ noncomputable def tensorBracket :
     (B ⊗[ℝ] 𝔤) →ₗ[ℝ] (B ⊗[ℝ] 𝔤) →ₗ[ℝ] B ⊗[ℝ] 𝔤
 ```
 
-**`GaugeAlgebraRealization.commutator`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L114).
+**`GaugeAlgebraRealization.commutator`**, a def, [line 114](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L114).
 
 > The commutator term `⁅A_μ, A_ν⁆` of the field strength, as a component family:
 > the physicists' `f^a_{bc} A_μ^b A_ν^c` contracted with a dual adjoint vector, but
@@ -88,7 +88,7 @@ noncomputable def commutator
     (μ ν : Fin 1 ⊕ Fin 3) : Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.repGauge_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L132).
+**`GaugeAlgebraRealization.repGauge_apply`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L132).
 
 > The gauge transformation of the underived symbol `A_μ^φ`: the special case `s = 0`
 > of `gauge_apply_deriv`, with no Leibniz convolution left over — the dual adjoint
@@ -101,7 +101,7 @@ lemma repGauge_apply (U : GJ)
       algebraMap ℂ B (φ (jets.evalLie (jets.maurerCartan U⁻¹ μ)))
 ```
 
-**`GaugeAlgebraRealization.repGauge_deriv_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L144).
+**`GaugeAlgebraRealization.repGauge_deriv_apply`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L144).
 
 > The gauge transformation of the once-derived symbol `∂_ρ A_σ`: the case `s = {ρ}`
 > of `gauge_apply_deriv` — the two Leibniz splittings of one derivative, plus the
@@ -118,21 +118,21 @@ lemma repGauge_deriv_apply
 
 ## A. Pure-tensor computations for `dualPairEquiv` and `tensorBracket`
 
-**`GaugeAlgebraRealization.dualPairEquiv_tmul`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L178).
+**`GaugeAlgebraRealization.dualPairEquiv_tmul`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L178).
 
 ```lean
 lemma dualPairEquiv_tmul (b : B) (a : 𝔤) (φ : Module.Dual ℝ 𝔤) :
     dualPairEquiv (b ⊗ₜ[ℝ] a) φ = φ a • b
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_tmul`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L184).
+**`GaugeAlgebraRealization.tensorBracket_tmul`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L184).
 
 ```lean
 lemma tensorBracket_tmul (b₁ b₂ : B) (a₁ a₂ : 𝔤) :
     tensorBracket (b₁ ⊗ₜ[ℝ] a₁) (b₂ ⊗ₜ[ℝ] a₂) = (b₁ * b₂) ⊗ₜ[ℝ] ⁅a₁, a₂⁆
 ```
 
-**`GaugeAlgebraRealization.dualPairEquiv_map_left`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L189).
+**`GaugeAlgebraRealization.dualPairEquiv_map_left`**, a lemma, [line 189](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L189).
 
 ```lean
 lemma dualPairEquiv_map_left (Φ : B →ₗ[ℝ] B) (t : B ⊗[ℝ] 𝔤)
@@ -140,7 +140,7 @@ lemma dualPairEquiv_map_left (Φ : B →ₗ[ℝ] B) (t : B ⊗[ℝ] 𝔤)
     dualPairEquiv ((TensorProduct.map Φ LinearMap.id) t) φ = Φ (dualPairEquiv t φ)
 ```
 
-**`GaugeAlgebraRealization.dualPairEquiv_map_right`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L197).
+**`GaugeAlgebraRealization.dualPairEquiv_map_right`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L197).
 
 ```lean
 lemma dualPairEquiv_map_right (T : 𝔤 →ₗ[ℝ] 𝔤)
@@ -149,7 +149,7 @@ lemma dualPairEquiv_map_right (T : 𝔤 →ₗ[ℝ] 𝔤)
       dualPairEquiv t (T.dualMap φ)
 ```
 
-**`GaugeAlgebraRealization.symm_comp_left`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L206).
+**`GaugeAlgebraRealization.symm_comp_left`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L206).
 
 ```lean
 lemma symm_comp_left (Φ : B →ₗ[ℝ] B) (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
@@ -157,7 +157,7 @@ lemma symm_comp_left (Φ : B →ₗ[ℝ] B) (f : Module.Dual ℝ 𝔤 →ₗ[ℝ
       (TensorProduct.map Φ LinearMap.id) (dualPairEquiv.symm f)
 ```
 
-**`GaugeAlgebraRealization.symm_comp_right`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L216).
+**`GaugeAlgebraRealization.symm_comp_right`**, a lemma, [line 216](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L216).
 
 ```lean
 lemma symm_comp_right (T : 𝔤 →ₗ[ℝ] 𝔤)
@@ -166,7 +166,7 @@ lemma symm_comp_right (T : 𝔤 →ₗ[ℝ] 𝔤)
       (TensorProduct.map LinearMap.id T) (dualPairEquiv.symm f)
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_map_left`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L227).
+**`GaugeAlgebraRealization.tensorBracket_map_left`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L227).
 
 ```lean
 lemma tensorBracket_map_left (Φ : B →ₗ[ℝ] B)
@@ -176,7 +176,7 @@ lemma tensorBracket_map_left (Φ : B →ₗ[ℝ] B)
       (TensorProduct.map Φ LinearMap.id) (tensorBracket s t)
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_map_right`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L242).
+**`GaugeAlgebraRealization.tensorBracket_map_right`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L242).
 
 ```lean
 lemma tensorBracket_map_right (T : 𝔤 →ₗ[ℝ] 𝔤)
@@ -186,7 +186,7 @@ lemma tensorBracket_map_right (T : 𝔤 →ₗ[ℝ] 𝔤)
       (TensorProduct.map LinearMap.id T) (tensorBracket s t)
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_one_right`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L257).
+**`GaugeAlgebraRealization.tensorBracket_one_right`**, a lemma, [line 257](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L257).
 
 ```lean
 lemma tensorBracket_one_right (c : 𝔤) (s : B ⊗[ℝ] 𝔤) :
@@ -194,7 +194,7 @@ lemma tensorBracket_one_right (c : 𝔤) (s : B ⊗[ℝ] 𝔤) :
       -(TensorProduct.map LinearMap.id (LieAlgebra.ad ℝ 𝔤 c)) s
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_one_left`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L270).
+**`GaugeAlgebraRealization.tensorBracket_one_left`**, a lemma, [line 270](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L270).
 
 ```lean
 lemma tensorBracket_one_left (c : 𝔤) (t : B ⊗[ℝ] 𝔤) :
@@ -204,14 +204,14 @@ lemma tensorBracket_one_left (c : 𝔤) (t : B ⊗[ℝ] 𝔤) :
 
 ## B. The gauge transformation of the commutator
 
-**`GaugeAlgebraRealization.dualPairEquiv_one_tmul`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L292).
+**`GaugeAlgebraRealization.dualPairEquiv_one_tmul`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L292).
 
 ```lean
 lemma dualPairEquiv_one_tmul (c : 𝔤) (φ : Module.Dual ℝ 𝔤) :
     dualPairEquiv ((1 : B) ⊗ₜ[ℝ] c) φ = algebraMap ℂ B (φ c)
 ```
 
-**`GaugeAlgebraRealization.repGauge_commutator`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L310).
+**`GaugeAlgebraRealization.repGauge_commutator`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L310).
 
 > The gauge transformation law of the commutator term: writing the field law as
 > `A_μ ↦ Ad₀ A_μ + c_μ` with `Ad₀` the base-point adjoint of `U₀⁻¹` and
@@ -241,7 +241,7 @@ lemma repGauge_commutator
 
 ## C. Second derivatives of the gauge field
 
-**`GaugeAlgebraRealization.repGauge_deriv_deriv_apply`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L399).
+**`GaugeAlgebraRealization.repGauge_deriv_deriv_apply`**, a lemma, [line 399](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L399).
 
 > The gauge transformation of the twice-derived symbol `∂_ρ ∂_σ A_τ`: the case
 > `s = ρ ::ₘ {σ}` of `gauge_apply_deriv` — the four Leibniz splittings of two
@@ -261,7 +261,7 @@ lemma repGauge_deriv_deriv_apply
 
 ## D. The bracket of general component families
 
-**`GaugeAlgebraRealization.bracketFam`**, a def, [line 444](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L444).
+**`GaugeAlgebraRealization.bracketFam`**, a def, [line 444](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L444).
 
 > The bracket of two arbitrary component families, generalizing `commutator` (which
 > is the case of two field symbols): assemble into `B ⊗ 𝔤` by `dualPairEquiv.symm`,
@@ -272,7 +272,7 @@ noncomputable def bracketFam (f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.commutator_eq_bracketFam`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L448).
+**`GaugeAlgebraRealization.commutator_eq_bracketFam`**, a lemma, [line 448](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L448).
 
 ```lean
 lemma commutator_eq_bracketFam
@@ -280,7 +280,7 @@ lemma commutator_eq_bracketFam
     (μ ν : Fin 1 ⊕ Fin 3) : commutator A μ ν = bracketFam (A 0 μ) (A 0 ν)
 ```
 
-**`GaugeAlgebraRealization.commutatorFam`**, a def, [line 456](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L456).
+**`GaugeAlgebraRealization.commutatorFam`**, a def, [line 456](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L456).
 
 > **The derived commutator family**: the `s`-derivative of the commutator term, given
 > by the Leibniz convolution of the derivative symbols over the multiset antidiagonal.
@@ -294,7 +294,7 @@ noncomputable def commutatorFam
     Module.Dual ℝ 𝔤 →ₗ[ℝ] B
 ```
 
-**`GaugeAlgebraRealization.commutatorFam_zero`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L462).
+**`GaugeAlgebraRealization.commutatorFam_zero`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L462).
 
 ```lean
 lemma commutatorFam_zero
@@ -302,35 +302,35 @@ lemma commutatorFam_zero
     (μ ν : Fin 1 ⊕ Fin 3) : commutatorFam A μ ν 0 = commutator A μ ν
 ```
 
-**`GaugeAlgebraRealization.bracketFam_add_left`**, a lemma, [line 468](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L468).
+**`GaugeAlgebraRealization.bracketFam_add_left`**, a lemma, [line 468](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L468).
 
 ```lean
 lemma bracketFam_add_left (f₁ f₂ g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam (f₁ + f₂) g = bracketFam f₁ g + bracketFam f₂ g
 ```
 
-**`GaugeAlgebraRealization.bracketFam_add_right`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L472).
+**`GaugeAlgebraRealization.bracketFam_add_right`**, a lemma, [line 472](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L472).
 
 ```lean
 lemma bracketFam_add_right (f g₁ g₂ : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam f (g₁ + g₂) = bracketFam f g₁ + bracketFam f g₂
 ```
 
-**`GaugeAlgebraRealization.bracketFam_smul_left`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L476).
+**`GaugeAlgebraRealization.bracketFam_smul_left`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L476).
 
 ```lean
 lemma bracketFam_smul_left (c : ℝ) (f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam (c • f) g = c • bracketFam f g
 ```
 
-**`GaugeAlgebraRealization.bracketFam_smul_right`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L480).
+**`GaugeAlgebraRealization.bracketFam_smul_right`**, a lemma, [line 480](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L480).
 
 ```lean
 lemma bracketFam_smul_right (c : ℝ) (f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam f (c • g) = c • bracketFam f g
 ```
 
-**`GaugeAlgebraRealization.bracketFam_apply_eq_sum`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L487).
+**`GaugeAlgebraRealization.bracketFam_apply_eq_sum`**, a lemma, [line 487](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L487).
 
 > The bracket of two component families expanded through a basis of the gauge
 > algebra: the physicists' `f^a_{bc} f^b g^c`, with `φ⁅e_j, e_k⁆` the structure
@@ -346,7 +346,7 @@ lemma bracketFam_apply_eq_sum (f g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
           g ((Module.Free.chooseBasis ℝ 𝔤).coord k))
 ```
 
-**`GaugeAlgebraRealization.bracketFam_apply_eq_zero_of_map_lie`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L521).
+**`GaugeAlgebraRealization.bracketFam_apply_eq_zero_of_map_lie`**, a lemma, [line 521](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L521).
 
 > A dual vector vanishing on every bracket of the gauge algebra, such as the coordinate of an
 > abelian factor, vanishes on the bracket of any two families: every structure constant
@@ -358,7 +358,7 @@ lemma bracketFam_apply_eq_zero_of_map_lie {φ : Module.Dual ℝ 𝔤}
     bracketFam f g φ = 0
 ```
 
-**`GaugeAlgebraRealization.bracketFam_map`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L528).
+**`GaugeAlgebraRealization.bracketFam_map`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L528).
 
 > The bracket of families is natural in the algebra: a multiplicative linear map carries
 > the bracket of two families to the bracket of their images.
@@ -370,7 +370,7 @@ lemma bracketFam_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCommClass ℝ B'
     bracketFam (Φ ∘ₗ f) (Φ ∘ₗ g) = Φ ∘ₗ bracketFam f g
 ```
 
-**`GaugeAlgebraRealization.commutatorFam_map`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L541).
+**`GaugeAlgebraRealization.commutatorFam_map`**, a lemma, [line 541](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L541).
 
 > The derived commutator family is natural in the algebra.
 
@@ -382,7 +382,7 @@ lemma commutatorFam_map {B' : Type} [Ring B'] [Module ℝ B'] [SMulCommClass ℝ
     commutatorFam (fun p ρ => Φ ∘ₗ A p ρ) μ ν s = Φ ∘ₗ commutatorFam A μ ν s
 ```
 
-**`GaugeAlgebraRealization.bracketFam_comp_dualMap`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L556).
+**`GaugeAlgebraRealization.bracketFam_comp_dualMap`**, a lemma, [line 556](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L556).
 
 > The bracket of families against a common Lie-algebra morphism on the dual index.
 
@@ -392,7 +392,7 @@ lemma bracketFam_comp_dualMap (T : 𝔤 →ₗ[ℝ] 𝔤)
     bracketFam (f ∘ₗ T.dualMap) (g ∘ₗ T.dualMap) = bracketFam f g ∘ₗ T.dualMap
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_map_left_derivation`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L570).
+**`GaugeAlgebraRealization.tensorBracket_map_left_derivation`**, a lemma, [line 570](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L570).
 
 > `tensorBracket` is a derivation in the algebra factor: for `Δ` satisfying the
 > Leibniz rule on `B`, applying `Δ ⊗ id` to a bracket distributes over the two
@@ -406,7 +406,7 @@ lemma tensorBracket_map_left_derivation (Δ : B →ₗ[ℝ] B)
       tensorBracket s ((TensorProduct.map Δ LinearMap.id) t)
 ```
 
-**`GaugeAlgebraRealization.bracketFam_derivation`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L588).
+**`GaugeAlgebraRealization.bracketFam_derivation`**, a lemma, [line 588](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L588).
 
 > The bracket of families under a derivation of the algebra: the Leibniz rule, in
 > family form.
@@ -417,7 +417,7 @@ lemma bracketFam_derivation (Δ : B →ₗ[ℝ] B)
     Δ ∘ₗ bracketFam f g = bracketFam (Δ ∘ₗ f) g + bracketFam f (Δ ∘ₗ g)
 ```
 
-**`GaugeAlgebraRealization.tensorBracket_map_right_derivation`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L602).
+**`GaugeAlgebraRealization.tensorBracket_map_right_derivation`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L602).
 
 > `tensorBracket` under a relative derivation on the Lie factor: if
 > `T₁ ⁅a, b⁆ = ⁅T₁ a, T₀ b⁆ + ⁅T₀ a, T₁ b⁆`, the two mixed brackets sum to the
@@ -434,7 +434,7 @@ lemma tensorBracket_map_right_derivation (T₀ T₁ : 𝔤 →ₗ[ℝ] 𝔤)
       (TensorProduct.map LinearMap.id T₁) (tensorBracket s t)
 ```
 
-**`GaugeAlgebraRealization.bracketFam_dualMap_derivation`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L624).
+**`GaugeAlgebraRealization.bracketFam_dualMap_derivation`**, a lemma, [line 624](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L624).
 
 > The family-level form of `tensorBracket_map_right_derivation`: a relative
 > derivation on the dual index distributes over the bracket of families.
@@ -448,7 +448,7 @@ lemma bracketFam_dualMap_derivation (T₀ T₁ : 𝔤 →ₗ[ℝ] 𝔤)
       bracketFam f g ∘ₗ T₁.dualMap
 ```
 
-**`GaugeAlgebraRealization.repGauge_bracketFam`**, a lemma, [line 657](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L657).
+**`GaugeAlgebraRealization.repGauge_bracketFam`**, a lemma, [line 657](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L657).
 
 > The gauge transformation of the bracket of two component families with affine
 > transformation laws `f ↦ f' + φ(c_f)·1` and `g ↦ g' + φ(c_g)·1`: the bracket of the
@@ -480,7 +480,7 @@ lemma repGauge_bracketFam
 > grouping. Both are proven by a cons-induction with the summand universally quantified,
 > so that the inductive hypothesis absorbs the modified summands.
 
-**`GaugeAlgebraRealization.commutatorFam_mem`**, a lemma, [line 736](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L736).
+**`GaugeAlgebraRealization.commutatorFam_mem`**, a lemma, [line 736](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L736).
 
 > Every derived commutator term is a polynomial in derivative symbols of order at
 > most that of the derivative: each Leibniz splitting contributes a product of two
@@ -498,21 +498,21 @@ lemma commutatorFam_mem
 
 ## F. Iterated Leibniz expansions
 
-**`GaugeAlgebraRealization.bracketFam_zero_left`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L771).
+**`GaugeAlgebraRealization.bracketFam_zero_left`**, a lemma, [line 771](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L771).
 
 ```lean
 lemma bracketFam_zero_left (g : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam 0 g = 0
 ```
 
-**`GaugeAlgebraRealization.bracketFam_zero_right`**, a lemma, [line 775](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L775).
+**`GaugeAlgebraRealization.bracketFam_zero_right`**, a lemma, [line 775](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L775).
 
 ```lean
 lemma bracketFam_zero_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B) :
     bracketFam f 0 = 0
 ```
 
-**`GaugeAlgebraRealization.bracketFam_sum_left`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L779).
+**`GaugeAlgebraRealization.bracketFam_sum_left`**, a lemma, [line 779](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L779).
 
 ```lean
 lemma bracketFam_sum_left (S : Multiset (Module.Dual ℝ 𝔤 →ₗ[ℝ] B))
@@ -520,7 +520,7 @@ lemma bracketFam_sum_left (S : Multiset (Module.Dual ℝ 𝔤 →ₗ[ℝ] B))
     bracketFam S.sum g = (S.map fun f => bracketFam f g).sum
 ```
 
-**`GaugeAlgebraRealization.bracketFam_sum_right`**, a lemma, [line 786](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L786).
+**`GaugeAlgebraRealization.bracketFam_sum_right`**, a lemma, [line 786](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L786).
 
 ```lean
 lemma bracketFam_sum_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
@@ -528,7 +528,7 @@ lemma bracketFam_sum_right (f : Module.Dual ℝ 𝔤 →ₗ[ℝ] B)
     bracketFam f S.sum = (S.map fun g => bracketFam f g).sum
 ```
 
-**`GaugeAlgebraRealization.bracketFam_finset_sum_left`**, a lemma, [line 793](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L793).
+**`GaugeAlgebraRealization.bracketFam_finset_sum_left`**, a lemma, [line 793](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L793).
 
 ```lean
 lemma bracketFam_finset_sum_left {ι : Type*} (S : Finset ι)
@@ -536,7 +536,7 @@ lemma bracketFam_finset_sum_left {ι : Type*} (S : Finset ι)
     bracketFam (∑ i ∈ S, f i) g = ∑ i ∈ S, bracketFam (f i) g
 ```
 
-**`GaugeAlgebraRealization.bracketFam_finset_sum_right`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L798).
+**`GaugeAlgebraRealization.bracketFam_finset_sum_right`**, a lemma, [line 798](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L798).
 
 ```lean
 lemma bracketFam_finset_sum_right {ι : Type*} (S : Finset ι)
@@ -546,7 +546,7 @@ lemma bracketFam_finset_sum_right {ι : Type*} (S : Finset ι)
 
 ## G. The bracket of families against the adjoint coefficients
 
-**`GaugeAlgebraRealization.tensorBracket_map_right_antidiagonal`**, a lemma, [line 813](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L813).
+**`GaugeAlgebraRealization.tensorBracket_map_right_antidiagonal`**, a lemma, [line 813](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L813).
 
 > `tensorBracket` under an antidiagonal family of transports on the Lie factor:
 > if `T x` distributes over the bracket as the antidiagonal convolution of the
@@ -565,7 +565,7 @@ lemma tensorBracket_map_right_antidiagonal
       (TensorProduct.map LinearMap.id (T x)) (tensorBracket s t)
 ```
 
-**`GaugeAlgebraRealization.bracketFam_adjointDualCoeff`**, a lemma, [line 842](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L842).
+**`GaugeAlgebraRealization.bracketFam_adjointDualCoeff`**, a lemma, [line 842](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L842).
 
 > The bracket of families against an iterated dual adjoint coefficient: the
 > antidiagonal convolution — the all-orders form of `bracketFam_comp_dualMap` and
@@ -582,7 +582,7 @@ lemma bracketFam_adjointDualCoeff (U : GJ) (x : Multiset (Fin 1 ⊕ Fin 3))
 
 ## H. The gauge transformation of iterated derivatives
 
-**`GaugeAlgebraRealization.repGauge_cons_apply`**, a lemma, [line 882](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L882).
+**`GaugeAlgebraRealization.repGauge_cons_apply`**, a lemma, [line 882](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L882).
 
 > The `κ ::ₘ s` case of `gauge_apply_deriv` with the extra derivative traced through:
 > the Leibniz splittings where `κ` stays a derivative, minus (by
@@ -605,7 +605,7 @@ lemma repGauge_cons_apply
           (jets.maurerCartan U⁻¹ τ))))
 ```
 
-**`GaugeAlgebraRealization.repGauge_commutatorFam`**, a lemma, [line 918](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L918).
+**`GaugeAlgebraRealization.repGauge_commutatorFam`**, a lemma, [line 918](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean#L918).
 
 > The all-orders gauge transformation of the derived commutator term: the Leibniz
 > convolution of the transformed commutator, the two `ad` cross-term convolutions,
@@ -643,4 +643,4 @@ lemma repGauge_commutatorFam
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean)

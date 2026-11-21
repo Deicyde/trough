@@ -8,7 +8,7 @@ proof: formalized
 
 # Localization and extension of retarded responses
 
-The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Localization`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean): 33 declarations, 28 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Localization`, [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean): 33 declarations, 28 with a docstring.
 
 > A past compact source is cut off to compact pieces.
 
@@ -69,7 +69,7 @@ The module `PhyslibAlpha.ClassicalFieldTheory.GreenOperator.Localization`, [Phys
 > Lemmas: `truncationRadius_pos`, `mem_truncation_ball`, `bumpTruncate_support`,
 > `bumpTruncate_agrees`.
 
-**`GreenOperator.PastLocalization`**, a structure, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L96).
+**`GreenOperator.PastLocalization`**, a structure, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L96).
 
 > The geometric and cutoff data for localizing past-compact sections to compact test sections.
 
@@ -95,13 +95,13 @@ structure PastLocalization (C : CausalRelation M) (P : LocalOperator S) where
     tsupport ((truncate f K hK).val : M → V) ⊆ tsupport (f.val : M → V)
 ```
 
-**`GreenOperator.PastLocalization.mem_past_bound`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L126).
+**`GreenOperator.PastLocalization.mem_past_bound`**, a lemma, [line 126](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L126).
 
 ```lean
 lemma mem_past_bound (x : M) : x ∈ C.causalPast (L.bound x)
 ```
 
-**`GreenOperator.PastLocalization.sourceAt`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L130).
+**`GreenOperator.PastLocalization.sourceAt`**, a def, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L130).
 
 > Each source has a compact truncation adapted to the observation event.
 
@@ -109,7 +109,7 @@ lemma mem_past_bound (x : M) : x ∈ C.causalPast (L.bound x)
 def sourceAt (f : P.pastCompactFields C) (x : M) : P.compactSources
 ```
 
-**`GreenOperator.PastLocalization.sourceAt_agrees`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L133).
+**`GreenOperator.PastLocalization.sourceAt_agrees`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L133).
 
 ```lean
 lemma sourceAt_agrees (f : P.pastCompactFields C) (x : M) {y : M}
@@ -117,14 +117,14 @@ lemma sourceAt_agrees (f : P.pastCompactFields C) (x : M) {y : M}
     ((L.sourceAt f x).val : M → V) =ᶠ[𝓝 y] (f.val : M → V)
 ```
 
-**`GreenOperator.PastLocalization.predecessor_mem_past_bound`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L138).
+**`GreenOperator.PastLocalization.predecessor_mem_past_bound`**, a lemma, [line 138](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L138).
 
 ```lean
 lemma predecessor_mem_past_bound {x y : M} (hyx : C.Precedes y x) :
     y ∈ C.causalPast (L.bound x)
 ```
 
-**`GreenOperator.PastLocalization.retardedValue`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L144).
+**`GreenOperator.PastLocalization.retardedValue`**, a def, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L144).
 
 > The pointwise retarded response obtained from observation-adapted compact truncations.
 
@@ -132,7 +132,7 @@ lemma predecessor_mem_past_bound {x y : M} (hyx : C.Precedes y x) :
 def retardedValue (G : RetardedGreenOperator C P) (f : P.pastCompactFields C) : M → V
 ```
 
-**`GreenOperator.PastLocalization.retardedValue_eq_on_past_bound`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L149).
+**`GreenOperator.PastLocalization.retardedValue_eq_on_past_bound`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L149).
 
 > Retarded responses of different admissible truncations agree locally.
 > No limit or convergence of the truncation family is required.
@@ -144,7 +144,7 @@ lemma retardedValue_eq_on_past_bound (G : RetardedGreenOperator C P)
     L.retardedValue G f y = (G.toLinearMap (L.sourceAt f x) : M → V) y
 ```
 
-**`GreenOperator.PastLocalization.retardedValue_eventuallyEq`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L161).
+**`GreenOperator.PastLocalization.retardedValue_eventuallyEq`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L161).
 
 > Near any event the response is an ordinary compact-source Green response.
 
@@ -154,7 +154,7 @@ lemma retardedValue_eventuallyEq (G : RetardedGreenOperator C P)
     L.retardedValue G f =ᶠ[𝓝 x] (G.toLinearMap (L.sourceAt f x) : M → V)
 ```
 
-**`GreenOperator.PastLocalization.retardedValue_mem`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L168).
+**`GreenOperator.PastLocalization.retardedValue_mem`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L168).
 
 > The pointwise construction is admissible by local gluing.
 
@@ -163,7 +163,7 @@ lemma retardedValue_mem (G : RetardedGreenOperator C P) (f : P.pastCompactFields
     L.retardedValue G f ∈ S
 ```
 
-**`GreenOperator.PastLocalization.homogeneous_eq_zero`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L174).
+**`GreenOperator.PastLocalization.homogeneous_eq_zero`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L174).
 
 > A past-compact homogeneous field vanishes, proved from compact Green identities and cutoffs.
 
@@ -172,7 +172,7 @@ lemma homogeneous_eq_zero (G : RetardedGreenOperator C P) (u : P.pastCompactFiel
     (hPu : P.operator u.val = 0) : u.val = 0
 ```
 
-**`GreenOperator.PastLocalization.pastCompactOperator_injective`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L193).
+**`GreenOperator.PastLocalization.pastCompactOperator_injective`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L193).
 
 > One-sided uniqueness is a consequence of local compact truncation and the compact Green
 > inverse.
@@ -182,7 +182,7 @@ lemma pastCompactOperator_injective (G : RetardedGreenOperator C P) :
     Function.Injective (P.pastCompactOperator C)
 ```
 
-**`GreenOperator.PastLocalization.retardedSection`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L210).
+**`GreenOperator.PastLocalization.retardedSection`**, a def, [line 210](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L210).
 
 > The glued retarded field as an admissible section.
 
@@ -190,7 +190,7 @@ lemma pastCompactOperator_injective (G : RetardedGreenOperator C P) :
 def retardedSection (f : P.pastCompactFields C) : S
 ```
 
-**`GreenOperator.PastLocalization.retardedSection_solves`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L214).
+**`GreenOperator.PastLocalization.retardedSection_solves`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L214).
 
 > The glued field solves the full past-compact source equation.
 
@@ -199,7 +199,7 @@ lemma retardedSection_solves (f : P.pastCompactFields C) :
     P.operator (L.retardedSection G f) = f.val
 ```
 
-**`GreenOperator.PastLocalization.retardedValue_support`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L225).
+**`GreenOperator.PastLocalization.retardedValue_support`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L225).
 
 > Pointwise support of the glued response lies in the future of the source.
 
@@ -208,7 +208,7 @@ lemma retardedValue_support (f : P.pastCompactFields C) :
     Function.support (L.retardedValue G f) ⊆ C.causalFuture (tsupport (f.val : M → V))
 ```
 
-**`GreenOperator.PastLocalization.retardedSection_support`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L233).
+**`GreenOperator.PastLocalization.retardedSection_support`**, a lemma, [line 233](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L233).
 
 > The topological support bound follows from the closed future of a past-compact source.
 
@@ -217,7 +217,7 @@ lemma retardedSection_support (f : P.pastCompactFields C) :
     tsupport (L.retardedSection G f : M → V) ⊆ C.causalFuture (tsupport (f.val : M → V))
 ```
 
-**`GreenOperator.PastLocalization.retardedSection_mem_pastCompactFields`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L241).
+**`GreenOperator.PastLocalization.retardedSection_mem_pastCompactFields`**, a lemma, [line 241](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L241).
 
 > Causal support and compact diamonds put the constructed response in the full past-compact
 > class.
@@ -227,7 +227,7 @@ lemma retardedSection_mem_pastCompactFields (hC : C.HasCompactCausalDiamonds)
     (f : P.pastCompactFields C) : L.retardedSection G f ∈ P.pastCompactFields C
 ```
 
-**`GreenOperator.PastLocalization.pastCompactOperator_surjective`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L249).
+**`GreenOperator.PastLocalization.pastCompactOperator_surjective`**, a lemma, [line 249](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L249).
 
 > Existence on the larger support class is constructed from local compact responses.
 
@@ -236,7 +236,7 @@ lemma pastCompactOperator_surjective (hC : C.HasCompactCausalDiamonds) :
     Function.Surjective (P.pastCompactOperator C)
 ```
 
-**`GreenOperator.PastLocalization.retardedExtension`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L256).
+**`GreenOperator.PastLocalization.retardedExtension`**, a def, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L256).
 
 > The two-sided linear Green extension to all past-compact sources.
 
@@ -245,7 +245,7 @@ noncomputable def retardedExtension (hC : C.HasCompactCausalDiamonds) :
     P.pastCompactFields C ≃ₗ[𝕜] P.pastCompactFields C
 ```
 
-**`GreenOperator.PastLocalization.retardedExtension_solves`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L262).
+**`GreenOperator.PastLocalization.retardedExtension_solves`**, a lemma, [line 262](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L262).
 
 > The constructed extension solves the source equation.
 
@@ -254,7 +254,7 @@ lemma retardedExtension_solves (hC : C.HasCompactCausalDiamonds) (f : P.pastComp
     P.pastCompactOperator C (L.retardedExtension G hC f) = f
 ```
 
-**`GreenOperator.PastLocalization.retardedExtension_eq_section`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L268).
+**`GreenOperator.PastLocalization.retardedExtension_eq_section`**, a lemma, [line 268](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L268).
 
 > The abstract linear inverse equals the explicitly glued local response.
 
@@ -264,7 +264,7 @@ lemma retardedExtension_eq_section (hC : C.HasCompactCausalDiamonds)
     (L.retardedExtension G hC f).val = L.retardedSection G f
 ```
 
-**`GreenOperator.PastLocalization.retardedExtension_support`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L279).
+**`GreenOperator.PastLocalization.retardedExtension_support`**, a lemma, [line 279](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L279).
 
 > The full past-compact extension retains the sharp causal support bound.
 
@@ -274,7 +274,7 @@ lemma retardedExtension_support (hC : C.HasCompactCausalDiamonds) (f : P.pastCom
       C.causalFuture (tsupport (f.val : M → V))
 ```
 
-**`GreenOperator.PastLocalization.pastCompact_unique`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L287).
+**`GreenOperator.PastLocalization.pastCompact_unique`**, a lemma, [line 287](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L287).
 
 > Uniqueness for admissible fields in the full past-compact class.
 
@@ -284,7 +284,7 @@ lemma pastCompact_unique {u v : S}
     (heq : P.operator u = P.operator v) : u = v
 ```
 
-**`GreenOperator.PastLocalization.futureSupportedOperator_injective`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L296).
+**`GreenOperator.PastLocalization.futureSupportedOperator_injective`**, a lemma, [line 296](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L296).
 
 > One-sided uniqueness on compactly generated future support is now a theorem.
 
@@ -293,7 +293,7 @@ lemma futureSupportedOperator_injective (hC : C.HasCompactCausalDiamonds) :
     Function.Injective (P.futureSupportedOperator C)
 ```
 
-**`GreenOperator.PastLocalization.retardedExtension_mem_futureSupportedFields`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L306).
+**`GreenOperator.PastLocalization.retardedExtension_mem_futureSupportedFields`**, a lemma, [line 306](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L306).
 
 > The extension preserves support in the future of any one compact source bound.
 
@@ -305,7 +305,7 @@ lemma retardedExtension_mem_futureSupportedFields (hC : C.HasCompactCausalDiamon
       P.futureSupportedFields C
 ```
 
-**`GreenOperator.PastLocalization.futureSupportedOperator_surjective`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L321).
+**`GreenOperator.PastLocalization.futureSupportedOperator_surjective`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L321).
 
 > Solvability on compactly generated future support is proved by restricting the constructed
 > past-compact extension. It is not an additional existence assumption.
@@ -315,7 +315,7 @@ lemma futureSupportedOperator_surjective (hC : C.HasCompactCausalDiamonds) :
     Function.Surjective (P.futureSupportedOperator C)
 ```
 
-**`GreenOperator.PastLocalization.truncationRadius`**, a def, [line 338](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L338).
+**`GreenOperator.PastLocalization.truncationRadius`**, a def, [line 338](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L338).
 
 > A positive ball radius enclosing the relevant compact part of the source.
 
@@ -323,14 +323,14 @@ lemma futureSupportedOperator_surjective (hC : C.HasCompactCausalDiamonds) :
 def truncationRadius (f : P.pastCompactFields C) (K : Set E) (hK : IsCompact K) : ℝ
 ```
 
-**`GreenOperator.PastLocalization.truncationRadius_pos`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L342).
+**`GreenOperator.PastLocalization.truncationRadius_pos`**, a lemma, [line 342](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L342).
 
 ```lean
 lemma truncationRadius_pos (f : P.pastCompactFields C) (K : Set E) (hK : IsCompact K) :
     0 < truncationRadius f K hK
 ```
 
-**`GreenOperator.PastLocalization.truncationBump`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L347).
+**`GreenOperator.PastLocalization.truncationBump`**, a def, [line 347](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L347).
 
 > A smooth compact bump equal to one near the relevant source intersection.
 
@@ -339,7 +339,7 @@ def truncationBump (f : P.pastCompactFields C) (K : Set E) (hK : IsCompact K) :
     ContDiffBump (0 : E)
 ```
 
-**`GreenOperator.PastLocalization.mem_truncation_ball`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L355).
+**`GreenOperator.PastLocalization.mem_truncation_ball`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L355).
 
 ```lean
 lemma mem_truncation_ball (f : P.pastCompactFields C) (K : Set E) (hK : IsCompact K)
@@ -347,7 +347,7 @@ lemma mem_truncation_ball (f : P.pastCompactFields C) (K : Set E) (hK : IsCompac
     x ∈ Metric.ball (0 : E) (truncationBump f K hK).rIn
 ```
 
-**`GreenOperator.PastLocalization.bumpTruncate`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L362).
+**`GreenOperator.PastLocalization.bumpTruncate`**, a def, [line 362](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L362).
 
 > A bump truncation is a compact admissible source, not an assumed larger-support solution.
 
@@ -356,7 +356,7 @@ def bumpTruncate (f : P.pastCompactFields C) (K : Set E) (hK : IsCompact K) :
     P.compactSources
 ```
 
-**`GreenOperator.PastLocalization.bumpTruncate_support`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L370).
+**`GreenOperator.PastLocalization.bumpTruncate_support`**, a lemma, [line 370](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L370).
 
 > Truncating by multiplication introduces no support outside the source.
 
@@ -365,7 +365,7 @@ lemma bumpTruncate_support (f : P.pastCompactFields C) (K : Set E) (hK : IsCompa
     tsupport ((bumpTruncate hmul f K hK).val : E → V) ⊆ tsupport (f.val : E → V)
 ```
 
-**`GreenOperator.PastLocalization.bumpTruncate_agrees`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L375).
+**`GreenOperator.PastLocalization.bumpTruncate_agrees`**, a lemma, [line 375](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L375).
 
 > The truncation agrees as germs on the entire causal past of the observation set.
 
@@ -375,7 +375,7 @@ lemma bumpTruncate_agrees (f : P.pastCompactFields C) (K : Set E) (hK : IsCompac
     ((bumpTruncate hmul f K hK).val : E → V) =ᶠ[𝓝 x] (f.val : E → V)
 ```
 
-**`GreenOperator.PastLocalization.ofBumpFunctions`**, a def, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L393).
+**`GreenOperator.PastLocalization.ofBumpFunctions`**, a def, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean#L393).
 
 > Construct all local compact-source truncation data from bump stability and causal topology.
 > No existence or uniqueness of a Green response is an input.
@@ -397,4 +397,4 @@ def ofBumpFunctions (hlocal : IsLocalFieldSpace S)
 
 ## Sources
 
-- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean)
+- [PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean)

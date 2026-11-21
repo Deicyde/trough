@@ -8,13 +8,13 @@ proof: formalized
 
 # 50.15 Log poles along a divisor
 
-Section 50.15 of the Stacks Project, [Tag 0FMU](https://stacks.math.columbia.edu/tag/0FMU). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 50.15 of the Stacks Project, [Tag 0FMU](https://stacks.math.columbia.edu/tag/0FMU). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FMV, a definition
 
 [Tag 0FMV](https://stacks.math.columbia.edu/tag/0FMV) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.HasLogPolesDeRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/Defs.lean#L49).
+**`AlgebraicGeometry.Scheme.Hom.HasLogPolesDeRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/Defs.lean, line 49](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/Defs.lean#L49).
 
 > The *de Rham complex of log poles is defined* for an effective Cartier divisor `Y ⊆ X`,
 > recorded by its ideal sheaf `I`, over a base `S` if for every point `y` of `Y` and every local
@@ -29,7 +29,7 @@ def HasLogPolesDeRhamComplex (f : X ⟶ S) (I : X.IdealSheafData) : Prop
 
 [Tag 0FMW](https://stacks.math.columbia.edu/tag/0FMW) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.shortExact_logShortComplex_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/GlobalResidueSequence.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/GlobalResidueSequence.lean#L351). The attribute's comment: “for an arbitrary morphism of schemes and an effective Cartier divisor whose log poles complex is defined in the sense of 0FMV, the short exactness of the residue sequence of complexes at each point of the divisor and each local equation there”.
+**`AlgebraicGeometry.Scheme.Hom.shortExact_logShortComplex_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/GlobalResidueSequence.lean, line 351](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/GlobalResidueSequence.lean#L351). The attribute's comment: “for an arbitrary morphism of schemes and an effective Cartier divisor whose log poles complex is defined in the sense of 0FMV, the short exactness of the residue sequence of complexes at each point of the divisor and each local equation there”.
 
 > **Stacks Project, Tag 0FMW.** Let `f : X ⟶ S` be a morphism of schemes and let `Y ⊆ X` be an
 > effective Cartier divisor, recorded by its ideal sheaf `I`, with the de Rham complex of log poles
@@ -73,7 +73,7 @@ theorem shortExact_logShortComplex_stalk (h : f.HasLogPolesDeRhamComplex I) (y :
         (HasLogPolesDeRhamComplex.exists_retraction_D h y U hy t ht)).ShortExact
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logResidueShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogResidueSequence.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogResidueSequence.lean#L381).
+**`AlgebraicGeometry.Scheme.Hom.logResidueShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogResidueSequence.lean, line 381](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogResidueSequence.lean#L381).
 
 > **Stacks Project, Tag 0FMW.** Let `f : X ⟶ S` be a morphism of schemes and `Y ⊆ X` an
 > effective Cartier divisor, cut out by `I`, for which the de Rham complex of log poles is defined
@@ -91,7 +91,7 @@ theorem shortExact_logShortComplex_stalk (h : f.HasLogPolesDeRhamComplex I) (y :
 theorem logResidueShortComplex_shortExact : (logResidueShortComplex f I hI hlog).ShortExact
 ```
 
-**`Stacks.LogPoles.shortExact_logShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesSequence.lean, line 508](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesSequence.lean#L508). The attribute's comment: “the affine local case: the residue short exact sequence of complexes for a principal effective Cartier divisor”.
+**`Stacks.LogPoles.shortExact_logShortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesSequence.lean, line 508](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesSequence.lean#L508). The attribute's comment: “the affine local case: the residue short exact sequence of complexes for a principal effective Cartier divisor”.
 
 > **Stacks Project, Tag 0FMW**, in its affine local form.  Let `A → R` be a ring map and let
 > `t ∈ R` cut out the effective Cartier divisor `Y = Spec (R ⧸ (t))` in `X = Spec R`.  Assume the
@@ -113,7 +113,7 @@ theorem shortExact_logShortComplex {t : R}
 
 [Tag 0FUA](https://stacks.math.columbia.edu/tag/0FUA) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean#L155). The attribute's comment: “the complex of sheaves of f⁻¹𝒪\_S-modules on X, for an arbitrary morphism of schemes and an arbitrary effective Cartier divisor for which the de Rham complex of log poles is defined (0FMV)”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean, line 155](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean#L155). The attribute's comment: “the complex of sheaves of f⁻¹𝒪\_S-modules on X, for an arbitrary morphism of schemes and an arbitrary effective Cartier divisor for which the de Rham complex of log poles is defined (0FMV)”.
 
 > **The de Rham complex of log poles** `Ω^•_{X/S}(log Y)` for a
 > morphism of schemes `f : X ⟶ S` and an effective Cartier divisor `Y ⊆ X`, cut out by `I`, for
@@ -125,7 +125,7 @@ def deRhamComplexLogPoles :
     CochainComplex (_root_.SheafOfModules.{u} (baseRingSheaf f)) ℕ
 ```
 
-**`Stacks.LogPoles.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesComplex.lean#L106). The attribute's comment: “the de Rham complex of log poles is the complex constructed in 0FMW; as 0FMW is formalized in its affine local form, this names that complex, for a principal divisor (t)”.
+**`Stacks.LogPoles.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesComplex.lean#L106). The attribute's comment: “the de Rham complex of log poles is the complex constructed in 0FMW; as 0FMW is formalized in its affine local form, this names that complex, for a principal divisor (t)”.
 
 > **Stacks Project, Tag 0FUA.**  **The de Rham complex of log poles**
 > `Ω^•_{X/S}(log Y)` for an effective Cartier divisor `Y = Spec (R ⧸ (t))` in `X = Spec R` over
@@ -143,7 +143,7 @@ def deRhamComplexLogPoles {t : R}
 
 [Tag 0FUP](https://stacks.math.columbia.edu/tag/0FUP) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.logFormsWedgeMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L73). The attribute's comment: “clause (1): existence, uniqueness among all O\_X-bilinear extensions (the Leibniz rule is not needed for uniqueness), and the Leibniz rule”.
+**`AlgebraicGeometry.Scheme.Hom.logFormsWedgeMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L73). The attribute's comment: “clause (1): existence, uniqueness among all O\_X-bilinear extensions (the Leibniz rule is not needed for uniqueness), and the Leibniz rule”.
 
 > **Stacks Project, Tag 0FUP, clause (1).** The wedge products
 > `Ω^p_{X/S} × Ω^q_{X/S} → Ω^{p+q}_{X/S}` extend to `𝒪_X`-bilinear maps
@@ -175,7 +175,7 @@ theorem logFormsWedgeMap_spec :
           ((-1 : ℤ) ^ p) • (logFormsWedgeMap hI hlog p (q + 1)).app (op W) φ (logD hI hlog ψ))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logPolesDifferentialGradedAlgebra_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L104). The attribute's comment: “clause (2): the sheaf of differential graded f⁻¹O\_S-algebras on the complex of 0FUA, with the multiplication of clause (1), and the inclusion as a homomorphism”.
+**`AlgebraicGeometry.Scheme.Hom.logPolesDifferentialGradedAlgebra_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 104](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L104). The attribute's comment: “clause (2): the sheaf of differential graded f⁻¹O\_S-algebras on the complex of 0FUA, with the multiplication of clause (1), and the inclusion as a homomorphism”.
 
 > **Stacks Project, Tag 0FUP, clause (2).** With the multiplication of clause (1), the de Rham
 > complex of log poles `Ω^•_{X/S}(log Y)` of Tag 0FUA is a sheaf of differential graded
@@ -200,7 +200,7 @@ theorem logPolesDifferentialGradedAlgebra_spec :
       HEq φ.toHomologicalComplex (deRhamComplexLogPolesIntInclusion f I hI hlog)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logExteriorDesc_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L133). The attribute's comment: “clause (3): the map from the p-th exterior power of Ω¹(log Y) induced by the wedge product of clause (1) is an isomorphism onto Ω^p(log Y), for every p”.
+**`AlgebraicGeometry.Scheme.Hom.logExteriorDesc_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 133](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L133). The attribute's comment: “clause (3): the map from the p-th exterior power of Ω¹(log Y) induced by the wedge product of clause (1) is an isomorphism onto Ω^p(log Y), for every p”.
 
 > **Stacks Project, Tag 0FUP, clause (3).** Via the maps of clause (1),
 > `Ω^p_{X/S}(log Y) = ⋀^p(Ω^1_{X/S}(log Y))`. The forms with logarithmic poles form a sheaf of graded
@@ -221,7 +221,7 @@ theorem logExteriorDesc_spec :
     ∀ p : ℕ, IsIso ((logExteriorDesc f I hI hlog).app (p : ℤ))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logRes_logFormsWedge_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L151). The attribute's comment: “clause (4), in every degree of ω: the formula in degree p + 1, and the vanishing of Res(ω ∧ η) for ω of degree 0, where Res(ω) = 0”.
+**`AlgebraicGeometry.Scheme.Hom.logRes_logFormsWedge_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L151). The attribute's comment: “clause (4), in every degree of ω: the formula in degree p + 1, and the vanishing of Res(ω ∧ η) for ω of degree 0, where Res(ω) = 0”.
 
 > **Stacks Project, Tag 0FUP, clause (4).** The residue
 > `Res : Ω^•_{X/S}(log Y) → Ω^•_{Y/S}[-1]` satisfies `Res(ω ∧ η) = Res(ω) ∧ η|_Y` for a local
@@ -243,7 +243,7 @@ theorem logRes_logFormsWedge_spec :
           (logFormsWedge hI hlog ω ((logPolesFormsInclusion f I (q + 1)).val.app (op W) η))) = 0)
 ```
 
-**`Stacks.LogPoles.logWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L400). The attribute's comment: “clause (1), existence: the O\_X-bilinear extension of the wedge product to the log poles complex of 0FMW, at the ring level for a principal divisor (t); the Leibniz rule for this product is not proved”.
+**`Stacks.LogPoles.logWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 400](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L400). The attribute's comment: “clause (1), existence: the O\_X-bilinear extension of the wedge product to the log poles complex of 0FMW, at the ring level for a principal divisor (t); the Leibniz rule for this product is not proved”.
 
 > **The product on the de Rham complex of log poles**, `Ω^p(log Y) × Ω^q(log Y) → Ω^\{p+q}(log
 > Y)`, as an `𝒪\_X`-bilinear map.  On the pair model it is
@@ -257,7 +257,7 @@ def logWedge (A : Type u) [CommRing A] [Algebra A R]
       (logFormsR A t p →ₗ[R] logFormsR A t q →ₗ[R] logFormsR A t (p + q))
 ```
 
-**`Stacks.LogPoles.logWedge_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L450). The attribute's comment: “clause (1), existence: the constructed product restricts to the wedge product on the forms with no pole, which is the defining property of the extension”.
+**`Stacks.LogPoles.logWedge_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 450](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L450). The attribute's comment: “clause (1), existence: the constructed product restricts to the wedge product on the forms with no pole, which is the defining property of the extension”.
 
 > **The product extends the wedge product of the forms with no pole.**  This is the defining
 > property of the extension in clause (1) of Stacks Tag 0FUP: a form with no pole is the pair
@@ -271,7 +271,7 @@ theorem logWedge_logInclR
       logInclR t (p + q) (exteriorPower.wedgeMul p q ω η)
 ```
 
-**`Stacks.LogPoles.eq_logWedge_of_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L496). The attribute's comment: “clause (1): the product built here is THE O\_X-bilinear extension, discharging the hypothesis of the uniqueness statement; the Leibniz rule is not proved”.
+**`Stacks.LogPoles.eq_logWedge_of_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 496](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L496). The attribute's comment: “clause (1): the product built here is THE O\_X-bilinear extension, discharging the hypothesis of the uniqueness statement; the Leibniz rule is not proved”.
 
 > **The product of clause (1) is the unique `𝒪_X`-bilinear extension.**  Any `𝒪_X`-bilinear
 > product on the de Rham complex of log poles that restricts to the wedge product on the forms with
@@ -289,7 +289,7 @@ theorem eq_logWedge_of_logInclR
     w = logWedge A ht
 ```
 
-**`Stacks.LogPoles.logWedge_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean#L180). The attribute's comment: “clause (1), the uniqueness half, strengthened by dropping the Leibniz hypothesis: an O\_X-bilinear extension of the wedge to the log poles complex of 0FMW is unique. Existence, and clauses (2), (3), (4), are not proved here”.
+**`Stacks.LogPoles.logWedge_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean#L180). The attribute's comment: “clause (1), the uniqueness half, strengthened by dropping the Leibniz hypothesis: an O\_X-bilinear extension of the wedge to the log poles complex of 0FMW is unique. Existence, and clauses (2), (3), (4), are not proved here”.
 
 > If `t` is a nonzerodivisor on the forms, two `𝒪_X`-bilinear products on the de Rham complex
 > of log poles that both restrict to the wedge product on the forms with no pole are equal.
@@ -312,7 +312,7 @@ theorem logWedge_unique {t : R}
 
 [Tag 0FUQ](https://stacks.math.columbia.edu/tag/0FUQ) in the Stacks Project.
 
-**`Stacks.LineBundle.idealChernMorphism_eq_comp_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L94). The attribute's comment: “the upper left triangle: the map of 0FU7 for c\_1^dR(O\_X(-Y)) is the boundary map delta of the shifted sequence of 0FMW composed with the restriction of forms”.
+**`Stacks.LineBundle.idealChernMorphism_eq_comp_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 94](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L94). The attribute's comment: “the upper left triangle: the map of 0FU7 for c\_1^dR(O\_X(-Y)) is the boundary map delta of the shifted sequence of 0FMW composed with the restriction of forms”.
 
 > The upper left triangle `ξ' = δ ∘ res`: the map `idealChernMorphism` is the restriction of
 > forms followed by the boundary map of the shifted log poles sequence.
@@ -324,7 +324,7 @@ theorem idealChernMorphism_eq_comp_boundary :
         (Scheme.Hom.logPolesShiftedSequence f hI hlog).boundary
 ```
 
-**`Stacks.LineBundle.logPolesBoundary_comp_restriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L107). The attribute's comment: “the lower right triangle: the boundary map delta followed by the restriction of forms in degree two is the map of 0FU7 on Y for c\_1^dR(O\_X(-Y)|\_Y), read on X through the exact direct image along the closed immersion”.
+**`Stacks.LineBundle.logPolesBoundary_comp_restriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L107). The attribute's comment: “the lower right triangle: the boundary map delta followed by the restriction of forms in degree two is the map of 0FU7 on Y for c\_1^dR(O\_X(-Y)|\_Y), read on X through the exact direct image along the closed immersion”.
 
 > The lower right triangle: `res[2] ∘ δ = ζ'`, with `ζ'` read on `X` through the exact direct
 > image along `i : Y ⟶ X` and `Ω^•_{Y/S}` identified with its direct image by
@@ -339,7 +339,7 @@ theorem logPolesBoundary_comp_restriction_eq :
         divisorPushforwardDerivedMap f I (divisorChernMorphism f I)
 ```
 
-**`Stacks.LineBundle.idealChernMorphism_comp_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L124). The attribute's comment: “the square of the diagram, deduced from the two triangles: the restriction of forms in degree two after the map of 0FU7 for c\_1^dR(O\_X(-Y)) equals the map of 0FU7 on Y for c\_1^dR(O\_X(-Y)|\_Y) after the restriction of forms, with the latter read on X through the exact direct image along the closed immersion”.
+**`Stacks.LineBundle.idealChernMorphism_comp_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 124](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L124). The attribute's comment: “the square of the diagram, deduced from the two triangles: the restriction of forms in degree two after the map of 0FU7 for c\_1^dR(O\_X(-Y)) equals the map of 0FU7 on Y for c\_1^dR(O\_X(-Y)|\_Y) after the restriction of forms, with the latter read on X through the exact direct image along the closed immersion”.
 
 > The square: `res[2] ∘ ξ' = ζ' ∘ res`.
 
@@ -356,7 +356,7 @@ theorem idealChernMorphism_comp_restriction :
 
 [Tag 0FMX](https://stacks.math.columbia.edu/tag/0FMX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyCup_firstChernClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/CupFirstChernClassVanishing.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/CupFirstChernClassVanishing.lean#L173). The attribute's comment: “b|\_Y is the pullback along the closed immersion Y ⟶ X; 𝒪\_X(Y) is the dual of ℐ\_Y”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamCohomologyCup_firstChernClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/CupFirstChernClassVanishing.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/CupFirstChernClassVanishing.lean#L173). The attribute's comment: “b|\_Y is the pullback along the closed immersion Y ⟶ X; 𝒪\_X(Y) is the dual of ℐ\_Y”.
 
 > **Stacks Project, Tag 0FMX.** Let `p : X ⟶ S` be a morphism of schemes and let `Y ⊆ X` be an
 > effective Cartier divisor for which the de Rham complex of log poles is defined over `S`. If a
@@ -387,7 +387,7 @@ theorem deRhamCohomologyCup_firstChernClass_eq_zero (hlog : p.HasLogPolesDeRhamC
 
 [Tag 0FMY](https://stacks.math.columbia.edu/tag/0FMY) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.hasLogPolesDeRhamComplex_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/SmoothDivisor.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/SmoothDivisor.lean#L132).
+**`AlgebraicGeometry.Scheme.Hom.hasLogPolesDeRhamComplex_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/SmoothDivisor.lean, line 132](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/SmoothDivisor.lean#L132).
 
 > **Stacks Project, Tag 0FMY.** Let `X ⟶ T ⟶ S` be morphisms of schemes and let `Y ⊆ X` be an
 > effective Cartier divisor, recorded by its ideal sheaf `I`.  If both `X ⟶ T` and `Y ⟶ T` are
@@ -407,4 +407,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 50.15, Tag 0FMU](https://stacks.math.columbia.edu/tag/0FMU)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

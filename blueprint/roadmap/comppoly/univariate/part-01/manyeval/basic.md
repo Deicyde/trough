@@ -7,12 +7,12 @@ proof: formalized
 
 # Many-Polynomial Evaluation
 
-`CompPoly.Univariate.ManyEval.Basic`, in [CompPoly/Univariate/ManyEval/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean), by Valerii Huhnin.
+`CompPoly.Univariate.ManyEval.Basic`, in [CompPoly/Univariate/ManyEval/Basic.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean), by Valerii Huhnin.
 
 > Executable evaluators for the workload with many dense univariate polynomials
 > and one shared evaluation point.
 
-`CompPoly.CPolynomial.ManyEval.maxCoeffSize` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L26))
+`CompPoly.CPolynomial.ManyEval.maxCoeffSize` (definition, [line 26](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L26))
 
 > Maximum stored coefficient-array size across a polynomial batch.
 
@@ -20,7 +20,7 @@ proof: formalized
 def maxCoeffSize [Zero R] (polys : Array (CPolynomial R)) : Nat
 ```
 
-`CompPoly.CPolynomial.ManyEval.powerTableLoop` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L31))
+`CompPoly.CPolynomial.ManyEval.powerTableLoop` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L31))
 
 > Build powers `1, x, ..., x^(limit-1)` by recurrence.
 
@@ -29,7 +29,7 @@ def powerTableLoop [Mul R] (x : R) (limit i : Nat) (pow : R)
     (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.ManyEval.powerTable` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L42))
+`CompPoly.CPolynomial.ManyEval.powerTable` (definition, [line 42](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L42))
 
 > Build the first `limit` powers of `x`.
 
@@ -37,7 +37,7 @@ def powerTableLoop [Mul R] (x : R) (limit i : Nat) (pow : R)
 def powerTable [One R] [Mul R] (x : R) (limit : Nat) : Array R
 ```
 
-`CompPoly.CPolynomial.ManyEval.evalWithPowersLoop` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L47))
+`CompPoly.CPolynomial.ManyEval.evalWithPowersLoop` (definition, [line 47](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L47))
 
 > Evaluate one coefficient array against a precomputed power table.
 
@@ -47,7 +47,7 @@ def evalWithPowersLoop [Add R] [Mul R] (coeffs powers : Array R)
     (i : Nat) (acc : R) : R
 ```
 
-`CompPoly.CPolynomial.ManyEval.evalWithPowers` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L61))
+`CompPoly.CPolynomial.ManyEval.evalWithPowers` (definition, [line 61](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L61))
 
 > Evaluate one coefficient array against a precomputed power table.
 
@@ -55,7 +55,7 @@ def evalWithPowersLoop [Add R] [Mul R] (coeffs powers : Array R)
 def evalWithPowers [Zero R] [Add R] [Mul R] (coeffs powers : Array R) : R
 ```
 
-`CompPoly.CPolynomial.evalManyHorner` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L69))
+`CompPoly.CPolynomial.evalManyHorner` (definition, [line 69](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L69))
 
 > Evaluate each polynomial at the shared point using independent Horner passes.
 
@@ -63,7 +63,7 @@ def evalWithPowers [Zero R] [Add R] [Mul R] (coeffs powers : Array R) : R
 def evalManyHorner [Semiring R] (polys : Array (CPolynomial R)) (x : R) : Array R
 ```
 
-`CompPoly.CPolynomial.ManyEval.evalManyWithPowersLoop` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L74))
+`CompPoly.CPolynomial.ManyEval.evalManyWithPowersLoop` (definition, [line 74](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L74))
 
 > Evaluate a polynomial batch against a precomputed power table.
 
@@ -72,7 +72,7 @@ def ManyEval.evalManyWithPowersLoop [Semiring R] (polys : Array (CPolynomial R))
     (powers : Array R) (i : Nat) (acc : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.evalManySharedPowers` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean#L92))
+`CompPoly.CPolynomial.evalManySharedPowers` (definition, [line 92](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean#L92))
 
 > Evaluate many polynomials at a shared point by reusing the powers of the point.
 >
@@ -90,5 +90,5 @@ def evalManySharedPowers [Semiring R] (polys : Array (CPolynomial R)) (x : R) :
 
 ## Sources
 
-- [CompPoly/Univariate/ManyEval/Basic.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/ManyEval/Basic.lean)
+- [CompPoly/Univariate/ManyEval/Basic.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/ManyEval/Basic.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.ManyEval.Basic.json)

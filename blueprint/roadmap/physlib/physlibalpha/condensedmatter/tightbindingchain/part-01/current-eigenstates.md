@@ -8,7 +8,7 @@ proof: formalized
 
 # The current eigenstates of the open tight binding chain
 
-The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Eigenstates`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean): 6 declarations, 6 with a docstring; 2 private, not shown.
+The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Eigenstates`, [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean): 6 declarations, 6 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Eigenstates`,
 
 ## A. The current eigenstates
 
-**`CondensedMatter.TightBindingChain.currentEigenstate`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L51).
+**`CondensedMatter.TightBindingChain.currentEigenstate`**, a def, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L51).
 
 > The current eigenstate `∑ n, iⁿ sin ((n + 1) k π / (N + 1)) |n⟩`.
 
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Eigenstates`,
 noncomputable def currentEigenstate (k : ℕ) : T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.currentEigenvalue`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L56).
+**`CondensedMatter.TightBindingChain.currentEigenvalue`**, a def, [line 56](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L56).
 
 > The current `2 a t cos (k π / (N + 1))` of the eigenstate with quantum number `k`.
 
@@ -44,7 +44,7 @@ noncomputable def currentEigenstate (k : ℕ) : T.HilbertSpace
 noncomputable def currentEigenvalue (k : ℕ) : ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.inner_currentEigenstate`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L60).
+**`CondensedMatter.TightBindingChain.inner_currentEigenstate`**, a lemma, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L60).
 
 > The amplitude of the current eigenstate on the site `m`.
 
@@ -57,7 +57,7 @@ lemma inner_currentEigenstate (k : ℕ) (m : Fin T.N) :
 
 ## B. The eigenvalue equation
 
-**`CondensedMatter.TightBindingChain.sum_ite_eq_of_unique`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L72).
+**`CondensedMatter.TightBindingChain.sum_ite_eq_of_unique`**, a lemma, [line 72](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L72).
 
 > A sum over the sites picking at most one site.
 
@@ -67,7 +67,7 @@ lemma sum_ite_eq_of_unique {N : ℕ} (P : Fin N → Prop) [DecidablePred P] (v :
     ∑ n, (if P n then v else 0) = v
 ```
 
-**`CondensedMatter.TightBindingChain.current_currentEigenstate`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L83).
+**`CondensedMatter.TightBindingChain.current_currentEigenstate`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L83).
 
 > The current eigenstates satisfy `J ψ_k = 2 a t cos (k π / (N + 1)) ψ_k`.
 
@@ -79,7 +79,7 @@ lemma current_currentEigenstate (k : ℕ) :
 
 ## C. The norm
 
-**`CondensedMatter.TightBindingChain.norm_sq_currentEigenstate`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L169).
+**`CondensedMatter.TightBindingChain.norm_sq_currentEigenstate`**, a lemma, [line 169](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean#L169).
 
 > The current eigenstates have squared norm `(N + 1) / 2` for `1 ≤ k ≤ N`.
 
@@ -94,4 +94,4 @@ lemma norm_sq_currentEigenstate {k : ℕ} (hk : 1 ≤ k) (hkN : k ≤ T.N) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean)
+- [PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean)

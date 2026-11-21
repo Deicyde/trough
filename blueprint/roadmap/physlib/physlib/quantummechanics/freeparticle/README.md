@@ -1,5 +1,5 @@
 # FreeParticle
 
-The folder [Physlib/QuantumMechanics/FreeParticle/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/FreeParticle): 1 module, with an article.
+The folder [Physlib/QuantumMechanics/FreeParticle/](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/FreeParticle): 1 module, with an article.
 
 - [The free particle on `Space d`](basic.md)

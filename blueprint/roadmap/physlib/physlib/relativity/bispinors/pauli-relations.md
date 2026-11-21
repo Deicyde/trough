@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib.Relativity.Bispinors.Pauli.Relations
 
-The module `Physlib.Relativity.Bispinors.Pauli.Relations`, [Physlib/Relativity/Bispinors/Pauli/Relations.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean): 10 declarations, 6 with a docstring.
+The module `Physlib.Relativity.Bispinors.Pauli.Relations`, [Physlib/Relativity/Bispinors/Pauli/Relations.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean): 10 declarations, 6 with a docstring.
 
 ## Contraction of indices of Pauli matrix.
 
@@ -24,7 +24,7 @@ The module `Physlib.Relativity.Bispinors.Pauli.Relations`, [Physlib/Relativity/B
 >   field theory and supersymmetry*, arXiv:0812.1594, equations (2.54) and (2.55), in the
 >   conventions `g = diag(+1, -1, -1, -1)` and `ε⁰¹²³ = +1`. [ref: Dreiner:2008tw]
 
-**`PauliMatrix.pauliCo_contr_pauliContr`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L41).
+**`PauliMatrix.pauliCo_contr_pauliContr`**, a lemma, [line 41](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L41).
 
 > The statement that ` σᵥᵃᵇ σᵛᵃ'ᵇ' = 2 εᵃᵃ' εᵇᵇ'`.
 
@@ -33,19 +33,19 @@ lemma pauliCo_contr_pauliContr :
     {σ_^^ | ν α β ⊗ σ^^^ | ν α' β' = (2 : ℂ) •ₜ εL | α α' ⊗ εR | β β'}ᵀ
 ```
 
-**`PauliMatrix.pauliCoDown_trace_pauliCo`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L80).
+**`PauliMatrix.pauliCoDown_trace_pauliCo`**, a lemma, [line 80](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L80).
 
 ```lean
 lemma pauliCoDown_trace_pauliCo : {(σ___ | μ β α ⊗ σ_^^ | ν α β) = (2 •ₜ η' | μ ν)}ᵀ
 ```
 
-**`PauliMatrix.pauliCo_trace_pauliCoDown`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L95).
+**`PauliMatrix.pauliCo_trace_pauliCoDown`**, a lemma, [line 95](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L95).
 
 ```lean
 lemma pauliCo_trace_pauliCoDown: {σ_^^ | μ α β ⊗ σ___ | ν β α = 2 •ₜ η' | μ ν}ᵀ
 ```
 
-**`PauliMatrix.pauliContr_mul_pauliContrDown_add`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L110).
+**`PauliMatrix.pauliContr_mul_pauliContrDown_add`**, a lemma, [line 110](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L110).
 
 ```lean
 lemma pauliContr_mul_pauliContrDown_add :
@@ -53,7 +53,7 @@ lemma pauliContr_mul_pauliContrDown_add :
     2 •ₜ η | μ ν ⊗ δL | α α'}ᵀ
 ```
 
-**`PauliMatrix.auliContrDown_pauliContr_mul_add`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L125).
+**`PauliMatrix.auliContrDown_pauliContr_mul_add`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L125).
 
 ```lean
 lemma auliContrDown_pauliContr_mul_add :
@@ -63,7 +63,7 @@ lemma auliContrDown_pauliContr_mul_add :
 
 ## Triple products
 
-**`PauliMatrix.pauliContr_mul_dualWeyl_eq_ofGaussianInt`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L148).
+**`PauliMatrix.pauliContr_mul_dualWeyl_eq_ofGaussianInt`**, a lemma, [line 148](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L148).
 
 > Gaussian integer components of a contraction of `σ^^^` with a copy whose Weyl indices
 > are dualized.
@@ -75,7 +75,7 @@ lemma pauliContr_mul_dualWeyl_eq_ofGaussianInt :
         pauliContrDownComponent (b 2) x (b 3))
 ```
 
-**`PauliMatrix.dualWeyl_mul_pauliContr_eq_ofGaussianInt`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L158).
+**`PauliMatrix.dualWeyl_mul_pauliContr_eq_ofGaussianInt`**, a lemma, [line 158](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L158).
 
 > Gaussian integer components of the reverse contraction of a Weyl-dualized `σ^^^` with
 > `σ^^^`.
@@ -87,7 +87,7 @@ lemma dualWeyl_mul_pauliContr_eq_ofGaussianInt :
         pauliContrComponent (b 2) x (b 3))
 ```
 
-**`PauliMatrix.leviCivita_mul_pauliDual`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L168).
+**`PauliMatrix.leviCivita_mul_pauliDual`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L168).
 
 > Contracting `ε4ℂ` with a Lorentz-dualized `σ^^^` agrees with contracting it with
 > `pauliCo`.
@@ -98,7 +98,7 @@ lemma leviCivita_mul_pauliDual :
       ε4ℂ | μ ν ρ κ ⊗ σ_^^ | κ α β}ᵀ : Prop)
 ```
 
-**`PauliMatrix.pauliContr_mul_pauliContrDown_mul_pauliContr`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L186).
+**`PauliMatrix.pauliContr_mul_pauliContrDown_mul_pauliContr`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L186).
 
 > The three-Pauli identity
 > `σ^μ barσ^ν σ^ρ = g^{μν} σ^ρ - g^{μρ} σ^ν + g^{νρ} σ^μ + i ε^{μνρκ} σ_κ`,
@@ -113,7 +113,7 @@ lemma pauliContr_mul_pauliContrDown_mul_pauliContr : ({
     }ᵀ : Prop)
 ```
 
-**`PauliMatrix.pauliContrDown_mul_pauliContr_mul_pauliContrDown`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L217).
+**`PauliMatrix.pauliContrDown_mul_pauliContr_mul_pauliContrDown`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean#L217).
 
 > The conjugate three-Pauli identity
 > `barσ^μ σ^ν barσ^ρ = g^{μν} barσ^ρ - g^{μρ} barσ^ν + g^{νρ} barσ^μ - i ε^{μνρκ} barσ_κ`,
@@ -137,4 +137,4 @@ lemma pauliContrDown_mul_pauliContr_mul_pauliContrDown : ({
 
 ## Sources
 
-- [Physlib/Relativity/Bispinors/Pauli/Relations.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Bispinors/Pauli/Relations.lean)
+- [Physlib/Relativity/Bispinors/Pauli/Relations.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Bispinors/Pauli/Relations.lean)

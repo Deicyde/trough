@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.9 Immersions of algebraic stacks
 
-Section 100.9 of the Stacks Project, [Tag 04YK](https://stacks.math.columbia.edu/tag/04YK). 20 tags here are carried by 66 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 100.9 of the Stacks Project, [Tag 04YK](https://stacks.math.columbia.edu/tag/04YK). 20 tags here are carried by 66 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 04YL, a definition
 
 [Tag 04YL](https://stacks.math.columbia.edu/tag/04YL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsOpenImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L209). The attribute's comment: “part (1): open immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsOpenImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L209). The attribute's comment: “part (1): open immersions”.
 
 > **Stacks 04YL**, part (1). A 1-morphism of algebraic stacks over `S` is an *open immersion*
 > when it is representable by algebraic spaces and is an open immersion in the sense of Stacks
@@ -24,7 +24,7 @@ Section 100.9 of the Stacks Project, [Tag 04YK](https://stacks.math.columbia.edu
 abbrev IsOpenImmersion (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L216). The attribute's comment: “part (2): closed immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsClosedImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 216](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L216). The attribute's comment: “part (2): closed immersions”.
 
 > **Stacks 04YL**, part (2). A 1-morphism of algebraic stacks over `S` is a *closed immersion*
 > when it is representable by algebraic spaces and is a closed immersion in the sense of Stacks
@@ -34,7 +34,7 @@ abbrev IsOpenImmersion (f : 𝒳 ⟶ 𝒴) : Prop
 abbrev IsClosedImmersion (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L222). The attribute's comment: “part (3): immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsImmersion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 222](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L222). The attribute's comment: “part (3): immersions”.
 
 > **Stacks 04YL**, part (3). A 1-morphism of algebraic stacks over `S` is an *immersion* when
 > it is representable by algebraic spaces and is an immersion in the sense of Stacks 04XB.
@@ -47,7 +47,7 @@ abbrev IsImmersion (f : 𝒳 ⟶ 𝒴) : Prop
 
 [Tag 0501](https://stacks.math.columbia.edu/tag/0501) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L143). The attribute's comment: “immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_snd_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean, line 143](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionBaseChange.lean#L143). The attribute's comment: “immersions”.
 
 > Base change of an immersion of algebraic stacks. If `g : 𝒵 ⟶ 𝒴` is an immersion of
 > algebraic stacks over `S` and `P` is a 2-fibre product of the cospan `(g, f)` in the 2-category of
@@ -67,7 +67,7 @@ theorem isImmersion_snd_of_isTwoFibreProduct
     IsImmersion B S hS P.snd
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_baseChange_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean#L166). The attribute's comment: “closed immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_baseChange_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean, line 166](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean#L166). The attribute's comment: “closed immersions”.
 
 > **Stacks 0501 for closed immersions.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks
 > over `S` and let `g : 𝒵 ⟶ 𝒴` be a closed immersion of algebraic stacks. Then the projection
@@ -83,7 +83,7 @@ theorem isClosedImmersion_baseChange_snd
     IsClosedImmersion B S hS P.snd
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_baseChange_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean#L180). The attribute's comment: “open immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_baseChange_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionsStableUnderBaseChange.lean#L180). The attribute's comment: “open immersions”.
 
 > **Stacks 0501 for open immersions.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks
 > over `S` and let `g : 𝒵 ⟶ 𝒴` be an open immersion of algebraic stacks. Then the projection
@@ -103,7 +103,7 @@ theorem isOpenImmersion_baseChange_snd
 
 [Tag 0502](https://stacks.math.columbia.edu/tag/0502) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L285). The attribute's comment: “open immersions”. References: EGA I (4.2.5), “open immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 285](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L285). The attribute's comment: “open immersions”. References: EGA I (4.2.5), “open immersions”.
 
 > **Stacks 0502** for open immersions: a composite of open immersions of algebraic stacks
 > over `S` is an open immersion.
@@ -115,7 +115,7 @@ theorem isOpenImmersion_comp
     IsOpenImmersion B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L297). The attribute's comment: “closed immersions”. References: EGA I (4.2.5), “closed immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L297). The attribute's comment: “closed immersions”. References: EGA I (4.2.5), “closed immersions”.
 
 > **Stacks 0502** for closed immersions: a composite of closed immersions of algebraic
 > stacks over `S` is a closed immersion.
@@ -127,7 +127,7 @@ theorem isClosedImmersion_comp
     IsClosedImmersion B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L312). The attribute's comment: “immersions”. References: EGA I (4.2.5), “immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionAlgebraicStack.lean#L312). The attribute's comment: “immersions”. References: EGA I (4.2.5), “immersions”.
 
 > **Stacks 0502**: a composite of immersions of algebraic stacks over `S` is an
 > immersion.
@@ -143,7 +143,7 @@ theorem isImmersion_comp
 
 [Tag 0503](https://stacks.math.columbia.edu/tag/0503) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_iff_exists_isImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L297). The attribute's comment: “immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_iff_exists_isImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 297](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L297). The attribute's comment: “immersions”.
 
 > **Stacks 0503 for immersions.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over
 > `S`, let `W` be an algebraic space over `S` and let `g : W ⟶ 𝒴` be surjective, flat and locally
@@ -163,7 +163,7 @@ theorem isImmersion_iff_exists_isImmersion_representingMap :
         Space.IsImmersion B S hS (representingMap B S hS Q.pt 𝒲 V W eV eW Q.fst)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_iff_exists_isClosedImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L312). The attribute's comment: “closed immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedImmersion_iff_exists_isClosedImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 312](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L312). The attribute's comment: “closed immersions”.
 
 > **Stacks 0503 for closed immersions.** In the situation of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_iff_exists_isImmersion_representingMap`,
@@ -179,7 +179,7 @@ theorem isClosedImmersion_iff_exists_isClosedImmersion_representingMap :
         Space.IsClosedImmersion B S hS (representingMap B S hS Q.pt 𝒲 V W eV eW Q.fst)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_iff_exists_isOpenImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L327). The attribute's comment: “open immersions”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenImmersion_iff_exists_isOpenImmersion_representingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean, line 327](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionFppfCoverCriterion.lean#L327). The attribute's comment: “open immersions”.
 
 > **Stacks 0503 for open immersions.** In the situation of
 > `AlgebraicGeometry.Stack.AlgebraicStacks.isImmersion_iff_exists_isImmersion_representingMap`,
@@ -199,7 +199,7 @@ theorem isOpenImmersion_iff_exists_isOpenImmersion_representingMap :
 
 [Tag 0504](https://stacks.math.columbia.edu/tag/0504) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionMonomorphism.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionMonomorphism.lean#L64).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionMonomorphism.lean, line 64](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionMonomorphism.lean#L64).
 
 > An immersion of algebraic stacks over `S` is a monomorphism.
 
@@ -212,7 +212,7 @@ theorem isMonomorphism_of_isImmersion (f : 𝒳 ⟶ 𝒴) (hf : IsImmersion B S 
 
 [Tag 0H20](https://stacks.math.columbia.edu/tag/0H20) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEmbedding_pointsMap_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L281). The attribute's comment: “homeomorphism onto the image”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEmbedding_pointsMap_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 281](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L281). The attribute's comment: “homeomorphism onto the image”.
 
 > **Stacks 0H20, the homeomorphism onto the image.** An immersion of algebraic stacks over `S`
 > is a topological embedding on the spaces of points of Stacks 04XG and 04XL.
@@ -224,7 +224,7 @@ theorem isEmbedding_pointsMap_of_isImmersion (f : 𝒳 ⟶ 𝒴) (hf : IsImmersi
       (Stack.pointsMap B S hS 𝒳.val.val 𝒳.val.property 𝒴.val.property f.hom.hom)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyClosed_range_pointsMap_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L298). The attribute's comment: “locally closed image”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyClosed_range_pointsMap_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L298). The attribute's comment: “locally closed image”.
 
 > **Stacks 0H20, the locally closed image.** The image on points of an immersion of algebraic
 > stacks over `S` is a locally closed subset of the space of points of the target.
@@ -236,7 +236,7 @@ theorem isLocallyClosed_range_pointsMap_of_isImmersion (f : 𝒳 ⟶ 𝒴)
       (Set.range (Stack.pointsMap B S hS 𝒳.val.val 𝒳.val.property 𝒴.val.property f.hom.hom))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedMap_pointsMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L314). The attribute's comment: “closed immersions are closed on points”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedMap_pointsMap_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 314](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L314). The attribute's comment: “closed immersions are closed on points”.
 
 > **Stacks 0H20, closed immersions.** A closed immersion of algebraic stacks over `S` is a
 > closed map on the spaces of points of Stacks 04XG and 04XL.
@@ -248,7 +248,7 @@ theorem isClosedMap_pointsMap_of_isClosedImmersion (f : 𝒳 ⟶ 𝒴)
       (Stack.pointsMap B S hS 𝒳.val.val 𝒳.val.property 𝒴.val.property f.hom.hom)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenMap_pointsMap_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L335). The attribute's comment: “open immersions are open on points”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpenMap_pointsMap_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean, line 335](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionPointsAlgebraicStack.lean#L335). The attribute's comment: “open immersions are open on points”.
 
 > **Stacks 0H20, open immersions.** An open immersion of algebraic stacks over `S` is an open
 > map on the spaces of points of Stacks 04XG and 04XL.
@@ -264,7 +264,7 @@ theorem isOpenMap_pointsMap_of_isOpenImmersion (f : 𝒳 ⟶ 𝒴)
 
 [Tag 0505](https://stacks.math.columbia.edu/tag/0505) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isInvariantLocallyClosed_groupoidPresentation_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionQuotientStackPresentation.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionQuotientStackPresentation.lean#L493). The attribute's comment: “for i an immersion (representable by algebraic spaces with the 04XB immersion property, Stacks 04YL part (3)) out of a stack, a 1-morphism into the quotient stack of a smooth groupoid: the R-invariant locally closed Z, the presentation [Z/R\_Z] ≃ 𝒵 with its 2-commutative triangle over [U/R], and Z closed (resp. open) when i is a closed (resp. open) immersion”.
+**`AlgebraicGeometry.Stack.exists_isInvariantLocallyClosed_groupoidPresentation_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionQuotientStackPresentation.lean, line 493](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionQuotientStackPresentation.lean#L493). The attribute's comment: “for i an immersion (representable by algebraic spaces with the 04XB immersion property, Stacks 04YL part (3)) out of a stack, a 1-morphism into the quotient stack of a smooth groupoid: the R-invariant locally closed Z, the presentation [Z/R\_Z] ≃ 𝒵 with its 2-commutative triangle over [U/R], and Z closed (resp. open) when i is a closed (resp. open) immersion”.
 
 > **Stacks 0505.** Let `G = (U, R, s, t, c)` be a smooth groupoid in algebraic spaces over a
 > scheme `S` of a big fppf site, and let `i : 𝒵 ⟶ [U/R]` be an immersion — a 1-morphism
@@ -321,7 +321,7 @@ theorem exists_isInvariantLocallyClosed_groupoidPresentation_of_isImmersion
 
 [Tag 04YN](https://stacks.math.columbia.edu/tag/04YN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L238). The attribute's comment: “the immersion [Z/R\_Z] ⟶ [U/R] for an invariant locally closed subspace”.
+**`AlgebraicGeometry.Stack.isImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L238). The attribute's comment: “the immersion [Z/R\_Z] ⟶ [U/R] for an invariant locally closed subspace”.
 
 > **Stacks 04YN**, the immersion. For a smooth groupoid `G` in algebraic spaces and an invariant
 > locally closed subspace `Z` of its object space, the 1-morphism `[Z/R_Z] ⟶ [U/R]` of Stacks 044B
@@ -338,7 +338,7 @@ theorem isImmersion_quotientStackMap_of_invariantRestrictionBaseChange
         (quotientStackMapHom (G.restrict (subspaceInclusion G Z hZ.1.1)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isOpenImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L255). The attribute's comment: “the open immersion [Z/R\_Z] ⟶ [U/R] for an invariant open subspace”.
+**`AlgebraicGeometry.Stack.isOpenImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L255). The attribute's comment: “the open immersion [Z/R\_Z] ⟶ [U/R] for an invariant open subspace”.
 
 > **Stacks 04YN**, the open immersion. For a smooth groupoid `G` in algebraic spaces and an
 > invariant open subspace `Z` of its object space, the 1-morphism `[Z/R_Z] ⟶ [U/R]` of Stacks 044B
@@ -355,7 +355,7 @@ theorem isOpenImmersion_quotientStackMap_of_invariantRestrictionBaseChange
         (quotientStackMapHom (G.restrict (subspaceInclusion G Z hZ.1.1)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isClosedImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L273). The attribute's comment: “the closed immersion [Z/R\_Z] ⟶ [U/R] for an invariant closed subspace”.
+**`AlgebraicGeometry.Stack.isClosedImmersion_quotientStackMap_of_invariantRestrictionBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/InvariantSubspaceQuotientImmersion.lean#L273). The attribute's comment: “the closed immersion [Z/R\_Z] ⟶ [U/R] for an invariant closed subspace”.
 
 > **Stacks 04YN**, the closed immersion. For a smooth groupoid `G` in algebraic spaces and an
 > invariant closed subspace `Z` of its object space, the 1-morphism `[Z/R_Z] ⟶ [U/R]` of
@@ -376,7 +376,7 @@ theorem isClosedImmersion_quotientStackMap_of_invariantRestrictionBaseChange
 
 [Tag 04YM](https://stacks.math.columbia.edu/tag/04YM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.OpenSubstack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L107). The attribute's comment: “open\_substack”.
+**`AlgebraicGeometry.Stack.OpenSubstack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 107](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L107). The attribute's comment: “open\_substack”.
 
 > **Stacks 04YM**, part (1). An *open substack* of an algebraic stack `𝒳` over `S` is a
 > strictly full subcategory of `𝒳` which is an algebraic stack and whose canonical inclusion into
@@ -386,7 +386,7 @@ theorem isClosedImmersion_quotientStackMap_of_invariantRestrictionBaseChange
 structure OpenSubstack (𝒳 : AlgebraicStacks.{u, w} B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L120). The attribute's comment: “open\_substack”.
+**`AlgebraicGeometry.Stack.OpenSubstack.ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 120](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L120). The attribute's comment: “open\_substack”.
 
 > Two open substacks with the same objects are equal.
 
@@ -395,7 +395,7 @@ theorem OpenSubstack.ext {𝒳 : AlgebraicStacks.{u, w} B S hS} {U V : OpenSubst
     (h : U.property = V.property) : U = V
 ```
 
-**`AlgebraicGeometry.Stack.fullSubcategoryInclusion_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L144). The attribute's comment: “open\_substack”.
+**`AlgebraicGeometry.Stack.fullSubcategoryInclusion_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L144). The attribute's comment: “open\_substack”.
 
 > On objects, the canonical inclusion forgets the membership proof.
 
@@ -407,7 +407,7 @@ theorem fullSubcategoryInclusion_obj (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (fullSubcategoryInclusion 𝒳 P hP).hom.hom.toFunctor.obj X = X.obj
 ```
 
-**`AlgebraicGeometry.Stack.fullSubcategoryInclusion_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L153). The attribute's comment: “open\_substack”.
+**`AlgebraicGeometry.Stack.fullSubcategoryInclusion_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 153](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L153). The attribute's comment: “open\_substack”.
 
 > On morphisms, the canonical inclusion forgets the membership proof.
 
@@ -419,7 +419,7 @@ theorem fullSubcategoryInclusion_map (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (fullSubcategoryInclusion 𝒳 P hP).hom.hom.toFunctor.map f = f.hom
 ```
 
-**`AlgebraicGeometry.Stack.IsClosedSubstack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L165). The attribute's comment: “closed\_substack”.
+**`AlgebraicGeometry.Stack.IsClosedSubstack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 165](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L165). The attribute's comment: “closed\_substack”.
 
 > **Stacks 04YM**, part (2). A property of the objects of an algebraic stack `𝒳` over `S`
 > selects a *closed substack* when it is closed under isomorphism, its full subcategory is an
@@ -431,7 +431,7 @@ abbrev IsClosedSubstack (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (P : ObjectProperty 𝒳.val.val.obj) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsLocallyClosedSubstack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L176). The attribute's comment: “locally\_closed\_substack”.
+**`AlgebraicGeometry.Stack.IsLocallyClosedSubstack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean, line 176](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/Substack.lean#L176). The attribute's comment: “locally\_closed\_substack”.
 
 > **Stacks 04YM**, part (3). A property of the objects of an algebraic stack `𝒳` over `S`
 > selects a *locally closed substack* when it is closed under isomorphism, its full subcategory is
@@ -447,7 +447,7 @@ abbrev IsLocallyClosedSubstack (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 0506](https://stacks.math.columbia.edu/tag/0506) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyClosedSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L363). The attribute's comment: “the image is a locally closed substack”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyClosedSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L363). The attribute's comment: “the image is a locally closed substack”.
 
 > **Stacks 0506**, the image is a locally closed substack. The essential image of an immersion
 > of algebraic stacks over `S` cuts out a locally closed substack of its target.
@@ -462,7 +462,7 @@ theorem isLocallyClosedSubstack_essImage (i : 𝒵 ⟶ 𝒳) (hi : IsImmersion B
     IsLocallyClosedSubstack 𝒳 (CatFiberedInGroupoids.homFunctor i.hom).essImage
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isEquivalence_to_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L372). The attribute's comment: “the factorization through the image”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isEquivalence_to_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 372](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L372). The attribute's comment: “the factorization through the image”.
 
 > **Stacks 0506**, the factorization. An immersion of algebraic stacks over `S` factors as a
 > 1-morphism onto the full subcategory cut out by its essential image whose underlying functor is an
@@ -479,7 +479,7 @@ theorem exists_isEquivalence_to_essImage (i : 𝒵 ⟶ 𝒳) (hi : IsImmersion B
           (CatFiberedInGroupoids.homFunctor i.hom).essImage hP ≅ i)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.eq_essImage_of_isEquivalence_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L394). The attribute's comment: “uniqueness of the substack”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.eq_essImage_of_isEquivalence_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 394](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L394). The attribute's comment: “uniqueness of the substack”.
 
 > **Stacks 0506**, uniqueness. A strictly full subcategory of an algebraic stack which is an
 > algebraic stack and through which an immersion factors by a 1-morphism whose underlying functor is
@@ -499,7 +499,7 @@ theorem eq_essImage_of_isEquivalence_factorization (i : 𝒵 ⟶ 𝒳)
     P = (CatFiberedInGroupoids.homFunctor i.hom).essImage
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_locallyClosedSubstack_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L427).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.existsUnique_locallyClosedSubstack_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 427](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L427).
 
 > **Stacks 0506.** For an immersion `i : 𝒵 ⟶ 𝒳` of algebraic stacks over `S` there is a
 > *unique* locally closed substack of `𝒳` through which `i` factors as a 1-morphism whose underlying
@@ -518,7 +518,7 @@ theorem existsUnique_locallyClosedSubstack_of_isImmersion (i : 𝒵 ⟶ 𝒳)
             Nonempty (f ≫ fullSubcategoryInclusion 𝒳 P hP ≅ i)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L449). The attribute's comment: “the image of a closed immersion is a closed substack”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosedSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 449](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L449). The attribute's comment: “the image of a closed immersion is a closed substack”.
 
 > **Stacks 0506**, the closed case. The essential image of a closed immersion of algebraic
 > stacks over `S` cuts out a closed substack of its target.
@@ -532,7 +532,7 @@ theorem isClosedSubstack_essImage (i : 𝒵 ⟶ 𝒳) (hi : IsClosedImmersion B 
     IsClosedSubstack 𝒳 (CatFiberedInGroupoids.homFunctor i.hom).essImage
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_openSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L464). The attribute's comment: “the image of an open immersion is an open substack”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_openSubstack_essImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean, line 464](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/ImmersionSubstack.lean#L464). The attribute's comment: “the image of an open immersion is an open substack”.
 
 > **Stacks 0506**, the open case. The essential image of an open immersion of algebraic stacks
 > over `S` is the object property of an open substack of its target.
@@ -551,7 +551,7 @@ theorem exists_openSubstack_essImage (i : 𝒵 ⟶ 𝒳) (hi : IsOpenImmersion B
 
 [Tag 0507](https://stacks.math.columbia.edu/tag/0507) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.factorsThroughSubstack_iff_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackFactorizationPresentation.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubstackFactorizationPresentation.lean#L386). The attribute's comment: “factorization\_criterion”.
+**`AlgebraicGeometry.Stack.factorsThroughSubstack_iff_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackFactorizationPresentation.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubstackFactorizationPresentation.lean#L386). The attribute's comment: “factorization\_criterion”.
 
 > **Stacks 0507**, the factorization criterion. Let `𝒳` be an algebraic stack over `S`
 > presented by a smooth groupoid in algebraic spaces `G` through an equivalence `E` over the big
@@ -600,7 +600,7 @@ theorem factorsThroughSubstack_iff_presentation
       (∃ g : D ⥤ᵇ Z, Nonempty (g.comp z ≅ q))
 ```
 
-**`AlgebraicGeometry.Stack.exists_equiv_isInvariantLocallyClosed_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L505). The attribute's comment: “locally closed”.
+**`AlgebraicGeometry.Stack.exists_equiv_isInvariantLocallyClosed_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 505](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L505). The attribute's comment: “locally closed”.
 
 > **Stacks 0507**, locally closed substacks. Let `[U/R] ⟶ 𝒳` be a presentation of an algebraic
 > stack. There is a canonical bijection from the locally closed substacks `𝒵` of `𝒳` to the
@@ -659,7 +659,7 @@ theorem exists_equiv_isInvariantLocallyClosed_presentation :
               d.x.fiber.as ∈ (e P).1.obj (op d.x.base))
 ```
 
-**`AlgebraicGeometry.Stack.exists_equiv_isInvariantClosed_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L563). The attribute's comment: “closed”.
+**`AlgebraicGeometry.Stack.exists_equiv_isInvariantClosed_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 563](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L563). The attribute's comment: “closed”.
 
 > **Stacks 0507**, closed substacks. Let `[U/R] ⟶ 𝒳` be a presentation of an algebraic stack.
 > There is a canonical bijection from the closed substacks `𝒵` of `𝒳` to the `R`-invariant closed
@@ -717,7 +717,7 @@ theorem exists_equiv_isInvariantClosed_presentation :
               d.x.fiber.as ∈ (e P).1.obj (op d.x.base))
 ```
 
-**`AlgebraicGeometry.Stack.exists_equiv_isInvariantOpen_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L630). The attribute's comment: “open”.
+**`AlgebraicGeometry.Stack.exists_equiv_isInvariantOpen_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean, line 630](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/SubstackPresentationCorrespondence.lean#L630). The attribute's comment: “open”.
 
 > **Stacks 0507**, open substacks. Let `[U/R] ⟶ 𝒳` be a presentation of an algebraic stack.
 > There is a canonical bijection from the open substacks `𝒵` of `𝒳` to the `R`-invariant open
@@ -780,7 +780,7 @@ theorem exists_equiv_isInvariantOpen_presentation :
 
 [Tag 06FJ](https://stacks.math.columbia.edu/tag/06FJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.OpenSubstack.isOpen_pointSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L131). The attribute's comment: “the point set of an open substack is open, so the rule is defined”.
+**`AlgebraicGeometry.Stack.OpenSubstack.isOpen_pointSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L131). The attribute's comment: “the point set of an open substack is open, so the rule is defined”.
 
 > The rule of Stacks 06FJ is defined. The set of points of an algebraic stack lying in an
 > open substack is open: it is the range of the map on points of the inclusion, which is an open
@@ -791,7 +791,7 @@ theorem isOpen_pointSet (W : OpenSubstack 𝒳) :
     @IsOpen _ (pointTopology B S hS 𝒳.val) (W.pointSet B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.opens`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L142). The attribute's comment: “the rule”.
+**`AlgebraicGeometry.Stack.OpenSubstack.opens`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L142). The attribute's comment: “the rule”.
 
 > **The rule `𝒰 ↦ |𝒰|` of Stacks 06FJ**: the point set of an open substack of `𝒳`, as an open
 > subset of the topological space of points of `𝒳`.
@@ -802,7 +802,7 @@ noncomputable def opens (W : OpenSubstack 𝒳) :
     TopologicalSpace.Opens (AlgebraicStacks.points B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.pointSet_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L151). The attribute's comment: “inclusion-preservation for the point set of an open substack”.
+**`AlgebraicGeometry.Stack.OpenSubstack.pointSet_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 151](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L151). The attribute's comment: “inclusion-preservation for the point set of an open substack”.
 
 > The rule of Stacks 06FJ preserves inclusions. An open substack contained in another has a
 > smaller point set.
@@ -812,7 +812,7 @@ theorem pointSet_mono {U V : OpenSubstack 𝒳} (h : U.property ≤ V.property) 
     U.pointSet B S hS ⊆ V.pointSet B S hS
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.opens_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L161). The attribute's comment: “inclusion-preservation for the rule U goes to |U| as an open subset of the point space”.
+**`AlgebraicGeometry.Stack.OpenSubstack.opens_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 161](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L161). The attribute's comment: “inclusion-preservation for the rule U goes to |U| as an open subset of the point space”.
 
 > The rule of Stacks 06FJ preserves inclusions, for the rule `𝒰 ↦ |𝒰|` of
 > `AlgebraicGeometry.Stack.OpenSubstack.opens`.
@@ -823,7 +823,7 @@ theorem opens_mono {U V : OpenSubstack 𝒳} (h : U.property ≤ V.property) :
     opens B S hS U ≤ opens B S hS V
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.bijective_opens_and_opens_le_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L530).
+**`AlgebraicGeometry.Stack.OpenSubstack.bijective_opens_and_opens_le_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean, line 530](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPoints.lean#L530).
 
 > **Stacks 06FJ.** Let `𝒳` be an algebraic stack. The rule `𝒰 ↦ |𝒰|` defines an inclusion
 > preserving bijection between open substacks of `𝒳` and open subsets of `|𝒳|`: the rule
@@ -847,7 +847,7 @@ theorem bijective_opens_and_opens_le_iff :
 
 [Tag 05UP](https://stacks.math.columbia.edu/tag/05UP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_openSubstack_isOpenImmersion_smooth_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenImageSubstack.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenImageSubstack.lean#L389). The attribute's comment: “the algebraic stack, the open immersion into the given stack and the smooth surjection from the open subspace, all three together with the 2-commutativity of the resulting square. The stack is constructed as the open substack of Stacks 04YM whose point set is the image of the points of the open subspace, by Stacks 06FJ”.
+**`AlgebraicGeometry.Stack.exists_openSubstack_isOpenImmersion_smooth_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenImageSubstack.lean, line 389](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenImageSubstack.lean#L389). The attribute's comment: “the algebraic stack, the open immersion into the given stack and the smooth surjection from the open subspace, all three together with the 2-commutativity of the resulting square. The stack is constructed as the open substack of Stacks 04YM whose point set is the image of the points of the open subspace, by Stacks 06FJ”.
 
 > **Stacks 05UP.** Let `𝒳` be an algebraic stack over `S`, let `U` be an algebraic space over
 > `S` with a surjective smooth 1-morphism `f : U ⟶ 𝒳`, and let `i : V ⟶ U` be an open immersion of
@@ -880,7 +880,7 @@ theorem exists_openSubstack_isOpenImmersion_smooth_surjective
 
 [Tag 05UQ](https://stacks.math.columbia.edu/tag/05UQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.OpenSubstack.eq_of_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L130). The attribute's comment: “uniqueness of the union”.
+**`AlgebraicGeometry.Stack.OpenSubstack.eq_of_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 130](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L130). The attribute's comment: “uniqueness of the union”.
 
 > The union of a family of open substacks is unique: an open substack of `𝒳` which contains
 > every member of the family and is covered by the family is determined by the family. This is what
@@ -892,7 +892,7 @@ theorem eq_of_isUnion {𝒳 : AlgebraicStacks.{u, w} B S hS} {I : Type*} {𝒰 :
     W = W'
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.exists_openSubstack_of_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L177). The attribute's comment: “the members of the family are open substacks of the union”.
+**`AlgebraicGeometry.Stack.OpenSubstack.exists_openSubstack_of_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L177). The attribute's comment: “the members of the family are open substacks of the union”.
 
 > The members of a family of open substacks are open substacks of its union. If an open
 > substack `W` of `𝒳` is the union of a family `𝒰 : I → OpenSubstack 𝒳`, then each `𝒰 i` is an
@@ -907,7 +907,7 @@ theorem exists_openSubstack_of_isUnion {𝒳 : AlgebraicStacks.{u, w} B S hS} {I
         (𝒰 i).property x ↔ ∃ hx : W.property x, (V i).property ⟨x, hx⟩
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.exists_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L293).
+**`AlgebraicGeometry.Stack.OpenSubstack.exists_isUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean, line 293](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnion.lean#L293).
 
 > **Stacks 05UQ.** Let `𝒳` be an algebraic stack and `𝒳ᵢ ⊆ 𝒳`, `i ∈ I`, a collection of open
 > substacks. Then there is an open substack `⋃_{i ∈ I} 𝒳ᵢ ⊆ 𝒳` such that the `𝒳ᵢ` are open
@@ -931,7 +931,7 @@ theorem exists_isUnion {𝒳 : AlgebraicStacks.{u, w} B S hS} {I : Type*}
       ∀ W' : OpenSubstack 𝒳, IsUnion 𝒳 𝒰 W'.property → W' = W
 ```
 
-**`AlgebraicGeometry.Stack.OpenSubstack.isUnion_pointsWithin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnionPointsWithin.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnionPointsWithin.lean#L379). The attribute's comment: “the union of the family is the locus of the set of points lying in a member”.
+**`AlgebraicGeometry.Stack.OpenSubstack.isUnion_pointsWithin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnionPointsWithin.lean, line 379](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackUnionPointsWithin.lean#L379). The attribute's comment: “the union of the family is the locus of the set of points lying in a member”.
 
 > Let `Ω` be a set of points of `|𝒳|` consisting exactly of the classes of the field-valued
 > points of `𝒳` whose object lies in a member of the family. Then the locus
@@ -950,7 +950,7 @@ theorem OpenSubstack.isUnion_pointsWithin {𝒳 : AlgebraicStacks.{u, w} B S hS}
 
 [Tag 05UR](https://stacks.math.columbia.edu/tag/05UR) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_finset_pointSet_subset_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean#L142). The attribute's comment: “the conclusion read on points: finitely many members of the family contain the point set of the quasi-compact open substack”.
+**`AlgebraicGeometry.Stack.exists_finset_pointSet_subset_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean, line 142](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean#L142). The attribute's comment: “the conclusion read on points: finitely many members of the family contain the point set of the quasi-compact open substack”.
 
 > If a quasi-compact open substack `𝒳'` of an algebraic stack `𝒳` is covered by a family of
 > open substacks `𝒳ᵢ`, then finitely many of the `𝒳ᵢ` already cover the point set of `𝒳'`.
@@ -966,7 +966,7 @@ theorem exists_finset_pointSet_subset_of_isQuasiCompactStack
     ∃ J : Finset I, 𝒳'.pointSet B S hS ⊆ ⋃ i ∈ J, (𝒰 i).pointSet B S hS
 ```
 
-**`AlgebraicGeometry.Stack.exists_finset_le_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean#L167).
+**`AlgebraicGeometry.Stack.exists_finset_le_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean, line 167](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackFiniteSubcover.lean#L167).
 
 > Let `𝒳` be an algebraic stack and `𝒳' ⊆ 𝒳` a quasi-compact open substack. Let `𝒳ᵢ ⊆ 𝒳`,
 > `i ∈ I`, be open substacks such that `𝒳' ⊆ ⋃_{i ∈ I} 𝒳ᵢ`, the union being
@@ -983,7 +983,7 @@ theorem exists_finset_le_of_isQuasiCompactStack {𝒳 : AlgebraicStacks.{u, w} B
     ∃ J : Finset I, 𝒳' ≤ OpenSubstack.iUnion (fun i : J => 𝒰 i)
 ```
 
-**`AlgebraicGeometry.Stack.exists_finset_le_of_isQuasiCompactStack_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPointSetInjective.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPointSetInjective.lean#L71).
+**`AlgebraicGeometry.Stack.exists_finset_le_of_isQuasiCompactStack_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPointSetInjective.lean, line 71](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackPointSetInjective.lean#L71).
 
 > Let `𝒳'` be a quasi-compact open substack of an algebraic stack `𝒳` and let `𝒳ᵢ`, `i ∈ I`, be
 > open substacks of `𝒳` covering `𝒳'`. Then there is a finite `I' ⊆ I` such that `𝒳'` is contained
@@ -1005,7 +1005,7 @@ theorem exists_finset_le_of_isQuasiCompactStack_unconditional {𝒳 : AlgebraicS
 
 [Tag 05WE](https://stacks.math.columbia.edu/tag/05WE) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isOpenSubstackCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCover.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCover.lean#L227).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isOpenSubstackCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCover.lean, line 227](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCover.lean#L227).
 
 > **Stacks 05WE.** Let `𝒳` be an algebraic stack over `S` and let `𝒰 i`, `i ∈ I`, be open
 > substacks of `𝒳` which cover `𝒳` and are each representable by an algebraic space over `S`. Then
@@ -1029,7 +1029,7 @@ theorem isRepresentableByAlgebraicSpace_of_isOpenSubstackCover
 
 [Tag 05WF](https://stacks.math.columbia.edu/tag/05WF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_equivalenceOver_yoneda_of_isOpenSubstackCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCoverScheme.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCoverScheme.lean#L238).
+**`AlgebraicGeometry.Stack.exists_equivalenceOver_yoneda_of_isOpenSubstackCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCoverScheme.lean, line 238](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubstackCoverScheme.lean#L238).
 
 > **Stacks 05WF.** Let `𝒳` be an algebraic stack over `S` and let `𝒰 i`, `i ∈ I`, be open
 > substacks of `𝒳` which cover `𝒳` and are each a scheme, that is, equivalent over the site to the
@@ -1059,7 +1059,7 @@ theorem exists_equivalenceOver_yoneda_of_isOpenSubstackCover
 
 [Tag 06M3](https://stacks.math.columbia.edu/tag/06M3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isRelativePropertyLocus_and_isRelativePropertyLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyLocusOnSpaces.lean, line 1144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyLocusOnSpaces.lean#L1144). The attribute's comment: “assertions (A) and (B): the largest open substack on which f has P, and its base change along a 1-morphism with R as the largest open substack on which the base change of f has P, under the four hypotheses of the source on P, Q and R”.
+**`AlgebraicGeometry.Stack.exists_isRelativePropertyLocus_and_isRelativePropertyLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyLocusOnSpaces.lean, line 1144](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/RelativePropertyLocusOnSpaces.lean#L1144). The attribute's comment: “assertions (A) and (B): the largest open substack on which f has P, and its base change along a 1-morphism with R as the largest open substack on which the base change of f has P, under the four hypotheses of the source on P, Q and R”.
 
 > **Stacks 06M3.** Let `P`, `Q`, `R` be properties of morphisms of algebraic spaces over `S`
 > which are fppf local on the target and stable under arbitrary base change (hypothesis (1), the
@@ -1106,7 +1106,7 @@ theorem exists_isRelativePropertyLocus_and_isRelativePropertyLocus_baseChange
 
 [Tag 06M4](https://stacks.math.columbia.edu/tag/06M4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.localSourceLemmaHypotheses_flat_and_maximalFlatOpen_ne_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MaximalFlatOpenBaseChange.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MaximalFlatOpenBaseChange.lean#L191). The attribute's comment: “06M3 applies at P = flat, Q = empty, R = flat and locally of finite presentation (its hypotheses (1)-(4)); the largest flat open is the interior of the flat locus, and for some morphism of algebraic spaces it is not the flat locus”.
+**`AlgebraicGeometry.Stack.localSourceLemmaHypotheses_flat_and_maximalFlatOpen_ne_flatLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MaximalFlatOpenBaseChange.lean, line 191](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/MaximalFlatOpenBaseChange.lean#L191). The attribute's comment: “06M3 applies at P = flat, Q = empty, R = flat and locally of finite presentation (its hypotheses (1)-(4)); the largest flat open is the interior of the flat locus, and for some morphism of algebraic spaces it is not the flat locus”.
 
 > **Stacks 06M4.** Lemma 06M3 applies to `P =` flat, `Q =` empty and `R =` flat and locally
 > of finite presentation, but the largest open subspace on which a morphism of algebraic spaces
@@ -1162,7 +1162,7 @@ theorem localSourceLemmaHypotheses_flat_and_maximalFlatOpen_ne_flatLocus :
 
 [Tag 06M5](https://stacks.math.columbia.edu/tag/06M5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L205). The attribute's comment: “entry (2), locally quasi-finite: hypothesis (3) of 06M3”.
+**`AlgebraicGeometry.Space.exists_isGreatest_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 205](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L205). The attribute's comment: “entry (2), locally quasi-finite: hypothesis (3) of 06M3”.
 
 > **Stacks 06M5, entry (2), hypothesis (3) of Stacks 06M3.** For `𝒬 = ` locally of finite
 > type and `𝒫 = ` locally quasi-finite: every morphism `f : X ⟶ Y` of algebraic spaces over `S`
@@ -1181,7 +1181,7 @@ theorem exists_isGreatest_isLocallyQuasiFinite
         IsLocallyQuasiFinite B S hS (V.1.ι ≫ f)} W
 ```
 
-**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L225). The attribute's comment: “entry (2), locally quasi-finite: hypothesis (4) of 06M3”.
+**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 225](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L225). The attribute's comment: “entry (2), locally quasi-finite: hypothesis (4) of 06M3”.
 
 > **Stacks 06M5, entry (2), hypothesis (4) of Stacks 06M3.** In a cartesian square of
 > algebraic spaces over `S` whose right vertical arrow `f` is locally of finite type, any largest
@@ -1209,7 +1209,7 @@ theorem eq_preimage_of_isGreatest_isLocallyQuasiFinite
     W'.1 = W.1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L298). The attribute's comment: “entry (3), unramified: hypothesis (3) of 06M3”.
+**`AlgebraicGeometry.Space.exists_isGreatest_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 298](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L298). The attribute's comment: “entry (3), unramified: hypothesis (3) of 06M3”.
 
 > **Stacks 06M5, entry (3), hypothesis (3) of Stacks 06M3.** For `𝒫 = ` unramified: every
 > morphism `f : X ⟶ Y` of algebraic spaces over `S` has a largest open subspace of `X` on which it
@@ -1231,7 +1231,7 @@ theorem exists_isGreatest_isUnramified
         {x : points B S hS X | IsUnramifiedAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L319). The attribute's comment: “entry (3), unramified: hypothesis (4) of 06M3”.
+**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L319). The attribute's comment: “entry (3), unramified: hypothesis (4) of 06M3”.
 
 > **Stacks 06M5, entry (3), hypothesis (4) of Stacks 06M3.** In a cartesian square of
 > algebraic spaces over `S` whose right vertical arrow `f` is locally of finite type, any largest
@@ -1259,7 +1259,7 @@ theorem eq_preimage_of_isGreatest_isUnramified
     W'.1 = W.1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L371). The attribute's comment: “entry (4), flat: hypothesis (3) of 06M3”.
+**`AlgebraicGeometry.Space.exists_isGreatest_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 371](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L371). The attribute's comment: “entry (4), flat: hypothesis (3) of 06M3”.
 
 > **Stacks 06M5, entry (4), hypothesis (3) of Stacks 06M3.** For `𝒬 = ` locally of finite
 > presentation and `𝒫 = ` flat: every morphism `f : X ⟶ Y` of algebraic spaces over `S` which is
@@ -1284,7 +1284,7 @@ theorem exists_isGreatest_isFlat
         {x : points B S hS X | IsFlatAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L395). The attribute's comment: “entry (4), flat: hypothesis (4) of 06M3”.
+**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 395](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L395). The attribute's comment: “entry (4), flat: hypothesis (4) of 06M3”.
 
 > **Stacks 06M5, entry (4), hypothesis (4) of Stacks 06M3.** In a cartesian square of
 > algebraic spaces over `S` whose right vertical arrow `f` is locally of finite presentation and
@@ -1314,7 +1314,7 @@ theorem eq_preimage_of_isGreatest_isFlat
     W'.1 = W.1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L459). The attribute's comment: “entry (5), étale: hypothesis (3) of 06M3”.
+**`AlgebraicGeometry.Space.exists_isGreatest_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 459](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L459). The attribute's comment: “entry (5), étale: hypothesis (3) of 06M3”.
 
 > **Stacks 06M5, entry (5), hypothesis (3) of Stacks 06M3.** For `𝒬 = ` locally of finite
 > presentation and `𝒫 = ` étale: every morphism `f : X ⟶ Y` of algebraic spaces over `S` which is
@@ -1337,7 +1337,7 @@ theorem exists_isGreatest_isEtale
         {x : points B S hS X | IsUnramifiedAt B S hS f x ∧ IsFlatAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L483). The attribute's comment: “entry (5), étale: hypothesis (4) of 06M3”.
+**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean, line 483](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaFurtherInstances.lean#L483). The attribute's comment: “entry (5), étale: hypothesis (4) of 06M3”.
 
 > **Stacks 06M5, entry (5), hypothesis (4) of Stacks 06M3.** In a cartesian square of
 > algebraic spaces over `S` whose right vertical arrow `f` is locally of finite presentation and
@@ -1367,7 +1367,7 @@ theorem eq_preimage_of_isGreatest_isEtale
     W'.1 = W.1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.exists_isGreatest_hasRelativeDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L266). The attribute's comment: “entry (1), hypothesis (3) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d: the existence of a largest open subspace of the source on which the morphism has relative dimension ≤ d, from Stacks 06LR and Stacks 04NT”.
+**`AlgebraicGeometry.Space.exists_isGreatest_hasRelativeDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 266](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L266). The attribute's comment: “entry (1), hypothesis (3) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d: the existence of a largest open subspace of the source on which the morphism has relative dimension ≤ d, from Stacks 06LR and Stacks 04NT”.
 
 > **Stacks 06M5, first entry, hypothesis (3) of Stacks 06M3.** For `𝒬 = ` locally of finite
 > type and `𝒫 = ` relative dimension `≤ d` (**Stacks 06LR**): every morphism `f : X ⟶ Y` of
@@ -1389,7 +1389,7 @@ theorem exists_isGreatest_hasRelativeDimensionLE (d : ℕ)
         HasRelativeDimensionLE d B S hS (V.1.ι ≫ f)} W
 ```
 
-**`AlgebraicGeometry.Space.boundedRelativeDimensionPart_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L289). The attribute's comment: “entry (1), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d, for the canonical open subspace: the formation of the largest open subspace commutes with base change, for an arbitrary base change since the entry's ℛ is ∅, from Stacks 04NS”.
+**`AlgebraicGeometry.Space.boundedRelativeDimensionPart_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 289](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L289). The attribute's comment: “entry (1), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d, for the canonical open subspace: the formation of the largest open subspace commutes with base change, for an arbitrary base change since the entry's ℛ is ∅, from Stacks 04NS”.
 
 > **Stacks 06M5, first entry, hypothesis (4) of Stacks 06M3, for the canonical open
 > subspace.** In a cartesian square of algebraic spaces over `S` whose right vertical arrow `f`
@@ -1415,7 +1415,7 @@ theorem boundedRelativeDimensionPart_preimage_of_isPullback (d : ℕ)
         (boundedRelativeDimensionPart B S hS d hX hY f hf).1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_hasRelativeDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L336). The attribute's comment: “entry (1), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d, quantified over largest open subspaces as the lemma takes it, for an arbitrary base change since the entry's ℛ is ∅”.
+**`AlgebraicGeometry.Space.eq_preimage_of_isGreatest_hasRelativeDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean, line 336](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaInstances.lean#L336). The attribute's comment: “entry (1), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = relative dimension ≤ d, quantified over largest open subspaces as the lemma takes it, for an arbitrary base change since the entry's ℛ is ∅”.
 
 > **Stacks 06M5, first entry, hypothesis (4) of Stacks 06M3, in the form the lemma consumes.**
 > In a cartesian square of algebraic spaces over `S` whose right vertical arrow `f` is locally of
@@ -1444,7 +1444,7 @@ theorem eq_preimage_of_isGreatest_hasRelativeDimensionLE (d : ℕ)
     W'.1 = W.1.preimage g'
 ```
 
-**`AlgebraicGeometry.Space.unramifiedLocus_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaUnramified.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaUnramified.lean#L180). The attribute's comment: “entry (3), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = unramified, for the canonical open subspace: the formation of the largest open subspace commutes with base change, for an arbitrary base change since the entry's ℛ is ∅, from Stacks 05W2”. References: EGA IV (17.7.2), “more general”.
+**`AlgebraicGeometry.Space.unramifiedLocus_preimage_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaUnramified.lean, line 180](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/LocalSourceLemmaUnramified.lean#L180). The attribute's comment: “entry (3), hypothesis (4) of Stacks 06M3 at 𝒬 = locally of finite type and 𝒫 = unramified, for the canonical open subspace: the formation of the largest open subspace commutes with base change, for an arbitrary base change since the entry's ℛ is ∅, from Stacks 05W2”. References: EGA IV (17.7.2), “more general”.
 
 > **Stacks 06M5, third entry, hypothesis (4) of Stacks 06M3, for the canonical open
 > subspace.** In a cartesian square of algebraic spaces over `S` whose right vertical arrow `f`
@@ -1476,4 +1476,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.9, Tag 04YK](https://stacks.math.columbia.edu/tag/04YK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

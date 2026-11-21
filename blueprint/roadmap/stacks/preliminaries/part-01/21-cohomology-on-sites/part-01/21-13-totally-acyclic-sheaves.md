@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.13 Totally acyclic sheaves
 
-Section 21.13 of the Stacks Project, [Tag 079X](https://stacks.math.columbia.edu/tag/079X). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 21.13 of the Stacks Project, [Tag 079X](https://stacks.math.columbia.edu/tag/079X). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 079Y, a lemma
 
 [Tag 079Y](https://stacks.math.columbia.edu/tag/079Y) in the Stacks Project.
 
-**`Stacks.Cohomology.PresheafCoefficients.modulePresheafCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/PresheafCoefficients/Basic.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/PresheafCoefficients/Basic.lean#L376). References: SGA 4 V (3.5), “H^q isomorphisms”; SGA 4 V (2.3.6), “e)”; SGA 4 V (4.4).
+**`Stacks.Cohomology.PresheafCoefficients.modulePresheafCohomologyFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/PresheafCoefficients/Basic.lean, line 376](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/PresheafCoefficients/Basic.lean#L376). References: SGA 4 V (3.5), “H^q isomorphisms”; SGA 4 V (2.3.6), “e)”; SGA 4 V (4.4).
 
 > **Stacks Project, Tag 079Y.** Cohomology of a sheaf of modules over a presheaf of sets is
 > canonically and naturally isomorphic to the cohomology of its underlying sheaf of abelian
@@ -31,7 +31,7 @@ public def modulePresheafCohomologyFunctorIso
 
 [Tag 079Z](https://stacks.math.columbia.edu/tag/079Z) in the Stacks Project.
 
-**`Stacks.Cohomology.exists_firstQuadrant_cechNerveSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean#L326).
+**`Stacks.Cohomology.exists_firstQuadrant_cechNerveSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean, line 326](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean#L326).
 
 > **Stacks Project, Tag 079Z.** Let `𝒞` be a site and `K' → K` a map of presheaves of sets
 > whose sheafification is surjective (here: which is locally surjective, the same condition by
@@ -63,7 +63,7 @@ theorem exists_firstQuadrant_cechNerveSpectralSequence (hf : Presheaf.IsLocallyS
         (Abelian.zExt ((Presheaf.freeAbelianSheaf J).obj K) F n))
 ```
 
-**`Stacks.Cohomology.exists_firstQuadrant_cechNerveSpectralSequence_of_epi_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean#L352).
+**`Stacks.Cohomology.exists_firstQuadrant_cechNerveSpectralSequence_of_epi_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean, line 352](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/CechNerveSpectralSequence.lean#L352).
 
 > **Stacks Project, Tag 079Z**, with the hypothesis in the source's own words: if the
 > sheafification of `K' → K` is surjective, i.e. an epimorphism of sheaves of sets, then for every
@@ -89,7 +89,7 @@ theorem exists_firstQuadrant_cechNerveSpectralSequence_of_epi_sheafify [HasSheaf
 
 [Tag 07A0](https://stacks.math.columbia.edu/tag/07A0) in the Stacks Project.
 
-**`Stacks.Cohomology.SheafOfSets.cohomologyOnSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/CohomologyOverASheafOfSets.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/CohomologyOverASheafOfSets.lean#L268). The attribute's comment: “the cohomology comparison”.
+**`Stacks.Cohomology.SheafOfSets.cohomologyOnSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/CohomologyOverASheafOfSets.lean, line 268](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/CohomologyOverASheafOfSets.lean#L268). The attribute's comment: “the cohomology comparison”.
 
 > **Stacks 07A0, the cohomology comparison.** For a sheaf of sets `K` on a small site `(C, J)`,
 > cohomology over `K` — that is, `Ext` out of the free abelian sheaf on `K` — is the cohomology of
@@ -105,7 +105,7 @@ def cohomologyOnSheafIso (p : ℕ) :
       inverseImage J K ⋙ Sheaf.functorH (localizedTopology J K) p
 ```
 
-**`Stacks.Sites.LocalizationShriek.preservesInjectiveObjects_sheafLocalizationInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationShriekExact.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationShriekExact.lean#L345). The attribute's comment: “the inverse image preserves injectives”.
+**`Stacks.Sites.LocalizationShriek.preservesInjectiveObjects_sheafLocalizationInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/LocalizationShriekExact.lean, line 345](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Topos/LocalizationShriekExact.lean#L345). The attribute's comment: “the inverse image preserves injectives”.
 
 > **Stacks 07A0, first assertion.** For a *sheaf* of sets `K`, the projection `j` from the site
 > of elements of `K` is continuous for the restricted topology (Stacks 0791), so that restriction of
@@ -130,7 +130,7 @@ theorem preservesInjectiveObjects_sheafLocalizationInverseImage
 
 [Tag 072Y](https://stacks.math.columbia.edu/tag/072Y) in the Stacks Project.
 
-**`Stacks.Cohomology.IsTotallyAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSheaves.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSheaves.lean#L63). References: SGA 4 V (4.1), “flasque case”.
+**`Stacks.Cohomology.IsTotallyAcyclic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSheaves.lean, line 63](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicSheaves.lean#L63). References: SGA 4 V (4.1), “flasque case”.
 
 > An abelian sheaf is **totally acyclic** if its cohomology over every sheaf of sets
 > vanishes in every positive degree.
@@ -143,7 +143,7 @@ def IsTotallyAcyclic (F : Sheaf J AddCommGrpCat.{w}) : Prop
 
 [Tag 07A1](https://stacks.math.columbia.edu/tag/07A1) in the Stacks Project.
 
-**`Stacks.Cohomology.isTotallyAcyclic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicCriterion.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicCriterion.lean#L436).
+**`Stacks.Cohomology.isTotallyAcyclic_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicCriterion.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/CategoryTheory/Sites/Cohomology/Acyclicity/TotallyAcyclicCriterion.lean#L436).
 
 > Let `𝒞` be a site and `𝓕` an abelian sheaf on it. Then `𝓕` is
 > totally acyclic ([Stacks, Tag 072Y]) if and only if
@@ -164,4 +164,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.13, Tag 079X](https://stacks.math.columbia.edu/tag/079X)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

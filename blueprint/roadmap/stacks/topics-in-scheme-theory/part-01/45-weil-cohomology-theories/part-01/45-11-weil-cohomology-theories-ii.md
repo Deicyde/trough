@@ -8,13 +8,13 @@ proof: formalized
 
 # 45.11 Weil cohomology theories, II
 
-Section 45.11 of the Stacks Project, [Tag 0FHY](https://stacks.math.columbia.edu/tag/0FHY). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 45.11 of the Stacks Project, [Tag 0FHY](https://stacks.math.columbia.edu/tag/0FHY). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0FI0, a lemma
 
 [Tag 0FI0](https://stacks.math.columbia.edu/tag/0FI0) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.globalSections_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsCriterion.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsCriterion.lean#L418). The attribute's comment: “(1) ⇔ (2), the finite separability of H^0(X), and (1) ⇔ (3) for X equidimensional of dimension d, on the actual Weil data (D0)-(D3) satisfying (A), (B), (C) over the actual category of smooth projective k-schemes”.
+**`Stacks.WeilCohomology.WeilData.globalSections_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsCriterion.lean, line 418](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsCriterion.lean#L418). The attribute's comment: “(1) ⇔ (2), the finite separability of H^0(X), and (1) ⇔ (3) for X equidimensional of dimension d, on the actual Weil data (D0)-(D3) satisfying (A), (B), (C) over the actual category of smooth projective k-schemes”.
 
 > **Stacks Project, Tag 0FI0.** Assume given (D0), (D1), (D2) and (D3) satisfying (A), (B) and
 > (C). Let `X` be a smooth projective scheme over `k` and `k' = Γ(X, 𝒪_X)`. Then the following are
@@ -49,7 +49,7 @@ theorem globalSections_criterion [CharZero F] (hA : W.PoincareDuality) (hB : W.K
 
 [Tag 0FI1](https://stacks.math.columbia.edu/tag/0FI1) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.exists_not_globalSections_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsNegativeDegree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsNegativeDegree.lean#L128). The attribute's comment: “H^i(Y) ≠ 0 for some smooth projective Y and i < 0 gives a nonempty equidimensional smooth projective X for which conditions (1), (2), (3) of 0FI0 all fail, on the actual Weil data (D0)-(D3) satisfying (A), (B), (C) over the actual category of smooth projective k-schemes”.
+**`Stacks.WeilCohomology.WeilData.exists_not_globalSections_criterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsNegativeDegree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/GlobalSectionsNegativeDegree.lean#L128). The attribute's comment: “H^i(Y) ≠ 0 for some smooth projective Y and i < 0 gives a nonempty equidimensional smooth projective X for which conditions (1), (2), (3) of 0FI0 all fail, on the actual Weil data (D0)-(D3) satisfying (A), (B), (C) over the actual category of smooth projective k-schemes”.
 
 > **Stacks Project, Tag 0FI1.** Assume given (D0), (D1), (D2) and (D3) satisfying (A), (B) and
 > (C). If there exists a smooth projective scheme `Y` over `k` such that `H^i(Y)` is nonzero for
@@ -76,13 +76,13 @@ theorem exists_not_globalSections_criterion [CharZero F] (hA : W.PoincareDuality
 
 Declarations registered for the tag:
 
-- [`Stacks.WeilCohomology.WeilCohomologyTheory`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheory.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryTag.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryTag.lean#L37) (StacksFrontier): “Weil cohomology theory: data (D0)-(D3) on the smooth projective (01W8, not merely proper) k-schemes satisfying (A), (B), (C) of 0FHA and condition (2) of 0FI0 for every X, the equivalent condition (1) following by 0FI0. Generalized to any coefficient field F, with no [CharZero F]: with it, this is the source's notion. (B)(b) reads ∫\_X ⊗ ∫\_Y as zero off the top Künneth component H^\{2d}(X)(d) ⊗ H^\{2e}(Y)(e) of H^\{2(d+e)}(X × Y)(d + e), the trace maps being extended by zero outside their degree as in 'Ad (A6)'”.
+- [`Stacks.WeilCohomology.WeilCohomologyTheory`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheory.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryTag.lean, line 37](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilCohomologyTheoryTag.lean#L37) (StacksFrontier): “Weil cohomology theory: data (D0)-(D3) on the smooth projective (01W8, not merely proper) k-schemes satisfying (A), (B), (C) of 0FHA and condition (2) of 0FI0 for every X, the equivalent condition (1) following by 0FI0. Generalized to any coefficient field F, with no [CharZero F]: with it, this is the source's notion. (B)(b) reads ∫\_X ⊗ ∫\_Y as zero off the top Künneth component H^\{2d}(X)(d) ⊗ H^\{2e}(Y)(e) of H^\{2(d+e)}(X × Y)(d + e), the trace maps being extended by zero outside their degree as in 'Ad (A6)'”.
 
 ## Tag 0FI3, a remark
 
 [Tag 0FI3](https://stacks.math.columbia.edu/tag/0FI3) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilCohomologyTheory.factorwise_rank_one_of_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProductOfFieldsFactors.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProductOfFieldsFactors.lean#L429). The attribute's comment: “for H^* a Weil cohomology theory (0FI2), X geometrically irreducible smooth projective of dimension d over a finite separable k'/k, viewed over k, and H^0(Spec k') → ∏ F\_i bijective for fields F\_i: H^*(X) and each H^n(X) are ∏\_i of their base changes to the F\_i by x ↦ (1 ⊗ x)\_i; H^0(X) and H^\{2d}(X) are free of rank 1 over H^0(Spec k'), with each factor of dimension 1 over F\_i; M ⊗\_\{H^0(Spec k')} F\_i is written F\_i ⊗\_\{H^0(Spec k')} M; no CharZero F needed”.
+**`Stacks.WeilCohomology.WeilCohomologyTheory.factorwise_rank_one_of_geometricallyIrreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProductOfFieldsFactors.lean, line 429](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProductOfFieldsFactors.lean#L429). The attribute's comment: “for H^* a Weil cohomology theory (0FI2), X geometrically irreducible smooth projective of dimension d over a finite separable k'/k, viewed over k, and H^0(Spec k') → ∏ F\_i bijective for fields F\_i: H^*(X) and each H^n(X) are ∏\_i of their base changes to the F\_i by x ↦ (1 ⊗ x)\_i; H^0(X) and H^\{2d}(X) are free of rank 1 over H^0(Spec k'), with each factor of dimension 1 over F\_i; M ⊗\_\{H^0(Spec k')} F\_i is written F\_i ⊗\_\{H^0(Spec k')} M; no CharZero F needed”.
 
 > Let `H^*` be a Weil cohomology theory (Definition 0FI2). Let `X` be a geometrically
 > irreducible smooth projective scheme of dimension `d` over `k'`, with `k'/k` a finite separable
@@ -128,7 +128,7 @@ theorem factorwise_rank_one_of_geometricallyIrreducible (W : WeilCohomologyTheor
 
 [Tag 0GIJ](https://stacks.math.columbia.edu/tag/0GIJ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilRealization.exists_globalSections_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationGlobalSections.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationGlobalSections.lean#L331). The attribute's comment: “a Weil cohomology theory is the same thing as a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with G(1(1)) nonzero only in degree -2 and G(h(Spec k')) -> G(h(X)) an isomorphism in degree 0 for k' = Gamma(X, O\_X): a bijection of isomorphism classes, G corresponding to H^*(X) = G(h(X))”.
+**`Stacks.WeilCohomology.WeilRealization.exists_globalSections_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationGlobalSections.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationGlobalSections.lean#L331). The attribute's comment: “a Weil cohomology theory is the same thing as a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with G(1(1)) nonzero only in degree -2 and G(h(Spec k')) -> G(h(X)) an isomorphism in degree 0 for k' = Gamma(X, O\_X): a bijection of isomorphism classes, G corresponding to H^*(X) = G(h(X))”.
 
 > **Stacks Project, Tag 0GIJ.** Let `k` be a field and `F` a field of characteristic `0`. A Weil
 > cohomology theory (Definition 0FI2) is the same thing as a `ℚ`-linear symmetric monoidal functor
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 45.11, Tag 0FHY](https://stacks.math.columbia.edu/tag/0FHY)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

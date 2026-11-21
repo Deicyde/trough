@@ -8,7 +8,7 @@ proof: formalized
 
 # Junctions of thin wires
 
-The module `PhyslibAlpha.Electromagnetism.TemperedDistributional.WireJunction`, [PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean): 10 declarations, 9 with a docstring, 1 listed as significant.
+The module `PhyslibAlpha.Electromagnetism.TemperedDistributional.WireJunction`, [PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean): 10 declarations, 9 with a docstring, 1 listed as significant.
 
 ## i. Overview
 
@@ -45,7 +45,7 @@ The module `PhyslibAlpha.Electromagnetism.TemperedDistributional.WireJunction`, 
 
 ### A.1. Time derivatives and the divergence of distributions
 
-**`Space.distTimeDeriv_distSpaceDiv`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L73).
+**`Space.distTimeDeriv_distSpaceDiv`**, a lemma, [line 73](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L73).
 
 > The divergence and the time derivative of distributions commute.
 
@@ -58,7 +58,7 @@ lemma distTimeDeriv_distSpaceDiv {d} (f : (Time × Space d) →d[ℝ] EuclideanS
 
 > The ray from the origin in the direction `w` is parametrized by `s ↦ s • w`.
 
-**`Space.exists_schwartz_eq_comp_ray`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L90).
+**`Space.exists_schwartz_eq_comp_ray`**, a lemma, [line 90](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L90).
 
 > The restriction of a Schwartz function to a line through the origin is a Schwartz
 > function.
@@ -68,7 +68,7 @@ lemma exists_schwartz_eq_comp_ray {d} (χ : 𝓢(Space d, ℝ)) {w : Space d} (h
     ∃ g : 𝓢(ℝ, ℝ), ∀ s : ℝ, g s = χ (s • w)
 ```
 
-**`Space.integral_Ioi_fderiv_ray`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L100).
+**`Space.integral_Ioi_fderiv_ray`**, a lemma, [line 100](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L100).
 
 > The fundamental theorem of calculus along the ray in direction `w`.
 
@@ -77,7 +77,7 @@ lemma integral_Ioi_fderiv_ray {d} (ψ : 𝓢(Space d, ℝ)) {w : Space d} (hw : 
     ∫ s in Ioi (0 : ℝ), fderiv ℝ ψ (s • w) w = - ψ 0
 ```
 
-**`Space.integral_Ioi_fderiv_ray_basis`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L115).
+**`Space.integral_Ioi_fderiv_ray_basis`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L115).
 
 ```lean
 lemma integral_Ioi_fderiv_ray_basis {d} (ψ : 𝓢(Space d, ℝ)) {u : EuclideanSpace ℝ (Fin d)}
@@ -87,7 +87,7 @@ lemma integral_Ioi_fderiv_ray_basis {d} (ψ : 𝓢(Space d, ℝ)) {u : Euclidean
 
 ### A.3. Integrating test functions over time
 
-**`Space.timeIntegralSchwartz_fderiv_space`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L139).
+**`Space.timeIntegralSchwartz_fderiv_space`**, a lemma, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L139).
 
 > Integrating over time commutes with differentiating in space.
 
@@ -98,7 +98,7 @@ lemma timeIntegralSchwartz_fderiv_space {d} (η : 𝓢(Time × Space d, ℝ)) (i
       (fderivCLM ℝ (Time × Space d) ℝ η)) x = fderiv ℝ (timeIntegralSchwartz η) x (basis i)
 ```
 
-**`Space.exists_integral_time_ne_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L149).
+**`Space.exists_integral_time_ne_zero`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L149).
 
 > Some test function has a non-zero time integral at the origin.
 
@@ -109,7 +109,7 @@ lemma exists_integral_time_ne_zero {d} :
 
 ## B. The continuity equation
 
-**`Electromagnetism.TempDistElectromagneticPotential.continuityEquation`**, a theorem, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L176). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
+**`Electromagnetism.TempDistElectromagneticPotential.continuityEquation`**, a theorem, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L176). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/scripts/lint/exemptions/Theorems.txt).
 
 > The continuity equation for distributions: Maxwell's equations imply local conservation of
 > charge.
@@ -129,7 +129,7 @@ theorem continuityEquation {d} {𝓕 : FreeSpace} (A : TempDistElectromagneticPo
 > `I k • u k` times the Lebesgue measure, whatever the length of `u k`. The currents are steady, so
 > the pairing with a test function `η` only sees its time integral.
 
-**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L232).
+**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction`**, a def, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L232).
 
 > The current density of `J` is that of steady currents `I k` flowing away from the origin
 > along thin, straight, semi-infinite wires in the directions `u k`.
@@ -139,7 +139,7 @@ def IsWireJunction {d} (c : SpeedOfLight) (J : TempDistLorentzCurrentDensity d) 
     [Fintype ι] (u : ι → EuclideanSpace ℝ (Fin d)) (I : ι → ℝ) : Prop
 ```
 
-**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.distSpaceDiv_currentDensity`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L239).
+**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.distSpaceDiv_currentDensity`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L239).
 
 > The wires of a junction meet at the origin, where they act as a source of strength the
 > total current leaving along them.
@@ -153,7 +153,7 @@ lemma IsWireJunction.distSpaceDiv_currentDensity {d} {c : SpeedOfLight}
 
 ### C.2. The currents at a junction sum to zero
 
-**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.sum_currents_eq_zero`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L263).
+**`Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.sum_currents_eq_zero`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean#L263).
 
 > If Maxwell's equations hold and no charge accumulates, the steady currents leaving a junction
 > of thin wires sum to zero. This is motivated by Kirchhoff's current law, of which it is the
@@ -174,4 +174,4 @@ lemma IsWireJunction.sum_currents_eq_zero {d} {𝓕 : FreeSpace} {J : TempDistLo
 
 ## Sources
 
-- [PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean)
+- [PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean)

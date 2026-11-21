@@ -8,7 +8,7 @@ proof: formalized
 
 # The tight binding chain
 
-The module `Physlib.CondensedMatter.TightBindingChain.Basic`, [Physlib/CondensedMatter/TightBindingChain/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean): 34 declarations (1 instance with no name), 28 with a docstring.
+The module `Physlib.CondensedMatter.TightBindingChain.Basic`, [Physlib/CondensedMatter/TightBindingChain/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean): 34 declarations (1 instance with no name), 28 with a docstring.
 
 ## i. Overview
 
@@ -44,7 +44,7 @@ The module `Physlib.CondensedMatter.TightBindingChain.Basic`, [Physlib/Condensed
 
 ### A.1. The input data for the tight binding chain
 
-**`CondensedMatter.TightBindingChain`**, a structure, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L92).
+**`CondensedMatter.TightBindingChain`**, a structure, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L92).
 
 > The physical parameters making up the tight binding chain.
 
@@ -62,7 +62,7 @@ structure TightBindingChain where
   t : ℝ
 ```
 
-**An instance with no name**, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L108).
+**An instance with no name**, [line 108](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L108).
 
 ```lean
 instance : NeZero T.N
@@ -70,7 +70,7 @@ instance : NeZero T.N
 
 ### A.2. The Hilbert space
 
-**`CondensedMatter.TightBindingChain.HilbertSpace`**, an abbrev, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L118).
+**`CondensedMatter.TightBindingChain.HilbertSpace`**, an abbrev, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L118).
 
 > The Hilbert space of a `TightBindingchain` is the `N`-dimensional finite dimensional
 > Hilbert space.
@@ -79,7 +79,7 @@ instance : NeZero T.N
 abbrev HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.finrank_hilbertSpace`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L121).
+**`CondensedMatter.TightBindingChain.finrank_hilbertSpace`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L121).
 
 > The Hilbert space of the chain has dimension `N`.
 
@@ -93,7 +93,7 @@ lemma finrank_hilbertSpace : Module.finrank ℂ T.HilbertSpace = T.N
 
 ### B.1. The orthonormal basis of localized states
 
-**`CondensedMatter.TightBindingChain.localizedState`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L140).
+**`CondensedMatter.TightBindingChain.localizedState`**, a def, [line 140](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L140).
 
 > The eigenstate corresponding to the particle been located on the `n`th site.
 
@@ -106,7 +106,7 @@ noncomputable def localizedState {T : TightBindingChain} :
 
 ### B.3. Orthonormality of the localized states
 
-**`CondensedMatter.TightBindingChain.localizedState_orthonormal`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L163).
+**`CondensedMatter.TightBindingChain.localizedState_orthonormal`**, a lemma, [line 163](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L163).
 
 > The localized states are normalized.
 
@@ -114,7 +114,7 @@ noncomputable def localizedState {T : TightBindingChain} :
 lemma localizedState_orthonormal : Orthonormal ℂ (localizedState (T := T))
 ```
 
-**`CondensedMatter.TightBindingChain.localizedState_orthonormal_eq_ite`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L166).
+**`CondensedMatter.TightBindingChain.localizedState_orthonormal_eq_ite`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L166).
 
 ```lean
 lemma localizedState_orthonormal_eq_ite (m n : Fin T.N) :
@@ -125,7 +125,7 @@ lemma localizedState_orthonormal_eq_ite (m n : Fin T.N) :
 
 ### C.1. Definition of the operator `|m⟩⟨n|`
 
-**`CondensedMatter.TightBindingChain.localizedComp`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L182).
+**`CondensedMatter.TightBindingChain.localizedComp`**, a def, [line 182](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L182).
 
 > The linear map `|m⟩⟨n|` for `⟨n|` localized states.
 
@@ -138,13 +138,13 @@ noncomputable def localizedComp {T : TightBindingChain} (m n : Fin T.N) :
 
 ### C.3. The operator `|m⟩⟨n|` applied to a localized state
 
-**`CondensedMatter.TightBindingChain.localizedComp_apply_localizedState`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L202).
+**`CondensedMatter.TightBindingChain.localizedComp_apply_localizedState`**, a lemma, [line 202](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L202).
 
 ```lean
 lemma localizedComp_apply_localizedState (m n p : Fin T.N) :
 ```
 
-**`CondensedMatter.TightBindingChain.localizedComp_adjoint`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L208).
+**`CondensedMatter.TightBindingChain.localizedComp_adjoint`**, a lemma, [line 208](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L208).
 
 > The adjoint of localizedComp |m⟩⟨n| is |n⟩⟨m|.
 
@@ -158,7 +158,7 @@ lemma localizedComp_adjoint (m n : Fin T.N) (ψ φ : T.HilbertSpace) :
 
 ## D. The Hamiltonian of the tight binding chain
 
-**`CondensedMatter.TightBindingChain.hamiltonian`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L224).
+**`CondensedMatter.TightBindingChain.hamiltonian`**, a def, [line 224](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L224).
 
 > The Hamiltonian of the tight binding chain with periodic
 > boundary conditions is given by `E₀ ∑ n, |n⟩⟨n| - t ∑ n, (|n⟩⟨n + 1| + |n + 1⟩⟨n|)`.
@@ -171,7 +171,7 @@ noncomputable def hamiltonian : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace
 
 ### D.1. Hermiticity of the Hamiltonian
 
-**`CondensedMatter.TightBindingChain.hamiltonian_hermitian`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L234).
+**`CondensedMatter.TightBindingChain.hamiltonian_hermitian`**, a lemma, [line 234](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L234).
 
 > The hamiltonian of the tight binding chain is hermitian.
 
@@ -182,7 +182,7 @@ lemma hamiltonian_hermitian (ψ φ : T.HilbertSpace) :
 
 ### D.2. Hamiltonian applied to a localized state
 
-**`CondensedMatter.TightBindingChain.hamiltonian_apply_localizedState`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L255).
+**`CondensedMatter.TightBindingChain.hamiltonian_apply_localizedState`**, a lemma, [line 255](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L255).
 
 > The Hamiltonian applied to the localized state `|n⟩` gives
 > `T.E0 • |n⟩ - T.t • (|n + 1⟩ + |n - 1⟩)`.
@@ -199,7 +199,7 @@ lemma hamiltonian_apply_localizedState (n : Fin T.N) :
 
 ### D.3. Mean energy of a localized state
 
-**`CondensedMatter.TightBindingChain.energy_localizedState`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L272).
+**`CondensedMatter.TightBindingChain.energy_localizedState`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L272).
 
 > The energy of a localized state in the tight binding chain is `E0`.
 > This lemma assumes that there is more then one site in the chain otherwise the
@@ -218,7 +218,7 @@ lemma energy_localizedState (n : Fin T.N) (htn : 1 < T.N) : ⟪|n⟩, T.hamilton
 
 ### E.1. The Brillouin zone
 
-**`CondensedMatter.TightBindingChain.BrillouinZone`**, a def, [line 293](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L293).
+**`CondensedMatter.TightBindingChain.BrillouinZone`**, a def, [line 293](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L293).
 
 > The Brillouin zone of the tight binding model is `[-π/a, π/a)`.
 > This is the set in which wave functions are uniquely defined.
@@ -229,7 +229,7 @@ noncomputable def BrillouinZone : Set ℝ
 
 ### E.2. The quantized wavenumbers of the energy eigenstates
 
-**`CondensedMatter.TightBindingChain.QuantaWaveNumber`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L304).
+**`CondensedMatter.TightBindingChain.QuantaWaveNumber`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L304).
 
 > The wavenumbers associated with the energy eigenstates.
 > This corresponds to the set `2 π / (a N) * (n - ⌊N/2⌋)` for `n : Fin T.N`.
@@ -239,7 +239,7 @@ noncomputable def BrillouinZone : Set ℝ
 def QuantaWaveNumber : Set ℝ
 ```
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L308).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber`**, a def, [line 308](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L308).
 
 > The quantized wavenumber `2 π / (a N) * (n - ⌊N/2⌋)` of the index `n`.
 
@@ -247,7 +247,7 @@ def QuantaWaveNumber : Set ℝ
 noncomputable def quantaWaveNumber (n : Fin T.N) : T.QuantaWaveNumber
 ```
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber_injective`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L311).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber_injective`**, a lemma, [line 311](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L311).
 
 > Distinct indices give distinct quantized wavenumbers.
 
@@ -257,7 +257,7 @@ lemma quantaWaveNumber_injective : Function.Injective T.quantaWaveNumber
 
 ### E.3. Wavenumbers lie in the Brillouin zone
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber_subset_brillouinZone`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L325).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber_subset_brillouinZone`**, a lemma, [line 325](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L325).
 
 > The quantized wavenumbers form a subset of the `BrillouinZone`.
 
@@ -267,14 +267,14 @@ lemma quantaWaveNumber_subset_brillouinZone : T.QuantaWaveNumber ⊆ T.Brillouin
 
 ### E.4. Expotentials related to the quantized wavenumbers
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_N`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L350).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_N`**, a lemma, [line 350](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L350).
 
 ```lean
 lemma quantaWaveNumber_exp_N (n : ℕ) (k : T.QuantaWaveNumber) :
     Complex.exp (Complex.I * k * n * T.N * T.a) = 1
 ```
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_sub_one`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L361).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_sub_one`**, a lemma, [line 361](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L361).
 
 ```lean
 lemma quantaWaveNumber_exp_sub_one (n : Fin T.N) (k : T.QuantaWaveNumber) :
@@ -282,7 +282,7 @@ lemma quantaWaveNumber_exp_sub_one (n : Fin T.N) (k : T.QuantaWaveNumber) :
     Complex.exp (Complex.I * k * n * T.a) * Complex.exp (- Complex.I * k * T.a)
 ```
 
-**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_add_one`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L400).
+**`CondensedMatter.TightBindingChain.quantaWaveNumber_exp_add_one`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L400).
 
 ```lean
 lemma quantaWaveNumber_exp_add_one (n : Fin T.N) (k : T.QuantaWaveNumber) :
@@ -294,7 +294,7 @@ lemma quantaWaveNumber_exp_add_one (n : Fin T.N) (k : T.QuantaWaveNumber) :
 
 ### F.1. The energy eigenstates
 
-**`CondensedMatter.TightBindingChain.energyEigenstate`**, a def, [line 422](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L422).
+**`CondensedMatter.TightBindingChain.energyEigenstate`**, a def, [line 422](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L422).
 
 > The energy eigenstates of the tight binding chain They are given by
 > `∑ n, exp (I * k * n * T.a) • |n⟩`.
@@ -303,7 +303,7 @@ lemma quantaWaveNumber_exp_add_one (n : Fin T.N) (k : T.QuantaWaveNumber) :
 noncomputable def energyEigenstate (k : T.QuantaWaveNumber) : T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_ne_zero`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L426).
+**`CondensedMatter.TightBindingChain.energyEigenstate_ne_zero`**, a lemma, [line 426](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L426).
 
 > An energy eigenstate is not zero.
 
@@ -311,7 +311,7 @@ noncomputable def energyEigenstate (k : T.QuantaWaveNumber) : T.HilbertSpace
 lemma energyEigenstate_ne_zero (k : T.QuantaWaveNumber) : T.energyEigenstate k ≠ 0
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_inner_self`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L433).
+**`CondensedMatter.TightBindingChain.energyEigenstate_inner_self`**, a lemma, [line 433](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L433).
 
 > The inner product of an energy eigenstate with itself is `N`.
 
@@ -322,7 +322,7 @@ lemma energyEigenstate_inner_self (k : T.QuantaWaveNumber) :
 
 ### F.2. Orthonormality of the energy eigenstates
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_orthogonal`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L460).
+**`CondensedMatter.TightBindingChain.energyEigenstate_orthogonal`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L460).
 
 > The energy eigenstates of the tight binding chain are orthogonal.
 >
@@ -338,7 +338,7 @@ lemma energyEigenstate_orthogonal :
     Pairwise fun k1 k2 => ⟪T.energyEigenstate k1, T.energyEigenstate k2⟫_ℂ = 0
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_linearIndependent`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L497).
+**`CondensedMatter.TightBindingChain.energyEigenstate_linearIndependent`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L497).
 
 > The energy eigenstates are linearly independent.
 
@@ -347,7 +347,7 @@ lemma energyEigenstate_linearIndependent :
     LinearIndependent ℂ (fun n : Fin T.N => T.energyEigenstate (T.quantaWaveNumber n))
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_span`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L504).
+**`CondensedMatter.TightBindingChain.energyEigenstate_span`**, a lemma, [line 504](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L504).
 
 > The energy eigenstates span the Hilbert space.
 
@@ -357,7 +357,7 @@ lemma energyEigenstate_span :
       T.energyEigenstate (T.quantaWaveNumber n))
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenstate_orthonormal`**, a lemma, [line 511](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L511).
+**`CondensedMatter.TightBindingChain.energyEigenstate_orthonormal`**, a lemma, [line 511](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L511).
 
 > The normalized energy eigenstates `N ^ (-1/2) • energyEigenstate k` are orthonormal.
 
@@ -367,7 +367,7 @@ lemma energyEigenstate_orthonormal :
       (((Real.sqrt T.N)⁻¹ : ℝ) : ℂ) • T.energyEigenstate (T.quantaWaveNumber n))
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenbasis`**, a def, [line 533](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L533).
+**`CondensedMatter.TightBindingChain.energyEigenbasis`**, a def, [line 533](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L533).
 
 > The normalized energy eigenstates form an orthonormal basis of the Hilbert space.
 
@@ -375,7 +375,7 @@ lemma energyEigenstate_orthonormal :
 noncomputable def energyEigenbasis : OrthonormalBasis (Fin T.N) ℂ T.HilbertSpace
 ```
 
-**`CondensedMatter.TightBindingChain.energyEigenbasis_apply`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L542).
+**`CondensedMatter.TightBindingChain.energyEigenbasis_apply`**, a lemma, [line 542](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L542).
 
 > The `n`-th vector of the basis is the normalized energy eigenstate of the `n`-th
 > wavenumber.
@@ -388,7 +388,7 @@ lemma energyEigenbasis_apply (n : Fin T.N) :
 
 ### F.3. The energy eigenvalues
 
-**`CondensedMatter.TightBindingChain.energyEigenvalue`**, a def, [line 555](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L555).
+**`CondensedMatter.TightBindingChain.energyEigenvalue`**, a def, [line 555](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L555).
 
 > The energy eigenvalue of the tight binding chain for a `k` in `QuantaWaveNumber` is
 > `E0 - 2 * t * Real.cos (k * T.a)`.
@@ -399,7 +399,7 @@ noncomputable def energyEigenvalue (k : T.QuantaWaveNumber) : ℝ
 
 ### F.4. The time-independent Schrodinger equation
 
-**`CondensedMatter.TightBindingChain.hamiltonian_energyEigenstate`**, a lemma, [line 565](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L565).
+**`CondensedMatter.TightBindingChain.hamiltonian_energyEigenstate`**, a lemma, [line 565](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L565).
 
 > The energy eigenstates satisfy the time-independent Schrodinger equation.
 
@@ -410,7 +410,7 @@ lemma hamiltonian_energyEigenstate (k : T.QuantaWaveNumber) :
 
 ### F.5. The spectrum of the Hamiltonian
 
-**`CondensedMatter.TightBindingChain.hasEigenvalue_hamiltonian_iff`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L615).
+**`CondensedMatter.TightBindingChain.hasEigenvalue_hamiltonian_iff`**, a lemma, [line 615](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean#L615).
 
 > The eigenvalues of the Hamiltonian are exactly the energies `E0 - 2 t cos (k a)` of the
 > quantized wavenumbers.
@@ -427,4 +427,4 @@ lemma hasEigenvalue_hamiltonian_iff (E : ℂ) :
 
 ## Sources
 
-- [Physlib/CondensedMatter/TightBindingChain/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/TightBindingChain/Basic.lean)
+- [Physlib/CondensedMatter/TightBindingChain/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/CondensedMatter/TightBindingChain/Basic.lean)

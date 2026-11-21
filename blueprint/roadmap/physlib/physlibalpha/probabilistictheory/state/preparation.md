@@ -1,14 +1,14 @@
 ---
 declaration: module
 origin: cited
-lean: ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_smul_le, ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_left, ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_right, ProbabilisticTheory.Preparation, ProbabilisticTheory.Preparation.integrable_prepare, ProbabilisticTheory.Preparation.state, ProbabilisticTheory.Preparation.state_apply, ProbabilisticTheory.Preparation.state_isNormal
+lean: PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_smul_le, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_left, PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_right, PhyslibAlpha.ProbabilisticTheory.Preparation, PhyslibAlpha.ProbabilisticTheory.Preparation.integrable_prepare, PhyslibAlpha.ProbabilisticTheory.Preparation.state, PhyslibAlpha.ProbabilisticTheory.Preparation.state_apply, PhyslibAlpha.ProbabilisticTheory.Preparation.state_isNormal
 statement: formalized
 proof: formalized
 ---
 
 # Preparation procedures
 
-The module `PhyslibAlpha.ProbabilisticTheory.State.Preparation`, [PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean): 21 declarations (2 instances with no name), 16 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.State.Preparation`, [PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean): 21 declarations (2 instances with no name), 16 with a docstring.
 
 > Preparation procedures: random preparations of states, their prepared states and outcome laws.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.ProbabilisticTheory.State.Preparation`, [PhyslibAlpha/P
 
 ## A. Normal components of mixtures
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_smul_le`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L68).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_smul_le`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L68).
 
 > A state dominated by a positive multiple of a normal state is normal.
 
@@ -50,7 +50,7 @@ lemma IsNormal.of_smul_le {ω φ : 𝓢[ℝ, E]} (hω : ω.IsNormal) {c : ℝ} (
     (h : ∀ A, 0 ≤ A → c * φ A ≤ ω A) : φ.IsNormal
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_left`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L86).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_left`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L86).
 
 > If a proper mixture is normal, so is its first component.
 
@@ -59,7 +59,7 @@ lemma IsNormal.of_mix_left {φ ψ : 𝓢[ℝ, E]} {t : unitInterval} (h : (mix �
     (ht : t ≠ 0) : φ.IsNormal
 ```
 
-**`ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_right`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L92).
+**`PhyslibAlpha.ProbabilisticTheory.UnitalPositiveLinearMap.IsNormal.of_mix_right`**, a lemma, [line 92](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L92).
 
 > If a proper mixture is normal, so is its second component.
 
@@ -70,7 +70,7 @@ lemma IsNormal.of_mix_right {φ ψ : 𝓢[ℝ, E]} {t : unitInterval} (h : (mix 
 
 ## B. Preparation procedures
 
-**`ProbabilisticTheory.Preparation`**, a structure, [line 103](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L103).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation`**, a structure, [line 103](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L103).
 
 > A preparation procedure: roll a die with values in `X` and law `law`, and on the roll `x`
 > prepare the normal state `prepare x`.
@@ -87,7 +87,7 @@ structure Preparation (E : Type u) [OrderUnitSpace E] (X : Type v) [MeasurableSp
   measurable_prepare : ∀ A : E, Measurable fun x => prepare x A
 ```
 
-**`ProbabilisticTheory.Preparation.integrable_prepare`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L118).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.integrable_prepare`**, a lemma, [line 118](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L118).
 
 > Every expectation value is integrable in the roll.
 
@@ -96,7 +96,7 @@ lemma integrable_prepare (p : Preparation E X) (A : E) :
     Integrable (fun x => p.prepare x A) (p.law : Measure X)
 ```
 
-**`ProbabilisticTheory.Preparation.state`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L129).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.state`**, a def, [line 129](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L129).
 
 > The state a procedure prepares, once the roll is forgotten: the average of the prepared
 > states.
@@ -105,14 +105,14 @@ lemma integrable_prepare (p : Preparation E X) (A : E) :
 noncomputable def state (p : Preparation E X) : 𝓢[ℝ, E]
 ```
 
-**`ProbabilisticTheory.Preparation.state_apply`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L141).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.state_apply`**, a lemma, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L141).
 
 ```lean
 lemma state_apply (p : Preparation E X) (A : E) :
     p.state A = ∫ x, p.prepare x A ∂(p.law : Measure X)
 ```
 
-**`ProbabilisticTheory.Preparation.state_isNormal`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L146).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.state_isNormal`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L146).
 
 > A prepared state is normal.
 
@@ -122,7 +122,7 @@ lemma state_isNormal (p : Preparation E X) : p.state.IsNormal
 
 ## C. Preparing one of two states
 
-**`ProbabilisticTheory.Preparation.ofMix`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L159).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.ofMix`**, a def, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L159).
 
 > Prepare `φ` with probability `t` and `ψ` otherwise.
 
@@ -131,7 +131,7 @@ noncomputable def ofMix (φ ψ : 𝓢[ℝ, E]) (t : unitInterval) (hφ : φ.IsNo
     (hψ : ψ.IsNormal) : Preparation E Bool
 ```
 
-**`ProbabilisticTheory.Preparation.state_ofMix`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L168).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.state_ofMix`**, a lemma, [line 168](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L168).
 
 > Preparing one of two states at random prepares their mixture.
 
@@ -140,7 +140,7 @@ lemma state_ofMix (φ ψ : 𝓢[ℝ, E]) (t : unitInterval) (hφ : φ.IsNormal) 
     (ofMix φ ψ t hφ hψ).state = mix φ ψ t
 ```
 
-**`ProbabilisticTheory.Preparation.ae_ofMix_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L181).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.ae_ofMix_iff`**, a lemma, [line 181](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L181).
 
 > When both states have positive probability, a property holds almost surely exactly when it
 > holds for both rolls.
@@ -153,7 +153,7 @@ lemma ae_ofMix_iff {φ ψ : 𝓢[ℝ, E]} {t : unitInterval} {hφ : φ.IsNormal}
 
 ## D. Conditional states
 
-**`ProbabilisticTheory.Preparation.conditionalState`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L197).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.conditionalState`**, a def, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L197).
 
 > The state prepared given that the roll lies in an event of positive probability.
 
@@ -162,7 +162,7 @@ noncomputable def conditionalState (p : Preparation E X) (s : Set X)
     (hpos : 0 < (p.law : Measure X).real s) : 𝓢[ℝ, E]
 ```
 
-**`ProbabilisticTheory.Preparation.conditionalState_apply`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L217).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.conditionalState_apply`**, a lemma, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L217).
 
 ```lean
 lemma conditionalState_apply (p : Preparation E X) (s : Set X)
@@ -171,7 +171,7 @@ lemma conditionalState_apply (p : Preparation E X) (s : Set X)
       ((p.law : Measure X).real s)⁻¹ * ∫ x in s, p.prepare x A ∂(p.law : Measure X)
 ```
 
-**`ProbabilisticTheory.Preparation.mix_conditionalState_compl`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L225).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.mix_conditionalState_compl`**, a lemma, [line 225](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L225).
 
 > The prepared state is the mixture of the states conditioned on an event and on its complement,
 > weighted by their probabilities.
@@ -185,7 +185,7 @@ lemma mix_conditionalState_compl (p : Preparation E X) {s : Set X} (hs : Measura
 
 ## E. Measurement outcomes
 
-**`ProbabilisticTheory.Preparation.outcome`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L238).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.outcome`**, a def, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L238).
 
 > The outcome law of the measurement `M` given the roll.
 
@@ -193,20 +193,20 @@ lemma mix_conditionalState_compl (p : Preparation E X) {s : Set X} (hs : Measura
 noncomputable def outcome (p : Preparation E X) (M : Measurement Ω E) : Kernel X Ω
 ```
 
-**`ProbabilisticTheory.Preparation.outcome_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L244).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.outcome_apply`**, a lemma, [line 244](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L244).
 
 ```lean
 lemma outcome_apply (p : Preparation E X) (M : Measurement Ω E) (x : X) :
     p.outcome M x = M.probabilityLaw (p.prepare x) (p.normal x)
 ```
 
-**An instance with no name**, [line 248](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L248).
+**An instance with no name**, [line 248](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L248).
 
 ```lean
 instance (p : Preparation E X) (M : Measurement Ω E) : IsMarkovKernel (p.outcome M)
 ```
 
-**`ProbabilisticTheory.Preparation.outcome_comp_law`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L252).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.outcome_comp_law`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L252).
 
 > Forgetting the roll, the outcome of `M` has the Born law of the prepared state.
 
@@ -215,7 +215,7 @@ lemma outcome_comp_law (p : Preparation E X) (M : Measurement Ω E) :
     p.outcome M ∘ₘ (p.law : Measure X) = M.probabilityLaw p.state p.state_isNormal
 ```
 
-**`ProbabilisticTheory.Preparation.forgetfulOutcome`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L263).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.forgetfulOutcome`**, a def, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L263).
 
 > The outcome law of `M` when the roll is forgotten: the Born law of the prepared state, whatever
 > the roll.
@@ -225,14 +225,14 @@ noncomputable def forgetfulOutcome (p : Preparation E X) (M : Measurement Ω E) 
     Kernel X Ω
 ```
 
-**An instance with no name**, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L267).
+**An instance with no name**, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L267).
 
 ```lean
 instance (p : Preparation E X) (M : Measurement Ω E) :
     IsMarkovKernel (p.forgetfulOutcome M)
 ```
 
-**`ProbabilisticTheory.Preparation.forgetfulOutcome_isPostprocessing`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L272).
+**`PhyslibAlpha.ProbabilisticTheory.Preparation.forgetfulOutcome_isPostprocessing`**, a lemma, [line 272](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean#L272).
 
 > Forgetting the roll is a post-processing of the outcome law given the roll.
 
@@ -248,4 +248,4 @@ lemma forgetfulOutcome_isPostprocessing (p : Preparation E X) (M : Measurement �
 
 ## Sources
 
-- [PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean)
+- [PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean)

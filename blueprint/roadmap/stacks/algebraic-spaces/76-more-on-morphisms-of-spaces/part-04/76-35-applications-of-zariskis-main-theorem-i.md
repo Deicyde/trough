@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.35 Applications of Zariski's Main Theorem, I
 
-Section 76.35 of the Stacks Project, [Tag 0F43](https://stacks.math.columbia.edu/tag/0F43). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 76.35 of the Stacks Project, [Tag 0F43](https://stacks.math.columbia.edu/tag/0F43). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0A4X, a lemma
 
 [Tag 0A4X](https://stacks.math.columbia.edu/tag/0A4X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isProper_and_isLocallyQuasiFinite_iff_isProper_and_discreteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L254). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.isProper_and_isLocallyQuasiFinite_iff_isProper_and_discreteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 254](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L254). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 0A4X, conditions (2) and (3).** A proper morphism of algebraic spaces over `S` is
 > locally quasi-finite exactly when the point space of its fibre over every field-valued point of
@@ -31,7 +31,7 @@ theorem isProper_and_isLocallyQuasiFinite_iff_isProper_and_discreteFibres
         DiscreteTopology (points B S hS (pullback (yonedaEquiv.symm p.value) f)))
 ```
 
-**`AlgebraicGeometry.Space.isProper_iff_universallyClosed_isSeparated_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L273). The attribute's comment: “conditions (3) and (4)”.
+**`AlgebraicGeometry.Space.isProper_iff_universallyClosed_isSeparated_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L273). The attribute's comment: “conditions (3) and (4)”.
 
 > **Stacks 0A4X, conditions (3) and (4).** A morphism of algebraic spaces over `S` is proper
 > exactly when it is universally closed, separated and locally of finite type.
@@ -49,7 +49,7 @@ theorem isProper_iff_universallyClosed_isSeparated_isLocallyOfFiniteType
       UniversallyClosed B S hS f ∧ IsSeparated B S hS f ∧ IsLocallyOfFiniteType B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFinite_of_isProper_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L426). The attribute's comment: “condition (2) implies condition (1)”. References: EGA III (4.4.11), “proper q-finite ⇒ finite”; EGA IV (18.12.4), “proper q-finite⇒finite”; EGA III (4.4.2), “c) => a)”.
+**`AlgebraicGeometry.Space.isFinite_of_isProper_of_isLocallyQuasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 426](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L426). The attribute's comment: “condition (2) implies condition (1)”. References: EGA III (4.4.11), “proper q-finite ⇒ finite”; EGA IV (18.12.4), “proper q-finite⇒finite”; EGA III (4.4.2), “c) => a)”.
 
 > **Stacks 0A4X, condition (2) implies condition (1).** A proper, locally quasi-finite
 > morphism of algebraic spaces over `S` is finite.
@@ -69,7 +69,7 @@ theorem isFinite_of_isProper_of_isLocallyQuasiFinite
     IsFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isProper_and_isLocallyQuasiFinite_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L478). The attribute's comment: “condition (1) implies condition (2)”.
+**`AlgebraicGeometry.Space.isProper_and_isLocallyQuasiFinite_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 478](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L478). The attribute's comment: “condition (1) implies condition (2)”.
 
 > **Stacks 0A4X, condition (1) implies condition (2).** A finite morphism of algebraic spaces
 > over `S` is proper and locally quasi-finite.
@@ -85,7 +85,7 @@ theorem isProper_and_isLocallyQuasiFinite_of_isFinite
     IsProper B S hS f ∧ IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isProper_and_discreteFibres_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L491). The attribute's comment: “condition (1) implies condition (3)”. References: EGA IV (18.12.4), “finite⇒proper+discrete”; EGA II (6.1.7), “discrete fibres”; EGA III (4.4.2), “a) => c)”.
+**`AlgebraicGeometry.Space.isProper_and_discreteFibres_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 491](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L491). The attribute's comment: “condition (1) implies condition (3)”. References: EGA IV (18.12.4), “finite⇒proper+discrete”; EGA II (6.1.7), “discrete fibres”; EGA III (4.4.2), “a) => c)”.
 
 > **Stacks 0A4X, condition (1) implies condition (3).** A finite morphism of algebraic spaces
 > over `S` is proper and the point space of its fibre over every field-valued point of its target
@@ -99,7 +99,7 @@ theorem isProper_and_discreteFibres_of_isFinite
       DiscreteTopology (points B S hS (pullback (yonedaEquiv.symm p.value) f))
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_isSeparated_isLocallyOfFiniteType_and_discreteFibres_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L503). The attribute's comment: “condition (1) implies condition (4)”.
+**`AlgebraicGeometry.Space.universallyClosed_isSeparated_isLocallyOfFiniteType_and_discreteFibres_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L503). The attribute's comment: “condition (1) implies condition (4)”.
 
 > **Stacks 0A4X, condition (1) implies condition (4).** A finite morphism of algebraic spaces
 > over `S` is universally closed, separated and locally of finite type, and the point space of its
@@ -114,7 +114,7 @@ theorem universallyClosed_isSeparated_isLocallyOfFiniteType_and_discreteFibres_o
         DiscreteTopology (points B S hS (pullback (yonedaEquiv.symm p.value) f))
 ```
 
-**`AlgebraicGeometry.Space.isFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFiniteTfae.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFiniteTfae.lean#L89). The attribute's comment: “the four conditions collected as a TFAE”. References: EGA IV (18.12.4); EGA III (4.4.11), “proper q-finite ⇒ finite”; EGA III (4.4.2), “a) <=> c)”.
+**`AlgebraicGeometry.Space.isFinite_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFiniteTfae.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFiniteTfae.lean#L89). The attribute's comment: “the four conditions collected as a TFAE”. References: EGA IV (18.12.4); EGA III (4.4.11), “proper q-finite ⇒ finite”; EGA III (4.4.2), “a) <=> c)”.
 
 > **Stacks 0A4X**, the four conditions collected as a `List.TFAE`. For a morphism
 > `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent: `f` is finite; `f` is
@@ -145,7 +145,7 @@ theorem isFinite_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B 
 
 [Tag 0A4Y](https://stacks.math.columbia.edu/tag/0A4Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L531).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean, line 531](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperQuasiFinite.lean#L531).
 
 > **Stacks 0A4Y.** Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S` and let
 > `y` be a point of `|Y|` such that `f` is quasi-finite at every point of `|X|` lying over `y`.
@@ -176,7 +176,7 @@ theorem exists_isOpenSubspace_isFinite_pullback_snd_of_isProper
 
 [Tag 0AEJ](https://stacks.math.columbia.edu/tag/0AEJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isClosedSubspace_isFinite_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteImageNearFibre.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteImageNearFibre.lean#L319).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isClosedSubspace_isFinite_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteImageNearFibre.lean, line 319](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteImageNearFibre.lean#L319).
 
 > **Stacks 0AEJ.** Let `h : X ⟶ Y`, `f : X ⟶ T` and `g : Y ⟶ T` be morphisms of algebraic
 > spaces over `S` with `h ≫ g = f`, with `f` proper and `g` separated and locally of finite type,
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.35, Tag 0F43](https://stacks.math.columbia.edu/tag/0F43)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

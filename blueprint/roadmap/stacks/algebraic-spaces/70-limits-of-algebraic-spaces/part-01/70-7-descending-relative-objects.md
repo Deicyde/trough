@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.7 Descending relative objects
 
-Section 70.7 of the Stacks Project, [Tag 07SJ](https://stacks.math.columbia.edu/tag/07SJ). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.7 of the Stacks Project, [Tag 07SJ](https://stacks.math.columbia.edu/tag/07SJ). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07SK, a lemma
 
 [Tag 07SK](https://stacks.math.columbia.edu/tag/07SK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_morphism_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 3570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L3570). The attribute's comment: “fullness”.
+**`AlgebraicGeometry.Space.exists_morphism_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 3570](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L3570). The attribute's comment: “fullness”.
 
 > A morphism between base changes of finite-presentation algebraic spaces
 > is defined at a sufficiently late stage.
@@ -46,7 +46,7 @@ public theorem exists_morphism_after_baseChange
       α.hom ≫ f = (Over.pullback (limit.π D j)).map g ≫ β.hom
 ```
 
-**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 3746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L3746). The attribute's comment: “faithfulness”.
+**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 3746](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L3746). The attribute's comment: “faithfulness”.
 
 > Two finite-stage morphisms that agree over the limit agree at a sufficiently
 > late stage.
@@ -66,7 +66,7 @@ public theorem eventually_eq_of_baseChange_eq
         (Over.pullback (D.map e)).map g
 ```
 
-**`AlgebraicGeometry.Space.exists_model_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 4618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L4618). The attribute's comment: “essential surjectivity”.
+**`AlgebraicGeometry.Space.exists_model_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean, line 4618](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescent.lean#L4618). The attribute's comment: “essential surjectivity”.
 
 > Every algebraic space of finite presentation over the limit descends to a
 > finite stage.
@@ -82,7 +82,7 @@ public theorem exists_model_of_finitePresentation
         Nonempty (Y ≅ (Over.pullback (limit.π D i)).obj Yᵢ)
 ```
 
-**`AlgebraicGeometry.Space.exists_morphism_after_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L188). The attribute's comment: “fullness, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_morphism\_after\_baseChange”.
+**`AlgebraicGeometry.Space.exists_morphism_after_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 188](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L188). The attribute's comment: “fullness, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_morphism\_after\_baseChange”.
 
 > **Stacks 07SK, fullness, with no bound on the index.** A morphism between the base changes
 > to the limit of two algebraic spaces of finite presentation over a stage comes from a morphism
@@ -138,7 +138,7 @@ public theorem exists_morphism_after_baseChange_of_chartLimitsInSite
       α.hom ≫ f = (Over.pullback (limit.π D j)).map g ≫ β.hom
 ```
 
-**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L247). The attribute's comment: “faithfulness, with no bound on the index: the 07SD convention in place of the cardinality bounds of eventually\_eq\_of\_baseChange\_eq”.
+**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 247](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L247). The attribute's comment: “faithfulness, with no bound on the index: the 07SD convention in place of the cardinality bounds of eventually\_eq\_of\_baseChange\_eq”.
 
 > **Stacks 07SK, faithfulness, with no bound on the index.** Two morphisms between
 > algebraic spaces of finite presentation over a stage whose base changes to the limit agree
@@ -181,7 +181,7 @@ public theorem eventually_eq_of_baseChange_eq_of_chartLimitsInSite
         (Over.pullback (D.map e)).map g
 ```
 
-**`AlgebraicGeometry.Space.exists_model_of_finitePresentation_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L292). The attribute's comment: “essential surjectivity, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_model\_of\_finitePresentation”.
+**`AlgebraicGeometry.Space.exists_model_of_finitePresentation_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 292](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L292). The attribute's comment: “essential surjectivity, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_model\_of\_finitePresentation”.
 
 > **Stacks 07SK, essential surjectivity, with no bound on the index.** Every algebraic space
 > of finite presentation over the limit is the base change of an algebraic space of finite
@@ -225,7 +225,7 @@ public theorem exists_model_of_finitePresentation_of_chartLimitsInSite
 
 [Tag 07V7](https://stacks.math.columbia.edu/tag/07V7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finitePresentationModule_isColimit_of_isLimit_of_baseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationModuleColimitTheorem.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationModuleColimitTheorem.lean#L286). The attribute's comment: “the category of finitely presented modules on the limit is the colimit of the categories of finitely presented modules on the stages: faithfulness, fullness through the canonical identification of iterated inverse images, and essential surjectivity of the comparison; for any limiting cone over the system, its cone point being an algebraic space by Stacks 07SF, indexed by any cofiltered category in the universe of the site, under the chapter's standing convention 07SD that the limits of its affine charts lie in the site; without that convention the statement fails in a size-bounded site (see the notes of ChartLimitsInSite)”.
+**`AlgebraicGeometry.Space.finitePresentationModule_isColimit_of_isLimit_of_baseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationModuleColimitTheorem.lean, line 286](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationModuleColimitTheorem.lean#L286). The attribute's comment: “the category of finitely presented modules on the limit is the colimit of the categories of finitely presented modules on the stages: faithfulness, fullness through the canonical identification of iterated inverse images, and essential surjectivity of the comparison; for any limiting cone over the system, its cone point being an algebraic space by Stacks 07SF, indexed by any cofiltered category in the universe of the site, under the chapter's standing convention 07SD that the limits of its affine charts lie in the site; without that convention the statement fails in a size-bounded site (see the notes of ChartLimitsInSite)”.
 
 > **Stacks 07V7.** Let `X = lim X_i` be the limit of a cofiltered inverse system of
 > quasi-compact and quasi-separated algebraic spaces over `S` with affine transition morphisms:
@@ -282,7 +282,7 @@ theorem finitePresentationModule_isColimit_of_isLimit_of_baseChangeLimits
 
 [Tag 0D2X](https://stacks.math.columbia.edu/tag/0D2X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFiniteLocallyFreeOnSite_stage_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean#L89). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.Space.exists_isFiniteLocallyFreeOnSite_stage_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean, line 89](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean#L89). The attribute's comment: “(1)”.
 
 > **Stacks 0D2X, part (1).** Let `X = lim Xᵢ` be the limit of a cofiltered system of
 > quasi-compact and quasi-separated algebraic spaces over `S` with affine transition morphisms, as
@@ -302,7 +302,7 @@ theorem exists_isFiniteLocallyFreeOnSite_stage_model
           (limitProjection B S hS D hSize hHomSize hD hAffine i)).obj Fᵢ)
 ```
 
-**`AlgebraicGeometry.Space.exists_isInvertibleModule_stage_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean#L111). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.Space.exists_isInvertibleModule_stage_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean, line 111](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteLocallyFreeStageModel.lean#L111). The attribute's comment: “(2)”.
 
 > **Stacks 0D2X, part (2).** Let `X = lim Xᵢ` be the limit of a cofiltered system of
 > quasi-compact and quasi-separated algebraic spaces over `S` with affine transition morphisms, as
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.7, Tag 07SJ](https://stacks.math.columbia.edu/tag/07SJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

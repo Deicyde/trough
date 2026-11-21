@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.20 Rig-étale morphisms
 
-Section 88.20 of the Stacks Project, [Tag 0AQK](https://stacks.math.columbia.edu/tag/0AQK). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 88.20 of the Stacks Project, [Tag 0AQK](https://stacks.math.columbia.edu/tag/0AQK). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0AQM, a definition
 
 [Tag 0AQM](https://stacks.math.columbia.edu/tag/0AQM) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean#L73).
+**`AlgebraicGeometry.FormalSpace.IsRigEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean, line 73](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean#L73).
 
 > **Stacks 0AQM.** A morphism of formal algebraic spaces over `S` is *rig-étale* when every
 > morphism between affine, representable, étale charts of its source and target is induced by a
@@ -29,7 +29,7 @@ abbrev IsRigEtale (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0GCZ](https://stacks.math.columbia.edu/tag/0GCZ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_tfae_of_isLocallyNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocalCharacterizationCharts.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocalCharacterizationCharts.lean#L131).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_tfae_of_isLocallyNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocalCharacterizationCharts.lean, line 131](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocalCharacterizationCharts.lean#L131).
 
 > **Stacks 0GCZ.** Let `f : X ⟶ Y` be a morphism of locally Noetherian formal algebraic spaces
 > over `S`. The following are equivalent:
@@ -71,7 +71,7 @@ theorem isRigEtale_tfae_of_isLocallyNoetherian' {X Y : FppfSheaf B S hS} (f : X 
 
 [Tag 0AQN](https://stacks.math.columbia.edu/tag/0AQN) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_of_isRigEtale_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocallyOfFiniteTypeUnconditional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocallyOfFiniteTypeUnconditional.lean#L116).
+**`AlgebraicGeometry.FormalSpace.isLocallyOfFiniteType_of_isRigEtale_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocallyOfFiniteTypeUnconditional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleLocallyOfFiniteTypeUnconditional.lean#L116).
 
 > **Stacks 0AQN.** A rig-étale morphism of locally Noetherian formal algebraic spaces over
 > `S` is locally of finite type.
@@ -94,7 +94,7 @@ theorem isLocallyOfFiniteType_of_isRigEtale_of_isLocallyNoetherian {X Y : FppfSh
 
 [Tag 0GD0](https://stacks.math.columbia.edu/tag/0GD0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean#L118).
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_of_isRigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean, line 118](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtale.lean#L118).
 
 > **Stacks 0GD0.** A rig-étale morphism of formal algebraic spaces is rig-smooth.
 
@@ -108,7 +108,7 @@ theorem isRigSmooth_of_isRigEtale (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B
 
 [Tag 0GD1](https://stacks.math.columbia.edu/tag/0GD1) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_pullback_snd_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean#L218).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_pullback_snd_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean, line 218](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean#L218).
 
 > **Stacks 0GD1.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` is rig-étale and `g` is adic, then the base change
@@ -131,7 +131,7 @@ theorem isRigEtale_pullback_snd_of_isLocallyNoetherian {X Y Z : FppfSheaf B S hS
 
 [Tag 0GD2](https://stacks.math.columbia.edu/tag/0GD2) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean#L196).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean, line 196](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean#L196).
 
 > Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` and `g` are rig-étale, then so is `g ∘ f`.
@@ -148,7 +148,7 @@ theorem isRigEtale_comp_of_isLocallyNoetherian {X Y Z : FppfSheaf B S hS} (f : X
 
 [Tag 0GD3](https://stacks.math.columbia.edu/tag/0GD3) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean#L234). The attribute's comment: “f, g morphisms of locally Noetherian formal algebraic spaces over S; g ∘ f and g rig-étale implies f rig-étale”.
+**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean, line 234](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleCompositionCharts.lean#L234). The attribute's comment: “f, g morphisms of locally Noetherian formal algebraic spaces over S; g ∘ f and g rig-étale implies f rig-étale”.
 
 > **Stacks 0GD3.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian
 > formal algebraic spaces over `S`. If `g ∘ f` and `g` are rig-étale, then so is `f`.
@@ -169,7 +169,7 @@ theorem isRigEtale_of_comp_of_isLocallyNoetherian {X Y Z : FppfSheaf B S hS} (f 
 
 [Tag 0GH4](https://stacks.math.columbia.edu/tag/0GH4) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isAdicMorphism_of_mono_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean#L232).
+**`AlgebraicGeometry.FormalSpace.isRigEtale_of_comp_of_isAdicMorphism_of_mono_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean, line 232](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleBaseChangeCharts.lean#L232).
 
 > **Stacks 0GH4.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `g ∘ f` is rig-étale and `g` is an adic monomorphism, then `f` is
@@ -188,7 +188,7 @@ theorem isRigEtale_of_comp_of_isAdicMorphism_of_mono_of_isLocallyNoetherian
 
 [Tag 0GD4](https://stacks.math.columbia.edu/tag/0GD4) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae_of_isClosedImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleClosedImmersionCharts.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleClosedImmersionCharts.lean#L403). The attribute's comment: “the equivalence of rig-smoothness, rig-étaleness and the annihilated conormal condition on fibre product charts, for a closed immersion of locally Noetherian formal algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.isRigSmooth_tfae_of_isClosedImmersion'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleClosedImmersionCharts.lean, line 403](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/FormalSpace/RigEtaleClosedImmersionCharts.lean#L403). The attribute's comment: “the equivalence of rig-smoothness, rig-étaleness and the annihilated conormal condition on fibre product charts, for a closed immersion of locally Noetherian formal algebraic spaces”.
 
 > **Stacks 0GD4.** For a closed immersion `f : X ⟶ Y` of locally Noetherian formal algebraic
 > spaces over `S`, rig-smoothness of `f` (Definition 0GCP), rig-étaleness of `f`
@@ -217,4 +217,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.20, Tag 0AQK](https://stacks.math.columbia.edu/tag/0AQK)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

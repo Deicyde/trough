@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.16 Higher derived functors
 
-Section 13.16 of the Stacks Project, [Tag 05TB](https://stacks.math.columbia.edu/tag/05TB). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.16 of the Stacks Project, [Tag 05TB](https://stacks.math.columbia.edu/tag/05TB). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 05TC, a lemma
 
 [Tag 05TC](https://stacks.math.columbia.edu/tag/05TC) in the Stacks Project.
 
-**`CategoryTheory.Functor.isGE_and_isIso_homologyFunctor_map_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctor.lean, line 940](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctor.lean#L940).
+**`CategoryTheory.Functor.isGE_and_isIso_homologyFunctor_map_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctor.lean, line 940](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/DeltaFunctor.lean#L940).
 
 > **Right derived functors move to the right**, [StackProject 05TC].
 > Let `F : A ⥤ B` be an additive functor between abelian categories, let `K` be a cochain complex
@@ -70,7 +70,7 @@ public theorem isGE_and_isIso_homologyFunctor_map_of_isRightDerivedValueAt
 
 [Tag 015A](https://stacks.math.columbia.edu/tag/015A) in the Stacks Project.
 
-**`CategoryTheory.Functor.rightDerivedOfIsRightDerivable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/EverywhereDefined.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/EverywhereDefined.lean#L110).
+**`CategoryTheory.Functor.rightDerivedOfIsRightDerivable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/EverywhereDefined.lean, line 110](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/EverywhereDefined.lean#L110).
 
 > **Stacks 015A.** The `i`-th right derived functor `R ⁱ F = H ⁱ ∘ RF : 𝒜 ⥤ ℬ` of an additive
 > functor `F : 𝒜 ⥤ ℬ` between abelian categories, assuming that `RF : D⁺(𝒜) ⥤ D⁺(ℬ)` is everywhere
@@ -88,7 +88,7 @@ noncomputable def rightDerivedOfIsRightDerivable
 
 [Tag 05TD](https://stacks.math.columbia.edu/tag/05TD) in the Stacks Project.
 
-**`CategoryTheory.Functor.isZero_and_preservesFiniteLimits_and_isIso_iff_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusEverywhereDefined.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusEverywhereDefined.lean#L404).
+**`CategoryTheory.Functor.isZero_and_preservesFiniteLimits_and_isIso_iff_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusEverywhereDefined.lean, line 404](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedPlusEverywhereDefined.lean#L404).
 
 > **Right deriving is for left exact functors**, [Stacks, Tag 05TD].
 > Let `F : 𝒜 ⥤ ℬ` be an additive functor between abelian categories and assume that the right
@@ -124,7 +124,7 @@ public theorem isZero_and_preservesFiniteLimits_and_isIso_iff_of_isRightDerivabl
 
 [Tag 015C](https://stacks.math.columbia.edu/tag/015C) in the Stacks Project.
 
-**`CategoryTheory.Functor.rightAcyclic_iff_isIso_and_isZero_totalRightDerivedPlusHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefined.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefined.lean#L387). The attribute's comment: “`RF` everywhere defined is `Functor.IsRightDerivable` of `K⁺(F) ⋙ Q⁺` (Tag 05SV); `R ⁱ F` is `Functor.totalRightDerivedPlusHomology`, and `F(A) ⟶ R ⁰ F(A)` is `H ⁰` of the unit of `RF` at `A[0]`”.
+**`CategoryTheory.Functor.rightAcyclic_iff_isIso_and_isZero_totalRightDerivedPlusHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefined.lean, line 387](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefined.lean#L387). The attribute's comment: “`RF` everywhere defined is `Functor.IsRightDerivable` of `K⁺(F) ⋙ Q⁺` (Tag 05SV); `R ⁱ F` is `Functor.totalRightDerivedPlusHomology`, and `F(A) ⟶ R ⁰ F(A)` is `H ⁰` of the unit of `RF` at `A[0]`”.
 
 > **Characterization of right acyclic objects**, [StacksProject 015C].
 > Let `F : 𝒜 ⥤ ℬ` be an additive functor between abelian categories and assume that
@@ -159,7 +159,7 @@ public theorem rightAcyclic_iff_isIso_and_isZero_totalRightDerivedPlusHomology
 
 [Tag 015D](https://stacks.math.columbia.edu/tag/015D) in the Stacks Project.
 
-**`CategoryTheory.Functor.rightAcyclic_and_shortExact_map_of_shortExact_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefinedShortExact.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefinedShortExact.lean#L217). The attribute's comment: “`RF` everywhere defined is `Functor.IsRightDerivable` of `K⁺(F) ⋙ Q⁺` (Tag 05SV); surjectivity of `F(B) ⟶ F(C)` is `Epi (F.map S.g)`”.
+**`CategoryTheory.Functor.rightAcyclic_and_shortExact_map_of_shortExact_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefinedShortExact.lean, line 217](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightAcyclicEverywhereDefinedShortExact.lean#L217). The attribute's comment: “`RF` everywhere defined is `Functor.IsRightDerivable` of `K⁺(F) ⋙ Q⁺` (Tag 05SV); surjectivity of `F(B) ⟶ F(C)` is `Epi (F.map S.g)`”.
 
 > **Right acyclicity in a short exact sequence**, [StacksProject 015D].
 > Let `F : 𝒜 ⥤ ℬ` be a left exact functor between abelian categories and assume that
@@ -198,7 +198,7 @@ public theorem rightAcyclic_and_shortExact_map_of_shortExact_of_isRightDerivable
 
 [Tag 05TE](https://stacks.math.columbia.edu/tag/05TE) in the Stacks Project.
 
-**`CategoryTheory.Functor.isDeltaFunctor_and_isUniversal_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedDeltaFunctor.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedDeltaFunctor.lean#L128).
+**`CategoryTheory.Functor.isDeltaFunctor_and_isUniversal_of_isRightDerivable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedDeltaFunctor.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedDeltaFunctor.lean#L128).
 
 > **The higher right derived functors form a universal `δ`-functor**, [Stacks, Tag 05TE].
 > Let `F : 𝒜 ⥤ ℬ` be an additive functor between abelian categories and assume that
@@ -289,7 +289,7 @@ public theorem isDeltaFunctor_and_isUniversal_of_isRightDerivable (F : C ⥤ D) 
 
 [Tag 015E](https://stacks.math.columbia.edu/tag/015E) in the Stacks Project.
 
-**`CategoryTheory.Functor.isIso_ι_app_of_computesRightDerived_single_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean#L486). The attribute's comment: “`RF` defined at `K` in the sense of Tag 05S9, terms right `F`-acyclic in the sense of Tag 0157; conclusion: the canonical map `F(K) ⟶ RF(K)` is an isomorphism”.
+**`CategoryTheory.Functor.isIso_ι_app_of_computesRightDerived_single_of_isRightDerivedValueAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean, line 486](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean#L486). The attribute's comment: “`RF` defined at `K` in the sense of Tag 05S9, terms right `F`-acyclic in the sense of Tag 0157; conclusion: the canonical map `F(K) ⟶ RF(K)` is an isomorphism”.
 
 > **Leray's acyclicity lemma**, [Stacks, Tag 015E], in Stacks' generality: `RF` is assumed to be
 > defined at `K` alone; no global existence of `RF` and no injectives are assumed.
@@ -329,7 +329,7 @@ public theorem isIso_ι_app_of_computesRightDerived_single_of_isRightDerivedValu
 
 [Tag 05TA](https://stacks.math.columbia.edu/tag/05TA) in the Stacks Project.
 
-**`CategoryTheory.Functor.hasDerivedFunctors_of_enough_acyclic_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean#L1015). References: SGA 4 XVII (1.2.7).
+**`CategoryTheory.Functor.hasDerivedFunctors_of_enough_acyclic_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/AcyclicResolutions.lean#L1015). References: SGA 4 XVII (1.2.7).
 
 > **Stacks 05TA.** Let `F : C ⥤ D` be an additive functor of abelian categories.
 >
@@ -380,7 +380,7 @@ public theorem hasDerivedFunctors_of_enough_acyclic_objects (F : C ⥤ D) [F.Add
 
 [Tag 015F](https://stacks.math.columbia.edu/tag/015F) in the Stacks Project.
 
-**`Stacks.DerivedFunctor.HigherDerivedOfExact.everywhere_defined_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L323). The attribute's comment: “(2)”.
+**`Stacks.DerivedFunctor.HigherDerivedOfExact.everywhere_defined_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 323](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L323). The attribute's comment: “(2)”.
 
 > **Statement (2): `RF : D⁺(A) ⥤ D⁺(B)` is everywhere defined.**
 > `RF` relative to `Qis⁺(A)` is defined at every object of `K⁺(A)` (Stacks Definition 2,
@@ -395,7 +395,7 @@ theorem everywhere_defined_plus :
       (RFPlus F).IsRightDerivedFunctor (canonicalPlus F) (qisPlus (A := A))
 ```
 
-**`Stacks.DerivedFunctor.HigherDerivedOfExact.everywhere_defined`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L363). The attribute's comment: “(3)”.
+**`Stacks.DerivedFunctor.HigherDerivedOfExact.everywhere_defined`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 363](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L363). The attribute's comment: “(3)”.
 
 > **Statement (3): `RF : D(A) ⥤ D(B)` is everywhere defined.**
 > `RF` relative to `Qis(A)` is defined at every object of `K(A)` (Stacks Definition 2,
@@ -409,7 +409,7 @@ theorem everywhere_defined :
       (RF F).IsRightDerivedFunctor (canonical F) (qis (A := A))
 ```
 
-**`Stacks.DerivedFunctor.HigherDerivedOfExact.complexes_compute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L436). The attribute's comment: “(4)”.
+**`Stacks.DerivedFunctor.HigherDerivedOfExact.complexes_compute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 436](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L436). The attribute's comment: “(4)”.
 
 > **Statement (4), unbounded: every complex computes `RF`.**
 > For every complex `K` of `A` (an object of `K(A)`), `RF` is defined at `K` and the
@@ -423,7 +423,7 @@ theorem complexes_compute (K : HomotopyCategory A shape) :
       IsIso ((canonical F).app K)
 ```
 
-**`Stacks.DerivedFunctor.HigherDerivedOfExact.objects_right_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L467). The attribute's comment: “(1)”.
+**`Stacks.DerivedFunctor.HigherDerivedOfExact.objects_right_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 467](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L467). The attribute's comment: “(1)”.
 
 > **Statement (1): Every object of `A` is right acyclic for `F` (bounded-below).**
 > For every object `X` of `A`, the complex `X[0]`, viewed in `K⁺(A)`, computes
@@ -441,7 +441,7 @@ theorem objects_right_acyclic (X : A) :
         ((HomotopyCategory.Plus.singleFunctor A 0).obj X))
 ```
 
-**`Stacks.DerivedFunctor.HigherDerivedOfExact.higherDerived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 488](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L488). The attribute's comment: “(5)”.
+**`Stacks.DerivedFunctor.HigherDerivedOfExact.higherDerived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean, line 488](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/HigherDerivedFunctors.lean#L488). The attribute's comment: “(5)”.
 
 > **Statement (5a): `RⁱF = 0` for `i ≠ 0`.**
 > For every integer `i ≠ 0`, the functor `RⁱF = Hⁱ ∘ RF : A ⥤ B` is the zero functor;
@@ -459,4 +459,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.16, Tag 05TB](https://stacks.math.columbia.edu/tag/05TB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # A primitive cube root of unity
 
-The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean): 6 declarations, 6 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Basic`, [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean): 6 declarations, 6 with a docstring.
 
 > The root of unity `ω = exp (2 π i / 3)`, which both non-abelian factors of the gauge group see.
 
@@ -41,7 +41,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Basic`, [PhyslibAlph
 > `SU(3)`, the cyclic colour permutation has eigenvalues the powers of `ω`, and `diag(ω, ω²)`
 > lies in `SU(2)`.
 
-**`StandardModel.cubeRootOfUnity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L62).
+**`StandardModel.cubeRootOfUnity`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L62).
 
 > The primitive cube root of unity `ω = exp (2 π i / 3)`.
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Particles.StandardModel.GaugeGroup.Basic`, [PhyslibAlph
 noncomputable def cubeRootOfUnity : ℂ
 ```
 
-**`StandardModel.cubeRootOfUnity_isPrimitiveRoot`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L65).
+**`StandardModel.cubeRootOfUnity_isPrimitiveRoot`**, a lemma, [line 65](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L65).
 
 > `ω` is a primitive cube root of unity.
 
@@ -57,7 +57,7 @@ noncomputable def cubeRootOfUnity : ℂ
 lemma cubeRootOfUnity_isPrimitiveRoot : IsPrimitiveRoot cubeRootOfUnity 3
 ```
 
-**`StandardModel.cubeRootOfUnity_pow_three`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L70).
+**`StandardModel.cubeRootOfUnity_pow_three`**, a lemma, [line 70](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L70).
 
 > `ω` cubes to one.
 
@@ -65,7 +65,7 @@ lemma cubeRootOfUnity_isPrimitiveRoot : IsPrimitiveRoot cubeRootOfUnity 3
 lemma cubeRootOfUnity_pow_three : cubeRootOfUnity ^ 3 = 1
 ```
 
-**`StandardModel.cubeRootOfUnity_ne_zero`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L74).
+**`StandardModel.cubeRootOfUnity_ne_zero`**, a lemma, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L74).
 
 > `ω` is nonzero, being a value of the complex exponential.
 
@@ -73,7 +73,7 @@ lemma cubeRootOfUnity_pow_three : cubeRootOfUnity ^ 3 = 1
 lemma cubeRootOfUnity_ne_zero : cubeRootOfUnity ≠ 0
 ```
 
-**`StandardModel.cubeRootOfUnity_pow_mod`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L77).
+**`StandardModel.cubeRootOfUnity_pow_mod`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L77).
 
 > Powers of `ω` only see the exponent modulo three.
 
@@ -82,7 +82,7 @@ lemma cubeRootOfUnity_pow_mod (m : ℕ) :
     cubeRootOfUnity ^ (m % 3) = cubeRootOfUnity ^ m
 ```
 
-**`StandardModel.cubeRootOfUnity_mul_star`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L83).
+**`StandardModel.cubeRootOfUnity_mul_star`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean#L83).
 
 > `ω` has modulus one.
 
@@ -96,4 +96,4 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean)

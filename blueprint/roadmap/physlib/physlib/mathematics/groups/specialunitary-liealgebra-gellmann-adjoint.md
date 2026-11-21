@@ -8,7 +8,7 @@ proof: formalized
 
 # The adjoint action in the Gell-Mann basis
 
-The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Adjoint`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean): 7 declarations, 7 with a docstring.
+The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Adjoint`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean): 7 declarations, 7 with a docstring.
 
 > The matrix of the adjoint action of `SU(n)` on `su(n)` in the generalized Gell-Mann basis.
 
@@ -32,7 +32,7 @@ The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Adjoin
 
 ## A. The matrix of the adjoint action
 
-**`SULieAlgebra.adjointGellMannBasis`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L54).
+**`SULieAlgebra.adjointGellMannBasis`**, a def, [line 54](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L54).
 
 > The matrix of the adjoint action of `g` in the Gell-Mann basis, a real matrix, as a monoid
 > homomorphism from `SU(n)`.
@@ -42,7 +42,7 @@ noncomputable def adjointGellMannBasis {n : ℕ} :
     specialUnitaryGroup (Fin n) ℂ →* Matrix (GellMannIndex n) (GellMannIndex n) ℝ
 ```
 
-**`SULieAlgebra.adjointGellMannBasis_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L59).
+**`SULieAlgebra.adjointGellMannBasis_apply`**, a lemma, [line 59](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L59).
 
 > The entries of the matrix of the adjoint action, `re tr (λ_i g λ_j g†) / 2`.
 
@@ -52,7 +52,7 @@ lemma adjointGellMannBasis_apply {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ)
       ((gellMannMatrices i).1 * (g.1 * (gellMannMatrices j).1 * star g.1)).trace.re / 2
 ```
 
-**`SULieAlgebra.adjointGellMannBasis_inv`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L68).
+**`SULieAlgebra.adjointGellMannBasis_inv`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L68).
 
 > The matrix of the adjoint action of `g⁻¹` is the transpose of that of `g`, the adjoint action
 > preserving the contraction.
@@ -62,7 +62,7 @@ lemma adjointGellMannBasis_inv {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) :
     adjointGellMannBasis g⁻¹ = (adjointGellMannBasis g)ᵀ
 ```
 
-**`SULieAlgebra.adjointGellMannBasis_transpose_mul_self`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L77).
+**`SULieAlgebra.adjointGellMannBasis_transpose_mul_self`**, a lemma, [line 77](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L77).
 
 > The matrix of the adjoint action is orthogonal.
 
@@ -71,7 +71,7 @@ lemma adjointGellMannBasis_transpose_mul_self {n : ℕ} (g : specialUnitaryGroup
     (adjointGellMannBasis g)ᵀ * adjointGellMannBasis g = 1
 ```
 
-**`SULieAlgebra.toMatrix_adjointℂ_gellMannBasisℂ`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L83).
+**`SULieAlgebra.toMatrix_adjointℂ_gellMannBasisℂ`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L83).
 
 > The matrix of the complex adjoint action in the complex Gell-Mann basis is the real matrix of
 > the adjoint action.
@@ -84,7 +84,7 @@ lemma toMatrix_adjointℂ_gellMannBasisℂ {n : ℕ} (g : specialUnitaryGroup (F
 
 ## B. The adjoint action on Gell-Mann matrices and coordinates
 
-**`SULieAlgebra.adjoint_gellMannMatrices`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L97).
+**`SULieAlgebra.adjoint_gellMannMatrices`**, a lemma, [line 97](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L97).
 
 > The adjoint action on a Gell-Mann matrix is a combination of Gell-Mann matrices with
 > coefficients the entries of the matrix of the adjoint action,
@@ -95,7 +95,7 @@ lemma adjoint_gellMannMatrices {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ) (
     adjoint g (gellMannMatrices j) = ∑ i, adjointGellMannBasis g i j • gellMannMatrices i
 ```
 
-**`SULieAlgebra.gellMannBasis_repr_adjoint`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L105).
+**`SULieAlgebra.gellMannBasis_repr_adjoint`**, a lemma, [line 105](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean#L105).
 
 > The adjoint action on the coordinates in the Gell-Mann basis is multiplication by the matrix of
 > the adjoint action, `A^i ↦ R_ij(g) A^j`.
@@ -112,4 +112,4 @@ lemma gellMannBasis_repr_adjoint {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ)
 
 ## Sources
 
-- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean)
+- [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean)

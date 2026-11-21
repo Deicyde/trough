@@ -8,13 +8,13 @@ proof: formalized
 
 # 110.54 Limit preserving on objects, not limit preserving
 
-Section 110.54 of the Stacks Project, [Tag 07Z0](https://stacks.math.columbia.edu/tag/07Z0). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 110.54 of the Stacks Project, [Tag 07Z0](https://stacks.math.columbia.edu/tag/07Z0). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07Z1, a lemma
 
 [Tag 07Z1](https://stacks.math.columbia.edu/tag/07Z1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.ObjectwiseLimitPreserving.exists_isStackInGroupoids_isLimitPreservingOnObjects_not_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ObjectwiseLimitPreservingTorsors.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Examples/Stacks/ObjectwiseLimitPreservingTorsors.lean#L96).
+**`AlgebraicGeometry.Stack.ObjectwiseLimitPreserving.exists_isStackInGroupoids_isLimitPreservingOnObjects_not_isLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/ObjectwiseLimitPreservingTorsors.lean, line 96](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Examples/Stacks/ObjectwiseLimitPreservingTorsors.lean#L96).
 
 > **Stacks 07Z1.** Let `S` be a nonempty scheme. There exists a stack in groupoids
 > `p : 𝒳 ⥤ (Sch/S)_fppf` such that `p` is limit preserving on objects (Stacks 06CU), but `𝒳`
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 110.54, Tag 07Z0](https://stacks.math.columbia.edu/tag/07Z0)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Charges associated with a potential term
 
-The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean): 17 declarations, 2 with a docstring.
+The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm`, [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean): 17 declarations, 2 with a docstring.
 
 ## i. Overview
 
@@ -38,7 +38,7 @@ The module `Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm`,
 > We first define `ofPotentialTerm`, and prover properties of it.
 > This is slow to compute in practice.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L74).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm`**, a def, [line 74](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L74).
 
 > Given a charge spectrum `x : ChargeSpectrum 𝓩` associated to the representations, and a
 > potential term `T`, the charges associated with instances of that potential term.
@@ -52,7 +52,7 @@ def ofPotentialTerm (x : ChargeSpectrum 𝓩) (T : PotentialTerm) : Multiset �
 > We show that `ofPotentialTerm` is monotone in its charge spectrum argument.
 > That is if `x ⊆ y` then `ofPotentialTerm x T ⊆ ofPotentialTerm y T`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_mono`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L87).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_mono`**, a lemma, [line 87](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L87).
 
 ```lean
 lemma ofPotentialTerm_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) (T : PotentialTerm) :
@@ -63,7 +63,7 @@ lemma ofPotentialTerm_mono {x y : ChargeSpectrum 𝓩} (h : x ⊆ y) (T : Potent
 
 > For the empty charge spectrum, the charges associated with any potential term is empty.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_empty`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L111).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_empty`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L111).
 
 ```lean
 lemma ofPotentialTerm_empty (T : PotentialTerm) :
@@ -76,7 +76,7 @@ lemma ofPotentialTerm_empty (T : PotentialTerm) :
 > This is faster to compute with, but less obviously connected to the underlying
 > fields.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L133).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'`**, a def, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L133).
 
 > Given a charges `x : ChargeSpectrum` associated to the representations, and a potential
 > term `T`, the charges associated with instances of that potential term.
@@ -93,7 +93,7 @@ def ofPotentialTerm' (y : ChargeSpectrum 𝓩) (T : PotentialTerm) : Multiset �
 
 > For each potential term, we give an explicit form of the multiset `ofPotentialTerm'`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_μ_finset`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L188).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_μ_finset`**, a lemma, [line 188](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L188).
 
 ```lean
 lemma ofPotentialTerm'_μ_finset {x : ChargeSpectrum 𝓩} :
@@ -101,7 +101,7 @@ lemma ofPotentialTerm'_μ_finset {x : ChargeSpectrum 𝓩} :
     (x.qHd.toFinset.product <| x.qHu.toFinset).val.map (fun x => x.1 - x.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_β_finset`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L193).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_β_finset`**, a lemma, [line 193](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L193).
 
 ```lean
 lemma ofPotentialTerm'_β_finset {x : ChargeSpectrum 𝓩} :
@@ -109,7 +109,7 @@ lemma ofPotentialTerm'_β_finset {x : ChargeSpectrum 𝓩} :
     (x.qHu.toFinset.product <| x.Q5).val.map (fun x => - x.1 + x.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W2_finset`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L198).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W2_finset`**, a lemma, [line 198](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L198).
 
 ```lean
 lemma ofPotentialTerm'_W2_finset {x : ChargeSpectrum 𝓩} :
@@ -118,7 +118,7 @@ lemma ofPotentialTerm'_W2_finset {x : ChargeSpectrum 𝓩} :
     (fun x => x.1 + x.2.1 + x.2.2.1 + x.2.2.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W3_finset`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L204).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W3_finset`**, a lemma, [line 204](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L204).
 
 ```lean
 lemma ofPotentialTerm'_W3_finset {x : ChargeSpectrum 𝓩} :
@@ -126,7 +126,7 @@ lemma ofPotentialTerm'_W3_finset {x : ChargeSpectrum 𝓩} :
     (fun x => -x.1 - x.1 + x.2.1 + x.2.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W4_finset`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L209).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_W4_finset`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L209).
 
 ```lean
 lemma ofPotentialTerm'_W4_finset {x : ChargeSpectrum 𝓩} :
@@ -135,7 +135,7 @@ lemma ofPotentialTerm'_W4_finset {x : ChargeSpectrum 𝓩} :
     (fun x => x.1 - x.2.1 - x.2.1 + x.2.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_K2_finset`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L215).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_K2_finset`**, a lemma, [line 215](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L215).
 
 ```lean
 lemma ofPotentialTerm'_K2_finset {x : ChargeSpectrum 𝓩} :
@@ -144,7 +144,7 @@ lemma ofPotentialTerm'_K2_finset {x : ChargeSpectrum 𝓩} :
     (fun x => x.1 + x.2.1 + x.2.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_topYukawa_finset`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L221).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_topYukawa_finset`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L221).
 
 ```lean
 lemma ofPotentialTerm'_topYukawa_finset {x : ChargeSpectrum 𝓩} :
@@ -153,7 +153,7 @@ lemma ofPotentialTerm'_topYukawa_finset {x : ChargeSpectrum 𝓩} :
     (fun x => -x.1 + x.2.1 + x.2.2)
 ```
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_bottomYukawa_finset`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L227).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_bottomYukawa_finset`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L227).
 
 ```lean
 lemma ofPotentialTerm'_bottomYukawa_finset {x : ChargeSpectrum 𝓩} :
@@ -167,7 +167,7 @@ lemma ofPotentialTerm'_bottomYukawa_finset {x : ChargeSpectrum 𝓩} :
 > We show that for the empty charge spectrum, the charges associated with any potential term is empty,
 > as defined through `ofPotentialTerm'`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_empty`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L243).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_empty`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L243).
 
 ```lean
 lemma ofPotentialTerm'_empty (T : PotentialTerm) :
@@ -187,7 +187,7 @@ lemma ofPotentialTerm'_empty (T : PotentialTerm) :
 
 > We first show that `ofPotentialTerm` is a subset of `ofPotentialTerm'`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_subset_ofPotentialTerm'`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L269).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm_subset_ofPotentialTerm'`**, a lemma, [line 269](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L269).
 
 ```lean
 lemma ofPotentialTerm_subset_ofPotentialTerm' {x : ChargeSpectrum 𝓩} (T : PotentialTerm) :
@@ -199,7 +199,7 @@ lemma ofPotentialTerm_subset_ofPotentialTerm' {x : ChargeSpectrum 𝓩} (T : Pot
 > We now show the other direction of the subset relation, that
 > `ofPotentialTerm'` is a subset of `ofPotentialTerm`.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_subset_ofPotentialTerm`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L313).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_subset_ofPotentialTerm`**, a lemma, [line 313](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L313).
 
 ```lean
 lemma ofPotentialTerm'_subset_ofPotentialTerm [DecidableEq 𝓩]
@@ -214,7 +214,7 @@ lemma ofPotentialTerm'_subset_ofPotentialTerm [DecidableEq 𝓩]
 > We do not say anything about the multiplicity of elements within the multisets,
 > which is not important for us.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.mem_ofPotentialTerm_iff_mem_ofPotentialTerm`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L381).
+**`SuperSymmetry.SU5.ChargeSpectrum.mem_ofPotentialTerm_iff_mem_ofPotentialTerm`**, a lemma, [line 381](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L381).
 
 ```lean
 lemma mem_ofPotentialTerm_iff_mem_ofPotentialTerm [DecidableEq 𝓩]
@@ -227,7 +227,7 @@ lemma mem_ofPotentialTerm_iff_mem_ofPotentialTerm [DecidableEq 𝓩]
 > Due to the equivalence of elements of `ofPotentialTerm` and `ofPotentialTerm'`,
 > we can now also show that `ofPotentialTerm'` is monotone in its charge spectrum argument.
 
-**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_mono`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L397).
+**`SuperSymmetry.SU5.ChargeSpectrum.ofPotentialTerm'_mono`**, a lemma, [line 397](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean#L397).
 
 ```lean
 lemma ofPotentialTerm'_mono [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩}
@@ -242,4 +242,4 @@ lemma ofPotentialTerm'_mono [DecidableEq 𝓩] {x y : ChargeSpectrum 𝓩}
 
 ## Sources
 
-- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean)
+- [Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean)

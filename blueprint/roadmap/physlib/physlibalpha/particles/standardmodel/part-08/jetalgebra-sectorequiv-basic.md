@@ -8,7 +8,7 @@ proof: formalized
 
 # The sector algebras of the Standard Model inside its local field algebra
 
-The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean): 36 declarations, 25 with a docstring; 1 private, not shown.
+The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Basic`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean): 36 declarations, 25 with a docstring; 1 private, not shown.
 
 ## i. Overview
 
@@ -67,7 +67,7 @@ The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.SectorEquiv.Basic`, 
 > blocks. The only Standard Model input the comparison needs is the relabelling between the
 > two.
 
-**`StandardModel.fermionSpaceEquiv`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L102).
+**`StandardModel.fermionSpaceEquiv`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L102).
 
 > The total fermionic target space is the fermionic module of the datum. The nested
 > product of five three-generation blocks that `FermionSpace` is, rearranged into a
@@ -79,7 +79,7 @@ noncomputable def fermionSpaceEquiv :
     fermionMatterField.V ≃ₗ[ℂ] (fieldData.fermionMatterField 3 fieldData_fermion_massWeight).V
 ```
 
-**`StandardModel.fermionProj`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L139).
+**`StandardModel.fermionProj`**, a def, [line 139](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L139).
 
 > The projection of the total fermionic target space onto the value space of a species
 > of the datum: the relabelling followed by the projection of the module.
@@ -89,7 +89,7 @@ noncomputable def fermionProj (t : fieldData.FermionSpecies) :
     fermionMatterField.V →ₗ[ℂ] (fieldData.fermion t).V
 ```
 
-**`StandardModel.fermionProj_eq`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L144).
+**`StandardModel.fermionProj_eq`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L144).
 
 ```lean
 lemma fermionProj_eq (t : fieldData.FermionSpecies) :
@@ -97,35 +97,35 @@ lemma fermionProj_eq (t : fieldData.FermionSpecies) :
       fermionSpaceEquiv.toLinearMap
 ```
 
-**`StandardModel.fermionProj_leptonDoublet`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L149).
+**`StandardModel.fermionProj_leptonDoublet`**, a lemma, [line 149](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L149).
 
 ```lean
 lemma fermionProj_leptonDoublet (i : Fin 3) :
     fermionProj (.leptonDoublet i) = FermionSpace.leptonDoubletProj i
 ```
 
-**`StandardModel.fermionProj_leptonSinglet`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L153).
+**`StandardModel.fermionProj_leptonSinglet`**, a lemma, [line 153](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L153).
 
 ```lean
 lemma fermionProj_leptonSinglet (i : Fin 3) :
     fermionProj (.leptonSinglet i) = FermionSpace.leptonSingletProj i
 ```
 
-**`StandardModel.fermionProj_quarkDoublet`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L157).
+**`StandardModel.fermionProj_quarkDoublet`**, a lemma, [line 157](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L157).
 
 ```lean
 lemma fermionProj_quarkDoublet (i : Fin 3) :
     fermionProj (.quarkDoublet i) = FermionSpace.quarkDoubletProj i
 ```
 
-**`StandardModel.fermionProj_upSinglet`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L161).
+**`StandardModel.fermionProj_upSinglet`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L161).
 
 ```lean
 lemma fermionProj_upSinglet (i : Fin 3) :
     fermionProj (.upSinglet i) = FermionSpace.upSingletProj i
 ```
 
-**`StandardModel.fermionProj_downSinglet`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L165).
+**`StandardModel.fermionProj_downSinglet`**, a lemma, [line 165](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L165).
 
 ```lean
 lemma fermionProj_downSinglet (i : Fin 3) :
@@ -134,7 +134,7 @@ lemma fermionProj_downSinglet (i : Fin 3) :
 
 ### A.2. The Higgs as the one bosonic species
 
-**`StandardModel.higgsModuleEquiv`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L176).
+**`StandardModel.higgsModuleEquiv`**, a def, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L176).
 
 > The Higgs multiplet is the bosonic module of the datum. There is one bosonic
 > species, so the module of bosonic values is the constant family on it.
@@ -144,7 +144,7 @@ noncomputable def higgsModuleEquiv :
     HiggsVec.matterField.V ≃ₗ[ℂ] (fieldData.bosonMatterField 2 fieldData_boson_massWeight).V
 ```
 
-**`StandardModel.projBosonValue_comp_higgsModuleEquiv`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L186).
+**`StandardModel.projBosonValue_comp_higgsModuleEquiv`**, a lemma, [line 186](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L186).
 
 > Reading off the one species undoes the relabelling.
 
@@ -154,7 +154,7 @@ lemma projBosonValue_comp_higgsModuleEquiv (j : fieldData.BosonSpecies) :
         higgsModuleEquiv.toLinearMap = LinearMap.id
 ```
 
-**`StandardModel.comap_projBosonValue_comp_comap_higgsModuleEquiv`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L192).
+**`StandardModel.comap_projBosonValue_comp_comap_higgsModuleEquiv`**, a lemma, [line 192](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L192).
 
 > The pullback along the relabelling undoes the pullback along the one projection.
 
@@ -173,7 +173,7 @@ lemma comap_projBosonValue_comp_comap_higgsModuleEquiv (j : fieldData.BosonSpeci
 > by `comapEquiv` to a map *from* the component space of the module *to* that of
 > `FermionSpace`, which is the direction the composite needs.
 
-**`StandardModel.fermionGeneratorsEquiv`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L217).
+**`StandardModel.fermionGeneratorsEquiv`**, a def, [line 217](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L217).
 
 > The fermionic generator space of the datum is the component space of the total
 > fermionic target space. The generic presentation of the direct sum as the component
@@ -184,7 +184,7 @@ noncomputable def fermionGeneratorsEquiv :
     fieldData.FermionGenerators ≃ₗ[ℂ] JetComponentSpace fermionMatterField
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_inclFermion`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L226).
+**`StandardModel.fermionGeneratorsEquiv_inclFermion`**, a lemma, [line 226](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L226).
 
 > A species sits inside the fermionic generators as the pullback along the projection
 > onto that species.
@@ -196,7 +196,7 @@ lemma fermionGeneratorsEquiv_inclFermion (t : fieldData.FermionSpecies)
       = JetComponentSpace.comap (fermionProj t) x
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_comap`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L238).
+**`StandardModel.fermionGeneratorsEquiv_symm_comap`**, a lemma, [line 238](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L238).
 
 ```lean
 lemma fermionGeneratorsEquiv_symm_comap (t : fieldData.FermionSpecies)
@@ -205,7 +205,7 @@ lemma fermionGeneratorsEquiv_symm_comap (t : fieldData.FermionSpecies)
       = fieldData.inclFermion t x
 ```
 
-**`JetComponentSpace.comap_snd_of_zero`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L245).
+**`JetComponentSpace.comap_snd_of_zero`**, a lemma, [line 245](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L245).
 
 > The second half of a pullback of an unconjugated symbol vanishes.
 
@@ -218,7 +218,7 @@ lemma _root_.JetComponentSpace.comap_snd_of_zero {G₀ : Type} [Group G₀] {�
     (JetComponentSpace.comap f ((x, 0) : JetComponentSpace N)).2 = 0
 ```
 
-**`JetComponentSpace.comap_fst_of_zero`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L256).
+**`JetComponentSpace.comap_fst_of_zero`**, a lemma, [line 256](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L256).
 
 > The first half of a pullback of a conjugate symbol vanishes.
 
@@ -231,7 +231,7 @@ lemma _root_.JetComponentSpace.comap_fst_of_zero {G₀ : Type} [Group G₀] {�
     (JetComponentSpace.comap f ((0, y) : JetComponentSpace N)).1 = 0
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_basis_tmul`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L267).
+**`StandardModel.fermionGeneratorsEquiv_symm_basis_tmul`**, a lemma, [line 267](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L267).
 
 > The unconjugated symbol `∂_s ψ_φ` of a species, read on the total target space.
 
@@ -244,7 +244,7 @@ lemma fermionGeneratorsEquiv_symm_basis_tmul (t : fieldData.FermionSpecies)
           JetComponentSpace (fieldData.fermion t))
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_basis_tmul_conj`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L283).
+**`StandardModel.fermionGeneratorsEquiv_symm_basis_tmul_conj`**, a lemma, [line 283](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L283).
 
 > The conjugate symbol `∂_s ψ̄_φ` of a species, read on the total target space.
 
@@ -259,7 +259,7 @@ lemma fermionGeneratorsEquiv_symm_basis_tmul_conj (t : fieldData.FermionSpecies)
           JetComponentSpace (fieldData.fermion t))
 ```
 
-**`StandardModel.bosonGeneratorsEquiv`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L304).
+**`StandardModel.bosonGeneratorsEquiv`**, a def, [line 304](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L304).
 
 > The bosonic generator space of the datum is the component space of the Higgs.
 > There is one bosonic species, so the direct sum has one summand and the relabelling of
@@ -271,7 +271,7 @@ noncomputable def bosonGeneratorsEquiv :
     fieldData.BosonGenerators ≃ₗ[ℂ] JetComponentSpace HiggsVec.matterField
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_inclBoson`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L310).
+**`StandardModel.bosonGeneratorsEquiv_inclBoson`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L310).
 
 ```lean
 lemma bosonGeneratorsEquiv_inclBoson (j : fieldData.BosonSpecies)
@@ -279,7 +279,7 @@ lemma bosonGeneratorsEquiv_inclBoson (j : fieldData.BosonSpecies)
     bosonGeneratorsEquiv (fieldData.inclBoson j y) = y
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_symm_apply`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L319).
+**`StandardModel.bosonGeneratorsEquiv_symm_apply`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L319).
 
 ```lean
 lemma bosonGeneratorsEquiv_symm_apply (y : JetComponentSpace HiggsVec.matterField) :
@@ -292,7 +292,7 @@ lemma bosonGeneratorsEquiv_symm_apply (y : JetComponentSpace HiggsVec.matterFiel
 > corresponding factor of the carrier a free algebra over the other, so the generator
 > identifications of section A lift to algebra equivalences by functoriality.
 
-**`StandardModel.fermionAlgebraEquiv`**, a def, [line 337](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L337).
+**`StandardModel.fermionAlgebraEquiv`**, a def, [line 337](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L337).
 
 > The fermionic factor: one exterior algebra, over the two presentations of the same
 > generator space.
@@ -302,7 +302,7 @@ noncomputable def fermionAlgebraEquiv :
     FermionJetAlgebra ≃ₐ[ℂ] ExteriorAlgebra ℂ fieldData.FermionGenerators
 ```
 
-**`StandardModel.higgsAlgebraEquiv`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L343).
+**`StandardModel.higgsAlgebraEquiv`**, a def, [line 343](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L343).
 
 > The Higgs factor: one symmetric algebra, over the two presentations of the same
 > generator space.
@@ -312,7 +312,7 @@ noncomputable def higgsAlgebraEquiv :
     HiggsJetAlgebra ≃ₐ[ℂ] SymmetricAlgebra ℂ fieldData.BosonGenerators
 ```
 
-**`StandardModel.fermionAlgebraEquiv_ι`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L349).
+**`StandardModel.fermionAlgebraEquiv_ι`**, a lemma, [line 349](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L349).
 
 ```lean
 lemma fermionAlgebraEquiv_ι (v : JetComponentSpace fermionMatterField) :
@@ -320,7 +320,7 @@ lemma fermionAlgebraEquiv_ι (v : JetComponentSpace fermionMatterField) :
       = ExteriorAlgebra.ι ℂ (fermionGeneratorsEquiv.symm v)
 ```
 
-**`StandardModel.higgsAlgebraEquiv_ι`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L355).
+**`StandardModel.higgsAlgebraEquiv_ι`**, a lemma, [line 355](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L355).
 
 ```lean
 lemma higgsAlgebraEquiv_ι (v : JetComponentSpace HiggsVec.matterField) :
@@ -334,7 +334,7 @@ lemma higgsAlgebraEquiv_ι (v : JetComponentSpace HiggsVec.matterField) :
 > `ιFermion`, `ιBoson` and `ιConnection` of the field datum. These are the reductions the
 > named Standard Model field symbols are computed by.
 
-**`StandardModel.includeFermion_ι`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L372).
+**`StandardModel.includeFermion_ι`**, a lemma, [line 372](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L372).
 
 > A degree-one element of the fermionic factor, included, is a total fermionic
 > generator.
@@ -344,7 +344,7 @@ lemma includeFermion_ι (w : fieldData.FermionGenerators) :
     fieldData.includeFermion (ExteriorAlgebra.ι ℂ w) = fieldData.ιFermionTotal w
 ```
 
-**`StandardModel.includeBoson_ι`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L376).
+**`StandardModel.includeBoson_ι`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L376).
 
 > A degree-one element of the bosonic factor, included, is a total bosonic generator.
 
@@ -354,7 +354,7 @@ lemma includeBoson_ι (w : fieldData.BosonGenerators) :
       = fieldData.ιBosonTotal w
 ```
 
-**`StandardModel.includeConnection_one_tmul_ι`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L382).
+**`StandardModel.includeConnection_one_tmul_ι`**, a lemma, [line 382](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L382).
 
 > A real degree-one element of the connection factor, included, is a connection
 > generator.
@@ -366,7 +366,7 @@ lemma includeConnection_one_tmul_ι (v : GaugeBoson.JetComponentSpace GaugeAlgeb
       = fieldData.ιConnection v
 ```
 
-**`StandardModel.ιFermionTotal_inclFermion`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L388).
+**`StandardModel.ιFermionTotal_inclFermion`**, a lemma, [line 388](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L388).
 
 > The total fermionic generator of a species summand is that species' generator.
 
@@ -376,7 +376,7 @@ lemma ιFermionTotal_inclFermion (t : fieldData.FermionSpecies)
     fieldData.ιFermionTotal (fieldData.inclFermion t x) = fieldData.ιFermion t x
 ```
 
-**`StandardModel.ιBosonTotal_inclBoson`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L393).
+**`StandardModel.ιBosonTotal_inclBoson`**, a lemma, [line 393](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L393).
 
 > The total bosonic generator of a species summand is that species' generator.
 
@@ -399,7 +399,7 @@ lemma ιBosonTotal_inclBoson (j : fieldData.BosonSpecies)
 > added here is the relabelling of the target space, which `JetComponentSpace.comap_jetDeriv`
 > lets through.
 
-**`StandardModel.fermionGeneratorsEquiv_jetDerivFermion`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L416).
+**`StandardModel.fermionGeneratorsEquiv_jetDerivFermion`**, a lemma, [line 416](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L416).
 
 > The fermionic generator identification intertwines the derivative shift of the datum
 > with the derivative shift on the component space of the total target space.
@@ -411,7 +411,7 @@ lemma fermionGeneratorsEquiv_jetDerivFermion (μ : Fin 1 ⊕ Fin 3)
       = JetComponentSpace.jetDeriv μ (fermionGeneratorsEquiv w)
 ```
 
-**`StandardModel.fermionGeneratorsEquiv_symm_jetDeriv`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L427).
+**`StandardModel.fermionGeneratorsEquiv_symm_jetDeriv`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L427).
 
 > The inverse form of `fermionGeneratorsEquiv_jetDerivFermion`.
 
@@ -422,7 +422,7 @@ lemma fermionGeneratorsEquiv_symm_jetDeriv (μ : Fin 1 ⊕ Fin 3)
       = fieldData.jetDerivFermion μ (fermionGeneratorsEquiv.symm v)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_jetDerivBoson`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L438).
+**`StandardModel.bosonGeneratorsEquiv_jetDerivBoson`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L438).
 
 > The bosonic generator identification intertwines the two derivative shifts.
 
@@ -433,7 +433,7 @@ lemma bosonGeneratorsEquiv_jetDerivBoson (μ : Fin 1 ⊕ Fin 3)
       = JetComponentSpace.jetDeriv μ (bosonGeneratorsEquiv w)
 ```
 
-**`StandardModel.bosonGeneratorsEquiv_symm_jetDeriv`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L449).
+**`StandardModel.bosonGeneratorsEquiv_symm_jetDeriv`**, a lemma, [line 449](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L449).
 
 > The inverse form of `bosonGeneratorsEquiv_jetDerivBoson`.
 
@@ -444,7 +444,7 @@ lemma bosonGeneratorsEquiv_symm_jetDeriv (μ : Fin 1 ⊕ Fin 3)
       = fieldData.jetDerivBoson μ (bosonGeneratorsEquiv.symm v)
 ```
 
-**`StandardModel.fermionAlgebraEquiv_jetDeriv`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L473).
+**`StandardModel.fermionAlgebraEquiv_jetDeriv`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L473).
 
 > The fermionic sector equivalence is a map of differential algebras: the exterior
 > derivation extending the derivative shift on the total target space goes to the exterior
@@ -457,7 +457,7 @@ lemma fermionAlgebraEquiv_jetDeriv (μ : Fin 1 ⊕ Fin 3) (f : FermionJetAlgebra
           (fermionAlgebraEquiv f)
 ```
 
-**`StandardModel.higgsAlgebraEquiv_jetDeriv`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L482).
+**`StandardModel.higgsAlgebraEquiv_jetDeriv`**, a lemma, [line 482](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean#L482).
 
 > The Higgs sector equivalence is a map of differential algebras.
 
@@ -477,4 +477,4 @@ lemma higgsAlgebraEquiv_jetDeriv (μ : Fin 1 ⊕ Fin 3) (h : HiggsJetAlgebra) :
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean)
+- [PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean)

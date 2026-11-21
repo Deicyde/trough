@@ -8,7 +8,7 @@ proof: formalized
 
 # Multiplication operators on `SpaceDHilbertSpace`
 
-The module `Physlib.QuantumMechanics.Operators.Multiplication`, [Physlib/QuantumMechanics/Operators/Multiplication.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean): 29 declarations, 29 with a docstring; 2 private, not shown.
+The module `Physlib.QuantumMechanics.Operators.Multiplication`, [Physlib/QuantumMechanics/Operators/Multiplication.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean): 29 declarations, 29 with a docstring; 2 private, not shown.
 
 ## i. Overview
 
@@ -50,7 +50,7 @@ The module `Physlib.QuantumMechanics.Operators.Multiplication`, [Physlib/Quantum
 
 ## A. Definition
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L85).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator`**, a def, [line 85](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L85).
 
 > The multiplication operator which maps `ψ` to the equivalence class of `f • ψ`
 > with maximal domain `{ψ : SpaceDHilbertspace d μ | MemHS (f • ψ) μ}`.
@@ -60,7 +60,7 @@ def mulOperator (μ : Measure (Space d)) (f : Space d → ℂ) :
     SpaceDHilbertSpace d μ →ₗ.[ℂ] SpaceDHilbertSpace d μ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mem_mulOperator_domain_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L119).
+**`QuantumMechanics.SpaceDHilbertSpace.mem_mulOperator_domain_iff`**, a lemma, [line 119](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L119).
 
 > The multiplication operator `𝓜 μ f` has maximal domain: `ψ` is in the domain exactly
 > when multiplying by `f` gives an element of the Hilbert space.
@@ -71,7 +71,7 @@ lemma mem_mulOperator_domain_iff
     ψ ∈ (𝓜 μ f).domain ↔ MemHS (f • ⇑ψ) μ
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_apply_ae`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L125).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_apply_ae`**, a lemma, [line 125](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L125).
 
 > The defining property of a multiplication operator: `ψ` is mapped to `f • ψ`.
 
@@ -82,7 +82,7 @@ lemma mulOperator_apply_ae {μ : Measure (Space d)} {f : Space d → ℂ} (ψ : 
 
 ## B. Domain
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_eq_top`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L134).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_eq_top`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L134).
 
 > The multiplication operator of a `μ`-a.e. bounded function has full domain.
 
@@ -92,7 +92,7 @@ lemma mulOperator_domain_eq_top {μ : Measure (Space d)}
     (𝓜 μ f).domain = ⊤
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_antitone`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L144).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_antitone`**, a lemma, [line 144](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L144).
 
 > The domains of multiplication operators shrink with increasing function norm.
 
@@ -102,7 +102,7 @@ lemma mulOperator_domain_antitone {μ : Measure (Space d)}
     (𝓜 μ f).domain ≤ (𝓜 μ g).domain
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mem_mulOperator_domain_of_ae_eq_indicator`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L154).
+**`QuantumMechanics.SpaceDHilbertSpace.mem_mulOperator_domain_of_ae_eq_indicator`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L154).
 
 > A state which is `μ`-a.e. equal to the indicator of a set on which `f` is `μ`-a.e. bounded
 > lies in the domain of `𝓜 μ f`.
@@ -114,7 +114,7 @@ lemma mem_mulOperator_domain_of_ae_eq_indicator {μ : Measure (Space d)} {f : Sp
     (hψ : ψ =ᵐ[μ] s.indicator 1) : ψ ∈ (𝓜 μ f).domain
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_eq_of_congr_norm`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L166).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_eq_of_congr_norm`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L166).
 
 > The multiplication operators corresponding to functions
 > of `μ`-a.e. equal norm have the same domain.
@@ -125,7 +125,7 @@ lemma mulOperator_domain_eq_of_congr_norm {μ : Measure (Space d)} {f g : Space 
     (𝓜 μ f).domain = (𝓜 μ g).domain
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_conj_domain`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L176).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_conj_domain`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L176).
 
 > The multiplication operators corresponding to a function
 > and its conjugate have the same domain.
@@ -136,7 +136,7 @@ lemma mulOperator_conj_domain
     (𝓜 μ (conj ∘ f)).domain = (𝓜 μ f).domain
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_hasDenseDomain`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L183).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_hasDenseDomain`**, a lemma, [line 183](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L183).
 
 > The multiplication operator corresponding to a `μ`-a.e. strongly measurable function
 > is densely defined.
@@ -147,7 +147,7 @@ lemma mulOperator_hasDenseDomain
     (𝓜 μ f).HasDenseDomain
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_ge_of_hasTemperateGrowth`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L232).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_domain_ge_of_hasTemperateGrowth`**, a lemma, [line 232](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L232).
 
 > The multiplication operator corresponding to a function of temperate growth
 > contains all Schwartz maps in its domain.
@@ -160,7 +160,7 @@ lemma mulOperator_domain_ge_of_hasTemperateGrowth {f : Space d → ℂ} (hf : f.
 
 ## C. Adjoint
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_adjoint_eq_conj`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L358).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_adjoint_eq_conj`**, a lemma, [line 358](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L358).
 
 > The adjoint of a multiplication operator is again a multiplication operator.
 
@@ -172,7 +172,7 @@ lemma mulOperator_adjoint_eq_conj {μ : Measure (Space d)} [IsFiniteMeasureOnCom
 
 ### C.1. Self-adjoint
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isSelfAdjoint_ofReal`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L376).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isSelfAdjoint_ofReal`**, a lemma, [line 376](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L376).
 
 > The multiplication operator corresponding to a real function is self-adjoint.
 
@@ -184,7 +184,7 @@ lemma mulOperator_isSelfAdjoint_ofReal {μ : Measure (Space d)} [IsFiniteMeasure
 
 ## D. Closed & unbounded
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isClosable`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L386).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isClosable`**, a lemma, [line 386](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L386).
 
 > Multiplication operators of `μ`-a.e. strongly measurable functions are closable.
 
@@ -194,7 +194,7 @@ lemma mulOperator_isClosable {μ : Measure (Space d)} [IsFiniteMeasureOnCompacts
     (𝓜 μ f).IsClosable
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isUnbounded`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L394).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isUnbounded`**, a lemma, [line 394](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L394).
 
 > Multiplication operators of `μ`-a.e. strongly measurable functions are unbounded.
 
@@ -204,7 +204,7 @@ lemma mulOperator_isUnbounded {μ : Measure (Space d)} [IsFiniteMeasureOnCompact
     (𝓜 μ f).IsUnbounded
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isClosed`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L400).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_isClosed`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L400).
 
 > Multiplication operators of `μ`-a.e. strongly measurable functions are closed.
 
@@ -216,7 +216,7 @@ lemma mulOperator_isClosed {μ : Measure (Space d)} [IsFiniteMeasureOnCompacts �
 
 ## E. Basic properties
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_zero`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L413).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_zero`**, a lemma, [line 413](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L413).
 
 > The multiplication operator of the zero function is the zero operator (domain `⊤`).
 
@@ -224,7 +224,7 @@ lemma mulOperator_isClosed {μ : Measure (Space d)} [IsFiniteMeasureOnCompacts �
 lemma mulOperator_zero (μ : Measure (Space d)) : 𝓜 μ 0 = 0
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_eq_of_congr_ae`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L420).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_eq_of_congr_ae`**, a lemma, [line 420](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L420).
 
 > `μ`-a.e. equal functions give rise to the same multiplication operator.
 
@@ -233,7 +233,7 @@ lemma mulOperator_eq_of_congr_ae {μ : Measure (Space d)} {f g : Space d → ℂ
     𝓜 μ f = 𝓜 μ g
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_eq_iff_ae_eq`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L430).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_eq_iff_ae_eq`**, a lemma, [line 430](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L430).
 
 > For a `μ`-a.e. strongly measurable `f` and σ-finite `μ`, the multiplication
 > operator determines the function up to `μ`-a.e. equality.
@@ -246,7 +246,7 @@ lemma mulOperator_eq_iff_ae_eq {μ : Measure (Space d)} [SigmaFinite μ] {f g : 
 
 ### E.1. Smul & neg
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_const_smul_ge`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L460).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_const_smul_ge`**, a lemma, [line 460](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L460).
 
 > Scalar multiplication and `mulOperator` commute except possibly for `c = 0`
 > where the domains of `0 • 𝓜 μ f` and `𝓜 μ 0 = 0` may not agree.
@@ -258,7 +258,7 @@ lemma mulOperator_const_smul_ge (μ : Measure (Space d)) (f : Space d → ℂ) (
     c • 𝓜 μ f ≤ 𝓜 μ (c • f)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_const_smul_eq`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L476).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_const_smul_eq`**, a lemma, [line 476](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L476).
 
 > Scalar multiplication and `mulOperator` commute for `c ≠ 0`.
 
@@ -267,7 +267,7 @@ lemma mulOperator_const_smul_eq (μ : Measure (Space d)) (f : Space d → ℂ) {
     𝓜 μ (c • f) = c • 𝓜 μ f
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_neg`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L484).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_neg`**, a lemma, [line 484](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L484).
 
 > Negation and `mulOperator` commute.
 
@@ -277,7 +277,7 @@ lemma mulOperator_neg (μ : Measure (Space d)) (f : Space d → ℂ) : 𝓜 μ (
 
 ### E.2. Add & sub
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_ge`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L499).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_ge`**, a lemma, [line 499](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L499).
 
 > `𝓜 μ (f + g)` extends `𝓜 μ f + 𝓜 μ g`.
 >
@@ -293,7 +293,7 @@ lemma mulOperator_add_ge (μ : Measure (Space d)) (f g : Space d → ℂ) :
     𝓜 μ f + 𝓜 μ g ≤ 𝓜 μ (f + g)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_eq`**, a lemma, [line 516](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L516).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_eq`**, a lemma, [line 516](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L516).
 
 > `(𝓜 μ g).domain = ⊤` is a sufficient condition to ensure equality in `mulOperator_add_ge`.
 
@@ -303,7 +303,7 @@ lemma mulOperator_add_eq
     𝓜 μ (f + g) = 𝓜 μ f + 𝓜 μ g
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_eq'`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L528).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_add_eq'`**, a lemma, [line 528](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L528).
 
 > Having both `‖f x‖ ≤ c * ‖f x + g x‖` and `‖g x‖ ≤ c' * ‖f x + g x‖` `μ`-a.e. is a sufficient
 > condition to ensure equality in `mulOperator_add_ge`.
@@ -315,7 +315,7 @@ lemma mulOperator_add_eq' {μ : Measure (Space d)}
     𝓜 μ (f + g) = 𝓜 μ f + 𝓜 μ g
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_ge`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L554).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_ge`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L554).
 
 > `𝓜 μ (f - g)` extends `𝓜 μ f - 𝓜 μ g`.
 >
@@ -331,7 +331,7 @@ lemma mulOperator_sub_ge (μ : Measure (Space d)) (f g : Space d → ℂ) :
     𝓜 μ f - 𝓜 μ g ≤ 𝓜 μ (f - g)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_eq`**, a lemma, [line 560](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L560).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_eq`**, a lemma, [line 560](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L560).
 
 > `(𝓜 μ g).domain = ⊤` is a sufficient condition to ensure equality in `mulOperator_sub_ge`.
 
@@ -341,7 +341,7 @@ lemma mulOperator_sub_eq
     𝓜 μ (f - g) = 𝓜 μ f - 𝓜 μ g
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_eq'`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L567).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_sub_eq'`**, a lemma, [line 567](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L567).
 
 > Having both `‖f x‖ ≤ c * ‖f x - g x‖` and `‖g x‖ ≤ c' * ‖f x - g x‖` `μ`-a.e. is a sufficient
 > condition to ensure equality in `mulOperator_sub_ge`.
@@ -355,7 +355,7 @@ lemma mulOperator_sub_eq' {μ : Measure (Space d)}
 
 ### E.3. Composition
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_smul_ge`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L587).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_smul_ge`**, a lemma, [line 587](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L587).
 
 > `𝓜 μ (f • g)` extends `𝓜 μ f * 𝓜 μ g`.
 >
@@ -370,7 +370,7 @@ lemma mulOperator_smul_ge (μ : Measure (Space d)) (f g : Space d → ℂ) :
     𝓜 μ f ∘ᵣ 𝓜 μ g ≤ 𝓜 μ (f • g)
 ```
 
-**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_smul_eq`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean#L603).
+**`QuantumMechanics.SpaceDHilbertSpace.mulOperator_smul_eq`**, a lemma, [line 603](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean#L603).
 
 > `(𝓜 μ g).domain = ⊤` is a sufficient condition to ensure equality in `mulOperator_smul_ge`.
 
@@ -389,4 +389,4 @@ lemma mulOperator_smul_eq
 
 ## Sources
 
-- [Physlib/QuantumMechanics/Operators/Multiplication.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Multiplication.lean)
+- [Physlib/QuantumMechanics/Operators/Multiplication.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/QuantumMechanics/Operators/Multiplication.lean)

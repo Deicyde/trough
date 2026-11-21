@@ -7,9 +7,9 @@ proof: formalized
 
 # Divergence of LTS
 
-`Cslib.Foundations.Semantics.LTS.Divergence`, in [Cslib/Foundations/Semantics/LTS/Divergence.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean), by Fabrizio Montesi.
+`Cslib.Foundations.Semantics.LTS.Divergence`, in [Cslib/Foundations/Semantics/LTS/Divergence.lean](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean), by Fabrizio Montesi.
 
-`Cslib.LTS.DivergentTrace` (definition, [line 23](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean#L23))
+`Cslib.LTS.DivergentTrace` (definition, [line 23](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean#L23))
 
 > An infinite trace is divergent if every label within it is τ.
 
@@ -17,7 +17,7 @@ proof: formalized
 def DivergentTrace [HasTau Label] (μs : ωSequence Label)
 ```
 
-`Cslib.LTS.Divergent` (definition, [line 26](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean#L26))
+`Cslib.LTS.Divergent` (definition, [line 26](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean#L26))
 
 > A state is divergent if there is a divergent execution from it.
 
@@ -25,7 +25,7 @@ def DivergentTrace [HasTau Label] (μs : ωSequence Label)
 def Divergent [HasTau Label] (lts : LTS State Label) (s : State) : Prop
 ```
 
-`Cslib.LTS.divergentTrace_drop` (theorem, [line 31](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean#L31))
+`Cslib.LTS.divergentTrace_drop` (theorem, [line 31](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean#L31))
 
 > If a trace is divergent, then any 'suffix' is also divergent.
 
@@ -36,7 +36,7 @@ theorem divergentTrace_drop
     DivergentTrace (μs.drop n)
 ```
 
-`Cslib.LTS.DivergenceFree` (class, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean#L41))
+`Cslib.LTS.DivergenceFree` (class, [line 41](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean#L41))
 
 > An LTS is divergence-free if it has no divergent state.
 
@@ -52,5 +52,5 @@ class DivergenceFree [HasTau Label] (lts : LTS State Label) where
 
 ## Sources
 
-- [Cslib/Foundations/Semantics/LTS/Divergence.lean at 86d560b6](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Divergence.lean)
+- [Cslib/Foundations/Semantics/LTS/Divergence.lean at 7c95c37f](https://github.com/leanprover/cslib/blob/7c95c37f952458306479b64468cb98d101ee1cf1/Cslib/Foundations/Semantics/LTS/Divergence.lean)
 - [Declaration ledger](../../../../../sources/cslib/Cslib.Foundations.Semantics.LTS.Divergence.json)

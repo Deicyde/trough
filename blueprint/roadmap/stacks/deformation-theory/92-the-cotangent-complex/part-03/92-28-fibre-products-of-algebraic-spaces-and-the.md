@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.28 Fibre products of algebraic spaces and the cotangent complex
 
-Section 92.28 of the Stacks Project, [Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 92.28 of the Stacks Project, [Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 09DK, an equation
 
 [Tag 09DK](https://stacks.math.columbia.edu/tag/09DK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fibreProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L156). The attribute's comment: “the diagram for a commutative square, in particular for the two projections of a fibre product; `E` is the cone of the map out of the direct sum”.
+**`AlgebraicGeometry.Space.fibreProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 156](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L156). The attribute's comment: “the diagram for a commutative square, in particular for the two projections of a fibre product; `E` is the cone of the map out of the direct sum”.
 
 > **Stacks 09DK.** Let `p : W ⟶ X` and `q : W ⟶ Y` be morphisms of algebraic spaces over `S`
 > with `p ≫ f = q ≫ g` for morphisms `f : X ⟶ Z` and `g : Y ⟶ Z`, for instance the two projections
@@ -55,7 +55,7 @@ noncomputable def fibreProductCotangentCorner (h : p ≫ f = q ≫ g) :
           distTriang (DerivedCategory (smallEtaleModulesULift B S hS W)) }
 ```
 
-**`AlgebraicGeometry.Space.fiberProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L192). The attribute's comment: “the diagram for the fibre product `X ×_Z Y` and its two projections; `E` is the cone of the map out of the direct sum”.
+**`AlgebraicGeometry.Space.fiberProductCotangentCorner`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean, line 192](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/Spaces/FibreProductCorner.lean#L192). The attribute's comment: “the diagram for the fibre product `X ×_Z Y` and its two projections; `E` is the cone of the map out of the direct sum”.
 
 > **Stacks 09DK**, for the fibre product `X ×_Z Y` of algebraic spaces (Stacks 02X2) with its
 > projections `p` and `q`: the diagram of
@@ -71,7 +71,7 @@ noncomputable def fiberProductCotangentCorner
 
 [Tag 09DL](https://stacks.math.columbia.edu/tag/09DL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean#L331).
+**`AlgebraicGeometry.Space.fiberProduct_cotangentComplex_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean, line 331](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/Spaces/FibreProductTorIndependent.lean#L331).
 
 > **Stacks 09DL.** Let `X ⟶ Z` and `Y ⟶ Z` be morphisms of algebraic spaces over `S`, and let
 > `W = X ×_Z Y` with projections `p` and `q`. If `X` and `Y` are Tor independent over `Z`, then the
@@ -96,7 +96,7 @@ theorem fiberProduct_cotangentComplex_of_torIndependent (f : X ⟶ Z) (g : Y ⟶
 
 [Tag 09DM](https://stacks.math.columbia.edu/tag/09DM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L303). The attribute's comment: “for every cartesian square of algebraic spaces, in particular for the fibre product with its two projections (`fiberProduct_upperRightCorner_homology`), and every object E fitting into the upper right corner of the diagram of 09DK”.
+**`AlgebraicGeometry.Space.upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 303](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L303). The attribute's comment: “for every cartesian square of algebraic spaces, in particular for the fibre product with its two projections (`fiberProduct_upperRightCorner_homology`), and every object E fitting into the upper right corner of the diagram of 09DK”.
 
 > **Stacks 09DM, for a cartesian square.** Let `p : W ⟶ X`, `q : W ⟶ Y`, `f : X ⟶ Z`,
 > `g : Y ⟶ Z` be a cartesian square of algebraic spaces over `S` and let `E` be an object fitting
@@ -137,7 +137,7 @@ theorem upperRightCorner_homology (hpb : IsPullback p q f g)
           (CommAlgCat.torOneTensorProductModule _ _ _))
 ```
 
-**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×\_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^\{-1}(E) = 0, and H^\{-2}(E)\_w ≅ Tor\_1^R(A, B) ⊗\_\{A ⊗\_R B} C as C-modules for the etale local rings R, A, B, C”.
+**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×\_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^\{-1}(E) = 0, and H^\{-2}(E)\_w ≅ Tor\_1^R(A, B) ⊗\_\{A ⊗\_R B} C as C-modules for the etale local rings R, A, B, C”.
 
 > **Stacks 09DM.** Let `X ⟶ Z` and `Y ⟶ Z` be morphisms of algebraic spaces over `S`, let
 > `W = X ×_Z Y` with projections `p` and `q`, and let `E` be the object of Stacks 09DK, i.e. any
@@ -211,4 +211,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.28, Tag 09DJ](https://stacks.math.columbia.edu/tag/09DJ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

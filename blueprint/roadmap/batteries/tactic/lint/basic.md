@@ -7,7 +7,7 @@ proof: formalized
 
 # Basic linter types and attributes
 
-`Batteries.Tactic.Lint.Basic`, in [Batteries/Tactic/Lint/Basic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean), by Floris van Doorn, Robert Y. Lewis, Gabriel Ebner.
+`Batteries.Tactic.Lint.Basic`, in [Batteries/Tactic/Lint/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean), by Floris van Doorn, Robert Y. Lewis, Gabriel Ebner.
 
 > This file defines the basic types and attributes used by the linting
 > framework.  A linter essentially consists of a function
@@ -20,7 +20,7 @@ proof: formalized
 >  * `@[nolint linterName]` omits the tagged declaration from being checked by
 >    the linter with name `linterName`.
 
-`Lean.Environment.isAutoDecl` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L41))
+`Lean.Environment.isAutoDecl` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L41))
 
 > Returns true if `decl` is an automatically generated declaration.
 >
@@ -31,7 +31,7 @@ proof: formalized
 def _root_.Lean.Environment.isAutoDecl (env : Environment) (decl : Name) : Bool
 ```
 
-`Batteries.Tactic.Lint.isAutoDecl` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L76))
+`Batteries.Tactic.Lint.isAutoDecl` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L76))
 
 > Returns true if `decl` is an automatically generated declaration.
 >
@@ -44,7 +44,7 @@ def _root_.Lean.Environment.isAutoDecl (env : Environment) (decl : Name) : Bool
 def isAutoDecl {m} [Monad m] [MonadEnv m] (decl : Name) : m Bool
 ```
 
-`Lean.Environment.isPrivateOrAutoDecl` (definition, [line 85](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L85))
+`Lean.Environment.isPrivateOrAutoDecl` (definition, [line 85](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L85))
 
 > Returns true if `decl` is a private or automatically generated declaration.
 >
@@ -54,7 +54,7 @@ def isAutoDecl {m} [Monad m] [MonadEnv m] (decl : Name) : m Bool
 def _root_.Lean.Environment.isPrivateOrAutoDecl (env : Environment) (decl : Name) : Bool
 ```
 
-`Batteries.Tactic.Lint.isPrivateOrAutoDecl` (definition, [line 97](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L97))
+`Batteries.Tactic.Lint.isPrivateOrAutoDecl` (definition, [line 97](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L97))
 
 > Returns true if `decl` is a private or automatically generated declaration.
 >
@@ -67,7 +67,7 @@ def _root_.Lean.Environment.isPrivateOrAutoDecl (env : Environment) (decl : Name
 def isPrivateOrAutoDecl {m} [Monad m] [MonadEnv m] (decl : Name) : m Bool
 ```
 
-`Batteries.Tactic.Lint.Linter` (structure, [line 101](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L101))
+`Batteries.Tactic.Lint.Linter` (structure, [line 101](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L101))
 
 > A linting test for the `#lint` command.
 
@@ -94,7 +94,7 @@ structure Linter where
   isLocal := false
 ```
 
-`Batteries.Tactic.Lint.NamedLinter` (structure, [line 123](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L123))
+`Batteries.Tactic.Lint.NamedLinter` (structure, [line 123](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L123))
 
 > A `NamedLinter` is a linter associated to a particular declaration.
 
@@ -106,7 +106,7 @@ structure NamedLinter extends Linter where
   declName : Name
 ```
 
-`Batteries.Tactic.Lint.getLinter` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L130))
+`Batteries.Tactic.Lint.getLinter` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L130))
 
 > Gets a linter by declaration name.
 
@@ -114,7 +114,7 @@ structure NamedLinter extends Linter where
 def getLinter (name declName : Name) : CoreM NamedLinter
 ```
 
-`Batteries.Tactic.Lint.shouldBeLinted` (definition, [line 200](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean#L200))
+`Batteries.Tactic.Lint.shouldBeLinted` (definition, [line 200](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean#L200))
 
 > Returns true if `decl` should be checked
 > using `linter`, i.e., if there is no `nolint` attribute.
@@ -129,5 +129,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Tactic/Lint/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Basic.lean)
+- [Batteries/Tactic/Lint/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Basic.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Tactic.Lint.Basic.json)

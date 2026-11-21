@@ -7,12 +7,12 @@ proof: formalized
 
 # Forward NTT
 
-`CompPoly.Univariate.NTT.Forward`, in [CompPoly/Univariate/NTT/Forward.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean), by Salih Erdem Koçak, Doran Pamukçu.
+`CompPoly.Univariate.NTT.Forward`, in [CompPoly/Univariate/NTT/Forward.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean), by Salih Erdem Koçak, Doran Pamukçu.
 
 > This file provides spec-level forward NTT definitions together with an
 > iterative radix-2 implementation.
 
-`CompPoly.CPolynomial.NTT.Forward.nttAt` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L31))
+`CompPoly.CPolynomial.NTT.Forward.nttAt` (definition, [line 31](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L31))
 
 > DFT/NTT formula at one output index.
 
@@ -20,7 +20,7 @@ proof: formalized
 def nttAt (D : Domain R) (a : Array R) (k : D.Idx) : R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardSpec` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L35))
+`CompPoly.CPolynomial.NTT.Forward.forwardSpec` (definition, [line 35](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L35))
 
 > Full forward transform specified directly from the NTT formula.
 
@@ -28,7 +28,7 @@ def nttAt (D : Domain R) (a : Array R) (k : D.Idx) : R
 def forwardSpec (D : Domain R) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L44))
+`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L44))
 
 > Proof-oriented stagewise specification for the forward transform.
 >
@@ -39,7 +39,7 @@ def forwardSpec (D : Domain R) (a : Array R) : Array R
 def forwardStageSpec (D : Domain R) (completed : Nat) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L53))
+`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec` (definition, [line 53](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L53))
 
 > Stagewise pure specification built from `butterflyStageSpec`.
 >
@@ -50,7 +50,7 @@ def forwardStageSpec (D : Domain R) (completed : Nat) (a : Array R) : Array R
 def forwardStagePureSpec (D : Domain R) (completed : Nat) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L63))
+`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec` (definition, [line 63](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L63))
 
 > Mathematical partial-DFT state after `completed` radix-2 stages.
 >
@@ -62,14 +62,14 @@ def forwardStagePureSpec (D : Domain R) (completed : Nat) (a : Array R) : Array 
 def forwardMathStageSpec (D : Domain R) (completed : Nat) (a : Array R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_zero` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L122))
+`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_zero` (theorem, [line 122](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L122))
 
 ```lean
 theorem forwardStageSpec_zero (D : Domain R) (a : Array R) :
     forwardStageSpec D 0 a = bitRevPermute D a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_succ` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L125))
+`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_succ` (theorem, [line 125](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L125))
 
 ```lean
 theorem forwardStageSpec_succ (D : Domain R) (stage : Nat) (a : Array R) :
@@ -77,14 +77,14 @@ theorem forwardStageSpec_succ (D : Domain R) (stage : Nat) (a : Array R) :
       butterflyStage D stage (forwardStageSpec D stage a)
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_zero` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L129))
+`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_zero` (theorem, [line 129](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L129))
 
 ```lean
 theorem forwardStagePureSpec_zero (D : Domain R) (a : Array R) :
     forwardStagePureSpec D 0 a = bitRevPermute D a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_succ` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L132))
+`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_succ` (theorem, [line 132](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L132))
 
 ```lean
 theorem forwardStagePureSpec_succ (D : Domain R) (stage : Nat) (a : Array R) :
@@ -92,21 +92,21 @@ theorem forwardStagePureSpec_succ (D : Domain R) (stage : Nat) (a : Array R) :
       butterflyStageSpec D stage (forwardStagePureSpec D stage a)
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.size_forwardStageSpec` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L136))
+`CompPoly.CPolynomial.NTT.Forward.size_forwardStageSpec` (theorem, [line 136](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L136))
 
 ```lean
 theorem size_forwardStageSpec (D : Domain R) (completed : Nat) (a : Array R) :
     (forwardStageSpec D completed a).size = D.n
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.size_forwardStagePureSpec` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L146))
+`CompPoly.CPolynomial.NTT.Forward.size_forwardStagePureSpec` (theorem, [line 146](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L146))
 
 ```lean
 theorem size_forwardStagePureSpec (D : Domain R) (completed : Nat) (a : Array R) :
     (forwardStagePureSpec D completed a).size = D.n
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_eq_forwardStagePureSpec` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L162))
+`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_eq_forwardStagePureSpec` (theorem, [line 162](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L162))
 
 > The algorithmic stage recursion agrees with the pure stage recursion.
 >
@@ -118,7 +118,7 @@ theorem forwardStageSpec_eq_forwardStagePureSpec (D : Domain R) (a : Array R) :
     ∀ completed : Nat, forwardStageSpec D completed a = forwardStagePureSpec D completed a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec_zero` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L176))
+`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec_zero` (theorem, [line 176](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L176))
 
 > Base case of the mathematical stage invariant: before any butterflies, the
 > state is exactly the bit-reversed input.
@@ -128,7 +128,7 @@ theorem forwardMathStageSpec_zero (D : Domain R) (a : Array R) :
     forwardMathStageSpec D 0 a = bitRevPermute D a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.butterflyStageSpec_forwardMathStageSpec_succ` (theorem, [line 775](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L775))
+`CompPoly.CPolynomial.NTT.Forward.butterflyStageSpec_forwardMathStageSpec_succ` (theorem, [line 775](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L775))
 
 ```lean
 theorem butterflyStageSpec_forwardMathStageSpec_succ
@@ -137,7 +137,7 @@ theorem butterflyStageSpec_forwardMathStageSpec_succ
       forwardMathStageSpec D (stage + 1) a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_eq_forwardMathStageSpec` (theorem, [line 791](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L791))
+`CompPoly.CPolynomial.NTT.Forward.forwardStagePureSpec_eq_forwardMathStageSpec` (theorem, [line 791](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L791))
 
 > The pure stage recursion matches the mathematical partial-DFT state at every
 > stage.
@@ -148,7 +148,7 @@ theorem forwardStagePureSpec_eq_forwardMathStageSpec (D : Domain R) (a : Array R
       forwardStagePureSpec D completed a = forwardMathStageSpec D completed a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.runStages_bitRevPermute_eq_forwardStageSpec` (theorem, [line 813](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L813))
+`CompPoly.CPolynomial.NTT.Forward.runStages_bitRevPermute_eq_forwardStageSpec` (theorem, [line 813](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L813))
 
 > Algorithmic stages coincide with the proof-oriented stagewise specification.
 >
@@ -161,7 +161,7 @@ theorem runStages_bitRevPermute_eq_forwardStageSpec (D : Domain R) (a : Array R)
     Transform.runStages D (Transform.bitRevPermute D a) = forwardStageSpec D D.logN a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec_final_eq_forwardSpec` (theorem, [line 822](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L822))
+`CompPoly.CPolynomial.NTT.Forward.forwardMathStageSpec_final_eq_forwardSpec` (theorem, [line 822](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L822))
 
 > Once all `logN` stages are completed, the stagewise specification matches the
 > direct NTT formula.
@@ -171,7 +171,7 @@ theorem forwardMathStageSpec_final_eq_forwardSpec (D : Domain R) (a : Array R) :
     forwardMathStageSpec D D.logN a = forwardSpec D a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_final_eq_forwardSpec` (theorem, [line 842](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L842))
+`CompPoly.CPolynomial.NTT.Forward.forwardStageSpec_final_eq_forwardSpec` (theorem, [line 842](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L842))
 
 > Once all `logN` stages are completed, the stagewise specification matches the
 > direct NTT formula.
@@ -181,7 +181,7 @@ theorem forwardStageSpec_final_eq_forwardSpec (D : Domain R) (a : Array R) :
     forwardStageSpec D D.logN a = forwardSpec D a
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardImpl` (definition, [line 853](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L853))
+`CompPoly.CPolynomial.NTT.Forward.forwardImpl` (definition, [line 853](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L853))
 
 > Intended fast implementation entry point for NTT.
 
@@ -189,14 +189,14 @@ theorem forwardStageSpec_final_eq_forwardSpec (D : Domain R) (a : Array R) :
 def forwardImpl (D : Domain R) (p : CPolynomial.Raw R) : Array R
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.size_forwardSpec` (theorem, [line 856](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L856))
+`CompPoly.CPolynomial.NTT.Forward.size_forwardSpec` (theorem, [line 856](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L856))
 
 ```lean
 theorem size_forwardSpec (D : Domain R) (a : Array R) :
     (forwardSpec D a).size = D.n
 ```
 
-`CompPoly.CPolynomial.NTT.Forward.forwardImpl_correct` (theorem, [line 860](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean#L860))
+`CompPoly.CPolynomial.NTT.Forward.forwardImpl_correct` (theorem, [line 860](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean#L860))
 
 ```lean
 theorem forwardImpl_correct (D : Domain R) (p : CPolynomial.Raw R) :
@@ -209,5 +209,5 @@ theorem forwardImpl_correct (D : Domain R) (p : CPolynomial.Raw R) :
 
 ## Sources
 
-- [CompPoly/Univariate/NTT/Forward.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/NTT/Forward.lean)
+- [CompPoly/Univariate/NTT/Forward.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/NTT/Forward.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.NTT.Forward.json)

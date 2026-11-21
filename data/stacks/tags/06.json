@@ -1,6 +1,6 @@
 {
  "schema": "trough-stacks/v1",
- "rev": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+ "rev": "f56a316ddf7a930906d88b78d6f9a2668cffd0cf",
  "tags": [
   {
    "tag": "0600",
@@ -13933,7 +13933,7 @@
     {
      "name": "AlgebraicGeometry.Stack.isAlgebraicStack_of_flatCover",
      "kind": "theorem",
-     "line": 96,
+     "line": 97,
      "private": false,
      "doc": "**Artin's theorem on representability of flat groupoids.** Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism\nof categories fibred in groupoids over the big fppf site of `S`, with `𝒴` a stack. If `𝒳` is\nrepresentable by an algebraic space and `F` is representable by algebraic spaces, surjective,\nflat and locally of finite presentation, then `𝒴` is an algebraic stack.\n\nThe source asks `𝒳` and `𝒴` to be stacks in groupoids. `𝒳` is one because it is representable\nby an algebraic space (`AlgebraicGeometry.Stack.isStack_of_isRepresentableByAlgebraicSpace`), and\n`𝒴` is a stack in groupoids at every descent universe because it is a stack (Stacks 02ZJ).",
      "statement": "theorem isAlgebraicStack_of_flatCover\n    {𝒳 𝒴 : CatFiberedInGroupoids.{u, u, u + 1, u + 1} (BigFppfOver B S hS)}\n    (F : 𝒳 ⟶ 𝒴)\n    (hstack : 𝒴.val.p.IsStack (BigFppfOver.topology B S hS))\n    (h𝒳 : IsRepresentableByAlgebraicSpace B S hS 𝒳)\n    (hF : IsRepresentableByAlgebraicSpaces B S hS F.hom)\n    (hFprops : ∀ (V : BigFppfOver B S hS)\n      (y : BigFppfOver B V.left.1 V.left.2 ⥤ 𝒴.val.obj)\n      (_hy : y ⋙ 𝒴.val.p = Over.map V.hom)\n      (G : (BigFppfOver B V.left.1 V.left.2)ᵒᵖ ⥤ Type u)\n      (hG : IsAlgebraicSpace B V.left.1 V.left.2 G),\n      Nonempty (StacksRepresentableCFG.EquivalenceOver\n        (TwoFibreProductOver.fst (Over.map V.hom) 𝒳.val.p 𝒴.val.p y\n          (CatFiberedInGroupoids.homFunctor F))\n        (presheafOfCategories (G ⋙ typeToCat)).p) →\n      (let g := (algebraicSpaceMap B S hS V\n        ((spacesOverSmallerBaseFunctor B V.left.1 S V.left.2 hS V.hom).obj ⟨G, hG⟩)).hom\n       Space.IsSurjective B S hS g ∧ Space.IsFlat B S hS g ∧\n         Space.IsLocallyOfFinitePresentation B S hS g)) :\n    IsAlgebraicStack.{u, w} B S hS 𝒴.val",
@@ -24169,7 +24169,7 @@
     {
      "name": "AlgebraicGeometry.Stack.tfae_hasSingletonPointMonomorphism_and_existsUnique_isResidualGerbeAt",
      "kind": "theorem",
-     "line": 288,
+     "line": 289,
      "private": false,
      "doc": "**Stacks 06MT.** Let `𝒳` be an algebraic stack over `S` and let `x` be a point of `|𝒳|`. The\nfollowing are equivalent:\n\n1. there exist an algebraic stack `𝒵` and a monomorphism `𝒵 ⟶ 𝒳` such that `|𝒵|` is a singleton\n   whose image in `|𝒳|` is `x`;\n2. there exist a reduced algebraic stack `𝒵` and a monomorphism `𝒵 ⟶ 𝒳` such that `|𝒵|` is a\n   singleton whose image in `|𝒳|` is `x`;\n3. there exist an algebraic stack `𝒵`, a monomorphism `f : 𝒵 ⟶ 𝒳` and a surjective flat\n   1-morphism `z : Spec(k) ⟶ 𝒵` with `k` a field, such that `x = f(z)`.\n\nMoreover, if these conditions hold, there is a unique strictly full subcategory `𝒵_x ⊂ 𝒳` which is\na reduced, locally Noetherian algebraic stack whose space of points is a singleton mapping to `x`.\n\nThe equivalence is `AlgebraicGeometry.Stack.tfae_hasSingletonPointMonomorphism` and the final\nassertion is `AlgebraicGeometry.Stack.existsUnique_isResidualGerbeAt`.",
      "statement": "theorem tfae_hasSingletonPointMonomorphism_and_existsUnique_isResidualGerbeAt\n    (𝒳 : AlgebraicStacks.{u, w} B S hS) (x : AlgebraicStacks.points B S hS 𝒳) :\n    List.TFAE\n        [HasSingletonPointMonomorphism B S hS 𝒳 x,\n          HasReducedSingletonPointMonomorphism B S hS 𝒳 x,\n          HasFlatFieldCoverMonomorphism B S hS 𝒳 x] ∧\n      (HasSingletonPointMonomorphism B S hS 𝒳 x →\n        ∃! P : ObjectProperty 𝒳.val.val.obj, IsResidualGerbeAt B S hS 𝒳 x P)",
@@ -24203,9 +24203,9 @@
     {
      "name": "AlgebraicGeometry.Stack.residualGerbe",
      "kind": "abbrev",
-     "line": 264,
+     "line": 265,
      "private": false,
-     "doc": "**Stacks 06MU, part (2): the residual gerbe of `𝒳` at `x`, as an algebraic stack.** The\nsource takes it to be the strictly full subcategory `𝒵_x ⊂ 𝒳` produced by **Stacks 06MT**, that\nis, the one cut out by an object property of `𝒳` meeting the specification\n`AlgebraicGeometry.Stack.IsResidualGerbeAt`: closed under isomorphism, with full subcategory a\nreduced, locally Noetherian algebraic stack having exactly one point, lying over `x`.\n\nThat object property `P` and the proof `hP` that it meets the specification are the data of this\ndefinition. They are the defining property of the object being defined — what the source supposes\nwhen it says that, the residual gerbe existing, it *is* `𝒵_x` — and not a substitute for an\nunproved result: the algebraic stack returned is\n`AlgebraicGeometry.Stack.fullSubcategoryAlgebraicStack` at `P`, whose algebraicity is one of the\nconjuncts of `hP`.\n\nNothing here picks `P` out. Uniqueness of the object property, and with it the definite article\nin \"*the* residual gerbe\", is the final assertion of Stacks 06MT; the library proves it as\n`AlgebraicGeometry.Stack.eq_of_isResidualGerbeAt_of_bootstrap`, and existence together\nwith uniqueness under the equivalent conditions as\n`AlgebraicGeometry.Stack.existsUnique_isResidualGerbeAt` of `StacksFrontier.AlgebraicGeometry.Stacks.ResidualGerbeExistsUnique`.",
+     "doc": "**Stacks 06MU, part (2): the residual gerbe of `𝒳` at `x`, as an algebraic stack.** The\nsource takes it to be the strictly full subcategory `𝒵_x ⊂ 𝒳` produced by **Stacks 06MT**, that\nis, the one cut out by an object property of `𝒳` meeting the specification\n`AlgebraicGeometry.Stack.IsResidualGerbeAt`: closed under isomorphism, with full subcategory a\nreduced, locally Noetherian algebraic stack having exactly one point, lying over `x`.\n\nThat object property `P` and the proof `hP` that it meets the specification are the data of this\ndefinition. They are the defining property of the object being defined — what the source supposes\nwhen it says that, the residual gerbe existing, it *is* `𝒵_x` — and not a substitute for an\nunproved result: the algebraic stack returned is\n`AlgebraicGeometry.Stack.fullSubcategoryAlgebraicStack` at `P`, whose algebraicity is one of the\nconjuncts of `hP`.\n\nNothing here picks `P` out. Uniqueness of the object property, and with it the definite article\nin \"*the* residual gerbe\", is the final assertion of Stacks 06MT; the library proves it as\n`AlgebraicGeometry.Stack.eq_of_isResidualGerbeAt_of_bootstrap`, and existence together\nwith uniqueness under the equivalent conditions as\n`AlgebraicGeometry.Stack.existsUnique_isResidualGerbeAt` of\n`StacksFrontier.AlgebraicGeometry.Stacks.ResidualGerbeExistsUnique`.",
      "statement": "abbrev residualGerbe\n    (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)\n    (𝒳 : AlgebraicStacks.{u, w} B S hS)\n    (x : points B S hS 𝒳.val.val (Classical.choose 𝒳.property))\n    (P : ObjectProperty 𝒳.val.val.obj) (hP : IsResidualGerbeAt B S hS 𝒳 x P) :\n    AlgebraicStacks.{u, w} B S hS",
      "sorry": false,
      "ega": [],
@@ -24217,7 +24217,7 @@
     {
      "name": "AlgebraicGeometry.Stack.residualGerbeInclusion",
      "kind": "def",
-     "line": 287,
+     "line": 288,
      "private": false,
      "doc": "**Stacks 06MU, part (2): the inclusion of the residual gerbe of `𝒳` at `x`.** The residual\ngerbe is a *strictly full subcategory* of `𝒳`, and this is the inclusion 1-morphism `𝒵_x ⟶ 𝒳`\nthat makes it one: `AlgebraicGeometry.Stack.fullSubcategoryInclusion` at the object property\nwitnessing the specification.\n\nThe inclusion is fully faithful, being the inclusion of a full subcategory\n(`AlgebraicGeometry.Stack.full_fullSubcategoryInclusion` and\n`AlgebraicGeometry.Stack.faithful_fullSubcategoryInclusion`), and it satisfies the monomorphy\nclause of **Stacks 04ZW** by\n`AlgebraicGeometry.Stack.AlgebraicStacks.mono_representingMaps_fullSubcategoryInclusion`. That it\nis also representable by algebraic spaces, and so a monomorphism, is\n`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_fullSubcategoryInclusion`, the last\nassertion of Stacks 06MR, in a module downstream of this one.",
      "statement": "def residualGerbeInclusion\n    (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)\n    (𝒳 : AlgebraicStacks.{u, w} B S hS)\n    (x : points B S hS 𝒳.val.val (Classical.choose 𝒳.property))\n    (P : ObjectProperty 𝒳.val.val.obj) (hP : IsResidualGerbeAt B S hS 𝒳 x P) :\n    residualGerbe B S hS 𝒳 x P hP ⟶ 𝒳",
@@ -24475,7 +24475,7 @@
     {
      "name": "AlgebraicGeometry.Stack.isAbsolutelyDM_iff_isDeligneMumfordStack_unconditional",
      "kind": "theorem",
-     "line": 512,
+     "line": 513,
      "private": false,
      "doc": "**Stacks 06N3.** Let `𝒳` be an algebraic stack. The following are equivalent: (1) `𝒳` is DM,\n(2) `𝒳` is Deligne–Mumford, and (3) there is a scheme `W` with a surjective étale 1-morphism\n`W ⟶ 𝒳`.\n\nAs in the source, (3) is the definition of (2) (**Stacks 03YO**,\n`AlgebraicGeometry.Stack.IsDeligneMumfordStack`: a scheme of the site carrying a 1-morphism to\n`𝒳` that is representable by algebraic spaces, surjective and étale), so the three conditions\nare the single equivalence below. Condition (1) is the absolute DM property of **Stacks 050D**,\npart (5), which is DM over `Spec ℤ`; the argument `hZ` records that the site contains the\nterminal scheme, which is what that definition is stated at, and it always holds\n(`AlgebraicGeometry.BigFppfSite.contains_terminal`).\n\nThe implication (2) ⟹ (1) is `AlgebraicGeometry.Stack.isAbsolutelyDM_of_isDeligneMumfordStack`,\noff part (1) of **Stacks 06MB**. The implication (1) ⟹ (3) is\n`AlgebraicGeometry.Stack.existsEtalePresentationOfIsAbsolutelyDM` of this file: the source's\nétale chart at each finite type point, with a size bound uniform in the point\n(`AlgebraicGeometry.Stack.exists_isRelativelyEtale_chart_size_le_of_isFiniteTypePoint`), and\nthe disjoint union of these charts\n(`AlgebraicGeometry.Stack.existsEtalePresentationOfIsAbsolutelyDM_of_forall_exists_chart`).",
      "statement": "theorem isAbsolutelyDM_iff_isDeligneMumfordStack_unconditional\n    (hZ : B.Contains (⊤_ Scheme.{u})) (𝒳 : AlgebraicStacks.{u, w} B S hS) :\n    AlgebraicStacks.IsAbsolutelyDM B S hS hZ 𝒳 ↔\n      IsDeligneMumfordStack.{u, w} B S hS 𝒳.val.val",
@@ -24631,7 +24631,7 @@
     {
      "name": "CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver",
      "kind": "theorem",
-     "line": 193,
+     "line": 194,
      "private": false,
      "doc": "**Stacks 06N8 (Lemma 4.35.17), first claim.** Let `p : 𝒳 ⥤ 𝒞` and `q : 𝒴 ⥤ 𝒞` be fibred\nin groupoids and `F : 𝒳 ⥤ 𝒴` a 1-morphism over `𝒞` (`F ⋙ q = p`). Let `p' : 𝒳' ⥤ 𝒞`,\n`p'' : 𝒳'' ⥤ 𝒞` be categories over `𝒞`, `a : 𝒳 ⥤ 𝒳'` and `b : 𝒳 ⥤ 𝒳''` equivalences over\n`𝒞` (`a ⋙ p' = p`, `b ⋙ p'' = p`, with quasi-inverses, units and counits over `𝒞`), and\n`f : 𝒳' ⥤ 𝒴`, `g : 𝒳'' ⥤ 𝒴` 1-morphisms over `𝒞` (`f ⋙ q = p'`, `g ⋙ q = p''`) which are\nfibred in groupoids. Assume the diagram 2-commutes over `𝒞`: `α : a ⋙ f ≅ F` and\n`β : b ⋙ g ≅ F` have components over identities of `𝒞`. Then there is an equivalence\n`h : 𝒳'' ⥤ 𝒳'` of categories over `𝒴` (`h ⋙ f = g` and `Functor.IsEquivalenceOver g f h`)\ntogether with a 2-isomorphism `b ⋙ h ≅ a` of 1-morphisms over `𝒞` (components over identities\nof `𝒞` for `p'`).\n\nThe fibredness of `p` and `q` and the equation `F ⋙ q = p` are part of the setting of the\nsource and are not used by the proof.",
      "statement": "theorem amelioration_unique_isEquivalenceOver {p : 𝒳 ⥤ 𝒞} {q : 𝒴 ⥤ 𝒞} {p' : 𝒳' ⥤ 𝒞}\n    {p'' : 𝒳'' ⥤ 𝒞} (_hp : p.IsFiberedInGroupoids) (_hq : q.IsFiberedInGroupoids)\n    (F : 𝒳 ⥤ 𝒴) (_hF : F ⋙ q = p)\n    (a : 𝒳 ⥤ 𝒳') (b : 𝒳 ⥤ 𝒳'') (_ha : a ⋙ p' = p) (_hb : b ⋙ p'' = p)\n    (ea : IsEquivalenceOver p p' a) (eb : IsEquivalenceOver p p'' b)\n    (f : 𝒳' ⥤ 𝒴) (g : 𝒳'' ⥤ 𝒴) (hfq : f ⋙ q = p') (_hgq : g ⋙ q = p'')\n    (hf : f.IsFiberedInGroupoids) (hg : g.IsFiberedInGroupoids)\n    (α : a ⋙ f ≅ F) (hα : IsVerticalNatTrans q α.hom)\n    (β : b ⋙ g ≅ F) (hβ : IsVerticalNatTrans q β.hom) :\n    ∃ (h : 𝒳'' ⥤ 𝒳') (_ : h ⋙ f = g) (_ : Nonempty (IsEquivalenceOver g f h))\n      (θ : b ⋙ h ≅ a), IsVerticalNatTrans p' θ.hom",
@@ -24645,7 +24645,7 @@
     {
      "name": "CategoryTheory.Functor.IsFiberedInGroupoids.amelioration_unique_isEquivalenceOver_of_comp_eq",
      "kind": "theorem",
-     "line": 235,
+     "line": 236,
      "private": false,
      "doc": "**Stacks 06N8 (Lemma 4.35.17), second claim.** In the setting of\n`amelioration_unique_isEquivalenceOver`, if the diagram actually commutes (`a ⋙ f = F` and\n`b ⋙ g = F`), then the equivalence `h : 𝒳'' ⥤ 𝒳'` over `𝒴` can be chosen so that `b ⋙ h ≅ a`\nis a 2-isomorphism of 1-morphisms over `𝒴`: its components lie over identities of `𝒴` for `f`\n(and hence over identities of `𝒞` for `p' = f ⋙ q`).\n\nThe fibredness of `p` and `q`, the equation `F ⋙ q = p`, and the remaining equations over `𝒞`\nare part of the setting of the source and are not used by the proof.",
      "statement": "theorem amelioration_unique_isEquivalenceOver_of_comp_eq {p : 𝒳 ⥤ 𝒞} {q : 𝒴 ⥤ 𝒞}\n    {p' : 𝒳' ⥤ 𝒞} {p'' : 𝒳'' ⥤ 𝒞} (_hp : p.IsFiberedInGroupoids)\n    (_hq : q.IsFiberedInGroupoids) (F : 𝒳 ⥤ 𝒴) (_hF : F ⋙ q = p)\n    (a : 𝒳 ⥤ 𝒳') (b : 𝒳 ⥤ 𝒳'') (_ha : a ⋙ p' = p) (_hb : b ⋙ p'' = p)\n    (ea : IsEquivalenceOver p p' a) (eb : IsEquivalenceOver p p'' b)\n    (f : 𝒳' ⥤ 𝒴) (g : 𝒳'' ⥤ 𝒴) (hfq : f ⋙ q = p') (_hgq : g ⋙ q = p'')\n    (hf : f.IsFiberedInGroupoids) (hg : g.IsFiberedInGroupoids)\n    (hα : a ⋙ f = F) (hβ : b ⋙ g = F) :\n    ∃ (h : 𝒳'' ⥤ 𝒳') (_ : h ⋙ f = g) (_ : Nonempty (IsEquivalenceOver g f h))\n      (θ : b ⋙ h ≅ a), IsVerticalNatTrans f θ.hom ∧ IsVerticalNatTrans p' θ.hom",
@@ -29636,7 +29636,7 @@
     {
      "name": "Deformation.associatedMorphism_map",
      "kind": "theorem",
-     "line": 199,
+     "line": 198,
      "private": false,
      "doc": "A morphism of formal objects gives the canonical 2-cell between the\nassociated morphisms of restricted representable categories. Its component\nat an Artinian point is characterized by the square with the corresponding\nlevel map of formal objects.",
      "statement": "public theorem associatedMorphism_map\n    (hp : IsCofiberedInGroupoids p)\n    {ξ η : FormalObject p} (a : ξ ⟶ η)\n    (pushforwards : ChosenPushforwards p) :\n    let f := restrictedRepresentableMap a.base\n    let X := associatedMorphism hp ξ pushforwards\n    let Y := associatedMorphism hp η pushforwards\n    ∃ τ : BasedFunctor.comp f X.toBasedFunctor ≅ Y.toBasedFunctor,\n      ∀ α, ∃ h : X.level (f.obj α) = Y.level α,\n        X.pointInclusion (f.obj α) ≫ τ.hom.app α =\n          a.app (X.level (f.obj α)) ≫\n            eqToHom (congrArg η.level h) ≫ Y.pointInclusion α",
@@ -29650,7 +29650,7 @@
     {
      "name": "Deformation.associatedMorphism_map_unique",
      "kind": "theorem",
-     "line": 419,
+     "line": 418,
      "private": false,
      "doc": "The commuting square with the level map determines the canonical\nYoneda 2-cell uniquely.",
      "statement": "public theorem associatedMorphism_map_unique\n    (hp : IsCofiberedInGroupoids p)\n    {ξ η : FormalObject p} (a : ξ ⟶ η)\n    (pushforwards : ChosenPushforwards p) :\n    let f := restrictedRepresentableMap a.base\n    let X := associatedMorphism hp ξ pushforwards\n    let Y := associatedMorphism hp η pushforwards\n    ∀ (τ σ : BasedFunctor.comp f X.toBasedFunctor ≅ Y.toBasedFunctor),\n      (∀ α, ∃ h : X.level (f.obj α) = Y.level α,\n        X.pointInclusion (f.obj α) ≫ τ.hom.app α =\n          a.app (X.level (f.obj α)) ≫\n            eqToHom (congrArg η.level h) ≫ Y.pointInclusion α) →\n      (∀ α, ∃ h : X.level (f.obj α) = Y.level α,\n        X.pointInclusion (f.obj α) ≫ σ.hom.app α =\n          a.app (X.level (f.obj α)) ≫\n            eqToHom (congrArg η.level h) ≫ Y.pointInclusion α) →\n      τ = σ",
@@ -34560,7 +34560,7 @@
     {
      "name": "AlgebraicGeometry.Stack.isLocallyQuasicoherent_tensorSheaf",
      "kind": "theorem",
-     "line": 689,
+     "line": 690,
      "private": false,
      "doc": "**Stacks 06WM**, clause (4). The tensor product in `Mod(𝒳_ét, 𝒪_𝒳)` of two locally\nquasi-coherent sheaves of modules on a category fibred in groupoids is locally quasi-coherent.\n\nThe tensor product is the sheafification, for the associated étale topology, of the objectwise\ntensor product. Its restriction to the small étale site of the scheme below an object `x` is the\ntensor product there of the restrictions of the two factors, by\n`AlgebraicGeometry.Stack.restrictModuleEtaleTensorSheafIso`: restriction commutes with the\nobjectwise tensor product because that is sectionwise, and with sheafification because the\nrestriction functor of Stacks 06W1 is cocontinuous as well as continuous. Quasi-coherence of a\ntensor product on a ringed site is\n`Stacks.Modules.isQuasicoherentOnSite_sheafificationTensorObjUlift`.",
      "statement": "theorem isLocallyQuasicoherent_tensorSheaf\n    (E : BigEtaleSite.{u}) (h : E.cutoff = B.cutoff)\n    (F G : SheafOfModules.{u}\n      (ringStructureSheafCore B S hS p hp (etaleTopology B) (etaleTopology_le_topology B)))\n    (hF : IsLocallyQuasicoherent B E h S hS p hp F.val)\n    (hG : IsLocallyQuasicoherent B E h S hS p hp G.val) :\n    letI := hasSheafify_etaleAssociatedTopology B S hS p hp\n    letI := wEqualsLocallyBijective_etaleAssociatedTopology B S hS p hp\n    IsLocallyQuasicoherent B E h S hS p hp\n      (((Stacks.SheafOfModules.Tensor.sheafTensor.{_, _, _, u, u}\n        (structureSheaf B S hS p hp (etaleTopology B)\n          (etaleTopology_le_topology B))).obj F).obj G).val",
@@ -34580,7 +34580,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf",
      "kind": "instance",
-     "line": 354,
+     "line": 355,
      "private": false,
      "doc": "**The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of\nStacks 03DL (6), on a site satisfying the hypotheses of this section**: the tensor product of\ntwo sheaves of modules which are quasi-coherent in the sense of\n`SheafOfModules.IsQuasicoherentOnSite` is again quasi-coherent in that sense.  That is the\nquasi-coherence the notion `QCoh(𝒪_𝒳)` of Stacks 06WG is defined by, and not Mathlib's\npredicate.\n\n**The hypotheses of this section exclude the site of Stacks 06WG**, which is why both clause\nstrings say so.  Of the five, the fibred fppf site of a category fibred in groupoids over\n`(Sch/S)_fppf` satisfies three and fails two; the two failures are\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite`, the size hypothesis, which at that\nsite's universes reads `UnivLE.{u + 1, u}`, and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel`, binary products, which such a\ncategory generally lacks for want of a final object.  See\n`StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredTensorHypotheses.lean`, where\nthe five are settled one by one.  So this statement does not instantiate to the source's clause,\nand the source's clause is not proved anywhere on this development.\n\nThe proof is the proof of\n`Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorSheaf` run through\n`SheafOfModules.isQuasicoherent_iff_isQuasicoherentOnSite`, the identification of the two\npredicates on a site whose objects and morphisms are small relative to the universe of the\nsections — which is the extra hypothesis `UnivLE.{max u v w, w}` and the only thing separating\nthe two statements.  It is not removable: on a big site, whose objects live one universe above\nits sections, the two predicates genuinely differ.\n\nWhat is *not* asserted is the rest of Stacks 06WN (2), namely that the tensor products formed in\n`Mod(𝒳_Zar, 𝒪)`, `Mod(𝒳_étale, 𝒪)` and `Mod(𝒪_𝒳)` agree.  Those are formed in different\ncategories, where sheafification is a different functor, so the agreement is not a consequence\nof this statement and the comparison is not available; hence the qualified clause string, as in\n`AlgebraicGeometry.FibredSite.colimits_quasicoherentModules_of_descent` for part (1).",
      "statement": "public instance isQuasicoherentOnSite_tensorSheaf\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherentOnSite] [G.IsQuasicoherentOnSite] :\n    ((((Stacks.SheafOfModules.Tensor.sheafTensor\n      ⟨O.obj, Presheaf.isSheaf_of_isSheaf_comp _ (O.obj) (forget₂ CommRingCat RingCat)\n        ((isSheaf_structureRingPresheaf O))⟩).obj (F)).obj (G))).IsQuasicoherentOnSite",
@@ -34599,7 +34599,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorObj",
      "kind": "instance",
-     "line": 376,
+     "line": 377,
      "private": false,
      "doc": "**The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of\nStacks 03DL (6)**, for the tensor product of the monoidal category `Mod(𝒪)` itself.  Together\nwith `Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf` this is the\ncovering set of the clause at the source's predicate, the development carrying both\ndescriptions of the tensor product.\n\nAs there, the hypotheses of this section **exclude the fibred fppf site of Stacks 06WG**, by\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite` and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel`; hence the qualified clause\nstrings.",
      "statement": "public instance isQuasicoherentOnSite_tensorObj\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherentOnSite] [G.IsQuasicoherentOnSite] :\n    (MonoidalCategory.tensorObj F G).IsQuasicoherentOnSite",
@@ -34613,7 +34613,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.quasicoherentOnSiteTensorBifunctor",
      "kind": "def",
-     "line": 398,
+     "line": 399,
      "private": false,
      "doc": "**The tensor product as a bifunctor on the quasi-coherent modules of Stacks 03DL (6)**: the\nrestriction of the tensor product of `Mod(𝒪)` to the full subcategory cut out by that\nquasi-coherence.  It exists exactly because that tensor product preserves that\nquasi-coherence, which is the tensor clause of Stacks 06WV (5).\n\nOn the fibred fppf site of Stacks 06WG this subcategory is `QCoh(𝒪_𝒳)`\n(`AlgebraicGeometry.FibredSite.quasicoherentModules`), but the hypotheses of this section do\nnot hold at that site — see\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite` and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel` — so this bifunctor is not the\none the source asserts; hence the qualified clause strings.",
      "statement": "public noncomputable def quasicoherentOnSiteTensorBifunctor :\n    (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ×\n      (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ⥤\n      (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory",
@@ -34669,7 +34669,7 @@
     {
      "name": "AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_tensorSheafMixed_quasicoherent",
      "kind": "theorem",
-     "line": 239,
+     "line": 243,
      "private": false,
      "doc": "**The tensor product of a pair of quasi-coherent modules with sections in independent\nuniverses, formed on the fppf site of a category fibred in groupoids, is quasi-coherent.**  This\nis the object whose universal property is\n`AlgebraicGeometry.FibredSite.existsUnique_hom_tensorSheafMixed_quasicoherent`, so the tensor\nproduct of quasi-coherent modules is again a quasi-coherent module.",
      "statement": "theorem isQuasicoherentOnSite_tensorSheafMixed_quasicoherent\n    (F : quasicoherentModules.{u, v, u, m} B S hS p hp)\n    (G : quasicoherentModules.{u, v, u, n} B S hS p hp) :\n    (tensorSheafMixed B S hS p hp .fppf ((toSiteModules B S hS p hp .fppf).obj F)\n      ((toSiteModules B S hS p hp .fppf).obj G)).IsQuasicoherentOnSite",
@@ -34917,7 +34917,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorSheaf",
      "kind": "instance",
-     "line": 241,
+     "line": 242,
      "private": false,
      "doc": "**Stacks 06WV (5) for Mathlib's `SheafOfModules.IsQuasicoherent`**: the tensor product of\ntwo quasi-coherent sheaves of modules on a site is quasi-coherent.  Quasi-coherence is a local\ncondition, and over a common refinement of the two coverings on which the factors are presented,\nthe tensored presentation presents the tensor product.\n\nThe quasi-coherence here is Mathlib's — a covering of the final object carrying\n`SheafOfModules.Presentation`s — and *not* the `SheafOfModules.IsQuasicoherentOnSite` of\nStacks 03DL (6), which is the notion `QCoh(𝒪_𝒳)` of Stacks 06WG means; hence the qualified\nclause string.  The clause for that notion is\n`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf` below, which is this\nstatement plus `SheafOfModules.isQuasicoherent_iff_isQuasicoherentOnSite` and so carries one\nfurther size hypothesis on the site.\n\nThis is also the site-level form of Stacks 01CE (3), which is a statement about a ringed space\nand is tagged there, on `AlgebraicGeometry.tensorSheaf_isQuasicoherent` in\n`StacksFrontier/CategoryTheory/Sites/Modules/TensorProduct/Basic.lean`.",
      "statement": "public instance isQuasicoherent_tensorSheaf\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherent] [G.IsQuasicoherent] :\n    ((((Stacks.SheafOfModules.Tensor.sheafTensor\n      ⟨O.obj, Presheaf.isSheaf_of_isSheaf_comp _ (O.obj) (forget₂ CommRingCat RingCat)\n        ((isSheaf_structureRingPresheaf O))⟩).obj (F)).obj (G))).IsQuasicoherent",
@@ -34940,7 +34940,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorObj",
      "kind": "instance",
-     "line": 267,
+     "line": 268,
      "private": false,
      "doc": "**Stacks 06WV (5) for Mathlib's `SheafOfModules.IsQuasicoherent`**, for the tensor product\nof the monoidal category `Mod(𝒪)` itself: given quasi-coherent sheaves of modules `F` and `G`,\nthe tensor product `F ⊗_𝒪 G` formed in `Mod(𝒪)` is quasi-coherent.  This is the shape in which\nthe source states the clause;\n`Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorSheaf` is the same statement for the\nexplicit model of that tensor product as a sheafified objectwise tensor product, and the two\ntogether are the covering set at this predicate, the development carrying both descriptions.\nThe same pair for the quasi-coherence of Stacks 03DL (6) is\n`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorObj` and\n`…isQuasicoherentOnSite_tensorSheaf`.",
      "statement": "public instance isQuasicoherent_tensorObj\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherent] [G.IsQuasicoherent] :\n    (MonoidalCategory.tensorObj F G).IsQuasicoherent",
@@ -34963,7 +34963,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.quasicoherentTensorBifunctor",
      "kind": "def",
-     "line": 286,
+     "line": 287,
      "private": false,
      "doc": "**The tensor product as a bifunctor on quasi-coherent modules**, `QCoh(𝒪) × QCoh(𝒪) ⥤\nQCoh(𝒪)`.  It is the restriction of the tensor product of `Mod(𝒪)` to the full subcategory of\nquasi-coherent modules, and it exists exactly because that tensor product preserves\nquasi-coherence, which is Stacks 06WV (5): a bifunctor valued in `QCoh(𝒪)` cannot be written\ndown before the clause is proved.  The quasi-coherence cutting out the subcategory is Mathlib's;\n`Stacks.SheafOfModules.TensorProduct.quasicoherentOnSiteTensorBifunctor` is the same bifunctor\non the subcategory cut out by the quasi-coherence of Stacks 03DL (6), which is the category\n`QCoh(𝒪_𝒳)` of Stacks 06WG.",
      "statement": "public noncomputable def quasicoherentTensorBifunctor :\n    (SheafOfModules.isQuasicoherent (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ×\n      (SheafOfModules.isQuasicoherent (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ⥤\n      (SheafOfModules.isQuasicoherent (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory",
@@ -34977,7 +34977,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf",
      "kind": "instance",
-     "line": 354,
+     "line": 355,
      "private": false,
      "doc": "**The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of\nStacks 03DL (6), on a site satisfying the hypotheses of this section**: the tensor product of\ntwo sheaves of modules which are quasi-coherent in the sense of\n`SheafOfModules.IsQuasicoherentOnSite` is again quasi-coherent in that sense.  That is the\nquasi-coherence the notion `QCoh(𝒪_𝒳)` of Stacks 06WG is defined by, and not Mathlib's\npredicate.\n\n**The hypotheses of this section exclude the site of Stacks 06WG**, which is why both clause\nstrings say so.  Of the five, the fibred fppf site of a category fibred in groupoids over\n`(Sch/S)_fppf` satisfies three and fails two; the two failures are\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite`, the size hypothesis, which at that\nsite's universes reads `UnivLE.{u + 1, u}`, and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel`, binary products, which such a\ncategory generally lacks for want of a final object.  See\n`StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/FibredTensorHypotheses.lean`, where\nthe five are settled one by one.  So this statement does not instantiate to the source's clause,\nand the source's clause is not proved anywhere on this development.\n\nThe proof is the proof of\n`Stacks.SheafOfModules.TensorProduct.isQuasicoherent_tensorSheaf` run through\n`SheafOfModules.isQuasicoherent_iff_isQuasicoherentOnSite`, the identification of the two\npredicates on a site whose objects and morphisms are small relative to the universe of the\nsections — which is the extra hypothesis `UnivLE.{max u v w, w}` and the only thing separating\nthe two statements.  It is not removable: on a big site, whose objects live one universe above\nits sections, the two predicates genuinely differ.\n\nWhat is *not* asserted is the rest of Stacks 06WN (2), namely that the tensor products formed in\n`Mod(𝒳_Zar, 𝒪)`, `Mod(𝒳_étale, 𝒪)` and `Mod(𝒪_𝒳)` agree.  Those are formed in different\ncategories, where sheafification is a different functor, so the agreement is not a consequence\nof this statement and the comparison is not available; hence the qualified clause string, as in\n`AlgebraicGeometry.FibredSite.colimits_quasicoherentModules_of_descent` for part (1).",
      "statement": "public instance isQuasicoherentOnSite_tensorSheaf\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherentOnSite] [G.IsQuasicoherentOnSite] :\n    ((((Stacks.SheafOfModules.Tensor.sheafTensor\n      ⟨O.obj, Presheaf.isSheaf_of_isSheaf_comp _ (O.obj) (forget₂ CommRingCat RingCat)\n        ((isSheaf_structureRingPresheaf O))⟩).obj (F)).obj (G))).IsQuasicoherentOnSite",
@@ -34996,7 +34996,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorObj",
      "kind": "instance",
-     "line": 376,
+     "line": 377,
      "private": false,
      "doc": "**The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of\nStacks 03DL (6)**, for the tensor product of the monoidal category `Mod(𝒪)` itself.  Together\nwith `Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf` this is the\ncovering set of the clause at the source's predicate, the development carrying both\ndescriptions of the tensor product.\n\nAs there, the hypotheses of this section **exclude the fibred fppf site of Stacks 06WG**, by\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite` and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel`; hence the qualified clause\nstrings.",
      "statement": "public instance isQuasicoherentOnSite_tensorObj\n    (F G : SheafOfModules.{w}\n      (TensorSheafification.structureSheaf O.obj (isSheaf_structureRingPresheaf O)))\n    [F.IsQuasicoherentOnSite] [G.IsQuasicoherentOnSite] :\n    (MonoidalCategory.tensorObj F G).IsQuasicoherentOnSite",
@@ -35010,7 +35010,7 @@
     {
      "name": "Stacks.SheafOfModules.TensorProduct.quasicoherentOnSiteTensorBifunctor",
      "kind": "def",
-     "line": 398,
+     "line": 399,
      "private": false,
      "doc": "**The tensor product as a bifunctor on the quasi-coherent modules of Stacks 03DL (6)**: the\nrestriction of the tensor product of `Mod(𝒪)` to the full subcategory cut out by that\nquasi-coherence.  It exists exactly because that tensor product preserves that\nquasi-coherence, which is the tensor clause of Stacks 06WV (5).\n\nOn the fibred fppf site of Stacks 06WG this subcategory is `QCoh(𝒪_𝒳)`\n(`AlgebraicGeometry.FibredSite.quasicoherentModules`), but the hypotheses of this section do\nnot hold at that site — see\n`AlgebraicGeometry.FibredSite.not_univLE_associatedSite` and\n`AlgebraicGeometry.FibredSite.not_hasBinaryProducts_twoLabel` — so this bifunctor is not the\none the source asserts; hence the qualified clause strings.",
      "statement": "public noncomputable def quasicoherentOnSiteTensorBifunctor :\n    (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ×\n      (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory ⥤\n      (SheafOfModules.isQuasicoherentOnSite (TensorSheafification.structureSheaf O.obj\n        (isSheaf_structureRingPresheaf O))).FullSubcategory",
@@ -35038,7 +35038,7 @@
     {
      "name": "AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_tensorSheafMixed_quasicoherent",
      "kind": "theorem",
-     "line": 239,
+     "line": 243,
      "private": false,
      "doc": "**The tensor product of a pair of quasi-coherent modules with sections in independent\nuniverses, formed on the fppf site of a category fibred in groupoids, is quasi-coherent.**  This\nis the object whose universal property is\n`AlgebraicGeometry.FibredSite.existsUnique_hom_tensorSheafMixed_quasicoherent`, so the tensor\nproduct of quasi-coherent modules is again a quasi-coherent module.",
      "statement": "theorem isQuasicoherentOnSite_tensorSheafMixed_quasicoherent\n    (F : quasicoherentModules.{u, v, u, m} B S hS p hp)\n    (G : quasicoherentModules.{u, v, u, n} B S hS p hp) :\n    (tensorSheafMixed B S hS p hp .fppf ((toSiteModules B S hS p hp .fppf).obj F)\n      ((toSiteModules B S hS p hp .fppf).obj G)).IsQuasicoherentOnSite",
@@ -37042,7 +37042,7 @@
     {
      "name": "Stacks.SheafOfModules.KFlatStalkCriterion.kFlat_iff_stalkwise",
      "kind": "theorem",
-     "line": 566,
+     "line": 569,
      "private": false,
      "doc": "**Stacks 06YB.** A complex of sheaves of modules on a ringed space is K-flat if and only if\nits complex of stalks at every point is K-flat over the stalk of the structure sheaf.",
      "statement": "theorem kFlat_iff_stalkwise\n    (K : CochainComplex (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf.{u, u, u} R)) ℤ)\n      :\n    letI := fun (left : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf R)) =>\n      Stacks.SheafOfModules.Tensor.sheafTensor_obj_additive.{u, u, u, u, u} R left\n    letI : ∀ (left right : CochainComplex\n        (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf R)) ℤ),\n        HomologicalComplex.HasMapBifunctor left right\n          (Stacks.SheafOfModules.Tensor.sheafTensor.{u, u, u, u, u} R) (ComplexShape.up ℤ) :=\n      fun left right => Stacks.SheafOfModules.Tensor.hasMapBifunctor_sheafTensor R left right\n    Stacks.SheafOfModules.KFlat.{u, u, u} R K ↔ KFlatStalkwise R K",

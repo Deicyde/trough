@@ -7,7 +7,7 @@ proof: formalized
 
 # In-Place Dense Homogeneous Kernels
 
-`CompPoly.LinearAlgebra.Dense.KernelInPlace`, in [CompPoly/LinearAlgebra/Dense/KernelInPlace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean), by Valerii Huhnin.
+`CompPoly.LinearAlgebra.Dense.KernelInPlace`, in [CompPoly/LinearAlgebra/Dense/KernelInPlace.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean), by Valerii Huhnin.
 
 > A memory-efficient executable variant of the dense Gauss-Jordan homogeneous-kernel
 > backend.
@@ -30,7 +30,7 @@ proof: formalized
 > The free-column witness extraction (`freeColumns`, `basisVectorForFreeColumn`) is
 > cheap and shared verbatim with `Kernel.lean`.
 
-`CompPoly.DenseMatrix.swapRowsData` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L44))
+`CompPoly.DenseMatrix.swapRowsData` (definition, [line 44](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L44))
 
 > Swap rows `rowA` and `rowB` of a width-`cols` row-major array, in place.
 
@@ -38,7 +38,7 @@ proof: formalized
 def swapRowsData [Zero F] (cols rowA rowB : Nat) (data : Array F) : Array F
 ```
 
-`CompPoly.DenseMatrix.scaleRowData` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L60))
+`CompPoly.DenseMatrix.scaleRowData` (definition, [line 60](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L60))
 
 > Scale row `row` of a width-`cols` row-major array by `factor`, in place.
 
@@ -47,7 +47,7 @@ def scaleRowData [Field F] (cols row : Nat) (factor : F) (data : Array F) :
     Array F
 ```
 
-`CompPoly.DenseMatrix.addScaledRowData` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L71))
+`CompPoly.DenseMatrix.addScaledRowData` (definition, [line 71](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L71))
 
 > Add `factor` times row `source` to row `target` (with `target ≠ source`), in
 > place.
@@ -57,7 +57,7 @@ def addScaledRowData [Field F] (cols target source : Nat) (factor : F)
     (data : Array F) : Array F
 ```
 
-`CompPoly.DenseMatrix.findPivotRowData` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L82))
+`CompPoly.DenseMatrix.findPivotRowData` (definition, [line 82](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L82))
 
 > Find a pivot row at or below `startRow` in column `col`.
 
@@ -66,7 +66,7 @@ def findPivotRowData [Zero F] [BEq F] (rows cols startRow col : Nat)
     (data : Array F) : Option Nat
 ```
 
-`CompPoly.DenseMatrix.normalizeAndEliminateData` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L93))
+`CompPoly.DenseMatrix.normalizeAndEliminateData` (definition, [line 93](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L93))
 
 > Normalize the pivot row and clear the pivot column in every other row, in
 > place.
@@ -76,7 +76,7 @@ def normalizeAndEliminateData [Field F] [BEq F] (rows cols pivotRow pivotCol : N
     (data : Array F) : Array F
 ```
 
-`CompPoly.DenseMatrix.rrefLoopData` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L108))
+`CompPoly.DenseMatrix.rrefLoopData` (definition, [line 108](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L108))
 
 > Fuel-bounded Gauss-Jordan reduction over a bare row-major array.
 
@@ -85,7 +85,7 @@ def rrefLoopData [Field F] [BEq F] :
     Nat → Nat → Nat → Nat → Nat → Array F → Array Nat → Array F × Array Nat
 ```
 
-`CompPoly.DenseMatrix.rrefInPlace` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L127))
+`CompPoly.DenseMatrix.rrefInPlace` (definition, [line 127](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L127))
 
 > Reduced row-echelon form with pivot-column metadata, computed in place.
 >
@@ -97,7 +97,7 @@ def rrefLoopData [Field F] [BEq F] :
 def rrefInPlace [Field F] [BEq F] (M : DenseMatrix F) : RrefResult F
 ```
 
-`CompPoly.DenseMatrix.homogeneousKernelBasisInPlace` (definition, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L134))
+`CompPoly.DenseMatrix.homogeneousKernelBasisInPlace` (definition, [line 134](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L134))
 
 > Homogeneous kernel basis extracted from the in-place RREF free columns.
 
@@ -106,7 +106,7 @@ def homogeneousKernelBasisInPlace [Field F] [BEq F] (M : DenseMatrix F) :
     Array (Array F)
 ```
 
-`CompPoly.DenseMatrix.homogeneousWitnessInPlace` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L142))
+`CompPoly.DenseMatrix.homogeneousWitnessInPlace` (definition, [line 142](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean#L142))
 
 > One nonzero homogeneous-kernel witness via in-place reduction, if a free
 > column exists. Output-identical to `homogeneousWitness`.
@@ -122,5 +122,5 @@ def homogeneousWitnessInPlace [Field F] [BEq F] (M : DenseMatrix F) :
 
 ## Sources
 
-- [CompPoly/LinearAlgebra/Dense/KernelInPlace.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean)
+- [CompPoly/LinearAlgebra/Dense/KernelInPlace.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/LinearAlgebra/Dense/KernelInPlace.lean)
 - [Declaration ledger](../../../../sources/comppoly/CompPoly.LinearAlgebra.Dense.KernelInPlace.json)

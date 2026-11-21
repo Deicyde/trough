@@ -8,7 +8,7 @@ proof: formalized
 
 # The point group of the hypercubic lattice in every dimension
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Hypercubic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean): 19 declarations, 10 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Hypercubic`, [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean): 19 declarations, 10 with a docstring.
 
 > The point group of the hypercubic lattice in `d` dimensions consists of the signed permutations
 > of the axes and has order `2 ^ d * d !`.
@@ -37,7 +37,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Hypercubic`, [Physli
 
 ## A. Bonds of the hypercubic lattice
 
-**`CondensedMatter.Crystal.l1`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L60).
+**`CondensedMatter.Crystal.l1`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L60).
 
 > The sum of the absolute values of the coordinates.
 
@@ -45,19 +45,19 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Hypercubic`, [Physli
 def l1 (r : Fin d → ℤ) : ℤ
 ```
 
-**`CondensedMatter.Crystal.l1_neg`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L62).
+**`CondensedMatter.Crystal.l1_neg`**, a lemma, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L62).
 
 ```lean
 lemma l1_neg (r : Fin d → ℤ) : l1 (-r) = l1 r
 ```
 
-**`CondensedMatter.Crystal.l1_single`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L64).
+**`CondensedMatter.Crystal.l1_single`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L64).
 
 ```lean
 lemma l1_single (j : Fin d) : l1 (Pi.single j (1 : ℤ) : Fin d → ℤ) = 1
 ```
 
-**`CondensedMatter.Crystal.hypercubic_bonded_iff_exists`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L71).
+**`CondensedMatter.Crystal.hypercubic_bonded_iff_exists`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L71).
 
 > The bonded displacements of the hypercubic lattice are the vectors `±e_j`.
 
@@ -66,7 +66,7 @@ lemma hypercubic_bonded_iff_exists (r : Fin d → ℤ) :
     (hypercubicGraph d).Bonded () () r ↔ ∃ j, r = Pi.single j 1 ∨ r = -Pi.single j 1
 ```
 
-**`CondensedMatter.Crystal.hypercubic_bonded_iff`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L94).
+**`CondensedMatter.Crystal.hypercubic_bonded_iff`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L94).
 
 > **Two sites of the hypercubic lattice are bonded exactly when their cells differ by a vector
 > whose coordinates have absolute values summing to one.**
@@ -78,7 +78,7 @@ lemma hypercubic_bonded_iff (r : Fin d → ℤ) :
 
 ## B. Signed permutations
 
-**`CondensedMatter.Crystal.signOf`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L128).
+**`CondensedMatter.Crystal.signOf`**, a def, [line 128](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L128).
 
 > The sign `+1` for `true` and `-1` for `false`.
 
@@ -86,31 +86,31 @@ lemma hypercubic_bonded_iff (r : Fin d → ℤ) :
 def signOf (b : Bool) : ℤ
 ```
 
-**`CondensedMatter.Crystal.signOf_mul_self`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L130).
+**`CondensedMatter.Crystal.signOf_mul_self`**, a lemma, [line 130](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L130).
 
 ```lean
 lemma signOf_mul_self (b : Bool) : signOf b * signOf b = 1
 ```
 
-**`CondensedMatter.Crystal.abs_signOf`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L132).
+**`CondensedMatter.Crystal.abs_signOf`**, a lemma, [line 132](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L132).
 
 ```lean
 lemma abs_signOf (b : Bool) : |signOf b| = 1
 ```
 
-**`CondensedMatter.Crystal.signOf_ne_zero`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L134).
+**`CondensedMatter.Crystal.signOf_ne_zero`**, a lemma, [line 134](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L134).
 
 ```lean
 lemma signOf_ne_zero (b : Bool) : signOf b ≠ 0
 ```
 
-**`CondensedMatter.Crystal.signOf_injective`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L136).
+**`CondensedMatter.Crystal.signOf_injective`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L136).
 
 ```lean
 lemma signOf_injective : Function.Injective signOf
 ```
 
-**`CondensedMatter.Crystal.signedPerm`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L141).
+**`CondensedMatter.Crystal.signedPerm`**, a def, [line 141](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L141).
 
 > The lattice automorphism that permutes the axes by `π` and multiplies the `i`-th coordinate
 > by the sign `ε i`.
@@ -119,14 +119,14 @@ lemma signOf_injective : Function.Injective signOf
 def signedPerm (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool) : (Fin d → ℤ) ≃+ (Fin d → ℤ)
 ```
 
-**`CondensedMatter.Crystal.signedPerm_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L156).
+**`CondensedMatter.Crystal.signedPerm_apply`**, a lemma, [line 156](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L156).
 
 ```lean
 lemma signedPerm_apply (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool) (r : Fin d → ℤ) (i : Fin d) :
     signedPerm π ε r i = signOf (ε i) * r (π.symm i)
 ```
 
-**`CondensedMatter.Crystal.l1_signedPerm`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L160).
+**`CondensedMatter.Crystal.l1_signedPerm`**, a lemma, [line 160](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L160).
 
 > A signed permutation preserves the sum of the absolute values of the coordinates.
 
@@ -135,14 +135,14 @@ lemma l1_signedPerm (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool) (r : Fin d �
     l1 (signedPerm π ε r) = l1 r
 ```
 
-**`CondensedMatter.Crystal.signedPerm_single`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L166).
+**`CondensedMatter.Crystal.signedPerm_single`**, a lemma, [line 166](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L166).
 
 ```lean
 lemma signedPerm_single (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool) (j : Fin d) :
     signedPerm π ε (Pi.single j 1) = Pi.single (π j) (signOf (ε (π j)))
 ```
 
-**`CondensedMatter.Crystal.signedPerm_injective`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L174).
+**`CondensedMatter.Crystal.signedPerm_injective`**, a lemma, [line 174](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L174).
 
 ```lean
 lemma signedPerm_injective :
@@ -151,7 +151,7 @@ lemma signedPerm_injective :
 
 ## C. The point group
 
-**`CondensedMatter.Crystal.signedPerm_mem_pointStabilizer`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L197).
+**`CondensedMatter.Crystal.signedPerm_mem_pointStabilizer`**, a lemma, [line 197](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L197).
 
 > **A signed permutation preserves the bonds of the hypercubic lattice.**
 
@@ -160,7 +160,7 @@ lemma signedPerm_mem_pointStabilizer (π : Equiv.Perm (Fin d)) (ε : Fin d → B
     Multiplicative.ofAdd (signedPerm π ε) ∈ (hypercubicGraph d).pointStabilizer
 ```
 
-**`CondensedMatter.Crystal.mem_pointStabilizer_hypercubic_iff`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L205).
+**`CondensedMatter.Crystal.mem_pointStabilizer_hypercubic_iff`**, a lemma, [line 205](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L205).
 
 > **The lattice automorphisms preserving the bonds of the hypercubic lattice are exactly the
 > signed permutations.**
@@ -171,7 +171,7 @@ lemma mem_pointStabilizer_hypercubic_iff (A : Multiplicative (AddAut (Fin d → 
       ∃ (π : Equiv.Perm (Fin d)) (ε : Fin d → Bool), Multiplicative.toAdd A = signedPerm π ε
 ```
 
-**`CondensedMatter.Crystal.pointStabilizerEquivSignedPerm`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L253).
+**`CondensedMatter.Crystal.pointStabilizerEquivSignedPerm`**, a def, [line 253](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L253).
 
 > **The point group of the hypercubic lattice is the group of signed permutations of the
 > axes**: it is in bijection with the pairs of a permutation and a choice of signs.
@@ -181,7 +181,7 @@ noncomputable def pointStabilizerEquivSignedPerm :
     (Equiv.Perm (Fin d) × (Fin d → Bool)) ≃ (hypercubicGraph d).pointStabilizer
 ```
 
-**`CondensedMatter.Crystal.card_pointGroup_hypercubic`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L263).
+**`CondensedMatter.Crystal.card_pointGroup_hypercubic`**, a lemma, [line 263](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean#L263).
 
 > **The point group of the hypercubic lattice in `d` dimensions has order `2 ^ d * d !`.**
 
@@ -201,4 +201,4 @@ lemma card_pointGroup_hypercubic (d : ℕ) :
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean)

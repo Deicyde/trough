@@ -8,7 +8,7 @@ proof: formalized
 
 # Translation invariant states of an infinite crystal
 
-The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantState`, [PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean): 6 declarations, 5 with a docstring.
+The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantState`, [PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean): 6 declarations, 5 with a docstring.
 
 > Every state of the quasi-local algebra of the crystal `ℤ^d` with a finite unit cell has a
 > translation invariant limit state, and so does every thermodynamic limit state of an interaction.
@@ -36,7 +36,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantState`, [PhyslibAlpha/
 
 ## A. Invariant states of the crystal
 
-**`CondensedMatter.Crystal.cubeUltrafilter`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L62).
+**`CondensedMatter.Crystal.cubeUltrafilter`**, a def, [line 62](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L62).
 
 > An ultrafilter on the sizes of the cubes, finer than the filter of large cubes.
 
@@ -44,13 +44,13 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.InvariantState`, [PhyslibAlpha/
 def cubeUltrafilter : Ultrafilter ℕ
 ```
 
-**`CondensedMatter.Crystal.cubeUltrafilter_le`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L64).
+**`CondensedMatter.Crystal.cubeUltrafilter_le`**, a lemma, [line 64](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L64).
 
 ```lean
 lemma cubeUltrafilter_le : (cubeUltrafilter : Filter ℕ) ≤ atTop
 ```
 
-**`CondensedMatter.Crystal.translationInvariantLimit`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L68).
+**`CondensedMatter.Crystal.translationInvariantLimit`**, a def, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L68).
 
 > **The translation invariant limit of a state of the crystal `ℤ^d`**: the limit of its
 > averages over the translations by the points of the cubes.
@@ -60,7 +60,7 @@ def translationInvariantLimit (φ : AlgState (crystalAlgebra Ω₀ (Fin d → �
     AlgState (crystalAlgebra Ω₀ (Fin d → ℤ) F)
 ```
 
-**`CondensedMatter.Crystal.translationInvariantLimit_invariant`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L76).
+**`CondensedMatter.Crystal.translationInvariantLimit_invariant`**, a lemma, [line 76](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L76).
 
 > **The translation invariant limit of a state is invariant under the translations.**
 
@@ -71,7 +71,7 @@ lemma translationInvariantLimit_invariant (φ : AlgState (crystalAlgebra Ω₀ (
       translationInvariantLimit Ω₀ φ x
 ```
 
-**`CondensedMatter.QuasiLocal.Interaction.translationInvariantState`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L86).
+**`CondensedMatter.QuasiLocal.Interaction.translationInvariantState`**, a def, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L86).
 
 > **The translation invariant state of the canonical ensemble** of an interaction on the crystal
 > `ℤ^d`: the translation average of a thermodynamic limit state of the finite boxes.
@@ -82,7 +82,7 @@ def _root_.CondensedMatter.QuasiLocal.Interaction.translationInvariantState [Non
     AlgState (crystalAlgebra Ω₀ (Fin d → ℤ) F)
 ```
 
-**`CondensedMatter.Crystal.translationInvariantState_invariant`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L94).
+**`CondensedMatter.Crystal.translationInvariantState_invariant`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean#L94).
 
 > The translation invariant state of an interaction is invariant under the translations.
 
@@ -102,4 +102,4 @@ lemma translationInvariantState_invariant [Nonempty Ω₀]
 
 ## Sources
 
-- [PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean)
+- [PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean)

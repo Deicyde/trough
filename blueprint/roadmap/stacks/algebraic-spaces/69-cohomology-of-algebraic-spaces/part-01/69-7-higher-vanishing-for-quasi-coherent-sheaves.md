@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.7 Higher vanishing for quasi-coherent sheaves
 
-Section 69.7 of the Stacks Project, [Tag 0729](https://stacks.math.columbia.edu/tag/0729). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 69.7 of the Stacks Project, [Tag 0729](https://stacks.math.columbia.edu/tag/0729). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 072A, a lemma
 
 [Tag 072A](https://stacks.math.columbia.edu/tag/072A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SignTwistSetup.isQuasicoherentOnSite_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSignTwist.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSignTwist.lean#L574).
+**`AlgebraicGeometry.Space.SignTwistSetup.isQuasicoherentOnSite_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSignTwist.lean, line 574](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SpacesEtaleSignTwist.lean#L574).
 
 > **Stacks 072A.** With `S`, `W`, `G`, `U`, `χ` as in Stacks 0727: if `F` is a
 > quasi-coherent `𝒪_U`-module, then so is `F ⊗_ℤ ℤ(χ)`.
@@ -33,7 +33,7 @@ theorem isQuasicoherentOnSite_twist
 
 [Tag 072B](https://stacks.math.columbia.edu/tag/072B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.SpacesEtale.isZero_sheafH_of_isEmpty_diagonalComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/HigherVanishing.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/HigherVanishing.lean#L150). The attribute's comment: “the vanishing H^n(X, F) = 0 above the fibre bound of the chart. The bound used is the degree bound of Stacks 03JL on the fibres of the chart, which is what empties W\_p and so what the source's proof uses, rather than the source's stated bound on the cardinality of the topological fibres of the chart; the degree is existentially quantified because the predicate of Stacks 03JL hides its own bound, and the emptiness of W\_p above it is proved here. What the source draws from the quasi-compactness and separatedness of X and the affineness of the chart is the vanishing of the rows q > 0 of the E\_1-page of Stacks 0728; that rests on the affineness of the quotients U\_p = W\_p/S\_\{p+1}, hence on Stacks 071S for a free action of a finite group on an arbitrary algebraic space, which this subtree does not state in any shape, and it is the binder hUpVanishing”.
+**`AlgebraicGeometry.Space.SpacesEtale.isZero_sheafH_of_isEmpty_diagonalComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/HigherVanishing.lean, line 150](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/HigherVanishing.lean#L150). The attribute's comment: “the vanishing H^n(X, F) = 0 above the fibre bound of the chart. The bound used is the degree bound of Stacks 03JL on the fibres of the chart, which is what empties W\_p and so what the source's proof uses, rather than the source's stated bound on the cardinality of the topological fibres of the chart; the degree is existentially quantified because the predicate of Stacks 03JL hides its own bound, and the emptiness of W\_p above it is proved here. What the source draws from the quasi-compactness and separatedness of X and the affineness of the chart is the vanishing of the rows q > 0 of the E\_1-page of Stacks 0728; that rests on the affineness of the quotients U\_p = W\_p/S\_\{p+1}, hence on Stacks 071S for a free action of a finite group on an arbitrary algebraic space, which this subtree does not state in any shape, and it is the binder hUpVanishing”.
 
 > Let `S` be a scheme, let `X` be an algebraic space over `S` and let `c : W ⟶ X` be a
 > surjective, étale and separated morphism from a scheme whose fibres are universally bounded in the
@@ -53,7 +53,7 @@ theorem isZero_sheafH_of_isEmpty_diagonalComplement (W : BigFppfOver B S hS)
     ∃ d : ℕ, ∀ n : ℕ, d ≤ n → IsZero (AddCommGrpCat.of (Sheaf.H F n))
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsFunctor_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasicoherentHigherVanishing.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasicoherentHigherVanishing.lean#L545). The attribute's comment: “The reading of d as a degree bound: the base changes of f to fields have degree at most d, which is what the source's proof uses and what Lemma 69.7.3 (Tag 072C) supplies. The literal reading (at most d points in each fibre of |U| → |X|) is neither proved nor refuted here; for it the proof's step W\_p = ∅ for p ≥ d fails (Spec k' → Spec k with k'/k separable quadratic: one point per fibre, degree 2), although the conclusion holds in that example. Quasi-compactness of X is implied by the affine surjection and not assumed.”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsFunctor_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasicoherentHigherVanishing.lean, line 545](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasicoherentHigherVanishing.lean#L545). The attribute's comment: “The reading of d as a degree bound: the base changes of f to fields have degree at most d, which is what the source's proof uses and what Lemma 69.7.3 (Tag 072C) supplies. The literal reading (at most d points in each fibre of |U| → |X|) is neither proved nor refuted here; for it the proof's step W\_p = ∅ for p ≥ d fails (Spec k' → Spec k with k'/k separable quadratic: one point per fibre, degree 2), although the conclusion holds in that example. Quasi-compactness of X is implied by the affine surjection and not assumed.”.
 
 > **Stacks 072B.**  Let `X` be a separated algebraic space, `U` an affine scheme and
 > `f : U → X` a surjective étale morphism whose base changes to fields are finite locally free of
@@ -83,7 +83,7 @@ theorem isZero_rightDerived_globalSectionsFunctor_of_isSeparated
 
 [Tag 072C](https://stacks.math.columbia.edu/tag/072C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplementQuotientCover.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplementQuotientCover.lean#L208). The attribute's comment: “parts (4)-(5), together with parts (1)-(3) restated, for Y a quasi-compact and quasi-separated algebraic space over an arbitrary base scheme S: an affine scheme V\_p, a surjective etale morphism V\_p -> U\_p onto the quotient U\_p = W\_p/S\_\{p+1} of Tag 0726, and an integer bounding the degrees of its fibres, for every p -- the source's range 0 <= p <= d being dropped, which is stronger. The integer max(d\_p + p) is formed at AlgebraicGeometry.Space.exists\_bound\_affine\_etale\_surjective\_cover\_diagonalComplementQuotient; the vanishing these choices feed is AlgebraicGeometry.Space.isZero\_sheafH\_of\_boundsFibreDegrees\_of\_diagonalComplementQuotient”.
+**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_diagonalComplementQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplementQuotientCover.lean, line 209](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/DiagonalComplementQuotientCover.lean#L209). The attribute's comment: “parts (4)-(5), together with parts (1)-(3) restated, for Y a quasi-compact and quasi-separated algebraic space over an arbitrary base scheme S: an affine scheme V\_p, a surjective etale morphism V\_p -> U\_p onto the quotient U\_p = W\_p/S\_\{p+1} of Tag 0726, and an integer bounding the degrees of its fibres, for every p -- the source's range 0 <= p <= d being dropped, which is stronger. The integer max(d\_p + p) is formed at AlgebraicGeometry.Space.exists\_bound\_affine\_etale\_surjective\_cover\_diagonalComplementQuotient; the vanishing these choices feed is AlgebraicGeometry.Space.isZero\_sheafH\_of\_boundsFibreDegrees\_of\_diagonalComplementQuotient”.
 
 > **The choices (1)–(5) of Stacks 072C.** On a quasi-compact, quasi-separated algebraic space
 > `Y` over an arbitrary base scheme `S` one may choose an affine scheme `U`, a surjective étale
@@ -127,10 +127,12 @@ theorem exists_affine_etale_surjective_cover_diagonalComplementQuotient
             HasUniversallyBoundedFibers B S hS V f
 ```
 
-**`AlgebraicGeometry.Space.isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean#L303). The attribute's comment: “the moreover clause, with the source's explicit bound: for X a quasi-compact and quasi-separated algebraic space over a scheme S and any choices (1)-(5) -- an affine U with a surjective etale U -> X, an integer d bounding its fibre degrees, and for each 0 <= p <= d an affine V\_p with a surjective etale V\_p -> U\_p = W\_\{p+1}/S\_\{p+1} and an integer d\_p bounding its fibre degrees -- H^q(X, F) = 0 for every quasi-coherent O\_X-module F and every q >= max(d\_p + p). Cohomology is that of the underlying abelian sheaf of F on the spaces-etale site of X. The existence of the choices (1)-(5) is AlgebraicGeometry.Space.exists\_affine\_etale\_surjective\_cover\_diagonalComplementQuotient”.
+**`AlgebraicGeometry.Space.isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean, line 307](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean#L307). The attribute's comment: “the moreover clause, with the source's explicit bound, proved here without the qcqs hypotheses: for X an algebraic space over a scheme S and any choices (1)-(5) -- an affine U with a surjective etale U -> X, an integer d bounding its fibre degrees, and for each 0 <= p <= d an affine V\_p with a surjective etale V\_p -> U\_p = W\_\{p+1}/S\_\{p+1} and an integer d\_p bounding its fibre degrees -- H^q(X, F) = 0 for every quasi-coherent O\_X-module F and every q >= max(d\_p + p). Cohomology is that of the underlying abelian sheaf of F on the spaces-etale site of X. The existence of the choices (1)-(5) is AlgebraicGeometry.Space.exists\_affine\_etale\_surjective\_cover\_diagonalComplementQuotient”.
 
 > **[Stacks, Tag 072C]: the vanishing from the choices (1)–(5).**  Let `S` be a scheme and let
-> `X` be a quasi-compact and quasi-separated algebraic space over `S`.  Suppose given
+> `X` be an algebraic space over `S`.  The source assumes `X` quasi-compact and quasi-separated;
+> the statement holds without either hypothesis, which only guarantee that the choices below
+> exist.  Suppose given
 >
 > 1. an affine scheme `U`,
 > 2. a surjective étale morphism `f : U ⟶ X`,
@@ -161,8 +163,6 @@ theorem exists_affine_etale_surjective_cover_diagonalComplementQuotient
 ```lean
 theorem isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient
     (X : AlgebraicSpaces B S hS)
-    (hqc : IsQuasiCompactSpace B S hS X.obj)
-    (hqs : IsAbsolutelyQuasiSeparated B S hS hZ X.obj)
     (U : BigFppfOver B S hS) (hU : IsAffine ((BigFppfOver.toScheme B S hS).obj U))
     (f : yoneda.obj U ⟶ X.obj) (hf : IsEtale B S hS f) (hfsurj : IsSurjective B S hS f)
     (d : ℤ) (hd : BoundsFibreDegrees B S hS U f d) (dp : ℕ → ℤ)
@@ -180,7 +180,7 @@ theorem isZero_sheafH_of_boundsFibreDegrees_of_diagonalComplementQuotient
       ((SheafOfModules.toSheaf.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)).obj M) n))
 ```
 
-**`AlgebraicGeometry.Space.exists_forall_isZero_sheafH_of_isQuasiCompactSpace_072C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean#L384). The attribute's comment: “the tag end to end, over an arbitrary base scheme S: for X a quasi-compact and quasi-separated algebraic space over S there is a single degree N beyond which the sheaf cohomology on the spaces-etale site of X of the underlying abelian sheaf of every quasi-coherent module vanishes. N is constructed in the proof as the source's max(d\_p + p) for the choices (1)-(5) made there; the statement quantifies N existentially, and the vanishing at that maximum, for any choices (1)-(5), is AlgebraicGeometry.Space.isZero\_sheafH\_of\_boundsFibreDegrees\_of\_diagonalComplementQuotient”.
+**`AlgebraicGeometry.Space.exists_forall_isZero_sheafH_of_isQuasiCompactSpace_072C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean, line 386](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AlternatingCech/QuasiSeparatedVanishing.lean#L386). The attribute's comment: “the tag end to end, over an arbitrary base scheme S: for X a quasi-compact and quasi-separated algebraic space over S there is a single degree N beyond which the sheaf cohomology on the spaces-etale site of X of the underlying abelian sheaf of every quasi-coherent module vanishes. N is constructed in the proof as the source's max(d\_p + p) for the choices (1)-(5) made there; the statement quantifies N existentially, and the vanishing at that maximum, for any choices (1)-(5), is AlgebraicGeometry.Space.isZero\_sheafH\_of\_boundsFibreDegrees\_of\_diagonalComplementQuotient”.
 
 > **[Stacks, Tag 072C], end to end.**  Let `S` be a scheme and let `X` be a quasi-compact and
 > quasi-separated algebraic space over `S`.  Then there is a single degree `N` beyond which the
@@ -209,7 +209,7 @@ theorem exists_forall_isZero_sheafH_of_isQuasiCompactSpace_072C
           ((SheafOfModules.toSheaf.{u + 1} (SpacesEtale.spacesEtaleRing B S hS X)).obj M) n))
 ```
 
-**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimension.lean#L92). The attribute's comment: “parts (1)-(3): an affine scheme U, a surjective étale morphism U ⟶ X, and an integer bounding the degrees of its fibres”.
+**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimension.lean#L92). The attribute's comment: “parts (1)-(3): an affine scheme U, a surjective étale morphism U ⟶ X, and an integer bounding the degrees of its fibres”.
 
 > **The choices (1)–(3) of Stacks 072C.** A quasi-compact, quasi-separated algebraic space
 > carries a surjective étale morphism from an affine scheme whose fibres are universally bounded
@@ -227,7 +227,7 @@ theorem exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers
         HasUniversallyBoundedFibers B (Spec (.of A)) hA U g
 ```
 
-**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimensionGeneralBase.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimensionGeneralBase.lean#L60). The attribute's comment: “parts (1)-(3): an affine scheme U, a surjective étale morphism U ⟶ X, and an integer bounding the degrees of its fibres, for X a quasi-compact and quasi-separated algebraic space over an arbitrary base scheme S”.
+**`AlgebraicGeometry.Space.exists_affine_etale_surjective_cover_hasUniversallyBoundedFibers'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimensionGeneralBase.lean, line 60](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/CohomologicalDimensionGeneralBase.lean#L60). The attribute's comment: “parts (1)-(3): an affine scheme U, a surjective étale morphism U ⟶ X, and an integer bounding the degrees of its fibres, for X a quasi-compact and quasi-separated algebraic space over an arbitrary base scheme S”.
 
 > **The choices (1)–(3) of Stacks 072C.** A quasi-compact, quasi-separated algebraic space
 > over an arbitrary base scheme `S` carries a surjective étale morphism from an affine scheme
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.7, Tag 0729](https://stacks.math.columbia.edu/tag/0729)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

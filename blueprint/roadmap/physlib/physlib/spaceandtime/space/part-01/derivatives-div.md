@@ -8,7 +8,7 @@ proof: formalized
 
 # Divergence on Space
 
-The module `Physlib.SpaceAndTime.Space.Derivatives.Div`, [Physlib/SpaceAndTime/Space/Derivatives/Div.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean): 11 declarations, 3 with a docstring.
+The module `Physlib.SpaceAndTime.Space.Derivatives.Div`, [Physlib/SpaceAndTime/Space/Derivatives/Div.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean): 11 declarations, 3 with a docstring.
 
 ## i. Overview
 
@@ -28,7 +28,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.Div`, [Physlib/SpaceAndTime/S
 
 ## A. The divergence on functions
 
-**`Space.div`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L58).
+**`Space.div`**, a def, [line 58](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L58).
 
 > The vector calculus operator `div`.
 
@@ -37,7 +37,7 @@ noncomputable def div {d} (f : Space d → EuclideanSpace ℝ (Fin d)) :
     Space d → ℝ
 ```
 
-**`Space.div_eq_sum_fderiv`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L68).
+**`Space.div_eq_sum_fderiv`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L68).
 
 ```lean
 lemma div_eq_sum_fderiv {d} (f : Space d → EuclideanSpace ℝ (Fin d))
@@ -47,7 +47,7 @@ lemma div_eq_sum_fderiv {d} (f : Space d → EuclideanSpace ℝ (Fin d))
 
 ### A.1. The divergence on the zero function
 
-**`Space.div_zero`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L86).
+**`Space.div_zero`**, a lemma, [line 86](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L86).
 
 ```lean
 lemma div_zero : ∇ ⬝ (0 : Space d → EuclideanSpace ℝ (Fin d)) = 0
@@ -55,7 +55,7 @@ lemma div_zero : ∇ ⬝ (0 : Space d → EuclideanSpace ℝ (Fin d)) = 0
 
 ### A.2. The divergence on a constant function
 
-**`Space.div_const`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L99).
+**`Space.div_const`**, a lemma, [line 99](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L99).
 
 ```lean
 lemma div_const : ∇ ⬝ (fun _ : Space d => v) = 0
@@ -63,7 +63,7 @@ lemma div_const : ∇ ⬝ (fun _ : Space d => v) = 0
 
 ### A.3. The divergence distributes over addition
 
-**`Space.div_add`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L111).
+**`Space.div_add`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L111).
 
 ```lean
 lemma div_add (f1 f2 : Space d → EuclideanSpace ℝ (Fin d))
@@ -73,7 +73,7 @@ lemma div_add (f1 f2 : Space d → EuclideanSpace ℝ (Fin d))
 
 ### A.4. The divergence distributes over scalar multiplication
 
-**`Space.div_smul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L133).
+**`Space.div_smul`**, a lemma, [line 133](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L133).
 
 ```lean
 lemma div_smul (f : Space d → EuclideanSpace ℝ (Fin d)) (k : ℝ)
@@ -83,7 +83,7 @@ lemma div_smul (f : Space d → EuclideanSpace ℝ (Fin d)) (k : ℝ)
 
 ### A.5. The divergence of a linear map is a linear map
 
-**`Space.div_linear_map`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L154).
+**`Space.div_linear_map`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L154).
 
 ```lean
 lemma div_linear_map (f : W → Space 3 → EuclideanSpace ℝ (Fin 3))
@@ -94,7 +94,7 @@ lemma div_linear_map (f : W → Space 3 → EuclideanSpace ℝ (Fin 3))
 
 ## B. Divergence of distributions
 
-**`Space.distDiv`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L178).
+**`Space.distDiv`**, a def, [line 178](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L178).
 
 > The divergence of a distribution `(Space d) →d[ℝ] (EuclideanSpace ℝ (Fin d))` as a distribution
 > `(Space d) →d[ℝ] ℝ`.
@@ -106,7 +106,7 @@ noncomputable def distDiv {d} :
 
 ### B.1. Basic equalities
 
-**`Space.distDiv_apply_eq_sum_fderivD`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L209).
+**`Space.distDiv_apply_eq_sum_fderivD`**, a lemma, [line 209](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L209).
 
 ```lean
 lemma distDiv_apply_eq_sum_fderivD {d}
@@ -114,7 +114,7 @@ lemma distDiv_apply_eq_sum_fderivD {d}
     (∇ᵈ ⬝ f) η = ∑ i, fderivD ℝ f η (basis i) i
 ```
 
-**`Space.distDiv_apply_eq_sum_distDeriv`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L214).
+**`Space.distDiv_apply_eq_sum_distDeriv`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L214).
 
 ```lean
 lemma distDiv_apply_eq_sum_distDeriv {d}
@@ -124,7 +124,7 @@ lemma distDiv_apply_eq_sum_distDeriv {d}
 
 ### B.2. Divergence on distributions from bounded functions
 
-**`Space.distDiv_ofFunction`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L227).
+**`Space.distDiv_ofFunction`**, a lemma, [line 227](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean#L227).
 
 > The divergence of a distribution from a bounded function.
 
@@ -142,4 +142,4 @@ lemma distDiv_ofFunction {d : ℕ} {f : Space d → EuclideanSpace ℝ (Fin d)}
 
 ## Sources
 
-- [Physlib/SpaceAndTime/Space/Derivatives/Div.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/Div.lean)
+- [Physlib/SpaceAndTime/Space/Derivatives/Div.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/SpaceAndTime/Space/Derivatives/Div.lean)

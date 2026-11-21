@@ -8,13 +8,13 @@ proof: formalized
 
 # 13.17 Triangulated subcategories of the derived category
 
-Section 13.17 of the Stacks Project, [Tag 06UP](https://stacks.math.columbia.edu/tag/06UP). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 13.17 of the Stacks Project, [Tag 06UP](https://stacks.math.columbia.edu/tag/06UP). 4 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 06UQ, a lemma
 
 [Tag 06UQ](https://stacks.math.columbia.edu/tag/06UQ) in the Stacks Project.
 
-**`DerivedCategoryB.derivedCategoryB_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1764). References: SGA 5 I (App.1.2), “more general”; SGA 6 IV (1.6).
+**`DerivedCategoryB.derivedCategoryB_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1764](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1764). References: SGA 5 I (App.1.2), “more general”; SGA 6 IV (1.6).
 
 > **Statement 1 (Stacks 06UQ, unbounded version).**
 > For a weak Serre subcategory `B ⊆ A`, the property `D_B(A)` is a strictly full,
@@ -28,7 +28,7 @@ theorem derivedCategoryB_isTriangulated_saturated
       (derivedCategoryB B).IsStableUnderRetracts
 ```
 
-**`DerivedCategoryB.derivedCategoryBPlus_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1776](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1776). References: SGA 5 I (App.1.2), “special case”; SGA 6 I (1.1.5), “partial”.
+**`DerivedCategoryB.derivedCategoryBPlus_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1776](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1776). References: SGA 5 I (App.1.2), “special case”; SGA 6 I (1.1.5), “partial”.
 
 > **Statement 2 (Stacks 06UQ, bounded version, bounded below).**
 > `D^+_B(A)` is a strictly full, saturated, triangulated subcategory of `D(A)`.
@@ -41,7 +41,7 @@ theorem derivedCategoryBPlus_isTriangulated_saturated
       (derivedCategoryBPlus B).IsStableUnderRetracts
 ```
 
-**`DerivedCategoryB.derivedCategoryBMinus_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1788](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1788). References: SGA 6 I (1.1.5), “partial”.
+**`DerivedCategoryB.derivedCategoryBMinus_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1788](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1788). References: SGA 6 I (1.1.5), “partial”.
 
 > **Statement 2 (Stacks 06UQ, bounded version, bounded above).**
 > `D^-_B(A)` is a strictly full, saturated, triangulated subcategory of `D(A)`.
@@ -54,7 +54,7 @@ theorem derivedCategoryBMinus_isTriangulated_saturated
       (derivedCategoryBMinus B).IsStableUnderRetracts
 ```
 
-**`DerivedCategoryB.derivedCategoryBBounded_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1800](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1800). References: SGA 6 I (1.1.5), “partial”.
+**`DerivedCategoryB.derivedCategoryBBounded_isTriangulated_saturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1800](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1800). References: SGA 6 I (1.1.5), “partial”.
 
 > **Statement 2 (Stacks 06UQ, bounded version, bounded).**
 > `D^b_B(A)` is a strictly full, saturated, triangulated subcategory of `D(A)`.
@@ -71,7 +71,7 @@ theorem derivedCategoryBBounded_isTriangulated_saturated
 
 [Tag 06XL](https://stacks.math.columbia.edu/tag/06XL) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.SerreClassLocalization.essSurj_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L530).
+**`CategoryTheory.ObjectProperty.SerreClassLocalization.essSurj_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 530](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L530).
 
 > **Stacks 06XL.** Let `C` be an abelian category, let `P` be a Serre class in `C`, and let
 > `L : C ⥤ D` be a localization of `C` at the morphisms which become isomorphisms modulo `P`,
@@ -91,7 +91,7 @@ public theorem SerreClassLocalization.essSurj_mapDerivedCategory
 
 [Tag 06XM](https://stacks.math.columbia.edu/tag/06XM) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategory_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L768).
+**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategory_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 768](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L768).
 
 > **Stacks 06XM.** Let `𝒜` be an abelian category, let `ℬ ⊆ 𝒜` be a Serre subcategory (a Serre
 > class `P` of objects of `C = 𝒜`) and let `L : 𝒜 ⥤ 𝒜/ℬ` be the quotient functor, i.e. a
@@ -113,7 +113,7 @@ public theorem SerreClassLocalization.isLocalization_mapDerivedCategory_of_leftA
         ∀ n : ℤ, P ((DerivedCategory.homologyFunctor C n).obj X)))
 ```
 
-**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryPlus_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L241). The attribute's comment: “bounded below version”.
+**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryPlus_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 241](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L241). The attribute's comment: “bounded below version”.
 
 > **[Stacks, Tag 06XM], bounded below version.** In the situation of
 > `isLocalization_mapDerivedCategory_of_leftAdjoint` — `L : 𝒜 ⥤ 𝒜/ℬ` the quotient by a Serre
@@ -127,7 +127,7 @@ public theorem isLocalization_mapDerivedCategoryPlus_of_leftAdjoint :
       ((derivedCategoryB P).inverseImage (Plus.ι (C := C))).trW
 ```
 
-**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryMinus_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L255). The attribute's comment: “bounded above version”.
+**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryMinus_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 255](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L255). The attribute's comment: “bounded above version”.
 
 > **[Stacks, Tag 06XM], bounded above version.** `D⁻(𝒜)/D⁻_ℬ(𝒜) = D⁻(𝒜/ℬ)`: the induced
 > functor `D⁻(𝒜) ⥤ D⁻(𝒜/ℬ)` is a localization functor for the morphisms of `D⁻(𝒜)` whose cone
@@ -139,7 +139,7 @@ public theorem isLocalization_mapDerivedCategoryMinus_of_leftAdjoint :
       ((derivedCategoryB P).inverseImage (Minus.ι (C := C))).trW
 ```
 
-**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryBounded_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L309). The attribute's comment: “bounded version”.
+**`CategoryTheory.ObjectProperty.SerreClassLocalization.isLocalization_mapDerivedCategoryBounded_of_leftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean, line 309](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategoryBounded.lean#L309). The attribute's comment: “bounded version”.
 
 > **[Stacks, Tag 06XM], bounded version.** `Dᵇ(𝒜)/Dᵇ_ℬ(𝒜) = Dᵇ(𝒜/ℬ)`: the induced functor
 > `Dᵇ(𝒜) ⥤ Dᵇ(𝒜/ℬ)` is a localization functor for the morphisms of `Dᵇ(𝒜)` whose cone lies in
@@ -155,7 +155,7 @@ public theorem isLocalization_mapDerivedCategoryBounded_of_leftAdjoint :
 
 [Tag 0FCL](https://stacks.math.columbia.edu/tag/0FCL) in the Stacks Project.
 
-**`CategoryTheory.ObjectProperty.full_faithful_essImage_minus_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1109).
+**`CategoryTheory.ObjectProperty.full_faithful_essImage_minus_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean, line 1109](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/Algebra/Homology/DerivedCategory/SerreSubcategory.lean#L1109).
 
 > Let `A` be an abelian category and `P` a Serre class in `A`, cutting out the Serre
 > subcategory `B = P.FullSubcategory`. Assume that for every epimorphism `f : X ⟶ Y` of `A` with
@@ -184,4 +184,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 13.17, Tag 06UP](https://stacks.math.columbia.edu/tag/06UP)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

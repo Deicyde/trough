@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1158 to Erdős Problem 1191
+# Erdős Problem 1128 to Erdős Problem 1186
 
+- [Erdős Problem 1128](../../../../../erdos-problems/1100-1199/part-02/erdos-problem-1128.md)
+- [Erdős Problem 1145](../../../../../erdos-problems/1100-1199/part-02/erdos-problem-1145.md)
+- [Erdős Problem 1157](../../../../../erdos-problems/1100-1199/part-03/erdos-problem-1157.md)
 - [Erdős Problem 1158](../../../../../erdos-problems/1100-1199/part-03/erdos-problem-1158.md)
 - [Erdős Problem 1159](../../../../../erdos-problems/1100-1199/part-03/erdos-problem-1159.md)
 - [Erdős Problem 1161](../../../../../erdos-problems/1100-1199/part-03/erdos-problem-1161.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Erdős Problem 1183](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1183.md)
 - [Erdős Problem 1185](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1185.md)
 - [Erdős Problem 1186](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1186.md)
-- [Erdős Problem 1187](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1187.md)
-- [Erdős Problem 1190](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1190.md)
-- [Erdős Problem 1191](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1191.md)

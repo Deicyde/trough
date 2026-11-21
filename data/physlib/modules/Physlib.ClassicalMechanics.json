@@ -1,6 +1,6 @@
 {
  "schema": "trough-physlib/v1",
- "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "rev": "8c87bdfb015de47e82da811567aaa7a2a05353f4",
  "modules": [
   {
    "file": "Physlib/ClassicalMechanics/Basic.lean",
@@ -46,7 +46,7 @@
    ],
    "private": 0,
    "aliases": 0,
-   "informal": 2
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean",
@@ -1186,6 +1186,92 @@
    "informal": 0
   },
   {
+   "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/Basic.lean",
+   "module": "Physlib.ClassicalMechanics.HamiltonianMechanics.Basic",
+   "title": "Hamiltonian systems",
+   "doc": "Smooth time-dependent Hamiltonians on open domains of cotangent phase space.\n\n## i. Overview\n\nA Hamiltonian system specifies a Hamiltonian and an open domain in the phase space of a\nconfiguration space. Smoothness is required on that domain, allowing potentials which are\nsingular elsewhere, as in central-force systems away from the centre of force.\n\nThe coordinate constructors use the global phase-space diffeomorphisms. They preserve the\nmomentum-first convention `(p, q)` of the existing Hamilton equations and Poisson brackets.\nTime retains its affine manifold structure, so constructing a system does not choose a time origin.\n\n## ii. Key results\n\n- `HamiltonianSystem` : a smooth Hamiltonian with an open phase-space domain.\n- `HamiltonianSystem.ofCoordinates` : a system from global phase-space coordinates.\n- `HamiltonianSystem.ofNormedSpace` : a system from covector-position coordinates.\n- `HamiltonianSystem.ofInnerProductSpace` : a system from momentum-vector-position coordinates.\n\n## iii. Table of contents\n\n- A. Hamiltonian systems and their domains\n- B. Coordinate constructors\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]",
+   "copyright": "2026 Rithwik Ranganathan",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. Hamiltonian systems and their domains"
+    },
+    {
+     "line": 80,
+     "text": "## B. Coordinate constructors"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem",
+     "kind": "structure",
+     "line": 60,
+     "doc": "A time-dependent Hamiltonian smooth on an open domain of the cotangent phase space.\nThe Hamiltonian is represented by a total function, with smoothness required on the domain.",
+     "statement": "structure HamiltonianSystem where\n  /-- The phase-space domain on which the system is defined. -/\n  domain : Set (PhaseSpace I Q)\n  /-- The phase-space domain is open. -/\n  isOpen_domain : IsOpen domain\n  /-- The Hamiltonian as a function of time and phase-space state. -/\n  hamiltonian : Time × PhaseSpace I Q → ℝ\n  /-- The Hamiltonian is smooth in time and state on its domain. -/\n  contMDiffOn_hamiltonian : ContMDiffOn\n    (𝓘(ℝ, ℝ).prod (I.prod 𝓘(ℝ, E →L[ℝ] ℝ))) 𝓘(ℝ, ℝ) ∞ hamiltonian (Set.univ ×ˢ domain)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.ofCoordinates",
+     "kind": "def",
+     "line": 85,
+     "doc": "Pull a Hamiltonian and its domain back along global phase-space coordinates.",
+     "statement": "def ofCoordinates {P : Type*} [NormedAddCommGroup P] [NormedSpace ℝ P]\n    (e : PhaseSpace I Q ≃ₘ^∞ ⟮I.prod 𝓘(ℝ, E →L[ℝ] ℝ), 𝓘(ℝ, P)⟯ P)\n    (U : Set P) (hU : IsOpen U) (H : Time × P → ℝ)\n    (hH : ContMDiffOn (𝓘(ℝ, ℝ).prod 𝓘(ℝ, P)) 𝓘(ℝ, ℝ) ∞ H (Set.univ ×ˢ U)) :\n    HamiltonianSystem I Q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.ofNormedSpace",
+     "kind": "def",
+     "line": 104,
+     "doc": "The Hamiltonian system on a normed space given by `H(t, p, q)` on an open domain `U`,\nwith momentum `p` in the continuous dual.",
+     "statement": "def ofNormedSpace : HamiltonianSystem 𝓘(ℝ, E) ⟨E⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.mem_domain_ofNormedSpace",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "The coordinate constructor preserves membership in the Hamiltonian's domain.",
+     "statement": "lemma mem_domain_ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) :\n    PhaseSpace.ofNormedSpace p q ∈ (ofNormedSpace U hU H hH).domain ↔ (p, q) ∈ U",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.hamiltonian_ofNormedSpace",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "The coordinate constructor preserves the value of the Hamiltonian.",
+     "statement": "lemma hamiltonian_ofNormedSpace (t : Time) (p : E →L[ℝ] ℝ) (q : E) :\n    (ofNormedSpace U hU H hH).hamiltonian (t, PhaseSpace.ofNormedSpace p q) = H (t, p, q)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.ofInnerProductSpace",
+     "kind": "def",
+     "line": 134,
+     "doc": "The Hamiltonian system on a real Hilbert space given by `H(t, p, q)` on an open domain `U`,\nwith momentum represented by a vector using the Riesz map.",
+     "statement": "def ofInnerProductSpace : HamiltonianSystem 𝓘(ℝ, E) ⟨E⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.mem_domain_ofInnerProductSpace",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "The vector-coordinate constructor preserves membership in the Hamiltonian's domain.",
+     "statement": "lemma mem_domain_ofInnerProductSpace (p q : E) :\n    PhaseSpace.ofInnerProductSpace p q ∈ (ofInnerProductSpace U hU H hH).domain ↔ (p, q) ∈ U",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.HamiltonianSystem.hamiltonian_ofInnerProductSpace",
+     "kind": "lemma",
+     "line": 147,
+     "doc": "The vector-coordinate constructor preserves the value of the Hamiltonian.",
+     "statement": "lemma hamiltonian_ofInnerProductSpace (t : Time) (p q : E) :\n    (ofInnerProductSpace U hU H hH).hamiltonian (t, PhaseSpace.ofInnerProductSpace p q) =\n      H (t, p, q)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean",
    "module": "Physlib.ClassicalMechanics.HamiltonianMechanics.HamiltonsEquations",
    "title": "Hamilton's equations",
@@ -1234,43 +1320,47 @@
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean",
    "module": "Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket",
    "title": "The Poisson bracket",
-   "doc": "The Poisson bracket of phase-space observables and their Hamiltonian time evolution.\n\n## i. Overview\n\nThe Poisson bracket packages, into a single antisymmetric bilinear operation on phase-space\nfunctions, the way an observable evolves along a Hamiltonian flow. Following the convention of\n`hamiltonEqOp` in `HamiltonsEquations.lean`, a phase-space function is a function `f : X → X → ℝ`\nread as `f p q` for `p` a momentum and `q` a position, both valued in a real inner product space\n`X`. The bracket of two such functions is\n\n$$\\{f, g\\} := \\left\\langle \\frac{\\partial f}{\\partial q}, \\frac{\\partial g}{\\partial p}\n  \\right\\rangle - \\left\\langle \\frac{\\partial f}{\\partial p}, \\frac{\\partial g}{\\partial q}\n  \\right\\rangle,$$\n\nbuilt from the same currying-and-`gradient` idiom `hamiltonEqOp` already uses to express partial\nderivatives on phase space.\n\n## ii. Key results\n\n- `poissonBracket` : the Poisson bracket of two phase-space functions.\n- `poissonBracket_eq_of_hasGradientAt` : computes the bracket from known partial gradients.\n- `poissonBracket_antisymm` : the bracket is antisymmetric.\n- `poissonBracket_self` : every observable Poisson-commutes with itself.\n- `poissonBracket_add_left`, `poissonBracket_add_right`, `poissonBracket_const_mul_left`,\n  `poissonBracket_const_mul_right` : the bracket is bilinear, that is additive and homogeneous in\n  each argument.\n- `poissonBracket_mul_left`, `poissonBracket_mul_right` : the bracket satisfies the Leibniz rule\n  in each argument.\n- `deriv_comp_eq_inner_gradient_add` : the time derivative of a phase-space function composed with\n  a trajectory is the sum of its gradients paired with the trajectory's velocities.\n- `deriv_comp_eq_poissonBracket` : along a solution of Hamilton's equations, the time derivative of\n  an observable is its Poisson bracket with the Hamiltonian.\n\n## iii. Table of contents\n\n- A. The definition of the Poisson bracket\n- B. Antisymmetry\n- C. Bilinearity\n- D. The Leibniz rule\n- E. Time evolution along a Hamiltonian flow\n  - E.1. The chain rule for a phase-space function along a trajectory\n  - E.2. Time evolution as the Poisson bracket with the Hamiltonian\n\n## iv. References\n\n* G. J. Sussman and J. Wisdom, \"Structure and Interpretation of Classical Mechanics\", Section 3.2.\n  <https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book-Z-H-37.html>.\n  [ref: sussman_wisdom_sicm]",
+   "doc": "The Poisson bracket of phase-space observables and their Hamiltonian time evolution.\n\n## i. Overview\n\nThe Poisson bracket packages, into a single antisymmetric bilinear operation on phase-space\nfunctions, the way an observable evolves along a Hamiltonian flow. Following the convention of\n`hamiltonEqOp` in `HamiltonsEquations.lean`, a phase-space function is a function `f : X → X → ℝ`\nread as `f p q` for `p` a momentum and `q` a position, both valued in a real inner product space\n`X`. The bracket of two such functions is\n\n$$\\{f, g\\} := \\left\\langle \\frac{\\partial f}{\\partial q}, \\frac{\\partial g}{\\partial p}\n  \\right\\rangle - \\left\\langle \\frac{\\partial f}{\\partial p}, \\frac{\\partial g}{\\partial q}\n  \\right\\rangle,$$\n\nbuilt from the same currying-and-`gradient` idiom `hamiltonEqOp` already uses to express partial\nderivatives on phase space.\n\n## ii. Key results\n\n- `poissonBracket` : the Poisson bracket of two phase-space functions.\n- `poissonBracket_eq_of_hasGradientAt` : computes the bracket from known partial gradients.\n- `poissonBracket_antisymm` : the bracket is antisymmetric.\n- `poissonBracket_self` : every observable Poisson-commutes with itself.\n- `poissonBracket_position_momentum`, `poissonBracket_position_position`,\n  `poissonBracket_momentum_momentum` : the canonical bracket relations for Euclidean coordinates.\n- `poissonBracket_add_left`, `poissonBracket_add_right`, `poissonBracket_const_mul_left`,\n  `poissonBracket_const_mul_right` : the bracket is bilinear, that is additive and homogeneous in\n  each argument.\n- `poissonBracket_mul_left`, `poissonBracket_mul_right` : the bracket satisfies the Leibniz rule\n  in each argument.\n- `deriv_comp_eq_inner_gradient_add` : the time derivative of a phase-space function composed with\n  a trajectory is the sum of its gradients paired with the trajectory's velocities.\n- `deriv_comp_eq_poissonBracket` : along a solution of Hamilton's equations, the time derivative of\n  an observable is its Poisson bracket with the Hamiltonian.\n- `hasDerivAt_comp_eq_poissonBracket` gives the same identity at a single real time.\n- `observable_eq_of_poissonBracket_eq_zero` gives conservation on a time interval.\n\n## iii. Table of contents\n\n- A. The definition of the Poisson bracket\n- B. Antisymmetry\n- C. Bilinearity\n- D. The Leibniz rule\n- E. Time evolution along a Hamiltonian flow\n  - E.1. The chain rule for a phase-space function along a trajectory\n  - E.2. Time evolution as the Poisson bracket with the Hamiltonian\n- F. Canonical coordinate relations\n\n## iv. References\n\n* G. J. Sussman and J. Wisdom, \"Structure and Interpretation of Classical Mechanics\", Section 3.2.\n  <https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book-Z-H-37.html>.\n  [ref: sussman_wisdom_sicm]",
    "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
-     "line": 75,
+     "line": 80,
      "text": "## A. The definition of the Poisson bracket"
     },
     {
-     "line": 95,
+     "line": 100,
      "text": "## B. Antisymmetry"
     },
     {
-     "line": 113,
+     "line": 118,
      "text": "## C. Bilinearity\n\nThe bracket is additive and homogeneous under scaling by a constant in each argument. We prove\nthis for the first argument; the second-argument versions follow from `poissonBracket_antisymm`."
     },
     {
-     "line": 166,
+     "line": 171,
      "text": "## D. The Leibniz rule"
     },
     {
-     "line": 198,
+     "line": 203,
      "text": "## E. Time evolution along a Hamiltonian flow"
     },
     {
-     "line": 204,
+     "line": 209,
      "text": "### E.1. The chain rule for a phase-space function along a trajectory"
     },
     {
-     "line": 234,
+     "line": 233,
      "text": "### E.2. Time evolution as the Poisson bracket with the Hamiltonian"
+    },
+    {
+     "line": 287,
+     "text": "## F. Canonical coordinate relations\n\nFor Euclidean phase space, position and momentum coordinates satisfy\n`{qᵢ, pⱼ} = δᵢⱼ`, while brackets between two position coordinates or two momentum coordinates\nvanish.\nThe argument order remains momentum first, position second, as in `poissonBracket`."
     }
    ],
    "declarations": [
     {
      "name": "ClassicalMechanics.poissonBracket",
      "kind": "def",
-     "line": 83,
+     "line": 88,
      "doc": "The Poisson bracket of two phase-space functions `f g : X → X → ℝ`, each read as `f p q` for\na momentum `p` and a position `q`, at a point `(p, q)` of phase space.",
      "statement": "noncomputable def poissonBracket (f g : X → X → ℝ) (p q : X) : ℝ",
      "sorry": false
@@ -1278,7 +1368,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_eq_of_hasGradientAt",
      "kind": "lemma",
-     "line": 89,
+     "line": 94,
      "doc": "The Poisson bracket of two phase-space functions whose partial gradients at `(p, q)` are\nknown.",
      "statement": "lemma poissonBracket_eq_of_hasGradientAt {f g : X → X → ℝ} {p q fp fq gp gq : X}\n    (hfp : HasGradientAt (fun p' => f p' q) fp p) (hfq : HasGradientAt (fun q' => f p q') fq q)\n    (hgp : HasGradientAt (fun p' => g p' q) gp p) (hgq : HasGradientAt (fun q' => g p q') gq q) :\n    poissonBracket f g p q = ⟪fq, gp⟫_ℝ - ⟪fp, gq⟫_ℝ",
      "sorry": false
@@ -1286,7 +1376,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_antisymm",
      "kind": "lemma",
-     "line": 102,
+     "line": 107,
      "doc": "The Poisson bracket is antisymmetric.",
      "statement": "lemma poissonBracket_antisymm (f g : X → X → ℝ) (p q : X) :\n    poissonBracket f g p q = -poissonBracket g f p q",
      "sorry": false
@@ -1294,7 +1384,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_self",
      "kind": "lemma",
-     "line": 109,
+     "line": 114,
      "doc": "The Poisson bracket of a phase-space function with itself vanishes.",
      "statement": "lemma poissonBracket_self (f : X → X → ℝ) (p q : X) : poissonBracket f f p q = 0",
      "sorry": false
@@ -1302,7 +1392,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_add_left",
      "kind": "lemma",
-     "line": 124,
+     "line": 129,
      "doc": "The Poisson bracket is additive in its first argument, for functions differentiable in both\nphase-space directions.",
      "statement": "lemma poissonBracket_add_left (f₁ f₂ g : X → X → ℝ) (p q : X)\n    (hf₁p : DifferentiableAt ℝ (fun p' => f₁ p' q) p)\n    (hf₂p : DifferentiableAt ℝ (fun p' => f₂ p' q) p)\n    (hf₁q : DifferentiableAt ℝ (fun q' => f₁ p q') q)\n    (hf₂q : DifferentiableAt ℝ (fun q' => f₂ p q') q) :\n    poissonBracket (fun p' q' => f₁ p' q' + f₂ p' q') g p q =\n      poissonBracket f₁ g p q + poissonBracket f₂ g p q",
      "sorry": false
@@ -1310,7 +1400,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_const_mul_left",
      "kind": "lemma",
-     "line": 137,
+     "line": 142,
      "doc": "The Poisson bracket is homogeneous of degree one in its first argument, for a function\ndifferentiable in both phase-space directions.",
      "statement": "lemma poissonBracket_const_mul_left (c : ℝ) (f g : X → X → ℝ) (p q : X)\n    (hfp : DifferentiableAt ℝ (fun p' => f p' q) p)\n    (hfq : DifferentiableAt ℝ (fun q' => f p q') q) :\n    poissonBracket (fun p' q' => c * f p' q') g p q = c * poissonBracket f g p q",
      "sorry": false
@@ -1318,7 +1408,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_add_right",
      "kind": "lemma",
-     "line": 146,
+     "line": 151,
      "doc": "The Poisson bracket is additive in its second argument.",
      "statement": "lemma poissonBracket_add_right (f g₁ g₂ : X → X → ℝ) (p q : X)\n    (hg₁p : DifferentiableAt ℝ (fun p' => g₁ p' q) p)\n    (hg₂p : DifferentiableAt ℝ (fun p' => g₂ p' q) p)\n    (hg₁q : DifferentiableAt ℝ (fun q' => g₁ p q') q)\n    (hg₂q : DifferentiableAt ℝ (fun q' => g₂ p q') q) :\n    poissonBracket f (fun p' q' => g₁ p' q' + g₂ p' q') p q =\n      poissonBracket f g₁ p q + poissonBracket f g₂ p q",
      "sorry": false
@@ -1326,7 +1416,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_const_mul_right",
      "kind": "lemma",
-     "line": 158,
+     "line": 163,
      "doc": "The Poisson bracket is homogeneous of degree one in its second argument.",
      "statement": "lemma poissonBracket_const_mul_right (c : ℝ) (f g : X → X → ℝ) (p q : X)\n    (hgp : DifferentiableAt ℝ (fun p' => g p' q) p)\n    (hgq : DifferentiableAt ℝ (fun q' => g p q') q) :\n    poissonBracket f (fun p' q' => c * g p' q') p q = c * poissonBracket f g p q",
      "sorry": false
@@ -1334,7 +1424,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_mul_left",
      "kind": "lemma",
-     "line": 173,
+     "line": 178,
      "doc": "The Poisson bracket satisfies the Leibniz rule in its first argument.",
      "statement": "lemma poissonBracket_mul_left (f₁ f₂ g : X → X → ℝ) (p q : X)\n    (hf₁p : DifferentiableAt ℝ (fun p' => f₁ p' q) p)\n    (hf₂p : DifferentiableAt ℝ (fun p' => f₂ p' q) p)\n    (hf₁q : DifferentiableAt ℝ (fun q' => f₁ p q') q)\n    (hf₂q : DifferentiableAt ℝ (fun q' => f₂ p q') q) :\n    poissonBracket (fun p' q' => f₁ p' q' * f₂ p' q') g p q =\n      poissonBracket f₁ g p q * f₂ p q + f₁ p q * poissonBracket f₂ g p q",
      "sorry": false
@@ -1342,7 +1432,7 @@
     {
      "name": "ClassicalMechanics.poissonBracket_mul_right",
      "kind": "lemma",
-     "line": 187,
+     "line": 192,
      "doc": "The Poisson bracket satisfies the Leibniz rule in its second argument.",
      "statement": "lemma poissonBracket_mul_right (f g₁ g₂ : X → X → ℝ) (p q : X)\n    (hg₁p : DifferentiableAt ℝ (fun p' => g₁ p' q) p)\n    (hg₂p : DifferentiableAt ℝ (fun p' => g₂ p' q) p)\n    (hg₁q : DifferentiableAt ℝ (fun q' => g₁ p q') q)\n    (hg₂q : DifferentiableAt ℝ (fun q' => g₂ p q') q) :\n    poissonBracket f (fun p' q' => g₁ p' q' * g₂ p' q') p q =\n      poissonBracket f g₁ p q * g₂ p q + g₁ p q * poissonBracket f g₂ p q",
      "sorry": false
@@ -1350,7 +1440,7 @@
     {
      "name": "ClassicalMechanics.deriv_comp_eq_inner_gradient_add",
      "kind": "lemma",
-     "line": 212,
+     "line": 217,
      "doc": "The time derivative of a phase-space function `f` composed with trajectories `p q : Time → X`\nis the sum of the gradients of `f` paired with the velocities `∂ₜ p` and `∂ₜ q`.",
      "statement": "lemma deriv_comp_eq_inner_gradient_add (f : X → X → ℝ) (p q : Time → X) (t : Time)\n    (hp : DifferentiableAt ℝ p t) (hq : DifferentiableAt ℝ q t)\n    (hf : DifferentiableAt ℝ (Function.uncurry f) (p t, q t)) :\n    ∂ₜ (fun t => f (p t) (q t)) t =\n      ⟪gradient (fun p' => f p' (q t)) (p t), ∂ₜ p t⟫_ℝ +\n      ⟪gradient (fun q' => f (p t) q') (q t), ∂ₜ q t⟫_ℝ",
      "sorry": false
@@ -1358,9 +1448,49 @@
     {
      "name": "ClassicalMechanics.deriv_comp_eq_poissonBracket",
      "kind": "theorem",
-     "line": 242,
+     "line": 241,
      "doc": "Along a solution of Hamilton's equations for a Hamiltonian `H`, the time derivative of a\nphase-space observable `f` is its Poisson bracket with `H t`.",
      "statement": "theorem deriv_comp_eq_poissonBracket (H : Time → X → X → ℝ) (p q : Time → X) (f : X → X → ℝ)\n    (t : Time) (heq : hamiltonEqOp H p q = 0)\n    (hp : DifferentiableAt ℝ p t) (hq : DifferentiableAt ℝ q t)\n    (hf : DifferentiableAt ℝ (Function.uncurry f) (p t, q t)) :\n    ∂ₜ (fun t => f (p t) (q t)) t = poissonBracket f (H t) (p t) (q t)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.hasDerivAt_comp_eq_poissonBracket",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "The Poisson bracket gives the derivative of an observable at a real time where the\nposition and momentum derivatives satisfy Hamilton's equations.",
+     "statement": "lemma hasDerivAt_comp_eq_poissonBracket (H f : X → X → ℝ) {p q : ℝ → X} {t : ℝ}\n    (hp : HasDerivAt p (-gradient (fun p' => H (p t) p') (q t)) t)\n    (hq : HasDerivAt q (gradient (fun q' => H q' (q t)) (p t)) t)\n    (hf : DifferentiableAt ℝ (Function.uncurry f) (p t, q t)) :\n    HasDerivAt (fun s => f (p s) (q s)) (poissonBracket f H (p t) (q t)) t",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.observable_eq_of_poissonBracket_eq_zero",
+     "kind": "lemma",
+     "line": 273,
+     "doc": "A time-independent observable takes the same value at any two times in an interval\nwhere the trajectory satisfies Hamilton's equations and the observable Poisson-commutes\nwith the possibly time-dependent Hamiltonian along the trajectory.",
+     "statement": "lemma observable_eq_of_poissonBracket_eq_zero (H : ℝ → X → X → ℝ) {p q : ℝ → X}\n    {s : Set ℝ} (hs : Convex ℝ s)\n    (hp : ∀ t ∈ s, HasDerivAt p (-gradient (fun q' => H t (p t) q') (q t)) t)\n    (hq : ∀ t ∈ s, HasDerivAt q (gradient (fun p' => H t p' (q t)) (p t)) t)\n    (f : X → X → ℝ) (hf : ∀ t ∈ s, DifferentiableAt ℝ (Function.uncurry f) (p t, q t))\n    (hbr : ∀ t ∈ s, poissonBracket f (H t) (p t) (q t) = 0)\n    {t₁ t₂ : ℝ} (h₁ : t₁ ∈ s) (h₂ : t₂ ∈ s) : f (p t₁) (q t₁) = f (p t₂) (q t₂)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.poissonBracket_position_momentum",
+     "kind": "lemma",
+     "line": 301,
+     "doc": "The Poisson bracket of a position coordinate with a momentum coordinate is the Kronecker\ndelta.",
+     "statement": "lemma poissonBracket_position_momentum {ι : Type*} [Fintype ι] [DecidableEq ι] (i j : ι)\n    (p q : EuclideanSpace ℝ ι) :\n    poissonBracket (fun _ q => q i) (fun p _ => p j) p q = δ[i,j]",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.poissonBracket_position_position",
+     "kind": "lemma",
+     "line": 309,
+     "doc": "The Poisson bracket of two position coordinates vanishes.",
+     "statement": "lemma poissonBracket_position_position {ι : Type*} [Fintype ι] (i j : ι)\n    (p q : EuclideanSpace ℝ ι) :\n    poissonBracket (fun _ q => q i) (fun _ q => q j) p q = 0",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.poissonBracket_momentum_momentum",
+     "kind": "lemma",
+     "line": 316,
+     "doc": "The Poisson bracket of two momentum coordinates vanishes.",
+     "statement": "lemma poissonBracket_momentum_momentum {ι : Type*} [Fintype ι] (i j : ι)\n    (p q : EuclideanSpace ℝ ι) :\n    poissonBracket (fun p _ => p i) (fun p _ => p j) p q = 0",
      "sorry": false
     }
    ],
@@ -3137,6 +3267,76 @@
    "informal": 2
   },
   {
+   "file": "Physlib/ClassicalMechanics/Lagrangian/Chart.lean",
+   "module": "Physlib.ClassicalMechanics.Lagrangian.Chart",
+   "title": "Lagrangian systems in charts",
+   "doc": "The Lagrangian in a chart, and the action integrand of a curve read in a chart.\n\n## i. Overview\n\nIn a chart `(q, q̇)` are coordinates on the tangent bundle, so the Lagrangian is a function\n`L (t, q, q̇)`. For a chart-read curve `c` the action integrand at `τ` is `L (τ, c τ, ċ τ)`.\n\n## ii. Key results\n\n- `LagrangianSystem.chartLagrangian`: `L (t, q, q̇)` in a chart\n- `LagrangianSystem.contDiffAt_chartLagrangian`: it is smooth over the chart target\n- `LagrangianSystem.exists_contDiff_chartLagrangian_eq`: it agrees with a smooth `L` near a\n  compact set\n- `LagrangianSystem.action_integrand_eq_chartLagrangian`: the action integrand in a chart is `L`\n- `LagrangianSystem.action_integrand_eq_of_eventuallyEq`: the same for a curve chart-read near a\n  time\n- `LagrangianSystem.continuousAt_action_integrand`: the action integrand is continuous\n\n## iii. Table of contents\n\n- A. The Lagrangian in a chart\n- B. The action integrand\n\n## iv. References\n\n* I. Terek, Introductory Variational Calculus on Manifolds. [ref: terek_variational_manifolds]",
+   "copyright": "2026 Michal Mogielnicki",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. The Lagrangian in a chart"
+    },
+    {
+     "line": 105,
+     "text": "## B. The action integrand"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.chartLagrangian",
+     "kind": "def",
+     "line": 63,
+     "doc": "The Lagrangian in the chart `φ = extChartAt I x`, with time coordinate based at `t₀`:\n`L (t, q, q̇) = S (t +ᵥ t₀, d(φ.symm) (q, q̇))`, with generalised coordinates `q` and velocities\n`q̇`. It is meaningful only for `q` in the target of `φ`.",
+     "statement": "noncomputable def chartLagrangian (S : LagrangianSystem I M) (x : M) (t₀ : Time) :\n    ℝ × E × E → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.contDiffAt_chartLagrangian",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "The chart Lagrangian is smooth over the target of the chart.",
+     "statement": "lemma contDiffAt_chartLagrangian [I.Boundaryless] (S : LagrangianSystem I M)\n    (x : M) (t₀ : Time) {p : ℝ × E × E} (hp : p.2.1 ∈ (extChartAt I x).target) :\n    ContDiffAt ℝ ∞ (S.chartLagrangian x t₀) p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.exists_contDiff_chartLagrangian_eq",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "A chart Lagrangian agrees with a globally smooth one near a compact set of positions.",
+     "statement": "lemma exists_contDiff_chartLagrangian_eq [I.Boundaryless] [FiniteDimensional ℝ E]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {K : Set E} (hK : IsCompact K)\n    (hKx : K ⊆ (extChartAt I x).target) :\n    ∃ (L : ℝ × E × E → ℝ) (N : Set E), IsOpen N ∧ K ⊆ N ∧ N ⊆ (extChartAt I x).target ∧\n      ContDiff ℝ ∞ L ∧ ∀ p : ℝ × E × E, p.2.1 ∈ N → L p = S.chartLagrangian x t₀ p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.action_integrand_eq_chartLagrangian",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "Near a chart-read curve the action integrand is the chart Lagrangian.",
+     "statement": "lemma action_integrand_eq_chartLagrangian [I.Boundaryless]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {γ' : Time → M} {c : Time → E} {τ : ℝ}\n    (hev : γ' =ᶠ[𝓝 (τ +ᵥ t₀)] (extChartAt I x).symm ∘ c)\n    (hc : ContMDiffAt 𝓘(ℝ, ℝ) 𝓘(ℝ, E) ∞ c (τ +ᵥ t₀))\n    (hcx : c (τ +ᵥ t₀) ∈ (extChartAt I x).target) :\n    S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩) =\n      S.chartLagrangian x t₀ (τ, c (τ +ᵥ t₀), deriv (fun σ : ℝ ↦ c (σ +ᵥ t₀)) τ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.action_integrand_eq_of_eventuallyEq",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "If `γ'` is the chart-read curve `t ↦ (extChartAt I x).symm (c (t -ᵥ t₀))` near `τ +ᵥ t₀` and\n`L` agrees with the chart Lagrangian over positions in `N ∋ c τ`, the action integrand at `τ` is\n`L (τ, c τ, deriv c τ)`. Here `c` is a function of the time relative to `t₀`.",
+     "statement": "lemma action_integrand_eq_of_eventuallyEq [I.Boundaryless]\n    (S : LagrangianSystem I M) (x : M) (t₀ : Time) {γ' : Time → M} {c : ℝ → E} {τ : ℝ}\n    {L : ℝ × E × E → ℝ} {N : Set E}\n    (hN : N ⊆ (extChartAt I x).target)\n    (hLN : ∀ p : ℝ × E × E, p.2.1 ∈ N → L p = S.chartLagrangian x t₀ p) (hc : ContDiffAt ℝ ∞ c τ)\n    (hcN : c τ ∈ N)\n    (hev : γ' =ᶠ[𝓝 (τ +ᵥ t₀)] (extChartAt I x).symm ∘ fun t ↦ c (t -ᵥ t₀)) :\n    S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩) = L (τ, c τ, deriv c τ)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.LagrangianSystem.continuousAt_action_integrand",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "The action integrand of a smooth curve is continuous.",
+     "statement": "lemma continuousAt_action_integrand [I.Boundaryless]\n    (S : LagrangianSystem I M) (t₀ : Time) {γ' : Time → M} (hγ' : ContMDiff 𝓘(ℝ, ℝ) I ∞ γ')\n    (τ : ℝ) : ContinuousAt (fun τ : ℝ ↦\n      S (τ +ᵥ t₀, tangentMap 𝓘(ℝ, ℝ) I γ' ⟨τ +ᵥ t₀, (1 : ℝ)⟩)) τ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
    "file": "Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean",
    "module": "Physlib.ClassicalMechanics.Lagrangian.CriticalPoint",
    "title": "Critical points and Euler-Lagrange equations",
@@ -3528,14 +3728,31 @@
    "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
    "module": "Physlib.ClassicalMechanics.OrbitalMechanics.VisViva",
    "title": "Circular Orbit Vis Viva",
-   "doc": "The vis-viva equation relates the speed of an orbiting body to its position\nand the mass of the central body. This module defines a simplified version of the\nvis-viva equation that is restricted to circular orbits (v^2 = G M / r).",
+   "doc": "The vis-viva equation relates the speed of an orbiting body to its position\nand the mass of the central body.\n\n## i. Overview\n\nThe circular-orbit case of the vis-viva equation gives the speed from the radius and the\ngravitational parameter. It also relates the speed to the positive angular rate.\n\n## ii. Key results\n\n- `VisViva.speedCircular_sq` gives the squared speed of a circular orbit.\n- `VisViva.speedCircular_eq_radius_mul_angularRate` expresses the speed using the angular rate.\n\n## iii. Table of contents\n\n- A. System parameters and orbital radius\n  - A.1. System parameters\n  - A.2. Orbital radius\n- B. Circular orbit speed\n  - B.1. Speed from the vis-viva equation\n  - B.2. Relation to the angular rate\n\n## iv. References\n\n* None.",
    "copyright": "2026 Hannah Dawe",
-   "sections": [],
+   "sections": [
+    {
+     "line": 44,
+     "text": "## A. System parameters and orbital radius\n\n### A.1. System parameters"
+    },
+    {
+     "line": 61,
+     "text": "### A.2. Orbital radius"
+    },
+    {
+     "line": 70,
+     "text": "## B. Circular orbit speed\n\n### B.1. Speed from the vis-viva equation"
+    },
+    {
+     "line": 86,
+     "text": "### B.2. Relation to the angular rate"
+    }
+   ],
    "declarations": [
     {
      "name": "ClassicalMechanics.VisViva",
      "kind": "structure",
-     "line": 23,
+     "line": 51,
      "doc": "System parameters for the vis-viva equation in circular orbital mechanics.",
      "statement": "structure VisViva where\n  /-- Gravitational constant. -/\n  G : ℝ\n  /-- Central mass body. -/\n  M : ℝ\n  /-- Orbiting mass body. -/\n  m : ℝ",
      "sorry": false
@@ -3543,7 +3760,7 @@
     {
      "name": "ClassicalMechanics.VisViva.ConfigurationSpace",
      "kind": "structure",
-     "line": 34,
+     "line": 66,
      "doc": "Configuration space for orbital mechanics, defining the orbital radius.",
      "statement": "structure ConfigurationSpace where\n  /-- Orbital radius. -/\n  r : ℝ",
      "sorry": false
@@ -3551,7 +3768,7 @@
     {
      "name": "ClassicalMechanics.VisViva.speedCircular",
      "kind": "def",
-     "line": 39,
+     "line": 77,
      "doc": "The orbital speed required for a circular orbit at radius `r`.",
      "statement": "noncomputable def speedCircular (sys : VisViva) (cfg : ConfigurationSpace) : ℝ",
      "sorry": false
@@ -3559,9 +3776,17 @@
     {
      "name": "ClassicalMechanics.VisViva.speedCircular_sq",
      "kind": "lemma",
-     "line": 43,
+     "line": 81,
      "doc": "Lemma: the square of the circular orbit speed equals G M / r.",
      "statement": "lemma speedCircular_sq (sys : VisViva) (cfg : ConfigurationSpace) (hr : 0 < cfg.r) (hG : 0 < sys.G)\n    (hM : 0 < sys.M) :\n    (speedCircular sys cfg)^2 = sys.G * sys.M / cfg.r",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.VisViva.speedCircular_eq_radius_mul_angularRate",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "The circular speed equals the orbital radius times the positive circular angular rate.",
+     "statement": "lemma speedCircular_eq_radius_mul_angularRate (sys : VisViva) (cfg : ConfigurationSpace)\n    (hr : 0 < cfg.r) (hG : 0 < sys.G) (hM : 0 < sys.M) :\n    sys.speedCircular cfg = cfg.r * Real.sqrt (sys.G * sys.M / cfg.r ^ 3)",
      "sorry": false
     }
    ],
@@ -5978,6 +6203,188 @@
     }
    ],
    "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ClassicalMechanics/PhaseSpace/Basic.lean",
+   "module": "Physlib.ClassicalMechanics.PhaseSpace.Basic",
+   "title": "Canonical phase spaces",
+   "doc": "The cotangent phase space of a configuration space and its momentum-position coordinates.\n\n## i. Overview\n\nA phase-space state consists of a configuration `q` and a momentum covector at `q`.\nThe cotangent bundle inherits its topology and smooth structure from Mathlib's bundle of\ncontinuous linear maps from the tangent bundle to the trivial real line bundle.\n\nFor a normed configuration space, the phase space has global coordinates `(p, q)` with\n`p` in the continuous dual. On a real Hilbert space, the Riesz identification represents\nmomentum by a vector, matching the momentum-first convention of Hamilton's equations.\nThe constructors `PhaseSpace.ofNormedSpace` and `PhaseSpace.ofInnerProductSpace` build\nstates directly from these momentum-position coordinates.\n\n## ii. Key results\n\n- `PhaseSpace` : the cotangent phase space of a configuration space.\n- `PhaseSpace.contMDiff_position` : the configuration projection is smooth.\n- `PhaseSpace.contMDiff_zeroMomentum` : the zero-momentum section is smooth.\n- `PhaseSpace.normedSpaceDiffeomorph` : global covector-position coordinates.\n- `PhaseSpace.innerProductSpaceDiffeomorph` : global momentum-vector-position coordinates.\n\n## iii. Table of contents\n\n- A. States and their configurations\n- B. Global momentum-position coordinates\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]",
+   "copyright": "2026 Rithwik Ranganathan",
+   "sections": [
+    {
+     "line": 61,
+     "text": "## A. States and their configurations"
+    },
+    {
+     "line": 106,
+     "text": "## B. Global momentum-position coordinates"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalMechanics.PhaseSpace",
+     "kind": "abbrev",
+     "line": 66,
+     "doc": "The canonical phase space `T*Q`, whose states pair a configuration with a momentum covector.",
+     "statement": "abbrev PhaseSpace",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.position",
+     "kind": "abbrev",
+     "line": 79,
+     "doc": "The configuration of a phase-space state.",
+     "statement": "abbrev position (s : PhaseSpace I Q) : Q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.momentum",
+     "kind": "abbrev",
+     "line": 82,
+     "doc": "The momentum covector of a state, acting on tangent vectors at its configuration.",
+     "statement": "abbrev momentum (s : PhaseSpace I Q) : TangentSpace I s.position →L[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.mk",
+     "kind": "def",
+     "line": 85,
+     "doc": "Construct a state from a configuration and its momentum covector.",
+     "statement": "def mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : PhaseSpace I Q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.position_mk",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma position_mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : (mk q p).position = q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.momentum_mk",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma momentum_mk (q : Q) (p : TangentSpace I q →L[ℝ] ℝ) : (mk q p).momentum = p",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.contMDiff_position",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "The configuration projection from phase space is smooth.",
+     "statement": "lemma contMDiff_position :\n    ContMDiff (I.prod 𝓘(ℝ, E →L[ℝ] ℝ)) I ∞ (position : PhaseSpace I Q → Q)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.zeroMomentum",
+     "kind": "def",
+     "line": 99,
+     "doc": "The state with zero momentum at a given configuration.",
+     "statement": "def zeroMomentum (q : Q) : PhaseSpace I Q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.contMDiff_zeroMomentum",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "Assigning zero momentum to each configuration is a smooth section of phase space.",
+     "statement": "lemma contMDiff_zeroMomentum :\n    ContMDiff I (I.prod 𝓘(ℝ, E →L[ℝ] ℝ)) ∞ (zeroMomentum : Q → PhaseSpace I Q)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph",
+     "kind": "def",
+     "line": 125,
+     "doc": "Global covector-position coordinates on the phase space of a real normed space.",
+     "statement": "noncomputable def normedSpaceDiffeomorph :\n    PhaseSpace 𝓘(ℝ, E) ⟨E⟩ ≃ₘ^∞ ⟮(𝓘(ℝ, E)).prod 𝓘(ℝ, E →L[ℝ] ℝ),\n      𝓘(ℝ, (E →L[ℝ] ℝ) × E)⟯ (E →L[ℝ] ℝ) × E",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_apply",
+     "kind": "lemma",
+     "line": 150,
+     "doc": "",
+     "statement": "lemma normedSpaceDiffeomorph_apply (s : PhaseSpace 𝓘(ℝ, E) ⟨E⟩) :\n    normedSpaceDiffeomorph E s =\n      (s.momentum.comp (NormedSpace.fromTangentSpace s.position).symm.toContinuousLinearMap,\n        s.position)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.normedSpaceDiffeomorph_symm_apply",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "",
+     "statement": "lemma normedSpaceDiffeomorph_symm_apply (p : E →L[ℝ] ℝ) (q : E) :\n    (normedSpaceDiffeomorph E).symm (p, q) =\n      mk q (p.comp (NormedSpace.fromTangentSpace q).toContinuousLinearMap)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.ofNormedSpace",
+     "kind": "def",
+     "line": 164,
+     "doc": "The phase-space state on a normed space with momentum covector `p` and position `q`.\nThe argument order agrees with the momentum-position coordinates of Hamilton's equations.",
+     "statement": "def ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) : PhaseSpace 𝓘(ℝ, E) ⟨E⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.position_ofNormedSpace",
+     "kind": "lemma",
+     "line": 168,
+     "doc": "",
+     "statement": "lemma position_ofNormedSpace (p : E →L[ℝ] ℝ) (q : E) :\n    (ofNormedSpace p q).position = q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.momentum_ofNormedSpace_apply",
+     "kind": "lemma",
+     "line": 175,
+     "doc": "The constructed momentum covector acts on tangent vectors through their normed-space\ncoordinates.",
+     "statement": "lemma momentum_ofNormedSpace_apply (p : E →L[ℝ] ℝ) (q : E) (v : TangentSpace 𝓘(ℝ, E) q) :\n    DFunLike.coe (F := TangentSpace 𝓘(ℝ, E) q →L[ℝ] ℝ) (ofNormedSpace p q).momentum v =\n      p (NormedSpace.fromTangentSpace q v)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph",
+     "kind": "def",
+     "line": 186,
+     "doc": "Global momentum-vector-position coordinates, using the real Hilbert-space Riesz map.",
+     "statement": "noncomputable def innerProductSpaceDiffeomorph :\n    PhaseSpace 𝓘(ℝ, E) ⟨E⟩ ≃ₘ^∞ ⟮(𝓘(ℝ, E)).prod 𝓘(ℝ, E →L[ℝ] ℝ),\n      𝓘(ℝ, E × E)⟯ E × E",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.innerProductSpaceDiffeomorph_symm_apply",
+     "kind": "lemma",
+     "line": 195,
+     "doc": "A coordinate momentum vector acts on velocities by the real inner product.",
+     "statement": "lemma innerProductSpaceDiffeomorph_symm_apply (p q : E) :\n    (innerProductSpaceDiffeomorph E).symm (p, q) =\n      mk q ((InnerProductSpace.toDual ℝ E p).comp\n        (NormedSpace.fromTangentSpace q).toContinuousLinearMap)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.ofInnerProductSpace",
+     "kind": "def",
+     "line": 205,
+     "doc": "The phase-space state on a real Hilbert space with momentum vector `p` and position `q`.\nThe Riesz map turns `p` into a momentum covector, with the same argument order as Hamilton's\nequations.",
+     "statement": "def ofInnerProductSpace (p q : E) : PhaseSpace 𝓘(ℝ, E) ⟨E⟩",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.position_ofInnerProductSpace",
+     "kind": "lemma",
+     "line": 209,
+     "doc": "",
+     "statement": "lemma position_ofInnerProductSpace (p q : E) :\n    (ofInnerProductSpace p q).position = q",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalMechanics.PhaseSpace.momentum_ofInnerProductSpace_apply",
+     "kind": "lemma",
+     "line": 214,
+     "doc": "The momentum covector associated to `p` acts by taking the inner product with `p`.",
+     "statement": "lemma momentum_ofInnerProductSpace_apply (p q : E) (v : TangentSpace 𝓘(ℝ, E) q) :\n    DFunLike.coe (F := TangentSpace 𝓘(ℝ, E) q →L[ℝ] ℝ) (ofInnerProductSpace p q).momentum v =\n      inner ℝ p (NormedSpace.fromTangentSpace q v)",
+     "sorry": false
+    }
+   ],
+   "private": 1,
    "aliases": 0,
    "informal": 0
   },

@@ -8,11 +8,11 @@ proof: formalized
 
 # The interaction of contractions and products
 
-The module `Physlib.Relativity.Tensors.Contraction.Products`, [Physlib/Relativity/Tensors/Contraction/Products.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean): 7 declarations, 1 with a docstring.
+The module `Physlib.Relativity.Tensors.Contraction.Products`, [Physlib/Relativity/Tensors/Contraction/Products.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean): 7 declarations, 1 with a docstring.
 
 ## Products and contractions
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_natAdd`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L35).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_natAdd`**, a lemma, [line 35](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L35).
 
 ```lean
 lemma Pure.contrPCoeff_natAdd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -23,7 +23,7 @@ lemma Pure.contrPCoeff_natAdd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
     (by simp_all [Fin.ext_iff]) (p1.prodP p) = contrPCoeff i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.contrPCoeff_castAdd`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L51).
+**`TensorSpecies.Tensor.Pure.contrPCoeff_castAdd`**, a lemma, [line 51](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L51).
 
 ```lean
 lemma Pure.contrPCoeff_castAdd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -34,7 +34,7 @@ lemma Pure.contrPCoeff_castAdd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
     (by simp_all [Fin.ext_iff]) (p.prodP p1) = contrPCoeff i j hij p
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_dropPair`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L68).
+**`TensorSpecies.Tensor.Pure.prodP_dropPair`**, a lemma, [line 68](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L68).
 
 ```lean
 lemma Pure.prodP_dropPair {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -46,7 +46,7 @@ lemma Pure.prodP_dropPair {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
     (by simp_all [Fin.ext_iff]) (p1.prodP p))
 ```
 
-**`TensorSpecies.Tensor.Pure.prodP_contrP_snd`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L93).
+**`TensorSpecies.Tensor.Pure.prodP_contrP_snd`**, a lemma, [line 93](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L93).
 
 ```lean
 lemma Pure.prodP_contrP_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -59,7 +59,7 @@ lemma Pure.prodP_contrP_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
     prodP p1 p)
 ```
 
-**`TensorSpecies.Tensor.prodT_contrT_snd`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L111).
+**`TensorSpecies.Tensor.prodT_contrT_snd`**, a lemma, [line 111](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L111).
 
 ```lean
 lemma prodT_contrT_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -72,7 +72,7 @@ lemma prodT_contrT_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
       (by simpa using hij) <| prodT t1 t)
 ```
 
-**`TensorSpecies.Tensor.contrT_prodT_snd`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L147).
+**`TensorSpecies.Tensor.contrT_prodT_snd`**, a lemma, [line 147](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L147).
 
 ```lean
 lemma contrT_prodT_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
@@ -83,7 +83,7 @@ lemma contrT_prodT_snd {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
       (prodT t1 (contrT n i j hij t)))
 ```
 
-**`TensorSpecies.Tensor.prodT_contrT_fst`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean#L159).
+**`TensorSpecies.Tensor.prodT_contrT_fst`**, a lemma, [line 159](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean#L159).
 
 > A contraction internal to the left factor commutes past the outer product with a right
 > spectator. The mirror of `prodT_contrT_snd`, obtained from it by `prodT_swap`, so the right-hand
@@ -111,4 +111,4 @@ lemma prodT_contrT_fst {n n1 : ℕ} {c : Fin (n + 1 + 1) → C}
 
 ## Sources
 
-- [Physlib/Relativity/Tensors/Contraction/Products.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/Contraction/Products.lean)
+- [Physlib/Relativity/Tensors/Contraction/Products.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/Physlib/Relativity/Tensors/Contraction/Products.lean)

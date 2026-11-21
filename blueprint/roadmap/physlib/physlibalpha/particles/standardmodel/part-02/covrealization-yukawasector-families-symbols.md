@@ -8,7 +8,7 @@ proof: formalized
 
 # The symbols of the Yukawa blocks
 
-The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Families.Symbols`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean): 67 declarations, 67 with a docstring.
+The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Families.Symbols`, [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean): 67 declarations, 67 with a docstring.
 
 ## i. Overview
 
@@ -49,7 +49,7 @@ The module `PhyslibAlpha.Particles.StandardModel.CovRealization.YukawaSector.Fam
 > three lemmas here do the algebra once for each position the inert factor can occupy, and
 > reduce a transformation law for a block to the laws of its factors.
 
-**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_left`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L96).
+**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_left`**, a lemma, [line 96](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L96).
 
 > A triple product whose first factor is fixed and whose second and third move by given
 > coefficients moves by the product of those coefficients.
@@ -62,7 +62,7 @@ lemma repGauge_mul_fixed_left (g : GaugeGroupI) {ι κ : Type} [Fintype ι] [Fin
     repGauge g (A * (X x₀ * Y y₀)) = ∑ x, ∑ y, (cX x * cY y) • (A * (X x * Y y))
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_mid`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L109).
+**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_mid`**, a lemma, [line 109](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L109).
 
 > A triple product whose second factor is fixed.
 
@@ -74,7 +74,7 @@ lemma repGauge_mul_fixed_mid (g : GaugeGroupI) {ι κ : Type} [Fintype ι] [Fint
     repGauge g (A a₀ * (X * Y y₀)) = ∑ a, ∑ y, (cA a * cY y) • (A a * (X * Y y))
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_right`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L122).
+**`StandardModel.CovAlgebraRealization.repGauge_mul_fixed_right`**, a lemma, [line 122](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L122).
 
 > A triple product whose third factor is fixed.
 
@@ -86,7 +86,7 @@ lemma repGauge_mul_fixed_right (g : GaugeGroupI) {ι κ : Type} [Fintype ι] [Fi
     repGauge g (A a₀ * (X x₀ * Y)) = ∑ a, ∑ x, (cA a * cX x) • (A a * (X x * Y))
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_mul_fixed_left`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L135).
+**`StandardModel.CovAlgebraRealization.repLorentz_mul_fixed_left`**, a lemma, [line 135](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L135).
 
 > The Lorentz analogue of `repGauge_mul_fixed_left`, the Higgs factor being inert.
 
@@ -110,7 +110,7 @@ lemma repLorentz_mul_fixed_left (Λ : SL(2,ℂ)) {ι κ : Type} [Fintype ι] [Fi
 
 ### B.1. The Higgs symbols
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_higgs`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L167).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_higgs`**, a lemma, [line 167](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L167).
 
 > A colour transformation fixes a Higgs symbol.
 
@@ -121,7 +121,7 @@ lemma repGauge_su3_higgs (U : specialUnitaryGroup (Fin 3) ℂ) {n : ℕ}
       = h.isHiggsSector.higgs l i
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_higgs`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L176).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_higgs`**, a lemma, [line 176](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L176).
 
 > An isospin transformation moves the isospin index of a Higgs symbol by the conjugate
 > matrix, the index being anti-fundamental.
@@ -133,7 +133,7 @@ lemma repGauge_su2_higgs (V : specialUnitaryGroup (Fin 2) ℂ) {n : ℕ}
       = ∑ a, conj (V.1 a i) • h.isHiggsSector.higgs l a
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_higgs`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L187).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_higgs`**, a lemma, [line 187](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L187).
 
 > A hypercharge transformation scales a Higgs symbol by the cube of the conjugate
 > scalar, the Higgs carrying `6Y = -3`.
@@ -144,7 +144,7 @@ lemma repGauge_u1_higgs (t : unitary ℂ) {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin
       = (star (t : ℂ)) ^ 3 • h.isHiggsSector.higgs l i
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barHiggs`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L194).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barHiggs`**, a lemma, [line 194](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L194).
 
 > A colour transformation fixes a conjugate Higgs symbol.
 
@@ -155,7 +155,7 @@ lemma repGauge_su3_barHiggs (U : specialUnitaryGroup (Fin 3) ℂ) {n : ℕ}
       = h.isHiggsSector.barHiggs l i
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barHiggs`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L203).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barHiggs`**, a lemma, [line 203](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L203).
 
 > An isospin transformation moves the isospin index of a conjugate Higgs symbol by the
 > matrix itself, the index being fundamental.
@@ -167,7 +167,7 @@ lemma repGauge_su2_barHiggs (V : specialUnitaryGroup (Fin 2) ℂ) {n : ℕ}
       = ∑ a, V.1 a i • h.isHiggsSector.barHiggs l a
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barHiggs`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L214).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barHiggs`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L214).
 
 > A hypercharge transformation scales a conjugate Higgs symbol by the cube of the
 > scalar, the conjugate Higgs carrying `6Y = 3`.
@@ -178,7 +178,7 @@ lemma repGauge_u1_barHiggs (t : unitary ℂ) {n : ℕ} (l : Fin n → Fin 1 ⊕ 
       = (t : ℂ) ^ 3 • h.isHiggsSector.barHiggs l i
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_higgs_zero`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L221).
+**`StandardModel.CovAlgebraRealization.repLorentz_higgs_zero`**, a lemma, [line 221](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L221).
 
 > A Higgs symbol carrying no derivatives is Lorentz invariant.
 
@@ -187,7 +187,7 @@ lemma repLorentz_higgs_zero (Λ : SL(2,ℂ)) (l : Fin 0 → Fin 1 ⊕ Fin 3) (i 
     repLorentz Λ (h.isHiggsSector.higgs l i) = h.isHiggsSector.higgs l i
 ```
 
-**`StandardModel.CovAlgebraRealization.repLorentz_barHiggs_zero`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L228).
+**`StandardModel.CovAlgebraRealization.repLorentz_barHiggs_zero`**, a lemma, [line 228](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L228).
 
 > A conjugate Higgs symbol carrying no derivatives is Lorentz invariant.
 
@@ -198,7 +198,7 @@ lemma repLorentz_barHiggs_zero (Λ : SL(2,ℂ)) (l : Fin 0 → Fin 1 ⊕ Fin 3) 
 
 ### B.2. The down singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_d`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L242).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_d`**, a lemma, [line 242](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L242).
 
 > A colour transformation moves the colour index of a down-singlet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -210,7 +210,7 @@ lemma repGauge_su3_d (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.isFermionSector.dComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_d`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L252).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_d`**, a lemma, [line 252](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L252).
 
 > An isospin transformation fixes a down-singlet symbol, which carries no isospin.
 
@@ -221,7 +221,7 @@ lemma repGauge_su2_d (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.isFermionSector.dComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_d`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L261).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_d`**, a lemma, [line 261](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L261).
 
 > A hypercharge transformation scales a down-singlet symbol by the square of the scalar,
 > the down singlet carrying `6Y = 2`.
@@ -235,7 +235,7 @@ lemma repGauge_u1_d (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.3. The conjugate down singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_bard`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L276).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_bard`**, a lemma, [line 276](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L276).
 
 > A colour transformation moves the colour index of a conjugate down-singlet symbol by
 > the matrix itself, the index being fundamental.
@@ -247,7 +247,7 @@ lemma repGauge_su3_bard (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.isFermionSector.bardComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_bard`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L286).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_bard`**, a lemma, [line 286](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L286).
 
 > An isospin transformation fixes a conjugate down-singlet symbol.
 
@@ -258,7 +258,7 @@ lemma repGauge_su2_bard (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.isFermionSector.bardComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_bard`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L295).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_bard`**, a lemma, [line 295](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L295).
 
 > A hypercharge transformation scales a conjugate down-singlet symbol by the square of
 > the conjugate scalar, the conjugate down singlet carrying `6Y = -2`.
@@ -272,7 +272,7 @@ lemma repGauge_u1_bard (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.4. The up singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_u`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L310).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_u`**, a lemma, [line 310](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L310).
 
 > A colour transformation moves the colour index of an up-singlet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -284,7 +284,7 @@ lemma repGauge_su3_u (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.isFermionSector.uComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_u`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L320).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_u`**, a lemma, [line 320](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L320).
 
 > An isospin transformation fixes an up-singlet symbol.
 
@@ -295,7 +295,7 @@ lemma repGauge_su2_u (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.isFermionSector.uComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_u`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L329).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_u`**, a lemma, [line 329](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L329).
 
 > A hypercharge transformation scales an up-singlet symbol by the fourth power of the
 > conjugate scalar, the up singlet carrying `6Y = -4`.
@@ -309,7 +309,7 @@ lemma repGauge_u1_u (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.5. The conjugate up singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_baru`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L344).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_baru`**, a lemma, [line 344](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L344).
 
 > A colour transformation moves the colour index of a conjugate up-singlet symbol by the
 > matrix itself, the index being fundamental.
@@ -321,7 +321,7 @@ lemma repGauge_su3_baru (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.isFermionSector.baruComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_baru`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L354).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_baru`**, a lemma, [line 354](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L354).
 
 > An isospin transformation fixes a conjugate up-singlet symbol.
 
@@ -332,7 +332,7 @@ lemma repGauge_su2_baru (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.isFermionSector.baruComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_baru`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L363).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_baru`**, a lemma, [line 363](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L363).
 
 > A hypercharge transformation scales a conjugate up-singlet symbol by the fourth power
 > of the scalar, the conjugate up singlet carrying `6Y = 4`.
@@ -346,7 +346,7 @@ lemma repGauge_u1_baru (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.6. The quark doublet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_Q`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L378).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_Q`**, a lemma, [line 378](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L378).
 
 > A colour transformation moves the colour index of a quark-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -358,7 +358,7 @@ lemma repGauge_su3_Q (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (U.1 a c) • h.isFermionSector.QComponent f l (s, a, w)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_Q`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L389).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_Q`**, a lemma, [line 389](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L389).
 
 > An isospin transformation moves the isospin index of a quark-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -370,7 +370,7 @@ lemma repGauge_su2_Q (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (V.1 a w) • h.isFermionSector.QComponent f l (s, c, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_Q`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L400).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_Q`**, a lemma, [line 400](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L400).
 
 > A hypercharge transformation scales a quark-doublet symbol by the conjugate scalar,
 > the quark doublet carrying `6Y = -1`.
@@ -384,7 +384,7 @@ lemma repGauge_u1_Q (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.7. The conjugate quark doublet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barQ`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L415).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barQ`**, a lemma, [line 415](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L415).
 
 > A colour transformation moves the colour index of a conjugate quark-doublet symbol by
 > the matrix itself, the index being fundamental.
@@ -396,7 +396,7 @@ lemma repGauge_su3_barQ (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = ∑ a, U.1 a c • h.isFermionSector.barQComponent f l (s, a, w)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barQ`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L427).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barQ`**, a lemma, [line 427](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L427).
 
 > An isospin transformation moves the isospin index of a conjugate quark-doublet symbol
 > by the matrix itself, the index being fundamental.
@@ -408,7 +408,7 @@ lemma repGauge_su2_barQ (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = ∑ a, V.1 a w • h.isFermionSector.barQComponent f l (s, c, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barQ`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L438).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barQ`**, a lemma, [line 438](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L438).
 
 > A hypercharge transformation scales a conjugate quark-doublet symbol by the scalar,
 > the conjugate quark doublet carrying `6Y = 1`.
@@ -422,7 +422,7 @@ lemma repGauge_u1_barQ (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.8. The lepton doublet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_L`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L453).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_L`**, a lemma, [line 453](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L453).
 
 > A colour transformation fixes a lepton-doublet symbol, which carries no colour.
 
@@ -433,7 +433,7 @@ lemma repGauge_su3_L (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = h.isFermionSector.LComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_L`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L462).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_L`**, a lemma, [line 462](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L462).
 
 > An isospin transformation moves the isospin index of a lepton-doublet symbol by the
 > conjugate matrix, the index being anti-fundamental.
@@ -445,7 +445,7 @@ lemma repGauge_su2_L (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = ∑ a, conj (V.1 a w) • h.isFermionSector.LComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_L`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L473).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_L`**, a lemma, [line 473](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L473).
 
 > A hypercharge transformation scales a lepton-doublet symbol by the cube of the scalar,
 > the lepton doublet carrying `6Y = 3`.
@@ -459,7 +459,7 @@ lemma repGauge_u1_L (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.9. The conjugate lepton doublet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_barL`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L488).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_barL`**, a lemma, [line 488](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L488).
 
 > A colour transformation fixes a conjugate lepton-doublet symbol, which carries no
 > colour.
@@ -471,7 +471,7 @@ lemma repGauge_su3_barL (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = h.isFermionSector.barLComponent f l j
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_barL`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L497).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_barL`**, a lemma, [line 497](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L497).
 
 > An isospin transformation moves the isospin index of a conjugate lepton-doublet symbol
 > by the matrix itself, the index being fundamental.
@@ -483,7 +483,7 @@ lemma repGauge_su2_barL (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = ∑ a, V.1 a w • h.isFermionSector.barLComponent f l (s, a)
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_barL`**, a lemma, [line 508](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L508).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_barL`**, a lemma, [line 508](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L508).
 
 > A hypercharge transformation scales a conjugate lepton-doublet symbol by the cube of
 > the conjugate scalar, the conjugate lepton doublet carrying `6Y = -3`.
@@ -497,7 +497,7 @@ lemma repGauge_u1_barL (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 
 ### B.10. The lepton singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_e`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L523).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_e`**, a lemma, [line 523](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L523).
 
 > A colour transformation fixes a lepton-singlet symbol.
 
@@ -508,7 +508,7 @@ lemma repGauge_su3_e (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : ℕ}
       = h.isFermionSector.eComponent f l s
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_e`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L531).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_e`**, a lemma, [line 531](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L531).
 
 > An isospin transformation fixes a lepton-singlet symbol.
 
@@ -519,7 +519,7 @@ lemma repGauge_su2_e (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : ℕ}
       = h.isFermionSector.eComponent f l s
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_e`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L540).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_e`**, a lemma, [line 540](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L540).
 
 > A hypercharge transformation scales a lepton-singlet symbol by the sixth power of the
 > scalar, the lepton singlet carrying `6Y = 6`.
@@ -533,7 +533,7 @@ lemma repGauge_u1_e (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1
 
 ### B.11. The conjugate lepton singlet
 
-**`StandardModel.CovAlgebraRealization.repGauge_su3_bare`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L554).
+**`StandardModel.CovAlgebraRealization.repGauge_su3_bare`**, a lemma, [line 554](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L554).
 
 > A colour transformation fixes a conjugate lepton-singlet symbol.
 
@@ -544,7 +544,7 @@ lemma repGauge_su3_bare (U : specialUnitaryGroup (Fin 3) ℂ) (f : Fin 3) {n : �
       = h.isFermionSector.bareComponent f l s
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_su2_bare`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L562).
+**`StandardModel.CovAlgebraRealization.repGauge_su2_bare`**, a lemma, [line 562](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L562).
 
 > An isospin transformation fixes a conjugate lepton-singlet symbol.
 
@@ -555,7 +555,7 @@ lemma repGauge_su2_bare (V : specialUnitaryGroup (Fin 2) ℂ) (f : Fin 3) {n : �
       = h.isFermionSector.bareComponent f l s
 ```
 
-**`StandardModel.CovAlgebraRealization.repGauge_u1_bare`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L571).
+**`StandardModel.CovAlgebraRealization.repGauge_u1_bare`**, a lemma, [line 571](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L571).
 
 > A hypercharge transformation scales a conjugate lepton-singlet symbol by the sixth
 > power of the conjugate scalar, the conjugate lepton singlet carrying `6Y = -6`.
@@ -576,7 +576,7 @@ lemma repGauge_u1_bare (t : unitary ℂ) (f : Fin 3) {n : ℕ} (l : Fin n → Fi
 > submodule.  The ten ranges are recorded as inclusions rather than as memberships, since
 > section F needs the inclusion and the membership of a component follows from it.
 
-**`StandardModel.CovAlgebraRealization.higgs_mem_derivSubmodule`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L592).
+**`StandardModel.CovAlgebraRealization.higgs_mem_derivSubmodule`**, a lemma, [line 592](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L592).
 
 > A Higgs symbol lies in the Higgs derivative submodule.
 
@@ -585,7 +585,7 @@ lemma higgs_mem_derivSubmodule {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (i : Fi
     h.isHiggsSector.higgs l i ∈ h.isHiggsSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.barHiggs_mem_derivSubmodule`**, a lemma, [line 597](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L597).
+**`StandardModel.CovAlgebraRealization.barHiggs_mem_derivSubmodule`**, a lemma, [line 597](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L597).
 
 > A conjugate Higgs symbol lies in the Higgs derivative submodule.
 
@@ -594,7 +594,7 @@ lemma barHiggs_mem_derivSubmodule {n : ℕ} (l : Fin n → Fin 1 ⊕ Fin 3) (i :
     h.isHiggsSector.barHiggs l i ∈ h.isHiggsSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_d_le_derivSubmodule`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L602).
+**`StandardModel.CovAlgebraRealization.range_d_le_derivSubmodule`**, a lemma, [line 602](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L602).
 
 > The range of a down-singlet symbol map lies in the fermion derivative submodule.
 
@@ -603,7 +603,7 @@ lemma range_d_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
     LinearMap.range (h.covD f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_bard_le_derivSubmodule`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L609).
+**`StandardModel.CovAlgebraRealization.range_bard_le_derivSubmodule`**, a lemma, [line 609](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L609).
 
 > The range of a conjugate down-singlet symbol map lies in the fermion derivative submodule.
 
@@ -612,7 +612,7 @@ lemma range_bard_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     LinearMap.range (h.covBarD f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_u_le_derivSubmodule`**, a lemma, [line 616](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L616).
+**`StandardModel.CovAlgebraRealization.range_u_le_derivSubmodule`**, a lemma, [line 616](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L616).
 
 > The range of an up-singlet symbol map lies in the fermion derivative submodule.
 
@@ -621,7 +621,7 @@ lemma range_u_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
     LinearMap.range (h.covU f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_baru_le_derivSubmodule`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L623).
+**`StandardModel.CovAlgebraRealization.range_baru_le_derivSubmodule`**, a lemma, [line 623](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L623).
 
 > The range of a conjugate up-singlet symbol map lies in the fermion derivative submodule.
 
@@ -630,7 +630,7 @@ lemma range_baru_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     LinearMap.range (h.covBarU f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_Q_le_derivSubmodule`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L629).
+**`StandardModel.CovAlgebraRealization.range_Q_le_derivSubmodule`**, a lemma, [line 629](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L629).
 
 > The range of a quark-doublet symbol map lies in the fermion derivative submodule.
 
@@ -639,7 +639,7 @@ lemma range_Q_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
     LinearMap.range (h.covQ f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_barQ_le_derivSubmodule`**, a lemma, [line 635](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L635).
+**`StandardModel.CovAlgebraRealization.range_barQ_le_derivSubmodule`**, a lemma, [line 635](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L635).
 
 > The range of a conjugate quark-doublet symbol map lies in the fermion derivative submodule.
 
@@ -648,7 +648,7 @@ lemma range_barQ_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     LinearMap.range (h.covBarQ f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_L_le_derivSubmodule`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L641).
+**`StandardModel.CovAlgebraRealization.range_L_le_derivSubmodule`**, a lemma, [line 641](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L641).
 
 > The range of a lepton-doublet symbol map lies in the fermion derivative submodule.
 
@@ -657,7 +657,7 @@ lemma range_L_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
     LinearMap.range (h.covL f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_barL_le_derivSubmodule`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L646).
+**`StandardModel.CovAlgebraRealization.range_barL_le_derivSubmodule`**, a lemma, [line 646](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L646).
 
 > The range of a conjugate lepton-doublet symbol map lies in the fermion derivative submodule.
 
@@ -666,7 +666,7 @@ lemma range_barL_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     LinearMap.range (h.covBarL f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_e_le_derivSubmodule`**, a lemma, [line 651](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L651).
+**`StandardModel.CovAlgebraRealization.range_e_le_derivSubmodule`**, a lemma, [line 651](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L651).
 
 > The range of a lepton-singlet symbol map lies in the fermion derivative submodule.
 
@@ -675,7 +675,7 @@ lemma range_e_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 ⊕ F
     LinearMap.range (h.covE f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.range_bare_le_derivSubmodule`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L656).
+**`StandardModel.CovAlgebraRealization.range_bare_le_derivSubmodule`**, a lemma, [line 656](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L656).
 
 > The range of a conjugate lepton-singlet symbol map lies in the fermion derivative submodule.
 
@@ -684,7 +684,7 @@ lemma range_bare_le_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     LinearMap.range (h.covBarE f l) ≤ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.dComponent_mem_derivSubmodule`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L661).
+**`StandardModel.CovAlgebraRealization.dComponent_mem_derivSubmodule`**, a lemma, [line 661](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L661).
 
 > A `d` component lies in the fermion derivative submodule.
 
@@ -694,7 +694,7 @@ lemma dComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     h.isFermionSector.dComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.bardComponent_mem_derivSubmodule`**, a lemma, [line 667](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L667).
+**`StandardModel.CovAlgebraRealization.bardComponent_mem_derivSubmodule`**, a lemma, [line 667](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L667).
 
 > A `bard` component lies in the fermion derivative submodule.
 
@@ -704,7 +704,7 @@ lemma bardComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 
     h.isFermionSector.bardComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.uComponent_mem_derivSubmodule`**, a lemma, [line 673](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L673).
+**`StandardModel.CovAlgebraRealization.uComponent_mem_derivSubmodule`**, a lemma, [line 673](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L673).
 
 > A `u` component lies in the fermion derivative submodule.
 
@@ -714,7 +714,7 @@ lemma uComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     h.isFermionSector.uComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.baruComponent_mem_derivSubmodule`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L679).
+**`StandardModel.CovAlgebraRealization.baruComponent_mem_derivSubmodule`**, a lemma, [line 679](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L679).
 
 > A `baru` component lies in the fermion derivative submodule.
 
@@ -724,7 +724,7 @@ lemma baruComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 
     h.isFermionSector.baruComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.QComponent_mem_derivSubmodule`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L685).
+**`StandardModel.CovAlgebraRealization.QComponent_mem_derivSubmodule`**, a lemma, [line 685](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L685).
 
 > A `Q` component lies in the fermion derivative submodule.
 
@@ -734,7 +734,7 @@ lemma QComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     h.isFermionSector.QComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.barQComponent_mem_derivSubmodule`**, a lemma, [line 691](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L691).
+**`StandardModel.CovAlgebraRealization.barQComponent_mem_derivSubmodule`**, a lemma, [line 691](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L691).
 
 > A `barQ` component lies in the fermion derivative submodule.
 
@@ -744,7 +744,7 @@ lemma barQComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 
     h.isFermionSector.barQComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.LComponent_mem_derivSubmodule`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L697).
+**`StandardModel.CovAlgebraRealization.LComponent_mem_derivSubmodule`**, a lemma, [line 697](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L697).
 
 > A `L` component lies in the fermion derivative submodule.
 
@@ -754,7 +754,7 @@ lemma LComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     h.isFermionSector.LComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.barLComponent_mem_derivSubmodule`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L703).
+**`StandardModel.CovAlgebraRealization.barLComponent_mem_derivSubmodule`**, a lemma, [line 703](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L703).
 
 > A `barL` component lies in the fermion derivative submodule.
 
@@ -764,7 +764,7 @@ lemma barLComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 
     h.isFermionSector.barLComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.eComponent_mem_derivSubmodule`**, a lemma, [line 709](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L709).
+**`StandardModel.CovAlgebraRealization.eComponent_mem_derivSubmodule`**, a lemma, [line 709](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L709).
 
 > A `e` component lies in the fermion derivative submodule.
 
@@ -774,7 +774,7 @@ lemma eComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 1 �
     h.isFermionSector.eComponent f l j ∈ h.isFermionSector.derivSubmodule n
 ```
 
-**`StandardModel.CovAlgebraRealization.bareComponent_mem_derivSubmodule`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L715).
+**`StandardModel.CovAlgebraRealization.bareComponent_mem_derivSubmodule`**, a lemma, [line 715](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L715).
 
 > A `bare` component lies in the fermion derivative submodule.
 
@@ -793,7 +793,7 @@ lemma bareComponent_mem_derivSubmodule (f : Fin 3) {n : ℕ} (l : Fin n → Fin 
 > one ordering is a classification of the other, and the six transposed blocks need no
 > argument of their own.
 
-**`StandardModel.CovAlgebraRealization.mul_comm_of_le_derivSubmodule`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L735).
+**`StandardModel.CovAlgebraRealization.mul_comm_of_le_derivSubmodule`**, a lemma, [line 735](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L735).
 
 > Two submodules of fermion derivative submodules commute, the fermion symbols
 > anticommuting and a submodule being closed under negation.
@@ -804,7 +804,7 @@ lemma mul_comm_of_le_derivSubmodule {n m : ℕ} {V W : Submodule ℂ B}
     (hW : W ≤ h.isFermionSector.derivSubmodule m) : V * W = W * V
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_mul_piece_swap`**, a lemma, [line 748](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L748).
+**`StandardModel.CovAlgebraRealization.mul_mul_piece_swap`**, a lemma, [line 748](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L748).
 
 > Swapping the two fermion factors of a block leaves every weight piece unchanged: the
 > two fermion factors commute as submodules, so the two orderings of the block are the same
@@ -824,7 +824,7 @@ lemma mul_mul_piece_swap {VH VX VY : Submodule ℂ B} {n m : ℕ}
         (d' := GaugeWeightDecomposition.mul (d := dY) (d' := dX))).piece w
 ```
 
-**`StandardModel.CovAlgebraRealization.mul_mul_swap_eq_neg`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L766).
+**`StandardModel.CovAlgebraRealization.mul_mul_swap_eq_neg`**, a lemma, [line 766](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean#L766).
 
 > Swapping the two fermion factors of a block negates it.
 
@@ -847,4 +847,4 @@ lemma mul_mul_swap_eq_neg {n m : ℕ} (a : B) {x y : B}
 
 ## Sources
 
-- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean)
+- [PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean at 8c87bdfb](https://github.com/leanprover-community/physlib/blob/8c87bdfb015de47e82da811567aaa7a2a05353f4/PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean)

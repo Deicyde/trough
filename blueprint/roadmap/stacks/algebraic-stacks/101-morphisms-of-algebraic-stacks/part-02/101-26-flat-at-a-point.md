@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.26 Flat at a point
 
-Section 101.26 of the Stacks Project, [Tag 0CIB](https://stacks.math.columbia.edu/tag/0CIB). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 101.26 of the Stacks Project, [Tag 0CIB](https://stacks.math.columbia.edu/tag/0CIB). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 0CIC, a lemma
 
 [Tag 0CIC](https://stacks.math.columbia.edu/tag/0CIC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isFlatAt_iff_forall_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/IndependenceOfDiagram.lean, line 802](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/IndependenceOfDiagram.lean#L802).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_isFlatAt_iff_forall_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/IndependenceOfDiagram.lean, line 802](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/IndependenceOfDiagram.lean#L802).
 
 > **Stacks 0CIC.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let `x` be
 > a point of `|𝒳|`. The top horizontal morphism of *some* diagram of
@@ -35,7 +35,7 @@ theorem exists_isFlatAt_iff_forall_isFlatAt {𝒳 𝒴 : Stack.AlgebraicStacks.{
 
 [Tag 0CID](https://stacks.math.columbia.edu/tag/0CID) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFlatAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/PointedFlatDiagram.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/PointedFlatDiagram.lean#L476).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsFlatAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/PointedFlatDiagram.lean, line 476](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Stacks/FlatAtAPoint/PointedFlatDiagram.lean#L476).
 
 > **Stacks 0CID.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is *flat at* a point
 > `x` of `|𝒳|` when the top horizontal morphism of some diagram of
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.26, Tag 0CIB](https://stacks.math.columbia.edu/tag/0CIB)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

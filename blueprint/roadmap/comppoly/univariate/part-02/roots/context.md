@@ -7,13 +7,13 @@ proof: formalized
 
 # Finite-Field Root Contexts
 
-`CompPoly.Univariate.Roots.Context`, in [CompPoly/Univariate/Roots/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean), by Valerii Huhnin.
+`CompPoly.Univariate.Roots.Context`, in [CompPoly/Univariate/Roots/Context.lean](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean), by Valerii Huhnin.
 
 > Explicit contexts for executable univariate root finding over finite fields.
 > The algorithms use the cardinality carried here; downstream proofs use the
 > finite-field and splitter contracts without unfolding concrete implementations.
 
-`CompPoly.CPolynomial.Roots.FiniteField.FiniteFieldContext` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean#L30))
+`CompPoly.CPolynomial.Roots.FiniteField.FiniteFieldContext` (structure, [line 30](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean#L30))
 
 > Finite-field facts needed by executable root extraction.
 
@@ -25,7 +25,7 @@ structure FiniteFieldContext (F : Type*) [Field F] where
   frobenius_fixed : ∀ a : F, a ^ q = a
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.IsLinearFactor` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean#L37))
+`CompPoly.CPolynomial.Roots.FiniteField.IsLinearFactor` (definition, [line 37](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean#L37))
 
 > A polynomial represented as a nonconstant linear factor.
 
@@ -33,7 +33,7 @@ structure FiniteFieldContext (F : Type*) [Field F] where
 def IsLinearFactor {F : Type*} [Field F] (factor : CPolynomial F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.IsLinearRootFactorCandidate` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean#L41))
+`CompPoly.CPolynomial.Roots.FiniteField.IsLinearRootFactorCandidate` (definition, [line 41](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean#L41))
 
 > A linear factor whose extracted root is `a`.
 
@@ -42,7 +42,7 @@ def IsLinearRootFactorCandidate {F : Type*} [Field F]
     (factor : CPolynomial F) (a : F) : Prop
 ```
 
-`CompPoly.CPolynomial.Roots.FiniteField.LinearFactorProductSplitter` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean#L51))
+`CompPoly.CPolynomial.Roots.FiniteField.LinearFactorProductSplitter` (structure, [line 51](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean#L51))
 
 > A deterministic splitter for squarefree products of linear factors.
 >
@@ -81,5 +81,5 @@ structure LinearFactorProductSplitter (F : Type*) [Field F] [BEq F] [LawfulBEq F
 
 ## Sources
 
-- [CompPoly/Univariate/Roots/Context.lean at afb9b136](https://github.com/Verified-zkEVM/CompPoly/blob/afb9b1363984a70f10e24bd597f6ff40ebc8afbb/CompPoly/Univariate/Roots/Context.lean)
+- [CompPoly/Univariate/Roots/Context.lean at c72a7652](https://github.com/Verified-zkEVM/CompPoly/blob/c72a765272497b4c52201be11be47af5718c7488/CompPoly/Univariate/Roots/Context.lean)
 - [Declaration ledger](../../../../../sources/comppoly/CompPoly.Univariate.Roots.Context.json)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.15 Push and pull
 
-Section 42.15 of the Stacks Project, [Tag 02RF](https://stacks.math.columbia.edu/tag/02RF). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 42.15 of the Stacks Project, [Tag 02RF](https://stacks.math.columbia.edu/tag/02RF). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 02RG, a lemma
 
 [Tag 02RG](https://stacks.math.columbia.edu/tag/02RG) in the Stacks Project.
 
-**`Stacks.Chow.isProper_and_relativeDimension_and_flatPullback_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/ProperPushforwardChowBaseChangeGenuine.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/ProperPushforwardChowBaseChangeGenuine.lean#L159). The attribute's comment: “all three assertions, under the source's hypotheses: f' is proper, g' is flat of relative dimension r, and g^* f\_* alpha = f'\_* (g')^* alpha in Z\_\{k+r}(Y') for every k and every k-cycle alpha on X”.
+**`Stacks.Chow.isProper_and_relativeDimension_and_flatPullback_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/ProperPushforwardChowBaseChangeGenuine.lean, line 159](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/ProperPushforwardChowBaseChangeGenuine.lean#L159). The attribute's comment: “all three assertions, under the source's hypotheses: f' is proper, g' is flat of relative dimension r, and g^* f\_* alpha = f'\_* (g')^* alpha in Z\_\{k+r}(Y') for every k and every k-cycle alpha on X”.
 
 > **Proper pushforward and flat pullback across a fibre product square.** Let
 >
@@ -63,7 +63,7 @@ theorem isProper_and_relativeDimension_and_flatPullback_properPushforward
 
 [Tag 02RH](https://stacks.math.columbia.edu/tag/02RH) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_flatPullback_of_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFreeFibreDegree.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFreeFibreDegree.lean#L141). The attribute's comment: “push-pull formula”.
+**`Stacks.Chow.properPushforward_flatPullback_of_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFreeFibreDegree.lean, line 141](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFreeFibreDegree.lean#L141). The attribute's comment: “push-pull formula”.
 
 > **Stacks 02RH, the second assertion.** For `f : X ⟶ Y` finite locally free of degree `d` over
 > the base,
@@ -96,9 +96,9 @@ theorem properPushforward_flatPullback_of_isFiniteLocallyFreeOfRank (C : ChowSit
 
 Declarations registered for the tag:
 
-- [`Stacks.Morphisms.isProper_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L84), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L126) (StacksFrontier): “properness”.
-- [`Stacks.Morphisms.flat_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L127) (StacksFrontier): “flatness”.
-- [`Stacks.Morphisms.relativeDimension_zero_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L128) (StacksFrontier): “relative dimension zero”.
+- [`Stacks.Morphisms.isProper_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L84), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 126](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L126) (StacksFrontier): “properness”.
+- [`Stacks.Morphisms.flat_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 127](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L127) (StacksFrontier): “flatness”.
+- [`Stacks.Morphisms.relativeDimension_zero_of_isFiniteLocallyFreeOfRank`](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteLocallyFreeProper.lean#L98), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/FiniteLocallyFree.lean#L128) (StacksFrontier): “relative dimension zero”.
 
 ## Depends on
 
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.15, Tag 02RF](https://stacks.math.columbia.edu/tag/02RF)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)

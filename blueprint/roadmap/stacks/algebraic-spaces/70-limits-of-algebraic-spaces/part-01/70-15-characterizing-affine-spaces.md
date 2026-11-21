@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.15 Characterizing affine spaces
 
-Section 70.15 of the Stacks Project, [Tag 07VQ](https://stacks.math.columbia.edu/tag/07VQ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
+Section 70.15 of the Stacks Project, [Tag 07VQ](https://stacks.math.columbia.edu/tag/07VQ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf).
 
 ## Tag 07VS, a lemma
 
 [Tag 07VS](https://stacks.math.columbia.edu/tag/07VS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAffineSpace_target_of_isFinite_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOfFiniteSurjection.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineOfFiniteSurjection.lean#L484). The attribute's comment: “the target of a finite surjection from an affine algebraic space is affine”.
+**`AlgebraicGeometry.Space.isAffineSpace_target_of_isFinite_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOfFiniteSurjection.lean, line 484](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineOfFiniteSurjection.lean#L484). The attribute's comment: “the target of a finite surjection from an affine algebraic space is affine”.
 
 > **Stacks 07VS.** Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S`. Assume that `f` is surjective and finite, and that `X` is affine. Then `Y` is affine.
@@ -41,7 +41,7 @@ theorem isAffineSpace_target_of_isFinite_of_isSurjective
 
 [Tag 07VT](https://stacks.math.columbia.edu/tag/07VT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAffineSpace_of_isSurjective_of_universallyClosed_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOfUniversallyClosedSurjectionUnconditional.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineOfUniversallyClosedSurjectionUnconditional.lean#L212). The attribute's comment: “target of a universally closed surjection from an affine algebraic space is affine”.
+**`AlgebraicGeometry.Space.isAffineSpace_of_isSurjective_of_universallyClosed_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOfUniversallyClosedSurjectionUnconditional.lean, line 212](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/AffineOfUniversallyClosedSurjectionUnconditional.lean#L212). The attribute's comment: “target of a universally closed surjection from an affine algebraic space is affine”.
 
 > **Stacks 07VT.** Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S`. Assume that `X` is affine and that `f` is surjective and universally closed. Then `Y` is
@@ -59,7 +59,7 @@ theorem isAffineSpace_of_isSurjective_of_universallyClosed_of_isAffineSpace (f :
 
 [Tag 07VU](https://stacks.math.columbia.edu/tag/07VU) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAlgebraicSpace.isRepresentable_of_isRepresentable_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean#L173).
+**`AlgebraicGeometry.IsAlgebraicSpace.isRepresentable_of_isRepresentable_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean, line 173](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfSchemeReduction.lean#L173).
 
 > **Stacks 049D, Stacks 07VU.** Let `S` be a scheme and let `X` be an algebraic space over
 > `S`. If `X_red` is a scheme, then `X` is a scheme.
@@ -78,7 +78,7 @@ theorem isRepresentable_of_isRepresentable_reduction {X : (BigFppfOver B S hS)�
 
 [Tag 07VV](https://stacks.math.columbia.edu/tag/07VV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_iff_isRepresentable_of_isIntegralHom_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijectionUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijectionUnconditional.lean#L69). The attribute's comment: “for an integral morphism of algebraic spaces bijective on points, the source is a scheme if and only if the target is”.
+**`AlgebraicGeometry.Space.isRepresentable_iff_isRepresentable_of_isIntegralHom_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijectionUnconditional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/SchemeOfIntegralBijectionUnconditional.lean#L69). The attribute's comment: “for an integral morphism of algebraic spaces bijective on points, the source is a scheme if and only if the target is”.
 
 > **Stacks 07VV.** Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S`. Assume `f` is integral and induces a bijection `|X| → |Y|`. Then `X` is a scheme if
@@ -100,7 +100,7 @@ theorem isRepresentable_iff_isRepresentable_of_isIntegralHom_of_bijective
 
 [Tag 08B2](https://stacks.math.columbia.edu/tag/08B2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedImmersion_of_isClosedImmersion_pullback_snd_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionInfinitesimalBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionInfinitesimalBaseChange.lean#L125). The attribute's comment: “the whole lemma, with hypotheses (1)-(4) as in the source: `hi` (1), `hbij` (2), `hbc` (3) and `hfin` (4); the 07VU step of the proof is the proved `isRepresentable_of_isClosedImmersion_of_bijective`”.
+**`AlgebraicGeometry.Space.isClosedImmersion_of_isClosedImmersion_pullback_snd_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionInfinitesimalBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/f56a316ddf7a930906d88b78d6f9a2668cffd0cf/StacksFrontier/AlgebraicGeometry/Spaces/ClosedImmersionInfinitesimalBaseChange.lean#L125). The attribute's comment: “the whole lemma, with hypotheses (1)-(4) as in the source: `hi` (1), `hbij` (2), `hbc` (3) and `hfin` (4); the 07VU step of the proof is the proved `isRepresentable_of_isClosedImmersion_of_bijective`”.
 
 > **Stacks 08B2.** Let `f : X ⟶ Y` and `i : Y' ⟶ Y` be morphisms of algebraic spaces over `S`.
 > If `i` is a closed immersion, bijective on points, if the base change of `f` along `i` is a
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.15, Tag 07VQ](https://stacks.math.columbia.edu/tag/07VQ)
-- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
+- [AxiomMath/Stacks at f56a316d](https://github.com/AxiomMath/Stacks/tree/f56a316ddf7a930906d88b78d6f9a2668cffd0cf)
