@@ -1,0 +1,240 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "scottnarmstrong/DeGiorgi",
+ "slug": "scottnarmstrong--degiorgi",
+ "rev": "4c1b3077d3782b24065184df4ba59501b2e56fc7",
+ "date": "2026-04-08T21:25:18Z",
+ "stable": "535e44831fbb4519dfea09ccfc283852f8d21afdfa445440a629054848e725ea",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "DeGiorgi",
+  "excerpt": "A large-scale Lean 4 formalization of elliptic De Giorgi-Nash-Moser theory, built on top of Mathlib."
+ },
+ "lean_files": 93,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.29.0-rc6",
+ "mathlib": "5c8398df528176d9c87ccd9226ba8f7c8852d59c",
+ "requirements": [
+  {
+   "name": "REPL",
+   "url": "https://github.com/leanprover-community/repl",
+   "rev": "1d17a15a60811e58edfbf73e13a114537e999a41"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "DeGiorgi",
+   "src": "."
+  }
+ ],
+ "library_files": 93,
+ "capped": false,
+ "declarations": 1123,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 89,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "DeGiorgi",
+   "file": "DeGiorgi.lean"
+  }
+ ],
+ "root_closure_files": 92,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 7,
+ "headlines": [
+  {
+   "name": "DeGiorgi.linfty_subsolution_DeGiorgi_normalized",
+   "module": "DeGiorgi.DeGiorgiIteration.Linfty",
+   "file": "DeGiorgi/DeGiorgiIteration/Linfty.lean",
+   "line": 1347,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball"
+   ]
+  },
+  {
+   "name": "DeGiorgi.weak_harnack",
+   "module": "DeGiorgi.WeakHarnack",
+   "file": "DeGiorgi/WeakHarnack.lean",
+   "line": 1780,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball"
+   ]
+  },
+  {
+   "name": "DeGiorgi.weak_harnack_on_ball",
+   "module": "DeGiorgi.ScaledBallEstimates",
+   "file": "DeGiorgi/ScaledBallEstimates.lean",
+   "line": 291,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball",
+    "Module.finrank"
+   ]
+  },
+  {
+   "name": "DeGiorgi.harnack",
+   "module": "DeGiorgi.Harnack",
+   "file": "DeGiorgi/Harnack.lean",
+   "line": 988,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball",
+    "Real.exp"
+   ]
+  },
+  {
+   "name": "DeGiorgi.harnack_of_homogeneousWeakSolution",
+   "module": "DeGiorgi.Harnack",
+   "file": "DeGiorgi/Harnack.lean",
+   "line": 1153,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball",
+    "Real.exp"
+   ]
+  },
+  {
+   "name": "DeGiorgi.holder_Moser",
+   "module": "DeGiorgi.Holder.PublicEstimate",
+   "file": "DeGiorgi/Holder/PublicEstimate.lean",
+   "line": 21,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball",
+    "Real.exp",
+    "α"
+   ]
+  },
+  {
+   "name": "DeGiorgi.holder_Moser_of_homogeneousWeakSolution",
+   "module": "DeGiorgi.Holder.PublicEstimate",
+   "file": "DeGiorgi/Holder/PublicEstimate.lean",
+   "line": 60,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "A",
+    "E",
+    "Metric.ball",
+    "Real.exp",
+    "α"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Group.OrderIso": 1,
+  "Mathlib.Analysis.Calculus.BumpFunction.Convolution": 1,
+  "Mathlib.Analysis.Calculus.BumpFunction.Normed": 1,
+  "Mathlib.Analysis.Calculus.ContDiff.Convolution": 1,
+  "Mathlib.Analysis.Convex.Integral": 1,
+  "Mathlib.Analysis.InnerProductSpace.LaxMilgram": 2,
+  "Mathlib.Analysis.Normed.Lp.PiLp": 1,
+  "Mathlib.Analysis.Normed.Lp.SmoothApprox": 1,
+  "Mathlib.Analysis.Normed.Operator.Extend": 1,
+  "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals": 2,
+  "Mathlib.Geometry.Manifold.PartitionOfUnity": 1,
+  "Mathlib.MeasureTheory.Function.ConvergenceInMeasure": 1,
+  "Mathlib.MeasureTheory.Function.EssSup": 1,
+  "Mathlib.MeasureTheory.Function.LpSeminorm.Basic": 1,
+  "Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality": 1,
+  "Mathlib.MeasureTheory.Function.LpSpace.Complete": 1,
+  "Mathlib.MeasureTheory.Function.StronglyMeasurable.AEStronglyMeasurable": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap": 1,
+  "Mathlib.MeasureTheory.Integral.Layercake": 2,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar": 1,
+  "Mathlib.MeasureTheory.Measure.MeasureSpaceDef": 1,
+  "Mathlib.MeasureTheory.Measure.OpenPos": 1,
+  "Mathlib.Topology.Algebra.Order.LiminfLimsup": 2,
+  "Mathlib.Topology.Compactness.Compact": 1,
+  "Mathlib.Topology.MetricSpace.Thickening": 2,
+  "Mathlib.Topology.Order.Lattice": 1
+ },
+ "import_roots": {
+  "Mathlib": 14
+ },
+ "uses": {
+  "BorelSpace": 2,
+  "CauchySeq": 2,
+  "CompleteSpace": 2,
+  "ContDiff": 40,
+  "Continuous": 27,
+  "Continuous.deriv_integral": 1,
+  "ConvexOn": 1,
+  "Differentiable": 8,
+  "DifferentiableOn": 1,
+  "Filter": 59,
+  "Filter.Tendsto": 38,
+  "Finset": 8,
+  "HasDerivAt": 5,
+  "HasFDerivAt": 8,
+  "HasSum": 1,
+  "Homeomorph": 1,
+  "InnerProductSpace": 9,
+  "InnerProductSpace.toDual": 7,
+  "IsCoercive.continuousLinearEquivOfBilin": 1,
+  "IsCompact": 6,
+  "LinearMap.det": 1,
+  "LipschitzWith": 6,
+  "Matrix": 24,
+  "Matrix.inv": 2,
+  "Measurable": 22,
+  "MeasurableSet": 14,
+  "MeasurableSpace": 9,
+  "MeasureTheory.Integrable": 35,
+  "MeasureTheory.IsProbabilityMeasure": 1,
+  "MeasureTheory.Lp": 3,
+  "MeasureTheory.Measure": 51,
+  "MeasureTheory.TendstoInMeasure": 3,
+  "MeasureTheory.ae": 5,
+  "MeasureTheory.integral_prod": 1,
+  "MeasureTheory.tendsto_integral_of_dominated_convergence": 5,
+  "Metric.ball": 57,
+  "Metric.tendsto_atTop": 4,
+  "Real": 1,
+  "Real.exp": 10,
+  "Real.log": 8,
+  "Set": 64,
+  "closure": 5,
+  "fderiv": 42,
+  "lineDeriv": 1,
+  "norm_add_le": 7,
+  "tendsto_of_tendsto_of_tendsto_of_le_of_le'": 3,
+  "tendsto_pi_nhds": 4
+ },
+ "ci": "SUCCESS"
+}

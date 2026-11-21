@@ -1,0 +1,173 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "corun1024/4ct",
+ "slug": "corun1024--4ct",
+ "rev": "3db71e0a786a1f19be04c5266fe3d06fed216885",
+ "date": "2026-09-16T14:31:07Z",
+ "stable": "86a817f7554013c58364c9115cbfc5eaa61ca2ce0e7314b45978d23d60ce68a5",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Chris Emery"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The Four Colour Theorem in Lean 4",
+  "excerpt": "A complete formalisation of the Four Colour Theorem in Lean 4 and Mathlib, following the architecture of Georges Gonthier and Benjamin Werner's Coq proof ([rocq-community/fourcolor](https://github.com/rocq-community/fourcolor))."
+ },
+ "lean_files": 498,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "141f6b6455959bfeb0b2a6b04118031191d62683",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "FourColor",
+   "src": "."
+  }
+ ],
+ "library_files": 496,
+ "capped": false,
+ "declarations": 64434,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 467,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "FourColor",
+   "file": "FourColor.lean"
+  }
+ ],
+ "root_closure_files": 469,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 6,
+ "headlines": [
+  {
+   "name": "FourColor.fourColorTheorem",
+   "module": "FourColor.Complete",
+   "file": "FourColor/Complete.lean",
+   "line": 43,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.isOpenRegion_iff",
+   "module": "FourColor.RealPlane",
+   "file": "FourColor/RealPlane.lean",
+   "line": 87,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.regionClosure_eq",
+   "module": "FourColor.RealPlane",
+   "file": "FourColor/RealPlane.lean",
+   "line": 104,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "closure"
+   ]
+  },
+  {
+   "name": "FourColor.isConnectedRegion_iff_isPreconnected",
+   "module": "FourColor.RealPlaneMathlib",
+   "file": "FourColor/RealPlaneMathlib.lean",
+   "line": 37,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.simpleMap_iff",
+   "module": "FourColor.RealPlaneMathlib",
+   "file": "FourColor/RealPlaneMathlib.lean",
+   "line": 51,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "FourColor.Hypermap.Scycle.simple",
+   "module": "FourColor.Geometry",
+   "file": "FourColor/Geometry.lean",
+   "line": 664,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "D",
+    "List",
+    "h"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Group.Equiv.Defs": 1,
+  "Mathlib.Algebra.Group.Even": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 1,
+  "Mathlib.Analysis.Convex.Topology": 1,
+  "Mathlib.Basic.Denumerable": 1,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Fintype.Pi": 1,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.Int.Interval": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.Chain": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.Rotate": 1,
+  "Mathlib.Dynamics.PeriodicPts.Defs": 1,
+  "Mathlib.GroupTheory.Perm.Cycle.Basic": 1,
+  "Mathlib.GroupTheory.Perm.Cycle.Type": 1,
+  "Mathlib.Logic.Relation": 4,
+  "Mathlib.Order.Filter.Ultrafilter.Basic": 1,
+  "Mathlib.SetTheory.Cardinal.Finite": 3,
+  "Mathlib.SetTheory.Cardinal.NatCard": 2,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Topology.Algebra.Order.Archimedean": 1,
+  "Mathlib.Topology.Connected.Basic": 3,
+  "Mathlib.Topology.Instances.Real.Lemmas": 1,
+  "Mathlib.Topology.Order.Basic": 1
+ },
+ "import_roots": {
+  "FourColor": 1,
+  "Lean": 1,
+  "Mathlib": 18
+ },
+ "uses": {
+  "Equiv.Perm": 22,
+  "Equiv.Perm.sign": 2,
+  "Filter": 1,
+  "Finset": 6,
+  "Fintype.exists_ne_map_eq_of_card_lt": 1,
+  "Function.fixedPoints": 1,
+  "Function.periodicPts": 1,
+  "Group": 2,
+  "List": 72,
+  "Nat": 2,
+  "Ring": 1,
+  "Set": 12,
+  "closure": 3,
+  "orderOf": 6
+ },
+ "ci": null
+}

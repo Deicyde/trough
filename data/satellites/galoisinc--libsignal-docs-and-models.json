@@ -1,0 +1,120 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "GaloisInc/libsignal-docs-and-models",
+ "slug": "galoisinc--libsignal-docs-and-models",
+ "rev": "e82e566ff4f1db69b2638c5813249a4d4497b14f",
+ "date": "2026-08-12T20:26:16Z",
+ "stable": "8c1c50856f176093770599b6f7b86a9f2d1e640fe7d4e798f95f571b51440fbd",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "LibSignal Documentation",
+  "excerpt": null
+ },
+ "lean_files": 109,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.30.0",
+ "mathlib": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+ "requirements": [
+  {
+   "name": "aeneas",
+   "url": "https://github.com/AeneasVerif/aeneas",
+   "rev": "45061fa1a5b4bad876f17c03d3a5544d818622e6"
+  },
+  {
+   "name": "VCVio",
+   "url": "https://github.com/Verified-zkEVM/VCV-io",
+   "rev": "8f5dc4f2923cc47e39bc6ce21f71563cf7d19193"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "ToVCVio",
+   "src": "."
+  },
+  {
+   "name": "PQXDH",
+   "src": "."
+  },
+  {
+   "name": "PQXDHDocs",
+   "src": "docs"
+  },
+  {
+   "name": "Book",
+   "src": "docs/annotated"
+  }
+ ],
+ "library_files": 107,
+ "capped": false,
+ "declarations": 1668,
+ "sorry_files": 7,
+ "axioms": 349,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Book",
+   "file": "docs/annotated/Book.lean"
+  },
+  {
+   "name": "PQXDH",
+   "file": "PQXDH.lean"
+  },
+  {
+   "name": "PQXDHDocs",
+   "file": "docs/PQXDHDocs.lean"
+  },
+  {
+   "name": "ToVCVio",
+   "file": "ToVCVio.lean"
+  }
+ ],
+ "root_closure_files": 102,
+ "root_closure_sorry": [
+  "PQXDH/Aeneas/Full/UAKE/Assumptions.lean",
+  "PQXDH/Aeneas/Simplified/UAKE/Assumptions.lean",
+  "PQXDH/Spec/UAKE/SecurityLemmas/DHHops.lean",
+  "PQXDH/Spec/UAKE/SecurityLemmas/PQHops.lean",
+  "PQXDH/Spec/UAKE/SecurityLemmas/SharedHops.lean",
+  "ToVCVio/CryptoFoundations/AEAD.lean",
+  "docs/PQXDHDocs/Chapters/Aeneas/Defs.lean"
+ ],
+ "root_closure_axioms": 349,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Data.List.Chain": 1
+ },
+ "import_roots": {
+  "Aeneas": 19,
+  "Lean": 1,
+  "Mathlib": 1,
+  "ToMathlib": 1,
+  "VCVio": 8,
+  "Verso": 10,
+  "VersoBlueprint": 16,
+  "VersoManual": 34
+ },
+ "uses": {
+  "Array": 14,
+  "Field": 22,
+  "List": 17,
+  "Module": 22,
+  "Nat": 1,
+  "Representation": 1,
+  "Set": 1
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,340 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "roed-math/gq2-lean",
+ "slug": "roed-math--gq2-lean",
+ "rev": "3c7b1abaf04ec8424decc2b1eb1b91bfe0ce5a33",
+ "date": "2026-08-11T20:51:26Z",
+ "stable": "e38cb6f07edaae5474a7750777caa7daf07c661b5b4061a7ea067f6f678c7854",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "gq2-lean — A presentation of $G{\\mathbf{Q}2}$ in Lean",
+  "excerpt": "This repository contains a Lean 4 + [Mathlib](https://github.com/leanprover-community/mathlib4) formalization of an explicit presentation of the absolute Galois group of the 2-adic numbers."
+ },
+ "lean_files": 316,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0-rc2",
+ "mathlib": "ec410d23dfa4e7540d4663405b5e0dc71f3c3363",
+ "requirements": [
+  {
+   "name": "«lean-atlas»",
+   "url": "https://github.com/NyxFoundation/lean-atlas",
+   "rev": "3a81e194db0e6c41a2a8c5286f9e1b4962c3866a"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "GQ2",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "ChallengePalomar",
+   "src": "."
+  },
+  {
+   "name": "SolutionPalomar",
+   "src": "."
+  }
+ ],
+ "library_files": 315,
+ "capped": false,
+ "declarations": 4634,
+ "sorry_files": 3,
+ "axioms": 9,
+ "closure_files": 304,
+ "closure_sorry": [],
+ "closure_axioms": 9,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "ChallengePalomar",
+   "file": "ChallengePalomar.lean"
+  },
+  {
+   "name": "GQ2",
+   "file": "GQ2.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  },
+  {
+   "name": "SolutionPalomar",
+   "file": "SolutionPalomar.lean"
+  }
+ ],
+ "root_closure_files": 313,
+ "root_closure_sorry": [
+  "Challenge.lean",
+  "ChallengePalomar.lean"
+ ],
+ "root_closure_axioms": 9,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 7,
+ "headlines": [
+  {
+   "name": "GQ2.main_surjection_count_R",
+   "module": "GQ2.Roe.Main",
+   "file": "GQ2/Roe/Main.lean",
+   "line": 30,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Group",
+    "TopologicalSpace"
+   ]
+  },
+  {
+   "name": "GQ2.admissibleCountR_eq_admissibleCount",
+   "module": "GQ2.Roe.Main",
+   "file": "GQ2/Roe/Main.lean",
+   "line": 35,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Group",
+    "TopologicalSpace"
+   ]
+  },
+  {
+   "name": "GQ2.main_presentation_literal_roe_unconditional",
+   "module": "GQ2.Roe.Main",
+   "file": "GQ2/Roe/Main.lean",
+   "line": 48,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GQ2.main_presentation_literal",
+   "module": "GQ2.PresentationLiteral",
+   "file": "GQ2/PresentationLiteral.lean",
+   "line": 43,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GQ2.main_presentation_literal_roe",
+   "module": "GQ2.Roe.Main",
+   "file": "GQ2/Roe/Main.lean",
+   "line": 43,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GQ2.Roe.Labute.bLab",
+   "module": "GQ2.Roe.Labute.Assembly",
+   "file": "GQ2/Roe/Labute/Assembly.lean",
+   "line": 249,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GQ2.SectionTen.main_surjection_count'",
+   "module": "GQ2.SectionTenSources",
+   "file": "GQ2/SectionTenSources.lean",
+   "line": 29,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Group",
+    "TopologicalSpace"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.ZMod": 3,
+  "Mathlib.Algebra.Group.Commutator": 1,
+  "Mathlib.Algebra.Group.MinimalAxioms": 1,
+  "Mathlib.Algebra.Homology.Homotopy": 1,
+  "Mathlib.Algebra.Module.StablyFree.Basic": 2,
+  "Mathlib.Algebra.Module.Torsion.Basic": 1,
+  "Mathlib.Algebra.Module.ZMod": 7,
+  "Mathlib.Algebra.Order.Ring.Star": 4,
+  "Mathlib.Algebra.Order.Star.Basic": 2,
+  "Mathlib.Algebra.Order.Star.Real": 2,
+  "Mathlib.Algebra.Polynomial.Expand": 1,
+  "Mathlib.Algebra.Polynomial.Module.AEval": 1,
+  "Mathlib.AlgebraicTopology.SimplexCategory.Basic": 1,
+  "Mathlib.Analysis.Normed.Module.FiniteDimension": 1,
+  "Mathlib.Analysis.Normed.Ring.Lemmas": 3,
+  "Mathlib.CategoryTheory.Action.Concrete": 1,
+  "Mathlib.CategoryTheory.CofilteredSystem": 1,
+  "Mathlib.Combinatorics.Quiver.ReflQuiver": 2,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Int.Star": 1,
+  "Mathlib.Data.ZMod.Defs": 2,
+  "Mathlib.Dynamics.Flow": 1,
+  "Mathlib.FieldTheory.AbsoluteGaloisGroup": 3,
+  "Mathlib.FieldTheory.Finite.Basic": 2,
+  "Mathlib.FieldTheory.Finite.Extension": 1,
+  "Mathlib.FieldTheory.Finite.GaloisField": 2,
+  "Mathlib.FieldTheory.Finiteness": 1,
+  "Mathlib.FieldTheory.Galois.Infinite": 3,
+  "Mathlib.FieldTheory.Galois.Profinite": 2,
+  "Mathlib.FieldTheory.Normal.Defs": 3,
+  "Mathlib.FieldTheory.PurelyInseparable.Basic": 1,
+  "Mathlib.FieldTheory.Separable": 1,
+  "Mathlib.GroupTheory.Abelianization.Finite": 1,
+  "Mathlib.GroupTheory.Commutator.Basic": 1,
+  "Mathlib.GroupTheory.FreeGroup.Basic": 1,
+  "Mathlib.GroupTheory.Goursat": 1,
+  "Mathlib.GroupTheory.Index": 1,
+  "Mathlib.GroupTheory.IndexNormal": 1,
+  "Mathlib.GroupTheory.IsPerfect": 1,
+  "Mathlib.GroupTheory.Nilpotent": 1,
+  "Mathlib.GroupTheory.PGroup": 4,
+  "Mathlib.GroupTheory.SchurZassenhaus": 1,
+  "Mathlib.GroupTheory.SemidirectProduct": 1,
+  "Mathlib.GroupTheory.SpecificGroups.Dihedral": 3,
+  "Mathlib.GroupTheory.Sylow": 1,
+  "Mathlib.LinearAlgebra.Basis.VectorSpace": 2,
+  "Mathlib.LinearAlgebra.BilinearForm.Properties": 1,
+  "Mathlib.LinearAlgebra.Dual.Lemmas": 3,
+  "Mathlib.LinearAlgebra.FreeModule.Finite.Basic": 1,
+  "Mathlib.LinearAlgebra.QuadraticForm.Basic": 1,
+  "Mathlib.LinearAlgebra.QuadraticForm.Basis": 1,
+  "Mathlib.LinearAlgebra.QuadraticForm.IsometryEquiv": 1,
+  "Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter": 1,
+  "Mathlib.NumberTheory.GaussSum": 1,
+  "Mathlib.NumberTheory.Padics.Complex": 5,
+  "Mathlib.NumberTheory.Padics.Hensel": 2,
+  "Mathlib.NumberTheory.Padics.PadicNumbers": 3,
+  "Mathlib.NumberTheory.Padics.PadicVal.Basic": 1,
+  "Mathlib.NumberTheory.Padics.ProperSpace": 2,
+  "Mathlib.NumberTheory.Padics.RingHoms": 4,
+  "Mathlib.Order.CompletePartialOrder": 5,
+  "Mathlib.RingTheory.AdjoinRoot": 1,
+  "Mathlib.RingTheory.LittleWedderburn": 1,
+  "Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed": 1,
+  "Mathlib.RingTheory.SimpleRing.Principal": 2,
+  "Mathlib.RingTheory.Trace.Basic": 1,
+  "Mathlib.RingTheory.UniqueFactorizationDomain.Finsupp": 2,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.Group": 3,
+  "Mathlib.Tactic.LinearCombination": 3,
+  "Mathlib.Tactic.NoncommRing": 1,
+  "Mathlib.Tactic.Ring": 1,
+  "Mathlib.Tactic.Ring.RingNF": 1,
+  "Mathlib.Tactic.SetNotationForOrder": 1,
+  "Mathlib.Topology.AlexandrovDiscrete": 1,
+  "Mathlib.Topology.Algebra.Category.ProfiniteGrp.Basic": 2,
+  "Mathlib.Topology.Algebra.Category.ProfiniteGrp.Completion": 2,
+  "Mathlib.Topology.Algebra.ClopenNhdofOne": 3,
+  "Mathlib.Topology.Algebra.ContinuousMonoidHom": 1,
+  "Mathlib.Topology.Algebra.Group.Quotient": 1,
+  "Mathlib.Topology.Algebra.Group.TopologicalAbelianization": 1,
+  "Mathlib.Topology.Algebra.Monoid.AddChar": 1,
+  "Mathlib.Topology.Algebra.ProperAction.Basic": 1,
+  "Mathlib.Topology.Compactness.Paracompact": 3,
+  "Mathlib.Topology.Connected.Separation": 3,
+  "Mathlib.Topology.Defs.Basic": 3,
+  "Mathlib.Topology.EMetricSpace.Paracompact": 1,
+  "Mathlib.Topology.Instances.ZMod": 4,
+  "Mathlib.Topology.LocallyConstant.Basic": 1,
+  "Mathlib.Topology.MetricSpace.Ultra.TotallySeparated": 3,
+  "Mathlib.Topology.NoetherianSpace": 1,
+  "Mathlib.Topology.Separation.CompletelyRegular": 2,
+  "Mathlib.Topology.Separation.Lemmas": 2
+ },
+ "import_roots": {
+  "Mathlib": 56
+ },
+ "uses": {
+  "AdjoinRoot": 4,
+  "Algebra": 4,
+  "AlgebraicClosure": 44,
+  "Array": 1,
+  "CauchySeq": 3,
+  "CharP": 2,
+  "CharZero": 2,
+  "CompleteSpace": 3,
+  "Continuous": 77,
+  "ContinuousSMul": 89,
+  "Equiv.Perm": 3,
+  "Field": 8,
+  "Filter": 1,
+  "Filter.Tendsto": 3,
+  "FiniteDimensional": 39,
+  "FiniteDimensional.proper": 2,
+  "Finset": 48,
+  "Fintype.exists_ne_map_eq_of_card_lt": 1,
+  "FreeGroup": 12,
+  "Group": 234,
+  "Group.IsNilpotent": 2,
+  "Ideal": 2,
+  "Irreducible": 4,
+  "IsCompact": 6,
+  "IsCyclic": 8,
+  "IsSimpleGroup": 1,
+  "IsTopologicalGroup": 93,
+  "LinearIndependent": 2,
+  "LinearMap.BilinForm": 2,
+  "LinearMap.ker": 3,
+  "LinearMap.range": 5,
+  "List": 4,
+  "Matrix": 1,
+  "Metric.ball": 1,
+  "Module": 30,
+  "Module.Basis": 1,
+  "Module.Dual": 12,
+  "Module.evalEquiv": 1,
+  "MulAction": 5,
+  "MulAction.orbitEquivQuotientStabilizer": 1,
+  "MulAction.stabilizer": 24,
+  "Nat.ModEq.pow_totient": 2,
+  "Nat.totient": 2,
+  "Orientation": 1,
+  "PadicInt": 6,
+  "Polynomial": 8,
+  "Polynomial.eval": 1,
+  "QuadraticForm": 2,
+  "QuotientGroup.quotientKerEquivRange": 8,
+  "QuotientGroup.quotientQuotientEquivQuotient": 1,
+  "Ring": 2,
+  "Set": 141,
+  "Subgroup": 132,
+  "Subgroup.card_subgroup_dvd_card": 5,
+  "Subgroup.closure": 88,
+  "Subgroup.index": 4,
+  "Submodule.span": 2,
+  "Subring": 3,
+  "T2Space": 27,
+  "TopologicalSpace": 161,
+  "TopologicalSpace.induced": 1,
+  "ZMod.unitOfCoprime": 1,
+  "closure": 5,
+  "exists_prime_orderOf_dvd_card": 3,
+  "hensels_lemma": 3,
+  "minpoly": 6,
+  "orderOf": 50,
+  "ringChar": 1
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,177 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "BasisResearch/verified-libtommath",
+ "slug": "basisresearch--verified-libtommath",
+ "rev": "cfc232aa5e5cc22d690efeb9a03d065eb531a16c",
+ "date": "2026-10-31T20:56:29Z",
+ "stable": "a3ca073dc291a533615af18715e4997d21e685a0de4644d498bcd3b4f69c27d5",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "verified-libtommath",
+  "excerpt": "Lean 4 proofs that [libtommath](https://github.com/libtom/libtommath) v1.3.0, compiled for bare-metal RV64I (`c/tommath-arith.elf`: xPack GCC 15.2.0, `-O2`, 28-bit digits), is correct: all 100 functions of the image (76 libtommath functions and the 24 newlib/libgcc routines they call: the allocator, `memset`/`memcpy`/`memmove`, 64-bit multiply and divide) meet specifications over Lean's `Int`/`Nat`, as total-correctness triples on the Sail RISC-V model."
+ },
+ "lean_files": 1667,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean",
+   "rev": "740e2c4a9c672c61d76ad2f9c478c922f7461cf6"
+  },
+  {
+   "name": "«lean-riscv»",
+   "url": "riscv-lean/lean_emulator",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Vsa",
+   "src": "."
+  },
+  {
+   "name": "VsaIris",
+   "src": "."
+  },
+  {
+   "name": "TomSpec",
+   "src": "."
+  },
+  {
+   "name": "Tom",
+   "src": "."
+  }
+ ],
+ "library_files": 1532,
+ "capped": false,
+ "declarations": 31244,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 1029,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Tom.Layout",
+   "file": "Tom/Layout.lean"
+  }
+ ],
+ "root_closure_files": 1,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 7,
+ "headlines": [
+  {
+   "name": "Specs.mp_reduce_2k_setup",
+   "module": "Tom.Machine.Specs.Reduce2kSetup",
+   "file": "Tom/Machine/Specs/Reduce2kSetup.lean",
+   "line": 22,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F"
+   ]
+  },
+  {
+   "name": "Tom.InvmodPost.spec_neg_odd",
+   "module": "Tom.Spec.Gcd",
+   "file": "Tom/Spec/Gcd.lean",
+   "line": 982,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Int",
+    "h"
+   ]
+  },
+  {
+   "name": "Specs.mp_read_radix",
+   "module": "Tom.Machine.Specs.ReadRadix",
+   "file": "Tom/Machine/Specs/ReadRadix.lean",
+   "line": 19,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Specs.mp_dr_reduce",
+   "module": "Tom.Machine.Specs.DrReduce",
+   "file": "Tom/Machine/Specs/DrReduce.lean",
+   "line": 22,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F"
+   ]
+  },
+  {
+   "name": "Specs.mp_gcd",
+   "module": "Tom.Machine.Specs.Gcd",
+   "file": "Tom/Machine/Specs/Gcd.lean",
+   "line": 21,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F"
+   ]
+  },
+  {
+   "name": "Specs.mp_init_copy",
+   "module": "Tom.Machine.Specs.Init",
+   "file": "Tom/Machine/Specs/Init.lean",
+   "line": 42,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Specs.mp_mul",
+   "module": "Tom.Machine.Specs.Mul",
+   "file": "Tom/Machine/Specs/Mul.lean",
+   "line": 19,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Iris": 4,
+  "Lean": 6,
+  "LeanRiscv": 67,
+  "Std": 2,
+  "Vsa": 7
+ },
+ "uses": {
+  "Array": 650,
+  "Int": 98,
+  "Language": 1,
+  "List": 654,
+  "Nat": 1080,
+  "Ring": 6,
+  "closure": 2
+ },
+ "ci": null
+}

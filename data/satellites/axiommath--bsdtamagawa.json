@@ -1,0 +1,169 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "AxiomMath/BSDTamagawa",
+ "slug": "axiommath--bsdtamagawa",
+ "rev": "5cdbc198a58eea13830614854ab60b7579f78112",
+ "date": "2026-10-06T13:38:18Z",
+ "stable": "d1246fe3d1e669409a669b3575d31168758d7e92aee46f78afa73cbc4c5195a9",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Local Factors in the BSD Conjecture: A Unified Statistical View",
+  "excerpt": "This is a Lean formalization of the statistics of local Tamagawa numbers and reduction types of the elliptic curves `y² = x³ + a₄x + a₆` over `ℚ`, ordered by height."
+ },
+ "lean_files": 317,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc3",
+ "mathlib": "c55e6e786f49471c72fbddbec5415808896aec1e",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "BSDTamagawa",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 317,
+ "capped": false,
+ "declarations": 4815,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "BSDTamagawa",
+   "file": "BSDTamagawa.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 317,
+ "root_closure_sorry": [
+  "Challenge/Basic.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Basic": 2,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.NormalForms": 2,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Slope": 1,
+  "Mathlib.Analysis.Calculus.SmoothSeries": 4,
+  "Mathlib.Analysis.Complex.Basic": 1,
+  "Mathlib.Analysis.Complex.CauchyIntegral": 1,
+  "Mathlib.Analysis.Complex.LocallyUniformLimit": 2,
+  "Mathlib.Analysis.Complex.TaylorSeries": 2,
+  "Mathlib.Analysis.Normed.Group.Tannery": 2,
+  "Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn": 2,
+  "Mathlib.Analysis.Normed.Ring.InfiniteProd": 2,
+  "Mathlib.Analysis.Normed.Ring.InfiniteSum": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Summable": 1,
+  "Mathlib.Analysis.SpecificLimits.Normed": 2,
+  "Mathlib.Data.Int.CardIntervalMod": 2,
+  "Mathlib.Data.ZMod.QuotientRing": 2,
+  "Mathlib.MeasureTheory.Integral.BoundedContinuousFunction": 2,
+  "Mathlib.MeasureTheory.Integral.Pi": 1,
+  "Mathlib.NumberTheory.Chebyshev": 2,
+  "Mathlib.NumberTheory.Harmonic.Bounds": 2,
+  "Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic": 2,
+  "Mathlib.NumberTheory.Padics.Hensel": 2,
+  "Mathlib.NumberTheory.Padics.PadicVal.Basic": 1,
+  "Mathlib.NumberTheory.Padics.ProperSpace": 2,
+  "Mathlib.NumberTheory.ZetaValues": 3,
+  "Mathlib.Probability.Moments.Variance": 2,
+  "Mathlib.Probability.ProbabilityMassFunction.Integrals": 3,
+  "Mathlib.RingTheory.Filtration": 2,
+  "Mathlib.Topology.MetricSpace.Ultra.TotallySeparated": 2,
+  "Mathlib.Topology.Separation.DisjointCover": 2
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 12
+ },
+ "uses": {
+  "ArithmeticFunction": 1,
+  "BorelSpace": 4,
+  "Cauchy": 1,
+  "CharP": 17,
+  "Complex": 1,
+  "Continuous": 12,
+  "Differentiable": 1,
+  "DifferentiableOn": 1,
+  "Field": 17,
+  "Filter": 58,
+  "Filter.Tendsto": 46,
+  "Finset": 115,
+  "HasDerivAt": 8,
+  "HasSum": 37,
+  "Ideal": 73,
+  "IsCompact": 9,
+  "IsCoprime": 2,
+  "IsNoetherianRing": 28,
+  "MapClusterPt": 1,
+  "Measurable": 8,
+  "MeasurableSet": 50,
+  "MeasurableSpace": 6,
+  "MeasureTheory.Integrable": 9,
+  "MeasureTheory.IsProbabilityMeasure": 11,
+  "MeasureTheory.Measure": 81,
+  "MeasureTheory.Measure.pi": 1,
+  "MeasureTheory.MeasureSpace": 3,
+  "MeasureTheory.tendsto_integral_of_dominated_convergence": 1,
+  "Metric.ball": 3,
+  "Metric.isOpen_iff": 2,
+  "Multiset": 2,
+  "MvPolynomial": 1,
+  "PMF": 12,
+  "PadicInt": 20,
+  "Polynomial": 19,
+  "Polynomial.derivative": 3,
+  "Prime": 14,
+  "ProbabilityTheory.moment": 3,
+  "ProbabilityTheory.variance": 11,
+  "Real": 1,
+  "Real.exp": 4,
+  "Real.log": 2,
+  "RingHom.quotientKerEquivOfSurjective": 2,
+  "Set": 139,
+  "Summable.of_norm": 12,
+  "T2Space": 2,
+  "TendstoLocallyUniformlyOn.differentiableOn": 1,
+  "TopologicalSpace": 4,
+  "UniformSpace": 2,
+  "closure": 3,
+  "frobenius": 2,
+  "hensels_lemma": 3,
+  "isCompact_pi_infinite": 2,
+  "iteratedDeriv": 1,
+  "norm_add_le": 2,
+  "ringChar": 1,
+  "tendsto_of_tendsto_of_tendsto_of_le_of_le'": 1
+ },
+ "ci": "SUCCESS"
+}

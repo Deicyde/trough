@@ -1,0 +1,607 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Plonky3/Plonky3-lean",
+ "slug": "plonky3--plonky3-lean",
+ "rev": "ba6bc178838b324bbcbc4acdaaf10cbc7e48a2b2",
+ "date": "2026-10-25T17:31:27Z",
+ "stable": "19ba42e6141c277012378152f2d296f30ff7914f8fdc8d3735ea89bc17776c1f",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSE-APACHE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Plonky3"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Plonky3-lean",
+  "excerpt": "Formal models and machine-checked proofs for [Plonky3](https://github.com/Plonky3/Plonky3), in Lean 4."
+ },
+ "lean_files": 1058,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "aeneas",
+   "url": "https://github.com/cryspen/aeneas",
+   "rev": "41977a5c4d200838c3db2997e962f2e2d079ab68"
+  },
+  {
+   "name": "CompPoly",
+   "url": "https://github.com/Verified-zkEVM/CompPoly",
+   "rev": "06686e4c70939af82203af21516f8ab8a21a8051"
+  },
+  {
+   "name": "hax",
+   "url": "https://github.com/cryspen/hax-lean",
+   "rev": "5da920beeba8a3e1c0bfe31734e2267834ea7619"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "HaxExt",
+   "src": "."
+  },
+  {
+   "name": "ToCompPoly",
+   "src": "."
+  },
+  {
+   "name": "Plonky3Lean",
+   "src": "."
+  },
+  {
+   "name": "P3BabyBear",
+   "src": "crates/baby-bear/extraction"
+  },
+  {
+   "name": "P3Commit",
+   "src": "crates/commit/stub"
+  },
+  {
+   "name": "P3Dft",
+   "src": "crates/dft/stub"
+  },
+  {
+   "name": "P3BinaryDft",
+   "src": "crates/binary-dft/extraction"
+  },
+  {
+   "name": "P3Field",
+   "src": "crates/field/stub"
+  },
+  {
+   "name": "P3Goldilocks",
+   "src": "crates/goldilocks/extraction"
+  },
+  {
+   "name": "P3KoalaBear",
+   "src": "crates/koala-bear/extraction"
+  },
+  {
+   "name": "P3Matrix",
+   "src": "crates/matrix/extraction"
+  },
+  {
+   "name": "P3Mds",
+   "src": "crates/mds/extraction"
+  },
+  {
+   "name": "P3Mersenne31",
+   "src": "crates/mersenne-31/extraction"
+  },
+  {
+   "name": "P3Monty31",
+   "src": "crates/monty-31/extraction"
+  },
+  {
+   "name": "P3Poseidon1",
+   "src": "crates/poseidon1/stub"
+  },
+  {
+   "name": "P3Poseidon2",
+   "src": "crates/poseidon2/stub"
+  },
+  {
+   "name": "P3Util",
+   "src": "crates/util/extraction"
+  },
+  {
+   "name": "P3ZkCodes",
+   "src": "crates/zk-codes/stub"
+  },
+  {
+   "name": "P3MultilinearUtil",
+   "src": "crates/multilinear-util/extraction"
+  },
+  {
+   "name": "P3Sumcheck",
+   "src": "crates/sumcheck/extraction"
+  },
+  {
+   "name": "P3Stir",
+   "src": "crates/stir/stub"
+  },
+  {
+   "name": "P3Whir",
+   "src": "crates/whir/stub"
+  },
+  {
+   "name": "P3BinaryPcs",
+   "src": "crates/binary-pcs/extraction"
+  },
+  {
+   "name": "P3BinaryField",
+   "src": "crates/binary-field/extraction"
+  },
+  {
+   "name": "P3Sha256",
+   "src": "crates/sha256/extraction"
+  },
+  {
+   "name": "Sha2",
+   "src": "crates/sha2/extraction"
+  },
+  {
+   "name": "TinyKeccak",
+   "src": "crates/tiny-keccak/extraction"
+  },
+  {
+   "name": "P3Keccak",
+   "src": "crates/keccak/extraction"
+  },
+  {
+   "name": "P3Blake2s",
+   "src": "crates/blake2s/extraction"
+  },
+  {
+   "name": "P3Blake3",
+   "src": "crates/blake3/extraction"
+  },
+  {
+   "name": "Blake3Crate",
+   "src": "crates/blake3-crate/stub"
+  },
+  {
+   "name": "P3Security",
+   "src": "crates/security/extraction"
+  },
+  {
+   "name": "P3Challenger",
+   "src": "crates/challenger/extraction"
+  },
+  {
+   "name": "P3Symmetric",
+   "src": "crates/symmetric/extraction"
+  },
+  {
+   "name": "P3MerkleTree",
+   "src": "crates/merkle-tree/extraction"
+  },
+  {
+   "name": "P3Air",
+   "src": "crates/air/extraction"
+  },
+  {
+   "name": "P3Lookup",
+   "src": "crates/lookup/extraction"
+  },
+  {
+   "name": "P3UniStark",
+   "src": "crates/uni-stark/extraction"
+  },
+  {
+   "name": "P3Fri",
+   "src": "crates/fri/stub"
+  },
+  {
+   "name": "P3KeccakAir",
+   "src": "crates/keccak-air/extraction"
+  },
+  {
+   "name": "P3Sha256Air",
+   "src": "crates/sha256-air/extraction"
+  },
+  {
+   "name": "P3Blake3Air",
+   "src": "crates/blake3-air/extraction"
+  },
+  {
+   "name": "P3Blake2sAir",
+   "src": "crates/blake2s-air/extraction"
+  },
+  {
+   "name": "P3BatchStark",
+   "src": "crates/batch-stark/extraction"
+  },
+  {
+   "name": "P3Bus",
+   "src": "crates/bus/extraction"
+  },
+  {
+   "name": "P3Circle",
+   "src": "crates/circle/stub"
+  },
+  {
+   "name": "P3MultiStark",
+   "src": "crates/multi-stark/extraction"
+  },
+  {
+   "name": "P3Word",
+   "src": "crates/word/extraction"
+  },
+  {
+   "name": "P3WordBackend",
+   "src": "crates/word-backend/stub"
+  }
+ ],
+ "library_files": 1058,
+ "capped": false,
+ "declarations": 16107,
+ "sorry_files": 0,
+ "axioms": 20,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Blake3Crate",
+   "file": "crates/blake3-crate/stub/Blake3Crate.lean"
+  },
+  {
+   "name": "HaxExt",
+   "file": "HaxExt.lean"
+  },
+  {
+   "name": "P3Air",
+   "file": "crates/air/extraction/P3Air.lean"
+  },
+  {
+   "name": "P3BabyBear",
+   "file": "crates/baby-bear/extraction/P3BabyBear.lean"
+  },
+  {
+   "name": "P3BatchStark",
+   "file": "crates/batch-stark/extraction/P3BatchStark.lean"
+  },
+  {
+   "name": "P3BinaryDft",
+   "file": "crates/binary-dft/extraction/P3BinaryDft.lean"
+  },
+  {
+   "name": "P3BinaryField",
+   "file": "crates/binary-field/extraction/P3BinaryField.lean"
+  },
+  {
+   "name": "P3BinaryPcs",
+   "file": "crates/binary-pcs/extraction/P3BinaryPcs.lean"
+  },
+  {
+   "name": "P3Blake2s",
+   "file": "crates/blake2s/extraction/P3Blake2s.lean"
+  },
+  {
+   "name": "P3Blake2sAir",
+   "file": "crates/blake2s-air/extraction/P3Blake2sAir.lean"
+  },
+  {
+   "name": "P3Blake3",
+   "file": "crates/blake3/extraction/P3Blake3.lean"
+  },
+  {
+   "name": "P3Blake3Air",
+   "file": "crates/blake3-air/extraction/P3Blake3Air.lean"
+  },
+  {
+   "name": "P3Bus",
+   "file": "crates/bus/extraction/P3Bus.lean"
+  },
+  {
+   "name": "P3Challenger",
+   "file": "crates/challenger/extraction/P3Challenger.lean"
+  },
+  {
+   "name": "P3Circle",
+   "file": "crates/circle/stub/P3Circle.lean"
+  },
+  {
+   "name": "P3Commit",
+   "file": "crates/commit/stub/P3Commit.lean"
+  },
+  {
+   "name": "P3Dft",
+   "file": "crates/dft/stub/P3Dft.lean"
+  },
+  {
+   "name": "P3Field",
+   "file": "crates/field/stub/P3Field.lean"
+  },
+  {
+   "name": "P3Fri",
+   "file": "crates/fri/stub/P3Fri.lean"
+  },
+  {
+   "name": "P3Goldilocks",
+   "file": "crates/goldilocks/extraction/P3Goldilocks.lean"
+  },
+  {
+   "name": "P3Keccak",
+   "file": "crates/keccak/extraction/P3Keccak.lean"
+  },
+  {
+   "name": "P3KeccakAir",
+   "file": "crates/keccak-air/extraction/P3KeccakAir.lean"
+  },
+  {
+   "name": "P3KoalaBear",
+   "file": "crates/koala-bear/extraction/P3KoalaBear.lean"
+  },
+  {
+   "name": "P3Lookup",
+   "file": "crates/lookup/extraction/P3Lookup.lean"
+  },
+  {
+   "name": "P3Matrix",
+   "file": "crates/matrix/extraction/P3Matrix.lean"
+  },
+  {
+   "name": "P3Mds",
+   "file": "crates/mds/extraction/P3Mds.lean"
+  },
+  {
+   "name": "P3MerkleTree",
+   "file": "crates/merkle-tree/extraction/P3MerkleTree.lean"
+  },
+  {
+   "name": "P3Mersenne31",
+   "file": "crates/mersenne-31/extraction/P3Mersenne31.lean"
+  },
+  {
+   "name": "P3Monty31",
+   "file": "crates/monty-31/extraction/P3Monty31.lean"
+  },
+  {
+   "name": "P3MultiStark",
+   "file": "crates/multi-stark/extraction/P3MultiStark.lean"
+  },
+  {
+   "name": "P3MultilinearUtil",
+   "file": "crates/multilinear-util/extraction/P3MultilinearUtil.lean"
+  },
+  {
+   "name": "P3Poseidon1",
+   "file": "crates/poseidon1/stub/P3Poseidon1.lean"
+  },
+  {
+   "name": "P3Poseidon2",
+   "file": "crates/poseidon2/stub/P3Poseidon2.lean"
+  },
+  {
+   "name": "P3Security",
+   "file": "crates/security/extraction/P3Security.lean"
+  },
+  {
+   "name": "P3Sha256",
+   "file": "crates/sha256/extraction/P3Sha256.lean"
+  },
+  {
+   "name": "P3Sha256Air",
+   "file": "crates/sha256-air/extraction/P3Sha256Air.lean"
+  },
+  {
+   "name": "P3Stir",
+   "file": "crates/stir/stub/P3Stir.lean"
+  },
+  {
+   "name": "P3Sumcheck",
+   "file": "crates/sumcheck/extraction/P3Sumcheck.lean"
+  },
+  {
+   "name": "P3Symmetric",
+   "file": "crates/symmetric/extraction/P3Symmetric.lean"
+  },
+  {
+   "name": "P3UniStark",
+   "file": "crates/uni-stark/extraction/P3UniStark.lean"
+  },
+  {
+   "name": "P3Util",
+   "file": "crates/util/extraction/P3Util.lean"
+  },
+  {
+   "name": "P3Whir",
+   "file": "crates/whir/stub/P3Whir.lean"
+  },
+  {
+   "name": "P3Word",
+   "file": "crates/word/extraction/P3Word.lean"
+  },
+  {
+   "name": "P3WordBackend",
+   "file": "crates/word-backend/stub/P3WordBackend.lean"
+  },
+  {
+   "name": "P3ZkCodes",
+   "file": "crates/zk-codes/stub/P3ZkCodes.lean"
+  },
+  {
+   "name": "Plonky3Lean",
+   "file": "Plonky3Lean.lean"
+  },
+  {
+   "name": "Sha2",
+   "file": "crates/sha2/extraction/Sha2.lean"
+  },
+  {
+   "name": "TinyKeccak",
+   "file": "crates/tiny-keccak/extraction/TinyKeccak.lean"
+  },
+  {
+   "name": "ToCompPoly",
+   "file": "ToCompPoly.lean"
+  }
+ ],
+ "root_closure_files": 998,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.Basic": 2,
+  "Mathlib.Algebra.Algebra.Defs": 3,
+  "Mathlib.Algebra.Algebra.Pi": 2,
+  "Mathlib.Algebra.BigOperators.Field": 2,
+  "Mathlib.Algebra.BigOperators.Fin": 5,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 9,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 8,
+  "Mathlib.Algebra.BigOperators.Intervals": 2,
+  "Mathlib.Algebra.CharP.Basic": 5,
+  "Mathlib.Algebra.CharP.Defs": 1,
+  "Mathlib.Algebra.CharP.Lemmas": 1,
+  "Mathlib.Algebra.CharP.Two": 2,
+  "Mathlib.Algebra.Field.Basic": 15,
+  "Mathlib.Algebra.Field.GeomSum": 1,
+  "Mathlib.Algebra.Field.ZMod": 3,
+  "Mathlib.Algebra.Group.Defs": 1,
+  "Mathlib.Algebra.Module.Basic": 2,
+  "Mathlib.Algebra.Module.BigOperators": 3,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 1,
+  "Mathlib.Algebra.MvPolynomial.Degrees": 1,
+  "Mathlib.Algebra.MvPolynomial.Equiv": 2,
+  "Mathlib.Algebra.MvPolynomial.Eval": 1,
+  "Mathlib.Algebra.MvPolynomial.SchwartzZippel": 3,
+  "Mathlib.Algebra.MvPolynomial.Variables": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.List": 2,
+  "Mathlib.Algebra.Order.Field.Rat": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 1,
+  "Mathlib.Algebra.Order.Group.Unbundled.Int": 1,
+  "Mathlib.Algebra.Order.Ring.NNRat": 1,
+  "Mathlib.Algebra.Polynomial.AlgebraMap": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 2,
+  "Mathlib.Algebra.Polynomial.Coeff": 1,
+  "Mathlib.Algebra.Polynomial.Degree.Lemmas": 1,
+  "Mathlib.Algebra.Polynomial.Derivative": 1,
+  "Mathlib.Algebra.Polynomial.Div": 2,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 4,
+  "Mathlib.Algebra.Polynomial.Eval.Degree": 1,
+  "Mathlib.Algebra.Polynomial.Expand": 1,
+  "Mathlib.Algebra.Polynomial.Monic": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 5,
+  "Mathlib.Algebra.Ring.Defs": 1,
+  "Mathlib.Algebra.Ring.GeomSum": 1,
+  "Mathlib.Combinatorics.Nullstellensatz": 1,
+  "Mathlib.Data.Fin.Basic": 3,
+  "Mathlib.Data.Fintype.Pi": 2,
+  "Mathlib.Data.Int.CardIntervalMod": 1,
+  "Mathlib.Data.Int.GCD": 2,
+  "Mathlib.Data.List.Basic": 12,
+  "Mathlib.Data.List.Chain": 1,
+  "Mathlib.Data.List.Count": 1,
+  "Mathlib.Data.List.FinRange": 3,
+  "Mathlib.Data.List.Forall2": 1,
+  "Mathlib.Data.List.GetD": 6,
+  "Mathlib.Data.List.Iterate": 1,
+  "Mathlib.Data.List.Pairwise": 1,
+  "Mathlib.Data.List.Prime": 1,
+  "Mathlib.Data.List.Range": 6,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Matrix.ColumnRowPartitioned": 1,
+  "Mathlib.Data.NNRat.BigOperators": 1,
+  "Mathlib.Data.Nat.Bits": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Cast.Defs": 2,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Data.Nat.Factorization.Basic": 1,
+  "Mathlib.Data.Nat.Init": 1,
+  "Mathlib.Data.Nat.Log": 7,
+  "Mathlib.Data.Nat.Prime.Basic": 1,
+  "Mathlib.Data.Nat.Size": 4,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.Data.ZMod.Units": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 9,
+  "Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure": 1,
+  "Mathlib.FieldTheory.KummerExtension": 2,
+  "Mathlib.FieldTheory.RatFunc.Basic": 1,
+  "Mathlib.GroupTheory.OrderOfElement": 6,
+  "Mathlib.LinearAlgebra.Basis.Defs": 2,
+  "Mathlib.LinearAlgebra.Lagrange": 7,
+  "Mathlib.LinearAlgebra.Matrix.Notation": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Logic.Function.Iterate": 5,
+  "Mathlib.NumberTheory.Padics.PadicVal.Basic": 1,
+  "Mathlib.Order.Basic": 2,
+  "Mathlib.RingTheory.AdjoinRoot": 5,
+  "Mathlib.RingTheory.Coprime.Lemmas": 1,
+  "Mathlib.RingTheory.Ideal.Quotient.Operations": 1,
+  "Mathlib.RingTheory.MvPolynomial.Tower": 2,
+  "Mathlib.RingTheory.Polynomial.Basic": 1,
+  "Mathlib.RingTheory.Polynomial.Tower": 1,
+  "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots": 6,
+  "Mathlib.Tactic.ComputeDegree": 1,
+  "Mathlib.Tactic.FieldSimp": 5,
+  "Mathlib.Tactic.IntervalCases": 5,
+  "Mathlib.Tactic.Linarith": 6,
+  "Mathlib.Tactic.LinearCombination": 14,
+  "Mathlib.Tactic.Module": 1,
+  "Mathlib.Tactic.NormNum.Prime": 6,
+  "Mathlib.Tactic.Positivity": 3,
+  "Mathlib.Tactic.ReduceModChar": 2,
+  "Mathlib.Tactic.Ring": 3
+ },
+ "import_roots": {
+  "Aeneas": 205,
+  "Batteries": 5,
+  "CompPoly": 44,
+  "CoreModels": 200,
+  "Init": 3,
+  "Mathlib": 151
+ },
+ "uses": {
+  "AdjoinRoot": 16,
+  "Algebra": 92,
+  "AlgebraicClosure": 1,
+  "Array": 69,
+  "CharP": 34,
+  "Complex": 2,
+  "Equiv.Perm.sign": 1,
+  "Field": 399,
+  "Finset": 194,
+  "Finset.sum_range_id": 1,
+  "Int": 4,
+  "Int.ModEq": 2,
+  "Irreducible": 14,
+  "IsCoprime": 2,
+  "Lagrange.interpolate": 23,
+  "LinearIndependent": 2,
+  "List": 505,
+  "Matrix": 7,
+  "Module": 40,
+  "Module.Basis": 18,
+  "Multiset": 1,
+  "MvPolynomial": 27,
+  "Nat": 4,
+  "Polynomial": 150,
+  "Polynomial.derivative": 2,
+  "Polynomial.dvd_iff_isRoot": 1,
+  "Polynomial.eval": 15,
+  "Polynomial.roots": 3,
+  "RatFunc": 2,
+  "Real": 1,
+  "Ring": 2,
+  "Set": 12,
+  "ZMod.pow_card_sub_one_eq_one": 6,
+  "frobenius": 1,
+  "orderOf": 29,
+  "ringChar": 18
+ },
+ "ci": "SUCCESS"
+}

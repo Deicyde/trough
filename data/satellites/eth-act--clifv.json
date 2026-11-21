@@ -1,0 +1,90 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "eth-act/clifv",
+ "slug": "eth-act--clifv",
+ "rev": "fde899246e2627ea14aa1c66044a3661500b5ca0",
+ "date": "2026-11-18T08:03:28Z",
+ "stable": "0b0d631ba7397240019260ceb269b66a84ee07b16a460e145184a7b845eda181",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "clifv",
+  "excerpt": null
+ },
+ "lean_files": 6266,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "repl",
+   "url": "https://github.com/leanprover-community/repl.git",
+   "rev": "193cf4bb9a22bb3fc6d25774f0fe6a70db1fd6ee"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "FV",
+   "src": "."
+  },
+  {
+   "name": "FVTest",
+   "src": "."
+  },
+  {
+   "name": "Corpus",
+   "src": "corpus/dsl"
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 52958,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 305,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "E2E.backend_correct_final",
+   "module": "FV.E2E.Final",
+   "file": "FV/E2E/Final.lean",
+   "line": 222,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "B",
+    "List",
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 3,
+  "Lean": 34,
+  "Std": 13
+ },
+ "uses": {
+  "Array": 1780,
+  "Int": 538,
+  "List": 2972,
+  "Nat": 3817,
+  "Real": 1,
+  "Std.HashMap": 93
+ },
+ "ci": "PENDING"
+}

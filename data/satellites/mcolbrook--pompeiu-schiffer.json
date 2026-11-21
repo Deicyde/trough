@@ -1,0 +1,181 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "MColbrook/Pompeiu_Schiffer",
+ "slug": "mcolbrook--pompeiu-schiffer",
+ "rev": "2fb3f2ecafd3233dbca390d73e764fe6e04a9c7d",
+ "date": "2026-09-14T03:45:55Z",
+ "stable": "4886e7f4a634cb28799806de370f746c2c17dcaa6925e00232d3ef8f39fe69ec",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "A computer-assisted counterexample to the planar Pompeiu and Schiffer conjectures",
+  "excerpt": null
+ },
+ "lean_files": 111343,
+ "admitted": true,
+ "folder": "lean-proof",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [
+  {
+   "name": "leancert",
+   "url": "https://github.com/alerad/leancert",
+   "rev": "7486c107f7c2ce814d0914a5f82f7f157ff8bb57"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "SchifferCert",
+   "src": "."
+  },
+  {
+   "name": "Comparator",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 90286,
+ "sorry_files": 3,
+ "axioms": 0,
+ "closure_files": 3,
+ "closure_sorry": [
+  "lean-proof/Comparator/UnconditionalChallenge.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "SchifferCert",
+   "file": "lean-proof/SchifferCert.lean"
+  }
+ ],
+ "root_closure_files": 1,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "PompeiuSchiffer.Numerics.UnconditionalCounterexamples.exists_common_domain",
+   "module": "Comparator.UnconditionalChallenge",
+   "file": "lean-proof/Comparator/UnconditionalChallenge.lean",
+   "line": 8,
+   "kind": "theorem",
+   "sorry": true,
+   "names": [
+    "Real",
+    "Set"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 2,
+  "Mathlib.Algebra.BigOperators.Fin": 2,
+  "Mathlib.Algebra.BigOperators.Finsupp.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 2,
+  "Mathlib.Algebra.BigOperators.GroupWithZero.Action": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 2,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Field.Basic": 1,
+  "Mathlib.Analysis.Analytic.Composition": 1,
+  "Mathlib.Analysis.Analytic.OfScalars": 1,
+  "Mathlib.Analysis.Analytic.Uniqueness": 1,
+  "Mathlib.Analysis.CStarAlgebra.Classes": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Add": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Polynomial": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Analytic": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Mul": 2,
+  "Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts": 1,
+  "Mathlib.Analysis.Calculus.MeanValue": 1,
+  "Mathlib.Analysis.Complex.HasPrimitives": 1,
+  "Mathlib.Analysis.Complex.RealDeriv": 3,
+  "Mathlib.Analysis.Complex.Schwarz": 1,
+  "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff": 1,
+  "Mathlib.Analysis.InnerProductSpace.Laplacian": 6,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 1,
+  "Mathlib.Analysis.Normed.Affine.Isometry": 2,
+  "Mathlib.Analysis.Normed.Module.Ball.Pointwise": 1,
+  "Mathlib.Analysis.Normed.Module.RCLike.Real": 1,
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv": 2,
+  "Mathlib.Data.Finsupp.Basic": 2,
+  "Mathlib.Data.Finsupp.SMul": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Choose.Cast": 1,
+  "Mathlib.Data.Nat.Choose.Vandermonde": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.LinearAlgebra.Complex.FiniteDimensional": 1,
+  "Mathlib.LinearAlgebra.Finsupp.LSum": 1,
+  "Mathlib.LinearAlgebra.Matrix.ConjTranspose": 1,
+  "Mathlib.MeasureTheory.Function.Jacobian": 2,
+  "Mathlib.MeasureTheory.Function.LocallyIntegrable": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Set": 1,
+  "Mathlib.MeasureTheory.Integral.CircleIntegral": 1,
+  "Mathlib.MeasureTheory.Integral.DivergenceTheorem": 1,
+  "Mathlib.MeasureTheory.Integral.Prod": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.Complex": 1,
+  "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.GCongr": 1,
+  "Mathlib.Tactic.IntervalCases": 4798,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum": 3,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Topology.Algebra.InfiniteSum.Defs": 1,
+  "Mathlib.Topology.Algebra.Ring.Real": 1,
+  "Mathlib.Topology.MetricSpace.Thickening": 1,
+  "Mathlib.Topology.UniformSpace.UniformApproximation": 1
+ },
+ "import_roots": {
+  "LeanCert": 4819,
+  "Mathlib": 4827
+ },
+ "uses": {
+  "AnalyticAt": 3,
+  "Array": 28,
+  "Bornology": 2,
+  "Complex": 2,
+  "Complex.exp": 5,
+  "ContDiff": 6,
+  "Continuous": 6,
+  "DifferentiableOn": 2,
+  "Filter": 7,
+  "Filter.Tendsto": 3,
+  "Finset": 24,
+  "Finset.card_powersetCard": 1,
+  "HasDerivAt": 8,
+  "HasFDerivAt": 2,
+  "HasSum": 3,
+  "InnerProductSpace": 1,
+  "Int": 64,
+  "IsCompact": 2,
+  "List": 51,
+  "Matrix": 1,
+  "MeasureTheory.Integrable": 4,
+  "MeasureTheory.integral_image_eq_integral_abs_det_fderiv_smul": 1,
+  "MeasureTheory.integral_prod": 1,
+  "Metric.ball": 9,
+  "Nat": 4909,
+  "Polynomial": 4,
+  "Rat": 85,
+  "Real": 16,
+  "Set": 25,
+  "add_pow": 1,
+  "closure": 4,
+  "fderiv": 12,
+  "norm_add_le": 4
+ },
+ "ci": null
+}

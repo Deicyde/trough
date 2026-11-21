@@ -1,0 +1,187 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "cvc5/logos",
+ "slug": "cvc5--logos",
+ "rev": "c307c4c8f404e262a83add9877825b62a9ccc971",
+ "date": "2026-11-18T04:12:33Z",
+ "stable": "1e21e390d2137f510aef112a60200e30702ac106096386574e88dd95d74737e9",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Logos Checker",
+  "excerpt": null
+ },
+ "lean_files": 965,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Logos",
+   "src": "."
+  },
+  {
+   "name": "Cpc",
+   "src": "."
+  },
+  {
+   "name": "CpcMini",
+   "src": "."
+  }
+ ],
+ "library_files": 952,
+ "capped": false,
+ "declarations": 10908,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 894,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Cpc",
+   "file": "Cpc.lean"
+  },
+  {
+   "name": "Cpc.Api",
+   "file": "Cpc/Api.lean"
+  },
+  {
+   "name": "Cpc.Diagnostics",
+   "file": "Cpc/Diagnostics.lean"
+  },
+  {
+   "name": "Cpc.Logos",
+   "file": "Cpc/Logos.lean"
+  },
+  {
+   "name": "Cpc.LogosTerm",
+   "file": "Cpc/LogosTerm.lean"
+  },
+  {
+   "name": "Cpc.LogosTermOrder",
+   "file": "Cpc/LogosTermOrder.lean"
+  },
+  {
+   "name": "Cpc.Native",
+   "file": "Cpc/Native.lean"
+  },
+  {
+   "name": "Cpc.Parser",
+   "file": "Cpc/Parser.lean"
+  },
+  {
+   "name": "Cpc.SmtEval",
+   "file": "Cpc/SmtEval.lean"
+  },
+  {
+   "name": "Cpc.SmtSyntax",
+   "file": "Cpc/SmtSyntax.lean"
+  },
+  {
+   "name": "Cpc.SmtTranslate",
+   "file": "Cpc/SmtTranslate.lean"
+  },
+  {
+   "name": "Cpc.SmtTyping",
+   "file": "Cpc/SmtTyping.lean"
+  },
+  {
+   "name": "Cpc.TranslationChecks",
+   "file": "Cpc/TranslationChecks.lean"
+  },
+  {
+   "name": "CpcMini",
+   "file": "CpcMini.lean"
+  },
+  {
+   "name": "CpcMini.Logos",
+   "file": "CpcMini/Logos.lean"
+  },
+  {
+   "name": "CpcMini.LogosTerm",
+   "file": "CpcMini/LogosTerm.lean"
+  },
+  {
+   "name": "CpcMini.LogosTermOrder",
+   "file": "CpcMini/LogosTermOrder.lean"
+  },
+  {
+   "name": "CpcMini.SmtEval",
+   "file": "CpcMini/SmtEval.lean"
+  },
+  {
+   "name": "CpcMini.SmtSyntax",
+   "file": "CpcMini/SmtSyntax.lean"
+  },
+  {
+   "name": "CpcMini.SmtTranslate",
+   "file": "CpcMini/SmtTranslate.lean"
+  },
+  {
+   "name": "CpcMini.SmtTyping",
+   "file": "CpcMini/SmtTyping.lean"
+  },
+  {
+   "name": "CpcMini.TranslationChecks",
+   "file": "CpcMini/TranslationChecks.lean"
+  },
+  {
+   "name": "Logos",
+   "file": "Logos.lean"
+  }
+ ],
+ "root_closure_files": 27,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "correct___logos_check_proof",
+   "module": "Cpc.ApiCorrect",
+   "file": "Cpc/ApiCorrect.lean",
+   "line": 70,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 2,
+  "Mathlib.Data.Rat.Floor": 2,
+  "Mathlib.Data.Set.Finite.Basic": 2,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Ring": 1
+ },
+ "import_roots": {
+  "Init": 35,
+  "Lean": 4,
+  "Mathlib": 5,
+  "Std": 3
+ },
+ "uses": {
+  "Array": 9,
+  "Int": 248,
+  "List": 214,
+  "Nat": 187,
+  "Rat": 8,
+  "Real": 35,
+  "Set": 41,
+  "Std.HashMap": 2
+ },
+ "ci": "SUCCESS"
+}

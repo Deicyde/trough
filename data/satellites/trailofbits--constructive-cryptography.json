@@ -1,0 +1,214 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "trailofbits/constructive-cryptography",
+ "slug": "trailofbits--constructive-cryptography",
+ "rev": "5a280a800529d839aa38ddbb43460473be62f5bb",
+ "date": "2026-11-14T22:05:37Z",
+ "stable": "2bc148322fa22b488458df582986aa9a29197c885a0d71b98723a27303858dbb",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Trail of Bits"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Constructive Cryptography on Random Systems",
+  "excerpt": "This repository formalizes Constructive Cryptography [1, 2] in Lean 4. The framework is instantiated on a theory of random systems [3, 4] in which a system answers exactly on a declared domain of input histories, and a converter may stop at random. The classes of the framework are assumptions; their instances on interfaces take every field from the typed systems and typed converters of the random-systems library. The algebra of typed systems and converters is also stated in category-theoretic terms; a categorical model of composable security is given in [7]."
+ },
+ "lean_files": 362,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Probability",
+   "src": "src"
+  },
+  {
+   "name": "RandomSystems",
+   "src": "src"
+  },
+  {
+   "name": "ConstructiveCryptography",
+   "src": "src"
+  },
+  {
+   "name": "Commons",
+   "src": "src"
+  },
+  {
+   "name": "Examples",
+   "src": "src"
+  },
+  {
+   "name": "Tests",
+   "src": "src"
+  }
+ ],
+ "library_files": 361,
+ "capped": false,
+ "declarations": 4543,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Commons",
+   "file": "src/Commons.lean"
+  },
+  {
+   "name": "ConstructiveCryptography",
+   "file": "src/ConstructiveCryptography.lean"
+  },
+  {
+   "name": "Examples",
+   "file": "src/Examples.lean"
+  },
+  {
+   "name": "Probability",
+   "file": "src/Probability.lean"
+  },
+  {
+   "name": "RandomSystems",
+   "file": "src/RandomSystems.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "src/Tests.lean"
+  }
+ ],
+ "root_closure_files": 361,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 2,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 4,
+  "Mathlib.Algebra.Group.Action.Pointwise.Set.Basic": 1,
+  "Mathlib.Algebra.Group.Submonoid.Defs": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Algebra.Order.Group.PosPart": 1,
+  "Mathlib.Algebra.Order.Sub.Basic": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Convex.Jensen": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Basic.ENNReal.BigOperators": 1,
+  "Mathlib.Basic.ENNReal.Real": 1,
+  "Mathlib.Basic.NNReal.Basic": 1,
+  "Mathlib.Basic.Real.Basic": 1,
+  "Mathlib.CategoryTheory.Endomorphism": 1,
+  "Mathlib.CategoryTheory.Monoidal.Category": 1,
+  "Mathlib.CategoryTheory.Monoidal.Functor": 1,
+  "Mathlib.CategoryTheory.Monoidal.Types.Basic": 1,
+  "Mathlib.CategoryTheory.Types.Basic": 1,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.FinEnum": 7,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Finsupp.Basic": 1,
+  "Mathlib.Data.Finsupp.Defs": 1,
+  "Mathlib.Data.Finsupp.Order": 1,
+  "Mathlib.Data.Finsupp.SMul": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.CardEmbedding": 1,
+  "Mathlib.Data.Fintype.Defs": 2,
+  "Mathlib.Data.Fintype.Option": 1,
+  "Mathlib.Data.Fintype.Order": 1,
+  "Mathlib.Data.Fintype.Perm": 2,
+  "Mathlib.Data.Fintype.Pi": 2,
+  "Mathlib.Data.Fintype.Sigma": 1,
+  "Mathlib.Data.Fintype.Vector": 1,
+  "Mathlib.Data.Int.Lemmas": 1,
+  "Mathlib.Data.Int.NatAbs": 1,
+  "Mathlib.Data.LawfulXor.Basic": 1,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.List.GetD": 2,
+  "Mathlib.Data.List.Iterate": 1,
+  "Mathlib.Data.List.OfFn": 2,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Data.Nat.Factorial.BigOperators": 1,
+  "Mathlib.Data.Nat.Totient": 1,
+  "Mathlib.Data.PFun": 1,
+  "Mathlib.Data.Part": 1,
+  "Mathlib.Data.Set.Defs": 2,
+  "Mathlib.Data.Set.Finite.List": 1,
+  "Mathlib.Data.Set.Function": 1,
+  "Mathlib.Data.Set.Lattice.Bounded": 1,
+  "Mathlib.Data.Set.Lattice.Disjoint": 1,
+  "Mathlib.Data.Set.Lattice.Image": 1,
+  "Mathlib.Data.Set.Lattice.Indexed": 1,
+  "Mathlib.Data.Set.Lattice.Order": 1,
+  "Mathlib.Data.Set.NAry": 1,
+  "Mathlib.Data.ZMod.Basic": 3,
+  "Mathlib.Data.ZMod.Defs": 4,
+  "Mathlib.Data.ZMod.ValMinAbs": 2,
+  "Mathlib.GroupTheory.GroupAction.MultipleTransitivity": 1,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.LinearAlgebra.Finsupp.LSum": 1,
+  "Mathlib.LinearAlgebra.Finsupp.LinearCombination": 1,
+  "Mathlib.LinearAlgebra.Matrix.Defs": 1,
+  "Mathlib.Logic.Equiv.Basic": 1,
+  "Mathlib.Logic.Equiv.Bool": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Order.Closure": 1,
+  "Mathlib.Order.Hom.CompleteLattice": 1,
+  "Mathlib.Order.Monotone.Defs": 2,
+  "Mathlib.Order.Nat": 1,
+  "Mathlib.RingTheory.AdjoinRoot": 2,
+  "Mathlib.RingTheory.Ideal.Operations": 1,
+  "Mathlib.RingTheory.Ideal.Quotient.Basic": 1,
+  "Mathlib.RingTheory.Polynomial.Basic": 2,
+  "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots": 2,
+  "Mathlib.Tactic.Attr.Register": 2,
+  "Mathlib.Tactic.FinCases": 2,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.ReduceModChar": 2,
+  "Mathlib.Topology.EMetricSpace.Defs": 1,
+  "Mathlib.Topology.EMetricSpace.Lipschitz": 2
+ },
+ "import_roots": {
+  "Batteries": 3,
+  "Init": 5,
+  "Lean": 3,
+  "Mathlib": 60
+ },
+ "uses": {
+  "AdjoinRoot": 1,
+  "Algebra": 3,
+  "Array": 16,
+  "CategoryTheory.Category": 25,
+  "CategoryTheory.Functor": 1,
+  "CategoryTheory.MonoidalCategory": 30,
+  "ConvexOn": 1,
+  "Distribution": 54,
+  "Equiv.Perm": 3,
+  "Finset": 15,
+  "Group": 3,
+  "LipschitzWith": 2,
+  "List": 173,
+  "Matrix": 1,
+  "MulAction": 5,
+  "Multiset": 1,
+  "Nat": 47,
+  "Nat.totient": 2,
+  "PMF": 1,
+  "Polynomial": 3,
+  "Real": 2,
+  "Ring": 1,
+  "Set": 24
+ },
+ "ci": "SUCCESS"
+}

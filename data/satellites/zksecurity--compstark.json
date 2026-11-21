@@ -1,0 +1,360 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "zksecurity/CompStark",
+ "slug": "zksecurity--compstark",
+ "rev": "085fe9ce25b588cf13936f3646d24e961c7b5707",
+ "date": "2026-11-13T13:17:48Z",
+ "stable": "bb5aeb87f806b910a1587cd5b4447c45e185b44dc228dd274be27f51d968ee8e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "CompStark",
+  "excerpt": "Fast, formally verified STARK provers and verifiers in Lean 4. CompStark implements Plonky3's STARK and batch STARK, proves them complete and knowledge-sound with concrete security bounds, and runs them at speeds comparable to Plonky3."
+ },
+ "lean_files": 601,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "Arklib",
+   "url": "https://github.com/mitschabaude-bot/ArkLib.git",
+   "rev": "93fd4833b88fb0b964a29d9ca8cbbcd7ca781ba4"
+  },
+  {
+   "name": "CompPoly",
+   "url": "https://github.com/mitschabaude-bot/CompPoly.git",
+   "rev": "14330de845bfeea480f865b5fb71c5e728ccee98"
+  },
+  {
+   "name": "VCVio",
+   "url": "https://github.com/mitschabaude-bot/VCVio.git",
+   "rev": "dd5a3aee8d46c7c50c05a59aa90d89f2fd26a893"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "CompStark",
+   "src": "."
+  },
+  {
+   "name": "CompStarkPackedNative",
+   "src": "."
+  },
+  {
+   "name": "CompStarkTests",
+   "src": "tests"
+  },
+  {
+   "name": "CompStarkFixtures",
+   "src": "fixtures"
+  }
+ ],
+ "library_files": 598,
+ "capped": false,
+ "declarations": 10893,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 140,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CompStark",
+   "file": "CompStark.lean"
+  },
+  {
+   "name": "CompStark.BabyBear.Fast",
+   "file": "CompStark/BabyBear/Fast.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Duplex",
+   "file": "CompStark/Keccak/Duplex.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Merkle",
+   "file": "CompStark/Keccak/Merkle.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Prepared",
+   "file": "CompStark/Keccak/Prepared.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Scalar",
+   "file": "CompStark/Keccak/Scalar.lean"
+  },
+  {
+   "name": "CompStark.Keccak.Sponge",
+   "file": "CompStark/Keccak/Sponge.lean"
+  },
+  {
+   "name": "CompStark.Keccak.WordLoop",
+   "file": "CompStark/Keccak/WordLoop.lean"
+  },
+  {
+   "name": "CompStark.KoalaBear.Fast",
+   "file": "CompStark/KoalaBear/Fast.lean"
+  },
+  {
+   "name": "CompStark.KoalaBear.Group",
+   "file": "CompStark/KoalaBear/Group.lean"
+  },
+  {
+   "name": "CompStark.Merkle.Packed",
+   "file": "CompStark/Merkle/Packed.lean"
+  },
+  {
+   "name": "CompStark.Merkle.PackedColumns",
+   "file": "CompStark/Merkle/PackedColumns.lean"
+  },
+  {
+   "name": "CompStark.Poseidon2.PackedBabyBear",
+   "file": "CompStark/Poseidon2/PackedBabyBear.lean"
+  },
+  {
+   "name": "CompStark.Poseidon2.PackedKoalaBear",
+   "file": "CompStark/Poseidon2/PackedKoalaBear.lean"
+  },
+  {
+   "name": "CompStark.Stark.Fast",
+   "file": "CompStark/Stark/Fast.lean"
+  },
+  {
+   "name": "CompStark.Stark.ProgGroup",
+   "file": "CompStark/Stark/ProgGroup.lean"
+  },
+  {
+   "name": "CompStark.Stark.ProgWords",
+   "file": "CompStark/Stark/ProgWords.lean"
+  },
+  {
+   "name": "CompStarkTests",
+   "file": "tests/CompStarkTests.lean"
+  }
+ ],
+ "root_closure_files": 588,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 18,
+ "headlines": [
+  {
+   "name": "CompStark.Stark.completeness",
+   "module": "CompStark.Complete.Stark",
+   "file": "CompStark/Complete/Stark.lean",
+   "line": 690,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Array",
+    "F",
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "CompStark.Batch.completeness",
+   "module": "CompStark.Complete.Batch",
+   "file": "CompStark/Complete/Batch.lean",
+   "line": 1708,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Array",
+    "F",
+    "List"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.Setup.completeness",
+   "module": "CompStark.Iop.StarkCompleteness",
+   "file": "CompStark/Iop/StarkCompleteness.lean",
+   "line": 324,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "unifSpec"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.Batch.Setup.completeness",
+   "module": "CompStark.Iop.BatchCompleteness",
+   "file": "CompStark/Iop/BatchCompleteness.lean",
+   "line": 697,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "unifSpec"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.knowledgeSoundness",
+   "module": "CompStark.Iop.StarkSoundness",
+   "file": "CompStark/Iop/StarkSoundness.lean",
+   "line": 51,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "List",
+    "unifSpec"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.batchKnowledgeSoundness",
+   "module": "CompStark.Iop.BatchSoundness",
+   "file": "CompStark/Iop/BatchSoundness.lean",
+   "line": 89,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "List",
+    "unifSpec"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.Statement.stateRestoration_le",
+   "module": "CompStark.Iop.StarkStateRestoration",
+   "file": "CompStark/Iop/StarkStateRestoration.lean",
+   "line": 235,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "List",
+    "OracleComp",
+    "OracleSpec.randomOracle",
+    "simulateQ"
+   ]
+  },
+  {
+   "name": "CompStark.Iop.Batch.Statement.stateRestoration_le",
+   "module": "CompStark.Iop.BatchStateRestoration",
+   "file": "CompStark/Iop/BatchStateRestoration.lean",
+   "line": 227,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "F",
+    "List",
+    "OracleComp",
+    "OracleSpec.randomOracle",
+    "simulateQ"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.CharP.Lemmas": 1,
+  "Mathlib.Algebra.CharP.Reduced": 2,
+  "Mathlib.Algebra.CharP.Two": 1,
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.Field.Defs": 2,
+  "Mathlib.Algebra.GroupWithZero.Units.Lemmas": 3,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 2,
+  "Mathlib.Algebra.MvPolynomial.NoZeroDivisors": 1,
+  "Mathlib.Algebra.MvPolynomial.SchwartzZippel": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Polynomial.AlgebraMap": 1,
+  "Mathlib.Algebra.Polynomial.Div": 2,
+  "Mathlib.Algebra.Polynomial.Roots": 2,
+  "Mathlib.Algebra.Ring.Ext": 1,
+  "Mathlib.Algebra.Ring.Hom.Defs": 1,
+  "Mathlib.Data.Erased": 1,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Finset.Sort": 2,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Int.CardIntervalMod": 1,
+  "Mathlib.Data.List.FinRange": 2,
+  "Mathlib.Data.List.Forall2": 1,
+  "Mathlib.Data.List.GetD": 2,
+  "Mathlib.Data.List.Induction": 1,
+  "Mathlib.Data.List.Iterate": 1,
+  "Mathlib.Data.List.OfFn": 2,
+  "Mathlib.Data.List.Pi": 1,
+  "Mathlib.Data.List.Range": 2,
+  "Mathlib.Data.Multiset.Basic": 1,
+  "Mathlib.Data.Nat.Digits.Defs": 1,
+  "Mathlib.Data.Nat.Prime.Basic": 1,
+  "Mathlib.Data.Vector.Defs": 1,
+  "Mathlib.Data.ZMod.ValMinAbs": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 2,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.Init": 1,
+  "Mathlib.LinearAlgebra.Basis.VectorSpace": 1,
+  "Mathlib.LinearAlgebra.Lagrange": 3,
+  "Mathlib.LinearAlgebra.Pi": 2,
+  "Mathlib.LinearAlgebra.Vandermonde": 1,
+  "Mathlib.RingTheory.Polynomial.Basic": 2,
+  "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots": 1,
+  "Mathlib.Tactic.ComputeDegree": 1,
+  "Mathlib.Tactic.DSimpPercent": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.LinearCombination": 3,
+  "Mathlib.Tactic.NormNum.Prime": 1,
+  "Mathlib.Tactic.Ring": 2
+ },
+ "import_roots": {
+  "ArkLib": 44,
+  "CompPoly": 80,
+  "Init": 5,
+  "Lean": 6,
+  "Mathlib": 52,
+  "PolyFun": 2,
+  "Std": 3,
+  "ToMathlib": 3,
+  "VCVio": 17
+ },
+ "uses": {
+  "AdjoinRoot": 1,
+  "Algebra": 10,
+  "Array": 236,
+  "BinaryTree": 5,
+  "CharP": 55,
+  "Field": 52,
+  "Finset": 34,
+  "Group": 2,
+  "Int": 2,
+  "Irreducible": 2,
+  "IsCoprime": 1,
+  "Lagrange.interpolate": 3,
+  "LinearIndependent": 6,
+  "List": 357,
+  "Matrix": 6,
+  "MeasurableSpace": 2,
+  "Module": 3,
+  "Module.Basis": 1,
+  "Multiset": 7,
+  "MvPolynomial": 20,
+  "Nat": 390,
+  "Polynomial": 88,
+  "Polynomial.eval": 10,
+  "Polynomial.roots": 2,
+  "Real": 1,
+  "Ring": 2,
+  "Set": 12,
+  "Std.HashMap": 4,
+  "frobenius": 1,
+  "orderOf": 1,
+  "ringChar": 3
+ },
+ "ci": "FAILURE"
+}

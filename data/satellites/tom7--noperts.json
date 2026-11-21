@@ -1,0 +1,489 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "tom7/noperts",
+ "slug": "tom7--noperts",
+ "rev": "d676b6e5c4f92f641c0774b53a8e417fc8a2410e",
+ "date": "2026-11-15T15:40:43Z",
+ "stable": "114d3fc47e32beaa2958463ef17a04e508f2775794b6308b5744022c6ae07f11",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Noperts",
+  "excerpt": null
+ },
+ "lean_files": 560,
+ "admitted": true,
+ "folder": "proof",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Noperts",
+   "src": "."
+  },
+  {
+   "name": "SeptopertClassic",
+   "src": "."
+  },
+  {
+   "name": "SeptopertM18",
+   "src": "."
+  },
+  {
+   "name": "Minimality",
+   "src": "."
+  },
+  {
+   "name": "SeptopertM12",
+   "src": "."
+  },
+  {
+   "name": "Septopert",
+   "src": "."
+  },
+  {
+   "name": "SeptopertShell",
+   "src": "."
+  },
+  {
+   "name": "SeptopertShellNative",
+   "src": "."
+  },
+  {
+   "name": "ProofOfMainTheorem",
+   "src": "."
+  },
+  {
+   "name": "MinimalityExtra",
+   "src": "."
+  },
+  {
+   "name": "ProofOfMinimalityExtra",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  },
+  {
+   "name": "DeltoidalHexecontahedron",
+   "src": "."
+  },
+  {
+   "name": "PentagonalHexecontahedron",
+   "src": "."
+  },
+  {
+   "name": "SnubCube",
+   "src": "."
+  },
+  {
+   "name": "SnubDodecahedron",
+   "src": "."
+  },
+  {
+   "name": "Nopert231",
+   "src": "."
+  },
+  {
+   "name": "SeptopertFamily",
+   "src": "."
+  },
+  {
+   "name": "ChippedM18",
+   "src": "."
+  }
+ ],
+ "library_files": 525,
+ "capped": false,
+ "declarations": 22190,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 96,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Basic",
+   "file": "proof/Basic.lean"
+  },
+  {
+   "name": "Bounding",
+   "file": "proof/Bounding.lean"
+  },
+  {
+   "name": "Cayley",
+   "file": "proof/Cayley.lean"
+  },
+  {
+   "name": "ChippedM18",
+   "file": "proof/ChippedM18.lean"
+  },
+  {
+   "name": "ConvertPose",
+   "file": "proof/ConvertPose.lean"
+  },
+  {
+   "name": "DeltoidalHexecontahedron",
+   "file": "proof/DeltoidalHexecontahedron.lean"
+  },
+  {
+   "name": "EuclideanSpaceNotation",
+   "file": "proof/EuclideanSpaceNotation.lean"
+  },
+  {
+   "name": "Global",
+   "file": "proof/Global.lean"
+  },
+  {
+   "name": "MainTheorem",
+   "file": "proof/MainTheorem.lean"
+  },
+  {
+   "name": "MatrixPose",
+   "file": "proof/MatrixPose.lean"
+  },
+  {
+   "name": "Minimality",
+   "file": "proof/Minimality.lean"
+  },
+  {
+   "name": "MinimalityExtra",
+   "file": "proof/MinimalityExtra.lean"
+  },
+  {
+   "name": "Nopert",
+   "file": "proof/Nopert.lean"
+  },
+  {
+   "name": "Nopert231",
+   "file": "proof/Nopert231.lean"
+  },
+  {
+   "name": "ParallelBool",
+   "file": "proof/ParallelBool.lean"
+  },
+  {
+   "name": "PentagonalHexecontahedron",
+   "file": "proof/PentagonalHexecontahedron.lean"
+  },
+  {
+   "name": "PointSym",
+   "file": "proof/PointSym.lean"
+  },
+  {
+   "name": "Pose",
+   "file": "proof/Pose.lean"
+  },
+  {
+   "name": "PoseClasses",
+   "file": "proof/PoseClasses.lean"
+  },
+  {
+   "name": "PoseInterval",
+   "file": "proof/PoseInterval.lean"
+  },
+  {
+   "name": "PoseParam",
+   "file": "proof/PoseParam.lean"
+  },
+  {
+   "name": "ProofOfMainTheorem",
+   "file": "proof/ProofOfMainTheorem.lean"
+  },
+  {
+   "name": "ProofOfMinimalityExtra",
+   "file": "proof/ProofOfMinimalityExtra.lean"
+  },
+  {
+   "name": "RealMod",
+   "file": "proof/RealMod.lean"
+  },
+  {
+   "name": "Septopert",
+   "file": "proof/Septopert.lean"
+  },
+  {
+   "name": "SeptopertClassic",
+   "file": "proof/SeptopertClassic.lean"
+  },
+  {
+   "name": "SeptopertFamily",
+   "file": "proof/SeptopertFamily.lean"
+  },
+  {
+   "name": "SeptopertM12",
+   "file": "proof/SeptopertM12.lean"
+  },
+  {
+   "name": "SeptopertM18",
+   "file": "proof/SeptopertM18.lean"
+  },
+  {
+   "name": "SeptopertShell",
+   "file": "proof/SeptopertShell.lean"
+  },
+  {
+   "name": "SeptopertShellNative",
+   "file": "proof/SeptopertShellNative.lean"
+  },
+  {
+   "name": "SnubCube",
+   "file": "proof/SnubCube.lean"
+  },
+  {
+   "name": "SnubDodecahedron",
+   "file": "proof/SnubDodecahedron.lean"
+  },
+  {
+   "name": "Util",
+   "file": "proof/Util.lean"
+  }
+ ],
+ "root_closure_files": 479,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "main",
+ "headline_count": 129,
+ "headlines": [
+  {
+   "name": "DeltoidalHexecontahedron.DH.kv_mcGenK",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 92,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "g"
+   ]
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.kv_mcK",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 99,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "g"
+   ]
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.eq_of_keq",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 110,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "h"
+   ]
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.val_dotK",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 120,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.kv_frameApplyK",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 132,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.frameCheck_eq",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 142,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.frameMat_orthogonal",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 144,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Matrix.orthogonalGroup"
+   ]
+  },
+  {
+   "name": "DeltoidalHexecontahedron.DH.mem_mcIndices",
+   "module": "DeltoidalHexecontahedron.Statement",
+   "file": "proof/DeltoidalHexecontahedron/Statement.lean",
+   "line": 161,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "g"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.CharP.Defs": 1,
+  "Mathlib.Algebra.Lie.OfAssociative": 4,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.Ring.Star": 3,
+  "Mathlib.Algebra.Order.Round": 1,
+  "Mathlib.Algebra.Order.Star.Int": 3,
+  "Mathlib.Algebra.Order.Star.Real": 2,
+  "Mathlib.Analysis.Calculus.ContDiff.WithLp": 2,
+  "Mathlib.Analysis.Calculus.Deriv.Add": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Inv": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Prod": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.WithLp": 3,
+  "Mathlib.Analysis.Calculus.LineDeriv.Basic": 1,
+  "Mathlib.Analysis.Calculus.Taylor": 4,
+  "Mathlib.Analysis.Convex.Caratheodory": 1,
+  "Mathlib.Analysis.Convex.Extreme": 1,
+  "Mathlib.Analysis.Convex.Intrinsic": 2,
+  "Mathlib.Analysis.Convex.KreinMilman": 1,
+  "Mathlib.Analysis.Convex.Radon": 1,
+  "Mathlib.Analysis.Convex.Topology": 1,
+  "Mathlib.Analysis.InnerProductSpace.Adjoint": 1,
+  "Mathlib.Analysis.InnerProductSpace.Basic": 1,
+  "Mathlib.Analysis.InnerProductSpace.Calculus": 6,
+  "Mathlib.Analysis.InnerProductSpace.Dual": 5,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 9,
+  "Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional": 2,
+  "Mathlib.Analysis.LocallyConvex.Separation": 1,
+  "Mathlib.Analysis.Normed.Affine.AddTorsorBases": 1,
+  "Mathlib.Analysis.RCLike.Basic": 3,
+  "Mathlib.Analysis.Real.Pi.Bounds": 4,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds": 4,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv": 5,
+  "Mathlib.Basic.Real.Basic": 1,
+  "Mathlib.Data.Erased": 1,
+  "Mathlib.Data.Fin.VecNotation": 5,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.Lattice": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Fintype.Sigma": 1,
+  "Mathlib.Data.Matrix.Mul": 1,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Nat.Choose.Sum": 1,
+  "Mathlib.Data.Rat.Cast.Order": 2,
+  "Mathlib.Data.Rat.Defs": 4,
+  "Mathlib.Data.Set.Operations": 1,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.Geometry.Euclidean.Angle.Unoriented.CrossProduct": 1,
+  "Mathlib.GroupTheory.CosetCover": 1,
+  "Mathlib.GroupTheory.Perm.Fin": 1,
+  "Mathlib.LinearAlgebra.AffineSpace.Dimension": 1,
+  "Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional": 4,
+  "Mathlib.LinearAlgebra.CrossProduct": 1,
+  "Mathlib.LinearAlgebra.LinearIndependent.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": 2,
+  "Mathlib.LinearAlgebra.Matrix.PosDef": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv": 1,
+  "Mathlib.LinearAlgebra.Trace": 4,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 1,
+  "Mathlib.Order.Interval.Basic": 1,
+  "Mathlib.Tactic": 2,
+  "Mathlib.Tactic.DeriveFintype": 2,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.LinearCombination": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Topology.Algebra.Polynomial": 2,
+  "Mathlib.Topology.Connected.PathConnected": 1,
+  "Mathlib.Topology.Order.IntermediateValue": 2,
+  "Mathlib.Topology.Sequences": 1
+ },
+ "import_roots": {
+  "Mathlib": 98,
+  "Std": 1
+ },
+ "uses": {
+  "AffineSubspace": 1,
+  "Algebra": 4,
+  "Array": 106,
+  "ContDiff": 5,
+  "Continuous": 38,
+  "ContinuousLinearMap": 1,
+  "ContinuousSMul": 1,
+  "Convex": 22,
+  "Convex.radon_partition": 1,
+  "Differentiable": 6,
+  "DifferentiableOn": 1,
+  "Equiv.Perm": 2,
+  "Equiv.Perm.sign": 1,
+  "Field": 3,
+  "Filter": 57,
+  "Filter.Tendsto": 12,
+  "FiniteDimensional": 3,
+  "Finset": 151,
+  "HasDerivAt": 6,
+  "HasFDerivAt": 4,
+  "HasFDerivAt.comp": 1,
+  "Homeomorph": 1,
+  "InnerProductSpace": 4,
+  "InnerProductSpace.toDual": 7,
+  "Int": 14,
+  "IsCompact": 9,
+  "LinearIndependent": 5,
+  "LinearMap.BilinForm": 2,
+  "LinearMap.ker": 3,
+  "List": 111,
+  "Matrix": 198,
+  "Matrix.det": 4,
+  "Matrix.orthogonalGroup": 14,
+  "Matrix.specialOrthogonalGroup": 27,
+  "Metric.ball": 4,
+  "Metric.isOpen_iff": 1,
+  "MetricSpace": 2,
+  "Module": 6,
+  "Module.Basis": 1,
+  "Module.Dual": 1,
+  "Nat": 47,
+  "NormedSpace": 6,
+  "Rat": 1,
+  "Real": 25,
+  "Real.sin": 39,
+  "Set": 139,
+  "Set.extremePoints": 2,
+  "Std.HashMap": 3,
+  "Submodule.span": 5,
+  "Subspace": 2,
+  "TopologicalSpace": 6,
+  "add_pow": 5,
+  "affineSpan": 6,
+  "closure": 18,
+  "closure_convexHull_extremePoints": 2,
+  "convexHull": 92,
+  "crossProduct": 3,
+  "exists_norm_eq_iInf_of_complete_convex": 1,
+  "fderiv": 8,
+  "intermediate_value_Icc": 2,
+  "iteratedDeriv": 1,
+  "norm_add_le": 14,
+  "taylor_mean_remainder_lagrange": 1,
+  "triple_product_eq_det": 2
+ },
+ "ci": null
+}

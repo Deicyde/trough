@@ -95,6 +95,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its declarations with their docstrings and Lean statements, read from the source text without Lean; `data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt lists. From [leanprover-community/physlib at 8c87bdfb](https://github.com/leanprover-community/physlib/tree/8c87bdfb015de47e82da811567aaa7a2a05353f4), Apache-2.0.
 - `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in GitHub Actions.
 
+## Satellite projects
+
+- `data/satellites/<slug>.json`: for each of the 255 projects in `data/satellites/projects.toml`, read at the commit the file records without Lean: its Lake requirements, the Mathlib modules it imports, the Mathlib concepts its files name, its headline declarations, and its README's opening where its license file is Apache-2.0, MIT, MIT-0, BSD-2-Clause, BSD-3-Clause, CC0-1.0 or CC-BY-4.0. Placements set by hand are in `data/satellites/overrides.toml`.
+
 ## Libraries
 
 ### Core library

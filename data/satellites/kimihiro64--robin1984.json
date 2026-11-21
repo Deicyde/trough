@@ -1,0 +1,163 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "kimihiro64/Robin1984",
+ "slug": "kimihiro64--robin1984",
+ "rev": "acab1a31f31e0499518a4416b63281e0b4838f9c",
+ "date": "2026-09-13T08:34:41Z",
+ "stable": "f9aaf08ffddb1d81df40e6a93555047c407bb305288b08b05fb48a0844bbfe47",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Robin1984",
+  "excerpt": "Robin1984 is a Lean 4 formalization of Guy Robin's 1984 criterion for the Riemann hypothesis."
+ },
+ "lean_files": 533,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.1",
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "requirements": [
+  {
+   "name": "leancert",
+   "url": "https://github.com/alerad/leancert.git",
+   "rev": "621a43d7cf21f87872392a01e874f2f1dbddc926"
+  },
+  {
+   "name": "PrimeNumberTheoremAnd",
+   "url": "https://github.com/kimihiro64/PrimeNumberTheoremAnd.git",
+   "rev": "f8f58c749d6cde8a641348fcd5e4702993651cd6"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Robin1984",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 170,
+ "capped": false,
+ "declarations": 1664,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Robin1984",
+   "file": "Robin1984.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "Solution.lean"
+  }
+ ],
+ "root_closure_files": 170,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 1,
+  "Mathlib.Analysis.Complex.Schwarz": 1,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 1,
+  "Mathlib.Analysis.MellinInversion": 1,
+  "Mathlib.Analysis.PSeries": 1,
+  "Mathlib.Analysis.Real.Pi.Bounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.FrullaniIntegral": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.MeasureTheory.Function.Floor": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 1,
+  "Mathlib.MeasureTheory.Integral.Prod": 1,
+  "Mathlib.NumberTheory.ArithmeticFunction.Misc": 3,
+  "Mathlib.NumberTheory.Chebyshev": 7,
+  "Mathlib.NumberTheory.Harmonic.Bounds": 3,
+  "Mathlib.NumberTheory.Harmonic.Defs": 1,
+  "Mathlib.NumberTheory.Harmonic.EulerMascheroni": 6,
+  "Mathlib.NumberTheory.Harmonic.ZetaAsymp": 1,
+  "Mathlib.NumberTheory.LSeries.RiemannZeta": 3,
+  "Mathlib.NumberTheory.LSeries.SumCoeff": 1,
+  "Mathlib.NumberTheory.PrimeCounting": 2,
+  "Mathlib.Probability.Moments.Basic": 1,
+  "Mathlib.Probability.Moments.IntegrableExpMul": 1,
+  "Mathlib.Probability.Moments.MGFAnalytic": 1,
+  "Mathlib.Tactic.NormNum.GCD": 1,
+  "Mathlib.Tactic.NormNum.Parity": 1,
+  "Mathlib.Tactic.NormNum.Prime": 1,
+  "Mathlib.Tactic.Positivity": 1
+ },
+ "import_roots": {
+  "Mathlib": 36,
+  "PrimeNumberTheoremAnd": 5
+ },
+ "uses": {
+  "AnalyticAt": 10,
+  "CompleteSpace": 1,
+  "Complex": 32,
+  "Complex.exp": 3,
+  "Continuous": 6,
+  "ConvexOn": 1,
+  "Differentiable": 7,
+  "DifferentiableOn": 6,
+  "Filter": 16,
+  "Filter.Tendsto": 13,
+  "Finset": 12,
+  "HasDerivAt": 10,
+  "Int": 8,
+  "IsCompact": 4,
+  "List": 48,
+  "Measurable": 11,
+  "MeasurableSet": 1,
+  "MeasurableSpace": 2,
+  "MeasureTheory.Integrable": 14,
+  "MeasureTheory.Measure": 6,
+  "MeasureTheory.ae": 9,
+  "MeasureTheory.integral": 28,
+  "MeasureTheory.integral_prod": 1,
+  "MeasureTheory.lintegral": 2,
+  "Metric.ball": 6,
+  "Module": 1,
+  "Nat": 83,
+  "NormedSpace": 1,
+  "Polynomial": 1,
+  "Polynomial.eval": 2,
+  "Rat": 15,
+  "Real": 99,
+  "Real.exp": 23,
+  "Real.log": 87,
+  "Set": 32,
+  "mellinInv_mellin_eq": 1,
+  "norm_add_le": 6,
+  "tendsto_of_tendsto_of_tendsto_of_le_of_le'": 1
+ },
+ "ci": "SUCCESS"
+}

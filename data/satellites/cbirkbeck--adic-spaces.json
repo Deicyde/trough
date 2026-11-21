@@ -1,0 +1,53 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "CBirkbeck/Adic-Spaces",
+ "slug": "cbirkbeck--adic-spaces",
+ "rev": "eaca38020241bc2b6b38af2f9eb9e970263949a5",
+ "date": "2026-06-16T20:03:40Z",
+ "stable": "28a2002bbe222803afacce2ec756f32e11585521ad5e464537229b01bbc8e0f4",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Adic spaces",
+  "excerpt": null
+ },
+ "lean_files": 270,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0-rc2",
+ "mathlib": "d90090f647cae4f4ad4da99c0ac8bab2ca8c34ab",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "«Adic spaces»",
+   "src": "."
+  }
+ ],
+ "library_files": 0,
+ "capped": false,
+ "declarations": 0,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {},
+ "uses": {},
+ "ci": "FAILURE"
+}

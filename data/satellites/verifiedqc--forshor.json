@@ -1,0 +1,346 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "VerifiedQC/ForShor",
+ "slug": "verifiedqc--forshor",
+ "rev": "d26da5ad6b52b5abce01a4b930379be420c940e7",
+ "date": "2026-11-11T20:51:11Z",
+ "stable": "33fe1f6e426f4379fe95bd954d5f5e2f260fb645b94980e6bb41e3d892edb18f",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "ForShor",
+  "excerpt": "A formal verification of **Shor's algorithm** in Lean 4 — including its **resource estimation**."
+ },
+ "lean_files": 615,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0-rc1",
+ "mathlib": "4dc43842a11f257ffba2a611c943a133a65cb4b2",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ForShor",
+   "src": "."
+  },
+  {
+   "name": "EmitTests",
+   "src": "."
+  },
+  {
+   "name": "Submission",
+   "src": "."
+  },
+  {
+   "name": "PolicySubmission",
+   "src": "."
+  },
+  {
+   "name": "PTPPolicySubmission",
+   "src": "."
+  },
+  {
+   "name": "PolicyTests",
+   "src": "."
+  },
+  {
+   "name": "PolicyNumeralsExact",
+   "src": "."
+  },
+  {
+   "name": "PolicyNumeralsBoardExact",
+   "src": "."
+  },
+  {
+   "name": "PolicyNumeralsBoardExactHeavy",
+   "src": "."
+  },
+  {
+   "name": "ExactWidthTests",
+   "src": "."
+  },
+  {
+   "name": "Balanced",
+   "src": "."
+  }
+ ],
+ "library_files": 354,
+ "capped": false,
+ "declarations": 6149,
+ "sorry_files": 1,
+ "axioms": 1,
+ "closure_files": 149,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "ForShor",
+   "file": "ForShor.lean"
+  },
+  {
+   "name": "ForShor.Emit.Tests",
+   "file": "ForShor/Emit/Tests.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsBoardExact",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsBoardExact.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsBoardExactHeavy",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsBoardExactHeavy.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.QubitCount.Proofs.PolicyNumeralsExact",
+   "file": "ForShor/ShorVerification/Implementation/QubitCount/Proofs/PolicyNumeralsExact.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Main",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Main.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Proofs.Checks",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Proofs/Checks.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Implementation.Reference.Balanced.Proofs.Fault",
+   "file": "ForShor/ShorVerification/Implementation/Reference/Balanced/Proofs/Fault.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.Check",
+   "file": "ForShor/ShorVerification/Submission/Check.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.ExactWidthTests",
+   "file": "ForShor/ShorVerification/Submission/ExactWidthTests.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PTPPolicyCheck",
+   "file": "ForShor/ShorVerification/Submission/PTPPolicyCheck.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PolicyCheck",
+   "file": "ForShor/ShorVerification/Submission/PolicyCheck.lean"
+  },
+  {
+   "name": "ForShor.ShorVerification.Submission.PolicyTests",
+   "file": "ForShor/ShorVerification/Submission/PolicyTests.lean"
+  }
+ ],
+ "root_closure_files": 329,
+ "root_closure_sorry": [
+  "ForShor/ShorVerification/Submission/Audit.lean"
+ ],
+ "root_closure_axioms": 1,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 11,
+ "headlines": [
+  {
+   "name": "Shor.shorGateCountBound_of_setup",
+   "module": "ForShor.ShorVerification.Implementation.Shor.Main",
+   "file": "ForShor/ShorVerification/Implementation/Shor/Main.lean",
+   "line": 59,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.exists_shorGateCountBound",
+   "module": "ForShor.ShorVerification.Implementation.Shor.Main",
+   "file": "ForShor/ShorVerification/Implementation/Shor/Main.lean",
+   "line": 92,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.Policy.shorGateCountBound",
+   "module": "ForShor.ShorVerification.Implementation.Shor.Main",
+   "file": "ForShor/ShorVerification/Implementation/Shor/Main.lean",
+   "line": 100,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.Shor_correct",
+   "module": "ForShor.ShorVerification.Implementation.Shor.Proofs.NaiveShor.Correctness",
+   "file": "ForShor/ShorVerification/Implementation/Shor/Proofs/NaiveShor/Correctness.lean",
+   "line": 44,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.submission_correct",
+   "module": "ForShor.ShorVerification.Submission.Correct",
+   "file": "ForShor/ShorVerification/Submission/Correct.lean",
+   "line": 82,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.policy_submission_correct",
+   "module": "ForShor.ShorVerification.Submission.Correct",
+   "file": "ForShor/ShorVerification/Submission/Correct.lean",
+   "line": 61,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Shor.exactSignedWidth_le_iff",
+   "module": "ForShor.ShorVerification.Implementation.PhaseProduct.Proofs.Compiler.ExactWidthBound",
+   "file": "ForShor/ShorVerification/Implementation/PhaseProduct/Proofs/Compiler/ExactWidthBound.lean",
+   "line": 260,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "E"
+   ]
+  },
+  {
+   "name": "Shor.nextSignedWidthBy_exact_le_scan",
+   "module": "ForShor.ShorVerification.Implementation.PhaseProduct.Proofs.Compiler.ExactWidthBound",
+   "file": "ForShor/ShorVerification/Implementation/PhaseProduct/Proofs/Compiler/ExactWidthBound.lean",
+   "line": 311,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Intervals": 2,
+  "Mathlib.Algebra.BigOperators.Module": 1,
+  "Mathlib.Algebra.ContinuedFractions.Computation.TerminatesIffRat": 1,
+  "Mathlib.Algebra.EuclideanDomain.Basic": 1,
+  "Mathlib.Algebra.Order.Field.GeomSum": 3,
+  "Mathlib.Algebra.Order.Floor.Semifield": 1,
+  "Mathlib.Algebra.Order.Floor.Semiring": 2,
+  "Mathlib.Algebra.Polynomial.BigOperators": 1,
+  "Mathlib.Algebra.Ring.GeomSum": 1,
+  "Mathlib.Analysis.Complex.Exponential": 2,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 5,
+  "Mathlib.Analysis.Complex.Trigonometric": 2,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 1,
+  "Mathlib.Analysis.InnerProductSpace.Basic": 6,
+  "Mathlib.Analysis.InnerProductSpace.LinearMap": 1,
+  "Mathlib.Analysis.Normed.Group.Tannery": 3,
+  "Mathlib.Analysis.PSeries": 3,
+  "Mathlib.Analysis.Real.Pi.Bounds": 2,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Circle": 3,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exponential": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Deriv": 3,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral": 3,
+  "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals": 3,
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Log.Base": 5,
+  "Mathlib.Analysis.SpecialFunctions.Log.InvLog": 3,
+  "Mathlib.Analysis.SpecialFunctions.Log.Sum": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 14,
+  "Mathlib.Analysis.SpecialFunctions.Sqrt": 4,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 15,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds": 4,
+  "Mathlib.Basic.Complex.Basic": 7,
+  "Mathlib.Basic.Real.Basic": 13,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Finset.Basic": 1,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Int.Basic": 1,
+  "Mathlib.Data.Int.GCD": 2,
+  "Mathlib.Data.List.Infix": 1,
+  "Mathlib.Data.Matrix.Basic": 1,
+  "Mathlib.Data.Nat.BitIndices": 1,
+  "Mathlib.Data.Nat.Bitwise": 6,
+  "Mathlib.Data.Nat.GCD.Basic": 1,
+  "Mathlib.Data.Nat.Log": 1,
+  "Mathlib.Data.Nat.Prime.Basic": 1,
+  "Mathlib.Data.Nat.Totient": 4,
+  "Mathlib.Data.Rat.Cast.Defs": 1,
+  "Mathlib.Data.ZMod.Basic": 3,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.GroupTheory.SpecificGroups.Cyclic": 1,
+  "Mathlib.LinearAlgebra.Finsupp.LinearCombination": 1,
+  "Mathlib.LinearAlgebra.Matrix.Kronecker": 1,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 4,
+  "Mathlib.LinearAlgebra.Matrix.Notation": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLin": 1,
+  "Mathlib.LinearAlgebra.UnitaryGroup": 2,
+  "Mathlib.LinearAlgebra.Vandermonde": 3,
+  "Mathlib.MeasureTheory.Function.Floor": 1,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 3,
+  "Mathlib.NumberTheory.Chebyshev": 3,
+  "Mathlib.NumberTheory.DiophantineApproximation.ContinuedFractions": 1,
+  "Mathlib.NumberTheory.EulerProduct.DirichletLSeries": 3,
+  "Mathlib.NumberTheory.Harmonic.GammaDeriv": 3,
+  "Mathlib.NumberTheory.Harmonic.ZetaAsymp": 3,
+  "Mathlib.NumberTheory.LSeries.Dirichlet": 3,
+  "Mathlib.NumberTheory.LSeries.PrimesInAP": 3,
+  "Mathlib.NumberTheory.PrimeCounting": 3,
+  "Mathlib.NumberTheory.SmoothNumbers": 4,
+  "Mathlib.NumberTheory.SumPrimeReciprocals": 3,
+  "Mathlib.Order.Interval.Finset.Basic": 1,
+  "Mathlib.RingTheory.RootsOfUnity.Complex": 1,
+  "Mathlib.RingTheory.ZMod.UnitsCyclic": 1,
+  "Mathlib.Tactic": 13,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.NormNum.Prime": 3,
+  "Mathlib.Topology.Instances.Real.Lemmas": 3
+ },
+ "import_roots": {
+  "Lean": 6,
+  "Mathlib": 55
+ },
+ "uses": {
+  "ArithmeticFunction": 3,
+  "Array": 6,
+  "Complex": 1,
+  "Complex.exp": 38,
+  "Continuous": 1,
+  "Equiv.Perm": 4,
+  "Filter": 4,
+  "Filter.Tendsto": 4,
+  "Finset": 45,
+  "Group": 1,
+  "HasDerivAt": 1,
+  "HasSum": 1,
+  "Ideal": 1,
+  "InnerProductSpace": 2,
+  "Int": 7,
+  "Int.ModEq": 2,
+  "LinearMap.mkContinuous": 1,
+  "List": 181,
+  "Matrix": 14,
+  "Matrix.det": 1,
+  "Matrix.mulVec_cramer": 2,
+  "Matrix.unitaryGroup": 4,
+  "Measurable": 3,
+  "MeasurableSpace": 1,
+  "Module": 1,
+  "Nat": 21,
+  "Nat.totient": 6,
+  "Polynomial": 1,
+  "Rat": 1,
+  "Real": 3,
+  "Real.exp": 3,
+  "Real.log": 25,
+  "Real.rpow": 13,
+  "Real.sin": 3,
+  "Set": 7,
+  "Std.HashMap": 2,
+  "Submodule.span": 6,
+  "ZMod.unitOfCoprime": 7,
+  "norm_add_le": 4,
+  "orderOf": 8
+ },
+ "ci": null
+}

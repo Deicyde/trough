@@ -1,0 +1,93 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "eohjelle/feit-thompson-odd-order-theorem",
+ "slug": "eohjelle--feit-thompson-odd-order-theorem",
+ "rev": "9cd5890db35dbaf88c62f414bc9f37bf17da1b16",
+ "date": "2026-07-21T18:19:37Z",
+ "stable": "1c01cb8327b00225c8c72c47336f58f057cdaa53118a479430c755912546811a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Lean Eval finite-group batch submission",
+  "excerpt": null
+ },
+ "lean_files": 998,
+ "admitted": true,
+ "folder": "submissions/baer_suzuki",
+ "toolchain": "v4.32.0-rc1",
+ "mathlib": "360da6fa66c1273b76b6b2d8c5666fd5ac2e3b56",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ChallengeDeps",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "Submission",
+   "src": "."
+  }
+ ],
+ "library_files": 32,
+ "capped": false,
+ "declarations": 114,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "submissions/baer_suzuki/Challenge.lean"
+  },
+  {
+   "name": "ChallengeDeps",
+   "file": "submissions/baer_suzuki/ChallengeDeps.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "submissions/baer_suzuki/Solution.lean"
+  },
+  {
+   "name": "Submission",
+   "file": "submissions/baer_suzuki/Submission.lean"
+  }
+ ],
+ "root_closure_files": 32,
+ "root_closure_sorry": [
+  "submissions/baer_suzuki/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.GroupTheory.Nilpotent": 1
+ },
+ "import_roots": {
+  "Mathlib": 5
+ },
+ "uses": {
+  "Field": 1,
+  "Group": 32,
+  "Group.IsNilpotent": 1,
+  "Set": 21,
+  "Subgroup": 28,
+  "Subgroup.closure": 11
+ },
+ "ci": null
+}

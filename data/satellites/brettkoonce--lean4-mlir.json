@@ -1,0 +1,1281 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "brettkoonce/lean4-mlir",
+ "slug": "brettkoonce--lean4-mlir",
+ "rev": "26820779f0d87e88bfae89a81c3063aa58d050f1",
+ "date": "2026-11-17T22:09:29Z",
+ "stable": "bd0d8f65dfbb3582b4d4497a8c74b2fba783239b381dd43504e3c0ba2b52fb5c",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "BSD-3-Clause",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026, Brett Koonce"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Lean 4 → MLIR → GPU",
+  "excerpt": "**The book: [Verified Deep Learning with Lean 4](https://lean.brettkoonce.com/blueprint/)** — the interactive proof blueprint *is* the book: every theorem clickable, from the `pdiv` primitives to the whole-network backward passes."
+ },
+ "lean_files": 656,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0",
+ "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "LeanMlir",
+   "src": "."
+  },
+  {
+   "name": "Proofs",
+   "src": "."
+  },
+  {
+   "name": "Certs",
+   "src": "."
+  },
+  {
+   "name": "CertsHeavy",
+   "src": "."
+  },
+  {
+   "name": "ProofsMinimal",
+   "src": "."
+  },
+  {
+   "name": "Reference",
+   "src": "."
+  },
+  {
+   "name": "Apps",
+   "src": "."
+  },
+  {
+   "name": "TestSupport",
+   "src": "."
+  },
+  {
+   "name": "ComparatorTests",
+   "src": "tests/comparator"
+  }
+ ],
+ "library_files": 446,
+ "capped": false,
+ "declarations": 15399,
+ "sorry_files": 3,
+ "axioms": 0,
+ "closure_files": 42,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Challenge",
+   "file": "tests/comparator/Challenge.lean"
+  },
+  {
+   "name": "ChallengeArch",
+   "file": "tests/comparator/ChallengeArch.lean"
+  },
+  {
+   "name": "ChallengeTier",
+   "file": "tests/comparator/ChallengeTier.lean"
+  },
+  {
+   "name": "LeanMlir",
+   "file": "LeanMlir.lean"
+  },
+  {
+   "name": "LeanMlir.Cam",
+   "file": "LeanMlir/Cam.lean"
+  },
+  {
+   "name": "LeanMlir.Ddpm",
+   "file": "LeanMlir/Ddpm.lean"
+  },
+  {
+   "name": "LeanMlir.F32Array",
+   "file": "LeanMlir/F32Array.lean"
+  },
+  {
+   "name": "LeanMlir.IreeRuntime",
+   "file": "LeanMlir/IreeRuntime.lean"
+  },
+  {
+   "name": "LeanMlir.MlirCodegen",
+   "file": "LeanMlir/MlirCodegen.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.Attention",
+   "file": "LeanMlir/Proofs/Architectures/Attention.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.CNN",
+   "file": "LeanMlir/Proofs/Architectures/CNN.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.ChannelLNBack",
+   "file": "LeanMlir/Proofs/Architectures/ChannelLNBack.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.ConvBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Architectures/ConvBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.ConvGrad",
+   "file": "LeanMlir/Proofs/Architectures/ConvGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.Depthwise",
+   "file": "LeanMlir/Proofs/Architectures/Depthwise.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.DepthwiseBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Architectures/DepthwiseBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.EvenKernelConvBack",
+   "file": "LeanMlir/Proofs/Architectures/EvenKernelConvBack.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.GeluErfGaussian",
+   "file": "LeanMlir/Proofs/Architectures/GeluErfGaussian.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.PerChannelBN",
+   "file": "LeanMlir/Proofs/Architectures/PerChannelBN.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.PerChannelBNGrad",
+   "file": "LeanMlir/Proofs/Architectures/PerChannelBNGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.StridedConv",
+   "file": "LeanMlir/Proofs/Architectures/StridedConv.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Architectures.TokenParamGrad",
+   "file": "LeanMlir/Proofs/Architectures/TokenParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.CrownBound",
+   "file": "LeanMlir/Proofs/Certificates/CrownBound.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.IbpConvScorecard.Basic",
+   "file": "LeanMlir/Proofs/Certificates/IbpConvScorecard/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.IntervalBound",
+   "file": "LeanMlir/Proofs/Certificates/IntervalBound.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.IntervalBoundConv.Basic",
+   "file": "LeanMlir/Proofs/Certificates/IntervalBoundConv/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.Basic",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.Float",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/Float.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.Instance",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/Instance.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.PairSDP",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/PairSDP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.Scorecard",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/Scorecard.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardCrown",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardCrown.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardCrownUncon",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardCrownUncon.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardFull",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardFull.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardIBP",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardIBP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardIBPUncon",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardIBPUncon.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardSDP",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardSDP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.LipschitzCert.ScorecardSDPUncon",
+   "file": "LeanMlir/Proofs/Certificates/LipschitzCert/ScorecardSDPUncon.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.CP",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/CP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.CPScorecard",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/CPScorecard.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.DecScorecard",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/DecScorecard.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.Gaussian",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/Gaussian.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.MC",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/MC.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.NetSemantics",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/NetSemantics.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.NetWitness",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/NetWitness.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Certificates.Smoothing.PhiBounds",
+   "file": "LeanMlir/Proofs/Certificates/Smoothing/PhiBounds.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ChapterArtifacts",
+   "file": "LeanMlir/Proofs/Codegen/ChapterArtifacts.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.CnnArtifacts",
+   "file": "LeanMlir/Proofs/Codegen/CnnArtifacts.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ConvNeXtRender",
+   "file": "LeanMlir/Proofs/Codegen/ConvNeXtRender.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ConvNeXtRenderB",
+   "file": "LeanMlir/Proofs/Codegen/ConvNeXtRenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.EfficientNetRender.Basic",
+   "file": "LeanMlir/Proofs/Codegen/EfficientNetRender/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.FwdGraphTextTies",
+   "file": "LeanMlir/Proofs/Codegen/FwdGraphTextTies.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.LambTriple",
+   "file": "LeanMlir/Proofs/Codegen/LambTriple.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.MlpArtifacts",
+   "file": "LeanMlir/Proofs/Codegen/MlpArtifacts.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.MobileNetV2RenderB",
+   "file": "LeanMlir/Proofs/Codegen/MobileNetV2RenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.MobileNetV4RenderB",
+   "file": "LeanMlir/Proofs/Codegen/MobileNetV4RenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ResNet34RenderB",
+   "file": "LeanMlir/Proofs/Codegen/ResNet34RenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ResNet50RenderB",
+   "file": "LeanMlir/Proofs/Codegen/ResNet50RenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.StableHLO.Basic",
+   "file": "LeanMlir/Proofs/Codegen/StableHLO/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.StableHLO.Parse",
+   "file": "LeanMlir/Proofs/Codegen/StableHLO/Parse.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.StableHLO.Pretty",
+   "file": "LeanMlir/Proofs/Codegen/StableHLO/Pretty.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ViTRender",
+   "file": "LeanMlir/Proofs/Codegen/ViTRender.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Codegen.ViTRenderB",
+   "file": "LeanMlir/Proofs/Codegen/ViTRenderB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.Bf16Fold",
+   "file": "LeanMlir/Proofs/Float/Bf16Fold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.Binary32Instance",
+   "file": "LeanMlir/Proofs/Float/Binary32Instance.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.BnFloatBridge",
+   "file": "LeanMlir/Proofs/Float/BnFloatBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.BnInputBridge",
+   "file": "LeanMlir/Proofs/Float/BnInputBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.ConvMixedComposeBridge",
+   "file": "LeanMlir/Proofs/Float/ConvMixedComposeBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.DepthwiseMixedFloatBridge",
+   "file": "LeanMlir/Proofs/Float/DepthwiseMixedFloatBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.E4M3Fold",
+   "file": "LeanMlir/Proofs/Float/E4M3Fold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.FloatBridge",
+   "file": "LeanMlir/Proofs/Float/FloatBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.FloatComposeBridge",
+   "file": "LeanMlir/Proofs/Float/FloatComposeBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Float.ResNet34FloatBridge",
+   "file": "LeanMlir/Proofs/Float/ResNet34FloatBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.BackwardMaps",
+   "file": "LeanMlir/Proofs/Foundation/BackwardMaps.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.BatchMapVJPAt",
+   "file": "LeanMlir/Proofs/Foundation/BatchMapVJPAt.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.Batched.PoolSelB",
+   "file": "LeanMlir/Proofs/Foundation/Batched/PoolSelB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.BceLossCot",
+   "file": "LeanMlir/Proofs/Foundation/BceLossCot.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.Bf16Erasure",
+   "file": "LeanMlir/Proofs/Foundation/Bf16Erasure.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.Bf16GradNodes",
+   "file": "LeanMlir/Proofs/Foundation/Bf16GradNodes.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.CertifiedChain",
+   "file": "LeanMlir/Proofs/Foundation/CertifiedChain.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.DataParallel.Basic",
+   "file": "LeanMlir/Proofs/Foundation/DataParallel/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.DataParallel.Node",
+   "file": "LeanMlir/Proofs/Foundation/DataParallel/Node.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.DataParallel.Sync",
+   "file": "LeanMlir/Proofs/Foundation/DataParallel/Sync.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.DataParallel.SyncBf16",
+   "file": "LeanMlir/Proofs/Foundation/DataParallel/SyncBf16.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.DataParallel.SyncKit",
+   "file": "LeanMlir/Proofs/Foundation/DataParallel/SyncKit.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.GradNodesB",
+   "file": "LeanMlir/Proofs/Foundation/GradNodesB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.IR",
+   "file": "LeanMlir/Proofs/Foundation/IR.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.ListDot",
+   "file": "LeanMlir/Proofs/Foundation/ListDot.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.MatBridge",
+   "file": "LeanMlir/Proofs/Foundation/MatBridge.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.Muon.Geometry",
+   "file": "LeanMlir/Proofs/Foundation/Muon/Geometry.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.Muon.NewtonSchulz",
+   "file": "LeanMlir/Proofs/Foundation/Muon/NewtonSchulz.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.PairTile",
+   "file": "LeanMlir/Proofs/Foundation/PairTile.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.ParamGrad",
+   "file": "LeanMlir/Proofs/Foundation/ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.SgdNodes",
+   "file": "LeanMlir/Proofs/Foundation/SgdNodes.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.SmoothedLossCot",
+   "file": "LeanMlir/Proofs/Foundation/SmoothedLossCot.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Foundation.UpstreamDraft",
+   "file": "LeanMlir/Proofs/Foundation/UpstreamDraft.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXt",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXt.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtBackB0",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtBackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtBackChains",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtBackChains.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtDropVJP",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtDropVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtFold",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtFoldG",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtFoldG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtFoldGB",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtFoldGB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtFullT",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtFullT.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtParamGrad",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtStepTie",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtStepTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtStepTieGB",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtStepTieGB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtWholeBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtWholeBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ConvNeXt.ConvNeXtWholeBackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/ConvNeXt/ConvNeXtWholeBackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNet",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNet.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetBackB0",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetBackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetBackChains",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetBackChains.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetBackNet",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetBackNet.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFold",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFullB0",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFullB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFullB0Drop",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFullB0Drop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFullB0DropVJP",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFullB0DropVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFullB0Eval",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFullB0Eval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetFullWholeBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetFullWholeBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetParamGrad",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetStagesPCEval",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetStagesPCEval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetStepTie",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetStepTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetStepTieG",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetStepTieG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetSyncB",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetSyncB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetSyncStepTieG",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetSyncStepTieG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.EfficientNet.EfficientNetWholeBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/EfficientNet/EfficientNetWholeBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetBackChains",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetBackChains.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2BackB0",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2BackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullBDoVJP",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullBDoVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullBSeal",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullBSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullBVJP",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullBVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullPaper",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullPaper.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2FullPaperEval",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2FullPaperEval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2ParamGrad",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2StagesPC",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2StagesPC.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2StagesPCEval",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2StagesPCEval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2StepTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2StepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2SyncB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2SyncB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2SyncStepTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2SyncStepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV2WholeBackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV2WholeBackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4BackB0",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4BackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullBDrop",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullBDrop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullBDropVJP",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullBDropVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullBEval",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullBEval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullBSeal",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullBSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4FullBVJP",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4FullBVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4ParamGrad",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4StepTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4StepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4SyncB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4SyncB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4SyncBDrop",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4SyncBDrop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4SyncStepTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4SyncStepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.MobileNet.MobileNetV4WholeBackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/MobileNet/MobileNetV4WholeBackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34BackB0",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34BackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34BackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34BackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34FullB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34FullB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34FullBSeal",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34FullBSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34FullBVJP",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34FullBVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34ParamGrad",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34StepTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34StepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34SyncB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34SyncB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet34SyncStepTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet34SyncStepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50BackB0",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50BackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50FullB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50FullB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50FullBDrop",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50FullBDrop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50FullBSeal",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50FullBSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50FullBVJP",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50FullBVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50ParamGrad",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50StepTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50StepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50SyncB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50SyncB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50SyncBDrop",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50SyncBDrop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50SyncStepTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50SyncStepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNet50WholeBackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNet50WholeBackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNetBackChains",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNetBackChains.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ResNet.ResNetFullEval",
+   "file": "LeanMlir/Proofs/Nets/ResNet/ResNetFullEval.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BbnParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BbnParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BbnStepTieB",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BbnStepTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BbnWholeBackB",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BbnWholeBackB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BnParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BnParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BnStepTie",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BnStepTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8BnStepTieG",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8BnStepTieG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8ParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8ParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8StepTie",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8StepTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.Cifar8StepTieG",
+   "file": "LeanMlir/Proofs/Nets/Small/Cifar8StepTieG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CifarFold",
+   "file": "LeanMlir/Proofs/Nets/Small/CifarFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CifarParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/CifarParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CnnChainClose",
+   "file": "LeanMlir/Proofs/Nets/Small/CnnChainClose.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CnnFold",
+   "file": "LeanMlir/Proofs/Nets/Small/CnnFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CnnFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/CnnFoldB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.CnnParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/CnnParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.LinearFold",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.LinearFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFoldB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.LinearParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.LinearTrainStep",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearTrainStep.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MlpCanonical",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpCanonical.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MlpFold",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MlpFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpFoldB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MlpParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MlpTrainStep",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpTrainStep.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.MnistCNN",
+   "file": "LeanMlir/Proofs/Nets/Small/MnistCNN.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.Small.SmallParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/SmallParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTBackB0",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTBackB0.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTBackChains",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTBackChains.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTBackNet",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTBackNet.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTChainClose",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTChainClose.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTDataParallel",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTDataParallel.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTDepthK",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTDepthK.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTDropVJP",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTDropVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTFold",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTFold.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTFoldG",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTFoldG.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTFoldGB",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTFoldGB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTFwdDrop",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTFwdDrop.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTFwdGraph",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTFwdGraph.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTMhsaBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTMhsaBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTMultiHeadChain",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTMultiHeadChain.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTParamGrad",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTParamGrad.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTStepTie",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTStepTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTStepTieGB",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTStepTieGB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTVecLN",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTVecLN.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTVecLNBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTVecLNBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTWholeBackCertifiedTie",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTWholeBackCertifiedTie.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Nets.ViT.ViTWholeBackCertifiedTieB",
+   "file": "LeanMlir/Proofs/Nets/ViT/ViTWholeBackCertifiedTieB.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.SpecVJP",
+   "file": "LeanMlir/Proofs/SpecVJP.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.JacobianSeal",
+   "file": "LeanMlir/Proofs/Training/JacobianSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Optim.AdamStep",
+   "file": "LeanMlir/Proofs/Training/Optim/AdamStep.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Optim.SgdMomentumStep",
+   "file": "LeanMlir/Proofs/Training/Optim/SgdMomentumStep.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.Basic",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/Basic.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.Cifar",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/Cifar.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.Cnn",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/Cnn.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.CnnFloat",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/CnnFloat.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.Linear",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/Linear.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.Mlp",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/Mlp.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.SgdDescent.MlpBias",
+   "file": "LeanMlir/Proofs/Training/SgdDescent/MlpBias.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.CnnDescent",
+   "file": "LeanMlir/Proofs/Training/Trained/CnnDescent.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.CnnDescentConv1",
+   "file": "LeanMlir/Proofs/Training/Trained/CnnDescentConv1.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.CnnSeal",
+   "file": "LeanMlir/Proofs/Training/Trained/CnnSeal.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.CnnWitness",
+   "file": "LeanMlir/Proofs/Training/Trained/CnnWitness.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.LinearDescent",
+   "file": "LeanMlir/Proofs/Training/Trained/LinearDescent.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.MlpDescent",
+   "file": "LeanMlir/Proofs/Training/Trained/MlpDescent.lean"
+  },
+  {
+   "name": "LeanMlir.Proofs.Training.Trained.MlpWitness",
+   "file": "LeanMlir/Proofs/Training/Trained/MlpWitness.lean"
+  },
+  {
+   "name": "LeanMlir.ReferenceNets",
+   "file": "LeanMlir/ReferenceNets.lean"
+  },
+  {
+   "name": "LeanMlir.Spec",
+   "file": "LeanMlir/Spec.lean"
+  },
+  {
+   "name": "LeanMlir.SpecHelpers",
+   "file": "LeanMlir/SpecHelpers.lean"
+  },
+  {
+   "name": "LeanMlir.Train",
+   "file": "LeanMlir/Train.lean"
+  },
+  {
+   "name": "LeanMlir.Types",
+   "file": "LeanMlir/Types.lean"
+  },
+  {
+   "name": "Solution",
+   "file": "tests/comparator/Solution.lean"
+  },
+  {
+   "name": "SolutionArch",
+   "file": "tests/comparator/SolutionArch.lean"
+  },
+  {
+   "name": "SolutionTier",
+   "file": "tests/comparator/SolutionTier.lean"
+  },
+  {
+   "name": "tests.AxiomAudit",
+   "file": "tests/AxiomAudit.lean"
+  },
+  {
+   "name": "tests.ViTRender",
+   "file": "tests/ViTRender.lean"
+  }
+ ],
+ "root_closure_files": 343,
+ "root_closure_sorry": [
+  "tests/comparator/Challenge.lean",
+  "tests/comparator/ChallengeArch.lean",
+  "tests/comparator/ChallengeTier.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 150,
+ "headlines": [
+  {
+   "name": "Proofs.LinFold.poc_train_step_tail_certified",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFold",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFold.lean",
+   "line": 98,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFoldB.lin_train_step_tiedB",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFoldB.lean",
+   "line": 174,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFoldB.lin_weight_meanlossB",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFoldB.lean",
+   "line": 191,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "α"
+   ]
+  },
+  {
+   "name": "Proofs.LinFold.linear_net_lossGrad",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearParamGrad.lean",
+   "line": 39,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "g"
+   ]
+  },
+  {
+   "name": "Proofs.LinFold.linear_net_lossGrad_CE",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearParamGrad.lean",
+   "line": 46,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.mlpHasVJPAt_correct",
+   "module": "LeanMlir.Proofs.Foundation.MLP",
+   "file": "LeanMlir/Proofs/Foundation/MLP.lean",
+   "line": 398,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Proofs.mlpHasVJPAt",
+   "module": "LeanMlir.Proofs.Foundation.MLP",
+   "file": "LeanMlir/Proofs/Foundation/MLP.lean",
+   "line": 336,
+   "kind": "def",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Proofs.MlpFold.mlp_train_step_tied",
+   "module": "LeanMlir.Proofs.Nets.Small.MlpFold",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpFold.lean",
+   "line": 177,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 3,
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Defs": 2,
+  "Mathlib.Algebra.Order.Algebra": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.Star.Real": 3,
+  "Mathlib.Analysis.Calculus.ContDiff.Operations": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Comp": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Inv": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 2,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Slope": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Mul": 1,
+  "Mathlib.Analysis.InnerProductSpace.Basic": 1,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 2,
+  "Mathlib.Analysis.Matrix.PosDef": 1,
+  "Mathlib.Analysis.Normed.Field.Basic": 1,
+  "Mathlib.Analysis.RCLike.Basic": 1,
+  "Mathlib.Analysis.Real.Pi.Bounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Bernstein": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.NNReal": 2,
+  "Mathlib.Analysis.SpecialFunctions.Sigmoid": 1,
+  "Mathlib.Analysis.SpecialFunctions.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 186,
+  "Mathlib.Basic.Real.Basic": 3,
+  "Mathlib.Data.Fintype.Basic": 2,
+  "Mathlib.Data.Int.Log": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.Matrix.Mul": 2,
+  "Mathlib.Data.Rat.BigOperators": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.String.Defs": 1,
+  "Mathlib.Data.Sym.Sym2.Init": 1,
+  "Mathlib.Dynamics.FixedPoints.Topology": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Basic": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 1,
+  "Mathlib.Probability.CDF": 3,
+  "Mathlib.Probability.Distributions.Binomial": 1,
+  "Mathlib.Probability.Distributions.Gaussian.Multivariate": 4,
+  "Mathlib.Probability.Distributions.Gaussian.Real": 2,
+  "Mathlib.Probability.Moments.SubGaussian": 1,
+  "Mathlib.Tactic.Measurability.Init": 2,
+  "Mathlib.Tactic.NormNum.GCD": 1,
+  "Mathlib.Tactic.Positivity.Finset": 11,
+  "Mathlib.Topology.Instances.Matrix": 1,
+  "Mathlib.Topology.MetricSpace.Pseudo.Defs": 1,
+  "Mathlib.Topology.Metrizable.Uniformity": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 224,
+  "Std": 2
+ },
+ "uses": {
+  "Array": 49,
+  "BorelSpace": 1,
+  "Continuous": 30,
+  "Differentiable": 56,
+  "Filter": 7,
+  "Filter.Tendsto": 1,
+  "FiniteDimensional": 1,
+  "Finset": 41,
+  "HasDerivAt": 7,
+  "HasFDerivAt": 7,
+  "InnerProductSpace": 2,
+  "Int": 6,
+  "LipschitzWith": 1,
+  "List": 169,
+  "Matrix": 6,
+  "Measurable": 6,
+  "MeasurableSet": 4,
+  "MeasurableSpace": 4,
+  "MeasureTheory.Integrable": 2,
+  "MeasureTheory.IsProbabilityMeasure": 3,
+  "MeasureTheory.Measure": 4,
+  "MeasureTheory.Measure.pi": 5,
+  "MeasureTheory.integral": 2,
+  "Nat": 328,
+  "NormedSpace": 2,
+  "ProbabilityTheory.binomial": 1,
+  "ProbabilityTheory.gaussianReal": 5,
+  "ProbabilityTheory.iIndepFun": 1,
+  "Real": 11,
+  "Real.exp": 21,
+  "Real.log": 3,
+  "Real.sinh": 1,
+  "Set": 4,
+  "Submodule.reflection": 1,
+  "TopologicalSpace": 1,
+  "fderiv": 13,
+  "fderiv_comp": 1,
+  "fderiv_mul": 1
+ },
+ "ci": "SUCCESS"
+}

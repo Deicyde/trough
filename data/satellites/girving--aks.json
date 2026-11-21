@@ -1,0 +1,153 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "girving/aks",
+ "slug": "girving--aks",
+ "rev": "c7fb62ed80a4a610f87f34db0082cadbd7c00c9f",
+ "date": "2026-03-19T23:03:45Z",
+ "stable": "8bb34b557281f8893d312d77e3ccafa2577090fb0aa54daab2fc924ae05eace5",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "AKS sorting network — Lean formalisation",
+  "excerpt": "A formal verification of the Ajtai–Komlós–Szemerédi (1983) `O(n log n)` sorting network construction in [Lean 4](https://lean-lang.org/) with [Mathlib](https://github.com/leanprover-community/mathlib4), using the Seiferas (2009) separator-based correctness proof and the Margulis–Gabber–Galil (1973/1981) expander. All code and proofs were written by Claude Code + Claude Opus 4.6, with extensive human hand-holding throughout."
+ },
+ "lean_files": 116,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.29.0-rc4",
+ "mathlib": "294b7c26a7cac74c34b43ddace82c85ebff331b1",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "RandomCert",
+   "src": "."
+  },
+  {
+   "name": "RandomBridge",
+   "src": "."
+  },
+  {
+   "name": "RandomConcrete",
+   "src": "."
+  },
+  {
+   "name": "RandomMisc",
+   "src": "."
+  },
+  {
+   "name": "RandomBench",
+   "src": "."
+  },
+  {
+   "name": "AKS",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  }
+ ],
+ "library_files": 116,
+ "capped": false,
+ "declarations": 1362,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "AKS",
+   "file": "AKS.lean"
+  },
+  {
+   "name": "Challenge",
+   "file": "Challenge.lean"
+  },
+  {
+   "name": "Random.Cert",
+   "file": "Random/Cert.lean"
+  }
+ ],
+ "root_closure_files": 77,
+ "root_closure_sorry": [
+  "Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Algebra.Field.GeomSum": 1,
+  "Mathlib.Algebra.Group.Nat.Defs": 1,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Algebra.Order.Floor.Semifield": 1,
+  "Mathlib.Algebra.Ring.Rat": 1,
+  "Mathlib.Analysis.CStarAlgebra.Matrix": 1,
+  "Mathlib.Analysis.CStarAlgebra.Spectrum": 1,
+  "Mathlib.Analysis.InnerProductSpace.Adjoint": 1,
+  "Mathlib.Analysis.InnerProductSpace.Basic": 1,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 1,
+  "Mathlib.Analysis.InnerProductSpace.Rayleigh": 1,
+  "Mathlib.Analysis.Matrix.HermitianFunctionalCalculus": 1,
+  "Mathlib.Analysis.Matrix.Spectrum": 1,
+  "Mathlib.Analysis.Normed.Group.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Combinatorics.Hall.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Basic": 1,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Matrix.Basic": 1,
+  "Mathlib.Data.Nat.Cast.Order.Field": 1,
+  "Mathlib.Data.Nat.Log": 2,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.Rat.Defs": 1,
+  "Mathlib.Data.Real.Archimedean": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.Data.Real.Sqrt": 1,
+  "Mathlib.LinearAlgebra.Matrix.Block": 1,
+  "Mathlib.LinearAlgebra.Matrix.Gershgorin": 2,
+  "Mathlib.LinearAlgebra.Matrix.NonsingularInverse": 2,
+  "Mathlib.LinearAlgebra.Matrix.PosDef": 2,
+  "Mathlib.Order.BoundedOrder.Basic": 1,
+  "Mathlib.Order.Fin.Basic": 1,
+  "Mathlib.Order.Interval.Finset.Fin": 1,
+  "Mathlib.RingTheory.RootsOfUnity.Complex": 1,
+  "Mathlib.Tactic": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.Set": 1,
+  "Mathlib.Topology.Order.Basic": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Lean": 1,
+  "Mathlib": 16
+ },
+ "uses": {
+  "Array": 9,
+  "Complex": 1,
+  "Complex.exp": 1,
+  "Equiv.Perm": 8,
+  "Finset": 59,
+  "Int": 13,
+  "IsSelfAdjoint": 6,
+  "List": 27,
+  "Matrix": 17,
+  "Nat": 23,
+  "Real": 6,
+  "Real.sin": 1,
+  "Set": 3
+ },
+ "ci": "SUCCESS"
+}

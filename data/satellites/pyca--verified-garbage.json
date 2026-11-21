@@ -1,0 +1,182 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "pyca/verified-garbage",
+ "slug": "pyca--verified-garbage",
+ "rev": "5ee6568fdfb7a61cd44738810ea7ae644662a279",
+ "date": "2026-11-18T05:30:37Z",
+ "stable": "32be6e01a5586c6982e6e200cfb1828ed9603e0c1729e4677d7a08f1d1f2b1ed",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSE.APACHE",
+   "LICENSE.BSD"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE.APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Verified Garbage",
+  "excerpt": "Verified Garbage is an experimental cryptography library, implemented entirely by LLMs. All of the cryptography primitives are formally verified using Lean."
+ },
+ "lean_files": 21807,
+ "admitted": true,
+ "folder": "lean",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "VerifiedGarbage",
+   "src": "."
+  },
+  {
+   "name": "VerifiedGarbageTest",
+   "src": "."
+  },
+  {
+   "name": "NativeSpec",
+   "src": "."
+  },
+  {
+   "name": "NativeTactics",
+   "src": "."
+  },
+  {
+   "name": "NativeAuditRecords",
+   "src": "."
+  },
+  {
+   "name": "NativeTCB",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBX86_64",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBX86",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBAArch64",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBArm",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBPPC64LE",
+   "src": "."
+  },
+  {
+   "name": "NativeTCBRISCV64",
+   "src": "."
+  },
+  {
+   "name": "NativeForward",
+   "src": "."
+  },
+  {
+   "name": "NativeHintSearch",
+   "src": "."
+  },
+  {
+   "name": "NativeScrubX86_64",
+   "src": "."
+  },
+  {
+   "name": "AuditBase",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 73579,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "VerifiedGarbage.Impl.AArch64Instrs",
+   "file": "lean/VerifiedGarbage/Impl/AArch64Instrs.lean"
+  },
+  {
+   "name": "VerifiedGarbage.Impl.NatPairs",
+   "file": "lean/VerifiedGarbage/Impl/NatPairs.lean"
+  },
+  {
+   "name": "VerifiedGarbage.Impl.Scrub.X86_64",
+   "file": "lean/VerifiedGarbage/Impl/Scrub/X86_64.lean"
+  }
+ ],
+ "root_closure_files": 3,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Order.Field.Basic": 13,
+  "Mathlib.Data.BitVec": 2,
+  "Mathlib.Data.Finset.Attr": 20,
+  "Mathlib.Data.Finset.Card": 62,
+  "Mathlib.Data.Int.ModEq": 12,
+  "Mathlib.Data.List.Basic": 3,
+  "Mathlib.Data.List.Dedup": 15,
+  "Mathlib.Data.List.Defs": 1,
+  "Mathlib.Data.List.Induction": 1,
+  "Mathlib.Data.Nat.Find": 60,
+  "Mathlib.Data.Nat.Prime.Defs": 10,
+  "Mathlib.Data.Nat.Totient": 12,
+  "Mathlib.Data.Sym.Sym2.Init": 13,
+  "Mathlib.FieldTheory.Finite.Basic": 2,
+  "Mathlib.Logic.Function.Basic": 9,
+  "Mathlib.RingTheory.AdjoinRoot": 2,
+  "Mathlib.Tactic.Attr.Core": 1,
+  "Mathlib.Tactic.ClearExcept": 26,
+  "Mathlib.Tactic.ContinuousFunctionalCalculus": 13,
+  "Mathlib.Tactic.Conv": 2,
+  "Mathlib.Tactic.FieldSimp": 2,
+  "Mathlib.Tactic.Finiteness.Attr": 27,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.LinearCombination": 2,
+  "Mathlib.Tactic.NormNum.GCD": 13,
+  "Mathlib.Tactic.NormNum.Inv": 3,
+  "Mathlib.Tactic.NormNum.Pow": 3,
+  "Mathlib.Tactic.NormNum.Prime": 12,
+  "Mathlib.Tactic.Positivity": 2,
+  "Mathlib.Tactic.Positivity.Finset": 13,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.Set": 12,
+  "Mathlib.Tactic.SetLike": 20,
+  "Mathlib.Tactic.SplitIfs": 12,
+  "Mathlib.Tactic.ToDual": 2
+ },
+ "import_roots": {
+  "Aesop": 5,
+  "Batteries": 9,
+  "Init": 9,
+  "Lean": 7,
+  "Mathlib": 139,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 5,
+  "Field": 33,
+  "Group": 9,
+  "Int": 177,
+  "List": 3951,
+  "Nat": 3055,
+  "Polynomial": 1,
+  "crossProduct": 1
+ },
+ "ci": "SUCCESS"
+}

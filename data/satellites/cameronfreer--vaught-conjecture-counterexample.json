@@ -1,0 +1,241 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "cameronfreer/vaught-conjecture-counterexample",
+ "slug": "cameronfreer--vaught-conjecture-counterexample",
+ "rev": "d159d16aa19bf338d8ad556becfa7749d5c13bb8",
+ "date": "2026-11-17T21:52:06Z",
+ "stable": "e54855062e4a2497bbde307b1dae5f5a851d7fa554cf7661452f759e09a2dbaa",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "A counterexample to Vaught's conjecture for $L{\\omega1,\\omega}$",
+  "excerpt": "By Nathanael Ackerman, Cameron Freer, and Robin Knight."
+ },
+ "lean_files": 796,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0-rc1",
+ "mathlib": "2e318faecff7d70d4e0cf8cc875104424a737355",
+ "requirements": [
+  {
+   "name": "ComputableModelTheory",
+   "url": "https://github.com/cameronfreer/computable-model-theory",
+   "rev": "5d5f65cef1e47776f0e3e60b3bacfda507f00aed"
+  },
+  {
+   "name": "InfinitaryLogic",
+   "url": "https://github.com/cameronfreer/infinitary-logic",
+   "rev": "004f63817589d1308c834d2511576bbb173b50ef"
+  },
+  {
+   "name": "TauCeti",
+   "url": "https://github.com/TauCetiProject/TauCeti",
+   "rev": "330da7fe53677e67643acface66a2ed799c37088"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "VaughtConjecture",
+   "src": "."
+  }
+ ],
+ "library_files": 783,
+ "capped": false,
+ "declarations": 12290,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 418,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "VaughtConjecture",
+   "file": "VaughtConjecture.lean"
+  }
+ ],
+ "root_closure_files": 1,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 56,
+ "headlines": [
+  {
+   "name": "VaughtConjecture.MainTheorem.vaughtCounterexample_allCarriers",
+   "module": "VaughtConjecture.MainTheorem.GrowthLevelRoute",
+   "file": "VaughtConjecture/MainTheorem/GrowthLevelRoute.lean",
+   "line": 131,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Language"
+   ]
+  },
+  {
+   "name": "VaughtConjecture.MainTheorem.vaughtCounterexample_allCarriers_densitySentence",
+   "module": "VaughtConjecture.MainTheorem.GrowthLevelRoute",
+   "file": "VaughtConjecture/MainTheorem/GrowthLevelRoute.lean",
+   "line": 150,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "VaughtConjecture.IsTemplateChart.hereditary",
+   "module": "VaughtConjecture.Correspondence.Charts.Chart",
+   "file": "VaughtConjecture/Correspondence/Charts/Chart.lean",
+   "line": 310,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Ordinal",
+    "Set",
+    "β"
+   ]
+  },
+  {
+   "name": "VaughtConjecture.IsTemplateChart.jointEmbedding",
+   "module": "VaughtConjecture.Correspondence.Charts.Chart",
+   "file": "VaughtConjecture/Correspondence/Charts/Chart.lean",
+   "line": 350,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Ordinal",
+    "β"
+   ]
+  },
+  {
+   "name": "VaughtConjecture.IsTemplateChart.amalgamation",
+   "module": "VaughtConjecture.Correspondence.Charts.Chart",
+   "file": "VaughtConjecture/Correspondence/Charts/Chart.lean",
+   "line": 377,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "G",
+    "Ordinal",
+    "β"
+   ]
+  },
+  {
+   "name": "VaughtConjecture.proposition434Target",
+   "module": "VaughtConjecture.Correspondence.Proposition434",
+   "file": "VaughtConjecture/Correspondence/Proposition434.lean",
+   "line": 99,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "VaughtConjecture.proposition434Clauses_of_countable",
+   "module": "VaughtConjecture.Correspondence.Proposition434",
+   "file": "VaughtConjecture/Correspondence/Proposition434.lean",
+   "line": 83,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "B",
+    "Ordinal",
+    "β"
+   ]
+  },
+  {
+   "name": "VaughtConjecture.exists_lift_zero_of_realize_templateSentence",
+   "module": "VaughtConjecture.Correspondence.Proposition434",
+   "file": "VaughtConjecture/Correspondence/Proposition434.lean",
+   "line": 105,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "B",
+    "G",
+    "Ordinal",
+    "h"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Data.ENat.Lattice": 3,
+  "Mathlib.Data.Fin.Tuple.Embedding": 1,
+  "Mathlib.Data.Fin.VecNotation": 19,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Data.Finset.Powerset": 1,
+  "Mathlib.Data.Finset.Preimage": 1,
+  "Mathlib.Data.Finset.Sort": 3,
+  "Mathlib.Data.Fintype.Basic": 2,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Order": 2,
+  "Mathlib.Data.Fintype.Powerset": 3,
+  "Mathlib.Data.Fintype.Sort": 1,
+  "Mathlib.Data.Fintype.Sum": 1,
+  "Mathlib.Data.Int.Interval": 1,
+  "Mathlib.Data.Set.Countable": 3,
+  "Mathlib.Data.Set.Finite.Basic": 1,
+  "Mathlib.Data.Set.Finite.Lattice": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Logic.Equiv.Fintype": 1,
+  "Mathlib.ModelTheory.Basic": 2,
+  "Mathlib.ModelTheory.Complexity": 2,
+  "Mathlib.ModelTheory.Definability": 1,
+  "Mathlib.ModelTheory.Order": 1,
+  "Mathlib.ModelTheory.Substructures": 1,
+  "Mathlib.Order.Filter.AtTopBot.Basic": 2,
+  "Mathlib.Order.Filter.Finite": 2,
+  "Mathlib.Order.Hom.Set": 1,
+  "Mathlib.Order.Ideal": 1,
+  "Mathlib.Order.InitialSeg": 1,
+  "Mathlib.Order.Interval.Finset.Fin": 3,
+  "Mathlib.Order.Interval.Set.Infinite": 1,
+  "Mathlib.Order.Interval.Set.OrdConnected": 1,
+  "Mathlib.Order.Interval.Set.UnorderedInterval": 1,
+  "Mathlib.Order.Prod.Lex.Basic": 2,
+  "Mathlib.Order.SuccPred.Basic": 1,
+  "Mathlib.Order.SupClosed": 1,
+  "Mathlib.Order.UpperLower.Basic": 1,
+  "Mathlib.Order.WellFounded": 1,
+  "Mathlib.Order.Zorn": 1,
+  "Mathlib.SetTheory.Cardinal.Aleph": 5,
+  "Mathlib.SetTheory.Cardinal.Finite": 1,
+  "Mathlib.SetTheory.Cardinal.Ordinal": 1,
+  "Mathlib.SetTheory.Cardinal.Regular": 1,
+  "Mathlib.SetTheory.Ordinal.Arithmetic": 2,
+  "Mathlib.Tactic.FinCases": 21,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.Order": 2,
+  "Mathlib.Topology.Compactness.Compact": 1
+ },
+ "import_roots": {
+  "ComputableModelTheory": 1,
+  "InfinitaryLogic": 21,
+  "Mathlib": 66
+ },
+ "uses": {
+  "Cardinal": 16,
+  "Cardinal.aleph": 14,
+  "Continuous": 2,
+  "Equiv.Perm": 26,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "Finset": 572,
+  "FirstOrder.Language.Structure": 2,
+  "Language": 147,
+  "List": 5,
+  "Nat": 1,
+  "Ordinal": 711,
+  "Set": 180,
+  "TopologicalSpace": 1,
+  "closure": 1
+ },
+ "ci": "SUCCESS"
+}

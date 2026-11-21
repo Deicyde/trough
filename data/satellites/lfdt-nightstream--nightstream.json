@@ -1,0 +1,434 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "LFDT-Nightstream/Nightstream",
+ "slug": "lfdt-nightstream--nightstream",
+ "rev": "b4e170d48ff19d421a9a55db4ffa3789c3ff5503",
+ "date": "2026-11-18T01:58:06Z",
+ "stable": "d4f53afcd9f584d5cc319092c7113e8d415f9708d01800e6148b0243b487929d",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Nightstream",
+  "excerpt": "Nightstream is a research proving system that combines SuperNeo folding for CCS with HyperNova-style recursion. The active field is the prime field of `2^64 − 59` with a degree-two extension. Ajtai commitments bind witnesses, and the transcripts of the folding scheme and of the step circuits use Poseidon2 only. The Akita commitment scheme (ePrint 2026/1983) compresses the final proof. Akita uses Keccak-family hashes for its own challenges."
+ },
+ "lean_files": 1007,
+ "admitted": true,
+ "folder": "formal/nightstream-fprime",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "CompPoly",
+   "url": "https://github.com/Verified-zkEVM/CompPoly",
+   "rev": "06686e4c70939af82203af21516f8ab8a21a8051"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "NightstreamFPrime",
+   "src": "."
+  },
+  {
+   "name": "NightstreamFPrimeTests",
+   "src": "."
+  }
+ ],
+ "library_files": 1007,
+ "capped": false,
+ "declarations": 16892,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 318,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "NightstreamFPrime",
+   "file": "formal/nightstream-fprime/NightstreamFPrime.lean"
+  },
+  {
+   "name": "tests.AxiomAudit",
+   "file": "formal/nightstream-fprime/tests/AxiomAudit.lean"
+  },
+  {
+   "name": "tests.Axioms",
+   "file": "formal/nightstream-fprime/tests/Axioms.lean"
+  },
+  {
+   "name": "tests.AxiomsAjtaiSetupV1",
+   "file": "formal/nightstream-fprime/tests/AxiomsAjtaiSetupV1.lean"
+  },
+  {
+   "name": "tests.AxiomsAuxRelocation",
+   "file": "formal/nightstream-fprime/tests/AxiomsAuxRelocation.lean"
+  },
+  {
+   "name": "tests.AxiomsBooleanInference",
+   "file": "formal/nightstream-fprime/tests/AxiomsBooleanInference.lean"
+  },
+  {
+   "name": "tests.AxiomsBoundedDepthIvc",
+   "file": "formal/nightstream-fprime/tests/AxiomsBoundedDepthIvc.lean"
+  },
+  {
+   "name": "tests.AxiomsBoundedDepthRandomOracle",
+   "file": "formal/nightstream-fprime/tests/AxiomsBoundedDepthRandomOracle.lean"
+  },
+  {
+   "name": "tests.AxiomsChainBinding",
+   "file": "formal/nightstream-fprime/tests/AxiomsChainBinding.lean"
+  },
+  {
+   "name": "tests.AxiomsCompression",
+   "file": "formal/nightstream-fprime/tests/AxiomsCompression.lean"
+  },
+  {
+   "name": "tests.AxiomsCompressionRust",
+   "file": "formal/nightstream-fprime/tests/AxiomsCompressionRust.lean"
+  },
+  {
+   "name": "tests.AxiomsContinuityRanges",
+   "file": "formal/nightstream-fprime/tests/AxiomsContinuityRanges.lean"
+  },
+  {
+   "name": "tests.AxiomsFoldGate",
+   "file": "formal/nightstream-fprime/tests/AxiomsFoldGate.lean"
+  },
+  {
+   "name": "tests.AxiomsFoundations",
+   "file": "formal/nightstream-fprime/tests/AxiomsFoundations.lean"
+  },
+  {
+   "name": "tests.AxiomsGuardFusion",
+   "file": "formal/nightstream-fprime/tests/AxiomsGuardFusion.lean"
+  },
+  {
+   "name": "tests.AxiomsHashEncodings",
+   "file": "formal/nightstream-fprime/tests/AxiomsHashEncodings.lean"
+  },
+  {
+   "name": "tests.AxiomsIntegerProduct",
+   "file": "formal/nightstream-fprime/tests/AxiomsIntegerProduct.lean"
+  },
+  {
+   "name": "tests.AxiomsLightFold",
+   "file": "formal/nightstream-fprime/tests/AxiomsLightFold.lean"
+  },
+  {
+   "name": "tests.AxiomsNativeBooleanCompleteness",
+   "file": "formal/nightstream-fprime/tests/AxiomsNativeBooleanCompleteness.lean"
+  },
+  {
+   "name": "tests.AxiomsNativePower",
+   "file": "formal/nightstream-fprime/tests/AxiomsNativePower.lean"
+  },
+  {
+   "name": "tests.AxiomsNebula",
+   "file": "formal/nightstream-fprime/tests/AxiomsNebula.lean"
+  },
+  {
+   "name": "tests.AxiomsNifsClosure",
+   "file": "formal/nightstream-fprime/tests/AxiomsNifsClosure.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedBoolean",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedBoolean.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedProduct",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedProduct.lean"
+  },
+  {
+   "name": "tests.AxiomsPackedZero",
+   "file": "formal/nightstream-fprime/tests/AxiomsPackedZero.lean"
+  },
+  {
+   "name": "tests.AxiomsPaddingZero",
+   "file": "formal/nightstream-fprime/tests/AxiomsPaddingZero.lean"
+  },
+  {
+   "name": "tests.AxiomsPiCCSClosure",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiCCSClosure.lean"
+  },
+  {
+   "name": "tests.AxiomsPiRLCTail",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiRLCTail.lean"
+  },
+  {
+   "name": "tests.AxiomsPiRlcSampler",
+   "file": "formal/nightstream-fprime/tests/AxiomsPiRlcSampler.lean"
+  },
+  {
+   "name": "tests.AxiomsProductionMatrixPlan",
+   "file": "formal/nightstream-fprime/tests/AxiomsProductionMatrixPlan.lean"
+  },
+  {
+   "name": "tests.AxiomsReadOnlyValues",
+   "file": "formal/nightstream-fprime/tests/AxiomsReadOnlyValues.lean"
+  },
+  {
+   "name": "tests.AxiomsRecursivePublicInput",
+   "file": "formal/nightstream-fprime/tests/AxiomsRecursivePublicInput.lean"
+  },
+  {
+   "name": "tests.AxiomsRefreshFold",
+   "file": "formal/nightstream-fprime/tests/AxiomsRefreshFold.lean"
+  },
+  {
+   "name": "tests.AxiomsSchedule",
+   "file": "formal/nightstream-fprime/tests/AxiomsSchedule.lean"
+  },
+  {
+   "name": "tests.AxiomsSharedAbsorb",
+   "file": "formal/nightstream-fprime/tests/AxiomsSharedAbsorb.lean"
+  },
+  {
+   "name": "tests.AxiomsSharedExports",
+   "file": "formal/nightstream-fprime/tests/AxiomsSharedExports.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Accumulator",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Accumulator.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Application",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Application.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Assembler",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Assembler.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1PiDEC",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1PiDEC.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1PiRLCExport",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1PiRLCExport.lean"
+  },
+  {
+   "name": "tests.AxiomsStage1Security",
+   "file": "formal/nightstream-fprime/tests/AxiomsStage1Security.lean"
+  },
+  {
+   "name": "tests.AxiomsWordPacking",
+   "file": "formal/nightstream-fprime/tests/AxiomsWordPacking.lean"
+  },
+  {
+   "name": "tests.EndpointCensus",
+   "file": "formal/nightstream-fprime/tests/EndpointCensus.lean"
+  },
+  {
+   "name": "tests.NativePoseidon2Boundary",
+   "file": "formal/nightstream-fprime/tests/NativePoseidon2Boundary.lean"
+  },
+  {
+   "name": "tests.PerApplicationEmitterFixture",
+   "file": "formal/nightstream-fprime/tests/PerApplicationEmitterFixture.lean"
+  },
+  {
+   "name": "tests.Poseidon2Vectors",
+   "file": "formal/nightstream-fprime/tests/Poseidon2Vectors.lean"
+  },
+  {
+   "name": "tests.PremiseAudit",
+   "file": "formal/nightstream-fprime/tests/PremiseAudit.lean"
+  },
+  {
+   "name": "tests.PremiseCensus",
+   "file": "formal/nightstream-fprime/tests/PremiseCensus.lean"
+  },
+  {
+   "name": "tests.SharedFormulas",
+   "file": "formal/nightstream-fprime/tests/SharedFormulas.lean"
+  }
+ ],
+ "root_closure_files": 986,
+ "root_closure_sorry": [
+  "formal/nightstream-fprime/NightstreamFPrime/Spec/RandomOracle.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "NightstreamFPrime.Lifecycle.BoundedDepth.stepHolds_iff",
+   "module": "NightstreamFPrime.Lifecycle.BoundedDepth.Step",
+   "file": "formal/nightstream-fprime/NightstreamFPrime/Lifecycle/BoundedDepth/Step.lean",
+   "line": 235,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "NightstreamFPrime.Layout.BoundedDepth.StepCircuits.soundness",
+   "module": "NightstreamFPrime.Layout.BoundedDepth.StepCircuits",
+   "file": "formal/nightstream-fprime/NightstreamFPrime/Layout/BoundedDepth/StepCircuits.lean",
+   "line": 78,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "NightstreamFPrime.Layout.BoundedDepth.LightAssemblerCompleteness.complete",
+   "module": "NightstreamFPrime.Layout.BoundedDepth.LightAssemblerCompleteness",
+   "file": "formal/nightstream-fprime/NightstreamFPrime/Layout/BoundedDepth/LightAssemblerCompleteness.lean",
+   "line": 190,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "NightstreamFPrime.Layout.BoundedDepth.RefreshAssemblerCompleteness.complete",
+   "module": "NightstreamFPrime.Layout.BoundedDepth.RefreshAssemblerCompleteness",
+   "file": "formal/nightstream-fprime/NightstreamFPrime/Layout/BoundedDepth/RefreshAssemblerCompleteness.lean",
+   "line": 471,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 4,
+  "Mathlib.Algebra.BigOperators.Fin": 6,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 2,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Sigma": 1,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 3,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 4,
+  "Mathlib.Algebra.CharP.Basic": 2,
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.Field.ZMod": 1,
+  "Mathlib.Algebra.Group.Basic": 1,
+  "Mathlib.Algebra.Group.MinimalAxioms": 1,
+  "Mathlib.Algebra.Group.Nat.Defs": 1,
+  "Mathlib.Algebra.GroupWithZero.Nat": 1,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 2,
+  "Mathlib.Algebra.MvPolynomial.Degrees": 1,
+  "Mathlib.Algebra.MvPolynomial.SchwartzZippel": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 4,
+  "Mathlib.Algebra.Order.BigOperators.Expect": 5,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 5,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Field.Basic": 1,
+  "Mathlib.Algebra.Order.Group.Multiset": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 3,
+  "Mathlib.Algebra.Polynomial.Roots": 3,
+  "Mathlib.Algebra.QuadraticAlgebra.Defs": 1,
+  "Mathlib.Algebra.Ring.Basic": 1,
+  "Mathlib.Algebra.Ring.TransferInstance": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Basic.Real.Basic": 10,
+  "Mathlib.Data.Fin.Tuple.Basic": 2,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Fintype.BigOperators": 4,
+  "Mathlib.Data.Fintype.Fin": 2,
+  "Mathlib.Data.Fintype.Pi": 2,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Int.Notation": 1,
+  "Mathlib.Data.List.Basic": 2,
+  "Mathlib.Data.List.Defs": 1,
+  "Mathlib.Data.List.GetD": 6,
+  "Mathlib.Data.List.Induction": 1,
+  "Mathlib.Data.List.OfFn": 6,
+  "Mathlib.Data.List.TakeDrop": 1,
+  "Mathlib.Data.Multiset.AddSub": 1,
+  "Mathlib.Data.Multiset.Range": 1,
+  "Mathlib.Data.NNRat.Lemmas": 2,
+  "Mathlib.Data.Nat.Bitwise": 2,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Nat.Count": 1,
+  "Mathlib.Data.Nat.Digits.Defs": 2,
+  "Mathlib.Data.Nat.Digits.Lemmas": 2,
+  "Mathlib.Data.Nat.Log": 2,
+  "Mathlib.Data.Nat.ModEq": 2,
+  "Mathlib.Data.Nat.Notation": 1,
+  "Mathlib.Data.Nat.Size": 1,
+  "Mathlib.Data.Rat.BigOperators": 1,
+  "Mathlib.Data.Rat.Cast.Lemmas": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.Set.Finite.List": 1,
+  "Mathlib.Data.Vector.Basic": 1,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.Data.ZMod.Defs": 2,
+  "Mathlib.Data.ZMod.ValMinAbs": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 5,
+  "Mathlib.FieldTheory.KummerExtension": 1,
+  "Mathlib.LinearAlgebra.Lagrange": 1,
+  "Mathlib.Logic.Equiv.Defs": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 3,
+  "Mathlib.Logic.Function.Basic": 1,
+  "Mathlib.Logic.Function.CompTypeclasses": 1,
+  "Mathlib.MeasureTheory.Measure.Typeclasses.Probability": 1,
+  "Mathlib.NumberTheory.LucasPrimality": 1,
+  "Mathlib.Order.Basic": 2,
+  "Mathlib.Order.Lattice.Nat": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Constructions": 4,
+  "Mathlib.RingTheory.AdjoinRoot": 1,
+  "Mathlib.SetTheory.Cardinal.Finite": 3,
+  "Mathlib.Tactic.Abel": 2,
+  "Mathlib.Tactic.FieldSimp": 6,
+  "Mathlib.Tactic.FinCases": 3,
+  "Mathlib.Tactic.GCongr": 1,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.Linarith": 8,
+  "Mathlib.Tactic.LinearCombination": 2,
+  "Mathlib.Tactic.NormNum": 2,
+  "Mathlib.Tactic.NormNum.Basic": 2,
+  "Mathlib.Tactic.NormNum.NatFactorial": 1,
+  "Mathlib.Tactic.NormNum.Prime": 1,
+  "Mathlib.Tactic.Positivity": 7,
+  "Mathlib.Tactic.Ring": 15,
+  "Mathlib.Tactic.Ring.Basic": 1
+ },
+ "import_roots": {
+  "Batteries": 10,
+  "Lean": 5,
+  "Mathlib": 104,
+  "Std": 2
+ },
+ "uses": {
+  "AdjoinRoot": 1,
+  "Algebra": 24,
+  "Array": 33,
+  "CharP": 5,
+  "Field": 74,
+  "Finset": 49,
+  "Group": 2,
+  "Int": 4,
+  "Irreducible": 1,
+  "IsCoprime": 1,
+  "List": 508,
+  "MeasurableSpace": 1,
+  "MeasureTheory.IsProbabilityMeasure": 1,
+  "MeasureTheory.Measure": 1,
+  "Multiset": 9,
+  "MvPolynomial": 4,
+  "Nat": 767,
+  "PMF": 7,
+  "Polynomial": 19,
+  "Real": 1,
+  "Set": 15,
+  "Std.HashMap": 2,
+  "ZMod.pow_card_sub_one_eq_one": 2,
+  "orderOf": 1
+ },
+ "ci": "SUCCESS"
+}

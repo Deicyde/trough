@@ -1,0 +1,78 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "cristianoc/TScert",
+ "slug": "cristianoc--tscert",
+ "rev": "a51f623035e63f37d05c927f757dfc54291a309d",
+ "date": "2026-11-11T10:14:02Z",
+ "stable": "a2b33ecf709802beec9db560462574859930ec53a5da572f86e018aba6b2d527",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Why",
+  "excerpt": null
+ },
+ "lean_files": 168,
+ "admitted": true,
+ "folder": "lean",
+ "toolchain": "v4.33.1",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Verification",
+   "src": "."
+  }
+ ],
+ "library_files": 167,
+ "capped": false,
+ "declarations": 6373,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 154,
+ "closure_sorry": [
+  "lean/Verification/Source/Claims/Wire.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "Verification.SourceClaimJson.checkUnitJson_safe",
+   "module": "Verification.Source.Claims.Translate",
+   "file": "lean/Verification/Source/Claims/Translate.lean",
+   "line": 758,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "h"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 1,
+  "Lean": 8,
+  "Std": 8
+ },
+ "uses": {
+  "Array": 31,
+  "Int": 20,
+  "List": 150,
+  "Nat": 141,
+  "Std.HashMap": 25,
+  "closure": 2
+ },
+ "ci": "SUCCESS"
+}

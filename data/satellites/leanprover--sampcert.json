@@ -1,0 +1,139 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "leanprover/SampCert",
+ "slug": "leanprover--sampcert",
+ "rev": "a2c53bb5ff790e729e252958060699b7eff898b9",
+ "date": "2026-09-25T17:48:58Z",
+ "stable": "f042cd3b3c9f902f8c4854002680148353815dcc64200e2d6a475d4333fffd2b",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "SampCert",
+  "excerpt": "A verified implementation using [Lean](https://github.com/leanprover/lean4) and [Mathlib](https://github.com/leanprover-community/mathlib4) of randomized algorithms including [the discrete Gaussian sampler for differential privacy](https://arxiv.org/abs/2004.00010), key results in [zero concentrated differential privacy](https://arxiv.org/abs/1605.02065), and [some verified (unbounded) private queries](https://arxiv.org/pdf/1909.01917)."
+ },
+ "lean_files": 107,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "SampCert",
+   "src": "."
+  },
+  {
+   "name": "FastExtract",
+   "src": "."
+  },
+  {
+   "name": "VMC",
+   "src": "."
+  }
+ ],
+ "library_files": 105,
+ "capped": false,
+ "declarations": 792,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "FastExtract",
+   "file": "FastExtract.lean"
+  },
+  {
+   "name": "SampCert",
+   "file": "SampCert.lean"
+  },
+  {
+   "name": "VMC",
+   "file": "VMC.lean"
+  }
+ ],
+ "root_closure_files": 104,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Group.Basic": 2,
+  "Mathlib.Algebra.Group.Defs": 2,
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Complex.UpperHalfPlane.Basic": 1,
+  "Mathlib.Analysis.Convex.Integral": 2,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exponential": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.NNReal": 2,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 1,
+  "Mathlib.Basic.ENNReal.Basic": 2,
+  "Mathlib.Basic.ENNReal.Inv": 1,
+  "Mathlib.Basic.IsEmpty.Basic": 1,
+  "Mathlib.Data.EReal.Basic": 1,
+  "Mathlib.Data.List.Fold": 1,
+  "Mathlib.Data.Nat.Log": 3,
+  "Mathlib.Data.Set.Defs": 2,
+  "Mathlib.Data.Set.Prod": 2,
+  "Mathlib.Data.Vector.Basic": 3,
+  "Mathlib.MeasureTheory.MeasurableSpace.Basic": 1,
+  "Mathlib.MeasureTheory.Measure.Count": 1,
+  "Mathlib.NumberTheory.ModularForms.JacobiTheta.OneVariable": 2,
+  "Mathlib.NumberTheory.ModularForms.JacobiTheta.TwoVariable": 4,
+  "Mathlib.Probability.Distributions.Uniform": 4,
+  "Mathlib.Probability.ProbabilityMassFunction.Basic": 3,
+  "Mathlib.Probability.ProbabilityMassFunction.Constructions": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Integrals": 2,
+  "Mathlib.Probability.ProbabilityMassFunction.Monad": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Basic": 3,
+  "Mathlib.Topology.Algebra.InfiniteSum.Ring": 3
+ },
+ "import_roots": {
+  "Init": 6,
+  "Lean": 9,
+  "Mathlib": 25
+ },
+ "uses": {
+  "Complex": 3,
+  "Complex.exp": 1,
+  "Continuous": 2,
+  "ConvexOn.map_integral_le": 2,
+  "Differentiable": 1,
+  "DifferentiableOn": 1,
+  "EReal": 4,
+  "Filter": 3,
+  "Filter.Tendsto": 1,
+  "Finset": 6,
+  "HasSum": 12,
+  "Int": 20,
+  "List": 29,
+  "Measurable": 1,
+  "MeasurableSpace": 8,
+  "MeasureTheory.Integrable": 1,
+  "MeasureTheory.IsProbabilityMeasure": 1,
+  "MeasureTheory.Measure": 9,
+  "Nat": 43,
+  "PMF": 23,
+  "Rat": 1,
+  "Real": 29,
+  "Real.exp": 9,
+  "Real.log": 3,
+  "Real.sinh": 1,
+  "Set": 6,
+  "TopologicalSpace": 1,
+  "deriv_comp": 1,
+  "fourierCoeff": 1
+ },
+ "ci": "SUCCESS"
+}

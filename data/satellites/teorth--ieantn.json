@@ -1,0 +1,123 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "teorth/IEANTN",
+ "slug": "teorth--ieantn",
+ "rev": "d60421f10c16f5f6c2cb75f1067a72e24e616391",
+ "date": "2026-11-09T08:32:37Z",
+ "stable": "6d0d04c67a569aeebc332bdef75d43d2fb77d48bfbc5d05abb5fbb375afe90c1",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "IEANTN",
+  "excerpt": "The **Integrated Explicit Analytic Number Theory Network**: a graph of claims about explicit analytic number theory, together with a record of how well each one is justified."
+ },
+ "lean_files": 588,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "71a80585ee495fc24472fd0eaffc89d94e4fd8d6",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "IEANTN",
+   "src": "."
+  }
+ ],
+ "library_files": 156,
+ "capped": false,
+ "declarations": 364,
+ "sorry_files": 63,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "IEANTN",
+   "file": "IEANTN.lean"
+  }
+ ],
+ "root_closure_files": 152,
+ "root_closure_sorry": [
+  "IEANTN/Nodes/BKLNW/v1/Challenge.lean",
+  "IEANTN/Nodes/BKLNW/v2/Challenge.lean",
+  "IEANTN/Nodes/BKLNWNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/Buthe/v1/Challenge.lean",
+  "IEANTN/Nodes/Buthe/v2/Challenge.lean",
+  "IEANTN/Nodes/Buthe2016/v1/Challenge.lean",
+  "IEANTN/Nodes/ButheNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/CH2/v1/Challenge.lean",
+  "IEANTN/Nodes/CH2/v2/Challenge.lean",
+  "IEANTN/Nodes/CH2/v3/Challenge.lean",
+  "IEANTN/Nodes/Chebyshev/v1/Challenge.lean",
+  "IEANTN/Nodes/ChebyshevNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/CotangentSeries/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v2/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v3/Challenge.lean",
+  "IEANTN/Nodes/DudekPlatt/v4/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v1/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v2/Challenge.lean",
+  "IEANTN/Nodes/DudekPlattNumerics/v3/Challenge.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Analysis.Complex.CauchyIntegral": 2,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 2,
+  "Mathlib.Analysis.Fourier.FourierTransform": 1,
+  "Mathlib.Analysis.Meromorphic.Order": 1,
+  "Mathlib.Analysis.SpecialFunctions.Complex.Log": 3,
+  "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Gamma.Digamma": 4,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 4,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Cotangent": 1,
+  "Mathlib.Data.Nat.Factorial.Basic": 1,
+  "Mathlib.Data.Nat.Prime.Basic": 3,
+  "Mathlib.MeasureTheory.Integral.Bochner.Set": 1,
+  "Mathlib.MeasureTheory.Integral.CircleIntegral": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 1,
+  "Mathlib.NumberTheory.ArithmeticFunction.Misc": 2,
+  "Mathlib.NumberTheory.Chebyshev": 7,
+  "Mathlib.NumberTheory.Harmonic.EulerMascheroni": 2,
+  "Mathlib.NumberTheory.Harmonic.ZetaAsymp": 1,
+  "Mathlib.NumberTheory.LSeries.HurwitzZetaValues": 1,
+  "Mathlib.NumberTheory.LSeries.Nonvanishing": 1,
+  "Mathlib.NumberTheory.LSeries.RiemannZeta": 4,
+  "Mathlib.NumberTheory.PrimeCounting": 1,
+  "Mathlib.Order.Interval.Finset.Nat": 1
+ },
+ "import_roots": {
+  "Mathlib": 27
+ },
+ "uses": {
+  "ArithmeticFunction": 2,
+  "Complex": 5,
+  "Complex.cos": 1,
+  "DifferentiableOn": 2,
+  "Filter": 1,
+  "Finset": 2,
+  "HasSum": 3,
+  "IsCompact": 1,
+  "List": 5,
+  "Measurable": 1,
+  "MeasureTheory.Integrable": 1,
+  "Nat": 2,
+  "Real": 15,
+  "Real.exp": 28,
+  "Real.log": 35,
+  "Set": 3
+ },
+ "ci": "SUCCESS"
+}

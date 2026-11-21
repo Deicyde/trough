@@ -1,0 +1,86 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "GTimG/QuasiRiemannTracker",
+ "slug": "gtimg--quasiriemanntracker",
+ "rev": "42cf5415cfaa4205caaa25ab11160724606cdc33",
+ "date": "2026-11-15T22:38:10Z",
+ "stable": "506afe6f7d18adb074af015743a415d8518eb3d0c95aa7a3d7db8cae81c0ead2",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Quasi-Riemann Tracker",
+  "excerpt": "Quasi-Riemann Tracker follows bounds on the real parts of zeros of Dirichlet L-functions. The [website](https://gtimg.github.io/QuasiRiemannTracker/) shows how the best bound has improved over time, every submission with its exact bound, authors, sources and verification status, how submissions build on each other, and who contributed. Smaller bounds are stronger; the generalized Riemann hypothesis corresponds to a bound of $1/2$."
+ },
+ "lean_files": 35376,
+ "admitted": true,
+ "folder": "verifier/standard",
+ "toolchain": "",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "requirements": [
+  {
+   "name": "leancert",
+   "url": "https://github.com/alerad/leancert.git",
+   "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4"
+  },
+  {
+   "name": "PrimeCert",
+   "url": "https://github.com/b-mehta/PrimeCert.git",
+   "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2"
+  },
+  {
+   "name": "PrimeNumberTheoremAnd",
+   "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git",
+   "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0"
+  },
+  {
+   "name": "«rellich-kondrachov»",
+   "url": "https://github.com/abenenson/rellich-kondrachov.git",
+   "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Candidate",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "Submissions",
+   "src": "."
+  }
+ ],
+ "library_files": 0,
+ "capped": false,
+ "declarations": 0,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [],
+ "root_closure_files": 0,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {},
+ "uses": {},
+ "ci": "SUCCESS"
+}

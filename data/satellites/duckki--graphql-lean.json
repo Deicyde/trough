@@ -1,0 +1,114 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "duckki/graphql-lean",
+ "slug": "duckki--graphql-lean",
+ "rev": "b14cc566f35b6b54ad9b8d7036669ee5ca6fc45f",
+ "date": "2026-11-18T00:21:46Z",
+ "stable": "eb0b29d5ce02147a5740894430c48561b9d0971f5d45cd5c3dc190330cc6219e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "graphql-lean",
+  "excerpt": null
+ },
+ "lean_files": 1682,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "leanfmt",
+   "url": "https://github.com/duckki/leanfmt.git",
+   "rev": "8843ba20b25340a588876933f78197b6c3ccba70"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "GraphQL",
+   "src": "."
+  },
+  {
+   "name": "Proofs",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  },
+  {
+   "name": "Lint.ImportClosure",
+   "src": "."
+  }
+ ],
+ "library_files": 1678,
+ "capped": false,
+ "declarations": 17330,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 90,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "GraphQL",
+   "file": "GraphQL.lean"
+  },
+  {
+   "name": "Lint.ImportClosure",
+   "file": "Lint/ImportClosure.lean"
+  },
+  {
+   "name": "Proofs",
+   "file": "Proofs.lean"
+  },
+  {
+   "name": "Tests",
+   "file": "Tests.lean"
+  }
+ ],
+ "root_closure_files": 1678,
+ "root_closure_sorry": [
+  "Proofs/GraphQL/IncrementalDelivery/WorkQueueAlternativeImpl/IntervalPlanning.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 81,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "GraphQL.IncrementalDelivery.ReferenceWorkQueue.RemovalFrontier.skip",
+   "module": "Proofs.GraphQL.IncrementalDelivery.WorkQueueImplementation.RemovalCoverage",
+   "file": "Proofs/GraphQL/IncrementalDelivery/WorkQueueImplementation/RemovalCoverage.lean",
+   "line": 114,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 3,
+  "Lake": 1,
+  "Lean": 1,
+  "Std": 1
+ },
+ "uses": {
+  "Algebra": 30,
+  "Array": 1,
+  "Field": 16,
+  "Group": 76,
+  "Int": 5,
+  "List": 1286,
+  "Nat": 866,
+  "closure": 14
+ },
+ "ci": "SUCCESS"
+}

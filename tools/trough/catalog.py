@@ -135,7 +135,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
                    cslib: str | None = None, physlib: str | None = None,
                    readers: list[tuple[str, str, str, str, bool]] = (),
-                   blueprint_revs: dict[str, str] | None = None) -> str:
+                   blueprint_revs: dict[str, str] | None = None, satellites: int | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
@@ -146,7 +146,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
     OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins and *readers* the libraries trough.library
     reads with their modules that declare nothing public listed, each as its id, name, repository, commit and whether
     it builds on Mathlib; *blueprint_revs* has the commit each blueprint library's data/blueprints/<id>/source.json
-    pins, by id."""
+    pins, by id; and *satellites* the number of satellite projects read."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
@@ -345,6 +345,17 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and "
             "the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in "
             "GitHub Actions.",
+        ]
+    if satellites:
+        lines += [
+            "",
+            "## Satellite projects",
+            "",
+            f"- `data/satellites/<slug>.json`: for each of the {satellites} projects in `data/satellites/projects.toml`, "
+            "read at the commit the file records without Lean: its Lake requirements, the Mathlib modules it imports, "
+            "the Mathlib concepts its files name, its headline declarations, and its README's opening where its "
+            "license file is Apache-2.0, MIT, MIT-0, BSD-2-Clause, BSD-3-Clause, CC0-1.0 or CC-BY-4.0. Placements set "
+            "by hand are in `data/satellites/overrides.toml`.",
         ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:

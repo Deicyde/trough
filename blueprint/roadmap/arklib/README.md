@@ -14,3 +14,4 @@ The text is the blueprint's, under its Apache-2.0 license: each page has a secti
 - [Commitment Schemes](commitment-schemes/README.md)
 - [Supporting Theories](supporting-theories/README.md)
 - [References](references/README.md)
+- [Projects building on ArkLib (1)](projects/README.md)

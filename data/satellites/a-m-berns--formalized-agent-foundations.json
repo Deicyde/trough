@@ -1,0 +1,449 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "A-M-Berns/Formalized-Agent-Foundations",
+ "slug": "a-m-berns--formalized-agent-foundations",
+ "rev": "857e901dccf0021a7a0db9515caab76f3828c8f3",
+ "date": "2026-11-09T19:30:17Z",
+ "stable": "26adc0abcd12f61086cb9c71cb833ce65eed3630340eb2cd0dfd37fb7895edda",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formalized Agent Foundations",
+  "excerpt": "Lean 4 formalizations of important papers in agent foundations and open-source game theory, built on [Mathlib](https://github.com/leanprover-community/mathlib4) and the [Foundation](https://github.com/FormalizedFormalLogic/Foundation) library of the Formalized Formal Logic project."
+ },
+ "lean_files": 348,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0",
+ "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+ "requirements": [
+  {
+   "name": "complexitylib",
+   "url": "https://github.com/A-M-Berns/complexitylib",
+   "rev": "1b0d107587653d16d5f5d4fd99b282adfcbbf3c1"
+  },
+  {
+   "name": "EconCSLib",
+   "url": "https://github.com/gametheoryinlean/EconCSLib",
+   "rev": "55229910db21f09a441df6c31f48420680359a4c"
+  },
+  {
+   "name": "Foundation",
+   "url": "https://github.com/FormalizedFormalLogic/Foundation",
+   "rev": "41d20b5158e9331e9b8dd86e16dbf488cc688bdb"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "ModalAgents",
+   "src": "."
+  },
+  {
+   "name": "LogicalInduction",
+   "src": "."
+  },
+  {
+   "name": "CartesianFrames",
+   "src": "."
+  },
+  {
+   "name": "FiniteFactoredSets",
+   "src": "."
+  },
+  {
+   "name": "Condensation",
+   "src": "."
+  },
+  {
+   "name": "FactoredSpaces",
+   "src": "."
+  },
+  {
+   "name": "SafeParetoImprovements",
+   "src": "."
+  },
+  {
+   "name": "PFR",
+   "src": "."
+  },
+  {
+   "name": "ShannonInformation",
+   "src": "."
+  },
+  {
+   "name": "APITests",
+   "src": "."
+  },
+  {
+   "name": "AxiomAudit",
+   "src": "."
+  },
+  {
+   "name": "Scratchpad",
+   "src": "."
+  },
+  {
+   "name": "ProvabilityLogic",
+   "src": "."
+  }
+ ],
+ "library_files": 347,
+ "capped": false,
+ "declarations": 12658,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 8,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "APITests",
+   "file": "APITests.lean"
+  },
+  {
+   "name": "AxiomAudit",
+   "file": "AxiomAudit.lean"
+  },
+  {
+   "name": "CartesianFrames",
+   "file": "CartesianFrames.lean"
+  },
+  {
+   "name": "Condensation",
+   "file": "Condensation.lean"
+  },
+  {
+   "name": "FactoredSpaces",
+   "file": "FactoredSpaces.lean"
+  },
+  {
+   "name": "FiniteFactoredSets",
+   "file": "FiniteFactoredSets.lean"
+  },
+  {
+   "name": "LogicalInduction",
+   "file": "LogicalInduction.lean"
+  },
+  {
+   "name": "ModalAgents",
+   "file": "ModalAgents.lean"
+  },
+  {
+   "name": "SafeParetoImprovements",
+   "file": "SafeParetoImprovements.lean"
+  },
+  {
+   "name": "Scratchpad",
+   "file": "Scratchpad.lean"
+  },
+  {
+   "name": "ShannonInformation",
+   "file": "ShannonInformation.lean"
+  }
+ ],
+ "root_closure_files": 346,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 1,
+ "headline_rule": "main",
+ "headline_count": 5,
+ "headlines": [
+  {
+   "name": "FactoredSpaces.structIndepGiven_iff_forall_condIndepVar_of_nonempty",
+   "module": "FactoredSpaces.MainTheorem",
+   "file": "FactoredSpaces/MainTheorem.lean",
+   "line": 19,
+   "kind": "lemma",
+   "sorry": false,
+   "names": [
+    "α",
+    "β"
+   ]
+  },
+  {
+   "name": "FactoredSpaces.structIndepGiven_iff_forall_condIndepVar",
+   "module": "FactoredSpaces.MainTheorem",
+   "file": "FactoredSpaces/MainTheorem.lean",
+   "line": 63,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "α",
+    "β"
+   ]
+  },
+  {
+   "name": "FactoredSpaces.condIndepVar_of_structIndepGiven",
+   "module": "FactoredSpaces.MainTheorem",
+   "file": "FactoredSpaces/MainTheorem.lean",
+   "line": 82,
+   "kind": "lemma",
+   "sorry": false,
+   "names": [
+    "h",
+    "α",
+    "β"
+   ]
+  },
+  {
+   "name": "FactoredSpaces.structIndepGiven_of_forall_condIndepVar",
+   "module": "FactoredSpaces.MainTheorem",
+   "file": "FactoredSpaces/MainTheorem.lean",
+   "line": 91,
+   "kind": "lemma",
+   "sorry": false,
+   "names": [
+    "h",
+    "α",
+    "β"
+   ]
+  },
+  {
+   "name": "FactoredSpaces.structIndepGiven_of_open",
+   "module": "FactoredSpaces.MainTheorem",
+   "file": "FactoredSpaces/MainTheorem.lean",
+   "line": 102,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set",
+    "h",
+    "α",
+    "β"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 4,
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Finprod": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Indicator": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Group.Pointwise.Set.BigOperators": 1,
+  "Mathlib.Algebra.Group.Pointwise.Set.Finite": 1,
+  "Mathlib.Algebra.Group.Pointwise.Set.Scalar": 1,
+  "Mathlib.Algebra.MvPolynomial.Degrees": 1,
+  "Mathlib.Algebra.MvPolynomial.Funext": 1,
+  "Mathlib.Algebra.MvPolynomial.Nilpotent": 1,
+  "Mathlib.Algebra.MvPolynomial.NoZeroDivisors": 1,
+  "Mathlib.Algebra.MvPolynomial.Variables": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Hom": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 7,
+  "Mathlib.Algebra.Order.Ring.Star": 1,
+  "Mathlib.Algebra.Order.Star.Real": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 1,
+  "Mathlib.Algebra.Ring.Pi": 1,
+  "Mathlib.Algebra.Ring.Subring.Basic": 1,
+  "Mathlib.Analysis.Convex.Basic": 1,
+  "Mathlib.Analysis.Convex.Combination": 2,
+  "Mathlib.Analysis.Convex.Hull": 1,
+  "Mathlib.Analysis.Convex.Integral": 1,
+  "Mathlib.Analysis.Convex.Topology": 2,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 1,
+  "Mathlib.Analysis.Normed.Ring.InfiniteSum": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.NegMulLog": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 2,
+  "Mathlib.Analysis.SpecificLimits.Normed": 1,
+  "Mathlib.CategoryTheory.Category.Basic": 1,
+  "Mathlib.CategoryTheory.EqToHom": 1,
+  "Mathlib.CategoryTheory.Iso": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.IsTerminal": 1,
+  "Mathlib.CategoryTheory.Opposites": 1,
+  "Mathlib.Combinatorics.Digraph.Basic": 1,
+  "Mathlib.Computability.Ackermann": 1,
+  "Mathlib.Computability.Halting": 2,
+  "Mathlib.Computability.Partrec": 3,
+  "Mathlib.Computability.PartrecCode": 2,
+  "Mathlib.Computability.Primrec.List": 2,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Finite.Prod": 1,
+  "Mathlib.Data.Finite.Sum": 1,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Data.Finset.Pairwise": 1,
+  "Mathlib.Data.Finset.Pi": 1,
+  "Mathlib.Data.Finset.Piecewise": 1,
+  "Mathlib.Data.Finset.Powerset": 1,
+  "Mathlib.Data.Finset.Preimage": 1,
+  "Mathlib.Data.Fintype.BigOperators": 1,
+  "Mathlib.Data.Fintype.Card": 2,
+  "Mathlib.Data.Fintype.CardEmbedding": 1,
+  "Mathlib.Data.Fintype.Pi": 3,
+  "Mathlib.Data.Fintype.Powerset": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Fintype.Sigma": 1,
+  "Mathlib.Data.Int.Star": 1,
+  "Mathlib.Data.List.Chain": 1,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Digits.Defs": 1,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Data.Nat.Prime.Defs": 1,
+  "Mathlib.Data.Nat.Size": 3,
+  "Mathlib.Data.Rat.Denumerable": 1,
+  "Mathlib.Data.Rat.Encodable": 1,
+  "Mathlib.Data.Real.Basic": 4,
+  "Mathlib.Data.Rel": 1,
+  "Mathlib.Data.Set.Basic": 3,
+  "Mathlib.Data.Set.Card": 1,
+  "Mathlib.Data.Set.Finite.Basic": 1,
+  "Mathlib.Data.Set.Finite.Powerset": 1,
+  "Mathlib.Data.Set.Insert": 1,
+  "Mathlib.Data.Setoid.Basic": 1,
+  "Mathlib.Data.Setoid.Partition": 1,
+  "Mathlib.Logic.Equiv.Basic": 1,
+  "Mathlib.Logic.Equiv.Prod": 1,
+  "Mathlib.Logic.Relation": 2,
+  "Mathlib.MeasureTheory.Constructions.BorelSpace.Basic": 1,
+  "Mathlib.MeasureTheory.Constructions.Pi": 2,
+  "Mathlib.MeasureTheory.Constructions.ProjectiveFamilyContent": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Basic": 5,
+  "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Set": 2,
+  "Mathlib.MeasureTheory.Integral.Bochner.SumMeasure": 2,
+  "Mathlib.MeasureTheory.Integral.IntegrableOn": 2,
+  "Mathlib.MeasureTheory.Integral.Lebesgue.Basic": 1,
+  "Mathlib.MeasureTheory.Integral.Lebesgue.Countable": 1,
+  "Mathlib.MeasureTheory.Integral.Prod": 1,
+  "Mathlib.MeasureTheory.MeasurableSpace.Embedding": 1,
+  "Mathlib.MeasureTheory.Measure.Dirac": 4,
+  "Mathlib.MeasureTheory.Measure.Map": 1,
+  "Mathlib.MeasureTheory.Measure.ProbabilityMeasure": 1,
+  "Mathlib.MeasureTheory.Measure.Prod": 1,
+  "Mathlib.MeasureTheory.Measure.Real": 2,
+  "Mathlib.MeasureTheory.Measure.Typeclasses.Probability": 1,
+  "Mathlib.MeasureTheory.OuterMeasure.OfAddContent": 1,
+  "Mathlib.MeasureTheory.SpecificCodomains.Pi": 1,
+  "Mathlib.NumberTheory.ArithmeticFunction.Misc": 1,
+  "Mathlib.Order.Basic": 1,
+  "Mathlib.Order.Bounds.Basic": 1,
+  "Mathlib.Order.Comparable": 1,
+  "Mathlib.Order.Disjoint": 1,
+  "Mathlib.Order.Extension.Linear": 1,
+  "Mathlib.Order.Filter.AtTopBot.Basic": 2,
+  "Mathlib.Order.Filter.Basic": 1,
+  "Mathlib.Order.Interval.Set.Infinite": 3,
+  "Mathlib.Order.UpperLower.Basic": 1,
+  "Mathlib.Probability.ConditionalProbability": 3,
+  "Mathlib.Probability.Distributions.Geometric": 1,
+  "Mathlib.Probability.IdentDistrib": 2,
+  "Mathlib.Probability.Independence.Basic": 2,
+  "Mathlib.Probability.Independence.Kernel.IndepFun": 1,
+  "Mathlib.Probability.Kernel.Composition.Comp": 1,
+  "Mathlib.Probability.Kernel.Composition.Prod": 1,
+  "Mathlib.Probability.Kernel.CondDistrib": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Constructions": 1,
+  "Mathlib.Probability.UniformOn": 1,
+  "Mathlib.RingTheory.Polynomial.UniqueFactorization": 1,
+  "Mathlib.SetTheory.Cardinal.Basic": 1,
+  "Mathlib.SetTheory.Cardinal.NatCard": 1,
+  "Mathlib.Tactic.Basic": 1,
+  "Mathlib.Tactic.Cases": 1,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.FieldSimp": 2,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.Finiteness": 1,
+  "Mathlib.Tactic.IntervalCases": 4,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.TFAE": 1,
+  "Mathlib.Topology.Algebra.GroupWithZero": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Basic": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Constructions": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.ENNReal": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Order": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Real": 1,
+  "Mathlib.Topology.Algebra.Module.Cardinality": 1,
+  "Mathlib.Topology.Algebra.Order.LiminfLimsup": 1,
+  "Mathlib.Topology.Bases": 1,
+  "Mathlib.Topology.Compactness.Compact": 3,
+  "Mathlib.Topology.Constructions": 1,
+  "Mathlib.Topology.ContinuousMap.Basic": 1,
+  "Mathlib.Topology.Instances.Real.Lemmas": 1,
+  "Mathlib.Topology.Order.Compact": 1,
+  "Mathlib.Topology.Order.LiminfLimsup": 3,
+  "Mathlib.Topology.Order.OrderClosed": 1,
+  "Mathlib.Topology.UnitInterval": 1,
+  "Mathlib.Util.Notation3": 1
+ },
+ "import_roots": {
+  "Complexitylib": 10,
+  "EconCSLib": 2,
+  "Foundation": 24,
+  "Lean": 1,
+  "Mathlib": 101
+ },
+ "uses": {
+  "Cardinal": 3,
+  "CategoryTheory.Category": 1,
+  "CauchySeq": 1,
+  "Computable": 28,
+  "Continuous": 7,
+  "Convex": 8,
+  "Equiv.Perm": 1,
+  "Filter": 76,
+  "Filter.Tendsto": 24,
+  "Finset": 92,
+  "Finset.card_powersetCard": 1,
+  "HasSum": 2,
+  "Irreducible": 3,
+  "IsCompact": 5,
+  "Language": 1,
+  "List": 105,
+  "MapClusterPt": 1,
+  "Measurable": 40,
+  "MeasurableSet": 19,
+  "MeasurableSpace": 42,
+  "MeasurableSpace.pi": 2,
+  "MeasureTheory.Integrable": 7,
+  "MeasureTheory.IsProbabilityMeasure": 33,
+  "MeasureTheory.Measure": 45,
+  "MeasureTheory.Measure.pi": 1,
+  "MeasureTheory.MeasureSpace": 3,
+  "MeasureTheory.ae": 2,
+  "MeasureTheory.condExp": 1,
+  "MeasureTheory.integral": 1,
+  "MeasureTheory.integral_prod": 1,
+  "Metric.tendsto_atTop": 6,
+  "Module": 1,
+  "Multiset": 3,
+  "MvPolynomial": 5,
+  "Nat.Partrec.Code.fixed_point₂": 1,
+  "NormedSpace": 1,
+  "PMF": 1,
+  "Polynomial": 10,
+  "Prime": 1,
+  "Primrec": 40,
+  "ProbabilityTheory.cond": 4,
+  "ProbabilityTheory.geometricMeasure": 1,
+  "ProbabilityTheory.iIndepFun": 8,
+  "Real": 18,
+  "Real.log": 13,
+  "Representation": 1,
+  "Set": 111,
+  "Subring": 1,
+  "T2Space": 1,
+  "TopologicalSpace": 2,
+  "ack": 2,
+  "convexHull": 2,
+  "exists_norm_eq_iInf_of_complete_convex": 1,
+  "extend_partialOrder": 1
+ },
+ "ci": "SUCCESS"
+}

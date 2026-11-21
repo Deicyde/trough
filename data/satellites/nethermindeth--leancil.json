@@ -1,0 +1,889 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "NethermindEth/LeanCIL",
+ "slug": "nethermindeth--leancil",
+ "rev": "27953edb6f415d81362dda7e99c461ce73ff097c",
+ "date": "2026-11-13T12:09:58Z",
+ "stable": "c9e5e3f4c0e63103714be3853d572d0d7dea6976d0b5e6131ce72055171adbef",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "LeanCIL: Formal Verification for .NET",
+  "excerpt": "LeanCIL uses Lean 4 to prove properties of compiled .NET code. It extracts Common Intermediate Language (CIL) from assemblies written in C#, F# and other .NET languages, then checks proofs against an explicit model of those instructions."
+ },
+ "lean_files": 588,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CIL",
+   "src": "."
+  },
+  {
+   "name": "LeanCILEditor",
+   "src": ".lake/leancil"
+  },
+  {
+   "name": "Tests.Support",
+   "src": "."
+  },
+  {
+   "name": "Tests.Semantics",
+   "src": "."
+  },
+  {
+   "name": "Tests.LiteralDisplay",
+   "src": "."
+  },
+  {
+   "name": "Tests.Automation",
+   "src": "."
+  },
+  {
+   "name": "Tests.VectorLocalCalls",
+   "src": "."
+  },
+  {
+   "name": "Tests.OperationFacts",
+   "src": "."
+  },
+  {
+   "name": "Tests.OperationFactAdapters",
+   "src": "."
+  },
+  {
+   "name": "Tests.AggregateMemorySteps",
+   "src": "."
+  },
+  {
+   "name": "Tests.MethodBinding",
+   "src": "."
+  },
+  {
+   "name": "Tests.MethodIdentity",
+   "src": "."
+  },
+  {
+   "name": "Tests.StructuralLabels",
+   "src": "."
+  },
+  {
+   "name": "Tests.LoopScaffold",
+   "src": "."
+  },
+  {
+   "name": "Tests.DebugNames",
+   "src": "."
+  },
+  {
+   "name": "Tests.MethodContract",
+   "src": "."
+  },
+  {
+   "name": "Tests.ContractCalls",
+   "src": "."
+  },
+  {
+   "name": "Tests.OutcomeContract",
+   "src": "."
+  },
+  {
+   "name": "Tests.RuntimeExceptions",
+   "src": "."
+  },
+  {
+   "name": "Tests.LoopOutcome",
+   "src": "."
+  },
+  {
+   "name": "Tests.ConfinedFootprints",
+   "src": "."
+  },
+  {
+   "name": "Tests.LocalSnapshots",
+   "src": "."
+  },
+  {
+   "name": "Tests.LocalSnapshotSteps",
+   "src": "."
+  },
+  {
+   "name": "Tests.AggregateFields",
+   "src": "."
+  },
+  {
+   "name": "Tests.LoopFrames",
+   "src": "."
+  },
+  {
+   "name": "Tests.LoopDiagnostics",
+   "src": "."
+  },
+  {
+   "name": "Tests.ContractConsequence",
+   "src": "."
+  },
+  {
+   "name": "Tests.InvocationCertificates",
+   "src": "."
+  },
+  {
+   "name": "Tests.ValidCallTransport",
+   "src": "."
+  },
+  {
+   "name": "Tests.BufferContents",
+   "src": "."
+  },
+  {
+   "name": "Tests.ConstructContract",
+   "src": "."
+  },
+  {
+   "name": "Tests.Imports",
+   "src": "."
+  },
+  {
+   "name": "Tests.Linking",
+   "src": "."
+  },
+  {
+   "name": "Tests.ModularStatics",
+   "src": "."
+  },
+  {
+   "name": "Tests.StepFlow",
+   "src": "."
+  },
+  {
+   "name": "Tests.RegionRun",
+   "src": "."
+  },
+  {
+   "name": "Tests.StoreFacts",
+   "src": "."
+  },
+  {
+   "name": "Tests.SimdLanes",
+   "src": "."
+  },
+  {
+   "name": "Tests.SimdCarryCalls",
+   "src": "."
+  },
+  {
+   "name": "Tests.MulScalarFixture",
+   "src": "."
+  },
+  {
+   "name": "Tests.MethodEmbedding",
+   "src": "."
+  },
+  {
+   "name": "Tests.OutcomeEmbedding",
+   "src": "."
+  },
+  {
+   "name": "Tests.ExtractionLayout",
+   "src": "."
+  },
+  {
+   "name": "Tests.ExtractionParameters",
+   "src": "."
+  },
+  {
+   "name": "Tests.FeatureEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ConstantCalls",
+   "src": "."
+  },
+  {
+   "name": "Tests.LayoutCoverage",
+   "src": "."
+  },
+  {
+   "name": "Tests.ViewReuse",
+   "src": "."
+  },
+  {
+   "name": "Tests.UnsafeCallEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.WrapperProofs",
+   "src": "."
+  },
+  {
+   "name": "Tests.UnsafeWrappers",
+   "src": "."
+  },
+  {
+   "name": "Tests.AggregateSetup",
+   "src": "."
+  },
+  {
+   "name": "Tests.ValueBitCasts",
+   "src": "."
+  },
+  {
+   "name": "Tests.TypeTestEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ThrowEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.SpanEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ConstrainedEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ManagedPointerValues",
+   "src": "."
+  },
+  {
+   "name": "Tests.StackAllocation",
+   "src": "."
+  },
+  {
+   "name": "Tests.StackAllocationEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.SpanViews",
+   "src": "."
+  },
+  {
+   "name": "Tests.MemorySpanExecution",
+   "src": "."
+  },
+  {
+   "name": "Tests.StaticValueEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.InterpreterEquations",
+   "src": "."
+  },
+  {
+   "name": "Tests.ImportEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ImportedLayouts",
+   "src": "."
+  },
+  {
+   "name": "Tests.AssemblyPins",
+   "src": "."
+  },
+  {
+   "name": "Tests.ContractClosure",
+   "src": "."
+  },
+  {
+   "name": "Tests.ExactIntrinsics",
+   "src": "."
+  },
+  {
+   "name": "Tests.ScalarEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.VectorFields",
+   "src": "."
+  },
+  {
+   "name": "Tests.VectorStorage",
+   "src": "."
+  },
+  {
+   "name": "Tests.EnumBufferEvidence",
+   "src": "."
+  },
+  {
+   "name": "Tests.ProfileContract",
+   "src": "."
+  },
+  {
+   "name": "Tests.InstructionEquations",
+   "src": "."
+  },
+  {
+   "name": "Tests.CodeAt",
+   "src": "."
+  },
+  {
+   "name": "Tests.ReferenceTests",
+   "src": "."
+  },
+  {
+   "name": "Tests.PointerOperations",
+   "src": "."
+  },
+  {
+   "name": "Tests.Objects",
+   "src": "."
+  },
+  {
+   "name": "Tests.ReferenceArrays",
+   "src": "."
+  },
+  {
+   "name": "Tests.ArrayFields",
+   "src": "."
+  },
+  {
+   "name": "Tests.PrimitiveArrays",
+   "src": "."
+  },
+  {
+   "name": "Tests.ArrayElementReferences",
+   "src": "."
+  },
+  {
+   "name": "Tests.ReadOnlyArrayReferences",
+   "src": "."
+  },
+  {
+   "name": "Tests.FeatureExecution",
+   "src": "."
+  },
+  {
+   "name": "Tests.CertificateFlow",
+   "src": "."
+  },
+  {
+   "name": "Tests.RetainedNumericLocals",
+   "src": "."
+  },
+  {
+   "name": "Tests.ProfileEmbedding",
+   "src": "."
+  },
+  {
+   "name": "Tests.FeatureGetter",
+   "src": "."
+  },
+  {
+   "name": "Tests.Segment",
+   "src": "."
+  },
+  {
+   "name": "Tests.AllocationRenaming",
+   "src": "."
+  },
+  {
+   "name": "Tests.AllocationExecutionRenaming",
+   "src": "."
+  },
+  {
+   "name": "Tests.FlowIndex",
+   "src": "."
+  },
+  {
+   "name": "Tests.ExtractionHomeIndexes",
+   "src": "."
+  },
+  {
+   "name": "Tests.LayoutAccumulation",
+   "src": "."
+  },
+  {
+   "name": "Tests.LayoutProjectionIndexes",
+   "src": "."
+  },
+  {
+   "name": "Tests.FullTransfer",
+   "src": "."
+  },
+  {
+   "name": "Tests.NativeMethodTables",
+   "src": "."
+  },
+  {
+   "name": "Tests.AggregateArrayStorage",
+   "src": "."
+  },
+  {
+   "name": "Tests.WeakestPrecondition",
+   "src": "."
+  },
+  {
+   "name": "Tests.LocalCalls",
+   "src": "."
+  },
+  {
+   "name": "Tests.CallingFields",
+   "src": "."
+  },
+  {
+   "name": "Tests.PublicProofSurface",
+   "src": "."
+  }
+ ],
+ "library_files": 436,
+ "capped": false,
+ "declarations": 5999,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CIL",
+   "file": "CIL.lean"
+  },
+  {
+   "name": "CIL.Observe",
+   "file": "CIL/Observe.lean"
+  },
+  {
+   "name": "Tests.AggregateArrayStorage",
+   "file": "Tests/AggregateArrayStorage.lean"
+  },
+  {
+   "name": "Tests.AggregateFields",
+   "file": "Tests/AggregateFields.lean"
+  },
+  {
+   "name": "Tests.AggregateMemorySteps",
+   "file": "Tests/AggregateMemorySteps.lean"
+  },
+  {
+   "name": "Tests.AggregateSetup",
+   "file": "Tests/AggregateSetup.lean"
+  },
+  {
+   "name": "Tests.AllocationExecutionRenaming",
+   "file": "Tests/AllocationExecutionRenaming.lean"
+  },
+  {
+   "name": "Tests.AllocationRenaming",
+   "file": "Tests/AllocationRenaming.lean"
+  },
+  {
+   "name": "Tests.ArrayElementReferences",
+   "file": "Tests/ArrayElementReferences.lean"
+  },
+  {
+   "name": "Tests.ArrayFields",
+   "file": "Tests/ArrayFields.lean"
+  },
+  {
+   "name": "Tests.AssemblyPins",
+   "file": "Tests/AssemblyPins.lean"
+  },
+  {
+   "name": "Tests.Automation",
+   "file": "Tests/Automation.lean"
+  },
+  {
+   "name": "Tests.BufferContents",
+   "file": "Tests/BufferContents.lean"
+  },
+  {
+   "name": "Tests.CallingFields",
+   "file": "Tests/CallingFields.lean"
+  },
+  {
+   "name": "Tests.CertificateFlow",
+   "file": "Tests/CertificateFlow.lean"
+  },
+  {
+   "name": "Tests.CodeAt",
+   "file": "Tests/CodeAt.lean"
+  },
+  {
+   "name": "Tests.ConfinedFootprints",
+   "file": "Tests/ConfinedFootprints.lean"
+  },
+  {
+   "name": "Tests.ConstantCalls",
+   "file": "Tests/ConstantCalls.lean"
+  },
+  {
+   "name": "Tests.ConstrainedEvidence",
+   "file": "Tests/ConstrainedEvidence.lean"
+  },
+  {
+   "name": "Tests.ConstructContract",
+   "file": "Tests/ConstructContract.lean"
+  },
+  {
+   "name": "Tests.ContractCalls",
+   "file": "Tests/ContractCalls.lean"
+  },
+  {
+   "name": "Tests.ContractClosure",
+   "file": "Tests/ContractClosure.lean"
+  },
+  {
+   "name": "Tests.ContractConsequence",
+   "file": "Tests/ContractConsequence.lean"
+  },
+  {
+   "name": "Tests.DebugNames",
+   "file": "Tests/DebugNames.lean"
+  },
+  {
+   "name": "Tests.EnumBufferEvidence",
+   "file": "Tests/EnumBufferEvidence.lean"
+  },
+  {
+   "name": "Tests.ExactIntrinsics",
+   "file": "Tests/ExactIntrinsics.lean"
+  },
+  {
+   "name": "Tests.ExtractionHomeIndexes",
+   "file": "Tests/ExtractionHomeIndexes.lean"
+  },
+  {
+   "name": "Tests.ExtractionLayout",
+   "file": "Tests/ExtractionLayout.lean"
+  },
+  {
+   "name": "Tests.ExtractionParameters",
+   "file": "Tests/ExtractionParameters.lean"
+  },
+  {
+   "name": "Tests.FeatureEvidence",
+   "file": "Tests/FeatureEvidence.lean"
+  },
+  {
+   "name": "Tests.FeatureExecution",
+   "file": "Tests/FeatureExecution.lean"
+  },
+  {
+   "name": "Tests.FeatureGetter",
+   "file": "Tests/FeatureGetter.lean"
+  },
+  {
+   "name": "Tests.FlowIndex",
+   "file": "Tests/FlowIndex.lean"
+  },
+  {
+   "name": "Tests.FullTransfer",
+   "file": "Tests/FullTransfer.lean"
+  },
+  {
+   "name": "Tests.ImportEvidence",
+   "file": "Tests/ImportEvidence.lean"
+  },
+  {
+   "name": "Tests.ImportedLayouts",
+   "file": "Tests/ImportedLayouts.lean"
+  },
+  {
+   "name": "Tests.Imports",
+   "file": "Tests/Imports.lean"
+  },
+  {
+   "name": "Tests.InstructionEquations",
+   "file": "Tests/InstructionEquations.lean"
+  },
+  {
+   "name": "Tests.InterpreterEquations",
+   "file": "Tests/InterpreterEquations.lean"
+  },
+  {
+   "name": "Tests.InvocationCertificates",
+   "file": "Tests/InvocationCertificates.lean"
+  },
+  {
+   "name": "Tests.LayoutAccumulation",
+   "file": "Tests/LayoutAccumulation.lean"
+  },
+  {
+   "name": "Tests.LayoutCoverage",
+   "file": "Tests/LayoutCoverage.lean"
+  },
+  {
+   "name": "Tests.LayoutProjectionIndexes",
+   "file": "Tests/LayoutProjectionIndexes.lean"
+  },
+  {
+   "name": "Tests.Linking",
+   "file": "Tests/Linking.lean"
+  },
+  {
+   "name": "Tests.LiteralDisplay",
+   "file": "Tests/LiteralDisplay.lean"
+  },
+  {
+   "name": "Tests.LocalCalls",
+   "file": "Tests/LocalCalls.lean"
+  },
+  {
+   "name": "Tests.LocalSnapshotSteps",
+   "file": "Tests/LocalSnapshotSteps.lean"
+  },
+  {
+   "name": "Tests.LocalSnapshots",
+   "file": "Tests/LocalSnapshots.lean"
+  },
+  {
+   "name": "Tests.LoopDiagnostics",
+   "file": "Tests/LoopDiagnostics.lean"
+  },
+  {
+   "name": "Tests.LoopFrames",
+   "file": "Tests/LoopFrames.lean"
+  },
+  {
+   "name": "Tests.LoopOutcome",
+   "file": "Tests/LoopOutcome.lean"
+  },
+  {
+   "name": "Tests.LoopScaffold",
+   "file": "Tests/LoopScaffold.lean"
+  },
+  {
+   "name": "Tests.ManagedPointerValues",
+   "file": "Tests/ManagedPointerValues.lean"
+  },
+  {
+   "name": "Tests.MemorySpanExecution",
+   "file": "Tests/MemorySpanExecution.lean"
+  },
+  {
+   "name": "Tests.MethodBinding",
+   "file": "Tests/MethodBinding.lean"
+  },
+  {
+   "name": "Tests.MethodContract",
+   "file": "Tests/MethodContract.lean"
+  },
+  {
+   "name": "Tests.MethodEmbedding",
+   "file": "Tests/MethodEmbedding.lean"
+  },
+  {
+   "name": "Tests.MethodIdentity",
+   "file": "Tests/MethodIdentity.lean"
+  },
+  {
+   "name": "Tests.ModularStatics",
+   "file": "Tests/ModularStatics.lean"
+  },
+  {
+   "name": "Tests.MulScalarFixture",
+   "file": "Tests/MulScalarFixture.lean"
+  },
+  {
+   "name": "Tests.NativeMethodTables",
+   "file": "Tests/NativeMethodTables.lean"
+  },
+  {
+   "name": "Tests.Objects",
+   "file": "Tests/Objects.lean"
+  },
+  {
+   "name": "Tests.OperationFactAdapters",
+   "file": "Tests/OperationFactAdapters.lean"
+  },
+  {
+   "name": "Tests.OperationFacts",
+   "file": "Tests/OperationFacts.lean"
+  },
+  {
+   "name": "Tests.OutcomeContract",
+   "file": "Tests/OutcomeContract.lean"
+  },
+  {
+   "name": "Tests.OutcomeEmbedding",
+   "file": "Tests/OutcomeEmbedding.lean"
+  },
+  {
+   "name": "Tests.PointerOperations",
+   "file": "Tests/PointerOperations.lean"
+  },
+  {
+   "name": "Tests.PrimitiveArrays",
+   "file": "Tests/PrimitiveArrays.lean"
+  },
+  {
+   "name": "Tests.ProfileContract",
+   "file": "Tests/ProfileContract.lean"
+  },
+  {
+   "name": "Tests.ProfileEmbedding",
+   "file": "Tests/ProfileEmbedding.lean"
+  },
+  {
+   "name": "Tests.PublicProofSurface",
+   "file": "Tests/PublicProofSurface.lean"
+  },
+  {
+   "name": "Tests.ReadOnlyArrayReferences",
+   "file": "Tests/ReadOnlyArrayReferences.lean"
+  },
+  {
+   "name": "Tests.ReferenceArrays",
+   "file": "Tests/ReferenceArrays.lean"
+  },
+  {
+   "name": "Tests.ReferenceTests",
+   "file": "Tests/ReferenceTests.lean"
+  },
+  {
+   "name": "Tests.RegionRun",
+   "file": "Tests/RegionRun.lean"
+  },
+  {
+   "name": "Tests.RetainedNumericLocals",
+   "file": "Tests/RetainedNumericLocals.lean"
+  },
+  {
+   "name": "Tests.RuntimeExceptions",
+   "file": "Tests/RuntimeExceptions.lean"
+  },
+  {
+   "name": "Tests.ScalarEvidence",
+   "file": "Tests/ScalarEvidence.lean"
+  },
+  {
+   "name": "Tests.Segment",
+   "file": "Tests/Segment.lean"
+  },
+  {
+   "name": "Tests.Semantics",
+   "file": "Tests/Semantics.lean"
+  },
+  {
+   "name": "Tests.SimdCarryCalls",
+   "file": "Tests/SimdCarryCalls.lean"
+  },
+  {
+   "name": "Tests.SimdLanes",
+   "file": "Tests/SimdLanes.lean"
+  },
+  {
+   "name": "Tests.SpanEvidence",
+   "file": "Tests/SpanEvidence.lean"
+  },
+  {
+   "name": "Tests.SpanViews",
+   "file": "Tests/SpanViews.lean"
+  },
+  {
+   "name": "Tests.StackAllocation",
+   "file": "Tests/StackAllocation.lean"
+  },
+  {
+   "name": "Tests.StackAllocationEvidence",
+   "file": "Tests/StackAllocationEvidence.lean"
+  },
+  {
+   "name": "Tests.StaticValueEvidence",
+   "file": "Tests/StaticValueEvidence.lean"
+  },
+  {
+   "name": "Tests.StepFlow",
+   "file": "Tests/StepFlow.lean"
+  },
+  {
+   "name": "Tests.StoreFacts",
+   "file": "Tests/StoreFacts.lean"
+  },
+  {
+   "name": "Tests.StructuralLabels",
+   "file": "Tests/StructuralLabels.lean"
+  },
+  {
+   "name": "Tests.Support",
+   "file": "Tests/Support.lean"
+  },
+  {
+   "name": "Tests.ThrowEvidence",
+   "file": "Tests/ThrowEvidence.lean"
+  },
+  {
+   "name": "Tests.TypeTestEvidence",
+   "file": "Tests/TypeTestEvidence.lean"
+  },
+  {
+   "name": "Tests.UnsafeCallEvidence",
+   "file": "Tests/UnsafeCallEvidence.lean"
+  },
+  {
+   "name": "Tests.UnsafeWrappers",
+   "file": "Tests/UnsafeWrappers.lean"
+  },
+  {
+   "name": "Tests.ValidCallTransport",
+   "file": "Tests/ValidCallTransport.lean"
+  },
+  {
+   "name": "Tests.ValueBitCasts",
+   "file": "Tests/ValueBitCasts.lean"
+  },
+  {
+   "name": "Tests.VectorFields",
+   "file": "Tests/VectorFields.lean"
+  },
+  {
+   "name": "Tests.VectorLocalCalls",
+   "file": "Tests/VectorLocalCalls.lean"
+  },
+  {
+   "name": "Tests.VectorStorage",
+   "file": "Tests/VectorStorage.lean"
+  },
+  {
+   "name": "Tests.ViewReuse",
+   "file": "Tests/ViewReuse.lean"
+  },
+  {
+   "name": "Tests.WeakestPrecondition",
+   "file": "Tests/WeakestPrecondition.lean"
+  },
+  {
+   "name": "Tests.WrapperProofs",
+   "file": "Tests/WrapperProofs.lean"
+  }
+ ],
+ "root_closure_files": 433,
+ "root_closure_sorry": [
+  "CIL/Interface/Closure.lean",
+  "CIL/Observe.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 1,
+  "Lean": 21,
+  "Std": 13
+ },
+ "uses": {
+  "Array": 36,
+  "Int": 17,
+  "List": 323,
+  "Nat": 369,
+  "Std.HashMap": 5
+ },
+ "ci": "SUCCESS"
+}

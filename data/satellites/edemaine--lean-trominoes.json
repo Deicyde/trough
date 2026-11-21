@@ -1,0 +1,272 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "edemaine/lean-trominoes",
+ "slug": "edemaine--lean-trominoes",
+ "rev": "6d5b36c15cec6cb18d30137b7f1c7fb92ea24332",
+ "date": "2026-10-20T15:17:46Z",
+ "stable": "a7ef9700bae0b8c49aeb3a323350e774f8edb685ac644440ade90b1b87e66935",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "lean-trominoes",
+  "excerpt": "Lean formalization of [*Undecidability of Tiling with a Tromino*](https://arxiv.org/abs/2509.07906) by the MIT--ULB CompGeom Group, Zachary Abel, Hugo Akitaya, Lily Chung, Erik D. Demaine, Jenny Diomidova, Della Hendrickson, Stefan Langerman, and Jayson Lynch. The working paper is included as [PDF](trominoes.pdf) and [source](trominoes.texlish). Use the checked-in source as the reference for theorem statements and proofs in this formalization."
+ },
+ "lean_files": 10088,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "lean_wang",
+   "url": "https://github.com/edemaine/lean-wang",
+   "rev": "64268a3aaaef3eac65559352ef94f62ab9c00482"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "LeanTrominoes",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 28107,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 272,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "LeanTrominoes",
+   "file": "LeanTrominoes.lean"
+  }
+ ],
+ "root_closure_files": 1536,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 44,
+ "headlines": [
+  {
+   "name": "LeanTrominoes.PeriodicCNF.PolySpaceHardness.localPeriodicCNF1DSAT_PSPACEComplete",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFPolySpaceMembership",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFPolySpaceMembership.lean",
+   "line": 33,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanTrominoes.PeriodicCNF.PolySpaceHardness.localPeriodicThreeCNF1DSAT_PSPACEComplete",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFFieldWidth",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFFieldWidth.lean",
+   "line": 109,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanTrominoes.PeriodicGridDrawing.Arithmetic.isContinuouslyPlanar_inPSPACE",
+   "module": "LeanTrominoes.Graphs.Drawings.Grid.PeriodicDrawingPolySpaceVerification",
+   "file": "LeanTrominoes/Graphs/Drawings/Grid/PeriodicDrawingPolySpaceVerification.lean",
+   "line": 59,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanTrominoes.PeriodicCNF.LineWindow.state_bits_le_encoding",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFLineSearch",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFLineSearch.lean",
+   "line": 77,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "LeanTrominoes.PeriodicCNF.LineWindow.check_localPeriodicCNF1DSAT",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFLineSearch",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFLineSearch.lean",
+   "line": 51,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "LeanTrominoes.PeriodicCNFDimensions.satisfiable_coREComplete",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFDimensions",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFDimensions.lean",
+   "line": 113,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "LeanTrominoes.PeriodicCNFDimensions.localProblem_coREComplete",
+   "module": "LeanTrominoes.SAT.CNF.PeriodicCNFDimensions",
+   "file": "LeanTrominoes/SAT/CNF/PeriodicCNFDimensions.lean",
+   "line": 118,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "LeanTrominoes.Gadget.NormalizedOrientation.coREComplete",
+   "module": "LeanTrominoes.Graphs.Orientation.NormalizedOrientationCompleteness",
+   "file": "LeanTrominoes/Graphs/Orientation/NormalizedOrientationCompleteness.lean",
+   "line": 54,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 2,
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Group.Subgroup.Basic": 1,
+  "Mathlib.Algebra.Group.Subgroup.Defs": 1,
+  "Mathlib.Algebra.Group.Subgroup.Lattice": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 2,
+  "Mathlib.Algebra.Order.BigOperators.Group.List": 1,
+  "Mathlib.Algebra.Order.Floor.Ring": 2,
+  "Mathlib.Algebra.Polynomial.CoeffList": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Combinatorics.Hall.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Paths": 1,
+  "Mathlib.Computability.Encoding": 2,
+  "Mathlib.Computability.Primrec.List": 8,
+  "Mathlib.Computability.TuringMachine.Computable": 4,
+  "Mathlib.Computability.TuringMachine.ToPartrec": 4,
+  "Mathlib.Data.BitVec": 3,
+  "Mathlib.Data.Fin.SuccPred": 2,
+  "Mathlib.Data.Finset.Card": 9,
+  "Mathlib.Data.Finset.Lattice.Fold": 1,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Data.Finset.Range": 1,
+  "Mathlib.Data.Finset.Sort": 1,
+  "Mathlib.Data.Finset.Union": 2,
+  "Mathlib.Data.Fintype.Basic": 3,
+  "Mathlib.Data.Fintype.BigOperators": 1,
+  "Mathlib.Data.Fintype.EquivFin": 4,
+  "Mathlib.Data.Fintype.Perm": 1,
+  "Mathlib.Data.Fintype.Pigeonhole": 1,
+  "Mathlib.Data.Fintype.Prod": 2,
+  "Mathlib.Data.Fintype.Sigma": 2,
+  "Mathlib.Data.Fintype.Sum": 3,
+  "Mathlib.Data.Fintype.Vector": 1,
+  "Mathlib.Data.Int.Basic": 1,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.Int.Interval": 1,
+  "Mathlib.Data.Int.NatAbs": 1,
+  "Mathlib.Data.Int.Order.Basic": 1,
+  "Mathlib.Data.Int.Range": 1,
+  "Mathlib.Data.List.Basic": 26,
+  "Mathlib.Data.List.Chain": 4,
+  "Mathlib.Data.List.Count": 2,
+  "Mathlib.Data.List.Dedup": 22,
+  "Mathlib.Data.List.Defs": 3,
+  "Mathlib.Data.List.Enum": 8,
+  "Mathlib.Data.List.FinRange": 2,
+  "Mathlib.Data.List.Flatten": 1,
+  "Mathlib.Data.List.Forall2": 1,
+  "Mathlib.Data.List.GetD": 9,
+  "Mathlib.Data.List.Nodup": 10,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.List.Perm.Basic": 5,
+  "Mathlib.Data.List.Permutation": 1,
+  "Mathlib.Data.List.ProdSigma": 7,
+  "Mathlib.Data.List.Range": 3,
+  "Mathlib.Data.List.Sigma": 4,
+  "Mathlib.Data.List.Sort": 9,
+  "Mathlib.Data.List.SplitLengths": 2,
+  "Mathlib.Data.List.TakeDrop": 2,
+  "Mathlib.Data.List.TakeWhile": 1,
+  "Mathlib.Data.List.Zip": 7,
+  "Mathlib.Data.Nat.BitIndices": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Log": 4,
+  "Mathlib.Data.Nat.Pairing": 2,
+  "Mathlib.Data.Nat.Prime.Basic": 1,
+  "Mathlib.Data.Nat.Size": 2,
+  "Mathlib.Data.Nat.Sqrt": 2,
+  "Mathlib.Data.Prod.Lex": 5,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.Rat.Defs": 2,
+  "Mathlib.Data.Rat.Floor": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.LinearAlgebra.Basis.VectorSpace": 1,
+  "Mathlib.LinearAlgebra.Dimension.Constructions": 1,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Defs": 1,
+  "Mathlib.LinearAlgebra.Matrix.Adjugate": 2,
+  "Mathlib.LinearAlgebra.Matrix.Basis": 1,
+  "Mathlib.Logic.Encodable.Basic": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 5,
+  "Mathlib.Logic.Function.Basic": 1,
+  "Mathlib.Logic.Function.Iterate": 1,
+  "Mathlib.Logic.Relation": 3,
+  "Mathlib.Tactic": 40,
+  "Mathlib.Tactic.ClearExcept": 1,
+  "Mathlib.Tactic.DeriveFintype": 6,
+  "Mathlib.Tactic.FinCases": 2,
+  "Mathlib.Tactic.GCongr": 2,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.Linarith": 6,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Ring": 3
+ },
+ "import_roots": {
+  "Batteries": 6,
+  "Lean": 9,
+  "LeanWang": 4,
+  "Mathlib": 239
+ },
+ "uses": {
+  "Array": 2,
+  "Computable": 34,
+  "Equiv.Perm": 1,
+  "Equiv.Perm.sign": 1,
+  "Field": 106,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "Finset": 42,
+  "Fintype.exists_ne_map_eq_of_card_lt": 2,
+  "Int": 650,
+  "List": 2991,
+  "Matrix": 3,
+  "Matrix.mulVec_cramer": 1,
+  "Module": 1,
+  "Multiset": 1,
+  "Nat": 2446,
+  "Orientation": 1,
+  "Polynomial": 64,
+  "Primrec": 144,
+  "Rat": 1,
+  "Representation": 25,
+  "Set": 17,
+  "SimpleGraph": 3,
+  "Submodule.span": 1,
+  "TopologicalSpace": 2,
+  "Turing.TM2Computable": 1,
+  "Turing.TM2ComputableInPolyTime": 609
+ },
+ "ci": null
+}

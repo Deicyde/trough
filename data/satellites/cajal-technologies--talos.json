@@ -1,0 +1,105 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "cajal-technologies/talos",
+ "slug": "cajal-technologies--talos",
+ "rev": "d7c84ac660757953b752bdfc9cb8dae3dab623ed",
+ "date": "2026-11-02T18:47:42Z",
+ "stable": "43b777477542be165614a73dbcafe9fad4c9813b035d3922e4e03cd80837dd9e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Talos",
+  "excerpt": null
+ },
+ "lean_files": 410,
+ "admitted": true,
+ "folder": "codelib",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean.git",
+   "rev": "9a4ae0df7ea421267d6cbed9496a3845dd14e1e1"
+  },
+  {
+   "name": "WasmInterpreterLean",
+   "url": "../interpreter",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "CodeLib",
+   "src": "."
+  }
+ ],
+ "library_files": 87,
+ "capped": false,
+ "declarations": 1732,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "CodeLib",
+   "file": "codelib/CodeLib.lean"
+  },
+  {
+   "name": "CodeLib.Examples.Gcd",
+   "file": "codelib/CodeLib/Examples/Gcd.lean"
+  },
+  {
+   "name": "CodeLib.Examples.MergeSort.StdIO",
+   "file": "codelib/CodeLib/Examples/MergeSort/StdIO.lean"
+  },
+  {
+   "name": "CodeLib.Examples.Quicksort.TotalProof",
+   "file": "codelib/CodeLib/Examples/Quicksort/TotalProof.lean"
+  },
+  {
+   "name": "CodeLib.IEEE32.Exec",
+   "file": "codelib/CodeLib/IEEE32/Exec.lean"
+  },
+  {
+   "name": "CodeLib.Near.Examples.KvSetter",
+   "file": "codelib/CodeLib/Near/Examples/KvSetter.lean"
+  }
+ ],
+ "root_closure_files": 86,
+ "root_closure_sorry": [],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Data.List.Sort": 5,
+  "Mathlib.Data.Nat.Bitwise": 1
+ },
+ "import_roots": {
+  "Interpreter": 18,
+  "Iris": 7,
+  "Lean": 3,
+  "Mathlib": 6,
+  "Std": 2
+ },
+ "uses": {
+  "Array": 5,
+  "Int": 1,
+  "Language": 5,
+  "List": 54,
+  "Module": 32,
+  "Nat": 57
+ },
+ "ci": "SUCCESS"
+}

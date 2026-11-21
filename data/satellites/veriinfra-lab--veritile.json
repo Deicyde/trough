@@ -1,0 +1,1589 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "VeriInfra-Lab/VeriTile",
+ "slug": "veriinfra-lab--veritile",
+ "rev": "725b16a5aa507a6fbcfb984c487be17ddb6d552b",
+ "date": "2026-11-16T09:37:21Z",
+ "stable": "1e234e3d9a936ae3e29ef5b5c802b986756832a9b8811dbd003d392fb5b483fe",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Zenan Li"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "VeriTile",
+  "excerpt": "📖 **Docs site:** [veriinfra-lab.github.io/VeriTile/](https://veriinfra-lab.github.io/VeriTile/) (bench cookbook, status, architecture). Run locally: `./site/scripts/dev.sh`."
+ },
+ "lean_files": 1001,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.29.0",
+ "mathlib": "8a178386ffc0f5fef0b77738bb5449d50efeea95",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "VeriTile",
+   "src": "."
+  },
+  {
+   "name": "VeriTileMath",
+   "src": "."
+  },
+  {
+   "name": "FPFrontendRegressions",
+   "src": "."
+  },
+  {
+   "name": "TritonBenchSpecExamples",
+   "src": "."
+  },
+  {
+   "name": "VeriTileFull",
+   "src": "."
+  },
+  {
+   "name": "FinalRegressions",
+   "src": "."
+  }
+ ],
+ "library_files": 994,
+ "capped": false,
+ "declarations": 10396,
+ "sorry_files": 8,
+ "axioms": 1,
+ "closure_files": 95,
+ "closure_sorry": [
+  "VeriTile/Triton/Memory/Flatten.lean",
+  "VeriTile/Triton/Memory/FlattenR.lean",
+  "VeriTile/Triton/Memory/Locality.lean",
+  "VeriTile/Triton/Memory/Typing/Checker.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "VeriTile.Examples.ApproxGeLU",
+   "file": "VeriTile/Examples/ApproxGeLU.lean"
+  },
+  {
+   "name": "VeriTile.Examples.AttentionForwardClosedForm",
+   "file": "VeriTile/Examples/AttentionForwardClosedForm.lean"
+  },
+  {
+   "name": "VeriTile.Examples.Common",
+   "file": "VeriTile/Examples/Common.lean"
+  },
+  {
+   "name": "VeriTile.Examples.ErasedProjection",
+   "file": "VeriTile/Examples/ErasedProjection.lean"
+  },
+  {
+   "name": "VeriTile.Examples.FlashAttention1",
+   "file": "VeriTile/Examples/FlashAttention1.lean"
+  },
+  {
+   "name": "VeriTile.Examples.FlashAttention2",
+   "file": "VeriTile/Examples/FlashAttention2.lean"
+  },
+  {
+   "name": "VeriTile.Meta.Disprove",
+   "file": "VeriTile/Meta/Disprove.lean"
+  },
+  {
+   "name": "VeriTile.Meta.EquivDecompose",
+   "file": "VeriTile/Meta/EquivDecompose.lean"
+  },
+  {
+   "name": "VeriTile.Meta.FPProve",
+   "file": "VeriTile/Meta/FPProve.lean"
+  },
+  {
+   "name": "VeriTile.Meta.Specification",
+   "file": "VeriTile/Meta/Specification.lean"
+  },
+  {
+   "name": "VeriTile.Meta.StatementAudit",
+   "file": "VeriTile/Meta/StatementAudit.lean"
+  },
+  {
+   "name": "VeriTile.Meta.TrustReport",
+   "file": "VeriTile/Meta/TrustReport.lean"
+  },
+  {
+   "name": "VeriTile.Spec",
+   "file": "VeriTile/Spec.lean"
+  },
+  {
+   "name": "VeriTile.Triton",
+   "file": "VeriTile/Triton.lean"
+  },
+  {
+   "name": "tests.lean.AdvancePointerProvenance",
+   "file": "tests/lean/AdvancePointerProvenance.lean"
+  },
+  {
+   "name": "tests.lean.AlgorithmProgramIO",
+   "file": "tests/lean/AlgorithmProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.AlgorithmScheduledIO",
+   "file": "tests/lean/AlgorithmScheduledIO.lean"
+  },
+  {
+   "name": "tests.lean.BackendMemory",
+   "file": "tests/lean/BackendMemory.lean"
+  },
+  {
+   "name": "tests.lean.BinaryPowerConstants",
+   "file": "tests/lean/BinaryPowerConstants.lean"
+  },
+  {
+   "name": "tests.lean.BinaryPureJitFunctions",
+   "file": "tests/lean/BinaryPureJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.BinaryPureJitReference",
+   "file": "tests/lean/BinaryPureJitReference.lean"
+  },
+  {
+   "name": "tests.lean.BlockPadding",
+   "file": "tests/lean/BlockPadding.lean"
+  },
+  {
+   "name": "tests.lean.BlockPaddingDSL",
+   "file": "tests/lean/BlockPaddingDSL.lean"
+  },
+  {
+   "name": "tests.lean.BooleanCallControl",
+   "file": "tests/lean/BooleanCallControl.lean"
+  },
+  {
+   "name": "tests.lean.BooleanCallControlReference",
+   "file": "tests/lean/BooleanCallControlReference.lean"
+  },
+  {
+   "name": "tests.lean.BranchDtypeRegression",
+   "file": "tests/lean/BranchDtypeRegression.lean"
+  },
+  {
+   "name": "tests.lean.BuiltinFloatZero",
+   "file": "tests/lean/BuiltinFloatZero.lean"
+  },
+  {
+   "name": "tests.lean.CallArgumentCapture",
+   "file": "tests/lean/CallArgumentCapture.lean"
+  },
+  {
+   "name": "tests.lean.CallArguments",
+   "file": "tests/lean/CallArguments.lean"
+  },
+  {
+   "name": "tests.lean.CallScalarPrecision",
+   "file": "tests/lean/CallScalarPrecision.lean"
+  },
+  {
+   "name": "tests.lean.CallSignature",
+   "file": "tests/lean/CallSignature.lean"
+  },
+  {
+   "name": "tests.lean.CastReverseRange",
+   "file": "tests/lean/CastReverseRange.lean"
+  },
+  {
+   "name": "tests.lean.ChainedSourceCasts",
+   "file": "tests/lean/ChainedSourceCasts.lean"
+  },
+  {
+   "name": "tests.lean.ChainedSourceCastsReference",
+   "file": "tests/lean/ChainedSourceCastsReference.lean"
+  },
+  {
+   "name": "tests.lean.ClosedFloatDTypes",
+   "file": "tests/lean/ClosedFloatDTypes.lean"
+  },
+  {
+   "name": "tests.lean.ClosedStructuralAudit",
+   "file": "tests/lean/ClosedStructuralAudit.lean"
+  },
+  {
+   "name": "tests.lean.ClosedUnaryJitFunctions",
+   "file": "tests/lean/ClosedUnaryJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.ConcurrentEventIO",
+   "file": "tests/lean/ConcurrentEventIO.lean"
+  },
+  {
+   "name": "tests.lean.ConditionalCast",
+   "file": "tests/lean/ConditionalCast.lean"
+  },
+  {
+   "name": "tests.lean.ConditionalPointerAdvances",
+   "file": "tests/lean/ConditionalPointerAdvances.lean"
+  },
+  {
+   "name": "tests.lean.ConditionalPureJitFunctions",
+   "file": "tests/lean/ConditionalPureJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.ConstexprBodyBindings",
+   "file": "tests/lean/ConstexprBodyBindings.lean"
+  },
+  {
+   "name": "tests.lean.ConstexprFloatExpressions",
+   "file": "tests/lean/ConstexprFloatExpressions.lean"
+  },
+  {
+   "name": "tests.lean.DTypeLayoutHints",
+   "file": "tests/lean/DTypeLayoutHints.lean"
+  },
+  {
+   "name": "tests.lean.DTypeResolution",
+   "file": "tests/lean/DTypeResolution.lean"
+  },
+  {
+   "name": "tests.lean.DirectPhiloxOp",
+   "file": "tests/lean/DirectPhiloxOp.lean"
+  },
+  {
+   "name": "tests.lean.DirectPhiloxShapes",
+   "file": "tests/lean/DirectPhiloxShapes.lean"
+  },
+  {
+   "name": "tests.lean.DirectRandomFrontend",
+   "file": "tests/lean/DirectRandomFrontend.lean"
+  },
+  {
+   "name": "tests.lean.DiscreteControls",
+   "file": "tests/lean/DiscreteControls.lean"
+  },
+  {
+   "name": "tests.lean.DiscreteReductions",
+   "file": "tests/lean/DiscreteReductions.lean"
+  },
+  {
+   "name": "tests.lean.Disprove",
+   "file": "tests/lean/Disprove.lean"
+  },
+  {
+   "name": "tests.lean.DynamicBlockAdvance",
+   "file": "tests/lean/DynamicBlockAdvance.lean"
+  },
+  {
+   "name": "tests.lean.DynamicBlockPointerLayout",
+   "file": "tests/lean/DynamicBlockPointerLayout.lean"
+  },
+  {
+   "name": "tests.lean.EquivTactics",
+   "file": "tests/lean/EquivTactics.lean"
+  },
+  {
+   "name": "tests.lean.ExactIntegerFloatStrings",
+   "file": "tests/lean/ExactIntegerFloatStrings.lean"
+  },
+  {
+   "name": "tests.lean.FP32BooleanArithmetic",
+   "file": "tests/lean/FP32BooleanArithmetic.lean"
+  },
+  {
+   "name": "tests.lean.FP32CallValues",
+   "file": "tests/lean/FP32CallValues.lean"
+  },
+  {
+   "name": "tests.lean.FP32LoadedUpdates",
+   "file": "tests/lean/FP32LoadedUpdates.lean"
+  },
+  {
+   "name": "tests.lean.FP4Source",
+   "file": "tests/lean/FP4Source.lean"
+  },
+  {
+   "name": "tests.lean.FP64ConversionBackend",
+   "file": "tests/lean/FP64ConversionBackend.lean"
+  },
+  {
+   "name": "tests.lean.FP8Bitcast",
+   "file": "tests/lean/FP8Bitcast.lean"
+  },
+  {
+   "name": "tests.lean.FPAddressedInputsIO",
+   "file": "tests/lean/FPAddressedInputsIO.lean"
+  },
+  {
+   "name": "tests.lean.FPAdmissionCoverage",
+   "file": "tests/lean/FPAdmissionCoverage.lean"
+  },
+  {
+   "name": "tests.lean.FPAdmissionMetadata",
+   "file": "tests/lean/FPAdmissionMetadata.lean"
+  },
+  {
+   "name": "tests.lean.FPArrayProgramIO",
+   "file": "tests/lean/FPArrayProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPAtomicExecution",
+   "file": "tests/lean/FPAtomicExecution.lean"
+  },
+  {
+   "name": "tests.lean.FPBlockPointer",
+   "file": "tests/lean/FPBlockPointer.lean"
+  },
+  {
+   "name": "tests.lean.FPBranchRewrite",
+   "file": "tests/lean/FPBranchRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPBroadcastMultiplication",
+   "file": "tests/lean/FPBroadcastMultiplication.lean"
+  },
+  {
+   "name": "tests.lean.FPBroadcastRewrite",
+   "file": "tests/lean/FPBroadcastRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPComputeAddition",
+   "file": "tests/lean/FPComputeAddition.lean"
+  },
+  {
+   "name": "tests.lean.FPConstantBranchContexts",
+   "file": "tests/lean/FPConstantBranchContexts.lean"
+  },
+  {
+   "name": "tests.lean.FPControl",
+   "file": "tests/lean/FPControl.lean"
+  },
+  {
+   "name": "tests.lean.FPCountConversion",
+   "file": "tests/lean/FPCountConversion.lean"
+  },
+  {
+   "name": "tests.lean.FPDebugBarrier",
+   "file": "tests/lean/FPDebugBarrier.lean"
+  },
+  {
+   "name": "tests.lean.FPDisprove",
+   "file": "tests/lean/FPDisprove.lean"
+  },
+  {
+   "name": "tests.lean.FPDotAccumulator",
+   "file": "tests/lean/FPDotAccumulator.lean"
+  },
+  {
+   "name": "tests.lean.FPDotOptions",
+   "file": "tests/lean/FPDotOptions.lean"
+  },
+  {
+   "name": "tests.lean.FPDotRebinding",
+   "file": "tests/lean/FPDotRebinding.lean"
+  },
+  {
+   "name": "tests.lean.FPDualOutput",
+   "file": "tests/lean/FPDualOutput.lean"
+  },
+  {
+   "name": "tests.lean.FPEquational",
+   "file": "tests/lean/FPEquational.lean"
+  },
+  {
+   "name": "tests.lean.FPExpandDimsPrecision",
+   "file": "tests/lean/FPExpandDimsPrecision.lean"
+  },
+  {
+   "name": "tests.lean.FPFmaSource",
+   "file": "tests/lean/FPFmaSource.lean"
+  },
+  {
+   "name": "tests.lean.FPGuardedProgramIO",
+   "file": "tests/lean/FPGuardedProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPInputBindingIO",
+   "file": "tests/lean/FPInputBindingIO.lean"
+  },
+  {
+   "name": "tests.lean.FPIntRangeRewrite",
+   "file": "tests/lean/FPIntRangeRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPIntegerConversionNeg",
+   "file": "tests/lean/FPIntegerConversionNeg.lean"
+  },
+  {
+   "name": "tests.lean.FPIntegerDotIO",
+   "file": "tests/lean/FPIntegerDotIO.lean"
+  },
+  {
+   "name": "tests.lean.FPIntegerOutputIO",
+   "file": "tests/lean/FPIntegerOutputIO.lean"
+  },
+  {
+   "name": "tests.lean.FPIntegerStageIO",
+   "file": "tests/lean/FPIntegerStageIO.lean"
+  },
+  {
+   "name": "tests.lean.FPIntegralExecution",
+   "file": "tests/lean/FPIntegralExecution.lean"
+  },
+  {
+   "name": "tests.lean.FPInterleaveBitcast",
+   "file": "tests/lean/FPInterleaveBitcast.lean"
+  },
+  {
+   "name": "tests.lean.FPLayerNormExecution",
+   "file": "tests/lean/FPLayerNormExecution.lean"
+  },
+  {
+   "name": "tests.lean.FPLibdeviceExp",
+   "file": "tests/lean/FPLibdeviceExp.lean"
+  },
+  {
+   "name": "tests.lean.FPLogBackends",
+   "file": "tests/lean/FPLogBackends.lean"
+  },
+  {
+   "name": "tests.lean.FPLogCandidates",
+   "file": "tests/lean/FPLogCandidates.lean"
+  },
+  {
+   "name": "tests.lean.FPLogExp",
+   "file": "tests/lean/FPLogExp.lean"
+  },
+  {
+   "name": "tests.lean.FPLogProduct",
+   "file": "tests/lean/FPLogProduct.lean"
+  },
+  {
+   "name": "tests.lean.FPLogSumExpCandidate",
+   "file": "tests/lean/FPLogSumExpCandidate.lean"
+  },
+  {
+   "name": "tests.lean.FPMaskedPointerLoad",
+   "file": "tests/lean/FPMaskedPointerLoad.lean"
+  },
+  {
+   "name": "tests.lean.FPMaterializedProgramIO",
+   "file": "tests/lean/FPMaterializedProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPMatrixExamples",
+   "file": "tests/lean/FPMatrixExamples.lean"
+  },
+  {
+   "name": "tests.lean.FPMaximumPrimitive",
+   "file": "tests/lean/FPMaximumPrimitive.lean"
+  },
+  {
+   "name": "tests.lean.FPMinimumReduction",
+   "file": "tests/lean/FPMinimumReduction.lean"
+  },
+  {
+   "name": "tests.lean.FPMultinomialSource",
+   "file": "tests/lean/FPMultinomialSource.lean"
+  },
+  {
+   "name": "tests.lean.FPNarrowScope",
+   "file": "tests/lean/FPNarrowScope.lean"
+  },
+  {
+   "name": "tests.lean.FPObservedInputCellsIO",
+   "file": "tests/lean/FPObservedInputCellsIO.lean"
+  },
+  {
+   "name": "tests.lean.FPObservedProgramEquivalence",
+   "file": "tests/lean/FPObservedProgramEquivalence.lean"
+  },
+  {
+   "name": "tests.lean.FPObservedProgramIO",
+   "file": "tests/lean/FPObservedProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPOnlineSoftmax",
+   "file": "tests/lean/FPOnlineSoftmax.lean"
+  },
+  {
+   "name": "tests.lean.FPOrdinaryProgramIO",
+   "file": "tests/lean/FPOrdinaryProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPPerAddressProgramIO",
+   "file": "tests/lean/FPPerAddressProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPPrimitiveCandidates",
+   "file": "tests/lean/FPPrimitiveCandidates.lean"
+  },
+  {
+   "name": "tests.lean.FPProgramIO",
+   "file": "tests/lean/FPProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPRangeRewrite",
+   "file": "tests/lean/FPRangeRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPRecurrenceExecution",
+   "file": "tests/lean/FPRecurrenceExecution.lean"
+  },
+  {
+   "name": "tests.lean.FPReductionProgramIO",
+   "file": "tests/lean/FPReductionProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPReductionSchedule",
+   "file": "tests/lean/FPReductionSchedule.lean"
+  },
+  {
+   "name": "tests.lean.FPRelationalProgramIO",
+   "file": "tests/lean/FPRelationalProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPRemap",
+   "file": "tests/lean/FPRemap.lean"
+  },
+  {
+   "name": "tests.lean.FPReversePointer",
+   "file": "tests/lean/FPReversePointer.lean"
+  },
+  {
+   "name": "tests.lean.FPScalarAdmission",
+   "file": "tests/lean/FPScalarAdmission.lean"
+  },
+  {
+   "name": "tests.lean.FPScalarArithmetic",
+   "file": "tests/lean/FPScalarArithmetic.lean"
+  },
+  {
+   "name": "tests.lean.FPScan",
+   "file": "tests/lean/FPScan.lean"
+  },
+  {
+   "name": "tests.lean.FPSoftmaxForwardPointerReject",
+   "file": "tests/lean/FPSoftmaxForwardPointerReject.lean"
+  },
+  {
+   "name": "tests.lean.FPSoftmaxStable",
+   "file": "tests/lean/FPSoftmaxStable.lean"
+  },
+  {
+   "name": "tests.lean.FPStableLogSumExp",
+   "file": "tests/lean/FPStableLogSumExp.lean"
+  },
+  {
+   "name": "tests.lean.FPStaticRangeRewrite",
+   "file": "tests/lean/FPStaticRangeRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPStrictMeta",
+   "file": "tests/lean/FPStrictMeta.lean"
+  },
+  {
+   "name": "tests.lean.FPStrictRewrite",
+   "file": "tests/lean/FPStrictRewrite.lean"
+  },
+  {
+   "name": "tests.lean.FPStrictRuleBoundaries",
+   "file": "tests/lean/FPStrictRuleBoundaries.lean"
+  },
+  {
+   "name": "tests.lean.FPStructural",
+   "file": "tests/lean/FPStructural.lean"
+  },
+  {
+   "name": "tests.lean.FPStructuralSafety",
+   "file": "tests/lean/FPStructuralSafety.lean"
+  },
+  {
+   "name": "tests.lean.FPSupplementalAdmission",
+   "file": "tests/lean/FPSupplementalAdmission.lean"
+  },
+  {
+   "name": "tests.lean.FPUndefProgramIO",
+   "file": "tests/lean/FPUndefProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FPWelfordArithmetic",
+   "file": "tests/lean/FPWelfordArithmetic.lean"
+  },
+  {
+   "name": "tests.lean.FPWhereContext",
+   "file": "tests/lean/FPWhereContext.lean"
+  },
+  {
+   "name": "tests.lean.FillProgramIO",
+   "file": "tests/lean/FillProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.FiniteCallProfiles",
+   "file": "tests/lean/FiniteCallProfiles.lean"
+  },
+  {
+   "name": "tests.lean.FiniteNatJitFunctions",
+   "file": "tests/lean/FiniteNatJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.Float32FiniteDecode",
+   "file": "tests/lean/Float32FiniteDecode.lean"
+  },
+  {
+   "name": "tests.lean.Float64LoadCast",
+   "file": "tests/lean/Float64LoadCast.lean"
+  },
+  {
+   "name": "tests.lean.Float8E5Bits",
+   "file": "tests/lean/Float8E5Bits.lean"
+  },
+  {
+   "name": "tests.lean.Float8E5Execution",
+   "file": "tests/lean/Float8E5Execution.lean"
+  },
+  {
+   "name": "tests.lean.FloatDTypeConstantReference",
+   "file": "tests/lean/FloatDTypeConstantReference.lean"
+  },
+  {
+   "name": "tests.lean.FloatDTypeConstants",
+   "file": "tests/lean/FloatDTypeConstants.lean"
+  },
+  {
+   "name": "tests.lean.FloatDivisionPromotion",
+   "file": "tests/lean/FloatDivisionPromotion.lean"
+  },
+  {
+   "name": "tests.lean.FloatMinMaxPromotion",
+   "file": "tests/lean/FloatMinMaxPromotion.lean"
+  },
+  {
+   "name": "tests.lean.FloatNegativeScalar",
+   "file": "tests/lean/FloatNegativeScalar.lean"
+  },
+  {
+   "name": "tests.lean.FloatRuntimeScalar",
+   "file": "tests/lean/FloatRuntimeScalar.lean"
+  },
+  {
+   "name": "tests.lean.FullPrecisionDSL",
+   "file": "tests/lean/FullPrecisionDSL.lean"
+  },
+  {
+   "name": "tests.lean.GridComposition",
+   "file": "tests/lean/GridComposition.lean"
+  },
+  {
+   "name": "tests.lean.GuardedJitFunctions",
+   "file": "tests/lean/GuardedJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.GuardedOptionalRebinding",
+   "file": "tests/lean/GuardedOptionalRebinding.lean"
+  },
+  {
+   "name": "tests.lean.GuardedRewriteTactics",
+   "file": "tests/lean/GuardedRewriteTactics.lean"
+  },
+  {
+   "name": "tests.lean.ImplicitAtomicAdd",
+   "file": "tests/lean/ImplicitAtomicAdd.lean"
+  },
+  {
+   "name": "tests.lean.ImplicitAtomicOperands",
+   "file": "tests/lean/ImplicitAtomicOperands.lean"
+  },
+  {
+   "name": "tests.lean.ImportedBinaryJitFunctions",
+   "file": "tests/lean/ImportedBinaryJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.IntegerBoolLoadCast",
+   "file": "tests/lean/IntegerBoolLoadCast.lean"
+  },
+  {
+   "name": "tests.lean.IntegerCallArguments",
+   "file": "tests/lean/IntegerCallArguments.lean"
+  },
+  {
+   "name": "tests.lean.IntegerCallStaticLoads",
+   "file": "tests/lean/IntegerCallStaticLoads.lean"
+  },
+  {
+   "name": "tests.lean.IntegerCallStaticLoadsReference",
+   "file": "tests/lean/IntegerCallStaticLoadsReference.lean"
+  },
+  {
+   "name": "tests.lean.IntegerCallSyntax",
+   "file": "tests/lean/IntegerCallSyntax.lean"
+  },
+  {
+   "name": "tests.lean.IntegerCallSyntaxReference",
+   "file": "tests/lean/IntegerCallSyntaxReference.lean"
+  },
+  {
+   "name": "tests.lean.IntegerDTypeCallConstants",
+   "file": "tests/lean/IntegerDTypeCallConstants.lean"
+  },
+  {
+   "name": "tests.lean.IntegerDivisionLiterals",
+   "file": "tests/lean/IntegerDivisionLiterals.lean"
+  },
+  {
+   "name": "tests.lean.IntegerDotSource",
+   "file": "tests/lean/IntegerDotSource.lean"
+  },
+  {
+   "name": "tests.lean.IntegerJitControl",
+   "file": "tests/lean/IntegerJitControl.lean"
+  },
+  {
+   "name": "tests.lean.IntegerMinMaxLiterals",
+   "file": "tests/lean/IntegerMinMaxLiterals.lean"
+  },
+  {
+   "name": "tests.lean.IntegerMinMaxReference",
+   "file": "tests/lean/IntegerMinMaxReference.lean"
+  },
+  {
+   "name": "tests.lean.IntegerWhereCondition",
+   "file": "tests/lean/IntegerWhereCondition.lean"
+  },
+  {
+   "name": "tests.lean.IntegerWhereLiterals",
+   "file": "tests/lean/IntegerWhereLiterals.lean"
+  },
+  {
+   "name": "tests.lean.IntegerWhereReference",
+   "file": "tests/lean/IntegerWhereReference.lean"
+  },
+  {
+   "name": "tests.lean.IntegralJitFunctions",
+   "file": "tests/lean/IntegralJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.IsfiniteBlockLoadCast",
+   "file": "tests/lean/IsfiniteBlockLoadCast.lean"
+  },
+  {
+   "name": "tests.lean.IsfiniteDSL",
+   "file": "tests/lean/IsfiniteDSL.lean"
+  },
+  {
+   "name": "tests.lean.IsfiniteHelperCapture",
+   "file": "tests/lean/IsfiniteHelperCapture.lean"
+  },
+  {
+   "name": "tests.lean.IsfiniteHelperSource",
+   "file": "tests/lean/IsfiniteHelperSource.lean"
+  },
+  {
+   "name": "tests.lean.IsfinitePointerElementCast",
+   "file": "tests/lean/IsfinitePointerElementCast.lean"
+  },
+  {
+   "name": "tests.lean.KernelIOAt",
+   "file": "tests/lean/KernelIOAt.lean"
+  },
+  {
+   "name": "tests.lean.KernelIOGrid",
+   "file": "tests/lean/KernelIOGrid.lean"
+  },
+  {
+   "name": "tests.lean.KernelIOProjection",
+   "file": "tests/lean/KernelIOProjection.lean"
+  },
+  {
+   "name": "tests.lean.KernelPortMetadata",
+   "file": "tests/lean/KernelPortMetadata.lean"
+  },
+  {
+   "name": "tests.lean.KeywordBlockAdvance",
+   "file": "tests/lean/KeywordBlockAdvance.lean"
+  },
+  {
+   "name": "tests.lean.KldivRuntimeEpsilon",
+   "file": "tests/lean/KldivRuntimeEpsilon.lean"
+  },
+  {
+   "name": "tests.lean.LegacyPointerElementCast",
+   "file": "tests/lean/LegacyPointerElementCast.lean"
+  },
+  {
+   "name": "tests.lean.LibdevicePowi",
+   "file": "tests/lean/LibdevicePowi.lean"
+  },
+  {
+   "name": "tests.lean.LibdevicePowiDynamic",
+   "file": "tests/lean/LibdevicePowiDynamic.lean"
+  },
+  {
+   "name": "tests.lean.LibdeviceRsqrt",
+   "file": "tests/lean/LibdeviceRsqrt.lean"
+  },
+  {
+   "name": "tests.lean.LibdeviceTanh",
+   "file": "tests/lean/LibdeviceTanh.lean"
+  },
+  {
+   "name": "tests.lean.LoadCastStorage",
+   "file": "tests/lean/LoadCastStorage.lean"
+  },
+  {
+   "name": "tests.lean.LocalPrecisionDSL",
+   "file": "tests/lean/LocalPrecisionDSL.lean"
+  },
+  {
+   "name": "tests.lean.LocalPrecisionScope",
+   "file": "tests/lean/LocalPrecisionScope.lean"
+  },
+  {
+   "name": "tests.lean.LocalWeakIntegerConstants",
+   "file": "tests/lean/LocalWeakIntegerConstants.lean"
+  },
+  {
+   "name": "tests.lean.LoopInvariant",
+   "file": "tests/lean/LoopInvariant.lean"
+  },
+  {
+   "name": "tests.lean.LoopJitFunctions",
+   "file": "tests/lean/LoopJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.MemoryFrame",
+   "file": "tests/lean/MemoryFrame.lean"
+  },
+  {
+   "name": "tests.lean.MemorySafety",
+   "file": "tests/lean/MemorySafety.lean"
+  },
+  {
+   "name": "tests.lean.ModuleFloatConstants",
+   "file": "tests/lean/ModuleFloatConstants.lean"
+  },
+  {
+   "name": "tests.lean.ModuleHeadlineAudit",
+   "file": "tests/lean/ModuleHeadlineAudit.lean"
+  },
+  {
+   "name": "tests.lean.ModuleMathConstants",
+   "file": "tests/lean/ModuleMathConstants.lean"
+  },
+  {
+   "name": "tests.lean.ModuleSpecAudit",
+   "file": "tests/lean/ModuleSpecAudit.lean"
+  },
+  {
+   "name": "tests.lean.MultinomialRoundedBoundary",
+   "file": "tests/lean/MultinomialRoundedBoundary.lean"
+  },
+  {
+   "name": "tests.lean.MutableScalarCalls",
+   "file": "tests/lean/MutableScalarCalls.lean"
+  },
+  {
+   "name": "tests.lean.NamedFloatDTypeCastReference",
+   "file": "tests/lean/NamedFloatDTypeCastReference.lean"
+  },
+  {
+   "name": "tests.lean.NamedFloatDTypeCasts",
+   "file": "tests/lean/NamedFloatDTypeCasts.lean"
+  },
+  {
+   "name": "tests.lean.NaturalBitwiseLiterals",
+   "file": "tests/lean/NaturalBitwiseLiterals.lean"
+  },
+  {
+   "name": "tests.lean.NestedLoadDtypeRegression",
+   "file": "tests/lean/NestedLoadDtypeRegression.lean"
+  },
+  {
+   "name": "tests.lean.NestedPointerDType",
+   "file": "tests/lean/NestedPointerDType.lean"
+  },
+  {
+   "name": "tests.lean.NestedReturns",
+   "file": "tests/lean/NestedReturns.lean"
+  },
+  {
+   "name": "tests.lean.NoneMemoryMasks",
+   "file": "tests/lean/NoneMemoryMasks.lean"
+  },
+  {
+   "name": "tests.lean.NonnegativeReadViews",
+   "file": "tests/lean/NonnegativeReadViews.lean"
+  },
+  {
+   "name": "tests.lean.OptimizedCoreRealExamples",
+   "file": "tests/lean/OptimizedCoreRealExamples.lean"
+  },
+  {
+   "name": "tests.lean.OptionalPointers",
+   "file": "tests/lean/OptionalPointers.lean"
+  },
+  {
+   "name": "tests.lean.OptionalStringConstants",
+   "file": "tests/lean/OptionalStringConstants.lean"
+  },
+  {
+   "name": "tests.lean.OptionalStringReference",
+   "file": "tests/lean/OptionalStringReference.lean"
+  },
+  {
+   "name": "tests.lean.OrderedSumCalls",
+   "file": "tests/lean/OrderedSumCalls.lean"
+  },
+  {
+   "name": "tests.lean.OrderedSumReference",
+   "file": "tests/lean/OrderedSumReference.lean"
+  },
+  {
+   "name": "tests.lean.OutputDTypeMetadata",
+   "file": "tests/lean/OutputDTypeMetadata.lean"
+  },
+  {
+   "name": "tests.lean.PackedIntegerPromotion",
+   "file": "tests/lean/PackedIntegerPromotion.lean"
+  },
+  {
+   "name": "tests.lean.ParameterizedAlgorithmProgramIO",
+   "file": "tests/lean/ParameterizedAlgorithmProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.PastedControlFunctions",
+   "file": "tests/lean/PastedControlFunctions.lean"
+  },
+  {
+   "name": "tests.lean.PastedControlSource",
+   "file": "tests/lean/PastedControlSource.lean"
+  },
+  {
+   "name": "tests.lean.PastedRangeLoads",
+   "file": "tests/lean/PastedRangeLoads.lean"
+  },
+  {
+   "name": "tests.lean.PhiloxRandOp",
+   "file": "tests/lean/PhiloxRandOp.lean"
+  },
+  {
+   "name": "tests.lean.PhiloxRandom",
+   "file": "tests/lean/PhiloxRandom.lean"
+  },
+  {
+   "name": "tests.lean.PointerAliasReset",
+   "file": "tests/lean/PointerAliasReset.lean"
+  },
+  {
+   "name": "tests.lean.PointerArguments",
+   "file": "tests/lean/PointerArguments.lean"
+  },
+  {
+   "name": "tests.lean.PointerCells",
+   "file": "tests/lean/PointerCells.lean"
+  },
+  {
+   "name": "tests.lean.PointerDTypeConstantReference",
+   "file": "tests/lean/PointerDTypeConstantReference.lean"
+  },
+  {
+   "name": "tests.lean.PointerDTypeConstants",
+   "file": "tests/lean/PointerDTypeConstants.lean"
+  },
+  {
+   "name": "tests.lean.PointerDTypeErasure",
+   "file": "tests/lean/PointerDTypeErasure.lean"
+  },
+  {
+   "name": "tests.lean.PointerElementCast",
+   "file": "tests/lean/PointerElementCast.lean"
+  },
+  {
+   "name": "tests.lean.PointerElementLoadCast",
+   "file": "tests/lean/PointerElementLoadCast.lean"
+  },
+  {
+   "name": "tests.lean.PointerLiteralOffsets",
+   "file": "tests/lean/PointerLiteralOffsets.lean"
+  },
+  {
+   "name": "tests.lean.PointerOffsetPrecision",
+   "file": "tests/lean/PointerOffsetPrecision.lean"
+  },
+  {
+   "name": "tests.lean.PointerRegionMetadata",
+   "file": "tests/lean/PointerRegionMetadata.lean"
+  },
+  {
+   "name": "tests.lean.PointerSignedBinding",
+   "file": "tests/lean/PointerSignedBinding.lean"
+  },
+  {
+   "name": "tests.lean.PointerSignedCast",
+   "file": "tests/lean/PointerSignedCast.lean"
+  },
+  {
+   "name": "tests.lean.PointerSignedOffset",
+   "file": "tests/lean/PointerSignedOffset.lean"
+  },
+  {
+   "name": "tests.lean.PointerSubtraction",
+   "file": "tests/lean/PointerSubtraction.lean"
+  },
+  {
+   "name": "tests.lean.PolymorphicCallStorage",
+   "file": "tests/lean/PolymorphicCallStorage.lean"
+  },
+  {
+   "name": "tests.lean.PositionalLoadOther",
+   "file": "tests/lean/PositionalLoadOther.lean"
+  },
+  {
+   "name": "tests.lean.PositiveInfinityClamp",
+   "file": "tests/lean/PositiveInfinityClamp.lean"
+  },
+  {
+   "name": "tests.lean.PreciseDivisionAndInfinity",
+   "file": "tests/lean/PreciseDivisionAndInfinity.lean"
+  },
+  {
+   "name": "tests.lean.PreparedAlgorithmProgramIO",
+   "file": "tests/lean/PreparedAlgorithmProgramIO.lean"
+  },
+  {
+   "name": "tests.lean.ProcedureJitFunctions",
+   "file": "tests/lean/ProcedureJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.ProfiledRewriteTactics",
+   "file": "tests/lean/ProfiledRewriteTactics.lean"
+  },
+  {
+   "name": "tests.lean.ProgramRewrite",
+   "file": "tests/lean/ProgramRewrite.lean"
+  },
+  {
+   "name": "tests.lean.PtrElemDType",
+   "file": "tests/lean/PtrElemDType.lean"
+  },
+  {
+   "name": "tests.lean.PureJitFunctions",
+   "file": "tests/lean/PureJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.PythonBitcastBooleans",
+   "file": "tests/lean/PythonBitcastBooleans.lean"
+  },
+  {
+   "name": "tests.lean.PythonBlockAdvances",
+   "file": "tests/lean/PythonBlockAdvances.lean"
+  },
+  {
+   "name": "tests.lean.PythonBodyParsing",
+   "file": "tests/lean/PythonBodyParsing.lean"
+  },
+  {
+   "name": "tests.lean.PythonCallSyntax",
+   "file": "tests/lean/PythonCallSyntax.lean"
+  },
+  {
+   "name": "tests.lean.PythonConditionGrouping",
+   "file": "tests/lean/PythonConditionGrouping.lean"
+  },
+  {
+   "name": "tests.lean.PythonConditionGroupingReference",
+   "file": "tests/lean/PythonConditionGroupingReference.lean"
+  },
+  {
+   "name": "tests.lean.PythonConditionalAssignments",
+   "file": "tests/lean/PythonConditionalAssignments.lean"
+  },
+  {
+   "name": "tests.lean.PythonFullConstructorReference",
+   "file": "tests/lean/PythonFullConstructorReference.lean"
+  },
+  {
+   "name": "tests.lean.PythonFullConstructors",
+   "file": "tests/lean/PythonFullConstructors.lean"
+  },
+  {
+   "name": "tests.lean.PythonInlineSuites",
+   "file": "tests/lean/PythonInlineSuites.lean"
+  },
+  {
+   "name": "tests.lean.PythonLiteralArithmetic",
+   "file": "tests/lean/PythonLiteralArithmetic.lean"
+  },
+  {
+   "name": "tests.lean.PythonOptionalConditionals",
+   "file": "tests/lean/PythonOptionalConditionals.lean"
+  },
+  {
+   "name": "tests.lean.PythonShapeExpressions",
+   "file": "tests/lean/PythonShapeExpressions.lean"
+  },
+  {
+   "name": "tests.lean.PythonShapeTupleReference",
+   "file": "tests/lean/PythonShapeTupleReference.lean"
+  },
+  {
+   "name": "tests.lean.PythonShapeTuples",
+   "file": "tests/lean/PythonShapeTuples.lean"
+  },
+  {
+   "name": "tests.lean.RandomFrontend",
+   "file": "tests/lean/RandomFrontend.lean"
+  },
+  {
+   "name": "tests.lean.RandomVector",
+   "file": "tests/lean/RandomVector.lean"
+  },
+  {
+   "name": "tests.lean.RawBodyControlNames",
+   "file": "tests/lean/RawBodyControlNames.lean"
+  },
+  {
+   "name": "tests.lean.RawBooleanLoadCast",
+   "file": "tests/lean/RawBooleanLoadCast.lean"
+  },
+  {
+   "name": "tests.lean.RawPythonTuplesAndStores",
+   "file": "tests/lean/RawPythonTuplesAndStores.lean"
+  },
+  {
+   "name": "tests.lean.RawStringDispatch",
+   "file": "tests/lean/RawStringDispatch.lean"
+  },
+  {
+   "name": "tests.lean.ReadonlyFloatAliases",
+   "file": "tests/lean/ReadonlyFloatAliases.lean"
+  },
+  {
+   "name": "tests.lean.ReassignedIntegerPointers",
+   "file": "tests/lean/ReassignedIntegerPointers.lean"
+  },
+  {
+   "name": "tests.lean.RebindingProcedures",
+   "file": "tests/lean/RebindingProcedures.lean"
+  },
+  {
+   "name": "tests.lean.ReboundEntryConstants",
+   "file": "tests/lean/ReboundEntryConstants.lean"
+  },
+  {
+   "name": "tests.lean.RecursiveJitFunctions",
+   "file": "tests/lean/RecursiveJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.ReduceMaxPromotion",
+   "file": "tests/lean/ReduceMaxPromotion.lean"
+  },
+  {
+   "name": "tests.lean.ReductionTactics",
+   "file": "tests/lean/ReductionTactics.lean"
+  },
+  {
+   "name": "tests.lean.RegisterDTypeLoad",
+   "file": "tests/lean/RegisterDTypeLoad.lean"
+  },
+  {
+   "name": "tests.lean.RegisterDTypeWhere",
+   "file": "tests/lean/RegisterDTypeWhere.lean"
+  },
+  {
+   "name": "tests.lean.RegisterShapeBroadcast",
+   "file": "tests/lean/RegisterShapeBroadcast.lean"
+  },
+  {
+   "name": "tests.lean.ReshapePrecision",
+   "file": "tests/lean/ReshapePrecision.lean"
+  },
+  {
+   "name": "tests.lean.ReverseRange",
+   "file": "tests/lean/ReverseRange.lean"
+  },
+  {
+   "name": "tests.lean.RootPrecisionDSL",
+   "file": "tests/lean/RootPrecisionDSL.lean"
+  },
+  {
+   "name": "tests.lean.RuntimeIntegerDivision",
+   "file": "tests/lean/RuntimeIntegerDivision.lean"
+  },
+  {
+   "name": "tests.lean.RuntimeScalarArgumentDSL",
+   "file": "tests/lean/RuntimeScalarArgumentDSL.lean"
+  },
+  {
+   "name": "tests.lean.ScalarInfinityWhere",
+   "file": "tests/lean/ScalarInfinityWhere.lean"
+  },
+  {
+   "name": "tests.lean.ScalarInt64StrideWhile",
+   "file": "tests/lean/ScalarInt64StrideWhile.lean"
+  },
+  {
+   "name": "tests.lean.ScalarInt64While",
+   "file": "tests/lean/ScalarInt64While.lean"
+  },
+  {
+   "name": "tests.lean.ScalarInt64WhileReference",
+   "file": "tests/lean/ScalarInt64WhileReference.lean"
+  },
+  {
+   "name": "tests.lean.ScalarPrecision",
+   "file": "tests/lean/ScalarPrecision.lean"
+  },
+  {
+   "name": "tests.lean.SignedAccumulatorCoordinates",
+   "file": "tests/lean/SignedAccumulatorCoordinates.lean"
+  },
+  {
+   "name": "tests.lean.SignedArange",
+   "file": "tests/lean/SignedArange.lean"
+  },
+  {
+   "name": "tests.lean.SignedBitwise",
+   "file": "tests/lean/SignedBitwise.lean"
+  },
+  {
+   "name": "tests.lean.SignedBitwiseSource",
+   "file": "tests/lean/SignedBitwiseSource.lean"
+  },
+  {
+   "name": "tests.lean.SignedBooleanAddition",
+   "file": "tests/lean/SignedBooleanAddition.lean"
+  },
+  {
+   "name": "tests.lean.SignedByteReads",
+   "file": "tests/lean/SignedByteReads.lean"
+  },
+  {
+   "name": "tests.lean.SignedCallRanges",
+   "file": "tests/lean/SignedCallRanges.lean"
+  },
+  {
+   "name": "tests.lean.SignedInteger16Cast",
+   "file": "tests/lean/SignedInteger16Cast.lean"
+  },
+  {
+   "name": "tests.lean.SignedInteger16Contexts",
+   "file": "tests/lean/SignedInteger16Contexts.lean"
+  },
+  {
+   "name": "tests.lean.SignedIntegerAddressAliasReference",
+   "file": "tests/lean/SignedIntegerAddressAliasReference.lean"
+  },
+  {
+   "name": "tests.lean.SignedIntegerAddressAliases",
+   "file": "tests/lean/SignedIntegerAddressAliases.lean"
+  },
+  {
+   "name": "tests.lean.SignedIntegerCast",
+   "file": "tests/lean/SignedIntegerCast.lean"
+  },
+  {
+   "name": "tests.lean.SignedIntegerCastContexts",
+   "file": "tests/lean/SignedIntegerCastContexts.lean"
+  },
+  {
+   "name": "tests.lean.SignedIntegerCastRNG",
+   "file": "tests/lean/SignedIntegerCastRNG.lean"
+  },
+  {
+   "name": "tests.lean.SignedLaneSubtraction",
+   "file": "tests/lean/SignedLaneSubtraction.lean"
+  },
+  {
+   "name": "tests.lean.SignedLoadCast",
+   "file": "tests/lean/SignedLoadCast.lean"
+  },
+  {
+   "name": "tests.lean.SignedLoadOther",
+   "file": "tests/lean/SignedLoadOther.lean"
+  },
+  {
+   "name": "tests.lean.SignedMinMaxViews",
+   "file": "tests/lean/SignedMinMaxViews.lean"
+  },
+  {
+   "name": "tests.lean.SignedRange",
+   "file": "tests/lean/SignedRange.lean"
+  },
+  {
+   "name": "tests.lean.SignedRangeAddressInference",
+   "file": "tests/lean/SignedRangeAddressInference.lean"
+  },
+  {
+   "name": "tests.lean.SignedRankOneBlockPointers",
+   "file": "tests/lean/SignedRankOneBlockPointers.lean"
+  },
+  {
+   "name": "tests.lean.SignedSingleArgumentRange",
+   "file": "tests/lean/SignedSingleArgumentRange.lean"
+  },
+  {
+   "name": "tests.lean.SignedSourceRange",
+   "file": "tests/lean/SignedSourceRange.lean"
+  },
+  {
+   "name": "tests.lean.SingleAssignmentPointerOffsetReference",
+   "file": "tests/lean/SingleAssignmentPointerOffsetReference.lean"
+  },
+  {
+   "name": "tests.lean.SingleAssignmentPointerOffsets",
+   "file": "tests/lean/SingleAssignmentPointerOffsets.lean"
+  },
+  {
+   "name": "tests.lean.SourceAuthoring",
+   "file": "tests/lean/SourceAuthoring.lean"
+  },
+  {
+   "name": "tests.lean.SourceDType",
+   "file": "tests/lean/SourceDType.lean"
+  },
+  {
+   "name": "tests.lean.SourceModuleBindings",
+   "file": "tests/lean/SourceModuleBindings.lean"
+  },
+  {
+   "name": "tests.lean.SourceProcedures",
+   "file": "tests/lean/SourceProcedures.lean"
+  },
+  {
+   "name": "tests.lean.SourceScalarView",
+   "file": "tests/lean/SourceScalarView.lean"
+  },
+  {
+   "name": "tests.lean.SpecializedJitFunctions",
+   "file": "tests/lean/SpecializedJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.SpecificationSurface",
+   "file": "tests/lean/SpecificationSurface.lean"
+  },
+  {
+   "name": "tests.lean.StatementAudit",
+   "file": "tests/lean/StatementAudit.lean"
+  },
+  {
+   "name": "tests.lean.StatementJitCallConstants",
+   "file": "tests/lean/StatementJitCallConstants.lean"
+  },
+  {
+   "name": "tests.lean.StatementJitFunctions",
+   "file": "tests/lean/StatementJitFunctions.lean"
+  },
+  {
+   "name": "tests.lean.StaticAssertions",
+   "file": "tests/lean/StaticAssertions.lean"
+  },
+  {
+   "name": "tests.lean.StaticConditions",
+   "file": "tests/lean/StaticConditions.lean"
+  },
+  {
+   "name": "tests.lean.StaticPointerProfiles",
+   "file": "tests/lean/StaticPointerProfiles.lean"
+  },
+  {
+   "name": "tests.lean.StaticPrintExecution",
+   "file": "tests/lean/StaticPrintExecution.lean"
+  },
+  {
+   "name": "tests.lean.StaticRanges",
+   "file": "tests/lean/StaticRanges.lean"
+  },
+  {
+   "name": "tests.lean.StaticRangesReference",
+   "file": "tests/lean/StaticRangesReference.lean"
+  },
+  {
+   "name": "tests.lean.StaticSignedStrides",
+   "file": "tests/lean/StaticSignedStrides.lean"
+  },
+  {
+   "name": "tests.lean.StraightLineIdentifiers",
+   "file": "tests/lean/StraightLineIdentifiers.lean"
+  },
+  {
+   "name": "tests.lean.StringCallControl",
+   "file": "tests/lean/StringCallControl.lean"
+  },
+  {
+   "name": "tests.lean.SymbolicFloatConstants",
+   "file": "tests/lean/SymbolicFloatConstants.lean"
+  },
+  {
+   "name": "tests.lean.TraceRewrite",
+   "file": "tests/lean/TraceRewrite.lean"
+  },
+  {
+   "name": "tests.lean.TritonSmoke",
+   "file": "tests/lean/TritonSmoke.lean"
+  },
+  {
+   "name": "tests.lean.TupleScalarCasts",
+   "file": "tests/lean/TupleScalarCasts.lean"
+  },
+  {
+   "name": "tests.lean.TypedArgMax",
+   "file": "tests/lean/TypedArgMax.lean"
+  },
+  {
+   "name": "tests.lean.TypedFMA",
+   "file": "tests/lean/TypedFMA.lean"
+  },
+  {
+   "name": "tests.lean.TypedFP32Mul",
+   "file": "tests/lean/TypedFP32Mul.lean"
+  },
+  {
+   "name": "tests.lean.TypedNatBitwise",
+   "file": "tests/lean/TypedNatBitwise.lean"
+  },
+  {
+   "name": "tests.lean.TypedSum",
+   "file": "tests/lean/TypedSum.lean"
+  },
+  {
+   "name": "tests.lean.UnsignedCallArguments",
+   "file": "tests/lean/UnsignedCallArguments.lean"
+  },
+  {
+   "name": "tests.lean.UnsignedIntegerCast",
+   "file": "tests/lean/UnsignedIntegerCast.lean"
+  },
+  {
+   "name": "tests.lean.UnsignedLoopBinding",
+   "file": "tests/lean/UnsignedLoopBinding.lean"
+  },
+  {
+   "name": "tests.lean.WelfordCallMetadata",
+   "file": "tests/lean/WelfordCallMetadata.lean"
+  },
+  {
+   "name": "tests.lean.WelfordSourceContexts",
+   "file": "tests/lean/WelfordSourceContexts.lean"
+  }
+ ],
+ "root_closure_files": 883,
+ "root_closure_sorry": [
+  "VeriTile/Triton/KernelLemmas/LoopInvariant.lean",
+  "VeriTile/Triton/Memory/Flatten.lean",
+  "VeriTile/Triton/Memory/FlattenR.lean",
+  "VeriTile/Triton/Memory/Locality.lean",
+  "VeriTile/Triton/Memory/Typing/Checker.lean",
+  "VeriTile/Triton/SignedSource.lean",
+  "VeriTile/Triton/Source.lean",
+  "tests/lean/SpecificationSurface.lean"
+ ],
+ "root_closure_axioms": 1,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "VeriTile.Triton.ComputeRefine.Realizes.toRealizes_without_Rounding",
+   "module": "VeriTile.Triton.Float.Refine",
+   "file": "VeriTile/Triton/Float/Refine.lean",
+   "line": 267,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "h",
+    "α"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 4,
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 17,
+  "Mathlib.Algebra.BigOperators.Group.List.Defs": 1,
+  "Mathlib.Algebra.BigOperators.WithTop": 1,
+  "Mathlib.Algebra.Order.Floor.Ring": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 1,
+  "Mathlib.Analysis.Calculus.MeanValue": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Complex.Trigonometric": 2,
+  "Mathlib.Analysis.Real.Pi.Bounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 6,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral": 1,
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 5,
+  "Mathlib.Analysis.SpecialFunctions.Sigmoid": 11,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 4,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 1,
+  "Mathlib.Data.BitVec": 1,
+  "Mathlib.Data.Fin.Rev": 7,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 4,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.Fintype.Pi": 1,
+  "Mathlib.Data.Int.DivMod": 2,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.List.Forall2": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Lattice": 1,
+  "Mathlib.Data.Rat.Defs": 2,
+  "Mathlib.Data.Rat.Floor": 1,
+  "Mathlib.Data.Rat.Lemmas": 1,
+  "Mathlib.Data.Real.Archimedean": 1,
+  "Mathlib.Data.Real.Basic": 9,
+  "Mathlib.Data.Real.Sign": 1,
+  "Mathlib.Data.Real.Sqrt": 2,
+  "Mathlib.Logic.Equiv.Defs": 1,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 2,
+  "Mathlib.Order.WithBot": 1,
+  "Mathlib.Tactic": 17,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.FieldSimp": 3,
+  "Mathlib.Tactic.FinCases": 10,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.Linarith": 4,
+  "Mathlib.Tactic.NormNum": 19,
+  "Mathlib.Tactic.Ring": 6,
+  "Mathlib.Tactic.SplitIfs": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Init": 2,
+  "Lean": 20,
+  "Mathlib": 109
+ },
+ "uses": {
+  "Algebra": 213,
+  "Array": 68,
+  "Continuous": 2,
+  "Differentiable": 1,
+  "Equiv.Perm": 6,
+  "Field": 3,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "Finset": 22,
+  "HasDerivAt": 3,
+  "Int": 188,
+  "List": 363,
+  "MeasureTheory.Integrable": 1,
+  "Nat": 662,
+  "Rat": 31,
+  "Real": 14,
+  "Real.exp": 35,
+  "Real.log": 8,
+  "Real.rpow": 4,
+  "Real.sin": 1,
+  "Real.sinh": 2,
+  "Set": 2,
+  "Std.HashMap": 1,
+  "closure": 1
+ },
+ "ci": "SUCCESS"
+}

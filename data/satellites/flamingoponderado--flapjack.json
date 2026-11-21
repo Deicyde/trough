@@ -1,0 +1,162 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "flamingoponderado/flapjack",
+ "slug": "flamingoponderado--flapjack",
+ "rev": "979104819b768f092f738e31ab563edcb0bd7e32",
+ "date": "2026-11-17T23:43:21Z",
+ "stable": "22f3b29292d5ecfcf1ed9e4cf6245933857e44133812f6afc1a578528d0457ae",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "BSD-3-Clause",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026, Anthony Fox, Google LLC, Ramana Kumar, Magnus Myreen, Michael Norrish, Scott Owens, Yong Kiam Tan, and other contributors listed at https://cakeml.org"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Flapjack",
+  "excerpt": "Flapjack is an in-progress Lean 4 port of the formally verified Pancake compiler."
+ },
+ "lean_files": 6985,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.1",
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "requirements": [
+  {
+   "name": "ZirenDet",
+   "url": "https://github.com/ProjectZKM/Ziren",
+   "rev": "e08a98236d033f940160ccfe244dec12df0dddb0"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Flapjack",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 35247,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 2207,
+ "closure_sorry": [
+  "Flapjack/Compiler/Backend/StackAlloc/Proofs/CodeThm/GenGcMoveLoop.lean"
+ ],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Flapjack",
+   "file": "Flapjack.lean"
+  }
+ ],
+ "root_closure_files": 4979,
+ "root_closure_sorry": [
+  "Flapjack/Compiler/Backend/StackAlloc/Proofs/CodeThm/GenGcMoveLoop.lean",
+  "Flapjack/Mips32/Run.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "Flapjack.Pancake.Proofs.PanToTarget.panToTargetCompileSemanticsArm8L3",
+   "module": "Flapjack.Pancake.Proofs.PanToTarget.Arm8L3Instance",
+   "file": "Flapjack/Pancake/Proofs/PanToTarget/Arm8L3Instance.lean",
+   "line": 47,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.Group.Nat.Even": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.List": 1,
+  "Mathlib.Algebra.Ring.Parity": 1,
+  "Mathlib.Analysis.Real.Sqrt": 1,
+  "Mathlib.Data.BitVec": 8,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Fintype.Card": 2,
+  "Mathlib.Data.List.Basic": 6,
+  "Mathlib.Data.List.Count": 1,
+  "Mathlib.Data.List.Dedup": 1,
+  "Mathlib.Data.List.Defs": 2,
+  "Mathlib.Data.List.Enum": 1,
+  "Mathlib.Data.List.Flatten": 2,
+  "Mathlib.Data.List.Forall2": 46,
+  "Mathlib.Data.List.GetD": 2,
+  "Mathlib.Data.List.Induction": 6,
+  "Mathlib.Data.List.Infix": 1,
+  "Mathlib.Data.List.Nodup": 21,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.Perm.Subperm": 4,
+  "Mathlib.Data.List.Permutation": 1,
+  "Mathlib.Data.List.Range": 1,
+  "Mathlib.Data.List.Sort": 2,
+  "Mathlib.Data.List.TakeDrop": 2,
+  "Mathlib.Data.Multiset.DershowitzManna": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Find": 5,
+  "Mathlib.Data.Option.NAry": 1,
+  "Mathlib.Data.Set.Basic": 12,
+  "Mathlib.Data.Set.Card": 2,
+  "Mathlib.Data.Set.Defs": 4,
+  "Mathlib.Data.Set.Disjoint": 4,
+  "Mathlib.Data.Set.Finite.Basic": 5,
+  "Mathlib.Data.Set.Finite.Lattice": 1,
+  "Mathlib.Data.Set.Image": 3,
+  "Mathlib.Data.Set.Insert": 6,
+  "Mathlib.Data.Set.Lattice": 18,
+  "Mathlib.Logic.Basic": 2,
+  "Mathlib.Logic.Function.Defs": 1,
+  "Mathlib.Logic.Function.Iterate": 1,
+  "Mathlib.Logic.Relation": 12,
+  "Mathlib.Order.RelClasses": 3,
+  "Mathlib.Order.WellFounded": 1,
+  "Mathlib.SetTheory.Cardinal.Finite": 1,
+  "Mathlib.Tactic": 26,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.CasesM": 5,
+  "Mathlib.Tactic.Convert": 1,
+  "Mathlib.Tactic.IntervalCases": 23,
+  "Mathlib.Tactic.Linarith": 3,
+  "Mathlib.Tactic.LinearCombination": 1,
+  "Mathlib.Tactic.NormNum": 6,
+  "Mathlib.Tactic.Ring": 4,
+  "Mathlib.Tactic.Set": 2,
+  "Mathlib.Tactic.SplitIfs": 15,
+  "Mathlib.Tactic.Tauto": 8
+ },
+ "import_roots": {
+  "Aesop": 33,
+  "Batteries": 18,
+  "Init": 13,
+  "Lean": 75,
+  "Mathlib": 260,
+  "Std": 12,
+  "ZirenDet": 1
+ },
+ "uses": {
+  "Array": 12,
+  "Finset": 4,
+  "Int": 232,
+  "List": 3634,
+  "Multiset": 1,
+  "Nat": 4166,
+  "Rat": 17,
+  "Set": 120,
+  "Std.HashMap": 2,
+  "closure": 111
+ },
+ "ci": "SUCCESS"
+}

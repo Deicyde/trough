@@ -1,0 +1,96 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "proofs-rs/lean-miri",
+ "slug": "proofs-rs--lean-miri",
+ "rev": "b78813856467c99d8cb9e47d6f7ba6fae2dc1973",
+ "date": "2026-11-18T03:35:59Z",
+ "stable": "53d63c47a4d3925c226b223041ccf88af624d38a2b59afdda1523d9bdefb073d",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "lean-miri",
+  "excerpt": "A port of [Miri](https://github.com/rust-lang/miri), Rust's undefined-behavior checker, to Lean 4. The goal is to prove that Rust programs are free of undefined behavior under Miri's execution model."
+ },
+ "lean_files": 1227,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "NativeRunnerSupport",
+   "src": "tools"
+  },
+  {
+   "name": "Miri",
+   "src": "."
+  },
+  {
+   "name": "MiriTests",
+   "src": "."
+  }
+ ],
+ "library_files": 743,
+ "capped": false,
+ "declarations": 7237,
+ "sorry_files": 3,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "root_modules": [
+  {
+   "name": "Miri",
+   "file": "Miri.lean"
+  },
+  {
+   "name": "MiriTests",
+   "file": "MiriTests.lean"
+  },
+  {
+   "name": "NativeStdioHost",
+   "file": "tools/NativeStdioHost.lean"
+  },
+  {
+   "name": "NativeStdioProtocol",
+   "file": "tools/NativeStdioProtocol.lean"
+  }
+ ],
+ "root_closure_files": 689,
+ "root_closure_sorry": [
+  "Miri/DataStructures/DedupRangeMap.lean",
+  "Miri/DataStructures/RangeObjectMap.lean",
+  "Miri/Memory/AllocAddresses/AddressGenerator.lean"
+ ],
+ "root_closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 4,
+  "Lean": 33,
+  "Std": 8
+ },
+ "uses": {
+  "Array": 350,
+  "Field": 2,
+  "Int": 92,
+  "List": 73,
+  "Nat": 450,
+  "Std.HashMap": 16,
+  "bernoulli": 3,
+  "closure": 13
+ },
+ "ci": "PENDING"
+}
