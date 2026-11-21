@@ -52,7 +52,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-24.04
-    timeout-minutes: 90
+    timeout-minutes: 240
     outputs:
       changed: ${{ steps.compare.outputs.changed }}
       sha: ${{ steps.head.outputs.sha }}
