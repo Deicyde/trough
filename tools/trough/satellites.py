@@ -98,9 +98,9 @@ def load_overrides(path: Path) -> dict[str, dict]:
 
 
 def repo_key(url: str) -> str:
-    """A repository URL as owner/name in lower case when it is on GitHub, else the URL."""
+    """A repository URL as owner/name in lower case when it is on GitHub, else the URL (or owner/name) in lower case."""
     match = re.match(r"(?:https?://|git@)github\.com[/:]([^/]+)/([^/#?]+?)(?:\.git)?/?$", url.strip())
-    return f"{match.group(1)}/{match.group(2)}".lower() if match else url.strip()
+    return (f"{match.group(1)}/{match.group(2)}" if match else url.strip()).lower()
 
 
 # Reading a checkout.

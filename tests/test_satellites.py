@@ -414,6 +414,8 @@ def test_a_statement_links_another_chapters_bare_name_only_when_the_project_requ
     bare = record("bare", headlines=[headline])
     pages, stats, _ = satellites.chapter([requires, bare], {}, {}, LIBRARIES, hosts, heads, names)
     cards = {node.slug: node for _, projects, _ in pages for node in walk(projects) if isinstance(node, Leaf)}
+    # The catalog writes PNT+'s repository with capitals; the manifest's URL still finds it.
+    assert dict(cards["requires"].notes)["Placement"] == "Its Lake manifest requires `PrimeNumberTheoremAnd`."
     assert cards["requires"].depends == [f, heads["Real.cos"], dotted]
     assert cards["bare"].depends == [heads["Real.cos"], dotted]
     assert (stats["bare_names_dropped"], stats["bare_names_projects"]) == (3, 2)
