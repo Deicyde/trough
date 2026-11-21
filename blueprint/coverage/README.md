@@ -82,7 +82,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | ATLAS: textbook mathematics in Lean (Meta) | `DECOMPOSED` | [3,607 topics of ATLAS's vault](../roadmap/atlas/README.md), one article each, with a block per result. |
 | OpenAI Math: a model's research manuscripts and their Lean (OpenAI) | `DECOMPOSED` | [373 result families](../roadmap/openai-math/README.md), one article each, with a block per manuscript and per formalized result. |
 | CSLib | `INVENTORIED` | [312 modules](../roadmap/cslib/README.md), one article each, with a block per public declaration. |
-| Batteries | `INVENTORIED` | [125 modules](../roadmap/batteries/README.md), one article each, with a block per public declaration; 61 modules that declare nothing public by name are listed on their folders' pages. |
+| Batteries | `INVENTORIED` | [128 modules](../roadmap/batteries/README.md), one article each, with a block per public declaration; 61 modules that declare nothing public by name are listed on their folders' pages. |
 | Aesop | `INVENTORIED` | [128 modules](../roadmap/aesop/README.md), one article each, with a block per public declaration; 3 modules that declare nothing public by name are listed on their folders' pages, and 6 that did not build on the front page. |
 | CompPoly | `INVENTORIED` | [362 modules](../roadmap/comppoly/README.md), one article each, with a block per public declaration; 39 modules that declare nothing public by name are listed on their folders' pages. |
 | Physlib: The Lean Physics Library | `DECOMPOSED` | [1,611 modules](../roadmap/physlib/README.md) with a declaration, one article each, with a block per declaration. |

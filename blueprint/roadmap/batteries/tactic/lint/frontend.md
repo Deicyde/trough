@@ -7,7 +7,7 @@ proof: formalized
 
 # Linter frontend and commands
 
-`Batteries.Tactic.Lint.Frontend`, in [Batteries/Tactic/Lint/Frontend.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean), by Floris van Doorn, Robert Y. Lewis, Gabriel Ebner.
+`Batteries.Tactic.Lint.Frontend`, in [Batteries/Tactic/Lint/Frontend.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean), by Floris van Doorn, Robert Y. Lewis, Gabriel Ebner.
 
 > This file defines the linter commands which spot common mistakes in the code.
 > * `#lint`: check all declarations in the current file
@@ -49,7 +49,7 @@ proof: formalized
 >
 > sanity check, lint, cleanup, command, tactic
 
-`Batteries.Tactic.Lint.LintVerbosity` (inductive type, [line 61](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L61))
+`Batteries.Tactic.Lint.LintVerbosity` (inductive type, [line 61](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L61))
 
 > Verbosity for the linter output.
 
@@ -64,7 +64,7 @@ inductive LintVerbosity
   deriving Inhabited, DecidableEq, Repr
 ```
 
-`Batteries.Tactic.Lint.getChecks` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L78))
+`Batteries.Tactic.Lint.getChecks` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L78))
 
 > `getChecks slow runOnly runAlways` produces a list of linters.
 > `runOnly` is an optional list of names that should resolve to declarations with type `NamedLinter`.
@@ -80,7 +80,7 @@ def getChecks (slow : Bool) (runOnly : Option (List Name)) (runAlways : Option (
     CoreM (Array NamedLinter)
 ```
 
-`Batteries.Tactic.Lint.traceLintCore` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L101))
+`Batteries.Tactic.Lint.traceLintCore` (definition, [line 101](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L101))
 
 > Traces via `IO.println` if `inIO` is `true`, and via `trace[...]` otherwise. It seems that
 > `trace` messages in a running `CoreM` are not propagated through to `IO` in the current setup. We
@@ -93,7 +93,7 @@ def getChecks (slow : Bool) (runOnly : Option (List Name)) (runAlways : Option (
 def traceLintCore (msg : String) (inIO : Bool) : CoreM Unit
 ```
 
-`Batteries.Tactic.Lint.traceLint` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L113))
+`Batteries.Tactic.Lint.traceLint` (definition, [line 113](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L113))
 
 > Traces via `IO.println` if `inIO` is `true`, and via `trace[...]` otherwise. Prepends
 > `currentModule` and `linter` (if present).
@@ -105,7 +105,7 @@ def traceLint (msg : String) (inIO : Bool) (currentModule linterName : Option Na
     CoreM Unit
 ```
 
-`Batteries.Tactic.Lint.lintBatchSize` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L126))
+`Batteries.Tactic.Lint.lintBatchSize` (definition, [line 126](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L126))
 
 > The number of declarations that a lint worker takes at a time. A larger batch means fewer updates
 > to the shared job counter. A smaller batch spreads the work more evenly across the workers at the
@@ -116,7 +116,7 @@ def traceLint (msg : String) (inIO : Bool) (currentModule linterName : Option Na
 def lintBatchSize : Nat
 ```
 
-`Batteries.Tactic.Lint.mapOnWorkers` (definition, [line 134](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L134))
+`Batteries.Tactic.Lint.mapOnWorkers` (definition, [line 134](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L134))
 
 > Maps `f` over `jobs` on at most `numWorkers` workers (at least one), and returns the results in
 > no fixed order. Each worker takes the next job that no worker has taken, until no jobs remain.
@@ -127,7 +127,7 @@ def lintBatchSize : Nat
 def mapOnWorkers (jobs : Array α) (numWorkers : Nat) (f : α → CoreM β) : CoreM (Array β)
 ```
 
-`Batteries.Tactic.Lint.lintDecl` (definition, [line 155](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L155))
+`Batteries.Tactic.Lint.lintDecl` (definition, [line 155](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L155))
 
 > Runs `linter` on `decl` with separate Core and Meta state, a distinct name generator, and its own
 > heartbeat budget. An exception from the linter becomes a `LINTER FAILED` message, except for an
@@ -137,7 +137,7 @@ def mapOnWorkers (jobs : Array α) (numWorkers : Nat) (f : α → CoreM β) : Co
 def lintDecl (linter : NamedLinter) (decl : Name) (inIO : Bool) : CoreM (Option MessageData)
 ```
 
-`Batteries.Tactic.Lint.lintCore` (definition, [line 184](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L184))
+`Batteries.Tactic.Lint.lintCore` (definition, [line 184](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L184))
 
 > Runs the linters on the declarations in parallel, and returns the failures of each linter as a map
 > from declaration to message. A linter skips a declaration whose `nolint` attribute names it.
@@ -155,7 +155,7 @@ def lintCore (decls : Array Name) (linters : Array NamedLinter)
     CoreM (Array (NamedLinter × Std.HashMap Name MessageData))
 ```
 
-`Batteries.Tactic.Lint.sortResults` (definition, [line 249](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L249))
+`Batteries.Tactic.Lint.sortResults` (definition, [line 249](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L249))
 
 > Sorts a map with declaration keys as names by line number.
 
@@ -163,7 +163,7 @@ def lintCore (decls : Array Name) (linters : Array NamedLinter)
 def sortResults (results : Std.HashMap Name α) : CoreM <| Array (Name × α)
 ```
 
-`Batteries.Tactic.Lint.printWarning` (definition, [line 257](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L257))
+`Batteries.Tactic.Lint.printWarning` (definition, [line 257](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L257))
 
 > Formats a linter warning as `#check` command with comment.
 
@@ -172,7 +172,7 @@ def printWarning (declName : Name) (warning : MessageData) (useErrorFormat : Boo
   (filePath : System.FilePath := default) : CoreM MessageData
 ```
 
-`Batteries.Tactic.Lint.printWarnings` (definition, [line 268](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L268))
+`Batteries.Tactic.Lint.printWarnings` (definition, [line 268](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L268))
 
 > Formats a map of linter warnings using `print_warning`, sorted by line number.
 
@@ -181,7 +181,7 @@ def printWarnings (results : Std.HashMap Name MessageData) (filePath : System.Fi
     (useErrorFormat : Bool := false) : CoreM MessageData
 ```
 
-`Batteries.Tactic.Lint.groupedByFilename` (definition, [line 278](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L278))
+`Batteries.Tactic.Lint.groupedByFilename` (definition, [line 278](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L278))
 
 > Formats a map of linter warnings grouped by filename with `-- filename` comments.
 > The first `drop_fn_chars` characters are stripped from the filename.
@@ -191,7 +191,7 @@ def groupedByFilename (results : Std.HashMap Name MessageData) (useErrorFormat :
     CoreM MessageData
 ```
 
-`Batteries.Tactic.Lint.formatLinterResults` (definition, [line 301](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L301))
+`Batteries.Tactic.Lint.formatLinterResults` (definition, [line 301](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L301))
 
 > Formats the linter results as Lean code with comments and `#check` commands.
 
@@ -205,7 +205,7 @@ def formatLinterResults
     CoreM MessageData
 ```
 
-`Batteries.Tactic.Lint.getDeclsInCurrModule` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L333))
+`Batteries.Tactic.Lint.getDeclsInCurrModule` (definition, [line 333](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L333))
 
 > Get the list of declarations in the current module.
 
@@ -213,7 +213,7 @@ def formatLinterResults
 def getDeclsInCurrModule : CoreM (Array Name)
 ```
 
-`Batteries.Tactic.Lint.getAllDecls` (definition, [line 337](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L337))
+`Batteries.Tactic.Lint.getAllDecls` (definition, [line 337](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L337))
 
 > Get the list of all declarations in the environment.
 
@@ -221,7 +221,7 @@ def getDeclsInCurrModule : CoreM (Array Name)
 def getAllDecls : CoreM (Array Name)
 ```
 
-`Batteries.Tactic.Lint.getDeclsInPackage` (definition, [line 341](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean#L341))
+`Batteries.Tactic.Lint.getDeclsInPackage` (definition, [line 341](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean#L341))
 
 > Get the list of all declarations in the specified package.
 
@@ -235,5 +235,5 @@ def getDeclsInPackage (pkg : Name) : CoreM (Array Name)
 
 ## Sources
 
-- [Batteries/Tactic/Lint/Frontend.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Tactic/Lint/Frontend.lean)
+- [Batteries/Tactic/Lint/Frontend.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Tactic/Lint/Frontend.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Tactic.Lint.Frontend.json)

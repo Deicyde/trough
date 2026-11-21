@@ -1,6 +1,6 @@
 # Fin
 
-5 modules under `Batteries/Data/Fin/`, with 205 public declarations.
+5 modules under `Batteries/Data/Fin/`, with 213 public declarations.
 
 - [Fin/Basic](basic.md)
 - [Low-level coding recipes for `Fin` types](coding.md)

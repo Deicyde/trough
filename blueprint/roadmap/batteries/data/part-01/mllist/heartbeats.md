@@ -7,9 +7,9 @@ proof: formalized
 
 # Truncate a `MLList` when running out of available heartbeats
 
-`Batteries.Data.MLList.Heartbeats`, in [Batteries/Data/MLList/Heartbeats.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/MLList/Heartbeats.lean), by Kim Morrison.
+`Batteries.Data.MLList.Heartbeats`, in [Batteries/Data/MLList/Heartbeats.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Heartbeats.lean), by Kim Morrison.
 
-`MLList.whileAtLeastHeartbeatsPercent` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/MLList/Heartbeats.lean#L30))
+`MLList.whileAtLeastHeartbeatsPercent` (definition, [line 30](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Heartbeats.lean#L30))
 
 > Take an initial segment of a monadic lazy list,
 > stopping when there is less than `percent` of the remaining allowed heartbeats.
@@ -32,5 +32,5 @@ def MLList.whileAtLeastHeartbeatsPercent [Monad m] [MonadLiftT CoreM m]
 
 ## Sources
 
-- [Batteries/Data/MLList/Heartbeats.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/MLList/Heartbeats.lean)
+- [Batteries/Data/MLList/Heartbeats.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/MLList/Heartbeats.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.MLList.Heartbeats.json)

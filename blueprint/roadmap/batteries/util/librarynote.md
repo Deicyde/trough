@@ -7,9 +7,9 @@ proof: formalized
 
 # Define the `library_note` command
 
-`Batteries.Util.LibraryNote`, in [Batteries/Util/LibraryNote.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/LibraryNote.lean), by Gabriel Ebner.
+`Batteries.Util.LibraryNote`, in [Batteries/Util/LibraryNote.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/LibraryNote.lean), by Gabriel Ebner.
 
-`Batteries.Util.LibraryNote` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/LibraryNote.lean#L22))
+`Batteries.Util.LibraryNote` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/LibraryNote.lean#L22))
 
 > A library note is identified by the name of its declaration, and its content should be contained
 > in its doc-string.
@@ -18,7 +18,7 @@ proof: formalized
 def LibraryNote
 ```
 
-`Batteries.Util.LibraryNote.LibraryNoteEntry` (definition, [line 31](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/LibraryNote.lean#L31))
+`Batteries.Util.LibraryNote.LibraryNoteEntry` (definition, [line 31](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/LibraryNote.lean#L31))
 
 > Entry for library notes in the environment extension.
 >
@@ -28,7 +28,7 @@ def LibraryNote
 def LibraryNoteEntry
 ```
 
-`Batteries.Util.LibraryNote.encodeNameForExport` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/LibraryNote.lean#L44))
+`Batteries.Util.LibraryNote.encodeNameForExport` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/LibraryNote.lean#L44))
 
 > Encode a name to be safe for the Lean export format.
 >
@@ -50,5 +50,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Util/LibraryNote.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/LibraryNote.lean)
+- [Batteries/Util/LibraryNote.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/LibraryNote.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Util.LibraryNote.json)

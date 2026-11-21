@@ -7,9 +7,9 @@ proof: formalized
 
 # UnusedNames
 
-`Batteries.Lean.Meta.UnusedNames`, in [Batteries/Lean/Meta/UnusedNames.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean), by Jannis Limperg.
+`Batteries.Lean.Meta.UnusedNames`, in [Batteries/Lean/Meta/UnusedNames.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean), by Jannis Limperg.
 
-`Lean.Name.MatchUpToIndexSuffix` (inductive type, [line 27](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L27))
+`Lean.Name.MatchUpToIndexSuffix` (inductive type, [line 27](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L27))
 
 > Result type of `Lean.Name.matchUpToIndexSuffix`. See there for details.
 
@@ -23,7 +23,7 @@ inductive MatchUpToIndexSuffix
   | suffixMatch (i : Nat)
 ```
 
-`Lean.Name.matchUpToIndexSuffix` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L44))
+`Lean.Name.matchUpToIndexSuffix` (definition, [line 44](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L44))
 
 > Succeeds if `n` is equal to `query`, except `n` may have an additional `_i`
 > suffix for some natural number `i`. More specifically:
@@ -38,7 +38,7 @@ def matchUpToIndexSuffix (n : Name) (query : Name) :
     MatchUpToIndexSuffix
 ```
 
-`Lean.LocalContext.getUnusedUserNameIndex` (definition, [line 73](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L73))
+`Lean.LocalContext.getUnusedUserNameIndex` (definition, [line 73](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L73))
 
 > Obtain the least natural number `i` such that `suggestion ++ "_i"` is an unused
 > name in the given local context. If `suggestion` itself is unused, the result
@@ -49,7 +49,7 @@ def getUnusedUserNameIndex (lctx : LocalContext) (suggestion : Name) :
     Option Nat
 ```
 
-`Lean.LocalContext.getUnusedUserName` (definition, [line 97](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L97))
+`Lean.LocalContext.getUnusedUserName` (definition, [line 97](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L97))
 
 > Obtain a name `n` such that `n` is unused in the given local context and
 > `suggestion` is a prefix of `n`. This is similar to `getUnusedName` but uses
@@ -59,7 +59,7 @@ def getUnusedUserNameIndex (lctx : LocalContext) (suggestion : Name) :
 def getUnusedUserName (lctx : LocalContext) (suggestion : Name) : Name
 ```
 
-`Lean.LocalContext.getUnusedUserNames` (definition, [line 107](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L107))
+`Lean.LocalContext.getUnusedUserNames` (definition, [line 107](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L107))
 
 > Obtain `n` distinct names such that each name is unused in the given local
 > context and `suggestion` is a prefix of each name.
@@ -69,7 +69,7 @@ def getUnusedUserNames (lctx : LocalContext) (n : Nat) (suggestion : Name) :
     Array Name
 ```
 
-`Lean.Meta.getUnusedUserName` (definition, [line 133](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L133))
+`Lean.Meta.getUnusedUserName` (definition, [line 133](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L133))
 
 > Obtain a name `n` such that `n` is unused in the current local context and
 > `suggestion` is a prefix of `n`.
@@ -78,7 +78,7 @@ def getUnusedUserNames (lctx : LocalContext) (n : Nat) (suggestion : Name) :
 def getUnusedUserName [Monad m] [MonadLCtx m] (suggestion : Name) : m Name
 ```
 
-`Lean.Meta.getUnusedUserNames` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean#L140))
+`Lean.Meta.getUnusedUserNames` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean#L140))
 
 > Obtain `n` distinct names such that each name is unused in the current local
 > context and `suggestion` is a prefix of each name.
@@ -94,5 +94,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/Meta/UnusedNames.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/UnusedNames.lean)
+- [Batteries/Lean/Meta/UnusedNames.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/UnusedNames.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Lean.Meta.UnusedNames.json)

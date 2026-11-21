@@ -1,0 +1,16 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
+ "module": "Batteries.Util.Incremental",
+ "file": "Batteries/Util/Incremental.lean",
+ "public": [
+  {"name": "Batteries.Tactic.CommandElabResultSnapshot", "kind": "structure", "line": 21},
+  {"name": "Batteries.Tactic.SimpleIncrementalSnapshot", "kind": "structure", "line": 33},
+  {"name": "Batteries.Tactic.simpleIncrementalElab", "kind": "def", "line": 69}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

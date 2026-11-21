@@ -1,0 +1,28 @@
+{
+ "schema": "trough-ledger/v1",
+ "library": "Batteries",
+ "repo": "leanprover-community/batteries",
+ "rev": "e389e88a42889041c731d3aa86223f0ec70476a0",
+ "module": "Batteries.Tactic.DoCommand",
+ "file": "Batteries/Tactic/DoCommand.lean",
+ "public": [
+  {"name": "Batteries.Tactic.DoCommand.MonadStateStack", "kind": "structure", "line": 28},
+  {"name": "Batteries.Tactic.DoCommand.DoCommandExtensionState", "kind": "structure", "line": 34},
+  {"name": "Batteries.Tactic.DoCommand.Data", "kind": "abbrev", "line": 62},
+  {"name": "Batteries.Tactic.DoCommand.Data.getValue", "kind": "def", "line": 65},
+  {"name": "Batteries.Tactic.DoCommand.Data.getValueLetImpl", "kind": "def", "line": 69},
+  {"name": "Batteries.Tactic.DoCommand.Data.getValueLet", "kind": "abbrev", "line": 74},
+  {"name": "Batteries.Tactic.DoCommand.Data.empty", "kind": "def", "line": 77},
+  {"name": "Batteries.Tactic.DoCommand.Data.push", "kind": "def", "line": 80},
+  {"name": "Batteries.Tactic.DoCommand.DoCommandExtensionState.eval", "kind": "def", "line": 86},
+  {"name": "Batteries.Tactic.DoCommand.ContinuationResult", "kind": "structure", "line": 160},
+  {"name": "Batteries.Tactic.DoCommand.elabDoCommandCore", "kind": "def", "line": 195},
+  {"name": "Batteries.Tactic.DoCommand.elabDoCommand", "kind": "def", "line": 283},
+  {"name": "Batteries.Tactic.DoCommand.elabDoBangCommand", "kind": "def", "line": 289},
+  {"name": "Batteries.Tactic.DoCommand.elabDoMetaCommand", "kind": "def", "line": 321},
+  {"name": "Batteries.Tactic.DoCommand.elabDoMetaBangCommand", "kind": "def", "line": 327}
+ ],
+ "private": [],
+ "missing": [],
+ "unread": "Unnamed instances, the names an `alias ⟨…⟩` command gives, and the names Lean generates for a declaration (constructors, recursors, derived instances) are not read from the source, so they are not listed."
+}

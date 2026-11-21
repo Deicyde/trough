@@ -7,9 +7,9 @@ proof: formalized
 
 # Inaccessible
 
-`Batteries.Lean.Meta.Inaccessible`, in [Batteries/Lean/Meta/Inaccessible.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/Inaccessible.lean), by Jannis Limperg.
+`Batteries.Lean.Meta.Inaccessible`, in [Batteries/Lean/Meta/Inaccessible.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Inaccessible.lean), by Jannis Limperg.
 
-`Lean.LocalContext.inaccessibleFVars` (definition, [line 19](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/Inaccessible.lean#L19))
+`Lean.LocalContext.inaccessibleFVars` (definition, [line 19](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Inaccessible.lean#L19))
 
 > Obtain the inaccessible fvars from the given local context. An fvar is
 > inaccessible if (a) its user name is inaccessible or (b) it is shadowed by a
@@ -20,7 +20,7 @@ def Lean.LocalContext.inaccessibleFVars (lctx : LocalContext) :
     Array LocalDecl
 ```
 
-`Lean.Meta.getInaccessibleFVars` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/Inaccessible.lean#L41))
+`Lean.Meta.getInaccessibleFVars` (definition, [line 41](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Inaccessible.lean#L41))
 
 > Obtain the inaccessible fvars from the current local context. An fvar is
 > inaccessible if (a) its user name is inaccessible or (b) it is shadowed by a
@@ -31,7 +31,7 @@ def Lean.Meta.getInaccessibleFVars [Monad m] [MonadLCtx m] :
     m (Array LocalDecl)
 ```
 
-`Lean.MVarId.renameInaccessibleFVars` (definition, [line 51](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/Inaccessible.lean#L51))
+`Lean.MVarId.renameInaccessibleFVars` (definition, [line 51](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Inaccessible.lean#L51))
 
 > Rename all inaccessible fvars. An fvar is inaccessible if (a) its user name is
 > inaccessible or (b) it is shadowed by a later fvar with the same user name. This
@@ -49,5 +49,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/Meta/Inaccessible.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Meta/Inaccessible.lean)
+- [Batteries/Lean/Meta/Inaccessible.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Meta/Inaccessible.lean)
 - [Declaration ledger](../../../../sources/batteries/Batteries.Lean.Meta.Inaccessible.json)

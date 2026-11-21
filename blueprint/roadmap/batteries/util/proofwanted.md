@@ -7,7 +7,7 @@ proof: formalized
 
 # The `theorem_wanted`, `def_wanted`, and `instance_wanted` commands
 
-`Batteries.Util.ProofWanted`, in [Batteries/Util/ProofWanted.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean), by David Thrane Christiansen, Kim Morrison.
+`Batteries.Util.ProofWanted`, in [Batteries/Util/ProofWanted.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean), by David Thrane Christiansen, Kim Morrison.
 
 > Use `theorem_wanted name binders : T` to mark a theorem the library should eventually contain
 > without blocking compilation; `def_wanted name binders : T` does the same for any
@@ -53,7 +53,7 @@ proof: formalized
 > The `❰` and `❱` characters (U+2770, U+2771) are entered as `\h<` and `\h>` with the standard
 > Lean input method.
 
-`ProofWanted` (structure, [line 61](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L61))
+`ProofWanted` (structure, [line 61](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L61))
 
 > Wrapper recording that a `proof_wanted` of statement `α` has been declared.
 
@@ -63,7 +63,7 @@ public structure ProofWanted (α : Sort u) : Type where
   mk ::
 ```
 
-`ProofWanted.Stmt` (definition, [line 68](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L68))
+`ProofWanted.Stmt` (definition, [line 68](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L68))
 
 > Reducible accessor so a binder of type `ProofWanted.Stmt foo` reduces to `foo`'s
 > statement. Used by the desugaring of `❰foo❱` when `foo` is a `proof_wanted`.
@@ -72,7 +72,7 @@ public structure ProofWanted (α : Sort u) : Type where
 public def ProofWanted.Stmt {α : Sort u} (_ : ProofWanted α) : Sort u
 ```
 
-`DefWanted` (structure, [line 71](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L71))
+`DefWanted` (structure, [line 71](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L71))
 
 > Wrapper recording that a `def_wanted` of type `α` has been declared.
 
@@ -82,7 +82,7 @@ public structure DefWanted (α : Sort u) : Type where
   mk ::
 ```
 
-`DefWanted.Val` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L78))
+`DefWanted.Val` (definition, [line 78](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L78))
 
 > Reducible accessor so a binder of type `DefWanted.Val foo` reduces to `foo`'s
 > type. Used by the desugaring of `❰foo❱` when `foo` is a `def_wanted`.
@@ -91,7 +91,7 @@ public structure DefWanted (α : Sort u) : Type where
 public def DefWanted.Val {α : Sort u} (_ : DefWanted α) : Sort u
 ```
 
-`DerivedWanted` (structure, [line 87](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L87))
+`DerivedWanted` (structure, [line 87](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L87))
 
 > Wrapper carrying the body of a *transparent* `def_wanted` (one given a `:= body`). Unlike the
 > empty `DefWanted`, it stores the value, so `❰foo❱` projects it back out and downstream definitional
@@ -109,7 +109,7 @@ public structure DerivedWanted (α : Sort u) : Sort (max 1 u) where
   val : α
 ```
 
-`elabWantedRef` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L104))
+`elabWantedRef` (definition, [line 104](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L104))
 
 > Elaborator that errors when `❰…❱` is used outside a wanted-declaration command.
 
@@ -117,7 +117,7 @@ public structure DerivedWanted (α : Sort u) : Sort (max 1 u) where
 def elabWantedRef : Term.TermElab
 ```
 
-`«theorem_wanted»` (definition, [line 686](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L686))
+`«theorem_wanted»` (definition, [line 686](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L686))
 
 > …
 
@@ -125,7 +125,7 @@ def elabWantedRef : Term.TermElab
 def «theorem_wanted»
 ```
 
-`«proof_wanted»` (definition, [line 694](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L694))
+`«proof_wanted»` (definition, [line 694](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L694))
 
 > `proof_wanted` is a synonym for `theorem_wanted`; see its documentation. (It is expected to be
 > deprecated in favour of `theorem_wanted` eventually.)
@@ -134,7 +134,7 @@ def «theorem_wanted»
 def «proof_wanted»
 ```
 
-`«def_wanted»` (definition, [line 724](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L724))
+`«def_wanted»` (definition, [line 724](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L724))
 
 > …
 
@@ -142,7 +142,7 @@ def «proof_wanted»
 def «def_wanted»
 ```
 
-`elabTheoremWanted` (definition, [line 731](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L731))
+`elabTheoremWanted` (definition, [line 731](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L731))
 
 > Parses the surface syntax of `theorem_wanted` and forwards to the shared `elabWanted`.
 
@@ -150,7 +150,7 @@ def «def_wanted»
 def elabTheoremWanted : CommandElab
 ```
 
-`elabProofWanted` (definition, [line 740](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L740))
+`elabProofWanted` (definition, [line 740](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L740))
 
 > Parses the surface syntax of `proof_wanted` (a synonym for `theorem_wanted`) and forwards to
 > the shared `elabWanted`.
@@ -159,7 +159,7 @@ def elabTheoremWanted : CommandElab
 def elabProofWanted : CommandElab
 ```
 
-`elabDefWanted` (definition, [line 748](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L748))
+`elabDefWanted` (definition, [line 748](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L748))
 
 > Parses the surface syntax of `def_wanted` and forwards to the shared `elabWanted`.
 
@@ -167,7 +167,7 @@ def elabProofWanted : CommandElab
 def elabDefWanted : CommandElab
 ```
 
-`«instance_wanted»` (definition, [line 783](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L783))
+`«instance_wanted»` (definition, [line 783](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L783))
 
 > …
 
@@ -175,7 +175,7 @@ def elabDefWanted : CommandElab
 def «instance_wanted»
 ```
 
-`elabInstanceWanted` (definition, [line 823](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean#L823))
+`elabInstanceWanted` (definition, [line 823](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean#L823))
 
 > Parses the surface syntax of `instance_wanted`, generates a name if absent, forwards to the
 > shared `elabWanted`, validates the payload is a typeclass, and registers the declared name in
@@ -191,5 +191,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Util/ProofWanted.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Util/ProofWanted.lean)
+- [Batteries/Util/ProofWanted.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Util/ProofWanted.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Util.ProofWanted.json)

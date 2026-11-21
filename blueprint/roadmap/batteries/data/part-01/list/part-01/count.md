@@ -7,7 +7,7 @@ proof: formalized
 
 # Counting in lists
 
-`Batteries.Data.List.Count`, in [Batteries/Data/List/Count.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean), by Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro.
+`Batteries.Data.List.Count`, in [Batteries/Data/List/Count.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean), by Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro.
 
 > This file proves basic properties of `List.countP` and `List.count`, which count the number of
 > elements of a list satisfying a predicate and equal to a given element respectively. Their
@@ -15,13 +15,13 @@ proof: formalized
 
 > ### count
 
-`List.count_singleton'` (theorem, [line 29](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L29))
+`List.count_singleton'` (theorem, [line 29](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L29))
 
 ```lean
 theorem count_singleton' [DecidableEq α] (a b : α) : count a [b] = if b = a then 1 else 0
 ```
 
-`List.count_concat` (theorem, [line 32](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L32))
+`List.count_concat` (theorem, [line 32](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L32))
 
 ```lean
 theorem count_concat [BEq α] [LawfulBEq α] (a : α) (l : List α) :
@@ -30,7 +30,7 @@ theorem count_concat [BEq α] [LawfulBEq α] (a : α) (l : List α) :
 
 > ### idxToSigmaCount, sigmaCountToIdx
 
-`List.idxToSigmaCount` (definition, [line 50](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L50))
+`List.idxToSigmaCount` (definition, [line 50](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L50))
 
 > `idxToSigmaCount` is essentially a `Fin`-to-`Fin` wrapper for `countBefore` that also
 > includes the corresponding element.
@@ -45,28 +45,28 @@ def idxToSigmaCount [BEq α] [ReflBEq α] (xs : List α) (i : Fin xs.length) :
     (x : α) × Fin (xs.count x)
 ```
 
-`List.fst_idxToSigmaCount` (theorem, [line 54](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L54))
+`List.fst_idxToSigmaCount` (theorem, [line 54](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L54))
 
 ```lean
 theorem fst_idxToSigmaCount [BEq α] [ReflBEq α] {xs: List α} {i : Fin xs.length} :
     (xs.idxToSigmaCount i).1 = xs[i.1]
 ```
 
-`List.snd_idxToSigmaCount` (theorem, [line 58](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L58))
+`List.snd_idxToSigmaCount` (theorem, [line 58](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L58))
 
 ```lean
 theorem snd_idxToSigmaCount [BEq α] [ReflBEq α] {xs: List α} {i : Fin xs.length} :
     (xs.idxToSigmaCount i).2 = ⟨xs.countBefore xs[i.1] i, by grind⟩
 ```
 
-`List.coe_snd_idxToSigmaCount` (theorem, [line 62](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L62))
+`List.coe_snd_idxToSigmaCount` (theorem, [line 62](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L62))
 
 ```lean
 theorem coe_snd_idxToSigmaCount [BEq α] [ReflBEq α] {xs: List α} {i : Fin xs.length} :
     ((xs.idxToSigmaCount i).2 : Nat) = xs.countBefore xs[i.1] i
 ```
 
-`List.sigmaCountToIdx` (definition, [line 72](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L72))
+`List.sigmaCountToIdx` (definition, [line 72](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L72))
 
 > `sigmaCountToIdx` is a `_ × Fin`-to-`Fin` wrapper for `countBefore`.
 >
@@ -80,77 +80,77 @@ def sigmaCountToIdx [BEq α] (xs : List α) (xc : (x : α) × Fin (xs.count x)) 
     Fin xs.length
 ```
 
-`List.coe_sigmaCountToIdx` (theorem, [line 76](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L76))
+`List.coe_sigmaCountToIdx` (theorem, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L76))
 
 ```lean
 theorem coe_sigmaCountToIdx [BEq α] {xs: List α} {xc : (x : α) × Fin (xs.count x)} :
     (xs.sigmaCountToIdx xc : Nat) = xs.idxOfNth xc.1 xc.2
 ```
 
-`List.sigmaCountToIdx_idxToSigmaCount` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L80))
+`List.sigmaCountToIdx_idxToSigmaCount` (theorem, [line 80](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L80))
 
 ```lean
 theorem sigmaCountToIdx_idxToSigmaCount [BEq α] [ReflBEq α] {xs : List α}
     {i : Fin xs.length} : xs.sigmaCountToIdx (xs.idxToSigmaCount i) = i
 ```
 
-`List.leftInverse_sigmaCountToIdx_idxToSigmaCount` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L83))
+`List.leftInverse_sigmaCountToIdx_idxToSigmaCount` (theorem, [line 83](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L83))
 
 ```lean
 theorem leftInverse_sigmaCountToIdx_idxToSigmaCount [BEq α] [ReflBEq α] {xs : List α} :
   xs.sigmaCountToIdx.LeftInverse xs.idxToSigmaCount
 ```
 
-`List.rightInverse_idxToSigmaCount_sigmaCountToIdx` (theorem, [line 86](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L86))
+`List.rightInverse_idxToSigmaCount_sigmaCountToIdx` (theorem, [line 86](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L86))
 
 ```lean
 theorem rightInverse_idxToSigmaCount_sigmaCountToIdx [BEq α] [ReflBEq α] {xs : List α} :
   xs.idxToSigmaCount.RightInverse xs.sigmaCountToIdx
 ```
 
-`List.injective_idxToSigmaCount` (theorem, [line 89](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L89))
+`List.injective_idxToSigmaCount` (theorem, [line 89](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L89))
 
 ```lean
 theorem injective_idxToSigmaCount [BEq α] [ReflBEq α] {xs : List α} :
     xs.idxToSigmaCount.Injective
 ```
 
-`List.surjective_sigmaCountToIdx` (theorem, [line 92](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L92))
+`List.surjective_sigmaCountToIdx` (theorem, [line 92](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L92))
 
 ```lean
 theorem surjective_sigmaCountToIdx [BEq α] [ReflBEq α] {xs : List α} :
     xs.sigmaCountToIdx.Surjective
 ```
 
-`List.idxToSigmaCount_sigmaCountToIdx` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L96))
+`List.idxToSigmaCount_sigmaCountToIdx` (theorem, [line 96](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L96))
 
 ```lean
 theorem idxToSigmaCount_sigmaCountToIdx [BEq α] [LawfulBEq α] {xs : List α}
     {xc : (x : α) × Fin (xs.count x)} : xs.idxToSigmaCount (xs.sigmaCountToIdx xc) = xc
 ```
 
-`List.leftInverse_idxToSigmaCount_sigmaCountToIdx` (theorem, [line 100](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L100))
+`List.leftInverse_idxToSigmaCount_sigmaCountToIdx` (theorem, [line 100](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L100))
 
 ```lean
 theorem leftInverse_idxToSigmaCount_sigmaCountToIdx [BEq α] [LawfulBEq α] {xs : List α} :
   xs.idxToSigmaCount.LeftInverse xs.sigmaCountToIdx
 ```
 
-`List.rightInverse_sigmaCountToIdx_idxToSigmaCount` (theorem, [line 103](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L103))
+`List.rightInverse_sigmaCountToIdx_idxToSigmaCount` (theorem, [line 103](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L103))
 
 ```lean
 theorem rightInverse_sigmaCountToIdx_idxToSigmaCount [BEq α] [LawfulBEq α] {xs : List α} :
   xs.sigmaCountToIdx.RightInverse xs.idxToSigmaCount
 ```
 
-`List.injective_sigmaCountToIdx` (theorem, [line 106](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L106))
+`List.injective_sigmaCountToIdx` (theorem, [line 106](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L106))
 
 ```lean
 theorem injective_sigmaCountToIdx [BEq α] [LawfulBEq α] {xs : List α} :
     xs.sigmaCountToIdx.Injective
 ```
 
-`List.surjective_idxToSigmaCount` (theorem, [line 109](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean#L109))
+`List.surjective_idxToSigmaCount` (theorem, [line 109](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean#L109))
 
 ```lean
 theorem surjective_idxToSigmaCount [BEq α] [LawfulBEq α] {xs : List α} :
@@ -167,5 +167,5 @@ theorem surjective_idxToSigmaCount [BEq α] [LawfulBEq α] {xs : List α} :
 
 ## Sources
 
-- [Batteries/Data/List/Count.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/List/Count.lean)
+- [Batteries/Data/List/Count.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/List/Count.lean)
 - [Declaration ledger](../../../../../../sources/batteries/Batteries.Data.List.Count.json)

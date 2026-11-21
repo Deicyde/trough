@@ -7,9 +7,9 @@ proof: formalized
 
 # Helper functions for working with typed syntaxes
 
-`Batteries.Lean.Syntax`, in [Batteries/Lean/Syntax.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Syntax.lean), by Gabriel Ebner.
+`Batteries.Lean.Syntax`, in [Batteries/Lean/Syntax.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Syntax.lean), by Gabriel Ebner.
 
-`Lean.TSyntax.replaceM` (definition, [line 24](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Syntax.lean#L24))
+`Lean.TSyntax.replaceM` (definition, [line 24](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Syntax.lean#L24))
 
 > Applies the given function to every subsyntax.
 >
@@ -26,5 +26,5 @@ Its statements use no other Batteries module's declarations.
 
 ## Sources
 
-- [Batteries/Lean/Syntax.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Lean/Syntax.lean)
+- [Batteries/Lean/Syntax.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Lean/Syntax.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.Lean.Syntax.json)

@@ -7,9 +7,9 @@ proof: formalized
 
 # HashMap/Basic
 
-`Batteries.Data.HashMap.Basic`, in [Batteries/Data/HashMap/Basic.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean), by Leonardo de Moura, Mario Carneiro.
+`Batteries.Data.HashMap.Basic`, in [Batteries/Data/HashMap/Basic.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean), by Leonardo de Moura, Mario Carneiro.
 
-`Std.HashMap.findEntry?` (definition, [line 28](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L28))
+`Std.HashMap.findEntry?` (definition, [line 28](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L28))
 
 > Given a key `a`, returns a key-value pair in the map whose key compares equal to `a`.
 > Note that the returned key may not be identical to the input, if `==` ignores some part
@@ -24,7 +24,7 @@ proof: formalized
 def findEntry? [BEq α] [Hashable α] (m : Std.HashMap α β) (k : α) : Option (α × β)
 ```
 
-`Std.HashMap.ofListWith` (definition, [line 37](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L37))
+`Std.HashMap.ofListWith` (definition, [line 37](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L37))
 
 > Variant of `ofList` which accepts a function that combines values of duplicated keys.
 > ```
@@ -35,7 +35,7 @@ def findEntry? [BEq α] [Hashable α] (m : Std.HashMap α β) (k : α) : Option 
 def ofListWith [BEq α] [Hashable α] (l : List (α × β)) (f : β → β → β) : HashMap α β
 ```
 
-`Batteries.HashMap` (structure, [line 55](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L55))
+`Batteries.HashMap` (structure, [line 55](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L55))
 
 > `HashMap α β` is a key-value map which stores elements in an array using a hash function
 > to find the values. This allows it to have very good performance for lookups
@@ -49,7 +49,7 @@ structure _root_.Batteries.HashMap (α : Type u) (β : Type v) [BEq α] [Hashabl
   inner : Std.HashMap α β
 ```
 
-`Batteries.mkHashMap` (definition, [line 62](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L62))
+`Batteries.mkHashMap` (definition, [line 62](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L62))
 
 > Make a new hash map with the specified capacity.
 
@@ -57,7 +57,7 @@ structure _root_.Batteries.HashMap (α : Type u) (β : Type v) [BEq α] [Hashabl
 def _root_.Batteries.mkHashMap [BEq α] [Hashable α] (capacity := 0) : HashMap α β
 ```
 
-`Batteries.HashMap.empty` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L76))
+`Batteries.HashMap.empty` (definition, [line 76](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L76))
 
 > Make a new empty hash map.
 > ```
@@ -68,7 +68,7 @@ def _root_.Batteries.mkHashMap [BEq α] [Hashable α] (capacity := 0) : HashMap 
 def empty [BEq α] [Hashable α] : HashMap α β
 ```
 
-`Batteries.HashMap.size` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L86))
+`Batteries.HashMap.size` (definition, [line 86](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L86))
 
 > The number of elements in the hash map.
 > ```
@@ -79,7 +79,7 @@ def empty [BEq α] [Hashable α] : HashMap α β
 def size (self : HashMap α β) : Nat
 ```
 
-`Batteries.HashMap.isEmpty` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L95))
+`Batteries.HashMap.isEmpty` (definition, [line 95](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L95))
 
 > Is the map empty?
 > ```
@@ -91,7 +91,7 @@ def size (self : HashMap α β) : Nat
 def isEmpty (self : HashMap α β) : Bool
 ```
 
-`Batteries.HashMap.insert` (definition, [line 106](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L106))
+`Batteries.HashMap.insert` (definition, [line 106](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L106))
 
 > Inserts key-value pair `a, b` into the map.
 > If an element equal to `a` is already in the map, it is replaced by `b`.
@@ -105,7 +105,7 @@ def isEmpty (self : HashMap α β) : Bool
 def insert (self : HashMap α β) (a : α) (b : β) : HashMap α β
 ```
 
-`Batteries.HashMap.insert'` (definition, [line 118](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L118))
+`Batteries.HashMap.insert'` (definition, [line 118](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L118))
 
 > Similar to `insert`, but also returns a boolean flag indicating whether an existing entry has been
 > replaced with `a => b`.
@@ -119,7 +119,7 @@ def insert (self : HashMap α β) (a : α) (b : β) : HashMap α β
 def insert' (m : HashMap α β) (a : α) (b : β) : HashMap α β × Bool
 ```
 
-`Batteries.HashMap.erase` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L130))
+`Batteries.HashMap.erase` (definition, [line 130](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L130))
 
 > Removes key `a` from the map. If it does not exist in the map, the map is returned unchanged.
 > ```
@@ -132,7 +132,7 @@ def insert' (m : HashMap α β) (a : α) (b : β) : HashMap α β × Bool
 def erase (self : HashMap α β) (a : α) : HashMap α β
 ```
 
-`Batteries.HashMap.modify` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L140))
+`Batteries.HashMap.modify` (definition, [line 140](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L140))
 
 > Performs an in-place edit of the value, ensuring that the value is used linearly.
 > The function `f` is passed the original key of the entry, along with the value in the map.
@@ -145,7 +145,7 @@ def erase (self : HashMap α β) (a : α) : HashMap α β
 def modify (self : HashMap α β) (a : α) (f : α → β → β) : HashMap α β
 ```
 
-`Batteries.HashMap.find?` (definition, [line 151](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L151))
+`Batteries.HashMap.find?` (definition, [line 151](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L151))
 
 > Looks up an element in the map with key `a`.
 > ```
@@ -158,7 +158,7 @@ def modify (self : HashMap α β) (a : α) (f : α → β → β) : HashMap α �
 def find? (self : HashMap α β) (a : α) : Option β
 ```
 
-`Batteries.HashMap.findD` (definition, [line 161](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L161))
+`Batteries.HashMap.findD` (definition, [line 161](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L161))
 
 > Looks up an element in the map with key `a`. Returns `b₀` if the element is not found.
 > ```
@@ -171,7 +171,7 @@ def find? (self : HashMap α β) (a : α) : Option β
 def findD (self : HashMap α β) (a : α) (b₀ : β) : β
 ```
 
-`Batteries.HashMap.find!` (definition, [line 171](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L171))
+`Batteries.HashMap.find!` (definition, [line 171](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L171))
 
 > Looks up an element in the map with key `a`. Panics if the element is not found.
 > ```
@@ -184,7 +184,7 @@ def findD (self : HashMap α β) (a : α) (b₀ : β) : β
 def find! [Inhabited β] (self : HashMap α β) (a : α) : β
 ```
 
-`Batteries.HashMap.findEntry?` (definition, [line 189](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L189))
+`Batteries.HashMap.findEntry?` (definition, [line 189](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L189))
 
 > Given a key `a`, returns a key-value pair in the map whose key compares equal to `a`.
 > Note that the returned key may not be identical to the input, if `==` ignores some part
@@ -199,7 +199,7 @@ def find! [Inhabited β] (self : HashMap α β) (a : α) : β
 def findEntry? [BEq α] [Hashable α] (m : HashMap α β) (k : α) : Option (α × β)
 ```
 
-`Batteries.HashMap.contains` (definition, [line 200](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L200))
+`Batteries.HashMap.contains` (definition, [line 200](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L200))
 
 > Returns true if the element `a` is in the map.
 > ```
@@ -212,7 +212,7 @@ def findEntry? [BEq α] [Hashable α] (m : HashMap α β) (k : α) : Option (α 
 def contains (self : HashMap α β) (a : α) : Bool
 ```
 
-`Batteries.HashMap.foldM` (definition, [line 213](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L213))
+`Batteries.HashMap.foldM` (definition, [line 213](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L213))
 
 > Folds a monadic function over the elements in the map (in arbitrary order).
 > ```
@@ -228,7 +228,7 @@ def contains (self : HashMap α β) (a : α) : Bool
 def foldM [Monad m] (f : δ → α → β → m δ) (init : δ) (self : HashMap α β) : m δ
 ```
 
-`Batteries.HashMap.fold` (definition, [line 222](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L222))
+`Batteries.HashMap.fold` (definition, [line 222](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L222))
 
 > Folds a function over the elements in the map (in arbitrary order).
 > ```
@@ -239,7 +239,7 @@ def foldM [Monad m] (f : δ → α → β → m δ) (init : δ) (self : HashMap 
 def fold (f : δ → α → β → δ) (init : δ) (self : HashMap α β) : δ
 ```
 
-`Batteries.HashMap.mergeWithM` (definition, [line 239](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L239))
+`Batteries.HashMap.mergeWithM` (definition, [line 239](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L239))
 
 > Combines two hashmaps using a monadic function `f` to combine two values at a key.
 > ```
@@ -259,7 +259,7 @@ def mergeWithM [Monad m] (f : α → β → β → m β)
     (self other : HashMap α β) : m (HashMap α β)
 ```
 
-`Batteries.HashMap.mergeWith` (definition, [line 251](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L251))
+`Batteries.HashMap.mergeWith` (definition, [line 251](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L251))
 
 > Combines two hashmaps using function `f` to combine two values at a key.
 > ```
@@ -272,7 +272,7 @@ def mergeWithM [Monad m] (f : α → β → β → m β)
 def mergeWith (f : α → β → β → β) (self other : HashMap α β) : HashMap α β
 ```
 
-`Batteries.HashMap.forM` (definition, [line 264](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L264))
+`Batteries.HashMap.forM` (definition, [line 264](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L264))
 
 > Runs a monadic function over the elements in the map (in arbitrary order).
 > ```
@@ -287,7 +287,7 @@ def mergeWith (f : α → β → β → β) (self other : HashMap α β) : HashM
 def forM [Monad m] (f : α → β → m PUnit) (self : HashMap α β) : m PUnit
 ```
 
-`Batteries.HashMap.toList` (definition, [line 274](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L274))
+`Batteries.HashMap.toList` (definition, [line 274](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L274))
 
 > Converts the map into a list of key-value pairs.
 > ```
@@ -299,7 +299,7 @@ def forM [Monad m] (f : α → β → m PUnit) (self : HashMap α β) : m PUnit
 def toList (self : HashMap α β) : List (α × β)
 ```
 
-`Batteries.HashMap.toArray` (definition, [line 283](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L283))
+`Batteries.HashMap.toArray` (definition, [line 283](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L283))
 
 > Converts the map into an array of key-value pairs.
 > ```
@@ -311,7 +311,7 @@ def toList (self : HashMap α β) : List (α × β)
 def toArray (self : HashMap α β) : Array (α × β)
 ```
 
-`Batteries.HashMap.numBuckets` (definition, [line 286](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L286))
+`Batteries.HashMap.numBuckets` (definition, [line 286](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L286))
 
 > The number of buckets in the hash map.
 
@@ -319,7 +319,7 @@ def toArray (self : HashMap α β) : Array (α × β)
 def numBuckets (self : HashMap α β) : Nat
 ```
 
-`Batteries.HashMap.ofList` (definition, [line 295](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L295))
+`Batteries.HashMap.ofList` (definition, [line 295](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L295))
 
 > Builds a `HashMap` from a list of key-value pairs.
 > Values of duplicated keys are replaced by their respective last occurrences.
@@ -331,7 +331,7 @@ def numBuckets (self : HashMap α β) : Nat
 def ofList [BEq α] [Hashable α] (l : List (α × β)) : HashMap α β
 ```
 
-`Batteries.HashMap.ofListWith` (definition, [line 304](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean#L304))
+`Batteries.HashMap.ofListWith` (definition, [line 304](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean#L304))
 
 > Variant of `ofList` which accepts a function that combines values of duplicated keys.
 > ```
@@ -348,5 +348,5 @@ def ofListWith [BEq α] [Hashable α] (l : List (α × β)) (f : β → β → �
 
 ## Sources
 
-- [Batteries/Data/HashMap/Basic.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/Data/HashMap/Basic.lean)
+- [Batteries/Data/HashMap/Basic.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/Data/HashMap/Basic.lean)
 - [Declaration ledger](../../../../../sources/batteries/Batteries.Data.HashMap.Basic.json)

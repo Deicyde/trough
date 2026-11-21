@@ -7,9 +7,9 @@ proof: formalized
 
 # Match
 
-`Batteries.CodeAction.Match`, in [Batteries/CodeAction/Match.lean](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean), by Moritz Roos.
+`Batteries.CodeAction.Match`, in [Batteries/CodeAction/Match.lean](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean), by Moritz Roos.
 
-`Batteries.CodeAction.isMatchTerm` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L22))
+`Batteries.CodeAction.isMatchTerm` (definition, [line 22](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L22))
 
 > Filter for the info-nodes to find the match-nodes.
 
@@ -17,7 +17,7 @@ proof: formalized
 def isMatchTerm : Info → Bool
 ```
 
-`Batteries.CodeAction.getMatchHeaderRange?` (definition, [line 27](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L27))
+`Batteries.CodeAction.getMatchHeaderRange?` (definition, [line 27](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L27))
 
 > Returns the String.range that encompasses `match e (with)`.
 
@@ -25,7 +25,7 @@ def isMatchTerm : Info → Bool
 def getMatchHeaderRange? (matchStx : Syntax) : Option Lean.Syntax.Range
 ```
 
-`Batteries.CodeAction.findAllInfos` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L48))
+`Batteries.CodeAction.findAllInfos` (definition, [line 48](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L48))
 
 > Flattens an Infotree into an array of Info-nodes that fulfill p.
 
@@ -33,7 +33,7 @@ def getMatchHeaderRange? (matchStx : Syntax) : Option Lean.Syntax.Range
 partial def findAllInfos (p : Info → Bool) (t : InfoTree) : Array Info
 ```
 
-`Batteries.CodeAction.hasImplicitNonparArg` (definition, [line 62](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L62))
+`Batteries.CodeAction.hasImplicitNonparArg` (definition, [line 62](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L62))
 
 > Computes for a constructor, if it makes sense to use `@constr` in a match, by determining
 > if it has any non-parameter implicit arguments.
@@ -42,7 +42,7 @@ partial def findAllInfos (p : Info → Bool) (t : InfoTree) : Array Info
 def hasImplicitNonparArg (ctor : Name) (env : Environment) : Bool
 ```
 
-`Batteries.CodeAction.patternFromConstructor` (definition, [line 73](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L73))
+`Batteries.CodeAction.patternFromConstructor` (definition, [line 73](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L73))
 
 > From a constructor-name e.g. `Option.some` construct the corresponding match pattern, e.g.
 > `.some val`. We implement special cases for `Nat` and `List`, `Option` and `Bool` to e.g.
@@ -53,7 +53,7 @@ def patternFromConstructor (ctor : Name) (env : Environment) (suffix : String)
     (explicitArgsOnly : Bool) (ctor_hasImplicitNonparArg : Bool): Option String
 ```
 
-`Batteries.CodeAction.matchExpand` (definition, [line 186](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean#L186))
+`Batteries.CodeAction.matchExpand` (definition, [line 186](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean#L186))
 
 > Invoking tactic code action `Generate a list of alternatives for this match.` in the
 > following:
@@ -119,5 +119,5 @@ def matchExpand : CommandCodeAction
 
 ## Sources
 
-- [Batteries/CodeAction/Match.lean at b4b25a38](https://github.com/leanprover-community/batteries/blob/b4b25a3886a16daacaf6615c2eea7170a6e8f458/Batteries/CodeAction/Match.lean)
+- [Batteries/CodeAction/Match.lean at e389e88a](https://github.com/leanprover-community/batteries/blob/e389e88a42889041c731d3aa86223f0ec70476a0/Batteries/CodeAction/Match.lean)
 - [Declaration ledger](../../../sources/batteries/Batteries.CodeAction.Match.json)
