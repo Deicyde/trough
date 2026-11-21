@@ -1,0 +1,270 @@
+# Reads leanprover-community/riemann-hypothesis at the commit
+# data/riemann-hypothesis/source.json pins (tools/refresh_riemann_hypothesis.py):
+# the lakefile's libraries, the lines of the theorems comparator.json names,
+# each folder's files, lines, declarations and import lines, a scan for
+# constructs that skip checks, and the verification folder. No Lean: a line
+# scan over a shallow clone. The pages are then regenerated from that data.
+#
+# A push that changes the reader or the data runs it too, so the committed data
+# always match the pin. The daily run, or a dispatch with "newest", moves the
+# pin to the newest main commit whose "checks" run passed. On main, the commit
+# job records the data and the pages, then starts the Pages and Tests
+# workflows. On a pull request the run fails when the committed data differ
+# from what the pin gives, and keeps a patch.
+#
+# Comparator's status in verification.json is never set here. When the
+# verification folder gains or loses a file, or its notes' Results section
+# changes, the data are still recorded with the status unchanged, and the run
+# then fails with an error naming the changes and the commit. When the status is
+# "passed", the refresh fetches the file it names at the commit it names and
+# checks it.
+
+name: Riemann Hypothesis data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_riemann_hypothesis.py"
+      - "tools/trough/riemann_hypothesis.py"
+      - "data/riemann-hypothesis/**"
+      - ".github/workflows/riemann-hypothesis-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_riemann_hypothesis.py"
+      - "tools/trough/riemann_hypothesis.py"
+      - "data/riemann-hypothesis/**"
+      - ".github/workflows/riemann-hypothesis-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest commit whose checks passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "41 5 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: riemann-hypothesis-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  REPO: leanprover-community/riemann-hypothesis
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
+      verification: ${{ steps.read.outputs.verification }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Choose the commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/riemann-hypothesis/source.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            rev=$(gh api "repos/$REPO/actions/workflows/checks.yml/runs?branch=main&event=push&status=success&per_page=1" \
+              --jq '.workflow_runs[0].head_sha')
+          fi
+          echo "riemann-hypothesis $rev"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the repository at that commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/riemann-hypothesis"
+          git init --quiet "$dir"
+          git -C "$dir" remote add origin "https://github.com/$REPO.git"
+          git -C "$dir" fetch --quiet --depth 1 origin "$REV"
+          git -C "$dir" checkout --quiet FETCH_HEAD
+          du -sh "$dir"
+
+      - name: Fetch the file a recorded passing run names
+        id: evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          record=data/riemann-hypothesis/verification.json
+          status=$(jq -r '.comparator.status // "pending"' "$record" 2>/dev/null || echo pending)
+          if [ "$status" = passed ]; then
+            file=$(jq -r '.comparator.file' "$record")
+            commit=$(jq -r '.comparator.commit' "$record")
+            gh api -H "Accept: application/vnd.github.raw" "repos/$REPO/contents/$file?ref=$commit" > "$RUNNER_TEMP/evidence"
+            echo "Fetched $file at $commit: $(wc -c < "$RUNNER_TEMP/evidence") bytes"
+            echo "args=--evidence $RUNNER_TEMP/evidence" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Read the repository
+        id: read
+        env:
+          EVIDENCE: ${{ steps.evidence.outputs.args }}
+        run: |
+          set -euo pipefail
+          changes="$RUNNER_TEMP/verification-changes.txt"
+          # shellcheck disable=SC2086
+          uv run --no-dev python tools/refresh_riemann_hypothesis.py "$RUNNER_TEMP/riemann-hypothesis" \
+            --changes "$changes" $EVIDENCE
+          if [ -s "$changes" ]; then
+            echo "verification=$(paste -sd ';' "$changes" | sed 's/;/; /g')" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/riemann-hypothesis blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pin gives."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > riemann-hypothesis-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pin gives. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n riemann-hypothesis-data && git apply riemann-hypothesis-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: riemann-hypothesis-data
+          path: riemann-hypothesis-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: riemann-hypothesis-data-files
+          path: |
+            data/riemann-hypothesis/source.json
+            data/riemann-hypothesis/folders.json
+            data/riemann-hypothesis/scan.json
+            data/riemann-hypothesis/verification.json
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the Formal Conjectures data workflow does. Data changed
+  # meanwhile win: that push's run records its own.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: riemann-hypothesis-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          # The artifact keeps the files without their common folder, data/riemann-hypothesis.
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(source|folders|scan|verification)\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/riemann-hypothesis; then
+              echo "::notice::main has changed data/riemann-hypothesis since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            mkdir -p data/riemann-hypothesis
+            cp "$src"/*.json data/riemann-hypothesis/
+            uv run --no-dev python tools/generate.py
+            git add -A data/riemann-hypothesis blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "Riemann Hypothesis data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"
+
+  # After the data are recorded, a changed verification folder fails the run, so
+  # that a person reads it. Comparator's status stays as it was.
+  verification:
+    needs: [refresh, commit]
+    if: always() && needs.refresh.outputs.verification != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report the changed verification folder
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          CHANGES: ${{ needs.refresh.outputs.verification }}
+        run: |
+          echo "::error::The verification folder of $REPO changed at ${REV}: ${CHANGES}. Read it; Comparator's status stays as recorded."
+          exit 1

@@ -134,6 +134,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
                    stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
                    cslib: str | None = None, physlib: str | None = None,
+                   riemann_hypothesis: str | None = None,
                    readers: list[tuple[str, str, str, str, bool]] = (),
                    blueprint_revs: dict[str, str] | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
@@ -143,7 +144,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
     source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
     Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, *atlas* the
     commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, *openai_math* the commit of
-    OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins and *readers* the libraries trough.library
+    OpenAI Math's record, *cslib* the commit of CSLib, *physlib* the commit of Physlib its record pins, *riemann_hypothesis* the commit of
+    leanprover-community/riemann-hypothesis its record pins and *readers* the libraries trough.library
     reads with their modules that declare nothing public listed, each as its id, name, repository, commit and whether
     it builds on Mathlib; *blueprint_revs* has the commit each blueprint library's data/blueprints/<id>/source.json
     pins, by id."""
@@ -157,6 +159,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
               | ({"openai-math": openai_math} if openai_math else {})
               | ({"cslib": cslib} if cslib else {})
               | ({"physlib": physlib} if physlib else {})
+              | ({"riemann-hypothesis": riemann_hypothesis} if riemann_hypothesis else {})
               | {reader[0]: reader[3] for reader in readers}
               | (blueprint_revs or {}))
     lines = [
@@ -345,6 +348,19 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and "
             "the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in "
             "GitHub Actions.",
+        ]
+    if riemann_hypothesis:
+        lines += [
+            "",
+            "## Riemann Hypothesis (Alpöge)",
+            "",
+            "- `data/riemann-hypothesis/`: the commit, Lean toolchain, Mathlib pin and lakefile libraries, the lines of "
+            "the five theorems Comparator's configuration names, the files, lines and declarations of each folder of "
+            "`src/` and the import lines between folders, read by a line scan, the counts of a scan for constructs "
+            "that skip checks, and the verification folder's file names and Comparator's status, from "
+            f"[leanprover-community/riemann-hypothesis at {riemann_hypothesis[:8]}]"
+            f"(https://github.com/leanprover-community/riemann-hypothesis/tree/{riemann_hypothesis}). The source has "
+            "no license, so only these facts are recorded; none of its text is copied.",
         ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:
